@@ -1,0 +1,151 @@
+{
+    "char_4123_ela": [
+        [
+            {
+                "name": "雷鸣地雷",
+                "desc": "Can deploy up to 1 Grzmot Miness (Can store up to 10); The first enemy that steps on a Grzmot Mines will trigger its effect, on retreat activate Grzmot Mine 's effect on self"
+            },
+            {
+                "name": "雷鸣地雷",
+                "desc": "Can deploy up to 2<@ba.talpu>（+1）</> Grzmot Miness (Can store up to 10); The first enemy that steps on a Grzmot Mines will trigger its effect, on retreat activate Grzmot Mine 's effect on self"
+            },
+            {
+                "name": "雷鸣地雷",
+                "desc": "Can deploy up to 2 Grzmot Miness (Can store up to 10); The first enemy that steps on a Grzmot Mines will trigger its effect, on retreat activate Grzmot Mine 's effect on self"
+            },
+            {
+                "name": "雷鸣地雷",
+                "desc": "Can deploy up to 3<@ba.talpu>（+1）</> Grzmot Miness (Can store up to 10); The first enemy that steps on a Grzmot Mines will trigger its effect, on retreat activate Grzmot Mine 's effect on self"
+            },
+            {
+                "name": "雷鸣地雷",
+                "desc": "Can deploy up to 3 Grzmot Miness (Can store up to 10); The first enemy that steps on a Grzmot Mines will trigger its effect, on retreat activate Grzmot Mine 's effect on self"
+            },
+            {
+                "name": "雷鸣地雷",
+                "desc": "Can deploy up to 4<@ba.talpu>（+1）</> Grzmot Miness (Can store up to 10); The first enemy that steps on a Grzmot Mines will trigger its effect, on retreat activate Grzmot Mine 's effect on self"
+            }
+        ],
+        [
+            {
+                "name": "“正中靶心”",
+                "desc": "Has a 30% chance to deal 150% physical damage, 100% chance on enemies under Grzmot Miness 's effect"
+            },
+            {
+                "name": "“正中靶心”",
+                "desc": "Has a 30% chance to deal 160% <@ba.talpu>（+10%）</>physical damage, 100% chance on enemies under Grzmot Miness 's effect"
+            }
+        ]
+    ],
+    "char_4126_fuze": [ 
+        [
+            {
+                "name": "防弹护盾",
+                "desc": "Has 17% chance to dodge Ranged Physical attacks"
+            },
+            {
+                "name": "防弹护盾",
+                "desc": "Has 20%<@ba.talpu>（+3%）</> chance to dodge Ranged Physical attacks"
+            },
+            {
+                "name": "防弹护盾",
+                "desc": "Has 27% chance to dodge Ranged Physical attacks"
+            },
+            {
+                "name": "防弹护盾",
+                "desc": "Has 30%<@ba.talpu>（+3%）</> chance to dodge Ranged Physical attacks"
+            }
+        ]
+    ],
+    "char_4124_iana": [ 
+        [
+            {
+                "name": "双子分身复制器",
+                "desc": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, remove <$ba.invisible>Invisibility</> to the attacker, then immediately swap to [Substitute]"
+            },
+            {
+                "name": "双子分身复制器",
+                "desc": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, remove <$ba.invisible>Invisibility</> to the attacker, then immediately swap to [Substitute]"
+            },
+            {
+                "name": "双子分身复制器",
+                "desc": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 10% <$ba.fragile>Fragile</> to the attacker for 6 seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to [Substitute]"
+            },
+            {
+                "name": "双子分身复制器",
+                "desc": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 12%<@ba.talpu>（+2%）</> <$ba.fragile>Fragile</> to the attacker for 6 seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to [Substitute]"
+            },
+            {
+                "name": "双子分身复制器",
+                "desc": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 20% <$ba.fragile>Fragile</> to the attacker for 8 seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to [Substitute]"
+            },
+            {
+                "name": "双子分身复制器",
+                "desc": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 22%<@ba.talpu>（+2%）</> <$ba.fragile>Fragile</> to the attacker for 8 seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to [Substitute]"
+            }
+        ]
+    ],
+    "char_4125_rdoc": [
+        [
+            {
+                "name": "军医",
+                "desc": "Max HP +3%, attacks ignore 30 Def"
+            },
+            {
+                "name": "军医",
+                "desc": "Max HP +3% , attacks ignore 50<@ba.talpu>（+20）</> Def"
+            },
+            {
+                "name": "军医",
+                "desc": "Max HP +6%, attacks ignore 60 Def"
+            },
+            {
+                "name": "军医",
+                "desc": "Max HP +6% , attacks ignore 80<@ba.talpu>（+20）</> Def"
+            },
+            {
+                "name": "军医",
+                "desc": "Max HP +12%, attacks ignore 120 Def"
+            },
+            {
+                "name": "军医",
+                "desc": "Max HP +12% , attacks ignore 140<@ba.talpu>（+20）</> Def"
+            }
+        ],
+        [
+            {
+                "name": "交感神经激活",
+                "desc": "When healing allies, exceed healing amount convert to fast decaying <$ba.barrier>Barrier</>"
+            },
+            {
+                "name": "交感神经激活",
+                "desc": "When healing allies, exceed healing amount convert to decaying <$ba.barrier>Barrier</>"
+            }
+        ]
+    ]
+}
+
+#template
+
+"char_XXXX_ABCDEF": [
+    [
+        {
+            "name": "",
+            "desc": ""
+        },
+        {
+            "name": "",
+            "desc": ""
+        }
+    ],
+    [
+        {
+            "name": "",
+            "desc": ""
+        },
+        {
+            "name": "",
+            "desc": ""
+        }
+    ]
+]

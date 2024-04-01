@@ -1,0 +1,60 @@
+					case "guard":
+					tags[i] = 近卫干员		#Guard
+					case "sniper":
+					tags[i] = 狙击干员		#Sniper
+					case "defender":
+					tags[i] = 重装干员		#Defender
+					case "medic":
+					tags[i] = 医疗干员		#Medic
+					case "supporter":
+					tags[i] = 辅助干员		#Supporter
+					case "caster":
+					tags[i] = 术师干员		#Caster
+					case "specialist":
+					tags[i] = 特种干员		#Specialist
+					case "vanguard":
+					tags[i] = 先锋干员		#Vanguard
+					case "melee":
+					tags[i] = 近战位		#Melee
+					case "ranged":
+					tags[i] = 远程位		#Ranged
+					case "top operator":
+					tags[i] = 高级资深干员	#Top Operator
+					case "crowd-control":
+					tags[i] = 控场			#Crowd-Control
+					case "nuker":
+					tags[i] = 爆发			#Nuker
+					case "senior operator":
+					tags[i] = 资深干员		#Senior Operator
+					case "healing":
+					tags[i] = 治疗			#Healing
+					case "support":
+					tags[i] = 支援			#Support
+					case "starter":
+					tags[i] = 新手			#Starter
+					case "dp-recovery":
+					tags[i] = 费用回复		#DP-Recovery
+					case "dps":
+					tags[i] = 输出			#DPS
+					case "survival":
+					tags[i] = 生存			#Survival
+					case "aoe":
+					tags[i] = 群攻			#AoE
+					case "defense":
+					tags[i] = 防护			#Defense
+					case "slow":
+					tags[i] = 减速			#Slow
+					case "debuff":
+					tags[i] = 削弱			#Debuff
+					case "fast-redeploy":
+					tags[i] = 快速复活		#Fast-Redeploy
+					case "shift":
+					tags[i] = 位移			#Shift
+					case "summon":
+					tags[i] = 召唤			#Summon
+					case "robot":
+					tags[i] = 支援机械		#Robot
+					case "male":
+					tags[i] = 男性干员		#Male
+					case "female":
+					tags[i] = 女性干员		#Female

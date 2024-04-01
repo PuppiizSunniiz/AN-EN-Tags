@@ -1,0 +1,754 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
+    <meta name='theme-color' content='#222222ff'>
+    <title translate-id='web-title'>Arknights Operator Details</title>
+    <link rel='manifest' href='./manifest.json' crossorigin='use-credentials'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='css/ak.css'>
+    <link rel='stylesheet' href='css/akMaterial.css'>
+    <link rel='stylesheet' href='css/akchardetail.css'>
+    <link href='https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.css' rel='stylesheet'>
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
+    <script src='https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js'></script>
+    <script src="js/spine-widget.js"></script>
+    <script src="js/spine-skeleton-binary.js"></script>
+    <!-- site tag (gtag.js) - Google Analytics -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-159317757-1'></script>/
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-159317757-1');
+        
+    </script>
+</head>
+<body  >
+    <div id="loadingOverlay" style="width: 100vw; height: 150%; background-color: #111111; position: absolute; z-index: 9999; top:0px;">
+        <div class="d-flex justify-content-center" style="margin-top: 50vh">
+            <div class="spinner-border" role="status" style="border-color: #0098DC; border-right-color: transparent; width: 4rem; height: 4rem;">
+            </div>
+        </div>
+        <div style="width: 100%; text-align: center; margin-top: 13px;">
+            <div class='loadtext'>Loading Toolbox</div>
+            <div></div>
+            <div class="loadforce" onclick="hideload()"><a>Click here if stuck on loading</a></div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+          $('#nav-placeholder').load('nav.html');
+        });
+        $(window).on("load", function () {
+            setTimeout(function () {
+                $("#loadingOverlay").fadeOut(); 
+            }, 1000);
+        });
+    </script>
+    <!-- style=' background-image: url(./img/extra/bg1.png)' -->
+    <button class='btn btn-sm btn-primary goToTag' style='position:fixed;bottom:15px ;right: 0px;size:70px 70px;padding: 10px;z-index: 10000' id='to-tag' type='button'>^ </button>
+    <nav id="aknav" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="background-image: linear-gradient(#222222ff 70%,#222222ff , #111111aa );">
+            <img src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_rhodes.png" width="40" height="40" style="transform:scale(1.2,1.2)translate(-8px,1px)"class="d-inline-block align-top" alt="">
+            <a class="navbar-brand" href="#" translate-id="topbar-1">Arknights Toolbox</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="展开">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    </nav>
+    <div id='acedonate'></div>
+    <div style='padding-bottom:40px;'></div>
+    <!-- <div class='warning-sign'style='position: absolute;z-index: 999999;background:#aaa;top:100px;left:50%;width:500px;height:200px;margin-left:-250px;text-align:center; vertical-align:center'>aaaaaaaaaaaaaaaaaaaaa</div> -->
+    <div id='opchoosemodal' class='modal fade' role='dialog' >
+        <div class='modal-dialog' style="max-width: 860px;">
+            <div class='modal-content' style='background-color: #444'>
+                <!-- <div class='modal-header' style='border-bottom: 1px solid #4f4f4f'>
+                    <h6 class='modal-title' style="color:white;">Select Operator</h6>
+                    <button type='button' style='color:white;' class='close' data-dismiss='modal'>&times;</button>
+                </div> -->
+                <div class='modal-body'>
+                    <div style="color:white;text-align: center;">Select Operator<button type='button' style='color:white;right: 10px;top:5px;position: absolute;' class='close' data-dismiss='modal'>&times;</button></div>
+                    <div class='filter-category'>
+                        <div id="filter-name-class" class="btn filter-name filter-exclusive" onclick="toggleExclusive(this)">Class</div>
+                        <div class='filter-category-content'>
+                            <div class="op-class btn-secondary tooltip2" data-id="CASTER" section="class" onclick="toggleBtn(this)"><img width='40' height="40" src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/classes/class_caster.png'><span class="tooltiptext tooltiptop tooltipstyle1 nohover">Caster</span></div>
+                            <div class="op-class btn-secondary tooltip2" data-id="WARRIOR" section="class" onclick="toggleBtn(this)"><img width='40' height="40" src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/classes/class_guard.png'><span class="tooltiptext tooltiptop tooltipstyle1 nohover">Guard</span></div>
+                            <div class="op-class btn-secondary tooltip2" data-id="MEDIC" section="class" onclick="toggleBtn(this)"><img width='40' height="40" src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/classes/class_medic.png'><span class="tooltiptext tooltiptop tooltipstyle1 nohover">Medic</span></div>
+                            <div class="op-class btn-secondary tooltip2" data-id="SNIPER" section="class" onclick="toggleBtn(this)"><img width='40' height="40" src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/classes/class_sniper.png'><span class="tooltiptext tooltiptop tooltipstyle1 nohover">Sniper</span></div>
+                            <div class="op-class btn-secondary tooltip2" data-id="SPECIAL" section="class" onclick="toggleBtn(this)"><img width='40' height="40" src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/classes/class_specialist.png'><span class="tooltiptext tooltiptop tooltipstyle1 nohover">Specialist</span></div>
+                            <div class="op-class btn-secondary tooltip2" data-id="SUPPORT" section="class" onclick="toggleBtn(this)"><img width='40' height="40" src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/classes/class_supporter.png'><span class="tooltiptext tooltiptop tooltipstyle1 nohover">Supporter</span></div>
+                            <div class="op-class btn-secondary tooltip2" data-id="TANK" section="class" onclick="toggleBtn(this)"><img width='40' height="40" src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/classes/class_defender.png'><span class="tooltiptext tooltiptop tooltipstyle1 nohover">Defender</span></div>
+                            <div class="op-class btn-secondary tooltip2" data-id="PIONEER" section="class" onclick="toggleBtn(this)"><img width='40' height="40" src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/classes/class_vanguard.png'><span class="tooltiptext tooltiptop tooltipstyle1 nohover">Vanguard</span></div>
+                        </div>
+                        <div class="btn btn-danger btn-clear" id="clear-filter-class" onclick="clearFilter('.op-class, .op-branch')" clear-data=".op-class, .op-branch">Clear</div>
+                    </div>
+                    <div class='filter-category'>
+                        <div id="filter-name-branch" class="btn filter-name filter-exclusive" onclick="toggleExclusive(this)">Subclass</div>
+                        <div class='filter-category-content' id="branch-container">
+                        </div>
+                        <div class="btn btn-danger btn-clear" id="clear-filter-branch" onclick="clearFilter('.op-branch')" clear-data=".op-branch">Clear</div>
+                    </div>
+                    <div class='filter-category'>
+                        <div id="filter-name-rarity" class="btn filter-name filter-exclusive" onclick="toggleExclusive(this)">Extra</div>
+                        <div class='filter-category-content'>
+                            <div class="btn btn-secondary btn-sm my-1 op-extra filter-btn" section="extra" onclick="toggleBtn(this)" id="filter-equip" >Module</div>
+                            <div id="group-rarity" class="btn btn-sm my-1 filter-btn" onclick="toggleGroup(this)">Group</div>
+                            <div class="btn btn-secondary btn-sm my-1 op-rarity filter-btn op-rarity2-6" onclick="toggleBtn(this)" section="rarity" data-id="5">6<i class="fa fa-star"></i></div>
+                            <div class="btn btn-secondary btn-sm my-1 op-rarity filter-btn op-rarity2-5" onclick="toggleBtn(this)" section="rarity" data-id="4">5<i class="fa fa-star"></i></div>
+                            <div class="btn btn-secondary btn-sm my-1 op-rarity filter-btn op-rarity2-4" onclick="toggleBtn(this)" section="rarity" data-id="3">4<i class="fa fa-star"></i></div>
+                            <div class="btn btn-secondary btn-sm my-1 op-rarity filter-btn op-rarity2-3" onclick="toggleBtn(this)" section="rarity" data-id="2">3<i class="fa fa-star"></i></div>
+                            <div class="btn btn-secondary btn-sm my-1 op-rarity filter-btn op-rarity2-2" onclick="toggleBtn(this)" section="rarity" data-id="1">2<i class="fa fa-star"></i></div>
+                            <div class="btn btn-secondary btn-sm my-1 op-rarity filter-btn op-rarity2-1" onclick="toggleBtn(this)" section="rarity" data-id="0">1<i class="fa fa-star"></i></div>
+                        </div>
+                        <div class="btn btn-danger btn-clear" id="clear-filter-rarity" onclick="clearFilter('.op-rarity')" clear-data=".op-rarity">Clear</div>
+                    </div>
+                    <div class="collapsible-closed" onclick="collapse(this)" target="collapsed-section">Advanced options<div class="fas fa-angle-down" style="float: right; margin-right: 10px; margin-top: 2px;"></div></div>
+                    <div class="collapsed-section-closed" id="collapsed-section" style="max-height: 0;">
+                        <!-- <div class='filter-category'>
+                            <div id="filter-name-subclass" class="btn filter-name filter-exclusive" onclick="toggleExclusive(this)">Subclass</div>
+                            <div class='filter-category-content' id="subclass-container">
+                            </div>
+                            <div class="btn btn-danger btn-clear" id="clear-filter-subclass" onclick="clearFilter('.op-subclass')" clear-data=".op-subclass">Clear</div>
+                        </div> -->
+                        <div class='filter-category'>
+                            <div id="filter-name-gender" class="btn filter-name filter-exclusive" onclick="toggleExclusive(this)">Gender</div>
+                            <div class='filter-category-content'>
+                                <div class="btn btn-secondary btn-sm my-1 op-gender filter-btn" onclick="toggleBtn(this)" section="gender" data-id="0"></div>
+                                <div class="btn btn-secondary btn-sm my-1 op-gender filter-btn" onclick="toggleBtn(this)" section="gender" data-id="1"></div>
+                            </div>
+                            <div class="btn btn-danger btn-clear" id="clear-filter-gender" onclick="clearFilter('.op-gender')" clear-data=".op-gender">Clear</div>
+                        </div>
+
+                        <div class='filter-category'>
+                            <div id="filter-name-tag" class="btn filter-name filter-exclusive" onclick="toggleExclusive(this)">Tags</div>
+                            <div class='filter-category-content'>
+                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Melee"></div>
+                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Ranged"></div>
+                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Healing"></div>
+                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Support"></div>
+                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="DPS"></div>
+                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="AoE"></div>
+                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Slow"></div>
+                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Survival"></div>
+                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Defense"></div>
+                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Debuff"></div>
+                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Shift"></div>
+                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Crowd Control"></div>
+                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Nuker"></div>
+                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Summon"></div>
+                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Fast-Redeploy"></div>
+                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="DP-Recovery"></div>
+                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Robot"></div>
+                            </div>
+                            <div class="btn btn-danger btn-clear" id="clear-filter-tag" onclick="clearFilter('.op-tag')" clear-data=".op-tag">Clear</div>
+                        </div>
+
+                        <!-- <div class='filter-category'>
+                            <div id="filter-name-faction" class="btn filter-name filter-nonexclusive" onclick="toggleExclusive(this)">Factions</div>
+                            <div class='filter-category-content'>
+                                <div class="op-faction btn-secondary" data-id="" onclick="toggleBtn(this)" section="faction"><img class='faction-img'  src='img/factions/none.png'></div>
+                                <div class="op-faction btn-secondary" data-id="LOGO_BLACKSTEEL" onclick="toggleBtn(this)" section="faction"><img class='faction-img'  src='img/factions/logo_blacksteel.png'></div>
+                                <div class="op-faction btn-secondary" data-id="LOGO_VICTORIA" onclick="toggleBtn(this)" section="faction"><img class='faction-img' src='img/factions/logo_victoria.png'></div>
+                                <div class="op-faction btn-secondary" data-id="LOGO_SIESTA" onclick="toggleBtn(this)" section="faction"><img class='faction-img' src='img/factions/logo_siesta.png'></div>
+                                <div class="op-faction btn-secondary" data-id="LOGO_KAZIMIERZ" onclick="toggleBtn(this)" section="faction"><img class='faction-img' src='img/factions/logo_kazimierz.png'></div>
+                                <div class="op-faction btn-secondary" data-id="LOGO_RHINE" onclick="toggleBtn(this)" section="faction"><img class='faction-img' src='img/factions/logo_rhine.png'></div>
+                                <div class="op-faction btn-secondary" data-id="LOGO_PENGUIN" onclick="toggleBtn(this)" section="faction"><img class='faction-img' src='img/factions/logo_penguin.png'></div>
+                                <div class="op-faction btn-secondary" data-id="LOGO_REUNION" onclick="toggleBtn(this)" section="faction"><img class='faction-img' src='img/factions/logo_reunion.png'></div>
+                                <div class="op-faction btn-secondary" data-id="LOGO_RHODES" onclick="toggleBtn(this)" section="faction"><img class='faction-img' src='img/factions/logo_rhodes.png'></div>
+                                <div class="op-faction btn-secondary" data-id="LOGO_ABYSSAL" onclick="toggleBtn(this)" section="faction"><img class='faction-img' src='img/factions/logo_abyssal.png'></div>
+                                <div class="op-faction btn-secondary" data-id="LOGO_KJERAG" onclick="toggleBtn(this)" section="faction"><img class='faction-img' src='img/factions/logo_kjerag.png'></div>
+                                <div class="op-faction btn-secondary" data-id="LOGO_URSUS" onclick="toggleBtn(this)" section="faction"><img class='faction-img' src='img/factions/logo_ursus.png'></div>
+                                <div class="op-faction btn-secondary" data-id="LOGO_LUNGMEN" onclick="toggleBtn(this)" section="faction"><img class='faction-img' src='img/factions/logo_lungmen.png'></div>
+                                <div class="op-faction btn-secondary" data-id="LOGO_YAN" onclick="toggleBtn(this)" section="faction"><img class='faction-img' src='img/factions/logo_yan.png'></div>
+                                <div class="op-faction btn-secondary" data-id="LOGO_LATERANO" onclick="toggleBtn(this)" section="faction"><img class='faction-img' src='img/factions/logo_laterano.png'></div>
+                                <div class="op-faction btn-secondary" data-id="LOGO_LEITHANIEN" onclick="toggleBtn(this)" section="faction"><img class='faction-img' src='img/factions/logo_leithanien.png'></div>
+                                <div class="op-faction btn-secondary" data-id="LOGO_RIM" onclick="toggleBtn(this)" section="faction"><img class='faction-img' src='img/factions/logo_rim.png'></div>
+                                <div class="op-faction btn-secondary" data-id="LOGO_SARGON" onclick="toggleBtn(this)" section="faction"><img class='faction-img' src='img/factions/logo_sargon.png'></div>
+                            </div>
+                            <div class="btn btn-danger btn-clear" id="clear-filter-faction" onclick="clearFilter('.op-faction')" clear-data=".op-faction">Clear</div>
+                        </div> -->
+
+                        <div class='filter-category'>
+                            <div id="filter-name-skill" class="btn filter-exclusive filter-name" onclick="toggleExclusive(this)">Skill type</div>
+                            <div class='filter-category-content'>
+                                <div class="btn btn-secondary btn-sm my-1 op-skill filter-btn" section="skill" onclick="toggleBtn(this)" data-id=1>Per second</div>
+                                <div class="btn btn-secondary btn-sm my-1 op-skill filter-btn" section="skill" onclick="toggleBtn(this)" data-id=2>Attacking Enemy</div>
+                                <div class="btn btn-secondary btn-sm my-1 op-skill filter-btn" section="skill" onclick="toggleBtn(this)" data-id=4>Getting Hit</div>
+                                <div class="btn btn-secondary btn-sm my-1 op-skill filter-btn" section="skill" onclick="toggleBtn(this)" data-id=8>Always On</div>
+                            </div>
+                            <div class="btn btn-danger btn-clear" id="clear-filter-skill" onclick="clearFilter('.op-skill')" clear-data=".op-skill">Clear</div>
+                        </div>
+                        
+                        <div class='filter-category'>
+                            <div class="filter-name" >Sort By</div>
+                            <div class='filter-category-content'>
+                                <div class="filter-btn btn-secondary btn-sm my-1 btn-disabled btn-sort" id="sort-atk" onclick="switchState(this)"><div style="margin-right: 5px;cursor: pointer;">ATK</div><div class="btn fas fa-sort-amount-down" id="order-atk" onclick="invertSort(this)"></div></div>
+                                <div class="filter-btn btn-secondary btn-sm my-1 btn-disabled btn-sort" id="sort-def" onclick="switchState(this)"><div style="margin-right: 5px;cursor: pointer;">DEF</div><div class="btn fas fa-sort-amount-down" id="order-def" onclick="invertSort(this)"></div></div>
+                                <div class="filter-btn btn-secondary btn-sm my-1 btn-disabled btn-sort" id="sort-hp" onclick="switchState(this)"><div style="margin-right: 5px;cursor: pointer;">HP</div><div class="btn fas fa-sort-amount-down" id="order-hp" onclick="invertSort(this)"></div></div>
+                                <div class="filter-btn btn-secondary btn-sm my-1 btn-disabled btn-sort" id="sort-dp" onclick="switchState(this)"><div style="margin-right: 5px;cursor: pointer;">DP COST</div><div class="btn fas fa-sort-amount-down" id="order-dp" onclick="invertSort(this)"></div></div>
+                                <div class="filter-btn btn-secondary btn-sm my-1 btn-disabled btn-sort" id="sort-block" onclick="switchState(this)"><div style="margin-right: 5px;cursor: pointer;">BLOCK COUNT</div><div class="btn fas fa-sort-amount-down" id="order-block" onclick="invertSort(this)"></div></div>
+                                <div class="filter-btn btn-secondary btn-sm my-1 btn-enabled btn-sort" id="sort-rarity" onclick="switchState(this)"><div style="margin-right: 5px;cursor: pointer;">RARITY</div><div class="btn fas fa-sort-amount-down" id="order-rarity" onclick="invertSort(this)"></div></div>
+                            </div>
+                            <div class="btn btn-danger btn-clear" onclick="resetSorting()">Reset</div>
+                        </div> 
+                    </div>
+
+                    
+                    
+                    <div class='tab-content'>
+                        <ul id='selectedopclass' style='padding-left: 0px;margin: auto;padding: auto;text-align: center;'>
+                            <!-- Operators of the selected class goes here -->
+                        </ul>
+                    </div>
+                    <br />
+
+                    <div style="background: #333;color: #ddd; padding: 4px;">
+                        <div style="background: #222; padding: 2px;margin: 2px 0px;">Click Filter to toggle between</div>
+                        <div class="btn ak-disable filter-exclusive filter-name" style="width:80px">Unique</div> Only allows 1 selection
+                        </br>
+                        <div class="btn ak-disable filter-nonexclusive filter-name" style="width:80px">Union</div> Includes all operator within selection
+                    </div>
+                    <!-- <table>
+                        <tr style="color: white"><td><span style="background-color: brown; font-weight: bold; padding: 5px; border-radius: 2px;">Exclusive</span></td><td style="width: 5px;"></td><td>All the criteria must match in a section</td></tr>
+                        <tr style="color: white"><td><span style="background-color: darkblue; font-weight: bold; padding: 5px; border-radius: 2px;">Non-exclusive</span></td><td style="width: 5px"></td><td> Any criterion can match in a section</td></tr>
+                    </table> -->
+                    <!-- <span style="color: white">Click on the button to switch bewteen
+                        <span style="background-color: brown; font-weight: bold; padding: 5px; border-radius: 2px;">Exclusive</span><br />and
+                        <span style="background-color: darkblue; font-weight: bold; padding: 5px; border-radius: 2px;">Non-exclusive</span>
+                    </span> -->
+                </div>
+            </div>
+        </div>
+    </div> <!-- class='modal' -->
+    <div class="modal fade" id="opzoom" style="overflow-x: hidden;overflow-y: hidden;">
+        <div class="modal-dialog modal-dialog-centered modal-lg" >
+            <div class="modal-content" style="background:#444">
+        
+            <!-- Modal Header -->
+            <!-- <div class="modal-header">
+                <h4 class="modal-title"></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+        -->
+            <!-- Modal body -->
+            <div class="modal-body" style="padding:0px;margin:0px;min-height:88vh;max-height: 88vh;display: block">
+                <img id="charazoom" style="margin-left:auto;width:100%;height:100%; display: block;object-fit: contain;">
+            </div>
+        
+            <!-- Modal footer -->
+            <!-- <div class="modal-footer" style="border-top: 1px solid #2f2f2f;height: 90px;padding:0px">
+               
+            </div> -->
+            <div style="height: 70px;"></div>
+            <div style="display:inline-flex;position: absolute;z-index: 150000;width:100%;bottom:0px;background: #444;padding:10px;border-radius: 2px;justify-content: right;">
+                <input type='range' class='statlevelInput' value='100' min='50' max='1000' id='charazoomslider' oninput="Zoomchara(this)" style='margin-top:15px;width:80%;'></input>
+                <input class="form-control" id="charazoominput" onchange="Zoomchara(this)" style="line-height:1.1;width:60px;padding:2px;margin:9.5px 2px;text-align: center;background:#999;color:#222;border:none" type="text" value="100">
+                <div id="charazoom-button"></div>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="opstory">
+        <div class="modal-dialog modal-dialog-centered modal-lg" >
+            <div class="modal-content" style="background:#444">
+        
+            <!-- Modal Header -->
+            <!-- <div class="modal-header">
+                <h4 class="modal-title"></h4>
+                
+            </div> -->
+        
+            <!-- Modal body -->
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" style="position:absolute;top:5px;right: 15px;color:#fff">&times;</button>
+                <div class="story-content" id="opstorycontent">
+
+                </div>
+            </div>
+        
+            <!-- Modal footer -->
+            <div class="modal-footer" style="border-top: 1px solid #2f2f2f">
+                <!-- <div id="charazoom-button"></div> -->
+                <div id="opstorycredits"  style="width:100%;color:#fff"></div>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="opmodulestory">
+        <div class="modal-dialog modal-dialog-centered modal-lg" >
+            <div class="modal-content" style="background:#444">
+        
+            <!-- Modal Header -->
+            <!-- <div class="modal-header">
+                <h4 class="modal-title"></h4>
+                
+            </div> -->
+        
+            <!-- Modal body -->
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" style="position:absolute;top:5px;right: 15px;color:#fff">&times;</button>
+                <div class="story-content" id="opmodulestorycontent">
+
+                </div>
+            </div>
+        
+            <!-- Modal footer -->
+            <div class="modal-footer" style="border-top: 1px solid #2f2f2f">
+                <!-- <div id="charazoom-button"></div> -->
+                <div id="opmodulestorycredits"  style="width:100%;color:#fff"></div>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="opaudio">
+        <div class="modal-dialog modal-dialog-centered" >
+            <div class="modal-content" style="background:#444">
+        
+            <!-- Modal Header -->
+            <!-- <div class="modal-header">
+                <h4 class="modal-title"></h4>
+                
+            </div> -->
+        
+            <!-- Modal body -->
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" style="position:absolute;top:5px;right: 15px;color:#fff">&times;</button>
+                <div class="story-content" id="opaudiocontent">
+
+                </div>
+            </div>
+        
+            <!-- Modal footer -->
+            <div class="modal-footer" style="border-top: 1px solid #2f2f2f">
+                <!-- <div id="charazoom-button"></div> -->
+                <div>
+                    <div id="opaudiotranslator"  style="width:100%;color:#fff"></div>
+                    <div style="margin:2px"></div>
+                    <div id="opaudioproofreader"  style="width:100%;color:#fff"></div>
+                </div>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="opsfx">
+        <div class="modal-dialog modal-dialog-centered" >
+            <div class="modal-content" style="background:#444">
+        
+            <!-- Modal Header -->
+            <!-- <div class="modal-header">
+                <h4 class="modal-title"></h4>
+                
+            </div> -->
+        
+            <!-- Modal body -->
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" style="position:absolute;top:5px;right: 15px;color:#fff">&times;</button>
+                <div class="story-content" id="opsfxcontent">
+
+                </div>
+            </div>
+        
+            <!-- Modal footer -->
+            <div class="modal-footer" style="border-top: 1px solid #2f2f2f">
+                <!-- <div id="charazoom-button"></div> -->
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        
+            </div>
+        </div>
+    </div>
+    <div class='col-md-12 col-sm-12 ' style='margin:auto;max-width:1000px;padding:0' >
+        <div class='row'>
+            <div class='col-12 ak-bg ak-shadow mt-3' style='padding:15px;padding-top:0%;padding-bottom:0;border-radius:0px' role='alert'>
+            <div class='row' style='padding:0;padding-bottom: 4px'>
+                    <div class='col-12 btn btn-sm ak-btn ak-c-black ak-shadow-small ak-disable' style='padding:0' translate-id='operator-select'>Select an operator :</div>
+            </div>
+            <!-- <div class='row'> -->
+                <div id='lefthandtoggle' style='position:absolute;top:-15px;left:20px;background:#222;padding:4px;cursor: pointer;border-radius: 3px'>Left Hand</div>
+                <!-- <div class='col-md-9'> -->
+                    <input readonly type='text' name='opID' id='opID' style='display: none;'>
+                    <div class='row'>
+                            <input  class='form-control' style='margin: 5px 2px;margin-left: 5px;border-radius: unset;width: 30%;' type='text' autocomplete='off' name='opname' id='opname' onkeyup='populateOperators(this)' placeholder='Type in operator name . .'>
+                            <button class='btn btn-sm ak-btn ak-rare-bg browse-btn ak-browsebtn' style='margin:2px 2px;padding: 5px' onclick='populateOperators("Browse")' type='button' id='opBrowseButton2'>All</button>
+                            <button class='btn btn-sm ak-btn ak-rare-bg browse-btn ak-browsebtn' style='margin:2px 2px;padding: 5px' onclick='populateOperators("Browse2")' type='button' id='opBrowseButton3'>Grouped</button>
+                            <button class='btn btn-sm ak-btn ak-rare-bg browse-btn ak-browsebtn' style='margin:2px 2px;padding: 5px' onclick='actualizeFilter()'type='button' id='opBrowseButton'>Filter</button>
+                    </div>
+                    <div style='position: relative;'><ul class='ak-c-black ak-browse' id='operatorsResult' style='display:none; position: absolute; z-index: 600; list-style-type: none; padding: 5px;color:#222'><li style='cursor: pointer'></li></ul></div>
+                <!-- </div> -->
+            <!-- </div> -->
+            <div class='row'>
+                    <button class='btn btn-danger col-12 align-self-center ak-btn text-center' style='padding:1px; z-index: 0; font-weight: 550' onclick='clickBtnClear()' ><span translate-id='selector-clear'>Clear</span> <span id='count-tag'></a> </button>
+            </div>
+        </div>
+        
+        <div class='chara-detail-container' id="chara-detail-container" style="display:none;">
+            <div class='row'>
+                <div id='chara-pic' class='col-md-12 absolute bottom-layer ak-shadow' style='overflow: hidden;'>
+                    <img class='background' src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/chara/bg.png'>
+                    <img class='faction' id='op-faction' src="img/factions/logo_penguin.png">
+                    <div class='chara-imagescontainer tab-content' id='tabs-opCG'>
+                    </div>
+                    <div>
+                        <div id="spine-frame-op" style="position: absolute;width: 300px; height: 300px;bottom:200px;left:150px;transform: scale(0.75);pointer-events: none">
+                            <div id="spine-frameheader-op" class='btn btn-sm ak-sm-btn' ondblclick="Mirror($('#spine-frame-op'))" style="display:inline-block;cursor: move;pointer-events:all;transform: scale(2);margin:0px;position: absolute;left:140px;top:90px;opacity: 0;"><i class="fas fa-arrows-alt"></i></div>
+                            <button class='btn btn-sm ak-sm-btn ak-disable ' style='position:absolute;top:75px;left:75px;font-size:30px;display: none;'  type='button' id='loading-spine-op'>Loading ...</button>
+                            <div id="spine-widget-op" class="top-layer" style="position:absolute;width: 800px; height: 800px;top:-775px;left:-750px;pointer-events: none;z-index: 20;transform: scale(0.5);"></div> <!-- scaling 0.5 for "supersampling" chibi -->
+                        </div>
+                    </div>
+                </div>
+                <div class='col-md-12 absolute top-layer'>
+                    
+                    <div class='row max-height'>
+                        
+                        <div class='col-md-7 col-sm-12 left-col-menu' style="padding-right: 0px;">
+                            <div id='leftmenu' class='elite-sidenav'>
+                            <ul class='nav nav-pills' id='elite-sidenav'>
+                            </ul>
+                            
+                            </div>
+                            <div class='addinfo-nav' >
+                            
+                            </div>
+                            <div id="top-right-buttons">
+                                <div>
+                                    <button id='class-change' class='ak-button' style="display: none;" onclick='ChangeSType()'>
+                                        <div id='class-background'><div id='class-beta'>BETA</div></div>
+                                        <a id="class-button"><img id="class-icon" src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/classchange/trans_c_black.png' title="Guard Amiya in beta phase"></a>
+                                        
+                                    </button>
+                                </div>
+                                <div id="sanitygone">
+                                    <a id="sanitylink" href="https://sanitygone.help/operators/" target="_blank">
+                                        <div id="sanitybut" class="btn tabbing-btns tabbing-btns-middle">
+                                                <img id="sanitys" height="20px"src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/sanitygone/SanityLogo.png'>
+                                                <img id="sanityg" height="20px"src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/sanitygone/SanityLogo.png'>
+                                                <!-- <svg width="40" height="55" viewBox="0 0 121 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0188 115.067L29.2722 84.0222L1.85843 75.0433L4.55142 57.3145L0 38.3172L20.1199 13.6341L47.388 0L82.7372 9.47909L111.844 29.3424L120.466 55.21L108.609 71.5471L101.491 71.0325L105.713 65.3221L113.799 54.1816L106.791 33.1584L80.1977 15.0101L48.034 6.38521L23.9562 18.4241L6.52665 39.8067L10.6594 57.0565L8.50319 71.2517L36.285 80.3789L31.7929 99.6053L64.426 73.5988L70.9373 76.082L22.0188 115.067Z" fill="#49B3FF"/>
+                                                    <path d="M20.169 38.2665C20.169 35.345 21.3961 32.8909 23.8502 30.9043C26.3042 28.8786 29.07 27.8658 32.1473 27.8658C33.238 27.8658 34.1924 27.9243 35.0105 28.0411C35.8285 28.158 36.9581 28.4112 38.3994 28.8007C39.8797 29.1513 40.8925 29.385 41.4379 29.5019C41.9053 32.1508 42.139 35.1502 42.139 38.5003C42.0611 38.8509 41.8274 39.0261 41.4379 39.0261C40.3861 39.0261 39.8213 38.8509 39.7434 38.5003C39.5096 36.7084 38.6721 34.9555 37.2308 33.2415C35.7895 31.5275 34.0366 30.6705 31.972 30.6705C30.1802 30.6705 28.7973 31.1769 27.8235 32.1897C26.8886 33.2025 26.4211 34.5659 26.4211 36.2799C26.4211 36.8642 26.4795 37.429 26.5964 37.9744C26.7522 38.4808 27.0249 38.9872 27.4144 39.4936C27.8429 40 28.174 40.4285 28.4078 40.7791C28.6804 41.0907 29.1674 41.4997 29.8685 42.0061C30.6087 42.5125 31.0956 42.8631 31.3293 43.0579C31.602 43.2526 32.1863 43.6422 33.0822 44.2265C34.0171 44.7718 34.582 45.0835 34.7767 45.1614C35.0105 45.3562 35.6532 45.7847 36.705 46.4469C37.7957 47.0701 38.5553 47.5376 38.9838 47.8492C39.4123 48.1219 40.0355 48.6088 40.8535 49.31C41.6716 50.0112 42.2559 50.6734 42.6065 51.2966C42.996 51.9199 43.3466 52.7185 43.6582 53.6923C43.9699 54.6272 44.1257 55.64 44.1257 56.7307C44.1257 59.847 42.8597 62.418 40.3277 64.4436C37.8346 66.4692 34.9325 67.482 31.6215 67.482C29.2842 67.482 25.7005 66.9366 20.8702 65.8459C20.5196 64.4436 20.1885 62.6907 19.8769 60.5871C19.6042 58.4447 19.4678 57.0423 19.4678 56.3801C19.5068 56.0685 19.8184 55.9127 20.4027 55.9127C21.4155 55.9127 21.9804 56.0685 22.0972 56.3801C22.253 57.0813 22.5257 57.8604 22.9153 58.7174C23.3048 59.5354 23.8307 60.4313 24.4929 61.4052C25.1941 62.3401 26.1095 63.1192 27.2391 63.7424C28.4078 64.3267 29.7127 64.6189 31.154 64.6189C32.9848 64.6189 34.5041 64.0735 35.7116 62.9828C36.9192 61.8921 37.523 60.256 37.523 58.0746C37.523 57.4124 37.3866 56.7697 37.114 56.1464C36.8802 55.5231 36.5881 54.9973 36.2375 54.5688C35.9259 54.1403 35.4389 53.6728 34.7767 53.1664C34.1535 52.66 33.6276 52.2705 33.1991 51.9978C32.7706 51.7251 32.1279 51.3551 31.2709 50.8876C30.4528 50.3812 29.8685 50.0306 29.518 49.8359C29.4011 49.719 29.1868 49.5632 28.8752 49.3684C27.7455 48.6672 26.8886 48.1219 26.3043 47.7323C25.7199 47.3428 24.9603 46.778 24.0254 46.0379C23.1295 45.2588 22.4478 44.5381 21.9804 43.8759C21.5129 43.2137 21.0844 42.3957 20.6949 41.4218C20.3443 40.448 20.169 39.3962 20.169 38.2665Z" fill="#E3E1EF"/>
+                                                    <path d="M51.5549 67.8326C51.5549 67.2093 51.2628 66.4108 50.6784 65.4369C50.0941 64.4241 49.802 63.5671 49.802 62.866C49.802 62.0479 50.211 61.2299 51.029 60.4119C51.8471 59.5938 52.9183 59.1848 54.2427 59.1848C55.0997 59.1848 55.723 59.3017 56.1125 59.5354C56.6579 60.6261 56.9305 61.9895 56.9305 63.6256C56.9305 64.4046 56.7747 65.3395 56.4631 66.4302C55.8398 68.6117 55.0023 70.4035 53.9506 71.8059C52.8988 73.2472 51.2433 74.8443 48.9839 76.5972H48.9255C48.7307 76.5972 48.4581 76.383 48.1075 75.9545C47.7569 75.5649 47.5816 75.2338 47.5816 74.9611C47.5816 74.9222 47.9127 74.6106 48.5749 74.0263C49.2371 73.4419 49.8994 72.585 50.5616 71.4553C51.2238 70.3646 51.5549 69.157 51.5549 67.8326ZM56.1125 42.8826C56.8916 43.6227 57.2811 44.5186 57.2811 45.5704C57.2811 46.6222 56.8916 47.5571 56.1125 48.3751C55.3724 49.1931 54.4765 49.6021 53.4247 49.6021C52.334 49.6021 51.3991 49.1931 50.62 48.3751C49.8409 47.5571 49.4514 46.6222 49.4514 45.5704C49.4514 44.5186 49.8409 43.6227 50.62 42.8826C51.3991 42.1035 52.334 41.714 53.4247 41.714C54.4765 41.714 55.3724 42.1035 56.1125 42.8826Z" fill="#E3E1EF"/>
+                                                    <path d="M60.9708 48.0829C60.9708 42.5904 62.8406 37.8575 66.5801 33.8842C70.3197 29.9109 74.8579 27.9243 80.1945 27.9243C83.6225 27.9243 88.1412 28.6449 93.7505 30.0862C93.8674 30.1252 94.0232 31.4301 94.218 34.0011C94.4517 36.5331 94.5686 38.0328 94.5686 38.5003C94.5686 38.9677 94.179 39.2014 93.3999 39.2014C92.8546 39.2014 92.4261 39.0846 92.1145 38.8509C91.9976 38.3055 91.8223 37.7601 91.5886 37.2148C91.3938 36.6694 91.0043 35.9877 90.42 35.1697C89.8746 34.3127 89.1929 33.5921 88.3749 33.0078C87.5958 32.4235 86.5051 31.9171 85.1027 31.4886C83.7394 31.0211 82.1812 30.7874 80.4283 30.7874C76.6108 30.7874 73.6308 32.3066 71.4883 35.345C69.3459 38.3834 68.2746 42.2788 68.2746 47.0312C68.2746 49.8359 68.7616 52.5432 69.7354 55.1531C70.7482 57.724 72.3259 59.9249 74.4683 61.7558C76.6497 63.5476 79.1817 64.4436 82.0643 64.4436C84.5184 64.4436 86.3882 64.0735 87.6737 63.3334C88.0632 63.0607 88.258 62.6127 88.258 61.9895L88.1996 57.7825V57.3734C88.1996 55.0362 88.0632 53.4586 87.7906 52.6405C87.6347 52.1341 87.0504 51.7641 86.0376 51.5304C85.0638 51.2966 84.2458 51.1798 83.5835 51.1798C83.4277 51.1798 83.3498 50.9071 83.3498 50.3617C83.3498 49.7774 83.4277 49.4074 83.5835 49.2516C84.012 49.2516 85.1807 49.31 87.0894 49.4268C89.0371 49.5437 90.5953 49.6021 91.7639 49.6021C91.8028 49.6021 94.1595 49.4853 98.834 49.2516C98.9509 49.6021 99.0093 49.9332 99.0093 50.2449C99.0093 50.9071 98.9314 51.2382 98.7756 51.2382C98.5419 51.2382 98.016 51.3551 97.1979 51.5888C96.4189 51.8225 95.854 52.0173 95.5034 52.1731C94.997 52.4847 94.7438 53.9065 94.7438 56.4386C94.7438 57.2566 94.7438 58.0746 94.7438 58.8927C94.7828 59.7107 94.8023 60.1587 94.8023 60.2366C94.8023 60.9377 94.8997 61.5415 95.0944 62.0479C95.2892 62.5543 95.3866 62.8465 95.3866 62.9244C95.3866 63.4697 94.9581 63.9372 94.1011 64.3267C92.5429 65.0279 91.3938 65.5148 90.6537 65.7875C89.9136 66.0602 88.4917 66.3913 86.3882 66.7808C84.3237 67.1704 82.0254 67.3651 79.4934 67.3651C74.3515 67.3651 69.9691 65.4564 66.3464 61.6389C62.7627 57.8214 60.9708 53.3028 60.9708 48.0829Z" fill="#E3E1EF"/>
+                                                </svg> -->
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <img id="spine-widget-2"></img>
+                            <div id='ak-bottom-allnav'>
+                                
+                                </img>
+                                <div id='spine-bg-container'style="position:absolute;top: -341px;left:190px">
+                                    <img id="spine-bg" class='' style="display:none;" src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/spine/bg.png'>
+                                </div>
+                                <div id="Chibi-nav">
+                                    <!-- <button class='btn btn-sm ak-chibi-btn' style='background: #aa0000;'type='button' id='' title="Chibi player currently in WIP,need reload to load other thing (also wont stop rendering even not loading properly, refresh to fix) (also most chara chibi isnt included yet)">!</button> -->
+                                    <button class='btn btn-sm ak-chibi-btn' type='button' id='Chibi-Show' title="Show SD">Show SD</button>
+                                    <button class='btn btn-sm ak-chibi-btn' type='button' id='Chibi-Show-menu' title="Show Menu">Menu</button>
+                                    <div id='Chibi-menu' class='chibi-menu-closed'>
+                                        <button class='btn btn-sm ak-chibi-btn' type='button' id='Chibi-Bg' title="Change Background"><i class="fas fa-paint-roller"></i></button>
+                                        <!-- <button class='btn btn-sm ak-chibi-btn' type='button' id='Chibi-Scale' title="Change Chibi Scale"><i class="fas fa-search-plus"></i></button> -->
+                                        <button class='btn btn-sm ak-chibi-btn' type='button' id='Chibi-Perspective' title="Change Perspective">P</button>
+                                        <button class="btn btn-sm ak-chibi-btn" id="Chibi-download" title='Experimental Saving'><i class="far fa-save"></i></button>
+                                        <button class="btn btn-sm ak-chibi-btn" id="Chibi-frameSize" title='Experimental Resize'>R</button>
+                                        
+                                        <!-- <button class="btn btn-sm ak-chibi-btn" id="Chibi-console" onclick='CheckChibi()' title='Check'>C</button> -->
+                                        <div style='display:inline-flex'>
+                                            <button class='btn btn-sm ak-chibi-btn' type='button' id='Chibi-Scale' title="Reset Scale"><i class="fas fa-search-plus"></i></button> 
+                                            <input type='range' class='statlevelInput' value='1' min='0' max='50' id='chibizoomslider' oninput="ZoomChibi(this)" style='margin:3px 0px;width:90px'></input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id='bottom-nav'>
+                                    
+                                </div>
+                                <div class="ak-cutcorner-rt" style="position:absolute;bottom: 0px;;background-color: rgb(52, 52, 52);padding-top: 5px;padding-right:5px;padding-left:5px;width: 190px;height:56px;">
+                                    <div id='infonav'>
+                                        <div id='info-illustrator'>
+                                            <div class="btn-infoleft ak-shadow"><i class="fas fa-pencil-alt" title="Illustrator"></i></div><div id="name-illustrator" class="btn-inforight">-</div>
+                                        </div>
+                                        <!--<div id='info-voiceactor'>
+                                            <div class="btn-infoleft ak-shadow">
+                                                <i id="voiceactor-1" class="fas fa-microphone-alt" title="Voice Actor"> JP</i>
+                                            </div>
+                                            <div id="name-voiceactor" class="btn-inforight">
+                                                -
+                                            </div>
+                                        </div>
+                                        <div id='info-voiceactor'>
+                                            <div class="btn-infoleft ak-shadow">
+                                                <i class="fas fa-microphone-alt" title="Voice Actor"> CN</i>
+                                            </div><div id="name-voiceactor-cn" class="btn-inforight">-</div>
+                                        </div>-->
+                                        <div id='info-voiceactor'>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div id="spine-toolbar">
+                                    <button class='btn btn-sm ak-chibi-btn ak-disable' style='min-width:30px;height:30px'  type='button' >C</button>
+                                    <button class='btn btn-sm ak-chibi-btn' style='min-width:31px;height:30px' onclick='PlayPause("widget")' type='button' id='Chibi-Play'><b>l l </b></button>
+                                    <button class='btn btn-sm ak-chibi-btn' style='min-width:30px;height:30px' onclick='ChangeAnimation("widget","#spine-text",-1)' type='button' id='Chibi-Prev'><i class="fas fa-step-backward"></i></button>
+                                    <button id="spine-text" class="btn ak-chibi-btn" style="width:140px;height:30px; "onclick='ChangeAnimation("widget","#spine-text",0)'></button>
+                                    <button class='btn btn-sm ak-chibi-btn' style='min-width:30px;height:30px' onclick='ChangeAnimation("widget","#spine-text",1)' type='button' id='Chibi-Next'><i class="fas fa-step-forward"></i></button>
+                                </div>
+                                <div id="spine-token-toolbar">
+                                    <button class='btn btn-sm ak-chibi-btn ak-disable' style='min-width:30px;height:30px'  type='button' >T</button>
+                                    <button class='btn btn-sm ak-chibi-btn' style='min-width:31px;height:30px' onclick='PlayPause("token")' type='button' id='Chibi-Play'><b>l l </b></button>
+                                    <button class='btn btn-sm ak-chibi-btn' style='min-width:30px;height:30px' onclick='ChangeAnimation2("token","#spine-text2",-1)' type='button' id='Chibi-Prev'><i class="fas fa-step-backward"></i></button>
+                                    <button id="spine-text2" class="btn ak-chibi-btn" style="width:140px;height:30px; "onclick='ChangeAnimation2("token","#spine-text2",0)'></button>
+                                    <button class='btn btn-sm ak-chibi-btn' style='min-width:30px;height:30px' onclick='ChangeAnimation2("token","#spine-text2",1)' type='button' id='Chibi-Next'><i class="fas fa-step-forward"></i></button>
+                                </div>
+                                <div id="spine-frame" style="position: absolute;width: 300px; height: 300px;bottom:-39px;left:220px;transform: scale(0.75);pointer-events: none;">
+                                    <div id="spine-frameheader" class='btn btn-sm ak-sm-btn' ondblclick="Mirror($('#spine-frame'))" style="display:inline-block;cursor: move;pointer-events:all;transform: scale(2);margin:0px;position: absolute;left:140px;top:90px;opacity: 0;"><i class="fas fa-arrows-alt"></i></div>
+                                    <button class='btn btn-sm ak-sm-btn ak-disable' style='position:absolute;top:75px;left:75px;font-size:30px'  type='button' id='loading-spine'>Loading ...</button>
+                                    <div id="spine-widget" class="top-layer" style="position:absolute;width: 800px; height: 800px;top:-775px;left:-750px;pointer-events: none;z-index: 20;transform: scale(0.5);"></div> <!-- scaling 0.5 for "supersampling" chibi -->
+                                </div>
+                                <div id="spine-frame-token" class="ak-disable" style="position: absolute;width: 300px; height: 300px;bottom:-42px;left:345px;transform: scale(0.75)">
+                                    <div id="spine-frame-tokenheader" class='btn btn-sm ak-sm-btn' ondblclick="Mirror($('#spine-frame-token'))" style="display:inline-block;cursor: move;pointer-events:all;transform: scale(2);margin:0px;position: absolute;left:140px;top:90px;opacity: 0;"><i class="fas fa-arrows-alt"></i></div>
+                                    <div id="spine-widget-token" class="top-layer" style="position:absolute;width: 1800px; height: 1800px;top:-775px;left:-750px;pointer-events: none;z-index: 20;transform: scale(0.5);"></div> <!-- scaling 0.5 for "supersampling" chibi -->
+                                </div>
+                                
+                            </div>
+                            
+                            <!-- <div id="spine-toolbar-token" style="position:absolute;bottom:-30px;width:330px;text-align: center;">
+                                <button class='btn btn-sm ak-sm-btn ak-disable' style='min-width:30px;height:30px'  type='button'>W</button>
+                                <button class='btn btn-sm ak-sm-btn' style='min-width:30px;height:30px' onclick='PlayPause("token")' type='button' id='Chibi-Play'>Play/Pause</button>
+                                <button class='btn btn-sm ak-sm-btn' style='min-width:30px;height:30px' onclick='ChangeAnimation("token","#spine-text-token",-1)' type='button' id='Chibi-Prev'>&lt;</button>
+                                <button id="spine-text-token" class="btn ak-sm-btn" style="width:140px;height:30px; "onclick='ChangeAnimation("token","#spine-text-token",0)'></button>
+                                <button class='btn btn-sm ak-sm-btn' style='min-width:30px;height:30px' onclick='ChangeAnimation("token","#spine-text-token",1)' type='button' id='Chibi-Next'>&gt;</button>
+                            </div> -->
+                            
+                        </div>
+                        
+                        <div class='col-md-5 col-sm-12 right-col-menu max-height' style="padding-left: 0px;">
+                            <div id='rightmenu'class='right-menu-container max-height' style="padding-left: 0px;">
+                                <!--<div class='side-menu-tabbings' style="margin-bottom: 70px;">
+                                    <ul class="nav nav-pills nav-justified">
+                                        <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#sidemenutab-details" style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;">Chara</a></li>
+                                        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#sidemenutab-talents" style="border-radius: unset;">Talents</a></li>
+                                        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#sidemenutab-skills" style="border-radius: unset;">Skills</a></li>
+                                        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#sidemenutab-elite" style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;">Elite</a></li>
+                                    </ul>
+                                </div>-->
+                                <!-- <div class="potential-container" style="position: relative; margin-bottom: 20px">
+                                    <ul class='nav nav-pills' id='potential-tabs'>
+                                        <li class='nav-item'>
+                                            <button class='btn tabbing-btns horiz-small nav-link active' data-toggle='pill' href='#potential'><p>Potential</p></button>
+                                            <button class='btn tabbing-btns horiz-small nav-link' data-toggle='pill' href='#talent'><p>Talent</p></button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="potential-contents">
+                                        <div class='tab-pane container clickthrough active' id='potential1'>
+                                            <div class='small-container ak-shadow' style='margin-top:0px;'>
+                                                <p>Potentials</p>
+                                                <div class='topright'>
+                                                    <div style='padding: 15px;'>
+                                                        <img class='' id='potentialImage' src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/potential/1.png' style='width: 100%;'>
+                                                    </div>
+                                                </div>
+                                                <button class='btn btn-default btn-collapsible notclickthrough' data-toggle='collapse' data-target='#skill2StatsCollapsible'><i class='fa fa-sort-down'></i></button>
+                                            </div>
+                                            <div id='poitential1StatsCollapsible' class='collapsible notclickthrough'style="margin:20px">
+                                                <input type='range' min='1' max='10' name='skillLevel' id='skill1Level' onchange='changeSkillLevel(this)' class='skillLevelInput'>
+                                                <div class='potentialdisplaycontainer'>lv <span id='potential1LevelDisplay'>1</span></div>
+                                                <table>
+                                                    <tr>
+                                                        <td colspan='4' class='potentialdesc'>Desc</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class='stats-l'>SP Cost :</td>
+                                                        <td class='stats-r'>xxx</td>
+                                                        <td class='stats-l'>Duration :</td>
+                                                        <td class='stats-r'>xxx</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                    <div id="sidemenutab-details" style="position: relative;">
+                                        <div class="general-stats-container small-container ak-shadow">
+                                            <div id="op-rarity" style="padding: 8px 5px 0px 15px"></div>
+                                            <div id="op-fact" style="padding: 1px 5px 0px 0px">
+                                                <div id="op-fact-image" style="display: inline;"></div>
+                                                <div id="op-fact-text" style="display: inline;"></div>
+                                                <div style="padding:0px 5px 0px 15px">   
+                                                    <span class="info-l">Position</span><div class="info-r" id="op-position"></div>
+                                                    <span style="padding:0px 2px"></span>
+                                                    <span class="info-l">Gender</span><div class="info-r" id="op-gender"></div>
+                                                </div>
+                                                <div style="padding:0px 5px 0px 15px">
+                                                    <span class="info-l">Tags</span><div id="op-taglist" class="info-r" style="display: inline-block;padding:2px 4px 1px 8px;margin:0px 0px;min-width: 210px; text-align: left;"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <span class="op-name">
+                                                <span id="op-nameREG" class="text-shadow"style="padding:0px"></span>
+                                                <span id="op-nameTL" class="text-shadow"></span>
+                                                <span id="op-nameRead" class="text-shadow"style="padding:0px"></span>
+                                                <div id="op-displaynum"></div>
+                                            </span>
+                                            <div class="general-statcard">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span id="op-atktype"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <!-- <p style="margin-top: 20px; margin-bottom: 0px;"></p> -->
+                                                        <div id="op-potentialist" style="display:inline-block;vertical-align: top;margin-top: 17px;"></div>
+                                                        <div id="op-trust" style="display:inline-block;vertical-align: top;margin-top: 17px;"></div>
+                                                        <div id="op-talentlist"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12" style="display:inline-block">
+                                                        <div id="op-riic" style="vertical-align: top;margin-top: 4px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="topright" style="margin:-45px 0px 0px 0px;width: 120px;right:10px">
+                                                <div style="text-align: center; background:#555">
+                                                    <div id="op-className"  class="ak-shadow" style="color:#ddd;text-align:center;margin:-4px;margin-top:0px;background:#111;padding:2px;font-size:0.8em;font-weight:600;border-radius:2px"></div>
+                                                    <img id="op-classImage" class="ak-shadow" src="" style="width:50px;height:50px;object-fit: contain;display: inline-block;margin:0px 5px 5px 0px">
+                                                    <img id="op-subclassImage" class="ak-shadow" src="" style="padding:3px;width:50px;height:50px; background:#000;object-fit: contain;display: inline-block;margin:0px 0px -12px 5px">
+                                                    <div id="op-subclassName"  class="subclassname" ></div>
+                                                </div>
+                                                <div style="text-align: center;">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skillsection-container" id="sidemenutab-skills" style="position: relative; margin-top: 0px;">
+                                        <ul class='nav nav-pills' id='skill-tabs' style="background:#444;width: 100%;">
+                                        </ul>
+                                        <div class="tab-content" id="skill-contents">
+                                            <div class='tab-pane container clickthrough active' id='skill1'>
+                                                <div class='small-container ak-shadow' style='margin-top: 50px;'>
+                                                    <p>Skill 1</p>
+                                                    <span class='skillname'>Skill name</span>
+                                                    <div class='topright'>
+                                                        <div style='padding: 15px;'>
+                                                            <img class='ak-shadow skill-image' id='skill1image' src='img/skills/skchr_amgoat_1.png' style='width: 100%;'>
+                                                        </div>
+                                                    </div>
+                                                    <button class='btn btn-default btn-collapsible notclickthrough' data-toggle='collapse' data-target='#skill2StatsCollapsible'><i class='fa fa-sort-down'></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane container clickthrough" id="skill2">
+                                                <div class='small-container ak-shadow' style="margin-top: 50px;">
+                                                    <p>Skill 2</p>
+                                                    <span>Skill name</span>
+                                                    <div class="topright">
+                                                        <div style="padding: 15px;">
+                                                            <img class="ak-shadow skill-image" id="skill1image" src="img/skills/skchr_amgoat_2.png" style="width: 100%;">
+                                                        </div>
+                                                    </div>
+                                                    <button class='btn btn-default btn-collapsible notclickthrough collapse show' data-toggle='collapse' data-target='#skill1StatsCollapsible'><i class='fa fa-sort-down'></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tokensection-container" id="sidemenutab-token" style="position: relative;margin-top:25px;background-color: #4f4f4f;">
+                                        <ul class='nav nav-pills' id='token-tabs' style="background:#444"></ul>
+                                        <div class="tab-content greybackground" id="token-contents" style="margin: 0px 0px 0px 0px;"></div>
+                                    </div>
+                                    <div class="elitesection-container" id="sidemenutab-elite" style="position: relative; margin-top: -25px;">
+                                        <ul class='nav nav-pills' id='elite-topnav' style="background:#444;width: 100%">
+                                        </ul>
+                                        <div class='tab-content' id='tabs-opData'>
+                                            <div class='tab-pane container active' id='elite_0_tab'>
+                                                <div class='elite-1 small-container ak-shadow'>
+                                                    <p class='large-text'>Base</p>
+                                                    <span class='custom-span'>Stats</span>
+                                                    <div class='topright maxlevel'>
+                                                        <span class='maxleveltext'>Max Level</span>
+                                                        <span class='leveltext'>50</span>
+                                                        <div class='ring'>
+                                                            <div class='back ak-shadow'></div>
+                                                            <div class='back-centre'></div>
+                                                        </div>
+                                                    </div>
+                                                    <button class='btn btn-default btn-collapsible' data-toggle='collapse' data-target='#elite1StatsCollapsible'><i class='fa fa-sort-down'></i></button>
+                                                </div>
+                                                <div id='elite1StatsCollapsible' class='collapse eliteStatsContainer'>
+                                                    <ul class='nav nav-pills'>
+                                                        <li class='nav-item'>
+                                                            <a class='btn tabbing-btns horiz tabbing-btns-left nav-link active' data-toggle='pill' href='#elite1Stats1'></a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class='tab-content'>
+                                                        <div class='tab-pane container active' id='#elite1Stats1'>
+                                                            <table id='elite1Stats1Table'>
+                                                                <tr>
+                                                                    <td class='stats-l'>MaxHP :</td><td class='stats-r'>xxx</td><td class='stats-l'>Deploy :</td><td class='stats-r'>xxx</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class='stats-l'>Atk :</td><td class='stats-r'>xxx</td><td class='stats-l'>Cost :</td><td class='stats-r'>xxx</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class='stats-l'>Def :</td><td class='stats-r'>xxx</td><td class='stats-l'>Block :</td><td class='stats-r'>xxx</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class='stats-l'>MRes :</td><td class='stats-r'>xxx</td><td class='stats-l'>AtkSp :</td><td class='stats-r'>xxx</td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class='elite-1 small-container ak-shadow'>
+                                                    <p>Elite 1</p>
+                                                    <span class='custom-span'>Required materials</span>
+                                                    <img class='topright' src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/elite/1.png' width='100'>
+                                                    <button class='btn btn-default btn-collapsible' data-toggle='collapse' data-target='#eliteMatsCollapsible'><i class='fa fa-sort-down'></i></button>
+
+                                                    <div id='eliteMatsCollapsible' class='collapse'>
+                                                        WIP
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class='tab-pane container fade' id='elite_1_tab'>...</div>
+                                            <div class='tab-pane container fade' id='elite_2_tab'>...</div>
+                                        </div>
+                                    </div>
+                                    <div class="equipsection-container" id="sidemenutab-equip" style="position: relative; margin-top: -40px;background-color: #4f4f4f;">
+                                        <ul class='nav nav-pills' id='equip-tabs' style="background:#444"></ul>
+                                        <div class="tab-content" id="equip-contents" style="margin: -50px 0px 0px 0px;"></div>
+                                    </div>
+                                    <div style="height: 200px;"></div>
+                                <div class="chara-footer-2">
+                                    <div class="text-center ak-footer" style="margin-top: -40px;padding-bottom:200px" >
+                                        <div style="vertical-align: middle;line-height: 30px;">Made by : Aceship and Faryzal2020</div>
+                                        <div style="vertical-align: middle;line-height: 20px;">With translate and data help from: dragonjet, Jetroyz and other on <a href="https://discord.com/invite/rihq" target="_blank">Rhodes Island HQ discord server</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-12 ak-footer chara-footer-1" style="margin-top: 155px;padding:5px;border-radius: 2px;box-shadow: 0px 0px 5px black;">
+            <div class="col-12 text-center" style="height: 50px">
+                <div style="vertical-align: middle;line-height: 30px;">Developed and Maintained by: Aceship and Faryzal2020</div>
+                <div style="vertical-align: middle;line-height: 20px;">With translate and data help from: dragonjet, Jetroyz, AEsir and others on <a href="https://discord.com/invite/rihq" target="_blank">Rhodes island HQ discord server</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='js/everpolate.min.js'></script>
+<script src="./js/aknav.js"></script>
+<script src='js/chara-detail.js'></script>
+</html>

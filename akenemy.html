@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#222222ff">
+    <title translate-id="web-title-enemy">Arknights Enemy Catalog</title>
+    <link rel="manifest" href="./manifest.json" crossorigin="use-credentials">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/ak.css">
+    <link rel="stylesheet" href="css/akenemy.css">
+    <link rel="stylesheet" href="css/akchardetail.css">
+    <link rel="stylesheet" href="css/akelite.css">
+    <link href='https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.css' rel='stylesheet'>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src='https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js'></script>
+    <script src="js/spine-widget.js"></script>
+    <script src="js/spine-skeleton-binary.js"></script>
+    <!-- site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159317757-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-159317757-1');
+        
+    </script>
+</head>
+<body  >
+    <div id="loadingOverlay" style="width: 100vw; height: 150%; background-color: #111111; position: absolute; z-index: 9999; top:0px;">
+        <div class="d-flex justify-content-center" style="margin-top: 50vh">
+            <div class="spinner-border" role="status" style="border-color: #0098DC; border-right-color: transparent; width: 4rem; height: 4rem;">
+            </div>
+        </div>
+        <div style="width: 100%; text-align: center; margin-top: 13px;">
+            <div class='loadtext'>Loading Toolbox</div>
+            <div></div>
+            <div class="loadforce" onclick="hideload()"><a>Click here if stuck on loading</a></div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+          $('#nav-placeholder').load('nav.html');
+        });
+        $(window).on("load", function () {
+            setTimeout(function () {
+                $("#loadingOverlay").fadeOut(); 
+            }, 1000);
+        });
+    </script>
+    <!-- style=" background-image: url(./img/extra/bg1.png)" -->
+    <button class="btn btn-sm btn-primary goToTag" style="position:fixed;bottom:15px ;right: 0px;size:70px 70px;padding: 10px;z-index: 10000" id="to-tag" type="button">^ </button>
+    <nav id="aknav" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="background-image: linear-gradient(#222222ff 70%,#222222ff , #111111aa );">
+            <img src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_rhodes.png" width="40" height="40" style="transform:scale(1.2,1.2)translate(-8px,1px)"class="d-inline-block align-top" alt="">
+            <a class="navbar-brand" href="#" translate-id="topbar-1">Arknights Toolbox</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="展开">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    </nav>
+    <div id='acedonate'></div>
+    <div style="padding-bottom:40px;"></div>
+    <div class="modal fade" id="enemysd" style="overflow-x: hidden;overflow-y: hidden;">
+        <div class="modal-dialog modal-dialog-centered modal-xl" >
+            <div class="modal-content" style="background:#444">
+        
+            <!-- Modal Header -->
+            <!-- <div class="modal-header">
+                <h4 class="modal-title"></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+        -->
+            <!-- Modal body -->
+            <div class="modal-body" style="display: inline-flex;padding:0px;margin:0px;min-height:88vh;max-height: 88vh;justify-content: center;align-items:flex-end;">
+                    <div id="spine-frame" style="width: 300px; height: 300px;transform: scale(0.75);z-index:2;pointer-events: none;">
+                        <div id="spine-frameheader" class='btn btn-sm ak-sm-btn' style="display:inline-block;cursor: move;pointer-events:all;transform: scale(2);margin:0px;position: absolute;left:140px;top:90px;opacity: 0;"><i class="fas fa-arrows-alt"></i></div>
+                        <button class='btn btn-sm ak-sm-btn ak-disable' style='display:none;position:absolute;top:75px;left:75px;font-size:30px'  type='button' id='loading-spine'>Loading ...</button>
+                        <div id="spine-widget" class="top-layer" style="position:absolute;width: 4000px; height: 4000px;top:-2200px;left:-1850px;pointer-events: none;z-index: 20;transform: scale(0.5);"></div> <!-- scaling 0.5 for "supersampling" chibi -->   
+                    </div>
+            </div>
+        
+            <!-- Modal footer -->
+            <!-- <div class="modal-footer" style="border-top: 1px solid #2f2f2f;height: 90px;padding:0px">
+               
+            </div> -->
+            <div style="display:inline-flex;width:100%;bottom:0px;background: #444;padding:10px;border-radius: 2px;justify-content: center;">
+                <div id="spine-toolbar" style="width: 400px; height: 50px;z-index:1;">
+                        <button class="btn btn-sm ak-chibi-btn" id="Chibi-download" title='Experimental Saving'><i class="far fa-save"></i></button>
+                        <button class='btn btn-sm ak-chibi-btn ak-disable' style='min-width:30px;height:30px'  type='button' >C</button>
+                        <button class='btn btn-sm ak-chibi-btn' style='min-width:31px;height:30px' onclick='PlayPause("widget")' type='button' id='Chibi-Play'><b>l l </b></button>
+                        <button class='btn btn-sm ak-chibi-btn' style='min-width:30px;height:30px' onclick='ChangeAnimation("widget","#spine-text",-1)' type='button' id='Chibi-Prev'><i class="fas fa-step-backward"></i></button>
+                        <button id="spine-text" class="btn ak-chibi-btn" style="width:140px;height:30px; "onclick='ChangeAnimation("widget","#spine-text",0)'></button>
+                        <button class='btn btn-sm ak-chibi-btn' style='min-width:30px;height:30px' onclick='ChangeAnimation("widget","#spine-text",1)' type='button' id='Chibi-Next'><i class="fas fa-step-forward"></i></button>
+                        <button type="button" class="btn btn-danger spine-danger" data-dismiss="modal">Close</button>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="warning-sign"style="position: absolute;z-index: 999999;background:#aaa;top:100px;left:50%;width:500px;height:200px;margin-left:-250px;text-align:center; vertical-align:center">aaaaaaaaaaaaaaaaaaaaa</div> -->
+    <div class="col-md-12 col-sm-12 " style="margin:auto;min-height:1000px;max-width:1000px;padding:0" >
+        <div class="col-12 ak-bg ak-shadow mt-3" style="padding:15px;padding-top:0%;padding-bottom:0;border-radius:0px" role="alert">
+            <div class="row" style="padding:0;padding-bottom: 4px">
+                    <div class="col-12 btn btn-sm ak-btn ak-c-black ak-shadow-small ak-disable" style="padding:0" translate-id="operator-select">Select Filter Type :</div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                        <div class="row">
+                                <input style="margin-left: 15px;margin-top:5px" type="text" autocomplete="off" class="form-control col-8" name="opname" id="opname" onkeyup="populateEnemy(this)" placeholder="Type in enemy Name">
+                                <div class="col-3 btn btn-sm ak-btn ak-rare-bg browse-btn" style="margin:auto;margin-right: 15px;margin-top:10px" onclick='populateEnemy("Browse")' type="button">Browse</div>
+                        </div>
+                        <div style="position: relative;"><ul class="ak-c-black ak-browse" id="enemyResult" style="display:none; position: absolute; z-index: 10; list-style-type: none; padding: 5px;color:#222"><li style="cursor: pointer"></li></ul></div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <button class="btn btn-danger col-12 align-self-center ak-btn text-center" style="padding:1px ; z-index: 0;font-weight: 550" onclick="clickBtnClear()" ><span translate-id="selector-clear">Clear</span> <span id="count-tag"></a> </button>
+        </div>
+    </div>
+        <div>
+            <div id="enemyDetail" class="ak-c-black" style="min-height: 300px;"></div>
+            <div id="enemyDetail2"></div>
+        </div>
+        <table class="table ak-table ak-table-striped table-hover my-3 ak-shadow" id="table-recommend">
+            <thead class="ak-thead">
+                <tr>
+                    <th scope="col" colspan="10" style="text-align: center;">Character List</th>
+                </tr>
+            </thead>
+                <tbody class="container" id="tbody-list"style="position: relative;z-index:0;margin:auto">
+                
+            </tbody>
+        </table>
+        
+        <div class="col-12 tutorial">
+            <div class="col-12 text-left ak-mid ak-shadow" style="padding:10px" >
+                <p>How To Use ：</p>
+                <p>1. Click on the filter to show which skill</p>
+                <p>2. Click 'clear' to reset</p>
+            </div>
+        </div>
+        <!-- <div class="col-12 alert alert-success mt-1 cn" role="alert">
+            19/05/04 升级消耗计算器上线，可在导航栏切换使用。<br />
+            19/05/09 精英材料计算器上线，可在导航栏切换使用。
+        </div> -->
+        <div class="ak-div"></div>
+    </div>
+    <div class="row col-12 ak-footer">
+        <div class="col-12 text-center">
+            <div class="col-12 text-center"></div>
+            <p><a href="https://github.com/Aceship/AN-EN-Tags/issues">Bug Report and Suggestions</a></p>
+            <p>Developed and Maintained by: Aceship and Faryzal2020</p>
+        </div>
+    </div>
+    <script src="./js/aknav.js"></script>
+    <script src="./js/akenemy.js"></script>
+</body>
+</html>

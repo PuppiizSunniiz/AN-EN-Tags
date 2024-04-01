@@ -1,0 +1,49 @@
+{
+	"char_112_siege":{
+		"skills":[
+			"",
+			"Skill",
+			"Attack_2"
+		]
+	},
+	"char_010_chen":{
+		"skills":[
+			["Idle","Skill","Skill_End"],
+			["Idle","Skill_2","Skill_End_2"],
+			["Idle","Skill_3","Skill_End_3"]
+		]
+	},
+	"char_241_panda":{
+		"skills":[
+			[ "Skill_Start", "Skill_Loop", "Skill_End", "Idle" ],
+			[ "Skill_Start", "Skill_Loop", "Skill_End", "Idle" ]
+		]
+	},
+	"char_277_sqrrel":{
+		"skills":[
+			["Idle","Skill_Right"],
+			["Idle","Skill_Right"]
+		]
+	},
+	"char_225_haak":{
+		"skills":[
+			"",
+			"Skill",
+			"Skill"
+		]
+	},
+	"char_350_surtr":{
+		"skills":[
+			"",
+			"",
+			["Start","Skill_3_Begin", "Skill_3_Idle",["Skill_3_Loop",8], "Die" ]
+		]
+	},
+	"char_311_mudrok":{
+		"skills":[
+			"",
+			"",
+			[ "Skill_2_Begin", ["Skill_2_Sleep",3],"Skill_2_Awake", "Skill_2_Idle", ["Skill_2_Attack",8], "Skill_2_Idle", "Skill_2_End", "Idle" ]
+		]
+	}
+}

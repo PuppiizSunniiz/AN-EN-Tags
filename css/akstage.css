@@ -1,0 +1,469 @@
+/* css file for arknight github calculator */
+
+#story{
+    width:100%;
+    text-align:center;
+}
+.storyimagecontainer{
+    width:100%;
+    text-align:center;
+}
+.storyimagecontainer img{
+    max-width:600px;
+    width:100%;
+}
+@keyframes rotating {
+    from {transform:perspective(855px) rotateX(40deg) rotateZ(0deg)}
+    to {transform:perspective(855px) rotateX(40deg) rotateZ(360deg)}
+}
+
+.perspectiveMap{
+    transform-style: preserve-3d;
+    transform:perspective(855px) rotateX(25deg) translateZ(30px) translateY(-30px); ;
+    /* transform:perspective(55px)  ; */
+    /* animation-name: rotating;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+}
+.mainmap{
+    transform-style: preserve-3d;
+    display:inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    transition: transform 0.5s;
+    background: rgb(0, 0, 0);
+    padding:60px;
+    justify-content:center;
+    /* transform: translateZ(-30px); */
+}
+
+.stage-subTtitle{
+    background: #222;
+    border-radius: 2px;
+    text-align: center;
+}
+.stage-inline{
+    display: inline-flex;
+    padding: 2px 6px;
+}
+
+/* #mainStage-selection{
+    
+} */
+.tile-row{
+    outline: 1px solid transparent;
+    transform-style: preserve-3d;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    transform: translateZ(30px);
+}
+
+/* Tile Info */
+.tile{
+    display: inline-flex;
+    /* border:0.2px solid #aaa; */
+    width:60px;
+    height:60px;
+    box-shadow: inset 0 0 3px #000000AA;
+    /* margin:1px; */
+    transition: transform 0.5s;
+}
+.tile-height-0{
+    transform-style: preserve-3d;
+    background-color: #444;
+    
+    /* border:0.5px solid #555; */
+}
+.tile-height-1{
+    transform-style: preserve-3d;
+    background-color: #777;
+    /* border:0.5px solid #888; */
+    
+    border:0.5px solid #777;
+}   
+
+.tilebg{
+    position: absolute;
+    width:60px;
+    height:60px;
+    
+}
+.tile-bg img{
+    content:"";
+    filter: brightness(120%) saturate(120%) contrast(120%) drop-shadow(0px 0px 4px rgb(0, 0, 0));   
+    box-shadow: inset 0 0 10px #000000b4;
+    height: 60px;
+    width:60px
+}
+
+
+.tile-row .tile-height-1{
+    transform: translateZ(22px);
+    /* perspective: 500px; */
+}
+.mainmap:not(.perspectiveMap) .tile-row .tile .tileside{
+    display: none;
+}
+
+/* 30 px ver */
+/* .tileside{
+    position: absolute;
+    top:0;
+    left:0;
+    width:60px;
+    height:30px;
+    background:inherit;
+    border: inherit;
+    filter: brightness(60%) ;
+}
+
+
+.tileside-front{
+    transform: rotateX(-90deg) translate3d(-1px,15px,44px);
+}
+.tileside-back{
+    transform: rotateX(-90deg) translate3d(-1px,15px,-16px);
+}
+.tileside-right{
+    transform: rotateX(-90deg) rotateY(90deg) translate3d(-14px,15px,29px);
+}
+.tileside-left{
+    transform: rotateX(-90deg) rotateY(90deg) translate3d(-14px,15px,-31px);
+} */
+
+/* 60 px ver */
+.tileside{
+    position: absolute;
+    top:0;
+    left:0;
+    width:60px;
+    height:60px;
+    background:inherit;
+    border: inherit;
+    filter: brightness(60%) ;
+}
+
+
+.tileside-front{
+    transform: rotateX(-90deg) translate3d(-1px,30px,29px);
+}
+.tileside-back{
+    transform: rotateX(-90deg) translate3d(-1px,30px,-31px);
+}
+.tileside-right{
+    transform: rotateX(-90deg) rotateY(90deg) translate3d(1px,30px,29px);
+}
+.tileside-left{
+    transform: rotateX(-90deg) rotateY(90deg) translate3d(1px,30px,-31px);
+}
+
+
+
+
+.tiledata-spec-tile_wall .tileside{
+    filter: contrast(90%) brightness(40%) ;
+    /* border:0.5px solid rgba(32, 32, 32, 0); */
+}
+
+.tiledata-spec-tile_forbidden{
+    background-color: rgb(39, 39, 39);
+    border:0.5px solid #242424;
+    box-shadow:unset;
+}
+/* .tiledata-spec-tile_wall{
+    background-color: #666;
+    border:0.5px solid #888;
+} */
+.tiledata-spec-tile_road{
+    /* border: 0.1px solid rgb(65, 65, 65); */
+    border:unset;
+    background-color: #525252;
+}
+.tiledata-spec-tile_floor{
+    /* border: 0.5px solid #555; */
+    border: unset;
+    background-color: #444;
+}
+.tiledata-spec-tile_floor:after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    margin: 4px;
+    /* border: 0.5px solid rgb(167, 167, 167); */
+    background-color: rgb(47, 47, 47);
+}
+
+.tiledata-spec-tile_fence{
+    border: 0.5px solid #555;
+    background-color: #444;
+}
+.tiledata-spec-tile_fence:after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    margin: 4px;
+    border: 0.5px solid rgb(255, 209, 59);
+    background-color: #555;
+}
+.tiledata-spec-tile_hole{
+    background: unset;
+}
+.tiledata-spec-tile_hole:after{
+    content: "";
+    width: 58px;
+    height: 58px;
+    margin: 1px;
+    border: 0.5px solid rgb(105, 91, 45);
+    /* background-color: rgb(0, 0, 0); */
+}
+
+/* .tiledata-spec-tile_start{
+    background-color: rgb(168, 0, 0);
+}
+.tiledata-spec-tile_end{
+    background-color: rgb(0, 59, 168);
+} */
+.tiledata-spec-tile_flystart{
+    /* background-color: rgb(168, 0, 0); */
+    background-color: rgb(39, 39, 39);
+    border: 0.5px solid rgba(226, 24, 24, 0.089);
+}
+.tiledata-spec-tile_flystart img{
+    transform: translateZ(15px);
+    border: 5px solid rgb(226, 24, 24);
+    filter: drop-shadow(0px 0px 8px rgb(226, 24, 24));
+}
+.tiledata-spec-tile_start img{
+    
+    transform: translateZ(15px);
+    border: 5px solid rgb(226, 24, 24);
+    filter: drop-shadow(0px 0px 8px rgb(226, 24, 24));
+}
+
+.tiledata-spec-tile_end img{
+    transform: translateZ(15px);
+    border: 5px solid rgb(12, 138, 255);
+    filter: drop-shadow(0px 0px 8px rgb(12, 138, 255));
+}
+
+.tiledata-spec-tile_infection img{
+    animation-name: volcano;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+.tiledata-spec-tile_volcano{
+    border: 1px solid #000000e5;
+    box-shadow: inset 0 0 5px #000000;
+}
+.tiledata-spec-tile_volcano img{
+    /* filter: drop-shadow(0px 0px 2px rgb(100, 20, 20))drop-shadow(0px 0px 6px rgba(235, 8, 8, 0.637)); */
+    /* border: 1px solid #000000e5; */
+    transform: translateZ(0.2px);
+    animation-name: volcano;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes volcano {
+    0% {filter: drop-shadow(0px 0px 4px rgba(255, 34, 34, 0.664) )brightness(150%); }
+    20% {filter: drop-shadow(0px 0px 4px rgb(204, 43, 43) )brightness(90%); }
+    40% {filter: drop-shadow(0px 0px 4px rgb(117, 30, 30) )brightness(50%); }
+    60% {filter: drop-shadow(0px 0px 4px rgb(195, 34, 34) )brightness(120%); }
+    80% {filter: drop-shadow(0px 0px 4px rgba(255, 34, 34, 0.589) )brightness(200%); }
+    100% {filter: drop-shadow(0px 0px 4px rgb(173, 23, 23)) brightness(20%); }
+  }
+
+/* .tiledata-spec-tile_flystart:after{
+     width: 60px;
+    content:' ';
+    color:white;
+    font-size: 40px;
+    text-align: center; 
+} */
+
+.tiledata-spec-tile_telin{
+    border: 0.5px solid #444;
+    background-color: #111;
+}
+/* .tiledata-spec-tile_telin:after{
+    width: 60px;
+    content:'V';
+    color:white;
+    font-size: 40px;
+    text-align: center;
+} */
+.tiledata-spec-tile_telout{
+    border: 0.5px solid #444;
+    background-color: #111;
+    
+}
+/* .tiledata-spec-tile_telout:after{
+    width: 60px;
+    content:'^';
+    color:white;
+    font-size: 40px;
+    text-align: center;
+} */
+.tiledata-spec-tile_telin img{
+    /* transition: all 0.1s; */
+    width: 50px;
+    height: 50px;
+    margin:5px;
+    /* transform: translateZ(15px); */
+    /* border: 1px solid rgb(226, 24, 24); */
+    filter: drop-shadow(0px 0px 2px rgb(226, 24, 24));
+    animation-name: breath;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    
+}
+.tiledata-spec-tile_telout img{
+    transition: all 0.5s;
+    width: 50px;
+    height: 50px;
+    margin:5px;
+    /* transform: translateZ(15px); */
+    /* border: 1px solid rgb(155, 22, 22); */
+    filter: drop-shadow(0px 0px 2px rgb(155, 22, 22));
+    animation-name: breath;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    
+}
+
+/* .tiledata-spec-tile_grass{
+    background: #9fb060;
+    border: 0.5px solid #9fb060;
+} */
+
+.tiledata-spec-tile_deepwater{
+    /* border: 0.5px solid #444; */
+    box-shadow: unset;
+    background-color: rgba(80, 141, 255, 0.349);
+    /* transform: translateZ(-10px); */
+}
+.tiledata-spec-tile_deepwater img{
+    /* border: 0.5px solid #444; */
+    opacity: 20%;
+}
+
+.tile-img{
+    width: 60px;
+    height: 60px;
+}
+
+.grass {
+    position: absolute;
+    width: 60px;
+    height: 20px;
+}
+.grass-1{
+    transform: translateZ(8px) translateY(40px) rotateX(-45deg) ;
+}
+.grass-2{
+    transform: translateZ(8px) translateY(25px) rotateX(-45deg) ;
+}
+.grass-3{
+    transform: translateZ(8px) translateY(10px) rotateX(-45deg) scaleX(-1);
+}
+.grass-4{
+    transform: translateZ(8px) translateY(-5px) rotateX(-45deg) scaleX(-1);
+}
+
+
+
+
+
+
+
+
+.stage-btn-bg .nav-link .active .show{
+    background: #ff00ff !important;
+}
+.stage-btn{
+    min-width: 100px;
+    min-height:40px;
+    /* padding-left: 30px; */
+    padding:0px;
+    margin:5px;
+    text-align: center;
+    box-shadow: 2px 0px 3px #111;
+    transition: 400ms;
+}
+.stage-btn:hover{
+    transform: scale(1.1) ;
+    box-shadow: 2px 0px 20px rgb(0, 0, 0);
+    z-index: 50;
+}
+.stage-btn-icon{
+    position: absolute;
+    width:auto;
+    height: 40px;   
+    margin-top:-6px;
+    margin-left:-7px;
+}
+
+.stage-btn-header{
+    /* margin-left:20px; */
+    width:100%;
+}
+.stage-btn-header-h{
+    background: #2f1212 !important;
+}
+.stage-code{
+    background: #111;
+}
+
+@keyframes breath {
+    from {transform: scale(1) translateZ(5px);}
+    to {transform: scale(0.75) translateZ(5px);}
+}
+
+
+
+/* .perspectiveMap .tile-row .tiledata-spec-tile_wall,.perspectiveMap .tile-row .tiledata-spec-tile_forbidden,.perspectiveMap .tile-row .tiledata-spec-tile_flystart{
+    transform: translateY(-2px);
+} */
+
+
+@media screen and (max-width:768px) {
+    .storyimagecontainer{
+        width:100%;
+    }
+
+    /* .mainmap{
+        padding:30px;
+    }
+    .tile{
+        width:30px;
+        height:30px;
+    }
+    .tilebg{
+        width:30px;
+        height:30px;
+        
+    }
+    .tile-bg img{
+        width:30px;
+        height:30px;
+    }
+    .tile-img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .grass {
+        width: 30px;
+        height: 10px;
+    } */
+}

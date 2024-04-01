@@ -1,0 +1,187 @@
+{
+    "uniequip_002_jesca2": [ # Jessica the Liberated // Shield Duration
+        [
+            {
+                "name": "Adaptable",
+                "upgradeDescription": "Can use a stronger Mobile Personnel Shield that lasts for 50 seconds. The shield can only be deployed in the 4 tiles adjacent to Jessica. After the shield is deployed, Jessica immediately changes direction to face the shield and grants DEF +15% to herself and the unit behind her "
+            },
+            {
+                "name": "Adaptable",
+                "upgradeDescription": "Can use a stronger Mobile Personnel Shield that lasts for 50 seconds. The shield can only be deployed in the 4 tiles adjacent to Jessica. After the shield is deployed, Jessica immediately changes direction to face the shield and grants DEF +18%<@ba.talpu>（+3%）</> to herself and the unit behind her "
+            }
+        ],
+        [
+            {
+                "name": "Adaptable",
+                "upgradeDescription": "Can use a more stronger Mobile Personnel Shield that lasts for 50 seconds. The shield can only be deployed in the 4 tiles adjacent to Jessica. After the shield is deployed, Jessica immediately changes direction to face the shield and grants DEF +15% to herself and the unit behind her "
+            },
+            {
+                "name": "Adaptable",
+                "upgradeDescription": "Can use a more stronger Mobile Personnel Shield that lasts for 50 seconds. The shield can only be deployed in the 4 tiles adjacent to Jessica. After the shield is deployed, Jessica immediately changes direction to face the shield and grants DEF +18%<@ba.talpu>（+3%）</> to herself and the unit behind her "
+            }
+        ]
+    ],
+    "uniequip_002_blitz": [ # Blitz // ATK%
+        [
+            {
+                "name": "Shielded Shooting",
+                "upgradeDescription": "Prioritize <$ba.stun>Stunned</> enemies; Increase ATK to 160% when attacking <$ba.stun>Stunned</> enemies"
+            },
+            {
+                "name": "Shielded Shooting",
+                "upgradeDescription": "Prioritize <$ba.stun>Stunned</> enemies; Increase ATK to 165% <@ba.talpu>(+5%)</> when attacking <$ba.stun>Stunned</> enemies"
+            }
+        ],
+        [
+            {
+                "name": "Shielded Shooting",
+                "upgradeDescription": "Prioritize <$ba.stun>Stunned</> enemies; Increase ATK to 160% when attacking <$ba.stun>Stunned</> enemies"
+            },
+            {
+                "name": "Shielded Shooting",
+                "upgradeDescription": "Prioritize <$ba.stun>Stunned</> enemies; Increase ATK to 165% <@ba.talpu>(+5%)</> when attacking <$ba.stun>Stunned</> enemies"
+            }
+        ]
+    ],
+    "uniequip_002_liskam": [ # Liskarm // SP % Chance
+        [
+            {
+                "name": "Tactical Defense",
+                "upgradeDescription": "Restores 1 Skill Point to this Operator and a random ally in the surrounding tiles when attacked, 50% chance to recover extra 1 self SP"
+            }
+        ],
+        [
+            {
+                "name": "Tactical Defense",
+                "upgradeDescription": "Restores 1 Skill Point to this Operator and a random ally in the surrounding tiles when attacked, 50% chance to recover extra 1 self SP"
+            }
+        ]
+    ],
+    "uniequip_XXX_ABCDEF": [ # Ela // Chance & Damage
+        [
+            {
+                "name": "",
+                "upgradeDescription": "Has a 20% chance to deal 150% physical damage, 100% chance on enemies under Grzmot Miness 's effect"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "Has a 20% chance to deal 150% <@ba.talpu>（+2%）</>physical damage, 100% chance on enemies under Grzmot Miness 's effect"
+            }
+        ],
+        [
+            {
+                "name": "",
+                "upgradeDescription": "Has a 20% chance to deal 150% physical damage, 100% chance on enemies under Grzmot Miness 's effect"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "Has a 20% chance to deal 150% <@ba.talpu>（+2%）</>physical damage, 100% chance on enemies under Grzmot Miness 's effect"
+            }
+        ]
+    ],
+    "uniequip_XXX_ABCDEF": [ # Fuze // % Chance + Def%
+        [
+            {
+                "name": "",
+                "upgradeDescription": "Has 65% chance to dodge Ranged Physical attacks, Def +xx%"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "Has 65%<@ba.talpu>（+5%）</> chance to dodge Ranged Physical attacks, Def +xx%"
+            }
+        ],
+        [
+            {
+                "name": "",
+                "upgradeDescription": "Has 65% chance to dodge Ranged Physical attacks, Def +xx%"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "Has 65%<@ba.talpu>（+5%）</> chance to dodge Ranged Physical attacks, Def +xx%"
+            }
+        ]
+    ],
+    "uniequip_XXX_ABCDEF": [ # Iana // % Fragile + Duration
+        [
+            {
+                "name": "",
+                "upgradeDescription": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 20% <$ba.fragile>Fragile</> to the attacker for XXX seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to [Substitute]"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 20% <@ba.talpu>（+2%）</><$ba.fragile>Fragile</> to the attacker for XXX seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to [Substitute]"
+            }
+        ],
+        [
+            {
+                "name": "",
+                "upgradeDescription": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 20% <@ba.talpu>（+2%）</><$ba.fragile>Fragile</> to the attacker for XXX seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to [Substitute]"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 20% <@ba.talpu>（+2%）</><$ba.fragile>Fragile</> to the attacker for XXX seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to [Substitute]"
+            }
+        ]
+    ],
+    "uniequip_XXX_ABCDEF": [ # Doc // Max HP + Def Ignore
+        [
+            {
+                "name": "",
+                "upgradeDescription": "Max HP +xx%, attacks ignore 100 Def"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "Max HP +xx%<@ba.talpu>（+2%）</> , attacks ignore 100 Def"
+            }
+        ],
+        [
+            {
+                "name": "",
+                "upgradeDescription": "Max HP +xx%, attacks ignore 100 Def"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "Max HP +xx%<@ba.talpu>（+2%）</> , attacks ignore 100 Def"
+            }
+        ]
+    ],
+    "uniequip_003_ash": [ # Ash // Stun Duration , buff damage% and duration
+        [
+            {
+                "name": "Auxiliary Equipment",
+                "upgradeDescription": "After deployment, immediately throw a Stun Grenade at an enemy within range, <$ba.stun>Stunning</> them and nearby enemies for 4 seconds, Ash deal addition physical damage for xx% to <$ba.stun>Stunned</> enemies for 4 seconds"
+            }
+        ],
+        [
+            {
+                "name": "Auxiliary Equipment",
+                "upgradeDescription": "After deployment, immediately throw a Stun Grenade at an enemy within range, <$ba.stun>Stunning</> them and nearby enemies for 4 seconds, Ash deal addition physical damage for xx% to <$ba.stun>Stunned</> enemies for 4 seconds"
+            }
+        ]
+    ]
+}
+
+#template     
+
+"uniequip_00X_ABCDEF": [ # OPSname // Change
+    [
+        {
+            "name": "",
+            "upgradeDescription": ""
+        },
+        {
+            "name": "",
+            "upgradeDescription": ""
+        }
+    ],
+    [
+        {
+            "name": "",
+            "upgradeDescription": ""
+        },
+        {
+            "name": "",
+            "upgradeDescription": ""
+        }
+    ]
+]

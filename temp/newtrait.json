@@ -1,0 +1,10 @@
+{
+    "攻击造成<@ba.kw>法术伤害</>": {    # Sentinel
+        "en": "Blocks 3 enemies and attacks from long range, Enemies within Attack Range lose <$ba.invisible>Invisibility</>",
+        "color": "physical"
+    },
+    "攻击造成<@ba.kw>法术伤害</>": {    # Trapmaster X
+        "en": "Can use traps to assist in combat, but traps cannot be placed <@ba.kw>on tiles already occupied by an enemy</>;\nCan be deployed on Melee tiles ,traps can be deployed on Ranged tiles",
+        "color": "extra"
+    }
+}

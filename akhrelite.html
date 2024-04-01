@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#222222ff">
+    <title translate-id="web-title-elite">Arknights Elite Materials</title>
+    <link rel="manifest" href="./manifest.json" crossorigin="use-credentials">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/ak.css">
+    <link rel='stylesheet' href='css/akMaterial.css'>
+    <link rel="stylesheet" href="css/akelite.css">
+    <link href='https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.css' rel='stylesheet'>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src='https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js'></script>
+    <!-- site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159317757-1"></script>/
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-159317757-1');
+        
+    </script>
+</head>
+<body style="overflow: unset;">
+    <div id="loadingOverlay" style="width: 100vw; height: 150%; background-color: #111111; position: absolute; z-index: 9999; top:0px;">
+        <div class="d-flex justify-content-center" style="margin-top: 50vh">
+            <div class="spinner-border" role="status" style="border-color: #0098DC; border-right-color: transparent; width: 4rem; height: 4rem;">
+            </div>
+        </div>
+        <div style="width: 100%; text-align: center; margin-top: 13px;">
+            <div class='loadtext'>Loading Toolbox</div>
+            <div></div>
+            <div class="loadforce" onclick="hideload()"><a>Click here if stuck on loading</a></div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+          $('#nav-placeholder').load('nav.html');
+        });
+        $(window).on("load", function () {
+            setTimeout(function () {
+                $("#loadingOverlay").fadeOut(); 
+            }, 1000);
+        });
+    </script>
+    <!-- style=" background-image: url(./img/extra/bg1.png)" -->
+    <button class="btn btn-sm btn-primary goToTag" style="position:fixed;bottom:15px ;right: 0px;size:70px 70px;padding: 10px;z-index: 10000" id="to-tag" type="button">^ </button>
+    <nav id="aknav" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="background-image: linear-gradient(#222222ff 70%,#222222ff , #111111aa );">
+            <img src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_rhodes.png" width="40" height="40" style="transform:scale(1.2,1.2)translate(-8px,1px)"class="d-inline-block align-top" alt="">
+            <a class="navbar-brand" href="#" translate-id="topbar-1">Arknights Toolbox</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="展开">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    </nav>
+    <div id='acedonate'></div>
+    <div style="padding-bottom:40px;"></div>
+    <!-- <div class="warning-sign"style="position: absolute;z-index: 999999;background:#aaa;top:100px;left:50%;width:500px;height:200px;margin-left:-250px;text-align:center; vertical-align:center">aaaaaaaaaaaaaaaaaaaaa</div> -->
+    <div class="col-md-12 col-sm-12 " style="margin:auto;max-width:1000px;padding:0" >
+    <div class="row">
+        <div class="col-12 ak-bg ak-shadow mt-3" style="padding:15px;padding-top:0%;padding-bottom:0;border-radius:0px" role="alert">
+            <div class="row" style="padding:0;padding-bottom: 4px">
+                    <div class="col-12 btn btn-sm ak-btn ak-c-black ak-shadow-small" style="padding:0" translate-id="operator-select">Select an operator :</div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 ">
+                    <input readonly type="text" name="opID" id="opID" style="display: none;">
+                    <div class="row" style="padding:0px">
+                            <input style="margin-left: 15px;margin-top:5px" type="text" autocomplete="off" class="form-control col-8" name="opname" id="opname" onkeyup="populateOperators(this)" placeholder="Type in operator name . .">
+                            <div class="btn btn-sm ak-btn ak-rare-bg browse-btn" onclick='populateOperators("Browse")' type="button">Browse</div>
+                    </div>
+                    <div style="position: relative;"><ul class="ak-c-black ak-elite-browse" id="operatorsResult" style="display:none; position: absolute; z-index: 10; list-style-type: none; padding: 5px;color:#222"><li style="cursor: pointer"></li></ul></div>
+                    <div class="col-12 op-statcard ak-c-black ak-rare-bg" style=" margin-top: 10px; margin-bottom: 10px; border-radius: 3px;padding: 0px">
+                        <div class="row">
+                            <div class="col-6 col-sm-6 " style="padding: 20px;margin: auto;">
+                                <div style="position: relative;display: block; margin: 0 auto; width: 150px;z-index: 0;min-height:280px;margin:auto;background: #55555511">
+                                    <div class="ak-shadow"style="display:flex;align-items:flex-end;;min-height:280px">
+                                        <img style ="position:relative;z-index:1;"src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/chara/empty.png" width="150" id="opImage">
+                                        <img  style ="position:absolute;left: 0px; top: 0px;z-index:0" src="" width="150" id="opHeader">
+                                        <img  style ="position:absolute;left: 0px; bottom: 0px;z-index:0" src="" width="150" id="opBg">
+                                        <img  style ="position:absolute;left: 0px; bottom: 40px;z-index:2" src="" width="150" id="opGlow">
+                                        <img  style ="position:absolute;left: -2px; bottom:-5px;z-index:3" src="" width="152" id="opBanner">
+                                        <div style="position:absolute;z-index:4;bottom:0px;left:2px;" id="add-op"></div>
+                                        <div style="position: absolute;z-index:5;bottom:0px;right:2px" id="detail"></div>
+                                    </div> 
+                                    <img class="ak-shadow-small" style="display: block; z-index:3;position: absolute; left: 4px; top: 4px; margin: 0 auto; width: 35px;" src="" id="opClassImage">
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-6 col-sm-6" style="padding: 5px;margin: auto">
+                                <p id="op-rarity"></p>
+                                <b><p id="op-nametl"></p></b>
+                                <p id="op-name"></p>
+                                <div id="op-tags"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7" id="eliteReqMats" style="display:none;">
+                    <div class="dropdown col-12"style="margin-top: 10px;">
+                        <div type="button" class="col-12 btn ak-rare-bg ak-c-black ak-dropdown-toggle " style="" data-toggle="dropdown" id="eliteDropBtn">
+                        </div>
+                        <div class="dropdown-menu col-11">
+                            <a class="dropdown-item" onclick="selectElite(1)">Elite 1</a>
+                            <a class="dropdown-item" onclick="selectElite(2)">Elite 2</a>
+                        </div>
+                    </div>
+                    <div class='requiremats-box'>
+                        <p style="text-align: center;"><b>Required Materials</b></p>
+                        <div class="reqmats-container" id="reqmats-container" >
+                            <li>
+                                <div style="position: relative;">
+                                    <div class="item-name">Test</div>
+                                    <div class="item-image">
+                                        <span></span>
+                                        <img id="item-image" src="img/items/MTL_ASC_CST3.png">
+                                    </div>
+                                    <img id="item-rarity" src="img/material/bg/item-5.png" width="150">
+                                    <div class="item-amount">3x</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div style="position: relative;">
+                                    <div class="item-name">Test</div>
+                                    <div class="item-image">
+                                        <span></span>
+                                        <img id="item-image" src="img/items/MTL_ASC_CST3.png">
+                                    </div>
+                                    <img id="item-rarity" src="img/material/bg/item-5.png" width="150">
+                                    <div class="item-amount">3x</div>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="requiremats-box">
+                        <p style=""><b>Selected Operators</b></p>
+                        <div class="reqmats-container" id="selectops-container">
+                        </div>
+                    </div>
+                    <div class="requiremats-box">
+                        <p style="padding:6px;"><b>All Required Materials </b></br><a id="akevolve" href="akevolve.html?n=&h=&o=1+2+3+4+5">Check on Material Calculator</a></p>
+                        <div class="reqmats-container" id="comb-reqmats-container">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                    <button class="btn btn-danger col-12 align-self-center ak-btn text-center" style="padding:1px ; z-index: 0;font-weight: 550" onclick="clickBtnClear()" ><span translate-id="selector-clear">Clear</span> <span id="count-tag"></a> </button>
+            </div>
+        </div>
+    </div>
+        <table class="table ak-table ak-table-striped table-hover my-3 ak-shadow" id="table-recommend">
+            <thead class="ak-thead">
+                <tr>
+                    <th scope="col" colspan="10" style="text-align: center;">Detailed Breakdown</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="tbody-materials"style="position: relative;z-index:0;">
+            </tbody>
+        </table>
+        <!-- <div class="col-12 alert alert-success mt-1 cn" role="alert">
+            19/05/04 升级消耗计算器上线，可在导航栏切换使用。<br />
+            19/05/09 精英材料计算器上线，可在导航栏切换使用。
+        </div> -->
+        <div class="ak-div"></div>
+    </div>
+    <div class="row col-12 ak-footer">
+        <div class="col-12 text-center">
+            <div class="col-12 text-center"></div>
+            <p><a href="https://github.com/Aceship/AN-EN-Tags/issues">Bug Report and Suggestions</a></p>
+            <p>Developed and Maintained by: Aceship and Faryzal2020</p>
+        </div>
+    </div>
+    <script src="./js/aknav.js"></script>
+    <script src="./js/jsondbsystem.js"></script>
+    <script src="./js/akhrelite.js"></script>
+</body>
+</html>

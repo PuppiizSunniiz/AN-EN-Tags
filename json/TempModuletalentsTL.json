@@ -1,0 +1,948 @@
+{
+    "uniequip_002_horn": [
+        [
+            {
+                "name": "Military Fortress",
+                "upgradeDescription": "When this unit is on the field, Defender Operators gain +25% ATK"
+            },
+            {
+                "name": "Military Fortress",
+                "upgradeDescription": "When this unit is on the field, Defender Operators gain +28% <@ba.talpu>(+3%)</> ATK"
+            }
+        ],
+        [
+            {
+                "name": "Military Fortress",
+                "upgradeDescription": "When this unit is on the field, Defender Operators gain +28% ATK"
+            },
+            {
+                "name": "Military Fortress",
+                "upgradeDescription": "When this unit is on the field, Defender Operators gain +31% <@ba.talpu>(+3%)</> ATK"
+            }
+        ]
+    ],
+    "uniequip_002_ashlok": [
+        [
+            {
+                "name": "Bombardment Studies",
+                "upgradeDescription": "ATK +10%. If front and back tiles are ground tiles, ATK +16% instead"
+            },
+            {
+                "name": "Bombardment Studies",
+                "upgradeDescription": "ATK +12% <@ba.talpu>(+2%)</>. If front and back tiles are ground tiles, ATK +18% <@ba.talpu>(+2%)</> instead"
+            }
+        ],
+        [
+            {
+                "name": "Bombardment Studies",
+                "upgradeDescription": "ATK +10%. If front and back tiles are ground tiles, ATK +20% instead"
+            },
+            {
+                "name": "Bombardment Studies",
+                "upgradeDescription": "ATK +12% <@ba.talpu>(+2%)</>. If front and back tiles are ground tiles, ATK +22% <@ba.talpu>(+2%)</> instead"
+            }
+        ]
+    ],
+    "uniequip_002_firwhl": [
+        [
+            {
+                "name": "Flexible Fighter",
+                "upgradeDescription": "ATK +16% when not blocking an enemy, DEF +16% when blocking an enemy"
+            },
+            {
+                "name": "Flexible Fighter",
+                "upgradeDescription": "ATK +18% <@ba.talpu>(+2%)</> when not blocking an enemy, DEF +18% <@ba.talpu>(+2%)</> when blocking an enemy"
+            }
+        ],
+        [
+            {
+                "name": "Flexible Fighter",
+                "upgradeDescription": "ATK +18% when not blocking an enemy, DEF +18% when blocking an enemy"
+            },
+            {
+                "name": "Flexible Fighter",
+                "upgradeDescription": "ATK +20% <@ba.talpu>(+2%)</> when not blocking an enemy, DEF +20% <@ba.talpu>(+2%)</> when blocking an enemy"
+            }
+        ]
+    ],
+    "uniequip_002_delphn": [
+        [
+            {
+                "name": "濯洗剑锋",
+                "upgradeDescription": "When attacking enemies with 80% or more HP, Delphine will deal 21% increased damage to them"
+            },
+            {
+                "name": "濯洗剑锋",
+                "upgradeDescription": "When attacking enemies with 80% or more HP, Delphine will deal 23% <@ba.talpu>(+2%)</> increased damage to them"
+            }
+        ],
+        [
+            {
+                "name": "濯洗剑锋",
+                "upgradeDescription": "When attacking enemies with 80% or more HP, Delphine will deal 23% increased damage to them"
+            },
+            {
+                "name": "濯洗剑锋",
+                "upgradeDescription": "When attacking enemies with 80% or more HP, Delphine will deal 25% <@ba.talpu>(+2%)</> increased damage to them"
+            }
+        ]
+    ],
+    "uniequip_002_vrdant": [
+        [
+            {
+                "name": "植物自愈力",
+                "upgradeDescription": "<Substitute> recovers 3.5% HP per second, Res +5"
+            },
+            {
+                "name": "植物自愈力",
+                "upgradeDescription": "<Substitute> recovers 4% <@ba.talpu>(+0.5%)</> HP per second, Res +5"
+            }
+        ],
+        [
+            {
+                "name": "植物自愈力",
+                "upgradeDescription": "<Substitute> recovers 3.5% HP per second, Res +8"
+            },
+            {
+                "name": "植物自愈力",
+                "upgradeDescription": "<Substitute> recovers 4% <@ba.talpu>(+0.5%)</> HP per second, Res +8"
+            }
+        ]
+    ],
+    "uniequip_003_phenxi": [
+        [
+            {
+                "name": "Sufferer of Tribulations",
+                "upgradeDescription": "Continually loses HP over time (HP cannot drop below 30 % as a result of this effect); While HP is above 50%, this unit gains <$ba.strong>Vigor</>, increasing ATK by 28%; this effect is doubled above 80% HP."
+            }
+        ],
+        [
+            {
+                "name": "Sufferer of Tribulations",
+                "upgradeDescription": "Continually loses HP over time (HP cannot drop below 50 % as a result of this effect); While HP is above 50%, this unit gains <$ba.strong>Vigor</>, increasing ATK by 30%; this effect is doubled above 80% HP."
+            }
+        ]
+    ],
+    "uniequip_004_ebnhlz": [
+        [
+            {
+                "name": "Appoggiatura",
+                "upgradeDescription": "If there are no other enemies near the target, attacks deal an additional 24% ATK as Arts damage; If target still in <$ba.dt.apoptosis2>Apoptosis</> duration deal an additional 20% ATK as Elemental damage"
+            },
+            {
+                "name": "Appoggiatura",
+                "upgradeDescription": "If there are no other enemies near the target, attacks deal an additional 26% <@ba.talpu>(+2%)</> ATK as Arts damage; If target still in <$ba.dt.apoptosis2>Apoptosis</> duration deal an additional 20% ATK as Elemental damage"
+            }
+        ],
+        [
+            {
+                "name": "Appoggiatura",
+                "upgradeDescription": "If there are no other enemies near the target, attacks deal an additional 30% ATK as Arts damage; If target still in <$ba.dt.apoptosis2>Apoptosis</> duration deal an additional 30% ATK as Elemental damage"
+            },
+            {
+                "name": "Appoggiatura",
+                "upgradeDescription": "If there are no other enemies near the target, attacks deal an additional 32% <@ba.talpu>(+2%)</> ATK as Arts damage; If target still in <$ba.dt.apoptosis2>Apoptosis</> duration deal an additional 30% ATK as Elemental damage"
+            }
+        ]
+    ],
+    "uniequip_002_mudrok": [
+        [
+            {
+                "name": "Ward of the Fertile Soil",
+                "upgradeDescription": "Every 9 seconds, gains 1 <$ba.shield>Shield</> (Can have up to 3 stacks, with 1 stack granted immediately when deployed). When a Shield is broken, restores 22% of Max HP and 1 Skill Points"
+            },
+            {
+                "name": "Ward of the Fertile Soil",
+                "upgradeDescription": "Every 9 seconds, gains 1 <$ba.shield>Shield</> (Can have up to 3 stacks, with 1 stack granted immediately when deployed). When a Shield is broken, restores 24% <@ba.talpu>(+2%)</> of Max HP and 1 Skill Points"
+            }
+        ],
+        [
+            {
+                "name": "Ward of the Fertile Soil",
+                "upgradeDescription": "Every 9 seconds, gains 1 <$ba.shield>Shield</> (Can have up to 3 stacks, with 1 stack granted immediately when deployed). When a Shield is broken, restores 23% of Max HP and 2 Skill Points"
+            },
+            {
+                "name": "Ward of the Fertile Soil",
+                "upgradeDescription": "Every 9 seconds, gains 1 <$ba.shield>Shield</> (Can have up to 3 stacks, with 1 stack granted immediately when deployed). When a Shield is broken, restores 25% <@ba.talpu>(+2%)</> of Max HP and 2 Skill Points"
+            }
+        ]
+    ],
+    "uniequip_002_judge": [
+        [
+            {
+                "name": "Guardian of the Law",
+                "upgradeDescription": "After deployment, immediately gains a <$ba.barrier>Barrier</> equal to 60% Max HP; When defeating an enemy, gains a <$ba.barrier>Barrier</> equal to 11% Max HP (Cannot exceed 300% Max HP)"
+            },
+            {
+                "name": "Guardian of the Law",
+                "upgradeDescription": "After deployment, immediately gains a <$ba.barrier>Barrier</> equal to 65% <@ba.talpu>(+5%)</> Max HP; When defeating an enemy, gains a <$ba.barrier>Barrier</> equal to 11% Max HP (Cannot exceed 300% Max HP)"
+            }
+        ],
+        [
+            {
+                "name": "Guardian of the Law",
+                "upgradeDescription": "After deployment, immediately gains a <$ba.barrier>Barrier</> equal to 70% Max HP; When defeating an enemy, gains a <$ba.barrier>Barrier</> equal to 12% Max HP (Cannot exceed 300% Max HP)"
+            },
+            {
+                "name": "Guardian of the Law",
+                "upgradeDescription": "After deployment, immediately gains a <$ba.barrier>Barrier</> equal to 75% <@ba.talpu>(+5%)</> Max HP; When defeating an enemy, gains a <$ba.barrier>Barrier</> equal to 12% Max HP (Cannot exceed 300% Max HP)"
+            }
+        ]
+    ],
+    "uniequip_002_hpsts": [
+        [
+            {
+                "name": "Self-Defense",
+                "upgradeDescription": "Restores HP by 30% immediately then restores HP by 4% of Max HP per second and obtains 25% Physical Melee Dodge when the skill is activated"
+            },
+            {
+                "name": "Self-Defense",
+                "upgradeDescription": "Restores HP by 30% immediately then restores HP by 5% <@ba.talpu>(+1%)</> of Max HP per second and obtains 30% <@ba.talpu>(+5%)</> Physical Melee Dodge when the skill is activated"
+            }
+        ],
+        [
+            {
+                "name": "Self-Defense",
+                "upgradeDescription": "Restores HP by 60% immediately then restores HP by 4% of Max HP per second and obtains 25% Physical Melee Dodge when the skill is activated"
+            },
+            {
+                "name": "Self-Defense",
+                "upgradeDescription": "Restores HP by 60% immediately then restores HP by 5% <@ba.talpu>(+1%)</> of Max HP per second and obtains 30% <@ba.talpu>(+5%)</> Physical Melee Dodge when the skill is activated"
+            }
+        ]
+    ],
+    "uniequip_002_lessng": [
+        [
+            {
+                "name": "痛楚砺刃",
+                "upgradeDescription": "After taking damage, ATK+17%, last 15 seconds (unstackable)"
+            },
+            {
+                "name": "痛楚砺刃",
+                "upgradeDescription": "After taking damage, ATK+21%<@ba.talpu>(+4%)</>, last 15 seconds (unstackable)"
+            }
+        ],
+        [
+            {
+                "name": "痛楚砺刃",
+                "upgradeDescription": "After taking damage, ATK+20%, last 15 seconds (unstackable)"
+            },
+            {
+                "name": "痛楚砺刃",
+                "upgradeDescription": "After taking damage, ATK+24%<@ba.talpu>(+4%)</>, last 15 seconds (unstackable)"
+            }
+        ]
+    ],
+    "uniequip_002_baslin": [
+        [
+            {
+                "name": "威权教诲",
+                "upgradeDescription": "RES+12 ; When there is allied unit in 8 surrounding tile, self and allied units RES+4"
+            }
+        ],
+        [
+            {
+                "name": "威权教诲",
+                "upgradeDescription": "RES+14 ; When there is allied unit in 8 surrounding tile, self and allied units RES+5"
+            }
+        ]
+    ],
+    "uniequip_003_nearl2": [
+        [
+            {
+                "name": "Brave the Darkness",
+                "upgradeDescription": "When deploying and defeated for the first time, deals 80% ATK as True damage to enemies in the four adjacent tiles and <$ba.stun>Stuns</> them for 3 seconds. If the previously deployed Operator is from Kazimierz, deals an additional hit"
+            }
+        ],
+        [
+            {
+                "name": "Brave the Darkness",
+                "upgradeDescription": "When deploying and defeated for the first time, deals 100% ATK as True damage to enemies in the four adjacent tiles and <$ba.stun>Stuns</> them for 4 seconds. If the previously deployed Operator is from Kazimierz, deals an additional hit"
+            }
+        ]
+    ],
+    "uniequip_003_bpipe": [
+        [
+            {
+                "name": "Precise Reloading",
+                "upgradeDescription": "When attacking, has a 30% chance to increase ATK to 135% and strike an additional target"
+            },
+            {
+                "name": "Precise Reloading",
+                "upgradeDescription": "When attacking, has a 33%<@ba.talpu>(+3%)</> chance to increase ATK to 135% and strike an additional target"
+            }
+        ],
+        [
+            {
+                "name": "Precise Reloading",
+                "upgradeDescription": "When attacking, has a 33% chance to increase ATK to 140% and strike an additional target"
+            },
+            {
+                "name": "Precise Reloading",
+                "upgradeDescription": "When attacking, has a 36%<@ba.talpu>(+3%)</> chance to increase ATK to 140% and strike an additional target"
+            }
+        ]
+    ],
+    "uniequip_002_gdglow": [
+        [
+            {
+                "name": "Beacon's Wrath",
+                "upgradeDescription": "When this unit's skill is active, Drones have a 10% chance to self-destruct when attacking (and then return to the Operator), dealing 340% of Goldenglow's ATK as Arts damage to enemies in a small area"
+            },
+            {
+                "name": "Beacon's Wrath",
+                "upgradeDescription": "When this unit's skill is active, Drones have a 10% chance to self-destruct when attacking (and then return to the Operator), dealing 355% <@ba.talpu>(+15%)</> of Goldenglow's ATK as Arts damage to enemies in a small area"
+            }
+        ],
+        [
+            {
+                "name": "Beacon's Wrath",
+                "upgradeDescription": "When this unit's skill is active, Drones have a 10% chance to self-destruct when attacking (and then return to the Operator), dealing 360% of Goldenglow's ATK as Arts damage to enemies in a small area"
+            },
+            {
+                "name": "Beacon's Wrath",
+                "upgradeDescription": "When this unit's skill is active, Drones have a 10% chance to self-destruct when attacking (and then return to the Operator), dealing 375% <@ba.talpu>(+15%)</> of Goldenglow's ATK as Arts damage to enemies in a small area"
+            }
+        ]
+    ],
+    "uniequip_002_kjera": [
+        [
+            {
+                "name": "Deference",
+                "upgradeDescription": "ATK +15%, when there are two or more ground tiles within Attack Range, the effect becomes ATK +21%"
+            },
+            {
+                "name": "Deference",
+                "upgradeDescription": "ATK +18% <@ba.talpu>(+3%)</>, when there are two or more ground tiles within Attack Range, the effect becomes ATK +24% <@ba.talpu>(+3%)</>"
+            }
+        ],
+        [
+            {
+                "name": "Deference",
+                "upgradeDescription": "ATK +18%, when there are two or more ground tiles within Attack Range, the effect becomes ATK +24%"
+            },
+            {
+                "name": "Deference",
+                "upgradeDescription": "ATK +21% <@ba.talpu>(+3%)</>, when there are two or more ground tiles within Attack Range, the effect becomes ATK +27% <@ba.talpu>(+3%)</>"
+            }
+        ]
+    ],
+    "uniequip_002_rockr": [
+        [
+            {
+                "name": "Firm Foundation",
+                "upgradeDescription": "+4% ATK for every 10 seconds this unit remains on the battlefield, stacking up to 4 times"
+            },
+            {
+                "name": "Firm Foundation",
+                "upgradeDescription": "+5%<@ba.talpu>(+1%)</> ATK for every 10 seconds this unit remains on the battlefield, stacking up to 4 times"
+            }
+        ],
+        [
+            {
+                "name": "Firm Foundation",
+                "upgradeDescription": "+4% ATK for every 10 seconds this unit remains on the battlefield, stacking up to 4 times ASPD +5 when max stacked"
+            },
+            {
+                "name": "Firm Foundation",
+                "upgradeDescription": "+5%<@ba.talpu>(+1%)</> ATK for every 10 seconds this unit remains on the battlefield, stacking up to 4 times ASPD +5 when max stacked"
+            }
+        ]
+    ],
+    "uniequip_002_malist": [
+        [
+            {
+                "name": "Flash of Insight",
+                "upgradeDescription": "When attacking, has a 30% chance to increase that ATK to 155%"
+            },
+            {
+                "name": "Flash of Insight",
+                "upgradeDescription": "When attacking, has a 35% <@ba.talpu>(+5%)</> chance to increase that ATK to 155%"
+            }
+        ],
+        [
+            {
+                "name": "Flash of Insight",
+                "upgradeDescription": "When attacking, has a 30% chance to increase that ATK to 160%"
+            },
+            {
+                "name": "Flash of Insight",
+                "upgradeDescription": "When attacking, has a 35% <@ba.talpu>(+5%)</> chance to increase that ATK to 160%"
+            }
+        ]
+    ],
+    "uniequip_002_cammou": [
+        [
+            {
+                "name": "Coordinated",
+                "upgradeDescription": "Click and her Drones gain +15 ASPD"
+            }
+        ],
+        [
+            {
+                "name": "Coordinated",
+                "upgradeDescription": "Click and her Drones gain +18 ASPD"
+            }
+        ]
+    ],
+    "uniequip_002_reed2": [
+        [
+            {
+                "name": "Reflected Shine",
+                "upgradeDescription": "When healing other ally increase healing amount 3%, Reed the Flame Shadow heals herself for 55% of the amount healed"
+            },
+            {
+                "name": "Reflected Shine",
+                "upgradeDescription": "When healing other ally increase healing amount 3%, Reed the Flame Shadow heals herself for 60%<@ba.talpu> (+5)</> of the amount healed"
+            }
+        ],
+        [
+            {
+                "name": "Reflected Shine",
+                "upgradeDescription": "When healing other ally increase healing amount 5%, Reed the Flame Shadow heals herself for 60% of the amount healed"
+            },
+            {
+                "name": "Reflected Shine",
+                "upgradeDescription": "When healing other ally increase healing amount 5%, Reed the Flame Shadow heals herself for 65%<@ba.talpu> (+5)</> of the amount healed"
+            }
+        ]
+    ],
+    "uniequip_002_hbisc2": [
+        [
+            {
+                "name": "Dusk and Dawn",
+                "upgradeDescription": "Attacks inflict 17% <$ba.magicfragile>[Arts Fragility]</> to the target for 5 seconds"
+            },
+            {
+                "name": "Dusk and Dawn",
+                "upgradeDescription": "Attacks inflict 19% <@ba.talpu>(+2%)</> <$ba.magicfragile>[Arts Fragility]</> to the target for 5 seconds"
+            }
+        ],
+        [
+            {
+                "name": "Dusk and Dawn",
+                "upgradeDescription": "Attacks inflict 20% <$ba.magicfragile>[Arts Fragility]</> to the target for 5 seconds"
+            },
+            {
+                "name": "Dusk and Dawn",
+                "upgradeDescription": "Attacks inflict 22% <@ba.talpu>(+2%)</> <$ba.magicfragile>[Arts Fragility]</> to the target for 5 seconds"
+            }
+        ]
+    ],
+    "uniequip_002_vendla": [
+        [
+            {
+                "name": "土壤基肥改良",
+                "upgradeDescription": "Increase healing received by the ally with the highest Max HP within Attack Range by 20%"
+            },
+            {
+                "name": "土壤基肥改良",
+                "upgradeDescription": "Increase healing received by the ally with the highest Max HP within Attack Range by 23% <@ba.talpu>(+3%)</>"
+            }
+        ],
+        [
+            {
+                "name": "土壤基肥改良",
+                "upgradeDescription": "Increase healing received by the ally with the highest Max HP within Attack Range by 23%"
+            },
+            {
+                "name": "土壤基肥改良",
+                "upgradeDescription": "Increase healing received by the ally with the highest Max HP within Attack Range by 26% <@ba.talpu>(+3%)</>"
+            }
+        ]
+    ],
+    "uniequip_002_blkkgt": [
+        [
+            {
+                "name": "“天生的武者”",
+                "upgradeDescription": "When attacking, has a 10% chance to increase the current damage of that attack to 165% and inflict <$ba.tremble>Tremble</> to targets for 5 seconds"
+            },
+            {
+                "name": "“天生的武者”",
+                "upgradeDescription": "When attacking, has a 10% chance to increase the current damage of that attack to 170% <@ba.talpu>(+5%)</> and inflict <$ba.tremble>Tremble</> to targets for 5 seconds"
+            }
+        ],
+        [
+            {
+                "name": "“天生的武者”",
+                "upgradeDescription": "When attacking, has a 10% chance to increase the current damage of that attack to 170% and inflict <$ba.tremble>Tremble</> to targets for 5 seconds"
+            },
+            {
+                "name": "“天生的武者”",
+                "upgradeDescription": "When attacking, has a 10% chance to increase the current damage of that attack to 175% <@ba.talpu>(+5%)</> and inflict <$ba.tremble>Tremble</> to targets for 5 seconds"
+            }
+        ]
+    ],
+    "uniequip_003_lmlee": [
+        [
+            {
+                "name": "Kindness Begets Prosperity",
+                "upgradeDescription": "When Lee is blocking an enemy, the enemy has ASPD -17 and Lee has ASPD +17; If there is only one enemy within the surrounding 8 tiles, this effect is doubled"
+            },
+            {
+                "name": "Kindness Begets Prosperity",
+                "upgradeDescription": "When Lee is blocking an enemy, the enemy has ASPD -18 <@ba.talpu>(+1)</> and Lee has ASPD +18 <@ba.talpu>(+1)</>; If there is only one enemy within the surrounding 8 tiles, this effect is doubled"
+            }
+        ],
+        [
+            {
+                "name": "Kindness Begets Prosperity",
+                "upgradeDescription": "When Lee is blocking an enemy, the enemy has ASPD -20 and Lee has ASPD +20; If there is only one enemy within the surrounding 8 tiles, this effect is doubled"
+            },
+            {
+                "name": "Kindness Begets Prosperity",
+                "upgradeDescription": "When Lee is blocking an enemy, the enemy has ASPD -21 <@ba.talpu>(+1)</> and Lee has ASPD +21 <@ba.talpu>(+1)</>; If there is only one enemy within the surrounding 8 tiles, this effect is doubled"
+            }
+        ]
+    ],
+    "uniequip_003_lisa": [
+        [
+            {
+                "name": "Binding Circle",
+                "upgradeDescription": "Enemies in range that are <$ba.sluggish>Slowed</> are inflicted with 21% <$ba.fragile>Fragile</> and 5% <$ba.weaken>Enfeeble</> effect for an equivalent duration"
+            },
+            {
+                "name": "Binding Circle",
+                "upgradeDescription": "Enemies in range that are <$ba.sluggish>Slowed</> are inflicted with 24% <@ba.talpu>(+3%)</> <$ba.fragile>Fragile</> and 5% <$ba.weaken>Enfeeble</> effect for an equivalent duration"
+            }
+        ],
+        [
+            {
+                "name": "Binding Circle",
+                "upgradeDescription": "Enemies in range that are <$ba.sluggish>Slowed</> are inflicted with 22% <$ba.fragile>Fragile</> and 8% <$ba.weaken>Enfeeble</> effect for an equivalent duration"
+            },
+            {
+                "name": "Binding Circle",
+                "upgradeDescription": "Enemies in range that are <$ba.sluggish>Slowed</> are inflicted with 25% <@ba.talpu>(+3%)</> <$ba.fragile>Fragile</> and 8% <$ba.weaken>Enfeeble</> effect for an equivalent duration"
+            }
+        ]
+    ],
+    "uniequip_003_billro": [
+        [
+            {
+                "name": "Poised for Action",
+                "upgradeDescription": "Improves own SP recovery rate by +0.8/second when SP is above the limit, when charged skill is active, less likely to be targeted by enemies"
+            }
+        ],
+        [
+            {
+                "name": "Poised for Action",
+                "upgradeDescription": "Improves own SP recovery rate by +1.0/second when SP is above the limit, when charged skill is active, less likely to be targeted by enemies"
+            }
+        ]
+    ],
+    "uniequip_003_weedy": [
+        [
+            {
+                "name": "Industrial Water Cannon",
+                "upgradeDescription": "Can deploy a Reserve Water Cannon that lasts for 20s; the Water Cannon can attack 1 target and push it away slightly; redeployment time of Reserve Water Cannon is reduced by 5 seconds"
+            }
+        ],
+        [
+            {
+                "name": "Industrial Water Cannon",
+                "upgradeDescription": "Can deploy a Reserve Water Cannon that lasts for 20s; the Water Cannon can attack 1 target and push it away slightly; redeployment time of Reserve Water Cannon is reduced by 8 seconds"
+            }
+        ]
+    ],
+    "uniequip_002_f12yin": [
+        [
+            {
+                "name": "Forceful Fist",
+                "upgradeDescription": "23% chance for attacks to deal 165% damage and reduce the target's ATK by 10% for 3 seconds (Does not stack)"
+            },
+            {
+                "name": "Forceful Fist",
+                "upgradeDescription": "23% chance for attacks to deal 170% <@ba.talpu>(+5%)</> damage and reduce the target's ATK by 10% for 3 seconds (Does not stack)"
+            }
+        ],
+        [
+            {
+                "name": "Forceful Fist",
+                "upgradeDescription": "25% chance for attacks to deal 170% damage and reduce the target's ATK by 10% for 3 seconds (Does not stack)"
+            },
+            {
+                "name": "Forceful Fist",
+                "upgradeDescription": "23% chance for attacks to deal 175% <@ba.talpu>(+5%)</> damage and reduce the target's ATK by 10% for 3 seconds (Does not stack)"
+            }
+        ]
+    ],
+    "uniequip_002_chyue": [
+        [
+            {
+                "name": "All Are Guests",
+                "upgradeDescription": "Chongyue recovers 4 SP if he defeats at least one enemy with a skill"
+            }
+        ],
+        [
+            {
+                "name": "All Are Guests",
+                "upgradeDescription": "Chongyue recovers 4 SP if he defeats at least one enemy with a skill, recovers 1 SP if no enemy defeat"
+            }
+        ]
+    ],
+    "uniequip_002_dagda": [
+        [
+            {
+                "name": "Gang Spirit",
+                "upgradeDescription": "Has a 30% chance of increasing ATK to 156% when attacking. When deployed, this multiplier increases by +6% for every enemy defeated within the 4 adjacent tiles of a [Glasgow Gang] Operator (max 190%)"
+            }
+        ],
+        [
+            {
+                "name": "Gang Spirit",
+                "upgradeDescription": "Has a 30% chance of increasing ATK to 162% when attacking. When deployed, this multiplier increases by +6% for every enemy defeated within the 4 adjacent tiles of a [Glasgow Gang] Operator (max 190%)"
+            }
+        ]
+    ],
+    "uniequip_002_flint": [
+        [
+            {
+                "name": "Featherweight",
+                "upgradeDescription": "Deals 45% more damage to enemies that are not blocked by this unit"
+            },
+            {
+                "name": "Featherweight",
+                "upgradeDescription": "Deals 50% <@ba.talpu>(+5%)</> more damage to enemies that are not blocked by this unit"
+            }
+        ],
+        [
+            {
+                "name": "Featherweight",
+                "upgradeDescription": "Deals 50% more damage to enemies that are not blocked by this unit"
+            },
+            {
+                "name": "Featherweight",
+                "upgradeDescription": "Deals 55% <@ba.talpu>(+5%)</> more damage to enemies that are not blocked by this unit"
+            }
+        ]
+    ],
+    "uniequip_002_tiger": [
+        [
+            {
+                "name": "Quick Fists",
+                "upgradeDescription": "Has a 30% chance to Dodge the enemy's Physical Melee Attack. ATK +110% in the next attack if the Dodge is successful"
+            },
+            {
+                "name": "Quick Fists",
+                "upgradeDescription": "Has a 33% <@ba.talpu>(+3%)</> chance to Dodge the enemy's Physical Melee Attack. ATK +110% in the next attack if the Dodge is successful"
+            }
+        ],
+        [
+            {
+                "name": "Quick Fists",
+                "upgradeDescription": "Has a 30% chance to Dodge the enemy's Physical Melee Attack. ATK +120% in the next attack if the Dodge is successful"
+            },
+            {
+                "name": "Quick Fists",
+                "upgradeDescription": "Has a 33% <@ba.talpu>(+3%)</> chance to Dodge the enemy's Physical Melee Attack. ATK +120% in the next attack if the Dodge is successful"
+            }
+        ]
+    ],
+    "uniequip_002_brownb": [
+        [
+            {
+                "name": "Boxer's Concentration",
+                "upgradeDescription": "Each consecutive attack on the same target increases ATK by 6%, stacking up to 5 times. Stacks will be lost upon switching targets."
+            },
+            {
+                "name": "Boxer's Concentration",
+                "upgradeDescription": "Each consecutive attack on the same target increases ATK by 7% <@ba.talpu>(+1%)</>, stacking up to 5 times. Stacks will be lost upon switching targets."
+            }
+        ],
+        [
+            {
+                "name": "Boxer's Concentration",
+                "upgradeDescription": "Each consecutive attack on the same target increases ATK by 7%, stacking up to 5 times. Stacks will be lost upon switching targets."
+            },
+            {
+                "name": "Boxer's Concentration",
+                "upgradeDescription": "Each consecutive attack on the same target increases ATK by 8% <@ba.talpu>(+1%)</>, stacking up to 5 times. Stacks will be lost upon switching targets."
+            }
+        ]
+    ],
+    "uniequip_002_jaksel": [
+        [
+            {
+                "name": "Extreme Evasion",
+                "upgradeDescription": "35% Physical Dodge; After a successful dodge, gains +12 ASPD (Lasts for 5s, does not stack)"
+            },
+            {
+                "name": "Extreme Evasion",
+                "upgradeDescription": "38% <@ba.talpu>(+3%)</> Physical Dodge; After a successful dodge, gains +12 ASPD (Lasts for 5s, does not stack)"
+            }
+        ],
+        [
+            {
+                "name": "Extreme Evasion",
+                "upgradeDescription": "37% Physical Dodge; After a successful dodge, gains +12 ASPD (Lasts for 5s, does not stack)"
+            },
+            {
+                "name": "Extreme Evasion",
+                "upgradeDescription": "40% <@ba.talpu>(+3%)</> Physical Dodge; After a successful dodge, gains +12 ASPD (Lasts for 5s, does not stack)"
+            }
+        ]
+    ],
+    "uniequip_002_wanqin": [
+        [
+            {
+                "name": "看天时",
+                "upgradeDescription": "Increases the Max HP of friendly units within the surrounding 8 tiles by 7%. If they are facing the same direction as Wan Qing, increases the Max HP by 11%"
+            },
+            {
+                "name": "看天时",
+                "upgradeDescription": "Increases the Max HP of friendly units within the surrounding 8 tiles by 8% <@ba.talpu>(+1%)</>. If they are facing the same direction as Wan Qing, increases the Max HP by 12% <@ba.talpu>(+1%)</>"
+            }
+        ],
+        [
+            {
+                "name": "看天时",
+                "upgradeDescription": "Increases the Max HP of friendly units within the surrounding 8 tiles by 9%. If they are facing the same direction as Wan Qing, increases the Max HP by 13%"
+            },
+            {
+                "name": "看天时",
+                "upgradeDescription": "Increases the Max HP of friendly units within the surrounding 8 tiles by 10% <@ba.talpu>(+1%)</>. If they are facing the same direction as Wan Qing, increases the Max HP by 14% <@ba.talpu>(+1%)</>"
+            }
+        ]
+    ],
+    "uniequip_002_grabds": [
+        [
+            {
+                "name": "好好听话",
+                "upgradeDescription": "ASPD +12. If the target is a [Wild Animal], Extends the duration of <$ba.sluggish>Slows</>"
+            },
+            {
+                "name": "好好听话",
+                "upgradeDescription": "ASPD +14 <@ba.talpu>(+2)</>. If the target is a [Wild Animal], Extends the duration of <$ba.sluggish>Slows</>"
+            }
+        ],
+        [
+            {
+                "name": "好好听话",
+                "upgradeDescription": "ASPD +14. If the target is a [Wild Animal], Further extends the duration of <$ba.sluggish>Slows</>"
+            },
+            {
+                "name": "好好听话",
+                "upgradeDescription": "ASPD +16 <@ba.talpu>(+2)</>. If the target is a [Wild Animal], Further extends the duration of <$ba.sluggish>Slows</>"
+            }
+        ]
+    ],
+    "uniequip_002_zuole": [
+        [
+            {
+                "name": "秉烛照影",
+                "upgradeDescription": "Gains up to +60 ASPD  and the SP recovery rate by +2.2/second <$ba.berserk>Tenacity</> (reaches maximum bonus when losing 60% Max HP)"
+            }
+        ],
+        [
+            {
+                "name": "秉烛照影",
+                "upgradeDescription": "Gains up to +70 ASPD and the SP recovery rate by +2.3/second <$ba.berserk>Tenacity</> (reaches maximum bonus when losing 50% Max HP)"
+            }
+        ]
+    ],
+    "uniequip_002_shu": [
+        [
+            {
+                "name": "百谷长青",
+                "upgradeDescription": "When healing allies, plant seeds on the ally's tile and the 4 adjacent tiles, granting the following effects: Restores the HP by 80 per second and apply 10% <$ba.protect>Sanctuary</> effect to allies"
+            },
+            {
+                "name": "百谷长青",
+                "upgradeDescription": "When healing allies, plant seeds on the ally's tile and the 4 adjacent tiles, granting the following effects: Restores the HP by 85 <@ba.talpu>(+5)</> per second and apply 12% <@ba.talpu>(+2%)</> <$ba.protect>Sanctuary</> effect to allies"
+            }
+        ],
+        [
+            {
+                "name": "百谷长青",
+                "upgradeDescription": "When healing allies, plant seeds on the ally's tile and the 4 adjacent tiles, granting the following effects: Restores the HP by 80 per second and apply 15% <$ba.protect>Sanctuary</> effect to allies; Upon deployment, immediately plant seeds on the tile Shu is on"
+            },
+            {
+                "name": "百谷长青",
+                "upgradeDescription": "When healing allies, plant seeds on the ally's tile and the 4 adjacent tiles, granting the following effects: Restores the HP by 85 <@ba.talpu>(+5)</> per second and apply 17% <@ba.talpu>(+2%)</> <$ba.protect>Sanctuary</> effect to allies; Upon deployment, immediately plant seeds on the tile Shu is on"
+            }
+        ]
+    ],
+    "uniequip_002_rfalcn": [
+        [
+            {
+                "name": "习惯使然",
+                "upgradeDescription": "In [Tales Within The Sand], increases the SP recovery rate by +0.2/second. When her skill is activated, resources on her are sent to inventory"
+            }
+        ],
+        [
+            {
+                "name": "习惯使然",
+                "upgradeDescription": "In [Tales Within The Sand], increases the SP recovery rate by +0.3/second. When her skill is activated, resources on her are sent to inventory"
+            }
+        ]
+    ],
+    "uniequip_002_jesca2": [
+        [
+            {
+                "name": "Adaptable",
+                "upgradeDescription": "Can use a stronger Mobile Personnel Shield that lasts for 55 seconds. The shield can only be deployed in the 4 tiles adjacent to Jessica. After the shield is deployed, Jessica immediately changes direction to face the shield and grants DEF +15% to herself and the unit behind her "
+            },
+            {
+                "name": "Adaptable",
+                "upgradeDescription": "Can use a stronger Mobile Personnel Shield that lasts for 55 seconds. The shield can only be deployed in the 4 tiles adjacent to Jessica. After the shield is deployed, Jessica immediately changes direction to face the shield and grants DEF +18%<@ba.talpu>(+3%)</> to herself and the unit behind her "
+            }
+        ],
+        [
+            {
+                "name": "Adaptable",
+                "upgradeDescription": "Can use a more stronger Mobile Personnel Shield that lasts for 60 seconds. The shield can only be deployed in the 4 tiles adjacent to Jessica. After the shield is deployed, Jessica immediately changes direction to face the shield and grants DEF +15% to herself and the unit behind her "
+            },
+            {
+                "name": "Adaptable",
+                "upgradeDescription": "Can use a more stronger Mobile Personnel Shield that lasts for 60 seconds. The shield can only be deployed in the 4 tiles adjacent to Jessica. After the shield is deployed, Jessica immediately changes direction to face the shield and grants DEF +18%<@ba.talpu>(+3%)</> to herself and the unit behind her "
+            }
+        ]
+    ],
+    "uniequip_002_blitz": [
+        [
+            {
+                "name": "Shielded Shooting",
+                "upgradeDescription": "Prioritize <$ba.stun>Stunned</> enemies; Increase ATK to 170% when attacking <$ba.stun>Stunned</> enemies"
+            },
+            {
+                "name": "Shielded Shooting",
+                "upgradeDescription": "Prioritize <$ba.stun>Stunned</> enemies; Increase ATK to 175% <@ba.talpu>(+5%)</> when attacking <$ba.stun>Stunned</> enemies"
+            }
+        ],
+        [
+            {
+                "name": "Shielded Shooting",
+                "upgradeDescription": "Prioritize <$ba.stun>Stunned</> enemies; Increase ATK to 180% when attacking <$ba.stun>Stunned</> enemies"
+            },
+            {
+                "name": "Shielded Shooting",
+                "upgradeDescription": "Prioritize <$ba.stun>Stunned</> enemies; Increase ATK to 185% <@ba.talpu>(+5%)</> when attacking <$ba.stun>Stunned</> enemies"
+            }
+        ]
+    ],
+    "uniequip_002_liskam": [
+        [
+            {
+                "name": "Tactical Defense",
+                "upgradeDescription": "Restores 1 Skill Point to this Operator and a random ally in the surrounding tiles when attacked, 30% chance to recover extra 1 self SP"
+            }
+        ],
+        [
+            {
+                "name": "Tactical Defense",
+                "upgradeDescription": "Restores 1 Skill Point to this Operator and a random ally in the surrounding tiles when attacked, 60% chance to recover extra 1 self SP"
+            }
+        ]
+    ],
+    "uniequip_002_ela": [
+        [
+            {
+                "name": "“正中靶心”",
+                "upgradeDescription": "Has a 40% chance to deal 160% physical damage, 100% chance on enemies under GRZMOT Mines 's effect"
+            },
+            {
+                "name": "“正中靶心”",
+                "upgradeDescription": "Has a 40% chance to deal 170% <@ba.talpu>(+10%)</>physical damage, 100% chance on enemies under GRZMOT Mines 's effect"
+            }
+        ],
+        [
+            {
+                "name": "“正中靶心”",
+                "upgradeDescription": "Has a 50% chance to deal 170% physical damage, 100% chance on enemies under GRZMOT Mines 's effect"
+            },
+            {
+                "name": "“正中靶心”",
+                "upgradeDescription": "Has a 50% chance to deal 180% <@ba.talpu>(+10%)</>physical damage, 100% chance on enemies under GRZMOT Mines 's effect"
+            }
+        ]
+    ],
+    "uniequip_002_fuze": [
+        [
+            {
+                "name": "防弹护盾",
+                "upgradeDescription": "Has 30% chance to dodge Ranged Physical attacks, Def +3%"
+            },
+            {
+                "name": "防弹护盾",
+                "upgradeDescription": "Has 33%<@ba.talpu>(+3%)</> chance to dodge Ranged Physical attacks, Def +3%"
+            }
+        ],
+        [
+            {
+                "name": "防弹护盾",
+                "upgradeDescription": "Has 32% chance to dodge Ranged Physical attacks, Def +6%"
+            },
+            {
+                "name": "防弹护盾",
+                "upgradeDescription": "Has 35%<@ba.talpu>(+3%)</> chance to dodge Ranged Physical attacks, Def +6%"
+            }
+        ]
+    ],
+    "uniequip_002_iana": [
+        [
+            {
+                "name": "双子分身复制器",
+                "CN": "部署时原地释放全息幻影，该幻影不会攻击，受到攻击时使攻击幻影的敌人在8秒内受到20%的脆弱且隐匿效果失效，并立即切换为<替身>作战",
+                "mod": "部署时原地释放全息幻影，该幻影不会攻击，受到攻击时使攻击幻影的敌人在10秒内受到25%的脆弱且隐匿效果失效，并立即切换为<替身>作战",
+                "upgradeDescription": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 25% <$ba.fragile>Fragile</> to the attacker for 10 seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to <Substitute>"
+            },
+            {
+                "name": "双子分身复制器",
+                "CN": "部署时原地释放全息幻影，该幻影不会攻击，受到攻击时使攻击幻影的敌人在8秒内受到22%<@ba.talpu>(+2%)</>的脆弱且隐匿效果失效，并立即切换为<替身>作战",
+                "mod": "部署时原地释放全息幻影，该幻影不会攻击，受到攻击时使攻击幻影的敌人在10秒内受到27%<@ba.talpu>(+2%)</>的脆弱且隐匿效果失效，并立即切换为<替身>作战",
+                "upgradeDescription": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 27% <@ba.talpu>(+2%)</><$ba.fragile>Fragile</> to the attacker for 10 seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to <Substitute>"
+            }
+        ],
+        [
+            {
+                "name": "双子分身复制器",
+                "CN": "部署时原地释放全息幻影，该幻影不会攻击，受到攻击时使攻击幻影的敌人在8秒内受到20%的脆弱且隐匿效果失效，并立即切换为<替身>作战",
+                "mod": "部署时原地释放全息幻影，该幻影不会攻击，受到攻击时使攻击幻影的敌人在10秒内受到28%的脆弱且隐匿效果失效，并立即切换为<替身>作战",
+                "upgradeDescription": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 28% <$ba.fragile>Fragile</> to the attacker for 10 seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to <Substitute>"
+            },
+            {
+                "name": "双子分身复制器",
+                "CN": "部署时原地释放全息幻影，该幻影不会攻击，受到攻击时使攻击幻影的敌人在8秒内受到22%<@ba.talpu>(+2%)</>的脆弱且隐匿效果失效，并立即切换为<替身>作战",
+                "mod": "部署时原地释放全息幻影，该幻影不会攻击，受到攻击时使攻击幻影的敌人在10秒内受到30%<@ba.talpu>(+2%)</>的脆弱且隐匿效果失效，并立即切换为<替身>作战",
+                "upgradeDescription": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 30% <@ba.talpu>(+2%)</><$ba.fragile>Fragile</> to the attacker for 10 seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to <Substitute>"
+            }
+        ]
+    ],
+    "uniequip_002_rdoc": [
+        [
+            {
+                "name": "军医",
+                "upgradeDescription": "Max HP +15%, attacks ignore 150 Def"
+            },
+            {
+                "name": "军医",
+                "upgradeDescription": "Max HP +15% , attacks ignore 170<@ba.talpu>(+20)</> Def"
+            }
+        ],
+        [
+            {
+                "name": "军医",
+                "upgradeDescription": "Max HP +18%, attacks ignore 180 Def"
+            },
+            {
+                "name": "军医",
+                "upgradeDescription": "Max HP +18% , attacks ignore 200<@ba.talpu>(+20)</> Def"
+            }
+        ]
+    ],
+    "uniequip_003_ash": [
+        [
+            {
+                "name": "Auxiliary Equipment",
+                "upgradeDescription": "After deployment, immediately throw a Stun Grenade at an enemy within range, <$ba.stun>Stunning</> them and nearby enemies for 5 seconds, Ash deal addition physical damage for 7% to <$ba.stun>Stunned</> enemies for 5 seconds"
+            }
+        ],
+        [
+            {
+                "name": "Auxiliary Equipment",
+                "upgradeDescription": "After deployment, immediately throw a Stun Grenade at an enemy within range, <$ba.stun>Stunning</> them and nearby enemies for 6 seconds, Ash deal addition physical damage for 10% to <$ba.stun>Stunned</> enemies for 6 seconds"
+            }
+        ]
+    ]
+}

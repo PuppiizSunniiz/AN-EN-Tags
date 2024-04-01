@@ -1,0 +1,1385 @@
+[
+    {
+        "id": 0,
+        "itemId": "30135",
+        "IconID": "MTL_SL_DS",
+        "name_cn": "D32钢",
+        "name_en": "D32 Steel",
+        "name_jp": "D32鋼",
+        "name_kr": "D32강",
+        "name_tw": "D32鋼",
+        "level": 5,
+        "source": {},
+        "madeof": {
+            "三水锰矿": 1,
+            "五水研磨石": 1,
+            "RMA70-24": 1
+        }
+    },
+    {
+        "id": 1,
+        "itemId": "30125",
+        "IconID": "MTL_SL_BN",
+        "name_cn": "双极纳米片",
+        "name_en": "Bipolar Nanoflake",
+        "name_jp": "ナノフレーク",
+        "name_kr": "바이폴라 나노플레이크 칩",
+        "name_tw": "雙極納米片",
+        "level": 5,
+        "source": {},
+        "madeof": {
+            "改量装置": 1,
+            "白马醇": 2
+        }
+    },
+    {
+        "id": 2,
+        "itemId": "30115",
+        "IconID": "MTL_SL_PP",
+        "name_cn": "聚合剂",
+        "name_en": "Polymerization Preparation",
+        "name_jp": "融合剤",
+        "name_kr": "중합제",
+        "name_tw": "聚合劑",
+        "level": 5,
+        "source": {},
+        "madeof": {
+            "提纯源岩": 1,
+            "异铁块": 1,
+            "酮阵列": 1
+        }
+    },
+    {
+        "id": 3,
+        "itemId": "30104",
+        "IconID": "MTL_SL_RMA7024",
+        "name_cn": "RMA70-24",
+        "name_en": "RMA70-24",
+        "name_jp": "RMA70-24",
+        "name_kr": "RMA70-24",
+        "name_tw": "RMA70-24",
+        "level": 4,
+        "source": {
+            "4-9": "Very Rare",
+            "6-15": "Very Rare"
+        },
+        "madeof": {
+            "RMA70-12": 1,
+            "固源岩组": 2,
+            "酮凝集组": 1
+        }
+    },
+    {
+        "id": 4,
+        "itemId": "30094",
+        "IconID": "MTL_SL_PG2",
+        "name_cn": "五水研磨石",
+        "name_en": "Grindstone Pentahydrate",
+        "name_jp": "上級砥石",
+        "name_kr": "고급연마석",
+        "name_tw": "五水研磨石",
+        "level": 4,
+        "source": {
+            "4-8": "Very Rare"
+        },
+        "madeof": {
+            "研磨石": 1,
+            "异铁组": 1,
+            "全新装置": 1
+        }
+    },
+    {
+        "id": 5,
+        "itemId": "30084",
+        "IconID": "MTL_SL_MANGANESE2",
+        "name_cn": "三水锰矿",
+        "name_en": "Manganese Trihydrate",
+        "name_jp": "上級マンガン",
+        "name_kr": "망간 중합체",
+        "name_tw": "三水錳礦",
+        "level": 4,
+        "source": {
+            "4-7": "Very Rare",
+            "6-2": "Very Rare"
+        },
+        "madeof": {
+            "轻锰矿": 2,
+            "聚酸酯组": 1,
+            "扭转醇": 1
+        }
+    },
+    {
+        "id": 6,
+        "itemId": "30074",
+        "IconID": "MTL_SL_ALCOHOL2",
+        "name_cn": "白马醇",
+        "name_en": "White Horse Kohl",
+        "name_jp": "上級合成コール",
+        "name_kr": "화이트 호스 콜",
+        "name_tw": "白馬醇",
+        "level": 4,
+        "source": {
+            "4-4": "Very Rare"
+        },
+        "madeof": {
+            "扭转醇": 1,
+            "糖组": 1,
+            "RMA70-12": 1
+        }
+    },
+    {
+        "id": 7,
+        "itemId": "30064",
+        "IconID": "MTL_SL_BOSS4",
+        "name_cn": "改量装置",
+        "name_en": "Optimized Device",
+        "name_jp": "上級装置",
+        "name_kr": "개량 장치",
+        "name_tw": "改量裝置",
+        "level": 4,
+        "source": {
+            "4-10": "Very Rare"
+        },
+        "madeof": {
+            "全新装置": 1,
+            "固源岩组": 2,
+            "研磨石": 1
+        }
+    },
+    {
+        "id": 8,
+        "itemId": "30054",
+        "IconID": "MTL_SL_KETONE4",
+        "name_cn": "酮阵列",
+        "name_en": "Keton Colloid",
+        "name_jp": "上級アケトン",
+        "name_kr": "아케톤 팩",
+        "name_tw": "酮陣列",
+        "level": 4,
+        "source": {
+            "4-5": "Very Rare",
+            "5-8": "Very Rare"
+        },
+        "madeof": {
+            "酮凝集组": 2,
+            "糖组": 1,
+            "轻锰矿": 1
+        }
+    },
+    {
+        "id": 9,
+        "itemId": "30044",
+        "IconID": "MTL_SL_IRON4",
+        "name_cn": "异铁块",
+        "name_en": "Oriron Block",
+        "name_jp": "上級異鉄",
+        "name_kr": "이철 팩",
+        "name_tw": "異鐵塊",
+        "level": 4,
+        "source": {
+            "5-5": "Very Rare",
+            "S4-1": "Very Rare"
+        },
+        "madeof": {
+            "异铁组": 2,
+            "全新装置": 1,
+            "聚酸酯组": 1
+        }
+    },
+    {
+        "id": 10,
+        "itemId": "30034",
+        "IconID": "MTL_SL_RUSH4",
+        "name_cn": "聚酸酯块",
+        "name_en": "Polyester Lump",
+        "name_jp": "上級エステル",
+        "name_kr": "폴리에스테르 팩",
+        "name_tw": "聚酸酯塊",
+        "level": 4,
+        "source": {
+            "3-8": "Very Rare",
+            "6-4": "Very Rare"
+        },
+        "madeof": {
+            "聚酸酯组": 2,
+            "酮凝集组": 1,
+            "扭转醇": 1
+        }
+    },
+    {
+        "id": 11,
+        "itemId": "30024",
+        "IconID": "MTL_SL_STRG4",
+        "name_cn": "糖聚块",
+        "name_en": "Sugar Lump",
+        "name_jp": "上級糖原",
+        "name_kr": "포도당 팩",
+        "name_tw": "糖聚塊",
+        "level": 4,
+        "source": {
+            "4-2": "Very Rare",
+            "5-2": "Very Rare"
+        },
+        "madeof": {
+            "糖组": 2,
+            "异铁组": 1,
+            "轻锰矿": 1
+        }
+    },
+    {
+        "id": 12,
+        "itemId": "30014",
+        "IconID": "MTL_SL_G4",
+        "name_cn": "提纯源岩",
+        "name_en": "Orirock Concentration",
+        "name_jp": "上級源岩",
+        "name_kr": "정제 원암",
+        "name_tw": "提純源岩",
+        "level": 4,
+        "source": {
+            "4-6": "Very Rare"
+        },
+        "madeof": {
+            "固源岩组": 4
+        }
+    },
+    {
+        "id": 13,
+        "itemId": "30063",
+        "IconID": "MTL_SL_BOSS3",
+        "name_cn": "全新装置",
+        "name_en": "Integrated Device",
+        "name_jp": "中級装置",
+        "name_kr": "리뉴얼 장치",
+        "name_tw": "全新裝置",
+        "level": 3,
+        "source": {
+            "3-4": "Rare",
+            "4-10": "Rare",
+            "5-10": "Rare",
+            "6-16": "Rare"
+        },
+        "madeof": {
+            "装置": 4
+        }
+    },
+    {
+        "id": 14,
+        "itemId": "30053",
+        "IconID": "MTL_SL_KETONE3",
+        "name_cn": "酮凝集组",
+        "name_en": "Aketon",
+        "name_jp": "中級アケトン",
+        "name_kr": "아케톤 응집체 번들",
+        "name_tw": "酮凝集組",
+        "level": 3,
+        "source": {
+            "3-1": "Rare",
+            "4-5": "Rare",
+            "5-8": "Rare",
+            "6-8": "Rare"
+        },
+        "madeof": {
+            "酮凝集": 4
+        }
+    },
+    {
+        "id": 15,
+        "itemId": "30043",
+        "IconID": "MTL_SL_IRON3",
+        "name_cn": "异铁组",
+        "name_en": "Oriron Cluster",
+        "name_jp": "中級異鉄",
+        "name_kr": "이철 번들",
+        "name_tw": "異鐵組",
+        "level": 3,
+        "source": {
+            "2-8": "Rare",
+            "5-5": "Rare",
+            "6-10": "Rare",
+            "S4-1": "Rare"
+        },
+        "madeof": {
+            "异铁": 4
+        }
+    },
+    {
+        "id": 16,
+        "itemId": "30033",
+        "IconID": "MTL_SL_RUSH3",
+        "name_cn": "聚酸酯组",
+        "name_en": "Polyester Pack",
+        "name_jp": "中級エステル",
+        "name_kr": "폴리에스테르 번들",
+        "name_tw": "聚酸酯組",
+        "level": 3,
+        "source": {
+            "2-6": "Rare",
+            "3-8": "Rare",
+            "5-3": "Medium",
+            "6-4": "Rare"
+        },
+        "madeof": {
+            "聚酸酯": 4
+        }
+    },
+    {
+        "id": 17,
+        "itemId": "30023",
+        "IconID": "MTL_SL_STRG3",
+        "name_cn": "糖组",
+        "name_en": "Sugar Pack",
+        "name_jp": "中級糖原",
+        "name_kr": "포도당 번들",
+        "name_tw": "糖組",
+        "level": 3,
+        "source": {
+            "2-5": "Rare",
+            "4-2": "Rare",
+            "5-2": "Rare",
+            "6-3": "Rare"
+        },
+        "madeof": {
+            "糖": 4
+        }
+    },
+    {
+        "id": 18,
+        "itemId": "30013",
+        "IconID": "MTL_SL_G3",
+        "name_cn": "固源岩组",
+        "name_en": "Orirock Cluster",
+        "name_jp": "中級源岩",
+        "name_kr": "원암 큐브 번들",
+        "name_tw": "固源岩組",
+        "level": 3,
+        "source": {
+            "2-4": "Rare",
+            "4-6": "Rare",
+            "5-1": "Rare",
+            "6-5": "Medium"
+        },
+        "madeof": {
+            "固源岩": 5
+        }
+    },
+    {
+        "id": 19,
+        "itemId": "30062",
+        "IconID": "MTL_SL_BOSS2",
+        "name_cn": "装置",
+        "name_en": "Device",
+        "name_jp": "初級装置",
+        "name_kr": "장치",
+        "name_tw": "裝置",
+        "level": 2,
+        "source": {
+            "1-12": "Medium",
+            "6-11": "Medium",
+            "S3-4": "Common",
+            "S5-5": "Medium"
+        },
+        "madeof": {
+            "破损装置": 3
+        }
+    },
+    {
+        "id": 20,
+        "itemId": "30052",
+        "IconID": "MTL_SL_KETONE2",
+        "name_cn": "酮凝集",
+        "name_en": "Polyketon",
+        "name_jp": "初級アケトン",
+        "name_kr": "아케톤 응집체",
+        "name_tw": "酮凝集",
+        "level": 2,
+        "source": {
+            "S2-1": "Medium",
+            "3-7": "Always",
+            "6-16": "Medium",
+            "S6-3": "Common"
+        },
+        "madeof": {
+            "双酮": 3
+        }
+    },
+    {
+        "id": 21,
+        "itemId": "30042",
+        "IconID": "MTL_SL_IRON2",
+        "name_cn": "异铁",
+        "name_en": "Oriron",
+        "name_jp": "初級異鉄",
+        "name_kr": "이철",
+        "name_tw": "異鐵",
+        "level": 2,
+        "source": {
+            "2-1": "Medium",
+            "5-7": "Medium",
+            "6-1": "Common",
+            "S3-3": "Always"
+        },
+        "madeof": {
+            "异铁碎片": 3
+        }
+    },
+    {
+        "id": 22,
+        "itemId": "30032",
+        "IconID": "MTL_SL_RUSH2",
+        "name_cn": "聚酸酯",
+        "name_en": "Polyester",
+        "name_jp": "初級エステル",
+        "name_kr": "폴리에스테르",
+        "name_tw": "聚酸酯",
+        "level": 2,
+        "source": {
+            "1-8": "Common",
+            "6-5": "Rare",
+            "6-9": "Always",
+            "S3-2": "Always",
+            "S5-3": "Always"
+        },
+        "madeof": {
+            "酯原料": 3
+        }
+    },
+    {
+        "id": 23,
+        "itemId": "30022",
+        "IconID": "MTL_SL_STRG2",
+        "name_cn": "糖",
+        "name_en": "Sugar",
+        "name_jp": "初級糖原",
+        "name_kr": "포도당",
+        "name_tw": "糖",
+        "level": 2,
+        "source": {
+            "2-2": "Common",
+            "5-3": "Medium",
+            "S3-1": "Always",
+            "S5-4": "Always"
+        },
+        "madeof": {
+            "代糖": 3
+        }
+    },
+    {
+        "id": 24,
+        "itemId": "30012",
+        "IconID": "MTL_SL_G2",
+        "name_cn": "固源岩",
+        "name_en": "Orirock Cube",
+        "name_jp": "初級源岩",
+        "name_kr": "원암 큐브",
+        "name_tw": "固源岩",
+        "level": 2,
+        "source": {
+            "1-7": "Always",
+            "S2-12": "Always",
+            "5-10": "Medium",
+            "S6-2": "Always",
+            "S5-1": "Always"
+        },
+        "madeof": {
+            "源岩": 3
+        }
+    },
+    {
+        "id": 25,
+        "itemId": "30061",
+        "IconID": "MTL_SL_BOSS1",
+        "name_cn": "破损装置",
+        "name_en": "Damaged Device",
+        "name_jp": "破損装置",
+        "name_kr": "파손된 장치",
+        "name_tw": "破損裝置",
+        "level": 1,
+        "source": {
+            "1-5": "Medium",
+            "2-3": "Always"
+        },
+        "madeof": {}
+    },
+    {
+        "id": 26,
+        "itemId": "30051",
+        "IconID": "MTL_SL_KETONE1",
+        "name_cn": "双酮",
+        "name_en": "Diketon",
+        "name_jp": "アケトン試剤",
+        "name_kr": "디케톤",
+        "name_tw": "雙酮",
+        "level": 1,
+        "source": {
+            "1-6": "Common",
+            "S2-9": "Always"
+        },
+        "madeof": {}
+    },
+    {
+        "id": 27,
+        "itemId": "30041",
+        "IconID": "MTL_SL_IRON1",
+        "name_cn": "异铁碎片",
+        "name_en": "Oriron Shard",
+        "name_jp": "異鉄の欠片",
+        "name_kr": "이철 조각",
+        "name_tw": "異鐵碎片",
+        "level": 1,
+        "source": {
+            "1-3": "Common",
+            "S2-8": "Always"
+        },
+        "madeof": {}
+    },
+    {
+        "id": 28,
+        "itemId": "30031",
+        "IconID": "MTL_SL_RUSH1",
+        "name_cn": "酯原料",
+        "name_en": "Ester",
+        "name_jp": "エステル原料",
+        "name_kr": "에스테르 원료",
+        "name_tw": "酯原料",
+        "level": 1,
+        "source": {
+            "0-11": "Always",
+            "S2-7": "Always"
+        },
+        "madeof": {}
+    },
+    {
+        "id": 29,
+        "itemId": "30021",
+        "IconID": "MTL_SL_STRG1",
+        "name_cn": "代糖",
+        "name_en": "Sugar Substitute",
+        "name_jp": "ブドウ糖",
+        "name_kr": "대체당",
+        "name_tw": "代糖",
+        "level": 1,
+        "source": {
+            "0-7": "Always",
+            "S2-6": "Always"
+        },
+        "madeof": {}
+    },
+    {
+        "id": 30,
+        "itemId": "30011",
+        "IconID": "MTL_SL_G1",
+        "name_cn": "源岩",
+        "name_en": "Orirock",
+        "name_jp": "源岩鉱",
+        "name_kr": "원암",
+        "name_tw": "源岩",
+        "level": 1,
+        "source": {
+            "0-9": "Always",
+            "S2-5": "Always"
+        },
+        "madeof": {}
+    },
+    {
+        "id": 31,
+        "itemId": "30073",
+        "IconID": "MTL_SL_ALCOHOL1",
+        "name_cn": "扭转醇",
+        "name_en": "Loxic Kohl",
+        "name_jp": "合成コール",
+        "name_kr": "로식 콜",
+        "name_tw": "扭轉醇",
+        "level": 3,
+        "source": {
+            "2-9": "Rare",
+            "4-4": "Rare",
+            "5-4": "Rare",
+            "6-11": "Medium"
+        },
+        "madeof": {}
+    },
+    {
+        "id": 32,
+        "itemId": "30093",
+        "IconID": "MTL_SL_PG1",
+        "name_cn": "研磨石",
+        "name_en": "Grindstone",
+        "name_jp": "砥石",
+        "name_kr": "연마석",
+        "name_tw": "研磨石",
+        "level": 3,
+        "source": {
+            "3-3": "Rare",
+            "4-8": "Rare",
+            "5-7": "Rare",
+            "6-14": "Rare"
+        },
+        "madeof": {}
+    },
+    {
+        "id": 33,
+        "itemId": "30083",
+        "IconID": "MTL_SL_MANGANESE1",
+        "name_cn": "轻锰矿",
+        "name_en": "Manganese Ore",
+        "name_jp": "マンガン",
+        "name_kr": "망간 광석",
+        "name_tw": "輕錳礦",
+        "level": 3,
+        "source": {
+            "3-2": "Rare",
+            "4-7": "Rare",
+            "5-6": "Rare",
+            "6-2": "Rare"
+        },
+        "madeof": {}
+    },
+    {
+        "id": 34,
+        "itemId": "30103",
+        "IconID": "MTL_SL_RMA7012",
+        "name_cn": "RMA70-12",
+        "name_en": "RMA70-12",
+        "name_jp": "RMA70-12",
+        "name_kr": "RMA70-12",
+        "name_tw": "RMA70-12",
+        "level": 3,
+        "source": {
+            "2-10": "Rare",
+            "4-9": "Rare",
+            "5-9": "Rare",
+            "6-15": "Rare"
+        },
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 35,
+        "itemId": "3211",
+        "IconID": "MTL_ASC_PIO1",
+        "name_cn": "先锋芯片",
+        "name_en": "Vanguard Chip",
+        "name_jp": "初級先鋒SoC",
+        "name_kr": "뱅가드 칩",
+        "name_tw": "先鋒晶片",
+        "level": 2,
+        "source": {
+            "PR-C-1": "Medium"
+        },
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 36,
+        "itemId": "3212",
+        "IconID": "MTL_ASC_PIO2",
+        "name_cn": "先锋芯片组",
+        "name_en": "Vanguard Chip Pack",
+        "name_jp": "中級先鋒SoC",
+        "name_kr": "뱅가드 칩셋",
+        "name_tw": "先鋒晶片組",
+        "level": 3,
+        "source": {
+            "PR-C-2": "Medium"
+        },
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 37,
+        "itemId": "3213",
+        "IconID": "MTL_ASC_PIO3",
+        "name_cn": "先锋双芯片",
+        "name_en": "Vanguard Dualchip",
+        "name_jp": "上級先鋒SoC",
+        "name_kr": "뱅가드 듀얼 칩",
+        "name_tw": "先鋒雙晶片",
+        "level": 4,
+        "source": {},
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 38,
+        "itemId": "3221",
+        "IconID": "MTL_ASC_GRD1",
+        "name_cn": "近卫芯片",
+        "name_en": "Guard Chip",
+        "name_jp": "初級前衛SoC",
+        "name_kr": "가드 칩",
+        "name_tw": "近衛晶片",
+        "level": 2,
+        "source": {
+            "PR-D-1": "Medium"
+        },
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 39,
+        "itemId": "3222",
+        "IconID": "MTL_ASC_GRD2",
+        "name_cn": "近卫芯片组",
+        "name_en": "Guard Chip Pack",
+        "name_jp": "中級前衛SoC",
+        "name_kr": "가드 칩셋",
+        "name_tw": "近衛晶片組",
+        "level": 3,
+        "source": {
+            "PR-D-2": "Medium"
+        },
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 40,
+        "itemId": "3223",
+        "IconID": "MTL_ASC_GRD3",
+        "name_cn": "近卫双芯片",
+        "name_en": "Guard Dualchip",
+        "name_jp": "上級前衛SoC",
+        "name_kr": "가드 듀얼 칩",
+        "name_tw": "近衛雙晶片",
+        "level": 4,
+        "source": {},
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 41,
+        "itemId": "3231",
+        "IconID": "MTL_ASC_TNK1",
+        "name_cn": "重装芯片",
+        "name_en": "Defender Chip",
+        "name_jp": "初級重装SoC",
+        "name_kr": "디펜더 칩",
+        "name_tw": "重裝晶片",
+        "level": 2,
+        "source": {
+            "PR-A-1": "Medium"
+        },
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 42,
+        "itemId": "3232",
+        "IconID": "MTL_ASC_TNK2",
+        "name_cn": "重装芯片组",
+        "name_en": "Defender Chip Pack",
+        "name_jp": "中級重装SoC",
+        "name_kr": "디펜더 칩셋",
+        "name_tw": "重裝晶片組",
+        "level": 3,
+        "source": {
+            "PR-A-2": "Medium"
+        },
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 43,
+        "itemId": "3233",
+        "IconID": "MTL_ASC_TNK3",
+        "name_cn": "重装双芯片",
+        "name_en": "Defender Dualchip",
+        "name_jp": "上級重装SoC",
+        "name_kr": "디펜더 듀얼 칩",
+        "name_tw": "重裝雙晶片",
+        "level": 4,
+        "source": {},
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 44,
+        "itemId": "3241",
+        "IconID": "MTL_ASC_SNP1",
+        "name_cn": "狙击芯片",
+        "name_en": "Sniper Chip",
+        "name_jp": "初級狙撃SoC",
+        "name_kr": "스나이퍼 칩",
+        "name_tw": "狙擊晶片",
+        "level": 2,
+        "source": {
+            "PR-B-1": "Medium"
+        },
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 45,
+        "itemId": "3242",
+        "IconID": "MTL_ASC_SNP2",
+        "name_cn": "狙击芯片组",
+        "name_en": "Sniper Chip Pack",
+        "name_jp": "中級狙撃SoC",
+        "name_kr": "스나이퍼 칩셋",
+        "name_tw": "狙擊晶片組",
+        "level": 3,
+        "source": {
+            "PR-B-2": "Medium"
+        },
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 46,
+        "itemId": "3243",
+        "IconID": "MTL_ASC_SNP3",
+        "name_cn": "狙击双芯片",
+        "name_en": "Sniper Dualchip",
+        "name_jp": "上級狙撃SoC",
+        "name_kr": "스나이퍼 듀얼 칩",
+        "name_tw": "狙擊雙晶片",
+        "level": 4,
+        "source": {},
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 47,
+        "itemId": "3251",
+        "IconID": "MTL_ASC_CST1",
+        "name_cn": "术师芯片",
+        "name_en": "Caster Chip",
+        "name_jp": "初級術師SoC",
+        "name_kr": "캐스터 칩",
+        "name_tw": "術師晶片",
+        "level": 2,
+        "source": {
+            "PR-B-1": "Medium"
+        },
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 48,
+        "itemId": "3252",
+        "IconID": "MTL_ASC_CST2",
+        "name_cn": "术师芯片组",
+        "name_en": "Caster Chip Pack",
+        "name_jp": "中級術師SoC",
+        "name_kr": "캐스터 칩셋",
+        "name_tw": "術師晶片組",
+        "level": 3,
+        "source": {
+            "PR-B-2": "Medium"
+        },
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 49,
+        "itemId": "3253",
+        "IconID": "MTL_ASC_CST3",
+        "name_cn": "术师双芯片",
+        "name_en": "Caster Dualchip",
+        "name_jp": "上級術師SoC",
+        "name_kr": "캐스터 듀얼 칩",
+        "name_tw": "術師雙晶片",
+        "level": 4,
+        "source": {},
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 50,
+        "itemId": "3261",
+        "IconID": "MTL_ASC_MED1",
+        "name_cn": "医疗芯片",
+        "name_en": "Medic Chip",
+        "name_jp": "初級医療SoC",
+        "name_kr": "메딕 칩",
+        "name_tw": "醫療晶片",
+        "level": 2,
+        "source": {
+            "PR-A-1": "Medium"
+        },
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 51,
+        "itemId": "3262",
+        "IconID": "MTL_ASC_MED2",
+        "name_cn": "医疗芯片组",
+        "name_en": "Medic Chip Pack",
+        "name_jp": "中級医療SoC",
+        "name_kr": "메딕 칩셋",
+        "name_tw": "醫療晶片組",
+        "level": 3,
+        "source": {
+            "PR-A-2": "Medium"
+        },
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 52,
+        "itemId": "3263",
+        "IconID": "MTL_ASC_MED3",
+        "name_cn": "医疗双芯片",
+        "name_en": "Medic Dualchip",
+        "name_jp": "上級医療SoC",
+        "name_kr": "메딕 듀얼 칩",
+        "name_tw": "醫療雙晶片",
+        "level": 4,
+        "source": {},
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 53,
+        "itemId": "3271",
+        "IconID": "MTL_ASC_SUP1",
+        "name_cn": "辅助芯片",
+        "name_en": "Supporter Chip",
+        "name_jp": "初級補助SoC",
+        "name_kr": "서포터 칩",
+        "name_tw": "輔助晶片",
+        "level": 2,
+        "source": {
+            "PR-C-1": "Medium"
+        },
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 54,
+        "itemId": "3272",
+        "IconID": "MTL_ASC_SUP2",
+        "name_cn": "辅助芯片组",
+        "name_en": "Supporter Chip Pack",
+        "name_jp": "中級補助SoC",
+        "name_kr": "서포터 칩셋",
+        "name_tw": "輔助晶片組",
+        "level": 3,
+        "source": {
+            "PR-C-2": "Medium"
+        },
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 55,
+        "itemId": "3273",
+        "IconID": "MTL_ASC_SUP3",
+        "name_cn": "辅助双芯片",
+        "name_en": "Supporter Dualchip",
+        "name_jp": "上級補助SoC",
+        "name_kr": "서포터 듀얼 칩",
+        "name_tw": "輔助雙晶片",
+        "level": 4,
+        "source": {},
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 56,
+        "itemId": "3281",
+        "IconID": "MTL_ASC_SPC1",
+        "name_cn": "特种芯片",
+        "name_en": "Specialist Chip",
+        "name_jp": "初級特殊SoC",
+        "name_kr": "스페셜리스트 칩",
+        "name_tw": "特種晶片",
+        "level": 2,
+        "source": {
+            "PR-D-1": "Medium"
+        },
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 57,
+        "itemId": "3282",
+        "IconID": "MTL_ASC_SPC2",
+        "name_cn": "特种芯片组",
+        "name_en": "Specialist Chip Pack",
+        "name_jp": "中級特殊SoC",
+        "name_kr": "스페셜리스트 칩셋",
+        "name_tw": "特種晶片組",
+        "level": 3,
+        "source": {
+            "PR-D-2": "Medium"
+        },
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 58,
+        "itemId": "3283",
+        "IconID": "MTL_ASC_SPC3",
+        "name_cn": "特种双芯片",
+        "name_en": "Specialist Dualchip",
+        "name_jp": "上級特殊SoC",
+        "name_kr": "스페셜리스트 듀얼 칩",
+        "name_tw": "特種雙晶片",
+        "level": 4,
+        "source": {},
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 59,
+        "itemId": "4001",
+        "IconID": "GOLD",
+        "name_cn": "龙门币",
+        "name_en": "LMD",
+        "name_jp": "龍門幣",
+        "name_kr": "용문폐",
+        "name_tw": "龍門幣",
+        "level": 1,
+        "source": {
+            "CE-5": "Always",
+            "1-1": "Always",
+            "S2-2": "Always",
+            "2-7": "Always",
+            "3-6": "Always",
+            "4-1": "Always",
+            "S6-4": "Always",
+            "S4-6": "Always",
+            "S5-2": "Always"
+        },
+        "madeof": {}
+    },
+    {
+        "hidden": true,
+        "id": 60,
+        "itemId": "32001",
+        "IconID": "MTL_ASC_DI",
+        "name_cn": "芯片助剂",
+        "name_en": "Chip Catalyst",
+        "name_jp": "SoC強化剤",
+        "name_kr": "칩 첨가제",
+        "name_tw": "晶片助劑",
+        "level": 1,
+        "source": {},
+        "madeof": {}
+    },
+    {
+        "id": 61,
+        "itemId": "31023",
+        "IconID": "MTL_SL_IAM3",
+        "name_cn": "炽合金",
+        "name_en": "Incandescent Alloy",
+        "name_jp": "熾合金",
+        "name_kr": "열합금",
+        "name_tw": "",
+        "level": 3,
+        "source": {
+            "6-12": "Rare",
+            "S3-6": "Rare",
+            "S5-8": "Rare"
+        },
+        "madeof": {}
+    },
+    {
+        "id": 62,
+        "itemId": "31024",
+        "IconID": "MTL_SL_IAM4",
+        "name_cn": "炽合金块",
+        "name_en": "Incandescent Alloy Block",
+        "name_jp": "上級熾合金",
+        "name_kr": "열합금 팩",
+        "name_tw": "",
+        "level": 4,
+        "source": {
+            "6-12": "Very Rare",
+            "S5-8": "Very Rare"
+        },
+        "madeof": {
+            "炽合金": 1,
+            "研磨石": 1,
+            "全新装置": 1
+        }
+    },
+    {
+        "id": 63,
+        "itemId": "31013",
+        "IconID": "MTL_SL_PGEL3",
+        "name_cn": "凝胶",
+        "name_en": "Coagulating Gel",
+        "name_jp": "人工ゲル",
+        "name_kr": "젤",
+        "name_tw": "",
+        "level": 3,
+        "source": {
+            "S4-10": "Rare",
+            "S5-7": "Rare"
+        },
+        "madeof": {}
+    },
+    {
+        "id": 64,
+        "itemId": "31014",
+        "IconID": "MTL_SL_PGEL4",
+        "name_cn": "聚合凝胶",
+        "name_en": "Polymerized Gel",
+        "name_jp": "融合ゲル",
+        "name_kr": "중합젤",
+        "name_tw": "",
+        "level": 4,
+        "source": {
+            "S5-7": "Very Rare"
+        },
+        "madeof": {
+            "炽合金": 1,
+            "凝胶": 1,
+            "异铁组": 1
+        }
+    },
+    {
+        "id": 65,
+        "itemId": "30145",
+        "IconID": "MTL_SL_OEU",
+        "name_cn": "晶体电子单元",
+        "name_en": "Crystalline Electroassembly",
+        "name_jp": "結晶制御装置",
+        "name_kr": "결정 전자 장치",
+        "name_tw": "",
+        "level": 5,
+        "source": {},
+        "madeof": {
+            "晶体电路": 1,
+            "聚合凝胶": 2,
+            "炽合金块": 1
+        }
+    },
+    {
+        "id": 66,
+        "itemId": "31034",
+        "IconID": "MTL_SL_OC4",
+        "name_cn": "晶体电路",
+        "name_en": "Crystalline Circuit",
+        "name_jp": "結晶回路",
+        "name_kr": "결정 회로",
+        "name_tw": "",
+        "level": 4,
+        "source": {
+            "R8-11": "Very Rare",
+            "S5-9": "Very Rare"
+        },
+        "madeof": {
+            "晶体元件": 2,
+            "凝胶": 1,
+            "炽合金": 1
+        }
+    },
+    {
+        "id": 67,
+        "itemId": "31033",
+        "IconID": "MTL_SL_OC3",
+        "name_cn": "晶体元件",
+        "name_en": "Crystalline Component",
+        "name_jp": "素子結晶",
+        "name_kr": "결정 부품",
+        "name_tw": "",
+        "level": 3,
+        "source": {
+            "R8-11": "Medium",
+            "S3-7": "Rare",
+            "S5-9": "Rare"
+        },
+        "madeof": {}
+    },
+    {
+        "id": 68,
+        "itemId": "31044",
+        "IconID": "MTL_SL_RS",
+        "name_cn": "精炼溶剂",
+        "name_en": "Refined Solvent",
+        "name_jp": "精錬溶剤",
+        "name_kr": "정제된 용제",
+        "name_tw": "",
+        "level": 4,
+        "source": {
+            "9-4": "Very Rare",
+            "9-18": "Very Rare",
+            "11-8": "Very Rare"
+        },
+        "madeof": {
+            "半自然溶剂": 1,
+            "化合切削液": 1,
+            "凝胶": 1
+        }
+    },
+    {
+        "id": 69,
+        "itemId": "31043",
+        "IconID": "MTL_SL_SS",
+        "name_cn": "半自然溶剂",
+        "name_en": "Semi-Synthetic Solvent",
+        "name_jp": "半自然溶剤",
+        "name_kr": "반합성 용제",
+        "name_tw": "",
+        "level": 3,
+        "source": {
+            "9-4": "Rare",
+            "9-18": "Rare",
+            "11-8": "Rare"
+        },
+        "madeof": {}
+    },
+    {
+        "id": 70,
+        "itemId": "31054",
+        "IconID": "MTL_SL_PLCF",
+        "name_cn": "切削原液",
+        "name_en": "Cutting Fluid Solution",
+        "name_jp": "上級切削液",
+        "name_kr": "절삭유 원액",
+        "name_tw": "",
+        "level": 4,
+        "source": {
+            "9-6": "Very Rare",
+            "11-16": "Very Rare"
+        },
+        "madeof": {
+            "化合切削液": 1,
+            "晶体元件": 1,
+            "RMA70-12": 1
+        }
+    },
+    {
+        "id": 71,
+        "itemId": "31053",
+        "IconID": "MTL_SL_CCF",
+        "name_cn": "化合切削液",
+        "name_en": "Compound Cutting Fluid",
+        "name_jp": "切削液",
+        "name_kr": "중합 절삭유",
+        "name_tw": "",
+        "level": 3,
+        "source": {
+            "9-6": "Rare",
+            "10-17": "Medium",
+            "11-16": "Rare"
+        },
+        "madeof": {}
+    },
+    {
+        "id": 72,
+        "itemId": "30155",
+        "IconID": "MTL_SL_SHJ",
+        "name_cn": "烧结核凝晶",
+        "name_en": "Nucleic Crystal Sinter",
+        "name_jp": "焼結核凝晶",
+        "name_kr": "핵결정체 소결물",
+        "name_tw": "",
+        "level": 5,
+        "source": {},
+        "madeof": {
+            "转质盐聚块": 1,
+            "切削原液": 1,
+            "精炼溶剂": 2
+        }
+    },
+    {
+        "id": 73,
+        "itemId": "31064",
+        "IconID": "MTL_SL_ZYK",
+        "name_cn": "转质盐聚块",
+        "name_en": "Transmuted Salt Agglomerate",
+        "name_jp": "上級転化塩",
+        "name_kr": "합성 소금 팩",
+        "name_tw": "",
+        "level": 4,
+        "source": {
+            "11-3": "Very Rare",
+            "11-15": "Very Rare"
+        },
+        "madeof": {
+            "半自然溶剂": 1,
+            "糖组": 1,
+            "转质盐组": 1
+        }
+    },
+    {
+        "id": 74,
+        "itemId": "31063",
+        "IconID": "MTL_SL_ZY",
+        "name_cn": "转质盐组",
+        "name_en": "Transmuted Salt",
+        "name_jp": "転化塩",
+        "name_kr": "합성 소금 번들",
+        "name_tw": "",
+        "level": 3,
+        "source": {
+            "11-3": "Rare",
+            "11-15": "Rare",
+            "S9-2": "Rare"
+        },
+        "madeof": {}
+    },
+    {
+        "id": 75,
+        "itemId": "31074",
+        "IconID": "MTL_SL_XWB",
+        "name_cn": "固化纤维板",
+        "name_en": "",
+        "name_jp": "",
+        "name_kr": "",
+        "name_tw": "",
+        "level": 4,
+        "source": {
+            "13-5": "Very Rare"
+        },
+        "madeof": {
+            "褐素纤维": 1,
+            "聚酸酯组": 2,
+            "固源岩组": 1
+        }
+    },
+    {
+        "id": 76,
+        "itemId": "31073",
+        "IconID": "MTL_SL_XW",
+        "name_cn": "褐素纤维",
+        "name_en": "",
+        "name_jp": "",
+        "name_kr": "",
+        "name_tw": "",
+        "level": 3,
+        "source": {
+            "13-5": "Rare"
+        },
+        "madeof": {}
+    },
+    {
+        "id": 77,
+        "itemId": "31084",
+        "IconID": "MTL_SL_HTT",
+        "name_cn": "环烃预制体",
+        "name_en": "",
+        "name_jp": "",
+        "name_kr": "",
+        "name_tw": "",
+        "level": 4,
+        "source": {
+            "13-15": "Very Rare"
+        },
+        "madeof": {
+            "环烃聚质": 1,
+            "褐素纤维": 1,
+            "转质盐组": 1
+        }
+    },
+    {
+        "id": 78,
+        "itemId": "31083",
+        "IconID": "MTL_SL_HT",
+        "name_cn": "环烃聚质",
+        "name_en": "",
+        "name_jp": "",
+        "name_kr": "",
+        "name_tw": "",
+        "level": 3,
+        "source": {
+            "13-15": "Rare"
+        },
+        "madeof": {}
+    }
+]

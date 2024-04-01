@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#222222ff">
+    <title translate-id="web-title">Arknights Recruitment Calculator</title>
+    <link rel="manifest" href="./manifest.json" crossorigin="use-credentials">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/ak.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src='https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js'></script>
+    <!-- site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159317757-1"></script>/
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-159317757-1');
+        
+    </script>
+    <script>
+            $(function(){
+              $("#nav-placeholder").load("nav.html");
+            });
+     </script>
+</head>
+<body  >
+    <!-- style=" background-image: url(./img/extra/bg1.png)" -->
+    <button class="btn btn-sm btn-primary goToTag" style="position:fixed;bottom:15px ;right: 0px;size:70px 70px;padding: 10px;z-index: 10000" id="to-tag" type="button">^ </button>
+    <nav id="aknav" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="background-image: linear-gradient(#222222ff 70%,#222222ff , #111111aa );">
+            <img src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_rhodes.png" width="40" height="40" style="transform:scale(1.2,1.2)translate(-8px,1px)"class="d-inline-block align-top" alt="">
+            <a class="navbar-brand" href="#" translate-id="topbar-1">Arknights Toolbox</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="展开">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    </nav>
+    <div id='acedonate'></div>
+    <div style="padding-bottom:30px"></div>
+    <!-- <div class="warning-sign"style="position: absolute;z-index: 999999;background:#aaa;top:100px;left:50%;width:500px;height:200px;margin-left:-250px;text-align:center; vertical-align:center">aaaaaaaaaaaaaaaaaaaaa</div> -->
+    <div class="container col-md-12 col-sm-12  no-gutter" style="margin:auto;max-width:1000px" >
+        <div class="row ak-mid  no-gutter"> 
+            <div class="col-6"><button class=" col-12 btn btn-sm btn-secondary ak-btn btn-tag"> Daily/Weekly </button>  </div>
+            <div class="col-6"> <button class=" col-12 btn btn-sm btn-secondary ak-btn btn-tag"> Mission</button> </div>
+        </div>
+        <div class="row no-gutter ak-bg"  style="color:aliceblue;margin:auto;max-width:1000px;padding:0">
+                <div class="row col-12 ak-back" >
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-4">
+                                wat
+                            </div>
+                            <div class="row">
+                                <div class="col-8"> 2x</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                wat
+                            </div>
+                            <div class="row">
+                                <div class="col-8"> 2x</div>
+                                <div class="col-8"> 2x</div>
+                            </div>
+                        </div>
+                        <div class="row"><div class="col-4">wat</div></div>
+                    </div>
+                    <div class="col-6">
+                            <div class="">kolom</div>
+                            <div class="">kolom</div>
+                            <div class="">kolom</div>
+                            <div class="">kolom</div>
+                            <div class="">kolom</div>
+                    </div>
+                </div>
+                <div class="row no-gutter col-12"id="main-table"></div>
+    </div>
+        <div class="col-12 tutorial">
+            <div class="col-12 text-left ak-mid ak-shadow" style="padding:10px" >
+                <p translate-id="footer-instructions-1">How To Use ：</p>
+                <p translate-id="footer-instructions-2">1. Change the 'Game Server' drop down on the top right according to your AK client region.</p>
+                <p translate-id="footer-instructions-3">2. Change the language of the user interface to your preference.</p>
+                <p translate-id="footer-instructions-4">3. Click on the tags, up to 6 tags.</p>
+                <p translate-id="footer-instructions-5">4. You can hover on the tags to see the translation.</p>
+                <p translate-id="footer-instructions-6">5. You can also hide or show the name and/or the image of the operators.</p>
+                <p translate-id="footer-instructions-7">6. Click 'clear' to reset all the tag selections.</p>
+            </div>
+        </div>
+        <div class="ak-div"></div>
+    </div>
+    <div class="row col-12 ak-footer">
+        <div class="col-12 text-center">
+            <p>Forked from <a href = "https://graueneko.github.io/akhr.html">grauneko web</a></p>
+            <p>最近更新：2019/05/02，<a href="https://bbs.nga.cn/read.php?tid=16971344">联系作者</a></p>
+            <p>
+                数据来源：
+                <a href="http://wiki.joyme.com/arknights/%E5%B9%B2%E5%91%98%E6%95%B0%E6%8D%AE%E8%A1%A8">明日方舟Wiki</a>
+            </p>
+            <p>Powered by 一只灰猫。</p>
+        </div>
+    </div>
+    <script src="./js/aknav.js"></script>
+    <script src="./js/akhr.js">
+        
+    </script>
+    <script>
+    let fileDir = "./json/gamedata/zh_CN/gamedata/excel/"
+        // let json1 = $.getJSON(fileDir+"mission_table.json")
+        // let json2 = $.getJSON(fileDir+"item_table.json")
+        let alldata = ["mission_table","item_table"]
+        let actData = []
+        let isDone = false
+        
+        function makeCounter(limit, callback) {
+            return function () {
+                if( --limit === 0 ) {
+                callback();
+                }
+            }
+        }
+        var done = makeCounter(alldata.length, function (stuff) {
+        // all done!
+            isDone= true;
+
+            missionGroups =actData.mission_table.missionGroups
+            missions = actData.mission_table.missions
+            periodicalRewards = actData.mission_table.periodicalRewards
+            guideTitle = Object.keys(missionGroups).filter(search=>search.includes("guide_"))
+            dailyTitle = Object.keys(missionGroups).filter(search=>search.includes("daily_"))
+            rewardTitle = Object.keys(periodicalRewards).filter(search=>search.includes("daily_"))
+            console.log(actData.mission_table)
+            // console.log(missions)
+            // missions = 
+            // console.log(missionGroups)
+            // for(i=0;i<2;i++){
+            //     // guideTitle.length
+            //     // console.log(actData.mission_table.missionGroups[guideTitle[i]].missionIds)
+            //     // for(j=0;j)
+                
+            //     actData.mission_table.missionGroups[guideTitle[i]].missionIds.forEach(element => {
+            //         $("#main-table").append("<div>"+missions[element].template+"</div>")
+            //         console.log(missions[element])
+            //     });
+            // }
+            
+            var htmlappend = [] 
+            for(i=0;i<2;i++){
+                // guideTitle.length
+                // console.log(actData.mission_table.missionGroups[dailyTitle[i]])
+                var currentMiss = actData.mission_table.missionGroups[dailyTitle[i]]
+                // for(j=0;j) [missions[element].param.length-1]
+                
+                htmlappend.push('<div class="row col-12 ak-back" >'+currentMiss.period.join(" "))
+                htmlappend.push('<div class="row no-gutter col-4">')
+                rewardTitle.forEach(element => {
+                    if(periodicalRewards[element]){
+                        
+                        if(periodicalRewards[element].period.join(" ")==currentMiss.period.join(" ")){
+                            console.log(periodicalRewards[element])
+                            
+                            htmlappend.push('<div class="col-4">Cost : '+periodicalRewards[element].periodicalPointCost +'</div><div class="col-8">Rewards : ')
+
+                            periodicalRewards[element].rewards.forEach(element2 => {
+                                htmlappend.push(`<div class="row "> <div class="col">${actData.item_table.items[element2.id].iconId} + ${element2.count} </div></div>`)
+                            });
+
+                            htmlappend.push('</div>')
+                        }
+                    }
+                    
+                })
+                // <div class="col-6">
+                htmlappend.push('</div>')
+                        currentMiss.missionIds.forEach(element => {
+                            htmlappend.push('<div class="btn btn-sm" style="padding:2px;margin:2px;background:#666"> '+missions[element].template +" "+ missions[element].param.join(" / ") +' <a style="font-size:40px">'+ missions[element].periodicalPoint + "x</a>"+'</div>')
+                    
+                    // console.log(missions[element])
+                });
+                // htmlappend.push('</div>')
+                htmlappend.push("</div>")
+            }
+            $("#main-table").append(htmlappend)
+
+            // <div class="row col-12 ak-back" >
+            //     <div class="col-4">
+
+            //     </div>
+            //     <div class="col-6">
+            //     </div>
+            // </div>
+
+            // var htmlappend = [] 
+            // for(i=0;i<2;i++){
+            //     // guideTitle.length
+            //     console.log(actData.mission_table.missionGroups[guideTitle[i]])
+            //     var currentMiss = actData.mission_table.missionGroups[guideTitle[i]]
+            //     // for(j=0;j)
+                
+            //     htmlappend.push('<div style="background-color:#aaa col-6">')
+            //             currentMiss.missionIds.forEach(element => {
+            //                 htmlappend.push('<div class="btn btn-small btn-primary">'+missions[element].template )
+                    
+            //         console.log(missions[element])
+            //     });
+
+            //     htmlappend.push("</div>")
+            // }
+            // $("#main-table").append(htmlappend)
+        });
+        alldata.forEach(element => {
+            $.getJSON(fileDir+element+".json").done(function(file){
+                actData[element] = file;
+                // console.log(file);
+                done();
+            })
+        });
+
+        if(isDone){
+            
+        }
+    </script>
+
+</body>
+</html>

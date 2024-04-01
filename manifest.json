@@ -1,0 +1,22 @@
+{
+    "short_name": "AK Toolbox",
+    "name": "Arknights Toolbox",
+    "icons": [
+        {
+        "src": "https://raw.githubusercontent.com/Aceship/Arknight-Images/main/extra/logo-black-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+        },
+        {
+        "src": "https://raw.githubusercontent.com/Aceship/Arknight-Images/main/extra/logo-black.png",
+        "type": "image/png",
+        "sizes": "512x512"
+        }
+    ],
+    "start_url": "/AN-EN-Tags/index.html",
+    "background_color": "#363636",
+    "display": "standalone",
+    "scope": "/AN-EN-Tags/",
+    "theme_color": "#222222ff"
+  }
+  
