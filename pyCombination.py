@@ -4,7 +4,9 @@ import json
 # json
 ###
 
-jsonlist = json.loads(open("json/gamedata/zh_CN/gamedata/excel/activity_table.json").read())
+Server = "zh_CN" # "zh_CN" / "en_US"
+
+jsonlist = json.loads(open("json/gamedata/"+Server+"/gamedata/excel/activity_table.json").read())
 
 formulas = jsonlist["activity"]["TYPE_ACT29SIDE"]["act29side"]["formDataMap"]
 '''

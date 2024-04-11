@@ -1,187 +1,180 @@
 {
-    "uniequip_002_jesca2": [ # Jessica the Liberated // Shield Duration
+    "uniequip_002_mlyss": [ #Muelsys // Change : {SP}
         [
             {
-                "name": "Adaptable",
-                "upgradeDescription": "Can use a stronger Mobile Personnel Shield that lasts for 50 seconds. The shield can only be deployed in the 4 tiles adjacent to Jessica. After the shield is deployed, Jessica immediately changes direction to face the shield and grants DEF +15% to herself and the unit behind her "
-            },
-            {
-                "name": "Adaptable",
-                "upgradeDescription": "Can use a stronger Mobile Personnel Shield that lasts for 50 seconds. The shield can only be deployed in the 4 tiles adjacent to Jessica. After the shield is deployed, Jessica immediately changes direction to face the shield and grants DEF +18%<@ba.talpu>（+3%）</> to herself and the unit behind her "
+                "name": "Pure Water is Life",
+                "upgradeDescription": "Can summon a Flowing Shape to assist in combat. Flowing Shapes can partially copy an undeployed Operator's attributes (Max HP, ATK, DEF, RES, Block Count, Attack Interval, Attack Range, Damage Type, and obtain a special trait depending on whether in melee or ranged form), gain {SP} SP after first deployment, will respawn 25 seconds after being defeated"
             }
         ],
         [
             {
-                "name": "Adaptable",
-                "upgradeDescription": "Can use a more stronger Mobile Personnel Shield that lasts for 50 seconds. The shield can only be deployed in the 4 tiles adjacent to Jessica. After the shield is deployed, Jessica immediately changes direction to face the shield and grants DEF +15% to herself and the unit behind her "
-            },
-            {
-                "name": "Adaptable",
-                "upgradeDescription": "Can use a more stronger Mobile Personnel Shield that lasts for 50 seconds. The shield can only be deployed in the 4 tiles adjacent to Jessica. After the shield is deployed, Jessica immediately changes direction to face the shield and grants DEF +18%<@ba.talpu>（+3%）</> to herself and the unit behind her "
+                "name": "Pure Water is Life",
+                "upgradeDescription": "Can summon a Flowing Shape to assist in combat. Flowing Shapes can copy an undeployed Operator's attributes (Max HP, ATK, DEF, RES, Block Count, Attack Interval, Attack Range, Damage Type, and obtain a special trait depending on whether in melee or ranged form), gain {SP} SP after first deployment, will respawn 25 seconds after being defeated"
             }
         ]
     ],
-    "uniequip_002_blitz": [ # Blitz // ATK%
+    "uniequip_002_vigil":[ #Vigil // {Dodge} {duration}
         [
             {
-                "name": "Shielded Shooting",
-                "upgradeDescription": "Prioritize <$ba.stun>Stunned</> enemies; Increase ATK to 160% when attacking <$ba.stun>Stunned</> enemies"
-            },
-            {
-                "name": "Shielded Shooting",
-                "upgradeDescription": "Prioritize <$ba.stun>Stunned</> enemies; Increase ATK to 165% <@ba.talpu>(+5%)</> when attacking <$ba.stun>Stunned</> enemies"
+                "name": "Leader of the Wolfpack",
+                "upgradeDescription": "Can summon a Wolfpack initially consisting of 3 'Wolf Shadows' at the Tactical Point to assist in combat; The number of 'Wolf Shadows' increases by 1 every 25 seconds (up to a maximum of 3; each 'Wolf Shadow' increases the Wolfpack's Block by 1 and causes its attacks to deal an additional instance of damage; when 'Wolf Shadow' defeated, Wolfpack gain {Dodge} Physical Dodge for {duration} seconds)"
             }
         ],
         [
             {
-                "name": "Shielded Shooting",
-                "upgradeDescription": "Prioritize <$ba.stun>Stunned</> enemies; Increase ATK to 160% when attacking <$ba.stun>Stunned</> enemies"
-            },
-            {
-                "name": "Shielded Shooting",
-                "upgradeDescription": "Prioritize <$ba.stun>Stunned</> enemies; Increase ATK to 165% <@ba.talpu>(+5%)</> when attacking <$ba.stun>Stunned</> enemies"
+                "name": "Leader of the Wolfpack",
+                "upgradeDescription": "Can summon a Wolfpack initially consisting of 3 'Wolf Shadows' at the Tactical Point to assist in combat; The number of 'Wolf Shadows' increases by 1 every 25 seconds (up to a maximum of 3; each 'Wolf Shadow' increases the Wolfpack's Block by 1 and causes its attacks to deal an additional instance of damage; when 'Wolf Shadow' defeated, Wolfpack gain {Dodge} Physical Dodge for {duration} seconds)"
             }
         ]
     ],
-    "uniequip_002_liskam": [ # Liskarm // SP % Chance
+    "uniequip_002_blkngt":[ #Blacknight // ATK
         [
             {
-                "name": "Tactical Defense",
-                "upgradeDescription": "Restores 1 Skill Point to this Operator and a random ally in the surrounding tiles when attacked, 50% chance to recover extra 1 self SP"
+                "name": "Nightwalker",
+                "upgradeDescription": "When there are <$ba.sleep>Sleeping</> enemies enemies within Attack Range, Blacknight and Slumberfoot ATK +{ATK:0%}"
             }
         ],
         [
             {
-                "name": "Tactical Defense",
-                "upgradeDescription": "Restores 1 Skill Point to this Operator and a random ally in the surrounding tiles when attacked, 50% chance to recover extra 1 self SP"
+                "name": "Nightwalker",
+                "upgradeDescription": "When there are <$ba.sleep>Sleeping</> enemies enemies within Attack Range, Blacknight and Slumberfoot ATK +{ATK:0%}"
             }
         ]
     ],
-    "uniequip_XXX_ABCDEF": [ # Ela // Chance & Damage
+        "uniequip_002_bstalk":[ #Beanstalk // def
         [
             {
-                "name": "",
-                "upgradeDescription": "Has a 20% chance to deal 150% physical damage, 100% chance on enemies under Grzmot Miness 's effect"
-            },
-            {
-                "name": "",
-                "upgradeDescription": "Has a 20% chance to deal 150% <@ba.talpu>（+2%）</>physical damage, 100% chance on enemies under Grzmot Miness 's effect"
+                "name": "Professional Breeder",
+                "upgradeDescription": "Can summon Metal Crabs to assist in combat from a Tactical Point; When blocking enemies, Metal Crabs DEF +{def:0%}; Metal Crabs will automatically respawn 15s after being defeated "
             }
         ],
         [
             {
-                "name": "",
-                "upgradeDescription": "Has a 20% chance to deal 150% physical damage, 100% chance on enemies under Grzmot Miness 's effect"
-            },
-            {
-                "name": "",
-                "upgradeDescription": "Has a 20% chance to deal 150% <@ba.talpu>（+2%）</>physical damage, 100% chance on enemies under Grzmot Miness 's effect"
+                "name": "Professional Breeder",
+                "upgradeDescription": "Can summon Metal Crabs to assist in combat from a Tactical Point; When blocking enemies, Metal Crabs DEF +{def:0%}; Metal Crabs will automatically respawn 15s after being defeated "
             }
         ]
     ],
-    "uniequip_XXX_ABCDEF": [ # Fuze // % Chance + Def%
+    "uniequip_002_ABCDEF":[ #Ascalon // ATK Duration
         [
             {
                 "name": "",
-                "upgradeDescription": "Has 65% chance to dodge Ranged Physical attacks, Def +xx%"
+                "upgradeDescription": "Attacks inflict the following effects to enemies:\nhave 18% Movement Speed, dealing {%ATK} of Ascalon's ATK as Arts damage per second for {Duration} seconds (can stack 3 time)"
             },
             {
                 "name": "",
-                "upgradeDescription": "Has 65%<@ba.talpu>（+5%）</> chance to dodge Ranged Physical attacks, Def +xx%"
+                "upgradeDescription": "Attacks inflict the following effects to enemies:\nhave 18% Movement Speed, dealing {%ATK}<@ba.talpu>(+1%)</> of Ascalon's ATK as Arts damage per second for {Duration} seconds (can stack 3 time)"
             }
         ],
         [
             {
                 "name": "",
-                "upgradeDescription": "Has 65% chance to dodge Ranged Physical attacks, Def +xx%"
+                "upgradeDescription": "Attacks inflict the following effects to enemies:\nhave -18% Movement Speed, dealing {%ATK} of Ascalon's ATK as Arts damage per second for {Duration} seconds (can stack 3 time)"
             },
             {
                 "name": "",
-                "upgradeDescription": "Has 65%<@ba.talpu>（+5%）</> chance to dodge Ranged Physical attacks, Def +xx%"
+                "upgradeDescription": "Attacks inflict the following effects to enemies:\nhave -18% Movement Speed, dealing {%ATK}<@ba.talpu>(+1%)</> of Ascalon's ATK as Arts damage per second for {Duration} seconds (can stack 3 time)"
             }
         ]
     ],
-    "uniequip_XXX_ABCDEF": [ # Iana // % Fragile + Duration
+    "uniequip_002_ABCDEF":[ #Aroma // Damage
         [
             {
                 "name": "",
-                "upgradeDescription": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 20% <$ba.fragile>Fragile</> to the attacker for XXX seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to [Substitute]"
+                "upgradeDescription": "The first hit on each enemy deal <@ba.vup>{atk_scale:0%}</> of ATK as Art damage and <$ba.levitate>Levitate</> it for 2.5 seconds"
             },
             {
                 "name": "",
-                "upgradeDescription": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 20% <@ba.talpu>（+2%）</><$ba.fragile>Fragile</> to the attacker for XXX seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to [Substitute]"
+                "upgradeDescription": "The first hit on each enemy deal <@ba.vup>{atk_scale:0%}</><@ba.talpu>(+5%)</> of ATK as Art damage and <$ba.levitate>Levitate</> it for 2.5 seconds"
             }
         ],
         [
             {
                 "name": "",
-                "upgradeDescription": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 20% <@ba.talpu>（+2%）</><$ba.fragile>Fragile</> to the attacker for XXX seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to [Substitute]"
+                "upgradeDescription": "The first hit on each enemy deal <@ba.vup>{atk_scale:0%}</> of ATK as Art damage and <$ba.levitate>Levitate</> it for 2.5 seconds"
             },
             {
                 "name": "",
-                "upgradeDescription": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 20% <@ba.talpu>（+2%）</><$ba.fragile>Fragile</> to the attacker for XXX seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to [Substitute]"
+                "upgradeDescription": "The first hit on each enemy deal <@ba.vup>{atk_scale:0%}</><@ba.talpu>(+5%)</> of ATK as Art damage and <$ba.levitate>Levitate</> it for 2.5 seconds"
             }
         ]
     ],
-    "uniequip_XXX_ABCDEF": [ # Doc // Max HP + Def Ignore
+    "uniequip_002_ABCDEF":[ #Lutonada //HP
         [
             {
                 "name": "",
-                "upgradeDescription": "Max HP +xx%, attacks ignore 100 Def"
+                "upgradeDescription": "When an enemy blocked by self is killed, restores {hp_ratio:0%} of Max HP"
             },
             {
                 "name": "",
-                "upgradeDescription": "Max HP +xx%<@ba.talpu>（+2%）</> , attacks ignore 100 Def"
+                "upgradeDescription": "When an enemy blocked by self is killed, restores {hp_ratio:0%}<@ba.talpu>(+1%)</> of Max HP"
             }
         ],
         [
             {
                 "name": "",
-                "upgradeDescription": "Max HP +xx%, attacks ignore 100 Def"
+                "upgradeDescription": "When an enemy blocked by self is killed, restores {hp_ratio:0%} of Max HP"
             },
             {
                 "name": "",
-                "upgradeDescription": "Max HP +xx%<@ba.talpu>（+2%）</> , attacks ignore 100 Def"
+                "upgradeDescription": "When an enemy blocked by self is killed, restores {hp_ratio:0%}<@ba.talpu>(+1%)</> of Max HP"
             }
         ]
     ],
-    "uniequip_003_ash": [ # Ash // Stun Duration , buff damage% and duration
+    "uniequip_003_heyak":[ #Ho'olheyak  // HP {damage_scale}
         [
             {
-                "name": "Auxiliary Equipment",
-                "upgradeDescription": "After deployment, immediately throw a Stun Grenade at an enemy within range, <$ba.stun>Stunning</> them and nearby enemies for 4 seconds, Ash deal addition physical damage for xx% to <$ba.stun>Stunned</> enemies for 4 seconds"
+                "name": "Bygone Wings",
+                "upgradeDescription": "Applies <$ba.weightless>Weightless</> to enemies with {HP:0%} or more HP within Attack Range, {damage_scale} <$ba.magicfragile>[Arts Fragility]</> to enemies with 50% or less HP within Attack Range"
             }
         ],
         [
             {
-                "name": "Auxiliary Equipment",
-                "upgradeDescription": "After deployment, immediately throw a Stun Grenade at an enemy within range, <$ba.stun>Stunning</> them and nearby enemies for 4 seconds, Ash deal addition physical damage for xx% to <$ba.stun>Stunned</> enemies for 4 seconds"
+                "name": "Bygone Wings",
+                "upgradeDescription": "Applies <$ba.weightless>Weightless</> to enemies with {HP:0%} or more HP within Attack Range, {damage_scale} <$ba.magicfragile>[Arts Fragility]</> to enemies with 50% or less HP within Attack Range"
             }
         ]
     ]
 }
 
 #template     
-
 "uniequip_00X_ABCDEF": [ # OPSname // Change
-    [
-        {
-            "name": "",
-            "upgradeDescription": ""
-        },
-        {
-            "name": "",
-            "upgradeDescription": ""
-        }
-    ],
-    [
-        {
-            "name": "",
-            "upgradeDescription": ""
-        },
-        {
-            "name": "",
-            "upgradeDescription": ""
-        }
+
+
+    "uniequip_00X_ABCDEF":[
+        [
+            {
+                "name": "",
+                "upgradeDescription": ""
+            },
+            {
+                "name": "",
+                "upgradeDescription": ""
+            }
+        ],
+        [
+            {
+                "name": "",
+                "upgradeDescription": ""
+            },
+            {
+                "name": "",
+                "upgradeDescription": ""
+            }
+        ]
     ]
-]
+
+    "uniequip_00X_ABCDEF":[
+        [
+            {
+                "name": "",
+                "upgradeDescription": ""
+            }
+        ],
+        [
+            {
+                "name": "",
+                "upgradeDescription": ""
+            }
+        ]
+    ]

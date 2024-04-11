@@ -11,7 +11,8 @@
             "fighter",
             "reaper",
             "librator",
-            "crusher"
+            "crusher",
+            #"earthshaker"
         ],
         "MEDIC":[
             "physician",
@@ -133,6 +134,11 @@
             "name":"Crusher",
             "tl":"",
             "en":"Crusher"
+        },
+        #"earthshaker":{
+            #"name":"Earthshaker",
+            "tl":"",
+            "en":""
         },
 
         "physician":{
@@ -271,7 +277,7 @@
         "hunter":{
             "name":"Hunter",
             "tl":"",
-            "en":""
+            "en":"Hunter"
         },
         "loopshooter":{
             "name":"Loopshooter",
@@ -348,7 +354,7 @@
         "ritualist":{
             "name":"Ritualist",
             "tl":"",
-            "en":""
+            "en":"Ritualist"
         },
 
         "executor":{

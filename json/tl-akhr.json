@@ -2401,7 +2401,7 @@
         "characteristic_kr": "",
         "camp": "",
         "type": "重装",
-        "level": 4,
+        "level": 5,
         "sex": "男",
         "tags": [
             "资深干员",
@@ -3643,7 +3643,7 @@
         "characteristic_kr": "",
         "camp": "",
         "type": "近卫",
-        "level": 6,
+        "level": 4,
         "sex": "男",
         "tags": [
             "近战位",
@@ -5271,7 +5271,7 @@
         "characteristic_kr": "",
         "camp": "",
         "type": "医疗",
-        "level": 5,
+        "level": 4,
         "sex": "男",
         "tags": [
             "远程位",
@@ -5746,7 +5746,7 @@
         "characteristic_kr": "",
         "camp": "",
         "type": "重装",
-        "level": 2,
+        "level": 3,
         "sex": "男",
         "tags": [
             "近战位",
@@ -7312,6 +7312,97 @@
             "召唤",
             "控场",
             "输出"
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_4132_ascln",
+        "name_cn": "阿斯卡纶",
+        "name_en": "Ascalon",
+        "name_jp": "",
+        "name_kr": "",
+        "characteristic_cn": "",
+        "characteristic_en": "",
+        "characteristic_jp": "",
+        "characteristic_kr": "",
+        "camp": "",
+        "type": "特种",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "近战位",
+            "减速",
+            "输出"
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_446_aroma",
+        "name_cn": "阿罗玛",
+        "name_en": "Aroma",
+        "name_jp": "",
+        "name_kr": "",
+        "characteristic_cn": "",
+        "characteristic_en": "",
+        "characteristic_jp": "",
+        "characteristic_kr": "",
+        "camp": "",
+        "type": "术师",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "群攻",
+            "控场"
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_4131_odda",
+        "name_cn": "奥达",
+        "name_en": "Odda",
+        "name_jp": "",
+        "name_kr": "",
+        "characteristic_cn": "",
+        "characteristic_en": "",
+        "characteristic_jp": "",
+        "characteristic_kr": "",
+        "camp": "",
+        "type": "近卫",
+        "level": 5,
+        "sex": "男",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "群攻",
+            "控场"
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_4130_luton",
+        "name_cn": "露托",
+        "name_en": "Lutonada",
+        "name_jp": "",
+        "name_kr": "",
+        "characteristic_cn": "",
+        "characteristic_en": "",
+        "characteristic_jp": "",
+        "characteristic_kr": "",
+        "camp": "",
+        "type": "重装",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "生存",
+            "防护"
         ],
         "hidden": true,
         "globalHidden": true

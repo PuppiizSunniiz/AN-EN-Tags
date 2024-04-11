@@ -1,6 +1,6 @@
     $.holdReady(true);
 
-    console.log = function () { }
+    //console.log = function () { }
 
     const jsonList = {
 
@@ -5367,10 +5367,23 @@
             console.log("DESC NULL")
             return desc
         }
+        desc = desc.replace(/\{\-([A-Z@_a-z\[\]0-9.]+)\}{0,1}:(.{1,4})\}/g, function(m, content, format) {
+            for (var i = 0; i < blackboard.length; i++) {
+                if (blackboard[i].key==content || blackboard[i].key==-content){
+                    console.log(blackboard[i].value,content)
+                    let value = -blackboard[i].value
+                    if (format && format.includes("%")) value = Math.round((value * 100000))/1000 + "%";
+                    num +=1
+                    return `<div class="stat-important">${value}</div>`
+                }
+            }
+            return m
+        })
+
         desc = desc.replace(/\{{0,1}\{([A-Z@_a-z\[\]0-9.]+)\}{0,1}:(.{1,4})\}/g, function(m, content, format) {
             for (var i = 0; i < blackboard.length; i++) {
-                if (blackboard[i].key==content){
-                    // console.log(blackboard[i].value)
+                if (blackboard[i].key==content || blackboard[i].key==-content){
+                    console.log(blackboard[i].value,content)
                     let value = blackboard[i].value
                     if (format && format.includes("%")) value = Math.round((value * 100000))/1000 + "%";
                     num +=1
@@ -5383,7 +5396,7 @@
         desc = desc.replace(/\{([A-Z_@a-z.0-9\[\]]+)\}/g, function(m, content) {
             for (var i = 0; i < blackboard.length; i++) {
                 if (blackboard[i].key==content){
-                    // console.log(blackboard[i].value)
+                    console.log(blackboard[i].value,content)
                     value = blackboard[i].value
                     if(skill && skill.prefabId == "skchr_angel_3"&&blackboard[i].key =='base_attack_time'){
                         value = value*2;

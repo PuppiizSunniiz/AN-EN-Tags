@@ -7,15 +7,6 @@ def CharReady(JSON,mode=0):
         Mode 3 : ["Exclude"]
         Default : All
     '''
-    def Charname(JSON,key) -> str:
-        def NameCheck(appellation):
-            Russian = {'Гум': 'Gummy', 'Зима': 'Zima', 'Истина': 'Istina', 'Позёмка': 'Pozëmka', 'Роса': 'Rosa','Лето':'Leto'}
-            if appellation in Russian.keys():
-                return Russian[appellation]
-            else:
-                return appellation
-            
-        return NameCheck(JSON[key]["appellation"])
 
     Chars={"Code2Name":{},"Name2Code":{}}
     OpsExclude=[] # "isNotObtainable": true
@@ -35,3 +26,13 @@ def CharReady(JSON,mode=0):
             return Chars["Exclude"]
         case _ :
             return Chars
+        
+def Charname(JSON,key) -> str:
+    return NameCheck(JSON[key]["appellation"])
+
+def NameCheck(appellation):
+    Russian = {'Гум': 'Gummy', 'Зима': 'Zima', 'Истина': 'Istina', 'Позёмка': 'Pozëmka', 'Роса': 'Rosa','Лето':'Leto'}
+    if appellation in Russian.keys():
+        return Russian[appellation]
+    else:
+        return appellation

@@ -1,1 +1,17 @@
-{}
+{
+    "攻击使目标周围的其他敌人受到相当于攻击力<@ba.kw>50%</>的<@ba.kw>群体</>物理伤害": {
+        "name": "Odda",
+        "code": "char_4131_odda",
+        "mode": "newchars"
+    },
+    "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，援军受到来自自身阻挡单位的伤害降低<@ba.kw>15%</>，自身攻击援军阻挡的敌人时攻击力提升至150%": {
+        "name": "Blacknight",
+        "code": "uniequip_002_blkngt",
+        "mode": "newmods"
+    },
+    "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，援军阻挡的敌人更容易受到我方的攻击，自身攻击援军阻挡的敌人时攻击力提升至165%": {
+        "name": "Beanstalk",
+        "code": "uniequip_002_bstalk",
+        "mode": "newmods"
+    }
+}

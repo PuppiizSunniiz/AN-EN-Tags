@@ -105,6 +105,7 @@
             "char_308_swire": "Swire",
             "char_265_sophia": "Whislash",
             "char_4106_bryota": "Bryophyta",
+            "char_4125_rdoc": "Doc",
             "char_106_franka": "Franka",
             "char_131_flameb": "Flamebringer",
             "char_154_morgan": "Morgan",
@@ -120,6 +121,7 @@
             "char_459_tachak": "Tachanka",
             "char_143_ghost": "Specter",
             "char_356_broca": "Broca",
+            "char_4126_fuze": "Fuze",
             "char_274_astesi": "Astesia",
             "char_333_sidero": "Sideroca",
             "char_475_akafyu": "Akafuyu",
@@ -231,6 +233,7 @@
             "char_458_rfrost": "Frost",
             "char_369_bena": "Bena",
             "char_4016_kazema": "Kazemaru",
+            "char_4124_iana": "Iana",
             "char_103_angel": "Exusiai",
             "char_332_archet": "Archetto",
             "char_456_ash": "Ash",
@@ -283,6 +286,7 @@
             "char_437_mizuki": "Mizuki",
             "char_1023_ghost2": "Specter the Unchained",
             "char_4048_doroth": "Dorothy",
+            "char_4123_ela": "Ela",
             "char_147_shining": "Shining",
             "char_179_cgbird": "Nightingale",
             "char_003_kalts": "Kal'tsit",
@@ -434,6 +438,7 @@
             "Swire": "char_308_swire",
             "Whislash": "char_265_sophia",
             "Bryophyta": "char_4106_bryota",
+            "Doc": "char_4125_rdoc",
             "Franka": "char_106_franka",
             "Flamebringer": "char_131_flameb",
             "Morgan": "char_154_morgan",
@@ -449,6 +454,7 @@
             "Tachanka": "char_459_tachak",
             "Specter": "char_143_ghost",
             "Broca": "char_356_broca",
+            "Fuze": "char_4126_fuze",
             "Astesia": "char_274_astesi",
             "Sideroca": "char_333_sidero",
             "Akafuyu": "char_475_akafyu",
@@ -559,6 +565,7 @@
             "Frost": "char_458_rfrost",
             "Bena": "char_369_bena",
             "Kazemaru": "char_4016_kazema",
+            "Iana": "char_4124_iana",
             "Exusiai": "char_103_angel",
             "Archetto": "char_332_archet",
             "Ash": "char_456_ash",
@@ -611,6 +618,7 @@
             "Mizuki": "char_437_mizuki",
             "Specter the Unchained": "char_1023_ghost2",
             "Dorothy": "char_4048_doroth",
+            "Ela": "char_4123_ela",
             "Shining": "char_147_shining",
             "Nightingale": "char_179_cgbird",
             "Kal'tsit": "char_003_kalts",
@@ -1541,6 +1549,12 @@
             "输出",
             "支援"
         ],
+        "Doc": [
+            "资深干员",
+            "近战位",
+            "治疗",
+            "支援"
+        ],
         "Franka": [
             "资深干员",
             "近战位",
@@ -1623,6 +1637,12 @@
             "生存"
         ],
         "Broca": [
+            "资深干员",
+            "近战位",
+            "群攻",
+            "生存"
+        ],
+        "Fuze": [
             "资深干员",
             "近战位",
             "群攻",
@@ -2246,6 +2266,12 @@
             "输出",
             "快速复活"
         ],
+        "Iana": [
+            "资深干员",
+            "近战位",
+            "削弱",
+            "快速复活"
+        ],
         "Exusiai": [
             "高级资深干员",
             "远程位",
@@ -2555,6 +2581,13 @@
             "远程位",
             "召唤",
             "控场"
+        ],
+        "Ela": [
+            "高级资深干员",
+            "远程位",
+            "召唤",
+            "控场",
+            "输出"
         ],
         "Shining": [
             "高级资深干员",

@@ -1,125 +1,60 @@
 {
-    "char_4123_ela": [
+    "char_XXXX_ABCDEF": [   #Ascalon //Talent 1 : {-MSPD} {%ATK} {Duration} {cnt}
+                                    // talent 2 : {ASPD} {ASPD+}
         [
             {
-                "name": "雷鸣地雷",
-                "desc": "Can deploy up to 1 Grzmot Miness (Can store up to 10); The first enemy that steps on a Grzmot Mines will trigger its effect, on retreat activate Grzmot Mine 's effect on self"
+                "name": "",
+                "desc": "Attacks inflict the following effects to enemies:\nhave {-MSPD} Movement Speed, dealing {%ATK} of Ascalon's ATK as Arts damage per second for {Duration} seconds (can stack {cnt} time)"
             },
             {
-                "name": "雷鸣地雷",
-                "desc": "Can deploy up to 2<@ba.talpu>（+1）</> Grzmot Miness (Can store up to 10); The first enemy that steps on a Grzmot Mines will trigger its effect, on retreat activate Grzmot Mine 's effect on self"
-            },
-            {
-                "name": "雷鸣地雷",
-                "desc": "Can deploy up to 2 Grzmot Miness (Can store up to 10); The first enemy that steps on a Grzmot Mines will trigger its effect, on retreat activate Grzmot Mine 's effect on self"
-            },
-            {
-                "name": "雷鸣地雷",
-                "desc": "Can deploy up to 3<@ba.talpu>（+1）</> Grzmot Miness (Can store up to 10); The first enemy that steps on a Grzmot Mines will trigger its effect, on retreat activate Grzmot Mine 's effect on self"
-            },
-            {
-                "name": "雷鸣地雷",
-                "desc": "Can deploy up to 3 Grzmot Miness (Can store up to 10); The first enemy that steps on a Grzmot Mines will trigger its effect, on retreat activate Grzmot Mine 's effect on self"
-            },
-            {
-                "name": "雷鸣地雷",
-                "desc": "Can deploy up to 4<@ba.talpu>（+1）</> Grzmot Miness (Can store up to 10); The first enemy that steps on a Grzmot Mines will trigger its effect, on retreat activate Grzmot Mine 's effect on self"
+                "name": "<@ba.talpu></>",
+                "desc": ""
             }
         ],
         [
             {
-                "name": "“正中靶心”",
-                "desc": "Has a 30% chance to deal 150% physical damage, 100% chance on enemies under Grzmot Miness 's effect"
+                "name": "",
+                "desc": "ASPD + {ASPD}, when there ranged tile in the four surrounding tiles ASPD + {ASPD+} instead"
             },
             {
-                "name": "“正中靶心”",
-                "desc": "Has a 30% chance to deal 160% <@ba.talpu>（+10%）</>physical damage, 100% chance on enemies under Grzmot Miness 's effect"
+                "name": "<@ba.talpu></>",
+                "desc": ""
             }
         ]
     ],
-    "char_4126_fuze": [ 
+    "char_XXXX_ABCDEF": [   #Aroma //{atk_scale:0%} {Duration}
         [
             {
-                "name": "防弹护盾",
-                "desc": "Has 17% chance to dodge Ranged Physical attacks"
+                "name": "",
+                "desc": "The first hit on each enemy deal <@ba.vup>{atk_scale:0%}</> of ATK as Art damage and <$ba.levitate>Levitate</> it for {Duration} seconds"
             },
             {
-                "name": "防弹护盾",
-                "desc": "Has 20%<@ba.talpu>（+3%）</> chance to dodge Ranged Physical attacks"
-            },
-            {
-                "name": "防弹护盾",
-                "desc": "Has 27% chance to dodge Ranged Physical attacks"
-            },
-            {
-                "name": "防弹护盾",
-                "desc": "Has 30%<@ba.talpu>（+3%）</> chance to dodge Ranged Physical attacks"
+                "name": "<@ba.talpu></>",
+                "desc": ""
             }
         ]
     ],
-    "char_4124_iana": [ 
+    "char_XXXX_ABCDEF": [   #Odda //{cnt} {%ATK}
         [
             {
-                "name": "双子分身复制器",
-                "desc": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, remove <$ba.invisible>Invisibility</> to the attacker, then immediately swap to [Substitute]"
+                "name": "",
+                "desc": "After dealing Physical damage {cnt} times, ATK +{%ATK}"
             },
             {
-                "name": "双子分身复制器",
-                "desc": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, remove <$ba.invisible>Invisibility</> to the attacker, then immediately swap to [Substitute]"
-            },
-            {
-                "name": "双子分身复制器",
-                "desc": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 10% <$ba.fragile>Fragile</> to the attacker for 6 seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to [Substitute]"
-            },
-            {
-                "name": "双子分身复制器",
-                "desc": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 12%<@ba.talpu>（+2%）</> <$ba.fragile>Fragile</> to the attacker for 6 seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to [Substitute]"
-            },
-            {
-                "name": "双子分身复制器",
-                "desc": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 20% <$ba.fragile>Fragile</> to the attacker for 8 seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to [Substitute]"
-            },
-            {
-                "name": "双子分身复制器",
-                "desc": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 22%<@ba.talpu>（+2%）</> <$ba.fragile>Fragile</> to the attacker for 8 seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to [Substitute]"
+                "name": "<@ba.talpu></>",
+                "desc": ""
             }
         ]
     ],
-    "char_4125_rdoc": [
+    "char_XXXX_ABCDEF": [   #Lutonada //{hp_ratio:0%}
         [
             {
-                "name": "军医",
-                "desc": "Max HP +3%, attacks ignore 30 Def"
+                "name": "",
+                "desc": "When an enemy blocked by self is killed, restores {hp_ratio:0%} of Max HP"
             },
             {
-                "name": "军医",
-                "desc": "Max HP +3% , attacks ignore 50<@ba.talpu>（+20）</> Def"
-            },
-            {
-                "name": "军医",
-                "desc": "Max HP +6%, attacks ignore 60 Def"
-            },
-            {
-                "name": "军医",
-                "desc": "Max HP +6% , attacks ignore 80<@ba.talpu>（+20）</> Def"
-            },
-            {
-                "name": "军医",
-                "desc": "Max HP +12%, attacks ignore 120 Def"
-            },
-            {
-                "name": "军医",
-                "desc": "Max HP +12% , attacks ignore 140<@ba.talpu>（+20）</> Def"
-            }
-        ],
-        [
-            {
-                "name": "交感神经激活",
-                "desc": "When healing allies, exceed healing amount convert to fast decaying <$ba.barrier>Barrier</>"
-            },
-            {
-                "name": "交感神经激活",
-                "desc": "When healing allies, exceed healing amount convert to decaying <$ba.barrier>Barrier</>"
+                "name": "<@ba.talpu></>",
+                "desc": ""
             }
         ]
     ]
@@ -134,7 +69,7 @@
             "desc": ""
         },
         {
-            "name": "",
+            "name": "<@ba.talpu></>",
             "desc": ""
         }
     ],
@@ -144,7 +79,20 @@
             "desc": ""
         },
         {
+            "name": "<@ba.talpu></>",
+            "desc": ""
+        }
+    ]
+]
+
+"char_XXXX_ABCDEF": [
+    [
+        {
             "name": "",
+            "desc": ""
+        },
+        {
+            "name": "<@ba.talpu></>",
             "desc": ""
         }
     ]

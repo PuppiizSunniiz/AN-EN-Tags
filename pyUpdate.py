@@ -41,10 +41,10 @@ json_tempmod        =   json.loads(open("json/TempModuletalentsTL.json").read())
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-newchars = []
+newchars = ["Ascalon","Aroma","Odda","Lutonada"]
 
 #[["OpsName#1",num(Mod)],["OpsName#2",num(Mod)], ...]
-newmods = []
+newmods = [["Muelsyse",1],["Vigil",1],["Blacknight",1],["Beanstalk",1],["Ascalon",1],["Aroma",1],["Lutonada",1],["Ho'olheyak",2]]
 
 #["ItemID#1","ItemID#2", ...]
 newmats = []
@@ -100,10 +100,10 @@ for newchar in newchars:
                                     "camp": "",
                                     "type": Classparse[json_char[newcode]["profession"]],
                                     "level": int(json_char[newcode]["rarity"][-1]),
-                                    "sex": json_handbook["handbookDict"][newcode]["storyTextAudio"][0]["stories"][0]["storyText"].split("\n")[1].split("】")[1],
+                                    "sex": ''.join(json_handbook["handbookDict"][newcode]["storyTextAudio"][0]["stories"][0]["storyText"].split("\n")[1].split("】")[1].split()),
                                     "tags": ["高级资深干员" for x in range(1) if json_char[newcode]["rarity"][-1]=="6"]+ \
                                             ["资深干员" for x in range(1) if json_char[newcode]["rarity"][-1]=="5"]+ \
-                                            ["新手" for x in range(1) if json_char[newcode]["rarity"][-1]=="2"]+ \
+                                            ###["新手" for x in range(1) if json_char[newcode]["rarity"][-1]=="2"]+ \
                                             ["近战位" for x in range(1) if json_char[newcode]["position"]=="MELEE"]+ \
                                             ["远程位" for x in range(1) if json_char[newcode]["position"]=="RANGED"]+ \
                                             json_char[newcode]["tagList"],
@@ -340,15 +340,3 @@ with open("json/named_effects.json",'w') as JSON :
 
 
 print("\nUpdate Completed !!!\n")
-
-'''
-    buildEN=json.loads(open("json/gamedata/en_US/gamedata/excel/building_data.json").read())
-    RIIC=json.loads(open("json/ace/riic.json").read())
-
-    for buff in buildEN["buffs"].keys():
-        RIIC[buff]["descformat"]=buildEN["buffs"][buff]["description"]
-
-    dumpling=json.dumps(RIIC,indent=4, ensure_ascii=False)
-    with open("json/ace/riic.json",'w') as JSON :
-        JSON.write(dumpling)
-'''
