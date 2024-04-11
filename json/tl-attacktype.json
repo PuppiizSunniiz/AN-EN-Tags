@@ -599,6 +599,18 @@
         "自身可以额外部署在近战位，陷阱可以额外部署在远程位": {
             "en": "Can be deployed on Melee tiles ,traps can be deployed on Ranged tiles",
             "color": "extra"
+        },
+        "攻击使目标周围的其他敌人受到相当于攻击力<@ba.kw>50%</>的<@ba.kw>群体</>物理伤害": {
+            "en": "Attacks deal <@ba.kw>50%</> Physical damage to other <@ba.kw>ground enemies</> in a small area",
+            "color": "physical"
+        },
+        "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，援军受到来自自身阻挡单位的伤害降低<@ba.kw>15%</>，自身攻击援军阻挡的敌人时攻击力提升至150%": {
+            "en": "This unit can designate one <@ba.kw>Tactical Point</> within attack range to call Reinforcements; Reinforcements receives 15% less damage from enemies blocked by self ; ATK is increased to 150% when attacking enemies blocked by Reinforcements",
+            "color": "physical"
+        },
+        "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，援军阻挡的敌人更容易受到我方的攻击，自身攻击援军阻挡的敌人时攻击力提升至165%": {
+            "en": "This unit can designate one <@ba.kw>Tactical Point</> within attack range to call Reinforcements; ATK is increased to 165% when attacking enemies blocked by Reinforcements",
+            "color": "physical"
         }
     },
     "parts":[

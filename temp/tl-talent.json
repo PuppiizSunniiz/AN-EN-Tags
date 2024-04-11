@@ -3,30 +3,25 @@
         [
             {
                 "name": "死亡拘审",
-                "descCN": "攻击对敌人施加效果：移动速度降低12％，每秒受到6％阿斯卡纶当前攻击力的法术伤害，持续18秒，效果最多叠加三层",
-                "desc": ""
+                "desc": "Attacks inflict the following effects to enemies:\nhave -12％ Movement Speed, dealing 6% of Ascalon's ATK as Arts damage per second for 18 seconds (can stack 3 time)"
             },
             {
                 "name": "死亡拘审",
-                "descCN": "攻击对敌人施加效果：移动速度降低15％，每秒受到8％阿斯卡纶当前攻击力的法术伤害，持续18秒，效果最多叠加三层",
-                "desc": ""
+                "desc": "Attacks inflict the following effects to enemies:\nhave -15％ Movement Speed, dealing 8% of Ascalon's ATK as Arts damage per second for 18 seconds (can stack 3 time)"
             },
             {
                 "name": "死亡拘审",
-                "descCN": "攻击对敌人施加效果：移动速度降低18％，每秒受到10％阿斯卡纶当前攻击力的法术伤害，持续25秒，效果最多叠加三层",
-                "desc": ""
+                "desc": "Attacks inflict the following effects to enemies:\nhave -18％ Movement Speed, dealing 10% of Ascalon's ATK as Arts damage per second for 25 seconds (can stack 3 time)"
             }
         ],
         [
             {
                 "name": "噬光残影",
-                "descCN": "攻击速度+8，自身周围四格有高台时，攻击速度额外+6",
-                "desc": ""
+                "desc": "ASPD+8, when there ranged tile in the four surrounding tiles additionally ASPD+6"
             },
             {
                 "name": "噬光残影",
-                "descCN": "攻击速度+10<@ba.talpu>（+2）</>，自身周围四格有高台时，攻击速度额外+6",
-                "desc": ""
+                "desc": "ASPD+10<@ba.talpu>(+2)</>, when there ranged tile in the four surrounding tiles additionally ASPD+6"
             }
         ]
     ],
@@ -34,23 +29,19 @@
         [
             {
                 "name": "起泡性能测试",
-                "descCN": "对每个敌人首次进行攻击时攻击力提升至105%，并使目标浮空2.5秒",
-                "desc": ""
+                "desc": "The first hit on each enemy deal 105% of ATK as Art damage and <$ba.levitate>Levitate</> it for 2.5 seconds"
             },
             {
                 "name": "起泡性能测试",
-                "descCN": "对每个敌人首次进行攻击时攻击力提升至110%<@ba.talpu>（+5%）</>，并使目标浮空2.5秒",
-                "desc": ""
+                "desc": "The first hit on each enemy deal 110%<@ba.talpu>(+5%)</> of ATK as Art damage and <$ba.levitate>Levitate</> it for 2.5 seconds"
             },
             {
                 "name": "起泡性能测试",
-                "descCN": "对每个敌人首次进行攻击时攻击力提升至110%，并使目标浮空2.5秒",
-                "desc": ""
+                "desc": "The first hit on each enemy deal 110% of ATK as Art damage and <$ba.levitate>Levitate</> it for 2.5 seconds"
             },
             {
                 "name": "起泡性能测试",
-                "descCN": "对每个敌人首次进行攻击时攻击力提升至115%<@ba.talpu>（+5%）</>，并使目标浮空2.5秒",
-                "desc": ""
+                "desc": "The first hit on each enemy deal 115%<@ba.talpu>(+5%)</> of ATK as Art damage and <$ba.levitate>Levitate</> it for 2.5 seconds"
             }
         ]
     ],
@@ -58,23 +49,19 @@
         [
             {
                 "name": "落锤",
-                "descCN": "累计造成45次物理伤害后，攻击力+9%",
-                "desc": ""
+                "desc": "After dealing Physical damage 45 times, ATK+9%"
             },
             {
                 "name": "落锤",
-                "descCN": "累计造成45次物理伤害后，攻击力+12%<@ba.talpu>（+3%）</>",
-                "desc": ""
+                "desc": "After dealing Physical damage 45 times, ATK+12%<@ba.talpu>(+3%)</>"
             },
             {
                 "name": "落锤",
-                "descCN": "累计造成30次物理伤害后，攻击力+15%",
-                "desc": ""
+                "desc": "After dealing Physical damage 30 times, ATK+15%"
             },
             {
                 "name": "落锤",
-                "descCN": "累计造成30次物理伤害后，攻击力+18%<@ba.talpu>（+3%）</>",
-                "desc": ""
+                "desc": "After dealing Physical damage 30 times, ATK+18%<@ba.talpu>(+3%)</>"
             }
         ]
     ],
@@ -82,23 +69,19 @@
         [
             {
                 "name": "死里求生",
-                "descCN": "自身阻挡的敌方单位被击杀时，回复自身12%的生命",
-                "desc": ""
+                "desc": "When an enemy blocked by self is killed, restores 12% of Max HP"
             },
             {
                 "name": "死里求生",
-                "descCN": "自身阻挡的敌方单位被击杀时，回复自身14%<@ba.talpu>（+2%）</>的生命",
-                "desc": ""
+                "desc": "When an enemy blocked by self is killed, restores 14%<@ba.talpu>(+2%)</> of Max HP"
             },
             {
                 "name": "死里求生",
-                "descCN": "自身阻挡的敌方单位被击杀时，回复自身16%的生命",
-                "desc": ""
+                "desc":  "When an enemy blocked by self is killed, restores 16% of Max HP"
             },
             {
                 "name": "死里求生",
-                "descCN": "自身阻挡的敌方单位被击杀时，回复自身18%<@ba.talpu>（+2%）</>的生命",
-                "desc": ""
+                "desc": "When an enemy blocked by self is killed, restores 18%<@ba.talpu>(+2%)</> of Max HP"
             }
         ]
     ]
