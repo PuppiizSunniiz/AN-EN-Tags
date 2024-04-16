@@ -1,43 +1,27 @@
 {
     "uniequip_002_mlyss": [
-        [
-            {
-                "name": "Pure Water is Life",
-                "upgradeDescription": "Can summon a Flowing Shape to assist in combat. Flowing Shapes can partially copy an undeployed Operator's attributes (Max HP, ATK, DEF, RES, Block Count, Attack Interval, Attack Range, Damage Type, and obtain a special trait depending on whether in melee or ranged form), gain 5 SP after first deployment, will respawn 25 seconds after being defeated"
-            }
-        ],
-        [
-            {
-                "name": "Pure Water is Life",
-                "upgradeDescription": "Can summon a Flowing Shape to assist in combat. Flowing Shapes can copy an undeployed Operator's attributes (Max HP, ATK, DEF, RES, Block Count, Attack Interval, Attack Range, Damage Type, and obtain a special trait depending on whether in melee or ranged form), gain 5 SP after first deployment, will respawn 25 seconds after being defeated"
-            }
-        ]
+        [],
+        []
     ],
     "uniequip_002_vigil": [
-        [
-            {
-                "name": "Leader of the Wolfpack",
-                "upgradeDescription": "Can summon a Wolfpack initially consisting of 3 'Wolf Shadows' at the Tactical Point to assist in combat; The number of 'Wolf Shadows' increases by 1 every 25 seconds (up to a maximum of 3; each 'Wolf Shadow' increases the Wolfpack's Block by 1 and causes its attacks to deal an additional instance of damage; when 'Wolf Shadow' defeated, Wolfpack gain 30% Physical Dodge for 7 seconds)"
-            }
-        ],
-        [
-            {
-                "name": "Leader of the Wolfpack",
-                "upgradeDescription": "Can summon a Wolfpack initially consisting of 3 'Wolf Shadows' at the Tactical Point to assist in combat; The number of 'Wolf Shadows' increases by 1 every 25 seconds (up to a maximum of 3; each 'Wolf Shadow' increases the Wolfpack's Block by 1 and causes its attacks to deal an additional instance of damage; when 'Wolf Shadow' defeated, Wolfpack gain 50% Physical Dodge for 10 seconds)"
-            }
-        ]
+        [],
+        []
     ],
     "uniequip_002_blkngt": [
         [
             {
-                "name": "Nightwalker",
-                "upgradeDescription": "When there are <$ba.sleep>Sleeping</> enemies enemies within Attack Range, Blacknight and Slumberfoot ATK +5%"
+                "name": "点梦",
+                "CN": "可以在战术点召唤眠兽协助作战，其被击败后会在15秒后自动刷新",
+                "mod": "攻击范围内存在处于沉睡状态的敌人时，自身和眠兽攻击力+5%",
+                "upgradeDescription": ""
             }
         ],
         [
             {
-                "name": "Nightwalker",
-                "upgradeDescription": "When there are <$ba.sleep>Sleeping</> enemies enemies within Attack Range, Blacknight and Slumberfoot ATK 10%"
+                "name": "点梦",
+                "CN": "可以在战术点召唤眠兽协助作战，其被击败后会在15秒后自动刷新",
+                "mod": "攻击范围内存在处于沉睡状态的敌人时，自身和眠兽攻击力+10%",
+                "upgradeDescription": ""
             }
         ]
     ],
@@ -45,13 +29,19 @@
         [
             {
                 "name": "Professional Breeder",
-                "upgradeDescription": "Can summon Metal Crabs to assist in combat from a Tactical Point; When blocking enemies, Metal Crabs DEF +10%; Metal Crabs will automatically respawn 15s after being defeated "
+                "EN": "Can summon Metal Crabs to assist in combat from a Tactical Point; Metal Crabs will automatically respawn 15s after being defeated",
+                "CN": "可以在战术点召唤磐蟹协助作战，其被击败后会在15秒后自动刷新",
+                "mod": "可以在战术点召唤磐蟹协助作战，磐蟹阻挡敌人时防御力+10%，其被击败后会在15秒后自动刷新",
+                "upgradeDescription": ""
             }
         ],
         [
             {
                 "name": "Professional Breeder",
-                "upgradeDescription": "Can summon Metal Crabs to assist in combat from a Tactical Point; When blocking enemies, Metal Crabs DEF +15%; Metal Crabs will automatically respawn 15s after being defeated "
+                "EN": "Can summon Metal Crabs to assist in combat from a Tactical Point; Metal Crabs will automatically respawn 15s after being defeated",
+                "CN": "可以在战术点召唤磐蟹协助作战，其被击败后会在15秒后自动刷新",
+                "mod": "可以在战术点召唤磐蟹协助作战，磐蟹阻挡敌人时防御力+15%，其被击败后会在15秒后自动刷新",
+                "upgradeDescription": ""
             }
         ]
     ],
@@ -59,13 +49,17 @@
         [
             {
                 "name": "死亡拘审",
-                "upgradeDescription": "Attacks inflict the following effects to enemies:\nhave -18％ Movement Speed, dealing 11% of Ascalon's ATK as Arts damage per second for 27 seconds (can stack 3 time)"
+                "CN": "攻击对敌人施加效果：移动速度降低18％，每秒受到10％阿斯卡纶当前攻击力的法术伤害，持续25秒，效果最多叠加三层",
+                "mod": "攻击对敌人施加效果：移动速度降低18％，每秒受到11％阿斯卡纶当前攻击力的法术伤害，持续27秒，效果最多叠加三层",
+                "upgradeDescription": ""
             }
         ],
         [
             {
                 "name": "死亡拘审",
-                "upgradeDescription": "Attacks inflict the following effects to enemies:\nhave -18％ Movement Speed, dealing 11% of Ascalon's ATK as Arts damage per second for 30 seconds (can stack 3 time)"
+                "CN": "攻击对敌人施加效果：移动速度降低18％，每秒受到10％阿斯卡纶当前攻击力的法术伤害，持续25秒，效果最多叠加三层",
+                "mod": "攻击对敌人施加效果：移动速度降低18％，每秒受到11％阿斯卡纶当前攻击力的法术伤害，持续30秒，效果最多叠加三层",
+                "upgradeDescription": ""
             }
         ]
     ],
@@ -73,21 +67,29 @@
         [
             {
                 "name": "起泡性能测试",
-                "upgradeDescription": "The first hit on each enemy deal 115% of ATK as Art damage and <$ba.levitate>Levitate</> it for 2.5 seconds"
+                "CN": "对每个敌人首次进行攻击时攻击力提升至110%，并使目标浮空2.5秒",
+                "mod": "对每个敌人首次进行攻击时攻击力提升至115%，并使目标浮空2.5秒",
+                "upgradeDescription": ""
             },
             {
                 "name": "起泡性能测试",
-                "upgradeDescription": "The first hit on each enemy deal 120%<@ba.talpu>(+5%)</> of ATK as Art damage and <$ba.levitate>Levitate</> it for 2.5 seconds"
+                "CN": "对每个敌人首次进行攻击时攻击力提升至115%<@ba.talpu>（+5%）</>，并使目标浮空2.5秒",
+                "mod": "对每个敌人首次进行攻击时攻击力提升至120%<@ba.talpu>（+5%）</>，并使目标浮空2.5秒",
+                "upgradeDescription": ""
             }
         ],
         [
             {
                 "name": "起泡性能测试",
-                "upgradeDescription": "The first hit on each enemy deal 120% of ATK as Art damage and <$ba.levitate>Levitate</> it for 2.5 seconds"
+                "CN": "对每个敌人首次进行攻击时攻击力提升至110%，并使目标浮空2.5秒",
+                "mod": "对每个敌人首次进行攻击时攻击力提升至120%，并使目标浮空2.5秒",
+                "upgradeDescription": ""
             },
             {
                 "name": "起泡性能测试",
-                "upgradeDescription": "The first hit on each enemy deal 125%<@ba.talpu>(+5%)</> of ATK as Art damage and <$ba.levitate>Levitate</> it for 2.5 seconds"
+                "CN": "对每个敌人首次进行攻击时攻击力提升至115%<@ba.talpu>（+5%）</>，并使目标浮空2.5秒",
+                "mod": "对每个敌人首次进行攻击时攻击力提升至125%<@ba.talpu>（+5%）</>，并使目标浮空2.5秒",
+                "upgradeDescription": ""
             }
         ]
     ],
@@ -95,36 +97,34 @@
         [
             {
                 "name": "死里求生",
-                "upgradeDescription": "When an enemy blocked by self is killed, restores 18% of Max HP"
+                "CN": "自身阻挡的敌方单位被击杀时，回复自身16%的生命",
+                "mod": "自身阻挡的敌方单位被击杀时，回复自身18%的生命",
+                "upgradeDescription": ""
             },
             {
                 "name": "死里求生",
-                "upgradeDescription": "When an enemy blocked by self is killed, restores 18%<@ba.talpu>(+2%)</> of Max HP"
+                "CN": "自身阻挡的敌方单位被击杀时，回复自身18%<@ba.talpu>（+2%）</>的生命",
+                "mod": "自身阻挡的敌方单位被击杀时，回复自身20%<@ba.talpu>（+2%）</>的生命",
+                "upgradeDescription": ""
             }
         ],
         [
             {
                 "name": "死里求生",
-                "upgradeDescription": "When an enemy blocked by self is killed, restores 20% of Max HP"
+                "CN": "自身阻挡的敌方单位被击杀时，回复自身16%的生命",
+                "mod": "自身阻挡的敌方单位被击杀时，回复自身20%的生命",
+                "upgradeDescription": ""
             },
             {
                 "name": "死里求生",
-                "upgradeDescription": "When an enemy blocked by self is killed, restores 22%<@ba.talpu>(+2%)</> of Max HP"
+                "CN": "自身阻挡的敌方单位被击杀时，回复自身18%<@ba.talpu>（+2%）</>的生命",
+                "mod": "自身阻挡的敌方单位被击杀时，回复自身22%<@ba.talpu>（+2%）</>的生命",
+                "upgradeDescription": ""
             }
         ]
     ],
     "uniequip_003_heyak": [
-        [
-            {
-                "name": "Bygone Wings",
-                "upgradeDescription": "Applies <$ba.weightless>Weightless</> to enemies with 60% or more HP within Attack Range and 10% <$ba.magicfragile>[Arts Fragility]</> to enemies with 50% or less HP within Attack Range"
-            }
-        ],
-        [
-            {
-                "name": "Bygone Wings",
-                "upgradeDescription": "Applies <$ba.weightless>Weightless</> to enemies with 50% or more HP within Attack Range and 20% <$ba.magicfragile>[Arts Fragility]</> to enemies with 50% or less HP within Attack Range"
-            }
-        ]
+        [],
+        []
     ]
 }
