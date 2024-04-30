@@ -4,7 +4,7 @@ import json
 # json
 ###
 
-Server = "zh_CN" # "zh_CN" / "en_US"
+Server = "en_US" # "zh_CN" / "en_US"
 
 jsonlist = json.loads(open("json/gamedata/"+Server+"/gamedata/excel/activity_table.json").read())
 
@@ -33,5 +33,5 @@ print('tone\tmood\tformula')
 
 for group in groups.keys():
     for formula in groups[group]["formList"]:
-        print (groups[group]["groupSmallName"],'\t',formulas[formula]["formDesc"],("").join([colors[x] for x in formulas[formula]["fragIdList"]]))
-    print("\n")
+        print (colors["act29side_frag_"+str(groups[group]["groupSortId"])],groups[group]["groupSmallName"],'\t',formulas[formula]["formDesc"],("").join([colors[x] for x in formulas[formula]["fragIdList"]]))
+    #print("\n")

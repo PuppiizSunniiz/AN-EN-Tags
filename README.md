@@ -1,12 +1,11 @@
-#### Personal page to do list :
-things might be not made following the list
+# Known Issue
+    - skill token not remove/hide when select other skill
+    - Illustrator and VA got remove if select Reserve/IS ops
 
-1. Chara detail (directly from translated data from dragonjet)
-2. Item List : the detail and where to find it (include material)
-3. Stage list 
-4. Daily list
-5. Mission from newbie,daily,and main mission
-6. Show item list
-7. ~~Fallout shelter~~ (infrastructure stuff check) 
+# Next Step
+    - Add skill description and detail for TOKEN (time to see Stainless)
 
-?. (probably never) stage simulator 
+# Not now or Never
+    - Revamp akenemy
+    - Filter by country/team
+    - work on chibi

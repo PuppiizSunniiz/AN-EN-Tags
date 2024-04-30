@@ -223,7 +223,7 @@
         "cc.bd_B": {
             "termId": "cc.bd_B",
             "termName": "Soundless Resonance",
-            "description": "Affects skills related to <$cc.bd_B_1><@cc.rem>Lingering Melody</></> and <$cc.bd_B_2><@cc.rem>Harmony Astray</></>\nProvided by the following Operator's skills:\nEbenholz, Virtuosa, Bassline"
+            "description": "Affects skills related to <$cc.bd_B_1><@cc.rem>Lingering Melody</></>, <$cc.bd_B_2><@cc.rem>Harmony Astray</></>, and <$cc.bd_B_3><@cc.rem>Wordless Anthem</></>\nProvided by the following Operators' skills:\nEbenholz, Virtuosa, Bassline"
         },
         "cc.bd_C": {
             "termId": "cc.bd_C",
@@ -378,12 +378,12 @@
         "cc.g.sm": {
             "termId": "cc.g.sm",
             "termName": "Sami",
-            "description": "Includes the following operators\nGitano, Bibeak, Qanipalaat, Typhon, Santalla, Valarqvin"
+            "description": "Includes the following Operators:\nGitano, Bibeak, Qanipalaat, Typhon, Santalla, Valarqvin"
         },
         "cc.g.bs": {
             "termId": "cc.g.bs",
-            "termName": "Blacksteel",
-            "description": "Includes the following operators\nLiskarm, Franka, Jessica, Vanilla, Almond"
+            "termName": "Blacksteel Worldwide",
+            "description": "Includes the following Operators:\nLiskarm, Franka, Jessica, Vanilla, Almond"
         },
         "cc.c.abyssal2_1": {
             "termId": "cc.c.abyssal2_1",
@@ -413,12 +413,12 @@
         "cc.c.room3": {
             "termId": "cc.c.room3",
             "termName": "Workplace",
-            "description": "Includes the following facilities\nPower Station, Craft Station, Trade Station, Human Resource, Reception, Command Center, Training Room"
+            "description": "Includes the following buildings: \nPower Plant, Factory, Trading Post, HR Office, Reception Room, Control Center, Training Room"
         },
         "cc.c.skill": {
             "termId": "cc.c.skill",
-            "termName": "Certain skills",
-            "description": "Includes the following skills\nCompetent, S.W.E.E.P.. Snack Network, Cleanup Agreement, Substitute, Necessary Responsibility, Bodyguard, Tiny Leader, Egocentric, Sunshine Smile (Coldshot), Marigold Poetry Club (Viviana), Way of the Protector(Kestrel)"
+            "termName": "Certain Skills",
+            "description": "Includes the following skills: \nCapable Assistance, S.W.E.E.P., Snack Network, Cleaning Agreement, Substitute, Necessary Responsibility, Guarding, Tiny Leader, Self-Absorbed, Million Dollar Smile, Marigold Poetry Gathering, Way of the Protector(Kestrel)"
         },
         "cc.t.strong2": {
             "termId": "cc.t.strong2",
@@ -482,17 +482,17 @@
         },
         "cc.sk.manu4": {
             "termId": "cc.sk.manu4",
-            "termName": "Metal Crafts-type Skills",
-            "description": "Includes the following skills\nMetal Crafts·α, Metal Crafts·β"
+            "termName": "Metalwork-type Skill",
+            "description": "Includes the following skills:\nMetalwork α, Metalwork β"
         },
         "cc.tag.op": {
             "termId": "cc.tag.op",
             "termName": "Operation Platform",
-            "description": "Includes the following Operators: \nLancet-2, Castle-3, THRM-EX, 'Justice Knight'"
+            "description": "Includes the following Operators:\nLancet-2, Castle-3, THRM-EX, Justice Knight, Friston-3"
         },
         "cc.tag.knight": {
             "termId": "cc.tag.knight",
-            "termName": "Knights",
+            "termName": "Knight",
             "description": "Includes the following operators\nNearl the Radiant Knight, Nearl, Blemishine, Whislash, Flametail, Fartooth, Ashlock, Wild Mane, Justice Knight, Gravel, Viviana"
         },
         "cc.tag.durin": {

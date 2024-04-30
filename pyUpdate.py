@@ -41,17 +41,17 @@ json_tempmod        =   json.loads(open("json/TempModuletalentsTL.json").read())
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-newchars = ["Ascalon","Aroma","Odda","Lutonada"]
+newchars = [] #"Wis’adel","Logos","Civilight Eterna","PhonoR-0","Fang the fire-sharpened"
 
 #[["OpsName#1",num(Mod)],["OpsName#2",num(Mod)], ...]
-newmods = [["Muelsyse",1],["Vigil",1],["Blacknight",1],["Beanstalk",1],["Ascalon",1],["Aroma",1],["Lutonada",1],["Ho'olheyak",2]]
+newmods = []    #["SilverAsh",1],["Thorns",1],["Qiubai",1],["Lappland",1],["Ayerscarpe",1],["Лето",1],["Frostleaf",1],["Arene",1],["Luo Xiaohei",1],["Wis’adel",1],["Logos",1],["Fang the fire-sharpened",1]
 
 #["ItemID#1","ItemID#2", ...]
 newmats = []
 
 #["OpsName#1","OpsName#2", ...]
-recruitCN=[]
-recruitEN=[]
+recruitCN=[] #'Blemishine','Bubble','aosta',"Phonor-0"
+recruitEN=['Eunectes','Flint','Aciddrop']
 
 #########################################################################################################
 # Prep

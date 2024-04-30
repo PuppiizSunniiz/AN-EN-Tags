@@ -146,6 +146,10 @@
           "occPer": "ALWAYS"
         },
         {
+          "stageId": "camp_r_20",
+          "occPer": "ALWAYS"
+        },
+        {
           "stageId": "camp_r_19",
           "occPer": "ALWAYS"
         },
@@ -182,11 +186,11 @@
           "occPer": "ALWAYS"
         },
         {
-          "stageId": "camp_r_10",
+          "stageId": "camp_r_21",
           "occPer": "ALWAYS"
         },
         {
-          "stageId": "camp_r_09",
+          "stageId": "camp_r_10",
           "occPer": "ALWAYS"
         },
         {
@@ -230,11 +234,11 @@
           "occPer": "ALWAYS"
         },
         {
-          "stageId": "camp_r_20",
+          "stageId": "camp_r_09",
           "occPer": "ALWAYS"
         },
         {
-          "stageId": "camp_r_21",
+          "stageId": "camp_r_22",
           "occPer": "ALWAYS"
         }
       ],
@@ -26661,15 +26665,15 @@
     },
     "mcardVoucher": {
       "itemId": "mcardVoucher",
-      "name": "月卡",
-      "description": null,
+      "name": "月卡兑换凭证",
+      "description": "考虑到流通性与便捷性，许多新的认证应运而生，该凭证便是其中的一项。",
       "rarity": "TIER_5",
       "iconId": "mcardVoucher",
       "overrideBkg": null,
       "stackIconId": null,
       "sortId": -10000,
-      "usage": null,
-      "obtainApproach": null,
+      "usage": "使用后可激活月卡的相关权限。",
+      "obtainApproach": "采购中心、活动获得",
       "hideInItemGet": true,
       "classifyType": "NONE",
       "itemType": "MCARD_VOUCHER",
@@ -29104,6 +29108,7 @@
     "furni_annihilation_s19_01": 1,
     "furni_annihilation_s20_01": 1,
     "furni_annihilation_s21_01": 1,
+    "furni_annihilation_s22_01": 1,
     "furni_team001_blackSteel_target_01": 1,
     "furni_team001_followers_ceilingLight_01": 1,
     "furni_team001_ursus_baseballStand_01": 1,
@@ -29402,6 +29407,9 @@
     "char_4042_lumen@ambienceSynesthesia#3": 1,
     "char_4009_irene@ambienceSynesthesia#3": 1,
     "char_484_robrta@ambienceSynesthesia#3": 1,
+    "char_172_svrash@ambienceSynesthesia#4": 1,
+    "char_4027_heyak@ambienceSynesthesia#4": 1,
+    "char_1033_swire2@ambienceSynesthesia#4": 1,
     "char_293_thorns@it#1": 1,
     "char_350_surtr@it#1": 1,
     "char_115_headbr@it#1": 1,
