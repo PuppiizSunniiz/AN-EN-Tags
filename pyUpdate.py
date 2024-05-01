@@ -41,17 +41,17 @@ json_tempmod        =   json.loads(open("json/TempModuletalentsTL.json").read())
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-newchars = [] #"Wis’adel","Logos","Civilight Eterna","PhonoR-0","Fang the fire-sharpened"
+newchars = ["Wiš'adel","Logos","Civilight Eterna","PhonoR-0","Fang the Fire-sharpened"] #
 
 #[["OpsName#1",num(Mod)],["OpsName#2",num(Mod)], ...]
-newmods = []    #["SilverAsh",1],["Thorns",1],["Qiubai",1],["Lappland",1],["Ayerscarpe",1],["Лето",1],["Frostleaf",1],["Arene",1],["Luo Xiaohei",1],["Wis’adel",1],["Logos",1],["Fang the fire-sharpened",1]
+newmods = [["SilverAsh",1],["Thorns",1],["Qiubai",1],["Lappland",1],["Ayerscarpe",1],["Leto",1],["Frostleaf",1],["Arene",1],["Luo Xiaohei",1],["Wiš'adel",1],["Logos",1],["Fang the Fire-sharpened",1]]    #
 
 #["ItemID#1","ItemID#2", ...]
 newmats = []
 
 #["OpsName#1","OpsName#2", ...]
-recruitCN=[] #'Blemishine','Bubble','aosta',"Phonor-0"
-recruitEN=['Eunectes','Flint','Aciddrop']
+recruitCN=['Blemishine','Bubble','aosta',"Phonor-0"] #
+recruitEN=[]
 
 #########################################################################################################
 # Prep
