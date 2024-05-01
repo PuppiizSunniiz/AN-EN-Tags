@@ -8,6 +8,7 @@
             "char_4077_palico": "Terra Research Commission",
             "char_4091_ulika": "U-Official",
             "char_4093_frston": "Friston-3",
+            "char_4136_phonor": "PhonoR-0",
             "char_502_nblade": "Yato",
             "char_500_noirc": "Noir Corne",
             "char_503_rang": "Rangers",
@@ -98,6 +99,7 @@
             "char_4023_rfalcn": "Kestrel",
             "char_261_sddrag": "Reed",
             "char_496_wildmn": "Wild Mane",
+            "char_1036_fang2": "Fang the Fire-sharpened",
             "char_401_elysm": "Elysium",
             "char_4119_wanqin": "Wanqing",
             "char_476_blkngt": "Blacknight",
@@ -248,6 +250,7 @@
             "char_197_poca": "Rosa",
             "char_2012_typhon": "Typhon",
             "char_391_rosmon": "Rosmontis",
+            "char_1035_wisdel": "Wiš'adel",
             "char_1013_chen2": "Ch'en the Holungday",
             "char_4117_ray": "Ray",
             "char_112_siege": "Siege",
@@ -263,6 +266,7 @@
             "char_180_amgoat": "Eyjafjalla",
             "char_2013_cerber": "Ceobe",
             "char_4027_heyak": "Ho'olheyak",
+            "char_4133_logos": "Logos",
             "char_2015_dusk": "Dusk",
             "char_472_pasngr": "Passenger",
             "char_426_billro": "Carnelian",
@@ -274,6 +278,7 @@
             "char_358_lisa": "Suzuran",
             "char_248_mgllan": "Magallan",
             "char_1012_skadi2": "Skadi the Corrupting Heart",
+            "char_4134_cetsyr": "Civilight Eterna",
             "char_1031_slent2": "Silence the Paradigmatic",
             "char_2023_ling": "Ling",
             "char_4072_ironmn": "Stainless",
@@ -335,7 +340,8 @@
             "char_164_nightm": "Nightmare",
             "char_220_grani": "Grani",
             "char_263_skadi": "Skadi",
-            "char_1001_amiya2": "Amiya (amiya2)"
+            "char_1001_amiya2": "Amiya (amiya2)",
+            "char_1037_amiya3": "Amiya (amiya3)"
         },
         "Name2Code": {
             "Lancet-2": "char_285_medic2",
@@ -345,6 +351,7 @@
             "Terra Research Commission": "char_4077_palico",
             "U-Official": "char_4091_ulika",
             "Friston-3": "char_4093_frston",
+            "PhonoR-0": "char_4136_phonor",
             "Yato": "char_502_nblade",
             "Noir Corne": "char_500_noirc",
             "Rangers": "char_503_rang",
@@ -435,6 +442,7 @@
             "Kestrel": "char_4023_rfalcn",
             "Reed": "char_261_sddrag",
             "Wild Mane": "char_496_wildmn",
+            "Fang the Fire-sharpened": "char_1036_fang2",
             "Elysium": "char_401_elysm",
             "Wanqing": "char_4119_wanqin",
             "Blacknight": "char_476_blkngt",
@@ -584,6 +592,7 @@
             "Rosa": "char_197_poca",
             "Typhon": "char_2012_typhon",
             "Rosmontis": "char_391_rosmon",
+            "Wiš'adel": "char_1035_wisdel",
             "Ch'en the Holungday": "char_1013_chen2",
             "Ray": "char_4117_ray",
             "Siege": "char_112_siege",
@@ -599,6 +608,7 @@
             "Eyjafjalla": "char_180_amgoat",
             "Ceobe": "char_2013_cerber",
             "Ho'olheyak": "char_4027_heyak",
+            "Logos": "char_4133_logos",
             "Dusk": "char_2015_dusk",
             "Passenger": "char_472_pasngr",
             "Carnelian": "char_426_billro",
@@ -610,6 +620,7 @@
             "Suzuran": "char_358_lisa",
             "Magallan": "char_248_mgllan",
             "Skadi the Corrupting Heart": "char_1012_skadi2",
+            "Civilight Eterna": "char_4134_cetsyr",
             "Silence the Paradigmatic": "char_1031_slent2",
             "Ling": "char_2023_ling",
             "Stainless": "char_4072_ironmn",
@@ -671,7 +682,8 @@
             "Nightmare": "char_164_nightm",
             "Grani": "char_220_grani",
             "Skadi": "char_263_skadi",
-            "Amiya (amiya2)": "char_1001_amiya2"
+            "Amiya (amiya2)": "char_1001_amiya2",
+            "Amiya (amiya3)": "char_1037_amiya3"
         }
     },
     "Range": {
@@ -1098,6 +1110,11 @@
             "支援机械",
             "防护"
         ],
+        "PhonoR-0": [
+            "远程位",
+            "支援机械",
+            "元素"
+        ],
         "Yato": [
             "新手",
             "近战位",
@@ -1517,6 +1534,12 @@
             "输出"
         ],
         "Wild Mane": [
+            "资深干员",
+            "近战位",
+            "费用回复",
+            "输出"
+        ],
+        "Fang the Fire-sharpened": [
             "资深干员",
             "近战位",
             "费用回复",
@@ -2362,6 +2385,11 @@
             "远程位",
             "输出"
         ],
+        "Wiš'adel": [
+            "高级资深干员",
+            "远程位",
+            "输出"
+        ],
         "Ch'en the Holungday": [
             "高级资深干员",
             "远程位",
@@ -2452,6 +2480,11 @@
             "输出",
             "控场"
         ],
+        "Logos": [
+            "高级资深干员",
+            "远程位",
+            "输出"
+        ],
         "Dusk": [
             "高级资深干员",
             "远程位",
@@ -2513,6 +2546,13 @@
             "输出"
         ],
         "Skadi the Corrupting Heart": [
+            "高级资深干员",
+            "远程位",
+            "支援",
+            "生存",
+            "输出"
+        ],
+        "Civilight Eterna": [
             "高级资深干员",
             "远程位",
             "支援",
@@ -2893,6 +2933,12 @@
             "近战位",
             "输出",
             "支援"
+        ],
+        "Amiya (amiya3)": [
+            "资深干员",
+            "远程位",
+            "治疗",
+            "输出"
         ]
     }
 }

@@ -6840,5 +6840,160 @@
                 "desc": "When an enemy blocked by self is killed, restores 18%<@ba.talpu>(+2%)</> of Max HP"
             }
         ]
+    ],
+	"char_1035_wisdel": [
+        [
+            {
+                "name": "好礼",
+                "descCN": "攻击时为主目标附着残影，残影受到维什戴尔的余震影响时有15%概率爆炸，对周围所有敌人造成120%攻击力的物理伤害并使其<$ba.stun>晕眩</>0.5秒",
+                "desc": "When attacking attach an Afterimage to target. When the Afterimage is hit by Wis'adel's aftershocks, 15% chance to explode and deal 120% ATK as Physical damage to all nearby enemies and <$ba.stun>stun</> for 0.5 seconds"
+            },
+            {
+                "name": "好礼",
+                "descCN": "攻击时为主目标附着残影，残影受到维什戴尔的余震影响时有15%概率爆炸，对周围所有敌人造成130%<@ba.talpu>（+10%）</>攻击力的物理伤害并使其<$ba.stun>晕眩</>0.5秒",
+                "desc": "When attacking and attach an Afterimage to target. When the Afterimage is hit by Wis'adel's aftershocks, 15% chance to explode and deal 130%<@ba.talpu>(+10%)</> ATK as Physical damage to all nearby enemies and <$ba.stun>stun</> for 0.5 seconds"
+            },
+            {
+                "name": "好礼",
+                "descCN": "攻击时对主目标的攻击力提升至115%并为其附着残影，残影受到维什戴尔的余震影响时有15%概率爆炸，对周围所有敌人造成150%攻击力的物理伤害并使其<$ba.stun>晕眩</>1秒",
+                "desc": "When attacking, deal 115% ATK as Physical damage and attach an Afterimage to target. When the Afterimage is hit by Wis'adel's aftershocks, 15% chance to explode and deal 150% ATK as Physical damage to all nearby enemies and <$ba.stun>stun</> for 1 seconds"
+            },
+            {
+                "name": "好礼",
+                "descCN": "攻击时对主目标的攻击力提升至115%并为其附着残影，残影受到维什戴尔的余震影响时有15%概率爆炸，对周围所有敌人造成160%<@ba.talpu>（+10%）</>攻击力的物理伤害并使其<$ba.stun>晕眩</>1秒",
+                "desc": "When attacking, deal 115% ATK as Physical damage and attach an Afterimage to target. When the Afterimage is hit by Wis'adel's aftershocks, 15% chance to explode and deal 160%<@ba.talpu>(+10%)</> ATK as Physical damage to all nearby enemies and <$ba.stun>stun</> for 1 seconds"
+            }
+        ],
+        [
+            {
+                "name": "死魂灵的余息",
+                "descCN": "部署后立刻在攻击范围内召唤一个魂灵之影，在魂灵之影周围时获得<$ba.camou>迷彩</>",
+                "desc": "On deployment, summon a Shadow of Revenant within Attack Range. When near a Shadow of Revenant, gain <$ba.camou>Camouflage</>"
+            }
+        ]
+    ],
+    "char_4133_logos": [
+        [
+            {
+                "name": "语汇演化",
+                "descCN": "对一个目标发起攻击时，有40%几率额外对攻击范围内一个随机目标造成相当于攻击力40%的法术伤害",
+                "desc": "When attacking, 40% chance to attack another random target within Attack Range, dealing 40% ATK as Arts damage"
+            },
+            {
+                "name": "语汇演化",
+                "descCN": "对一个目标发起攻击时，有40%几率额外对攻击范围内一个随机目标造成相当于攻击力45%<@ba.talpu>（+5%）</>的法术伤害",
+                "desc": "When attacking, 40% chance to attack another random target within Attack Range, dealing 45%<@ba.talpu>(+5%)</> ATK as Arts damage"
+            },
+            {
+                "name": "语汇演化",
+                "descCN": "对一个目标发起攻击时，有40%几率额外对攻击范围内一个随机目标造成相当于攻击力60%的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
+                "desc": "When attacking, 40% chance to attack another random target within Attack Range, dealing 60% ATK as Arts damage and <$ba.sluggish>Slows</> them for 0.8 seconds"
+            },
+            {
+                "name": "语汇演化",
+                "descCN": "对一个目标发起攻击时，有40%几率额外对攻击范围内一个随机目标造成相当于攻击力65%<@ba.talpu>（+5%）</>的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
+                "desc": "When attacking, 40% chance to attack another random target within Attack Range, dealing 65%<@ba.talpu>(+5%)</> ATK as Arts damage and <$ba.sluggish>Slows</> them for 0.8 seconds"
+            }
+        ],
+        [
+            {
+                "name": "剜魂具辞",
+                "descCN": "攻击使目标在5秒内法术抗性-10且受到的法术伤害提高150点",
+                "desc": "Attacks inflict -10 RES to target for 5 seconds and recieved addition 150 Arts damage"
+            },
+            {
+                "name": "剜魂具辞",
+                "descCN": "攻击使目标在5秒内法术抗性-10且受到的法术伤害提高165<@ba.talpu>（+15）</>点",
+                "desc": "Attacks inflict -10 RES to target for 5 seconds and recieved addition 165<@ba.talpu>(+15)</> Arts damage"
+            }
+        ]
+    ],
+    "char_4134_cetsyr": [
+        [
+            {
+                "name": "过往尘埃",
+                "descCN": "魔王周围持续围绕3枚“微尘”，“微尘”碰撞友方干员时，消失并使该干员受到魔王特性效果提升至1.2倍，持续6秒，消失的“微尘”在6秒后重生",
+                "desc": "3 \"Fine Dust\" continually revolve around Civilight Eterna. When the \"Fine Dust\" hits an ally, it disappears and increases the Trait effect that ally to 1.2 times for 6 seconds. Disappeared \"Fine Dust\" will reappear in 6 seconds"
+            },
+            {
+                "name": "过往尘埃",
+                "descCN": "魔王周围持续围绕3枚“微尘”，“微尘”碰撞友方干员时，消失并使该干员受到魔王特性效果提升至1.5倍，持续6秒，消失的“微尘”在6秒后重生",
+                "desc": "3 \"Fine Dust\" continually revolve around Civilight Eterna. When the \"Fine Dust\" hits an ally, it disappears and increases the Trait effect that ally to 1.5 times for 6 seconds. Disappeared \"Fine Dust\" will reappear in 6 seconds"
+            }
+        ],
+        [
+            {
+                "name": "魔王残响",
+                "descCN": "上阵时，所有友方单位受到【萨卡兹】敌人的伤害降低10%",
+                "desc": "When deployed, reduce damage taken by all allies from [Sarkaz] enemies by 10%"
+            },
+            {
+                "name": "魔王残响",
+                "descCN": "上阵时，所有友方单位受到【萨卡兹】敌人的伤害降低15%<@ba.talpu>（+5%）</>",
+                "desc": "When deployed, reduce damage taken by all allies from [Sarkaz] enemies by 15%<@ba.talpu>(+5%)</>"
+            }
+        ]
+    ],
+    "char_4136_phonor": [
+        [
+            {
+                "name": "悠远河谷的齐唱·I",
+                "descCN": "部署后40秒内攻击附带45点凋亡损伤，并使攻击范围内的所有敌人受到3%的<$ba.magicfragile>【法术脆弱】</>和<$ba.elementfragile>【元素脆弱】</>",
+                "desc": "For 40 seconds after deployment, PhonoR-0's attacks deals 45 <$ba.dt.apoptosis2>Necrosis damage</>. Additionally, PhonoR-0 inflicts 3% <$ba.magicfragile>[Arts Fragility]</> and <$ba.elementfragile>[Elemental Fragility]</> to all enemies within Attack Range"
+            },
+            {
+                "name": "悠远河谷的齐唱·II",
+                "descCN": "部署后40秒内攻击附带45点凋亡损伤，并使攻击范围内的所有敌人受到5%的<$ba.magicfragile>【法术脆弱】</>和<$ba.elementfragile>【元素脆弱】</>",
+                "desc": "For 40 seconds after deployment, PhonoR-0's attacks deals 45 <$ba.dt.apoptosis2>Necrosis damage</>. Additionally, PhonoR-0 inflicts 5% <$ba.magicfragile>[Arts Fragility]</> and <$ba.elementfragile>[Elemental Fragility]</> to all enemies within Attack Range"
+            },
+            {
+                "name": "悠远河谷的齐唱·III",
+                "descCN": "部署后40秒内攻击附带50点凋亡损伤，并使攻击范围内的所有敌人受到5%的<$ba.magicfragile>【法术脆弱】</>和<$ba.elementfragile>【元素脆弱】</>",
+                "desc": "For 40 seconds after deployment, PhonoR-0's attacks deals 50 <$ba.dt.apoptosis2>Necrosis damage</>. Additionally, PhonoR-0 inflicts 5% <$ba.magicfragile>[Arts Fragility]</> and <$ba.elementfragile>[Elemental Fragility]</> to all enemies within Attack Range"
+            },
+            {
+                "name": "悠远河谷的齐唱·IV",
+                "descCN": "部署后40秒内攻击附带55点凋亡损伤，并使攻击范围内的所有敌人受到8%的<$ba.magicfragile>【法术脆弱】</>和<$ba.elementfragile>【元素脆弱】</>",
+                "desc": "For 40 seconds after deployment, PhonoR-0's attacks deals 55 <$ba.dt.apoptosis2>Necrosis damage</>. Additionally, PhonoR-0 inflicts 8% <$ba.magicfragile>[Arts Fragility]</> and <$ba.elementfragile>[Elemental Fragility]</> to all enemies within Attack Range"
+            },
+            {
+                "name": "悠远河谷的齐唱·V",
+                "descCN": "部署后40秒内攻击附带60点凋亡损伤，并使攻击范围内的所有敌人受到8%的<$ba.magicfragile>【法术脆弱】</>和<$ba.elementfragile>【元素脆弱】</>",
+                "desc": "For 40 seconds after deployment, PhonoR-0's attacks deals 60 <$ba.dt.apoptosis2>Necrosis damage</>. Additionally, PhonoR-0 inflicts 8% <$ba.magicfragile>[Arts Fragility]</> and <$ba.elementfragile>[Elemental Fragility]</> to all enemies within Attack Range"
+            },
+            {
+                "name": "悠远河谷的齐唱·VI",
+                "descCN": "部署后40秒内攻击附带60点凋亡损伤，并使攻击范围内的所有敌人受到10%的<$ba.magicfragile>【法术脆弱】</>和<$ba.elementfragile>【元素脆弱】</>",
+                "desc": "For 40 seconds after deployment, PhonoR-0's attacks deals 60 <$ba.dt.apoptosis2>Necrosis damage</>. Additionally, PhonoR-0 inflicts 10% <$ba.magicfragile>[Arts Fragility]</> and <$ba.elementfragile>[Elemental Fragility]</> to all enemies within Attack Range"
+            }
+        ]
+    ],
+    "char_1036_fang2": [
+        [
+            {
+                "name": "轻装上阵",
+                "descCN": "自身初次部署费用-2；撤退后使下一名干员部署费用-1",
+                "desc": "During the first deployment, DP Cost -2. After retreat, the next Operator DP Cost -1"
+            },
+            {
+                "name": "轻装上阵",
+                "descCN": "自身初次部署费用-3；撤退后使下一名干员部署费用-1",
+                "desc": "During the first deployment, DP Cost -3. After retreat, the next Operator DP Cost -1"
+            }
+        ]
+    ],
+    "char_1037_amiya3":[
+        [
+            {
+                "name": "诚挚期许",
+                "descCN": "在场时所有友方单位最大生命+5%，技能期间所有友方单位每秒恢复1.5%最大生命",
+                "desc": "When deployed, increase all allies' Max HP by 5%. When skill is active, all allies recover 1.5% Max HP every second"
+            },
+            {
+                "name": "诚挚期许",
+                "descCN": "在场时所有友方单位最大生命+8%，技能期间所有友方单位每秒恢复2.5%最大生命",
+                "desc": "When deployed, increase all allies' Max HP by 8%. When skill is active, all allies recover 2.5% Max HP every second"
+            }
+        ]
     ]
 }

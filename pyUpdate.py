@@ -53,6 +53,8 @@ newmats = []
 recruitCN=['Blemishine','Bubble','aosta',"Phonor-0"] #
 recruitEN=[]
 
+Rechecked=False # True False
+
 #########################################################################################################
 # Prep
 #########################################################################################################
@@ -136,6 +138,29 @@ for newchar in newchars:
                                     }
         except:
             skipchar.append(newchar)
+
+    if Rechecked and newchar in charlist:
+        newcode=CharReady["Name2Code"][newchar]
+        ## Talent
+        for eachtalent in json_char[newcode]["talents"]:
+            eachchartalent=[]
+            for talent in eachtalent['candidates']:
+                eachchartalent.append({
+                                    "name": talent["name"],
+                                    "descCN": talent['description'],
+                                    "desc": ""
+                                })
+            chartalent.append(eachchartalent)
+        talenttl[newcode]=chartalent
+        
+        ## Skill
+        for skill in json_char[newcode]["skills"]:
+            skillid = skill["skillId"]
+            if skillid not in json_skillTL.keys():
+                skilltl[skillid]={
+                                    "name" : json_skill[skillid]["levels"][0]["name"],
+                                    "desc": [json_skill[skillid]["levels"][x]["description"] for x in range(len(json_skill[skillid]["levels"]))]
+                                }
 
 if skipchar:
     print('\nNEW CHAR skip list =', skipchar)
