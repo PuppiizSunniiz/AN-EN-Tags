@@ -1,140 +1,199 @@
 {
-    "skchr_ABCDEF_1": { #Ascalon 1
+    "skchr_ABCDEF_1": {     #Wis’adel  // {duration} {Damage}
         "name": "",
         "desc": [
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage and hit twice\n<@ba.rem>Can store {cnt} charge(s)</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage and hit twice\n<@ba.rem>Can store {cnt} charge(s)</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage and hit twice\n<@ba.rem>Can store {cnt} charge(s)</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage and hit twice\n<@ba.rem>Can store {cnt} charge(s)</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage and hit twice\n<@ba.rem>Can store {cnt} charge(s)</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage and hit twice\n<@ba.rem>Can store {cnt} charge(s)</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage and hit twice\n<@ba.rem>Can store {cnt} charge(s)</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage and hit twice\n<@ba.rem>Can store {cnt} charge(s)</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage and hit twice\n<@ba.rem>Can store {cnt} charge(s)</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage and hit twice\n<@ba.rem>Can store {cnt} charge(s)</>"
+            "The next attack deals an additional hit and <$ba.stun>stuns</> for {duration} seconds. Additionally, increase splash area and aftershock damage",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ] 
     },
-    "skchr_ABCDEF_2": { # Ascalon 2
+    "skchr_ABCDEF_2": { #Wis’adel  // {ATK%} {Damage}
         "name": "",
         "desc": [
-            "ATK <@ba.vup>+{atk:0%}</>, inflicting <@ba.vup>-{move_speed:0%}</> Movement Speed to enemies in Attack Range. Applies 1 stack of the effect of the first talent to nearby enemies if they defeated",
-            "ATK <@ba.vup>+{atk:0%}</>, inflicting <@ba.vup>-{move_speed:0%}</> Movement Speed to enemies in Attack Range. Applies 1 stack of the effect of the first talent to nearby enemies if they defeated",
-            "ATK <@ba.vup>+{atk:0%}</>, inflicting <@ba.vup>-{move_speed:0%}</> Movement Speed to enemies in Attack Range. Applies 1 stack of the effect of the first talent to nearby enemies if they defeated",
-            "ATK <@ba.vup>+{atk:0%}</>, inflicting <@ba.vup>-{move_speed:0%}</> Movement Speed to enemies in Attack Range. Applies 1 stack of the effect of the first talent to nearby enemies if they defeated",
-            "ATK <@ba.vup>+{atk:0%}</>, inflicting <@ba.vup>-{move_speed:0%}</> Movement Speed to enemies in Attack Range. Applies 1 stack of the effect of the first talent to nearby enemies if they defeated",
-            "ATK <@ba.vup>+{atk:0%}</>, inflicting <@ba.vup>-{move_speed:0%}</> Movement Speed to enemies in Attack Range. Applies 1 stack of the effect of the first talent to nearby enemies if they defeated",
-            "ATK <@ba.vup>+{atk:0%}</>, inflicting <@ba.vup>-{move_speed:0%}</> Movement Speed to enemies in Attack Range. Applies 1 stack of the effect of the first talent to nearby enemies if they defeated",
-            "ATK <@ba.vup>+{atk:0%}</>, inflicting <@ba.vup>-{move_speed:0%}</> Movement Speed to enemies in Attack Range. Applies 1 stack of the effect of the first talent to nearby enemies if they defeated",
-            "ATK <@ba.vup>+{atk:0%}</>, inflicting <@ba.vup>-{move_speed:0%}</> Movement Speed to enemies in Attack Range. Applies 1 stack of the effect of the first talent to nearby enemies if they defeated",
-            "ATK <@ba.vup>+{atk:0%}</>, inflicting <@ba.vup>-{move_speed:0%}</> Movement Speed to enemies in Attack Range. Applies 1 stack of the effect of the first talent to nearby enemies if they defeated"
+            "Attack Interval<@ba.talpu>Reduced</> ATK+ {ATK%}, attack {multiple} enemies simultaneously\n<$ba.charged>Charged</> effect: Attack changes to multiple continuous attacks,each attack deal {ATK%} damage as Physical damage and attack random enemies in Attack Range</br><@ba.rem>(Can manually deactivate skill)</>",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ] 
     },
-    "skchr_ABCDEF_X": { #Ascalon 3 // attack interval <@ba.vup>slightly reduced</> - attack interval <@ba.vup>reduced</> - attack interval <@ba.vup>greatly reduced</>
+    "skchr_ABCDEF_3": { #Wis’adel  //{ATK%} {damage%} {bullet}",
         "name": "",
         "desc": [
-            "Attack Range <@ba.vup>expands</>, ATK <@ba.vup>+{atk:0%}</>, attack interval <@ba.vup>reduced</>.Reduce accuracy of ground enemies in Attack Range by <@ba.vup>{attack@damage_hitrate_physical:0%}</>. Increase taunt level and restores {attack@hp_ratio:0%} of Max HP after enemies attack miss or Ascalon Dodge",
-            "Attack Range <@ba.vup>expands</>, ATK <@ba.vup>+{atk:0%}</>, attack interval <@ba.vup>reduced</>.Reduce accuracy of ground enemies in Attack Range by <@ba.vup>{attack@damage_hitrate_physical:0%}</>. Increase taunt level and restores {attack@hp_ratio:0%} of Max HP after enemies attack miss or Ascalon Dodge",
-            "Attack Range <@ba.vup>expands</>, ATK <@ba.vup>+{atk:0%}</>, attack interval <@ba.vup>reduced</>.Reduce accuracy of ground enemies in Attack Range by <@ba.vup>{attack@damage_hitrate_physical:0%}</>. Increase taunt level and restores {attack@hp_ratio:0%} of Max HP after enemies attack miss or Ascalon Dodge",
-            "Attack Range <@ba.vup>expands</>, ATK <@ba.vup>+{atk:0%}</>, attack interval <@ba.vup>reduced</>.Reduce accuracy of ground enemies in Attack Range by <@ba.vup>{attack@damage_hitrate_physical:0%}</>. Increase taunt level and restores {attack@hp_ratio:0%} of Max HP after enemies attack miss or Ascalon Dodge",
-            "Attack Range <@ba.vup>expands</>, ATK <@ba.vup>+{atk:0%}</>, attack interval <@ba.vup>reduced</>.Reduce accuracy of ground enemies in Attack Range by <@ba.vup>{attack@damage_hitrate_physical:0%}</>. Increase taunt level and restores {attack@hp_ratio:0%} of Max HP after enemies attack miss or Ascalon Dodge",
-            "Attack Range <@ba.vup>expands</>, ATK <@ba.vup>+{atk:0%}</>, attack interval <@ba.vup>reduced</>.Reduce accuracy of ground enemies in Attack Range by <@ba.vup>{attack@damage_hitrate_physical:0%}</>. Increase taunt level and restores {attack@hp_ratio:0%} of Max HP after enemies attack miss or Ascalon Dodge",
-            "Attack Range <@ba.vup>expands</>, ATK <@ba.vup>+{atk:0%}</>, attack interval <@ba.vup>reduced</>.Reduce accuracy of ground enemies in Attack Range by <@ba.vup>{attack@damage_hitrate_physical:0%}</>. Increase taunt level and restores {attack@hp_ratio:0%} of Max HP after enemies attack miss or Ascalon Dodge",
-            "Attack Range <@ba.vup>expands</>, ATK <@ba.vup>+{atk:0%}</>, attack interval <@ba.vup>reduced</>.Reduce accuracy of ground enemies in Attack Range by <@ba.vup>{attack@damage_hitrate_physical:0%}</>. Increase taunt level and restores {attack@hp_ratio:0%} of Max HP after enemies attack miss or Ascalon Dodge",
-            "Attack Range <@ba.vup>expands</>, ATK <@ba.vup>+{atk:0%}</>, attack interval <@ba.vup>reduced</>.Reduce accuracy of ground enemies in Attack Range by <@ba.vup>{attack@damage_hitrate_physical:0%}</>. Increase taunt level and restores {attack@hp_ratio:0%} of Max HP after enemies attack miss or Ascalon Dodge",
-            "Attack Range <@ba.vup>expands</>, ATK <@ba.vup>+{atk:0%}</>, attack interval <@ba.vup>reduced</>.Reduce accuracy of ground enemies in Attack Range by <@ba.vup>{attack@damage_hitrate_physical:0%}</>. Increase taunt level and restores {attack@hp_ratio:0%} of Max HP after enemies attack miss or Ascalon Dodge"
+            "Immediately summons 2 Spirit's Shadows within Attack Range (can use Art attacks, up to 3 can exist at the same time, remains after the skill ends). ATK+{ATK%}, Attack Interval <@ba.vup>massively increase</>. Attack deal {damage%} as Physical damage. Greatly increase splash area and increase Talent 1 activation rate to <@ba.vup>100%</> \n<@ba.rem>Skill activation grants {bullet} bullets and the skill ends when all bullets are used (Can manually deactivate skill)</>",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ] 
     },
-    "skchr_ABCDEF_1": { # Aroma 1
+    "skchr_ABCDEF_1": { #Logos //{ATK} {ATK%}
         "name": "",
         "desc": [
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Art damage; When attacking aerial targets deals <@ba.vup>{atk_scale_to_fly:0%}</> of ATK as Art damage instead\n<@ba.rem>Can store 2 charge(s)</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Art damage; When attacking aerial targets deals <@ba.vup>{atk_scale_to_fly:0%}</> of ATK as Art damage instead\n<@ba.rem>Can store 2 charge(s)</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Art damage; When attacking aerial targets deals <@ba.vup>{atk_scale_to_fly:0%}</> of ATK as Art damage instead\n<@ba.rem>Can store 2 charge(s)</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Art damage; When attacking aerial targets deals <@ba.vup>{atk_scale_to_fly:0%}</> of ATK as Art damage instead\n<@ba.rem>Can store 2 charge(s)</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Art damage; When attacking aerial targets deals <@ba.vup>{atk_scale_to_fly:0%}</> of ATK as Art damage instead\n<@ba.rem>Can store 2 charge(s)</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Art damage; When attacking aerial targets deals <@ba.vup>{atk_scale_to_fly:0%}</> of ATK as Art damage instead\n<@ba.rem>Can store 2 charge(s)</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Art damage; When attacking aerial targets deals <@ba.vup>{atk_scale_to_fly:0%}</> of ATK as Art damage instead\n<@ba.rem>Can store 2 charge(s)</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Art damage; When attacking aerial targets deals <@ba.vup>{atk_scale_to_fly:0%}</> of ATK as Art damage instead\n<@ba.rem>Can store 2 charge(s)</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Art damage; When attacking aerial targets deals <@ba.vup>{atk_scale_to_fly:0%}</> of ATK as Art damage instead\n<@ba.rem>Can store 2 charge(s)</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Art damage; When attacking aerial targets deals <@ba.vup>{atk_scale_to_fly:0%}</> of ATK as Art damage instead\n<@ba.rem>Can store 2 charge(s)</>"
+            "Attack Range <@ba.vup>expands</>, ATK+ {ATK}. Enemies within Attack Range with HP lower than {ATK%} of Logos' ATK immediately defeat, and deals Arts damage equal to the defeated enemy's HP to a random target within Attack Range\n<@ba.rem>Unlimited duration</>",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ] 
     },
-    "skchr_ABCDEF_2": { # Aroma 2
+    "skchr_ABCDEF_2": { #Logos // {damage}  {mspd}  {rampup} 
         "name": "",
         "desc": [
-            "ATK <@ba.vup>+{atk:0%}</>, when enemies with <$ba.levitate>Levitate</> effect end in Attack Range, deals <@ba.vup>{attack@atk_scale_when_fly_finish:0%}</> of ATK as Art damage",
-            "ATK <@ba.vup>+{atk:0%}</>, when enemies with <$ba.levitate>Levitate</> effect end in Attack Range, deals <@ba.vup>{attack@atk_scale_when_fly_finish:0%}</> of ATK as Art damage",
-            "ATK <@ba.vup>+{atk:0%}</>, when enemies with <$ba.levitate>Levitate</> effect end in Attack Range, deals <@ba.vup>{attack@atk_scale_when_fly_finish:0%}</> of ATK as Art damage",
-            "ATK <@ba.vup>+{atk:0%}</>, when enemies with <$ba.levitate>Levitate</> effect end in Attack Range, deals <@ba.vup>{attack@atk_scale_when_fly_finish:0%}</> of ATK as Art damage",
-            "ATK <@ba.vup>+{atk:0%}</>, when enemies with <$ba.levitate>Levitate</> effect end in Attack Range, deals <@ba.vup>{attack@atk_scale_when_fly_finish:0%}</> of ATK as Art damage",
-            "ATK <@ba.vup>+{atk:0%}</>, when enemies with <$ba.levitate>Levitate</> effect end in Attack Range, deals <@ba.vup>{attack@atk_scale_when_fly_finish:0%}</> of ATK as Art damage",
-            "ATK <@ba.vup>+{atk:0%}</>, when enemies with <$ba.levitate>Levitate</> effect end in Attack Range, deals <@ba.vup>{attack@atk_scale_when_fly_finish:0%}</> of ATK as Art damage",
-            "ATK <@ba.vup>+{atk:0%}</>, when enemies with <$ba.levitate>Levitate</> effect end in Attack Range, deals <@ba.vup>{attack@atk_scale_when_fly_finish:0%}</> of ATK as Art damage",
-            "ATK <@ba.vup>+{atk:0%}</>, when enemies with <$ba.levitate>Levitate</> effect end in Attack Range, deals <@ba.vup>{attack@atk_scale_when_fly_finish:0%}</> of ATK as Art damage",
-            "ATK <@ba.vup>+{atk:0%}</>, when enemies with <$ba.levitate>Levitate</> effect end in Attack Range, deals <@ba.vup>{attack@atk_scale_when_fly_finish:0%}</> of ATK as Art damage"
+            "RES+{RES}. Attack change to lock-on target and continue dealing Art damage to them. Attacks against the same target gradually increase in damage up to {damage} and gradually reduce their Movement Speed up to {mspd} (reaches the limit in {rampup} seconds after lock-on). When interrupted or the target is defeated, lock-on to a new target and reset the effects",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ] 
     },
-    "skchr_ABCDEF_1": { # Odda 1
+    "skchr_ABCDEF_3": { #Logos 
         "name": "",
         "desc": [
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage and splash area <@ba.vup>expands</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage and splash area <@ba.vup>expands</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage and splash area <@ba.vup>expands</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage and splash area <@ba.vup>expands</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage and splash area <@ba.vup>expands</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage and splash area <@ba.vup>expands</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage and splash area <@ba.vup>expands</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage and splash area <@ba.vup>expands</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage and splash area <@ba.vup>expands</>",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage and splash area <@ba.vup>expands</>"
+            "Attack Range <@ba.vup>expands</>, ATK+ {ATK}, attacks {cnt} enemies simultaneously. Enemy projectiles within Attack Range have massively reduced speed and disappear when the skill ends",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ] 
     },
-    "skchr_ABCDEF_2": { # Odda 2
+    "skchr_ABCDEF_1": { # Civilight Eterna //{second}
         "name": "",
         "desc": [
-            "ATK <@ba.vup>+{atk:0%}</> DEF <@ba.vup>+{def:0%}</>, enemies with weight less than 3 that hit by splash attack <$ba.levitate>Levitate</> for {attack@levitate_duration} seconds",
-            "ATK <@ba.vup>+{atk:0%}</> DEF <@ba.vup>+{def:0%}</>, enemies with weight less than 3 that hit by splash attack <$ba.levitate>Levitate</> for {attack@levitate_duration} seconds",
-            "ATK <@ba.vup>+{atk:0%}</> DEF <@ba.vup>+{def:0%}</>, enemies with weight less than 3 that hit by splash attack <$ba.levitate>Levitate</> for {attack@levitate_duration} seconds",
-            "ATK <@ba.vup>+{atk:0%}</> DEF <@ba.vup>+{def:0%}</>, enemies with weight less than 3 that hit by splash attack <$ba.levitate>Levitate</> for {attack@levitate_duration} seconds",
-            "ATK <@ba.vup>+{atk:0%}</> DEF <@ba.vup>+{def:0%}</>, enemies with weight less than 3 that hit by splash attack <$ba.levitate>Levitate</> for {attack@levitate_duration} seconds",
-            "ATK <@ba.vup>+{atk:0%}</> DEF <@ba.vup>+{def:0%}</>, enemies with weight less than 3 that hit by splash attack <$ba.levitate>Levitate</> for {attack@levitate_duration} seconds",
-            "ATK <@ba.vup>+{atk:0%}</> DEF <@ba.vup>+{def:0%}</>, enemies with weight less than 3 that hit by splash attack <$ba.levitate>Levitate</> for {attack@levitate_duration} seconds",
-            "ATK <@ba.vup>+{atk:0%}</> DEF <@ba.vup>+{def:0%}</>, enemies with weight less than 3 that hit by splash attack <$ba.levitate>Levitate</> for {attack@levitate_duration} seconds",
-            "ATK <@ba.vup>+{atk:0%}</> DEF <@ba.vup>+{def:0%}</>, enemies with weight less than 3 that hit by splash attack <$ba.levitate>Levitate</> for {attack@levitate_duration} seconds",
-            "ATK <@ba.vup>+{atk:0%}</> DEF <@ba.vup>+{def:0%}</>, enemies with weight less than 3 that hit by splash attack <$ba.levitate>Levitate</> for {attack@levitate_duration} seconds"
+            "Trait effect increased by <@ba.vup>{trait_up}</> and reduce \"Fine Dust\"'s respawn time reduced\n<@ba.rem>Unlimited duration</>",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ] 
     },
-    "skchr_ABCDEF_1": { # Lutonada 1
+    "skchr_ABCDEF_2": { # Civilight Eterna //{max.cnt} {gain.cnt} {duration}
         "name": "",
         "desc": [
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage",
-            "The next attack deals <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage"
+            "Increase the maximum number of \"Fine Dust\" by/to {max.cnt} and immediately gain {gain.cnt} \"Fine Dust\". Increase the rotation radius of \"Fine Dust\". All allies within Attack Range gain <$ba.inspire>Inspiration</> equal to {%ATK} of this unit's ATK. \"Fine Dust\" no longer hits allies, instead it deals {%ATK} ATK as True Damage when hitting enemies and <$ba.root>Binds</> them for <@ba.vup>{duration}</> seconds.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ] 
     },
-    "skchr_ABCDEF_2": {  #Lutonada 2 // <@ba.vup>slightly</> - <@ba.vup>moderately</> - <@ba.vup>significantly</>
+    "skchr_ABCDEF_3": { # Civilight Eterna //{%MAXHP}
         "name": "",
         "desc": [
-            "Stops attacking; DEF <@ba.vup>+{def:0%}</>; every <@ba.vup>{interval }</> deals <@ba.vup>{atk_scale:0%}</> Arts damage to all nearby Ground enemies every second and drags unblocked enemies to Lutonada <@ba.vup>slightly</>",
-            "Stops attacking; DEF <@ba.vup>+{def:0%}</>; every <@ba.vup>{interval }</> deals <@ba.vup>{atk_scale:0%}</> Arts damage to all nearby Ground enemies every second and drags unblocked enemies to Lutonada <@ba.vup>slightly</>",
-            "Stops attacking; DEF <@ba.vup>+{def:0%}</>; every <@ba.vup>{interval }</> deals <@ba.vup>{atk_scale:0%}</> Arts damage to all nearby Ground enemies every second and drags unblocked enemies to Lutonada <@ba.vup>slightly</>",
-            "Stops attacking; DEF <@ba.vup>+{def:0%}</>; every <@ba.vup>{interval }</> deals <@ba.vup>{atk_scale:0%}</> Arts damage to all nearby Ground enemies every second and drags unblocked enemies to Lutonada <@ba.vup>slightly</>",
-            "Stops attacking; DEF <@ba.vup>+{def:0%}</>; every <@ba.vup>{interval }</> deals <@ba.vup>{atk_scale:0%}</> Arts damage to all nearby Ground enemies every second and drags unblocked enemies to Lutonada <@ba.vup>slightly</>",
-            "Stops attacking; DEF <@ba.vup>+{def:0%}</>; every <@ba.vup>{interval }</> deals <@ba.vup>{atk_scale:0%}</> Arts damage to all nearby Ground enemies every second and drags unblocked enemies to Lutonada <@ba.vup>slightly</>",
-            "Stops attacking; DEF <@ba.vup>+{def:0%}</>; every <@ba.vup>{interval }</> deals <@ba.vup>{atk_scale:0%}</> Arts damage to all nearby Ground enemies every second and drags unblocked enemies to Lutonada <@ba.vup>slightly</>",
-            "Stops attacking; DEF <@ba.vup>+{def:0%}</>; every <@ba.vup>{interval }</> deals <@ba.vup>{atk_scale:0%}</> Arts damage to all nearby Ground enemies every second and drags unblocked enemies to Lutonada <@ba.vup>slightly</>",
-            "Stops attacking; DEF <@ba.vup>+{def:0%}</>; every <@ba.vup>{interval }</> deals <@ba.vup>{atk_scale:0%}</> Arts damage to all nearby Ground enemies every second and drags unblocked enemies to Lutonada <@ba.vup>slightly</>",
-            "Stops attacking; DEF <@ba.vup>+{def:0%}</>; every <@ba.vup>{interval }</> deals <@ba.vup>{atk_scale:0%}</> Arts damage to all nearby Ground enemies every second and drags unblocked enemies to Lutonada <@ba.vup>slightly</>"
+            "Attack Range <@ba.vup>expands</>, Trait effect increased by <@ba.vup>{trait_up}</>, \"Fine Dust\" no longer disappears. All allies within Attack Range gain <$ba.inspire>Inspiration</> equal to {%MAXHP} of this unit's Max HP. Periodically redistribute the HP of all allies within Attack Range",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ] 
+    },
+    "skchr_ABCDEF_1": { # Amiya Medic //{ASPD} {ATK%}
+        "name": "",
+        "desc": [
+            "ASPD+{ASPD} . Attacks heal all allies within Attack Range for {ATK%} of Amiya's ATK",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ] 
+    },
+    "skchr_ABCDEF_2": { # Amiya Medic
+        "name": "",
+        "desc": [
+            "Immediately deal {%ATK} ATK as Art damage to all enemies within Attack Range and inflict Attack Speed -{ASPD} and Movement Speed -{MSPD} for {duration} seconds; \nFor every enemy hit by this attack, ATK+{ATK%} (up to {stack.ATK%}). Afterwards, Amiya will deal <@ba.vup>True damage</> and attacks hit 2 targets simultaneously</br><@ba.rem>This skill can only be used once per battle</>",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ] 
+    },
+    "skchr_ABCDEF_1": { # Fang the fire-sharpened   //  {%ATK} {DP}
+        "name": "",
+        "desc": [
+            "The next attack hit twice and deal {%ATK} ATK as Physical Damage each.If enemies killed, DP +{DP}\n<@ba.rem>Can store {cnt} charge(s)</>",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ] 
+    },
+    "skchr_ABCDEF_2": { # Fang the fire-sharpened
+        "name": "",
+        "desc": [
+            "When skill is activated, ATK +{%ATK}, DEF +{%DEF}, Block +{block_cnt} and attack multiple enemies equal to Block Count",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ] 
     }
-    
 }
 
 #template

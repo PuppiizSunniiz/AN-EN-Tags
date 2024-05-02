@@ -97,6 +97,7 @@
     var spinewidget
     var spinewidgetcg
     var curropname
+    var classchange
     var defaulttoken
     var globaltoken
     var globalelite = 0
@@ -106,6 +107,9 @@
     var talentValue = [0,0,0]
     var talentLimit = []
     var ModuletalentValue
+
+    var AmiyaGuard="char_1001_amiya2"
+    var AmiyaMedic="char_1037_amiya3"
 
     var currskin
     var currVoiceID
@@ -1318,7 +1322,6 @@
             var opdata = query(db.chars2,"name_cn",opname);
             var opclass = query(db.classes,"type_cn",opdata.type);
             var opdata2 = query(db.chars,"name",opdata.name_cn,true,true);
-            var opdata3 = db.charpatch.patchChars.char_1001_amiya2
             curropname = opname
             var opcode2 = ""
             // console.log(opdata3)
@@ -1387,17 +1390,47 @@
             }
 
             if(opKey=="char_002_amiya"){
-                $('#class-change').show();
-                if(opSType){
-                    opcode = "char_1001_amiya2"
-                    opcode2 = "char_002_amiya"
-                    opKey=opcode
-                    opdataFull = opdata3
-                    opdataFull.id = opcode
-                }
+                    switch (classchange){
+                        case 'caster' :
+                            $('#class-change-caster').hide();
+                            $('#class-change-guard').show();
+                            $('#class-change-medic').show();
+                                opcode = "char_002_amiya"
+                                opcode2 = "char_002_amiya"
+                                opKey=opcode
+                                opdataFull.id = opcode
+                                break;
+                        case 'guard' :
+                            $('#class-change-caster').show();
+                            $('#class-change-guard').hide();
+                            $('#class-change-medic').show();
+                                opcode = AmiyaGuard
+                                opcode2 = "char_002_amiya"
+                                opKey=opcode
+                                opdataFull = db.charpatch.patchChars[AmiyaGuard]
+                                opdataFull.id = opcode
+                                break;
+                        case 'medic' :
+                            $('#class-change-caster').show();
+                            $('#class-change-guard').show();
+                            $('#class-change-medic').hide();
+                                opcode = AmiyaMedic
+                                opcode2 = "char_002_amiya"
+                                opKey=opcode
+                                opdataFull = db.charpatch.patchChars[AmiyaMedic]
+                                opdataFull.id = opcode
+                                break;
+                        default :
+                        $('#class-change-caster').hide();
+                        $('#class-change-guard').show();
+                        $('#class-change-medic').show();
+                    }
             }else{
-                $('#class-change').hide();
+                $('#class-change-caster').hide();
+                $('#class-change-guard').hide();
+                $('#class-change-medic').hide();
             }
+            console.log(opdataFull)
             currVoiceID = opdataFull.id
             var linkconvert = opdataFull.appellation.replace(/[ ']/g,"-").toLowerCase()
             var guidelink = db.sanitygone[opKey];
@@ -1561,18 +1594,18 @@
                     }
                 }
 
-                if(opKey=="char_1001_amiya2"){
-                    zoombtn.push($(`<button class="btn ak-c-black btn-dark" style="margin:2px;padding:2px; height: 50px; width: 50px;" onclick="ChangeZoomChara('char_1001_amiya2_2')"><img src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/elite/${i}-s.png'></button>`))
+                if(opKey==AmiyaGuard||opKey==AmiyaMedic){
+                    zoombtn.push($(`<button class="btn ak-c-black btn-dark" style="margin:2px;padding:2px; height: 50px; width: 50px;" onclick="ChangeZoomChara('`+opKey+`')"><img src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/elite/${i}-s.png'></button>`))
                     if(i == 0){
-                        $("#charazoom").attr("src","https://raw.githubusercontent.com/Aceship/Arknight-Images/main/characters/char_1001_amiya2_2.png");
+                        $("#charazoom").attr("src","https://raw.githubusercontent.com/Aceship/Arknight-Images/main/characters/"+opKey+"_2.png");
                         $('#charazoom').modal('handleUpdate')
 
                         tabcontent.push($("<div class='tab-pane container active' id='opCG_0_tab'>"
-                            +"<img class='chara-image' src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/characters/char_1001_amiya2_2.png'>"
+                            +"<img class='chara-image' src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/characters/"+opKey+"_2.png'>"
                             +"</div>"));
                     } else {
                         tabcontent.push($("<div class='tab-pane container' id='opCG_"+i+"_tab'>"
-                            +"<img class='chara-image' src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/characters/char_1001_amiya2_2.png'>"
+                            +"<img class='chara-image' src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/characters/"+opKey+"_2.png'>"
                             +"</div>"));
                     }
                 }
@@ -1758,7 +1791,7 @@
 
             //Story
 
-            if(db.handbookInfo.handbookDict[opdataFull.id]|| opdataFull.id == "char_1001_amiya2"){
+            if(db.handbookInfo.handbookDict[opdataFull.id]|| opdataFull.id == AmiyaGuard|| opdataFull.id == AmiyaMedic){
                 GetStory(opdataFull)
             }else{
                 $('#info-illustrator').html("")
@@ -3384,7 +3417,7 @@
             currStory = db.handbookInfoEN.handbookDict[opdataFull.id]
             isEN = true
         }
-        if(opdataFull.id=="char_1001_amiya2"){
+        if(opdataFull.id==AmiyaGuard||opdataFull.id==AmiyaMedic){
             currStory = db.handbookInfoEN.handbookDict["char_002_amiya"]?db.handbookInfoEN.handbookDict["char_002_amiya"]:db.handbookInfo.handbookDict["char_002_amiya"]
         }
         // console.log(currStory)
@@ -6017,11 +6050,23 @@
         $("#tabs-opCG").fadeIn(200)
     }
 
-    function ChangeSType(){
-        opSType= !opSType
+    function ChangeSType(amiyaclass="caster"){
+        console.log(curropname)
+        classchange=amiyaclass
         selectOperator(curropname)
-        console.log(opSType)
     }
+    /*function ChangeCType(amiyaclass="caster"){
+        switch (amiyaclass) {
+            case 'caster':
+                return "char_002_amiya"
+            case 'guard':
+                return AmiyaGuard
+            case 'medic':
+                return AmiyaMedic
+            default:
+                return "char_002_amiya";
+        }
+    }*/
 
     function PlayPause(widget){
         if(widget=="token")

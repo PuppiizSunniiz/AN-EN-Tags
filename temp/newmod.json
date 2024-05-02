@@ -1,137 +1,249 @@
 {
-    "uniequip_002_mlyss": [ #Muelsys // Change : {SP}
-        [
-            {
-                "name": "Pure Water is Life",
-                "upgradeDescription": "Can summon a Flowing Shape to assist in combat. Flowing Shapes can partially copy an undeployed Operator's attributes (Max HP, ATK, DEF, RES, Block Count, Attack Interval, Attack Range, Damage Type, and obtain a special trait depending on whether in melee or ranged form), gain {SP} SP after first deployment, will respawn 25 seconds after being defeated"
-            }
-        ],
-        [
-            {
-                "name": "Pure Water is Life",
-                "upgradeDescription": "Can summon a Flowing Shape to assist in combat. Flowing Shapes can copy an undeployed Operator's attributes (Max HP, ATK, DEF, RES, Block Count, Attack Interval, Attack Range, Damage Type, and obtain a special trait depending on whether in melee or ranged form), gain {SP} SP after first deployment, will respawn 25 seconds after being defeated"
-            }
-        ]
-    ],
-    "uniequip_002_vigil":[ #Vigil // {Dodge} {duration}
-        [
-            {
-                "name": "Leader of the Wolfpack",
-                "upgradeDescription": "Can summon a Wolfpack initially consisting of 3 'Wolf Shadows' at the Tactical Point to assist in combat; The number of 'Wolf Shadows' increases by 1 every 25 seconds (up to a maximum of 3; each 'Wolf Shadow' increases the Wolfpack's Block by 1 and causes its attacks to deal an additional instance of damage; when 'Wolf Shadow' defeated, Wolfpack gain {Dodge} Physical Dodge for {duration} seconds)"
-            }
-        ],
-        [
-            {
-                "name": "Leader of the Wolfpack",
-                "upgradeDescription": "Can summon a Wolfpack initially consisting of 3 'Wolf Shadows' at the Tactical Point to assist in combat; The number of 'Wolf Shadows' increases by 1 every 25 seconds (up to a maximum of 3; each 'Wolf Shadow' increases the Wolfpack's Block by 1 and causes its attacks to deal an additional instance of damage; when 'Wolf Shadow' defeated, Wolfpack gain {Dodge} Physical Dodge for {duration} seconds)"
-            }
-        ]
-    ],
-    "uniequip_002_blkngt":[ #Blacknight // ATK
-        [
-            {
-                "name": "Nightwalker",
-                "upgradeDescription": "When there are <$ba.sleep>Sleeping</> enemies enemies within Attack Range, Blacknight and Slumberfoot ATK +{ATK:0%}"
-            }
-        ],
-        [
-            {
-                "name": "Nightwalker",
-                "upgradeDescription": "When there are <$ba.sleep>Sleeping</> enemies enemies within Attack Range, Blacknight and Slumberfoot ATK +{ATK:0%}"
-            }
-        ]
-    ],
-        "uniequip_002_bstalk":[ #Beanstalk // def
-        [
-            {
-                "name": "Professional Breeder",
-                "upgradeDescription": "Can summon Metal Crabs to assist in combat from a Tactical Point; When blocking enemies, Metal Crabs DEF +{def:0%}; Metal Crabs will automatically respawn 15s after being defeated "
-            }
-        ],
-        [
-            {
-                "name": "Professional Breeder",
-                "upgradeDescription": "Can summon Metal Crabs to assist in combat from a Tactical Point; When blocking enemies, Metal Crabs DEF +{def:0%}; Metal Crabs will automatically respawn 15s after being defeated "
-            }
-        ]
-    ],
-    "uniequip_002_ABCDEF":[ #Ascalon // ATK Duration
+    "uniequip_002_svrash": [ #SilverAsh
         [
             {
                 "name": "",
-                "upgradeDescription": "Attacks inflict the following effects to enemies:\nhave 18% Movement Speed, dealing {%ATK} of Ascalon's ATK as Arts damage per second for {Duration} seconds (can stack 3 time)"
+                "upgradeDescription": "ATK +20%. when attacking elite/boss enemies increase ,; All allies' Redeployment Time -10%"
             },
             {
                 "name": "",
-                "upgradeDescription": "Attacks inflict the following effects to enemies:\nhave 18% Movement Speed, dealing {%ATK}<@ba.talpu>(+1%)</> of Ascalon's ATK as Arts damage per second for {Duration} seconds (can stack 3 time)"
+                "upgradeDescription": "ATK +22% <@ba.talpu>(+2%)</>.when attacking elite/boss enemies; All allies' Redeployment Time -12% <@ba.talpu>(+2%)</>"
             }
         ],
         [
             {
                 "name": "",
-                "upgradeDescription": "Attacks inflict the following effects to enemies:\nhave -18% Movement Speed, dealing {%ATK} of Ascalon's ATK as Arts damage per second for {Duration} seconds (can stack 3 time)"
+                "upgradeDescription": "ATK +25%; All allies' Redeployment Time -10%"
             },
             {
                 "name": "",
-                "upgradeDescription": "Attacks inflict the following effects to enemies:\nhave -18% Movement Speed, dealing {%ATK}<@ba.talpu>(+1%)</> of Ascalon's ATK as Arts damage per second for {Duration} seconds (can stack 3 time)"
+                "upgradeDescription": "ATK +27% <@ba.talpu>(+2%)</>; All allies' Redeployment Time -12% <@ba.talpu>(+2%)</>"
             }
         ]
     ],
-    "uniequip_002_ABCDEF":[ #Aroma // Damage
+    "uniequip_002_thorns": [ #thorns
         [
             {
                 "name": "",
-                "upgradeDescription": "The first hit on each enemy deal <@ba.vup>{atk_scale:0%}</> of ATK as Art damage and <$ba.levitate>Levitate</> it for 2.5 seconds"
+                "upgradeDescription": "Poisons the targets when attacking, dealing 125 Arts damage to them per second, lasting 3 seconds (damage is doubled against Ranged enemies)"
             },
             {
                 "name": "",
-                "upgradeDescription": "The first hit on each enemy deal <@ba.vup>{atk_scale:0%}</><@ba.talpu>(+5%)</> of ATK as Art damage and <$ba.levitate>Levitate</> it for 2.5 seconds"
+                "upgradeDescription": "Poisons the targets when attacking, dealing 140 <@ba.talpu>（+15）</> Arts damage to them per second, lasting 3 seconds (damage is doubled against Ranged enemies)"
             }
         ],
         [
             {
                 "name": "",
-                "upgradeDescription": "The first hit on each enemy deal <@ba.vup>{atk_scale:0%}</> of ATK as Art damage and <$ba.levitate>Levitate</> it for 2.5 seconds"
+                "upgradeDescription": "Poisons the targets when attacking, dealing 125 Arts damage to them per second, lasting 3 seconds (damage is doubled against Ranged enemies)"
             },
             {
                 "name": "",
-                "upgradeDescription": "The first hit on each enemy deal <@ba.vup>{atk_scale:0%}</><@ba.talpu>(+5%)</> of ATK as Art damage and <$ba.levitate>Levitate</> it for 2.5 seconds"
+                "upgradeDescription": "Poisons the targets when attacking, dealing 140 <@ba.talpu>（+15）</> Arts damage to them per second, lasting 3 seconds (damage is doubled against Ranged enemies)"
             }
         ]
     ],
-    "uniequip_002_ABCDEF":[ #Lutonada //HP
+    "uniequip_002_qiubai": [ #qiubai
         [
             {
                 "name": "",
-                "upgradeDescription": "When an enemy blocked by self is killed, restores {hp_ratio:0%} of Max HP"
+                "upgradeDescription": "Deal an additional 40% of ATK as Arts damage when attacking enemies affected by <$ba.sluggish>Slow</> or <$ba.root>Bind</>"
             },
             {
                 "name": "",
-                "upgradeDescription": "When an enemy blocked by self is killed, restores {hp_ratio:0%}<@ba.talpu>(+1%)</> of Max HP"
+                "upgradeDescription": "Deal an additional 43%<@ba.talpu> (+3%)</> of ATK as Arts damage when attacking enemies affected by <$ba.sluggish>Slow</> or <$ba.root>Bind</>"
             }
         ],
         [
             {
                 "name": "",
-                "upgradeDescription": "When an enemy blocked by self is killed, restores {hp_ratio:0%} of Max HP"
+                "upgradeDescription": "Deal an additional 40% of ATK as Arts damage when attacking enemies affected by <$ba.sluggish>Slow</> or <$ba.root>Bind</>"
             },
             {
                 "name": "",
-                "upgradeDescription": "When an enemy blocked by self is killed, restores {hp_ratio:0%}<@ba.talpu>(+1%)</> of Max HP"
+                "upgradeDescription": "Deal an additional 43%<@ba.talpu> (+3%)</> of ATK as Arts damage when attacking enemies affected by <$ba.sluggish>Slow</> or <$ba.root>Bind</>"
             }
         ]
     ],
-    "uniequip_003_heyak":[ #Ho'olheyak  // HP {damage_scale}
+    "uniequip_002_whitew": [ #Lappland
         [
             {
-                "name": "Bygone Wings",
-                "upgradeDescription": "Applies <$ba.weightless>Weightless</> to enemies with {HP:0%} or more HP within Attack Range, {damage_scale} <$ba.magicfragile>[Arts Fragility]</> to enemies with 50% or less HP within Attack Range"
+                "name": "",
+                "upgradeDescription": "Disables the target's special ability when attacking, lasting 5 seconds"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "Disables the target's special ability when attacking, lasting 6 <@ba.talpu>(+1)</> seconds"
             }
         ],
         [
             {
-                "name": "Bygone Wings",
-                "upgradeDescription": "Applies <$ba.weightless>Weightless</> to enemies with {HP:0%} or more HP within Attack Range, {damage_scale} <$ba.magicfragile>[Arts Fragility]</> to enemies with 50% or less HP within Attack Range"
+                "name": "",
+                "upgradeDescription": "Disables the target's special ability when attacking, lasting 5 seconds"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "Disables the target's special ability when attacking, lasting 6 <@ba.talpu>(+1)</> seconds"
+            }
+        ]
+    ],
+    "uniequip_002_ayer": [ #Ayerscarpe
+        [
+            {
+                "name": "",
+                "upgradeDescription": "This unit and allied Operators in the surrounding 8 tiles gain +8 ASPD"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "This unit and allied Operators in the surrounding 8 tiles gain +10 <@ba.talpu>(+2)</> ASPD"
+            }
+        ],
+        [
+            {
+                "name": "",
+                "upgradeDescription": "This unit and allied Operators in the surrounding 8 tiles gain +8 ASPD"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "This unit and allied Operators in the surrounding 8 tiles gain +10 <@ba.talpu>(+2)</> ASPD"
+            }
+        ]
+    ],
+    "uniequip_002_leto": [
+        [
+            {
+                "name": "",
+                "upgradeDescription": "When skill is activated, all [Ursus Student Self-Governing Group] operators ASPD+21 until the end of the skill "
+            },
+            {
+                "name": "",
+                "upgradeDescription": "When skill is activated, all [Ursus Student Self-Governing Group] operators ASPD+24<@ba.talpu>(+3)</> until the end of the skill "
+            }
+        ],
+        [
+            {
+                "name": "",
+                "upgradeDescription": "When skill is activated, all [Ursus Student Self-Governing Group] operators ASPD+21 until the end of the skill "
+            },
+            {
+                "name": "",
+                "upgradeDescription": "When skill is activated, all [Ursus Student Self-Governing Group] operators ASPD+24<@ba.talpu>(+3)</> until the end of the skill "
+            }
+        ]
+    ],
+    "uniequip_002_frostl": [ #Frostleaf
+        [
+            {
+                "name": "",
+                "upgradeDescription": "Range expands, but Attack Interval increases slightly"
+            }
+        ],
+        [
+            {
+                "name": "",
+                "upgradeDescription": "Range expands, but Attack Interval increases slightly"
+            }
+        ]
+    ],
+    "uniequip_002_spikes": [ #Arene
+        [
+            {
+                "name": "",
+                "upgradeDescription": "Prioritize attacking drones; ATK +40% when attacking drones"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "Prioritize attacking drones; ATK +43% <@ba.talpu>(+3%)</> when attacking drones"
+            }
+        ],
+        [
+            {
+                "name": "",
+                "upgradeDescription": "Prioritize attacking drones; ATK +40% when attacking drones"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "Prioritize attacking drones; ATK +43% <@ba.talpu>(+3%)</> when attacking drones"
+            }
+        ]
+    ],
+    "uniequip_002_lolxh": [ #Luo Xiaohei
+        [
+            {
+                "name": "",
+                "upgradeDescription": "When dealing lethal damage, leave the enemy with 1 HP and inflict <$ba.dying>Critically Wounded</> (gives +2 SP to the attacker when killed); Luo Xiaohei will not attack <$ba.dying>Critically Wounded</> targets"
+            }
+        ],
+        [
+            {
+                "name": "",
+                "upgradeDescription": "When dealing lethal damage, leave the enemy with 1 HP and inflict <$ba.dying>Critically Wounded</> (gives +2 SP to the attacker when killed); Luo Xiaohei will not attack <$ba.dying>Critically Wounded</> targets"
+            }
+        ]
+    ],
+    "uniequip_002_ABCDEF": [ #Wis’adel
+        [
+            {
+                "name": "",
+                "upgradeDescription": "When attacking, deal increased {%ATK damage} damage to target and attach an Afterimage. When the Afterimage is hit by Wis'adel's aftershocks, {chance} chance to explode and deal {ATK%} ATK as Physical damage to all nearby enemies and <$ba.stun>stunning</> for {duration} seconds"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "<@ba.talpu>(+)</>"
+            }
+        ],
+        [
+            {
+                "name": "",
+                "upgradeDescription": "When attacking, deal increased {%ATK damage} damage to target and attach an Afterimage. When the Afterimage is hit by Wis'adel's aftershocks, {chance} chance to explode and deal {ATK%} ATK as Physical damage to all nearby enemies and <$ba.stun>stunning</> for {duration} seconds"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "<@ba.talpu>(+)</>"
+            }
+        ]
+    ],
+    "uniequip_002_ABCDEF": [ #Logos
+        [
+            {
+                "name": "",
+                "upgradeDescription": "When attacking, {chance} chance to attack another random target within Attack Range, dealing {%ATK} ATK as Arts damage and <$ba.sluggish>Slows</> them for {duration} seconds"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "<@ba.talpu>(+)</>"
+            }
+        ],
+        [
+            {
+                "name": "",
+                "upgradeDescription": "When attacking, {chance} chance to attack another random target within Attack Range, dealing {%ATK} ATK as Arts damage and <$ba.sluggish>Slows</> them for {duration} seconds"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "<@ba.talpu>(+)</>"
+            }
+        ]
+    ],
+    "uniequip_002_fang2": [ #Fang the fire-sharpened 
+        [
+            {
+                "name": "",
+                "upgradeDescription": "During the first deployment, DP Cost -4. After retreat, the next Operator has -1 DP Cost"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "<@ba.talpu>(+)</>"
+            }
+        ],
+        [
+            {
+                "name": "",
+                "upgradeDescription": "During the first deployment, DP Cost -4. After retreat, the next Operator has -2 DP Cost"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "<@ba.talpu>(+)</>"
             }
         ]
     ]
@@ -141,7 +253,7 @@
 "uniequip_00X_ABCDEF": [ # OPSname // Change
 
 
-    "uniequip_00X_ABCDEF":[
+    "uniequip_00X_ABCDEF": [
         [
             {
                 "name": "",
@@ -149,7 +261,7 @@
             },
             {
                 "name": "",
-                "upgradeDescription": ""
+                "upgradeDescription": "<@ba.talpu>(+)</>"
             }
         ],
         [
@@ -159,12 +271,12 @@
             },
             {
                 "name": "",
-                "upgradeDescription": ""
+                "upgradeDescription": "<@ba.talpu>(+)</>"
             }
         ]
     ]
 
-    "uniequip_00X_ABCDEF":[
+    "uniequip_00X_ABCDEF": [
         [
             {
                 "name": "",
@@ -174,7 +286,7 @@
         [
             {
                 "name": "",
-                "upgradeDescription": ""
+                "upgradeDescription": "<@ba.talpu>(+)</>"
             }
         ]
     ]

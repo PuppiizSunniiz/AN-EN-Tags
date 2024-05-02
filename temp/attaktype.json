@@ -1,19 +1,22 @@
 {
-    "": { // Odda : Earthshaker
-        "en": "Attacks deal <@ba.kw>50%</> of Physical damage to <@ba.kw>ground</> enemies in a small area (The second instance is a shockwave that has half the normal ATK)",
+    "": { // Logos mod Delta
+        "en": "Attacks deal <@ba.kw>Arts damage</>",
+        "color": "Magic"
+    },
+    "攻击造成<@ba.kw>法术伤害</>，可以造成<@ba.kw>元素损伤</>，且不受<@ba.kw>部署数量</>限制，但再部署时间极长": { // PhonoR-0 trait
+        "en": "Attacks deal <@ba.kw>Arts damage</>, and can inflict <@ba.kw>Elemental Damage</> and ignores <@ba.kw>Deployment Limit</>, but has a long Redeployment Time",
+        "color": "Magic"
+    },
+    "": { // Lord Trait 1:
+        "en": "Can launch <@ba.kw>Ranged Attacks</> that deal 80% of normal ATK, deals 10% ATK as <@ba.kw>Arts damage</>",
+        "color": "Extra"
+    },
+    "": { // Lord Trait 2:
+        "en": "Can launch <@ba.kw>Ranged Attacks</> that deal 80% of normal ATK. When there are 2 or more in Attack Range, ASPD<@ba.talpu>(+12)</>",
         "color": "Physical"
-    },
-    "": { // Techtician : Muelsys - Vigil - Blacknight
-        "en": "This unit can designate one <@ba.kw>Tactical Point</> within attack range to call Reinforcements; Reinforcements receives 15% less damage from enemies blocked by self ; ATK is increased to 150% when attacking enemies blocked by Reinforcements",
-        "color": "Extra"
-    },
-    "": { // Technician : Beanstalk
-        "en": "This unit can designate one <@ba.kw>Tactical Point</> within attack range to call Reinforcements; ATK is increased to 165% when attacking enemies blocked by Reinforcements",
-        "color": "Extra"
     }
 }
-** Rosmontis trait :"攻击对小范围的<@ba.kw>地面</>敌人造成<@ba.kw>两次</>物理伤害（第二次为余震，伤害降低至攻击力的一半）"
-EN > "Attacks deal <@ba.kw>two instances</> of Physical damage to <@ba.kw>ground</> enemies in a small area (The second instance is a shockwave that has half the normal ATK)"
+
 #template
 
 "": {
