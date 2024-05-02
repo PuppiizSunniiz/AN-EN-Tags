@@ -6,18 +6,19 @@ from pyfunction import CharReady
 # JSON
 #########################################################################################################
 json_building       =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/building_data.json").read())
+json_buildingEN     =   json.loads(open("json/gamedata/en_US/gamedata/excel/building_data.json").read())
 
 json_char           =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/character_table.json").read())
 json_charEN         =   json.loads(open("json/gamedata/en_US/gamedata/excel/character_table.json").read())
 json_charJP         =   json.loads(open("json/gamedata/ja_JP/gamedata/excel/character_table.json").read())
 json_charKR         =   json.loads(open("json/gamedata/ko_KR/gamedata/excel/character_table.json").read())
 
-json_skill           =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/skill_table.json").read())
-json_skillEN         =   json.loads(open("json/gamedata/en_US/gamedata/excel/skill_table.json").read())
+json_skill          =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/skill_table.json").read())
+json_skillEN        =   json.loads(open("json/gamedata/en_US/gamedata/excel/skill_table.json").read())
 
 json_handbook       =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/handbook_info_table.json").read())
 json_mod_battle     =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/battle_equip_table.json").read())
-json_mod_battleEN    =   json.loads(open("json/gamedata/en_US/gamedata/excel/battle_equip_table.json").read())
+json_mod_battleEN   =   json.loads(open("json/gamedata/en_US/gamedata/excel/battle_equip_table.json").read())
 json_mod_table      =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/uniequip_table.json").read())
 json_stage          =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/stage_table.json").read())
 
@@ -33,6 +34,7 @@ json_akmaterial     =   json.loads(open("json/akmaterial.json").read())
 json_trait          =   json.loads(open("json/tl-attacktype.json").read())
 json_term           =   json.loads(open("json/named_effects.json").read())
 json_skillTL        =   json.loads(open("json/ace/tl-skills.json").read())
+json_riicTL         =   json.loads(open("json/ace/riic.json").read())
 
 json_tl_item        =   json.loads(open("json/tl-item.json").read())
 json_tempmod        =   json.loads(open("json/TempModuletalentsTL.json").read())
@@ -41,16 +43,16 @@ json_tempmod        =   json.loads(open("json/TempModuletalentsTL.json").read())
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-newchars = ["Wiš'adel","Logos","Civilight Eterna","PhonoR-0","Fang the Fire-sharpened"] #
+newchars = [] #
 
 #[["OpsName#1",num(Mod)],["OpsName#2",num(Mod)], ...]
-newmods = [["SilverAsh",1],["Thorns",1],["Qiubai",1],["Lappland",1],["Ayerscarpe",1],["Leto",1],["Frostleaf",1],["Arene",1],["Luo Xiaohei",1],["Wiš'adel",1],["Logos",1],["Fang the Fire-sharpened",1]]    #
+newmods = []    #
 
 #["ItemID#1","ItemID#2", ...]
 newmats = []
 
 #["OpsName#1","OpsName#2", ...]
-recruitCN=['Blemishine','Bubble','aosta',"Phonor-0"] #
+recruitCN=[] #
 recruitEN=[]
 
 Rechecked=False # True False
@@ -365,3 +367,17 @@ with open("json/named_effects.json",'w') as JSON :
 
 
 print("\nUpdate Completed !!!\n")
+
+#########################################################################################################
+# RIIC EN Update
+#########################################################################################################
+for riic in json_buildingEN["buffs"].keys():
+    json_riicTL[riic]=  {
+                            "name"          :   json_buildingEN["buffs"][riic]["buffName"],
+                            "desc"          :   json_riicTL[riic]["desc"],
+                            "descformat"    :   json_buildingEN["buffs"][riic]["description"]
+                        }
+    
+dumpling=json.dumps(json_riicTL,indent=4, ensure_ascii=False)
+with open("json/ace/riic.json",'w') as JSON :
+    JSON.write(dumpling)

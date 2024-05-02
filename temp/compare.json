@@ -541,6 +541,12 @@
 				"name": "Sword's Edge",
 				"desc": "Increase damage dealt to enemies with more than 80% HP by 20% (+2%)"
 			}
+		],
+		[
+			{
+				"name": "Merciless Cut",
+				"desc": "In [The Whirlpool that is Passion], deal 120% damage to [Sarkaz] enemies. Additionally, Delphine can store an additional attack charge that only fires against [Sarkaz] enemies"
+			}
 		]
 	],
 	"char_499_kaitou": [
@@ -560,6 +566,46 @@
 			{
 				"name": "Fair Warning",
 				"desc": "When there are enemies under the active effect of Apoptosis within Attack Range, ATK +21% (+3%)"
+			}
+		]
+	],
+	"char_4081_warmy": [
+		[
+			{
+				"name": "Inevitable Spillage",
+				"desc": "When enemies within Attack Range trigger the active effect of Burn, immediately deal 200% Elemental damage to them"
+			},
+			{
+				"name": "Inevitable Spillage",
+				"desc": "When enemies within Attack Range trigger the active effect of Burn, immediately deal 220% (+20%) Elemental damage to them"
+			},
+			{
+				"name": "Inevitable Spillage",
+				"desc": "When enemies within Attack Range trigger the active effect of Burn, immediately deal 300% Elemental damage to them"
+			},
+			{
+				"name": "Inevitable Spillage",
+				"desc": "When enemies within Attack Range trigger the active effect of Burn, immediately deal 320% (+20%) Elemental damage to them"
+			}
+		]
+	],
+	"char_446_aroma": [
+		[
+			{
+				"name": "Foam Performance Test",
+				"desc": "The first attack against each enemy deals 105% damage and Levitates the target for 2.5 seconds"
+			},
+			{
+				"name": "Foam Performance Test",
+				"desc": "The first attack against each enemy deals 110% (+5%) damage and Levitates the target for 2.5 seconds"
+			},
+			{
+				"name": "Foam Performance Test",
+				"desc": "The first attack against each enemy deals 110% damage and Levitates the target for 2.5 seconds"
+			},
+			{
+				"name": "Foam Performance Test",
+				"desc": "The first attack against each enemy deals 115% (+5%) damage and Levitates the target for 2.5 seconds"
 			}
 		]
 	],
@@ -865,7 +911,37 @@
 		[
 			{
 				"name": "Wings of a Bygone Era",
-				"desc": "Inflict Weightless to enemies with 80% or more HP within Attack Range"
+				"desc": "Apply Weightless to enemies with more than 80% HP within Attack Range"
+			}
+		]
+	],
+	"char_4133_logos": [
+		[
+			{
+				"name": "Lexicon Evolution",
+				"desc": "When attacking a target, there is 40% chance to attack another random target within Attack Range, dealing 40% Arts damage"
+			},
+			{
+				"name": "Lexicon Evolution",
+				"desc": "When attacking a target, there is 40% chance to attack another random target within Attack Range, dealing 45% (+5%) Arts damage"
+			},
+			{
+				"name": "Lexicon Evolution",
+				"desc": "When attacking a target, there is 40% chance to attack another random target within Attack Range, dealing 60% Arts damage and Slowing them for 0.8 seconds"
+			},
+			{
+				"name": "Lexicon Evolution",
+				"desc": "When attacking a target, there is 40% chance to attack another random target within Attack Range, dealing 65% (+5%) Arts damage and Slowing them for 0.8 seconds"
+			}
+		],
+		[
+			{
+				"name": "Soul-shearing Tools",
+				"desc": "Attacks inflict -10 RES to the target and increase their Arts damage taken by 150 for 5 seconds"
+			},
+			{
+				"name": "Soul-shearing Tools",
+				"desc": "Attacks inflict -10 RES to the target and increase their Arts damage taken by 165 (+15) for 5 seconds"
 			}
 		]
 	],
@@ -1014,6 +1090,26 @@
 			{
 				"name": "Spiked Shield",
 				"desc": "When attacked, reduce the attacker's ATK by 8% for 5 seconds"
+			}
+		]
+	],
+	"char_4130_luton": [
+		[
+			{
+				"name": "Evading Death",
+				"desc": "When an enemy blocked by self is killed, recover 12% HP"
+			},
+			{
+				"name": "Evading Death",
+				"desc": "When an enemy blocked by self is killed, recover 14% (+2%) HP"
+			},
+			{
+				"name": "Evading Death",
+				"desc": "When an enemy blocked by self is killed, recover 16% HP"
+			},
+			{
+				"name": "Evading Death",
+				"desc": "When an enemy blocked by self is killed, recover 18% (+2%) HP"
 			}
 		]
 	],
@@ -1602,6 +1698,32 @@
 			{
 				"name": "Charge and Release",
 				"desc": "When the Mobile Personnel Shield is damaged, there is 55% (+5%) chance to grant 1 SP to Jessica"
+			}
+		]
+	],
+	"char_2025_shu": [
+		[
+			{
+				"name": "Evergreen Crops",
+				"desc": "When healing allies, Shu sows the tiles they are on and the 4 adjacent tiles, granting the following effects: Recover 40 HP every second and gain 5% Shelter effect"
+			},
+			{
+				"name": "Evergreen Crops",
+				"desc": "When healing allies, Shu sows the tiles they are on and the 4 adjacent tiles, granting the following effects: Recover 45 (+5) HP every second and gain 7% (+2%) Shelter effect"
+			},
+			{
+				"name": "Evergreen Crops",
+				"desc": "When healing allies, Shu sows the tiles they are on and the 4 adjacent tiles, granting the following effects: Recover 70 HP every second and gain 10% Shelter effect"
+			},
+			{
+				"name": "Evergreen Crops",
+				"desc": "When healing allies, Shu sows the tiles they are on and the 4 adjacent tiles, granting the following effects: Recover 75 (+5) HP every second and gain 12% (+2%) Shelter effect"
+			}
+		],
+		[
+			{
+				"name": "Heavenly Four Seasons",
+				"desc": "When there are 3 operators of different classes deployed, all operators gain Max HP +12%.</br></br>When there are 3 operators of the same class deployed, all operators gain Attack Speed +12.</br></br>When there are 4 [Sui] operators in the team, all operators gain ATK +12% and recover 1 SP every 4 seconds"
 			}
 		]
 	],
@@ -2451,23 +2573,121 @@
 			}
 		]
 	],
+	"char_194_leto": [
+		[
+			{
+				"name": "Faster! Faster!",
+				"desc": "When skill is active, all [Ursus Student Council] operators gain Attack Speed +10"
+			},
+			{
+				"name": "Faster! Faster!",
+				"desc": "When skill is active, all [Ursus Student Council] operators gain Attack Speed +13 (+3)"
+			},
+			{
+				"name": "Faster! Faster!",
+				"desc": "When skill is active, all [Ursus Student Council] operators gain Attack Speed +21"
+			},
+			{
+				"name": "Faster! Faster!",
+				"desc": "When skill is active, all [Ursus Student Council] operators gain Attack Speed +24 (+3)"
+			}
+		]
+	],
+	"char_4125_rdoc": [
+		[
+			{
+				"name": "Military Doctor",
+				"desc": "Max HP +3%, attacks ignore 30 DEF"
+			},
+			{
+				"name": "Military Doctor",
+				"desc": "Max HP +3%, attacks ignore 50 (+20) DEF"
+			},
+			{
+				"name": "Military Doctor",
+				"desc": "Max HP +6%, attacks ignore 60 DEF"
+			},
+			{
+				"name": "Military Doctor",
+				"desc": "Max HP +6%, attacks ignore 80 (+20) DEF"
+			},
+			{
+				"name": "Military Doctor",
+				"desc": "Max HP +12%, attacks ignore 120 DEF"
+			},
+			{
+				"name": "Military Doctor",
+				"desc": "Max HP +12%, attacks ignore 140 (+20) DEF"
+			}
+		],
+		[
+			{
+				"name": "Sympathetic Nerve Activation",
+				"desc": "When healing allies, HP healed exceeding Max HP is converted into Barrier that constantly and rapidly decays"
+			},
+			{
+				"name": "Sympathetic Nerve Activation",
+				"desc": "When healing allies, HP healed exceeding Max HP is converted into Barrier that constantly decays"
+			}
+		]
+	],
+	"char_4126_fuze": [
+		[
+			{
+				"name": "Ballistic Shield",
+				"desc": "Gain 17% ranged Physical Block"
+			},
+			{
+				"name": "Ballistic Shield",
+				"desc": "Gain 20% (+3%) ranged Physical Block"
+			},
+			{
+				"name": "Ballistic Shield",
+				"desc": "Gain 27% ranged Physical Block"
+			},
+			{
+				"name": "Ballistic Shield",
+				"desc": "Gain 30% (+3%) ranged Physical Block"
+			}
+		]
+	],
+	"char_4131_odda": [
+		[
+			{
+				"name": "Falling Hammer",
+				"desc": "After dealing Physical damage 45 times, ATK +9%"
+			},
+			{
+				"name": "Falling Hammer",
+				"desc": "After dealing Physical damage 45 times, ATK +12% (+3%)"
+			},
+			{
+				"name": "Falling Hammer",
+				"desc": "After dealing Physical damage 30 times, ATK +15%"
+			},
+			{
+				"name": "Falling Hammer",
+				"desc": "After dealing Physical damage 30 times, ATK +18% (+3%)"
+			}
+		]
+	],
 	"char_172_svrash": [
 		[
 			{
 				"name": "Leader",
-				"desc": "ATK +5%, all operators' redeployment time -5%"
+				"desc": "ATK +5%. When in team, all allies' redeployment time -5%"
 			},
 			{
 				"name": "Leader",
-				"desc": "ATK +7% (+2%), all operators' redeployment time -7% (+2%)"
+				"desc": "ATK +7% (+2%). When in team, all allies' redeployment time -7% (+2%)"
 			},
 			{
 				"name": "Leader",
-				"desc": "ATK +10%, all operators' redeployment time -10%"
+				"desc": "ATK +10%. When in team, all allies' redeployment time -10%"
 			},
 			{
 				"name": "Leader",
-				"desc": "ATK +12% (+2%), all operators' redeployment time -12% (+2%)"
+				"desc": "ATK +12% (+2%). When in team, all allies' redeployment time -12% (+2%)"
 			}
 		],
 		[
@@ -2957,6 +3177,62 @@
 			}
 		]
 	],
+	"char_4116_blkkgt": [
+		[
+			{
+				"name": "“Natural-born Warrior”",
+				"desc": "When attacking, 10% chance to deal 130% damage and inflict Tremble for 5 seconds"
+			},
+			{
+				"name": "“Natural-born Warrior”",
+				"desc": "When attacking, 10% chance to deal 135% (+5%) damage and inflict Tremble for 5 seconds"
+			},
+			{
+				"name": "“Natural-born Warrior”",
+				"desc": "When attacking, 10% chance to deal 160% damage and inflict Tremble for 5 seconds"
+			},
+			{
+				"name": "“Natural-born Warrior”",
+				"desc": "When attacking, 10% chance to deal 165% (+5%) damage and inflict Tremble for 5 seconds"
+			}
+		],
+		[
+			{
+				"name": "Living Legend",
+				"desc": "When attacking Trembling targets, ignore 25% DEF"
+			},
+			{
+				"name": "Living Legend",
+				"desc": "When attacking Trembling targets, ignore 30% (+5%) DEF"
+			}
+		]
+	],
+	"char_4121_zuole": [
+		[
+			{
+				"name": "Candlelit Shadow",
+				"desc": "When deployed, gain up to +30 Attack Speed and +0.5 SP/s Berserk effect (reaches maximum effect when 50% HP is lost)"
+			},
+			{
+				"name": "Candlelit Shadow",
+				"desc": "When deployed, gain up to +40 Attack Speed and +1 SP/s Berserk effect (reaches maximum effect when 60% HP is lost)"
+			},
+			{
+				"name": "Candlelit Shadow",
+				"desc": "When deployed, gain up to +50 Attack Speed and +2 SP/s Berserk effect (reaches maximum effect when 70% HP is lost)"
+			}
+		],
+		[
+			{
+				"name": "Code of Virtue",
+				"desc": "When attacking, 20% chance to gain 1 SP. When HP is less than 50%, the chance becomes 70%"
+			},
+			{
+				"name": "Code of Virtue",
+				"desc": "When attacking, 23% (+3%) chance to gain 1 SP. When HP is less than 50%, the chance becomes 75% (+5%)"
+			}
+		]
+	],
 	"char_285_medic2": [
 		[
 			{
@@ -3371,6 +3647,38 @@
 			{
 				"name": "Soil Fertilizer Enhancement",
 				"desc": "Increase healing received by the ally with the highest Max HP within Attack Range by 18% (+3%)"
+			}
+		]
+	],
+	"char_4114_harold": [
+		[
+			{
+				"name": "Military Shelter",
+				"desc": "Targets within Attack Range with more than 50% accumulated elemental damage receive 12% less elemental damage"
+			},
+			{
+				"name": "Military Shelter",
+				"desc": "Targets within Attack Range with more than 50% accumulated elemental damage receive 15% (+3%) less elemental damage"
+			},
+			{
+				"name": "Military Shelter",
+				"desc": "Targets within Attack Range with more than 50% accumulated elemental damage receive 15% less elemental damage"
+			},
+			{
+				"name": "Military Shelter",
+				"desc": "Targets within Attack Range with more than 50% accumulated elemental damage receive 18% (+3%) less elemental damage"
+			}
+		]
+	],
+	"char_1037_amiya3": [
+		[
+			{
+				"name": "Sincere Hope",
+				"desc": "When deployed, all allies gain Max HP +5%. When skill is active, all allies recover 1.5% Max HP every second"
+			},
+			{
+				"name": "Sincere Hope",
+				"desc": "When deployed, all allies gain Max HP +8%. When skill is active, all allies recover 2.5% Max HP every second"
 			}
 		]
 	],
@@ -4471,6 +4779,54 @@
 			}
 		]
 	],
+	"char_4117_ray": [
+		[
+			{
+				"name": "Patrol Partner",
+				"desc": "Can deploy a Sandbeast to scout an area within Attack Range for 15 seconds. The Sandbeast extends Ray's Attack Range. Additionally, Ray will prioritize targets within the scouting area and enemies within receive 10% more Physical damage from Ray"
+			},
+			{
+				"name": "Patrol Partner",
+				"desc": "Can deploy a Sandbeast to scout an area within Attack Range for 25 seconds. The Sandbeast extends Ray's Attack Range. Additionally, Ray will prioritize targets within the scouting area and enemies within receive 15% more Physical damage from Ray"
+			}
+		],
+		[
+			{
+				"name": "Focus",
+				"desc": "When attacking the same target, every attack increases ATK by 8%, stacks up to 3 layers"
+			},
+			{
+				"name": "Focus",
+				"desc": "When attacking the same target, every attack increases ATK by 9% (+1%), stacks up to 3 layers"
+			}
+		]
+	],
+	"char_1035_wisdel": [
+		[
+			{
+				"name": "Gift",
+				"desc": "Attacks attach an afterimage on the main target. When an afterimage is hit by Wiš'adel's aftershocks, there is 15% chance to explode, dealing 120% Physical damage to all nearby enemies and Stunning them for 0.5 seconds"
+			},
+			{
+				"name": "Gift",
+				"desc": "Attacks attach an afterimage on the main target. When an afterimage is hit by Wiš'adel's aftershocks, there is 15% chance to explode, dealing 130% (+10%) Physical damage to all nearby enemies and Stunning them for 0.5 seconds"
+			},
+			{
+				"name": "Gift",
+				"desc": "Attacks deal 115% damage to the main target and attach an afterimage on them. When an afterimage is hit by Wiš'adel's aftershocks, there is 15% chance to explode, dealing 150% Physical damage to all nearby enemies and Stunning them for 1 second"
+			},
+			{
+				"name": "Gift",
+				"desc": "Attacks deal 115% damage to the main target and attach an afterimage on them. When an afterimage is hit by Wiš'adel's aftershocks, there is 15% chance to explode, dealing 160% (+10%) Physical damage to all nearby enemies and Stunning them for 1 second"
+			}
+		],
+		[
+			{
+				"name": "Revenant's Vestige",
+				"desc": "After deployment, summon a Shadow of Revenant within Attack Range. When nearby a Shadow of Revenant, gain Camouflage"
+			}
+		]
+	],
 	"char_376_therex": [
 		[
 			{
@@ -4950,6 +5306,34 @@
 			}
 		]
 	],
+	"char_4124_iana": [
+		[
+			{
+				"name": "Gemini Replicator",
+				"desc": "When deployed, create a hologram on the spot. The hologram does not attack; When attacked, remove Stealth effects from the attacker for 6 seconds and swap to <Substitute>"
+			},
+			{
+				"name": "Gemini Replicator",
+				"desc": "When deployed, create a hologram on the spot. The hologram does not attack; When attacked, remove Stealth effects from the attacker for 6 seconds and swap to <Substitute>"
+			},
+			{
+				"name": "Gemini Replicator",
+				"desc": "When deployed, create a hologram on the spot. The hologram does not attack; When attacked, apply 10% Fragility effect and remove Stealth effects from the attacker for 6 seconds and swap to <Substitute>"
+			},
+			{
+				"name": "Gemini Replicator",
+				"desc": "When deployed, create a hologram on the spot. The hologram does not attack; When attacked, apply 12% (+2%) Fragility effect and remove Stealth effects from the attacker for 6 seconds and swap to <Substitute>"
+			},
+			{
+				"name": "Gemini Replicator",
+				"desc": "When deployed, create a hologram on the spot. The hologram does not attack; When attacked, apply 20% Fragility effect and remove Stealth effects from the attacker for 8 seconds and swap to <Substitute>"
+			},
+			{
+				"name": "Gemini Replicator",
+				"desc": "When deployed, create a hologram on the spot. The hologram does not attack; When attacked, apply 22% (+2%) Fragility effect and remove Stealth effects from the attacker for 8 seconds and swap to <Substitute>"
+			}
+		]
+	],
 	"char_225_haak": [
 		[
 			{
@@ -5232,6 +5616,70 @@
 			}
 		]
 	],
+	"char_4123_ela": [
+		[
+			{
+				"name": "Grzmot Mines",
+				"desc": "Can use 1 Grzmot Mine (can hold up to 2). The first enemy to step on each Grzmot Mine will trigger it. When retreating, activate the Grzmot Mine effect once centered on self"
+			},
+			{
+				"name": "Grzmot Mines",
+				"desc": "Can use 2 (+1) Grzmot Mines (can hold up to 2). The first enemy to step on each Grzmot Mine will trigger it. When retreating, activate the Grzmot Mine effect once centered on self"
+			},
+			{
+				"name": "Grzmot Mines",
+				"desc": "Can use 2 Grzmot Mines (can hold up to 3). The first enemy to step on each Grzmot Mine will trigger it. When retreating, activate the Grzmot Mine effect once centered on self"
+			},
+			{
+				"name": "Grzmot Mines",
+				"desc": "Can use 3 (+1) Grzmot Mines (can hold up to 3). The first enemy to step on each Grzmot Mine will trigger it. When retreating, activate the Grzmot Mine effect once centered on self"
+			},
+			{
+				"name": "Grzmot Mines",
+				"desc": "Can use 3 Grzmot Mines (can hold up to 4). The first enemy to step on each Grzmot Mine will trigger it. When retreating, activate the Grzmot Mine effect once centered on self"
+			},
+			{
+				"name": "Grzmot Mines",
+				"desc": "Can use 4 (+1) Grzmot Mines (can hold up to 4). The first enemy to step on each Grzmot Mine will trigger it. When retreating, activate the Grzmot Mine effect once centered on self"
+			}
+		],
+		[
+			{
+				"name": "“Bullseye”",
+				"desc": "Attacks have 30% chance to deal 150% Physical damage. This effect is guaranteed to activate against enemies affected by Grzmot Mine effects"
+			},
+			{
+				"name": "“Bullseye”",
+				"desc": "Attacks have 30% chance to deal 160% (+10%) Physical damage. This effect is guaranteed to activate against enemies affected by Grzmot Mine effects"
+			}
+		]
+	],
+	"char_4132_ascln": [
+		[
+			{
+				"name": "Death Detention",
+				"desc": "Attacks inflict the following effect to enemies: Movement Speed -12% and receive Arts damage equal to 6% of Ascalon's current ATK every second for 18 seconds (can stack up to 3 layers)"
+			},
+			{
+				"name": "Death Detention",
+				"desc": "Attacks inflict the following effect to enemies: Movement Speed -15% and receive Arts damage equal to 8% of Ascalon's current ATK every second for 18 seconds (can stack up to 3 layers)"
+			},
+			{
+				"name": "Death Detention",
+				"desc": "Attacks inflict the following effect to enemies: Movement Speed -18% and receive Arts damage equal to 10% of Ascalon's current ATK every second for 25 seconds (can stack up to 3 layers)"
+			}
+		],
+		[
+			{
+				"name": "Light-Devouring Afterimage",
+				"desc": "Attack Speed +8. If there are high tiles within the 4 adjacent tiles, gain an additional Attack Speed +6"
+			},
+			{
+				"name": "Light-Devouring Afterimage",
+				"desc": "Attack Speed +10 (+2). If there are high tiles within the 4 adjacent tiles, gain an additional Attack Speed +6"
+			}
+		]
+	],
 	"char_4091_ulika": [
 		[
 			{
@@ -5257,6 +5705,34 @@
 			{
 				"name": "Short-circuit Genius·VI",
 				"desc": "Reduce Taunt level. After being deployed for some time, Stun all units within Attack Range for 7.5 seconds"
+			}
+		]
+	],
+	"char_4136_phonor": [
+		[
+			{
+				"name": "Choir of the Distant River Valley·I",
+				"desc": "After deployment, apply 3% Arts Fragility and Elemental Fragility to all enemies within Attack Range and attacks deal 45 Apoptosis damage for 40 seconds"
+			},
+			{
+				"name": "Choir of the Distant River Valley·II",
+				"desc": "After deployment, apply 5% Arts Fragility and Elemental Fragility to all enemies within Attack Range and attacks deal 45 Apoptosis damage for 40 seconds"
+			},
+			{
+				"name": "Choir of the Distant River Valley·III",
+				"desc": "After deployment, apply 5% Arts Fragility and Elemental Fragility to all enemies within Attack Range and attacks deal 50 Apoptosis damage for 40 seconds"
+			},
+			{
+				"name": "Choir of the Distant River Valley·IV",
+				"desc": "After deployment, apply 8% Arts Fragility and Elemental Fragility to all enemies within Attack Range and attacks deal 55 Apoptosis damage for 40 seconds"
+			},
+			{
+				"name": "Choir of the Distant River Valley·V",
+				"desc": "After deployment, apply 8% Arts Fragility and Elemental Fragility to all enemies within Attack Range and attacks deal 60 Apoptosis damage for 40 seconds"
+			},
+			{
+				"name": "Choir of the Distant River Valley·VI",
+				"desc": "After deployment, apply 10% Arts Fragility and Elemental Fragility to all enemies within Attack Range and attacks deal 60 Apoptosis damage for 40 seconds"
 			}
 		]
 	],
@@ -5631,6 +6107,26 @@
 			}
 		]
 	],
+	"char_4122_grabds": [
+		[
+			{
+				"name": "Be Good and Obedient",
+				"desc": "Attack Speed +6. If the target is a [Wild Animal], slightly increase the duration of Slow effect from Trait (+0.2)"
+			},
+			{
+				"name": "Be Good and Obedient",
+				"desc": "Attack Speed +8 (+2). If the target is a [Wild Animal], slightly increase the duration of Slow effect from Trait (+0.2)"
+			},
+			{
+				"name": "Be Good and Obedient",
+				"desc": "Attack Speed +10. If the target is a [Wild Animal], slightly increase the duration of Slow effect from Trait (+0.4)"
+			},
+			{
+				"name": "Be Good and Obedient",
+				"desc": "Attack Speed +12 (+2). If the target is a [Wild Animal], slightly increase the duration of Slow effect from Trait (+0.4)"
+			}
+		]
+	],
 	"char_291_aglina": [
 		[
 			{
@@ -5870,6 +6366,28 @@
 			{
 				"name": "Mental Inversion",
 				"desc": "Enemies within Attack Range receive 22% (+2%) more Apoptosis damage"
+			}
+		]
+	],
+	"char_4134_cetsyr": [
+		[
+			{
+				"name": "Dust of Eras Past",
+				"desc": "3 Dust Motes constantly revolve around Civilight Eterna. When Dust Motes hit an ally, they disappear and increase the Trait effect received by that operator from Civilight Eterna by 1.2x for 6 seconds. Disappeared Dust Motes will reappear after 6 seconds"
+			},
+			{
+				"name": "Dust of Eras Past",
+				"desc": "3 Dust Motes constantly revolve around Civilight Eterna. When Dust Motes hit an ally, they disappear and increase the Trait effect received by that operator from Civilight Eterna by 1.5x for 6 seconds. Disappeared Dust Motes will reappear after 6 seconds"
+			}
+		],
+		[
+			{
+				"name": "Sarkaz King's Echoes",
+				"desc": "When deployed, reduce damage taken by all allies from [Sarkaz] enemies by 10%"
+			},
+			{
+				"name": "Sarkaz King's Echoes",
+				"desc": "When deployed, reduce damage taken by all allies from [Sarkaz] enemies by 15% (+5%)"
 			}
 		]
 	],
@@ -6123,7 +6641,8 @@
 				"name": "Nightwalker",
 				"desc": "Can summon a Hypnos at the tactical point. The Hypnos will automatically respawn 15 seconds after being defeated"
 			}
-		]
+		],
+		[]
 	],
 	"char_497_ctable": [
 		[
@@ -6194,6 +6713,52 @@
 			{
 				"name": "Relocation Squad Regulations",
 				"desc": "30 seconds after deployment, Max HP +18% (+3%)"
+			}
+		]
+	],
+	"char_4023_rfalcn": [
+		[
+			{
+				"name": "Brute Smash",
+				"desc": "When attacking, 15% chance to deal 140% damage"
+			},
+			{
+				"name": "Brute Smash",
+				"desc": "When attacking, 17% (+2%) chance to deal 140% damage"
+			},
+			{
+				"name": "Brute Smash",
+				"desc": "When attacking, 20% chance to deal 140% damage"
+			},
+			{
+				"name": "Brute Smash",
+				"desc": "When attacking, 22% (+2%) chance to deal 140% damage"
+			}
+		],
+		[
+			{
+				"name": "Habitual",
+				"desc": "In [Tales Within the Sand], send all carried resources to the bag when skill is activated"
+			}
+		]
+	],
+	"char_4119_wanqin": [
+		[
+			{
+				"name": "Watching the Weather",
+				"desc": "Allies in the 8 surrounding tiles gain Max HP +3%. If they are facing the same direction as Wanqing, they gain Max HP +5% instead"
+			},
+			{
+				"name": "Watching the Weather",
+				"desc": "Allies in the 8 surrounding tiles gain Max HP +4% (+1%). If they are facing the same direction as Wanqing, they gain Max HP +6% (+1%) instead"
+			},
+			{
+				"name": "Watching the Weather",
+				"desc": "Allies in the 8 surrounding tiles gain Max HP +5%. If they are facing the same direction as Wanqing, they gain Max HP +9% instead"
+			},
+			{
+				"name": "Watching the Weather",
+				"desc": "Allies in the 8 surrounding tiles gain Max HP +6% (+1%). If they are facing the same direction as Wanqing, they gain Max HP +10% (+1%) instead"
 			}
 		]
 	],
@@ -6400,600 +6965,5 @@
 				"desc": "When in team, deployment cost of [Rhine Labs] operators -2. The first [Rhine Labs] operator deployed has an additional -2 (+1) deployment cost"
 			}
 		]
-	],
-	"char_4116_blkkgt": [
-        [
-            {
-                "name": "“Natural-born Warrior”",
-                "desc": "When attacking, has a 10% chance to deal 130% damage and <$ba.tremble>Tremble</> the target for 5 seconds "
-            },
-            {
-                "name": "“Natural-born Warrior”",
-                "desc": "When attacking, has a 10% chance to deal 135%<@ba.talpu> (+5%) </> damage and <$ba.tremble>Tremble</> the target for 5 seconds "
-            },
-            {
-                "name": "“Natural-born Warrior”",
-                "desc": "When attacking, has a 10% chance to deal 160% damage and <$ba.tremble>Tremble</> the target for 5 seconds "
-            },
-            {
-                "name": "“Natural-born Warrior”",
-                "desc": "When attacking, has a 10% chance to deal 165%<@ba.talpu> (+5%) </> damage and <$ba.tremble>Tremble</> the target for 5 seconds "
-            }
-        ],
-        [
-            {
-                "name": "Living Legend",
-                "desc": "When attacking <$ba.tremble>Tremble</> enemies, ignore 25% DEF"
-            },
-            {
-                "name": "Living Legend",
-                "desc": "When attacking <$ba.tremble>Tremble</> enemies, ignore 30%<@ba.talpu> (+5%) </>DEF"
-            }
-        ]
-    ],
-    "char_4114_harold": [
-        [
-            {
-                "name": "Military Shelter",
-                "desc": "Allies with more than 50% accumulated element damage within Attack Range received 12% less <$ba.dt.element>element damage</>"
-            },
-            {
-                "name": "Military Shelter",
-                "desc": "Allies with more than 50% accumulated element damage within Attack Range received 15%<@ba.talpu> (+3%)</> less <$ba.dt.element>element damage</>"
-            },
-            {
-                "name": "Military Shelter",
-                "desc": "Allies with more than 50% accumulated element damage within Attack Range received 15% less <$ba.dt.element>element damage</>"
-            },
-            {
-                "name": "Military Shelter",
-                "desc": "Allies with more than 50% accumulated element damage within Attack Range received by 18%<@ba.talpu> (+3%)</> less  <$ba.dt.element>element damage</>"
-            }
-        ]
-    ],
-    "char_194_leto": [
-        [
-            {
-                "name": "Faster! Faster!",
-                "desc": "When skill is activated, all [Ursus Student Self-Governing Group] operators ASPD+10 until the end of the skill"
-            },
-            {
-                "name": "Faster! Faster!",
-                "desc": "When skill is activated, all [Ursus Student Self-Governing Group] operators ASPD+13<@ba.talpu> (+3) </> until the end of the skill"
-            },
-            {
-                "name": "Faster! Faster!",
-                "desc": "When skill is activated, all [Ursus Student Self-Governing Group] operators ASPD+21 until the end of the skill"
-            },
-            {
-                "name": "Faster! Faster!",
-                "desc": "When skill is activated, all [Ursus Student Self-Governing Group] operators ASPD+24<@ba.talpu> (+3) </> until the end of the skill"
-            }
-        ]
-    ],
-    "char_4117_ray": [
-        [
-            {
-                "name": "Patrol Partner",
-                "desc": "Can summon a Sand Beast within Attack Range for 15 seconds. The Sand Beast scouts the area and extends Ray's Attack Range. Ray will prioritize targets within the scouting area and deal increased Physical damage by 10%"
-            },
-            {
-                "name": "Patrol Partner",
-                "desc": "Can summon a Sand Beast within Attack Range for 25 seconds. The Sand Beast scouts the area and extends Ray's Attack Range. Ray will prioritize targets within the scouting area and deal increased Physical damage by 15%"
-            }
-        ],
-        [
-            {
-                "name": "Focus",
-                "desc": "Each consecutive attack on the same target increases ATK by 8%, stacking up to 3 times."
-            },
-            {
-                "name": "Focus",
-                "desc": "Each consecutive attack on the same target increases ATK by 9%<@ba.talpu> (+1%) </>, stacking up to 3 times."
-            }
-        ]
-    ],
-    "char_4081_warmy": [
-        [
-            {
-                "name": "Inevitable Spillage",
-                "desc": "When enemies within Attack Range trigger <$ba.dt.burning2>Burn</>, immediately receive Elemental damage by 200% of the Operator's ATK "
-            },
-            {
-                "name": "Inevitable Spillage",
-                "desc": "When enemies within Attack Range trigger <$ba.dt.burning2>Burn</>, immediately receive Elemental damage by 220%<@ba.talpu> (+20%) </>of the Operator's ATK "
-            },
-            {
-                "name": "Inevitable Spillage",
-                "desc": "When enemies within Attack Range trigger <$ba.dt.burning2>Burn</>, immediately receive Elemental damage by 300% of the Operator's ATK "
-            },
-            {
-                "name": "Inevitable Spillage",
-                "desc": "When enemies within Attack Range trigger <$ba.dt.burning2>Burn</>, immediately receive Elemental damage by 320%<@ba.talpu> (+20%) </>of the Operator's ATK "
-            }
-        ]
-    ],
-    "char_2025_shu": [
-        [
-            {
-                "name": "Evergreen Crops",
-                "desc": "When healing allies, plant seeds on the ally's tile and the 4 adjacent tiles, granting the following effects:\n Restores the HP by 40 per second and apply 5% <$ba.protect>Sanctuary</> effect to allies"
-            },
-            {
-                "name": "Evergreen Crops",
-                "desc": "When healing allies, plant seeds on the ally's tile and the 4 adjacent tiles, granting the following effects:\n Restores the HP by 45 <@ba.talpu>(+5)</> per second and apply 7% <@ba.talpu>(+2%)</> <$ba.protect>Sanctuary</> effect to allies"
-            },
-            {
-                "name": "Evergreen Crops",
-                "desc": "When healing allies, plant seeds on the ally's tile and the 4 adjacent tiles, granting the following effects:\n Restores the HP by 70 per second and apply 10% <$ba.protect>Sanctuary</> effect to allies"
-            },
-            {
-                "name": "Evergreen Crops",
-                "desc": "When healing allies, plant seeds on the ally's tile and the 4 adjacent tiles, granting the following effects:\n Restores the HP by 75 <@ba.talpu>(+5)</> per second and apply 12% <@ba.talpu>(+2%)</> <$ba.protect>Sanctuary</> effect to allies"
-            }
-        ],
-        [
-            {
-                "name": "Heavenly Four Seasons",
-                "desc": "When there are 3 operators of different classes deployed, all operators Max HP +12% </br> When there are 3 operators of the same class deployed, all operators ASPD+12 </br> When there are 4 [Sui] operators in the team, all operators ATK +12% and restores 1 Skill Point every 4 seconds"
-            }
-        ]
-    ],
-    "char_4121_zuole": [
-        [
-            {
-                "name": "Candlelit Shadow",
-                "desc": "Gains up to +30 ASPD  and the SP recovery rate by +0.5/second <$ba.berserk>Tenacity</> (reaches maximum bonus when losing 50% Max HP)"
-            },
-            {
-                "name": "Candlelit Shadow",
-                "desc": "Gains up to +40 ASPD  and the SP recovery rate by +1/second <$ba.berserk>Tenacity</> (reaches maximum bonus when losing 60% Max HP)"
-            },
-            {
-                "name": "Candlelit Shadow",
-                "desc": "Gains up to +50 ASPD  and the SP recovery rate by +2/second <$ba.berserk>Tenacity</> (reaches maximum bonus when losing 70% Max HP)"
-            }
-        ],
-        [
-            {
-                "name": "Code of Virtue",
-                "desc": "20% chance to recover 1 SP when attacking, when losing 50% Max HP chance incraese to 70%"
-            },
-            {
-                "name": "Code of Virtue",
-                "desc": "23%<@ba.talpu>(+3%)</> chance to recover 1 SP when attacking, when losing 50% Max HP chance increase to 75%<@ba.talpu>(+5%)</>"
-            }
-        ]
-    ],
-    "char_4122_grabds": [
-        [
-            {
-                "name": "Be Good and Obedient",
-                "desc": "ASPD +6. If the target is a [Wild Animal], Extends the duration of <$ba.sluggish>Slows</>"
-            },
-            {
-                "name": "Be Good and Obedient",
-                "desc": "ASPD +8 <@ba.talpu>(+2)</>. If the target is a [Wild Animal], Extends the duration of <$ba.sluggish>Slows</>"
-            },
-            {
-                "name": "Be Good and Obedient",
-                "desc": "ASPD +10. If the target is a [Wild Animal], Extends the duration of <$ba.sluggish>Slows</>"
-            },
-            {
-                "name": "Be Good and Obedient",
-                "desc": "ASPD +12 <@ba.talpu>(+2)</>. If the target is a [Wild Animal], Extends the duration of <$ba.sluggish>Slows</>"
-            }
-        ]
-    ],
-    "char_4023_rfalcn": [
-        [
-            {
-                "name": "Brute Smash",
-                "desc": "When attacking, has a 15% chance to deal 140% damage"
-            },
-            {
-                "name": "Brute Smash",
-                "desc": "When attacking, has a 17%<@ba.talpu> (+2%) </>chance to deal 140% damage"
-            },
-            {
-                "name": "Brute Smash",
-                "desc": "When attacking, has a 20% chance to deal 140% damage"
-            },
-            {
-                "name": "Brute Smash",
-                "desc": "When attacking, has a 22%<@ba.talpu> (+2%) </>chance to deal 140% damage"
-            }
-        ],
-        [
-            {
-                "name": "Habitual",
-                "desc": "In [Tales Within The Sand], When skill is activated, resources on her are sent to inventory"
-            }
-        ]
-    ],
-	"char_4119_wanqin": [
-        [
-            {
-                "name": "Watching the Weather",
-                "desc": "Increases the Max HP of friendly units within the surrounding 8 tiles by 3%. If they are facing the same direction as Wan Qing, increases the Max HP by 5% instead"
-            },
-            {
-                "name": "Watching the Weather",
-                "desc": "Increases the Max HP of friendly units within the surrounding 8 tiles by 4% <@ba.talpu>(+1%)</>. If they are facing the same direction as Wan Qing, increases the Max HP by 6% <@ba.talpu>(+1%)</> instead"
-            },
-            {
-                "name": "Watching the Weather",
-                "desc": "Increases the Max HP of friendly units within the surrounding 8 tiles by 5%. If they are facing the same direction as Wan Qing, increases the Max HP by 9% instead"
-            },
-            {
-                "name": "Watching the Weather",
-                "desc": "Increases the Max HP of friendly units within the surrounding 8 tiles by 6% <@ba.talpu>(+1%)</>. If they are facing the same direction as Wan Qing, increases the Max HP by 10% <@ba.talpu>(+1%)</> instead"
-            }
-        ]
-	],
-	"char_4123_ela": [
-        [
-            {
-                "name": "GRZMOT Mines",
-                "desc": "Can deploy up to 1 GRZMOT Mines (Can store up to 2); The first enemy that steps on a GRZMOT Mines will trigger its effect, on retreat activate GRZMOT Mine 's effect on self"
-            },
-            {
-                "name": "GRZMOT Mines",
-                "desc": "Can deploy up to 2<@ba.talpu>(+1)</>GRZMOT Mines (Can store up to 2); The first enemy that steps on a GRZMOT Mines will trigger its effect, on retreat activate GRZMOT Mine 's effect on self"
-            },
-            {
-                "name": "GRZMOT Mines",
-                "desc": "Can deploy up to 2 GRZMOT Mines (Can store up to 3); The first enemy that steps on a GRZMOT Mines will trigger its effect, on retreat activate GRZMOT Mine 's effect on self"
-            },
-            {
-                "name": "GRZMOT Mines",
-                "desc": "Can deploy up to 3<@ba.talpu>(+1)</>GRZMOT Mines (Can store up to 3); The first enemy that steps on a GRZMOT Mines will trigger its effect, on retreat activate GRZMOT Mine 's effect on self"
-            },
-            {
-                "name": "GRZMOT Mines",
-                "desc": "Can deploy up to 3 GRZMOT Mines (Can store up to 4); The first enemy that steps on a GRZMOT Mines will trigger its effect, on retreat activate GRZMOT Mine 's effect on self"
-            },
-            {
-                "name": "GRZMOT Mines",
-                "desc": "Can deploy up to 4<@ba.talpu>(+1)</>GRZMOT Mines (Can store up to 4); The first enemy that steps on a GRZMOT Mines will trigger its effect, on retreat activate GRZMOT Mine 's effect on self"
-            }
-        ],
-        [
-            {
-                "name": "“Bullseye”",
-                "desc": "Has a 30% chance to deal 150% physical damage, 100% chance on enemies under GRZMOT Mines 's effect"
-            },
-            {
-                "name": "“Bullseye”",
-                "desc": "Has a 30% chance to deal 160% <@ba.talpu>(+10%)</>physical damage, 100% chance on enemies under GRZMOT Mines 's effect"
-            }
-        ]
-    ],
-    "char_4126_fuze": [ 
-        [
-            {
-                "name": "Ballistic Shield",
-                "desc": "Has 17% chance to dodge Ranged Physical attacks"
-            },
-            {
-                "name": "Ballistic Shield",
-                "desc": "Has 20%<@ba.talpu>(+3%)</> chance to dodge Ranged Physical attacks"
-            },
-            {
-                "name": "Ballistic Shield",
-                "desc": "Has 27% chance to dodge Ranged Physical attacks"
-            },
-            {
-                "name": "Ballistic Shield",
-                "desc": "Has 30%<@ba.talpu>(+3%)</> chance to dodge Ranged Physical attacks"
-            }
-        ]
-    ],
-    "char_4124_iana": [ 
-        [
-            {
-                "name": "Gemini Replicator",
-                "desc": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, remove <$ba.invisible>Invisibility</> to the attacker, then immediately swap to <Substitute>"
-            },
-            {
-                "name": "Gemini Replicator",
-                "desc": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, remove <$ba.invisible>Invisibility</> to the attacker, then immediately swap to <Substitute>"
-            },
-            {
-                "name": "Gemini Replicator",
-                "desc": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 10% <$ba.fragile>Fragile</> to the attacker for 6 seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to <Substitute>"
-            },
-            {
-                "name": "Gemini Replicator",
-                "desc": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 12%<@ba.talpu>(+2%)</> <$ba.fragile>Fragile</> to the attacker for 6 seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to <Substitute>"
-            },
-            {
-                "name": "Gemini Replicator",
-                "desc": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 20% <$ba.fragile>Fragile</> to the attacker for 8 seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to <Substitute>"
-            },
-            {
-                "name": "Gemini Replicator",
-                "desc": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 22%<@ba.talpu>(+2%)</> <$ba.fragile>Fragile</> to the attacker for 8 seconds and remove <$ba.invisible>Invisibility</>, then immediately swap to <Substitute>"
-            }
-        ]
-    ],
-    "char_4125_rdoc": [
-        [
-            {
-                "name": "Military Doctor",
-                "desc": "Max HP +3%, attacks ignore 30 Def"
-            },
-            {
-                "name": "Military Doctor",
-                "desc": "Max HP +3% , attacks ignore 50<@ba.talpu>(+20)</> Def"
-            },
-            {
-                "name": "Military Doctor",
-                "desc": "Max HP +6%, attacks ignore 60 Def"
-            },
-            {
-                "name": "Military Doctor",
-                "desc": "Max HP +6% , attacks ignore 80<@ba.talpu>(+20)</> Def"
-            },
-            {
-                "name": "Military Doctor",
-                "desc": "Max HP +12%, attacks ignore 120 Def"
-            },
-            {
-                "name": "Military Doctor",
-                "desc": "Max HP +12% , attacks ignore 140<@ba.talpu>(+20)</> Def"
-            }
-        ],
-        [
-            {
-                "name": "Sympathetic Nerve Activation",
-                "desc": "When healing allies, exceed healing amount convert to fast decaying <$ba.barrier>Barrier</>"
-            },
-            {
-                "name": "Sympathetic Nerve Activation",
-                "desc": "When healing allies, exceed healing amount convert to decaying <$ba.barrier>Barrier</>"
-            }
-        ]
-    ],
-	"char_4132_ascln": [
-        [
-            {
-                "name": "死亡拘审",
-                "desc": "Attacks inflict the following effects to enemies:\nhave -12％ Movement Speed, dealing 6% of Ascalon's ATK as Arts damage per second for 18 seconds (can stack 3 time)"
-            },
-            {
-                "name": "死亡拘审",
-                "desc": "Attacks inflict the following effects to enemies:\nhave -15％ Movement Speed, dealing 8% of Ascalon's ATK as Arts damage per second for 18 seconds (can stack 3 time)"
-            },
-            {
-                "name": "死亡拘审",
-                "desc": "Attacks inflict the following effects to enemies:\nhave -18％ Movement Speed, dealing 10% of Ascalon's ATK as Arts damage per second for 25 seconds (can stack 3 time)"
-            }
-        ],
-        [
-            {
-                "name": "噬光残影",
-                "desc": "ASPD+8, when there ranged tile in the four surrounding tiles additionally ASPD+6"
-            },
-            {
-                "name": "噬光残影",
-                "desc": "ASPD+10<@ba.talpu>(+2)</>, when there ranged tile in the four surrounding tiles additionally ASPD+6"
-            }
-        ]
-    ],
-    "char_446_aroma": [
-        [
-            {
-                "name": "起泡性能测试",
-                "desc": "The first hit on each enemy deal 105% of ATK as Art damage and <$ba.levitate>Levitate</> it for 2.5 seconds"
-            },
-            {
-                "name": "起泡性能测试",
-                "desc": "The first hit on each enemy deal 110%<@ba.talpu>(+5%)</> of ATK as Art damage and <$ba.levitate>Levitate</> it for 2.5 seconds"
-            },
-            {
-                "name": "起泡性能测试",
-                "desc": "The first hit on each enemy deal 110% of ATK as Art damage and <$ba.levitate>Levitate</> it for 2.5 seconds"
-            },
-            {
-                "name": "起泡性能测试",
-                "desc": "The first hit on each enemy deal 115%<@ba.talpu>(+5%)</> of ATK as Art damage and <$ba.levitate>Levitate</> it for 2.5 seconds"
-            }
-        ]
-    ],
-    "char_4131_odda": [
-        [
-            {
-                "name": "落锤",
-                "desc": "After dealing Physical damage 45 times, ATK+9%"
-            },
-            {
-                "name": "落锤",
-                "desc": "After dealing Physical damage 45 times, ATK+12%<@ba.talpu>(+3%)</>"
-            },
-            {
-                "name": "落锤",
-                "desc": "After dealing Physical damage 30 times, ATK+15%"
-            },
-            {
-                "name": "落锤",
-                "desc": "After dealing Physical damage 30 times, ATK+18%<@ba.talpu>(+3%)</>"
-            }
-        ]
-    ],
-    "char_4130_luton": [
-        [
-            {
-                "name": "死里求生",
-                "desc": "When an enemy blocked by self is killed, restores 12% of Max HP"
-            },
-            {
-                "name": "死里求生",
-                "desc": "When an enemy blocked by self is killed, restores 14%<@ba.talpu>(+2%)</> of Max HP"
-            },
-            {
-                "name": "死里求生",
-                "desc":  "When an enemy blocked by self is killed, restores 16% of Max HP"
-            },
-            {
-                "name": "死里求生",
-                "desc": "When an enemy blocked by self is killed, restores 18%<@ba.talpu>(+2%)</> of Max HP"
-            }
-        ]
-    ],
-	"char_1035_wisdel": [
-        [
-            {
-                "name": "好礼",
-                "descCN": "攻击时为主目标附着残影，残影受到维什戴尔的余震影响时有15%概率爆炸，对周围所有敌人造成120%攻击力的物理伤害并使其<$ba.stun>晕眩</>0.5秒",
-                "desc": "When attacking attach an Afterimage to target. When the Afterimage is hit by Wis'adel's aftershocks, 15% chance to explode and deal 120% ATK as Physical damage to all nearby enemies and <$ba.stun>stun</> for 0.5 seconds"
-            },
-            {
-                "name": "好礼",
-                "descCN": "攻击时为主目标附着残影，残影受到维什戴尔的余震影响时有15%概率爆炸，对周围所有敌人造成130%<@ba.talpu>（+10%）</>攻击力的物理伤害并使其<$ba.stun>晕眩</>0.5秒",
-                "desc": "When attacking and attach an Afterimage to target. When the Afterimage is hit by Wis'adel's aftershocks, 15% chance to explode and deal 130%<@ba.talpu>(+10%)</> ATK as Physical damage to all nearby enemies and <$ba.stun>stun</> for 0.5 seconds"
-            },
-            {
-                "name": "好礼",
-                "descCN": "攻击时对主目标的攻击力提升至115%并为其附着残影，残影受到维什戴尔的余震影响时有15%概率爆炸，对周围所有敌人造成150%攻击力的物理伤害并使其<$ba.stun>晕眩</>1秒",
-                "desc": "When attacking, deal 115% ATK as Physical damage and attach an Afterimage to target. When the Afterimage is hit by Wis'adel's aftershocks, 15% chance to explode and deal 150% ATK as Physical damage to all nearby enemies and <$ba.stun>stun</> for 1 seconds"
-            },
-            {
-                "name": "好礼",
-                "descCN": "攻击时对主目标的攻击力提升至115%并为其附着残影，残影受到维什戴尔的余震影响时有15%概率爆炸，对周围所有敌人造成160%<@ba.talpu>（+10%）</>攻击力的物理伤害并使其<$ba.stun>晕眩</>1秒",
-                "desc": "When attacking, deal 115% ATK as Physical damage and attach an Afterimage to target. When the Afterimage is hit by Wis'adel's aftershocks, 15% chance to explode and deal 160%<@ba.talpu>(+10%)</> ATK as Physical damage to all nearby enemies and <$ba.stun>stun</> for 1 seconds"
-            }
-        ],
-        [
-            {
-                "name": "死魂灵的余息",
-                "descCN": "部署后立刻在攻击范围内召唤一个魂灵之影，在魂灵之影周围时获得<$ba.camou>迷彩</>",
-                "desc": "On deployment, summon a Shadow of Revenant within Attack Range. When near a Shadow of Revenant, gain <$ba.camou>Camouflage</>"
-            }
-        ]
-    ],
-    "char_4133_logos": [
-        [
-            {
-                "name": "语汇演化",
-                "descCN": "对一个目标发起攻击时，有40%几率额外对攻击范围内一个随机目标造成相当于攻击力40%的法术伤害",
-                "desc": "When attacking, 40% chance to attack another random target within Attack Range, dealing 40% ATK as Arts damage"
-            },
-            {
-                "name": "语汇演化",
-                "descCN": "对一个目标发起攻击时，有40%几率额外对攻击范围内一个随机目标造成相当于攻击力45%<@ba.talpu>（+5%）</>的法术伤害",
-                "desc": "When attacking, 40% chance to attack another random target within Attack Range, dealing 45%<@ba.talpu>(+5%)</> ATK as Arts damage"
-            },
-            {
-                "name": "语汇演化",
-                "descCN": "对一个目标发起攻击时，有40%几率额外对攻击范围内一个随机目标造成相当于攻击力60%的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
-                "desc": "When attacking, 40% chance to attack another random target within Attack Range, dealing 60% ATK as Arts damage and <$ba.sluggish>Slows</> them for 0.8 seconds"
-            },
-            {
-                "name": "语汇演化",
-                "descCN": "对一个目标发起攻击时，有40%几率额外对攻击范围内一个随机目标造成相当于攻击力65%<@ba.talpu>（+5%）</>的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
-                "desc": "When attacking, 40% chance to attack another random target within Attack Range, dealing 65%<@ba.talpu>(+5%)</> ATK as Arts damage and <$ba.sluggish>Slows</> them for 0.8 seconds"
-            }
-        ],
-        [
-            {
-                "name": "剜魂具辞",
-                "descCN": "攻击使目标在5秒内法术抗性-10且受到的法术伤害提高150点",
-                "desc": "Attacks inflict -10 RES to target and increase their Arts damage taken by 150 for 5 seconds"
-            },
-            {
-                "name": "剜魂具辞",
-                "descCN": "攻击使目标在5秒内法术抗性-10且受到的法术伤害提高165<@ba.talpu>（+15）</>点",
-                "desc": "Attacks inflict -10 RES to target and increase their Arts damage taken by 165<@ba.talpu>(+15)</> for 5 seconds"
-            }
-        ]
-    ],
-    "char_4134_cetsyr": [
-        [
-            {
-                "name": "过往尘埃",
-                "descCN": "魔王周围持续围绕3枚“微尘”，“微尘”碰撞友方干员时，消失并使该干员受到魔王特性效果提升至1.2倍，持续6秒，消失的“微尘”在6秒后重生",
-                "desc": "3 \"Dust Mote\" continually revolve around Civilight Eterna. When the \"Dust Mote\" hits an ally, it disappears and increases the Trait effect to that ally by 1.2x for 6 seconds. Disappeared \"Dust Mote\" will reappear in 6 seconds"
-            },
-            {
-                "name": "过往尘埃",
-                "descCN": "魔王周围持续围绕3枚“微尘”，“微尘”碰撞友方干员时，消失并使该干员受到魔王特性效果提升至1.5倍，持续6秒，消失的“微尘”在6秒后重生",
-                "desc": "3 \"Dust Mote\" continually revolve around Civilight Eterna. When the \"Dust Mote\" hits an ally, it disappears and increases the Trait effect to that ally by 1.5x for 6 seconds. Disappeared \"Dust Mote\" will reappear in 6 seconds"
-            }
-        ],
-        [
-            {
-                "name": "魔王残响",
-                "descCN": "上阵时，所有友方单位受到【萨卡兹】敌人的伤害降低10%",
-                "desc": "When deployed, reduce damage taken by all allies from [Sarkaz] enemies by 10%"
-            },
-            {
-                "name": "魔王残响",
-                "descCN": "上阵时，所有友方单位受到【萨卡兹】敌人的伤害降低15%<@ba.talpu>（+5%）</>",
-                "desc": "When deployed, reduce damage taken by all allies from [Sarkaz] enemies by 15%<@ba.talpu>(+5%)</>"
-            }
-        ]
-    ],
-    "char_4136_phonor": [
-        [
-            {
-                "name": "悠远河谷的齐唱·I",
-                "descCN": "部署后40秒内攻击附带45点凋亡损伤，并使攻击范围内的所有敌人受到3%的<$ba.magicfragile>【法术脆弱】</>和<$ba.elementfragile>【元素脆弱】</>",
-                "desc": "For 40 seconds after deployment, PhonoR-0's attacks deals 45 <$ba.dt.apoptosis2>Necrosis damage</>. Additionally, PhonoR-0 inflicts 3% <$ba.magicfragile>[Arts Fragility]</> and <$ba.elementfragile>[Elemental Fragility]</> to all enemies within Attack Range"
-            },
-            {
-                "name": "悠远河谷的齐唱·II",
-                "descCN": "部署后40秒内攻击附带45点凋亡损伤，并使攻击范围内的所有敌人受到5%的<$ba.magicfragile>【法术脆弱】</>和<$ba.elementfragile>【元素脆弱】</>",
-                "desc": "For 40 seconds after deployment, PhonoR-0's attacks deals 45 <$ba.dt.apoptosis2>Necrosis damage</>. Additionally, PhonoR-0 inflicts 5% <$ba.magicfragile>[Arts Fragility]</> and <$ba.elementfragile>[Elemental Fragility]</> to all enemies within Attack Range"
-            },
-            {
-                "name": "悠远河谷的齐唱·III",
-                "descCN": "部署后40秒内攻击附带50点凋亡损伤，并使攻击范围内的所有敌人受到5%的<$ba.magicfragile>【法术脆弱】</>和<$ba.elementfragile>【元素脆弱】</>",
-                "desc": "For 40 seconds after deployment, PhonoR-0's attacks deals 50 <$ba.dt.apoptosis2>Necrosis damage</>. Additionally, PhonoR-0 inflicts 5% <$ba.magicfragile>[Arts Fragility]</> and <$ba.elementfragile>[Elemental Fragility]</> to all enemies within Attack Range"
-            },
-            {
-                "name": "悠远河谷的齐唱·IV",
-                "descCN": "部署后40秒内攻击附带55点凋亡损伤，并使攻击范围内的所有敌人受到8%的<$ba.magicfragile>【法术脆弱】</>和<$ba.elementfragile>【元素脆弱】</>",
-                "desc": "For 40 seconds after deployment, PhonoR-0's attacks deals 55 <$ba.dt.apoptosis2>Necrosis damage</>. Additionally, PhonoR-0 inflicts 8% <$ba.magicfragile>[Arts Fragility]</> and <$ba.elementfragile>[Elemental Fragility]</> to all enemies within Attack Range"
-            },
-            {
-                "name": "悠远河谷的齐唱·V",
-                "descCN": "部署后40秒内攻击附带60点凋亡损伤，并使攻击范围内的所有敌人受到8%的<$ba.magicfragile>【法术脆弱】</>和<$ba.elementfragile>【元素脆弱】</>",
-                "desc": "For 40 seconds after deployment, PhonoR-0's attacks deals 60 <$ba.dt.apoptosis2>Necrosis damage</>. Additionally, PhonoR-0 inflicts 8% <$ba.magicfragile>[Arts Fragility]</> and <$ba.elementfragile>[Elemental Fragility]</> to all enemies within Attack Range"
-            },
-            {
-                "name": "悠远河谷的齐唱·VI",
-                "descCN": "部署后40秒内攻击附带60点凋亡损伤，并使攻击范围内的所有敌人受到10%的<$ba.magicfragile>【法术脆弱】</>和<$ba.elementfragile>【元素脆弱】</>",
-                "desc": "For 40 seconds after deployment, PhonoR-0's attacks deals 60 <$ba.dt.apoptosis2>Necrosis damage</>. Additionally, PhonoR-0 inflicts 10% <$ba.magicfragile>[Arts Fragility]</> and <$ba.elementfragile>[Elemental Fragility]</> to all enemies within Attack Range"
-            }
-        ]
-    ],
-    "char_1036_fang2": [
-        [
-            {
-                "name": "轻装上阵",
-                "descCN": "自身初次部署费用-2；撤退后使下一名干员部署费用-1",
-                "desc": "During the first deployment, DP Cost -2. After retreat, the next Operator DP Cost -1"
-            },
-            {
-                "name": "轻装上阵",
-                "descCN": "自身初次部署费用-3；撤退后使下一名干员部署费用-1",
-                "desc": "During the first deployment, DP Cost -3. After retreat, the next Operator DP Cost -1"
-            }
-        ]
-    ],
-    "char_1037_amiya3":[
-        [
-            {
-                "name": "诚挚期许",
-                "descCN": "在场时所有友方单位最大生命+5%，技能期间所有友方单位每秒恢复1.5%最大生命",
-                "desc": "When deployed, increase all allies' Max HP by 5%. When skill is active, all allies recover 1.5% Max HP every second"
-            },
-            {
-                "name": "诚挚期许",
-                "descCN": "在场时所有友方单位最大生命+8%，技能期间所有友方单位每秒恢复2.5%最大生命",
-                "desc": "When deployed, increase all allies' Max HP by 8%. When skill is active, all allies recover 2.5% Max HP every second"
-            }
-        ]
-    ]
+	]
 }
