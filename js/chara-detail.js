@@ -97,7 +97,6 @@
     var spinewidget
     var spinewidgetcg
     var curropname
-    var classchange
     var defaulttoken
     var globaltoken
     var globalelite = 0
@@ -108,8 +107,9 @@
     var talentLimit = []
     var ModuletalentValue
 
-    var AmiyaGuard="char_1001_amiya2"
-    var AmiyaMedic="char_1037_amiya3"
+    var Amiyacurrclass="caster"
+    const AmiyaGuard="char_1001_amiya2"
+    const AmiyaMedic="char_1037_amiya3"
 
     var currskin
     var currVoiceID
@@ -1390,46 +1390,42 @@
             }
 
             if(opKey=="char_002_amiya"){
-                    switch (classchange){
-                        case 'caster' :
-                            $('#class-change-caster').hide();
-                            $('#class-change-guard').show();
-                            $('#class-change-medic').show();
-                                opcode = "char_002_amiya"
-                                opcode2 = "char_002_amiya"
-                                opKey=opcode
-                                opdataFull.id = opcode
-                                break;
-                        case 'guard' :
-                            $('#class-change-caster').show();
-                            $('#class-change-guard').hide();
-                            $('#class-change-medic').show();
-                                opcode = AmiyaGuard
-                                opcode2 = "char_002_amiya"
-                                opKey=opcode
-                                opdataFull = db.charpatch.patchChars[AmiyaGuard]
-                                opdataFull.id = opcode
-                                break;
-                        case 'medic' :
-                            $('#class-change-caster').show();
-                            $('#class-change-guard').show();
-                            $('#class-change-medic').hide();
-                                opcode = AmiyaMedic
-                                opcode2 = "char_002_amiya"
-                                opKey=opcode
-                                opdataFull = db.charpatch.patchChars[AmiyaMedic]
-                                opdataFull.id = opcode
-                                break;
-                        default :
-                        $('#class-change-caster').hide();
-                        $('#class-change-guard').show();
-                        $('#class-change-medic').show();
-                    }
+                $('#class-change-1').show()
+                $('#class-change-2').show()
+                switch (Amiyacurrclass){
+                    case 'caster' :
+                            opcode = "char_002_amiya"
+                            opcode2 = "char_002_amiya"
+                            opKey=opcode
+                            opdataFull.id = opcode
+                            break;
+                    case 'guard' :
+                            opcode = AmiyaGuard
+                            opcode2 = "char_002_amiya"
+                            opKey=opcode
+                            opdataFull = db.charpatch.patchChars[AmiyaGuard]
+                            opdataFull.id = opcode
+                            break;
+                    case 'medic' :
+                            opcode = AmiyaMedic
+                            opcode2 = "char_002_amiya"
+                            opKey=opcode
+                            opdataFull = db.charpatch.patchChars[AmiyaMedic]
+                            opdataFull.id = opcode
+                            break;
+                    default:
+                        $('#class-change-1').show()
+                        $('#class-change-2').show()
+                }
             }else{
-                $('#class-change-caster').hide();
-                $('#class-change-guard').hide();
-                $('#class-change-medic').hide();
+                ChangeSTypeHTML(1,"guard")
+                ChangeSTypeHTML(2,"medic")
+                $('#class-change-1').hide()
+                $('#class-change-2').hide()
+                Amiyacurrclass='caster'
             }
+
+
             console.log(opdataFull)
             currVoiceID = opdataFull.id
             var linkconvert = opdataFull.appellation.replace(/[ ']/g,"-").toLowerCase()
@@ -6050,23 +6046,27 @@
         $("#tabs-opCG").fadeIn(200)
     }
 
-    function ChangeSType(amiyaclass="caster"){
-        console.log(curropname)
-        classchange=amiyaclass
+    function ChangeSType(buttonnum,amiyaclass="caster"){
+        ChangeSTypeHTML(buttonnum,Amiyacurrclass)
+        Amiyacurrclass=amiyaclass
         selectOperator(curropname)
     }
-    /*function ChangeCType(amiyaclass="caster"){
-        switch (amiyaclass) {
-            case 'caster':
-                return "char_002_amiya"
-            case 'guard':
-                return AmiyaGuard
-            case 'medic':
-                return AmiyaMedic
-            default:
-                return "char_002_amiya";
+    function ChangeSTypeHTML(num,classchange){
+        changepic={
+                    "caster" : "trans_magic_mark.png",
+                    "guard" : "trans_melee_mark.png",
+                    "medic" :"trans_medic_mark.png"
         }
-    }*/
+
+        $('#class-change-'+num.toString()).html(`
+            <button id='class-change-${classchange}' class='ak-button' onclick='ChangeSType(${num},"${classchange}")'>
+                <div id='class-background-${classchange}'><div id='class-beta'>BETA</div></div>
+                <a id="class-button">
+                    <img id="class-icon" src='extra\\AmiyaClass\\${changepic[classchange]}' title="${classchange} Amiya in beta phase">
+                </a>
+            </button>`
+        )
+    }
 
     function PlayPause(widget){
         if(widget=="token")
