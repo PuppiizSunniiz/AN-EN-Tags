@@ -885,8 +885,33 @@
         function refresh(calc=true){
             init().then(function() {
                 if(calc){
+                    Difftagcheck(JsonDATA.tags_aval)
                     calculate();
                     
                 }
             });
+        }
+
+        function Difftagcheck(eval){
+            console.log("元素" in eval)
+            if("元素" in eval){
+                $("[data-original-title='Elemental']").show()
+            }else{
+                let checked = $("[data-original-title='Elemental']").hasClass("btn-primary");
+                let tag = "元素"
+                let tagTL = "Elemental"
+                if (checked) {
+                    checkedTags = checkedTags.filter(function (v, _, __) {
+                        return v != tag;
+                    });
+                    checkedTagsTL = checkedTagsTL.filter(function (v, _, __) {
+                        return v != tagTL;
+                    });
+                    $("[data-original-title='Elemental']").toggleClass("btn-primary btn-secondary");
+                    localStorage.removeItem('lastChar')
+                    localStorage.setItem('checkedTagsCache', JSON.stringify(checkedTags));
+                    localStorage.setItem('checkedTagsTLCache', JSON.stringify(checkedTagsTL));
+                }                
+                $("[data-original-title='Elemental']").hide();
+            }
         }
