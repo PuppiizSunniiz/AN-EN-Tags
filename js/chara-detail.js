@@ -1150,6 +1150,7 @@
             op_rarity.length ==0 &&
             op_gender.length == 0 &&
             op_tag.length == 0 &&
+            op_faction.length ==0 &&
             $("#filter-equip").hasClass("btn-secondary") &&
             op_skill.length == 0) return;
 
@@ -1196,8 +1197,7 @@
                                                      : ops.filter(char => op_gender.includes(query(db.chars2, "name_cn", char.name).sex));
         if (op_tag.length) ops = exclusive_tag ? ops.filter(char => getTags(char).filter(tag => op_tag.includes(tag)).length == op_tag.length)
                                                : ops.filter(char => getTags(char).filter(tag => op_tag.includes(tag)).length > 0);
-        if (op_faction&&op_faction.length) ops = exclusive_faction ? ops.filter(char => op_faction[0] == char.displayLogo?char.displayLogo.toUpperCase():"")
-                                                       : ops.filter(char => op_faction.includes(char.displayLogo?char.displayLogo.toUpperCase():""));
+        if (op_faction&&op_faction.length) ops = ops.filter(char => [char.nationId,char.groupId,char.teamId].includes(op_faction[0]));
         if (op_skill.length) ops = exclusive_skill ? ops.filter(char =>
                                                         char.skills.filter(skill =>
                                                             db.skills[skill.skillId].levels.filter(sp =>

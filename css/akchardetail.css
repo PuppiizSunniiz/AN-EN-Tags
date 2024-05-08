@@ -1104,7 +1104,7 @@ body {
     
     /* Position the tooltip text - see examples below! */
 
-    top: 105%;
+    bottom: 105%;
     left: 50%;
     margin-left: -75px; 
 
@@ -1161,9 +1161,9 @@ body {
     visibility: visible;
 }
 
-.tooltiptop{
+/*.tooltiptop{
     top: -85% !important;
-}
+}*/
 
 .tooltipstyle1{
     background-color: #444 !important;
@@ -1697,6 +1697,15 @@ body {
     flex-wrap: wrap;
     width: 330px;
     text-align: center;
+}
+
+.filter-category-faction{
+    background: #333;
+    justify-content:center;
+    display: inline-flex;
+    padding: 2px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 .filter-btn{
     border-radius: 0px;

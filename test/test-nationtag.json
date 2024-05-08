@@ -1,0 +1,261 @@
+{
+    "nation": [
+        {
+            "id": "rhodes",
+            "order": 1,
+            "Name": "Rhodes Island",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"rhodes\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_rhodes.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Rhodes Island</span></div>"
+        },
+        {
+            "id": "yan",
+            "order": 2,
+            "Name": "Yan",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"yan\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_yan.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Yan</span></div>"
+        },
+        {
+            "id": "lungmen",
+            "order": 3,
+            "Name": "Yan-Lungmen",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"lungmen\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_lungmen.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Yan-Lungmen</span></div>"
+        },
+        {
+            "id": "egir",
+            "order": 4,
+            "Name": "Ægir",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"egir\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_egir.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Ægir</span></div>"
+        },
+        {
+            "id": "bolivar",
+            "order": 5,
+            "Name": "Bolívar",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"bolivar\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_bolivar.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Bolívar</span></div>"
+        },
+        {
+            "id": "columbia",
+            "order": 6,
+            "Name": "Columbia",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"columbia\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_columbia.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Columbia</span></div>"
+        },
+        {
+            "id": "higashi",
+            "order": 7,
+            "Name": "Higashi",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"higashi\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_higashi.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Higashi</span></div>"
+        },
+        {
+            "id": "iberia",
+            "order": 8,
+            "Name": "Iberia",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"iberia\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_iberia.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Iberia</span></div>"
+        },
+        {
+            "id": "kazimierz",
+            "order": 10,
+            "Name": "Kazimierz",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"kazimierz\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_kazimierz.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Kazimierz</span></div>"
+        },
+        {
+            "id": "kjerag",
+            "order": 11,
+            "Name": "Kjerag",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"kjerag\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_kjerag.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Kjerag</span></div>"
+        },
+        {
+            "id": "laterano",
+            "order": 12,
+            "Name": "Laterano",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"laterano\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_laterano.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Laterano</span></div>"
+        },
+        {
+            "id": "leithanien",
+            "order": 13,
+            "Name": "Leithanien",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"leithanien\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_leithanien.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Leithanien</span></div>"
+        },
+        {
+            "id": "minos",
+            "order": 14,
+            "Name": "Minos",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"minos\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_minos.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Minos</span></div>"
+        },
+        {
+            "id": "rim",
+            "order": 15,
+            "Name": "Rim Billiton",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"rim\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_rim.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Rim Billiton</span></div>"
+        },
+        {
+            "id": "sami",
+            "order": 16,
+            "Name": "Sami",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"sami\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_sami.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Sami</span></div>"
+        },
+        {
+            "id": "sargon",
+            "order": 17,
+            "Name": "Sargon",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"sargon\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_sargon.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Sargon</span></div>"
+        },
+        {
+            "id": "siracusa",
+            "order": 18,
+            "Name": "Siracusa",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"siracusa\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_siracusa.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Siracusa</span></div>"
+        },
+        {
+            "id": "ursus",
+            "order": 19,
+            "Name": "Ursus",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"ursus\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_ursus.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Ursus</span></div>"
+        },
+        {
+            "id": "victoria",
+            "order": 20,
+            "Name": "Victoria",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"victoria\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_victoria.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Victoria</span></div>"
+        }
+    ],
+    "group": [
+        {
+            "id": "elite",
+            "order": 21,
+            "Name": "Rhodes Island-Elite Operator",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"elite\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_elite.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Rhodes Island-Elite Operator</span></div>"
+        },
+        {
+            "id": "sweep",
+            "order": 22,
+            "Name": "S.W.E.E.P",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"sweep\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_sweep.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">S.W.E.E.P</span></div>"
+        },
+        {
+            "id": "babel",
+            "order": 23,
+            "Name": "Babel",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"babel\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_babel.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Babel</span></div>"
+        },
+        {
+            "id": "abyssal",
+            "order": 24,
+            "Name": "Abyssal Hunters",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"abyssal\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_abyssal.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Abyssal Hunters</span></div>"
+        },
+        {
+            "id": "blacksteel",
+            "order": 25,
+            "Name": "Blacksteel Worldwide",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"blacksteel\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_blacksteel.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Blacksteel Worldwide</span></div>"
+        },
+        {
+            "id": "glasgow",
+            "order": 26,
+            "Name": "Glasgow",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"glasgow\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_glasgow.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Glasgow</span></div>"
+        },
+        {
+            "id": "karlan",
+            "order": 27,
+            "Name": "Karlan Trade CO., LTD",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"karlan\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_karlan.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Karlan Trade CO., LTD</span></div>"
+        },
+        {
+            "id": "lgd",
+            "order": 28,
+            "Name": "Lungmen Guard Department",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"lgd\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_lgd.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Lungmen Guard Department</span></div>"
+        },
+        {
+            "id": "penguin",
+            "order": 29,
+            "Name": "Penguin Logistics",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"penguin\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_penguin.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Penguin Logistics</span></div>"
+        },
+        {
+            "id": "pinus",
+            "order": 30,
+            "Name": "Pinus Sylvestris",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"pinus\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_pinus.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Pinus Sylvestris</span></div>"
+        },
+        {
+            "id": "rhine",
+            "order": 31,
+            "Name": "Rhine Lab",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"rhine\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_rhine.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Rhine Lab</span></div>"
+        },
+        {
+            "id": "siesta",
+            "order": 32,
+            "Name": "Siesta",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"siesta\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_siesta.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Siesta</span></div>"
+        },
+        {
+            "id": "sui",
+            "order": 33,
+            "Name": "Yan-Sui",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"sui\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_sui.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Yan-Sui</span></div>"
+        },
+        {
+            "id": "dublinn",
+            "order": 34,
+            "Name": "Dublinn",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"dublinn\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_dublinn.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Dublinn</span></div>"
+        }
+    ],
+    "team": [
+        {
+            "id": "action4",
+            "order": 35,
+            "Name": "Op Team A4",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"action4\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_action4.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Op Team A4</span></div>"
+        },
+        {
+            "id": "reserve1",
+            "order": 36,
+            "Name": "Reserve Op Team A1",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"reserve1\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_reserve1.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Reserve Op Team A1</span></div>"
+        },
+        {
+            "id": "reserve4",
+            "order": 37,
+            "Name": "Reserve Op Team A4",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"reserve4\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_reserve4.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Reserve Op Team A4</span></div>"
+        },
+        {
+            "id": "reserve6",
+            "order": 38,
+            "Name": "Reserve Op Team A6",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"reserve6\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_reserve6.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Reserve Op Team A6</span></div>"
+        },
+        {
+            "id": "chiave",
+            "order": 39,
+            "Name": "Chiave Gang",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"chiave\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_chiave.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Chiave Gang</span></div>"
+        },
+        {
+            "id": "followers",
+            "order": 41,
+            "Name": "Followers",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"followers\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_followers.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Followers</span></div>"
+        },
+        {
+            "id": "lee",
+            "order": 42,
+            "Name": "Lee's Detective Agency",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"lee\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_lee.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Lee's Detective Agency</span></div>"
+        },
+        {
+            "id": "rainbow",
+            "order": 43,
+            "Name": "Team Rainbow",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"rainbow\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_rainbow.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Team Rainbow</span></div>"
+        },
+        {
+            "id": "student",
+            "order": 44,
+            "Name": "Ursus Student Self-Governing Group",
+            "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"student\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_student.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Ursus Student Self-Governing Group</span></div>"
+        }
+    ],
+    "HTML": "<div class=\"op-faction btn-secondary tooltip2\" data-id=\"rhodes\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_rhodes.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Rhodes Island</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"yan\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_yan.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Yan</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"lungmen\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_lungmen.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Yan-Lungmen</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"egir\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_egir.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Ægir</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"bolivar\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_bolivar.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Bolívar</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"columbia\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_columbia.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Columbia</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"higashi\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_higashi.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Higashi</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"iberia\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_iberia.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Iberia</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"kazimierz\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_kazimierz.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Kazimierz</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"kjerag\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_kjerag.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Kjerag</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"laterano\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_laterano.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Laterano</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"leithanien\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_leithanien.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Leithanien</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"minos\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_minos.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Minos</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"rim\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_rim.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Rim Billiton</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"sami\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_sami.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Sami</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"sargon\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_sargon.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Sargon</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"siracusa\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_siracusa.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Siracusa</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"ursus\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_ursus.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Ursus</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"victoria\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_victoria.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Victoria</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"elite\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_elite.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Rhodes Island-Elite Operator</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"sweep\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_sweep.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">S.W.E.E.P</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"babel\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_babel.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Babel</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"abyssal\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_abyssal.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Abyssal Hunters</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"blacksteel\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_blacksteel.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Blacksteel Worldwide</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"glasgow\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_glasgow.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Glasgow</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"karlan\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_karlan.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Karlan Trade CO., LTD</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"lgd\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_lgd.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Lungmen Guard Department</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"penguin\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_penguin.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Penguin Logistics</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"pinus\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_pinus.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Pinus Sylvestris</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"rhine\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_rhine.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Rhine Lab</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"siesta\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_siesta.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Siesta</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"sui\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_sui.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Yan-Sui</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"dublinn\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_dublinn.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Dublinn</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"action4\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_action4.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Op Team A4</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"reserve1\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_reserve1.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Reserve Op Team A1</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"reserve4\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_reserve4.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Reserve Op Team A4</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"reserve6\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_reserve6.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Reserve Op Team A6</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"chiave\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_chiave.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Chiave Gang</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"followers\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_followers.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Followers</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"lee\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_lee.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Lee's Detective Agency</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"rainbow\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_rainbow.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Team Rainbow</span></div>\n<div class=\"op-faction btn-secondary tooltip2\" data-id=\"student\" onclick=\"toggleBtn(this)\" section=\"faction\"><img class='faction-img'  src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/factions/logo_student.png'><span class=\"tooltiptext tooltiptop tooltipstyle1 nohover\">Ursus Student Self-Governing Group</span></div>"
+}

@@ -252,6 +252,10 @@
             "en": "When not blocking enemies, prioritizes dealing <@ba.kw>ranged AoE</> Physical damage",
             "color": "physical"
         },
+        "优先攻击空中单位，且不受<@ba.kw>部署数量</>限制，但再部署时间极长":{
+            "en": "Attacks aerial enemies first and ignores <@ba.kw>Deployment Limit</>, but has a long Redeployment Time",
+            "color": "physical"
+        },
         "撤退时返还<@ba.kw>大量</>该次部署费用": {
             "en": "Refunds <@ba.kw>a large portion</> of the current DP Cost when retreated",
             "color": "extra"
