@@ -1790,8 +1790,18 @@
             if(db.handbookInfo.handbookDict[opdataFull.id]|| opdataFull.id == AmiyaGuard|| opdataFull.id == AmiyaMedic){
                 GetStory(opdataFull)
             }else{
-                $('#info-illustrator').html("")
-                $('#info-voiceactor').html("")
+                $('#name-illustrator').html("-")
+                $('#info-voiceactor').html(`
+                <div class="voiceactor-None">
+                    <div id="lang-voiceactor-None" class="btn-infoleft ak-shadow">
+                        <i class="fas fa-microphone-alt" title="Voice Actor">
+                        </i>
+                    </div>
+                    <div id="name-voiceactor-None" class="btn-inforight">
+                        -
+                    </div>
+                </div>
+            `)
             }
 
             $('#opaudiocontent').empty()
@@ -3434,6 +3444,8 @@
                 IllustratorList.push(element)
              });
         }
+        if(IllustratorList.length==0) IllustratorList=db.handbookInfoEN.npcDict[opdataFull.id]?db.handbookInfoEN.npcDict[opdataFull.id].illustList:db.handbookInfo.npcDict[opdataFull.id].illustList
+
         for(var i = 0 ; i < IllustratorList.length; i++){
             if (i > 0)
             {
