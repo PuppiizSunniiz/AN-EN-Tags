@@ -1,6 +1,6 @@
     $.holdReady(true);
 
-    //console.log = function () { }
+    console.log = function () { }
 
     const jsonList = {
 
@@ -102,6 +102,7 @@
     var globalelite = 0
     var globallevel =[1,1,1]
     var globalskill = 0
+    var skillValue
     var israritygrouped
     var talentValue = [0,0,0]
     var talentLimit = []
@@ -428,7 +429,6 @@
         $('#lefthandtoggle').css("background-color","#222")
 
         $('#opname').bind("enterKey",function(e){
-            // console.log()
             populateOperators($('#opname').val(),true)
          });
          $('#opname').keyup(function(e){
@@ -523,7 +523,6 @@
                     var correctname = (unreadable?unreadable.name:historyopname.replace(/_/g," "))
                     console.log(correctname)
                     var char = query(db.chars,"appellation",correctname,true,true);
-                    // console.log()
                     selectOperator(char[Object.keys(char)].name)
                 }
                 if(vars.has("story")){
@@ -1373,6 +1372,7 @@
                 }
             })
             globaltoken=defaulttoken?defaulttoken:opdataFull.skills[0]?opdataFull.skills[0].overrideTokenKey:null
+            globalskill=0
 
             tokenname = globaltoken
             currskin =opcode
@@ -1450,7 +1450,6 @@
             var extraSkin = []
             Object.keys(db.skintable.charSkins).forEach(element => {
                 // console.log(element)
-                // console.log()
                 if(element.startsWith(opdataFull.id)){
                     if(db.skintable.charSkins[element].displaySkin.skinName){
                         extraSkin.push(db.skintable.charSkins[element])
@@ -1790,18 +1789,20 @@
             if(db.handbookInfo.handbookDict[opdataFull.id]|| opdataFull.id == AmiyaGuard|| opdataFull.id == AmiyaMedic){
                 GetStory(opdataFull)
             }else{
+                $("#opstorycredits").html(``)
+                $("#opstorycontent").html(`<div class="row storyrow"> </div>`)
                 $('#name-illustrator').html("-")
                 $('#info-voiceactor').html(`
-                <div class="voiceactor-None">
-                    <div id="lang-voiceactor-None" class="btn-infoleft ak-shadow">
-                        <i class="fas fa-microphone-alt" title="Voice Actor">
-                        </i>
-                    </div>
-                    <div id="name-voiceactor-None" class="btn-inforight">
-                        -
-                    </div>
-                </div>
-            `)
+                                            <div class="voiceactor-None">
+                                                <div id="lang-voiceactor-None" class="btn-infoleft ak-shadow">
+                                                    <i class="fas fa-microphone-alt" title="Voice Actor">
+                                                    </i>
+                                                </div>
+                                                <div id="name-voiceactor-None" class="btn-inforight">
+                                                    -
+                                                </div>
+                                            </div>
+                                            `)
             }
 
             $('#opaudiocontent').empty()
@@ -1812,6 +1813,7 @@
 
             $("#skill-tabs").empty();
             $("#skill-contents").empty();
+            skillValue = Array.from({ length: opdataFull.skills.length}, () => 0)
             $.each(opdataFull.skills,function(i,v){
                 var maxSkillLevel = opdataFull.skills[i].levelUpCostCond.length;
                 var skillId = opdataFull.skills[i].skillId;
@@ -1962,7 +1964,7 @@
                                     ${titledMaker2(currdetails.name,currdetails.key)}  ${currdetails.value}
                             </div>`
                         });
-                        detailtable = `<button id='skilldetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler("skilldetailcontent")'style="color:#fff;text-align:center;background:#222;padding:2px">Skill Details <i class="fas fa-caret-down"></i></button>
+                        detailtable = `<button id='skilldetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler("skilldetailcontent",$(this))'style="color:#fff;text-align:center;background:#222;padding:2px">Skill Details <i class="fas fa-caret-down"></i></button>
                             <div id='skilldetailcontent' class="ak-shadow skilldetailcontent" style="display:none;margin-bottom:8px;padding-top:10px;padding:2px;background:#666">
                                 ${skillhtmldetail}
                             </div>
@@ -2369,7 +2371,6 @@
         // <@ba.kw> = Blue Highlight
         switch (mission.template) {
             case "EquipmentCharKilled":
-                console.log()
                 if(mission.paramList[0].includes(";")){
                     var splitchara = mission.paramList[0].split(";")
                     var allcharalist = []
@@ -2965,12 +2966,12 @@
         }
     }
 
-    function UpdateTokenContent(){
-        if(!globaltoken){
+    function UpdateTokenContent(wholetokenupdate=true){
+        if(!globaltoken||globaltoken=="null"){
             $("#token-contents").html("");
             return
         }
-        var tokenfulldata = db.chars[globaltoken]
+        var tokenfulldata = db.charsEN[globaltoken]?db.charsEN[globaltoken]:db.chars[globaltoken]
         if(!tokenfulldata){
             return
         }
@@ -3046,27 +3047,114 @@
         //     </div>
         //     `)
         // });
-        $("#token-contents").html(
-            `
-            <div style='background:#333;margin:2px 0px;padding:2px 10px'>
-                <div style ="display:inline-block;margin:0px 2px;background:#222222aa">
-                    <img class='token-image notclickthrough' id='Tokenimage' src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/${globaltoken}.png' style='width: 60px;margin:-0px 0px 0px 0px'>
-                </div>
-                <div style ="position:absolute;left:80px;top:7px">
-                    <div class='stats'>
-                        <div class='stats-l' style="min-width:unset;width:40px;background:#3D3D3D"><img style='max-height:30px;margin:-11px -10px -9px -10px' src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/elite/${currelite}-s.png'></div><div class='stats-r' style="min-width:unset">Lv <span id="summon-level">${currlevel}</span></div>
+
+        if (wholetokenupdate) {
+            $("#token-contents").html(
+                `
+                <div class="token-details" style='background:#333;margin:2px 0px;padding:2px 10px;height:64px'>
+                    <div style ="display:inline-block;margin:0px 2px;background:#222222aa">
+                        <img class='token-image notclickthrough' id='Tokenimage' src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/${globaltoken}.png' style='width:60px;margin:-0px 0px 0px 0px'>
                     </div>
-                    <div>
-                        ${tokenfulldata.appellation}
+                    <div style ="position:absolute;left:80px;top:7px">
+                        <div class='stats'>
+                            <div class='stats-l' style="min-width:unset;width:40px;background:#3D3D3D"><img style='max-height:30px;margin:-11px -10px -9px -10px' src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/elite/${currelite}-s.png'></div><div class='stats-r' style="min-width:unset">Lv <span id="summon-level">${currlevel}</span></div>
+                        </div>
+                        <div>
+                            ${db.charsEN[globaltoken]?tokenfulldata.name:tokenfulldata.appellation}
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div style="width:100%;text-align:center">
-                ${stats}
-            </div>
-            ${rangeMaker(tokenfulldata.phases[globalelite].rangeId)}
-            `
-        )
+                <div class="token-trait" style=${tokenfulldata.description?"padding-top:15px;padding-left:15px;":""}>
+                    ${tokenfulldata.description?GetTrait(tokenfulldata.description,""):""}
+                </div>
+                <div class="token-skill" style="width:100%;min-width:320px;"></div>
+                <div class="token-stats" style="width:100%;text-align:center;padding:4px 5px 5px 10px;min-width:320px">
+                <button id='Tokstatdetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler("Tokstatdetailcontent",$(this))'style="color:#fff;text-align:center;background:#222;min-width:320px;height:27px">Token Stat <i class="fas fa-caret-up"></i></button>
+                    <div class="Tokstatdetailcontent">
+                        ${stats}
+                        ${rangeMaker(tokenfulldata.phases[globalelite].rangeId)}
+                    </div>
+                </div>
+                `
+            )
+            UpdateTokenSkill()
+        }else{
+            $("#token-contents .token-details .stats").html(`<div class='stats-l' style="min-width:unset;width:40px;background:#3D3D3D"><img style='max-height:30px;margin:-11px -10px -9px -10px' src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/elite/${currelite}-s.png'></div><div class='stats-r' style="min-width:unset">Lv <span id="summon-level">${currlevel}</span></div>`)
+        }
+    }
+
+    function UpdateTokenSkill(token=globaltoken,skill=globalskill){
+        var TokenskillID=db.chars[token].skills[skill].skillId //charEN[token]?charEN[token].skills[skill].skillId:charCN[token].skills[skill].skillId
+        var Tokenskill=db.skills[TokenskillID]
+        if(!Tokenskill) return ;
+        if(!Tokenskill.levels[0].description && Tokenskill.levels[0].blackboard.length==0) return ;
+        var tables = "";
+        var skilllvblackboard
+        var ToktabContents
+
+        for(i2=0;i2<10;i2++){
+            if(Tokenskill.levels[0].description)
+                var TokskillDesc = Tokenskill.levels.length>i2?getSkillDesc(TokenskillID,i2):getSkillDesc(TokenskillID,0);
+            else
+                var TokskillDesc = ""
+            var Tokskilldetails =[]
+            var Tokskilltable = TokskillDesc=""?"":`<div class='skilldesc'>${TokskillDesc}</div>`
+            var Tokdetailtable = ""
+
+            console.log(Tokskilltable)
+
+            skilllvblackboard = Tokenskill.levels.length>i2?i2:0
+            Tokenskill.levels[skilllvblackboard].blackboard.forEach(skillinfo => {
+                var skilljson = {}
+                skilljson.name = db.effect[skillinfo.key]?db.effect[skillinfo.key]:skillinfo.key
+                skilljson.key = skillinfo.key
+                skilljson.value = skillinfo.value
+    
+                Tokskilldetails.push(skilljson)
+                if(skillinfo.key=="force"||skillinfo.key=="base_force_level"||skillinfo.key=="attack@force") force= skillinfo.value
+            });
+            
+            if(Tokskilldetails.length>0){
+                var Tokskillhtmldetail = ""
+    
+                Tokskilldetails.forEach(currdetails => {
+    
+                    Tokskillhtmldetail+=`
+                    <div style="background:#444;margin:4px;padding:2px;padding-top:8px;background:#444;border-radius:2px;color:#999999">
+                            ${titledMaker2(currdetails.name,currdetails.key)}  ${currdetails.value}
+                    </div>`
+                });
+                Tokdetailtable = Tokskillhtmldetail
+            }else{
+                Tokdetailtable=""
+            }
+
+            tables+=`<table id='Tokskill${skill}level${i2}stats' class='${lefthand=="true"?"left-hand":""} skillstats ${(i2!=skillValue[globalskill] ? '' : 'active')}'>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div id='Tokskilldetailcontent' class="ak-shadow Tokskilldetailcontent" style="display:none;margin-bottom:8px;padding-top:10px;padding:2px;background:#666">
+                                        ${Tokskilltable==""?"":`${Tokskilltable}`}
+                                        ${Tokdetailtable}
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="height:5px">
+                            </tr>        
+                        </tbody>
+                    </table>
+                    `
+        }
+
+        ToktabContents = `<div id='Tokskill${skill}StatsCollapsible' class='collapse collapsible notclickthrough show'>
+                            <button id='Tokskilldetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler("Tokskilldetailcontent",this)' style="color:#fff;text-align:center;background:#222;padding:2px;min-width:320px">
+                                Token Skill Description & Details 
+                                <i class="fas fa-caret-down"></i>
+                            </button>
+                            ${tables}
+                        </div>`
+
+        $(".token-skill").html(ToktabContents);
     }
 
     function GetModuleStory(module){
@@ -3758,7 +3846,7 @@
         // opdataFull.skills.forEach(i => {
             // console.log(elite)
         globalelite = elite
-        UpdateTokenContent()
+        UpdateTokenContent(false)
         $.each(opdataFull.skills,function(i,v){
             // console.log(i)
             var skillId = opdataFull.skills[i].skillId;
@@ -3804,7 +3892,6 @@
         $('#opsfxcontent').empty()
         console.log(opdataFull.id)
         var preDir = "https://raw.githubusercontent.com/Aceship/Arknight-voices/main/"
-        // console.log()
         var filteredFX = []
         console.log(opdataFull)
         db.audio_data.soundFXBanks.forEach(element => {
@@ -4132,7 +4219,6 @@
 
         </div>
         `
-        console.log()
 
         // console.log(htmlcomb.join(""))
         if (riicList.length>0)
@@ -4518,7 +4604,7 @@
                 </div>`
             });
 
-            ModuledetailHeader = `<button id='Moduletalentdetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler2("Moduletalentdetailcontent-${modulenum}-${phase}-${currpotent}")'style="display:inline-block;color:#aaa;text-align:center;background:#333;padding:2px;font-size:12px">
+            ModuledetailHeader = `<button id='Moduletalentdetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler2("Moduletalentdetailcontent-${modulenum}-${phase}-${currpotent}",$(this))'style="display:inline-block;color:#aaa;text-align:center;background:#333;padding:2px;font-size:12px">
                                     "Talent Details"
                                     <i class="fas fa-caret-down">
                                     </i>
@@ -4624,7 +4710,7 @@
                         ${titledMaker2(currdetails.name,currdetails.key)}  ${currdetails.value}
                 </div>`
             });
-            detailHeader = `<button id='talentdetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler2("talentdetailcontent${talentnum}")'style="display:inline-block;color:#aaa;text-align:center;background:#333;padding:2px;font-size:12px">Talent Details <i class="fas fa-caret-down"></i></button>`
+            detailHeader = `<button id='talentdetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler2("talentdetailcontent${talentnum}",$(this))'style="display:inline-block;color:#aaa;text-align:center;background:#333;padding:2px;font-size:12px">Talent Details <i class="fas fa-caret-down"></i></button>`
             detailtable = `
                 <div id='talentdetailcontent${talentnum}' class="ak-shadow talentdetailcontent" style="display:none;margin-bottom:8px;padding-top:10px;padding:2px;background:#666">
                     ${talenthtmldetail}
@@ -4802,7 +4888,6 @@
     }
 
     function GetTrust(opdataFull){
-        // console.log()
         let mintrust = opdataFull.favorKeyFrames[0].data
         let maxtrust = opdataFull.favorKeyFrames[1].data
         let differences = {}
@@ -5231,9 +5316,14 @@
 
     function changeSkillLevel(el,skill_no){
         var value = $(el).val();
+        skillValue[skill_no]=Number(value)-1
+
         $("#skill"+skill_no+"StatsCollapsible").children("table").removeClass("active");
         $("#skill"+skill_no+"level"+(value-1)+"stats").addClass("active");
         $("#skill"+skill_no+"LevelDisplay").html(SkillRankDisplay(value));
+
+        $("#Tokskill"+skill_no+"StatsCollapsible").children("table").removeClass("active");
+        $("#Tokskill"+skill_no+"level"+(value-1)+"stats").addClass("active");
     }
 
     function SkillRankDisplay(skill_no){
@@ -5488,7 +5578,6 @@
 
                     if(animlist[skillmax-skillnum-1]){
                         $("#spine-text").text(`Skill ${skillnum+1}`)
-                        // console.log()
                         CreateAnimation(spinewidget,spinewidget.customanimation[animlist[skillmax-skillnum-1]],true)
                     }
                 }
@@ -6327,14 +6416,16 @@
         return anim.map(function(e) { return e.name; }).indexOf(name)
     }
 
-    function SlideToggler(el){
+    function SlideToggler(el,btel){
 
             $(`.${el}`).slideToggle(100)
+            $("#"+$(btel).attr("id")+" > i").toggleClass("fa-caret-down fa-caret-up").attr("class")
             console.log("WEEEI")
     }
-    function SlideToggler2(el){
+    function SlideToggler2(el,btel){
 
             $(`#${el}`).slideToggle(100)
+            $("#"+$(btel).attr("id")+" > i").toggleClass("fa-caret-down fa-caret-up").attr("class")
             console.log("WEEEI")
     }
 

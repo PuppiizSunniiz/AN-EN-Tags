@@ -1,8 +1,8 @@
 # Known Issue
-    - skill token not remove/hide when select other skill
+    - Tooltips in Token Skill broke (W / Scene / swire2 /ela / W2) *** ela W2 somehow ok initailly S1 CN
 
 # Next Step
-    - Add skill description and detail for TOKEN (time to see Stainless)
+    - make Skill Rank Up Requirements collapsabel
 
 # Not now or Never
     - Revamp akenemy

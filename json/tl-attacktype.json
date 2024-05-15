@@ -555,67 +555,97 @@
         "操作<@ba.kw>浮游单元</>造成<@ba.kw>法术伤害</>\\n单元攻击同一敌人伤害提升（单元初始伤害提高，最高造成干员110%攻击力的伤害）": {
             "en": "Controls a <@ba.kw>Drone</> to deal <@ba.kw>Arts</> damage to an enemy; When the Drone continuously attacks the same enemy, its damage will increase (Increase initial damage, up to 110% of the operator's ATK)",
             "color": "magic",
-            "note": "Mech Accord"
+            "note": "Mech Accord Mod (FUN-X)"
         },
         "操作<@ba.kw>浮游单元</>造成<@ba.kw>法术伤害</>\\n单元攻击同一敌人伤害提升（最高造成干员120%攻击力的伤害）": {
             "en": "Controls a <@ba.kw>Drone</> to deal <@ba.kw>Arts</> damage to an enemy; When the Drone continuously attacks the same enemy, its damage will increase (up to 120% of the operator's ATK)",
-            "color": "magic"
+            "color": "magic",
+            "note": "Mech Accord Mod (FUN-Y)"
         },
         "攻击造成<@ba.kw>法术伤害</>，攻击敌人时为攻击范围内一名友方干员治疗相当于<@ba.kw>{scale:0%}</>伤害的生命值": {
             "en": "Attacks deal Arts damage and heal the HP of an ally within Attack Range for <@ba.kw>{scale:0%}</> of the damage dealt",
-            "color": "magic"
+            "color": "magic",
+            "note": "Incantation Medic Mod (INC-X)"
         },
         "每次特性消耗费用时攻击力+4%，最多可以叠加5次": {
             "en": "Each time this unit consume DP ATK +4% (stacks up to 5 times)",
-            "color": "extra"
+            "color": "extra",
+            "note": "Merchant Mod (MER-Y)"
         },
         "范围内敌人越多造成的伤害越高（最高提升<@ba.kw>{damage_scale:0%}</>）": {
             "en": "Damage increase according to numbers of enemies in attack range (up to <@ba.kw>{damage_scale:0%}</>)",
-            "color": "magic"
+            "color": "magic",
+            "note": "Phalanx Caster Mod (PLX-Y)"
+        },
+        "不会受到攻击，只能部署在召唤者攻击范围内": {
+            "en": "Cannot be attacked, can only be deployed within the summoner's Attack Range",
+            "color": "common",
+            "note": "Ray 's Token (Sandbeast)"
         },
         "能够阻挡一个敌人，生命值高于50%时攻击速度<@ba.vup>+{attack_speed}</>": {
             "en": " Can block one enemy; When HP is above 50%, ASPD +10",
-            "color": "physical"
+            "color": "physical",
+            "note": "Fighter Mod (FGT-Y)"
         },
         "能够阻挡一个敌人，拥有<@ba.kw>15%</>的物理闪避": {
             "en": "Can block one enemy; 30% Physical Dodge",
-            "color": "physical"
+            "color": "physical",
+            "note": "Fighter Mod (FGT-X)"
         },
         "攻击范围内存在敌人时技力自然恢复速度+0.2/秒": {
             "en": "SP recovery +0.2/sec when there are enemies within range",
-            "color": "extra"
+            "color": "extra",
+            "note": "Decel Binder (Grain Buds) Mod (DEC-X)"
         },
         "攻击范围内敌人的<$ba.invisible>隐匿</>效果失效": {
             "en": "Enemies within Attack Range lose <$ba.invisible>Invisibility</>",
-            "color": "extra"
+            "color": "extra",
+            "note": "Sentinel Protector Mod (SPT-X)"
         },
         "自身可以额外部署在近战位，陷阱可以额外部署在远程位": {
             "en": "Can be deployed on Melee tiles ,traps can be deployed on Ranged tiles",
-            "color": "extra"
+            "color": "extra",
+            "note": "Trapmaster Mod (TRP-D)"
+        },
+        "不会受到攻击，无法放置于<@ba.kw>敌人已在</>的格子中": {
+            "en": "Cannot be attacked; cannot be deployed on tiles where enemies are <@ba.kw>already present</>",
+            "color": "common",
+            "note": "Ela 's Token (GRZMOT Mine)"
         },
         "攻击使目标周围的其他敌人受到相当于攻击力<@ba.kw>50%</>的<@ba.kw>群体</>物理伤害": {
             "en": "Attacks deal <@ba.kw>50%</> Physical damage to other <@ba.kw>ground enemies</> in a small area",
-            "color": "physical"
+            "color": "physical",
+            "note": "Earthshaker 's Trait"
         },
         "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，援军受到来自自身阻挡单位的伤害降低<@ba.kw>15%</>，自身攻击援军阻挡的敌人时攻击力提升至150%": {
             "en": "This unit can designate one <@ba.kw>Tactical Point</> within attack range to call Reinforcements; Reinforcements receives 15% less damage from enemies blocked by self ; ATK is increased to 150% when attacking enemies blocked by Reinforcements",
-            "color": "physical"
+            "color": "physical",
+            "note": "Tactician Mod (TAC-X)"
         },
         "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，援军阻挡的敌人更容易受到我方的攻击，自身攻击援军阻挡的敌人时攻击力提升至165%": {
             "en": "This unit can designate one <@ba.kw>Tactical Point</> within attack range to call Reinforcements; ATK is increased to 165% when attacking enemies blocked by Reinforcements",
-            "color": "physical"
+            "color": "physical",
+            "note": "Tactician Mod (TAC-Y)"
         },
         "攻击造成<@ba.kw>法术伤害</>，可以造成<@ba.kw>元素损伤</>，且不受<@ba.kw>部署数量</>限制，但再部署时间极长": {
             "en": "Attacks deal <@ba.kw>Arts damage</>, and can inflict <@ba.kw>Elemental Damage</> and ignores <@ba.kw>Deployment Limit</>, but has a long Redeployment Time",
-            "color": "Magic"
+            "color": "magic",
+            "note": "PhonoR-0 's Trait"
         },
         "攻击附带<@ba.vup>{atk_scale_m:0%}</>攻击力的法术伤害": {
             "en": "Can launch <@ba.kw>Ranged Attacks</> that deal 80% of normal ATK, deals 10% ATK as <@ba.kw>Arts damage</>",
-            "color": "Extra"
+            "color": "extra",
+            "note": "Lord Mod (LOR-X)"
         },
         "攻击范围内存在2名及以上敌人时攻击速度<@ba.vup>+12</>": {
-            "en": "Can launch <@ba.kw>Ranged Attacks</> that deal 80% of normal ATK. When there are 2 or more in Attack Range, ASPD<@ba.talpu>(+12)</>",
-            "color": "Physical"
+            "en": "Can launch <@ba.kw>Ranged Attacks</> that deal 80% of normal ATK. When there are 2 or more in Attack Range, ASPD<@ba.talpu>+12</>",
+            "color": "physical",
+            "note": "Lord Mod (LOR-Y)"
+        },
+        "可攻击维什戴尔攻击范围内的敌人": {
+            "en": "Can attack enemies within the summoner's Attack Range",
+            "color": "common",
+            "note": "Wiš'adel 's Token (Shadow of Revenant)"
         }
     },
     "parts": [

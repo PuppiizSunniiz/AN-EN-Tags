@@ -763,6 +763,47 @@ body {
     background-color: #4f4f4f!important;
 }
 
+#token-contents .skillstats {
+    display: none;
+    margin-bottom: 5px;
+    min-width: 330px;
+    width: 100%;
+    /*margin-top: 5px ;*/
+}
+#token-contents .skillstats.active {
+    display: block;
+    /*min-height:100px;*/
+}
+#token-contents .skillstats .skilldesc {
+    min-width: 330px;
+    border-radius: 2px;
+    padding:5px;
+    font-size: 14px;
+    width: 100%;
+    background:#444444;
+}
+#token-contents .skillstats .skilldesc br{
+    display: block;
+    content: " ";
+    margin: 1.5px 0;
+}
+.token-skill .collapsible {
+    padding: 4px 5px 5px 10px;
+    min-width: 330px;
+    width:100%;
+}
+.token-stat .collapsible {
+    padding: 4px 5px 5px 10px;
+    min-width: 330px;
+    width:100%;
+}
+
+/*#Tokskilldetailcontent {
+    padding: 4px 5px 5px 10px;
+    min-width: 330px;
+    width:100%;
+}*/
+
 #skill-contents .skillstats {
     display: none;
     margin-top: 10px ;
@@ -1338,7 +1379,7 @@ body {
 .btn-infoleft {
     display: inline-block;
     background: #111;
-    min-width: 25px;
+    /*min-width: 25px;*/
     text-align: center;
     color:#ddd;
     font-size: 13px;
@@ -1351,7 +1392,7 @@ body {
 .btn-inforight {
     display: inline-block;
     background: #111111ee;
-    min-width: 120px;
+    width: 140px;
     text-align: center;
     color:#ffffff;
     font-size: 13px;
