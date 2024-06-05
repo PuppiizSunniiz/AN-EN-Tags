@@ -1,6 +1,6 @@
     $.holdReady(true);
 
-    console.log = function () { }
+    //console.log = function () { }
 
     const jsonList = {
 
@@ -69,7 +69,7 @@
         sanitygone        :"https://sanitygone.help/aceship.json",
 
         //TEMPModuleTalent
-        TempModuletalentsTL :"./json/TempModuletalentsTL.json"
+        TempModuletalentsTL :"./json/tl-module.json"
     };
 
     var db = {}
@@ -982,7 +982,7 @@
 
     function toggleBtn(el) {
         let section = $(el).attr("section");
-        let exclusive = section && $(el).hasClass("btn-secondary") && $(`#filter-name-${section}`).hasClass("filter-exclusive");
+        let exclusive = section && $(el).hasClass("btn-secondary") && ($(`#filter-name-${section}`).hasClass("filter-exclusive") || $(`#filter-name-${section}`).hasClass("exclusive-filter"));
 
         if (exclusive) $(`.op-${section}`).removeClass("btn-primary").addClass("btn-secondary");
         $(el).toggleClass("btn-secondary btn-primary");
@@ -2382,7 +2382,7 @@
                     `
                 }else{
                     tl = `
-                        Kill <@ba.kw>${mission.paramList[1]}</> enemies with Non-Borrowed <@ba.kw>${db.chars[mission.paramList[0]].appellation}</>
+                        Kill <@ba.kw>${mission.paramList[1]}</> enemies with Non-Borrowed <@ba.kw>${db.chars[mission.paramList[0]]?db.chars[mission.paramList[0]].appellation:db.charpatch.patchChars[mission.paramList[0]].appellation}</>
                     `
                 }
                 break;
@@ -2392,7 +2392,7 @@
                 console.log(character)
                 if (character.profession=="TOKEN") extra = "summons of"
                 tl=`
-                    Complete <@ba.kw>${mission.paramList[0]}</> stages, Deploy at least <@ba.kw>${mission.paramList[1]}</> ${extra} Non-Borrowed <@ba.kw>${db.chars[mission.paramList[3]].appellation}</> in each stage
+                    Complete <@ba.kw>${mission.paramList[0]}</> stages, Deploy at least <@ba.kw>${mission.paramList[1]}</> ${extra} Non-Borrowed <@ba.kw>${db.chars[mission.paramList[3]]?db.chars[mission.paramList[3]].appellation:db.charpatch.patchChars[mission.paramList[3]].appellation}</> in each stage
                     `
                 break;
             case "EquipmentDeployTotal":
@@ -2401,7 +2401,7 @@
                 console.log(character)
                 if (character.profession=="TOKEN") extra = "summons of"
                 tl=`
-                    Deploy <@ba.kw>${mission.paramList[0]}</> ${extra} Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]].appellation}</>
+                    Deploy <@ba.kw>${mission.paramList[0]}</> ${extra} Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</>
                 `
                 break;
             case "EquipmentSquadPro":
@@ -2429,7 +2429,7 @@
                 });
                 tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star </br>
-                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]].appellation}</> ${squadprefix}${squadinfo}${squadsuffix}
+                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</> ${squadprefix}${squadinfo}${squadsuffix}
                  `
                 break;
             case "EquipmentSquadProEx":
@@ -2441,7 +2441,7 @@
                 });
                 tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star </br>
-                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]].appellation}</>
+                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</>
                     </br>Other <@ba.kw>${squads.join(", ")}</> operators not allowed in party
                     `
                 break;
@@ -2458,7 +2458,7 @@
                 }
                 tl=`
                     Clear <@ba.kw>${mission.paramList[0]}</> stages
-                    </br>Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[1]].appellation}</> ${squadinfo}
+                    </br>Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[1]]?db.chars[mission.paramList[1]].appellation:db.charpatch.patchChars[mission.paramList[1]].appellation}</> ${squadinfo}
                  `
                 break;
             case "EquipmentSquadPos":
@@ -2475,14 +2475,14 @@
                 }
                 tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star </br>
-                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]].appellation}</> ${squadinfo}
+                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</> ${squadinfo}
                     `
                 break;
             case "EquipmentSquadNum":
                 var stage = db.stage.stages[mission.paramList[1]].code
                 tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star </br>
-                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]].appellation}</> and max of <@ba.kw>${mission.paramList[3]}</> other operator
+                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</> and max of <@ba.kw>${mission.paramList[3]}</> other operator
                     `
                 break;
             case "EquipmentSquadStarStage":
@@ -2498,7 +2498,7 @@
                 }
                 tl=`
                     Clear <@ba.kw>${mission.paramList[0]}</> stages
-                    </br>Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[1]].appellation}</> ${squadinfo}
+                    </br>Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[1]]?db.chars[mission.paramList[1]].appellation:db.charpatch.patchChars[mission.paramList[1]].appellation}</> ${squadinfo}
                     `
                 break;
             case "EquipmentSquadStar":
@@ -2515,28 +2515,35 @@
                 }
                 tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star </br>
-                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]].appellation}</> ${squadinfo}
+                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</> ${squadinfo}
                     `
                 break;
             case "EquipmentSkillCastStage":
                 var stage = db.stage.stages[mission.paramList[1]].code
-                var skillId = mission.paramList[2]
-                var currSkill = db.skills[skillId].levels[0]
-                var skillname = db.skillsEN[skillId]?db.skillsEN[skillId].levels[0].name:db.skillsTL[skillId]?db.skillsTL[skillId].name:currSkill.name;
-                var skillnum = opdataFull.skills.findIndex(skill => skill.skillId==skillId)
+                var skillId = mission.paramList[2].split(";")
+                var skillimg=[]
 
-                if(skillnum>=0){
-                    skillnum = `(Skill ${skillnum+1})`
-                }else{
-                    skillnum = ''
-                }
+                skillId.forEach(eachskillId =>{
+                    var currSkill = db.skills[eachskillId].levels[0]
+                    var skillname = db.skillsEN[eachskillId]?db.skillsEN[eachskillId].levels[0].name:db.skillsTL[eachskillId]?db.skillsTL[eachskillId].name:currSkill.name;
+                    var skillnum = opdataFull.skills.findIndex(skill => skill.eachskillId==eachskillId)
+    
+                    if(skillnum>=0){
+                        skillnum = `(Skill ${skillnum+1})`
+                    }else{
+                        skillnum = ''
+                    }
+
+                    skillimg.push(`<@ba.kw><img src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/skills/skill_icon_${eachskillId}.png" style="max-width:20px;margin:2px">${skillname} ${skillnum}</>`)
+                })
+
                 console.log(opdataFull.skills)
                 console.log(skillnum)
 
                 tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star </br>
-                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[4]].appellation}</>,
-                    </br>Cast <@ba.kw><img src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/skills/skill_icon_${skillId}.png" style="max-width:20px;margin:2px">${skillname} ${skillnum}</> <@ba.kw>${mission.paramList[3]}</> times
+                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[4]]?db.chars[mission.paramList[4]].appellation:db.charpatch.patchChars[mission.paramList[4]].appellation}</>,
+                    </br>Cast ${skillimg.join(" or ")} <@ba.kw>${mission.paramList[3]}</> times
                     `
                 break;
             case "EquipmentSkillCast":
@@ -2553,7 +2560,7 @@
                 console.log(opdataFull.skills)
                 console.log(skillnum)
                 tl=`
-                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[0]].appellation}</>
+                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[0]]?db.chars[mission.paramList[0]].appellation:db.charpatch.patchChars[mission.paramList[0]].appellation}</>
                     </br>Cast <@ba.kw><img src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/skills/skill_icon_${skillId}.png" style="max-width:20px;margin:2px"> ${skillname} ${skillnum}</> <@ba.kw>${mission.paramList[2]}</> times
                     `
                 break;
@@ -2562,19 +2569,19 @@
                 tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
                     <br>Deal total of <@ba.kw>${mission.paramList[3]}</> damage </br>
-                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]].appellation}</>
+                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</>
                     `   
                 break;
             case "EquipmentDamageTotal":
                 tl=`
                     Deal total of <@ba.kw>${mission.paramList[1]}</> damage </br>
-                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[0]].appellation}</>
+                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[0]]?db.chars[mission.paramList[0]].appellation:db.charpatch.patchChars[mission.paramList[0]].appellation}</>
                     `
                 break;
             case "EquipmentDamageTotalWithToken":
                 tl=`
                     Deal total of <@ba.kw>${mission.paramList[1]}</> damage </br>
-                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[0].split(";")[0]].appellation}</> or <@ba.kw>${db.chars[mission.paramList[0].split(";")[1]].appellation}</>
+                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[0].split(";")[0]]?db.chars[mission.paramList[0].split(";")[0]].appellation:db.charpatch.patchChars[mission.paramList[0].split(";")[0]].appellation}</> or <@ba.kw>${db.chars[mission.paramList[0].split(";")[1]]?db.chars[mission.paramList[0].split(";")[1]].appellation:db.charpatch.patchChars[mission.paramList[0].split(";")[1]].appellation}</>
                     `
                 break;
             case "EquipmentCharKilledStage":
@@ -2582,7 +2589,7 @@
                 tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
                     </br>Kill <@ba.kw>${mission.paramList[3]}</> enemies
-                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2].split(';')[0]].appellation}</>
+                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2].split(";")[0]]?db.chars[mission.paramList[2].split(";")[0]].appellation:db.charpatch.patchChars[mission.paramList[2].split(";")[0]].appellation}</>
                     `
                 break;
             case "EquipmentEventStageKill":
@@ -2597,7 +2604,7 @@
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
                     </br>Kill <@ba.kw>${mission.paramList[3]}</> enemies including <@ba.kw>${mission.paramList[5]}</> <@ba.kw>${enemyName}</>
                     <img src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/enemy/${enemyid}.png" style="max-width:50px">
-                    </br>Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]].appellation}</>
+                    </br>Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</>
                     `
                 break;
             case "EquipmentEventTotal":
@@ -2686,13 +2693,13 @@
 
                 tl=`
                     ${objective} <@ba.kw>${mission.paramList[2]}</> <@ba.kw>${enemytype}</>
-                    ${wordtype} Non-Borrowed <@ba.kw>${db.chars[mission.paramList[0]].appellation}</>${extra}
+                    ${wordtype} Non-Borrowed <@ba.kw>${db.chars[mission.paramList[0]]?db.chars[mission.paramList[0]].appellation:db.charpatch.patchChars[mission.paramList[0]].appellation}</>${extra}
                     `
                 break;
             case "EquipmentEventStageMore" :
                 var stage = db.stage.stages[mission.paramList[1]].code
                 var splitreq = mission.paramList[3].split(";")[0].split(",")
-                var chara = db.chars[mission.paramList[2]]
+                var chara = db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]]:db.charpatch.patchChars[mission.paramList[2]]
                 var chara2
                 var objective = ""
                 var objective2 = ""
@@ -2820,7 +2827,7 @@
                 var stage = db.stage.stages[mission.paramList[1]].code
                 tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star </br>
-                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]].appellation}</> without any operator get killed
+                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</> without any operator get killed
                     `
                 break;
             case "EquipmentEventBattleMore" :
@@ -2831,14 +2838,14 @@
                         tl=`
                             Complete <@ba.kw>${mission.paramList[0]}</> stages </br>
                             Kill at least <@ba.kw>${mission.paramList[3]}</> <@ba.kw>${splitreq[2].charAt(0).toUpperCase()+splitreq[2].slice(1)}s</> </br>
-                            Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[1]].appellation}</>
+                            Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[1]]?db.chars[mission.paramList[1]].appellation:db.charpatch.patchChars[mission.paramList[1]].appellation}</>
                             `
                         break;
                     case "SIMPLE": // fall_down
                         tl=`
                             Complete <@ba.kw>${mission.paramList[0]}</> stages </br>
                             Cause at least <@ba.kw>${mission.paramList[3]}</> enemies to fall in a pit </br>
-                            Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[1]].appellation}</>
+                            Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[1]]?db.chars[mission.paramList[1]].appellation:db.charpatch.patchChars[mission.paramList[1]].appellation}</>
                             `
                         break;
                     default:
@@ -2866,7 +2873,7 @@
                 tl=`
                     Complete <@ba.kw>${mission.paramList[0]}</> stages </br>
                     ${skilltext}
-                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[3]].appellation}</>
+                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[3]]?db.chars[mission.paramList[3]].appellation:db.charpatch.patchChars[mission.paramList[3]].appellation}</>
                     `
                 break;
             case "EquipmentDeployCharOrder" :
@@ -2887,14 +2894,14 @@
                 }
                 tl=`
                     Complete <@ba.kw>${mission.paramList[0]}</> stages </br>
-                    Deploy Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]].appellation}</> on the <@ba.kw>${order}</> order
+                    Deploy Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</> on the <@ba.kw>${order}</> order
                     `
                 break;
             case "EquipmentDeployOneNoEvac":
                 var stage = db.stage.stages[mission.paramList[1]].code
                 tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star </br>
-                    Deploy Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]].appellation}</> on the <@ba.kw>1st</> order and not retreated or killed throughout stage
+                    Deploy Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</> on the <@ba.kw>1st</> order and not retreated or killed throughout stage
                     `
                 break;
 
@@ -2917,11 +2924,11 @@
                 var stage = db.stage.stages[mission.paramList[1]].code
                 tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star </br>
-                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]].appellation}</> and deploy at max of <@ba.kw>${mission.paramList[3]}</> other operators
+                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</> and deploy at max of <@ba.kw>${mission.paramList[3]}</> other operators
                     `
                 break;
             case "EquipmentDeployCharAndKillCnt":
-                var currchar = db.chars[mission.paramList[2]]
+                var currchar = db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]]:db.charpatch.patchChars[mission.paramList[2]]
                 tl=`
                     Complete <@ba.kw>${mission.paramList[0]}</> stages </br>
                     Kill at least <@ba.kw>${mission.paramList[4]}</> enemies using Non-Borrowed </br>
@@ -2929,7 +2936,7 @@
                 `
                 break;
             case "EquipmentBattleCharDamage":
-                var currchar = db.chars[mission.paramList[1]]
+                var currchar = db.chars[mission.paramList[1]]?db.chars[mission.paramList[1]]:db.charpatch.patchChars[mission.paramList[1]]
                 tl=`
                     Complete <@ba.kw>${mission.paramList[0]}</> stages </br>
                     Deal at least <@ba.kw>${mission.paramList[2]}</> damage using Non-Borrowed </br>
@@ -3064,12 +3071,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="token-trait" style=${tokenfulldata.description?"padding-top:15px;padding-left:15px;":""}>
+                <div class="token-trait" style=${tokenfulldata.description?"padding-top:15px;padding-left:15px;padding-right:5px;":""}>
                     ${tokenfulldata.description?GetTrait(tokenfulldata.description,""):""}
                 </div>
                 <div class="token-skill" style="width:100%;min-width:320px;"></div>
                 <div class="token-stats" style="width:100%;text-align:center;padding:4px 5px 5px 10px;min-width:320px">
-                <button id='Tokstatdetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler("Tokstatdetailcontent",$(this))'style="color:#fff;text-align:center;background:#222;min-width:320px;height:27px">Token Stat <i class="fas fa-caret-up"></i></button>
+                <button id='Tokstatdetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler("Tokstatdetailcontent",$(this))'style="color:#fff;text-align:center;background:#222;min-width:320px;height:27px;padding-top: 2px;padding-bottom: 2px;">Token Stat <i class="fas fa-caret-up"></i></button>
                     <div class="Tokstatdetailcontent">
                         ${stats}
                         ${rangeMaker(tokenfulldata.phases[globalelite].rangeId)}
@@ -3081,6 +3088,8 @@
         }else{
             $("#token-contents .token-details .stats").html(`<div class='stats-l' style="min-width:unset;width:40px;background:#3D3D3D"><img style='max-height:30px;margin:-11px -10px -9px -10px' src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/elite/${currelite}-s.png'></div><div class='stats-r' style="min-width:unset">Lv <span id="summon-level">${currlevel}</span></div>`)
         }
+
+        $('[data-toggle="tooltip"]').tooltip()
     }
 
     function UpdateTokenSkill(token=globaltoken,skill=globalskill){
@@ -4391,7 +4400,10 @@
             `
             Object.keys(currhtml.talents).forEach(eachtalent => {
                 var currtalent = currhtml.talents[eachtalent]
-                // console.log(currtalent)
+
+                if (currtalent.talent.isHideTalent)
+                    return
+                //console.log(currtalent)
                 talenthtml +=`
                 ${TalentParse2(currtalent,talentnum)}
                 `
@@ -5347,7 +5359,7 @@
         var skillTL = db.skillsTL[skillId];
         var desc = skillEN?skillEN.description:skillTL?skillTL.desc[level]:skill.description;
 
-        desc = ChangeDescriptionColor2(desc.replace(/\<([A-z]+)\>/g,"&lt;"+"$1"+'&gt;').replace("\n","<br>"))
+        desc = ChangeDescriptionColor2(desc.replace(/\<([A-z]+)\>/g,"&lt;"+"$1"+'&gt;').replace("\n","</br>"))
         if(desc){
             // console.log(skill)
             desc=ChangeDescriptionContent(desc,skill)
@@ -5435,6 +5447,39 @@
             console.log("DESC NULL")
             return desc
         }
+        
+        console.log(desc,desc.match(/<[@].+?>.+?<[@](.+?)>(.+?)<\/>.+?<\/>/g))
+        // catch <@><@></></> not <@></><@></> Shamare S2 only for now
+        if (desc.match(/<[@].+?>.+?<[@](.+?)>(.+?)<\/>.+?<\/>/g) && !desc.match(/<[@].+?>.+?<\/>.+?<[@](.+?)>(.+?)<\/>.+?<\/>/g)){
+            desc = desc.replace(/(<[@].+?>.+?)<[@](.+?)>(.+?)<\/>(.+?)<\/>/g, function(m,the_begin, rtf, text, the_rest) {
+                console.log(desc,rtf,text)
+                let rich = db.dataconst.richTextStyles[rtf];
+                let rich2 = db.named_effects.termDescriptionDict[rtf];
+                if (!rich2){
+                    rich2 = db.dataconst.termDescriptionDict[rtf]
+                }
+                if (rich) {
+                    let colorRTF = /<color=(#[0-9A-F]+)>\{0\}<\/color>/;
+                    if (colorRTF.test(rich)) {
+                        let color = colorRTF.exec(rich)[1]
+                        return `${the_begin}<span class="${addbackgroundcolor?`stat-important2`:""}" style="color:${color}">${text}</span>${the_rest}</>`
+                    } else {
+                        return rich.replace('{0}', text)
+                    }
+                } else if (rich2) {
+                    return `<span class="stathover" data-toggle="tooltip" data-html="true" data-delay='{ "show": 0, "hide": 500 }' data-placement="bottom"
+                    title='
+                    <span class="tooltiptext" style="display:inline-block">
+                        <div class="tooltipHeader">${rich2.termName.replace(/\'/g,"&apos;")}</div>
+                        <div class="tooltipcontent">${CreateTooltip(rich2.description.replace(/\'/g,"&apos;"))}</div>
+                    </span>'
+                    style="color:#0098DC">${text}</span>`
+                }else{
+                    return text
+                }
+        })}
+        console.log(desc)
+
         desc = desc.replace(/<[@](.+?)>(.+?)<\/>/g, function(m, rtf, text) {
             let rich = db.dataconst.richTextStyles[rtf];
             let rich2 = db.named_effects.termDescriptionDict[rtf];
@@ -5498,11 +5543,11 @@
             console.log("DESC NULL")
             return desc
         }
-        desc = desc.replace(/\{\-([A-Z@_a-z\[\]0-9.]+)\}{0,1}:(.{1,4})\}/g, function(m, content, format) {
+        desc = desc.replace(/\{\-?([A-Z@_a-z\[\]0-9.]+)\}{0,1}:(.{1,4})\}/g, function(m, content, format) {
             for (var i = 0; i < blackboard.length; i++) {
                 if (blackboard[i].key==content || blackboard[i].key==-content){
                     console.log(blackboard[i].value,content)
-                    let value = -blackboard[i].value
+                    let value = Math.abs(blackboard[i].value)
                     if (format && format.includes("%")) value = Math.round((value * 100000))/1000 + "%";
                     num +=1
                     return `<div class="stat-important">${value}</div>`
@@ -5511,24 +5556,11 @@
             return m
         })
 
-        desc = desc.replace(/\{{0,1}\{([A-Z@_a-z\[\]0-9.]+)\}{0,1}:(.{1,4})\}/g, function(m, content, format) {
-            for (var i = 0; i < blackboard.length; i++) {
-                if (blackboard[i].key==content || blackboard[i].key==-content){
-                    console.log(blackboard[i].value,content)
-                    let value = blackboard[i].value
-                    if (format && format.includes("%")) value = Math.round((value * 100000))/1000 + "%";
-                    num +=1
-                    return `<div class="stat-important">${value}</div>`
-                }
-            }
-            return m
-        })
-
-        desc = desc.replace(/\{([A-Z_@a-z.0-9\[\]]+)\}/g, function(m, content) {
+        desc = desc.replace(/\{\-?([A-Z_@a-z.0-9\[\]]+)\}/g, function(m, content) {
             for (var i = 0; i < blackboard.length; i++) {
                 if (blackboard[i].key==content){
                     console.log(blackboard[i].value,content)
-                    value = blackboard[i].value
+                    value = Math.abs(blackboard[i].value)
                     if(skill && skill.prefabId == "skchr_angel_3"&&blackboard[i].key =='base_attack_time'){
                         value = value*2;
                         // console.log("DOUBLE!!")

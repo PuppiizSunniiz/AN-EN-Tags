@@ -66,7 +66,7 @@
         },
         "高精度的近距离射击": {
             "en": "High accuracy point-blank shot",
-            "color": "Physical"
+            "color": "physical"
         },
         "攻击造成<@ba.kw>法术伤害</>\\n可以使用<@ba.kw>召唤物</>协助作战": {
             "en": "Deals <@ba.kw>Arts damage</>\nCan use <@ba.kw>Summons</> in battles",
@@ -171,6 +171,14 @@
         "优先攻击攻击范围内<@ba.kw>防御力最低</>的敌方单位": {
             "en": "Prioritizes attacking the enemy with <@ba.kw>lowest DEF</> within range first",
             "color": "physical"
+        },
+        "攻击阻挡的<@ba.kw>所有敌人</>": {
+            "en": "Attacks <@ba.kw>all blocked enemies</>",
+            "color": "common"
+        },
+        "不会受到攻击，恢复周围友方单位的生命": {
+            "en": "Cannot be attacked; restores the HP of nearby friendly units",
+            "color": "heal"
         },
         "再部署时间<@ba.kw>减少</>，撤退时不返还<@ba.kw>部署费用</>，在场时每3秒<@ba.kw>消耗</>3点部署费用（不足时自动撤退）": {
             "en": "Has <@ba.kw>reduced</> Redeployment Time, but <@ba.kw>DP Cost</> is not refunded upon retreating; While deployed, <@ba.kw>3 DP</> are consumed every 3 seconds (automatically retreats without sufficient DP)",
@@ -638,7 +646,7 @@
             "note": "Lord Mod (LOR-X)"
         },
         "攻击范围内存在2名及以上敌人时攻击速度<@ba.vup>+12</>": {
-            "en": "Can launch <@ba.kw>Ranged Attacks</> that deal 80% of normal ATK. When there are 2 or more in Attack Range, ASPD<@ba.talpu>+12</>",
+            "en": "Can launch <@ba.kw>Ranged Attacks</> that deal 80% of normal ATK. When there are 2 or more enemies in Attack Range, ASPD<@ba.talpu>+12</>",
             "color": "physical",
             "note": "Lord Mod (LOR-Y)"
         },
@@ -646,6 +654,31 @@
             "en": "Can attack enemies within the summoner's Attack Range",
             "color": "common",
             "note": "Wiš'adel 's Token (Shadow of Revenant)"
+        },
+        "乌尔比安技能结束时返回该位置，并且其他干员不能部署": {
+            "en": "Ulpianus returns to this location when his skill ends, other operators cannot be deployed",
+            "color": "common",
+            "note": "Ulpinus S3 [PH] Tonken"
+        },
+        "子弹数量为空时下次装填额外加装1发子弹": {
+            "en": "When reload from empty, gain 1 addition ammo",
+            "color": "extra",
+            "note": "Hunter Mod (HUN-X)"
+        },
+        "造成法术伤害时附带相当于<@ba.vup>8%</>伤害的<$ba.dt.burning2>灼燃损伤</>": {
+            "en": "When dealing Arts damage, deals an additional <@ba.vup>8%</> as <$ba.dt.burning2>Burn damage</>",
+            "color": "magic",
+            "note": "Blast Caster Mod (BLA-D)"
+        },
+        "技能可以使敌人产生<@ba.kw>位移</>，向自身拖拽较远的敌人时力度提升一个等级\\n可以放置于远程位": {
+            "en": "Can <@ba.kw>Shift</> enemies by using skills, increases shift level by 1 when dragging further away targets towards this unit \nCan be deployed on Ranged Tiles",
+            "color": "extra",
+            "note": "Hookmaster Mod (HOX-Y)"
+        },
+        "周围8格没有友方干员时攻击力和防御力<@ba.kw>+8%</>": {
+            "en": "Gains +8% ATK and DEF when there are no allied units in the surrounding 8 tiles",
+            "color": "common",
+            "note": "Juggernaut Mod (UNY-Y)"
         }
     },
     "parts": [

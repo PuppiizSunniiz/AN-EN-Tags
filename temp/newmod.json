@@ -1,249 +1,163 @@
 {
-    "uniequip_002_svrash": [ #SilverAsh
+
+    "uniequip_00X_ABCDEF": [ Ray    // {damage} {redeploy time}
         [
             {
-                "name": "",
-                "upgradeDescription": "ATK +20%. when attacking elite/boss enemies increase ,; All allies' Redeployment Time -10%"
-            },
-            {
-                "name": "",
-                "upgradeDescription": "ATK +22% <@ba.talpu>(+2%)</>.when attacking elite/boss enemies; All allies' Redeployment Time -12% <@ba.talpu>(+2%)</>"
+                "name": "Patrol Partner",
+                "upgradeDescription": "Can summon a Sand Beast within Attack Range for 25 seconds. The Sand Beast scouts the area and extends Ray's Attack Range. Ray will prioritize targets within the scouting area and deal increased Physical damage by {damage}. Sandbeast redeployment time {redeploy time}"
             }
+
         ],
         [
             {
-                "name": "",
-                "upgradeDescription": "ATK +25%; All allies' Redeployment Time -10%"
-            },
-            {
-                "name": "",
-                "upgradeDescription": "ATK +27% <@ba.talpu>(+2%)</>; All allies' Redeployment Time -12% <@ba.talpu>(+2%)</>"
+                "name": "Patrol Partner",
+                "upgradeDescription": "Can summon a Sand Beast within Attack Range for 25 seconds. The Sand Beast scouts the area and extends Ray's Attack Range. Ray will prioritize targets within the scouting area and deal increased Physical damage by {damage}. Sandbeast redeployment time {redeploy time}"
             }
         ]
     ],
-    "uniequip_002_thorns": [ #thorns
+    "uniequip_00X_ABCDEF": [ Coldshot   // {damage}
         [
             {
-                "name": "",
-                "upgradeDescription": "Poisons the targets when attacking, dealing 125 Arts damage to them per second, lasting 3 seconds (damage is doubled against Ranged enemies)"
+                "name": "Not to be Outdone",
+                "upgradeDescription": "If no attack is made for 2 seconds, the next attack deals {damage} ATK as Physical damage"
             },
             {
-                "name": "",
-                "upgradeDescription": "Poisons the targets when attacking, dealing 140 <@ba.talpu>（+15）</> Arts damage to them per second, lasting 3 seconds (damage is doubled against Ranged enemies)"
+                "name": "Not to be Outdone",
+                "upgradeDescription": "If no attack is made for 2 seconds, the next attack deals {damage} <@ba.talpu>(+3%)</> ATK as Physical damage"
             }
         ],
         [
             {
-                "name": "",
-                "upgradeDescription": "Poisons the targets when attacking, dealing 125 Arts damage to them per second, lasting 3 seconds (damage is doubled against Ranged enemies)"
+                "name": "Not to be Outdone",
+                "upgradeDescription": "If no attack is made for 2 seconds, the next attack deals {damage} ATK as Physical damage"
             },
             {
-                "name": "",
-                "upgradeDescription": "Poisons the targets when attacking, dealing 140 <@ba.talpu>（+15）</> Arts damage to them per second, lasting 3 seconds (damage is doubled against Ranged enemies)"
+                "name": "Not to be Outdone",
+                "upgradeDescription": "If no attack is made for 2 seconds, the next attack deals {damage} <@ba.talpu>(+3%)</> ATK as Physical damage"
             }
         ]
     ],
-    "uniequip_002_qiubai": [ #qiubai
+    "uniequip_00X_ABCDEF": [ Lucilla    // {fragile}
         [
             {
                 "name": "",
-                "upgradeDescription": "Deal an additional 40% of ATK as Arts damage when attacking enemies affected by <$ba.sluggish>Slow</> or <$ba.root>Bind</>"
+                "upgradeDescription": "Inflict {fragile} <$ba.fragile>Fragile</> to non-Elite and non-Boss in Attack Range"
             },
             {
                 "name": "",
-                "upgradeDescription": "Deal an additional 43%<@ba.talpu> (+3%)</> of ATK as Arts damage when attacking enemies affected by <$ba.sluggish>Slow</> or <$ba.root>Bind</>"
+                "upgradeDescription": "Inflict {fragile}<@ba.talpu>(+%)</> <$ba.fragile>Fragile</> to non-Elite and non-Boss in Attack Range"
             }
         ],
         [
             {
                 "name": "",
-                "upgradeDescription": "Deal an additional 40% of ATK as Arts damage when attacking enemies affected by <$ba.sluggish>Slow</> or <$ba.root>Bind</>"
+                "upgradeDescription": "Inflict {fragile} <$ba.fragile>Fragile</> to non-Elite and non-Boss in Attack Range"
             },
             {
                 "name": "",
-                "upgradeDescription": "Deal an additional 43%<@ba.talpu> (+3%)</> of ATK as Arts damage when attacking enemies affected by <$ba.sluggish>Slow</> or <$ba.root>Bind</>"
+                "upgradeDescription": "Inflict {fragile}<@ba.talpu>(+%)</> <$ba.fragile>Fragile</> to non-Elite and non-Boss in Attack Range"
             }
         ]
     ],
-    "uniequip_002_whitew": [ #Lappland
+    "uniequip_00X_ABCDEF": [ Underflow  // {damage}
         [
             {
                 "name": "",
-                "upgradeDescription": "Disables the target's special ability when attacking, lasting 5 seconds"
+                "upgradeDescription": "Poisons the targets when attacking, dealing {80} Arts damage to them per second, lasting 3 seconds (damage is doubled against [Sea Monster])"
             },
             {
                 "name": "",
-                "upgradeDescription": "Disables the target's special ability when attacking, lasting 6 <@ba.talpu>(+1)</> seconds"
+                "upgradeDescription": "Poisons the targets when attacking, dealing {80}<@ba.talpu>(+10)</> Arts damage to them per second, lasting 3 seconds (damage is doubled against [Sea Monster])"
             }
         ],
         [
             {
                 "name": "",
-                "upgradeDescription": "Disables the target's special ability when attacking, lasting 5 seconds"
+                "upgradeDescription": "Poisons the targets when attacking, dealing {80} Arts damage to them per second, lasting 3 seconds (damage is doubled against [Sea Monster])"
             },
             {
                 "name": "",
-                "upgradeDescription": "Disables the target's special ability when attacking, lasting 6 <@ba.talpu>(+1)</> seconds"
+                "upgradeDescription": "Poisons the targets when attacking, dealing {80}<@ba.talpu>(+10)</> Arts damage to them per second, lasting 3 seconds (damage is doubled against [Sea Monster])"
             }
         ]
     ],
-    "uniequip_002_ayer": [ #Ayerscarpe
+    "uniequip_00X_ABCDEF": [ Amiya (Medic)  // {MaxHP} {MaxHP_regen}
         [
             {
                 "name": "",
-                "upgradeDescription": "This unit and allied Operators in the surrounding 8 tiles gain +8 ASPD"
-            },
-            {
-                "name": "",
-                "upgradeDescription": "This unit and allied Operators in the surrounding 8 tiles gain +10 <@ba.talpu>(+2)</> ASPD"
+                "upgradeDescription": "When deployed, increase all allies' Max HP by {MaxHP}. When skill is active, all allies recover {MaxHP_regen} Max HP every second"
             }
         ],
         [
             {
                 "name": "",
-                "upgradeDescription": "This unit and allied Operators in the surrounding 8 tiles gain +8 ASPD"
-            },
-            {
-                "name": "",
-                "upgradeDescription": "This unit and allied Operators in the surrounding 8 tiles gain +10 <@ba.talpu>(+2)</> ASPD"
+                "upgradeDescription": "When deployed, increase all allies' Max HP by {MaxHP}. When skill is active, all allies recover {MaxHP_regen} Max HP every second"
             }
         ]
     ],
-    "uniequip_002_leto": [
+    "uniequip_00X_ABCDEF": [ Ifrit  // {magic_resistance} {ATK%}
         [
             {
-                "name": "",
-                "upgradeDescription": "When skill is activated, all [Ursus Student Self-Governing Group] operators ASPD+21 until the end of the skill "
+                "name": "Spiritual Dissolution",
+                "upgradeDescription": "RES of enemies within range {magic_resistance}. If target is under the burst effect of <$ba.dt.burning2>Burn damage</>, deal an additional {ATK%} ATK as Elemental damage"
             },
             {
-                "name": "",
-                "upgradeDescription": "When skill is activated, all [Ursus Student Self-Governing Group] operators ASPD+24<@ba.talpu>(+3)</> until the end of the skill "
+                "name": "Spiritual Dissolution",
+                "upgradeDescription": "RES of enemies within range {magic_resistance}<@ba.talpu>(+4%)</>. If target is under the burst effect of <$ba.dt.burning2>Burn damage</>, deal an additional {ATK%} ATK as Elemental damage"
             }
         ],
         [
             {
-                "name": "",
-                "upgradeDescription": "When skill is activated, all [Ursus Student Self-Governing Group] operators ASPD+21 until the end of the skill "
+                "name": "Spiritual Dissolution",
+                "upgradeDescription": "RES of enemies within range {magic_resistance}. If target is under the burst effect of <$ba.dt.burning2>Burn damage</>, deal an additional {ATK%} ATK as Elemental damage"
             },
             {
-                "name": "",
-                "upgradeDescription": "When skill is activated, all [Ursus Student Self-Governing Group] operators ASPD+24<@ba.talpu>(+3)</> until the end of the skill "
+                "name": "Spiritual Dissolution",
+                "upgradeDescription": "RES of enemies within range {magic_resistance}<@ba.talpu>(+4%)</>. If target is under the burst effect of <$ba.dt.burning2>Burn damage</>, deal an additional {ATK%} ATK as Elemental damage"
             }
         ]
     ],
-    "uniequip_002_frostl": [ #Frostleaf
+    "uniequip_00X_ABCDEF": [ Gladiia    // {ATK%}
         [
             {
-                "name": "",
-                "upgradeDescription": "Range expands, but Attack Interval increases slightly"
+                "name": "Survival of the Fittest",
+                "upgradeDescription": "When attacking enemies with 3 or less weight, increase ATK to {ATK%}"
+            },
+            {
+                "name": "Survival of the Fittest",
+                "upgradeDescription": "When attacking enemies with 3 or less weight, increase ATK to {ATK%}<@ba.talpu>(+6%)</>"
             }
         ],
         [
             {
-                "name": "",
-                "upgradeDescription": "Range expands, but Attack Interval increases slightly"
+                "name": "Survival of the Fittest",
+                "upgradeDescription": "When attacking enemies with 3 or less weight, increase ATK to {ATK%}"
+            },
+            {
+                "name": "Survival of the Fittest",
+                "upgradeDescription": "When attacking enemies with 3 or less weight, increase ATK to {ATK%}<@ba.talpu>(+6%)</>"
             }
         ]
     ],
-    "uniequip_002_spikes": [ #Arene
+    "uniequip_00X_ABCDEF": [ Penance    // {ATK%}
         [
             {
-                "name": "",
-                "upgradeDescription": "Prioritize attacking drones; ATK +40% when attacking drones"
+                "name": "Wreathed in Thorns",
+                "upgradeDescription": "Each time this unit is attacked while under the effect of her own <$ba.barrier>Barrier</>, deals {ATK%} ATK as Arts damage to the attacker"
             },
             {
-                "name": "",
-                "upgradeDescription": "Prioritize attacking drones; ATK +43% <@ba.talpu>(+3%)</> when attacking drones"
+                "name": "Wreathed in Thorns",
+                "upgradeDescription": "Each time this unit is attacked while under the effect of her own <$ba.barrier>Barrier</>, deals {ATK%} <@ba.talpu>(+3%)</> ATK as Arts damage to the attacker"
             }
         ],
         [
             {
-                "name": "",
-                "upgradeDescription": "Prioritize attacking drones; ATK +40% when attacking drones"
+                "name": "Wreathed in Thorns",
+                "upgradeDescription": "Each time this unit is attacked while under the effect of her own <$ba.barrier>Barrier</>, deals {ATK%} ATK as Arts damage to the attacker"
             },
             {
-                "name": "",
-                "upgradeDescription": "Prioritize attacking drones; ATK +43% <@ba.talpu>(+3%)</> when attacking drones"
-            }
-        ]
-    ],
-    "uniequip_002_lolxh": [ #Luo Xiaohei
-        [
-            {
-                "name": "",
-                "upgradeDescription": "When dealing lethal damage, leave the enemy with 1 HP and inflict <$ba.dying>Critically Wounded</> (gives +2 SP to the attacker when killed); Luo Xiaohei will not attack <$ba.dying>Critically Wounded</> targets"
-            }
-        ],
-        [
-            {
-                "name": "",
-                "upgradeDescription": "When dealing lethal damage, leave the enemy with 1 HP and inflict <$ba.dying>Critically Wounded</> (gives +2 SP to the attacker when killed); Luo Xiaohei will not attack <$ba.dying>Critically Wounded</> targets"
-            }
-        ]
-    ],
-    "uniequip_002_ABCDEF": [ #Wis’adel
-        [
-            {
-                "name": "",
-                "upgradeDescription": "When attacking, deal increased {%ATK damage} damage to target and attach an Afterimage. When the Afterimage is hit by Wis'adel's aftershocks, {chance} chance to explode and deal {ATK%} ATK as Physical damage to all nearby enemies and <$ba.stun>stunning</> for {duration} seconds"
-            },
-            {
-                "name": "",
-                "upgradeDescription": "<@ba.talpu>(+)</>"
-            }
-        ],
-        [
-            {
-                "name": "",
-                "upgradeDescription": "When attacking, deal increased {%ATK damage} damage to target and attach an Afterimage. When the Afterimage is hit by Wis'adel's aftershocks, {chance} chance to explode and deal {ATK%} ATK as Physical damage to all nearby enemies and <$ba.stun>stunning</> for {duration} seconds"
-            },
-            {
-                "name": "",
-                "upgradeDescription": "<@ba.talpu>(+)</>"
-            }
-        ]
-    ],
-    "uniequip_002_ABCDEF": [ #Logos
-        [
-            {
-                "name": "",
-                "upgradeDescription": "When attacking, {chance} chance to attack another random target within Attack Range, dealing {%ATK} ATK as Arts damage and <$ba.sluggish>Slows</> them for {duration} seconds"
-            },
-            {
-                "name": "",
-                "upgradeDescription": "<@ba.talpu>(+)</>"
-            }
-        ],
-        [
-            {
-                "name": "",
-                "upgradeDescription": "When attacking, {chance} chance to attack another random target within Attack Range, dealing {%ATK} ATK as Arts damage and <$ba.sluggish>Slows</> them for {duration} seconds"
-            },
-            {
-                "name": "",
-                "upgradeDescription": "<@ba.talpu>(+)</>"
-            }
-        ]
-    ],
-    "uniequip_002_fang2": [ #Fang the fire-sharpened 
-        [
-            {
-                "name": "",
-                "upgradeDescription": "During the first deployment, DP Cost -4. After retreat, the next Operator has -1 DP Cost"
-            },
-            {
-                "name": "",
-                "upgradeDescription": "<@ba.talpu>(+)</>"
-            }
-        ],
-        [
-            {
-                "name": "",
-                "upgradeDescription": "During the first deployment, DP Cost -4. After retreat, the next Operator has -2 DP Cost"
-            },
-            {
-                "name": "",
-                "upgradeDescription": "<@ba.talpu>(+)</>"
+                "name": "Wreathed in Thorns",
+                "upgradeDescription": "Each time this unit is attacked while under the effect of her own <$ba.barrier>Barrier</>, deals {ATK%} <@ba.talpu>(+3%)</> ATK as Arts damage to the attacker"
             }
         ]
     ]
@@ -286,7 +200,7 @@
         [
             {
                 "name": "",
-                "upgradeDescription": "<@ba.talpu>(+)</>"
+                "upgradeDescription": ""
             }
         ]
     ]

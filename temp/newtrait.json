@@ -1,10 +1,29 @@
 {
-    "攻击造成<@ba.kw>法术伤害</>": {    # Sentinel
-        "en": "Blocks 3 enemies and attacks from long range, Enemies within Attack Range lose <$ba.invisible>Invisibility</>",
-        "color": "physical"
+    "": {   // Hunter
+        "en": "When reload from empty,gain 1 addition ammo",
+        "color": "extra",
+        "note": "Hunter Mod (HUN-X)"
     },
-    "攻击造成<@ba.kw>法术伤害</>": {    # Trapmaster X
-        "en": "Can use traps to assist in combat, but traps cannot be placed <@ba.kw>on tiles already occupied by an enemy</>;\nCan be deployed on Melee tiles ,traps can be deployed on Ranged tiles",
-        "color": "extra"
+    "": {   // Ifrit
+        "en": "When dealing Arts damage, deals an additional <@ba.vup>8%</> as <$ba.dt.burning2>Burn damage</>",
+        "color": "magic",
+        "note": "Blast Caster Mod (BLA-D)"
+    },
+    "": {   // Gladiia
+        "en": "Increases shift level by 1 when dragging further away targets towards this unit ",
+        "color": "extra",
+        "note": "Hookmaster Mod (HOX-Y)"
+    },
+    "": {   // Penance
+        "en": "Gains +8% ATK and DEF when there are no allied units in the surrounding 8 tiles",
+        "color": "common",
+        "note": "Juggernaut Mod (UNY-Y)"
     }
+}
+
+#template
+,
+"": {
+    "en": "",
+    "color": ""
 }

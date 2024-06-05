@@ -1,4 +1,5 @@
 import json
+import re
 from pyfunction import NameCheck
 
 #########################################################################################################
@@ -8,6 +9,9 @@ json_char           =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/char
 json_charEN         =   json.loads(open("json/gamedata/en_US/gamedata/excel/character_table.json").read())
 json_charJP         =   json.loads(open("json/gamedata/ja_JP/gamedata/excel/character_table.json").read())
 json_charKR         =   json.loads(open("json/gamedata/ko_KR/gamedata/excel/character_table.json").read())
+
+json_skill          =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/skill_table.json").read())
+json_skillEN        =   json.loads(open("json/gamedata/en_US/gamedata/excel/skill_table.json").read())
 
 json_handbook       =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/handbook_info_table.json").read())
 
@@ -23,6 +27,7 @@ Classparse= {'SNIPER':"狙击", 'PIONEER':"先锋", 'TANK':"重装",  'MEDIC':"�
 #########################################################################################################
 # Test Area
 #########################################################################################################
+''' #Char Nation & Team
 testhr=[]
 
 nation=[]
@@ -117,4 +122,18 @@ with open("test/test-akhr.json",'w') as JSON :
     
 dumpling=json.dumps({"nation":nationjson,"group":groupjson,"team":teamjson,"HTML":("\n").join(HTMLjson)},indent=4, ensure_ascii=False)
 with open("test/test-nationtag.json",'w') as JSON :
-    JSON.write(dumpling)
+    JSON.write(dumpling)'''
+
+#Skill search
+test1="<[@].+?>.+?<[@](.+?)>(.+?)<\/>.+?<\/>"
+test2="<[@].+?>.+?<\/>.+?<[@](.+?)>(.+?)<\/>.+?<\/>"
+for skill in json_skillEN:
+    
+    skillDesc=json_skillEN[skill]["levels"][0]["description"]
+    if skillDesc :
+        #print(skill)
+        #print(skill,re.search(test1,skillDesc))
+        #print(re.search(test1,skillDesc),re.search(test1,skillDesc))
+        if re.search(test1,skillDesc) and not re.search(test2,skillDesc):
+            print(json_skillEN[skill]["skillId"],json_skillEN[skill]["levels"][0]["description"])
+            break

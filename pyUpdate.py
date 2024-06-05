@@ -8,6 +8,8 @@ from pyfunction import CharReady
 json_building       =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/building_data.json").read())
 json_buildingEN     =   json.loads(open("json/gamedata/en_US/gamedata/excel/building_data.json").read())
 
+json_char_patch      =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/char_patch_table.json").read())
+
 json_char           =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/character_table.json").read())
 json_charEN         =   json.loads(open("json/gamedata/en_US/gamedata/excel/character_table.json").read())
 json_charJP         =   json.loads(open("json/gamedata/ja_JP/gamedata/excel/character_table.json").read())
@@ -37,23 +39,23 @@ json_skillTL        =   json.loads(open("json/ace/tl-skills.json").read())
 json_riicTL         =   json.loads(open("json/ace/riic.json").read())
 
 json_tl_item        =   json.loads(open("json/tl-item.json").read())
-json_tempmod        =   json.loads(open("json/TempModuletalentsTL.json").read())
+json_tempmod        =   json.loads(open("json/tl-module.json").read())
 
 #########################################################################################################
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-newchars = [] #
+newchars = ["Ulpianus","Lucilla","Underflow"] #
 
 #[["OpsName#1",num(Mod)],["OpsName#2",num(Mod)], ...]
-newmods = []    #
+newmods = [["Ray",1],["Coldshot",1],["Lucilla",1],["Underflow",1],["Amiya (Medic)",1],["Ifrit",2],["Gladiia",2],["Penance",2]] #
 
 #["ItemID#1","ItemID#2", ...]
 newmats = []
 
 #["OpsName#1","OpsName#2", ...]
 recruitCN=[] #
-recruitEN=[]
+recruitEN=[] #
 
 Rechecked=False # True False
 
@@ -62,9 +64,15 @@ Rechecked=False # True False
 #########################################################################################################
 newtrait ={}
 
-CharReady=CharReady(json_char)
+ClassParse = {"MEDIC": "Medic", "WARRIOR": "Guard", "SPECIAL": "Specialist", "SNIPER": "Sniper",
+              "PIONEER": "Vanguard", "CASTER": "Caster", "SUPPORT": "Supporter", "TANK": "Defender"}
+ClassparseCN= {'SNIPER':"狙击", 'PIONEER':"先锋", 'TANK':"重装",  'MEDIC':"医疗", 'SUPPORT':"辅助", 'SPECIAL':"特种", 'WARRIOR':"近卫",  'CASTER':"术师"}
 
-Classparse= {'SNIPER':"狙击", 'PIONEER':"先锋", 'TANK':"重装",  'MEDIC':"医疗", 'SUPPORT':"辅助", 'SPECIAL':"特种", 'WARRIOR':"近卫",  'CASTER':"术师"}
+for char in json_char_patch["patchChars"].keys():
+    json_char_patch["patchChars"][char]["appellation"]=json_char_patch["patchChars"][char]["appellation"]+" ("+ClassParse[json_char_patch["patchChars"][char]["profession"]]+")"
+json_char.update(json_char_patch["patchChars"])
+
+CharReady=CharReady(json_char)
 
 charlist=[]
 for char in json_akhr:
@@ -105,7 +113,7 @@ for newchar in newchars:
                                     "nationId": json_char[newcode]["nationId"],
                                     "groupId": json_char[newcode]["groupId"],
                                     "teamId": json_char[newcode]["teamId"],
-                                    "type": Classparse[json_char[newcode]["profession"]],
+                                    "type": ClassparseCN[json_char[newcode]["profession"]],
                                     "level": int(json_char[newcode]["rarity"][-1]),
                                     "sex": ''.join(json_handbook["handbookDict"][newcode]["storyTextAudio"][0]["stories"][0]["storyText"].split("\n")[1].split("】")[1].split()),
                                     "tags": ["高级资深干员" for x in range(1) if json_char[newcode]["rarity"][-1]=="6"]+ \
@@ -125,12 +133,13 @@ for newchar in newchars:
             for eachtalent in json_char[newcode]["talents"]:
                 eachchartalent=[]
                 for talent in eachtalent['candidates']:
-                    eachchartalent.append({
+                    if talent["isHideTalent"]: continue
+                    else: eachchartalent.append({
                                         "name": talent["name"],
                                         "descCN": talent['description'],
                                         "desc": ""
                                     })
-                chartalent.append(eachchartalent)
+                if not talent["isHideTalent"]: chartalent.append(eachchartalent)
             talenttl[newcode]=chartalent
             
             ## Skill
@@ -141,6 +150,25 @@ for newchar in newchars:
                                         "name" : json_skill[skillid]["levels"][0]["name"],
                                         "desc": [json_skill[skillid]["levels"][x]["description"] for x in range(len(json_skill[skillid]["levels"]))]
                                     }
+            
+            ## Token Find
+            if json_char[newcode]["displayTokenDict"] :
+                for token in json_char[newcode]["displayTokenDict"]:
+                #### Token trait
+                    newtrait[json_char[token]["description"]]={
+                                                                "name":json_char[token]["appellation"],
+                                                                "code":token,
+                                                                "mode":"Newtoken from "+newchar+" "+newcode
+                                                            }
+                #### Token Skill
+                    for skill in json_char[token]["skills"]:
+                        if skill["skillId"] :
+                            skillid = skill["skillId"]
+                            skilltl[skillid]={
+                                                "name" : json_skill[skillid]["levels"][0]["name"],
+                                                "desc": [json_skill[skillid]["levels"][x]["description"] if len(json_skill[skillid]["levels"])==10 else json_skill[skillid]["levels"][0]["name"] for x in range(10)]
+                                            }
+
         except:
             skipchar.append(newchar)
 
@@ -150,22 +178,41 @@ for newchar in newchars:
         for eachtalent in json_char[newcode]["talents"]:
             eachchartalent=[]
             for talent in eachtalent['candidates']:
-                eachchartalent.append({
+                if talent["isHideTalent"]: continue
+                else : eachchartalent.append({
                                     "name": talent["name"],
                                     "descCN": talent['description'],
                                     "desc": ""
                                 })
-            chartalent.append(eachchartalent)
+            if not talent["isHideTalent"]: chartalent.append(eachchartalent)
         talenttl[newcode]=chartalent
         
         ## Skill
         for skill in json_char[newcode]["skills"]:
             skillid = skill["skillId"]
-            if skillid not in json_skillTL.keys():
-                skilltl[skillid]={
-                                    "name" : json_skill[skillid]["levels"][0]["name"],
-                                    "desc": [json_skill[skillid]["levels"][x]["description"] for x in range(len(json_skill[skillid]["levels"]))]
-                                }
+            skilltl[skillid]={
+                                "name" : json_skill[skillid]["levels"][0]["name"],
+                                "desc": [json_skill[skillid]["levels"][x]["description"] for x in range(len(json_skill[skillid]["levels"]))]
+                            }
+
+        ## Token Find
+        if json_char[newcode]["displayTokenDict"] :
+            for token in json_char[newcode]["displayTokenDict"].keys():
+                print(token,json_char[token]["description"])
+            #### Token trait
+                newtrait[json_char[token]["description"]]={
+                                                            "name":json_char[token]["appellation"],
+                                                            "code":token,
+                                                            "mode":"Newtoken from "+newchar+" "+newcode
+                                                        }
+            #### Token Skill
+                for skill in json_char[token]["skills"]:
+                    if skill["skillId"] :
+                        skillid = skill["skillId"]
+                        skilltl[skillid]={
+                                            "name" : json_skill[skillid]["levels"][0]["name"],
+                                            "desc": [json_skill[skillid]["levels"][x]["description"] if len(json_skill[skillid]["levels"])==10 else json_skill[skillid]["levels"][0]["name"] for x in range(10)]
+                                        }
 
 if skipchar:
     print('\nNEW CHAR skip list =', skipchar)
@@ -191,16 +238,17 @@ if recruitEN:
             if char.lower()==chars["name_en"].lower():
                 chars["globalHidden"]=False
                 break
+            
 dumpling=json.dumps(json_akhr,indent=4, ensure_ascii=False)
 with open("json/tl-akhr.json",'w') as JSON :
     JSON.write(dumpling)
     
 dumpling=json.dumps(talenttl,indent=4, ensure_ascii=False)
-with open("temp/tl-talent.json",'w') as JSON :
+with open("update/tl-talent.json",'w') as JSON :
     JSON.write(dumpling)
 
 dumpling=json.dumps(skilltl,indent=4, ensure_ascii=False)
-with open("temp/tl-skill.json",'w') as JSON :
+with open("update/tl-skill.json",'w') as JSON :
     JSON.write(dumpling)
 
 #########################################################################################################
@@ -266,6 +314,7 @@ for item in json_akmaterial:
         temp=item[key]
         item.pop(key)
         item[key]=temp
+
 dumpling=json.dumps(json_akmaterial,indent=4, ensure_ascii=False)
 with open("json/akmaterial.json",'w') as JSON :
     JSON.write(dumpling)
@@ -276,6 +325,7 @@ for item in json_tl_item:
         if item[lang[0]]=="":
             if item["itemId"] in lang[1]["items"].keys():
                 item[lang[0]]=lang[1]["items"][item["itemId"]]["name"]
+                
 dumpling=json.dumps(json_tl_item,indent=4, ensure_ascii=False)
 with open("json/tl-item.json",'w') as JSON :
     JSON.write(dumpling)
@@ -286,6 +336,7 @@ with open("json/tl-item.json",'w') as JSON :
 skipmod=[]
 modtl={}
 for charlist in newmods:
+    
     try:
         char=CharReady["Name2Code"][charlist[0]]
         modcode=json_mod_table["charEquip"][char][charlist[1]]
@@ -304,31 +355,33 @@ for charlist in newmods:
                 if part["target"] in ["TALENT_DATA_ONLY","TALENT"] and not part["isToken"] and part["addOrOverrideTalentDataBundle"]["candidates"][0]["upgradeDescription"]!="":
                     for pot in range(len(part["addOrOverrideTalentDataBundle"]["candidates"])):
                         candidate = part["addOrOverrideTalentDataBundle"]["candidates"][pot]
+                        talentcandidate=json_char[char]["talents"][candidate["talentIndex"]]["candidates"][pot-len(part["addOrOverrideTalentDataBundle"]["candidates"])]
+                        talentcandidateEN=json_charEN[char]["talents"][candidate["talentIndex"]]["candidates"][pot-len(part["addOrOverrideTalentDataBundle"]["candidates"])] if char in json_charEN.keys() else None
                         if char in json_charEN and candidate["talentIndex"]!=-1:
                             temppart.append({
-                                    "name":json_charEN[char]["talents"][candidate["talentIndex"]]["candidates"][pot-len(part["addOrOverrideTalentDataBundle"]["candidates"])]["name"],
-                                    "EN":json_charEN[char]["talents"][candidate["talentIndex"]]["candidates"][pot-len(part["addOrOverrideTalentDataBundle"]["candidates"])]["description"],
-                                    "CN":json_char[char]["talents"][candidate["talentIndex"]]["candidates"][pot-len(part["addOrOverrideTalentDataBundle"]["candidates"])]["description"],
+                                    "name":talentcandidateEN["name"],
+                                    "EN":talentcandidateEN["description"],
+                                    "CN":talentcandidate["description"],
                                     "mod":candidate["upgradeDescription"],
                                     "upgradeDescription":""
                             })
                         else:
                             temppart.append({
                                     "name":candidate["name"],
-                                    "CN":json_char[char]["talents"][candidate["talentIndex"]]["candidates"][pot-len(part["addOrOverrideTalentDataBundle"]["candidates"])]["description"],
+                                    "CN":talentcandidate["description"],
                                     "mod":candidate["upgradeDescription"],
                                     "upgradeDescription":""
                             })
-            tempphase.append(temppart)
+                if len(temppart) :tempphase.append(temppart)
         modtl[modcode]=tempphase
     except:
         skipmod.append(charlist)
-        
+
 if skipmod:
     print('NEW MOD skip list = ',skipmod)
 
 dumpling=json.dumps(modtl,indent=4, ensure_ascii=False)
-with open("update/TempModuletalentsTL.json",'w') as JSON :
+with open("update/tl-module.json",'w') as JSON :
     JSON.write(dumpling)
 
 poplist=[]
@@ -339,7 +392,7 @@ for mod in poplist:
     json_tempmod.pop(mod)
 
 dumpling=json.dumps(json_tempmod,indent=4, ensure_ascii=False)
-with open("json/TempModuletalentsTL.json",'w') as JSON :
+with open("json/tl-module.json",'w') as JSON :
     JSON.write(dumpling)
 
 #########################################################################################################

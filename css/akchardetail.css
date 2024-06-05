@@ -1786,6 +1786,28 @@ body {
 .btn-disabled {
     opacity: 0.5;
 }
+
+.btn.filter-exclusive:hover {
+    color :aqua
+}
+
+.btn.filter-nonexclusive:hover {
+    color :red
+}
+
+.btn.btn-primary:hover {
+    color :black
+}
+
+.btn.btn-secondary:hover {
+    color : black
+}
+
+.tooltip2 .filter-img:hover {
+    filter:invert(100%) drop-shadow(0px 0px 5px rgb(250, 250, 250) );
+    transition: filter 0.5s;
+}
+
 .collapsible-closed, .collapsible-open {
     background-color: #222;
     color: white;
@@ -1940,12 +1962,13 @@ button[id^='class-change-']:hover [id^='class-background-']{
     background-color: rgb(44, 2, 2);
 }
 button[id^='class-change-']:hover #class-icon{
-    filter: drop-shadow(0px 0px 10px rgb(255, 125, 125)) contrast(3);
+    /*filter: drop-shadow(0px 0px 10px rgb(255, 125, 125)) contrast(3);*/
+    filter:invert(100%) drop-shadow(0px 0px 5px rgb(250, 250, 250) );
+    transition: filter 1s;
 }
-button[id^='class-change-']:active #class-icon{
+/*button[id^='class-change-']:active #class-icon{
     filter:invert(100%) drop-shadow(0px 0px 10px rgb(0, 0, 0) );
-    transition: filter 0.05s;
-}
+}*/
 
 #class-beta{
     position: absolute;

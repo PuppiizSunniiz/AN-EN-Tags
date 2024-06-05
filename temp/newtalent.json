@@ -1,20 +1,20 @@
 {
-    "char_XXXX_ABCDEF": [   #Wis’adel   // Talent 1 : {%ATK damage} {Chance} {%ATK explode} {duration}
-                                        // Talent 2 : {duration} {SP}
+    "char_XXXX_ABCDEF": [   #Ulpianus   // Talent 1 {HP} {effect}
+                                        // Talent 2
         [
             {
                 "name": "",
-                "desc": "When attacking, deal 120% damage to target and attach an Afterimage. When the Afterimage is hit by Wis'adel's aftershocks, 15% chance to explode and deal 170% ATK as Physical damage to all nearby enemies and <$ba.stun>stunning</> for 1 seconds"
+                "desc": "When attacked, recover {HP} HP. Effect increase by {effect} when HP less than 50%"
             },
             {
                 "name": "<@ba.talpu></>",
-                "desc": ""
+                "desc": "When attacked, recover {HP}<@ba.talpu>(+)</> HP. Effect increase by {effect} when HP less than 50%"
             }
         ],
         [
             {
                 "name": "",
-                "desc": "On deployment, summon a Spirit's Shadow within Attack Range. When near a Spirit's Shadow, gain Camouflage \nSpirit's Shadow skill: Deal Arts damage to one enemy within Wis'adel's Attack Range, <$ba.sluggish>Slows</> it for {duration} seconds and attaching an Afterimage. Thereafter, gain {SP} SP"
+                "desc": ""
             },
             {
                 "name": "<@ba.talpu></>",
@@ -22,103 +22,29 @@
             }
         ]
     ],
-    "char_XXXX_ABCDEF": [   #Logos    // Talent 1 : {chance} {%ATK} {duration}
-                                        // Talent 2 : {RES} {art.amp} {duration}
+    "char_XXXX_ABCDEF": [   #Lucilla   // Talent 1 {fragile}
         [
             {
                 "name": "",
-                "desc": "When attacking, {chance} chance to attack another random target within Attack Range, dealing {%ATK} ATK as Arts damage and <$ba.sluggish>Slows</> them for {duration} seconds"
+                "desc": "Inflict {fragile} <$ba.fragile>Fragile</> to non-Elite and non-Boss in Attack Range"
             },
             {
                 "name": "<@ba.talpu></>",
-                "desc": ""
+                "desc": "Inflict {fragile}<@ba.talpu>(+%)</> <$ba.fragile>Fragile</> to non-Elite and non-Boss in Attack Range"
             }
-        ],
-        [
-            {
-                "name": "",
-                "desc": "Attacks inflict -{RES} RES to target and increase their Arts damage taken by a {art.amp} for {duration} seconds"
-            },
-            {
-                "name": "<@ba.talpu></>",
-                "desc": ""
-            }
-        ],
-    "char_XXXX_ABCDEF": [   #Civilight Eterna   // Talent 1 : {trait} {respawn}
-                                            // Talent 2 : {reduce}
-    [
-        {
-            "name": "",
-            "desc": "3 \"Fine Dust\" continually revolve around Civilight Eterna. When the \"Fine Dust\" hits an ally, it disappears and increases the Trait effect that ally by {trait}. Disappeared \"Fine Dust\" will reappear in {respawn} seconds"
-        },
-        {
-            "name": "<@ba.talpu></>",
-            "desc": ""
-        }
+        ]
     ],
-    [
-        {
-            "name": "",
-            "desc": "When deployed, reduce damage taken by all allies from [Sarkaz] enemies by {reduce}"
-        },
-        {
-            "name": "<@ba.talpu></>",
-            "desc": ""
-        }
+    "char_XXXX_ABCDEF": [   #Underflow  // Talent 1 Damage + Duration
+            {
+                "name": "",
+                "desc": "Poisons the targets when attacking, dealing {80} Arts damage to them per second, lasting {3} seconds (damage is doubled against [Sea Monster])"
+            },
+            {
+                "name": "<@ba.talpu></>",
+                "desc": "Poisons the targets when attacking, dealing {80}<@ba.talpu>(+10)</> Arts damage to them per second, lasting {3} seconds (damage is doubled against [Sea Monster])"
+            }
+        ]
     ]
-],
-"char_XXXX_ABCDEF": [   #Fang the fire-sharpened   // Talent 1 : {self.DP} {next.DP}
-    [
-        {
-            "name": "",
-            "desc": "During the first deployment, DP Cost -4. After retreat, the next Operator DP Cost -1"
-        },
-        {
-            "name": "<@ba.talpu></>",
-            "desc": ""
-        }
-    ]
-],
-"char_XXXX_ABCDEF": [   #Amiya Medic   // Talent 1 : {HP%} {heal}
-    [
-        {
-            "name": "",
-            "desc": "When deployed, increase all allies' Max HP by {HP%}. When skill is active, all allies recover {heal} Max HP every second"
-        },
-        {
-            "name": "<@ba.talpu></>",
-            "desc": ""
-        }
-    ]
-],
-"char_XXXX_ABCDEF": [   #Phonor-0   // Talent 1 : {duration} {art.Fragile} {ep.Fragile}
-    [
-        {
-            "name": "",
-            "desc": "For {duration} seconds after deployment, PhonoR-0's attacks additionally deals <@ba.vup>{attack@ep_damage_ratio:0%}</> of ATK as <$ba.dt.apoptosis2>Necrosis damage</>. Additionally, PhonoR-0 inflicts {Art.Fragile} <$ba.magicfragile>[Arts Fragility]</> and {EP.Fragile} <$ba.epfragile>[Elemental Fragility]</> to all enemies within Attack Range"
-        },
-        {
-            "name": "<@ba.talpu></>",
-            "desc": ""
-        },
-        {
-            "name": "<@ba.talpu></>",
-            "desc": ""
-        },
-        {
-            "name": "<@ba.talpu></>",
-            "desc": ""
-        },
-        {
-            "name": "<@ba.talpu></>",
-            "desc": ""
-        },
-        {
-            "name": "<@ba.talpu></>",
-            "desc": ""
-        }
-    ]
-]
 }
 
 #template

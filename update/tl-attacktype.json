@@ -1,1 +1,22 @@
-{}
+{
+    "子弹数量为空时下次装填额外加装1发子弹": {
+        "en": "When reload from empty,gain 1 addition ammo",
+        "color": "extra",
+        "note": "Hunter Mod (HUN-X)"
+    },
+    "造成法术伤害时附带相当于<@ba.vup>8%</>伤害的<$ba.dt.burning2>灼燃损伤</>": {
+        "en": "When dealing Arts damage, deals an additional <@ba.vup>8%</> as <$ba.dt.burning2>Burn damage</>",
+        "color": "magic",
+        "note": "Blast Caster Mod (BLA-D)"
+    },
+    "技能可以使敌人产生<@ba.kw>位移</>，向自身拖拽较远的敌人时力度提升一个等级\\n可以放置于远程位": {
+        "en": "Can <@ba.kw>Shift</> enemies by using skills, increases shift level by 1 when dragging further away targets towards this unit \nCan be deployed on Ranged Tiles",
+        "color": "extra",
+        "note": "Hookmaster Mod (HOX-Y)"
+    },
+    "周围8格没有友方干员时攻击力和防御力<@ba.kw>+8%</>": {
+        "en": "Gains +8% ATK and DEF when there are no allied units in the surrounding 8 tiles",
+        "color": "common",
+        "note": "Juggernaut Mod (UNY-Y)"
+    }
+}

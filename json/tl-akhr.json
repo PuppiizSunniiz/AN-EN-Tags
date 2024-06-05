@@ -6914,5 +6914,68 @@
         ],
         "hidden": false,
         "globalHidden": true
+    },
+    {
+        "id": "char_4145_ulpia",
+        "name_cn": "乌尔比安",
+        "name_en": "Ulpianus",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": "egir",
+        "groupId": "abyssal",
+        "teamId": null,
+        "type": "近卫",
+        "level": 6,
+        "sex": "男",
+        "tags": [
+            "高级资深干员",
+            "近战位",
+            "输出",
+            "生存"
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_4079_haini",
+        "name_cn": "海霓",
+        "name_en": "Lucilla",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": "egir",
+        "groupId": null,
+        "teamId": null,
+        "type": "辅助",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "削弱"
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_4137_udflow",
+        "name_cn": "深巡",
+        "name_en": "Underflow",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": "egir",
+        "groupId": null,
+        "teamId": null,
+        "type": "重装",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "防护",
+            "输出",
+            "减速"
+        ],
+        "hidden": true,
+        "globalHidden": true
     }
 ]

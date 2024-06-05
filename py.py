@@ -199,8 +199,10 @@ def Rangecheck():
 #########################################################################################################
 DB={}
 
+ClassParse = {"MEDIC": "Medic", "WARRIOR": "Guard", "SPECIAL": "Specialist", "SNIPER": "Sniper",
+              "PIONEER": "Vanguard", "CASTER": "Caster", "SUPPORT": "Supporter", "TANK": "Defender"}
 for char in json_char_patch["patchChars"].keys():
-    json_char_patch["patchChars"][char]["appellation"]=json_char_patch["patchChars"][char]["appellation"]+" ("+char.split("_")[-1]+")"
+    json_char_patch["patchChars"][char]["appellation"]=json_char_patch["patchChars"][char]["appellation"]+" ("+ClassParse[json_char_patch["patchChars"][char]["profession"]]+")"
 json_char.update(json_char_patch["patchChars"])
 
 CharReady={"Code2Name":{},"Name2Code":{}}

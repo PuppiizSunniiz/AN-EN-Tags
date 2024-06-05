@@ -9519,16 +9519,16 @@
     "skchr_rdoc_1": {
         "name": "以暴制暴",
         "desc": [
-            "When skill is activated, Doc immediately heals <@ba.vup>{heal_scale:0%}</> to himself, then <@ba.vup>slightly reduces Attack Interval</>\\n<@ba.rem> Skill activation grants 31 ammo and the skill ends when all ammo is used (Can manually deactivate skill)\nCan only be used 3 times per deployment</>",
-            "When skill is activated, Doc immediately heals <@ba.vup>{heal_scale:0%}</> to himself, then <@ba.vup>slightly reduces Attack Interval</>\\n<@ba.rem> Skill activation grants 31 ammo and the skill ends when all ammo is used (Can manually deactivate skill)\nCan only be used 3 times per deployment</>",
-            "When skill is activated, Doc immediately heals <@ba.vup>{heal_scale:0%}</> to himself, then <@ba.vup>slightly reduces Attack Interval</>\\n<@ba.rem> Skill activation grants 31 ammo and the skill ends when all ammo is used (Can manually deactivate skill)\nCan only be used 3 times per deployment</>",
-            "When skill is activated, Doc immediately heals <@ba.vup>{heal_scale:0%}</> to himself, then <@ba.vup>moderate reduces Attack Interval</>\\n<@ba.rem> Skill activation grants 31 ammo and the skill ends when all ammo is used (Can manually deactivate skill)\nCan only be used 3 times per deployment</>",
-            "When skill is activated, Doc immediately heals <@ba.vup>{heal_scale:0%}</> to himself, then <@ba.vup>moderate reduces Attack Interval</>\\n<@ba.rem> Skill activation grants 31 ammo and the skill ends when all ammo is used (Can manually deactivate skill)\nCan only be used 3 times per deployment</>",
-            "When skill is activated, Doc immediately heals <@ba.vup>{heal_scale:0%}</> to himself, then <@ba.vup>moderate reduces Attack Interval</>\\n<@ba.rem> Skill activation grants 31 ammo and the skill ends when all ammo is used (Can manually deactivate skill)\nCan only be used 3 times per deployment</>",
-            "When skill is activated, Doc immediately heals <@ba.vup>{heal_scale:0%}</> to himself, then <@ba.vup>massively reduces Attack Interval</>\\n<@ba.rem> Skill activation grants 31 ammo and the skill ends when all ammo is used (Can manually deactivate skill)\nCan only be used 3 times per deployment</>",
-            "When skill is activated, Doc immediately heals <@ba.vup>{heal_scale:0%}</> to himself, then <@ba.vup>massively reduces Attack Interval</>\\n<@ba.rem> Skill activation grants 31 ammo and the skill ends when all ammo is used (Can manually deactivate skill)\nCan only be used 3 times per deployment</>",
-            "When skill is activated, Doc immediately heals <@ba.vup>{heal_scale:0%}</> to himself, then <@ba.vup>massively reduces Attack Interval</>\\n<@ba.rem> Skill activation grants 31 ammo and the skill ends when all ammo is used (Can manually deactivate skill)\nCan only be used 3 times per deployment</>",
-            "When skill is activated, Doc immediately heals <@ba.vup>{heal_scale:0%}</> to himself, then <@ba.vup>massively reduces Attack Interval</>\\n<@ba.rem> Skill activation grants 31 ammo and the skill ends when all ammo is used (Can manually deactivate skill)\nCan only be used 3 times per deployment</>"
+            "When skill is activated, Doc immediately heals <@ba.vup>{heal_scale:0%}</> to himself, then <@ba.vup>slightly reduces Attack Interval</>\n<@ba.rem> Skill activation grants 31 ammo and the skill ends when all ammo is used (Can manually deactivate skill)</br>Can only be used 3 times per deployment</>",
+            "When skill is activated, Doc immediately heals <@ba.vup>{heal_scale:0%}</> to himself, then <@ba.vup>slightly reduces Attack Interval</>\n<@ba.rem> Skill activation grants 31 ammo and the skill ends when all ammo is used (Can manually deactivate skill)</br>Can only be used 3 times per deployment</>",
+            "When skill is activated, Doc immediately heals <@ba.vup>{heal_scale:0%}</> to himself, then <@ba.vup>slightly reduces Attack Interval</>\n<@ba.rem> Skill activation grants 31 ammo and the skill ends when all ammo is used (Can manually deactivate skill)</br>Can only be used 3 times per deployment</>",
+            "When skill is activated, Doc immediately heals <@ba.vup>{heal_scale:0%}</> to himself, then <@ba.vup>moderate reduces Attack Interval</>\n<@ba.rem> Skill activation grants 31 ammo and the skill ends when all ammo is used (Can manually deactivate skill)</br>Can only be used 3 times per deployment</>",
+            "When skill is activated, Doc immediately heals <@ba.vup>{heal_scale:0%}</> to himself, then <@ba.vup>moderate reduces Attack Interval</>\n<@ba.rem> Skill activation grants 31 ammo and the skill ends when all ammo is used (Can manually deactivate skill)</br>Can only be used 3 times per deployment</>",
+            "When skill is activated, Doc immediately heals <@ba.vup>{heal_scale:0%}</> to himself, then <@ba.vup>moderate reduces Attack Interval</>\n<@ba.rem> Skill activation grants 31 ammo and the skill ends when all ammo is used (Can manually deactivate skill)</br>Can only be used 3 times per deployment</>",
+            "When skill is activated, Doc immediately heals <@ba.vup>{heal_scale:0%}</> to himself, then <@ba.vup>massively reduces Attack Interval</>\n<@ba.rem> Skill activation grants 31 ammo and the skill ends when all ammo is used (Can manually deactivate skill)</br>Can only be used 3 times per deployment</>",
+            "When skill is activated, Doc immediately heals <@ba.vup>{heal_scale:0%}</> to himself, then <@ba.vup>massively reduces Attack Interval</>\n<@ba.rem> Skill activation grants 31 ammo and the skill ends when all ammo is used (Can manually deactivate skill)</br>Can only be used 3 times per deployment</>",
+            "When skill is activated, Doc immediately heals <@ba.vup>{heal_scale:0%}</> to himself, then <@ba.vup>massively reduces Attack Interval</>\n<@ba.rem> Skill activation grants 31 ammo and the skill ends when all ammo is used (Can manually deactivate skill)</br>Can only be used 3 times per deployment</>",
+            "When skill is activated, Doc immediately heals <@ba.vup>{heal_scale:0%}</> to himself, then <@ba.vup>massively reduces Attack Interval</>\n<@ba.rem> Skill activation grants 31 ammo and the skill ends when all ammo is used (Can manually deactivate skill)</br>Can only be used 3 times per deployment</>"
         ]
     },
     "skchr_rdoc_2": {
@@ -9979,6 +9979,111 @@
             "Immediately deal <@ba.vup>{atk_scale:0%}</> ATK as Art damage to all enemies within Attack Range and inflict <@ba.vup>{amiya3_s_2[debuff].attack_speed}</> Attack Speed and <@ba.vup>{amiya3_s_2[debuff].move_speed:0%}</> Movement Speed for <@ba.vup>{amiya3_s_2[debuff].duration}</> seconds; \nFor every enemy hit by this attack, ATK<@ba.vup>+{atk:0%}</> (up to <@ba.vup>{max_stack_cnt}</> stack). Afterwards, Amiya will deal <@ba.vup>True damage</> and attacks <@ba.vup>2</> enemies simultaneously</br><@ba.rem>This skill can only be used once per battle</>",
             "Immediately deal <@ba.vup>{atk_scale:0%}</> ATK as Art damage to all enemies within Attack Range and inflict <@ba.vup>{amiya3_s_2[debuff].attack_speed}</> Attack Speed and <@ba.vup>{amiya3_s_2[debuff].move_speed:0%}</> Movement Speed for <@ba.vup>{amiya3_s_2[debuff].duration}</> seconds; \nFor every enemy hit by this attack, ATK<@ba.vup>+{atk:0%}</> (up to <@ba.vup>{max_stack_cnt}</> stack). Afterwards, Amiya will deal <@ba.vup>True damage</> and attacks <@ba.vup>2</> enemies simultaneously</br><@ba.rem>This skill can only be used once per battle</>",
             "Immediately deal <@ba.vup>{atk_scale:0%}</> ATK as Art damage to all enemies within Attack Range and inflict <@ba.vup>{amiya3_s_2[debuff].attack_speed}</> Attack Speed and <@ba.vup>{amiya3_s_2[debuff].move_speed:0%}</> Movement Speed for <@ba.vup>{amiya3_s_2[debuff].duration}</> seconds; \nFor every enemy hit by this attack, ATK<@ba.vup>+{atk:0%}</> (up to <@ba.vup>{max_stack_cnt}</> stack). Afterwards, Amiya will deal <@ba.vup>True damage</> and attacks <@ba.vup>2</> enemies simultaneously</br><@ba.rem>This skill can only be used once per battle</>"
+        ]
+    },
+	"skchr_ulpia_1": {
+        "name": "必须促成的接触",
+        "desc": [
+            "Throw an anchor forwards and drags 2 targets towards this unit <@ba.vup>moderately</>, dealing <@ba.vup>{atk_scale:0%}</> ATK as <@ba.vup>Physical damage</>",
+            "Throw an anchor forwards and drags 2 targets towards this unit <@ba.vup>moderately</>, dealing <@ba.vup>{atk_scale:0%}</> ATK as <@ba.vup>Physical damage</>",
+            "Throw an anchor forwards and drags 2 targets towards this unit <@ba.vup>moderately</>, dealing <@ba.vup>{atk_scale:0%}</> ATK as <@ba.vup>Physical damage</>",
+            "Throw an anchor forwards and drags 2 targets towards this unit <@ba.vup>moderately</>, dealing <@ba.vup>{atk_scale:0%}</> ATK as <@ba.vup>Physical damage</>",
+            "Throw an anchor forwards and drags 2 targets towards this unit <@ba.vup>moderately</>, dealing <@ba.vup>{atk_scale:0%}</> ATK as <@ba.vup>Physical damage</>",
+            "Throw an anchor forwards and drags 2 targets towards this unit <@ba.vup>moderately</>, dealing <@ba.vup>{atk_scale:0%}</> ATK as <@ba.vup>Physical damage</>",
+            "Throw an anchor forwards and drags 2 targets towards this unit <@ba.vup>moderately</>, dealing <@ba.vup>{atk_scale:0%}</> ATK as <@ba.vup>Physical damage</>",
+            "Throw an anchor forwards and drags 2 targets towards this unit <@ba.vup>moderately</>, dealing <@ba.vup>{atk_scale:0%}</> ATK as <@ba.vup>Physical damage</>",
+            "Throw an anchor forwards and drags 2 targets towards this unit <@ba.vup>moderately</>, dealing <@ba.vup>{atk_scale:0%}</> ATK as <@ba.vup>Physical damage</>",
+            "Throw an anchor forwards and drags 2 targets towards this unit <@ba.vup>moderately</>, dealing <@ba.vup>{atk_scale:0%}</> ATK as <@ba.vup>Physical damage</>"
+        ]
+    },
+    "skchr_ulpia_2": {
+        "name": "必须维系的界限",
+        "desc": [
+            "The effect of the First Talent is increase to <@ba.vup>{talent_scale}</>x. Block <@ba.vup>+1</>, Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. \n<@ba.rem>Unlimited duration</>",
+            "The effect of the First Talent is increase to <@ba.vup>{talent_scale}</>x. Block <@ba.vup>+1</>, Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. \n<@ba.rem>Unlimited duration</>",
+            "The effect of the First Talent is increase to <@ba.vup>{talent_scale}</>x. Block <@ba.vup>+1</>, Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. \n<@ba.rem>Unlimited duration</>",
+            "The effect of the First Talent is increase to <@ba.vup>{talent_scale}</>x. Block <@ba.vup>+1</>, Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. \n<@ba.rem>Unlimited duration</>",
+            "The effect of the First Talent is increase to <@ba.vup>{talent_scale}</>x. Block <@ba.vup>+1</>, Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. \n<@ba.rem>Unlimited duration</>",
+            "The effect of the First Talent is increase to <@ba.vup>{talent_scale}</>x. Block <@ba.vup>+1</>, Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. \n<@ba.rem>Unlimited duration</>",
+            "The effect of the First Talent is increase to <@ba.vup>{talent_scale}</>x. Block <@ba.vup>+1</>, Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. \n<@ba.rem>Unlimited duration</>",
+            "The effect of the First Talent is increase to <@ba.vup>{talent_scale}</>x. Block <@ba.vup>+1</>, Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. \n<@ba.rem>Unlimited duration</>",
+            "The effect of the First Talent is increase to <@ba.vup>{talent_scale}</>x. Block <@ba.vup>+1</>, Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. \n<@ba.rem>Unlimited duration</>",
+            "The effect of the First Talent is increase to <@ba.vup>{talent_scale}</>x. Block <@ba.vup>+1</>, Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. \n<@ba.rem>Unlimited duration</>"
+        ]
+    },
+    "skchr_ulpia_3": {
+        "name": "必须开辟的通路",
+        "desc": [
+            "Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. Immediately throw an anchor forwards. The anchor stops when hitting a target or when it reaches the maximum distance, then deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to nearby enemies and <$ba.stun>stun</> targets for <@ba.vup>{stun}</> seconds. If the anchor lands on a deployable tile, Ulpian moves to that tile\n<@ba.rem>Skill can be manually deactivated. When the skill ends, Ulpian returns to his initial tile</>",
+            "Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. Immediately throw an anchor forwards. The anchor stops when hitting a target or when it reaches the maximum distance, then deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to nearby enemies and <$ba.stun>stun</> targets for <@ba.vup>{stun}</> seconds. If the anchor lands on a deployable tile, Ulpian moves to that tile\n<@ba.rem>Skill can be manually deactivated. When the skill ends, Ulpian returns to his initial tile</>",
+            "Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. Immediately throw an anchor forwards. The anchor stops when hitting a target or when it reaches the maximum distance, then deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to nearby enemies and <$ba.stun>stun</> targets for <@ba.vup>{stun}</> seconds. If the anchor lands on a deployable tile, Ulpian moves to that tile\n<@ba.rem>Skill can be manually deactivated. When the skill ends, Ulpian returns to his initial tile</>",
+            "Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. Immediately throw an anchor forwards. The anchor stops when hitting a target or when it reaches the maximum distance, then deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to nearby enemies and <$ba.stun>stun</> targets for <@ba.vup>{stun}</> seconds. If the anchor lands on a deployable tile, Ulpian moves to that tile\n<@ba.rem>Skill can be manually deactivated. When the skill ends, Ulpian returns to his initial tile</>",
+            "Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. Immediately throw an anchor forwards. The anchor stops when hitting a target or when it reaches the maximum distance, then deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to nearby enemies and <$ba.stun>stun</> targets for <@ba.vup>{stun}</> seconds. If the anchor lands on a deployable tile, Ulpian moves to that tile\n<@ba.rem>Skill can be manually deactivated. When the skill ends, Ulpian returns to his initial tile</>",
+            "Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. Immediately throw an anchor forwards. The anchor stops when hitting a target or when it reaches the maximum distance, then deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to nearby enemies and <$ba.stun>stun</> targets for <@ba.vup>{stun}</> seconds. If the anchor lands on a deployable tile, Ulpian moves to that tile\n<@ba.rem>Skill can be manually deactivated. When the skill ends, Ulpian returns to his initial tile</>",
+            "Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. Immediately throw an anchor forwards. The anchor stops when hitting a target or when it reaches the maximum distance, then deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to nearby enemies and <$ba.stun>stun</> targets for <@ba.vup>{stun}</> seconds. If the anchor lands on a deployable tile, Ulpian moves to that tile\n<@ba.rem>Skill can be manually deactivated. When the skill ends, Ulpian returns to his initial tile</>",
+            "Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. Immediately throw an anchor forwards. The anchor stops when hitting a target or when it reaches the maximum distance, then deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to nearby enemies and <$ba.stun>stun</> targets for <@ba.vup>{stun}</> seconds. If the anchor lands on a deployable tile, Ulpian moves to that tile\n<@ba.rem>Skill can be manually deactivated. When the skill ends, Ulpian returns to his initial tile</>",
+            "Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. Immediately throw an anchor forwards. The anchor stops when hitting a target or when it reaches the maximum distance, then deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to nearby enemies and <$ba.stun>stun</> targets for <@ba.vup>{stun}</> seconds. If the anchor lands on a deployable tile, Ulpian moves to that tile\n<@ba.rem>Skill can be manually deactivated. When the skill ends, Ulpian returns to his initial tile</>",
+            "Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. Immediately throw an anchor forwards. The anchor stops when hitting a target or when it reaches the maximum distance, then deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to nearby enemies and <$ba.stun>stun</> targets for <@ba.vup>{stun}</> seconds. If the anchor lands on a deployable tile, Ulpian moves to that tile\n<@ba.rem>Skill can be manually deactivated. When the skill ends, Ulpian returns to his initial tile</>"
+        ]
+    },
+    "skchr_haini_1": {
+        "name": "迷惑性洋流图",
+        "desc": [
+            "The next attack increase damage to <@ba.vup>{atk_scale:0%}</>, and attack <@ba.vup>{max_target}</> targets at the same time",
+            "The next attack increase damage to <@ba.vup>{atk_scale:0%}</>, and attack <@ba.vup>{max_target}</> targets at the same time",
+            "The next attack increase damage to <@ba.vup>{atk_scale:0%}</>, and attack <@ba.vup>{max_target}</> targets at the same time",
+            "The next attack increase damage to <@ba.vup>{atk_scale:0%}</>, and attack <@ba.vup>{max_target}</> targets at the same time",
+            "The next attack increase damage to <@ba.vup>{atk_scale:0%}</>, and attack <@ba.vup>{max_target}</> targets at the same time",
+            "The next attack increase damage to <@ba.vup>{atk_scale:0%}</>, and attack <@ba.vup>{max_target}</> targets at the same time",
+            "The next attack increase damage to <@ba.vup>{atk_scale:0%}</>, and attack <@ba.vup>{max_target}</> targets at the same time",
+            "The next attack increase damage to <@ba.vup>{atk_scale:0%}</>, and attack <@ba.vup>{max_target}</> targets at the same time",
+            "The next attack increase damage to <@ba.vup>{atk_scale:0%}</>, and attack <@ba.vup>{max_target}</> targets at the same time",
+            "The next attack increase damage to <@ba.vup>{atk_scale:0%}</>, and attack <@ba.vup>{max_target}</> targets at the same time"
+        ]
+    },
+    "skchr_haini_2": {
+        "name": "阻滞性显色剂",
+        "desc": [
+            "ATK <@ba.vup>+{atk:0%}</>, attack an additional target, non-elite and non-boss enemies within the Attack Range Movement Speed <@ba.vup>-{attack@move_speed:0%}</>, when effected enemies defeated increase talent effect for <@ba.vup>{attack@talent_up:0.0}</>x up to <@ba.vup>{attack@max_talent_up:0.0}</>x, last until skill end",
+            "ATK <@ba.vup>+{atk:0%}</>, attack an additional target, non-elite and non-boss enemies within the Attack Range Movement Speed <@ba.vup>-{attack@move_speed:0%}</>, when effected enemies defeated increase talent effect for <@ba.vup>{attack@talent_up:0.0}</>x up to <@ba.vup>{attack@max_talent_up:0.0}</>x, last until skill end",
+            "ATK <@ba.vup>+{atk:0%}</>, attack an additional target, non-elite and non-boss enemies within the Attack Range Movement Speed <@ba.vup>-{attack@move_speed:0%}</>, when effected enemies defeated increase talent effect for <@ba.vup>{attack@talent_up:0.0}</>x up to <@ba.vup>{attack@max_talent_up:0.0}</>x, last until skill end",
+            "ATK <@ba.vup>+{atk:0%}</>, attack an additional target, non-elite and non-boss enemies within the Attack Range Movement Speed <@ba.vup>-{attack@move_speed:0%}</>, when effected enemies defeated increase talent effect for <@ba.vup>{attack@talent_up:0.0}</>x up to <@ba.vup>{attack@max_talent_up:0.0}</>x, last until skill end",
+            "ATK <@ba.vup>+{atk:0%}</>, attack an additional target, non-elite and non-boss enemies within the Attack Range Movement Speed <@ba.vup>-{attack@move_speed:0%}</>, when effected enemies defeated increase talent effect for <@ba.vup>{attack@talent_up:0.0}</>x up to <@ba.vup>{attack@max_talent_up:0.0}</>x, last until skill end",
+            "ATK <@ba.vup>+{atk:0%}</>, attack an additional target, non-elite and non-boss enemies within the Attack Range Movement Speed <@ba.vup>-{attack@move_speed:0%}</>, when effected enemies defeated increase talent effect for <@ba.vup>{attack@talent_up:0.0}</>x up to <@ba.vup>{attack@max_talent_up:0.0}</>x, last until skill end",
+            "ATK <@ba.vup>+{atk:0%}</>, attack an additional target, non-elite and non-boss enemies within the Attack Range Movement Speed <@ba.vup>-{attack@move_speed:0%}</>, when effected enemies defeated increase talent effect for <@ba.vup>{attack@talent_up:0.0}</>x up to <@ba.vup>{attack@max_talent_up:0.0}</>x, last until skill end",
+            "ATK <@ba.vup>+{atk:0%}</>, attack an additional target, non-elite and non-boss enemies within the Attack Range Movement Speed <@ba.vup>-{attack@move_speed:0%}</>, when effected enemies defeated increase talent effect for <@ba.vup>{attack@talent_up:0.0}</>x up to <@ba.vup>{attack@max_talent_up:0.0}</>x, last until skill end",
+            "ATK <@ba.vup>+{atk:0%}</>, attack an additional target, non-elite and non-boss enemies within the Attack Range Movement Speed <@ba.vup>-{attack@move_speed:0%}</>, when effected enemies defeated increase talent effect for <@ba.vup>{attack@talent_up:0.0}</>x up to <@ba.vup>{attack@max_talent_up:0.0}</>x, last until skill end",
+            "ATK <@ba.vup>+{atk:0%}</>, attack an additional target, non-elite and non-boss enemies within the Attack Range Movement Speed <@ba.vup>-{attack@move_speed:0%}</>, when effected enemies defeated increase talent effect for <@ba.vup>{attack@talent_up:0.0}</>x up to <@ba.vup>{attack@max_talent_up:0.0}</>x, last until skill end"
+        ]
+    },
+    "skchr_udflow_1": {
+        "name": "侵袭破坏应对",
+        "desc": [
+            "ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+            "ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+            "ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+            "ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+            "ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+            "ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+            "ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+            "ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+            "ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+            "ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>"
+        ]
+    },
+    "skchr_udflow_2": {
+        "name": "行动能力剥夺",
+        "desc": [
+            "Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>. Attack change to firing poisonous fin spines forward, piercing through <@ba.vup>{attack@max_target}</> enemies and <$ba.sluggish>Slow</> enemies for <@ba.vup>{attack@sluggish}</> seconds",
+            "Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>. Attack change to firing poisonous fin spines forward, piercing through <@ba.vup>{attack@max_target}</> enemies and <$ba.sluggish>Slow</> enemies for <@ba.vup>{attack@sluggish}</> seconds",
+            "Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>. Attack change to firing poisonous fin spines forward, piercing through <@ba.vup>{attack@max_target}</> enemies and <$ba.sluggish>Slow</> enemies for <@ba.vup>{attack@sluggish}</> seconds",
+            "Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>. Attack change to firing poisonous fin spines forward, piercing through <@ba.vup>{attack@max_target}</> enemies and <$ba.sluggish>Slow</> enemies for <@ba.vup>{attack@sluggish}</> seconds",
+            "Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>. Attack change to firing poisonous fin spines forward, piercing through <@ba.vup>{attack@max_target}</> enemies and <$ba.sluggish>Slow</> enemies for <@ba.vup>{attack@sluggish}</> seconds",
+            "Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>. Attack change to firing poisonous fin spines forward, piercing through <@ba.vup>{attack@max_target}</> enemies and <$ba.sluggish>Slow</> enemies for <@ba.vup>{attack@sluggish}</> seconds",
+            "Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>. Attack change to firing poisonous fin spines forward, piercing through <@ba.vup>{attack@max_target}</> enemies and <$ba.sluggish>Slow</> enemies for <@ba.vup>{attack@sluggish}</> seconds",
+            "Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>. Attack change to firing poisonous fin spines forward, piercing through <@ba.vup>{attack@max_target}</> enemies and <$ba.sluggish>Slow</> enemies for <@ba.vup>{attack@sluggish}</> seconds",
+            "Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>. Attack change to firing poisonous fin spines forward, piercing through <@ba.vup>{attack@max_target}</> enemies and <$ba.sluggish>Slow</> enemies for <@ba.vup>{attack@sluggish}</> seconds",
+            "Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>. Attack change to firing poisonous fin spines forward, piercing through <@ba.vup>{attack@max_target}</> enemies and <$ba.sluggish>Slow</> enemies for <@ba.vup>{attack@sluggish}</> seconds"
         ]
     }
 }

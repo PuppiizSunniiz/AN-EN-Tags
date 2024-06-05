@@ -12,6 +12,60 @@
     max-width:600px;
     width:100%;
 }
+
+.filter-tag-red {
+    display: inline-flex;
+    color: white;
+    background: #222;
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 14px;
+    align-items: center;
+    margin-right: 10px;
+    box-shadow: inset -6px 0px 0px 0px brown;
+    border-radius: 0px;
+}
+
+.filter-tag-blue {
+    display: inline-flex;
+    color: white;
+    background: #222;
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 14px;
+    align-items: center;
+    margin-right: 10px;
+    box-shadow: inset -6px 0px 0px 0px #22b;
+    border-radius: 0px;
+}
+
+.filter-tag-none {
+    display: inline-flex;
+    color: white;
+    background: #222;
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 14px;
+    align-items: center;
+    margin-right: 10px;
+    /*box-shadow: inset -6px 0px 0px 0px #22b;*/
+    border-radius: 0px;
+}
+
+.filter-category-enemy{
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: 330px;
+}
+
+#filter-enemy-immunity.filter-tag-red:hover{
+    color: aqua
+}
+
+#filter-enemy-immunity.filter-tag-blue:hover{
+    color: red;
+}
+
 #spine-toolbar{
     left: initial !important;
 }

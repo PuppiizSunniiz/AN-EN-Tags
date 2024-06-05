@@ -29,7 +29,7 @@
         
     </script>
 </head>
-<body  >
+<body style="min-height: 100vh;display: flex;flex-direction: column;">
     <div id="loadingOverlay" style="width: 100vw; height: 150%; background-color: #111111; position: absolute; z-index: 9999; top:0px;">
         <div class="d-flex justify-content-center" style="margin-top: 50vh">
             <div class="spinner-border" role="status" style="border-color: #0098DC; border-right-color: transparent; width: 4rem; height: 4rem;">
@@ -43,7 +43,7 @@
     </div>
     <script>
         $(function(){
-          $('#nav-placeholder').load('nav.html');
+            $('#nav-placeholder').load('nav.html');
         });
         $(window).on("load", function () {
             setTimeout(function () {
@@ -74,20 +74,24 @@
             </div>
         -->
             <!-- Modal body -->
-            <div class="modal-body" style="display: inline-flex;padding:0px;margin:0px;min-height:88vh;max-height: 88vh;justify-content: center;align-items:flex-end;">
-                    <div id="spine-frame" style="width: 300px; height: 300px;transform: scale(0.75);z-index:2;pointer-events: none;">
+                <div class="modal-body" style="display: inline;padding:5px;margin:0px;max-height: 88vh;overflow-y: auto">
+                    <div id="enemyDetail" class="ak-c-black" ></div><!--style="min-height: 300px;"-->
+                    <!-- <div id="spine-frame" style="width: 300px; height: 300px;transform: scale(0.75);z-index:2;pointer-events: none;">
                         <div id="spine-frameheader" class='btn btn-sm ak-sm-btn' style="display:inline-block;cursor: move;pointer-events:all;transform: scale(2);margin:0px;position: absolute;left:140px;top:90px;opacity: 0;"><i class="fas fa-arrows-alt"></i></div>
                         <button class='btn btn-sm ak-sm-btn ak-disable' style='display:none;position:absolute;top:75px;left:75px;font-size:30px'  type='button' id='loading-spine'>Loading ...</button>
-                        <div id="spine-widget" class="top-layer" style="position:absolute;width: 4000px; height: 4000px;top:-2200px;left:-1850px;pointer-events: none;z-index: 20;transform: scale(0.5);"></div> <!-- scaling 0.5 for "supersampling" chibi -->   
+                        <div id="spine-widget" class="top-layer" style="position:absolute;width: 400px; height: 400px;top:-220px;left:-185px;pointer-events: none;z-index: 20;transform: scale(0.5);"></div> 
+                    </div> --><!-- scaling 0.5 for "supersampling" chibi -->  
+                    <div id="enemyDetail2"></div>
+                    <div class="ak-c-black" style="justify-content: right;display: flex;padding: 15px;">
+                        <button type="button" class="btn btn-danger spine-danger" data-dismiss="modal" style="  justify-content: flex-end;display: flex;">Close</button></div>
                     </div>
-            </div>
         
             <!-- Modal footer -->
             <!-- <div class="modal-footer" style="border-top: 1px solid #2f2f2f;height: 90px;padding:0px">
-               
+
             </div> -->
-            <div style="display:inline-flex;width:100%;bottom:0px;background: #444;padding:10px;border-radius: 2px;justify-content: center;">
-                <div id="spine-toolbar" style="width: 400px; height: 50px;z-index:1;">
+                <!--<div style="display:inline-flex;width:100%;bottom:0px;background: #444;padding:10px;border-radius: 2px;justify-content: center;">
+                    <div id="spine-toolbar" style="width: 400px; height: 50px;z-index:1;">
                         <button class="btn btn-sm ak-chibi-btn" id="Chibi-download" title='Experimental Saving'><i class="far fa-save"></i></button>
                         <button class='btn btn-sm ak-chibi-btn ak-disable' style='min-width:30px;height:30px'  type='button' >C</button>
                         <button class='btn btn-sm ak-chibi-btn' style='min-width:31px;height:30px' onclick='PlayPause("widget")' type='button' id='Chibi-Play'><b>l l </b></button>
@@ -96,41 +100,114 @@
                         <button class='btn btn-sm ak-chibi-btn' style='min-width:30px;height:30px' onclick='ChangeAnimation("widget","#spine-text",1)' type='button' id='Chibi-Next'><i class="fas fa-step-forward"></i></button>
                         <button type="button" class="btn btn-danger spine-danger" data-dismiss="modal">Close</button>
                     </div>
-            </div>
+                </div>-->
             </div>
         </div>
     </div>
     <!-- <div class="warning-sign"style="position: absolute;z-index: 999999;background:#aaa;top:100px;left:50%;width:500px;height:200px;margin-left:-250px;text-align:center; vertical-align:center">aaaaaaaaaaaaaaaaaaaaa</div> -->
-    <div class="col-md-12 col-sm-12 " style="margin:auto;min-height:1000px;max-width:1000px;padding:0" >
-        <div class="col-12 ak-bg ak-shadow mt-3" style="padding:15px;padding-top:0%;padding-bottom:0;border-radius:0px" role="alert">
-            <div class="row" style="padding:0;padding-bottom: 4px">
+    <div class="col-md-12 col-sm-12 " style="margin:auto;/*min-height:1000px;*/max-width:1000px;padding:0" >
+        <div class="col-12 ak-shadow mt-3" style="padding:15px;padding-top:5px;padding-bottom:5px;border-radius:0px" role="alert">
+            <div class="row" style="padding: top 5px;padding-bottom: 5px">
                     <div class="col-12 btn btn-sm ak-btn ak-c-black ak-shadow-small ak-disable" style="padding:0" translate-id="operator-select">Select Filter Type :</div>
             </div>
+
+            <div class='row ak-small-row' style="padding-top: 5px">
+                <div id="filter-enemy-class" class="btn filter-tag-none ak-disable">Class</div>
+                <div class='filter-category-enemy'>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-class button-tag" section="class" cn-text="NORMAL" data-id="NORMAL">Normal</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-class button-tag" section="class" cn-text="ELITE" data-id="ELITE">Elite</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-class button-tag" section="class" cn-text="BOSS" data-id="BOSS">Boss</button>
+                </div>
+            </div>
+
+            <div class='row ak-small-row' style="padding-top: 5px">
+                <div id="filter-enemy-race" class="btn filter-tag-none ak-disable">Race</div>
+                <div class='filter-category-enemy'>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-race button-tag" section="race" cn-text="感染生物" data-id="infection">Infected Creature</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-race button-tag" section="race" cn-text="无人机" data-id="drone">Drone</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-race button-tag" section="race" cn-text="萨卡兹" data-id="sarkaz">Sarkaz</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-race button-tag" section="race" cn-text="宿主" data-id="mutant">Possessed</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-race button-tag" section="race" cn-text="海怪" data-id="seamonster">Sea Monster</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-race button-tag" section="race" cn-text="法术造物" data-id="originiumartscraft">Arts Creation</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-race button-tag" section="race" cn-text="化物" data-id="animated">Apparition</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-race button-tag" section="race" cn-text="机械" data-id="machine">Machina</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-race button-tag" section="race" cn-text="野生动物" data-id="wildanimal">Wild Beast</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-race button-tag" section="race" cn-text="坍缩体" data-id="collapsal">Collapsal</button>
+                </div>
+            </div>
+
+            
+            <div class='row ak-small-row' style="padding-top: 5px">
+                <div id="filter-enemy-attack" class="btn filter-tag-none ak-disable">Attack</div>
+                <div class='filter-category-enemy'>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-attack button-tag" section="attack" cn-text="MELEE" data-id="MELEE">Melee</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-attack button-tag" section="attack" cn-text="RANGED" data-id="RANGED">Ranged</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-attack button-tag" section="attack" cn-text="RANGED" data-id="ALL">Both</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-attack button-tag" section="attack" cn-text="NONE" data-id="NONE">Does not attack</button>
+                </div>
+            </div>
+
+            <div class='row ak-small-row' style="padding-top: 5px">
+                <div id="filter-enemy-movement" class="btn filter-tag-none ak-disable">Movement</div>
+                <div class='filter-category-enemy'>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-movement button-tag" section="movement" cn-text="WALK" data-id="WALK">Ground</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-movement button-tag" section="movement" cn-text="FLY" data-id="FLY">Fly</button>
+                </div>
+            </div>
+
+            <div class='row ak-small-row' style="padding-top: 5px">
+                <div id="filter-enemy-damage" class="btn filter-tag-none ak-disable">Damage</div>
+                <div class='filter-category-enemy'>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-damage button-tag" section="damage" cn-text="PHYSIC" data-id="PHYSIC">Physical</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-damage button-tag" section="damage" cn-text="MAGIC" data-id="MAGIC">Arts</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-damage button-tag" section="damage" cn-text="HEAL" data-id="HEAL">Heal</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-damage button-tag" section="damage" cn-text="NO_DAMAGE" data-id="NO_DAMAGE">Does not Attack</button>
+                </div>
+            </div>
+
+            <div class='row ak-small-row' style="padding-top: 5px">
+                <div id="filter-enemy-immunity" class="btn filter-tag-none ak-disable">Other</div>
+                <div class='filter-category-enemy'>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-other button-tag" section="other" cn-text="" data-id="silenceable" id="silenceable">Silenceable Abilities</button>
+                </div>
+            </div>
+
+            <div class='row ak-small-row' style="padding-top: 5px">
+                <div id="filter-enemy-immunity" class="btn filter-tag-red" onclick="clickImmunity(this)">Immunity</div>
+                <div class='filter-category-enemy'>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-immunity button-tag" section="immunity" cn-text="晕眩" data-id="stunImmune">Stun</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-immunity button-tag" section="immunity" cn-text="狙击" data-id="silenceImmune">Silence</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-immunity button-tag" section="immunity" cn-text="沉睡" data-id="sleepImmune">Sleep</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-immunity button-tag" section="immunity" cn-text="冻结" data-id="frozenImmune">Frozen</button>
+                    <button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 enemy-immunity button-tag" section="immunity" cn-text="浮空" data-id="levitateImmune">Levitate</button>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-12">
                         <div class="row">
-                                <input style="margin-left: 15px;margin-top:5px" type="text" autocomplete="off" class="form-control col-8" name="opname" id="opname" onkeyup="populateEnemy(this)" placeholder="Type in enemy Name">
-                                <div class="col-3 btn btn-sm ak-btn ak-rare-bg browse-btn" style="margin:auto;margin-right: 15px;margin-top:10px" onclick='populateEnemy("Browse")' type="button">Browse</div>
+                                <input style="margin-left: 15px;margin-right: 15px;margin-top:5px;margin-bottom:5px" type="text" autocomplete="off" class="form-control" name="opname" id="opname" onkeyup="populateEnemy()" placeholder="Type in enemy Name" value="">
+                                <button class="btn btn-danger col-12 align-self-center ak-btn text-center" style="padding:1px ; z-index: 0;font-weight: 550" onclick="clickBtnClear()" ><span translate-id="selector-clear">Clear</span> <span id="count-tag"></a> </button>
                         </div>
-                        <div style="position: relative;"><ul class="ak-c-black ak-browse" id="enemyResult" style="display:none; position: absolute; z-index: 10; list-style-type: none; padding: 5px;color:#222"><li style="cursor: pointer"></li></ul></div>
                 </div>
                 
             </div>
             <div class="row">
-                <button class="btn btn-danger col-12 align-self-center ak-btn text-center" style="padding:1px ; z-index: 0;font-weight: 550" onclick="clickBtnClear()" ><span translate-id="selector-clear">Clear</span> <span id="count-tag"></a> </button>
+                
         </div>
     </div>
-        <div>
-            <div id="enemyDetail" class="ak-c-black" style="min-height: 300px;"></div>
-            <div id="enemyDetail2"></div>
-        </div>
-        <table class="table ak-table ak-table-striped table-hover my-3 ak-shadow" id="table-recommend">
+    <div style="position: relative;text-align: center">
+        <ul class="ak-c-black ak-browse" id="enemyResult" style="display:none; /*position: absolute; z-index: 10;*/ list-style-type: none; padding: 5px;color:#222">
+            <li style="cursor: pointer"></li>
+        </ul>
+    </div>
+        <!--<table class="table ak-table ak-table-striped table-hover my-3 ak-shadow" id="table-recommend">
             <thead class="ak-thead">
                 <tr>
                     <th scope="col" colspan="10" style="text-align: center;">Character List</th>
                 </tr>
             </thead>
-                <tbody class="container" id="tbody-list"style="position: relative;z-index:0;margin:auto">
+            <tbody class="container" id="tbody-list"style="position: relative;z-index:0;margin:auto">
                 
             </tbody>
         </table>
@@ -141,13 +218,14 @@
                 <p>1. Click on the filter to show which skill</p>
                 <p>2. Click 'clear' to reset</p>
             </div>
-        </div>
+        </div>-->
         <!-- <div class="col-12 alert alert-success mt-1 cn" role="alert">
             19/05/04 升级消耗计算器上线，可在导航栏切换使用。<br />
             19/05/09 精英材料计算器上线，可在导航栏切换使用。
         </div> -->
         <div class="ak-div"></div>
     </div>
+    <div style="flex-grow:1"></div>
     <div class="row col-12 ak-footer">
         <div class="col-12 text-center">
             <div class="col-12 text-center"></div>

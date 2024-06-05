@@ -232,7 +232,7 @@
     "control_mp_bd_cost_expand[000]": {
         "name": "Solitary Light",
         "desc": "When stationed at the Command Center, mood recovery per hour of operators working in other facilities +0.05. Additionally, further increase mood recovery per hour by +0.05 for every 20 Worldly Plight (has Special Comparison Rules with Command Center effect)",
-        "descformat": "When this Operator is assigned to the Control Center, Operators working in <$cc.c.room2><@cc.kw>other facilities</></> recover <@cc.vup>+0.05</> Morale per hour, with an additional <@cc.vup>+0.05</> for every <@cc.vup>20</> <$cc.bd_b1><@cc.rem>Worldly Plight</></> (<$cc.c.sui2_1><@cc.rem>Special Comparison Rules</></> apply with Control Center bonus)"
+        "descformat": "When this Operator is assigned to the Control Center, Operators working in <$cc.c.room2><@cc.kw>other buildings</></> recover <@cc.vup>+0.05</> Morale per hour, with an additional <@cc.vup>+0.05</> for every <@cc.vup>20</> <$cc.bd_b1><@cc.rem>Worldly Plight</></> (<$cc.c.sui2_1><@cc.rem>Special Comparison Rules</></> apply with Control Center bonus)"
     },
     "control_mp_expand_double[000]": {
         "name": "Flag of Babel",
