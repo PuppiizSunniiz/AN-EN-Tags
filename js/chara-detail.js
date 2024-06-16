@@ -3040,7 +3040,7 @@
             </div>
 
             <div class='stats'>
-                <div class='stats-l'>Magic Resistance</div><div class='stats-r' id='summon-magicResistance'>${statsInterpolation(tokenfulldata,'magicResistance',currlevel,currelite)}</div>
+                <div class='stats-l'>Resistance</div><div class='stats-r' id='summon-magicResistance'>${statsInterpolation(tokenfulldata,'magicResistance',currlevel,currelite)}</div>
             </div>
             <div class='stats'>
                 <div class='stats-l'>Attack Time</div><div class='stats-r' id='summon-baseAttackTime'>${statsInterpolation(tokenfulldata,'baseAttackTime',currlevel,currelite,false)} <div style='display:inline;font-size:10px'> Sec</div></div>
@@ -3246,7 +3246,7 @@
                     <div class='stats'><div class='stats-l'>Defense</div><div class='stats-r' id='elite${i}def'></div></div>
                     <div class='stats'><div class='stats-l'>Block</div><div class='stats-r' id='elite${i}blockCnt'></div></div>
 
-                    <div class='stats'><div class='stats-l'>Magic Resistance</div><div class='stats-r' id='elite${i}magicResistance'></div></div>
+                    <div class='stats'><div class='stats-l'>Resistance</div><div class='stats-r' id='elite${i}magicResistance'></div></div>
                     <div class='stats'><div class='stats-l'>Attack Time</div><div class='stats-r' id='elite${i}baseAttackTime'></div></div>
                 </tr><td>
                 </table>

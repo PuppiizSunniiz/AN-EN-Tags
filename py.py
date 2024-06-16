@@ -1,4 +1,5 @@
 import json
+from pyfunction import epoch
 
 #########################################################################################################
 # JSON
@@ -116,6 +117,16 @@ def Rangecheck():
         return Continue()
     else :
         print("\n".join(DB["Range"][rangeid]))
+        return Continue()
+    
+def Timecheck():
+    print(msgbox("What Epoch time to check ? (0 : Exit)" ))
+    time=int(input())
+    
+    if time == "0":
+        return False
+    else :
+        print("\nEpoch ",time," = ",epoch(time))
         return Continue()
 
 '''
@@ -288,6 +299,7 @@ while(True):
           "1 : Char Name/Code Check",
           "M : Mod Check",
           "R : Range Check",
+          "T : Time Epoch",
           "0 : Exit"
           ]
     print(msgbox(text))
@@ -304,5 +316,8 @@ while(True):
         case "r":
             while(Boolcheck):
                 Boolcheck=Rangecheck()
+        case "t":
+            while(Boolcheck):
+                Boolcheck=Timecheck()
         case default:
             pass

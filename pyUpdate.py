@@ -8,7 +8,7 @@ from pyfunction import CharReady
 json_building       =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/building_data.json").read())
 json_buildingEN     =   json.loads(open("json/gamedata/en_US/gamedata/excel/building_data.json").read())
 
-json_char_patch      =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/char_patch_table.json").read())
+json_char_patch     =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/char_patch_table.json").read())
 
 json_char           =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/character_table.json").read())
 json_charEN         =   json.loads(open("json/gamedata/en_US/gamedata/excel/character_table.json").read())
@@ -45,13 +45,13 @@ json_tempmod        =   json.loads(open("json/tl-module.json").read())
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-newchars = ["Ulpianus","Lucilla","Underflow"] #
+newchars = [] #
 
 #[["OpsName#1",num(Mod)],["OpsName#2",num(Mod)], ...]
-newmods = [["Ray",1],["Coldshot",1],["Lucilla",1],["Underflow",1],["Amiya (Medic)",1],["Ifrit",2],["Gladiia",2],["Penance",2]] #
+newmods = [] #
 
 #["ItemID#1","ItemID#2", ...]
-newmats = []
+newmats = [] #
 
 #["OpsName#1","OpsName#2", ...]
 recruitCN=[] #
@@ -266,8 +266,7 @@ with open("update/akmatuses.txt",'w') as writer:
     writer.write("\n\n".join(matbotton))
 
 Dropparse={"ALWAYS":"Always","ALMOST":"Common","USUAL":"Medium","OFTEN":"Rare","SOMETIMES":"Very Rare"}
-for i in range(len(newmats)):
-    mat=newmats[i]
+for mat in newmats:
     if mat not in itemlist:
         matsource={}
         for stage in json_item["items"][mat]["stageDropList"]:

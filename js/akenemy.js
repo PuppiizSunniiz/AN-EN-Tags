@@ -222,7 +222,6 @@
             !enemy_name) allenemies=true
         
         console.log(enemy_class.length,enemy_race.length,enemy_attack.length,enemy_movement.length,enemy_damage.length,enemy_immunity.length,!enemy_silenceable,!enemy_name,!allenemies)
-
         if(!allenemies){
             if (enemy_class.length) enemiesfiltered=enemiesfiltered.filter(enemy => enemy_class[0]==enemy.enemyLevel)
             if (enemy_race.length) enemiesfiltered=enemiesfiltered.filter(enemy => enemy.enemyTags?enemy.enemyTags.includes(enemy_race[0]):false)
@@ -231,7 +230,7 @@
             if (enemy_damage.length) enemiesfiltered=enemiesfiltered.filter(enemy => enemy.damageType.includes(enemy_damage[0]))
             if (enemy_immunity.length) enemiesfiltered=enemiesfiltered.filter(enemy => enemy_immunity.every(immunity => enemy.immunity.length?enemy.immunity.includes(immunity)+Notappliable-1:!Notappliable))
             if (enemy_silenceable) enemiesfiltered=enemiesfiltered.filter(enemy => enemy.silenceable==true)
-            if (enemy_name.length) enemiesfiltered=enemiesfiltered.filter(enemy => enemy.name.toUpperCase().search(enemy_name.toUpperCase())!=-1 || enemy.nameEN.length?enemy.nameEN.toUpperCase().search(enemy_name.toUpperCase())!=-1:false)
+            if (enemy_name.length) enemiesfiltered=enemiesfiltered.filter(enemy => (enemy.name.toUpperCase().search(enemy_name.toUpperCase())!=-1 || enemy.nameEN.length?enemy.nameEN.toUpperCase().search(enemy_name.toUpperCase())!=-1:false) || enemy.enemyId.toUpperCase().search(enemy_name.toUpperCase())!=-1)
         }
         console.log(enemiesfiltered)
         let currHtml = []
@@ -315,9 +314,9 @@
         //Abilities
         if(tlability.length >0){
             tlability.forEach(ability => {
-                if (ability.textFormat=="TITLE") enemiesabilities.push(`<span style="font-size:larger;color: mediumspringgreen;">${ChangeDescriptionColor(ability.text.replace(/\<([A-z\"\'].+?)\>/g,"&lt;"+"$1"+'&gt;'))}</span>`)
-                else if (ability.textFormat=="NORMAL") enemiesabilities.push("&mdash; "+ChangeDescriptionColor(ability.text.replace(/\<([A-z\"\'].+?)\>/g,"&lt;"+"$1"+'&gt;')))
-                else if (ability.textFormat=="SILENCE") enemiesabilities.push(`<img style="width:16px" src="extra/40px-Silence_effect.webp" title="Silenceable"> `+ChangeDescriptionColor(ability.text.replace(/\<([A-z\"\'].+?)\>/g,"&lt;"+"$1"+'&gt;')))
+                if (ability.textFormat=="TITLE") enemiesabilities.push(`<span style="font-size:larger;color: mediumspringgreen;">${ChangeDescriptionColor(ability.text)}</span>`)
+                else if (ability.textFormat=="NORMAL") enemiesabilities.push("&mdash; "+ChangeDescriptionColor(ability.text))
+                else if (ability.textFormat=="SILENCE") enemiesabilities.push(`<img style="width:16px" src="extra/40px-Silence_effect.webp" title="Silenceable"> `+ChangeDescriptionColor(ability.text))
             })
         }
         
@@ -534,9 +533,14 @@
         currHtml.push(`</div>`)
         if(firstEnemyData.talentBlackboard){
             enemytalentBlackboard = currEnemyData.talentBlackboard?currEnemyData.talentBlackboard:firstEnemyData.talentBlackboard
-            currHtml.push(`<div class="ak-c-black" style="text-align:center;margin-top:5px;background:#222">Trait Details<div class="ak-c-black" style="text-align:left;padding-left: 15px;">`)
-            enemytalentBlackboard.forEach(element=>{
-                currHtml.push(`<div>${element.key} : ${element.value}</div>`)
+            currHtml.push(`<div class="ak-c-black" style="text-align:center;background:#222">Trait Details<div class="ak-c-black" style="text-align:left;padding-left: 15px;">`)
+            firstEnemyData.talentBlackboard.forEach(element=>{
+                if (enemytalentBlackboard!=firstEnemyData.talentBlackboard){
+                    enemytalentBlackboard.forEach(currelement=>{
+                        if (element.key==currelement.key) element=currelement
+                    })
+                }
+                currHtml.push(`<div>${element.key} : ${element.valueStr?element.valueStr:element.value}</div>`)
             })
             currHtml.push(`</div></div> `)
         }
@@ -550,8 +554,45 @@
     function ChangeDescriptionColor(desc){
         if(!desc) return desc
 
-        desc = desc.replace(/(\[.+?\])/g,`<span style="color:yellow">`+"$1"+`</span>`)
+        desc = desc.replace(/\<([A-z\"\'].+?)\>/g,`<span style="color:deeppink">`+"$1"+`</span>`) // Summon/Related enemy
+        desc = desc.replace(/([\[【].+?[\]】])/g,`<span style="color:yellow">`+"$1"+`</span>`)  // Ability name
+        desc=ChangeDesc1(desc)
+        desc=ChangeDesc2(desc)
 
+        return desc
+    }
+
+    function ChangeDesc1(desc,addbackgroundcolor=false){
+        desc = desc.replace(/<[@](.+?)>(.+?)<\/>/g, function(m, rtf, text) {
+            let rich = db.dataconst.richTextStyles[rtf];
+            let rich2 = db.named_effects.termDescriptionDict[rtf];
+            if (!rich2){
+                rich2 = db.dataconst.termDescriptionDict[rtf]
+            }
+            if (rich) {
+                let colorRTF = /<color=(#[0-9A-F]+)>\{0\}<\/color>/;
+                if (colorRTF.test(rich)) {
+                    let color = colorRTF.exec(rich)[1]
+                    return `<span class="${addbackgroundcolor?`stat-important2`:""}" style="color:${color}">${text}</span>`
+                } else {
+                    return rich.replace('{0}', text)
+                }
+            } else if (rich2) {
+                return `<span class="stathover" data-toggle="tooltip" data-html="true" data-delay='{ "show": 0, "hide": 500 }' data-placement="bottom"
+                title='
+                <span class="tooltiptext" style="display:inline-block">
+                    <div class="tooltipHeader">${rich2.termName.replace(/\'/g,"&apos;")}</div>
+                    <div class="tooltipcontent">${CreateTooltip(rich2.description.replace(/\'/g,"&apos;"))}</div>
+                </span>'
+                style="color:#0098DC">${text}</span>`
+            }else{
+                return text
+            }
+        })
+        return desc
+    }
+
+    function ChangeDesc2(desc){
         desc = desc.replace(/<[$](.+?)>(.+?)<\/>/g, function(m, rtf, text) {
             let rich2 = db.named_effects.termDescriptionDict[rtf];
             if (!rich2){
