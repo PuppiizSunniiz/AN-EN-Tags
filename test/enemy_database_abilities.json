@@ -23173,6 +23173,505 @@
         ],
         "spData": null
     },
+    "enemy_1434_dsshel": {
+        "abilityList": [
+            {
+                "text": "被击倒时于所在位置生成<@eb.key>赘生甲壳</>",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "更容易被我方攻击",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": null,
+        "skills": null,
+        "spData": null
+    },
+    "enemy_1435_dsflys": {
+        "abilityList": [
+            {
+                "text": "飞行单位",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "优先攻击高台单位",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "攻击附带<$ba.dt.neural>神经损伤</>",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "0.attack@ep_damage_ratio",
+                    "value": 0.15,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null
+    },
+    "enemy_1435_dsflys_2": {
+        "abilityList": [
+            {
+                "text": "飞行单位",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "优先攻击高台单位",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "攻击附带<$ba.dt.neural>神经损伤</>",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "0.attack@ep_damage_ratio",
+                    "value": 0.15,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null
+    },
+    "enemy_1436_dsdivi": {
+        "abilityList": [
+            {
+                "text": "生命值首次低于一半时，分裂自身",
+                "textFormat": "SILENCE"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "0.interval",
+                    "value": 0.3,
+                    "valueStr": null
+                },
+                {
+                    "key": "0.hp_ratio",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "0.offset_bound",
+                    "value": 0.2,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "0",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "enemy_key",
+                            "value": 0.0,
+                            "valueStr": "enemy_1436_dsdivi"
+                        },
+                        {
+                            "key": "offset_bound",
+                            "value": 0.3,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null
+    },
+    "enemy_1436_dsdivi_2": {
+        "abilityList": [
+            {
+                "text": "生命值首次低于一半时，分裂自身",
+                "textFormat": "SILENCE"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "0.interval",
+                    "value": 0.3,
+                    "valueStr": null
+                },
+                {
+                    "key": "0.hp_ratio",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "0.offset_bound",
+                    "value": 0.2,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "0",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "enemy_key",
+                            "value": 0.0,
+                            "valueStr": "enemy_1436_dsdivi_2"
+                        },
+                        {
+                            "key": "offset_bound",
+                            "value": 0.3,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null
+    },
+    "enemy_1437_dsfull": {
+        "abilityList": [
+            {
+                "text": "被击倒时随机释放一只<诡核集养者>、<单核掠食者>或<微核沉积者>，该敌人移动速度较大幅度提升",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "0.prob1",
+                    "value": 0.2,
+                    "valueStr": null
+                },
+                {
+                    "key": "0.prob2",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "0.move_speed",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "0.enemy_1",
+                    "value": 0.0,
+                    "valueStr": "enemy_1434_dsshel"
+                },
+                {
+                    "key": "0.enemy_2",
+                    "value": 0.0,
+                    "valueStr": "enemy_1436_dsdivi"
+                },
+                {
+                    "key": "0.enemy_3",
+                    "value": 0.0,
+                    "valueStr": "enemy_1433_dsbasi"
+                },
+                {
+                    "key": "0.cnt",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "0.",
+                    "value": 0.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null
+    },
+    "enemy_1437_dsfull_2": {
+        "abilityList": [
+            {
+                "text": "被击倒时随机释放一只<异光体集养者>、<异光体掠食者>或<微核沉积者>，该敌人移动速度较大幅度提升",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "0.prob1",
+                    "value": 0.2,
+                    "valueStr": null
+                },
+                {
+                    "key": "0.prob2",
+                    "value": 0.7,
+                    "valueStr": null
+                },
+                {
+                    "key": "0.move_speed",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "0.enemy_1",
+                    "value": 0.0,
+                    "valueStr": "enemy_1434_dsshel"
+                },
+                {
+                    "key": "0.enemy_2",
+                    "value": 0.0,
+                    "valueStr": "enemy_1436_dsdivi_2"
+                },
+                {
+                    "key": "0.enemy_3",
+                    "value": 0.0,
+                    "valueStr": "enemy_1433_dsbasi_2"
+                },
+                {
+                    "key": "0.cnt",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "0.",
+                    "value": 0.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null
+    },
+    "enemy_1438_dspred": {
+        "abilityList": [
+            {
+                "text": "能够吞噬<@eb.key>赘生甲壳</>并使自身攻击力和生命值大幅提升",
+                "textFormat": "SILENCE"
+            }
+        ],
+        "talentBlackboard": null,
+        "skills": [
+            [
+                {
+                    "prefabKey": "0",
+                    "priority": 0,
+                    "cooldown": 1000000.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "range_radius",
+                            "value": 0.35,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "1",
+                    "priority": -1,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "maxhp",
+                            "value": 0.7,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 0.4,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null
+    },
+    "enemy_1438_dspred_2": {
+        "abilityList": [
+            {
+                "text": "能够吞噬<@eb.key>赘生甲壳</>并使自身攻击力和生命值大幅提升",
+                "textFormat": "SILENCE"
+            }
+        ],
+        "talentBlackboard": null,
+        "skills": [
+            [
+                {
+                    "prefabKey": "0",
+                    "priority": 0,
+                    "cooldown": 1000000.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "range_radius",
+                            "value": 0.35,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "1",
+                    "priority": -1,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "maxhp",
+                            "value": 0.7,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 0.4,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null
+    },
+    "enemy_1439_dslntf": {
+        "abilityList": [
+            {
+                "text": "受到伤害时进入临战状态：移动速度大幅度提升，持续对周围造成<$ba.dt.neural>神经损伤</>",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "被<赘生甲壳>阻挡时将其摧毁，每次摧毁时流失一定比例生命值",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "0.move_speed",
+                    "value": 4.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "3.hp_ratio",
+                    "value": 0.25,
+                    "valueStr": null
+                },
+                {
+                    "key": "1.ep_damage_ratio",
+                    "value": 0.1,
+                    "valueStr": null
+                },
+                {
+                    "key": "1.interval",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "1.range_radius",
+                    "value": 2.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "3.range_radius",
+                    "value": 0.5,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null
+    },
+    "enemy_1439_dslntf_2": {
+        "abilityList": [
+            {
+                "text": "受到伤害时进入临战状态：移动速度大幅度提升，持续对周围造成<$ba.dt.neural>神经损伤</>",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "被<赘生甲壳>阻挡时将其摧毁，每次摧毁时流失一定比例生命值",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "0.move_speed",
+                    "value": 4.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "3.hp_ratio",
+                    "value": 0.2,
+                    "valueStr": null
+                },
+                {
+                    "key": "1.ep_damage_ratio",
+                    "value": 0.1,
+                    "valueStr": null
+                },
+                {
+                    "key": "1.interval",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "1.range_radius",
+                    "value": 2.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "3.range_radius",
+                    "value": 0.5,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null
+    },
+    "enemy_1440_dselec": {
+        "abilityList": [
+            {
+                "text": "攻击造成法术溅射伤害",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "被阻挡时攻击失去溅射效果",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": null,
+        "skills": null,
+        "spData": null
+    },
+    "enemy_1440_dselec_2": {
+        "abilityList": [
+            {
+                "text": "攻击造成法术溅射伤害",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "被阻挡时攻击失去溅射效果",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": null,
+        "skills": null,
+        "spData": null
+    },
     "enemy_3006_tersia": {
         "abilityList": [
             {
@@ -23917,6 +24416,2320 @@
         ],
         "skills": null,
         "spData": null
+    },
+    "enemy_4004_muvltr": {
+        "abilityList": [
+            {
+                "text": "无法被阻挡",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "抛投爆炸汽水瓶，对周围造成真实伤害（包括自身）",
+                "textFormat": "SILENCE"
+            }
+        ],
+        "talentBlackboard": null,
+        "skills": [
+            [
+                {
+                    "prefabKey": "boomb",
+                    "priority": 0,
+                    "cooldown": 1.5,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "atk_scale",
+                            "value": 1.8,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_life_time",
+                            "value": 2.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_range",
+                            "value": 1.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "prefabKey": "boomb",
+                    "priority": 0,
+                    "cooldown": 1.5,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "atk_scale",
+                            "value": 1.8,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_life_time",
+                            "value": 2.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_range",
+                            "value": 1.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4004_muvltr_2": {
+        "abilityList": [
+            {
+                "text": "无法被阻挡",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "抛投爆炸汽水瓶，对周围造成真实伤害（包括自身）",
+                "textFormat": "SILENCE"
+            }
+        ],
+        "talentBlackboard": null,
+        "skills": [
+            [
+                {
+                    "prefabKey": "boomb",
+                    "priority": 0,
+                    "cooldown": 1.5,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "atk_scale",
+                            "value": 1.8,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_life_time",
+                            "value": 2.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_range",
+                            "value": 1.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "prefabKey": "boomb",
+                    "priority": 0,
+                    "cooldown": 1.5,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "atk_scale",
+                            "value": 1.8,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_life_time",
+                            "value": 2.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_range",
+                            "value": 1.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4005_musqrl": {
+        "abilityList": [
+            {
+                "text": "每次受到伤害时，补给箱有概率脱手掉落",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "补给箱脱手期间持续损失生命值",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "drop.prob",
+                    "value": 0.05,
+                    "valueStr": null
+                },
+                {
+                    "key": "drop.enemy_key",
+                    "value": 0.0,
+                    "valueStr": "enemy_4011_musqhd"
+                },
+                {
+                    "key": "periodic_damage.damage",
+                    "value": 5000.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "drop.prob",
+                    "value": 0.05,
+                    "valueStr": null
+                },
+                {
+                    "key": "drop.enemy_key",
+                    "value": 0.0,
+                    "valueStr": "enemy_4011_musqhd"
+                },
+                {
+                    "key": "periodic_damage.damage",
+                    "value": 5000.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "drop",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "enemy_key",
+                            "value": 0.0,
+                            "valueStr": "enemy_4011_musqhd"
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "pickup",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": []
+                }
+            ],
+            [
+                {
+                    "prefabKey": "drop",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "enemy_key",
+                            "value": 0.0,
+                            "valueStr": "enemy_4011_musqhd"
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "pickup",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": []
+                }
+            ]
+        ],
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4005_musqrl_2": {
+        "abilityList": [
+            {
+                "text": "每次受到伤害时，补给箱有概率脱手掉落",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "补给箱脱手期间持续损失生命值",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "drop.prob",
+                    "value": 0.05,
+                    "valueStr": null
+                },
+                {
+                    "key": "drop.enemy_key",
+                    "value": 0.0,
+                    "valueStr": "enemy_4011_musqhd"
+                },
+                {
+                    "key": "periodic_damage.damage",
+                    "value": 5000.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "drop.prob",
+                    "value": 0.05,
+                    "valueStr": null
+                },
+                {
+                    "key": "drop.enemy_key",
+                    "value": 0.0,
+                    "valueStr": "enemy_4011_musqhd"
+                },
+                {
+                    "key": "periodic_damage.damage",
+                    "value": 5000.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "drop",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "enemy_key",
+                            "value": 0.0,
+                            "valueStr": "enemy_4011_musqhd"
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "pickup",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": []
+                }
+            ],
+            [
+                {
+                    "prefabKey": "drop",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "enemy_key",
+                            "value": 0.0,
+                            "valueStr": "enemy_4011_musqhd"
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "pickup",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": []
+                }
+            ]
+        ],
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4006_mumole": {
+        "abilityList": [
+            {
+                "text": "受到一定伤害时，为周围其他敌人回复大量生命值（不包括自身）",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "Heal.trigger_value",
+                    "value": 5000.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Heal.value",
+                    "value": 2500.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "Heal.trigger_value",
+                    "value": 5000.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Heal.value",
+                    "value": 2500.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "boomb",
+                    "priority": 0,
+                    "cooldown": 3.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "atk_scale",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_life_time",
+                            "value": 3.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_range",
+                            "value": 0.6,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "prefabKey": "boomb",
+                    "priority": 0,
+                    "cooldown": 3.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "atk_scale",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_life_time",
+                            "value": 3.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_range",
+                            "value": 0.6,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4006_mumole_2": {
+        "abilityList": [
+            {
+                "text": "受到一定伤害时，为周围其他敌人回复大量生命值（不包括自身）",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "Heal.trigger_value",
+                    "value": 5000.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Heal.value",
+                    "value": 2500.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "Heal.trigger_value",
+                    "value": 5000.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Heal.value",
+                    "value": 2500.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "boomb",
+                    "priority": 0,
+                    "cooldown": 3.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "atk_scale",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_life_time",
+                            "value": 3.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_range",
+                            "value": 0.6,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "prefabKey": "boomb",
+                    "priority": 0,
+                    "cooldown": 3.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "atk_scale",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_life_time",
+                            "value": 3.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_range",
+                            "value": 0.6,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4007_murino": {
+        "abilityList": [
+            {
+                "text": "来自正面的伤害大幅降低",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "总是面对我方人数较多的一侧",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "Weakness.damage_resistance",
+                    "value": 0.85,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "Weakness.damage_resistance",
+                    "value": 0.85,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4007_murino_2": {
+        "abilityList": [
+            {
+                "text": "来自正面的伤害大幅降低",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "总是面对我方人数较多的一侧",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "Weakness.damage_resistance",
+                    "value": 0.95,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "Weakness.damage_resistance",
+                    "value": 0.95,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4008_mucat": {
+        "abilityList": [
+            {
+                "text": "进行5次攻击力大幅提升的重击，若重击将单位击倒则不消耗攻击次数",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "攻击次数耗尽时，一段时间内停止攻击且所受伤害大幅提升",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "enforce.atk_scale",
+                    "value": 6.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "enforce.duration",
+                    "value": 5.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "enforce.damage_scale",
+                    "value": 10.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "enforce.atk_scale",
+                    "value": 6.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "enforce.duration",
+                    "value": 5.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "enforce.damage_scale",
+                    "value": 10.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "boomb",
+                    "priority": 0,
+                    "cooldown": 3.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "atk_scale",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_life_time",
+                            "value": 3.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_range",
+                            "value": 0.6,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "prefabKey": "boomb",
+                    "priority": 0,
+                    "cooldown": 3.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "atk_scale",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_life_time",
+                            "value": 3.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_range",
+                            "value": 0.6,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4008_mucat_2": {
+        "abilityList": [
+            {
+                "text": "进行5次攻击力大幅提升的重击，若重击将单位击倒则不消耗攻击次数",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "攻击次数耗尽时，一段时间内停止攻击且所受伤害大幅提升",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "enforce.atk_scale",
+                    "value": 6.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "enforce.duration",
+                    "value": 5.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "enforce.damage_scale",
+                    "value": 10.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "enforce.atk_scale",
+                    "value": 6.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "enforce.duration",
+                    "value": 5.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "enforce.damage_scale",
+                    "value": 10.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "boomb",
+                    "priority": 0,
+                    "cooldown": 3.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "atk_scale",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_life_time",
+                            "value": 3.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_range",
+                            "value": 0.6,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "prefabKey": "boomb",
+                    "priority": 0,
+                    "cooldown": 3.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "atk_scale",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_life_time",
+                            "value": 3.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_range",
+                            "value": 0.6,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4009_murgby": {
+        "abilityList": [
+            {
+                "text": "对【折叠式堡垒模块】造成更高伤害",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "enhance.atk_scale",
+                    "value": 1.5,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "boomb",
+                    "priority": 0,
+                    "cooldown": 3.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "atk_scale",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_life_time",
+                            "value": 3.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_range",
+                            "value": 0.6,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4009_murgby_2": {
+        "abilityList": [
+            {
+                "text": "对【折叠式堡垒模块】造成更高伤害",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "enhance.atk_scale",
+                    "value": 1.5,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "boomb",
+                    "priority": 0,
+                    "cooldown": 3.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "atk_scale",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_life_time",
+                            "value": 3.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_range",
+                            "value": 0.6,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4010_mubsbl": {
+        "abilityList": [
+            {
+                "text": "对【折叠式堡垒模块】造成更高伤害",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "优先攻击【折叠式堡垒模块】上的单位",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "无法被阻挡",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "enhance.atk_scale",
+                    "value": 2.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "boomb",
+                    "priority": 0,
+                    "cooldown": 3.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "atk_scale",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_life_time",
+                            "value": 3.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_range",
+                            "value": 0.6,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4010_mubsbl_2": {
+        "abilityList": [
+            {
+                "text": "对【折叠式堡垒模块】造成更高伤害",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "优先攻击【折叠式堡垒模块】上的单位",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "无法被阻挡",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "enhance.atk_scale",
+                    "value": 2.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "boomb",
+                    "priority": 0,
+                    "cooldown": 3.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "atk_scale",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_life_time",
+                            "value": 3.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "projectile_range",
+                            "value": 0.6,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4012_mumssi": {
+        "abilityList": [
+            {
+                "text": "优先朝我方球门方向攻击足球",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "Reborn.duration",
+                    "value": 20.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "football.passing_force",
+                    "value": 1.2,
+                    "valueStr": null
+                },
+                {
+                    "key": "football.slapshot_force",
+                    "value": 1.8,
+                    "valueStr": null
+                },
+                {
+                    "key": "searchBall.range_radius",
+                    "value": 3.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "Reborn.duration",
+                    "value": 20.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "football.passing_force",
+                    "value": 1.2,
+                    "valueStr": null
+                },
+                {
+                    "key": "football.slapshot_force",
+                    "value": 1.8,
+                    "valueStr": null
+                },
+                {
+                    "key": "searchBall.range_radius",
+                    "value": 3.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "passtheball",
+                    "priority": 0,
+                    "cooldown": 2.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "duration",
+                            "value": 3.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "slapshot",
+                    "priority": 0,
+                    "cooldown": 2.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "duration",
+                            "value": 3.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "prefabKey": "passtheball",
+                    "priority": 0,
+                    "cooldown": 2.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "duration",
+                            "value": 3.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "slapshot",
+                    "priority": 0,
+                    "cooldown": 2.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "duration",
+                            "value": 3.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4012_mumssi_2": {
+        "abilityList": [
+            {
+                "text": "优先朝我方球门方向攻击足球",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "Reborn.duration",
+                    "value": 20.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "football.passing_force",
+                    "value": 1.2,
+                    "valueStr": null
+                },
+                {
+                    "key": "football.slapshot_force",
+                    "value": 1.8,
+                    "valueStr": null
+                },
+                {
+                    "key": "searchBall.range_radius",
+                    "value": 3.5,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "Reborn.duration",
+                    "value": 20.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "football.passing_force",
+                    "value": 1.2,
+                    "valueStr": null
+                },
+                {
+                    "key": "football.slapshot_force",
+                    "value": 1.8,
+                    "valueStr": null
+                },
+                {
+                    "key": "searchBall.range_radius",
+                    "value": 3.5,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "passtheball",
+                    "priority": 0,
+                    "cooldown": 2.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "duration",
+                            "value": 3.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "slapshot",
+                    "priority": 0,
+                    "cooldown": 2.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "duration",
+                            "value": 3.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "prefabKey": "passtheball",
+                    "priority": 0,
+                    "cooldown": 2.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "duration",
+                            "value": 3.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "slapshot",
+                    "priority": 0,
+                    "cooldown": 2.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "duration",
+                            "value": 3.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4013_mubufn": {
+        "abilityList": [
+            {
+                "text": "优先朝我方球门方向攻击足球",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "Reborn.duration",
+                    "value": 20.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "football.clearance_force",
+                    "value": 1.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "football.tile_col_end",
+                    "value": 9.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "football.defence",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "searchBall.range_radius",
+                    "value": 2.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "Reborn.duration",
+                    "value": 20.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "football.clearance_force",
+                    "value": 1.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "football.tile_col_end",
+                    "value": 9.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "football.defence",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "searchBall.range_radius",
+                    "value": 2.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "slapshot",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": []
+                },
+                {
+                    "prefabKey": "clearance",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": []
+                }
+            ],
+            [
+                {
+                    "prefabKey": "slapshot",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": []
+                },
+                {
+                    "prefabKey": "clearance",
+                    "priority": 0,
+                    "cooldown": 20.0,
+                    "initCooldown": 20.0,
+                    "spCost": 0,
+                    "blackboard": []
+                }
+            ]
+        ],
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4013_mubufn_2": {
+        "abilityList": [
+            {
+                "text": "优先朝我方球门方向攻击足球",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "Reborn.duration",
+                    "value": 20.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "football.clearance_force",
+                    "value": 1.7,
+                    "valueStr": null
+                },
+                {
+                    "key": "football.tile_col_end",
+                    "value": 9.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "football.defence",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "searchBall.range_radius",
+                    "value": 2.5,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "Reborn.duration",
+                    "value": 20.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "football.clearance_force",
+                    "value": 1.7,
+                    "valueStr": null
+                },
+                {
+                    "key": "football.tile_col_end",
+                    "value": 9.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "football.defence",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "searchBall.range_radius",
+                    "value": 2.5,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "slapshot",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": []
+                },
+                {
+                    "prefabKey": "clearance",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": []
+                }
+            ],
+            [
+                {
+                    "prefabKey": "slapshot",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": []
+                },
+                {
+                    "prefabKey": "clearance",
+                    "priority": 0,
+                    "cooldown": 20.0,
+                    "initCooldown": 20.0,
+                    "spCost": 0,
+                    "blackboard": []
+                }
+            ]
+        ],
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4014_mugnfu": {
+        "abilityList": [
+            {
+                "text": "优先攻击我方干员",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "periodic_damage.damage",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Reborn.duration",
+                    "value": 10.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "searchtarget.range_radius",
+                    "value": 3.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "periodic_damage.damage",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Reborn.duration",
+                    "value": 10.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "searchtarget.range_radius",
+                    "value": 3.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4014_mugnfu_2": {
+        "abilityList": [
+            {
+                "text": "优先攻击我方干员",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "periodic_damage.damage",
+                    "value": 330.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Reborn.duration",
+                    "value": 10.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "searchtarget.range_radius",
+                    "value": 3.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "periodic_damage.damage",
+                    "value": 330.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Reborn.duration",
+                    "value": 10.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "searchtarget.range_radius",
+                    "value": 3.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4015_musucr": {
+        "abilityList": [
+            {
+                "text": "标准参数的足球",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "只能被守门员或阻挡数不小于3的单位阻挡",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "aura.block_cnt",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.friction_factor",
+                    "value": 0.7,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.restitution_factor",
+                    "value": 0.75,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.value",
+                    "value": 2300.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.force",
+                    "value": 450.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "aura.block_cnt",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.friction_factor",
+                    "value": 0.7,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.restitution_factor",
+                    "value": 0.75,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.value",
+                    "value": 2300.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.force",
+                    "value": 450.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4016_mubuln": {
+        "abilityList": [
+            {
+                "text": "很轻的足球，非常容易踢动",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "只能被守门员或阻挡数不小于3的单位阻挡",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "aura.block_cnt",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.friction_factor",
+                    "value": 1.7,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.restitution_factor",
+                    "value": 0.3,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.value",
+                    "value": 500.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.force",
+                    "value": 395.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "aura.block_cnt",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.friction_factor",
+                    "value": 1.7,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.restitution_factor",
+                    "value": 0.3,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.value",
+                    "value": 500.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.force",
+                    "value": 395.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4017_muinbl": {
+        "abilityList": [
+            {
+                "text": "很重的足球，比较难以踢动",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "只能被守门员或阻挡数不小于3的单位阻挡",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "aura.block_cnt",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.friction_factor",
+                    "value": 0.19,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.restitution_factor",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.value",
+                    "value": 3500.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.force",
+                    "value": 260.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "aura.block_cnt",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.friction_factor",
+                    "value": 0.19,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.restitution_factor",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.value",
+                    "value": 3500.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.force",
+                    "value": 260.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4018_muboom": {
+        "abilityList": [
+            {
+                "text": "踢动时有概率爆炸，对周围造成晕眩和伤害",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "只能被守门员或阻挡数不小于3的单位阻挡",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "aura.block_cnt",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.friction_factor",
+                    "value": 0.65,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.restitution_factor",
+                    "value": 0.3,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.value",
+                    "value": 3000.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.force",
+                    "value": 390.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "boom.max_value",
+                    "value": 10.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "boom.range_radius",
+                    "value": 1.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "boom.duration",
+                    "value": 1.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "boom.stun",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "boom.add_value_min",
+                    "value": -6.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "boom.add_value_max",
+                    "value": -2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "boom.damage",
+                    "value": 1500.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "aura.block_cnt",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.friction_factor",
+                    "value": 0.65,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.restitution_factor",
+                    "value": 0.3,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.value",
+                    "value": 3000.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.force",
+                    "value": 390.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "boom.max_value",
+                    "value": 10.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "boom.range_radius",
+                    "value": 1.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "boom.duration",
+                    "value": 1.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "boom.stun",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "boom.add_value_min",
+                    "value": -6.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "boom.add_value_max",
+                    "value": -2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "boom.damage",
+                    "value": 1500.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4019_mugold": {
+        "abilityList": [
+            {
+                "text": "进球时获得3倍得分",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "只能被守门员或阻挡数不小于3的单位阻挡",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "aura.block_cnt",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.friction_factor",
+                    "value": 0.48,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.restitution_factor",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.value",
+                    "value": 4500.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.force",
+                    "value": 310.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "aura.block_cnt",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.friction_factor",
+                    "value": 0.48,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.restitution_factor",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.value",
+                    "value": 4500.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.force",
+                    "value": 310.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
+    },
+    "enemy_4020_muboun": {
+        "abilityList": [
+            {
+                "text": "弹性非常大的足球",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "只能被守门员或阻挡数不小于3的单位阻挡",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "aura.block_cnt",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.friction_factor",
+                    "value": 0.12,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.restitution_factor",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.value",
+                    "value": 4500.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.force",
+                    "value": 400.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "aura.block_cnt",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.friction_factor",
+                    "value": 0.12,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.restitution_factor",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.value",
+                    "value": 4500.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "physic.force",
+                    "value": 400.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ]
     },
     "enemy_1050_lslime": {
         "abilityList": [
@@ -37687,6 +40500,393 @@
                     "initCooldown": 0.0,
                     "spCost": 0,
                     "blackboard": null
+                }
+            ]
+        ],
+        "spData": null
+    },
+    "enemy_1556_dsbish": {
+        "abilityList": [
+            {
+                "text": "不攻击，永久无敌",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "周期性于自身位置召唤2个<单核掠食者>或<异光体掠食者>",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "第一形态",
+                "textFormat": "TITLE"
+            },
+            {
+                "text": "【引导演化】周期性选择场上1个当前生命值最高的海怪使其进化：攻击力和生命值大幅度提升，攻击额外造成<$ba.dt.neural>神经损伤</>；其被击倒时自身流失一定比例的生命值",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "第二形态",
+                "textFormat": "TITLE"
+            },
+            {
+                "text": "每有一个海怪被击倒时，自身流失一定比例的生命值",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "每隔一段时间使所有海怪攻击力提升（可叠加）",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "【哺育生机】一段时间内持续引导与所有海怪进行连接，每秒流失一定比例的最大生命值，期间使所有海怪敌人受到致命伤时不死亡，转而进入<$ba.sleep>沉睡</>且每秒回复一定比例的最大生命值。",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "【人性之囚】选取一名我方干员，使其获得“生命值未满时不断流失生命值”和“所有技能自动开启”效果，持续一段时间；该干员撤退或被击倒时，所在地块及其周围四格变为不可部署",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "0.cnt",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "0.interval",
+                    "value": 40.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "0.enemy_key",
+                    "value": 0.0,
+                    "valueStr": "enemy_1433_dsbasi"
+                },
+                {
+                    "key": "0.hp_ratio",
+                    "value": 0.018,
+                    "valueStr": null
+                },
+                {
+                    "key": "1.cnt",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "1.interval",
+                    "value": 25.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "1.enemy_key",
+                    "value": 0.0,
+                    "valueStr": "enemy_1433_dsbasi"
+                },
+                {
+                    "key": "2.max_stack_cnt",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "2.atk",
+                    "value": 0.25,
+                    "valueStr": null
+                },
+                {
+                    "key": "2.interval",
+                    "value": 60.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "reborn.duration",
+                    "value": 10.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "reborn.anim_duration",
+                    "value": 10.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "0.dsbish_s_2[validator].s2_max_target",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "0.dsbish_s_2[validator].interval",
+                    "value": 1.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "0.cnt",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "0.interval",
+                    "value": 40.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "0.enemy_key",
+                    "value": 0.0,
+                    "valueStr": "enemy_1433_dsbasi_2"
+                },
+                {
+                    "key": "0.hp_ratio",
+                    "value": 0.025,
+                    "valueStr": null
+                },
+                {
+                    "key": "1.cnt",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "1.interval",
+                    "value": 30.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "1.enemy_key",
+                    "value": 0.0,
+                    "valueStr": "enemy_1433_dsbasi_2"
+                },
+                {
+                    "key": "2.max_stack_cnt",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "2.atk",
+                    "value": 0.35,
+                    "valueStr": null
+                },
+                {
+                    "key": "2.interval",
+                    "value": 55.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "reborn.duration",
+                    "value": 10.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "reborn.anim_duration",
+                    "value": 10.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "0.dsbish_s_2[validator].s2_max_target",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "0.dsbish_s_2[validator].interval",
+                    "value": 1.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "1",
+                    "priority": 1,
+                    "cooldown": 40.0,
+                    "initCooldown": 10.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 3.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 3.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "ep_damage_ratio",
+                            "value": 0.1,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "hp_ratio",
+                            "value": 0.4,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "P2S1",
+                    "priority": 2,
+                    "cooldown": 55.0,
+                    "initCooldown": 28.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "duration",
+                            "value": 20.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "interval",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "hp_ratio",
+                            "value": 0.01,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "dsbish_p2_s_1[effector].interval",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "dsbish_p2_s_1[effector].hp_ratio",
+                            "value": 0.05,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "dsbish_p2_s_1[effector].sleep_duration",
+                            "value": 20.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "P2S2",
+                    "priority": 1,
+                    "cooldown": 40.0,
+                    "initCooldown": 10.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "damage",
+                            "value": 150.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "interval",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "range_id",
+                            "value": 0.0,
+                            "valueStr": "x-5"
+                        },
+                        {
+                            "key": "s2_duration",
+                            "value": 50.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "prefabKey": "1",
+                    "priority": 1,
+                    "cooldown": 40.0,
+                    "initCooldown": 15.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "max_hp",
+                            "value": 1.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk",
+                            "value": 1.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "ep_damage_ratio",
+                            "value": 0.25,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "hp_ratio",
+                            "value": 0.4,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "P2S1",
+                    "priority": 2,
+                    "cooldown": 55.0,
+                    "initCooldown": 20.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "duration",
+                            "value": 20.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "interval",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "hp_ratio",
+                            "value": 0.0125,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "dsbish_p2_s_1[effector].interval",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "dsbish_p2_s_1[effector].hp_ratio",
+                            "value": 0.2,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "dsbish_p2_s_1[effector].sleep_duration",
+                            "value": 12.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "P2S2",
+                    "priority": 1,
+                    "cooldown": 30.0,
+                    "initCooldown": 12.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "damage",
+                            "value": 180.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "interval",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "range_id",
+                            "value": 0.0,
+                            "valueStr": "x-5"
+                        },
+                        {
+                            "key": "s2_duration",
+                            "value": 50.0,
+                            "valueStr": null
+                        }
+                    ]
                 }
             ]
         ],

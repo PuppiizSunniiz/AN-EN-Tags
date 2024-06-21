@@ -830,9 +830,9 @@
         "descformat": "When this Operator is assigned to a Factory, <@cc.kw>Originium</> formula related productivity <@cc.vup>+35%</>"
     },
     "manu_formula_spd_P[000]": {
-        "name": "Partners in Adversity",
+        "name": "Through Thick and Thin",
         "desc": "When stationed at a Craft Station and Гум is stationed at a Trade Station, increase production of EXP cards by +35%",
-        "descformat": "When this Operator is assigned to a Factory and <@cc.kw>Гум</> is assigned to a Trading Post, <@cc.kw>Battle Record</> formula related productivity <@cc.vup>+35%</>"
+        "descformat": "When this Operator is assigned to a Factory and <@cc.kw>Gummy</> is in a Trading Post, <@cc.kw>Battle Record</> formula productivity <@cc.vup>+35%</>"
     },
     "manu_cost_all[000]": {
         "name": "Team Spirit",
@@ -912,7 +912,7 @@
     "trade_ord_spd_variable3[000]": {
         "name": "Champion's Bearing",
         "desc": "When stationed at a Trade Station, order acquisition efficiency +25% for every 5 order limit provided by operators, capping at +100%",
-        "descformat": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>25%</> for every <@cc.vup>5</> order limit provided by all other Operators assigned to that Trading Post, up to a maximum of <@cc.vup>100%</> order acquisition efficiency."
+        "descformat": "When this Operator is assigned to a Trading Post, for every <@cc.vup>5</> order limit increase provided by Operators in the Trading Post, provides <@cc.vup>25%</> order acquisition efficiency, up to a maximum of <@cc.vup>100%</>"
     },
     "trade_ord_spd&dorm&lv[000]": {
         "name": "Pious Fundraising α",
@@ -1015,14 +1015,14 @@
         "descformat": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+30%</> and the order limit <@cc.vup>+1</>"
     },
     "trade_ord_spd&limit[100]": {
-        "name": "Pressure",
+        "name": "Intimidate",
         "desc": "When stationed at a Trade Station, order acquisition efficiency +20% and order limit -2 (to a minimum of 1)",
-        "descformat": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+20%</> and the order limit <@cc.vdown>-2</> (to a minimum of 1)"
+        "descformat": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+20%</> and order limit <@cc.vdown>-2</> (minimum 1)"
     },
     "trade_ord_spd&limit[101]": {
         "name": "Imposing Presence",
         "desc": "When stationed at a Trade Station, order acquisition efficiency +25% and order limit -6 (to a minimum of 1)",
-        "descformat": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+20%</> and the order limit <@cc.vdown>-6</> (to a minimum of 1)"
+        "descformat": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+25%</> and order limit <@cc.vdown>-6</> (minimum 1)"
     },
     "trade_ord_spd&cost[000]": {
         "name": "Communication",
@@ -2072,7 +2072,7 @@
     "dorm_rec_single_P[001]": {
         "name": "Barbecue Master",
         "desc": "When stationed at a Dorm, increase mood recovery of one random operator below maximum mood except self within that dorm by +0.55 per hour (When stacked, only the highest effect becomes active, and not counted as an additional effect). If the target is Gavial, increase recovery by an additional +0.45",
-        "descformat": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (only the most effective one will take effect when assigned Operators have the same skill effect); if the target is <@cc.kw><@cc.gvial>Gavial</></>, further increases Morale restored by <@cc.vup>+0.45</>"
+        "descformat": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to all other Operators assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is <@cc.kw><$cc.gvial>Gavial</></>, further increases Morale restored by <@cc.vup>+0.45</>"
     },
     "dorm_rec_single_P[002]": {
         "name": "Poisoner's Friend",
@@ -2202,7 +2202,7 @@
     "dorm_rec_single_power[000]": {
         "name": "Born of the Biting Cold",
         "desc": "When stationed at a Dorm, increase mood recovery of one random operator below maximum mood except self within that dorm by +0.55 per hour (When stacked, only the highest effect becomes active). If the target is an operator from Sami, further increase mood recovery by +0.45",
-        "descformat": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to all other Operators assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is a <$cc.g.sm><@cc.kw>Sami</></> Operator, further increases Morale restored by <@cc.vup>+0.45</>"
+        "descformat": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to one other Operators assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is a <$cc.g.sm><@cc.kw>Sami</></> Operator, further increases Morale restored by <@cc.vup>+0.45</>"
     },
     "dorm_rec_all&oneself[000]": {
         "name": "Laziness",
@@ -2562,7 +2562,7 @@
     "meet_team&char[000]": {
         "name": "Making Friends",
         "desc": "When stationed at Reception, it becomes easier to obtain clues from the faction of the other operator stationed in Reception (no effect if there are no other operators stationed in Reception)",
-        "descformat": "When this Operator is assigned to the Reception Room, the likelihood of obtaining <@cc.kw>faction of the other operator</> stationed in Reception clues is increased (no effect if there are no other operators stationed in Reception)"
+        "descformat": "When this Operator is assigned to the Reception Room,<@cc.kw>increases</> the <@cc.kw>likelihood of finding clues related to the faction of</> the other Operator in Reception (no effect if there is no other Operator)"
     },
     "meet_flag[010]": {
         "name": "Columbian History",

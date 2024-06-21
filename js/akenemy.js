@@ -5,7 +5,7 @@
     var db = {}
     var tlracedict={};
     var enemyforfilter=[]
-    const allimmunity=["stunImmune","silenceImmune","sleepImmune","frozenImmune","levitateImmune"]
+    const allimmunity=["stunImmune","silenceImmune","sleepImmune","frozenImmune","levitateImmune","disarmedCombatImmune"]
 
     var d0 = $.getJSON("json/gamedata/zh_CN/gamedata/excel/gamedata_const.json",function(data){
         db["dataconst"] = data;
@@ -230,7 +230,7 @@
             if (enemy_damage.length) enemiesfiltered=enemiesfiltered.filter(enemy => enemy.damageType.includes(enemy_damage[0]))
             if (enemy_immunity.length) enemiesfiltered=enemiesfiltered.filter(enemy => enemy_immunity.every(immunity => enemy.immunity.length?enemy.immunity.includes(immunity)+Notappliable-1:!Notappliable))
             if (enemy_silenceable) enemiesfiltered=enemiesfiltered.filter(enemy => enemy.silenceable==true)
-            if (enemy_name.length) enemiesfiltered=enemiesfiltered.filter(enemy => (enemy.name.toUpperCase().search(enemy_name.toUpperCase())!=-1 || enemy.nameEN.length?enemy.nameEN.toUpperCase().search(enemy_name.toUpperCase())!=-1:false) || enemy.enemyId.toUpperCase().search(enemy_name.toUpperCase())!=-1)
+            if (enemy_name.length) enemiesfiltered=enemiesfiltered.filter(enemy => (enemy.name.toUpperCase().search(enemy_name.toUpperCase())!=-1 || enemy.nameEN.length?enemy.nameEN.toUpperCase().search(enemy_name.toUpperCase())!=-1:false) || enemy.enemyId.toUpperCase().search(enemy_name.toUpperCase())!=-1 || enemy.enemyIndex.toUpperCase().search(enemy_name.toUpperCase())!=-1)
         }
         console.log(enemiesfiltered)
         let currHtml = []
@@ -461,7 +461,7 @@
         var firstattr = firstEnemyData.attributes
 
         var EnemyImmune=[]
-        $(["stun","silence","sleep","frozen","levitate"].forEach(immune =>{
+        $(["stun","silence","sleep","frozen","levitate","disarmedCombat"].forEach(immune =>{
             if (currattr[immune+"Immune"].m_value!=0?currattr[immune+"Immune"].m_value:firstattr[immune+"Immune"].m_value)
                 EnemyImmune.push(`<td><span style="color:crimson;font-weight: bold;">Immune</span></td>`)
             else
@@ -520,6 +520,7 @@
                         <th scope="col" class="hovertooltip" data-tooltip="Invulnerable and unable to take any actions.">Sleep</th>
                         <th scope="col" class="hovertooltip" data-tooltip="Unable to move, attack, or use skills, RES -15.">Freeze</th>
                         <th scope="col" class="hovertooltip" data-tooltip="Target becomes aerial and cannot move, attack, or use skills. Duration halved if Weight is greater than 3.">Levitate</th>
+                        <th scope="col" class="hovertooltip" data-tooltip="Cannot perform normal attacks when blocked.">Frighten</th>
                     </tr>
                 </thead>
                 <tbody>

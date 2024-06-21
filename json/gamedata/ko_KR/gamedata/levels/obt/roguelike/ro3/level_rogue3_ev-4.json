@@ -2507,7 +2507,7 @@
         },
         "description": {
           "m_defined": true,
-          "m_value": "리유니온의 근거리 전투원. <@eb.danger>아주 높은 공격력이</> 특징이다."
+          "m_value": "황무지 무스비스트"
         },
         "prefabKey": {
           "m_defined": false,
@@ -2603,6 +2603,10 @@
             "m_value": false
           },
           "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "disarmedCombatImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -2757,6 +2761,10 @@
           "levitateImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "disarmedCombatImmune": {
+            "m_defined": false,
+            "m_value": false
           }
         },
         "applyWay": {
@@ -2907,6 +2915,10 @@
             "m_value": false
           },
           "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "disarmedCombatImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -3076,6 +3088,10 @@
           "levitateImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "disarmedCombatImmune": {
+            "m_defined": false,
+            "m_value": false
           }
         },
         "applyWay": {
@@ -3226,6 +3242,10 @@
             "m_value": false
           },
           "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "disarmedCombatImmune": {
             "m_defined": false,
             "m_value": false
           }
@@ -3380,6 +3400,10 @@
           "levitateImmune": {
             "m_defined": false,
             "m_value": false
+          },
+          "disarmedCombatImmune": {
+            "m_defined": false,
+            "m_value": false
           }
         },
         "applyWay": {
@@ -3531,6 +3555,10 @@
           },
           "levitateImmune": {
             "m_defined": true,
+            "m_value": false
+          },
+          "disarmedCombatImmune": {
+            "m_defined": false,
             "m_value": false
           }
         },

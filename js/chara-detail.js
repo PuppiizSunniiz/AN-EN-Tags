@@ -3555,6 +3555,7 @@
 
         var voiceDict = db.charword.voiceLangDict[opdataFull.id]
         var voiceDictEN = db.charwordEN.voiceLangDict[opdataFull.id]
+        var existvoiceDict
         console.log(voiceDict)
         console.log(voiceDictEN)
 
@@ -3562,8 +3563,10 @@
         const VAlanglist=["JP","LINKAGE","CN_MANDARIN","CN_TOPOLECT","EN","KR","ITA","GER","RUS"]
         VAhtml=""
         for (i=0;i<VAlanglist.length;i++){
-            if(voiceDict.dict[VAlanglist[i]]){
-                switch(voiceDict.dict[VAlanglist[i]].voiceLangType) {
+            if(voiceDict.dict[VAlanglist[i]] || voiceDictEN.dict[VAlanglist[i]]){
+                if (voiceDict.dict[VAlanglist[i]]) existvoiceDict = voiceDict
+                else existvoiceDict = voiceDictEN
+                switch(existvoiceDict.dict[VAlanglist[i]].voiceLangType) {
                     case "LINKAGE":
                         if(opdataFull.id =="char_4019_ncdeer"){ 
                             VAlang = "CN"
@@ -3580,7 +3583,7 @@
                         VAlang = "CN&#42"
                         break;
                     default:
-                        VAlang=voiceDict.dict[VAlanglist[i]].voiceLangType
+                        VAlang=existvoiceDict.dict[VAlanglist[i]].voiceLangType
                 }
             try{
                 VAName=voiceDictEN.dict[VAlanglist[i]].cvName[0]
@@ -3604,8 +3607,8 @@
                             </div>
                         `
             }
-        $('#info-voiceactor').html(VAhtml)
         }
+        $('#info-voiceactor').html(VAhtml)
 
         let puretext = []
         let textTL = []
