@@ -25,6 +25,7 @@
 
         //EN
         charsEN         :"./json/gamedata/en_US/gamedata/excel/character_table.json",
+        charpatchEN     :"./json/gamedata/en_US/gamedata/excel/char_patch_table.json",
         handbookInfoEN  :"./json/gamedata/en_US/gamedata/excel/handbook_info_table.json",
         charwordEN      :"./json/gamedata/en_US/gamedata/excel/charword_table.json",
         buildEN         :"./json/gamedata/en_US/gamedata/excel/building_data.json",
@@ -108,9 +109,12 @@
     var talentLimit = []
     var ModuletalentValue
 
-    var Amiyacurrclass="caster"
-    const AmiyaGuard="char_1001_amiya2"
-    const AmiyaMedic="char_1037_amiya3"
+    var Amiyacurrclass  =   "caster"
+    const AmiyaCaster   =   "char_002_amiya"
+    const AmiyaGuard    =   "char_1001_amiya2"
+    const AmiyaMedic    =   "char_1037_amiya3"
+    const AmiyaPatchID  =   [AmiyaGuard,AmiyaMedic]
+    const AmiyaAllID    =   [AmiyaCaster, ...AmiyaPatchID]
 
     var currskin
     var currVoiceID
@@ -1389,26 +1393,26 @@
                 history.pushState(null, '', url);
             }
 
-            if(opKey=="char_002_amiya"){
+            if(opKey==AmiyaCaster){
                 $('#class-change-1').show()
                 $('#class-change-2').show()
                 switch (Amiyacurrclass){
                     case 'caster' :
-                            opcode = "char_002_amiya"
-                            opcode2 = "char_002_amiya"
+                            opcode = AmiyaCaster
+                            opcode2 = AmiyaCaster
                             opKey=opcode
                             opdataFull.id = opcode
                             break;
                     case 'guard' :
                             opcode = AmiyaGuard
-                            opcode2 = "char_002_amiya"
+                            opcode2 = AmiyaCaster
                             opKey=opcode
                             opdataFull = db.charpatch.patchChars[AmiyaGuard]
                             opdataFull.id = opcode
                             break;
                     case 'medic' :
                             opcode = AmiyaMedic
-                            opcode2 = "char_002_amiya"
+                            opcode2 = AmiyaCaster
                             opKey=opcode
                             opdataFull = db.charpatch.patchChars[AmiyaMedic]
                             opdataFull.id = opcode
@@ -1589,7 +1593,7 @@
                     }
                 }
 
-                if(opKey==AmiyaGuard||opKey==AmiyaMedic){
+                if(AmiyaPatchID.includes(opKey)){
                     zoombtn.push($(`<button class="btn ak-c-black btn-dark" style="margin:2px;padding:2px; height: 50px; width: 50px;" onclick="ChangeZoomChara('`+opKey+`')"><img src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/elite/${i}-s.png'></button>`))
                     if(i == 0){
                         $("#charazoom").attr("src","https://raw.githubusercontent.com/Aceship/Arknight-Images/main/characters/"+opKey+"_2.png");
@@ -1786,7 +1790,7 @@
 
             //Story
 
-            if(db.handbookInfo.handbookDict[opdataFull.id]|| opdataFull.id == AmiyaGuard|| opdataFull.id == AmiyaMedic){
+            if(db.handbookInfo.handbookDict[opdataFull.id]|| AmiyaPatchID.includes(opdataFull.id)){
                 GetStory(opdataFull)
             }else{
                 $("#opstorycredits").html(``)
@@ -3516,13 +3520,24 @@
         // console.log(opdataFull)
         let currStory = db.handbookInfo.handbookDict[opdataFull.id]
         var isEN
+        var isAmiya
         if(db.handbookInfoEN.handbookDict[opdataFull.id]){
             currStory = db.handbookInfoEN.handbookDict[opdataFull.id]
             isEN = true
         }
-        if(opdataFull.id==AmiyaGuard||opdataFull.id==AmiyaMedic){
-            currStory = db.handbookInfoEN.handbookDict["char_002_amiya"]?db.handbookInfoEN.handbookDict["char_002_amiya"]:db.handbookInfo.handbookDict["char_002_amiya"]
+
+        if(Object.keys(db.charpatchEN.patchChars).includes(opdataFull.id)) {
+            currStory = db.handbookInfoEN.handbookDict[AmiyaCaster]
+            console.log("Amiya EN")
+            //isAmiya = true // Release once medic coom
+            isEN = true
         }
+        if(Object.keys(db.charpatch.patchChars).includes(opdataFull.id) && !Object.keys(db.charpatchEN.patchChars).includes(opdataFull.id)){
+            currStory = db.handbookInfo.handbookDict[AmiyaCaster]
+            console.log("Amiya CN")
+            isAmiya = true
+        }
+
         // console.log(currStory)
         // console.log(currStory.drawName)
         // console.log(db.vaTL[currStory.infoName]?db.vaTL[currStory.infoName]:currStory.infoName)
@@ -3555,18 +3570,16 @@
 
         var voiceDict = db.charword.voiceLangDict[opdataFull.id]
         var voiceDictEN = db.charwordEN.voiceLangDict[opdataFull.id]
-        var existvoiceDict
+        var existvoiceDict = voiceDictEN?{...voiceDict,...voiceDictEN}:voiceDict
         console.log(voiceDict)
         console.log(voiceDictEN)
 
         var VAlang
         const VAlanglist=["JP","LINKAGE","CN_MANDARIN","CN_TOPOLECT","EN","KR","ITA","GER","RUS"]
         VAhtml=""
-        for (i=0;i<VAlanglist.length;i++){
-            if(voiceDict.dict[VAlanglist[i]] || voiceDictEN.dict[VAlanglist[i]]){
-                if (voiceDict.dict[VAlanglist[i]]) existvoiceDict = voiceDict
-                else existvoiceDict = voiceDictEN
-                switch(existvoiceDict.dict[VAlanglist[i]].voiceLangType) {
+        VAlanglist.forEach(valang =>{
+            if(existvoiceDict.dict[valang]){
+                switch(existvoiceDict.dict[valang].voiceLangType) {
                     case "LINKAGE":
                         if(opdataFull.id =="char_4019_ncdeer"){ 
                             VAlang = "CN"
@@ -3583,15 +3596,10 @@
                         VAlang = "CN&#42"
                         break;
                     default:
-                        VAlang=existvoiceDict.dict[VAlanglist[i]].voiceLangType
+                        VAlang=existvoiceDict.dict[valang].voiceLangType
                 }
-            try{
-                VAName=voiceDictEN.dict[VAlanglist[i]].cvName[0]
-                }
-            catch(error){
-                VAName=voiceDict.dict[VAlanglist[i]].cvName[0]
-            }
-                //console.log(VAlanglist[i],"|",VAlang,"|",VAName,"|",voiceDict.dict[VAlanglist[i]])
+                VAName=existvoiceDict.dict[valang].cvName[0]
+
                 VAhtml+=`
                             <div class="voiceactor-${VAlang}">
                                 <div id="lang-voiceactor-${VAlang}" class="btn-infoleft ak-shadow">
@@ -3607,7 +3615,7 @@
                             </div>
                         `
             }
-        }
+        })
         $('#info-voiceactor').html(VAhtml)
 
         let puretext = []
@@ -3621,6 +3629,7 @@
 
         var recruitcheck = db.charsEN[opdataFull.id]
         if(!recruitcheck) recruitcheck = opdataFull
+        if(AmiyaPatchID.includes(opdataFull.id)) recruitcheck = db.charsEN[AmiyaCaster]
 
         //check potential token
         var tokencheck
@@ -3653,9 +3662,9 @@
         }
 
 
-
         if(currStory.storyTextAudio){
             currStory.storyTextAudio.forEach(storySection => {
+                if (isAmiya && !storySection.stories[0].patchIdList.includes(opdataFull.id)) return
                 puretext.push(`---------${storySection.storyTitle}-----------`)
                 puretext.push(storySection.stories[0].storyText)
                 puretext.push("")
