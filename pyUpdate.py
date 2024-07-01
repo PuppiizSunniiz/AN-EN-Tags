@@ -1,6 +1,7 @@
 import pandas
 import json
 from pyfunction import CharReady
+from pyAkenemy import Akenemy
 
 #########################################################################################################
 # JSON
@@ -420,9 +421,6 @@ dumpling=json.dumps(json_term,indent=4, ensure_ascii=False)
 with open("json/named_effects.json",'w') as JSON :
     JSON.write(dumpling)
 
-
-print("\nUpdate Completed !!!\n")
-
 #########################################################################################################
 # RIIC EN Update
 #########################################################################################################
@@ -436,3 +434,7 @@ for riic in json_buildingEN["buffs"].keys():
 dumpling=json.dumps(json_riicTL,indent=4, ensure_ascii=False)
 with open("json/ace/riic.json",'w') as JSON :
     JSON.write(dumpling)
+
+Akenemy()
+
+print("pyUpdate Completed !!!\n")

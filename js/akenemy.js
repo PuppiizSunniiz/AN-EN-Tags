@@ -26,7 +26,10 @@
     var d4 = $.getJSON("json/named_effects.json",function(data){
         db["named_effects"] = data;
     });
-    $.when(d0,d1,d2,d3,d4).then(function(){
+    var d5 = $.getJSON("json/akenemy.json",function(data){
+        db["akenemy"] = data;
+    });
+    $.when(d0,d1,d2,d3,d4,d5).then(function(){
         Object.keys(db.enemy.raceData).forEach(race => {
             tlracedict[race]=db.enemyEN.raceData[race]?db.enemyEN.raceData[race].raceName:db.enemyEN.raceData[race].raceName
         })
@@ -73,7 +76,8 @@
                                         "damageType"        :enemy.damageType,
                                         "immunity"          :immunitylist,
                                         "silenceable"       :silenceable,
-                                        "linkEnemies"       :linkEnemies
+                                        "linkEnemies"       :linkEnemies,
+                                        "filterappearance"  :db.akenemy.enemies[enemy.enemyId]
                                     })
             }
         })
@@ -195,8 +199,48 @@
     }
     function clickBtnClear(){
         $(".button-tag").removeClass("btn-primary").addClass("btn-secondary");
+        $("#GamemodeDropdown").removeClass("btn-primary").addClass("btn-secondary");
+        $("#GamemodeDropdown").html("Select Gamemode")
+        $("#GamemodeDropdown").attr("data-id","")
+
+        $("#GameeventDropdown").removeClass("btn-primary").addClass("btn-secondary");
+        $("#GameeventDropdown").html("Select Gamemode first &lt;&lt;&lt;")
+        $("#GameeventDropdown").attr("data-id","")
+
+        $("#GameeventList").empty()
+
         $("#opname").val("")
         populateEnemy(true);
+    }
+
+    function selectGamemode(el){
+        $("#GamemodeDropdown").html(el.html())
+        $("#GamemodeDropdown").attr("data-id",el.attr("data-id"))
+        $("#GamemodeDropdown").removeClass("btn-secondary").addClass("btn-primary");
+
+        $("#GameeventDropdown").removeClass("btn-primary").addClass("btn-secondary");
+        $("#GameeventDropdown").html("Select Event")
+
+        $("#GameeventList").empty()
+        eventlisting(el.attr("data-id"))
+        populateEnemy()
+    }
+
+    function eventlisting(gamemode){
+        gameeventhtml=""
+        db.akenemy.gamemode[gamemode].forEach(event =>{
+            gameeventhtml+=`<a class="dropdown-item unselectable" onclick="selectGameevent($(this))" data-id="${event}">${db.akenemy.events[event]}</a>`
+        })
+
+        $("#GameeventList").append(gameeventhtml)
+    }
+
+    function selectGameevent(el){
+        $("#GameeventDropdown").html(el.html())
+        $("#GameeventDropdown").attr("data-id",el.attr("data-id"))
+        $("#GameeventDropdown").removeClass("btn-secondary").addClass("btn-primary");
+
+        populateEnemy()
     }
 
     function populateEnemy(allenemies=false){
@@ -210,6 +254,9 @@
         let enemy_name = $("#opname").val()
         let Notappliable=$(`#filter-enemy-immunity`).html()=="Immunity"
 
+        let enemy_gamemode = $("#GamemodeDropdown.btn-primary").attr("data-id")
+        let enemy_gameevent = $("#GameeventDropdown.btn-primary").attr("data-id")
+
         var enemiesfiltered=enemyforfilter
 
         if(enemy_class.length ==0 &&
@@ -219,9 +266,11 @@
             enemy_damage.length ==0 &&
             enemy_immunity.length ==0 &&
             !enemy_silenceable &&
-            !enemy_name) allenemies=true
+            !enemy_name &&
+            !enemy_gamemode &&
+            !enemy_gameevent) allenemies=true
         
-        console.log(enemy_class.length,enemy_race.length,enemy_attack.length,enemy_movement.length,enemy_damage.length,enemy_immunity.length,!enemy_silenceable,!enemy_name,!allenemies)
+        console.log(enemy_class.length,enemy_race.length,enemy_attack.length,enemy_movement.length,enemy_damage.length,enemy_immunity.length,!enemy_silenceable,!enemy_name,!enemy_gamemode,!enemy_gameevent,"allenemies =",allenemies)
         if(!allenemies){
             if (enemy_class.length) enemiesfiltered=enemiesfiltered.filter(enemy => enemy_class[0]==enemy.enemyLevel)
             if (enemy_race.length) enemiesfiltered=enemiesfiltered.filter(enemy => enemy.enemyTags?enemy.enemyTags.includes(enemy_race[0]):false)
@@ -231,6 +280,15 @@
             if (enemy_immunity.length) enemiesfiltered=enemiesfiltered.filter(enemy => enemy_immunity.every(immunity => enemy.immunity.length?enemy.immunity.includes(immunity)+Notappliable-1:!Notappliable))
             if (enemy_silenceable) enemiesfiltered=enemiesfiltered.filter(enemy => enemy.silenceable==true)
             if (enemy_name.length) enemiesfiltered=enemiesfiltered.filter(enemy => (enemy.name.toUpperCase().search(enemy_name.toUpperCase())!=-1 || enemy.nameEN.length?enemy.nameEN.toUpperCase().search(enemy_name.toUpperCase())!=-1:false) || enemy.enemyId.toUpperCase().search(enemy_name.toUpperCase())!=-1 || enemy.enemyIndex.toUpperCase().search(enemy_name.toUpperCase())!=-1)
+            if (enemy_gamemode) {
+                console.log(enemy_gamemode,enemy_gameevent)
+                if(enemy_gameevent) enemiesfiltered=enemiesfiltered.filter(enemy => enemy.filterappearance.includes(enemy_gameevent))
+                else enemiesfiltered=enemiesfiltered.filter(enemy => {
+                    return enemy.filterappearance.some(item => {
+                        return db.akenemy.gamemode[enemy_gamemode].includes(item)
+                    })
+                })
+            }
         }
         console.log(enemiesfiltered)
         let currHtml = []

@@ -66,6 +66,11 @@
     color: red;
 }
 
+.dropdown-item:hover{
+    background-color: #0098DC !important;
+    border-color: #0098DC !important;
+}
+
 #spine-toolbar{
     left: initial !important;
 }

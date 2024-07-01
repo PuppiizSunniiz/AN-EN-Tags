@@ -1,30 +1,30 @@
 from datetime import datetime
 
 def epoch(time) -> str:
-    def TimeReturn(self):  # return Date as Y M D H M or S
-        if self.days > 365:
-            return str(self.days // 365) + ' Year(s)'
-        elif self.days > 31:
-            return str(self.days // 30) + ' Month(s)'
-        elif self.days > 0:
-            return str(self.days) + ' Day(s)'
-        elif self.seconds > 3600:
-            return str(self.seconds // 3600) + ' Hour(s)'
-        elif self.seconds > 60:
-            return str(self.seconds // 60) + ' Minute(s)'
-        else:
-            return str(self.seconds) + ' Second(s)'
-
-    def TimeDiff(self):  # Time different Before(ago) or After(in)
-        if self < datetime.now():
-            return TimeReturn(datetime.now() - self) + ' ago'
-        else:
-            return 'in ' + TimeReturn(self - datetime.now())
-
-    def TimeFormat(self):
-        return self.strftime('%d %b %Y %H:%M:%S')
-
     return TimeFormat(datetime.fromtimestamp(time))+" is "+TimeDiff(datetime.fromtimestamp(time))
+
+def TimeReturn(self) -> str:  # return Date as Y M D H M or S
+    if self.days > 365:
+        return str(self.days // 365) + ' Year(s)'
+    elif self.days > 31:
+        return str(self.days // 30) + ' Month(s)'
+    elif self.days > 0:
+        return str(self.days) + ' Day(s)'
+    elif self.seconds > 3600:
+        return str(self.seconds // 3600) + ' Hour(s)'
+    elif self.seconds > 60:
+        return str(self.seconds // 60) + ' Minute(s)'
+    else:
+        return str(self.seconds) + ' Second(s)'
+
+def TimeDiff(self) -> str:  # Time different Before(ago) or After(in)
+    if self < datetime.now():
+        return TimeReturn(datetime.now() - self) + ' ago'
+    else:
+        return 'in ' + TimeReturn(self - datetime.now())
+
+def TimeFormat(self) -> str:
+    return self.strftime('%d %b %Y %H:%M:%S')
 
 def CharReady(JSON,mode=0):
     '''

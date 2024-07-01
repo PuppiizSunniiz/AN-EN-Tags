@@ -1,0 +1,8217 @@
+{
+    "gamemode": {
+        "main": [
+            "main_0",
+            "main_1",
+            "main_2",
+            "main_3",
+            "main_4",
+            "main_5",
+            "main_6",
+            "main_7",
+            "main_8",
+            "main_9",
+            "main_10",
+            "main_11",
+            "main_12",
+            "main_13",
+            "main_14"
+        ],
+        "sidestory": [
+            "1stact",
+            "act3d0",
+            "act5d0",
+            "act6d5",
+            "act7d5",
+            "act9d0",
+            "act10d5",
+            "act11d0",
+            "act12d0",
+            "act13d0",
+            "act13d5",
+            "act15d0",
+            "act15d5",
+            "act17d0",
+            "act16d5",
+            "act18d0",
+            "act18d3",
+            "act7mini",
+            "act1lock",
+            "act8mini",
+            "act12side",
+            "act9mini",
+            "act13side",
+            "act14side",
+            "act15side",
+            "act10mini",
+            "act16side",
+            "act17side",
+            "act18side",
+            "act19side",
+            "act11mini",
+            "act20side",
+            "act12mini",
+            "act13mini",
+            "act21side",
+            "act22side",
+            "act23side",
+            "act14mini",
+            "act24side",
+            "act25side",
+            "act26side",
+            "act15mini",
+            "act27side",
+            "act28side",
+            "act42d0",
+            "act29side",
+            "act30side",
+            "act16mini",
+            "act31side",
+            "act32side",
+            "act33side",
+            "act34side"
+        ],
+        "supply": [
+            "weekly_9",
+            "weekly_8",
+            "weekly_7",
+            "weekly_5",
+            "weekly_6",
+            "weekly_1",
+            "weekly_2",
+            "weekly_3",
+            "weekly_4"
+        ],
+        "campaign": [
+            "camp_01",
+            "camp_02",
+            "camp_03",
+            "camp_r_01",
+            "camp_r_02",
+            "camp_r_03",
+            "camp_r_04",
+            "camp_r_05",
+            "camp_r_06",
+            "camp_r_07",
+            "camp_r_08",
+            "camp_r_09",
+            "camp_r_10",
+            "camp_r_11",
+            "camp_r_12",
+            "camp_r_13",
+            "camp_r_14",
+            "camp_r_15",
+            "camp_r_16",
+            "camp_r_17",
+            "camp_r_18",
+            "camp_r_19",
+            "camp_r_20",
+            "camp_r_21",
+            "camp_r_22",
+            "camp_r_23"
+        ],
+        "coop": [
+            "act17d1",
+            "act2vmulti"
+        ],
+        "cc": [
+            "CC#Beta",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "CC#12",
+            "PinchOut",
+            "CCBP#01",
+            "CCBP#02"
+        ],
+        "is": [
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4"
+        ],
+        "tn": [
+            "act1bossrush",
+            "act2bossrush",
+            "act3bossrush",
+            "act4bossrush"
+        ],
+        "sss": [
+            "lttr",
+            "lt01",
+            "lt02",
+            "lt03",
+            "lt04",
+            "lt05",
+            "lt06",
+            "lt07",
+            "lt08",
+            "lt09",
+            "lt10",
+            "lt11",
+            "lt12",
+            "lt13",
+            "lt14"
+        ],
+        "ra": [
+            "RA#1",
+            "RA#2"
+        ],
+        "pending": []
+    },
+    "events": {
+        "main_0": "Prologue : Evil Time Part 1",
+        "main_1": "Episode 1 : Evil Time Part 2",
+        "main_2": "Episode 2 : Separated Hearts",
+        "main_3": "Episode 3 : Stinging Shock",
+        "main_4": "Episode 4 : Burning Run",
+        "main_5": "Episode 5 : Necessary Solutions",
+        "main_6": "Episode 6 : Partial Necrosis",
+        "main_7": "Episode 7 : The Birth of Tragedy",
+        "main_8": "Episode 8 : Roaring Flare",
+        "main_9": "Episode 9 : Stormwatch",
+        "main_10": "Episode 10 : Shatterpoint",
+        "main_11": "Episode 11 : Return To Mist",
+        "main_12": "Episode 12 : All Quiet Under the Thunder",
+        "main_13": "Episode 13 : The Whirlpool that is Passion",
+        "main_14": "Episode 14 : Absolved Will Be the Seekers",
+        "weekly_9": "CE : Cargo Escort (LMD)",
+        "weekly_8": "SK : Resource Search (Building materials)",
+        "weekly_7": "LS : Tactical Drill (Battle Record)",
+        "weekly_5": "AP : Tough Siege (Purchase Certificate)",
+        "weekly_6": "CA : Aerial Threat (Skill Summary)",
+        "weekly_1": "PR-A : Solid Defense (Defenders & Medics)",
+        "weekly_2": "PR-B : Fierce Attack (Snipers & Casters)",
+        "weekly_3": "PR-C : Unstoppable Charge (Vanguards & Supporters)",
+        "weekly_4": "PR-D : Fearless Protection (Guards & Specialists)",
+        "act34side": "Path of Life",
+        "act2vmulti": "Rhodes Island Icebreaker Games",
+        "act33side": "Babel",
+        "act32side": "Operation Lucient Arrowhead",
+        "act4bossrush": "Trials For Navigator #4",
+        "act31side": "Here a People Sows",
+        "act16mini": "To the Grinning Valley",
+        "act30side": "The Rides to Lake Silberneherze",
+        "act29side": "Zwillingstürme im Herbst",
+        "act28side": "Come Catastrophes or Wakes of Vultures",
+        "act3bossrush": "Trials for Navigator #3",
+        "act27side": "So Long, Adele: Home Away From Home",
+        "act15mini": "The Black Forest Wills A Dream",
+        "act26side": "Hortus de Escapismo",
+        "act25side": "Lone Trail",
+        "act24side": "A Flurry to the Flame",
+        "act14mini": "A Death in Chunfen",
+        "act23side": "Where Vernal Winds Will Never Blow",
+        "act22side": "What the Firelight Casts",
+        "act2bossrush": "Trials for Navigator #2",
+        "act21side": "IL Siracusano",
+        "act13mini": "It's Been a While",
+        "act12mini": "An Obscure Wanderer",
+        "act20side": "Ideal City: Endless Carnival",
+        "act1bossrush": "Trials for Navigator #1",
+        "act11mini": "To Be Continued",
+        "act19side": "Dorothy's Vision",
+        "act18side": "Lingering Echoes",
+        "act17side": "Stultifera Navis",
+        "act16side": "Guide Ahead",
+        "act10mini": "A Light Spark in Darkness",
+        "act15side": "Invitation to Wine",
+        "act14side": "Break the Ice",
+        "act13side": "Near Light",
+        "act9mini": "Pinus Sylvestris",
+        "act12side": "Dossoles Holiday",
+        "act8mini": "Vigilo",
+        "act1lock": "Hymnoi Wisdom",
+        "act7mini": "Preluding Lights",
+        "act18d3": "Under Tides",
+        "act18d0": "A Walk in the Dust",
+        "act17d0": "Operation Originium Dust",
+        "act16d5": "Who Is Real",
+        "act15d5": "Beyond Here",
+        "act15d0": "Mansfield Break",
+        "act13d5": "Maria Nearl",
+        "act13d0": "Rewinding Breeze",
+        "act12d0": "The Great Chief Returns",
+        "act11d0": "Twilight of Wolumonde",
+        "act10d5": "Children of Ursus",
+        "act9d0": "Darknights Memoir",
+        "act7d5": "Stories of Afternoon",
+        "act6d5": "Ancient Forge",
+        "act5d0": "Code of Brawl",
+        "act3d0": "Heart of Surging Flame",
+        "1stact": "Grani and the Knights' Treasure",
+        "camp_01": "Chernobog",
+        "camp_02": "Lungmen Outskirts",
+        "camp_03": "Lungmen Downtown",
+        "camp_r_01": "The Grand Knight Territory Outskirts",
+        "camp_r_02": "Frozen Abandoned City",
+        "camp_r_03": "Abandoned Mine",
+        "camp_r_04": "Flooded Seashore",
+        "camp_r_05": "Watery Tidehollow",
+        "camp_r_06": "Long Spring Wastes",
+        "camp_r_07": "Dossoles Water Gate",
+        "camp_r_08": "South Prison",
+        "camp_r_09": "County Hillock Countryside",
+        "camp_r_10": "Night Champion Show",
+        "camp_r_11": "Lingering Shangshu Trails",
+        "camp_r_12": "Chocolate Street",
+        "camp_r_13": "Penumbra Shipyards",
+        "camp_r_14": "Research Base Hanger",
+        "camp_r_15": "Lungmen Commercial District",
+        "camp_r_16": "Rest Avenue",
+        "camp_r_17": "Ashy Marsh",
+        "camp_r_18": "The Special Little Aquapit'",
+        "camp_r_19": "Decaying Wastes",
+        "camp_r_20": "千嶂边城",
+        "camp_r_21": "新旅店大道",
+        "camp_r_22": "“离心率”实验室",
+        "camp_r_23": "燃烧街区",
+        "lttr": "Training Ground",
+        "lt05": "Under-Construction Dossoles Plate",
+        "lt06": "Acahuallan Jungle",
+        "lt07": "Mama John's New Plate",
+        "lt08": "Raythean Industries Test Platform",
+        "lt09": "Alsterii Bellariorum Manufacture Platform",
+        "lt10": "The Abandoned Lighthouse",
+        "lt11": "塔山农业实验平台",
+        "lt12": "自走机械搏斗场",
+        "lt13": "边地移动城镇",
+        "lt14": "多索雷斯商业地块",
+        "lt01": "Iron Carrot Mine",
+        "lt02": "Toron Mine",
+        "lt03": "Glebe Mining Platform",
+        "lt04": "Słoma Processing Platform",
+        "act42d0": "Design of Strife",
+        "act17d1": "Defense Protocols",
+        "CC#Beta": "CC#Beta : Contingency Contract",
+        "CC#00": "CC#00 : Operation Barrenland",
+        "CC#01": "CC#01 : Operation Pyrite",
+        "CC#02": "CC#02 : Operation Blade",
+        "CC#03": "CC#03 : Operation Cinder",
+        "CC#04": "CC#04 : Operation Lead Seal",
+        "CC#05": "CC#05 : Operation Spectrum",
+        "CC#06": "CC#06 : Operation Wild Scales",
+        "CC#07": "CC#07 : Operation Pine Soot",
+        "CC#08": "CC#08 : Operation Dawnseeker",
+        "CC#09": "CC#09 : Operation Deepness",
+        "CC#10": "CC#10 : Operation Ashring",
+        "CC#11": "CC#11 : Operation Fake Waves",
+        "CC#12": "CC#12 : Operation Basepoint",
+        "PinchOut": "Pinch-Out Experimental Operation",
+        "CCBP#01": "CCBP#01 : Battleplan Pyrolysis",
+        "CCBP#02": "CCBP#02 : Battleplan Underdawn",
+        "IS#1": "IS#1 : Ceobe's Fungimist",
+        "IS#2": "IS#2 : Phantom & Crimson Solitaire",
+        "IS#3": "IS#3 : Mizuki & Caerula Arbor",
+        "IS#4": "IS#4 : Expeditioner's Jǫklumarkar",
+        "RA#1": "RA#1 : Reclamation Algorithm - Fire Within the Sand",
+        "RA#2": "RA#2 : Reclamation Algorithm - Tales Within the Sand"
+    },
+    "enemies": {
+        "enemy_1007_slime": [
+            "main_0",
+            "main_1",
+            "main_14",
+            "weekly_9",
+            "weekly_8",
+            "weekly_7",
+            "weekly_5",
+            "weekly_2",
+            "act31side",
+            "act12mini",
+            "act20side",
+            "act1lock",
+            "act15d5",
+            "act13d5",
+            "act13d0",
+            "act12d0",
+            "act11d0",
+            "act3d0",
+            "1stact",
+            "camp_01",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1002_nsabr": [
+            "main_0",
+            "main_1",
+            "main_2",
+            "main_3",
+            "main_4",
+            "weekly_9",
+            "weekly_8",
+            "weekly_7",
+            "weekly_5",
+            "weekly_1",
+            "weekly_2",
+            "weekly_3",
+            "weekly_4",
+            "act2vmulti",
+            "act16mini",
+            "act1bossrush",
+            "act10mini",
+            "act1lock",
+            "act7mini",
+            "act13d0",
+            "act7d5",
+            "1stact",
+            "camp_01",
+            "camp_02",
+            "camp_03",
+            "lt14",
+            "lt02",
+            "lt03",
+            "lt04",
+            "act42d0",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1005_yokai": [
+            "main_0",
+            "main_1",
+            "main_2",
+            "main_3",
+            "main_4",
+            "main_5",
+            "main_6",
+            "weekly_9",
+            "weekly_7",
+            "weekly_5",
+            "weekly_6",
+            "weekly_2",
+            "act33side",
+            "act32side",
+            "act13mini",
+            "act1lock",
+            "act9d0",
+            "act7d5",
+            "act6d5",
+            "1stact",
+            "camp_01",
+            "camp_02",
+            "lt11",
+            "act42d0",
+            "CC#Beta",
+            "CC#00",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1027_mob": [
+            "main_0",
+            "main_1",
+            "main_2",
+            "main_3",
+            "weekly_5",
+            "weekly_6",
+            "act9mini",
+            "act1lock",
+            "act10d5",
+            "1stact",
+            "camp_02",
+            "lt03",
+            "lt04",
+            "IS#3"
+        ],
+        "enemy_1000_gopro": [
+            "main_0",
+            "main_1",
+            "main_2",
+            "main_4",
+            "weekly_9",
+            "weekly_7",
+            "weekly_5",
+            "weekly_4",
+            "act2vmulti",
+            "act32side",
+            "act13mini",
+            "act10mini",
+            "act12d0",
+            "act5d0",
+            "act3d0",
+            "1stact",
+            "camp_01",
+            "camp_03",
+            "camp_r_01",
+            "lt08",
+            "lt02",
+            "IS#1",
+            "IS#2",
+            "RA#1"
+        ],
+        "enemy_1029_shdsbr": [
+            "main_0",
+            "main_1",
+            "main_2",
+            "main_3",
+            "main_4",
+            "main_5",
+            "weekly_9",
+            "weekly_8",
+            "weekly_7",
+            "weekly_2",
+            "weekly_4",
+            "act1lock",
+            "act13d0",
+            "act7d5",
+            "act6d5",
+            "1stact",
+            "camp_01",
+            "lt05",
+            "lt08",
+            "lt09",
+            "lt14",
+            "IS#1",
+            "IS#2"
+        ],
+        "enemy_1007_slime_2": [
+            "main_0",
+            "main_1",
+            "main_2",
+            "main_3",
+            "main_14",
+            "weekly_9",
+            "weekly_8",
+            "weekly_7",
+            "weekly_1",
+            "act15mini",
+            "act13mini",
+            "act9mini",
+            "act15d5",
+            "act13d5",
+            "act11d0",
+            "act9d0",
+            "1stact",
+            "camp_01",
+            "lt06",
+            "act42d0",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1030_wteeth": [
+            "main_0",
+            "main_1",
+            "main_2",
+            "main_3",
+            "main_5",
+            "main_4",
+            "weekly_9",
+            "weekly_7",
+            "weekly_5",
+            "act2vmulti",
+            "act1lock",
+            "act13d0",
+            "camp_01",
+            "camp_02",
+            "lt09",
+            "IS#1",
+            "IS#2",
+            "RA#2"
+        ],
+        "enemy_1000_gopro_2": [
+            "main_1",
+            "main_2",
+            "main_3",
+            "main_4",
+            "main_5",
+            "weekly_7",
+            "weekly_5",
+            "weekly_3",
+            "act2vmulti",
+            "act13mini",
+            "act9mini",
+            "act1lock",
+            "act7mini",
+            "act15d5",
+            "act13d0",
+            "act12d0",
+            "act10d5",
+            "act9d0",
+            "act6d5",
+            "act5d0",
+            "act3d0",
+            "1stact",
+            "camp_01",
+            "camp_03",
+            "camp_r_01",
+            "camp_r_06",
+            "camp_r_08",
+            "lt07",
+            "act17d1",
+            "CC#Beta",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "IS#1",
+            "IS#2",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1028_mocock": [
+            "main_1",
+            "main_2",
+            "weekly_9",
+            "act2vmulti",
+            "camp_01",
+            "camp_02",
+            "IS#2"
+        ],
+        "enemy_1014_rogue": [
+            "main_1",
+            "main_2",
+            "main_3",
+            "main_4",
+            "weekly_9",
+            "weekly_5",
+            "weekly_1",
+            "weekly_3",
+            "act10mini",
+            "act10d5",
+            "act7d5",
+            "act6d5",
+            "1stact",
+            "lttr",
+            "lt07",
+            "lt08",
+            "IS#1",
+            "IS#2",
+            "IS#4"
+        ],
+        "enemy_1011_wizard": [
+            "main_1",
+            "main_2",
+            "main_3",
+            "weekly_9",
+            "weekly_5",
+            "camp_01",
+            "camp_02",
+            "IS#1"
+        ],
+        "enemy_1502_crowns": [
+            "main_1",
+            "main_3",
+            "main_4",
+            "main_5",
+            "weekly_3",
+            "act16mini",
+            "act1bossrush",
+            "act10mini",
+            "act15d5",
+            "camp_01",
+            "lt01",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "IS#2",
+            "RA#2"
+        ],
+        "enemy_1028_mocock_2": [
+            "main_1",
+            "main_2",
+            "main_3",
+            "main_4",
+            "weekly_5",
+            "act10mini",
+            "act1lock",
+            "act7d5",
+            "1stact",
+            "camp_01",
+            "camp_02"
+        ],
+        "enemy_1504_cqbw": [
+            "main_1",
+            "act2vmulti",
+            "act2bossrush",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "IS#1",
+            "IS#2",
+            "RA#1"
+        ],
+        "enemy_1006_shield": [
+            "main_2",
+            "weekly_8",
+            "weekly_7",
+            "weekly_3",
+            "act2vmulti",
+            "act1lock",
+            "act13d0",
+            "act9d0",
+            "camp_01",
+            "lttr",
+            "lt06",
+            "lt08",
+            "lt14",
+            "lt02",
+            "lt03",
+            "CC#Beta",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "IS#1",
+            "IS#2",
+            "RA#2"
+        ],
+        "enemy_1033_handax": [
+            "main_2",
+            "main_3",
+            "main_5",
+            "weekly_9",
+            "weekly_7",
+            "weekly_5",
+            "act1lock",
+            "act7mini",
+            "act10d5",
+            "act7d5",
+            "1stact",
+            "camp_01",
+            "camp_02",
+            "lttr",
+            "lt14",
+            "lt01",
+            "lt04",
+            "CC#Beta",
+            "CC#00",
+            "IS#1",
+            "IS#2"
+        ],
+        "enemy_1027_mob_2": [
+            "main_2",
+            "main_3",
+            "main_4",
+            "act13d0",
+            "1stact",
+            "camp_01",
+            "camp_02",
+            "lt01",
+            "lt04",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06"
+        ],
+        "enemy_1003_ncbow": [
+            "main_2",
+            "main_3",
+            "weekly_9",
+            "weekly_5",
+            "act13d0",
+            "1stact",
+            "camp_01",
+            "camp_03",
+            "IS#1"
+        ],
+        "enemy_1018_aoemag": [
+            "main_2",
+            "main_3",
+            "weekly_8",
+            "weekly_5",
+            "weekly_6",
+            "act9mini",
+            "camp_01",
+            "IS#1",
+            "IS#2",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1014_rogue_2": [
+            "main_2",
+            "main_3",
+            "main_4",
+            "main_5",
+            "weekly_5",
+            "weekly_3",
+            "weekly_4",
+            "act1bossrush",
+            "act15d5",
+            "act13d0",
+            "act10d5",
+            "1stact",
+            "IS#3"
+        ],
+        "enemy_1013_airdrp": [
+            "main_2",
+            "weekly_9",
+            "act2vmulti",
+            "act13mini",
+            "act8mini",
+            "act10d5",
+            "act6d5",
+            "camp_03",
+            "lt05",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "IS#2",
+            "IS#4",
+            "RA#1"
+        ],
+        "enemy_1003_ncbow_2": [
+            "main_2",
+            "main_3",
+            "main_4",
+            "weekly_5",
+            "act1bossrush",
+            "act13d0",
+            "1stact",
+            "camp_01",
+            "lt05",
+            "CC#Beta",
+            "CC#00",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1"
+        ],
+        "enemy_1016_diaman": [
+            "main_2",
+            "main_4",
+            "weekly_8",
+            "act16mini",
+            "act14mini",
+            "act20side",
+            "act14side",
+            "act17d0",
+            "lt05",
+            "lt06",
+            "lt07",
+            "lt08",
+            "lt13",
+            "lt02",
+            "lt04",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1"
+        ],
+        "enemy_1017_defdrn": [
+            "main_2",
+            "main_3",
+            "main_5",
+            "weekly_7",
+            "weekly_6",
+            "weekly_2",
+            "act2bossrush",
+            "act13mini",
+            "act1bossrush",
+            "act16side",
+            "act1lock",
+            "act13d0",
+            "act10d5",
+            "act7d5",
+            "camp_r_01",
+            "lt11",
+            "lt14",
+            "act42d0",
+            "IS#1",
+            "IS#2",
+            "IS#4"
+        ],
+        "enemy_1011_wizard_2": [
+            "main_2",
+            "main_3",
+            "main_4",
+            "act13d0",
+            "camp_01",
+            "camp_02",
+            "IS#1",
+            "IS#2"
+        ],
+        "enemy_1005_yokai_2": [
+            "main_2",
+            "main_3",
+            "main_4",
+            "main_5",
+            "weekly_7",
+            "weekly_5",
+            "weekly_6",
+            "weekly_2",
+            "act32side",
+            "act2bossrush",
+            "act13mini",
+            "act20side",
+            "act1lock",
+            "act13d0",
+            "act10d5",
+            "act7d5",
+            "act6d5",
+            "1stact",
+            "camp_02",
+            "camp_r_01",
+            "lt11",
+            "CC#Beta",
+            "CC#00",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1013_airdrp_2": [
+            "main_2",
+            "weekly_6",
+            "act13mini",
+            "act12side",
+            "act7mini",
+            "act13d0",
+            "act10d5",
+            "act7d5",
+            "act6d5",
+            "camp_03",
+            "IS#3"
+        ],
+        "enemy_1015_litamr": [
+            "main_2",
+            "main_4",
+            "weekly_7",
+            "act1lock",
+            "act9d0",
+            "act7d5",
+            "act6d5",
+            "camp_02",
+            "lttr",
+            "lt06",
+            "lt07",
+            "lt09",
+            "lt14",
+            "lt02",
+            "CC#Beta",
+            "CC#00",
+            "CC#01",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "IS#1",
+            "IS#2"
+        ],
+        "enemy_1500_skulsr": [
+            "main_2",
+            "main_3",
+            "act2vmulti",
+            "act1bossrush",
+            "act15d5",
+            "act13d0",
+            "act10d5"
+        ],
+        "enemy_1007_slime_3": [
+            "main_3",
+            "main_5",
+            "main_6",
+            "main_4",
+            "main_14",
+            "weekly_9",
+            "weekly_7",
+            "weekly_5",
+            "weekly_2",
+            "act31side",
+            "act2bossrush",
+            "act13mini",
+            "act20side",
+            "act1bossrush",
+            "act9mini",
+            "act1lock",
+            "act15d5",
+            "act13d5",
+            "act13d0",
+            "act9d0",
+            "act6d5",
+            "act5d0",
+            "act3d0",
+            "1stact",
+            "lt06",
+            "CC#Beta",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1000_gopro_3": [
+            "main_3",
+            "main_4",
+            "main_5",
+            "main_6",
+            "weekly_7",
+            "weekly_5",
+            "weekly_1",
+            "weekly_3",
+            "weekly_4",
+            "act13mini",
+            "act12mini",
+            "act1bossrush",
+            "act9mini",
+            "act1lock",
+            "act15d5",
+            "act10d5",
+            "act9d0",
+            "act7d5",
+            "act6d5",
+            "1stact",
+            "lttr",
+            "lt01",
+            "lt02",
+            "CC#Beta",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#12",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1009_lurker": [
+            "main_3",
+            "weekly_4",
+            "act7mini",
+            "act10d5",
+            "act7d5",
+            "camp_03",
+            "lt07",
+            "lt02",
+            "lt03",
+            "act42d0",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "RA#2"
+        ],
+        "enemy_1019_jshoot": [
+            "main_3",
+            "act9mini",
+            "act7mini",
+            "act7d5",
+            "act6d5",
+            "camp_02",
+            "lt03",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "IS#3",
+            "RA#2"
+        ],
+        "enemy_1020_obsv": [
+            "main_3",
+            "act10d5",
+            "act6d5",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1033_handax_2": [
+            "main_3",
+            "main_4",
+            "main_5",
+            "weekly_9",
+            "weekly_4",
+            "act1bossrush",
+            "act13d0",
+            "act10d5",
+            "act6d5",
+            "1stact",
+            "lt02",
+            "IS#1",
+            "IS#2"
+        ],
+        "enemy_1034_laxe": [
+            "main_3",
+            "main_4",
+            "main_5",
+            "weekly_7",
+            "act2vmulti",
+            "camp_02",
+            "lt09",
+            "lt14",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "IS#1",
+            "IS#2",
+            "IS#4",
+            "RA#1"
+        ],
+        "enemy_1501_demonk": [
+            "main_3",
+            "main_14",
+            "act2bossrush",
+            "act12mini",
+            "act10mini",
+            "act13d0",
+            "act9d0",
+            "act7d5",
+            "act17d1",
+            "IS#1",
+            "IS#2",
+            "RA#2"
+        ],
+        "enemy_1023_jmage": [
+            "main_3",
+            "act10d5",
+            "act7d5",
+            "act6d5",
+            "CC#12",
+            "IS#4"
+        ],
+        "enemy_1034_laxe_2": [
+            "main_3",
+            "main_5",
+            "weekly_9",
+            "camp_03",
+            "lt14",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1024_mortar": [
+            "main_3",
+            "weekly_5",
+            "act7d5",
+            "act42d0",
+            "act17d1",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "RA#2"
+        ],
+        "enemy_1006_shield_2": [
+            "main_3",
+            "main_4",
+            "main_6",
+            "main_5",
+            "weekly_9",
+            "weekly_8",
+            "act15d5",
+            "act9d0",
+            "1stact",
+            "lt06",
+            "lt01",
+            "lt02",
+            "lt03",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1032_katar": [
+            "main_3",
+            "main_4",
+            "weekly_8",
+            "weekly_3",
+            "act1bossrush",
+            "act1lock",
+            "act13d0",
+            "lt05",
+            "lt07",
+            "lt14",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "IS#1",
+            "IS#2"
+        ],
+        "enemy_1010_demon": [
+            "main_4",
+            "main_5",
+            "main_12",
+            "weekly_9",
+            "weekly_5",
+            "weekly_1",
+            "act2vmulti",
+            "act33side",
+            "act16mini",
+            "act12mini",
+            "act9mini",
+            "act17d0",
+            "act13d0",
+            "act10d5",
+            "act9d0",
+            "act7d5",
+            "act6d5",
+            "camp_r_06",
+            "lt07",
+            "lt08",
+            "lt09",
+            "lt02",
+            "CCBP#02",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1012_dcross": [
+            "main_4",
+            "main_5",
+            "main_12",
+            "weekly_5",
+            "act33side",
+            "act16mini",
+            "act12mini",
+            "act17d0",
+            "act13d0",
+            "act10d5",
+            "act9d0",
+            "act7d5",
+            "act6d5",
+            "camp_r_06",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "IS#1",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1015_litamr_2": [
+            "main_4",
+            "main_5",
+            "main_6",
+            "weekly_9",
+            "weekly_8",
+            "weekly_2",
+            "act9d0",
+            "1stact",
+            "lt06",
+            "lt01",
+            "lt02",
+            "lt03",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "IS#1",
+            "IS#2",
+            "IS#3"
+        ],
+        "enemy_1035_haxe": [
+            "main_4",
+            "weekly_8",
+            "weekly_7",
+            "act1lock",
+            "act7mini",
+            "lttr",
+            "lt08",
+            "lt14",
+            "lt02",
+            "lt04",
+            "CC#Beta",
+            "CC#00",
+            "CC#01",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1031_mrogue": [
+            "main_4",
+            "main_5",
+            "weekly_9",
+            "act12mini",
+            "act7mini",
+            "act15d5",
+            "act10d5",
+            "lt08",
+            "lt02",
+            "lt03",
+            "lt04",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "IS#2",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1021_bslime": [
+            "main_4",
+            "main_5",
+            "act2vmulti",
+            "act16mini",
+            "act15mini",
+            "act14mini",
+            "act13mini",
+            "act18side",
+            "act8mini",
+            "act15d5",
+            "act10d5",
+            "act3d0",
+            "lttr",
+            "lt06",
+            "lt08",
+            "lt09",
+            "act42d0",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1022_dmage": [
+            "main_4",
+            "main_12",
+            "act13d0",
+            "act9d0",
+            "CC#10",
+            "CC#11",
+            "CC#12",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1029_shdsbr_2": [
+            "main_4",
+            "weekly_8",
+            "weekly_4",
+            "act2bossrush",
+            "1stact"
+        ],
+        "enemy_1505_frstar": [
+            "main_4"
+        ],
+        "enemy_1039_breakr": [
+            "main_5",
+            "act15d5",
+            "act10d5",
+            "act7d5",
+            "camp_03",
+            "lt12",
+            "lt04",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "IS#1",
+            "IS#2",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1037_lunsbr": [
+            "main_5",
+            "main_6",
+            "main_7",
+            "act2vmulti",
+            "act13d0",
+            "act7d5",
+            "act6d5",
+            "camp_03",
+            "lt02",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05"
+        ],
+        "enemy_1038_lunmag": [
+            "main_5",
+            "main_6",
+            "main_7",
+            "act14mini",
+            "act12mini",
+            "act8mini",
+            "act15d5",
+            "act13d0",
+            "act7d5",
+            "camp_03",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "RA#1"
+        ],
+        "enemy_1038_lunmag_2": [
+            "main_5",
+            "main_6",
+            "act15d5",
+            "act7d5",
+            "act6d5",
+            "camp_03",
+            "CCBP#01",
+            "IS#1",
+            "IS#2",
+            "IS#3"
+        ],
+        "enemy_1039_breakr_2": [
+            "main_5",
+            "act16mini",
+            "act6d5",
+            "camp_03",
+            "lt12",
+            "lt01",
+            "lt02",
+            "IS#1",
+            "IS#2",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1040_bombd": [
+            "main_5",
+            "act9mini",
+            "camp_03",
+            "CC#Beta",
+            "CC#00",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1040_bombd_2": [
+            "main_5",
+            "act2vmulti",
+            "act13mini",
+            "act9mini",
+            "act10d5",
+            "act6d5",
+            "act42d0",
+            "IS#1",
+            "IS#2",
+            "IS#3"
+        ],
+        "enemy_1041_lazerd": [
+            "main_5",
+            "main_7",
+            "weekly_7",
+            "act2bossrush",
+            "act13mini",
+            "act11mini",
+            "act7mini",
+            "act15d5",
+            "act10d5",
+            "act6d5",
+            "camp_03",
+            "camp_r_04",
+            "lt11",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "IS#1",
+            "IS#2"
+        ],
+        "enemy_1042_frostd": [
+            "main_5",
+            "main_6",
+            "act2vmulti",
+            "act2bossrush",
+            "act12mini",
+            "act1bossrush",
+            "act10d5",
+            "camp_r_01",
+            "lt11",
+            "IS#1",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1043_zomsbr": [
+            "main_5",
+            "main_6",
+            "main_7",
+            "main_8",
+            "act14mini",
+            "act1bossrush",
+            "act8mini",
+            "act7mini",
+            "act7d5",
+            "camp_03",
+            "PinchOut",
+            "CCBP#01"
+        ],
+        "enemy_1044_zomstr": [
+            "main_5",
+            "main_6",
+            "main_7",
+            "main_8",
+            "act14mini",
+            "act1bossrush",
+            "act9mini",
+            "act8mini",
+            "act7mini",
+            "lt08",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "PinchOut",
+            "CCBP#01"
+        ],
+        "enemy_1508_faust": [
+            "main_5",
+            "main_6",
+            "act2vmulti",
+            "act1bossrush",
+            "act8mini",
+            "act13d0",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06"
+        ],
+        "enemy_1507_mephi": [
+            "main_5",
+            "act8mini"
+        ],
+        "enemy_1045_hammer": [
+            "main_5",
+            "weekly_9",
+            "act2vmulti",
+            "act1bossrush",
+            "act10mini",
+            "act8mini",
+            "act15d5",
+            "camp_03",
+            "lt14",
+            "lt01",
+            "lt04",
+            "act42d0",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "RA#1"
+        ],
+        "enemy_1043_zomsbr_2": [
+            "main_6",
+            "main_7",
+            "main_5",
+            "main_8",
+            "act1bossrush",
+            "act8mini",
+            "act10d5",
+            "act6d5",
+            "camp_03",
+            "lt01"
+        ],
+        "enemy_1061_zomshd": [
+            "main_6",
+            "main_8",
+            "act14mini",
+            "act8mini",
+            "act7mini",
+            "act7d5",
+            "lt01",
+            "lt03",
+            "IS#1",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1062_rager": [
+            "main_6",
+            "main_7",
+            "main_8",
+            "act2vmulti",
+            "act16mini",
+            "act7mini",
+            "act7d5",
+            "lt08",
+            "lt02",
+            "lt04",
+            "act17d1",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1063_rageth": [
+            "main_6",
+            "main_7",
+            "main_8",
+            "act7d5",
+            "act17d1",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "PinchOut",
+            "CCBP#01",
+            "IS#3",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1062_rager_2": [
+            "main_6",
+            "main_7",
+            "main_8",
+            "act2vmulti",
+            "act16mini",
+            "act1bossrush",
+            "act7mini",
+            "act7d5",
+            "act17d1",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1063_rageth_2": [
+            "main_6",
+            "main_8",
+            "act1bossrush",
+            "act7d5",
+            "act17d1",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "IS#1",
+            "IS#3",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1064_snsbr": [
+            "main_6",
+            "act1bossrush",
+            "act8mini",
+            "act1lock",
+            "act7d5",
+            "act6d5",
+            "camp_r_02",
+            "act17d1",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1065_snwolf": [
+            "main_6",
+            "act13mini",
+            "act1bossrush",
+            "act1lock",
+            "act6d5",
+            "camp_r_02",
+            "IS#1",
+            "IS#2",
+            "IS#3"
+        ],
+        "enemy_1066_snbow": [
+            "main_6",
+            "act16mini",
+            "act1lock",
+            "camp_r_02"
+        ],
+        "enemy_1068_snmage": [
+            "main_6",
+            "act16mini",
+            "act13mini",
+            "act1bossrush",
+            "act1lock",
+            "act6d5",
+            "camp_r_02",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1068_snmage_2": [
+            "main_6",
+            "act13mini",
+            "camp_r_02",
+            "IS#1",
+            "IS#3",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1067_snslime": [
+            "main_6",
+            "act13mini",
+            "act1bossrush",
+            "act1lock",
+            "act6d5",
+            "camp_r_02",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1069_icebrk": [
+            "main_6",
+            "act13mini",
+            "act1bossrush",
+            "act6d5",
+            "camp_r_02",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "IS#1",
+            "IS#2",
+            "IS#3"
+        ],
+        "enemy_1065_snwolf_2": [
+            "main_6",
+            "act8mini",
+            "act7d5"
+        ],
+        "enemy_1070_iced": [
+            "main_6",
+            "act13mini",
+            "act7d5",
+            "camp_r_01",
+            "camp_r_02",
+            "lt11",
+            "IS#1",
+            "IS#2",
+            "IS#4"
+        ],
+        "enemy_1510_frstar2": [
+            "main_6",
+            "act1bossrush",
+            "act8mini",
+            "act1lock"
+        ],
+        "enemy_1510_frstar2_s": [
+            "main_6"
+        ],
+        "enemy_1044_zomstr_2": [
+            "main_7",
+            "main_5",
+            "main_6",
+            "main_8",
+            "act1bossrush",
+            "act9mini",
+            "act1lock",
+            "camp_03",
+            "lt01",
+            "lt02",
+            "RA#2"
+        ],
+        "enemy_1077_sotihd": [
+            "main_7",
+            "act13mini",
+            "camp_r_02",
+            "act17d1",
+            "IS#2",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1078_sotisc": [
+            "main_7",
+            "act15mini",
+            "act10mini",
+            "act8mini",
+            "camp_r_02",
+            "lt08",
+            "lt14",
+            "lt02",
+            "act17d1",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "CC#12",
+            "PinchOut",
+            "CCBP#01",
+            "IS#2",
+            "IS#3"
+        ],
+        "enemy_1079_sotisp": [
+            "main_7",
+            "act10mini",
+            "lt14",
+            "act17d1",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "PinchOut",
+            "CCBP#01",
+            "IS#2",
+            "IS#3"
+        ],
+        "enemy_1077_sotihd_2": [
+            "main_7",
+            "lt02",
+            "IS#4"
+        ],
+        "enemy_1078_sotisc_2": [
+            "main_7",
+            "act1bossrush",
+            "camp_r_02",
+            "lt14",
+            "lt01",
+            "lt03"
+        ],
+        "enemy_1079_sotisp_2": [
+            "main_7",
+            "act1bossrush",
+            "camp_r_02",
+            "IS#2"
+        ],
+        "enemy_1080_sotidp": [
+            "main_7",
+            "act2vmulti",
+            "act14mini",
+            "act10mini",
+            "act8mini",
+            "camp_r_02",
+            "lt08",
+            "lt01",
+            "lt03",
+            "act17d1",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "PinchOut",
+            "CCBP#01",
+            "IS#2",
+            "IS#3",
+            "RA#2"
+        ],
+        "enemy_1084_sotidm_3": [
+            "main_7",
+            "lt08"
+        ],
+        "enemy_1085_sotiwz_3": [
+            "main_7",
+            "lt08"
+        ],
+        "enemy_1084_sotidm_2": [
+            "main_7",
+            "act1bossrush"
+        ],
+        "enemy_1081_sotisd": [
+            "main_7",
+            "main_14",
+            "act2vmulti",
+            "act15mini",
+            "act1bossrush",
+            "act10mini",
+            "camp_r_02",
+            "lt08",
+            "lt09",
+            "lt01",
+            "lt02",
+            "lt03",
+            "act17d1",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "PinchOut",
+            "CCBP#01",
+            "IS#2",
+            "RA#2"
+        ],
+        "enemy_1082_soticn": [
+            "main_7",
+            "act42d0",
+            "CC#12",
+            "IS#3"
+        ],
+        "enemy_1083_sotiab": [
+            "main_7",
+            "camp_r_02",
+            "lt03",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1084_sotidm": [
+            "main_7",
+            "lt13",
+            "CC#12",
+            "IS#2",
+            "IS#4"
+        ],
+        "enemy_1085_sotiwz": [
+            "main_7",
+            "act15mini",
+            "lt08",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1085_sotiwz_2": [
+            "main_7",
+            "act42d0",
+            "IS#3"
+        ],
+        "enemy_1083_sotiab_2": [
+            "main_7",
+            "camp_r_02",
+            "act42d0",
+            "IS#3"
+        ],
+        "enemy_1506_patrt": [
+            "main_7",
+            "main_14",
+            "act1bossrush",
+            "act8mini"
+        ],
+        "enemy_1107_uoffcr": [
+            "main_8",
+            "act2vmulti",
+            "act15mini",
+            "act18d0",
+            "camp_r_03",
+            "lt01",
+            "lt03",
+            "act17d1",
+            "CC#11",
+            "CC#12",
+            "IS#2",
+            "RA#2"
+        ],
+        "enemy_1108_uterer": [
+            "main_8",
+            "act15mini",
+            "act14mini",
+            "act13mini",
+            "act10mini",
+            "act7mini",
+            "act15d5",
+            "camp_r_03",
+            "lt09",
+            "lt12",
+            "IS#4"
+        ],
+        "enemy_3001_upeopl": [
+            "main_8",
+            "act2vmulti",
+            "act15mini",
+            "act14mini",
+            "camp_r_03",
+            "act17d1",
+            "CC#11",
+            "CC#12",
+            "IS#2",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1107_uoffcr_2": [
+            "main_8",
+            "act2bossrush",
+            "act18d0",
+            "camp_r_03",
+            "act17d1",
+            "IS#2",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_3002_ftrtal": [
+            "main_8"
+        ],
+        "enemy_1109_uabone": [
+            "main_8",
+            "act2vmulti",
+            "act15mini",
+            "act14mini",
+            "act7mini",
+            "act15d5",
+            "camp_r_03",
+            "lt05",
+            "lt09",
+            "CC#11",
+            "CC#12",
+            "IS#2"
+        ],
+        "enemy_1111_ucommd": [
+            "main_8",
+            "act2vmulti",
+            "act15mini",
+            "act14mini",
+            "act10mini",
+            "camp_r_03",
+            "lt09",
+            "lt01",
+            "lt03",
+            "act17d1",
+            "CC#11",
+            "CC#12",
+            "IS#2",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1110_uamord": [
+            "main_8",
+            "act14mini",
+            "act18d0",
+            "camp_r_03",
+            "CC#11",
+            "CC#12",
+            "IS#2",
+            "RA#2"
+        ],
+        "enemy_1112_emppnt": [
+            "main_8",
+            "act15mini",
+            "act2bossrush",
+            "camp_r_03",
+            "lt11",
+            "act17d1",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "CC#11",
+            "CC#12",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1112_emppnt_2": [
+            "main_8",
+            "act14mini",
+            "act2bossrush",
+            "act18d0",
+            "act17d1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1114_rgrdmn": [
+            "main_8",
+            "act14mini",
+            "act7mini",
+            "act17d1",
+            "IS#4",
+            "RA#1"
+        ],
+        "enemy_1113_empace": [
+            "main_8",
+            "act15mini",
+            "act14mini",
+            "act2bossrush",
+            "act18d0",
+            "camp_r_03",
+            "lt09",
+            "act17d1",
+            "CC#11",
+            "CC#12",
+            "IS#3",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1115_embald": [
+            "main_8"
+        ],
+        "enemy_1113_empace_2": [
+            "main_8",
+            "act2bossrush",
+            "act18d0",
+            "camp_r_03",
+            "lt09",
+            "lt12",
+            "act42d0",
+            "act17d1",
+            "IS#3",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1514_smephi": [
+            "main_8",
+            "act1bossrush"
+        ],
+        "enemy_3002_ftrtal_s": [
+            "main_8"
+        ],
+        "enemy_1503_talula": [
+            "main_8"
+        ],
+        "enemy_1515_bsnake": [
+            "main_8",
+            "act2bossrush"
+        ],
+        "enemy_1008_ghost": [
+            "main_5",
+            "weekly_7",
+            "weekly_3",
+            "act2vmulti",
+            "act1bossrush",
+            "act1lock",
+            "act15d5",
+            "act13d0",
+            "act10d5",
+            "act9d0",
+            "act6d5",
+            "1stact",
+            "camp_02",
+            "lt01",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "RA#2"
+        ],
+        "enemy_1030_wteeth_2": [
+            "main_5",
+            "weekly_9",
+            "weekly_7",
+            "weekly_1",
+            "act1lock",
+            "camp_03",
+            "IS#1"
+        ],
+        "enemy_1081_sotisd_2": [
+            "main_7",
+            "act8mini",
+            "camp_r_02",
+            "lt06",
+            "lt14",
+            "lt02",
+            "act17d1",
+            "IS#2",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1041_lazerd_2": [
+            "main_5",
+            "act2bossrush",
+            "act13mini",
+            "act7mini",
+            "act10d5",
+            "act6d5",
+            "camp_03",
+            "camp_r_04",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1036_amraoe": [
+            "main_5",
+            "weekly_8",
+            "act1lock",
+            "act15d5",
+            "act6d5",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "IS#1",
+            "IS#2",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1031_mrogue_2": [
+            "main_5",
+            "weekly_9",
+            "weekly_8",
+            "lt02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "IS#1",
+            "IS#2",
+            "IS#3"
+        ],
+        "enemy_1045_hammer_2": [
+            "main_5",
+            "main_6",
+            "main_8",
+            "act4bossrush",
+            "act10mini",
+            "act10d5",
+            "act7d5",
+            "act6d5",
+            "camp_03",
+            "lt07",
+            "lt12",
+            "lt01",
+            "act42d0",
+            "IS#1",
+            "IS#2",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1021_bslime_2": [
+            "main_5",
+            "act20side",
+            "act1bossrush",
+            "act42d0",
+            "act17d1",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1024_mortar_2": [
+            "main_5",
+            "main_6",
+            "weekly_5",
+            "act13mini",
+            "act13d0",
+            "act10d5",
+            "act42d0",
+            "act17d1",
+            "IS#1",
+            "IS#2",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1061_zomshd_2": [
+            "main_6",
+            "main_8",
+            "lt02",
+            "lt03",
+            "PinchOut",
+            "CCBP#01",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1067_snslime_2": [
+            "main_6",
+            "act7d5",
+            "camp_r_02",
+            "IS#3",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1069_icebrk_2": [
+            "main_6",
+            "act13mini",
+            "act7d5",
+            "camp_r_02",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "IS#1",
+            "IS#3",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1026_aghost": [
+            "main_6",
+            "weekly_3",
+            "act28side",
+            "act15d5",
+            "act13d0",
+            "act9d0",
+            "act6d5",
+            "1stact",
+            "camp_02",
+            "lt12",
+            "lt01",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1066_snbow_2": [
+            "main_6",
+            "camp_r_02",
+            "IS#1",
+            "IS#3"
+        ],
+        "enemy_1082_soticn_2": [
+            "main_7",
+            "act1bossrush",
+            "act10mini",
+            "act9mini",
+            "act42d0",
+            "act17d1"
+        ],
+        "enemy_1080_sotidp_2": [
+            "main_7",
+            "act15mini",
+            "act13mini",
+            "act9mini",
+            "camp_r_02",
+            "lt11",
+            "lt14",
+            "act42d0",
+            "IS#2",
+            "IS#4"
+        ],
+        "enemy_1053_norgst_2": [
+            "main_7",
+            "act2vmulti",
+            "act33side",
+            "act28side",
+            "act13mini",
+            "act20side",
+            "act11mini",
+            "act13side",
+            "act7mini",
+            "act18d0",
+            "act13d5",
+            "act5d0",
+            "act3d0",
+            "camp_r_01",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "CC#12"
+        ],
+        "enemy_1110_uamord_2": [
+            "main_8",
+            "act2bossrush",
+            "act18d0",
+            "camp_r_03",
+            "IS#4"
+        ],
+        "enemy_1108_uterer_2": [
+            "main_8",
+            "act2bossrush",
+            "act18d0",
+            "camp_r_03",
+            "lt09",
+            "IS#2",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1111_ucommd_2": [
+            "main_8",
+            "act2bossrush",
+            "act15d5",
+            "camp_r_03",
+            "lt09",
+            "act42d0",
+            "act17d1",
+            "IS#2",
+            "IS#4"
+        ],
+        "enemy_1114_rgrdmn_2": [
+            "main_8",
+            "act1lock",
+            "act42d0",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1166_dusbr": [
+            "main_9",
+            "main_10",
+            "act22side",
+            "act12mini",
+            "camp_r_09",
+            "camp_r_17",
+            "lt07",
+            "lt11",
+            "lt13",
+            "CC#10",
+            "CC#11",
+            "CC#12",
+            "IS#4"
+        ],
+        "enemy_1167_dubow": [
+            "main_9",
+            "main_10",
+            "act22side",
+            "camp_r_09",
+            "lt13",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1165_duhond": [
+            "main_9",
+            "main_10",
+            "act13mini",
+            "camp_r_09",
+            "lt13",
+            "PinchOut",
+            "IS#2",
+            "IS#4"
+        ],
+        "enemy_1170_dushld": [
+            "main_9",
+            "act12mini",
+            "camp_r_09",
+            "camp_r_17",
+            "IS#2",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1168_dumage": [
+            "main_9",
+            "CC#10",
+            "CC#11",
+            "CC#12",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1169_duphlx": [
+            "main_9",
+            "act4bossrush",
+            "act1bossrush",
+            "camp_r_09",
+            "IS#2",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1172_dugago": [
+            "main_9",
+            "CC#10",
+            "CC#11",
+            "CC#12",
+            "CCBP#02",
+            "IS#2",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1171_durokt": [
+            "main_9",
+            "act22side",
+            "camp_r_09",
+            "lt07",
+            "lt04",
+            "IS#2",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1173_duspfr": [
+            "main_9",
+            "act12mini",
+            "camp_r_09",
+            "lt10",
+            "CC#10",
+            "CC#11",
+            "CC#12",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1176_dusocr": [
+            "main_9",
+            "act12mini",
+            "act10mini",
+            "camp_r_09",
+            "CC#10",
+            "CC#11",
+            "CC#12",
+            "CCBP#01",
+            "IS#2",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1177_dufrbl": [
+            "main_9",
+            "act12mini",
+            "act10mini",
+            "camp_r_09",
+            "CC#10",
+            "CC#11",
+            "CC#12",
+            "CCBP#01",
+            "IS#2",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1174_duholy": [
+            "main_9",
+            "act4bossrush",
+            "act12mini",
+            "camp_r_09",
+            "lt07",
+            "CCBP#02",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1175_dushdo": [
+            "main_9",
+            "act12mini",
+            "camp_r_09",
+            "lt05",
+            "lt07",
+            "lt13",
+            "lt03",
+            "CCBP#02",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1523_mandra": [
+            "main_9",
+            "act4bossrush",
+            "act1bossrush",
+            "camp_r_09"
+        ],
+        "enemy_1229_darmy": [
+            "main_10",
+            "main_11",
+            "act14mini",
+            "camp_r_23",
+            "lt06",
+            "lt10",
+            "lt12"
+        ],
+        "enemy_1220_dzoms": [
+            "main_10",
+            "main_13",
+            "act16mini",
+            "act14mini",
+            "act2bossrush",
+            "act12mini",
+            "camp_r_23",
+            "lt06",
+            "lt09",
+            "lt10",
+            "CC#10",
+            "CC#11",
+            "CC#12",
+            "IS#3"
+        ],
+        "enemy_1166_dusbr_2": [
+            "main_10",
+            "main_9",
+            "act22side",
+            "act1bossrush",
+            "camp_r_09",
+            "camp_r_17",
+            "lt07",
+            "lt13",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1167_dubow_2": [
+            "main_10",
+            "main_9",
+            "camp_r_09",
+            "IS#3",
+            "RA#2"
+        ],
+        "enemy_1222_dpvt": [
+            "main_10",
+            "main_13",
+            "act16mini",
+            "act14mini",
+            "act12mini",
+            "camp_r_23",
+            "lt06",
+            "lt09",
+            "IS#3"
+        ],
+        "enemy_1223_dmech": [
+            "main_10",
+            "main_13",
+            "act2bossrush",
+            "CC#10",
+            "CC#11",
+            "CC#12"
+        ],
+        "enemy_1220_dzoms_2": [
+            "main_10",
+            "main_13",
+            "camp_r_23"
+        ],
+        "enemy_1222_dpvt_2": [
+            "main_10",
+            "camp_r_23"
+        ],
+        "enemy_1224_dsuply": [
+            "main_10",
+            "main_13",
+            "act14mini",
+            "act2bossrush",
+            "camp_r_23",
+            "lt06"
+        ],
+        "enemy_1229_darmy_2": [
+            "main_10",
+            "main_11",
+            "main_13",
+            "camp_r_23"
+        ],
+        "enemy_1224_dsuply_2": [
+            "main_10",
+            "act16mini",
+            "camp_r_23",
+            "lt06",
+            "lt10",
+            "IS#3"
+        ],
+        "enemy_1225_dkmage": [
+            "main_10",
+            "main_13",
+            "act2bossrush",
+            "camp_r_23",
+            "lt10"
+        ],
+        "enemy_1221_dzomg": [
+            "main_10",
+            "main_13",
+            "act16mini",
+            "act14mini",
+            "act2bossrush",
+            "camp_r_23",
+            "lt09",
+            "lt10",
+            "CC#10",
+            "CC#11",
+            "CC#12",
+            "IS#3"
+        ],
+        "enemy_1228_dslime": [
+            "main_10",
+            "lt06",
+            "lt07",
+            "RA#2"
+        ],
+        "enemy_1226_dklord": [
+            "main_10",
+            "main_13",
+            "act16mini",
+            "act14mini",
+            "act2bossrush",
+            "camp_r_23",
+            "lt09",
+            "CC#10",
+            "CC#11",
+            "CC#12"
+        ],
+        "enemy_1221_dzomg_2": [
+            "main_10",
+            "main_13",
+            "camp_r_23",
+            "lt09",
+            "act42d0",
+            "IS#3",
+            "RA#2"
+        ],
+        "enemy_1225_dkmage_2": [
+            "main_10",
+            "act42d0",
+            "RA#2"
+        ],
+        "enemy_1226_dklord_2": [
+            "main_10",
+            "camp_r_23",
+            "lt09"
+        ],
+        "enemy_1227_dair": [
+            "main_10",
+            "main_13",
+            "CC#10",
+            "CC#11",
+            "CC#12"
+        ],
+        "enemy_1528_manfri": [
+            "main_10",
+            "act2bossrush",
+            "CC#10",
+            "CC#11",
+            "CC#12"
+        ],
+        "enemy_1223_dmech_2": [
+            "main_10",
+            "camp_r_23"
+        ],
+        "enemy_1275_dwlock": [
+            "main_11",
+            "act14mini",
+            "camp_r_23"
+        ],
+        "enemy_1267_nhpbr": [
+            "main_11",
+            "main_14",
+            "act14mini",
+            "camp_r_19",
+            "lt08",
+            "lt09",
+            "CC#12",
+            "IS#3",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1267_nhpbr_2": [
+            "main_11",
+            "camp_r_19",
+            "lt08",
+            "lt09",
+            "IS#4"
+        ],
+        "enemy_1274_stmram": [
+            "main_11",
+            "act2bossrush",
+            "camp_r_19",
+            "lt08",
+            "lt09",
+            "lt12",
+            "IS#4"
+        ],
+        "enemy_1269_nhfly": [
+            "main_11",
+            "main_12",
+            "main_14",
+            "act2bossrush",
+            "camp_r_19",
+            "lt11",
+            "CCBP#01",
+            "IS#3",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1269_nhfly_2": [
+            "main_11",
+            "main_12",
+            "lt11",
+            "act42d0",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1268_nhnrs": [
+            "main_11",
+            "camp_r_19",
+            "CC#12"
+        ],
+        "enemy_1266_nhapos": [
+            "main_11",
+            "main_14",
+            "camp_r_19",
+            "lt08",
+            "IS#4"
+        ],
+        "enemy_1270_nhstlk": [
+            "main_11",
+            "main_14",
+            "act2vmulti",
+            "camp_r_19",
+            "lt07",
+            "lt08",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1268_nhnrs_2": [
+            "main_11",
+            "camp_r_19"
+        ],
+        "enemy_1275_dwlock_2": [
+            "main_11",
+            "RA#2"
+        ],
+        "enemy_1272_nhtank": [
+            "main_11",
+            "CC#12",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1273_stmgun": [
+            "main_11",
+            "act2vmulti",
+            "lt08",
+            "CC#12",
+            "IS#4"
+        ],
+        "enemy_1273_stmgun_2": [
+            "main_11",
+            "lt08"
+        ],
+        "enemy_1274_stmram_2": [
+            "main_11",
+            "act2vmulti",
+            "act2bossrush",
+            "camp_r_19",
+            "lt09",
+            "lt12"
+        ],
+        "enemy_1271_nhkodo": [
+            "main_11",
+            "act2vmulti",
+            "camp_r_19",
+            "PinchOut",
+            "IS#3",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1270_nhstlk_2": [
+            "main_11",
+            "camp_r_19",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1271_nhkodo_2": [
+            "main_11",
+            "camp_r_19",
+            "act42d0",
+            "RA#2"
+        ],
+        "enemy_1276_telex": [
+            "main_11"
+        ],
+        "enemy_1534_stmkgt2": [
+            "main_11"
+        ],
+        "enemy_1533_stmkgt": [
+            "main_11",
+            "act2vmulti",
+            "act2bossrush"
+        ],
+        "enemy_1272_nhtank_2": [
+            "main_11",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1314_wdnjd": [
+            "main_12",
+            "IS#4"
+        ],
+        "enemy_1313_wdfmr": [
+            "main_12",
+            "act2vmulti",
+            "IS#4"
+        ],
+        "enemy_1071_dftman": [
+            "main_12",
+            "main_14",
+            "act33side",
+            "act13mini",
+            "act1lock",
+            "act17d0",
+            "act13d0",
+            "act10d5",
+            "act9d0",
+            "camp_r_19",
+            "camp_r_23",
+            "lt08",
+            "lt13",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CC#10",
+            "CC#11",
+            "CC#12",
+            "IS#1",
+            "IS#2",
+            "RA#1"
+        ],
+        "enemy_1315_wdyjd": [
+            "main_12",
+            "act2vmulti",
+            "IS#4"
+        ],
+        "enemy_1314_wdnjd_2": [
+            "main_12",
+            "act3bossrush"
+        ],
+        "enemy_1315_wdyjd_2": [
+            "main_12"
+        ],
+        "enemy_1316_wdpjd": [
+            "main_12"
+        ],
+        "enemy_1320_wdrrl": [
+            "main_12",
+            "lt09",
+            "IS#4"
+        ],
+        "enemy_1071_dftman_2": [
+            "main_12",
+            "act33side",
+            "act2bossrush",
+            "act12mini",
+            "act1bossrush",
+            "act10mini",
+            "act1lock",
+            "act9d0",
+            "camp_r_06",
+            "lt08",
+            "lt12",
+            "lt13",
+            "act42d0",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1"
+        ],
+        "enemy_1320_wdrrl_2": [
+            "main_12",
+            "act2vmulti"
+        ],
+        "enemy_1313_wdfmr_2": [
+            "main_12"
+        ],
+        "enemy_1317_wdexg": [
+            "main_12"
+        ],
+        "enemy_1010_demon_2": [
+            "main_12",
+            "weekly_9",
+            "weekly_1",
+            "act2vmulti",
+            "act16mini",
+            "act12mini",
+            "act13d0",
+            "act10d5",
+            "act9d0",
+            "lt02",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1317_wdexg_2": [
+            "main_12"
+        ],
+        "enemy_1316_wdpjd_2": [
+            "main_12"
+        ],
+        "enemy_1318_wdsmgc": [
+            "main_12"
+        ],
+        "enemy_1324_wdsdw": [
+            "main_12"
+        ],
+        "enemy_1322_wdgyht_2": [
+            "main_12",
+            "RA#2"
+        ],
+        "enemy_1322_wdgyht": [
+            "main_12",
+            "act42d0",
+            "RA#2"
+        ],
+        "enemy_1012_dcross_2": [
+            "main_12",
+            "act16mini",
+            "act1lock",
+            "act13d0",
+            "act9d0",
+            "camp_r_06",
+            "IS#1",
+            "IS#3",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1319_wdfmpm": [
+            "main_12",
+            "IS#4"
+        ],
+        "enemy_1319_wdfmpm_2": [
+            "main_12"
+        ],
+        "enemy_1540_wdncr": [
+            "main_12"
+        ],
+        "enemy_1541_wdslms": [
+            "main_12"
+        ],
+        "enemy_1288_duskls": [
+            "main_12",
+            "act22side",
+            "camp_r_17",
+            "lt10",
+            "PinchOut",
+            "CCBP#01",
+            "CCBP#02",
+            "RA#2"
+        ],
+        "enemy_1321_wdarft": [
+            "main_12",
+            "camp_r_19",
+            "lt11",
+            "CCBP#01",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1318_wdsmgc_2": [
+            "main_12",
+            "act3bossrush"
+        ],
+        "enemy_1324_wdsdw_2": [
+            "main_12",
+            "act3bossrush"
+        ],
+        "enemy_1321_wdarft_2": [
+            "main_12",
+            "lt11",
+            "act42d0",
+            "IS#4"
+        ],
+        "enemy_1542_wdslm": [
+            "main_12",
+            "act3bossrush"
+        ],
+        "enemy_1323_wdbshd": [
+            "main_12",
+            "act3bossrush"
+        ],
+        "enemy_1542_wdslm_2": [
+            "main_12",
+            "act3bossrush"
+        ],
+        "enemy_1542_wdslm_3": [
+            "main_12",
+            "act3bossrush"
+        ],
+        "enemy_1542_wdslm_4": [
+            "main_12",
+            "act3bossrush"
+        ],
+        "enemy_1228_dslime_2": [
+            "main_13",
+            "main_10",
+            "camp_r_23"
+        ],
+        "enemy_1362_dfat": [
+            "main_13"
+        ],
+        "enemy_1361_dthrow": [
+            "main_13"
+        ],
+        "enemy_1360_dfello": [
+            "main_13",
+            "main_14",
+            "act2vmulti"
+        ],
+        "enemy_1367_dseed": [
+            "main_13",
+            "main_14",
+            "act2vmulti"
+        ],
+        "enemy_1369_bmbcar1": [
+            "main_13",
+            "act2vmulti"
+        ],
+        "enemy_1370_bmbcar2": [
+            "main_13",
+            "act2vmulti"
+        ],
+        "enemy_1365_spnwiz": [
+            "main_13"
+        ],
+        "enemy_1363_spnshd": [
+            "main_13",
+            "act2vmulti"
+        ],
+        "enemy_1363_spnshd_2": [
+            "main_13",
+            "act2vmulti"
+        ],
+        "enemy_1365_spnwiz_2": [
+            "main_13"
+        ],
+        "enemy_1361_dthrow_2": [
+            "main_13",
+            "camp_r_23"
+        ],
+        "enemy_1364_spnaxe": [
+            "main_13",
+            "act2vmulti"
+        ],
+        "enemy_1366_dcolle": [
+            "main_13"
+        ],
+        "enemy_1364_spnaxe_2": [
+            "main_13",
+            "act2vmulti"
+        ],
+        "enemy_1366_dcolle_2": [
+            "main_13"
+        ],
+        "enemy_1368_spilot": [
+            "main_13"
+        ],
+        "enemy_1547_blord": [
+            "main_13",
+            "main_14"
+        ],
+        "enemy_1547_blord_2": [
+            "main_13",
+            "main_14"
+        ],
+        "enemy_1420_lrmm": [
+            "main_14"
+        ],
+        "enemy_1422_lrsldr": [
+            "main_14"
+        ],
+        "enemy_1422_lrsldr_2": [
+            "main_14"
+        ],
+        "enemy_1421_lrchld": [
+            "main_14"
+        ],
+        "enemy_1423_lrfkkt": [
+            "main_14"
+        ],
+        "enemy_1423_lrfkkt_2": [
+            "main_14"
+        ],
+        "enemy_1426_lrthef": [
+            "main_14"
+        ],
+        "enemy_1426_lrthef_2": [
+            "main_14"
+        ],
+        "enemy_1427_lrnazg": [
+            "main_14"
+        ],
+        "enemy_1424_lrboom": [
+            "main_14"
+        ],
+        "enemy_1425_lrcmra": [
+            "main_14"
+        ],
+        "enemy_1427_lrnazg_2": [
+            "main_14"
+        ],
+        "enemy_1424_lrboom_2": [
+            "main_14"
+        ],
+        "enemy_1555_lrking": [
+            "main_14"
+        ],
+        "enemy_1428_lrsoul": [
+            "main_14"
+        ],
+        "enemy_1429_lrwzrd": [
+            "main_14"
+        ],
+        "enemy_1429_lrwzrd_2": [
+            "main_14"
+        ],
+        "enemy_1430_lrrook": [
+            "main_14"
+        ],
+        "enemy_1431_lrmzrd": [
+            "main_14"
+        ],
+        "enemy_1431_lrmzrd_2": [
+            "main_14"
+        ],
+        "enemy_1430_lrrook_2": [
+            "main_14"
+        ],
+        "enemy_1553_lrdead": [
+            "main_14"
+        ],
+        "enemy_1553_lrdead_2": [
+            "main_14"
+        ],
+        "enemy_1554_lrtsia": [
+            "main_14"
+        ],
+        "enemy_1432_lrccon": [
+            "main_14"
+        ],
+        "enemy_1554_lrtsia_2": [
+            "main_14"
+        ],
+        "enemy_1432_lrccon_2": [
+            "main_14"
+        ],
+        "enemy_3008_lramiy": [
+            "main_14"
+        ],
+        "enemy_3007_lrssia": [
+            "main_14"
+        ],
+        "enemy_1168_dumage_2": [
+            "main_9"
+        ],
+        "enemy_1169_duphlx_2": [
+            "main_9",
+            "act4bossrush",
+            "act16mini",
+            "camp_r_09",
+            "IS#2",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1170_dushld_2": [
+            "main_9",
+            "act4bossrush",
+            "act16mini",
+            "act1bossrush",
+            "camp_r_09",
+            "camp_r_17",
+            "IS#2",
+            "IS#3"
+        ],
+        "enemy_1171_durokt_2": [
+            "main_9",
+            "act22side",
+            "camp_r_09",
+            "lt04",
+            "IS#2",
+            "IS#3"
+        ],
+        "enemy_1176_dusocr_2": [
+            "main_9",
+            "act16mini",
+            "IS#2",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1177_dufrbl_2": [
+            "main_9",
+            "act16mini",
+            "IS#2",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1165_duhond_2": [
+            "main_9",
+            "act16mini",
+            "camp_r_09"
+        ],
+        "enemy_1173_duspfr_2": [
+            "main_9",
+            "act10mini"
+        ],
+        "enemy_1174_duholy_2": [
+            "main_9",
+            "lt05",
+            "lt07",
+            "act42d0",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1172_dugago_2": [
+            "main_9",
+            "act16mini",
+            "act1bossrush",
+            "IS#2",
+            "IS#4"
+        ],
+        "enemy_1175_dushdo_2": [
+            "main_9",
+            "act4bossrush",
+            "lt07",
+            "act42d0",
+            "IS#3",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1227_dair_2": [
+            "main_10",
+            "camp_r_23"
+        ],
+        "enemy_1362_dfat_2": [
+            "main_13",
+            "camp_r_23"
+        ],
+        "enemy_1425_lrcmra_2": [
+            "main_14"
+        ],
+        "enemy_1140_merhd_2": [
+            "weekly_9",
+            "act20side",
+            "act16side",
+            "act10mini",
+            "act13side",
+            "act9mini",
+            "act12side",
+            "act18d0",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1032_katar_2": [
+            "weekly_8",
+            "1stact"
+        ],
+        "enemy_1048_hirman": [
+            "weekly_7",
+            "act2vmulti",
+            "act18d0",
+            "act13d0",
+            "act3d0",
+            "lt13",
+            "lt01",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03"
+        ],
+        "enemy_1025_reveng_2": [
+            "weekly_7",
+            "act13mini",
+            "act10mini",
+            "act7d5",
+            "camp_02",
+            "lt05",
+            "lt02",
+            "lt04",
+            "act42d0",
+            "CC#Beta",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#12",
+            "IS#1",
+            "IS#2",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1018_aoemag_2": [
+            "weekly_5",
+            "weekly_6",
+            "act10d5",
+            "CC#Beta",
+            "CC#00",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "RA#1"
+        ],
+        "enemy_1005_yokai_3": [
+            "weekly_6",
+            "weekly_2",
+            "act13mini",
+            "act13d5",
+            "lt11",
+            "IS#1",
+            "IS#2",
+            "IS#4"
+        ],
+        "enemy_1023_jmage_2": [
+            "weekly_4",
+            "act10d5",
+            "camp_03",
+            "CC#Beta",
+            "CC#00",
+            "CC#01",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1"
+        ],
+        "enemy_1019_jshoot_2": [
+            "weekly_4",
+            "act2vmulti",
+            "act13mini",
+            "act9mini",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1433_dsbasi": [
+            "act34side"
+        ],
+        "enemy_1435_dsflys": [
+            "act34side"
+        ],
+        "enemy_1434_dsshel": [
+            "act34side"
+        ],
+        "enemy_1152_dsurch": [
+            "act34side",
+            "act18d3",
+            "camp_r_05",
+            "lt10",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "CC#12",
+            "IS#3"
+        ],
+        "enemy_1436_dsdivi": [
+            "act34side"
+        ],
+        "enemy_1437_dsfull": [
+            "act34side"
+        ],
+        "enemy_1438_dspred": [
+            "act34side"
+        ],
+        "enemy_1440_dselec": [
+            "act34side"
+        ],
+        "enemy_1441_bounc2": [
+            "act34side"
+        ],
+        "enemy_1439_dslntf": [
+            "act34side"
+        ],
+        "enemy_1556_dsbish": [
+            "act34side"
+        ],
+        "enemy_1230_dsbudr": [
+            "act34side",
+            "act17side",
+            "camp_r_13",
+            "CCBP#02"
+        ],
+        "enemy_1147_dshond": [
+            "act34side",
+            "act14mini",
+            "act17side",
+            "act18d3",
+            "camp_r_05",
+            "camp_r_13",
+            "lt10",
+            "CCBP#02",
+            "IS#3"
+        ],
+        "enemy_1442_dsgun": [
+            "act34side"
+        ],
+        "enemy_1433_dsbasi_2": [
+            "act34side"
+        ],
+        "enemy_1435_dsflys_2": [
+            "act34side"
+        ],
+        "enemy_1437_dsfull_2": [
+            "act34side"
+        ],
+        "enemy_1436_dsdivi_2": [
+            "act34side"
+        ],
+        "enemy_1438_dspred_2": [
+            "act34side"
+        ],
+        "enemy_1440_dselec_2": [
+            "act34side"
+        ],
+        "enemy_1439_dslntf_2": [
+            "act34side"
+        ],
+        "enemy_4007_murino": [
+            "act2vmulti"
+        ],
+        "enemy_4012_mumssi": [
+            "act2vmulti"
+        ],
+        "enemy_4013_mubufn": [
+            "act2vmulti"
+        ],
+        "enemy_4015_musucr": [
+            "act2vmulti"
+        ],
+        "enemy_4021_muredy": [
+            "act2vmulti"
+        ],
+        "enemy_4009_murgby": [
+            "act2vmulti"
+        ],
+        "enemy_4010_mubsbl": [
+            "act2vmulti"
+        ],
+        "enemy_4004_muvltr": [
+            "act2vmulti"
+        ],
+        "enemy_4005_musqrl": [
+            "act2vmulti"
+        ],
+        "enemy_4006_mumole": [
+            "act2vmulti"
+        ],
+        "enemy_4008_mucat": [
+            "act2vmulti"
+        ],
+        "enemy_4011_musqhd": [
+            "act2vmulti"
+        ],
+        "enemy_1240_ltgint": [
+            "act2vmulti",
+            "act18side",
+            "camp_r_16",
+            "lt13"
+        ],
+        "enemy_1239_ltbow": [
+            "act2vmulti",
+            "act18side",
+            "camp_r_16",
+            "lt13"
+        ],
+        "enemy_1238_ltmob": [
+            "act2vmulti",
+            "act18side",
+            "camp_r_16",
+            "lt13"
+        ],
+        "enemy_1243_ltswar": [
+            "act2vmulti",
+            "act18side",
+            "camp_r_16",
+            "lt13",
+            "IS#3"
+        ],
+        "enemy_1243_ltswar_2": [
+            "act2vmulti",
+            "act18side",
+            "camp_r_16",
+            "lt13",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1241_ltmage": [
+            "act2vmulti",
+            "act18side",
+            "camp_r_16"
+        ],
+        "enemy_1240_ltgint_2": [
+            "act2vmulti",
+            "act18side",
+            "camp_r_16",
+            "lt13",
+            "act42d0",
+            "IS#4"
+        ],
+        "enemy_1092_mdgint": [
+            "act2vmulti",
+            "act2bossrush",
+            "act12mini",
+            "act10mini",
+            "act8mini",
+            "act11d0",
+            "camp_r_07",
+            "lt13",
+            "act17d1",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "CCBP#02",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1242_ltsmag_2": [
+            "act2vmulti",
+            "act18side",
+            "camp_r_16",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_4004_muvltr_2": [
+            "act2vmulti"
+        ],
+        "enemy_4005_musqrl_2": [
+            "act2vmulti"
+        ],
+        "enemy_4006_mumole_2": [
+            "act2vmulti"
+        ],
+        "enemy_4007_murino_2": [
+            "act2vmulti"
+        ],
+        "enemy_4008_mucat_2": [
+            "act2vmulti"
+        ],
+        "enemy_1094_ccspm": [
+            "act2vmulti",
+            "act13d0",
+            "act12d0",
+            "lt06",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1095_ccripr": [
+            "act2vmulti",
+            "act16mini",
+            "act8mini",
+            "act13d0",
+            "act12d0",
+            "camp_r_18",
+            "lt09",
+            "lt02",
+            "act42d0",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "IS#2",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1095_ccripr_2": [
+            "act2vmulti",
+            "act3bossrush",
+            "act12d0",
+            "camp_r_18",
+            "lt09",
+            "lt04",
+            "act42d0",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1190_krgbow_2": [
+            "act2vmulti",
+            "act14side"
+        ],
+        "enemy_1047_sagent_2": [
+            "act2vmulti",
+            "act13mini",
+            "act11mini",
+            "act15d5",
+            "act13d0",
+            "act3d0",
+            "camp_r_04",
+            "act42d0",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1103_wdkght": [
+            "act2vmulti",
+            "act10mini",
+            "act13d5",
+            "camp_r_01",
+            "camp_r_10",
+            "lt12",
+            "lt04",
+            "IS#2",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1103_wdkght_2": [
+            "act2vmulti",
+            "act3bossrush",
+            "act12mini",
+            "act10mini",
+            "act9mini",
+            "act15d5",
+            "act13d5",
+            "camp_r_01",
+            "lt05",
+            "lt12",
+            "lt02",
+            "act42d0",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1104_lfkght_2": [
+            "act2vmulti",
+            "act13d5",
+            "camp_r_01",
+            "lt05",
+            "act42d0",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1074_dbskar": [
+            "act2vmulti",
+            "act13mini",
+            "act12mini",
+            "act9d0",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1075_dmgswd": [
+            "act2vmulti",
+            "act13mini",
+            "act12mini",
+            "act10mini",
+            "act9d0",
+            "lt12",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "IS#1",
+            "IS#2",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1151_dslntc": [
+            "act2vmulti",
+            "act18d3",
+            "camp_r_05",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "CC#12"
+        ],
+        "enemy_1151_dslntc_2": [
+            "act2vmulti",
+            "act18d3",
+            "camp_r_05",
+            "IS#3"
+        ],
+        "enemy_1158_divman": [
+            "act2vmulti",
+            "act14mini",
+            "act2bossrush",
+            "act12side",
+            "camp_r_07",
+            "lt07",
+            "CC#11",
+            "CC#12",
+            "IS#3"
+        ],
+        "enemy_1086_ltsodr": [
+            "act2vmulti",
+            "act15mini",
+            "act12mini",
+            "act10mini",
+            "act11d0",
+            "camp_r_07",
+            "lt13",
+            "CCBP#02",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1086_ltsodr_2": [
+            "act2vmulti",
+            "act2bossrush",
+            "act15d5",
+            "act11d0",
+            "camp_r_07",
+            "lt13",
+            "IS#2"
+        ],
+        "enemy_1089_ltlntc": [
+            "act2vmulti",
+            "act15mini",
+            "act10mini",
+            "act15d5",
+            "act11d0",
+            "camp_r_07",
+            "lt13",
+            "CCBP#02",
+            "IS#2",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1091_mdhmmr": [
+            "act2vmulti",
+            "act15mini",
+            "act10mini",
+            "act11d0",
+            "lt13",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1088_ltsmer": [
+            "act2vmulti",
+            "act15mini",
+            "act12mini",
+            "act10mini",
+            "act15d5",
+            "act11d0",
+            "camp_r_07",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1058_traink": [
+            "act2vmulti",
+            "act14mini",
+            "act13mini",
+            "act1lock",
+            "act7mini",
+            "act10d5",
+            "act6d5",
+            "act5d0",
+            "camp_r_04",
+            "camp_r_15",
+            "lt06",
+            "lt07",
+            "lt09",
+            "lt01",
+            "lt02",
+            "lt03",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1249_lysdb": [
+            "act2vmulti",
+            "act16mini",
+            "act25side",
+            "act19side",
+            "camp_r_14",
+            "lt07",
+            "PinchOut",
+            "CCBP#02"
+        ],
+        "enemy_1060_emouse": [
+            "act2vmulti",
+            "act14mini",
+            "act5d0",
+            "lt07",
+            "lt01",
+            "lt03",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "IS#3"
+        ],
+        "enemy_1087_ltwolf": [
+            "act2vmulti",
+            "act13mini",
+            "act12mini",
+            "act11d0",
+            "camp_r_07",
+            "camp_r_16",
+            "CCBP#02",
+            "IS#2"
+        ],
+        "enemy_1090_mdsnpr": [
+            "act2vmulti",
+            "act15mini",
+            "act10mini",
+            "act11d0",
+            "lt13",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "IS#1",
+            "IS#2",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1088_ltsmer_2": [
+            "act2vmulti",
+            "act11d0",
+            "camp_r_07",
+            "lt13",
+            "IS#3"
+        ],
+        "enemy_1089_ltlntc_2": [
+            "act2vmulti",
+            "act2bossrush",
+            "act15d5",
+            "act11d0",
+            "camp_r_07",
+            "IS#2"
+        ],
+        "enemy_1090_mdsnpr_2": [
+            "act2vmulti",
+            "act2bossrush",
+            "act11d0",
+            "lt13",
+            "IS#2"
+        ],
+        "enemy_1092_mdgint_2": [
+            "act2vmulti",
+            "act15mini",
+            "act10mini",
+            "act15d5",
+            "act11d0",
+            "act42d0",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1091_mdhmmr_2": [
+            "act2vmulti",
+            "act15d5",
+            "act11d0",
+            "lt03",
+            "IS#2",
+            "IS#4"
+        ],
+        "enemy_1104_lfkght": [
+            "act2vmulti",
+            "act16mini",
+            "act1bossrush",
+            "act13d5",
+            "camp_r_01",
+            "lt05",
+            "lt03",
+            "act42d0",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CC#08"
+        ],
+        "enemy_1101_plkght": [
+            "act2vmulti",
+            "act16mini",
+            "act12mini",
+            "act8mini",
+            "act13d5",
+            "camp_r_01",
+            "camp_r_10",
+            "lt03",
+            "act42d0",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1"
+        ],
+        "enemy_1102_sdkght_2": [
+            "act2vmulti",
+            "act3bossrush",
+            "act12mini",
+            "act13side",
+            "act15d5",
+            "act13d5",
+            "camp_r_01",
+            "lt05",
+            "lt03",
+            "lt04",
+            "act42d0",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1182_flasrt_3": [
+            "act2vmulti",
+            "act11mini",
+            "act13side"
+        ],
+        "enemy_1183_mlasrt_3": [
+            "act2vmulti",
+            "act12mini",
+            "act11mini",
+            "act13side"
+        ],
+        "enemy_1178_dscorp_2": [
+            "act2vmulti",
+            "act3bossrush",
+            "act13side",
+            "IS#4"
+        ],
+        "enemy_1513_dekght": [
+            "act2vmulti",
+            "act1bossrush",
+            "act8mini",
+            "act13d5",
+            "camp_r_01",
+            "lt04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "RA#2"
+        ],
+        "enemy_1513_dekght_2": [
+            "act2vmulti",
+            "act1bossrush",
+            "act8mini",
+            "act13d5",
+            "camp_r_01",
+            "lt04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "RA#2"
+        ],
+        "enemy_1184_cadkgt_2": [
+            "act2vmulti",
+            "act13side",
+            "IS#3",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1181_napkgt_2": [
+            "act2vmulti",
+            "act13side",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1182_flasrt": [
+            "act2vmulti",
+            "act3bossrush",
+            "act13side",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "IS#4"
+        ],
+        "enemy_1105_tyokai": [
+            "act2vmulti",
+            "act32side",
+            "act1bossrush",
+            "act10mini",
+            "act15d5",
+            "act13d5",
+            "camp_r_01",
+            "lt11"
+        ],
+        "enemy_1524_bldkgt": [
+            "act2vmulti",
+            "act3bossrush",
+            "act13side",
+            "camp_r_10"
+        ],
+        "enemy_1186_bldbld": [
+            "act2vmulti",
+            "act3bossrush",
+            "act13side",
+            "camp_r_10"
+        ],
+        "enemy_1525_blkswb": [
+            "act2vmulti",
+            "act4bossrush",
+            "act14side",
+            "RA#2"
+        ],
+        "enemy_1191_krgrg_2": [
+            "act2vmulti",
+            "act14side",
+            "RA#2"
+        ],
+        "enemy_1193_krgbsk_2": [
+            "act2vmulti",
+            "act4bossrush",
+            "act14side",
+            "IS#2",
+            "RA#2"
+        ],
+        "enemy_1194_krgmtr_2": [
+            "act2vmulti",
+            "act14side"
+        ],
+        "enemy_4012_mumssi_2": [
+            "act2vmulti"
+        ],
+        "enemy_4013_mubufn_2": [
+            "act2vmulti"
+        ],
+        "enemy_4014_mugnfu": [
+            "act2vmulti"
+        ],
+        "enemy_4014_mugnfu_2": [
+            "act2vmulti"
+        ],
+        "enemy_4016_mubuln": [
+            "act2vmulti"
+        ],
+        "enemy_4017_muinbl": [
+            "act2vmulti"
+        ],
+        "enemy_4018_muboom": [
+            "act2vmulti"
+        ],
+        "enemy_4019_mugold": [
+            "act2vmulti"
+        ],
+        "enemy_4020_muboun": [
+            "act2vmulti"
+        ],
+        "enemy_1309_mhboar": [
+            "act2vmulti",
+            "act16mini",
+            "act24side",
+            "RA#2"
+        ],
+        "enemy_1074_dbskar_2": [
+            "act2vmulti",
+            "act9d0",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1209_sfden_2": [
+            "act2vmulti",
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1210_msfden_2": [
+            "act2vmulti",
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_4009_murgby_2": [
+            "act2vmulti"
+        ],
+        "enemy_4010_mubsbl_2": [
+            "act2vmulti"
+        ],
+        "enemy_1100_scorpn": [
+            "act2vmulti",
+            "act16mini",
+            "act12mini",
+            "act15d5",
+            "act13d5",
+            "camp_r_01",
+            "camp_r_10",
+            "lt05",
+            "lt06",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "IS#2",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1100_scorpn_2": [
+            "act2vmulti",
+            "act16mini",
+            "act12mini",
+            "act1bossrush",
+            "act10mini",
+            "act15d5",
+            "act13d5",
+            "camp_r_01",
+            "lt05",
+            "lt02",
+            "lt04",
+            "act42d0",
+            "IS#4"
+        ],
+        "enemy_1246_aslime": [
+            "act2vmulti",
+            "act15mini",
+            "act13mini",
+            "act18side",
+            "camp_r_16",
+            "RA#2"
+        ],
+        "enemy_1246_aslime_2": [
+            "act2vmulti",
+            "act18side",
+            "camp_r_16",
+            "lt06",
+            "RA#2"
+        ],
+        "enemy_1099_nbkght": [
+            "act2vmulti",
+            "act16mini",
+            "act11mini",
+            "act10mini",
+            "act13side",
+            "act13d5",
+            "camp_r_01",
+            "camp_r_10",
+            "lt05",
+            "lt12",
+            "lt04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "IS#2",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1099_nbkght_2": [
+            "act2vmulti",
+            "act12mini",
+            "act1bossrush",
+            "act13side",
+            "act15d5",
+            "act13d5",
+            "camp_r_01",
+            "lt05",
+            "lt12",
+            "lt02",
+            "lt03",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1102_sdkght": [
+            "act2vmulti",
+            "act16mini",
+            "act15mini",
+            "act12mini",
+            "act13side",
+            "act13d5",
+            "camp_r_01",
+            "lt05",
+            "lt14",
+            "lt04",
+            "act42d0",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "RA#1"
+        ],
+        "enemy_1103_wdkght_3": [
+            "act2vmulti",
+            "act9mini",
+            "act15d5",
+            "act13d5",
+            "lt05",
+            "lt02",
+            "lt04",
+            "IS#2"
+        ],
+        "enemy_1104_lfkght_3": [
+            "act2vmulti",
+            "act9mini",
+            "act13d5",
+            "camp_r_10",
+            "lt05",
+            "lt04",
+            "IS#2",
+            "IS#4"
+        ],
+        "enemy_1101_plkght_3": [
+            "act2vmulti",
+            "act15d5",
+            "act13d5",
+            "lt05",
+            "lt04",
+            "IS#2"
+        ],
+        "enemy_1101_plkght_2": [
+            "act2vmulti",
+            "act12mini",
+            "act13side",
+            "act9mini",
+            "act15d5",
+            "act13d5",
+            "camp_r_01",
+            "lt03",
+            "act42d0",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1184_cadkgt_3": [
+            "act2vmulti",
+            "act12mini",
+            "act13side",
+            "lt04",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "IS#2"
+        ],
+        "enemy_1001_bigbo": [
+            "act2vmulti",
+            "act1bossrush",
+            "act6d5",
+            "1stact",
+            "lttr",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "IS#1",
+            "IS#2",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1512_mcmstr": [
+            "act2vmulti",
+            "act3bossrush",
+            "act1bossrush",
+            "act8mini",
+            "act12d0",
+            "act42d0",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1106_byokai": [
+            "act2vmulti",
+            "act13side",
+            "act8mini",
+            "act13d5",
+            "lt11",
+            "lt04",
+            "IS#4",
+            "RA#1"
+        ],
+        "enemy_1410_mmelee": [
+            "act33side"
+        ],
+        "enemy_1411_mmrnge": [
+            "act33side"
+        ],
+        "enemy_1412_mmjump": [
+            "act33side"
+        ],
+        "enemy_1413_mmstck": [
+            "act33side"
+        ],
+        "enemy_1414_mmleak": [
+            "act33side"
+        ],
+        "enemy_1415_mmkabi": [
+            "act33side"
+        ],
+        "enemy_1416_mmfarm": [
+            "act33side"
+        ],
+        "enemy_1417_mmdudu": [
+            "act33side"
+        ],
+        "enemy_1418_mmkonm": [
+            "act33side"
+        ],
+        "enemy_1419_mmcike": [
+            "act33side"
+        ],
+        "enemy_3006_tersia": [
+            "act33side"
+        ],
+        "enemy_1552_mmamiy": [
+            "act33side"
+        ],
+        "enemy_1410_mmelee_2": [
+            "act33side"
+        ],
+        "enemy_1415_mmkabi_2": [
+            "act33side"
+        ],
+        "enemy_1411_mmrnge_2": [
+            "act33side"
+        ],
+        "enemy_1412_mmjump_2": [
+            "act33side"
+        ],
+        "enemy_1416_mmfarm_2": [
+            "act33side"
+        ],
+        "enemy_1413_mmstck_2": [
+            "act33side"
+        ],
+        "enemy_1417_mmdudu_2": [
+            "act33side"
+        ],
+        "enemy_1414_mmleak_2": [
+            "act33side"
+        ],
+        "enemy_1418_mmkonm_2": [
+            "act33side"
+        ],
+        "enemy_1401_pogpro": [
+            "act32side"
+        ],
+        "enemy_1403_gunsho": [
+            "act32side"
+        ],
+        "enemy_1405_boomer": [
+            "act32side"
+        ],
+        "enemy_1407_hummbd": [
+            "act32side"
+        ],
+        "enemy_1402_tgshd": [
+            "act32side"
+        ],
+        "enemy_1404_msnip": [
+            "act32side"
+        ],
+        "enemy_1406_chghmr": [
+            "act32side"
+        ],
+        "enemy_1408_scotcn": [
+            "act32side"
+        ],
+        "enemy_1409_bdguad_3": [
+            "act32side"
+        ],
+        "enemy_1551_bolicp": [
+            "act32side"
+        ],
+        "enemy_1401_pogpro_2": [
+            "act32side"
+        ],
+        "enemy_1403_gunsho_2": [
+            "act32side"
+        ],
+        "enemy_1406_chghmr_2": [
+            "act32side"
+        ],
+        "enemy_1404_msnip_2": [
+            "act32side"
+        ],
+        "enemy_1402_tgshd_2": [
+            "act32side"
+        ],
+        "enemy_1405_boomer_2": [
+            "act32side"
+        ],
+        "enemy_1409_bdguad_2": [
+            "act32side"
+        ],
+        "enemy_1408_scotcn_2": [
+            "act32side"
+        ],
+        "enemy_1407_hummbd_2": [
+            "act32side"
+        ],
+        "enemy_1409_bdguad": [
+            "act32side"
+        ],
+        "enemy_1187_krghd_2": [
+            "act4bossrush",
+            "act30side",
+            "act14side"
+        ],
+        "enemy_1189_krgaxe_2": [
+            "act4bossrush",
+            "act14side"
+        ],
+        "enemy_1353_esabr_2": [
+            "act4bossrush",
+            "act28side"
+        ],
+        "enemy_1359_ekulsr_2": [
+            "act4bossrush",
+            "act28side"
+        ],
+        "enemy_1356_egun_2": [
+            "act4bossrush",
+            "act28side"
+        ],
+        "enemy_1358_esheld_2": [
+            "act4bossrush",
+            "act28side"
+        ],
+        "enemy_1546_cliff": [
+            "act4bossrush",
+            "act28side"
+        ],
+        "enemy_1545_shpkg": [
+            "act4bossrush",
+            "act27side",
+            "camp_r_21"
+        ],
+        "enemy_1344_ddlamb_2": [
+            "act4bossrush",
+            "act27side"
+        ],
+        "enemy_1346_ynshp_2": [
+            "act4bossrush",
+            "act27side"
+        ],
+        "enemy_1350_mgcshp_2": [
+            "act4bossrush",
+            "act27side"
+        ],
+        "enemy_1050_lslime": [
+            "act4bossrush",
+            "act1bossrush",
+            "act13d0",
+            "act3d0",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1352_eslime_2": [
+            "act4bossrush",
+            "act28side",
+            "RA#2"
+        ],
+        "enemy_1354_eghost_2": [
+            "act4bossrush",
+            "act28side"
+        ],
+        "enemy_1509_mousek": [
+            "act4bossrush",
+            "act1bossrush",
+            "act15d5",
+            "act5d0",
+            "camp_r_15",
+            "IS#2",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1059_buster_2": [
+            "act4bossrush",
+            "act16mini",
+            "act11mini",
+            "act5d0",
+            "camp_r_04",
+            "camp_r_15",
+            "lt08",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1058_traink_2": [
+            "act4bossrush",
+            "act1bossrush",
+            "act11mini",
+            "act10mini",
+            "act1lock",
+            "act15d5",
+            "act5d0",
+            "camp_r_04",
+            "camp_r_15",
+            "lt06",
+            "lt07",
+            "lt01",
+            "lt03",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1057_gansho_2": [
+            "act4bossrush",
+            "act1bossrush",
+            "act5d0",
+            "camp_r_04",
+            "camp_r_15",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05"
+        ],
+        "enemy_1055_ganman_2": [
+            "act4bossrush",
+            "act1bossrush",
+            "act10mini",
+            "act5d0",
+            "camp_r_04",
+            "camp_r_08",
+            "lt01",
+            "lt03",
+            "act42d0",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "IS#3"
+        ],
+        "enemy_1060_emouse_2": [
+            "act4bossrush",
+            "act1bossrush",
+            "act10mini",
+            "act15d5",
+            "act5d0",
+            "lt01",
+            "lt02",
+            "lt03",
+            "IS#2",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1293_duswrd_3": [
+            "act4bossrush",
+            "act22side",
+            "camp_r_17"
+        ],
+        "enemy_1536_ncrmcr": [
+            "act4bossrush",
+            "act22side",
+            "camp_r_17"
+        ],
+        "enemy_1286_dumcy_2": [
+            "act4bossrush",
+            "act22side",
+            "CCBP#01"
+        ],
+        "enemy_1288_duskls_2": [
+            "act4bossrush",
+            "act22side",
+            "camp_r_17",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1292_duskld_2": [
+            "act4bossrush",
+            "act22side",
+            "camp_r_17",
+            "IS#4"
+        ],
+        "enemy_1289_dubmb_2": [
+            "act4bossrush",
+            "act16mini",
+            "act22side",
+            "camp_r_17",
+            "IS#4"
+        ],
+        "enemy_1290_duflm_2": [
+            "act4bossrush",
+            "act22side",
+            "camp_r_17"
+        ],
+        "enemy_1294_duchns_2": [
+            "act4bossrush",
+            "act22side"
+        ],
+        "enemy_1526_sfsui": [
+            "act4bossrush",
+            "act15side"
+        ],
+        "enemy_1211_msfsui": [
+            "act4bossrush",
+            "act15side"
+        ],
+        "enemy_1195_sfyin": [
+            "act4bossrush",
+            "act14mini",
+            "act11mini",
+            "act15side",
+            "camp_r_11",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "CC#12"
+        ],
+        "enemy_1197_sfshu": [
+            "act4bossrush",
+            "act14mini",
+            "act11mini",
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1198_msfshu": [
+            "act4bossrush",
+            "act14mini",
+            "act11mini",
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1196_msfyin": [
+            "act4bossrush",
+            "act14mini",
+            "act11mini",
+            "act15side",
+            "camp_r_11",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "CC#12"
+        ],
+        "enemy_1122_sphond_2": [
+            "act4bossrush",
+            "act14mini",
+            "act13mini",
+            "act9mini",
+            "act16d5"
+        ],
+        "enemy_1129_spklr_2": [
+            "act4bossrush",
+            "act13mini",
+            "act9mini",
+            "act16d5"
+        ],
+        "enemy_1517_xi": [
+            "act4bossrush",
+            "act16d5",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "CC#10"
+        ],
+        "enemy_1124_spbow_2": [
+            "act4bossrush",
+            "act9mini",
+            "act16d5"
+        ],
+        "enemy_1128_spmage_2": [
+            "act4bossrush",
+            "act16d5"
+        ],
+        "enemy_1125_spshld_2": [
+            "act4bossrush",
+            "act14mini",
+            "act13mini",
+            "act16d5"
+        ],
+        "enemy_1295_ymph_2": [
+            "act4bossrush",
+            "act23side",
+            "camp_r_20",
+            "CCBP#01",
+            "CCBP#02",
+            "IS#4"
+        ],
+        "enemy_1299_ymkilr_2": [
+            "act4bossrush",
+            "act23side",
+            "camp_r_20",
+            "CCBP#01",
+            "CCBP#02",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1538_ymmons": [
+            "act4bossrush",
+            "act23side"
+        ],
+        "enemy_1538_ymmons_2": [
+            "act4bossrush",
+            "act23side"
+        ],
+        "enemy_1538_ymmons_3": [
+            "act4bossrush",
+            "act23side"
+        ],
+        "enemy_1298_ymmonk_2": [
+            "act4bossrush",
+            "act23side",
+            "camp_r_20",
+            "CCBP#01",
+            "CCBP#02",
+            "RA#2"
+        ],
+        "enemy_1296_ymknif_2": [
+            "act4bossrush",
+            "act23side",
+            "camp_r_20",
+            "CCBP#01",
+            "CCBP#02"
+        ],
+        "enemy_1297_ymflag_2": [
+            "act4bossrush",
+            "act23side",
+            "camp_r_20"
+        ],
+        "enemy_1312_ymillu": [
+            "act4bossrush",
+            "act23side"
+        ],
+        "enemy_1390_dhsbr": [
+            "act31side"
+        ],
+        "enemy_1395_dhxts": [
+            "act31side"
+        ],
+        "enemy_1400_dhtbgj": [
+            "act31side"
+        ],
+        "enemy_1398_dhdcr": [
+            "act31side"
+        ],
+        "enemy_1399_dhtb": [
+            "act31side"
+        ],
+        "enemy_1391_dhbow": [
+            "act31side"
+        ],
+        "enemy_1392_dhshld": [
+            "act31side"
+        ],
+        "enemy_1393_dhele": [
+            "act31side"
+        ],
+        "enemy_1396_dhdts": [
+            "act31side"
+        ],
+        "enemy_1397_dhtsxt": [
+            "act31side"
+        ],
+        "enemy_1394_dhzts": [
+            "act31side"
+        ],
+        "enemy_1550_dhnzzh": [
+            "act31side"
+        ],
+        "enemy_1390_dhsbr_2": [
+            "act31side"
+        ],
+        "enemy_1391_dhbow_2": [
+            "act31side"
+        ],
+        "enemy_1395_dhxts_2": [
+            "act31side"
+        ],
+        "enemy_1396_dhdts_2": [
+            "act31side"
+        ],
+        "enemy_1397_dhtsxt_2": [
+            "act31side"
+        ],
+        "enemy_1393_dhele_2": [
+            "act31side"
+        ],
+        "enemy_1392_dhshld_2": [
+            "act31side"
+        ],
+        "enemy_1399_dhtb_2": [
+            "act31side"
+        ],
+        "enemy_1400_dhtbgj_2": [
+            "act31side"
+        ],
+        "enemy_1398_dhdcr_2": [
+            "act31side"
+        ],
+        "enemy_1394_dhzts_2": [
+            "act31side"
+        ],
+        "enemy_1325_cbgpro": [
+            "act16mini",
+            "act25side",
+            "camp_r_22",
+            "PinchOut",
+            "CCBP#02",
+            "IS#4"
+        ],
+        "enemy_1328_cbjedi": [
+            "act16mini",
+            "act25side",
+            "camp_r_22",
+            "IS#4"
+        ],
+        "enemy_1093_ccsbr": [
+            "act16mini",
+            "act8mini",
+            "act13d0",
+            "act12d0",
+            "camp_r_18",
+            "lt06",
+            "lt09",
+            "act42d0",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1126_spslme": [
+            "act16mini",
+            "act16d5",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "CC#10"
+        ],
+        "enemy_1123_spsbr": [
+            "act16mini",
+            "act13mini",
+            "act10mini",
+            "act15side",
+            "act16d5",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "CC#12"
+        ],
+        "enemy_1125_spshld": [
+            "act16mini",
+            "act16d5"
+        ],
+        "enemy_1128_spmage": [
+            "act16mini",
+            "act16d5",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "CC#10"
+        ],
+        "enemy_1307_mhrhcr": [
+            "act16mini",
+            "act24side",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1309_mhboar_2": [
+            "act16mini",
+            "act24side",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1302_ymtro_2": [
+            "act16mini",
+            "act23side",
+            "camp_r_20"
+        ],
+        "enemy_1301_ymcnon": [
+            "act16mini",
+            "act23side",
+            "camp_r_20"
+        ],
+        "enemy_1335_bldrat_2": [
+            "act16mini",
+            "act26side",
+            "IS#4"
+        ],
+        "enemy_1381_winman": [
+            "act30side"
+        ],
+        "enemy_1382_winbal": [
+            "act30side"
+        ],
+        "enemy_1187_krghd": [
+            "act30side",
+            "act15mini",
+            "act13mini",
+            "act11mini",
+            "act10mini",
+            "act14side",
+            "IS#2",
+            "IS#3"
+        ],
+        "enemy_1389_winbab": [
+            "act30side"
+        ],
+        "enemy_1383_windog": [
+            "act30side"
+        ],
+        "enemy_1386_winmag": [
+            "act30side"
+        ],
+        "enemy_1388_wingnt": [
+            "act30side"
+        ],
+        "enemy_1384_winfrz": [
+            "act30side"
+        ],
+        "enemy_1385_winbom": [
+            "act30side"
+        ],
+        "enemy_1387_winshd": [
+            "act30side"
+        ],
+        "enemy_1549_windoc": [
+            "act30side"
+        ],
+        "enemy_1382_winbal_2": [
+            "act30side"
+        ],
+        "enemy_1381_winman_2": [
+            "act30side"
+        ],
+        "enemy_1383_windog_2": [
+            "act30side"
+        ],
+        "enemy_1387_winshd_2": [
+            "act30side"
+        ],
+        "enemy_1384_winfrz_2": [
+            "act30side"
+        ],
+        "enemy_1388_wingnt_2": [
+            "act30side"
+        ],
+        "enemy_1385_winbom_2": [
+            "act30side"
+        ],
+        "enemy_1386_winmag_2": [
+            "act30side"
+        ],
+        "enemy_1389_winbab_2": [
+            "act30side"
+        ],
+        "enemy_1371_ltnflu": [
+            "act29side"
+        ],
+        "enemy_1372_ltntpt": [
+            "act29side"
+        ],
+        "enemy_1375_ltnclr": [
+            "act29side"
+        ],
+        "enemy_1373_ltnhor": [
+            "act29side"
+        ],
+        "enemy_1374_ltnhap": [
+            "act29side"
+        ],
+        "enemy_1376_ltndru": [
+            "act29side"
+        ],
+        "enemy_1378_ltnmst": [
+            "act29side"
+        ],
+        "enemy_1377_ltnclo": [
+            "act29side"
+        ],
+        "enemy_1379_ltncdt": [
+            "act29side"
+        ],
+        "enemy_1548_ltniak": [
+            "act29side"
+        ],
+        "enemy_1380_dthmak": [
+            "act29side"
+        ],
+        "enemy_1376_ltndru_2": [
+            "act29side"
+        ],
+        "enemy_1372_ltntpt_2": [
+            "act29side"
+        ],
+        "enemy_1371_ltnflu_2": [
+            "act29side"
+        ],
+        "enemy_1373_ltnhor_2": [
+            "act29side"
+        ],
+        "enemy_1379_ltncdt_2": [
+            "act29side"
+        ],
+        "enemy_1377_ltnclo_2": [
+            "act29side"
+        ],
+        "enemy_1375_ltnclr_2": [
+            "act29side"
+        ],
+        "enemy_1374_ltnhap_2": [
+            "act29side"
+        ],
+        "enemy_1378_ltnmst_2": [
+            "act29side"
+        ],
+        "enemy_1353_esabr": [
+            "act28side",
+            "lt12"
+        ],
+        "enemy_1355_mrfly": [
+            "act28side",
+            "lt11",
+            "lt13"
+        ],
+        "enemy_1352_eslime": [
+            "act28side",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1358_esheld": [
+            "act28side",
+            "lt12"
+        ],
+        "enemy_1354_eghost": [
+            "act28side",
+            "lt12"
+        ],
+        "enemy_1356_egun": [
+            "act28side",
+            "IS#4"
+        ],
+        "enemy_1357_erob": [
+            "act28side",
+            "lt12",
+            "IS#4"
+        ],
+        "enemy_1359_ekulsr": [
+            "act28side"
+        ],
+        "enemy_1355_mrfly_2": [
+            "act28side",
+            "IS#4"
+        ],
+        "enemy_1357_erob_2": [
+            "act28side"
+        ],
+        "enemy_1164_bmbmot_3": [
+            "act3bossrush",
+            "act2bossrush",
+            "act12side"
+        ],
+        "enemy_1522_captan": [
+            "act3bossrush",
+            "act2bossrush",
+            "act12side"
+        ],
+        "enemy_1158_divman_2": [
+            "act3bossrush",
+            "act11mini",
+            "act12side",
+            "camp_r_07",
+            "lt07",
+            "RA#2"
+        ],
+        "enemy_1159_swfmob_2": [
+            "act3bossrush",
+            "act11mini",
+            "act12side",
+            "lt05",
+            "lt14",
+            "CC#11",
+            "CC#12",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1160_hvyslr": [
+            "act3bossrush",
+            "act2bossrush",
+            "act12side",
+            "camp_r_07",
+            "lt05",
+            "lt07",
+            "lt14",
+            "lt01",
+            "CC#11",
+            "CC#12",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1163_hvymot": [
+            "act3bossrush",
+            "act2bossrush",
+            "act12side",
+            "camp_r_07",
+            "lt05",
+            "lt07",
+            "lt14",
+            "lt01",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1164_bmbmot": [
+            "act3bossrush",
+            "act12side",
+            "lt10",
+            "lt14",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1093_ccsbr_2": [
+            "act3bossrush",
+            "act1bossrush",
+            "act13d0",
+            "act12d0",
+            "camp_r_18",
+            "lt06",
+            "act42d0",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1185_nmekgt_2": [
+            "act3bossrush",
+            "act15mini",
+            "act13side",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "IS#4"
+        ],
+        "enemy_1185_nmekgt_3": [
+            "act3bossrush",
+            "act13side",
+            "lt04",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "IS#4"
+        ],
+        "enemy_1521_dslily": [
+            "act3bossrush",
+            "act18d3"
+        ],
+        "enemy_1154_dsmant": [
+            "act3bossrush",
+            "act18d3",
+            "camp_r_05",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "CC#12"
+        ],
+        "enemy_1529_dsdevr": [
+            "act3bossrush",
+            "act17side"
+        ],
+        "enemy_1529_dsdevr_2": [
+            "act3bossrush",
+            "act17side"
+        ],
+        "enemy_1147_dshond_2": [
+            "act3bossrush",
+            "act17side",
+            "act18d3",
+            "camp_r_05",
+            "camp_r_13",
+            "IS#3"
+        ],
+        "enemy_1148_dssbr_2": [
+            "act3bossrush",
+            "act17side",
+            "act18d3",
+            "camp_r_05",
+            "IS#3"
+        ],
+        "enemy_1152_dsurch_2": [
+            "act3bossrush",
+            "act18d3",
+            "camp_r_05"
+        ],
+        "enemy_1230_dsbudr_2": [
+            "act3bossrush",
+            "act17side",
+            "lt10"
+        ],
+        "enemy_1231_dsrunr_2": [
+            "act3bossrush",
+            "act17side",
+            "camp_r_13"
+        ],
+        "enemy_1231_dsrunr_3": [
+            "act3bossrush",
+            "act17side",
+            "IS#3"
+        ],
+        "enemy_1231_dsrunr_4": [
+            "act3bossrush",
+            "act17side"
+        ],
+        "enemy_1233_dsshtr_2": [
+            "act3bossrush",
+            "act17side",
+            "IS#3"
+        ],
+        "enemy_1233_dsshtr_3": [
+            "act3bossrush",
+            "act17side",
+            "IS#3"
+        ],
+        "enemy_1233_dsshtr_4": [
+            "act3bossrush",
+            "act17side"
+        ],
+        "enemy_1234_dsubrl_2": [
+            "act3bossrush",
+            "act17side",
+            "IS#3"
+        ],
+        "enemy_1234_dsubrl_3": [
+            "act3bossrush",
+            "act17side"
+        ],
+        "enemy_1234_dsubrl_4": [
+            "act3bossrush",
+            "act17side"
+        ],
+        "enemy_1235_dsbskr_2": [
+            "act3bossrush",
+            "act17side"
+        ],
+        "enemy_1235_dsbskr_3": [
+            "act3bossrush",
+            "act17side"
+        ],
+        "enemy_1235_dsbskr_4": [
+            "act3bossrush",
+            "act17side"
+        ],
+        "enemy_1284_sgprst": [
+            "act3bossrush",
+            "act21side",
+            "IS#3"
+        ],
+        "enemy_1285_sgwlf": [
+            "act3bossrush",
+            "IS#3"
+        ],
+        "enemy_1527_martyr": [
+            "act3bossrush",
+            "act15mini",
+            "act2bossrush",
+            "act16side"
+        ],
+        "enemy_1535_wlfmster": [
+            "act3bossrush",
+            "act21side",
+            "RA#2"
+        ],
+        "enemy_1283_sgkill": [
+            "act3bossrush",
+            "act21side",
+            "RA#2"
+        ],
+        "enemy_1277_sgman_2": [
+            "act3bossrush",
+            "act21side",
+            "IS#4"
+        ],
+        "enemy_1279_sgbdg_2": [
+            "act3bossrush",
+            "act21side",
+            "IS#4"
+        ],
+        "enemy_1212_mtrfol_2": [
+            "act3bossrush",
+            "act2bossrush",
+            "act16side",
+            "camp_r_12"
+        ],
+        "enemy_1217_rescar_2": [
+            "act3bossrush",
+            "act16side",
+            "camp_r_12"
+        ],
+        "enemy_1218_bomscr_2": [
+            "act3bossrush",
+            "act16side",
+            "camp_r_12"
+        ],
+        "enemy_1344_ddlamb": [
+            "act27side",
+            "camp_r_21"
+        ],
+        "enemy_1345_tplamb": [
+            "act27side",
+            "camp_r_21"
+        ],
+        "enemy_1346_ynshp": [
+            "act27side",
+            "camp_r_21"
+        ],
+        "enemy_1347_fyshp": [
+            "act27side",
+            "camp_r_21"
+        ],
+        "enemy_1349_rckshp": [
+            "act27side",
+            "camp_r_21"
+        ],
+        "enemy_1351_yhhshp": [
+            "act27side",
+            "camp_r_21"
+        ],
+        "enemy_1348_rllamb": [
+            "act27side",
+            "camp_r_21"
+        ],
+        "enemy_1350_mgcshp": [
+            "act27side",
+            "camp_r_21"
+        ],
+        "enemy_1345_tplamb_2": [
+            "act27side"
+        ],
+        "enemy_1348_rllamb_2": [
+            "act27side"
+        ],
+        "enemy_1347_fyshp_2": [
+            "act27side"
+        ],
+        "enemy_1349_rckshp_2": [
+            "act27side"
+        ],
+        "enemy_1212_mtrfol": [
+            "act15mini",
+            "act16side",
+            "camp_r_12",
+            "lt03",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1215_ptrarc": [
+            "act15mini",
+            "act12mini",
+            "act16side",
+            "camp_r_12",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1216_cansld": [
+            "act15mini",
+            "act12mini",
+            "act16side",
+            "camp_r_12",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1214_mtrmgc": [
+            "act15mini",
+            "act12mini",
+            "act16side",
+            "camp_r_12"
+        ],
+        "enemy_1178_dscorp": [
+            "act15mini",
+            "act12mini",
+            "act11mini",
+            "act13side",
+            "camp_r_10",
+            "lt04",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11"
+        ],
+        "enemy_1179_aruarw": [
+            "act15mini",
+            "act12mini",
+            "act13side",
+            "camp_r_10",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11"
+        ],
+        "enemy_1180_aruass": [
+            "act15mini",
+            "act11mini",
+            "act13side",
+            "camp_r_10",
+            "lt04",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11"
+        ],
+        "enemy_1181_napkgt": [
+            "act15mini",
+            "act13side",
+            "lt04",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11"
+        ],
+        "enemy_1189_krgaxe": [
+            "act15mini",
+            "act11mini",
+            "act10mini",
+            "act14side",
+            "IS#2"
+        ],
+        "enemy_1193_krgbsk": [
+            "act15mini",
+            "act14side"
+        ],
+        "enemy_1191_krgrg": [
+            "act15mini",
+            "act14side",
+            "IS#2"
+        ],
+        "enemy_1182_flasrt_2": [
+            "act15mini",
+            "act13side",
+            "PinchOut",
+            "CCBP#01"
+        ],
+        "enemy_1217_rescar": [
+            "act15mini",
+            "act16side",
+            "camp_r_12"
+        ],
+        "enemy_1213_mtrsnp": [
+            "act15mini",
+            "act12mini",
+            "act16side",
+            "camp_r_12",
+            "lt03"
+        ],
+        "enemy_1218_bomscr": [
+            "act15mini",
+            "act16side",
+            "camp_r_12"
+        ],
+        "enemy_1335_bldrat": [
+            "act26side",
+            "RA#2"
+        ],
+        "enemy_3005_lpeopl": [
+            "act26side"
+        ],
+        "enemy_1336_bldbat": [
+            "act26side",
+            "RA#2"
+        ],
+        "enemy_1338_bhrjst": [
+            "act26side",
+            "RA#2"
+        ],
+        "enemy_1337_bhrknf": [
+            "act26side",
+            "CCBP#02",
+            "RA#2"
+        ],
+        "enemy_1343_ltrock": [
+            "act26side"
+        ],
+        "enemy_1339_bhrgrd": [
+            "act26side",
+            "RA#2"
+        ],
+        "enemy_1340_bthtbw": [
+            "act26side",
+            "RA#2"
+        ],
+        "enemy_1342_frtuna": [
+            "act26side"
+        ],
+        "enemy_1341_bthtms": [
+            "act26side",
+            "RA#2"
+        ],
+        "enemy_1343_ltrock_2": [
+            "act26side"
+        ],
+        "enemy_1544_cledub": [
+            "act26side"
+        ],
+        "enemy_3005_lpeopl_2": [
+            "act26side"
+        ],
+        "enemy_1336_bldbat_2": [
+            "act26side",
+            "RA#2"
+        ],
+        "enemy_1337_bhrknf_2": [
+            "act26side",
+            "RA#2"
+        ],
+        "enemy_1338_bhrjst_2": [
+            "act26side",
+            "RA#2"
+        ],
+        "enemy_1341_bthtms_2": [
+            "act26side",
+            "RA#2"
+        ],
+        "enemy_1340_bthtbw_2": [
+            "act26side",
+            "RA#2"
+        ],
+        "enemy_1339_bhrgrd_2": [
+            "act26side",
+            "RA#2"
+        ],
+        "enemy_1326_cbagen": [
+            "act25side",
+            "camp_r_22"
+        ],
+        "enemy_1329_cbshld": [
+            "act25side",
+            "camp_r_22",
+            "IS#4"
+        ],
+        "enemy_1250_lyengs": [
+            "act25side",
+            "act19side",
+            "camp_r_14",
+            "PinchOut",
+            "CCBP#02",
+            "IS#4"
+        ],
+        "enemy_1334_ristar": [
+            "act25side",
+            "camp_r_22"
+        ],
+        "enemy_1327_cbrokt": [
+            "act25side",
+            "camp_r_22",
+            "lt11",
+            "IS#4"
+        ],
+        "enemy_1330_cbrush": [
+            "act25side",
+            "camp_r_22",
+            "IS#4"
+        ],
+        "enemy_1331_cbsisy": [
+            "act25side",
+            "camp_r_22",
+            "IS#4"
+        ],
+        "enemy_1332_cbterm": [
+            "act25side",
+            "camp_r_22"
+        ],
+        "enemy_1333_cbbgen": [
+            "act25side",
+            "camp_r_22"
+        ],
+        "enemy_1543_cstlrs": [
+            "act25side"
+        ],
+        "enemy_1325_cbgpro_2": [
+            "act25side",
+            "camp_r_22"
+        ],
+        "enemy_1255_lybgpa": [
+            "act25side",
+            "act19side",
+            "camp_r_14",
+            "PinchOut",
+            "CCBP#02",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1254_lypa": [
+            "act25side",
+            "act19side",
+            "camp_r_14",
+            "lt07",
+            "IS#4"
+        ],
+        "enemy_1326_cbagen_2": [
+            "act25side",
+            "camp_r_22"
+        ],
+        "enemy_1327_cbrokt_2": [
+            "act25side",
+            "camp_r_22",
+            "IS#4"
+        ],
+        "enemy_1329_cbshld_2": [
+            "act25side",
+            "camp_r_22",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1328_cbjedi_2": [
+            "act25side",
+            "camp_r_22"
+        ],
+        "enemy_1330_cbrush_2": [
+            "act25side",
+            "camp_r_22",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1331_cbsisy_2": [
+            "act25side",
+            "camp_r_22",
+            "RA#2"
+        ],
+        "enemy_1249_lysdb_2": [
+            "act25side",
+            "act19side",
+            "camp_r_14"
+        ],
+        "enemy_1332_cbterm_2": [
+            "act25side",
+            "camp_r_22"
+        ],
+        "enemy_1333_cbbgen_2": [
+            "act25side",
+            "camp_r_22"
+        ],
+        "enemy_1255_lybgpa_2": [
+            "act25side",
+            "act12mini",
+            "act19side",
+            "camp_r_14",
+            "RA#2"
+        ],
+        "enemy_1256_lyacpa_2": [
+            "act25side",
+            "act19side",
+            "camp_r_14",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1304_mhwolf": [
+            "act24side",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1303_mhshep": [
+            "act24side",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1537_mhrors": [
+            "act24side"
+        ],
+        "enemy_1305_mhslim": [
+            "act24side",
+            "lt10",
+            "RA#2"
+        ],
+        "enemy_1306_mhtrtl": [
+            "act24side",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1308_mheagl": [
+            "act24side"
+        ],
+        "enemy_1310_mhprpn": [
+            "act24side",
+            "RA#2"
+        ],
+        "enemy_1311_mhkryk": [
+            "act24side",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1303_mhshep_2": [
+            "act24side",
+            "RA#2"
+        ],
+        "enemy_1304_mhwolf_2": [
+            "act24side",
+            "RA#2"
+        ],
+        "enemy_1306_mhtrtl_2": [
+            "act24side",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1307_mhrhcr_2": [
+            "act24side",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1305_mhslim_2": [
+            "act24side",
+            "RA#2"
+        ],
+        "enemy_1308_mheagl_2": [
+            "act24side"
+        ],
+        "enemy_1310_mhprpn_2": [
+            "act24side",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1311_mhkryk_2": [
+            "act24side",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1201_sfzhi": [
+            "act14mini",
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1202_msfzhi": [
+            "act14mini",
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1055_ganman": [
+            "act14mini",
+            "act21side",
+            "act13mini",
+            "act1lock",
+            "act5d0",
+            "camp_r_04",
+            "camp_r_08",
+            "camp_r_15",
+            "lt05",
+            "lt07",
+            "lt08",
+            "lt02",
+            "lt04",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "IS#2",
+            "IS#3"
+        ],
+        "enemy_1057_gansho": [
+            "act14mini",
+            "act21side",
+            "act13mini",
+            "act1lock",
+            "act5d0",
+            "camp_r_04",
+            "camp_r_15",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04"
+        ],
+        "enemy_1059_buster": [
+            "act14mini",
+            "act13mini",
+            "act1lock",
+            "act7mini",
+            "act5d0",
+            "camp_r_04",
+            "camp_r_15",
+            "lt08",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "IS#1",
+            "IS#2",
+            "RA#2"
+        ],
+        "enemy_1159_swfmob": [
+            "act14mini",
+            "act12side",
+            "lt05",
+            "lt10",
+            "lt14",
+            "CC#11",
+            "CC#12",
+            "IS#3"
+        ],
+        "enemy_1258_durman": [
+            "act14mini",
+            "act20side",
+            "camp_r_18",
+            "lt05",
+            "lt07",
+            "lt12",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1262_durplc": [
+            "act14mini",
+            "act20side",
+            "camp_r_18",
+            "lt05",
+            "lt07",
+            "CC#11",
+            "CC#12",
+            "IS#3"
+        ],
+        "enemy_1148_dssbr": [
+            "act14mini",
+            "act17side",
+            "act18d3",
+            "camp_r_05",
+            "lt10",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "CC#12",
+            "IS#3"
+        ],
+        "enemy_1056_ganwar": [
+            "act14mini",
+            "act11mini",
+            "act1lock",
+            "act5d0",
+            "camp_r_04",
+            "camp_r_15",
+            "lt05",
+            "lt07",
+            "lt08",
+            "lt02",
+            "lt04",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "IS#2",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1520_empgrd": [
+            "act14mini",
+            "act2bossrush",
+            "act18d0"
+        ],
+        "enemy_1123_spsbr_2": [
+            "act14mini",
+            "act13mini",
+            "act16d5"
+        ],
+        "enemy_1126_spslme_2": [
+            "act14mini",
+            "act10mini",
+            "act9mini",
+            "act16d5"
+        ],
+        "enemy_1129_spklr": [
+            "act14mini",
+            "act16d5"
+        ],
+        "enemy_1199_sfjin": [
+            "act14mini",
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1200_msfjin": [
+            "act14mini",
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1207_sfji": [
+            "act14mini",
+            "act11mini",
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1208_msfji": [
+            "act14mini",
+            "act11mini",
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1295_ymph": [
+            "act23side",
+            "camp_r_20"
+        ],
+        "enemy_1299_ymkilr": [
+            "act23side",
+            "camp_r_20"
+        ],
+        "enemy_1296_ymknif": [
+            "act23side",
+            "camp_r_20"
+        ],
+        "enemy_1297_ymflag": [
+            "act23side",
+            "camp_r_20"
+        ],
+        "enemy_1298_ymmonk": [
+            "act23side",
+            "camp_r_20"
+        ],
+        "enemy_1300_ymmir": [
+            "act23side",
+            "camp_r_20"
+        ],
+        "enemy_1302_ymtro": [
+            "act23side",
+            "camp_r_20"
+        ],
+        "enemy_1300_ymmir_2": [
+            "act23side",
+            "camp_r_20",
+            "CCBP#01",
+            "CCBP#02",
+            "IS#4"
+        ],
+        "enemy_1301_ymcnon_2": [
+            "act23side",
+            "camp_r_20"
+        ],
+        "enemy_1286_dumcy": [
+            "act22side",
+            "lt10",
+            "CCBP#01"
+        ],
+        "enemy_1287_ducrb": [
+            "act22side",
+            "camp_r_17",
+            "lt10",
+            "CCBP#02"
+        ],
+        "enemy_1289_dubmb": [
+            "act22side",
+            "camp_r_17"
+        ],
+        "enemy_1291_dusrch": [
+            "act22side",
+            "camp_r_17",
+            "lt11",
+            "RA#2"
+        ],
+        "enemy_1290_duflm": [
+            "act22side",
+            "camp_r_17",
+            "PinchOut"
+        ],
+        "enemy_1292_duskld": [
+            "act22side",
+            "camp_r_17",
+            "lt10",
+            "CCBP#02"
+        ],
+        "enemy_1293_duswrd": [
+            "act22side",
+            "camp_r_17",
+            "lt08",
+            "lt10",
+            "CCBP#02"
+        ],
+        "enemy_1294_duchns": [
+            "act22side",
+            "camp_r_17"
+        ],
+        "enemy_1287_ducrb_2": [
+            "act22side",
+            "camp_r_17"
+        ],
+        "enemy_1291_dusrch_2": [
+            "act22side",
+            "camp_r_17",
+            "CCBP#01"
+        ],
+        "enemy_1293_duswrd_2": [
+            "act22side",
+            "camp_r_17",
+            "lt10"
+        ],
+        "enemy_1516_jakill": [
+            "act2bossrush",
+            "act11mini",
+            "act15d0",
+            "camp_r_08",
+            "CCBP#01",
+            "IS#2",
+            "RA#2"
+        ],
+        "enemy_1116_liprr": [
+            "act2bossrush",
+            "act11mini",
+            "act15d0",
+            "camp_r_08",
+            "lt12",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CCBP#01",
+            "IS#2",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1117_liiprr": [
+            "act2bossrush",
+            "act11mini",
+            "act15d0",
+            "camp_r_08",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CCBP#01",
+            "IS#2",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1120_vofwiz_2": [
+            "act2bossrush",
+            "act11mini",
+            "act15d0",
+            "camp_r_08",
+            "RA#2"
+        ],
+        "enemy_1119_vofsd_2": [
+            "act2bossrush",
+            "act15d0",
+            "camp_r_08",
+            "RA#2"
+        ],
+        "enemy_1035_haxe_2": [
+            "act2bossrush",
+            "lt14",
+            "lt02",
+            "IS#4"
+        ],
+        "enemy_1075_dmgswd_2": [
+            "act2bossrush",
+            "act13mini",
+            "act1bossrush",
+            "act9d0",
+            "lt01",
+            "IS#2",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1076_bsthmr_2": [
+            "act2bossrush",
+            "act13mini",
+            "act7mini",
+            "act10d5",
+            "act9d0",
+            "lt07",
+            "lt02",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1532_minima": [
+            "act2bossrush",
+            "act20side",
+            "camp_r_18"
+        ],
+        "enemy_1264_durgrd_2": [
+            "act2bossrush",
+            "act20side",
+            "lt05",
+            "lt12",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1262_durplc_2": [
+            "act2bossrush",
+            "act20side",
+            "camp_r_18",
+            "lt05",
+            "lt07",
+            "IS#3"
+        ],
+        "enemy_1260_durmag_2": [
+            "act2bossrush",
+            "act20side",
+            "camp_r_18",
+            "act42d0",
+            "RA#2"
+        ],
+        "enemy_1259_durwar_2": [
+            "act2bossrush",
+            "act20side",
+            "camp_r_18",
+            "lt05",
+            "lt07",
+            "IS#3",
+            "RA#2"
+        ],
+        "enemy_1258_durman_2": [
+            "act2bossrush",
+            "act20side",
+            "camp_r_18",
+            "lt05",
+            "lt07",
+            "lt12",
+            "RA#2"
+        ],
+        "enemy_1511_mdrock": [
+            "act2bossrush",
+            "act11d0",
+            "act42d0",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "CCBP#02",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1213_mtrsnp_2": [
+            "act2bossrush",
+            "act16side",
+            "camp_r_12"
+        ],
+        "enemy_1215_ptrarc_2": [
+            "act2bossrush",
+            "act16side",
+            "camp_r_12",
+            "lt03"
+        ],
+        "enemy_1216_cansld_2": [
+            "act2bossrush",
+            "act16side",
+            "camp_r_12"
+        ],
+        "enemy_3004_speople": [
+            "act21side",
+            "IS#4"
+        ],
+        "enemy_1277_sgman": [
+            "act21side",
+            "lt09",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1278_sgbow": [
+            "act21side",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1279_sgbdg": [
+            "act21side",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1280_sgmag": [
+            "act21side",
+            "RA#2"
+        ],
+        "enemy_1281_sgcar": [
+            "act21side",
+            "lt09",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1282_sgelder": [
+            "act21side",
+            "RA#2"
+        ],
+        "enemy_1278_sgbow_2": [
+            "act21side",
+            "IS#4"
+        ],
+        "enemy_1282_sgelder_2": [
+            "act21side"
+        ],
+        "enemy_1283_sgkill_2": [
+            "act21side",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1281_sgcar_2": [
+            "act21side",
+            "RA#2"
+        ],
+        "enemy_1280_sgmag_2": [
+            "act21side"
+        ],
+        "enemy_1004_mslime_2": [
+            "act13mini",
+            "act13d0",
+            "act10d5",
+            "act6d5",
+            "act3d0",
+            "act17d1",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1004_mslime": [
+            "act13mini",
+            "act15d5",
+            "act10d5",
+            "act9d0",
+            "act3d0",
+            "1stact",
+            "lt06",
+            "act17d1",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "IS#2",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1072_dlancer": [
+            "act13mini",
+            "act9mini",
+            "act13d0",
+            "act10d5",
+            "act9d0",
+            "lt06",
+            "lt07",
+            "lt09",
+            "lt13",
+            "lt02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1073_dscout": [
+            "act13mini",
+            "act12mini",
+            "act10mini",
+            "act9d0",
+            "lt12",
+            "IS#2",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1047_sagent": [
+            "act13mini",
+            "act3d0",
+            "camp_r_04",
+            "lt07",
+            "act42d0",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1025_reveng": [
+            "act13mini",
+            "act10mini",
+            "act8mini",
+            "camp_02",
+            "lt02",
+            "lt04",
+            "CC#Beta",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#12",
+            "IS#1",
+            "IS#2",
+            "RA#1"
+        ],
+        "enemy_1076_bsthmr": [
+            "act13mini",
+            "act1bossrush",
+            "act7mini",
+            "act13d0",
+            "act10d5",
+            "act9d0",
+            "lt09",
+            "lt14",
+            "lt02",
+            "lt04",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "IS#1",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1140_merhd": [
+            "act13mini",
+            "act20side",
+            "act11mini",
+            "act18side",
+            "act16side",
+            "act13side",
+            "act12side",
+            "act8mini",
+            "act18d3",
+            "act18d0",
+            "lt13",
+            "lt04",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1183_mlasrt": [
+            "act12mini",
+            "act13side",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "IS#4"
+        ],
+        "enemy_1251_lysyta_2": [
+            "act12mini",
+            "act19side",
+            "camp_r_14",
+            "RA#2"
+        ],
+        "enemy_1252_lysytb_2": [
+            "act12mini",
+            "act19side",
+            "camp_r_14"
+        ],
+        "enemy_1188_krgdrn": [
+            "act12mini",
+            "act11mini",
+            "act14side"
+        ],
+        "enemy_1239_ltbow_2": [
+            "act12mini",
+            "act18side",
+            "camp_r_16"
+        ],
+        "enemy_1242_ltsmag": [
+            "act12mini",
+            "act18side",
+            "camp_r_16"
+        ],
+        "enemy_1259_durwar": [
+            "act20side",
+            "camp_r_18",
+            "lt05",
+            "lt07",
+            "lt12",
+            "IS#3",
+            "RA#2"
+        ],
+        "enemy_1265_durcar": [
+            "act20side"
+        ],
+        "enemy_1260_durmag": [
+            "act20side",
+            "camp_r_18",
+            "lt05",
+            "CC#11",
+            "CC#12",
+            "RA#2"
+        ],
+        "enemy_1261_dursho": [
+            "act20side",
+            "camp_r_18",
+            "lt05",
+            "lt12"
+        ],
+        "enemy_1263_durbus": [
+            "act20side",
+            "camp_r_18",
+            "lt09",
+            "CC#11",
+            "CC#12",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1264_durgrd": [
+            "act20side",
+            "camp_r_18",
+            "lt05",
+            "lt07",
+            "lt12"
+        ],
+        "enemy_1263_durbus_2": [
+            "act20side",
+            "camp_r_18",
+            "lt05"
+        ],
+        "enemy_1261_dursho_2": [
+            "act20side",
+            "camp_r_18",
+            "lt05",
+            "RA#2"
+        ],
+        "enemy_1054_norshd": [
+            "act20side",
+            "act11d0",
+            "act5d0",
+            "act3d0",
+            "lt14",
+            "lt03",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "RA#1"
+        ],
+        "enemy_1105_tyokai_2": [
+            "act1bossrush",
+            "act15d5",
+            "act13d5",
+            "camp_r_01"
+        ],
+        "enemy_1053_norgst": [
+            "act1bossrush",
+            "act11mini",
+            "act13side",
+            "act18d0",
+            "act13d5",
+            "act10d5",
+            "act9d0",
+            "act3d0",
+            "camp_r_01",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "CC#12"
+        ],
+        "enemy_1056_ganwar_2": [
+            "act1bossrush",
+            "act7d5",
+            "act6d5",
+            "act5d0",
+            "camp_r_04",
+            "camp_r_15",
+            "lt05",
+            "lt08",
+            "lt02",
+            "lt04",
+            "IS#2",
+            "IS#3"
+        ],
+        "enemy_1098_cchmpn_2": [
+            "act1bossrush",
+            "act8mini",
+            "act13d0",
+            "act12d0",
+            "camp_r_18",
+            "lt02",
+            "act42d0",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1145_atkspd": [
+            "act11mini",
+            "act8mini",
+            "act18d0",
+            "camp_r_15",
+            "lt11",
+            "lt03",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11"
+        ],
+        "enemy_1143_merrpg": [
+            "act11mini",
+            "act10mini",
+            "act18d0",
+            "camp_r_15",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "IS#2"
+        ],
+        "enemy_1141_merbow": [
+            "act11mini",
+            "act8mini",
+            "act18d0",
+            "camp_r_15",
+            "lt11",
+            "lt03",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11"
+        ],
+        "enemy_1185_nmekgt": [
+            "act11mini",
+            "act13side",
+            "camp_r_10",
+            "IS#4"
+        ],
+        "enemy_1046_agent_2": [
+            "act11mini",
+            "act18d0",
+            "act15d5",
+            "act3d0",
+            "camp_r_15",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "IS#4"
+        ],
+        "enemy_1048_hirman_2": [
+            "act11mini",
+            "act9mini",
+            "act13d0",
+            "act3d0",
+            "lt13",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "IS#3"
+        ],
+        "enemy_1049_eagent_2": [
+            "act11mini",
+            "act15d5",
+            "act6d5",
+            "act3d0",
+            "camp_r_04",
+            "lt01",
+            "IS#1",
+            "IS#2",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1051_norwiz_2": [
+            "act11mini",
+            "act11d0",
+            "act9d0",
+            "act5d0",
+            "act3d0",
+            "camp_r_04"
+        ],
+        "enemy_1160_hvyslr_2": [
+            "act11mini",
+            "act12side",
+            "camp_r_07",
+            "lt05",
+            "lt07",
+            "lt14",
+            "CC#11",
+            "CC#12",
+            "RA#2"
+        ],
+        "enemy_1161_tidmag_2": [
+            "act11mini",
+            "act12side",
+            "camp_r_07",
+            "lt10",
+            "IS#3",
+            "RA#2"
+        ],
+        "enemy_1162_magmot_2": [
+            "act11mini",
+            "act12side",
+            "camp_r_07",
+            "lt10",
+            "RA#2"
+        ],
+        "enemy_1163_hvymot_2": [
+            "act11mini",
+            "act12side",
+            "camp_r_07",
+            "lt05",
+            "lt07",
+            "lt14",
+            "RA#2"
+        ],
+        "enemy_1141_merbow_2": [
+            "act11mini",
+            "act10mini",
+            "act18d0",
+            "camp_r_15",
+            "lt11",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1145_atkspd_2": [
+            "act11mini",
+            "act10mini",
+            "act18d0",
+            "camp_r_15",
+            "lt11",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1118_lidbox_2": [
+            "act11mini",
+            "act15d0",
+            "camp_r_08",
+            "lt12",
+            "IS#2",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1121_lifbos_2": [
+            "act11mini",
+            "act15d0",
+            "camp_r_08",
+            "lt12",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "RA#2"
+        ],
+        "enemy_1251_lysyta": [
+            "act19side",
+            "camp_r_14",
+            "PinchOut",
+            "CCBP#02",
+            "IS#4"
+        ],
+        "enemy_1252_lysytb": [
+            "act19side",
+            "camp_r_14",
+            "RA#2"
+        ],
+        "enemy_1256_lyacpa": [
+            "act19side",
+            "camp_r_14",
+            "PinchOut",
+            "CCBP#02",
+            "IS#4"
+        ],
+        "enemy_1257_lydrty": [
+            "act19side",
+            "PinchOut",
+            "CCBP#02",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1253_lysytc": [
+            "act19side",
+            "camp_r_14",
+            "PinchOut",
+            "CCBP#02",
+            "IS#4"
+        ],
+        "enemy_1531_bbrain": [
+            "act19side"
+        ],
+        "enemy_1250_lyengs_2": [
+            "act19side",
+            "camp_r_14",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1254_lypa_2": [
+            "act19side",
+            "camp_r_14",
+            "RA#2"
+        ],
+        "enemy_1253_lysytc_2": [
+            "act19side",
+            "camp_r_14",
+            "RA#2"
+        ],
+        "enemy_1241_ltmage_2": [
+            "act18side",
+            "camp_r_16",
+            "act42d0",
+            "IS#4"
+        ],
+        "enemy_1244_ltssch": [
+            "act18side",
+            "camp_r_16"
+        ],
+        "enemy_1245_ltseal": [
+            "act18side",
+            "camp_r_16"
+        ],
+        "enemy_1247_ltgtld": [
+            "act18side",
+            "camp_r_16"
+        ],
+        "enemy_1248_ltholo": [
+            "act18side",
+            "camp_r_16"
+        ],
+        "enemy_1530_white": [
+            "act18side"
+        ],
+        "enemy_1238_ltmob_2": [
+            "act18side",
+            "camp_r_16",
+            "lt13",
+            "IS#3"
+        ],
+        "enemy_1244_ltssch_2": [
+            "act18side",
+            "camp_r_16"
+        ],
+        "enemy_1149_dsbow": [
+            "act17side",
+            "act18d3",
+            "camp_r_05",
+            "camp_r_13",
+            "lt10",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "CC#12"
+        ],
+        "enemy_1233_dsshtr": [
+            "act17side",
+            "camp_r_13",
+            "lt10",
+            "CCBP#02"
+        ],
+        "enemy_1231_dsrunr": [
+            "act17side",
+            "camp_r_13",
+            "lt10",
+            "CCBP#02",
+            "IS#3"
+        ],
+        "enemy_1236_bouncy": [
+            "act17side"
+        ],
+        "enemy_1236_bouncy_2": [
+            "act17side",
+            "camp_r_13"
+        ],
+        "enemy_1236_bouncy_3": [
+            "act17side"
+        ],
+        "enemy_1232_dssalr": [
+            "act17side",
+            "lt10",
+            "CCBP#02"
+        ],
+        "enemy_1230_dsbudr_3": [
+            "act17side"
+        ],
+        "enemy_1232_dssalr_3": [
+            "act17side",
+            "IS#3"
+        ],
+        "enemy_1232_dssalr_4": [
+            "act17side"
+        ],
+        "enemy_1230_dsbudr_4": [
+            "act17side"
+        ],
+        "enemy_1234_dsubrl": [
+            "act17side",
+            "camp_r_13",
+            "lt10",
+            "CCBP#02"
+        ],
+        "enemy_1235_dsbskr": [
+            "act17side",
+            "CCBP#02"
+        ],
+        "enemy_1232_dssalr_2": [
+            "act17side",
+            "camp_r_13",
+            "IS#3"
+        ],
+        "enemy_1149_dsbow_2": [
+            "act17side",
+            "act18d3",
+            "camp_r_05",
+            "camp_r_13"
+        ],
+        "enemy_1219_mtrbty": [
+            "act16side",
+            "camp_r_12"
+        ],
+        "enemy_1214_mtrmgc_2": [
+            "act16side",
+            "camp_r_12"
+        ],
+        "enemy_1219_mtrbty_2": [
+            "act16side",
+            "camp_r_12"
+        ],
+        "enemy_1109_uabone_2": [
+            "act10mini",
+            "camp_r_03",
+            "IS#2",
+            "RA#2"
+        ],
+        "enemy_1127_sptrkg": [
+            "act10mini",
+            "act16d5",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "CC#10"
+        ],
+        "enemy_1122_sphond": [
+            "act15side",
+            "act16d5"
+        ],
+        "enemy_1203_sfhu": [
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1204_msfhu": [
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1205_sfpin": [
+            "act15side",
+            "camp_r_11",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "CC#12"
+        ],
+        "enemy_1206_msfpin": [
+            "act15side",
+            "camp_r_11",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "CC#12"
+        ],
+        "enemy_1209_sfden": [
+            "act15side",
+            "camp_r_11",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "CC#12"
+        ],
+        "enemy_1210_msfden": [
+            "act15side",
+            "camp_r_11",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "CC#12"
+        ],
+        "enemy_1195_sfyin_2": [
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1196_msfyin_2": [
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1197_sfshu_2": [
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1198_msfshu_2": [
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1199_sfjin_2": [
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1200_msfjin_2": [
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1201_sfzhi_2": [
+            "act15side",
+            "camp_r_11",
+            "act42d0"
+        ],
+        "enemy_1202_msfzhi_2": [
+            "act15side",
+            "camp_r_11",
+            "act42d0"
+        ],
+        "enemy_1203_sfhu_2": [
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1204_msfhu_2": [
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1205_sfpin_2": [
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1206_msfpin_2": [
+            "act15side",
+            "camp_r_11"
+        ],
+        "enemy_1207_sfji_2": [
+            "act15side",
+            "camp_r_11",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "CC#12"
+        ],
+        "enemy_1208_msfji_2": [
+            "act15side",
+            "camp_r_11",
+            "CC#09",
+            "CC#10",
+            "CC#11",
+            "CC#12"
+        ],
+        "enemy_1190_krgbow": [
+            "act14side",
+            "IS#3"
+        ],
+        "enemy_1192_krgscr": [
+            "act14side"
+        ],
+        "enemy_1194_krgmtr": [
+            "act14side"
+        ],
+        "enemy_1188_krgdrn_2": [
+            "act14side"
+        ],
+        "enemy_1192_krgscr_2": [
+            "act14side",
+            "RA#2"
+        ],
+        "enemy_1184_cadkgt": [
+            "act13side",
+            "camp_r_10",
+            "IS#3"
+        ],
+        "enemy_1179_aruarw_2": [
+            "act13side"
+        ],
+        "enemy_1180_aruass_2": [
+            "act13side"
+        ],
+        "enemy_1183_mlasrt_2": [
+            "act13side",
+            "camp_r_10",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1052_noramr": [
+            "act9mini",
+            "act11d0",
+            "act9d0",
+            "act5d0",
+            "act3d0",
+            "camp_r_01",
+            "lt06",
+            "lt14",
+            "lt01",
+            "lt03",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11"
+        ],
+        "enemy_1143_merrpg_2": [
+            "act9mini",
+            "act18d0",
+            "camp_r_15",
+            "IS#2",
+            "RA#2"
+        ],
+        "enemy_1161_tidmag": [
+            "act12side",
+            "camp_r_07",
+            "lt10",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1162_magmot": [
+            "act12side",
+            "camp_r_07",
+            "lt10",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_3003_alymot": [
+            "act12side",
+            "IS#4"
+        ],
+        "enemy_1164_bmbmot_2": [
+            "act12side",
+            "lt10",
+            "RA#2"
+        ],
+        "enemy_1142_mershd": [
+            "act8mini",
+            "act18d0",
+            "camp_r_15",
+            "lt11",
+            "lt03",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11"
+        ],
+        "enemy_1146_defspd": [
+            "act8mini",
+            "act18d0",
+            "camp_r_15",
+            "lt11",
+            "lt03",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11"
+        ],
+        "enemy_1144_merlgd": [
+            "act8mini",
+            "act18d0",
+            "camp_r_15",
+            "CC#08",
+            "CC#09",
+            "CC#10",
+            "CC#11"
+        ],
+        "enemy_1132_sarchn": [
+            "act8mini",
+            "act17d0",
+            "camp_r_06",
+            "lt06",
+            "lt07",
+            "lt02",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1130_infstr": [
+            "act8mini",
+            "act17d0",
+            "camp_r_06",
+            "lt06",
+            "IS#3"
+        ],
+        "enemy_1132_sarchn_2": [
+            "act8mini",
+            "act17d0",
+            "camp_r_06",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1137_plasm": [
+            "act8mini",
+            "act17d0",
+            "camp_r_06",
+            "lt06",
+            "lt07",
+            "lt01",
+            "lt02",
+            "IS#2",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1138_tumor": [
+            "act8mini",
+            "act17d0",
+            "camp_r_06",
+            "lt01",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1049_eagent": [
+            "act8mini",
+            "act1lock",
+            "act7mini",
+            "act18d0",
+            "act3d0",
+            "camp_r_03",
+            "camp_r_04",
+            "lt01",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "IS#1",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_1097_cclmbjk": [
+            "act8mini",
+            "act12d0",
+            "RA#2"
+        ],
+        "enemy_1156_hymhr": [
+            "act1lock"
+        ],
+        "enemy_1157_hymwr": [
+            "act1lock"
+        ],
+        "enemy_1046_agent": [
+            "act7mini",
+            "act18d3",
+            "act18d0",
+            "act3d0",
+            "camp_r_15",
+            "lt01",
+            "IS#1",
+            "IS#2",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1150_dsjely": [
+            "act18d3",
+            "camp_r_05",
+            "camp_r_13",
+            "lt10",
+            "IS#3"
+        ],
+        "enemy_1155_dsrobt": [
+            "act18d3",
+            "camp_r_05"
+        ],
+        "enemy_1153_dsexcu": [
+            "act18d3",
+            "camp_r_05",
+            "IS#3"
+        ],
+        "enemy_1150_dsjely_2": [
+            "act18d3",
+            "camp_r_05",
+            "IS#3"
+        ],
+        "enemy_1153_dsexcu_2": [
+            "act18d3",
+            "camp_r_05",
+            "lt10",
+            "IS#3"
+        ],
+        "enemy_1051_norwiz": [
+            "act18d0",
+            "act11d0",
+            "act9d0",
+            "act5d0",
+            "act3d0",
+            "camp_r_01",
+            "camp_r_04",
+            "CC#00",
+            "CC#01",
+            "CC#02",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "IS#2"
+        ],
+        "enemy_1052_noramr_2": [
+            "act18d0",
+            "act3d0",
+            "camp_r_01",
+            "lt07",
+            "lt01",
+            "lt03"
+        ],
+        "enemy_1054_norshd_2": [
+            "act18d0",
+            "act3d0",
+            "lt03",
+            "RA#1"
+        ],
+        "enemy_1142_mershd_2": [
+            "act18d0",
+            "camp_r_15",
+            "IS#3",
+            "IS#4",
+            "RA#1"
+        ],
+        "enemy_1146_defspd_2": [
+            "act18d0",
+            "camp_r_15",
+            "IS#3",
+            "IS#4",
+            "RA#1"
+        ],
+        "enemy_1144_merlgd_2": [
+            "act18d0",
+            "camp_r_15",
+            "IS#3"
+        ],
+        "enemy_1131_sbeast": [
+            "act17d0",
+            "camp_r_06",
+            "lt06",
+            "lt01",
+            "IS#2"
+        ],
+        "enemy_1134_diamd": [
+            "act17d0",
+            "lt06",
+            "lt02",
+            "RA#1"
+        ],
+        "enemy_1135_redman": [
+            "act17d0",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "IS#4"
+        ],
+        "enemy_1136_redace": [
+            "act17d0",
+            "camp_r_06",
+            "lt01",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "IS#4"
+        ],
+        "enemy_1139_hologc": [
+            "act17d0",
+            "camp_r_06",
+            "lt01",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "IS#4"
+        ],
+        "enemy_1133_harchn": [
+            "act17d0",
+            "camp_r_06",
+            "lt06",
+            "lt07",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1519_bgball": [
+            "act17d0"
+        ],
+        "enemy_1133_harchn_2": [
+            "act17d0",
+            "camp_r_06",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1131_sbeast_2": [
+            "act17d0",
+            "lt01"
+        ],
+        "enemy_1134_diamd_2": [
+            "act17d0",
+            "IS#2",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1136_redace_2": [
+            "act17d0",
+            "camp_r_06",
+            "lt01",
+            "IS#4"
+        ],
+        "enemy_1139_hologc_2": [
+            "act17d0",
+            "camp_r_06",
+            "lt01",
+            "IS#4"
+        ],
+        "enemy_1135_redman_2": [
+            "act17d0",
+            "camp_r_06"
+        ],
+        "enemy_1124_spbow": [
+            "act16d5"
+        ],
+        "enemy_1518_dusk": [
+            "act16d5"
+        ],
+        "enemy_1127_sptrkg_2": [
+            "act16d5"
+        ],
+        "enemy_1087_ltwolf_2": [
+            "act15d5",
+            "act11d0",
+            "camp_r_07",
+            "IS#1",
+            "IS#2"
+        ],
+        "enemy_1118_lidbox": [
+            "act15d0",
+            "camp_r_08",
+            "lt05",
+            "lt12",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CCBP#01",
+            "IS#2",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1119_vofsd": [
+            "act15d0",
+            "camp_r_08",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CCBP#01",
+            "IS#2",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1120_vofwiz": [
+            "act15d0",
+            "camp_r_08",
+            "lt12",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CCBP#01",
+            "IS#2",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1121_lifbos": [
+            "act15d0",
+            "camp_r_08",
+            "lt12",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "CCBP#01",
+            "IS#2",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1116_liprr_2": [
+            "act15d0",
+            "camp_r_08",
+            "lt12",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_1117_liiprr_2": [
+            "act15d0",
+            "camp_r_08",
+            "RA#2"
+        ],
+        "enemy_1096_ccwitch": [
+            "act13d0",
+            "act12d0",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1098_cchmpn": [
+            "act13d0",
+            "act12d0",
+            "camp_r_18",
+            "lt09",
+            "lt02",
+            "lt04",
+            "act42d0",
+            "CC#06",
+            "CC#07",
+            "CC#08",
+            "CC#09",
+            "PinchOut",
+            "CCBP#01",
+            "IS#2",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1072_dlancer_2": [
+            "act13d0",
+            "act9d0",
+            "lt07",
+            "lt09",
+            "lt13",
+            "lt01",
+            "lt02",
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1094_ccspm_2": [
+            "act12d0",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1097_cclmbjk_2": [
+            "act12d0"
+        ],
+        "enemy_1096_ccwitch_2": [
+            "act12d0",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1073_dscout_2": [
+            "act9d0",
+            "CC#03",
+            "CC#04",
+            "CC#05",
+            "CC#06",
+            "CC#07",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1022_dmage_2": [
+            "act9d0",
+            "RA#2"
+        ],
+        "enemy_1001_bigbo_2": [
+            "1stact",
+            "lt02",
+            "IS#3",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_1006_shield_3": [
+            "1stact",
+            "lt02",
+            "IS#2"
+        ],
+        "enemy_6003_trsslm": [
+            "lt05",
+            "lt06",
+            "lt07",
+            "lt08",
+            "lt09",
+            "lt10",
+            "lt11",
+            "lt12",
+            "lt13",
+            "lt14",
+            "lt01",
+            "lt02",
+            "lt03",
+            "lt04",
+            "RA#2"
+        ],
+        "enemy_6001_trsgst": [
+            "lt05",
+            "lt06",
+            "lt07",
+            "lt08",
+            "lt09",
+            "lt10",
+            "lt11",
+            "lt12",
+            "lt13",
+            "lt14",
+            "lt01",
+            "lt02",
+            "lt03",
+            "lt04",
+            "RA#2"
+        ],
+        "enemy_6002_trswlf": [
+            "lt05",
+            "lt06",
+            "lt07",
+            "lt08",
+            "lt09",
+            "lt10",
+            "lt11",
+            "lt12",
+            "lt13",
+            "lt14",
+            "lt01",
+            "lt02",
+            "lt03",
+            "lt04",
+            "RA#2"
+        ],
+        "enemy_6010_boxing": [
+            "lt05"
+        ],
+        "enemy_6011_planty": [
+            "lt06"
+        ],
+        "enemy_6012_plants": [
+            "lt06"
+        ],
+        "enemy_6013_smith": [
+            "lt07"
+        ],
+        "enemy_6014_crzgas": [
+            "lt08"
+        ],
+        "enemy_6015_ictruck": [
+            "lt09"
+        ],
+        "enemy_6017_icdrone": [
+            "lt09"
+        ],
+        "enemy_6016_splash": [
+            "lt10"
+        ],
+        "enemy_6018_carrier": [
+            "lt11"
+        ],
+        "enemy_6019_escort": [
+            "lt11"
+        ],
+        "enemy_6020_orang": [
+            "lt12"
+        ],
+        "enemy_6021_cask": [
+            "lt12"
+        ],
+        "enemy_6022_m2cnt": [
+            "lt13"
+        ],
+        "enemy_6023_crane": [
+            "lt14"
+        ],
+        "enemy_6024_crnbug": [
+            "lt14"
+        ],
+        "enemy_6004_pleslm": [
+            "lt01"
+        ],
+        "enemy_6005_llstone": [
+            "lt02"
+        ],
+        "enemy_6006_fystone": [
+            "lt02"
+        ],
+        "enemy_6007_mtslm": [
+            "lt03"
+        ],
+        "enemy_6008_mtslms": [
+            "lt03"
+        ],
+        "enemy_6009_nlkgtbs": [
+            "lt04"
+        ],
+        "enemy_8002_flmchn": [
+            "act42d0"
+        ],
+        "enemy_8004_flmspr": [
+            "act42d0"
+        ],
+        "enemy_8001_flmlod": [
+            "act42d0"
+        ],
+        "enemy_8001_flmlod_2": [
+            "act42d0"
+        ],
+        "enemy_8003_flmchn2": [
+            "act42d0"
+        ],
+        "enemy_8005_flmspr2": [
+            "act42d0"
+        ],
+        "enemy_8006_flmgd": [
+            "act42d0"
+        ],
+        "enemy_8001_flmlod_3": [
+            "act42d0"
+        ],
+        "enemy_4003_pbank": [
+            "act17d1"
+        ],
+        "enemy_4002_syokai": [
+            "act17d1"
+        ],
+        "enemy_4002_syokai_2": [
+            "act17d1"
+        ],
+        "enemy_4001_toxcar": [
+            "act17d1"
+        ],
+        "enemy_4001_toxcar_2": [
+            "act17d1"
+        ],
+        "enemy_1539_reid": [
+            "CC#12"
+        ],
+        "enemy_2001_duckmi": [
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_2002_bearmi": [
+            "IS#1",
+            "IS#2",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_2003_rockman": [
+            "IS#1",
+            "IS#2",
+            "IS#4",
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_2004_balloon": [
+            "IS#1",
+            "IS#2",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_2005_axetro": [
+            "IS#1",
+            "IS#2",
+            "IS#4",
+            "RA#2"
+        ],
+        "enemy_2006_flsnip": [
+            "IS#1",
+            "IS#3",
+            "RA#2"
+        ],
+        "enemy_2007_flwitch": [
+            "IS#1",
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_2008_flking": [
+            "IS#1",
+            "IS#3",
+            "RA#2"
+        ],
+        "enemy_2010_csdcr": [
+            "IS#2",
+            "IS#4"
+        ],
+        "enemy_2009_csaudc": [
+            "IS#2",
+            "IS#4"
+        ],
+        "enemy_2012_csbln": [
+            "IS#2"
+        ],
+        "enemy_2011_csppt": [
+            "IS#2"
+        ],
+        "enemy_2013_csbot": [
+            "IS#2"
+        ],
+        "enemy_2014_csicer": [
+            "IS#2",
+            "IS#4"
+        ],
+        "enemy_2015_csicem": [
+            "IS#2",
+            "IS#4"
+        ],
+        "enemy_2016_csphtm": [
+            "IS#2"
+        ],
+        "enemy_2017_csphts": [
+            "IS#2"
+        ],
+        "enemy_2018_csdoll": [
+            "IS#2"
+        ],
+        "enemy_2019_cshost": [
+            "IS#2"
+        ],
+        "enemy_2020_cswrtr": [
+            "IS#2"
+        ],
+        "enemy_2034_sythef": [
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_2035_sybox": [
+            "IS#3"
+        ],
+        "enemy_2021_syfish": [
+            "IS#3"
+        ],
+        "enemy_2022_syzeni": [
+            "IS#3"
+        ],
+        "enemy_2023_sypult": [
+            "IS#3"
+        ],
+        "enemy_2024_synut": [
+            "IS#3"
+        ],
+        "enemy_2025_syufo": [
+            "IS#3"
+        ],
+        "enemy_2026_syudg": [
+            "IS#3"
+        ],
+        "enemy_2027_syudg2": [
+            "IS#3"
+        ],
+        "enemy_2028_syevil": [
+            "IS#3"
+        ],
+        "enemy_2029_symon": [
+            "IS#3"
+        ],
+        "enemy_2030_symon2": [
+            "IS#3"
+        ],
+        "enemy_2031_syboy": [
+            "IS#3"
+        ],
+        "enemy_2033_syboys": [
+            "IS#3"
+        ],
+        "enemy_2032_syboy2": [
+            "IS#3"
+        ],
+        "enemy_2037_sygirl": [
+            "IS#3"
+        ],
+        "enemy_2038_sydonq": [
+            "IS#3"
+        ],
+        "enemy_2039_syskad": [
+            "IS#3"
+        ],
+        "enemy_2040_syrott": [
+            "IS#3"
+        ],
+        "enemy_2042_syboss": [
+            "IS#3"
+        ],
+        "enemy_2041_syjely": [
+            "IS#3"
+        ],
+        "enemy_2036_syshop": [
+            "IS#3",
+            "IS#4"
+        ],
+        "enemy_2059_smbox": [
+            "IS#4"
+        ],
+        "enemy_2062_smcar": [
+            "IS#4"
+        ],
+        "enemy_2043_smsbr": [
+            "IS#4"
+        ],
+        "enemy_2044_smwiz": [
+            "IS#4"
+        ],
+        "enemy_2045_smdrn": [
+            "IS#4"
+        ],
+        "enemy_2046_smwar": [
+            "IS#4"
+        ],
+        "enemy_2048_smgrd": [
+            "IS#4"
+        ],
+        "enemy_2049_smgrd2": [
+            "IS#4"
+        ],
+        "enemy_2050_smsha": [
+            "IS#4"
+        ],
+        "enemy_2051_smsha2": [
+            "IS#4"
+        ],
+        "enemy_2052_smgia": [
+            "IS#4"
+        ],
+        "enemy_2053_smgia2": [
+            "IS#4"
+        ],
+        "enemy_2054_smdeer": [
+            "IS#4"
+        ],
+        "enemy_2047_smtree": [
+            "IS#4"
+        ],
+        "enemy_2055_smlead": [
+            "IS#4"
+        ],
+        "enemy_2056_smedzi": [
+            "IS#4"
+        ],
+        "enemy_2057_smkght": [
+            "IS#4"
+        ],
+        "enemy_2058_smlion": [
+            "IS#4"
+        ],
+        "enemy_2060_smshdw": [
+            "IS#4"
+        ],
+        "enemy_2061_smhond": [
+            "IS#4"
+        ],
+        "enemy_7001_blwzad": [
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_7006_xbcrab": [
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_7002_veingd": [
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_7001_blwzad_2": [
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_7006_xbcrab_2": [
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_7003_catapt": [
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_7015_xbcrab2": [
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_7004_xbdeer": [
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_7004_xbdeer_2": [
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_7005_xbbull": [
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_7005_xbbull_2": [
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_7002_veingd_2": [
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_7009_mtmoun": [
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_7010_bldrgn": [
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_7011_paki": [
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_7007_xbbird": [
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_7003_catapt_2": [
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_7012_wilder": [
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_7013_slwazd": [
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_7014_dva": [
+            "RA#1",
+            "RA#2"
+        ],
+        "enemy_7021_xbmoth": [
+            "RA#2"
+        ],
+        "enemy_7017_miner": [
+            "RA#2"
+        ],
+        "enemy_7018_scarab": [
+            "RA#2"
+        ],
+        "enemy_7023_gatbb": [
+            "RA#2"
+        ],
+        "enemy_7022_gatgod": [
+            "RA#2"
+        ],
+        "enemy_7024_clking": [
+            "RA#2"
+        ],
+        "enemy_7025_clbb": [
+            "RA#2"
+        ],
+        "enemy_7027_xbbtl": [
+            "RA#2"
+        ],
+        "enemy_7028_xbscp": [
+            "RA#2"
+        ],
+        "enemy_7026_xbele": [
+            "RA#2"
+        ],
+        "enemy_7035_epasng": [
+            "RA#2"
+        ],
+        "enemy_7016_shushu": [
+            "RA#2"
+        ],
+        "enemy_7034_xbmsn": [
+            "RA#2"
+        ],
+        "enemy_7043_xbelep": [
+            "RA#2"
+        ],
+        "enemy_7046_xbslug": [
+            "RA#2"
+        ],
+        "enemy_7045_xbtd": [
+            "RA#2"
+        ],
+        "enemy_7044_xblbug": [
+            "RA#2"
+        ],
+        "enemy_7501_rmhslm": [
+            "RA#2"
+        ],
+        "enemy_7501_rmhslm_2": [
+            "RA#2"
+        ],
+        "enemy_7502_rslm": [
+            "RA#2"
+        ],
+        "enemy_7502_rslm_2": [
+            "RA#2"
+        ],
+        "enemy_7503_rsrchn": [
+            "RA#2"
+        ],
+        "enemy_7503_rsrchn_2": [
+            "RA#2"
+        ],
+        "enemy_7504_rmslm": [
+            "RA#2"
+        ],
+        "enemy_7504_rmslm_2": [
+            "RA#2"
+        ],
+        "enemy_7505_rbslm": [
+            "RA#2"
+        ],
+        "enemy_7505_rbslm_2": [
+            "RA#2"
+        ],
+        "enemy_7506_rscrab": [
+            "RA#2"
+        ],
+        "enemy_7507_rhrchn": [
+            "RA#2"
+        ],
+        "enemy_7507_rhrchn_2": [
+            "RA#2"
+        ],
+        "enemy_7508_raslm": [
+            "RA#2"
+        ],
+        "enemy_7508_raslm_2": [
+            "RA#2"
+        ],
+        "enemy_7509_rtrslm": [
+            "RA#2"
+        ],
+        "enemy_7510_rlslm": [
+            "RA#2"
+        ],
+        "enemy_7511_rxbl": [
+            "RA#2"
+        ],
+        "enemy_7512_rxbtd": [
+            "RA#2"
+        ],
+        "enemy_7513_rxbslg": [
+            "RA#2"
+        ],
+        "enemy_7020_xbtor": [
+            "RA#2"
+        ],
+        "enemy_7029_pilot": [
+            "RA#2"
+        ],
+        "enemy_7030_skodo": [
+            "RA#2"
+        ],
+        "enemy_7031_ghking": [
+            "RA#2"
+        ],
+        "enemy_7019_thief": [
+            "RA#2"
+        ]
+    }
+}

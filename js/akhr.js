@@ -617,7 +617,7 @@
                     if (chars.length === 0) return;
                     let minRarity = 6;
                     $.each(chars, (_, char) => {
-                        minRarity = Math.min(char.level, minRarity);
+                        minRarity = Math.min(char.level==1?3.5:char.level, minRarity);
                         // console.log(char)
                     });
                     let minRarityCount = $.grep(chars, (char, _) => char.level === minRarity).length;
