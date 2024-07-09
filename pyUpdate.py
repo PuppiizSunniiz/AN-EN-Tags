@@ -25,6 +25,7 @@ json_mod_battleEN   =   json_load("json/gamedata/en_US/gamedata/excel/battle_equ
 json_mod_table      =   json_load("json/gamedata/zh_CN/gamedata/excel/uniequip_table.json")
 json_stage          =   json_load("json/gamedata/zh_CN/gamedata/excel/stage_table.json")
 
+json_construct      =   json_load("json/gamedata/zh_CN/gamedata/excel/gamedata_const.json")
 json_constructEN    =   json_load("json/gamedata/en_US/gamedata/excel/gamedata_const.json")
 
 json_item           =   json_load("json/gamedata/zh_CN/gamedata/excel/item_table.json")
@@ -46,10 +47,10 @@ json_temp_mod       =   json_load("json/tl-module.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS = ["Nymph","Mitm"] #
+NEW_CHARS = [] #
 
 #[["OpsName#1",num(Mod)],["OpsName#2",num(Mod)], ...]
-NEW_MODS = [["Ch'en the Holungday",1],["Executor",1],['Aosta',1],["Pinecone",1],["Mitm",1],['Swire the Elegant Wit', 2],['Mostima',2]] #
+NEW_MODS = [] #
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS = [] #
@@ -58,7 +59,7 @@ NEW_MATS = [] #
 NEW_RECRUIT_CN = [] #
 NEW_RECRUIT_EN = [] #
 
-Rechecked = False # True False
+Rechecked = True # True False
 
 #########################################################################################################
 # Prep
@@ -109,7 +110,7 @@ def get_new_akhr(new_char_id : str, new_char_name : str) -> dict:
                                     "globalHidden"  : True
             }
 
-def update_new_trait(mode : str, new_id : str, new_char_name : str, new_token_key = "") -> dict:
+def update_new_trait(mode : str, new_id : str, new_char_name : str, extra = "") -> dict:
     '''
     ### Mode
         "char", "token", "mod"
@@ -117,25 +118,28 @@ def update_new_trait(mode : str, new_id : str, new_char_name : str, new_token_ke
         new_char_id     for     "char", "token"
         
         new_mod_id      for     "mod"
+    ### Extra
+        Token   new_token_key
+        Mode    Mod Code
     '''
     match mode:
         case "char":
             return  {
                         "name"  : new_char_name,
                         "code"  : new_id,
-                        "mode"  : "new char"
+                        "note"  : "new Ops Archetype trait"
                     }
         case "token":
             return  {
-                        "name"  : json_char[new_token_key]["appellation"],
-                        "code"  : new_token_key,
-                        "mode"  : f'New token from {new_char_name} {new_id}'
+                        "name"  : json_char[extra]["appellation"],
+                        "code"  : extra,
+                        "note"  : f'{new_char_name} \'s Token ({json_char[extra]["appellation"]})'
                     }
         case "mod" :
             return  {
                         "name"  : new_char_name,
                         "code"  : new_id,
-                        "mode"  :"newmods"
+                        "note"  : f'new mods (extra)'
                     }
 
 def update_char_TraitSkillTalent(new_char_name : str) :
@@ -176,7 +180,7 @@ def update_char_TraitSkillTalent(new_char_name : str) :
                     skill_id = skill["skillId"]
                     skill_tl[skill_id] = {
                                             "name"  : json_skill[skill_id]["levels"][0]["name"],
-                                            "desc"  : [json_skill[skill_id]["levels"][x]["description"] if len(json_skill[skill_id]["levels"]) == 10 else json_skill[skill_id]["levels"][0]["name"] for x in range(10)]
+                                            "desc"  : [json_skill[skill_id]["levels"][x]["description"] if len(json_skill[skill_id]["levels"]) == 10 else json_skill[skill_id]["levels"][0]["description"] for x in range(10)]
                                         }
 
 #########################################################################################################
@@ -334,9 +338,9 @@ for new_mod_list in NEW_MODS:
         new_mod_id = json_mod_table["charEquip"][char_key][new_mod_list[1]]
         mod_trait_candidate = json_mod_battle[new_mod_id]["phases"][0]["parts"][0]["overrideTraitDataBundle"]["candidates"][0]
         if mod_trait_candidate["additionalDescription"]:
-            new_trait[mod_trait_candidate["additionalDescription"]] = update_new_trait("mod",new_mod_id,new_mod_list[0])
+            new_trait[mod_trait_candidate["additionalDescription"]] = update_new_trait("mod",new_mod_id,new_mod_list[0],json_mod_table["equipDict"][new_mod_id]["typeIcon"])
         else :
-            new_trait[mod_trait_candidate["overrideDescripton"]] = update_new_trait("mod",new_mod_id,new_mod_list[0])
+            new_trait[mod_trait_candidate["overrideDescripton"]]    = update_new_trait("mod",new_mod_id,new_mod_list[0],json_mod_table["equipDict"][new_mod_id]["typeIcon"])
         temp_phase = []
         for phase in [1,2]:
             for part in json_mod_battle[new_mod_id]["phases"][phase]["parts"]:
@@ -399,6 +403,10 @@ with open("update/tl-attacktype.json",'w') as filepath :
 # Termology Update
 #########################################################################################################
 
+for term in json_construct["termDescriptionDict"]:
+    if term not in json_term["termDescriptionDict"].keys():
+        json_term["termDescriptionDict"][term] = json_construct["termDescriptionDict"][term]
+
 for term in json_term["termDescriptionDict"].keys():
     if term in json_constructEN["termDescriptionDict"].keys() and 'cc.' not in term :
         json_term["termDescriptionDict"][term] = json_constructEN["termDescriptionDict"][term]
@@ -409,6 +417,14 @@ with open("json/named_effects.json",'w') as filepath :
 #########################################################################################################
 # RIIC EN Update
 #########################################################################################################
+for riic in json_building["buffs"].keys():
+    if riic not in json_riicTL.keys():
+        json_riicTL[riic]=  {
+                            "name"          :   json_building["buffs"][riic]["buffName"],
+                            "desc"          :   json_building["buffs"][riic]["description"],
+                            "descformat"    :   json_building["buffs"][riic]["description"]
+                        }
+
 for riic in json_buildingEN["buffs"].keys():
     json_riicTL[riic]=  {
                             "name"          :   json_buildingEN["buffs"][riic]["buffName"],

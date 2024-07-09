@@ -1,8 +1,8 @@
 {
-    "skchr_ABCDEF_1": { #Ulpianus  // <@ba.vup>slightly</> <@ba.vup>moderately</> <@ba.vup>significantly</>  // charge or not ?
+    "skchr_ABCDEF_1": {     # Nymph     //
         "name": "",
         "desc": [
-            "The next attack throw an anchor forwards and drags 2 targets towards this unit <@ba.vup>slightly</>, dealing <@ba.vup>{atk_scale:0%}</> ATK as Physical damage\n<@ba.rem>Can store {cnt} charge(s)</>",
+            "ATK <@ba.vup>+{atk:0%}</>, attacks deal an additional <@ba.vup>{attack@ep_damage_ratio:0%}</> of Arts damage as <$ba.dt.apoptosis2>Necrosis damage</>; if target is under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, deal an additional <@ba.vup>{attack@extra_ep_damage_scale:0%}</> ATK as Elemental damage",
             "",
             "",
             "",
@@ -14,10 +14,10 @@
             ""
         ] 
     },
-    "skchr_ABCDEF_2": { #Ulpianus  // {talent}
+    "skchr_ABCDEF_2": {     # Nymph     //
         "name": "",
         "desc": [
-            "Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>, Block <@ba.vup>+{block_cnt}</>. The effect of the First Talent is increase to {talent}. Infinite duration\n<@ba.rem>Unlimited duration</>",
+            "Deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and inflict <$ba.dt.fear>fear</> for <@ba.vup>{duration}</> seconds to target to nearby enemies then dealing same amount Arts damage to nearby enemies. Both attack deal an additional <@ba.vup>{attack@ep_damage_ratio:0%}</> of Arts damage as <$ba.dt.apoptosis2>Necrosis damage</>; if target is under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, increase effect of the First/Second talent to <@ba.vup>{scale_delta_to_one}</>x\n<@ba.rem>Can hold {2} charge</>",
             "",
             "",
             "",
@@ -29,10 +29,10 @@
             ""
         ] 
     },
-    "skchr_ABCDEF_3": { #Ulpianus  //
+    "skchr_ABCDEF_3": {     # Nymph     //
         "name": "",
         "desc": [
-            "Max HP <@ba.vup>+{max_hp:0%}</>, ATK <@ba.vup>+{atk:0%}</>. Immediately throw an anchor forwards. The anchor stops when hitting a target or when it reaches the maximum distance, then deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to nearby enemies and <$ba.stun>stun</> targets for <@ba.vup>{attack@stun}</> seconds. If the anchor lands on a deployable tile, Ulpian moves to that tile\n<@ba.rem>Skill can be manually deactivated. When the skill ends, Ulpian returns to his original deployed tile</>",
+            "Attack Range <@ba.vup>increases</>, ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, attack <@ba.vup>1</> additional target; if target is under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, deal an additional <@ba.vup>{attack@extra_ep_damage_scale:0%}</> ATK as Elemental damage",
             "",
             "",
             "",
@@ -44,82 +44,52 @@
             ""
         ] 
     },
-    "skchr_ABCDEF_1": { #Lucilla //
+    "skchr_ABCDEF_1": {     #Mitm s1        // DP ATK
         "name": "",
         "desc": [
-            "Attack Range <@ba.vup>expands</>, ATK {ATK}. Enemies within Attack Range with HP lower than {ATK%} of Lucilla' ATK immediately defeat, and deals Arts damage equal to the defeated enemy's HP to a random target within Attack Range\n<@ba.rem>Unlimited duration</>",
-            "Attack Range <@ba.vup>expands</>, ATK {ATK}. Enemies within Attack Range with HP lower than {ATK%} of Lucilla' ATK immediately defeat, and deals Arts damage equal to the defeated enemy's HP to a random target within Attack Range\n<@ba.rem>Unlimited duration</>",
-            "Attack Range <@ba.vup>expands</>, ATK {ATK}. Enemies within Attack Range with HP lower than {ATK%} of Lucilla' ATK immediately defeat, and deals Arts damage equal to the defeated enemy's HP to a random target within Attack Range\n<@ba.rem>Unlimited duration</>",
-            "Attack Range <@ba.vup>expands</>, ATK {ATK}. Enemies within Attack Range with HP lower than {ATK%} of Lucilla' ATK immediately defeat, and deals Arts damage equal to the defeated enemy's HP to a random target within Attack Range\n<@ba.rem>Unlimited duration</>",
-            "Attack Range <@ba.vup>expands</>, ATK {ATK}. Enemies within Attack Range with HP lower than {ATK%} of Lucilla' ATK immediately defeat, and deals Arts damage equal to the defeated enemy's HP to a random target within Attack Range\n<@ba.rem>Unlimited duration</>",
-            "Attack Range <@ba.vup>expands</>, ATK {ATK}. Enemies within Attack Range with HP lower than {ATK%} of Lucilla' ATK immediately defeat, and deals Arts damage equal to the defeated enemy's HP to a random target within Attack Range\n<@ba.rem>Unlimited duration</>",
-            "Attack Range <@ba.vup>expands</>, ATK {ATK}. Enemies within Attack Range with HP lower than {ATK%} of Lucilla' ATK immediately defeat, and deals Arts damage equal to the defeated enemy's HP to a random target within Attack Range\n<@ba.rem>Unlimited duration</>",
-            "Attack Range <@ba.vup>expands</>, ATK {ATK}. Enemies within Attack Range with HP lower than {ATK%} of Lucilla' ATK immediately defeat, and deals Arts damage equal to the defeated enemy's HP to a random target within Attack Range\n<@ba.rem>Unlimited duration</>",
-            "Attack Range <@ba.vup>expands</>, ATK {ATK}. Enemies within Attack Range with HP lower than {ATK%} of Lucilla' ATK immediately defeat, and deals Arts damage equal to the defeated enemy's HP to a random target within Attack Range\n<@ba.rem>Unlimited duration</>",
-            "Attack Range <@ba.vup>expands</>, ATK {ATK}. Enemies within Attack Range with HP lower than {ATK%} of Lucilla' ATK immediately defeat, and deals Arts damage equal to the defeated enemy's HP to a random target within Attack Range\n<@ba.rem>Unlimited duration</>"
+            "Immediately gains <@ba.vup>{ABCDEF_s_1[once].cost}</> Deployment Points. Detonates Cherry-3 and dealing <@ba.vup>+{atk:0%}</> as Physical damage to enemies within the four surrounding tiles.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ] 
     },
-    "skchr_ABCDEF_2": { #Lucilla // 
+    "skchr_ABCDEF_2": {     #Mitm s2        // DP ATK Block DEF
         "name": "",
         "desc": [
-            "RES+{RES}. Attack change to lock-on target and continue dealing Art damage to them. Attacks against the same target gradually increase in damage up to {damage} and gradually reduce their Movement Speed up to {mspd} (reaches the limit in {rampup} seconds after lock-on). When interrupted or the target is defeated, lock-on to a new target and reset the effects",
-            "RES+{RES}. Attack change to lock-on target and continue dealing Art damage to them. Attacks against the same target gradually increase in damage up to {damage} and gradually reduce their Movement Speed up to {mspd} (reaches the limit in {rampup} seconds after lock-on). When interrupted or the target is defeated, lock-on to a new target and reset the effects",
-            "RES+{RES}. Attack change to lock-on target and continue dealing Art damage to them. Attacks against the same target gradually increase in damage up to {damage} and gradually reduce their Movement Speed up to {mspd} (reaches the limit in {rampup} seconds after lock-on). When interrupted or the target is defeated, lock-on to a new target and reset the effects",
-            "RES+{RES}. Attack change to lock-on target and continue dealing Art damage to them. Attacks against the same target gradually increase in damage up to {damage} and gradually reduce their Movement Speed up to {mspd} (reaches the limit in {rampup} seconds after lock-on). When interrupted or the target is defeated, lock-on to a new target and reset the effects",
-            "RES+{RES}. Attack change to lock-on target and continue dealing Art damage to them. Attacks against the same target gradually increase in damage up to {damage} and gradually reduce their Movement Speed up to {mspd} (reaches the limit in {rampup} seconds after lock-on). When interrupted or the target is defeated, lock-on to a new target and reset the effects",
-            "RES+{RES}. Attack change to lock-on target and continue dealing Art damage to them. Attacks against the same target gradually increase in damage up to {damage} and gradually reduce their Movement Speed up to {mspd} (reaches the limit in {rampup} seconds after lock-on). When interrupted or the target is defeated, lock-on to a new target and reset the effects",
-            "RES+{RES}. Attack change to lock-on target and continue dealing Art damage to them. Attacks against the same target gradually increase in damage up to {damage} and gradually reduce their Movement Speed up to {mspd} (reaches the limit in {rampup} seconds after lock-on). When interrupted or the target is defeated, lock-on to a new target and reset the effects",
-            "RES+{RES}. Attack change to lock-on target and continue dealing Art damage to them. Attacks against the same target gradually increase in damage up to {damage} and gradually reduce their Movement Speed up to {mspd} (reaches the limit in {rampup} seconds after lock-on). When interrupted or the target is defeated, lock-on to a new target and reset the effects",
-            "RES+{RES}. Attack change to lock-on target and continue dealing Art damage to them. Attacks against the same target gradually increase in damage up to {damage} and gradually reduce their Movement Speed up to {mspd} (reaches the limit in {rampup} seconds after lock-on). When interrupted or the target is defeated, lock-on to a new target and reset the effects",
-            "RES+{RES}. Attack change to lock-on target and continue dealing Art damage to them. Attacks against the same target gradually increase in damage up to {damage} and gradually reduce their Movement Speed up to {mspd} (reaches the limit in {rampup} seconds after lock-on). When interrupted or the target is defeated, lock-on to a new target and reset the effects"
-        ] 
-    },
-    "skchr_ABCDEF_1": { # Underflow //
-        "name": "",
-        "desc": [
-            "ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
-            "ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
-            "ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
-            "ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
-            "ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
-            "ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
-            "ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
-            "ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
-            "ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
-            "ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>"
-        ] 
-    },
-    "skchr_ABCDEF_2": { # Underflow // aspd + slow duration
-        "name": "",
-        "desc": [
-            "Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{aspd:0%}</>. Attack change to firing poisonous fin spines forward, piercing through and <$ba.sluggish>Slow</> enemies for {duration} seconds",
-            "Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{aspd:0%}</>. Attack change to firing poisonous fin spines forward, piercing through and <$ba.sluggish>Slow</> enemies for {duration} seconds",
-            "Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{aspd:0%}</>. Attack change to firing poisonous fin spines forward, piercing through and <$ba.sluggish>Slow</> enemies for {duration} seconds",
-            "Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{aspd:0%}</>. Attack change to firing poisonous fin spines forward, piercing through and <$ba.sluggish>Slow</> enemies for {duration} seconds",
-            "Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{aspd:0%}</>. Attack change to firing poisonous fin spines forward, piercing through and <$ba.sluggish>Slow</> enemies for {duration} seconds",
-            "Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{aspd:0%}</>. Attack change to firing poisonous fin spines forward, piercing through and <$ba.sluggish>Slow</> enemies for {duration} seconds",
-            "Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{aspd:0%}</>. Attack change to firing poisonous fin spines forward, piercing through and <$ba.sluggish>Slow</> enemies for {duration} seconds",
-            "Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{aspd:0%}</>. Attack change to firing poisonous fin spines forward, piercing through and <$ba.sluggish>Slow</> enemies for {duration} seconds",
-            "Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{aspd:0%}</>. Attack change to firing poisonous fin spines forward, piercing through and <$ba.sluggish>Slow</> enemies for {duration} seconds",
-            "Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{aspd:0%}</>. Attack change to firing poisonous fin spines forward, piercing through and <$ba.sluggish>Slow</> enemies for {duration} seconds"
+            "Gradually gains <@ba.vup>{value}</> DP over the skill duration. ATK <@ba.vup>+{atk:0%}</>. Cherry-3 stops attacking; Block <@ba.vup>+{block_cnt}</>, DEF <@ba.vup>+{def:0%}</>\n<@ba.rem>Detonates Cherry-3 when skill ends</>",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
         ] 
     }
 }
 
 #template
 
-"skchr_ABCDEF_X": {
-    "name": "",
-    "desc": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-    ] 
-}
+    "skchr_ABCDEF_X": {
+        "name": "",
+        "desc": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ] 
+    }

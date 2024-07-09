@@ -1,14 +1,49 @@
 {
-    "char_XXXX_ABCDEF": [   #Ulpianus   // Talent 1 {HP} {effect}
-                                        // Talent 2
+    "char_XXXX_ABCDEF": [ <<<  # Nymph   // Talent 1 : 
+                                        // Talent 2 : 
         [
             {
                 "name": "",
-                "desc": "When attacked, recover {HP} HP. Effect increase by {effect} when HP less than 50%"
+                "desc": "When attacking target under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, deal an additional <@ba.vup>{attack@extra_ep_damage_scale:0%}</> ATK as Elemental damage per second until the burst effect of <$ba.dt.apoptosis2>Necrosis damage</> end"
             },
             {
                 "name": "<@ba.talpu></>",
-                "desc": "When attacked, recover {HP}<@ba.talpu>(+)</> HP. Effect increase by {effect} when HP less than 50%"
+                "desc": ""
+            }
+        ],
+        [
+            {
+                "name": "",
+                "desc": "When attacking target under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, deal an additional <@ba.vup>{attack@extra_ep_damage_scale:0%}</> ATK as Elemental damage per second until the burst effect of <$ba.dt.apoptosis2>Necrosis damage</> end"
+            },
+            {
+                "name": "<@ba.talpu></>",
+                "desc": ""
+            }
+        ]
+    ],
+    "char_XXXX_ABCDEF": [ <<<  # Mitm   // Talent 1 : 
+        [
+            {
+                "name": "",
+                "desc": "Can summon Cherry-3 to assist in combat from a Tactical Point; Cherry-3 will automatically respawn 15s after being defeated and create Debris in the 4 surrounding tiles"
+            }
+        ]
+    ]
+}
+
+#template
+
+    "char_XXXX_ABCDEF": [   # ABCDEF   // Talent 1 : 
+                                        // Talent 2 : 
+        [
+            {
+                "name": "",
+                "desc": ""
+            },
+            {
+                "name": "<@ba.talpu></>",
+                "desc": ""
             }
         ],
         [
@@ -21,67 +56,17 @@
                 "desc": ""
             }
         ]
-    ],
-    "char_XXXX_ABCDEF": [   #Lucilla   // Talent 1 {fragile}
+    ]
+
+    "char_XXXX_ABCDEF": [   # ABCDEF   // Talent 1 : 
         [
             {
                 "name": "",
-                "desc": "Inflict {fragile} <$ba.fragile>Fragile</> to non-Elite and non-Boss in Attack Range"
+                "desc": ""
             },
             {
                 "name": "<@ba.talpu></>",
-                "desc": "Inflict {fragile}<@ba.talpu>(+%)</> <$ba.fragile>Fragile</> to non-Elite and non-Boss in Attack Range"
-            }
-        ]
-    ],
-    "char_XXXX_ABCDEF": [   #Underflow  // Talent 1 Damage + Duration
-            {
-                "name": "",
-                "desc": "Poisons the targets when attacking, dealing {80} Arts damage to them per second, lasting {3} seconds (damage is doubled against [Sea Monster])"
-            },
-            {
-                "name": "<@ba.talpu></>",
-                "desc": "Poisons the targets when attacking, dealing {80}<@ba.talpu>(+10)</> Arts damage to them per second, lasting {3} seconds (damage is doubled against [Sea Monster])"
+                "desc": ""
             }
         ]
     ]
-}
-
-#template
-
-"char_XXXX_ABCDEF": [   # ABCDEF   // Talent 1 : 
-                                    // Talent 2 : 
-    [
-        {
-            "name": "",
-            "desc": ""
-        },
-        {
-            "name": "<@ba.talpu></>",
-            "desc": ""
-        }
-    ],
-    [
-        {
-            "name": "",
-            "desc": ""
-        },
-        {
-            "name": "<@ba.talpu></>",
-            "desc": ""
-        }
-    ]
-]
-
-"char_XXXX_ABCDEF": [   #Wis’adel   // Talent 1 : 
-    [
-        {
-            "name": "",
-            "desc": ""
-        },
-        {
-            "name": "<@ba.talpu></>",
-            "desc": ""
-        }
-    ]
-]

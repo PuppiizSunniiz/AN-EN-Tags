@@ -1,12 +1,12 @@
 # Arknight-Image
 ## Schedule
 - Char
-    - new Class / Archetype
+    - new Class / Archetype icon
     - new Avatar
     - new Skill icon
     - new IIRC icon
     - new Char AVG skin
-    - new Char Avatar skin
+    - new Char skin Avatar
 - Token
     - new char Token avatar
 - Mod
@@ -29,6 +29,7 @@
 ## Fix
     - Token stat not update when change click char elite stat
     - Original Mod image (001) not work for every ops somehow (ex.pallas original but aak 001)
+    - Investigate why range appear in mod talent when base mode trait expand Range (Multi medic / Splash caster)
 ## To do
     - apply isAmiya to Amiya EN GetStory when EP14 come
 ## Later

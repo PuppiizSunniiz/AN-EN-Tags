@@ -4541,7 +4541,7 @@
             "levelId": "Activities/act16mini/level_act16mini_01",
             "zoneId": "act16mini_zone1",
             "code": "TG-1",
-            "name": "双向通风",
+            "name": "Bilateral Ventilation",
             "Event": "act16mini"
         },
         "act16mini_02": {
@@ -4549,7 +4549,7 @@
             "levelId": "Activities/act16mini/level_act16mini_02",
             "zoneId": "act16mini_zone1",
             "code": "TG-2",
-            "name": "热熔采掘",
+            "name": "Heat Drilling",
             "Event": "act16mini"
         },
         "act16mini_03": {
@@ -4557,7 +4557,7 @@
             "levelId": "Activities/act16mini/level_act16mini_03",
             "zoneId": "act16mini_zone1",
             "code": "TG-3",
-            "name": "不安全出口",
+            "name": "Unsafe Exit",
             "Event": "act16mini"
         },
         "act16mini_04": {
@@ -4565,7 +4565,7 @@
             "levelId": "Activities/act16mini/level_act16mini_04",
             "zoneId": "act16mini_zone1",
             "code": "TG-4",
-            "name": "冻结壁交圈",
+            "name": "Frozen Circle",
             "Event": "act16mini"
         },
         "act16mini_05": {
@@ -4573,7 +4573,7 @@
             "levelId": "Activities/act16mini/level_act16mini_05",
             "zoneId": "act16mini_zone1",
             "code": "TG-5",
-            "name": "起爆自由面",
+            "name": "Freedom of Explosion",
             "Event": "act16mini"
         },
         "act16mini_06": {
@@ -4581,7 +4581,7 @@
             "levelId": "Activities/act16mini/level_act16mini_06",
             "zoneId": "act16mini_zone1",
             "code": "TG-6",
-            "name": "最小抵抗线",
+            "name": "Front of Least Resistance",
             "Event": "act16mini"
         },
         "act16mini_07": {
@@ -4589,7 +4589,7 @@
             "levelId": "Activities/act16mini/level_act16mini_07",
             "zoneId": "act16mini_zone1",
             "code": "TG-7",
-            "name": "牵引山岩",
+            "name": "Moving Mountains",
             "Event": "act16mini"
         },
         "act16mini_08": {
@@ -4597,7 +4597,7 @@
             "levelId": "Activities/act16mini/level_act16mini_08",
             "zoneId": "act16mini_zone1",
             "code": "TG-8",
-            "name": "主要运输巷",
+            "name": "Prime Alley",
             "Event": "act16mini"
         },
         "act16mini_s01": {
@@ -4605,7 +4605,7 @@
             "levelId": "Activities/act16mini/level_act16mini_sub-1-1",
             "zoneId": "act16mini_zone1",
             "code": "TG-S-1",
-            "name": "穿洞绳操作指南",
+            "name": "Spelunking Rope Manual",
             "Event": "act16mini"
         },
         "act16mini_s02": {
@@ -4613,7 +4613,7 @@
             "levelId": "Activities/act16mini/level_act16mini_sub-2-1",
             "zoneId": "act16mini_zone1",
             "code": "TG-S-2",
-            "name": "升罐笼注意事项",
+            "name": "Important Elevator Information",
             "Event": "act16mini"
         },
         "act30side_tr01": {
@@ -6085,7 +6085,7 @@
             "levelId": "Activities/act23side/level_act23side_07",
             "zoneId": "act23sre_zone1",
             "code": "WB-7",
-            "name": "'Wind Aegis'",
+            "name": "Wind Aegis",
             "Event": "act23side"
         },
         "act23side_08": {
@@ -6101,7 +6101,7 @@
             "levelId": "Activities/act23side/level_act23side_09",
             "zoneId": "act23sre_zone1",
             "code": "WB-9",
-            "name": "'Hibernate'",
+            "name": "Hibernate",
             "Event": "act23side"
         },
         "act23side_ex01": {
@@ -10733,7 +10733,7 @@
             "levelId": "Obt/Campaign/level_camp_r_20",
             "zoneId": "camp_zone_2",
             "code": "camp_r_20",
-            "name": "千嶂边城",
+            "name": "Mountain-Ringed Border Town",
             "Event": "camp_r_20"
         },
         "camp_r_21": {
@@ -11077,7 +11077,7 @@
             "levelId": "Obt/Legion/LT11/level_lt11_01",
             "zoneId": "tower_n_11",
             "code": "LT-1",
-            "name": "巡检作业",
+            "name": "Patrolling Task",
             "Event": "lt11"
         },
         "lt_11_02": {
@@ -11085,7 +11085,7 @@
             "levelId": "Obt/Legion/LT11/level_lt11_02",
             "zoneId": "tower_n_11",
             "code": "LT-2",
-            "name": "空地协同作业",
+            "name": "Glade Collaboration Task",
             "Event": "lt11"
         },
         "lt_11_03": {
@@ -11093,7 +11093,7 @@
             "levelId": "Obt/Legion/LT11/level_lt11_03",
             "zoneId": "tower_n_11",
             "code": "LT-3",
-            "name": "喷洒作业",
+            "name": "Irrigation Task",
             "Event": "lt11"
         },
         "lt_11_04": {
@@ -11101,7 +11101,7 @@
             "levelId": "Obt/Legion/LT11/level_lt11_04",
             "zoneId": "tower_n_11",
             "code": "LT-4",
-            "name": "播撒作业",
+            "name": "Sowing Task",
             "Event": "lt11"
         },
         "lt_11_05": {
@@ -11109,7 +11109,7 @@
             "levelId": "Obt/Legion/LT11/level_lt11_05",
             "zoneId": "tower_n_11",
             "code": "LT-5",
-            "name": "聚群作业",
+            "name": "Crowding Task",
             "Event": "lt11"
         },
         "lt_11_06": {
@@ -11117,7 +11117,7 @@
             "levelId": "Obt/Legion/LT11/level_lt11_06",
             "zoneId": "tower_n_11",
             "code": "LT-6",
-            "name": "净空作业",
+            "name": "Clearing Task",
             "Event": "lt11"
         },
         "lt_12_01": {
@@ -11125,7 +11125,7 @@
             "levelId": "Obt/Legion/LT12/level_lt12_01",
             "zoneId": "tower_n_12",
             "code": "LT-1",
-            "name": "骚乱肇始",
+            "name": "Disturbance's Beginning",
             "Event": "lt12"
         },
         "lt_12_02": {
@@ -11133,7 +11133,7 @@
             "levelId": "Obt/Legion/LT12/level_lt12_02",
             "zoneId": "tower_n_12",
             "code": "LT-2",
-            "name": "如此助威",
+            "name": "Pronounced Cheering",
             "Event": "lt12"
         },
         "lt_12_03": {
@@ -11141,7 +11141,7 @@
             "levelId": "Obt/Legion/LT12/level_lt12_03",
             "zoneId": "tower_n_12",
             "code": "LT-3",
-            "name": "破栏而出",
+            "name": "Breaking Barriers",
             "Event": "lt12"
         },
         "lt_12_04": {
@@ -11149,7 +11149,7 @@
             "levelId": "Obt/Legion/LT12/level_lt12_04",
             "zoneId": "tower_n_12",
             "code": "LT-4",
-            "name": "增幅呐喊",
+            "name": "Growing Vociferation",
             "Event": "lt12"
         },
         "lt_12_05": {
@@ -11157,7 +11157,7 @@
             "levelId": "Obt/Legion/LT12/level_lt12_05",
             "zoneId": "tower_n_12",
             "code": "LT-5",
-            "name": "冲上看台",
+            "name": "Bleachers Outrush",
             "Event": "lt12"
         },
         "lt_12_06": {
@@ -11165,7 +11165,7 @@
             "levelId": "Obt/Legion/LT12/level_lt12_06",
             "zoneId": "tower_n_12",
             "code": "LT-6",
-            "name": "阿卡胡拉之巅",
+            "name": "Acahuallan Peak",
             "Event": "lt12"
         },
         "lt_13_01": {

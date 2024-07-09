@@ -622,7 +622,7 @@
                 </tbody>
             </table>
         
-            `) // 
+            `)
         currHtml.push(`</div>`)
         if(firstEnemyData.talentBlackboard){
             enemytalentBlackboard = currEnemyData.talentBlackboard?currEnemyData.talentBlackboard:firstEnemyData.talentBlackboard

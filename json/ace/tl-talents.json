@@ -7069,5 +7069,50 @@
                 "desc": "When attacking, dealing 90<@ba.talpu>(+10)</> Arts damage to them per second, lasting 3 seconds (damage is doubled against [Sea Monster])"
             }
         ]
+    ],
+	"char_4146_nymph": [
+        [
+            {
+                "name": "失魂",
+                "descCN": "攻击处于<$ba.dt.apoptosis2>凋亡损伤</>爆发期间的敌人时使其每秒受到相当于攻击力30%的元素伤害，持续至<$ba.dt.apoptosis2>凋亡损伤</>爆发结束",
+                "desc": "When attacking target under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, deal an additional 30% ATK as Elemental damage per second until the burst effect of <$ba.dt.apoptosis2>Necrosis damage</> end"
+            },
+            {
+                "name": "失魂",
+                "descCN": "攻击处于<$ba.dt.apoptosis2>凋亡损伤</>爆发期间的敌人时使其每秒受到相当于攻击力40%的元素伤害，持续至<$ba.dt.apoptosis2>凋亡损伤</>爆发结束",
+                "desc": "When attacking target under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, deal an additional 40% ATK as Elemental damage per second until the burst effect of <$ba.dt.apoptosis2>Necrosis damage</> end"
+            }
+        ],
+        [
+            {
+                "name": "窥心钥",
+                "descCN": "每当自身攻击范围内敌人<$ba.dt.apoptosis2>凋亡损伤</>爆发，攻击力+2%，最多可叠加10层",
+                "desc": "When <$ba.dt.apoptosis2>Necrosis damage</> burst in Attack Range, ATK+2% (Can stack 10 times)"
+            },
+            {
+                "name": "窥心钥",
+                "descCN": "每当自身攻击范围内敌人<$ba.dt.apoptosis2>凋亡损伤</>爆发，攻击力+2%，最多可叠加12<@ba.talpu>（+2）</>层",
+                "desc": "When <$ba.dt.apoptosis2>Necrosis damage</> burst in Attack Range, ATK+2% (Can stack 12<@ba.talpu>(+2)</> times)"
+            }
+        ]
+    ],
+    "char_4147_mitm": [
+        [
+            {
+                "name": "废品战车",
+                "descCN": "可以在战术点召唤樱桃三号协助作战，其被击败后会在20秒后自动刷新，并在周围四格生成残骸",
+                "desc": "Can summon Cherry-3 to assist in combat from a Tactical Point; Cherry-3 will automatically respawn 20s after being defeated and create Debris in the 4 surrounding tiles"
+            },
+            {
+                "name": "废品战车",
+                "descCN": "可以在战术点召唤樱桃三号协助作战，其被击败后会在17秒后自动刷新，并在周围四格生成残骸",
+                "desc": "Can summon Cherry-3 to assist in combat from a Tactical Point; Cherry-3 will automatically respawn 17s after being defeated and create Debris in the 4 surrounding tiles"
+            },
+            {
+                "name": "废品战车",
+                "descCN": "可以在战术点召唤樱桃三号协助作战，其被击败后会在15秒后自动刷新，并在周围四格生成残骸",
+                "desc": "Can summon Cherry-3 to assist in combat from a Tactical Point; Cherry-3 will automatically respawn 15s after being defeated and create Debris in the 4 surrounding tiles"
+            }
+        ]
     ]
 }

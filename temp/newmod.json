@@ -1,163 +1,140 @@
 {
 
-    "uniequip_00X_ABCDEF": [ Ray    // {damage} {redeploy time}
+    "uniequip_002_chen2": [     # Ch'en the Holungday      // {chance} also other chance ? // ranged also mod 2 ?
         [
             {
-                "name": "Patrol Partner",
-                "upgradeDescription": "Can summon a Sand Beast within Attack Range for 25 seconds. The Sand Beast scouts the area and extends Ray's Attack Range. Ray will prioritize targets within the scouting area and deal increased Physical damage by {damage}. Sandbeast redeployment time {redeploy time}"
+                "name": "Frugality",
+                "upgradeDescription": "When deployed, Ch'en's ammo-based skills have {chance} chance to not consume the corresponding ammo for each shot; Other Sniper Operators' ammo-based skills have 10% chance instead (only the highest effect of this type will be applied)"
+            },
+            {
+                "name": "Frugality",
+                "upgradeDescription": "When deployed, Ch'en's ammo-based skills have {chance} <@ba.talpu>(+2%)</> chance to not consume the corresponding ammo for each shot; Other Sniper Operators' ammo-based skills have 10% chance instead (only the highest effect of this type will be applied)"
             }
-
         ],
         [
             {
-                "name": "Patrol Partner",
-                "upgradeDescription": "Can summon a Sand Beast within Attack Range for 25 seconds. The Sand Beast scouts the area and extends Ray's Attack Range. Ray will prioritize targets within the scouting area and deal increased Physical damage by {damage}. Sandbeast redeployment time {redeploy time}"
+                "name": "Frugality",
+                "upgradeDescription": "When deployed, Ch'en's ammo-based skills have {chance} chance to not consume the corresponding ammo for each shot; Other Ranged Operators' ammo-based skills have 10% chance instead (only the highest effect of this type will be applied)"
+            },
+            {
+                "name": "Frugality",
+                "upgradeDescription": "When deployed, Ch'en's ammo-based skills have {chance} <@ba.talpu>(+2%)</> chance to not consume the corresponding ammo for each shot; Other Ranged Operators' ammo-based skills have 10% chance instead (only the highest effect of this type will be applied)"
             }
         ]
     ],
-    "uniequip_00X_ABCDEF": [ Coldshot   // {damage}
+    "uniequip_002_excu": [      # Executor        // {def_ignore}
         [
             {
-                "name": "Not to be Outdone",
-                "upgradeDescription": "If no attack is made for 2 seconds, the next attack deals {damage} ATK as Physical damage"
+                "name": "Final Modification",
+                "upgradeDescription": "Attacks ignore {def_ignore} DEF"
             },
             {
-                "name": "Not to be Outdone",
-                "upgradeDescription": "If no attack is made for 2 seconds, the next attack deals {damage} <@ba.talpu>(+3%)</> ATK as Physical damage"
+                "name": "Final Modification",
+                "upgradeDescription": "Attacks ignore {def_ignore} <@ba.talpu>(+15)</> DEF"
             }
         ],
         [
             {
-                "name": "Not to be Outdone",
-                "upgradeDescription": "If no attack is made for 2 seconds, the next attack deals {damage} ATK as Physical damage"
+                "name": "Final Modification",
+                "upgradeDescription": "Attacks ignore {def_ignore} DEF"
             },
             {
-                "name": "Not to be Outdone",
-                "upgradeDescription": "If no attack is made for 2 seconds, the next attack deals {damage} <@ba.talpu>(+3%)</> ATK as Physical damage"
+                "name": "Final Modification",
+                "upgradeDescription": "Attacks ignore {def_ignore} <@ba.talpu>(+15)</> DEF"
             }
         ]
     ],
-    "uniequip_00X_ABCDEF": [ Lucilla    // {fragile}
+    "uniequip_002_aosta": [     # Aosta       //  {%ATK}      {bleed_duration}
         [
             {
-                "name": "",
-                "upgradeDescription": "Inflict {fragile} <$ba.fragile>Fragile</> to non-Elite and non-Boss in Attack Range"
+                "name": "Sharp Nails",
+                "upgradeDescription": "Attacks inflict Bleed to unblocked enemies, dealing {%ATK} ATK as Arts damage (unaffected by trait) every second for {bleed_duration} seconds"
             },
             {
-                "name": "",
-                "upgradeDescription": "Inflict {fragile}<@ba.talpu>(+%)</> <$ba.fragile>Fragile</> to non-Elite and non-Boss in Attack Range"
+                "name": "Sharp Nails",
+                "upgradeDescription": "Attacks inflict Bleed to unblocked enemies, dealing {%ATK} <@ba.talpu>(+2%)</> ATK as Arts damage (unaffected by trait) every second for {bleed_duration} seconds"
             }
         ],
         [
             {
-                "name": "",
-                "upgradeDescription": "Inflict {fragile} <$ba.fragile>Fragile</> to non-Elite and non-Boss in Attack Range"
+                "name": "Sharp Nails",
+                "upgradeDescription": "Attacks inflict Bleed to unblocked enemies, dealing {%ATK} ATK as Arts damage (unaffected by trait) every second for {bleed_duration} seconds"
             },
             {
-                "name": "",
-                "upgradeDescription": "Inflict {fragile}<@ba.talpu>(+%)</> <$ba.fragile>Fragile</> to non-Elite and non-Boss in Attack Range"
+                "name": "Sharp Nails",
+                "upgradeDescription": "Attacks inflict Bleed to unblocked enemies, dealing {%ATK} <@ba.talpu>(+2%)</> ATK as Arts damage (unaffected by trait) every second for {bleed_duration} seconds"
             }
         ]
     ],
-    "uniequip_00X_ABCDEF": [ Underflow  // {damage}
+    "uniequip_002_pinecn": [        # Pinecone        // {+sp} {sp_duration}
         [
             {
-                "name": "",
-                "upgradeDescription": "Poisons the targets when attacking, dealing {80} Arts damage to them per second, lasting 3 seconds (damage is doubled against [Sea Monster])"
+                "name": "Portable Energy Source",
+                "upgradeDescription": "Improves own SP recovery rate by {+sp}/second for {sp_duration} seconds after deployment"
             },
             {
-                "name": "",
-                "upgradeDescription": "Poisons the targets when attacking, dealing {80}<@ba.talpu>(+10)</> Arts damage to them per second, lasting 3 seconds (damage is doubled against [Sea Monster])"
+                "name": "Portable Energy Source",
+                "upgradeDescription": "Improves own SP recovery rate by {+sp} <@ba.talpu>(+0.05)</>/second for {sp_duration} seconds after deployment"
             }
         ],
         [
             {
-                "name": "",
-                "upgradeDescription": "Poisons the targets when attacking, dealing {80} Arts damage to them per second, lasting 3 seconds (damage is doubled against [Sea Monster])"
+                "name": "Portable Energy Source",
+                "upgradeDescription": "Improves own SP recovery rate by {+sp}/second for {sp_duration} seconds after deployment"
             },
             {
-                "name": "",
-                "upgradeDescription": "Poisons the targets when attacking, dealing {80}<@ba.talpu>(+10)</> Arts damage to them per second, lasting 3 seconds (damage is doubled against [Sea Monster])"
+                "name": "Portable Energy Source",
+                "upgradeDescription": "Improves own SP recovery rate by {+sp} <@ba.talpu>(+0.05)</>/second for {sp_duration} seconds after deployment"
             }
         ]
     ],
-    "uniequip_00X_ABCDEF": [ Amiya (Medic)  // {MaxHP} {MaxHP_regen}
+    "uniequip_002_ABCDEF": [    <<<    # Mitm      //; Debris HP + {%HP}
         [
             {
                 "name": "",
-                "upgradeDescription": "When deployed, increase all allies' Max HP by {MaxHP}. When skill is active, all allies recover {MaxHP_regen} Max HP every second"
+                "upgradeDescription": "Can summon Cherry-3 to assist in combat from a Tactical Point; Cherry-3 will automatically respawn 15s after being defeated and create Debris in the 4 surrounding tiles; Debris HP + {%HP}"
             }
         ],
         [
             {
                 "name": "",
-                "upgradeDescription": "When deployed, increase all allies' Max HP by {MaxHP}. When skill is active, all allies recover {MaxHP_regen} Max HP every second"
+                "upgradeDescription": "Can summon Cherry-3 to assist in combat from a Tactical Point; Cherry-3 will automatically respawn 15s after being defeated and create Debris in the 4 surrounding tiles; Debris HP + {%HP}"
             }
         ]
     ],
-    "uniequip_00X_ABCDEF": [ Ifrit  // {magic_resistance} {ATK%}
+    "uniequip_003_swire2": [        # Swire the Elegant Wit     // {DP_cost} -> double increase change to what ???
         [
             {
-                "name": "Spiritual Dissolution",
-                "upgradeDescription": "RES of enemies within range {magic_resistance}. If target is under the burst effect of <$ba.dt.burning2>Burn damage</>, deal an additional {ATK%} ATK as Elemental damage"
+                "name": "Cash Claps Calamity",
+                "upgradeDescription": "Upon receiving lethal damage, as long as enough DP is available, consumes {DP_cost} DP to restore this unit's HP to 70%; the cost of this Talent doubles every time it is activated"
             },
             {
-                "name": "Spiritual Dissolution",
-                "upgradeDescription": "RES of enemies within range {magic_resistance}<@ba.talpu>(+4%)</>. If target is under the burst effect of <$ba.dt.burning2>Burn damage</>, deal an additional {ATK%} ATK as Elemental damage"
+                "name": "Cash Claps Calamity",
+                "upgradeDescription": "Upon receiving lethal damage, as long as enough DP is available, consumes {DP_cost} DP to restore this unit's HP to 80% <@ba.talpu>(+10%)</>; the cost of this Talent doubles every time it is activated"
             }
         ],
         [
             {
-                "name": "Spiritual Dissolution",
-                "upgradeDescription": "RES of enemies within range {magic_resistance}. If target is under the burst effect of <$ba.dt.burning2>Burn damage</>, deal an additional {ATK%} ATK as Elemental damage"
+                "name": "Cash Claps Calamity",
+                "upgradeDescription": "Upon receiving lethal damage, as long as enough DP is available, consumes {DP_cost} DP to restore this unit's HP to 70%; the cost of this Talent doubles every time it is activated"
             },
             {
-                "name": "Spiritual Dissolution",
-                "upgradeDescription": "RES of enemies within range {magic_resistance}<@ba.talpu>(+4%)</>. If target is under the burst effect of <$ba.dt.burning2>Burn damage</>, deal an additional {ATK%} ATK as Elemental damage"
+                "name": "Cash Claps Calamity",
+                "upgradeDescription": "Upon receiving lethal damage, as long as enough DP is available, consumes {DP_cost} DP to restore this unit's HP to 80% <@ba.talpu>(+10%)</>; the cost of this Talent doubles every time it is activated"
             }
         ]
     ],
-    "uniequip_00X_ABCDEF": [ Gladiia    // {ATK%}
+    "uniequip_003_mostma": [        # Mostima     // {caster_SP} Mostima gain {somthing} increase
         [
             {
-                "name": "Survival of the Fittest",
-                "upgradeDescription": "When attacking enemies with 3 or less weight, increase ATK to {ATK%}"
-            },
-            {
-                "name": "Survival of the Fittest",
-                "upgradeDescription": "When attacking enemies with 3 or less weight, increase ATK to {ATK%}<@ba.talpu>(+6%)</>"
+                "name": "Skill Aura - Caster",
+                "upgradeDescription": "When deployed, increases the SP recovery rate of all Casters by {caster_SP}/second (only the highest effect of this type takes place)"
             }
         ],
         [
             {
-                "name": "Survival of the Fittest",
-                "upgradeDescription": "When attacking enemies with 3 or less weight, increase ATK to {ATK%}"
-            },
-            {
-                "name": "Survival of the Fittest",
-                "upgradeDescription": "When attacking enemies with 3 or less weight, increase ATK to {ATK%}<@ba.talpu>(+6%)</>"
-            }
-        ]
-    ],
-    "uniequip_00X_ABCDEF": [ Penance    // {ATK%}
-        [
-            {
-                "name": "Wreathed in Thorns",
-                "upgradeDescription": "Each time this unit is attacked while under the effect of her own <$ba.barrier>Barrier</>, deals {ATK%} ATK as Arts damage to the attacker"
-            },
-            {
-                "name": "Wreathed in Thorns",
-                "upgradeDescription": "Each time this unit is attacked while under the effect of her own <$ba.barrier>Barrier</>, deals {ATK%} <@ba.talpu>(+3%)</> ATK as Arts damage to the attacker"
-            }
-        ],
-        [
-            {
-                "name": "Wreathed in Thorns",
-                "upgradeDescription": "Each time this unit is attacked while under the effect of her own <$ba.barrier>Barrier</>, deals {ATK%} ATK as Arts damage to the attacker"
-            },
-            {
-                "name": "Wreathed in Thorns",
-                "upgradeDescription": "Each time this unit is attacked while under the effect of her own <$ba.barrier>Barrier</>, deals {ATK%} <@ba.talpu>(+3%)</> ATK as Arts damage to the attacker"
+                "name": "Skill Aura - Caster",
+                "upgradeDescription": "When deployed, increases the SP recovery rate of all Casters by {caster_SP}/second, Mostima gain {somthing} (only the highest effect of this type takes place)"
             }
         ]
     ]

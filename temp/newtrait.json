@@ -1,29 +1,12 @@
 {
-    "": {   // Hunter
-        "en": "When reload from empty,gain 1 addition ammo",
-        "color": "extra",
-        "note": "Hunter Mod (HUN-X)"
-    },
-    "": {   // Ifrit
-        "en": "When dealing Arts damage, deals an additional <@ba.vup>8%</> as <$ba.dt.burning2>Burn damage</>",
-        "color": "magic",
-        "note": "Blast Caster Mod (BLA-D)"
-    },
-    "": {   // Gladiia
-        "en": "Increases shift level by 1 when dragging further away targets towards this unit ",
-        "color": "extra",
-        "note": "Hookmaster Mod (HOX-Y)"
-    },
-    "": {   // Penance
-        "en": "Gains +8% ATK and DEF when there are no allied units in the surrounding 8 tiles",
-        "color": "common",
-        "note": "Juggernaut Mod (UNY-Y)"
-    }
+    "攻击范围内的<@ba.kw>所有敌人</>，对自己前方一横排的敌人攻击力提升至160%": { // Spreadshooter Mod X
+        "en": "Attacks <@ba.kw>all enemies</> within range, and deals 160% damage to enemies in the row directly in front of this unit.",
+        "color": "extra"
 }
 
 #template
 ,
-"": {
-    "en": "",
-    "color": ""
-}
+    "": {
+        "en": "",
+        "color": ""
+    }

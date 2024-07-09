@@ -679,6 +679,16 @@
             "en": "Gains +8% ATK and DEF when there are no allied units in the surrounding 8 tiles",
             "color": "common",
             "note": "Juggernaut Mod (UNY-Y)"
+        },
+        "攻击范围内的<@ba.kw>所有敌人</>，对自己前方一横排的敌人攻击力提升至<@ba.kw>160%</>": {
+            "en": "Attacks <@ba.kw>all enemies</> within range, and deals 160% damage to enemies in the row directly in front of this unit.",
+            "color": "extra",
+            "note": "Spreadshooter Mod (RPR-Y)"
+        },
+        "能够阻挡一个敌人，作为小车形态存在时只能部署在召唤者攻击范围内": {
+            "en": "Can block enemy, can only be deployed within the summoner's Attack Range.",
+            "color": "common",
+            "note": "Mitm 's Token (Cherry-3)"
         }
     },
     "parts": [

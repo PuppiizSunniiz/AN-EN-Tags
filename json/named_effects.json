@@ -192,8 +192,8 @@
         },
         "ba.dt.burning2": {
             "termId": "ba.dt.burning2",
-            "termName": "Burn Damage·Allied",
-            "description": "Triggers when enough points are accumulated (1000 for normal/elite enemies, 2000 for bosses), dealing 7000 Elemental damage immediately and reducing RES by 20 for the duration of the effect. 10 second cooldown"
+            "termName": "Burn damage - Player",
+            "description": "Explodes when at max (1000 for Normal and Elite, 2000 for Leaders), dealing 7000 Elemental damage and temporarily inflicting -20 RES. 10s cooldown."
         },
         "cc.bd_A_1": {
             "termId": "cc.bd_A_1",
@@ -519,6 +519,16 @@
             "termId": "cc.gvial",
             "termName": "Gavial",
             "description": "Includes the following Operators:\nGavial the Invincible, Gavial"
+        },
+        "ba.fear": {
+            "termId": "ba.fear",
+            "termName": "Fear",
+            "description": "Cannot be blocked, run away in panic"
+        },
+        "ba.addash": {
+            "termId": "ba.addash",
+            "termName": "Dash",
+            "description": "Does not retreat，deploys at the target location with current HP"
         }
     }
 }

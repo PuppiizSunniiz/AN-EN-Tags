@@ -780,7 +780,7 @@
         "descformat": "When this Operator is assigned to a Factory, <@cc.kw>Precious Metal</> formula related productivity <@cc.vup>+35%</>"
     },
     "manu_formula_spd[101]": {
-        "name": "Metal Crafts·α",
+        "name": "Metalwork α",
         "desc": "When stationed at a Craft Station, increase production of precious metals by +30%",
         "descformat": "When this Operator is assigned to a Factory, <@cc.kw>Precious Metal</> formula related productivity <@cc.vup>+30%</>"
     },
@@ -1465,14 +1465,14 @@
         "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>Building material</>, the production rate of byproduct increases by <@cc.vup>75%</>"
     },
     "workshop_formula_probability[116]": {
-        "name": "Well Prospector·α",
+        "name": "Pitsinker α",
         "desc": "When stationed at the Synthesis Station and producing elite materials, increase the rate of by-products by 75%",
-        "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>elite materials</>, the production rate of byproduct increases by <@cc.vup>75%</>"
+        "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>elite material</>, the production rate of byproduct increases by <@cc.vup>75%</>"
     },
     "workshop_formula_probability[126]": {
-        "name": "Well Prospector·β",
+        "name": "Pitsinker β",
         "desc": "When stationed at the Synthesis Station and producing elite materials, increase the rate of by-products by 80%",
-        "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>elite materials</>, the production rate of byproduct increases by <@cc.vup>80%</>"
+        "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>elite material</>, the production rate of byproduct increases by <@cc.vup>80%</>"
     },
     "workshop_formula_dorm[000]": {
         "name": "Waste Not, Want Not",
@@ -1500,9 +1500,9 @@
         "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>Elite materials</>, any byproducts of <@cc.kw>T3</> quality produced will be <@cc.kw>Oriron Clusters</>"
     },
     "workshop_formula_drop[040]": {
-        "name": "Rock Formation Anchoring",
+        "name": "Boulder Anchoring",
         "desc": "When stationed at the Synthesis Station and producing elite materials, any by-products of T3 quality produced will be Orirock Clusters",
-        "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>Elite materials</>, any by-products of <@cc.kw>T3</> quality produced will be <@cc.kw>Orirock Clusters</>"
+        "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>Elite materials</>, any byproducts of <@cc.kw>T3</> quality produced will be <@cc.kw>Orirock Clusters</>"
     },
     "workshop_formula_free[000]": {
         "name": "Careful Planning",
@@ -2115,7 +2115,7 @@
         "descformat": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.15</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
     },
     "dorm_rec_all[014]": {
-        "name": "Big Rice Pot·α",
+        "name": "Cookout α",
         "desc": "When stationed at a Dorm, increase mood recovery of all operators within that dorm by +0.15 per hour (When stacked, only the highest effect becomes active)",
         "descformat": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.15</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
     },
@@ -2270,7 +2270,7 @@
         "descformat": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.15</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
     },
     "dorm_rec_all[024]": {
-        "name": "Big Rice Pot·β",
+        "name": "Cookout β",
         "desc": "When stationed at a Dorm, increase mood recovery of all operators within that dorm by +0.2 per hour (When stacked, only the highest effect becomes active)",
         "descformat": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.2</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
     },
@@ -2693,5 +2693,60 @@
         "name": "Hidden Clue",
         "desc": "When stationed at Reception and only self is working, the next clue obtained after continuously spending 16 mood is guaranteed to be a Rhodes Island clue",
         "descformat": "When this Operator is assigned to the Reception Room, if only this Operator is working in the Reception Room, for every <@cc.kw>16</> consecutive Morale spent, a <@cc.kw>Rhodes Island</> clue is <@cc.kw>guaranteed</> next"
+    },
+    "control_dorm_rec[002]": {
+        "name": "巡心",
+        "desc": "进驻控制中枢时，所有宿舍内所有干员的心情每小时恢复<@cc.vup>+0.05</>（同种效果取最高）",
+        "descformat": "进驻控制中枢时，所有宿舍内所有干员的心情每小时恢复<@cc.vup>+0.05</>（同种效果取最高）"
+    },
+    "power_rec_spd[025]": {
+        "name": "穹顶物流管理·α",
+        "desc": "进驻发电站时，无人机充能速度<@cc.vup>+15%</>",
+        "descformat": "进驻发电站时，无人机充能速度<@cc.vup>+15%</>"
+    },
+    "power_rec_spd[026]": {
+        "name": "穹顶物流管理·β",
+        "desc": "进驻发电站时，无人机充能速度<@cc.vup>+20%</>",
+        "descformat": "进驻发电站时，无人机充能速度<@cc.vup>+20%</>"
+    },
+    "trade_ord_spd&meet[010]": {
+        "name": "天生的顾问",
+        "desc": "进驻贸易站时，订单获取效率<@cc.vup>+15%</>，会客室每级额外提供<@cc.vup>5%</>获取效率，最多提供<@cc.vup>30%</>效率",
+        "descformat": "进驻贸易站时，订单获取效率<@cc.vup>+15%</>，会客室每级额外提供<@cc.vup>5%</>获取效率，最多提供<@cc.vup>30%</>效率"
+    },
+    "trade_ord_wt&cost[003]": {
+        "name": "懂行",
+        "desc": "进驻贸易站时，<@cc.kw>小幅提升</>当前贸易站<@cc.kw>高品质贵金属订单</>的出现概率（工作时长影响概率），心情每小时消耗<@cc.vup>-0.25</>",
+        "descformat": "进驻贸易站时，<@cc.kw>小幅提升</>当前贸易站<@cc.kw>高品质贵金属订单</>的出现概率（工作时长影响概率），心情每小时消耗<@cc.vup>-0.25</>"
+    },
+    "trade_ord_spd_ext[000]": {
+        "name": "对陆接洽代表·α",
+        "desc": "进驻贸易站时，订单获取效率<@cc.vup>+25%</>；当<@cc.kw>乌尔比安</>在基建内时（不包含副手），订单获取效率额外<@cc.vup>+5%</>",
+        "descformat": "进驻贸易站时，订单获取效率<@cc.vup>+25%</>；当<@cc.kw>乌尔比安</>在基建内时（不包含副手），订单获取效率额外<@cc.vup>+5%</>"
+    },
+    "trade_ord_spd_ext[001]": {
+        "name": "对陆接洽代表·β",
+        "desc": "进驻贸易站时，订单获取效率<@cc.vup>+30%</>；当<@cc.kw>乌尔比安</>在基建内时（不包含副手），订单获取效率额外<@cc.vup>+10%</>",
+        "descformat": "进驻贸易站时，订单获取效率<@cc.vup>+30%</>；当<@cc.kw>乌尔比安</>在基建内时（不包含副手），订单获取效率额外<@cc.vup>+10%</>"
+    },
+    "train_spd_power_down[000]": {
+        "name": "“手段应当有效”",
+        "desc": "进驻训练室协助位时，心情每小时消耗<@cc.vdown>+1</>，基建内（不包含副手）每名<$cc.g.abyssal><@cc.kw>深海猎人</></>干员为当前干员的专精技能训练速度<@cc.vup>+10%</>（最多生效<@cc.kw>5</>名）",
+        "descformat": "进驻训练室协助位时，心情每小时消耗<@cc.vdown>+1</>，基建内（不包含副手）每名<$cc.g.abyssal><@cc.kw>深海猎人</></>干员为当前干员的专精技能训练速度<@cc.vup>+10%</>（最多生效<@cc.kw>5</>名）"
+    },
+    "train_spd_doubleProf[201]": {
+        "name": "“问题应当准确”",
+        "desc": "进驻训练室协助位时，<@cc.kw>近卫</>与<@cc.kw>辅助</>干员的专精技能训练速度<@cc.vup>+30%</>",
+        "descformat": "进驻训练室协助位时，<@cc.kw>近卫</>与<@cc.kw>辅助</>干员的专精技能训练速度<@cc.vup>+30%</>"
+    },
+    "dorm_rec_all[017]": {
+        "name": "静心仪式·α",
+        "desc": "进驻宿舍时，该宿舍内所有干员的心情每小时恢复<@cc.vup>+0.15</>（同种效果取最高）",
+        "descformat": "进驻宿舍时，该宿舍内所有干员的心情每小时恢复<@cc.vup>+0.15</>（同种效果取最高）"
+    },
+    "dorm_rec_all[027]": {
+        "name": "静心仪式·β",
+        "desc": "进驻宿舍时，该宿舍内所有干员的心情每小时恢复<@cc.vup>+0.2</>（同种效果取最高）",
+        "descformat": "进驻宿舍时，该宿舍内所有干员的心情每小时恢复<@cc.vup>+0.2</>（同种效果取最高）"
     }
 }
