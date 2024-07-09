@@ -636,7 +636,7 @@ def Akenemy() -> None :
         if json_activity["basicInfo"][act]["hasStage"]:
             activity["Dict"][act] = {
                     "nameCN"    : json_activity["basicInfo"][act]["name"],
-                    "nameEN"    : ("DOS : " if act == "act42d0" else "") + (json_activityEN["basicInfo"][act]["name"] if act in json_activityEN["basicInfo"].keys() else (Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else None)) + (f' #{act.split("act")[-1].split("bossrush")[0]}' if act.find("bossrush")!= -1 and act in json_activityEN["basicInfo"].keys() else ""),
+                    "nameEN"    : ("DOS : " if act == "act42d0" else "") + (json_activityEN["basicInfo"][act]["name"] if act in json_activityEN["basicInfo"].keys() else (Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else "")) + (f' #{act.split("act")[-1].split("bossrush")[0]}' if act.find("bossrush")!= -1 and act in json_activityEN["basicInfo"].keys() else ""),
                     "startCN"   : json_activity["basicInfo"][act]["startTime"]
             }
             timeline.append([act,activity["Dict"][act]["nameEN"] if activity["Dict"][act]["nameEN"] else activity["Dict"][act]["nameCN"],json_activity["basicInfo"][act]["startTime"]])

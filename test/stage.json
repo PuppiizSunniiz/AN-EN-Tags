@@ -3584,6 +3584,86 @@
             "name": "Assault",
             "Event": "weekly_4"
         },
+        "act17mini_01": {
+            "stageId": "act17mini_01",
+            "levelId": "Activities/act17mini/level_act17mini_01",
+            "zoneId": "act17mini_zone1",
+            "code": "KR-1",
+            "name": "玉门：沙丘狂欢",
+            "Event": "act17mini"
+        },
+        "act17mini_02": {
+            "stageId": "act17mini_02",
+            "levelId": "Activities/act17mini/level_act17mini_02",
+            "zoneId": "act17mini_zone1",
+            "code": "KR-2",
+            "name": "天际城：地下奇旅",
+            "Event": "act17mini"
+        },
+        "act17mini_03": {
+            "stageId": "act17mini_03",
+            "levelId": "Activities/act17mini/level_act17mini_03",
+            "zoneId": "act17mini_zone1",
+            "code": "KR-3",
+            "name": "索伦托：家族聚会",
+            "Event": "act17mini"
+        },
+        "act17mini_04": {
+            "stageId": "act17mini_04",
+            "levelId": "Activities/act17mini/level_act17mini_04",
+            "zoneId": "act17mini_zone1",
+            "code": "KR-4",
+            "name": "多索雷斯：沙滩寻宝",
+            "Event": "act17mini"
+        },
+        "act17mini_05": {
+            "stageId": "act17mini_05",
+            "levelId": "Activities/act17mini/level_act17mini_05",
+            "zoneId": "act17mini_zone1",
+            "code": "KR-5",
+            "name": "海布里：民兵演习",
+            "Event": "act17mini"
+        },
+        "act17mini_06": {
+            "stageId": "act17mini_06",
+            "levelId": "Activities/act17mini/level_act17mini_06",
+            "zoneId": "act17mini_zone1",
+            "code": "KR-6",
+            "name": "汐斯塔：云顶派对",
+            "Event": "act17mini"
+        },
+        "act17mini_07": {
+            "stageId": "act17mini_07",
+            "levelId": "Activities/act17mini/level_act17mini_07",
+            "zoneId": "act17mini_zone1",
+            "code": "KR-7",
+            "name": "诺伯特：清淤重建",
+            "Event": "act17mini"
+        },
+        "act17mini_08": {
+            "stageId": "act17mini_08",
+            "levelId": "Activities/act17mini/level_act17mini_08",
+            "zoneId": "act17mini_zone1",
+            "code": "KR-8",
+            "name": "“双日城脱险”",
+            "Event": "act17mini"
+        },
+        "act17mini_s01": {
+            "stageId": "act17mini_s01",
+            "levelId": "Activities/act17mini/level_act17mini_sub-1-1",
+            "zoneId": "act17mini_zone1",
+            "code": "KR-S-1",
+            "name": "卡兹戴尔：温饱之后",
+            "Event": "act17mini"
+        },
+        "act17mini_s02": {
+            "stageId": "act17mini_s02",
+            "levelId": "Activities/act17mini/level_act17mini_sub-2-1",
+            "zoneId": "act17mini_zone1",
+            "code": "KR-S-2",
+            "name": "卡兹戴尔：精神建设",
+            "Event": "act17mini"
+        },
         "act34side_01": {
             "stageId": "act34side_01",
             "levelId": "Activities/act34side/level_act34side_01",
@@ -15357,6 +15437,18 @@
             "PR-D-1",
             "PR-D-2"
         ],
+        "act17mini": [
+            "KR-1",
+            "KR-2",
+            "KR-3",
+            "KR-4",
+            "KR-5",
+            "KR-6",
+            "KR-7",
+            "KR-8",
+            "KR-S-1",
+            "KR-S-2"
+        ],
         "act34side": [
             "BP-1",
             "BP-TR-1",
@@ -17741,6 +17833,7 @@
                 "main_3",
                 "weekly_5",
                 "weekly_6",
+                "act17mini",
                 "act9mini",
                 "act1lock",
                 "act10d5",
@@ -17786,6 +17879,9 @@
                 ],
                 "weekly_6": [
                     "CA-3"
+                ],
+                "act17mini": [
+                    "KR-2"
                 ],
                 "act9mini": [
                     "PS-2"
@@ -17964,6 +18060,7 @@
                 "weekly_7",
                 "weekly_2",
                 "weekly_4",
+                "act17mini",
                 "act1lock",
                 "act13d0",
                 "act7d5",
@@ -18028,6 +18125,9 @@
                 ],
                 "weekly_4": [
                     "PR-D-1"
+                ],
+                "act17mini": [
+                    "KR-1"
                 ],
                 "act1lock": [
                     "TB-DB-1",
@@ -18612,6 +18712,7 @@
                 "main_1",
                 "main_2",
                 "weekly_9",
+                "act17mini",
                 "act2vmulti",
                 "camp_01",
                 "camp_02",
@@ -18640,6 +18741,9 @@
                 ],
                 "weekly_9": [
                     "CE-1"
+                ],
+                "act17mini": [
+                    "KR-2"
                 ],
                 "act2vmulti": [
                     "IG-S-1",
@@ -22503,6 +22607,7 @@
         "enemy_1039_breakr": {
             "Filtered": [
                 "main_5",
+                "act17mini",
                 "act15d5",
                 "act10d5",
                 "act7d5",
@@ -22532,6 +22637,9 @@
                     "S5-2",
                     "S5-5",
                     "S5-9"
+                ],
+                "act17mini": [
+                    "KR-1"
                 ],
                 "act15d5": [
                     "BH-2"
@@ -22853,6 +22961,7 @@
         "enemy_1039_breakr_2": {
             "Filtered": [
                 "main_5",
+                "act17mini",
                 "act16mini",
                 "act6d5",
                 "camp_03",
@@ -22871,6 +22980,9 @@
                     "5-6",
                     "S5-2",
                     "S5-9"
+                ],
+                "act17mini": [
+                    "KR-1"
                 ],
                 "act16mini": [
                     "TG-S-1"
@@ -26260,6 +26372,7 @@
                 "main_5",
                 "weekly_7",
                 "weekly_3",
+                "act17mini",
                 "act2vmulti",
                 "act1bossrush",
                 "act1lock",
@@ -26292,6 +26405,9 @@
                 ],
                 "weekly_3": [
                     "PR-C-1"
+                ],
+                "act17mini": [
+                    "KR-2"
                 ],
                 "act2vmulti": [
                     "IG-TR-1",
@@ -28438,6 +28554,7 @@
             "Filtered": [
                 "main_10",
                 "main_13",
+                "act17mini",
                 "act16mini",
                 "act14mini",
                 "act2bossrush",
@@ -28481,6 +28598,9 @@
                     "13-19",
                     "13-20",
                     "13-21"
+                ],
+                "act17mini": [
+                    "KR-7"
                 ],
                 "act16mini": [
                     "TG-5"
@@ -28702,6 +28822,7 @@
             "Filtered": [
                 "main_10",
                 "main_13",
+                "act17mini",
                 "camp_r_23"
             ],
             "Appearance": {
@@ -28721,6 +28842,9 @@
                     "H13-2",
                     "H13-4"
                 ],
+                "act17mini": [
+                    "KR-7"
+                ],
                 "camp_r_23": [
                     "camp_r_23"
                 ]
@@ -28729,6 +28853,7 @@
         "enemy_1222_dpvt_2": {
             "Filtered": [
                 "main_10",
+                "act17mini",
                 "camp_r_23"
             ],
             "Appearance": {
@@ -28741,6 +28866,9 @@
                     "H10-1",
                     "H10-2",
                     "H10-3"
+                ],
+                "act17mini": [
+                    "KR-7"
                 ],
                 "camp_r_23": [
                     "camp_r_23"
@@ -28812,6 +28940,7 @@
         "enemy_1224_dsuply_2": {
             "Filtered": [
                 "main_10",
+                "act17mini",
                 "act16mini",
                 "camp_r_23",
                 "lt06",
@@ -28826,6 +28955,9 @@
                     "10-17",
                     "H10-1",
                     "H10-3"
+                ],
+                "act17mini": [
+                    "KR-7"
                 ],
                 "act16mini": [
                     "TG-5"
@@ -29023,6 +29155,7 @@
             "Filtered": [
                 "main_10",
                 "main_13",
+                "act17mini",
                 "camp_r_23",
                 "lt09",
                 "act42d0",
@@ -29043,6 +29176,9 @@
                     "H13-1",
                     "H13-2",
                     "H13-4"
+                ],
+                "act17mini": [
+                    "KR-7"
                 ],
                 "camp_r_23": [
                     "camp_r_23"
@@ -29093,6 +29229,7 @@
         "enemy_1226_dklord_2": {
             "Filtered": [
                 "main_10",
+                "act17mini",
                 "camp_r_23",
                 "lt09"
             ],
@@ -29103,6 +29240,9 @@
                     "10-17",
                     "H10-2",
                     "H10-3"
+                ],
+                "act17mini": [
+                    "KR-7"
                 ],
                 "camp_r_23": [
                     "camp_r_23"
@@ -29213,6 +29353,7 @@
             "Filtered": [
                 "main_11",
                 "main_14",
+                "act17mini",
                 "act14mini",
                 "camp_r_19",
                 "lt08",
@@ -29242,6 +29383,9 @@
                 "main_14": [
                     "14-11",
                     "14-20"
+                ],
+                "act17mini": [
+                    "KR-5"
                 ],
                 "act14mini": [
                     "DC-6"
@@ -29316,6 +29460,7 @@
         "enemy_1274_stmram": {
             "Filtered": [
                 "main_11",
+                "act17mini",
                 "act2bossrush",
                 "camp_r_19",
                 "lt08",
@@ -29329,6 +29474,9 @@
                     "11-11",
                     "11-12",
                     "11-18"
+                ],
+                "act17mini": [
+                    "KR-5"
                 ],
                 "act2bossrush": [
                     "TN-3"
@@ -29608,6 +29756,7 @@
         "enemy_1272_nhtank": {
             "Filtered": [
                 "main_11",
+                "act17mini",
                 "CC#12",
                 "IS#4",
                 "RA#2"
@@ -29620,6 +29769,9 @@
                     "11-18",
                     "11-20",
                     "H11-1"
+                ],
+                "act17mini": [
+                    "KR-5"
                 ],
                 "CC#12": [
                     "Foggy Warzone"
@@ -29645,6 +29797,7 @@
         "enemy_1273_stmgun": {
             "Filtered": [
                 "main_11",
+                "act17mini",
                 "act2vmulti",
                 "lt08",
                 "CC#12",
@@ -29659,6 +29812,9 @@
                     "11-15",
                     "11-18",
                     "11-20"
+                ],
+                "act17mini": [
+                    "KR-5"
                 ],
                 "act2vmulti": [
                     "IG-7",
@@ -30221,6 +30377,7 @@
         "enemy_1071_dftman_2": {
             "Filtered": [
                 "main_12",
+                "act17mini",
                 "act33side",
                 "act2bossrush",
                 "act12mini",
@@ -30249,6 +30406,9 @@
                     "12-15",
                     "12-20",
                     "H12-2"
+                ],
+                "act17mini": [
+                    "KR-S-2"
                 ],
                 "act33side": [
                     "BB-EX-1",
@@ -30961,7 +31121,8 @@
         },
         "enemy_1361_dthrow": {
             "Filtered": [
-                "main_13"
+                "main_13",
+                "act17mini"
             ],
             "Appearance": {
                 "main_13": [
@@ -30972,6 +31133,9 @@
                     "13-12",
                     "13-20",
                     "13-21"
+                ],
+                "act17mini": [
+                    "KR-7"
                 ]
             }
         },
@@ -32586,6 +32750,959 @@
                     "RA#2_NORMAL_rushparty",
                     "RA#2_NORMAL_rushparty",
                     "RA#2_NORMAL_rushparty"
+                ]
+            }
+        },
+        "enemy_1302_ymtro": {
+            "Filtered": [
+                "act17mini",
+                "act23side",
+                "camp_r_20"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-1"
+                ],
+                "act23side": [
+                    "WB-8"
+                ],
+                "camp_r_20": [
+                    "camp_r_20"
+                ]
+            }
+        },
+        "enemy_1263_durbus": {
+            "Filtered": [
+                "act17mini",
+                "act20side",
+                "camp_r_18",
+                "lt09",
+                "CC#11",
+                "CC#12",
+                "RA#1",
+                "RA#2"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-2"
+                ],
+                "act20side": [
+                    "IC-7",
+                    "IC-MO-1",
+                    "IC-P-2"
+                ],
+                "camp_r_18": [
+                    "camp_r_18"
+                ],
+                "lt09": [
+                    "LT-5"
+                ],
+                "CC#11": [
+                    "Under-Construction Beachside (Main)"
+                ],
+                "CC#12": [
+                    "Under-Construction Beachside"
+                ],
+                "RA#1": [
+                    "sandbox_0_43"
+                ],
+                "RA#2": [
+                    "sandbox_1_15",
+                    "sandbox_1_78"
+                ]
+            }
+        },
+        "enemy_1281_sgcar": {
+            "Filtered": [
+                "act17mini",
+                "act21side",
+                "lt09",
+                "IS#4",
+                "RA#2"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-3"
+                ],
+                "act21side": [
+                    "IS-6",
+                    "IS-8"
+                ],
+                "lt09": [
+                    "LT-5"
+                ],
+                "IS#4": {
+                    "Treasure": [
+                        "Luxurious Fleet"
+                    ]
+                },
+                "RA#2": [
+                    "sandbox_1_46",
+                    "sandbox_1_84",
+                    "RA#2_NORMAL_rushparty",
+                    "RA#2_NORMAL_rushparty"
+                ]
+            }
+        },
+        "enemy_1277_sgman": {
+            "Filtered": [
+                "act17mini",
+                "act21side",
+                "lt09",
+                "IS#4",
+                "RA#2"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-3"
+                ],
+                "act21side": [
+                    "IS-TR-1",
+                    "IS-2",
+                    "IS-3",
+                    "IS-4",
+                    "IS-5",
+                    "IS-6",
+                    "IS-7",
+                    "IS-8",
+                    "IS-9",
+                    "IS-10",
+                    "IS-S-3"
+                ],
+                "lt09": [
+                    "LT-5"
+                ],
+                "IS#4": {
+                    "Floor 1": [
+                        "Hands of Moss"
+                    ],
+                    "Treasure": [
+                        "Luxurious Fleet"
+                    ]
+                },
+                "RA#2": [
+                    "sandbox_1_46",
+                    "sandbox_1_84"
+                ]
+            }
+        },
+        "enemy_1278_sgbow": {
+            "Filtered": [
+                "act17mini",
+                "act21side",
+                "IS#4",
+                "RA#2"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-3"
+                ],
+                "act21side": [
+                    "IS-TR-1",
+                    "IS-3",
+                    "IS-4",
+                    "IS-5",
+                    "IS-6",
+                    "IS-7",
+                    "IS-8",
+                    "IS-9",
+                    "IS-10"
+                ],
+                "IS#4": {
+                    "Floor 1": [
+                        "Hands of Moss"
+                    ]
+                },
+                "RA#2": [
+                    "sandbox_1_46",
+                    "sandbox_1_84"
+                ]
+            }
+        },
+        "enemy_3004_speople": {
+            "Filtered": [
+                "act17mini",
+                "act21side",
+                "IS#4"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-3"
+                ],
+                "act21side": [
+                    "IS-TR-1",
+                    "IS-2",
+                    "IS-4",
+                    "IS-5",
+                    "IS-6",
+                    "IS-7",
+                    "IS-8",
+                    "IS-9",
+                    "IS-10",
+                    "IS-EX-1",
+                    "IS-EX-2",
+                    "IS-EX-3",
+                    "IS-EX-4",
+                    "IS-EX-6",
+                    "IS-EX-7",
+                    "IS-EX-8",
+                    "IS-S-1",
+                    "IS-S-2",
+                    "IS-S-3",
+                    "IS-S-4",
+                    "IS-S-5"
+                ],
+                "IS#4": {
+                    "Event": [
+                        "Rock and a Hard Place"
+                    ]
+                }
+            }
+        },
+        "enemy_1283_sgkill": {
+            "Filtered": [
+                "act17mini",
+                "act3bossrush",
+                "act21side",
+                "RA#2"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-3"
+                ],
+                "act3bossrush": [
+                    "TN-4"
+                ],
+                "act21side": [
+                    "IS-TR-1",
+                    "IS-2",
+                    "IS-3",
+                    "IS-4",
+                    "IS-5",
+                    "IS-6",
+                    "IS-7",
+                    "IS-8",
+                    "IS-9",
+                    "IS-10"
+                ],
+                "RA#2": [
+                    "sandbox_1_46",
+                    "sandbox_1_84"
+                ]
+            }
+        },
+        "enemy_1159_swfmob_2": {
+            "Filtered": [
+                "act17mini",
+                "act3bossrush",
+                "act11mini",
+                "act12side",
+                "lt05",
+                "lt14",
+                "CC#11",
+                "CC#12",
+                "IS#3",
+                "IS#4"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-4",
+                    "KR-8"
+                ],
+                "act3bossrush": [
+                    "TN-1"
+                ],
+                "act11mini": [
+                    "TC-6"
+                ],
+                "act12side": [
+                    "DH-EX-2",
+                    "DH-EX-3",
+                    "DH-EX-4",
+                    "DH-EX-5",
+                    "DH-EX-6",
+                    "DH-EX-7",
+                    "DH-EX-8",
+                    "DH-S-1",
+                    "DH-S-2",
+                    "DH-S-3",
+                    "DH-S-4",
+                    "DH-MO-1"
+                ],
+                "lt05": [
+                    "LT-4",
+                    "LT-6"
+                ],
+                "lt14": [
+                    "LT-2",
+                    "LT-6"
+                ],
+                "CC#11": [
+                    "Under-Construction Beachside (Main)"
+                ],
+                "CC#12": [
+                    "Under-Construction Beachside"
+                ],
+                "IS#3": {
+                    "Event": [
+                        "Fishing in a Dry Pond"
+                    ]
+                },
+                "IS#4": {
+                    "Floor 3": [
+                        "Shady Frozen Sea"
+                    ]
+                }
+            }
+        },
+        "enemy_1160_hvyslr_2": {
+            "Filtered": [
+                "act17mini",
+                "act11mini",
+                "act12side",
+                "camp_r_07",
+                "lt05",
+                "lt07",
+                "lt14",
+                "CC#11",
+                "CC#12",
+                "RA#2"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-4",
+                    "KR-8"
+                ],
+                "act11mini": [
+                    "TC-6"
+                ],
+                "act12side": [
+                    "DH-EX-2",
+                    "DH-EX-3",
+                    "DH-EX-4",
+                    "DH-EX-6",
+                    "DH-EX-7",
+                    "DH-EX-8",
+                    "DH-S-1",
+                    "DH-S-2",
+                    "DH-S-3",
+                    "DH-S-4",
+                    "DH-MO-1"
+                ],
+                "camp_r_07": [
+                    "camp_r_07"
+                ],
+                "lt05": [
+                    "LT-4",
+                    "LT-5"
+                ],
+                "lt07": [
+                    "LT-4"
+                ],
+                "lt14": [
+                    "LT-2"
+                ],
+                "CC#11": [
+                    "Under-Construction Beachside (Main)"
+                ],
+                "CC#12": [
+                    "Under-Construction Beachside"
+                ],
+                "RA#2": [
+                    "sandbox_1_08"
+                ]
+            }
+        },
+        "enemy_1162_magmot_2": {
+            "Filtered": [
+                "act17mini",
+                "act11mini",
+                "act12side",
+                "camp_r_07",
+                "lt10",
+                "RA#2"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-4",
+                    "KR-8"
+                ],
+                "act11mini": [
+                    "TC-6"
+                ],
+                "act12side": [
+                    "DH-EX-2",
+                    "DH-EX-3",
+                    "DH-EX-5",
+                    "DH-EX-7",
+                    "DH-EX-8",
+                    "DH-S-1",
+                    "DH-S-3",
+                    "DH-MO-1"
+                ],
+                "camp_r_07": [
+                    "camp_r_07"
+                ],
+                "lt10": [
+                    "LT-3"
+                ],
+                "RA#2": [
+                    "sandbox_1_08"
+                ]
+            }
+        },
+        "enemy_1161_tidmag_2": {
+            "Filtered": [
+                "act17mini",
+                "act11mini",
+                "act12side",
+                "camp_r_07",
+                "lt10",
+                "IS#3",
+                "RA#2"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-4",
+                    "KR-8"
+                ],
+                "act11mini": [
+                    "TC-6"
+                ],
+                "act12side": [
+                    "DH-EX-1",
+                    "DH-EX-2",
+                    "DH-EX-3",
+                    "DH-EX-5",
+                    "DH-EX-7",
+                    "DH-EX-8",
+                    "DH-S-1",
+                    "DH-S-3",
+                    "DH-S-4",
+                    "DH-MO-1"
+                ],
+                "camp_r_07": [
+                    "camp_r_07"
+                ],
+                "lt10": [
+                    "LT-3"
+                ],
+                "IS#3": {
+                    "Floor 6": [
+                        "Glory of Humanity (Boss)"
+                    ]
+                },
+                "RA#2": [
+                    "sandbox_1_08"
+                ]
+            }
+        },
+        "enemy_1163_hvymot_2": {
+            "Filtered": [
+                "act17mini",
+                "act11mini",
+                "act12side",
+                "camp_r_07",
+                "lt05",
+                "lt07",
+                "lt14",
+                "RA#2"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-4",
+                    "KR-8"
+                ],
+                "act11mini": [
+                    "TC-6"
+                ],
+                "act12side": [
+                    "DH-EX-2",
+                    "DH-EX-4",
+                    "DH-EX-6",
+                    "DH-EX-7",
+                    "DH-EX-8",
+                    "DH-S-1",
+                    "DH-S-2",
+                    "DH-S-4",
+                    "DH-MO-1"
+                ],
+                "camp_r_07": [
+                    "camp_r_07"
+                ],
+                "lt05": [
+                    "LT-4",
+                    "LT-5"
+                ],
+                "lt07": [
+                    "LT-4"
+                ],
+                "lt14": [
+                    "LT-2"
+                ],
+                "RA#2": [
+                    "sandbox_1_08"
+                ]
+            }
+        },
+        "enemy_1344_ddlamb_2": {
+            "Filtered": [
+                "act17mini",
+                "act4bossrush",
+                "act27side"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-6"
+                ],
+                "act4bossrush": [
+                    "TN-2"
+                ],
+                "act27side": [
+                    "SL-EX-1",
+                    "SL-EX-2",
+                    "SL-EX-3",
+                    "SL-EX-4",
+                    "SL-EX-5",
+                    "SL-EX-6",
+                    "SL-EX-7",
+                    "SL-EX-8",
+                    "SL-S-1",
+                    "SL-S-2",
+                    "SL-S-3",
+                    "SL-S-4",
+                    "SL-S-5",
+                    "SL-MO-1"
+                ]
+            }
+        },
+        "enemy_1345_tplamb_2": {
+            "Filtered": [
+                "act17mini",
+                "act27side"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-6"
+                ],
+                "act27side": [
+                    "SL-EX-1",
+                    "SL-EX-2",
+                    "SL-EX-3",
+                    "SL-EX-4",
+                    "SL-EX-5",
+                    "SL-EX-6",
+                    "SL-EX-7",
+                    "SL-EX-8",
+                    "SL-S-1",
+                    "SL-S-3",
+                    "SL-S-4",
+                    "SL-S-5",
+                    "SL-MO-1"
+                ]
+            }
+        },
+        "enemy_1346_ynshp_2": {
+            "Filtered": [
+                "act17mini",
+                "act4bossrush",
+                "act27side"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-6"
+                ],
+                "act4bossrush": [
+                    "TN-2"
+                ],
+                "act27side": [
+                    "SL-EX-1",
+                    "SL-EX-3",
+                    "SL-EX-4",
+                    "SL-EX-5",
+                    "SL-EX-7",
+                    "SL-EX-8",
+                    "SL-S-1",
+                    "SL-S-2",
+                    "SL-S-4",
+                    "SL-S-5",
+                    "SL-MO-1"
+                ]
+            }
+        },
+        "enemy_1347_fyshp_2": {
+            "Filtered": [
+                "act17mini",
+                "act27side"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-6"
+                ],
+                "act27side": [
+                    "SL-EX-2",
+                    "SL-EX-3",
+                    "SL-EX-4",
+                    "SL-EX-5",
+                    "SL-EX-8",
+                    "SL-S-1",
+                    "SL-S-3",
+                    "SL-MO-1"
+                ]
+            }
+        },
+        "enemy_1349_rckshp_2": {
+            "Filtered": [
+                "act17mini",
+                "act27side"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-6"
+                ],
+                "act27side": [
+                    "SL-EX-6",
+                    "SL-EX-7",
+                    "SL-S-2",
+                    "SL-S-4",
+                    "SL-S-5",
+                    "SL-MO-1"
+                ]
+            }
+        },
+        "enemy_1351_yhhshp": {
+            "Filtered": [
+                "act17mini",
+                "act27side",
+                "camp_r_21"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-6"
+                ],
+                "act27side": [
+                    "SL-5",
+                    "SL-TR-2",
+                    "SL-6",
+                    "SL-7",
+                    "SL-8",
+                    "SL-EX-1",
+                    "SL-EX-2",
+                    "SL-EX-4",
+                    "SL-EX-7",
+                    "SL-S-1",
+                    "SL-S-2",
+                    "SL-S-4",
+                    "SL-MO-1",
+                    "SL-P-1",
+                    "SL-P-2",
+                    "SL-P-3"
+                ],
+                "camp_r_21": [
+                    "camp_r_21"
+                ]
+            }
+        },
+        "enemy_1158_divman": {
+            "Filtered": [
+                "act17mini",
+                "act2vmulti",
+                "act14mini",
+                "act2bossrush",
+                "act12side",
+                "camp_r_07",
+                "lt07",
+                "CC#11",
+                "CC#12",
+                "IS#3"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-8"
+                ],
+                "act2vmulti": [
+                    "IG-3",
+                    "IG-EX-3"
+                ],
+                "act14mini": [
+                    "DC-3"
+                ],
+                "act2bossrush": [
+                    "TN-1"
+                ],
+                "act12side": [
+                    "DH-2",
+                    "DH-3",
+                    "DH-5",
+                    "DH-6",
+                    "DH-7",
+                    "DH-8",
+                    "DH-MO-1"
+                ],
+                "camp_r_07": [
+                    "camp_r_07"
+                ],
+                "lt07": [
+                    "LT-4"
+                ],
+                "CC#11": [
+                    "Under-Construction Beachside (Main)"
+                ],
+                "CC#12": [
+                    "Under-Construction Beachside"
+                ],
+                "IS#3": {
+                    "Floor 1": [
+                        "Cistern"
+                    ]
+                }
+            }
+        },
+        "enemy_1164_bmbmot_3": {
+            "Filtered": [
+                "act17mini",
+                "act3bossrush",
+                "act2bossrush",
+                "act12side"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-8"
+                ],
+                "act3bossrush": [
+                    "TN-1"
+                ],
+                "act2bossrush": [
+                    "TN-1"
+                ],
+                "act12side": [
+                    "DH-9",
+                    "DH-EX-8"
+                ]
+            }
+        },
+        "enemy_1522_captan": {
+            "Filtered": [
+                "act17mini",
+                "act3bossrush",
+                "act2bossrush",
+                "act12side"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-8"
+                ],
+                "act3bossrush": [
+                    "TN-1"
+                ],
+                "act2bossrush": [
+                    "TN-1"
+                ],
+                "act12side": [
+                    "DH-9",
+                    "DH-EX-8"
+                ]
+            }
+        },
+        "enemy_1311_mhkryk_2": {
+            "Filtered": [
+                "act17mini",
+                "act24side",
+                "IS#4",
+                "RA#2"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-S-1"
+                ],
+                "act24side": [
+                    "CF-EX-6",
+                    "CF-EX-7"
+                ],
+                "IS#4": {
+                    "Floor 4": [
+                        "The Big Migration"
+                    ]
+                },
+                "RA#2": [
+                    "sandbox_1_16",
+                    "sandbox_1_23",
+                    "RA#2_NORMAL_rushparty",
+                    "RA#2_NORMAL_rushparty",
+                    "RA#2_NORMAL_rushparty",
+                    "RA#2_NORMAL_rushparty",
+                    "RA#2_NORMAL_rushparty",
+                    "RA#2_NORMAL_rushparty",
+                    "RA#2_NORMAL_rushparty"
+                ]
+            }
+        },
+        "enemy_1306_mhtrtl_2": {
+            "Filtered": [
+                "act17mini",
+                "act24side",
+                "IS#4",
+                "RA#2"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-S-1"
+                ],
+                "act24side": [
+                    "CF-EX-1",
+                    "CF-EX-3",
+                    "CF-EX-7",
+                    "CF-EX-8",
+                    "CF-S-1"
+                ],
+                "IS#4": {
+                    "Floor 4": [
+                        "The Big Migration"
+                    ]
+                },
+                "RA#2": [
+                    "sandbox_1_16",
+                    "sandbox_1_23",
+                    "sandbox_1_61",
+                    "RA#2_NORMAL_rushparty",
+                    "RA#2_NORMAL_rushparty",
+                    "RA#2_NORMAL_rushparty"
+                ]
+            }
+        },
+        "enemy_1303_mhshep_2": {
+            "Filtered": [
+                "act17mini",
+                "act24side",
+                "RA#2"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-S-1"
+                ],
+                "act24side": [
+                    "CF-EX-1",
+                    "CF-EX-2",
+                    "CF-EX-3",
+                    "CF-EX-4",
+                    "CF-EX-5"
+                ],
+                "RA#2": [
+                    "sandbox_1_40"
+                ]
+            }
+        },
+        "enemy_1307_mhrhcr_2": {
+            "Filtered": [
+                "act17mini",
+                "act24side",
+                "IS#4",
+                "RA#2"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-S-1"
+                ],
+                "act24side": [
+                    "CF-EX-1",
+                    "CF-EX-2",
+                    "CF-EX-3",
+                    "CF-EX-4",
+                    "CF-EX-5",
+                    "CF-EX-6",
+                    "CF-EX-7",
+                    "CF-EX-8",
+                    "CF-S-1"
+                ],
+                "IS#4": {
+                    "Floor 4": [
+                        "The Big Migration"
+                    ]
+                },
+                "RA#2": [
+                    "sandbox_1_14",
+                    "sandbox_1_61"
+                ]
+            }
+        },
+        "enemy_1419_mmcike": {
+            "Filtered": [
+                "act17mini",
+                "act33side"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-S-2"
+                ],
+                "act33side": [
+                    "BB-8",
+                    "BB-9",
+                    "BB-EX-8",
+                    "BB-S-1",
+                    "BB-S-4"
+                ]
+            }
+        },
+        "enemy_1414_mmleak_2": {
+            "Filtered": [
+                "act17mini",
+                "act33side"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-S-2"
+                ],
+                "act33side": [
+                    "BB-EX-7",
+                    "BB-EX-8",
+                    "BB-S-2",
+                    "BB-S-3",
+                    "BB-S-4",
+                    "BB-MO-1"
+                ]
+            }
+        },
+        "enemy_1410_mmelee_2": {
+            "Filtered": [
+                "act17mini",
+                "act33side"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-S-2"
+                ],
+                "act33side": [
+                    "BB-EX-1",
+                    "BB-EX-2",
+                    "BB-EX-3",
+                    "BB-EX-4",
+                    "BB-EX-5",
+                    "BB-EX-6",
+                    "BB-EX-7",
+                    "BB-EX-8",
+                    "BB-S-1",
+                    "BB-S-3",
+                    "BB-S-4",
+                    "BB-MO-1"
+                ]
+            }
+        },
+        "enemy_1417_mmdudu_2": {
+            "Filtered": [
+                "act17mini",
+                "act33side"
+            ],
+            "Appearance": {
+                "act17mini": [
+                    "KR-S-2"
+                ],
+                "act33side": [
+                    "BB-EX-5",
+                    "BB-EX-7",
+                    "BB-S-2",
+                    "BB-S-3",
+                    "BB-S-4",
+                    "BB-MO-1"
                 ]
             }
         },
@@ -34444,57 +35561,6 @@
                     ],
                     "Floor 5": [
                         "Ubi bona somnia"
-                    ]
-                }
-            }
-        },
-        "enemy_1158_divman": {
-            "Filtered": [
-                "act2vmulti",
-                "act14mini",
-                "act2bossrush",
-                "act12side",
-                "camp_r_07",
-                "lt07",
-                "CC#11",
-                "CC#12",
-                "IS#3"
-            ],
-            "Appearance": {
-                "act2vmulti": [
-                    "IG-3",
-                    "IG-EX-3"
-                ],
-                "act14mini": [
-                    "DC-3"
-                ],
-                "act2bossrush": [
-                    "TN-1"
-                ],
-                "act12side": [
-                    "DH-2",
-                    "DH-3",
-                    "DH-5",
-                    "DH-6",
-                    "DH-7",
-                    "DH-8",
-                    "DH-MO-1"
-                ],
-                "camp_r_07": [
-                    "camp_r_07"
-                ],
-                "lt07": [
-                    "LT-4"
-                ],
-                "CC#11": [
-                    "Under-Construction Beachside (Main)"
-                ],
-                "CC#12": [
-                    "Under-Construction Beachside"
-                ],
-                "IS#3": {
-                    "Floor 1": [
-                        "Cistern"
                     ]
                 }
             }
@@ -37421,20 +38487,6 @@
                 ]
             }
         },
-        "enemy_1419_mmcike": {
-            "Filtered": [
-                "act33side"
-            ],
-            "Appearance": {
-                "act33side": [
-                    "BB-8",
-                    "BB-9",
-                    "BB-EX-8",
-                    "BB-S-1",
-                    "BB-S-4"
-                ]
-            }
-        },
         "enemy_3006_tersia": {
             "Filtered": [
                 "act33side"
@@ -37453,27 +38505,6 @@
                 "act33side": [
                     "BB-9",
                     "BB-10"
-                ]
-            }
-        },
-        "enemy_1410_mmelee_2": {
-            "Filtered": [
-                "act33side"
-            ],
-            "Appearance": {
-                "act33side": [
-                    "BB-EX-1",
-                    "BB-EX-2",
-                    "BB-EX-3",
-                    "BB-EX-4",
-                    "BB-EX-5",
-                    "BB-EX-6",
-                    "BB-EX-7",
-                    "BB-EX-8",
-                    "BB-S-1",
-                    "BB-S-3",
-                    "BB-S-4",
-                    "BB-MO-1"
                 ]
             }
         },
@@ -37547,36 +38578,6 @@
                     "BB-EX-5",
                     "BB-EX-7",
                     "BB-EX-8",
-                    "BB-S-4",
-                    "BB-MO-1"
-                ]
-            }
-        },
-        "enemy_1417_mmdudu_2": {
-            "Filtered": [
-                "act33side"
-            ],
-            "Appearance": {
-                "act33side": [
-                    "BB-EX-5",
-                    "BB-EX-7",
-                    "BB-S-2",
-                    "BB-S-3",
-                    "BB-S-4",
-                    "BB-MO-1"
-                ]
-            }
-        },
-        "enemy_1414_mmleak_2": {
-            "Filtered": [
-                "act33side"
-            ],
-            "Appearance": {
-                "act33side": [
-                    "BB-EX-7",
-                    "BB-EX-8",
-                    "BB-S-2",
-                    "BB-S-3",
                     "BB-S-4",
                     "BB-MO-1"
                 ]
@@ -38015,57 +39016,6 @@
                 ],
                 "camp_r_21": [
                     "camp_r_21"
-                ]
-            }
-        },
-        "enemy_1344_ddlamb_2": {
-            "Filtered": [
-                "act4bossrush",
-                "act27side"
-            ],
-            "Appearance": {
-                "act4bossrush": [
-                    "TN-2"
-                ],
-                "act27side": [
-                    "SL-EX-1",
-                    "SL-EX-2",
-                    "SL-EX-3",
-                    "SL-EX-4",
-                    "SL-EX-5",
-                    "SL-EX-6",
-                    "SL-EX-7",
-                    "SL-EX-8",
-                    "SL-S-1",
-                    "SL-S-2",
-                    "SL-S-3",
-                    "SL-S-4",
-                    "SL-S-5",
-                    "SL-MO-1"
-                ]
-            }
-        },
-        "enemy_1346_ynshp_2": {
-            "Filtered": [
-                "act4bossrush",
-                "act27side"
-            ],
-            "Appearance": {
-                "act4bossrush": [
-                    "TN-2"
-                ],
-                "act27side": [
-                    "SL-EX-1",
-                    "SL-EX-3",
-                    "SL-EX-4",
-                    "SL-EX-5",
-                    "SL-EX-7",
-                    "SL-EX-8",
-                    "SL-S-1",
-                    "SL-S-2",
-                    "SL-S-4",
-                    "SL-S-5",
-                    "SL-MO-1"
                 ]
             }
         },
@@ -40915,44 +41865,6 @@
                 ]
             }
         },
-        "enemy_1164_bmbmot_3": {
-            "Filtered": [
-                "act3bossrush",
-                "act2bossrush",
-                "act12side"
-            ],
-            "Appearance": {
-                "act3bossrush": [
-                    "TN-1"
-                ],
-                "act2bossrush": [
-                    "TN-1"
-                ],
-                "act12side": [
-                    "DH-9",
-                    "DH-EX-8"
-                ]
-            }
-        },
-        "enemy_1522_captan": {
-            "Filtered": [
-                "act3bossrush",
-                "act2bossrush",
-                "act12side"
-            ],
-            "Appearance": {
-                "act3bossrush": [
-                    "TN-1"
-                ],
-                "act2bossrush": [
-                    "TN-1"
-                ],
-                "act12side": [
-                    "DH-9",
-                    "DH-EX-8"
-                ]
-            }
-        },
         "enemy_1158_divman_2": {
             "Filtered": [
                 "act3bossrush",
@@ -40991,65 +41903,6 @@
                     "sandbox_1_08",
                     "sandbox_1_15"
                 ]
-            }
-        },
-        "enemy_1159_swfmob_2": {
-            "Filtered": [
-                "act3bossrush",
-                "act11mini",
-                "act12side",
-                "lt05",
-                "lt14",
-                "CC#11",
-                "CC#12",
-                "IS#3",
-                "IS#4"
-            ],
-            "Appearance": {
-                "act3bossrush": [
-                    "TN-1"
-                ],
-                "act11mini": [
-                    "TC-6"
-                ],
-                "act12side": [
-                    "DH-EX-2",
-                    "DH-EX-3",
-                    "DH-EX-4",
-                    "DH-EX-5",
-                    "DH-EX-6",
-                    "DH-EX-7",
-                    "DH-EX-8",
-                    "DH-S-1",
-                    "DH-S-2",
-                    "DH-S-3",
-                    "DH-S-4",
-                    "DH-MO-1"
-                ],
-                "lt05": [
-                    "LT-4",
-                    "LT-6"
-                ],
-                "lt14": [
-                    "LT-2",
-                    "LT-6"
-                ],
-                "CC#11": [
-                    "Under-Construction Beachside (Main)"
-                ],
-                "CC#12": [
-                    "Under-Construction Beachside"
-                ],
-                "IS#3": {
-                    "Event": [
-                        "Fishing in a Dry Pond"
-                    ]
-                },
-                "IS#4": {
-                    "Floor 3": [
-                        "Shady Frozen Sea"
-                    ]
-                }
             }
         },
         "enemy_1160_hvyslr": {
@@ -41933,34 +42786,6 @@
                 ]
             }
         },
-        "enemy_1283_sgkill": {
-            "Filtered": [
-                "act3bossrush",
-                "act21side",
-                "RA#2"
-            ],
-            "Appearance": {
-                "act3bossrush": [
-                    "TN-4"
-                ],
-                "act21side": [
-                    "IS-TR-1",
-                    "IS-2",
-                    "IS-3",
-                    "IS-4",
-                    "IS-5",
-                    "IS-6",
-                    "IS-7",
-                    "IS-8",
-                    "IS-9",
-                    "IS-10"
-                ],
-                "RA#2": [
-                    "sandbox_1_46",
-                    "sandbox_1_84"
-                ]
-            }
-        },
         "enemy_1277_sgman_2": {
             "Filtered": [
                 "act3bossrush",
@@ -42193,35 +43018,6 @@
                 ]
             }
         },
-        "enemy_1351_yhhshp": {
-            "Filtered": [
-                "act27side",
-                "camp_r_21"
-            ],
-            "Appearance": {
-                "act27side": [
-                    "SL-5",
-                    "SL-TR-2",
-                    "SL-6",
-                    "SL-7",
-                    "SL-8",
-                    "SL-EX-1",
-                    "SL-EX-2",
-                    "SL-EX-4",
-                    "SL-EX-7",
-                    "SL-S-1",
-                    "SL-S-2",
-                    "SL-S-4",
-                    "SL-MO-1",
-                    "SL-P-1",
-                    "SL-P-2",
-                    "SL-P-3"
-                ],
-                "camp_r_21": [
-                    "camp_r_21"
-                ]
-            }
-        },
         "enemy_1348_rllamb": {
             "Filtered": [
                 "act27side",
@@ -42254,28 +43050,6 @@
                 ]
             }
         },
-        "enemy_1345_tplamb_2": {
-            "Filtered": [
-                "act27side"
-            ],
-            "Appearance": {
-                "act27side": [
-                    "SL-EX-1",
-                    "SL-EX-2",
-                    "SL-EX-3",
-                    "SL-EX-4",
-                    "SL-EX-5",
-                    "SL-EX-6",
-                    "SL-EX-7",
-                    "SL-EX-8",
-                    "SL-S-1",
-                    "SL-S-3",
-                    "SL-S-4",
-                    "SL-S-5",
-                    "SL-MO-1"
-                ]
-            }
-        },
         "enemy_1348_rllamb_2": {
             "Filtered": [
                 "act27side"
@@ -42287,38 +43061,6 @@
                     "SL-EX-8",
                     "SL-S-1",
                     "SL-S-3",
-                    "SL-S-4",
-                    "SL-S-5",
-                    "SL-MO-1"
-                ]
-            }
-        },
-        "enemy_1347_fyshp_2": {
-            "Filtered": [
-                "act27side"
-            ],
-            "Appearance": {
-                "act27side": [
-                    "SL-EX-2",
-                    "SL-EX-3",
-                    "SL-EX-4",
-                    "SL-EX-5",
-                    "SL-EX-8",
-                    "SL-S-1",
-                    "SL-S-3",
-                    "SL-MO-1"
-                ]
-            }
-        },
-        "enemy_1349_rckshp_2": {
-            "Filtered": [
-                "act27side"
-            ],
-            "Appearance": {
-                "act27side": [
-                    "SL-EX-6",
-                    "SL-EX-7",
-                    "SL-S-2",
                     "SL-S-4",
                     "SL-S-5",
                     "SL-MO-1"
@@ -43970,24 +44712,6 @@
                 ]
             }
         },
-        "enemy_1303_mhshep_2": {
-            "Filtered": [
-                "act24side",
-                "RA#2"
-            ],
-            "Appearance": {
-                "act24side": [
-                    "CF-EX-1",
-                    "CF-EX-2",
-                    "CF-EX-3",
-                    "CF-EX-4",
-                    "CF-EX-5"
-                ],
-                "RA#2": [
-                    "sandbox_1_40"
-                ]
-            }
-        },
         "enemy_1304_mhwolf_2": {
             "Filtered": [
                 "act24side",
@@ -44011,64 +44735,6 @@
                     "RA#2_NORMAL_rushparty",
                     "RA#2_NORMAL_rushparty",
                     "RA#2_NORMAL_rushparty"
-                ]
-            }
-        },
-        "enemy_1306_mhtrtl_2": {
-            "Filtered": [
-                "act24side",
-                "IS#4",
-                "RA#2"
-            ],
-            "Appearance": {
-                "act24side": [
-                    "CF-EX-1",
-                    "CF-EX-3",
-                    "CF-EX-7",
-                    "CF-EX-8",
-                    "CF-S-1"
-                ],
-                "IS#4": {
-                    "Floor 4": [
-                        "The Big Migration"
-                    ]
-                },
-                "RA#2": [
-                    "sandbox_1_16",
-                    "sandbox_1_23",
-                    "sandbox_1_61",
-                    "RA#2_NORMAL_rushparty",
-                    "RA#2_NORMAL_rushparty",
-                    "RA#2_NORMAL_rushparty"
-                ]
-            }
-        },
-        "enemy_1307_mhrhcr_2": {
-            "Filtered": [
-                "act24side",
-                "IS#4",
-                "RA#2"
-            ],
-            "Appearance": {
-                "act24side": [
-                    "CF-EX-1",
-                    "CF-EX-2",
-                    "CF-EX-3",
-                    "CF-EX-4",
-                    "CF-EX-5",
-                    "CF-EX-6",
-                    "CF-EX-7",
-                    "CF-EX-8",
-                    "CF-S-1"
-                ],
-                "IS#4": {
-                    "Floor 4": [
-                        "The Big Migration"
-                    ]
-                },
-                "RA#2": [
-                    "sandbox_1_14",
-                    "sandbox_1_61"
                 ]
             }
         },
@@ -44128,35 +44794,6 @@
                     "sandbox_1_23",
                     "sandbox_1_61",
                     "RA#2_NORMAL_rushparty",
-                    "RA#2_NORMAL_rushparty",
-                    "RA#2_NORMAL_rushparty",
-                    "RA#2_NORMAL_rushparty",
-                    "RA#2_NORMAL_rushparty",
-                    "RA#2_NORMAL_rushparty",
-                    "RA#2_NORMAL_rushparty",
-                    "RA#2_NORMAL_rushparty"
-                ]
-            }
-        },
-        "enemy_1311_mhkryk_2": {
-            "Filtered": [
-                "act24side",
-                "IS#4",
-                "RA#2"
-            ],
-            "Appearance": {
-                "act24side": [
-                    "CF-EX-6",
-                    "CF-EX-7"
-                ],
-                "IS#4": {
-                    "Floor 4": [
-                        "The Big Migration"
-                    ]
-                },
-                "RA#2": [
-                    "sandbox_1_16",
-                    "sandbox_1_23",
                     "RA#2_NORMAL_rushparty",
                     "RA#2_NORMAL_rushparty",
                     "RA#2_NORMAL_rushparty",
@@ -45046,20 +45683,6 @@
             "Appearance": {
                 "act23side": [
                     "WB-6"
-                ],
-                "camp_r_20": [
-                    "camp_r_20"
-                ]
-            }
-        },
-        "enemy_1302_ymtro": {
-            "Filtered": [
-                "act23side",
-                "camp_r_20"
-            ],
-            "Appearance": {
-                "act23side": [
-                    "WB-8"
                 ],
                 "camp_r_20": [
                     "camp_r_20"
@@ -46070,109 +46693,6 @@
                 ]
             }
         },
-        "enemy_3004_speople": {
-            "Filtered": [
-                "act21side",
-                "IS#4"
-            ],
-            "Appearance": {
-                "act21side": [
-                    "IS-TR-1",
-                    "IS-2",
-                    "IS-4",
-                    "IS-5",
-                    "IS-6",
-                    "IS-7",
-                    "IS-8",
-                    "IS-9",
-                    "IS-10",
-                    "IS-EX-1",
-                    "IS-EX-2",
-                    "IS-EX-3",
-                    "IS-EX-4",
-                    "IS-EX-6",
-                    "IS-EX-7",
-                    "IS-EX-8",
-                    "IS-S-1",
-                    "IS-S-2",
-                    "IS-S-3",
-                    "IS-S-4",
-                    "IS-S-5"
-                ],
-                "IS#4": {
-                    "Event": [
-                        "Rock and a Hard Place"
-                    ]
-                }
-            }
-        },
-        "enemy_1277_sgman": {
-            "Filtered": [
-                "act21side",
-                "lt09",
-                "IS#4",
-                "RA#2"
-            ],
-            "Appearance": {
-                "act21side": [
-                    "IS-TR-1",
-                    "IS-2",
-                    "IS-3",
-                    "IS-4",
-                    "IS-5",
-                    "IS-6",
-                    "IS-7",
-                    "IS-8",
-                    "IS-9",
-                    "IS-10",
-                    "IS-S-3"
-                ],
-                "lt09": [
-                    "LT-5"
-                ],
-                "IS#4": {
-                    "Floor 1": [
-                        "Hands of Moss"
-                    ],
-                    "Treasure": [
-                        "Luxurious Fleet"
-                    ]
-                },
-                "RA#2": [
-                    "sandbox_1_46",
-                    "sandbox_1_84"
-                ]
-            }
-        },
-        "enemy_1278_sgbow": {
-            "Filtered": [
-                "act21side",
-                "IS#4",
-                "RA#2"
-            ],
-            "Appearance": {
-                "act21side": [
-                    "IS-TR-1",
-                    "IS-3",
-                    "IS-4",
-                    "IS-5",
-                    "IS-6",
-                    "IS-7",
-                    "IS-8",
-                    "IS-9",
-                    "IS-10"
-                ],
-                "IS#4": {
-                    "Floor 1": [
-                        "Hands of Moss"
-                    ]
-                },
-                "RA#2": [
-                    "sandbox_1_46",
-                    "sandbox_1_84"
-                ]
-            }
-        },
         "enemy_1279_sgbdg": {
             "Filtered": [
                 "act21side",
@@ -46217,34 +46737,6 @@
                 "RA#2": [
                     "sandbox_1_46",
                     "sandbox_1_84"
-                ]
-            }
-        },
-        "enemy_1281_sgcar": {
-            "Filtered": [
-                "act21side",
-                "lt09",
-                "IS#4",
-                "RA#2"
-            ],
-            "Appearance": {
-                "act21side": [
-                    "IS-6",
-                    "IS-8"
-                ],
-                "lt09": [
-                    "LT-5"
-                ],
-                "IS#4": {
-                    "Treasure": [
-                        "Luxurious Fleet"
-                    ]
-                },
-                "RA#2": [
-                    "sandbox_1_46",
-                    "sandbox_1_84",
-                    "RA#2_NORMAL_rushparty",
-                    "RA#2_NORMAL_rushparty"
                 ]
             }
         },
@@ -47389,43 +47881,6 @@
                 ]
             }
         },
-        "enemy_1263_durbus": {
-            "Filtered": [
-                "act20side",
-                "camp_r_18",
-                "lt09",
-                "CC#11",
-                "CC#12",
-                "RA#1",
-                "RA#2"
-            ],
-            "Appearance": {
-                "act20side": [
-                    "IC-7",
-                    "IC-MO-1",
-                    "IC-P-2"
-                ],
-                "camp_r_18": [
-                    "camp_r_18"
-                ],
-                "lt09": [
-                    "LT-5"
-                ],
-                "CC#11": [
-                    "Under-Construction Beachside (Main)"
-                ],
-                "CC#12": [
-                    "Under-Construction Beachside"
-                ],
-                "RA#1": [
-                    "sandbox_0_43"
-                ],
-                "RA#2": [
-                    "sandbox_1_15",
-                    "sandbox_1_78"
-                ]
-            }
-        },
         "enemy_1264_durgrd": {
             "Filtered": [
                 "act20side",
@@ -48248,176 +48703,6 @@
                 ],
                 "camp_r_04": [
                     "camp_r_04"
-                ]
-            }
-        },
-        "enemy_1160_hvyslr_2": {
-            "Filtered": [
-                "act11mini",
-                "act12side",
-                "camp_r_07",
-                "lt05",
-                "lt07",
-                "lt14",
-                "CC#11",
-                "CC#12",
-                "RA#2"
-            ],
-            "Appearance": {
-                "act11mini": [
-                    "TC-6"
-                ],
-                "act12side": [
-                    "DH-EX-2",
-                    "DH-EX-3",
-                    "DH-EX-4",
-                    "DH-EX-6",
-                    "DH-EX-7",
-                    "DH-EX-8",
-                    "DH-S-1",
-                    "DH-S-2",
-                    "DH-S-3",
-                    "DH-S-4",
-                    "DH-MO-1"
-                ],
-                "camp_r_07": [
-                    "camp_r_07"
-                ],
-                "lt05": [
-                    "LT-4",
-                    "LT-5"
-                ],
-                "lt07": [
-                    "LT-4"
-                ],
-                "lt14": [
-                    "LT-2"
-                ],
-                "CC#11": [
-                    "Under-Construction Beachside (Main)"
-                ],
-                "CC#12": [
-                    "Under-Construction Beachside"
-                ],
-                "RA#2": [
-                    "sandbox_1_08"
-                ]
-            }
-        },
-        "enemy_1161_tidmag_2": {
-            "Filtered": [
-                "act11mini",
-                "act12side",
-                "camp_r_07",
-                "lt10",
-                "IS#3",
-                "RA#2"
-            ],
-            "Appearance": {
-                "act11mini": [
-                    "TC-6"
-                ],
-                "act12side": [
-                    "DH-EX-1",
-                    "DH-EX-2",
-                    "DH-EX-3",
-                    "DH-EX-5",
-                    "DH-EX-7",
-                    "DH-EX-8",
-                    "DH-S-1",
-                    "DH-S-3",
-                    "DH-S-4",
-                    "DH-MO-1"
-                ],
-                "camp_r_07": [
-                    "camp_r_07"
-                ],
-                "lt10": [
-                    "LT-3"
-                ],
-                "IS#3": {
-                    "Floor 6": [
-                        "Glory of Humanity (Boss)"
-                    ]
-                },
-                "RA#2": [
-                    "sandbox_1_08"
-                ]
-            }
-        },
-        "enemy_1162_magmot_2": {
-            "Filtered": [
-                "act11mini",
-                "act12side",
-                "camp_r_07",
-                "lt10",
-                "RA#2"
-            ],
-            "Appearance": {
-                "act11mini": [
-                    "TC-6"
-                ],
-                "act12side": [
-                    "DH-EX-2",
-                    "DH-EX-3",
-                    "DH-EX-5",
-                    "DH-EX-7",
-                    "DH-EX-8",
-                    "DH-S-1",
-                    "DH-S-3",
-                    "DH-MO-1"
-                ],
-                "camp_r_07": [
-                    "camp_r_07"
-                ],
-                "lt10": [
-                    "LT-3"
-                ],
-                "RA#2": [
-                    "sandbox_1_08"
-                ]
-            }
-        },
-        "enemy_1163_hvymot_2": {
-            "Filtered": [
-                "act11mini",
-                "act12side",
-                "camp_r_07",
-                "lt05",
-                "lt07",
-                "lt14",
-                "RA#2"
-            ],
-            "Appearance": {
-                "act11mini": [
-                    "TC-6"
-                ],
-                "act12side": [
-                    "DH-EX-2",
-                    "DH-EX-4",
-                    "DH-EX-6",
-                    "DH-EX-7",
-                    "DH-EX-8",
-                    "DH-S-1",
-                    "DH-S-2",
-                    "DH-S-4",
-                    "DH-MO-1"
-                ],
-                "camp_r_07": [
-                    "camp_r_07"
-                ],
-                "lt05": [
-                    "LT-4",
-                    "LT-5"
-                ],
-                "lt07": [
-                    "LT-4"
-                ],
-                "lt14": [
-                    "LT-2"
-                ],
-                "RA#2": [
-                    "sandbox_1_08"
                 ]
             }
         },
