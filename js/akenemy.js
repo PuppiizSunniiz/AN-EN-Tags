@@ -1,11 +1,11 @@
     $.holdReady(true);
 
-    console.log = function () { }
+    //console.log = function () { }
 
     var db = {}
     var tlracedict={};
     var enemyforfilter=[]
-    const allimmunity=["stunImmune","silenceImmune","sleepImmune","frozenImmune","levitateImmune","disarmedCombatImmune"]
+    const allimmunity=["stunImmune","silenceImmune","sleepImmune","frozenImmune","levitateImmune","disarmedCombatImmune"] // Add Fear fearImmune ???
 
     var d0 = $.getJSON("json/gamedata/zh_CN/gamedata/excel/gamedata_const.json",function(data){
         db["dataconst"] = data;
@@ -95,7 +95,7 @@
     var charName = 'enemy_1510_frstar2';
     var chibipers = 'front'
     var chibiName = 'enemy_1510_frstar2'
-    var folder = `https://raw.githubusercontent.com/Aceship/Arknight-Images/main/spineassets/${chibitype}/`
+    var folder = `https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/spineassets/${chibitype}/`
     var spinewidget 
     var loadchibi = true;
     var defaultAnimationName = "Default";
@@ -162,7 +162,7 @@
         el.addClass("selected");   
         changeUILanguage();
     }
-                
+    
     function langDropdown(el){
         localStorage.setItem('webLang', el.attr("value"));
         console.log(localStorage.getItem('webLang'))
@@ -203,8 +203,8 @@
         $("#GamemodeDropdown").html("Select Gamemode")
         $("#GamemodeDropdown").attr("data-id","")
 
-        $("#GameeventDropdown").removeClass("btn-primary").addClass("btn-secondary");
-        $("#GameeventDropdown").html("Select Gamemode first &lt;&lt;&lt;")
+        $("#GameeventDropdown").removeClass("btn-primary").addClass("btn-secondary ak-disable");
+        $("#GameeventDropdown").html("&lt;&lt;&lt; Select Gamemode first")
         $("#GameeventDropdown").attr("data-id","")
 
         $("#GameeventList").empty()
@@ -214,19 +214,45 @@
     }
 
     function selectGamemode(el){
+        var gameeventtext
         $("#GamemodeDropdown").html(el.html())
         $("#GamemodeDropdown").attr("data-id",el.attr("data-id"))
         $("#GamemodeDropdown").removeClass("btn-secondary").addClass("btn-primary");
 
-        $("#GameeventDropdown").removeClass("btn-primary").addClass("btn-secondary");
-        $("#GameeventDropdown").html("Select Event")
+        function gameeventtext(gamemode){
+        switch (gamemode){
+            case "main":
+                return "Episode"
+            case "sidestory" :
+                return "Side Story"
+            case "supply":
+                return "Operation"
+            case "campaign":
+                return "Mission"
+            case "coop":
+                return "Event"
+            case "cc":
+            case "is":
+            case "tn":
+            case "ra":
+                return "Season"
+            case "sss":
+                return "Tower"
+            }
+        }
+
+        $("#GameeventDropdown").removeClass("btn-primary ak-disable").addClass("btn-secondary");
+        $("#GameeventDropdown").html(`Select ${gameeventtext(el.attr("data-id"))}`)
+
+        $("#GamemodeList .dropdown-item").removeClass("selected")
+        el.addClass("selected")
 
         $("#GameeventList").empty()
         eventlisting(el.attr("data-id"))
         populateEnemy()
     }
 
-    function eventlisting(gamemode){
+    function eventlisting(gamemode){    // old
         gameeventhtml=""
         db.akenemy.gamemode[gamemode].forEach(event =>{
             gameeventhtml+=`<a class="dropdown-item unselectable" onclick="selectGameevent($(this))" data-id="${event}">${db.akenemy.events[event]}</a>`
@@ -235,10 +261,24 @@
         $("#GameeventList").append(gameeventhtml)
     }
 
+    /*
+    function event_listing(gamemode){    // new
+        gameeventhtml = ""
+        activity_dict = db.akenemy.gamemode[gamemode]["activity"]
+        Object.keys(activity_dict).forEach(event =>{
+            gameeventhtml += `<a class="dropdown-item unselectable" onclick="selectGameevent($(this))" data-id="${event}">${activity_dict[event].name}</a>`
+        })
+
+        $("#GameeventList").append(gameeventhtml)
+    }*/
+
     function selectGameevent(el){
         $("#GameeventDropdown").html(el.html())
         $("#GameeventDropdown").attr("data-id",el.attr("data-id"))
         $("#GameeventDropdown").removeClass("btn-secondary").addClass("btn-primary");
+
+        $("#GameeventList .dropdown-item").removeClass("selected")
+        el.addClass("selected")
 
         populateEnemy()
     }
@@ -251,20 +291,20 @@
         let enemy_damage = $(".enemy-damage.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
         let enemy_immunity = $(".enemy-immunity.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
         let enemy_silenceable = $("#silenceable").hasClass("btn-primary")
-        let enemy_name = $("#opname").val()
+        let enemy_name = $("#opname").val().search("头像_敌人_")!=-1?$("#opname").val().split("头像_敌人_")[1]:$("#opname").val()
         let Notappliable=$(`#filter-enemy-immunity`).html()=="Immunity"
 
         let enemy_gamemode = $("#GamemodeDropdown.btn-primary").attr("data-id")
         let enemy_gameevent = $("#GameeventDropdown.btn-primary").attr("data-id")
 
-        var enemiesfiltered=enemyforfilter
+        var enemiesfiltered = enemyforfilter
 
-        if(enemy_class.length ==0 &&
-            enemy_race.length ==0 &&
-            enemy_attack.length ==0 &&
-            enemy_movement.length ==0 &&
-            enemy_damage.length ==0 &&
-            enemy_immunity.length ==0 &&
+        if(enemy_class.length == 0 &&
+            enemy_race.length == 0 &&
+            enemy_attack.length == 0 &&
+            enemy_movement.length == 0 &&
+            enemy_damage.length == 0 &&
+            enemy_immunity.length == 0 &&
             !enemy_silenceable &&
             !enemy_name &&
             !enemy_gamemode &&
@@ -279,7 +319,7 @@
             if (enemy_damage.length) enemiesfiltered=enemiesfiltered.filter(enemy => enemy.damageType.includes(enemy_damage[0]))
             if (enemy_immunity.length) enemiesfiltered=enemiesfiltered.filter(enemy => enemy_immunity.every(immunity => enemy.immunity.length?enemy.immunity.includes(immunity)+Notappliable-1:!Notappliable))
             if (enemy_silenceable) enemiesfiltered=enemiesfiltered.filter(enemy => enemy.silenceable==true)
-            if (enemy_name.length) enemiesfiltered=enemiesfiltered.filter(enemy => (enemy.name.toUpperCase().search(enemy_name.toUpperCase())!=-1 || enemy.nameEN.length?enemy.nameEN.toUpperCase().search(enemy_name.toUpperCase())!=-1:false) || enemy.enemyId.toUpperCase().search(enemy_name.toUpperCase())!=-1 || enemy.enemyIndex.toUpperCase().search(enemy_name.toUpperCase())!=-1)
+            if (enemy_name.length) enemiesfiltered=enemiesfiltered.filter(enemy => (enemy.name.toUpperCase().search(enemy_name.toUpperCase())!=-1) || (enemy.nameEN.length?enemy.nameEN.toUpperCase().search(enemy_name.toUpperCase())!=-1:false) || (enemy.enemyId.toUpperCase().search(enemy_name.toUpperCase())!=-1) || (enemy.enemyIndex.toUpperCase().search(enemy_name.toUpperCase())!=-1))
             if (enemy_gamemode) {
                 console.log(enemy_gamemode,enemy_gameevent)
                 if(enemy_gameevent) enemiesfiltered=enemiesfiltered.filter(enemy => enemy.filterappearance.includes(enemy_gameevent))
@@ -297,19 +337,15 @@
             $('#enemyResult').empty();
             $('#enemyResult').show();
             for (var i = 0; i < enemiesfiltered.length; i++) {
-                let image = `<img style="height:80px;padding:1px" src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/enemy/${enemiesfiltered[i].enemyId}.png" title="${enemiesfiltered[i].nameEN?enemiesfiltered[i].nameEN:""} [${enemiesfiltered[i].name}]">  `
+                let image = `<img style="height:80px;padding:1px" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${enemiesfiltered[i].enemyId}.png" title="${enemiesfiltered[i].nameEN?enemiesfiltered[i].nameEN:""} [${enemiesfiltered[i].name}]">  `
 
-                if(true){
-                    currHtml.push(`<li class="ak-btn ak-enemy" style="display:inline-block;cursor: pointer;width:90px;margin:2px;margin-bottom:2px;padding:1px;border-radius:2px" data-toggle="modal" data-target="#enemysd" onclick="selectEnemy('${enemiesfiltered[i].enemyId}')"> 
-                    <div class="col-12"style="white-space: nowrap;padding:0px;text-align:center;margin:0px ">
-                        <div style="position:absolute;top:-2px;left:2px;white-space: nowrap;padding:3px;padding-top:1px;padding-bottom:0px;margin:0px;background:#222">${enemiesfiltered[i].enemyIndex}</div>
-                        ${image}
-                    </div>
-                    
-                    </li>`)
-                }else{
-                    $("#enemyResult").append("<li class=\"ak-shadow-small\" style=\"width:100%;cursor: pointer;margin-bottom:2px; color:#fff;\" onclick=\"selectEnemy('"+enemiesfiltered[i].enemyId+"')\">"+image+(enemiesfiltered[i].nameTL?enemiesfiltered[i].nameTL+" ("+enemiesfiltered[i].name+")":enemiesfiltered[i].name)+"</li>");
-                }
+                currHtml.push(`
+                                <li class="ak-btn ak-enemy" style="display:inline-block;cursor: pointer;width:90px;margin:2px;margin-bottom:2px;padding:1px;border-radius:2px" data-toggle="modal" data-target="#enemysd" onclick="selectEnemy('${enemiesfiltered[i].enemyId}')"> 
+                                    <div class="col-12"style="white-space: nowrap;padding:0px;text-align:center;margin:0px ">
+                                        <div style="position:absolute;top:-2px;left:2px;white-space: nowrap;padding:3px;padding-top:1px;padding-bottom:0px;margin:0px;background:#222">${enemiesfiltered[i].enemyIndex}</div>
+                                        ${image}
+                                    </div>
+                                </li>`)
             }
         } else {
             $('#enemyResult').empty();
@@ -347,10 +383,10 @@
         //Enemies Attack Type
         if(firstEnemyData){
             switch(firstEnemyData.applyWay.m_value){
-                case "MELEE" : atkrange = `<span style="color:red">Melee</span>` ;break;
-                case "RANGED" : atkrange = `<span style="color:dodgerblue">Ranged</span>` ;break;
-                case "ALL" : atkrange = `<span style="color:red">Melee</span> & <span style="color:dodgerblue">Ranged</span>` ;break;
-                default : atkrange = `<span style="color:grey">Does Not Attack</span>` ;break;
+                case "MELEE"    : atkrange = `<span style="color:red">Melee</span>` ;break;
+                case "RANGED"   : atkrange = `<span style="color:dodgerblue">Ranged</span>` ;break;
+                case "ALL"      : atkrange = `<span style="color:red">Melee</span> & <span style="color:dodgerblue">Ranged</span>` ;break;
+                default         : atkrange = `<span style="color:grey">Does Not Attack</span>` ;break;
             }
         }
         //Enemies Race
@@ -362,19 +398,19 @@
         //Enemies Damage Type
         currEnemy.damageType.forEach(element => {
             switch (element) {
-                case "PHYSIC" : atktype.push(`<span style="color:orange">Physical</span>`) ;break;
-                case "MAGIC" : atktype.push(`<span style="color:cyan">Arts</span>`) ;break;
-                case "NO_DAMAGE" : atktype.push(`<span style="color:grey">Does Not Attack</span>`) ;break;
-                case "HEAL" : atktype.push(`<span style="color:lightgreen">Heal</span>`) ;break;
+                case "PHYSIC"       : atktype.push(`<span style="color:orange">Physical</span>`) ;break;
+                case "MAGIC"        : atktype.push(`<span style="color:cyan">Arts</span>`) ;break;
+                case "NO_DAMAGE"    : atktype.push(`<span style="color:grey">Does Not Attack</span>`) ;break;
+                case "HEAL"         : atktype.push(`<span style="color:lightgreen">Heal</span>`) ;break;
                 default: atktype.push(element) ;break;
             }
         });
         //Abilities
         if(tlability.length >0){
             tlability.forEach(ability => {
-                if (ability.textFormat=="TITLE") enemiesabilities.push(`<span style="font-size:larger;color: mediumspringgreen;">${ChangeDescriptionColor(ability.text)}</span>`)
-                else if (ability.textFormat=="NORMAL") enemiesabilities.push("&mdash; "+ChangeDescriptionColor(ability.text))
-                else if (ability.textFormat=="SILENCE") enemiesabilities.push(`<img style="width:16px" src="extra/40px-Silence_effect.webp" title="Silenceable"> `+ChangeDescriptionColor(ability.text))
+                if      (ability.textFormat == "TITLE")     enemiesabilities.push(`<span style="font-size:larger;color: mediumspringgreen;">${ChangeDescriptionColor(ability.text)}</span>`)
+                else if (ability.textFormat == "NORMAL")    enemiesabilities.push("&mdash; "+ChangeDescriptionColor(ability.text))
+                else if (ability.textFormat == "SILENCE")   enemiesabilities.push(`<img style="width:16px" src="extra/40px-Silence_effect.webp" title="Silenceable"> `+ChangeDescriptionColor(ability.text))
             })
         }
         
@@ -390,7 +426,7 @@
                 linkEnemieslist.push(   `<li class="ak-btn ak-enemy" style="display:inline-block;cursor: pointer;width:90px;margin:2px;margin-bottom:2px;padding:1px;border-radius:2px" /*data-toggle="modal"*/ data-target="#enemysd" onclick="selectEnemy('${linkenemy.enemyId}')"> 
                                             <div class="col-12"style="white-space: nowrap;padding:0px;text-align:center;margin:0px ">
                                                 <div style="position:absolute;top:-2px;left:2px;white-space: nowrap;padding:3px;padding-top:1px;padding-bottom:0px;margin:0px;background:#222">${linkenemy.enemyIndex}</div>
-                                                <img style="height:80px;padding:1px" src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/enemy/${linkenemy.enemyId}.png" title="${linkenemy.nameEN?linkenemy.nameEN:""} [${linkenemy.name}]">
+                                                <img style="height:80px;padding:1px" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${linkenemy.enemyId}.png" title="${linkenemy.nameEN?linkenemy.nameEN:""} [${linkenemy.name}]">
                                             </div>
                                         </li>`
                 )
@@ -403,7 +439,7 @@
             <div style="display:inline-flex;flex-direction: row;min-width: 100%;">
                 <div style="margin-bottom:8px;padding:5px;padding-top:10px;background:#444;margin-top:2px;display:inline-block;padding-left:10px;padding-right:30px">
                     <div style="display:inline-flex">
-                        <img style="height:80px;padding:1px" src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/enemy/${currEnemy.enemyId}.png" title="${tlname?tlname:""} [${currEnemy.name}]">
+                        <img style="height:80px;padding:1px" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${currEnemy.enemyId}.png" title="${tlname?tlname:""} [${currEnemy.name}]">
                         <div style="border:3px solid #FFF;text-align:center;margin:5px;padding:0px;height:50px;width:50px;display:inline-block;${currEnemy.enemyIndex.length==2?"font-size:30px":"font-size:15px;padding-top:10px"}">${currEnemy.enemyIndex}</div>
                         <div style="display:inline-block;vertical-align:top">   
                             <div style="width: max-content;">${tlname?tlname:""} [${currEnemy.name}] </div>
@@ -467,23 +503,23 @@
         // <div style="max-width:100%;margin-bottom:15px;margin-top:15px" >
         //         <div class="col" style="border:3px solid #FFF;text-align:center;margin:5px;padding:0px;height:80px;width:100px;display:inline-block">
         //         <div style="padding:0px;font-size:12px">
-        //             <img src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/enemy/hp.png" style="margin-top:-5px;position:absolute;top:5px;left:0px">
+        //             <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/enemy/hp.png" style="margin-top:-5px;position:absolute;top:5px;left:0px">
         //             Health</div><div style="font-size:40px;margin-top:-5px">${currEnemy.endure}</div>
         //         </div>
         //         <div class="col" style="border:3px solid #FFF;text-align:center;margin:5px;padding:0px;height:80px;width:100px;display:inline-block">
                 
         //         <div style="padding:0px;font-size:12px">
-        //             <img src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/enemy/atk.png" style="margin-top:-5px;position:absolute;top:5px;left:0px">
+        //             <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/enemy/atk.png" style="margin-top:-5px;position:absolute;top:5px;left:0px">
         //             Attack</div><div style="font-size:40px;margin-top:-5px">${currEnemy.attack}</div>
         //         </div>
         //         <div class="col" style="border:3px solid #FFF;text-align:center;margin:5px;padding:0px;height:80px;width:100px;display:inline-block">
         //         <div style="padding:0px;font-size:12px">
-        //             <img src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/enemy/defense.png" style="margin-top:-5px;position:absolute;top:5px;left:0px">
+        //             <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/enemy/defense.png" style="margin-top:-5px;position:absolute;top:5px;left:0px">
         //             Defense</div><div style="font-size:40px;margin-top:-5px">${currEnemy.defence}</div>
         //         </div>
         //         <div class="col" style="border:3px solid #FFF;text-align:center;margin:5px;padding:0px;height:80px;width:100px;display:inline-block">
         //         <div style="padding:0px;font-size:12px;text-align:right;margin-right:5px">
-        //             <img src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/enemy/resistance.png" style="margin-top:-5px;position:absolute;top:5px;left:0px">
+        //             <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/enemy/resistance.png" style="margin-top:-5px;position:absolute;top:5px;left:0px">
         //             Spell Resist</div><div style="font-size:40px;margin-top:-5px">${currEnemy.resistance}</div>
         //         </div>
         //     </div>
@@ -506,20 +542,17 @@
     function enemyDetail(el,level){
         $('#enemyDetail2').empty();
         $('#enemyDetail2').hide();
-        let currEnemy = query(db.enemy.enemyData,"enemyId",el)
         let currEnemyDetail = db.enemyDetail[el]
         let firstEnemyData = currEnemyDetail[0].enemyData
         let currEnemyData = currEnemyDetail[level].enemyData
         let currHtml = []
         console.log(currEnemyDetail)
         
-        let tlname = query(db.enemytl,"name_cn",currEnemy.name).name_en 
-
         var currattr = currEnemyData.attributes
         var firstattr = firstEnemyData.attributes
 
         var EnemyImmune=[]
-        $(["stun","silence","sleep","frozen","levitate","disarmedCombat"].forEach(immune =>{
+        $(["stun","silence","sleep","frozen","levitate","disarmedCombat"].forEach(immune =>{    // fear
             if (currattr[immune+"Immune"].m_value!=0?currattr[immune+"Immune"].m_value:firstattr[immune+"Immune"].m_value)
                 EnemyImmune.push(`<td><span style="color:crimson;font-weight: bold;">Immune</span></td>`)
             else
@@ -588,7 +621,7 @@
                 </tbody>
             </table>
         
-            `)
+            `) // <th scope="col" class="hovertooltip" data-tooltip="Cannot be blocked, run away in panic.">Fear</th>
         currHtml.push(`</div>`)
         if(firstEnemyData.talentBlackboard){
             enemytalentBlackboard = currEnemyData.talentBlackboard?currEnemyData.talentBlackboard:firstEnemyData.talentBlackboard
@@ -613,15 +646,15 @@
     function ChangeDescriptionColor(desc){
         if(!desc) return desc
 
-        desc = desc.replace(/\<([A-z\"\'].+?)\>/g,`<span style="color:deeppink">`+"$1"+`</span>`) // Summon/Related enemy
-        desc = desc.replace(/([\[【].+?[\]】])/g,`<span style="color:yellow">`+"$1"+`</span>`)  // Ability name
-        desc=ChangeDesc1(desc)
-        desc=ChangeDesc2(desc)
+        desc = desc.replace(/\<([A-z\"\'].+?)\>/g,`<span style="color:deeppink">$1</span>`) // Summon/Related enemy
+        desc = desc.replace(/([\[【].+?[\]】])/g,`<span style="color:yellow">$1</span>`)  // Ability name
+        desc = ChangeDesc1(desc)
+        desc = ChangeDesc2(desc)
 
         return desc
     }
 
-    function ChangeDesc1(desc,addbackgroundcolor=false){
+    function ChangeDesc1(desc,addbackgroundcolor = false){
         desc = desc.replace(/<[@](.+?)>(.+?)<\/>/g, function(m, rtf, text) {
             let rich = db.dataconst.richTextStyles[rtf];
             let rich2 = db.named_effects.termDescriptionDict[rtf];
@@ -1022,7 +1055,7 @@
         // console.log(opdataFull)
         // var tokenName =
         var tokenname = tokenkey
-        var tokenfolder = `https://raw.githubusercontent.com/Aceship/Arknight-Images/main/spineassets/token/${opdataFull.id}/${tokenkey}`
+        var tokenfolder = `https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/spineassets/token/${opdataFull.id}/${tokenkey}`
         console.log(tokenfolder)
         // $("#loading-spine").text("Loading...")
         if(spinewidgettoken){
@@ -1181,7 +1214,7 @@
         if(pers!="")chibipers=pers
         if(chibipers=='build') {chibiName.includes("build")?chibiName=chibiName:chibiName= "build_"+chibiName}
         else chibiName.includes("build")?chibiName=chibiName.split("_").slice(1).join("_"):chibiName=chibiName
-        folder = `https://raw.githubusercontent.com/Aceship/Arknight-Images/main/spineassets/${chibitype}/${charName}/${chibipers}/`
+        folder = `https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/spineassets/${chibitype}/${charName}/${chibipers}/`
         if(spinewidget)LoadAnimation()
 
         

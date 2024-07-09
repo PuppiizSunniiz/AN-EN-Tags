@@ -1,0 +1,884 @@
+{
+    "enemy_1265_durcar": {
+        "enemyId": "enemy_1265_durcar",
+        "name": "Self-Driving Cart",
+        "enemyIndex": "DUR0",
+        "sortId": 518,
+        "enemyLevel": "NORMAL",
+        "description": "A modular self-driving cart popular throughout Zeruertza. Order yours today and we'll include an additional 'Kaboom Augment! Self-Driver Siege Mode' starter model, for no additional cost!",
+        "abilityList": [
+            {
+                "text": "Upon colliding with an enemy unit, inflicts Physical damage that ignores Dodge and inflicts a brief <$ba.stun>Stun</>",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "Can be equipped with components to gain additional effects",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "linkEnemies": [],
+        "damageType": [
+            "PHYSIC"
+        ],
+        "applyWay": "NONE",
+        "motion": "WALK",
+        "enemyTags": null,
+        "lifePointReduce": 0,
+        "rangeRadius": 0.0,
+        "attributes": [
+            {
+                "maxHp": 100,
+                "atk": 500,
+                "def": 0,
+                "magicResistance": 0.0,
+                "cost": 0,
+                "blockCnt": 0,
+                "moveSpeed": 2.0,
+                "attackSpeed": 100.0,
+                "baseAttackTime": 1.0,
+                "respawnTime": 0,
+                "hpRecoveryPerSec": 0.0,
+                "spRecoveryPerSec": 0.0,
+                "maxDeployCount": 0,
+                "massLevel": 1,
+                "baseForceLevel": 0,
+                "tauntLevel": 0,
+                "epDamageResistance": 0.0,
+                "epResistance": 0.0,
+                "stunImmune": false,
+                "silenceImmune": false,
+                "sleepImmune": false,
+                "frozenImmune": false,
+                "levitateImmune": false,
+                "disarmedCombatImmune": false
+            }
+        ]
+    },
+    "enemy_1312_ymillu": {
+        "enemyId": "enemy_1312_ymillu",
+        "name": "'Winter's Void'",
+        "enemyIndex": "SH17",
+        "sortId": 607,
+        "enemyLevel": "NORMAL",
+        "description": "-",
+        "abilityList": [],
+        "linkEnemies": [
+            "enemy_1538_ymmons",
+            "enemy_1538_ymmons_2",
+            "enemy_1538_ymmons_3"
+        ],
+        "damageType": [
+            "NO_DAMAGE"
+        ],
+        "applyWay": "NONE",
+        "motion": "WALK",
+        "enemyTags": null,
+        "lifePointReduce": 0,
+        "rangeRadius": 0.0,
+        "attributes": [
+            {
+                "maxHp": 100,
+                "atk": 0,
+                "def": 0,
+                "magicResistance": 0.0,
+                "cost": 0,
+                "blockCnt": 0,
+                "moveSpeed": 0.0,
+                "attackSpeed": 0.0,
+                "baseAttackTime": 0.0,
+                "respawnTime": 0,
+                "hpRecoveryPerSec": 0.0,
+                "spRecoveryPerSec": 0.0,
+                "maxDeployCount": 0,
+                "massLevel": 0,
+                "baseForceLevel": 0,
+                "tauntLevel": 0,
+                "epDamageResistance": 0.0,
+                "epResistance": 0.0,
+                "stunImmune": false,
+                "silenceImmune": false,
+                "sleepImmune": false,
+                "frozenImmune": false,
+                "levitateImmune": false,
+                "disarmedCombatImmune": false
+            }
+        ]
+    },
+    "enemy_1334_ristar": {
+        "enemyId": "enemy_1334_ristar",
+        "name": "Planetary Debris",
+        "enemyIndex": "KW0",
+        "sortId": 647,
+        "enemyLevel": "NORMAL",
+        "description": "-",
+        "abilityList": [
+            {
+                "text": "-",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "linkEnemies": [],
+        "damageType": [
+            "NO_DAMAGE"
+        ],
+        "applyWay": "NONE",
+        "motion": "WALK",
+        "enemyTags": [],
+        "lifePointReduce": 0,
+        "rangeRadius": 0.0,
+        "attributes": [
+            {
+                "maxHp": 12000,
+                "atk": 100,
+                "def": 3300,
+                "magicResistance": 60.0,
+                "cost": 0,
+                "blockCnt": 0,
+                "moveSpeed": 4.5,
+                "attackSpeed": 0.0,
+                "baseAttackTime": 0.0,
+                "respawnTime": 0,
+                "hpRecoveryPerSec": 0.0,
+                "spRecoveryPerSec": 0.0,
+                "maxDeployCount": 0,
+                "massLevel": 4,
+                "baseForceLevel": 0,
+                "tauntLevel": 0,
+                "epDamageResistance": 0.0,
+                "epResistance": 0.0,
+                "stunImmune": true,
+                "silenceImmune": true,
+                "sleepImmune": true,
+                "frozenImmune": true,
+                "levitateImmune": true,
+                "disarmedCombatImmune": false
+            },
+            {
+                "maxHp": 15000,
+                "atk": 100,
+                "def": 3550,
+                "magicResistance": 70.0,
+                "cost": 0,
+                "blockCnt": 0,
+                "moveSpeed": 4.5,
+                "attackSpeed": 0.0,
+                "baseAttackTime": 0.0,
+                "respawnTime": 0,
+                "hpRecoveryPerSec": 0.0,
+                "spRecoveryPerSec": 0.0,
+                "maxDeployCount": 0,
+                "massLevel": 4,
+                "baseForceLevel": 0,
+                "tauntLevel": 0,
+                "epDamageResistance": 0.0,
+                "epResistance": 0.0,
+                "stunImmune": true,
+                "silenceImmune": true,
+                "sleepImmune": true,
+                "frozenImmune": true,
+                "levitateImmune": true,
+                "disarmedCombatImmune": false
+            },
+            {
+                "maxHp": 12000,
+                "atk": 100,
+                "def": 3300,
+                "magicResistance": 60.0,
+                "cost": 0,
+                "blockCnt": 0,
+                "moveSpeed": 4.5,
+                "attackSpeed": 0.0,
+                "baseAttackTime": 0.0,
+                "respawnTime": 0,
+                "hpRecoveryPerSec": 0.0,
+                "spRecoveryPerSec": 0.0,
+                "maxDeployCount": 0,
+                "massLevel": 2,
+                "baseForceLevel": 0,
+                "tauntLevel": 0,
+                "epDamageResistance": 0.0,
+                "epResistance": 0.0,
+                "stunImmune": true,
+                "silenceImmune": true,
+                "sleepImmune": true,
+                "frozenImmune": true,
+                "levitateImmune": true,
+                "disarmedCombatImmune": false
+            }
+        ]
+    },
+    "enemy_3005_lpeopl_2": {
+        "enemyId": "enemy_3005_lpeopl_2",
+        "name": "Monastery Inhabitant",
+        "enemyIndex": "SA2",
+        "sortId": 664,
+        "enemyLevel": "NORMAL",
+        "description": "A civilian sheltering in the monastery, treating the place as home. Simple and feeble, yet they strive to live. Yearning for spiritual sustenance, they pursue their faith, but are easily provoked into rushing around blindly.",
+        "abilityList": [
+            {
+                "text": "Stays on the field and does not move towards the Objective Point",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "Panic level continuously increases in battle",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "Becomes Terrified when Panic level is full, and will continuously lose HP",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "Will deplete a Life Point upon dying; Does not count towards the defeated enemies counter",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "linkEnemies": [],
+        "damageType": [
+            "NO_DAMAGE"
+        ],
+        "applyWay": "NONE",
+        "motion": "FLY",
+        "enemyTags": null,
+        "lifePointReduce": 0,
+        "rangeRadius": 0.0,
+        "attributes": [
+            {
+                "maxHp": 5000,
+                "atk": 0,
+                "def": 50,
+                "magicResistance": 0.0,
+                "cost": 0,
+                "blockCnt": 0,
+                "moveSpeed": 0.65,
+                "attackSpeed": 100.0,
+                "baseAttackTime": 0.0,
+                "respawnTime": 0,
+                "hpRecoveryPerSec": 0.0,
+                "spRecoveryPerSec": 0.0,
+                "maxDeployCount": 0,
+                "massLevel": 1,
+                "baseForceLevel": 0,
+                "tauntLevel": 0,
+                "epDamageResistance": 0.0,
+                "epResistance": 0.0,
+                "stunImmune": false,
+                "silenceImmune": false,
+                "sleepImmune": false,
+                "frozenImmune": false,
+                "levitateImmune": false,
+                "disarmedCombatImmune": false
+            }
+        ]
+    },
+    "enemy_2047_smtree": {
+        "enemyId": "enemy_2047_smtree",
+        "name": "Silvernwhite Bulwark",
+        "enemyIndex": "-",
+        "sortId": 770,
+        "enemyLevel": "NORMAL",
+        "description": "-",
+        "abilityList": [],
+        "linkEnemies": [],
+        "damageType": [
+            "NO_DAMAGE"
+        ],
+        "applyWay": "NONE",
+        "motion": "WALK",
+        "enemyTags": [],
+        "lifePointReduce": 0,
+        "rangeRadius": 0.0,
+        "attributes": [
+            {
+                "maxHp": 7500,
+                "atk": 0,
+                "def": 600,
+                "magicResistance": 20.0,
+                "cost": 0,
+                "blockCnt": 0,
+                "moveSpeed": 0.0,
+                "attackSpeed": 100.0,
+                "baseAttackTime": 1.0,
+                "respawnTime": 0,
+                "hpRecoveryPerSec": 0.0,
+                "spRecoveryPerSec": 0.0,
+                "maxDeployCount": 0,
+                "massLevel": 0,
+                "baseForceLevel": 0,
+                "tauntLevel": 0,
+                "epDamageResistance": 0.0,
+                "epResistance": 0.0,
+                "stunImmune": true,
+                "silenceImmune": true,
+                "sleepImmune": true,
+                "frozenImmune": true,
+                "levitateImmune": true,
+                "disarmedCombatImmune": false
+            }
+        ]
+    },
+    "enemy_1538_ymmons_2": {
+        "enemyId": "enemy_1538_ymmons_2",
+        "name": "Mirage",
+        "enemyIndex": "YA02",
+        "sortId": 815,
+        "enemyLevel": "BOSS",
+        "description": "-",
+        "abilityList": [],
+        "linkEnemies": [
+            "enemy_1312_ymillu"
+        ],
+        "damageType": [
+            "MAGIC"
+        ],
+        "applyWay": "ALL",
+        "motion": "WALK",
+        "enemyTags": null,
+        "lifePointReduce": 1,
+        "rangeRadius": 0.0,
+        "attributes": [
+            {
+                "maxHp": 4000,
+                "atk": 0,
+                "def": 0,
+                "magicResistance": 0.0,
+                "cost": 0,
+                "blockCnt": 0,
+                "moveSpeed": 0.7,
+                "attackSpeed": 100.0,
+                "baseAttackTime": 5.0,
+                "respawnTime": 0,
+                "hpRecoveryPerSec": 0.0,
+                "spRecoveryPerSec": 0.0,
+                "maxDeployCount": 0,
+                "massLevel": 7,
+                "baseForceLevel": 0,
+                "tauntLevel": 0,
+                "epDamageResistance": 0.0,
+                "epResistance": 0.0,
+                "stunImmune": true,
+                "silenceImmune": true,
+                "sleepImmune": true,
+                "frozenImmune": true,
+                "levitateImmune": true,
+                "disarmedCombatImmune": false
+            },
+            {
+                "maxHp": 5500,
+                "atk": 0,
+                "def": 0,
+                "magicResistance": 0.0,
+                "cost": 0,
+                "blockCnt": 0,
+                "moveSpeed": 0.7,
+                "attackSpeed": 100.0,
+                "baseAttackTime": 5.0,
+                "respawnTime": 0,
+                "hpRecoveryPerSec": 0.0,
+                "spRecoveryPerSec": 0.0,
+                "maxDeployCount": 0,
+                "massLevel": 7,
+                "baseForceLevel": 0,
+                "tauntLevel": 0,
+                "epDamageResistance": 0.0,
+                "epResistance": 0.0,
+                "stunImmune": true,
+                "silenceImmune": true,
+                "sleepImmune": true,
+                "frozenImmune": true,
+                "levitateImmune": true,
+                "disarmedCombatImmune": false
+            }
+        ]
+    },
+    "enemy_1538_ymmons_3": {
+        "enemyId": "enemy_1538_ymmons_3",
+        "name": "Delusion",
+        "enemyIndex": "YA03",
+        "sortId": 816,
+        "enemyLevel": "BOSS",
+        "description": "-",
+        "abilityList": [],
+        "linkEnemies": [
+            "enemy_1312_ymillu"
+        ],
+        "damageType": [
+            "MAGIC"
+        ],
+        "applyWay": "RANGED",
+        "motion": "WALK",
+        "enemyTags": null,
+        "lifePointReduce": 1,
+        "rangeRadius": 3.5,
+        "attributes": [
+            {
+                "maxHp": 50000,
+                "atk": 400,
+                "def": 400,
+                "magicResistance": 40.0,
+                "cost": 0,
+                "blockCnt": 0,
+                "moveSpeed": 0.3,
+                "attackSpeed": 100.0,
+                "baseAttackTime": 5.0,
+                "respawnTime": 0,
+                "hpRecoveryPerSec": 0.0,
+                "spRecoveryPerSec": 0.0,
+                "maxDeployCount": 0,
+                "massLevel": 7,
+                "baseForceLevel": 0,
+                "tauntLevel": 0,
+                "epDamageResistance": 0.0,
+                "epResistance": 0.0,
+                "stunImmune": true,
+                "silenceImmune": true,
+                "sleepImmune": true,
+                "frozenImmune": true,
+                "levitateImmune": true,
+                "disarmedCombatImmune": false
+            },
+            {
+                "maxHp": 65000,
+                "atk": 500,
+                "def": 400,
+                "magicResistance": 40.0,
+                "cost": 0,
+                "blockCnt": 0,
+                "moveSpeed": 0.3,
+                "attackSpeed": 100.0,
+                "baseAttackTime": 5.0,
+                "respawnTime": 0,
+                "hpRecoveryPerSec": 0.0,
+                "spRecoveryPerSec": 0.0,
+                "maxDeployCount": 0,
+                "massLevel": 7,
+                "baseForceLevel": 0,
+                "tauntLevel": 0,
+                "epDamageResistance": 0.0,
+                "epResistance": 0.0,
+                "stunImmune": true,
+                "silenceImmune": true,
+                "sleepImmune": true,
+                "frozenImmune": true,
+                "levitateImmune": true,
+                "disarmedCombatImmune": false
+            }
+        ]
+    },
+    "enemy_2062_smcar": {
+        "enemyId": "enemy_2062_smcar",
+        "name": "Self-Driving Recon Cart",
+        "enemyIndex": "SMC0",
+        "sortId": 865,
+        "enemyLevel": "NORMAL",
+        "description": "When colliding with an enemy, inflicts Physical damage and gradually increases Recon proficiency.",
+        "abilityList": [
+            {
+                "text": "When colliding with an enemy, inflicts Physical damage and gradually increases Recon proficiency.",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "linkEnemies": [],
+        "damageType": [
+            "PHYSIC"
+        ],
+        "applyWay": "NONE",
+        "motion": "WALK",
+        "enemyTags": null,
+        "lifePointReduce": 0,
+        "rangeRadius": 0.0,
+        "attributes": [
+            {
+                "maxHp": 100,
+                "atk": 500,
+                "def": 0,
+                "magicResistance": 0.0,
+                "cost": 0,
+                "blockCnt": 0,
+                "moveSpeed": 2.0,
+                "attackSpeed": 100.0,
+                "baseAttackTime": 1.0,
+                "respawnTime": 0,
+                "hpRecoveryPerSec": 0.0,
+                "spRecoveryPerSec": 0.0,
+                "maxDeployCount": 0,
+                "massLevel": 1,
+                "baseForceLevel": 0,
+                "tauntLevel": 0,
+                "epDamageResistance": 0.0,
+                "epResistance": 0.0,
+                "stunImmune": false,
+                "silenceImmune": false,
+                "sleepImmune": false,
+                "frozenImmune": false,
+                "levitateImmune": false,
+                "disarmedCombatImmune": false
+            }
+        ]
+    },
+    "enemy_5008_cstrwd": {
+        "enemyId": "enemy_5008_cstrwd",
+        "name": "The Boons of Art!",
+        "enemyIndex": "-",
+        "sortId": 866,
+        "enemyLevel": "NORMAL",
+        "description": "-",
+        "abilityList": [
+            {
+                "text": "-",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "linkEnemies": [],
+        "damageType": [
+            "NO_DAMAGE"
+        ],
+        "applyWay": "NONE",
+        "motion": "FLY",
+        "enemyTags": null,
+        "lifePointReduce": 0,
+        "rangeRadius": 0.0,
+        "attributes": [
+            {
+                "maxHp": 100000000,
+                "atk": 0,
+                "def": 0,
+                "magicResistance": 0.0,
+                "cost": 0,
+                "blockCnt": 0,
+                "moveSpeed": 5.0,
+                "attackSpeed": 100.0,
+                "baseAttackTime": 1.0,
+                "respawnTime": 0,
+                "hpRecoveryPerSec": 0.0,
+                "spRecoveryPerSec": 0.0,
+                "maxDeployCount": 0,
+                "massLevel": 0,
+                "baseForceLevel": 0,
+                "tauntLevel": 0,
+                "epDamageResistance": 0.0,
+                "epResistance": 0.0,
+                "stunImmune": false,
+                "silenceImmune": false,
+                "sleepImmune": false,
+                "frozenImmune": false,
+                "levitateImmune": false,
+                "disarmedCombatImmune": false
+            }
+        ]
+    },
+    "enemy_5009_shtrwd": {
+        "enemyId": "enemy_5009_shtrwd",
+        "name": "The Clutchness of Art!",
+        "enemyIndex": "-",
+        "sortId": 867,
+        "enemyLevel": "NORMAL",
+        "description": "-",
+        "abilityList": [
+            {
+                "text": "-",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "linkEnemies": [],
+        "damageType": [
+            "NO_DAMAGE"
+        ],
+        "applyWay": "NONE",
+        "motion": "FLY",
+        "enemyTags": null,
+        "lifePointReduce": 0,
+        "rangeRadius": 0.0,
+        "attributes": [
+            {
+                "maxHp": 100000000,
+                "atk": 0,
+                "def": 0,
+                "magicResistance": 0.0,
+                "cost": 0,
+                "blockCnt": 0,
+                "moveSpeed": 5.0,
+                "attackSpeed": 100.0,
+                "baseAttackTime": 1.0,
+                "respawnTime": 0,
+                "hpRecoveryPerSec": 0.0,
+                "spRecoveryPerSec": 0.0,
+                "maxDeployCount": 0,
+                "massLevel": 0,
+                "baseForceLevel": 0,
+                "tauntLevel": 0,
+                "epDamageResistance": 0.0,
+                "epResistance": 0.0,
+                "stunImmune": false,
+                "silenceImmune": false,
+                "sleepImmune": false,
+                "frozenImmune": false,
+                "levitateImmune": false,
+                "disarmedCombatImmune": false
+            }
+        ]
+    },
+    "enemy_5010_catrdg": {
+        "enemyId": "enemy_5010_catrdg",
+        "name": "Weaksauce",
+        "enemyIndex": "-",
+        "sortId": 868,
+        "enemyLevel": "NORMAL",
+        "description": "-",
+        "abilityList": [
+            {
+                "text": "-",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "linkEnemies": [],
+        "damageType": [
+            "NO_DAMAGE"
+        ],
+        "applyWay": "RANGED",
+        "motion": "FLY",
+        "enemyTags": null,
+        "lifePointReduce": 0,
+        "rangeRadius": 0.0,
+        "attributes": [
+            {
+                "maxHp": 10,
+                "atk": 400,
+                "def": 0,
+                "magicResistance": 0.0,
+                "cost": 0,
+                "blockCnt": 0,
+                "moveSpeed": 2.8,
+                "attackSpeed": 100.0,
+                "baseAttackTime": 1.0,
+                "respawnTime": 0,
+                "hpRecoveryPerSec": 0.0,
+                "spRecoveryPerSec": 0.0,
+                "maxDeployCount": 0,
+                "massLevel": 0,
+                "baseForceLevel": 0,
+                "tauntLevel": 0,
+                "epDamageResistance": 0.0,
+                "epResistance": 0.0,
+                "stunImmune": false,
+                "silenceImmune": false,
+                "sleepImmune": false,
+                "frozenImmune": false,
+                "levitateImmune": false,
+                "disarmedCombatImmune": false
+            }
+        ]
+    },
+    "enemy_7008_wrkwrk": {
+        "enemyId": "enemy_7008_wrkwrk",
+        "name": "Basic Harvester",
+        "enemyIndex": "SD15",
+        "sortId": 904,
+        "enemyLevel": "NORMAL",
+        "description": "Basic mechanical workers capable of gathering and transporting resources. Their capacity is not very large but they are industrious and diligent.",
+        "abilityList": [
+            {
+                "text": "Automatically locates and attacks Ore Veins, returning spoils to the Harvester Hub",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "linkEnemies": [],
+        "damageType": [
+            "NO_DAMAGE"
+        ],
+        "applyWay": "NONE",
+        "motion": "WALK",
+        "enemyTags": [
+            "machine"
+        ],
+        "lifePointReduce": 0,
+        "rangeRadius": 0.0,
+        "attributes": [
+            {
+                "maxHp": 5000,
+                "atk": 0,
+                "def": 200,
+                "magicResistance": 0.0,
+                "cost": 0,
+                "blockCnt": 0,
+                "moveSpeed": 1.5,
+                "attackSpeed": 100.0,
+                "baseAttackTime": 1.3,
+                "respawnTime": 0,
+                "hpRecoveryPerSec": 0.0,
+                "spRecoveryPerSec": 0.0,
+                "maxDeployCount": 0,
+                "massLevel": 0,
+                "baseForceLevel": 0,
+                "tauntLevel": 0,
+                "epDamageResistance": 0.0,
+                "epResistance": 0.0,
+                "stunImmune": false,
+                "silenceImmune": false,
+                "sleepImmune": false,
+                "frozenImmune": false,
+                "levitateImmune": false,
+                "disarmedCombatImmune": false
+            }
+        ]
+    },
+    "enemy_8001_flmlod": {
+        "enemyId": "enemy_8001_flmlod",
+        "name": "Sverdsmeltr, Guardian Ember of the King",
+        "enemyIndex": "SFR01",
+        "sortId": 912,
+        "enemyLevel": "BOSS",
+        "description": "From the youngest general of the Punishment Clan, to the final Diαblo. Facing the siege, he guarded the king's remains for three days and nights. Finally, in the final flame's light, he saw his promised homeland.",
+        "abilityList": [
+            {
+                "text": "First Form",
+                "textFormat": "TITLE"
+            },
+            {
+                "text": "[Suppression] Uses Haunting Flames to incapacitate one Operator on the field, causing them to be unable to act and take continuous Arts damage. If an Operator is defeated or retreats while affected by Haunting Flames, that Operator will be sealed, and cannot be redeployed until the Haunting Flames are destroyed.",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "[Payback] When HP drops to 0, all surrounding Operators will immediately be engulfed by Haunting Flames. Periodically releases <Condensed Heat> towards a friendly unit (if no eligible targets, this will be released towards the Objective Points instead).",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "[Condensed Heat] These flying flames released by Sverdsmeltr have low DEF and inflict continuous Arts and Burn damage to surrounding Operators. When they reach their target or the target leaves the field, they will self-destruct and deal Arts damage in a large area. Drains a Life Point upon reaching the Objective Point.",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "linkEnemies": [
+            "enemy_8006_flmgd",
+            "enemy_8002_flmchn",
+            "enemy_8003_flmchn2",
+            "enemy_8004_flmspr",
+            "enemy_8005_flmspr2"
+        ],
+        "damageType": [
+            "PHYSIC",
+            "MAGIC"
+        ],
+        "applyWay": "MELEE",
+        "motion": "WALK",
+        "enemyTags": [
+            "sarkaz"
+        ],
+        "lifePointReduce": 5,
+        "rangeRadius": -1.0,
+        "attributes": [
+            {
+                "maxHp": 40000,
+                "atk": 1500,
+                "def": 1500,
+                "magicResistance": 50.0,
+                "cost": 0,
+                "blockCnt": 0,
+                "moveSpeed": 0.4,
+                "attackSpeed": 100.0,
+                "baseAttackTime": 4.5,
+                "respawnTime": 0,
+                "hpRecoveryPerSec": 0.0,
+                "spRecoveryPerSec": 0.0,
+                "maxDeployCount": 0,
+                "massLevel": 8,
+                "baseForceLevel": 0,
+                "tauntLevel": 0,
+                "epDamageResistance": 0.0,
+                "epResistance": 0.0,
+                "stunImmune": true,
+                "silenceImmune": true,
+                "sleepImmune": true,
+                "frozenImmune": true,
+                "levitateImmune": true,
+                "disarmedCombatImmune": false
+            }
+        ]
+    },
+    "enemy_8001_flmlod_2": {
+        "enemyId": "enemy_8001_flmlod_2",
+        "name": "Sverdsmeltr, Guardian Ember of the King",
+        "enemyIndex": "SFR01",
+        "sortId": 913,
+        "enemyLevel": "BOSS",
+        "description": "From the youngest general of the Punishment Clan, to the final Diαblo. Facing the siege, he guarded the king's remains for three days and nights. Finally, in the final flame's light, he saw his promised homeland.",
+        "abilityList": [
+            {
+                "text": "First Form",
+                "textFormat": "TITLE"
+            },
+            {
+                "text": "[Suppression] Uses Haunting Flames to incapacitate one Operator on the field, causing them to be unable to act and take continuous Arts damage. If an Operator is defeated or retreats while affected by Haunting Flames, that Operator will be sealed, and cannot be redeployed until the Haunting Flames are destroyed.",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "[Payback] When HP drops to 0, all surrounding Operators will immediately be engulfed by Haunting Flames. Periodically releases <Condensed Heat> towards a friendly unit (if no eligible targets, this will be released towards the Objective Points instead).",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "[Condensed Heat] These flying flames released by Sverdsmeltr have low DEF and inflict continuous Arts and Burn damage to surrounding Operators. When they reach their target or the target leaves the field, they will self-destruct and deal Arts damage in a large area. Drains a Life Point upon reaching the Objective Point.",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "Second Form",
+                "textFormat": "TITLE"
+            },
+            {
+                "text": "Sverdsmeltr summons his Reforged Retinue and flies into the air.",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "When all Reforged Retinues are defeated or when Sverdsmeltr falls below 50% HP, Sverdsmeltr will absorb all remaining Reforged Retinues and restore HP. Afterward, he will land on the ground, where he deals long-ranged AoE Arts attacks and gains the following abilities:",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "[Extinction] Incapacitates one Operator on the field, causing them to be unable to act and releasing <Condensed Heat> at them. This <Condensed Heat> has higher HP and damage, and destroying it will allow the targeted Operator to resume acting.",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "linkEnemies": [
+            "enemy_8006_flmgd",
+            "enemy_8002_flmchn",
+            "enemy_8003_flmchn2",
+            "enemy_8004_flmspr",
+            "enemy_8005_flmspr2"
+        ],
+        "damageType": [
+            "PHYSIC",
+            "MAGIC"
+        ],
+        "applyWay": "MELEE",
+        "motion": "WALK",
+        "enemyTags": [
+            "sarkaz"
+        ],
+        "lifePointReduce": 5,
+        "rangeRadius": -1.0,
+        "attributes": [
+            {
+                "maxHp": 70000,
+                "atk": 2200,
+                "def": 1500,
+                "magicResistance": 50.0,
+                "cost": 0,
+                "blockCnt": 0,
+                "moveSpeed": 0.4,
+                "attackSpeed": 100.0,
+                "baseAttackTime": 4.5,
+                "respawnTime": 0,
+                "hpRecoveryPerSec": 0.0,
+                "spRecoveryPerSec": 0.0,
+                "maxDeployCount": 0,
+                "massLevel": 8,
+                "baseForceLevel": 0,
+                "tauntLevel": 0,
+                "epDamageResistance": 0.0,
+                "epResistance": 0.0,
+                "stunImmune": true,
+                "silenceImmune": true,
+                "sleepImmune": true,
+                "frozenImmune": true,
+                "levitateImmune": true,
+                "disarmedCombatImmune": false
+            }
+        ]
+    }
+}

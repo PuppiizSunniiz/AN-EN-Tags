@@ -1,0 +1,1057 @@
+{
+    "enemy_1265_durcar": {
+        "abilityList": [
+            {
+                "text": "Upon colliding with an enemy unit, inflicts Physical damage that ignores Dodge and inflicts a brief <$ba.stun>Stun</>",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "Can be equipped with components to gain additional effects",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "Suicide.duration",
+                    "value": 60.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitEnemy.stun",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitEnemy.atk_scale",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitEnemy.enemy_durcar_knockback.enable",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitEnemy.enemy_durcar_knockback.force",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitEnemy.enemy_durcar_def_down.enable",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitEnemy.enemy_durcar_def_down.def",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitEnemy.enemy_durcar_def_down.duration",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitEnemy.enemy_durcar_mag_resist_down.enable",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitEnemy.enemy_durcar_mag_resist_down.magic_resistance",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitEnemy.enemy_durcar_mag_resist_down.duration",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitEnemy.enemy_durcar_cold.enable",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitEnemy.enemy_durcar_cold.cold",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitAlly.enemy_durcar_atk_speed_up.enable",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitAlly.enemy_durcar_atk_speed_up.attack_speed",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitAlly.enemy_durcar_atk_speed_up.duration",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitAlly.enemy_durcar_heal.enable",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitAlly.enemy_durcar_heal.heal_scale",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitAlly.enemy_durcar_heal.duration",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitAlly.enemy_durcar_gain_sp.enable",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitAlly.enemy_durcar_gain_sp.sp",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Boom.enable",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Boom.enable_damage",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Boom.atk_scale",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Boom.enable_silence",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Boom.silence",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitTurngear.move_speed",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitTurngear.duration",
+                    "value": 0.5,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null
+    },
+    "enemy_1312_ymillu": {
+        "abilityList": [],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "SummonTrigger.duration",
+                    "value": 121.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "SummonTrigger.interval",
+                    "value": 30.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "Summon",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "summon1.enemy_key",
+                            "value": 0.0,
+                            "valueStr": "enemy_1295_ymph"
+                        },
+                        {
+                            "key": "summon2.enemy_key",
+                            "value": 0.0,
+                            "valueStr": "enemy_1295_ymph"
+                        },
+                        {
+                            "key": "summon3.enemy_key",
+                            "value": 0.0,
+                            "valueStr": "enemy_1295_ymph"
+                        },
+                        {
+                            "key": "summon4.enemy_key",
+                            "value": 0.0,
+                            "valueStr": "enemy_1297_ymflag"
+                        },
+                        {
+                            "key": "summon5.enemy_key",
+                            "value": 0.0,
+                            "valueStr": "enemy_1295_ymph"
+                        },
+                        {
+                            "key": "summon6.enemy_key",
+                            "value": 0.0,
+                            "valueStr": "enemy_1297_ymflag"
+                        },
+                        {
+                            "key": "random_range_num",
+                            "value": 6.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null
+    },
+    "enemy_1334_ristar": {
+        "abilityList": [
+            {
+                "text": "-",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "HitEnemy.enemy_damage",
+                    "value": 3000.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitEnemy.force",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitEnemy.stun",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitAlly.ally_damage",
+                    "value": 3000.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitCounter.max_hit_count",
+                    "value": 20.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitCounter.anti_duration",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "StarMark.max_stack_cnt",
+                    "value": 80.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "StarMark.magic_resistance",
+                    "value": -80.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "StarMark.def",
+                    "value": -4000.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "StarMark.change1_stack_cnt",
+                    "value": 10.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "StarMark.change2_stack_cnt",
+                    "value": 30.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "StarMark.change3_stack_cnt",
+                    "value": 50.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "CloseAura.attack_speed",
+                    "value": -25.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "DeathGlobalBuff.move_speed",
+                    "value": 0.1,
+                    "valueStr": null
+                },
+                {
+                    "key": "StarMark.max_hp",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "StarMark.damage_resistance",
+                    "value": 0.3,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitAlly.damage_scale",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitEnemy.damage_scale",
+                    "value": 2.1,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitEnemy.damage_resistance",
+                    "value": 0.7,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "StarMark.damage_resistance",
+                    "value": 0.35,
+                    "valueStr": null
+                },
+                {
+                    "key": "StarMark.max_stack_cnt",
+                    "value": 120.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "StarMark.def",
+                    "value": -6000.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "StarMark.magic_resistance",
+                    "value": -120.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "HitEnemy.force",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitEnemy.stun",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitCounter.max_hit_count",
+                    "value": 10.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitCounter.anti_duration",
+                    "value": 2.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitAlly.damage_scale",
+                    "value": 0.4,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitEnemy.damage_scale",
+                    "value": 3.2,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "RistarBoom",
+                    "priority": -1,
+                    "cooldown": 10000.0,
+                    "initCooldown": 10000.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "RistarBoomATKScale",
+                            "value": 7.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "CloseAttack",
+                    "priority": -1,
+                    "cooldown": 10000.0,
+                    "initCooldown": 10000.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "CloseAttackATKScale",
+                            "value": 1.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "CloseAttack2",
+                    "priority": -1,
+                    "cooldown": 10000.0,
+                    "initCooldown": 10000.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "CloseAttack2ATKScale",
+                            "value": 1.2,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "prefabKey": "RistarBoom",
+                    "priority": -1,
+                    "cooldown": 10000.0,
+                    "initCooldown": 10000.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "RistarBoomATKScale",
+                            "value": 9.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "CloseAttack",
+                    "priority": -1,
+                    "cooldown": 10000.0,
+                    "initCooldown": 10000.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "CloseAttackATKScale",
+                            "value": 1.2,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "CloseAttack2",
+                    "priority": -1,
+                    "cooldown": 10000.0,
+                    "initCooldown": 10000.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "CloseAttack2ATKScale",
+                            "value": 1.4,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "prefabKey": "RistarBoom",
+                    "priority": -1,
+                    "cooldown": 10000.0,
+                    "initCooldown": 10000.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "RistarBoomATKScale",
+                            "value": 7.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "CloseAttack",
+                    "priority": -1,
+                    "cooldown": 10000.0,
+                    "initCooldown": 10000.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "CloseAttackATKScale",
+                            "value": 1.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "CloseAttack2",
+                    "priority": -1,
+                    "cooldown": 10000.0,
+                    "initCooldown": 10000.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "CloseAttack2ATKScale",
+                            "value": 1.2,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null
+    },
+    "enemy_3005_lpeopl_2": {
+        "abilityList": [
+            {
+                "text": "Stays on the field and does not move towards the Objective Point",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "Panic level continuously increases in battle",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "Becomes Terrified when Panic level is full, and will continuously lose HP",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "Will deplete a Life Point upon dying; Does not count towards the defeated enemies counter",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "Fear.value",
+                    "value": -1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Fear.dec_blood",
+                    "value": 15.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Move.isBossLevel",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Move.sp",
+                    "value": -20.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": [
+            {
+                "spType": "INCREASE_WITH_TIME",
+                "maxSp": 50,
+                "initSp": 0,
+                "increment": 2.0
+            }
+        ]
+    },
+    "enemy_1538_ymmons_2": {
+        "abilityList": [],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "SummonIllu.enemy_key",
+                    "value": 0.0,
+                    "valueStr": "enemy_1312_ymillu"
+                },
+                {
+                    "key": "Call.duration",
+                    "value": 18.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "SummonIllu.enemy_key",
+                    "value": 0.0,
+                    "valueStr": "enemy_1312_ymillu"
+                },
+                {
+                    "key": "Call.duration",
+                    "value": 18.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "CallTransport",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": null
+                }
+            ],
+            [
+                {
+                    "prefabKey": "CallTransport",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": null
+                }
+            ]
+        ],
+        "spData": null
+    },
+    "enemy_1538_ymmons_3": {
+        "abilityList": [],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "SummonIllu.enemy_key",
+                    "value": 0.0,
+                    "valueStr": "enemy_1312_ymillu"
+                },
+                {
+                    "key": "Invincible.invincible",
+                    "value": 2.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "SummonIllu.enemy_key",
+                    "value": 0.0,
+                    "valueStr": "enemy_1312_ymillu"
+                },
+                {
+                    "key": "Invincible.invincible",
+                    "value": 2.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "AOE",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "range_radius",
+                            "value": 1.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk_scale",
+                            "value": 2.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "Transport",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "range_radius",
+                            "value": 1.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk_scale",
+                            "value": 2.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "prefabKey": "AOE",
+                    "priority": 0,
+                    "cooldown": 5.0,
+                    "initCooldown": 5.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "range_radius",
+                            "value": 1.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk_scale",
+                            "value": 2.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "Transport",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "range_radius",
+                            "value": 1.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk_scale",
+                            "value": 2.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null
+    },
+    "enemy_2062_smcar": {
+        "abilityList": [
+            {
+                "text": "When colliding with an enemy, inflicts Physical damage and gradually increases Recon proficiency.",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "Suicide.duration",
+                    "value": 60.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitEnemy.atk_scale",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "HitEnemy.base_exp",
+                    "value": 2.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null
+    },
+    "enemy_5008_cstrwd": {
+        "abilityList": [
+            {
+                "text": "-",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "ChargeCost.cost",
+                    "value": 15.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null
+    },
+    "enemy_5009_shtrwd": {
+        "abilityList": [
+            {
+                "text": "-",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "TriggerJet.sp",
+                    "value": 1.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null
+    },
+    "enemy_5010_catrdg": {
+        "abilityList": [
+            {
+                "text": "-",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": null,
+        "skills": null,
+        "spData": null
+    },
+    "enemy_7008_wrkwrk": {
+        "abilityList": [
+            {
+                "text": "Automatically locates and attacks Ore Veins, returning spoils to the Harvester Hub",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": null,
+        "skills": null,
+        "spData": null
+    },
+    "enemy_8001_flmlod": {
+        "abilityList": [
+            {
+                "text": "First Form",
+                "textFormat": "TITLE"
+            },
+            {
+                "text": "[Suppression] Uses Haunting Flames to incapacitate one Operator on the field, causing them to be unable to act and take continuous Arts damage. If an Operator is defeated or retreats while affected by Haunting Flames, that Operator will be sealed, and cannot be redeployed until the Haunting Flames are destroyed.",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "[Payback] When HP drops to 0, all surrounding Operators will immediately be engulfed by Haunting Flames. Periodically releases <Condensed Heat> towards a friendly unit (if no eligible targets, this will be released towards the Objective Points instead).",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "[Condensed Heat] These flying flames released by Sverdsmeltr have low DEF and inflict continuous Arts and Burn damage to surrounding Operators. When they reach their target or the target leaves the field, they will self-destruct and deal Arts damage in a large area. Drains a Life Point upon reaching the Objective Point.",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "PassiveM2.cast_duration",
+                    "value": 30.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PassiveM2.fire_interval",
+                    "value": 5.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PassiveEnhance.enhance_level",
+                    "value": 0.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "DarkChain",
+                    "priority": 0,
+                    "cooldown": 30.0,
+                    "initCooldown": 5.0,
+                    "spCost": 0,
+                    "blackboard": null
+                },
+                {
+                    "prefabKey": "Revive",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "branch_id",
+                            "value": 0.0,
+                            "valueStr": "branch_flmgd"
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "Transfor",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 999999.0,
+                    "spCost": 0,
+                    "blackboard": null
+                },
+                {
+                    "prefabKey": "LightChain",
+                    "priority": 0,
+                    "cooldown": 25.0,
+                    "initCooldown": 2.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "dynamic",
+                            "value": 1000.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "GroupChain",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": null
+                }
+            ]
+        ],
+        "spData": null
+    },
+    "enemy_8001_flmlod_2": {
+        "abilityList": [
+            {
+                "text": "First Form",
+                "textFormat": "TITLE"
+            },
+            {
+                "text": "[Suppression] Uses Haunting Flames to incapacitate one Operator on the field, causing them to be unable to act and take continuous Arts damage. If an Operator is defeated or retreats while affected by Haunting Flames, that Operator will be sealed, and cannot be redeployed until the Haunting Flames are destroyed.",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "[Payback] When HP drops to 0, all surrounding Operators will immediately be engulfed by Haunting Flames. Periodically releases <Condensed Heat> towards a friendly unit (if no eligible targets, this will be released towards the Objective Points instead).",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "[Condensed Heat] These flying flames released by Sverdsmeltr have low DEF and inflict continuous Arts and Burn damage to surrounding Operators. When they reach their target or the target leaves the field, they will self-destruct and deal Arts damage in a large area. Drains a Life Point upon reaching the Objective Point.",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "Second Form",
+                "textFormat": "TITLE"
+            },
+            {
+                "text": "Sverdsmeltr summons his Reforged Retinue and flies into the air.",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "When all Reforged Retinues are defeated or when Sverdsmeltr falls below 50% HP, Sverdsmeltr will absorb all remaining Reforged Retinues and restore HP. Afterward, he will land on the ground, where he deals long-ranged AoE Arts attacks and gains the following abilities:",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "[Extinction] Incapacitates one Operator on the field, causing them to be unable to act and releasing <Condensed Heat> at them. This <Condensed Heat> has higher HP and damage, and destroying it will allow the targeted Operator to resume acting.",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "PassiveM3.hp_ratio",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "PassiveM2.cast_duration",
+                    "value": 30.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PassiveM2.fire_interval",
+                    "value": 5.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PassiveEnhance.enhance_level",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PassiveM3.flmgd_death_cnt",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PassiveM4.attack@ranged_atk_scale",
+                    "value": 0.5,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "DarkChain",
+                    "priority": 0,
+                    "cooldown": 30.0,
+                    "initCooldown": 5.0,
+                    "spCost": 0,
+                    "blackboard": null
+                },
+                {
+                    "prefabKey": "Revive",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "branch_id",
+                            "value": 0.0,
+                            "valueStr": "branch_flmgd"
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "Transfor",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 999999.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "hp_ratio",
+                            "value": 0.2,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "LightChain",
+                    "priority": 0,
+                    "cooldown": 25.0,
+                    "initCooldown": 2.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "dynamic",
+                            "value": 0.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "GroupChain",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": null
+                }
+            ]
+        ],
+        "spData": null
+    }
+}

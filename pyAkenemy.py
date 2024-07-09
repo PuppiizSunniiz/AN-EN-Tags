@@ -6,48 +6,49 @@ import json
 import re
 import glob
 from datetime import datetime
+from pyfunction import json_load
 
 ################################################################################################################################################################################################################################################
 # JSON
 ################################################################################################################################################################################################################################################
 def Akenemy() -> None :
-    json_Database       =   json.loads(open("json/gamedata/zh_CN/gamedata/levels/enemydata/enemy_database.json").read())
-    json_DatabaseEN     =   json.loads(open("json/gamedata/en_US/gamedata/levels/enemydata/enemy_database.json").read())
+    json_Database       =   json_load("json/gamedata/zh_CN/gamedata/levels/enemydata/enemy_database.json")
+    json_DatabaseEN     =   json_load("json/gamedata/en_US/gamedata/levels/enemydata/enemy_database.json")
 
-    json_Handbook       =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/enemy_handbook_table.json").read())
-    json_HandbookEN     =   json.loads(open("json/gamedata/en_US/gamedata/excel/enemy_handbook_table.json").read())
+    json_Handbook       =   json_load("json/gamedata/zh_CN/gamedata/excel/enemy_handbook_table.json")
+    json_HandbookEN     =   json_load("json/gamedata/en_US/gamedata/excel/enemy_handbook_table.json")
 
-    json_activity       =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/activity_table.json").read())
-    json_activityEN     =   json.loads(open("json/gamedata/en_US/gamedata/excel/activity_table.json").read())
+    json_activity       =   json_load("json/gamedata/zh_CN/gamedata/excel/activity_table.json")
+    json_activityEN     =   json_load("json/gamedata/en_US/gamedata/excel/activity_table.json")
 
-    json_stage          =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/stage_table.json").read())
-    json_stageEN        =   json.loads(open("json/gamedata/en_US/gamedata/excel/stage_table.json").read())
+    json_stage          =   json_load("json/gamedata/zh_CN/gamedata/excel/stage_table.json")
+    json_stageEN        =   json_load("json/gamedata/en_US/gamedata/excel/stage_table.json")
 
-    json_zone           =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/zone_table.json").read())
-    json_zoneEN         =   json.loads(open("json/gamedata/en_US/gamedata/excel/zone_table.json").read())
+    json_zone           =   json_load("json/gamedata/zh_CN/gamedata/excel/zone_table.json")
+    json_zoneEN         =   json_load("json/gamedata/en_US/gamedata/excel/zone_table.json")
 
-    json_campaign       =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/campaign_table.json").read())
+    json_campaign       =   json_load("json/gamedata/zh_CN/gamedata/excel/campaign_table.json")
 
-    json_SSS            =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/climb_tower_table.json").read())
-    json_SSSEN          =   json.loads(open("json/gamedata/en_US/gamedata/excel/climb_tower_table.json").read())
+    json_SSS            =   json_load("json/gamedata/zh_CN/gamedata/excel/climb_tower_table.json")
+    json_SSSEN          =   json_load("json/gamedata/en_US/gamedata/excel/climb_tower_table.json")
 
-    json_CC             =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/crisis_table.json").read())
-    json_CC2            =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/crisis_v2_table.json").read())
-    json_CCEN           =   json.loads(open("json/gamedata/en_US/gamedata/excel/crisis_table.json").read())
-    json_CC2EN          =   json.loads(open("json/gamedata/en_US/gamedata/excel/crisis_v2_table.json").read())
+    json_CC             =   json_load("json/gamedata/zh_CN/gamedata/excel/crisis_table.json")
+    json_CC2            =   json_load("json/gamedata/zh_CN/gamedata/excel/crisis_v2_table.json")
+    json_CCEN           =   json_load("json/gamedata/en_US/gamedata/excel/crisis_table.json")
+    json_CC2EN          =   json_load("json/gamedata/en_US/gamedata/excel/crisis_v2_table.json")
 
-    #json_IS0            =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/roguelike_table.json").read())
-    json_IS             =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/roguelike_topic_table.json").read())
-    json_ISEN0          =   json.loads(open("json/gamedata/en_US(Old)/gamedata/excel/roguelike_table.json").read())
-    json_ISEN           =   json.loads(open("json/gamedata/en_US/gamedata/excel/roguelike_topic_table.json").read())
+    #json_IS0            =   json_load("json/gamedata/zh_CN/gamedata/excel/roguelike_table.json")
+    json_IS             =   json_load("json/gamedata/zh_CN/gamedata/excel/roguelike_topic_table.json")
+    json_ISEN0          =   json_load("json/gamedata/en_US(Old)/gamedata/excel/roguelike_table.json")
+    json_ISEN           =   json_load("json/gamedata/en_US/gamedata/excel/roguelike_topic_table.json")
 
-    json_RA1            =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/sandbox_table.json").read())
-    json_RA2            =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/sandbox_perm_table.json").read())
-    json_RA1EN          =   json.loads(open("json/gamedata/en_US/gamedata/excel/sandbox_table.json").read())
-    #json_RA2EN          =   json.loads(open("json/gamedata/en_US/gamedata/excel/sandbox_perm_table.json").read())
+    json_RA1            =   json_load("json/gamedata/zh_CN/gamedata/excel/sandbox_table.json")
+    json_RA2            =   json_load("json/gamedata/zh_CN/gamedata/excel/sandbox_perm_table.json")
+    json_RA1EN          =   json_load("json/gamedata/en_US/gamedata/excel/sandbox_table.json")
+    #json_RA2EN          =   json_load("json/gamedata/en_US/gamedata/excel/sandbox_perm_table.json")
 
-    Fillerjson          =   json.loads(open("json/Filler.json").read())
-    Activityjson        =   json.loads(open("test/activity.json").read())
+    Fillerjson          =   json_load("json/Filler.json")
+    Activityjson        =   json_load("test/activity.json")
 
 ################################################################################################################################################################################################################################################
 # STAT GRADER
@@ -466,26 +467,6 @@ def Akenemy() -> None :
             
             StageLister(stagezone.lower(),stagecode,stagename,stageId,levelId,zoneId,jsonforlister)
 
-## DOS "act42d0"
-    for stage in json_activityEN["activity"]["TYPE_ACT42D0"]["act42d0"]["stageInfoData"].keys():
-        stagecode       = json_activityEN["activity"]["TYPE_ACT42D0"]["act42d0"]["stageInfoData"][stage]["code"]
-        stagename       = json_activityEN["activity"]["TYPE_ACT42D0"]["act42d0"]["stageInfoData"][stage]["name"]
-        stageId         = json_activityEN["activity"]["TYPE_ACT42D0"]["act42d0"]["stageInfoData"][stage]["stageId"]
-        levelId         = json_activityEN["activity"]["TYPE_ACT42D0"]["act42d0"]["stageInfoData"][stage]["levelId"]
-        zoneId          = json_activityEN["activity"]["TYPE_ACT42D0"]["act42d0"]["stageInfoData"][stage]["areaId"]
-        jsonforlister   = "json/gamedata/zh_CN/gamedata/levels/"+levelId.lower()+".json"
-        
-        StageLister("act42d0",stagecode,stagename,stageId,levelId,zoneId,jsonforlister)
-        
-    for stage in json_activityEN["activity"]["TYPE_ACT42D0"]["act42d0"]["challengeInfoData"].keys():
-        stagecode       = json_activityEN["activity"]["TYPE_ACT42D0"]["act42d0"]["challengeInfoData"][stage]["code"]
-        stagename       = json_activityEN["activity"]["TYPE_ACT42D0"]["act42d0"]["challengeInfoData"][stage]["name"]
-        stageId         = json_activityEN["activity"]["TYPE_ACT42D0"]["act42d0"]["challengeInfoData"][stage]["stageId"]
-        levelId         = json_activityEN["activity"]["TYPE_ACT42D0"]["act42d0"]["challengeInfoData"][stage]["levelId"]
-        jsonforlister   = "json/gamedata/zh_CN/gamedata/levels/"+levelId.lower()+".json"
-        
-        StageLister("act42d0",stagecode,stagename,stageId,levelId,"challenge",jsonforlister)
-
     print("\n>> Activity Stage Completed")
     
 ## COOP1 : Defense Protocols (罗德岛防御协议) "act17d1"
@@ -528,6 +509,27 @@ def Akenemy() -> None :
         StageLister("PinchOut",stageId,stagename,stageId,stagepath,"PinchOut",stagepath)
         
     print(">> Pinch-Out Stage Completed")
+
+## DOS "act42d0"
+    DOS = json_activityEN["activity"]["TYPE_ACT42D0"]["act42d0"]
+    for stage in DOS["stageInfoData"].keys():
+        stagecode       = DOS["stageInfoData"][stage]["code"]
+        stagename       = DOS["stageInfoData"][stage]["name"]
+        stageId         = DOS["stageInfoData"][stage]["stageId"]
+        levelId         = DOS["stageInfoData"][stage]["levelId"]
+        zoneId          = DOS["stageInfoData"][stage]["areaId"]
+        jsonforlister   = "json/gamedata/zh_CN/gamedata/levels/"+levelId.lower()+".json"
+        
+        StageLister("act42d0",stagecode,stagename,stageId,levelId,zoneId,jsonforlister)
+        
+    for stage in DOS["challengeInfoData"].keys():
+        stagecode       = DOS["challengeInfoData"][stage]["code"]
+        stagename       = DOS["challengeInfoData"][stage]["name"]
+        stageId         = DOS["challengeInfoData"][stage]["stageId"]
+        levelId         = DOS["challengeInfoData"][stage]["levelId"]
+        jsonforlister   = "json/gamedata/zh_CN/gamedata/levels/"+levelId.lower()+".json"
+        
+        StageLister("act42d0",stagecode,stagename,stageId,levelId,"challenge",jsonforlister)
 
 ### CC Season 2 (crisis_v2_table)
     for cc in range(len(json_CC2["seasonInfoDataMap"].keys())):
@@ -634,7 +636,7 @@ def Akenemy() -> None :
         if json_activity["basicInfo"][act]["hasStage"]:
             activity["Dict"][act] = {
                     "nameCN"    : json_activity["basicInfo"][act]["name"],
-                    "nameEN"    : (json_activityEN["basicInfo"][act]["name"] if act in json_activityEN["basicInfo"].keys() else (Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else None)) + (f' #{act.split("act")[-1].split("bossrush")[0]}' if act.find("bossrush")!= -1 and act in json_activityEN["basicInfo"].keys() else ""),
+                    "nameEN"    : ("DOS : " if act == "act42d0" else "") + (json_activityEN["basicInfo"][act]["name"] if act in json_activityEN["basicInfo"].keys() else (Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else None)) + (f' #{act.split("act")[-1].split("bossrush")[0]}' if act.find("bossrush")!= -1 and act in json_activityEN["basicInfo"].keys() else ""),
                     "startCN"   : json_activity["basicInfo"][act]["startTime"]
             }
             timeline.append([act,activity["Dict"][act]["nameEN"] if activity["Dict"][act]["nameEN"] else activity["Dict"][act]["nameCN"],json_activity["basicInfo"][act]["startTime"]])
@@ -742,7 +744,7 @@ def Akenemy() -> None :
             akenemy["gamemode"]["campaign"].append(event)
         elif event.find("lt")==0:
             akenemy["gamemode"]["sss"].append(event)
-        elif event == "PinchOut" or re.search(r"CC(|BP)#",event): 
+        elif event == "PinchOut" or event == "act42d0" or re.search(r"CC(|BP)#",event): 
             akenemy["gamemode"]["cc"].append(event)
         elif event.find("IS#")!=-1:
             akenemy["gamemode"]["is"].append(event)
@@ -758,7 +760,10 @@ def Akenemy() -> None :
 
         ### Event
         if event in activity["Dict"].keys():
-            akenemy["events"][event] = activity["Dict"][event]["nameEN"]
+            if (event in akenemy["gamemode"]["sidestory"] and event not in["act42d0","act1lock"]) or event == "act2vmulti" :
+                akenemy["events"][event] = f'{stage_collection["zone"][event][0].split("-")[0].upper()} : {activity["Dict"][event]["nameEN"]}'
+            else:
+                akenemy["events"][event] = activity["Dict"][event]["nameEN"]
         else:
             akenemy["events"][event] = None
 

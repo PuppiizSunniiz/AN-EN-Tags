@@ -1,138 +1,141 @@
 import json
-from pyfunction import epoch
+import re
+from pyfunction import epoch,json_load
 
 #########################################################################################################
 # JSON
 #########################################################################################################
-json_char       =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/character_table.json").read())
-json_char_patch =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/char_patch_table.json").read())
-json_mod        =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/uniequip_table.json").read())
-json_range      =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/range_table.json").read())
+json_char       =   json_load("json/gamedata/zh_CN/gamedata/excel/character_table.json")
+json_char_patch =   json_load("json/gamedata/zh_CN/gamedata/excel/char_patch_table.json")
+json_mod        =   json_load("json/gamedata/zh_CN/gamedata/excel/uniequip_table.json")
+json_range      =   json_load("json/gamedata/zh_CN/gamedata/excel/range_table.json")
 
 #########################################################################################################
 # Function
 #########################################################################################################
-def msgbox(self) -> str:
-    if isinstance(self,str):
-        repeat=len(self)+8
-        return "#"*repeat+"\n#   "+self+"   #\n"+"#"*repeat
-    elif isinstance(self,list):
-        repeat=max(map(lambda x: len(x),self))+15
-        return "#"*repeat+("\n#    ").join(self)+"\n"+"#"*repeat
+def msgbox(msg) -> str:
+    if isinstance(msg,str):
+        repeat = len(msg) + 8
+        return f'{"#" * repeat}\n#   {msg}   #\n{"#" * repeat}'
+    elif isinstance(msg,list):
+        repeat = max(map(len,msg)) + 15
+        return f'{"#" * repeat}'+"\n#    ".join(msg)+f' \n{"#" * repeat}'
 
-def Continue() -> bool:
-    print(msgbox("Continue ? (Y/N)"))
-    con=input()
-    match con.lower():
+def continue_check(menu_msg="") -> bool:
+    print(msgbox(f'Continue {menu_msg}? (Y/N) | 0 : Exit'))
+    answer=input().strip()
+    match answer.lower():
         case "n":
             return False
         case "y":
             return True
-        case default:
-            return Continue()
+        case "0":
+            exit()
+        case _:
+            return continue_check(menu_msg)
 
-def Charname(self) -> str:
+def get_char_name(char_key) -> str:
     '''
-        Get self as Char key
+        Get char_key as Char key
+        
         Check if appellation in Russian
+        
         Return as Eng name
-        
-        # Russian = {'Гум': 'Gummy', 'Зима': 'Zima', 'Истина': 'Istina', 'Позёмка': 'Pozëmka', 'Роса': 'Rosa'}
-        
-        return NameCheck(json_char[self]["appellation"])
     '''
-    def NameCheck(self):
-        Russian = {'Гум': 'Gummy', 'Зима': 'Zima', 'Истина': 'Istina', 'Позёмка': 'Pozëmka', 'Роса': 'Rosa','Лето':'Leto'}
-        if self in Russian.keys():
-            return Russian[self]
-        else:
-            return self
-        
-    return NameCheck(json_char[self]["appellation"])
+    Russian = {'Гум': 'Gummy', 'Зима': 'Zima', 'Истина': 'Istina', 'Позёмка': 'Pozëmka', 'Роса': 'Rosa','Лето':'Leto'}
+    appellation = json_char[char_key]["appellation"]    
+    return Russian.get(appellation,appellation)
 
-def Charcheck():
+def char_check():
     def Charout(text,mode):
-        print(msgbox("What "+text+" to check ?"))
-        charin=input()
+        print(msgbox(f'What "{text}" to check ?'))
+        char_input=input().strip()
         
-        chars=[]
-        for key in DB["Char"][mode].keys():
-            if charin.lower() in key.lower():
-                chars.append([key,DB["Char"][mode][key]])
-        if len(chars):
+        if re.search(r'".+"',char_input):
+            char_input=char_input[1:-1]
+        
+        char_result=[[char_key,DB["Char"][mode][char_key]] for char_key in DB["Char"][mode].keys() if char_input.lower() in char_key.lower()]
+        if char_result:
             print("Result :")
-            for x in range(len(chars)):
-                print(chars[x])
-            print("Search result :",len(chars))
+            for char in char_result:
+                print(f'\t{char}')
+            print(f'\n\tSearch result : {len(char_result)}')
         else:
-            print(f"No Char Code with \"{charin}\" exist")
+            print(f'\nNo Char Code with "{char_input}" exist')
+        
+        if continue_check(mode):
+            Charout(text,mode)
         
     print(msgbox(["\n#  Select Mode",
-          "1 : Char Name from Char Code",
-          "2 : Char Code from Char Name",
-          "0 : Exit"
-          ]))
-    char=input()
-    match char:
+                        "1 : Char Name from Char Code",
+                        "2 : Char Code from Char Name",
+                        "0 : Exit"
+                ]))
+    
+    char_input=input().strip()
+    match char_input:
         case "0":
             return False
         case "1":
             Charout("Char Code","Code2Name")
         case "2":
             Charout("Char Name","Name2Code")
-        case default:
-            Charcheck()
+        case _:
+            return char_check()
         
-    return Continue()
+    return continue_check("Character Name/Code check")
 
-def Modcheck():
-    print(msgbox("What Module Num to check ? (1/2/3 or 0 : Exit)" ))
-    modnum=int(input())
+def mod_check():
+    print(msgbox('What Module Num to check ? (1/2/3 or 0 : Exit)'))
+    mod_num=input().strip()
     
-    if modnum =="0":
+    if mod_num == "0" :
         return False
-    elif modnum not in [1,2,3]:
-        Modcheck()
+    elif mod_num not in ["1","2","3"]:
+        mod_check()
+        
+    mod_num = int(mod_num)
     
-    mod=[]
-    for key in json_mod["charEquip"].keys():
-        if len(json_mod["charEquip"][key])>modnum:
-            mod.append(Charname(key)+" -- "+key)
-    sorted(mod)
-    mod.append("Search result :"+str(len(mod)))
-    print("\n".join(mod))
-    return Continue()
+    mod_result = [f'{get_char_name(mod_key)} -- {mod_key}' for mod_key, mod_value in json_mod["charEquip"].items() if len(mod_value)>mod_num]
 
-def Rangecheck():
-    print(msgbox("What Range to check ? (S: Show All Range | 0 : Exit)" ))
-    rangeid=input()
+    mod_result.sort()
+    mod_result.append("Search result :"+str(len(mod_result)))
+    print("\n".join(mod_result))
+    return continue_check("Module check")
+
+def range_check():
+    print(msgbox("What Range to check ? (S: Show All Range | 0 : Exit)"))
+    range_id=input().strip().lower()
     
-    if rangeid == "0":
+    if range_id == "0":
         return False
-    elif rangeid.lower() == "s":
+    elif range_id == "s":
         print(list(DB["Range"].keys()))
         return True
-    elif rangeid.lower() not in DB["Range"].keys():
-        print(rangeid,"is not Range ID")
-        return Continue()
+    elif range_id not in DB["Range"].keys():
+        print(f'{range_id} is not a valid Range ID')
+        return continue_check("Range check")
     else :
-        print("\n".join(DB["Range"][rangeid]))
-        return Continue()
+        print("\n".join(DB["Range"][range_id]))
+        return continue_check("Range check")
     
-def Timecheck():
-    print(msgbox("What Epoch time to check ? (0 : Exit)" ))
-    time=int(input())
+def time_check():
+    print(msgbox("What Epoch time to check ? (0 : Exit)"))
+    time = int(input())
     
     if time == "0":
         return False
     else :
-        print("\nEpoch ",time," = ",epoch(time))
-        return Continue()
+        try :
+            print(f'\nEpoch time = {epoch(time)}')
+        except :
+            print("Invalid epoch times")
+        return continue_check("Epoch time check")
 
 '''
     def Tagcheck():
         print(msgbox("What Tag(s) to check ? (up to 5 tags | 0 : Exit)"))
-        tags=input()
+        tags=input().strip()
     
         if tags=="0":
             return False
@@ -210,64 +213,65 @@ def Timecheck():
 #########################################################################################################
 DB={}
 
-ClassParse = {"MEDIC": "Medic", "WARRIOR": "Guard", "SPECIAL": "Specialist", "SNIPER": "Sniper",
-              "PIONEER": "Vanguard", "CASTER": "Caster", "SUPPORT": "Supporter", "TANK": "Defender"}
-for char in json_char_patch["patchChars"].keys():
-    json_char_patch["patchChars"][char]["appellation"]=json_char_patch["patchChars"][char]["appellation"]+" ("+ClassParse[json_char_patch["patchChars"][char]["profession"]]+")"
+ClassParse = {
+                "MEDIC"     : "Medic",         "WARRIOR"    : "Guard",
+                "SPECIAL"   : "Specialist",    "SNIPER"     : "Sniper",
+                "PIONEER"   : "Vanguard",      "CASTER"     : "Caster",
+                "SUPPORT"   : "Supporter",     "TANK"       : "Defender"
+            }
+
+for char_key in json_char_patch["patchChars"].keys():
+    json_char_patch["patchChars"][char_key]["appellation"] += f' ({ClassParse[json_char_patch["patchChars"][char_key]["profession"]]})'
 json_char.update(json_char_patch["patchChars"])
 
-CharReady={"Code2Name":{},"Name2Code":{}}
-OpsExclude=[] # "isNotObtainable": true
-for key in json_char.keys():
-    if "char_" in key:
-        CharReady["Code2Name"][key]=Charname(key)
-        CharReady["Name2Code"][Charname(key)]=key
-        if json_char[key]["isNotObtainable"]:
-            OpsExclude.append(key)
-DB["Char"]=CharReady
+char_ready={"Code2Name":{},"Name2Code":{}}
+ops_exclude=[] # "isNotObtainable": true
+for char_key in json_char.keys():
+    if "char_" in char_key:
+        char_ready["Code2Name"][char_key]=get_char_name(char_key)
+        char_ready["Name2Code"][get_char_name(char_key)]=char_key
+        if json_char[char_key]["isNotObtainable"]:
+            ops_exclude.append(char_key)
+DB["Char"]=char_ready
 
-RangeReady={} # 🟥🟧🟨🟩🟦🟪🟫⬛⬜🔳
-for rangeid in json_range.keys():
-    temp =[]
-    for grid in json_range[rangeid]["grids"]:
-        temp.append([grid["col"],grid["row"]])
+range_ready={} # 🟥🟧🟨🟩🟦🟪🟫⬛⬜🔳
+for range_id in json_range.keys():
     
-    maxX=max([x[0] for x in temp])
-    minX=min([x[0] for x in temp]+[0])
-    maxY=max([y[1] for y in temp])
-    minY=min([y[1] for y in temp]+[0])
+    temp =[[grid["col"],grid["row"]] for grid in json_range[range_id]["grids"]]
     
-    rangearray=[["⬛" for x in range(maxX-minX+1)] for y in range(maxY-minY+1)]
+    max_x=max([x[0] for x in temp])
+    min_x=min([x[0] for x in temp]+[0])
+    max_y=max([y[1] for y in temp])
+    min_y=min([y[1] for y in temp]+[0])
     
-    rangearray[maxY][abs(min(0,minX))]="🔳"
+    range_array=[["⬛" for x in range(max_x - min_x + 1)] for y in range(max_y - min_y + 1)]
+    
+    range_array[max_y][abs(min(0, min_x))]="🔳"
 
-    for userange in temp:
-        if userange == [0,0]:
-            rangearray[userange[1]+maxY][userange[0]+abs(min(0,minX))]="🟨"
+    for col, row in temp:
+        if [col, row] == [0,0]:
+            range_array[row + max_y][col + abs(min(0, min_x))]="🟨"
         else:
-            rangearray[userange[1]+maxY][userange[0]+abs(min(0,minX))]="🟦"
+            range_array[row + max_y][col + abs(min(0, min_x))]="🟦"
     
-    for i in range(len(rangearray)):
-        rangearray[i]=("").join(rangearray[i])
+    range_ready[range_id] = ["".join(row) for row in range_array] + [str(temp)]
     
-    rangearray.append(str(temp))
-    RangeReady[rangeid]=rangearray
-DB["Range"]=RangeReady
+DB["Range"]=range_ready
 
-TagReady={}
-for char in CharReady["Code2Name"].keys():
-    TagReady[CharReady["Code2Name"][char]]=["高级资深干员" for x in range(1) if json_char[char]["rarity"][-1]=="6"]+ \
+tag_ready={}
+for char in char_ready["Code2Name"].keys():
+    tag_ready[char_ready["Code2Name"][char]]=["高级资深干员" for x in range(1) if json_char[char]["rarity"][-1]=="6"]+ \
                                             ["资深干员" for x in range(1) if json_char[char]["rarity"][-1]=="5"]+ \
                                             ["新手" for x in range(1) if json_char[char]["rarity"][-1]=="2"]+ \
                                             ["近战位" for x in range(1) if json_char[char]["position"]=="MELEE"]+ \
                                             ["远程位" for x in range(1) if json_char[char]["position"]=="RANGED"]+ \
                                             json_char[char]["tagList"]
-DB["Tag"]=TagReady
-jsonout=json.dumps(DB,indent=4, ensure_ascii=False)
-with open('py/dict.json','w') as JSON:
-    JSON.write(jsonout)
+DB["Tag"]=tag_ready
 
-TagReady={}
+with open('py/dict.json', 'w', encoding='utf-8') as file:
+    json.dump(DB, file, indent=4, ensure_ascii=False)
+
+tag_ready={}
 
 '''
     json_gacha  =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/gacha_table.json").read())
@@ -292,32 +296,26 @@ TagReady={}
 #########################################################################################################
 # Go !!!
 #########################################################################################################
-while(True):
-    #repeat=49
-    Boolcheck=True
-    text=["\n#  Select Function",
-          "1 : Char Name/Code Check",
-          "M : Mod Check",
-          "R : Range Check",
-          "T : Time Epoch",
-          "0 : Exit"
-          ]
-    print(msgbox(text))
-    exe=input()
-    match exe.lower():
+while True:
+    menu_option = ["\n#  Select Function",
+                    "1 : Char Name/Code Check",
+                    "M : Mod Check",
+                    "R : Range Check",
+                    "T : Time Epoch",
+                    "0 : Exit"
+                    ]
+    print(msgbox(menu_option))
+    menu_input = input().strip()
+    match menu_input.lower():
         case "0":
-            break
+            exit()
         case "1":
-            while(Boolcheck):
-                Boolcheck=Charcheck()
+            char_check()
         case "m":
-            while(Boolcheck):
-                Boolcheck=Modcheck()
+            mod_check()
         case "r":
-            while(Boolcheck):
-                Boolcheck=Rangecheck()
+            range_check()
         case "t":
-            while(Boolcheck):
-                Boolcheck=Timecheck()
-        case default:
-            pass
+            time_check()
+        case _:
+            continue

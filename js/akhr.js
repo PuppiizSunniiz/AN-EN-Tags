@@ -668,7 +668,7 @@
                                 'style': buttonstyle,
                                 'height': size,
                                 'width': size,
-                                'src': "https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/" + char.id + ".png"
+                                'src': "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/" + char.id + ".png"
                             });
                         }
                         if (showName) {

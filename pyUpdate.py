@@ -1,413 +1,399 @@
-import pandas
+
 import json
-from pyfunction import CharReady
+from pyfunction import char_ready, json_load
 from pyAkenemy import Akenemy
 
 #########################################################################################################
 # JSON
 #########################################################################################################
-json_building       =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/building_data.json").read())
-json_buildingEN     =   json.loads(open("json/gamedata/en_US/gamedata/excel/building_data.json").read())
+json_building       =   json_load("json/gamedata/zh_CN/gamedata/excel/building_data.json")
+json_buildingEN     =   json_load("json/gamedata/en_US/gamedata/excel/building_data.json")
 
-json_char_patch     =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/char_patch_table.json").read())
+json_char_patch     =   json_load("json/gamedata/zh_CN/gamedata/excel/char_patch_table.json")
 
-json_char           =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/character_table.json").read())
-json_charEN         =   json.loads(open("json/gamedata/en_US/gamedata/excel/character_table.json").read())
-json_charJP         =   json.loads(open("json/gamedata/ja_JP/gamedata/excel/character_table.json").read())
-json_charKR         =   json.loads(open("json/gamedata/ko_KR/gamedata/excel/character_table.json").read())
+json_char           =   json_load("json/gamedata/zh_CN/gamedata/excel/character_table.json")
+json_charEN         =   json_load("json/gamedata/en_US/gamedata/excel/character_table.json")
+json_charJP         =   json_load("json/gamedata/ja_JP/gamedata/excel/character_table.json")
+json_charKR         =   json_load("json/gamedata/ko_KR/gamedata/excel/character_table.json")
 
-json_skill          =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/skill_table.json").read())
-json_skillEN        =   json.loads(open("json/gamedata/en_US/gamedata/excel/skill_table.json").read())
+json_skill          =   json_load("json/gamedata/zh_CN/gamedata/excel/skill_table.json")
+json_skillEN        =   json_load("json/gamedata/en_US/gamedata/excel/skill_table.json")
 
-json_handbook       =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/handbook_info_table.json").read())
-json_mod_battle     =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/battle_equip_table.json").read())
-json_mod_battleEN   =   json.loads(open("json/gamedata/en_US/gamedata/excel/battle_equip_table.json").read())
-json_mod_table      =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/uniequip_table.json").read())
-json_stage          =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/stage_table.json").read())
+json_handbook       =   json_load("json/gamedata/zh_CN/gamedata/excel/handbook_info_table.json")
+json_mod_battle     =   json_load("json/gamedata/zh_CN/gamedata/excel/battle_equip_table.json")
+json_mod_battleEN   =   json_load("json/gamedata/en_US/gamedata/excel/battle_equip_table.json")
+json_mod_table      =   json_load("json/gamedata/zh_CN/gamedata/excel/uniequip_table.json")
+json_stage          =   json_load("json/gamedata/zh_CN/gamedata/excel/stage_table.json")
 
-json_constructEN    =   json.loads(open("json/gamedata/en_US/gamedata/excel/gamedata_const.json").read())
+json_constructEN    =   json_load("json/gamedata/en_US/gamedata/excel/gamedata_const.json")
 
-json_item           =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/item_table.json").read())
-json_itemEN         =   json.loads(open("json/gamedata/en_US/gamedata/excel/item_table.json").read())
-json_itemJP         =   json.loads(open("json/gamedata/ja_JP/gamedata/excel/item_table.json").read())
-json_itemKR         =   json.loads(open("json/gamedata/ko_KR/gamedata/excel/item_table.json").read())
+json_item           =   json_load("json/gamedata/zh_CN/gamedata/excel/item_table.json")
+json_itemEN         =   json_load("json/gamedata/en_US/gamedata/excel/item_table.json")
+json_itemJP         =   json_load("json/gamedata/ja_JP/gamedata/excel/item_table.json")
+json_itemKR         =   json_load("json/gamedata/ko_KR/gamedata/excel/item_table.json")
 
-json_akhr           =   json.loads(open("json/tl-akhr.json").read())
-json_akmaterial     =   json.loads(open("json/akmaterial.json").read())
-json_trait          =   json.loads(open("json/tl-attacktype.json").read())
-json_term           =   json.loads(open("json/named_effects.json").read())
-json_skillTL        =   json.loads(open("json/ace/tl-skills.json").read())
-json_riicTL         =   json.loads(open("json/ace/riic.json").read())
+json_akhr           =   json_load("json/tl-akhr.json")
+json_akmaterial     =   json_load("json/akmaterial.json")
+json_trait          =   json_load("json/tl-attacktype.json")
+json_term           =   json_load("json/named_effects.json")
+json_skillTL        =   json_load("json/ace/tl-skills.json")
+json_riicTL         =   json_load("json/ace/riic.json")
 
-json_tl_item        =   json.loads(open("json/tl-item.json").read())
-json_tempmod        =   json.loads(open("json/tl-module.json").read())
+json_tl_item        =   json_load("json/tl-item.json")
+json_temp_mod       =   json_load("json/tl-module.json")
 
 #########################################################################################################
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-newchars = [] #
+NEW_CHARS = ["Nymph","Mitm"] #
 
 #[["OpsName#1",num(Mod)],["OpsName#2",num(Mod)], ...]
-newmods = [] #
+NEW_MODS = [["Ch'en the Holungday",1],["Executor",1],['Aosta',1],["Pinecone",1],["Mitm",1],['Swire the Elegant Wit', 2],['Mostima',2]] #
 
 #["ItemID#1","ItemID#2", ...]
-newmats = [] #
+NEW_MATS = [] #
 
 #["OpsName#1","OpsName#2", ...]
-recruitCN=[] #
-recruitEN=[] #
+NEW_RECRUIT_CN = [] #
+NEW_RECRUIT_EN = [] #
 
-Rechecked=False # True False
+Rechecked = False # True False
 
 #########################################################################################################
 # Prep
 #########################################################################################################
-newtrait ={}
+new_trait ={}
 
-ClassParse = {"MEDIC": "Medic", "WARRIOR": "Guard", "SPECIAL": "Specialist", "SNIPER": "Sniper",
-              "PIONEER": "Vanguard", "CASTER": "Caster", "SUPPORT": "Supporter", "TANK": "Defender"}
-ClassparseCN= {'SNIPER':"狙击", 'PIONEER':"先锋", 'TANK':"重装",  'MEDIC':"医疗", 'SUPPORT':"辅助", 'SPECIAL':"特种", 'WARRIOR':"近卫",  'CASTER':"术师"}
+CLASS_PARSE_EN = {
+                    "MEDIC"   : "Medic",          "WARRIOR"   : "Guard",
+                    "SPECIAL" : "Specialist",     "SNIPER"    : "Sniper",
+                    "PIONEER" : "Vanguard",       "CASTER"    : "Caster",
+                    "SUPPORT" : "Supporter",      "TANK"      : "Defender"}
 
-for char in json_char_patch["patchChars"].keys():
-    json_char_patch["patchChars"][char]["appellation"]=json_char_patch["patchChars"][char]["appellation"]+" ("+ClassParse[json_char_patch["patchChars"][char]["profession"]]+")"
+CLASS_PARSE_CN = {
+                    'SNIPER' :"狙击", 'PIONEER':"先锋", 'TANK'   :"重装",  'MEDIC'   :"医疗",
+                    'SUPPORT':"辅助", 'SPECIAL':"特种", 'WARRIOR':"近卫",  'CASTER'  :"术师"}
+
+for char_key in json_char_patch["patchChars"]:
+    json_char_patch["patchChars"][char_key]["appellation"] += f' ({CLASS_PARSE_EN[json_char_patch["patchChars"][char_key]["profession"]]})'
 json_char.update(json_char_patch["patchChars"])
 
-CharReady=CharReady(json_char)
+char_ready  = char_ready(json_char)
 
-charlist=[]
-for char in json_akhr:
-    charlist.append(char["name_en"])
-itemlist=[]
-for item in json_akmaterial:
-    itemlist.append(item["itemId"])
-
+char_list   = [char_data["name_en"] for char_data in json_akhr]
+MAT_LIST    = [mat_data["itemId"] for mat_data in json_akmaterial]
 
 #########################################################################################################
-# Test
+# Def function
 #########################################################################################################
+def get_new_akhr(new_char_id : str, new_char_name : str) -> dict:
+    return  {
+                                    "id"            : new_char_id,
+                                    "name_cn"       : json_char[new_char_id]["name"],
+                                    "name_en"       : new_char_name,
+                                    "name_jp"       : "",
+                                    "name_kr"       : "",
+                                    "nationId"      : json_char[new_char_id]["nationId"],
+                                    "groupId"       : json_char[new_char_id]["groupId"],
+                                    "teamId"        : json_char[new_char_id]["teamId"],
+                                    "type"          : CLASS_PARSE_CN[json_char[new_char_id]["profession"]],
+                                    "level"         : int(json_char[new_char_id]["rarity"][-1]),
+                                    "sex"           : ''.join(json_handbook["handbookDict"][new_char_id]["storyTextAudio"][0]["stories"][0]["storyText"].split("\n")[1].split("】")[1].split()),
+                                    "tags"          : ["高级资深干员" for x in range(1) if json_char[new_char_id]["rarity"][-1] == "6"]+ \
+                                                        ["资深干员" for x in range(1) if json_char[new_char_id]["rarity"][-1] == "5"]+ \
+                                                        ["近战位" for x in range(1) if json_char[new_char_id]["position"] == "MELEE"]+ \
+                                                        ["远程位" for x in range(1) if json_char[new_char_id]["position"] == "RANGED"]+ \
+                                                        json_char[new_char_id]["tagList"],
+                                    "hidden"        : True,
+                                    "globalHidden"  : True
+            }
 
+def update_new_trait(mode : str, new_id : str, new_char_name : str, new_token_key = "") -> dict:
+    '''
+    ### Mode
+        "char", "token", "mod"
+    ### New_id
+        new_char_id     for     "char", "token"
+        
+        new_mod_id      for     "mod"
+    '''
+    match mode:
+        case "char":
+            return  {
+                        "name"  : new_char_name,
+                        "code"  : new_id,
+                        "mode"  : "new char"
+                    }
+        case "token":
+            return  {
+                        "name"  : json_char[new_token_key]["appellation"],
+                        "code"  : new_token_key,
+                        "mode"  : f'New token from {new_char_name} {new_id}'
+                    }
+        case "mod" :
+            return  {
+                        "name"  : new_char_name,
+                        "code"  : new_id,
+                        "mode"  :"newmods"
+                    }
+
+def update_char_TraitSkillTalent(new_char_name : str) :
+    new_char_id = char_ready["Name2Code"][new_char_name]
+    ## AKHR
+    if not Rechecked:
+        json_akhr.append(get_new_akhr(new_char_id,new_char_name))
+    ## Trait
+    new_trait[json_char[new_char_id]["description"]] = update_new_trait("char",new_char_id,new_char_name)
+    ## Talent
+    talent_tl[new_char_id] = [
+                                [
+                                    {
+                                        "name"  : candidate["name"],
+                                        "descCN": candidate['description'],
+                                        "desc"  : ""
+                                    } for candidate in talent['candidates'] if not candidate["isHideTalent"]
+                                ]  for talent in json_char[new_char_id]["talents"] 
+                            ]
+    
+    ## Skill
+    for skill in json_char[new_char_id]["skills"]:
+        skill_id = skill["skillId"]
+        if skill_id not in json_skillTL.keys():
+            skill_tl[skill_id] = {
+                                    "name"  : json_skill[skill_id]["levels"][0]["name"],
+                                    "desc"  : [json_skill[skill_id]["levels"][x]["description"] for x in range(len(json_skill[skill_id]["levels"]))]
+                                }
+    
+    ## Token Find
+    if json_char[new_char_id]["displayTokenDict"] :
+        for new_token_key in json_char[new_char_id]["displayTokenDict"]:
+        #### Token trait
+            new_trait[json_char[new_token_key]["description"]] = update_new_trait("token",new_char_id,new_char_name,new_token_key)
+        #### Token Skill
+            for skill in json_char[new_token_key]["skills"]:
+                if skill["skillId"] :
+                    skill_id = skill["skillId"]
+                    skill_tl[skill_id] = {
+                                            "name"  : json_skill[skill_id]["levels"][0]["name"],
+                                            "desc"  : [json_skill[skill_id]["levels"][x]["description"] if len(json_skill[skill_id]["levels"]) == 10 else json_skill[skill_id]["levels"][0]["name"] for x in range(10)]
+                                        }
 
 #########################################################################################################
 # Chars
 #########################################################################################################
-skipchar=[]
-talenttl={}
-skilltl={}
-for newchar in newchars:
-    chartalent=[]
-    if newchar not in charlist:
+skip_char   = []
+talent_tl   = {}
+skill_tl    = {}
+for new_char_name in NEW_CHARS:
+    if new_char_name not in char_list:
         try:
-            newcode=CharReady["Name2Code"][newchar]
-            ## AKHR
-            json_akhr.append({
-                                    "id": newcode,
-                                    "name_cn": json_char[newcode]["name"],
-                                    "name_en": newchar,
-                                    "name_jp": "",
-                                    "name_kr": "",
-                                    ###"characteristic_cn": "",
-                                    ###"characteristic_en": "",
-                                    ###"characteristic_jp": "",
-                                    ###"characteristic_kr": "",
-                                    ###"camp": "",
-                                    "nationId": json_char[newcode]["nationId"],
-                                    "groupId": json_char[newcode]["groupId"],
-                                    "teamId": json_char[newcode]["teamId"],
-                                    "type": ClassparseCN[json_char[newcode]["profession"]],
-                                    "level": int(json_char[newcode]["rarity"][-1]),
-                                    "sex": ''.join(json_handbook["handbookDict"][newcode]["storyTextAudio"][0]["stories"][0]["storyText"].split("\n")[1].split("】")[1].split()),
-                                    "tags": ["高级资深干员" for x in range(1) if json_char[newcode]["rarity"][-1]=="6"]+ \
-                                            ["资深干员" for x in range(1) if json_char[newcode]["rarity"][-1]=="5"]+ \
-                                            ###["新手" for x in range(1) if json_char[newcode]["rarity"][-1]=="2"]+ \
-                                            ["近战位" for x in range(1) if json_char[newcode]["position"]=="MELEE"]+ \
-                                            ["远程位" for x in range(1) if json_char[newcode]["position"]=="RANGED"]+ \
-                                            json_char[newcode]["tagList"],
-                                    "hidden": True,
-                                    "globalHidden": True
-            })
-            ## Trait
-            newtrait[json_char[newcode]["description"]]={"name":newchar,
-                                                        "code":newcode,
-                                                        "mode":"newchars"}
-            ## Talent
-            for eachtalent in json_char[newcode]["talents"]:
-                eachchartalent=[]
-                for talent in eachtalent['candidates']:
-                    if talent["isHideTalent"]: continue
-                    else: eachchartalent.append({
-                                        "name": talent["name"],
-                                        "descCN": talent['description'],
-                                        "desc": ""
-                                    })
-                if not talent["isHideTalent"]: chartalent.append(eachchartalent)
-            talenttl[newcode]=chartalent
-            
-            ## Skill
-            for skill in json_char[newcode]["skills"]:
-                skillid = skill["skillId"]
-                if skillid not in json_skillTL.keys():
-                    skilltl[skillid]={
-                                        "name" : json_skill[skillid]["levels"][0]["name"],
-                                        "desc": [json_skill[skillid]["levels"][x]["description"] for x in range(len(json_skill[skillid]["levels"]))]
-                                    }
-            
-            ## Token Find
-            if json_char[newcode]["displayTokenDict"] :
-                for token in json_char[newcode]["displayTokenDict"]:
-                #### Token trait
-                    newtrait[json_char[token]["description"]]={
-                                                                "name":json_char[token]["appellation"],
-                                                                "code":token,
-                                                                "mode":"Newtoken from "+newchar+" "+newcode
-                                                            }
-                #### Token Skill
-                    for skill in json_char[token]["skills"]:
-                        if skill["skillId"] :
-                            skillid = skill["skillId"]
-                            skilltl[skillid]={
-                                                "name" : json_skill[skillid]["levels"][0]["name"],
-                                                "desc": [json_skill[skillid]["levels"][x]["description"] if len(json_skill[skillid]["levels"])==10 else json_skill[skillid]["levels"][0]["name"] for x in range(10)]
-                                            }
-
+            update_char_TraitSkillTalent(new_char_name)
         except:
-            skipchar.append(newchar)
+            skip_char.append(new_char_name)
 
-    if Rechecked and newchar in charlist:
-        newcode=CharReady["Name2Code"][newchar]
-        ## Talent
-        for eachtalent in json_char[newcode]["talents"]:
-            eachchartalent=[]
-            for talent in eachtalent['candidates']:
-                if talent["isHideTalent"]: continue
-                else : eachchartalent.append({
-                                    "name": talent["name"],
-                                    "descCN": talent['description'],
-                                    "desc": ""
-                                })
-            if not talent["isHideTalent"]: chartalent.append(eachchartalent)
-        talenttl[newcode]=chartalent
-        
-        ## Skill
-        for skill in json_char[newcode]["skills"]:
-            skillid = skill["skillId"]
-            skilltl[skillid]={
-                                "name" : json_skill[skillid]["levels"][0]["name"],
-                                "desc": [json_skill[skillid]["levels"][x]["description"] for x in range(len(json_skill[skillid]["levels"]))]
-                            }
+    if Rechecked and new_char_name in char_list:
+        update_char_TraitSkillTalent(new_char_name)
 
-        ## Token Find
-        if json_char[newcode]["displayTokenDict"] :
-            for token in json_char[newcode]["displayTokenDict"].keys():
-                print(token,json_char[token]["description"])
-            #### Token trait
-                newtrait[json_char[token]["description"]]={
-                                                            "name":json_char[token]["appellation"],
-                                                            "code":token,
-                                                            "mode":"Newtoken from "+newchar+" "+newcode
-                                                        }
-            #### Token Skill
-                for skill in json_char[token]["skills"]:
-                    if skill["skillId"] :
-                        skillid = skill["skillId"]
-                        skilltl[skillid]={
-                                            "name" : json_skill[skillid]["levels"][0]["name"],
-                                            "desc": [json_skill[skillid]["levels"][x]["description"] if len(json_skill[skillid]["levels"])==10 else json_skill[skillid]["levels"][0]["name"] for x in range(10)]
-                                        }
-
-if skipchar:
-    print('\nNEW CHAR skip list =', skipchar)
+if skip_char:
+    print(f'\nNEW CHAR skip list = {skip_char}')
 
 #Update old char localization
-for char in json_akhr:
+for char_data in json_akhr:
     for lang in [["name_jp",json_charJP],["name_kr",json_charKR]]:
-        if char[lang[0]]=="":
-            if char["id"] in lang[1].keys():
-                char[lang[0]]=lang[1][char["id"]]["name"]
+        if char_data[lang[0]] == "":
+            if char_data["id"] in lang[1].keys():
+                char_data[lang[0]] = lang[1][char_data["id"]]["name"]
 #Update recruitment
 ##CN
-if recruitCN:
-    for char in recruitCN:
-        for chars in json_akhr:
-            if char.lower()==chars["name_en"].lower():
-                chars["hidden"]=False
-                break
-##EN
-if recruitEN:
-    for char in recruitEN:
-        for chars in json_akhr:
-            if char.lower()==chars["name_en"].lower():
-                chars["globalHidden"]=False
-                break
+'''if NEW_RECRUIT_CN:
+    for new_recruit_char in NEW_RECRUIT_CN:
+        for char_data in json_akhr:
+            if new_recruit_char.lower() == char_data["name_en"].lower():
+                char_data["hidden"] = False
+                break'''
             
-dumpling=json.dumps(json_akhr,indent=4, ensure_ascii=False)
-with open("json/tl-akhr.json",'w') as JSON :
-    JSON.write(dumpling)
-    
-dumpling=json.dumps(talenttl,indent=4, ensure_ascii=False)
-with open("update/tl-talent.json",'w') as JSON :
-    JSON.write(dumpling)
+if NEW_RECRUIT_CN:
+    for new_recruit_char in NEW_RECRUIT_CN:
+        json_akhr[[index for index,d in enumerate(json_akhr) if d["name_en"].lower() == new_recruit_char.lower()][0]]["hidden"] = False
+##EN
+'''if NEW_RECRUIT_EN:
+    for new_recruit_char in NEW_RECRUIT_EN:
+        for char_data in json_akhr:
+            if new_recruit_char.lower() == char_data["name_en"].lower():
+                char_data["globalHidden"] = False
+                break'''
+            
+if NEW_RECRUIT_EN:
+    for new_recruit_char in NEW_RECRUIT_EN:
+        json_akhr[[index for index,d in enumerate(json_akhr) if d["name_en"].lower() == new_recruit_char.lower()][0]]["globalHidden"] = False
 
-dumpling=json.dumps(skilltl,indent=4, ensure_ascii=False)
-with open("update/tl-skill.json",'w') as JSON :
-    JSON.write(dumpling)
+            
+with open("json/tl-akhr.json",'w') as filepath :
+    json.dump(json_akhr,filepath,indent = 4, ensure_ascii = False)
+    
+with open("update/tl-talent.json",'w') as filepath :
+    json.dump(talent_tl,filepath,indent = 4, ensure_ascii = False)
+
+with open("update/tl-skill.json",'w') as filepath :
+    json.dump(skill_tl,filepath,indent = 4, ensure_ascii = False)
 
 #########################################################################################################
 # Mats
 #########################################################################################################
 #akmatuses.html
-matbotton=[]
-for mat in newmats:
-    matbotton.append("<button type=\"button\" onclick=\"clickBtnTag(this)\" class=\"btn btn-sm btn-secondary ak-btn btn-tag my-1 button-tag\" data-toggle=\"tooltip\" data-placement=\"top\" title=\""+json_item["items"][mat]["name"]+"\" mat-id=\""+mat+"\"></button>")
+mat_button = []
+for new_mat in NEW_MATS:
+    mat_button.append(f'<button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 button-tag" data-toggle="tooltip" data-placement="top" title="{json_item["items"][new_mat]["name"]}" mat-id="{new_mat}"></button>')
 
-matbotton.sort(reverse=False,key=lambda mat : mat.split("\"")[-2][0:-1]) #sort mat id
-matbotton.sort(reverse=True,key=lambda mat : mat.split("\"")[-2][-1]) #sort rarity
+mat_button.sort(reverse = False,key = lambda new_mat : new_mat.split("\"")[-2][0:-1]) #sort mat id
+mat_button.sort(reverse = True,key = lambda new_mat : new_mat.split("\"")[-2][-1]) #sort rarity
 
 with open("update/akmatuses.txt",'w') as writer:
-    writer.write("\n\n".join(matbotton))
+    writer.write("\n\n".join(mat_button))
 
-Dropparse={"ALWAYS":"Always","ALMOST":"Common","USUAL":"Medium","OFTEN":"Rare","SOMETIMES":"Very Rare"}
-for mat in newmats:
-    if mat not in itemlist:
-        matsource={}
-        for stage in json_item["items"][mat]["stageDropList"]:
-            matsource[json_stage["stages"][stage["stageId"]]["code"]]=Dropparse[stage["occPer"]]
-        matcraft={}
-        for recipe in json_building["workshopFormulas"].keys():
-            if json_building["workshopFormulas"][recipe]["itemId"]==mat:
-                for cost in json_building["workshopFormulas"][recipe]["costs"]:
-                    matcraft[json_item["items"][cost["id"]]["name"]]=cost["count"]
+drop_parse = {
+                "ALWAYS"    : "Always",
+                "ALMOST"    : "Common",
+                "USUAL"     : "Medium",
+                "OFTEN"     : "Rare",
+                "SOMETIMES" : "Very Rare"}
+
+for new_mat in NEW_MATS:
+    if new_mat not in MAT_LIST:
+        mat_source = {
+                        json_stage["stages"][stage["stageId"]]["code"]  : drop_parse[stage["occPer"]] 
+                            for stage in json_item["items"][new_mat]["stageDropList"]
+                    }
+        mat_craft = {
+                        json_item["items"][mat_cost["id"]]["name"]  : mat_cost["count"]
+                            for mat_recipe in json_building["workshopFormulas"]
+                                if json_building["workshopFormulas"][mat_recipe]["itemId"] == new_mat
+                                    for mat_cost in json_building["workshopFormulas"][mat_recipe]["costs"]
+                    }
         #json/akmaterial.json
         json_akmaterial.append({
-                        "id": len(json_akmaterial),
-                        "itemId": mat,
-                        "IconID": json_item["items"][mat]["iconId"],
-                        "name_cn": json_item["items"][mat]["name"],
-                        "name_en": "",
-                        "name_jp": "",
-                        "name_kr": "",
-                        "name_tw": "",
-                        "level": int(json_item["items"][mat]["rarity"][-1]),
-                        "source": matsource,
-                        "madeof": matcraft
-        })
+                                    "id"        : len(json_akmaterial),
+                                    "itemId"    : new_mat,
+                                    "IconID"    : json_item["items"][new_mat]["iconId"],
+                                    "name_cn"   : json_item["items"][new_mat]["name"],
+                                    "name_en"   : "",
+                                    "name_jp"   : "",
+                                    "name_kr"   : "",
+                                    "name_tw"   : "",
+                                    "level"     : int(json_item["items"][new_mat]["rarity"][-1]),
+                                    "source"    : mat_source,
+                                    "madeof"    : mat_craft
+                                })
         #json/tl-item.json
         json_tl_item.append({
-                        "itemId":  mat,
-                        "name_cn": json_item["items"][mat]["name"],
-                        "name_en": "",
-                        "name_jp": "",
-                        "name_kr": "",
-                        "name_tw": ""
-        })
+                                "itemId"    : new_mat,
+                                "name_cn"   : json_item["items"][new_mat]["name"],
+                                "name_en"   : "",
+                                "name_jp"   : "",
+                                "name_kr"   : "",
+                                "name_tw"   : ""
+                            })
 
 #Update Old item localization
 ##akmaterial.json
-temp=""
-for item in json_akmaterial:
+temp = ""
+for mat_data in json_akmaterial:
     for lang in [["name_en",json_itemEN],["name_jp",json_itemJP],["name_kr",json_itemKR]]:
-        if item[lang[0]]=="":
-            if item["itemId"] in lang[1]["items"].keys():
-                item[lang[0]]=lang[1]["items"][item["itemId"]]["name"]
-    item["IconID"]=json_item["items"][item["itemId"]]["iconId"]
+        if mat_data[lang[0]] == "":
+            if mat_data["itemId"] in lang[1]["items"]:
+                mat_data[lang[0]] = lang[1]["items"][mat_data["itemId"]]["name"]
+    mat_data["IconID"] = json_item["items"][mat_data["itemId"]]["iconId"]
     for key in ["id", "itemId", "IconID", "name_cn", "name_en", "name_jp", "name_kr", "name_tw", "level", "source", "madeof"]:
-        temp=item[key]
-        item.pop(key)
-        item[key]=temp
+        temp = mat_data[key]
+        mat_data.pop(key)
+        mat_data[key] = temp
 
-dumpling=json.dumps(json_akmaterial,indent=4, ensure_ascii=False)
-with open("json/akmaterial.json",'w') as JSON :
-    JSON.write(dumpling)
+with open("json/akmaterial.json",'w') as filepath :
+    json.dump(json_akmaterial,filepath,indent = 4, ensure_ascii = False)
     
 ##tl-item.json
-for item in json_tl_item:
+for mat_data in json_tl_item:
     for lang in [["name_en",json_itemEN],["name_jp",json_itemJP],["name_kr",json_itemKR]]:
-        if item[lang[0]]=="":
-            if item["itemId"] in lang[1]["items"].keys():
-                item[lang[0]]=lang[1]["items"][item["itemId"]]["name"]
+        if mat_data[lang[0]] == "":
+            if mat_data["itemId"] in lang[1]["items"].keys():
+                mat_data[lang[0]] = lang[1]["items"][mat_data["itemId"]]["name"]
                 
-dumpling=json.dumps(json_tl_item,indent=4, ensure_ascii=False)
-with open("json/tl-item.json",'w') as JSON :
-    JSON.write(dumpling)
+with open("json/tl-item.json",'w') as filepath :
+    json.dump(json_tl_item,filepath,indent = 4, ensure_ascii = False)
         
 #########################################################################################################
 # Mod
 #########################################################################################################   
-skipmod=[]
-modtl={}
-for charlist in newmods:
+skip_mod = []
+mod_tl = {}
+for new_mod_list in NEW_MODS:
     
     try:
-        char=CharReady["Name2Code"][charlist[0]]
-        modcode=json_mod_table["charEquip"][char][charlist[1]]
-        if json_mod_battle[modcode]["phases"][0]["parts"][0]["overrideTraitDataBundle"]["candidates"][0]["additionalDescription"]:
-            newtrait[json_mod_battle[modcode]["phases"][0]["parts"][0]["overrideTraitDataBundle"]["candidates"][0]["additionalDescription"]]={"name":charlist[0],
-                                                        "code":modcode,
-                                                        "mode":"newmods"}
+        char_key = char_ready["Name2Code"][new_mod_list[0]]
+        new_mod_id = json_mod_table["charEquip"][char_key][new_mod_list[1]]
+        mod_trait_candidate = json_mod_battle[new_mod_id]["phases"][0]["parts"][0]["overrideTraitDataBundle"]["candidates"][0]
+        if mod_trait_candidate["additionalDescription"]:
+            new_trait[mod_trait_candidate["additionalDescription"]] = update_new_trait("mod",new_mod_id,new_mod_list[0])
         else :
-            newtrait[json_mod_battle[modcode]["phases"][0]["parts"][0]["overrideTraitDataBundle"]["candidates"][0]["overrideDescripton"]]={"name":charlist[0],
-                                                        "code":modcode,
-                                                        "mode":"newmods"}
-        tempphase=[]
+            new_trait[mod_trait_candidate["overrideDescripton"]] = update_new_trait("mod",new_mod_id,new_mod_list[0])
+        temp_phase = []
         for phase in [1,2]:
-            for part in json_mod_battle[modcode]["phases"][phase]["parts"]:
-                temppart=[]
-                if part["target"] in ["TALENT_DATA_ONLY","TALENT"] and not part["isToken"] and part["addOrOverrideTalentDataBundle"]["candidates"][0]["upgradeDescription"]!="":
+            for part in json_mod_battle[new_mod_id]["phases"][phase]["parts"]:
+                temp_part = []
+                if part["target"] in ["TALENT_DATA_ONLY","TALENT"] and not part["isToken"] and part["addOrOverrideTalentDataBundle"]["candidates"][0]["upgradeDescription"] != "":
                     for pot in range(len(part["addOrOverrideTalentDataBundle"]["candidates"])):
                         candidate = part["addOrOverrideTalentDataBundle"]["candidates"][pot]
-                        talentcandidate=json_char[char]["talents"][candidate["talentIndex"]]["candidates"][pot-len(part["addOrOverrideTalentDataBundle"]["candidates"])]
-                        talentcandidateEN=json_charEN[char]["talents"][candidate["talentIndex"]]["candidates"][pot-len(part["addOrOverrideTalentDataBundle"]["candidates"])] if char in json_charEN.keys() else None
-                        if char in json_charEN and candidate["talentIndex"]!=-1:
-                            temppart.append({
-                                    "name":talentcandidateEN["name"],
-                                    "EN":talentcandidateEN["description"],
-                                    "CN":talentcandidate["description"],
-                                    "mod":candidate["upgradeDescription"],
-                                    "upgradeDescription":""
+                        talent_candidate_CN = json_char[char_key]["talents"][candidate["talentIndex"]]["candidates"][pot-len(part["addOrOverrideTalentDataBundle"]["candidates"])]
+                        talent_candidate_EN = json_charEN[char_key]["talents"][candidate["talentIndex"]]["candidates"][pot-len(part["addOrOverrideTalentDataBundle"]["candidates"])] if char_key in json_charEN.keys() else None
+                        if char_key in json_charEN and candidate["talentIndex"] != -1:
+                            temp_part.append({
+                                                "name"                  : talent_candidate_EN["name"],
+                                                "EN"                    : talent_candidate_EN["description"],
+                                                "CN"                    : talent_candidate_CN["description"],
+                                                "mod"                   : candidate["upgradeDescription"],
+                                                "upgradeDescription"    : ""
                             })
                         else:
-                            temppart.append({
-                                    "name":candidate["name"],
-                                    "CN":talentcandidate["description"],
-                                    "mod":candidate["upgradeDescription"],
-                                    "upgradeDescription":""
+                            temp_part.append({
+                                                "name"                  :candidate["name"],
+                                                "CN"                    :talent_candidate_CN["description"],
+                                                "mod"                   :candidate["upgradeDescription"],
+                                                "upgradeDescription"    :""
                             })
-                if len(temppart) :tempphase.append(temppart)
-        modtl[modcode]=tempphase
+                if len(temp_part) :temp_phase.append(temp_part)
+        mod_tl[new_mod_id] = temp_phase
     except:
-        skipmod.append(charlist)
+        skip_mod.append(new_mod_list)
 
-if skipmod:
-    print('NEW MOD skip list = ',skipmod)
+if skip_mod:
+    print('NEW MOD skip list = ',skip_mod)
 
-dumpling=json.dumps(modtl,indent=4, ensure_ascii=False)
-with open("update/tl-module.json",'w') as JSON :
-    JSON.write(dumpling)
+with open("update/tl-module.json",'w') as filepath :
+    json.dump(mod_tl,filepath,indent = 4, ensure_ascii = False)
 
-poplist=[]
-for mod in json_tempmod.keys():
+poplist = []
+for mod in json_temp_mod.keys():
     if mod in json_mod_battleEN.keys():
         poplist.append(mod)
 for mod in poplist:
-    json_tempmod.pop(mod)
+    json_temp_mod.pop(mod)
 
-dumpling=json.dumps(json_tempmod,indent=4, ensure_ascii=False)
-with open("json/tl-module.json",'w') as JSON :
-    JSON.write(dumpling)
+with open("json/tl-module.json",'w') as filepath :
+    json.dump(json_temp_mod,filepath,indent = 4, ensure_ascii = False)
 
 #########################################################################################################
 # Trait
 #########################################################################################################
-pop=[]
-for key in newtrait.keys():
+pop = []
+for key in new_trait.keys():
     if key in json_trait["full"].keys():
         pop.append(key)
 for key in pop:
-    newtrait.pop(key)
+    new_trait.pop(key)
 
-dumpling=json.dumps(newtrait,indent=4, ensure_ascii=False)
-with open("update/tl-attacktype.json",'w') as JSON :
-    JSON.write(dumpling)
+with open("update/tl-attacktype.json",'w') as filepath :
+    json.dump(new_trait,filepath,indent = 4, ensure_ascii = False)
 
 #########################################################################################################
 # Termology Update
@@ -415,11 +401,10 @@ with open("update/tl-attacktype.json",'w') as JSON :
 
 for term in json_term["termDescriptionDict"].keys():
     if term in json_constructEN["termDescriptionDict"].keys() and 'cc.' not in term :
-        json_term["termDescriptionDict"][term]=json_constructEN["termDescriptionDict"][term]
+        json_term["termDescriptionDict"][term] = json_constructEN["termDescriptionDict"][term]
         
-dumpling=json.dumps(json_term,indent=4, ensure_ascii=False)
-with open("json/named_effects.json",'w') as JSON :
-    JSON.write(dumpling)
+with open("json/named_effects.json",'w') as filepath :
+    json.dump(json_term,filepath,indent = 4, ensure_ascii = False)
 
 #########################################################################################################
 # RIIC EN Update
@@ -431,9 +416,8 @@ for riic in json_buildingEN["buffs"].keys():
                             "descformat"    :   json_buildingEN["buffs"][riic]["description"]
                         }
     
-dumpling=json.dumps(json_riicTL,indent=4, ensure_ascii=False)
-with open("json/ace/riic.json",'w') as JSON :
-    JSON.write(dumpling)
+with open("json/ace/riic.json",'w') as filepath :
+    json.dump(json_riicTL,filepath,indent = 4, ensure_ascii = False)
 
 Akenemy()
 

@@ -538,7 +538,7 @@ function actualize() {
                 body.push('<img style="' + buttonstyle
                         + '" height="' + size
                         + '" width="' + size
-                        + '" src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/' + char.id + '.png">');
+                        + '" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/' + char.id + '.png">');
             }
 
             body.push(`<div style='background:#333;color:#aaa;width:100%;
@@ -559,20 +559,20 @@ function actualize() {
                         info += `<div style='color:#ffffff;font-size:24px;font-weight:bold;background:#000;width:50%;float:left;margin-right:1px;display:flex;justify-content:center;align-items:center;padding:0px 5px 0px 5px;'>S${char.skill_index}</div>`;
                         info += `<div style="background:#222; width:50%; float:right; display:flex; justify-content:center; margin-left:1px;padding:0px 5px 0px 5px;">`
                     }
-                    info += `<img src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/rank/${skill_levels[char.skill_level].toLocaleLowerCase()}.png' style='width:40px;height:40px'title='Skill ${titleimg}'>`;
+                    info += `<img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/rank/${skill_levels[char.skill_level].toLocaleLowerCase()}.png' style='width:40px;height:40px'title='Skill ${titleimg}'>`;
                     if (char.skill_index > 0) {
                         info += "</div>";
                     }
                 } else if (char.class == "Module") {
                     info = `<div style='background-color:transparent;margin:2px 0px 2px 0px;display:flex;width:100%;'>`;
                         info += `<div style='color:#ffffff;font-size:14px;font-weight:bold;background:#000;width:50%;float:left;margin-right:1px;display:flex;justify-content:center;align-items:center;padding:0px 5px 0px 5px;'>
-                                    <img src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/type/${char.mod_index}.png' style='width:40px;height:40px'title='${char.mod_index.replace("-d","-∆").toUpperCase()}'>
+                                    <img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/type/${char.mod_index}.png' style='width:40px;height:40px'title='${char.mod_index.replace("-d","-∆").toUpperCase()}'>
                                 </div>`
                         info += `<div style="background:#222; width:50%; float:right; display:flex; justify-content:center; margin-left:1px;padding:0px 5px 0px 5px;">`
-                        info += `<img src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/stage/img_stg${char.mod_level}.png' style='width:40px;height:40px'title='Level ${char.mod_level}'></div>`;
+                        info += `<img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/stage/img_stg${char.mod_level}.png' style='width:40px;height:40px'title='Level ${char.mod_level}'></div>`;
                 } else {
-                    if(char.class=="E1")info += "<img src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/elite/1-s.png'>";
-                    else info += "<img src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/elite/2-s.png'>";
+                    if(char.class=="E1")info += "<img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/1-s.png'>";
+                    else info += "<img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/2-s.png'>";
                 }
                 info+="</div>"
                 //body.push(info + `<div class="item-amount" style="font-weight: bold; padding: 0px 2px 0px 2px; border-radius: 5px; z-index: 2; background-color: #000000;color:#ddd">${char.mod_index?"["+char.mod_index.toUpperCase()+"] - ":""}${char.count}x</div>`);
@@ -594,7 +594,7 @@ function actualize() {
                     var titleimg = skill_levels[char.skill_level]
                     if (char.skill >= 7) titleimg = char.skill_level;
                     info += skill_levels[char.skill_level];
-                    // info += `<img src='https://raw.githubusercontent.com/Aceship/Arknight-Images/main/ui/rank/${skill_levels[char.skill_level].toLocaleLowerCase()}.png' style='width:40px;height:40px'title='Skill ${titleimg}'>`;
+                    // info += `<img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/rank/${skill_levels[char.skill_level].toLocaleLowerCase()}.png' style='width:40px;height:40px'title='Skill ${titleimg}'>`;
                 } else if (char.class == "Module"){
                     info += `Module ${char.mod_index.slice(-1).toUpperCase()} ${char.mod_level} `
                 } else {
@@ -608,8 +608,8 @@ function actualize() {
             body.push("</button>\n")    
         }
         body.push(  '<td><div class="internal-container" style="position: relative;width:100px;">' +
-                    '<img class="item-rarity" width=100 height=100 style="top: 0; left: 0; z-index: 0;" src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/material/bg/item-' + (mat_id.includes("update_token_1")?'4':mat_id.includes("mod")?'5':String(mat_id % 10)) + '.png">' +
-                    '<img class="item-image" width=100 height=100 style="top:0; left: 0; padding: 10px; z-index: 1; position: absolute;object-fit: contain;" src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/items/' + materials[mat_id].iconId + '.png">' +
+                    '<img class="item-rarity" width=100 height=100 style="top: 0; left: 0; z-index: 0;" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/material/bg/item-' + (mat_id.includes("update_token_1")?'4':mat_id.includes("mod")?'5':String(mat_id % 10)) + '.png">' +
+                    '<img class="item-image" width=100 height=100 style="top:0; left: 0; padding: 10px; z-index: 1; position: absolute;object-fit: contain;" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/items/' + materials[mat_id].iconId + '.png">' +
                     '<div class="item-amount" style="font-weight: bold; bottom: 0; right: 0; padding: 0px 2px 0px 2px; border-radius: 5px; z-index: 2; background-color: #000000; position: absolute;" mat-id="' + mat_id + '">' + total_materials[mat_id] + "x</div>" +
                     "</div></td>");
         $("#tbody-recommend").append(body.join(""));
@@ -633,8 +633,8 @@ function mat_modal(){
             matLib.forEach(id => {
                 if(id.slice(-1)==Tier && id.length==5 && mat_total[Lang][id]){
                         modalhtml.push('<div class="internal-container" style="position: relative;width:100px;display: inline-block;">' +
-                                    '<img class="item-rarity" width=100 height=100 style="top: 0; left: 0; z-index: 0;" src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/material/bg/item-' + (id.includes("update_token_1")?'4':id.includes("mod")?'5':String(id % 10)) + '.png">' +
-                                    '<img class="item-image" width=100 height=100 style="top:0; left: 0; padding: 10px; z-index: 1; position: absolute;object-fit: contain;" src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/items/' + materials[id].iconId + `.png" title="${materials[id][Lang]}">` +
+                                    '<img class="item-rarity" width=100 height=100 style="top: 0; left: 0; z-index: 0;" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/material/bg/item-' + (id.includes("update_token_1")?'4':id.includes("mod")?'5':String(id % 10)) + '.png">' +
+                                    '<img class="item-image" width=100 height=100 style="top:0; left: 0; padding: 10px; z-index: 1; position: absolute;object-fit: contain;" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/items/' + materials[id].iconId + `.png" title="${materials[id][Lang]}">` +
                                     '<div class="item-amount" style="font-weight: bold; bottom: 0; right: 0; padding: 0px 2px 0px 2px; border-radius: 5px; z-index: 2; background-color: #000000; position: absolute;" mat-id="' + id + '">' + mat_total[Lang][id] + 'x</div>' +
                                     '</div>')
                 }
@@ -651,8 +651,8 @@ function mat_modal(){
         matLib.forEach(id => {
             if(id.length==4){
                     modalhtml.push('<div class="internal-container" style="position: relative;width:100px;display: inline-block;">' +
-                                '<img class="item-rarity" width=100 height=100 style="top: 0; left: 0; z-index: 0;" src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/material/bg/item-' + (id.includes("update_token_1")?'4':id.includes("mod")?'5':String(id % 10)) + '.png">' +
-                                '<img class="item-image" width=100 height=100 style="top:0; left: 0; padding: 10px; z-index: 1; position: absolute;object-fit: contain;" src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/items/' + materials[id].iconId + `.png" title="${materials[id][Lang]}">` +
+                                '<img class="item-rarity" width=100 height=100 style="top: 0; left: 0; z-index: 0;" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/material/bg/item-' + (id.includes("update_token_1")?'4':id.includes("mod")?'5':String(id % 10)) + '.png">' +
+                                '<img class="item-image" width=100 height=100 style="top:0; left: 0; padding: 10px; z-index: 1; position: absolute;object-fit: contain;" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/items/' + materials[id].iconId + `.png" title="${materials[id][Lang]}">` +
                                 '<div class="item-amount" style="font-weight: bold; bottom: 0; right: 0; padding: 0px 2px 0px 2px; border-radius: 5px; z-index: 2; background-color: #000000; position: absolute;" mat-id="' + id + '">' + mat_total[Lang][id] + 'x</div>' +
                                 '</div>')
             }
@@ -667,8 +667,8 @@ function mat_modal(){
         modalhtml.push('<td>')
         matLib.slice(-3,).forEach(id => {
                     modalhtml.push('<div class="internal-container" style="position: relative;width:100px;display: inline-block;">' +
-                                '<img class="item-rarity" width=100 height=100 style="top: 0; left: 0; z-index: 0;" src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/material/bg/item-' + (id.includes("update_token_1")?'4':id.includes("mod")?'5':String(id % 10)) + '.png">' +
-                                '<img class="item-image" width=100 height=100 style="top:0; left: 0; padding: 10px; z-index: 1; position: absolute;object-fit: contain;" src="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/items/' + materials[id].iconId + `.png" title="${materials[id][Lang]}">` +
+                                '<img class="item-rarity" width=100 height=100 style="top: 0; left: 0; z-index: 0;" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/material/bg/item-' + (id.includes("update_token_1")?'4':id.includes("mod")?'5':String(id % 10)) + '.png">' +
+                                '<img class="item-image" width=100 height=100 style="top:0; left: 0; padding: 10px; z-index: 1; position: absolute;object-fit: contain;" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/items/' + materials[id].iconId + `.png" title="${materials[id][Lang]}">` +
                                 '<div class="item-amount" style="font-weight: bold; bottom: 0; right: 0; padding: 0px 2px 0px 2px; border-radius: 5px; z-index: 2; background-color: #000000; position: absolute;" mat-id="' + id + '">' + mat_total[Lang][id] + 'x</div>' +
                                 '</div>')
         })

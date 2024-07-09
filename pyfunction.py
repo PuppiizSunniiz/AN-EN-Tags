@@ -1,9 +1,14 @@
 from datetime import datetime
+import json
+
+def json_load(filepath):
+    with open(filepath, 'r', encoding='utf-8') as file:
+        return json.load(file)
 
 def epoch(time) -> str:
-    return TimeFormat(datetime.fromtimestamp(time))+" is "+TimeDiff(datetime.fromtimestamp(time))
+    return TimeFormat(datetime.fromtimestamp(time))+" is "+time_diff(datetime.fromtimestamp(time))
 
-def TimeReturn(self) -> str:  # return Date as Y M D H M or S
+def time_to_str(self) -> str:  # return Date as Y M D H M or S
     if self.days > 365:
         return str(self.days // 365) + ' Year(s)'
     elif self.days > 31:
@@ -17,16 +22,16 @@ def TimeReturn(self) -> str:  # return Date as Y M D H M or S
     else:
         return str(self.seconds) + ' Second(s)'
 
-def TimeDiff(self) -> str:  # Time different Before(ago) or After(in)
+def time_diff(self) -> str:  # Time different Before(ago) or After(in)
     if self < datetime.now():
-        return TimeReturn(datetime.now() - self) + ' ago'
+        return time_to_str(datetime.now() - self) + ' ago'
     else:
-        return 'in ' + TimeReturn(self - datetime.now())
+        return 'in ' + time_to_str(self - datetime.now())
 
 def TimeFormat(self) -> str:
     return self.strftime('%d %b %Y %H:%M:%S')
 
-def CharReady(JSON,mode=0):
+def char_ready(char_json,mode=0):
     '''
         Get character_table -> Return Code2Name Name2Code dict
         
@@ -37,14 +42,11 @@ def CharReady(JSON,mode=0):
     '''
 
     Chars={"Code2Name":{},"Name2Code":{}}
-    OpsExclude=[] # "isNotObtainable": true
-    for key in JSON.keys():
-        if "char_" in key:
-            Chars["Code2Name"][key]=Charname(JSON,key)
-            Chars["Name2Code"][Charname(JSON,key)]=key
-            if JSON[key]["isNotObtainable"]:
-                OpsExclude.append([key,Charname(JSON,key)])
-    Chars["Exclude"]=OpsExclude
+    for char_key in char_json.keys():
+        if "char_" in char_key:
+            Chars["Code2Name"][char_key]=get_char_name(char_json,char_key)
+            Chars["Name2Code"][get_char_name(char_json,char_key)]=char_key
+    Chars["Exclude"] = [[char_key,get_char_name(char_json,char_key)] for char_key in char_json.keys() if "char_" in char_key and char_json[char_key]["isNotObtainable"]]
     match mode :
         case 1 :
             return Chars["Code2Name"]
@@ -55,12 +57,10 @@ def CharReady(JSON,mode=0):
         case _ :
             return Chars
         
-def Charname(JSON,key) -> str:
-    return NameCheck(JSON[key]["appellation"])
+def get_char_name(char_json,char_key) -> str:
+    return name_check(char_json[char_key]["appellation"])
 
-def NameCheck(appellation) -> str:
+def name_check(appellation) -> str:
     Russian = {'Гум': 'Gummy', 'Зима': 'Zima', 'Истина': 'Istina', 'Позёмка': 'Pozëmka', 'Роса': 'Rosa','Лето':'Leto'}
-    if appellation in Russian.keys():
-        return Russian[appellation]
-    else:
-        return appellation
+    
+    return Russian.get(appellation,appellation)

@@ -11440,142 +11440,6 @@
             "name": "Bottomless Pit",
             "Event": "lt04"
         },
-        "act42d0_01": {
-            "stageId": "act42d0_01",
-            "levelId": "Activities/ACT42D0/level_act42d0_01",
-            "zoneId": "area_1",
-            "code": "C-1",
-            "name": "Homeward Impasse",
-            "Event": "act42d0"
-        },
-        "act42d0_02": {
-            "stageId": "act42d0_02",
-            "levelId": "Activities/ACT42D0/level_act42d0_02",
-            "zoneId": "area_1",
-            "code": "C-2",
-            "name": "Persistent Blaze",
-            "Event": "act42d0"
-        },
-        "act42d0_03": {
-            "stageId": "act42d0_03",
-            "levelId": "Activities/ACT42D0/level_act42d0_03",
-            "zoneId": "area_1",
-            "code": "C-3",
-            "name": "Rout of Smelted Soldiers",
-            "Event": "act42d0"
-        },
-        "act42d0_04": {
-            "stageId": "act42d0_04",
-            "levelId": "Activities/ACT42D0/level_act42d0_04",
-            "zoneId": "area_2",
-            "code": "B-1",
-            "name": "Land of Garrisoned Bone",
-            "Event": "act42d0"
-        },
-        "act42d0_05": {
-            "stageId": "act42d0_05",
-            "levelId": "Activities/ACT42D0/level_act42d0_05",
-            "zoneId": "area_2",
-            "code": "B-2",
-            "name": "Sin of Rebellious Flame",
-            "Event": "act42d0"
-        },
-        "act42d0_06": {
-            "stageId": "act42d0_06",
-            "levelId": "Activities/ACT42D0/level_act42d0_06",
-            "zoneId": "area_2",
-            "code": "B-3",
-            "name": "Twilight of Smoldering Ash",
-            "Event": "act42d0"
-        },
-        "act42d0_07": {
-            "stageId": "act42d0_07",
-            "levelId": "Activities/ACT42D0/level_act42d0_07",
-            "zoneId": "area_3",
-            "code": "A-1",
-            "name": "Flame Convergent Sacrifice",
-            "Event": "act42d0"
-        },
-        "act42d0_08": {
-            "stageId": "act42d0_08",
-            "levelId": "Activities/ACT42D0/level_act42d0_08",
-            "zoneId": "area_3",
-            "code": "A-2",
-            "name": "Reignited Cinders",
-            "Event": "act42d0"
-        },
-        "act42d0_09": {
-            "stageId": "act42d0_09",
-            "levelId": "Activities/ACT42D0/level_act42d0_09",
-            "zoneId": "area_3",
-            "code": "A-3",
-            "name": "The Last Diαblo",
-            "Event": "act42d0"
-        },
-        "act42d0_10": {
-            "stageId": "act42d0_10",
-            "levelId": "Activities/ACT42D0/level_act42d0_10",
-            "zoneId": "area_4",
-            "code": "S-1",
-            "name": "The End of Punishment",
-            "Event": "act42d0"
-        },
-        "act42d0_11": {
-            "stageId": "act42d0_11",
-            "levelId": "Activities/ACT42D0/level_act42d0_11",
-            "zoneId": "area_4",
-            "code": "S-2",
-            "name": "Ashes of A Dynasty",
-            "Event": "act42d0"
-        },
-        "act42d0_12": {
-            "stageId": "act42d0_12",
-            "levelId": "Activities/ACT42D0/level_act42d0_12",
-            "zoneId": "area_4",
-            "code": "S-3",
-            "name": "Home In The Flames",
-            "Event": "act42d0"
-        },
-        "act42d0_sp01": {
-            "stageId": "act42d0_sp01",
-            "levelId": "Activities/ACT42D0/level_act42d0_sp01",
-            "zoneId": "challenge",
-            "code": "T-1",
-            "name": "Rainforest Aflame",
-            "Event": "act42d0"
-        },
-        "act42d0_sp02": {
-            "stageId": "act42d0_sp02",
-            "levelId": "Activities/ACT42D0/level_act42d0_sp02",
-            "zoneId": "challenge",
-            "code": "T-2",
-            "name": "Lava Arena",
-            "Event": "act42d0"
-        },
-        "act42d0_sp03": {
-            "stageId": "act42d0_sp03",
-            "levelId": "Activities/ACT42D0/level_act42d0_sp03",
-            "zoneId": "challenge",
-            "code": "T-3",
-            "name": "Depraved Earth",
-            "Event": "act42d0"
-        },
-        "act42d0_sp04": {
-            "stageId": "act42d0_sp04",
-            "levelId": "Activities/ACT42D0/level_act42d0_sp04",
-            "zoneId": "challenge",
-            "code": "T-4",
-            "name": "Slug Nest Eruption",
-            "Event": "act42d0"
-        },
-        "act42d0_sp05": {
-            "stageId": "act42d0_sp05",
-            "levelId": "Activities/ACT42D0/level_act42d0_sp05",
-            "zoneId": "challenge",
-            "code": "T-5",
-            "name": "Firerust Terminus",
-            "Event": "act42d0"
-        },
         "act17d1_01_a": {
             "stageId": "act17d1_01_a",
             "levelId": "activities/act17d1\\level_act17d1_01_a.json",
@@ -11919,6 +11783,142 @@
             "code": "act38rune_01-04",
             "name": "Area 13 Ruins",
             "Event": "PinchOut"
+        },
+        "act42d0_01": {
+            "stageId": "act42d0_01",
+            "levelId": "Activities/ACT42D0/level_act42d0_01",
+            "zoneId": "area_1",
+            "code": "C-1",
+            "name": "Homeward Impasse",
+            "Event": "act42d0"
+        },
+        "act42d0_02": {
+            "stageId": "act42d0_02",
+            "levelId": "Activities/ACT42D0/level_act42d0_02",
+            "zoneId": "area_1",
+            "code": "C-2",
+            "name": "Persistent Blaze",
+            "Event": "act42d0"
+        },
+        "act42d0_03": {
+            "stageId": "act42d0_03",
+            "levelId": "Activities/ACT42D0/level_act42d0_03",
+            "zoneId": "area_1",
+            "code": "C-3",
+            "name": "Rout of Smelted Soldiers",
+            "Event": "act42d0"
+        },
+        "act42d0_04": {
+            "stageId": "act42d0_04",
+            "levelId": "Activities/ACT42D0/level_act42d0_04",
+            "zoneId": "area_2",
+            "code": "B-1",
+            "name": "Land of Garrisoned Bone",
+            "Event": "act42d0"
+        },
+        "act42d0_05": {
+            "stageId": "act42d0_05",
+            "levelId": "Activities/ACT42D0/level_act42d0_05",
+            "zoneId": "area_2",
+            "code": "B-2",
+            "name": "Sin of Rebellious Flame",
+            "Event": "act42d0"
+        },
+        "act42d0_06": {
+            "stageId": "act42d0_06",
+            "levelId": "Activities/ACT42D0/level_act42d0_06",
+            "zoneId": "area_2",
+            "code": "B-3",
+            "name": "Twilight of Smoldering Ash",
+            "Event": "act42d0"
+        },
+        "act42d0_07": {
+            "stageId": "act42d0_07",
+            "levelId": "Activities/ACT42D0/level_act42d0_07",
+            "zoneId": "area_3",
+            "code": "A-1",
+            "name": "Flame Convergent Sacrifice",
+            "Event": "act42d0"
+        },
+        "act42d0_08": {
+            "stageId": "act42d0_08",
+            "levelId": "Activities/ACT42D0/level_act42d0_08",
+            "zoneId": "area_3",
+            "code": "A-2",
+            "name": "Reignited Cinders",
+            "Event": "act42d0"
+        },
+        "act42d0_09": {
+            "stageId": "act42d0_09",
+            "levelId": "Activities/ACT42D0/level_act42d0_09",
+            "zoneId": "area_3",
+            "code": "A-3",
+            "name": "The Last Diαblo",
+            "Event": "act42d0"
+        },
+        "act42d0_10": {
+            "stageId": "act42d0_10",
+            "levelId": "Activities/ACT42D0/level_act42d0_10",
+            "zoneId": "area_4",
+            "code": "S-1",
+            "name": "The End of Punishment",
+            "Event": "act42d0"
+        },
+        "act42d0_11": {
+            "stageId": "act42d0_11",
+            "levelId": "Activities/ACT42D0/level_act42d0_11",
+            "zoneId": "area_4",
+            "code": "S-2",
+            "name": "Ashes of A Dynasty",
+            "Event": "act42d0"
+        },
+        "act42d0_12": {
+            "stageId": "act42d0_12",
+            "levelId": "Activities/ACT42D0/level_act42d0_12",
+            "zoneId": "area_4",
+            "code": "S-3",
+            "name": "Home In The Flames",
+            "Event": "act42d0"
+        },
+        "act42d0_sp01": {
+            "stageId": "act42d0_sp01",
+            "levelId": "Activities/ACT42D0/level_act42d0_sp01",
+            "zoneId": "challenge",
+            "code": "T-1",
+            "name": "Rainforest Aflame",
+            "Event": "act42d0"
+        },
+        "act42d0_sp02": {
+            "stageId": "act42d0_sp02",
+            "levelId": "Activities/ACT42D0/level_act42d0_sp02",
+            "zoneId": "challenge",
+            "code": "T-2",
+            "name": "Lava Arena",
+            "Event": "act42d0"
+        },
+        "act42d0_sp03": {
+            "stageId": "act42d0_sp03",
+            "levelId": "Activities/ACT42D0/level_act42d0_sp03",
+            "zoneId": "challenge",
+            "code": "T-3",
+            "name": "Depraved Earth",
+            "Event": "act42d0"
+        },
+        "act42d0_sp04": {
+            "stageId": "act42d0_sp04",
+            "levelId": "Activities/ACT42D0/level_act42d0_sp04",
+            "zoneId": "challenge",
+            "code": "T-4",
+            "name": "Slug Nest Eruption",
+            "Event": "act42d0"
+        },
+        "act42d0_sp05": {
+            "stageId": "act42d0_sp05",
+            "levelId": "Activities/ACT42D0/level_act42d0_sp05",
+            "zoneId": "challenge",
+            "code": "T-5",
+            "name": "Firerust Terminus",
+            "Event": "act42d0"
         },
         "crisis_v2_01-01": {
             "stageId": "crisis_v2_01-01",
@@ -16533,25 +16533,6 @@
             "LT-7",
             "LT-8"
         ],
-        "act42d0": [
-            "C-1",
-            "C-2",
-            "C-3",
-            "B-1",
-            "B-2",
-            "B-3",
-            "A-1",
-            "A-2",
-            "A-3",
-            "S-1",
-            "S-2",
-            "S-3",
-            "T-1",
-            "T-2",
-            "T-3",
-            "T-4",
-            "T-5"
-        ],
         "act17d1": [
             "act17d1_01_a",
             "act17d1_01_b",
@@ -16703,6 +16684,25 @@
             "act38rune_01-02",
             "act38rune_01-03",
             "act38rune_01-04"
+        ],
+        "act42d0": [
+            "C-1",
+            "C-2",
+            "C-3",
+            "B-1",
+            "B-2",
+            "B-3",
+            "A-1",
+            "A-2",
+            "A-3",
+            "S-1",
+            "S-2",
+            "S-3",
+            "T-1",
+            "T-2",
+            "T-3",
+            "T-4",
+            "T-5"
         ],
         "CCBP#01": [
             "crisis_v2_01-01",
@@ -17583,9 +17583,9 @@
                 "camp_01",
                 "camp_02",
                 "lt11",
-                "act42d0",
                 "CC#Beta",
                 "CC#00",
+                "act42d0",
                 "IS#1",
                 "IS#2",
                 "IS#3",
@@ -17693,14 +17693,14 @@
                     "LT-3",
                     "LT-6"
                 ],
-                "act42d0": [
-                    "T-3"
-                ],
                 "CC#Beta": [
                     "Abandoned High-rise"
                 ],
                 "CC#00": [
                     "Abandoned High-rise"
+                ],
+                "act42d0": [
+                    "T-3"
                 ],
                 "IS#1": {
                     "Floor 3": [
@@ -18095,7 +18095,6 @@
                 "1stact",
                 "camp_01",
                 "lt06",
-                "act42d0",
                 "CC#00",
                 "CC#01",
                 "CC#02",
@@ -18103,6 +18102,7 @@
                 "CC#08",
                 "CC#09",
                 "CC#10",
+                "act42d0",
                 "IS#1",
                 "IS#2",
                 "IS#3",
@@ -18192,9 +18192,6 @@
                     "LT-2",
                     "LT-4"
                 ],
-                "act42d0": [
-                    "T-4"
-                ],
                 "CC#00": [
                     "Desolate Desert"
                 ],
@@ -18215,6 +18212,9 @@
                 ],
                 "CC#10": [
                     "Blazing Cavern"
+                ],
+                "act42d0": [
+                    "T-4"
                 ],
                 "IS#1": {
                     "Floor 1": [
@@ -20771,10 +20771,10 @@
                 "lt07",
                 "lt02",
                 "lt03",
-                "act42d0",
                 "CC#00",
                 "CC#01",
                 "CC#02",
+                "act42d0",
                 "IS#1",
                 "IS#2",
                 "IS#3",
@@ -20825,9 +20825,6 @@
                     "LT-3",
                     "LT-7"
                 ],
-                "act42d0": [
-                    "T-4"
-                ],
                 "CC#00": [
                     "New Street"
                 ],
@@ -20836,6 +20833,9 @@
                 ],
                 "CC#02": [
                     "New Street"
+                ],
+                "act42d0": [
+                    "T-4"
                 ],
                 "IS#1": {
                     "Floor 3": [
@@ -21337,8 +21337,8 @@
                 "main_3",
                 "weekly_5",
                 "act7d5",
-                "act42d0",
                 "act17d1",
+                "act42d0",
                 "IS#1",
                 "IS#2",
                 "IS#3",
@@ -21354,11 +21354,11 @@
                 "act7d5": [
                     "SA-3"
                 ],
-                "act42d0": [
-                    "T-2"
-                ],
                 "act17d1": [
                     "act17d1_01_a"
+                ],
+                "act42d0": [
+                    "T-2"
                 ],
                 "IS#1": {
                     "Floor 1": [
@@ -22225,11 +22225,11 @@
                 "lt06",
                 "lt08",
                 "lt09",
-                "act42d0",
                 "CC#00",
                 "CC#01",
                 "CC#02",
                 "CC#03",
+                "act42d0",
                 "IS#1",
                 "IS#2",
                 "IS#3",
@@ -22296,10 +22296,6 @@
                 "lt09": [
                     "LT-5"
                 ],
-                "act42d0": [
-                    "T-1",
-                    "T-4"
-                ],
                 "CC#00": [
                     "Desolate Desert",
                     "Broken Path (Main)"
@@ -22314,6 +22310,10 @@
                 ],
                 "CC#03": [
                     "Broken Path"
+                ],
+                "act42d0": [
+                    "T-1",
+                    "T-4"
                 ],
                 "IS#1": {
                     "Floor 1": [
@@ -23452,7 +23452,6 @@
                 "lt14",
                 "lt01",
                 "lt04",
-                "act42d0",
                 "CC#00",
                 "CC#01",
                 "CC#02",
@@ -23462,6 +23461,7 @@
                 "CC#06",
                 "CC#07",
                 "CC#08",
+                "act42d0",
                 "IS#1",
                 "IS#2",
                 "IS#3",
@@ -23508,11 +23508,6 @@
                     "LT-4",
                     "LT-6"
                 ],
-                "act42d0": [
-                    "C-1",
-                    "C-2",
-                    "C-3"
-                ],
                 "CC#00": [
                     "Frost-Covered Ruins"
                 ],
@@ -23544,6 +23539,11 @@
                 ],
                 "CC#08": [
                     "Abandoned Mine"
+                ],
+                "act42d0": [
+                    "C-1",
+                    "C-2",
+                    "C-3"
                 ],
                 "IS#1": {
                     "Floor 4": [
@@ -25207,8 +25207,8 @@
         "enemy_1082_soticn": {
             "Filtered": [
                 "main_7",
-                "act42d0",
                 "CC#12",
+                "act42d0",
                 "IS#3"
             ],
             "Appearance": {
@@ -25219,11 +25219,11 @@
                     "S7-1",
                     "H7-1"
                 ],
-                "act42d0": [
-                    "T-3"
-                ],
                 "CC#12": [
                     "Nameless Sanctuary (Main)"
+                ],
+                "act42d0": [
+                    "T-3"
                 ],
                 "IS#3": {
                     "Floor 3": [
@@ -26150,8 +26150,8 @@
                 "camp_r_03",
                 "lt09",
                 "lt12",
-                "act42d0",
                 "act17d1",
+                "act42d0",
                 "IS#3",
                 "IS#4",
                 "RA#2"
@@ -26177,11 +26177,11 @@
                 "lt12": [
                     "LT-5"
                 ],
-                "act42d0": [
-                    "T-5"
-                ],
                 "act17d1": [
                     "act17d1_01_c"
+                ],
+                "act42d0": [
+                    "T-5"
                 ],
                 "IS#3": {
                     "Floor 3": [
@@ -26830,8 +26830,8 @@
                 "main_5",
                 "act20side",
                 "act1bossrush",
-                "act42d0",
                 "act17d1",
+                "act42d0",
                 "IS#1",
                 "IS#2",
                 "IS#3",
@@ -26850,12 +26850,12 @@
                 "act1bossrush": [
                     "TN-1"
                 ],
+                "act17d1": [
+                    "act17d1_03_c"
+                ],
                 "act42d0": [
                     "T-1",
                     "T-4"
-                ],
-                "act17d1": [
-                    "act17d1_03_c"
                 ],
                 "IS#1": {
                     "Floor 3": [
@@ -26923,8 +26923,8 @@
                 "act13mini",
                 "act13d0",
                 "act10d5",
-                "act42d0",
                 "act17d1",
+                "act42d0",
                 "IS#1",
                 "IS#2",
                 "IS#4",
@@ -26950,11 +26950,11 @@
                 "act10d5": [
                     "SV-2"
                 ],
-                "act42d0": [
-                    "T-2"
-                ],
                 "act17d1": [
                     "act17d1_01_b"
+                ],
+                "act42d0": [
+                    "T-2"
                 ],
                 "IS#1": {
                     "Floor 1": [
@@ -27309,8 +27309,8 @@
                 "act1bossrush",
                 "act10mini",
                 "act9mini",
-                "act42d0",
-                "act17d1"
+                "act17d1",
+                "act42d0"
             ],
             "Appearance": {
                 "main_7": [
@@ -27325,11 +27325,11 @@
                 "act9mini": [
                     "PS-6"
                 ],
-                "act42d0": [
-                    "T-3"
-                ],
                 "act17d1": [
                     "act17d1_01_c"
+                ],
+                "act42d0": [
+                    "T-3"
                 ]
             }
         },
@@ -27563,8 +27563,8 @@
                 "act15d5",
                 "camp_r_03",
                 "lt09",
-                "act42d0",
                 "act17d1",
+                "act42d0",
                 "IS#2",
                 "IS#4"
             ],
@@ -27584,11 +27584,11 @@
                 "lt09": [
                     "LT-3"
                 ],
-                "act42d0": [
-                    "T-5"
-                ],
                 "act17d1": [
                     "act17d1_01_c"
+                ],
+                "act42d0": [
+                    "T-5"
                 ],
                 "IS#2": {
                     "Floor 2": [
@@ -32266,7 +32266,6 @@
                 "lt05",
                 "lt02",
                 "lt04",
-                "act42d0",
                 "CC#Beta",
                 "CC#00",
                 "CC#01",
@@ -32276,6 +32275,7 @@
                 "CC#05",
                 "CC#06",
                 "CC#12",
+                "act42d0",
                 "IS#1",
                 "IS#2",
                 "IS#4",
@@ -32310,11 +32310,6 @@
                 "lt04": [
                     "LT-4"
                 ],
-                "act42d0": [
-                    "S-1",
-                    "S-2",
-                    "S-3"
-                ],
                 "CC#Beta": [
                     "Area 59 Ruins (Main)"
                 ],
@@ -32341,6 +32336,11 @@
                 ],
                 "CC#12": [
                     "Nameless Sanctuary (Main)"
+                ],
+                "act42d0": [
+                    "S-1",
+                    "S-2",
+                    "S-3"
                 ],
                 "IS#1": {
                     "Floor 4": [
@@ -33724,11 +33724,11 @@
                 "camp_r_18",
                 "lt09",
                 "lt02",
-                "act42d0",
                 "CC#06",
                 "CC#07",
                 "CC#08",
                 "CC#09",
+                "act42d0",
                 "IS#2",
                 "IS#4",
                 "RA#1",
@@ -33766,9 +33766,6 @@
                 "lt02": [
                     "LT-5"
                 ],
-                "act42d0": [
-                    "T-1"
-                ],
                 "CC#06": [
                     "Howling Desert (Main)"
                 ],
@@ -33780,6 +33777,9 @@
                 ],
                 "CC#09": [
                     "Howling Desert"
+                ],
+                "act42d0": [
+                    "T-1"
                 ],
                 "IS#2": {
                     "Floor 1": [
@@ -35365,11 +35365,11 @@
                 "camp_r_01",
                 "lt05",
                 "lt03",
-                "act42d0",
                 "CC#05",
                 "CC#06",
                 "CC#07",
-                "CC#08"
+                "CC#08",
+                "act42d0"
             ],
             "Appearance": {
                 "act2vmulti": [
@@ -35396,9 +35396,6 @@
                 "lt03": [
                     "LT-4"
                 ],
-                "act42d0": [
-                    "T-2"
-                ],
                 "CC#05": [
                     "Arena 8 (Main)"
                 ],
@@ -35410,6 +35407,9 @@
                 ],
                 "CC#08": [
                     "Arena 8"
+                ],
+                "act42d0": [
+                    "T-2"
                 ]
             }
         },
@@ -35423,11 +35423,11 @@
                 "camp_r_01",
                 "camp_r_10",
                 "lt03",
-                "act42d0",
                 "CC#05",
                 "CC#06",
                 "CC#07",
                 "CC#08",
+                "act42d0",
                 "IS#2",
                 "IS#3",
                 "IS#4",
@@ -35468,9 +35468,6 @@
                     "LT-3",
                     "LT-7"
                 ],
-                "act42d0": [
-                    "T-2"
-                ],
                 "CC#05": [
                     "Arena 8 (Main)"
                 ],
@@ -35482,6 +35479,9 @@
                 ],
                 "CC#08": [
                     "Arena 8"
+                ],
+                "act42d0": [
+                    "T-2"
                 ],
                 "IS#2": {
                     "Floor 1": [
@@ -36779,11 +36779,11 @@
                 "lt05",
                 "lt14",
                 "lt04",
-                "act42d0",
                 "CC#05",
                 "CC#06",
                 "CC#07",
                 "CC#08",
+                "act42d0",
                 "RA#1"
             ],
             "Appearance": {
@@ -36826,9 +36826,6 @@
                     "LT-2",
                     "LT-3"
                 ],
-                "act42d0": [
-                    "T-2"
-                ],
                 "CC#05": [
                     "Arena 8 (Main)"
                 ],
@@ -36840,6 +36837,9 @@
                 ],
                 "CC#08": [
                     "Arena 8"
+                ],
+                "act42d0": [
+                    "T-2"
                 ],
                 "RA#1": [
                     "sandbox_0_45"
@@ -38467,12 +38467,12 @@
                 "camp_r_08",
                 "lt01",
                 "lt03",
-                "act42d0",
                 "CC#02",
                 "CC#03",
                 "CC#04",
                 "CC#05",
                 "CC#06",
+                "act42d0",
                 "IS#3"
             ],
             "Appearance": {
@@ -38505,9 +38505,6 @@
                 "lt03": [
                     "LT-5"
                 ],
-                "act42d0": [
-                    "T-5"
-                ],
                 "CC#02": [
                     "Deserted Factory (Main)"
                 ],
@@ -38522,6 +38519,9 @@
                 ],
                 "CC#06": [
                     "Deserted Factory"
+                ],
+                "act42d0": [
+                    "T-5"
                 ],
                 "IS#3": {
                     "Floor 4": [
@@ -39800,11 +39800,11 @@
                 "camp_r_18",
                 "lt06",
                 "lt09",
-                "act42d0",
                 "CC#06",
                 "CC#07",
                 "CC#08",
                 "CC#09",
+                "act42d0",
                 "IS#4",
                 "RA#1",
                 "RA#2"
@@ -39844,9 +39844,6 @@
                 "lt09": [
                     "LT-2"
                 ],
-                "act42d0": [
-                    "T-1"
-                ],
                 "CC#06": [
                     "Howling Desert (Main)"
                 ],
@@ -39858,6 +39855,9 @@
                 ],
                 "CC#09": [
                     "Howling Desert"
+                ],
+                "act42d0": [
+                    "T-1"
                 ],
                 "IS#4": {
                     "Floor 3": [
@@ -45956,12 +45956,12 @@
             "Filtered": [
                 "act2bossrush",
                 "act11d0",
-                "act42d0",
                 "CC#04",
                 "CC#05",
                 "CC#06",
                 "CC#07",
                 "CC#08",
+                "act42d0",
                 "CCBP#02",
                 "RA#1",
                 "RA#2"
@@ -45974,9 +45974,6 @@
                     "TW-8",
                     "TW-S-2",
                     "TW-EX-8"
-                ],
-                "act42d0": [
-                    "T-5"
                 ],
                 "CC#04": [
                     "Abandoned Mine (Main)"
@@ -45992,6 +45989,9 @@
                 ],
                 "CC#08": [
                     "Abandoned Mine"
+                ],
+                "act42d0": [
+                    "T-5"
                 ],
                 "CCBP#02": [
                     "Moonset Alley"
@@ -46736,12 +46736,12 @@
                 "act3d0",
                 "camp_r_04",
                 "lt07",
-                "act42d0",
                 "CC#01",
                 "CC#02",
                 "CC#03",
                 "CC#04",
                 "CC#05",
+                "act42d0",
                 "IS#2",
                 "IS#3",
                 "IS#4",
@@ -46766,9 +46766,6 @@
                 "lt07": [
                     "LT-2"
                 ],
-                "act42d0": [
-                    "T-4"
-                ],
                 "CC#01": [
                     "Pyrite Gorge (Main)"
                 ],
@@ -46783,6 +46780,9 @@
                 ],
                 "CC#05": [
                     "Pyrite Gorge"
+                ],
+                "act42d0": [
+                    "T-4"
                 ],
                 "IS#2": {
                     "Treasure": [
@@ -52115,12 +52115,12 @@
                 "lt09",
                 "lt02",
                 "lt04",
-                "act42d0",
                 "CC#06",
                 "CC#07",
                 "CC#08",
                 "CC#09",
                 "PinchOut",
+                "act42d0",
                 "CCBP#01",
                 "IS#2",
                 "RA#1",
@@ -52148,9 +52148,6 @@
                 "lt04": [
                     "LT-4"
                 ],
-                "act42d0": [
-                    "T-1"
-                ],
                 "CC#06": [
                     "Howling Desert (Main)"
                 ],
@@ -52165,6 +52162,9 @@
                 ],
                 "PinchOut": [
                     "Beach Repair"
+                ],
+                "act42d0": [
+                    "T-1"
                 ],
                 "CCBP#01": [
                     "Beach Repair"
@@ -52890,6 +52890,76 @@
                 ]
             }
         },
+        "enemy_4003_pbank": {
+            "Filtered": [
+                "act17d1"
+            ],
+            "Appearance": {
+                "act17d1": [
+                    "act17d1_01_a",
+                    "act17d1_01_b",
+                    "act17d1_01_c",
+                    "act17d1_02_a",
+                    "act17d1_02_b",
+                    "act17d1_02_c",
+                    "act17d1_03_a",
+                    "act17d1_03_b",
+                    "act17d1_03_c"
+                ]
+            }
+        },
+        "enemy_4002_syokai": {
+            "Filtered": [
+                "act17d1"
+            ],
+            "Appearance": {
+                "act17d1": [
+                    "act17d1_02_a",
+                    "act17d1_02_b"
+                ]
+            }
+        },
+        "enemy_4002_syokai_2": {
+            "Filtered": [
+                "act17d1"
+            ],
+            "Appearance": {
+                "act17d1": [
+                    "act17d1_02_c"
+                ]
+            }
+        },
+        "enemy_4001_toxcar": {
+            "Filtered": [
+                "act17d1"
+            ],
+            "Appearance": {
+                "act17d1": [
+                    "act17d1_03_a",
+                    "act17d1_03_b"
+                ]
+            }
+        },
+        "enemy_4001_toxcar_2": {
+            "Filtered": [
+                "act17d1"
+            ],
+            "Appearance": {
+                "act17d1": [
+                    "act17d1_03_c"
+                ]
+            }
+        },
+        "enemy_1539_reid": {
+            "Filtered": [
+                "CC#12"
+            ],
+            "Appearance": {
+                "CC#12": [
+                    "Nameless Sanctuary (Main)"
+                ]
+            }
+        },
         "enemy_8002_flmchn": {
             "Filtered": [
                 "act42d0"
@@ -53004,76 +53074,6 @@
                     "S-1",
                     "S-2",
                     "S-3"
-                ]
-            }
-        },
-        "enemy_4003_pbank": {
-            "Filtered": [
-                "act17d1"
-            ],
-            "Appearance": {
-                "act17d1": [
-                    "act17d1_01_a",
-                    "act17d1_01_b",
-                    "act17d1_01_c",
-                    "act17d1_02_a",
-                    "act17d1_02_b",
-                    "act17d1_02_c",
-                    "act17d1_03_a",
-                    "act17d1_03_b",
-                    "act17d1_03_c"
-                ]
-            }
-        },
-        "enemy_4002_syokai": {
-            "Filtered": [
-                "act17d1"
-            ],
-            "Appearance": {
-                "act17d1": [
-                    "act17d1_02_a",
-                    "act17d1_02_b"
-                ]
-            }
-        },
-        "enemy_4002_syokai_2": {
-            "Filtered": [
-                "act17d1"
-            ],
-            "Appearance": {
-                "act17d1": [
-                    "act17d1_02_c"
-                ]
-            }
-        },
-        "enemy_4001_toxcar": {
-            "Filtered": [
-                "act17d1"
-            ],
-            "Appearance": {
-                "act17d1": [
-                    "act17d1_03_a",
-                    "act17d1_03_b"
-                ]
-            }
-        },
-        "enemy_4001_toxcar_2": {
-            "Filtered": [
-                "act17d1"
-            ],
-            "Appearance": {
-                "act17d1": [
-                    "act17d1_03_c"
-                ]
-            }
-        },
-        "enemy_1539_reid": {
-            "Filtered": [
-                "CC#12"
-            ],
-            "Appearance": {
-                "CC#12": [
-                    "Nameless Sanctuary (Main)"
                 ]
             }
         },
