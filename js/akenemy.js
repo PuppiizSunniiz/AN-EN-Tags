@@ -5,7 +5,7 @@
     var db = {}
     var tlracedict={};
     var enemyforfilter=[]
-    const allimmunity=["stunImmune","silenceImmune","sleepImmune","frozenImmune","levitateImmune","disarmedCombatImmune"] // Add Fear fearImmune ???
+    const allimmunity=["stunImmune","silenceImmune","sleepImmune","frozenImmune","levitateImmune","disarmedCombatImmune","fearedImmune"]
 
     var d0 = $.getJSON("json/gamedata/zh_CN/gamedata/excel/gamedata_const.json",function(data){
         db["dataconst"] = data;
@@ -552,7 +552,7 @@
         var firstattr = firstEnemyData.attributes
 
         var EnemyImmune=[]
-        $(["stun","silence","sleep","frozen","levitate","disarmedCombat"].forEach(immune =>{    // fear
+        $(["stun","silence","sleep","frozen","levitate","disarmedCombat","feared"].forEach(immune =>{
             if (currattr[immune+"Immune"].m_value!=0?currattr[immune+"Immune"].m_value:firstattr[immune+"Immune"].m_value)
                 EnemyImmune.push(`<td><span style="color:crimson;font-weight: bold;">Immune</span></td>`)
             else
@@ -612,6 +612,7 @@
                         <th scope="col" class="hovertooltip" data-tooltip="Unable to move, attack, or use skills, RES -15.">Freeze</th>
                         <th scope="col" class="hovertooltip" data-tooltip="Target becomes aerial and cannot move, attack, or use skills. Duration halved if Weight is greater than 3.">Levitate</th>
                         <th scope="col" class="hovertooltip" data-tooltip="Cannot perform normal attacks when blocked.">Frighten</th>
+                        <th scope="col" class="hovertooltip" data-tooltip="Cannot be blocked, run away in panic.">Fear</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -621,7 +622,7 @@
                 </tbody>
             </table>
         
-            `) // <th scope="col" class="hovertooltip" data-tooltip="Cannot be blocked, run away in panic.">Fear</th>
+            `) // 
         currHtml.push(`</div>`)
         if(firstEnemyData.talentBlackboard){
             enemytalentBlackboard = currEnemyData.talentBlackboard?currEnemyData.talentBlackboard:firstEnemyData.talentBlackboard
