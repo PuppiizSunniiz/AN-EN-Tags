@@ -531,47 +531,47 @@
             "startCN": 1714536000
         },
         "weekly_9": {
-            "nameCN": "货物运送 (CE)",
+            "nameCN": "货物运送 (wk_melee)",
             "nameEN": "CE : Cargo Escort (LMD)",
             "startCN": -1
         },
         "weekly_8": {
-            "nameCN": "资源保障 (SK)",
+            "nameCN": "资源保障 (wk_armor)",
             "nameEN": "SK : Resource Search (Building materials)",
             "startCN": -1
         },
         "weekly_7": {
-            "nameCN": "战术演习 (LS)",
+            "nameCN": "战术演习 (wk_kc)",
             "nameEN": "LS : Tactical Drill (Battle Record)",
             "startCN": -1
         },
         "weekly_5": {
-            "nameCN": "粉碎防御 (AP)",
+            "nameCN": "粉碎防御 (wk_toxic)",
             "nameEN": "AP : Tough Siege (Purchase Certificate)",
             "startCN": -1
         },
         "weekly_6": {
-            "nameCN": "空中威胁 (CA)",
+            "nameCN": "空中威胁 (wk_fly)",
             "nameEN": "CA : Aerial Threat (Skill Summary)",
             "startCN": -1
         },
         "weekly_1": {
-            "nameCN": "固若金汤 (PR-A)",
+            "nameCN": "固若金汤 (pro_a)",
             "nameEN": "PR-A : Solid Defense (Defenders & Medics)",
             "startCN": -1
         },
         "weekly_2": {
-            "nameCN": "摧枯拉朽 (PR-B)",
+            "nameCN": "摧枯拉朽 (pro_b)",
             "nameEN": "PR-B : Fierce Attack (Snipers & Casters)",
             "startCN": -1
         },
         "weekly_3": {
-            "nameCN": "势不可挡 (PR-C)",
+            "nameCN": "势不可挡 (pro_c)",
             "nameEN": "PR-C : Unstoppable Charge (Vanguards & Supporters)",
             "startCN": -1
         },
         "weekly_4": {
-            "nameCN": "身先士卒 (PR-D)",
+            "nameCN": "身先士卒 (pro_d)",
             "nameEN": "PR-D : Fearless Protection (Guards & Specialists)",
             "startCN": -1
         },
@@ -705,79 +705,89 @@
             "nameEN": "燃烧街区",
             "startCN": 1720382400
         },
-        "lttr": {
-            "nameCN": "训练场",
-            "nameEN": "Training Ground",
+        "tower_tr_01": {
+            "nameCN": "7号训练场",
+            "nameEN": "Training Ground #7",
             "startCN": -1
         },
-        "lt05": {
+        "tower_tr_02": {
+            "nameCN": "9号训练场",
+            "nameEN": "Training Ground #9",
+            "startCN": -1
+        },
+        "tower_tr_03": {
+            "nameCN": "10号训练场",
+            "nameEN": "Training Ground #10",
+            "startCN": -1
+        },
+        "tower_n_05": {
             "nameCN": "多索雷斯在建地块",
             "nameEN": "Under-Construction Dossoles Plate",
             "startCN": -1
         },
-        "lt06": {
+        "tower_n_06": {
             "nameCN": "阿卡胡拉丛林",
             "nameEN": "Acahuallan Jungle",
             "startCN": -1
         },
-        "lt07": {
+        "tower_n_07": {
             "nameCN": "约翰老妈新建地块",
             "nameEN": "Mama John's New Plate",
             "startCN": -1
         },
-        "lt08": {
+        "tower_n_08": {
             "nameCN": "雷神工业测试平台 ",
             "nameEN": "Raythean Industries Test Platform",
             "startCN": -1
         },
-        "lt09": {
+        "tower_n_09": {
             "nameCN": "阿尔斯特甜品制作平台",
             "nameEN": "Alsterii Bellariorum Manufacture Platform",
             "startCN": -1
         },
-        "lt10": {
+        "tower_n_10": {
             "nameCN": "荒废灯塔",
             "nameEN": "The Abandoned Lighthouse",
             "startCN": -1
         },
-        "lt11": {
+        "tower_n_11": {
             "nameCN": "塔山农业实验平台",
             "nameEN": "Tower Mountains Agricultural Experimental Platform",
             "startCN": -1
         },
-        "lt12": {
+        "tower_n_12": {
             "nameCN": "自走机械搏斗场",
             "nameEN": "Automaton Arena",
             "startCN": -1
         },
-        "lt13": {
+        "tower_n_13": {
             "nameCN": "边地移动城镇",
             "nameEN": "边地移动城镇",
             "startCN": -1
         },
-        "lt14": {
+        "tower_n_14": {
             "nameCN": "多索雷斯商业地块",
             "nameEN": "多索雷斯商业地块",
             "startCN": -1
         },
-        "lt01": {
-            "nameCN": "钢铁萝卜矿场",
-            "nameEN": "Iron Carrot Mine",
+        "tower_n_01": {
+            "nameCN": null,
+            "nameEN": null,
             "startCN": -1
         },
-        "lt02": {
-            "nameCN": "多伦矿场",
-            "nameEN": "Toron Mine",
+        "tower_n_02": {
+            "nameCN": null,
+            "nameEN": null,
             "startCN": -1
         },
-        "lt03": {
-            "nameCN": "格里布采矿平台",
-            "nameEN": "Glebe Mining Platform",
+        "tower_n_03": {
+            "nameCN": null,
+            "nameEN": null,
             "startCN": -1
         },
-        "lt04": {
-            "nameCN": "斯沃玛加工平台",
-            "nameEN": "Słoma Processing Platform",
+        "tower_n_04": {
+            "nameCN": null,
+            "nameEN": null,
             "startCN": -1
         },
         "CC#Beta": {
@@ -885,6 +895,11 @@
             "nameEN": "IS#4 : Expeditioner's Jǫklumarkar",
             "startCN": 1689235200
         },
+        "IS#5": {
+            "nameCN": "萨卡兹的无终奇语",
+            "nameEN": "IS#5 : Sarkaz's Furnaceside Fables",
+            "startCN": 1721116800
+        },
         "RA#1": {
             "nameCN": "生息演算：沙中之火",
             "nameEN": "RA#1 : Reclamation Algorithm - Fire Within the Sand",
@@ -923,6 +938,11 @@
             1574150400
         ],
         [
+            "CC#Beta",
+            "CC#Beta : Contingency Contract",
+            1574150400
+        ],
+        [
             "act6d5",
             "Ancient Forge",
             1578513600
@@ -933,9 +953,19 @@
             1582617600
         ],
         [
+            "CC#00",
+            "CC#00 : Operation Barrenland",
+            1584417600
+        ],
+        [
             "act9d0",
             "Darknights Memoir",
             1587441600
+        ],
+        [
+            "CC#01",
+            "CC#01 : Operation Pyrite",
+            1591070400
         ],
         [
             "act10d5",
@@ -946,6 +976,11 @@
             "act11d0",
             "Twilight of Wolumonde",
             1594267200
+        ],
+        [
+            "CC#02",
+            "CC#02 : Operation Blade",
+            1595923200
         ],
         [
             "act11d7",
@@ -960,6 +995,11 @@
         [
             "act12d0",
             "The Great Chief Returns",
+            1598328000
+        ],
+        [
+            "IS#1",
+            "IS#1 : Ceobe's Fungimist",
             1598328000
         ],
         [
@@ -978,6 +1018,16 @@
             1602748800
         ],
         [
+            "camp_r_01",
+            "The Grand Knight Territory Outskirts",
+            1604260800
+        ],
+        [
+            "CC#03",
+            "CC#03 : Operation Cinder",
+            1605427200
+        ],
+        [
             "act14d7",
             "Code of Brawl - Rerun",
             1606809600
@@ -988,9 +1038,19 @@
             1608177600
         ],
         [
+            "camp_r_02",
+            "Frozen Abandoned City",
+            1609704000
+        ],
+        [
             "act15d5",
             "Beyond Here",
             1609833600
+        ],
+        [
+            "CC#04",
+            "CC#04 : Operation Lead Seal",
+            1611028800
         ],
         [
             "act17d1",
@@ -1008,6 +1068,11 @@
             1612512000
         ],
         [
+            "camp_r_03",
+            "Abandoned Mine",
+            1615147200
+        ],
+        [
             "act17d5",
             "Darknights Memoir - Rerun",
             1617091200
@@ -1021,6 +1086,16 @@
             "act18d3",
             "Under Tides",
             1619852400
+        ],
+        [
+            "camp_r_04",
+            "Flooded Seashore",
+            1619985600
+        ],
+        [
+            "CC#05",
+            "CC#05 : Operation Spectrum",
+            1621065600
         ],
         [
             "act7mini",
@@ -1038,6 +1113,11 @@
             1625198400
         ],
         [
+            "camp_r_05",
+            "Watery Tidehollow",
+            1626033600
+        ],
+        [
             "act8mini",
             "Vigilo",
             1626163200
@@ -1053,6 +1133,16 @@
             1627963200
         ],
         [
+            "CC#06",
+            "CC#06 : Operation Wild Scales",
+            1629964800
+        ],
+        [
+            "camp_r_06",
+            "Long Spring Wastes",
+            1630872000
+        ],
+        [
             "act7sre",
             "Maria Nearl - Rerun",
             1633075200
@@ -1063,9 +1153,19 @@
             1634284800
         ],
         [
+            "camp_r_07",
+            "Dossoles Water Gate",
+            1635710400
+        ],
+        [
             "act13side",
             "Near Light",
             1635739200
+        ],
+        [
+            "CC#07",
+            "CC#07 : Operation Pine Soot",
+            1637568000
         ],
         [
             "act8sre",
@@ -1076,6 +1176,16 @@
             "act14side",
             "Break the Ice",
             1640059200
+        ],
+        [
+            "IS#2",
+            "IS#2 : Phantom & Crimson Solitaire",
+            1641369600
+        ],
+        [
+            "camp_r_08",
+            "South Prison",
+            1641758400
         ],
         [
             "act9sre",
@@ -1093,6 +1203,16 @@
             1644912000
         ],
         [
+            "CC#08",
+            "CC#08 : Operation Dawnseeker",
+            1645689600
+        ],
+        [
+            "camp_r_09",
+            "County Hillock Countryside",
+            1646596800
+        ],
+        [
             "act16side",
             "Guide Ahead",
             1647316800
@@ -1103,9 +1223,24 @@
             1648540800
         ],
         [
+            "main_10",
+            "Episode 10 : Shatterpoint",
+            1649908800
+        ],
+        [
             "act17side",
             "Stultifera Navis",
             1651388400
+        ],
+        [
+            "camp_r_10",
+            "Night Champion Show",
+            1651435200
+        ],
+        [
+            "CC#09",
+            "CC#09 : Operation Deepness",
+            1652947200
         ],
         [
             "act11sre",
@@ -1121,6 +1256,11 @@
             "act19side",
             "Dorothy's Vision",
             1656993600
+        ],
+        [
+            "camp_r_11",
+            "Lingering Shangshu Trails",
+            1657483200
         ],
         [
             "act11mini",
@@ -1143,6 +1283,16 @@
             1660809600
         ],
         [
+            "CC#10",
+            "CC#10 : Operation Ashring",
+            1661414400
+        ],
+        [
+            "camp_r_12",
+            "Chocolate Street",
+            1662321600
+        ],
+        [
             "act12mini",
             "An Obscure Wanderer",
             1662609600
@@ -1158,9 +1308,29 @@
             1663833600
         ],
         [
+            "IS#3",
+            "IS#3 : Mizuki & Caerula Arbor",
+            1664251200
+        ],
+        [
+            "main_11",
+            "Episode 11 : Return To Mist",
+            1665475200
+        ],
+        [
+            "camp_r_13",
+            "Penumbra Shipyards",
+            1667160000
+        ],
+        [
             "act21side",
             "IL Siracusano",
             1667275200
+        ],
+        [
+            "CC#11",
+            "CC#11 : Operation Fake Waves",
+            1668499200
         ],
         [
             "act14sre",
@@ -1178,6 +1348,11 @@
             1672560000
         ],
         [
+            "camp_r_14",
+            "Research Base Hanger",
+            1673208000
+        ],
+        [
             "act2bossrush",
             "Trials for Navigator #2",
             1673337600
@@ -1193,6 +1368,11 @@
             1674979200
         ],
         [
+            "RA#1",
+            "RA#1 : Reclamation Algorithm - Fire Within the Sand",
+            1674979200
+        ],
+        [
             "act14mini",
             "A Death in Chunfen",
             1676361600
@@ -1203,14 +1383,34 @@
             1676966400
         ],
         [
+            "camp_r_15",
+            "Lungmen Commercial District",
+            1678046400
+        ],
+        [
             "act24side",
             "A Flurry to the Flame",
             1678161600
         ],
         [
+            "CC#12",
+            "CC#12 : Operation Basepoint",
+            1679385600
+        ],
+        [
+            "main_12",
+            "Episode 12 : All Quiet Under the Thunder",
+            1680753600
+        ],
+        [
             "act17sre",
             "Stultifera Navis - Rerun",
             1681977600
+        ],
+        [
+            "camp_r_16",
+            "Rest Avenue",
+            1682884800
         ],
         [
             "act25side",
@@ -1219,6 +1419,11 @@
         ],
         [
             "act38d1",
+            "Pinch-Out Experimental Operation",
+            1684742400
+        ],
+        [
+            "PinchOut",
             "Pinch-Out Experimental Operation",
             1684742400
         ],
@@ -1236,6 +1441,16 @@
             "act15mini",
             "The Black Forest Wills A Dream",
             1688616000
+        ],
+        [
+            "camp_r_17",
+            "Ashy Marsh",
+            1688932800
+        ],
+        [
+            "IS#4",
+            "IS#4 : Expeditioner's Jǫklumarkar",
+            1689235200
         ],
         [
             "act19sre",
@@ -1258,6 +1473,11 @@
             1693468800
         ],
         [
+            "camp_r_18",
+            "The Special Little Aquapit'",
+            1693771200
+        ],
+        [
             "act28side",
             "Come Catastrophes or Wakes of Vultures",
             1693886400
@@ -1268,14 +1488,29 @@
             1695801600
         ],
         [
+            "main_13",
+            "Episode 13 : The Whirlpool that is Passion",
+            1696737600
+        ],
+        [
             "act21sre",
             "Il Siracusano - Retrospection",
             1697961600
         ],
         [
+            "camp_r_19",
+            "Decaying Wastes",
+            1698609600
+        ],
+        [
             "act29side",
             "Zwillingstürme im Herbst",
             1698811200
+        ],
+        [
+            "CCBP#01",
+            "CCBP#01 : Battleplan Pyrolysis",
+            1700553600
         ],
         [
             "act30side",
@@ -1286,6 +1521,11 @@
             "act22sre",
             "Where Vernal Winds Will Never Blow - Rerun",
             1703232000
+        ],
+        [
+            "camp_r_20",
+            "Mountain-Ringed Border Town",
+            1704657600
         ],
         [
             "act16mini",
@@ -1303,9 +1543,19 @@
             1706760000
         ],
         [
+            "RA#2",
+            "RA#2 : Reclamation Algorithm - Tales Within the Sand",
+            1706929200
+        ],
+        [
             "act4bossrush",
             "Trials For Navigator #4",
             1708588800
+        ],
+        [
+            "camp_r_21",
+            "新旅店大道",
+            1709496000
         ],
         [
             "act32side",
@@ -1318,12 +1568,27 @@
             1711008000
         ],
         [
+            "CCBP#02",
+            "CCBP#02 : Battleplan Underdawn",
+            1711612800
+        ],
+        [
             "act33side",
             "Babel",
             1712808000
         ],
         [
+            "camp_r_22",
+            "“离心率”实验室",
+            1714334400
+        ],
+        [
             "act1mainss",
+            "Episode 14 : Absolved Will Be the Seekers",
+            1714536000
+        ],
+        [
+            "main_14",
             "Episode 14 : Absolved Will Be the Seekers",
             1714536000
         ],
@@ -1348,9 +1613,19 @@
             1719302400
         ],
         [
+            "camp_r_23",
+            "燃烧街区",
+            1720382400
+        ],
+        [
             "act17mini",
             "A Kazdelian Rescue",
             1720497600
+        ],
+        [
+            "IS#5",
+            "IS#5 : Sarkaz's Furnaceside Fables",
+            1721116800
         ]
     ]
 }

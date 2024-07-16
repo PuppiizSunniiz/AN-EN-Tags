@@ -66,14 +66,43 @@
     color: red;
 }
 
-.dropdown-item:hover{
-    background-color: #0098DC !important;
-    border-color: #0098DC !important;
+.act_list:hover > a, .zone_list:hover > a, #GamemodeList .dropdown-item:hover, .act_list .dropdown-item:hover, .zone_list .dropdown-item:hover, .stage_list .dropdown-item:hover{
+    background-color: #3a2 !important;
+    border-color: #3a2 !important;
 }
-.selected{
-    background-color: #004286 !important;
-    border-color: #004286 !important;
+
+.act_list:has(.dropdown-item.selected), .zone_list:has(.dropdown-item.selected), .dropdown-item.selected{
+    background-color: #004286;
+    border-color: #004286;
 }
+
+.dropdown-menu li {
+    position: relative;
+}
+.dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+.dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+}
+.dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+}
+a.dropdown-item{
+    background: #00000055;
+    border-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-bottom: 2px;
+    /*text-align: center;*/
+    color: #DDD !important;
+}
+
+
 
 #spine-toolbar{
     left: initial !important;

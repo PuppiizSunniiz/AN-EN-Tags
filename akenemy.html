@@ -17,8 +17,8 @@
     <script src='https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js'></script>
-    <script src="js/spine-widget.js"></script>
-    <script src="js/spine-skeleton-binary.js"></script>
+    <!--<script src="js/spine-widget.js"></script>
+    <script src="js/spine-skeleton-binary.js"></script>-->
     <!-- site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159317757-1"></script>
     <script>
@@ -187,9 +187,9 @@
 
             <div class="row">
                 <div style="display: flex;">
-                    <div id="GamemodeDiv">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="GamemodeDropdown" data-toggle="dropdown" data-id="" style="margin-left: 5px;margin-right: 5px;margin-top:5px;margin-bottom:5px;width: 280px;">Select Gamemode</button>
-                        <ul class="dropdown-menu" id="GamemodeList" aria-labelledby="dropdownMenuButton" style="width: 280px;">
+                    <div id="GamemodeDiv" class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="GamemodeDropdown" data-toggle="dropdown" data-id="" data-display="static" style="margin-left: 5px;margin-right: 5px;margin-top:5px;margin-bottom:5px;width: 280px;">Select Gamemode</button>
+                        <ul class="dropdown-menu" id="GamemodeList" aria-labelledby="GamemodeDropdown" style="width: 100%;margin-top:0px;border:0">
                             <a class="dropdown-item unselectable" onclick="selectGamemode($(this))" data-id="main">Main Theme</a>
                             <a class="dropdown-item unselectable" onclick="selectGamemode($(this))" data-id="sidestory">Side Story</a>
                             <a class="dropdown-item unselectable" onclick="selectGamemode($(this))" data-id="supply">Supply Operations</a>
@@ -202,15 +202,15 @@
                             <a class="dropdown-item unselectable" onclick="selectGamemode($(this))" data-id="ra">RA : Reclamation Algorithm</a>
                         </ul>
                     </div>
-                    <div id="GameeventDiv">
-                        <button class="btn btn-secondary dropdown-toggle ak-disable" type="button" id="GameeventDropdown" data-toggle="dropdown" style="margin-top:5px;margin-bottom:5px;min-width: 440px;">&lt;&lt;&lt; Select Gamemode first</button>    
-                        <ul class="dropdown-menu" id="GameeventList" aria-labelledby="dropdownMenuButton" style="min-width: 440px;overflow-y: auto;scrollbar-width: thin;max-height: 460px;" >
+                    <div id="GameeventDiv" class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle ak-disable" type="button" id="GameeventDropdown" data-toggle="dropdown" style="margin-top:5px;margin-bottom:5px;min-width: 440px;" data-display="static">&lt;&lt;&lt; Select Gamemode first</button>    
+                        <ul class="dropdown-menu" id="GameeventList" aria-labelledby="GameeventDropdown" style="margin-top:0px;border:0">
                             <!---->
                         </ul>
                     </div>
                     <div id="namesearch">
                         <input style="margin-left: 5px;margin-right: 5px;margin-top:5px;margin-bottom:5px;width: 280px;height: auto;" type="text" autocomplete="off" class="form-control" id="opname" onkeyup="populateEnemy()" placeholder="Type in enemy Name, ID or Index" value="">
-                    </div>                  
+                    </div>
                 </div>
             </div>
             <div id="Clearbtn" class="row">

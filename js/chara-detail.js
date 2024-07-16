@@ -2121,44 +2121,11 @@
 
                     if(currebattequip){
                         var curreqphase = 0
+                        var trait_range_id
                         currebattequip.phases.forEach(phase => {
                             equiphtml[curreqphase] = ""
                             phase.parts.forEach(part => {
-                                if(part.target == "TRAIT"&&part.isToken == false){
-                                    if(part.overrideTraitDataBundle.candidates[0].additionalDescription == null){
-                                        equiphtml[curreqphase] +=
-                                        `
-                                            <div>
-                                            ${GetTrait(part.overrideTraitDataBundle.candidates[0].overrideDescripton,part.overrideTraitDataBundle)}
-                                            </div>
-                                        `
-                                    } else {
-                                        equiphtml[curreqphase] +=
-                                        `
-                                            <div>
-                                            ${GetTrait(part.overrideTraitDataBundle.candidates[0].additionalDescription,part.overrideTraitDataBundle,"Additional Traits")}
-                                            </div>
-                                        `
-                                        }
-                                    }
-                                if(part.target == "TRAIT_DATA_ONLY"){
-                                    if(part.overrideTraitDataBundle.candidates[0].additionalDescription == null){
-                                        equiphtml[curreqphase] +=
-                                        `
-                                            <div>
-                                            ${GetTrait(part.overrideTraitDataBundle.candidates[0].overrideDescripton,part.overrideTraitDataBundle)}
-                                            </div>
-                                        `
-                                    } else {
-                                        equiphtml[curreqphase] +=
-                                        `
-                                            <div>
-                                            ${GetTrait(part.overrideTraitDataBundle.candidates[0].additionalDescription,part.overrideTraitDataBundle,"Additional Traits")}
-                                            </div>
-                                        `
-                                        }
-                                    }
-                                if(part.target == "DISPLAY"){
+                                if((part.target == "TRAIT" && part.isToken == false)||(part.target == "TRAIT_DATA_ONLY")||(part.target == "DISPLAY")){
                                     if(part.overrideTraitDataBundle.candidates[0].additionalDescription == null){
                                         equiphtml[curreqphase] +=
                                         `
@@ -2176,15 +2143,15 @@
                                         }
                                     }
                                 if(part.target == "TALENT"){
-                                    //??
                                     console.log(part.rangeId)
                                     if(part.addOrOverrideTalentDataBundle.candidates[0].rangeId && part.addOrOverrideTalentDataBundle.candidates[0].displayRangeId){
                                         equiphtml[curreqphase]+=`${titledMaker2(rangeMaker(part.addOrOverrideTalentDataBundle.candidates[0].rangeId,false),"")}`
+                                        trait_range_id = part.addOrOverrideTalentDataBundle.candidates[0].rangeId
                                     }
                                 }
                             });
                             //insert Module Talent with potentials
-                            if(curreqphase>0) equiphtml[curreqphase]+=`${GetModuleTalent(phase.parts,element,num,curreqphase,opKey)}`
+                            if(curreqphase>0) equiphtml[curreqphase]+=`${GetModuleTalent(phase.parts,element,num,curreqphase,trait_range_id)}`
 
                             if(phase.attributeBlackboard.length>0){
                                 var statcontent = ''
@@ -2344,7 +2311,8 @@
                                 <div class='equipimage'>
                                     <button type="button" class="btn ak-button" style="width:90px;height:90px" data-toggle="modal" data-target="#opmodulestory" onclick="GetModuleStory('${element}')">
                                         <span style="position:absolute;font-size: 14px;bottom:4px;left:4px;color:#fff;background:#222222dd;padding:4px;border-radius:2px" class="fa fa-search-plus"> Info</span>
-                                        <img class='equip-image' id='equip${num}image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/icon/${currequip.uniEquipIcon}.png' style='width: 90px;height:90px;object-fit:contain'>
+                                        ${currequip.uniEquipId.search("001")!=-1?`<img class='equip-image' id='equip${i}image_add' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/subclass/sub_${opdataFull.subProfessionId}_icon.png'style='z-index: 1;  height: 21%;  top: 28.3%;  position: absolute;  left: 37.4%;  filter: invert(5%) sepia(6%) saturate(913%) hue-rotate(12deg) brightness(83%) contrast(86%);'>`:""}
+                                        <img class='equip-image' id='equip${num}image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/icon/${currequip.uniEquipIcon.search("001")==-1?currequip.uniEquipIcon:"original"}.png' style='width: 90px;height:90px;object-fit:contain'>
                                     </button>
                                 </div>
                         </div>
@@ -3175,8 +3143,9 @@
         var currequipEN = db.uniequipEN.equipDict[module]
         $("#opmodulestorycontent").html(`
             <div style="background:#222;padding:6px 5px 6px 5px;font-size:20px;text-align:center">${currequipEN?currequipEN.uniEquipName:currequip.uniEquipName}</div>
-            <div style="background:#333;padding:6px 5px 6px 5px;text-align:center">
-            <img class='equip-image' id='equip${i}image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/icon/${currequip.uniEquipIcon}.png' style='width:100%;max-width:500px;object-fit:contain'>
+            <div class="equip-image-container">
+                ${currequip.uniEquipId.search("001")!=-1?`<img class='equip-image' id='equip${i}image_add' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/subclass/sub_${opdataFull.subProfessionId}_icon.png'style='z-index: 1;  height: 21%;  top: 28.3%;  position: absolute;  left: 42%;  filter: invert(5%) sepia(6%) saturate(913%) hue-rotate(12deg) brightness(83%) contrast(86%);'>`:""}
+                <img class='equip-image' id='equip${i}image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/icon/${currequip.uniEquipIcon.search("001")==-1?currequip.uniEquipIcon:"original"}.png' style='width:100%;max-width:500px;object-fit:contain;position:absolute'>
             </div>
 
             <div style="background:#222;padding:6px 5px 6px 5px;font-size:20px;text-align:center">Basic Information</div>
@@ -3192,7 +3161,7 @@
                         +   "<span class='custom-span'>Stats</span>"
                         +   "<div class='topright maxlevel'>"
                         +       "<span class='custom-span maxleveltext'>Max Level</span>"
-                        +       "<span class='custom-span leveltext'>"+opdataFull.phases[i].maxLevel+"</span>"
+                        +       "<span class='custom-span leveltext' id='elite_"+i+"_maxLv'>"+opdataFull.phases[i].maxLevel+"</span>"
                         +       "<div class='ring'>"
                         +           "<div class='back ak-shadow'></div>"
                         +           "<div class='back-centre'></div>"
@@ -3868,6 +3837,7 @@
             // console.log(elite)
         globalelite = elite
         UpdateTokenContent(false)
+        changeEliteLevel($("#elite"+elite+"LevelSlider"),elite,$("#elite_"+elite+"_maxLv").html())
         $.each(opdataFull.skills,function(i,v){
             // console.log(i)
             var skillId = opdataFull.skills[i].skillId;
@@ -4507,7 +4477,7 @@
         talentValue = [elite,level,potential]
     }
 
-    function GetModuleTalent(DataBundle,moduleKey,modulenum,phase,id){
+    function GetModuleTalent(DataBundle,moduleKey,modulenum,phase,range_id=""){
         var potentialTab = []
         var activePotential = 0
         var ModuleTalenthtml = ''
@@ -4571,7 +4541,7 @@
 
             ModuleTalenthtml += `
                 <div class='tab-pane container ModuleTalentinfo ${(currpotent==0?'active':'')}' id='ModuleTalent-${modulenum}-${phase}-${currpotent}'>
-                    ${ModuleTalentParse(currTalent,currTalentTL,currTalentEN,modulenum,phase,currpotent)}
+                    ${ModuleTalentParse(currTalent,currTalentTL,currTalentEN,modulenum,phase,currpotent,range_id)}
                 </div>
             `
         }
@@ -4595,16 +4565,16 @@
             `
     }
 
-    function ModuleTalentParse(CN,TL,EN,modulenum,phase,currpotent){
+    function ModuleTalentParse(CN,TL,EN,modulenum,phase,currpotent,range_id=""){
         var imagereq = []
         if(CN.requiredPotentialRank+1>0)
             imagereq.push(`<img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/potential/${CN.requiredPotentialRank+1}.png" style="width:20px" title="Potential ${CN.requiredPotentialRank+1}">`)
         var currModuleTalentName = EN?EN.name:TL?TL.name:CN.name
         var currModuleTalentDesc = EN?EN.upgradeDescription:TL?TL.upgradeDescription:CN.upgradeDescription
 
-        currModuleTalentDesc=ChangeDescriptionColor2(currModuleTalentDesc.replace(/\<([A-z]+)\>/g,"&lt;"+"$1"+'&gt;').replace("\n","<br>"))
+        currModuleTalentDesc=ChangeDescriptionColor2(currModuleTalentDesc.replace(/\<([A-z]+)\>/g,"&lt;"+"$1"+'&gt;').replace("\n","<\br>"))
 
-        var isModuleTalentRange = CN.rangeId
+        var isModuleTalentRange = (CN.rangeId == range_id)?false:CN.rangeId
         var Moduletalentdetails = []
         CN.blackboard.forEach(Stat=>{
             var Moduletalentjson={}

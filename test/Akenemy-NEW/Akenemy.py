@@ -38,7 +38,9 @@ akenemy = {
 ################################################################################################################################################################################################################################################
 # JSON
 ################################################################################################################################################################################################################################################
-def json_load(filepath) -> dict:
+def json_load(filepath:str) -> dict:
+    if filepath.find("_easy_sub_")!=-1 : filepath=filepath.replace("_easy_sub_","_sub_")
+    elif filepath.find("_easy_")!=-1 : filepath=filepath.replace("_easy_","_main_")
     with open(filepath, 'r', encoding='utf-8') as file:
         return json.load(file)
 
@@ -292,6 +294,7 @@ def Stage_Lister(stage_event : str, stage_code : str, stage_name : str, stage_id
     level_id        = level_id.split("gamedata/levels/")[-1]
     stage_name      = f'{stage_name} (Boss)' if re.search(r"rogue[0-9]{0,2}_[b]-", stage_id) else stage_name
     stage_event     = "1stact" if stage_event == "a001" else stage_event
+    stage_zone      = main_zone(stage_id,stage_zone) if stage_event.find("main")!=-1 else (stage_event if stage_zone == "act2vmulti_zone1" else stage_zone)
     
     def Stage_Lister_stage() :
     ### Stage Collect
@@ -311,7 +314,7 @@ def Stage_Lister(stage_event : str, stage_code : str, stage_name : str, stage_id
                                                     "name"      :   stage_name,
                                                     "Event"     :   stage_event
                                                 }
-        else : print("DUPE stage ID : ",stage_event,stage_id,stage_name)
+        #else : print("DUPE stage ID : ",stage_event,stage_id,stage_name)
 
     def Stage_Lister_enemy() :
         ### Enemy Collect
@@ -319,21 +322,9 @@ def Stage_Lister(stage_event : str, stage_code : str, stage_name : str, stage_id
         for enemy in stageforenemylist["enemyDbRefs"]:
             enemy_id = enemy["id"]
             if enemy["overwrittenData"]: enemy_id = enemy["overwrittenData"]["prefabKey"]["m_value"] if enemy["overwrittenData"]["prefabKey"]["m_defined"] else enemy["id"]
-            if enemy_id not in stage_collection["enemy"].keys() : stage_collection["enemy"][enemy_id] = {"Filtered":[],"Appearance":{}}
-            if extra:
-                if stage_event not in stage_collection["enemy"][enemy_id]["Filtered"]:
-                    stage_collection["enemy"][enemy_id]["Filtered"].append(stage_event)
-                    stage_collection["enemy"][enemy_id]["Appearance"][stage_event] = {}
-                if stage_zone not in stage_collection["enemy"][enemy_id]["Appearance"][stage_event] : 
-                    stage_collection["enemy"][enemy_id]["Appearance"][stage_event][stage_zone] = []
-                if stage_code not in stage_collection["enemy"][enemy_id]["Appearance"][stage_event][stage_zone] : 
-                    stage_collection["enemy"][enemy_id]["Appearance"][stage_event][stage_zone].append(stage_code)
-            else:
-                if stage_event not in stage_collection["enemy"][enemy_id]["Filtered"] : 
-                    stage_collection["enemy"][enemy_id]["Filtered"].append(stage_event)
-                    stage_collection["enemy"][enemy_id]["Appearance"][stage_event] = []
-                if stage_code not in stage_collection["enemy"][enemy_id]["Appearance"][stage_event] : 
-                    stage_collection["enemy"][enemy_id]["Appearance"][stage_event].append(stage_code)
+            
+            stage_collection["enemy"].setdefault(enemy_id,{}).setdefault(get_stage_gamemode(stage_event),{}).setdefault(stage_event,{}).setdefault(stage_zone,[]).append(stage_id)
+
     
     def Stage_Lister_Akenemy():
     ### Akenemy collect
@@ -344,10 +335,13 @@ def Stage_Lister(stage_event : str, stage_code : str, stage_name : str, stage_id
         akenemy_activity[stage_event]["zone"].setdefault(stage_zone, {"name":"","stage":{}})
             
         if stage_id not in akenemy_activity[stage_event]["zone"][stage_zone]["stage"] :
-            if stage_event in ["act17d1"] or (stage_gamemode in ["cc","is","ra"] and stage_event != "act42d0"):
+            if stage_event in ["act17d1"] or (stage_gamemode in ["cc","is","ra","campaign"] and stage_event != "act42d0"):
                 display_name = stage_name
-            else :
-                display_name = f'{stage_code} : {stage_name}' + (" (Adverse)" if stage_id.find("tough") == 0 else "")
+            elif stage_id.find("tough") != -1 or stage_id.find("easy") != -1:
+                display_name = f'{stage_code} : {stage_name} ({stage_zone.split(" ")[0]})'
+            elif stage_id.find("#f#") != -1:
+                display_name = f'{stage_code} : {stage_name} (Challenge)'
+            else: display_name = f'{stage_code} : {stage_name}'
             akenemy_activity[stage_event]["zone"][stage_zone]["stage"][stage_id] = display_name
             
     Stage_Lister_stage()
@@ -371,7 +365,7 @@ def RA_rush_Lister(Rushgroup_config : dict, stage_event : str) -> int :
             stage_code      = f'{stage_event}_{enemyGroupKey}'
             stage_id        = f'{stage_event}_{enemyGroupKey}'
             level_id        = f'{stage_event}/rushparty/{Rushgroup}/{enemyGroupKey}'
-            stage_name      = f'{Rushgroup.capitalize()} Rush Party : {(" ").join(stage_code.split("_")).capitalize()}'
+            stage_name      = (" ").join(stage_code.split("_")[1:]).capitalize()
             stage_zone      = f'{stage_event} {Rushgroup.capitalize()} Rushparty'
             
             if stage_zone   not in stage_collection["zones"]             : stage_collection["zones"][stage_zone] = []
@@ -389,13 +383,7 @@ def RA_rush_Lister(Rushgroup_config : dict, stage_event : str) -> int :
             
             for enemy in Rushgroup_config[Rushgroup][Rushparty]["enemy"]:
                 enemy_id = enemy["enemyKey"]
-                if enemy_id not in stage_collection["enemy"] : stage_collection["enemy"][enemy_id] = {"Filtered":[],"Appearance":{}}
-
-                if stage_event not in stage_collection["enemy"][enemy_id]["Filtered"] : 
-                    stage_collection["enemy"][enemy_id]["Filtered"].append(stage_event)
-                    stage_collection["enemy"][enemy_id]["Appearance"][stage_event] = []
-                if stage_code not in stage_collection["enemy"][enemy_id]["Appearance"][stage_event] : 
-                    stage_collection["enemy"][enemy_id]["Appearance"][stage_event].append(stage_code)
+                stage_collection["enemy"].setdefault(enemy_id,{}).setdefault(get_stage_gamemode(stage_event),{}).setdefault(stage_event,{}).setdefault(stage_zone,[]).append(stage_id)
                     
             ### Akenemy collect
             stage_gamemode = get_stage_gamemode(stage_event)
@@ -411,13 +399,35 @@ def RA_rush_Lister(Rushgroup_config : dict, stage_event : str) -> int :
             
     return stage_counter
 
+def main_zone(stage_id : str,event_id : str) -> str :
+    if stage_id.find("tr") != -1:
+        return "Training"
+    elif stage_id.find("easy") != -1:
+        return "Story Environment"
+    elif stage_id.find("#f#") != -1:
+        return "Challenge"
+    elif stage_id.find("tough") != -1:
+        return "Adverse Environment"
+    elif stage_id.find("hard") != -1:
+        if int(event_id.split("_")[-1]) > 9:
+            return "Adverse Environment"
+        elif int(event_id.split("_")[-1]) == 9:
+            return "Standard Environment"
+        else :
+            return "Normal"
+    else:
+        if int(event_id.split("_")[-1]) > 8:
+            return "Standard Environment"
+        else:
+            return "Normal"
+
 def IS_zone(stage_id : str, IS : str) -> str:
     '''IS = IS#??'''
     match stage_id.split("_")[1]:
         case "n":
             return f'Floor {stage_id.split("_")[2]}'
         case "b":
-            return f'{"Floor" if isinstance(IS_boss(stage_id,IS),int) else ""}{IS_boss(stage_id,IS)}'
+            return f'{"Floor" if isinstance(IS_boss(stage_id,IS),int) else ""} {IS_boss(stage_id,IS)}'
         case "t":
             return "Treasure"
         case "ev":
@@ -550,7 +560,7 @@ def stage_json_stage_collect(json_stage, json_stageEN):
         stage_counter = 0
         for stage in json_stage:
         # ignore Challenge and Story -> [tutorial, challenge, story, story2, easy mode, emperor fun mode, ???] & ??? & SSS_EX_stage & TN_stage (only normal accept)
-            if not [stage for prohibit in ["guide_","#f#","st_","_st","easy","act4d0","act17d7"] if stage.find(prohibit) != -1] and json_stage[stage]["levelId"].find("Activities/ACT21side/Mission/")==-1 and not re.search(r"lt_.+_ex", stage) and not re.search(r"bossrush_(tm|ex|fin)", stage):
+            if not [stage for prohibit in ["guide_","st_","_st","act4d0","act17d7"] if stage.find(prohibit) != -1] and json_stage[stage]["levelId"].find("Activities/ACT21side/Mission/")==-1 and not re.search(r"lt_.+_ex", stage) and not re.search(r"bossrush_(tm|ex|fin)", stage):
                 if json_stage[stage]["levelId"].find("/") !=- 1:
                     if json_stage[stage]["levelId"].split("/")[1] in ["Campaign"]:
                         stage_event = json_stage[stage]["stageId"].lower()
@@ -566,7 +576,7 @@ def stage_json_stage_collect(json_stage, json_stageEN):
                 stage_name       = json_stageEN[stage]["name"] if stage in json_stageEN.keys() else json_stage[stage]["name"]
                 stage_id         = json_stage[stage]["stageId"]
                 level_id         = json_stage[stage]["levelId"]
-                stage_zone       = json_stage[stage]["stageId"] if json_stage[stage]["stageType"] == "CAMPAIGN" else (f'{stage_event}_zone1' if stage_event in ["act7d5","act6d5","act4d0"] else json_stage[stage]["zoneId"])
+                stage_zone       = json_stage[stage]["stageId"] if json_stage[stage]["stageType"] == "CAMPAIGN" else (f'{stage_event}' if stage_event in ["act7d5","act6d5","act4d0"] else json_stage[stage]["zoneId"])
                 stage_filepath   = f'json/gamedata/zh_CN/gamedata/levels/{level_id.lower()}.json'
                 
                 stage_counter += Stage_Lister(stage_event, stage_code, stage_name, stage_id, level_id, stage_zone, stage_filepath)
@@ -731,11 +741,23 @@ def RA_stage_collect(json_RA1EN, json_RA2): #, json_RA2EN
     def RA0_main(RA0_stages):
         #### Map Stage
         stage_counter = 0
+        stage_preview = json_RA1EN["sandboxActTables"]["act1sandbox"]["rewardConfigDatas"]["stageDefaultPreviewRewardDict"]
         for RAstage in RA0_stages.keys():
             stagepath   = f'json/gamedata/zh_CN/gamedata/levels/{RA0_stages[RAstage]["levelId"].lower()}.json'
             stage_name  = RA0_stages[RAstage]["name"]
+            if RAstage in stage_preview:
+                match stage_preview[RAstage]["rewardList"][0]["rewardType"]:
+                    case "BUILDINGMAT" :
+                        stage_zone = 'RA#1 Field : Building Material'
+                    case "FOODMAT":
+                        stage_zone = 'RA#1 Field : Food Material'
+                    case _ :
+                        print(RAstage)
+                        stage_zone = 'RA#1 Field : ???'
+            else :
+                stage_zone = "RA#1 Field : Battle"
             
-            stage_counter += Stage_Lister("RA#1",RAstage,stage_name,RAstage,stagepath,"RA#1",stagepath)
+            stage_counter += Stage_Lister("RA#1",RAstage,stage_name,RAstage,stagepath,stage_zone,stagepath)
         return [stage_counter, "RA#1 Map"]
     
     @decorator
@@ -764,11 +786,25 @@ def RA_stage_collect(json_RA1EN, json_RA2): #, json_RA2EN
                 #except:
                     #stage_name = RA_stages[RAstage]["name"]
                 
+                stage_preview = json_RA2["detail"]["SANDBOX_V2"][RAseason]["rewardConfigData"]["stageMapPreviewRewardDict"]
+                
                 stage_name = RA_stages[RAstage]["name"]
                 
                 stagepath = f'json/gamedata/zh_CN/gamedata/levels/{RA_stages[RAstage]["levelId"].lower()}.json'
                 
-                stage_counter += Stage_Lister(stage_event, RAstage, stage_name, RAstage, stagepath, stage_event, stagepath)
+                if RAstage in stage_preview:
+                    match stage_preview[RAstage]["rewardList"][0]["rewardType"]:
+                        case "BUILDINGMAT" :
+                            stage_zone = f'{stage_event} Field : Building Material'
+                        case "FOODMAT":
+                            stage_zone = f'{stage_event} Field : Food Material'
+                        case _ :
+                            print(RAstage)
+                            stage_zone = f'{stage_event} Field : ???'
+                else :
+                    stage_zone = f'{stage_event} Field : Battle'
+                
+                stage_counter += Stage_Lister(stage_event, RAstage, stage_name, RAstage, stagepath, stage_zone, stagepath)
             return [stage_counter, f'{stage_event} Map']
         
         @decorator
@@ -814,7 +850,7 @@ def activity_collect(Activityjson):
         if DB["activity"]["basicInfo"][act]["hasStage"]:
             activity_collection["Dict"][act] = {
                     "nameCN"    : DB["activity"]["basicInfo"][act]["name"],
-                    "nameEN"    : ("DOS : " if act == "act42d0" else "") + (DB["activityEN"]["basicInfo"][act]["name"] if act in DB["activityEN"]["basicInfo"].keys() else (Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else None)) + (f' #{act.split("act")[-1].split("bossrush")[0]}' if act.find("bossrush")!= -1 and act in DB["activityEN"]["basicInfo"].keys() else ""),
+                    "nameEN"    : ("DOS : " if act == "act42d0" else "") + (DB["activityEN"]["basicInfo"][act]["name"] if act in DB["activityEN"]["basicInfo"].keys() else (Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else "")) + (f' #{act.split("act")[-1].split("bossrush")[0]}' if act.find("bossrush")!= -1 and act in DB["activityEN"]["basicInfo"].keys() else ""),
                     "startCN"   : DB["activity"]["basicInfo"][act]["startTime"]
             }
             if activity_collection["Dict"][act]["startCN"] > 0 : timeline.append([act,activity_collection["Dict"][act]["nameEN"] if activity_collection["Dict"][act]["nameEN"] else activity_collection["Dict"][act]["nameCN"],activity_collection["Dict"][act]["startCN"]])
@@ -916,47 +952,51 @@ def activity_collect(Activityjson):
     activity_collection["Timeline"] = timeline
 
 def akenemy_collect(json_zone, json_zoneEN):
+    ### Event Name
+    for event in stage_collection["activity"].keys():
+        if event in activity_collection["Dict"].keys():
+            if event in akenemy["gamemode"]["sidestory"]["activity"] and event not in ["act42d0","act1lock"] :
+                akenemy["events"][event] = f'[{last_of_nested(akenemy["gamemode"]["sidestory"]["activity"][event]["zone"])[-1].split("-")[0].upper()}] : {activity_collection["Dict"][event]["nameEN"] if activity_collection["Dict"][event]["nameEN"] else activity_collection["Dict"][event]["nameCN"]}'
+            elif event.lower() == "act2vmulti" :
+                akenemy["events"][event] = f'[{last_of_nested(akenemy["gamemode"]["coop"]["activity"][event]["zone"])[-1].split("-")[0].upper()}] : {activity_collection["Dict"][event]["nameEN"] if activity_collection["Dict"][event]["nameEN"] else activity_collection["Dict"][event]["nameCN"]}'
+            else:
+                akenemy["events"][event] = activity_collection["Dict"][event]["nameEN"]
+        else:
+            akenemy["events"][event] = None
+    
+    ### Event > Zone > stage Name
     for gamemode in akenemy["gamemode"].keys()-["pending"]:
         for activity in akenemy["gamemode"][gamemode]["activity"].keys() :
-            akenemy["gamemode"][gamemode]["activity"][activity]["name"] = activity_collection["Dict"][activity]["nameEN"]
+            akenemy["gamemode"][gamemode]["activity"][activity]["name"] = activity_collection["Dict"][activity]["nameEN"] if activity not in akenemy["events"] else akenemy["events"][activity]
             for zone in akenemy["gamemode"][gamemode]["activity"][activity]["zone"].keys() :
                 try:
                     if zone in activity_collection["Dict"].keys() and zone == activity:
-                        akenemy["gamemode"][gamemode]["activity"][activity]["zone"][zone]["name"] = activity_collection["Dict"][zone]["nameEN"]
+                        akenemy["gamemode"][gamemode]["activity"][activity]["zone"][zone]["name"] = akenemy["events"][zone] #activity_collection["Dict"][zone]["nameEN"] if activity_collection["Dict"][zone]["nameEN"] else activity_collection["Dict"][zone]["nameCN"]
                     elif zone in json_zoneEN["zones"]:
                         akenemy["gamemode"][gamemode]["activity"][activity]["zone"][zone]["name"] = json_zoneEN["zones"][zone]["zoneNameSecond"]
                     else :
                         akenemy["gamemode"][gamemode]["activity"][activity]["zone"][zone]["name"] = json_zone["zones"][zone]["zoneNameSecond"]
                 except:
                     akenemy["gamemode"][gamemode]["activity"][activity]["zone"][zone]["name"] = zone
-
-    ### Event Name
-    for event in stage_collection["activity"].keys():
-        if event in activity_collection["Dict"].keys():
-            if event in akenemy["gamemode"]["sidestory"]["activity"] and event not in ["act42d0","act1lock"] :
-                akenemy["events"][event] = f'{last_of_nested(akenemy["gamemode"]["sidestory"]["activity"][event]["zone"])[-1].split("-")[0].upper()} : {activity_collection["Dict"][event]["nameEN"]}'
-            elif event.lower() == "act2vmulti" :
-                akenemy["events"][event] = f'{last_of_nested(akenemy["gamemode"]["coop"]["activity"][event]["zone"])[-1].split("-")[0].upper()} : {activity_collection["Dict"][event]["nameEN"]}'
-            else:
-                akenemy["events"][event] = activity_collection["Dict"][event]["nameEN"]
-        else:
-            akenemy["events"][event] = None
             
     ### Sort Event
+    mainzone_sorter = {"Training":0,"Story Environment":1,"Normal":2,"Standard Environment":2,"Challenge":3,"Adverse Environment":3}
     for gamemode in akenemy["gamemode"].keys():
         if gamemode in ["sidestory","coop","tn"]:
-            akenemy["gamemode"][gamemode]["activity"] = sorted(akenemy["gamemode"][gamemode]["activity"].items(), reverse = False, key = lambda event : activity_collection["Dict"][event[0].lower()]["startCN"])
+            sort_event = sorted(akenemy["gamemode"][gamemode]["activity"].items(), reverse = False, key = lambda event : activity_collection["Dict"][event[0].lower()]["startCN"])
+            akenemy["gamemode"][gamemode]["activity"] = {x[0]:x[1] for x in sort_event}
         if gamemode in ["sss"]:
-            akenemy["gamemode"][gamemode]["activity"] = sorted(akenemy["gamemode"][gamemode]["activity"].items(), reverse = False, key = lambda event : (-100 + int(event[0].split("_")[-1])) if event[0].find("_tr_") != -1 else int(event[0].split("_")[-1]))
+            sort_event = sorted(akenemy["gamemode"][gamemode]["activity"].items(), reverse = False, key = lambda event : (-100 + int(event[0].split("_")[-1])) if event[0].find("_tr_") != -1 else int(event[0].split("_")[-1]))
+            akenemy["gamemode"][gamemode]["activity"] = {x[0]:x[1] for x in sort_event}
         if gamemode in ["supply"]:
-            akenemy["gamemode"][gamemode]["activity"] = sorted(akenemy["gamemode"][gamemode]["activity"].items(), reverse = False, key = lambda event : int(event[0].split("_")[-1]))
+            sort_event = sorted(akenemy["gamemode"][gamemode]["activity"].items(), reverse = False, key = lambda event : int(event[0].split("_")[-1]))
+            akenemy["gamemode"][gamemode]["activity"] = {x[0]:x[1] for x in sort_event}
+        if gamemode in ["main"]:
+            for act in akenemy["gamemode"][gamemode]["activity"]:
+                sort_zone = sorted(akenemy["gamemode"][gamemode]["activity"][act]["zone"].items(), reverse = False, key = lambda zone : mainzone_sorter[zone[0]])
+                akenemy["gamemode"][gamemode]["activity"][act]["zone"] = {x[0]:x[1] for x in sort_zone}
 
-
-    for enemy in stage_collection["enemy"].keys():
-        akenemy["enemies"][enemy] = stage_collection["enemy"][enemy]["Filtered"]
-        
-    test_dumps(akenemy) 
-    return
+    akenemy["enemies"] = stage_collection["enemy"]
 
 ################################################################################################################################################################################################################################################
 # JSON Dumpling
@@ -1019,5 +1059,5 @@ def enemyList() :
     enemy_ability_list(load_json("json_Database"), load_json("json_DatabaseEN"), load_json("json_Handbook"), load_json("json_HandbookEN"))
 
 if __name__ == "__main__" :
-    enemyList()
+    #enemyList()
     Akenemy()

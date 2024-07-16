@@ -1,21 +1,27 @@
 # Arknight-Image
 ## Schedule
-- Char
-    - new Class / Archetype icon
-    - new Avatar
-    - new Skill icon
-    - new IIRC icon
-    - new Char AVG skin
-    - new Char skin Avatar
-- Token
-    - new char Token avatar
-- Mod
-    - new Archetype mod icon
-    - new Chars mod icon
-- Enemy
-    - new Enemy avatar
-- material
-    - new Material icon
+
+- Avatars : folder for ***char, token*** and ***skin*** avatar
+
+- Characters : Folder for ***char*** and ***skin*** full body AVG
+
+- Classes : Folder for char **class** icon (probably not add new one)
+
+- enemy : Folder for ***enemy*** handbook icon
+
+- equip : mod Folder
+    - icon : Folder for ***char mod***
+    - type : Folder for ***archetype mod*** icon
+
+- items : Folder for ***material***
+
+- skills : Folder for ***skill*** icon
+
+- ui :
+    - infrastructure : Folder for ***RIIC skill*** icon
+    - subclass : Folder for ***archetype*** icon
+
+---
 
 # Akhr
 ## Fix
@@ -27,9 +33,7 @@
 
 # Akhrchar
 ## Fix
-    - Token stat not update when change click char elite stat
-    - Original Mod image (001) not work for every ops somehow (ex.pallas original but aak 001)
-    - Investigate why range appear in mod talent when base mode trait expand Range (Multi medic / Splash caster)
+    - 
 ## To do
     - apply isAmiya to Amiya EN GetStory when EP14 come
 ## Later
@@ -37,17 +41,21 @@
     - add more parameter for fn => onclick="selectOperator('xxx', ...)" to go to amiya patch directly
     - Chibi
 
+---
+
 # Akenemy
 ## Working on
-- Event drop-right for Zone and stage filter **
+- (Finished) Event drop-right for Zone and stage filter
 ## Fix
     -
 ## To do
     - Enemies Talent & Abilities
     - Foldable Details & Abilities Blackboard
-    - Enemy stat by Stage
+    - Enemy stat by Stage **
 ## Later
     - Chibi
+
+---
 
 # (NEW Idea) Aktable
 compare stat/profile with sortable table (maybe filter too) for operators and enemies

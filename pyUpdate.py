@@ -47,7 +47,7 @@ json_temp_mod       =   json_load("json/tl-module.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS = [] #
+NEW_CHARS = ["Tin Man"] #
 
 #[["OpsName#1",num(Mod)],["OpsName#2",num(Mod)], ...]
 NEW_MODS = [] #
@@ -119,6 +119,7 @@ def update_new_trait(mode : str, new_id : str, new_char_name : str, extra = "") 
         
         new_mod_id      for     "mod"
     ### Extra
+        char    new archetype
         Token   new_token_key
         Mode    Mod Code
     '''
@@ -127,7 +128,7 @@ def update_new_trait(mode : str, new_id : str, new_char_name : str, extra = "") 
             return  {
                         "name"  : new_char_name,
                         "code"  : new_id,
-                        "note"  : "new Ops Archetype trait"
+                        "note"  : f'new Ops "{extra}" Archetype trait'
                     }
         case "token":
             return  {
@@ -139,16 +140,16 @@ def update_new_trait(mode : str, new_id : str, new_char_name : str, extra = "") 
             return  {
                         "name"  : new_char_name,
                         "code"  : new_id,
-                        "note"  : f'new mods (extra)'
+                        "note"  : f'new mods {extra}'
                     }
 
 def update_char_TraitSkillTalent(new_char_name : str) :
     new_char_id = char_ready["Name2Code"][new_char_name]
     ## AKHR
-    if not Rechecked:
+    if new_char_id not in [char["id"] for char in json_akhr]:
         json_akhr.append(get_new_akhr(new_char_id,new_char_name))
     ## Trait
-    new_trait[json_char[new_char_id]["description"]] = update_new_trait("char",new_char_id,new_char_name)
+    new_trait[json_char[new_char_id]["description"]] = update_new_trait("char",new_char_id,new_char_name,json_char[new_char_id]["subProfessionId"])
     ## Talent
     talent_tl[new_char_id] = [
                                 [
@@ -199,8 +200,7 @@ for new_char_name in NEW_CHARS:
     if Rechecked and new_char_name in char_list:
         update_char_TraitSkillTalent(new_char_name)
 
-if skip_char:
-    print(f'\nNEW CHAR skip list = {skip_char}')
+
 
 #Update old char localization
 for char_data in json_akhr:
@@ -232,7 +232,6 @@ if NEW_RECRUIT_EN:
     for new_recruit_char in NEW_RECRUIT_EN:
         json_akhr[[index for index,d in enumerate(json_akhr) if d["name_en"].lower() == new_recruit_char.lower()][0]]["globalHidden"] = False
 
-            
 with open("json/tl-akhr.json",'w') as filepath :
     json.dump(json_akhr,filepath,indent = 4, ensure_ascii = False)
     
@@ -370,9 +369,6 @@ for new_mod_list in NEW_MODS:
     except:
         skip_mod.append(new_mod_list)
 
-if skip_mod:
-    print('NEW MOD skip list = ',skip_mod)
-
 with open("update/tl-module.json",'w') as filepath :
     json.dump(mod_tl,filepath,indent = 4, ensure_ascii = False)
 
@@ -437,4 +433,9 @@ with open("json/ace/riic.json",'w') as filepath :
 
 Akenemy()
 
+if skip_char:
+    print(f'\nNEW CHAR skip list = {skip_char}')
+if skip_mod:
+    print(f'NEW MOD skip list = {skip_mod}')
+    
 print("pyUpdate Completed !!!\n")

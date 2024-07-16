@@ -7114,5 +7114,46 @@
                 "desc": "Can summon Cherry-3 to assist in combat from a Tactical Point; Cherry-3 will automatically respawn 15s after being defeated and create Debris in the 4 surrounding tiles"
             }
         ]
+    ],
+	"char_4151_tinman": [
+        [
+            {
+                "name": "“在路上”",
+                "descCN": "在【萨卡兹的无终奇语】中，被招募时希望消耗-1",
+                "desc": "In [Sarkaz's Furnaceside Fables], when recruit Tin Man hope cost -1"
+            },
+            {
+                "name": "“在路上”",
+                "descCN": "在【萨卡兹的无终奇语】中，被招募时希望消耗-2，且作为负荷干员时使负荷临界点额外+3",
+                "desc": "In [Sarkaz's Furnaceside Fables], when recruit Tin Man hope cost -2, when use as load operator load point +3"
+            },
+            {
+                "name": "“在路上”",
+                "descCN": "在【萨卡兹的无终奇语】中，被招募时希望消耗-2，且作为负荷干员时使负荷临界点额外+4<@ba.talpu>（+1）</>",
+                "desc": "In [Sarkaz's Furnaceside Fables], when recruit Tin Man hope cost -2, when use as load operator load point +4<@ba.talpu>(+1)</>"
+            },
+            {
+                "name": "“在路上”",
+                "descCN": "在【萨卡兹的无终奇语】中，被招募时希望消耗-2，且作为负荷干员时使负荷临界点额外+9",
+                "desc": "In [Sarkaz's Furnaceside Fables], when recruit Tin Man hope cost -2, when use as load operator load point +9"
+            },
+            {
+                "name": "“在路上”",
+                "descCN": "在【萨卡兹的无终奇语】中，被招募时希望消耗-2，且作为负荷干员时使负荷临界点额外+10<@ba.talpu>（+1）</>",
+                "desc": "In [Sarkaz's Furnaceside Fables], when recruit Tin Man hope cost -2, when use as load operator load point +10<@ba.talpu>(+1)</>"
+            }
+        ],
+        [
+            {
+                "name": "凋敝魂灵",
+                "descCN": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高20%",
+                "desc": "Increas continuous damage taken by ground enemies within alchemist unit range by 20%"
+            },
+            {
+                "name": "凋敝魂灵",
+                "descCN": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高22%<@ba.talpu>（+2%）</>",
+                "desc": "Increas continuous damage taken by ground enemies within alchemist unit range by 22%<@ba.talpu>(+2%)</>"
+            }
+        ]
     ]
 }

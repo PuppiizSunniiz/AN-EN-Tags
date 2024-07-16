@@ -103,6 +103,7 @@
             "char_401_elysm": "Elysium",
             "char_4119_wanqin": "Wanqing",
             "char_476_blkngt": "Blacknight",
+            "char_4147_mitm": "Mitm",
             "char_497_ctable": "Cantabile",
             "char_4017_puzzle": "Puzzle",
             "char_308_swire": "Swire",
@@ -241,6 +242,7 @@
             "char_369_bena": "Bena",
             "char_4016_kazema": "Kazemaru",
             "char_4124_iana": "Iana",
+            "char_4151_tinman": "Tin Man",
             "char_103_angel": "Exusiai",
             "char_332_archet": "Archetto",
             "char_456_ash": "Ash",
@@ -275,6 +277,7 @@
             "char_4080_lin": "Lin",
             "char_377_gdglow": "Goldenglow",
             "char_4046_ebnhlz": "Ebenholz",
+            "char_4146_nymph": "Nymph",
             "char_206_gnosis": "Gnosis",
             "char_291_aglina": "Angelina",
             "char_358_lisa": "Suzuran",
@@ -449,6 +452,7 @@
             "Elysium": "char_401_elysm",
             "Wanqing": "char_4119_wanqin",
             "Blacknight": "char_476_blkngt",
+            "Mitm": "char_4147_mitm",
             "Cantabile": "char_497_ctable",
             "Puzzle": "char_4017_puzzle",
             "Swire": "char_308_swire",
@@ -586,6 +590,7 @@
             "Bena": "char_369_bena",
             "Kazemaru": "char_4016_kazema",
             "Iana": "char_4124_iana",
+            "Tin Man": "char_4151_tinman",
             "Exusiai": "char_103_angel",
             "Archetto": "char_332_archet",
             "Ash": "char_456_ash",
@@ -620,6 +625,7 @@
             "Lin": "char_4080_lin",
             "Goldenglow": "char_377_gdglow",
             "Ebenholz": "char_4046_ebnhlz",
+            "Nymph": "char_4146_nymph",
             "Gnosis": "char_206_gnosis",
             "Angelina": "char_291_aglina",
             "Suzuran": "char_358_lisa",
@@ -1573,6 +1579,12 @@
             "费用回复",
             "控场"
         ],
+        "Mitm": [
+            "资深干员",
+            "远程位",
+            "费用回复",
+            "爆发"
+        ],
         "Cantabile": [
             "资深干员",
             "近战位",
@@ -2350,6 +2362,12 @@
             "削弱",
             "快速复活"
         ],
+        "Tin Man": [
+            "资深干员",
+            "远程位",
+            "削弱",
+            "支援"
+        ],
         "Exusiai": [
             "高级资深干员",
             "远程位",
@@ -2540,6 +2558,13 @@
             "高级资深干员",
             "远程位",
             "输出"
+        ],
+        "Nymph": [
+            "高级资深干员",
+            "远程位",
+            "元素",
+            "输出",
+            "控场"
         ],
         "Gnosis": [
             "高级资深干员",

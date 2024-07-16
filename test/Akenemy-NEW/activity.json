@@ -1,5 +1,10 @@
 {
     "Dict": {
+        "act17mini": {
+            "nameCN": "熔炉“还魂”记",
+            "nameEN": "A Kazdelian Rescue",
+            "startCN": 1720497600
+        },
         "act26sre": {
             "nameCN": "空想花庭·复刻",
             "nameEN": "Hortus de Escapismo - Rerun",
@@ -682,7 +687,7 @@
         },
         "camp_r_20": {
             "nameCN": "千嶂边城",
-            "nameEN": "千嶂边城",
+            "nameEN": "Mountain-Ringed Border Town",
             "startCN": 1704657600
         },
         "camp_r_21": {
@@ -747,12 +752,12 @@
         },
         "tower_n_11": {
             "nameCN": "塔山农业实验平台",
-            "nameEN": "塔山农业实验平台",
+            "nameEN": "Tower Mountains Agricultural Experimental Platform",
             "startCN": -1
         },
         "tower_n_12": {
             "nameCN": "自走机械搏斗场",
-            "nameEN": "自走机械搏斗场",
+            "nameEN": "Automaton Arena",
             "startCN": -1
         },
         "tower_n_13": {
@@ -766,23 +771,23 @@
             "startCN": -1
         },
         "tower_n_01": {
-            "nameCN": "钢铁萝卜矿场",
-            "nameEN": "Iron Carrot Mine",
+            "nameCN": null,
+            "nameEN": null,
             "startCN": -1
         },
         "tower_n_02": {
-            "nameCN": "多伦矿场",
-            "nameEN": "Toron Mine",
+            "nameCN": null,
+            "nameEN": null,
             "startCN": -1
         },
         "tower_n_03": {
-            "nameCN": "格里布采矿平台",
-            "nameEN": "Glebe Mining Platform",
+            "nameCN": null,
+            "nameEN": null,
             "startCN": -1
         },
         "tower_n_04": {
-            "nameCN": "斯沃玛加工平台",
-            "nameEN": "Słoma Processing Platform",
+            "nameCN": null,
+            "nameEN": null,
             "startCN": -1
         },
         "CC#Beta": {
@@ -1514,7 +1519,7 @@
         ],
         [
             "camp_r_20",
-            "千嶂边城",
+            "Mountain-Ringed Border Town",
             1704657600
         ],
         [
@@ -1606,6 +1611,11 @@
             "camp_r_23",
             "燃烧街区",
             1720382400
+        ],
+        [
+            "act17mini",
+            "A Kazdelian Rescue",
+            1720497600
         ]
     ]
 }
