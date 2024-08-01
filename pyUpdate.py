@@ -47,17 +47,17 @@ json_temp_mod       =   json_load("json/tl-module.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS = ["Tin Man"] #
+NEW_CHARS = [] # "Pepe","Narantuya","Sand Reckoner","Papyrus"
 
 #[["OpsName#1",num(Mod)],["OpsName#2",num(Mod)], ...]
-NEW_MODS = [] #
+NEW_MODS = [] # ["Sand Reckoner",1],["Eyjafjalla the Hvít Aska",1],["Mulberry",1],["Honeyberry",1],["Harold",1],["Chestnut",1],["Nightingale",2],["Kal'tsit",3],["Phantom",3]
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS = [] #
 
 #["OpsName#1","OpsName#2", ...]
-NEW_RECRUIT_CN = [] #
-NEW_RECRUIT_EN = [] #
+NEW_RECRUIT_CN = [] # "Mudrock","Whisperain","Jackie"
+NEW_RECRUIT_EN = ["Surtr","April","Arene"] #
 
 Rechecked = True # True False
 
@@ -321,10 +321,10 @@ for mat_data in json_tl_item:
         if mat_data[lang[0]] == "":
             if mat_data["itemId"] in lang[1]["items"].keys():
                 mat_data[lang[0]] = lang[1]["items"][mat_data["itemId"]]["name"]
-                
+
 with open("json/tl-item.json",'w') as filepath :
     json.dump(json_tl_item,filepath,indent = 4, ensure_ascii = False)
-        
+
 #########################################################################################################
 # Mod
 #########################################################################################################   

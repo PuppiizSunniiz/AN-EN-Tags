@@ -3,9 +3,9 @@ $.holdReady(true);
 //console.log = function () { }
 
 var db = {}
-var tlracedict={};
-var enemyforfilter=[]
-const allimmunity=["stunImmune","silenceImmune","sleepImmune","frozenImmune","levitateImmune","disarmedCombatImmune","fearedImmune"]
+var tlracedict = {};
+var enemyforfilter = []
+const allimmunity = ["stunImmune","silenceImmune","sleepImmune","frozenImmune","levitateImmune","disarmedCombatImmune","fearedImmune"]
 
 var d0 = $.getJSON("json/gamedata/zh_CN/gamedata/excel/gamedata_const.json",function(data){
     db["dataconst"] = data;
@@ -15,8 +15,8 @@ var d1 = $.getJSON("json/gamedata/zh_CN/gamedata/excel/enemy_handbook_table.json
 });
 var d2 = $.getJSON("json/gamedata/zh_CN/gamedata/levels/enemydata/enemy_database.json",function(data){
     let enemydic = {}
-    data.enemies.forEach(enemy =>{
-        enemydic[enemy.Key]=enemy.Value
+    data.enemies.forEach(enemy => {
+        enemydic[enemy.Key] = enemy.Value
     })
     db["enemyDetail"] = enemydic;
 });
@@ -31,53 +31,53 @@ var d5 = $.getJSON("json/akenemy.json",function(data){
 });
 $.when(d0,d1,d2,d3,d4,d5).then(function(){
     Object.keys(db.enemy.raceData).forEach(race => {
-        tlracedict[race] = Object.keys(db.enemyEN.raceData).includes(race)?db.enemyEN.raceData[race].raceName:db.enemy.raceData[race].raceName
+        tlracedict[race] = Object.keys(db.enemyEN.raceData).includes(race) ? db.enemyEN.raceData[race].raceName : db.enemy.raceData[race].raceName
     })
     Object.values(db.enemy.enemyData).forEach(enemy => {
-        if(!enemy.hideInHandbook){
-            var immunitylist = []
-            var enemydatadetail=db.enemyDetail[enemy.enemyId][0].enemyData
-            var silenceable=false
+        if(true){ //!enemy.hideInHandbook
+            var immunitylist    = []
+            var enemydatadetail = db.enemyDetail[enemy.enemyId][0].enemyData
+            var silenceable     = false
             
             allimmunity.forEach(immunity => {if (enemydatadetail.attributes[immunity].m_value) immunitylist.push(immunity)})
             if (enemy.abilityList){
                 enemy.abilityList.forEach(ability => {
-                    if(ability.textFormat=="SILENCE") {
-                        silenceable=true
+                    if(ability.textFormat == "SILENCE") {
+                        silenceable = true
                         return
                 }})
             }
 
             var linkEnemies = []
             if (enemy.linkEnemies.length){
-                enemy.linkEnemies.forEach(linkenemy=>{
+                enemy.linkEnemies.forEach(linkenemy => {
                     if (db.enemy.enemyData[linkenemy]){
-                        var linkdata=db.enemy.enemyData[linkenemy]
-                        if (!linkdata.hideInHandbook) 
+                        var linkdata = db.enemy.enemyData[linkenemy]
+                        if (true) //!linkdata.hideInHandbook
                             linkEnemies.push({
                                                 "enemyId"           :linkdata.enemyId,
                                                 "name"              :linkdata.name,
-                                                "nameEN"            :db.enemyEN.enemyData[linkdata.enemyId]?db.enemyEN.enemyData[linkdata.enemyId].name:"",
+                                                "nameEN"            :db.enemyEN.enemyData[linkdata.enemyId] ? db.enemyEN.enemyData[linkdata.enemyId].name : "",
                                                 "enemyIndex"        :linkdata.enemyIndex,})
                     }
                 })
             }
 
             enemyforfilter.push({
-                                    "enemyId"           :enemy.enemyId,
-                                    "name"              :enemy.name,
-                                    "nameEN"            :db.enemyEN.enemyData[enemy.enemyId]?db.enemyEN.enemyData[enemy.enemyId].name:"",
-                                    "sortId"            :enemy.sortId,
-                                    "enemyIndex"        :enemy.enemyIndex,
-                                    "enemyLevel"        :enemy.enemyLevel,
-                                    "enemyTags"         :enemydatadetail.enemyTags.m_value,
-                                    "applyWay"          :enemydatadetail.applyWay.m_value,
-                                    "motion"            :enemydatadetail.motion.m_value,
-                                    "damageType"        :enemy.damageType,
-                                    "immunity"          :immunitylist,
-                                    "silenceable"       :silenceable,
-                                    "linkEnemies"       :linkEnemies,
-                                    "filterappearance"  :db.akenemy.enemies[enemy.enemyId]
+                                    "enemyId"           : enemy.enemyId,
+                                    "name"              : enemy.name,
+                                    "nameEN"            : db.enemyEN.enemyData[enemy.enemyId] ? db.enemyEN.enemyData[enemy.enemyId].name : "",
+                                    "sortId"            : enemy.sortId,
+                                    "enemyIndex"        : enemy.enemyIndex,
+                                    "enemyLevel"        : enemy.enemyLevel,
+                                    "enemyTags"         : enemydatadetail.enemyTags.m_value,
+                                    "applyWay"          : enemydatadetail.applyWay.m_value,
+                                    "motion"            : enemydatadetail.motion.m_value,
+                                    "damageType"        : enemy.damageType,
+                                    "immunity"          : immunitylist,
+                                    "silenceable"       : silenceable,
+                                    "linkEnemies"       : linkEnemies,
+                                    "filterappearance"  : db.akenemy.enemies[enemy.enemyId] ? db.akenemy.enemies[enemy.enemyId] : {}
                                 })
         }
     })
@@ -88,33 +88,31 @@ $.when(d0,d1,d2,d3,d4,d5).then(function(){
 var lang;
 var reg;
 var selectedEnemy;
-var selectedLevel=0;
+var selectedLevel           = 0;
 
-var skeletonType = "skel"
-var chibitype = 'enemy'
-var charName = 'enemy_1510_frstar2';
-var chibipers = 'front'
-var chibiName = 'enemy_1510_frstar2'
-var folder = `https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/spineassets/${chibitype}/`
+var skeletonType            = "skel"
+var chibitype               = 'enemy'
+var charName                = 'enemy_1510_frstar2';
+var chibipers               = 'front'
+var chibiName               = 'enemy_1510_frstar2'
+var folder                  = `https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/spineassets/${chibitype}/`
 var spinewidget 
-var loadchibi = true;
-var defaultAnimationName = "Default";
+var loadchibi               = true;
+var defaultAnimationName    = "Default";
 var animationqueue
-var chibiscaleweb = 0
-var chibiscaleweblist = [[0.5,-775],[0.6,-800],[0.7,-825],[0.8,-850],[0.9,-875],[1,-900]]
-var savenum = 0
+var chibiscaleweb           = 0
+var chibiscaleweblist       = [[0.5,-775],[0.6,-800],[0.7,-825],[0.8,-850],[0.9,-875],[1,-900]]
+var savenum                 = 0
 
 $(document).ready(function(){
-    FilterType("BOSS")
-    $('#to-tag').click(function() {      // When arrow is clicked
+    $('#to-tag').click(function() {     // When arrow is clicked
         $('body,html').animate({
-            scrollTop : 0                       // Scroll to top of body
+            scrollTop : 0               // Scroll to top of body
         }, 500);
     });
 
     $('.dropdown-trigger').dropdown();
     $('[data-toggle="tooltip"]').tooltip();
-
 
     if(!localStorage.getItem('gameRegion') || !localStorage.getItem('webLang')){
         console.log("game region undefined");
@@ -170,19 +168,10 @@ function langDropdown(el){
     changeUILanguage();
 }
 
-function FilterType(type){
-    charaFilter=[]
-    let currHtml = []
-    $("#tbody-list").empty()
-    
-    // currHtml.push(`</div></div> `)
-    // console.log(currHtml)
-    $("#tbody-list").html(currHtml.join(""))
-}
 function clickBtnTag(el){
     let section = $(el).attr("section");
 
-    if ((section!="immunity" && section!="other") && $(el).hasClass("btn-secondary")) $(`.enemy-${section}`).removeClass("btn-primary").addClass("btn-secondary");
+    if ((section != "immunity" && section != "other") && $(el).hasClass("btn-secondary")) $(`.enemy-${section}`).removeClass("btn-primary").addClass("btn-secondary");
     $(el).toggleClass("btn-secondary btn-primary");
 
     populateEnemy();
@@ -197,14 +186,15 @@ function clickImmunity(el){
 }
 function clickBtnClear(){
     $(".button-tag").removeClass("btn-primary").addClass("btn-secondary");
+    $(".dropdown-item").removeClass("selected")
     $("#GamemodeDropdown").removeClass("btn-primary").addClass("btn-secondary");
     $("#GamemodeDropdown").html("Select Gamemode")
     $("#GamemodeDropdown").attr("data-id","")
 
     $("#GameeventDropdown").removeClass("btn-primary").addClass("btn-secondary ak-disable");
     $("#GameeventDropdown").html("&lt;&lt;&lt; Select Gamemode first")
-    $("#GameeventDropdown").attr("data-id","")
-
+    $("#GameeventDropdown").attr("act-id","").attr("zone-id","").attr("stage-id","")
+    
     $("#GameeventList").empty()
 
     $("#opname").val("")
@@ -319,15 +309,15 @@ function selectGameevent(el){
 }
 
 function populateEnemy(allenemies=false){
-    let enemy_class = $(".enemy-class.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
-    let enemy_race = $(".enemy-race.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
-    let enemy_attack = $(".enemy-attack.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
-    let enemy_movement = $(".enemy-movement.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
-    let enemy_damage = $(".enemy-damage.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
-    let enemy_immunity = $(".enemy-immunity.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
+    let enemy_class     = $(".enemy-class.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
+    let enemy_race      = $(".enemy-race.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
+    let enemy_attack    = $(".enemy-attack.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
+    let enemy_movement  = $(".enemy-movement.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
+    let enemy_damage    = $(".enemy-damage.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
+    let enemy_immunity  = $(".enemy-immunity.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
     let enemy_silenceable = $("#silenceable").hasClass("btn-primary")
-    let enemy_name = $("#opname").val().search("头像_敌人_")!=-1?$("#opname").val().split("头像_敌人_")[1]:$("#opname").val()
-    let Notappliable=$(`#filter-enemy-immunity`).html()=="Immunity"
+    let enemy_name      = $("#opname").val().search("头像_敌人_")!=-1?$("#opname").val().split("头像_敌人_")[1]:$("#opname").val()
+    let Notappliable    = $(`#filter-enemy-immunity`).html()=="Immunity"
 
     let enemy_gamemode  = $("#GamemodeDropdown.btn-primary").attr("data-id")
     let enemy_gameevent = $("#GameeventDropdown.btn-primary").attr("act-id")
@@ -336,45 +326,45 @@ function populateEnemy(allenemies=false){
 
     var enemiesfiltered = enemyforfilter
 
-    if(enemy_class.length == 0 &&
-        enemy_race.length == 0 &&
-        enemy_attack.length == 0 &&
-        enemy_movement.length == 0 &&
-        enemy_damage.length == 0 &&
-        enemy_immunity.length == 0 &&
-        !enemy_silenceable &&
-        !enemy_name &&
-        !enemy_gamemode &&
-        !enemy_gameevent&&
-        !enemy_gamezone&&
-        !enemy_gamestage) allenemies=true
+    if( enemy_class.length      == 0 &&
+        enemy_race.length       == 0 &&
+        enemy_attack.length     == 0 &&
+        enemy_movement.length   == 0 &&
+        enemy_damage.length     == 0 &&
+        enemy_immunity.length   == 0 &&
+        !enemy_silenceable           &&
+        !enemy_name                  &&
+        !enemy_gamemode              &&
+        !enemy_gameevent             &&
+        !enemy_gamezone              &&
+        !enemy_gamestage) allenemies = true
     
     console.log(enemy_class.length,enemy_race.length,enemy_attack.length,enemy_movement.length,enemy_damage.length,enemy_immunity.length,!enemy_silenceable,!enemy_name,!enemy_gamemode,!enemy_gameevent,"allenemies =",allenemies)
     if(!allenemies){
-        if (enemy_class.length) enemiesfiltered=enemiesfiltered.filter(enemy => enemy_class[0]==enemy.enemyLevel)
-        if (enemy_race.length) enemiesfiltered=enemiesfiltered.filter(enemy => enemy.enemyTags?enemy.enemyTags.includes(enemy_race[0]):false)
-        if (enemy_attack.length) enemiesfiltered=enemiesfiltered.filter(enemy => enemy_attack[0]==enemy.applyWay)
-        if (enemy_movement.length) enemiesfiltered=enemiesfiltered.filter(enemy => enemy_movement[0]==enemy.motion)
-        if (enemy_damage.length) enemiesfiltered=enemiesfiltered.filter(enemy => enemy.damageType.includes(enemy_damage[0]))
-        if (enemy_immunity.length) enemiesfiltered=enemiesfiltered.filter(enemy => enemy_immunity.every(immunity => enemy.immunity.length?enemy.immunity.includes(immunity)+Notappliable-1:!Notappliable))
-        if (enemy_silenceable) enemiesfiltered=enemiesfiltered.filter(enemy => enemy.silenceable==true)
-        if (enemy_name.length) enemiesfiltered=enemiesfiltered.filter(enemy => (enemy.name.toUpperCase().search(enemy_name.toUpperCase())!=-1) || (enemy.nameEN.length?enemy.nameEN.toUpperCase().search(enemy_name.toUpperCase())!=-1:false) || (enemy.enemyId.toUpperCase().search(enemy_name.toUpperCase())!=-1) || (enemy.enemyIndex.toUpperCase().search(enemy_name.toUpperCase())!=-1))
+        if (enemy_class.length)     enemiesfiltered = enemiesfiltered.filter(enemy => enemy_class[0] == enemy.enemyLevel)
+        if (enemy_race.length)      enemiesfiltered = enemiesfiltered.filter(enemy => enemy.enemyTags ? enemy.enemyTags.includes(enemy_race[0]) : false)
+        if (enemy_attack.length)    enemiesfiltered = enemiesfiltered.filter(enemy => enemy_attack[0] == enemy.applyWay)
+        if (enemy_movement.length)  enemiesfiltered = enemiesfiltered.filter(enemy => enemy_movement[0] == enemy.motion)
+        if (enemy_damage.length)    enemiesfiltered = enemiesfiltered.filter(enemy => enemy.damageType.includes(enemy_damage[0]))
+        if (enemy_immunity.length)  enemiesfiltered = enemiesfiltered.filter(enemy => enemy_immunity.every(immunity => enemy.immunity.length ? enemy.immunity.includes(immunity)+Notappliable-1 : !Notappliable))
+        if (enemy_silenceable)      enemiesfiltered = enemiesfiltered.filter(enemy => enemy.silenceable == true)
+        if (enemy_name.length)      enemiesfiltered = enemiesfiltered.filter(enemy => (enemy.name.toUpperCase().search(enemy_name.toUpperCase()) != -1) || (enemy.nameEN.length ? enemy.nameEN.toUpperCase().search(enemy_name.toUpperCase()) != -1 : false) || (enemy.enemyId.toUpperCase().search(enemy_name.toUpperCase()) != -1) || (enemy.enemyIndex.toUpperCase().search(enemy_name.toUpperCase()) != -1))
         if (enemy_gamemode) {
             console.log(enemy_gamemode,enemy_gameevent,enemy_gamezone,enemy_gamestage)
-            if(enemy_gamemode)  enemiesfiltered=enemiesfiltered.filter(enemy => Object.keys(enemy.filterappearance).includes(enemy_gamemode))
-            if(enemy_gameevent) enemiesfiltered=enemiesfiltered.filter(enemy => Object.keys(enemy.filterappearance[enemy_gamemode]).includes(enemy_gameevent))
-            if(enemy_gamezone)  enemiesfiltered=enemiesfiltered.filter(enemy => Object.keys(enemy.filterappearance[enemy_gamemode][enemy_gameevent]).includes(enemy_gamezone))
-            if(enemy_gamestage) enemiesfiltered=enemiesfiltered.filter(enemy => enemy.filterappearance[enemy_gamemode][enemy_gameevent][enemy_gamezone].includes(enemy_gamestage))
+            if(enemy_gamemode)  enemiesfiltered = enemiesfiltered.filter(enemy => Object.keys(enemy.filterappearance).includes(enemy_gamemode))
+            if(enemy_gameevent) enemiesfiltered = enemiesfiltered.filter(enemy => Object.keys(enemy.filterappearance[enemy_gamemode]).includes(enemy_gameevent))
+            if(enemy_gamezone)  enemiesfiltered = enemiesfiltered.filter(enemy => Object.keys(enemy.filterappearance[enemy_gamemode][enemy_gameevent]).includes(enemy_gamezone))
+            if(enemy_gamestage) enemiesfiltered = enemiesfiltered.filter(enemy => enemy.filterappearance[enemy_gamemode][enemy_gameevent][enemy_gamezone].includes(enemy_gamestage))
         }
     }
     console.log(enemiesfiltered)
     let currHtml = []
-    enemiesfiltered.sort((a, b)=> a.sortId - b.sortId)
+    enemiesfiltered.sort((a, b) => a.sortId - b.sortId)
     if(enemiesfiltered.length > 0){
         $('#enemyResult').empty();
         $('#enemyResult').show();
         for (var i = 0; i < enemiesfiltered.length; i++) {
-            let image = `<img style="height:80px;padding:1px" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${enemiesfiltered[i].enemyId}.png" title="${enemiesfiltered[i].nameEN?enemiesfiltered[i].nameEN:""} [${enemiesfiltered[i].name}]">  `
+            let image = `<img style="height:80px;padding:1px" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${enemiesfiltered[i].enemyId}.png" title="${enemiesfiltered[i].nameEN?enemiesfiltered[i].nameEN:""} [${enemiesfiltered[i].name}]" onerror="this.src='extra/not_found.png';">  `
 
             currHtml.push(`
                             <li class="ak-btn ak-enemy" style="display:inline-block;cursor: pointer;width:90px;margin:2px;margin-bottom:2px;padding:1px;border-radius:2px" data-toggle="modal" data-target="#enemysd" onclick="selectEnemy('${enemiesfiltered[i].enemyId}')"> 
@@ -392,29 +382,29 @@ function populateEnemy(allenemies=false){
 
 }
 function selectEnemy(el){
-    let currEnemy = query(db.enemy.enemyData,"enemyId",el)
-    let currFromfilter = query(enemyforfilter,"enemyId",el)
-    let currEnemyEN = db.enemyEN.enemyData[el]
+    let currEnemy       = query(db.enemy.enemyData,"enemyId",el)
+    let currFromfilter  = query(enemyforfilter,"enemyId",el)
+    let currEnemyEN     = db.enemyEN.enemyData[el]
     let currEnemyDetail = db.enemyDetail[el]
-    let currHtml = []    
-    let tlname = query(db.enemytl,"name_cn",currEnemy.name).name_en 
-    let tldesc = currEnemy.description
-    let tlrace = []
+    let currHtml        = []    
+    let tlname          = query(db.enemytl,"name_cn",currEnemy.name).name_en 
+    let tldesc          = currEnemy.description
+    let tlrace          = []
     let tlability
     if (currEnemyEN) {
-        tlname = currEnemyEN.name
-        tldesc = currEnemyEN.description
-        tlability = currEnemyEN.abilityList
+        tlname      = currEnemyEN.name
+        tldesc      = currEnemyEN.description
+        tlability   = currEnemyEN.abilityList
     }else{
-        tlability = currEnemy.abilityList
+        tlability   = currEnemy.abilityList
     }
     let firstEnemyData = currEnemyDetail[0].enemyData
     console.log(currEnemy)
 
-    let atktype =[]
-    let atkrange = ""
-    let enemiesabilities=[]
-    let linkEnemieslist=[]
+    let atktype             = []
+    let atkrange            = ""
+    let enemiesabilities    = []
+    let linkEnemieslist     = []
 
     //Enemies Attack Type
     if(firstEnemyData){
@@ -438,15 +428,15 @@ function selectEnemy(el){
             case "MAGIC"        : atktype.push(`<span style="color:cyan">Arts</span>`) ;break;
             case "NO_DAMAGE"    : atktype.push(`<span style="color:grey">Does Not Attack</span>`) ;break;
             case "HEAL"         : atktype.push(`<span style="color:lightgreen">Heal</span>`) ;break;
-            default: atktype.push(element) ;break;
+            default             : atktype.push(element) ;break;
         }
     });
     //Abilities
     if(tlability.length >0){
         tlability.forEach(ability => {
             if      (ability.textFormat == "TITLE")     enemiesabilities.push(`<span style="font-size:larger;color: mediumspringgreen;">${ChangeDescriptionColor(ability.text)}</span>`)
-            else if (ability.textFormat == "NORMAL")    enemiesabilities.push("&mdash; "+ChangeDescriptionColor(ability.text))
-            else if (ability.textFormat == "SILENCE")   enemiesabilities.push(`<img style="width:16px" src="extra/40px-Silence_effect.webp" title="Silenceable"> `+ChangeDescriptionColor(ability.text))
+            else if (ability.textFormat == "NORMAL")    enemiesabilities.push(ability.text == "-" ? "-" : (`&mdash; ${ChangeDescriptionColor(ability.text)}`))
+            else if (ability.textFormat == "SILENCE")   enemiesabilities.push(`<img style="width:16px" src="extra/40px-Silence_effect.webp" title="Silenceable">${ChangeDescriptionColor(ability.text)}`)
         })
     }
     
@@ -462,7 +452,7 @@ function selectEnemy(el){
             linkEnemieslist.push(   `<li class="ak-btn ak-enemy" style="display:inline-block;cursor: pointer;width:90px;margin:2px;margin-bottom:2px;padding:1px;border-radius:2px" /*data-toggle="modal"*/ data-target="#enemysd" onclick="selectEnemy('${linkenemy.enemyId}')"> 
                                         <div class="col-12"style="white-space: nowrap;padding:0px;text-align:center;margin:0px ">
                                             <div style="position:absolute;top:-2px;left:2px;white-space: nowrap;padding:3px;padding-top:1px;padding-bottom:0px;margin:0px;background:#222">${linkenemy.enemyIndex}</div>
-                                            <img style="height:80px;padding:1px" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${linkenemy.enemyId}.png" title="${linkenemy.nameEN?linkenemy.nameEN:""} [${linkenemy.name}]">
+                                            <img style="height:80px;padding:1px" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${linkenemy.enemyId}.png" title="${linkenemy.nameEN?linkenemy.nameEN:""} [${linkenemy.name}]" onerror="this.src='extra/not_found.png';">
                                         </div>
                                     </li>`
             )
@@ -475,17 +465,17 @@ function selectEnemy(el){
         <div style="display:inline-flex;flex-direction: row;min-width: 100%;">
             <div style="margin-bottom:8px;padding:5px;padding-top:10px;background:#444;margin-top:2px;display:inline-block;padding-left:10px;padding-right:30px">
                 <div style="display:inline-flex">
-                    <img style="height:80px;padding:1px" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${currEnemy.enemyId}.png" title="${tlname?tlname:""} [${currEnemy.name}]">
-                    <div style="border:3px solid #FFF;text-align:center;margin:5px;padding:0px;height:50px;width:50px;display:inline-block;${currEnemy.enemyIndex.length==2?"font-size:30px":"font-size:15px;padding-top:10px"}">${currEnemy.enemyIndex}</div>
+                    <img style="height:80px;padding:1px" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${currEnemy.enemyId}.png" title="${tlname?tlname:""} [${currEnemy.name}]" onerror="this.src='extra/not_found.png';">
+                    <div style="border:3px solid #FFF;text-align:center;margin:5px;padding:0px;height:50px;width:50px;display:inline-block;${currEnemy.enemyIndex.length == 2 ? "font-size:30px" : "font-size:15px;padding-top:10px"}">${currEnemy.enemyIndex}</div>
                     <div style="display:inline-block;vertical-align:top">   
-                        <div style="width: max-content;">${tlname?tlname:""} [${currEnemy.name}] </div>
-                        <div>${tlrace.length?tlrace.join(", "):"-"}</div>
-                        <div>${firstEnemyData.motion.m_value=="FLY"?"Flying Path":"Ground Path"}</div>
+                        <div style="width: max-content;">${tlname ? tlname : ""} [${currEnemy.name}] </div>
+                        <div>${tlrace.length ? tlrace.join(", ") : "-"}</div>
+                        <div>${firstEnemyData.motion.m_value == "FLY" ? "Flying Path" : "Ground Path"}</div>
                     </div>
                 </div>
 
                 <div>Enemy Type : ${currEnemy.enemyLevel.charAt(0) + currEnemy.enemyLevel.slice(1).toLowerCase()}</div>
-                <div>Attack type : ${atkrange?atkrange:""}</div>
+                <div>Attack type : ${atkrange ? atkrange : ""}</div>
                 <div>Damage type : ${atktype.join(" & ")}</div>
             </div>
             <div style="margin-bottom:8px;background:#444;margin-top:2px;flex-grow:1"></div>
@@ -578,17 +568,17 @@ function enemyDetail(el,level){
     $('#enemyDetail2').empty();
     $('#enemyDetail2').hide();
     let currEnemyDetail = db.enemyDetail[el]
-    let firstEnemyData = currEnemyDetail[0].enemyData
-    let currEnemyData = currEnemyDetail[level].enemyData
-    let currHtml = []
+    let firstEnemyData  = currEnemyDetail[0].enemyData
+    let currEnemyData   = currEnemyDetail[level].enemyData
+    let currHtml        = []
     console.log(currEnemyDetail)
     
-    var currattr = currEnemyData.attributes
-    var firstattr = firstEnemyData.attributes
+    var currattr    = currEnemyData.attributes
+    var firstattr   = firstEnemyData.attributes
 
-    var EnemyImmune=[]
+    var EnemyImmune = []
     $(["stun","silence","sleep","frozen","levitate","disarmedCombat","feared"].forEach(immune =>{
-        if (currattr[immune+"Immune"].m_value!=0?currattr[immune+"Immune"].m_value:firstattr[immune+"Immune"].m_value)
+        if (currattr[immune+"Immune"].m_value != 0 ? currattr[immune+"Immune"].m_value : firstattr[immune+"Immune"].m_value)
             EnemyImmune.push(`<td><span style="color:crimson;font-weight: bold;">Immune</span></td>`)
         else
             EnemyImmune.push(`<td><span style="color:Lime;font-weight: bold;">Appliable</span></td>`)
@@ -609,12 +599,12 @@ function enemyDetail(el,level){
             </thead>
             <tbody>
                 <tr>
-                    <td>${currattr.maxHp.m_value!=0?currattr.maxHp.m_value:firstattr.maxHp.m_value}</td>
-                    <td>${currattr.atk.m_value!=0?currattr.atk.m_value:firstattr.atk.m_value}</td>
-                    <td>${currattr.def.m_value!=0?currattr.def.m_value:firstattr.def.m_value}</td>
-                    <td>${currattr.magicResistance.m_value!=0?currattr.magicResistance.m_value:firstattr.magicResistance.m_value}</td>
-                    <td>${currattr.epDamageResistance.m_value!=0?currattr.epDamageResistance.m_value:firstattr.epDamageResistance.m_value}</td>
-                    <td>${currattr.epResistance.m_value!=0?currattr.epResistance.m_value:firstattr.epResistance.m_value}</td>
+                    <td>${currattr.maxHp.m_value                != 0 ? currattr.maxHp.m_value                : firstattr.maxHp.m_value}</td>
+                    <td>${currattr.atk.m_value                  != 0 ? currattr.atk.m_value                  : firstattr.atk.m_value}</td>
+                    <td>${currattr.def.m_value                  != 0 ? currattr.def.m_value                  : firstattr.def.m_value}</td>
+                    <td>${currattr.magicResistance.m_value      != 0 ? currattr.magicResistance.m_value      : firstattr.magicResistance.m_value}</td>
+                    <td>${currattr.epDamageResistance.m_value   != 0 ? currattr.epDamageResistance.m_value   : firstattr.epDamageResistance.m_value}</td>
+                    <td>${currattr.epResistance.m_value         != 0 ? currattr.epResistance.m_value         : firstattr.epResistance.m_value}</td>
                 </tr>
             </tbody>
             <thead class="thead-light">
@@ -629,12 +619,12 @@ function enemyDetail(el,level){
             </thead>
             <tbody>
                 <tr>
-                    <td>${currattr.baseAttackTime.m_value!=0?currattr.baseAttackTime.m_value:firstattr.baseAttackTime.m_value}</td>
-                    <td>${currEnemyData.rangeRadius.m_value>0?currEnemyData.rangeRadius.m_value:firstEnemyData.rangeRadius.m_value==-1?"-":firstEnemyData.rangeRadius.m_value}</td>
-                    <td>${currattr.moveSpeed.m_value!=0?currattr.moveSpeed.m_value:firstattr.moveSpeed.m_value}</td>
-                    <td>${currattr.massLevel.m_value!=0?currattr.massLevel.m_value:firstattr.massLevel.m_value}</td>
-                    <td>${currEnemyData.lifePointReduce.m_value!=0?currEnemyData.lifePointReduce.m_value:firstEnemyData.lifePointReduce.m_value}</td>
-                    <td>${currattr.hpRecoveryPerSec.m_value!=0?currattr.hpRecoveryPerSec.m_value:firstattr.hpRecoveryPerSec.m_value}</td>
+                    <td>${currattr.baseAttackTime.m_value       != 0 ? currattr.baseAttackTime.m_value      : firstattr.baseAttackTime.m_value}</td>
+                    <td>${currEnemyData.rangeRadius.m_value     >  0 ? currEnemyData.rangeRadius.m_value    : firstEnemyData.rangeRadius.m_value == -1 ? "-" : firstEnemyData.rangeRadius.m_value}</td>
+                    <td>${currattr.moveSpeed.m_value            != 0 ? currattr.moveSpeed.m_value           : firstattr.moveSpeed.m_value}</td>
+                    <td>${currattr.massLevel.m_value            != 0 ? currattr.massLevel.m_value           : firstattr.massLevel.m_value}</td>
+                    <td>${currEnemyData.lifePointReduce.m_value != 0 ? currEnemyData.lifePointReduce.m_value: firstEnemyData.lifePointReduce.m_value}</td>
+                    <td>${currattr.hpRecoveryPerSec.m_value     != 0 ? currattr.hpRecoveryPerSec.m_value    : firstattr.hpRecoveryPerSec.m_value}</td>
                 </tr>
             </tbody>
         </table>
@@ -662,13 +652,13 @@ function enemyDetail(el,level){
     if(firstEnemyData.talentBlackboard){
         enemytalentBlackboard = currEnemyData.talentBlackboard?currEnemyData.talentBlackboard:firstEnemyData.talentBlackboard
         currHtml.push(`<div class="ak-c-black" style="text-align:center;background:#222">Trait Details<div class="ak-c-black" style="text-align:left;padding-left: 15px;">`)
-        firstEnemyData.talentBlackboard.forEach(element=>{
-            if (enemytalentBlackboard!=firstEnemyData.talentBlackboard){
-                enemytalentBlackboard.forEach(currelement=>{
-                    if (element.key==currelement.key) element=currelement
+        firstEnemyData.talentBlackboard.forEach(element => {
+            if (enemytalentBlackboard != firstEnemyData.talentBlackboard){
+                enemytalentBlackboard.forEach(currelement => {
+                    if (element.key == currelement.key) element = currelement
                 })
             }
-            currHtml.push(`<div>${element.key} : ${element.valueStr?element.valueStr:element.value}</div>`)
+            currHtml.push(`<div>${element.key} : ${element.valueStr ? element.valueStr : element.value}</div>`)
         })
         currHtml.push(`</div></div> `)
     }
@@ -683,7 +673,7 @@ function ChangeDescriptionColor(desc){
     if(!desc) return desc
 
     desc = desc.replace(/\<([A-z\"\'].+?)\>/g,`<span style="color:deeppink">$1</span>`) // Summon/Related enemy
-    desc = desc.replace(/([\[【].+?[\]】])/g,`<span style="color:yellow">$1</span>`)  // Ability name
+    desc = desc.replace(/([\[【].+?[\]】])/g,`<span style="color:yellow">$1</span>`)    // Ability name
     desc = ChangeDesc1(desc)
     desc = ChangeDesc2(desc)
 
@@ -691,16 +681,16 @@ function ChangeDescriptionColor(desc){
 }
 function ChangeDesc1(desc,addbackgroundcolor = false){
     desc = desc.replace(/<[@](.+?)>(.+?)<\/>/g, function(m, rtf, text) {
-        let rich = db.dataconst.richTextStyles[rtf];
-        let rich2 = db.named_effects.termDescriptionDict[rtf];
+        let rich    = db.dataconst.richTextStyles[rtf];
+        let rich2   = db.named_effects.termDescriptionDict[rtf];
         if (!rich2){
-            rich2 = db.dataconst.termDescriptionDict[rtf]
+            rich2   = db.dataconst.termDescriptionDict[rtf]
         }
         if (rich) {
             let colorRTF = /<color=(#[0-9A-F]+)>\{0\}<\/color>/;
             if (colorRTF.test(rich)) {
                 let color = colorRTF.exec(rich)[1]
-                return `<span class="${addbackgroundcolor?`stat-important2`:""}" style="color:${color}">${text}</span>`
+                return `<span class="${addbackgroundcolor ? `stat-important2` : ""}" style="color:${color}">${text}</span>`
             } else {
                 return rich.replace('{0}', text)
             }

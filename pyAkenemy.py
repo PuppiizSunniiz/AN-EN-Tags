@@ -6,6 +6,7 @@ import json
 import re
 import glob
 from datetime import datetime
+from pyfunction import print_header
 
 ################################################################################################################################################################################################################################################
 # Global Variable
@@ -38,9 +39,10 @@ akenemy = {
 ################################################################################################################################################################################################################################################
 # JSON
 ################################################################################################################################################################################################################################################
-def json_load(filepath:str) -> dict:
-    if filepath.find("_easy_sub_")!=-1      : filepath=filepath.replace("_easy_sub_","_sub_")
-    elif filepath.find("_easy_")!=-1        : filepath=filepath.replace("_easy_","_main_")
+def json_load(filepath : str) -> dict :
+    if filepath.find("_easy_sub_")  != -1     : filepath=filepath.replace("_easy_sub_","_sub_")
+    elif filepath.find("_easy_")    != -1     : filepath=filepath.replace("_easy_","_main_")
+    
     with open(filepath, 'r', encoding='utf-8') as file:
         return json.load(file)
 
@@ -144,7 +146,7 @@ def get_stat_grade() :
                 'enemyRes'          : {'SS': 90.0, 'S+': 80.0, 'S': 70.0, 'A+': 60.0, 'A': 50.0, 'B+': 30.0, 'B': 20.0, 'C': 10.0, 'D': 1.0, 'E': 0.0}
                 }
 
-def enemy_ability_list(json_Database : dict,json_DatabaseEN : dict,json_Handbook : dict, json_HandbookEN : dict, json_enemy_ablilies : dict) -> None :
+def enemy_ability_list(json_Database : dict, json_DatabaseEN : dict, json_Handbook : dict, json_HandbookEN : dict, json_enemy_ablilies : dict) -> None :
     enemy_database_CN = {}
     enemy_database_EN = {}
 
@@ -153,14 +155,14 @@ def enemy_ability_list(json_Database : dict,json_DatabaseEN : dict,json_Handbook
     for enemy_key in json_DatabaseEN["enemies"]:
         enemy_database_EN[enemy_key["Key"]] = enemy_key["Value"]
         
-    enemy_database = {}
-    enemy_abilities_database = {}
+    enemy_database              = {}
+    enemy_abilities_database    = {}
     errortest = 0
 
-    enemy_damageType = []
-    enemy_Tag = []
-    enemy_motion = []
-    enemy_applyWay = []
+    enemy_damageType    = []
+    enemy_Tag           = []
+    enemy_motion        = []
+    enemy_applyWay      = []
     
     for enemy_key in json_Handbook["enemyData"]:
         ## Handbook Test
@@ -180,9 +182,9 @@ def enemy_ability_list(json_Database : dict,json_DatabaseEN : dict,json_Handbook
                         }
         
         ## Data Test
-        if (" & ").join(handbook[enemy_key]["damageType"]) not in enemy_damageType :enemy_damageType.append((" & ").join(handbook[enemy_key]["damageType"]))
-        if str(handbook[enemy_key]["enemyTags"]) not in enemy_Tag :enemy_Tag.append(str(handbook[enemy_key]["enemyTags"]))
-        if database[enemy_key][0]["enemyData"]["motion"]["m_value"] not in enemy_motion : enemy_motion.append(database[enemy_key][0]["enemyData"]["motion"]["m_value"])
+        if (" & ").join(handbook[enemy_key]["damageType"]) not in enemy_damageType          : enemy_damageType.append((" & ").join(handbook[enemy_key]["damageType"]))
+        if str(handbook[enemy_key]["enemyTags"]) not in enemy_Tag                           : enemy_Tag.append(str(handbook[enemy_key]["enemyTags"]))
+        if database[enemy_key][0]["enemyData"]["motion"]["m_value"] not in enemy_motion     : enemy_motion.append(database[enemy_key][0]["enemyData"]["motion"]["m_value"])
         if database[enemy_key][0]["enemyData"]["applyWay"]["m_value"] not in enemy_applyWay : enemy_applyWay.append(database[enemy_key][0]["enemyData"]["applyWay"]["m_value"])
 
         ## Data Handle
@@ -217,10 +219,10 @@ def enemy_ability_list(json_Database : dict,json_DatabaseEN : dict,json_Handbook
 
         for level in range(len(database[enemy_key])):
             level_attributes = {}
-            for stat in database[enemy_key][level]["enemyData"]["attributes"]:
+            for stat in database[enemy_key][level]["enemyData"]["attributes"] :
                 if database[enemy_key][level]["enemyData"]["attributes"][stat]["m_defined"] and database[enemy_key][level]["enemyData"]["attributes"][stat]["m_value"]!=database[enemy_key][0]["enemyData"]["attributes"][stat]["m_value"]:
                     level_attributes[stat]=database[enemy_key][level]["enemyData"]["attributes"][stat]["m_value"]
-                else:
+                else :
                     level_attributes[stat]=database[enemy_key][0]["enemyData"]["attributes"][stat]["m_value"]
             enemy_database[enemy_key]["attributes"].append(level_attributes)
             
@@ -233,18 +235,18 @@ def enemy_ability_list(json_Database : dict,json_DatabaseEN : dict,json_Handbook
             #json_enemy_ablilies[enemy_key] = enemy_abilities_database[enemy_key]
         
         ## New Error Check
-        if len(database[enemy_key]) > 1:
-            for key in ["applyWay","motion","enemyTags","lifePointReduce","rangeRadius"]:
-                if database[enemy_key][1]["enemyData"][key]["m_defined"] and database[enemy_key][0]["enemyData"][key]["m_value"] != database[enemy_key][1]["enemyData"][key]["m_value"]:
+        if len(database[enemy_key]) > 1 :
+            for key in ["applyWay","motion","enemyTags","lifePointReduce","rangeRadius"] :
+                if database[enemy_key][1]["enemyData"][key]["m_defined"] and database[enemy_key][0]["enemyData"][key]["m_value"] != database[enemy_key][1]["enemyData"][key]["m_value"] :
                     print(f'{enemy_key} has {key} Level Conflict')
                     errortest += 1
-                    if errortest == 1 : print("\n#########################################################\n###################     Error Test    ###################\n#########################################################")
+                    if errortest == 1 : print(print_header("Error Test"))
                 
         if len(database[enemy_key]) > 1 and abilitiescheck["all"]:
             if database[enemy_key][0]["enemyData"]["spData"] != database[enemy_key][1]["enemyData"]["spData"] and database[enemy_key][0]["enemyData"]["spData"] and database[enemy_key][1]["enemyData"]["spData"]:
                 print(f'{enemy_key} has spData Level Conflict')
                 errortest += 1
-                if errortest == 1 : print("\n#########################################################\n###################     Error Test    ###################\n#########################################################")
+                if errortest == 1 :  print(print_header("Error Test"))
 
         if len(handbook[enemy_key]["linkEnemies"]):
             linkenemies=[]
@@ -254,12 +256,11 @@ def enemy_ability_list(json_Database : dict,json_DatabaseEN : dict,json_Handbook
             
     ### print Data test
 
-    print('\n#########################################################\n###################     Data Test     ###################\n#########################################################')
+    print(print_header("Data Test"))
     print(f'\nDamage Type = {enemy_damageType}')
     print(f'Enemy Tags (Handbook "enemyTags") = {enemy_Tag}')
     print(f'Enemy Motion = {enemy_motion}')
-    print(f'Enemy Attack Type = {enemy_applyWay}')
-    print('\n')
+    print(f'Enemy Attack Type = {enemy_applyWay}\n')
     
     with open("test/enemy_database_stat.json",'w') as JSON :
         json.dump(enemy_database,JSON,indent = 4, ensure_ascii = False)
@@ -332,7 +333,8 @@ def Stage_Lister(stage_event : str, stage_code : str, stage_name : str, stage_id
         stageforenemylist = json_load(stage_filepath)
         for enemy in stageforenemylist["enemyDbRefs"]:
             enemy_id = enemy["id"]
-            if enemy["overwrittenData"]: enemy_id = enemy["overwrittenData"]["prefabKey"]["m_value"] if enemy["overwrittenData"]["prefabKey"]["m_defined"] else enemy["id"]
+            if enemy["overwrittenData"]: 
+                enemy_id = enemy["overwrittenData"]["prefabKey"]["m_value"] if enemy["overwrittenData"]["prefabKey"]["m_defined"] else enemy["id"]
             stage_collection["enemy"].setdefault(enemy_id,{}).setdefault(get_stage_gamemode(stage_event),{}).setdefault(stage_event,{}).setdefault(stage_zone,[]).append(stage_id)
 
     
@@ -410,26 +412,31 @@ def RA_rush_Lister(Rushgroup_config : dict, stage_event : str) -> int :
     return stage_counter
 
 def main_zone(stage_id : str,event_id : str) -> str :
+    if event_id.split("_")[-1] == "0" :
+        zone_prefix = "Prologue : "
+    else:
+        zone_prefix = f'EP{event_id.split("_")[-1]} : '
+    
     if stage_id.find("tr") != -1:
-        return "Training"
+        return f'{zone_prefix}Training'
     elif stage_id.find("easy") != -1:
-        return "Story Environment"
+        return f'{zone_prefix}Story Environment'
     elif stage_id.find("#f#") != -1:
-        return "Challenge"
+        return f'{zone_prefix}Challenge'
     elif stage_id.find("tough") != -1:
-        return "Adverse Environment"
+        return f'{zone_prefix}Adverse Environment'
     elif stage_id.find("hard") != -1:
         if int(event_id.split("_")[-1]) > 9:
-            return "Adverse Environment"
+            return f'{zone_prefix}Adverse Environment'
         elif int(event_id.split("_")[-1]) == 9:
-            return "Standard Environment"
+            return f'{zone_prefix}Standard Environment'
         else :
-            return "Normal"
+            return f'{zone_prefix}Normal'
     else:
         if int(event_id.split("_")[-1]) > 8:
-            return "Standard Environment"
+            return f'{zone_prefix}Standard Environment'
         else:
-            return "Normal"
+            return f'{zone_prefix}Normal'
 
 def IS_zone(stage_id : str, IS : str) -> str:
     '''IS = IS#??'''
@@ -533,7 +540,7 @@ def get_stage_gamemode(stage_event : str) -> str :
             return "is"
         elif stage_event.find("RA#") != -1:
             return "ra"
-        elif stage_event=="act17d1" or re.search(r"act[0-9]{1,2}vmulti",stage_event):
+        elif stage_event == "act17d1" or re.search(r"act[0-9]{1,2}vmulti",stage_event):
             return "coop"
         elif re.search(r"act[0-9]{1,2}(side|lock|mini|d0|d3|d5)",stage_event) or stage_event == "1stact":
             return "sidestory"
@@ -546,7 +553,7 @@ def get_stage_gamemode(stage_event : str) -> str :
 def decorator(collector) :
     def decorate(*args): 
         global stage_total       
-        count_stage(*args)
+        count_stage(args[0])
 
         collection_result = collector(*args)
 
@@ -604,7 +611,7 @@ def COOP_stage_collect(Fillerjson) :
     def COOP_main(COOP):
         stage_counter = 0
         for stagepath in COOP:
-            stage_name   = Fillerjson["stages"][stagepath.split("\\")[-1]]
+            stage_name   = Fillerjson["stage_name"][stagepath.split("\\")[-1]]
             stage_id     = stagepath.split("\\")[-1].split(".")[0].split("level_")[-1]
             
             stage_counter += Stage_Lister("act17d1",stage_id,stage_name,stage_id,stagepath,"act17d1",stagepath)
@@ -632,7 +639,7 @@ def CC_stage_collect(Fillerjson, json_CC, json_CC2, json_activityEN) :
             CC_Stage = [stage for stage in CC1 if re.search(rf'{stage_num}-.+\.json',stage)]+([f'json/gamedata/zh_CN/gamedata/levels/obt/rune\\{rotatestage}' for rotatestage in Fillerjson["CCRotate"][CC_Zone]] if CC_Zone in Fillerjson["CCRotate"] else [])
             
             for stagepath in CC_Stage:
-                stage_name   = Fillerjson["stages"][stagepath.split("\\")[-1]] if re.search(rf'{stage_num}-.+\.json',stagepath) else Fillerjson["stages"][stagepath.split("\\")[-1]].split(" (Main)")[0]
+                stage_name   = Fillerjson["stage_name"][stagepath.split("\\")[-1]] if re.search(rf'{stage_num}-.+\.json',stagepath) else Fillerjson["stage_name"][stagepath.split("\\")[-1]].split(" (Main)")[0]
                 stage_id     = stagepath.split("\\")[-1].split(".")[0].split("level_")[-1]
                 
                 stage_counter += Stage_Lister(CC_Zone,stage_id,stage_name,stage_id,stagepath,CC_Zone,stagepath)
@@ -646,7 +653,7 @@ def CC_stage_collect(Fillerjson, json_CC, json_CC2, json_activityEN) :
     def POT_main(POT):
         stage_counter = 0
         for stagepath in POT:
-            stage_name   = Fillerjson["stages"][stagepath.split("\\")[-1]]
+            stage_name   = Fillerjson["stage_name"][stagepath.split("\\")[-1]]
             stage_id     = stagepath.split("\\")[-1].split(".")[0].split("level_")[-1]
             
             stage_counter += Stage_Lister("PinchOut",stage_id,stage_name,stage_id,stagepath,"PinchOut",stagepath)
@@ -695,7 +702,7 @@ def CC_stage_collect(Fillerjson, json_CC, json_CC2, json_activityEN) :
             CC_Stage = [stage for stage in CC2 if re.search(rf'{stage_num}-.+\.json',stage)]+(["json/gamedata/zh_CN/gamedata/levels/obt/crisis/v2\\"+rotatestage for rotatestage in Fillerjson["CCRotate"][CC_Zone]] if CC_Zone in Fillerjson["CCRotate"].keys() else [])
             if CC == 0 : CC_Stage = list(filter(lambda x : re.search(rf'v2_01-0[^46]',x),CC_Stage))
             for stagepath in CC_Stage:
-                stage_name   = Fillerjson["stages"][stagepath.split("\\")[-1]] if re.search(rf'{stage_num}-.+\.json',stagepath) else Fillerjson["stages"][stagepath.split("\\")[-1]].split(" (Main)")[0]
+                stage_name   = Fillerjson["stage_name"][stagepath.split("\\")[-1]] if re.search(rf'{stage_num}-.+\.json',stagepath) else Fillerjson["stage_name"][stagepath.split("\\")[-1]].split(" (Main)")[0]
                 stage_id     = stagepath.split("\\")[-1].split(".")[0].split("level_")[-1]
 
                 stage_counter += Stage_Lister(CC_Zone,stage_id,stage_name,stage_id,stagepath,CC_Zone,stagepath)
@@ -1004,7 +1011,7 @@ def akenemy_collect(json_zone, json_zoneEN):
             akenemy["gamemode"][gamemode]["activity"] = {x[0]:x[1] for x in sort_event}
         if gamemode in ["main"]:
             for act in akenemy["gamemode"][gamemode]["activity"]:
-                sort_zone = sorted(akenemy["gamemode"][gamemode]["activity"][act]["zone"].items(), reverse = False, key = lambda zone : mainzone_sorter[zone[0]])
+                sort_zone = sorted(akenemy["gamemode"][gamemode]["activity"][act]["zone"].items(), reverse = False, key = lambda zone : mainzone_sorter[zone[0].split(" : ")[-1]])
                 akenemy["gamemode"][gamemode]["activity"][act]["zone"] = {x[0]:x[1] for x in sort_zone}
 
     akenemy["enemies"] = stage_collection["enemy"]

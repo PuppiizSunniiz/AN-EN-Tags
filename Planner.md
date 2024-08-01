@@ -1,4 +1,27 @@
 # Arknight-Image
+## Update
+#### Avatars : 
+    - New Char
+        - "Pepe","Narantuya","Sand Reckoner","Papyrus"
+    - Token
+        - Sand Reckoner 's Summon
+    - Skin
+        - Eyjafjalla the Hvit Aska /  Poncirus / Nightingale /  Hoederer / Weedy
+#### Characters :
+    - New Char (E1 E2)
+        - "Pepe","Narantuya","Sand Reckoner","Papyrus"
+    - Skin
+        - Eyjafjalla the Hvit Aska / Poncirus / Nightingale /  Hoederer / Weedy
+#### Enemy : 
+    - Inudi Harek, Horakhet Event & RA2 expansion (Maybe)
+#### Equip : 
+    - Eyjafjalla the Hvít Aska / Mulberry / Honeyberry / Harold / Chestnut / Kal'tsit / Phantom
+#### Skills :
+    - New Char
+        - "Pepe","Narantuya","Sand Reckoner","Papyrus"
+#### Ui -> Infrastructure :
+    - New Char
+        - "Pepe","Narantuya","Sand Reckoner","Papyrus"
 ## Schedule
 
 - Avatars : folder for ***char, token*** and ***skin*** avatar
@@ -7,19 +30,19 @@
 
 - Classes : Folder for char **class** icon (probably not add new one)
 
-- enemy : Folder for ***enemy*** handbook icon
+- Enemy : Folder for ***enemy*** handbook icon
 
-- equip : mod Folder
+- Equip : mod Folder
     - icon : Folder for ***char mod***
     - type : Folder for ***archetype mod*** icon
 
-- items : Folder for ***material***
+- Items : Folder for ***material***
 
-- skills : Folder for ***skill*** icon
+- Skills : Folder for ***skill*** icon
 
-- ui :
-    - infrastructure : Folder for ***RIIC skill*** icon
-    - subclass : Folder for ***archetype*** icon
+- Ui :
+    - Infrastructure : Folder for ***RIIC skill*** icon
+    - Subclass : Folder for ***archetype*** icon
 
 ---
 

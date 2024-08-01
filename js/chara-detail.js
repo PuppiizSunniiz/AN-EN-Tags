@@ -748,19 +748,21 @@
             $('#operatorsResult').hide();
             return;
         }
-        if(el.value != ""||el=="Browse"||el=="Browse2"||isenter&&el){
+        if(el.value != "" || el == "Browse" || el == "Browse2" || isenter && el){
             var result = [];
+
             $.each(db.chars2,function(_,char){
-                var languages = ['cn','en','jp','kr'];
-                var found = false;
-                if(el=="Browse"||el=="Browse2"){
-                    found=true;
+                var languages   = ['cn','en','jp','kr'];
+                var found       = false;
+
+                if(el == "Browse" || el == "Browse2"){
+                    found = true;
                 }else{
                     for (var i = 0; i < languages.length; i++) {
-                        var charname = char['name_'+languages[i]].toUpperCase();
-                        var unreadable = query(db.unreadNameTL,"name",char.name_en)
-                        var input = inputs.toUpperCase();
-                        var search = (unreadable?unreadable.name_en.toUpperCase().search(input):charname.search(input));
+                        var charname    = char['name_'+languages[i]].toUpperCase();
+                        var unreadable  = query(db.unreadNameTL,"name",char.name_en)
+                        var input       = inputs.toUpperCase();                        
+                        var search      = (unreadable ? (unreadable.name_en + charname).toUpperCase().search(input) : charname.search(input));
                         if(search != -1){
                             found = true;
                             break;

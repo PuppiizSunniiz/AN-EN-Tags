@@ -160,7 +160,7 @@
         "descformat": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by <@cc.vup>+0.05</> per hour."
     },
     "control_mp_cost[011]": {
-        "name": "Way of the Protector",
+        "name": "Art of Defense",
         "desc": "When stationed at the Command Center, mood recovery per hour of all operators in the Command Center +0.05",
         "descformat": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by <@cc.vup>+0.05</> per hour."
     },
@@ -302,7 +302,7 @@
     "control_dorm_rec[001]": {
         "name": "War Tattoos",
         "desc": "When stationed at the Command Center, mood recovery per hour of all operators in all Dorms +0.05 (Only highest effect becomes active)",
-        "descformat": "When this Operator is assigned to the Control Center,increases Morale of all Operators in all Dorms <@cc.vup>+0.05</> per hour (Only highest effect becomes active)"
+        "descformat": "When this Operator is assigned to the Control Center, all Operators in Dormitories recover <@cc.vup>+0.05</> Morale per hour (strongest effect of the same type applies)"
     },
     "control_train_spd[010]": {
         "name": "S.W.E.E.P. Director",
@@ -735,9 +735,9 @@
         "descformat": "When this Operator is assigned to a Factory, for every <@cc.vup>1</> <$cc.bd_C><@cc.rem>Witchcraft Crystal</></>, productivity <@cc.vup>+2%</>"
     },
     "manu_prod_spd_bd[300]": {
-        "name": "Abundant Grains, a Bountiful Harvest",
+        "name": "Where Stalks Grow Deep, Autumn Reaps",
         "desc": "When stationed at a Craft Station, production +1% for every 3 Worldly Plight",
-        "descformat": "When this Operator is assigned to a Factory, for every <@cc.vup>3</> <$cc.bd_b1><@cc.rem>Worldly Plight</></>, productivity <@cc.vup>+1%</> "
+        "descformat": "When this Operator is assigned to a Factory, for every <@cc.vup>3</> <$cc.bd_b1><@cc.rem>Worldly Plight</></>, Productivity <@cc.vup>+1%</>"
     },
     "manu_formula_spd[000]": {
         "name": "Plan to Victory",
@@ -840,9 +840,9 @@
         "descformat": "When this Operator is assigned to a Factory, <@cc.kw>ignore</> the effects of any Operators stationed in that Factory that would affect the Morale consumption of <@cc.kw>this Operator</>"
     },
     "manu_cost[000]": {
-        "name": "Heralding Spring, all Things Grow",
+        "name": "Spring Thunder Sounds, All Life Crowned",
         "desc": "When stationed at a Craft Station, mood reduction per hour of all operators in the same Station -0.1",
-        "descformat": "When this Operator is assigned to a Factory, Morale loss of Operators in the same Station <@cc.vup>-0.1</>"
+        "descformat": "When this Operator is assigned to a Factory, Morale consumed per hour of all Operators in the Factory <@cc.vup>-0.1</>"
     },
     "trade_cost[000]": {
         "name": "Warm-Up",
@@ -1215,7 +1215,7 @@
         "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, the production rate of byproduct increases by <@cc.vup>65%</>"
     },
     "workshop_proc_probability[032]": {
-        "name": "Heavenly Masters' Crafts",
+        "name": "Tianshi Bureau Artisanship",
         "desc": "When stationed at the Synthesis Station and producing any kind of material, increase the rate of by-products by 65%",
         "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, the production rate of byproduct increases by <@cc.vup>65%</>"
     },
@@ -1250,9 +1250,9 @@
         "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, reduces the Morale consumed by all formulas that cost <@cc.kw>4</> Morale or more by <@cc.vup>-2</>"
     },
     "workshop_formula_cost3[400]": {
-        "name": "Diligent Learner",
+        "name": "Tireless Study",
         "desc": "When stationed at the Synthesis Station and producing any kind of material, recipes which consume 4 mood will have -1 mood consumed",
-        "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, reduces the Morale consumed by all formulas that cost <@cc.kw>4</> Morale by <@cc.vup>-1</>"
+        "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, all formulas that cost <@cc.kw>4</> Morale now <@cc.vup>-1</> Morale cost"
     },
     "workshop_formula_recovery[000]": {
         "name": "'Explosion Arts'",
@@ -1570,7 +1570,7 @@
         "descformat": "When this Operator is assigned to a Workshop to process <@cc.kw>Elite materials</> with a base Morale cost of <@cc.kw>2</>, byproduct production chance is increased by <@cc.vup>40%</>"
     },
     "train_spd[001]": {
-        "name": "All-Rounder·α",
+        "name": "Master of Everything α",
         "desc": "When stationed at the Training Station, operator skill training speed +25%",
         "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+25%</>"
     },
@@ -1660,9 +1660,9 @@
         "descformat": "When this Operator is assigned to the Training Room to train an Operator for <@cc.vup>5</> hours in a single session, reduce the training time required for that operator's next training by <@cc.vup>50%</> (effect disappears if either operator leaves the Training Station)"
     },
     "train_spd_bd&reduceTime[000]": {
-        "name": "Thinking Before Action",
+        "name": "Think Before Acting",
         "desc": "When stationed at the Training Station, accumulate a certain amount of Bushido points whenever a Mastery training is completed. When the maximum number of Bushido points is accumulated, the next training for a Guard operator to Mastery 1 will be completed instantly and consume all Bushido points",
-        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, accumulate a certain amount of <$cc.t.accmuguard1><@cc.rem>Bushido</></> points whenever a Mastery training is completed. When the maximum number of <$cc.t.accmuguard1><@cc.rem>Bushido</></> points is accumulated, the next training for a <@cc.kw>Guard</> operator to <@cc.kw>Mastery 1</> will be completed instantly and consume all <$cc.t.accmuguard1><@cc.rem>Bushido</></> points"
+        "descformat": "When this Operator is assigned to be the Trainer of the Training Room, for every 1 Specialization training session completed, <$cc.t.accmuguard1><@cc.rem>Martial Arts</></> is accumulated. When <$cc.t.accmuguard1><@cc.rem>Martial Arts</></> reaches its cap, the next <@cc.kw>Guard</> Operator's skill Specialization training to level <@cc.kw>1</> is completed immediately, and all <$cc.t.accmuguard1><@cc.rem>Martial Arts</></> is removed."
     },
     "train_spd&profession[010]": {
         "name": "Vanguard Expert α",
@@ -2020,7 +2020,7 @@
         "descformat": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place)"
     },
     "dorm_rec_single[1010]": {
-        "name": "Empathetic",
+        "name": "Thoughtfulness",
         "desc": "When stationed at a Dorm, increase mood recovery of one random operator below maximum mood except self within that dorm by +0.55 per hour (When stacked, only the highest effect becomes active)",
         "descformat": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place)"
     },
@@ -2247,7 +2247,7 @@
     "dorm_rec_all&profession[000]": {
         "name": "Volcanic Hot Springs Bath",
         "desc": "When stationed at a Dorm, increase mood recovery of all operators within that dorm by +0.06 per hour for each Wandering Medic stationed in the base, up to 4 (excluding Assistants)",
-        "descformat": "When this Operator is assigned to a Dormitory, Morale recovery per hour of all Operators in that Dormitory <@cc.vup>+6%</> for each <@cc.kw>Wandering Medic</> Operator in the Base (excluding Assistants, caps at <@cc.kw>4</> Operators)"
+        "descformat": "When this Operator is assigned to a Dormitory, Morale recovery per hour of all Operators in that Dormitory <@cc.vup>+0.06</> for each <@cc.kw>Wandering Medic</> Operator in the Base (excluding Assistants; caps at <@cc.kw>4</> Operators; applies the strongest effect when assigned Operators have the same effect)."
     },
     "dorm_exchangeAp[000]": {
         "name": "Communal Suffering",
@@ -2275,7 +2275,7 @@
         "descformat": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.2</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
     },
     "dorm_rec_all[025]": {
-        "name": "Countryside Flutist",
+        "name": "Rural Flute",
         "desc": "When stationed at a Dorm, increase mood recovery of all operators within that dorm by +0.15 per hour (When stacked, only the highest effect becomes active)",
         "descformat": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.15</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
     },
@@ -2537,7 +2537,7 @@
     "meet_spd&exchange[000]": {
         "name": "Innocent Smile",
         "desc": "When stationed at Reception and Clue Exchange is in progress, clue collection speed +30%",
-        "descformat": "When this Operator is assigned to the Reception Room, increases Clue search speed by <@cc.vup>30%</>"
+        "descformat": "When this Operator is assigned to the Reception Room, if in Clue Exchange, increases Clue search speed by <@cc.vup>30%</>"
     },
     "meet_team[020]": {
         "name": "Royal Detective (Self Proclaimed)",

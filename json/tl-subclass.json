@@ -76,7 +76,8 @@
             "pusher",
             "traper",
             "dollkeeper",
-            "geek"
+            "geek",
+            "alchemist"
         ]
     },
     "subclass":{
@@ -113,7 +114,7 @@
         "musha":{
             "name":"Musha",
             "tl":"Musha",
-            "en":"Musha"
+            "en":"Soloblade"
         },
         "fighter":{
             "name":"Fighter",
@@ -132,12 +133,12 @@
         },
         "crusher":{
             "name":"Crusher",
-            "tl":"",
+            "tl":"Crusher",
             "en":"Crusher"
         },
         "hammer":{
             "name":"Earthshaker",
-            "tl":"",
+            "tl":"Earthshaker",
             "en":""
         },
 
@@ -235,8 +236,8 @@
         },
         "primcaster":{
             "name":"Primal Caster",
-            "tl":"",
-            "en":""
+            "tl":"Primal Caster",
+            "en":"Primal Caster"
         },
 
         "fastshot":{
@@ -276,13 +277,13 @@
         },
         "hunter":{
             "name":"Hunter",
-            "tl":"",
+            "tl":"Hunter",
             "en":"Hunter"
         },
         "loopshooter":{
             "name":"Loopshooter",
-            "tl":"",
-            "en":""
+            "tl":"Loopshooter",
+            "en":"Loopshooter"
         },
 
         "protector":{
@@ -313,12 +314,12 @@
         "fortress":{
             "name":"Fortress",
             "tl":"Fortress",
-            "en":""
+            "en":"Fortress"
         },
         "shotprotector":{
             "name":"Shot Protector",
             "tl":"Sentinel Iron Guard",
-            "en":"Sentinel Protector"
+            "en":"Sentry Protector"
         },
 
         "slower":{
@@ -353,7 +354,7 @@
         },
         "ritualist":{
             "name":"Ritualist",
-            "tl":"",
+            "tl":"Ritualist",
             "en":"Ritualist"
         },
 
@@ -396,6 +397,11 @@
             "name":"Geek",
             "tl":"Geek",
             "en":"Geek"
+        },
+        "alchemist":{
+            "name":"Alchemist",
+            "tl":"Alchemist",
+            "en":""
         }
     }
 }
