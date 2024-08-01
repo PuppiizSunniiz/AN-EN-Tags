@@ -1,12 +1,25 @@
 {
-    "攻击范围内的<@ba.kw>所有敌人</>，对自己前方一横排的敌人攻击力提升至160%": { // Spreadshooter Mod X
-        "en": "Attacks <@ba.kw>all enemies</> within range, and deals 160% damage to enemies in the row directly in front of this unit.",
-        "color": "extra"
+    "": {   # Wandering medic mod // <@ba.kw>{ep_heal_ratio:0%}</> already have
+        "en": "Restores the HP of allied units and recovers <@ba.dt.element>Elemental Damage</> by 60% of ATK (can recover <@ba.dt.element>Elemental Damage</> of unhurt allied units)",
+        "color": "heal",
+        "note" : "Wandering Medic Mod"
+    },
+    "": {   # kal 3rd mod (IS)
+        "en": "Restores the HP of allies; In [Integrated Strategies] Restores the HP of 2 allies simultaneously",
+        "color": "heal",
+        "note" : "Kal'tsit IS excl Mod"
+    },
+    "": {   # phantom 3rd mod (IS)
+        "en": "Significantly <@ba.kw>reduced</> Redeployment Time; In [Integrated Strategies] when Phantom and his summon attack, reduce redeployment time by 1 second",
+        "color": "extra",
+        "note" : "Phantom IS excl Mod"
+    }
 }
 
-#template
+#template  // waiting for Earthshaker and Alchemist official EN trait
 ,
     "": {
         "en": "",
-        "color": ""
+        "color": "",
+        "note" : ""
     }

@@ -1,8 +1,8 @@
 {
-    "skchr_ABCDEF_1": {     # Nymph     //
+    "skchr_ABCDEF_1": # Pepe{
         "name": "",
         "desc": [
-            "ATK <@ba.vup>+{atk:0%}</>, attacks deal an additional <@ba.vup>{attack@ep_damage_ratio:0%}</> of Arts damage as <$ba.dt.apoptosis2>Necrosis damage</>; if target is under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, deal an additional <@ba.vup>{attack@extra_ep_damage_scale:0%}</> ATK as Elemental damage",
+            "Next attack deal {%atk} of ATK as Physical damage,\n<@ba.rem>Skill can be used when Operator is affected by a Negative Status, removing the status</br><@ba.rem>Can hold {} charge</>",
             "",
             "",
             "",
@@ -14,10 +14,10 @@
             ""
         ] 
     },
-    "skchr_ABCDEF_2": {     # Nymph     //
+    "skchr_ABCDEF_2": # Pepe{
         "name": "",
         "desc": [
-            "Deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and inflict <$ba.dt.fear>fear</> for <@ba.vup>{duration}</> seconds to target to nearby enemies then dealing same amount Arts damage to nearby enemies. Both attack deal an additional <@ba.vup>{attack@ep_damage_ratio:0%}</> of Arts damage as <$ba.dt.apoptosis2>Necrosis damage</>; if target is under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, increase effect of the First/Second talent to <@ba.vup>{scale_delta_to_one}</>x\n<@ba.rem>Can hold {2} charge</>",
+            "Attack Range <@ba.vup>expand</>, ASPD {+}, ATK {+}, randomly attack enemies in Attack Range, each skill activation ASPD {+} for next skill activation (can stack {} times)",
             "",
             "",
             "",
@@ -29,10 +29,10 @@
             ""
         ] 
     },
-    "skchr_ABCDEF_3": {     # Nymph     //
+    "skchr_ABCDEF_3": # Pepe{
         "name": "",
         "desc": [
-            "Attack Range <@ba.vup>increases</>, ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, attack <@ba.vup>1</> additional target; if target is under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, deal an additional <@ba.vup>{attack@extra_ep_damage_scale:0%}</> ATK as Elemental damage",
+            "Attack Interval <@ba.vdown>increases slightly</>, ATK {+%}, attack <$ba.stun>stun</> enemies for {} seconds while <$ba.stun>stun</> main target for {} second, after every attack splash area <@ba.vup>increases</>, and ATK {+%}",
             "",
             "",
             "",
@@ -44,10 +44,10 @@
             ""
         ] 
     },
-    "skchr_ABCDEF_1": {     #Mitm s1        // DP ATK
+    "skchr_ABCDEF_1": # Narantuya{
         "name": "",
         "desc": [
-            "Immediately gains <@ba.vup>{ABCDEF_s_1[once].cost}</> Deployment Points. Detonates Cherry-3 and dealing <@ba.vup>+{atk:0%}</> as Physical damage to enemies within the four surrounding tiles.",
+            "<@ba.rem>Can switch between the initial state and the following state: </>\nAttack Range<@ba.vup> reduced</>, attacks deal {atk%} of ATK as Physical damage, can bounce between enemies {cnt} times",
             "",
             "",
             "",
@@ -59,10 +59,85 @@
             ""
         ] 
     },
-    "skchr_ABCDEF_2": {     #Mitm s2        // DP ATK Block DEF
+    "skchr_ABCDEF_2": # Narantuya{
         "name": "",
         "desc": [
-            "Gradually gains <@ba.vup>{value}</> DP over the skill duration. ATK <@ba.vup>+{atk:0%}</>. Cherry-3 stops attacking; Block <@ba.vup>+{block_cnt}</>, DEF <@ba.vup>+{def:0%}</>\n<@ba.rem>Detonates Cherry-3 when skill ends</>",
+            "Attacks deal {atk%} of ATK as Physical damage and <$ba.sluggish>slow</> enemies for {slow} seconds, projectile pause for a short time then deal {atk%} of ATK as Physical damage to enemies it passes through while returning",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ] 
+    },
+    "skchr_ABCDEF_3": # Narantuya{
+        "name": "",
+        "desc": [
+            "Each attack fire {} more projectiles, when recover all projectiles deal {atk%} of ATK as Physical damage and <$ba.sluggish>slow</> enemies for {slow} seconds to enemies in the 8 surrounding tiles",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ] 
+    },
+    "skchr_ABCDEF_1": # Sand Reckoner{ //{ATK%} {ASPD}
+        "name": "",
+        "desc": [
+            "Sand Reckoner and Clockwork Fowlbeasts gain +{ATK%} ATK and {ASPD} ASPD",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ] 
+    },
+    "skchr_ABCDEF_2": # Sand Reckoner{ // {ATK%} {slow}
+        "name": "",
+        "desc": [
+            "Summons +{ATK%}, priortize enemies with the highest weight, <$ba.sluggish>slow</> enemies for {slow} seconds",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ] 
+    },
+    "skchr_ABCDEF_1": # Papyrus { //{healeff%}  {talent}
+        "name": "",
+        "desc": [
+            "Increases the healing effectiveness of next heal to/by {healeff%} and the effect of the First Talent is increased to/by {talent}times",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ] 
+    },
+    "skchr_ABCDEF_2": # Papyrus{ //#slightly #moderately #significantly #greatly {ATK%} {bounce}
+        "name": "",
+        "desc": [
+            "Attack interval <@ba.kw>reduced</>, +{ATK%} ATK, bounces per heal +{bounce};Papyrus only heal other highest Max HP operator in Attack Range as Primary target",
             "",
             "",
             "",
@@ -93,3 +168,8 @@
             ""
         ] 
     }
+
+    <@ba.talpu>---</>
+    <@ba.kw>------</>
+    //Attack interval & shift
+        - slightly moderately significantly greatly

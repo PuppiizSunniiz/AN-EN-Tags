@@ -912,6 +912,22 @@
             "name": "Concealed-1",
             "Event": "main_3"
         },
+        "tr_s_1": {
+            "stageId": "tr_s_1",
+            "levelId": "Obt/Training/level_training_sub_1",
+            "zoneId": "Prologue : Training",
+            "code": "TR-S-1",
+            "name": "综合作战训练1",
+            "Event": "main_0"
+        },
+        "tr_s_2": {
+            "stageId": "tr_s_2",
+            "levelId": "Obt/Training/level_training_sub_2",
+            "zoneId": "EP2 : Training",
+            "code": "TR-S-2",
+            "name": "综合作战训练2",
+            "Event": "main_2"
+        },
         "main_04-01": {
             "stageId": "main_04-01",
             "levelId": "Obt/Main/level_main_04-01",
@@ -5375,6 +5391,86 @@
             "code": "PR-D-2",
             "name": "Assault",
             "Event": "weekly_4"
+        },
+        "act35side_01": {
+            "stageId": "act35side_01",
+            "levelId": "Activities/act35side/level_act35side_01",
+            "zoneId": "act35side_zone1",
+            "code": "AS-1",
+            "name": "节前热身",
+            "Event": "act35side"
+        },
+        "act35side_tr01": {
+            "stageId": "act35side_tr01",
+            "levelId": "Activities/act35side/level_act35side_tr01",
+            "zoneId": "act35side_zone1",
+            "code": "AS-TR-1",
+            "name": "护卫队演练",
+            "Event": "act35side"
+        },
+        "act35side_02": {
+            "stageId": "act35side_02",
+            "levelId": "Activities/act35side/level_act35side_02",
+            "zoneId": "act35side_zone1",
+            "code": "AS-2",
+            "name": "馆中特别行动",
+            "Event": "act35side"
+        },
+        "act35side_03": {
+            "stageId": "act35side_03",
+            "levelId": "Activities/act35side/level_act35side_03",
+            "zoneId": "act35side_zone1",
+            "code": "AS-3",
+            "name": "相约大巴扎",
+            "Event": "act35side"
+        },
+        "act35side_04": {
+            "stageId": "act35side_04",
+            "levelId": "Activities/act35side/level_act35side_04",
+            "zoneId": "act35side_zone1",
+            "code": "AS-4",
+            "name": "家传金拖鞋",
+            "Event": "act35side"
+        },
+        "act35side_05": {
+            "stageId": "act35side_05",
+            "levelId": "Activities/act35side/level_act35side_05",
+            "zoneId": "act35side_zone1",
+            "code": "AS-5",
+            "name": "文物也上班",
+            "Event": "act35side"
+        },
+        "act35side_06": {
+            "stageId": "act35side_06",
+            "levelId": "Activities/act35side/level_act35side_06",
+            "zoneId": "act35side_zone1",
+            "code": "AS-6",
+            "name": "过往云烟",
+            "Event": "act35side"
+        },
+        "act35side_07": {
+            "stageId": "act35side_07",
+            "levelId": "Activities/act35side/level_act35side_07",
+            "zoneId": "act35side_zone1",
+            "code": "AS-7",
+            "name": "谁是宠物？",
+            "Event": "act35side"
+        },
+        "act35side_08": {
+            "stageId": "act35side_08",
+            "levelId": "Activities/act35side/level_act35side_08",
+            "zoneId": "act35side_zone1",
+            "code": "AS-8",
+            "name": "黄沙尽头",
+            "Event": "act35side"
+        },
+        "act35side_09": {
+            "stageId": "act35side_09",
+            "levelId": "Activities/act35side/level_act35side_09",
+            "zoneId": "act35side_zone1",
+            "code": "AS-9",
+            "name": "向过去告别",
+            "Event": "act35side"
         },
         "act17mini_01": {
             "stageId": "act17mini_01",
@@ -21403,7 +21499,8 @@
             "tr_04",
             "tr_05",
             "tr_06",
-            "tr_07"
+            "tr_07",
+            "tr_s_1"
         ],
         "EP1 : Normal": [
             "main_01-01",
@@ -21440,7 +21537,8 @@
             "tr_11",
             "tr_12",
             "tr_13",
-            "tr_14"
+            "tr_14",
+            "tr_s_2"
         ],
         "EP2 : Normal": [
             "main_02-01",
@@ -22157,6 +22255,18 @@
         "weekly_4": [
             "pro_d_1",
             "pro_d_2"
+        ],
+        "act35side_zone1": [
+            "act35side_01",
+            "act35side_tr01",
+            "act35side_02",
+            "act35side_03",
+            "act35side_04",
+            "act35side_05",
+            "act35side_06",
+            "act35side_07",
+            "act35side_08",
+            "act35side_09"
         ],
         "act17mini_zone1": [
             "act17mini_01",
@@ -24811,6 +24921,9 @@
         "weekly_4": [
             "weekly_4"
         ],
+        "act35side": [
+            "act35side_zone1"
+        ],
         "act17mini": [
             "act17mini_zone1"
         ],
@@ -26292,7 +26405,8 @@
                         "main_02-06#f#"
                     ],
                     "EP2 : Training": [
-                        "tr_13"
+                        "tr_13",
+                        "tr_s_2"
                     ]
                 },
                 "main_4": {
@@ -27498,6 +27612,9 @@
                         "main_02-04#f#",
                         "main_02-05#f#",
                         "main_02-07#f#"
+                    ],
+                    "EP2 : Training": [
+                        "tr_s_2"
                     ]
                 },
                 "main_3": {
@@ -27506,6 +27623,11 @@
                     ],
                     "EP3 : Challenge": [
                         "main_03-04#f#"
+                    ]
+                },
+                "main_0": {
+                    "Prologue : Training": [
+                        "tr_s_1"
                     ]
                 },
                 "main_4": {
@@ -28483,7 +28605,8 @@
                 "main_2": {
                     "EP2 : Training": [
                         "tr_12",
-                        "tr_13"
+                        "tr_13",
+                        "tr_s_2"
                     ],
                     "EP2 : Normal": [
                         "main_02-04",
@@ -29654,6 +29777,9 @@
                     ],
                     "EP2 : Challenge": [
                         "main_02-10#f#"
+                    ],
+                    "EP2 : Training": [
+                        "tr_s_2"
                     ]
                 },
                 "main_4": {
@@ -29885,6 +30011,11 @@
                         "main_03-01#f#",
                         "main_03-02#f#",
                         "main_03-04#f#"
+                    ]
+                },
+                "main_0": {
+                    "Prologue : Training": [
+                        "tr_s_1"
                     ]
                 },
                 "main_5": {
@@ -48166,6 +48297,160 @@
                         "RA#2_monthly_1",
                         "RA#2_monthly_1",
                         "RA#2_monthly_1"
+                    ]
+                }
+            }
+        },
+        "enemy_10009_sggem": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_01",
+                        "act35side_tr01",
+                        "act35side_02",
+                        "act35side_03",
+                        "act35side_04",
+                        "act35side_05",
+                        "act35side_06",
+                        "act35side_07",
+                        "act35side_08",
+                        "act35side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10010_sgnja": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_01",
+                        "act35side_tr01",
+                        "act35side_02",
+                        "act35side_03",
+                        "act35side_04",
+                        "act35side_05",
+                        "act35side_06",
+                        "act35side_07",
+                        "act35side_08",
+                        "act35side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10011_sgshot": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_01",
+                        "act35side_02",
+                        "act35side_04",
+                        "act35side_08",
+                        "act35side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10012_sgbtle": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_tr01",
+                        "act35side_02",
+                        "act35side_05",
+                        "act35side_07",
+                        "act35side_08",
+                        "act35side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10016_sggint": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_03",
+                        "act35side_04",
+                        "act35side_08",
+                        "act35side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10013_sgrob": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_04",
+                        "act35side_05",
+                        "act35side_07",
+                        "act35side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10018_sgrobh": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_05",
+                        "act35side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10014_sgrich": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_06",
+                        "act35side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10017_sgass": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_06"
+                    ]
+                }
+            }
+        },
+        "enemy_10015_sgbird": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_07",
+                        "act35side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10020_sgcat": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_07"
+                    ]
+                }
+            }
+        },
+        "enemy_10019_sgmum": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_08",
+                        "act35side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_1558_sgactr": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_09"
                     ]
                 }
             }

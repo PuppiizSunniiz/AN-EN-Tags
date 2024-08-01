@@ -7155,5 +7155,130 @@
                 "desc": "Increas continuous damage taken by ground enemies within alchemist unit range by 22%<@ba.talpu>(+2%)</>"
             }
         ]
+    ],
+	"char_4058_pepe": [
+        [
+            {
+                "name": "往昔传承",
+                "descCN": "技能期间每击倒1名敌人，技能结束时获得1点技力，至多回复10点",
+                "desc": "For each kills while skill is activated, recover 1 skill point after skill ends (can stack 10 times)"
+            },
+            {
+                "name": "往昔传承",
+                "descCN": "技能期间每击倒1名敌人，技能结束时获得1点技力，至多回复13<@ba.talpu>（+3）</>点",
+                "desc": "For each kills while skill is activated, recover 1 skill point after skill ends (can stack 13<@ba.talpu>(+3)</> times)"
+            },
+            {
+                "name": "往昔传承",
+                "descCN": "技能期间每击倒1名敌人，技能结束时获得1点技力，至多回复14点",
+                "desc": "For each kills while skill is activated, recover 1 skill point after skill ends (can stack 14 times)"
+            },
+            {
+                "name": "往昔传承",
+                "descCN": "技能期间每击倒1名敌人，技能结束时获得1点技力，至多回复17<@ba.talpu>（+3）</>点",
+                "desc": "For each kills while skill is activated, recover 1 skill point after skill ends (can stack 17<@ba.talpu>(+3)</> times)"
+            }
+        ],
+        [
+            {
+                "name": "弥漫莲香",
+                "descCN": "在场时，所有【近卫】干员的攻击力+16%",
+                "desc": "When deployed all [Guard] operators ATK+16%"
+            },
+            {
+                "name": "弥漫莲香",
+                "descCN": "在场时，所有【近卫】干员的攻击力+20%<@ba.talpu>（+4%）</>",
+                "desc": "When deployed all [Guard] operators ATK+20%<@ba.talpu>(+4%)</>"
+            }
+        ]
+    ],
+    "char_4138_narant": [
+        [
+            {
+                "name": "“我见，我得”",
+                "descCN": "在场时，每次攻击到敌人<$ba.steal>偷取</>其15点攻击力（最高150点）与10点防御力（最高100点）",
+                "desc": "When on field, each attack <$ba.steal>steals</> 15 ATK (up to 150 ATK), 10 DEF (up to 100 DEF)"
+            },
+            {
+                "name": "“我见，我得”",
+                "descCN": "在场时，每次攻击到敌人<$ba.steal>偷取</>其17<@ba.talpu>（+2）</>点攻击力（最高170<@ba.talpu>（+20）</>点）与11<@ba.talpu>（+1）</>点防御力（最高110<@ba.talpu>（+10）</>点）",
+                "desc": "When on field, each attack <$ba.steal>steals</> 17<@ba.talpu>(+2)</> ATK (up to 170<@ba.talpu>(+20)</> ATK), 11<@ba.talpu>(+1)</> DEF (up to 110<@ba.talpu>(+10)</> DEF)"
+            },
+            {
+                "name": "“我见，我得”",
+                "descCN": "在场时，每次攻击到敌人<$ba.steal>偷取</>其25点攻击力（最高250点）与20点防御力（最高200点）",
+                "desc": "When on field, each attack <$ba.steal>steals</> 25 ATK (up to 250 ATK), 20 DEF (up to 200 DEF)"
+            },
+            {
+                "name": "“我见，我得”",
+                "descCN": "在场时，每次攻击到敌人<$ba.steal>偷取</>其27<@ba.talpu>（+2）</>点攻击力（最高270<@ba.talpu>（+20）</>点）与21<@ba.talpu>（+1）</>点防御力（最高210<@ba.talpu>（+10）</>点）",
+                "desc": "When on field, each attack <$ba.steal>steals</> 27<@ba.talpu>(+2)</> ATK (up to 270<@ba.talpu>(+20)</> ATK), 21<@ba.talpu>(+1)</> DEF (up to 210<@ba.talpu>(+10)</> DEF)"
+            }
+        ],
+        [
+            {
+                "name": "婀娜虚影",
+                "descCN": "获得35%的物理与法术闪避，周围8格内敌人的物理与法术命中率-20%",
+                "desc": "Has 35% Physical and Arts Dodge, inflict -20% Physical and Arts Accuracy to enemies in the 8 surrounding tiles"
+            },
+            {
+                "name": "婀娜虚影",
+                "descCN": "获得38%<@ba.talpu>（+3%）</>的物理与法术闪避，周围8格内敌人的物理与法术命中率-20%",
+                "desc": "Has 38%<@ba.talpu>(+3%)</> Physical and Arts Dodge, inflict -20% Physical and Arts Accuracy to enemies in the 8 surrounding tiles"
+            }
+        ]
+    ],
+    "char_4140_lasher": [
+        [
+            {
+                "name": "工匠遗训",
+                "descCN": "可以使用3个发条羽兽召唤物。发条羽兽和衡沙对机械敌人伤害提升10%",
+                "desc": "Can use 3 Clockwork Fowlbeasts. Sand Reckoner and Clockwork Fowlbeasts deal increase damage to mechanical enemies by 10%"
+            },
+            {
+                "name": "工匠遗训",
+                "descCN": "可以使用4个发条羽兽召唤物。发条羽兽和衡沙对机械敌人伤害提升20%",
+                "desc": "Can use 4 Clockwork Fowlbeasts. Sand Reckoner and Clockwork Fowlbeasts deal increase damage to mechanical enemies by 20%"
+            },
+            {
+                "name": "工匠遗训",
+                "descCN": "可以使用5个发条羽兽召唤物。发条羽兽和衡沙对机械敌人伤害提升20%",
+                "desc": "Can use 5 Clockwork Fowlbeasts. Sand Reckoner and Clockwork Fowlbeasts deal increase damage to mechanical enemies by 20%"
+            }
+        ]
+    ],
+    "char_4139_papyrs": [
+        [
+            {
+                "name": "博览古卷",
+                "descCN": "治疗会为目标干员附加相当于自身5%攻击力的<$ba.barrier>屏障</>，持续8秒",
+                "desc": "Heal also grant <$ba.barrier>Barrier</> equal to 5% of target ATK for 8 seconds"
+            },
+            {
+                "name": "博览古卷",
+                "descCN": "治疗会为目标干员附加相当于自身7%<@ba.talpu>（+2%）</>攻击力的<$ba.barrier>屏障</>，持续8秒",
+                "desc": "Heal also grant <$ba.barrier>Barrier</> equal to 7%<@ba.talpu>(+2%)</> of target ATK for 8 seconds"
+            },
+            {
+                "name": "博览古卷",
+                "descCN": "治疗会为目标干员附加相当于自身10%攻击力的<$ba.barrier>屏障</>，持续8秒",
+                "desc": "Heal also grant <$ba.barrier>Barrier</> equal to 10% of target ATK for 8 seconds"
+            },
+            {
+                "name": "博览古卷",
+                "descCN": "治疗会为目标干员附加相当于自身12%<@ba.talpu>（+2%）</>攻击力的<$ba.barrier>屏障</>，持续8秒",
+                "desc": "Heal also grant <$ba.barrier>Barrier</> equal to 12%<@ba.talpu>(+2%)</> of target ATK for 8 seconds"
+            },
+            {
+                "name": "博览古卷",
+                "descCN": "治疗会为目标干员附加相当于自身20%攻击力的<$ba.barrier>屏障</>，持续8秒",
+                "desc": "Heal also grant <$ba.barrier>Barrier</> equal to 20% of target ATK for 8 seconds"
+            },
+            {
+                "name": "博览古卷",
+                "descCN": "治疗会为目标干员附加相当于自身22%<@ba.talpu>（+2%）</>攻击力的<$ba.barrier>屏障</>，持续8秒",
+                "desc": "Heal also grant <$ba.barrier>Barrier</> equal to 22%<@ba.talpu>(+2%)</> of target ATK for 8 seconds"
+            }
+        ]
     ]
 }

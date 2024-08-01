@@ -1,10 +1,10 @@
 {
-    "char_XXXX_ABCDEF": [ <<<  # Nymph   // Talent 1 : 
+    "char_XXXX_ABCDEF": [   # Pepe   // Talent 1 : 
                                         // Talent 2 : 
         [
             {
                 "name": "",
-                "desc": "When attacking target under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, deal an additional <@ba.vup>{attack@extra_ep_damage_scale:0%}</> ATK as Elemental damage per second until the burst effect of <$ba.dt.apoptosis2>Necrosis damage</> end"
+                "desc": "For each kills while skill is activated, recover 1 skill point after skill ends (can stack {} times)"
             },
             {
                 "name": "<@ba.talpu></>",
@@ -14,7 +14,7 @@
         [
             {
                 "name": "",
-                "desc": "When attacking target under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, deal an additional <@ba.vup>{attack@extra_ep_damage_scale:0%}</> ATK as Elemental damage per second until the burst effect of <$ba.dt.apoptosis2>Necrosis damage</> end"
+                "desc": "When deployed all Guard operators gain {+%} ATK"
             },
             {
                 "name": "<@ba.talpu></>",
@@ -22,11 +22,50 @@
             }
         ]
     ],
-    "char_XXXX_ABCDEF": [ <<<  # Mitm   // Talent 1 : 
+    "char_XXXX_ABCDEF": [   # Narantuya   // Talent 1 : 
+                                        // Talent 2 : 
         [
             {
                 "name": "",
-                "desc": "Can summon Cherry-3 to assist in combat from a Tactical Point; Cherry-3 will automatically respawn 15s after being defeated and create Debris in the 4 surrounding tiles"
+                "desc": "Attack <$ba.steal>steals</> {} ATK, {} DEF (can stack {} time)"
+            },
+            {
+                "name": "<@ba.talpu></>",
+                "desc": "Attack <$ba.steal>steals</> {} ATK, {} DEF (can stack {}<@ba.talpu>(+)</> time)"
+            }
+        ],
+        [
+            {
+                "name": "",
+                "desc": "{+%} Physical and Arts Dodge, inflict {-%} Physical and Arts Accuracy to enemies in the 8 surrounding tiles"
+            },
+            {
+                "name": "<@ba.talpu></>",
+                "desc": ""
+            }
+        ]
+    ],
+    "char_XXXX_ABCDEF": [   # Sand Reckoner   // Talent 1 : 
+        [
+            {
+                "name": "",
+                "desc": "Sand Reckoner and his summon deal {dmg%} damage to mechanical enemies"
+            },
+            {
+                "name": "<@ba.talpu></>",
+                "desc": "Sand Reckoner and his summon deal {dmg%}<@ba.talpu>(+%)</> damage to mechanical enemies"
+            }
+        ]
+    ],
+    "char_XXXX_ABCDEF": [   # Papyrus   // Talent 1 : 
+        [
+            {
+                "name": "",
+                "desc": "Heal also grant {barrier%}<$ba.barrier>Barrier</> to target for {duration} seconds"
+            },
+            {
+                "name": "",
+                "desc": "Heal also grant {barrier%}<@ba.talpu>(+%)</> <$ba.barrier>Barrier</> to target for {duration} seconds"
             }
         ]
     ]

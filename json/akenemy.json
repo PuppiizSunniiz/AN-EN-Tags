@@ -15,7 +15,8 @@
                                 "tr_04": "TR-4 : Vanguard",
                                 "tr_05": "TR-5 : Originium Arts",
                                 "tr_06": "TR-6 : AoE Attacks",
-                                "tr_07": "TR-7 : Combat Skills"
+                                "tr_07": "TR-7 : Combat Skills",
+                                "tr_s_1": "TR-S-1 : 综合作战训练1"
                             }
                         },
                         "Prologue : Normal": {
@@ -106,7 +107,8 @@
                                 "tr_11": "TR-11 : Tactical Blockage",
                                 "tr_12": "TR-12 : Casters",
                                 "tr_13": "TR-13 : Proactive Deployment",
-                                "tr_14": "TR-14 : Terrain Attack"
+                                "tr_14": "TR-14 : Terrain Attack",
+                                "tr_s_2": "TR-S-2 : 综合作战训练2"
                             }
                         },
                         "EP2 : Normal": {
@@ -3007,6 +3009,26 @@
                             }
                         }
                     }
+                },
+                "act35side": {
+                    "name": "[AS] : Inudi Harek, Horakhet",
+                    "zone": {
+                        "act35side_zone1": {
+                            "name": "市民花园",
+                            "stage": {
+                                "act35side_01": "AS-1 : 节前热身",
+                                "act35side_tr01": "AS-TR-1 : 护卫队演练",
+                                "act35side_02": "AS-2 : 馆中特别行动",
+                                "act35side_03": "AS-3 : 相约大巴扎",
+                                "act35side_04": "AS-4 : 家传金拖鞋",
+                                "act35side_05": "AS-5 : 文物也上班",
+                                "act35side_06": "AS-6 : 过往云烟",
+                                "act35side_07": "AS-7 : 谁是宠物？",
+                                "act35side_08": "AS-8 : 黄沙尽头",
+                                "act35side_09": "AS-9 : 向过去告别"
+                            }
+                        }
+                    }
                 }
             }
         },
@@ -5036,6 +5058,7 @@
         "weekly_2": "PR-B : Fierce Attack (Snipers & Casters)",
         "weekly_3": "PR-C : Unstoppable Charge (Vanguards & Supporters)",
         "weekly_4": "PR-D : Fearless Protection (Guards & Specialists)",
+        "act35side": "[AS] : Inudi Harek, Horakhet",
         "act17mini": "[KR] : A Kazdelian Rescue",
         "act34side": "[BP] : Path of Life",
         "act2vmulti": "[IG] : Rhodes Island Icebreaker Games",
@@ -6168,7 +6191,8 @@
                         "main_02-06#f#"
                     ],
                     "EP2 : Training": [
-                        "tr_13"
+                        "tr_13",
+                        "tr_s_2"
                     ]
                 },
                 "main_4": {
@@ -7374,6 +7398,9 @@
                         "main_02-04#f#",
                         "main_02-05#f#",
                         "main_02-07#f#"
+                    ],
+                    "EP2 : Training": [
+                        "tr_s_2"
                     ]
                 },
                 "main_3": {
@@ -7382,6 +7409,11 @@
                     ],
                     "EP3 : Challenge": [
                         "main_03-04#f#"
+                    ]
+                },
+                "main_0": {
+                    "Prologue : Training": [
+                        "tr_s_1"
                     ]
                 },
                 "main_4": {
@@ -8359,7 +8391,8 @@
                 "main_2": {
                     "EP2 : Training": [
                         "tr_12",
-                        "tr_13"
+                        "tr_13",
+                        "tr_s_2"
                     ],
                     "EP2 : Normal": [
                         "main_02-04",
@@ -9530,6 +9563,9 @@
                     ],
                     "EP2 : Challenge": [
                         "main_02-10#f#"
+                    ],
+                    "EP2 : Training": [
+                        "tr_s_2"
                     ]
                 },
                 "main_4": {
@@ -9761,6 +9797,11 @@
                         "main_03-01#f#",
                         "main_03-02#f#",
                         "main_03-04#f#"
+                    ]
+                },
+                "main_0": {
+                    "Prologue : Training": [
+                        "tr_s_1"
                     ]
                 },
                 "main_5": {
@@ -28042,6 +28083,160 @@
                         "RA#2_monthly_1",
                         "RA#2_monthly_1",
                         "RA#2_monthly_1"
+                    ]
+                }
+            }
+        },
+        "enemy_10009_sggem": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_01",
+                        "act35side_tr01",
+                        "act35side_02",
+                        "act35side_03",
+                        "act35side_04",
+                        "act35side_05",
+                        "act35side_06",
+                        "act35side_07",
+                        "act35side_08",
+                        "act35side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10010_sgnja": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_01",
+                        "act35side_tr01",
+                        "act35side_02",
+                        "act35side_03",
+                        "act35side_04",
+                        "act35side_05",
+                        "act35side_06",
+                        "act35side_07",
+                        "act35side_08",
+                        "act35side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10011_sgshot": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_01",
+                        "act35side_02",
+                        "act35side_04",
+                        "act35side_08",
+                        "act35side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10012_sgbtle": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_tr01",
+                        "act35side_02",
+                        "act35side_05",
+                        "act35side_07",
+                        "act35side_08",
+                        "act35side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10016_sggint": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_03",
+                        "act35side_04",
+                        "act35side_08",
+                        "act35side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10013_sgrob": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_04",
+                        "act35side_05",
+                        "act35side_07",
+                        "act35side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10018_sgrobh": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_05",
+                        "act35side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10014_sgrich": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_06",
+                        "act35side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10017_sgass": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_06"
+                    ]
+                }
+            }
+        },
+        "enemy_10015_sgbird": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_07",
+                        "act35side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10020_sgcat": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_07"
+                    ]
+                }
+            }
+        },
+        "enemy_10019_sgmum": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_08",
+                        "act35side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_1558_sgactr": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone1": [
+                        "act35side_09"
                     ]
                 }
             }

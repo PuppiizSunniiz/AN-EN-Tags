@@ -832,5 +832,253 @@
                 "upgradeDescription": "When deployed, increases the SP recovery rate of all Casters by +0.6/second, increase herself by +0.9/second (only the highest effect of this type takes place)"
             }
         ]
+    ],
+    "uniequip_002_lasher": [
+        [
+            {
+                "name": "工匠遗训",
+                "CN": "可以使用5个发条羽兽召唤物。发条羽兽和衡沙对机械敌人伤害提升20%",
+                "mod": "可以使用5个发条羽兽，发条羽兽和衡沙对机械敌人伤害提升20%，发条羽兽攻击速度+5",
+                "upgradeDescription": "Can use 5 Clockwork Fowlbeasts. Sand Reckoner and Clockwork Fowlbeasts deal increase damage to mechanical enemies by 20%, Clockwork Fowlbeasts ASPD +5"
+            }
+        ],
+        [
+            {
+                "name": "工匠遗训",
+                "CN": "可以使用5个发条羽兽召唤物。发条羽兽和衡沙对机械敌人伤害提升20%",
+                "mod": "可以使用5个发条羽兽，发条羽兽和衡沙对机械敌人伤害提升20%，发条羽兽攻击速度+8",
+                "upgradeDescription": "Can use 5 Clockwork Fowlbeasts. Sand Reckoner and Clockwork Fowlbeasts deal increase damage to mechanical enemies by 20%, Clockwork Fowlbeasts ASPD +8"
+            }
+        ]
+    ],
+    "uniequip_002_agoat2": [
+        [
+            {
+                "name": "Volcanic Ash Remedy",
+                "EN": "Increases the Max HP of friendly units within range by +6%, and reduces the <$ba.dt.element>Elemental Damage</> they take by 12%",
+                "CN": "攻击范围内的友方单位生命上限+6%，且受到的<$ba.dt.element>元素损伤</>降低12%",
+                "mod": "攻击范围内的友方单位生命上限+6%，且受到的<$ba.dt.element>元素损伤</>降低14%",
+                "upgradeDescription": "Increases the Max HP of friendly units within range by +6%, and reduces the <$ba.dt.element>Elemental Damage</> they take by 14%"
+            },
+            {
+                "name": "Volcanic Ash Remedy",
+                "EN": "Increases the Max HP of friendly units within range by +8% <@ba.talpu>(+2%)</>, and reduces the <$ba.dt.element>Elemental Damage</> they take by 12%",
+                "CN": "攻击范围内的友方单位生命上限+8%<@ba.talpu>（+2%）</>，且受到的<$ba.dt.element>元素损伤</>降低12%",
+                "mod": "攻击范围内的友方单位生命上限+8%<@ba.talpu>（+2%）</>，且受到的<$ba.dt.element>元素损伤</>降低14%",
+                "upgradeDescription": "Increases the Max HP of friendly units within range by +8% <@ba.talpu>(+2%)</>, and reduces the <$ba.dt.element>Elemental Damage</> they take by 14%"
+            }
+        ],
+        [
+            {
+                "name": "Volcanic Ash Remedy",
+                "EN": "Increases the Max HP of friendly units within range by +6%, and reduces the <$ba.dt.element>Elemental Damage</> they take by 12%",
+                "CN": "攻击范围内的友方单位生命上限+6%，且受到的<$ba.dt.element>元素损伤</>降低12%",
+                "mod": "攻击范围内的友方单位生命上限+8%，且受到的<$ba.dt.element>元素损伤</>降低14%",
+                "upgradeDescription": "Increases the Max HP of friendly units within range by +8%, and reduces the <$ba.dt.element>Elemental Damage</> they take by 14%"
+            },
+            {
+                "name": "Volcanic Ash Remedy",
+                "EN": "Increases the Max HP of friendly units within range by +8% <@ba.talpu>(+2%)</>, and reduces the <$ba.dt.element>Elemental Damage</> they take by 12%",
+                "CN": "攻击范围内的友方单位生命上限+8%<@ba.talpu>（+2%）</>，且受到的<$ba.dt.element>元素损伤</>降低12%",
+                "mod": "攻击范围内的友方单位生命上限+10%<@ba.talpu>（+2%）</>，且受到的<$ba.dt.element>元素损伤</>降低14%",
+                "upgradeDescription": "Increases the Max HP of friendly units within range by +10% <@ba.talpu>(+2%)</>, and reduces the <$ba.dt.element>Elemental Damage</> they take by 14%"
+            }
+        ]
+    ],
+    "uniequip_002_mberry": [
+        [
+            {
+                "name": "Helper",
+                "EN": "When Mulberry and at least one more Medic Operator are on the battlefield, all Medic Operators gain +10% ATK",
+                "CN": "场上存在桑葚和另外至少一名【医疗】干员时，所有【医疗】干员的攻击力+10%",
+                "mod": "场上存在桑葚和另外至少一名【医疗】干员时，所有【医疗】干员的攻击力+13%",
+                "upgradeDescription": "When Mulberry and at least one more Medic Operator are on the battlefield, all Medic Operators gain +13% ATK"
+            },
+            {
+                "name": "Helper",
+                "EN": "When Mulberry and at least one more Medic Operator are on the battlefield, all Medic Operators gain +11% <@ba.talpu>(+1%)</> ATK",
+                "CN": "场上存在桑葚和另外至少一名【医疗】干员时，所有【医疗】干员的攻击力+11%<@ba.talpu>（+1%）</>",
+                "mod": "场上存在桑葚和另外至少一名【医疗】干员时，所有【医疗】干员的攻击力+14%<@ba.talpu>（+1%）</>",
+                "upgradeDescription": "When Mulberry and at least one more Medic Operator are on the battlefield, all Medic Operators gain +14% <@ba.talpu>(+1%)</> ATK"
+            }
+        ],
+        [
+            {
+                "name": "Helper",
+                "EN": "When Mulberry and at least one more Medic Operator are on the battlefield, all Medic Operators gain +10% ATK",
+                "CN": "场上存在桑葚和另外至少一名【医疗】干员时，所有【医疗】干员的攻击力+10%",
+                "mod": "场上存在桑葚和另外至少一名【医疗】干员时，所有【医疗】干员的攻击力+15%",
+                "upgradeDescription": "When Mulberry and at least one more Medic Operator are on the battlefield, all Medic Operators gain +15% ATK"
+            },
+            {
+                "name": "Helper",
+                "EN": "When Mulberry and at least one more Medic Operator are on the battlefield, all Medic Operators gain +11% <@ba.talpu>(+1%)</> ATK",
+                "CN": "场上存在桑葚和另外至少一名【医疗】干员时，所有【医疗】干员的攻击力+11%<@ba.talpu>（+1%）</>",
+                "mod": "场上存在桑葚和另外至少一名【医疗】干员时，所有【医疗】干员的攻击力+16%<@ba.talpu>（+1%）</>",
+                "upgradeDescription": "When Mulberry and at least one more Medic Operator are on the battlefield, all Medic Operators gain +16% <@ba.talpu>(+1%)</> ATK"
+            }
+        ]
+    ],
+    "uniequip_002_glider": [
+        [
+            {
+                "name": "Collective Consciousness",
+                "EN": "Ranged Operators within Attack Range gain Max HP +10%",
+                "CN": "攻击范围内的远程干员最大生命值+10%",
+                "mod": "攻击范围内的远程干员最大生命值+13%",
+                "upgradeDescription": "Ranged Operators within Attack Range gain Max HP +13%"
+            },
+            {
+                "name": "Collective Consciousness",
+                "EN": "Ranged Operators within Attack Range gain Max HP +12% <@ba.talpu>(+2%)</>",
+                "CN": "攻击范围内的远程干员最大生命值+12%<@ba.talpu>（+2%）</>",
+                "mod": "攻击范围内的远程干员最大生命值+15%<@ba.talpu>（+2%）</>",
+                "upgradeDescription": "Ranged Operators within Attack Range gain Max HP +15% <@ba.talpu>(+2%)</>"
+            }
+        ],
+        [
+            {
+                "name": "Collective Consciousness",
+                "EN": "Ranged Operators within Attack Range gain Max HP +10%",
+                "CN": "攻击范围内的远程干员最大生命值+10%",
+                "mod": "攻击范围内的远程干员最大生命值+15%",
+                "upgradeDescription": "Ranged Operators within Attack Range gain Max HP +15%"
+            },
+            {
+                "name": "Collective Consciousness",
+                "EN": "Ranged Operators within Attack Range gain Max HP +12% <@ba.talpu>(+2%)</>",
+                "CN": "攻击范围内的远程干员最大生命值+12%<@ba.talpu>（+2%）</>",
+                "mod": "攻击范围内的远程干员最大生命值+17%<@ba.talpu>（+2%）</>",
+                "upgradeDescription": "Ranged Operators within Attack Range gain Max HP +17% <@ba.talpu>(+2%)</>"
+            }
+        ]
+    ],
+    "uniequip_002_harold": [
+        [
+            {
+                "name": "I Am the Camp",
+                "EN": "Targets within Attack Range that have taken more than 50% Elemental Damage take 15% less <$ba.dt.element>Elemental Damage</>",
+                "CN": "攻击范围内元素损伤累计超过一半的目标受到的<$ba.dt.element>元素损伤</>降低15%",
+                "mod": "攻击范围内元素损伤累计超过一半的目标受到的<$ba.dt.element>元素损伤</>降低20%",
+                "upgradeDescription": "Targets within Attack Range that have taken more than 50% Elemental Damage take 20% less <$ba.dt.element>Elemental Damage</>"
+            },
+            {
+                "name": "I Am the Camp",
+                "EN": "Targets within Attack Range that have taken more than 50% Elemental Damage take 18% <@ba.talpu>(+3%)</> less <$ba.dt.element>Elemental Damage</>",
+                "CN": "攻击范围内元素损伤累计超过一半的目标受到的<$ba.dt.element>元素损伤</>降低18%<@ba.talpu>（+3%）</>",
+                "mod": "攻击范围内元素损伤累计超过一半的目标受到的<$ba.dt.element>元素损伤</>降低23%<@ba.talpu>（+3%）</>",
+                "upgradeDescription": "Targets within Attack Range that have taken more than 50% Elemental Damage take 23% <@ba.talpu>(+3%)</> less <$ba.dt.element>Elemental Damage</>"
+            }
+        ],
+        [
+            {
+                "name": "I Am the Camp",
+                "EN": "Targets within Attack Range that have taken more than 50% Elemental Damage take 15% less <$ba.dt.element>Elemental Damage</>",
+                "CN": "攻击范围内元素损伤累计超过一半的目标受到的<$ba.dt.element>元素损伤</>降低15%",
+                "mod": "攻击范围内元素损伤累计超过一半的目标受到的<$ba.dt.element>元素损伤</>降低23%",
+                "upgradeDescription": "Targets within Attack Range that have taken more than 50% Elemental Damage take 23% less <$ba.dt.element>Elemental Damage</>"
+            },
+            {
+                "name": "I Am the Camp",
+                "EN": "Targets within Attack Range that have taken more than 50% Elemental Damage take 18% <@ba.talpu>(+3%)</> less <$ba.dt.element>Elemental Damage</>",
+                "CN": "攻击范围内元素损伤累计超过一半的目标受到的<$ba.dt.element>元素损伤</>降低18%<@ba.talpu>（+3%）</>",
+                "mod": "攻击范围内元素损伤累计超过一半的目标受到的<$ba.dt.element>元素损伤</>降低26%<@ba.talpu>（+3%）</>",
+                "upgradeDescription": "Targets within Attack Range that have taken more than 50% Elemental Damage take 26% <@ba.talpu>(+3%)</> less <$ba.dt.element>Elemental Damage</>"
+            }
+        ]
+    ],
+    "uniequip_002_chnut": [
+        [
+            {
+                "name": "Solidly Grounded",
+                "EN": "<$ba.dt.element>Elemental Damage</> recovery +20% when healing ground units",
+                "CN": "治疗地面单位，<$ba.dt.element>元素损伤</>回复量提高20%",
+                "mod": "治疗地面单位，<$ba.dt.element>元素损伤</>回复量提高25%",
+                "upgradeDescription": "<$ba.dt.element>Elemental Damage</> recovery +25% when healing ground units"
+            },
+            {
+                "name": "Solidly Grounded",
+                "EN": "<$ba.dt.element>Elemental Damage</> recovery +23%<@ba.talpu>(+3%)</> when healing ground units",
+                "CN": "治疗地面单位，<$ba.dt.element>元素损伤</>回复量提高23%<@ba.talpu>（+3%）</>",
+                "mod": "治疗地面单位，<$ba.dt.element>元素损伤</>回复量提高28%<@ba.talpu>（+3%）</>",
+                "upgradeDescription": "<$ba.dt.element>Elemental Damage</> recovery +28%<@ba.talpu>(+3%)</> when healing ground units"
+            }
+        ],
+        [
+            {
+                "name": "Solidly Grounded",
+                "EN": "<$ba.dt.element>Elemental Damage</> recovery +20% when healing ground units",
+                "CN": "治疗地面单位，<$ba.dt.element>元素损伤</>回复量提高20%",
+                "mod": "治疗地面单位，<$ba.dt.element>元素损伤</>回复量提高27%",
+                "upgradeDescription": "<$ba.dt.element>Elemental Damage</> recovery +27% when healing ground units"
+            },
+            {
+                "name": "Solidly Grounded",
+                "EN": "<$ba.dt.element>Elemental Damage</> recovery +23%<@ba.talpu>(+3%)</> when healing ground units",
+                "CN": "治疗地面单位，<$ba.dt.element>元素损伤</>回复量提高23%<@ba.talpu>（+3%）</>",
+                "mod": "治疗地面单位，<$ba.dt.element>元素损伤</>回复量提高30%<@ba.talpu>（+3%）</>",
+                "upgradeDescription": "<$ba.dt.element>Elemental Damage</> recovery +30%<@ba.talpu>(+3%)</> when healing ground units"
+            }
+        ]
+    ],
+    "uniequip_003_cgbird": [
+        [
+            {
+                "name": "Fleeting Phantom",
+                "EN": "Can summon Phantoms. Phantoms cannot attack or block enemies, but have 75 RES and 30% Physical Dodge and are more likely to be targeted by enemies. Phantoms lose 3% Max HP per second",
+                "CN": "可以使用幻影。幻影无法攻击和阻挡敌人，拥有75法术抗性，30%的物理闪避，并且更容易吸引敌人的攻击，同时每秒流失3%的最大生命",
+                "mod": "可以使用幻影。幻影无法攻击和阻挡敌人，拥有75法术抗性，30%的物理闪避，并且更容易吸引敌人的攻击，同时每秒流失3%的最大生命；夜莺部署时获得3个幻影",
+                "upgradeDescription": "Can summon Phantoms. Phantoms cannot attack or block enemies, but have 75 RES and 30% Physical Dodge and are more likely to be targeted by enemies. Phantoms lose 3% Max HP per second; Gain 3 Phantoms when deployed"
+            }
+        ],
+        [
+            {
+                "name": "Fleeting Phantom",
+                "EN": "Can summon Phantoms. Phantoms cannot attack or block enemies, but have 75 RES and 30% Physical Dodge and are more likely to be targeted by enemies. Phantoms lose 3% Max HP per second",
+                "CN": "可以使用幻影。幻影无法攻击和阻挡敌人，拥有75法术抗性，30%的物理闪避，并且更容易吸引敌人的攻击，同时每秒流失3%的最大生命",
+                "mod": "可以使用幻影。幻影无法攻击和阻挡敌人，拥有75法术抗性，40%的物理闪避，并且更容易吸引敌人的攻击，同时每秒流失3%的最大生命；夜莺部署时获得3个幻影",
+                "upgradeDescription": "Can summon Phantoms. Phantoms cannot attack or block enemies, but have 75 RES and 40% Physical Dodge and are more likely to be targeted by enemies. Phantoms lose 3% Max HP per second; Gain 3 Phantoms when deployed"
+            }
+        ]
+    ],
+    "uniequip_004_kalts": [
+        [
+            {
+                "name": "Mon3tr",
+                "EN": "Can use and heal Mon3tr, and Mon3tr has a 25 second redeployment time. Kal'tsit will prioritize healing herself and Mon3tr; If Mon3tr is not within Kal'tsit's Attack Range, Mon3tr's DEF is reduced to 0",
+                "CN": "可以使用并治疗Mon3tr，拥有25秒再部署时间，优先治疗自身和Mon3tr；Mon3tr不在凯尔希攻击范围内时防御力降至0",
+                "mod": "可以使用并治疗Mon3tr，拥有25秒再部署时间，优先治疗自身和Mon3tr；Mon3tr不在凯尔希攻击范围内时防御力降至0；在<@ba.kw>集成战略</>中，Mon3tr不占用部署位，生命上限和攻击力+25%",
+                "upgradeDescription": "Can use and heal Mon3tr, and Mon3tr has a 25 second redeployment time. Kal'tsit will prioritize healing herself and Mon3tr; If Mon3tr is not within Kal'tsit's Attack Range, Mon3tr's DEF is reduced to 0; in <@ba.kw>[Integrated Strategies]</> Mon3tr does not use deployment slot, Max HP 25%, ATK +25%"
+            }
+        ],
+        [
+            {
+                "name": "Mon3tr",
+                "EN": "Can use and heal Mon3tr, and Mon3tr has a 25 second redeployment time. Kal'tsit will prioritize healing herself and Mon3tr; If Mon3tr is not within Kal'tsit's Attack Range, Mon3tr's DEF is reduced to 0",
+                "CN": "可以使用并治疗Mon3tr，拥有25秒再部署时间，优先治疗自身和Mon3tr；Mon3tr不在凯尔希攻击范围内时防御力降至0",
+                "mod": "可以使用并治疗Mon3tr，拥有25秒再部署时间，优先治疗自身和Mon3tr；Mon3tr不在凯尔希攻击范围内时防御力降至0；在<@ba.kw>集成战略</>中，Mon3tr不占用部署位，生命上限和攻击力+50%且受到的治疗效果提升50%",
+                "upgradeDescription": "Can use and heal Mon3tr, and Mon3tr has a 25 second redeployment time. Kal'tsit will prioritize healing herself and Mon3tr; If Mon3tr is not within Kal'tsit's Attack Range, Mon3tr's DEF is reduced to 0; in <@ba.kw>[Integrated Strategies]</> Mon3tr does not use deployment slot, Max HP 50%, ATK +50%, receive healing amount increas by 50%"
+            }
+        ]
+    ],
+    "uniequip_004_phatom": [
+        [
+            {
+                "name": "Phantom in the Mirror",
+                "EN": "Can summon a stronger clone with the same abilities as Phantom, but has its own redeployment time",
+                "CN": "可以使用一个属性更强的虚影，虚影拥有和自己一样的技能，拥有独立的再部署时间",
+                "mod": "可以使用一个属性更强的虚影，虚影拥有和自己一样的技能，拥有独立的再部署时间；在<@ba.kw>集成战略</>中，部署虚影时自身再次释放技能（最多同时叠加8次技能效果）",
+                "upgradeDescription": "Can summon a stronger clone with the same abilities as Phantom, but has its own redeployment time; in <@ba.kw>[Integrated Strategies]</> when clone is deployed Phantom reactivate skill again (can stack skill effect up to 8 times)"
+            }
+        ],
+        [
+            {
+                "name": "Phantom in the Mirror",
+                "EN": "Can summon a stronger clone with the same abilities as Phantom, but has its own redeployment time",
+                "CN": "可以使用一个属性更强的虚影，虚影拥有和自己一样的技能，拥有独立的再部署时间",
+                "mod": "可以使用一个属性更强的虚影，虚影拥有和自己一样的技能，拥有独立的再部署时间；在<@ba.kw>集成战略</>中，虚影不占用部署位，且部署虚影时自身再次释放技能（最多同时叠加8次技能效果）",
+                "upgradeDescription": "Can summon a stronger clone with the same abilities as Phantom, but has its own redeployment time; in <@ba.kw>[Integrated Strategies]</> clone does not use deployment slot, when clone is deployed Phantom reactivate skill again (can stack skill effect up to 8 times)"
+            }
+        ]
     ]
 }

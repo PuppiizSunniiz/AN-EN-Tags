@@ -1,140 +1,175 @@
 {
-
-    "uniequip_002_chen2": [     # Ch'en the Holungday      // {chance} also other chance ? // ranged also mod 2 ?
-        [
-            {
-                "name": "Frugality",
-                "upgradeDescription": "When deployed, Ch'en's ammo-based skills have {chance} chance to not consume the corresponding ammo for each shot; Other Sniper Operators' ammo-based skills have 10% chance instead (only the highest effect of this type will be applied)"
-            },
-            {
-                "name": "Frugality",
-                "upgradeDescription": "When deployed, Ch'en's ammo-based skills have {chance} <@ba.talpu>(+2%)</> chance to not consume the corresponding ammo for each shot; Other Sniper Operators' ammo-based skills have 10% chance instead (only the highest effect of this type will be applied)"
-            }
-        ],
-        [
-            {
-                "name": "Frugality",
-                "upgradeDescription": "When deployed, Ch'en's ammo-based skills have {chance} chance to not consume the corresponding ammo for each shot; Other Ranged Operators' ammo-based skills have 10% chance instead (only the highest effect of this type will be applied)"
-            },
-            {
-                "name": "Frugality",
-                "upgradeDescription": "When deployed, Ch'en's ammo-based skills have {chance} <@ba.talpu>(+2%)</> chance to not consume the corresponding ammo for each shot; Other Ranged Operators' ammo-based skills have 10% chance instead (only the highest effect of this type will be applied)"
-            }
-        ]
-    ],
-    "uniequip_002_excu": [      # Executor        // {def_ignore}
-        [
-            {
-                "name": "Final Modification",
-                "upgradeDescription": "Attacks ignore {def_ignore} DEF"
-            },
-            {
-                "name": "Final Modification",
-                "upgradeDescription": "Attacks ignore {def_ignore} <@ba.talpu>(+15)</> DEF"
-            }
-        ],
-        [
-            {
-                "name": "Final Modification",
-                "upgradeDescription": "Attacks ignore {def_ignore} DEF"
-            },
-            {
-                "name": "Final Modification",
-                "upgradeDescription": "Attacks ignore {def_ignore} <@ba.talpu>(+15)</> DEF"
-            }
-        ]
-    ],
-    "uniequip_002_aosta": [     # Aosta       //  {%ATK}      {bleed_duration}
-        [
-            {
-                "name": "Sharp Nails",
-                "upgradeDescription": "Attacks inflict Bleed to unblocked enemies, dealing {%ATK} ATK as Arts damage (unaffected by trait) every second for {bleed_duration} seconds"
-            },
-            {
-                "name": "Sharp Nails",
-                "upgradeDescription": "Attacks inflict Bleed to unblocked enemies, dealing {%ATK} <@ba.talpu>(+2%)</> ATK as Arts damage (unaffected by trait) every second for {bleed_duration} seconds"
-            }
-        ],
-        [
-            {
-                "name": "Sharp Nails",
-                "upgradeDescription": "Attacks inflict Bleed to unblocked enemies, dealing {%ATK} ATK as Arts damage (unaffected by trait) every second for {bleed_duration} seconds"
-            },
-            {
-                "name": "Sharp Nails",
-                "upgradeDescription": "Attacks inflict Bleed to unblocked enemies, dealing {%ATK} <@ba.talpu>(+2%)</> ATK as Arts damage (unaffected by trait) every second for {bleed_duration} seconds"
-            }
-        ]
-    ],
-    "uniequip_002_pinecn": [        # Pinecone        // {+sp} {sp_duration}
-        [
-            {
-                "name": "Portable Energy Source",
-                "upgradeDescription": "Improves own SP recovery rate by {+sp}/second for {sp_duration} seconds after deployment"
-            },
-            {
-                "name": "Portable Energy Source",
-                "upgradeDescription": "Improves own SP recovery rate by {+sp} <@ba.talpu>(+0.05)</>/second for {sp_duration} seconds after deployment"
-            }
-        ],
-        [
-            {
-                "name": "Portable Energy Source",
-                "upgradeDescription": "Improves own SP recovery rate by {+sp}/second for {sp_duration} seconds after deployment"
-            },
-            {
-                "name": "Portable Energy Source",
-                "upgradeDescription": "Improves own SP recovery rate by {+sp} <@ba.talpu>(+0.05)</>/second for {sp_duration} seconds after deployment"
-            }
-        ]
-    ],
-    "uniequip_002_ABCDEF": [    <<<    # Mitm      //; Debris HP + {%HP}
+    "uniequip_00X_ABCDEF": [ #Sand Reckoner
         [
             {
                 "name": "",
-                "upgradeDescription": "Can summon Cherry-3 to assist in combat from a Tactical Point; Cherry-3 will automatically respawn 15s after being defeated and create Debris in the 4 surrounding tiles; Debris HP + {%HP}"
+                "upgradeDescription": "Sand Reckoner and his summon deal {dmg%} damage to mechanical enemies"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "Sand Reckoner and his summon deal {dmg%}<@ba.talpu>(+%)</> damage to mechanical enemies"
             }
         ],
         [
             {
                 "name": "",
-                "upgradeDescription": "Can summon Cherry-3 to assist in combat from a Tactical Point; Cherry-3 will automatically respawn 15s after being defeated and create Debris in the 4 surrounding tiles; Debris HP + {%HP}"
+                "upgradeDescription": "Sand Reckoner and his summon deal {dmg%} damage to mechanical enemies"
+            },
+            {
+                "name": "",
+                "upgradeDescription": "Sand Reckoner and his summon deal {dmg%}<@ba.talpu>(+%)</> damage to mechanical enemies"
             }
         ]
     ],
-    "uniequip_003_swire2": [        # Swire the Elegant Wit     // {DP_cost} -> double increase change to what ???
+    "uniequip_002_chnut": [ #Chestnut // Recover amount
         [
             {
-                "name": "Cash Claps Calamity",
-                "upgradeDescription": "Upon receiving lethal damage, as long as enough DP is available, consumes {DP_cost} DP to restore this unit's HP to 70%; the cost of this Talent doubles every time it is activated"
+                "name": "Solidly Grounded",
+                "upgradeDescription": "<$ba.dt.element>Elemental Damage</> recovery {+20%} when healing ground units"
             },
             {
-                "name": "Cash Claps Calamity",
-                "upgradeDescription": "Upon receiving lethal damage, as long as enough DP is available, consumes {DP_cost} DP to restore this unit's HP to 80% <@ba.talpu>(+10%)</>; the cost of this Talent doubles every time it is activated"
+                "name": "Solidly Grounded",
+                "upgradeDescription": "<$ba.dt.element>Elemental Damage</> recovery {+23%}<@ba.talpu>(+3%)</> when healing ground units"
             }
         ],
         [
             {
-                "name": "Cash Claps Calamity",
-                "upgradeDescription": "Upon receiving lethal damage, as long as enough DP is available, consumes {DP_cost} DP to restore this unit's HP to 70%; the cost of this Talent doubles every time it is activated"
+                "name": "Solidly Grounded",
+                "upgradeDescription": "<$ba.dt.element>Elemental Damage</> recovery {+20%} when healing ground units"
             },
             {
-                "name": "Cash Claps Calamity",
-                "upgradeDescription": "Upon receiving lethal damage, as long as enough DP is available, consumes {DP_cost} DP to restore this unit's HP to 80% <@ba.talpu>(+10%)</>; the cost of this Talent doubles every time it is activated"
+                "name": "Solidly Grounded",
+                "upgradeDescription": "<$ba.dt.element>Elemental Damage</> recovery {+23%}<@ba.talpu>(+3%)</> when healing ground units"
             }
         ]
     ],
-    "uniequip_003_mostma": [        # Mostima     // {caster_SP} Mostima gain {somthing} increase
+    "uniequip_002_mberry": [ #Mulberry //ATK
         [
             {
-                "name": "Skill Aura - Caster",
-                "upgradeDescription": "When deployed, increases the SP recovery rate of all Casters by {caster_SP}/second (only the highest effect of this type takes place)"
+                "name": "Helper",
+                "upgradeDescription": "When Mulberry and at least one more Medic Operator are on the battlefield, all Medic Operators gain {+10%} ATK"
+            },
+            {
+                "name": "Helper",
+                "upgradeDescription": "When Mulberry and at least one more Medic Operator are on the battlefield, all Medic Operators gain {+11%} <@ba.talpu>(+1%)</> ATK"
             }
         ],
         [
             {
-                "name": "Skill Aura - Caster",
-                "upgradeDescription": "When deployed, increases the SP recovery rate of all Casters by {caster_SP}/second, Mostima gain {somthing} (only the highest effect of this type takes place)"
+                "name": "Helper",
+                "upgradeDescription": "When Mulberry and at least one more Medic Operator are on the battlefield, all Medic Operators gain {+10%} ATK"
+            },
+            {
+                "name": "Helper",
+                "upgradeDescription": "When Mulberry and at least one more Medic Operator are on the battlefield, all Medic Operators gain {+11%} <@ba.talpu>(+1%)</> ATK"
+            }
+        ]
+    ],
+    "uniequip_002_glider": [ #Honeyberry //Max HP
+        [
+            {
+                "name": "Collective Consciousness",
+                "upgradeDescription": "Ranged Operators within Attack Range gain Max HP {+10%}"
+            },
+            {
+                "name": "Collective Consciousness",
+                "upgradeDescription": "Ranged Operators within Attack Range gain Max HP {+12%} <@ba.talpu>(+2%)</>"
+            }
+        ],
+        [
+            {
+                "name": "Collective Consciousness",
+                "upgradeDescription": "Ranged Operators within Attack Range gain Max HP {+10%}"
+            },
+            {
+                "name": "Collective Consciousness",
+                "upgradeDescription": "Ranged Operators within Attack Range gain Max HP {+12%} <@ba.talpu>(+2%)</>"
+            }
+        ]
+    ],
+    "uniequip_002_harold": [ #Harold // elem damage
+        [
+            {
+                "name": "I Am the Camp",
+                "upgradeDescription": "Targets within Attack Range that have taken more than 50% Elemental Damage take {15%} less <$ba.dt.element>Elemental Damage</>"
+            },
+            {
+                "name": "I Am the Camp",
+                "upgradeDescription": "Targets within Attack Range that have taken more than 50% Elemental Damage take {18%} <@ba.talpu>(+3%)</> less <$ba.dt.element>Elemental Damage</>"
+            }
+        ],
+        [
+            {
+                "name": "I Am the Camp",
+                "upgradeDescription": "Targets within Attack Range that have taken more than 50% Elemental Damage take {15%} less <$ba.dt.element>Elemental Damage</>"
+            },
+            {
+                "name": "I Am the Camp",
+                "upgradeDescription": "Targets within Attack Range that have taken more than 50% Elemental Damage take {18%} <@ba.talpu>(+3%)</> less <$ba.dt.element>Elemental Damage</>"
+            }
+        ]
+    ],
+    "uniequip_003_cgbird": [ #Nightingale // Physical EVA & [cage count ?]
+    [
+        {
+                "name": "Fleeting Phantom",
+                "upgradeDescription": "Can summon Phantoms. Phantoms cannot attack or block enemies, but have 75 RES and {30%} Physical Dodge and are more likely to be targeted by enemies. Phantoms lose 3% Max HP per second"
+        }
+    ],
+    [
+        {
+                "name": "Fleeting Phantom",
+                "upgradeDescription": "Can summon Phantoms. Phantoms cannot attack or block enemies, but have 75 RES and {30%} Physical Dodge and are more likely to be targeted by enemies. Phantoms lose 3% Max HP per second. [Nightingale gain more Phantoms when deployed]"
+        }
+    ]
+],
+    "uniequip_004_phatom": [ #Phantom // skill stack
+        [
+            {
+                "name": "Phantom in the Mirror",
+                "upgradeDescription": "Can summon a stronger clone with the same abilities as Phantom, but has its own redeployment time; in [Integrated Strategies] clone does not use deployment slot, when clone is deployed Phantom reactivate skill again (can stack skill effect up to {cnt} times)",
+            }
+        ],
+        [
+            {
+                "name": "Phantom in the Mirror",
+                "upgradeDescription": "Can summon a stronger clone with the same abilities as Phantom, but has its own redeployment time; in [Integrated Strategies] clone does not use deployment slot, when clone is deployed Phantom reactivate skill again (can stack skill effect up to {cnt} times)",
+            }
+        ]
+    ],
+    "uniequip_004_kalts": [ #Kal'tsit // Max HP & ATK & Healing amount
+        [
+            {
+                "name": "Mon3tr",
+                "upgradeDescription": "Can use and heal Mon3tr, and Mon3tr has a 25 second redeployment time. Kal'tsit will prioritize healing herself and Mon3tr; If Mon3tr is not within Kal'tsit's Attack Range, Mon3tr's DEF is reduced to 0; in [Integrated Strategies] Mon3tr Max HP {+%}, ATK {+%}, does not use deployment slot, receive {+%} healing amount"
+            }
+        ],
+        [
+            {
+                "name": "Mon3tr",
+                "upgradeDescription": "Can use and heal Mon3tr, and Mon3tr has a 25 second redeployment time. Kal'tsit will prioritize healing herself and Mon3tr; If Mon3tr is not within Kal'tsit's Attack Range, Mon3tr's DEF is reduced to 0; in [Integrated Strategies] Mon3tr Max HP {+%}, ATK {+%}, does not use deployment slot, receive {+%} healing amount"
+            }
+        ]
+    ],
+    "char_1016_agoat2": [ #Eyjafjalla the Hvít Aska //MaxHP & elem damage
+        [
+            {
+                "name": "Volcanic Ash Remedy",
+                "upgradeDescription": "Increases the Max HP of friendly units within range by {+6%}, and reduces the <$ba.dt.element>Elemental Damage</> they take by {12%}"
+            },
+            {
+                "name": "Volcanic Ash Remedy",
+                "upgradeDescription": "Increases the Max HP of friendly units within range by {+8%} <@ba.talpu>(+2%)</>, and reduces the <$ba.dt.element>Elemental Damage</> they take by {12%}",
+            }
+        ],
+        [
+            {
+                "name": "Volcanic Ash Remedy",
+                "upgradeDescription": "Increases the Max HP of friendly units within range by {+6%}, and reduces the <$ba.dt.element>Elemental Damage</> they take by {12%}"
+            },
+            {
+                "name": "Volcanic Ash Remedy",
+                "upgradeDescription": "Increases the Max HP of friendly units within range by {+8%} <@ba.talpu>(+2%)</>, and reduces the <$ba.dt.element>Elemental Damage</> they take by {12%}"
             }
         ]
     ]
