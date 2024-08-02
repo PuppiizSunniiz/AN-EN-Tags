@@ -112,6 +112,10 @@ def range_check():
     elif range_id == "s":
         print(list(DB["Range"].keys()))
         return True
+    elif range_id == "a":
+        for key in DB["Range"].keys():
+            range_img = "\n".join(DB["Range"][key])
+            print(f'{key}\n{range_img}')
     elif range_id not in DB["Range"].keys():
         print(f'{range_id} is not a valid Range ID')
         return continue_check("Range check")

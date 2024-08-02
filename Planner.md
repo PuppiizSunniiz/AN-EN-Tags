@@ -1,27 +1,6 @@
 # Arknight-Image
 ## Update
-#### Avatars : 
-    - New Char
-        - "Pepe","Narantuya","Sand Reckoner","Papyrus"
-    - Token
-        - Sand Reckoner 's Summon
-    - Skin
-        - Eyjafjalla the Hvit Aska /  Poncirus / Nightingale /  Hoederer / Weedy
-#### Characters :
-    - New Char (E1 E2)
-        - "Pepe","Narantuya","Sand Reckoner","Papyrus"
-    - Skin
-        - Eyjafjalla the Hvit Aska / Poncirus / Nightingale /  Hoederer / Weedy
-#### Enemy : 
-    - Inudi Harek, Horakhet Event & RA2 expansion (Maybe)
-#### Equip : 
-    - Eyjafjalla the Hvít Aska / Mulberry / Honeyberry / Harold / Chestnut / Kal'tsit / Phantom
-#### Skills :
-    - New Char
-        - "Pepe","Narantuya","Sand Reckoner","Papyrus"
-#### Ui -> Infrastructure :
-    - New Char
-        - "Pepe","Narantuya","Sand Reckoner","Papyrus"
+    -
 ## Schedule
 
 - Avatars : folder for ***char, token*** and ***skin*** avatar
@@ -46,6 +25,18 @@
 
 ---
 
+# Akhrchar
+## Fix
+    -
+## To do
+    - apply isAmiya to Amiya EN GetStory when EP14 come
+## Later
+    - add amiya patch to char selector (Browse -Type/All/Filter)
+    - add more parameter for fn => onclick="selectOperator('xxx', ...)" to go to amiya patch directly
+    - Chibi
+    
+---
+
 # Akhr
 ## Fix
     - Result sorting
@@ -54,15 +45,6 @@
 ## Later
     - 
 
-# Akhrchar
-## Fix
-    - 
-## To do
-    - apply isAmiya to Amiya EN GetStory when EP14 come
-## Later
-    - add amiya patch to char selector (Browse -Type/All/Filter)
-    - add more parameter for fn => onclick="selectOperator('xxx', ...)" to go to amiya patch directly
-    - Chibi
 
 ---
 

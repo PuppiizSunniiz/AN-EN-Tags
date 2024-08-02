@@ -2103,6 +2103,7 @@
                     if(db.battle_equip[currequip.uniEquipId]){
                         currebattequip = db.battle_equip[currequip.uniEquipId]
                     }
+                    var greek = {"x":"&Chi;","y":"&Upsilon;","d":"&Delta;","a":"&alpha;"}
                     tabhtml =`
                     <li class='nav-item'>
                         <button class='btn horiz-small nav-link ${(num!=2 ? '' : 'active')} equiplink' data-toggle='pill' href='#equip${num}'>
@@ -2113,7 +2114,7 @@
                                         <img class='equip-image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/type/${currequip.typeIcon}.png' style='width: 30px; position:absolute;'></img>
                                     </div>
                                     <div style = "position:absolute;margin: 0px 0px 0px 0px">
-                                        <div style = "width:60px;margin: 4px 0px 0px -10px;background:#222;color:#ddd;font-size:10px">${currequipEN?currequipEN.typeIcon.toUpperCase():currequip.typeIcon.toUpperCase()}</div>
+                                        <div style = "width:60px;margin: 4px 0px 0px -10px;background:#222;color:#ddd;font-size:10px">${currequip.typeIcon.slice(0,-1).toUpperCase()}${greek[currequip.typeIcon.slice(-1)]?greek[currequip.typeIcon.slice(-1)]:currequip.typeIcon.slice(-1).toUpperCase()}</div>
                                     </div>
                                 </div>
                             </div>
@@ -2192,87 +2193,72 @@
                                     ${titledMaker(statcontent,`Additional Summon Stats (${tokenfulldata?tokenfulldata.appellation:token})`,"","","padding:3px 10px 6px 10px;width:100%;white-space:initial")}
                                     `
                                 });
-
                             }
                             curreqphase += 1
                         });
-
-
                     }
 
                     if(currequip.itemCost){
-                        var imagereq = []
-                        if(currequip.unlockEvolvePhase >=0)
-                        imagereq.push(`
-                            <div style="color:#fff;font-size:13px;background:#444;display:inline-block;padding:2px;border-radius:2px">
-                                <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/${currequip.unlockEvolvePhase}.png" style="width:20px;margin:-12px 0px -6px 0px" title="Elite ${currequip.unlockEvolvePhase}">
-                            </div>
-                        `)
-                        if(currequip.unlockLevel >1)
-                        imagereq.push(`
-                            <div style="color:#fff;font-size:13px;background:#444;display:inline-block;padding:2px;border-radius:2px">
-                                <span style="font-size:8px">Lv.</span>${currequip.unlockLevel}
-                            </div>
-                        `)
-                        if(currequip.unlockFavorPoint>0){
-                            // console.log(currequip.unlockFavorPoint)
-                            let trust = db.favor.favorFrames.find(favor=>favor.level==currequip.unlockFavorPoint)
-                            // console.log(trust)
-                            imagereq.push(`
-                            <div style="color:#fff;font-size:13px;background:#444;display:inline-block;padding:2px;border-radius:2px">
-                                ${trust.data.percent}% <span style="font-size:8px">Trust</span>
-                            </div>
-                            `)
-                        }
-
                         var curreqphase = 0
 
                         $.each(currequip.itemCost,function(key,v){
+                            var imagereq = []
+                            if(currequip.unlockEvolvePhase)
+                            imagereq.push(`
+                                <div style="color:#fff;font-size:13px;background:#444;display:inline-block;padding:2px;border-radius:2px">
+                                    <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/${currequip.unlockEvolvePhase.slice(-1)}.png" style="width:20px;margin:-12px 0px -6px 0px" title="Elite ${currequip.unlockEvolvePhase.slice(-1)}">
+                                </div>
+                            `)
+                            if(currequip.unlockLevel >1)
+                            imagereq.push(`
+                                <div style="color:#fff;font-size:13px;background:#444;display:inline-block;padding:2px;border-radius:2px">
+                                    <span style="font-size:8px">Lv.</span>${currequip.unlockLevel}
+                                </div>
+                            `)
+                            if(currequip.unlockFavors){
+                                let trust = db.favor.favorFrames.find(favor=>favor.level==currequip.unlockFavors[key])
+                                imagereq.push(`
+                                <div style="color:#fff;font-size:13px;background:#444;display:inline-block;padding:2px;border-radius:2px">
+                                    ${trust.data.percent}% <span style="font-size:8px">Trust</span>
+                                </div>
+                                `)
+                            }
 
-                            if(curreqphase==0){
-                                equiphtml[curreqphase] += `
+                            equiphtml[curreqphase] += `
                                 <div style="text-align:center;background:#222;color:#fff;margin-top:5px">Unlock Requirements</div>
                                 <div style="text-align:center;background:#222;color:#fff;margin:0px;padding:0px 0px 2px 0px">${imagereq.join(" ")}</div>
                                 <div style="text-align:center">
                                 `
-                            }else{
-                                equiphtml[curreqphase] += `
-                                <div style="text-align:center;background:#222;color:#fff;margin-top:5px">Upgrade Requirements</div>
-                                <div style="text-align:center;background:#222;color:#fff;margin:0px;padding:0px 0px 2px 0px">
-                                    <div style="color:#fff;font-size:13px;background:#444;display:inline-block;padding:2px;border-radius:2px">Stage ${key}</div>
-                                </div>
-                                <div style="text-align:center">
-                                `
-                            }
+                            
                             if(v){
                                 v.forEach(item => {
                                     equiphtml[curreqphase] += CreateMaterial(item.id,item.count)
-                                    // console.log(item)
                                 });
                             }
-                            equiphtml[curreqphase] += `
-                            </div>
-                            <div style="text-align:center;background:#222;color:#fff">Unlock Mission</div>
-
-                            `
-                            var missionnum = 1
-                            var missionhtml = ``
-                            currequip.missionList.forEach(mission => {
-                                var currmission = db.uniequip.missionList[mission]
-                                var currmissionEN = db.uniequipEN.missionList[mission]
-                                var missioncheck = ModuleMissionDescription(currmission,currmissionEN)
-                                missionhtml +=`
-                                ${titledMaker2(missioncheck,`Mission ${missionnum}`,``,``,"margin:8px 0px 4px 0px;white-space:initial;")}
-                                </br>
+                            if(currequip.missionList.length){
+                                equiphtml[curreqphase] += `
+                                </div>
+                                <div style="text-align:center;background:#222;color:#fff">Unlock Mission</div>
                                 `
-                                missionnum +=1
-                            });
-                            equiphtml[curreqphase] +=`
-                            ${titledMaker(missionhtml,"",``,``,"width:100%")}
-                            `
+                                var missionnum = 1
+                                var missionhtml = ``
+                                currequip.missionList.forEach(mission => {
+                                    var currmission = db.uniequip.missionList[mission]
+                                    var currmissionEN = db.uniequipEN.missionList[mission]
+                                    var missioncheck = ModuleMissionDescription(currmission,currmissionEN)
+                                    missionhtml +=`
+                                    ${titledMaker2(missioncheck,`Mission ${missionnum}`,``,``,"margin:8px 0px 4px 0px;white-space:initial;")}
+                                    </br>
+                                    `
+                                    missionnum +=1
+                                });
+                                equiphtml[curreqphase] +=`
+                                ${titledMaker(missionhtml,"",``,``,"width:100%")}
+                                `
+                            }else equiphtml[curreqphase] += `</div>`
+
                             curreqphase +=1
                         })
-
                     }
 
                     if(currequip.typeIcon=="original"){
@@ -5159,7 +5145,6 @@
         var rangelist =  Object.assign({},db.range,db.extra_range)
         var rangeData ={}
         var rangeDataOrigin = Object.assign({},rangelist[rangeId])
-
         // extend =0
         if(rangeDataOrigin){
             let minRow = 0
@@ -5171,9 +5156,6 @@
             let getcol = 0
             // console.log(rangeDataOrigin.grids)
             if(rangeDataOrigin){
-                if(extend>0){
-
-                }
                 rangeData = Object.assign({},rangeDataOrigin)
                 rangeData.grids = []
                 rangeDataOrigin.grids.forEach(element => {
@@ -5198,7 +5180,7 @@
                      }
 
                 });
-                if(extend>0){
+                if(extend){
                     maxCol +=extend
                 }
                 if(extend>0){

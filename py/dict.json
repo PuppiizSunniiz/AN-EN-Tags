@@ -171,6 +171,7 @@
             "char_4081_warmy": "Warmy",
             "char_242_otter": "Mayer",
             "char_336_folivo": "Scene",
+            "char_4140_lasher": "Sand Reckoner",
             "char_108_silent": "Silence",
             "char_171_bldsk": "Warfarin",
             "char_345_folnic": "Folinic",
@@ -184,6 +185,7 @@
             "char_1024_hbisc2": "Hibiscus the Purifier",
             "char_494_vendla": "Vendela",
             "char_4071_peper": "Paprika",
+            "char_4139_papyrs": "Papyrus",
             "char_148_nearl": "Nearl",
             "char_226_hmau": "Hung",
             "char_4109_baslin": "Bassline",
@@ -257,6 +259,7 @@
             "char_1035_wisdel": "Wiš'adel",
             "char_1013_chen2": "Ch'en the Holungday",
             "char_4117_ray": "Ray",
+            "char_4138_narant": "Narantuya",
             "char_112_siege": "Siege",
             "char_222_bpipe": "Bagpipe",
             "char_362_saga": "Saga",
@@ -324,6 +327,7 @@
             "char_4082_qiubai": "Qiubai",
             "char_4088_hodrer": "Hoederer",
             "char_4145_ulpia": "Ulpianus",
+            "char_4058_pepe": "Pepe",
             "char_010_chen": "Ch'en",
             "char_4009_irene": "Irene",
             "char_4116_blkkgt": "Degenbrecher",
@@ -520,6 +524,7 @@
             "Warmy": "char_4081_warmy",
             "Mayer": "char_242_otter",
             "Scene": "char_336_folivo",
+            "Sand Reckoner": "char_4140_lasher",
             "Silence": "char_108_silent",
             "Warfarin": "char_171_bldsk",
             "Folinic": "char_345_folnic",
@@ -533,6 +538,7 @@
             "Hibiscus the Purifier": "char_1024_hbisc2",
             "Vendela": "char_494_vendla",
             "Paprika": "char_4071_peper",
+            "Papyrus": "char_4139_papyrs",
             "Nearl": "char_148_nearl",
             "Hung": "char_226_hmau",
             "Bassline": "char_4109_baslin",
@@ -605,6 +611,7 @@
             "Wiš'adel": "char_1035_wisdel",
             "Ch'en the Holungday": "char_1013_chen2",
             "Ray": "char_4117_ray",
+            "Narantuya": "char_4138_narant",
             "Siege": "char_112_siege",
             "Bagpipe": "char_222_bpipe",
             "Saga": "char_362_saga",
@@ -672,6 +679,7 @@
             "Qiubai": "char_4082_qiubai",
             "Hoederer": "char_4088_hodrer",
             "Ulpianus": "char_4145_ulpia",
+            "Pepe": "char_4058_pepe",
             "Ch'en": "char_010_chen",
             "Irene": "char_4009_irene",
             "Degenbrecher": "char_4116_blkkgt",
@@ -1961,6 +1969,12 @@
             "召唤",
             "支援"
         ],
+        "Sand Reckoner": [
+            "资深干员",
+            "远程位",
+            "召唤",
+            "减速"
+        ],
         "Silence": [
             "资深干员",
             "远程位",
@@ -2024,6 +2038,11 @@
             "治疗"
         ],
         "Paprika": [
+            "资深干员",
+            "远程位",
+            "治疗"
+        ],
+        "Papyrus": [
             "资深干员",
             "远程位",
             "治疗"
@@ -2437,6 +2456,11 @@
             "群攻"
         ],
         "Ray": [
+            "高级资深干员",
+            "远程位",
+            "输出"
+        ],
+        "Narantuya": [
             "高级资深干员",
             "远程位",
             "输出"
@@ -2856,6 +2880,12 @@
             "近战位",
             "输出",
             "生存"
+        ],
+        "Pepe": [
+            "高级资深干员",
+            "近战位",
+            "输出",
+            "控场"
         ],
         "Ch'en": [
             "高级资深干员",
