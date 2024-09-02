@@ -50,7 +50,7 @@
 
 # Akenemy
 ## Working on
-- (Finished) Event drop-right for Zone and stage filter
+- Mechanic training stage
 ## Fix
     -
 ## To do

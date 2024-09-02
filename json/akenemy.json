@@ -2565,8 +2565,8 @@
                 "act27side": {
                     "name": "[SL] : So Long, Adele: Home Away From Home",
                     "zone": {
-                        "act27side_zone1": {
-                            "name": "A Holiday at the Hot Springs",
+                        "act27sre_zone1": {
+                            "name": "温泉假日",
                             "stage": {
                                 "act27side_tr01": "SL-TR-1 : Baa Baa Black",
                                 "act27side_01": "SL-1 : Do Your Ears Hang Low?",
@@ -2583,8 +2583,8 @@
                                 "act27side_sp03": "SL-P-3 : Row, Row, Row Your Boat"
                             }
                         },
-                        "act27side_zone2": {
-                            "name": "Treasurehunting in Siesta",
+                        "act27sre_zone2": {
+                            "name": "城市寻宝",
                             "stage": {
                                 "act27side_ex01": "SL-EX-1 : Roses and Gold",
                                 "act27side_ex01#f#": "SL-EX-1 : Roses and Gold (Challenge)",
@@ -2604,8 +2604,8 @@
                                 "act27side_ex08#f#": "SL-EX-8 : Evergreen Tree (Challenge)"
                             }
                         },
-                        "act27side_zone3": {
-                            "name": "Surfing the Lava",
+                        "act27sre_zone3": {
+                            "name": "岩浆冲浪",
                             "stage": {
                                 "act27side_s01": "SL-S-1 : On a Slow Boat East",
                                 "act27side_s01#f#": "SL-S-1 : On a Slow Boat East (Challenge)",
@@ -3027,6 +3027,60 @@
                                 "act35side_08": "AS-8 : 黄沙尽头",
                                 "act35side_09": "AS-9 : 向过去告别"
                             }
+                        },
+                        "act35side_zone2": {
+                            "name": "丰获集会",
+                            "stage": {
+                                "act35side_ex01": "AS-EX-1 : 小偷与收款人",
+                                "act35side_ex01#f#": "AS-EX-1 : 小偷与收款人 (Challenge)",
+                                "act35side_ex02": "AS-EX-2 : 被吹碎的镜子",
+                                "act35side_ex02#f#": "AS-EX-2 : 被吹碎的镜子 (Challenge)",
+                                "act35side_ex03": "AS-EX-3 : 一捧宝石",
+                                "act35side_ex03#f#": "AS-EX-3 : 一捧宝石 (Challenge)",
+                                "act35side_ex04": "AS-EX-4 : 被盗的钱包",
+                                "act35side_ex04#f#": "AS-EX-4 : 被盗的钱包 (Challenge)",
+                                "act35side_ex05": "AS-EX-5 : 不幸的士兵",
+                                "act35side_ex05#f#": "AS-EX-5 : 不幸的士兵 (Challenge)",
+                                "act35side_ex06": "AS-EX-6 : 假帕夏",
+                                "act35side_ex06#f#": "AS-EX-6 : 假帕夏 (Challenge)",
+                                "act35side_ex07": "AS-EX-7 : 疯狂的宠物",
+                                "act35side_ex07#f#": "AS-EX-7 : 疯狂的宠物 (Challenge)",
+                                "act35side_ex08": "AS-EX-8 : 无冕之王与朝圣者",
+                                "act35side_ex08#f#": "AS-EX-8 : 无冕之王与朝圣者 (Challenge)"
+                            }
+                        },
+                        "act35side_zone3": {
+                            "name": "藏珍宝库",
+                            "stage": {
+                                "act35side_s01": "AS-S-1 : 哲理在新生中传唱",
+                                "act35side_s01#f#": "AS-S-1 : 哲理在新生中传唱 (Challenge)",
+                                "act35side_s02": "AS-S-2 : 精神在富饶中绽放",
+                                "act35side_s02#f#": "AS-S-2 : 精神在富饶中绽放 (Challenge)",
+                                "act35side_s03": "AS-S-3 : 笔尖凝聚着愿景",
+                                "act35side_s03#f#": "AS-S-3 : 笔尖凝聚着愿景 (Challenge)",
+                                "act35side_s04": "AS-S-4 : 修辞流淌着期望",
+                                "act35side_s04#f#": "AS-S-4 : 修辞流淌着期望 (Challenge)",
+                                "act35side_mo01": "AS-MO-1 : 愿我们寻得安详"
+                            }
+                        }
+                    }
+                },
+                "act36side": {
+                    "name": "[DT] : 泰拉饭",
+                    "zone": {
+                        "act36side_zone1": {
+                            "name": "品尝魔物",
+                            "stage": {
+                                "act36side_01": "DT-1 : 源石虫农家乐",
+                                "act36side_tr01": "DT-TR-1 : 美食指南",
+                                "act36side_02": "DT-2 : 雨林解毒炖汤",
+                                "act36side_03": "DT-3 : 黄金萝卜",
+                                "act36side_04": "DT-4 : 烤串与预言",
+                                "act36side_05": "DT-5 : 会饮图",
+                                "act36side_06": "DT-6 : 海鲜拼盘",
+                                "act36side_07": "DT-7 : 健康零食",
+                                "act36side_08": "DT-8 : 罗德岛大食堂"
+                            }
                         }
                     }
                 }
@@ -3447,6 +3501,17 @@
                             "name": "燃烧街区",
                             "stage": {
                                 "camp_r_23": "燃烧街区"
+                            }
+                        }
+                    }
+                },
+                "camp_r_24": {
+                    "name": "冰封雪谷",
+                    "zone": {
+                        "camp_r_24": {
+                            "name": "冰封雪谷",
+                            "stage": {
+                                "camp_r_24": "冰封雪谷"
                             }
                         }
                     }
@@ -4684,6 +4749,38 @@
                             }
                         }
                     }
+                },
+                "tower_n_15": {
+                    "name": "交战荒野",
+                    "zone": {
+                        "tower_n_15": {
+                            "name": "交战荒野",
+                            "stage": {
+                                "lt_15_01": "LT-1 : 术法冲锋",
+                                "lt_15_02": "LT-2 : 精锐与光荣",
+                                "lt_15_03": "LT-3 : 主要推进通道",
+                                "lt_15_04": "LT-4 : 虫潮涌流",
+                                "lt_15_05": "LT-5 : 血肉长驱",
+                                "lt_15_06": "LT-6 : 遗忘与声张"
+                            }
+                        }
+                    }
+                },
+                "tower_n_16": {
+                    "name": "玉门市集",
+                    "zone": {
+                        "tower_n_16": {
+                            "name": "玉门市集",
+                            "stage": {
+                                "lt_16_01": "LT-1 : 障目",
+                                "lt_16_02": "LT-2 : 迷山",
+                                "lt_16_03": "LT-3 : 他乡",
+                                "lt_16_04": "LT-4 : 节尽",
+                                "lt_16_05": "LT-5 : 风林栖",
+                                "lt_16_06": "LT-6 : 莫寻迹"
+                            }
+                        }
+                    }
                 }
             }
         },
@@ -4844,7 +4941,8 @@
                                 "sandbox_1_82": "“迎宾走廊”",
                                 "sandbox_1_83": "“金库”",
                                 "sandbox_1_84": "十字路口",
-                                "sandbox_1_96": "回廊关"
+                                "sandbox_1_96": "回廊关",
+                                "sandbox_1_101": "烟霭池"
                             }
                         },
                         "RA#2 Field : Food Material": {
@@ -4866,7 +4964,14 @@
                                 "sandbox_1_58": "无形界限",
                                 "sandbox_1_59": "驯化",
                                 "sandbox_1_60": "方形竞技场",
-                                "sandbox_1_61": "大迁徙"
+                                "sandbox_1_61": "大迁徙",
+                                "sandbox_1_97": "岩层轰鸣",
+                                "sandbox_1_99": "香草境",
+                                "sandbox_1_102": "暗流溶穴",
+                                "sandbox_1_103": "迷雾巷道",
+                                "sandbox_1_104": "丰腴草原",
+                                "sandbox_1_105": "蔽日密林",
+                                "sandbox_1_106": "勇者之境"
                             }
                         },
                         "RA#2 Field : Battle": {
@@ -4912,7 +5017,9 @@
                                 "sandbox_1_92": "加苏尔拟真赛",
                                 "sandbox_1_93": "雷兰穿梭赛",
                                 "sandbox_1_94": "西帕尔爬坡赛",
-                                "sandbox_1_95": "“庆典须知”"
+                                "sandbox_1_95": "“庆典须知”",
+                                "sandbox_1_98": "齐步走",
+                                "sandbox_1_100": "不速之敌"
                             }
                         },
                         "RA#2 Normal Rushparty": {
@@ -4942,7 +5049,16 @@
                                 "RA#2_monthly_5": "Monthly 5",
                                 "RA#2_monthly_6": "Monthly 6",
                                 "RA#2_monthly_7": "Monthly 7",
-                                "RA#2_normal_tutorial": "Normal tutorial"
+                                "RA#2_normal_tutorial": "Normal tutorial",
+                                "RA#2_xbcas_prey": "Xbcas prey",
+                                "RA#2_xbsmi_prey": "Xbsmi prey",
+                                "RA#2_xbrok_prey": "Xbrok prey",
+                                "RA#2_xbcasz_ally": "Xbcasz ally",
+                                "RA#2_xbsmiz_ally": "Xbsmiz ally",
+                                "RA#2_xbrokz_ally": "Xbrokz ally",
+                                "RA#2_xbcasy_ally": "Xbcasy ally",
+                                "RA#2_xbsmiy_ally": "Xbsmiy ally",
+                                "RA#2_xbroky_ally": "Xbroky ally"
                             }
                         },
                         "RA#2 Elite Rushparty": {
@@ -5058,6 +5174,7 @@
         "weekly_2": "PR-B : Fierce Attack (Snipers & Casters)",
         "weekly_3": "PR-C : Unstoppable Charge (Vanguards & Supporters)",
         "weekly_4": "PR-D : Fearless Protection (Guards & Specialists)",
+        "act36side": "[DT] : 泰拉饭",
         "act35side": "[AS] : Inudi Harek, Horakhet",
         "act17mini": "[KR] : A Kazdelian Rescue",
         "act34side": "[BP] : Path of Life",
@@ -5142,6 +5259,7 @@
         "camp_r_21": "新旅店大道",
         "camp_r_22": "“离心率”实验室",
         "camp_r_23": "燃烧街区",
+        "camp_r_24": "冰封雪谷",
         "tower_tr_01": "Training Ground #7",
         "tower_tr_02": "Training Ground #9",
         "tower_tr_03": "Training Ground #10",
@@ -5155,6 +5273,8 @@
         "tower_n_12": "Automaton Arena",
         "tower_n_13": "边地移动城镇",
         "tower_n_14": "多索雷斯商业地块",
+        "tower_n_15": "交战荒野",
+        "tower_n_16": "玉门市集",
         "tower_n_01": "Iron Carrot Mine",
         "tower_n_02": "Toron Mine",
         "tower_n_03": "Glebe Mining Platform",
@@ -5281,6 +5401,13 @@
                 }
             },
             "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_01",
+                        "act36side_tr01",
+                        "act36side_04"
+                    ]
+                },
                 "act31side": {
                     "act31side_zone1": [
                         "act31side_tr01"
@@ -7591,6 +7718,13 @@
                         "rogue_1-1"
                     ]
                 }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_105"
+                    ]
+                }
             }
         },
         "enemy_1502_crowns": {
@@ -7977,6 +8111,11 @@
                 "tower_n_14": {
                     "tower_n_14": [
                         "lt_14_01"
+                    ]
+                },
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_03"
                     ]
                 },
                 "tower_n_02": {
@@ -8882,6 +9021,11 @@
                 }
             },
             "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_08"
+                    ]
+                },
                 "act16mini": {
                     "act16mini_zone1": [
                         "act16mini_03",
@@ -9017,6 +9161,11 @@
                     ],
                     "RA#1 Field : Battle": [
                         "sandbox_0_37"
+                    ]
+                },
+                "RA#2": {
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_98"
                     ]
                 }
             }
@@ -9870,6 +10019,12 @@
                 }
             },
             "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_02",
+                        "act36side_08"
+                    ]
+                },
                 "act31side": {
                     "act31side_zone1": [
                         "act31side_01"
@@ -11326,6 +11481,11 @@
                         "lt_06_04"
                     ]
                 },
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_03"
+                    ]
+                },
                 "tower_n_01": {
                     "tower_n_01": [
                         "lt_01_05"
@@ -11703,6 +11863,12 @@
                 "tower_n_09": {
                     "tower_n_09": [
                         "lt_09_06"
+                    ]
+                },
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_01",
+                        "lt_15_04"
                     ]
                 },
                 "tower_n_02": {
@@ -12441,15 +12607,13 @@
                     ]
                 }
             },
-            "coop": {
-                "act2vmulti": {
-                    "act2vmulti": [
-                        "act2vmulti-ft01",
-                        "act2vmulti-ft02"
-                    ]
-                }
-            },
             "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_01",
+                        "act36side_08"
+                    ]
+                },
                 "act16mini": {
                     "act16mini_zone1": [
                         "act16mini_07",
@@ -12508,6 +12672,14 @@
                     ]
                 }
             },
+            "coop": {
+                "act2vmulti": {
+                    "act2vmulti": [
+                        "act2vmulti-ft01",
+                        "act2vmulti-ft02"
+                    ]
+                }
+            },
             "sss": {
                 "tower_tr_02": {
                     "tower_tr_02": [
@@ -12528,6 +12700,11 @@
                 "tower_n_09": {
                     "tower_n_09": [
                         "lt_09_05"
+                    ]
+                },
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_04"
                     ]
                 }
             },
@@ -13439,6 +13616,11 @@
                 }
             },
             "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_07"
+                    ]
+                },
                 "act9mini": {
                     "act9mini_zone1": [
                         "act9mini_05",
@@ -13504,15 +13686,12 @@
                     ]
                 }
             },
-            "coop": {
-                "act2vmulti": {
-                    "act2vmulti": [
-                        "act2vmulti-04",
-                        "act2vmulti-ex04"
-                    ]
-                }
-            },
             "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_07"
+                    ]
+                },
                 "act13mini": {
                     "act13mini_zone1": [
                         "act13mini_01",
@@ -13543,6 +13722,14 @@
                     "act6d5": [
                         "act6d5_05",
                         "act6d5_05#f#"
+                    ]
+                }
+            },
+            "coop": {
+                "act2vmulti": {
+                    "act2vmulti": [
+                        "act2vmulti-04",
+                        "act2vmulti-ex04"
                     ]
                 }
             },
@@ -15384,6 +15571,9 @@
             },
             "ra": {
                 "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_106"
+                    ],
                     "RA#2 Normal Rushparty": [
                         "RA#2_monthly_7",
                         "RA#2_monthly_7",
@@ -15453,6 +15643,13 @@
                 "camp_r_02": {
                     "camp_r_02": [
                         "camp_r_02"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_04"
                     ]
                 }
             },
@@ -15993,6 +16190,11 @@
                 "tower_n_14": {
                     "tower_n_14": [
                         "lt_14_05"
+                    ]
+                },
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_06"
                     ]
                 },
                 "tower_n_02": {
@@ -16862,6 +17064,11 @@
                 "tower_n_08": {
                     "tower_n_08": [
                         "lt_08_03"
+                    ]
+                },
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_06"
                     ]
                 }
             },
@@ -17890,6 +18097,9 @@
                     ],
                     "RA#2 Field : Battle": [
                         "sandbox_1_64"
+                    ],
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_106"
                     ]
                 }
             }
@@ -18323,6 +18533,16 @@
                 }
             },
             "sss": {
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_01"
+                    ]
+                },
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_01"
+                    ]
+                },
                 "tower_n_01": {
                     "tower_n_01": [
                         "lt_01_01",
@@ -18503,6 +18723,11 @@
                 "tower_n_14": {
                     "tower_n_14": [
                         "lt_14_05"
+                    ]
+                },
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_06"
                     ]
                 },
                 "tower_n_02": {
@@ -18997,6 +19222,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_04"
+                    ]
+                }
+            },
             "coop": {
                 "act17d1": {
                     "act17d1": [
@@ -19280,6 +19512,14 @@
                 "camp_r_02": {
                     "camp_r_02": [
                         "camp_r_02"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_04",
+                        "lt_15_06"
                     ]
                 }
             },
@@ -19683,6 +19923,11 @@
                     "tower_n_14": [
                         "lt_14_05"
                     ]
+                },
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_06"
+                    ]
                 }
             },
             "cc": {
@@ -19722,15 +19967,13 @@
                     ]
                 }
             },
-            "coop": {
-                "act2vmulti": {
-                    "act2vmulti": [
-                        "act2vmulti-04",
-                        "act2vmulti-ex04"
-                    ]
-                }
-            },
             "sidestory": {
+                "act35side": {
+                    "act35side_zone2": [
+                        "act35side_ex05",
+                        "act35side_ex05#f#"
+                    ]
+                },
                 "act33side": {
                     "act33side_zone3": [
                         "act33side_s02",
@@ -19805,10 +20048,25 @@
                     ]
                 }
             },
+            "coop": {
+                "act2vmulti": {
+                    "act2vmulti": [
+                        "act2vmulti-04",
+                        "act2vmulti-ex04"
+                    ]
+                }
+            },
             "campaign": {
                 "camp_r_01": {
                     "camp_r_01": [
                         "camp_r_01"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_06"
                     ]
                 }
             },
@@ -20803,6 +21061,11 @@
                         "lt_07_02"
                     ]
                 },
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_03"
+                    ]
+                },
                 "tower_n_04": {
                     "tower_n_04": [
                         "lt_04_05"
@@ -21219,6 +21482,11 @@
                         "lt_13_01"
                     ]
                 },
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_05"
+                    ]
+                },
                 "tower_n_03": {
                     "tower_n_03": [
                         "lt_03_02",
@@ -21557,6 +21825,11 @@
                     "tower_n_10": [
                         "lt_10_02"
                     ]
+                },
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_05"
+                    ]
                 }
             },
             "cc": {
@@ -21816,6 +22089,11 @@
                 "tower_n_09": {
                     "tower_n_09": [
                         "lt_09_04"
+                    ]
+                },
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_05"
                     ]
                 }
             },
@@ -22358,6 +22636,11 @@
                     "tower_n_10": [
                         "lt_10_02"
                     ]
+                },
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_05"
+                    ]
                 }
             },
             "cc": {
@@ -22395,6 +22678,13 @@
                     ],
                     "IS#5 Floor 5": [
                         "rogue4_5-1"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_100"
                     ]
                 }
             }
@@ -22607,6 +22897,9 @@
                     "RA#2 Field : Building Material": [
                         "sandbox_1_06",
                         "sandbox_1_82"
+                    ],
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_100"
                     ]
                 }
             }
@@ -23298,6 +23591,9 @@
                 "RA#2": {
                     "RA#2 Field : Food Material": [
                         "sandbox_1_13"
+                    ],
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_98"
                     ]
                 }
             }
@@ -23540,6 +23836,9 @@
                 "RA#2": {
                     "RA#2 Field : Battle": [
                         "sandbox_1_64"
+                    ],
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_106"
                     ]
                 }
             }
@@ -23759,6 +24058,13 @@
                         "lt_12_05"
                     ]
                 }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_106"
+                    ]
+                }
             }
         },
         "enemy_1271_nhkodo": {
@@ -23792,6 +24098,13 @@
                 "camp_r_19": {
                     "camp_r_19": [
                         "camp_r_19"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_04"
                     ]
                 }
             },
@@ -23913,6 +24226,13 @@
                 "camp_r_19": {
                     "camp_r_19": [
                         "camp_r_19"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_04"
                     ]
                 }
             },
@@ -24277,6 +24597,13 @@
                     "tower_n_13": [
                         "lt_13_02"
                     ]
+                },
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_01",
+                        "lt_15_02",
+                        "lt_15_04"
+                    ]
                 }
             },
             "cc": {
@@ -24545,6 +24872,13 @@
                         "rogue3_2-4"
                     ]
                 }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_100"
+                    ]
+                }
             }
         },
         "enemy_1071_dftman_2": {
@@ -24662,6 +24996,13 @@
                 "tower_n_13": {
                     "tower_n_13": [
                         "lt_13_02"
+                    ]
+                },
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_02",
+                        "lt_15_04",
+                        "lt_15_05"
                     ]
                 }
             },
@@ -24877,6 +25218,11 @@
                 }
             },
             "sss": {
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_04"
+                    ]
+                },
                 "tower_n_02": {
                     "tower_n_02": [
                         "lt_02_03"
@@ -25093,6 +25439,9 @@
                 "RA#2": {
                     "RA#2 Field : Battle": [
                         "sandbox_1_64"
+                    ],
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_106"
                     ]
                 }
             }
@@ -25679,6 +26028,20 @@
                         "tough_13-19"
                     ]
                 }
+            },
+            "sss": {
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_05"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_100"
+                    ]
+                }
             }
         },
         "enemy_1361_dthrow": {
@@ -25799,6 +26162,14 @@
                         "act2vmulti-ex03"
                     ]
                 }
+            },
+            "sss": {
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_02",
+                        "lt_15_05"
+                    ]
+                }
             }
         },
         "enemy_1367_dseed": {
@@ -25879,6 +26250,22 @@
                         "act2vmulti-ex03"
                     ]
                 }
+            },
+            "sss": {
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_02",
+                        "lt_15_05"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_104",
+                        "sandbox_1_106"
+                    ]
+                }
             }
         },
         "enemy_1369_bmbcar1": {
@@ -25942,6 +26329,14 @@
                         "act2vmulti-ex03"
                     ]
                 }
+            },
+            "sss": {
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_02",
+                        "lt_15_05"
+                    ]
+                }
             }
         },
         "enemy_1370_bmbcar2": {
@@ -26003,6 +26398,14 @@
                     "act2vmulti": [
                         "act2vmulti-03",
                         "act2vmulti-ex03"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_02",
+                        "lt_15_05"
                     ]
                 }
             }
@@ -26073,6 +26476,13 @@
                     "act2vmulti": [
                         "act2vmulti-03",
                         "act2vmulti-ex03"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_05"
                     ]
                 }
             }
@@ -26165,6 +26575,13 @@
                         "act2vmulti-ex03"
                     ]
                 }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_104"
+                    ]
+                }
             }
         },
         "enemy_1366_dcolle": {
@@ -26204,6 +26621,13 @@
                     "act2vmulti": [
                         "act2vmulti-03",
                         "act2vmulti-ex03"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_106"
                     ]
                 }
             }
@@ -26453,6 +26877,13 @@
                         "tough_14-10"
                     ]
                 }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_100"
+                    ]
+                }
             }
         },
         "enemy_1423_lrfkkt_2": {
@@ -26472,6 +26903,13 @@
                 "IS#5": {
                     "IS#5 Floor 6": [
                         "rogue4_6-1"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_100"
                     ]
                 }
             }
@@ -27103,6 +27541,11 @@
                 }
             },
             "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_03"
+                    ]
+                },
                 "tower_n_04": {
                     "tower_n_04": [
                         "lt_04_05"
@@ -27469,6 +27912,13 @@
                         "camp_r_23"
                     ]
                 }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_100"
+                    ]
+                }
             }
         },
         "enemy_1425_lrcmra_2": {
@@ -27483,6 +27933,13 @@
                 "IS#5": {
                     "IS#5 Floor 5": [
                         "rogue4_5-5"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_100"
                     ]
                 }
             }
@@ -28087,6 +28544,1080 @@
                 }
             }
         },
+        "enemy_10001_trslim": {
+            "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_01",
+                        "act36side_tr01",
+                        "act36side_02",
+                        "act36side_03",
+                        "act36side_07",
+                        "act36side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_1001_bigbo": {
+            "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_01",
+                        "act36side_tr01"
+                    ]
+                },
+                "act6d5": {
+                    "act6d5": [
+                        "act6d5_04",
+                        "act6d5_04#f#"
+                    ]
+                },
+                "1stact": {
+                    "act13d2_zone1": [
+                        "a001_06"
+                    ]
+                }
+            },
+            "coop": {
+                "act2vmulti": {
+                    "act2vmulti": [
+                        "act2vmulti-de01",
+                        "act2vmulti-de02"
+                    ]
+                }
+            },
+            "tn": {
+                "act1bossrush": {
+                    "act1bossrush_zone1": [
+                        "act1bossrush_01"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_tr_02": {
+                    "tower_tr_02": [
+                        "lt_tr_02"
+                    ]
+                }
+            },
+            "cc": {
+                "CC#04": {
+                    "CC#04": [
+                        "rune_06-01"
+                    ]
+                },
+                "CC#05": {
+                    "CC#05": [
+                        "rune_06-01"
+                    ]
+                },
+                "CC#06": {
+                    "CC#06": [
+                        "rune_06-01"
+                    ]
+                },
+                "CC#07": {
+                    "CC#07": [
+                        "rune_06-01"
+                    ]
+                },
+                "CC#08": {
+                    "CC#08": [
+                        "rune_06-01"
+                    ]
+                }
+            },
+            "is": {
+                "IS#1": {
+                    "IS#1 Floor 3": [
+                        "rogue_3-3"
+                    ]
+                },
+                "IS#2": {
+                    "IS#2 Floor 3": [
+                        "rogue1_3-3"
+                    ]
+                },
+                "IS#5": {
+                    "IS#5 Duel": [
+                        "rogue4_d-3"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#1": {
+                    "RA#1 Field : Food Material": [
+                        "sandbox_0_20",
+                        "sandbox_0_25"
+                    ]
+                },
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_55",
+                        "sandbox_1_102"
+                    ]
+                }
+            }
+        },
+        "enemy_10002_trtrsl": {
+            "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_tr01",
+                        "act36side_02",
+                        "act36side_03",
+                        "act36side_04",
+                        "act36side_05",
+                        "act36side_07",
+                        "act36side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10003_trwlpl": {
+            "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_02",
+                        "act36side_03",
+                        "act36side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_1093_ccsbr": {
+            "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_02"
+                    ]
+                },
+                "act16mini": {
+                    "act16mini_zone1": [
+                        "act16mini_03",
+                        "act16mini_03#f#"
+                    ]
+                },
+                "act8mini": {
+                    "act8mini_zone1": [
+                        "act8mini_01",
+                        "act8mini_01#f#",
+                        "act8mini_07",
+                        "act8mini_07#f#"
+                    ]
+                },
+                "act13d0": {
+                    "act13d0_zone1": [
+                        "act13d0_05",
+                        "act13d0_05#f#"
+                    ]
+                },
+                "act12d0": {
+                    "act6sre_zone1": [
+                        "act12d0_01",
+                        "act12d0_02",
+                        "act12d0_03",
+                        "act12d0_04",
+                        "act12d0_05",
+                        "act12d0_06",
+                        "act12d0_07",
+                        "act12d0_08",
+                        "act12d0_09"
+                    ],
+                    "act6sre_zone2": [
+                        "act12d0_ex01",
+                        "act12d0_ex01#f#",
+                        "act12d0_ex02",
+                        "act12d0_ex02#f#",
+                        "act12d0_ex03",
+                        "act12d0_ex03#f#",
+                        "act12d0_ex04",
+                        "act12d0_ex04#f#"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_18": {
+                    "camp_r_18": [
+                        "camp_r_18"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_06": {
+                    "tower_n_06": [
+                        "lt_06_02"
+                    ]
+                },
+                "tower_n_09": {
+                    "tower_n_09": [
+                        "lt_09_02"
+                    ]
+                }
+            },
+            "cc": {
+                "CC#06": {
+                    "CC#06": [
+                        "rune_08-01"
+                    ]
+                },
+                "CC#07": {
+                    "CC#07": [
+                        "rune_08-01"
+                    ]
+                },
+                "CC#08": {
+                    "CC#08": [
+                        "rune_08-01"
+                    ]
+                },
+                "CC#09": {
+                    "CC#09": [
+                        "rune_08-01"
+                    ]
+                },
+                "act42d0": {
+                    "challenge": [
+                        "act42d0_sp01"
+                    ]
+                }
+            },
+            "is": {
+                "IS#4": {
+                    "IS#4 Floor 3": [
+                        "rogue3_3-1"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#1": {
+                    "RA#1 Field : Building Material": [
+                        "sandbox_0_04"
+                    ],
+                    "RA#1 Field : Food Material": [
+                        "sandbox_0_18"
+                    ],
+                    "RA#1 Field : Battle": [
+                        "sandbox_0_44"
+                    ],
+                    "RA#1 Normal Rushparty": [
+                        "RA#1_normal_group5",
+                        "RA#1_event_who1"
+                    ]
+                },
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_13"
+                    ],
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_79"
+                    ],
+                    "RA#2 Normal Rushparty": [
+                        "RA#2_normal_tutorial",
+                        "RA#2_normal_tutorial",
+                        "RA#2_normal_tutorial",
+                        "RA#2_normal_tutorial"
+                    ]
+                }
+            }
+        },
+        "enemy_1094_ccspm": {
+            "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_02"
+                    ]
+                },
+                "act13d0": {
+                    "act13d0_zone1": [
+                        "act13d0_05",
+                        "act13d0_05#f#"
+                    ]
+                },
+                "act12d0": {
+                    "act6sre_zone1": [
+                        "act12d0_02",
+                        "act12d0_03",
+                        "act12d0_04",
+                        "act12d0_06",
+                        "act12d0_07",
+                        "act12d0_08",
+                        "act12d0_09"
+                    ]
+                }
+            },
+            "coop": {
+                "act2vmulti": {
+                    "act2vmulti": [
+                        "act2vmulti-02",
+                        "act2vmulti-ex02"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_06": {
+                    "tower_n_06": [
+                        "lt_06_01"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#1": {
+                    "RA#1 Field : Building Material": [
+                        "sandbox_0_07"
+                    ],
+                    "RA#1 Field : Food Material": [
+                        "sandbox_0_18",
+                        "sandbox_0_19"
+                    ],
+                    "RA#1 Field : Battle": [
+                        "sandbox_0_44"
+                    ],
+                    "RA#1 Normal Rushparty": [
+                        "RA#1_normal_group5",
+                        "RA#1_normal_group5",
+                        "RA#1_normal_group5",
+                        "RA#1_event_who1",
+                        "RA#1_event_who1",
+                        "RA#1_event_who1"
+                    ]
+                },
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_09",
+                        "sandbox_1_104"
+                    ],
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_18",
+                        "sandbox_1_79"
+                    ],
+                    "RA#2 Field : Building Material": [
+                        "sandbox_1_101"
+                    ],
+                    "RA#2 Normal Rushparty": [
+                        "RA#2_normal_tutorial"
+                    ]
+                }
+            }
+        },
+        "enemy_1512_mcmstr": {
+            "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_02"
+                    ]
+                },
+                "act8mini": {
+                    "act8mini_zone1": [
+                        "act8mini_07",
+                        "act8mini_07#f#"
+                    ]
+                },
+                "act12d0": {
+                    "act6sre_zone1": [
+                        "act12d0_08"
+                    ],
+                    "act6sre_zone2": [
+                        "act12d0_ex08",
+                        "act12d0_ex08#f#"
+                    ]
+                }
+            },
+            "coop": {
+                "act2vmulti": {
+                    "act2vmulti": [
+                        "act2vmulti-de01",
+                        "act2vmulti-de02"
+                    ]
+                }
+            },
+            "tn": {
+                "act3bossrush": {
+                    "act3bossrush_zone1": [
+                        "act3bossrush_01"
+                    ]
+                },
+                "act1bossrush": {
+                    "act1bossrush_zone1": [
+                        "act1bossrush_03"
+                    ]
+                }
+            },
+            "cc": {
+                "act42d0": {
+                    "challenge": [
+                        "act42d0_sp01"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#1": {
+                    "RA#1 Field : Battle": [
+                        "sandbox_0_27",
+                        "sandbox_0_44"
+                    ]
+                },
+                "RA#2": {
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_62"
+                    ]
+                }
+            }
+        },
+        "enemy_1004_mslime": {
+            "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_03"
+                    ]
+                },
+                "act13mini": {
+                    "act13mini_zone1": [
+                        "act13mini_02",
+                        "act13mini_02#f#"
+                    ]
+                },
+                "act15d5": {
+                    "act15d5_zone1": [
+                        "act15d5_01",
+                        "act15d5_01#f#"
+                    ]
+                },
+                "act10d5": {
+                    "act10d5_zone1": [
+                        "act10d5_06",
+                        "act10d5_06#f#"
+                    ]
+                },
+                "act9d0": {
+                    "act17d5_zone1": [
+                        "act9d0_01"
+                    ]
+                },
+                "act3d0": {
+                    "act11d7_zone1": [
+                        "a003_01",
+                        "a003_08"
+                    ]
+                },
+                "1stact": {
+                    "act13d2_zone1": [
+                        "a001_02",
+                        "a001_04",
+                        "a001_05"
+                    ],
+                    "act13d2_zone2": [
+                        "a001_ex01",
+                        "a001_ex02",
+                        "a001_ex04",
+                        "a001_ex04#f#"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_06": {
+                    "tower_n_06": [
+                        "lt_06_01",
+                        "lt_06_06"
+                    ]
+                }
+            },
+            "coop": {
+                "act17d1": {
+                    "act17d1": [
+                        "act17d1_03_a"
+                    ]
+                }
+            },
+            "cc": {
+                "CC#00": {
+                    "CC#00": [
+                        "rune_02-01"
+                    ]
+                },
+                "CC#01": {
+                    "CC#01": [
+                        "rune_02-01"
+                    ]
+                },
+                "CC#02": {
+                    "CC#02": [
+                        "rune_02-01"
+                    ]
+                }
+            },
+            "is": {
+                "IS#2": {
+                    "IS#2 Floor 1": [
+                        "rogue1_1-1"
+                    ]
+                },
+                "IS#3": {
+                    "IS#3 Floor 1": [
+                        "rogue2_1-2"
+                    ],
+                    "IS#3 Treasure": [
+                        "rogue2_t-1"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#1": {
+                    "RA#1 Field : Building Material": [
+                        "sandbox_0_02",
+                        "sandbox_0_14"
+                    ],
+                    "RA#1 Field : Food Material": [
+                        "sandbox_0_19"
+                    ],
+                    "RA#1 Field : Battle": [
+                        "sandbox_0_28",
+                        "sandbox_0_42"
+                    ]
+                },
+                "RA#2": {
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_77",
+                        "sandbox_1_85"
+                    ]
+                }
+            }
+        },
+        "enemy_1004_mslime_2": {
+            "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_03"
+                    ]
+                },
+                "act13mini": {
+                    "act13mini_zone1": [
+                        "act13mini_02",
+                        "act13mini_02#f#",
+                        "act13mini_05",
+                        "act13mini_05#f#"
+                    ]
+                },
+                "act13d0": {
+                    "act13d0_zone1": [
+                        "act13d0_06",
+                        "act13d0_06#f#"
+                    ]
+                },
+                "act10d5": {
+                    "act10d5_zone1": [
+                        "act10d5_06",
+                        "act10d5_06#f#"
+                    ]
+                },
+                "act6d5": {
+                    "act6d5": [
+                        "act6d5_03",
+                        "act6d5_03#f#"
+                    ]
+                },
+                "act3d0": {
+                    "act11d7_zone2": [
+                        "a003_f04"
+                    ],
+                    "act11d7_zone3": [
+                        "a003_ex05",
+                        "a003_ex05#f#"
+                    ]
+                }
+            },
+            "coop": {
+                "act17d1": {
+                    "act17d1": [
+                        "act17d1_03_b",
+                        "act17d1_03_c"
+                    ]
+                }
+            },
+            "cc": {
+                "CC#00": {
+                    "CC#00": [
+                        "rune_02-01"
+                    ]
+                },
+                "CC#01": {
+                    "CC#01": [
+                        "rune_02-01"
+                    ]
+                },
+                "CC#02": {
+                    "CC#02": [
+                        "rune_02-01"
+                    ]
+                }
+            },
+            "is": {
+                "IS#3": {
+                    "IS#3 Floor 4": [
+                        "rogue2_4-3"
+                    ]
+                },
+                "IS#4": {
+                    "IS#4 Treasure": [
+                        "rogue3_t-1"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#1": {
+                    "RA#1 Field : Building Material": [
+                        "sandbox_0_02",
+                        "sandbox_0_05",
+                        "sandbox_0_14"
+                    ],
+                    "RA#1 Field : Food Material": [
+                        "sandbox_0_19"
+                    ],
+                    "RA#1 Field : Battle": [
+                        "sandbox_0_30"
+                    ]
+                },
+                "RA#2": {
+                    "RA#2 Field : Building Material": [
+                        "sandbox_1_14",
+                        "sandbox_1_41",
+                        "sandbox_1_49"
+                    ],
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_65",
+                        "sandbox_1_85"
+                    ],
+                    "RA#2 Elite Rushparty": [
+                        "RA#2_event_1",
+                        "RA#2_event_1"
+                    ],
+                    "RA#2 Insect Rushparty": [
+                        "RA#2_insect_1"
+                    ]
+                }
+            }
+        },
+        "enemy_10005_trsmsb": {
+            "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_04"
+                    ]
+                }
+            }
+        },
+        "enemy_10006_trsmgi": {
+            "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_04",
+                        "act36side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10007_trspsb": {
+            "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_05"
+                    ]
+                }
+            }
+        },
+        "enemy_1123_spsbr": {
+            "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_05"
+                    ]
+                },
+                "act16mini": {
+                    "act16mini_zone1": [
+                        "act16mini_06",
+                        "act16mini_06#f#"
+                    ]
+                },
+                "act13mini": {
+                    "act13mini_zone1": [
+                        "act13mini_s01",
+                        "act13mini_s01"
+                    ]
+                },
+                "act10mini": {
+                    "act10mini_zone1": [
+                        "act10mini_10"
+                    ]
+                },
+                "act15side": {
+                    "act15sre_zone1": [
+                        "act15side_01",
+                        "act15side_01"
+                    ]
+                },
+                "act16d5": {
+                    "act9sre_zone1": [
+                        "act16d5_01",
+                        "act16d5_01",
+                        "act16d5_tr01",
+                        "act16d5_tr01",
+                        "act16d5_02",
+                        "act16d5_02",
+                        "act16d5_04",
+                        "act16d5_04",
+                        "act16d5_05",
+                        "act16d5_07",
+                        "act16d5_07",
+                        "act16d5_08",
+                        "act16d5_08",
+                        "act16d5_09",
+                        "act16d5_09",
+                        "act16d5_10",
+                        "act16d5_10"
+                    ]
+                }
+            },
+            "cc": {
+                "CC#07": {
+                    "CC#07": [
+                        "rune_09-01"
+                    ]
+                },
+                "CC#08": {
+                    "CC#08": [
+                        "rune_09-01"
+                    ]
+                },
+                "CC#09": {
+                    "CC#09": [
+                        "rune_11-02",
+                        "rune_09-01"
+                    ]
+                },
+                "CC#10": {
+                    "CC#10": [
+                        "rune_09-01",
+                        "rune_11-02"
+                    ]
+                },
+                "CC#11": {
+                    "CC#11": [
+                        "rune_11-02"
+                    ]
+                },
+                "CC#12": {
+                    "CC#12": [
+                        "rune_11-02"
+                    ]
+                }
+            }
+        },
+        "enemy_1129_spklr": {
+            "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_05"
+                    ]
+                },
+                "act14mini": {
+                    "act14mini_zone1": [
+                        "act14mini_s01"
+                    ]
+                },
+                "act16d5": {
+                    "act9sre_zone1": [
+                        "act16d5_09",
+                        "act16d5_09",
+                        "act16d5_10"
+                    ]
+                }
+            }
+        },
+        "enemy_10008_trbbox": {
+            "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_06"
+                    ]
+                }
+            }
+        },
+        "enemy_1147_dshond": {
+            "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_06"
+                    ]
+                },
+                "act34side": {
+                    "act34side_zone1": [
+                        "act34side_09"
+                    ]
+                },
+                "act14mini": {
+                    "act14mini_zone1": [
+                        "act14mini_03",
+                        "act14mini_03#f#"
+                    ]
+                },
+                "act17side": {
+                    "act17sre_zone1": [
+                        "act17side_01",
+                        "act17side_02",
+                        "act17side_tr01",
+                        "act17side_03",
+                        "act17side_04"
+                    ],
+                    "act17sre_zone2": [
+                        "act17side_06",
+                        "act17side_07",
+                        "act17side_08"
+                    ],
+                    "act17sre_zone3": [
+                        "act17side_09",
+                        "act17side_10"
+                    ]
+                },
+                "act18d3": {
+                    "act11sre_zone1": [
+                        "act18d3_02",
+                        "act18d3_03",
+                        "act18d3_05",
+                        "act18d3_09"
+                    ],
+                    "act11sre_zone2": [
+                        "act18d3_ex01",
+                        "act18d3_ex01#f#",
+                        "act18d3_ex08",
+                        "act18d3_ex08#f#"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_05": {
+                    "camp_r_05": [
+                        "camp_r_05"
+                    ]
+                },
+                "camp_r_13": {
+                    "camp_r_13": [
+                        "camp_r_13"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_10": {
+                    "tower_n_10": [
+                        "lt_10_01",
+                        "lt_10_05"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#02": {
+                    "CCBP#02": [
+                        "crisis_v2_02-01"
+                    ]
+                }
+            },
+            "is": {
+                "IS#3": {
+                    "IS#3 Floor 1": [
+                        "rogue2_1-4",
+                        "rogue2_1-5"
+                    ],
+                    "IS#3 Floor 3": [
+                        "rogue2_3-3",
+                        "rogue2_3-6",
+                        "rogue2_b-3",
+                        "rogue2_b-3-b"
+                    ],
+                    "IS#3 Floor 4": [
+                        "rogue2_4-5"
+                    ],
+                    "IS#3 Floor 5": [
+                        "rogue2_5-7"
+                    ]
+                }
+            }
+        },
+        "enemy_1152_dsurch": {
+            "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_06"
+                    ]
+                },
+                "act34side": {
+                    "act34side_zone1": [
+                        "act34side_tr01"
+                    ]
+                },
+                "act18d3": {
+                    "act11sre_zone1": [
+                        "act18d3_06",
+                        "act18d3_07",
+                        "act18d3_08"
+                    ],
+                    "act11sre_zone2": [
+                        "act18d3_ex01",
+                        "act18d3_ex01#f#"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_05": {
+                    "camp_r_05": [
+                        "camp_r_05"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_10": {
+                    "tower_n_10": [
+                        "lt_10_01",
+                        "lt_10_06"
+                    ]
+                }
+            },
+            "cc": {
+                "CC#09": {
+                    "CC#09": [
+                        "rune_11-01"
+                    ]
+                },
+                "CC#10": {
+                    "CC#10": [
+                        "rune_11-01"
+                    ]
+                },
+                "CC#11": {
+                    "CC#11": [
+                        "rune_11-01"
+                    ]
+                },
+                "CC#12": {
+                    "CC#12": [
+                        "rune_11-01"
+                    ]
+                }
+            },
+            "is": {
+                "IS#3": {
+                    "IS#3 Floor 3": [
+                        "rogue2_3-3"
+                    ],
+                    "IS#3 Floor 4": [
+                        "rogue2_4-5"
+                    ]
+                }
+            }
+        },
+        "enemy_1148_dssbr": {
+            "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_06"
+                    ]
+                },
+                "act14mini": {
+                    "act14mini_zone1": [
+                        "act14mini_03",
+                        "act14mini_03#f#"
+                    ]
+                },
+                "act17side": {
+                    "act17sre_zone1": [
+                        "act17side_01",
+                        "act17side_02",
+                        "act17side_03",
+                        "act17side_05"
+                    ],
+                    "act17sre_zone3": [
+                        "act17side_10"
+                    ]
+                },
+                "act18d3": {
+                    "act11sre_zone1": [
+                        "act18d3_tr01",
+                        "act18d3_02",
+                        "act18d3_03",
+                        "act18d3_04",
+                        "act18d3_05",
+                        "act18d3_06",
+                        "act18d3_07",
+                        "act18d3_08"
+                    ],
+                    "act11sre_zone2": [
+                        "act18d3_ex01",
+                        "act18d3_ex01#f#"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_05": {
+                    "camp_r_05": [
+                        "camp_r_05"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_10": {
+                    "tower_n_10": [
+                        "lt_10_01",
+                        "lt_10_06"
+                    ]
+                }
+            },
+            "cc": {
+                "CC#09": {
+                    "CC#09": [
+                        "rune_11-01"
+                    ]
+                },
+                "CC#10": {
+                    "CC#10": [
+                        "rune_11-01"
+                    ]
+                },
+                "CC#11": {
+                    "CC#11": [
+                        "rune_11-01"
+                    ]
+                },
+                "CC#12": {
+                    "CC#12": [
+                        "rune_11-01"
+                    ]
+                }
+            },
+            "is": {
+                "IS#3": {
+                    "IS#3 Floor 3": [
+                        "rogue2_3-3"
+                    ]
+                }
+            }
+        },
+        "enemy_10004_trdiam": {
+            "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_07",
+                        "act36side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_1557_trcerb": {
+            "sidestory": {
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_08"
+                    ]
+                }
+            }
+        },
         "enemy_10009_sggem": {
             "sidestory": {
                 "act35side": {
@@ -28101,6 +29632,35 @@
                         "act35side_07",
                         "act35side_08",
                         "act35side_09"
+                    ],
+                    "act35side_zone2": [
+                        "act35side_ex01",
+                        "act35side_ex01#f#",
+                        "act35side_ex02",
+                        "act35side_ex02#f#",
+                        "act35side_ex03",
+                        "act35side_ex03#f#",
+                        "act35side_ex04",
+                        "act35side_ex04#f#",
+                        "act35side_ex05",
+                        "act35side_ex05#f#",
+                        "act35side_ex06",
+                        "act35side_ex06#f#",
+                        "act35side_ex07",
+                        "act35side_ex07#f#",
+                        "act35side_ex08",
+                        "act35side_ex08#f#"
+                    ],
+                    "act35side_zone3": [
+                        "act35side_s01",
+                        "act35side_s01#f#",
+                        "act35side_s02",
+                        "act35side_s02#f#",
+                        "act35side_s03",
+                        "act35side_s03#f#",
+                        "act35side_s04",
+                        "act35side_s04#f#",
+                        "act35side_mo01"
                     ]
                 }
             }
@@ -28119,6 +29679,9 @@
                         "act35side_07",
                         "act35side_08",
                         "act35side_09"
+                    ],
+                    "act35side_zone3": [
+                        "act35side_mo01"
                     ]
                 }
             }
@@ -28132,6 +29695,9 @@
                         "act35side_04",
                         "act35side_08",
                         "act35side_09"
+                    ],
+                    "act35side_zone3": [
+                        "act35side_mo01"
                     ]
                 }
             }
@@ -28146,6 +29712,9 @@
                         "act35side_07",
                         "act35side_08",
                         "act35side_09"
+                    ],
+                    "act35side_zone3": [
+                        "act35side_mo01"
                     ]
                 }
             }
@@ -28158,6 +29727,9 @@
                         "act35side_04",
                         "act35side_08",
                         "act35side_09"
+                    ],
+                    "act35side_zone3": [
+                        "act35side_mo01"
                     ]
                 }
             }
@@ -28170,6 +29742,9 @@
                         "act35side_05",
                         "act35side_07",
                         "act35side_09"
+                    ],
+                    "act35side_zone3": [
+                        "act35side_mo01"
                     ]
                 }
             }
@@ -28180,6 +29755,9 @@
                     "act35side_zone1": [
                         "act35side_05",
                         "act35side_09"
+                    ],
+                    "act35side_zone3": [
+                        "act35side_mo01"
                     ]
                 }
             }
@@ -28190,6 +29768,10 @@
                     "act35side_zone1": [
                         "act35side_06",
                         "act35side_09"
+                    ],
+                    "act35side_zone2": [
+                        "act35side_ex03",
+                        "act35side_ex03#f#"
                     ]
                 }
             }
@@ -28209,6 +29791,9 @@
                     "act35side_zone1": [
                         "act35side_07",
                         "act35side_09"
+                    ],
+                    "act35side_zone3": [
+                        "act35side_mo01"
                     ]
                 }
             }
@@ -28218,6 +29803,14 @@
                 "act35side": {
                     "act35side_zone1": [
                         "act35side_07"
+                    ],
+                    "act35side_zone2": [
+                        "act35side_ex07",
+                        "act35side_ex07#f#"
+                    ],
+                    "act35side_zone3": [
+                        "act35side_s01",
+                        "act35side_s01#f#"
                     ]
                 }
             }
@@ -28237,6 +29830,232 @@
                 "act35side": {
                     "act35side_zone1": [
                         "act35side_09"
+                    ],
+                    "act35side_zone2": [
+                        "act35side_ex08",
+                        "act35side_ex08#f#"
+                    ],
+                    "act35side_zone3": [
+                        "act35side_s04",
+                        "act35side_s04#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10010_sgnja_2": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone2": [
+                        "act35side_ex01",
+                        "act35side_ex01#f#",
+                        "act35side_ex02",
+                        "act35side_ex02#f#",
+                        "act35side_ex03",
+                        "act35side_ex03#f#",
+                        "act35side_ex04",
+                        "act35side_ex04#f#",
+                        "act35side_ex05",
+                        "act35side_ex05#f#",
+                        "act35side_ex06",
+                        "act35side_ex06#f#",
+                        "act35side_ex07",
+                        "act35side_ex07#f#",
+                        "act35side_ex08",
+                        "act35side_ex08#f#"
+                    ],
+                    "act35side_zone3": [
+                        "act35side_s01",
+                        "act35side_s01#f#",
+                        "act35side_s03",
+                        "act35side_s03#f#",
+                        "act35side_s04",
+                        "act35side_s04#f#",
+                        "act35side_mo01"
+                    ]
+                }
+            }
+        },
+        "enemy_10014_sgrich_2": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone2": [
+                        "act35side_ex01",
+                        "act35side_ex01#f#",
+                        "act35side_ex07",
+                        "act35side_ex07#f#"
+                    ],
+                    "act35side_zone3": [
+                        "act35side_s01",
+                        "act35side_s01#f#",
+                        "act35side_s02",
+                        "act35side_s02#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10016_sggint_2": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone2": [
+                        "act35side_ex02",
+                        "act35side_ex02#f#",
+                        "act35side_ex05",
+                        "act35side_ex05#f#",
+                        "act35side_ex07",
+                        "act35side_ex07#f#",
+                        "act35side_ex08",
+                        "act35side_ex08#f#"
+                    ],
+                    "act35side_zone3": [
+                        "act35side_s03",
+                        "act35side_s03#f#",
+                        "act35side_s04",
+                        "act35side_s04#f#",
+                        "act35side_mo01"
+                    ]
+                }
+            }
+        },
+        "enemy_10017_sgass_2": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone2": [
+                        "act35side_ex02",
+                        "act35side_ex02#f#",
+                        "act35side_ex03",
+                        "act35side_ex03#f#",
+                        "act35side_ex04",
+                        "act35side_ex04#f#",
+                        "act35side_ex07",
+                        "act35side_ex07#f#",
+                        "act35side_ex08",
+                        "act35side_ex08#f#"
+                    ],
+                    "act35side_zone3": [
+                        "act35side_s01",
+                        "act35side_s01#f#",
+                        "act35side_s03",
+                        "act35side_s03#f#",
+                        "act35side_s04",
+                        "act35side_s04#f#",
+                        "act35side_mo01"
+                    ]
+                }
+            }
+        },
+        "enemy_10012_sgbtle_2": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone2": [
+                        "act35side_ex02",
+                        "act35side_ex02#f#",
+                        "act35side_ex05",
+                        "act35side_ex05#f#",
+                        "act35side_ex08",
+                        "act35side_ex08#f#"
+                    ],
+                    "act35side_zone3": [
+                        "act35side_s03",
+                        "act35side_s03#f#",
+                        "act35side_mo01"
+                    ]
+                }
+            }
+        },
+        "enemy_10018_sgrobh_2": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone2": [
+                        "act35side_ex03",
+                        "act35side_ex03#f#",
+                        "act35side_ex04",
+                        "act35side_ex04#f#",
+                        "act35side_ex05",
+                        "act35side_ex05#f#",
+                        "act35side_ex08",
+                        "act35side_ex08#f#"
+                    ],
+                    "act35side_zone3": [
+                        "act35side_s01",
+                        "act35side_s01#f#",
+                        "act35side_s02",
+                        "act35side_s02#f#",
+                        "act35side_s03",
+                        "act35side_s03#f#",
+                        "act35side_s04",
+                        "act35side_s04#f#",
+                        "act35side_mo01"
+                    ]
+                }
+            }
+        },
+        "enemy_10019_sgmum_2": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone2": [
+                        "act35side_ex05",
+                        "act35side_ex05#f#",
+                        "act35side_ex06",
+                        "act35side_ex06#f#",
+                        "act35side_ex08",
+                        "act35side_ex08#f#"
+                    ],
+                    "act35side_zone3": [
+                        "act35side_s01",
+                        "act35side_s01#f#",
+                        "act35side_s02",
+                        "act35side_s02#f#",
+                        "act35side_s03",
+                        "act35side_s03#f#",
+                        "act35side_s04",
+                        "act35side_s04#f#",
+                        "act35side_mo01"
+                    ]
+                }
+            }
+        },
+        "enemy_10013_sgrob_2": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone2": [
+                        "act35side_ex06",
+                        "act35side_ex06#f#",
+                        "act35side_ex07",
+                        "act35side_ex07#f#",
+                        "act35side_ex08",
+                        "act35side_ex08#f#"
+                    ],
+                    "act35side_zone3": [
+                        "act35side_s01",
+                        "act35side_s01#f#",
+                        "act35side_s04",
+                        "act35side_s04#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10015_sgbird_2": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone2": [
+                        "act35side_ex08",
+                        "act35side_ex08#f#"
+                    ],
+                    "act35side_zone3": [
+                        "act35side_s02",
+                        "act35side_s02#f#",
+                        "act35side_mo01"
+                    ]
+                }
+            }
+        },
+        "enemy_10011_sgshot_2": {
+            "sidestory": {
+                "act35side": {
+                    "act35side_zone3": [
+                        "act35side_s01",
+                        "act35side_s01#f#",
+                        "act35side_mo01"
                     ]
                 }
             }
@@ -28418,6 +30237,11 @@
                 "tower_n_09": {
                     "tower_n_09": [
                         "lt_09_05"
+                    ]
+                },
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_04"
                     ]
                 }
             },
@@ -29011,7 +30835,7 @@
                     ]
                 },
                 "act27side": {
-                    "act27side_zone2": [
+                    "act27sre_zone2": [
                         "act27side_ex01",
                         "act27side_ex01#f#",
                         "act27side_ex02",
@@ -29029,7 +30853,7 @@
                         "act27side_ex08",
                         "act27side_ex08#f#"
                     ],
-                    "act27side_zone3": [
+                    "act27sre_zone3": [
                         "act27side_s01",
                         "act27side_s01#f#",
                         "act27side_s02",
@@ -29061,7 +30885,7 @@
                     ]
                 },
                 "act27side": {
-                    "act27side_zone2": [
+                    "act27sre_zone2": [
                         "act27side_ex01",
                         "act27side_ex01#f#",
                         "act27side_ex02",
@@ -29079,7 +30903,7 @@
                         "act27side_ex08",
                         "act27side_ex08#f#"
                     ],
-                    "act27side_zone3": [
+                    "act27sre_zone3": [
                         "act27side_s01",
                         "act27side_s01#f#",
                         "act27side_s03",
@@ -29102,7 +30926,7 @@
                     ]
                 },
                 "act27side": {
-                    "act27side_zone2": [
+                    "act27sre_zone2": [
                         "act27side_ex01",
                         "act27side_ex01#f#",
                         "act27side_ex03",
@@ -29116,7 +30940,7 @@
                         "act27side_ex08",
                         "act27side_ex08#f#"
                     ],
-                    "act27side_zone3": [
+                    "act27sre_zone3": [
                         "act27side_s01",
                         "act27side_s01#f#",
                         "act27side_s02",
@@ -29149,7 +30973,7 @@
                     ]
                 },
                 "act27side": {
-                    "act27side_zone2": [
+                    "act27sre_zone2": [
                         "act27side_ex02",
                         "act27side_ex02#f#",
                         "act27side_ex03",
@@ -29161,7 +30985,7 @@
                         "act27side_ex08",
                         "act27side_ex08#f#"
                     ],
-                    "act27side_zone3": [
+                    "act27sre_zone3": [
                         "act27side_s01",
                         "act27side_s01#f#",
                         "act27side_s03",
@@ -29182,13 +31006,13 @@
                     ]
                 },
                 "act27side": {
-                    "act27side_zone2": [
+                    "act27sre_zone2": [
                         "act27side_ex06",
                         "act27side_ex06#f#",
                         "act27side_ex07",
                         "act27side_ex07#f#"
                     ],
-                    "act27side_zone3": [
+                    "act27sre_zone3": [
                         "act27side_s02",
                         "act27side_s02#f#",
                         "act27side_s04",
@@ -29209,7 +31033,7 @@
                     ]
                 },
                 "act27side": {
-                    "act27side_zone1": [
+                    "act27sre_zone1": [
                         "act27side_05",
                         "act27side_tr02",
                         "act27side_06",
@@ -29219,7 +31043,7 @@
                         "act27side_sp02",
                         "act27side_sp03"
                     ],
-                    "act27side_zone2": [
+                    "act27sre_zone2": [
                         "act27side_ex01",
                         "act27side_ex01#f#",
                         "act27side_ex02",
@@ -29229,7 +31053,7 @@
                         "act27side_ex07",
                         "act27side_ex07#f#"
                     ],
-                    "act27side_zone3": [
+                    "act27sre_zone3": [
                         "act27side_s01",
                         "act27side_s01#f#",
                         "act27side_s02",
@@ -29606,6 +31430,13 @@
                         "rogue4_b-5"
                     ]
                 }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_106"
+                    ]
+                }
             }
         },
         "enemy_1414_mmleak_2": {
@@ -29696,6 +31527,13 @@
                         "act33side_mo01"
                     ]
                 }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_99"
+                    ]
+                }
             }
         },
         "enemy_1433_dsbasi": {
@@ -29756,73 +31594,6 @@
                         "act34side_ex07#f#",
                         "act34side_ex08",
                         "act34side_ex08#f#"
-                    ]
-                }
-            }
-        },
-        "enemy_1152_dsurch": {
-            "sidestory": {
-                "act34side": {
-                    "act34side_zone1": [
-                        "act34side_tr01"
-                    ]
-                },
-                "act18d3": {
-                    "act11sre_zone1": [
-                        "act18d3_06",
-                        "act18d3_07",
-                        "act18d3_08"
-                    ],
-                    "act11sre_zone2": [
-                        "act18d3_ex01",
-                        "act18d3_ex01#f#"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_05": {
-                    "camp_r_05": [
-                        "camp_r_05"
-                    ]
-                }
-            },
-            "sss": {
-                "tower_n_10": {
-                    "tower_n_10": [
-                        "lt_10_01",
-                        "lt_10_06"
-                    ]
-                }
-            },
-            "cc": {
-                "CC#09": {
-                    "CC#09": [
-                        "rune_11-01"
-                    ]
-                },
-                "CC#10": {
-                    "CC#10": [
-                        "rune_11-01"
-                    ]
-                },
-                "CC#11": {
-                    "CC#11": [
-                        "rune_11-01"
-                    ]
-                },
-                "CC#12": {
-                    "CC#12": [
-                        "rune_11-01"
-                    ]
-                }
-            },
-            "is": {
-                "IS#3": {
-                    "IS#3 Floor 3": [
-                        "rogue2_3-3"
-                    ],
-                    "IS#3 Floor 4": [
-                        "rogue2_4-5"
                     ]
                 }
             }
@@ -29955,100 +31726,6 @@
                 "CCBP#02": {
                     "CCBP#02": [
                         "crisis_v2_02-01"
-                    ]
-                }
-            }
-        },
-        "enemy_1147_dshond": {
-            "sidestory": {
-                "act34side": {
-                    "act34side_zone1": [
-                        "act34side_09"
-                    ]
-                },
-                "act14mini": {
-                    "act14mini_zone1": [
-                        "act14mini_03",
-                        "act14mini_03#f#"
-                    ]
-                },
-                "act17side": {
-                    "act17sre_zone1": [
-                        "act17side_01",
-                        "act17side_02",
-                        "act17side_tr01",
-                        "act17side_03",
-                        "act17side_04"
-                    ],
-                    "act17sre_zone2": [
-                        "act17side_06",
-                        "act17side_07",
-                        "act17side_08"
-                    ],
-                    "act17sre_zone3": [
-                        "act17side_09",
-                        "act17side_10"
-                    ]
-                },
-                "act18d3": {
-                    "act11sre_zone1": [
-                        "act18d3_02",
-                        "act18d3_03",
-                        "act18d3_05",
-                        "act18d3_09"
-                    ],
-                    "act11sre_zone2": [
-                        "act18d3_ex01",
-                        "act18d3_ex01#f#",
-                        "act18d3_ex08",
-                        "act18d3_ex08#f#"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_05": {
-                    "camp_r_05": [
-                        "camp_r_05"
-                    ]
-                },
-                "camp_r_13": {
-                    "camp_r_13": [
-                        "camp_r_13"
-                    ]
-                }
-            },
-            "sss": {
-                "tower_n_10": {
-                    "tower_n_10": [
-                        "lt_10_01",
-                        "lt_10_05"
-                    ]
-                }
-            },
-            "cc": {
-                "CCBP#02": {
-                    "CCBP#02": [
-                        "crisis_v2_02-01"
-                    ]
-                }
-            },
-            "is": {
-                "IS#3": {
-                    "IS#3 Floor 1": [
-                        "rogue2_1-4",
-                        "rogue2_1-5"
-                    ],
-                    "IS#3 Floor 3": [
-                        "rogue2_3-3",
-                        "rogue2_3-6",
-                        "rogue2_b-3",
-                        "rogue2_b-3-b"
-                    ],
-                    "IS#3 Floor 4": [
-                        "rogue2_4-5"
-                    ],
-                    "IS#3 Floor 5": [
-                        "rogue2_5-7"
                     ]
                 }
             }
@@ -30835,7 +32512,8 @@
                         "sandbox_1_49"
                     ],
                     "RA#2 Field : Food Material": [
-                        "sandbox_1_58"
+                        "sandbox_1_58",
+                        "sandbox_1_102"
                     ],
                     "RA#2 Field : Battle": [
                         "sandbox_1_74"
@@ -30880,6 +32558,13 @@
                 "IS#4": {
                     "IS#4 Floor 5": [
                         "rogue3_5-1"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_99"
                     ]
                 }
             }
@@ -30990,76 +32675,6 @@
                         "act2vmulti-ex05",
                         "act2vmulti-ex06",
                         "act2vmulti-ex07"
-                    ]
-                }
-            }
-        },
-        "enemy_1094_ccspm": {
-            "coop": {
-                "act2vmulti": {
-                    "act2vmulti": [
-                        "act2vmulti-02",
-                        "act2vmulti-ex02"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act13d0": {
-                    "act13d0_zone1": [
-                        "act13d0_05",
-                        "act13d0_05#f#"
-                    ]
-                },
-                "act12d0": {
-                    "act6sre_zone1": [
-                        "act12d0_02",
-                        "act12d0_03",
-                        "act12d0_04",
-                        "act12d0_06",
-                        "act12d0_07",
-                        "act12d0_08",
-                        "act12d0_09"
-                    ]
-                }
-            },
-            "sss": {
-                "tower_n_06": {
-                    "tower_n_06": [
-                        "lt_06_01"
-                    ]
-                }
-            },
-            "ra": {
-                "RA#1": {
-                    "RA#1 Field : Building Material": [
-                        "sandbox_0_07"
-                    ],
-                    "RA#1 Field : Food Material": [
-                        "sandbox_0_18",
-                        "sandbox_0_19"
-                    ],
-                    "RA#1 Field : Battle": [
-                        "sandbox_0_44"
-                    ],
-                    "RA#1 Normal Rushparty": [
-                        "RA#1_normal_group5",
-                        "RA#1_normal_group5",
-                        "RA#1_normal_group5",
-                        "RA#1_event_who1",
-                        "RA#1_event_who1",
-                        "RA#1_event_who1"
-                    ]
-                },
-                "RA#2": {
-                    "RA#2 Field : Food Material": [
-                        "sandbox_1_09"
-                    ],
-                    "RA#2 Field : Battle": [
-                        "sandbox_1_18",
-                        "sandbox_1_79"
-                    ],
-                    "RA#2 Normal Rushparty": [
-                        "RA#2_normal_tutorial"
                     ]
                 }
             }
@@ -31456,6 +33071,9 @@
                     "RA#2 Field : Building Material": [
                         "sandbox_1_07",
                         "sandbox_1_83"
+                    ],
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_102"
                     ]
                 }
             }
@@ -34387,6 +36005,13 @@
                         "act14side_ex08#f#"
                     ]
                 }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_106"
+                    ]
+                }
             }
         },
         "enemy_4012_mumssi_2": {
@@ -35702,159 +37327,6 @@
                 }
             }
         },
-        "enemy_1001_bigbo": {
-            "coop": {
-                "act2vmulti": {
-                    "act2vmulti": [
-                        "act2vmulti-de01",
-                        "act2vmulti-de02"
-                    ]
-                }
-            },
-            "tn": {
-                "act1bossrush": {
-                    "act1bossrush_zone1": [
-                        "act1bossrush_01"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act6d5": {
-                    "act6d5": [
-                        "act6d5_04",
-                        "act6d5_04#f#"
-                    ]
-                },
-                "1stact": {
-                    "act13d2_zone1": [
-                        "a001_06"
-                    ]
-                }
-            },
-            "sss": {
-                "tower_tr_02": {
-                    "tower_tr_02": [
-                        "lt_tr_02"
-                    ]
-                }
-            },
-            "cc": {
-                "CC#04": {
-                    "CC#04": [
-                        "rune_06-01"
-                    ]
-                },
-                "CC#05": {
-                    "CC#05": [
-                        "rune_06-01"
-                    ]
-                },
-                "CC#06": {
-                    "CC#06": [
-                        "rune_06-01"
-                    ]
-                },
-                "CC#07": {
-                    "CC#07": [
-                        "rune_06-01"
-                    ]
-                },
-                "CC#08": {
-                    "CC#08": [
-                        "rune_06-01"
-                    ]
-                }
-            },
-            "is": {
-                "IS#1": {
-                    "IS#1 Floor 3": [
-                        "rogue_3-3"
-                    ]
-                },
-                "IS#2": {
-                    "IS#2 Floor 3": [
-                        "rogue1_3-3"
-                    ]
-                },
-                "IS#5": {
-                    "IS#5 Duel": [
-                        "rogue4_d-3"
-                    ]
-                }
-            },
-            "ra": {
-                "RA#1": {
-                    "RA#1 Field : Food Material": [
-                        "sandbox_0_20",
-                        "sandbox_0_25"
-                    ]
-                },
-                "RA#2": {
-                    "RA#2 Field : Food Material": [
-                        "sandbox_1_55"
-                    ]
-                }
-            }
-        },
-        "enemy_1512_mcmstr": {
-            "coop": {
-                "act2vmulti": {
-                    "act2vmulti": [
-                        "act2vmulti-de01",
-                        "act2vmulti-de02"
-                    ]
-                }
-            },
-            "tn": {
-                "act3bossrush": {
-                    "act3bossrush_zone1": [
-                        "act3bossrush_01"
-                    ]
-                },
-                "act1bossrush": {
-                    "act1bossrush_zone1": [
-                        "act1bossrush_03"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act8mini": {
-                    "act8mini_zone1": [
-                        "act8mini_07",
-                        "act8mini_07#f#"
-                    ]
-                },
-                "act12d0": {
-                    "act6sre_zone1": [
-                        "act12d0_08"
-                    ],
-                    "act6sre_zone2": [
-                        "act12d0_ex08",
-                        "act12d0_ex08#f#"
-                    ]
-                }
-            },
-            "cc": {
-                "act42d0": {
-                    "challenge": [
-                        "act42d0_sp01"
-                    ]
-                }
-            },
-            "ra": {
-                "RA#1": {
-                    "RA#1 Field : Battle": [
-                        "sandbox_0_27",
-                        "sandbox_0_44"
-                    ]
-                },
-                "RA#2": {
-                    "RA#2 Field : Battle": [
-                        "sandbox_1_62"
-                    ]
-                }
-            }
-        },
         "enemy_1106_byokai": {
             "coop": {
                 "act2vmulti": {
@@ -36035,6 +37507,13 @@
                         "act33side_mo01"
                     ]
                 }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_99"
+                    ]
+                }
             }
         },
         "enemy_1412_mmjump": {
@@ -36178,6 +37657,13 @@
                         "act33side_mo01"
                     ]
                 }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_100"
+                    ]
+                }
             }
         },
         "enemy_1411_mmrnge_2": {
@@ -36302,6 +37788,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_03"
+                    ]
+                }
+            },
             "is": {
                 "IS#5": {
                     "IS#5 Floor 5": [
@@ -36325,6 +37818,13 @@
                     ],
                     "act32side_zone2": [
                         "act32side_mo01"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_03"
                     ]
                 }
             }
@@ -36396,6 +37896,13 @@
                     "act32side_zone2": [
                         "act32side_ex01",
                         "act32side_ex01#f#"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_03"
                     ]
                 }
             }
@@ -36486,6 +37993,13 @@
                 "IS#5": {
                     "IS#5 Floor 5": [
                         "rogue4_5-6"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_97"
                     ]
                 }
             }
@@ -36586,6 +38100,16 @@
                         "act32side_mo01"
                     ]
                 }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_100"
+                    ],
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_106"
+                    ]
+                }
             }
         },
         "enemy_1408_scotcn_2": {
@@ -36612,6 +38136,13 @@
                 "act32side": {
                     "act32side_zone2": [
                         "act32side_mo01"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_03"
                     ]
                 }
             }
@@ -36726,6 +38257,13 @@
                         "act28side_ex08#f#"
                     ]
                 }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_100"
+                    ]
+                }
             }
         },
         "enemy_1356_egun_2": {
@@ -36806,15 +38344,15 @@
             },
             "sidestory": {
                 "act27side": {
-                    "act27side_zone1": [
+                    "act27sre_zone1": [
                         "act27side_tr02",
                         "act27side_08"
                     ],
-                    "act27side_zone2": [
+                    "act27sre_zone2": [
                         "act27side_ex08",
                         "act27side_ex08#f#"
                     ],
-                    "act27side_zone3": [
+                    "act27sre_zone3": [
                         "act27side_s03",
                         "act27side_s03#f#",
                         "act27side_s05",
@@ -36840,7 +38378,7 @@
             },
             "sidestory": {
                 "act27side": {
-                    "act27side_zone2": [
+                    "act27sre_zone2": [
                         "act27side_ex03",
                         "act27side_ex03#f#",
                         "act27side_ex06",
@@ -36848,7 +38386,7 @@
                         "act27side_ex07",
                         "act27side_ex07#f#"
                     ],
-                    "act27side_zone3": [
+                    "act27sre_zone3": [
                         "act27side_s02",
                         "act27side_s02#f#",
                         "act27side_s04",
@@ -36941,6 +38479,9 @@
                     "RA#2 Field : Battle": [
                         "sandbox_1_65",
                         "sandbox_1_87"
+                    ],
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_106"
                     ],
                     "RA#2 Normal Rushparty": [
                         "RA#2_monthly_3"
@@ -37127,6 +38668,11 @@
                 "tower_n_08": {
                     "tower_n_08": [
                         "lt_08_02"
+                    ]
+                },
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_02"
                     ]
                 }
             },
@@ -37729,6 +39275,13 @@
                 "IS#4": {
                     "IS#4 Floor 5": [
                         "rogue3_5-5"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_106"
                     ]
                 }
             }
@@ -38349,6 +39902,14 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_05",
+                        "lt_16_06"
+                    ]
+                }
+            },
             "cc": {
                 "CCBP#01": {
                     "CCBP#01": [
@@ -38539,6 +40100,14 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_05",
+                        "lt_16_06"
+                    ]
+                }
+            },
             "cc": {
                 "CCBP#01": {
                     "CCBP#01": [
@@ -38602,6 +40171,14 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_03",
+                        "lt_16_05"
+                    ]
+                }
+            },
             "cc": {
                 "CCBP#01": {
                     "CCBP#01": [
@@ -38645,6 +40222,13 @@
                 "camp_r_20": {
                     "camp_r_20": [
                         "camp_r_20"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_06"
                     ]
                 }
             }
@@ -39189,137 +40773,6 @@
                 }
             }
         },
-        "enemy_1093_ccsbr": {
-            "sidestory": {
-                "act16mini": {
-                    "act16mini_zone1": [
-                        "act16mini_03",
-                        "act16mini_03#f#"
-                    ]
-                },
-                "act8mini": {
-                    "act8mini_zone1": [
-                        "act8mini_01",
-                        "act8mini_01#f#",
-                        "act8mini_07",
-                        "act8mini_07#f#"
-                    ]
-                },
-                "act13d0": {
-                    "act13d0_zone1": [
-                        "act13d0_05",
-                        "act13d0_05#f#"
-                    ]
-                },
-                "act12d0": {
-                    "act6sre_zone1": [
-                        "act12d0_01",
-                        "act12d0_02",
-                        "act12d0_03",
-                        "act12d0_04",
-                        "act12d0_05",
-                        "act12d0_06",
-                        "act12d0_07",
-                        "act12d0_08",
-                        "act12d0_09"
-                    ],
-                    "act6sre_zone2": [
-                        "act12d0_ex01",
-                        "act12d0_ex01#f#",
-                        "act12d0_ex02",
-                        "act12d0_ex02#f#",
-                        "act12d0_ex03",
-                        "act12d0_ex03#f#",
-                        "act12d0_ex04",
-                        "act12d0_ex04#f#"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_18": {
-                    "camp_r_18": [
-                        "camp_r_18"
-                    ]
-                }
-            },
-            "sss": {
-                "tower_n_06": {
-                    "tower_n_06": [
-                        "lt_06_02"
-                    ]
-                },
-                "tower_n_09": {
-                    "tower_n_09": [
-                        "lt_09_02"
-                    ]
-                }
-            },
-            "cc": {
-                "CC#06": {
-                    "CC#06": [
-                        "rune_08-01"
-                    ]
-                },
-                "CC#07": {
-                    "CC#07": [
-                        "rune_08-01"
-                    ]
-                },
-                "CC#08": {
-                    "CC#08": [
-                        "rune_08-01"
-                    ]
-                },
-                "CC#09": {
-                    "CC#09": [
-                        "rune_08-01"
-                    ]
-                },
-                "act42d0": {
-                    "challenge": [
-                        "act42d0_sp01"
-                    ]
-                }
-            },
-            "is": {
-                "IS#4": {
-                    "IS#4 Floor 3": [
-                        "rogue3_3-1"
-                    ]
-                }
-            },
-            "ra": {
-                "RA#1": {
-                    "RA#1 Field : Building Material": [
-                        "sandbox_0_04"
-                    ],
-                    "RA#1 Field : Food Material": [
-                        "sandbox_0_18"
-                    ],
-                    "RA#1 Field : Battle": [
-                        "sandbox_0_44"
-                    ],
-                    "RA#1 Normal Rushparty": [
-                        "RA#1_normal_group5",
-                        "RA#1_event_who1"
-                    ]
-                },
-                "RA#2": {
-                    "RA#2 Field : Food Material": [
-                        "sandbox_1_13"
-                    ],
-                    "RA#2 Field : Battle": [
-                        "sandbox_1_79"
-                    ],
-                    "RA#2 Normal Rushparty": [
-                        "RA#2_normal_tutorial",
-                        "RA#2_normal_tutorial",
-                        "RA#2_normal_tutorial",
-                        "RA#2_normal_tutorial"
-                    ]
-                }
-            }
-        },
         "enemy_1126_spslme": {
             "sidestory": {
                 "act16mini": {
@@ -39360,88 +40813,6 @@
                 "CC#10": {
                     "CC#10": [
                         "rune_09-01"
-                    ]
-                }
-            }
-        },
-        "enemy_1123_spsbr": {
-            "sidestory": {
-                "act16mini": {
-                    "act16mini_zone1": [
-                        "act16mini_06",
-                        "act16mini_06#f#"
-                    ]
-                },
-                "act13mini": {
-                    "act13mini_zone1": [
-                        "act13mini_s01",
-                        "act13mini_s01"
-                    ]
-                },
-                "act10mini": {
-                    "act10mini_zone1": [
-                        "act10mini_10"
-                    ]
-                },
-                "act15side": {
-                    "act15sre_zone1": [
-                        "act15side_01",
-                        "act15side_01"
-                    ]
-                },
-                "act16d5": {
-                    "act9sre_zone1": [
-                        "act16d5_01",
-                        "act16d5_01",
-                        "act16d5_tr01",
-                        "act16d5_tr01",
-                        "act16d5_02",
-                        "act16d5_02",
-                        "act16d5_04",
-                        "act16d5_04",
-                        "act16d5_05",
-                        "act16d5_07",
-                        "act16d5_07",
-                        "act16d5_08",
-                        "act16d5_08",
-                        "act16d5_09",
-                        "act16d5_09",
-                        "act16d5_10",
-                        "act16d5_10"
-                    ]
-                }
-            },
-            "cc": {
-                "CC#07": {
-                    "CC#07": [
-                        "rune_09-01"
-                    ]
-                },
-                "CC#08": {
-                    "CC#08": [
-                        "rune_09-01"
-                    ]
-                },
-                "CC#09": {
-                    "CC#09": [
-                        "rune_11-02",
-                        "rune_09-01"
-                    ]
-                },
-                "CC#10": {
-                    "CC#10": [
-                        "rune_09-01",
-                        "rune_11-02"
-                    ]
-                },
-                "CC#11": {
-                    "CC#11": [
-                        "rune_11-02"
-                    ]
-                },
-                "CC#12": {
-                    "CC#12": [
-                        "rune_11-02"
                     ]
                 }
             }
@@ -39627,6 +40998,13 @@
                         "rogue4_t-2"
                     ]
                 }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_106"
+                    ]
+                }
             }
         },
         "enemy_1301_ymcnon": {
@@ -39698,6 +41076,13 @@
                         "act30side_08"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_24": {
+                    "camp_r_24": [
+                        "camp_r_24"
+                    ]
+                }
             }
         },
         "enemy_1382_winbal": {
@@ -39707,6 +41092,13 @@
                         "act30side_01",
                         "act30side_05",
                         "act30side_08"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_24": {
+                    "camp_r_24": [
+                        "camp_r_24"
                     ]
                 }
             }
@@ -39774,6 +41166,13 @@
                         "act30side_02"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_24": {
+                    "camp_r_24": [
+                        "camp_r_24"
+                    ]
+                }
             }
         },
         "enemy_1383_windog": {
@@ -39783,6 +41182,13 @@
                         "act30side_03",
                         "act30side_05",
                         "act30side_06"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_24": {
+                    "camp_r_24": [
+                        "camp_r_24"
                     ]
                 }
             }
@@ -39795,6 +41201,13 @@
                         "act30side_07"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_24": {
+                    "camp_r_24": [
+                        "camp_r_24"
+                    ]
+                }
             }
         },
         "enemy_1388_wingnt": {
@@ -39804,6 +41217,13 @@
                         "act30side_04",
                         "act30side_07",
                         "act30side_08"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_24": {
+                    "camp_r_24": [
+                        "camp_r_24"
                     ]
                 }
             },
@@ -39826,10 +41246,24 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_24": {
+                    "camp_r_24": [
+                        "camp_r_24"
+                    ]
+                }
+            },
             "is": {
                 "IS#5": {
                     "IS#5 Floor 3": [
                         "rogue4_3-6"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_106"
                     ]
                 }
             }
@@ -39843,6 +41277,13 @@
                         "act30side_08"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_24": {
+                    "camp_r_24": [
+                        "camp_r_24"
+                    ]
+                }
             }
         },
         "enemy_1387_winshd": {
@@ -39852,6 +41293,13 @@
                         "act30side_06",
                         "act30side_07",
                         "act30side_08"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_24": {
+                    "camp_r_24": [
+                        "camp_r_24"
                     ]
                 }
             }
@@ -39889,6 +41337,13 @@
                         "act30side_ex08#f#"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_24": {
+                    "camp_r_24": [
+                        "camp_r_24"
+                    ]
+                }
             }
         },
         "enemy_1381_winman_2": {
@@ -39913,6 +41368,13 @@
                         "act30side_ex08#f#"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_24": {
+                    "camp_r_24": [
+                        "camp_r_24"
+                    ]
+                }
             }
         },
         "enemy_1383_windog_2": {
@@ -39927,6 +41389,13 @@
                         "act30side_ex07#f#",
                         "act30side_ex08",
                         "act30side_ex08#f#"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_24": {
+                    "camp_r_24": [
+                        "camp_r_24"
                     ]
                 }
             }
@@ -39947,6 +41416,13 @@
                         "act30side_ex08#f#"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_24": {
+                    "camp_r_24": [
+                        "camp_r_24"
+                    ]
+                }
             }
         },
         "enemy_1384_winfrz_2": {
@@ -39963,6 +41439,13 @@
                         "act30side_ex08#f#"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_24": {
+                    "camp_r_24": [
+                        "camp_r_24"
+                    ]
+                }
             }
         },
         "enemy_1388_wingnt_2": {
@@ -39975,6 +41458,13 @@
                         "act30side_ex06#f#",
                         "act30side_ex08",
                         "act30side_ex08#f#"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_24": {
+                    "camp_r_24": [
+                        "camp_r_24"
                     ]
                 }
             }
@@ -39991,6 +41481,13 @@
                         "act30side_ex08#f#"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_24": {
+                    "camp_r_24": [
+                        "camp_r_24"
+                    ]
+                }
             }
         },
         "enemy_1386_winmag_2": {
@@ -40001,6 +41498,13 @@
                         "act30side_ex05#f#",
                         "act30side_ex08",
                         "act30side_ex08#f#"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_24": {
+                    "camp_r_24": [
+                        "camp_r_24"
                     ]
                 }
             }
@@ -40015,6 +41519,13 @@
                         "act30side_ex07#f#",
                         "act30side_ex08",
                         "act30side_ex08#f#"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_24": {
+                    "camp_r_24": [
+                        "camp_r_24"
                     ]
                 }
             }
@@ -40611,6 +42122,13 @@
                         "act28side_08"
                     ]
                 }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_100"
+                    ]
+                }
             }
         },
         "enemy_1355_mrfly_2": {
@@ -40713,7 +42231,8 @@
             "ra": {
                 "RA#2": {
                     "RA#2 Field : Building Material": [
-                        "sandbox_1_08"
+                        "sandbox_1_08",
+                        "sandbox_1_101"
                     ],
                     "RA#2 Field : Food Material": [
                         "sandbox_1_15"
@@ -40929,7 +42448,8 @@
                 },
                 "RA#2": {
                     "RA#2 Field : Food Material": [
-                        "sandbox_1_50"
+                        "sandbox_1_50",
+                        "sandbox_1_105"
                     ]
                 }
             }
@@ -41112,6 +42632,13 @@
                 "IS#4": {
                     "IS#4 Event": [
                         "rogue3_ev-1"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_106"
                     ]
                 }
             }
@@ -42010,6 +43537,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_04"
+                    ]
+                }
+            },
             "is": {
                 "IS#4": {
                     "IS#4 Floor 1": [
@@ -42204,7 +43738,7 @@
         "enemy_1344_ddlamb": {
             "sidestory": {
                 "act27side": {
-                    "act27side_zone1": [
+                    "act27sre_zone1": [
                         "act27side_tr01",
                         "act27side_01",
                         "act27side_02",
@@ -42218,7 +43752,7 @@
                         "act27side_sp01",
                         "act27side_sp02"
                     ],
-                    "act27side_zone3": [
+                    "act27sre_zone3": [
                         "act27side_mo01"
                     ]
                 }
@@ -42234,7 +43768,7 @@
         "enemy_1345_tplamb": {
             "sidestory": {
                 "act27side": {
-                    "act27side_zone1": [
+                    "act27sre_zone1": [
                         "act27side_01",
                         "act27side_03",
                         "act27side_04",
@@ -42245,7 +43779,7 @@
                         "act27side_sp02",
                         "act27side_sp03"
                     ],
-                    "act27side_zone3": [
+                    "act27sre_zone3": [
                         "act27side_mo01"
                     ]
                 }
@@ -42261,7 +43795,7 @@
         "enemy_1346_ynshp": {
             "sidestory": {
                 "act27side": {
-                    "act27side_zone1": [
+                    "act27sre_zone1": [
                         "act27side_02",
                         "act27side_04",
                         "act27side_06",
@@ -42283,7 +43817,7 @@
         "enemy_1347_fyshp": {
             "sidestory": {
                 "act27side": {
-                    "act27side_zone1": [
+                    "act27sre_zone1": [
                         "act27side_03",
                         "act27side_05",
                         "act27side_08",
@@ -42292,7 +43826,7 @@
                         "act27side_sp02",
                         "act27side_sp03"
                     ],
-                    "act27side_zone3": [
+                    "act27sre_zone3": [
                         "act27side_mo01"
                     ]
                 }
@@ -42308,7 +43842,7 @@
         "enemy_1349_rckshp": {
             "sidestory": {
                 "act27side": {
-                    "act27side_zone1": [
+                    "act27sre_zone1": [
                         "act27side_04"
                     ]
                 }
@@ -42324,7 +43858,7 @@
         "enemy_1348_rllamb": {
             "sidestory": {
                 "act27side": {
-                    "act27side_zone1": [
+                    "act27sre_zone1": [
                         "act27side_05",
                         "act27side_tr02",
                         "act27side_08",
@@ -42343,7 +43877,7 @@
         "enemy_1350_mgcshp": {
             "sidestory": {
                 "act27side": {
-                    "act27side_zone1": [
+                    "act27sre_zone1": [
                         "act27side_06",
                         "act27side_07"
                     ]
@@ -42360,7 +43894,7 @@
         "enemy_1348_rllamb_2": {
             "sidestory": {
                 "act27side": {
-                    "act27side_zone2": [
+                    "act27sre_zone2": [
                         "act27side_ex01",
                         "act27side_ex01#f#",
                         "act27side_ex06",
@@ -42368,7 +43902,7 @@
                         "act27side_ex08",
                         "act27side_ex08#f#"
                     ],
-                    "act27side_zone3": [
+                    "act27sre_zone3": [
                         "act27side_s01",
                         "act27side_s01#f#",
                         "act27side_s03",
@@ -43374,7 +44908,8 @@
                         "sandbox_1_19",
                         "sandbox_1_20",
                         "sandbox_1_22",
-                        "sandbox_1_23"
+                        "sandbox_1_23",
+                        "sandbox_1_98"
                     ]
                 }
             }
@@ -43504,6 +45039,9 @@
                     ],
                     "RA#2 Field : Battle": [
                         "sandbox_1_87"
+                    ],
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_106"
                     ]
                 }
             }
@@ -44399,6 +45937,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_02"
+                    ]
+                }
+            },
             "is": {
                 "IS#4": {
                     "IS#4 Floor 4": [
@@ -44517,6 +46062,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_02"
+                    ]
+                }
+            },
             "is": {
                 "IS#4": {
                     "IS#4 Floor 4": [
@@ -44584,6 +46136,13 @@
                         "act24side_ex01",
                         "act24side_ex01#f#",
                         "act24side_ex01#f#"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_02"
                     ]
                 }
             },
@@ -44667,7 +46226,8 @@
                     ],
                     "RA#2 Field : Food Material": [
                         "sandbox_1_54",
-                        "sandbox_1_61"
+                        "sandbox_1_61",
+                        "sandbox_1_106"
                     ],
                     "RA#2 Insect Rushparty": [
                         "RA#2_insect_10"
@@ -45041,6 +46601,12 @@
                     "tower_n_08": [
                         "lt_08_02"
                     ]
+                },
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_01",
+                        "lt_15_02"
+                    ]
                 }
             },
             "cc": {
@@ -45285,87 +46851,6 @@
                 "IS#3": {
                     "IS#3 Event": [
                         "rogue2_ev-4"
-                    ]
-                }
-            }
-        },
-        "enemy_1148_dssbr": {
-            "sidestory": {
-                "act14mini": {
-                    "act14mini_zone1": [
-                        "act14mini_03",
-                        "act14mini_03#f#"
-                    ]
-                },
-                "act17side": {
-                    "act17sre_zone1": [
-                        "act17side_01",
-                        "act17side_02",
-                        "act17side_03",
-                        "act17side_05"
-                    ],
-                    "act17sre_zone3": [
-                        "act17side_10"
-                    ]
-                },
-                "act18d3": {
-                    "act11sre_zone1": [
-                        "act18d3_tr01",
-                        "act18d3_02",
-                        "act18d3_03",
-                        "act18d3_04",
-                        "act18d3_05",
-                        "act18d3_06",
-                        "act18d3_07",
-                        "act18d3_08"
-                    ],
-                    "act11sre_zone2": [
-                        "act18d3_ex01",
-                        "act18d3_ex01#f#"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_05": {
-                    "camp_r_05": [
-                        "camp_r_05"
-                    ]
-                }
-            },
-            "sss": {
-                "tower_n_10": {
-                    "tower_n_10": [
-                        "lt_10_01",
-                        "lt_10_06"
-                    ]
-                }
-            },
-            "cc": {
-                "CC#09": {
-                    "CC#09": [
-                        "rune_11-01"
-                    ]
-                },
-                "CC#10": {
-                    "CC#10": [
-                        "rune_11-01"
-                    ]
-                },
-                "CC#11": {
-                    "CC#11": [
-                        "rune_11-01"
-                    ]
-                },
-                "CC#12": {
-                    "CC#12": [
-                        "rune_11-01"
-                    ]
-                }
-            },
-            "is": {
-                "IS#3": {
-                    "IS#3 Floor 3": [
-                        "rogue2_3-3"
                     ]
                 }
             }
@@ -45619,22 +47104,6 @@
                 }
             }
         },
-        "enemy_1129_spklr": {
-            "sidestory": {
-                "act14mini": {
-                    "act14mini_zone1": [
-                        "act14mini_s01"
-                    ]
-                },
-                "act16d5": {
-                    "act9sre_zone1": [
-                        "act16d5_09",
-                        "act16d5_09",
-                        "act16d5_10"
-                    ]
-                }
-            }
-        },
         "enemy_1199_sfjin": {
             "sidestory": {
                 "act14mini": {
@@ -45780,6 +47249,17 @@
                         "camp_r_20"
                     ]
                 }
+            },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_01",
+                        "lt_16_02",
+                        "lt_16_03",
+                        "lt_16_04",
+                        "lt_16_05"
+                    ]
+                }
             }
         },
         "enemy_1299_ymkilr": {
@@ -45828,6 +47308,14 @@
                         "camp_r_20"
                     ]
                 }
+            },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_03",
+                        "lt_16_05"
+                    ]
+                }
             }
         },
         "enemy_1297_ymflag": {
@@ -45867,6 +47355,14 @@
                 "camp_r_20": {
                     "camp_r_20": [
                         "camp_r_20"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_02",
+                        "lt_16_05"
                     ]
                 }
             }
@@ -46238,6 +47734,13 @@
                         "crisis_v2_01-01"
                     ]
                 }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_106"
+                    ]
+                }
             }
         },
         "enemy_1293_duswrd_2": {
@@ -46262,6 +47765,13 @@
                 "tower_n_10": {
                     "tower_n_10": [
                         "lt_10_04"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_106"
                     ]
                 }
             }
@@ -46428,6 +47938,9 @@
                     ]
                 },
                 "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_103"
+                    ],
                     "RA#2 Bandit Rushparty": [
                         "RA#2_bandit_group1",
                         "RA#2_bandit_group1"
@@ -47364,6 +48877,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_04"
+                    ]
+                }
+            },
             "is": {
                 "IS#4": {
                     "IS#4 Floor 3": [
@@ -47415,6 +48935,13 @@
                         "act21side_08",
                         "act21side_09",
                         "act21side_10"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_04"
                     ]
                 }
             },
@@ -47589,6 +49116,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_04"
+                    ]
+                }
+            },
             "is": {
                 "IS#5": {
                     "IS#5 Treasure": [
@@ -47633,229 +49167,6 @@
                 "IS#5": {
                     "IS#5 Treasure": [
                         "rogue4_t-2"
-                    ]
-                }
-            }
-        },
-        "enemy_1004_mslime_2": {
-            "sidestory": {
-                "act13mini": {
-                    "act13mini_zone1": [
-                        "act13mini_02",
-                        "act13mini_02#f#",
-                        "act13mini_05",
-                        "act13mini_05#f#"
-                    ]
-                },
-                "act13d0": {
-                    "act13d0_zone1": [
-                        "act13d0_06",
-                        "act13d0_06#f#"
-                    ]
-                },
-                "act10d5": {
-                    "act10d5_zone1": [
-                        "act10d5_06",
-                        "act10d5_06#f#"
-                    ]
-                },
-                "act6d5": {
-                    "act6d5": [
-                        "act6d5_03",
-                        "act6d5_03#f#"
-                    ]
-                },
-                "act3d0": {
-                    "act11d7_zone2": [
-                        "a003_f04"
-                    ],
-                    "act11d7_zone3": [
-                        "a003_ex05",
-                        "a003_ex05#f#"
-                    ]
-                }
-            },
-            "coop": {
-                "act17d1": {
-                    "act17d1": [
-                        "act17d1_03_b",
-                        "act17d1_03_c"
-                    ]
-                }
-            },
-            "cc": {
-                "CC#00": {
-                    "CC#00": [
-                        "rune_02-01"
-                    ]
-                },
-                "CC#01": {
-                    "CC#01": [
-                        "rune_02-01"
-                    ]
-                },
-                "CC#02": {
-                    "CC#02": [
-                        "rune_02-01"
-                    ]
-                }
-            },
-            "is": {
-                "IS#3": {
-                    "IS#3 Floor 4": [
-                        "rogue2_4-3"
-                    ]
-                },
-                "IS#4": {
-                    "IS#4 Treasure": [
-                        "rogue3_t-1"
-                    ]
-                }
-            },
-            "ra": {
-                "RA#1": {
-                    "RA#1 Field : Building Material": [
-                        "sandbox_0_02",
-                        "sandbox_0_05",
-                        "sandbox_0_14"
-                    ],
-                    "RA#1 Field : Food Material": [
-                        "sandbox_0_19"
-                    ],
-                    "RA#1 Field : Battle": [
-                        "sandbox_0_30"
-                    ]
-                },
-                "RA#2": {
-                    "RA#2 Field : Building Material": [
-                        "sandbox_1_14",
-                        "sandbox_1_41",
-                        "sandbox_1_49"
-                    ],
-                    "RA#2 Field : Battle": [
-                        "sandbox_1_65",
-                        "sandbox_1_85"
-                    ],
-                    "RA#2 Elite Rushparty": [
-                        "RA#2_event_1",
-                        "RA#2_event_1"
-                    ],
-                    "RA#2 Insect Rushparty": [
-                        "RA#2_insect_1"
-                    ]
-                }
-            }
-        },
-        "enemy_1004_mslime": {
-            "sidestory": {
-                "act13mini": {
-                    "act13mini_zone1": [
-                        "act13mini_02",
-                        "act13mini_02#f#"
-                    ]
-                },
-                "act15d5": {
-                    "act15d5_zone1": [
-                        "act15d5_01",
-                        "act15d5_01#f#"
-                    ]
-                },
-                "act10d5": {
-                    "act10d5_zone1": [
-                        "act10d5_06",
-                        "act10d5_06#f#"
-                    ]
-                },
-                "act9d0": {
-                    "act17d5_zone1": [
-                        "act9d0_01"
-                    ]
-                },
-                "act3d0": {
-                    "act11d7_zone1": [
-                        "a003_01",
-                        "a003_08"
-                    ]
-                },
-                "1stact": {
-                    "act13d2_zone1": [
-                        "a001_02",
-                        "a001_04",
-                        "a001_05"
-                    ],
-                    "act13d2_zone2": [
-                        "a001_ex01",
-                        "a001_ex02",
-                        "a001_ex04",
-                        "a001_ex04#f#"
-                    ]
-                }
-            },
-            "sss": {
-                "tower_n_06": {
-                    "tower_n_06": [
-                        "lt_06_01",
-                        "lt_06_06"
-                    ]
-                }
-            },
-            "coop": {
-                "act17d1": {
-                    "act17d1": [
-                        "act17d1_03_a"
-                    ]
-                }
-            },
-            "cc": {
-                "CC#00": {
-                    "CC#00": [
-                        "rune_02-01"
-                    ]
-                },
-                "CC#01": {
-                    "CC#01": [
-                        "rune_02-01"
-                    ]
-                },
-                "CC#02": {
-                    "CC#02": [
-                        "rune_02-01"
-                    ]
-                }
-            },
-            "is": {
-                "IS#2": {
-                    "IS#2 Floor 1": [
-                        "rogue1_1-1"
-                    ]
-                },
-                "IS#3": {
-                    "IS#3 Floor 1": [
-                        "rogue2_1-2"
-                    ],
-                    "IS#3 Treasure": [
-                        "rogue2_t-1"
-                    ]
-                }
-            },
-            "ra": {
-                "RA#1": {
-                    "RA#1 Field : Building Material": [
-                        "sandbox_0_02",
-                        "sandbox_0_14"
-                    ],
-                    "RA#1 Field : Food Material": [
-                        "sandbox_0_19"
-                    ],
-                    "RA#1 Field : Battle": [
-                        "sandbox_0_28",
-                        "sandbox_0_42"
-                    ]
-                },
-                "RA#2": {
-                    "RA#2 Field : Battle": [
-                        "sandbox_1_77",
-                        "sandbox_1_85"
                     ]
                 }
             }
@@ -48750,6 +50061,13 @@
                         "act14side_08"
                     ]
                 }
+            },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_03"
+                    ]
+                }
             }
         },
         "enemy_1239_ltbow_2": {
@@ -49365,6 +50683,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_06"
+                    ]
+                }
+            },
             "cc": {
                 "CC#00": {
                     "CC#00": [
@@ -49613,7 +50938,8 @@
                     "RA#2 Field : Building Material": [
                         "sandbox_1_16",
                         "sandbox_1_17",
-                        "sandbox_1_41"
+                        "sandbox_1_41",
+                        "sandbox_1_101"
                     ],
                     "RA#2 Field : Battle": [
                         "sandbox_1_18",
@@ -52336,6 +53662,13 @@
                         "act14side_ex03#f#"
                     ]
                 }
+            },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_03"
+                    ]
+                }
             }
         },
         "enemy_1192_krgscr_2": {
@@ -52742,6 +54075,9 @@
                 "RA#2": {
                     "RA#2 Field : Building Material": [
                         "sandbox_1_51"
+                    ],
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_105"
                     ]
                 }
             }
@@ -53398,7 +54734,8 @@
                         "sandbox_1_37"
                     ],
                     "RA#2 Field : Battle": [
-                        "sandbox_1_86"
+                        "sandbox_1_86",
+                        "sandbox_1_98"
                     ]
                 }
             }
@@ -54445,7 +55782,8 @@
                 },
                 "RA#2": {
                     "RA#2 Field : Battle": [
-                        "sandbox_1_86"
+                        "sandbox_1_86",
+                        "sandbox_1_98"
                     ],
                     "RA#2 Insect Rushparty": [
                         "RA#2_insect_6"
@@ -54520,6 +55858,9 @@
                 "RA#2": {
                     "RA#2 Field : Food Material": [
                         "sandbox_1_55"
+                    ],
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_98"
                     ],
                     "RA#2 Boss Rushparty": [
                         "RA#2_dva_group",
@@ -54901,6 +56242,9 @@
                     ]
                 },
                 "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_103"
+                    ],
                     "RA#2 Bandit Rushparty": [
                         "RA#2_bandit_group1"
                     ]
@@ -54982,6 +56326,9 @@
                 "RA#2": {
                     "RA#2 Field : Building Material": [
                         "sandbox_1_29"
+                    ],
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_103"
                     ]
                 }
             }
@@ -55059,6 +56406,9 @@
                 "RA#2": {
                     "RA#2 Field : Building Material": [
                         "sandbox_1_29"
+                    ],
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_103"
                     ]
                 }
             }
@@ -55109,6 +56459,9 @@
             },
             "ra": {
                 "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_103"
+                    ],
                     "RA#2 Normal Rushparty": [
                         "RA#2_monthly_6",
                         "RA#2_monthly_6",
@@ -55235,6 +56588,9 @@
                     "RA#2 Field : Food Material": [
                         "sandbox_1_09",
                         "sandbox_1_13"
+                    ],
+                    "RA#2 Field : Building Material": [
+                        "sandbox_1_101"
                     ]
                 }
             }
@@ -55571,7 +56927,8 @@
                 },
                 "RA#2": {
                     "RA#2 Field : Building Material": [
-                        "sandbox_1_17"
+                        "sandbox_1_17",
+                        "sandbox_1_101"
                     ],
                     "RA#2 Field : Battle": [
                         "sandbox_1_18",
@@ -55723,6 +57080,9 @@
                         "sandbox_1_07",
                         "sandbox_1_63",
                         "sandbox_1_83"
+                    ],
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_102"
                     ]
                 }
             }
@@ -55809,6 +57169,16 @@
                         "lt_14_03"
                     ]
                 },
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_03"
+                    ]
+                },
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_03"
+                    ]
+                },
                 "tower_n_01": {
                     "tower_n_01": [
                         "lt_01_04"
@@ -55893,6 +57263,16 @@
                         "lt_14_03"
                     ]
                 },
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_03"
+                    ]
+                },
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_03"
+                    ]
+                },
                 "tower_n_01": {
                     "tower_n_01": [
                         "lt_01_04"
@@ -55972,6 +57352,16 @@
                 "tower_n_14": {
                     "tower_n_14": [
                         "lt_14_03"
+                    ]
+                },
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_03"
+                    ]
+                },
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_03"
                     ]
                 },
                 "tower_n_01": {
@@ -56136,6 +57526,33 @@
                 "tower_n_14": {
                     "tower_n_14": [
                         "lt_14_06"
+                    ]
+                }
+            }
+        },
+        "enemy_6025_tinker": {
+            "sss": {
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_06"
+                    ]
+                }
+            }
+        },
+        "enemy_6026_techn": {
+            "sss": {
+                "tower_n_15": {
+                    "tower_n_15": [
+                        "lt_15_06"
+                    ]
+                }
+            }
+        },
+        "enemy_6027_bqthie": {
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_06"
                     ]
                 }
             }
@@ -56959,6 +58376,9 @@
                     "RA#2 Field : Building Material": [
                         "sandbox_1_21",
                         "sandbox_1_82"
+                    ],
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_102"
                     ]
                 }
             }
@@ -57051,6 +58471,13 @@
                 "IS#4": {
                     "IS#4 Floor 6": [
                         "rogue3_6-2"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_106"
                     ]
                 }
             }
@@ -59195,7 +60622,8 @@
                         "sandbox_1_12",
                         "sandbox_1_15",
                         "sandbox_1_50",
-                        "sandbox_1_61"
+                        "sandbox_1_61",
+                        "sandbox_1_97"
                     ],
                     "RA#2 Field : Building Material": [
                         "sandbox_1_16",
@@ -59238,11 +60666,16 @@
                         "sandbox_1_12",
                         "sandbox_1_15",
                         "sandbox_1_50",
-                        "sandbox_1_55"
+                        "sandbox_1_55",
+                        "sandbox_1_97",
+                        "sandbox_1_102",
+                        "sandbox_1_105",
+                        "sandbox_1_106"
                     ],
                     "RA#2 Field : Building Material": [
                         "sandbox_1_16",
-                        "sandbox_1_49"
+                        "sandbox_1_49",
+                        "sandbox_1_101"
                     ],
                     "RA#2 Normal Rushparty": [
                         "RA#2_crazy_crabs",
@@ -59271,7 +60704,9 @@
                         "sandbox_1_53",
                         "sandbox_1_54",
                         "sandbox_1_55",
-                        "sandbox_1_56"
+                        "sandbox_1_56",
+                        "sandbox_1_102",
+                        "sandbox_1_104"
                     ],
                     "RA#2 Field : Building Material": [
                         "sandbox_1_17"
@@ -59324,7 +60759,10 @@
                         "sandbox_1_57",
                         "sandbox_1_58",
                         "sandbox_1_59",
-                        "sandbox_1_60"
+                        "sandbox_1_60",
+                        "sandbox_1_99",
+                        "sandbox_1_103",
+                        "sandbox_1_104"
                     ],
                     "RA#2 Field : Building Material": [
                         "sandbox_1_17"
@@ -59349,7 +60787,9 @@
                         "sandbox_1_58",
                         "sandbox_1_59",
                         "sandbox_1_60",
-                        "sandbox_1_61"
+                        "sandbox_1_61",
+                        "sandbox_1_99",
+                        "sandbox_1_103"
                     ],
                     "RA#2 Field : Building Material": [
                         "sandbox_1_16",
@@ -59384,7 +60824,8 @@
                     ],
                     "RA#2 Field : Battle": [
                         "sandbox_1_20",
-                        "sandbox_1_86"
+                        "sandbox_1_86",
+                        "sandbox_1_98"
                     ],
                     "RA#2 Field : Food Material": [
                         "sandbox_1_59",
@@ -59475,6 +60916,9 @@
                     ]
                 },
                 "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_106"
+                    ],
                     "RA#2 Normal Rushparty": [
                         "RA#2_deer_god"
                     ]
@@ -59574,7 +61018,8 @@
                         "sandbox_1_09",
                         "sandbox_1_10",
                         "sandbox_1_12",
-                        "sandbox_1_13"
+                        "sandbox_1_13",
+                        "sandbox_1_106"
                     ]
                 }
             }
@@ -59641,7 +61086,8 @@
                         "sandbox_1_11"
                     ],
                     "RA#2 Field : Building Material": [
-                        "sandbox_1_16"
+                        "sandbox_1_16",
+                        "sandbox_1_101"
                     ],
                     "RA#2 Field : Battle": [
                         "sandbox_1_18"
@@ -60151,11 +61597,129 @@
                 }
             }
         },
+        "enemy_7049_xbnum": {
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_97",
+                        "sandbox_1_99",
+                        "sandbox_1_102",
+                        "sandbox_1_104",
+                        "sandbox_1_105",
+                        "sandbox_1_106"
+                    ],
+                    "RA#2 Field : Building Material": [
+                        "sandbox_1_101"
+                    ]
+                }
+            }
+        },
+        "enemy_7047_xbdit": {
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_99",
+                        "sandbox_1_102",
+                        "sandbox_1_105",
+                        "sandbox_1_106"
+                    ],
+                    "RA#2 Field : Building Material": [
+                        "sandbox_1_101"
+                    ]
+                }
+            }
+        },
         "enemy_7020_xbtor": {
             "ra": {
                 "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_103",
+                        "sandbox_1_105",
+                        "sandbox_1_106"
+                    ],
                     "RA#2 Normal Rushparty": [
                         "RA#2_turtle_god"
+                    ]
+                }
+            }
+        },
+        "enemy_7051_xbcas": {
+            "ra": {
+                "RA#2": {
+                    "RA#2 Normal Rushparty": [
+                        "RA#2_xbcas_prey"
+                    ]
+                }
+            }
+        },
+        "enemy_7054_xbsmi": {
+            "ra": {
+                "RA#2": {
+                    "RA#2 Normal Rushparty": [
+                        "RA#2_xbsmi_prey"
+                    ]
+                }
+            }
+        },
+        "enemy_7057_xbrok": {
+            "ra": {
+                "RA#2": {
+                    "RA#2 Normal Rushparty": [
+                        "RA#2_xbrok_prey"
+                    ]
+                }
+            }
+        },
+        "enemy_7053_xbcasz": {
+            "ra": {
+                "RA#2": {
+                    "RA#2 Normal Rushparty": [
+                        "RA#2_xbcasz_ally"
+                    ]
+                }
+            }
+        },
+        "enemy_7056_xbsmiz": {
+            "ra": {
+                "RA#2": {
+                    "RA#2 Normal Rushparty": [
+                        "RA#2_xbsmiz_ally"
+                    ]
+                }
+            }
+        },
+        "enemy_7059_xbrokz": {
+            "ra": {
+                "RA#2": {
+                    "RA#2 Normal Rushparty": [
+                        "RA#2_xbrokz_ally"
+                    ]
+                }
+            }
+        },
+        "enemy_7060_xbcasy": {
+            "ra": {
+                "RA#2": {
+                    "RA#2 Normal Rushparty": [
+                        "RA#2_xbcasy_ally"
+                    ]
+                }
+            }
+        },
+        "enemy_7061_xbsmiy": {
+            "ra": {
+                "RA#2": {
+                    "RA#2 Normal Rushparty": [
+                        "RA#2_xbsmiy_ally"
+                    ]
+                }
+            }
+        },
+        "enemy_7062_xbroky": {
+            "ra": {
+                "RA#2": {
+                    "RA#2 Normal Rushparty": [
+                        "RA#2_xbroky_ally"
                     ]
                 }
             }

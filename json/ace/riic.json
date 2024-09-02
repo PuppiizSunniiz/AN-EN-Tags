@@ -2798,5 +2798,50 @@
         "name": "实战技巧：链愈师",
         "desc": "进驻训练室协助位时，<@cc.kw>医疗</>干员的专精技能训练速度<@cc.vup>+30%</>，如果训练位干员分支为<@cc.kw>链愈师</>，则训练速度额外<@cc.vup>+45%</>",
         "descformat": "进驻训练室协助位时，<@cc.kw>医疗</>干员的专精技能训练速度<@cc.vup>+30%</>，如果训练位干员分支为<@cc.kw>链愈师</>，则训练速度额外<@cc.vup>+45%</>"
+    },
+    "manu_prod_spd[004]": {
+        "name": "差遣使魔·α",
+        "desc": "进驻制造站时，生产力<@cc.vup>+20%</>",
+        "descformat": "进驻制造站时，生产力<@cc.vup>+20%</>"
+    },
+    "manu_prod_spd[014]": {
+        "name": "差遣使魔·β",
+        "desc": "进驻制造站时，生产力<@cc.vup>+30%</>",
+        "descformat": "进驻制造站时，生产力<@cc.vup>+30%</>"
+    },
+    "manu_prod_spd_bd[400]": {
+        "name": "意想不到的美味",
+        "desc": "进驻制造站时，每<@cc.vup>1</>点<$cc.bd_dungeon><@cc.rem>魔物料理</></><@cc.vup>+1%</>生产力",
+        "descformat": "进驻制造站时，每<@cc.vup>1</>点<$cc.bd_dungeon><@cc.rem>魔物料理</></><@cc.vup>+1%</>生产力"
+    },
+    "trade_ord_spd&limit[036]": {
+        "name": "半身人公会代表",
+        "desc": "进驻贸易站时，订单获取效率<@cc.vup>+30%</>，且订单上限<@cc.vup>+1</>",
+        "descformat": "进驻贸易站时，订单获取效率<@cc.vup>+30%</>，且订单上限<@cc.vup>+1</>"
+    },
+    "trade_ord_spd_bd[100]": {
+        "name": "熟悉的味道",
+        "desc": "进驻贸易站时，每<@cc.vup>1</>点<$cc.bd_dungeon><@cc.rem>魔物料理</></><@cc.vup>+1%</>订单效率",
+        "descformat": "进驻贸易站时，每<@cc.vup>1</>点<$cc.bd_dungeon><@cc.rem>魔物料理</></><@cc.vup>+1%</>订单效率"
+    },
+    "dorm_rec_bd_dungeon[000]": {
+        "name": "森西大食堂",
+        "desc": "进驻宿舍时，当前宿舍每级提供<@cc.vup>1</>层<$cc.bd_dungeon><@cc.rem>魔物料理</></>",
+        "descformat": "进驻宿舍时，当前宿舍每级提供<@cc.vup>1</>层<$cc.bd_dungeon><@cc.rem>魔物料理</></>"
+    },
+    "dorm_rec_all&tag[000]": {
+        "name": "资深料理人",
+        "desc": "进驻宿舍时，该宿舍内所有干员的心情每小时恢复<@cc.vup>+0.15</>，如果目标是<$cc.tag.dungeon><@cc.kw>莱欧斯小队</></>干员，则恢复效果额外<@cc.vup>+0.15</>（同种效果取最高）",
+        "descformat": "进驻宿舍时，该宿舍内所有干员的心情每小时恢复<@cc.vup>+0.15</>，如果目标是<$cc.tag.dungeon><@cc.kw>莱欧斯小队</></>干员，则恢复效果额外<@cc.vup>+0.15</>（同种效果取最高）"
+    },
+    "meet_spd[021]": {
+        "name": "好奇心",
+        "desc": "进驻会客室时，线索搜集速度提升<@cc.vup>20%</>",
+        "descformat": "进驻会客室时，线索搜集速度提升<@cc.vup>20%</>"
+    },
+    "meet_spd_bd[001]": {
+        "name": "饱餐的干劲",
+        "desc": "进驻会客室时，每拥有<@cc.vup>1</>点<$cc.bd_dungeon><@cc.rem>魔物料理</></>，线索搜集速度额外提升<@cc.vup>2%</>",
+        "descformat": "进驻会客室时，每拥有<@cc.vup>1</>点<$cc.bd_dungeon><@cc.rem>魔物料理</></>，线索搜集速度额外提升<@cc.vup>2%</>"
     }
 }

@@ -1989,8 +1989,8 @@
                                                 ${grid?grid:""}
                                         </div>
                                         <div class="skill-grid-num">
-                                            <div>${titledMaker(v2['spData'].spCost,"SP Cost")}</div>
-                                            <div>${titledMaker(v2['spData'].initSp,"Initial SP")}</div>
+                                            <div>${titledMaker(v2['spData'].spCost,opdataFull.id=="char_4141_marcil"?"Max Mana":"SP Cost")}</div>
+                                            <div>${titledMaker(v2['spData'].initSp,opdataFull.id=="char_4141_marcil"?"Initial Mana":"Initial SP")}</div>
                                             <div>${force!=undefined?`${titledMaker(force,"Force Level")}`: ""}</div>
                                         </div>
                                     </div>
@@ -2024,8 +2024,8 @@
                             ${grid2?extrastuff:""}
                             <tr>
                                 <td>
-                                    ${titledMaker(v2['spData'].spCost,"SP Cost")}
-                                    ${titledMaker(v2['spData'].initSp,"Initial SP")}
+                                    ${titledMaker(v2['spData'].spCost,opdataFull.id=="char_4141_marcil"?"Max Mana":"SP Cost")}
+                                    ${titledMaker(v2['spData'].initSp,opdataFull.id=="char_4141_marcil"?"Initial Mana":"Initial SP")}
                                     ${force!=undefined?`${titledMaker(force,"Force Level")}`: ""}
                                 </td>
                             </tr>

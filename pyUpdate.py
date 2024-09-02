@@ -47,16 +47,16 @@ json_temp_mod       =   json_load("json/tl-module.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS = ["Pepe","Narantuya","Sand Reckoner","Papyrus"] # 
+NEW_CHARS = ["Marcille","Laios","Chilchuck","Senshi"] # 
 
 #[["OpsName#1",num(Mod)],["OpsName#2",num(Mod)], ...]
-NEW_MODS = [["Sand Reckoner",1],["Eyjafjalla the Hvít Aska",1],["Mulberry",1],["Honeyberry",1],["Harold",1],["Chestnut",1],["Nightingale",2],["Kal'tsit",3],["Phantom",3]] # 
+NEW_MODS = [["Hoederer",1],["Ulpianus",1],["Wind Chimes",1],["Quartz",1],["Marcille",1],["Laios",1],["Senshi",1],["Chilchuck",1],["Irene",2]] # 
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS = [] #
 
 #["OpsName#1","OpsName#2", ...]
-NEW_RECRUIT_CN = ["Mudrock","Whisperain","Jackie"] # 
+NEW_RECRUIT_CN = [] # 
 NEW_RECRUIT_EN = [] #
 
 Rechecked = True # True False

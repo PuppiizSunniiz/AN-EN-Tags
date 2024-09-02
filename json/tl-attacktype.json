@@ -704,6 +704,21 @@
             "en": "In [Integrated Strategies] when Phantom and his summon attack, reduce both redeployment time by 1 second",
             "color": "extra",
             "note" : "Phantom IS excl Mod"
+        },
+        "受到的治疗效果提升<@ba.kw>20%</>": {
+            "en": "Increases this unit's healing received by 20%",
+            "color": "heal",
+            "note": "Crusher Mod cru-x"
+        },
+        "部署费用<@ba.kw>减少</>": {
+            "en": "Deployment cost is <@ba.kw>reduced</>",
+            "color": "extra",
+            "note": "Splash Caster mods spc-y"
+        },
+        "不容易受到敌方攻击": {
+            "en": "Less likely to be targeted by enemies ",
+            "color": "extra",
+            "note": "Agent mods age-x"
         }
     },
     "parts": [
