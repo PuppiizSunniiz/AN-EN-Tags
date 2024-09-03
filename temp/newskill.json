@@ -1,8 +1,8 @@
 {
-    "skchr_ABCDEF_1": # Pepe{
+    "skchr_ABCDEF_X": {
         "name": "",
         "desc": [
-            "Next attack deal {%atk} of ATK as Physical damage,\n<@ba.rem>Skill can be used when Operator is affected by a Negative Status, removing the status</br><@ba.rem>Can hold {} charge</>",
+            "",
             "",
             "",
             "",
@@ -14,10 +14,10 @@
             ""
         ] 
     },
-    "skchr_ABCDEF_2": # Pepe{
+    "skchr_ABCDEF_X": {
         "name": "",
         "desc": [
-            "Attack Range <@ba.vup>expand</>, ASPD {+}, ATK {+}, randomly attack enemies in Attack Range, each skill activation ASPD {+} for next skill activation (can stack {} times)",
+            "",
             "",
             "",
             "",
@@ -29,10 +29,10 @@
             ""
         ] 
     },
-    "skchr_ABCDEF_3": # Pepe{
+    "skchr_ABCDEF_X": {
         "name": "",
         "desc": [
-            "Attack Interval <@ba.vdown>increases slightly</>, ATK {+%}, attack <$ba.stun>stun</> enemies for {} seconds while <$ba.stun>stun</> main target for {} second, after every attack splash area <@ba.vup>increases</>, and ATK {+%}",
+            "",
             "",
             "",
             "",
@@ -44,10 +44,10 @@
             ""
         ] 
     },
-    "skchr_ABCDEF_1": # Narantuya{
+    "skchr_ABCDEF_1": { # Laios 1
         "name": "",
         "desc": [
-            "<@ba.rem>Can switch between the initial state and the following state: </>\nAttack Range<@ba.vup> reduced</>, attacks deal {atk%} of ATK as Physical damage, can bounce between enemies {cnt} times",
+            "While HP is above {}, this unit gains <$ba.strong>Vigor</>, increasing ATK by {}. When boss enemy appears for the first time, Laios becomes unable to attack for 15 seconds",
             "",
             "",
             "",
@@ -59,10 +59,10 @@
             ""
         ] 
     },
-    "skchr_ABCDEF_2": # Narantuya{
+    "skchr_ABCDEF_2": { # Laios 2
         "name": "",
         "desc": [
-            "Attacks deal {atk%} of ATK as Physical damage and <$ba.sluggish>slow</> enemies for {slow} seconds, projectile pause for a short time then deal {atk%} of ATK as Physical damage to enemies it passes through while returning",
+            "Stops attacking and <$ba.tremble>frigten</> blocked enemies, deal {} of ATK as Physical Damage after skill end",
             "",
             "",
             "",
@@ -74,10 +74,10 @@
             ""
         ] 
     },
-    "skchr_ABCDEF_3": # Narantuya{
+    "skchr_ABCDEF_1": { #Chilchuck 1
         "name": "",
         "desc": [
-            "Each attack fire {} more projectiles, when recover all projectiles deal {atk%} of ATK as Physical damage and <$ba.sluggish>slow</> enemies for {slow} seconds to enemies in the 8 surrounding tiles",
+            "Stops attacking and recovers random amount {} of DP after skill end",
             "",
             "",
             "",
@@ -89,10 +89,10 @@
             ""
         ] 
     },
-    "skchr_ABCDEF_1": # Sand Reckoner{ //{ATK%} {ASPD}
+    "skchr_ABCDEF_2": { #Chilchuck 2
         "name": "",
         "desc": [
-            "Sand Reckoner and Clockwork Fowlbeasts gain +{ATK%} ATK and {ASPD} ASPD",
+            "Gain {} physical Dodge, ASPD +{}, each attack grants {cost} DP",
             "",
             "",
             "",
@@ -104,10 +104,10 @@
             ""
         ] 
     },
-    "skchr_ABCDEF_2": # Sand Reckoner{ // {ATK%} {slow}
+    "skchr_ABCDEF_1": { #Senshi 1
         "name": "",
         "desc": [
-            "Summons +{ATK%}, priortize enemies with the highest weight, <$ba.sluggish>slow</> enemies for {slow} seconds",
+            "Starts cooking and stops attacking for <@ba.vdown>{duration}</> seconds. After finishing cooking heals ally for {} and gain one of the following effect: </br>ATK {}, ASPD {}, Max HP {}",
             "",
             "",
             "",
@@ -119,25 +119,10 @@
             ""
         ] 
     },
-    "skchr_ABCDEF_1": # Papyrus { //{healeff%}  {talent}
+    "skchr_ABCDEF_2": { #Senshi 2
         "name": "",
         "desc": [
-            "Increases the healing effectiveness of next heal to/by {healeff%} and the effect of the First Talent is increased to/by {talent}times",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ] 
-    },
-    "skchr_ABCDEF_2": # Papyrus{ //#slightly #moderately #significantly #greatly {ATK%} {bounce}
-        "name": "",
-        "desc": [
-            "Attack interval <@ba.kw>reduced</>, +{ATK%} ATK, bounces per heal +{bounce};Papyrus only heal other highest Max HP operator in Attack Range as Primary target",
+            "Starts cooking and stops attacking for <@ba.vdown>{duration}</> seconds. While cooking nearby allies recover {} HP every second. After finishing cooking heal all allies within a certain range by {} and recover {} MP ",
             "",
             "",
             "",

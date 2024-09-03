@@ -3532,19 +3532,42 @@
         console.log(voiceDictEN)
 
         var VAlang
-        const VAlanglist=["JP","LINKAGE","CN_MANDARIN","CN_TOPOLECT","EN","KR","ITA","GER","RUS"]
-        VAhtml=""
+        const VAlanglist = ["JP","LINKAGE","CN_MANDARIN","CN_TOPOLECT","EN","KR","ITA","GER","RUS"]
+        const LINKAGE_EN_list = [
+                                    "char_456_ash",
+                                    "char_457_blitz",
+                                    "char_458_rfrost",
+                                    "char_459_tachak",
+                                    "char_4123_ela",
+                                    "char_4124_iana",
+                                    "char_4125_rdoc",
+                                    "char_4126_fuze"
+                                ]
+        const LINKAGE_CN_list = [
+                                    "char_4019_ncdeer"
+                                ]
+        const LINKAGE_JP_list = [
+                                    "char_4141_marcil",
+                                    "char_4142_laios",
+                                    "char_4144_chilc",
+                                    "char_4143_sensi"
+                                ]
+
+        VAhtml = ""
         VAlanglist.forEach(valang =>{
             if(existvoiceDict.dict[valang]){
                 switch(existvoiceDict.dict[valang].voiceLangType) {
                     case "LINKAGE":
-                        if(opdataFull.id =="char_4019_ncdeer"){ 
+                        if(LINKAGE_EN_list.includes(opdataFull.id)){ 
+                            VAlang = "EN"
+                        }
+                        else if(LINKAGE_CN_list.includes(opdataFull.id)){
                             VAlang = "CN"
                         }
-                        else if(opdataFull.id=="char_4077_palico"){
-                            VAlang = "None"
+                        else if(LINKAGE_JP_list.includes(opdataFull.id)){
+                            VAlang = "JP"
                         }
-                        else VAlang = "EN"
+                        else VAlang = "None"
                         break;
                     case "CN_MANDARIN":
                         VAlang = "CN"

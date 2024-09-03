@@ -1,18 +1,8 @@
 {
-    "": {   # Wandering medic mod // <@ba.kw>{ep_heal_ratio:0%}</> already have
-        "en": "Restores the HP of allied units and recovers <@ba.dt.element>Elemental Damage</> by 60% of ATK (can recover <@ba.dt.element>Elemental Damage</> of unhurt allied units)",
-        "color": "heal",
-        "note" : "Wandering Medic Mod"
-    },
-    "": {   # kal 3rd mod (IS)
-        "en": "Restores the HP of allies; In [Integrated Strategies] Restores the HP of 2 allies simultaneously",
-        "color": "heal",
-        "note" : "Kal'tsit IS excl Mod"
-    },
-    "": {   # phantom 3rd mod (IS)
-        "en": "Significantly <@ba.kw>reduced</> Redeployment Time; In [Integrated Strategies] when Phantom and his summon attack, reduce redeployment time by 1 second",
+    "": {   # Chilchuck mod
+        "en": "Has <@ba.kw>reduced</> Redeployment Time, can use ranged attacks and is less likely to be targeted by enemies",
         "color": "extra",
-        "note" : "Phantom IS excl Mod"
+        "note" : "Chilchuck Mod"
     }
 }
 

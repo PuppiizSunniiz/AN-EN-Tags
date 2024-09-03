@@ -1,5 +1,15 @@
 {
     "Dict": {
+        "act36side": {
+            "nameCN": "泰拉饭",
+            "nameEN": "Delicious on Terran",
+            "startCN": 1725249600
+        },
+        "act27sre": {
+            "nameCN": "火山旅梦·复刻",
+            "nameEN": "So Long, Adele: Home Away From Home - Rerun",
+            "startCN": 1724313600
+        },
         "act35side": {
             "nameCN": "太阳甩在身后",
             "nameEN": "Inudi Harek, Horakhet",
@@ -710,6 +720,11 @@
             "nameEN": "燃烧街区",
             "startCN": 1720382400
         },
+        "camp_r_24": {
+            "nameCN": "冰封雪谷",
+            "nameEN": "冰封雪谷",
+            "startCN": 1725220800
+        },
         "tower_tr_01": {
             "nameCN": "7号训练场",
             "nameEN": "Training Ground #7",
@@ -773,6 +788,16 @@
         "tower_n_14": {
             "nameCN": "多索雷斯商业地块",
             "nameEN": "多索雷斯商业地块",
+            "startCN": -1
+        },
+        "tower_n_15": {
+            "nameCN": "交战荒野",
+            "nameEN": "交战荒野",
+            "startCN": -1
+        },
+        "tower_n_16": {
+            "nameCN": "玉门市集",
+            "nameEN": "玉门市集",
             "startCN": -1
         },
         "tower_n_01": {
@@ -1636,6 +1661,21 @@
             "act35side",
             "Inudi Harek, Horakhet",
             1722484800
+        ],
+        [
+            "act27sre",
+            "So Long, Adele: Home Away From Home - Rerun",
+            1724313600
+        ],
+        [
+            "camp_r_24",
+            "冰封雪谷",
+            1725220800
+        ],
+        [
+            "act36side",
+            "Delicious on Terran",
+            1725249600
         ]
     ]
 }

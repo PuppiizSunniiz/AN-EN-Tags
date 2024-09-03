@@ -533,32 +533,32 @@
         "cc.tra.pepe": {
             "termId": "cc.tra.pepe",
             "termName": "特别独占订单",
-            "description": "由佩佩提供的特殊贵金属订单，该订单的获取时长固定，收益恒定，所需赤金交付数为0"
+            "description": "Special Gold Bar orders provided by Pepe. These orders have a fixed acquisition time, fixed revenue and require 0 gold bars to complete"
         },
         "ba.magicpoint": {
             "termId": "ba.magicpoint",
-            "termName": "魔力",
+            "termName": "Mana",
             "description": "特殊技力，整场战斗继承"
         },
         "ba.chant": {
             "termId": "ba.chant",
-            "termName": "吟唱",
-            "description": "停止攻击一段时间后尝试开启技能，期间被打断则中止"
+            "termName": "Chanting",
+            "description": "Stops attacking then try to activate a skill. If interrupted, the skill is cancelled"
         },
         "ba.laiosteam": {
             "termId": "ba.laiosteam",
-            "termName": "莱欧斯小队",
-            "description": "包括玛露西尔、森西、莱欧斯、齐尔查克"
+            "termName": "Laios' Party",
+            "description": "Includes the following Operators:\nMarcille, Laios, Senshi, Chilchuck"
         },
         "cc.bd_dungeon": {
             "termId": "cc.bd_dungeon",
             "termName": "魔物料理",
-            "description": "由以下干员的基建技能提供\n森西"
+            "description": "Provided by the following Operator(s):\nSenshi"
         },
         "cc.tag.dungeon": {
             "termId": "cc.tag.dungeon",
-            "termName": "莱欧斯小队",
-            "description": "包含以下干员\n玛露西尔、莱欧斯、齐尔查克、森西"
+            "termName": "Laios' Party",
+            "description": "Includes the following Operators:\nMarcille, Laios, Senshi, Chilchuck"
         }
     }
 }

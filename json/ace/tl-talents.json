@@ -7280,5 +7280,88 @@
                 "desc": "Heal also grant <$ba.barrier>Barrier</> equal to 22%<@ba.talpu>(+2%)</> of target ATK for 8 seconds"
             }
         ]
+    ],
+	"char_4141_marcil": [
+        [
+            {
+                "name": "建校以来第一才女",
+                "descCN": "技能消耗<$ba.magicpoint>魔力</>且可随时开启，<$ba.magicpoint>魔力</>不自然回复，不在场时每秒回复1点；有<$ba.magicpoint>魔力</>时，攻击力+10%，攻击溅射范围扩大",
+                "desc": "Skill use <$ba.magicpoint>Mana</> and can activated anytime, <$ba.magicpoint>Mana</> does not regenerate naturally, regenerate 1 <$ba.magicpoint>Mana</> per second when not deployed; when has <$ba.magicpoint>Mana</>, ATK+10%, splash radius expand"
+            },
+            {
+                "name": "建校以来第一才女",
+                "descCN": "技能消耗<$ba.magicpoint>魔力</>且可随时开启，<$ba.magicpoint>魔力</>不自然回复，不在场时每秒回复1点；有<$ba.magicpoint>魔力</>时，攻击力+15%<@ba.talpu>（+5%）</>，攻击溅射范围扩大",
+                "desc": "Skill use <$ba.magicpoint>Mana</> and can activated anytime, <$ba.magicpoint>Mana</> does not regenerate naturally, regenerate 1 <$ba.magicpoint>Mana</> per second when not deployed; when has <$ba.magicpoint>Mana</>, ATK+15%<@ba.talpu>(+5%)</>, splash radius expand"
+            },
+            {
+                "name": "建校以来第一才女",
+                "descCN": "技能消耗<$ba.magicpoint>魔力</>且可随时开启，<$ba.magicpoint>魔力</>不自然回复，不在场时每秒回复1点；有<$ba.magicpoint>魔力</>时，攻击力+20%，攻击溅射范围扩大",
+                "desc": "Skill use <$ba.magicpoint>Mana</> and can activated anytime, <$ba.magicpoint>Mana</> does not regenerate naturally, regenerate 1 <$ba.magicpoint>Mana</> per second when not deployed; when has <$ba.magicpoint>Mana</>, ATK+20%, splash radius expand"
+            },
+            {
+                "name": "建校以来第一才女",
+                "descCN": "技能消耗<$ba.magicpoint>魔力</>且可随时开启，<$ba.magicpoint>魔力</>不自然回复，不在场时每秒回复1点；有<$ba.magicpoint>魔力</>时，攻击力+25%<@ba.talpu>（+5%）</>，攻击溅射范围扩大",
+                "desc": "Skill use <$ba.magicpoint>Mana</> and can activated anytime, <$ba.magicpoint>Mana</> does not regenerate naturally, regenerate 1 <$ba.magicpoint>Mana</> per second when not deployed; when has <$ba.magicpoint>Mana</>, ATK+25%<@ba.talpu>(+5%)</>, splash radius expand"
+            }
+        ],
+        [
+            {
+                "name": "可靠的同伴",
+                "descCN": "初始<$ba.magicpoint>魔力</>+25，编队中有4名<$ba.laiosteam>【莱欧斯小队】</>干员时，所有<$ba.laiosteam>【莱欧斯小队】</>干员攻击速度+25，防御力+35%",
+                "desc": "<$ba.magicpoint>Mana</>+25, if there are 4 <$ba.laiosteam>Laios' Party</> operators in the squad, all <$ba.laiosteam>Laios' Party</> operators ASPD+25, DEF+35%"
+            }
+        ]
+    ],
+    "char_4142_laios": [
+        [
+            {
+                "name": "迷宫魔物专家",
+                "descCN": "击倒敌人后，莱欧斯攻击所有同名敌人时无视其20%防御力",
+                "desc": "After defeating an enemy, Laios ignores 20% DEF of all other enemies with the same name"
+            },
+            {
+                "name": "迷宫魔物专家",
+                "descCN": "击倒敌人后，莱欧斯攻击所有同名敌人时无视其40%防御力",
+                "desc": "After defeating an enemy, Laios ignores 40% DEF of all other enemies with the same name"
+            }
+        ]
+    ],
+    "char_4144_chilc": [
+        [
+            {
+                "name": "敏锐的五感",
+                "descCN": "部署后，使自身及攻击范围内的友方单位不会受到来自自然环境的伤害和<$ba.dt.element>元素损伤</>，持续35秒",
+                "desc": "After deployment, prevent Chilchuck and allies within Chilchuck 's Attack Range to recieve damage from Environment Damage and Elemental Damage for 35 second"
+            },
+            {
+                "name": "敏锐的五感",
+                "descCN": "部署后，使自身及攻击范围内的友方单位不会受到来自自然环境的伤害和<$ba.dt.element>元素损伤</>，持续40<@ba.talpu>（+5）</>秒",
+                "desc": "After deployment, prevent Chilchuck and allies within Chilchuck 's Attack Range to recieve damage from Environment Damage and Elemental Damage for 40<@ba.talpu>(+5)</> second"
+            },
+            {
+                "name": "敏锐的五感",
+                "descCN": "部署后，使自身及攻击范围内的友方单位不会受到来自自然环境的伤害和<$ba.dt.element>元素损伤</>，持续45秒",
+                "desc": "After deployment, prevent Chilchuck and allies within Chilchuck 's Attack Range to recieve damage from Environment Damage and Elemental Damage for 45 second"
+            },
+            {
+                "name": "敏锐的五感",
+                "descCN": "部署后，使自身及攻击范围内的友方单位不会受到来自自然环境的伤害和<$ba.dt.element>元素损伤</>，持续50<@ba.talpu>（+5）</>秒",
+                "desc": "After deployment, prevent Chilchuck and allies within Chilchuck 's Attack Range to recieve damage from Environment Damage and Elemental Damage for 50<@ba.talpu>(+5)</> second"
+            }
+        ]
+    ],
+    "char_4143_sensi": [
+        [
+            {
+                "name": "十年魔物餐经验",
+                "descCN": "防御力+5%，自身治疗量提升5%",
+                "desc": "Def+5% , increases healing amount by 5%"
+            },
+            {
+                "name": "十年魔物餐经验",
+                "descCN": "防御力+10%，自身治疗量提升10%",
+                "desc": "Def+10% , increases healing amount by 10%"
+            }
+        ]
     ]
 }

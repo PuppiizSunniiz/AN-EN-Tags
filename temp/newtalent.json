@@ -1,10 +1,10 @@
 {
-    "char_XXXX_ABCDEF": [   # Pepe   // Talent 1 : 
+    "char_XXXX_ABCDEF": [   # ABCDEF   // Talent 1 : 
                                         // Talent 2 : 
         [
             {
                 "name": "",
-                "desc": "For each kills while skill is activated, recover 1 skill point after skill ends (can stack {} times)"
+                "desc": ""
             },
             {
                 "name": "<@ba.talpu></>",
@@ -14,7 +14,7 @@
         [
             {
                 "name": "",
-                "desc": "When deployed all Guard operators gain {+%} ATK"
+                "desc": ""
             },
             {
                 "name": "<@ba.talpu></>",
@@ -22,50 +22,39 @@
             }
         ]
     ],
-    "char_XXXX_ABCDEF": [   # Narantuya   // Talent 1 : 
-                                        // Talent 2 : 
+    "char_XXXX_ABCDEF": [   # Laios   // Talent 1 : 
         [
             {
                 "name": "",
-                "desc": "Attack <$ba.steal>steals</> {} ATK, {} DEF (can stack {} time)"
+                "desc": "After defeating an enemy, Laios ignores {} DEF of all other enemies with the same name"
             },
             {
                 "name": "<@ba.talpu></>",
-                "desc": "Attack <$ba.steal>steals</> {} ATK, {} DEF (can stack {}<@ba.talpu>(+)</> time)"
-            }
-        ],
-        [
-            {
-                "name": "",
-                "desc": "{+%} Physical and Arts Dodge, inflict {-%} Physical and Arts Accuracy to enemies in the 8 surrounding tiles"
-            },
-            {
-                "name": "<@ba.talpu></>",
-                "desc": ""
+                "desc": "After defeating an enemy, Laios ignores {}<@ba.talpu>()</> DEF of all other enemies with the same name"
             }
         ]
     ],
-    "char_XXXX_ABCDEF": [   # Sand Reckoner   // Talent 1 : 
+    "char_XXXX_ABCDEF": [   # Chilchuck   // Talent 1 : 
         [
             {
                 "name": "",
-                "desc": "Sand Reckoner and his summon deal {dmg%} damage to mechanical enemies"
+                "desc": "After deployment, prevent Chilchuck and allies within Chilchuck 's Attack Range to recieve damage from Environment Damage and Elemental Damage for {} second"
             },
             {
                 "name": "<@ba.talpu></>",
-                "desc": "Sand Reckoner and his summon deal {dmg%}<@ba.talpu>(+%)</> damage to mechanical enemies"
+                "desc": "After deployment, prevent Chilchuck and allies within Chilchuck 's Attack Range to recieve damage from Environment Damage and Elemental Damage for {}<@ba.talpu>(+)</> second"
             }
         ]
     ],
-    "char_XXXX_ABCDEF": [   # Papyrus   // Talent 1 : 
+    "char_XXXX_ABCDEF": [   # Senshi   // Talent 1 : 
         [
             {
                 "name": "",
-                "desc": "Heal also grant {barrier%}<$ba.barrier>Barrier</> to target for {duration} seconds"
+                "desc": "Def % , increases heal amount by %"
             },
             {
-                "name": "",
-                "desc": "Heal also grant {barrier%}<@ba.talpu>(+%)</> <$ba.barrier>Barrier</> to target for {duration} seconds"
+                "name": "<@ba.talpu></>",
+                "desc": "Def %<@ba.talpu>(+%)</> , increases heal amount by %"
             }
         ]
     ]
@@ -81,7 +70,7 @@
                 "desc": ""
             },
             {
-                "name": "<@ba.talpu></>",
+                "name": "<@ba.talpu>()</>",
                 "desc": ""
             }
         ],
@@ -91,7 +80,7 @@
                 "desc": ""
             },
             {
-                "name": "<@ba.talpu></>",
+                "name": "<@ba.talpu>()</>",
                 "desc": ""
             }
         ]
@@ -104,7 +93,7 @@
                 "desc": ""
             },
             {
-                "name": "<@ba.talpu></>",
+                "name": "<@ba.talpu>()</>",
                 "desc": ""
             }
         ]

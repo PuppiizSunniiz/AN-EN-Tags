@@ -1,248 +1,224 @@
 {
-    "uniequip_002_lasher": [
+    "uniequip_002_hodrer": [
         [
             {
-                "name": "工匠遗训",
-                "CN": "可以使用5个发条羽兽召唤物。发条羽兽和衡沙对机械敌人伤害提升20%",
-                "mod": "可以使用5个发条羽兽，发条羽兽和衡沙对机械敌人伤害提升20%，发条羽兽攻击速度+5",
+                "name": "Cloak of Lingering Flame",
+                "EN": "Provides an 18% <$ba.protect>Sanctuary</> effect to self and the allied unit directly behind this unit",
+                "CN": "使自身与身后一格的友军获得18%的<$ba.protect>庇护</>",
+                "mod": "使自身与身后一格的友军获得24%的<$ba.protect>庇护</>，且造成的物理伤害提升6%",
+                "upgradeDescription": ""
+            },
+            {
+                "name": "Cloak of Lingering Flame",
+                "EN": "Provides a 21% <@ba.talpu>(+3%)</> <$ba.protect>Sanctuary</> effect to self and the allied unit directly behind this unit",
+                "CN": "使自身与身后一格的友军获得21%<@ba.talpu>（+3%）</>的<$ba.protect>庇护</>",
+                "mod": "使自身与身后一格的友军获得27%<@ba.talpu>（+3%）</>的<$ba.protect>庇护</>，且造成的物理伤害提升6%",
                 "upgradeDescription": ""
             }
         ],
         [
             {
-                "name": "工匠遗训",
-                "CN": "可以使用5个发条羽兽召唤物。发条羽兽和衡沙对机械敌人伤害提升20%",
-                "mod": "可以使用5个发条羽兽，发条羽兽和衡沙对机械敌人伤害提升20%，发条羽兽攻击速度+8",
+                "name": "Cloak of Lingering Flame",
+                "EN": "Provides an 18% <$ba.protect>Sanctuary</> effect to self and the allied unit directly behind this unit",
+                "CN": "使自身与身后一格的友军获得18%的<$ba.protect>庇护</>",
+                "mod": "使自身与身后一格的友军获得28%的<$ba.protect>庇护</>，且造成的物理伤害提升10%",
+                "upgradeDescription": ""
+            },
+            {
+                "name": "Cloak of Lingering Flame",
+                "EN": "Provides a 21% <@ba.talpu>(+3%)</> <$ba.protect>Sanctuary</> effect to self and the allied unit directly behind this unit",
+                "CN": "使自身与身后一格的友军获得21%<@ba.talpu>（+3%）</>的<$ba.protect>庇护</>",
+                "mod": "使自身与身后一格的友军获得31%<@ba.talpu>（+3%）</>的<$ba.protect>庇护</>，且造成的物理伤害提升10%",
                 "upgradeDescription": ""
             }
         ]
     ],
-    "uniequip_002_agoat2": [
+    "uniequip_002_ulpia": [
         [
             {
-                "name": "Volcanic Ash Remedy",
-                "EN": "Increases the Max HP of friendly units within range by +6%, and reduces the <$ba.dt.element>Elemental Damage</> they take by 12%",
-                "CN": "攻击范围内的友方单位生命上限+6%，且受到的<$ba.dt.element>元素损伤</>降低12%",
-                "mod": "攻击范围内的友方单位生命上限+6%，且受到的<$ba.dt.element>元素损伤</>降低14%",
-                "upgradeDescription": ""
-            },
-            {
-                "name": "Volcanic Ash Remedy",
-                "EN": "Increases the Max HP of friendly units within range by +8% <@ba.talpu>(+2%)</>, and reduces the <$ba.dt.element>Elemental Damage</> they take by 12%",
-                "CN": "攻击范围内的友方单位生命上限+8%<@ba.talpu>（+2%）</>，且受到的<$ba.dt.element>元素损伤</>降低12%",
-                "mod": "攻击范围内的友方单位生命上限+8%<@ba.talpu>（+2%）</>，且受到的<$ba.dt.element>元素损伤</>降低14%",
+                "name": "本性的坚守",
+                "CN": "每次受到伤害时，治疗自身100点生命值；生命值低于50%时，治疗效果提升至160点生命值",
+                "mod": "每次受到伤害时，治疗自身120点生命值；生命值低于50%时，治疗效果提升至170点生命值",
                 "upgradeDescription": ""
             }
         ],
         [
             {
-                "name": "Volcanic Ash Remedy",
-                "EN": "Increases the Max HP of friendly units within range by +6%, and reduces the <$ba.dt.element>Elemental Damage</> they take by 12%",
-                "CN": "攻击范围内的友方单位生命上限+6%，且受到的<$ba.dt.element>元素损伤</>降低12%",
-                "mod": "攻击范围内的友方单位生命上限+8%，且受到的<$ba.dt.element>元素损伤</>降低14%",
-                "upgradeDescription": ""
-            },
-            {
-                "name": "Volcanic Ash Remedy",
-                "EN": "Increases the Max HP of friendly units within range by +8% <@ba.talpu>(+2%)</>, and reduces the <$ba.dt.element>Elemental Damage</> they take by 12%",
-                "CN": "攻击范围内的友方单位生命上限+8%<@ba.talpu>（+2%）</>，且受到的<$ba.dt.element>元素损伤</>降低12%",
-                "mod": "攻击范围内的友方单位生命上限+10%<@ba.talpu>（+2%）</>，且受到的<$ba.dt.element>元素损伤</>降低14%",
+                "name": "本性的坚守",
+                "CN": "每次受到伤害时，治疗自身100点生命值；生命值低于50%时，治疗效果提升至160点生命值",
+                "mod": "每次受到伤害时，治疗自身130点生命值；生命值低于60%时，治疗效果提升至175点生命值",
                 "upgradeDescription": ""
             }
         ]
     ],
-    "uniequip_002_mberry": [
+    "uniequip_002_chimes": [
         [
             {
-                "name": "Helper",
-                "EN": "When Mulberry and at least one more Medic Operator are on the battlefield, all Medic Operators gain +10% ATK",
-                "CN": "场上存在桑葚和另外至少一名【医疗】干员时，所有【医疗】干员的攻击力+10%",
-                "mod": "场上存在桑葚和另外至少一名【医疗】干员时，所有【医疗】干员的攻击力+13%",
+                "name": "Mountain Traveler",
+                "EN": "Max HP +5%, gain <$ba.strong>Vigor</> effect of +20% ATK when HP is above 50%",
+                "CN": "生命上限+5%，生命值高于50%时获得+20%攻击力的<$ba.strong>精力充沛</>",
+                "mod": "生命上限+7%，生命值高于50%时获得+28%攻击力的<$ba.strong>精力充沛</>",
                 "upgradeDescription": ""
             },
             {
-                "name": "Helper",
-                "EN": "When Mulberry and at least one more Medic Operator are on the battlefield, all Medic Operators gain +11% <@ba.talpu>(+1%)</> ATK",
-                "CN": "场上存在桑葚和另外至少一名【医疗】干员时，所有【医疗】干员的攻击力+11%<@ba.talpu>（+1%）</>",
-                "mod": "场上存在桑葚和另外至少一名【医疗】干员时，所有【医疗】干员的攻击力+14%<@ba.talpu>（+1%）</>",
+                "name": "Mountain Traveler",
+                "EN": "Max HP +5%, gain <$ba.strong>Vigor</> effect of +22% <@ba.talpu>(+2%)</>ATK when HP is above 50%",
+                "CN": "生命上限+5%，生命值高于50%时获得+22%<@ba.talpu>（+2%）</>攻击力的<$ba.strong>精力充沛</>",
+                "mod": "生命上限+7%，生命值高于50%时获得+30%<@ba.talpu>（+2%）</>攻击力的<$ba.strong>精力充沛</>",
                 "upgradeDescription": ""
             }
         ],
         [
             {
-                "name": "Helper",
-                "EN": "When Mulberry and at least one more Medic Operator are on the battlefield, all Medic Operators gain +10% ATK",
-                "CN": "场上存在桑葚和另外至少一名【医疗】干员时，所有【医疗】干员的攻击力+10%",
-                "mod": "场上存在桑葚和另外至少一名【医疗】干员时，所有【医疗】干员的攻击力+15%",
+                "name": "Mountain Traveler",
+                "EN": "Max HP +5%, gain <$ba.strong>Vigor</> effect of +20% ATK when HP is above 50%",
+                "CN": "生命上限+5%，生命值高于50%时获得+20%攻击力的<$ba.strong>精力充沛</>",
+                "mod": "生命上限+8%，生命值高于50%时获得+33%攻击力的<$ba.strong>精力充沛</>",
                 "upgradeDescription": ""
             },
             {
-                "name": "Helper",
-                "EN": "When Mulberry and at least one more Medic Operator are on the battlefield, all Medic Operators gain +11% <@ba.talpu>(+1%)</> ATK",
-                "CN": "场上存在桑葚和另外至少一名【医疗】干员时，所有【医疗】干员的攻击力+11%<@ba.talpu>（+1%）</>",
-                "mod": "场上存在桑葚和另外至少一名【医疗】干员时，所有【医疗】干员的攻击力+16%<@ba.talpu>（+1%）</>",
+                "name": "Mountain Traveler",
+                "EN": "Max HP +5%, gain <$ba.strong>Vigor</> effect of +22% <@ba.talpu>(+2%)</>ATK when HP is above 50%",
+                "CN": "生命上限+5%，生命值高于50%时获得+22%<@ba.talpu>（+2%）</>攻击力的<$ba.strong>精力充沛</>",
+                "mod": "生命上限+8%，生命值高于50%时获得+35%<@ba.talpu>（+2%）</>攻击力的<$ba.strong>精力充沛</>",
                 "upgradeDescription": ""
             }
         ]
     ],
-    "uniequip_002_glider": [
+    "uniequip_002_quartz": [
         [
             {
-                "name": "Collective Consciousness",
-                "EN": "Ranged Operators within Attack Range gain Max HP +10%",
-                "CN": "攻击范围内的远程干员最大生命值+10%",
-                "mod": "攻击范围内的远程干员最大生命值+13%",
+                "name": "Wilderness Wanderer",
+                "EN": "HP +8%, ATK +8%",
+                "CN": "生命值+8%，攻击力+8%",
+                "mod": "生命值+12%，攻击力+12%",
                 "upgradeDescription": ""
             },
             {
-                "name": "Collective Consciousness",
-                "EN": "Ranged Operators within Attack Range gain Max HP +12% <@ba.talpu>(+2%)</>",
-                "CN": "攻击范围内的远程干员最大生命值+12%<@ba.talpu>（+2%）</>",
-                "mod": "攻击范围内的远程干员最大生命值+15%<@ba.talpu>（+2%）</>",
+                "name": "Wilderness Wanderer",
+                "EN": "HP +9% <@ba.talpu>(+1%)</>, ATK +9% <@ba.talpu>(+1%)</>",
+                "CN": "生命值+9%<@ba.talpu>（+1%）</>，攻击力+9%<@ba.talpu>（+1%）</>",
+                "mod": "生命值+13%<@ba.talpu>（+1%）</>，攻击力+13%<@ba.talpu>（+1%）</>",
                 "upgradeDescription": ""
             }
         ],
         [
             {
-                "name": "Collective Consciousness",
-                "EN": "Ranged Operators within Attack Range gain Max HP +10%",
-                "CN": "攻击范围内的远程干员最大生命值+10%",
-                "mod": "攻击范围内的远程干员最大生命值+15%",
+                "name": "Wilderness Wanderer",
+                "EN": "HP +8%, ATK +8%",
+                "CN": "生命值+8%，攻击力+8%",
+                "mod": "生命值+14%，攻击力+14%",
                 "upgradeDescription": ""
             },
             {
-                "name": "Collective Consciousness",
-                "EN": "Ranged Operators within Attack Range gain Max HP +12% <@ba.talpu>(+2%)</>",
-                "CN": "攻击范围内的远程干员最大生命值+12%<@ba.talpu>（+2%）</>",
-                "mod": "攻击范围内的远程干员最大生命值+17%<@ba.talpu>（+2%）</>",
+                "name": "Wilderness Wanderer",
+                "EN": "HP +9% <@ba.talpu>(+1%)</>, ATK +9% <@ba.talpu>(+1%)</>",
+                "CN": "生命值+9%<@ba.talpu>（+1%）</>，攻击力+9%<@ba.talpu>（+1%）</>",
+                "mod": "生命值+15%<@ba.talpu>（+1%）</>，攻击力+15%<@ba.talpu>（+1%）</>",
                 "upgradeDescription": ""
             }
         ]
     ],
-    "uniequip_002_harold": [
+    "uniequip_002_marcil": [
         [
             {
-                "name": "I Am the Camp",
-                "EN": "Targets within Attack Range that have taken more than 50% Elemental Damage take 15% less <$ba.dt.element>Elemental Damage</>",
-                "CN": "攻击范围内元素损伤累计超过一半的目标受到的<$ba.dt.element>元素损伤</>降低15%",
-                "mod": "攻击范围内元素损伤累计超过一半的目标受到的<$ba.dt.element>元素损伤</>降低20%",
-                "upgradeDescription": ""
-            },
-            {
-                "name": "I Am the Camp",
-                "EN": "Targets within Attack Range that have taken more than 50% Elemental Damage take 18% <@ba.talpu>(+3%)</> less <$ba.dt.element>Elemental Damage</>",
-                "CN": "攻击范围内元素损伤累计超过一半的目标受到的<$ba.dt.element>元素损伤</>降低18%<@ba.talpu>（+3%）</>",
-                "mod": "攻击范围内元素损伤累计超过一半的目标受到的<$ba.dt.element>元素损伤</>降低23%<@ba.talpu>（+3%）</>",
+                "name": "可靠的同伴",
+                "CN": "初始<$ba.magicpoint>魔力</>+25，编队中有4名<$ba.laiosteam>【莱欧斯小队】</>干员时，所有<$ba.laiosteam>【莱欧斯小队】</>干员攻击速度+25，防御力+35%",
+                "mod": "初始<$ba.magicpoint>魔力</>+35，编队中有4名<$ba.laiosteam>【莱欧斯小队】</>干员时，所有<$ba.laiosteam>【莱欧斯小队】</>干员攻击速度+25，防御力+35%",
                 "upgradeDescription": ""
             }
         ],
         [
             {
-                "name": "I Am the Camp",
-                "EN": "Targets within Attack Range that have taken more than 50% Elemental Damage take 15% less <$ba.dt.element>Elemental Damage</>",
-                "CN": "攻击范围内元素损伤累计超过一半的目标受到的<$ba.dt.element>元素损伤</>降低15%",
-                "mod": "攻击范围内元素损伤累计超过一半的目标受到的<$ba.dt.element>元素损伤</>降低23%",
-                "upgradeDescription": ""
-            },
-            {
-                "name": "I Am the Camp",
-                "EN": "Targets within Attack Range that have taken more than 50% Elemental Damage take 18% <@ba.talpu>(+3%)</> less <$ba.dt.element>Elemental Damage</>",
-                "CN": "攻击范围内元素损伤累计超过一半的目标受到的<$ba.dt.element>元素损伤</>降低18%<@ba.talpu>（+3%）</>",
-                "mod": "攻击范围内元素损伤累计超过一半的目标受到的<$ba.dt.element>元素损伤</>降低26%<@ba.talpu>（+3%）</>",
+                "name": "可靠的同伴",
+                "CN": "初始<$ba.magicpoint>魔力</>+25，编队中有4名<$ba.laiosteam>【莱欧斯小队】</>干员时，所有<$ba.laiosteam>【莱欧斯小队】</>干员攻击速度+25，防御力+35%",
+                "mod": "初始<$ba.magicpoint>魔力</>+40，编队中有4名<$ba.laiosteam>【莱欧斯小队】</>干员时，所有<$ba.laiosteam>【莱欧斯小队】</>干员攻击速度+25，防御力+35%",
                 "upgradeDescription": ""
             }
         ]
     ],
-    "uniequip_002_chnut": [
+    "uniequip_002_laios": [
         [
             {
-                "name": "Solidly Grounded",
-                "EN": "<$ba.dt.element>Elemental Damage</> recovery +20% when healing ground units",
-                "CN": "治疗地面单位，<$ba.dt.element>元素损伤</>回复量提高20%",
-                "mod": "治疗地面单位，<$ba.dt.element>元素损伤</>回复量提高25%",
+                "name": "迷宫魔物专家",
+                "CN": "击倒敌人后，莱欧斯攻击所有同名敌人时无视其40%防御力",
+                "mod": "周围四格有敌人倒下后，莱欧斯攻击所有同名敌人时无视其45%防御力",
+                "upgradeDescription": ""
+            }
+        ],
+        [
+            {
+                "name": "迷宫魔物专家",
+                "CN": "击倒敌人后，莱欧斯攻击所有同名敌人时无视其40%防御力",
+                "mod": "周围四格有敌人倒下后，莱欧斯攻击所有同名敌人时无视其50%防御力",
+                "upgradeDescription": ""
+            }
+        ]
+    ],
+    "uniequip_002_sensi": [
+        [
+            {
+                "name": "十年魔物餐经验",
+                "CN": "防御力+10%，自身治疗量提升10%",
+                "mod": "防御力+13%，自身治疗量提升13%",
+                "upgradeDescription": ""
+            }
+        ],
+        [
+            {
+                "name": "十年魔物餐经验",
+                "CN": "防御力+10%，自身治疗量提升10%",
+                "mod": "防御力+15%，自身治疗量提升15%",
+                "upgradeDescription": ""
+            }
+        ]
+    ],
+    "uniequip_002_chilc": [
+        [
+            {
+                "name": "敏锐的五感",
+                "CN": "部署后，使自身及攻击范围内的友方单位不会受到来自自然环境的伤害和<$ba.dt.element>元素损伤</>，持续45秒",
+                "mod": "部署后，使自身及攻击范围内的友方单位不会受到来自自然环境的伤害和<$ba.dt.element>元素损伤</>，持续53秒",
                 "upgradeDescription": ""
             },
             {
-                "name": "Solidly Grounded",
-                "EN": "<$ba.dt.element>Elemental Damage</> recovery +23%<@ba.talpu>(+3%)</> when healing ground units",
-                "CN": "治疗地面单位，<$ba.dt.element>元素损伤</>回复量提高23%<@ba.talpu>（+3%）</>",
-                "mod": "治疗地面单位，<$ba.dt.element>元素损伤</>回复量提高28%<@ba.talpu>（+3%）</>",
+                "name": "敏锐的五感",
+                "CN": "部署后，使自身及攻击范围内的友方单位不会受到来自自然环境的伤害和<$ba.dt.element>元素损伤</>，持续50<@ba.talpu>（+5）</>秒",
+                "mod": "部署后，使自身及攻击范围内的友方单位不会受到来自自然环境的伤害和<$ba.dt.element>元素损伤</>，持续58<@ba.talpu>（+5）</>秒",
                 "upgradeDescription": ""
             }
         ],
         [
             {
-                "name": "Solidly Grounded",
-                "EN": "<$ba.dt.element>Elemental Damage</> recovery +20% when healing ground units",
-                "CN": "治疗地面单位，<$ba.dt.element>元素损伤</>回复量提高20%",
-                "mod": "治疗地面单位，<$ba.dt.element>元素损伤</>回复量提高27%",
+                "name": "敏锐的五感",
+                "CN": "部署后，使自身及攻击范围内的友方单位不会受到来自自然环境的伤害和<$ba.dt.element>元素损伤</>，持续45秒",
+                "mod": "部署后，使自身及攻击范围内的友方单位不会受到来自自然环境的伤害和<$ba.dt.element>元素损伤</>，持续60秒",
                 "upgradeDescription": ""
             },
             {
-                "name": "Solidly Grounded",
-                "EN": "<$ba.dt.element>Elemental Damage</> recovery +23%<@ba.talpu>(+3%)</> when healing ground units",
-                "CN": "治疗地面单位，<$ba.dt.element>元素损伤</>回复量提高23%<@ba.talpu>（+3%）</>",
-                "mod": "治疗地面单位，<$ba.dt.element>元素损伤</>回复量提高30%<@ba.talpu>（+3%）</>",
+                "name": "敏锐的五感",
+                "CN": "部署后，使自身及攻击范围内的友方单位不会受到来自自然环境的伤害和<$ba.dt.element>元素损伤</>，持续50<@ba.talpu>（+5）</>秒",
+                "mod": "部署后，使自身及攻击范围内的友方单位不会受到来自自然环境的伤害和<$ba.dt.element>元素损伤</>，持续65<@ba.talpu>（+5）</>秒",
                 "upgradeDescription": ""
             }
         ]
     ],
-    "uniequip_003_cgbird": [
+    "uniequip_003_irene": [
         [
             {
-                "name": "Fleeting Phantom",
-                "EN": "Can summon Phantoms. Phantoms cannot attack or block enemies, but have 75 RES and 30% Physical Dodge and are more likely to be targeted by enemies. Phantoms lose 3% Max HP per second",
-                "CN": "可以使用幻影。幻影无法攻击和阻挡敌人，拥有75法术抗性，30%的物理闪避，并且更容易吸引敌人的攻击，同时每秒流失3%的最大生命",
-                "mod": "可以使用幻影。幻影无法攻击和阻挡敌人，拥有75法术抗性，30%的物理闪避，并且更容易吸引敌人的攻击，同时每秒流失3%的最大生命；夜莺部署时获得3个幻影",
+                "name": "Flames of Castigation",
+                "EN": "Physical damage has a 50% chance to ignore 50% DEF. Chance increases to 100% against aerial units.",
+                "CN": "对敌人造成物理伤害时有50%概率无视其50%防御力，对空中单位概率提升至100%",
+                "mod": "对敌人造成物理伤害时有50%概率无视其50%防御力，对空中单位概率提升至100%，技能期间若击倒空中单位，技能结束时获得4点技力",
                 "upgradeDescription": ""
             }
         ],
         [
             {
-                "name": "Fleeting Phantom",
-                "EN": "Can summon Phantoms. Phantoms cannot attack or block enemies, but have 75 RES and 30% Physical Dodge and are more likely to be targeted by enemies. Phantoms lose 3% Max HP per second",
-                "CN": "可以使用幻影。幻影无法攻击和阻挡敌人，拥有75法术抗性，30%的物理闪避，并且更容易吸引敌人的攻击，同时每秒流失3%的最大生命",
-                "mod": "可以使用幻影。幻影无法攻击和阻挡敌人，拥有75法术抗性，40%的物理闪避，并且更容易吸引敌人的攻击，同时每秒流失3%的最大生命；夜莺部署时获得3个幻影",
-                "upgradeDescription": ""
-            }
-        ]
-    ],
-    "uniequip_004_kalts": [
-        [
-            {
-                "name": "Mon3tr",
-                "EN": "Can use and heal Mon3tr, and Mon3tr has a 25 second redeployment time. Kal'tsit will prioritize healing herself and Mon3tr; If Mon3tr is not within Kal'tsit's Attack Range, Mon3tr's DEF is reduced to 0",
-                "CN": "可以使用并治疗Mon3tr，拥有25秒再部署时间，优先治疗自身和Mon3tr；Mon3tr不在凯尔希攻击范围内时防御力降至0",
-                "mod": "可以使用并治疗Mon3tr，拥有25秒再部署时间，优先治疗自身和Mon3tr；Mon3tr不在凯尔希攻击范围内时防御力降至0；在<@ba.kw>集成战略</>中，Mon3tr不占用部署位，生命上限和攻击力+25%",
-                "upgradeDescription": ""
-            }
-        ],
-        [
-            {
-                "name": "Mon3tr",
-                "EN": "Can use and heal Mon3tr, and Mon3tr has a 25 second redeployment time. Kal'tsit will prioritize healing herself and Mon3tr; If Mon3tr is not within Kal'tsit's Attack Range, Mon3tr's DEF is reduced to 0",
-                "CN": "可以使用并治疗Mon3tr，拥有25秒再部署时间，优先治疗自身和Mon3tr；Mon3tr不在凯尔希攻击范围内时防御力降至0",
-                "mod": "可以使用并治疗Mon3tr，拥有25秒再部署时间，优先治疗自身和Mon3tr；Mon3tr不在凯尔希攻击范围内时防御力降至0；在<@ba.kw>集成战略</>中，Mon3tr不占用部署位，生命上限和攻击力+50%且受到的治疗效果提升50%",
-                "upgradeDescription": ""
-            }
-        ]
-    ],
-    "uniequip_004_phatom": [
-        [
-            {
-                "name": "Phantom in the Mirror",
-                "EN": "Can summon a stronger clone with the same abilities as Phantom, but has its own redeployment time",
-                "CN": "可以使用一个属性更强的虚影，虚影拥有和自己一样的技能，拥有独立的再部署时间",
-                "mod": "可以使用一个属性更强的虚影，虚影拥有和自己一样的技能，拥有独立的再部署时间；在<@ba.kw>集成战略</>中，部署虚影时自身再次释放技能（最多同时叠加8次技能效果）",
-                "upgradeDescription": ""
-            }
-        ],
-        [
-            {
-                "name": "Phantom in the Mirror",
-                "EN": "Can summon a stronger clone with the same abilities as Phantom, but has its own redeployment time",
-                "CN": "可以使用一个属性更强的虚影，虚影拥有和自己一样的技能，拥有独立的再部署时间",
-                "mod": "可以使用一个属性更强的虚影，虚影拥有和自己一样的技能，拥有独立的再部署时间；在<@ba.kw>集成战略</>中，虚影不占用部署位，且部署虚影时自身再次释放技能（最多同时叠加8次技能效果）",
+                "name": "Flames of Castigation",
+                "EN": "Physical damage has a 50% chance to ignore 50% DEF. Chance increases to 100% against aerial units.",
+                "CN": "对敌人造成物理伤害时有50%概率无视其50%防御力，对空中单位概率提升至100%",
+                "mod": "对敌人造成物理伤害时有50%概率无视其55%防御力，对空中单位概率提升至100%，技能期间若击倒空中单位，技能结束时获得6点技力",
                 "upgradeDescription": ""
             }
         ]
