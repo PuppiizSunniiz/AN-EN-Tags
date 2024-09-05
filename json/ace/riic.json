@@ -210,9 +210,9 @@
         "descformat": "When this Operator is assigned to the Control Center, each Operator from <$cc.g.R6><@cc.kw>Team Rainbow</></> increases the Morale of all Operators in the Control Center by <@cc.vup>+0.05</> per hour"
     },
     "control_clue_cost&faction[990]": {
-        "name": "Rebel",
+        "name": "Resister",
         "desc": "When stationed at the Command Center, it becomes easier to obtain clues that are not currently possessed on the Clue Board, however mood reduction per hour of all operators in the Command Center except self +0.25",
-        "descformat": "When this Operator is assigned to the Control Center, increases the likelihood of obtaining clues that are already on the Clue Board, however Morale loss per hour all operators in the Control Center except self <@cc.vdown>+0.25</>"
+        "descformat": "When this Operator is assigned to the Control Center, increases the likelihood of obtaining clues that are not on the Clue Board, but increases the Morale consumed per hour of all Operators (excluding self) in the Control Center by <@cc.vdown>+0.25</>"
     },
     "control_mp_cost&bd1[000]": {
         "name": "'Unstirred by Gain'",
@@ -535,9 +535,9 @@
         "descformat": "When this Operator is assigned to a Factory, all <$cc.sk.manu2><@cc.kw>Rhine Lab</></> and <$cc.sk.manu3><@cc.kw>Pinus Sylvestris</></> skills in the Factory are considered <@cc.kw>Standardization</> skills"
     },
     "manu_prod_bd[000]": {
-        "name": "Man of Few Words",
+        "name": "Silent and Hardworking",
         "desc": "When stationed at a Craft Station, production +20%. Additionally, storage capacity +2 for every 1 Ursus Specialty Drink",
-        "descformat": "When this Operator is assigned to a Factory, productivity <@cc.vup>+20%</>. Additionally, for every <@cc.vup>1</> <$cc.bd_tachanka><@cc.rem>Ursus Specialty Drink</></>, storage capacity <@cc.vup>+2</>"
+        "descformat": "When this Operator is assigned to a Factory, Productivity <@cc.vup>+20%</>; for every <@cc.vup>1</> <$cc.bd_tachanka><@cc.rem>Ursus Specialty Beverage</></>, capacity limit <@cc.vup>+2</>"
     },
     "manu_prod_spd_addition[030]": {
         "name": "Hothead",
@@ -1600,24 +1600,24 @@
         "descformat": "When this Operator is assigned to be the Trainer in the Training Room, for every <$cc.tag.knight><@cc.kw>Knight</></> Operator in the Base (excluding Base Assistants), Operators' Specialization training speed <@cc.vup>+5%</> (caps at <@cc.kw>8</> Operators)"
     },
     "train_spd_tag[020]": {
-        "name": "Tactical Instruction·Defender",
+        "name": "Tactic Guidance: Defense",
         "desc": "When stationed at the Training Station, every operator from R6S Defenders in the base (excluding Assistants) increases the skill training speed by +10% (caps at 4 operators)",
-        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, for every <$cc.g.Defence><@cc.kw>R6S Defenders</></> Operator in the Base (excluding Base Assistants), Operators' Specialization training speed <@cc.vup>+10%</> (caps at <@cc.kw>4</> operators)"
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.Defence><@cc.kw>Defending</></> Operator in the Base (excluding Assistants, caps at <@cc.kw>4</> Operators)."
     },
     "train_spd_tag[1020]": {
-        "name": "Tactical Instruction·Defender",
+        "name": "Tactic Guidance: Defense",
         "desc": "When stationed at the Training Station, every operator from R6S Defenders in the base (excluding Assistants) increases the skill training speed by +10% (caps at 4 operators)",
-        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, for every <$cc.g.Defence><@cc.kw>R6S Defenders</></> Operator in the Base (excluding Base Assistants), Operators' Specialization training speed <@cc.vup>+10%</> (caps at <@cc.kw>4</> operators)"
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.Defence><@cc.kw>Defending</></> Operator in the Base (excluding Assistants, caps at <@cc.kw>4</> Operators)."
     },
     "train_spd_tag[030]": {
-        "name": "Tactical Instruction·Attacker",
+        "name": "Tactic Guidance: Offense",
         "desc": "When stationed at the Training Station, every operator from R6S Attackers in the base (excluding Assistants) increases the skill training speed by +10% (caps at 4 operators)",
-        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, for every <$cc.g.Attack><@cc.kw>R6S Attackers</></> Operator in the Base (excluding Base Assistants), Operators' Specialization training speed <@cc.vup>+10%</> (caps at <@cc.kw>4</> operators)"
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.Attack><@cc.kw>Attacking</></> Operator in the Base (excluding Assistants, caps at <@cc.kw>4</> Operators)."
     },
     "train_spd_tag[1030]": {
-        "name": "Tactical Instruction·Attacker",
+        "name": "Tactic Guidance: Offense",
         "desc": "When stationed at the Training Station, every operator from R6S Attackers in the base (excluding Assistants) increases the skill training speed by +10% (caps at 4 operators)",
-        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, for every <$cc.g.Attack><@cc.kw>R6S Attackers</></> Operator in the Base (excluding Base Assistants), Operators' Specialization training speed <@cc.vup>+10%</> (caps at <@cc.kw>4</> operators)"
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.Attack><@cc.kw>Attacking</></> Operator in the Base (excluding Assistants, caps at <@cc.kw>4</> Operators)."
     },
     "train_spd_doubleProf[000]": {
         "name": "Sword and Handcannon",
@@ -2675,9 +2675,9 @@
         "descformat": "When this Operator is assigned to the Reception Room, increases the likelihood of obtaining clues that are already on the Clue Board."
     },
     "meet_spd_bd[000]": {
-        "name": "Intelligence Expert",
+        "name": "Intel Expert",
         "desc": "When stationed at Reception, clue collection speed +5%. Additionally, further increase clue collection speed by +5% for every 1 Intelligence Reserve",
-        "descformat": "When this Operator is assigned to the Reception Room, Clue search speed increases by <@cc.vup>+5%</>. Additionally, for every <@cc.vup>1</> <$cc.bd_ash><@cc.rem>Intelligence Reserve</></> Clue search speed further increases by <@cc.vup>+5%</>"
+        "descformat": "When this Operator is assigned to the Reception Room, increases Clue search speed by <@cc.vup>5%</>, with an additional <@cc.vup>5%</> for every <@cc.vup>1</> <$cc.bd_ash><@cc.rem>Intelligence Reserve</></>"
     },
     "meet_spd_hast[000]": {
         "name": "Shadow Gathering",

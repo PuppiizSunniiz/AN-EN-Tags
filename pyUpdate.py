@@ -47,10 +47,10 @@ json_temp_mod       =   json_load("json/tl-module.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS = ["Marcille","Laios","Chilchuck","Senshi"] # 
+NEW_CHARS = [] # 
 
 #[["OpsName#1",num(Mod)],["OpsName#2",num(Mod)], ...]
-NEW_MODS = [["Hoederer",1],["Ulpianus",1],["Wind Chimes",1],["Quartz",1],["Marcille",1],["Laios",1],["Senshi",1],["Chilchuck",1],["Irene",2]] # 
+NEW_MODS = [] # 
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS = [] #

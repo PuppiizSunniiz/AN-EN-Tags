@@ -1422,7 +1422,7 @@
                     "name": "[OD] : Operation Originium Dust",
                     "zone": {
                         "act1r6sre_zone1": {
-                            "name": "行动记录",
+                            "name": "Task Record",
                             "stage": {
                                 "act17d0_tr01": "OD-TR-1 : Sargon Desert",
                                 "act17d0_01": "OD-1 : Field Records",
@@ -1436,7 +1436,7 @@
                             }
                         },
                         "act1r6sre_zone2": {
-                            "name": "备战训练",
+                            "name": "Para Bellum",
                             "stage": {
                                 "act17d0_ex01": "OD-EX-1 : Gathering",
                                 "act17d0_ex01#f#": "OD-EX-1 : Gathering (Challenge)",
@@ -2845,42 +2845,42 @@
                     }
                 },
                 "act32side": {
-                    "name": "[CR] : Operation Lucient Arrowhead",
+                    "name": "[CR] : Operation Lucent Arrowhead",
                     "zone": {
                         "act32side_zone1": {
-                            "name": "展厅漫游",
+                            "name": "Roam the Exhibition",
                             "stage": {
-                                "act32side_tr01": "CR-TR-1 : “请有序入场”",
-                                "act32side_01": "CR-1 : 城市主题展",
-                                "act32side_02": "CR-2 : 不对称庭园",
-                                "act32side_03": "CR-3 : 假面舞池",
-                                "act32side_04": "CR-4 : 非传统艺术空间",
-                                "act32side_05": "CR-5 : 消防通道",
-                                "act32side_06": "CR-6 : 反艺术运动",
-                                "act32side_07": "CR-7 : 安全出口",
-                                "act32side_08": "CR-8 : 一跃而下"
+                                "act32side_tr01": "CR-TR-1 : 'Please Enter in an Orderly Manner'",
+                                "act32side_01": "CR-1 : City Exhibit",
+                                "act32side_02": "CR-2 : Asymmetrical Garden",
+                                "act32side_03": "CR-3 : Masquerade",
+                                "act32side_04": "CR-4 : Non-Traditional Exhibit",
+                                "act32side_05": "CR-5 : Fire Lane",
+                                "act32side_06": "CR-6 : Anti-Art Movement",
+                                "act32side_07": "CR-7 : Emergency Exit",
+                                "act32side_08": "CR-8 : Leap of Faith"
                             }
                         },
                         "act32side_zone2": {
-                            "name": "高速空降",
+                            "name": "Skydiving",
                             "stage": {
-                                "act32side_ex01": "CR-EX-1 : 顶楼阳台",
-                                "act32side_ex01#f#": "CR-EX-1 : 顶楼阳台 (Challenge)",
-                                "act32side_ex02": "CR-EX-2 : 观景回廊",
-                                "act32side_ex02#f#": "CR-EX-2 : 观景回廊 (Challenge)",
-                                "act32side_ex03": "CR-EX-3 : 破损墙体",
-                                "act32side_ex03#f#": "CR-EX-3 : 破损墙体 (Challenge)",
-                                "act32side_ex04": "CR-EX-4 : 临时遮挡",
-                                "act32side_ex04#f#": "CR-EX-4 : 临时遮挡 (Challenge)",
-                                "act32side_ex05": "CR-EX-5 : 交错残垣",
-                                "act32side_ex05#f#": "CR-EX-5 : 交错残垣 (Challenge)",
-                                "act32side_ex06": "CR-EX-6 : 危险品仓库",
-                                "act32side_ex06#f#": "CR-EX-6 : 危险品仓库 (Challenge)",
-                                "act32side_ex07": "CR-EX-7 : 特展区",
-                                "act32side_ex07#f#": "CR-EX-7 : 特展区 (Challenge)",
-                                "act32side_ex08": "CR-EX-8 : 双脚触地",
-                                "act32side_ex08#f#": "CR-EX-8 : 双脚触地 (Challenge)",
-                                "act32side_mo01": "CR-MO-1 : 直击现场"
+                                "act32side_ex01": "CR-EX-1 : Penthouse Balcony",
+                                "act32side_ex01#f#": "CR-EX-1 : Penthouse Balcony (Challenge)",
+                                "act32side_ex02": "CR-EX-2 : Observation Gallery",
+                                "act32side_ex02#f#": "CR-EX-2 : Observation Gallery (Challenge)",
+                                "act32side_ex03": "CR-EX-3 : Broken Wall",
+                                "act32side_ex03#f#": "CR-EX-3 : Broken Wall (Challenge)",
+                                "act32side_ex04": "CR-EX-4 : Temporary Barrier",
+                                "act32side_ex04#f#": "CR-EX-4 : Temporary Barrier (Challenge)",
+                                "act32side_ex05": "CR-EX-5 : Scattered Ruins",
+                                "act32side_ex05#f#": "CR-EX-5 : Scattered Ruins (Challenge)",
+                                "act32side_ex06": "CR-EX-6 : Dangerous Goods Warehouse",
+                                "act32side_ex06#f#": "CR-EX-6 : Dangerous Goods Warehouse (Challenge)",
+                                "act32side_ex07": "CR-EX-7 : Special Exhibit",
+                                "act32side_ex07#f#": "CR-EX-7 : Special Exhibit (Challenge)",
+                                "act32side_ex08": "CR-EX-8 : Solid Ground",
+                                "act32side_ex08#f#": "CR-EX-8 : Solid Ground (Challenge)",
+                                "act32side_mo01": "CR-MO-1 : Live Report"
                             }
                         }
                     }
@@ -3473,12 +3473,12 @@
                     }
                 },
                 "camp_r_21": {
-                    "name": "新旅店大道",
+                    "name": "New Hotel Avenue",
                     "zone": {
                         "camp_r_21": {
-                            "name": "新旅店大道",
+                            "name": "New Hotel Avenue",
                             "stage": {
-                                "camp_r_21": "新旅店大道"
+                                "camp_r_21": "New Hotel Avenue"
                             }
                         }
                     }
@@ -5180,7 +5180,7 @@
         "act34side": "[BP] : Path of Life",
         "act2vmulti": "[IG] : Rhodes Island Icebreaker Games",
         "act33side": "[BB] : Babel",
-        "act32side": "[CR] : Operation Lucient Arrowhead",
+        "act32side": "[CR] : Operation Lucent Arrowhead",
         "act4bossrush": "Trials for Navigator #4",
         "act31side": "[HS] : Here A People Sows",
         "act16mini": "[TG] : To the Grinning Valley",
@@ -5256,7 +5256,7 @@
         "camp_r_18": "The Special Little Aquapit'",
         "camp_r_19": "Decaying Wastes",
         "camp_r_20": "Mountain-Ringed Border Town",
-        "camp_r_21": "新旅店大道",
+        "camp_r_21": "New Hotel Avenue",
         "camp_r_22": "“离心率”实验室",
         "camp_r_23": "燃烧街区",
         "camp_r_24": "冰封雪谷",
