@@ -22104,11 +22104,11 @@
     "enemy_1390_dhsbr": {
         "abilityList": [
             {
-                "text": "被击倒后对田地造成病害污染",
+                "text": "Causes Blight to the paddy when defeated",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "位于受病害污染的田地上时<$ba.invisible>隐匿</>",
+                "text": "Becomes <$ba.invisible>Invisible</> on Blighted tiles",
                 "textFormat": "NORMAL"
             }
         ],
@@ -22128,17 +22128,17 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1390_dhsbr_2": {
         "abilityList": [
             {
-                "text": "被击倒后对田地造成病害污染",
+                "text": "Causes Blight to the paddy when defeated",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "位于受病害污染的田地上时<$ba.invisible>隐匿</>",
+                "text": "Becomes <$ba.invisible>Invisible</> on Blighted tiles",
                 "textFormat": "NORMAL"
             }
         ],
@@ -22158,43 +22158,43 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1391_dhbow": {
         "abilityList": [
             {
-                "text": "位于受病害污染的田地上时，攻击造成法术伤害",
+                "text": "When on Blighted tiles, attacks deal Arts damage",
                 "textFormat": "NORMAL"
             }
         ],
         "talentBlackboard": null,
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1391_dhbow_2": {
         "abilityList": [
             {
-                "text": "位于受病害污染的田地上时，攻击造成法术伤害",
+                "text": "When on Blighted tiles, attacks deal Arts damage",
                 "textFormat": "NORMAL"
             }
         ],
         "talentBlackboard": null,
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1392_dhshld": {
         "abilityList": [
             {
-                "text": "更容易受到攻击",
+                "text": "More likely to be attacked",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "被击倒后对田地造成严重病害污染",
+                "text": "Causes heavy Blight to the paddy when defeated",
                 "textFormat": "NORMAL"
             }
         ],
@@ -22214,17 +22214,17 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1392_dhshld_2": {
         "abilityList": [
             {
-                "text": "更容易受到攻击",
+                "text": "More likely to be attacked",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "被击倒后对田地造成严重病害污染",
+                "text": "Causes heavy Blight to the paddy when defeated",
                 "textFormat": "NORMAL"
             }
         ],
@@ -22244,17 +22244,17 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1393_dhele": {
         "abilityList": [
             {
-                "text": "吸收浅水，攻击全图我方近战单位并造成十字溅射伤害",
+                "text": "Absorbs shallow water to attack all allied melee units on the map, dealing splash damage in a cross",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "位于受病害污染的田地上时，攻击附带法术伤害并对田地造成病害污染",
+                "text": "When on Blighted tiles, attacks deal additional Arts damage and causes Blight to the paddy",
                 "textFormat": "NORMAL"
             }
         ],
@@ -22283,17 +22283,17 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1393_dhele_2": {
         "abilityList": [
             {
-                "text": "吸收浅水，攻击全图我方近战单位并造成十字溅射伤害",
+                "text": "Absorbs shallow water to attack all allied melee units on the map, dealing splash damage in a cross",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "位于受病害污染的田地上时，攻击附带法术伤害并对田地造成病害污染",
+                "text": "When on Blighted tiles, attacks deal additional Arts damage and causes Blight to the paddy",
                 "textFormat": "NORMAL"
             }
         ],
@@ -22322,17 +22322,17 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1394_dhzts": {
         "abilityList": [
             {
-                "text": "重生",
+                "text": "Rebirth",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "重生时持续吸收脚下田地的病害污染，根据吸收量提升自己防御力，并使自身攻击附带法术伤害",
+                "text": "Regenerates itself on the spot when defeated, continuously absorbing any Blight it is in contact with and increasing DEF based on the amount absorbed; attacks now deal additional Arts damage",
                 "textFormat": "NORMAL"
             }
         ],
@@ -22367,17 +22367,17 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1394_dhzts_2": {
         "abilityList": [
             {
-                "text": "重生",
+                "text": "Rebirth",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "重生时持续吸收脚下田地的病害污染，根据吸收量提升自己防御力，并使自身攻击附带法术伤害",
+                "text": "Regenerates itself on the spot when defeated, continuously absorbing any Blight it is in contact with and increasing DEF based on the amount absorbed; attacks now deal additional Arts damage",
                 "textFormat": "NORMAL"
             }
         ],
@@ -22412,17 +22412,17 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1395_dhxts": {
         "abilityList": [
             {
-                "text": "会攻击周围的阻流阀",
+                "text": "Attacks surrounding Throttle Valves",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "位于受病害污染的田地上时<$ba.invisible>隐匿</>",
+                "text": "Becomes <$ba.invisible>Invisible</> on Blighted tiles",
                 "textFormat": "NORMAL"
             }
         ],
@@ -22446,17 +22446,17 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1395_dhxts_2": {
         "abilityList": [
             {
-                "text": "会攻击周围的阻流阀",
+                "text": "Attacks surrounding Throttle Valves",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "位于受病害污染的田地上时<$ba.invisible>隐匿</>",
+                "text": "Becomes <$ba.invisible>Invisible</> on Blighted tiles",
                 "textFormat": "NORMAL"
             }
         ],
@@ -22480,21 +22480,21 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1396_dhdts": {
         "abilityList": [
             {
-                "text": "只能被阻挡数大于等于3的单位阻挡",
+                "text": "Can only be blocked by Operators with 3 or more Block",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "受到伤害后奔跑，移动速度短暂大幅提升",
+                "text": "Sprints upon taking damage, gaining greatly increased Movement Speed for a short time",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "经过阻流阀时对其造成高额伤害",
+                "text": "Deals heavy damage to Throttle Valves it passes over",
                 "textFormat": "NORMAL"
             }
         ],
@@ -22524,21 +22524,21 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1396_dhdts_2": {
         "abilityList": [
             {
-                "text": "只能被阻挡数大于等于3的单位阻挡",
+                "text": "Can only be blocked by Operators with 3 or more Block",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "受到伤害后奔跑，移动速度短暂大幅提升",
+                "text": "Sprints upon taking damage, gaining greatly increased Movement Speed for a short time",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "经过阻流阀时对其造成高额伤害",
+                "text": "Deals heavy damage to Throttle Valves it passes over",
                 "textFormat": "NORMAL"
             }
         ],
@@ -22568,25 +22568,25 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1397_dhtsxt": {
         "abilityList": [
             {
-                "text": "只能被阻挡数大于等于3的单位阻挡",
+                "text": "Can only be blocked by Operators with 3 or more Block",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "受到伤害后奔跑，移动速度短暂大幅提升",
+                "text": "Sprints upon taking damage, gaining greatly increased Movement Speed for a short time",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "经过阻流阀时对其造成高额伤害",
+                "text": "Deals heavy damage to Throttle Valves it passes over",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "击倒后获得可部署单位",
+                "text": "When defeated, grants a deployable unit",
                 "textFormat": "NORMAL"
             }
         ],
@@ -22626,25 +22626,25 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1397_dhtsxt_2": {
         "abilityList": [
             {
-                "text": "只能被阻挡数大于等于3的单位阻挡",
+                "text": "Can only be blocked by Operators with 3 or more Block",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "受到伤害后奔跑，移动速度短暂大幅提升",
+                "text": "Sprints upon taking damage, gaining greatly increased Movement Speed for a short time",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "经过阻流阀时对其造成高额伤害",
+                "text": "Deals heavy damage to Throttle Valves it passes over",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "击倒后获得可部署单位",
+                "text": "When defeated, grants a deployable unit",
                 "textFormat": "NORMAL"
             }
         ],
@@ -22684,21 +22684,21 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1398_dhdcr": {
         "abilityList": [
             {
-                "text": "初始为友好单位，监测田地病害程度",
+                "text": "Starts battle as a friendly unit, monitors the paddy's Blight level",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "所在田地病害程度超过阈值后惊醒",
+                "text": "Wakes up when the Blight level in the current paddy exceeds a certain threshold",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "逐渐损失生命，每损失一定比例生命时，释放一定数量的天桩-乙",
+                "text": "Gradually loses HP. For every certain percentage of HP lost, releases a certain number of Sky Pole - Yi",
                 "textFormat": "NORMAL"
             }
         ],
@@ -22738,21 +22738,21 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1398_dhdcr_2": {
         "abilityList": [
             {
-                "text": "初始为友好单位，监测田地病害程度",
+                "text": "Starts battle as a friendly unit, monitors the paddy's Blight level",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "所在田地病害程度超过阈值后惊醒",
+                "text": "Wakes up when the Blight level in the current paddy exceeds a certain threshold",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "逐渐损失生命，每损失一定比例生命时，释放一定数量的失控天桩-乙",
+                "text": "Gradually loses HP. For every certain percentage of HP lost, releases a certain number of Out of Control Sky Pole - Yi",
                 "textFormat": "NORMAL"
             }
         ],
@@ -22792,43 +22792,43 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1399_dhtb": {
         "abilityList": [
             {
-                "text": "扑到范围内第一个我方单位身上啃啮，直至目标倒下",
+                "text": "Latches onto the first unit within range and relentlessly attacks until the target is defeated",
                 "textFormat": "NORMAL"
             }
         ],
         "talentBlackboard": null,
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1399_dhtb_2": {
         "abilityList": [
             {
-                "text": "扑到范围内第一个我方单位身上啃啮，直至目标倒下",
+                "text": "Latches onto the first unit within range and relentlessly attacks until the target is defeated",
                 "textFormat": "NORMAL"
             }
         ],
         "talentBlackboard": null,
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1402_tgshd": {
         "abilityList": [
             {
-                "text": "被攻击时使攻击者暴露5秒",
+                "text": "Exposes the attacker for 5s when attacked",
                 "textFormat": "SILENCE"
             },
             {
-                "text": "暴露状态下的我方无法通过封阻物避开敌方视线，且受到的伤害提升",
+                "text": "When Exposed, allied units cannot use barricades to keep themselves out of enemy's sight, and take more damage",
                 "textFormat": "NORMAL"
             }
         ],
@@ -22848,17 +22848,17 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1402_tgshd_2": {
         "abilityList": [
             {
-                "text": "被攻击时使攻击者暴露5秒",
+                "text": "Exposes the attacker for 5s when attacked",
                 "textFormat": "SILENCE"
             },
             {
-                "text": "暴露状态下的我方无法通过封阻物避开敌方视线，且受到的伤害提升",
+                "text": "When Exposed, allied units cannot use barricades to keep themselves out of enemy's sight, and take more damage",
                 "textFormat": "NORMAL"
             }
         ],
@@ -22878,13 +22878,13 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1403_gunsho": {
         "abilityList": [
             {
-                "text": "与我方处于同一直线上时进行直击：向目标方向发射3支弩箭",
+                "text": "Launches a Straight Shot when positioned in a straight line with an allied unit: fires 3 bolts in the target's direction",
                 "textFormat": "SILENCE"
             }
         ],
@@ -22902,13 +22902,13 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1403_gunsho_2": {
         "abilityList": [
             {
-                "text": "与我方处于同一直线上时进行直击：向目标方向发射3支弩箭",
+                "text": "Launches a Straight Shot when positioned in a straight line with an allied unit: fires 3 bolts in the target's direction",
                 "textFormat": "SILENCE"
             }
         ],
@@ -22926,17 +22926,17 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1404_msnip": {
         "abilityList": [
             {
-                "text": "<$ba.invisible>隐匿</>",
+                "text": "<$ba.invisible>Invisible</>",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "与我方处于同一直线上时进行直击：向目标方向发射1支造成法术伤害的弩箭并使目标<$ba.stun>晕眩</>",
+                "text": "Launches a Straight Shot when positioned in a straight line with an allied unit: fires 1 bolt in the target's direction that deals Arts damage and inflicts <$ba.stun>Stun</>",
                 "textFormat": "SILENCE"
             }
         ],
@@ -22970,17 +22970,17 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1404_msnip_2": {
         "abilityList": [
             {
-                "text": "<$ba.invisible>隐匿</>",
+                "text": "<$ba.invisible>Invisible</>",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "与我方处于同一直线上时进行直击：向目标方向发射1支造成法术伤害的弩箭并使目标<$ba.stun>晕眩</>",
+                "text": "Launches a Straight Shot when positioned in a straight line with an allied unit: fires 1 bolt in the target's direction that deals Arts damage and inflicts <$ba.stun>Stun</>",
                 "textFormat": "SILENCE"
             }
         ],
@@ -23014,13 +23014,13 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1405_boomer": {
         "abilityList": [
             {
-                "text": "未被阻挡状态下首次受到伤害时，向上下左右各发出一枚爆破弹，之后移动速度提升且重量下降",
+                "text": "Upon taking damage for the first time while unblocked, fires an explosive in each cardinal direction; afterwards, gains increased Movement Speed and reduced Weight",
                 "textFormat": "SILENCE"
             }
         ],
@@ -23062,13 +23062,13 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1405_boomer_2": {
         "abilityList": [
             {
-                "text": "未被阻挡状态下首次受到伤害时，向上下左右各发出一枚爆破弹，之后移动速度提升且重量下降",
+                "text": "Upon taking damage for the first time while unblocked, fires an explosive in each cardinal direction; afterwards, gains increased Movement Speed and reduced Weight",
                 "textFormat": "SILENCE"
             }
         ],
@@ -23110,13 +23110,13 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1406_chghmr": {
         "abilityList": [
             {
-                "text": "每次被阻挡后，首次攻击的攻击力大幅提升",
+                "text": "Each time this unit is blocked, the next attack's ATK is greatly increased.",
                 "textFormat": "SILENCE"
             }
         ],
@@ -23148,13 +23148,13 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1406_chghmr_2": {
         "abilityList": [
             {
-                "text": "每次被阻挡后，首次攻击的攻击力大幅提升",
+                "text": "Each time this unit is blocked, the next attack's ATK is greatly increased.",
                 "textFormat": "SILENCE"
             }
         ],
@@ -23186,21 +23186,21 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1407_hummbd": {
         "abilityList": [
             {
-                "text": "飞行单位",
+                "text": "Flying unit.",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "被击倒时使周围的我方单位暴露8秒",
+                "text": "When defeated, Exposes nearby allied units for 8s",
                 "textFormat": "SILENCE"
             },
             {
-                "text": "暴露状态下的我方无法通过封阻物避开敌方视线，且受到的伤害提升",
+                "text": "When Exposed, allied units cannot use barricades to keep themselves out of enemy's sight, and take more damage",
                 "textFormat": "NORMAL"
             }
         ],
@@ -23225,21 +23225,21 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1407_hummbd_2": {
         "abilityList": [
             {
-                "text": "飞行单位",
+                "text": "Flying unit.",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "被击倒时使周围的我方单位暴露8秒",
+                "text": "When defeated, Exposes nearby allied units for 8s",
                 "textFormat": "SILENCE"
             },
             {
-                "text": "暴露状态下的我方无法通过封阻物避开敌方视线，且受到的伤害提升",
+                "text": "When Exposed, allied units cannot use barricades to keep themselves out of enemy's sight, and take more damage",
                 "textFormat": "NORMAL"
             }
         ],
@@ -23264,21 +23264,21 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1408_scotcn": {
         "abilityList": [
             {
-                "text": "超远距离攻击",
+                "text": "Capable of extremely long ranged-attacks",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "炮弹能对目标及其周围八格内的所有我方单位造成伤害并使目标暴露5秒",
+                "text": "Shells deal area damage to target and any allied units in the surrounding 8 tiles, and exposes targets for 5s",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "暴露状态下的我方无法通过封阻物避开敌方视线，且受到的伤害提升",
+                "text": "When Exposed, allied units cannot use barricades to keep themselves out of enemy's sight, and take more damage",
                 "textFormat": "NORMAL"
             }
         ],
@@ -23298,21 +23298,21 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1408_scotcn_2": {
         "abilityList": [
             {
-                "text": "超远距离攻击",
+                "text": "Capable of extremely long ranged-attacks",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "炮弹能对目标及其周围八格内的所有我方单位造成伤害并使目标暴露5秒",
+                "text": "Shells deal area damage to target and any allied units in the surrounding 8 tiles, and exposes targets for 5s",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "暴露状态下的我方无法通过封阻物避开敌方视线，且受到的伤害提升",
+                "text": "When Exposed, allied units cannot use barricades to keep themselves out of enemy's sight, and take more damage",
                 "textFormat": "NORMAL"
             }
         ],
@@ -23332,17 +23332,17 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1409_bdguad": {
         "abilityList": [
             {
-                "text": "与我方处于同一直线上时进行直击：向目标方向发射2枚爆破弹",
+                "text": "Launches a Straight Shot when positioned in a straight line with an allied unit: fires 2 explosives in the target's direction",
                 "textFormat": "SILENCE"
             },
             {
-                "text": "未被阻挡时受到的物理和法术伤害降低",
+                "text": "When unblocked, Physical and Arts damage taken is reduced",
                 "textFormat": "NORMAL"
             }
         ],
@@ -23384,17 +23384,17 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1409_bdguad_2": {
         "abilityList": [
             {
-                "text": "与我方处于同一直线上时进行直击：向目标方向发射2枚爆破弹",
+                "text": "Launches a Straight Shot when positioned in a straight line with an allied unit: fires 2 explosives in the target's direction",
                 "textFormat": "SILENCE"
             },
             {
-                "text": "未被阻挡时受到的物理和法术伤害降低",
+                "text": "When unblocked, Physical and Arts damage taken is reduced",
                 "textFormat": "NORMAL"
             }
         ],
@@ -23436,21 +23436,21 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1409_bdguad_3": {
         "abilityList": [
             {
-                "text": "与我方处于同一直线上时进行直击：向目标方向发射2枚爆破弹",
+                "text": "Launches a Straight Shot when positioned in a straight line with an allied unit: fires 2 explosives in the target's direction",
                 "textFormat": "SILENCE"
             },
             {
-                "text": "未被阻挡时受到的物理和法术伤害降低",
+                "text": "When unblocked, Physical and Arts damage taken is reduced",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "靠近<马特奥上尉>时，为其补充全部弹药",
+                "text": "Replenishes all ammo for <Captain Mateo> upon approaching him",
                 "textFormat": "NORMAL"
             }
         ],
@@ -23553,7 +23553,7 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1410_mmelee": {
@@ -25110,6 +25110,1652 @@
         ],
         "talentBlackboard": null,
         "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10001_trslim": {
+        "abilityList": [
+            {
+                "text": "生命值降至一半以下时，伸出脚逃跑！移动速度提升且不可阻挡一段时间",
+                "textFormat": "SILENCE"
+            }
+        ],
+        "talentBlackboard": null,
+        "skills": [
+            [
+                {
+                    "prefabKey": "StartRun",
+                    "priority": 0,
+                    "cooldown": 10.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "move_speed",
+                            "value": 1.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "block_free_time",
+                            "value": 3.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10001_trslim_2": {
+        "abilityList": [
+            {
+                "text": "生命值降至一半以下时，伸出脚逃跑！移动速度提升且不可阻挡一段时间",
+                "textFormat": "SILENCE"
+            }
+        ],
+        "talentBlackboard": null,
+        "skills": [
+            [
+                {
+                    "prefabKey": "StartRun",
+                    "priority": 0,
+                    "cooldown": 10.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "move_speed",
+                            "value": 1.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "block_free_time",
+                            "value": 3.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10002_trtrsl": {
+        "abilityList": [
+            {
+                "text": "受到伤害后会发出强烈闪光，使周围我方单位长时间<$ba.stun>晕眩</>，然后尝试挖地逃跑",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "逃跑前击倒掉落<闪亮果实>",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "Drop.token_key",
+                    "value": 0.0,
+                    "valueStr": "trap_173_slfrut"
+                },
+                {
+                    "key": "Drop.token_key_ex",
+                    "value": 0.0,
+                    "valueStr": "trap_174_smfrut"
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "Shine",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "interval",
+                            "value": 12.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "duration",
+                            "value": 12.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "stun",
+                            "value": 12.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "range_radius",
+                            "value": 1.6,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_trtrsl_shine.move_speed",
+                            "value": 2.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_trtrsl_shine.interval",
+                            "value": 15.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "ShineEx",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "interval",
+                            "value": 12.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "duration",
+                            "value": 12.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "stun",
+                            "value": 12.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "range_radius",
+                            "value": 1.6,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_trtrsl_shine.move_speed",
+                            "value": 2.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_trtrsl_shine.interval",
+                            "value": 15.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10002_trtrsl_2": {
+        "abilityList": [
+            {
+                "text": "受到伤害后会发出强烈闪光，使周围我方单位长时间<$ba.stun>晕眩</>，然后尝试挖地逃跑",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "逃跑前击倒掉落<闪亮果实>",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "Drop.token_key",
+                    "value": 0.0,
+                    "valueStr": "trap_173_slfrut"
+                },
+                {
+                    "key": "Drop.token_key_ex",
+                    "value": 0.0,
+                    "valueStr": "trap_174_smfrut"
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "Shine",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "interval",
+                            "value": 12.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "duration",
+                            "value": 12.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "stun",
+                            "value": 12.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "range_radius",
+                            "value": 1.6,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_trtrsl_shine.move_speed",
+                            "value": 2.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_trtrsl_shine.interval",
+                            "value": 15.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "ShineEx",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "interval",
+                            "value": 12.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "duration",
+                            "value": 12.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "stun",
+                            "value": 12.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "range_radius",
+                            "value": 1.6,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_trtrsl_shine.move_speed",
+                            "value": 2.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_trtrsl_shine.interval",
+                            "value": 15.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10003_trwlpl": {
+        "abilityList": [
+            {
+                "text": "会吞食周围一个目标，每次吞食需要长时间原地消化",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "InitEat.token_key",
+                    "value": 0.0,
+                    "valueStr": "trap_173_slfrut"
+                },
+                {
+                    "key": "InitEat.cnt",
+                    "value": 2.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "Devour",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": null
+                },
+                {
+                    "prefabKey": "Eat",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "duration",
+                            "value": 20.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "InitEat",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "duration",
+                            "value": 40.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10003_trwlpl_2": {
+        "abilityList": [
+            {
+                "text": "会吞食周围一个目标，每次吞食需要长时间原地消化",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "InitEat.token_key",
+                    "value": 0.0,
+                    "valueStr": "trap_173_slfrut"
+                },
+                {
+                    "key": "InitEat.cnt",
+                    "value": 2.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "Devour",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": null
+                },
+                {
+                    "prefabKey": "Eat",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "duration",
+                            "value": 20.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "InitEat",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "duration",
+                            "value": 40.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10004_trdiam": {
+        "abilityList": [
+            {
+                "text": "生命值低于一半时，会吃掉携带的<闪亮果实>，回复自身生命",
+                "textFormat": "SILENCE"
+            },
+            {
+                "text": "若未携带<闪亮果实>，会捡起脚下的<闪亮果实>",
+                "textFormat": "SILENCE"
+            }
+        ],
+        "talentBlackboard": null,
+        "skills": [
+            [
+                {
+                    "prefabKey": "Recover",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": []
+                },
+                {
+                    "prefabKey": "Eat",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": []
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10004_trdiam_2": {
+        "abilityList": [
+            {
+                "text": "生命值低于一半时，会吃掉携带的<闪亮果实>，回复自身生命",
+                "textFormat": "SILENCE"
+            },
+            {
+                "text": "若未携带<闪亮果实>，会捡起脚下的<闪亮果实>",
+                "textFormat": "SILENCE"
+            }
+        ],
+        "talentBlackboard": null,
+        "skills": [
+            [
+                {
+                    "prefabKey": "Recover",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": []
+                },
+                {
+                    "prefabKey": "Eat",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": []
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10005_trsmsb": {
+        "abilityList": [
+            {
+                "text": "优先攻击未逃跑的<浆果虫>或<硕果虫>并使其坍缩",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "被果虫的闪光照到后，移动速度增加",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": null,
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10005_trsmsb_2": {
+        "abilityList": [
+            {
+                "text": "优先攻击未逃跑的<浆果虫>或<硕果虫>并使其坍缩",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "被果虫的闪光照到后，移动速度增加",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": null,
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10006_trsmgi": {
+        "abilityList": [
+            {
+                "text": "生命值首次低于一半时，会在四周掉落<浆果虫>，之后自身移动速度增加",
+                "textFormat": "SILENCE"
+            }
+        ],
+        "talentBlackboard": null,
+        "skills": [
+            [
+                {
+                    "prefabKey": "StartRun",
+                    "priority": 0,
+                    "cooldown": 10.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "move_speed",
+                            "value": 1.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "unmove_duration",
+                            "value": 2.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10006_trsmgi_2": {
+        "abilityList": [
+            {
+                "text": "生命值首次低于一半时，会在四周掉落<硕果虫>，之后自身移动速度增加",
+                "textFormat": "SILENCE"
+            }
+        ],
+        "talentBlackboard": null,
+        "skills": [
+            [
+                {
+                    "prefabKey": "StartRun",
+                    "priority": 0,
+                    "cooldown": 10.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "move_speed",
+                            "value": 1.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "unmove_duration",
+                            "value": 2.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_key",
+                            "value": 0.0,
+                            "valueStr": "enemy_10002_trtrsl_2"
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10007_trspsb": {
+        "abilityList": [
+            {
+                "text": "使经过自身周围的其他地面非领袖敌人攻击速度，移动速度增加，且受到的物理与法术伤害减少",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "很喜欢<闪亮果实>",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "Aura.duration",
+                    "value": 300.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Aura.attack_speed",
+                    "value": 50.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Aura.move_speed",
+                    "value": 1.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "Aura.damage_resistance",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "Aura.attack@damage_resistance",
+                    "value": 0.4,
+                    "valueStr": null
+                },
+                {
+                    "key": "Ally.def",
+                    "value": -1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Ally.max_hp",
+                    "value": -0.5,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10007_trspsb_2": {
+        "abilityList": [
+            {
+                "text": "使经过自身周围的其他地面非领袖敌人攻击速度，移动速度增加，且受到的物理与法术伤害减少",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "很喜欢<闪亮果实>",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "Aura.duration",
+                    "value": 300.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Aura.attack_speed",
+                    "value": 50.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Aura.move_speed",
+                    "value": 1.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "Aura.damage_resistance",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "Aura.attack@damage_resistance",
+                    "value": 0.4,
+                    "valueStr": null
+                },
+                {
+                    "key": "Ally.def",
+                    "value": -1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Ally.max_hp",
+                    "value": -0.5,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10008_trbbox": {
+        "abilityList": [
+            {
+                "text": "惊醒后原地尖叫一段时间，持续对周围我方单位造成<$ba.dt.neural>神经损伤</>",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "攻击造成<$ba.dt.neural>神经损伤</>",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "被击倒掉落<宝箱的肉?>",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "DropEx.cnt",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "DropEx.token_key",
+                    "value": 0.0,
+                    "valueStr": "trap_177_tentcl"
+                },
+                {
+                    "key": "ScreamDebuff.interval",
+                    "value": 0.2,
+                    "valueStr": null
+                },
+                {
+                    "key": "ScreamDebuff.ep_damage_value",
+                    "value": 20.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "ScreamDebuff.element_type",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Drop.cnt",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Drop.attack@ep_damage_ratio",
+                    "value": 0.2,
+                    "valueStr": null
+                },
+                {
+                    "key": "Drop.token_key",
+                    "value": 0.0,
+                    "valueStr": "trap_177_tentcl"
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "Scream",
+                    "priority": 0,
+                    "cooldown": 10.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": null
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10008_trbbox_2": {
+        "abilityList": [
+            {
+                "text": "惊醒后原地尖叫一段时间，持续对周围我方单位造成<$ba.dt.neural>神经损伤</>",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "攻击造成<$ba.dt.neural>神经损伤</>",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "被击倒掉落<宝箱的肉?>",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "DropEx.cnt",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "DropEx.token_key",
+                    "value": 0.0,
+                    "valueStr": "trap_177_tentcl"
+                },
+                {
+                    "key": "ScreamDebuff.interval",
+                    "value": 0.2,
+                    "valueStr": null
+                },
+                {
+                    "key": "ScreamDebuff.ep_damage_value",
+                    "value": 30.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "ScreamDebuff.element_type",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Drop.cnt",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Drop.attack@ep_damage_ratio",
+                    "value": 0.3,
+                    "valueStr": null
+                },
+                {
+                    "key": "Drop.token_key",
+                    "value": 0.0,
+                    "valueStr": "trap_177_tentcl"
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "Scream",
+                    "priority": 0,
+                    "cooldown": 10.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": null
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10010_sgnja": {
+        "abilityList": [
+            {
+                "text": "位于结晶上时，移动速度大幅提升",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "speedUp.move_speed",
+                    "value": 0.9,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10010_sgnja_2": {
+        "abilityList": [
+            {
+                "text": "位于结晶上时，移动速度大幅提升",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "speedUp.move_speed",
+                    "value": 0.9,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10012_sgbtle": {
+        "abilityList": [
+            {
+                "text": "在首个无结晶的地块上放下结晶，放下之后移动速度大幅提升",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "speedUp.move_speed",
+                    "value": 1.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "spawn",
+                    "priority": -1,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": null
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10012_sgbtle_2": {
+        "abilityList": [
+            {
+                "text": "在首个无结晶的地块上放下结晶，放下之后移动速度大幅提升",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "speedUp.move_speed",
+                    "value": 1.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "spawn",
+                    "priority": -1,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": null
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10013_sgrob": {
+        "abilityList": [
+            {
+                "text": "持续在经过的地块上掉落结晶",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "受到伤害后，移动速度一段时间内大幅提升",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "passive.spawn_time",
+                    "value": 999999.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "passive.speed_time",
+                    "value": 5.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "passive.move_speed",
+                    "value": 3.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10013_sgrob_2": {
+        "abilityList": [
+            {
+                "text": "持续在经过的地块上掉落结晶",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "受到伤害后，移动速度一段时间内大幅提升",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "passive.spawn_time",
+                    "value": 999999.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "passive.speed_time",
+                    "value": 5.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "passive.move_speed",
+                    "value": 3.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10014_sgrich": {
+        "abilityList": [
+            {
+                "text": "会逐渐损失生命",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "死亡时在周围地块上掉落结晶",
+                "textFormat": "SILENCE"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "bleed.damage",
+                    "value": 500.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "spawn.range_radius",
+                    "value": 1.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10014_sgrich_2": {
+        "abilityList": [
+            {
+                "text": "会逐渐损失生命",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "死亡时在周围地块上掉落结晶",
+                "textFormat": "SILENCE"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "bleed.damage",
+                    "value": 625.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "spawn.range_radius",
+                    "value": 1.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10015_sgbird": {
+        "abilityList": [
+            {
+                "text": "飞行单位",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "不计入歼灭数",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "持续在经过的地块上掉落结晶，每次掉落结晶损失一定比例的生命值",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "spawn.cnt",
+                    "value": 9999.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "spawn.duration",
+                    "value": 9999.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "spawn.hp_ratio",
+                    "value": 0.2,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10015_sgbird_2": {
+        "abilityList": [
+            {
+                "text": "飞行单位",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "不计入歼灭数",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "持续在经过的地块上掉落结晶，每次掉落结晶损失一定比例的生命值",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "spawn.cnt",
+                    "value": 9999.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "spawn.duration",
+                    "value": 9999.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "spawn.hp_ratio",
+                    "value": 0.2,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10016_sggint": {
+        "abilityList": [
+            {
+                "text": "可以持续吸收周围结晶的力量，为附近敌方单位提供一定屏障",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "check_gems.range_radius",
+                    "value": 1.5,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "block",
+                    "priority": 0,
+                    "cooldown": 15.0,
+                    "initCooldown": 5.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "range_radius",
+                            "value": 1.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "dynamic",
+                            "value": 2000.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "gems",
+                            "value": 500.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "duration",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "link_duration",
+                            "value": 2.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10016_sggint_2": {
+        "abilityList": [
+            {
+                "text": "可以持续吸收周围结晶的力量，为附近敌方单位提供一定屏障",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "check_gems.range_radius",
+                    "value": 1.5,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "block",
+                    "priority": 0,
+                    "cooldown": 15.0,
+                    "initCooldown": 5.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "range_radius",
+                            "value": 1.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "dynamic",
+                            "value": 2000.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "gems",
+                            "value": 500.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "duration",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "link_duration",
+                            "value": 2.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10017_sgass": {
+        "abilityList": [
+            {
+                "text": "每次攻击使目标短暂时间内持续受到法术伤害（可叠加）",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "位于结晶上时，攻击速度大幅提升",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "attackSpeed.bleed_time",
+                    "value": 1.99,
+                    "valueStr": null
+                },
+                {
+                    "key": "attackSpeed.max_cnt",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "attackSpeed.damage",
+                    "value": 80.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "attackSpeed.attack_speed",
+                    "value": 100.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10017_sgass_2": {
+        "abilityList": [
+            {
+                "text": "每次攻击使目标短暂时间内持续受到法术伤害（可叠加）",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "位于结晶上时，攻击速度大幅提升",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "attackSpeed.bleed_time",
+                    "value": 1.99,
+                    "valueStr": null
+                },
+                {
+                    "key": "attackSpeed.max_cnt",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "attackSpeed.damage",
+                    "value": 80.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "attackSpeed.attack_speed",
+                    "value": 100.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10018_sgrobh": {
+        "abilityList": [
+            {
+                "text": "同时攻击两个目标",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "初始攻击范围较小，位于结晶上时进行超远距离攻击",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": null,
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10018_sgrobh_2": {
+        "abilityList": [
+            {
+                "text": "同时攻击两个目标",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "初始攻击范围较小，位于结晶上时进行超远距离攻击",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": null,
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10019_sgmum": {
+        "abilityList": [
+            {
+                "text": "更容易受到攻击",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "初始防御力和法抗很低，每次受到物理伤害防御力永久增加，受到法术伤害法抗永久增加（有上限）",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "hit_ad.taunt_level",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "hit_ad.magic_resistance",
+                    "value": 80.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "hit_ad.max_stack_cnt",
+                    "value": 30.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "hit_ad.mid",
+                    "value": 15.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "hit_ap.def",
+                    "value": 2000.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "hit_ap.max_stack_cnt",
+                    "value": 30.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "hit_ap.mid",
+                    "value": 15.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10019_sgmum_2": {
+        "abilityList": [
+            {
+                "text": "更容易受到攻击",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "初始防御力和法抗很低，每次受到物理伤害防御力永久增加，受到法术伤害法抗永久增加（有上限）",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "hit_ad.taunt_level",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "hit_ad.magic_resistance",
+                    "value": 80.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "hit_ad.max_stack_cnt",
+                    "value": 30.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "hit_ad.mid",
+                    "value": 15.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "hit_ap.def",
+                    "value": 2000.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "hit_ap.max_stack_cnt",
+                    "value": 30.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "hit_ap.mid",
+                    "value": 15.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_10020_sgcat": {
+        "abilityList": [
+            {
+                "text": "周期性对目标造成十字法术溅射伤害",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "根据场上结晶的数量，提升自身一定攻击力和生命值（有上限）",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "gems.gems",
+                    "value": 5.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "gems.max_hp",
+                    "value": 2000.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "gems.attack_speed",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "gems.atk",
+                    "value": 100.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "gems.full",
+                    "value": 5.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "gems.not_full",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "gems.max_target",
+                    "value": 40.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "gems.gems",
+                    "value": 5.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "gems.max_hp",
+                    "value": 2000.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "gems.attack_speed",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "gems.atk",
+                    "value": 100.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "gems.full",
+                    "value": 5.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "gems.not_full",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "gems.max_target",
+                    "value": 40.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "bigAttack",
+                    "priority": 0,
+                    "cooldown": 10.0,
+                    "initCooldown": 5.0,
+                    "spCost": 0,
+                    "blackboard": null
+                },
+                {
+                    "prefabKey": "bigAttack2",
+                    "priority": 0,
+                    "cooldown": 10.0,
+                    "initCooldown": 5.0,
+                    "spCost": 0,
+                    "blackboard": null
+                }
+            ],
+            [
+                {
+                    "prefabKey": "bigAttack",
+                    "priority": 0,
+                    "cooldown": 10.0,
+                    "initCooldown": 5.0,
+                    "spCost": 0,
+                    "blackboard": null
+                },
+                {
+                    "prefabKey": "bigAttack2",
+                    "priority": 0,
+                    "cooldown": 10.0,
+                    "initCooldown": 5.0,
+                    "spCost": 0,
+                    "blackboard": null
+                }
+            ]
+        ],
         "spData": null,
         "isEN": false,
         "isCompleted": false
@@ -28587,7 +30233,7 @@
     "enemy_1050_lslime": {
         "abilityList": [
             {
-                "text": "Can attack up to 4 targets at once and ignites targets it attacks, dealing Burn damage over time",
+                "text": "Can attack up to 4 targets at once and ignites targets it attacks, dealing Immolation damage over time",
                 "textFormat": "NORMAL"
             },
             {
@@ -34264,6 +35910,11 @@
                     "key": "wait_other_finish",
                     "value": 20.0,
                     "valueStr": null
+                },
+                {
+                    "key": "TileSpawn.tile_col_end",
+                    "value": -1.0,
+                    "valueStr": null
                 }
             ],
             [
@@ -34310,6 +35961,11 @@
                 {
                     "key": "wait_other_finish",
                     "value": 20.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "TileSpawn.tile_col_end",
+                    "value": -1.0,
                     "valueStr": null
                 }
             ]
@@ -34491,11 +36147,6 @@
                             "key": "atk_scale",
                             "value": 0.5,
                             "valueStr": null
-                        },
-                        {
-                            "key": "TileSpawn.tile_col_end",
-                            "value": -1.0,
-                            "valueStr": null
                         }
                     ]
                 }
@@ -34675,11 +36326,6 @@
                         {
                             "key": "atk_scale",
                             "value": 0.5,
-                            "valueStr": null
-                        },
-                        {
-                            "key": "TileSpawn.tile_col_end",
-                            "value": -1.0,
                             "valueStr": null
                         }
                     ]
@@ -40927,35 +42573,35 @@
     "enemy_1550_dhnzzh": {
         "abilityList": [
             {
-                "text": "混沌",
+                "text": "Chaos",
                 "textFormat": "TITLE"
             },
             {
-                "text": "每受到一定次数的伤害蜕皮，对所在田地造成病害污染，自身攻击力、防御力、法术抗性、重量降低，移动速度增加",
+                "text": "Molts after taking a certain amount of damage, causing Blight to the paddies it is on, reducing ATK, DEF, RES, and Weight, while increasing Movement Speed",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "生命值首次降为0时，化入水中，持续召唤敌人，重生后进入明识形态",
+                "text": "When HP drops to 0 for the first time, melts into the water and continuously summons enemies; enters the Enlightened State when reborn",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "明识",
+                "text": "Enlightened",
                 "textFormat": "TITLE"
             },
             {
-                "text": "属性改变，攻击变为物理二连击，免疫大部分控制效果",
+                "text": "Changes attributes, attacks now deal 2 strikes of Physical damage, and becomes immune to most control effects",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "标记所有攻击过“祟”的我方单位，被标记单位离场时，对“祟”所在田地造成极严重的病害污染",
+                "text": "Marks all allied units that have attacked 'Slumbering of Sui'; when a marked unit leaves the field, causes extremely high level of Blight to the tiles where 'Slumbering of Sui' is on",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "【如梭】所在田地病害程度超过阈值时，持续吸收病害并凝聚成一把长枪，优先对被标记干员投掷，造成大量法术伤害",
+                "text": "[As Needlework] When the Blight level of a paddy at this unit's location exceeds a certain threshold, 'Slumbering of Sui' will continuously absorb and condense Blight into a spear that deals a large amount of Arts damage, prioritizing marked Operators",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "在无病害的田地里，或是被无病害的水流冲刷时，“祟”的防御力、法术抗性、移动速度降低",
+                "text": "'Slumbering of Sui' has reduced DEF, RES, and Movement Speed when it is on paddies unaffected by Blight, or when scoured with unpolluted water.",
                 "textFormat": "NORMAL"
             }
         ],
@@ -41489,37 +43135,37 @@
                 "increment": 0.0
             }
         ],
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1551_bolicp": {
         "abilityList": [
             {
-                "text": "第一形态",
+                "text": "First Form",
                 "textFormat": "TITLE"
             },
             {
-                "text": "与我方处于同一直线上时进行直击：向目标方向发射10支弩箭，最后一支弩箭使目标的防御永久下降",
+                "text": "Launches a Straight Shot when positioned in a straight line with an allied unit: fires 10 bolts in the target's direction, with the last bolt permanently reducing the target's DEF",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "生命值首次降为0时，空降至另一位置并进入第二形态",
+                "text": "When HP drops to 0 for the first time, appears at another location and enters Second Form",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "第二形态",
+                "text": "Second Form",
                 "textFormat": "TITLE"
             },
             {
-                "text": "【“熄灯！”】受到伤害时，向前方释放3颗烟雾弹，使其中的敌人<$ba.invisible>隐匿</>，烟雾持续30秒（初始可使用次数：1）",
+                "text": "['Lights Out!'] Upon receiving damage, releases 3 smoke bombs in a frontal area that make enemies inside <$ba.invisible>Invisible</>; smokescreen lasts for 30s (Initial use: 1)",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "【“稍息！”】攻击时使目标<$ba.stun>晕眩</>6秒（初始可使用次数：6）",
+                "text": "['Stand Down!'] Attacks <$ba.stun>Stun</> the target for 6s (Initial uses: 6)",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "【“集合！”】呼叫场上所有<马特奥的亲卫>到自身当前位置，使其在此位置等待30秒",
+                "text": "['Attention!'] Calls all <Mateo's Bodyguard> to this unit's current position, and makes them hold there for 30s",
                 "textFormat": "NORMAL"
             }
         ],
@@ -41729,7 +43375,7 @@
                 "increment": 0.0
             }
         ],
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_1552_mmamiy": {
@@ -42853,6 +44499,903 @@
                         {
                             "key": "s2_duration",
                             "value": 50.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_1557_trcerb": {
+        "abilityList": [
+            {
+                "text": "【挑剔食客】每个阶段开始时会清空<很大的锅>的食材，并且只有击败指定敌人才能添加食材，开饭可以直接满足它并跳过对应阶段",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "未被打服而到达<很大的锅>时，若未做好饭，扣除一点目标生命",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "根据<很大的锅>的食材量，使受到的物理与法术伤害减少，食材越少，受到的伤害越少",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "生命值低于一半时狂暴，攻击力、移动速度大幅提升，且免疫大部分控制效果",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "强行在锅中放入特殊食材，会生气且不再接受这顿饭，立即狂暴且受到的物理与法术伤害减少",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "“要吃这个！”",
+                "textFormat": "TITLE"
+            },
+            {
+                "text": "【掠食】数次攻击后，下一次攻击造成更高物理伤害并减少目标防御力",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "“要吃那个！”",
+                "textFormat": "TITLE"
+            },
+            {
+                "text": "【饥饿怒吼】大声吼叫，<$ba.stun>晕眩</>周围我方单位，且会立即惊醒全场<浆果虫>与<硕果虫>",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "“开饭时刻到！”",
+                "textFormat": "TITLE"
+            },
+            {
+                "text": "【贪食之焰】对指定目标持续喷射火焰，造成越来越高的法术伤害，若目标在期间离场，则引发爆炸对目标周围造成大量法术伤害",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "P1Passive.enemy_trcerb_branch.interval",
+                    "value": 10.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "P1Food.enemy_key",
+                    "value": 0.0,
+                    "valueStr": "enemy_10001_trslim"
+                },
+                {
+                    "key": "P2Food.enemy_key",
+                    "value": 0.0,
+                    "valueStr": "enemy_10002_trtrsl"
+                },
+                {
+                    "key": "P2Passive.enemy_trcerb_branch.interval",
+                    "value": 20.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "P3Food.enemy_key",
+                    "value": 0.0,
+                    "valueStr": "enemy_10004_trdiam"
+                },
+                {
+                    "key": "P3Passive.enemy_trcerb_branch.interval",
+                    "value": 25.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PositionCheck.wait_row",
+                    "value": 5.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PositionCheck.wait_col",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PositionCheck.eat_row",
+                    "value": 5.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PositionCheck.eat_col",
+                    "value": 8.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PositionCheck.eat_move_speed",
+                    "value": 4.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PositionCheck.back_move_speed",
+                    "value": 1.3,
+                    "valueStr": null
+                },
+                {
+                    "key": "PositionCheck.enemy_trcerb_wait_to_eat.interval",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Rage.atk",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "Rage.move_speed",
+                    "value": 1.2,
+                    "valueStr": null
+                },
+                {
+                    "key": "Strong.damage_resistance_max",
+                    "value": 0.8,
+                    "valueStr": null
+                },
+                {
+                    "key": "ClearTrpotSp.sp_cost_0",
+                    "value": 90.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "ClearTrpotSp.sp_cost_1",
+                    "value": 45.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "ClearTrpotSp.sp_cost_2",
+                    "value": 42.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "ClearTrpotSp.sp_cost_3",
+                    "value": 70.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "P3Passive.attack@atk_scale",
+                    "value": 0.8,
+                    "valueStr": null
+                },
+                {
+                    "key": "PositionCheck.enemy_trcerb_wait_to_eat.food_effect_level_1",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PositionCheck.enemy_trcerb_wait_to_eat.food_effect_level_2",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PositionCheck.enemy_trcerb_wait_to_eat.food_effect_level_3",
+                    "value": 5.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "P1Passive.enemy_trcerb_branch.interval",
+                    "value": 35.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "P1Food.enemy_key",
+                    "value": 0.0,
+                    "valueStr": "enemy_1309_mhboar"
+                },
+                {
+                    "key": "P2Food.enemy_key",
+                    "value": 0.0,
+                    "valueStr": "enemy_10002_trtrsl_2"
+                },
+                {
+                    "key": "P2Passive.enemy_trcerb_branch.interval",
+                    "value": 60.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "P3Food.enemy_key",
+                    "value": 0.0,
+                    "valueStr": "enemy_1050_lslime"
+                },
+                {
+                    "key": "P3Passive.enemy_trcerb_branch.interval",
+                    "value": 60.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PositionCheck.wait_row",
+                    "value": 7.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PositionCheck.wait_col",
+                    "value": 6.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PositionCheck.eat_row",
+                    "value": 4.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PositionCheck.eat_col",
+                    "value": 10.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PositionCheck.eat_move_speed",
+                    "value": 4.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PositionCheck.back_move_speed",
+                    "value": 1.3,
+                    "valueStr": null
+                },
+                {
+                    "key": "PositionCheck.enemy_trcerb_wait_to_eat.interval",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Rage.atk",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "Rage.move_speed",
+                    "value": 1.2,
+                    "valueStr": null
+                },
+                {
+                    "key": "Strong.damage_resistance_max",
+                    "value": 0.8,
+                    "valueStr": null
+                },
+                {
+                    "key": "ClearTrpotSp.sp_cost_0",
+                    "value": 90.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "ClearTrpotSp.sp_cost_1",
+                    "value": 90.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "ClearTrpotSp.sp_cost_2",
+                    "value": 45.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "ClearTrpotSp.sp_cost_3",
+                    "value": 60.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "P3Passive.attack@atk_scale",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PositionCheck.enemy_trcerb_wait_to_eat.food_effect_level_1",
+                    "value": 4.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PositionCheck.enemy_trcerb_wait_to_eat.food_effect_level_2",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PositionCheck.enemy_trcerb_wait_to_eat.food_effect_level_3",
+                    "value": 0.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "PowerAttack",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 2,
+                    "blackboard": [
+                        {
+                            "key": "atk_scale",
+                            "value": 1.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "def",
+                            "value": -150.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "P2Skill",
+                    "priority": 0,
+                    "cooldown": 20.0,
+                    "initCooldown": 40.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "stun",
+                            "value": 4.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "range_radius",
+                            "value": 1.6,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "P3Skill",
+                    "priority": 0,
+                    "cooldown": 20.0,
+                    "initCooldown": 10.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "range_radius",
+                            "value": 2.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "duration",
+                            "value": 8.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "hit_duration",
+                            "value": 7.6,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_trcerb_s3_debuff.aoe_damage_scale",
+                            "value": 2.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_trcerb_s3_debuff.atk_scale_cur",
+                            "value": 0.025,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_trcerb_s3_debuff.atk_scale_add",
+                            "value": 0.03,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_trcerb_s3_debuff.atk_scale_max",
+                            "value": 0.25,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_trcerb_s3_debuff.interval",
+                            "value": 0.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_trcerb_s3_debuff.range_radius",
+                            "value": 2.5,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "StartEat",
+                    "priority": -1,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "direction",
+                            "value": 1.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "prefabKey": "PowerAttack",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 2,
+                    "blackboard": [
+                        {
+                            "key": "atk_scale",
+                            "value": 1.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "def",
+                            "value": -150.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "P2Skill",
+                    "priority": 0,
+                    "cooldown": 20.0,
+                    "initCooldown": 20.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "stun",
+                            "value": 5.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "range_radius",
+                            "value": 1.6,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "P3Skill",
+                    "priority": 0,
+                    "cooldown": 20.0,
+                    "initCooldown": 10.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "range_radius",
+                            "value": 2.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "duration",
+                            "value": 8.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "hit_duration",
+                            "value": 7.6,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_trcerb_s3_debuff.aoe_damage_scale",
+                            "value": 2.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_trcerb_s3_debuff.atk_scale_cur",
+                            "value": 0.03,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_trcerb_s3_debuff.atk_scale_add",
+                            "value": 0.03,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_trcerb_s3_debuff.atk_scale_max",
+                            "value": 0.35,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_trcerb_s3_debuff.interval",
+                            "value": 0.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_trcerb_s3_debuff.range_radius",
+                            "value": 2.5,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "StartEat",
+                    "priority": -1,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "direction",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "sp_cost_0",
+                            "value": 120.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "sp_cost_1",
+                            "value": 100.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "sp_cost_2",
+                            "value": 45.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "sp_cost_3",
+                            "value": 50.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            },
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ],
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_1558_sgactr": {
+        "abilityList": [
+            {
+                "text": "【晶体共振】位于结晶上时，受到的物理及法术伤害大幅降低",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "第一形态",
+                "textFormat": "TITLE"
+            },
+            {
+                "text": "【晶格聚焦】周期性锁定场上至多三名友方单位，对其造成十字法术溅射伤害，并在周围四格的地块上生成结晶",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "【晶体过载】周期性以自身为中心向四方向发射贯穿光线，对路径上所有友方单位造成法术伤害，并在沿途的地块上生成结晶",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "第二形态",
+                "textFormat": "TITLE"
+            },
+            {
+                "text": "【全面防御】一段时间内持续施法，吸收场上至多15颗结晶的力量，施法完成时根据吸收结晶的数量，获得相当于自身最大生命值一定比例的物理法术屏障",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "【坏点聚焦】一段时间内持续施法，吸收场上至多15颗结晶的力量，施法完成时根据吸收结晶的数量，锁定场上至多三名友方单位，对其造成十字法术溅射伤害",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "p2Buff.max_hp",
+                    "value": 0.25,
+                    "valueStr": null
+                },
+                {
+                    "key": "p2Buff.atk",
+                    "value": 0.25,
+                    "valueStr": null
+                },
+                {
+                    "key": "p2Buff.def",
+                    "value": 0.25,
+                    "valueStr": null
+                },
+                {
+                    "key": "gems.damage_resistance",
+                    "value": 0.7,
+                    "valueStr": null
+                },
+                {
+                    "key": "Reborn.duration",
+                    "value": 20.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Reborn.range_radius",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Reborn.invincible",
+                    "value": 10.0,
+                    "valueStr": null
+                }
+            ],
+            [
+                {
+                    "key": "p2Buff.max_hp",
+                    "value": 0.25,
+                    "valueStr": null
+                },
+                {
+                    "key": "p2Buff.atk",
+                    "value": 0.25,
+                    "valueStr": null
+                },
+                {
+                    "key": "p2Buff.def",
+                    "value": 0.25,
+                    "valueStr": null
+                },
+                {
+                    "key": "gems.damage_resistance",
+                    "value": 0.7,
+                    "valueStr": null
+                },
+                {
+                    "key": "Reborn.duration",
+                    "value": 20.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Reborn.range_radius",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Reborn.invincible",
+                    "value": 10.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "bigAttack",
+                    "priority": 0,
+                    "cooldown": 20.0,
+                    "initCooldown": 20.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "max_target",
+                            "value": 3.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "loop_duration",
+                            "value": 5.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk_scale",
+                            "value": 0.5,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "fourDirAttack",
+                    "priority": 0,
+                    "cooldown": 40.0,
+                    "initCooldown": 6.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "loop_duration",
+                            "value": 3.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk_scale",
+                            "value": 1.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "block",
+                    "priority": 0,
+                    "cooldown": 70.0,
+                    "initCooldown": 5.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "max_target",
+                            "value": 15.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "main",
+                            "value": 0.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "gems",
+                            "value": 0.1,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "shield_duration",
+                            "value": 40.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "loop_duration",
+                            "value": 5.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "mid",
+                            "value": 7.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "bigAttack2",
+                    "priority": 0,
+                    "cooldown": 25.0,
+                    "initCooldown": 25.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "link_duration",
+                            "value": 10.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "max_target",
+                            "value": 15.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "gems",
+                            "value": 0.04,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "base",
+                            "value": 0.9,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "max_target[attack]",
+                            "value": 3.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "prefabKey": "bigAttack",
+                    "priority": 0,
+                    "cooldown": 20.0,
+                    "initCooldown": 20.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "max_target",
+                            "value": 3.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "loop_duration",
+                            "value": 5.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk_scale",
+                            "value": 0.8,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "fourDirAttack",
+                    "priority": 0,
+                    "cooldown": 40.0,
+                    "initCooldown": 6.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "loop_duration",
+                            "value": 3.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk_scale",
+                            "value": 1.2,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "block",
+                    "priority": 0,
+                    "cooldown": 70.0,
+                    "initCooldown": 5.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "max_target",
+                            "value": 15.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "main",
+                            "value": 0.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "gems",
+                            "value": 0.1,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "shield_duration",
+                            "value": 40.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "loop_duration",
+                            "value": 5.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "mid",
+                            "value": 7.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "bigAttack2",
+                    "priority": 0,
+                    "cooldown": 25.0,
+                    "initCooldown": 25.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "link_duration",
+                            "value": 10.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "max_target",
+                            "value": 15.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "gems",
+                            "value": 0.06,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "base",
+                            "value": 1.2,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "max_target[attack]",
+                            "value": 3.0,
                             "valueStr": null
                         }
                     ]
@@ -45340,15 +47883,15 @@
     "enemy_2057_smkght": {
         "abilityList": [
             {
-                "text": "造成伤害时提高攻击力和攻击速度（有上限），停止攻击数秒后复原",
+                "text": "When dealing damage, increases ATK and ASPD, up to a limit. This effect will reset a few seconds after this unit stops attacking",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "【征服】蓄力一段时间后对<路加萨尔古斯，历法之王>周围大范围所有单位造成大量物理伤害并施加<$ba.stun>晕眩</>",
+                "text": "[Conquest] After charging up, deals heavy Physical damage to all units around <Lugalszargus, the Overlord of Ages> in a large area and inflicts <$ba.stun>Stun</>",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "<路加萨尔古斯，历法之王>被击倒或退场后，攻击速度、移动速度、防御力、法术抗性大幅提升，【征服】目标变为我方单位",
+                "text": "When <Lugalszargus, the Overlord of Ages> is defeated or leaves, ASPD, Movement Speed, DEF, and RES are greatly increased, and your units become the target of [Conquest]",
                 "textFormat": "NORMAL"
             }
         ],
@@ -45434,21 +47977,21 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_2058_smlion": {
         "abilityList": [
             {
-                "text": "被阻挡时可以穿过目标并对阻挡的我方单位造成法术伤害",
+                "text": "When blocked, passes through the target, dealing Arts damage to the blocking unit",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "【敕令】蓄力一段时间后对<哈兰杜汗，大地之鞭>周围大范围所有单位造成大量法术伤害并施加<$ba.stun>晕眩</>",
+                "text": "[Edict] After charging up, deals heavy Arts damage to all units around <Kharanduu Khagan, the Scourge of the Land> in a large area and inflicts <$ba.stun>Stun</>",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "<哈兰杜汗，大地之鞭>被击倒或退场后，攻击速度、移动速度、防御力、法术抗性大幅提升，【敕令】目标变为我方单位",
+                "text": "When <Kharanduu Khagan, the Scourge of the Land> is defeated or leaves, ASPD, Movement Speed, DEF, and RES are greatly increased, and your units become the target of [Edict]",
                 "textFormat": "NORMAL"
             }
         ],
@@ -45530,7 +48073,7 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_2071_skzdny": {
@@ -48149,6 +50692,313 @@
         "isEN": false,
         "isCompleted": false
     },
+    "enemy_6025_tinker": {
+        "abilityList": [
+            {
+                "text": "自身生命值首次低于60%时，祭坛会进入防御模式，获得一段时间的法术物理减伤，并立即召唤巫术石球",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "每隔一段时间发射大量全图打击的巫术流弹对我方单位造成物理伤害，优先攻击距离较近的2名我方单位",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "每隔一段时间，在自身周围四格召唤出“巫术石球”",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "halfHp.duration",
+                    "value": 45.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "halfHp.damage_resistance",
+                    "value": 0.9,
+                    "valueStr": null
+                },
+                {
+                    "key": "halfHp.hp_ratio",
+                    "value": 0.6,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "SummonTechn",
+                    "priority": 0,
+                    "cooldown": 25.0,
+                    "initCooldown": 65.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "branch_id",
+                            "value": 0.0,
+                            "valueStr": "techn"
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "EndTheGame",
+                    "priority": 0,
+                    "cooldown": 1200.0,
+                    "initCooldown": 1200.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "value",
+                            "value": -100.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "Missile",
+                    "priority": 0,
+                    "cooldown": 15.0,
+                    "initCooldown": 30.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "fire_duration",
+                            "value": 3.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "atk_scale",
+                            "value": 1.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "up_scale",
+                            "value": 0.2,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "max_atk_scale",
+                            "value": 3.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "enemy_tinker_s_emit_projectile.interval",
+                            "value": 0.2,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "Mark",
+                    "priority": 1,
+                    "cooldown": 9999.0,
+                    "initCooldown": 1.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "max_target",
+                            "value": 2.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_6026_techn": {
+        "abilityList": [
+            {
+                "text": "死亡后对周围造成真实伤害和眩晕",
+                "textFormat": "SILENCE"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "Boom.atk_scale",
+                    "value": 1.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "Boom.stun",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Boom.atk_value",
+                    "value": 200.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_6027_bqthie": {
+        "abilityList": [
+            {
+                "text": "常态不移动，每隔一段时间或损失一定生命值时，使用钩爪飞行到下一个高台，飞行过程中被视作空中单位",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "每隔一段时间，将“无可置疑的罪证”藏进我方预备区，并减少部署费用",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "每隔一段时间，销毁一张“无可置疑的罪证”，并发动一次强力攻击",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "每存在一张“无可置疑的罪证”，自身的攻击力提升，获得物理和法术闪避",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "自身未被阻挡时，攻击速度大幅提升",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "Reborn.duration",
+                    "value": 15.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Reborn.trig_cnt",
+                    "value": 5.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Sneak.attack_speed",
+                    "value": 50.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Flying.fly_interval_cnt",
+                    "value": 35.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Flying.interval",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "Flying.hp_ratio",
+                    "value": 0.25,
+                    "valueStr": null
+                },
+                {
+                    "key": "Steal.atk",
+                    "value": 0.1,
+                    "valueStr": null
+                },
+                {
+                    "key": "Steal.prob",
+                    "value": 0.1,
+                    "valueStr": null
+                },
+                {
+                    "key": "Steal.stack_cnt_eff",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "MoveUp.interval",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "MoveUp.trig_cnt",
+                    "value": 8.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "MoveUp.move_speed",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "MoveUp.max_stack_cnt",
+                    "value": 3.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "HideMoney",
+                    "priority": 10,
+                    "cooldown": 20.0,
+                    "initCooldown": 10.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "cost",
+                            "value": -3.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "DisposeMoney",
+                    "priority": 10,
+                    "cooldown": 35.0,
+                    "initCooldown": 20.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "atk_scale_dispose",
+                            "value": 5.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "HideMoney2",
+                    "priority": 10,
+                    "cooldown": 15.0,
+                    "initCooldown": 10.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "cost",
+                            "value": -15.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "MoveEnd",
+                    "priority": 100,
+                    "cooldown": 100000000.0,
+                    "initCooldown": 100000000.0,
+                    "spCost": 0,
+                    "blackboard": []
+                },
+                {
+                    "prefabKey": "MoveSkill",
+                    "priority": 100,
+                    "cooldown": 100000000.0,
+                    "initCooldown": 100000000.0,
+                    "spCost": 0,
+                    "blackboard": []
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
     "enemy_7001_blwzad": {
         "abilityList": [
             {
@@ -49065,6 +51915,221 @@
         "isEN": true,
         "isCompleted": false
     },
+    "enemy_8008_eltswd": {
+        "abilityList": [
+            {
+                "text": "更容易受到攻击，被攻击时对周围的我方造成一定的真实伤害",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "持续使周围的我方陷入<$ba.stun>晕眩</>",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "被其他敌人触碰时消失，该敌人的最大生命和攻击力提升，且被击倒后原地生成【矢量战术装备】",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "被击破后生成力场，力场中的我方的最大生命和攻击力提升，受到的物理和法术伤害降低",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "在场一段时间后自爆，造成大范围高额法术伤害",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "PassiveToAlly.magic_damage_magic",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PassiveToEnemy.max_hp",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PassiveToEnemy.atk",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PassiveToEnemy.taunt_level",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PassiveToEnemy.attack_speed",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PassiveToEnemy.sp_recovery_per_sec",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PassiveBoom.interval",
+                    "value": 30.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Reborn.duration",
+                    "value": 0.1,
+                    "valueStr": null
+                },
+                {
+                    "key": "PassiveAoe.range_radius",
+                    "value": 1.7,
+                    "valueStr": null
+                },
+                {
+                    "key": "PassiveAoe.psv_pure_dmg",
+                    "value": 250.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PassiveAoe.dmg_interval",
+                    "value": 0.8,
+                    "valueStr": null
+                },
+                {
+                    "key": "ShieldAura.max_hp",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "ShieldAura.atk",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "ShieldAura.taunt_level",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "ShieldAura.attack_speed",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "ShieldAura.sp",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "ShieldAura.damage_resistance",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "PassiveToEnemy.range_radius",
+                    "value": 0.4,
+                    "valueStr": null
+                },
+                {
+                    "key": "extra_immune",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "ShieldAura.hp_recovery_per_sec_by_max_hp_ratio",
+                    "value": 0.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "DR_Boom",
+                    "priority": 0,
+                    "cooldown": 999999.0,
+                    "initCooldown": 999999.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "bomb_damage",
+                            "value": 4000.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_8009_eltufo": {
+        "abilityList": [
+            {
+                "text": "飞行单位",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "只能在力场中被攻击",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "攻击造成范围伤害",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "攻击2次后，下一次攻击会<$ba.stun>晕眩</>所有目标",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "被击破后原地留下补给，该补给将在“迷迭香”，虚实之握触发【思维崩毁】后激活，使大范围内的我方受到的物理和法术伤害降低",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "CrystalShield.cast_duration",
+                    "value": 60.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "CrystalShield.damage_resistance",
+                    "value": 0.5,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "StunAtk",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 2,
+                    "blackboard": [
+                        {
+                            "key": "stun",
+                            "value": 5.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": [
+            {
+                "spType": "INCREASE_WHEN_ATTACK",
+                "maxSp": 2,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ],
+        "isEN": false,
+        "isCompleted": false
+    },
     "enemy_8001_flmlod_3": {
         "abilityList": [
             {
@@ -49224,10 +52289,266 @@
         "isEN": true,
         "isCompleted": false
     },
+    "enemy_8007_eltrsm_3": {
+        "abilityList": [
+            {
+                "text": "【心绪力场】受到的物理/法术攻击伤害降低，场上的【矢量战术装备】被击破后失去该效果，且在重新获得战术装备前无法攻击",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "第一形态",
+                "textFormat": "TITLE"
+            },
+            {
+                "text": "【投射】对全屏内一名我方所在位置投掷<矢量战术装备>，装备落地时对目标造成3次物理伤害（后两次为余震，造成一半的伤害），若投掷目标处于<$ba.stun>晕眩</>则将其强制击倒",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "【捕获】清除场上所有的力场，重新获得战术装备",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "【冲动阻断】生命值降为0后，进入重生阶段，期间每隔数秒对周围造成一次大范围法术伤害",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "第二形态",
+                "textFormat": "TITLE"
+            },
+            {
+                "text": "【增幅投射】在首次投掷<矢量战术装备>后数秒再次投掷，若投掷目标处于<$ba.stun>晕眩</>则将其强制击倒",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "【记忆流失】攻击时流失一定的生命，并对周围造成大范围法术伤害",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "【思维崩毁】生命降至50%以下时，飞至空中并变为远程攻击。迷迭香的攻击力提升，之后不再使用【投射】并获得以下能力：",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "攻击时使目标长时间<$ba.stun>晕眩</>，【心绪力场】不再失效且减伤比例提升，【记忆流失】造成的伤害和流失的生命提升，被攻击时对周围的我方造成一定的真实伤害",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "P1M1_Reborn.duration",
+                    "value": 28.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "P1M1_Reborn.interval",
+                    "value": 5.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "P1M1_Reborn.reborn_magic_damage",
+                    "value": 1500.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "P1M1_Reborn.branch_id",
+                    "value": 0.0,
+                    "valueStr": "eltrsm_branch"
+                },
+                {
+                    "key": "P1_Passive.damage_resistance",
+                    "value": 0.6,
+                    "valueStr": null
+                },
+                {
+                    "key": "P1M2_Reborn.duration",
+                    "value": 28.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "P1M2_Reborn.interval",
+                    "value": 5.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "P1M2_Reborn.reborn_magic_damage",
+                    "value": 1500.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "P1M2_Reborn.branch_id",
+                    "value": 0.0,
+                    "valueStr": "eltrsm_branch"
+                },
+                {
+                    "key": "P2M1_Passive.damage_resistance",
+                    "value": 0.6,
+                    "valueStr": null
+                },
+                {
+                    "key": "P2M1_Passive.attack@self_damage",
+                    "value": 750.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "P2M1_Passive.attack@aoe_atk_scale",
+                    "value": 0.2,
+                    "valueStr": null
+                },
+                {
+                    "key": "P2M1_Passive.invinciable_dur",
+                    "value": 15.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "P2_to3.hp_ratio",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "P3_Passive.attack@stun",
+                    "value": 15.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "P3_Passive.attack@self_damage",
+                    "value": 1500.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "P3_Passive.attack@aoe_atk_scale",
+                    "value": 0.3,
+                    "valueStr": null
+                },
+                {
+                    "key": "P3_Passive.atk",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "P3_Passive.damage_resistance",
+                    "value": 0.9,
+                    "valueStr": null
+                },
+                {
+                    "key": "P3_Passive.range_radius",
+                    "value": 1.7,
+                    "valueStr": null
+                },
+                {
+                    "key": "P3_Passive.psv_pure_dmg",
+                    "value": 500.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "P3_Passive.dmg_interval",
+                    "value": 0.8,
+                    "valueStr": null
+                },
+                {
+                    "key": "P3_Passive.invinciable_dur",
+                    "value": 15.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "PassiveEnhance.enhance_level",
+                    "value": 2.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "HurlDivineRapier",
+                    "priority": 10,
+                    "cooldown": 40.0,
+                    "initCooldown": 20.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "append_atk_scale",
+                            "value": 0.5,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "TransToP1M2",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 999999.0,
+                    "spCost": 0,
+                    "blackboard": null
+                },
+                {
+                    "prefabKey": "RecycleDR",
+                    "priority": 10,
+                    "cooldown": 25.0,
+                    "initCooldown": 25.0,
+                    "spCost": 0,
+                    "blackboard": null
+                },
+                {
+                    "prefabKey": "HurlDivineRapierP2",
+                    "priority": 10,
+                    "cooldown": 40.0,
+                    "initCooldown": 25.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "append_atk_scale",
+                            "value": 0.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "sec_atk_time",
+                            "value": 4.0,
+                            "valueStr": null
+                        }
+                    ]
+                },
+                {
+                    "prefabKey": "Transfor",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 999999.0,
+                    "spCost": 0,
+                    "blackboard": null
+                },
+                {
+                    "prefabKey": "TransToP2M2",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 999999.0,
+                    "spCost": 0,
+                    "blackboard": null
+                },
+                {
+                    "prefabKey": "RecycleDRP2",
+                    "priority": 10,
+                    "cooldown": 25.0,
+                    "initCooldown": 25.0,
+                    "spCost": 0,
+                    "blackboard": []
+                },
+                {
+                    "prefabKey": "TransforM2",
+                    "priority": 20,
+                    "cooldown": 0.0,
+                    "initCooldown": 999999.0,
+                    "spCost": 0,
+                    "blackboard": []
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
     "enemy_7016_shushu": {
         "abilityList": [
             {
-                "text": "其他荒地鼷兽位于附近时，攻击力提升（可叠加）",
+                "text": "When other Barrenlands Musbeasts are nearby, ATK increases (stacks)",
                 "textFormat": "NORMAL"
             }
         ],
@@ -49247,13 +52568,13 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_7017_miner": {
         "abilityList": [
             {
-                "text": "攻击资源时造成额外伤害",
+                "text": "Deals more damage when attacking resources",
                 "textFormat": "NORMAL"
             }
         ],
@@ -49268,13 +52589,13 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_7018_scarab": {
         "abilityList": [
             {
-                "text": "无法被干员与召唤物阻挡；被阻挡后爆炸，并造成大额范围伤害",
+                "text": "Cannot be blocked by Operators or Summons; explodes when Blocked and deals great AoE damage",
                 "textFormat": "NORMAL"
             }
         ],
@@ -49305,13 +52626,13 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_7019_thief": {
         "abilityList": [
             {
-                "text": "无法被阻挡",
+                "text": "Cannot be blocked.",
                 "textFormat": "NORMAL"
             }
         ],
@@ -49346,13 +52667,13 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_7020_xbtor": {
         "abilityList": [
             {
-                "text": "受到伤害后缩入壳中，使自身受到的物理和法术伤害降至0，并且受到我方干员伤害时对其造成相当于自身攻击力100％的物理伤害。一段时间未受到伤害后退出缩壳状态",
+                "text": "Retreats into its shell upon taking damage, reducing any further physical and Arts damage to 0. In this state, upon receiving damage from allied Operators, deals physical damage equal to 100% of their own ATK to the attacker. Will come out from its shell after taking no damage for a period of time",
                 "textFormat": "NORMAL"
             }
         ],
@@ -49409,13 +52730,13 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_7021_xbmoth": {
         "abilityList": [
             {
-                "text": "受到攻击后，一段时间内无法移动，并变为无敌",
+                "text": "Upon taking damage, becomes Invulnerable and cannot move for a period of time",
                 "textFormat": "NORMAL"
             }
         ],
@@ -49466,17 +52787,17 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_7022_gatgod": {
         "abilityList": [
             {
-                "text": "受到来自非自身阻挡单位的伤害随着生命值降低逐渐降至0",
+                "text": "As her HP being reduced, her damage taken from units not blocked by herself is also gradually reduced to 0",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "连续攻击时，攻击力提升。（受到<$ba.frozen>冻结</>、<$ba.stun>晕眩</>、<$ba.levitate>浮空</>效果时重置）",
+                "text": "Gains increased ATK when making consecutive attacks. (Resets when affected by <$ba.frozen>Freeze</>, <$ba.stun>Stun</>, or <$ba.levitate>Levitate</>)",
                 "textFormat": "NORMAL"
             }
         ],
@@ -49516,13 +52837,13 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_7023_gatbb": {
         "abilityList": [
             {
-                "text": "未被阻挡时，自身受到的伤害降低50%",
+                "text": "When unblocked, damage taken is reduced by 50%",
                 "textFormat": "NORMAL"
             }
         ],
@@ -49537,17 +52858,17 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_7024_clking": {
         "abilityList": [
             {
-                "text": "对周围单位每秒造成大量<$ba.dt.burning>灼燃损伤</>，每秒恢复大量生命值",
+                "text": "Deals heavy <$ba.dt.burning>Burn Damage</> to nearby units every second, and recovers a huge amount of HP every second",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "在浸季及被<$ba.frozen>冻结</>时，失去特殊能力",
+                "text": "Become Silenced during the Wet Season or when <$ba.frozen>Frozen</>",
                 "textFormat": "NORMAL"
             }
         ],
@@ -49599,17 +52920,17 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_7025_clbb": {
         "abilityList": [
             {
-                "text": "攻击附带<$ba.dt.burning>灼燃损伤</>，每秒恢复生命值",
+                "text": "Attacks deal <$ba.dt.burning>Burn Damage</>, and recovers HP every second",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "在浸季及被<$ba.frozen>冻结</>时，失去特殊能力",
+                "text": "Become Silenced during the Wet Season or when <$ba.frozen>Frozen</>",
                 "textFormat": "NORMAL"
             }
         ],
@@ -49629,21 +52950,21 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_7026_xbele": {
         "abilityList": [
             {
-                "text": "平时不攻击，受到攻击时反击",
+                "text": "Normally does not attack, but counters when attacked",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "攻击2次后，下一次攻击使范围内目标受到大量物理伤害并<$ba.stun>晕眩</>",
+                "text": "After 2 attacks, the next attack deals heavy Physical damage to targets within range and inflicts <$ba.stun>Stun</>",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "生命值低于一半时，攻击速度大幅提升。",
+                "text": "When HP falls below 50%, gains significantly increased ASPD",
                 "textFormat": "NORMAL"
             }
         ],
@@ -49702,17 +53023,17 @@
                 "increment": 1.0
             }
         ],
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_7027_xbbtl": {
         "abilityList": [
             {
-                "text": "周期性获得可以抵挡伤害的护盾，护盾受到80次攻击后被击破",
+                "text": "Periodically gains a Shield that blocks damage; the Shield lasts for 80 attacks before breaking",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "生命值低于50％时同时攻击攻击范围内的所有单位。",
+                "text": "When below 50% HP, attacks all units within Attack Range at the same time",
                 "textFormat": "NORMAL"
             }
         ],
@@ -49769,21 +53090,21 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_7028_xbscp": {
         "abilityList": [
             {
-                "text": "攻击为二连击，生命值低于50％时攻击变为四连击",
+                "text": "Attacks strike twice; when below 50% HP, attacks strike 4 times instead",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "每次攻击使目标防御力降低",
+                "text": "Reduces the target's DEF with each attack",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "靠近晶玲兽后，会立即捕杀晶玲兽并获取晶玲兽的部分能力。之后攻击变为四连击",
+                "text": "Upon approaching a Crystalline Titanibeast, instantly slays it and obtains some of its abilities; afterwards, each attack now strikes 4 times",
                 "textFormat": "NORMAL"
             }
         ],
@@ -49861,25 +53182,25 @@
                 "increment": 1.0
             }
         ],
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_7029_pilot": {
         "abilityList": [
             {
-                "text": "<$ba.float>近地悬浮</>，且<$ba.float>近地悬浮</>时攻击范围提升",
+                "text": "<$ba.float>Low-Altitude Hovering</>; has increased Attack Range while in <$ba.float>Low-Altitude Hovering</>",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "攻击造成法术溅射伤害",
+                "text": "Attacks deal Arts splash damage",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "损失一定生命值后，会被击落，并在范围内造成大量伤害，自身被<$ba.stun>晕眩</>",
+                "text": "Crashes upon losing a certain percentage of HP, dealing heavy damage in an area and <$ba.stun>Stunning</> itself",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "一段时间后再次进入<$ba.float>近地悬浮</>状态",
+                "text": "After a period of time, reenters <$ba.float>Low-Altitude Hovering</> status",
                 "textFormat": "NORMAL"
             }
         ],
@@ -49957,17 +53278,17 @@
             ]
         ],
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_7030_skodo": {
         "abilityList": [
             {
-                "text": "【沙暴之尘】周围一定范围内敌人（包括自身）移速与攻击速度提高",
+                "text": "[Sandstorm's Dustwake] Increases the Movement Speed and ASPD of enemies within a certain range (including self)",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "被阻挡时吞噬阻挡者（上限3），并且使【沙暴之尘】效果提升",
+                "text": "Devours the blocker when blocked (up to a maximum of 3), and increases the effect of [Sandstorm's Dustwake]",
                 "textFormat": "NORMAL"
             }
         ],
@@ -50055,25 +53376,25 @@
                 "increment": 1.0
             }
         ],
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_7031_ghking": {
         "abilityList": [
             {
-                "text": "第一形态",
+                "text": "First Form",
                 "textFormat": "TITLE"
             },
             {
-                "text": "【湮灭】使下一次攻击对目标造成<$ba.stun>晕眩</>并使自身不可被我方干员和召唤物阻挡，经过我方单位时，造成大量法术伤害",
+                "text": "[Annihilation] Causes the next attack to <$ba.stun>Stun</> the target, and makes itself unblockable by allied Operators and Summons; deals a large amount of Arts damage when passing through allied units",
                 "textFormat": "NORMAL"
             },
             {
-                "text": "第二形态",
+                "text": "Second Form",
                 "textFormat": "TITLE"
             },
             {
-                "text": "攻击力与攻击速度提升",
+                "text": "Increases ATK and ASPD",
                 "textFormat": "NORMAL"
             }
         ],
@@ -50150,13 +53471,13 @@
                 "increment": 1.0
             }
         ],
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_7034_xbmsn": {
         "abilityList": [
             {
-                "text": "只有在视野以内才会以正常速度移动",
+                "text": "Moves at regular speed only when in visible range",
                 "textFormat": "NORMAL"
             }
         ],
@@ -50171,7 +53492,7 @@
         ],
         "skills": null,
         "spData": null,
-        "isEN": false,
+        "isEN": true,
         "isCompleted": false
     },
     "enemy_7044_xblbug": {
@@ -50235,6 +53556,678 @@
             ]
         ],
         "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_7047_xbdit": {
+        "abilityList": [
+            {
+                "text": "会伪装成其他敌人形象出现，伪装形态下不攻击",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "受到伤害后暴露原型",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "被击倒后概率掉落<制式道具>",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "在<大型兽栏>蓄养时，周期性产出<清水>",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "born.wait",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "born.mv1",
+                    "value": 0.3,
+                    "valueStr": null
+                },
+                {
+                    "key": "born.mv2",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "born.mv3",
+                    "value": 0.8,
+                    "valueStr": null
+                },
+                {
+                    "key": "born.mv4",
+                    "value": 0.3,
+                    "valueStr": null
+                },
+                {
+                    "key": "born.mv5",
+                    "value": 0.3,
+                    "valueStr": null
+                },
+                {
+                    "key": "born.mv6",
+                    "value": 0.4,
+                    "valueStr": null
+                },
+                {
+                    "key": "born.mv7",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "born.mv8",
+                    "value": 0.7,
+                    "valueStr": null
+                },
+                {
+                    "key": "born.mv9",
+                    "value": 0.8,
+                    "valueStr": null
+                },
+                {
+                    "key": "born.mv10",
+                    "value": 1.3,
+                    "valueStr": null
+                },
+                {
+                    "key": "born.mv11",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Trace.view_radius",
+                    "value": 1.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "TraceTime.duration",
+                    "value": 20.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_7049_xbnum": {
+        "abilityList": [
+            {
+                "text": "初始状态不受所有低于一定值的物理或法术伤害",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "单次受到超过一定值的伤害后会大摔一跤，随机掉落大量辅料（掉落至多触发一次）然后失去伤害减免效果",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "在<大型兽栏>蓄养时，周期性掉落<粗制赤金>",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "fallTrigger.ratio",
+                    "value": 0.05,
+                    "valueStr": null
+                },
+                {
+                    "key": "Trace.view_radius",
+                    "value": 1.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "TraceTime.duration",
+                    "value": 20.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "fall",
+                    "priority": -1,
+                    "cooldown": 999999.0,
+                    "initCooldown": 999999.0,
+                    "spCost": 999999,
+                    "blackboard": null
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_7051_xbcas": {
+        "abilityList": [
+            {
+                "text": "异兽",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "在<雷暴><阵雷>时，雷暴总是会在拟南兽经过的地块出现且自身免疫雷暴伤害",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "在<烈阳天><骄阳天>时，攻击附带攻击力一定比例的<$ba.dt.burning>灼燃损伤</>且一定距离的我方单位<$ba.dt.burning>灼燃损伤</>爆发时额外受到伤害",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "在<大沙尘暴><沙尘暴>时，获得<$ba.invisible>隐匿</>，攻击范围扩大",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "aura.range_radius",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "aura.value",
+                    "value": 300.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "aura.attack@ep_damage_ratio",
+                    "value": 0.15,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_7053_xbcasz": {
+        "abilityList": [
+            {
+                "text": "在场时协助我方作战，不可被阻挡",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "在<雷暴><阵雷>时，雷暴总是会在拟南兽经过的地块出现且自身免疫雷暴伤害",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "在<烈阳天><骄阳天>时，攻击附带一定比例的<$ba.dt.burning2>灼燃损伤</>且周围的敌方单位受到一定比例<$ba.elementfragile>元素脆弱</>",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "在<大沙尘暴><沙尘暴>时，获得<$ba.invisible>隐匿</>，攻击范围扩大",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "稀有品种的属性值提升",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "aura.range_radius",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "aura.damage_scale",
+                    "value": 1.25,
+                    "valueStr": null
+                },
+                {
+                    "key": "aura.attack@ep_damage_ratio",
+                    "value": 0.09,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": null,
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_7054_xbsmi": {
+        "abilityList": [
+            {
+                "text": "异兽，飞行单位",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "移动途径的地块变为播撒状态，播撒地块上的敌人攻击速度提升",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "每损失一定生命值，播撒自身周围地块并对周围所有我方单位造成一定比例的法术伤害，然后受到的物理和法术伤害减少，持续一段时间",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "生命值低于一定值后，不再攻击和释放技能转而向终点飞行，到达后消失并移动至其他关卡",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "【草籽疯长】周期性选择数名干员（优先选择播撒地块内的）造成攻击力一定比例的法术溅射伤害，目标被击倒则再部署时间大幅延长",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "【播撒生命】陌域难度6获得能力：播撒地块上的敌人被击倒时自爆，对周围我方单位造成该敌人一定攻击力的法术伤害和数秒<$ba.stun>晕眩</>",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "Aromatic.attack_speed",
+                    "value": 40.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Aromatic.s1_active",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Blooming.hp_ratio",
+                    "value": 0.2,
+                    "valueStr": null
+                },
+                {
+                    "key": "Blooming.resistance_time",
+                    "value": 12.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Blooming.atk_scale",
+                    "value": 2.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "Blooming.range_radius",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Blooming.damage_resistance",
+                    "value": 0.8,
+                    "valueStr": null
+                },
+                {
+                    "key": "Escape.hp_ratio",
+                    "value": 0.3,
+                    "valueStr": null
+                },
+                {
+                    "key": "Aromatic.boom_scale",
+                    "value": 1.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Aromatic.stun",
+                    "value": 3.0,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "SunshineFlames",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 0.0,
+                    "spCost": 30,
+                    "blackboard": [
+                        {
+                            "key": "atk_scale",
+                            "value": 1.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "max_target",
+                            "value": 2.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "respawn_time",
+                            "value": 1.8,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": [
+            {
+                "spType": "INCREASE_WITH_TIME",
+                "maxSp": 30,
+                "initSp": 0,
+                "increment": 1.0
+            }
+        ],
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_7056_xbsmiz": {
+        "abilityList": [
+            {
+                "text": "飞行单位，在场时协助我方作战，不攻击建材资源",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "移动途径的地块变为播撒状态，播撒地块上的友军攻击速度提升且对<巨大岩石><奇异矿脉>和机械敌人造成伤害提升",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "【草籽疯长】选择数名友军种下花朵，使他们下次撤退时再部署时间减少",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "稀有品种的属性值提升，【草籽疯长】的再部署时间减少幅度增加",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "TraceTarget.range_radius",
+                    "value": 10.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "MarkTarget.mark_duration",
+                    "value": 10.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "range_id",
+                    "value": 0.0,
+                    "valueStr": "x-4"
+                },
+                {
+                    "key": "Aromatic.attack_speed",
+                    "value": 40.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Aromatic.damage_scale",
+                    "value": 1.4,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "SunshineFlames",
+                    "priority": 0,
+                    "cooldown": 45.0,
+                    "initCooldown": 15.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "max_target",
+                            "value": 2.0,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "respawn_time",
+                            "value": 0.75,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": null,
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_7057_xbrok": {
+        "abilityList": [
+            {
+                "text": "异兽，不可被阻挡",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "移动时移动速度逐渐提高（有上限），冲撞经过的我方单位，造成一定攻击力的物理伤害和数秒<$ba.stun>晕眩</>",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "周期性停止移动获得最大生命值一定比例的屏障（不可叠加）",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "生命值低于一定值后，钻入地下，期间防御力和法术抗性提高，一段时间后消失并移动至其他关卡",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "【土石之刺】陌域难度4获得能力：冲撞使目标攻击力下降，冲撞的伤害范围变大",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "【深潜】陌域难度6获得能力：移动速度达到最高时经过的地块变为不可部署",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "TraceTarget.range_radius",
+                    "value": 10.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Escape.hp_ratio",
+                    "value": 0.7,
+                    "valueStr": null
+                },
+                {
+                    "key": "Escape.def",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Escape.magic_resistance",
+                    "value": 5.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "Escape.escape_time",
+                    "value": 30.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "RushDamage.atk_scale",
+                    "value": 3.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "RushDamage.enemy_xbrok_rush_speed.move_speed",
+                    "value": 0.01,
+                    "valueStr": null
+                },
+                {
+                    "key": "RushDamage.enemy_xbrok_rush_speed.max_stack_cnt",
+                    "value": 100.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "RushDamage.enemy_xbrok_rush_speed.interval",
+                    "value": 0.6,
+                    "valueStr": null
+                },
+                {
+                    "key": "RushDamage.range_radius",
+                    "value": 0.6,
+                    "valueStr": null
+                },
+                {
+                    "key": "RushDamage.atk",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "RushDamage.enemy_xbrok_rush_speed.s2_check",
+                    "value": 0.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "RushDamage.mark_cd",
+                    "value": 10.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "TraceTarget.default_cooldown",
+                    "value": 16.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "RushDamage.stun",
+                    "value": 1.5,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "SplashingStone",
+                    "priority": 0,
+                    "cooldown": 0.0,
+                    "initCooldown": 15.0,
+                    "spCost": 50,
+                    "blackboard": [
+                        {
+                            "key": "max_hp_ratio",
+                            "value": 0.15,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
+        "spData": [
+            {
+                "spType": "INCREASE_WITH_TIME",
+                "maxSp": 50,
+                "initSp": 35,
+                "increment": 1.0
+            }
+        ],
+        "isEN": false,
+        "isCompleted": false
+    },
+    "enemy_7059_xbrokz": {
+        "abilityList": [
+            {
+                "text": "在场时协助我方作战，不可被阻挡",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "移动时移动速度逐渐提高（有上限），冲撞经过的敌人，造成一定攻击力的物理伤害和数秒<$ba.stun>晕眩</>",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "经过待携带的建材资源时可将其拾取（不限数量）",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "【土石之刺】选择一定距离内的一名友方干员，持续扬起泥沙使其逐渐获得大量屏障（屏障会不断衰减）",
+                "textFormat": "NORMAL"
+            },
+            {
+                "text": "稀有品种的属性值提升，【土石之刺】的屏障量提升",
+                "textFormat": "NORMAL"
+            }
+        ],
+        "talentBlackboard": [
+            [
+                {
+                    "key": "RushDamage.atk_scale",
+                    "value": 2.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "RushDamage.enemy_xbrokz_rush_speed.move_speed",
+                    "value": 0.03,
+                    "valueStr": null
+                },
+                {
+                    "key": "RushDamage.enemy_xbrokz_rush_speed.max_stack_cnt",
+                    "value": 50.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "RushDamage.enemy_xbrokz_rush_speed.interval",
+                    "value": 0.15,
+                    "valueStr": null
+                },
+                {
+                    "key": "RushDamage.range_radius",
+                    "value": 0.5,
+                    "valueStr": null
+                },
+                {
+                    "key": "TraceTarget.range_radius",
+                    "value": 10.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "TraceTarget.default_cooldown",
+                    "value": 16.0,
+                    "valueStr": null
+                },
+                {
+                    "key": "MarkView.range_id",
+                    "value": 0.0,
+                    "valueStr": "x-4"
+                },
+                {
+                    "key": "RushDamage.stun",
+                    "value": 1.5,
+                    "valueStr": null
+                }
+            ]
+        ],
+        "skills": [
+            [
+                {
+                    "prefabKey": "RisingSand",
+                    "priority": 0,
+                    "cooldown": 45.0,
+                    "initCooldown": 15.0,
+                    "spCost": 0,
+                    "blackboard": [
+                        {
+                            "key": "range_radius",
+                            "value": 2.5,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "hp_ratio",
+                            "value": 0.025,
+                            "valueStr": null
+                        },
+                        {
+                            "key": "duration",
+                            "value": 25.0,
+                            "valueStr": null
+                        }
+                    ]
+                }
+            ]
+        ],
         "spData": null,
         "isEN": false,
         "isCompleted": false

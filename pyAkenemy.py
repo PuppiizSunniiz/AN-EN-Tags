@@ -104,8 +104,8 @@ def load_json(data) -> dict :
             return json_load("json/gamedata/zh_CN/gamedata/excel/sandbox_perm_table.json")
         case "json_RA1EN" :
             return json_load("json/gamedata/en_US/gamedata/excel/sandbox_table.json")
-        #case "json_RA2EN" :
-            #return json_load("json/gamedata/en_US/gamedata/excel/sandbox_perm_table.json")
+        case "json_RA2EN" :
+            return json_load("json/gamedata/en_US/gamedata/excel/sandbox_perm_table.json")
 
         case "Fillerjson" :
             return json_load("json/Filler.json")
@@ -534,7 +534,7 @@ def get_stage_gamemode(stage_event : str) -> str :
             return "campaign"
         elif stage_event.find("tower_") == 0 :
             return "sss"
-        elif stage_event == "PinchOut" or stage_event == "act42d0" or re.search(r"CC(|BP)#",stage_event) : 
+        elif stage_event == "PinchOut" or stage_event in ["act42d0","act1vecb"] or re.search(r"CC(|BP)#",stage_event) : 
             return "cc"
         elif stage_event.find("IS#") != -1 :
             return "is"
@@ -753,7 +753,7 @@ def IS_stage_collect(json_ISEN0, json_IS, json_ISEN):
     
         IS_main(json_IS["details"][ISseason]["stages"])
 
-def RA_stage_collect(json_RA1EN, json_RA2): #, json_RA2EN
+def RA_stage_collect(json_RA1EN, json_RA2, json_RA2EN): #
 ### RA#1
     @decorator
     def RA0_main(RA0_stages):
@@ -799,14 +799,15 @@ def RA_stage_collect(json_RA1EN, json_RA2): #, json_RA2EN
         #### Map Stage
             stage_counter = 0
             for RAstage in RA_stages.keys():
-                #try:
-                    #stage_name = json_RA2EN["detail"]["SANDBOX_V2"][RAseason]["stageData"][RAstage]["name"]
-                #except:
-                    #stage_name = RA_stages[RAstage]["name"]
+                #stage_name = RA_stages[RAstage]["name"]
+                try:
+                    stage_name = json_RA2EN["detail"]["SANDBOX_V2"][RAseason]["stageData"][RAstage]["name"]
+                except:
+                    stage_name = RA_stages[RAstage]["name"]
                 
                 stage_preview = json_RA2["detail"]["SANDBOX_V2"][RAseason]["rewardConfigData"]["stageMapPreviewRewardDict"]
                 
-                stage_name = RA_stages[RAstage]["name"]
+                
                 
                 stagepath = f'json/gamedata/zh_CN/gamedata/levels/{RA_stages[RAstage]["levelId"].lower()}.json'
                 
@@ -1066,7 +1067,7 @@ def Akenemy() :
     COOP_stage_collect(load_json("Fillerjson"))
     CC_stage_collect(load_json("Fillerjson"), load_json("json_CC"), load_json("json_CC2"), load_json("json_activityEN"))
     IS_stage_collect(load_json("json_ISEN0"), load_json("json_IS"), load_json("json_ISEN"))
-    RA_stage_collect(load_json("json_RA1EN"), load_json("json_RA2"))
+    RA_stage_collect(load_json("json_RA1EN"), load_json("json_RA2"), load_json("json_RA2EN"))
     # Activity & Gamemode collection
     activity_collect(load_json("Activityjson"))
     akenemy_collect(load_json("json_zone"),load_json("json_zoneEN"))
