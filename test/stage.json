@@ -4912,6 +4912,22 @@
             "name": "Back to the Flames",
             "Event": "main_9"
         },
+        "sub_09-1-3": {
+            "stageId": "sub_09-1-3",
+            "levelId": "Obt/Main/level_sub_09-1-3",
+            "zoneId": "EP9 : Standard Environment",
+            "code": "S9-3",
+            "name": "灰烬之下",
+            "Event": "main_9"
+        },
+        "sub_09-1-4": {
+            "stageId": "sub_09-1-4",
+            "levelId": "Obt/Main/level_sub_09-1-4",
+            "zoneId": "EP9 : Standard Environment",
+            "code": "S9-4",
+            "name": "退无可退",
+            "Event": "main_9"
+        },
         "hard_09-01": {
             "stageId": "hard_09-01",
             "levelId": "Obt/Hard/level_hard_09-01",
@@ -5391,6 +5407,86 @@
             "code": "PR-D-2",
             "name": "Assault",
             "Event": "weekly_4"
+        },
+        "act37side_01": {
+            "stageId": "act37side_01",
+            "levelId": "Activities/act37side/level_act37side_01",
+            "zoneId": "act37side_zone1",
+            "code": "GO-1",
+            "name": "仇怨残余",
+            "Event": "act37side"
+        },
+        "act37side_tr01": {
+            "stageId": "act37side_tr01",
+            "levelId": "Activities/act37side/level_act37side_tr01",
+            "zoneId": "act37side_zone1",
+            "code": "GO-TR-1",
+            "name": "物资难题",
+            "Event": "act37side"
+        },
+        "act37side_02": {
+            "stageId": "act37side_02",
+            "levelId": "Activities/act37side/level_act37side_02",
+            "zoneId": "act37side_zone1",
+            "code": "GO-2",
+            "name": "痼疾缠身",
+            "Event": "act37side"
+        },
+        "act37side_03": {
+            "stageId": "act37side_03",
+            "levelId": "Activities/act37side/level_act37side_03",
+            "zoneId": "act37side_zone1",
+            "code": "GO-3",
+            "name": "议会公决",
+            "Event": "act37side"
+        },
+        "act37side_04": {
+            "stageId": "act37side_04",
+            "levelId": "Activities/act37side/level_act37side_04",
+            "zoneId": "act37side_zone1",
+            "code": "GO-4",
+            "name": "酒精与安慰剂",
+            "Event": "act37side"
+        },
+        "act37side_05": {
+            "stageId": "act37side_05",
+            "levelId": "Activities/act37side/level_act37side_05",
+            "zoneId": "act37side_zone1",
+            "code": "GO-5",
+            "name": "废铁与铆钉",
+            "Event": "act37side"
+        },
+        "act37side_06": {
+            "stageId": "act37side_06",
+            "levelId": "Activities/act37side/level_act37side_06",
+            "zoneId": "act37side_zone1",
+            "code": "GO-6",
+            "name": "“晚饭宣言”",
+            "Event": "act37side"
+        },
+        "act37side_07": {
+            "stageId": "act37side_07",
+            "levelId": "Activities/act37side/level_act37side_07",
+            "zoneId": "act37side_zone1",
+            "code": "GO-7",
+            "name": "锈王冠",
+            "Event": "act37side"
+        },
+        "act37side_08": {
+            "stageId": "act37side_08",
+            "levelId": "Activities/act37side/level_act37side_08",
+            "zoneId": "act37side_zone1",
+            "code": "GO-8",
+            "name": "战火重铸之剑",
+            "Event": "act37side"
+        },
+        "act37side_09": {
+            "stageId": "act37side_09",
+            "levelId": "Activities/act37side/level_act37side_09",
+            "zoneId": "act37side_zone1",
+            "code": "GO-9",
+            "name": "英雄的落幕",
+            "Event": "act37side"
         },
         "act1vecb_01": {
             "stageId": "act1vecb_01",
@@ -22633,6 +22729,8 @@
             "main_09-17",
             "sub_09-1-1",
             "sub_09-1-2",
+            "sub_09-1-3",
+            "sub_09-1-4",
             "hard_09-01",
             "hard_09-02",
             "hard_09-03",
@@ -23039,6 +23137,18 @@
         "weekly_4": [
             "pro_d_1",
             "pro_d_2"
+        ],
+        "act37side_zone1": [
+            "act37side_01",
+            "act37side_tr01",
+            "act37side_02",
+            "act37side_03",
+            "act37side_04",
+            "act37side_05",
+            "act37side_06",
+            "act37side_07",
+            "act37side_08",
+            "act37side_09"
         ],
         "act1vecb_zone1": [
             "act1vecb_01",
@@ -25822,6 +25932,9 @@
         ],
         "weekly_4": [
             "weekly_4"
+        ],
+        "act37side": [
+            "act37side_zone1"
         ],
         "act1vecb": [
             "act1vecb_zone1",
@@ -41669,7 +41782,8 @@
                         "main_09-12",
                         "main_09-14",
                         "main_09-17",
-                        "sub_09-1-2"
+                        "sub_09-1-2",
+                        "sub_09-1-3"
                     ],
                     "EP9 : Challenge": [
                         "main_09-01#f#",
@@ -41860,7 +41974,9 @@
                         "main_09-14",
                         "main_09-17",
                         "sub_09-1-1",
-                        "sub_09-1-2"
+                        "sub_09-1-2",
+                        "sub_09-1-3",
+                        "sub_09-1-4"
                     ],
                     "EP9 : Challenge": [
                         "main_09-02#f#",
@@ -42125,7 +42241,8 @@
                         "main_09-10",
                         "main_09-12",
                         "main_09-17",
-                        "sub_09-1-2"
+                        "sub_09-1-2",
+                        "sub_09-1-3"
                     ],
                     "EP9 : Challenge": [
                         "main_09-07#f#",
@@ -42204,7 +42321,8 @@
                         "main_09-09",
                         "main_09-10",
                         "main_09-17",
-                        "sub_09-1-1"
+                        "sub_09-1-1",
+                        "sub_09-1-4"
                     ],
                     "EP9 : Challenge": [
                         "main_09-09#f#",
@@ -42284,7 +42402,9 @@
                         "main_09-12",
                         "main_09-16",
                         "sub_09-1-1",
-                        "sub_09-1-2"
+                        "sub_09-1-2",
+                        "sub_09-1-3",
+                        "sub_09-1-4"
                     ],
                     "EP9 : Challenge": [
                         "main_09-11#f#",
@@ -44537,6 +44657,11 @@
                 }
             },
             "sidestory": {
+                "act37side": {
+                    "act37side_zone1": [
+                        "act37side_09"
+                    ]
+                },
                 "act17mini": {
                     "act17mini_zone1": [
                         "act17mini_05",
@@ -49737,6 +49862,160 @@
                         "RA#2_monthly_1",
                         "RA#2_monthly_1",
                         "RA#2_monthly_1"
+                    ]
+                }
+            }
+        },
+        "enemy_10022_vtskny": {
+            "sidestory": {
+                "act37side": {
+                    "act37side_zone1": [
+                        "act37side_01",
+                        "act37side_tr01",
+                        "act37side_02",
+                        "act37side_03",
+                        "act37side_04",
+                        "act37side_05",
+                        "act37side_06",
+                        "act37side_07",
+                        "act37side_08",
+                        "act37side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10023_vtsnky": {
+            "sidestory": {
+                "act37side": {
+                    "act37side_zone1": [
+                        "act37side_01",
+                        "act37side_tr01",
+                        "act37side_02",
+                        "act37side_03",
+                        "act37side_04",
+                        "act37side_05",
+                        "act37side_06",
+                        "act37side_07",
+                        "act37side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10021_vtcar": {
+            "sidestory": {
+                "act37side": {
+                    "act37side_zone1": [
+                        "act37side_tr01",
+                        "act37side_02",
+                        "act37side_04",
+                        "act37side_05",
+                        "act37side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10028_vtswd": {
+            "sidestory": {
+                "act37side": {
+                    "act37side_zone1": [
+                        "act37side_tr01",
+                        "act37side_02",
+                        "act37side_03",
+                        "act37side_04",
+                        "act37side_05",
+                        "act37side_06",
+                        "act37side_07",
+                        "act37side_08",
+                        "act37side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10029_vtshld": {
+            "sidestory": {
+                "act37side": {
+                    "act37side_zone1": [
+                        "act37side_tr01",
+                        "act37side_02",
+                        "act37side_03",
+                        "act37side_04",
+                        "act37side_05",
+                        "act37side_06",
+                        "act37side_07",
+                        "act37side_08",
+                        "act37side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10030_vtwand": {
+            "sidestory": {
+                "act37side": {
+                    "act37side_zone1": [
+                        "act37side_tr01",
+                        "act37side_02",
+                        "act37side_03",
+                        "act37side_04",
+                        "act37side_05",
+                        "act37side_06",
+                        "act37side_07",
+                        "act37side_08",
+                        "act37side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10024_vtstrn": {
+            "sidestory": {
+                "act37side": {
+                    "act37side_zone1": [
+                        "act37side_02",
+                        "act37side_03",
+                        "act37side_05",
+                        "act37side_06",
+                        "act37side_07",
+                        "act37side_08",
+                        "act37side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10026_vtzepl": {
+            "sidestory": {
+                "act37side": {
+                    "act37side_zone1": [
+                        "act37side_04",
+                        "act37side_06"
+                    ]
+                }
+            }
+        },
+        "enemy_10025_vtmstr": {
+            "sidestory": {
+                "act37side": {
+                    "act37side_zone1": [
+                        "act37side_05",
+                        "act37side_07",
+                        "act37side_08",
+                        "act37side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_1559_vtlionk": {
+            "sidestory": {
+                "act37side": {
+                    "act37side_zone1": [
+                        "act37side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10027_vtsk": {
+            "sidestory": {
+                "act37side": {
+                    "act37side_zone1": [
+                        "act37side_09"
                     ]
                 }
             }
