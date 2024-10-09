@@ -7,7 +7,7 @@
                 "desc": ""
             },
             {
-                "name": "<@ba.talpu></>",
+                "name": "<@ba.talpu>()</>",
                 "desc": ""
             }
         ],
@@ -17,44 +17,32 @@
                 "desc": ""
             },
             {
-                "name": "<@ba.talpu></>",
+                "name": "<@ba.talpu>()</>",
                 "desc": ""
             }
         ]
     ],
-    "char_XXXX_ABCDEF": [   # Laios   // Talent 1 : 
+    "char_XXXX_ABCDEF": [   # ABCDEF   // Talent 1 : device count / device cap / ori barrier / regen barrier
         [
             {
                 "name": "",
-                "desc": "After defeating an enemy, Laios ignores {} DEF of all other enemies with the same name"
+                "desc": "Carries X Support Devices (max X deployed at once). Support Devices grant a <$ba.barrier>Barrier</> equal to XX% of Catherine Max HP(If target hasn't been attacked for 5 seconds, restores <$ba.barrier>Barrier</> equal to XX% of Catherine Max HP every second up to original amount, device effect does not stack)"
             },
             {
-                "name": "<@ba.talpu></>",
-                "desc": "After defeating an enemy, Laios ignores {}<@ba.talpu>()</> DEF of all other enemies with the same name"
+                "name": "<@ba.talpu>()</>",
+                "desc": "Carries X Support Devices (max X deployed at once). Support Devices grant a <$ba.barrier>Barrier</> equal to XX% of Catherine Max HP(If target hasn't been attacked for 5 seconds, restores <$ba.barrier>Barrier</> equal to XX% of Catherine Max HP every second up to original amount, device effect does not stack)"
             }
         ]
     ],
-    "char_XXXX_ABCDEF": [   # Chilchuck   // Talent 1 : 
+    "char_XXXX_ABCDEF": [   # ABCDEF   // Talent 1 : 
         [
             {
                 "name": "",
-                "desc": "After deployment, prevent Chilchuck and allies within Chilchuck 's Attack Range to recieve damage from Environment Damage and Elemental Damage for {} second"
+                "desc": ""
             },
             {
-                "name": "<@ba.talpu></>",
-                "desc": "After deployment, prevent Chilchuck and allies within Chilchuck 's Attack Range to recieve damage from Environment Damage and Elemental Damage for {}<@ba.talpu>(+)</> second"
-            }
-        ]
-    ],
-    "char_XXXX_ABCDEF": [   # Senshi   // Talent 1 : 
-        [
-            {
-                "name": "",
-                "desc": "Def % , increases heal amount by %"
-            },
-            {
-                "name": "<@ba.talpu></>",
-                "desc": "Def %<@ba.talpu>(+%)</> , increases heal amount by %"
+                "name": "<@ba.talpu>()</>",
+                "desc": ""
             }
         ]
     ]

@@ -10535,5 +10535,110 @@
             "Starts cooking and stops attacking for 10 seconds. While cooking nearby allies recover HP for <@ba.vup>{tick_heal_scale:0%}</> of ATK every second. After finishing cooking heal all nearby allies by <@ba.vup>{heal_scale:0%}</> of ATK and recover <@ba.vup>{magic_sp:0}</> <$ba.magicpoint>Mana</>",
             "Starts cooking and stops attacking for 10 seconds. While cooking nearby allies recover HP for <@ba.vup>{tick_heal_scale:0%}</> of ATK every second. After finishing cooking heal all nearby allies by <@ba.vup>{heal_scale:0%}</> of ATK and recover <@ba.vup>{magic_sp:0}</> <$ba.magicpoint>Mana</>"
         ]
+    },
+	"skchr_siege2_1": {
+        "name": "重铸晖光",
+        "desc": [
+            "The next attack will deal additionally <@ba.vup>{atk_scale:0%}</> ATK as <@ba.vup>True damage</> to nearby enemies",
+            "The next attack will deal additionally <@ba.vup>{atk_scale:0%}</> ATK as <@ba.vup>True damage</> to nearby enemies",
+            "The next attack will deal additionally <@ba.vup>{atk_scale:0%}</> ATK as <@ba.vup>True damage</> to nearby enemies",
+            "The next attack will deal additionally <@ba.vup>{atk_scale:0%}</> ATK as <@ba.vup>True damage</> to nearby enemies",
+            "The next attack will deal additionally <@ba.vup>{atk_scale:0%}</> ATK as <@ba.vup>True damage</> to nearby enemies",
+            "The next attack will deal additionally <@ba.vup>{atk_scale:0%}</> ATK as <@ba.vup>True damage</> to nearby enemies",
+            "The next attack will deal additionally <@ba.vup>{atk_scale:0%}</> ATK as <@ba.vup>True damage</> to nearby enemies",
+            "The next attack will deal additionally <@ba.vup>{atk_scale:0%}</> ATK as <@ba.vup>True damage</> to nearby enemies",
+            "The next attack will deal additionally <@ba.vup>{atk_scale:0%}</> ATK as <@ba.vup>True damage</> to nearby enemies",
+            "The next attack will deal additionally <@ba.vup>{atk_scale:0%}</> ATK as <@ba.vup>True damage</> to nearby enemies"
+        ]
+    },
+    "skchr_siege2_2": {
+        "name": "进赴故土",
+        "desc": [
+            "Passive : If there are 2 or more ally under the First talent effect, increase SP recovery by <@ba.vup>+{sp_recovery_per_sec}</> per second</br>Active : Attack Range <@ba.vup>+1</>, ATK <@ba.vup>+{atk:0%}</>, Attack target <@ba.vup>+1</></br><@ba.rem>This skill has unlimited duration.</>",
+            "Passive : If there are 2 or more ally under the First talent effect, increase SP recovery by <@ba.vup>+{sp_recovery_per_sec}</> per second</br>Active : Attack Range <@ba.vup>+1</>, ATK <@ba.vup>+{atk:0%}</>, Attack target <@ba.vup>+1</></br><@ba.rem>This skill has unlimited duration.</>",
+            "Passive : If there are 2 or more ally under the First talent effect, increase SP recovery by <@ba.vup>+{sp_recovery_per_sec}</> per second</br>Active : Attack Range <@ba.vup>+1</>, ATK <@ba.vup>+{atk:0%}</>, Attack target <@ba.vup>+1</></br><@ba.rem>This skill has unlimited duration.</>",
+            "Passive : If there are 2 or more ally under the First talent effect, increase SP recovery by <@ba.vup>+{sp_recovery_per_sec}</> per second</br>Active : Attack Range <@ba.vup>+1</>, ATK <@ba.vup>+{atk:0%}</>, Attack target <@ba.vup>+1</></br><@ba.rem>This skill has unlimited duration.</>",
+            "Passive : If there are 2 or more ally under the First talent effect, increase SP recovery by <@ba.vup>+{sp_recovery_per_sec}</> per second</br>Active : Attack Range <@ba.vup>+1</>, ATK <@ba.vup>+{atk:0%}</>, Attack target <@ba.vup>+1</></br><@ba.rem>This skill has unlimited duration.</>",
+            "Passive : If there are 2 or more ally under the First talent effect, increase SP recovery by <@ba.vup>+{sp_recovery_per_sec}</> per second</br>Active : Attack Range <@ba.vup>+1</>, ATK <@ba.vup>+{atk:0%}</>, Attack target <@ba.vup>+1</></br><@ba.rem>This skill has unlimited duration.</>",
+            "Passive : If there are 2 or more ally under the First talent effect, increase SP recovery by <@ba.vup>+{sp_recovery_per_sec}</> per second</br>Active : Attack Range <@ba.vup>+1</>, ATK <@ba.vup>+{atk:0%}</>, Attack target <@ba.vup>+1</></br><@ba.rem>This skill has unlimited duration.</>",
+            "Passive : If there are 2 or more ally under the First talent effect, increase SP recovery by <@ba.vup>+{sp_recovery_per_sec}</> per second</br>Active : Attack Range <@ba.vup>+1</>, ATK <@ba.vup>+{atk:0%}</>, Attack target <@ba.vup>+1</></br><@ba.rem>This skill has unlimited duration.</>",
+            "Passive : If there are 2 or more ally under the First talent effect, increase SP recovery by <@ba.vup>+{sp_recovery_per_sec}</> per second</br>Active : Attack Range <@ba.vup>+1</>, ATK <@ba.vup>+{atk:0%}</>, Attack target <@ba.vup>+1</></br><@ba.rem>This skill has unlimited duration.</>",
+            "Passive : If there are 2 or more ally under the First talent effect, increase SP recovery by <@ba.vup>+{sp_recovery_per_sec}</> per second</br>Active : Attack Range <@ba.vup>+1</>, ATK <@ba.vup>+{atk:0%}</>, Attack target <@ba.vup>+1</></br><@ba.rem>This skill has unlimited duration.</>"
+        ]
+    },
+    "skchr_siege2_3": {
+        "name": "俱以我之名",
+        "desc": [
+            "Deploy  \"Golden Vow\" within the First talent effect range;\nCan attack enemies blocked by ally under the First talent effect, ATK <@ba.vup>+{atk:0%}</>, Attack target <@ba.vup>+1</>, Attack Intervel <@ba.vup>reduced</>, deal  <@ba.vup>True damage</>",
+            "Deploy  \"Golden Vow\" within the First talent effect range;\nCan attack enemies blocked by ally under the First talent effect, ATK <@ba.vup>+{atk:0%}</>, Attack target <@ba.vup>+1</>, Attack Intervel <@ba.vup>reduced</>, deal  <@ba.vup>True damage</>",
+            "Deploy  \"Golden Vow\" within the First talent effect range;\nCan attack enemies blocked by ally under the First talent effect, ATK <@ba.vup>+{atk:0%}</>, Attack target <@ba.vup>+1</>, Attack Intervel <@ba.vup>reduced</>, deal  <@ba.vup>True damage</>",
+            "Deploy  \"Golden Vow\" within the First talent effect range;\nCan attack enemies blocked by ally under the First talent effect, ATK <@ba.vup>+{atk:0%}</>, Attack target <@ba.vup>+1</>, Attack Intervel <@ba.vup>reduced</>, deal  <@ba.vup>True damage</>",
+            "Deploy  \"Golden Vow\" within the First talent effect range;\nCan attack enemies blocked by ally under the First talent effect, ATK <@ba.vup>+{atk:0%}</>, Attack target <@ba.vup>+1</>, Attack Intervel <@ba.vup>reduced</>, deal  <@ba.vup>True damage</>",
+            "Deploy  \"Golden Vow\" within the First talent effect range;\nCan attack enemies blocked by ally under the First talent effect, ATK <@ba.vup>+{atk:0%}</>, Attack target <@ba.vup>+1</>, Attack Intervel <@ba.vup>reduced</>, deal  <@ba.vup>True damage</>",
+            "Deploy  \"Golden Vow\" within the First talent effect range;\nCan attack enemies blocked by ally under the First talent effect, ATK <@ba.vup>+{atk:0%}</>, Attack target <@ba.vup>+2</>, Attack Intervel <@ba.vup>reduced</>, deal  <@ba.vup>True damage</>",
+            "Deploy  \"Golden Vow\" within the First talent effect range;\nCan attack enemies blocked by ally under the First talent effect, ATK <@ba.vup>+{atk:0%}</>, Attack target <@ba.vup>+2</>, Attack Intervel <@ba.vup>reduced</>, deal  <@ba.vup>True damage</>",
+            "Deploy  \"Golden Vow\" within the First talent effect range;\nCan attack enemies blocked by ally under the First talent effect, ATK <@ba.vup>+{atk:0%}</>, Attack target <@ba.vup>+2</>, Attack Intervel <@ba.vup>reduced</>, deal  <@ba.vup>True damage</>",
+            "Deploy  \"Golden Vow\" within the First talent effect range;\nCan attack enemies blocked by ally under the First talent effect, ATK <@ba.vup>+{atk:0%}</>, Attack target <@ba.vup>+3</>, Attack Intervel <@ba.vup>reduced</>, deal  <@ba.vup>True damage</>"
+        ]
+    },
+    "skchr_cathy_1": {
+        "name": "岁月锻打",
+        "desc": [
+            "Self and operators under device 's <$ba.barrier>Barrier</> effect ATK<@ba.vup>+{s1_atk:0%}</>, Def <@ba.vup>+{s1_def:0%}</>",
+            "Self and operators under device 's <$ba.barrier>Barrier</> effect ATK<@ba.vup>+{s1_atk:0%}</>, Def <@ba.vup>+{s1_def:0%}</>",
+            "Self and operators under device 's <$ba.barrier>Barrier</> effect ATK<@ba.vup>+{s1_atk:0%}</>, Def <@ba.vup>+{s1_def:0%}</>",
+            "Self and operators under device 's <$ba.barrier>Barrier</> effect ATK<@ba.vup>+{s1_atk:0%}</>, Def <@ba.vup>+{s1_def:0%}</>",
+            "Self and operators under device 's <$ba.barrier>Barrier</> effect ATK<@ba.vup>+{s1_atk:0%}</>, Def <@ba.vup>+{s1_def:0%}</>",
+            "Self and operators under device 's <$ba.barrier>Barrier</> effect ATK<@ba.vup>+{s1_atk:0%}</>, Def <@ba.vup>+{s1_def:0%}</>",
+            "Self and operators under device 's <$ba.barrier>Barrier</> effect ATK<@ba.vup>+{s1_atk:0%}</>, Def <@ba.vup>+{s1_def:0%}</>",
+            "Self and operators under device 's <$ba.barrier>Barrier</> effect ATK<@ba.vup>+{s1_atk:0%}</>, Def <@ba.vup>+{s1_def:0%}</>",
+            "Self and operators under device 's <$ba.barrier>Barrier</> effect ATK<@ba.vup>+{s1_atk:0%}</>, Def <@ba.vup>+{s1_def:0%}</>",
+            "Self and operators under device 's <$ba.barrier>Barrier</> effect ATK<@ba.vup>+{s1_atk:0%}</>, Def <@ba.vup>+{s1_def:0%}</>"
+        ]
+    },
+    "skchr_cathy_2": {
+        "name": "战火淬炼",
+        "desc": [
+            "Stop attacking, Max HP <@ba.vup>+{max_hp:0%}</>, DEF<@ba.vup>+{def:0%}</>, Device recover <$ba.barrier>Barrier</> equal to <@ba.vup>{overwrite_ratio:0%}</> of Catherine Max HP every second instead (cannot exceed talent limit)",
+            "Stop attacking, Max HP <@ba.vup>+{max_hp:0%}</>, DEF<@ba.vup>+{def:0%}</>, Device recover <$ba.barrier>Barrier</> equal to <@ba.vup>{overwrite_ratio:0%}</> of Catherine Max HP every second instead (cannot exceed talent limit)",
+            "Stop attacking, Max HP <@ba.vup>+{max_hp:0%}</>, DEF<@ba.vup>+{def:0%}</>, Device recover <$ba.barrier>Barrier</> equal to <@ba.vup>{overwrite_ratio:0%}</> of Catherine Max HP every second instead (cannot exceed talent limit)",
+            "Stop attacking, Max HP <@ba.vup>+{max_hp:0%}</>, DEF<@ba.vup>+{def:0%}</>, Device recover <$ba.barrier>Barrier</> equal to <@ba.vup>{overwrite_ratio:0%}</> of Catherine Max HP every second instead (cannot exceed talent limit)",
+            "Stop attacking, Max HP <@ba.vup>+{max_hp:0%}</>, DEF<@ba.vup>+{def:0%}</>, Device recover <$ba.barrier>Barrier</> equal to <@ba.vup>{overwrite_ratio:0%}</> of Catherine Max HP every second instead (cannot exceed talent limit)",
+            "Stop attacking, Max HP <@ba.vup>+{max_hp:0%}</>, DEF<@ba.vup>+{def:0%}</>, Device recover <$ba.barrier>Barrier</> equal to <@ba.vup>{overwrite_ratio:0%}</> of Catherine Max HP every second instead (cannot exceed talent limit)",
+            "Stop attacking, Max HP <@ba.vup>+{max_hp:0%}</>, DEF<@ba.vup>+{def:0%}</>, Device recover <$ba.barrier>Barrier</> equal to <@ba.vup>{overwrite_ratio:0%}</> of Catherine Max HP every second instead (cannot exceed talent limit)",
+            "Stop attacking, Max HP <@ba.vup>+{max_hp:0%}</>, DEF<@ba.vup>+{def:0%}</>, Device recover <$ba.barrier>Barrier</> equal to <@ba.vup>{overwrite_ratio:0%}</> of Catherine Max HP every second instead (cannot exceed talent limit)",
+            "Stop attacking, Max HP <@ba.vup>+{max_hp:0%}</>, DEF<@ba.vup>+{def:0%}</>, Device recover <$ba.barrier>Barrier</> equal to <@ba.vup>{overwrite_ratio:0%}</> of Catherine Max HP every second instead (cannot exceed talent limit)",
+            "Stop attacking, Max HP <@ba.vup>+{max_hp:0%}</>, DEF<@ba.vup>+{def:0%}</>, Device recover <$ba.barrier>Barrier</> equal to <@ba.vup>{overwrite_ratio:0%}</> of Catherine Max HP every second instead (cannot exceed talent limit)"
+        ]
+    },
+    "skchr_bobb_1": {
+        "name": "非和平劝说",
+        "desc": [
+            "The next attack deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and deal <@ba.vup>{ep_damage_ratio:0%}</> ATK as <$ba.dt.burning2>Burn Damage</>, priortize target that not under Element burst effect",
+            "The next attack deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and deal <@ba.vup>{ep_damage_ratio:0%}</> ATK as <$ba.dt.burning2>Burn Damage</>, priortize target that not under Element burst effect",
+            "The next attack deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and deal <@ba.vup>{ep_damage_ratio:0%}</> ATK as <$ba.dt.burning2>Burn Damage</>, priortize target that not under Element burst effect",
+            "The next attack deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and deal <@ba.vup>{ep_damage_ratio:0%}</> ATK as <$ba.dt.burning2>Burn Damage</>, priortize target that not under Element burst effect",
+            "The next attack deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and deal <@ba.vup>{ep_damage_ratio:0%}</> ATK as <$ba.dt.burning2>Burn Damage</>, priortize target that not under Element burst effect",
+            "The next attack deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and deal <@ba.vup>{ep_damage_ratio:0%}</> ATK as <$ba.dt.burning2>Burn Damage</>, priortize target that not under Element burst effect",
+            "The next attack deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and deal <@ba.vup>{ep_damage_ratio:0%}</> ATK as <$ba.dt.burning2>Burn Damage</>, priortize target that not under Element burst effect",
+            "The next attack deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and deal <@ba.vup>{ep_damage_ratio:0%}</> ATK as <$ba.dt.burning2>Burn Damage</>, priortize target that not under Element burst effect",
+            "The next attack deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and deal <@ba.vup>{ep_damage_ratio:0%}</> ATK as <$ba.dt.burning2>Burn Damage</>, priortize target that not under Element burst effect",
+            "The next attack deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and deal <@ba.vup>{ep_damage_ratio:0%}</> ATK as <$ba.dt.burning2>Burn Damage</>, priortize target that not under Element burst effect"
+        ]
+    },
+    "skchr_bobb_2": {
+        "name": "“此路不通”",
+        "desc": [
+            "Stop attacking and burn the ground on enemy location. Ground enemies in area recieve <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage and <@ba.vup>{attack@ep_damage_ratio:0%}</> ATK as <$ba.dt.burning2>Burn damage</> per second",
+            "Stop attacking and burn the ground on enemy location. Ground enemies in area recieve <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage and <@ba.vup>{attack@ep_damage_ratio:0%}</> ATK as <$ba.dt.burning2>Burn damage</> per second",
+            "Stop attacking and burn the ground on enemy location. Ground enemies in area recieve <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage and <@ba.vup>{attack@ep_damage_ratio:0%}</> ATK as <$ba.dt.burning2>Burn damage</> per second",
+            "Stop attacking and burn the ground on enemy location. Ground enemies in area recieve <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage and <@ba.vup>{attack@ep_damage_ratio:0%}</> ATK as <$ba.dt.burning2>Burn damage</> per second",
+            "Stop attacking and burn the ground on enemy location. Ground enemies in area recieve <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage and <@ba.vup>{attack@ep_damage_ratio:0%}</> ATK as <$ba.dt.burning2>Burn damage</> per second",
+            "Stop attacking and burn the ground on enemy location. Ground enemies in area recieve <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage and <@ba.vup>{attack@ep_damage_ratio:0%}</> ATK as <$ba.dt.burning2>Burn damage</> per second",
+            "Stop attacking and burn the ground on enemy location. Ground enemies in area recieve <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage and <@ba.vup>{attack@ep_damage_ratio:0%}</> ATK as <$ba.dt.burning2>Burn damage</> per second",
+            "Stop attacking and burn the ground on enemy location. Ground enemies in area recieve <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage and <@ba.vup>{attack@ep_damage_ratio:0%}</> ATK as <$ba.dt.burning2>Burn damage</> per second",
+            "Stop attacking and burn the ground on enemy location. Ground enemies in area recieve <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage and <@ba.vup>{attack@ep_damage_ratio:0%}</> ATK as <$ba.dt.burning2>Burn damage</> per second",
+            "Stop attacking and burn the ground on enemy location. Ground enemies in area recieve <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage and <@ba.vup>{attack@ep_damage_ratio:0%}</> ATK as <$ba.dt.burning2>Burn damage</> per second"
+        ]
     }
 }

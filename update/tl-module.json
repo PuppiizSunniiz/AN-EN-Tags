@@ -1,1 +1,178 @@
-{}
+{
+    "uniequip_002_skadi2": [
+        [
+            {
+                "name": "Ancient Kin",
+                "EN": "Can use a Seaborn that lasts for 25 seconds. The Seaborn's Attack Range is regarded as an extension of this unit's Attack Range",
+                "CN": "可以使用一个持续25秒的海嗣，海嗣的攻击范围视为自身攻击范围的延伸",
+                "mod": "可以使用一个持续28秒的海嗣，海嗣的攻击范围视为自身攻击范围的延伸，海嗣的再部署时间-3秒",
+                "upgradeDescription": ""
+            }
+        ],
+        [
+            {
+                "name": "Ancient Kin",
+                "EN": "Can use a Seaborn that lasts for 25 seconds. The Seaborn's Attack Range is regarded as an extension of this unit's Attack Range",
+                "CN": "可以使用一个持续25秒的海嗣，海嗣的攻击范围视为自身攻击范围的延伸",
+                "mod": "可以使用一个持续30秒的海嗣，海嗣的攻击范围视为自身攻击范围的延伸，海嗣的再部署时间-5秒",
+                "upgradeDescription": ""
+            }
+        ]
+    ],
+    "uniequip_002_cetsyr": [
+        [
+            {
+                "name": "过往尘埃",
+                "CN": "魔王周围持续围绕3枚“微尘”，“微尘”碰撞友方干员时，消失并使该干员受到魔王特性效果提升至1.5倍，持续6秒，消失的“微尘”在6秒后重生",
+                "mod": "魔王周围持续围绕3枚“微尘”，“微尘”碰撞友方干员时，消失并使该干员受到魔王特性效果提升至1.6倍，持续6秒，消失的“微尘”在6秒后重生，干员受到“微尘”效果影响时立刻恢复相当于魔王20%攻击力的生命值",
+                "upgradeDescription": ""
+            }
+        ],
+        [
+            {
+                "name": "过往尘埃",
+                "CN": "魔王周围持续围绕3枚“微尘”，“微尘”碰撞友方干员时，消失并使该干员受到魔王特性效果提升至1.5倍，持续6秒，消失的“微尘”在6秒后重生",
+                "mod": "魔王周围持续围绕3枚“微尘”，“微尘”碰撞友方干员时，消失并使该干员受到魔王特性效果提升至1.6倍，持续6秒，消失的“微尘”在6秒后重生，干员受到“微尘”效果影响时立刻恢复相当于魔王30%攻击力的生命值",
+                "upgradeDescription": ""
+            }
+        ]
+    ],
+    "uniequip_002_sora": [
+        [
+            {
+                "name": "Encore",
+                "EN": "Has a 50% chance to immediately restore Skill Point by 50% of Max Skill Points when the skill ends",
+                "CN": "技能结束后，50%几率立即回复50%的最大技力",
+                "mod": "技能结束后，60%几率立即回复50%的最大技力",
+                "upgradeDescription": ""
+            }
+        ],
+        [
+            {
+                "name": "Encore",
+                "EN": "Has a 50% chance to immediately restore Skill Point by 50% of Max Skill Points when the skill ends",
+                "CN": "技能结束后，50%几率立即回复50%的最大技力",
+                "mod": "技能结束后，60%几率立即回复60%的最大技力",
+                "upgradeDescription": ""
+            }
+        ]
+    ],
+    "uniequip_002_heidi": [
+        [
+            {
+                "name": "Crafty Rebel",
+                "EN": "When Skill 1 is equipped, allies within range gain +5% ATK; when Skill 2 is equipped, allies within range gain +5% DEF",
+                "CN": "装备技能1时，攻击范围内友方单位攻击力+5%；装备技能2时，攻击范围内友方单位防御力+5%",
+                "mod": "装备技能1时，攻击范围内友方单位攻击力+7%；装备技能2时，攻击范围内友方单位防御力+7%",
+                "upgradeDescription": ""
+            },
+            {
+                "name": "Crafty Rebel",
+                "EN": "When Skill 1 is equipped, allies within range gain +6%<@ba.talpu>(+1%)</> ATK; when Skill 2 is equipped, allies within range gain +6%<@ba.talpu>(+1%)</> DEF",
+                "CN": "装备技能1时，攻击范围内友方单位攻击力+6%<@ba.talpu>(+1%)</>；装备技能2时，攻击范围内友方单位防御力+6%<@ba.talpu>(+1%)</>",
+                "mod": "装备技能1时，攻击范围内友方单位攻击力+8%<@ba.talpu>(+1%)</>；装备技能2时，攻击范围内友方单位防御力+8%<@ba.talpu>(+1%)</>",
+                "upgradeDescription": ""
+            }
+        ],
+        [
+            {
+                "name": "Crafty Rebel",
+                "EN": "When Skill 1 is equipped, allies within range gain +5% ATK; when Skill 2 is equipped, allies within range gain +5% DEF",
+                "CN": "装备技能1时，攻击范围内友方单位攻击力+5%；装备技能2时，攻击范围内友方单位防御力+5%",
+                "mod": "装备技能1时，攻击范围内友方单位攻击力+8%；装备技能2时，攻击范围内友方单位防御力+8%",
+                "upgradeDescription": ""
+            },
+            {
+                "name": "Crafty Rebel",
+                "EN": "When Skill 1 is equipped, allies within range gain +6%<@ba.talpu>(+1%)</> ATK; when Skill 2 is equipped, allies within range gain +6%<@ba.talpu>(+1%)</> DEF",
+                "CN": "装备技能1时，攻击范围内友方单位攻击力+6%<@ba.talpu>(+1%)</>；装备技能2时，攻击范围内友方单位防御力+6%<@ba.talpu>(+1%)</>",
+                "mod": "装备技能1时，攻击范围内友方单位攻击力+9%<@ba.talpu>(+1%)</>；装备技能2时，攻击范围内友方单位防御力+9%<@ba.talpu>(+1%)</>",
+                "upgradeDescription": ""
+            }
+        ]
+    ],
+    "uniequip_002_cathy": [
+        [
+            {
+                "name": "定向支援信号",
+                "CN": "携带3个支援装置（最多部署2个），使一名干员获得相当于凯瑟琳生命上限20%的<$ba.barrier>屏障</>（若目标最近5秒内未受攻击，则每秒补充相当于凯瑟琳生命上限6%的<$ba.barrier>屏障</>，不超过初始上限），装置效果不叠加",
+                "mod": "携带3个支援装置（最多部署2个），使一名干员获得相当于凯瑟琳生命上限25%的<$ba.barrier>屏障</>（若目标最近5秒内未受攻击，则每秒补充相当于凯瑟琳生命上限6%的<$ba.barrier>屏障</>，不超过初始上限），装置效果不叠加",
+                "upgradeDescription": ""
+            },
+            {
+                "name": "定向支援信号",
+                "CN": "携带3个支援装置（最多部署2个），使一名干员获得相当于凯瑟琳生命上限22%<@ba.talpu>（+2%）</>的<$ba.barrier>屏障</>（若目标最近5秒内未受攻击，则每秒补充相当于凯瑟琳生命上限6%的<$ba.barrier>屏障</>，不超过初始上限），装置效果不叠加",
+                "mod": "携带3个支援装置（最多部署2个），使一名干员获得相当于凯瑟琳生命上限27%<@ba.talpu>（+2%）</>的<$ba.barrier>屏障</>（若目标最近5秒内未受攻击，则每秒补充相当于凯瑟琳生命上限6%的<$ba.barrier>屏障</>，不超过初始上限），装置效果不叠加",
+                "upgradeDescription": ""
+            }
+        ],
+        [
+            {
+                "name": "定向支援信号",
+                "CN": "携带3个支援装置（最多部署2个），使一名干员获得相当于凯瑟琳生命上限20%的<$ba.barrier>屏障</>（若目标最近5秒内未受攻击，则每秒补充相当于凯瑟琳生命上限6%的<$ba.barrier>屏障</>，不超过初始上限），装置效果不叠加",
+                "mod": "携带3个支援装置（最多部署2个），使一名干员获得相当于凯瑟琳生命上限28%的<$ba.barrier>屏障</>（若目标最近5秒内未受攻击，则每秒补充相当于凯瑟琳生命上限6%的<$ba.barrier>屏障</>，不超过初始上限），装置效果不叠加",
+                "upgradeDescription": ""
+            },
+            {
+                "name": "定向支援信号",
+                "CN": "携带3个支援装置（最多部署2个），使一名干员获得相当于凯瑟琳生命上限22%<@ba.talpu>（+2%）</>的<$ba.barrier>屏障</>（若目标最近5秒内未受攻击，则每秒补充相当于凯瑟琳生命上限6%的<$ba.barrier>屏障</>，不超过初始上限），装置效果不叠加",
+                "mod": "携带3个支援装置（最多部署2个），使一名干员获得相当于凯瑟琳生命上限30%<@ba.talpu>（+2%）</>的<$ba.barrier>屏障</>（若目标最近5秒内未受攻击，则每秒补充相当于凯瑟琳生命上限6%的<$ba.barrier>屏障</>，不超过初始上限），装置效果不叠加",
+                "upgradeDescription": ""
+            }
+        ]
+    ],
+    "uniequip_003_ironmn": [
+        [
+            {
+                "name": "Battlefield Engineer",
+                "EN": "Can carry 3 <Support Devices> (deploy up to 2), with different effects depending on Skill",
+                "CN": "可以携带3个<支援装置>(最多可部署2个)，效果根据技能改变而改变",
+                "mod": "可以携带3个<支援装置>(最多可部署2个)，效果根据技能改变而改变，自身装置天赋生效的干员攻击速度+4（此效果不受技能影响）",
+                "upgradeDescription": ""
+            }
+        ],
+        [
+            {
+                "name": "Battlefield Engineer",
+                "EN": "Can carry 3 <Support Devices> (deploy up to 2), with different effects depending on Skill",
+                "CN": "可以携带3个<支援装置>(最多可部署2个)，效果根据技能改变而改变",
+                "mod": "可以携带3个<支援装置>(最多可部署2个)，效果根据技能改变而改变，自身装置天赋生效的干员攻击速度+6（此效果不受技能影响）",
+                "upgradeDescription": ""
+            }
+        ]
+    ],
+    "uniequip_003_horn": [
+        [
+            {
+                "name": "Bloodbath",
+                "EN": "Instead of retreating when defeated, recover HP to max and gain -50% Max HP, +18 ASPD, and +18% DEF (triggers once per deployment)",
+                "CN": "被击倒时不撤退，恢复所有生命且生命上限-50%，攻击速度+18、防御力+18%（单次部署只触发一次）",
+                "mod": "攻击速度+5、防御力+5%，被击倒时不撤退，恢复所有生命且生命上限-50%，攻击速度改为+20、防御力改为+20%（单次部署只触发一次）",
+                "upgradeDescription": ""
+            },
+            {
+                "name": "Bloodbath",
+                "EN": "Instead of retreating when defeated, recover HP to max and gain -50% Max HP, +21<@ba.talpu>(+3)</> ASPD, and +21%<@ba.talpu>(+3%)</> DEF (triggers once per deployment)",
+                "CN": "被击倒时不撤退，恢复所有生命且生命上限-50%，攻击速度+21<@ba.talpu>（+3）</>、防御力+21%<@ba.talpu>（+3%）</>（单次部署只触发一次）",
+                "mod": "攻击速度+5、防御力+5%，被击倒时不撤退，恢复所有生命且生命上限-50%，攻击速度改为+23<@ba.talpu>（+3）</>、防御力改为+23%<@ba.talpu>（+3%）</>（单次部署只触发一次）",
+                "upgradeDescription": ""
+            }
+        ],
+        [
+            {
+                "name": "Bloodbath",
+                "EN": "Instead of retreating when defeated, recover HP to max and gain -50% Max HP, +18 ASPD, and +18% DEF (triggers once per deployment)",
+                "CN": "被击倒时不撤退，恢复所有生命且生命上限-50%，攻击速度+18、防御力+18%（单次部署只触发一次）",
+                "mod": "攻击速度+8、防御力+8%，被击倒时不撤退，恢复所有生命且生命上限-50%，攻击速度改为+22、防御力改为+22%（单次部署只触发一次）",
+                "upgradeDescription": ""
+            },
+            {
+                "name": "Bloodbath",
+                "EN": "Instead of retreating when defeated, recover HP to max and gain -50% Max HP, +21<@ba.talpu>(+3)</> ASPD, and +21%<@ba.talpu>(+3%)</> DEF (triggers once per deployment)",
+                "CN": "被击倒时不撤退，恢复所有生命且生命上限-50%，攻击速度+21<@ba.talpu>（+3）</>、防御力+21%<@ba.talpu>（+3%）</>（单次部署只触发一次）",
+                "mod": "攻击速度+8、防御力+8%，被击倒时不撤退，恢复所有生命且生命上限-50%，攻击速度改为+25<@ba.talpu>（+3）</>、防御力改为+25%<@ba.talpu>（+3%）</>（单次部署只触发一次）",
+                "upgradeDescription": ""
+            }
+        ]
+    ]
+}

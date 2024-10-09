@@ -44,10 +44,10 @@
             ""
         ] 
     },
-    "skchr_ABCDEF_1": { # Laios 1
+    "skchr_ABCDEF_X": {
         "name": "",
         "desc": [
-            "While HP is above {}, this unit gains <$ba.strong>Vigor</>, increasing ATK by {}. When boss enemy appears for the first time, Laios becomes unable to attack for 15 seconds",
+            "",
             "",
             "",
             "",
@@ -59,10 +59,10 @@
             ""
         ] 
     },
-    "skchr_ABCDEF_2": { # Laios 2
+    "skchr_ABCDEF_X": {
         "name": "",
         "desc": [
-            "Stops attacking and <$ba.tremble>frigten</> blocked enemies, deal {} of ATK as Physical Damage after skill end",
+            "",
             "",
             "",
             "",
@@ -74,10 +74,10 @@
             ""
         ] 
     },
-    "skchr_ABCDEF_1": { #Chilchuck 1
+    "skchr_ABCDEF_X": {
         "name": "",
         "desc": [
-            "Stops attacking and recovers random amount {} of DP after skill end",
+            "",
             "",
             "",
             "",
@@ -89,40 +89,10 @@
             ""
         ] 
     },
-    "skchr_ABCDEF_2": { #Chilchuck 2
+    "skchr_ABCDEF_X": {
         "name": "",
         "desc": [
-            "Gain {} physical Dodge, ASPD +{}, each attack grants {cost} DP",
             "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ] 
-    },
-    "skchr_ABCDEF_1": { #Senshi 1
-        "name": "",
-        "desc": [
-            "Starts cooking and stops attacking for <@ba.vdown>{duration}</> seconds. After finishing cooking heals ally for {} and gain one of the following effect: </br>ATK {}, ASPD {}, Max HP {}",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ] 
-    },
-    "skchr_ABCDEF_2": { #Senshi 2
-        "name": "",
-        "desc": [
-            "Starts cooking and stops attacking for <@ba.vdown>{duration}</> seconds. While cooking nearby allies recover {} HP every second. After finishing cooking heal all allies within a certain range by {} and recover {} MP ",
             "",
             "",
             "",

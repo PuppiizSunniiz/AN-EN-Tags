@@ -1,8 +1,11 @@
 {
-    "": {   # Chilchuck mod
-        "en": "Has <@ba.kw>reduced</> Redeployment Time, can use ranged attacks and is less likely to be targeted by enemies",
-        "color": "extra",
-        "note" : "Chilchuck Mod"
+    "不攻击，持续恢复范围内所有友军<@ba.kw>生命</>（每秒恢复相当于自身攻击力10%的生命），自身不受<$ba.inspire>鼓舞</>影响": { // bard mod
+        "en": "Does not attack but continuously restores the <@ba.kw>HP</> of all allies within range (the HP restored per second is equal to 10% of self ATK). Self is unaffected by <$ba.inspire>Inspiration</>. If there are 2 or more operators in Attack Range, ATK+8%",
+        "color": "heal"
+    },
+    "不阻挡敌人时优先<@ba.kw>远程群体</>物理攻击": { // horn mod Y
+        "en": "When not blocking enemies, ASPD +10, prioritizes dealing <@ba.kw>ranged AoE</> Physical damage",
+        "color": "physical"
     }
 }
 

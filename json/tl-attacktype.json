@@ -711,6 +711,31 @@
             "en": "Less likely to be targeted by enemies ",
             "color": "extra",
             "note": "Agent mods age-x"
+        },
+        "能够阻挡一个敌人，攻击造成<@ba.kw>真实伤害</>": {
+            "en": "Can block enemy, attack deals <@ba.kw>True damage</>.",
+            "color": "extra",
+            "note": "Vina Victoria 's Token (Golden Vow)"
+        },
+        "不会受到攻击": {
+            "en": "Does not attack",
+            "color": "common",
+            "note": "Catherine 's Token (Crawler Protection Unit)"
+        },
+        "攻击范围内存在2名及以上其他干员时，攻击力<@ba.kw>+8%</>（不受技能影响）": {
+            "en": "When there are 2 or more operators in Attack Range, ATK<@ba.kw>+8%</> (does not effected by skills)",
+            "color": "common",
+            "note": "new mods bar-x Bard"
+        },
+        "<支援装置>的再部署时间<@ba.kw>减少</>": {
+            "en": "&lt;Support Devices&gt; Redeployment Time <@ba.kw>reduced</>",
+            "color": "extra",
+            "note": "new mods cra-y Artificer"
+        },
+        "不阻挡敌人时优先<@ba.kw>远程群体</>物理攻击且攻击速度<@ba.vup>+10</>": {
+            "en": "When not blocking enemies, prioritizes dealing <@ba.kw>ranged AoE</> Physical damage and ASPD<@ba.vup>+10</>",
+            "color": "physical",
+            "note": "new mods for-y Fortress"
         }
     },
     "parts": [

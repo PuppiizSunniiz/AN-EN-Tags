@@ -7363,5 +7363,101 @@
                 "desc": "Def+10% , increases healing amount by 10%"
             }
         ]
+    ],
+	"char_1019_siege2": [
+        [
+            {
+                "name": "诸王的叹息",
+                "descCN": "自身与周围8格友方单位受到的物理伤害减少12%，且此范围内每个友方单位使维娜攻击力+3%",
+                "desc": "Reduce Physical damage recieved by self and ally within 8 surrounding tiles by 12% and each ally increase Vina ATK by 3%"
+            },
+            {
+                "name": "诸王的叹息",
+                "descCN": "自身与周围8格友方单位受到的物理伤害减少14%<@ba.talpu>（+2%）</>，且此范围内每个友方单位使维娜攻击力+4%<@ba.talpu>（+1%）</>",
+                "desc": "Reduce Physical damage recieved by self and ally within 8 surrounding tiles by 14%<@ba.talpu>(+2%)</> and each ally increase Vina ATK by 4%<@ba.talpu>(+1%)</>"
+            },
+            {
+                "name": "诸王的叹息",
+                "descCN": "自身与周围8格友方单位受到的物理伤害减少20%，且此范围内每个友方单位使维娜攻击力+5%",
+                "desc": "Reduce Physical damage recieved by self and ally within 8 surrounding tiles by 20% and each ally increase Vina ATK by 5%"
+            },
+            {
+                "name": "诸王的叹息",
+                "descCN": "自身与周围8格友方单位受到的物理伤害减少22%<@ba.talpu>（+2%）</>，且此范围内每个友方单位使维娜攻击力+6%<@ba.talpu>（+1%）</>",
+                "desc": "Reduce Physical damage recieved by self and ally within 8 surrounding tiles by 22%<@ba.talpu>(+2%)</> and each ally increase Vina ATK by 6%<@ba.talpu>(+1%)</>"
+            }
+        ],
+        [
+            {
+                "name": "无拘的锋芒",
+                "descCN": "对每个敌人首次造成伤害时，使其<$ba.tremble>战栗</>4秒",
+                "desc": "The first hit on each enemy <$ba.tremble>Frighten</> the target for 4 seconds"
+            },
+            {
+                "name": "无拘的锋芒",
+                "descCN": "对每个敌人首次造成伤害时，使其<$ba.tremble>战栗</>5<@ba.talpu>（+1）</>秒",
+                "desc": "The first hit on each enemy <$ba.tremble>Frighten</> the target for 5<@ba.talpu>(+1)</> seconds"
+            }
+        ]
+    ],
+    "char_4162_cathy": [
+        [
+            {
+                "name": "定向支援信号",
+                "descCN": "携带2个支援装置（最多部署2个），使一名干员获得相当于凯瑟琳生命上限10%的<$ba.barrier>屏障</>（若目标最近5秒内未受攻击，则每秒补充相当于凯瑟琳生命上限6%的<$ba.barrier>屏障</>，不超过初始上限），装置效果不叠加",
+                "desc": "Carries 2 Support Devices (deploy up to 2). Support Devices grant a <$ba.barrier>Barrier</> equal to 10% of Catherine Max HP(If target hasn't been attacked for 5 seconds, restores <$ba.barrier>Barrier</> equal to 6% of Catherine Max HP every second up to original amount, device effect does not stack)"
+            },
+            {
+                "name": "定向支援信号",
+                "descCN": "携带2个支援装置（最多部署2个），使一名干员获得相当于凯瑟琳生命上限12%<@ba.talpu>（+2%）</>的<$ba.barrier>屏障</>（若目标最近5秒内未受攻击，则每秒补充相当于凯瑟琳生命上限6%的<$ba.barrier>屏障</>，不超过初始上限），装置效果不叠加",
+                "desc": "Carries 2 Support Devices (deploy up to 2). Support Devices grant a <$ba.barrier>Barrier</> equal to 12%<@ba.talpu>(+2%)</> of Catherine Max HP(If target hasn't been attacked for 5 seconds, restores <$ba.barrier>Barrier</> equal to 6% of Catherine Max HP every second up to original amount, device effect does not stack)"
+            },
+            {
+                "name": "定向支援信号",
+                "descCN": "携带3个支援装置（最多部署2个），使一名干员获得相当于凯瑟琳生命上限15%的<$ba.barrier>屏障</>（若目标最近5秒内未受攻击，则每秒补充相当于凯瑟琳生命上限6%的<$ba.barrier>屏障</>，不超过初始上限），装置效果不叠加",
+                "desc": "Carries 3 Support Devices (deploy up to 2). Support Devices grant a <$ba.barrier>Barrier</> equal to 15% of Catherine Max HP(If target hasn't been attacked for 5 seconds, restores <$ba.barrier>Barrier</> equal to 6% of Catherine Max HP every second up to original amount, device effect does not stack)"
+            },
+            {
+                "name": "定向支援信号",
+                "descCN": "携带3个支援装置（最多部署2个），使一名干员获得相当于凯瑟琳生命上限17%<@ba.talpu>（+2%）</>的<$ba.barrier>屏障</>（若目标最近5秒内未受攻击，则每秒补充相当于凯瑟琳生命上限6%的<$ba.barrier>屏障</>，不超过初始上限），装置效果不叠加",
+                "desc": "Carries 3 Support Devices (deploy up to 2). Support Devices grant a <$ba.barrier>Barrier</> equal to 17%<@ba.talpu>(+2%)</> of Catherine Max HP(If target hasn't been attacked for 5 seconds, restores <$ba.barrier>Barrier</> equal to 6% of Catherine Max HP every second up to original amount, device effect does not stack)"
+            },
+            {
+                "name": "定向支援信号",
+                "descCN": "携带3个支援装置（最多部署2个），使一名干员获得相当于凯瑟琳生命上限20%的<$ba.barrier>屏障</>（若目标最近5秒内未受攻击，则每秒补充相当于凯瑟琳生命上限6%的<$ba.barrier>屏障</>，不超过初始上限），装置效果不叠加",
+                "desc": "Carries 3 Support Devices (deploy up to 2). Support Devices grant a <$ba.barrier>Barrier</> equal to 20% of Catherine Max HP(If target hasn't been attacked for 5 seconds, restores <$ba.barrier>Barrier</> equal to 6% of Catherine Max HP every second up to original amount, device effect does not stack)"
+            },
+            {
+                "name": "定向支援信号",
+                "descCN": "携带3个支援装置（最多部署2个），使一名干员获得相当于凯瑟琳生命上限22%<@ba.talpu>（+2%）</>的<$ba.barrier>屏障</>（若目标最近5秒内未受攻击，则每秒补充相当于凯瑟琳生命上限6%的<$ba.barrier>屏障</>，不超过初始上限），装置效果不叠加",
+                "desc": "Carries 3 Support Devices (deploy up to 2). Support Devices grant a <$ba.barrier>Barrier</> equal to 22%<@ba.talpu>(+2%)</> of Catherine Max HP(If target hasn't been attacked for 5 seconds, restores <$ba.barrier>Barrier</> equal to 6% of Catherine Max HP every second up to original amount, device effect does not stack)"
+            }
+        ],
+        [],
+        []
+    ],
+    "char_487_bobb": [
+        [
+            {
+                "name": "焦点诱导",
+                "descCN": "对每个敌人首次攻击时，使其在接下来的5秒内每秒受到相当于攻击力10%的<$ba.dt.burning2>灼燃损伤</>",
+                "desc": "The first hit on each enemy deal 10% of ATK as <$ba.dt.burning2>Burn damage</> for 5 seconds"
+            },
+            {
+                "name": "焦点诱导",
+                "descCN": "对每个敌人首次攻击时，使其在接下来的5秒内每秒受到相当于攻击力12%<@ba.talpu>（+2%）</>的<$ba.dt.burning2>灼燃损伤</>",
+                "desc": "The first hit on each enemy deal 12%<@ba.talpu>(+2%)</> of ATK as <$ba.dt.burning2>Burn damage</> for 5 seconds"
+            },
+            {
+                "name": "焦点诱导",
+                "descCN": "对每个敌人首次攻击时，使其在接下来的5秒内每秒受到相当于攻击力16%的<$ba.dt.burning2>灼燃损伤</>",
+                "desc": "The first hit on each enemy deal 16% of ATK as <$ba.dt.burning2>Burn damage</> for 5 seconds"
+            },
+            {
+                "name": "焦点诱导",
+                "descCN": "对每个敌人首次攻击时，使其在接下来的5秒内每秒受到相当于攻击力18%<@ba.talpu>（+2%）</>的<$ba.dt.burning2>灼燃损伤</>",
+                "desc": "The first hit on each enemy deal 18%<@ba.talpu>(+2%)</> of ATK as <$ba.dt.burning2>Burn damage</> for 5 seconds"
+            }
+        ]
     ]
 }
