@@ -3020,7 +3020,7 @@
                 `
                 <div class="token-details" style='background:#333;margin:2px 0px;padding:2px 10px;height:64px'>
                     <div style ="display:inline-block;margin:0px 2px;background:#222222aa">
-                        <img class='token-image notclickthrough' id='Tokenimage' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${globaltoken}.png' style='width:60px;margin:-0px 0px 0px 0px'>
+                        <img class='token-image notclickthrough' id='Tokenimage' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${globaltoken}.png' style='width:60px;margin:-0px 0px 0px 0px' onerror="this.src='extra/not_found.png';">
                     </div>
                     <div style ="position:absolute;left:80px;top:7px">
                         <div class='stats'>
@@ -3480,13 +3480,14 @@
         var isAmiya
         if(db.handbookInfoEN.handbookDict[opdataFull.id]){
             currStory = db.handbookInfoEN.handbookDict[opdataFull.id]
+            if(opdataFull.id == AmiyaCaster) isAmiya = true
             isEN = true
         }
 
         if(Object.keys(db.charpatchEN.patchChars).includes(opdataFull.id)) {
             currStory = db.handbookInfoEN.handbookDict[AmiyaCaster]
             console.log("Amiya EN")
-            //isAmiya = true // Release once medic coom
+            isAmiya = true // Release once medic coom
             isEN = true
         }
         if(Object.keys(db.charpatch.patchChars).includes(opdataFull.id) && !Object.keys(db.charpatchEN.patchChars).includes(opdataFull.id)){
@@ -3662,108 +3663,105 @@
                             var infoTitle = check.exec(info)
                             if(infoTitle){
                                 var title = db.storytextTL[infoTitle[2]]?db.storytextTL[infoTitle[2]]:infoTitle[2]
-
                                 var content = infoTitle[4]
                                 // console.log(infoTitle)
                                 switch (infoTitle[2]) {
-                                    case "代号": content = opdataFull.appellation;break;
+                                    case "代号": 
+                                        content = opdataFull.appellation;
+                                        break;
                                     case "性别":
-                                    console.log(content)
-                                    content= db.storytextTL[content.trim()]
-                                    if (!content) content = infoTitle[4].trim()
-                                    $("#op-gender").html(`<i class="fas fa-${content.toLowerCase()}"></i> ${content}`)
-                                    ;break;
+                                        console.log(content)
+                                        content= db.storytextTL[content.trim()]
+                                        if (!content) content = infoTitle[4].trim()
+                                        $("#op-gender").html(`<i class="fas fa-${content.toLowerCase()}"></i> ${content}`);
+                                        break;
                                     case "表演经验":
                                     case "出厂时间":
-                                    case "战斗经验": content= db.storytextTL[content.trim()]
-                                    // console.log(infoTitle)
-                                    // console.log("WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
-                                    // console.log(content)
-                                    if (!content){
-                                        var splitnum = infoTitle[4].trim().split("")
-                                        var num = 0
-                                        var count = 0
-                                        var end = ""
-                                        // console.log(splitnum)
-                                        splitnum.forEach(eachnum => {
-                                            // console.log(eachnum)
-                                            // console.log(typeof parseInt(eachnum))
-                                            // console.log(parseInt(eachnum))
-                                            if(typeof db.storytextTL[eachnum] == "number" ){
-                                                console.log(db.storytextTL[eachnum])
-                                                if(db.storytextTL[eachnum]==10 && count==1){
-                                                    num = num*10
+                                    case "战斗经验":
+                                        content= db.storytextTL[content.trim()]
+                                        // console.log(infoTitle)
+                                        // console.log("WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+                                        // console.log(content)
+                                        if (!content){
+                                            var splitnum = infoTitle[4].trim().split("")
+                                            var num = 0
+                                            var count = 0
+                                            var end = ""
+                                            // console.log(splitnum)
+                                            splitnum.forEach(eachnum => {
+                                                // console.log(eachnum)
+                                                // console.log(typeof parseInt(eachnum))
+                                                // console.log(parseInt(eachnum))
+                                                if(typeof db.storytextTL[eachnum] == "number" ){
+                                                    console.log(db.storytextTL[eachnum])
+                                                    if(db.storytextTL[eachnum]==10 && count==1){
+                                                        num = num*10
+                                                    }else{
+                                                        num += db.storytextTL[eachnum]
+                                                    }
+                                                }
+                                                else if(typeof parseInt(eachnum)  == "number" && !isNaN(parseInt(eachnum))){
+                                                    num += parseInt(eachnum)
+                                                }
+                                                else{
+                                                    end = db.storytextTL[eachnum]
+                                                }
+                                                // console.log(num)
+                                                count++
+                                            });
+
+                                            if(num% 1 != 0){
+                                                if(num<1){
+                                                    num = "Half a"
                                                 }else{
-                                                    num += db.storytextTL[eachnum]
+                                                    num = Math.floor(num) +" and a half"
                                                 }
                                             }
-                                            else if(typeof parseInt(eachnum)  == "number" && !isNaN(parseInt(eachnum))){
-                                                num += parseInt(eachnum)
-                                            }
-                                            else{
-                                                end = db.storytextTL[eachnum]
-                                            }
-                                            // console.log(num)
-                                            count++
-                                        });
-
-                                        if(num% 1 != 0){
-                                            if(num<1){
-                                                num = "Half a"
-                                            }else{
-                                                num = Math.floor(num) +" and a half"
-                                            }
-                                        }
-                                        content = `${num} ${end}`
-                                    }
-                                    ;break;
+                                            content = `${num} ${end}`
+                                        };
+                                        break;
 
                                     case "出厂日":
-                                    case "生日":content = db.storytextTL[content.trim()]?db.storytextTL[content.trim()]:BirthdayText(content);break;
+                                    case "生日":
+                                            content = db.storytextTL[content.trim()]?db.storytextTL[content.trim()]:BirthdayText(content);break;
                                     case "矿石病感染情况":
-
-                                    if(db.charastoryTL[opdataFull.id]&&db.charastoryTL[opdataFull.id]["originiumInfection"]&&content){
-
-                                        content = db.charastoryTL[opdataFull.id]["originiumInfection"]
-                                    }else if(content){
-                                        var datasplit = content.split("，")
-                                        // console.log(datasplit)
-                                        var arraycontent = []
-                                        datasplit.forEach(originiumdesc => {
-                                            arraycontent.push(db.storytextTL[originiumdesc]?db.storytextTL[originiumdesc]:originiumdesc)
-                                        });
-                                        content = arraycontent.join(", ")
-                                    }else {
-
-                                        content = db.storytextTL[content.trim()]?db.storytextTL[content.trim()]:content.replace("约","Approximately ");
-                                    }
-
-                                    ;break;
+                                        if(db.charastoryTL[opdataFull.id]&&db.charastoryTL[opdataFull.id]["originiumInfection"]&&content){
+                                            content = db.charastoryTL[opdataFull.id]["originiumInfection"]
+                                        }else if(content){
+                                            var datasplit = content.split("，")
+                                            // console.log(datasplit)
+                                            var arraycontent = []
+                                            datasplit.forEach(originiumdesc => {
+                                                arraycontent.push(db.storytextTL[originiumdesc]?db.storytextTL[originiumdesc]:originiumdesc)
+                                            });
+                                            content = arraycontent.join(", ")
+                                        }else{
+                                            content = db.storytextTL[content.trim()]?db.storytextTL[content.trim()]:content.replace("约","Approximately ");
+                                        };
+                                        break;
                                     default:
-                                    // console.log("WEEI" +titlebefore)
-
+                                        // console.log("WEEI" +titlebefore)
                                         content = db.storytextTL[content.trim()]?db.storytextTL[content.trim()]:content.replace("约","Approximately ");
                                 }
                                 // console.log(title)
                                 titlebefore = title
                                 basicInfoTL.push(`[${title}] ${content}`)
                                 if(content==""){
-                                webTL.push(`<tr><td colspan="2" style="border-top: 1px solid #555;">${title}</td></tr>`)
+                                    webTL.push(`<tr><td colspan="2" style="border-top: 1px solid #555;">${title}</td></tr>`)
                                 }else
-                                webTL.push(`<tr><td>${title}</td><td>${content}</td></tr>`)
+                                    webTL.push(`<tr><td>${title}</td><td>${content}</td></tr>`)
                             }else{
                                 // console.log(info.split("，"))
                                 if(titlebefore =="Originium Infection"&& db.charastoryTL[opdataFull.id] && db.charastoryTL[opdataFull.id]["originiumInfection"]){
                                     content = db.charastoryTL[opdataFull.id]["originiumInfection"]
                                     titlebefore=""
                                     webTL.push(`<tr><td colspan=2>${content}</td> </tr>`)
-                                }else {
+                                }else{
                                     var datasplit = info.split("，")
                                     var content = []
                                     datasplit.forEach(originiumdesc => {
                                         content.push(db.storytextTL[originiumdesc]?db.storytextTL[originiumdesc]:originiumdesc)
                                     });
-
                                     webTL.push(`<tr><td colspan=2>${content.join(", ")}</td> </tr>`)
                                 }
                                 // else{
@@ -3773,62 +3771,60 @@
                             }
                         });
                         textTL.push(`<div class="col-12 ${(islong?"":"col-sm-6")} top-buffer storysplit">
-                        <table class="story-table"><th colspan=2>Basic File</th>${webTL.join("")}</table>
-                        </div>`)
+                                        <table class="story-table"><th colspan=2>Basic File</th>${webTL.join("")}</table>
+                                    </div>`)
                         // textTL.push(basicInfoTL.join("</br>"))
-                        // console.log(basicInfoTL.join("\n"))
-                    ;break;
-                case "Physical Exam" :
-                case "Performance Review":
-                case "综合性能检测结果" :
-                case "综合体检测试" :
-                    var basicInfo = storySection.stories[0].storyText.split("\n")
-                    var basicInfoTL = []
-                    var webTL = []
-                    basicInfo.forEach(info => {
-                        var check = isEN?/(\[)(.*)(\])(.*)/:/(【)(.*)(】)(.*)/
-                        var infoTitle = check.exec(info)
-                        if(infoTitle){
-                            var title = db.storytextTL[infoTitle[2]]?db.storytextTL[infoTitle[2]]:infoTitle[2]
-                            var content = infoTitle[4]
-                            switch (infoTitle[2]) {
-                                case "代号": content = opdataFull.appellation;break;
-                                default: content = db.storytextTL[content.trim()]?db.storytextTL[content.trim()]:content;
+                        // console.log(basicInfoTL.join("\n"));
+                        break;
+                    case "Physical Exam" :
+                    case "Performance Review":
+                    case "综合性能检测结果" :
+                    case "综合体检测试" :
+                        var basicInfo = storySection.stories[0].storyText.split("\n")
+                        var basicInfoTL = []
+                        var webTL = []
+                        basicInfo.forEach(info => {
+                            var check = isEN?/(\[)(.*)(\])(.*)/:/(【)(.*)(】)(.*)/
+                            var infoTitle = check.exec(info)
+                            if(infoTitle){
+                                var title = db.storytextTL[infoTitle[2]]?db.storytextTL[infoTitle[2]]:infoTitle[2]
+                                var content = infoTitle[4]
+                                switch (infoTitle[2]) {
+                                    case "代号": content = opdataFull.appellation;break;
+                                    default: content = db.storytextTL[content.trim()]?db.storytextTL[content.trim()]:content;
+                                }
+                                basicInfoTL.push(`[${title}] ${content}`)
+                                webTL.push(`<tr><td>${title}</td> <td>${content}</td></tr>`)
                             }
-                            basicInfoTL.push(`[${title}] ${content}`)
-                            webTL.push(`<tr><td>${title}</td> <td>${content}</td></tr>`)
-                        }
-                    })
-                    // textTL.push(`<h2>Comprehensive test</h2>${basicInfoTL.join("</br>")}`)
-                    textTL.push(`<div class="col-12 ${(islong?"":"col-sm-6")} top-buffer storysplit">
-                    <table class="story-table">
-                    <th colspan=2>${db.storytextTL[storySection.storyTitle]?db.storytextTL[storySection.storyTitle]:storySection.storyTitle}</th>
-                    ${webTL.join("")}</table>
-                    </div>`)
-                    // console.log(basicInfoTL.join("\n"))
-                    ;break;
-                default:
-                    var currstory
-                    // console.log(storySection.storyTitle)
-                    // console.log(db.charastoryTL[opdataFull.id])
-                    if(db.charastoryTL[opdataFull.id]&&db.charastoryTL[opdataFull.id][storySection.storyTitle])
-                        currStory = db.charastoryTL[opdataFull.id][storySection.storyTitle].split("\n").join("</br>")
-                    else
-                        currStory = (storySection.stories[0].storyText.replace(/■/g,"■ ")).split("\n").join("</br>")
-                    // console.log(currstory)
-                    textTL.push(`
-                    <div class="col-12 top-buffer">
-                    <table class="story-table">
-                    <th colspan=2>${db.storytextTL[storySection.storyTitle]?db.storytextTL[storySection.storyTitle]:storySection.storyTitle}</th>
-                    <tr><td>${currStory}</td></tr></table>
-                    </div>`)
-                    // textTL.push(`<h2>${storySection.storyTitle}</h2>`)
-                    // textTL.push(`</br>`)
-                    // textTL.push()
-                    // console.log(`---------${storySection.storyTitle}-----------`)
-                    // console.log(storySection.stories[0].storyText)
-
-                }
+                        })
+                        // textTL.push(`<h2>Comprehensive test</h2>${basicInfoTL.join("</br>")}`)
+                        textTL.push(`<div class="col-12 ${(islong?"":"col-sm-6")} top-buffer storysplit">
+                                        <table class="story-table">
+                                        <th colspan=2>${db.storytextTL[storySection.storyTitle]?db.storytextTL[storySection.storyTitle]:storySection.storyTitle}</th>
+                                        ${webTL.join("")}</table>
+                                    </div>`)
+                        // console.log(basicInfoTL.join("\n"))
+                        ;break;
+                    default:
+                        var currstory
+                        // console.log(storySection.storyTitle)
+                        // console.log(db.charastoryTL[opdataFull.id])
+                        if(db.charastoryTL[opdataFull.id]&&db.charastoryTL[opdataFull.id][storySection.storyTitle])
+                            currStory = db.charastoryTL[opdataFull.id][storySection.storyTitle].split("\n").join("</br>")
+                        else
+                            currStory = (storySection.stories[0].storyText.replace(/■/g,"■ ")).split("\n").join("</br>")
+                        // console.log(currstory)
+                        textTL.push(`<div class="col-12 top-buffer">
+                                        <table class="story-table">
+                                        <th colspan=2>${db.storytextTL[storySection.storyTitle]?db.storytextTL[storySection.storyTitle]:storySection.storyTitle}</th>
+                                        <tr><td>${currStory}</td></tr></table>
+                                    </div>`)
+                        // textTL.push(`<h2>${storySection.storyTitle}</h2>`)
+                        // textTL.push(`</br>`)
+                        // textTL.push()
+                        // console.log(`---------${storySection.storyTitle}-----------`)
+                        // console.log(storySection.stories[0].storyText)
+                    }
             });
         }
         if(db.charastoryTL[opdataFull.id]&&db.charastoryTL[opdataFull.id]["credit"]) $("#opstorycredits").html(`<div class="btn-infoleft">Trust Translation</div><div class="btn-inforight">${db.charastoryTL[opdataFull.id]["credit"]}</div>`)
@@ -4362,7 +4358,7 @@
         for(i=0;i<opdataFull.talents.length;i++){
             var currTalent = opdataFull.talents[i]
             // if(!db.talentsTL[id])break;
-            var currTalentEN = db.charsEN[charName]?db.charsEN[charName].talents[i]:undefined
+            var currTalentEN = db.charsEN[charName]?db.charsEN[charName].talents[i]:db.charpatchEN.patchChars[charName]?db.charpatchEN.patchChars[charName].talents[i]:undefined
             var currTalentTL = db.talentsTL[id]?db.talentsTL[id][i]:undefined
             // var talentGroup = []
             talentObject.talents[talenttype]=[]
