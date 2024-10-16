@@ -106,6 +106,7 @@
             "char_4147_mitm": "Mitm",
             "char_497_ctable": "Cantabile",
             "char_4017_puzzle": "Puzzle",
+            "char_4144_chilc": "Chilchuck",
             "char_308_swire": "Swire",
             "char_265_sophia": "Whislash",
             "char_4106_bryota": "Bryophyta",
@@ -114,6 +115,7 @@
             "char_131_flameb": "Flamebringer",
             "char_154_morgan": "Morgan",
             "char_508_aguard": "Sharp",
+            "char_4142_laios": "Laios",
             "char_155_tiger": "Indra",
             "char_415_flint": "Flint",
             "char_157_dagda": "Dagda",
@@ -189,6 +191,7 @@
             "char_148_nearl": "Nearl",
             "char_226_hmau": "Hung",
             "char_4109_baslin": "Bassline",
+            "char_4143_sensi": "Senshi",
             "char_144_red": "Projekt Red",
             "char_243_waaifu": "Waai Fu",
             "char_214_kafka": "Kafka",
@@ -229,12 +232,14 @@
             "char_4032_provs": "Proviso",
             "char_4122_grabds": "Grain Buds",
             "char_433_windft": "Windflit",
+            "char_4162_cathy": "Catherine",
             "char_101_sora": "Sora",
             "char_4045_heidi": "Heidi",
             "char_343_tknogi": "Tsukinogi",
             "char_4019_ncdeer": "Nine-Colored Deer",
             "char_492_quercu": "Quercus",
             "char_4102_threye": "Valarqvin",
+            "char_487_bobb": "Bobbing",
             "char_215_mantic": "Manticore",
             "char_478_kirara": "Kirara",
             "char_241_panda": "FEater",
@@ -275,6 +280,7 @@
             "char_4027_heyak": "Ho'olheyak",
             "char_4133_logos": "Logos",
             "char_2015_dusk": "Dusk",
+            "char_4141_marcil": "Marcille",
             "char_472_pasngr": "Passenger",
             "char_426_billro": "Carnelian",
             "char_4080_lin": "Lin",
@@ -335,6 +341,7 @@
             "char_1026_gvial2": "Gavial the Invincible",
             "char_350_surtr": "Surtr",
             "char_4098_vvana": "Viviana",
+            "char_1019_siege2": "Vina Victoria",
             "char_188_helage": "Hellagur",
             "char_4121_zuole": "Zuo Le",
             "char_485_pallas": "Pallas",
@@ -459,6 +466,7 @@
             "Mitm": "char_4147_mitm",
             "Cantabile": "char_497_ctable",
             "Puzzle": "char_4017_puzzle",
+            "Chilchuck": "char_4144_chilc",
             "Swire": "char_308_swire",
             "Whislash": "char_265_sophia",
             "Bryophyta": "char_4106_bryota",
@@ -467,6 +475,7 @@
             "Flamebringer": "char_131_flameb",
             "Morgan": "char_154_morgan",
             "Sharp": "char_508_aguard",
+            "Laios": "char_4142_laios",
             "Indra": "char_155_tiger",
             "Flint": "char_415_flint",
             "Dagda": "char_157_dagda",
@@ -542,6 +551,7 @@
             "Nearl": "char_148_nearl",
             "Hung": "char_226_hmau",
             "Bassline": "char_4109_baslin",
+            "Senshi": "char_4143_sensi",
             "Projekt Red": "char_144_red",
             "Waai Fu": "char_243_waaifu",
             "Kafka": "char_214_kafka",
@@ -581,12 +591,14 @@
             "Proviso": "char_4032_provs",
             "Grain Buds": "char_4122_grabds",
             "Windflit": "char_433_windft",
+            "Catherine": "char_4162_cathy",
             "Sora": "char_101_sora",
             "Heidi": "char_4045_heidi",
             "Tsukinogi": "char_343_tknogi",
             "Nine-Colored Deer": "char_4019_ncdeer",
             "Quercus": "char_492_quercu",
             "Valarqvin": "char_4102_threye",
+            "Bobbing": "char_487_bobb",
             "Manticore": "char_215_mantic",
             "Kirara": "char_478_kirara",
             "FEater": "char_241_panda",
@@ -627,6 +639,7 @@
             "Ho'olheyak": "char_4027_heyak",
             "Logos": "char_4133_logos",
             "Dusk": "char_2015_dusk",
+            "Marcille": "char_4141_marcil",
             "Passenger": "char_472_pasngr",
             "Carnelian": "char_426_billro",
             "Lin": "char_4080_lin",
@@ -687,6 +700,7 @@
             "Gavial the Invincible": "char_1026_gvial2",
             "Surtr": "char_350_surtr",
             "Viviana": "char_4098_vvana",
+            "Vina Victoria": "char_1019_siege2",
             "Hellagur": "char_188_helage",
             "Zuo Le": "char_4121_zuole",
             "Pallas": "char_485_pallas",
@@ -1605,6 +1619,12 @@
             "费用回复",
             "快速复活"
         ],
+        "Chilchuck": [
+            "资深干员",
+            "近战位",
+            "费用回复",
+            "快速复活"
+        ],
         "Swire": [
             "资深干员",
             "近战位",
@@ -1651,6 +1671,12 @@
             "近战位",
             "输出",
             "生存"
+        ],
+        "Laios": [
+            "资深干员",
+            "近战位",
+            "输出",
+            "控场"
         ],
         "Indra": [
             "资深干员",
@@ -2065,6 +2091,12 @@
             "防护",
             "治疗"
         ],
+        "Senshi": [
+            "资深干员",
+            "近战位",
+            "防护",
+            "治疗"
+        ],
         "Projekt Red": [
             "资深干员",
             "近战位",
@@ -2292,6 +2324,12 @@
             "输出",
             "支援"
         ],
+        "Catherine": [
+            "资深干员",
+            "近战位",
+            "防护",
+            "支援"
+        ],
         "Sora": [
             "资深干员",
             "远程位",
@@ -2323,6 +2361,11 @@
             "生存"
         ],
         "Valarqvin": [
+            "资深干员",
+            "远程位",
+            "元素"
+        ],
+        "Bobbing": [
             "资深干员",
             "远程位",
             "元素"
@@ -2554,6 +2597,13 @@
             "远程位",
             "群攻",
             "输出",
+            "控场"
+        ],
+        "Marcille": [
+            "高级资深干员",
+            "远程位",
+            "群攻",
+            "治疗",
             "控场"
         ],
         "Passenger": [
@@ -2926,6 +2976,12 @@
             "输出"
         ],
         "Viviana": [
+            "高级资深干员",
+            "近战位",
+            "输出",
+            "生存"
+        ],
+        "Vina Victoria": [
             "高级资深干员",
             "近战位",
             "输出",

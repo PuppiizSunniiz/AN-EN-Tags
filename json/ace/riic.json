@@ -50,7 +50,7 @@
         "descformat": "When this Operator is assigned to the Control Center, all Trading Posts' order efficiency <@cc.vup>+7%</> (only the most effective one will take effect when assigned Operators have the same skill effect)"
     },
     "control_tra_spd[030]": {
-        "name": "Intelligence Mastermind",
+        "name": "Intel Mastermind",
         "desc": "When stationed at the Command Center, order acquisition efficiency of all Trade Stations +7% (Only highest effect becomes active)",
         "descformat": "When this Operator is assigned to the Control Center, all Trading Posts' order efficiency <@cc.vup>+7%</> (only the most effective one will take effect when assigned Operators have the same skill effect)"
     },
@@ -67,7 +67,7 @@
     "control_upMeetingSpeed[000]": {
         "name": "Worldly Insight",
         "desc": "When stationed at the Command Center, clue collection speed +25%",
-        "descformat": "When this Operator is assigned to the Control Center, clue collection speed <@cc.vup>+25%</>"
+        "descformat": "When this Operator is assigned to the Control Center, clue collection speed <@cc.vup>+25%</> (Only the strongest effect of this type takes place)."
     },
     "control_upMeetingSpeed[100]": {
         "name": "Convergence of Expectations",
@@ -305,9 +305,9 @@
         "descformat": "When this Operator is assigned to the Control Center, all Operators in Dormitories recover <@cc.vup>+0.05</> Morale per hour (strongest effect of the same type applies)"
     },
     "control_train_spd[010]": {
-        "name": "S.W.E.E.P. Director",
+        "name": "S.W.E.E.P. Supervisor",
         "desc": "When stationed at the Command Center and there is an operator being trained in the Training Station, increase the skill training speed by +5% (Only highest effect becomes active)",
-        "descformat": "When this Operator is assigned to the Control Center and there is an operator being trained in the Training Station, increase the skill training speed by <@cc.vup>+5%</> (Only highest effect becomes active)"
+        "descformat": "When this Operator is assigned to the Control Center, if an Operator is conducting Skill Specialization in the Training Room, that Operator's Specialization training speed <@cc.vup>+5%</> (Only the strongest effect of this type takes place)."
     },
     "control_tra_limit&spd[010]": {
         "name": "Master Strategist",
@@ -422,7 +422,7 @@
     "power_rec_spd_P[000]": {
         "name": "'Pleasant Conversation'",
         "desc": "When stationed at a Power Station and Kal'tsit is stationed in the Command Center, drone recovery +5%",
-        "descformat": "When this Operator is assigned to a Power Plant, if <@cc.kw>Kal'tsit</> is assigned to the Control Center, increases the drone recovery rate by <@cc.vup>+5%</>"
+        "descformat": "When this Operator is assigned to a Power Plant, if <@cc.kw>Kal'tsit</> is assigned to the Control Center, increases the drone recovery rate by <@cc.vup>+5%</>."
     },
     "power_rec_spd_P[001]": {
         "name": "Incantation Resonance",
@@ -562,7 +562,7 @@
     "manu_prod_spd_addition[100]": {
         "name": "Routine Cleaning",
         "desc": "When stationed at a Craft Station, production +2% every hour, capping at +20%",
-        "descformat": "When this Operator is assigned to a Factory, productivity <@cc.vup>+2%</> per hour, up to <@cc.vup>+20%</>"
+        "descformat": "When this Operator is assigned to a Factory, productivity per hour <@cc.vup>+2%</>, up to <@cc.vup>+20%</>."
     },
     "manu_prod_spd_reduce[000]": {
         "name": "Blurry Vision",
@@ -790,7 +790,7 @@
         "descformat": "When this Operator is assigned to a Factory, <@cc.kw>Precious Metal</> productivity <@cc.vup>+25%</>, and Morale consumed per hour <@cc.vdown>+0.25</>"
     },
     "manu_formula_spd&cost[001]": {
-        "name": "Clean Fragrance",
+        "name": "Clean Breeze",
         "desc": "When stationed at a Craft Station, increase production of precious metals by +25% and mood reduction per hour +0.25",
         "descformat": "When this Operator is assigned to a Factory, <@cc.kw>Precious Metal</> productivity <@cc.vup>+25%</>, and Morale consumed per hour <@cc.vdown>+0.25</>"
     },
@@ -1382,7 +1382,7 @@
     "workshop_formula_probability[101]": {
         "name": "High Efficiency Recycling",
         "desc": "When stationed at the Synthesis Station and producing elite materials, increase the rate of by-products by 70%",
-        "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>elite materials</>, the production rate of byproduct increases by <@cc.vup>70%</>"
+        "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>elite material</>, the production rate of byproduct increases by <@cc.vup>70%</>"
     },
     "workshop_formula_probability[115]": {
         "name": "Required Course",
@@ -2690,9 +2690,9 @@
         "descformat": "When this Operator is assigned to the Reception Room, if only this Operator is working in the Reception Room, for every <@cc.kw>16</> consecutive Morale spent, a <@cc.kw>Rhine Lab</> clue is <@cc.kw>guaranteed</> next"
     },
     "meet_spd&condChar_mustget[100]": {
-        "name": "Hidden Clue",
+        "name": "Secret Clue",
         "desc": "When stationed at Reception and only self is working, the next clue obtained after continuously spending 16 mood is guaranteed to be a Rhodes Island clue",
-        "descformat": "When this Operator is assigned to the Reception Room, if only this Operator is working in the Reception Room, for every <@cc.kw>16</> consecutive Morale spent, a <@cc.kw>Rhodes Island</> clue is <@cc.kw>guaranteed</> next"
+        "descformat": "When this Operator is assigned to the Reception Room, if only this Operator is working in the Reception Room, for every <@cc.kw>16</> consecutive Morale spent, a <@cc.kw>Rhodes Island Pharmaceuticals</> clue is <@cc.kw>guaranteed</> next."
     },
     "control_dorm_rec[002]": {
         "name": "巡心",
