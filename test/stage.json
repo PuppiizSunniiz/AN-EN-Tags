@@ -19992,6 +19992,14 @@
             "name": "有序清场",
             "Event": "IS#5"
         },
+        "rogue4_2-6": {
+            "stageId": "rogue4_2-6",
+            "levelId": "obt/roguelike/ro4/level_rogue4_2-6.json",
+            "zoneId": "IS#5 Floor 2",
+            "code": "rogue4_2-6",
+            "name": "卡兹瀑布",
+            "Event": "IS#5"
+        },
         "rogue4_3-1": {
             "stageId": "rogue4_3-1",
             "levelId": "obt/roguelike/ro4/level_rogue4_3-1.json",
@@ -20038,6 +20046,14 @@
             "zoneId": "IS#5 Floor 3",
             "code": "rogue4_3-6",
             "name": "盲盒商场",
+            "Event": "IS#5"
+        },
+        "rogue4_3-7": {
+            "stageId": "rogue4_3-7",
+            "levelId": "obt/roguelike/ro4/level_rogue4_3-7.json",
+            "zoneId": "IS#5 Floor 3",
+            "code": "rogue4_3-7",
+            "name": "火力小队",
             "Event": "IS#5"
         },
         "rogue4_4-1": {
@@ -20096,6 +20112,22 @@
             "name": "幽灵城",
             "Event": "IS#5"
         },
+        "rogue4_4-8": {
+            "stageId": "rogue4_4-8",
+            "levelId": "obt/roguelike/ro4/level_rogue4_4-8.json",
+            "zoneId": "IS#5 Floor 4",
+            "code": "rogue4_4-8",
+            "name": "神出鬼没",
+            "Event": "IS#5"
+        },
+        "rogue4_4-9": {
+            "stageId": "rogue4_4-9",
+            "levelId": "obt/roguelike/ro4/level_rogue4_4-9.json",
+            "zoneId": "IS#5 Floor 4",
+            "code": "rogue4_4-9",
+            "name": "混沌",
+            "Event": "IS#5"
+        },
         "rogue4_5-1": {
             "stageId": "rogue4_5-1",
             "levelId": "obt/roguelike/ro4/level_rogue4_5-1.json",
@@ -20152,6 +20184,14 @@
             "name": "残损学院",
             "Event": "IS#5"
         },
+        "rogue4_5-8": {
+            "stageId": "rogue4_5-8",
+            "levelId": "obt/roguelike/ro4/level_rogue4_5-8.json",
+            "zoneId": "IS#5 Floor 5",
+            "code": "rogue4_5-8",
+            "name": "建制",
+            "Event": "IS#5"
+        },
         "rogue4_6-1": {
             "stageId": "rogue4_6-1",
             "levelId": "obt/roguelike/ro4/level_rogue4_6-1.json",
@@ -20166,6 +20206,22 @@
             "zoneId": "IS#5 Floor 6",
             "code": "rogue4_6-2",
             "name": "神圣的渴求",
+            "Event": "IS#5"
+        },
+        "rogue4_7-1": {
+            "stageId": "rogue4_7-1",
+            "levelId": "obt/roguelike/ro4/level_rogue4_7-1.json",
+            "zoneId": "IS#5 Floor 7",
+            "code": "rogue4_7-1",
+            "name": "洞天福地",
+            "Event": "IS#5"
+        },
+        "rogue4_7-2": {
+            "stageId": "rogue4_7-2",
+            "levelId": "obt/roguelike/ro4/level_rogue4_7-2.json",
+            "zoneId": "IS#5 Floor 7",
+            "code": "rogue4_7-2",
+            "name": "“外道”",
             "Event": "IS#5"
         },
         "rogue4_b-1": {
@@ -20248,6 +20304,30 @@
             "name": "紧急授课 (Boss)",
             "Event": "IS#5"
         },
+        "rogue4_b-4-b": {
+            "stageId": "rogue4_b-4-b",
+            "levelId": "obt/roguelike/ro4/level_rogue4_b-4-b.json",
+            "zoneId": "IS#5  ???",
+            "code": "rogue4_b-4-b",
+            "name": "思维矫正 (Boss)",
+            "Event": "IS#5"
+        },
+        "rogue4_b-4-c": {
+            "stageId": "rogue4_b-4-c",
+            "levelId": "obt/roguelike/ro4/level_rogue4_b-4-c.json",
+            "zoneId": "IS#5  ???",
+            "code": "rogue4_b-4-c",
+            "name": "紧急授课 (Boss)",
+            "Event": "IS#5"
+        },
+        "rogue4_b-4-d": {
+            "stageId": "rogue4_b-4-d",
+            "levelId": "obt/roguelike/ro4/level_rogue4_b-4-d.json",
+            "zoneId": "IS#5  ???",
+            "code": "rogue4_b-4-d",
+            "name": "思维矫正 (Boss)",
+            "Event": "IS#5"
+        },
         "rogue4_b-5": {
             "stageId": "rogue4_b-5",
             "levelId": "obt/roguelike/ro4/level_rogue4_b-5.json",
@@ -20256,12 +20336,44 @@
             "name": "朝谒 (Boss)",
             "Event": "IS#5"
         },
+        "rogue4_b-5-b": {
+            "stageId": "rogue4_b-5-b",
+            "levelId": "obt/roguelike/ro4/level_rogue4_b-5-b.json",
+            "zoneId": "IS#5  ???",
+            "code": "rogue4_b-5-b",
+            "name": "魂灵朝谒 (Boss)",
+            "Event": "IS#5"
+        },
+        "rogue4_b-5-c": {
+            "stageId": "rogue4_b-5-c",
+            "levelId": "obt/roguelike/ro4/level_rogue4_b-5-c.json",
+            "zoneId": "IS#5  ???",
+            "code": "rogue4_b-5-c",
+            "name": "朝谒 (Boss)",
+            "Event": "IS#5"
+        },
+        "rogue4_b-5-d": {
+            "stageId": "rogue4_b-5-d",
+            "levelId": "obt/roguelike/ro4/level_rogue4_b-5-d.json",
+            "zoneId": "IS#5  ???",
+            "code": "rogue4_b-5-d",
+            "name": "魂灵朝谒 (Boss)",
+            "Event": "IS#5"
+        },
         "rogue4_b-6": {
             "stageId": "rogue4_b-6",
             "levelId": "obt/roguelike/ro4/level_rogue4_b-6.json",
             "zoneId": "IS#5 Floor 6",
             "code": "rogue4_b-6",
             "name": "圣城 (Boss)",
+            "Event": "IS#5"
+        },
+        "rogue4_b-7": {
+            "stageId": "rogue4_b-7",
+            "levelId": "obt/roguelike/ro4/level_rogue4_b-7.json",
+            "zoneId": "IS#5 Floor 6",
+            "code": "rogue4_b-7",
+            "name": "授法 (Boss)",
             "Event": "IS#5"
         },
         "rogue4_t-1": {
@@ -20366,6 +20478,14 @@
             "zoneId": "IS#5 Duel",
             "code": "rogue4_d-3",
             "name": "石心双子",
+            "Event": "IS#5"
+        },
+        "rogue4_d-b": {
+            "stageId": "rogue4_d-b",
+            "levelId": "obt/roguelike/ro4/level_rogue4_d-b.json",
+            "zoneId": "IS#5 Duel",
+            "code": "rogue4_d-b",
+            "name": "轻舟共渡",
             "Event": "IS#5"
         },
         "sandbox_0_01": {
@@ -25611,7 +25731,8 @@
             "rogue4_2-2",
             "rogue4_2-3",
             "rogue4_2-4",
-            "rogue4_2-5"
+            "rogue4_2-5",
+            "rogue4_2-6"
         ],
         "IS#5 Floor 3": [
             "rogue4_3-1",
@@ -25620,6 +25741,7 @@
             "rogue4_3-4",
             "rogue4_3-5",
             "rogue4_3-6",
+            "rogue4_3-7",
             "rogue4_b-1",
             "rogue4_b-1-b",
             "rogue4_b-1-c",
@@ -25637,7 +25759,9 @@
             "rogue4_4-4",
             "rogue4_4-5",
             "rogue4_4-6",
-            "rogue4_4-7"
+            "rogue4_4-7",
+            "rogue4_4-8",
+            "rogue4_4-9"
         ],
         "IS#5 Floor 5": [
             "rogue4_5-1",
@@ -25647,13 +25771,27 @@
             "rogue4_5-5",
             "rogue4_5-6",
             "rogue4_5-7",
+            "rogue4_5-8",
             "rogue4_b-4",
             "rogue4_b-5"
         ],
         "IS#5 Floor 6": [
             "rogue4_6-1",
             "rogue4_6-2",
-            "rogue4_b-6"
+            "rogue4_b-6",
+            "rogue4_b-7"
+        ],
+        "IS#5 Floor 7": [
+            "rogue4_7-1",
+            "rogue4_7-2"
+        ],
+        "IS#5  ???": [
+            "rogue4_b-4-b",
+            "rogue4_b-4-c",
+            "rogue4_b-4-d",
+            "rogue4_b-5-b",
+            "rogue4_b-5-c",
+            "rogue4_b-5-d"
         ],
         "IS#5 Treasure": [
             "rogue4_t-1",
@@ -25672,7 +25810,8 @@
         "IS#5 Duel": [
             "rogue4_d-1",
             "rogue4_d-2",
-            "rogue4_d-3"
+            "rogue4_d-3",
+            "rogue4_d-b"
         ],
         "RA#1 Field : Building Material": [
             "sandbox_0_01",
@@ -26567,6 +26706,8 @@
             "IS#5 Floor 4",
             "IS#5 Floor 5",
             "IS#5 Floor 6",
+            "IS#5 Floor 7",
+            "IS#5  ???",
             "IS#5 Treasure",
             "IS#5 Event",
             "IS#5 Duel"
@@ -29130,6 +29271,9 @@
                     "IS#5 Floor 1": [
                         "rogue4_1-4"
                     ],
+                    "IS#5 Floor 5": [
+                        "rogue4_5-8"
+                    ],
                     "IS#5 Duel": [
                         "rogue4_d-2",
                         "rogue4_d-3"
@@ -29294,6 +29438,14 @@
                 "IS#2": {
                     "IS#2 Floor 3": [
                         "rogue1_3-2"
+                    ]
+                },
+                "IS#5": {
+                    "IS#5 Floor 4": [
+                        "rogue4_4-8"
+                    ],
+                    "IS#5 Floor 5": [
+                        "rogue4_5-8"
                     ]
                 }
             },
@@ -30629,6 +30781,9 @@
                     ],
                     "IS#5 Event": [
                         "rogue4_ev-1"
+                    ],
+                    "IS#5 Duel": [
+                        "rogue4_d-b"
                     ]
                 }
             }
@@ -30912,6 +31067,11 @@
                 "IS#3": {
                     "IS#3 Floor 5": [
                         "rogue2_5-1"
+                    ]
+                },
+                "IS#5": {
+                    "IS#5 Duel": [
+                        "rogue4_d-b"
                     ]
                 }
             },
@@ -31225,6 +31385,9 @@
             },
             "is": {
                 "IS#5": {
+                    "IS#5 Floor 5": [
+                        "rogue4_5-8"
+                    ],
                     "IS#5 Duel": [
                         "rogue4_d-2"
                     ]
@@ -33247,6 +33410,9 @@
                     "IS#5 Floor 3": [
                         "rogue4_3-4"
                     ],
+                    "IS#5 Floor 4": [
+                        "rogue4_4-9"
+                    ],
                     "IS#5 Floor 6": [
                         "rogue4_b-6"
                     ],
@@ -33447,6 +33613,9 @@
                     ],
                     "IS#5 Floor 2": [
                         "rogue4_2-5"
+                    ],
+                    "IS#5 Floor 4": [
+                        "rogue4_4-9"
                     ],
                     "IS#5 Floor 6": [
                         "rogue4_b-6"
@@ -34976,6 +35145,14 @@
                     "IS#4 Floor 5": [
                         "rogue3_5-3"
                     ]
+                },
+                "IS#5": {
+                    "IS#5 Floor 3": [
+                        "rogue4_3-7"
+                    ],
+                    "IS#5 Duel": [
+                        "rogue4_d-b"
+                    ]
                 }
             },
             "ra": {
@@ -35244,6 +35421,11 @@
                     "IS#2 Floor 3": [
                         "rogue1_b-2"
                     ]
+                },
+                "IS#5": {
+                    "IS#5 Duel": [
+                        "rogue4_d-b"
+                    ]
                 }
             }
         },
@@ -35343,8 +35525,14 @@
                     ]
                 },
                 "IS#5": {
+                    "IS#5 Floor 4": [
+                        "rogue4_4-8"
+                    ],
                     "IS#5 Event": [
                         "rogue4_ev-1"
+                    ],
+                    "IS#5 Duel": [
+                        "rogue4_d-b"
                     ]
                 }
             }
@@ -37244,6 +37432,11 @@
                     ],
                     "IS#4 Floor 6": [
                         "rogue3_b-6-b"
+                    ]
+                },
+                "IS#5": {
+                    "IS#5 Duel": [
+                        "rogue4_d-b"
                     ]
                 }
             }
@@ -39368,6 +39561,11 @@
                     "IS#4 Floor 4": [
                         "rogue3_4-7"
                     ]
+                },
+                "IS#5": {
+                    "IS#5 Duel": [
+                        "rogue4_d-b"
+                    ]
                 }
             },
             "ra": {
@@ -39448,6 +39646,11 @@
                     ],
                     "IS#4 Floor 5": [
                         "rogue3_b-5-b"
+                    ]
+                },
+                "IS#5": {
+                    "IS#5 Floor 5": [
+                        "rogue4_5-8"
                     ]
                 }
             },
@@ -42427,6 +42630,12 @@
                     "IS#2 Floor 3": [
                         "rogue1_3-8"
                     ]
+                },
+                "IS#5": {
+                    "IS#5  ???": [
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-d"
+                    ]
                 }
             },
             "ra": {
@@ -42519,6 +42728,11 @@
                 "IS#3": {
                     "IS#3 Floor 1": [
                         "rogue2_1-5"
+                    ]
+                },
+                "IS#5": {
+                    "IS#5 Floor 3": [
+                        "rogue4_3-7"
                     ]
                 }
             },
@@ -43113,6 +43327,10 @@
                     ],
                     "IS#5 Floor 3": [
                         "rogue4_b-1-c"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-d"
                     ]
                 }
             }
@@ -43308,6 +43526,9 @@
                     ],
                     "IS#5 Floor 5": [
                         "rogue4_5-1"
+                    ],
+                    "IS#5 Floor 7": [
+                        "rogue4_7-2"
                     ]
                 }
             }
@@ -43680,6 +43901,10 @@
                         "rogue4_b-5",
                         "rogue4_b-5"
                     ],
+                    "IS#5  ???": [
+                        "rogue4_b-5-c",
+                        "rogue4_b-5-c"
+                    ],
                     "IS#5 Floor 6": [
                         "rogue4_b-6"
                     ]
@@ -43809,6 +44034,9 @@
                     "IS#5 Floor 5": [
                         "rogue4_5-1",
                         "rogue4_b-5"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-5-c"
                     ]
                 }
             }
@@ -43853,6 +44081,14 @@
                 "camp_r_23": {
                     "camp_r_23": [
                         "camp_r_23"
+                    ]
+                }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5  ???": [
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-d"
                     ]
                 }
             }
@@ -44585,6 +44821,10 @@
                     ],
                     "IS#5 Floor 3": [
                         "rogue4_b-2-c"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-d"
                     ]
                 }
             }
@@ -44709,6 +44949,9 @@
                         "rogue4_3-2",
                         "rogue4_3-3",
                         "rogue4_b-2-c"
+                    ],
+                    "IS#5 Floor 4": [
+                        "rogue4_4-9"
                     ]
                 }
             },
@@ -45029,6 +45272,9 @@
                 "IS#5": {
                     "IS#5 Floor 5": [
                         "rogue4_5-6"
+                    ],
+                    "IS#5 Duel": [
+                        "rogue4_d-b"
                     ]
                 }
             },
@@ -45227,6 +45473,11 @@
                     ],
                     "IS#4 Event": [
                         "rogue3_ev-3"
+                    ]
+                },
+                "IS#5": {
+                    "IS#5 Floor 4": [
+                        "rogue4_4-9"
                     ]
                 }
             },
@@ -45579,6 +45830,9 @@
                     "IS#5 Floor 5": [
                         "rogue4_b-5"
                     ],
+                    "IS#5  ???": [
+                        "rogue4_b-5-c"
+                    ],
                     "IS#5 Treasure": [
                         "rogue4_t-6"
                     ],
@@ -45696,6 +45950,10 @@
                         "rogue4_5-3",
                         "rogue4_b-5",
                         "rogue4_b-5"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-5-c",
+                        "rogue4_b-5-c"
                     ]
                 }
             },
@@ -46129,7 +46387,8 @@
                         "rogue4_2-1",
                         "rogue4_2-2",
                         "rogue4_2-4",
-                        "rogue4_2-5"
+                        "rogue4_2-5",
+                        "rogue4_2-6"
                     ],
                     "IS#5 Floor 3": [
                         "rogue4_3-4",
@@ -46843,6 +47102,14 @@
                         "tough_12-15"
                     ]
                 }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5  ???": [
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-d"
+                    ]
+                }
             }
         },
         "enemy_1324_wdsdw": {
@@ -46865,6 +47132,14 @@
                         "tough_12-10",
                         "tough_12-13",
                         "tough_12-15"
+                    ]
+                }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5  ???": [
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-d"
                     ]
                 }
             }
@@ -47158,6 +47433,13 @@
                     ]
                 }
             },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 4": [
+                        "rogue4_4-8"
+                    ]
+                }
+            },
             "ra": {
                 "RA#2": {
                     "RA#2 Field : Building Material": [
@@ -47303,6 +47585,11 @@
                 "IS#4": {
                     "IS#4 Floor 5": [
                         "rogue3_5-2"
+                    ]
+                },
+                "IS#5": {
+                    "IS#5 Duel": [
+                        "rogue4_d-b"
                     ]
                 }
             }
@@ -48269,6 +48556,13 @@
                         "hard_14-04"
                     ]
                 }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 7": [
+                        "rogue4_7-2"
+                    ]
+                }
             }
         },
         "enemy_1421_lrchld": {
@@ -48587,6 +48881,12 @@
                     ],
                     "IS#5 Floor 6": [
                         "rogue4_6-1"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-d",
+                        "rogue4_b-5-d"
                     ]
                 }
             }
@@ -48634,6 +48934,10 @@
                 "IS#5": {
                     "IS#5 Floor 6": [
                         "rogue4_6-1"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-d"
                     ]
                 }
             }
@@ -48659,6 +48963,13 @@
                         "tough_14-13",
                         "tough_14-16",
                         "tough_14-19"
+                    ]
+                }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 6": [
+                        "rogue4_b-7"
                     ]
                 }
             }
@@ -48711,6 +49022,10 @@
                 "IS#5": {
                     "IS#5 Floor 6": [
                         "rogue4_6-1"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-d"
                     ]
                 }
             }
@@ -48745,6 +49060,10 @@
                 "IS#5": {
                     "IS#5 Floor 6": [
                         "rogue4_6-1"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-d"
                     ]
                 }
             }
@@ -49871,6 +50190,9 @@
                 "IS#5": {
                     "IS#5 Floor 5": [
                         "rogue4_5-6"
+                    ],
+                    "IS#5 Duel": [
+                        "rogue4_d-b"
                     ]
                 }
             }
@@ -51291,6 +51613,10 @@
             },
             "is": {
                 "IS#5": {
+                    "IS#5  ???": [
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-d"
+                    ],
                     "IS#5 Duel": [
                         "rogue4_d-1"
                     ]
@@ -53300,6 +53626,13 @@
                         "act16d5_ex08#f#"
                     ]
                 }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 6": [
+                        "rogue4_b-7"
+                    ]
+                }
             }
         },
         "enemy_1129_spklr_2": {
@@ -53341,6 +53674,13 @@
                 "act4bossrush": {
                     "act4bossrush_zone1": [
                         "act4bossrush_04"
+                    ]
+                }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 6": [
+                        "rogue4_b-7"
                     ]
                 }
             }
@@ -55325,7 +55665,13 @@
             "is": {
                 "IS#5": {
                     "IS#5 Floor 5": [
+                        "rogue4_5-8",
                         "rogue4_b-5"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-c",
+                        "rogue4_b-5-d"
                     ]
                 }
             },
@@ -56121,6 +56467,9 @@
                     ],
                     "IS#5 Floor 5": [
                         "rogue4_b-4"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-4-c"
                     ]
                 }
             }
@@ -56384,6 +56733,9 @@
                 "IS#5": {
                     "IS#5 Floor 5": [
                         "rogue4_b-4"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-4-c"
                     ],
                     "IS#5 Treasure": [
                         "rogue4_t-4"
@@ -56829,6 +57181,9 @@
                     ]
                 },
                 "IS#5": {
+                    "IS#5 Floor 5": [
+                        "rogue4_5-8"
+                    ],
                     "IS#5 Treasure": [
                         "rogue4_t-6"
                     ],
@@ -58479,6 +58834,11 @@
                     "IS#2 Floor 5": [
                         "rogue1_b-6"
                     ]
+                },
+                "IS#5": {
+                    "IS#5 Floor 4": [
+                        "rogue4_4-8"
+                    ]
                 }
             }
         },
@@ -59861,6 +60221,10 @@
                     ],
                     "IS#5 Floor 5": [
                         "rogue4_5-5"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-d"
                     ]
                 }
             },
@@ -59898,6 +60262,16 @@
                         "camp_r_11"
                     ]
                 }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1"
+                    ],
+                    "IS#5 Floor 6": [
+                        "rogue4_b-7"
+                    ]
+                }
             }
         },
         "enemy_1210_msfden_2": {
@@ -59923,6 +60297,16 @@
                 "camp_r_11": {
                     "camp_r_11": [
                         "camp_r_11"
+                    ]
+                }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1"
+                    ],
+                    "IS#5 Floor 6": [
+                        "rogue4_b-7"
                     ]
                 }
             }
@@ -63070,6 +63454,13 @@
                         "act16d5_ex05#f#"
                     ]
                 }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 6": [
+                        "rogue4_b-7"
+                    ]
+                }
             }
         },
         "enemy_1125_spshld_2": {
@@ -63221,6 +63612,9 @@
                     ]
                 },
                 "IS#5": {
+                    "IS#5 Floor 7": [
+                        "rogue4_7-2"
+                    ],
                     "IS#5 Duel": [
                         "rogue4_d-3"
                     ]
@@ -64794,6 +65188,9 @@
                     "IS#5 Floor 5": [
                         "rogue4_5-3",
                         "rogue4_b-4"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-4-c"
                     ]
                 }
             }
@@ -64818,6 +65215,9 @@
                 "IS#5": {
                     "IS#5 Floor 5": [
                         "rogue4_b-4"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-4-c"
                     ]
                 }
             }
@@ -64856,6 +65256,9 @@
                 "IS#5": {
                     "IS#5 Floor 5": [
                         "rogue4_b-4"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-4-c"
                     ]
                 }
             }
@@ -64909,6 +65312,9 @@
                     "IS#5 Floor 5": [
                         "rogue4_5-3",
                         "rogue4_b-4"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-4-c"
                     ]
                 }
             }
@@ -64984,6 +65390,9 @@
                 "IS#5": {
                     "IS#5 Floor 5": [
                         "rogue4_b-4"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-4-c"
                     ]
                 }
             }
@@ -70072,6 +70481,14 @@
                         "act16d5_ex08#f#"
                     ]
                 }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 6": [
+                        "rogue4_b-7",
+                        "rogue4_b-7"
+                    ]
+                }
             }
         },
         "enemy_1199_sfjin": {
@@ -70392,6 +70809,9 @@
                     ]
                 },
                 "IS#5": {
+                    "IS#5 Floor 7": [
+                        "rogue4_7-2"
+                    ],
                     "IS#5 Duel": [
                         "rogue4_d-3"
                     ]
@@ -70526,6 +70946,13 @@
                 "tower_n_11": {
                     "tower_n_11": [
                         "lt_11_02"
+                    ]
+                }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 5": [
+                        "rogue4_5-8"
                     ]
                 }
             },
@@ -72284,6 +72711,9 @@
                     ]
                 },
                 "IS#5": {
+                    "IS#5 Floor 2": [
+                        "rogue4_2-6"
+                    ],
                     "IS#5 Floor 3": [
                         "rogue4_3-3"
                     ]
@@ -72891,6 +73321,9 @@
                 "IS#5": {
                     "IS#5 Floor 5": [
                         "rogue4_b-4"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-4-c"
                     ]
                 }
             }
@@ -73191,6 +73624,9 @@
             },
             "is": {
                 "IS#5": {
+                    "IS#5 Floor 7": [
+                        "rogue4_7-2"
+                    ],
                     "IS#5 Duel": [
                         "rogue4_d-3"
                     ]
@@ -73679,6 +74115,7 @@
                         "rogue4_1-3"
                     ],
                     "IS#5 Floor 3": [
+                        "rogue4_3-7",
                         "rogue4_b-3",
                         "rogue4_b-3-b"
                     ]
@@ -73745,6 +74182,11 @@
                 "IS#2": {
                     "IS#2 Floor 4": [
                         "rogue1_4-3"
+                    ]
+                },
+                "IS#5": {
+                    "IS#5 Floor 3": [
+                        "rogue4_3-7"
                     ]
                 }
             }
@@ -75851,6 +76293,13 @@
                         "camp_r_11"
                     ]
                 }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1"
+                    ]
+                }
             }
         },
         "enemy_1196_msfyin_2": {
@@ -75872,6 +76321,13 @@
                 "camp_r_11": {
                     "camp_r_11": [
                         "camp_r_11"
+                    ]
+                }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1"
                     ]
                 }
             }
@@ -75949,6 +76405,13 @@
                         "camp_r_11"
                     ]
                 }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1"
+                    ]
+                }
             }
         },
         "enemy_1200_msfjin_2": {
@@ -75972,6 +76435,13 @@
                 "camp_r_11": {
                     "camp_r_11": [
                         "camp_r_11"
+                    ]
+                }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1"
                     ]
                 }
             }
@@ -76006,6 +76476,13 @@
                         "act42d0_12"
                     ]
                 }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1"
+                    ]
+                }
             }
         },
         "enemy_1202_msfzhi_2": {
@@ -76036,6 +76513,13 @@
                         "act42d0_10",
                         "act42d0_11",
                         "act42d0_12"
+                    ]
+                }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1"
                     ]
                 }
             }
@@ -76149,6 +76633,17 @@
                         "rune_11-02"
                     ]
                 }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1",
+                        "rogue4_7-2"
+                    ],
+                    "IS#5 Floor 6": [
+                        "rogue4_b-7"
+                    ]
+                }
             }
         },
         "enemy_1208_msfji_2": {
@@ -76186,6 +76681,17 @@
                 "CC#12": {
                     "CC#12": [
                         "rune_11-02"
+                    ]
+                }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1",
+                        "rogue4_7-2"
+                    ],
+                    "IS#5 Floor 6": [
+                        "rogue4_b-7"
                     ]
                 }
             }
@@ -76862,6 +77368,13 @@
                         "rune_10-02"
                     ]
                 }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 3": [
+                        "rogue4_3-7"
+                    ]
+                }
             }
         },
         "enemy_1144_merlgd": {
@@ -76908,6 +77421,13 @@
                 "CC#11": {
                     "CC#11": [
                         "rune_10-02"
+                    ]
+                }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 3": [
+                        "rogue4_3-7"
                     ]
                 }
             }
@@ -77179,6 +77699,9 @@
                     ]
                 },
                 "IS#5": {
+                    "IS#5 Floor 2": [
+                        "rogue4_2-6"
+                    ],
                     "IS#5 Treasure": [
                         "rogue4_t-3"
                     ]
@@ -78090,6 +78613,11 @@
                     "IS#4 Event": [
                         "rogue3_ev-8"
                     ]
+                },
+                "IS#5": {
+                    "IS#5 Floor 2": [
+                        "rogue4_2-6"
+                    ]
                 }
             }
         },
@@ -78145,6 +78673,11 @@
                     "IS#4 Event": [
                         "rogue3_ev-8"
                     ]
+                },
+                "IS#5": {
+                    "IS#5 Floor 2": [
+                        "rogue4_2-6"
+                    ]
                 }
             }
         },
@@ -78178,6 +78711,9 @@
             },
             "is": {
                 "IS#5": {
+                    "IS#5 Floor 2": [
+                        "rogue4_2-6"
+                    ],
                     "IS#5 Treasure": [
                         "rogue4_t-3"
                     ]
@@ -80233,7 +80769,8 @@
                         "rogue4_2-2",
                         "rogue4_2-3",
                         "rogue4_2-4",
-                        "rogue4_2-5"
+                        "rogue4_2-5",
+                        "rogue4_2-6"
                     ],
                     "IS#5 Floor 3": [
                         "rogue4_3-1",
@@ -80241,7 +80778,8 @@
                         "rogue4_3-3",
                         "rogue4_3-4",
                         "rogue4_3-5",
-                        "rogue4_3-6"
+                        "rogue4_3-6",
+                        "rogue4_3-7"
                     ],
                     "IS#5 Floor 4": [
                         "rogue4_4-1",
@@ -80250,7 +80788,9 @@
                         "rogue4_4-4",
                         "rogue4_4-5",
                         "rogue4_4-6",
-                        "rogue4_4-7"
+                        "rogue4_4-7",
+                        "rogue4_4-8",
+                        "rogue4_4-9"
                     ],
                     "IS#5 Floor 5": [
                         "rogue4_5-1",
@@ -80259,11 +80799,16 @@
                         "rogue4_5-4",
                         "rogue4_5-5",
                         "rogue4_5-6",
-                        "rogue4_5-7"
+                        "rogue4_5-7",
+                        "rogue4_5-8"
                     ],
                     "IS#5 Floor 6": [
                         "rogue4_6-1",
                         "rogue4_6-2"
+                    ],
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1",
+                        "rogue4_7-2"
                     ],
                     "IS#5 Treasure": [
                         "rogue4_t-2",
@@ -80491,7 +81036,8 @@
                         "rogue4_2-2",
                         "rogue4_2-3",
                         "rogue4_2-4",
-                        "rogue4_2-5"
+                        "rogue4_2-5",
+                        "rogue4_2-6"
                     ],
                     "IS#5 Floor 3": [
                         "rogue4_3-1",
@@ -80499,7 +81045,8 @@
                         "rogue4_3-3",
                         "rogue4_3-4",
                         "rogue4_3-5",
-                        "rogue4_3-6"
+                        "rogue4_3-6",
+                        "rogue4_3-7"
                     ],
                     "IS#5 Floor 4": [
                         "rogue4_4-1",
@@ -80508,7 +81055,9 @@
                         "rogue4_4-4",
                         "rogue4_4-5",
                         "rogue4_4-6",
-                        "rogue4_4-7"
+                        "rogue4_4-7",
+                        "rogue4_4-8",
+                        "rogue4_4-9"
                     ],
                     "IS#5 Floor 5": [
                         "rogue4_5-1",
@@ -80517,11 +81066,16 @@
                         "rogue4_5-4",
                         "rogue4_5-5",
                         "rogue4_5-6",
-                        "rogue4_5-7"
+                        "rogue4_5-7",
+                        "rogue4_5-8"
                     ],
                     "IS#5 Floor 6": [
                         "rogue4_6-1",
                         "rogue4_6-2"
+                    ],
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1",
+                        "rogue4_7-2"
                     ],
                     "IS#5 Treasure": [
                         "rogue4_t-2",
@@ -81013,7 +81567,8 @@
                         "rogue4_2-2",
                         "rogue4_2-3",
                         "rogue4_2-4",
-                        "rogue4_2-5"
+                        "rogue4_2-5",
+                        "rogue4_2-6"
                     ],
                     "IS#5 Floor 3": [
                         "rogue4_3-1",
@@ -81021,7 +81576,8 @@
                         "rogue4_3-3",
                         "rogue4_3-4",
                         "rogue4_3-5",
-                        "rogue4_3-6"
+                        "rogue4_3-6",
+                        "rogue4_3-7"
                     ],
                     "IS#5 Floor 4": [
                         "rogue4_4-1",
@@ -81030,7 +81586,9 @@
                         "rogue4_4-4",
                         "rogue4_4-5",
                         "rogue4_4-6",
-                        "rogue4_4-7"
+                        "rogue4_4-7",
+                        "rogue4_4-8",
+                        "rogue4_4-9"
                     ],
                     "IS#5 Floor 5": [
                         "rogue4_5-1",
@@ -81039,11 +81597,16 @@
                         "rogue4_5-4",
                         "rogue4_5-5",
                         "rogue4_5-6",
-                        "rogue4_5-7"
+                        "rogue4_5-7",
+                        "rogue4_5-8"
                     ],
                     "IS#5 Floor 6": [
                         "rogue4_6-1",
                         "rogue4_6-2"
+                    ],
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1",
+                        "rogue4_7-2"
                     ],
                     "IS#5 Treasure": [
                         "rogue4_t-1",
@@ -81862,7 +82425,8 @@
                         "rogue4_2-2",
                         "rogue4_2-3",
                         "rogue4_2-4",
-                        "rogue4_2-5"
+                        "rogue4_2-5",
+                        "rogue4_2-6"
                     ],
                     "IS#5 Floor 3": [
                         "rogue4_3-1",
@@ -81870,7 +82434,8 @@
                         "rogue4_3-3",
                         "rogue4_3-4",
                         "rogue4_3-5",
-                        "rogue4_3-6"
+                        "rogue4_3-6",
+                        "rogue4_3-7"
                     ],
                     "IS#5 Floor 4": [
                         "rogue4_4-1",
@@ -81879,7 +82444,9 @@
                         "rogue4_4-4",
                         "rogue4_4-5",
                         "rogue4_4-6",
-                        "rogue4_4-7"
+                        "rogue4_4-7",
+                        "rogue4_4-8",
+                        "rogue4_4-9"
                     ],
                     "IS#5 Floor 5": [
                         "rogue4_5-1",
@@ -81888,11 +82455,16 @@
                         "rogue4_5-4",
                         "rogue4_5-5",
                         "rogue4_5-6",
-                        "rogue4_5-7"
+                        "rogue4_5-7",
+                        "rogue4_5-8"
                     ],
                     "IS#5 Floor 6": [
                         "rogue4_6-1",
                         "rogue4_6-2"
+                    ],
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1",
+                        "rogue4_7-2"
                     ],
                     "IS#5 Treasure": [
                         "rogue4_t-4",
@@ -81919,7 +82491,8 @@
                         "rogue4_2-2",
                         "rogue4_2-3",
                         "rogue4_2-4",
-                        "rogue4_2-5"
+                        "rogue4_2-5",
+                        "rogue4_2-6"
                     ],
                     "IS#5 Floor 3": [
                         "rogue4_3-1",
@@ -81928,6 +82501,7 @@
                         "rogue4_3-4",
                         "rogue4_3-5",
                         "rogue4_3-6",
+                        "rogue4_3-7",
                         "rogue4_b-1",
                         "rogue4_b-1-b",
                         "rogue4_b-1-c",
@@ -81945,7 +82519,9 @@
                         "rogue4_4-4",
                         "rogue4_4-5",
                         "rogue4_4-6",
-                        "rogue4_4-7"
+                        "rogue4_4-7",
+                        "rogue4_4-8",
+                        "rogue4_4-9"
                     ],
                     "IS#5 Floor 5": [
                         "rogue4_5-1",
@@ -81955,13 +82531,27 @@
                         "rogue4_5-5",
                         "rogue4_5-6",
                         "rogue4_5-7",
+                        "rogue4_5-8",
                         "rogue4_b-4",
                         "rogue4_b-5"
                     ],
                     "IS#5 Floor 6": [
                         "rogue4_6-1",
                         "rogue4_6-2",
-                        "rogue4_b-6"
+                        "rogue4_b-6",
+                        "rogue4_b-7"
+                    ],
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1",
+                        "rogue4_7-2"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-d",
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-c",
+                        "rogue4_b-5-d"
                     ],
                     "IS#5 Treasure": [
                         "rogue4_t-1",
@@ -81980,7 +82570,8 @@
                     "IS#5 Duel": [
                         "rogue4_d-1",
                         "rogue4_d-2",
-                        "rogue4_d-3"
+                        "rogue4_d-3",
+                        "rogue4_d-b"
                     ]
                 }
             }
@@ -81999,7 +82590,8 @@
                         "rogue4_2-2",
                         "rogue4_2-3",
                         "rogue4_2-4",
-                        "rogue4_2-5"
+                        "rogue4_2-5",
+                        "rogue4_2-6"
                     ],
                     "IS#5 Floor 3": [
                         "rogue4_3-1",
@@ -82008,6 +82600,7 @@
                         "rogue4_3-4",
                         "rogue4_3-5",
                         "rogue4_3-6",
+                        "rogue4_3-7",
                         "rogue4_b-1",
                         "rogue4_b-1-b",
                         "rogue4_b-1-c",
@@ -82025,7 +82618,9 @@
                         "rogue4_4-4",
                         "rogue4_4-5",
                         "rogue4_4-6",
-                        "rogue4_4-7"
+                        "rogue4_4-7",
+                        "rogue4_4-8",
+                        "rogue4_4-9"
                     ],
                     "IS#5 Floor 5": [
                         "rogue4_5-1",
@@ -82035,13 +82630,27 @@
                         "rogue4_5-5",
                         "rogue4_5-6",
                         "rogue4_5-7",
+                        "rogue4_5-8",
                         "rogue4_b-4",
                         "rogue4_b-5"
                     ],
                     "IS#5 Floor 6": [
                         "rogue4_6-1",
                         "rogue4_6-2",
-                        "rogue4_b-6"
+                        "rogue4_b-6",
+                        "rogue4_b-7"
+                    ],
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1",
+                        "rogue4_7-2"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-d",
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-c",
+                        "rogue4_b-5-d"
                     ],
                     "IS#5 Treasure": [
                         "rogue4_t-1",
@@ -82060,7 +82669,8 @@
                     "IS#5 Duel": [
                         "rogue4_d-1",
                         "rogue4_d-2",
-                        "rogue4_d-3"
+                        "rogue4_d-3",
+                        "rogue4_d-b"
                     ]
                 }
             }
@@ -82079,7 +82689,8 @@
                         "rogue4_2-2",
                         "rogue4_2-3",
                         "rogue4_2-4",
-                        "rogue4_2-5"
+                        "rogue4_2-5",
+                        "rogue4_2-6"
                     ],
                     "IS#5 Floor 3": [
                         "rogue4_3-1",
@@ -82088,6 +82699,7 @@
                         "rogue4_3-4",
                         "rogue4_3-5",
                         "rogue4_3-6",
+                        "rogue4_3-7",
                         "rogue4_b-1",
                         "rogue4_b-1-b",
                         "rogue4_b-1-c",
@@ -82105,7 +82717,9 @@
                         "rogue4_4-4",
                         "rogue4_4-5",
                         "rogue4_4-6",
-                        "rogue4_4-7"
+                        "rogue4_4-7",
+                        "rogue4_4-8",
+                        "rogue4_4-9"
                     ],
                     "IS#5 Floor 5": [
                         "rogue4_5-1",
@@ -82115,13 +82729,27 @@
                         "rogue4_5-5",
                         "rogue4_5-6",
                         "rogue4_5-7",
+                        "rogue4_5-8",
                         "rogue4_b-4",
                         "rogue4_b-5"
                     ],
                     "IS#5 Floor 6": [
                         "rogue4_6-1",
                         "rogue4_6-2",
-                        "rogue4_b-6"
+                        "rogue4_b-6",
+                        "rogue4_b-7"
+                    ],
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1",
+                        "rogue4_7-2"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-d",
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-c",
+                        "rogue4_b-5-d"
                     ],
                     "IS#5 Treasure": [
                         "rogue4_t-1",
@@ -82140,7 +82768,8 @@
                     "IS#5 Duel": [
                         "rogue4_d-1",
                         "rogue4_d-2",
-                        "rogue4_d-3"
+                        "rogue4_d-3",
+                        "rogue4_d-b"
                     ]
                 }
             }
@@ -82159,7 +82788,8 @@
                         "rogue4_2-2",
                         "rogue4_2-3",
                         "rogue4_2-4",
-                        "rogue4_2-5"
+                        "rogue4_2-5",
+                        "rogue4_2-6"
                     ],
                     "IS#5 Floor 3": [
                         "rogue4_3-1",
@@ -82167,7 +82797,8 @@
                         "rogue4_3-3",
                         "rogue4_3-4",
                         "rogue4_3-5",
-                        "rogue4_3-6"
+                        "rogue4_3-6",
+                        "rogue4_3-7"
                     ],
                     "IS#5 Floor 4": [
                         "rogue4_4-1",
@@ -82176,7 +82807,9 @@
                         "rogue4_4-4",
                         "rogue4_4-5",
                         "rogue4_4-6",
-                        "rogue4_4-7"
+                        "rogue4_4-7",
+                        "rogue4_4-8",
+                        "rogue4_4-9"
                     ],
                     "IS#5 Floor 5": [
                         "rogue4_5-1",
@@ -82185,11 +82818,16 @@
                         "rogue4_5-4",
                         "rogue4_5-5",
                         "rogue4_5-6",
-                        "rogue4_5-7"
+                        "rogue4_5-7",
+                        "rogue4_5-8"
                     ],
                     "IS#5 Floor 6": [
                         "rogue4_6-1",
                         "rogue4_6-2"
+                    ],
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1",
+                        "rogue4_7-2"
                     ],
                     "IS#5 Treasure": [
                         "rogue4_t-7"
@@ -82219,7 +82857,8 @@
                         "rogue4_2-2",
                         "rogue4_2-3",
                         "rogue4_2-4",
-                        "rogue4_2-5"
+                        "rogue4_2-5",
+                        "rogue4_2-6"
                     ],
                     "IS#5 Floor 3": [
                         "rogue4_3-1",
@@ -82227,7 +82866,8 @@
                         "rogue4_3-3",
                         "rogue4_3-4",
                         "rogue4_3-5",
-                        "rogue4_3-6"
+                        "rogue4_3-6",
+                        "rogue4_3-7"
                     ],
                     "IS#5 Floor 4": [
                         "rogue4_4-1",
@@ -82236,7 +82876,9 @@
                         "rogue4_4-4",
                         "rogue4_4-5",
                         "rogue4_4-6",
-                        "rogue4_4-7"
+                        "rogue4_4-7",
+                        "rogue4_4-8",
+                        "rogue4_4-9"
                     ],
                     "IS#5 Floor 5": [
                         "rogue4_5-1",
@@ -82245,12 +82887,26 @@
                         "rogue4_5-4",
                         "rogue4_5-5",
                         "rogue4_5-6",
-                        "rogue4_5-7"
+                        "rogue4_5-7",
+                        "rogue4_5-8"
                     ],
                     "IS#5 Floor 6": [
                         "rogue4_6-1",
                         "rogue4_6-2",
-                        "rogue4_b-6"
+                        "rogue4_b-6",
+                        "rogue4_b-7"
+                    ],
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1",
+                        "rogue4_7-2"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-d",
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-c",
+                        "rogue4_b-5-d"
                     ],
                     "IS#5 Treasure": [
                         "rogue4_t-1",
@@ -82283,7 +82939,8 @@
                         "rogue4_2-2",
                         "rogue4_2-3",
                         "rogue4_2-4",
-                        "rogue4_2-5"
+                        "rogue4_2-5",
+                        "rogue4_2-6"
                     ],
                     "IS#5 Floor 3": [
                         "rogue4_3-1",
@@ -82292,6 +82949,7 @@
                         "rogue4_3-4",
                         "rogue4_3-5",
                         "rogue4_3-6",
+                        "rogue4_3-7",
                         "rogue4_b-1",
                         "rogue4_b-1-b",
                         "rogue4_b-1-c",
@@ -82309,7 +82967,9 @@
                         "rogue4_4-4",
                         "rogue4_4-5",
                         "rogue4_4-6",
-                        "rogue4_4-7"
+                        "rogue4_4-7",
+                        "rogue4_4-8",
+                        "rogue4_4-9"
                     ],
                     "IS#5 Floor 5": [
                         "rogue4_5-1",
@@ -82319,13 +82979,27 @@
                         "rogue4_5-5",
                         "rogue4_5-6",
                         "rogue4_5-7",
+                        "rogue4_5-8",
                         "rogue4_b-4",
                         "rogue4_b-5"
                     ],
                     "IS#5 Floor 6": [
                         "rogue4_6-1",
                         "rogue4_6-2",
-                        "rogue4_b-6"
+                        "rogue4_b-6",
+                        "rogue4_b-7"
+                    ],
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1",
+                        "rogue4_7-2"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-d",
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-c",
+                        "rogue4_b-5-d"
                     ],
                     "IS#5 Treasure": [
                         "rogue4_t-1",
@@ -82344,7 +83018,8 @@
                     "IS#5 Duel": [
                         "rogue4_d-1",
                         "rogue4_d-2",
-                        "rogue4_d-3"
+                        "rogue4_d-3",
+                        "rogue4_d-b"
                     ]
                 }
             }
@@ -82356,17 +83031,21 @@
                         "rogue4_1-3"
                     ],
                     "IS#5 Floor 2": [
-                        "rogue4_2-2"
+                        "rogue4_2-2",
+                        "rogue4_2-6"
                     ],
                     "IS#5 Floor 4": [
                         "rogue4_4-1",
                         "rogue4_4-2",
                         "rogue4_4-3",
-                        "rogue4_4-6"
+                        "rogue4_4-6",
+                        "rogue4_4-8",
+                        "rogue4_4-9"
                     ],
                     "IS#5 Floor 5": [
                         "rogue4_5-4",
                         "rogue4_5-7",
+                        "rogue4_5-8",
                         "rogue4_b-4",
                         "rogue4_b-4"
                     ],
@@ -82374,6 +83053,12 @@
                         "rogue4_b-2",
                         "rogue4_b-2-b",
                         "rogue4_b-2-c"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-d"
                     ],
                     "IS#5 Treasure": [
                         "rogue4_t-6",
@@ -82399,7 +83084,8 @@
                     ],
                     "IS#5 Floor 4": [
                         "rogue4_4-2",
-                        "rogue4_4-6"
+                        "rogue4_4-6",
+                        "rogue4_4-9"
                     ],
                     "IS#5 Floor 5": [
                         "rogue4_5-4",
@@ -82408,14 +83094,58 @@
                 }
             }
         },
+        "enemy_2068_skzirn": {
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 2": [
+                        "rogue4_2-6"
+                    ],
+                    "IS#5 Floor 4": [
+                        "rogue4_4-6",
+                        "rogue4_4-6"
+                    ],
+                    "IS#5 Floor 6": [
+                        "rogue4_6-1",
+                        "rogue4_b-6"
+                    ],
+                    "IS#5 Event": [
+                        "rogue4_ev-2"
+                    ]
+                }
+            }
+        },
         "enemy_2070_skzfbx": {
             "is": {
                 "IS#5": {
+                    "IS#5 Floor 2": [
+                        "rogue4_2-6"
+                    ],
                     "IS#5 Floor 3": [
-                        "rogue4_3-3"
+                        "rogue4_3-3",
+                        "rogue4_3-7"
                     ],
                     "IS#5 Floor 4": [
-                        "rogue4_4-3"
+                        "rogue4_4-3",
+                        "rogue4_4-8",
+                        "rogue4_4-9"
+                    ],
+                    "IS#5 Floor 5": [
+                        "rogue4_5-8"
+                    ],
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1",
+                        "rogue4_7-2"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-d",
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-c",
+                        "rogue4_b-5-d"
+                    ],
+                    "IS#5 Floor 6": [
+                        "rogue4_b-7"
                     ],
                     "IS#5 Treasure": [
                         "rogue4_t-4",
@@ -82433,11 +83163,47 @@
                 }
             }
         },
+        "enemy_2091_skzgds": {
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 2": [
+                        "rogue4_2-6"
+                    ],
+                    "IS#5 Floor 3": [
+                        "rogue4_3-7"
+                    ],
+                    "IS#5 Floor 4": [
+                        "rogue4_4-8",
+                        "rogue4_4-9"
+                    ],
+                    "IS#5 Floor 5": [
+                        "rogue4_5-8"
+                    ],
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1",
+                        "rogue4_7-2"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-d",
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-c",
+                        "rogue4_b-5-d"
+                    ],
+                    "IS#5 Floor 6": [
+                        "rogue4_b-7"
+                    ]
+                }
+            }
+        },
         "enemy_2066_skzlcp": {
             "is": {
                 "IS#5": {
                     "IS#5 Floor 4": [
-                        "rogue4_4-2"
+                        "rogue4_4-2",
+                        "rogue4_4-8",
+                        "rogue4_4-9"
                     ],
                     "IS#5 Floor 5": [
                         "rogue4_5-4",
@@ -82448,25 +83214,13 @@
                         "rogue4_b-1",
                         "rogue4_b-1-b"
                     ],
+                    "IS#5  ???": [
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-d"
+                    ],
                     "IS#5 Treasure": [
                         "rogue4_t-6"
-                    ]
-                }
-            }
-        },
-        "enemy_2068_skzirn": {
-            "is": {
-                "IS#5": {
-                    "IS#5 Floor 4": [
-                        "rogue4_4-6",
-                        "rogue4_4-6"
-                    ],
-                    "IS#5 Floor 6": [
-                        "rogue4_6-1",
-                        "rogue4_b-6"
-                    ],
-                    "IS#5 Event": [
-                        "rogue4_ev-2"
                     ]
                 }
             }
@@ -82570,6 +83324,11 @@
                 "IS#5": {
                     "IS#5 Floor 5": [
                         "rogue4_b-4"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-d"
                     ]
                 }
             }
@@ -82579,6 +83338,29 @@
                 "IS#5": {
                     "IS#5 Floor 5": [
                         "rogue4_b-4"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-d"
+                    ]
+                }
+            }
+        },
+        "enemy_2090_skzjbc": {
+            "is": {
+                "IS#5": {
+                    "IS#5  ???": [
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-d",
+                        "rogue4_b-5-c",
+                        "rogue4_b-5-d"
+                    ],
+                    "IS#5 Floor 6": [
+                        "rogue4_b-7"
+                    ],
+                    "IS#5 Duel": [
+                        "rogue4_d-b"
                     ]
                 }
             }
@@ -82588,6 +83370,11 @@
                 "IS#5": {
                     "IS#5 Floor 5": [
                         "rogue4_b-5"
+                    ],
+                    "IS#5  ???": [
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-c",
+                        "rogue4_b-5-d"
                     ]
                 }
             }
@@ -82597,6 +83384,15 @@
                 "IS#5": {
                     "IS#5 Floor 6": [
                         "rogue4_b-6"
+                    ]
+                }
+            }
+        },
+        "enemy_2089_skzjkl": {
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 6": [
+                        "rogue4_b-7"
                     ]
                 }
             }
