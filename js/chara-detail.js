@@ -1,6 +1,6 @@
     $.holdReady(true);
 
-    console.log = function () { }
+    //console.log = function () { }
 
     const jsonList = {
 
@@ -27,6 +27,7 @@
         charsEN         :"./json/gamedata/en_US/gamedata/excel/character_table.json",
         charpatchEN     :"./json/gamedata/en_US/gamedata/excel/char_patch_table.json",
         handbookInfoEN  :"./json/gamedata/en_US/gamedata/excel/handbook_info_table.json",
+        handbookTeamEN  :"./json/gamedata/en_US/gamedata/excel/handbook_team_table.json",
         charwordEN      :"./json/gamedata/en_US/gamedata/excel/charword_table.json",
         buildEN         :"./json/gamedata/en_US/gamedata/excel/building_data.json",
         skillsEN        :"./json/gamedata/en_US/gamedata/excel/skill_table.json",
@@ -116,6 +117,8 @@
     const AmiyaPatchID  =   [AmiyaGuard,AmiyaMedic]
     const AmiyaAllID    =   [AmiyaCaster, ...AmiyaPatchID]
 
+    var teamHTML = [[],[],[]]
+
     var currskin
     var currVoiceID
     var spinewidgettoken
@@ -153,9 +156,26 @@
             currentop.rarity = RarityConvert(currentop.rarity)
         })
 
+        Object.keys(db.handbookTeam).forEach(id =>{
+            //console.log(id,Object.keys(db.handbookTeam).includes(id),Object.keys(db.handbookTeamEN).includes(id))
+            if(id != "none"){
+                teamHTML[db.handbookTeam[id].powerLevel].push(
+                    `<div class="op-faction btn-secondary tooltip2" data-id="${id}" onclick="toggleBtn(this)" section="faction">
+                        <img class='filter-img faction-img'  src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/logo_${id}.png'>
+                        <span class="tooltiptext tooltiptop tooltipstyle1 nohover">
+                            ${Object.keys(db.handbookTeamEN).includes(id)?db.handbookTeamEN[id].powerName:db.handbookTeam[id].powerCode}
+                        </span>
+                    </div>`)
+            }
+        })
+
+        $("#nation").html(teamHTML[0])
+        $("#group").html(teamHTML[1])
+        $("#team").html(teamHTML[2])
+
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
-          })
+        })
         $('#to-tag').click(function(){      // When arrow is clicked
             $('body,html').animate({
                 scrollTop : 0                       // Scroll to top of body
@@ -604,6 +624,11 @@
         root.style.setProperty('--mouse-x', x);
         root.style.setProperty('--mouse-y', y);
     });
+
+    function clickID(){
+        console.log("copy ID",opdataFull.id)
+        navigator.clipboard.writeText(opdataFull.id)
+    }
 
     function clickBtnClear(){
         $("#chara-detail-container").hide();
@@ -1706,7 +1731,7 @@
             $("#op-nameTL").html(opdataFull.appellation);
             $("#op-nameREG").html(opdataFull.name);
 
-            $("#op-displaynum").html(`${opdataFull.displayNumber?`${opdataFull.displayNumber} | `:""}${opdataFull.id.split("_")[1]} | ${opdataFull.id.split("_")[2]}`)
+            $("#op-displaynum").html(`${opdataFull.displayNumber?`${opdataFull.displayNumber} | `:""}<a id="copy-id" onclick="clickID()">${opdataFull.id.split("_")[1]}</a> | ${opdataFull.id.split("_")[2]}`)
             if(unreadable){
                 $("#op-nameRead").html(`[ ${unreadable} ]`);
             }else{

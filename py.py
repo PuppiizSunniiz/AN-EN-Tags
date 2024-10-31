@@ -215,111 +215,120 @@ def time_check():
 #########################################################################################################
 # Ready
 #########################################################################################################
-DB={}
+def Ready():
+    DB={}
 
-ClassParse = {
-                "MEDIC"     : "Medic",         "WARRIOR"    : "Guard",
-                "SPECIAL"   : "Specialist",    "SNIPER"     : "Sniper",
-                "PIONEER"   : "Vanguard",      "CASTER"     : "Caster",
-                "SUPPORT"   : "Supporter",     "TANK"       : "Defender"
-            }
+    ClassParse = {
+                    "MEDIC"     : "Medic",         "WARRIOR"    : "Guard",
+                    "SPECIAL"   : "Specialist",    "SNIPER"     : "Sniper",
+                    "PIONEER"   : "Vanguard",      "CASTER"     : "Caster",
+                    "SUPPORT"   : "Supporter",     "TANK"       : "Defender"
+                }
 
-for char_key in json_char_patch["patchChars"].keys():
-    json_char_patch["patchChars"][char_key]["appellation"] += f' ({ClassParse[json_char_patch["patchChars"][char_key]["profession"]]})'
-json_char.update(json_char_patch["patchChars"])
+    for char_key in json_char_patch["patchChars"].keys():
+        json_char_patch["patchChars"][char_key]["appellation"] += f' ({ClassParse[json_char_patch["patchChars"][char_key]["profession"]]})'
+    json_char.update(json_char_patch["patchChars"])
 
-char_ready={"Code2Name":{},"Name2Code":{}}
-ops_exclude=[] # "isNotObtainable": true
-for char_key in json_char.keys():
-    if "char_" in char_key:
-        char_ready["Code2Name"][char_key]=get_char_name(char_key)
-        char_ready["Name2Code"][get_char_name(char_key)]=char_key
-        if json_char[char_key]["isNotObtainable"]:
-            ops_exclude.append(char_key)
-DB["Char"]=char_ready
+    char_ready={"Code2Name":{},"Name2Code":{},"CN2Code":{}}
+    ops_exclude=[] # "isNotObtainable": true
+    for char_key in json_char.keys():
+        if "char_" in char_key:
+            char_ready["Code2Name"][char_key]=get_char_name(char_key)
+            char_ready["Name2Code"][get_char_name(char_key)]=char_key
+            char_ready["CN2Code"][json_char[char_key]["name"]]=char_key
+            if json_char[char_key]["isNotObtainable"]:
+                ops_exclude.append(char_key)
+    DB["Char"]=char_ready
 
-range_ready={} # 🟥🟧🟨🟩🟦🟪🟫⬛⬜🔳
-for range_id in json_range.keys():
-    
-    temp =[[grid["col"],grid["row"]] for grid in json_range[range_id]["grids"]]
-    
-    max_x=max([x[0] for x in temp])
-    min_x=min([x[0] for x in temp]+[0])
-    max_y=max([y[1] for y in temp])
-    min_y=min([y[1] for y in temp]+[0])
-    
-    range_array=[["⬛" for x in range(max_x - min_x + 1)] for y in range(max_y - min_y + 1)]
-    
-    range_array[max_y][abs(min(0, min_x))]="🔳"
-
-    for col, row in temp:
-        if [col, row] == [0,0]:
-            range_array[row + max_y][col + abs(min(0, min_x))]="🟨"
-        else:
-            range_array[row + max_y][col + abs(min(0, min_x))]="🟦"
-    
-    range_ready[range_id] = ["".join(row) for row in range_array] + [str(temp)]
-    
-DB["Range"]=range_ready
-
-tag_ready={}
-for char in char_ready["Code2Name"].keys():
-    tag_ready[char_ready["Code2Name"][char]]=["高级资深干员" for x in range(1) if json_char[char]["rarity"][-1]=="6"]+ \
-                                            ["资深干员" for x in range(1) if json_char[char]["rarity"][-1]=="5"]+ \
-                                            ["新手" for x in range(1) if json_char[char]["rarity"][-1]=="2"]+ \
-                                            ["近战位" for x in range(1) if json_char[char]["position"]=="MELEE"]+ \
-                                            ["远程位" for x in range(1) if json_char[char]["position"]=="RANGED"]+ \
-                                            json_char[char]["tagList"]
-DB["Tag"]=tag_ready
-
-with open('py/dict.json', 'w', encoding='utf-8') as file:
-    json.dump(DB, file, indent=4, ensure_ascii=False)
-
-tag_ready={}
-
-'''
-    json_gacha  =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/gacha_table.json").read())
-    json_gachaEN  =   json.loads(open("json/gamedata/en_US/gamedata/excel/gacha_table.json").read())
-    gachapon={}
-    for tag in json_gacha["gachaTags"]:
-        gachapon[tag["tagId"]]={"tagName":tag["tagName"]}
-    for tag in json_gachaEN["gachaTags"]:
-        gachapon[tag["tagId"]].update({"EN":tag["tagName"]})
-    gacha=json.dumps(gachapon,indent=4, ensure_ascii=False)
-    with open('temp/tag.json','w') as JSON:
-        JSON.write(gacha)
+    range_ready={} # 🟥🟧🟨🟩🟦🟪🟫⬛⬜🔳
+    for range_id in json_range.keys():
         
-    tagstr=[]
-    for key in gachapon.keys():
-        tagstr.append("\t"*5+"case \""+gachapon[key]["EN"].lower()+"\":\n"+"\t"*6+"tags[i] = "+gachapon[key]["tagName"]+"\t"*round(4-len(gachapon[key]["tagName"])/2)+"#"+gachapon[key]["EN"])
-    gachastr=("\n").join(tagstr)
-    with open('temp/tag.txt','w') as JSON:
-        JSON.write(gachastr)
-'''
+        temp =[[grid["col"],grid["row"]] for grid in json_range[range_id]["grids"]]
+        
+        max_x=max([x[0] for x in temp])
+        min_x=min([x[0] for x in temp]+[0])
+        max_y=max([y[1] for y in temp])
+        min_y=min([y[1] for y in temp]+[0])
+        
+        range_array=[["⬛" for x in range(max_x - min_x + 1)] for y in range(max_y - min_y + 1)]
+        
+        range_array[max_y][abs(min(0, min_x))]="🔳"
 
+        for col, row in temp:
+            if [col, row] == [0,0]:
+                range_array[row + max_y][col + abs(min(0, min_x))]="🟨"
+            else:
+                range_array[row + max_y][col + abs(min(0, min_x))]="🟦"
+        
+        range_ready[range_id] = ["".join(row) for row in range_array] + [str(temp)]
+        
+    DB["Range"]=range_ready
+
+    tag_ready={}
+    for char in char_ready["Code2Name"].keys():
+        tag_ready[char_ready["Code2Name"][char]]=["高级资深干员" for x in range(1) if json_char[char]["rarity"][-1]=="6"]+ \
+                                                ["资深干员" for x in range(1) if json_char[char]["rarity"][-1]=="5"]+ \
+                                                ["新手" for x in range(1) if json_char[char]["rarity"][-1]=="2"]+ \
+                                                ["近战位" for x in range(1) if json_char[char]["position"]=="MELEE"]+ \
+                                                ["远程位" for x in range(1) if json_char[char]["position"]=="RANGED"]+ \
+                                                json_char[char]["tagList"]
+    DB["Tag"]=tag_ready
+
+    with open('py/dict.json', 'w', encoding='utf-8') as file:
+        json.dump(DB, file, indent=4, ensure_ascii=False)
+
+    '''
+        json_gacha  =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/gacha_table.json").read())
+        json_gachaEN  =   json.loads(open("json/gamedata/en_US/gamedata/excel/gacha_table.json").read())
+        gachapon={}
+        for tag in json_gacha["gachaTags"]:
+            gachapon[tag["tagId"]]={"tagName":tag["tagName"]}
+        for tag in json_gachaEN["gachaTags"]:
+            gachapon[tag["tagId"]].update({"EN":tag["tagName"]})
+        gacha=json.dumps(gachapon,indent=4, ensure_ascii=False)
+        with open('temp/tag.json','w') as JSON:
+            JSON.write(gacha)
+            
+        tagstr=[]
+        for key in gachapon.keys():
+            tagstr.append("\t"*5+"case \""+gachapon[key]["EN"].lower()+"\":\n"+"\t"*6+"tags[i] = "+gachapon[key]["tagName"]+"\t"*round(4-len(gachapon[key]["tagName"])/2)+"#"+gachapon[key]["EN"])
+        gachastr=("\n").join(tagstr)
+        with open('temp/tag.txt','w') as JSON:
+            JSON.write(gachastr)
+    '''
+
+    if __name__ == "__main__" :
+        return DB
+    else:
+        print("Ready !!!")
 #########################################################################################################
 # Go !!!
 #########################################################################################################
-while True:
-    menu_option = ["\n#  Select Function",
-                    "1 : Char Name/Code Check",
-                    "M : Mod Check",
-                    "R : Range Check",
-                    "T : Time Epoch",
-                    "0 : Exit"
-                    ]
-    print(msgbox(menu_option))
-    menu_input = input().strip()
-    match menu_input.lower():
-        case "0":
-            exit()
-        case "1":
-            char_check()
-        case "m":
-            mod_check()
-        case "r":
-            range_check()
-        case "t":
-            time_check()
-        case _:
-            continue
+def LetsGo():
+    while True:
+        menu_option = ["\n#  Select Function",
+                        "1 : Char Name/Code Check",
+                        "M : Mod Check",
+                        "R : Range Check",
+                        "T : Time Epoch",
+                        "0 : Exit"
+                        ]
+        print(msgbox(menu_option))
+        menu_input = input().strip()
+        match menu_input.lower():
+            case "0":
+                exit()
+            case "1":
+                char_check()
+            case "m":
+                mod_check()
+            case "r":
+                range_check()
+            case "t":
+                time_check()
+            case _:
+                continue
+
+if __name__ == "__main__" :
+    DB = Ready()
+    LetsGo()

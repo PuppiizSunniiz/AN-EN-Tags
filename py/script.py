@@ -1,5 +1,6 @@
 import json
 import glob
+import re
 
 ################################################################################################################################################################################################################################################
 # JSON
@@ -110,7 +111,8 @@ def load_json() -> dict :
                 "json_zoneEN" : json_load("json/gamedata/en_US/gamedata/excel/zone_table.json"),
                 "json_enemy_databaseEN" : json_load("json/gamedata/en_US/gamedata/levels/enemydata/enemy_database.json"),
                 
-                "json_named_effect" : json_load("json/named_effects.json")
+                "json_named_effect" : json_load("json/named_effects.json"),
+                "json_dict" : json_load("py/dict.json")
         }
 
 DB = load_json()
@@ -201,3 +203,36 @@ def term_kw():
 # Script Playground
 ################################################################################################################################################################################################################################################
 
+def recruit_update():
+    def cleanlist(recruit_list:str) -> str:
+        return recruit_list.replace("\\n","\n").replace("/"," / ").replace("  "," ").replace("< / ","</")
+    gacha_CN_list   =   cleanlist(DB["json_gacha"]["recruitDetail"]).split("\n")
+    gacha_EN_list   =   cleanlist(DB["json_gachaEN"]["recruitDetail"]).split("\n")
+    char_list       =   DB["json_dict"]["Char"]
+    recruitCN       =   []
+    recruitEN       =   []
+    bypass          =   {
+                            "THRM-EX"           :   "Thermal-EX",
+                            "Justice Knight"    :   "\"Justice Knight\"",
+                            "Shirayuki"         :   "ShiraYuki"
+                        }
+    #print(gacha_EN_list)
+    for i in range(6):
+        for ops in gacha_CN_list[gacha_CN_list.index("★"*(i+1))+1].split(" / "):
+            op = re.search(r"<@rc.eml>(.+?)</>",ops).group(1) if re.search(r"<@rc.eml>(.+?)</>",ops) else ops
+            recruitCN.append(char_list["CN2Code"][op.replace("\r","")])
+        for ops in gacha_EN_list[gacha_EN_list.index("★"*(i+1))+1].split(" / "):
+            op = re.search(r"<@rc.eml>(.+?)</>",ops).group(1) if re.search(r"<@rc.eml>(.+?)</>",ops) else ops
+            
+            op = bypass.get(op,op)
+            
+            recruitEN.append(char_list["Name2Code"][op])
+            
+    
+    script_result("\n".join(recruitCN+recruitEN))
+
+recruit_update()
+
+#testo = re.search(r"<@rc.eml>(.+?)</>","<@rc.eml>Lancet-2</>")
+#print(testo.group(1))
+#re.match("<@rc.eml>Lancet-2</> / <@rc.eml>Castle-3</> / <@rc.eml>THRM-EX</> / <@rc.eml>Justice Knight</> / <@rc.eml>Friston-3</>")

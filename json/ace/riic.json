@@ -70,19 +70,19 @@
         "descformat": "When this Operator is assigned to the Control Center, clue collection speed <@cc.vup>+25%</> (Only the strongest effect of this type takes place)."
     },
     "control_upMeetingSpeed[100]": {
-        "name": "Convergence of Expectations",
+        "name": "Convergence of Hope",
         "desc": "When stationed at the Command Center, clue collection speed +15% (Only highest effect becomes active)",
-        "descformat": "When this Operator is assigned to the Control Center, clue collection speed <@cc.vup>+15%</> (Only highest effect becomes active)"
+        "descformat": "When this Operator is assigned to the Control Center, clue collection speed <@cc.vup>+15%</> (Only the strongest effect of this type takes place)."
     },
     "control_meeting&ord[000]": {
-        "name": "Accomplice·α",
+        "name": "Conspirator α",
         "desc": "When stationed at the Command Center, if Ines is stationed at Reception, increase clue collection speed by +5%; if Hoederer is stationed at a Trade Stations, increase the order limit of the Trade Station Hoederer is in by +1",
-        "descformat": "When this Operator is assigned to the Control Center, if <@cc.kw>Ines</> is assigned to the Reception Room, clue collection speed <@cc.vup>+5%</>; if <@cc.kw>Hoederer</> is stationed at a Trade Stations, increase the order limit of the Trade Station Hoederer is in by <@cc.vup>+1</>"
+        "descformat": "When this Operator is assigned to the Control Center: if <@cc.kw>Ines</> is assigned to the Reception Room, clue collection speed <@cc.vup>+5%</>; if <@cc.kw>Hoederer</> is assigned to a Trading Post, that Trading Post's order limit <@cc.vup>+1</>."
     },
     "control_meeting&ord[001]": {
-        "name": "Accomplice·β",
+        "name": "Conspirator β",
         "desc": "When stationed at the Command Center, if Ines is stationed at Reception, increase clue collection speed by +5%; if Hoederer is stationed at a Trade Stations, increase the order limit of the Trade Station Hoederer is in by +2",
-        "descformat": "When this Operator is assigned to the Control Center, if <@cc.kw>Ines</> is assigned to the Reception Room, clue collection speed by <@cc.vup>+5%</>; if <@cc.kw>Hoederer</> is stationed at a Trade Stations, increase the order limit of the Trade Station Hoederer is in by <@cc.vup>+2</>"
+        "descformat": "When this Operator is assigned to the Control Center: if <@cc.kw>Ines</> is assigned to the Reception Room, clue collection speed <@cc.vup>+5%</>; if <@cc.kw>Hoederer</> is assigned to a Trading Post, that Trading Post's order limit <@cc.vup>+2</>."
     },
     "control_clue_cost[000]": {
         "name": "Neuroticism",
@@ -165,14 +165,14 @@
         "descformat": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by <@cc.vup>+0.05</> per hour."
     },
     "control_mp_cost_double[000]": {
-        "name": "Sarkaz King's Inheritance",
+        "name": "King's Legacy",
         "desc": "When stationed at the Command Center with Amiya, mood recovery per hour of self and Amiya +0.05",
-        "descformat": "When this Operator is assigned together with <@cc.kw>Amiya</> to the Control Center, increases Morale recovery per hour of self and <@cc.kw>Amiya</> by <@cc.vup>+0.05</>"
+        "descformat": "When this Operator is assigned to the Control Center with <@cc.kw>Amiya</>, self and <@cc.kw>Amiya</>'s Morale recovered per hour <@cc.vup>+0.05</>."
     },
     "control_mp_cost_double[001]": {
-        "name": "“Unfinished Story”",
+        "name": "'Unfinished Story'",
         "desc": "When stationed at the Command Center with Amiya, mood recovery per hour of self and Amiya +0.1",
-        "descformat": "When this Operator is assigned together with <@cc.kw>Amiya</> to the Control Center, increases Morale recovery per hour of self and <@cc.kw>Amiya</> by <@cc.vup>+0.1</>"
+        "descformat": "When this Operator is assigned to the Control Center with <@cc.kw>Amiya</>, self and <@cc.kw>Amiya</>'s Morale recovered per hour <@cc.vup>+0.1</>."
     },
     "control_allCost_condChar[000]": {
         "name": "Moment of Respite",
@@ -235,9 +235,9 @@
         "descformat": "When this Operator is assigned to the Control Center, Operators working in <$cc.c.room2><@cc.kw>other buildings</></> recover <@cc.vup>+0.05</> Morale per hour, with an additional <@cc.vup>+0.05</> for every <@cc.vup>20</> <$cc.bd_b1><@cc.rem>Worldly Plight</></> (<$cc.c.sui2_1><@cc.rem>Special Comparison Rules</></> apply with Control Center bonus)"
     },
     "control_mp_expand_double[000]": {
-        "name": "Flag of Babel",
+        "name": "Banner of Babel",
         "desc": "When stationed at the Command Center, mood recovery per hour of operators working in other facilities +0.1. If Civilight Eterna is stationed at the Command Center, mood recovery increases by another +0.1 (has Special Comparison Rules with Command Center effect)",
-        "descformat": "When this Operator is assigned to the Control Center, increases Morale of all Operators in <$cc.c.room2><@cc.kw>other facilities</></> by <@cc.vup>+0.1</> per hour. If <@cc.kw>Civilight Eterna</> is assigned to the Control Center, further increases Morale restored by <@cc.vup>+0.1</> (has <$cc.c.sui2_1><@cc.rem>Special Comparison Rules</></> with Command Center effect)"
+        "descformat": "When this Operator is assigned to the Control Center, Operators working in <$cc.c.room2><@cc.kw>other buildings</></> recover <@cc.vup>+0.1</> Morale per hour, with an additional <@cc.vup>+0.1</> when <@cc.kw>Civilight Eterna</> is also assigned to the Control Center (<$cc.c.sui2_1><@cc.rem>Special Comparison Rules</></> apply with Control Center bonus)."
     },
     "control_mp_cost&bd2[010]": {
         "name": "Endurance Recovery",
@@ -400,7 +400,7 @@
         "descformat": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+15%</>"
     },
     "power_rec_spd[004]": {
-        "name": "Elegy Recharging·α",
+        "name": "Elegy Charge α",
         "desc": "When stationed at a Power Station, drone recovery +10%",
         "descformat": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+10%</>"
     },
@@ -427,7 +427,7 @@
     "power_rec_spd_P[001]": {
         "name": "Incantation Resonance",
         "desc": "When stationed at a Power Station and Logos is stationed in the Training Station, drone recovery +5%",
-        "descformat": "When this Operator is assigned to a Power Plant, if <@cc.kw>Logos</> is assigned to the Control Center, increases the drone recovery rate by <@cc.vup>+5%</>"
+        "descformat": "When this Operator is assigned to a Power Plant, if <@cc.kw>Logos</> is assigned to be the Trainer in the Training Room, increases the drone recovery rate by <@cc.vup>+5%</>."
     },
     "power_rec_rhine[000]": {
         "name": "Ecological Section Director",
@@ -470,7 +470,7 @@
         "descformat": "When this Operator is assigned to a Factory, productivity <@cc.vup>+15%</>"
     },
     "manu_prod_spd[1000]": {
-        "name": "Standardization·α",
+        "name": "Standardization α",
         "desc": "When stationed at a Craft Station, production +15%",
         "descformat": "When this Operator is assigned to a Factory, productivity <@cc.vup>+15%</>"
     },
@@ -585,9 +585,9 @@
         "descformat": "When this Operator is assigned to a Factory, capacity limit <@cc.vup>+10</> and productivity <@cc.vup>+10%</>"
     },
     "manu_prod_spd&fraction[000]": {
-        "name": "Reunion Time",
+        "name": "Time of Reunion",
         "desc": "When stationed at a Craft Station, for every operator from Team A1, production +10%",
-        "descformat": "When this Operator is assigned to a Factory, for every operator from <$cc.g.A1><@cc.kw>Team A1</></>, productivity <@cc.vup>+10%</>"
+        "descformat": "When this Operator is assigned to a Factory, gain <@cc.vup>+10%</> productivity for each <$cc.g.A1><@cc.kw>A1 Detachment</></> Operator in the same Factory."
     },
     "manu_prod_spd&limit&bd[000]": {
         "name": "Trusty Buddies",
@@ -1630,9 +1630,9 @@
         "descformat": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Caster</> and <@cc.kw>Medic</> Operators' Specialization training speed <@cc.vup>+30%</>"
     },
     "train_spd_doubleProf[200]": {
-        "name": "Banshee's Power",
+        "name": "The Power of a Banshee",
         "desc": "When stationed at the Training Station, increase the skill training speed of Caster and Supporter operators by +30%",
-        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Caster</> and <@cc.kw>Supporter</> Operators' Specialization training speed <@cc.vup>+30%</>"
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Caster</> and <@cc.kw>Supporter</> Operators' Specialization training speed <@cc.vup>+30%</>."
     },
     "train_spd_doubleProf[110]": {
         "name": "Red Dragon's Blood",
@@ -1655,9 +1655,9 @@
         "descformat": "When this Operator is assigned to the Training Room to train an Operator for <@cc.vup>5</> hours, that Operator's next training time <@cc.vup>-50%</> (effect expires if either Operator leaves the Training Room)"
     },
     "train_spd_reduceTime[001]": {
-        "name": "Meaning of Words",
+        "name": "The Meaning of Words",
         "desc": "When stationed at the Training Station and after assisting an operator in training for 5 hours in a single session, reduce the training time required for that operator's next training by 50% (effect disappears if either operator leaves the Training Station)",
-        "descformat": "When this Operator is assigned to the Training Room to train an Operator for <@cc.vup>5</> hours in a single session, reduce the training time required for that operator's next training by <@cc.vup>50%</> (effect disappears if either operator leaves the Training Station)"
+        "descformat": "When this Operator is assigned to the Training Room to train an Operator for <@cc.vup>5</> hours, that Operator's next training time <@cc.vup>-50%</> (effect expires if either Operator leaves the Training Room)"
     },
     "train_spd_bd&reduceTime[000]": {
         "name": "Think Before Acting",

@@ -1,8 +1,10 @@
-
+import re
 import json
-from pyfunction import char_ready, json_load
+from pyfunction import char_ready, name_check, json_load
 from pyAkenemy import Akenemy
+from py import Ready
 
+Ready()
 #########################################################################################################
 # JSON
 #########################################################################################################
@@ -15,6 +17,9 @@ json_char           =   json_load("json/gamedata/zh_CN/gamedata/excel/character_
 json_charEN         =   json_load("json/gamedata/en_US/gamedata/excel/character_table.json")
 json_charJP         =   json_load("json/gamedata/ja_JP/gamedata/excel/character_table.json")
 json_charKR         =   json_load("json/gamedata/ko_KR/gamedata/excel/character_table.json")
+
+json_gacha          =   json_load("json/gamedata/zh_CN/gamedata/excel/gacha_table.json")
+json_gachaEN        =   json_load("json/gamedata/en_US/gamedata/excel/gacha_table.json")
 
 json_skill          =   json_load("json/gamedata/zh_CN/gamedata/excel/skill_table.json")
 json_skillEN        =   json_load("json/gamedata/en_US/gamedata/excel/skill_table.json")
@@ -43,21 +48,23 @@ json_riicTL         =   json_load("json/ace/riic.json")
 json_tl_item        =   json_load("json/tl-item.json")
 json_temp_mod       =   json_load("json/tl-module.json")
 
+json_dict           =   json_load("py/dict.json")
+
 #########################################################################################################
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS = [] # 
+NEW_CHARS = [] # "", "Lappland the Decadenza","Vulpisfoglia","Crownslayer","Figurino","Philae","Contrail"
 
 #[["OpsName#1",num(Mod)],["OpsName#2",num(Mod)], ...]
-NEW_MODS = [] # ["",]     
+NEW_MODS = [] # ["",],
 
 #["ItemID#1","ItemID#2", ...]
-NEW_MATS = [] #
+NEW_MATS = [] # "",
 
 #["OpsName#1","OpsName#2", ...]
-NEW_RECRUIT_CN = [] # 
-NEW_RECRUIT_EN = [] #
+#NEW_RECRUIT_CN = [] # "", "Mountain","Kafka","Pinecone"
+#NEW_RECRUIT_EN = ["Blemishine","Aosta","Bubble","PhonoR-0"] # "",
 
 Rechecked = True # True False
 
@@ -90,24 +97,24 @@ MAT_LIST    = [mat_data["itemId"] for mat_data in json_akmaterial]
 #########################################################################################################
 def get_new_akhr(new_char_id : str, new_char_name : str) -> dict:
     return  {
-                                    "id"            : new_char_id,
-                                    "name_cn"       : json_char[new_char_id]["name"],
-                                    "name_en"       : new_char_name,
-                                    "name_jp"       : "",
-                                    "name_kr"       : "",
-                                    "nationId"      : json_char[new_char_id]["nationId"],
-                                    "groupId"       : json_char[new_char_id]["groupId"],
-                                    "teamId"        : json_char[new_char_id]["teamId"],
-                                    "type"          : CLASS_PARSE_CN[json_char[new_char_id]["profession"]],
-                                    "level"         : int(json_char[new_char_id]["rarity"][-1]),
-                                    "sex"           : ''.join(json_handbook["handbookDict"][new_char_id]["storyTextAudio"][0]["stories"][0]["storyText"].split("\n")[1].split("】")[1].split()),
-                                    "tags"          : ["高级资深干员" for x in range(1) if json_char[new_char_id]["rarity"][-1] == "6"]+ \
+                                    "id"            :   new_char_id,
+                                    "name_cn"       :   json_char[new_char_id]["name"],
+                                    "name_en"       :   new_char_name,
+                                    "name_jp"       :   "",
+                                    "name_kr"       :   "",
+                                    "nationId"      :   json_char[new_char_id]["nationId"],
+                                    "groupId"       :   json_char[new_char_id]["groupId"],
+                                    "teamId"        :   json_char[new_char_id]["teamId"],
+                                    "type"          :   CLASS_PARSE_CN[json_char[new_char_id]["profession"]],
+                                    "level"         :   int(json_char[new_char_id]["rarity"][-1]),
+                                    "sex"           :   ''.join(json_handbook["handbookDict"][new_char_id]["storyTextAudio"][0]["stories"][0]["storyText"].split("\n")[1].split("】")[1].split()),
+                                    "tags"          :   ["高级资深干员" for x in range(1) if json_char[new_char_id]["rarity"][-1] == "6"]+ \
                                                         ["资深干员" for x in range(1) if json_char[new_char_id]["rarity"][-1] == "5"]+ \
                                                         ["近战位" for x in range(1) if json_char[new_char_id]["position"] == "MELEE"]+ \
                                                         ["远程位" for x in range(1) if json_char[new_char_id]["position"] == "RANGED"]+ \
                                                         json_char[new_char_id]["tagList"],
-                                    "hidden"        : True,
-                                    "globalHidden"  : True
+                                    "hidden"        :   True,
+                                    "globalHidden"  :   True
             }
 
 def update_new_trait(mode : str, new_id : str, new_char_name : str, extra = "") -> dict:
@@ -208,29 +215,52 @@ for char_data in json_akhr:
         if char_data[lang[0]] == "":
             if char_data["id"] in lang[1].keys():
                 char_data[lang[0]] = lang[1][char_data["id"]]["name"]
+
 #Update recruitment
-##CN
+def cleanlist(recruit_list:str) -> str:
+    return recruit_list.replace("\\n","\n").replace("/"," / ").replace("  "," ").replace("< / ","</")
+
+gacha_CN_list   =   cleanlist(json_gacha["recruitDetail"]).split("\n")
+gacha_EN_list   =   cleanlist(json_gachaEN["recruitDetail"]).split("\n")
+
+bypass          =   {
+                        "THRM-EX"               :   "Thermal-EX",
+                        "\'Justice Knight\'"    :   "\"Justice Knight\"",
+                        "Shirayuki"             :   "ShiraYuki"
+                    }
+
+for i in range(6):
+    ##CN
+    for ops in gacha_CN_list[gacha_CN_list.index("★"*(i+1))+1].split(" / "):
+        op = (re.search(r"<@rc.eml>(.+?)</>",ops).group(1) if re.search(r"<@rc.eml>(.+?)</>",ops) else ops).replace("\r","")
+        json_akhr[[index for index,d in enumerate(json_akhr) if d["name_cn"] == op][0]]["hidden"] = False
+    ##EN
+    for ops in gacha_EN_list[gacha_EN_list.index("★"*(i+1))+1].split(" / "):
+        op = re.search(r"<@rc.eml>(.+?)</>",ops).group(1) if re.search(r"<@rc.eml>(.+?)</>",ops) else ops
+        json_akhr[[index for index,d in enumerate(json_akhr) if name_check(d["name_en"]) == bypass.get(op,op)][0]]["globalHidden"] = False
+
 '''if NEW_RECRUIT_CN:
     for new_recruit_char in NEW_RECRUIT_CN:
         for char_data in json_akhr:
             if new_recruit_char.lower() == char_data["name_en"].lower():
                 char_data["hidden"] = False
-                break'''
+                break
             
 if NEW_RECRUIT_CN:
     for new_recruit_char in NEW_RECRUIT_CN:
         json_akhr[[index for index,d in enumerate(json_akhr) if d["name_en"].lower() == new_recruit_char.lower()][0]]["hidden"] = False
-##EN
-'''if NEW_RECRUIT_EN:
+
+if NEW_RECRUIT_EN:
     for new_recruit_char in NEW_RECRUIT_EN:
         for char_data in json_akhr:
             if new_recruit_char.lower() == char_data["name_en"].lower():
                 char_data["globalHidden"] = False
-                break'''
+                break
             
 if NEW_RECRUIT_EN:
     for new_recruit_char in NEW_RECRUIT_EN:
         json_akhr[[index for index,d in enumerate(json_akhr) if d["name_en"].lower() == new_recruit_char.lower()][0]]["globalHidden"] = False
+'''
 
 with open("json/tl-akhr.json",'w') as filepath :
     json.dump(json_akhr,filepath,indent = 4, ensure_ascii = False)
