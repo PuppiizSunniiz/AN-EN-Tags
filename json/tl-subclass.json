@@ -57,7 +57,8 @@
             "unyield",
             "duelist",
             "fortress",
-            "shotprotector"
+            "shotprotector",
+            "primprotector"
         ],
         "SUPPORT":[
             "slower",
@@ -77,7 +78,8 @@
             "traper",
             "dollkeeper",
             "geek",
-            "alchemist"
+            "alchemist",
+            "skywalker"
         ]
     },
     "subclass":{
@@ -321,6 +323,11 @@
             "tl":"Sentinel Iron Guard",
             "en":"Sentry Protector"
         },
+        "primprotector":{
+            "name":"Primal Defender",
+            "tl":"Primal Defender",
+            "en":"Primal Defender"
+        },
 
         "slower":{
             "name":"Slower",
@@ -402,6 +409,11 @@
             "name":"Alchemist",
             "tl":"Alchemist",
             "en":""
+        },
+        "skywalker":{
+            "name":"Skyranger",
+            "tl":"Skyranger",
+            "en":"Skyranger"
         }
     }
 }

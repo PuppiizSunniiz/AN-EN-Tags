@@ -2136,7 +2136,7 @@
                                 <div style = "display:inline-block; height:40px">
                                     <img class='equip-image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/shining/${currequip.equipShiningColor}_shining.png' style='width: 50px; margin: 0px -5px 0px -5px'></img>
                                     <div style = "display:inline-block; position:absolute;margin: -1px 0px 0px -35px">
-                                        <img class='equip-image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/type/${currequip.typeIcon}.png' style='width: 30px; position:absolute;'></img>
+                                        <img class='equip-image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/type/${currequip.typeIcon.toLowerCase()}.png' style='width: 30px; position:absolute;'></img>
                                     </div>
                                     <div style = "position:absolute;margin: 0px 0px 0px 0px">
                                         <div style = "width:60px;margin: 4px 0px 0px -10px;background:#222;color:#ddd;font-size:10px">${currequip.typeIcon.slice(0,-1).toUpperCase()}${greek[currequip.typeIcon.slice(-1)]?greek[currequip.typeIcon.slice(-1)]:currequip.typeIcon.slice(-1).toUpperCase()}</div>
@@ -2749,6 +2749,11 @@
                                 objective2 = "to fall in a pit"
                                 enemyid = splitreq[1]
                                 break;
+                            case "output_unmovable":
+                                objective = "Bind"
+                                objective2 = ""
+                                enemyid = splitreq[1]
+                                break;
                         }
                         break;
                     default:
@@ -2758,9 +2763,12 @@
 
                 //Enemies
                 function enemyparse(enemyid){
-                    var enemycn = db.enemy.enemyData[enemyid]
-                    var enemyen = db.enemyEN.enemyData?db.enemyEN.enemyData[enemyid]:db.enemyEN[enemyid]
-                    return enemyen?enemyen.name:enemycn.name
+                    if (enemyid == "*") return "any"
+                    else {
+                        var enemycn = db.enemy.enemyData[enemyid]
+                        var enemyen = db.enemyEN.enemyData?db.enemyEN.enemyData[enemyid]:db.enemyEN[enemyid]
+                        return enemyen?enemyen.name:enemycn.name
+                    }
                 }
 
                 if(enemyid){
@@ -2788,12 +2796,20 @@
                     `
                 }
                 else if (enemyName){
-                    tl=`
-                    Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
-                    </br>${objective} <@ba.kw>${mission.paramList[4]}</> <@ba.kw>${enemyName}</>
-                    <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${enemyid}.png" style="max-width:50px"> ${objective2}
-                    </br>Using Non-Borrowed <@ba.kw>${chara.appellation}</>
-                    `
+                    if(enemyName == "any"){
+                        tl=`
+                            Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
+                            </br>${objective} <@ba.kw>${mission.paramList[4]}</> enemies ${objective2}
+                            </br>Using Non-Borrowed <@ba.kw>${chara.appellation}</>
+                        `
+                    }else{
+                        tl=`
+                            Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
+                            </br>${objective} <@ba.kw>${mission.paramList[4]}</> <@ba.kw>${enemyName}</>
+                            <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${enemyid}.png" style="max-width:50px"> ${objective2}
+                            </br>Using Non-Borrowed <@ba.kw>${chara.appellation}</>
+                        `
+                    }
                 }else if (skill){
                     tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
@@ -2855,10 +2871,10 @@
                     console.log(element.id)
                     skilltext += `<@ba.kw> <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/skills/skill_icon_${element.id}.png" style="max-width:20px;margin:2px"> ${element.name} (Skill ${element.num})</> </br>`
                 });
-                tl=`
-                    Complete <@ba.kw>${mission.paramList[0]}</> stages </br>
-                    ${skilltext}
-                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[3]]?db.chars[mission.paramList[3]].appellation:db.charpatch.patchChars[mission.paramList[3]].appellation}</>
+                tl =`
+                        Complete <@ba.kw>${mission.paramList[0]}</> stages </br>
+                        ${skilltext}
+                        Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[3]]?db.chars[mission.paramList[3]].appellation:db.charpatch.patchChars[mission.paramList[3]].appellation}</>
                     `
                 break;
             case "EquipmentDeployCharOrder" :
@@ -2877,16 +2893,16 @@
                         order = `${mission.paramList[1]}th`
                         break;
                 }
-                tl=`
-                    Complete <@ba.kw>${mission.paramList[0]}</> stages </br>
-                    Deploy Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</> on the <@ba.kw>${order}</> order
+                tl =`
+                        Complete <@ba.kw>${mission.paramList[0]}</> stages </br>
+                        Deploy Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</> on the <@ba.kw>${order}</> order
                     `
                 break;
             case "EquipmentDeployOneNoEvac":
                 var stage = db.stage.stages[mission.paramList[1]].code
-                tl=`
-                    Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star </br>
-                    Deploy Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</> on the <@ba.kw>1st</> order and not retreated or killed throughout stage
+                tl =`
+                        Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star </br>
+                        Deploy Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</> on the <@ba.kw>1st</> order and not retreated or killed throughout stage
                     `
                 break;
 
@@ -2899,34 +2915,52 @@
                     console.log(currchar.appellation)
                     splitName+=  `</br><@ba.kw> <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${element}.png" style="max-width:50px"> ${currchar.appellation} </>`
                 });
-                tl=`
-                    Complete <@ba.kw>${mission.paramList[0]}</> stages </br>
-                    Kill at least <@ba.kw>${mission.paramList[2]}</> enemies using Non-Borrowed : 
-                    ${splitName}
-                `
+                tl =`
+                        Complete <@ba.kw>${mission.paramList[0]}</> stages </br>
+                        Kill at least <@ba.kw>${mission.paramList[2]}</> enemies using Non-Borrowed : 
+                        ${splitName}
+                    `
                 break;
             case "EquipmentStageDeployCntAndSpec":
                 var stage = db.stage.stages[mission.paramList[1]].code
-                tl=`
-                    Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star </br>
-                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</> and deploy at max of <@ba.kw>${mission.paramList[3]}</> other operators
+                tl =`
+                        Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star </br>
+                        Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</> and deploy at max of <@ba.kw>${mission.paramList[3]}</> other operators
                     `
                 break;
             case "EquipmentDeployCharAndKillCnt":
                 var currchar = db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]]:db.charpatch.patchChars[mission.paramList[2]]
-                tl=`
-                    Complete <@ba.kw>${mission.paramList[0]}</> stages </br>
-                    Kill at least <@ba.kw>${mission.paramList[4]}</> enemies using Non-Borrowed </br>
-                    <@ba.kw> <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${mission.paramList[2]}.png" style="max-width:50px"> ${currchar.appellation} </>, and at least deployed <@ba.kw>${mission.paramList[1]}</> times
-                `
+                tl =`
+                        Complete <@ba.kw>${mission.paramList[0]}</> stages </br>
+                        Kill at least <@ba.kw>${mission.paramList[4]}</> enemies using Non-Borrowed </br>
+                        <@ba.kw> <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${mission.paramList[2]}.png" style="max-width:50px"> ${currchar.appellation} </>, and at least deployed <@ba.kw>${mission.paramList[1]}</> times
+                    `
                 break;
             case "EquipmentBattleCharDamage":
                 var currchar = db.chars[mission.paramList[1]]?db.chars[mission.paramList[1]]:db.charpatch.patchChars[mission.paramList[1]]
-                tl=`
-                    Complete <@ba.kw>${mission.paramList[0]}</> stages </br>
-                    Deal at least <@ba.kw>${mission.paramList[2]}</> damage using Non-Borrowed </br>
-                    <@ba.kw> <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${mission.paramList[1]}.png" style="max-width:50px"> ${currchar.appellation} </>
-                `
+                tl =`
+                        Complete <@ba.kw>${mission.paramList[0]}</> stages </br>
+                        Deal at least <@ba.kw>${mission.paramList[2]}</> damage using Non-Borrowed </br>
+                        <@ba.kw> <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${mission.paramList[1]}.png" style="max-width:50px"> ${currchar.appellation} </>
+                    `
+                break;
+
+            case "EquipmentElementBurst":
+                var currchar = db.chars[mission.paramList[0]]?db.chars[mission.paramList[0]]:db.charpatch.patchChars[mission.paramList[0]]
+                tl =`
+                        Cause <@ba.kw>Elemental burst</> <@ba.kw>${mission.paramList[1]}</> times
+                        <br>Using Non-Borrowed <@ba.kw>${currchar.appellation}</>
+                    `
+                break;
+            
+            case "EquipmentElementBurstStage":
+                var currchar = db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]]:db.charpatch.patchChars[mission.paramList[2]]
+                var stage = db.stage.stages[mission.paramList[1]].code
+                tl = `
+                        Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
+                        <br>Cause at least <@ba.kw>${mission.paramList[3]}</> <@ba.kw>Elemental burst</> </br>
+                        Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</>
+                    `  
                 break;
         }
         tl = `

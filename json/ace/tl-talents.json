@@ -7459,5 +7459,167 @@
                 "desc": "The first hit on each enemy deal 18%<@ba.talpu>(+2%)</> of ATK as <$ba.dt.burning2>Burn damage</> for 5 seconds"
             }
         ]
+    ],
+	"char_1038_whitw2": [
+        [
+            {
+                "name": "头狼",
+                "descCN": "每在场上停留30秒，浮游单元依次获得以下一个效果：伤害上限提高6%、造成伤害时使目标特殊能力失效1秒、数量+1",
+                "desc": "Every 30 seconds Drones periodically gain one of the following effects in order: Increase damage limit by 6%, when dealing damage Silence the target for 1 second, Drone +1"
+            },
+            {
+                "name": "头狼",
+                "descCN": "每在场上停留26<@ba.talpu>（-4）</>秒，浮游单元依次获得以下一个效果：伤害上限提高6%、造成伤害时使目标特殊能力失效1秒、数量+1",
+                "desc": "Every 26<@ba.talpu>(-4)</> seconds Drones periodically gain one of the following effects in order: Increase damage limit by 6%, when dealing damage Silence the target for 1 second, Drone +1"
+            },
+            {
+                "name": "头狼",
+                "descCN": "每在场上停留20秒，浮游单元依次获得以下一个效果：伤害上限提高10%、造成伤害时使目标特殊能力失效2秒、数量+1",
+                "desc": "Every 20 seconds Drones periodically gain one of the following effects in order: Increase damage limit by 10%, when dealing damage Silence the target for 2 second, Drone +1"
+            },
+            {
+                "name": "头狼",
+                "descCN": "每在场上停留16<@ba.talpu>（-4）</>秒，浮游单元依次获得以下一个效果：伤害上限提高10%、造成伤害时使目标特殊能力失效2秒、数量+1",
+                "desc": "Every 16<@ba.talpu>(-4)</> seconds Drones periodically gain one of the following effects in order: Increase damage limit by 10%, when dealing damage Silence the target for 2 second, Drone +1"
+            }
+        ],
+        [
+            {
+                "name": "叙拉古的荣幸",
+                "descCN": "编入队伍时所有【叙拉古】干员的初始技力+5",
+                "desc": "When in squad, all [Siracusa] operators start with +5 SP"
+            },
+            {
+                "name": "叙拉古的荣幸",
+                "descCN": "编入队伍时所有【叙拉古】干员的初始技力+6<@ba.talpu>（+1）</>",
+                "desc": "When in squad, all [Siracusa] operators start with +6<@ba.talpu>(+1)</> SP"
+            }
+        ],
+        [],
+        []
+    ],
+    "char_4026_vulpis": [
+        [
+            {
+                "name": "追凶",
+                "descCN": "对每个敌人造成首次伤害后，10秒内忍冬对该敌人造成伤害时额外造成攻击力 20%的法术伤害",
+                "desc": "After dealing damage to an enemy for the first time, Vulpisfoglia deals addition 20% ATK as Arts damage when dealing damage to them within 10 seconds"
+            },
+            {
+                "name": "追凶",
+                "descCN": "对每个敌人造成首次伤害后，10秒内忍冬对该敌人造成伤害时额外造成攻击力 30%的法术伤害",
+                "desc": "After dealing damage to an enemy for the first time, Vulpisfoglia deals addition 30% ATK as Arts damage when dealing damage to them within 10 seconds"
+            }
+        ],
+        [
+            {
+                "name": "蓄势",
+                "descCN": "在场时，部署费用的自然回复速度+10%，若4秒内自身未受到伤害，则每秒恢复4%的最大生命值",
+                "desc": "When deployed, increase the natural rate of DP regeneration by 10%. If Vulpisfoglia has not received damage for 4 seconds, recover 4% Max HP every second"
+            },
+            {
+                "name": "蓄势",
+                "descCN": "在场时，部署费用的自然回复速度+10%，若4秒内自身未受到伤害，则每秒恢复5%<@ba.talpu>（+1%）</>的最大生命值",
+                "desc": "When deployed, increase the natural rate of DP regeneration by 10%. If Vulpisfoglia has not received damage for 4 seconds, recover 5%<@ba.talpu>(+1%)</> Max HP every second"
+            }
+        ]
+    ],
+    "char_1502_crosly": [
+        [
+            {
+                "name": "吞咽苦厄",
+                "descCN": "技能持续期间在自身周围产生烟雾，使其中的地面敌人物理与法术命中率-15%",
+                "desc": "When skill is active, generate a smokescreen around Crownslayer, reduce Physical and Arts Accuracy of ground enemies within by 15%"
+            },
+            {
+                "name": "吞咽苦厄",
+                "descCN": "技能持续期间在自身周围产生烟雾，使其中的地面敌人物理与法术命中率-20%",
+                "desc": "When skill is active, generate a smokescreen around Crownslayer, reduce Physical and Arts Accuracy of ground enemies within by 20%"
+            }
+        ],
+        [
+            {
+                "name": "弑君者威名",
+                "descCN": "对未伤害过自身的地面敌人造成的物理伤害提升20%",
+                "desc": "Increased Physical damage by 20% when dealing damage against enemies that haven't dealt damage to Crownslayer"
+            },
+            {
+                "name": "弑君者威名",
+                "descCN": "对未伤害过自身的地面敌人造成的物理伤害提升22%<@ba.talpu>（+2）</>",
+                "desc": "Increased Physical damage by 22%<@ba.talpu>(+2)</> when dealing damage against enemies that haven't dealt damage to Crownslayer"
+            }
+        ]
+    ],
+    "char_4155_talr": [
+        [
+            {
+                "name": "谨慎择客",
+                "descCN": "攻击未被自身阻挡的敌人时，自身造成的伤害+10%",
+                "desc": "Increase damage dealt when attacking enemies not blocked by self by 10%"
+            },
+            {
+                "name": "谨慎择客",
+                "descCN": "攻击未被自身阻挡的敌人时，自身造成的伤害+15%<@ba.talpu>（+5%）</>",
+                "desc": "Increase damage dealt when attacking enemies not blocked by self by 15%<@ba.talpu>(+5%)</>"
+            },
+            {
+                "name": "谨慎择客",
+                "descCN": "攻击未被自身阻挡的敌人时，自身造成的伤害+20%",
+                "desc": "Increase damage dealt when attacking enemies not blocked by self by 20%"
+            },
+            {
+                "name": "谨慎择客",
+                "descCN": "攻击未被自身阻挡的敌人时，自身造成的伤害+25%<@ba.talpu>（+5%）</>",
+                "desc": "Increase damage dealt when attacking enemies not blocked by self by 25%<@ba.talpu>(+5%)</>"
+            }
+        ]
+    ],
+    "char_4148_philae": [
+        [
+            {
+                "name": "神河谕使",
+                "descCN": "受到的元素损伤-5%，受到凋亡损伤时回复1点技力",
+                "desc": "Reduce Elemental damage taken by 5%. When taking <$ba.dt.apoptosis>Necrosis Damage</>, recover 1 SP"
+            },
+            {
+                "name": "神河谕使",
+                "descCN": "受到的元素损伤-7%<@ba.talpu>（+2%）</>，受到凋亡损伤时回复1点技力",
+                "desc": "Reduce Elemental damage taken by 7%<@ba.talpu>(+2%)</>. When taking <$ba.dt.apoptosis>Necrosis Damage</>, recover 1 SP"
+            },
+            {
+                "name": "神河谕使",
+                "descCN": "受到的元素损伤-10%，受到凋亡损伤时回复2点技力",
+                "desc": "Reduce Elemental damage taken by 10%. When taking <$ba.dt.apoptosis>Necrosis Damage</>, recover 2 SP"
+            },
+            {
+                "name": "神河谕使",
+                "descCN": "受到的元素损伤-12%<@ba.talpu>（+2%）</>，受到凋亡损伤时回复2点技力",
+                "desc": "Reduce Elemental damage taken by 12%<@ba.talpu>(+2%)</>. When taking <$ba.dt.apoptosis>Necrosis Damage</>, recover 2 SP"
+            }
+        ]
+    ],
+    "char_4165_ctrail": [
+        [
+            {
+                "name": "低空乱流",
+                "descCN": "在地面时防御力+5%，<$ba.liftoff>起飞</>后攻击敌人时攻击力提升至105%",
+                "desc": "When on ground, DEF+5%. After <$ba.liftoff>Take off</>, ATK is increased to 105% when attacking enemies"
+            },
+            {
+                "name": "低空乱流",
+                "descCN": "在地面时防御力+7%<@ba.talpu>（+2%）</>，<$ba.liftoff>起飞</>后攻击敌人时攻击力提升至107%<@ba.talpu>（+2%）</>",
+                "desc": "When on ground, DEF+7%<@ba.talpu>(+2%)</>. After <$ba.liftoff>Take off</>, ATK is increased to 107%<@ba.talpu>(+2%)</> when attacking enemies"
+            },
+            {
+                "name": "低空乱流",
+                "descCN": "在地面时防御力+10%，<$ba.liftoff>起飞</>后攻击敌人时攻击力提升至110%",
+                "desc": "When on ground, DEF+10%. After <$ba.liftoff>Take off</>, ATK is increased to 115% when attacking enemies"
+            },
+            {
+                "name": "低空乱流",
+                "descCN": "在地面时防御力+12%<@ba.talpu>（+2%）</>，<$ba.liftoff>起飞</>后攻击敌人时攻击力提升至112%<@ba.talpu>（+2%）</>",
+                "desc": "When on ground, DEF+12%<@ba.talpu>(+2%)</>. After <$ba.liftoff>Take off</>, ATK is increased to 112%<@ba.talpu>(+2%)</> when attacking enemies"
+            }
+        ]
     ]
 }

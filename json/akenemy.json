@@ -3147,6 +3147,30 @@
                             }
                         }
                     }
+                },
+                "act38side": {
+                    "name": "[PV] : I Portatori dei Velluti",
+                    "zone": {
+                        "act38side_zone1": {
+                            "name": "四幕汇演",
+                            "stage": {
+                                "act38side_tr01": "PV-TR-1 : 《烟花燃放须知》",
+                                "act38side_01": "PV-1 : 失途",
+                                "act38side_02": "PV-2 : 择路",
+                                "act38side_03": "PV-3 : 恶客盈门",
+                                "act38side_04": "PV-4 : 体面来宾",
+                                "act38side_05": "PV-5 : “致新生活”",
+                                "act38side_06": "PV-6 : “复仇于我”",
+                                "act38side_07": "PV-7 : 揭幕时刻",
+                                "act38side_08": "PV-8 : 无私铁棘",
+                                "act38side_09": "PV-9 : 狼群与群狼",
+                                "act38side_10": "PV-10 : 铳响",
+                                "act38side_sp01": "PV-P-1 : 试演烟花秀",
+                                "act38side_sp02": "PV-P-2 : 即兴烟花秀",
+                                "act38side_sp03": "PV-P-3 : 狂欢之夜烟花秀"
+                            }
+                        }
+                    }
                 }
             }
         },
@@ -5310,6 +5334,7 @@
         "weekly_2": "PR-B : Fierce Attack (Snipers & Casters)",
         "weekly_3": "PR-C : Unstoppable Charge (Vanguards & Supporters)",
         "weekly_4": "PR-D : Fearless Protection (Guards & Specialists)",
+        "act38side": "[PV] : I Portatori dei Velluti",
         "act37side": "[GO] : Ending a Grand Overture",
         "act1vecb": "Vector Breakthrough",
         "act36side": "[DT] : Delicious on Terran",
@@ -29061,6 +29086,198 @@
                         "RA#2_monthly_1",
                         "RA#2_monthly_1",
                         "RA#2_monthly_1"
+                    ]
+                }
+            }
+        },
+        "enemy_10031_cnvsld": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone1": [
+                        "act38side_tr01",
+                        "act38side_tr01",
+                        "act38side_01",
+                        "act38side_02",
+                        "act38side_03",
+                        "act38side_04",
+                        "act38side_05",
+                        "act38side_06",
+                        "act38side_08",
+                        "act38side_09",
+                        "act38side_10",
+                        "act38side_sp01",
+                        "act38side_sp03"
+                    ]
+                }
+            }
+        },
+        "enemy_10038_cnvpiz": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone1": [
+                        "act38side_tr01",
+                        "act38side_04",
+                        "act38side_06",
+                        "act38side_07",
+                        "act38side_08",
+                        "act38side_09",
+                        "act38side_sp01"
+                    ]
+                }
+            }
+        },
+        "enemy_10040_cnvbln": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone1": [
+                        "act38side_tr01",
+                        "act38side_03",
+                        "act38side_04",
+                        "act38side_06",
+                        "act38side_09",
+                        "act38side_sp02"
+                    ]
+                }
+            }
+        },
+        "enemy_10041_cnvfire": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone1": [
+                        "act38side_tr01",
+                        "act38side_01",
+                        "act38side_02",
+                        "act38side_03",
+                        "act38side_04",
+                        "act38side_05",
+                        "act38side_06",
+                        "act38side_07",
+                        "act38side_08",
+                        "act38side_09",
+                        "act38side_10",
+                        "act38side_sp01",
+                        "act38side_sp02",
+                        "act38side_sp03"
+                    ]
+                }
+            }
+        },
+        "enemy_10032_cnvsnp": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone1": [
+                        "act38side_02",
+                        "act38side_05"
+                    ]
+                }
+            }
+        },
+        "enemy_10033_cnvbsk": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone1": [
+                        "act38side_03",
+                        "act38side_sp01"
+                    ]
+                }
+            }
+        },
+        "enemy_10035_cnvdnc": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone1": [
+                        "act38side_05",
+                        "act38side_09",
+                        "act38side_10",
+                        "act38side_sp01",
+                        "act38side_sp03"
+                    ]
+                }
+            }
+        },
+        "enemy_10034_cnvsax": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone1": [
+                        "act38side_06",
+                        "act38side_09",
+                        "act38side_sp01"
+                    ]
+                }
+            }
+        },
+        "enemy_10036_cnvpvd": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone1": [
+                        "act38side_07",
+                        "act38side_10"
+                    ]
+                }
+            }
+        },
+        "enemy_10037_cnvpcar": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone1": [
+                        "act38side_07",
+                        "act38side_09",
+                        "act38side_10",
+                        "act38side_sp03"
+                    ]
+                }
+            }
+        },
+        "enemy_10039_cnvber": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone1": [
+                        "act38side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_1560_cnvlap": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone1": [
+                        "act38side_10"
+                    ]
+                }
+            }
+        },
+        "enemy_10040_cnvbln_2": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone1": [
+                        "act38side_sp02"
+                    ]
+                }
+            }
+        },
+        "enemy_10038_cnvpiz_2": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone1": [
+                        "act38side_sp02"
+                    ]
+                }
+            }
+        },
+        "enemy_10033_cnvbsk_2": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone1": [
+                        "act38side_sp02"
+                    ]
+                }
+            }
+        },
+        "enemy_10034_cnvsax_2": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone1": [
+                        "act38side_sp02"
                     ]
                 }
             }

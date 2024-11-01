@@ -628,22 +628,22 @@
             "note": "Tactician Mod (TAC-Y)"
         },
         "攻击造成<@ba.kw>法术伤害</>，可以造成<@ba.kw>元素损伤</>，且不受<@ba.kw>部署数量</>限制，但再部署时间极长": {
-            "en": "Attacks deal <@ba.kw>Arts damage</>, and can inflict <@ba.kw>Elemental Damage</> and ignores <@ba.kw>Deployment Limit</>, but has a long Redeployment Time",
+            "en": "Attacks deal <@ba.kw>Arts damage</> and can inflict <@ba.kw>Elemental Damage</>. Not affected by <@ba.kw>Deployment Limit</>, but has a long Redeployment Time.",
             "color": "magic",
             "note": "PhonoR-0 's Trait"
         },
         "攻击附带<@ba.vup>{atk_scale_m:0%}</>攻击力的法术伤害": {
-            "en": "Can launch <@ba.kw>Ranged Attacks</> that deal 80% of normal ATK, deals 10% ATK as <@ba.kw>Arts damage</>",
+            "en": "Attacks deal an additional <@ba.vup>{atk_scale_m:0%}</> ATK as Arts damage.",
             "color": "extra",
             "note": "Lord Mod (LOR-X)"
         },
         "攻击范围内存在2名及以上敌人时攻击速度<@ba.vup>+12</>": {
-            "en": "Can launch <@ba.kw>Ranged Attacks</> that deal 80% of normal ATK. When there are 2 or more enemies in Attack Range, ASPD<@ba.talpu>+12</>",
-            "color": "physical",
+            "en": "ASPD <@ba.vup>+12</> when there are 2 or more enemies in attack range.",
+            "color": "extra",
             "note": "Lord Mod (LOR-Y)"
         },
         "可攻击维什戴尔攻击范围内的敌人": {
-            "en": "Can attack enemies within the summoner's Attack Range",
+            "en": "Can attack enemies in Wiš'adel's attack range.",
             "color": "common",
             "note": "Wiš'adel 's Token (Shadow of Revenant)"
         },
@@ -736,6 +736,31 @@
             "en": "When not blocking enemies, prioritizes dealing <@ba.kw>ranged AoE</> Physical damage and ASPD<@ba.vup>+10</>",
             "color": "physical",
             "note": "new mods for-y Fortress"
+        },
+        "能够阻挡三个敌人，可以造成元素损伤": {
+            "en": "Can block 3 enemies\nCan deal <@ba.kw>Elemental damage</>",
+            "color": "extra",
+            "note": "new Ops primprotector/Primal Protector Archetype trait"
+        },
+        "<$ba.liftoff>起飞</>后能够阻挡2个飞行敌人": {
+            "en": "After <$ba.liftoff>Take off</> can block 2 aerial enemies",
+            "color": "extra",
+            "note": "new Ops skywalker/Skyranger Archetype trait"
+        },
+        "对精英和领袖敌人造成的元素损伤提升<@ba.kw>18%</>": {
+            "en": "Increase Elemental damage dealt to Elite/Boss enemies by 18%",
+            "color": "extra",
+            "note": "new mods rit-x"
+        },
+        "在<@ba.kw>集成战略</>中，攻击额外造成<@ba.kw>一次</>攻击力<@ba.kw>100%</>的法术伤害": {
+            "en": "In <@ba.kw>[Integrated Strategies]</>, attack deal <@ba.kw>an addition instance</> of <@ba.kw>100%</>  ATK as Arts damage",
+            "color": "magic",
+            "note": "new mods isw-a"
+        },
+        "在<@ba.kw>集成战略</>中，在场时全场敌人重量额外-1": {
+            "en": "In <@ba.kw>[Integrated Strategies]</>, All enemies -1 Weight Level",
+            "color": "extra",
+            "note": "new mods isw-a"
         }
     },
     "parts": [

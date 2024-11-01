@@ -54,17 +54,14 @@ json_dict           =   json_load("py/dict.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS = [] # "", "Lappland the Decadenza","Vulpisfoglia","Crownslayer","Figurino","Philae","Contrail"
+NEW_CHARS = ["Lappland the Decadenza","Vulpisfoglia","Crownslayer","Figurino","Philae","Contrail"] # "", 
 
 #[["OpsName#1",num(Mod)],["OpsName#2",num(Mod)], ...]
-NEW_MODS = [] # ["",],
+NEW_MODS = [["Virtuosa",1],["Valarqvin",1],["Bobbing",1],["Lappland the Decadenza",1],["Vulpisfoglia",1],["Crownslayer",1],["Figurino",1],
+            ["Lessing",2],["Rosmontis",2],["Angelina",3]] # ["",],
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS = [] # "",
-
-#["OpsName#1","OpsName#2", ...]
-#NEW_RECRUIT_CN = [] # "", "Mountain","Kafka","Pinecone"
-#NEW_RECRUIT_EN = ["Blemishine","Aosta","Bubble","PhonoR-0"] # "",
 
 Rechecked = True # True False
 
@@ -239,29 +236,6 @@ for i in range(6):
         op = re.search(r"<@rc.eml>(.+?)</>",ops).group(1) if re.search(r"<@rc.eml>(.+?)</>",ops) else ops
         json_akhr[[index for index,d in enumerate(json_akhr) if name_check(d["name_en"]) == bypass.get(op,op)][0]]["globalHidden"] = False
 
-'''if NEW_RECRUIT_CN:
-    for new_recruit_char in NEW_RECRUIT_CN:
-        for char_data in json_akhr:
-            if new_recruit_char.lower() == char_data["name_en"].lower():
-                char_data["hidden"] = False
-                break
-            
-if NEW_RECRUIT_CN:
-    for new_recruit_char in NEW_RECRUIT_CN:
-        json_akhr[[index for index,d in enumerate(json_akhr) if d["name_en"].lower() == new_recruit_char.lower()][0]]["hidden"] = False
-
-if NEW_RECRUIT_EN:
-    for new_recruit_char in NEW_RECRUIT_EN:
-        for char_data in json_akhr:
-            if new_recruit_char.lower() == char_data["name_en"].lower():
-                char_data["globalHidden"] = False
-                break
-            
-if NEW_RECRUIT_EN:
-    for new_recruit_char in NEW_RECRUIT_EN:
-        json_akhr[[index for index,d in enumerate(json_akhr) if d["name_en"].lower() == new_recruit_char.lower()][0]]["globalHidden"] = False
-'''
-
 with open("json/tl-akhr.json",'w') as filepath :
     json.dump(json_akhr,filepath,indent = 4, ensure_ascii = False)
     
@@ -280,7 +254,7 @@ for new_mat in NEW_MATS:
     mat_button.append(f'<button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 button-tag" data-toggle="tooltip" data-placement="top" title="{json_item["items"][new_mat]["name"]}" mat-id="{new_mat}"></button>')
 
 mat_button.sort(reverse = False,key = lambda new_mat : new_mat.split("\"")[-2][0:-1]) #sort mat id
-mat_button.sort(reverse = True,key = lambda new_mat : new_mat.split("\"")[-2][-1]) #sort rarity
+mat_button.sort(reverse = True, key = lambda new_mat : new_mat.split("\"")[-2][-1]) #sort rarity
 
 with open("update/akmatuses.txt",'w') as writer:
     writer.write("\n\n".join(mat_button))
@@ -344,7 +318,7 @@ for mat_data in json_akmaterial:
 
 with open("json/akmaterial.json",'w') as filepath :
     json.dump(json_akmaterial,filepath,indent = 4, ensure_ascii = False)
-    
+
 ##tl-item.json
 for mat_data in json_tl_item:
     for lang in [["name_en",json_itemEN],["name_jp",json_itemJP],["name_kr",json_itemKR]]:
@@ -381,19 +355,19 @@ for new_mod_list in NEW_MODS:
                         talent_candidate_EN = json_charEN[char_key]["talents"][candidate["talentIndex"]]["candidates"][pot-len(part["addOrOverrideTalentDataBundle"]["candidates"])] if char_key in json_charEN.keys() else None
                         if char_key in json_charEN and candidate["talentIndex"] != -1:
                             temp_part.append({
-                                                "name"                  : talent_candidate_EN["name"],
-                                                "EN"                    : talent_candidate_EN["description"],
-                                                "CN"                    : talent_candidate_CN["description"],
-                                                "mod"                   : candidate["upgradeDescription"],
-                                                "upgradeDescription"    : ""
-                            })
+                                                "name"                  :   talent_candidate_EN["name"],
+                                                "EN"                    :   talent_candidate_EN["description"],
+                                                "CN"                    :   talent_candidate_CN["description"],
+                                                "mod"                   :   candidate["upgradeDescription"],
+                                                "upgradeDescription"    :   ""
+                                            })
                         else:
                             temp_part.append({
-                                                "name"                  :candidate["name"],
-                                                "CN"                    :talent_candidate_CN["description"],
-                                                "mod"                   :candidate["upgradeDescription"],
-                                                "upgradeDescription"    :""
-                            })
+                                                "name"                  :   candidate["name"],
+                                                "CN"                    :   talent_candidate_CN["description"],
+                                                "mod"                   :   candidate["upgradeDescription"],
+                                                "upgradeDescription"    :   ""
+                                            })
                 if len(temp_part) :temp_phase.append(temp_part)
         mod_tl[new_mod_id] = temp_phase
     except:
@@ -446,10 +420,10 @@ with open("json/named_effects.json",'w') as filepath :
 for riic in json_building["buffs"].keys():
     if riic not in json_riicTL.keys():
         json_riicTL[riic]=  {
-                            "name"          :   json_building["buffs"][riic]["buffName"],
-                            "desc"          :   json_building["buffs"][riic]["description"],
-                            "descformat"    :   json_building["buffs"][riic]["description"]
-                        }
+                                "name"          :   json_building["buffs"][riic]["buffName"],
+                                "desc"          :   json_building["buffs"][riic]["description"],
+                                "descformat"    :   json_building["buffs"][riic]["description"]
+                            }
 
 for riic in json_buildingEN["buffs"].keys():
     json_riicTL[riic]=  {
