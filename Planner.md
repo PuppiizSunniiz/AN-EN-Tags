@@ -13,6 +13,7 @@
 
 - Equip : mod Folder
     - icon : Folder for ***char mod***
+    - shining : Folder for ***mod color effect***
     - type : Folder for ***archetype mod*** icon
 
 - Items : Folder for ***material***
@@ -29,7 +30,9 @@
 ## Fix
     -
 ## To do
-    -
+    - tweak token section
+        - add token Talent
+        - update token trait/talent/stat when select mod
 ## Later
     - add amiya patch to char selector (Browse -Type/All/Filter)
     - add more parameter for fn => onclick="selectOperator('xxx', ...)" to go to amiya patch directly
