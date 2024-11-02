@@ -7,20 +7,20 @@ var tlracedict = {};
 var enemyforfilter = []
 const allimmunity = ["stunImmune","silenceImmune","sleepImmune","frozenImmune","levitateImmune","disarmedCombatImmune","fearedImmune"]
 
-var d0 = $.getJSON("json/gamedata/zh_CN/gamedata/excel/gamedata_const.json",function(data){
+var d0 = $.getJSON("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/gamedata_const.json",function(data){
     db["dataconst"] = data;
 });
-var d1 = $.getJSON("json/gamedata/zh_CN/gamedata/excel/enemy_handbook_table.json",function(data){
+var d1 = $.getJSON("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/enemy_handbook_table.json",function(data){
     db["enemy"] = data;
 });
-var d2 = $.getJSON("json/gamedata/zh_CN/gamedata/levels/enemydata/enemy_database.json",function(data){
+var d2 = $.getJSON("json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/enemydata/enemy_database.json",function(data){
     let enemydic = {}
     data.enemies.forEach(enemy => {
         enemydic[enemy.Key] = enemy.Value
     })
     db["enemyDetail"] = enemydic;
 });
-var d3 = $.getJSON("json/gamedata/en_US/gamedata/excel/enemy_handbook_table.json",function(data){
+var d3 = $.getJSON("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/enemy_handbook_table.json",function(data){
     db["enemyEN"] = data;
 });
 var d4 = $.getJSON("json/named_effects.json",function(data){

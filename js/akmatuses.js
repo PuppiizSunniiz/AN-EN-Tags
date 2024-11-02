@@ -5,22 +5,22 @@ var lang;
 var reg;
 var Alllang={
                 'en':{
-                    "path":"en_US",
+                    "path":"ArknightsGameData_YoStar/en_US",
                     "char":"en",
                     "i":0
                 },
                 'cn':{
-                    "path":"zh_CN",
+                    "path":"ArknightsGameData/zh_CN",
                     "char":"cn",
                     "i":1
                 },
                 'jp':{
-                    "path":"ja_JP",
+                    "path":"ArknightsGameData_YoStar/ja_JP",
                     "char":"en",
                     "i":2
                 },
                 'kr':{
-                    "path":"ko_KR",
+                    "path":"ArknightsGameData_YoStar/ko_KR",
                     "char":"en",
                     "i":3
                 }

@@ -5,10 +5,10 @@ from pyfunction import epoch,json_load
 #########################################################################################################
 # JSON
 #########################################################################################################
-json_char       =   json_load("json/gamedata/zh_CN/gamedata/excel/character_table.json")
-json_char_patch =   json_load("json/gamedata/zh_CN/gamedata/excel/char_patch_table.json")
-json_mod        =   json_load("json/gamedata/zh_CN/gamedata/excel/uniequip_table.json")
-json_range      =   json_load("json/gamedata/zh_CN/gamedata/excel/range_table.json")
+json_char       =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/character_table.json")
+json_char_patch =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/char_patch_table.json")
+json_mod        =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/uniequip_table.json")
+json_range      =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/range_table.json")
 
 #########################################################################################################
 # Function
@@ -278,8 +278,8 @@ def Ready():
         json.dump(DB, file, indent=4, ensure_ascii=False)
 
     '''
-        json_gacha  =   json.loads(open("json/gamedata/zh_CN/gamedata/excel/gacha_table.json").read())
-        json_gachaEN  =   json.loads(open("json/gamedata/en_US/gamedata/excel/gacha_table.json").read())
+        json_gacha  =   json.loads(open("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/gacha_table.json").read())
+        json_gachaEN  =   json.loads(open("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/gacha_table.json").read())
         gachapon={}
         for tag in json_gacha["gachaTags"]:
             gachapon[tag["tagId"]]={"tagName":tag["tagName"]}

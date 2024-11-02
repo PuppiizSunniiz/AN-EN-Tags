@@ -49,63 +49,63 @@ def json_load(filepath : str) -> dict :
 def load_json(data) -> dict :
     match data:
         case "json_Database" :
-            return json_load("json/gamedata/zh_CN/gamedata/levels/enemydata/enemy_database.json")
+            return json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/enemydata/enemy_database.json")
         case "json_DatabaseEN" :
-            return json_load("json/gamedata/en_US/gamedata/levels/enemydata/enemy_database.json")
+            return json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/levels/enemydata/enemy_database.json")
         case "json_Handbook" : 
-            return json_load("json/gamedata/zh_CN/gamedata/excel/enemy_handbook_table.json")
+            return json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/enemy_handbook_table.json")
         case "json_HandbookEN" :
-            return json_load("json/gamedata/en_US/gamedata/excel/enemy_handbook_table.json")
+            return json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/enemy_handbook_table.json")
 
         case "json_activity" :
-            return json_load("json/gamedata/zh_CN/gamedata/excel/activity_table.json")
+            return json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/activity_table.json")
         case "json_activityEN" :
-            return json_load("json/gamedata/en_US/gamedata/excel/activity_table.json")
+            return json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/activity_table.json")
 
         case "json_stage" :
-            return json_load("json/gamedata/zh_CN/gamedata/excel/stage_table.json")
+            return json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/stage_table.json")
         case "json_stageEN" :
-            return json_load("json/gamedata/en_US/gamedata/excel/stage_table.json")
+            return json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/stage_table.json")
 
         case "json_zone" : 
-            return json_load("json/gamedata/zh_CN/gamedata/excel/zone_table.json")
+            return json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/zone_table.json")
         case "json_zoneEN" :
-            return json_load("json/gamedata/en_US/gamedata/excel/zone_table.json")
+            return json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/zone_table.json")
 
         case "json_campaign" :
-            return json_load("json/gamedata/zh_CN/gamedata/excel/campaign_table.json")
+            return json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/campaign_table.json")
 
         case "json_SSS" :
-            return json_load("json/gamedata/zh_CN/gamedata/excel/climb_tower_table.json")
+            return json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/climb_tower_table.json")
         case "json_SSSEN" :
-            return json_load("json/gamedata/en_US/gamedata/excel/climb_tower_table.json")
+            return json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/climb_tower_table.json")
 
         case "json_CC" :
-            return json_load("json/gamedata/zh_CN/gamedata/excel/crisis_table.json")
+            return json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/crisis_table.json")
         case "json_CC2" :
-            return json_load("json/gamedata/zh_CN/gamedata/excel/crisis_v2_table.json")
+            return json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/crisis_v2_table.json")
         case "json_CCEN" :
-            return json_load("json/gamedata/en_US/gamedata/excel/crisis_table.json")
+            return json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/crisis_table.json")
         case "json_CC2EN" :
-            return json_load("json/gamedata/en_US/gamedata/excel/crisis_v2_table.json")
+            return json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/crisis_v2_table.json")
 
         #case "json_IS0" :
-            #return json_load("json/gamedata/zh_CN/gamedata/excel/roguelike_table.json")
+            #return json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/roguelike_table.json")
         case "json_IS" :
-            return json_load("json/gamedata/zh_CN/gamedata/excel/roguelike_topic_table.json")
+            return json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/roguelike_topic_table.json")
         case "json_ISEN0" :
             return json_load("json/gamedata/en_US(Old)/gamedata/excel/roguelike_table.json")
         case "json_ISEN" :
-            return json_load("json/gamedata/en_US/gamedata/excel/roguelike_topic_table.json")
+            return json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/roguelike_topic_table.json")
 
         case "json_RA1" :
-            return json_load("json/gamedata/zh_CN/gamedata/excel/sandbox_table.json")
+            return json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/sandbox_table.json")
         case "json_RA2" :
-            return json_load("json/gamedata/zh_CN/gamedata/excel/sandbox_perm_table.json")
+            return json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/sandbox_perm_table.json")
         case "json_RA1EN" :
-            return json_load("json/gamedata/en_US/gamedata/excel/sandbox_table.json")
+            return json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/sandbox_table.json")
         case "json_RA2EN" :
-            return json_load("json/gamedata/en_US/gamedata/excel/sandbox_perm_table.json")
+            return json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/sandbox_perm_table.json")
 
         case "Fillerjson" :
             return json_load("json/Filler.json")
@@ -595,7 +595,7 @@ def stage_json_stage_collect(json_stage, json_stageEN):
                 stage_id         = json_stage[stage]["stageId"]
                 level_id         = json_stage[stage]["levelId"]
                 stage_zone       = json_stage[stage]["stageId"] if json_stage[stage]["stageType"] == "CAMPAIGN" else (f'{stage_event}' if stage_event in ["act7d5","act6d5","act4d0"] else json_stage[stage]["zoneId"])
-                stage_filepath   = f'json/gamedata/zh_CN/gamedata/levels/{level_id.lower()}.json'
+                stage_filepath   = f'json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/{level_id.lower()}.json'
                 
                 stage_counter += Stage_Lister(stage_event, stage_code, stage_name, stage_id, level_id, stage_zone, stage_filepath)
         
@@ -605,7 +605,7 @@ def stage_json_stage_collect(json_stage, json_stageEN):
 
 def COOP_stage_collect(Fillerjson) :
 ## COOP1 : Defense Protocols (罗德岛防御协议) "act17d1"
-    COOP = glob.glob("json/gamedata/zh_CN/gamedata/levels/activities/act17d1/*")
+    COOP = glob.glob("json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/activities/act17d1/*")
     
     @decorator
     def COOP_main(COOP):
@@ -623,9 +623,9 @@ def COOP_stage_collect(Fillerjson) :
 def CC_stage_collect(Fillerjson, json_CC, json_CC2, json_activityEN) :
 ## CC : Contingency Contract (危机合约)
 
-    CC1 = glob.glob("json/gamedata/zh_CN/gamedata/levels/obt/rune/*")
-    CC2 = glob.glob("json/gamedata/zh_CN/gamedata/levels/obt/crisis/v2/*")
-    POT = glob.glob("json/gamedata/zh_CN/gamedata/levels/activities/act38rune/*")
+    CC1 = glob.glob("json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/obt/rune/*")
+    CC2 = glob.glob("json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/obt/crisis/v2/*")
+    POT = glob.glob("json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/activities/act38rune/*")
 
 ### CC Beta (act5d1) & CC Season 1 (crisis_table)
     
@@ -636,7 +636,7 @@ def CC_stage_collect(Fillerjson, json_CC, json_CC2, json_activityEN) :
             CC_num   = str(CC - 1) if CC - 1 >= 10 else "0" + str(CC - 1)
             CC_Zone  = f'CC#{CC_num}' if CC > 0 else "CC#Beta"
             stage_num = str(CC + 1) if CC + 1 >= 10 else "0" + str(CC + 1)
-            CC_Stage = [stage for stage in CC1 if re.search(rf'{stage_num}-.+\.json',stage)]+([f'json/gamedata/zh_CN/gamedata/levels/obt/rune\\{rotatestage}' for rotatestage in Fillerjson["CCRotate"][CC_Zone]] if CC_Zone in Fillerjson["CCRotate"] else [])
+            CC_Stage = [stage for stage in CC1 if re.search(rf'{stage_num}-.+\.json',stage)]+([f'json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/obt/rune\\{rotatestage}' for rotatestage in Fillerjson["CCRotate"][CC_Zone]] if CC_Zone in Fillerjson["CCRotate"] else [])
             
             for stagepath in CC_Stage:
                 stage_name   = Fillerjson["stage_name"][stagepath.split("\\")[-1]] if re.search(rf'{stage_num}-.+\.json',stagepath) else Fillerjson["stage_name"][stagepath.split("\\")[-1]].split(" (Main)")[0]
@@ -674,7 +674,7 @@ def CC_stage_collect(Fillerjson, json_CC, json_CC2, json_activityEN) :
             stage_id         = main_stage[stage]["stageId"]
             level_id         = main_stage[stage]["levelId"]
             stage_zone          = main_stage[stage]["areaId"]
-            stage_filepath   = "json/gamedata/zh_CN/gamedata/levels/"+level_id.lower()+".json"
+            stage_filepath   = "json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/"+level_id.lower()+".json"
             
             stage_counter += Stage_Lister("act42d0",stage_code,stage_name,stage_id,level_id,stage_zone,stage_filepath)
             
@@ -683,7 +683,7 @@ def CC_stage_collect(Fillerjson, json_CC, json_CC2, json_activityEN) :
             stage_name       = challenge_stage[stage]["name"]
             stage_id         = challenge_stage[stage]["stageId"]
             level_id         = challenge_stage[stage]["levelId"]
-            stage_filepath   = "json/gamedata/zh_CN/gamedata/levels/"+level_id.lower()+".json"
+            stage_filepath   = "json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/"+level_id.lower()+".json"
             
             stage_counter += Stage_Lister("act42d0",stage_code,stage_name,stage_id,level_id,"challenge",stage_filepath)
             
@@ -699,7 +699,7 @@ def CC_stage_collect(Fillerjson, json_CC, json_CC2, json_activityEN) :
             CC_num = str(CC+1) if CC+1 >= 10 else "0"+str(CC+1)
             CC_Zone = f'CCBP#{CC_num}'
             stage_num = str(CC+1) if CC+1 >= 10 else "0"+str(CC+1)
-            CC_Stage = [stage for stage in CC2 if re.search(rf'{stage_num}-.+\.json',stage)]+(["json/gamedata/zh_CN/gamedata/levels/obt/crisis/v2\\"+rotatestage for rotatestage in Fillerjson["CCRotate"][CC_Zone]] if CC_Zone in Fillerjson["CCRotate"].keys() else [])
+            CC_Stage = [stage for stage in CC2 if re.search(rf'{stage_num}-.+\.json',stage)]+(["json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/obt/crisis/v2\\"+rotatestage for rotatestage in Fillerjson["CCRotate"][CC_Zone]] if CC_Zone in Fillerjson["CCRotate"].keys() else [])
             if CC == 0 : CC_Stage = list(filter(lambda x : re.search(rf'v2_01-0[^46]',x),CC_Stage))
             for stagepath in CC_Stage:
                 stage_name   = Fillerjson["stage_name"][stagepath.split("\\")[-1]] if re.search(rf'{stage_num}-.+\.json',stagepath) else Fillerjson["stage_name"][stagepath.split("\\")[-1]].split(" (Main)")[0]
@@ -720,7 +720,7 @@ def IS_stage_collect(json_ISEN0, json_IS, json_ISEN):
         for ISstage in IS0_Stage.keys():
             if ISstage.split("_")[1]!="e":
                 stage_name  = IS0_Stage[ISstage]["name"]
-                stagepath   = f'json/gamedata/zh_CN/gamedata/levels/{IS0_Stage[ISstage]["levelId"].lower()}.json'
+                stagepath   = f'json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/{IS0_Stage[ISstage]["levelId"].lower()}.json'
                 stage_id    = stagepath.split("\\")[-1].split(".")[0].split("level_")[-1]
                 stage_zone  = f'IS#1 {IS_zone(ISstage,"IS#1")}'
 
@@ -742,7 +742,7 @@ def IS_stage_collect(json_ISEN0, json_IS, json_ISEN):
                     except:
                         stage_name =  IS_season_stage[ISstage]["name"]
                     
-                    stagepath   = f'json/gamedata/zh_CN/gamedata/levels/{IS_season_stage[ISstage]["levelId"].lower()}.json'
+                    stagepath   = f'json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/{IS_season_stage[ISstage]["levelId"].lower()}.json'
                     stage_event = f'IS#{int(ISseason[-1])+1}'
                     stage_id    = stagepath.split("\\")[-1].split(".")[0].split("level_")[-1]
                     stage_zone  = f'{stage_event} {IS_zone(ISstage,stage_event)}'
@@ -761,7 +761,7 @@ def RA_stage_collect(json_RA1EN, json_RA2, json_RA2EN): #
         stage_counter = 0
         stage_preview = json_RA1EN["sandboxActTables"]["act1sandbox"]["rewardConfigDatas"]["stageDefaultPreviewRewardDict"]
         for RAstage in RA0_stages.keys():
-            stagepath   = f'json/gamedata/zh_CN/gamedata/levels/{RA0_stages[RAstage]["levelId"].lower()}.json'
+            stagepath   = f'json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/{RA0_stages[RAstage]["levelId"].lower()}.json'
             stage_name  = RA0_stages[RAstage]["name"]
             if RAstage in stage_preview:
                 match stage_preview[RAstage]["rewardList"][0]["rewardType"]:
@@ -809,7 +809,7 @@ def RA_stage_collect(json_RA1EN, json_RA2, json_RA2EN): #
                 
                 
                 
-                stagepath = f'json/gamedata/zh_CN/gamedata/levels/{RA_stages[RAstage]["levelId"].lower()}.json'
+                stagepath = f'json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/{RA_stages[RAstage]["levelId"].lower()}.json'
                 
                 if RAstage in stage_preview:
                     match stage_preview[RAstage]["rewardList"][0]["rewardType"]:

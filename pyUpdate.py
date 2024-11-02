@@ -8,35 +8,35 @@ Ready()
 #########################################################################################################
 # JSON
 #########################################################################################################
-json_building       =   json_load("json/gamedata/zh_CN/gamedata/excel/building_data.json")
-json_buildingEN     =   json_load("json/gamedata/en_US/gamedata/excel/building_data.json")
+json_building       =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/building_data.json")
+json_buildingEN     =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/building_data.json")
 
-json_char_patch     =   json_load("json/gamedata/zh_CN/gamedata/excel/char_patch_table.json")
+json_char_patch     =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/char_patch_table.json")
 
-json_char           =   json_load("json/gamedata/zh_CN/gamedata/excel/character_table.json")
-json_charEN         =   json_load("json/gamedata/en_US/gamedata/excel/character_table.json")
-json_charJP         =   json_load("json/gamedata/ja_JP/gamedata/excel/character_table.json")
-json_charKR         =   json_load("json/gamedata/ko_KR/gamedata/excel/character_table.json")
+json_char           =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/character_table.json")
+json_charEN         =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/character_table.json")
+json_charJP         =   json_load("json/gamedata/ArknightsGameData_YoStar/ja_JP/gamedata/excel/character_table.json")
+json_charKR         =   json_load("json/gamedata/ArknightsGameData_YoStar/ko_KR/gamedata/excel/character_table.json")
 
-json_gacha          =   json_load("json/gamedata/zh_CN/gamedata/excel/gacha_table.json")
-json_gachaEN        =   json_load("json/gamedata/en_US/gamedata/excel/gacha_table.json")
+json_gacha          =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/gacha_table.json")
+json_gachaEN        =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/gacha_table.json")
 
-json_skill          =   json_load("json/gamedata/zh_CN/gamedata/excel/skill_table.json")
-json_skillEN        =   json_load("json/gamedata/en_US/gamedata/excel/skill_table.json")
+json_skill          =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/skill_table.json")
+json_skillEN        =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/skill_table.json")
 
-json_handbook       =   json_load("json/gamedata/zh_CN/gamedata/excel/handbook_info_table.json")
-json_mod_battle     =   json_load("json/gamedata/zh_CN/gamedata/excel/battle_equip_table.json")
-json_mod_battleEN   =   json_load("json/gamedata/en_US/gamedata/excel/battle_equip_table.json")
-json_mod_table      =   json_load("json/gamedata/zh_CN/gamedata/excel/uniequip_table.json")
-json_stage          =   json_load("json/gamedata/zh_CN/gamedata/excel/stage_table.json")
+json_handbook       =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/handbook_info_table.json")
+json_mod_battle     =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/battle_equip_table.json")
+json_mod_battleEN   =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/battle_equip_table.json")
+json_mod_table      =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/uniequip_table.json")
+json_stage          =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/stage_table.json")
 
-json_construct      =   json_load("json/gamedata/zh_CN/gamedata/excel/gamedata_const.json")
-json_constructEN    =   json_load("json/gamedata/en_US/gamedata/excel/gamedata_const.json")
+json_construct      =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/gamedata_const.json")
+json_constructEN    =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/gamedata_const.json")
 
-json_item           =   json_load("json/gamedata/zh_CN/gamedata/excel/item_table.json")
-json_itemEN         =   json_load("json/gamedata/en_US/gamedata/excel/item_table.json")
-json_itemJP         =   json_load("json/gamedata/ja_JP/gamedata/excel/item_table.json")
-json_itemKR         =   json_load("json/gamedata/ko_KR/gamedata/excel/item_table.json")
+json_item           =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/item_table.json")
+json_itemEN         =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/item_table.json")
+json_itemJP         =   json_load("json/gamedata/ArknightsGameData_YoStar/ja_JP/gamedata/excel/item_table.json")
+json_itemKR         =   json_load("json/gamedata/ArknightsGameData_YoStar/ko_KR/gamedata/excel/item_table.json")
 
 json_akhr           =   json_load("json/tl-akhr.json")
 json_akmaterial     =   json_load("json/akmaterial.json")
