@@ -59,7 +59,7 @@ def load_json() -> dict :
                 "json_token" : json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/token_table.json"),
                 "json_uniequip" : json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/uniequip_table.json"),
                 "json_zone" : json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/zone_table.json"),
-                "json_enemy_database" : json_load("json\gamedata\zh_CN\gamedata\levels\enemydata\enemy_database.json"),
+                "json_enemy_database" : json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/enemydata/enemy_database.json"),
                 
                 "json_activityEN" : json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/activity_table.json"),
                 "json_audioEN" : json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/audio_data.json"),
@@ -185,23 +185,6 @@ def term_kw():
             term_list.append(term_detail["termId"]+"\t"+term_detail["termName"]+"\t"+term_detail["description"])
     
     script_result("\n".join(term_list))
-    
-################################################################################################################################################################################################################################################
-# DB Keys
-################################################################################################################################################################################################################################################
-
-#'json_activity', 'json_audio', 'json_battle_equip', 'json_building', 'json_campaign', 'json_chapter', 'json_character', 'json_charm',
-#'json_charword', 'json_char_meta', 'json_char_patch', 'json_checkin', 'json_climb_tower', 'json_clue', 'json_crisis', 'json_crisis_v2',
-#'json_display_meta', 'json_enemy_handbook', 'json_favor', 'json_gacha', 'json_gamedata', 'json_handbook_info', 'json_handbook', 'json_handbook_team',
-#'json_item', 'json_medal', 'json_mission', 'json_open_server', 'json_player_avatar', 'json_range', 'json_replicate', 'json_retro', 'json_roguelike',
-#'json_roguelike_topic', 'json_sandbox_perm', 'json_sandbox', 'json_shop_client', 'json_skill', 'json_skin', 'json_stage', 'json_story_review_meta',
-#'json_story_review', 'json_story', 'json_tech_buff', 'json_tip', 'json_token', 'json_uniequip', 'json_zone', 'json_enemy_database'
-
-# EN
-
-################################################################################################################################################################################################################################################
-# Script Playground
-################################################################################################################################################################################################################################################
 
 def recruit_update():
     def cleanlist(recruit_list:str) -> str:
@@ -213,7 +196,7 @@ def recruit_update():
     recruitEN       =   []
     bypass          =   {
                             "THRM-EX"           :   "Thermal-EX",
-                            "Justice Knight"    :   "\"Justice Knight\"",
+                            "\'Justice Knight\'"    :   "\"Justice Knight\"",
                             "Shirayuki"         :   "ShiraYuki"
                         }
     #print(gacha_EN_list)
@@ -231,8 +214,19 @@ def recruit_update():
     
     script_result("\n".join(recruitCN+recruitEN))
 
-recruit_update()
+################################################################################################################################################################################################################################################
+# DB Keys
+################################################################################################################################################################################################################################################
 
-#testo = re.search(r"<@rc.eml>(.+?)</>","<@rc.eml>Lancet-2</>")
-#print(testo.group(1))
-#re.match("<@rc.eml>Lancet-2</> / <@rc.eml>Castle-3</> / <@rc.eml>THRM-EX</> / <@rc.eml>Justice Knight</> / <@rc.eml>Friston-3</>")
+#'json_activity', 'json_audio', 'json_battle_equip', 'json_building', 'json_campaign', 'json_chapter', 'json_character', 'json_charm',
+#'json_charword', 'json_char_meta', 'json_char_patch', 'json_checkin', 'json_climb_tower', 'json_clue', 'json_crisis', 'json_crisis_v2',
+#'json_display_meta', 'json_enemy_handbook', 'json_favor', 'json_gacha', 'json_gamedata', 'json_handbook_info', 'json_handbook', 'json_handbook_team',
+#'json_item', 'json_medal', 'json_mission', 'json_open_server', 'json_player_avatar', 'json_range', 'json_replicate', 'json_retro', 'json_roguelike',
+#'json_roguelike_topic', 'json_sandbox_perm', 'json_sandbox', 'json_shop_client', 'json_skill', 'json_skin', 'json_stage', 'json_story_review_meta',
+#'json_story_review', 'json_story', 'json_tech_buff', 'json_tip', 'json_token', 'json_uniequip', 'json_zone', 'json_enemy_database'
+
+# EN
+
+################################################################################################################################################################################################################################################
+# Script Playground
+################################################################################################################################################################################################################################################

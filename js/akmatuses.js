@@ -131,7 +131,7 @@ $.when(d0[0],d0[1],d0[2],d0[3]).then(function() {
 });
 
 /*===== Retrieve and store characters =====*/
-var charsLib = [{"path":"en_US","Lang":"en"} ,{"path":"zh_CN","Lang":"cn"}];
+var charsLib = [{"path":"ArknightsGameData_YoStar/en_US","Lang":"en"} ,{"path":"ArknightsGameData/zh_CN","Lang":"cn"}];
 var charsmat={'en':{},'cn':{}}
 var charparse={}
 var d1=[,]
@@ -479,7 +479,7 @@ function changeUILanguage() {
 var total_materials = {};
 var inverse_levels = {"Skill-up": 2, "E1": 1, "E2": 0,"Module":3};
 var skill_levels = ["0", "1", "2", "3", "4", "5", "6", "7", "M-1", "M-2", "M-3",];
-var modindex={"x":3,"y":2,"d":1}
+var modindex={"x":4,"y":3,"d":2,"a":1}
 function actualize() {
     $("#tbody-recommend").html("");
 
@@ -566,7 +566,7 @@ function actualize() {
                 } else if (char.class == "Module") {
                     info = `<div style='background-color:transparent;margin:2px 0px 2px 0px;display:flex;width:100%;'>`;
                         info += `<div style='color:#ffffff;font-size:14px;font-weight:bold;background:#000;width:50%;float:left;margin-right:1px;display:flex;justify-content:center;align-items:center;padding:0px 5px 0px 5px;'>
-                                    <img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/type/${char.mod_index}.png' style='width:40px;height:40px'title='${char.mod_index.replace("-d","-∆").toUpperCase()}'>
+                                    <img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/type/${char.mod_index}.png' style='width:40px;height:40px'title='${char.mod_index.replace("-d","-∆").toUpperCase().replace("-A","-α")}'>
                                 </div>`
                         info += `<div style="background:#222; width:50%; float:right; display:flex; justify-content:center; margin-left:1px;padding:0px 5px 0px 5px;">`
                         info += `<img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/stage/img_stg${char.mod_level}.png' style='width:40px;height:40px'title='Level ${char.mod_level}'></div>`;
@@ -578,7 +578,7 @@ function actualize() {
                 //body.push(info + `<div class="item-amount" style="font-weight: bold; padding: 0px 2px 0px 2px; border-radius: 5px; z-index: 2; background-color: #000000;color:#ddd">${char.mod_index?"["+char.mod_index.toUpperCase()+"] - ":""}${char.count}x</div>`);
                 if(char.class=="Module"){
                     body.push(info + `  <div style='background-color:transparent;margin:2px 0px 0px 0px;display:flex;width:100%;'>
-                                            <div class="mod-index" style="padding: 0px 2px 0px 2px; border-radius: 5px; z-index: 2; background-color: #000000;color:#ddd ;width:50%; float:left; display:flex; justify-content:center;align-items:center;margin-right:1px">${char.mod_index.replace("-d","-∆").toUpperCase()}</div>
+                                            <div class="mod-index" style="padding: 0px 2px 0px 2px; border-radius: 5px; z-index: 2; background-color: #000000;color:#ddd ;width:50%; float:left; display:flex; justify-content:center;align-items:center;margin-right:1px">${char.mod_index.replace("-d","-∆").toUpperCase().replace("-A","-α")}</div>
                                             <div class="item-amount" style="font-weight: bold; padding: 0px 2px 0px 2px; border-radius: 5px; z-index: 2; background-color: #000000;color:#ddd ;width:50%; float:right; display:flex; justify-content:center;align-items:center;margin-left:1px">${char.count}x</div>`);
                 }else{
                     body.push(info + `<div class="item-amount" style="font-weight: bold; padding: 0px 2px 0px 2px; border-radius: 5px; z-index: 2; background-color: #000000;color:#ddd">${char.mod_index?"["+char.mod_index.toUpperCase()+"] - ":""}${char.count}x</div>`);

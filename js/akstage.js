@@ -1,10 +1,10 @@
 $.holdReady(true);
 const jsonList = {
-    stage_table             :"./json/gamedata/zh_CN/gamedata/excel/stage_table.json",
-    zone_table              :"./json/gamedata/zh_CN/gamedata/excel/zone_table.json",
+    stage_table             :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/stage_table.json",
+    zone_table              :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/zone_table.json",
     
-    stage_table_en          :"./json/gamedata/en_US/gamedata/excel/stage_table.json",
-    zone_table_en           :"./json/gamedata/en_US/gamedata/excel/zone_table.json",
+    stage_table_en          :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/stage_table.json",
+    zone_table_en           :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/zone_table.json",
 
 
     //TL
@@ -315,7 +315,7 @@ function StageList(el){
 }
 function LoadStage(stage){
     $('#StagePreview').show()
-    var stagelevelfolder ="./json/gamedata/zh_CN/gamedata/levels/"
+    var stagelevelfolder ="./json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/"
     // var stagelevelfolder ="https://ak-data.mooncell.wiki/gamedata/levels/"
 
 

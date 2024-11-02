@@ -1,6 +1,6 @@
 $.holdReady(true);
 const jsonList = {
-    medal_table :"./json/gamedata/zh_CN/gamedata/excel/medal_table.json"
+    medal_table :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/medal_table.json"
 
 
     //TL    

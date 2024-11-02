@@ -1,6 +1,6 @@
 $.holdReady(true);
 const jsonList = {
-    roguelike_table             :"./json/gamedata/zh_CN/gamedata/excel/roguelike_topic_table.json",
+    roguelike_table             :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/roguelike_topic_table.json",
 
     //TL
 
