@@ -5500,7 +5500,7 @@
             "stageId": "act38side_sp01",
             "levelId": "Activities/act38side/level_act38side_sp01",
             "zoneId": "act38side_zone1",
-            "code": "PV-P-1",
+            "code": "PV-SP-1",
             "name": "试演烟花秀",
             "Event": "act38side"
         },
@@ -5508,7 +5508,7 @@
             "stageId": "act38side_sp02",
             "levelId": "Activities/act38side/level_act38side_sp02",
             "zoneId": "act38side_zone1",
-            "code": "PV-P-2",
+            "code": "PV-SP-2",
             "name": "即兴烟花秀",
             "Event": "act38side"
         },
@@ -5516,8 +5516,136 @@
             "stageId": "act38side_sp03",
             "levelId": "Activities/act38side/level_act38side_sp03",
             "zoneId": "act38side_zone1",
-            "code": "PV-P-3",
+            "code": "PV-SP-3",
             "name": "狂欢之夜烟花秀",
+            "Event": "act38side"
+        },
+        "act38side_ex01": {
+            "stageId": "act38side_ex01",
+            "levelId": "Activities/act38side/level_act38side_ex01",
+            "zoneId": "act38side_zone2",
+            "code": "PV-EX-1",
+            "name": "零食派送",
+            "Event": "act38side"
+        },
+        "act38side_ex01#f#": {
+            "stageId": "act38side_ex01#f#",
+            "levelId": "Activities/act38side/level_act38side_ex01",
+            "zoneId": "act38side_zone2",
+            "code": "PV-EX-1",
+            "name": "零食派送",
+            "Event": "act38side"
+        },
+        "act38side_ex02": {
+            "stageId": "act38side_ex02",
+            "levelId": "Activities/act38side/level_act38side_ex02",
+            "zoneId": "act38side_zone2",
+            "code": "PV-EX-2",
+            "name": "热烈游行",
+            "Event": "act38side"
+        },
+        "act38side_ex02#f#": {
+            "stageId": "act38side_ex02#f#",
+            "levelId": "Activities/act38side/level_act38side_ex02",
+            "zoneId": "act38side_zone2",
+            "code": "PV-EX-2",
+            "name": "热烈游行",
+            "Event": "act38side"
+        },
+        "act38side_ex03": {
+            "stageId": "act38side_ex03",
+            "levelId": "Activities/act38side/level_act38side_ex03",
+            "zoneId": "act38side_zone2",
+            "code": "PV-EX-3",
+            "name": "游乐集市",
+            "Event": "act38side"
+        },
+        "act38side_ex03#f#": {
+            "stageId": "act38side_ex03#f#",
+            "levelId": "Activities/act38side/level_act38side_ex03",
+            "zoneId": "act38side_zone2",
+            "code": "PV-EX-3",
+            "name": "游乐集市",
+            "Event": "act38side"
+        },
+        "act38side_ex04": {
+            "stageId": "act38side_ex04",
+            "levelId": "Activities/act38side/level_act38side_ex04",
+            "zoneId": "act38side_zone2",
+            "code": "PV-EX-4",
+            "name": "穷街陋巷",
+            "Event": "act38side"
+        },
+        "act38side_ex04#f#": {
+            "stageId": "act38side_ex04#f#",
+            "levelId": "Activities/act38side/level_act38side_ex04",
+            "zoneId": "act38side_zone2",
+            "code": "PV-EX-4",
+            "name": "穷街陋巷",
+            "Event": "act38side"
+        },
+        "act38side_ex05": {
+            "stageId": "act38side_ex05",
+            "levelId": "Activities/act38side/level_act38side_ex05",
+            "zoneId": "act38side_zone2",
+            "code": "PV-EX-5",
+            "name": "火花进行曲",
+            "Event": "act38side"
+        },
+        "act38side_ex05#f#": {
+            "stageId": "act38side_ex05#f#",
+            "levelId": "Activities/act38side/level_act38side_ex05",
+            "zoneId": "act38side_zone2",
+            "code": "PV-EX-5",
+            "name": "火花进行曲",
+            "Event": "act38side"
+        },
+        "act38side_ex06": {
+            "stageId": "act38side_ex06",
+            "levelId": "Activities/act38side/level_act38side_ex06",
+            "zoneId": "act38side_zone2",
+            "code": "PV-EX-6",
+            "name": "巡演大街",
+            "Event": "act38side"
+        },
+        "act38side_ex06#f#": {
+            "stageId": "act38side_ex06#f#",
+            "levelId": "Activities/act38side/level_act38side_ex06",
+            "zoneId": "act38side_zone2",
+            "code": "PV-EX-6",
+            "name": "巡演大街",
+            "Event": "act38side"
+        },
+        "act38side_ex07": {
+            "stageId": "act38side_ex07",
+            "levelId": "Activities/act38side/level_act38side_ex07",
+            "zoneId": "act38side_zone2",
+            "code": "PV-EX-7",
+            "name": "烟火观景台",
+            "Event": "act38side"
+        },
+        "act38side_ex07#f#": {
+            "stageId": "act38side_ex07#f#",
+            "levelId": "Activities/act38side/level_act38side_ex07",
+            "zoneId": "act38side_zone2",
+            "code": "PV-EX-7",
+            "name": "烟火观景台",
+            "Event": "act38side"
+        },
+        "act38side_ex08": {
+            "stageId": "act38side_ex08",
+            "levelId": "Activities/act38side/level_act38side_ex08",
+            "zoneId": "act38side_zone2",
+            "code": "PV-EX-8",
+            "name": "狂欢之主",
+            "Event": "act38side"
+        },
+        "act38side_ex08#f#": {
+            "stageId": "act38side_ex08#f#",
+            "levelId": "Activities/act38side/level_act38side_ex08",
+            "zoneId": "act38side_zone2",
+            "code": "PV-EX-8",
+            "name": "狂欢之主",
             "Event": "act38side"
         },
         "act37side_01": {
@@ -23522,6 +23650,24 @@
             "act38side_sp02",
             "act38side_sp03"
         ],
+        "act38side_zone2": [
+            "act38side_ex01",
+            "act38side_ex01#f#",
+            "act38side_ex02",
+            "act38side_ex02#f#",
+            "act38side_ex03",
+            "act38side_ex03#f#",
+            "act38side_ex04",
+            "act38side_ex04#f#",
+            "act38side_ex05",
+            "act38side_ex05#f#",
+            "act38side_ex06",
+            "act38side_ex06#f#",
+            "act38side_ex07",
+            "act38side_ex07#f#",
+            "act38side_ex08",
+            "act38side_ex08#f#"
+        ],
         "act37side_zone1": [
             "act37side_01",
             "act37side_tr01",
@@ -26358,7 +26504,8 @@
             "weekly_4"
         ],
         "act38side": [
-            "act38side_zone1"
+            "act38side_zone1",
+            "act38side_zone2"
         ],
         "act37side": [
             "act37side_zone1",
@@ -50534,6 +50681,20 @@
                         "act38side_06",
                         "act38side_09",
                         "act38side_sp02"
+                    ],
+                    "act38side_zone2": [
+                        "act38side_ex01",
+                        "act38side_ex01#f#",
+                        "act38side_ex02",
+                        "act38side_ex02#f#",
+                        "act38side_ex03",
+                        "act38side_ex03#f#",
+                        "act38side_ex05",
+                        "act38side_ex05#f#",
+                        "act38side_ex06",
+                        "act38side_ex06#f#",
+                        "act38side_ex07",
+                        "act38side_ex07#f#"
                     ]
                 }
             }
@@ -50556,6 +50717,26 @@
                         "act38side_sp01",
                         "act38side_sp02",
                         "act38side_sp03"
+                    ],
+                    "act38side_zone2": [
+                        "act38side_ex01",
+                        "act38side_ex01#f#",
+                        "act38side_ex02",
+                        "act38side_ex02#f#",
+                        "act38side_ex03",
+                        "act38side_ex03#f#",
+                        "act38side_ex04",
+                        "act38side_ex04#f#",
+                        "act38side_ex05",
+                        "act38side_ex05#f#",
+                        "act38side_ex06",
+                        "act38side_ex06",
+                        "act38side_ex06#f#",
+                        "act38side_ex06#f#",
+                        "act38side_ex07",
+                        "act38side_ex07#f#",
+                        "act38side_ex08",
+                        "act38side_ex08#f#"
                     ]
                 }
             }
@@ -50640,6 +50821,10 @@
                 "act38side": {
                     "act38side_zone1": [
                         "act38side_10"
+                    ],
+                    "act38side_zone2": [
+                        "act38side_ex08",
+                        "act38side_ex08#f#"
                     ]
                 }
             }
@@ -50649,6 +50834,22 @@
                 "act38side": {
                     "act38side_zone1": [
                         "act38side_sp02"
+                    ],
+                    "act38side_zone2": [
+                        "act38side_ex01",
+                        "act38side_ex01#f#",
+                        "act38side_ex02",
+                        "act38side_ex02#f#",
+                        "act38side_ex03",
+                        "act38side_ex03#f#",
+                        "act38side_ex04",
+                        "act38side_ex04#f#",
+                        "act38side_ex05",
+                        "act38side_ex05#f#",
+                        "act38side_ex06",
+                        "act38side_ex06#f#",
+                        "act38side_ex07",
+                        "act38side_ex07#f#"
                     ]
                 }
             }
@@ -50658,6 +50859,16 @@
                 "act38side": {
                     "act38side_zone1": [
                         "act38side_sp02"
+                    ],
+                    "act38side_zone2": [
+                        "act38side_ex03",
+                        "act38side_ex03#f#",
+                        "act38side_ex05",
+                        "act38side_ex05#f#",
+                        "act38side_ex06",
+                        "act38side_ex06#f#",
+                        "act38side_ex08",
+                        "act38side_ex08#f#"
                     ]
                 }
             }
@@ -50667,6 +50878,14 @@
                 "act38side": {
                     "act38side_zone1": [
                         "act38side_sp02"
+                    ],
+                    "act38side_zone2": [
+                        "act38side_ex02",
+                        "act38side_ex02#f#",
+                        "act38side_ex05",
+                        "act38side_ex05#f#",
+                        "act38side_ex06",
+                        "act38side_ex06#f#"
                     ]
                 }
             }
@@ -50676,6 +50895,114 @@
                 "act38side": {
                     "act38side_zone1": [
                         "act38side_sp02"
+                    ],
+                    "act38side_zone2": [
+                        "act38side_ex02",
+                        "act38side_ex02#f#",
+                        "act38side_ex04",
+                        "act38side_ex04#f#",
+                        "act38side_ex05",
+                        "act38side_ex05#f#",
+                        "act38side_ex06",
+                        "act38side_ex06#f#",
+                        "act38side_ex08",
+                        "act38side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10031_cnvsld_2": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone2": [
+                        "act38side_ex01",
+                        "act38side_ex01#f#",
+                        "act38side_ex02",
+                        "act38side_ex02#f#",
+                        "act38side_ex03",
+                        "act38side_ex03#f#",
+                        "act38side_ex06",
+                        "act38side_ex06#f#",
+                        "act38side_ex07",
+                        "act38side_ex07#f#",
+                        "act38side_ex08",
+                        "act38side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10032_cnvsnp_2": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone2": [
+                        "act38side_ex01",
+                        "act38side_ex01#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10037_cnvpcar_2": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone2": [
+                        "act38side_ex01",
+                        "act38side_ex01#f#",
+                        "act38side_ex03",
+                        "act38side_ex03#f#",
+                        "act38side_ex04",
+                        "act38side_ex04#f#",
+                        "act38side_ex05",
+                        "act38side_ex05#f#",
+                        "act38side_ex07",
+                        "act38side_ex07#f#",
+                        "act38side_ex08",
+                        "act38side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10035_cnvdnc_2": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone2": [
+                        "act38side_ex02",
+                        "act38side_ex02#f#",
+                        "act38side_ex03",
+                        "act38side_ex03#f#",
+                        "act38side_ex04",
+                        "act38side_ex04#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10036_cnvpvd_2": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone2": [
+                        "act38side_ex03",
+                        "act38side_ex03#f#",
+                        "act38side_ex04",
+                        "act38side_ex04#f#",
+                        "act38side_ex05",
+                        "act38side_ex05#f#",
+                        "act38side_ex07",
+                        "act38side_ex07#f#",
+                        "act38side_ex08",
+                        "act38side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10039_cnvber_2": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone2": [
+                        "act38side_ex04",
+                        "act38side_ex04#f#",
+                        "act38side_ex06",
+                        "act38side_ex06#f#",
+                        "act38side_ex07",
+                        "act38side_ex07#f#"
                     ]
                 }
             }

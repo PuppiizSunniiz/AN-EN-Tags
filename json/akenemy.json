@@ -3165,9 +3165,30 @@
                                 "act38side_08": "PV-8 : 无私铁棘",
                                 "act38side_09": "PV-9 : 狼群与群狼",
                                 "act38side_10": "PV-10 : 铳响",
-                                "act38side_sp01": "PV-P-1 : 试演烟花秀",
-                                "act38side_sp02": "PV-P-2 : 即兴烟花秀",
-                                "act38side_sp03": "PV-P-3 : 狂欢之夜烟花秀"
+                                "act38side_sp01": "PV-SP-1 : 试演烟花秀",
+                                "act38side_sp02": "PV-SP-2 : 即兴烟花秀",
+                                "act38side_sp03": "PV-SP-3 : 狂欢之夜烟花秀"
+                            }
+                        },
+                        "act38side_zone2": {
+                            "name": "彩车游行",
+                            "stage": {
+                                "act38side_ex01": "PV-EX-1 : 零食派送",
+                                "act38side_ex01#f#": "PV-EX-1 : 零食派送 (Challenge)",
+                                "act38side_ex02": "PV-EX-2 : 热烈游行",
+                                "act38side_ex02#f#": "PV-EX-2 : 热烈游行 (Challenge)",
+                                "act38side_ex03": "PV-EX-3 : 游乐集市",
+                                "act38side_ex03#f#": "PV-EX-3 : 游乐集市 (Challenge)",
+                                "act38side_ex04": "PV-EX-4 : 穷街陋巷",
+                                "act38side_ex04#f#": "PV-EX-4 : 穷街陋巷 (Challenge)",
+                                "act38side_ex05": "PV-EX-5 : 火花进行曲",
+                                "act38side_ex05#f#": "PV-EX-5 : 火花进行曲 (Challenge)",
+                                "act38side_ex06": "PV-EX-6 : 巡演大街",
+                                "act38side_ex06#f#": "PV-EX-6 : 巡演大街 (Challenge)",
+                                "act38side_ex07": "PV-EX-7 : 烟火观景台",
+                                "act38side_ex07#f#": "PV-EX-7 : 烟火观景台 (Challenge)",
+                                "act38side_ex08": "PV-EX-8 : 狂欢之主",
+                                "act38side_ex08#f#": "PV-EX-8 : 狂欢之主 (Challenge)"
                             }
                         }
                     }
@@ -29136,6 +29157,20 @@
                         "act38side_06",
                         "act38side_09",
                         "act38side_sp02"
+                    ],
+                    "act38side_zone2": [
+                        "act38side_ex01",
+                        "act38side_ex01#f#",
+                        "act38side_ex02",
+                        "act38side_ex02#f#",
+                        "act38side_ex03",
+                        "act38side_ex03#f#",
+                        "act38side_ex05",
+                        "act38side_ex05#f#",
+                        "act38side_ex06",
+                        "act38side_ex06#f#",
+                        "act38side_ex07",
+                        "act38side_ex07#f#"
                     ]
                 }
             }
@@ -29158,6 +29193,26 @@
                         "act38side_sp01",
                         "act38side_sp02",
                         "act38side_sp03"
+                    ],
+                    "act38side_zone2": [
+                        "act38side_ex01",
+                        "act38side_ex01#f#",
+                        "act38side_ex02",
+                        "act38side_ex02#f#",
+                        "act38side_ex03",
+                        "act38side_ex03#f#",
+                        "act38side_ex04",
+                        "act38side_ex04#f#",
+                        "act38side_ex05",
+                        "act38side_ex05#f#",
+                        "act38side_ex06",
+                        "act38side_ex06",
+                        "act38side_ex06#f#",
+                        "act38side_ex06#f#",
+                        "act38side_ex07",
+                        "act38side_ex07#f#",
+                        "act38side_ex08",
+                        "act38side_ex08#f#"
                     ]
                 }
             }
@@ -29242,6 +29297,10 @@
                 "act38side": {
                     "act38side_zone1": [
                         "act38side_10"
+                    ],
+                    "act38side_zone2": [
+                        "act38side_ex08",
+                        "act38side_ex08#f#"
                     ]
                 }
             }
@@ -29251,6 +29310,22 @@
                 "act38side": {
                     "act38side_zone1": [
                         "act38side_sp02"
+                    ],
+                    "act38side_zone2": [
+                        "act38side_ex01",
+                        "act38side_ex01#f#",
+                        "act38side_ex02",
+                        "act38side_ex02#f#",
+                        "act38side_ex03",
+                        "act38side_ex03#f#",
+                        "act38side_ex04",
+                        "act38side_ex04#f#",
+                        "act38side_ex05",
+                        "act38side_ex05#f#",
+                        "act38side_ex06",
+                        "act38side_ex06#f#",
+                        "act38side_ex07",
+                        "act38side_ex07#f#"
                     ]
                 }
             }
@@ -29260,6 +29335,16 @@
                 "act38side": {
                     "act38side_zone1": [
                         "act38side_sp02"
+                    ],
+                    "act38side_zone2": [
+                        "act38side_ex03",
+                        "act38side_ex03#f#",
+                        "act38side_ex05",
+                        "act38side_ex05#f#",
+                        "act38side_ex06",
+                        "act38side_ex06#f#",
+                        "act38side_ex08",
+                        "act38side_ex08#f#"
                     ]
                 }
             }
@@ -29269,6 +29354,14 @@
                 "act38side": {
                     "act38side_zone1": [
                         "act38side_sp02"
+                    ],
+                    "act38side_zone2": [
+                        "act38side_ex02",
+                        "act38side_ex02#f#",
+                        "act38side_ex05",
+                        "act38side_ex05#f#",
+                        "act38side_ex06",
+                        "act38side_ex06#f#"
                     ]
                 }
             }
@@ -29278,6 +29371,114 @@
                 "act38side": {
                     "act38side_zone1": [
                         "act38side_sp02"
+                    ],
+                    "act38side_zone2": [
+                        "act38side_ex02",
+                        "act38side_ex02#f#",
+                        "act38side_ex04",
+                        "act38side_ex04#f#",
+                        "act38side_ex05",
+                        "act38side_ex05#f#",
+                        "act38side_ex06",
+                        "act38side_ex06#f#",
+                        "act38side_ex08",
+                        "act38side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10031_cnvsld_2": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone2": [
+                        "act38side_ex01",
+                        "act38side_ex01#f#",
+                        "act38side_ex02",
+                        "act38side_ex02#f#",
+                        "act38side_ex03",
+                        "act38side_ex03#f#",
+                        "act38side_ex06",
+                        "act38side_ex06#f#",
+                        "act38side_ex07",
+                        "act38side_ex07#f#",
+                        "act38side_ex08",
+                        "act38side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10032_cnvsnp_2": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone2": [
+                        "act38side_ex01",
+                        "act38side_ex01#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10037_cnvpcar_2": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone2": [
+                        "act38side_ex01",
+                        "act38side_ex01#f#",
+                        "act38side_ex03",
+                        "act38side_ex03#f#",
+                        "act38side_ex04",
+                        "act38side_ex04#f#",
+                        "act38side_ex05",
+                        "act38side_ex05#f#",
+                        "act38side_ex07",
+                        "act38side_ex07#f#",
+                        "act38side_ex08",
+                        "act38side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10035_cnvdnc_2": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone2": [
+                        "act38side_ex02",
+                        "act38side_ex02#f#",
+                        "act38side_ex03",
+                        "act38side_ex03#f#",
+                        "act38side_ex04",
+                        "act38side_ex04#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10036_cnvpvd_2": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone2": [
+                        "act38side_ex03",
+                        "act38side_ex03#f#",
+                        "act38side_ex04",
+                        "act38side_ex04#f#",
+                        "act38side_ex05",
+                        "act38side_ex05#f#",
+                        "act38side_ex07",
+                        "act38side_ex07#f#",
+                        "act38side_ex08",
+                        "act38side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10039_cnvber_2": {
+            "sidestory": {
+                "act38side": {
+                    "act38side_zone2": [
+                        "act38side_ex04",
+                        "act38side_ex04#f#",
+                        "act38side_ex06",
+                        "act38side_ex06#f#",
+                        "act38side_ex07",
+                        "act38side_ex07#f#"
                     ]
                 }
             }
