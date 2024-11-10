@@ -27144,11 +27144,6 @@
                         "act20side_sp02"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_a-01"
-                    ]
-                },
                 "act15d5": {
                     "act15d5_zone1": [
                         "act15d5_01",
@@ -27191,6 +27186,13 @@
                     ],
                     "act13d2_zone2": [
                         "a001_ex01"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_a-01"
                     ]
                 }
             },
@@ -27422,14 +27424,6 @@
                         "act10mini_01#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_a-01",
-                        "act1lock_a-02",
-                        "act1lock_a-03",
-                        "act1lock_a-04"
-                    ]
-                },
                 "act7mini": {
                     "act7mini_zone1": [
                         "act7mini_03",
@@ -27464,6 +27458,28 @@
                 "act1bossrush": {
                     "act1bossrush_zone1": [
                         "act1bossrush_01"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_a-01",
+                        "act1lock_a-02",
+                        "act1lock_a-03",
+                        "act1lock_a-04"
+                    ]
+                },
+                "act42d0": {
+                    "area_1": [
+                        "act42d0_01",
+                        "act42d0_02",
+                        "act42d0_03"
+                    ],
+                    "area_2": [
+                        "act42d0_04",
+                        "act42d0_05",
+                        "act42d0_06"
                     ]
                 }
             },
@@ -27506,20 +27522,6 @@
                         "lt_04_03",
                         "lt_04_06",
                         "lt_04_07"
-                    ]
-                }
-            },
-            "cc": {
-                "act42d0": {
-                    "area_1": [
-                        "act42d0_01",
-                        "act42d0_02",
-                        "act42d0_03"
-                    ],
-                    "area_2": [
-                        "act42d0_04",
-                        "act42d0_05",
-                        "act42d0_06"
                     ]
                 }
             },
@@ -27724,11 +27726,6 @@
                         "act13mini_08#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_a-02"
-                    ]
-                },
                 "act9d0": {
                     "act17d5_zone1": [
                         "act9d0_04"
@@ -27750,6 +27747,18 @@
                     "act13d2_zone1": [
                         "a001_02",
                         "a001_05"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_a-02"
+                    ]
+                },
+                "act42d0": {
+                    "challenge": [
+                        "act42d0_sp03"
                     ]
                 }
             },
@@ -27783,11 +27792,6 @@
                 "CC#00": {
                     "CC#00": [
                         "rune_01-02"
-                    ]
-                },
-                "act42d0": {
-                    "challenge": [
-                        "act42d0_sp03"
                     ]
                 }
             },
@@ -27924,12 +27928,6 @@
                         "act9mini_02#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_a-03",
-                        "act1lock_b-02"
-                    ]
-                },
                 "act10d5": {
                     "act10d5_zone1": [
                         "act10d5_01",
@@ -27944,6 +27942,14 @@
                     ],
                     "act13d2_zone2": [
                         "a001_ex02"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_a-03",
+                        "act1lock_b-02"
                     ]
                 }
             },
@@ -28287,12 +28293,6 @@
                         "act17mini_01#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_a-01",
-                        "act1lock_a-02"
-                    ]
-                },
                 "act13d0": {
                     "act13d0_zone1": [
                         "act13d0_01",
@@ -28317,6 +28317,14 @@
                     ],
                     "act13d2_zone2": [
                         "a001_ex03"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_a-01",
+                        "act1lock_a-02"
                     ]
                 }
             },
@@ -28574,7 +28582,9 @@
                     "CC#10": [
                         "rune_09-02"
                     ]
-                },
+                }
+            },
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp04"
@@ -28754,14 +28764,16 @@
                     ]
                 }
             },
-            "sidestory": {
+            "exp": {
                 "act1lock": {
                     "act1lock_zone1": [
                         "act1lock_a-01",
                         "act1lock_a-03",
                         "act1lock_b-01"
                     ]
-                },
+                }
+            },
+            "sidestory": {
                 "act13d0": {
                     "act13d0_zone1": [
                         "act13d0_01",
@@ -28917,11 +28929,6 @@
                         "act9mini_01#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_b-01"
-                    ]
-                },
                 "act7mini": {
                     "act7mini_zone1": [
                         "act7mini_01",
@@ -28998,6 +29005,13 @@
                         "a001_ex03",
                         "a001_ex04",
                         "a001_ex04#f#"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_b-01"
                     ]
                 }
             },
@@ -29637,11 +29651,6 @@
                         "act10mini_09"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_a-02"
-                    ]
-                },
                 "act7d5": {
                     "act7d5": [
                         "act7d5_01",
@@ -29656,6 +29665,13 @@
                         "a001_ex03",
                         "a001_ex05",
                         "a001_ex05#f#"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_a-02"
                     ]
                 }
             },
@@ -29798,12 +29814,14 @@
                     ]
                 }
             },
-            "sidestory": {
+            "exp": {
                 "act1lock": {
                     "act1lock_zone1": [
                         "act1lock_b-02"
                     ]
-                },
+                }
+            },
+            "sidestory": {
                 "act13d0": {
                     "act13d0_zone1": [
                         "act13d0_02",
@@ -29981,12 +29999,14 @@
                     ]
                 }
             },
-            "sidestory": {
+            "exp": {
                 "act1lock": {
                     "act1lock_zone1": [
                         "act1lock_a-02"
                     ]
-                },
+                }
+            },
+            "sidestory": {
                 "act7mini": {
                     "act7mini_zone1": [
                         "act7mini_01",
@@ -30986,11 +31006,6 @@
                         "act16side_ex02#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_b-02"
-                    ]
-                },
                 "act13d0": {
                     "act13d0_zone1": [
                         "act13d0_02",
@@ -31012,6 +31027,18 @@
                     ]
                 }
             },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_b-02"
+                    ]
+                },
+                "act42d0": {
+                    "challenge": [
+                        "act42d0_sp03"
+                    ]
+                }
+            },
             "campaign": {
                 "camp_r_01": {
                     "camp_r_01": [
@@ -31029,13 +31056,6 @@
                 "tower_n_14": {
                     "tower_n_14": [
                         "lt_14_04"
-                    ]
-                }
-            },
-            "cc": {
-                "act42d0": {
-                    "challenge": [
-                        "act42d0_sp03"
                     ]
                 }
             },
@@ -31243,13 +31263,6 @@
                         "act20side_sp02"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_a-02",
-                        "act1lock_b-04",
-                        "act1lock_c-01"
-                    ]
-                },
                 "act13d0": {
                     "act13d0_zone1": [
                         "act13d0_02",
@@ -31289,6 +31302,15 @@
                 "act2bossrush": {
                     "act2bossrush_zone1": [
                         "act2bossrush_02"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_a-02",
+                        "act1lock_b-04",
+                        "act1lock_c-01"
                     ]
                 }
             },
@@ -31486,12 +31508,14 @@
                     ]
                 }
             },
-            "sidestory": {
+            "exp": {
                 "act1lock": {
                     "act1lock_zone1": [
                         "act1lock_b-02"
                     ]
-                },
+                }
+            },
+            "sidestory": {
                 "act9d0": {
                     "act17d5_zone1": [
                         "act9d0_08"
@@ -31814,11 +31838,6 @@
                         "act9mini_01#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_b-01"
-                    ]
-                },
                 "act15d5": {
                     "act15d5_zone1": [
                         "act15d5_01",
@@ -31884,6 +31903,13 @@
                 "act1bossrush": {
                     "act1bossrush_zone1": [
                         "act1bossrush_01"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_b-01"
                     ]
                 }
             },
@@ -32081,11 +32107,6 @@
                         "act9mini_03#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_b-01"
-                    ]
-                },
                 "act15d5": {
                     "act15d5_zone1": [
                         "act15d5_04",
@@ -32137,6 +32158,13 @@
                     "act1bossrush_zone1": [
                         "act1bossrush_01",
                         "act1bossrush_02"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_b-01"
                     ]
                 }
             },
@@ -32363,7 +32391,9 @@
                     "CC#02": [
                         "rune_02-03"
                     ]
-                },
+                }
+            },
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp04"
@@ -33128,7 +33158,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp02"
@@ -33362,12 +33392,14 @@
                     ]
                 }
             },
-            "sidestory": {
+            "exp": {
                 "act1lock": {
                     "act1lock_zone1": [
                         "act1lock_b-02"
                     ]
-                },
+                }
+            },
+            "sidestory": {
                 "act13d0": {
                     "act13d0_zone1": [
                         "act13d0_04",
@@ -34092,12 +34124,14 @@
                     ]
                 }
             },
-            "sidestory": {
+            "exp": {
                 "act1lock": {
                     "act1lock_zone1": [
                         "act1lock_b-02"
                     ]
-                },
+                }
+            },
+            "sidestory": {
                 "act7mini": {
                     "act7mini_zone1": [
                         "act7mini_03",
@@ -34382,33 +34416,10 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone3": [
                         "act1vecb_sp06"
-                    ]
-                },
-                "CC#00": {
-                    "CC#00": [
-                        "rune_02-01",
-                        "rune_02-02"
-                    ]
-                },
-                "CC#01": {
-                    "CC#01": [
-                        "rune_02-02",
-                        "rune_02-01"
-                    ]
-                },
-                "CC#02": {
-                    "CC#02": [
-                        "rune_02-02",
-                        "rune_02-01"
-                    ]
-                },
-                "CC#03": {
-                    "CC#03": [
-                        "rune_02-02"
                     ]
                 },
                 "act42d0": {
@@ -34516,6 +34527,31 @@
                 "tower_n_15": {
                     "tower_n_15": [
                         "lt_15_04"
+                    ]
+                }
+            },
+            "cc": {
+                "CC#00": {
+                    "CC#00": [
+                        "rune_02-01",
+                        "rune_02-02"
+                    ]
+                },
+                "CC#01": {
+                    "CC#01": [
+                        "rune_02-02",
+                        "rune_02-01"
+                    ]
+                },
+                "CC#02": {
+                    "CC#02": [
+                        "rune_02-02",
+                        "rune_02-01"
+                    ]
+                },
+                "CC#03": {
+                    "CC#03": [
+                        "rune_02-02"
                     ]
                 }
             },
@@ -35521,7 +35557,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp03"
@@ -36297,7 +36333,9 @@
                     "CC#08": [
                         "rune_06-01"
                     ]
-                },
+                }
+            },
+            "exp": {
                 "act42d0": {
                     "area_1": [
                         "act42d0_01",
@@ -36373,7 +36411,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone1": [
                         "act1vecb_04",
@@ -36771,7 +36809,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone1": [
                         "act1vecb_04",
@@ -36779,21 +36817,6 @@
                     ],
                     "act1vecb_zone2": [
                         "act1vecb_06"
-                    ]
-                },
-                "CC#00": {
-                    "CC#00": [
-                        "rune_02-03"
-                    ]
-                },
-                "CC#01": {
-                    "CC#01": [
-                        "rune_02-03"
-                    ]
-                },
-                "CC#02": {
-                    "CC#02": [
-                        "rune_02-03"
                     ]
                 }
             },
@@ -36836,6 +36859,23 @@
                 "act1bossrush": {
                     "act1bossrush_zone1": [
                         "act1bossrush_04"
+                    ]
+                }
+            },
+            "cc": {
+                "CC#00": {
+                    "CC#00": [
+                        "rune_02-03"
+                    ]
+                },
+                "CC#01": {
+                    "CC#01": [
+                        "rune_02-03"
+                    ]
+                },
+                "CC#02": {
+                    "CC#02": [
+                        "rune_02-03"
                     ]
                 }
             },
@@ -36897,26 +36937,11 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone1": [
                         "act1vecb_03",
                         "act1vecb_04"
-                    ]
-                },
-                "CC#00": {
-                    "CC#00": [
-                        "rune_02-03"
-                    ]
-                },
-                "CC#01": {
-                    "CC#01": [
-                        "rune_02-03"
-                    ]
-                },
-                "CC#02": {
-                    "CC#02": [
-                        "rune_02-03"
                     ]
                 }
             },
@@ -36939,6 +36964,23 @@
                 "act17d1": {
                     "act17d1": [
                         "act17d1_03_c"
+                    ]
+                }
+            },
+            "cc": {
+                "CC#00": {
+                    "CC#00": [
+                        "rune_02-03"
+                    ]
+                },
+                "CC#01": {
+                    "CC#01": [
+                        "rune_02-03"
+                    ]
+                },
+                "CC#02": {
+                    "CC#02": [
+                        "rune_02-03"
                     ]
                 }
             },
@@ -37014,12 +37056,6 @@
                         "act8mini_06#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_a-04",
-                        "act1lock_b-04"
-                    ]
-                },
                 "act7d5": {
                     "act7d5": [
                         "act7d5_06",
@@ -37030,6 +37066,14 @@
                     "act6d5": [
                         "act6d5_08",
                         "act6d5_08#f#"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_a-04",
+                        "act1lock_b-04"
                     ]
                 }
             },
@@ -37143,11 +37187,6 @@
                         "act13mini_07#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_b-04"
-                    ]
-                },
                 "act6d5": {
                     "act6d5": [
                         "act6d5_08",
@@ -37159,6 +37198,13 @@
                 "act1bossrush": {
                     "act1bossrush_zone1": [
                         "act1bossrush_02"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_b-04"
                     ]
                 }
             },
@@ -37208,7 +37254,9 @@
                         "act16mini_04",
                         "act16mini_04#f#"
                     ]
-                },
+                }
+            },
+            "exp": {
                 "act1lock": {
                     "act1lock_zone1": [
                         "act1lock_a-04"
@@ -37261,12 +37309,6 @@
                         "act13mini_07#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_a-04",
-                        "act1lock_b-04"
-                    ]
-                },
                 "act6d5": {
                     "act6d5": [
                         "act6d5_08",
@@ -37278,6 +37320,14 @@
                 "act1bossrush": {
                     "act1bossrush_zone1": [
                         "act1bossrush_02"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_a-04",
+                        "act1lock_b-04"
                     ]
                 }
             },
@@ -37442,11 +37492,6 @@
                         "act13mini_07#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_a-04"
-                    ]
-                },
                 "act6d5": {
                     "act6d5": [
                         "act6d5_08",
@@ -37458,6 +37503,13 @@
                 "act1bossrush": {
                     "act1bossrush_zone1": [
                         "act1bossrush_02"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_a-04"
                     ]
                 }
             },
@@ -37660,7 +37712,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone1": [
                         "act1vecb_02"
@@ -37758,7 +37810,9 @@
                         "act8mini_06",
                         "act8mini_06#f#"
                     ]
-                },
+                }
+            },
+            "exp": {
                 "act1lock": {
                     "act1lock_zone1": [
                         "act1lock_b-04"
@@ -37826,7 +37880,9 @@
                         "act9mini_03",
                         "act9mini_03#f#"
                     ]
-                },
+                }
+            },
+            "exp": {
                 "act1lock": {
                     "act1lock_zone1": [
                         "act1lock_c-01"
@@ -37989,46 +38045,10 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone2": [
                         "act1vecb_08"
-                    ]
-                },
-                "CC#06": {
-                    "CC#06": [
-                        "rune_08-02"
-                    ]
-                },
-                "CC#07": {
-                    "CC#07": [
-                        "rune_08-02"
-                    ]
-                },
-                "CC#08": {
-                    "CC#08": [
-                        "rune_08-02"
-                    ]
-                },
-                "CC#09": {
-                    "CC#09": [
-                        "rune_08-02"
-                    ]
-                },
-                "CC#12": {
-                    "CC#12": [
-                        "rune_14-01"
-                    ]
-                },
-                "PinchOut": {
-                    "PinchOut": [
-                        "act38rune_01-02"
-                    ]
-                },
-                "CCBP#01": {
-                    "CCBP#01": [
-                        "crisis_v2_01-05",
-                        "crisis_v2_01-05"
                     ]
                 }
             },
@@ -38086,6 +38106,44 @@
                         "act17d1_02_a",
                         "act17d1_02_b",
                         "act17d1_02_c"
+                    ]
+                }
+            },
+            "cc": {
+                "CC#06": {
+                    "CC#06": [
+                        "rune_08-02"
+                    ]
+                },
+                "CC#07": {
+                    "CC#07": [
+                        "rune_08-02"
+                    ]
+                },
+                "CC#08": {
+                    "CC#08": [
+                        "rune_08-02"
+                    ]
+                },
+                "CC#09": {
+                    "CC#09": [
+                        "rune_08-02"
+                    ]
+                },
+                "CC#12": {
+                    "CC#12": [
+                        "rune_14-01"
+                    ]
+                },
+                "PinchOut": {
+                    "PinchOut": [
+                        "act38rune_01-02"
+                    ]
+                },
+                "CCBP#01": {
+                    "CCBP#01": [
+                        "crisis_v2_01-05",
+                        "crisis_v2_01-05"
                     ]
                 }
             },
@@ -38760,7 +38818,9 @@
                     "CC#12": [
                         "rune_14-01"
                     ]
-                },
+                }
+            },
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp03"
@@ -38947,7 +39007,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "area_1": [
                         "act42d0_01",
@@ -38983,7 +39043,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp03"
@@ -39886,7 +39946,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone3": [
                         "act1vecb_sp08"
@@ -40148,7 +40208,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone2": [
                         "act1vecb_06"
@@ -40328,11 +40388,6 @@
                         "act17mini_02#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_a-03"
-                    ]
-                },
                 "act15d5": {
                     "act15d5_zone1": [
                         "act15d5_02",
@@ -40383,6 +40438,13 @@
                 "act1bossrush": {
                     "act1bossrush_zone1": [
                         "act1bossrush_01"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_a-03"
                     ]
                 }
             },
@@ -40521,7 +40583,7 @@
                     ]
                 }
             },
-            "sidestory": {
+            "exp": {
                 "act1lock": {
                     "act1lock_zone1": [
                         "act1lock_b-01"
@@ -40560,7 +40622,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone1": [
                         "act1vecb_03"
@@ -40774,12 +40836,33 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone3": [
                         "act1vecb_sp04"
                     ]
                 },
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_b-02"
+                    ]
+                }
+            },
+            "sidestory": {
+                "act15d5": {
+                    "act15d5_zone1": [
+                        "act15d5_04",
+                        "act15d5_04#f#"
+                    ]
+                },
+                "act6d5": {
+                    "act6d5": [
+                        "act6d5_07",
+                        "act6d5_07#f#"
+                    ]
+                }
+            },
+            "cc": {
                 "CC#01": {
                     "CC#01": [
                         "rune_03-02"
@@ -40803,25 +40886,6 @@
                 "CC#05": {
                     "CC#05": [
                         "rune_03-02"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_b-02"
-                    ]
-                },
-                "act15d5": {
-                    "act15d5_zone1": [
-                        "act15d5_04",
-                        "act15d5_04#f#"
-                    ]
-                },
-                "act6d5": {
-                    "act6d5": [
-                        "act6d5_07",
-                        "act6d5_07#f#"
                     ]
                 }
             },
@@ -40967,7 +41031,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone1": [
                         "act1vecb_04"
@@ -41125,7 +41189,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp01",
@@ -41259,7 +41323,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp02"
@@ -41389,7 +41453,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone2": [
                         "act1vecb_07"
@@ -41460,33 +41524,13 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone1": [
                         "act1vecb_02"
                     ],
                     "act1vecb_zone2": [
                         "act1vecb_07"
-                    ]
-                },
-                "CC#00": {
-                    "CC#00": [
-                        "rune_02-05"
-                    ]
-                },
-                "CC#01": {
-                    "CC#01": [
-                        "rune_02-05"
-                    ]
-                },
-                "CC#02": {
-                    "CC#02": [
-                        "rune_02-05"
-                    ]
-                },
-                "CC#03": {
-                    "CC#03": [
-                        "rune_02-05"
                     ]
                 }
             },
@@ -41508,6 +41552,28 @@
                 "camp_r_02": {
                     "camp_r_02": [
                         "camp_r_02"
+                    ]
+                }
+            },
+            "cc": {
+                "CC#00": {
+                    "CC#00": [
+                        "rune_02-05"
+                    ]
+                },
+                "CC#01": {
+                    "CC#01": [
+                        "rune_02-05"
+                    ]
+                },
+                "CC#02": {
+                    "CC#02": [
+                        "rune_02-05"
+                    ]
+                },
+                "CC#03": {
+                    "CC#03": [
+                        "rune_02-05"
                     ]
                 }
             },
@@ -41753,7 +41819,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone2": [
                         "act1vecb_06"
@@ -41845,7 +41911,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp05"
@@ -42139,7 +42205,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone1": [
                         "act1vecb_05"
@@ -42217,22 +42283,20 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone2": [
                         "act1vecb_06"
                     ]
                 },
-                "act42d0": {
-                    "challenge": [
-                        "act42d0_sp05"
-                    ]
-                }
-            },
-            "sidestory": {
                 "act1lock": {
                     "act1lock_zone1": [
                         "act1lock_c-01"
+                    ]
+                },
+                "act42d0": {
+                    "challenge": [
+                        "act42d0_sp05"
                     ]
                 }
             },
@@ -44844,7 +44908,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "area_4": [
                         "act42d0_10",
@@ -44889,7 +44953,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "area_4": [
                         "act42d0_10",
@@ -45548,7 +45612,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp03"
@@ -46227,7 +46291,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "area_4": [
                         "act42d0_10",
@@ -46536,11 +46600,6 @@
                         "act13mini_03#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_c-01"
-                    ]
-                },
                 "act17d0": {
                     "act1r6sre_zone1": [
                         "act17d0_02"
@@ -46574,6 +46633,13 @@
                     ],
                     "act17d5_zone3": [
                         "act9d0_mo01"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_c-01"
                     ]
                 }
             },
@@ -46938,11 +47004,6 @@
                         "act10mini_05#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_c-01"
-                    ]
-                },
                 "act9d0": {
                     "act17d5_zone1": [
                         "act9d0_02",
@@ -46979,6 +47040,20 @@
                     ]
                 }
             },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_c-01"
+                    ]
+                },
+                "act42d0": {
+                    "area_3": [
+                        "act42d0_07",
+                        "act42d0_08",
+                        "act42d0_09"
+                    ]
+                }
+            },
             "campaign": {
                 "camp_r_06": {
                     "camp_r_06": [
@@ -47007,15 +47082,6 @@
                         "lt_15_02",
                         "lt_15_04",
                         "lt_15_05"
-                    ]
-                }
-            },
-            "cc": {
-                "act42d0": {
-                    "area_3": [
-                        "act42d0_07",
-                        "act42d0_08",
-                        "act42d0_09"
                     ]
                 }
             },
@@ -47179,7 +47245,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone3": [
                         "act1vecb_sp03"
@@ -47492,7 +47558,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "area_4": [
                         "act42d0_10",
@@ -47537,11 +47603,6 @@
                         "act16mini_05#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_c-01"
-                    ]
-                },
                 "act13d0": {
                     "act13d0_zone1": [
                         "act13d0_08",
@@ -47551,6 +47612,13 @@
                 "act9d0": {
                     "act17d5_zone3": [
                         "act9d0_mo01"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_c-01"
                     ]
                 }
             },
@@ -47866,7 +47934,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp03"
@@ -49341,7 +49409,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone2": [
                         "act1vecb_07"
@@ -49804,7 +49872,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone3": [
                         "act1vecb_sp05"
@@ -49906,7 +49974,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone3": [
                         "act1vecb_sp05"
@@ -50306,7 +50374,9 @@
                     "CC#12": [
                         "rune_14-01"
                     ]
-                },
+                }
+            },
+            "exp": {
                 "act42d0": {
                     "area_4": [
                         "act42d0_10",
@@ -51344,35 +51414,10 @@
             }
         },
         "enemy_1118_lidbox": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone1": [
                         "act1vecb_01"
-                    ]
-                },
-                "CC#04": {
-                    "CC#04": [
-                        "rune_06-02"
-                    ]
-                },
-                "CC#05": {
-                    "CC#05": [
-                        "rune_06-02"
-                    ]
-                },
-                "CC#06": {
-                    "CC#06": [
-                        "rune_06-02"
-                    ]
-                },
-                "CC#07": {
-                    "CC#07": [
-                        "rune_06-02"
-                    ]
-                },
-                "CCBP#01": {
-                    "CCBP#01": [
-                        "crisis_v2_01-03"
                     ]
                 }
             },
@@ -51414,6 +51459,33 @@
                     ]
                 }
             },
+            "cc": {
+                "CC#04": {
+                    "CC#04": [
+                        "rune_06-02"
+                    ]
+                },
+                "CC#05": {
+                    "CC#05": [
+                        "rune_06-02"
+                    ]
+                },
+                "CC#06": {
+                    "CC#06": [
+                        "rune_06-02"
+                    ]
+                },
+                "CC#07": {
+                    "CC#07": [
+                        "rune_06-02"
+                    ]
+                },
+                "CCBP#01": {
+                    "CCBP#01": [
+                        "crisis_v2_01-03"
+                    ]
+                }
+            },
             "is": {
                 "IS#2": {
                     "IS#2 Floor 1": [
@@ -51451,7 +51523,7 @@
             }
         },
         "enemy_1095_ccripr_2": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone1": [
                         "act1vecb_01"
@@ -51577,7 +51649,7 @@
             }
         },
         "enemy_1258_durman_2": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone1": [
                         "act1vecb_01"
@@ -51662,7 +51734,7 @@
             }
         },
         "enemy_1118_lidbox_2": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone1": [
                         "act1vecb_01"
@@ -51744,7 +51816,7 @@
             }
         },
         "enemy_8008_eltswd": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone1": [
                         "act1vecb_02",
@@ -51761,7 +51833,7 @@
             }
         },
         "enemy_1192_krgscr_2": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone1": [
                         "act1vecb_02"
@@ -51808,7 +51880,7 @@
             }
         },
         "enemy_8007_eltrsm": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone1": [
                         "act1vecb_03"
@@ -51817,7 +51889,7 @@
             }
         },
         "enemy_8009_eltufo": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone1": [
                         "act1vecb_05"
@@ -51829,7 +51901,7 @@
             }
         },
         "enemy_8007_eltrsm_2": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone1": [
                         "act1vecb_05"
@@ -51838,7 +51910,7 @@
             }
         },
         "enemy_8007_eltrsm_3": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone2": [
                         "act1vecb_08"
@@ -51847,7 +51919,7 @@
             }
         },
         "enemy_1104_lfkght_2": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone2": [
                         "act1vecb_08"
@@ -51921,7 +51993,7 @@
             }
         },
         "enemy_1332_cbterm_2": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone2": [
                         "act1vecb_08"
@@ -51949,7 +52021,7 @@
             }
         },
         "enemy_1333_cbbgen_2": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone2": [
                         "act1vecb_08"
@@ -51977,7 +52049,7 @@
             }
         },
         "enemy_1328_cbjedi_2": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone2": [
                         "act1vecb_08"
@@ -52018,7 +52090,7 @@
             }
         },
         "enemy_1415_mmkabi_2": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone2": [
                         "act1vecb_08"
@@ -52053,7 +52125,7 @@
             }
         },
         "enemy_1098_cchmpn_2": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone3": [
                         "act1vecb_sp01"
@@ -52168,7 +52240,7 @@
             }
         },
         "enemy_1059_buster_2": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone3": [
                         "act1vecb_sp02"
@@ -52261,7 +52333,7 @@
             }
         },
         "enemy_1022_dmage_2": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone3": [
                         "act1vecb_sp03"
@@ -52302,7 +52374,7 @@
             }
         },
         "enemy_1076_bsthmr_2": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone3": [
                         "act1vecb_sp04"
@@ -52402,7 +52474,7 @@
             }
         },
         "enemy_1060_emouse_2": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone3": [
                         "act1vecb_sp04"
@@ -52509,35 +52581,10 @@
             }
         },
         "enemy_1001_bigbo": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone3": [
                         "act1vecb_sp06"
-                    ]
-                },
-                "CC#04": {
-                    "CC#04": [
-                        "rune_06-01"
-                    ]
-                },
-                "CC#05": {
-                    "CC#05": [
-                        "rune_06-01"
-                    ]
-                },
-                "CC#06": {
-                    "CC#06": [
-                        "rune_06-01"
-                    ]
-                },
-                "CC#07": {
-                    "CC#07": [
-                        "rune_06-01"
-                    ]
-                },
-                "CC#08": {
-                    "CC#08": [
-                        "rune_06-01"
                     ]
                 }
             },
@@ -52582,6 +52629,33 @@
                     ]
                 }
             },
+            "cc": {
+                "CC#04": {
+                    "CC#04": [
+                        "rune_06-01"
+                    ]
+                },
+                "CC#05": {
+                    "CC#05": [
+                        "rune_06-01"
+                    ]
+                },
+                "CC#06": {
+                    "CC#06": [
+                        "rune_06-01"
+                    ]
+                },
+                "CC#07": {
+                    "CC#07": [
+                        "rune_06-01"
+                    ]
+                },
+                "CC#08": {
+                    "CC#08": [
+                        "rune_06-01"
+                    ]
+                }
+            },
             "is": {
                 "IS#1": {
                     "IS#1 Floor 3": [
@@ -52615,7 +52689,7 @@
             }
         },
         "enemy_1133_harchn_2": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone3": [
                         "act1vecb_sp07"
@@ -52661,7 +52735,7 @@
             }
         },
         "enemy_1134_diamd_2": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone3": [
                         "act1vecb_sp07"
@@ -52727,7 +52801,7 @@
             }
         },
         "enemy_1138_tumor": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone3": [
                         "act1vecb_sp07"
@@ -52800,15 +52874,10 @@
             }
         },
         "enemy_1291_dusrch_2": {
-            "cc": {
+            "exp": {
                 "act1vecb": {
                     "act1vecb_zone3": [
                         "act1vecb_sp08"
-                    ]
-                },
-                "CCBP#01": {
-                    "CCBP#01": [
-                        "crisis_v2_01-01"
                     ]
                 }
             },
@@ -52830,6 +52899,13 @@
                 "camp_r_17": {
                     "camp_r_17": [
                         "camp_r_17"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#01": {
+                    "CCBP#01": [
+                        "crisis_v2_01-01"
                     ]
                 }
             },
@@ -52975,7 +53051,9 @@
                     "CC#09": [
                         "rune_08-01"
                     ]
-                },
+                }
+            },
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp01"
@@ -53143,7 +53221,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp01"
@@ -54011,7 +54089,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp01"
@@ -57253,7 +57331,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp03"
@@ -57677,7 +57755,9 @@
                     "CC#09": [
                         "rune_08-01"
                     ]
-                },
+                }
+            },
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp01"
@@ -57821,7 +57901,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp04"
@@ -58039,7 +58119,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "area_4": [
                         "act42d0_10",
@@ -58889,11 +58969,6 @@
                         "act13mini_04#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_b-03"
-                    ]
-                },
                 "act7mini": {
                     "act7mini_zone1": [
                         "act7mini_02",
@@ -58922,6 +58997,13 @@
                     "act14d7_zone2": [
                         "act5d0_ex08",
                         "act5d0_ex08#f#"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_b-03"
                     ]
                 }
             },
@@ -59554,7 +59636,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp05"
@@ -59716,7 +59798,9 @@
                     "CC#08": [
                         "rune_07-01"
                     ]
-                },
+                }
+            },
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp02"
@@ -59818,7 +59902,9 @@
                     "CC#08": [
                         "rune_07-01"
                     ]
-                },
+                }
+            },
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp02"
@@ -59934,7 +60020,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp02"
@@ -61197,7 +61283,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp02"
@@ -61652,7 +61738,9 @@
                     "CC#08": [
                         "rune_07-01"
                     ]
-                },
+                }
+            },
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp02"
@@ -61898,7 +61986,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp02"
@@ -63227,11 +63315,6 @@
                         "act10mini_09"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_c-01"
-                    ]
-                },
                 "act15d5": {
                     "act15d5_zone1": [
                         "act15d5_08",
@@ -63252,6 +63335,13 @@
                         "act5d0_ex07#f#",
                         "act5d0_ex08",
                         "act5d0_ex08#f#"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_c-01"
                     ]
                 }
             },
@@ -63487,7 +63577,9 @@
                     "CC#06": [
                         "rune_04-01"
                     ]
-                },
+                }
+            },
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp05"
@@ -70548,11 +70640,6 @@
                         "act13mini_04#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_b-03"
-                    ]
-                },
                 "act5d0": {
                     "act14d7_zone1": [
                         "act5d0_01",
@@ -70565,6 +70652,13 @@
                         "act5d0_08",
                         "act5d0_09",
                         "act5d0_10"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_b-03"
                     ]
                 }
             },
@@ -70674,11 +70768,6 @@
                         "act13mini_04#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_b-03"
-                    ]
-                },
                 "act5d0": {
                     "act14d7_zone1": [
                         "act5d0_02",
@@ -70686,6 +70775,13 @@
                         "act5d0_04",
                         "act5d0_07",
                         "act5d0_10"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_b-03"
                     ]
                 }
             },
@@ -70745,11 +70841,6 @@
                         "act13mini_04#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_b-03"
-                    ]
-                },
                 "act7mini": {
                     "act7mini_zone1": [
                         "act7mini_05",
@@ -70767,6 +70858,13 @@
                         "act5d0_ex03#f#",
                         "act5d0_ex04",
                         "act5d0_ex04#f#"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_b-03"
                     ]
                 }
             },
@@ -71055,11 +71153,6 @@
                         "act11mini_07#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_b-03"
-                    ]
-                },
                 "act5d0": {
                     "act14d7_zone1": [
                         "act5d0_04",
@@ -71071,6 +71164,13 @@
                     "act14d7_zone2": [
                         "act5d0_ex04",
                         "act5d0_ex04#f#"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_b-03"
                     ]
                 }
             },
@@ -72538,7 +72638,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp05"
@@ -72673,14 +72773,16 @@
                         "rune_06-01"
                     ]
                 },
-                "act42d0": {
-                    "challenge": [
-                        "act42d0_sp05"
-                    ]
-                },
                 "CCBP#02": {
                     "CCBP#02": [
                         "crisis_v2_02-02"
+                    ]
+                }
+            },
+            "exp": {
+                "act42d0": {
+                    "challenge": [
+                        "act42d0_sp05"
                     ]
                 }
             },
@@ -73446,7 +73548,9 @@
                     "CC#05": [
                         "rune_03-01"
                     ]
-                },
+                }
+            },
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp04"
@@ -75945,7 +76049,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp03"
@@ -77230,7 +77334,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "area_4": [
                         "act42d0_10",
@@ -77269,7 +77373,7 @@
                     ]
                 }
             },
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "area_4": [
                         "act42d0_10",
@@ -78504,11 +78608,6 @@
                         "act8mini_04#f#"
                     ]
                 },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_b-03"
-                    ]
-                },
                 "act7mini": {
                     "act7mini_zone1": [
                         "act7mini_02",
@@ -78533,6 +78632,13 @@
                         "a003_ex02#f#",
                         "a003_ex06",
                         "a003_ex06#f#"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_b-03"
                     ]
                 }
             },
@@ -78624,7 +78730,7 @@
             }
         },
         "enemy_1156_hymhr": {
-            "sidestory": {
+            "exp": {
                 "act1lock": {
                     "act1lock_zone1": [
                         "act1lock_c-01"
@@ -78633,7 +78739,7 @@
             }
         },
         "enemy_1157_hymwr": {
-            "sidestory": {
+            "exp": {
                 "act1lock": {
                     "act1lock_zone1": [
                         "act1lock_c-01"
@@ -80231,15 +80337,17 @@
                         "act38rune_01-02"
                     ]
                 },
-                "act42d0": {
-                    "challenge": [
-                        "act42d0_sp01"
-                    ]
-                },
                 "CCBP#01": {
                     "CCBP#01": [
                         "crisis_v2_01-05",
                         "crisis_v2_01-05"
+                    ]
+                }
+            },
+            "exp": {
+                "act42d0": {
+                    "challenge": [
+                        "act42d0_sp01"
                     ]
                 }
             },
@@ -81195,7 +81303,7 @@
             }
         },
         "enemy_8002_flmchn": {
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "area_2": [
                         "act42d0_04",
@@ -81216,7 +81324,7 @@
             }
         },
         "enemy_8004_flmspr": {
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "area_2": [
                         "act42d0_04",
@@ -81237,7 +81345,7 @@
             }
         },
         "enemy_8001_flmlod": {
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "area_2": [
                         "act42d0_04",
@@ -81248,7 +81356,7 @@
             }
         },
         "enemy_8001_flmlod_2": {
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "area_3": [
                         "act42d0_07",
@@ -81259,7 +81367,7 @@
             }
         },
         "enemy_8003_flmchn2": {
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "area_3": [
                         "act42d0_07",
@@ -81275,7 +81383,7 @@
             }
         },
         "enemy_8005_flmspr2": {
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "area_3": [
                         "act42d0_07",
@@ -81291,7 +81399,7 @@
             }
         },
         "enemy_8006_flmgd": {
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "area_3": [
                         "act42d0_07",
@@ -81307,7 +81415,7 @@
             }
         },
         "enemy_8001_flmlod_3": {
-            "cc": {
+            "exp": {
                 "act42d0": {
                     "area_4": [
                         "act42d0_10",

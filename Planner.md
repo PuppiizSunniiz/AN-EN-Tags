@@ -53,7 +53,8 @@
 
 # Akenemy
 ## Working on
-- Mechanic training stage
+    - Mechanic training stage
+    - Sidestory by year
 ## Fix
     -
 ## To do

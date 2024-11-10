@@ -23,6 +23,7 @@ akenemy = {
                         "coop"      : {"name" : "CO-OP", "activity" : {}},                              # Mode : Coop           -> Activity : XYZ                                       -> Stage : AB-XX
                         "cc"        : {"name" : "CC : Contingency Contract", "activity" : {}},          # Mode : CC             -> Activity : CC#XX         -> Zone : Main/Rotation     -> Stage : XYZ
                         "is"        : {"name" : "IS : Integrated Strategies", "activity" : {}},         # Mode : IS             -> Activity : IS#XX         -> Zone : Floor XX          -> Stage : XYZ
+                        "exp"       : {"name" : "Experimental Gamemode", "activity" : {}},
                         "tn"        : {"name" : "TN : Trials for Navigator", "activity" : {}},          # Mode : TN             -> Activity : TN#XX                                     -> Stage : TN-XX
                         "sss"       : {"name" : "SSS : Stationary Security Service", "activity" : {}},  # Mode : SSS            -> Activity : Tower                                     -> Stage : LT-XX
                         "ra"        : {"name" : "RA : Reclamation Algorithm", "activity" : {}},         # Mode : RA             -> Activity : RA#XX         -> Zone : Fight/Rush/Zone   -> Stage : XYZ
@@ -110,7 +111,7 @@ def load_json(data) -> dict :
         case "Fillerjson" :
             return json_load("json/Filler.json")
         case "Activityjson" :
-            return json_load("test/activity.json")
+            return json_load("json/activity.json")
         case "EnemyAbility" :
             return json_load("json/enemy_abilities.json")
         
@@ -343,16 +344,16 @@ def Stage_Lister(stage_event : str, stage_code : str, stage_name : str, stage_id
         stage_gamemode = get_stage_gamemode(stage_event)
         akenemy_activity = akenemy["gamemode"][stage_gamemode]["activity"]
             
-        akenemy_activity.setdefault(stage_event,{"name":"","zone":{}})
+        akenemy_activity.setdefault(stage_event,{"name":"","date":0,"zone":{}})
         akenemy_activity[stage_event]["zone"].setdefault(stage_zone, {"name":"","stage":{}})
             
         if stage_id not in akenemy_activity[stage_event]["zone"][stage_zone]["stage"] :
             if stage_event in ["act17d1"] or (stage_gamemode in ["cc","is","ra","campaign"] and stage_event != "act42d0"):
                 display_name = stage_name
             elif stage_id.find("tough") != -1 or stage_id.find("easy") != -1:
-                display_name = f'{stage_code} : {stage_name} ({stage_zone.split(" ")[0]})'
+                display_name = f'{stage_code} : {stage_name} <b>({stage_zone.split(" ")[2]})</b>'
             elif stage_id.find("#f#") != -1:
-                display_name = f'{stage_code} : {stage_name} (Challenge)'
+                display_name = f'{stage_code} : {stage_name} <b>(Challenge)</b>'
             else: display_name = f'{stage_code} : {stage_name}'
             akenemy_activity[stage_event]["zone"][stage_zone]["stage"][stage_id] = display_name
             
@@ -528,21 +529,27 @@ def get_stage_gamemode(stage_event : str) -> str :
             return "main"
         elif stage_event.find("weekly_") != -1 :
             return "supply"
-        elif stage_event.find("bossrush") != -1 :
-            return "tn"
         elif stage_event.find("camp_") != -1 :
             return "campaign"
-        elif stage_event.find("tower_") == 0 :
-            return "sss"
-        elif stage_event == "PinchOut" or stage_event in ["act42d0","act1vecb"] or re.search(r"CC(|BP)#",stage_event) : 
+        
+        elif stage_event == "act17d1" or re.search(r"act[0-9]{1,2}vmulti",stage_event):
+            return "coop"
+        elif stage_event == "PinchOut" or re.search(r"CC(|BP)#",stage_event) : 
             return "cc"
         elif stage_event.find("IS#") != -1 :
             return "is"
+        
+        elif re.search(r"act[0-9]{1,2}(lock|vecb)",stage_event) or stage_event in ["act42d0"]: # act42d0 = DOS
+            return "exp"
+        
+        elif stage_event.find("bossrush") != -1 :
+            return "tn"
+        elif stage_event.find("tower_") == 0 :
+            return "sss"
         elif stage_event.find("RA#") != -1:
             return "ra"
-        elif stage_event == "act17d1" or re.search(r"act[0-9]{1,2}vmulti",stage_event):
-            return "coop"
-        elif re.search(r"act[0-9]{1,2}(side|lock|mini|d0|d3|d5)",stage_event) or stage_event == "1stact":
+
+        elif re.search(r"act[0-9]{1,2}(side|mini|d0|d3|d5)",stage_event) or stage_event == "1stact": # 1stact = Grani
             return "sidestory"
         else:
             return "pending"
@@ -807,8 +814,6 @@ def RA_stage_collect(json_RA1EN, json_RA2, json_RA2EN): #
                 
                 stage_preview = json_RA2["detail"]["SANDBOX_V2"][RAseason]["rewardConfigData"]["stageMapPreviewRewardDict"]
                 
-                
-                
                 stagepath = f'json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/{RA_stages[RAstage]["levelId"].lower()}.json'
                 
                 if RAstage in stage_preview:
@@ -987,6 +992,7 @@ def akenemy_collect(json_zone, json_zoneEN):
     for gamemode in akenemy["gamemode"].keys()-["pending"]:
         for activity in akenemy["gamemode"][gamemode]["activity"].keys() :
             akenemy["gamemode"][gamemode]["activity"][activity]["name"] = activity_collection["Dict"][activity]["nameEN"] if activity not in akenemy["events"] else akenemy["events"][activity]
+            akenemy["gamemode"][gamemode]["activity"][activity]["date"] = activity_collection["Dict"][activity]["startCN"] if activity in akenemy["events"] else -1
             for zone in akenemy["gamemode"][gamemode]["activity"][activity]["zone"].keys() :
                 try:
                     if zone in activity_collection["Dict"].keys() and zone == activity:
@@ -997,11 +1003,11 @@ def akenemy_collect(json_zone, json_zoneEN):
                         akenemy["gamemode"][gamemode]["activity"][activity]["zone"][zone]["name"] = json_zone["zones"][zone]["zoneNameSecond"]
                 except:
                     akenemy["gamemode"][gamemode]["activity"][activity]["zone"][zone]["name"] = zone
-            
+    
     ### Sort Event
     mainzone_sorter = {"Training":0,"Story Environment":1,"Normal":2,"Standard Environment":2,"Challenge":3,"Adverse Environment":3}
     for gamemode in akenemy["gamemode"].keys():
-        if gamemode in ["sidestory","coop","tn"]:
+        if gamemode in ["sidestory","coop","tn","exp"]:
             sort_event = sorted(akenemy["gamemode"][gamemode]["activity"].items(), reverse = False, key = lambda event : activity_collection["Dict"][event[0].lower()]["startCN"])
             akenemy["gamemode"][gamemode]["activity"] = {x[0]:x[1] for x in sort_event}
         if gamemode in ["sss"]:
@@ -1021,7 +1027,7 @@ def akenemy_collect(json_zone, json_zoneEN):
 # JSON Dumpling
 ################################################################################################################################################################################################################################################
 def json_dumps():
-    with open("test/activity.json",'w') as JSON :
+    with open("json/activity.json",'w') as JSON :
         json.dump(activity_collection, JSON, indent = 4, ensure_ascii = False)
 
     with open("test/stage.json",'w') as JSON :
@@ -1078,5 +1084,5 @@ def enemyList() :
     enemy_ability_list(load_json("json_Database"), load_json("json_DatabaseEN"), load_json("json_Handbook"), load_json("json_HandbookEN"), load_json("EnemyAbility"))
 
 if __name__ == "__main__" :
-    enemyList()
+    #enemyList()
     Akenemy()

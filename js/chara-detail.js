@@ -4664,11 +4664,11 @@
                 </div>`
             });
 
-            ModuledetailHeader = `<button id='Moduletalentdetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler2("Moduletalentdetailcontent-${modulenum}-${phase}-${currpotent}",$(this))'style="display:inline-block;color:#aaa;text-align:center;background:#333;padding:2px;font-size:12px">
-                                    "Talent Details"
-                                    <i class="fas fa-caret-down">
-                                    </i>
-                                  </button>`
+            ModuledetailHeader =    `<button id='Moduletalentdetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler2("Moduletalentdetailcontent-${modulenum}-${phase}-${currpotent}",$(this))'style="display:inline-block;color:#aaa;text-align:center;background:#333;padding:2px;font-size:12px">
+                                        Talent Details
+                                        <i class="fas fa-caret-down">
+                                        </i>
+                                    </button>`
             Moduledetailtable = `
                 <div id='Moduletalentdetailcontent-${modulenum}-${phase}-${currpotent}' class="ak-shadow Moduletalentdetailcontent" style="display:none;margin-bottom:8px;padding-top:10px;padding:2px;background:#666">
                     ${Moduletalenthtmldetail}

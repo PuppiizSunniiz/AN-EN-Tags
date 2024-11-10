@@ -226,6 +226,8 @@ function selectGamemode(el){
             return "Season"
         case "sss":
             return "Tower"
+        case "exp":
+            return "Gamemode"
         }
     }
 
