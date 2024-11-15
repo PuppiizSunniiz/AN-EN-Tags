@@ -7621,5 +7621,330 @@
                 "desc": "When on ground, DEF+12%<@ba.talpu>(+2%)</>. After <$ba.liftoff>Take off</>, ATK is increased to 112%<@ba.talpu>(+2%)</> when attacking enemies"
             }
         ]
+    ],
+	"char_604_ccast": [
+        [
+            {
+                "name": "施法速度提升",
+                "descCN": "攻击速度+5",
+                "desc": "ASPD+5"
+            },
+            {
+                "name": "施法速度提升",
+                "descCN": "攻击速度+9",
+                "desc": "ASPD+9"
+            }
+        ]
+    ],
+    "char_603_csnipe": [
+        [
+            {
+                "name": "攻击提升",
+                "descCN": "攻击力+4%",
+                "desc": "ATK+4%"
+            },
+            {
+                "name": "攻击提升",
+                "descCN": "攻击力+8%",
+                "desc": "ATK+8%"
+            }
+        ]
+    ],
+    "char_600_cpione": [
+        [
+            {
+                "name": "攻击提升",
+                "descCN": "攻击力+4%",
+                "desc": "ATK+4%"
+            },
+            {
+                "name": "攻击提升",
+                "descCN": "攻击力+8%",
+                "desc": "ATK+8%"
+            }
+        ]
+    ],
+    "char_601_cguard": [
+        [
+            {
+                "name": "攻击提升",
+                "descCN": "攻击力+4%",
+                "desc": "ATK+4%"
+            },
+            {
+                "name": "攻击提升",
+                "descCN": "攻击力+8%",
+                "desc": "ATK+8%"
+            }
+        ]
+    ],
+    "char_607_cspec": [
+        [
+            {
+                "name": "攻击提升",
+                "descCN": "攻击力+4%",
+                "desc": "ATK+4%"
+            },
+            {
+                "name": "攻击提升",
+                "descCN": "攻击力+8%",
+                "desc": "ATK+8%"
+            }
+        ]
+    ],
+    "char_605_cmedic": [
+        [
+            {
+                "name": "攻击提升",
+                "descCN": "攻击力+4%",
+                "desc": "ATK+8%"
+            },
+            {
+                "name": "攻击提升",
+                "descCN": "攻击力+8%",
+                "desc": "ATK+8%"
+            }
+        ]
+    ],
+    "char_602_cdfend": [
+        [
+            {
+                "name": "防御提升",
+                "descCN": "防御力+5%",
+                "desc": "DEF+5%"
+            },
+            {
+                "name": "防御提升",
+                "descCN": "防御力+10%",
+                "desc": "DEF+10%"
+            }
+        ]
+    ],
+    "char_606_csuppo": [
+        [
+            {
+                "name": "施法速度提升",
+                "descCN": "攻击速度+5",
+                "desc": "ASPD+5"
+            },
+            {
+                "name": "施法速度提升",
+                "descCN": "攻击速度+9",
+                "desc": "ASPD+9"
+            }
+        ]
+    ],
+    "char_611_acnipe": [
+        [
+            {
+                "name": "风坠",
+                "descCN": "攻击时有25%的概率攻击力提升至150%",
+                "desc": "When attacking, there 25% chance to increase ATK to 150%"
+            },
+            {
+                "name": "风坠",
+                "descCN": "攻击时有25%的概率攻击力提升至170%",
+                "desc": "When attacking, there 25% chance to increase ATK to 170%"
+            },
+            {
+                "name": "风坠",
+                "descCN": "攻击时有25%的概率攻击力提升至180%",
+                "desc": "When attacking, there 25% chance to increase ATK to 180%"
+            }
+        ],
+        [
+            {
+                "name": "风雨欲来",
+                "descCN": "自身未进行攻击时，技力回复速度+0.2/秒",
+                "desc": "When not attacking, increases the SP recovery rate by +0.2/s"
+            }
+        ]
+    ],
+    "char_608_acpion": [
+        [
+            {
+                "name": "无垠之心",
+                "descCN": "部署后第2次开启技能之前，技力自然回复速度+0.3/秒",
+                "desc": "SP recovery rate +0.3/sec after deployment and before 2nd skill use"
+            },
+            {
+                "name": "无垠之心",
+                "descCN": "部署后第2次开启技能之前，技力自然回复速度+0.4/秒",
+                "desc": "SP recovery rate +0.4/sec after deployment and before 2nd skill use"
+            },
+            {
+                "name": "无垠之心",
+                "descCN": "部署后第2次开启技能之前，技力自然回复速度+0.6/秒",
+                "desc": "SP recovery rate +0.6/sec after deployment and before 2nd skill use"
+            }
+        ],
+        [
+            {
+                "name": "浪潮之心",
+                "descCN": "攻击力+10%，击杀敌人时额外获得1点部署费用",
+                "desc": "ATK+10%, when defeat an enemy gain 1 DP"
+            }
+        ]
+    ],
+    "char_612_accast": [
+        [
+            {
+                "name": "“见我所见”",
+                "descCN": "攻击无视目标6法术抗性",
+                "desc": "Attack ignore 6 RES"
+            },
+            {
+                "name": "“见我所见”",
+                "descCN": "攻击无视目标9法术抗性",
+                "desc": "Attack ignore 9 RES"
+            },
+            {
+                "name": "“见我所见”",
+                "descCN": "攻击无视目标12法术抗性",
+                "desc": "Attack ignore 12 RES"
+            }
+        ],
+        [
+            {
+                "name": "“授我所授”",
+                "descCN": "自身及相邻四格的【术师】干员攻击力+10%",
+                "desc": "Self and [Caster] operators in the 4 adjacent tiles ATK +10%"
+            }
+        ]
+    ],
+    "char_614_acsupo": [
+        [
+            {
+                "name": "同调",
+                "descCN": "攻击速度+5，相邻的干员攻击速度+3",
+                "desc": "ASPD+5, adjacent operators ASPD +3"
+            },
+            {
+                "name": "同调",
+                "descCN": "攻击速度+10，相邻的干员攻击速度+5",
+                "desc": "ASPD+10, adjacent operators ASPD +5"
+            },
+            {
+                "name": "同调",
+                "descCN": "攻击速度+15，相邻的干员攻击速度+10",
+                "desc": "ASPD+15, adjacent operators ASPD +10"
+            }
+        ],
+        [
+            {
+                "name": "诱引",
+                "descCN": "攻击范围内敌人的物理和法术命中率降低10%",
+                "desc": "Reduce Physical and Arts accuracy of enemies in Attack Range by 10%"
+            }
+        ]
+    ],
+    "char_615_acspec": [
+        [
+            {
+                "name": "二象命末",
+                "descCN": "攻击时有5%概率造成二连击",
+                "desc": "Attack has 5% to hit twice"
+            },
+            {
+                "name": "二象命末",
+                "descCN": "攻击时有8%概率造成二连击",
+                "desc": "Attack has 8% to hit twice"
+            },
+            {
+                "name": "二象命末",
+                "descCN": "攻击时有10%概率造成二连击",
+                "desc": "Attack has 10% to hit twice"
+            }
+        ],
+        [
+            {
+                "name": "四维分离",
+                "descCN": "周围四格内仅存在一名敌人时，攻击力+10%",
+                "desc": "When there only 1 enemy in the 4 adjacent tiles, ATK+10%"
+            }
+        ]
+    ],
+    "char_613_acmedc": [
+        [
+            {
+                "name": "攫升",
+                "descCN": "治疗目标时使其获得1点技力",
+                "desc": "Targets healed by this unit gain +1 SP "
+            },
+            {
+                "name": "攫升",
+                "descCN": "治疗目标时使其获得2点技力",
+                "desc": "Targets healed by this unit gain +2 SP "
+            },
+            {
+                "name": "攫升",
+                "descCN": "治疗目标时使其获得3点技力",
+                "desc": "Targets healed by this unit gain +3 SP "
+            }
+        ],
+        [
+            {
+                "name": "超脱",
+                "descCN": "攻击范围内的友方干员被击倒时获得5点技力",
+                "desc": "When ally in Attack Range defeated, gain +5 SP"
+            }
+        ]
+    ],
+    "char_610_acfend": [
+        [
+            {
+                "name": "精研材料",
+                "descCN": "防御力+3%，生命值低于50%时防御力额外+3%",
+                "desc": "DEF+3%, when HP below 50%, gain another DEF+3%"
+            },
+            {
+                "name": "精研材料",
+                "descCN": "防御力+6%，生命值低于50%时防御力额外+6%",
+                "desc": "DEF+6%, when HP below 50%, gain another DEF+6%"
+            },
+            {
+                "name": "精研材料",
+                "descCN": "防御力+10%，生命值低于50%时防御力额外+10%",
+                "desc": "DEF+10%, when HP below 50%, gain another DEF+10%"
+            }
+        ],
+        [
+            {
+                "name": "反馈装甲",
+                "descCN": "自身阻挡的敌人攻击速度-5",
+                "desc": "Enemies blocked by self have ASPD -5"
+            },
+            {
+                "name": "反馈装甲",
+                "descCN": "自身阻挡的敌人攻击速度-7",
+                "desc": "Enemies blocked by self have ASPD -7"
+            }
+        ]
+    ],
+    "char_609_acguad": [
+        [
+            {
+                "name": "隐匿刀刃",
+                "descCN": "攻击力+5%，获得10%的物理闪避",
+                "desc": "ATK+5%, gain 10% Physical dodge"
+            },
+            {
+                "name": "隐匿刀刃",
+                "descCN": "攻击力+10%，获得20%的物理闪避",
+                "desc": "ATK+10%, gain 20% Physical dodge"
+            },
+            {
+                "name": "隐匿刀刃",
+                "descCN": "攻击力+15%，获得30%的物理闪避",
+                "desc": "ATK+15%, gain 30% Physical dodge"
+            }
+        ],
+        [
+            {
+                "name": "寸步不退",
+                "descCN": "在战场停留30秒后，自身攻击速度+10",
+                "desc": "After deployed for 30 seconds, ASPD +10"
+            }
+        ]
     ]
 }

@@ -9,6 +9,7 @@ json_char       =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/ex
 json_char_patch =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/char_patch_table.json")
 json_mod        =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/uniequip_table.json")
 json_range      =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/range_table.json")
+json_dict       =   json_load("py/dict.json")
 
 #########################################################################################################
 # Function
@@ -54,7 +55,7 @@ def char_check():
         if re.search(r'".+"',char_input):
             char_input=char_input[1:-1]
         
-        char_result=[[char_key,DB["Char"][mode][char_key]] for char_key in DB["Char"][mode].keys() if char_input.lower() in char_key.lower()]
+        char_result = [[char_key,DB["Char"][mode][char_key]] for char_key in DB["Char"][mode].keys() if char_input.lower() in char_key.lower()]
         if char_result:
             print("Result :")
             for char in char_result:
@@ -67,8 +68,8 @@ def char_check():
             Charout(text,mode)
         
     print(msgbox(["\n#  Select Mode",
-                        "1 : Char Name from Char Code",
-                        "2 : Char Code from Char Name",
+                        "1 : Char Code for Char Name",
+                        "2 : Char Name for Char Code",
                         "0 : Exit"
                 ]))
     
@@ -136,87 +137,12 @@ def time_check():
             print("Invalid epoch times")
         return continue_check("Epoch time check")
 
-'''
-    def Tagcheck():
-        print(msgbox("What Tag(s) to check ? (up to 5 tags | 0 : Exit)"))
-        tags=input().strip()
-    
-        if tags=="0":
-            return False
-        else :
-            tagscheck(tags)
-    
-        def tagscheck(tags):
-            tags = tags.split(" ")
-            for i in range(len(tags)):
-                match tags[i]:
-					case "guard":
-					    tags[i] = 近卫干员		#Guard
-					case "sni":
-					    tags[i] = 狙击干员		#Sniper
-					case "defender":
-					    tags[i] = 重装干员		#Defender
-					case "medic":
-					    tags[i] = 医疗干员		#Medic
-					case "sup":
-					    tags[i] = 辅助干员		#Supporter
-					case "caster":
-					    tags[i] = 术师干员		#Caster
-					case "spec":
-					    tags[i] = 特种干员		#Specialist
-					case "van":
-					    tags[i] = 先锋干员		#Vanguard
-					case "melee":
-					    tags[i] = 近战位		#Melee
-					case "range":
-					    tags[i] = 远程位		#Ranged
-					case "top":
-					    tags[i] = 高级资深干员	#Top Operator
-					case "cc":
-					    tags[i] = 控场			#Crowd-Control
-					case "nuker":
-					    tags[i] = 爆发			#Nuker
-					case "senior":
-					    tags[i] = 资深干员		#Senior Operator
-					case "heal":
-					    tags[i] = 治疗			#Healing
-					case "support":
-					    tags[i] = 支援			#Support
-					case "starter":
-					    tags[i] = 新手			#Starter
-					case "dp":
-					    tags[i] = 费用回复		#DP-Recovery
-					case "dps":
-					    tags[i] = 输出			#DPS
-					case "survival":
-					    tags[i] = 生存			#Survival
-					case "aoe":
-					    tags[i] = 群攻			#AoE
-					case "defense":
-					    tags[i] = 防护			#Defense
-					case "slow":
-					    tags[i] = 减速			#Slow
-					case "debuff":
-					    tags[i] = 削弱			#Debuff
-					case "frd":
-					    tags[i] = 快速复活		#Fast-Redeploy
-					case "shift":
-					    tags[i] = 位移			#Shift
-					case "summon":
-					    tags[i] = 召唤			#Summon
-					case "robot":
-					    tags[i] = 支援机械		#Robot
-					case "male":
-					    tags[i] = 男性干员		#Male
-					case "female":
-					    tags[i] = 女性干员		#Female
-            recruitment()
-'''
 #########################################################################################################
 # Ready
 #########################################################################################################
-def Ready():
-    DB={}
+def Ready(update = ""):
+    DB = {}
+    oldchar = list(json_dict["Char"]["Code2Name"].keys())
 
     ClassParse = {
                     "MEDIC"     : "Medic",         "WARRIOR"    : "Guard",
@@ -229,16 +155,22 @@ def Ready():
         json_char_patch["patchChars"][char_key]["appellation"] += f' ({ClassParse[json_char_patch["patchChars"][char_key]["profession"]]})'
     json_char.update(json_char_patch["patchChars"])
 
-    char_ready={"Code2Name":{},"Name2Code":{},"CN2Code":{}}
-    ops_exclude=[] # "isNotObtainable": true
+    char_ready = {
+                    "Code2Name" :   {},
+                    "Name2Code" :   {},
+                    "CN2Code"   :   {}
+                }
+    ops_exclude = [] # "isNotObtainable": true
     for char_key in json_char.keys():
         if "char_" in char_key:
-            char_ready["Code2Name"][char_key]=get_char_name(char_key)
-            char_ready["Name2Code"][get_char_name(char_key)]=char_key
-            char_ready["CN2Code"][json_char[char_key]["name"]]=char_key
+
+            char_ready["Code2Name"][char_key] = get_char_name(char_key)
+            #char_ready["Code2Name"].setdefault(char_key,[]).append(get_char_name(char_key))
+            char_ready["Name2Code"].setdefault(get_char_name(char_key),[]).append(char_key)
+            char_ready["CN2Code"].setdefault(json_char[char_key]["name"],[]).append(char_key)
             if json_char[char_key]["isNotObtainable"]:
                 ops_exclude.append(char_key)
-    DB["Char"]=char_ready
+    DB["Char"] = char_ready
 
     range_ready={} # 🟥🟧🟨🟩🟦🟪🟫⬛⬜🔳
     for range_id in json_range.keys():
@@ -262,45 +194,18 @@ def Ready():
         
         range_ready[range_id] = ["".join(row) for row in range_array] + [str(temp)]
         
-    DB["Range"]=range_ready
-
-    tag_ready={}
-    for char in char_ready["Code2Name"].keys():
-        tag_ready[char_ready["Code2Name"][char]]=["高级资深干员" for x in range(1) if json_char[char]["rarity"][-1]=="6"]+ \
-                                                ["资深干员" for x in range(1) if json_char[char]["rarity"][-1]=="5"]+ \
-                                                ["新手" for x in range(1) if json_char[char]["rarity"][-1]=="2"]+ \
-                                                ["近战位" for x in range(1) if json_char[char]["position"]=="MELEE"]+ \
-                                                ["远程位" for x in range(1) if json_char[char]["position"]=="RANGED"]+ \
-                                                json_char[char]["tagList"]
-    DB["Tag"]=tag_ready
+    DB["Range"] = range_ready
 
     with open('py/dict.json', 'w', encoding='utf-8') as file:
         json.dump(DB, file, indent=4, ensure_ascii=False)
-
-    '''
-        json_gacha  =   json.loads(open("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/gacha_table.json").read())
-        json_gachaEN  =   json.loads(open("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/gacha_table.json").read())
-        gachapon={}
-        for tag in json_gacha["gachaTags"]:
-            gachapon[tag["tagId"]]={"tagName":tag["tagName"]}
-        for tag in json_gachaEN["gachaTags"]:
-            gachapon[tag["tagId"]].update({"EN":tag["tagName"]})
-        gacha=json.dumps(gachapon,indent=4, ensure_ascii=False)
-        with open('temp/tag.json','w') as JSON:
-            JSON.write(gacha)
-            
-        tagstr=[]
-        for key in gachapon.keys():
-            tagstr.append("\t"*5+"case \""+gachapon[key]["EN"].lower()+"\":\n"+"\t"*6+"tags[i] = "+gachapon[key]["tagName"]+"\t"*round(4-len(gachapon[key]["tagName"])/2)+"#"+gachapon[key]["EN"])
-        gachastr=("\n").join(tagstr)
-        with open('temp/tag.txt','w') as JSON:
-            JSON.write(gachastr)
-    '''
-
+    
     if __name__ == "__main__" :
         return DB
     else:
         print("Ready !!!")
+    
+    if update:
+        return list(DB["Char"]["Code2Name"].keys()) - oldchar
 #########################################################################################################
 # Go !!!
 #########################################################################################################

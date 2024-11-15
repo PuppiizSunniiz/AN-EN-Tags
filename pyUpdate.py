@@ -54,11 +54,10 @@ json_dict           =   json_load("py/dict.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS = ["Lappland the Decadenza","Vulpisfoglia","Crownslayer","Figurino","Philae","Contrail"] # "", 
+NEW_CHARS = [] # "", 
 
 #[["OpsName#1",num(Mod)],["OpsName#2",num(Mod)], ...]
-NEW_MODS = [["Virtuosa",1],["Valarqvin",1],["Bobbing",1],["Lappland the Decadenza",1],["Vulpisfoglia",1],["Crownslayer",1],["Figurino",1],
-            ["Lessing",2],["Rosmontis",2],["Angelina",3]] # ["",],
+NEW_MODS = [] # ["",],
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS = [] # "",
@@ -104,7 +103,7 @@ def get_new_akhr(new_char_id : str, new_char_name : str) -> dict:
                                     "teamId"        :   json_char[new_char_id]["teamId"],
                                     "type"          :   CLASS_PARSE_CN[json_char[new_char_id]["profession"]],
                                     "level"         :   int(json_char[new_char_id]["rarity"][-1]),
-                                    "sex"           :   ''.join(json_handbook["handbookDict"][new_char_id]["storyTextAudio"][0]["stories"][0]["storyText"].split("\n")[1].split("】")[1].split()),
+                                    "sex"           :   ''.join(json_handbook["handbookDict"][new_char_id]["storyTextAudio"][0]["stories"][0]["storyText"].split("\n")[1].split("】")[1].split()) if new_char_id in json_handbook["handbookDict"] else "temp",
                                     "tags"          :   ["高级资深干员" for x in range(1) if json_char[new_char_id]["rarity"][-1] == "6"]+ \
                                                         ["资深干员" for x in range(1) if json_char[new_char_id]["rarity"][-1] == "5"]+ \
                                                         ["近战位" for x in range(1) if json_char[new_char_id]["position"] == "MELEE"]+ \

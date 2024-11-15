@@ -1,5 +1,10 @@
 {
     "Dict": {
+        "act1vautochess": {
+            "nameCN": "卫戍协议",
+            "nameEN": "Stronghold Protocol",
+            "startCN": 1731657600
+        },
         "act38side": {
             "nameCN": "揭幕者们",
             "nameEN": "I Portatori dei Velluti",
@@ -807,12 +812,12 @@
         },
         "tower_n_13": {
             "nameCN": "边地移动城镇",
-            "nameEN": "边地移动城镇",
+            "nameEN": "Nomadic Border Town",
             "startCN": -1
         },
         "tower_n_14": {
             "nameCN": "多索雷斯商业地块",
-            "nameEN": "多索雷斯商业地块",
+            "nameEN": "Dossoles Commercial Plate",
             "startCN": -1
         },
         "tower_n_15": {
@@ -1726,6 +1731,11 @@
             "act38side",
             "I Portatori dei Velluti",
             1730433600
+        ],
+        [
+            "act1vautochess",
+            "Stronghold Protocol",
+            1731657600
         ]
     ]
 }

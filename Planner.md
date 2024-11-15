@@ -28,7 +28,7 @@
 
 # Akhrchar
 ## Fix
-    -
+    - url conflict for reserve operator (IS Vs AC)
 ## To do
     - tweak token section
         - add token Talent

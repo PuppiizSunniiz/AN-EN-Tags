@@ -1,6 +1,6 @@
     $.holdReady(true);
 
-    //console.log = function () { }
+    console.log = function () { }
 
     const jsonList = {
 
@@ -98,7 +98,7 @@
     var folder = `https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/spineassets/${chibitype}/${charName}/${chibipers}/`
     var spinewidget
     var spinewidgetcg
-    var curropname
+    var curropid
     var defaulttoken
     var globaltoken
     var globalelite = 0
@@ -477,6 +477,7 @@
             reg = "cn";
             lang = "en";
         }
+        var opid;
         if(!localStorage.getItem('selectedOPDetails')){
             console.log("selected OP undefined");
             var vars = getUrlVars();
@@ -486,11 +487,10 @@
                 console.log(vars.get("opname"));
                 var char = query(db.chars,"appellation",vars.get("opname"),true,true);
                 console.log(char)
-                var opname;
-                $.each(char,function(key,v){
-                    opname = v.name;
+                $.each(char,function(key,_){
+                    opid = key;
                 });
-                selectOperator(opname);
+                selectOperator(opid);
             } else {
                 localStorage.removeItem("selectedOP");
             }
@@ -503,26 +503,20 @@
             if(vars.has("opname")){
                 var char = {};
                 var opname = decodeURIComponent(vars.get("opname"));
-                console.log(opname)
                 var unreadable = query(db.unreadNameTL,"name_en",opname.replace(/_/g," "))
-                console.log(unreadable)
                 var correctname = (unreadable?unreadable.name:opname.replace(/_/g," "))
-                console.log(correctname)
                 char = query(db.chars,"appellation",correctname,true,true);
-                var opname;
+                
                 $.each(char,function(key,v){
-                    opname = v.name;
+                    opid = key;
                     var unreadable = query(db.unreadNameTL,"name",v.appellation)
                     var correctname = (unreadable?unreadable.name_en.replace(/ /g,"_"):v.appellation.replace(/ /g,"_"))
                     opapp = correctname
                 })
 
-            } else {
-                selectedOP = localStorage.getItem('selectedOPDetails');
-                var opname = db.chars[selectedOP].name;
-            }
+            } else opid = localStorage.getItem('selectedOPDetails');
 
-            selectOperator(opname);
+            selectOperator(opid);
 
             if(vars.has("story")){
                 $('#opstory').modal('show')
@@ -547,7 +541,7 @@
                     var correctname = (unreadable?unreadable.name:historyopname.replace(/_/g," "))
                     console.log(correctname)
                     var char = query(db.chars,"appellation",correctname,true,true);
-                    selectOperator(char[Object.keys(char)].name)
+                    selectOperator(Object.keys(char))
                 }
                 if(vars.has("story")){
                     $('#opstory').modal('show')
@@ -693,26 +687,29 @@
 
                     case "List":
                                 html =
-                                `<li class='selectop-list ak-shadow' onclick='selectOperator("${val.name}")'>
-                                <img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${key}.png'>
-                                <div class='name ak-font-novecento'>${getENname(val.name)}</div>
-                                <div class='rarity op-rarity-${val.rarity+1}'>
-                                    ${(`<i class='fa fa-star'></i>`).repeat(val.rarity+1)}
-                                </div></li>
+                                `
+                                    <li class='selectop-list ak-shadow' onclick='selectOperator("${key}")'>
+                                        <img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${key}.png'>
+                                        <div class='name ak-font-novecento'>${getENname(val.name)}</div>
+                                        <div class='rarity op-rarity-${val.rarity+1}'>
+                                            ${(`<i class='fa fa-star'></i>`).repeat(val.rarity+1)}
+                                        </div>
+                                    </li>
                                 `
                         break;
 
                     case "Grid":
                                 html =
-                                `<li class='selectop-grid ak-shadow' onclick='selectOperator("${val.name}")'>
-                                <img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${key}.png'>
-                                <div class='name ak-font-novecento ak-center'>${getENname(val.name)}</div>
-                                <div class='ak-rare-${val.rarity+1}'></div>
-                                <div class='ak-showsubclass'><img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/subclass/sub_${val.subProfessionId}_icon.png'></div>
-                                ${cname==""&&classlogo?`<div class='ak-showclass'><img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/classes/class_${classlogo}.png'></div>`:""}
-                                ${showtype&&camplogo?`<div class='ak-showfaction'><img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/${camplogo.toLowerCase()}.png' title='${db.campdata[camplogo]}' ></div>`:""}
-                                <div class='grid-box op-rarity-${val.rarity+1}'>
-                                </div></li>
+                                `
+                                    <li class='selectop-grid ak-shadow' onclick='selectOperator("${key}")'>
+                                        <img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${key}.png'>
+                                        <div class='name ak-font-novecento ak-center'>${getENname(val.name)}</div>
+                                        <div class='ak-rare-${val.rarity+1}'></div>
+                                        <div class='ak-showsubclass'><img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/subclass/sub_${val.subProfessionId}_icon.png'></div>
+                                        ${cname==""&&classlogo?`<div class='ak-showclass'><img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/classes/class_${classlogo}.png'></div>`:""}
+                                        ${showtype&&camplogo?`<div class='ak-showfaction'><img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/${camplogo.toLowerCase()}.png' title='${db.campdata[camplogo]}' ></div>`:""}
+                                        <div class='grid-box op-rarity-${val.rarity+1}'></div>
+                                    </li>
                                 `
 
                         break;
@@ -784,10 +781,10 @@
                     found = true;
                 }else{
                     for (var i = 0; i < languages.length; i++) {
-                        var charname    = char['name_'+languages[i]].toUpperCase();
+                        var charname    = char['name_'+languages[i]];
                         var unreadable  = query(db.unreadNameTL,"name",char.name_en)
                         var input       = inputs.toUpperCase();                        
-                        var search      = (unreadable ? (unreadable.name_en + charname).toUpperCase().search(input) : charname.search(input));
+                        var search      = (unreadable ? (unreadable.name_en + charname + char.id).toUpperCase().search(input) : (charname + char.id).toUpperCase().search(input));
                         if(search != -1){
                             found = true;
                             break;
@@ -800,19 +797,12 @@
                     var name = char['name_'+reg];
                     var unreadable = query(db.unreadNameTL,"name",char.name_en).name_en
                     var nameTL = char['name_'+lang];
-                    var img_name = query(db.chars,"name",char.name_cn,true,true);
-
-                    var img_key = Object.keys(img_name)
-                    console.log(img_key)
-
-                    var rarity = img_name[img_key] ? img_name[img_key].rarity + 1 : 0;
-                    if(img_key[0] == "char_512_aprot"){
-                        img_key[0] = "char_4025_aprot2"
-                    }
+                    var id = char.id
+                    var rarity = char.level;
 
                     // console.log(rarity);
                     if(rarity!=0)
-                    result.push({'name':name,'name_cn':name_cn,'name_readable':unreadable,'nameTL':nameTL,'img_name':img_key,rarity});
+                    result.push({'name':name,'name_cn':name_cn,'name_readable':unreadable,'nameTL':nameTL,'id':id,rarity});
                 }
             });
             // console.log(result)
@@ -820,7 +810,7 @@
             if(result.length > 0){
                 if(isenter){
                     $('#operatorsResult').hide();
-                    selectOperator(result[0].name_cn)
+                    selectOperator(result[0].id)
                     return
                 }
                 $('#operatorsResult').empty();
@@ -842,26 +832,26 @@
                     // });
                     // AudioText(opdataFull)
 
-                    let image = `<img style="height:40px;padding:2px" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].img_name}.png">  `
+                    let image = `<img style="height:40px;padding:2px" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">  `
                     // console.log(image)
                     $("#operatorsResult").removeClass("opbrowse1");
                     $("#operatorsResult").removeClass("opbrowse2");
                     if(el=="Browse3"){
-                        image = `<img class='opres-img' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].img_name}.png">  `
+                        image = `<img class='opres-img' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">  `
                         var charaname = `${result[i].name_readable?`[${result[i].name_readable}]`:""}${result[i].nameTL}`
                         $("#operatorsResult").css("text-align","center");
                         $("#operatorsResult").removeClass("opresult-list");
                         $("#operatorsResult").addClass("opresult-grid");
                         $("#operatorsResult").addClass("opbrowse1");
                         $("#operatorsResult").append(
-                            `<li class="col-2 col-sm-1 ak-shadow-small ak-rare-${result[i].rarity}"style="display:inline-block;cursor: pointer;width:75px;margin:2px;margin-bottom:2px;padding:1px;border-radius:2px" onclick="selectOperator('${result[i].name_cn}')">
+                            `<li class="col-2 col-sm-1 ak-shadow-small ak-rare-${result[i].rarity}"style="display:inline-block;cursor: pointer;width:75px;margin:2px;margin-bottom:2px;padding:1px;border-radius:2px" onclick="selectOperator('${result[i].id}')">
                              <div style="white-space: nowrap;padding:0px;text-align:center;margin:0 ">${image}</div>
                              <div style="white-space: nowrap;padding:0px;text-align:center;margin:0 ">${charaname}</div>
                              </li>
                             `);
 
                     }else if(el=="Browse2"){
-                        image = `<img class='opres-img' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].img_name}.png">  `
+                        image = `<img class='opres-img' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">  `
                         $("#operatorsResult").css("text-align","center");
                         $("#operatorsResult").removeClass("opresult-list");
                         $("#operatorsResult").addClass("opresult-grid");
@@ -883,16 +873,16 @@
                             numrar+=1
                         }
                         $("#operatorsResult").append(
-                            `${extrathing}<li class="selectop-grid2" onclick="selectOperator('${result[i].name_cn}')">
+                            `${extrathing}<li class="selectop-grid2" onclick="selectOperator('${result[i].id}')">
                             <div class="op-image-grid2">
-                                <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].img_name}.png">
+                                <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">
                             </div>
                             <div class="${opcurrname.length>12?opcurrname.length>16?"namesmaller":"namesmall":"name"} ak-font-novecento ak-center nameshadow">${opcurrname}</div>
                             <div class='ak-rare-${result[i].rarity} selectopopgridline'></div>
                             </li>`
                         )
                     }else if(el=="Browse"){
-                        image = `<img class='opres-img' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].img_name}.png">  `
+                        image = `<img class='opres-img' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">  `
                         $("#operatorsResult").css("text-align","center");
                         $("#operatorsResult").removeClass("opresult-list");
                         $("#operatorsResult").addClass("opresult-grid");
@@ -900,9 +890,9 @@
 
                         var opcurrname = `${result[i].name_readable?`[${result[i].name_readable}]`:""} ${result[i].nameTL}`
                         $("#operatorsResult").append(
-                            `<li class="selectop-grid3 ak-rare-${result[i].rarity}" onclick="selectOperator('${result[i].name_cn}')">
+                            `<li class="selectop-grid3 ak-rare-${result[i].rarity}" onclick="selectOperator('${result[i].id}')">
                             <div class="op-image-grid2">
-                                <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].img_name}.png">
+                                <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">
                             </div>
                             <div class="nametext ${opcurrname.length>12?opcurrname.length>16?"namesmaller":"name":""} ak-center blacktext">${opcurrname}</div>
                             </div>
@@ -913,7 +903,7 @@
                         $("#operatorsResult").addClass("opresult-list");
                         $("#operatorsResult").css("text-align","left");
                         $("#operatorsResult").append(`
-                        <li class=" ak-shadow-small ak-rare-${result[i].rarity}"style="width:100%;cursor: pointer;margin-bottom:2px" onclick="selectOperator('${result[i].name_cn}')">${image} ${result[i].name_readable?`[${result[i].name_readable}]`:""} ${result[i].nameTL} (${result[i].name})</li>`);
+                        <li class=" ak-shadow-small ak-rare-${result[i].rarity}"style="width:100%;cursor: pointer;margin-bottom:2px" onclick="selectOperator('${result[i].id}')">${image} ${result[i].name_readable?`[${result[i].name_readable}]`:""} ${result[i].nameTL} (${result[i].name})</li>`);
                     }
                 }
             }
@@ -1295,7 +1285,7 @@
             var unreadable = query(db.unreadNameTL,"name",char.appellation).name_en
             return `
             ${extrathing}
-            <li class="selectop-grid ak-shadow" onclick="selectOperator('${char.name}')">
+            <li class="selectop-grid ak-shadow" onclick="selectOperator('${getId(char)}')">
             <div class="op-image-grid">
                 ${GetLogo(char)?`<div class="op-grid-faction"><img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/${GetLogo(char)?GetLogo(char).toLowerCase():"none"}.png" title="${GetLogo(char)?GetLogoInfo(char).powerCode:"None"}"></div>`:""}
                 <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${getId(char)}.png">
@@ -1336,25 +1326,22 @@
         }
         $('#charazoom').modal('handleUpdate')
     }
-    function selectOperator(opname,from='Selecting Operator From Browse'){
+    function selectOperator(opid,from='Selecting Operator From Browse'){
         $("#opchoosemodal").modal('hide');
 
         if(spinewidgetcg){
             spinewidgetcg.pause()
         }
-        if(opname != ""){
+        if(opid){
             $("#chara-detail-container").show();
             console.log("SELECT OPERATOR");
-            console.log(opname);
+            console.log(opid);
             $("#opname").val("");
             $('#operatorsResult').empty();
             $('#operatorsResult').hide();
-            var opdata = query(db.chars2,"name_cn",opname);
-            var opclass = query(db.classes,"type_cn",opdata.type);
-            var opdata2 = query(db.chars,"name",opdata.name_cn,true,true);
-            curropname = opname
-            var opcode2 = ""
-            // console.log(opdata3)
+            var opdata = query(db.chars2,"id",opid);
+            var opdata2 = {[opid]:db.chars[opid]}
+            curropid = opid
 
             if (opdata2)
             var opcode = Object.keys(opdata2)[0]
@@ -2325,7 +2312,7 @@
                                     <button type="button" class="btn ak-button" style="width:90px;height:90px" data-toggle="modal" data-target="#opmodulestory" onclick="GetModuleStory('${element}')">
                                         <span style="position:absolute;font-size: 14px;bottom:4px;left:4px;color:#fff;background:#222222dd;padding:4px;border-radius:2px" class="fa fa-search-plus"> Info</span>
                                         ${currequip.uniEquipId.search("001")!=-1?`<img class='equip-image' id='equip${i}image_add' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/subclass/sub_${opdataFull.subProfessionId}_icon.png'style='z-index: 1;  height: 21%;  top: 28.3%;  position: absolute;  left: 37.4%;  filter: invert(5%) sepia(6%) saturate(913%) hue-rotate(12deg) brightness(83%) contrast(86%);'>`:""}
-                                        <img class='equip-image' id='equip${num}image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/icon/${currequip.uniEquipIcon.search("001")==-1?currequip.uniEquipIcon:"original"}.png' style='width: 90px;height:90px;object-fit:contain'>
+                                        <img class='equip-image' id='equip${num}image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/icon/${currequip.uniEquipIcon.search("001")==-1?currequip.uniEquipIcon:"original"}.png' style='width: 90px;height:90px;object-fit:contain' onerror="this.src='extra/not_found.png';">
                                     </button>
                                 </div>
                         </div>
@@ -3192,7 +3179,7 @@
             <div style="background:#222;padding:6px 5px 6px 5px;font-size:20px;text-align:center">${currequipEN?currequipEN.uniEquipName:currequip.uniEquipName}</div>
             <div class="equip-image-container">
                 ${currequip.uniEquipId.search("001")!=-1?`<img class='equip-image' id='equip${i}image_add' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/subclass/sub_${opdataFull.subProfessionId}_icon.png'style='z-index: 1;  height: 21%;  top: 28.3%;  position: absolute;  left: 42%;  filter: invert(5%) sepia(6%) saturate(913%) hue-rotate(12deg) brightness(83%) contrast(86%);'>`:""}
-                <img class='equip-image' id='equip${i}image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/icon/${currequip.uniEquipIcon.search("001")==-1?currequip.uniEquipIcon:"original"}.png' style='width:100%;max-width:500px;object-fit:contain;position:absolute'>
+                <img class='equip-image' id='equip${i}image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/icon/${currequip.uniEquipIcon.search("001")==-1?currequip.uniEquipIcon:"original"}.png' style='width:100%;max-width:500px;object-fit:contain;position:absolute' onerror="this.src='extra/not_found.png';">
             </div>
 
             <div style="background:#222;padding:6px 5px 6px 5px;font-size:20px;text-align:center">Basic Information</div>
@@ -6226,7 +6213,7 @@
     function ChangeSType(buttonnum,amiyaclass="caster"){
         ChangeSTypeHTML(buttonnum,Amiyacurrclass)
         Amiyacurrclass=amiyaclass
-        selectOperator(curropname)
+        selectOperator(curropid)
     }
     function ChangeSTypeHTML(num,classchange){
         changepic={

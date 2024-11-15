@@ -5408,6 +5408,46 @@
             "name": "Assault",
             "Event": "weekly_4"
         },
+        "act1vautochess_m01": {
+            "stageId": "act1vautochess_m01",
+            "levelId": "Activities/ACT1VAUTOCHESS/level_act1vautochess_m01",
+            "zoneId": "act1vautochess_zone1",
+            "code": "新手模式",
+            "name": "AC-TR-1",
+            "Event": "act1vautochess"
+        },
+        "act1vautochess_m02": {
+            "stageId": "act1vautochess_m02",
+            "levelId": "Activities/ACT1VAUTOCHESS/level_act1vautochess_m02",
+            "zoneId": "act1vautochess_zone1",
+            "code": "协议原型",
+            "name": "AC-1",
+            "Event": "act1vautochess"
+        },
+        "act1vautochess_m03": {
+            "stageId": "act1vautochess_m03",
+            "levelId": "Activities/ACT1VAUTOCHESS/level_act1vautochess_m03",
+            "zoneId": "act1vautochess_zone1",
+            "code": "常规模式",
+            "name": "AC-2",
+            "Event": "act1vautochess"
+        },
+        "act1vautochess_m04": {
+            "stageId": "act1vautochess_m04",
+            "levelId": "Activities/ACT1VAUTOCHESS/level_act1vautochess_m04",
+            "zoneId": "act1vautochess_zone1",
+            "code": "常规模式",
+            "name": "AC-2",
+            "Event": "act1vautochess"
+        },
+        "act1vautochess_m05": {
+            "stageId": "act1vautochess_m05",
+            "levelId": "Activities/ACT1VAUTOCHESS/level_act1vautochess_m05",
+            "zoneId": "act1vautochess_zone1",
+            "code": "常规模式",
+            "name": "AC-2",
+            "Event": "act1vautochess"
+        },
         "act38side_tr01": {
             "stageId": "act38side_tr01",
             "levelId": "Activities/act38side/level_act38side_tr01",
@@ -5646,6 +5686,86 @@
             "zoneId": "act38side_zone2",
             "code": "PV-EX-8",
             "name": "狂欢之主",
+            "Event": "act38side"
+        },
+        "act38side_s01": {
+            "stageId": "act38side_s01",
+            "levelId": "Activities/act38side/level_act38side_sub-1-1",
+            "zoneId": "act38side_zone3",
+            "code": "PV-S-1",
+            "name": "无尽玩笑",
+            "Event": "act38side"
+        },
+        "act38side_s01#f#": {
+            "stageId": "act38side_s01#f#",
+            "levelId": "Activities/act38side/level_act38side_sub-1-1",
+            "zoneId": "act38side_zone3",
+            "code": "PV-S-1",
+            "name": "无尽玩笑",
+            "Event": "act38side"
+        },
+        "act38side_s02": {
+            "stageId": "act38side_s02",
+            "levelId": "Activities/act38side/level_act38side_sub-1-2",
+            "zoneId": "act38side_zone3",
+            "code": "PV-S-2",
+            "name": "荒唐共谋",
+            "Event": "act38side"
+        },
+        "act38side_s02#f#": {
+            "stageId": "act38side_s02#f#",
+            "levelId": "Activities/act38side/level_act38side_sub-1-2",
+            "zoneId": "act38side_zone3",
+            "code": "PV-S-2",
+            "name": "荒唐共谋",
+            "Event": "act38side"
+        },
+        "act38side_s03": {
+            "stageId": "act38side_s03",
+            "levelId": "Activities/act38side/level_act38side_sub-1-3",
+            "zoneId": "act38side_zone3",
+            "code": "PV-S-3",
+            "name": "仓皇步法",
+            "Event": "act38side"
+        },
+        "act38side_s03#f#": {
+            "stageId": "act38side_s03#f#",
+            "levelId": "Activities/act38side/level_act38side_sub-1-3",
+            "zoneId": "act38side_zone3",
+            "code": "PV-S-3",
+            "name": "仓皇步法",
+            "Event": "act38side"
+        },
+        "act38side_s04": {
+            "stageId": "act38side_s04",
+            "levelId": "Activities/act38side/level_act38side_sub-1-4",
+            "zoneId": "act38side_zone3",
+            "code": "PV-S-4",
+            "name": "游戏终结",
+            "Event": "act38side"
+        },
+        "act38side_s04#f#": {
+            "stageId": "act38side_s04#f#",
+            "levelId": "Activities/act38side/level_act38side_sub-1-4",
+            "zoneId": "act38side_zone3",
+            "code": "PV-S-4",
+            "name": "游戏终结",
+            "Event": "act38side"
+        },
+        "act38side_s05": {
+            "stageId": "act38side_s05",
+            "levelId": "Activities/act38side/level_act38side_sub-1-5",
+            "zoneId": "act38side_zone3",
+            "code": "PV-S-5",
+            "name": "荒芜谢幕",
+            "Event": "act38side"
+        },
+        "act38side_s05#f#": {
+            "stageId": "act38side_s05#f#",
+            "levelId": "Activities/act38side/level_act38side_sub-1-5",
+            "zoneId": "act38side_zone3",
+            "code": "PV-S-5",
+            "name": "荒芜谢幕",
             "Event": "act38side"
         },
         "act37side_01": {
@@ -6821,7 +6941,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_tr01",
             "zoneId": "act2vmulti",
             "code": "IG-TR-1",
-            "name": "规则教学-常规项目",
+            "name": "Tutorial - Regular Events",
             "Event": "act2vmulti"
         },
         "act2vmulti-tr02": {
@@ -6829,7 +6949,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_tr02",
             "zoneId": "act2vmulti",
             "code": "IG-TR-2",
-            "name": "规则教学-阵地足球",
+            "name": "Tutorial - Positional Football",
             "Event": "act2vmulti"
         },
         "act2vmulti-tr03": {
@@ -6837,7 +6957,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_tr03",
             "zoneId": "act2vmulti",
             "code": "IG-TR-3",
-            "name": "规则教学-堡垒守御",
+            "name": "Tutorial - Bastion Defense",
             "Event": "act2vmulti"
         },
         "act2vmulti-01": {
@@ -6845,7 +6965,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_01",
             "zoneId": "act2vmulti",
             "code": "IG-1",
-            "name": "嘟嘟喇叭",
+            "name": "Blaring Horns",
             "Event": "act2vmulti"
         },
         "act2vmulti-02": {
@@ -6853,7 +6973,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_02",
             "zoneId": "act2vmulti",
             "code": "IG-2",
-            "name": "军事化训练",
+            "name": "Drills",
             "Event": "act2vmulti"
         },
         "act2vmulti-03": {
@@ -6861,7 +6981,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_03",
             "zoneId": "act2vmulti",
             "code": "IG-3",
-            "name": "单行赛道",
+            "name": "One-Way Course",
             "Event": "act2vmulti"
         },
         "act2vmulti-04": {
@@ -6869,7 +6989,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_04",
             "zoneId": "act2vmulti",
             "code": "IG-4",
-            "name": "迎宾大道",
+            "name": "Grand Avenue",
             "Event": "act2vmulti"
         },
         "act2vmulti-05": {
@@ -6877,7 +6997,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_05",
             "zoneId": "act2vmulti",
             "code": "IG-5",
-            "name": "夜舞与晨跑",
+            "name": "Jog by Day, Dance by Night",
             "Event": "act2vmulti"
         },
         "act2vmulti-06": {
@@ -6885,7 +7005,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_06",
             "zoneId": "act2vmulti",
             "code": "IG-6",
-            "name": "黑夜骑士",
+            "name": "Night Knight",
             "Event": "act2vmulti"
         },
         "act2vmulti-07": {
@@ -6893,7 +7013,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_07",
             "zoneId": "act2vmulti",
             "code": "IG-7",
-            "name": "发射试验场",
+            "name": "Launch Site",
             "Event": "act2vmulti"
         },
         "act2vmulti-ft01": {
@@ -6901,7 +7021,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_football",
             "zoneId": "act2vmulti",
             "code": "IG-S-1",
-            "name": "大力出奇迹",
+            "name": "Power Shot",
             "Event": "act2vmulti"
         },
         "act2vmulti-de01": {
@@ -6909,7 +7029,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_fortress",
             "zoneId": "act2vmulti",
             "code": "IG-S-2",
-            "name": "请无序入场",
+            "name": "Break Their Ranks",
             "Event": "act2vmulti"
         },
         "act2vmulti-ex01": {
@@ -6917,7 +7037,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_01",
             "zoneId": "act2vmulti",
             "code": "IG-EX-1",
-            "name": "嘟嘟喇叭",
+            "name": "Blaring Horns",
             "Event": "act2vmulti"
         },
         "act2vmulti-ex02": {
@@ -6925,7 +7045,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_02",
             "zoneId": "act2vmulti",
             "code": "IG-EX-2",
-            "name": "军事化训练",
+            "name": "Drills",
             "Event": "act2vmulti"
         },
         "act2vmulti-ex03": {
@@ -6933,7 +7053,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_03",
             "zoneId": "act2vmulti",
             "code": "IG-EX-3",
-            "name": "单行赛道",
+            "name": "One-Way Course",
             "Event": "act2vmulti"
         },
         "act2vmulti-ex04": {
@@ -6941,7 +7061,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_04",
             "zoneId": "act2vmulti",
             "code": "IG-EX-4",
-            "name": "迎宾大道",
+            "name": "Grand Avenue",
             "Event": "act2vmulti"
         },
         "act2vmulti-ex05": {
@@ -6949,7 +7069,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_05",
             "zoneId": "act2vmulti",
             "code": "IG-EX-5",
-            "name": "夜舞与晨跑",
+            "name": "Jog by Day, Dance by Night",
             "Event": "act2vmulti"
         },
         "act2vmulti-ex06": {
@@ -6957,7 +7077,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_06",
             "zoneId": "act2vmulti",
             "code": "IG-EX-6",
-            "name": "黑夜骑士",
+            "name": "Night Knight",
             "Event": "act2vmulti"
         },
         "act2vmulti-ex07": {
@@ -6965,7 +7085,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_07",
             "zoneId": "act2vmulti",
             "code": "IG-EX-7",
-            "name": "发射试验场",
+            "name": "Launch Site",
             "Event": "act2vmulti"
         },
         "act2vmulti-ft02": {
@@ -6973,7 +7093,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_football",
             "zoneId": "act2vmulti",
             "code": "IG-S-3",
-            "name": "大力出奇迹",
+            "name": "Power Shot",
             "Event": "act2vmulti"
         },
         "act2vmulti-de02": {
@@ -6981,7 +7101,7 @@
             "levelId": "Activities\\ACT2VMULTI\\level_act2vmulti_fortress",
             "zoneId": "act2vmulti",
             "code": "IG-S-4",
-            "name": "请无序入场",
+            "name": "Break Their Ranks",
             "Event": "act2vmulti"
         },
         "act33side_01": {
@@ -17501,7 +17621,7 @@
             "levelId": "Obt/Legion/LT13/level_lt13_01",
             "zoneId": "tower_n_13",
             "code": "LT-1",
-            "name": "痛心的快板",
+            "name": "Allegro Lamentoso",
             "Event": "tower_n_13"
         },
         "lt_13_02": {
@@ -17509,7 +17629,7 @@
             "levelId": "Obt/Legion/LT13/level_lt13_02",
             "zoneId": "tower_n_13",
             "code": "LT-2",
-            "name": "心伤的奏鸣曲",
+            "name": "Sonata Triste",
             "Event": "tower_n_13"
         },
         "lt_13_03": {
@@ -17517,7 +17637,7 @@
             "levelId": "Obt/Legion/LT13/level_lt13_03",
             "zoneId": "tower_n_13",
             "code": "LT-3",
-            "name": "伤悲的慢板",
+            "name": "Adagio Dolente",
             "Event": "tower_n_13"
         },
         "lt_13_04": {
@@ -17525,7 +17645,7 @@
             "levelId": "Obt/Legion/LT13/level_lt13_04",
             "zoneId": "tower_n_13",
             "code": "LT-4",
-            "name": "悲愁的小步舞曲",
+            "name": "Minuetto Doloroso",
             "Event": "tower_n_13"
         },
         "lt_13_05": {
@@ -17533,7 +17653,7 @@
             "levelId": "Obt/Legion/LT13/level_lt13_05",
             "zoneId": "tower_n_13",
             "code": "LT-5",
-            "name": "愁苦的行板",
+            "name": "Andante Lacrimoso",
             "Event": "tower_n_13"
         },
         "lt_13_06": {
@@ -17541,7 +17661,7 @@
             "levelId": "Obt/Legion/LT13/level_lt13_06",
             "zoneId": "tower_n_13",
             "code": "LT-6",
-            "name": "苦痛的回旋曲",
+            "name": "Rondo Mesto",
             "Event": "tower_n_13"
         },
         "lt_14_01": {
@@ -17549,7 +17669,7 @@
             "levelId": "Obt/Legion/LT14/level_lt14_01",
             "zoneId": "tower_n_14",
             "code": "LT-1",
-            "name": "任性逃跑",
+            "name": "Unruly Escape",
             "Event": "tower_n_14"
         },
         "lt_14_02": {
@@ -17557,7 +17677,7 @@
             "levelId": "Obt/Legion/LT14/level_lt14_02",
             "zoneId": "tower_n_14",
             "code": "LT-2",
-            "name": "全城悬赏",
+            "name": "Citywide Bounty",
             "Event": "tower_n_14"
         },
         "lt_14_03": {
@@ -17565,7 +17685,7 @@
             "levelId": "Obt/Legion/LT14/level_lt14_03",
             "zoneId": "tower_n_14",
             "code": "LT-3",
-            "name": "“领奖处”",
+            "name": "'Prize Claim'",
             "Event": "tower_n_14"
         },
         "lt_14_04": {
@@ -17573,7 +17693,7 @@
             "levelId": "Obt/Legion/LT14/level_lt14_04",
             "zoneId": "tower_n_14",
             "code": "LT-4",
-            "name": "闻风而来",
+            "name": "Freebie Frenzy",
             "Event": "tower_n_14"
         },
         "lt_14_05": {
@@ -17581,7 +17701,7 @@
             "levelId": "Obt/Legion/LT14/level_lt14_05",
             "zoneId": "tower_n_14",
             "code": "LT-5",
-            "name": "“大血拼”",
+            "name": "'Shopping Spree'",
             "Event": "tower_n_14"
         },
         "lt_14_06": {
@@ -17589,7 +17709,7 @@
             "levelId": "Obt/Legion/LT14/level_lt14_06",
             "zoneId": "tower_n_14",
             "code": "LT-6",
-            "name": "尽入囊中",
+            "name": "Grab 'Em All",
             "Event": "tower_n_14"
         },
         "lt_15_01": {
@@ -20555,7 +20675,7 @@
         "rogue4_b-4-b": {
             "stageId": "rogue4_b-4-b",
             "levelId": "obt/roguelike/ro4/level_rogue4_b-4-b.json",
-            "zoneId": "IS#5  ???",
+            "zoneId": "IS#5 Floor 5",
             "code": "rogue4_b-4-b",
             "name": "思维矫正 (Boss)",
             "Event": "IS#5"
@@ -20563,7 +20683,7 @@
         "rogue4_b-4-c": {
             "stageId": "rogue4_b-4-c",
             "levelId": "obt/roguelike/ro4/level_rogue4_b-4-c.json",
-            "zoneId": "IS#5  ???",
+            "zoneId": "IS#5 Floor 5",
             "code": "rogue4_b-4-c",
             "name": "紧急授课 (Boss)",
             "Event": "IS#5"
@@ -20571,7 +20691,7 @@
         "rogue4_b-4-d": {
             "stageId": "rogue4_b-4-d",
             "levelId": "obt/roguelike/ro4/level_rogue4_b-4-d.json",
-            "zoneId": "IS#5  ???",
+            "zoneId": "IS#5 Floor 5",
             "code": "rogue4_b-4-d",
             "name": "思维矫正 (Boss)",
             "Event": "IS#5"
@@ -20587,7 +20707,7 @@
         "rogue4_b-5-b": {
             "stageId": "rogue4_b-5-b",
             "levelId": "obt/roguelike/ro4/level_rogue4_b-5-b.json",
-            "zoneId": "IS#5  ???",
+            "zoneId": "IS#5 Floor 5",
             "code": "rogue4_b-5-b",
             "name": "魂灵朝谒 (Boss)",
             "Event": "IS#5"
@@ -20595,7 +20715,7 @@
         "rogue4_b-5-c": {
             "stageId": "rogue4_b-5-c",
             "levelId": "obt/roguelike/ro4/level_rogue4_b-5-c.json",
-            "zoneId": "IS#5  ???",
+            "zoneId": "IS#5 Floor 5",
             "code": "rogue4_b-5-c",
             "name": "朝谒 (Boss)",
             "Event": "IS#5"
@@ -20603,7 +20723,7 @@
         "rogue4_b-5-d": {
             "stageId": "rogue4_b-5-d",
             "levelId": "obt/roguelike/ro4/level_rogue4_b-5-d.json",
-            "zoneId": "IS#5  ???",
+            "zoneId": "IS#5 Floor 5",
             "code": "rogue4_b-5-d",
             "name": "魂灵朝谒 (Boss)",
             "Event": "IS#5"
@@ -23634,6 +23754,13 @@
             "pro_d_1",
             "pro_d_2"
         ],
+        "act1vautochess_zone1": [
+            "act1vautochess_m01",
+            "act1vautochess_m02",
+            "act1vautochess_m03",
+            "act1vautochess_m04",
+            "act1vautochess_m05"
+        ],
         "act38side_zone1": [
             "act38side_tr01",
             "act38side_01",
@@ -23667,6 +23794,18 @@
             "act38side_ex07#f#",
             "act38side_ex08",
             "act38side_ex08#f#"
+        ],
+        "act38side_zone3": [
+            "act38side_s01",
+            "act38side_s01#f#",
+            "act38side_s02",
+            "act38side_s02#f#",
+            "act38side_s03",
+            "act38side_s03#f#",
+            "act38side_s04",
+            "act38side_s04#f#",
+            "act38side_s05",
+            "act38side_s05#f#"
         ],
         "act37side_zone1": [
             "act37side_01",
@@ -26058,7 +26197,13 @@
             "rogue4_5-7",
             "rogue4_5-8",
             "rogue4_b-4",
-            "rogue4_b-5"
+            "rogue4_b-4-b",
+            "rogue4_b-4-c",
+            "rogue4_b-4-d",
+            "rogue4_b-5",
+            "rogue4_b-5-b",
+            "rogue4_b-5-c",
+            "rogue4_b-5-d"
         ],
         "IS#5 Floor 6": [
             "rogue4_6-1",
@@ -26069,14 +26214,6 @@
         "IS#5 Floor 7": [
             "rogue4_7-1",
             "rogue4_7-2"
-        ],
-        "IS#5  ???": [
-            "rogue4_b-4-b",
-            "rogue4_b-4-c",
-            "rogue4_b-4-d",
-            "rogue4_b-5-b",
-            "rogue4_b-5-c",
-            "rogue4_b-5-d"
         ],
         "IS#5 Treasure": [
             "rogue4_t-1",
@@ -26503,9 +26640,13 @@
         "weekly_4": [
             "weekly_4"
         ],
+        "act1vautochess": [
+            "act1vautochess_zone1"
+        ],
         "act38side": [
             "act38side_zone1",
-            "act38side_zone2"
+            "act38side_zone2",
+            "act38side_zone3"
         ],
         "act37side": [
             "act37side_zone1",
@@ -26999,7 +27140,6 @@
             "IS#5 Floor 5",
             "IS#5 Floor 6",
             "IS#5 Floor 7",
-            "IS#5  ???",
             "IS#5 Treasure",
             "IS#5 Event",
             "IS#5 Duel"
@@ -27109,6 +27249,22 @@
                     ]
                 }
             },
+            "exp": {
+                "act1vautochess": {
+                    "act1vautochess_zone1": [
+                        "act1vautochess_m01",
+                        "act1vautochess_m02",
+                        "act1vautochess_m03",
+                        "act1vautochess_m04",
+                        "act1vautochess_m05"
+                    ]
+                },
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_a-01"
+                    ]
+                }
+            },
             "sidestory": {
                 "act36side": {
                     "act36side_zone1": [
@@ -27186,13 +27342,6 @@
                     ],
                     "act13d2_zone2": [
                         "a001_ex01"
-                    ]
-                }
-            },
-            "exp": {
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_a-01"
                     ]
                 }
             },
@@ -28472,6 +28621,22 @@
                     ]
                 }
             },
+            "exp": {
+                "act1vautochess": {
+                    "act1vautochess_zone1": [
+                        "act1vautochess_m01",
+                        "act1vautochess_m02",
+                        "act1vautochess_m03",
+                        "act1vautochess_m04",
+                        "act1vautochess_m05"
+                    ]
+                },
+                "act42d0": {
+                    "challenge": [
+                        "act42d0_sp04"
+                    ]
+                }
+            },
             "sidestory": {
                 "act36side": {
                     "act36side_zone2": [
@@ -28581,13 +28746,6 @@
                 "CC#10": {
                     "CC#10": [
                         "rune_09-02"
-                    ]
-                }
-            },
-            "exp": {
-                "act42d0": {
-                    "challenge": [
-                        "act42d0_sp04"
                     ]
                 }
             },
@@ -28905,6 +29063,22 @@
                     ]
                 }
             },
+            "exp": {
+                "act1vautochess": {
+                    "act1vautochess_zone1": [
+                        "act1vautochess_m01",
+                        "act1vautochess_m02",
+                        "act1vautochess_m03",
+                        "act1vautochess_m04",
+                        "act1vautochess_m05"
+                    ]
+                },
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_b-01"
+                    ]
+                }
+            },
             "coop": {
                 "act2vmulti": {
                     "act2vmulti": [
@@ -29005,13 +29179,6 @@
                         "a001_ex03",
                         "a001_ex04",
                         "a001_ex04#f#"
-                    ]
-                }
-            },
-            "exp": {
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_b-01"
                     ]
                 }
             },
@@ -42988,7 +43155,7 @@
                     ]
                 },
                 "IS#5": {
-                    "IS#5  ???": [
+                    "IS#5 Floor 5": [
                         "rogue4_b-4-b",
                         "rogue4_b-4-d"
                     ]
@@ -43679,14 +43846,12 @@
                     ],
                     "IS#5 Floor 5": [
                         "rogue4_5-1",
-                        "rogue4_5-4"
+                        "rogue4_5-4",
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-d"
                     ],
                     "IS#5 Floor 3": [
                         "rogue4_b-1-c"
-                    ],
-                    "IS#5  ???": [
-                        "rogue4_b-5-b",
-                        "rogue4_b-5-d"
                     ]
                 }
             }
@@ -44255,9 +44420,7 @@
                 "IS#5": {
                     "IS#5 Floor 5": [
                         "rogue4_b-5",
-                        "rogue4_b-5"
-                    ],
-                    "IS#5  ???": [
+                        "rogue4_b-5",
                         "rogue4_b-5-c",
                         "rogue4_b-5-c"
                     ],
@@ -44389,9 +44552,7 @@
                     ],
                     "IS#5 Floor 5": [
                         "rogue4_5-1",
-                        "rogue4_b-5"
-                    ],
-                    "IS#5  ???": [
+                        "rogue4_b-5",
                         "rogue4_b-5-c"
                     ]
                 }
@@ -44442,7 +44603,7 @@
             },
             "is": {
                 "IS#5": {
-                    "IS#5  ???": [
+                    "IS#5 Floor 5": [
                         "rogue4_b-5-b",
                         "rogue4_b-5-d"
                     ]
@@ -45173,14 +45334,12 @@
             "is": {
                 "IS#5": {
                     "IS#5 Floor 5": [
-                        "rogue4_5-1"
+                        "rogue4_5-1",
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-d"
                     ],
                     "IS#5 Floor 3": [
                         "rogue4_b-2-c"
-                    ],
-                    "IS#5  ???": [
-                        "rogue4_b-5-b",
-                        "rogue4_b-5-d"
                     ]
                 }
             }
@@ -46184,9 +46343,7 @@
                         "rogue4_3-2"
                     ],
                     "IS#5 Floor 5": [
-                        "rogue4_b-5"
-                    ],
-                    "IS#5  ???": [
+                        "rogue4_b-5",
                         "rogue4_b-5-c"
                     ],
                     "IS#5 Treasure": [
@@ -46305,9 +46462,7 @@
                     "IS#5 Floor 5": [
                         "rogue4_5-3",
                         "rogue4_b-5",
-                        "rogue4_b-5"
-                    ],
-                    "IS#5  ???": [
+                        "rogue4_b-5",
                         "rogue4_b-5-c",
                         "rogue4_b-5-c"
                     ]
@@ -47463,7 +47618,7 @@
             },
             "is": {
                 "IS#5": {
-                    "IS#5  ???": [
+                    "IS#5 Floor 5": [
                         "rogue4_b-4-b",
                         "rogue4_b-4-d"
                     ]
@@ -47495,7 +47650,7 @@
             },
             "is": {
                 "IS#5": {
-                    "IS#5  ???": [
+                    "IS#5 Floor 5": [
                         "rogue4_b-4-b",
                         "rogue4_b-4-d"
                     ]
@@ -49237,16 +49392,14 @@
             "is": {
                 "IS#5": {
                     "IS#5 Floor 5": [
-                        "rogue4_5-7"
-                    ],
-                    "IS#5 Floor 6": [
-                        "rogue4_6-1"
-                    ],
-                    "IS#5  ???": [
+                        "rogue4_5-7",
                         "rogue4_b-5-b",
                         "rogue4_b-5-b",
                         "rogue4_b-5-d",
                         "rogue4_b-5-d"
+                    ],
+                    "IS#5 Floor 6": [
+                        "rogue4_6-1"
                     ]
                 }
             }
@@ -49295,7 +49448,7 @@
                     "IS#5 Floor 6": [
                         "rogue4_6-1"
                     ],
-                    "IS#5  ???": [
+                    "IS#5 Floor 5": [
                         "rogue4_b-5-b",
                         "rogue4_b-5-d"
                     ]
@@ -49383,7 +49536,7 @@
                     "IS#5 Floor 6": [
                         "rogue4_6-1"
                     ],
-                    "IS#5  ???": [
+                    "IS#5 Floor 5": [
                         "rogue4_b-5-b",
                         "rogue4_b-5-d"
                     ]
@@ -49421,7 +49574,7 @@
                     "IS#5 Floor 6": [
                         "rogue4_6-1"
                     ],
-                    "IS#5  ???": [
+                    "IS#5 Floor 5": [
                         "rogue4_b-5-b",
                         "rogue4_b-5-d"
                     ]
@@ -50705,6 +50858,125 @@
                 }
             }
         },
+        "enemy_1116_liprr": {
+            "exp": {
+                "act1vautochess": {
+                    "act1vautochess_zone1": [
+                        "act1vautochess_m01",
+                        "act1vautochess_m02",
+                        "act1vautochess_m03",
+                        "act1vautochess_m04",
+                        "act1vautochess_m05"
+                    ]
+                }
+            },
+            "tn": {
+                "act2bossrush": {
+                    "act2bossrush_zone1": [
+                        "act2bossrush_01"
+                    ]
+                }
+            },
+            "sidestory": {
+                "act11mini": {
+                    "act11mini_zone1": [
+                        "act11mini_08",
+                        "act11mini_08#f#"
+                    ]
+                },
+                "act15d0": {
+                    "act8sre_zone1": [
+                        "act15d0_01",
+                        "act15d0_tr01",
+                        "act15d0_02",
+                        "act15d0_03",
+                        "act15d0_04",
+                        "act15d0_05",
+                        "act15d0_06",
+                        "act15d0_07",
+                        "act15d0_08"
+                    ],
+                    "act8sre_zone2": [
+                        "act15d0_ex01",
+                        "act15d0_ex01#f#",
+                        "act15d0_ex07",
+                        "act15d0_ex07#f#"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_08": {
+                    "camp_r_08": [
+                        "camp_r_08"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_12": {
+                    "tower_n_12": [
+                        "lt_12_03"
+                    ]
+                }
+            },
+            "cc": {
+                "CC#04": {
+                    "CC#04": [
+                        "rune_06-02"
+                    ]
+                },
+                "CC#05": {
+                    "CC#05": [
+                        "rune_06-02"
+                    ]
+                },
+                "CC#06": {
+                    "CC#06": [
+                        "rune_06-02"
+                    ]
+                },
+                "CC#07": {
+                    "CC#07": [
+                        "rune_06-02"
+                    ]
+                },
+                "CCBP#01": {
+                    "CCBP#01": [
+                        "crisis_v2_01-03"
+                    ]
+                }
+            },
+            "is": {
+                "IS#2": {
+                    "IS#2 Floor 3": [
+                        "rogue1_3-7"
+                    ],
+                    "IS#2 Event": [
+                        "rogue1_ev-4"
+                    ]
+                },
+                "IS#4": {
+                    "IS#4 Floor 1": [
+                        "rogue3_1-1"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#1": {
+                    "RA#1 Field : Building Material": [
+                        "sandbox_0_11"
+                    ]
+                },
+                "RA#2": {
+                    "RA#2 Field : Food Material": [
+                        "sandbox_1_103"
+                    ],
+                    "RA#2 Bandit Rushparty": [
+                        "RA#2_bandit_group1",
+                        "RA#2_bandit_group1"
+                    ]
+                }
+            }
+        },
         "enemy_10031_cnvsld": {
             "sidestory": {
                 "act38side": {
@@ -50765,6 +51037,10 @@
                         "act38side_ex06#f#",
                         "act38side_ex07",
                         "act38side_ex07#f#"
+                    ],
+                    "act38side_zone3": [
+                        "act38side_s02",
+                        "act38side_s02#f#"
                     ]
                 }
             }
@@ -50807,6 +51083,18 @@
                         "act38side_ex07#f#",
                         "act38side_ex08",
                         "act38side_ex08#f#"
+                    ],
+                    "act38side_zone3": [
+                        "act38side_s01",
+                        "act38side_s01#f#",
+                        "act38side_s02",
+                        "act38side_s02#f#",
+                        "act38side_s03",
+                        "act38side_s03#f#",
+                        "act38side_s04",
+                        "act38side_s04#f#",
+                        "act38side_s05",
+                        "act38side_s05#f#"
                     ]
                 }
             }
@@ -50895,6 +51183,10 @@
                     "act38side_zone2": [
                         "act38side_ex08",
                         "act38side_ex08#f#"
+                    ],
+                    "act38side_zone3": [
+                        "act38side_s05",
+                        "act38side_s05#f#"
                     ]
                 }
             }
@@ -50920,6 +51212,10 @@
                         "act38side_ex06#f#",
                         "act38side_ex07",
                         "act38side_ex07#f#"
+                    ],
+                    "act38side_zone3": [
+                        "act38side_s02",
+                        "act38side_s02#f#"
                     ]
                 }
             }
@@ -50939,6 +51235,16 @@
                         "act38side_ex06#f#",
                         "act38side_ex08",
                         "act38side_ex08#f#"
+                    ],
+                    "act38side_zone3": [
+                        "act38side_s01",
+                        "act38side_s01#f#",
+                        "act38side_s02",
+                        "act38side_s02#f#",
+                        "act38side_s03",
+                        "act38side_s03#f#",
+                        "act38side_s05",
+                        "act38side_s05#f#"
                     ]
                 }
             }
@@ -50956,6 +51262,10 @@
                         "act38side_ex05#f#",
                         "act38side_ex06",
                         "act38side_ex06#f#"
+                    ],
+                    "act38side_zone3": [
+                        "act38side_s04",
+                        "act38side_s04#f#"
                     ]
                 }
             }
@@ -50977,6 +51287,16 @@
                         "act38side_ex06#f#",
                         "act38side_ex08",
                         "act38side_ex08#f#"
+                    ],
+                    "act38side_zone3": [
+                        "act38side_s02",
+                        "act38side_s02#f#",
+                        "act38side_s03",
+                        "act38side_s03#f#",
+                        "act38side_s04",
+                        "act38side_s04#f#",
+                        "act38side_s05",
+                        "act38side_s05#f#"
                     ]
                 }
             }
@@ -50997,6 +51317,16 @@
                         "act38side_ex07#f#",
                         "act38side_ex08",
                         "act38side_ex08#f#"
+                    ],
+                    "act38side_zone3": [
+                        "act38side_s01",
+                        "act38side_s01#f#",
+                        "act38side_s02",
+                        "act38side_s02#f#",
+                        "act38side_s04",
+                        "act38side_s04#f#",
+                        "act38side_s05",
+                        "act38side_s05#f#"
                     ]
                 }
             }
@@ -51027,6 +51357,18 @@
                         "act38side_ex07#f#",
                         "act38side_ex08",
                         "act38side_ex08#f#"
+                    ],
+                    "act38side_zone3": [
+                        "act38side_s01",
+                        "act38side_s01#f#",
+                        "act38side_s02",
+                        "act38side_s02#f#",
+                        "act38side_s03",
+                        "act38side_s03#f#",
+                        "act38side_s04",
+                        "act38side_s04#f#",
+                        "act38side_s05",
+                        "act38side_s05#f#"
                     ]
                 }
             }
@@ -51041,6 +51383,14 @@
                         "act38side_ex03#f#",
                         "act38side_ex04",
                         "act38side_ex04#f#"
+                    ],
+                    "act38side_zone3": [
+                        "act38side_s02",
+                        "act38side_s02#f#",
+                        "act38side_s04",
+                        "act38side_s04#f#",
+                        "act38side_s05",
+                        "act38side_s05#f#"
                     ]
                 }
             }
@@ -51059,6 +51409,14 @@
                         "act38side_ex07#f#",
                         "act38side_ex08",
                         "act38side_ex08#f#"
+                    ],
+                    "act38side_zone3": [
+                        "act38side_s01",
+                        "act38side_s01#f#",
+                        "act38side_s02",
+                        "act38side_s02#f#",
+                        "act38side_s03",
+                        "act38side_s03#f#"
                     ]
                 }
             }
@@ -51073,6 +51431,16 @@
                         "act38side_ex06#f#",
                         "act38side_ex07",
                         "act38side_ex07#f#"
+                    ],
+                    "act38side_zone3": [
+                        "act38side_s01",
+                        "act38side_s01#f#",
+                        "act38side_s02",
+                        "act38side_s02#f#",
+                        "act38side_s03",
+                        "act38side_s03#f#",
+                        "act38side_s04",
+                        "act38side_s04#f#"
                     ]
                 }
             }
@@ -52349,7 +52717,7 @@
             },
             "is": {
                 "IS#5": {
-                    "IS#5  ???": [
+                    "IS#5 Floor 5": [
                         "rogue4_b-4-b",
                         "rogue4_b-4-d"
                     ],
@@ -56408,9 +56776,7 @@
                 "IS#5": {
                     "IS#5 Floor 5": [
                         "rogue4_5-8",
-                        "rogue4_b-5"
-                    ],
-                    "IS#5  ???": [
+                        "rogue4_b-5",
                         "rogue4_b-5-b",
                         "rogue4_b-5-c",
                         "rogue4_b-5-d"
@@ -57208,9 +57574,7 @@
                         "rogue4_b-1"
                     ],
                     "IS#5 Floor 5": [
-                        "rogue4_b-4"
-                    ],
-                    "IS#5  ???": [
+                        "rogue4_b-4",
                         "rogue4_b-4-c"
                     ]
                 }
@@ -57474,9 +57838,7 @@
                 },
                 "IS#5": {
                     "IS#5 Floor 5": [
-                        "rogue4_b-4"
-                    ],
-                    "IS#5  ???": [
+                        "rogue4_b-4",
                         "rogue4_b-4-c"
                     ],
                     "IS#5 Treasure": [
@@ -60970,9 +61332,7 @@
                         "rogue4_4-6"
                     ],
                     "IS#5 Floor 5": [
-                        "rogue4_5-5"
-                    ],
-                    "IS#5  ???": [
+                        "rogue4_5-5",
                         "rogue4_b-4-b",
                         "rogue4_b-4-d"
                     ]
@@ -65985,9 +66345,7 @@
                 "IS#5": {
                     "IS#5 Floor 5": [
                         "rogue4_5-3",
-                        "rogue4_b-4"
-                    ],
-                    "IS#5  ???": [
+                        "rogue4_b-4",
                         "rogue4_b-4-c"
                     ]
                 }
@@ -66012,9 +66370,7 @@
             "is": {
                 "IS#5": {
                     "IS#5 Floor 5": [
-                        "rogue4_b-4"
-                    ],
-                    "IS#5  ???": [
+                        "rogue4_b-4",
                         "rogue4_b-4-c"
                     ]
                 }
@@ -66053,9 +66409,7 @@
             "is": {
                 "IS#5": {
                     "IS#5 Floor 5": [
-                        "rogue4_b-4"
-                    ],
-                    "IS#5  ???": [
+                        "rogue4_b-4",
                         "rogue4_b-4-c"
                     ]
                 }
@@ -66109,9 +66463,7 @@
                 "IS#5": {
                     "IS#5 Floor 5": [
                         "rogue4_5-3",
-                        "rogue4_b-4"
-                    ],
-                    "IS#5  ???": [
+                        "rogue4_b-4",
                         "rogue4_b-4-c"
                     ]
                 }
@@ -66187,9 +66539,7 @@
             "is": {
                 "IS#5": {
                     "IS#5 Floor 5": [
-                        "rogue4_b-4"
-                    ],
-                    "IS#5  ???": [
+                        "rogue4_b-4",
                         "rogue4_b-4-c"
                     ]
                 }
@@ -72062,114 +72412,6 @@
                 }
             }
         },
-        "enemy_1116_liprr": {
-            "tn": {
-                "act2bossrush": {
-                    "act2bossrush_zone1": [
-                        "act2bossrush_01"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act11mini": {
-                    "act11mini_zone1": [
-                        "act11mini_08",
-                        "act11mini_08#f#"
-                    ]
-                },
-                "act15d0": {
-                    "act8sre_zone1": [
-                        "act15d0_01",
-                        "act15d0_tr01",
-                        "act15d0_02",
-                        "act15d0_03",
-                        "act15d0_04",
-                        "act15d0_05",
-                        "act15d0_06",
-                        "act15d0_07",
-                        "act15d0_08"
-                    ],
-                    "act8sre_zone2": [
-                        "act15d0_ex01",
-                        "act15d0_ex01#f#",
-                        "act15d0_ex07",
-                        "act15d0_ex07#f#"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_08": {
-                    "camp_r_08": [
-                        "camp_r_08"
-                    ]
-                }
-            },
-            "sss": {
-                "tower_n_12": {
-                    "tower_n_12": [
-                        "lt_12_03"
-                    ]
-                }
-            },
-            "cc": {
-                "CC#04": {
-                    "CC#04": [
-                        "rune_06-02"
-                    ]
-                },
-                "CC#05": {
-                    "CC#05": [
-                        "rune_06-02"
-                    ]
-                },
-                "CC#06": {
-                    "CC#06": [
-                        "rune_06-02"
-                    ]
-                },
-                "CC#07": {
-                    "CC#07": [
-                        "rune_06-02"
-                    ]
-                },
-                "CCBP#01": {
-                    "CCBP#01": [
-                        "crisis_v2_01-03"
-                    ]
-                }
-            },
-            "is": {
-                "IS#2": {
-                    "IS#2 Floor 3": [
-                        "rogue1_3-7"
-                    ],
-                    "IS#2 Event": [
-                        "rogue1_ev-4"
-                    ]
-                },
-                "IS#4": {
-                    "IS#4 Floor 1": [
-                        "rogue3_1-1"
-                    ]
-                }
-            },
-            "ra": {
-                "RA#1": {
-                    "RA#1 Field : Building Material": [
-                        "sandbox_0_11"
-                    ]
-                },
-                "RA#2": {
-                    "RA#2 Field : Food Material": [
-                        "sandbox_1_103"
-                    ],
-                    "RA#2 Bandit Rushparty": [
-                        "RA#2_bandit_group1",
-                        "RA#2_bandit_group1"
-                    ]
-                }
-            }
-        },
         "enemy_1117_liiprr": {
             "tn": {
                 "act2bossrush": {
@@ -74186,9 +74428,7 @@
             "is": {
                 "IS#5": {
                     "IS#5 Floor 5": [
-                        "rogue4_b-4"
-                    ],
-                    "IS#5  ???": [
+                        "rogue4_b-4",
                         "rogue4_b-4-c"
                     ]
                 }
@@ -83403,7 +83643,13 @@
                         "rogue4_5-7",
                         "rogue4_5-8",
                         "rogue4_b-4",
-                        "rogue4_b-5"
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-d",
+                        "rogue4_b-5",
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-c",
+                        "rogue4_b-5-d"
                     ],
                     "IS#5 Floor 6": [
                         "rogue4_6-1",
@@ -83414,14 +83660,6 @@
                     "IS#5 Floor 7": [
                         "rogue4_7-1",
                         "rogue4_7-2"
-                    ],
-                    "IS#5  ???": [
-                        "rogue4_b-4-b",
-                        "rogue4_b-4-c",
-                        "rogue4_b-4-d",
-                        "rogue4_b-5-b",
-                        "rogue4_b-5-c",
-                        "rogue4_b-5-d"
                     ],
                     "IS#5 Treasure": [
                         "rogue4_t-1",
@@ -83502,7 +83740,13 @@
                         "rogue4_5-7",
                         "rogue4_5-8",
                         "rogue4_b-4",
-                        "rogue4_b-5"
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-d",
+                        "rogue4_b-5",
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-c",
+                        "rogue4_b-5-d"
                     ],
                     "IS#5 Floor 6": [
                         "rogue4_6-1",
@@ -83513,14 +83757,6 @@
                     "IS#5 Floor 7": [
                         "rogue4_7-1",
                         "rogue4_7-2"
-                    ],
-                    "IS#5  ???": [
-                        "rogue4_b-4-b",
-                        "rogue4_b-4-c",
-                        "rogue4_b-4-d",
-                        "rogue4_b-5-b",
-                        "rogue4_b-5-c",
-                        "rogue4_b-5-d"
                     ],
                     "IS#5 Treasure": [
                         "rogue4_t-1",
@@ -83601,7 +83837,13 @@
                         "rogue4_5-7",
                         "rogue4_5-8",
                         "rogue4_b-4",
-                        "rogue4_b-5"
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-d",
+                        "rogue4_b-5",
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-c",
+                        "rogue4_b-5-d"
                     ],
                     "IS#5 Floor 6": [
                         "rogue4_6-1",
@@ -83612,14 +83854,6 @@
                     "IS#5 Floor 7": [
                         "rogue4_7-1",
                         "rogue4_7-2"
-                    ],
-                    "IS#5  ???": [
-                        "rogue4_b-4-b",
-                        "rogue4_b-4-c",
-                        "rogue4_b-4-d",
-                        "rogue4_b-5-b",
-                        "rogue4_b-5-c",
-                        "rogue4_b-5-d"
                     ],
                     "IS#5 Treasure": [
                         "rogue4_t-1",
@@ -83758,7 +83992,13 @@
                         "rogue4_5-5",
                         "rogue4_5-6",
                         "rogue4_5-7",
-                        "rogue4_5-8"
+                        "rogue4_5-8",
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-d",
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-c",
+                        "rogue4_b-5-d"
                     ],
                     "IS#5 Floor 6": [
                         "rogue4_6-1",
@@ -83769,14 +84009,6 @@
                     "IS#5 Floor 7": [
                         "rogue4_7-1",
                         "rogue4_7-2"
-                    ],
-                    "IS#5  ???": [
-                        "rogue4_b-4-b",
-                        "rogue4_b-4-c",
-                        "rogue4_b-4-d",
-                        "rogue4_b-5-b",
-                        "rogue4_b-5-c",
-                        "rogue4_b-5-d"
                     ],
                     "IS#5 Treasure": [
                         "rogue4_t-1",
@@ -83851,7 +84083,13 @@
                         "rogue4_5-7",
                         "rogue4_5-8",
                         "rogue4_b-4",
-                        "rogue4_b-5"
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-d",
+                        "rogue4_b-5",
+                        "rogue4_b-5-b",
+                        "rogue4_b-5-c",
+                        "rogue4_b-5-d"
                     ],
                     "IS#5 Floor 6": [
                         "rogue4_6-1",
@@ -83862,14 +84100,6 @@
                     "IS#5 Floor 7": [
                         "rogue4_7-1",
                         "rogue4_7-2"
-                    ],
-                    "IS#5  ???": [
-                        "rogue4_b-4-b",
-                        "rogue4_b-4-c",
-                        "rogue4_b-4-d",
-                        "rogue4_b-5-b",
-                        "rogue4_b-5-c",
-                        "rogue4_b-5-d"
                     ],
                     "IS#5 Treasure": [
                         "rogue4_t-1",
@@ -83917,18 +84147,16 @@
                         "rogue4_5-7",
                         "rogue4_5-8",
                         "rogue4_b-4",
-                        "rogue4_b-4"
+                        "rogue4_b-4",
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-d"
                     ],
                     "IS#5 Floor 3": [
                         "rogue4_b-2",
                         "rogue4_b-2-b",
                         "rogue4_b-2-c"
-                    ],
-                    "IS#5  ???": [
-                        "rogue4_b-4-b",
-                        "rogue4_b-4-c",
-                        "rogue4_b-4-c",
-                        "rogue4_b-4-d"
                     ],
                     "IS#5 Treasure": [
                         "rogue4_t-6",
@@ -84000,19 +84228,17 @@
                         "rogue4_4-9"
                     ],
                     "IS#5 Floor 5": [
-                        "rogue4_5-8"
-                    ],
-                    "IS#5 Floor 7": [
-                        "rogue4_7-1",
-                        "rogue4_7-2"
-                    ],
-                    "IS#5  ???": [
+                        "rogue4_5-8",
                         "rogue4_b-4-b",
                         "rogue4_b-4-c",
                         "rogue4_b-4-d",
                         "rogue4_b-5-b",
                         "rogue4_b-5-c",
                         "rogue4_b-5-d"
+                    ],
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1",
+                        "rogue4_7-2"
                     ],
                     "IS#5 Floor 6": [
                         "rogue4_b-7"
@@ -84047,19 +84273,17 @@
                         "rogue4_4-9"
                     ],
                     "IS#5 Floor 5": [
-                        "rogue4_5-8"
-                    ],
-                    "IS#5 Floor 7": [
-                        "rogue4_7-1",
-                        "rogue4_7-2"
-                    ],
-                    "IS#5  ???": [
+                        "rogue4_5-8",
                         "rogue4_b-4-b",
                         "rogue4_b-4-c",
                         "rogue4_b-4-d",
                         "rogue4_b-5-b",
                         "rogue4_b-5-c",
                         "rogue4_b-5-d"
+                    ],
+                    "IS#5 Floor 7": [
+                        "rogue4_7-1",
+                        "rogue4_7-2"
                     ],
                     "IS#5 Floor 6": [
                         "rogue4_b-7"
@@ -84078,16 +84302,14 @@
                     "IS#5 Floor 5": [
                         "rogue4_5-4",
                         "rogue4_5-7",
-                        "rogue4_b-4"
+                        "rogue4_b-4",
+                        "rogue4_b-4-b",
+                        "rogue4_b-4-c",
+                        "rogue4_b-4-d"
                     ],
                     "IS#5 Floor 3": [
                         "rogue4_b-1",
                         "rogue4_b-1-b"
-                    ],
-                    "IS#5  ???": [
-                        "rogue4_b-4-b",
-                        "rogue4_b-4-c",
-                        "rogue4_b-4-d"
                     ],
                     "IS#5 Treasure": [
                         "rogue4_t-6"
@@ -84193,9 +84415,7 @@
             "is": {
                 "IS#5": {
                     "IS#5 Floor 5": [
-                        "rogue4_b-4"
-                    ],
-                    "IS#5  ???": [
+                        "rogue4_b-4",
                         "rogue4_b-4-b",
                         "rogue4_b-4-c",
                         "rogue4_b-4-d"
@@ -84207,9 +84427,7 @@
             "is": {
                 "IS#5": {
                     "IS#5 Floor 5": [
-                        "rogue4_b-4"
-                    ],
-                    "IS#5  ???": [
+                        "rogue4_b-4",
                         "rogue4_b-4-b",
                         "rogue4_b-4-c",
                         "rogue4_b-4-d"
@@ -84220,7 +84438,7 @@
         "enemy_2090_skzjbc": {
             "is": {
                 "IS#5": {
-                    "IS#5  ???": [
+                    "IS#5 Floor 5": [
                         "rogue4_b-4-c",
                         "rogue4_b-4-d",
                         "rogue4_b-5-c",
@@ -84239,9 +84457,7 @@
             "is": {
                 "IS#5": {
                     "IS#5 Floor 5": [
-                        "rogue4_b-5"
-                    ],
-                    "IS#5  ???": [
+                        "rogue4_b-5",
                         "rogue4_b-5-b",
                         "rogue4_b-5-c",
                         "rogue4_b-5-d"

@@ -7394,5 +7394,323 @@
         ],
         "hidden": true,
         "globalHidden": true
+    },
+    {
+        "id": "char_600_cpione",
+        "name_cn": "预备干员-先锋",
+        "name_en": "Reserve Operator - Vanguard",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": null,
+        "groupId": null,
+        "teamId": null,
+        "type": "先锋",
+        "level": 4,
+        "sex": "男",
+        "tags": [
+            "近战位",
+            "费用回复",
+            "输出"
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_601_cguard",
+        "name_cn": "预备干员-近卫",
+        "name_en": "Reserve Operator - Guard",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": null,
+        "groupId": null,
+        "teamId": null,
+        "type": "近卫",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "输出"
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_602_cdfend",
+        "name_cn": "预备干员-重装",
+        "name_en": "Reserve Operator - Defender",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": null,
+        "groupId": null,
+        "teamId": null,
+        "type": "重装",
+        "level": 4,
+        "sex": "男",
+        "tags": [
+            "近战位",
+            "防护"
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_603_csnipe",
+        "name_cn": "预备干员-狙击",
+        "name_en": "Reserve Operator - Sniper",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": null,
+        "groupId": null,
+        "teamId": null,
+        "type": "狙击",
+        "level": 4,
+        "sex": "男",
+        "tags": [
+            "远程位",
+            "输出"
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_604_ccast",
+        "name_cn": "预备干员-术师",
+        "name_en": "Reserve Operator - Caster",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": null,
+        "groupId": null,
+        "teamId": null,
+        "type": "术师",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "输出"
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_605_cmedic",
+        "name_cn": "预备干员-医疗",
+        "name_en": "Reserve Operator - Medic",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": null,
+        "groupId": null,
+        "teamId": null,
+        "type": "医疗",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "治疗"
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_606_csuppo",
+        "name_cn": "预备干员-辅助",
+        "name_en": "Reserve Operator - Supporter",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": null,
+        "groupId": null,
+        "teamId": null,
+        "type": "辅助",
+        "level": 4,
+        "sex": "男",
+        "tags": [
+            "远程位",
+            "减速"
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_607_cspec",
+        "name_cn": "预备干员-特种",
+        "name_en": "Reserve Operator - Specialist",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": null,
+        "groupId": null,
+        "teamId": null,
+        "type": "特种",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "快速复活",
+            ""
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_608_acpion",
+        "name_cn": "郁金香",
+        "name_en": "Tulip",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": null,
+        "groupId": null,
+        "teamId": null,
+        "type": "先锋",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "近战位",
+            "费用回复",
+            "输出"
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_609_acguad",
+        "name_cn": "Sharp",
+        "name_en": "Sharp",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": null,
+        "groupId": null,
+        "teamId": null,
+        "type": "近卫",
+        "level": 6,
+        "sex": "男",
+        "tags": [
+            "高级资深干员",
+            "近战位",
+            "输出"
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_610_acfend",
+        "name_cn": "Mechanist",
+        "name_en": "Mechanist",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": null,
+        "groupId": null,
+        "teamId": null,
+        "type": "重装",
+        "level": 6,
+        "sex": "男",
+        "tags": [
+            "高级资深干员",
+            "近战位",
+            "防护"
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_611_acnipe",
+        "name_cn": "Stormeye",
+        "name_en": "Stormeye",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": null,
+        "groupId": null,
+        "teamId": null,
+        "type": "狙击",
+        "level": 6,
+        "sex": "男",
+        "tags": [
+            "高级资深干员",
+            "远程位",
+            "输出"
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_612_accast",
+        "name_cn": "Pith",
+        "name_en": "Pith",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": null,
+        "groupId": null,
+        "teamId": null,
+        "type": "术师",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "远程位",
+            "群攻",
+            "输出"
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_613_acmedc",
+        "name_cn": "Touch",
+        "name_en": "Touch",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": null,
+        "groupId": null,
+        "teamId": null,
+        "type": "医疗",
+        "level": 6,
+        "sex": "男",
+        "tags": [
+            "高级资深干员",
+            "远程位",
+            "治疗"
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_614_acsupo",
+        "name_cn": "Raidian",
+        "name_en": "Raidian",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": null,
+        "groupId": null,
+        "teamId": null,
+        "type": "辅助",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "远程位",
+            "减速",
+            "支援"
+        ],
+        "hidden": true,
+        "globalHidden": true
+    },
+    {
+        "id": "char_615_acspec",
+        "name_cn": "Misery",
+        "name_en": "Misery",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": null,
+        "groupId": null,
+        "teamId": null,
+        "type": "特种",
+        "level": 6,
+        "sex": "男",
+        "tags": [
+            "高级资深干员",
+            "近战位",
+            "快速复活",
+            ""
+        ],
+        "hidden": true,
+        "globalHidden": true
     }
 ]

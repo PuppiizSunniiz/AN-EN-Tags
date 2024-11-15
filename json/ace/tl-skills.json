@@ -10865,5 +10865,407 @@
             "Immediately <$ba.liftoff>Take off</>. Attack Range <@ba.vup>expand</>, ATK<@ba.vup>+{atk:0%}</>. Can attack 2 enemies and <@ba.vup>1</> additional <@ba.vup>aerial</> enemy. When attacking <@ba.vup>aerial</> enemies, <$ba.sluggish>Slow</> them for <@ba.vup>{attack@sluggish}</> seconds",
             "Immediately <$ba.liftoff>Take off</>. Attack Range <@ba.vup>expand</>, ATK<@ba.vup>+{atk:0%}</>. Can attack 2 enemies and <@ba.vup>1</> additional <@ba.vup>aerial</> enemy. When attacking <@ba.vup>aerial</> enemies, <$ba.sluggish>Slow</> them for <@ba.vup>{attack@sluggish}</> seconds"
         ]
-    }
+    },
+	"skcom_born_up[1]": {
+		"name": "一击即退·α型",
+		"desc": [
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>"
+		]
+	},
+	"skcom_born_up[2]": {
+		"name": "一击即退·β型",
+		"desc": [
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>"
+		]
+	},
+	"skcom_born_up[3]": {
+		"name": "一击即退·γ型",
+		"desc": [
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"After deployment ATK<@ba.vup>+{atk:0%}</>, DEF<@ba.vup>+{def:0%}</>"
+		]
+	},
+	"skchr_acnipe_1": {
+		"name": "破空",
+		"desc": [
+			"ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>, attacks ignore 100 DEF",
+			"ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>, attacks ignore 100 DEF",
+			"ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>, attacks ignore 100 DEF",
+			"ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>, attacks ignore 100 DEF",
+			"ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>, attacks ignore 100 DEF",
+			"ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>, attacks ignore 100 DEF",
+			"ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>, attacks ignore 100 DEF",
+			"ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>, attacks ignore 100 DEF",
+			"ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>, attacks ignore 100 DEF",
+			"ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>, attacks ignore 100 DEF"
+		]
+	},
+	"skchr_acnipe_2": {
+		"name": "心手合一",
+		"desc": [
+			"ATK<@ba.vup>+{atk:0%}</>, attack 1 addition target\n<@ba.rem>Unlimited duration</>",
+			"ATK<@ba.vup>+{atk:0%}</>, attack 1 addition target\n<@ba.rem>Unlimited duration</>",
+			"ATK<@ba.vup>+{atk:0%}</>, attack 1 addition target\n<@ba.rem>Unlimited duration</>",
+			"ATK<@ba.vup>+{atk:0%}</>, attack 1 addition target\n<@ba.rem>Unlimited duration</>",
+			"ATK<@ba.vup>+{atk:0%}</>, attack 1 addition target\n<@ba.rem>Unlimited duration</>",
+			"ATK<@ba.vup>+{atk:0%}</>, attack 1 addition target\n<@ba.rem>Unlimited duration</>",
+			"ATK<@ba.vup>+{atk:0%}</>, attack 1 addition target\n<@ba.rem>Unlimited duration</>",
+			"ATK<@ba.vup>+{atk:0%}</>, attack 1 addition target\n<@ba.rem>Unlimited duration</>",
+			"ATK<@ba.vup>+{atk:0%}</>, attack 1 addition target\n<@ba.rem>Unlimited duration</>",
+			"ATK<@ba.vup>+{atk:0%}</>, attack 1 addition target\n<@ba.rem>Unlimited duration</>"
+		]
+	},
+	"skchr_acnipe_3": {
+		"name": "旋臂",
+		"desc": [
+			"Attack up to 3 targets simultaneously, Talent trigger chance increase to <@ba.vup>{talent@prob:0%}</>, attack twice per target；When target 's current HP higher than <@ba.vup>{attack@hp_ratio:0%}</>, deal 1 addition attack",
+			"Attack up to 3 targets simultaneously, Talent trigger chance increase to <@ba.vup>{talent@prob:0%}</>, attack twice per target；When target 's current HP higher than <@ba.vup>{attack@hp_ratio:0%}</>, deal 1 addition attack",
+			"Attack up to 3 targets simultaneously, Talent trigger chance increase to <@ba.vup>{talent@prob:0%}</>, attack twice per target；When target 's current HP higher than <@ba.vup>{attack@hp_ratio:0%}</>, deal 1 addition attack",
+			"Attack up to 3 targets simultaneously, Talent trigger chance increase to <@ba.vup>{talent@prob:0%}</>, attack twice per target；When target 's current HP higher than <@ba.vup>{attack@hp_ratio:0%}</>, deal 1 addition attack",
+			"Attack up to 3 targets simultaneously, Talent trigger chance increase to <@ba.vup>{talent@prob:0%}</>, attack twice per target；When target 's current HP higher than <@ba.vup>{attack@hp_ratio:0%}</>, deal 1 addition attack",
+			"Attack up to 3 targets simultaneously, Talent trigger chance increase to <@ba.vup>{talent@prob:0%}</>, attack twice per target；When target 's current HP higher than <@ba.vup>{attack@hp_ratio:0%}</>, deal 1 addition attack",
+			"Attack up to 3 targets simultaneously, Talent trigger chance increase to <@ba.vup>{talent@prob:0%}</>, attack twice per target；When target 's current HP higher than <@ba.vup>{attack@hp_ratio:0%}</>, deal 1 addition attack",
+			"Attack up to 3 targets simultaneously, Talent trigger chance increase to <@ba.vup>{talent@prob:0%}</>, attack twice per target；When target 's current HP higher than <@ba.vup>{attack@hp_ratio:0%}</>, deal 1 addition attack",
+			"Attack up to 3 targets simultaneously, Talent trigger chance increase to <@ba.vup>{talent@prob:0%}</>, attack twice per target；When target 's current HP higher than <@ba.vup>{attack@hp_ratio:0%}</>, deal 1 addition attack",
+			"Attack up to 3 targets simultaneously, Talent trigger chance increase to <@ba.vup>{talent@prob:0%}</>, attack twice per target；When target 's current HP higher than <@ba.vup>{attack@hp_ratio:0%}</>, deal 1 addition attack"
+		]
+	},
+	"skchr_acpion_1": {
+		"name": "钻心",
+		"desc": [
+			"Gain <@ba.vup>{cost}</> DP, deal <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage to 2 enemies in Attack Range",
+			"Gain <@ba.vup>{cost}</> DP, deal <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage to 2 enemies in Attack Range",
+			"Gain <@ba.vup>{cost}</> DP, deal <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage to 2 enemies in Attack Range",
+			"Gain <@ba.vup>{cost}</> DP, deal <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage to 2 enemies in Attack Range",
+			"Gain <@ba.vup>{cost}</> DP, deal <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage to 2 enemies in Attack Range",
+			"Gain <@ba.vup>{cost}</> DP, deal <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage to 2 enemies in Attack Range",
+			"Gain <@ba.vup>{cost}</> DP, deal <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage to 2 enemies in Attack Range",
+			"Gain <@ba.vup>{cost}</> DP, deal <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage to 2 enemies in Attack Range",
+			"Gain <@ba.vup>{cost}</> DP, deal <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage to 2 enemies in Attack Range",
+			"Gain <@ba.vup>{cost}</> DP, deal <@ba.vup>{atk_scale:0%}</> of ATK as Physical damage to 2 enemies in Attack Range"
+		]
+	},
+	"skchr_acpion_2": {
+		"name": "迅瞬",
+		"desc": [
+			"Gradually gains <@ba.vup>{trig_cnt}</> DP over the skill duration, ASPD+<@ba.vup>{attack_speed}</>, attack ignore <@ba.vup>{def_penetrate:0%}</> DEF",
+			"Gradually gains <@ba.vup>{trig_cnt}</> DP over the skill duration, ASPD+<@ba.vup>{attack_speed}</>, attack ignore <@ba.vup>{def_penetrate:0%}</> DEF",
+			"Gradually gains <@ba.vup>{trig_cnt}</> DP over the skill duration, ASPD+<@ba.vup>{attack_speed}</>, attack ignore <@ba.vup>{def_penetrate:0%}</> DEF",
+			"Gradually gains <@ba.vup>{trig_cnt}</> DP over the skill duration, ASPD+<@ba.vup>{attack_speed}</>, attack ignore <@ba.vup>{def_penetrate:0%}</> DEF",
+			"Gradually gains <@ba.vup>{trig_cnt}</> DP over the skill duration, ASPD+<@ba.vup>{attack_speed}</>, attack ignore <@ba.vup>{def_penetrate:0%}</> DEF",
+			"Gradually gains <@ba.vup>{trig_cnt}</> DP over the skill duration, ASPD+<@ba.vup>{attack_speed}</>, attack ignore <@ba.vup>{def_penetrate:0%}</> DEF",
+			"Gradually gains <@ba.vup>{trig_cnt}</> DP over the skill duration, ASPD+<@ba.vup>{attack_speed}</>, attack ignore <@ba.vup>{def_penetrate:0%}</> DEF",
+			"Gradually gains <@ba.vup>{trig_cnt}</> DP over the skill duration, ASPD+<@ba.vup>{attack_speed}</>, attack ignore <@ba.vup>{def_penetrate:0%}</> DEF",
+			"Gradually gains <@ba.vup>{trig_cnt}</> DP over the skill duration, ASPD+<@ba.vup>{attack_speed}</>, attack ignore <@ba.vup>{def_penetrate:0%}</> DEF",
+			"Gradually gains <@ba.vup>{trig_cnt}</> DP over the skill duration, ASPD+<@ba.vup>{attack_speed}</>, attack ignore <@ba.vup>{def_penetrate:0%}</> DEF"
+		]
+	},
+	"skchr_acpion_3": {
+		"name": "只余芬芳",
+		"desc": [
+			"Gain <@ba.vup>{cost}</> DP and perform <@ba.vup>{times}</> chain slashes at surrounding enemies, each dealing  <@ba.vup>{atk_scale:0%}</> ATK as Physical damage that ignores <@ba.vup>{def_penetrate:0%}</> DEF",
+			"Gain <@ba.vup>{cost}</> DP and perform <@ba.vup>{times}</> chain slashes at surrounding enemies, each dealing  <@ba.vup>{atk_scale:0%}</> ATK as Physical damage that ignores <@ba.vup>{def_penetrate:0%}</> DEF",
+			"Gain <@ba.vup>{cost}</> DP and perform <@ba.vup>{times}</> chain slashes at surrounding enemies, each dealing  <@ba.vup>{atk_scale:0%}</> ATK as Physical damage that ignores <@ba.vup>{def_penetrate:0%}</> DEF",
+			"Gain <@ba.vup>{cost}</> DP and perform <@ba.vup>{times}</> chain slashes at surrounding enemies, each dealing  <@ba.vup>{atk_scale:0%}</> ATK as Physical damage that ignores <@ba.vup>{def_penetrate:0%}</> DEF",
+			"Gain <@ba.vup>{cost}</> DP and perform <@ba.vup>{times}</> chain slashes at surrounding enemies, each dealing  <@ba.vup>{atk_scale:0%}</> ATK as Physical damage that ignores <@ba.vup>{def_penetrate:0%}</> DEF",
+			"Gain <@ba.vup>{cost}</> DP and perform <@ba.vup>{times}</> chain slashes at surrounding enemies, each dealing  <@ba.vup>{atk_scale:0%}</> ATK as Physical damage that ignores <@ba.vup>{def_penetrate:0%}</> DEF",
+			"Gain <@ba.vup>{cost}</> DP and perform <@ba.vup>{times}</> chain slashes at surrounding enemies, each dealing  <@ba.vup>{atk_scale:0%}</> ATK as Physical damage that ignores <@ba.vup>{def_penetrate:0%}</> DEF",
+			"Gain <@ba.vup>{cost}</> DP and perform <@ba.vup>{times}</> chain slashes at surrounding enemies, each dealing  <@ba.vup>{atk_scale:0%}</> ATK as Physical damage that ignores <@ba.vup>{def_penetrate:0%}</> DEF",
+			"Gain <@ba.vup>{cost}</> DP and perform <@ba.vup>{times}</> chain slashes at surrounding enemies, each dealing  <@ba.vup>{atk_scale:0%}</> ATK as Physical damage that ignores <@ba.vup>{def_penetrate:0%}</> DEF",
+			"Gain <@ba.vup>{cost}</> DP and perform <@ba.vup>{times}</> chain slashes at surrounding enemies, each dealing  <@ba.vup>{atk_scale:0%}</> ATK as Physical damage that ignores <@ba.vup>{def_penetrate:0%}</> DEF"
+		]
+	},
+	"skchr_accast_1": {
+		"name": "“书我所书”",
+		"desc": [
+			"ASPD<@ba.vup>+{attack_speed}</>, Splash area <@ba.vup>expand</>",
+			"ASPD<@ba.vup>+{attack_speed}</>, Splash area <@ba.vup>expand</>",
+			"ASPD<@ba.vup>+{attack_speed}</>, Splash area <@ba.vup>expand</>",
+			"ASPD<@ba.vup>+{attack_speed}</>, Splash area <@ba.vup>expand</>",
+			"ASPD<@ba.vup>+{attack_speed}</>, Splash area <@ba.vup>expand</>",
+			"ASPD<@ba.vup>+{attack_speed}</>, Splash area <@ba.vup>expand</>",
+			"ASPD<@ba.vup>+{attack_speed}</>, Splash area <@ba.vup>expand</>",
+			"ASPD<@ba.vup>+{attack_speed}</>, Splash area <@ba.vup>expand</>",
+			"ASPD<@ba.vup>+{attack_speed}</>, Splash area <@ba.vup>expand</>",
+			"ASPD<@ba.vup>+{attack_speed}</>, Splash area <@ba.vup>expand</>"
+		]
+	},
+	"skchr_accast_2": {
+		"name": "“为我所为”",
+		"desc": [
+			"ASPD<@ba.vup>+{attack_speed}</>, All [Caster] Operators ATK<@ba.vup>+{atk:0%}</>",
+			"ASPD<@ba.vup>+{attack_speed}</>, All [Caster] Operators ATK<@ba.vup>+{atk:0%}</>",
+			"ASPD<@ba.vup>+{attack_speed}</>, All [Caster] Operators ATK<@ba.vup>+{atk:0%}</>",
+			"ASPD<@ba.vup>+{attack_speed}</>, All [Caster] Operators ATK<@ba.vup>+{atk:0%}</>",
+			"ASPD<@ba.vup>+{attack_speed}</>, All [Caster] Operators ATK<@ba.vup>+{atk:0%}</>",
+			"ASPD<@ba.vup>+{attack_speed}</>, All [Caster] Operators ATK<@ba.vup>+{atk:0%}</>",
+			"ASPD<@ba.vup>+{attack_speed}</>, All [Caster] Operators ATK<@ba.vup>+{atk:0%}</>",
+			"ASPD<@ba.vup>+{attack_speed}</>, All [Caster] Operators ATK<@ba.vup>+{atk:0%}</>",
+			"ASPD<@ba.vup>+{attack_speed}</>, All [Caster] Operators ATK<@ba.vup>+{atk:0%}</>",
+			"ASPD<@ba.vup>+{attack_speed}</>, All [Caster] Operators ATK<@ba.vup>+{atk:0%}</>"
+		]
+	},
+	"skchr_accast_3": {
+		"name": "“驭我所驭”",
+		"desc": [
+			"Immediately deal <@ba.vup>{atk_scale_aoe:0%}</> as Arts damage to all enemies in Attack Range, attacking target <@ba.vup>+1</>, ASPD<@ba.vup>+{attack_speed}</>, Splash area <@ba.vup>slightly expand</>",
+			"Immediately deal <@ba.vup>{atk_scale_aoe:0%}</> as Arts damage to all enemies in Attack Range, attacking target <@ba.vup>+1</>, ASPD<@ba.vup>+{attack_speed}</>, Splash area <@ba.vup>slightly expand</>",
+			"Immediately deal <@ba.vup>{atk_scale_aoe:0%}</> as Arts damage to all enemies in Attack Range, attacking target <@ba.vup>+1</>, ASPD<@ba.vup>+{attack_speed}</>, Splash area <@ba.vup>slightly expand</>",
+			"Immediately deal <@ba.vup>{atk_scale_aoe:0%}</> as Arts damage to all enemies in Attack Range, attacking target <@ba.vup>+1</>, ASPD<@ba.vup>+{attack_speed}</>, Splash area <@ba.vup>slightly expand</>",
+			"Immediately deal <@ba.vup>{atk_scale_aoe:0%}</> as Arts damage to all enemies in Attack Range, attacking target <@ba.vup>+1</>, ASPD<@ba.vup>+{attack_speed}</>, Splash area <@ba.vup>slightly expand</>",
+			"Immediately deal <@ba.vup>{atk_scale_aoe:0%}</> as Arts damage to all enemies in Attack Range, attacking target <@ba.vup>+1</>, ASPD<@ba.vup>+{attack_speed}</>, Splash area <@ba.vup>slightly expand</>",
+			"Immediately deal <@ba.vup>{atk_scale_aoe:0%}</> as Arts damage to all enemies in Attack Range, attacking target <@ba.vup>+1</>, ASPD<@ba.vup>+{attack_speed}</>, Splash area <@ba.vup>slightly expand</>",
+			"Immediately deal <@ba.vup>{atk_scale_aoe:0%}</> as Arts damage to all enemies in Attack Range, attacking target <@ba.vup>+1</>, ASPD<@ba.vup>+{attack_speed}</>, Splash area <@ba.vup>slightly expand</>",
+			"Immediately deal <@ba.vup>{atk_scale_aoe:0%}</> as Arts damage to all enemies in Attack Range, attacking target <@ba.vup>+1</>, ASPD<@ba.vup>+{attack_speed}</>, Splash area <@ba.vup>slightly expand</>",
+			"Immediately deal <@ba.vup>{atk_scale_aoe:0%}</> as Arts damage to all enemies in Attack Range, attacking target <@ba.vup>+1</>, ASPD<@ba.vup>+{attack_speed}</>, Splash area <@ba.vup>slightly expand</>"
+		]
+	},
+	"skchr_acsupo_1": {
+		"name": "双声",
+		"desc": [
+			"ATK<@ba.vup>+{atk:0%}</>, attack 1 addition target",
+			"ATK<@ba.vup>+{atk:0%}</>, attack 1 addition target",
+			"ATK<@ba.vup>+{atk:0%}</>, attack 1 addition target",
+			"ATK<@ba.vup>+{atk:0%}</>, attack 1 addition target",
+			"ATK<@ba.vup>+{atk:0%}</>, attack 1 addition target",
+			"ATK<@ba.vup>+{atk:0%}</>, attack 1 addition target",
+			"ATK<@ba.vup>+{atk:0%}</>, attack 1 addition target",
+			"ATK<@ba.vup>+{atk:0%}</>, attack 1 addition target",
+			"ATK<@ba.vup>+{atk:0%}</>, attack 1 addition target",
+			"ATK<@ba.vup>+{atk:0%}</>, attack 1 addition target"
+		]
+	},
+	"skchr_acsupo_2": {
+		"name": "三形",
+		"desc": [
+			"Attack Interval <@ba.vup>slightly reduce</>, attack up to 3 target simultaneous, attack <$ba.sluggish>slow</> target for <@ba.vup>{attack@sluggish}</>seconds",
+			"Attack Interval <@ba.vup>slightly reduce</>, attack up to 3 target simultaneous, attack <$ba.sluggish>slow</> target for <@ba.vup>{attack@sluggish}</>seconds",
+			"Attack Interval <@ba.vup>slightly reduce</>, attack up to 3 target simultaneous, attack <$ba.sluggish>slow</> target for <@ba.vup>{attack@sluggish}</>seconds",
+			"Attack Interval <@ba.vup>slightly reduce</>, attack up to 3 target simultaneous, attack <$ba.sluggish>slow</> target for <@ba.vup>{attack@sluggish}</>seconds",
+			"Attack Interval <@ba.vup>slightly reduce</>, attack up to 3 target simultaneous, attack <$ba.sluggish>slow</> target for <@ba.vup>{attack@sluggish}</>seconds",
+			"Attack Interval <@ba.vup>slightly reduce</>, attack up to 3 target simultaneous, attack <$ba.sluggish>slow</> target for <@ba.vup>{attack@sluggish}</>seconds",
+			"Attack Interval <@ba.vup>reduce</>, attack up to 3 target simultaneous, attack <$ba.sluggish>slow</> target for <@ba.vup>{attack@sluggish}</>seconds",
+			"Attack Interval <@ba.vup>reduce</>, attack up to 3 target simultaneous, attack <$ba.sluggish>slow</> target for <@ba.vup>{attack@sluggish}</>seconds",
+			"Attack Interval <@ba.vup>reduce</>, attack up to 3 target simultaneous, attack <$ba.sluggish>slow</> target for <@ba.vup>{attack@sluggish}</>seconds",
+			"Attack Interval <@ba.vup>greatly reduce</>, attack up to 3 target simultaneous, attack <$ba.sluggish>slow</> target for <@ba.vup>{attack@sluggish}</>seconds"
+		]
+	},
+	"skchr_acsupo_3": {
+		"name": "信号跃动",
+		"desc": [
+			"Attack Range expand, ATK<@ba.vup>+{acsupo_s_3.atk:0%}</>, the effect of the First talent increase to <@ba.vup>{talent_scale:0.0}</>x, all enemies in Attack Range are inflicted <@ba.vup>10%</> <$ba.fragile>Fragile</> and <@ba.vup>10%</> <$ba.weaken>Enfeeble</>",
+			"Attack Range expand, ATK<@ba.vup>+{acsupo_s_3.atk:0%}</>, the effect of the First talent increase to <@ba.vup>{talent_scale:0.0}</>x, all enemies in Attack Range are inflicted <@ba.vup>10%</> <$ba.fragile>Fragile</> and <@ba.vup>10%</> <$ba.weaken>Enfeeble</>",
+			"Attack Range expand, ATK<@ba.vup>+{acsupo_s_3.atk:0%}</>, the effect of the First talent increase to <@ba.vup>{talent_scale:0.0}</>x, all enemies in Attack Range are inflicted <@ba.vup>10%</> <$ba.fragile>Fragile</> and <@ba.vup>10%</> <$ba.weaken>Enfeeble</>",
+			"Attack Range expand, ATK<@ba.vup>+{acsupo_s_3.atk:0%}</>, the effect of the First talent increase to <@ba.vup>{talent_scale:0.0}</>x, all enemies in Attack Range are inflicted <@ba.vup>10%</> <$ba.fragile>Fragile</> and <@ba.vup>10%</> <$ba.weaken>Enfeeble</>",
+			"Attack Range expand, ATK<@ba.vup>+{acsupo_s_3.atk:0%}</>, the effect of the First talent increase to <@ba.vup>{talent_scale:0.0}</>x, all enemies in Attack Range are inflicted <@ba.vup>10%</> <$ba.fragile>Fragile</> and <@ba.vup>10%</> <$ba.weaken>Enfeeble</>",
+			"Attack Range expand, ATK<@ba.vup>+{acsupo_s_3.atk:0%}</>, the effect of the First talent increase to <@ba.vup>{talent_scale:0.0}</>x, all enemies in Attack Range are inflicted <@ba.vup>10%</> <$ba.fragile>Fragile</> and <@ba.vup>10%</> <$ba.weaken>Enfeeble</>",
+			"Attack Range expand, ATK<@ba.vup>+{acsupo_s_3.atk:0%}</>, the effect of the First talent increase to <@ba.vup>{talent_scale:0.0}</>x, all enemies in Attack Range are inflicted <@ba.vup>20%</> <$ba.fragile>Fragile</> and <@ba.vup>20%</> <$ba.weaken>Enfeeble</>",
+			"Attack Range expand, ATK<@ba.vup>+{acsupo_s_3.atk:0%}</>, the effect of the First talent increase to <@ba.vup>{talent_scale:0.0}</>x, all enemies in Attack Range are inflicted <@ba.vup>20%</> <$ba.fragile>Fragile</> and <@ba.vup>20%</> <$ba.weaken>Enfeeble</>",
+			"Attack Range expand, ATK<@ba.vup>+{acsupo_s_3.atk:0%}</>, the effect of the First talent increase to <@ba.vup>{talent_scale:0.0}</>x, all enemies in Attack Range are inflicted <@ba.vup>20%</> <$ba.fragile>Fragile</> and <@ba.vup>20%</> <$ba.weaken>Enfeeble</>",
+			"Attack Range expand, ATK<@ba.vup>+{acsupo_s_3.atk:0%}</>, the effect of the First talent increase to <@ba.vup>{talent_scale:0.0}</>x, all enemies in Attack Range are inflicted <@ba.vup>25%</> <$ba.fragile>Fragile</> and <@ba.vup>25%</> <$ba.weaken>Enfeeble</>"
+		]
+	},
+	"skchr_acspec_1": {
+		"name": "物理的服从",
+		"desc": [
+			"Talent trigger chance increase to <@ba.vup>{attack@prob:0%}</>, gain <@ba.vup>{prob:0%}</> Physical dodge",
+			"Talent trigger chance increase to <@ba.vup>{attack@prob:0%}</>, gain <@ba.vup>{prob:0%}</> Physical dodge",
+			"Talent trigger chance increase to <@ba.vup>{attack@prob:0%}</>, gain <@ba.vup>{prob:0%}</> Physical dodge",
+			"Talent trigger chance increase to <@ba.vup>{attack@prob:0%}</>, gain <@ba.vup>{prob:0%}</> Physical dodge",
+			"Talent trigger chance increase to <@ba.vup>{attack@prob:0%}</>, gain <@ba.vup>{prob:0%}</> Physical dodge",
+			"Talent trigger chance increase to <@ba.vup>{attack@prob:0%}</>, gain <@ba.vup>{prob:0%}</> Physical dodge",
+			"Talent trigger chance increase to <@ba.vup>{attack@prob:0%}</>, gain <@ba.vup>{prob:0%}</> Physical dodge",
+			"Talent trigger chance increase to <@ba.vup>{attack@prob:0%}</>, gain <@ba.vup>{prob:0%}</> Physical dodge",
+			"Talent trigger chance increase to <@ba.vup>{attack@prob:0%}</>, gain <@ba.vup>{prob:0%}</> Physical dodge",
+			"Talent trigger chance increase to <@ba.vup>{attack@prob:0%}</>, gain <@ba.vup>{prob:0%}</> Physical dodge"
+		]
+	},
+	"skchr_acspec_2": {
+		"name": "战争的恭顺",
+		"desc": [
+			"ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>",
+			"ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>",
+			"ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>",
+			"ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>",
+			"ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>",
+			"ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>",
+			"ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>",
+			"ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>",
+			"ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>",
+			"ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>"
+		]
+	},
+	"skchr_acspec_3": {
+		"name": "空间的归依",
+		"desc": [
+			"Immediately deal <@ba.vup>{atk_scale:0%}</> ATK as Physical damage, activate space Arts to pull unblocked enemies with <@ba.vup>small</> force and inflict <$ba.sluggish>slow</> for <@ba.vup>{sluggish}</> seconds",
+			"Immediately deal <@ba.vup>{atk_scale:0%}</> ATK as Physical damage, activate space Arts to pull unblocked enemies with <@ba.vup>small</> force and inflict <$ba.sluggish>slow</> for <@ba.vup>{sluggish}</> seconds",
+			"Immediately deal <@ba.vup>{atk_scale:0%}</> ATK as Physical damage, activate space Arts to pull unblocked enemies with <@ba.vup>small</> force and inflict <$ba.sluggish>slow</> for <@ba.vup>{sluggish}</> seconds",
+			"Immediately deal <@ba.vup>{atk_scale:0%}</> ATK as Physical damage, activate space Arts to pull unblocked enemies with <@ba.vup>small</> force and inflict <$ba.sluggish>slow</> for <@ba.vup>{sluggish}</> seconds",
+			"Immediately deal <@ba.vup>{atk_scale:0%}</> ATK as Physical damage, activate space Arts to pull unblocked enemies with <@ba.vup>small</> force and inflict <$ba.sluggish>slow</> for <@ba.vup>{sluggish}</> seconds",
+			"Immediately deal <@ba.vup>{atk_scale:0%}</> ATK as Physical damage, activate space Arts to pull unblocked enemies with <@ba.vup>small</> force and inflict <$ba.sluggish>slow</> for <@ba.vup>{sluggish}</> seconds",
+			"Immediately deal <@ba.vup>{atk_scale:0%}</> ATK as Physical damage, activate space Arts to pull unblocked enemies with <@ba.vup>small</> force and inflict <$ba.sluggish>slow</> for <@ba.vup>{sluggish}</> seconds",
+			"Immediately deal <@ba.vup>{atk_scale:0%}</> ATK as Physical damage, activate space Arts to pull unblocked enemies with <@ba.vup>small</> force and inflict <$ba.sluggish>slow</> for <@ba.vup>{sluggish}</> seconds",
+			"Immediately deal <@ba.vup>{atk_scale:0%}</> ATK as Physical damage, activate space Arts to pull unblocked enemies with <@ba.vup>small</> force and inflict <$ba.sluggish>slow</> for <@ba.vup>{sluggish}</> seconds",
+			"Immediately deal <@ba.vup>{atk_scale:0%}</> ATK as Physical damage, activate space Arts to pull unblocked enemies with <@ba.vup>small</> force and inflict <$ba.sluggish>slow</> for <@ba.vup>{sluggish}</> seconds"
+		]
+	},
+	"skchr_acmedc_1": {
+		"name": "慨赠",
+		"desc": [
+			"ATK<@ba.vup>+{atk:0%}</>, each heal has <@ba.vup>{attack@prob:0%}</> chance to heal 1 addition time",
+			"ATK<@ba.vup>+{atk:0%}</>, each heal has <@ba.vup>{attack@prob:0%}</> chance to heal 1 addition time",
+			"ATK<@ba.vup>+{atk:0%}</>, each heal has <@ba.vup>{attack@prob:0%}</> chance to heal 1 addition time",
+			"ATK<@ba.vup>+{atk:0%}</>, each heal has <@ba.vup>{attack@prob:0%}</> chance to heal 1 addition time",
+			"ATK<@ba.vup>+{atk:0%}</>, each heal has <@ba.vup>{attack@prob:0%}</> chance to heal 1 addition time",
+			"ATK<@ba.vup>+{atk:0%}</>, each heal has <@ba.vup>{attack@prob:0%}</> chance to heal 1 addition time",
+			"ATK<@ba.vup>+{atk:0%}</>, each heal has <@ba.vup>{attack@prob:0%}</> chance to heal 1 addition time",
+			"ATK<@ba.vup>+{atk:0%}</>, each heal has <@ba.vup>{attack@prob:0%}</> chance to heal 1 addition time",
+			"ATK<@ba.vup>+{atk:0%}</>, each heal has <@ba.vup>{attack@prob:0%}</> chance to heal 1 addition time",
+			"ATK<@ba.vup>+{atk:0%}</>, each heal has <@ba.vup>{attack@prob:0%}</> chance to heal 1 addition time"
+		]
+	},
+	"skchr_acmedc_2": {
+		"name": "宛如天启",
+		"desc": [
+			"Attack Range<@ba.vup>+1</>, can heal <@ba.vup>{attack@max_target}</> targets, all [Medic] operators ATK<@ba.vup>+{attack@atk:0%}</>",
+			"Attack Range<@ba.vup>+1</>, can heal <@ba.vup>{attack@max_target}</> targets, all [Medic] operators ATK<@ba.vup>+{attack@atk:0%}</>",
+			"Attack Range<@ba.vup>+1</>, can heal <@ba.vup>{attack@max_target}</> targets, all [Medic] operators ATK<@ba.vup>+{attack@atk:0%}</>",
+			"Attack Range<@ba.vup>+1</>, can heal <@ba.vup>{attack@max_target}</> targets, all [Medic] operators ATK<@ba.vup>+{attack@atk:0%}</>",
+			"Attack Range<@ba.vup>+1</>, can heal <@ba.vup>{attack@max_target}</> targets, all [Medic] operators ATK<@ba.vup>+{attack@atk:0%}</>",
+			"Attack Range<@ba.vup>+1</>, can heal <@ba.vup>{attack@max_target}</> targets, all [Medic] operators ATK<@ba.vup>+{attack@atk:0%}</>",
+			"Attack Range<@ba.vup>+1</>, can heal <@ba.vup>{attack@max_target}</> targets, all [Medic] operators ATK<@ba.vup>+{attack@atk:0%}</>",
+			"Attack Range<@ba.vup>+1</>, can heal <@ba.vup>{attack@max_target}</> targets, all [Medic] operators ATK<@ba.vup>+{attack@atk:0%}</>",
+			"Attack Range<@ba.vup>+1</>, can heal <@ba.vup>{attack@max_target}</> targets, all [Medic] operators ATK<@ba.vup>+{attack@atk:0%}</>",
+			"Attack Range<@ba.vup>+1</>, can heal <@ba.vup>{attack@max_target}</> targets, all [Medic] operators ATK<@ba.vup>+{attack@atk:0%}</>"
+		]
+	},
+	"skchr_acmedc_3": {
+		"name": "恳切福音",
+		"desc": [
+			"Attack Range<@ba.vup>+2</>, ATK<@ba.vup>+{atk:0%}</>, can heal <@ba.vup>{attack@max_target}</> targets, each heal also heal 1 addition target or 1 adjacent unit, healing amount is <@ba.vup>{attack@addition_heal_scale:0%}</> of primary target amount. Unit lower than half Max HP recieve healing <@ba.vup>{heal_scale:0%}</> of original amount",
+			"Attack Range<@ba.vup>+2</>, ATK<@ba.vup>+{atk:0%}</>, can heal <@ba.vup>{attack@max_target}</> targets, each heal also heal 1 addition target or 1 adjacent unit, healing amount is <@ba.vup>{attack@addition_heal_scale:0%}</> of primary target amount. Unit lower than half Max HP recieve healing <@ba.vup>{heal_scale:0%}</> of original amount",
+			"Attack Range<@ba.vup>+2</>, ATK<@ba.vup>+{atk:0%}</>, can heal <@ba.vup>{attack@max_target}</> targets, each heal also heal 1 addition target or 1 adjacent unit, healing amount is <@ba.vup>{attack@addition_heal_scale:0%}</> of primary target amount. Unit lower than half Max HP recieve healing <@ba.vup>{heal_scale:0%}</> of original amount",
+			"Attack Range<@ba.vup>+2</>, ATK<@ba.vup>+{atk:0%}</>, can heal <@ba.vup>{attack@max_target}</> targets, each heal also heal 1 addition target or 1 adjacent unit, healing amount is <@ba.vup>{attack@addition_heal_scale:0%}</> of primary target amount. Unit lower than half Max HP recieve healing <@ba.vup>{heal_scale:0%}</> of original amount",
+			"Attack Range<@ba.vup>+2</>, ATK<@ba.vup>+{atk:0%}</>, can heal <@ba.vup>{attack@max_target}</> targets, each heal also heal 1 addition target or 1 adjacent unit, healing amount is <@ba.vup>{attack@addition_heal_scale:0%}</> of primary target amount. Unit lower than half Max HP recieve healing <@ba.vup>{heal_scale:0%}</> of original amount",
+			"Attack Range<@ba.vup>+2</>, ATK<@ba.vup>+{atk:0%}</>, can heal <@ba.vup>{attack@max_target}</> targets, each heal also heal 1 addition target or 1 adjacent unit, healing amount is <@ba.vup>{attack@addition_heal_scale:0%}</> of primary target amount. Unit lower than half Max HP recieve healing <@ba.vup>{heal_scale:0%}</> of original amount",
+			"Attack Range<@ba.vup>+2</>, ATK<@ba.vup>+{atk:0%}</>, can heal <@ba.vup>{attack@max_target}</> targets, each heal also heal 1 addition target or 1 adjacent unit, healing amount is <@ba.vup>{attack@addition_heal_scale:0%}</> of primary target amount. Unit lower than half Max HP recieve healing <@ba.vup>{heal_scale:0%}</> of original amount",
+			"Attack Range<@ba.vup>+2</>, ATK<@ba.vup>+{atk:0%}</>, can heal <@ba.vup>{attack@max_target}</> targets, each heal also heal 1 addition target or 1 adjacent unit, healing amount is <@ba.vup>{attack@addition_heal_scale:0%}</> of primary target amount. Unit lower than half Max HP recieve healing <@ba.vup>{heal_scale:0%}</> of original amount",
+			"Attack Range<@ba.vup>+2</>, ATK<@ba.vup>+{atk:0%}</>, can heal <@ba.vup>{attack@max_target}</> targets, each heal also heal 1 addition target or 1 adjacent unit, healing amount is <@ba.vup>{attack@addition_heal_scale:0%}</> of primary target amount. Unit lower than half Max HP recieve healing <@ba.vup>{heal_scale:0%}</> of original amount",
+			"Attack Range<@ba.vup>+2</>, ATK<@ba.vup>+{atk:0%}</>, can heal <@ba.vup>{attack@max_target}</> targets, each heal also heal 1 addition target or 1 adjacent unit, healing amount is <@ba.vup>{attack@addition_heal_scale:0%}</> of primary target amount. Unit lower than half Max HP recieve healing <@ba.vup>{heal_scale:0%}</> of original amount"
+		]
+	},
+	"skchr_acfend_1": {
+		"name": "结构稳定",
+		"desc": [
+			"Max HP<@ba.vup>+{max_hp:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"Max HP<@ba.vup>+{max_hp:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"Max HP<@ba.vup>+{max_hp:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"Max HP<@ba.vup>+{max_hp:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"Max HP<@ba.vup>+{max_hp:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"Max HP<@ba.vup>+{max_hp:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"Max HP<@ba.vup>+{max_hp:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"Max HP<@ba.vup>+{max_hp:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"Max HP<@ba.vup>+{max_hp:0%}</>, DEF<@ba.vup>+{def:0%}</>",
+			"Max HP<@ba.vup>+{max_hp:0%}</>, DEF<@ba.vup>+{def:0%}</>"
+		]
+	},
+	"skchr_acfend_2": {
+		"name": "不变性原理",
+		"desc": [
+			"DEF <@ba.vup>+{def:0%}</>, the effect of the Second talent increase to <@ba.vup>{talent_mult}</>x",
+			"DEF <@ba.vup>+{def:0%}</>, the effect of the Second talent increase to <@ba.vup>{talent_mult}</>x",
+			"DEF <@ba.vup>+{def:0%}</>, the effect of the Second talent increase to <@ba.vup>{talent_mult}</>x",
+			"DEF <@ba.vup>+{def:0%}</>, the effect of the Second talent increase to <@ba.vup>{talent_mult}</>x",
+			"DEF <@ba.vup>+{def:0%}</>, the effect of the Second talent increase to <@ba.vup>{talent_mult}</>x",
+			"DEF <@ba.vup>+{def:0%}</>, the effect of the Second talent increase to <@ba.vup>{talent_mult}</>x",
+			"DEF <@ba.vup>+{def:0%}</>, the effect of the Second talent increase to <@ba.vup>{talent_mult}</>x",
+			"DEF <@ba.vup>+{def:0%}</>, the effect of the Second talent increase to <@ba.vup>{talent_mult}</>x",
+			"DEF <@ba.vup>+{def:0%}</>, the effect of the Second talent increase to <@ba.vup>{talent_mult}</>x",
+			"DEF <@ba.vup>+{def:0%}</>, the effect of the Second talent increase to <@ba.vup>{talent_mult}</>x"
+		]
+	},
+	"skchr_acfend_3": {
+		"name": "应力倒置",
+		"desc": [
+			"DEF<@ba.vup>+{def:0%}</>, Block count<@ba.vup>+1</>, deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to blocked enemies every second",
+			"DEF<@ba.vup>+{def:0%}</>, Block count<@ba.vup>+1</>, deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to blocked enemies every second",
+			"DEF<@ba.vup>+{def:0%}</>, Block count<@ba.vup>+1</>, deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to blocked enemies every second",
+			"DEF<@ba.vup>+{def:0%}</>, Block count<@ba.vup>+1</>, deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to blocked enemies every second",
+			"DEF<@ba.vup>+{def:0%}</>, Block count<@ba.vup>+1</>, deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to blocked enemies every second",
+			"DEF<@ba.vup>+{def:0%}</>, Block count<@ba.vup>+1</>, deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to blocked enemies every second",
+			"DEF<@ba.vup>+{def:0%}</>, Block count<@ba.vup>+1</>, deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to blocked enemies every second",
+			"DEF<@ba.vup>+{def:0%}</>, Block count<@ba.vup>+1</>, deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to blocked enemies every second",
+			"DEF<@ba.vup>+{def:0%}</>, Block count<@ba.vup>+1</>, deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to blocked enemies every second",
+			"DEF<@ba.vup>+{def:0%}</>, Block count<@ba.vup>+1</>, deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to blocked enemies every second"
+		]
+	},
+	"skchr_acguad_1": {
+		"name": "快刀",
+		"desc": [
+			"ATK<@ba.vup>+{atk:0%}</>, has 20% chance to attack twice",
+			"ATK<@ba.vup>+{atk:0%}</>, has 20% chance to attack twice",
+			"ATK<@ba.vup>+{atk:0%}</>, has 20% chance to attack twice",
+			"ATK<@ba.vup>+{atk:0%}</>, has 20% chance to attack twice",
+			"ATK<@ba.vup>+{atk:0%}</>, has 20% chance to attack twice",
+			"ATK<@ba.vup>+{atk:0%}</>, has 20% chance to attack twice",
+			"ATK<@ba.vup>+{atk:0%}</>, has 20% chance to attack twice",
+			"ATK<@ba.vup>+{atk:0%}</>, has 20% chance to attack twice",
+			"ATK<@ba.vup>+{atk:0%}</>, has 20% chance to attack twice",
+			"ATK<@ba.vup>+{atk:0%}</>, has 20% chance to attack twice"
+		]
+	},
+	"skchr_acguad_2": {
+		"name": "亮剑",
+		"desc": [
+			"DEF <@ba.vdown>reduce to 0</>, Max HP<@ba.vup>+{max_hp:0%}</>, each Attack's ATK increases to<@ba.vup>{attack@atk_scale:0%}</>",
+			"DEF <@ba.vdown>reduce to 0</>, Max HP<@ba.vup>+{max_hp:0%}</>, each Attack's ATK increases to<@ba.vup>{attack@atk_scale:0%}</>",
+			"DEF <@ba.vdown>reduce to 0</>, Max HP<@ba.vup>+{max_hp:0%}</>, each Attack's ATK increases to<@ba.vup>{attack@atk_scale:0%}</>",
+			"DEF <@ba.vdown>reduce to 0</>, Max HP<@ba.vup>+{max_hp:0%}</>, each Attack's ATK increases to<@ba.vup>{attack@atk_scale:0%}</>",
+			"DEF <@ba.vdown>reduce to 0</>, Max HP<@ba.vup>+{max_hp:0%}</>, each Attack's ATK increases to<@ba.vup>{attack@atk_scale:0%}</>",
+			"DEF <@ba.vdown>reduce to 0</>, Max HP<@ba.vup>+{max_hp:0%}</>, each Attack's ATK increases to<@ba.vup>{attack@atk_scale:0%}</>",
+			"DEF <@ba.vdown>reduce to 0</>, Max HP<@ba.vup>+{max_hp:0%}</>, each Attack's ATK increases to<@ba.vup>{attack@atk_scale:0%}</>",
+			"DEF <@ba.vdown>reduce to 0</>, Max HP<@ba.vup>+{max_hp:0%}</>, each Attack's ATK increases to<@ba.vup>{attack@atk_scale:0%}</>",
+			"DEF <@ba.vdown>reduce to 0</>, Max HP<@ba.vup>+{max_hp:0%}</>, each Attack's ATK increases to<@ba.vup>{attack@atk_scale:0%}</>",
+			"DEF <@ba.vdown>reduce to 0</>, Max HP<@ba.vup>+{max_hp:0%}</>, each Attack's ATK increases to<@ba.vup>{attack@atk_scale:0%}</>"
+		]
+	},
+	"skchr_acguad_3": {
+		"name": "力战不竭",
+		"desc": [
+			"ATK<@ba.vup>+{atk:0%}</>；each attack gain stackable ATK<@ba.vup>+{atk_each_stack:0%}</> buff (up to 8 times), reset after switching targets, HP will not drop below 1 during skill duration",
+			"ATK<@ba.vup>+{atk:0%}</>；each attack gain stackable ATK<@ba.vup>+{atk_each_stack:0%}</> buff (up to 8 times), reset after switching targets, HP will not drop below 1 during skill duration",
+			"ATK<@ba.vup>+{atk:0%}</>；each attack gain stackable ATK<@ba.vup>+{atk_each_stack:0%}</> buff (up to 8 times), reset after switching targets, HP will not drop below 1 during skill duration",
+			"ATK<@ba.vup>+{atk:0%}</>；each attack gain stackable ATK<@ba.vup>+{atk_each_stack:0%}</> buff (up to 8 times), reset after switching targets, HP will not drop below 1 during skill duration",
+			"ATK<@ba.vup>+{atk:0%}</>；each attack gain stackable ATK<@ba.vup>+{atk_each_stack:0%}</> buff (up to 8 times), reset after switching targets, HP will not drop below 1 during skill duration",
+			"ATK<@ba.vup>+{atk:0%}</>；each attack gain stackable ATK<@ba.vup>+{atk_each_stack:0%}</> buff (up to 8 times), reset after switching targets, HP will not drop below 1 during skill duration",
+			"ATK<@ba.vup>+{atk:0%}</>；each attack gain stackable ATK<@ba.vup>+{atk_each_stack:0%}</> buff (up to 8 times), reset after switching targets, HP will not drop below 1 during skill duration",
+			"ATK<@ba.vup>+{atk:0%}</>；each attack gain stackable ATK<@ba.vup>+{atk_each_stack:0%}</> buff (up to 8 times), reset after switching targets, HP will not drop below 1 during skill duration",
+			"ATK<@ba.vup>+{atk:0%}</>；each attack gain stackable ATK<@ba.vup>+{atk_each_stack:0%}</> buff (up to 8 times), reset after switching targets, HP will not drop below 1 during skill duration",
+			"ATK<@ba.vup>+{atk:0%}</>；each attack gain stackable ATK<@ba.vup>+{atk_each_stack:0%}</> buff (up to 8 times), reset after switching targets, HP will not drop below 1 during skill duration"
+		]
+	}
 }

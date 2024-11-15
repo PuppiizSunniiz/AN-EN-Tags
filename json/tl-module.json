@@ -1212,5 +1212,149 @@
                 "upgradeDescription": "All allies' ASPD +8 <@ba.talpu>(+1)</>; In <@ba.kw>[Integrated Strategies]</>, while enemies being shifted or in <$ba.levitate>Levitate</> state, receive 60% of ATK as Arts damage every 0.5 second. When skill is active, Angelina <$ba.levitate>Levitate</> enemies for 3 seconds, when attacking <$ba.levitate>Levitated</> enemies, refresh <$ba.levitate>Levitate</> effect duration"
             }
         ]
+    ],
+    "uniequip_002_acnipe": [
+        [
+            {
+                "name": "风坠",
+                "CN": "攻击时有25%的概率攻击力提升至180%",
+                "mod": "攻击时有25%的概率攻击力提升至186%",
+                "upgradeDescription": "When attacking, there 25% chance to increase ATK to 186%"
+            }
+        ],
+        [
+            {
+                "name": "风坠",
+                "CN": "攻击时有25%的概率攻击力提升至180%",
+                "mod": "攻击时有25%的概率攻击力提升至190%",
+                "upgradeDescription": "When attacking, there 25% chance to increase ATK to 190%"
+            }
+        ]
+    ],
+    "uniequip_002_acpion": [
+        [
+            {
+                "name": "无垠之心",
+                "CN": "部署后第2次开启技能之前，技力自然回复速度+0.6/秒",
+                "mod": "部署后第2次开启技能之前，技力自然回复速度+0.8/秒",
+                "upgradeDescription": "SP recovery rate +0.8/sec after deployment and before 2nd skill use"
+            }
+        ],
+        [
+            {
+                "name": "无垠之心",
+                "CN": "部署后第2次开启技能之前，技力自然回复速度+0.6/秒",
+                "mod": "部署后第2次开启技能之前，技力自然回复速度+1/秒",
+                "upgradeDescription": "SP recovery rate +1/sec after deployment and before 2nd skill use"
+            }
+        ]
+    ],
+    "uniequip_002_accast": [
+        [
+            {
+                "name": "“授我所授”",
+                "CN": "自身及相邻四格的【术师】干员攻击力+10%",
+                "mod": "自身及相邻四格的【术师】干员攻击力+15%",
+                "upgradeDescription": "Self and [Caster] operators in the 4 adjacent tiles ATK +15%"
+            }
+        ],
+        [
+            {
+                "name": "“授我所授”",
+                "CN": "自身及相邻四格的【术师】干员攻击力+10%",
+                "mod": "自身及相邻四格的【术师】干员攻击力+20%",
+                "upgradeDescription": "Self and [Caster] operators in the 4 adjacent tiles ATK +20%"
+            }
+        ]
+    ],
+    "uniequip_002_acsupo": [
+        [
+            {
+                "name": "同调",
+                "CN": "攻击速度+15，相邻的干员攻击速度+10",
+                "mod": "攻击速度+18，相邻的干员攻击速度+11",
+                "upgradeDescription": "ASPD+18, adjacent operators ASPD +11"
+            }
+        ],
+        [
+            {
+                "name": "同调",
+                "CN": "攻击速度+15，相邻的干员攻击速度+10",
+                "mod": "攻击速度+20，相邻的干员攻击速度+12",
+                "upgradeDescription": "ASPD+20, adjacent operators ASPD +12"
+            }
+        ]
+    ],
+    "uniequip_002_acspec": [
+        [
+            {
+                "name": "二象命末",
+                "CN": "攻击时有10%概率造成二连击",
+                "mod": "攻击力+3%，攻击时有13%概率造成二连击",
+                "upgradeDescription": "ATK+3%, Attack has 13% to hit twice"
+            }
+        ],
+        [
+            {
+                "name": "二象命末",
+                "CN": "攻击时有10%概率造成二连击",
+                "mod": "攻击力+5%，攻击时有15%概率造成二连击",
+                "upgradeDescription": "ATK+5%, Attack has 15% to hit twice"
+            }
+        ]
+    ],
+    "uniequip_002_acmedc": [
+        [
+            {
+                "name": "超脱",
+                "CN": "攻击范围内的友方干员被击倒时获得5点技力",
+                "mod": "攻击范围内的友方干员被击倒时获得7点技力",
+                "upgradeDescription": "When ally in Attack Range defeated, gain +7 SP"
+            }
+        ],
+        [
+            {
+                "name": "超脱",
+                "CN": "攻击范围内的友方干员被击倒时获得5点技力",
+                "mod": "攻击范围内的友方干员被击倒时获得8点技力",
+                "upgradeDescription": "When ally in Attack Range defeated, gain +8 SP"
+            }
+        ]
+    ],
+    "uniequip_002_acfend": [
+        [
+            {
+                "name": "精研材料",
+                "CN": "防御力+10%，生命值低于50%时防御力额外+10%",
+                "mod": "防御力+10%，生命值低于50%时防御力额外+15%",
+                "upgradeDescription": "DEF+10%, when HP below 50%, gain another DEF+15%"
+            }
+        ],
+        [
+            {
+                "name": "精研材料",
+                "CN": "防御力+10%，生命值低于50%时防御力额外+10%",
+                "mod": "防御力+10%，生命值低于50%时防御力额外+20%",
+                "upgradeDescription": "DEF+10%, when HP below 50%, gain another DEF+20%"
+            }
+        ]
+    ],
+    "uniequip_002_acguad": [
+        [
+            {
+                "name": "隐匿刀刃",
+                "CN": "攻击力+15%，获得30%的物理闪避",
+                "mod": "攻击力+18%，获得33%的物理闪避",
+                "upgradeDescription": "ATK+18%, gain 33% Physical dodge"
+            }
+        ],
+        [
+            {
+                "name": "隐匿刀刃",
+                "CN": "攻击力+15%，获得30%的物理闪避",
+                "mod": "攻击力+20%，获得35%的物理闪避",
+                "upgradeDescription": "ATK+20%, gain 35% Physical dodge"
+            }
+        ]
     ]
 }

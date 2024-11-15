@@ -477,11 +477,8 @@ def IS_boss(stage_id : str, IS : str) -> str:
                                 },
                         "IS#3":{
                                     "ro2_b_1"   : 3,
-                                    "ro2_b_1_b" : 3,
                                     "ro2_b_2"   : 3,
-                                    "ro2_b_2_b" : 3,
                                     "ro2_b_3"   : 3,
-                                    "ro2_b_3_b" : 3,
                                     "ro2_b_4"   : 5,
                                     "ro2_b_5"   : 5,
                                     "ro2_b_6"   : 6,
@@ -492,37 +489,24 @@ def IS_boss(stage_id : str, IS : str) -> str:
                                 },
                         "IS#4":{
                                     "ro3_b_1"   : 3,
-                                    "ro3_b_1_b" : 3 ,
                                     "ro3_b_2"   : 3,
-                                    "ro3_b_2_b" : 3 ,
                                     "ro3_b_3"   : 3,
-                                    "ro3_b_3_b" : 3 ,
                                     "ro3_b_4"   : 5,
-                                    "ro3_b_4_b" : 5 ,
                                     "ro3_b_5"   : 5,
-                                    "ro3_b_5_b" : 5 ,
                                     "ro3_b_6"   : 6,
-                                    "ro3_b_6_b" : 6 ,
                                     "ro3_b_7"   : 6,
-                                    "ro3_b_7_b" : 6 
                                 },
                         "IS#5":{
                                     "ro4_b_1"    : 3,
-                                    "ro4_b_1_b"  : 3,
-                                    "ro4_b_1_c"  : 3,
                                     "ro4_b_2"    : 3,
-                                    "ro4_b_2_b"  : 3,
-                                    "ro4_b_2_c"  : 3,
                                     "ro4_b_3"    : 3,
-                                    "ro4_b_3_b"  : 3,
-                                    "ro4_b_3_c"  : 3,
                                     "ro4_b_4"    : 5,
                                     "ro4_b_5"    : 5,
                                     "ro4_b_6"    : 6,
                                     "ro4_b_7"    : 6
                                 }
                     }
-    return IS_boss_dict[IS].get(stage_id,"???")
+    return IS_boss_dict[IS].get(re.search(r'(ro[0-9]{0,2}_._[0-9]{1,2})(_[a-z]{1}|)',stage_id).group(1),"???") # cut variant _b _c
 
 def get_stage_gamemode(stage_event : str) -> str :
         if stage_event.find("main_") != -1 :
@@ -539,7 +523,7 @@ def get_stage_gamemode(stage_event : str) -> str :
         elif stage_event.find("IS#") != -1 :
             return "is"
         
-        elif re.search(r"act[0-9]{1,2}(lock|vecb)",stage_event) or stage_event in ["act42d0"]: # act42d0 = DOS
+        elif re.search(r"act[0-9]{1,2}(lock|vecb|vautochess)",stage_event) or stage_event in ["act42d0"]: # act42d0 = DOS
             return "exp"
         
         elif stage_event.find("bossrush") != -1 :
@@ -680,7 +664,7 @@ def CC_stage_collect(Fillerjson, json_CC, json_CC2, json_activityEN) :
             stage_name       = main_stage[stage]["name"]
             stage_id         = main_stage[stage]["stageId"]
             level_id         = main_stage[stage]["levelId"]
-            stage_zone          = main_stage[stage]["areaId"]
+            stage_zone       = main_stage[stage]["areaId"]
             stage_filepath   = "json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/"+level_id.lower()+".json"
             
             stage_counter += Stage_Lister("act42d0",stage_code,stage_name,stage_id,level_id,stage_zone,stage_filepath)

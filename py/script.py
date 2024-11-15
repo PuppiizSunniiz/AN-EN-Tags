@@ -121,6 +121,11 @@ DB = load_json()
 # Old Script
 ################################################################################################################################################################################################################################################
 def script_result(text):
+    '''
+        output result
+            str     >   text
+            dict    >   json
+    '''
     if isinstance(text,str):
         with open("py/script.txt","w") as filepath:
             filepath.write(text)
@@ -130,6 +135,9 @@ def script_result(text):
     print("Script Completed")
 
 def skin_lister() :
+    '''
+        list all skin name
+    '''
     skin_list = []
 
     for skin in DB["json_skin"]["charSkins"]:
@@ -146,6 +154,9 @@ def skin_lister() :
     script_result("\n".join(skin_list))
 
 def skill_icon_lister():
+    '''
+        list all skill id
+    '''
     skill_list = []
 
     for skill in DB["json_skill"]:
@@ -167,6 +178,9 @@ def skill_icon_lister():
     script_result("\n".join(skill_list))
 
 def ops_e2_talent():
+    '''
+        fetch e2 talent both p1 and talent potential
+    '''
     new_mod = [["Ines"]]
 
     #print(DB["json_character"].keys())
@@ -187,6 +201,9 @@ def term_kw():
     script_result("\n".join(term_list))
 
 def recruit_update():
+    '''
+        fetch recruit ops details from recruitment instruction straight from "gacha_table.json"
+    '''
     def cleanlist(recruit_list:str) -> str:
         return recruit_list.replace("\\n","\n").replace("/"," / ").replace("  "," ").replace("< / ","</")
     gacha_CN_list   =   cleanlist(DB["json_gacha"]["recruitDetail"]).split("\n")
@@ -213,6 +230,16 @@ def recruit_update():
             
     
     script_result("\n".join(recruitCN+recruitEN))
+    
+def boss_stage_regex():
+    '''
+        regex for boss stage variant
+    '''
+    stage = ("ro4_b_2_b")
+
+    test = re.search(r'(ro[0-9]{0,2}_._[0-9]{1,2})(_[a-z]{1}|)',stage)
+
+    print(test.group(1))
 
 ################################################################################################################################################################################################################################################
 # DB Keys
@@ -230,3 +257,4 @@ def recruit_update():
 ################################################################################################################################################################################################################################################
 # Script Playground
 ################################################################################################################################################################################################################################################
+
