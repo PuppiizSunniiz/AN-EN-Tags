@@ -2707,8 +2707,8 @@
                     "name": "[ZT] : Zwillingstürme im Herbst",
                     "date": 1698811200,
                     "zone": {
-                        "act29side_zone1": {
-                            "name": "Zwillingstürme anbeten",
+                        "act29sre_zone1": {
+                            "name": "朝见双塔",
                             "stage": {
                                 "act29side_01": "ZT-1 : Chorale 'Lied des klaren Himmels'",
                                 "act29side_tr01": "ZT-TR-1 : Command Technique",
@@ -2724,8 +2724,8 @@
                                 "act29side_10": "ZT-10 : Messe 'König'"
                             }
                         },
-                        "act29side_zone2": {
-                            "name": "Die Gnade ist ewig",
+                        "act29sre_zone2": {
+                            "name": "恩典永恒",
                             "stage": {
                                 "act29side_ex01": "ZT-EX-1 : Presto",
                                 "act29side_ex01#f#": "ZT-EX-1 : Presto <b>(Challenge)</b>",
@@ -2745,8 +2745,8 @@
                                 "act29side_ex08#f#": "ZT-EX-8 : Perpetuum Mobile <b>(Challenge)</b>"
                             }
                         },
-                        "act29side_zone3": {
-                            "name": "Die Macht ist grimm",
+                        "act29sre_zone3": {
+                            "name": "权威无情",
                             "stage": {
                                 "act29side_s01": "ZT-S-1 : Conductor",
                                 "act29side_s01#f#": "ZT-S-1 : Conductor <b>(Challenge)</b>",
@@ -44853,7 +44853,7 @@
         "enemy_1371_ltnflu": {
             "sidestory": {
                 "act29side": {
-                    "act29side_zone1": [
+                    "act29sre_zone1": [
                         "act29side_01",
                         "act29side_tr01",
                         "act29side_02",
@@ -44861,7 +44861,6 @@
                         "act29side_04",
                         "act29side_06",
                         "act29side_07",
-                        "act29side_tr02",
                         "act29side_08",
                         "act29side_09",
                         "act29side_10"
@@ -44881,7 +44880,7 @@
         "enemy_1372_ltntpt": {
             "sidestory": {
                 "act29side": {
-                    "act29side_zone1": [
+                    "act29sre_zone1": [
                         "act29side_01",
                         "act29side_tr01",
                         "act29side_02",
@@ -44906,7 +44905,7 @@
         "enemy_1375_ltnclr": {
             "sidestory": {
                 "act29side": {
-                    "act29side_zone1": [
+                    "act29sre_zone1": [
                         "act29side_tr01",
                         "act29side_05",
                         "act29side_07",
@@ -44928,7 +44927,7 @@
         "enemy_1373_ltnhor": {
             "sidestory": {
                 "act29side": {
-                    "act29side_zone1": [
+                    "act29sre_zone1": [
                         "act29side_02"
                     ]
                 }
@@ -44945,7 +44944,7 @@
         "enemy_1374_ltnhap": {
             "sidestory": {
                 "act29side": {
-                    "act29side_zone1": [
+                    "act29sre_zone1": [
                         "act29side_03",
                         "act29side_04",
                         "act29side_06",
@@ -44957,7 +44956,7 @@
         "enemy_1376_ltndru": {
             "sidestory": {
                 "act29side": {
-                    "act29side_zone1": [
+                    "act29sre_zone1": [
                         "act29side_04",
                         "act29side_07"
                     ]
@@ -44967,7 +44966,7 @@
         "enemy_1378_ltnmst": {
             "sidestory": {
                 "act29side": {
-                    "act29side_zone1": [
+                    "act29sre_zone1": [
                         "act29side_06",
                         "act29side_09",
                         "act29side_09"
@@ -44978,7 +44977,7 @@
         "enemy_1377_ltnclo": {
             "sidestory": {
                 "act29side": {
-                    "act29side_zone1": [
+                    "act29sre_zone1": [
                         "act29side_07",
                         "act29side_08",
                         "act29side_09",
@@ -44999,7 +44998,7 @@
         "enemy_1379_ltncdt": {
             "sidestory": {
                 "act29side": {
-                    "act29side_zone1": [
+                    "act29sre_zone1": [
                         "act29side_09",
                         "act29side_09"
                     ]
@@ -45009,14 +45008,14 @@
         "enemy_1548_ltniak": {
             "sidestory": {
                 "act29side": {
-                    "act29side_zone1": [
+                    "act29sre_zone1": [
                         "act29side_10"
                     ],
-                    "act29side_zone2": [
+                    "act29sre_zone2": [
                         "act29side_ex08",
                         "act29side_ex08#f#"
                     ],
-                    "act29side_zone3": [
+                    "act29sre_zone3": [
                         "act29side_s03",
                         "act29side_s03#f#",
                         "act29side_s05",
@@ -45028,14 +45027,14 @@
         "enemy_1380_dthmak": {
             "sidestory": {
                 "act29side": {
-                    "act29side_zone1": [
+                    "act29sre_zone1": [
                         "act29side_10"
                     ],
-                    "act29side_zone2": [
+                    "act29sre_zone2": [
                         "act29side_ex08",
                         "act29side_ex08#f#"
                     ],
-                    "act29side_zone3": [
+                    "act29sre_zone3": [
                         "act29side_s03",
                         "act29side_s03#f#",
                         "act29side_s05",
@@ -45047,7 +45046,7 @@
         "enemy_1376_ltndru_2": {
             "sidestory": {
                 "act29side": {
-                    "act29side_zone2": [
+                    "act29sre_zone2": [
                         "act29side_ex01",
                         "act29side_ex01#f#",
                         "act29side_ex03",
@@ -45055,7 +45054,7 @@
                         "act29side_ex07",
                         "act29side_ex07#f#"
                     ],
-                    "act29side_zone3": [
+                    "act29sre_zone3": [
                         "act29side_s01",
                         "act29side_s01#f#",
                         "act29side_s03",
@@ -45075,7 +45074,7 @@
         "enemy_1372_ltntpt_2": {
             "sidestory": {
                 "act29side": {
-                    "act29side_zone2": [
+                    "act29sre_zone2": [
                         "act29side_ex01",
                         "act29side_ex01#f#",
                         "act29side_ex02",
@@ -45091,7 +45090,7 @@
                         "act29side_ex08",
                         "act29side_ex08#f#"
                     ],
-                    "act29side_zone3": [
+                    "act29sre_zone3": [
                         "act29side_s01",
                         "act29side_s01#f#",
                         "act29side_s02",
@@ -45109,7 +45108,7 @@
         "enemy_1371_ltnflu_2": {
             "sidestory": {
                 "act29side": {
-                    "act29side_zone2": [
+                    "act29sre_zone2": [
                         "act29side_ex01",
                         "act29side_ex01#f#",
                         "act29side_ex02",
@@ -45119,7 +45118,7 @@
                         "act29side_ex07",
                         "act29side_ex07#f#"
                     ],
-                    "act29side_zone3": [
+                    "act29sre_zone3": [
                         "act29side_s02",
                         "act29side_s02#f#",
                         "act29side_s03",
@@ -45133,13 +45132,13 @@
         "enemy_1373_ltnhor_2": {
             "sidestory": {
                 "act29side": {
-                    "act29side_zone2": [
+                    "act29sre_zone2": [
                         "act29side_ex01",
                         "act29side_ex01#f#",
                         "act29side_ex02",
                         "act29side_ex02#f#"
                     ],
-                    "act29side_zone3": [
+                    "act29sre_zone3": [
                         "act29side_s01",
                         "act29side_s01#f#",
                         "act29side_s03",
@@ -45153,7 +45152,7 @@
         "enemy_1379_ltncdt_2": {
             "sidestory": {
                 "act29side": {
-                    "act29side_zone2": [
+                    "act29sre_zone2": [
                         "act29side_ex01",
                         "act29side_ex01#f#",
                         "act29side_ex04",
@@ -45165,7 +45164,7 @@
                         "act29side_ex07#f#",
                         "act29side_ex07#f#"
                     ],
-                    "act29side_zone3": [
+                    "act29sre_zone3": [
                         "act29side_s01",
                         "act29side_s01#f#",
                         "act29side_s02",
@@ -45179,7 +45178,7 @@
         "enemy_1377_ltnclo_2": {
             "sidestory": {
                 "act29side": {
-                    "act29side_zone2": [
+                    "act29sre_zone2": [
                         "act29side_ex02",
                         "act29side_ex02#f#",
                         "act29side_ex05",
@@ -45191,7 +45190,7 @@
                         "act29side_ex08",
                         "act29side_ex08#f#"
                     ],
-                    "act29side_zone3": [
+                    "act29sre_zone3": [
                         "act29side_s01",
                         "act29side_s01#f#",
                         "act29side_s03",
@@ -45207,7 +45206,7 @@
         "enemy_1375_ltnclr_2": {
             "sidestory": {
                 "act29side": {
-                    "act29side_zone2": [
+                    "act29sre_zone2": [
                         "act29side_ex02",
                         "act29side_ex02#f#",
                         "act29side_ex04",
@@ -45219,7 +45218,7 @@
                         "act29side_ex08",
                         "act29side_ex08#f#"
                     ],
-                    "act29side_zone3": [
+                    "act29sre_zone3": [
                         "act29side_s02",
                         "act29side_s02#f#",
                         "act29side_s03",
@@ -45233,11 +45232,11 @@
         "enemy_1374_ltnhap_2": {
             "sidestory": {
                 "act29side": {
-                    "act29side_zone2": [
+                    "act29sre_zone2": [
                         "act29side_ex03",
                         "act29side_ex03#f#"
                     ],
-                    "act29side_zone3": [
+                    "act29sre_zone3": [
                         "act29side_s01",
                         "act29side_s01#f#",
                         "act29side_s02",
@@ -45251,7 +45250,7 @@
         "enemy_1378_ltnmst_2": {
             "sidestory": {
                 "act29side": {
-                    "act29side_zone2": [
+                    "act29sre_zone2": [
                         "act29side_ex05",
                         "act29side_ex05",
                         "act29side_ex05#f#",
@@ -45267,7 +45266,7 @@
                         "act29side_ex08#f#",
                         "act29side_ex08#f#"
                     ],
-                    "act29side_zone3": [
+                    "act29sre_zone3": [
                         "act29side_s02",
                         "act29side_s02#f#",
                         "act29side_s04",
