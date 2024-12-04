@@ -1,7 +1,8 @@
 # Known Issue
-- Akhr
+### # Akhr
     - url conflict for reserve operator (IS Vs AC)
-
+### # Akenemy
+    - Autochess variant maps
 # Next Step
     - 
 

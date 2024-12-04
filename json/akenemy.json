@@ -17,7 +17,7 @@
                                 "tr_05": "TR-5 : Originium Arts",
                                 "tr_06": "TR-6 : AoE Attacks",
                                 "tr_07": "TR-7 : Combat Skills",
-                                "tr_s_1": "TR-S-1 : 综合作战训练1"
+                                "tr_s_1": "TR-S-1 : Comprehensive Combat Exercise 1"
                             }
                         },
                         "Prologue : Normal": {
@@ -111,7 +111,7 @@
                                 "tr_12": "TR-12 : Casters",
                                 "tr_13": "TR-13 : Proactive Deployment",
                                 "tr_14": "TR-14 : Terrain Attack",
-                                "tr_s_2": "TR-S-2 : 综合作战训练2"
+                                "tr_s_2": "TR-S-2 : Comprehensive Combat Exercise 2"
                             }
                         },
                         "EP2 : Normal": {
@@ -2993,39 +2993,39 @@
                     "date": 1717560000,
                     "zone": {
                         "act34side_zone1": {
-                            "name": "信标投放",
+                            "name": "Deploy Beacons",
                             "stage": {
-                                "act34side_01": "BP-1 : 第一次接触",
-                                "act34side_tr01": "BP-TR-1 : 信标投放演习",
-                                "act34side_02": "BP-2 : 评议式迎接",
-                                "act34side_03": "BP-3 : 如海雪纷散",
-                                "act34side_04": "BP-4 : 牺牲与代价",
-                                "act34side_05": "BP-5 : 不治的命运",
-                                "act34side_06": "BP-6 : 阿戈尔失格",
-                                "act34side_07": "BP-7 : 从历史中来",
-                                "act34side_08": "BP-8 : “何谓存续？”",
-                                "act34side_09": "BP-9 : 文明的壁垒"
+                                "act34side_01": "BP-1 : First Contact",
+                                "act34side_tr01": "BP-TR-1 : Beacon Deployment Drill",
+                                "act34side_02": "BP-2 : Tribunal Welcome",
+                                "act34side_03": "BP-3 : Like the Marine Snow",
+                                "act34side_04": "BP-4 : Price and Sacrifice",
+                                "act34side_05": "BP-5 : Lethal Fate",
+                                "act34side_06": "BP-6 : Anathema of Ægir",
+                                "act34side_07": "BP-7 : From History",
+                                "act34side_08": "BP-8 : What is Survival?",
+                                "act34side_09": "BP-9 : Fortress of Civilization"
                             }
                         },
                         "act34side_zone2": {
-                            "name": "防线巩固",
+                            "name": "Fortify Defense",
                             "stage": {
-                                "act34side_ex01": "BP-EX-1 : 纪耻柱-无谓的纷争",
-                                "act34side_ex01#f#": "BP-EX-1 : 纪耻柱-无谓的纷争 <b>(Challenge)</b>",
-                                "act34side_ex02": "BP-EX-2 : 纪念坛-阿戈尔和平",
-                                "act34side_ex02#f#": "BP-EX-2 : 纪念坛-阿戈尔和平 <b>(Challenge)</b>",
-                                "act34side_ex03": "BP-EX-3 : 大浴场-智识交会处",
-                                "act34side_ex03#f#": "BP-EX-3 : 大浴场-智识交会处 <b>(Challenge)</b>",
-                                "act34side_ex04": "BP-EX-4 : 熔岩导桥-地幔脉搏",
-                                "act34side_ex04#f#": "BP-EX-4 : 熔岩导桥-地幔脉搏 <b>(Challenge)</b>",
-                                "act34side_ex05": "BP-EX-5 : 水脉中枢-洋流喷泉",
-                                "act34side_ex05#f#": "BP-EX-5 : 水脉中枢-洋流喷泉 <b>(Challenge)</b>",
-                                "act34side_ex06": "BP-EX-6 : 探测基站-谜题之门",
-                                "act34side_ex06#f#": "BP-EX-6 : 探测基站-谜题之门 <b>(Challenge)</b>",
-                                "act34side_ex07": "BP-EX-7 : 基因种质库-万物殿",
-                                "act34side_ex07#f#": "BP-EX-7 : 基因种质库-万物殿 <b>(Challenge)</b>",
-                                "act34side_ex08": "BP-EX-8 : 玛利图斯的斗智场",
-                                "act34side_ex08#f#": "BP-EX-8 : 玛利图斯的斗智场 <b>(Challenge)</b>"
+                                "act34side_ex01": "BP-EX-1 : Pillar of Shame - Meaningless Conflict",
+                                "act34side_ex01#f#": "BP-EX-1 : Pillar of Shame - Meaningless Conflict <b>(Challenge)</b>",
+                                "act34side_ex02": "BP-EX-2 : Memorial Altar - Pax Ægir",
+                                "act34side_ex02#f#": "BP-EX-2 : Memorial Altar - Pax Ægir <b>(Challenge)</b>",
+                                "act34side_ex03": "BP-EX-3 : Great Bathhouse - Where Wisdoms Meet",
+                                "act34side_ex03#f#": "BP-EX-3 : Great Bathhouse - Where Wisdoms Meet <b>(Challenge)</b>",
+                                "act34side_ex04": "BP-EX-4 : Lava Bridge - Mantle's Pulse",
+                                "act34side_ex04#f#": "BP-EX-4 : Lava Bridge - Mantle's Pulse <b>(Challenge)</b>",
+                                "act34side_ex05": "BP-EX-5 : Aquatic Artery Hub - Fountain of Currents",
+                                "act34side_ex05#f#": "BP-EX-5 : Aquatic Artery Hub - Fountain of Currents <b>(Challenge)</b>",
+                                "act34side_ex06": "BP-EX-6 : Survey Station - Gate of Conundrum",
+                                "act34side_ex06#f#": "BP-EX-6 : Survey Station - Gate of Conundrum <b>(Challenge)</b>",
+                                "act34side_ex07": "BP-EX-7 : Gene Bank - Hall of Everything",
+                                "act34side_ex07#f#": "BP-EX-7 : Gene Bank - Hall of Everything <b>(Challenge)</b>",
+                                "act34side_ex08": "BP-EX-8 : Mártus's Sophontheatrum",
+                                "act34side_ex08#f#": "BP-EX-8 : Mártus's Sophontheatrum <b>(Challenge)</b>"
                             }
                         }
                     }

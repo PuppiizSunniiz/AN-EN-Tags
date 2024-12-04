@@ -648,12 +648,12 @@
             "note": "Wiš'adel 's Token (Shadow of Revenant)"
         },
         "乌尔比安技能结束时返回该位置，并且其他干员不能部署": {
-            "en": "Ulpianus returns to this location when his skill ends, other operators cannot be deployed",
+            "en": "When skill ends, Ulpianus returns to this position and no other Operators may be deployed",
             "color": "common",
             "note": "Ulpinus S3 [PH] Tonken"
         },
         "子弹数量为空时下次装填额外加装1发子弹": {
-            "en": "When reload from empty, gain 1 addition ammo",
+            "en": "When Ammo count is empty, the next reload +1 Ammo additionally",
             "color": "extra",
             "note": "Hunter Mod (HUN-X)"
         },
@@ -663,12 +663,12 @@
             "note": "Blast Caster Mod (BLA-D)"
         },
         "技能可以使敌人产生<@ba.kw>位移</>，向自身拖拽较远的敌人时力度提升一个等级\\n可以放置于远程位": {
-            "en": "Can <@ba.kw>Shift</> enemies by using skills, increases shift level by 1 when dragging further away targets towards this unit \nCan be deployed on Ranged Tiles",
+            "en": "Can <@ba.kw>Shift</> enemies by using skills; increases the strength of the shift by 1 degree when dragging enemies far away towards herself\nCan be deployed on Ranged tiles",
             "color": "extra",
             "note": "Hookmaster Mod (HOX-Y)"
         },
         "周围8格没有友方干员时攻击力和防御力<@ba.kw>+8%</>": {
-            "en": "Gains +8% ATK and DEF when there are no allied units in the surrounding 8 tiles",
+            "en": "When there are no allies in the surrounding 8 tiles, ATK and DEF <@ba.kw>+8%</>",
             "color": "common",
             "note": "Juggernaut Mod (UNY-Y)"
         },

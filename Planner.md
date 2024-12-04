@@ -1,6 +1,6 @@
 # Arknight-Image
 ## Update
-    -
+- ???
 ## Schedule
 
 - Avatars : folder for ***char, token*** and ***skin*** avatar
@@ -27,13 +27,18 @@
 ---
 
 # Akhrchar
-## Fix
+### Need Fix !!!
     - url conflict for reserve operator (IS Vs AC)
-## To do
+        - add option for gamemode OPs (Browse = Base OPs > Option +IS & +AC)
+        - add gamemode key for ***akhr.json***
+        - add ?mode= in url for differentiate IS/AC
+        - add cookie for something necessary above
+### To do
     - tweak token section
         - add token Talent
         - update token trait/talent/stat when select mod
-## Later
+    - Skin Illustrator
+### Later
     - add amiya patch to char selector (Browse -Type/All/Filter)
     - add more parameter for fn => onclick="selectOperator('xxx', ...)" to go to amiya patch directly
     - Chibi
@@ -41,22 +46,22 @@
 ---
 
 # Akhr
-## Fix
+### Need Fix !!!
     - Result sorting
-## To do
+### To do
     - add ignore 2* 3* combination result button and js
-## Later
+### Later
     - 
 
 
 ---
 
 # Akenemy
+## Need Fix !!!
+    - Autochess variant maps
 ## Working on
     - Mechanic training stage
     - Sidestory by year
-## Fix
-    -
 ## To do
     - Enemies Talent & Abilities
     - Foldable Details & Abilities Blackboard

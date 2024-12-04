@@ -2365,7 +2365,7 @@
         "descformat": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+20%</>, Morale consumed per hour <@cc.vup>-0.25</>"
     },
     "hire_spd_cost[111]": {
-        "name": "Special Channel",
+        "name": "Special Connection",
         "desc": "When stationed at Human Resource, accumulation of networking resources +20% and mood reduction per hour -0.25",
         "descformat": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+20%</>, Morale consumed per hour <@cc.vup>-0.25</>"
     },
@@ -2700,14 +2700,14 @@
         "descformat": "进驻控制中枢时，所有宿舍内所有干员的心情每小时恢复<@cc.vup>+0.05</>（同种效果取最高）"
     },
     "power_rec_spd[025]": {
-        "name": "穹顶物流管理·α",
+        "name": "Dome Logistics α",
         "desc": "进驻发电站时，无人机充能速度<@cc.vup>+15%</>",
-        "descformat": "进驻发电站时，无人机充能速度<@cc.vup>+15%</>"
+        "descformat": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+15%</>"
     },
     "power_rec_spd[026]": {
-        "name": "穹顶物流管理·β",
+        "name": "Dome Logistics·β",
         "desc": "进驻发电站时，无人机充能速度<@cc.vup>+20%</>",
-        "descformat": "进驻发电站时，无人机充能速度<@cc.vup>+20%</>"
+        "descformat": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+20%</>"
     },
     "trade_ord_spd&meet[010]": {
         "name": "天生的顾问",
@@ -2720,24 +2720,24 @@
         "descformat": "进驻贸易站时，<@cc.kw>小幅提升</>当前贸易站<@cc.kw>高品质贵金属订单</>的出现概率（工作时长影响概率），心情每小时消耗<@cc.vup>-0.25</>"
     },
     "trade_ord_spd_ext[000]": {
-        "name": "对陆接洽代表·α",
+        "name": "Envoy To Land α",
         "desc": "进驻贸易站时，订单获取效率<@cc.vup>+25%</>；当<@cc.kw>乌尔比安</>在基建内时（不包含副手），订单获取效率额外<@cc.vup>+5%</>",
-        "descformat": "进驻贸易站时，订单获取效率<@cc.vup>+25%</>；当<@cc.kw>乌尔比安</>在基建内时（不包含副手），订单获取效率额外<@cc.vup>+5%</>"
+        "descformat": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+25%</>; When <@cc.kw>Ulpianus</> is in the Base (excluding Assistants), additional order acquisition efficiency <@cc.vup>+5%</>"
     },
     "trade_ord_spd_ext[001]": {
-        "name": "对陆接洽代表·β",
+        "name": "Envoy To Land·β",
         "desc": "进驻贸易站时，订单获取效率<@cc.vup>+30%</>；当<@cc.kw>乌尔比安</>在基建内时（不包含副手），订单获取效率额外<@cc.vup>+10%</>",
-        "descformat": "进驻贸易站时，订单获取效率<@cc.vup>+30%</>；当<@cc.kw>乌尔比安</>在基建内时（不包含副手），订单获取效率额外<@cc.vup>+10%</>"
+        "descformat": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+30%</>; When <@cc.kw>Ulpianus</> is in the Base (excluding Assistants), additional order acquisition efficiency <@cc.vup>+10%</>"
     },
     "train_spd_power_down[000]": {
-        "name": "“手段应当有效”",
+        "name": "'Methods Should Be Effective'",
         "desc": "进驻训练室协助位时，心情每小时消耗<@cc.vdown>+1</>，基建内（不包含副手）每名<$cc.g.abyssal><@cc.kw>深海猎人</></>干员为当前干员的专精技能训练速度<@cc.vup>+10%</>（最多生效<@cc.kw>5</>名）",
-        "descformat": "进驻训练室协助位时，心情每小时消耗<@cc.vdown>+1</>，基建内（不包含副手）每名<$cc.g.abyssal><@cc.kw>深海猎人</></>干员为当前干员的专精技能训练速度<@cc.vup>+10%</>（最多生效<@cc.kw>5</>名）"
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Morale consumed per hour <@cc.vdown>+1</>, and Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.abyssal><@cc.kw>Abyssal Hunter</></> Operator in the Base (excluding Assistants, caps at <@cc.kw>5</> Operators)."
     },
     "train_spd_doubleProf[201]": {
-        "name": "“问题应当准确”",
+        "name": "'Questions Should Be Exact'",
         "desc": "进驻训练室协助位时，<@cc.kw>近卫</>与<@cc.kw>辅助</>干员的专精技能训练速度<@cc.vup>+30%</>",
-        "descformat": "进驻训练室协助位时，<@cc.kw>近卫</>与<@cc.kw>辅助</>干员的专精技能训练速度<@cc.vup>+30%</>"
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Guard</> and <@cc.kw>Supporter</> Operators' Specialization training speed <@cc.vup>+30%</>"
     },
     "dorm_rec_all[017]": {
         "name": "静心仪式·α",
