@@ -1,5 +1,10 @@
 {
     "Dict": {
+        "act39side": {
+            "nameCN": "出苍白海",
+            "nameEN": "Exodus from the Pale Sea",
+            "startCN": 1733371200
+        },
         "act1vautochess": {
             "nameCN": "卫戍协议",
             "nameEN": "Stronghold Protocol",
@@ -833,6 +838,11 @@
         "tower_n_16": {
             "nameCN": "玉门市集",
             "nameEN": "玉门市集",
+            "startCN": -1
+        },
+        "tower_n_17": {
+            "nameCN": "荒地群兽音乐厅",
+            "nameEN": "荒地群兽音乐厅",
             "startCN": -1
         },
         "tower_n_01": {
@@ -1746,6 +1756,11 @@
             "act29sre",
             "Zwillingstürme im Herbst - Rerun",
             1732521600
+        ],
+        [
+            "act39side",
+            "Exodus from the Pale Sea",
+            1733371200
         ]
     ]
 }

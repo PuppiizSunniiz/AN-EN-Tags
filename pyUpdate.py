@@ -54,10 +54,10 @@ json_dict           =   json_load("py/dict.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS = [] # "", 
+NEW_CHARS = ["Thorns the Lodestar","Tecno","Rose Salt"] # "", 
 
 #[["OpsName#1",num(Mod)],["OpsName#2",num(Mod)], ...]
-NEW_MODS = [] # ["",],
+NEW_MODS = [["Surtr",1],["Viviana",1],["Vina Victoria",1],["Astesia",1],["Amiya (Guard)",1],["Sideroca",1],["Mousse",1],["Rose Salt",1],["Exusiai",2]] # ["",],
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS = [] # "",
@@ -104,10 +104,10 @@ def get_new_akhr(new_char_id : str, new_char_name : str) -> dict:
                                     "type"          :   CLASS_PARSE_CN[json_char[new_char_id]["profession"]],
                                     "level"         :   int(json_char[new_char_id]["rarity"][-1]),
                                     "sex"           :   ''.join(json_handbook["handbookDict"][new_char_id]["storyTextAudio"][0]["stories"][0]["storyText"].split("\n")[1].split("】")[1].split()) if new_char_id in json_handbook["handbookDict"] else "temp",
-                                    "tags"          :   ["高级资深干员" for x in range(1) if json_char[new_char_id]["rarity"][-1] == "6"]+ \
-                                                        ["资深干员" for x in range(1) if json_char[new_char_id]["rarity"][-1] == "5"]+ \
-                                                        ["近战位" for x in range(1) if json_char[new_char_id]["position"] == "MELEE"]+ \
-                                                        ["远程位" for x in range(1) if json_char[new_char_id]["position"] == "RANGED"]+ \
+                                    "tags"          :   (["高级资深干员"] if json_char[new_char_id]["rarity"][-1] == "6" else []) + \
+                                                        (["资深干员"] if json_char[new_char_id]["rarity"][-1] == "5" else []) + \
+                                                        (["近战位"] if json_char[new_char_id]["position"] == "MELEE" else []) + \
+                                                        (["远程位"] if json_char[new_char_id]["position"] == "RANGED" else []) + \
                                                         json_char[new_char_id]["tagList"],
                                     "hidden"        :   True,
                                     "globalHidden"  :   True
@@ -129,21 +129,27 @@ def update_new_trait(mode : str, new_id : str, new_char_name : str, extra = "") 
     match mode:
         case "char":
             return  {
+                        "en"    : "",
+                        "color" : "",
+                        "note"  : f'new Ops "{extra}" Archetype trait',
                         "name"  : new_char_name,
-                        "code"  : new_id,
-                        "note"  : f'new Ops "{extra}" Archetype trait'
+                        "code"  : new_id
                     }
         case "token":
             return  {
+                        "en"    : "",
+                        "color" : "",
+                        "note"  : f'{new_char_name} \'s Token ({json_char[extra]["appellation"]})',
                         "name"  : json_char[extra]["appellation"],
-                        "code"  : extra,
-                        "note"  : f'{new_char_name} \'s Token ({json_char[extra]["appellation"]})'
+                        "code"  : extra
                     }
         case "mod" :
             return  {
+                        "en"    : "",
+                        "color" : "",
+                        "note"  : f'new mods {extra}',
                         "name"  : new_char_name,
                         "code"  : new_id,
-                        "note"  : f'new mods {extra}'
                     }
 
 def update_char_TraitSkillTalent(new_char_name : str) :

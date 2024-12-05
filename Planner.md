@@ -33,6 +33,7 @@
         - add gamemode key for ***akhr.json***
         - add ?mode= in url for differentiate IS/AC
         - add cookie for something necessary above
+    - Thorns alt talent 2
 ### To do
     - tweak token section
         - add token Talent

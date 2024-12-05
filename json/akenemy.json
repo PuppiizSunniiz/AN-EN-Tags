@@ -3258,6 +3258,26 @@
                             }
                         }
                     }
+                },
+                "act39side": {
+                    "name": "[EP] : 出苍白海",
+                    "date": 1733371200,
+                    "zone": {
+                        "act39side_zone1": {
+                            "name": "盐漠开航",
+                            "stage": {
+                                "act39side_tr01": "EP-TR-1 : 海盗基本素养",
+                                "act39side_01": "EP-1 : 倒悬苍白海上",
+                                "act39side_02": "EP-2 : 腿部拆卸疗法",
+                                "act39side_03": "EP-3 : 大出血的舞步",
+                                "act39side_04": "EP-4 : 重逢不乏意外",
+                                "act39side_05": "EP-5 : 熄灭过去的灯",
+                                "act39side_06": "EP-6 : 若退路在燃烧",
+                                "act39side_07": "EP-7 : 我的罗盘",
+                                "act39side_08": "EP-8 : 见证，征服，定义"
+                            }
+                        }
+                    }
                 }
             }
         },
@@ -5150,6 +5170,23 @@
                             }
                         }
                     }
+                },
+                "tower_n_17": {
+                    "name": "荒地群兽音乐厅",
+                    "date": -1,
+                    "zone": {
+                        "tower_n_17": {
+                            "name": "荒地群兽音乐厅",
+                            "stage": {
+                                "lt_17_01": "LT-1 : 荒野的第一乐章",
+                                "lt_17_02": "LT-2 : 石像的改编曲",
+                                "lt_17_03": "LT-3 : 野兽狂欢曲",
+                                "lt_17_04": "LT-4 : 温顺者的摇篮曲",
+                                "lt_17_05": "LT-5 : 驮兽与石像的二重奏",
+                                "lt_17_06": "LT-6 : “音乐之心”"
+                            }
+                        }
+                    }
                 }
             }
         },
@@ -5545,6 +5582,7 @@
         "weekly_2": "PR-B : Fierce Attack (Snipers & Casters)",
         "weekly_3": "PR-C : Unstoppable Charge (Vanguards & Supporters)",
         "weekly_4": "PR-D : Fearless Protection (Guards & Specialists)",
+        "act39side": "[EP] : 出苍白海",
         "act1vautochess": "Stronghold Protocol",
         "act38side": "[PV] : I Portatori dei Velluti",
         "act37side": "[GO] : Ending a Grand Overture",
@@ -5651,6 +5689,7 @@
         "tower_n_14": "Dossoles Commercial Plate",
         "tower_n_15": "交战荒野",
         "tower_n_16": "玉门市集",
+        "tower_n_17": "荒地群兽音乐厅",
         "tower_n_01": "Iron Carrot Mine",
         "tower_n_02": "Toron Mine",
         "tower_n_03": "Glebe Mining Platform",
@@ -6456,6 +6495,11 @@
                         "lt_11_01",
                         "lt_11_03",
                         "lt_11_06"
+                    ]
+                },
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_02"
                     ]
                 }
             },
@@ -9750,6 +9794,11 @@
                 "tower_n_14": {
                     "tower_n_14": [
                         "lt_14_04"
+                    ]
+                },
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_01"
                     ]
                 }
             },
@@ -29385,6 +29434,121 @@
                 }
             }
         },
+        "enemy_10042_prtrop": {
+            "sidestory": {
+                "act39side": {
+                    "act39side_zone1": [
+                        "act39side_tr01",
+                        "act39side_01",
+                        "act39side_05",
+                        "act39side_06",
+                        "act39side_07",
+                        "act39side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10043_sailor": {
+            "sidestory": {
+                "act39side": {
+                    "act39side_zone1": [
+                        "act39side_tr01",
+                        "act39side_01",
+                        "act39side_02",
+                        "act39side_03",
+                        "act39side_04",
+                        "act39side_05",
+                        "act39side_06",
+                        "act39side_07",
+                        "act39side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10048_prtsld": {
+            "sidestory": {
+                "act39side": {
+                    "act39side_zone1": [
+                        "act39side_tr01",
+                        "act39side_06",
+                        "act39side_07",
+                        "act39side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10044_wintun": {
+            "sidestory": {
+                "act39side": {
+                    "act39side_zone1": [
+                        "act39side_02",
+                        "act39side_03",
+                        "act39side_04",
+                        "act39side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10045_parrot": {
+            "sidestory": {
+                "act39side": {
+                    "act39side_zone1": [
+                        "act39side_03",
+                        "act39side_03",
+                        "act39side_04",
+                        "act39side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10046_pshark": {
+            "sidestory": {
+                "act39side": {
+                    "act39side_zone1": [
+                        "act39side_04",
+                        "act39side_05",
+                        "act39side_07"
+                    ]
+                }
+            }
+        },
+        "enemy_10047_shrknt": {
+            "sidestory": {
+                "act39side": {
+                    "act39side_zone1": [
+                        "act39side_05",
+                        "act39side_06"
+                    ]
+                }
+            }
+        },
+        "enemy_10049_pcaptn": {
+            "sidestory": {
+                "act39side": {
+                    "act39side_zone1": [
+                        "act39side_07"
+                    ]
+                }
+            }
+        },
+        "enemy_1561_crzjdg": {
+            "sidestory": {
+                "act39side": {
+                    "act39side_zone1": [
+                        "act39side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_1561_crzjdg_2": {
+            "sidestory": {
+                "act39side": {
+                    "act39side_zone1": [
+                        "act39side_08"
+                    ]
+                }
+            }
+        },
         "enemy_1116_liprr": {
             "exp": {
                 "act1vautochess": {
@@ -31008,6 +31172,14 @@
                         "act33side_s03",
                         "act33side_s03#f#",
                         "act33side_mo01"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_05",
+                        "lt_17_06"
                     ]
                 }
             },
@@ -35102,6 +35274,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_03"
+                    ]
+                }
+            },
             "is": {
                 "IS#4": {
                     "IS#4 Floor 4": [
@@ -35155,6 +35334,13 @@
                         "act24side_ex08",
                         "act24side_ex08#f#",
                         "act24side_s01"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_03"
                     ]
                 }
             },
@@ -35216,6 +35402,14 @@
                         "act24side_ex05",
                         "act24side_ex05#f#",
                         "act24side_ex05#f#"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_03",
+                        "lt_17_03"
                     ]
                 }
             },
@@ -36142,6 +36336,11 @@
                     "tower_n_13": [
                         "lt_13_05"
                     ]
+                },
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_06"
+                    ]
                 }
             },
             "is": {
@@ -36317,6 +36516,11 @@
                 "tower_n_13": {
                     "tower_n_13": [
                         "lt_13_03"
+                    ]
+                },
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_02"
                     ]
                 }
             },
@@ -37449,6 +37653,11 @@
                     "tower_n_13": [
                         "lt_13_03"
                     ]
+                },
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_02"
+                    ]
                 }
             },
             "cc": {
@@ -37534,6 +37743,11 @@
                     "tower_n_13": [
                         "lt_13_05"
                     ]
+                },
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_06"
+                    ]
                 }
             },
             "is": {
@@ -37607,6 +37821,11 @@
                 "tower_n_13": {
                     "tower_n_13": [
                         "lt_13_03"
+                    ]
+                },
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_06"
                     ]
                 }
             },
@@ -37689,6 +37908,11 @@
                 "tower_n_13": {
                     "tower_n_13": [
                         "lt_13_03"
+                    ]
+                },
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_01"
                     ]
                 }
             },
@@ -37809,6 +38033,14 @@
                 "camp_r_07": {
                     "camp_r_07": [
                         "camp_r_07"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_01",
+                        "lt_17_04"
                     ]
                 }
             },
@@ -38208,6 +38440,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_01"
+                    ]
+                }
+            },
             "cc": {
                 "CCBP#02": {
                     "CCBP#02": [
@@ -38356,6 +38595,11 @@
                     "tower_n_13": [
                         "lt_13_05"
                     ]
+                },
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_05"
+                    ]
                 }
             },
             "is": {
@@ -38413,6 +38657,14 @@
                 "camp_r_07": {
                     "camp_r_07": [
                         "camp_r_07"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_05",
+                        "lt_17_06"
                     ]
                 }
             },
@@ -38525,6 +38777,14 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_05",
+                        "lt_17_06"
+                    ]
+                }
+            },
             "exp": {
                 "act42d0": {
                     "challenge": [
@@ -38595,6 +38855,11 @@
                 }
             },
             "sss": {
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_06"
+                    ]
+                },
                 "tower_n_03": {
                     "tower_n_03": [
                         "lt_03_07"
@@ -41214,6 +41479,13 @@
                     ],
                     "act33side_zone3": [
                         "act33side_mo01"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_04"
                     ]
                 }
             },
@@ -44250,6 +44522,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_03"
+                    ]
+                }
+            },
             "is": {
                 "IS#4": {
                     "IS#4 Floor 4": [
@@ -44867,6 +45146,14 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_04",
+                        "lt_17_06"
+                    ]
+                }
+            },
             "is": {
                 "IS#5": {
                     "IS#5 Floor 5": [
@@ -45125,6 +45412,14 @@
                         "act29side_s03#f#",
                         "act29side_s05",
                         "act29side_s05#f#"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_04",
+                        "lt_17_06"
                     ]
                 }
             }
@@ -48363,6 +48658,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_02"
+                    ]
+                }
+            },
             "is": {
                 "IS#4": {
                     "IS#4 Floor 2": [
@@ -49373,6 +49675,13 @@
                         "act24side_ex08",
                         "act24side_ex08#f#",
                         "act24side_s01"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_03"
                     ]
                 }
             },
@@ -58599,6 +58908,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_05"
+                    ]
+                }
+            },
             "is": {
                 "IS#1": {
                     "IS#1 Treasure": [
@@ -59482,282 +59798,6 @@
                 }
             }
         },
-        "enemy_6003_trsslm": {
-            "sss": {
-                "tower_n_05": {
-                    "tower_n_05": [
-                        "lt_05_03"
-                    ]
-                },
-                "tower_n_06": {
-                    "tower_n_06": [
-                        "lt_06_03"
-                    ]
-                },
-                "tower_n_07": {
-                    "tower_n_07": [
-                        "lt_07_03"
-                    ]
-                },
-                "tower_n_08": {
-                    "tower_n_08": [
-                        "lt_08_03"
-                    ]
-                },
-                "tower_n_09": {
-                    "tower_n_09": [
-                        "lt_09_03"
-                    ]
-                },
-                "tower_n_10": {
-                    "tower_n_10": [
-                        "lt_10_03"
-                    ]
-                },
-                "tower_n_11": {
-                    "tower_n_11": [
-                        "lt_11_03"
-                    ]
-                },
-                "tower_n_12": {
-                    "tower_n_12": [
-                        "lt_12_03"
-                    ]
-                },
-                "tower_n_13": {
-                    "tower_n_13": [
-                        "lt_13_03"
-                    ]
-                },
-                "tower_n_14": {
-                    "tower_n_14": [
-                        "lt_14_03"
-                    ]
-                },
-                "tower_n_15": {
-                    "tower_n_15": [
-                        "lt_15_03"
-                    ]
-                },
-                "tower_n_16": {
-                    "tower_n_16": [
-                        "lt_16_03"
-                    ]
-                },
-                "tower_n_01": {
-                    "tower_n_01": [
-                        "lt_01_04"
-                    ]
-                },
-                "tower_n_02": {
-                    "tower_n_02": [
-                        "lt_02_04"
-                    ]
-                },
-                "tower_n_03": {
-                    "tower_n_03": [
-                        "lt_03_04"
-                    ]
-                },
-                "tower_n_04": {
-                    "tower_n_04": [
-                        "lt_04_04"
-                    ]
-                }
-            },
-            "ra": {
-                "RA#2": {
-                    "RA#2 Field : Battle": [
-                        "sandbox_1_86"
-                    ],
-                    "RA#2 Insect Rushparty": [
-                        "RA#2_insect_8"
-                    ]
-                }
-            }
-        },
-        "enemy_6001_trsgst": {
-            "sss": {
-                "tower_n_05": {
-                    "tower_n_05": [
-                        "lt_05_03"
-                    ]
-                },
-                "tower_n_06": {
-                    "tower_n_06": [
-                        "lt_06_03"
-                    ]
-                },
-                "tower_n_07": {
-                    "tower_n_07": [
-                        "lt_07_03"
-                    ]
-                },
-                "tower_n_08": {
-                    "tower_n_08": [
-                        "lt_08_03"
-                    ]
-                },
-                "tower_n_09": {
-                    "tower_n_09": [
-                        "lt_09_03"
-                    ]
-                },
-                "tower_n_10": {
-                    "tower_n_10": [
-                        "lt_10_03"
-                    ]
-                },
-                "tower_n_11": {
-                    "tower_n_11": [
-                        "lt_11_03"
-                    ]
-                },
-                "tower_n_12": {
-                    "tower_n_12": [
-                        "lt_12_03"
-                    ]
-                },
-                "tower_n_13": {
-                    "tower_n_13": [
-                        "lt_13_03"
-                    ]
-                },
-                "tower_n_14": {
-                    "tower_n_14": [
-                        "lt_14_03"
-                    ]
-                },
-                "tower_n_15": {
-                    "tower_n_15": [
-                        "lt_15_03"
-                    ]
-                },
-                "tower_n_16": {
-                    "tower_n_16": [
-                        "lt_16_03"
-                    ]
-                },
-                "tower_n_01": {
-                    "tower_n_01": [
-                        "lt_01_04"
-                    ]
-                },
-                "tower_n_02": {
-                    "tower_n_02": [
-                        "lt_02_04"
-                    ]
-                },
-                "tower_n_03": {
-                    "tower_n_03": [
-                        "lt_03_04"
-                    ]
-                },
-                "tower_n_04": {
-                    "tower_n_04": [
-                        "lt_04_04"
-                    ]
-                }
-            },
-            "ra": {
-                "RA#2": {
-                    "RA#2 Field : Battle": [
-                        "sandbox_1_86"
-                    ]
-                }
-            }
-        },
-        "enemy_6002_trswlf": {
-            "sss": {
-                "tower_n_05": {
-                    "tower_n_05": [
-                        "lt_05_03"
-                    ]
-                },
-                "tower_n_06": {
-                    "tower_n_06": [
-                        "lt_06_03"
-                    ]
-                },
-                "tower_n_07": {
-                    "tower_n_07": [
-                        "lt_07_03"
-                    ]
-                },
-                "tower_n_08": {
-                    "tower_n_08": [
-                        "lt_08_03"
-                    ]
-                },
-                "tower_n_09": {
-                    "tower_n_09": [
-                        "lt_09_03"
-                    ]
-                },
-                "tower_n_10": {
-                    "tower_n_10": [
-                        "lt_10_03"
-                    ]
-                },
-                "tower_n_11": {
-                    "tower_n_11": [
-                        "lt_11_03"
-                    ]
-                },
-                "tower_n_12": {
-                    "tower_n_12": [
-                        "lt_12_03"
-                    ]
-                },
-                "tower_n_13": {
-                    "tower_n_13": [
-                        "lt_13_03"
-                    ]
-                },
-                "tower_n_14": {
-                    "tower_n_14": [
-                        "lt_14_03"
-                    ]
-                },
-                "tower_n_15": {
-                    "tower_n_15": [
-                        "lt_15_03"
-                    ]
-                },
-                "tower_n_16": {
-                    "tower_n_16": [
-                        "lt_16_03"
-                    ]
-                },
-                "tower_n_01": {
-                    "tower_n_01": [
-                        "lt_01_04"
-                    ]
-                },
-                "tower_n_02": {
-                    "tower_n_02": [
-                        "lt_02_04"
-                    ]
-                },
-                "tower_n_03": {
-                    "tower_n_03": [
-                        "lt_03_04"
-                    ]
-                },
-                "tower_n_04": {
-                    "tower_n_04": [
-                        "lt_04_04"
-                    ]
-                }
-            },
-            "ra": {
-                "RA#2": {
-                    "RA#2 Field : Battle": [
-                        "sandbox_1_86"
-                    ]
-                }
-            }
-        },
         "enemy_6010_boxing": {
             "sss": {
                 "tower_n_05": {
@@ -59801,6 +59841,147 @@
                 "tower_n_08": {
                     "tower_n_08": [
                         "lt_08_06"
+                    ]
+                }
+            }
+        },
+        "enemy_6003_trsslm": {
+            "sss": {
+                "tower_n_09": {
+                    "tower_n_09": [
+                        "lt_09_03"
+                    ]
+                },
+                "tower_n_10": {
+                    "tower_n_10": [
+                        "lt_10_03"
+                    ]
+                },
+                "tower_n_12": {
+                    "tower_n_12": [
+                        "lt_12_03"
+                    ]
+                },
+                "tower_n_01": {
+                    "tower_n_01": [
+                        "lt_01_04"
+                    ]
+                },
+                "tower_n_02": {
+                    "tower_n_02": [
+                        "lt_02_04"
+                    ]
+                },
+                "tower_n_03": {
+                    "tower_n_03": [
+                        "lt_03_04"
+                    ]
+                },
+                "tower_n_04": {
+                    "tower_n_04": [
+                        "lt_04_04"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_86"
+                    ],
+                    "RA#2 Insect Rushparty": [
+                        "RA#2_insect_8"
+                    ]
+                }
+            }
+        },
+        "enemy_6001_trsgst": {
+            "sss": {
+                "tower_n_09": {
+                    "tower_n_09": [
+                        "lt_09_03"
+                    ]
+                },
+                "tower_n_10": {
+                    "tower_n_10": [
+                        "lt_10_03"
+                    ]
+                },
+                "tower_n_12": {
+                    "tower_n_12": [
+                        "lt_12_03"
+                    ]
+                },
+                "tower_n_01": {
+                    "tower_n_01": [
+                        "lt_01_04"
+                    ]
+                },
+                "tower_n_02": {
+                    "tower_n_02": [
+                        "lt_02_04"
+                    ]
+                },
+                "tower_n_03": {
+                    "tower_n_03": [
+                        "lt_03_04"
+                    ]
+                },
+                "tower_n_04": {
+                    "tower_n_04": [
+                        "lt_04_04"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_86"
+                    ]
+                }
+            }
+        },
+        "enemy_6002_trswlf": {
+            "sss": {
+                "tower_n_09": {
+                    "tower_n_09": [
+                        "lt_09_03"
+                    ]
+                },
+                "tower_n_10": {
+                    "tower_n_10": [
+                        "lt_10_03"
+                    ]
+                },
+                "tower_n_12": {
+                    "tower_n_12": [
+                        "lt_12_03"
+                    ]
+                },
+                "tower_n_01": {
+                    "tower_n_01": [
+                        "lt_01_04"
+                    ]
+                },
+                "tower_n_02": {
+                    "tower_n_02": [
+                        "lt_02_04"
+                    ]
+                },
+                "tower_n_03": {
+                    "tower_n_03": [
+                        "lt_03_04"
+                    ]
+                },
+                "tower_n_04": {
+                    "tower_n_04": [
+                        "lt_04_04"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Battle": [
+                        "sandbox_1_86"
                     ]
                 }
             }
@@ -59918,6 +60099,15 @@
                 "tower_n_16": {
                     "tower_n_16": [
                         "lt_16_06"
+                    ]
+                }
+            }
+        },
+        "enemy_6028_cosgia": {
+            "sss": {
+                "tower_n_17": {
+                    "tower_n_17": [
+                        "lt_17_06"
                     ]
                 }
             }

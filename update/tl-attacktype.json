@@ -1,1 +1,27 @@
-{}
+{
+    "攻击造成<@ba.kw>法术伤害</>，可以通过击倒敌人生成<@ba.kw>召唤物</>，可攻击到自身<@ba.kw>召唤物</>阻挡的敌人": {
+        "name": "Tecno",
+        "code": "char_4164_tecno",
+        "note": "new Ops \"soulcaster\" Archetype trait"
+    },
+    "能够阻挡一个敌人，攻击造成法术伤害": {
+        "name": "Puppet Dancer",
+        "code": "token_10042_tecno_puppet",
+        "note": "Tecno 's Token (Puppet Dancer)"
+    },
+    "未阻挡敌人时攻击速度<@ba.kw>+{attack_speed}</>": {
+        "name": "Mousse",
+        "code": "uniequip_002_frncat",
+        "note": "new mods aft-x"
+    },
+    "攻击<$ba.dt.burning2>灼燃损伤</>爆发期间的目标时额外造成攻击力<@ba.kw>{ep_damage_ratio:0%}</>的元素伤害": {
+        "name": "Viviana",
+        "code": "uniequip_002_vvana",
+        "note": "new mods aft-d"
+    },
+    "自身阻挡的敌人受到<@ba.kw>10%</>的<$ba.magicfragile>法术脆弱</>效果": {
+        "name": "Sideroca",
+        "code": "uniequip_002_sidero",
+        "note": "new mods aft-y"
+    }
+}
