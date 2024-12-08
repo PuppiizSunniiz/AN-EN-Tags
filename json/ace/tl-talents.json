@@ -7613,7 +7613,7 @@
             {
                 "name": "低空乱流",
                 "descCN": "在地面时防御力+10%，<$ba.liftoff>起飞</>后攻击敌人时攻击力提升至110%",
-                "desc": "When on ground, DEF+10%. After <$ba.liftoff>Take off</>, ATK is increased to 115% when attacking enemies"
+                "desc": "When on ground, DEF+10%. After <$ba.liftoff>Take off</>, ATK is increased to 110% when attacking enemies"
             },
             {
                 "name": "低空乱流",
@@ -7984,7 +7984,7 @@
             {
                 "name": "视界",
                 "descCN": "在场时，所有友方单位攻击速度+5，敌方单位攻击速度-5；位于连续6格或以上直线道路的友方和敌方单位受到的效果翻倍",
-                "desc": "在场时，所有友方单位攻击速度+5，敌方单位攻击速度-5；位于连续6格或以上直线道路的友方和敌方单位受到的效果翻倍",
+                "desc": "All ally operators ASPD+5, and enemy ASPD-5; effects are doubled for allied and enemy located on a straight path of 6 or more consecutive tiles",
 				"temp" : "When on field, all allies ASPD+5, all enemies ASPD-5; all allies and enemies in the 6 frontal tiles receive double effect ??????"
             }
         ]
