@@ -54,10 +54,10 @@ json_dict           =   json_load("py/dict.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS = ["Thorns the Lodestar","Tecno","Rose Salt"] # "", 
+NEW_CHARS = [] # "", 
 
 #[["OpsName#1",num(Mod)],["OpsName#2",num(Mod)], ...]
-NEW_MODS = [["Surtr",1],["Viviana",1],["Vina Victoria",1],["Astesia",1],["Amiya (Guard)",1],["Sideroca",1],["Mousse",1],["Rose Salt",1],["Exusiai",2]] # ["",],
+NEW_MODS = [] # ["",],
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS = [] # "",

@@ -2766,8 +2766,8 @@
                     "name": "[RS] : The Rides to Lake Silberneherze",
                     "date": 1701748800,
                     "zone": {
-                        "act30side_zone1": {
-                            "name": "Platform No. 3",
+                        "act30sre_zone1": {
+                            "name": "三号站台",
                             "stage": {
                                 "act30side_tr01": "RS-TR-1 : Behind the Safety Line",
                                 "act30side_01": "RS-1 : Important Information",
@@ -2780,8 +2780,8 @@
                                 "act30side_08": "RS-8 : Terminal Velocity"
                             }
                         },
-                        "act30side_zone2": {
-                            "name": "Express Train",
+                        "act30sre_zone2": {
+                            "name": "特快列车",
                             "stage": {
                                 "act30side_ex01": "RS-EX-1 : Railroad Tie",
                                 "act30side_ex01#f#": "RS-EX-1 : Railroad Tie <b>(Challenge)</b>",
@@ -3260,7 +3260,7 @@
                     }
                 },
                 "act39side": {
-                    "name": "[EP] : 出苍白海",
+                    "name": "[EP] : Exodus from the Pale Sea",
                     "date": 1733371200,
                     "zone": {
                         "act39side_zone1": {
@@ -3275,6 +3275,27 @@
                                 "act39side_06": "EP-6 : 若退路在燃烧",
                                 "act39side_07": "EP-7 : 我的罗盘",
                                 "act39side_08": "EP-8 : 见证，征服，定义"
+                            }
+                        },
+                        "act39side_zone2": {
+                            "name": "穿越骸礁",
+                            "stage": {
+                                "act39side_ex01": "EP-EX-1 : 雅隆旧址",
+                                "act39side_ex01#f#": "EP-EX-1 : 雅隆旧址 <b>(Challenge)</b>",
+                                "act39side_ex02": "EP-EX-2 : 陆港遗迹",
+                                "act39side_ex02#f#": "EP-EX-2 : 陆港遗迹 <b>(Challenge)</b>",
+                                "act39side_ex03": "EP-EX-3 : 盐花田地",
+                                "act39side_ex03#f#": "EP-EX-3 : 盐花田地 <b>(Challenge)</b>",
+                                "act39side_ex04": "EP-EX-4 : 鸣鳞原野",
+                                "act39side_ex04#f#": "EP-EX-4 : 鸣鳞原野 <b>(Challenge)</b>",
+                                "act39side_ex05": "EP-EX-5 : 星河水镜",
+                                "act39side_ex05#f#": "EP-EX-5 : 星河水镜 <b>(Challenge)</b>",
+                                "act39side_ex06": "EP-EX-6 : 盐鳞坟场",
+                                "act39side_ex06#f#": "EP-EX-6 : 盐鳞坟场 <b>(Challenge)</b>",
+                                "act39side_ex07": "EP-EX-7 : 盐船残骸",
+                                "act39side_ex07#f#": "EP-EX-7 : 盐船残骸 <b>(Challenge)</b>",
+                                "act39side_ex08": "EP-EX-8 : 盐海尽头",
+                                "act39side_ex08#f#": "EP-EX-8 : 盐海尽头 <b>(Challenge)</b>"
                             }
                         }
                     }
@@ -5582,7 +5603,7 @@
         "weekly_2": "PR-B : Fierce Attack (Snipers & Casters)",
         "weekly_3": "PR-C : Unstoppable Charge (Vanguards & Supporters)",
         "weekly_4": "PR-D : Fearless Protection (Guards & Specialists)",
-        "act39side": "[EP] : 出苍白海",
+        "act39side": "[EP] : Exodus from the Pale Sea",
         "act1vautochess": "Stronghold Protocol",
         "act38side": "[PV] : I Portatori dei Velluti",
         "act37side": "[GO] : Ending a Grand Overture",
@@ -29536,6 +29557,10 @@
                 "act39side": {
                     "act39side_zone1": [
                         "act39side_08"
+                    ],
+                    "act39side_zone2": [
+                        "act39side_ex08",
+                        "act39side_ex08#f#"
                     ]
                 }
             }
@@ -29545,6 +29570,142 @@
                 "act39side": {
                     "act39side_zone1": [
                         "act39side_08"
+                    ],
+                    "act39side_zone2": [
+                        "act39side_ex08",
+                        "act39side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10042_prtrop_2": {
+            "sidestory": {
+                "act39side": {
+                    "act39side_zone2": [
+                        "act39side_ex01",
+                        "act39side_ex01#f#",
+                        "act39side_ex02",
+                        "act39side_ex02#f#",
+                        "act39side_ex06",
+                        "act39side_ex06#f#",
+                        "act39side_ex07",
+                        "act39side_ex07#f#",
+                        "act39side_ex08",
+                        "act39side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10043_sailor_2": {
+            "sidestory": {
+                "act39side": {
+                    "act39side_zone2": [
+                        "act39side_ex01",
+                        "act39side_ex01#f#",
+                        "act39side_ex02",
+                        "act39side_ex02#f#",
+                        "act39side_ex03",
+                        "act39side_ex03#f#",
+                        "act39side_ex04",
+                        "act39side_ex04#f#",
+                        "act39side_ex05",
+                        "act39side_ex05#f#",
+                        "act39side_ex06",
+                        "act39side_ex06#f#",
+                        "act39side_ex07",
+                        "act39side_ex07#f#",
+                        "act39side_ex08",
+                        "act39side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10045_parrot_2": {
+            "sidestory": {
+                "act39side": {
+                    "act39side_zone2": [
+                        "act39side_ex01",
+                        "act39side_ex01#f#",
+                        "act39side_ex02",
+                        "act39side_ex02#f#",
+                        "act39side_ex03",
+                        "act39side_ex03#f#",
+                        "act39side_ex04",
+                        "act39side_ex04",
+                        "act39side_ex04#f#",
+                        "act39side_ex04#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10044_wintun_2": {
+            "sidestory": {
+                "act39side": {
+                    "act39side_zone2": [
+                        "act39side_ex03",
+                        "act39side_ex03#f#",
+                        "act39side_ex07",
+                        "act39side_ex07#f#",
+                        "act39side_ex08",
+                        "act39side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10048_prtsld_2": {
+            "sidestory": {
+                "act39side": {
+                    "act39side_zone2": [
+                        "act39side_ex04",
+                        "act39side_ex04#f#",
+                        "act39side_ex05",
+                        "act39side_ex05#f#",
+                        "act39side_ex06",
+                        "act39side_ex06#f#",
+                        "act39side_ex07",
+                        "act39side_ex07#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10046_pshark_2": {
+            "sidestory": {
+                "act39side": {
+                    "act39side_zone2": [
+                        "act39side_ex04",
+                        "act39side_ex04#f#",
+                        "act39side_ex06",
+                        "act39side_ex06#f#",
+                        "act39side_ex08",
+                        "act39side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10047_shrknt_2": {
+            "sidestory": {
+                "act39side": {
+                    "act39side_zone2": [
+                        "act39side_ex05",
+                        "act39side_ex05#f#",
+                        "act39side_ex06",
+                        "act39side_ex06#f#",
+                        "act39side_ex07",
+                        "act39side_ex07#f#",
+                        "act39side_ex08",
+                        "act39side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10049_pcaptn_2": {
+            "sidestory": {
+                "act39side": {
+                    "act39side_zone2": [
+                        "act39side_ex07",
+                        "act39side_ex07#f#",
+                        "act39side_ex08",
+                        "act39side_ex08#f#"
                     ]
                 }
             }
@@ -42042,7 +42203,7 @@
             },
             "sidestory": {
                 "act30side": {
-                    "act30side_zone2": [
+                    "act30sre_zone2": [
                         "act30side_ex06",
                         "act30side_ex06#f#"
                     ]
@@ -44663,7 +44824,7 @@
         "enemy_1381_winman": {
             "sidestory": {
                 "act30side": {
-                    "act30side_zone1": [
+                    "act30sre_zone1": [
                         "act30side_tr01",
                         "act30side_01",
                         "act30side_02",
@@ -44687,7 +44848,7 @@
         "enemy_1382_winbal": {
             "sidestory": {
                 "act30side": {
-                    "act30side_zone1": [
+                    "act30sre_zone1": [
                         "act30side_01",
                         "act30side_05",
                         "act30side_08"
@@ -44705,7 +44866,7 @@
         "enemy_1187_krghd": {
             "sidestory": {
                 "act30side": {
-                    "act30side_zone1": [
+                    "act30sre_zone1": [
                         "act30side_01",
                         "act30side_02"
                     ]
@@ -44761,7 +44922,7 @@
         "enemy_1389_winbab": {
             "sidestory": {
                 "act30side": {
-                    "act30side_zone1": [
+                    "act30sre_zone1": [
                         "act30side_02"
                     ]
                 }
@@ -44777,7 +44938,7 @@
         "enemy_1383_windog": {
             "sidestory": {
                 "act30side": {
-                    "act30side_zone1": [
+                    "act30sre_zone1": [
                         "act30side_03",
                         "act30side_05",
                         "act30side_06"
@@ -44795,7 +44956,7 @@
         "enemy_1386_winmag": {
             "sidestory": {
                 "act30side": {
-                    "act30side_zone1": [
+                    "act30sre_zone1": [
                         "act30side_04",
                         "act30side_07"
                     ]
@@ -44812,7 +44973,7 @@
         "enemy_1388_wingnt": {
             "sidestory": {
                 "act30side": {
-                    "act30side_zone1": [
+                    "act30sre_zone1": [
                         "act30side_04",
                         "act30side_07",
                         "act30side_08"
@@ -44837,7 +44998,7 @@
         "enemy_1384_winfrz": {
             "sidestory": {
                 "act30side": {
-                    "act30side_zone1": [
+                    "act30sre_zone1": [
                         "act30side_05",
                         "act30side_05",
                         "act30side_06",
@@ -44870,7 +45031,7 @@
         "enemy_1385_winbom": {
             "sidestory": {
                 "act30side": {
-                    "act30side_zone1": [
+                    "act30sre_zone1": [
                         "act30side_06",
                         "act30side_07",
                         "act30side_08"
@@ -44888,7 +45049,7 @@
         "enemy_1387_winshd": {
             "sidestory": {
                 "act30side": {
-                    "act30side_zone1": [
+                    "act30sre_zone1": [
                         "act30side_06",
                         "act30side_07",
                         "act30side_08"
@@ -44906,10 +45067,10 @@
         "enemy_1549_windoc": {
             "sidestory": {
                 "act30side": {
-                    "act30side_zone1": [
+                    "act30sre_zone1": [
                         "act30side_08"
                     ],
-                    "act30side_zone2": [
+                    "act30sre_zone2": [
                         "act30side_ex08",
                         "act30side_ex08",
                         "act30side_ex08#f#",
@@ -44921,7 +45082,7 @@
         "enemy_1382_winbal_2": {
             "sidestory": {
                 "act30side": {
-                    "act30side_zone2": [
+                    "act30sre_zone2": [
                         "act30side_ex01",
                         "act30side_ex01#f#",
                         "act30side_ex03",
@@ -44948,7 +45109,7 @@
         "enemy_1381_winman_2": {
             "sidestory": {
                 "act30side": {
-                    "act30side_zone2": [
+                    "act30sre_zone2": [
                         "act30side_ex01",
                         "act30side_ex01#f#",
                         "act30side_ex02",
@@ -44979,7 +45140,7 @@
         "enemy_1383_windog_2": {
             "sidestory": {
                 "act30side": {
-                    "act30side_zone2": [
+                    "act30sre_zone2": [
                         "act30side_ex01",
                         "act30side_ex01#f#",
                         "act30side_ex02",
@@ -45002,7 +45163,7 @@
         "enemy_1387_winshd_2": {
             "sidestory": {
                 "act30side": {
-                    "act30side_zone2": [
+                    "act30sre_zone2": [
                         "act30side_ex02",
                         "act30side_ex02#f#",
                         "act30side_ex03",
@@ -45027,7 +45188,7 @@
         "enemy_1384_winfrz_2": {
             "sidestory": {
                 "act30side": {
-                    "act30side_zone2": [
+                    "act30sre_zone2": [
                         "act30side_ex03",
                         "act30side_ex03#f#",
                         "act30side_ex06",
@@ -45050,7 +45211,7 @@
         "enemy_1388_wingnt_2": {
             "sidestory": {
                 "act30side": {
-                    "act30side_zone2": [
+                    "act30sre_zone2": [
                         "act30side_ex04",
                         "act30side_ex04#f#",
                         "act30side_ex06",
@@ -45071,7 +45232,7 @@
         "enemy_1385_winbom_2": {
             "sidestory": {
                 "act30side": {
-                    "act30side_zone2": [
+                    "act30sre_zone2": [
                         "act30side_ex05",
                         "act30side_ex05#f#",
                         "act30side_ex07",
@@ -45092,7 +45253,7 @@
         "enemy_1386_winmag_2": {
             "sidestory": {
                 "act30side": {
-                    "act30side_zone2": [
+                    "act30sre_zone2": [
                         "act30side_ex05",
                         "act30side_ex05#f#",
                         "act30side_ex08",
@@ -45111,7 +45272,7 @@
         "enemy_1389_winbab_2": {
             "sidestory": {
                 "act30side": {
-                    "act30side_zone2": [
+                    "act30sre_zone2": [
                         "act30side_ex05",
                         "act30side_ex05#f#",
                         "act30side_ex07",
