@@ -241,13 +241,13 @@ for i in range(6):
         op = re.search(r"<@rc.eml>(.+?)</>",ops).group(1) if re.search(r"<@rc.eml>(.+?)</>",ops) else ops
         json_akhr[[index for index,d in enumerate(json_akhr) if name_check(d["name_en"]) == bypass.get(op,op)][0]]["globalHidden"] = False
 
-with open("json/tl-akhr.json",'w') as filepath :
+with open("json/tl-akhr.json", "w", encoding="utf-8") as filepath :
     json.dump(json_akhr,filepath,indent = 4, ensure_ascii = False)
     
-with open("update/tl-talent.json",'w') as filepath :
+with open("update/tl-talent.json", "w", encoding="utf-8") as filepath :
     json.dump(talent_tl,filepath,indent = 4, ensure_ascii = False)
 
-with open("update/tl-skill.json",'w') as filepath :
+with open("update/tl-skill.json", "w", encoding="utf-8") as filepath :
     json.dump(skill_tl,filepath,indent = 4, ensure_ascii = False)
 
 #########################################################################################################
@@ -261,7 +261,7 @@ for new_mat in NEW_MATS:
 mat_button.sort(reverse = False,key = lambda new_mat : new_mat.split("\"")[-2][0:-1]) #sort mat id
 mat_button.sort(reverse = True, key = lambda new_mat : new_mat.split("\"")[-2][-1]) #sort rarity
 
-with open("update/akmatuses.txt",'w') as writer:
+with open("update/akmatuses.txt", "w", encoding="utf-8") as writer:
     writer.write("\n\n".join(mat_button))
 
 drop_parse = {
@@ -321,7 +321,7 @@ for mat_data in json_akmaterial:
         mat_data.pop(key)
         mat_data[key] = temp
 
-with open("json/akmaterial.json",'w') as filepath :
+with open("json/akmaterial.json", "w", encoding="utf-8") as filepath :
     json.dump(json_akmaterial,filepath,indent = 4, ensure_ascii = False)
 
 ##tl-item.json
@@ -331,7 +331,7 @@ for mat_data in json_tl_item:
             if mat_data["itemId"] in lang[1]["items"].keys():
                 mat_data[lang[0]] = lang[1]["items"][mat_data["itemId"]]["name"]
 
-with open("json/tl-item.json",'w') as filepath :
+with open("json/tl-item.json", "w", encoding="utf-8") as filepath :
     json.dump(json_tl_item,filepath,indent = 4, ensure_ascii = False)
 
 #########################################################################################################
@@ -378,7 +378,7 @@ for new_mod_list in NEW_MODS:
     except:
         skip_mod.append(new_mod_list)
 
-with open("update/tl-module.json",'w') as filepath :
+with open("update/tl-module.json", "w", encoding="utf-8") as filepath :
     json.dump(mod_tl,filepath,indent = 4, ensure_ascii = False)
 
 poplist = []
@@ -388,7 +388,7 @@ for mod in json_temp_mod.keys():
 for mod in poplist:
     json_temp_mod.pop(mod)
 
-with open("json/tl-module.json",'w') as filepath :
+with open("json/tl-module.json", "w", encoding="utf-8") as filepath :
     json.dump(json_temp_mod,filepath,indent = 4, ensure_ascii = False)
 
 #########################################################################################################
@@ -401,7 +401,7 @@ for key in new_trait.keys():
 for key in pop:
     new_trait.pop(key)
 
-with open("update/tl-attacktype.json",'w') as filepath :
+with open("update/tl-attacktype.json", "w", encoding="utf-8") as filepath :
     json.dump(new_trait,filepath,indent = 4, ensure_ascii = False)
 
 #########################################################################################################
@@ -416,7 +416,7 @@ for term in json_term["termDescriptionDict"].keys():
     if term in json_constructEN["termDescriptionDict"].keys() and 'cc.' not in term :
         json_term["termDescriptionDict"][term] = json_constructEN["termDescriptionDict"][term]
         
-with open("json/named_effects.json",'w') as filepath :
+with open("json/named_effects.json", "w", encoding="utf-8") as filepath :
     json.dump(json_term,filepath,indent = 4, ensure_ascii = False)
 
 #########################################################################################################
@@ -437,7 +437,7 @@ for riic in json_buildingEN["buffs"].keys():
                             "descformat"    :   json_buildingEN["buffs"][riic]["description"]
                         }
     
-with open("json/ace/riic.json",'w') as filepath :
+with open("json/ace/riic.json", "w", encoding="utf-8") as filepath :
     json.dump(json_riicTL,filepath,indent = 4, ensure_ascii = False)
 
 Akenemy()

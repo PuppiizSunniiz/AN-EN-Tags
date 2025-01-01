@@ -784,7 +784,7 @@
                         var charname    = char['name_'+languages[i]];
                         var unreadable  = query(db.unreadNameTL,"name",char.name_en)
                         var input       = inputs.toUpperCase();                        
-                        var search      = (unreadable ? (unreadable.name_en + charname + char.id).toUpperCase().search(input) : (charname + char.id).toUpperCase().search(input));
+                        var search      = (unreadable ? (unreadable.name_en + charname + char.id.replace("char_","")).toUpperCase().search(input) : (charname + char.id.replace("char_","")).toUpperCase().search(input));
                         if(search != -1){
                             found = true;
                             break;

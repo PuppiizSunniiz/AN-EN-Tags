@@ -263,13 +263,13 @@ def enemy_ability_list(json_Database : dict, json_DatabaseEN : dict, json_Handbo
     print(f'Enemy Motion = {enemy_motion}')
     print(f'Enemy Attack Type = {enemy_applyWay}\n')
     
-    with open("test/enemy_database_stat.json",'w') as JSON :
+    with open("test/enemy_database_stat.json", "w", encoding="utf-8") as JSON :
         json.dump(enemy_database,JSON,indent = 4, ensure_ascii = False)
 
-    with open("test/enemy_database_abilities.json",'w') as JSON :
+    with open("test/enemy_database_abilities.json", "w", encoding="utf-8") as JSON :
         json.dump(enemy_abilities_database, JSON, indent = 4, ensure_ascii = False)
         
-    with open("json/enemy_abilities.json",'w') as JSON :
+    with open("json/enemy_abilities.json", "w", encoding="utf-8") as JSON :
         json.dump(json_enemy_ablilies, JSON, indent = 4, ensure_ascii = False)
 
 ################################################################################################################################################################################################################################################
@@ -523,7 +523,7 @@ def get_stage_gamemode(stage_event : str) -> str :
         elif stage_event.find("IS#") != -1 :
             return "is"
         
-        elif re.search(r"act[0-9]{1,2}(lock|vecb|vautochess)",stage_event) or stage_event in ["act42d0"]: # act42d0 = DOS
+        elif re.search(r"act[0-9]{1,2}(lock|vecb|vautochess|arcade)",stage_event) or stage_event in ["act42d0"]: # act42d0 = DOS
             return "exp"
         
         elif stage_event.find("bossrush") != -1 :
@@ -1011,20 +1011,20 @@ def akenemy_collect(json_zone, json_zoneEN):
 # JSON Dumpling
 ################################################################################################################################################################################################################################################
 def json_dumps():
-    with open("json/activity.json",'w') as JSON :
+    with open("json/activity.json", "w", encoding="utf-8") as JSON :
         json.dump(activity_collection, JSON, indent = 4, ensure_ascii = False)
 
-    with open("test/stage.json",'w') as JSON :
+    with open("test/stage.json", "w", encoding="utf-8") as JSON :
         json.dump(stage_collection,  JSON, indent = 4, ensure_ascii = False)
     
-    with open("json/akenemy.json",'w') as JSON :
+    with open("json/akenemy.json", "w", encoding="utf-8") as JSON :
         json.dump(akenemy, JSON, indent = 4, ensure_ascii = False)
 
     print(f'\n>>Stage Collected Total : {stage_total} stages')
     print(f'>> Akenemy Completed\n\n\t{datetime.now().strftime("%d %b %Y %H:%M:%S")}\n')
 
 def test_dumps(dump_collection):
-    with open("test/test-dump.json",'w') as JSON :
+    with open("test/test-dump.json", "w", encoding="utf-8") as JSON :
         json.dump(dump_collection, JSON, indent = 4, ensure_ascii = False)
 
 ################################################################################################################################################################################################################################################

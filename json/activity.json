@@ -1,5 +1,10 @@
 {
     "Dict": {
+        "act1arcade": {
+            "nameCN": "视相博物馆",
+            "nameEN": "Poly Vision Museum",
+            "startCN": 1735459200
+        },
         "act30sre": {
             "nameCN": "银心湖列车·复刻",
             "nameEN": "The Rides to Lake Silberneherze - Rerun",
@@ -769,6 +774,11 @@
             "nameCN": "66号航道",
             "nameEN": "66号航道",
             "startCN": 1730059200
+        },
+        "camp_r_26": {
+            "nameCN": "壬午号水稻田",
+            "nameEN": "壬午号水稻田",
+            "startCN": 1736107200
         },
         "tower_tr_01": {
             "nameCN": "7号训练场",
@@ -1771,6 +1781,16 @@
             "act30sre",
             "The Rides to Lake Silberneherze - Rerun",
             1734595200
+        ],
+        [
+            "act1arcade",
+            "Poly Vision Museum",
+            1735459200
+        ],
+        [
+            "camp_r_26",
+            "壬午号水稻田",
+            1736107200
         ]
     ]
 }
