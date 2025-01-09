@@ -72,6 +72,12 @@
 
 ---
 
+# Akmatuses
+## Need Fix !!!
+    - Fix module relate (CN change how dict construct in PEPE)
+
+---
+
 # (NEW Idea) Aktable
 compare stat/profile with sortable table (maybe filter too) for operators and enemies
 ## Ops

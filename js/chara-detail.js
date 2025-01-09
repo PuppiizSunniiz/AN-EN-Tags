@@ -73,6 +73,8 @@
         //TEMPModuleTalent
         TempModuletalentsTL :"./json/tl-module.json"
     };
+    const d = new Date()
+    const sus = (d.getDate() < 8) && (d.getMonth() == 3)
 
     var db = {}
     LoadAllJsonObjects(jsonList).then(function(result) {
@@ -906,6 +908,10 @@
                         <li class=" ak-shadow-small ak-rare-${result[i].rarity}"style="width:100%;cursor: pointer;margin-bottom:2px" onclick="selectOperator('${result[i].id}')">${image} ${result[i].name_readable?`[${result[i].name_readable}]`:""} ${result[i].nameTL} (${result[i].name})</li>`);
                     }
                 }
+            } else {
+                $('#operatorsResult').empty();
+                $('#operatorsResult').append(`
+                    <li cstyle="width:100%;cursor: pointer;margin-bottom:2px;" style="color: red; font-size: large;" ><img style="height:40px;padding:2px" src="extra/not_found.png"> No result</li>`);
             }
 
             //<a href="?opname=${getENname(val.name)}">
@@ -1320,7 +1326,7 @@
 
 
         if(skinName != ''){
-            $("#charazoom").attr("src","https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/characters/"+skinName+".png");
+            $("#charazoom").attr("src","https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/characters/"+skinName+(sus && opdataFull.id == "char_298_susuro"?"sus":"")+".png");
         } else {
             $("#charazoom").attr("src",src);
         }
@@ -1594,15 +1600,15 @@
                     console.log(skindata)
                     zoombtn.push($(`<button class="btn ak-c-black btn-dark" style="margin:2px;padding:2px; height: 50px; width: 50px;" onclick="ChangeZoomChara('${skindata.portraitId}')"><img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/${i}-s.png'></button>`))
                     if(i == 0){
-                        $("#charazoom").attr("src","https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/characters/"+skindata.portraitId+".png");
+                        $("#charazoom").attr("src","https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/characters/"+skindata.portraitId+(sus && opdataFull.id == "char_298_susuro"?"sus":"")+".png");
                         $('#charazoom').modal('handleUpdate')
 
                         tabcontent.push($("<div class='tab-pane container active' id='opCG_0_tab'>"
-                            +"<img class='chara-image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/characters/"+skindata.portraitId+".png'>"
+                            +"<img class='chara-image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/characters/"+skindata.portraitId+(sus && opdataFull.id == "char_298_susuro"?"sus":"")+".png'>"
                             +"</div>"));
                     } else {
                         tabcontent.push($("<div class='tab-pane container' id='opCG_"+i+"_tab'>"
-                            +"<img class='chara-image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/characters/"+skindata.portraitId+".png'>"
+                            +"<img class='chara-image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/characters/"+skindata.portraitId+(sus && opdataFull.id == "char_298_susuro"?"sus":"")+".png'>"
                             +"</div>"));
                     }
                 }
@@ -1640,12 +1646,12 @@
                     console.log(extraSkin[i]);
                     console.log(currskingroup)
                     zoombtn.push($(`<button class="btn ak-c-black btn-dark" style="margin:2px;padding:2px; height: 50px; width: 50px;" onclick="ChangeZoomChara('${encodeURIComponent(extraSkin[i].portraitId)}')">
-                    <img style="max-width:40px;max-height:40px;" src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${encodeURIComponent(extraSkin[i].avatarId)}.png'>
+                    <img style="max-width:40px;max-height:40px;" src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${encodeURIComponent(extraSkin[i].avatarId)}${sus && opdataFull.id == "char_298_susuro"?"sus":""}.png'>
                     </button>`))
 
                     tabcontent.push($(`
                     <div class='tab-pane container' id='opCG_S${i}_tab'>
-                    <img class='chara-image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/characters/${encodeURIComponent(extraSkin[i].portraitId)}.png'>
+                    <img class='chara-image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/characters/${encodeURIComponent(extraSkin[i].portraitId)}${sus && opdataFull.id == "char_298_susuro"?"sus":""}.png'>
                     </div>
                     `))
 
@@ -1663,7 +1669,7 @@
 
                         <a class="btn tabbing-btns tabbing-btns-middle" style="${extraSkin[i].dynIllustId?"width:62px":""}" data-toggle='pill' href='#opCG_S${i}_tab' onClick='ChangeSkin("${extraSkin[i].portraitId.replace("#","_")}","","${extraSkin[i].skinId}")'>
                             <div style="display:inline-block;height:100%;vertical-align:middle;"></div>
-                            <img class='skinimage' style="max-width: 48px;max-height: 48px;margin-left:-5px;margin-top:1px" src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${encodeURIComponent(extraSkin[i].avatarId)}.png'>
+                            <img class='skinimage' style="max-width: 48px;max-height: 48px;margin-left:-5px;margin-top:1px" src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${encodeURIComponent(extraSkin[i].avatarId)}${sus && opdataFull.id == "char_298_susuro"?"sus":""}.png'>
                         </a></li>
                         `)
                 }
