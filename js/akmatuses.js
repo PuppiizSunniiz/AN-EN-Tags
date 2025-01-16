@@ -138,6 +138,11 @@ var d1=[,]
 var d2=[,]
 var d3=[,]
 var mat_total={'en':{},'cn':{}}
+const CLASS_PARSE_EN = {
+                        "MEDIC"   : "Medic",          "WARRIOR"   : "Guard",
+                        "SPECIAL" : "Specialist",     "SNIPER"    : "Sniper",
+                        "PIONEER" : "Vanguard",       "CASTER"    : "Caster",
+                        "SUPPORT" : "Supporter",      "TANK"      : "Defender"}
 
 // character_table.json
 $.each(charsLib, function (i,val){
@@ -220,12 +225,12 @@ $.each(charsLib, function (i,val){
                         charsmat[val["Lang"]][mat.id].push({
                             "class": elevel,
                             "id": key,
-                            "name": val["Lang"]=='en'?char.name+" (Guard)":char.appellation+" (Guard)",
+                            "name": val["Lang"]=='en'?`${char.name} (${CLASS_PARSE_EN[char.profession]})`:`${char.appellation} (${CLASS_PARSE_EN[char.profession]})`,
                             "count": mat.count,
                             "char_level": char.rarity.length>1?Number(char.rarity.slice(-1)):char.rarity + 1
                         })
                         if(!(key in charparse)) {
-                        charparse[key]={"name":val["Lang"]=='en'?char.name+" (Guard)":char.appellation+" (Guard)",
+                        charparse[key]={"name":val["Lang"]=='en'?`${char.name} (${CLASS_PARSE_EN[char.profession]})`:`${char.appellation} (${CLASS_PARSE_EN[char.profession]})`,
                                         "char_level":char.rarity.length>1?Number(char.rarity.slice(-1)):char.rarity + 1}}
                     });
                 }
@@ -238,7 +243,7 @@ $.each(charsLib, function (i,val){
                     charsmat[val["Lang"]][mat.id].push({
                         "class": "Skill-up",
                         "id": key,
-                        "name": val["Lang"]=='en'?char.name+" (Guard)":char.appellation+" (Guard)",
+                        "name": val["Lang"]=='en'?`${char.name} (${CLASS_PARSE_EN[char.profession]})`:`${char.appellation} (${CLASS_PARSE_EN[char.profession]})`,
                         "count": mat.count,
                         "char_level": char.rarity.length>1?Number(char.rarity.slice(-1)):char.rarity + 1,
                         "skill_index": 0,
@@ -260,7 +265,7 @@ $.each(charsLib, function (i,val){
                         charsmat[val["Lang"]][mat.id].push({
                             "class": "Skill-up",
                             "id": key,
-                            "name": val["Lang"]=='en'?char.name+" (Guard)":char.appellation+" (Guard)",
+                            "name": val["Lang"]=='en'?`${char.name} (${CLASS_PARSE_EN[char.profession]})`:`${char.appellation} (${CLASS_PARSE_EN[char.profession]})`,
                             "count": mat.count,
                             "char_level": char.rarity.length>1?Number(char.rarity.slice(-1)):char.rarity + 1,
                             "skill_index": skill_index + 1,
@@ -279,20 +284,21 @@ $.when(d1[0],d1[1],d2[0],d2[1]).then(function () {
     $.each(charsLib, function (i,val){
         d3[i] = $.getJSON("json/gamedata/"+val["path"]+"/gamedata/excel/uniequip_table.json", function (data) {
             $.each(data.equipDict, function (_,mod) {
-                if(mod.charEquipOrder>0){
+                if(mod.itemCost){
                     for (i=0;i<3;i++){
                         for(j=0;j<mod.itemCost[String(i+1)].length;j++){
                             if(mod.itemCost[String(i+1)][j].type!="GOLD"){
                                 //console.log(mod.itemCost[String(i+1)][j].id)
                                 if(!(mod.itemCost[String(i+1)][j].id in charsmat[val["Lang"]])) charsmat[val["Lang"]][mod.itemCost[String(i+1)][j].id] = [];
+                                charId = mod.tmplId?mod.tmplId:mod.charId //Amiya case tmplId = alter id -> charId = base id
                                 charsmat[val["Lang"]][mod.itemCost[String(i+1)][j].id].push({
                                     "class": "Module",
-                                    "id": mod.charId,
-                                    "name": charparse[mod.charId]["name"],
+                                    "id": charId,
+                                    "name": charparse[charId]["name"],
                                     "count": mod.itemCost[String(i+1)][j].count,
                                     "mod_index": mod.typeIcon.toLowerCase(),
                                     "mod_level": i+1,
-                                    "char_level": charparse[mod.charId].char_level
+                                    "char_level": charparse[charId].char_level
                                 })
                             }
                         }
@@ -556,7 +562,7 @@ function actualize() {
                     // info += skill_levels[char.skill_level];
                     if (char.skill_index > 0) {
                         info = `<div style='background-color:transparent;margin:2px 0px 2px 0px;display:flex;width:100%;'>`;
-                        info += `<div style='color:#ffffff;font-size:24px;font-weight:bold;background:#000;width:50%;float:left;margin-right:1px;display:flex;justify-content:center;align-items:center;padding:0px 5px 0px 5px;'>S${char.skill_index}</div>`;
+                        info += `<div style='color:#ffffff;font-size:24px;font-weight:bold;background:#000;width:50%;float:left;margin-right:1px;display:flex;justify-content:center;align-items:center;padding:0px 5px 0px 5px;min-width: 40px;'>S${char.skill_index}</div>`;
                         info += `<div style="background:#222; width:50%; float:right; display:flex; justify-content:center; margin-left:1px;padding:0px 5px 0px 5px;">`
                     }
                     info += `<img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/rank/${skill_levels[char.skill_level].toLocaleLowerCase()}.png' style='width:40px;height:40px'title='Skill ${titleimg}'>`;
@@ -565,8 +571,8 @@ function actualize() {
                     }
                 } else if (char.class == "Module") {
                     info = `<div style='background-color:transparent;margin:2px 0px 2px 0px;display:flex;width:100%;'>`;
-                        info += `<div style='color:#ffffff;font-size:14px;font-weight:bold;background:#000;width:50%;float:left;margin-right:1px;display:flex;justify-content:center;align-items:center;padding:0px 5px 0px 5px;'>
-                                    <img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/type/${char.mod_index}.png' style='width:40px;height:40px'title='${char.mod_index.replace("-d","-∆").toUpperCase().replace("-A","-α")}'>
+                        info += `<div style='color:#ffffff;font-size:14px;font-weight:bold;background:#000;width:50%;float:left;margin-right:1px;display:flex;justify-content:center;align-items:center;padding:0px 5px 0px 5px;min-width: 40px;'>
+                                    <img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/type/${char.mod_index}.png' style='height:40px'title='${char.mod_index.replace("-d","-∆").toUpperCase().replace("-A","-α")}'>
                                 </div>`
                         info += `<div style="background:#222; width:50%; float:right; display:flex; justify-content:center; margin-left:1px;padding:0px 5px 0px 5px;">`
                         info += `<img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/stage/img_stg${char.mod_level}.png' style='width:40px;height:40px'title='Level ${char.mod_level}'></div>`;
@@ -578,7 +584,7 @@ function actualize() {
                 //body.push(info + `<div class="item-amount" style="font-weight: bold; padding: 0px 2px 0px 2px; border-radius: 5px; z-index: 2; background-color: #000000;color:#ddd">${char.mod_index?"["+char.mod_index.toUpperCase()+"] - ":""}${char.count}x</div>`);
                 if(char.class=="Module"){
                     body.push(info + `  <div style='background-color:transparent;margin:2px 0px 0px 0px;display:flex;width:100%;'>
-                                            <div class="mod-index" style="padding: 0px 2px 0px 2px; border-radius: 5px; z-index: 2; background-color: #000000;color:#ddd ;width:50%; float:left; display:flex; justify-content:center;align-items:center;margin-right:1px">${char.mod_index.replace("-d","-∆").toUpperCase().replace("-A","-α")}</div>
+                                            <div class="mod-index" style="padding: 0px 2px 0px 2px; border-radius: 5px; z-index: 2; background-color: #000000;color:#ddd ;width:50%; float:left; display:flex; justify-content:center;align-items:center;margin-right:1px;text-wrap: nowrap;">${char.mod_index.replace("-d","-∆").toUpperCase().replace("-A","-α")}</div>
                                             <div class="item-amount" style="font-weight: bold; padding: 0px 2px 0px 2px; border-radius: 5px; z-index: 2; background-color: #000000;color:#ddd ;width:50%; float:right; display:flex; justify-content:center;align-items:center;margin-left:1px">${char.count}x</div>`);
                 }else{
                     body.push(info + `<div class="item-amount" style="font-weight: bold; padding: 0px 2px 0px 2px; border-radius: 5px; z-index: 2; background-color: #000000;color:#ddd">${char.mod_index?"["+char.mod_index.toUpperCase()+"] - ":""}${char.count}x</div>`);

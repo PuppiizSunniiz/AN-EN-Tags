@@ -2760,44 +2760,44 @@
         "descformat": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+5%</>，每间宿舍每级额外<@cc.vup>+2%</>人脉资源的联络速度"
     },
     "manu_prod_limit&cost[011]": {
-        "name": "无畏豪情",
+        "name": "Fearless Valor",
         "desc": "进驻制造站时，仓库容量上限<@cc.vup>+10</>，心情每小时消耗<@cc.vup>-0.25</>",
-        "descformat": "进驻制造站时，仓库容量上限<@cc.vup>+10</>，心情每小时消耗<@cc.vup>-0.25</>"
+        "descformat": "When this Operator is assigned to a Factory, capacity limit <@cc.vup>+10</> and Morale consumed per hour <@cc.vup>-0.25</>"
     },
     "manu_formula_spd&dorm&lv[000]": {
-        "name": "齐心沙盗",
+        "name": "Union of Desert Bandits",
         "desc": "进驻制造站时，每间宿舍每级为<@cc.kw>贵金属</>类配方的生产力<@cc.vup>+1%</>",
-        "descformat": "进驻制造站时，每间宿舍每级为<@cc.kw>贵金属</>类配方的生产力<@cc.vup>+1%</>"
+        "descformat": "When this Operator is assigned to a Factory, <@cc.kw>Precious Metal</> productivity <@cc.vup>+1%</> for every level of each Dormitory"
     },
     "trade_ord_pepe[000]": {
-        "name": "慧眼独到",
+        "name": "Insightful",
         "desc": "进驻贸易站时，固定获取<$cc.tra.pepe><@cc.kw>特别独占订单</></>（不视作违约订单），且该类订单<@cc.vdown>不受任何订单获取效率的影响</>",
-        "descformat": "进驻贸易站时，固定获取<$cc.tra.pepe><@cc.kw>特别独占订单</></>（不视作违约订单），且该类订单<@cc.vdown>不受任何订单获取效率的影响</>"
+        "descformat": "When this Operator is assigned to a Trading Post, <$cc.tra.pepe><@cc.kw>Special Exclusive Orders</></> will be obtained at a fixed rate (not considered as Defaulted trades). These orders are <@cc.vdown>unaffected by any order acquisition efficiency modifiers</>"
     },
     "trade_ord_limit&trade&lv[000]": {
-        "name": "多面逢源",
+        "name": "All-Rounder",
         "desc": "进驻贸易站时，当前贸易站每级<@cc.vup>+1</>个订单上限",
-        "descformat": "进驻贸易站时，当前贸易站每级<@cc.vup>+1</>个订单上限"
+        "descformat": "When this Operator is assigned to a Trading Post, <@cc.vup>+1</> order limit for every level of that Trading Post"
     },
     "trade_ord_spd&limit[034]": {
-        "name": "订单分发·α",
+        "name": "Order Distribution α",
         "desc": "进驻贸易站时，订单获取效率<@cc.vup>+20%</>",
-        "descformat": "进驻贸易站时，订单获取效率<@cc.vup>+20%</>"
+        "descformat": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+20%</>"
     },
     "trade_ord_spd&limit[035]": {
-        "name": "大巴扎管理学",
+        "name": "Grand Bazaar Management",
         "desc": "进驻贸易站时，订单获取效率<@cc.vup>+30%</>，且订单上限<@cc.vup>+1</>",
-        "descformat": "进驻贸易站时，订单获取效率<@cc.vup>+30%</>，且订单上限<@cc.vup>+1</>"
+        "descformat": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+30%</> and the order limit <@cc.vup>+1</>"
     },
     "train_spd&profession3[182]": {
-        "name": "医疗专精·α",
+        "name": "Medic Expert α",
         "desc": "进驻训练室协助位时，<@cc.kw>医疗</>干员的专精技能训练速度<@cc.vup>+30%</>",
-        "descformat": "进驻训练室协助位时，<@cc.kw>医疗</>干员的专精技能训练速度<@cc.vup>+30%</>"
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Medic</> Operators' Specialization training speed <@cc.vup>+30%</>"
     },
     "train_spd&profession3[183]": {
-        "name": "实战技巧：链愈师",
+        "name": "Combat Techniques: Chain Medic",
         "desc": "进驻训练室协助位时，<@cc.kw>医疗</>干员的专精技能训练速度<@cc.vup>+30%</>，如果训练位干员分支为<@cc.kw>链愈师</>，则训练速度额外<@cc.vup>+45%</>",
-        "descformat": "进驻训练室协助位时，<@cc.kw>医疗</>干员的专精技能训练速度<@cc.vup>+30%</>，如果训练位干员分支为<@cc.kw>链愈师</>，则训练速度额外<@cc.vup>+45%</>"
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Medic</> Operators' Specialization training speed <@cc.vup>+30%</>; if the trainee's Job Branch is <@cc.kw>Chain Medic</>, training speed will be further increased by <@cc.vup>+45%</>"
     },
     "manu_prod_spd[004]": {
         "name": "差遣使魔·α",

@@ -74,7 +74,7 @@
         TempModuletalentsTL :"./json/tl-module.json"
     };
     const d = new Date()
-    const sus = (d.getDate() < 8) && (d.getMonth() == 3)
+    const sus = (d.getDate() < 8) && (d.getMonth()+1 == 4) //April 1st-7th
 
     var db = {}
     LoadAllJsonObjects(jsonList).then(function(result) {
@@ -499,22 +499,21 @@
         } else {
             console.log("selected OP defined");
             var vars = getUrlVars();
-            // curpath.forEach(element => {
-
-            // });
             if(vars.has("opname")){
                 var char = {};
                 var opname = decodeURIComponent(vars.get("opname"));
                 var unreadable = query(db.unreadNameTL,"name_en",opname.replace(/_/g," "))
                 var correctname = (unreadable?unreadable.name:opname.replace(/_/g," "))
-                char = query(db.chars,"appellation",correctname,true,true);
-                
-                $.each(char,function(key,v){
-                    opid = key;
-                    var unreadable = query(db.unreadNameTL,"name",v.appellation)
-                    var correctname = (unreadable?unreadable.name_en.replace(/ /g,"_"):v.appellation.replace(/ /g,"_"))
-                    opapp = correctname
-                })
+                if(vars.get("gamemode")){
+                    var chars = query(db.chars2,"name_en",correctname,false,false);
+                    char = query(chars,"gamemode",vars.get("gamemode"),true,false)
+                    opid = char.id
+                }else{
+                    char = query(db.chars,"appellation",correctname,true,true);
+                    console.log(char)
+                    opid = Object.keys(char)[0]
+                }
+                opapp = correctname
 
             } else opid = localStorage.getItem('selectedOPDetails');
 
@@ -637,6 +636,7 @@
         $('#operatorsResult').empty();
         $('#operatorsResult').hide();
         localStorage.removeItem('selectedOPDetails');
+        localStorage.removeItem('selectedOPGamemode');
         history.pushState(null, '', window.location.pathname);
     }
 
@@ -1351,6 +1351,8 @@
 
             if (opdata2)
             var opcode = Object.keys(opdata2)[0]
+            var gamemode = query(db.chars2,"id",opid,true,false).gamemode
+            console.log(gamemode)
 
             var opKey =""
             $.each(opdata2,function(key,v){
@@ -1359,6 +1361,7 @@
                 opdataFull = v;
                 opKey = key;
                 localStorage.setItem('selectedOPDetails', key);
+                localStorage.setItem('selectedOPGamemode', gamemode);
                 return false
             });
 
@@ -1406,12 +1409,18 @@
             var unreadable = query(db.unreadNameTL,"name",opdataFull.appellation)
             var correctname = (unreadable?unreadable.name_en.replace(/ /g,"_"):opdataFull.appellation.replace(/ /g,"_"))
             opapp = correctname
+
+            if(gamemode!="BASE")
+                url.searchParams.set("gamemode", gamemode)
+            else
+                url.searchParams.delete("gamemode")
+
             if(url.searchParams.get("opname")===correctname){
 
             }else{
                 url.searchParams.set("opname", correctname);
-                history.pushState(null, '', url);
             }
+            history.pushState(null, '', url);
 
             if(opKey==AmiyaCaster){
                 $('#class-change-1').show()

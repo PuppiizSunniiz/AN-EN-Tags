@@ -28,17 +28,13 @@
 
 # Akhrchar
 ### Need Fix !!!
-    - url conflict for reserve operator (IS Vs AC)
-        - add option for gamemode OPs (Browse = Base OPs > Option +IS & +AC)
-        - add gamemode key for ***akhr.json***
-        - add ?mode= in url for differentiate IS/AC
-        - add cookie for something necessary above
-    - Thorns alt talent 2
+    - 
 ### To do
+    - Add gamemode in Filter
+    - Skin Illustrator
     - tweak token section
         - add token Talent
         - update token trait/talent/stat when select mod
-    - Skin Illustrator
 ### Later
     - add amiya patch to char selector (Browse -Type/All/Filter)
     - add more parameter for fn => onclick="selectOperator('xxx', ...)" to go to amiya patch directly
@@ -48,12 +44,11 @@
 
 # Akhr
 ### Need Fix !!!
-    - Result sorting
+    - Prevent Name and Image to be off at the same time
 ### To do
-    - add ignore 2* 3* combination result button and js
+    - 
 ### Later
     - 
-
 
 ---
 
@@ -69,12 +64,6 @@
     - Enemy stat by Stage **
 ## Later
     - Chibi
-
----
-
-# Akmatuses
-## Need Fix !!!
-    - Fix module relate (CN change how dict construct in PEPE)
 
 ---
 

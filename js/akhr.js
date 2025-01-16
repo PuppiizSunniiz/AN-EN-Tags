@@ -174,6 +174,9 @@ $(document).ready(function(){
                 // calculate();
             }
         }
+        if(localStorage.getItem("Filter_23")){
+            $("#Filter_23").trigger('click')
+        }
         
         console.log("Show Name: ", JSON.parse(localStorage.getItem('showName')));
         console.log("Show Image: ", JSON.parse(localStorage.getItem('showImage')));
@@ -187,11 +190,11 @@ $(document).ready(function(){
             localStorage.setItem('showName',JSON.stringify(showName));
             console.log("Show Name: ", showName);
         })
-        $(document).on("click", ".btn-class", function () {
+        /*$(document).on("click", ".btn-class", function () {
             var showClass = !JSON.parse(localStorage.getItem('showClass'))
             localStorage.setItem('showClass',JSON.stringify(showClass));
             console.log("Show Class: ", showClass);
-        })
+        })*/
         $(document).on("click", ".btn-image:not(.disabled)", function () {
             var showImage = !JSON.parse(localStorage.getItem('showImage'))
             localStorage.setItem('showImage',JSON.stringify(showImage));
@@ -438,6 +441,11 @@ function clickBtnRec(el){
     $(el).removeClass("btn-secondary").addClass("btn-primary")
     refresh();
 }
+function clickBtnBan(el){
+    $(el).toggleClass("btn-primary btn-secondary");
+    localStorage.setItem(el.id,$(el).hasClass("btn-primary"))
+    refresh();
+}
 
 function clickBtnOpt2(el){
     $(el).toggleClass("btn-primary btn-secondary");
@@ -446,6 +454,7 @@ function clickBtnOpt2(el){
 }
 function clickBtnOpt3(el){
     $(el).toggleClass("btn-primary btn-secondary");
+    localStorage.setItem(el.id,$(el).hasClass("btn-primary"))
     localStorage.removeItem('lastChar')
     changeUILanguage(el);
 }
@@ -543,9 +552,9 @@ function calculate(){
         let avg_char_tag = JsonDATA.avg_char_tag;
         let all_tags = JsonDATA.tagsTL.concat(JsonDATA.typesTL);
         let len = checkedTags.length;
+        let ban23 = $("#Filter_23").hasClass("btn-primary")
         let count = Math.pow(2, checkedTags.length);
         $("#count-tag").html(checkedTags.length>=1 ? checkedTags.length==6 ? "6 [MAX]": checkedTags.length: "")
-        
         // console.log(all_chars)
         let combs = [];
         for (let i = 0; i < count; i++) {
@@ -560,7 +569,7 @@ function calculate(){
                 }
                 mask = mask * 2;
             }
-            combs.push({ "tags": ts,"tagsSource":[], "tagsTL": tstl, "score": 0.0, "possible": [] });
+            combs.push({ "tags": ts,"tagsSource":[], "tagsTL": tstl, "score": 0.0, "possible": [], "s23":false });
         }
         // console.log(combs);
         $("#tbody-recommend").empty();
@@ -586,7 +595,7 @@ function calculate(){
                     // console.log(tags_aval[tags[i]]);
                     // console.log(char);
                     $.each(tags_aval[tags[i]], function (_, tgch) {
-                        if (char.name === tgch.name) {
+                        if (char.id === tgch.id) {
                             reduced_chars.push(char);
                             return false;
                         }
@@ -620,6 +629,7 @@ function calculate(){
                 if (optStars.includes(char.level.toString())) {
                     filtered_chars.push(char);
                 }
+                if ([2,3].includes(char.level) && !comb.s23) comb.s23 = true
             });
             // console.log(filtered_chars)
             chars = filtered_chars;
@@ -630,7 +640,7 @@ function calculate(){
                 minRarity = Math.min(char.level==1?3.5:char.level, minRarity);
                 // console.log(char)
             });
-            let minRarityCount = $.grep(chars, (char, _) => char.level === minRarity).length;
+            let minRarityCount = $.grep(chars, (char, _) => (char.level==1?3.5:char.level) === minRarity).length;
             comb.score = minRarity*1000 - minRarityCount*10 - tags.length;
             //console.log("tags length = "+tags.length);
             //console.log("chars length = "+chars.length);
@@ -649,7 +659,7 @@ function calculate(){
         var showImage = JSON.parse(localStorage.getItem('showImage'))
         var size = JSON.parse(localStorage.getItem('size'))
         $.each(combs, function (_, comb) {
-            if (comb.possible.length === 0) return;
+            if (comb.possible.length === 0 || (comb.s23 && ban23)) return;
             let chars = comb.possible;
             let tags = comb.tags;
             let tagsTL = comb.tagsTL
@@ -895,7 +905,7 @@ function doubleclick(el){
 function refresh(calc=true){
     init().then(function() {
         if(calc){
-            Difftagcheck(JsonDATA.tags_aval)
+            //Difftagcheck(JsonDATA.tags_aval)
             calculate();
             
         }

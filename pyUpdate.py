@@ -110,7 +110,8 @@ def get_new_akhr(new_char_id : str, new_char_name : str) -> dict:
                                                         (["远程位"] if json_char[new_char_id]["position"] == "RANGED" else []) + \
                                                         json_char[new_char_id]["tagList"],
                                     "hidden"        :   True,
-                                    "globalHidden"  :   True
+                                    "globalHidden"  :   True,
+                                    "gamemode"      :   "BASE"
             }
 
 def update_new_trait(mode : str, new_id : str, new_char_name : str, extra = "") -> dict:
@@ -228,6 +229,7 @@ gacha_EN_list   =   cleanlist(json_gachaEN["recruitDetail"]).split("\n")
 bypass          =   {
                         "THRM-EX"               :   "Thermal-EX",
                         "\'Justice Knight\'"    :   "\"Justice Knight\"",
+                        "Justice Knight"        :   "\"Justice Knight\"",
                         "Shirayuki"             :   "ShiraYuki"
                     }
 
