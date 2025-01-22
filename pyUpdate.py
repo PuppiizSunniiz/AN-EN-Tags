@@ -54,10 +54,7 @@ json_dict           =   json_load("py/dict.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS = [] # "", 
-
-#[["OpsName#1",num(Mod)],["OpsName#2",num(Mod)], ...]
-NEW_MODS = [] # ["",],
+NEW_CHARS = ["Yu","Blaze the Igniting Spark","Xingzhu","Surfer"] # "", 
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS = [] # "",
@@ -197,7 +194,7 @@ def update_char_TraitSkillTalent(new_char_name : str) :
 #########################################################################################################
 # Chars
 #########################################################################################################
-skip_char   = []
+skip_char   = ""
 talent_tl   = {}
 skill_tl    = {}
 for new_char_name in NEW_CHARS:
@@ -205,7 +202,7 @@ for new_char_name in NEW_CHARS:
         try:
             update_char_TraitSkillTalent(new_char_name)
         except:
-            skip_char.append(new_char_name)
+            skip_char += f'{new_char_name}'
 
     if Rechecked and new_char_name in char_list:
         update_char_TraitSkillTalent(new_char_name)
@@ -339,13 +336,18 @@ with open("json/tl-item.json", "w", encoding="utf-8") as filepath :
 #########################################################################################################
 # Mod
 #########################################################################################################   
-skip_mod = []
+newmods = json_mod_table["equipTrackDict"][-1]["trackList"]
+NEW_MODS = [[newmods[i]["charId"],newmods[i]["equipId"]] for i in range(len(newmods)) if not re.search("_001_",newmods[i]["equipId"])]
+skip_mod = ""
 mod_tl = {}
+
 for new_mod_list in NEW_MODS:
-    
+    if new_mod_list[1] in json_temp_mod.keys():
+            #skip_mod += f'\n\t{new_mod_list[0]} --- {new_mod_list[1]}'
+            pass
     try:
-        char_key = char_ready["Name2Code"][new_mod_list[0]]
-        new_mod_id = json_mod_table["charEquip"][char_key][new_mod_list[1]]
+        char_key = new_mod_list[0]
+        new_mod_id = new_mod_list[1]
         mod_trait_candidate = json_mod_battle[new_mod_id]["phases"][0]["parts"][0]["overrideTraitDataBundle"]["candidates"][0]
         if mod_trait_candidate["additionalDescription"]:
             new_trait[mod_trait_candidate["additionalDescription"]] = update_new_trait("mod",new_mod_id,new_mod_list[0],json_mod_table["equipDict"][new_mod_id]["typeIcon"])
@@ -378,7 +380,7 @@ for new_mod_list in NEW_MODS:
                 if len(temp_part) :temp_phase.append(temp_part)
         mod_tl[new_mod_id] = temp_phase
     except:
-        skip_mod.append(new_mod_list)
+        skip_mod += f'\n\t{new_mod_list[0]} --- {new_mod_list[1]}'
 
 with open("update/tl-module.json", "w", encoding="utf-8") as filepath :
     json.dump(mod_tl,filepath,indent = 4, ensure_ascii = False)

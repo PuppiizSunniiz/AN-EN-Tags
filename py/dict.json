@@ -117,6 +117,7 @@
             "char_497_ctable": "Cantabile",
             "char_4017_puzzle": "Puzzle",
             "char_4144_chilc": "Chilchuck",
+            "char_4052_surfer": "Surfer",
             "char_308_swire": "Swire",
             "char_265_sophia": "Whislash",
             "char_4106_bryota": "Bryophyta",
@@ -251,6 +252,7 @@
             "char_343_tknogi": "Tsukinogi",
             "char_4019_ncdeer": "Nine-Colored Deer",
             "char_492_quercu": "Quercus",
+            "char_4172_xingzh": "Xingzhu",
             "char_4102_threye": "Valarqvin",
             "char_487_bobb": "Bobbing",
             "char_215_mantic": "Manticore",
@@ -305,6 +307,7 @@
             "char_1038_whitw2": "Lappland the Decadenza",
             "char_4046_ebnhlz": "Ebenholz",
             "char_4146_nymph": "Nymph",
+            "char_1040_blaze2": "Blaze the Igniting Spark",
             "char_206_gnosis": "Gnosis",
             "char_291_aglina": "Angelina",
             "char_358_lisa": "Suzuran",
@@ -350,6 +353,7 @@
             "char_416_zumama": "Eunectes",
             "char_4039_horn": "Horn",
             "char_1034_jesca2": "Jessica the Liberated",
+            "char_2026_yu": "Yu",
             "char_264_f12yin": "Mountain",
             "char_2024_chyue": "Chongyue",
             "char_172_svrash": "SilverAsh",
@@ -734,6 +738,9 @@
             ],
             "Chilchuck": [
                 "char_4144_chilc"
+            ],
+            "Surfer": [
+                "char_4052_surfer"
             ],
             "Swire": [
                 "char_308_swire"
@@ -1139,6 +1146,9 @@
             "Quercus": [
                 "char_492_quercu"
             ],
+            "Xingzhu": [
+                "char_4172_xingzh"
+            ],
             "Valarqvin": [
                 "char_4102_threye"
             ],
@@ -1292,6 +1302,9 @@
             "Nymph": [
                 "char_4146_nymph"
             ],
+            "Blaze the Igniting Spark": [
+                "char_1040_blaze2"
+            ],
             "Gnosis": [
                 "char_206_gnosis"
             ],
@@ -1423,6 +1436,9 @@
             ],
             "Jessica the Liberated": [
                 "char_1034_jesca2"
+            ],
+            "Yu": [
+                "char_2026_yu"
             ],
             "Mountain": [
                 "char_264_f12yin"
@@ -1868,6 +1884,9 @@
             "齐尔查克": [
                 "char_4144_chilc"
             ],
+            "寻澜": [
+                "char_4052_surfer"
+            ],
             "诗怀雅": [
                 "char_308_swire"
             ],
@@ -2274,6 +2293,9 @@
             "夏栎": [
                 "char_492_quercu"
             ],
+            "行箸": [
+                "char_4172_xingzh"
+            ],
             "凛视": [
                 "char_4102_threye"
             ],
@@ -2427,6 +2449,9 @@
             "妮芙": [
                 "char_4146_nymph"
             ],
+            "烛煌": [
+                "char_1040_blaze2"
+            ],
             "灵知": [
                 "char_206_gnosis"
             ],
@@ -2558,6 +2583,9 @@
             ],
             "涤火杰西卡": [
                 "char_1034_jesca2"
+            ],
+            "余": [
+                "char_2026_yu"
             ],
             "山": [
                 "char_264_f12yin"
@@ -2910,6 +2938,14 @@
             "🟦🟦⬛⬛⬛",
             "🟦⬛⬛⬛⬛",
             "[[0, 2], [0, 1], [1, 1], [0, 0], [1, 0], [2, 0], [3, 0], [4, 0], [0, -1], [1, -1], [0, -2]]"
+        ],
+        "4-11": [
+            "⬛⬛🟦⬛⬛",
+            "⬛🟦🟦🟦⬛",
+            "🟨🟦🟦🟦🟦",
+            "⬛🟦🟦🟦⬛",
+            "⬛⬛🟦⬛⬛",
+            "[[2, 2], [1, 1], [2, 1], [3, 1], [0, 0], [1, 0], [2, 0], [3, 0], [4, 0], [1, -1], [2, -1], [3, -1], [2, -2]]"
         ],
         "5-1": [
             "🟨🟦🟦🟦🟦🟦",

@@ -5591,7 +5591,7 @@
         }
         desc = desc.replace(/\{\-?([A-Z@_a-z\[\]0-9.]+)\}{0,1}:(.{1,4})\}/g, function(m, content, format) {
             for (var i = 0; i < blackboard.length; i++) {
-                if (blackboard[i].key==content || blackboard[i].key==-content){
+                if (blackboard[i].key.toLowerCase()==content.toLowerCase() || blackboard[i].key.toLowerCase()==-content.toLowerCase()){
                     console.log(blackboard[i].value,content)
                     let value = Math.abs(blackboard[i].value)
                     if (format && format.includes("%")) value = Math.round((value * 100000))/1000 + "%";
