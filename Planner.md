@@ -44,7 +44,7 @@
 
 # Akhr
 ### Need Fix !!!
-    - Prevent Name and Image to be off at the same time
+    - 
 ### To do
     - 
 ### Later

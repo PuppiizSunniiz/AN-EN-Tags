@@ -68,14 +68,15 @@ function init() {
                     }
                     char_tag_sum++;
                 });
-                all_chars[char.name_cn] = {
+                all_chars[char.id] = {
                     'id': char.id,
                     'name_cn': char.name_cn,
                     'name_en': char.name_en,
                     'name_jp': char.name_jp,
                     'name_kr': char.name_kr,
                     'level': char.level,
-                    'tags': char.tags
+                    'tags': char.tags,
+                    'gamemode': char.gamemode,
                 };
             });
             //$.each(tags_aval, function (key, _) {
@@ -185,21 +186,21 @@ $(document).ready(function(){
         var size = JSON.parse(localStorage.getItem('size'));
         updateImageSizeDropdownList(size);
 
-        $(document).on("click", ".btn-name", function () {
+        /*$(document).on("click", ".btn-name", function () {
             var showName = !JSON.parse(localStorage.getItem('showName'))
             localStorage.setItem('showName',JSON.stringify(showName));
             console.log("Show Name: ", showName);
         })
-        /*$(document).on("click", ".btn-class", function () {
+        $(document).on("click", ".btn-class", function () {
             var showClass = !JSON.parse(localStorage.getItem('showClass'))
             localStorage.setItem('showClass',JSON.stringify(showClass));
             console.log("Show Class: ", showClass);
-        })*/
+        })
         $(document).on("click", ".btn-image:not(.disabled)", function () {
             var showImage = !JSON.parse(localStorage.getItem('showImage'))
             localStorage.setItem('showImage',JSON.stringify(showImage));
             console.log("Show Image: ", showImage);
-        });
+        });*/
         changeUILanguage(true);
     });
 });
@@ -245,28 +246,27 @@ function showChar(el){
     let all_tags = JsonDATA.tagsTL;
     let all_types = JsonDATA.typesTL;
     let all_genders = JsonDATA.gendersTL;
+    let char_id = $(el).attr('char_id');
     let char_name = $(el).attr('data-original-title');
 
     // console.log(JsonDATA.all_chars)
     
-    if(reg!="cn"){
+    /*if(reg!="cn"){
         Object.keys(all_chars).forEach(currkey => {
             if(all_chars[currkey]["name_"+reg]==char_name){
                 char_name=all_chars[currkey]["name_cn"]
             }
         });
-    }
+    }*/
 
-
-    
     console.log(all_tags);
     //console.log(all_chars);
     console.log("char name: "+char_name);
     $(".tr-recommd").show();
     $(".tr-chartag").remove();
-    if (localStorage.getItem('lastChar') != char_name) {
-        $(".tr-recommd:not(:contains('" + $(el).text() + "'))").hide();
-        let char = all_chars[char_name];
+    if (localStorage.getItem('lastChar') != char_id) {
+        $(`.tr-recommd:not(:contains(${$(el).text()}))`).hide();
+        let char = all_chars[char_id];
         let colors = { 1: "1", 2: "2", 3: "3", 4: "4", 5: "5", 6: "6" };
         //console.log(char)
         let tags_html = [];
@@ -357,7 +357,7 @@ function showChar(el){
                         'style': "background:#444",
                         'data-toggle': "tooltip",
                         'data-placement': "right",
-                        'href': "./akhrchars.html?opname="+char.name_en.replace(/ /g,"_"),
+                        'href': "./akhrchars.html?opname="+char.name_en.replace(/ /g,"_")+(char.gamemode!="BASE"?`&gamemode=${char.gamemode}`:""),
                         'text': 'Detail'
                     })
                 ]),
@@ -368,7 +368,7 @@ function showChar(el){
         $('[data-toggle="tooltip"]').tooltip({
             trigger: "hover"
         });
-        localStorage.setItem('lastChar', char_name)
+        localStorage.setItem('lastChar', char_id)
     }else{
         $(".tr-chartag").remove();
         localStorage.removeItem('lastChar')
@@ -448,7 +448,13 @@ function clickBtnBan(el){
 }
 
 function clickBtnOpt2(el){
-    $(el).toggleClass("btn-primary btn-secondary");
+    if($(".btn-opinfo.btn-primary").length === 1 && $(el).hasClass("btn-primary"))
+        $(".btn-opinfo").toggleClass("btn-primary btn-secondary")
+    else
+        $(el).toggleClass("btn-primary btn-secondary");
+
+    localStorage.setItem("showName",$("#showName").hasClass("btn-primary"))
+    localStorage.setItem("showImage",$("#showImage").hasClass("btn-primary"))
     localStorage.removeItem('lastChar')
     refresh();
 }
@@ -552,6 +558,7 @@ function calculate(){
         let avg_char_tag = JsonDATA.avg_char_tag;
         let all_tags = JsonDATA.tagsTL.concat(JsonDATA.typesTL);
         let len = checkedTags.length;
+        let RecruitmentOnly = $("#Rec-Only").hasClass("btn-primary");
         let ban23 = $("#Filter_23").hasClass("btn-primary")
         let count = Math.pow(2, checkedTags.length);
         $("#count-tag").html(checkedTags.length>=1 ? checkedTags.length==6 ? "6 [MAX]": checkedTags.length: "")
@@ -612,7 +619,7 @@ function calculate(){
             }
 
             if (chars.length === 0) return;
-            if (!tags.includes("高级资深干员")) {
+            if (!tags.includes("高级资深干员") && RecruitmentOnly) {
                 // console.log(tags.join(",") + " 不含(高级)资深干员");
                 let reduce6 = [];
                 $.each(chars, function (_, char) {
@@ -636,12 +643,14 @@ function calculate(){
             comb.possible = chars;
             if (chars.length === 0) return;
             let minRarity = 6;
+            let maxRarity = 2;
             $.each(chars, (_, char) => {
                 minRarity = Math.min(char.level==1?3.5:char.level, minRarity);
+                maxRarity = Math.max(char.level==1?3.5:char.level, maxRarity);
                 // console.log(char)
             });
             let minRarityCount = $.grep(chars, (char, _) => (char.level==1?3.5:char.level) === minRarity).length;
-            comb.score = minRarity*1000 - minRarityCount*10 - tags.length;
+            comb.score = minRarity*10000 + maxRarity*1000 - minRarityCount*10 - tags.length;
             //console.log("tags length = "+tags.length);
             //console.log("chars length = "+chars.length);
             // console.log("avg char tag = "+avg_char_tag);
@@ -706,7 +715,8 @@ function calculate(){
                     'data-toggle': "tooltip",
                     'data-placement': "bottom",
                     'style': style,
-                    'title': char.name
+                    'title': char.name,
+                    'char_id': char.id
                 }).on('click', function() {
                     showChar(this);
                 }).append([
