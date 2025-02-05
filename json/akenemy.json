@@ -3312,7 +3312,7 @@
                                 "act40side_02": "OR-2 : 糖瓜粘",
                                 "act40side_03": "OR-3 : 油泼扯面",
                                 "act40side_04": "OR-4 : 雪里蕻",
-                                "act40side_05": "OR-5 : 雷公栗",
+                                "act40side_05": "OR-5 : 醍醐汤",
                                 "act40side_06": "OR-6 : 胜肉火方",
                                 "act40side_07": "OR-7 : 五省盘",
                                 "act40side_08": "OR-8 : 金玉藏心",
@@ -3338,6 +3338,20 @@
                                 "act40side_ex07#f#": "OR-EX-7 : 涩 <b>(Challenge)</b>",
                                 "act40side_ex08": "OR-EX-8 : 百味灵明",
                                 "act40side_ex08#f#": "OR-EX-8 : 百味灵明 <b>(Challenge)</b>"
+                            }
+                        },
+                        "act40side_zone3": {
+                            "name": "怅别离",
+                            "stage": {
+                                "act40side_s01": "OR-S-1 : 周岁宴",
+                                "act40side_s01#f#": "OR-S-1 : 周岁宴 <b>(Challenge)</b>",
+                                "act40side_s02": "OR-S-2 : 新婚宴",
+                                "act40side_s02#f#": "OR-S-2 : 新婚宴 <b>(Challenge)</b>",
+                                "act40side_s03": "OR-S-3 : 寿辰宴",
+                                "act40side_s03#f#": "OR-S-3 : 寿辰宴 <b>(Challenge)</b>",
+                                "act40side_s04": "OR-S-4 : 白事宴",
+                                "act40side_s04#f#": "OR-S-4 : 白事宴 <b>(Challenge)</b>",
+                                "act40side_mo01": "OR-MO-1 : 一日三餐"
                             }
                         }
                     }
@@ -4200,6 +4214,20 @@
                                 "crisis_v2_02-03": "Dryreed Bog",
                                 "crisis_v2_01-02": "Fortified Pass",
                                 "crisis_v2_01-04": "Research Base Quarantine Zone"
+                            }
+                        }
+                    }
+                },
+                "CCBP#03": {
+                    "name": "CCBP#03 : Battleplan Extinguished Sins",
+                    "date": 1738742400,
+                    "zone": {
+                        "CCBP#03": {
+                            "name": "CCBP#03 : Battleplan Extinguished Sins",
+                            "stage": {
+                                "crisis_v2_03-01": "TBA (Main)",
+                                "crisis_v2_03-02": "TBA",
+                                "crisis_v2_03-03": "TBA"
                             }
                         }
                     }
@@ -5841,6 +5869,7 @@
         "act42d0": "DOS : Design of Strife",
         "CCBP#01": "CCBP#01 : Battleplan Pyrolysis",
         "CCBP#02": "CCBP#02 : Battleplan Underdawn",
+        "CCBP#03": "CCBP#03 : Battleplan Extinguished Sins",
         "IS#1": "IS#1 : Ceobe's Fungimist",
         "IS#2": "IS#2 : Phantom & Crimson Solitaire",
         "IS#3": "IS#3 : Mizuki & Caerula Arbor",
@@ -15727,6 +15756,11 @@
                         "crisis_v2_01-07",
                         "crisis_v2_01-07"
                     ]
+                },
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-03"
+                    ]
                 }
             },
             "is": {
@@ -20924,6 +20958,13 @@
                 "act42d0": {
                     "challenge": [
                         "act42d0_sp05"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-03"
                     ]
                 }
             },
@@ -27870,6 +27911,13 @@
                         "tr_25"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-01"
+                    ]
+                }
             }
         },
         "enemy_1422_lrsldr": {
@@ -27908,6 +27956,13 @@
                         "tough_14-06",
                         "tough_14-08",
                         "tough_14-10"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-01"
                     ]
                 }
             }
@@ -27967,6 +28022,13 @@
                         "hard_14-01"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-01"
+                    ]
+                }
             }
         },
         "enemy_1423_lrfkkt": {
@@ -27996,6 +28058,13 @@
                         "tough_14-04",
                         "tough_14-06",
                         "tough_14-10"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-01"
                     ]
                 }
             },
@@ -28053,6 +28122,13 @@
                         "tough_14-08"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-01"
+                    ]
+                }
             }
         },
         "enemy_1426_lrthef_2": {
@@ -28089,6 +28165,13 @@
                         "tough_14-19"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-01"
+                    ]
+                }
             }
         },
         "enemy_1424_lrboom": {
@@ -28111,6 +28194,13 @@
                         "tough_14-05",
                         "tough_14-11",
                         "tough_14-11"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-01"
                     ]
                 }
             },
@@ -28142,6 +28232,13 @@
                         "tough_14-08",
                         "tough_14-10",
                         "tough_14-11"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-01"
                     ]
                 }
             },
@@ -28241,6 +28338,13 @@
                     ]
                 }
             },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-01"
+                    ]
+                }
+            },
             "is": {
                 "IS#5": {
                     "IS#5 Floor 5": [
@@ -28274,6 +28378,13 @@
                     "EP14 : Adverse Environment": [
                         "tough_14-13",
                         "tough_14-19"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-01"
                     ]
                 }
             },
@@ -28328,6 +28439,13 @@
                         "tough_14-13",
                         "tough_14-16",
                         "tough_14-19"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-01"
                     ]
                 }
             },
@@ -29751,6 +29869,17 @@
                         "act40side_ex07#f#",
                         "act40side_ex08",
                         "act40side_ex08#f#"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_s01",
+                        "act40side_s01#f#",
+                        "act40side_s02",
+                        "act40side_s02#f#",
+                        "act40side_s03",
+                        "act40side_s03#f#",
+                        "act40side_s04",
+                        "act40side_s04#f#",
+                        "act40side_mo01"
                     ]
                 }
             }
@@ -29790,6 +29919,19 @@
                         "act40side_ex08",
                         "act40side_ex08#f#",
                         "act40side_ex08#f#"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_s01",
+                        "act40side_s01#f#",
+                        "act40side_s02",
+                        "act40side_s02#f#",
+                        "act40side_s03",
+                        "act40side_s03#f#",
+                        "act40side_s04",
+                        "act40side_s04",
+                        "act40side_s04#f#",
+                        "act40side_s04#f#",
+                        "act40side_mo01"
                     ]
                 }
             }
@@ -29826,6 +29968,17 @@
                         "act40side_ex07#f#",
                         "act40side_ex08",
                         "act40side_ex08#f#"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_s01",
+                        "act40side_s01#f#",
+                        "act40side_s02",
+                        "act40side_s02#f#",
+                        "act40side_s03",
+                        "act40side_s03#f#",
+                        "act40side_s04",
+                        "act40side_s04#f#",
+                        "act40side_mo01"
                     ]
                 }
             }
@@ -29862,6 +30015,17 @@
                         "act40side_ex07#f#",
                         "act40side_ex08",
                         "act40side_ex08#f#"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_s01",
+                        "act40side_s01#f#",
+                        "act40side_s02",
+                        "act40side_s02#f#",
+                        "act40side_s03",
+                        "act40side_s03#f#",
+                        "act40side_s04",
+                        "act40side_s04#f#",
+                        "act40side_mo01"
                     ]
                 }
             }
@@ -29878,6 +30042,9 @@
                         "act40side_07",
                         "act40side_08",
                         "act40side_09"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_mo01"
                     ]
                 }
             }
@@ -29890,6 +30057,9 @@
                         "act40side_06",
                         "act40side_07",
                         "act40side_09"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_mo01"
                     ]
                 }
             }
@@ -29908,6 +30078,9 @@
                         "act40side_07",
                         "act40side_08",
                         "act40side_09"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_mo01"
                     ]
                 }
             }
@@ -29921,6 +30094,9 @@
                         "act40side_04",
                         "act40side_06",
                         "act40side_07"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_mo01"
                     ]
                 }
             }
@@ -29931,6 +30107,9 @@
                     "act40side_zone1": [
                         "act40side_03",
                         "act40side_08"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_mo01"
                     ]
                 }
             }
@@ -29940,6 +30119,9 @@
                 "act40side": {
                     "act40side_zone1": [
                         "act40side_04"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_mo01"
                     ]
                 }
             }
@@ -29950,6 +30132,9 @@
                     "act40side_zone1": [
                         "act40side_05",
                         "act40side_09"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_mo01"
                     ]
                 }
             }
@@ -29973,6 +30158,9 @@
                     "act40side_zone1": [
                         "act40side_08",
                         "act40side_09"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_mo01"
                     ]
                 }
             }
@@ -29986,6 +30174,10 @@
                     "act40side_zone2": [
                         "act40side_ex08",
                         "act40side_ex08#f#"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_s04",
+                        "act40side_s04#f#"
                     ]
                 }
             }
@@ -29999,6 +30191,10 @@
                     "act40side_zone2": [
                         "act40side_ex08",
                         "act40side_ex08#f#"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_s04",
+                        "act40side_s04#f#"
                     ]
                 }
             }
@@ -30012,6 +30208,10 @@
                     "act40side_zone2": [
                         "act40side_ex08",
                         "act40side_ex08#f#"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_s04",
+                        "act40side_s04#f#"
                     ]
                 }
             }
@@ -30028,6 +30228,10 @@
                         "act40side_ex06#f#",
                         "act40side_ex08",
                         "act40side_ex08#f#"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_s01",
+                        "act40side_s01#f#"
                     ]
                 }
             }
@@ -30050,6 +30254,17 @@
                         "act40side_ex07#f#",
                         "act40side_ex08",
                         "act40side_ex08#f#"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_s01",
+                        "act40side_s01#f#",
+                        "act40side_s02",
+                        "act40side_s02#f#",
+                        "act40side_s03",
+                        "act40side_s03#f#",
+                        "act40side_s04",
+                        "act40side_s04#f#",
+                        "act40side_mo01"
                     ]
                 }
             }
@@ -30068,6 +30283,13 @@
                         "act40side_ex05#f#",
                         "act40side_ex06",
                         "act40side_ex06#f#"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_s02",
+                        "act40side_s02#f#",
+                        "act40side_s03",
+                        "act40side_s03#f#",
+                        "act40side_mo01"
                     ]
                 }
             }
@@ -30086,6 +30308,15 @@
                         "act40side_ex06#f#",
                         "act40side_ex07",
                         "act40side_ex07#f#"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_s02",
+                        "act40side_s02#f#",
+                        "act40side_s03",
+                        "act40side_s03#f#",
+                        "act40side_s04",
+                        "act40side_s04#f#",
+                        "act40side_mo01"
                     ]
                 }
             }
@@ -30104,6 +30335,17 @@
                         "act40side_ex07#f#",
                         "act40side_ex08",
                         "act40side_ex08#f#"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_s01",
+                        "act40side_s01#f#",
+                        "act40side_s02",
+                        "act40side_s02#f#",
+                        "act40side_s03",
+                        "act40side_s03#f#",
+                        "act40side_s04",
+                        "act40side_s04#f#",
+                        "act40side_mo01"
                     ]
                 }
             }
@@ -30114,6 +30356,9 @@
                     "act40side_zone2": [
                         "act40side_ex03",
                         "act40side_ex03#f#"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_mo01"
                     ]
                 }
             }
@@ -30140,6 +30385,23 @@
                         "act40side_ex08#f#",
                         "act40side_ex08#f#",
                         "act40side_ex08#f#"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_s01",
+                        "act40side_s01",
+                        "act40side_s01",
+                        "act40side_s01#f#",
+                        "act40side_s01#f#",
+                        "act40side_s01#f#",
+                        "act40side_s03",
+                        "act40side_s03",
+                        "act40side_s03",
+                        "act40side_s03",
+                        "act40side_s03#f#",
+                        "act40side_s03#f#",
+                        "act40side_s03#f#",
+                        "act40side_s03#f#",
+                        "act40side_mo01"
                     ]
                 }
             }
@@ -30152,6 +30414,15 @@
                         "act40side_ex05#f#",
                         "act40side_ex08",
                         "act40side_ex08#f#"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_s01",
+                        "act40side_s01",
+                        "act40side_s01#f#",
+                        "act40side_s01#f#",
+                        "act40side_s03",
+                        "act40side_s03#f#",
+                        "act40side_mo01"
                     ]
                 }
             }
@@ -30164,6 +30435,14 @@
                         "act40side_ex06#f#",
                         "act40side_ex07",
                         "act40side_ex07#f#"
+                    ],
+                    "act40side_zone3": [
+                        "act40side_s02",
+                        "act40side_s02#f#",
+                        "act40side_s03",
+                        "act40side_s03#f#",
+                        "act40side_s04",
+                        "act40side_s04#f#"
                     ]
                 }
             }
@@ -39562,6 +39841,13 @@
                         "lt_13_05"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-02"
+                    ]
+                }
             }
         },
         "enemy_1239_ltbow": {
@@ -39597,6 +39883,13 @@
                 "tower_n_13": {
                     "tower_n_13": [
                         "lt_13_04"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-02"
                     ]
                 }
             }
@@ -39641,6 +39934,13 @@
                     ]
                 }
             },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-02"
+                    ]
+                }
+            },
             "is": {
                 "IS#5": {
                     "IS#5 Floor 3": [
@@ -39677,6 +39977,13 @@
                 "tower_n_13": {
                     "tower_n_13": [
                         "lt_13_04"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-02"
                     ]
                 }
             },
@@ -39779,6 +40086,13 @@
                 "camp_r_16": {
                     "camp_r_16": [
                         "camp_r_16"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-02"
                     ]
                 }
             }
@@ -43300,6 +43614,13 @@
                     ]
                 }
             },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-03"
+                    ]
+                }
+            },
             "ra": {
                 "RA#2": {
                     "RA#2 Normal Rushparty": [
@@ -43889,6 +44210,13 @@
                 "camp_r_16": {
                     "camp_r_16": [
                         "camp_r_16"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-02"
                     ]
                 }
             },
@@ -57884,6 +58212,13 @@
                         "camp_r_16"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-02"
+                    ]
+                }
             }
         },
         "enemy_1248_ltholo": {
@@ -57904,6 +58239,13 @@
                 "camp_r_16": {
                     "camp_r_16": [
                         "camp_r_16"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_03-02"
                     ]
                 }
             }

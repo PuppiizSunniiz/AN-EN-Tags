@@ -1,312 +1,2373 @@
-{
-    "skip_mod": [],
-    "mod_tl": {
-        "uniequip_002_surtr": [
-            [
-                {
-                    "name": "Molten Flame",
-                    "EN": "Attacks ignore 20 RES",
-                    "CN": "无视攻击目标20法术抗性",
-                    "mod": "无视攻击目标24法术抗性",
-                    "upgradeDescription": ""
-                },
-                {
-                    "name": "Molten Flame",
-                    "EN": "Attacks ignore 22 <@ba.talpu>(+2)</> RES",
-                    "CN": "无视攻击目标22<@ba.talpu>（+2）</>法术抗性",
-                    "mod": "无视攻击目标26<@ba.talpu>（+2）</>法术抗性",
-                    "upgradeDescription": ""
-                }
-            ],
-            [
-                {
-                    "name": "Molten Flame",
-                    "EN": "Attacks ignore 20 RES",
-                    "CN": "无视攻击目标20法术抗性",
-                    "mod": "无视攻击目标26法术抗性",
-                    "upgradeDescription": ""
-                },
-                {
-                    "name": "Molten Flame",
-                    "EN": "Attacks ignore 22 <@ba.talpu>(+2)</> RES",
-                    "CN": "无视攻击目标22<@ba.talpu>（+2）</>法术抗性",
-                    "mod": "无视攻击目标28<@ba.talpu>（+2）</>法术抗性",
-                    "upgradeDescription": ""
-                }
-            ]
+[
+    {
+        "id": "char_002_amiya",
+        "name_cn": "阿米娅",
+        "name_en": "Amiya",
+        "name_jp": "アーミヤ",
+        "name_kr": "아미야",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": null,
+        "type": "术师",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "输出"
         ],
-        "uniequip_002_vvana": [
-            [
-                {
-                    "name": "Candlelight",
-                    "EN": "Deal +8% Arts damage and take -8% Physical and Arts damage. Double effect if there is an elite or leader enemy within attack range",
-                    "CN": "造成的法术伤害+8%，受到的物理和法术伤害-8%。攻击范围内存在精英或领袖敌人时，该效果提升至2倍",
-                    "mod": "造成的法术伤害+8%，受到的物理和法术伤害-8%，攻击附带相当于5%伤害的<$ba.dt.burning2>灼燃损伤</>。攻击范围内存在精英或领袖敌人时，该效果提升至2倍",
-                    "upgradeDescription": ""
-                },
-                {
-                    "name": "Candlelight",
-                    "EN": "Deal +9% <@ba.talpu>(+1%)</> Arts damage and take -9% <@ba.talpu>(-1%)</> Physical and Arts damage. Double effect if there is an elite or leader enemy within attack range",
-                    "CN": "造成的法术伤害+9%<@ba.talpu>（+1%）</>，受到的物理和法术伤害-9%<@ba.talpu>（-1%）</>。攻击范围内存在精英或领袖敌人时，该效果提升至2倍",
-                    "mod": "造成的法术伤害+9%<@ba.talpu>（+1%）</>，受到的物理和法术伤害-9%<@ba.talpu>（-1%）</>，攻击附带相当于5%伤害的<$ba.dt.burning2>灼燃损伤</>。攻击范围内存在精英或领袖敌人时，该效果提升至2倍",
-                    "upgradeDescription": ""
-                }
-            ],
-            [
-                {
-                    "name": "Candlelight",
-                    "EN": "Deal +8% Arts damage and take -8% Physical and Arts damage. Double effect if there is an elite or leader enemy within attack range",
-                    "CN": "造成的法术伤害+8%，受到的物理和法术伤害-8%。攻击范围内存在精英或领袖敌人时，该效果提升至2倍",
-                    "mod": "造成的法术伤害+8%，受到的物理和法术伤害-8%，攻击附带相当于9%伤害的<$ba.dt.burning2>灼燃损伤</>。攻击范围内存在精英或领袖敌人时，该效果提升至2倍",
-                    "upgradeDescription": ""
-                },
-                {
-                    "name": "Candlelight",
-                    "EN": "Deal +9% <@ba.talpu>(+1%)</> Arts damage and take -9% <@ba.talpu>(-1%)</> Physical and Arts damage. Double effect if there is an elite or leader enemy within attack range",
-                    "CN": "造成的法术伤害+9%<@ba.talpu>（+1%）</>，受到的物理和法术伤害-9%<@ba.talpu>（-1%）</>。攻击范围内存在精英或领袖敌人时，该效果提升至2倍",
-                    "mod": "造成的法术伤害+9%<@ba.talpu>（+1%）</>，受到的物理和法术伤害-9%<@ba.talpu>（-1%）</>，攻击附带相当于9%伤害的<$ba.dt.burning2>灼燃损伤</>。攻击范围内存在精英或领袖敌人时，该效果提升至2倍",
-                    "upgradeDescription": ""
-                }
-            ]
-        ],
-        "uniequip_002_siege2": [
-            [
-                {
-                    "name": "诸王的叹息",
-                    "CN": "自身与周围8格友方单位受到的物理伤害减少20%，且此范围内每个友方单位使维娜攻击力+5%",
-                    "mod": "自身与周围8格友方单位受到的物理伤害减少24%，且此范围内每个友方单位使维娜攻击力+6%",
-                    "upgradeDescription": ""
-                },
-                {
-                    "name": "诸王的叹息",
-                    "CN": "自身与周围8格友方单位受到的物理伤害减少22%<@ba.talpu>（+2%）</>，且此范围内每个友方单位使维娜攻击力+6%<@ba.talpu>（+1%）</>",
-                    "mod": "自身与周围8格友方单位受到的物理伤害减少26%<@ba.talpu>（+2%）</>，且此范围内每个友方单位使维娜攻击力+7%<@ba.talpu>（+1%）</>",
-                    "upgradeDescription": ""
-                }
-            ],
-            [
-                {
-                    "name": "诸王的叹息",
-                    "CN": "自身与周围8格友方单位受到的物理伤害减少20%，且此范围内每个友方单位使维娜攻击力+5%",
-                    "mod": "自身与周围8格友方单位受到的物理伤害减少26%，且此范围内每个友方单位使维娜攻击力+7%",
-                    "upgradeDescription": ""
-                },
-                {
-                    "name": "诸王的叹息",
-                    "CN": "自身与周围8格友方单位受到的物理伤害减少22%<@ba.talpu>（+2%）</>，且此范围内每个友方单位使维娜攻击力+6%<@ba.talpu>（+1%）</>",
-                    "mod": "自身与周围8格友方单位受到的物理伤害减少28%<@ba.talpu>（+2%）</>，且此范围内每个友方单位使维娜攻击力+8%<@ba.talpu>（+1%）</>",
-                    "upgradeDescription": ""
-                }
-            ]
-        ],
-        "uniequip_002_amiya2": [
-            [
-                {
-                    "name": "Emotional Absorption",
-                    "EN": "Restores 3 <@ba.talpu>(+1)</> extra Skill Points when attacking an enemy and 10 <@ba.talpu>(+2)</> extra Skill Points when killing an enemy",
-                    "CN": "攻击敌人时额外回复3<@ba.talpu>（+1）</>点技力，消灭敌人后额外获得10<@ba.talpu>（+2）</>点技力",
-                    "mod": "在场时所有友方单位的攻击力和防御力+8%，技能开启期间效果加倍",
-                    "upgradeDescription": ""
-                }
-            ],
-            [
-                {
-                    "name": "Emotional Absorption",
-                    "EN": "Restores 3 <@ba.talpu>(+1)</> extra Skill Points when attacking an enemy and 10 <@ba.talpu>(+2)</> extra Skill Points when killing an enemy",
-                    "CN": "攻击敌人时额外回复3<@ba.talpu>（+1）</>点技力，消灭敌人后额外获得10<@ba.talpu>（+2）</>点技力",
-                    "mod": "在场时所有友方单位的攻击力和防御力+9%，技能开启期间效果加倍",
-                    "upgradeDescription": ""
-                }
-            ]
-        ],
-        "uniequip_002_sidero": [
-            [
-                {
-                    "name": "Mercenary's Tenacity",
-                    "EN": "After defeating 7 enemies, Sideroca gains +15 ASPD and <$ba.buffres>status resistance</>",
-                    "CN": "击杀7个敌人后获得攻击速度+15和<$ba.buffres>抵抗</>",
-                    "mod": "击杀6个敌人后获得攻击速度+20和<$ba.buffres>抵抗</>",
-                    "upgradeDescription": ""
-                },
-                {
-                    "name": "Mercenary's Tenacity",
-                    "EN": "After defeating 5 <@ba.talpu>(-2)</> enemies, Sideroca gains +15 ASPD and <$ba.buffres>status resistance</>",
-                    "CN": "击杀5<@ba.talpu>（-2）</>个敌人后获得攻击速度+15和<$ba.buffres>抵抗</>",
-                    "mod": "击杀4<@ba.talpu>（-2）</>个敌人后获得攻击速度+20和<$ba.buffres>抵抗</>",
-                    "upgradeDescription": ""
-                }
-            ],
-            [
-                {
-                    "name": "Mercenary's Tenacity",
-                    "EN": "After defeating 7 enemies, Sideroca gains +15 ASPD and <$ba.buffres>status resistance</>",
-                    "CN": "击杀7个敌人后获得攻击速度+15和<$ba.buffres>抵抗</>",
-                    "mod": "击杀5个敌人后获得攻击速度+23和<$ba.buffres>抵抗</>",
-                    "upgradeDescription": ""
-                },
-                {
-                    "name": "Mercenary's Tenacity",
-                    "EN": "After defeating 5 <@ba.talpu>(-2)</> enemies, Sideroca gains +15 ASPD and <$ba.buffres>status resistance</>",
-                    "CN": "击杀5<@ba.talpu>（-2）</>个敌人后获得攻击速度+15和<$ba.buffres>抵抗</>",
-                    "mod": "击杀3<@ba.talpu>（-2）</>个敌人后获得攻击速度+23和<$ba.buffres>抵抗</>",
-                    "upgradeDescription": ""
-                }
-            ]
-        ],
-        "uniequip_002_astesi": [
-            [
-                {
-                    "name": "Celestial Globe",
-                    "EN": "For every 20 seconds Astesia stays on the battlefield, ASPD +5, stacking up to 5 times",
-                    "CN": "每在场上停留20秒，攻击速度+5，最多可以叠加5次",
-                    "mod": "每在场上停留20秒，攻击速度+6，防御力+3%，最多可以叠加5次",
-                    "upgradeDescription": ""
-                }
-            ],
-            [
-                {
-                    "name": "Celestial Globe",
-                    "EN": "For every 20 seconds Astesia stays on the battlefield, ASPD +5, stacking up to 5 times",
-                    "CN": "每在场上停留20秒，攻击速度+5，最多可以叠加5次",
-                    "mod": "每在场上停留20秒，攻击速度+7，防御力+4%，最多可以叠加5次",
-                    "upgradeDescription": ""
-                }
-            ]
-        ],
-        "uniequip_002_frncat": [
-            [
-                {
-                    "name": "Combo",
-                    "EN": "Has a 20% chance to attack twice in a row when attacking",
-                    "CN": "攻击时有20%的几率连续攻击两次",
-                    "mod": "攻击时有23%的几率连续攻击两次",
-                    "upgradeDescription": ""
-                },
-                {
-                    "name": "Combo",
-                    "EN": "Has a 23% <@ba.talpu>(+3%)</> chance to attack twice in a row when attacking",
-                    "CN": "攻击时有23%<@ba.talpu>（+3%）</>的几率连续攻击两次",
-                    "mod": "攻击时有26%<@ba.talpu>（+3%）</>的几率连续攻击两次",
-                    "upgradeDescription": ""
-                }
-            ],
-            [
-                {
-                    "name": "Combo",
-                    "EN": "Has a 20% chance to attack twice in a row when attacking",
-                    "CN": "攻击时有20%的几率连续攻击两次",
-                    "mod": "攻击时有25%的几率连续攻击两次",
-                    "upgradeDescription": ""
-                },
-                {
-                    "name": "Combo",
-                    "EN": "Has a 23% <@ba.talpu>(+3%)</> chance to attack twice in a row when attacking",
-                    "CN": "攻击时有23%<@ba.talpu>（+3%）</>的几率连续攻击两次",
-                    "mod": "攻击时有28%<@ba.talpu>（+3%）</>的几率连续攻击两次",
-                    "upgradeDescription": ""
-                }
-            ]
-        ],
-        "uniequip_002_rosesa": [
-            [
-                {
-                    "name": "最好的草药医生",
-                    "CN": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升15%",
-                    "mod": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升18%",
-                    "upgradeDescription": ""
-                },
-                {
-                    "name": "最好的草药医生",
-                    "CN": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升17%<@ba.talpu>（+2%）</>",
-                    "mod": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升20%<@ba.talpu>（+2%）</>",
-                    "upgradeDescription": ""
-                }
-            ],
-            [
-                {
-                    "name": "最好的草药医生",
-                    "CN": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升15%",
-                    "mod": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升20%",
-                    "upgradeDescription": ""
-                },
-                {
-                    "name": "最好的草药医生",
-                    "CN": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升17%<@ba.talpu>（+2%）</>",
-                    "mod": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升22%<@ba.talpu>（+2%）</>",
-                    "upgradeDescription": ""
-                }
-            ]
-        ],
-        "uniequip_003_angel": [
-            [
-                {
-                    "name": "Fast Cartridge",
-                    "EN": "ASPD +12",
-                    "CN": "攻击速度+12",
-                    "mod": "攻击速度+12；连续造成伤害时逐渐无视敌人防御力，最高无视150点防御力（每次造成伤害提升6点），5秒内未攻击则失去加成",
-                    "upgradeDescription": ""
-                },
-                {
-                    "name": "Fast Cartridge",
-                    "EN": "ASPD +15 <@ba.talpu>(+3)</>",
-                    "CN": "攻击速度+15<@ba.talpu>（+3）</>",
-                    "mod": "攻击速度+15<@ba.talpu>（+3）</>；连续造成伤害时逐渐无视敌人防御力，最高无视150点防御力（每次造成伤害提升6点），5秒内未攻击则失去加成",
-                    "upgradeDescription": ""
-                }
-            ],
-            [
-                {
-                    "name": "Fast Cartridge",
-                    "EN": "ASPD +12",
-                    "CN": "攻击速度+12",
-                    "mod": "攻击速度+12；连续造成伤害时逐渐无视敌人防御力，最高无视250点防御力（每次造成伤害提升10点），5秒内未攻击则失去加成",
-                    "upgradeDescription": ""
-                },
-                {
-                    "name": "Fast Cartridge",
-                    "EN": "ASPD +15 <@ba.talpu>(+3)</>",
-                    "CN": "攻击速度+15<@ba.talpu>（+3）</>",
-                    "mod": "攻击速度+15<@ba.talpu>（+3）</>；连续造成伤害时逐渐无视敌人防御力，最高无视250点防御力（每次造成伤害提升10点），5秒内未攻击则失去加成",
-                    "upgradeDescription": ""
-                }
-            ]
-        ]
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
     },
-    "new_trait": {
-        "未阻挡敌人时攻击速度<@ba.kw>+{attack_speed}</>": {
-            "en": "",
-            "color": "",
-            "note": "new mods aft-x",
-            "name": "char_185_frncat",
-            "code": "uniequip_002_frncat"
-        },
-        "攻击<$ba.dt.burning2>灼燃损伤</>爆发期间的目标时额外造成攻击力<@ba.kw>{ep_damage_ratio:0%}</>的元素伤害": {
-            "en": "",
-            "color": "",
-            "note": "new mods aft-d",
-            "name": "char_4098_vvana",
-            "code": "uniequip_002_vvana"
-        },
-        "自身阻挡的敌人受到<@ba.kw>10%</>的<$ba.magicfragile>法术脆弱</>效果": {
-            "en": "",
-            "color": "",
-            "note": "new mods aft-y",
-            "name": "char_274_astesi",
-            "code": "uniequip_002_astesi"
-        },
-        "攻击范围<@ba.kw>扩大</>": {
-            "en": "",
-            "color": "",
-            "note": "new mods rin-x",
-            "name": "char_4163_rosesa",
-            "code": "uniequip_002_rosesa"
-        },
-        "范围内存在地面敌人时攻击速度<@ba.kw>+8</>": {
-            "en": "",
-            "color": "",
-            "note": "new mods mar-y",
-            "name": "char_103_angel",
-            "code": "uniequip_003_angel"
-        }
+    {
+        "id": "char_009_12fce",
+        "name_cn": "12F",
+        "name_en": "12F",
+        "name_jp": "12F",
+        "name_kr": "12F",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": null,
+        "type": "术师",
+        "level": 2,
+        "sex": "男",
+        "tags": [
+            "远程位",
+            "新手"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_101_sora",
+        "name_cn": "空",
+        "name_en": "Sora",
+        "name_jp": "ソラ",
+        "name_kr": "소라",
+        "nationId": "lungmen",
+        "groupId": "penguin",
+        "teamId": null,
+        "type": "辅助",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "支援",
+            "治疗"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_102_texas",
+        "name_cn": "德克萨斯",
+        "name_en": "Texas",
+        "name_jp": "テキサス",
+        "name_kr": "텍사스",
+        "nationId": "lungmen",
+        "groupId": "penguin",
+        "teamId": null,
+        "type": "先锋",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "费用回复",
+            "控场"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_103_angel",
+        "name_cn": "能天使",
+        "name_en": "Exusiai",
+        "name_jp": "エクシア",
+        "name_kr": "엑시아",
+        "nationId": "lungmen",
+        "groupId": "penguin",
+        "teamId": null,
+        "type": "狙击",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "远程位",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_106_franka",
+        "name_cn": "芙兰卡",
+        "name_en": "Franka",
+        "name_jp": "フランカ",
+        "name_kr": "프란카",
+        "nationId": "columbia",
+        "groupId": "blacksteel",
+        "teamId": null,
+        "type": "近卫",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "输出",
+            "生存"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_107_liskam",
+        "name_cn": "雷蛇",
+        "name_en": "Liskarm",
+        "name_jp": "リスカム",
+        "name_kr": "리스캄",
+        "nationId": "columbia",
+        "groupId": "blacksteel",
+        "teamId": null,
+        "type": "重装",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "防护",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_108_silent",
+        "name_cn": "赫默",
+        "name_en": "Silence",
+        "name_jp": "サイレンス",
+        "name_kr": "사일런스",
+        "nationId": "columbia",
+        "groupId": "rhine",
+        "teamId": null,
+        "type": "医疗",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "治疗"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_109_fmout",
+        "name_cn": "远山",
+        "name_en": "Gitano",
+        "name_jp": "ギターノ",
+        "name_kr": "기타노",
+        "nationId": "sami",
+        "groupId": null,
+        "teamId": null,
+        "type": "术师",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "群攻"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_110_deepcl",
+        "name_cn": "深海色",
+        "name_en": "Deepcolor",
+        "name_jp": "ディピカ",
+        "name_kr": "딥컬러",
+        "nationId": "egir",
+        "groupId": null,
+        "teamId": null,
+        "type": "辅助",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "召唤"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_112_siege",
+        "name_cn": "推进之王",
+        "name_en": "Siege",
+        "name_jp": "シージ",
+        "name_kr": "시즈",
+        "nationId": "victoria",
+        "groupId": "glasgow",
+        "teamId": null,
+        "type": "先锋",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "近战位",
+            "费用回复",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_115_headbr",
+        "name_cn": "凛冬",
+        "name_en": "Зима",
+        "name_jp": "ズィマー",
+        "name_kr": "지마",
+        "nationId": "ursus",
+        "groupId": null,
+        "teamId": "student",
+        "type": "先锋",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "费用回复",
+            "支援"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_117_myrrh",
+        "name_cn": "末药",
+        "name_en": "Myrrh",
+        "name_jp": "ミルラ",
+        "name_kr": "미르",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": null,
+        "type": "医疗",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "治疗"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_118_yuki",
+        "name_cn": "白雪",
+        "name_en": "ShiraYuki",
+        "name_jp": "シラユキ",
+        "name_kr": "시라유키",
+        "nationId": "higashi",
+        "groupId": null,
+        "teamId": null,
+        "type": "狙击",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "群攻",
+            "减速"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_120_hibisc",
+        "name_cn": "芙蓉",
+        "name_en": "Hibiscus",
+        "name_jp": "ハイビスカス",
+        "name_kr": "히비스커스",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": "reserve1",
+        "type": "医疗",
+        "level": 3,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "治疗"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_121_lava",
+        "name_cn": "炎熔",
+        "name_en": "Lava",
+        "name_jp": "ラヴァ",
+        "name_kr": "라바",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": "reserve1",
+        "type": "术师",
+        "level": 3,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "群攻"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_122_beagle",
+        "name_cn": "米格鲁",
+        "name_en": "Beagle",
+        "name_jp": "ビーグル",
+        "name_kr": "비글",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": "reserve1",
+        "type": "重装",
+        "level": 3,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "防护"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_123_fang",
+        "name_cn": "芬",
+        "name_en": "Fang",
+        "name_jp": "フェン",
+        "name_kr": "팽",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": "reserve1",
+        "type": "先锋",
+        "level": 3,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "费用回复"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_124_kroos",
+        "name_cn": "克洛丝",
+        "name_en": "Kroos",
+        "name_jp": "クルース",
+        "name_kr": "크루스",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": "reserve1",
+        "type": "狙击",
+        "level": 3,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_126_shotst",
+        "name_cn": "流星",
+        "name_en": "Meteor",
+        "name_jp": "メテオ",
+        "name_kr": "메테오",
+        "nationId": "kazimierz",
+        "groupId": null,
+        "teamId": null,
+        "type": "狙击",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "输出",
+            "削弱"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_127_estell",
+        "name_cn": "艾丝黛尔",
+        "name_en": "Estelle",
+        "name_jp": "エステル",
+        "name_kr": "에스텔",
+        "nationId": "sargon",
+        "groupId": null,
+        "teamId": null,
+        "type": "近卫",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "群攻",
+            "生存"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_128_plosis",
+        "name_cn": "白面鸮",
+        "name_en": "Ptilopsis",
+        "name_jp": "フィリオプシス",
+        "name_kr": "프틸롭시스",
+        "nationId": "columbia",
+        "groupId": "rhine",
+        "teamId": null,
+        "type": "医疗",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "治疗",
+            "支援"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_129_bluep",
+        "name_cn": "蓝毒",
+        "name_en": "Blue Poison",
+        "name_jp": "アズリウス",
+        "name_kr": "블루포이즌",
+        "nationId": "iberia",
+        "groupId": null,
+        "teamId": null,
+        "type": "狙击",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_130_doberm",
+        "name_cn": "杜宾",
+        "name_en": "Dobermann",
+        "name_jp": "ドーベルマン",
+        "name_kr": "도베르만",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": null,
+        "type": "近卫",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "输出",
+            "支援"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_134_ifrit",
+        "name_cn": "伊芙利特",
+        "name_en": "Ifrit",
+        "name_jp": "イフリータ",
+        "name_kr": "이프리트",
+        "nationId": "columbia",
+        "groupId": "rhine",
+        "teamId": null,
+        "type": "术师",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "远程位",
+            "群攻",
+            "削弱"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_136_hsguma",
+        "name_cn": "星熊",
+        "name_en": "Hoshiguma",
+        "name_jp": "ホシグマ",
+        "name_kr": "호시구마",
+        "nationId": "lungmen",
+        "groupId": "lgd",
+        "teamId": null,
+        "type": "重装",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "近战位",
+            "防护",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_140_whitew",
+        "name_cn": "拉普兰德",
+        "name_en": "Lappland",
+        "name_jp": "ラップランド",
+        "name_kr": "라플란드",
+        "nationId": "siracusa",
+        "groupId": null,
+        "teamId": null,
+        "type": "近卫",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "输出",
+            "削弱"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_141_nights",
+        "name_cn": "夜烟",
+        "name_en": "Haze",
+        "name_jp": "ヘイズ",
+        "name_kr": "헤이즈",
+        "nationId": "victoria",
+        "groupId": null,
+        "teamId": null,
+        "type": "术师",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "输出",
+            "削弱"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_143_ghost",
+        "name_cn": "幽灵鲨",
+        "name_en": "Specter",
+        "name_jp": "スペクター",
+        "name_kr": "스펙터",
+        "nationId": "egir",
+        "groupId": "abyssal",
+        "teamId": null,
+        "type": "近卫",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "群攻",
+            "生存"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_144_red",
+        "name_cn": "红",
+        "name_en": "Projekt Red",
+        "name_jp": "レッド",
+        "name_kr": "레드",
+        "nationId": "rhodes",
+        "groupId": "sweep",
+        "teamId": null,
+        "type": "特种",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "快速复活",
+            "控场"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_145_prove",
+        "name_cn": "普罗旺斯",
+        "name_en": "Provence",
+        "name_jp": "プロヴァンス",
+        "name_kr": "프로방스",
+        "nationId": "siracusa",
+        "groupId": null,
+        "teamId": null,
+        "type": "狙击",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_147_shining",
+        "name_cn": "闪灵",
+        "name_en": "Shining",
+        "name_jp": "シャイニング",
+        "name_kr": "샤이닝",
+        "nationId": null,
+        "groupId": null,
+        "teamId": "followers",
+        "type": "医疗",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "远程位",
+            "治疗",
+            "支援"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_148_nearl",
+        "name_cn": "临光",
+        "name_en": "Nearl",
+        "name_jp": "ニアール",
+        "name_kr": "니어",
+        "nationId": null,
+        "groupId": null,
+        "teamId": "followers",
+        "type": "重装",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "防护",
+            "治疗"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_149_scave",
+        "name_cn": "清道夫",
+        "name_en": "Scavenger",
+        "name_jp": "スカベンジャー",
+        "name_kr": "스캐빈저",
+        "nationId": "rhodes",
+        "groupId": "sweep",
+        "teamId": null,
+        "type": "先锋",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "费用回复",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_150_snakek",
+        "name_cn": "蛇屠箱",
+        "name_en": "Cuora",
+        "name_jp": "クオーラ",
+        "name_kr": "쿠오라",
+        "nationId": "columbia",
+        "groupId": null,
+        "teamId": null,
+        "type": "重装",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "防护"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_155_tiger",
+        "name_cn": "因陀罗",
+        "name_en": "Indra",
+        "name_jp": "インドラ",
+        "name_kr": "인드라",
+        "nationId": "victoria",
+        "groupId": "glasgow",
+        "teamId": null,
+        "type": "近卫",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "输出",
+            "生存"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_158_milu",
+        "name_cn": "守林人",
+        "name_en": "Firewatch",
+        "name_jp": "ファイヤーウォッチ",
+        "name_kr": "파이어워치",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": null,
+        "type": "狙击",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "输出",
+            "爆发"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_163_hpsts",
+        "name_cn": "火神",
+        "name_en": "Vulcan",
+        "name_jp": "ヴァルカン",
+        "name_kr": "벌컨",
+        "nationId": "minos",
+        "groupId": null,
+        "teamId": null,
+        "type": "重装",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "生存",
+            "防护",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_166_skfire",
+        "name_cn": "天火",
+        "name_en": "Skyfire",
+        "name_jp": "スカイフレア",
+        "name_kr": "스카이파이어",
+        "nationId": "victoria",
+        "groupId": null,
+        "teamId": null,
+        "type": "术师",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "群攻",
+            "控场"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_171_bldsk",
+        "name_cn": "华法琳",
+        "name_en": "Warfarin",
+        "name_jp": "ワルファリン",
+        "name_kr": "와파린",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": null,
+        "type": "医疗",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "治疗",
+            "支援"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_172_svrash",
+        "name_cn": "银灰",
+        "name_en": "SilverAsh",
+        "name_jp": "シルバーアッシュ",
+        "name_kr": "실버애쉬",
+        "nationId": "kjerag",
+        "groupId": "karlan",
+        "teamId": null,
+        "type": "近卫",
+        "level": 6,
+        "sex": "男",
+        "tags": [
+            "高级资深干员",
+            "近战位",
+            "输出",
+            "支援"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_173_slchan",
+        "name_cn": "崖心",
+        "name_en": "Cliffheart",
+        "name_jp": "クリフハート",
+        "name_kr": "클리프하트",
+        "nationId": "kjerag",
+        "groupId": "karlan",
+        "teamId": null,
+        "type": "特种",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "位移",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_174_slbell",
+        "name_cn": "初雪",
+        "name_en": "Pramanix",
+        "name_jp": "プラマニクス",
+        "name_kr": "프라마닉스",
+        "nationId": "kjerag",
+        "groupId": "karlan",
+        "teamId": null,
+        "type": "辅助",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "削弱"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_179_cgbird",
+        "name_cn": "夜莺",
+        "name_en": "Nightingale",
+        "name_jp": "ナイチンゲール",
+        "name_kr": "나이팅게일",
+        "nationId": null,
+        "groupId": null,
+        "teamId": "followers",
+        "type": "医疗",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "远程位",
+            "治疗",
+            "支援"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_180_amgoat",
+        "name_cn": "艾雅法拉",
+        "name_en": "Eyjafjalla",
+        "name_jp": "エイヤフィヤトラ",
+        "name_kr": "에이야퍄들라",
+        "nationId": "leithanien",
+        "groupId": null,
+        "teamId": null,
+        "type": "术师",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "远程位",
+            "输出",
+            "削弱"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_181_flower",
+        "name_cn": "调香师",
+        "name_en": "Perfumer",
+        "name_jp": "パフューマー",
+        "name_kr": "퍼퓨머",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": null,
+        "type": "医疗",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "治疗"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_183_skgoat",
+        "name_cn": "地灵",
+        "name_en": "Earthspirit",
+        "name_jp": "アーススピリット",
+        "name_kr": "어스스피릿",
+        "nationId": "leithanien",
+        "groupId": null,
+        "teamId": null,
+        "type": "辅助",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "减速"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_185_frncat",
+        "name_cn": "慕斯",
+        "name_en": "Mousse",
+        "name_jp": "ムース",
+        "name_kr": "무스",
+        "nationId": "victoria",
+        "groupId": null,
+        "teamId": null,
+        "type": "近卫",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_187_ccheal",
+        "name_cn": "嘉维尔",
+        "name_en": "Gavial",
+        "name_jp": "ガヴィル",
+        "name_kr": "가비알",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": null,
+        "type": "医疗",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "治疗"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_192_falco",
+        "name_cn": "翎羽",
+        "name_en": "Plume",
+        "name_jp": "プリュム",
+        "name_kr": "플룸",
+        "nationId": "laterano",
+        "groupId": null,
+        "teamId": null,
+        "type": "先锋",
+        "level": 3,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "输出",
+            "费用回复"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_193_frostl",
+        "name_cn": "霜叶",
+        "name_en": "Frostleaf",
+        "name_jp": "フロストリーフ",
+        "name_kr": "프로스트리프",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": null,
+        "type": "近卫",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "减速",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_195_glassb",
+        "name_cn": "真理",
+        "name_en": "Истина",
+        "name_jp": "イースチナ",
+        "name_kr": "이스티나",
+        "nationId": "ursus",
+        "groupId": null,
+        "teamId": "student",
+        "type": "辅助",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "减速",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_196_sunbr",
+        "name_cn": "古米",
+        "name_en": "Гум",
+        "name_jp": "グム",
+        "name_kr": "굼",
+        "nationId": "ursus",
+        "groupId": null,
+        "teamId": "student",
+        "type": "重装",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "防护",
+            "治疗"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_198_blackd",
+        "name_cn": "讯使",
+        "name_en": "Courier",
+        "name_jp": "クーリエ",
+        "name_kr": "쿠리어",
+        "nationId": "kjerag",
+        "groupId": "karlan",
+        "teamId": null,
+        "type": "先锋",
+        "level": 4,
+        "sex": "男",
+        "tags": [
+            "近战位",
+            "费用回复",
+            "防护"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_199_yak",
+        "name_cn": "角峰",
+        "name_en": "Matterhorn",
+        "name_jp": "マッターホルン",
+        "name_kr": "마터호른",
+        "nationId": "kjerag",
+        "groupId": "karlan",
+        "teamId": null,
+        "type": "重装",
+        "level": 4,
+        "sex": "男",
+        "tags": [
+            "近战位",
+            "防护"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_201_moeshd",
+        "name_cn": "可颂",
+        "name_en": "Croissant",
+        "name_jp": "クロワッサン",
+        "name_kr": "크루아상",
+        "nationId": "lungmen",
+        "groupId": "penguin",
+        "teamId": null,
+        "type": "重装",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "防护",
+            "位移"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_202_demkni",
+        "name_cn": "塞雷娅",
+        "name_en": "Saria",
+        "name_jp": "サリア",
+        "name_kr": "사리아",
+        "nationId": "columbia",
+        "groupId": "rhine",
+        "teamId": null,
+        "type": "重装",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "近战位",
+            "防护",
+            "治疗",
+            "支援"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_204_platnm",
+        "name_cn": "白金",
+        "name_en": "Platinum",
+        "name_jp": "プラチナ",
+        "name_kr": "플래티넘",
+        "nationId": "kazimierz",
+        "groupId": null,
+        "teamId": null,
+        "type": "狙击",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_208_melan",
+        "name_cn": "玫兰莎",
+        "name_en": "Melantha",
+        "name_jp": "メランサ",
+        "name_kr": "멜란사",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": "reserve4",
+        "type": "近卫",
+        "level": 3,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "输出",
+            "生存"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_209_ardign",
+        "name_cn": "卡缇",
+        "name_en": "Cardigan",
+        "name_jp": "カーディ",
+        "name_kr": "카디건",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": "reserve4",
+        "type": "重装",
+        "level": 3,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "防护"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_210_stward",
+        "name_cn": "史都华德",
+        "name_en": "Steward",
+        "name_jp": "スチュワード",
+        "name_kr": "스튜어드",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": "reserve4",
+        "type": "术师",
+        "level": 3,
+        "sex": "男",
+        "tags": [
+            "远程位",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_211_adnach",
+        "name_cn": "安德切尔",
+        "name_en": "Adnachiel",
+        "name_jp": "アドナキエル",
+        "name_kr": "아드나키엘",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": "reserve4",
+        "type": "狙击",
+        "level": 3,
+        "sex": "男",
+        "tags": [
+            "远程位",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_212_ansel",
+        "name_cn": "安赛尔",
+        "name_en": "Ansel",
+        "name_jp": "アンセル",
+        "name_kr": "안셀",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": "reserve4",
+        "type": "医疗",
+        "level": 3,
+        "sex": "男",
+        "tags": [
+            "远程位",
+            "治疗"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_215_mantic",
+        "name_cn": "狮蝎",
+        "name_en": "Manticore",
+        "name_jp": "マンティコア",
+        "name_kr": "맨티코어",
+        "nationId": "sargon",
+        "groupId": null,
+        "teamId": null,
+        "type": "特种",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "输出",
+            "生存"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_219_meteo",
+        "name_cn": "陨星",
+        "name_en": "Meteorite",
+        "name_jp": "メテオリーテ",
+        "name_kr": "메테오라이트",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": null,
+        "type": "狙击",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "群攻",
+            "削弱"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_230_savage",
+        "name_cn": "暴行",
+        "name_en": "Savage",
+        "name_jp": "サベージ",
+        "name_kr": "새비지",
+        "nationId": "rim",
+        "groupId": null,
+        "teamId": null,
+        "type": "近卫",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "群攻",
+            "爆发"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_235_jesica",
+        "name_cn": "杰西卡",
+        "name_en": "Jessica",
+        "name_jp": "ジェシカ",
+        "name_kr": "제시카",
+        "nationId": "columbia",
+        "groupId": "blacksteel",
+        "teamId": null,
+        "type": "狙击",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "输出",
+            "生存"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_236_rope",
+        "name_cn": "暗索",
+        "name_en": "Rope",
+        "name_jp": "ロープ",
+        "name_kr": "로프",
+        "nationId": "lungmen",
+        "groupId": null,
+        "teamId": null,
+        "type": "特种",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "位移"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_237_gravel",
+        "name_cn": "砾",
+        "name_en": "Gravel",
+        "name_jp": "グラベル",
+        "name_kr": "그라벨",
+        "nationId": "kazimierz",
+        "groupId": null,
+        "teamId": null,
+        "type": "特种",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "快速复活",
+            "防护"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_240_wyvern",
+        "name_cn": "香草",
+        "name_en": "Vanilla",
+        "name_jp": "バニラ",
+        "name_kr": "바닐라",
+        "nationId": "columbia",
+        "groupId": "blacksteel",
+        "teamId": null,
+        "type": "先锋",
+        "level": 3,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "费用回复"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_241_panda",
+        "name_cn": "食铁兽",
+        "name_en": "FEater",
+        "name_jp": "エフイーター",
+        "name_kr": "에프이터",
+        "nationId": "lungmen",
+        "groupId": null,
+        "teamId": null,
+        "type": "特种",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "位移",
+            "减速"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_242_otter",
+        "name_cn": "梅尔",
+        "name_en": "Mayer",
+        "name_jp": "メイヤー",
+        "name_kr": "메이어",
+        "nationId": "columbia",
+        "groupId": "rhine",
+        "teamId": null,
+        "type": "辅助",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "召唤",
+            "控场"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_277_sqrrel",
+        "name_cn": "阿消",
+        "name_en": "Shaw",
+        "name_jp": "ショウ",
+        "name_kr": "쇼",
+        "nationId": "lungmen",
+        "groupId": null,
+        "teamId": null,
+        "type": "特种",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "位移"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_278_orchid",
+        "name_cn": "梓兰",
+        "name_en": "Orchid",
+        "name_jp": "オーキッド",
+        "name_kr": "오키드",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": "reserve6",
+        "type": "辅助",
+        "level": 3,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "减速"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_285_medic2",
+        "name_cn": "Lancet-2",
+        "name_en": "Lancet-2",
+        "name_jp": "Lancet-2",
+        "name_kr": "Lancet-2",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": null,
+        "type": "医疗",
+        "level": 1,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "支援机械",
+            "治疗"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_286_cast3",
+        "name_cn": "Castle-3",
+        "name_en": "Castle-3",
+        "name_jp": "Castle-3",
+        "name_kr": "Castle-3",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": null,
+        "type": "近卫",
+        "level": 1,
+        "sex": "男",
+        "tags": [
+            "近战位",
+            "支援机械",
+            "支援"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_289_gyuki",
+        "name_cn": "缠丸",
+        "name_en": "Matoimaru",
+        "name_jp": "マトイマル",
+        "name_kr": "마토이마루",
+        "nationId": "higashi",
+        "groupId": null,
+        "teamId": null,
+        "type": "近卫",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "生存",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_290_vigna",
+        "name_cn": "红豆",
+        "name_en": "Vigna",
+        "name_jp": "ヴィグナ",
+        "name_kr": "비그나",
+        "nationId": "columbia",
+        "groupId": null,
+        "teamId": null,
+        "type": "先锋",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "输出",
+            "费用回复"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_291_aglina",
+        "name_cn": "安洁莉娜",
+        "name_en": "Angelina",
+        "name_jp": "アンジェリーナ",
+        "name_kr": "안젤리나",
+        "nationId": "siracusa",
+        "groupId": null,
+        "teamId": null,
+        "type": "辅助",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "远程位",
+            "减速",
+            "输出",
+            "支援"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_500_noirc",
+        "name_cn": "黑角",
+        "name_en": "Noir Corne",
+        "name_jp": "ノイルホーン",
+        "name_kr": "느와르 코르네",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": "action4",
+        "type": "重装",
+        "level": 2,
+        "sex": "男",
+        "tags": [
+            "近战位",
+            "新手"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_501_durin",
+        "name_cn": "杜林",
+        "name_en": "Durin",
+        "name_jp": "ドゥリン",
+        "name_kr": "두린",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": "action4",
+        "type": "术师",
+        "level": 2,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "新手"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_502_nblade",
+        "name_cn": "夜刀",
+        "name_en": "Yato",
+        "name_jp": "ヤトウ",
+        "name_kr": "야토",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": "action4",
+        "type": "先锋",
+        "level": 2,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "新手"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_503_rang",
+        "name_cn": "巡林者",
+        "name_en": "Rangers",
+        "name_jp": "レンジャー",
+        "name_kr": "레인저",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": "action4",
+        "type": "狙击",
+        "level": 2,
+        "sex": "男",
+        "tags": [
+            "远程位",
+            "新手"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_282_catap",
+        "name_cn": "空爆",
+        "name_en": "Catapult",
+        "name_jp": "カタパルト",
+        "name_kr": "캐터펄트",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": "reserve6",
+        "type": "狙击",
+        "level": 3,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "群攻"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_137_brownb",
+        "name_cn": "猎蜂",
+        "name_en": "Beehunter",
+        "name_jp": "ビーハンター",
+        "name_kr": "비헌터",
+        "nationId": "ursus",
+        "groupId": null,
+        "teamId": null,
+        "type": "近卫",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_164_nightm",
+        "name_cn": "夜魔",
+        "name_en": "Nightmare",
+        "name_jp": "ナイトメア",
+        "name_kr": "나이트메어",
+        "nationId": "victoria",
+        "groupId": null,
+        "teamId": null,
+        "type": "术师",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "输出",
+            "治疗",
+            "减速"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_220_grani",
+        "name_cn": "格拉尼",
+        "name_en": "Grani",
+        "name_jp": "グラニ",
+        "name_kr": "그라니",
+        "nationId": "victoria",
+        "groupId": null,
+        "teamId": null,
+        "type": "先锋",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "费用回复",
+            "防护"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_263_skadi",
+        "name_cn": "斯卡蒂",
+        "name_en": "Skadi",
+        "name_jp": "スカジ",
+        "name_kr": "스카디",
+        "nationId": "egir",
+        "groupId": "abyssal",
+        "teamId": null,
+        "type": "近卫",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "近战位",
+            "输出",
+            "生存"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_283_midn",
+        "name_cn": "月见夜",
+        "name_en": "Midnight",
+        "name_jp": "ミッドナイト",
+        "name_kr": "미드나이트",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": "reserve6",
+        "type": "近卫",
+        "level": 3,
+        "sex": "男",
+        "tags": [
+            "近战位",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_284_spot",
+        "name_cn": "斑点",
+        "name_en": "Spot",
+        "name_jp": "スポット",
+        "name_kr": "스팟",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": "reserve6",
+        "type": "重装",
+        "level": 3,
+        "sex": "男",
+        "tags": [
+            "近战位",
+            "防护",
+            "治疗"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_010_chen",
+        "name_cn": "陈",
+        "name_en": "Ch'en",
+        "name_jp": "チェン",
+        "name_kr": "첸",
+        "nationId": "lungmen",
+        "groupId": "lgd",
+        "teamId": null,
+        "type": "近卫",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "近战位",
+            "爆发",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_253_greyy",
+        "name_cn": "格雷伊",
+        "name_en": "Greyy",
+        "name_jp": "グレイ",
+        "name_kr": "그레이",
+        "nationId": "bolivar",
+        "groupId": null,
+        "teamId": null,
+        "type": "术师",
+        "level": 4,
+        "sex": "男",
+        "tags": [
+            "远程位",
+            "群攻",
+            "减速"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_281_popka",
+        "name_cn": "泡普卡",
+        "name_en": "Popukar",
+        "name_jp": "ポプカル",
+        "name_kr": "포푸카",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": "reserve6",
+        "type": "近卫",
+        "level": 3,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "群攻",
+            "生存"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_308_swire",
+        "name_cn": "诗怀雅",
+        "name_en": "Swire",
+        "name_jp": "スワイヤー",
+        "name_kr": "스와이어",
+        "nationId": "lungmen",
+        "groupId": "lgd",
+        "teamId": null,
+        "type": "近卫",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "输出",
+            "支援"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_131_flameb",
+        "name_cn": "炎客",
+        "name_en": "Flamebringer",
+        "name_jp": "エンカク",
+        "name_kr": "플레임브링어",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": null,
+        "type": "近卫",
+        "level": 5,
+        "sex": "男",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "输出",
+            "生存"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_190_clour",
+        "name_cn": "红云",
+        "name_en": "Vermeil",
+        "name_jp": "ヴァーミル",
+        "name_kr": "버메일",
+        "nationId": "siracusa",
+        "groupId": null,
+        "teamId": null,
+        "type": "狙击",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_248_mgllan",
+        "name_cn": "麦哲伦",
+        "name_en": "Magallan",
+        "name_jp": "マゼラン",
+        "name_kr": "마젤란",
+        "nationId": "columbia",
+        "groupId": "rhine",
+        "teamId": null,
+        "type": "辅助",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "远程位",
+            "支援",
+            "减速",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_279_excu",
+        "name_cn": "送葬人",
+        "name_en": "Executor",
+        "name_jp": "イグゼキュター",
+        "name_kr": "이그제큐터",
+        "nationId": "laterano",
+        "groupId": null,
+        "teamId": null,
+        "type": "狙击",
+        "level": 5,
+        "sex": "男",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "群攻"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_151_myrtle",
+        "name_cn": "桃金娘",
+        "name_en": "Myrtle",
+        "name_jp": "テンニンカ",
+        "name_kr": "머틀",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": null,
+        "type": "先锋",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "费用回复",
+            "治疗"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_188_helage",
+        "name_cn": "赫拉格",
+        "name_en": "Hellagur",
+        "name_jp": "ヘラグ",
+        "name_kr": "헬라그",
+        "nationId": "ursus",
+        "groupId": null,
+        "teamId": null,
+        "type": "近卫",
+        "level": 6,
+        "sex": "男",
+        "tags": [
+            "高级资深干员",
+            "近战位",
+            "输出",
+            "生存"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_274_astesi",
+        "name_cn": "星极",
+        "name_en": "Astesia",
+        "name_jp": "アステシア",
+        "name_kr": "아스테시아",
+        "nationId": "columbia",
+        "groupId": null,
+        "teamId": null,
+        "type": "近卫",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "输出",
+            "防护"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_298_susuro",
+        "name_cn": "苏苏洛",
+        "name_en": "Sussurro",
+        "name_jp": "ススーロ",
+        "name_kr": "수수로",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": null,
+        "type": "医疗",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "治疗"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_326_glacus",
+        "name_cn": "格劳克斯",
+        "name_en": "Glaucus",
+        "name_jp": "グラウコス",
+        "name_kr": "글라우쿠스",
+        "nationId": "iberia",
+        "groupId": null,
+        "teamId": null,
+        "type": "辅助",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "减速",
+            "控场"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_340_shwaz",
+        "name_cn": "黑",
+        "name_en": "Schwarz",
+        "name_jp": "シュヴァルツ",
+        "name_kr": "슈바르츠",
+        "nationId": "columbia",
+        "groupId": "siesta",
+        "teamId": null,
+        "type": "狙击",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "远程位",
+            "输出"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_348_ceylon",
+        "name_cn": "锡兰",
+        "name_en": "Ceylon",
+        "name_jp": "セイロン",
+        "name_kr": "실론",
+        "nationId": "columbia",
+        "groupId": "siesta",
+        "teamId": null,
+        "type": "医疗",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "治疗"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_260_durnar",
+        "name_cn": "坚雷",
+        "name_en": "Dur-nar",
+        "name_jp": "ジュナー",
+        "name_kr": "듀나",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": null,
+        "type": "重装",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "近战位",
+            "防护",
+            "输出"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_275_breeze",
+        "name_cn": "微风",
+        "name_en": "Breeze",
+        "name_jp": "ブリーズ",
+        "name_kr": "브리즈",
+        "nationId": "victoria",
+        "groupId": null,
+        "teamId": null,
+        "type": "医疗",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "治疗",
+            "支援"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_355_ethan",
+        "name_cn": "伊桑",
+        "name_en": "Ethan",
+        "name_jp": "イーサン",
+        "name_kr": "에단",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": null,
+        "type": "特种",
+        "level": 4,
+        "sex": "男",
+        "tags": [
+            "近战位",
+            "输出",
+            "控场"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_133_mm",
+        "name_cn": "梅",
+        "name_en": "May",
+        "name_jp": "メイ",
+        "name_kr": "메이",
+        "nationId": "victoria",
+        "groupId": null,
+        "teamId": null,
+        "type": "狙击",
+        "level": 4,
+        "sex": "女",
+        "tags": [
+            "远程位",
+            "输出",
+            "减速"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_213_mostma",
+        "name_cn": "莫斯提马",
+        "name_en": "Mostima",
+        "name_jp": "モスティマ",
+        "name_kr": "모스티마",
+        "nationId": "laterano",
+        "groupId": null,
+        "teamId": null,
+        "type": "术师",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "远程位",
+            "群攻",
+            "支援",
+            "控场"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_243_waaifu",
+        "name_cn": "槐琥",
+        "name_en": "Waai Fu",
+        "name_jp": "ワイフー",
+        "name_kr": "와이후",
+        "nationId": "lungmen",
+        "groupId": null,
+        "teamId": "lee",
+        "type": "特种",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "快速复活",
+            "削弱"
+        ],
+        "hidden": false,
+        "globalHidden": false,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_325_bison",
+        "name_cn": "拜松",
+        "name_en": "Bison",
+        "name_jp": "バイソン",
+        "name_kr": "바이슨",
+        "nationId": "lungmen",
+        "groupId": null,
+        "teamId": null,
+        "type": "重装",
+        "level": 5,
+        "sex": "男",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "防护"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
     }
-}
+]
