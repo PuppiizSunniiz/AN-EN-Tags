@@ -2667,7 +2667,7 @@
                     "date": 1693886400,
                     "zone": {
                         "act28sre_zone1": {
-                            "name": "苍白平台",
+                            "name": "Anemic Platform",
                             "stage": {
                                 "act28side_01": "CV-1 : In a Lonely Place",
                                 "act28side_tr01": "CV-TR-1 : City Heat",
@@ -2681,7 +2681,7 @@
                             }
                         },
                         "act28sre_zone2": {
-                            "name": "黑色舰船",
+                            "name": "Black Landship",
                             "stage": {
                                 "act28side_ex01": "CV-EX-1 : Clench the Grip",
                                 "act28side_ex01#f#": "CV-EX-1 : Clench the Grip <b>(Challenge)</b>",
@@ -3035,26 +3035,26 @@
                     "date": 1720497600,
                     "zone": {
                         "act17mini_zone1": {
-                            "name": "走入城市",
+                            "name": "Enter Kazdel",
                             "stage": {
-                                "act17mini_01": "KR-1 : 玉门：沙丘狂欢",
-                                "act17mini_01#f#": "KR-1 : 玉门：沙丘狂欢 <b>(Challenge)</b>",
-                                "act17mini_02": "KR-2 : 天际城：地下奇旅",
-                                "act17mini_02#f#": "KR-2 : 天际城：地下奇旅 <b>(Challenge)</b>",
-                                "act17mini_03": "KR-3 : 索伦托：家族聚会",
-                                "act17mini_03#f#": "KR-3 : 索伦托：家族聚会 <b>(Challenge)</b>",
-                                "act17mini_04": "KR-4 : 多索雷斯：沙滩寻宝",
-                                "act17mini_04#f#": "KR-4 : 多索雷斯：沙滩寻宝 <b>(Challenge)</b>",
-                                "act17mini_05": "KR-5 : 海布里：民兵演习",
-                                "act17mini_05#f#": "KR-5 : 海布里：民兵演习 <b>(Challenge)</b>",
-                                "act17mini_06": "KR-6 : 汐斯塔：云顶派对",
-                                "act17mini_06#f#": "KR-6 : 汐斯塔：云顶派对 <b>(Challenge)</b>",
-                                "act17mini_07": "KR-7 : 诺伯特：清淤重建",
-                                "act17mini_07#f#": "KR-7 : 诺伯特：清淤重建 <b>(Challenge)</b>",
-                                "act17mini_08": "KR-8 : “双日城脱险”",
-                                "act17mini_08#f#": "KR-8 : “双日城脱险” <b>(Challenge)</b>",
-                                "act17mini_s01": "KR-S-1 : 卡兹戴尔：温饱之后",
-                                "act17mini_s02": "KR-S-2 : 卡兹戴尔：精神建设"
+                                "act17mini_01": "KR-1 : Yumen: Dune Carnival",
+                                "act17mini_01#f#": "KR-1 : Yumen: Dune Carnival <b>(Challenge)</b>",
+                                "act17mini_02": "KR-2 : Ortzimuga: Subterranean Adventure",
+                                "act17mini_02#f#": "KR-2 : Ortzimuga: Subterranean Adventure <b>(Challenge)</b>",
+                                "act17mini_03": "KR-3 : Sorrento: Family Gathering",
+                                "act17mini_03#f#": "KR-3 : Sorrento: Family Gathering <b>(Challenge)</b>",
+                                "act17mini_04": "KR-4 : Dossoles: Treasure Hunt",
+                                "act17mini_04#f#": "KR-4 : Dossoles: Treasure Hunt <b>(Challenge)</b>",
+                                "act17mini_05": "KR-5 : Highbury: Militia Drill",
+                                "act17mini_05#f#": "KR-5 : Highbury: Militia Drill <b>(Challenge)</b>",
+                                "act17mini_06": "KR-6 : Siesta: Cloud High",
+                                "act17mini_06#f#": "KR-6 : Siesta: Cloud High <b>(Challenge)</b>",
+                                "act17mini_07": "KR-7 : Norport: Cleanup & Reconstruction",
+                                "act17mini_07#f#": "KR-7 : Norport: Cleanup & Reconstruction <b>(Challenge)</b>",
+                                "act17mini_08": "KR-8 : 'Escape in Dossoles'",
+                                "act17mini_08#f#": "KR-8 : 'Escape in Dossoles' <b>(Challenge)</b>",
+                                "act17mini_s01": "KR-S-1 : Kazdel: Beyond a Full Stomach",
+                                "act17mini_s02": "KR-S-2 : Kazdel: Spiritual Development"
                             }
                         }
                     }
@@ -3813,13 +3813,13 @@
                     }
                 },
                 "camp_r_24": {
-                    "name": "冰封雪谷",
+                    "name": "Icebound Valley",
                     "date": 1725220800,
                     "zone": {
                         "camp_r_24": {
-                            "name": "冰封雪谷",
+                            "name": "Icebound Valley",
                             "stage": {
-                                "camp_r_24": "冰封雪谷"
+                                "camp_r_24": "Icebound Valley"
                             }
                         }
                     }
@@ -4225,9 +4225,11 @@
                         "CCBP#03": {
                             "name": "CCBP#03 : Battleplan Extinguished Sins",
                             "stage": {
-                                "crisis_v2_03-01": "TBA (Main)",
-                                "crisis_v2_03-02": "TBA",
-                                "crisis_v2_03-03": "TBA"
+                                "crisis_v2_03-01": "浸血焦土 (Main)",
+                                "crisis_v2_03-02": "落尘狭路",
+                                "crisis_v2_03-03": "蚀裂冰湖",
+                                "crisis_v2_01-05": "Beach Repair",
+                                "crisis_v2_01-07": "Area 13 Ruins"
                             }
                         }
                     }
@@ -4642,21 +4644,21 @@
                         "IS#5 Floor 1": {
                             "name": "IS#5 Floor 1",
                             "stage": {
-                                "rogue4_1-1": "坏邻居",
-                                "rogue4_1-2": "公害",
-                                "rogue4_1-3": "安全检查",
-                                "rogue4_1-4": "夺路而跳",
+                                "rogue4_1-1": "Bad Neighbors",
+                                "rogue4_1-2": "Vermin",
+                                "rogue4_1-3": "Safety Inspection",
+                                "rogue4_1-4": "Hasty Escape",
                                 "rogue4_1-5": "冰川期"
                             }
                         },
                         "IS#5 Floor 2": {
                             "name": "IS#5 Floor 2",
                             "stage": {
-                                "rogue4_2-1": "见闻峰会",
-                                "rogue4_2-2": "拆东补西",
-                                "rogue4_2-3": "排风口",
-                                "rogue4_2-4": "炉工志愿队",
-                                "rogue4_2-5": "有序清场",
+                                "rogue4_2-1": "Dissuasion Seminar",
+                                "rogue4_2-2": "Temporary Patchup",
+                                "rogue4_2-3": "Exhaust Vents",
+                                "rogue4_2-4": "Furnace Volunteers",
+                                "rogue4_2-5": "Clear the Crowd",
                                 "rogue4_2-6": "卡兹瀑布",
                                 "rogue4_2-7": "丛林密布"
                             }
@@ -4664,35 +4666,35 @@
                         "IS#5 Floor 3": {
                             "name": "IS#5 Floor 3",
                             "stage": {
-                                "rogue4_3-1": "大棋一盘",
-                                "rogue4_3-2": "血脉之辩",
-                                "rogue4_3-3": "遮天蔽日",
-                                "rogue4_3-4": "劳作的清晨",
-                                "rogue4_3-5": "溃乱魔典",
-                                "rogue4_3-6": "盲盒商场",
+                                "rogue4_3-1": "Simulated Skirmish",
+                                "rogue4_3-2": "Bloodline Debates",
+                                "rogue4_3-3": "Blotted Sky",
+                                "rogue4_3-4": "Morning Labor",
+                                "rogue4_3-5": "Careless Magic",
+                                "rogue4_3-6": "Lottery Fight",
                                 "rogue4_3-7": "火力小队",
                                 "rogue4_3-8": "机动队",
-                                "rogue4_b-1": "守望的河水 (Boss)",
-                                "rogue4_b-1-b": "或然面纱 (Boss)",
-                                "rogue4_b-1-c": "离歌的庭院 (Boss)",
-                                "rogue4_b-2": "卫士不语功 (Boss)",
-                                "rogue4_b-2-b": "奉献 (Boss)",
-                                "rogue4_b-2-c": "赴敌者 (Boss)",
-                                "rogue4_b-3": "存亡之战 (Boss)",
-                                "rogue4_b-3-b": "斩首 (Boss)",
-                                "rogue4_b-3-c": "王冠之下 (Boss)"
+                                "rogue4_b-1": "River Watcher (Boss)",
+                                "rogue4_b-1-b": "Veil of Probability (Boss)",
+                                "rogue4_b-1-c": "Courtyard of Farewells (Boss)",
+                                "rogue4_b-2": "Silent Guardian (Boss)",
+                                "rogue4_b-2-b": "Devoted Warrior (Boss)",
+                                "rogue4_b-2-c": "Brave Souls Marching (Boss)",
+                                "rogue4_b-3": "Battle of Survival (Boss)",
+                                "rogue4_b-3-b": "Decapitation (Boss)",
+                                "rogue4_b-3-c": "Under The Crown (Boss)"
                             }
                         },
                         "IS#5 Floor 4": {
                             "name": "IS#5 Floor 4",
                             "stage": {
-                                "rogue4_4-1": "年代断层",
-                                "rogue4_4-2": "朽败考察",
-                                "rogue4_4-3": "飞越大水坑",
-                                "rogue4_4-4": "猩红甬道",
-                                "rogue4_4-5": "现代战争法则",
-                                "rogue4_4-6": "假想对冲",
-                                "rogue4_4-7": "幽灵城",
+                                "rogue4_4-1": "Epochal Gaps",
+                                "rogue4_4-2": "Sordid Surveillance",
+                                "rogue4_4-3": "Past The Aquapit",
+                                "rogue4_4-4": "Crimson Corridor",
+                                "rogue4_4-5": "Rules of Modern Warfare",
+                                "rogue4_4-6": "Timeworn Tensions",
+                                "rogue4_4-7": "Ghost City",
                                 "rogue4_4-8": "神出鬼没",
                                 "rogue4_4-9": "混沌",
                                 "rogue4_4-10": "争议频发"
@@ -4701,20 +4703,20 @@
                         "IS#5 Floor 5": {
                             "name": "IS#5 Floor 5",
                             "stage": {
-                                "rogue4_5-1": "寄人城池下",
-                                "rogue4_5-2": "计划耕种",
-                                "rogue4_5-3": "巫咒同盟",
-                                "rogue4_5-4": "通道封锁",
-                                "rogue4_5-5": "无罪净土",
-                                "rogue4_5-6": "浮空城接舷战",
-                                "rogue4_5-7": "残损学院",
+                                "rogue4_5-1": "Rogue Mercenary",
+                                "rogue4_5-2": "Land Reclamation",
+                                "rogue4_5-3": "Witch-Curse Alliance",
+                                "rogue4_5-4": "Passage Blockade",
+                                "rogue4_5-5": "Guiltless Paradise",
+                                "rogue4_5-6": "Arial Assault",
+                                "rogue4_5-7": "Wrecked Academy",
                                 "rogue4_5-8": "建制",
                                 "rogue4_5-9": "莱茵卫士",
-                                "rogue4_b-4": "紧急授课 (Boss)",
+                                "rogue4_b-4": "Emergency Lecture (Boss)",
                                 "rogue4_b-4-b": "思维矫正 (Boss)",
                                 "rogue4_b-4-c": "紧急授课 (Boss)",
                                 "rogue4_b-4-d": "思维矫正 (Boss)",
-                                "rogue4_b-5": "朝谒 (Boss)",
+                                "rogue4_b-5": "Court Visit (Boss)",
                                 "rogue4_b-5-b": "魂灵朝谒 (Boss)",
                                 "rogue4_b-5-c": "朝谒 (Boss)",
                                 "rogue4_b-5-d": "魂灵朝谒 (Boss)"
@@ -4723,9 +4725,9 @@
                         "IS#5 Floor 6": {
                             "name": "IS#5 Floor 6",
                             "stage": {
-                                "rogue4_6-1": "谋求共识",
-                                "rogue4_6-2": "神圣的渴求",
-                                "rogue4_b-6": "圣城 (Boss)",
+                                "rogue4_6-1": "Quest For Consensus",
+                                "rogue4_6-2": "Divine Desire",
+                                "rogue4_b-6": "Holy City (Boss)",
                                 "rogue4_b-7": "授法 (Boss)"
                             }
                         },
@@ -4746,29 +4748,29 @@
                         "IS#5 Treasure": {
                             "name": "IS#5 Treasure",
                             "stage": {
-                                "rogue4_t-1": "失败的试胆",
-                                "rogue4_t-2": "信号灯",
-                                "rogue4_t-3": "劫虚济实",
-                                "rogue4_t-4": "鸭速公路",
-                                "rogue4_t-5": "战场侧面",
-                                "rogue4_t-6": "继承",
-                                "rogue4_t-7": "时光凯旋",
-                                "rogue4_t-8": "玩具的报复"
+                                "rogue4_t-1": "Failed Dare",
+                                "rogue4_t-2": "Signal Light",
+                                "rogue4_t-3": "Illusory Heist",
+                                "rogue4_t-4": "Duck-Speed Highway",
+                                "rogue4_t-5": "Beside The Battlefield",
+                                "rogue4_t-6": "Legacy",
+                                "rogue4_t-7": "Victory Rewind",
+                                "rogue4_t-8": "Revenge of the Toys"
                             }
                         },
                         "IS#5 Event": {
                             "name": "IS#5 Event",
                             "stage": {
-                                "rogue4_ev-1": "物权纠纷",
-                                "rogue4_ev-2": "叙事要约"
+                                "rogue4_ev-1": "Property Dispute",
+                                "rogue4_ev-2": "Narrative Offer"
                             }
                         },
                         "IS#5 Duel": {
                             "name": "IS#5 Duel",
                             "stage": {
-                                "rogue4_d-1": "以血还血",
-                                "rogue4_d-2": "善恶同道",
-                                "rogue4_d-3": "石心双子",
+                                "rogue4_d-1": "Eye For an Eye",
+                                "rogue4_d-2": "Narrow Path",
+                                "rogue4_d-3": "Twin Gargoyles",
                                 "rogue4_d-b": "轻舟共渡"
                             }
                         }
@@ -5827,7 +5829,7 @@
         "camp_r_21": "New Hotel Avenue",
         "camp_r_22": "'Eccentricity' Laboratory",
         "camp_r_23": "Burning District",
-        "camp_r_24": "冰封雪谷",
+        "camp_r_24": "Icebound Valley",
         "camp_r_25": "66号航道",
         "camp_r_26": "壬午号水稻田",
         "tower_tr_01": "Training Ground #7",
@@ -14964,6 +14966,11 @@
                         "crisis_v2_01-07",
                         "crisis_v2_01-07"
                     ]
+                },
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_01-07"
+                    ]
                 }
             }
         },
@@ -15089,6 +15096,11 @@
                 "CCBP#01": {
                     "CCBP#01": [
                         "crisis_v2_01-07",
+                        "crisis_v2_01-07"
+                    ]
+                },
+                "CCBP#03": {
+                    "CCBP#03": [
                         "crisis_v2_01-07"
                     ]
                 }
@@ -15759,7 +15771,8 @@
                 },
                 "CCBP#03": {
                     "CCBP#03": [
-                        "crisis_v2_03-03"
+                        "crisis_v2_03-03",
+                        "crisis_v2_01-07"
                     ]
                 }
             },
@@ -17156,6 +17169,11 @@
                         "crisis_v2_01-05",
                         "crisis_v2_01-05"
                     ]
+                },
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_01-05"
+                    ]
                 }
             },
             "is": {
@@ -17264,6 +17282,11 @@
                 "CCBP#01": {
                     "CCBP#01": [
                         "crisis_v2_01-05",
+                        "crisis_v2_01-05"
+                    ]
+                },
+                "CCBP#03": {
+                    "CCBP#03": [
                         "crisis_v2_01-05"
                     ]
                 }
@@ -17516,6 +17539,11 @@
                 "CCBP#01": {
                     "CCBP#01": [
                         "crisis_v2_01-05",
+                        "crisis_v2_01-05"
+                    ]
+                },
+                "CCBP#03": {
+                    "CCBP#03": [
                         "crisis_v2_01-05"
                     ]
                 }
@@ -17780,6 +17808,11 @@
                 "CCBP#01": {
                     "CCBP#01": [
                         "crisis_v2_01-05",
+                        "crisis_v2_01-05"
+                    ]
+                },
+                "CCBP#03": {
+                    "CCBP#03": [
                         "crisis_v2_01-05"
                     ]
                 }
@@ -20433,6 +20466,11 @@
                 "CCBP#01": {
                     "CCBP#01": [
                         "crisis_v2_01-07",
+                        "crisis_v2_01-07"
+                    ]
+                },
+                "CCBP#03": {
+                    "CCBP#03": [
                         "crisis_v2_01-07"
                     ]
                 }
@@ -51730,6 +51768,11 @@
                         "crisis_v2_01-07",
                         "crisis_v2_01-07"
                     ]
+                },
+                "CCBP#03": {
+                    "CCBP#03": [
+                        "crisis_v2_01-07"
+                    ]
                 }
             }
         },
@@ -61824,6 +61867,11 @@
                 "CCBP#01": {
                     "CCBP#01": [
                         "crisis_v2_01-05",
+                        "crisis_v2_01-05"
+                    ]
+                },
+                "CCBP#03": {
+                    "CCBP#03": [
                         "crisis_v2_01-05"
                     ]
                 }

@@ -639,7 +639,7 @@ function enemyDetail(el,level){
                     <th scope="col" class="hovertooltip" data-tooltip="Unable to move, attack, or use skills, RES -15.">Freeze</th>
                     <th scope="col" class="hovertooltip" data-tooltip="Target becomes aerial and cannot move, attack, or use skills. Duration halved if Weight is greater than 3.">Levitate</th>
                     <th scope="col" class="hovertooltip" data-tooltip="Cannot perform normal attacks when blocked.">Frighten</th>
-                    <th scope="col" class="hovertooltip" data-tooltip="Cannot be blocked, run away in panic.">Fear</th>
+                    <th scope="col" class="hovertooltip" data-tooltip="Cannot be blocked and runs off uncontrollably">Fear</th>
                 </tr>
             </thead>
             <tbody>

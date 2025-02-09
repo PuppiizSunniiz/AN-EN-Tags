@@ -2695,9 +2695,9 @@
         "descformat": "When this Operator is assigned to the Reception Room, if only this Operator is working in the Reception Room, for every <@cc.kw>16</> consecutive Morale spent, a <@cc.kw>Rhodes Island Pharmaceuticals</> clue is <@cc.kw>guaranteed</> next."
     },
     "control_dorm_rec[002]": {
-        "name": "巡心",
+        "name": "Wandering Heart",
         "desc": "进驻控制中枢时，所有宿舍内所有干员的心情每小时恢复<@cc.vup>+0.05</>（同种效果取最高）",
-        "descformat": "进驻控制中枢时，所有宿舍内所有干员的心情每小时恢复<@cc.vup>+0.05</>（同种效果取最高）"
+        "descformat": "When this Operator is assigned to the Control Center, all Operators in Dormitories recover <@cc.vup>+0.05</> Morale per hour (strongest effect of the same type applies)"
     },
     "power_rec_spd[025]": {
         "name": "Dome Logistics α",
@@ -2710,14 +2710,14 @@
         "descformat": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+20%</>"
     },
     "trade_ord_spd&meet[010]": {
-        "name": "天生的顾问",
+        "name": "Gifted Adviser",
         "desc": "进驻贸易站时，订单获取效率<@cc.vup>+15%</>，会客室每级额外提供<@cc.vup>5%</>获取效率，最多提供<@cc.vup>30%</>效率",
-        "descformat": "进驻贸易站时，订单获取效率<@cc.vup>+15%</>，会客室每级额外提供<@cc.vup>5%</>获取效率，最多提供<@cc.vup>30%</>效率"
+        "descformat": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+15%</>, +<@cc.vup>5%</> per Reception Room level, up to a maximum of <@cc.vup>30%</>"
     },
     "trade_ord_wt&cost[003]": {
-        "name": "懂行",
+        "name": "Know the Ropes",
         "desc": "进驻贸易站时，<@cc.kw>小幅提升</>当前贸易站<@cc.kw>高品质贵金属订单</>的出现概率（工作时长影响概率），心情每小时消耗<@cc.vup>-0.25</>",
-        "descformat": "进驻贸易站时，<@cc.kw>小幅提升</>当前贸易站<@cc.kw>高品质贵金属订单</>的出现概率（工作时长影响概率），心情每小时消耗<@cc.vup>-0.25</>"
+        "descformat": "When this Operator is assigned to a Trading Post, the chance of getting <@cc.kw>higher-yield Precious Metal orders</> is <@cc.kw>increased slightly</> (rate is influenced by length of work time), and Morale consumed per hour is reduced by <@cc.vup>-0.25</>"
     },
     "trade_ord_spd_ext[000]": {
         "name": "Envoy To Land α",
@@ -2740,24 +2740,24 @@
         "descformat": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Guard</> and <@cc.kw>Supporter</> Operators' Specialization training speed <@cc.vup>+30%</>"
     },
     "dorm_rec_all[017]": {
-        "name": "静心仪式·α",
+        "name": "Meditative Rites·α",
         "desc": "进驻宿舍时，该宿舍内所有干员的心情每小时恢复<@cc.vup>+0.15</>（同种效果取最高）",
-        "descformat": "进驻宿舍时，该宿舍内所有干员的心情每小时恢复<@cc.vup>+0.15</>（同种效果取最高）"
+        "descformat": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.15</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
     },
     "dorm_rec_all[027]": {
-        "name": "静心仪式·β",
+        "name": "Meditative Rites·β",
         "desc": "进驻宿舍时，该宿舍内所有干员的心情每小时恢复<@cc.vup>+0.2</>（同种效果取最高）",
-        "descformat": "进驻宿舍时，该宿舍内所有干员的心情每小时恢复<@cc.vup>+0.2</>（同种效果取最高）"
+        "descformat": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.2</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
     },
     "hire_spd_dorm&lv[000]": {
-        "name": "梅兰德侦探·α",
+        "name": "Maylander Detective·α",
         "desc": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+5%</>，每间宿舍每级额外<@cc.vup>+1%</>人脉资源的联络速度",
-        "descformat": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+5%</>，每间宿舍每级额外<@cc.vup>+1%</>人脉资源的联络速度"
+        "descformat": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+5%</>, with a further increase of <@cc.vup>+1%</> for every level of each Dormitory"
     },
     "hire_spd_dorm&lv[010]": {
-        "name": "梅兰德侦探·β",
+        "name": "Maylander Detective·β",
         "desc": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+5%</>，每间宿舍每级额外<@cc.vup>+2%</>人脉资源的联络速度",
-        "descformat": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+5%</>，每间宿舍每级额外<@cc.vup>+2%</>人脉资源的联络速度"
+        "descformat": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+5%</>, with a further increase of <@cc.vup>+2%</> for every level of each Dormitory"
     },
     "manu_prod_limit&cost[011]": {
         "name": "Fearless Valor",
