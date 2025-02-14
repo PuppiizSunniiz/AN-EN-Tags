@@ -54,7 +54,7 @@ json_dict           =   json_load("py/dict.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS = ["Yu","Blaze the Igniting Spark","Xingzhu","Surfer"] # "", 
+NEW_CHARS = ["Entelechia","Nowell"] # "", 
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS = [] # "",

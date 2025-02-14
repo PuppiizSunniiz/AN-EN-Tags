@@ -11522,5 +11522,80 @@
             "ASPD <@ba.vup>+{attack_speed}</>. Attacks grant <@ba.vup>{cost}</> DP and <$ba.steal>Steal</> <@ba.vup>{def_steal}</> DEF from the target (Caps at <@ba.vup>{def_steal_max}</>, lasts until skill ends or Surfer is retreated)",
             "ASPD <@ba.vup>+{attack_speed}</>. Attacks grant <@ba.vup>{cost}</> DP and <$ba.steal>Steal</> <@ba.vup>{def_steal}</> DEF from the target (Caps at <@ba.vup>{def_steal_max}</>, lasts until skill ends or Surfer is retreated)"
         ]
+    },
+	"skchr_etlchi_1": {
+        "name": "玫影觅迹",
+        "desc": [
+            "The ATK of next attack increases to <@ba.vup>{atk_scale:0%}</>, attacking twice consecutively",
+            "The ATK of next attack increases to <@ba.vup>{atk_scale:0%}</>, attacking twice consecutively",
+            "The ATK of next attack increases to <@ba.vup>{atk_scale:0%}</>, attacking twice consecutively",
+            "The ATK of next attack increases to <@ba.vup>{atk_scale:0%}</>, attacking twice consecutively",
+            "The ATK of next attack increases to <@ba.vup>{atk_scale:0%}</>, attacking twice consecutively",
+            "The ATK of next attack increases to <@ba.vup>{atk_scale:0%}</>, attacking twice consecutively",
+            "The ATK of next attack increases to <@ba.vup>{atk_scale:0%}</>, attacking twice consecutively",
+            "The ATK of next attack increases to <@ba.vup>{atk_scale:0%}</>, attacking twice consecutively",
+            "The ATK of next attack increases to <@ba.vup>{atk_scale:0%}</>, attacking twice consecutively",
+            "The ATK of next attack increases to <@ba.vup>{atk_scale:0%}</>, attacking twice consecutively"
+        ]
+    },
+    "skchr_etlchi_2": {
+        "name": "绯红壁合",
+        "desc": [
+            "Stop attacking, summon Blood Scythes on herself and <@ba.vup>1</> other ground units, slice all nearby enemies every <@ba.vup>0.5</> second dealing <@ba.vup>{atk_scale:0%}</> ATK as Physical damage",
+            "Stop attacking, summon Blood Scythes on herself and <@ba.vup>1</> other ground units, slice all nearby enemies every <@ba.vup>0.5</> second dealing <@ba.vup>{atk_scale:0%}</> ATK as Physical damage",
+            "Stop attacking, summon Blood Scythes on herself and <@ba.vup>1</> other ground units, slice all nearby enemies every <@ba.vup>0.5</> second dealing <@ba.vup>{atk_scale:0%}</> ATK as Physical damage",
+            "Stop attacking, summon Blood Scythes on herself and <@ba.vup>1</> other ground units, slice all nearby enemies every <@ba.vup>0.5</> second dealing <@ba.vup>{atk_scale:0%}</> ATK as Physical damage",
+            "Stop attacking, summon Blood Scythes on herself and <@ba.vup>1</> other ground units, slice all nearby enemies every <@ba.vup>0.5</> second dealing <@ba.vup>{atk_scale:0%}</> ATK as Physical damage",
+            "Stop attacking, summon Blood Scythes on herself and <@ba.vup>1</> other ground units, slice all nearby enemies every <@ba.vup>0.5</> second dealing <@ba.vup>{atk_scale:0%}</> ATK as Physical damage",
+            "Stop attacking, summon Blood Scythes on herself and <@ba.vup>1</> other ground units, slice all nearby enemies every <@ba.vup>0.5</> second dealing <@ba.vup>{atk_scale:0%}</> ATK as Physical damage",
+            "Stop attacking, summon Blood Scythes on herself and <@ba.vup>1</> other ground units, slice all nearby enemies every <@ba.vup>0.5</> second dealing <@ba.vup>{atk_scale:0%}</> ATK as Physical damage",
+            "Stop attacking, summon Blood Scythes on herself and <@ba.vup>1</> other ground units, slice all nearby enemies every <@ba.vup>0.5</> second dealing <@ba.vup>{atk_scale:0%}</> ATK as Physical damage",
+            "Stop attacking, summon Blood Scythes on herself and <@ba.vup>1</> other ground units, slice all nearby enemies every <@ba.vup>0.5</> second dealing <@ba.vup>{atk_scale:0%}</> ATK as Physical damage"
+        ]
+    },
+    "skchr_etlchi_3": {
+        "name": "灵与欲的惜别",
+        "desc": [
+            "Attack Range <@ba.vup>expands</>, ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, summon corresponding Heart Candles up to <@ba.vup>3</> ground enemies with the highest HP within Attack Range. When attacking the Heart Candles, deals at least <@ba.vup>35%</> ATK damage every attack. Each Heart Candle inherit <@ba.vdown>{attack@max_hp_scale:0%}</> of the target's current HP, when attacked the target also receive the same amount of damage. \n<@ba.rem>Heart Candles can only be attacked by Entelechia</>",
+            "Attack Range <@ba.vup>expands</>, ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, summon corresponding Heart Candles up to <@ba.vup>3</> ground enemies with the highest HP within Attack Range. When attacking the Heart Candles, deals at least <@ba.vup>35%</> ATK damage every attack. Each Heart Candle inherit <@ba.vdown>{attack@max_hp_scale:0%}</> of the target's current HP, when attacked the target also receive the same amount of damage. \n<@ba.rem>Heart Candles can only be attacked by Entelechia</>",
+            "Attack Range <@ba.vup>expands</>, ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, summon corresponding Heart Candles up to <@ba.vup>3</> ground enemies with the highest HP within Attack Range. When attacking the Heart Candles, deals at least <@ba.vup>35%</> ATK damage every attack. Each Heart Candle inherit <@ba.vdown>{attack@max_hp_scale:0%}</> of the target's current HP, when attacked the target also receive the same amount of damage. \n<@ba.rem>Heart Candles can only be attacked by Entelechia</>",
+            "Attack Range <@ba.vup>expands</>, ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, summon corresponding Heart Candles up to <@ba.vup>3</> ground enemies with the highest HP within Attack Range. When attacking the Heart Candles, deals at least <@ba.vup>35%</> ATK damage every attack. Each Heart Candle inherit <@ba.vdown>{attack@max_hp_scale:0%}</> of the target's current HP, when attacked the target also receive the same amount of damage. \n<@ba.rem>Heart Candles can only be attacked by Entelechia</>",
+            "Attack Range <@ba.vup>expands</>, ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, summon corresponding Heart Candles up to <@ba.vup>3</> ground enemies with the highest HP within Attack Range. When attacking the Heart Candles, deals at least <@ba.vup>35%</> ATK damage every attack. Each Heart Candle inherit <@ba.vdown>{attack@max_hp_scale:0%}</> of the target's current HP, when attacked the target also receive the same amount of damage. \n<@ba.rem>Heart Candles can only be attacked by Entelechia</>",
+            "Attack Range <@ba.vup>expands</>, ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, summon corresponding Heart Candles up to <@ba.vup>3</> ground enemies with the highest HP within Attack Range. When attacking the Heart Candles, deals at least <@ba.vup>35%</> ATK damage every attack. Each Heart Candle inherit <@ba.vdown>{attack@max_hp_scale:0%}</> of the target's current HP, when attacked the target also receive the same amount of damage. \n<@ba.rem>Heart Candles can only be attacked by Entelechia</>",
+            "Attack Range <@ba.vup>expands</>, ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, summon corresponding Heart Candles up to <@ba.vup>3</> ground enemies with the highest HP within Attack Range. When attacking the Heart Candles, deals at least <@ba.vup>35%</> ATK damage every attack. Each Heart Candle inherit <@ba.vdown>{attack@max_hp_scale:0%}</> of the target's current HP, when attacked the target also receive the same amount of damage. \n<@ba.rem>Heart Candles can only be attacked by Entelechia</>",
+            "Attack Range <@ba.vup>expands</>, ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, summon corresponding Heart Candles up to <@ba.vup>3</> ground enemies with the highest HP within Attack Range. When attacking the Heart Candles, deals at least <@ba.vup>35%</> ATK damage every attack. Each Heart Candle inherit <@ba.vdown>{attack@max_hp_scale:0%}</> of the target's current HP, when attacked the target also receive the same amount of damage. \n<@ba.rem>Heart Candles can only be attacked by Entelechia</>",
+            "Attack Range <@ba.vup>expands</>, ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, summon corresponding Heart Candles up to <@ba.vup>3</> ground enemies with the highest HP within Attack Range. When attacking the Heart Candles, deals at least <@ba.vup>35%</> ATK damage every attack. Each Heart Candle inherit <@ba.vdown>{attack@max_hp_scale:0%}</> of the target's current HP, when attacked the target also receive the same amount of damage. \n<@ba.rem>Heart Candles can only be attacked by Entelechia</>",
+            "Attack Range <@ba.vup>expands</>, ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, summon corresponding Heart Candles up to <@ba.vup>3</> ground enemies with the highest HP within Attack Range. When attacking the Heart Candles, deals at least <@ba.vup>35%</> ATK damage every attack. Each Heart Candle inherit <@ba.vdown>{attack@max_hp_scale:0%}</> of the target's current HP, when attacked the target also receive the same amount of damage. \n<@ba.rem>Heart Candles can only be attacked by Entelechia</>"
+        ]
+    },
+    "skchr_nowell_1": {
+        "name": "步履不停",
+        "desc": [
+            "ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, prioritizes healing units with <$ba.debuff>negative statuses</>",
+            "ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, prioritizes healing units with <$ba.debuff>negative statuses</>",
+            "ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, prioritizes healing units with <$ba.debuff>negative statuses</>",
+            "ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, prioritizes healing units with <$ba.debuff>negative statuses</>",
+            "ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, prioritizes healing units with <$ba.debuff>negative statuses</>",
+            "ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, prioritizes healing units with <$ba.debuff>negative statuses</>",
+            "ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, prioritizes healing units with <$ba.debuff>negative statuses</>",
+            "ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, prioritizes healing units with <$ba.debuff>negative statuses</>",
+            "ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, prioritizes healing units with <$ba.debuff>negative statuses</>",
+            "ATK <@ba.vup>+{atk:0%}</>, ASPD <@ba.vup>+{attack_speed}</>, prioritizes healing units with <$ba.debuff>negative statuses</>"
+        ]
+    },
+    "skchr_nowell_2": {
+        "name": "生命不息",
+        "desc": [
+            "Causes the 2 targets (prioritizes units with <$ba.debuff>negative statuses</>) to receive healing equal to <@ba.vup>{heal_scale:0%}</> Nowell 's ATK every second and gain <$ba.buffres>Status Resistance</> for {status_resistance[limit]} seconds",
+            "Causes the 2 targets (prioritizes units with <$ba.debuff>negative statuses</>) to receive healing equal to <@ba.vup>{heal_scale:0%}</> Nowell 's ATK every second and gain <$ba.buffres>Status Resistance</> for {status_resistance[limit]} seconds",
+            "Causes the 2 targets (prioritizes units with <$ba.debuff>negative statuses</>) to receive healing equal to <@ba.vup>{heal_scale:0%}</> Nowell 's ATK every second and gain <$ba.buffres>Status Resistance</> for {status_resistance[limit]} seconds",
+            "Causes the 2 targets (prioritizes units with <$ba.debuff>negative statuses</>) to receive healing equal to <@ba.vup>{heal_scale:0%}</> Nowell 's ATK every second and gain <$ba.buffres>Status Resistance</> for {status_resistance[limit]} seconds",
+            "Causes the 2 targets (prioritizes units with <$ba.debuff>negative statuses</>) to receive healing equal to <@ba.vup>{heal_scale:0%}</> Nowell 's ATK every second and gain <$ba.buffres>Status Resistance</> for {status_resistance[limit]} seconds",
+            "Causes the 2 targets (prioritizes units with <$ba.debuff>negative statuses</>) to receive healing equal to <@ba.vup>{heal_scale:0%}</> Nowell 's ATK every second and gain <$ba.buffres>Status Resistance</> for {status_resistance[limit]} seconds",
+            "Causes the 3 targets (prioritizes units with <$ba.debuff>negative statuses</>) to receive healing equal to <@ba.vup>{heal_scale:0%}</> Nowell 's ATK every second and gain <$ba.buffres>Status Resistance</> for {status_resistance[limit]} seconds",
+            "Causes the 3 targets (prioritizes units with <$ba.debuff>negative statuses</>) to receive healing equal to <@ba.vup>{heal_scale:0%}</> Nowell 's ATK every second and gain <$ba.buffres>Status Resistance</> for {status_resistance[limit]} seconds",
+            "Causes the 3 targets (prioritizes units with <$ba.debuff>negative statuses</>) to receive healing equal to <@ba.vup>{heal_scale:0%}</> Nowell 's ATK every second and gain <$ba.buffres>Status Resistance</> for {status_resistance[limit]} seconds",
+            "Causes the 3 targets (prioritizes units with <$ba.debuff>negative statuses</>) to receive healing equal to <@ba.vup>{heal_scale:0%}</> Nowell 's ATK every second and gain <$ba.buffres>Status Resistance</> for {status_resistance[limit]} seconds"
+        ]
     }
 }

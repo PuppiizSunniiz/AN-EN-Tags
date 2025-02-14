@@ -8161,5 +8161,66 @@
                 "desc": "When deployed, if there are no operators within the adjacent 4 tiles, gain 3<@ba.talpu>(+1)</> DP"
             }
         ]
+    ],
+	"char_4010_etlchi": [
+        [
+            {
+                "name": "萃血",
+                "descCN": "每次攻击敌人时<$ba.steal>偷取</>目标50点生命上限（最高900）并使目标每秒受到100点法术伤害持续5秒",
+                "desc": "Attack <$ba.steal>Steal</> 50 Max HP from the target (Caps at 900) and deal 100 Arts damage every second for 5 second"
+            },
+            {
+                "name": "萃血",
+                "descCN": "每次攻击敌人时<$ba.steal>偷取</>目标50点生命上限（最高900）并使目标每秒受到150<@ba.talpu>（+50）</>点法术伤害持续5秒",
+                "desc": "Attack <$ba.steal>Steal</> 50 Max HP from the target (Caps at 900) and deal 150<@ba.talpu>(+50)</> Arts damage every second for 5 second"
+            },
+            {
+                "name": "萃血",
+                "descCN": "每次攻击敌人时<$ba.steal>偷取</>目标75点生命上限（最高1350）并使目标每秒受到200点法术伤害持续5秒",
+                "desc": "Attack <$ba.steal>Steal</> 75 Max HP from the target (Caps at 1350) and deal 200 Arts damage every second for 5 second"
+            },
+            {
+                "name": "萃血",
+                "descCN": "每次攻击敌人时<$ba.steal>偷取</>目标75点生命上限（最高1350）并使目标每秒受到250<@ba.talpu>（+50）</>点法术伤害持续5秒",
+                "desc": "Attack <$ba.steal>Steal</> 50 Max HP from the target (Caps at 900) and deal 250<@ba.talpu>(+50)</> Arts damage every second for 5 second"
+            }
+        ],
+        [
+            {
+                "name": "重盈",
+                "descCN": "生命值低于25%时，仅一次立刻回复50%最大生命值，且自身之后受到的物理伤害降低10%",
+                "desc": "When this unit's HP falls beneath 25%, restores 50% HP (one time only) and gain 10% Physical damage resist"
+            },
+            {
+                "name": "重盈",
+                "descCN": "生命值低于25%时，仅一次立刻回复55%<@ba.talpu>（+5%）</>最大生命值，且自身之后受到的物理伤害降低15%<@ba.talpu>（+5%）</>",
+                "desc": "When this unit's HP falls beneath 25%, restores 55%<@ba.talpu>(+5%)</> HP (one time only) and gain 15%<@ba.talpu>(+5%)</> Physical damage resist"
+            }
+        ],
+        []
+    ],
+    "char_4173_nowell": [
+        [
+            {
+                "name": "精准配镜",
+                "descCN": "治疗处于异常状态中的友方干员时治疗量提升至110%",
+                "desc": "When heal operators under <$ba.debuff>negative statuses</> effect, increase healing amount to 110%"
+            },
+            {
+                "name": "精准配镜",
+                "descCN": "治疗处于异常状态中的友方干员时治疗量提升至113%<@ba.talpu>（+3%）</>",
+                "desc": "When heal operators under <$ba.debuff>negative statuses</> effect, increase healing amount to 113%<@ba.talpu>(+3%)</>"
+            },
+            {
+                "name": "精准配镜",
+                "descCN": "治疗处于异常状态中的友方干员时治疗量提升至120%",
+                "desc": "When heal operators under <$ba.debuff>negative statuses</> effect, increase healing amount to 120%"
+            },
+            {
+                "name": "精准配镜",
+                "descCN": "治疗处于异常状态中的友方干员时治疗量提升至123%<@ba.talpu>（+3%）</>",
+                "desc": "When heal operators under <$ba.debuff>negative statuses</> effect, increase healing amount to 123%<@ba.talpu>(+3%)</>"
+            }
+        ]
     ]
 }

@@ -28,7 +28,7 @@
 
 # Akhrchar
 ### Need Fix !!!
-    - 
+    - Lumen 3rd skill/Exeter 1st skill <><> broke again :dumb:
 ### To do
     - Add gamemode in Filter
     - Skin Illustrator
@@ -46,7 +46,7 @@
 ### Need Fix !!!
     - 
 ### To do
-    - 
+    - Add amiyi alter for all operator filter
 ### Later
     - 
 
