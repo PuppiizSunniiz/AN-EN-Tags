@@ -1,35 +1,10 @@
-# Arknight-Image
-## Update
-- ???
-## Schedule
-
-- Avatars : folder for ***char, token*** and ***skin*** avatar
-
-- Characters : Folder for ***char*** and ***skin*** full body AVG
-
-- Classes : Folder for char **class** icon (probably not add new one)
-
-- Enemy : Folder for ***enemy*** handbook icon
-
-- Equip : mod Folder
-    - icon : Folder for ***char mod***
-    - shining : Folder for ***mod color effect***
-    - type : Folder for ***archetype mod*** icon
-
-- Items : Folder for ***material***
-
-- Skills : Folder for ***skill*** icon
-
-- Ui :
-    - Infrastructure : Folder for ***RIIC skill*** icon
-    - Subclass : Folder for ***archetype*** icon
-
----
-
 # Akhrchar
 ### Need Fix !!!
     - Lumen 3rd skill/Exeter 1st skill <><> broke again :dumb:
 ### To do
+    - Add Arknight Terra wiki button/link (https://arknights.wiki.gg/wiki/Op_name_go_here/Class-for-amiyi-class-change)
+        - button "Wiki pic" and txt "Terra Wiki"
+    - Either remove SanityGone or change link to old guide
     - Add gamemode in Filter
     - Skin Illustrator
     - tweak token section

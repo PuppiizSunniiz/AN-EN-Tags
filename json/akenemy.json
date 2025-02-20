@@ -2836,8 +2836,8 @@
                     "name": "[HS] : Here A People Sows",
                     "date": 1706760000,
                     "zone": {
-                        "act31side_zone1": {
-                            "name": "Agricultural Plate",
+                        "act31sre_zone1": {
+                            "name": "种植地块",
                             "stage": {
                                 "act31side_01": "HS-1 : Journey to Dahuang",
                                 "act31side_tr01": "HS-TR-1 : Farmer's Wisdom",
@@ -2852,8 +2852,8 @@
                                 "act31side_09": "HS-9 : Reap the Consequence"
                             }
                         },
-                        "act31side_zone2": {
-                            "name": "City Core",
+                        "act31sre_zone2": {
+                            "name": "荒城核心",
                             "stage": {
                                 "act31side_ex01": "HS-EX-1 : Prepare the Soil",
                                 "act31side_ex01#f#": "HS-EX-1 : Prepare the Soil <b>(Challenge)</b>",
@@ -2873,8 +2873,8 @@
                                 "act31side_ex08#f#": "HS-EX-8 : Harvest <b>(Challenge)</b>"
                             }
                         },
-                        "act31side_zone3": {
-                            "name": "Far Side of the Great River",
+                        "act31sre_zone3": {
+                            "name": "大江北岸",
                             "stage": {
                                 "act31side_s01": "HS-S-1 : Crop Repository",
                                 "act31side_s01#f#": "HS-S-1 : Crop Repository <b>(Challenge)</b>",
@@ -3873,6 +3873,18 @@
                             "name": "壬午号水稻田",
                             "stage": {
                                 "camp_r_26": "壬午号水稻田"
+                            }
+                        }
+                    }
+                },
+                "camp_r_27": {
+                    "name": "选帝侯广场",
+                    "date": 1740945600,
+                    "zone": {
+                        "camp_r_27": {
+                            "name": "选帝侯广场",
+                            "stage": {
+                                "camp_r_27": "选帝侯广场"
                             }
                         }
                     }
@@ -5862,6 +5874,7 @@
         "camp_r_24": "Icebound Valley",
         "camp_r_25": "66号航道",
         "camp_r_26": "壬午号水稻田",
+        "camp_r_27": "选帝侯广场",
         "tower_tr_01": "Training Ground #7",
         "tower_tr_02": "Training Ground #9",
         "tower_tr_03": "Training Ground #10",
@@ -6038,7 +6051,7 @@
                     ]
                 },
                 "act31side": {
-                    "act31side_zone1": [
+                    "act31sre_zone1": [
                         "act31side_tr01"
                     ]
                 },
@@ -10802,10 +10815,10 @@
                     ]
                 },
                 "act31side": {
-                    "act31side_zone1": [
+                    "act31sre_zone1": [
                         "act31side_01"
                     ],
-                    "act31side_zone3": [
+                    "act31sre_zone3": [
                         "act31side_mo01"
                     ]
                 },
@@ -40707,6 +40720,11 @@
                     "camp_r_16": [
                         "camp_r_16"
                     ]
+                },
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
+                    ]
                 }
             },
             "sss": {
@@ -40799,6 +40817,11 @@
                     "camp_r_16": [
                         "camp_r_16"
                     ]
+                },
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
+                    ]
                 }
             },
             "sss": {
@@ -40845,6 +40868,11 @@
                 "camp_r_16": {
                     "camp_r_16": [
                         "camp_r_16"
+                    ]
+                },
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
                     ]
                 }
             },
@@ -40909,6 +40937,11 @@
                 "camp_r_16": {
                     "camp_r_16": [
                         "camp_r_16"
+                    ]
+                },
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
                     ]
                 }
             },
@@ -42860,6 +42893,11 @@
                 "camp_r_16": {
                     "camp_r_16": [
                         "camp_r_16"
+                    ]
+                },
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
                     ]
                 }
             },
@@ -48265,7 +48303,7 @@
         "enemy_1390_dhsbr": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone1": [
+                    "act31sre_zone1": [
                         "act31side_01",
                         "act31side_tr01",
                         "act31side_02",
@@ -48278,7 +48316,7 @@
                         "act31side_08",
                         "act31side_09"
                     ],
-                    "act31side_zone3": [
+                    "act31sre_zone3": [
                         "act31side_mo01"
                     ]
                 }
@@ -48294,14 +48332,14 @@
         "enemy_1395_dhxts": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone1": [
+                    "act31sre_zone1": [
                         "act31side_tr01",
                         "act31side_03",
                         "act31side_04",
                         "act31side_05",
                         "act31side_06"
                     ],
-                    "act31side_zone3": [
+                    "act31sre_zone3": [
                         "act31side_mo01"
                     ]
                 }
@@ -48317,7 +48355,7 @@
         "enemy_1400_dhtbgj": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone1": [
+                    "act31sre_zone1": [
                         "act31side_tr01",
                         "act31side_03",
                         "act31side_04",
@@ -48339,7 +48377,7 @@
         "enemy_1398_dhdcr": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone1": [
+                    "act31sre_zone1": [
                         "act31side_tr01",
                         "act31side_03",
                         "act31side_04",
@@ -48360,7 +48398,7 @@
         "enemy_1399_dhtb": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone1": [
+                    "act31sre_zone1": [
                         "act31side_tr01",
                         "act31side_03",
                         "act31side_04",
@@ -48382,7 +48420,7 @@
         "enemy_1391_dhbow": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone1": [
+                    "act31sre_zone1": [
                         "act31side_02",
                         "act31side_05",
                         "act31side_06",
@@ -48390,11 +48428,11 @@
                         "act31side_08",
                         "act31side_09"
                     ],
-                    "act31side_zone2": [
+                    "act31sre_zone2": [
                         "act31side_ex06",
                         "act31side_ex06#f#"
                     ],
-                    "act31side_zone3": [
+                    "act31sre_zone3": [
                         "act31side_mo01"
                     ]
                 }
@@ -48410,14 +48448,14 @@
         "enemy_1392_dhshld": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone1": [
+                    "act31sre_zone1": [
                         "act31side_03",
                         "act31side_tr02",
                         "act31side_07",
                         "act31side_08",
                         "act31side_09"
                     ],
-                    "act31side_zone3": [
+                    "act31sre_zone3": [
                         "act31side_mo01"
                     ]
                 }
@@ -48433,12 +48471,12 @@
         "enemy_1393_dhele": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone1": [
+                    "act31sre_zone1": [
                         "act31side_04",
                         "act31side_05",
                         "act31side_09"
                     ],
-                    "act31side_zone3": [
+                    "act31sre_zone3": [
                         "act31side_mo01"
                     ]
                 }
@@ -48454,7 +48492,7 @@
         "enemy_1396_dhdts": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone1": [
+                    "act31sre_zone1": [
                         "act31side_06",
                         "act31side_08"
                     ]
@@ -48464,7 +48502,7 @@
         "enemy_1397_dhtsxt": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone1": [
+                    "act31sre_zone1": [
                         "act31side_06",
                         "act31side_08"
                     ]
@@ -48482,11 +48520,11 @@
         "enemy_1394_dhzts": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone1": [
+                    "act31sre_zone1": [
                         "act31side_07",
                         "act31side_08"
                     ],
-                    "act31side_zone3": [
+                    "act31sre_zone3": [
                         "act31side_mo01"
                     ]
                 }
@@ -48502,14 +48540,14 @@
         "enemy_1550_dhnzzh": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone1": [
+                    "act31sre_zone1": [
                         "act31side_09"
                     ],
-                    "act31side_zone2": [
+                    "act31sre_zone2": [
                         "act31side_ex08",
                         "act31side_ex08#f#"
                     ],
-                    "act31side_zone3": [
+                    "act31sre_zone3": [
                         "act31side_s04",
                         "act31side_s04#f#"
                     ]
@@ -48519,7 +48557,7 @@
         "enemy_1390_dhsbr_2": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone2": [
+                    "act31sre_zone2": [
                         "act31side_ex01",
                         "act31side_ex01#f#",
                         "act31side_ex03",
@@ -48535,7 +48573,7 @@
                         "act31side_ex08",
                         "act31side_ex08#f#"
                     ],
-                    "act31side_zone3": [
+                    "act31sre_zone3": [
                         "act31side_s01",
                         "act31side_s01#f#",
                         "act31side_s02",
@@ -48559,7 +48597,7 @@
         "enemy_1391_dhbow_2": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone2": [
+                    "act31sre_zone2": [
                         "act31side_ex01",
                         "act31side_ex01#f#",
                         "act31side_ex04",
@@ -48571,7 +48609,7 @@
                         "act31side_ex08",
                         "act31side_ex08#f#"
                     ],
-                    "act31side_zone3": [
+                    "act31sre_zone3": [
                         "act31side_s01",
                         "act31side_s01#f#",
                         "act31side_s02",
@@ -48593,13 +48631,13 @@
         "enemy_1395_dhxts_2": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone2": [
+                    "act31sre_zone2": [
                         "act31side_ex02",
                         "act31side_ex02#f#",
                         "act31side_ex06",
                         "act31side_ex06#f#"
                     ],
-                    "act31side_zone3": [
+                    "act31sre_zone3": [
                         "act31side_s02",
                         "act31side_s02#f#",
                         "act31side_s03",
@@ -48619,13 +48657,13 @@
         "enemy_1396_dhdts_2": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone2": [
+                    "act31sre_zone2": [
                         "act31side_ex02",
                         "act31side_ex02#f#",
                         "act31side_ex07",
                         "act31side_ex07#f#"
                     ],
-                    "act31side_zone3": [
+                    "act31sre_zone3": [
                         "act31side_s03",
                         "act31side_s03#f#",
                         "act31side_mo01"
@@ -48636,7 +48674,7 @@
         "enemy_1397_dhtsxt_2": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone2": [
+                    "act31sre_zone2": [
                         "act31side_ex02",
                         "act31side_ex02#f#"
                     ]
@@ -48653,7 +48691,7 @@
         "enemy_1393_dhele_2": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone2": [
+                    "act31sre_zone2": [
                         "act31side_ex03",
                         "act31side_ex03#f#",
                         "act31side_ex04",
@@ -48665,7 +48703,7 @@
                         "act31side_ex08",
                         "act31side_ex08#f#"
                     ],
-                    "act31side_zone3": [
+                    "act31sre_zone3": [
                         "act31side_s01",
                         "act31side_s01#f#",
                         "act31side_s02",
@@ -48689,7 +48727,7 @@
         "enemy_1392_dhshld_2": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone2": [
+                    "act31sre_zone2": [
                         "act31side_ex03",
                         "act31side_ex03#f#",
                         "act31side_ex05",
@@ -48699,7 +48737,7 @@
                         "act31side_ex08",
                         "act31side_ex08#f#"
                     ],
-                    "act31side_zone3": [
+                    "act31sre_zone3": [
                         "act31side_s01",
                         "act31side_s01#f#",
                         "act31side_s03",
@@ -48721,7 +48759,7 @@
         "enemy_1399_dhtb_2": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone2": [
+                    "act31sre_zone2": [
                         "act31side_ex03",
                         "act31side_ex03#f#",
                         "act31side_ex07",
@@ -48729,7 +48767,7 @@
                         "act31side_ex08",
                         "act31side_ex08#f#"
                     ],
-                    "act31side_zone3": [
+                    "act31sre_zone3": [
                         "act31side_s01",
                         "act31side_s01#f#",
                         "act31side_s04",
@@ -48748,7 +48786,7 @@
         "enemy_1400_dhtbgj_2": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone2": [
+                    "act31sre_zone2": [
                         "act31side_ex03",
                         "act31side_ex03#f#",
                         "act31side_ex07",
@@ -48756,7 +48794,7 @@
                         "act31side_ex08",
                         "act31side_ex08#f#"
                     ],
-                    "act31side_zone3": [
+                    "act31sre_zone3": [
                         "act31side_s01",
                         "act31side_s01#f#",
                         "act31side_s04",
@@ -48775,7 +48813,7 @@
         "enemy_1398_dhdcr_2": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone2": [
+                    "act31sre_zone2": [
                         "act31side_ex03",
                         "act31side_ex03#f#",
                         "act31side_ex07",
@@ -48783,7 +48821,7 @@
                         "act31side_ex08",
                         "act31side_ex08#f#"
                     ],
-                    "act31side_zone3": [
+                    "act31sre_zone3": [
                         "act31side_s01",
                         "act31side_s01#f#"
                     ]
@@ -48800,13 +48838,13 @@
         "enemy_1394_dhzts_2": {
             "sidestory": {
                 "act31side": {
-                    "act31side_zone2": [
+                    "act31sre_zone2": [
                         "act31side_ex05",
                         "act31side_ex05#f#",
                         "act31side_ex06",
                         "act31side_ex06#f#"
                     ],
-                    "act31side_zone3": [
+                    "act31sre_zone3": [
                         "act31side_s02",
                         "act31side_s02#f#",
                         "act31side_s03",
@@ -49660,6 +49698,13 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
+                    ]
+                }
+            },
             "sss": {
                 "tower_n_17": {
                     "tower_n_17": [
@@ -49694,6 +49739,13 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
+                    ]
+                }
+            },
             "is": {
                 "IS#5": {
                     "IS#5 Floor 5": [
@@ -49717,6 +49769,13 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
+                    ]
+                }
+            },
             "is": {
                 "IS#5": {
                     "IS#5 Floor 5": [
@@ -49730,6 +49789,13 @@
                 "act29side": {
                     "act29sre_zone1": [
                         "act29side_02"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
                     ]
                 }
             },
@@ -49752,6 +49818,13 @@
                         "act29side_10"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
+                    ]
+                }
             }
         },
         "enemy_1376_ltndru": {
@@ -49760,6 +49833,13 @@
                     "act29sre_zone1": [
                         "act29side_04",
                         "act29side_07"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
                     ]
                 }
             }
@@ -49773,6 +49853,14 @@
                         "act29side_09"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27",
+                        "camp_r_27"
+                    ]
+                }
             }
         },
         "enemy_1377_ltnclo": {
@@ -49783,6 +49871,13 @@
                         "act29side_08",
                         "act29side_09",
                         "act29side_10"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
                     ]
                 }
             },
@@ -49802,6 +49897,13 @@
                     "act29sre_zone1": [
                         "act29side_09",
                         "act29side_09"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
                     ]
                 }
             }
@@ -49863,6 +49965,13 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
+                    ]
+                }
+            },
             "is": {
                 "IS#5": {
                     "IS#5 Floor 5": [
@@ -49904,6 +50013,13 @@
                         "act29side_s05#f#"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
+                    ]
+                }
             }
         },
         "enemy_1371_ltnflu_2": {
@@ -49926,6 +50042,13 @@
                         "act29side_s03#f#",
                         "act29side_s05",
                         "act29side_s05#f#"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
                     ]
                 }
             },
@@ -49956,6 +50079,13 @@
                         "act29side_s04#f#"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
+                    ]
+                }
             }
         },
         "enemy_1379_ltncdt_2": {
@@ -49980,6 +50110,13 @@
                         "act29side_s02#f#",
                         "act29side_s03",
                         "act29side_s03#f#"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
                     ]
                 }
             }
@@ -50010,6 +50147,13 @@
                         "act29side_s05#f#"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
+                    ]
+                }
             }
         },
         "enemy_1375_ltnclr_2": {
@@ -50036,6 +50180,13 @@
                         "act29side_s05#f#"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
+                    ]
+                }
             }
         },
         "enemy_1374_ltnhap_2": {
@@ -50052,6 +50203,13 @@
                         "act29side_s02#f#",
                         "act29side_s05",
                         "act29side_s05#f#"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
                     ]
                 }
             }
@@ -50082,6 +50240,13 @@
                         "act29side_s04",
                         "act29side_s04#f#",
                         "act29side_s04#f#"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
                     ]
                 }
             }
@@ -58729,6 +58894,11 @@
                 "camp_r_16": {
                     "camp_r_16": [
                         "camp_r_16"
+                    ]
+                },
+                "camp_r_27": {
+                    "camp_r_27": [
+                        "camp_r_27"
                     ]
                 }
             },
