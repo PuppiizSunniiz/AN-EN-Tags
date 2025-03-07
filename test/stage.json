@@ -5408,6 +5408,78 @@
             "name": "Assault",
             "Event": "weekly_4"
         },
+        "act41side_01": {
+            "stageId": "act41side_01",
+            "levelId": "Activities/act41side/level_act41side_01",
+            "zoneId": "act41side_zone1",
+            "code": "EA-1",
+            "name": "扉页所见",
+            "Event": "act41side"
+        },
+        "act41side_tr01": {
+            "stageId": "act41side_tr01",
+            "levelId": "Activities/act41side/level_act41side_tr01",
+            "zoneId": "act41side_zone1",
+            "code": "EA-TR-1",
+            "name": "拨雾声",
+            "Event": "act41side"
+        },
+        "act41side_02": {
+            "stageId": "act41side_02",
+            "levelId": "Activities/act41side/level_act41side_02",
+            "zoneId": "act41side_zone1",
+            "code": "EA-2",
+            "name": "不过别离",
+            "Event": "act41side"
+        },
+        "act41side_03": {
+            "stageId": "act41side_03",
+            "levelId": "Activities/act41side/level_act41side_03",
+            "zoneId": "act41side_zone1",
+            "code": "EA-3",
+            "name": "惶惑与冲动",
+            "Event": "act41side"
+        },
+        "act41side_04": {
+            "stageId": "act41side_04",
+            "levelId": "Activities/act41side/level_act41side_04",
+            "zoneId": "act41side_zone1",
+            "code": "EA-4",
+            "name": "旧舞步",
+            "Event": "act41side"
+        },
+        "act41side_05": {
+            "stageId": "act41side_05",
+            "levelId": "Activities/act41side/level_act41side_05",
+            "zoneId": "act41side_zone1",
+            "code": "EA-5",
+            "name": "溺火",
+            "Event": "act41side"
+        },
+        "act41side_06": {
+            "stageId": "act41side_06",
+            "levelId": "Activities/act41side/level_act41side_06",
+            "zoneId": "act41side_zone1",
+            "code": "EA-6",
+            "name": "失路人",
+            "Event": "act41side"
+        },
+        "act41side_07": {
+            "stageId": "act41side_07",
+            "levelId": "Activities/act41side/level_act41side_07",
+            "zoneId": "act41side_zone1",
+            "code": "EA-7",
+            "name": "烧灯者",
+            "Event": "act41side"
+        },
+        "act41side_08": {
+            "stageId": "act41side_08",
+            "levelId": "Activities/act41side/level_act41side_08",
+            "zoneId": "act41side_zone1",
+            "code": "EA-8",
+            "name": "夜尽之时",
+            "Event": "act41side"
+        },
         "act40side_tr01": {
             "stageId": "act40side_tr01",
             "levelId": "Activities/act40side/level_act40side_tr01",
@@ -24618,6 +24690,17 @@
             "pro_d_1",
             "pro_d_2"
         ],
+        "act41side_zone1": [
+            "act41side_01",
+            "act41side_tr01",
+            "act41side_02",
+            "act41side_03",
+            "act41side_04",
+            "act41side_05",
+            "act41side_06",
+            "act41side_07",
+            "act41side_08"
+        ],
         "act40side_zone1": [
             "act40side_tr01",
             "act40side_01",
@@ -27643,6 +27726,9 @@
         ],
         "weekly_4": [
             "weekly_4"
+        ],
+        "act41side": [
+            "act41side_zone1"
         ],
         "act40side": [
             "act40side_zone1",
@@ -49181,6 +49267,11 @@
                 }
             },
             "sidestory": {
+                "act41side": {
+                    "act41side_zone1": [
+                        "act41side_05"
+                    ]
+                },
                 "act18mini": {
                     "act18mini_zone1": [
                         "act18mini_02",
@@ -52397,6 +52488,132 @@
                         "RA#2_monthly_1",
                         "RA#2_monthly_1",
                         "RA#2_monthly_1"
+                    ]
+                }
+            }
+        },
+        "enemy_10064_ftyzss": {
+            "sidestory": {
+                "act41side": {
+                    "act41side_zone1": [
+                        "act41side_01",
+                        "act41side_tr01",
+                        "act41side_02",
+                        "act41side_03",
+                        "act41side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10065_ftzlc": {
+            "sidestory": {
+                "act41side": {
+                    "act41side_zone1": [
+                        "act41side_01",
+                        "act41side_tr01",
+                        "act41side_02",
+                        "act41side_03",
+                        "act41side_04",
+                        "act41side_05",
+                        "act41side_06",
+                        "act41side_07",
+                        "act41side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10066_ftxjl": {
+            "sidestory": {
+                "act41side": {
+                    "act41side_zone1": [
+                        "act41side_02",
+                        "act41side_04",
+                        "act41side_06",
+                        "act41side_07",
+                        "act41side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10067_ftsjc": {
+            "sidestory": {
+                "act41side": {
+                    "act41side_zone1": [
+                        "act41side_03",
+                        "act41side_07",
+                        "act41side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10068_ftxsr": {
+            "sidestory": {
+                "act41side": {
+                    "act41side_zone1": [
+                        "act41side_04"
+                    ]
+                }
+            }
+        },
+        "enemy_1294_duchns": {
+            "sidestory": {
+                "act41side": {
+                    "act41side_zone1": [
+                        "act41side_05"
+                    ]
+                },
+                "act22side": {
+                    "act22sre_zone1": [
+                        "act22side_08"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_17": {
+                    "camp_r_17": [
+                        "camp_r_17"
+                    ]
+                }
+            }
+        },
+        "enemy_10069_ftlsj": {
+            "sidestory": {
+                "act41side": {
+                    "act41side_zone1": [
+                        "act41side_05"
+                    ]
+                }
+            }
+        },
+        "enemy_10070_ftkbtt": {
+            "sidestory": {
+                "act41side": {
+                    "act41side_zone1": [
+                        "act41side_06",
+                        "act41side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10071_ftprg": {
+            "sidestory": {
+                "act41side": {
+                    "act41side_zone1": [
+                        "act41side_07",
+                        "act41side_07",
+                        "act41side_07",
+                        "act41side_07",
+                        "act41side_07",
+                        "act41side_07"
+                    ]
+                }
+            }
+        },
+        "enemy_1563_fthlgj": {
+            "sidestory": {
+                "act41side": {
+                    "act41side_zone1": [
+                        "act41side_08"
                     ]
                 }
             }
@@ -77362,22 +77579,6 @@
                 "CCBP#02": {
                     "CCBP#02": [
                         "crisis_v2_02-03"
-                    ]
-                }
-            }
-        },
-        "enemy_1294_duchns": {
-            "sidestory": {
-                "act22side": {
-                    "act22sre_zone1": [
-                        "act22side_08"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_17": {
-                    "camp_r_17": [
-                        "camp_r_17"
                     ]
                 }
             }

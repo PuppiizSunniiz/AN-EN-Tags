@@ -5493,12 +5493,15 @@
             console.log("DESC NULL")
             return desc
         }
-        
-        console.log(desc,desc.match(/<[@].+?>.+?<[@](.+?)>(.+?)<\/>.+?<\/>/g))
-        // catch <@><@></></> not <@></><@></> Shamare S2 only for now
-        if (desc.match(/<[@].+?>.+?<[@](.+?)>(.+?)<\/>.+?<\/>/g) && !desc.match(/<[@].+?>.+?<\/>.+?<[@](.+?)>(.+?)<\/>.+?<\/>/g)){
-            desc = desc.replace(/(<[@].+?>.+?)<[@](.+?)>(.+?)<\/>(.+?)<\/>/g, function(m,the_begin, rtf, text, the_rest) {
-                console.log(desc,rtf,text)
+
+        // catch </> missing case (Executor the Ex Foedere S1)
+        if ((desc.match(/<[@][^>]+>/g) ?? 0).length - (desc.match(/<\/>/g) ?? 0).length == 1) desc += "</>"
+
+        // catch nested <@><@></></>
+        if (desc.match(/<[@][^>]+>(?:(?!<\/>(?=[^<]*<[$@])).)*?<[@][^>]+>(?:(?!<\/>).)+?<\/>(?:(?!<\/>).)+?<\/>/g)){
+            desc = desc.replace(/(<[@][^>]+>(?:(?!<\/>(?=[^<]*<[$@])).)*?)<[@]([^>]+)>((?:(?!<\/>).)+?)<\/>((?:(?!<\/>).)+?<\/>)/g, function(m,the_begin, rtf, text, the_rest) {
+                console.log([desc])
+                console.log([the_begin, rtf, text, the_rest])
                 let rich = db.dataconst.richTextStyles[rtf];
                 let rich2 = db.named_effects.termDescriptionDict[rtf];
                 if (!rich2){
@@ -5589,7 +5592,7 @@
             console.log("DESC NULL")
             return desc
         }
-        desc = desc.replace(/\{\-?([A-Z@_a-z\[\]0-9.]+)\}{0,1}:(.{1,4})\}/g, function(m, content, format) {
+        desc = desc.replace(/\{\-?([A-Z@_a-z\[\]0-9.]+):?([^}]*)\}/g, function(m, content, format) {
             for (var i = 0; i < blackboard.length; i++) {
                 if (blackboard[i].key.toLowerCase()==content.toLowerCase() || blackboard[i].key.toLowerCase()==-content.toLowerCase()){
                     console.log(blackboard[i].value,content)

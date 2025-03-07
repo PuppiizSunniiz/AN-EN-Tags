@@ -1,60 +1,190 @@
 {
-    "uniequip_002_nowell": [
+    "uniequip_002_thorn2": [
         [
             {
-                "name": "精准配镜",
-                "CN": "治疗处于异常状态中的友方干员时治疗量提升至120%",
-                "mod": "治疗处于异常状态中的友方干员时治疗量提升至130%",
+                "name": "心相",
+                "CN": "攻击力+10%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长3秒",
+                "mod": "攻击力+10%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4秒",
                 "upgradeDescription": ""
             },
             {
-                "name": "精准配镜",
-                "CN": "治疗处于异常状态中的友方干员时治疗量提升至123%<@ba.talpu>（+3%）</>",
-                "mod": "治疗处于异常状态中的友方干员时治疗量提升至133%<@ba.talpu>（+3%）</>",
+                "name": "心相",
+                "CN": "攻击力+14%<@ba.talpu>（+4%）</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4<@ba.talpu>（+1）</>秒",
+                "mod": "攻击力+14%<@ba.talpu>（+4%）</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长5<@ba.talpu>（+1）</>秒",
                 "upgradeDescription": ""
             }
         ],
         [
             {
-                "name": "精准配镜",
-                "CN": "治疗处于异常状态中的友方干员时治疗量提升至120%",
-                "mod": "治疗处于异常状态中的友方干员时治疗量提升至135%",
+                "name": "心相",
+                "CN": "攻击力+10%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长3秒",
+                "mod": "攻击力+15%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4秒",
                 "upgradeDescription": ""
             },
             {
-                "name": "精准配镜",
-                "CN": "治疗处于异常状态中的友方干员时治疗量提升至123%<@ba.talpu>（+3%）</>",
-                "mod": "治疗处于异常状态中的友方干员时治疗量提升至138%<@ba.talpu>（+3%）</>",
+                "name": "心相",
+                "CN": "攻击力+14%<@ba.talpu>（+4%）</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4<@ba.talpu>（+1）</>秒",
+                "mod": "攻击力+19%<@ba.talpu>（+4%）</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长5<@ba.talpu>（+1）</>秒",
                 "upgradeDescription": ""
             }
         ]
     ],
-    "uniequip_002_etlchi": [
+    "uniequip_002_tinman": [
         [
             {
-                "name": "重盈",
-                "CN": "生命值低于25%时，仅一次立刻回复50%最大生命值，且自身之后受到的物理伤害降低10%",
-                "mod": "生命值低于25%时，仅一次立刻回复70%最大生命值，且自身之后受到的物理伤害降低15%",
+                "name": "Shriveled Soul",
+                "EN": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 20%",
+                "CN": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高20%",
+                "mod": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高23%",
                 "upgradeDescription": ""
             },
             {
-                "name": "重盈",
-                "CN": "生命值低于25%时，仅一次立刻回复55%<@ba.talpu>（+5%）</>最大生命值，且自身之后受到的物理伤害降低15%<@ba.talpu>（+5%）</>",
-                "mod": "生命值低于25%时，仅一次立刻回复75%<@ba.talpu>（+5%）最大生命值，且自身之后受到的物理伤害降低20%<@ba.talpu>（+5%）</>",
+                "name": "Shriveled Soul",
+                "EN": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 22% <@ba.talpu>(+2%)</>",
+                "CN": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高22%<@ba.talpu>（+2%）</>",
+                "mod": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高25%<@ba.talpu>（+2%）</>",
                 "upgradeDescription": ""
             }
         ],
         [
             {
-                "name": "重盈",
-                "CN": "生命值低于25%时，仅一次立刻回复50%最大生命值，且自身之后受到的物理伤害降低10%",
-                "mod": "生命值低于25%时，仅一次立刻回复85%最大生命值，且自身之后受到的物理伤害降低20%",
+                "name": "Shriveled Soul",
+                "EN": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 20%",
+                "CN": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高20%",
+                "mod": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高25%",
                 "upgradeDescription": ""
             },
             {
-                "name": "重盈",
-                "CN": "生命值低于25%时，仅一次立刻回复55%<@ba.talpu>（+5%）</>最大生命值，且自身之后受到的物理伤害降低15%<@ba.talpu>（+5%）</>",
-                "mod": "生命值低于25%时，仅一次立刻回复90%<@ba.talpu>（+5%）最大生命值，且自身之后受到的物理伤害降低25%<@ba.talpu>（+5%）</>",
+                "name": "Shriveled Soul",
+                "EN": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 22% <@ba.talpu>(+2%)</>",
+                "CN": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高22%<@ba.talpu>（+2%）</>",
+                "mod": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高27%<@ba.talpu>（+2%）</>",
+                "upgradeDescription": ""
+            }
+        ]
+    ],
+    "uniequip_002_wulfen": [
+        [
+            {
+                "name": "探险家的从容",
+                "CN": "可以使用4<@ba.talpu>（+1）</>个矿石“杀手”（最多拥有4个），矿石“杀手”被部署后准备一段时间可以主动引爆",
+                "mod": "每个矿石“杀手”引爆时范围内的敌人数量大于等于2个时，伤害提升8%",
+                "upgradeDescription": ""
+            }
+        ],
+        [
+            {
+                "name": "探险家的从容",
+                "CN": "可以使用4<@ba.talpu>（+1）</>个矿石“杀手”（最多拥有4个），矿石“杀手”被部署后准备一段时间可以主动引爆",
+                "mod": "每个矿石“杀手”引爆时范围内的敌人数量大于等于2个时，伤害提升12%",
+                "upgradeDescription": ""
+            }
+        ]
+    ],
+    "uniequip_003_gnosis": [
+        [
+            {
+                "name": "Two Paths, One Goal",
+                "EN": "Grants <$ba.buffres>Resist</> to all [Karlan Trade] Operators after Gnosis has been deployed for 10 seconds",
+                "CN": "灵知在场且部署后经过10秒时，使所有【喀兰贸易】干员获得<$ba.buffres>抵抗</>",
+                "mod": "灵知在场且部署后经过10秒时，使所有【喀兰贸易】干员获得<$ba.buffres>抵抗</>，且攻击力+10%",
+                "upgradeDescription": ""
+            }
+        ],
+        [
+            {
+                "name": "Two Paths, One Goal",
+                "EN": "Grants <$ba.buffres>Resist</> to all [Karlan Trade] Operators after Gnosis has been deployed for 10 seconds",
+                "CN": "灵知在场且部署后经过10秒时，使所有【喀兰贸易】干员获得<$ba.buffres>抵抗</>",
+                "mod": "灵知在场且部署后经过10秒时，使所有【喀兰贸易】干员获得<$ba.buffres>抵抗</>，且攻击力+15%",
+                "upgradeDescription": ""
+            }
+        ]
+    ],
+    "uniequip_003_vigil": [
+        [
+            {
+                "name": "Wolven Nature",
+                "EN": "Vigil and the Wolfpack's attacks ignore 175 DEF when attacking enemies blocked by the Wolfpack",
+                "CN": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其175防御力",
+                "mod": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其175防御力，并偷取其15点防御力（最高100点）",
+                "upgradeDescription": ""
+            },
+            {
+                "name": "Wolven Nature",
+                "EN": "Vigil and the Wolfpack's attacks ignore 200 <@ba.talpu>(+25)</> DEF when attacking enemies blocked by the Wolfpack",
+                "CN": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其200<@ba.talpu>（+25）</>防御力",
+                "mod": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其200<@ba.talpu>（+25）</>防御力，并偷取其15点防御力（最高100点）",
+                "upgradeDescription": ""
+            }
+        ],
+        [
+            {
+                "name": "Wolven Nature",
+                "EN": "Vigil and the Wolfpack's attacks ignore 175 DEF when attacking enemies blocked by the Wolfpack",
+                "CN": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其175防御力",
+                "mod": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其225防御力，并偷取其20点防御力（最高100点）",
+                "upgradeDescription": ""
+            },
+            {
+                "name": "Wolven Nature",
+                "EN": "Vigil and the Wolfpack's attacks ignore 200 <@ba.talpu>(+25)</> DEF when attacking enemies blocked by the Wolfpack",
+                "CN": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其200<@ba.talpu>（+25）</>防御力",
+                "mod": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其250<@ba.talpu>（+25）</>防御力，并偷取其20点防御力（最高100点）",
+                "upgradeDescription": ""
+            }
+        ]
+    ],
+    "uniequip_003_sleach": [
+        [
+            {
+                "name": "Spiritual Influence",
+                "EN": "After deployment, the next Operator has -2 DP Cost",
+                "CN": "部署后，下一名部署的干员费用-2",
+                "mod": "部署后，下一名部署的干员费用-2, 若该干员为地面干员，则部署后获得1点部署费用",
+                "upgradeDescription": ""
+            }
+        ],
+        [
+            {
+                "name": "Spiritual Influence",
+                "EN": "After deployment, the next Operator has -2 DP Cost",
+                "CN": "部署后，下一名部署的干员费用-2",
+                "mod": "部署后，下一名部署的干员费用-2, 若该干员为地面干员，则部署后获得2点部署费用",
+                "upgradeDescription": ""
+            }
+        ]
+    ],
+    "uniequip_003_bgsnow": [
+        [
+            {
+                "name": "Stenographer of Weaknesses",
+                "EN": "Attacks from the 'Typewriter' reduce the target's DEF by 18% for 4 seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to 23%",
+                "CN": "“打字机”的攻击会使命中目标的防御力下降18%，持续4秒；若“打字机”放在鸿雪周围四格则效果提升至23%",
+                "mod": "“打字机”的攻击会使命中目标的防御力下降23%，持续4秒；若“打字机”放在鸿雪周围八格则效果提升至28%",
+                "upgradeDescription": ""
+            },
+            {
+                "name": "Stenographer of Weaknesses",
+                "EN": "Attacks from the 'Typewriter' reduce the target's DEF by 20% <@ba.talpu>(+2%)</> for 5 <@ba.talpu>(+1)</> seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to <@ba.talpu>25% (+2%)</>",
+                "CN": "“打字机”的攻击会使命中目标的防御力下降20%<@ba.talpu>（+2%）</>，持续5<@ba.talpu>（+1）</>秒；若“打字机”放在鸿雪周围四格则效果提升至25%<@ba.talpu>（+2%）</>",
+                "mod": "“打字机”的攻击会使命中目标的防御力下降25%<@ba.talpu>（+2%）</>，持续5<@ba.talpu>（+1）</>秒；若“打字机”放在鸿雪周围八格则效果提升至30%<@ba.talpu>（+2%）</>",
+                "upgradeDescription": ""
+            }
+        ],
+        [
+            {
+                "name": "Stenographer of Weaknesses",
+                "EN": "Attacks from the 'Typewriter' reduce the target's DEF by 18% for 4 seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to 23%",
+                "CN": "“打字机”的攻击会使命中目标的防御力下降18%，持续4秒；若“打字机”放在鸿雪周围四格则效果提升至23%",
+                "mod": "“打字机”的攻击会使命中目标的防御力下降28%，持续4秒；若“打字机”放在鸿雪周围八格则效果提升至33%",
+                "upgradeDescription": ""
+            },
+            {
+                "name": "Stenographer of Weaknesses",
+                "EN": "Attacks from the 'Typewriter' reduce the target's DEF by 20% <@ba.talpu>(+2%)</> for 5 <@ba.talpu>(+1)</> seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to <@ba.talpu>25% (+2%)</>",
+                "CN": "“打字机”的攻击会使命中目标的防御力下降20%<@ba.talpu>（+2%）</>，持续5<@ba.talpu>（+1）</>秒；若“打字机”放在鸿雪周围四格则效果提升至25%<@ba.talpu>（+2%）</>",
+                "mod": "“打字机”的攻击会使命中目标的防御力下降30%<@ba.talpu>（+2%）</>，持续5<@ba.talpu>（+1）</>秒；若“打字机”放在鸿雪周围八格则效果提升至35%<@ba.talpu>（+2%）</>",
                 "upgradeDescription": ""
             }
         ]

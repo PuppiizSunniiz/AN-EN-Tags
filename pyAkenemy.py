@@ -952,9 +952,20 @@ def activity_collect(Activityjson):
                     "startCN"   : DB["RA2"]["basicInfo"][f'sandbox_{int(act.split("#")[-1])-1}']["topicStartTime"]
             }
             
-        if activity_collection["Dict"][act]["startCN"] != -1 :
-            new_timeline = [act,activity_collection["Dict"][act]["nameEN"] if activity_collection["Dict"][act]["nameEN"] else activity_collection["Dict"][act]["nameCN"],activity_collection["Dict"][act]["startCN"]]
-            if new_timeline not in timeline : timeline.append(new_timeline)
+        if act in activity_collection["Dict"]:
+            if activity_collection["Dict"][act]["startCN"] != -1 :
+                new_timeline = [act,activity_collection["Dict"][act]["nameEN"] if activity_collection["Dict"][act]["nameEN"] else activity_collection["Dict"][act]["nameCN"],activity_collection["Dict"][act]["startCN"]]
+                if new_timeline not in timeline : timeline.append(new_timeline)
+        else:
+            #Bandage
+            new_timeline = [act,"[PH] New Act", 9999999999]
+            if new_timeline not in timeline : 
+                timeline.append(new_timeline)
+                activity_collection["Dict"][act] = {
+                                                        "nameCN": "[PH] When Elegies Are Ashes",
+                                                        "nameEN": "When Elegies Are Ashes",
+                                                        "startCN": 9999999999
+                                                    }
 
     timeline.sort(reverse = False, key = lambda event : event[2])
     activity_collection["Timeline"] = timeline

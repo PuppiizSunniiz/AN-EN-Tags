@@ -1378,5 +1378,195 @@
                 "upgradeDescription": "When this unit's HP falls beneath 25%, restores 90%<@ba.talpu>(+5%)</> HP (one time only) and gain 25%<@ba.talpu>(+5%)</> Physical damage resist"
             }
         ]
+    ],
+    "uniequip_002_thorn2": [
+        [
+            {
+                "name": "心相",
+                "CN": "攻击力+10%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长3秒",
+                "mod": "攻击力+10%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4秒",
+                "upgradeDescription": "ATK+10%. When there are other operators within Attack Range, increase the duration of Alchemical units by 4 seconds"
+            },
+            {
+                "name": "心相",
+                "CN": "攻击力+14%<@ba.talpu>（+4%）</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4<@ba.talpu>（+1）</>秒",
+                "mod": "攻击力+14%<@ba.talpu>（+4%）</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长5<@ba.talpu>（+1）</>秒",
+                "upgradeDescription": "ATK+14%<@ba.talpu>(+4%)</>. When there are other operators within Attack Range, increase the duration of Alchemical units by 5<@ba.talpu>(+1)</> seconds"
+            }
+        ],
+        [
+            {
+                "name": "心相",
+                "CN": "攻击力+10%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长3秒",
+                "mod": "攻击力+15%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4秒",
+                "upgradeDescription": "ATK+15%. When there are other operators within Attack Range, increase the duration of Alchemical units by 4 seconds"
+            },
+            {
+                "name": "心相",
+                "CN": "攻击力+14%<@ba.talpu>（+4%）</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4<@ba.talpu>（+1）</>秒",
+                "mod": "攻击力+19%<@ba.talpu>（+4%）</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长5<@ba.talpu>（+1）</>秒",
+                "upgradeDescription": "ATK+19%<@ba.talpu>(+4%)</>. When there are other operators within Attack Range, increase the duration of Alchemical units by 5<@ba.talpu>(+1)</> seconds"
+            }
+        ]
+    ],
+    "uniequip_002_tinman": [
+        [
+            {
+                "name": "Shriveled Soul",
+                "EN": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 20%",
+                "CN": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高20%",
+                "mod": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高23%",
+                "upgradeDescription": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 23%"
+            },
+            {
+                "name": "Shriveled Soul",
+                "EN": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 22% <@ba.talpu>(+2%)</>",
+                "CN": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高22%<@ba.talpu>（+2%）</>",
+                "mod": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高25%<@ba.talpu>（+2%）</>",
+                "upgradeDescription": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 25% <@ba.talpu>(+2%)</>"
+            }
+        ],
+        [
+            {
+                "name": "Shriveled Soul",
+                "EN": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 20%",
+                "CN": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高20%",
+                "mod": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高25%",
+                "upgradeDescription": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 25%"
+            },
+            {
+                "name": "Shriveled Soul",
+                "EN": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 22% <@ba.talpu>(+2%)</>",
+                "CN": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高22%<@ba.talpu>（+2%）</>",
+                "mod": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高27%<@ba.talpu>（+2%）</>",
+                "upgradeDescription": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 27% <@ba.talpu>(+2%)</>"
+            }
+        ]
+    ],
+    "uniequip_002_wulfen": [
+        [
+            {
+                "name": "探险家的从容",
+                "CN": "可以使用4<@ba.talpu>（+1）</>个矿石“杀手”（最多拥有4个），矿石“杀手”被部署后准备一段时间可以主动引爆",
+                "mod": "每个矿石“杀手”引爆时范围内的敌人数量大于等于2个时，伤害提升8%",
+                "upgradeDescription": "When a trap is triggered, if there are 2 or more enemies in trap range, increase damage by 8%"
+            }
+        ],
+        [
+            {
+                "name": "探险家的从容",
+                "CN": "可以使用4<@ba.talpu>（+1）</>个矿石“杀手”（最多拥有4个），矿石“杀手”被部署后准备一段时间可以主动引爆",
+                "mod": "每个矿石“杀手”引爆时范围内的敌人数量大于等于2个时，伤害提升12%",
+                "upgradeDescription": "When a trap is triggered, if there are 2 or more enemies in trap range, increase damage by 12%"
+            }
+        ]
+    ],
+    "uniequip_003_gnosis": [
+        [
+            {
+                "name": "Two Paths, One Goal",
+                "EN": "Grants <$ba.buffres>Resist</> to all [Karlan Trade] Operators after Gnosis has been deployed for 10 seconds",
+                "CN": "灵知在场且部署后经过10秒时，使所有【喀兰贸易】干员获得<$ba.buffres>抵抗</>",
+                "mod": "灵知在场且部署后经过10秒时，使所有【喀兰贸易】干员获得<$ba.buffres>抵抗</>，且攻击力+10%",
+                "upgradeDescription": "Grants <$ba.buffres>Resist</> and ATK +10% to all [Karlan Trade] Operators after Gnosis has been deployed for 10 seconds"
+            }
+        ],
+        [
+            {
+                "name": "Two Paths, One Goal",
+                "EN": "Grants <$ba.buffres>Resist</> to all [Karlan Trade] Operators after Gnosis has been deployed for 10 seconds",
+                "CN": "灵知在场且部署后经过10秒时，使所有【喀兰贸易】干员获得<$ba.buffres>抵抗</>",
+                "mod": "灵知在场且部署后经过10秒时，使所有【喀兰贸易】干员获得<$ba.buffres>抵抗</>，且攻击力+15%",
+                "upgradeDescription": "Grants <$ba.buffres>Resist</> and ATK +15% to all [Karlan Trade] Operators after Gnosis has been deployed for 10 seconds"
+            }
+        ]
+    ],
+    "uniequip_003_vigil": [
+        [
+            {
+                "name": "Wolven Nature",
+                "EN": "Vigil and the Wolfpack's attacks ignore 175 DEF when attacking enemies blocked by the Wolfpack",
+                "CN": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其175防御力",
+                "mod": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其175防御力，并偷取其15点防御力（最高100点）",
+                "upgradeDescription": "Vigil and the Wolfpack's attacks ignore 175 DEF when attacking enemies blocked by the Wolfpack and <$ba.steal>Steal</> <@ba.vup>15</> DEF from the target (Caps at <@ba.vup>100</> DEF)"
+            },
+            {
+                "name": "Wolven Nature",
+                "EN": "Vigil and the Wolfpack's attacks ignore 200 <@ba.talpu>(+25)</> DEF when attacking enemies blocked by the Wolfpack",
+                "CN": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其200<@ba.talpu>（+25）</>防御力",
+                "mod": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其200<@ba.talpu>（+25）</>防御力，并偷取其15点防御力（最高100点）",
+                "upgradeDescription": "Vigil and the Wolfpack's attacks ignore 200 <@ba.talpu>(+25)</> DEF when attacking enemies blocked by the Wolfpack and <$ba.steal>Steal</> <@ba.vup>15</> DEF from the target (Caps at <@ba.vup>100</> DEF)"
+            }
+        ],
+        [
+            {
+                "name": "Wolven Nature",
+                "EN": "Vigil and the Wolfpack's attacks ignore 175 DEF when attacking enemies blocked by the Wolfpack",
+                "CN": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其175防御力",
+                "mod": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其225防御力，并偷取其20点防御力（最高100点）",
+                "upgradeDescription": "Vigil and the Wolfpack's attacks ignore 255 DEF when attacking enemies blocked by the Wolfpack and <$ba.steal>Steal</> <@ba.vup>20</> DEF from the target (Caps at <@ba.vup>100</> DEF)"
+            },
+            {
+                "name": "Wolven Nature",
+                "EN": "Vigil and the Wolfpack's attacks ignore 200 <@ba.talpu>(+25)</> DEF when attacking enemies blocked by the Wolfpack",
+                "CN": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其200<@ba.talpu>（+25）</>防御力",
+                "mod": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其250<@ba.talpu>（+25）</>防御力，并偷取其20点防御力（最高100点）",
+                "upgradeDescription": "Vigil and the Wolfpack's attacks ignore 250 <@ba.talpu>(+25)</> DEF when attacking enemies blocked by the Wolfpack and <$ba.steal>Steal</> <@ba.vup>20</> DEF from the target (Caps at <@ba.vup>100</> DEF)"
+            }
+        ]
+    ],
+    "uniequip_003_sleach": [
+        [
+            {
+                "name": "Spiritual Influence",
+                "EN": "After deployment, the next Operator has -2 DP Cost",
+                "CN": "部署后，下一名部署的干员费用-2",
+                "mod": "部署后，下一名部署的干员费用-2, 若该干员为地面干员，则部署后获得1点部署费用",
+                "upgradeDescription": "After deployment, the next Operator has -2 DP Cost. If the next Operator is a Melee Operator, gain 1 DP"
+            }
+        ],
+        [
+            {
+                "name": "Spiritual Influence",
+                "EN": "After deployment, the next Operator has -2 DP Cost",
+                "CN": "部署后，下一名部署的干员费用-2",
+                "mod": "部署后，下一名部署的干员费用-2, 若该干员为地面干员，则部署后获得2点部署费用",
+                "upgradeDescription": "After deployment, the next Operator has -2 DP Cost. If the next Operator is a Melee Operator, gain 2 DP"
+            }
+        ]
+    ],
+    "uniequip_003_bgsnow": [
+        [
+            {
+                "name": "Stenographer of Weaknesses",
+                "EN": "Attacks from the 'Typewriter' reduce the target's DEF by 18% for 4 seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to 23%",
+                "CN": "“打字机”的攻击会使命中目标的防御力下降18%，持续4秒；若“打字机”放在鸿雪周围四格则效果提升至23%",
+                "mod": "“打字机”的攻击会使命中目标的防御力下降23%，持续4秒；若“打字机”放在鸿雪周围八格则效果提升至28%",
+                "upgradeDescription": "Attacks from the 'Typewriter' reduce the target's DEF by 23% for 4 seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to 28%"
+            },
+            {
+                "name": "Stenographer of Weaknesses",
+                "EN": "Attacks from the 'Typewriter' reduce the target's DEF by 20% <@ba.talpu>(+2%)</> for 5 <@ba.talpu>(+1)</> seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to <@ba.talpu>25% (+2%)</>",
+                "CN": "“打字机”的攻击会使命中目标的防御力下降20%<@ba.talpu>（+2%）</>，持续5<@ba.talpu>（+1）</>秒；若“打字机”放在鸿雪周围四格则效果提升至25%<@ba.talpu>（+2%）</>",
+                "mod": "“打字机”的攻击会使命中目标的防御力下降25%<@ba.talpu>（+2%）</>，持续5<@ba.talpu>（+1）</>秒；若“打字机”放在鸿雪周围八格则效果提升至30%<@ba.talpu>（+2%）</>",
+                "upgradeDescription": "Attacks from the 'Typewriter' reduce the target's DEF by 25% <@ba.talpu>(+2%)</> for 5 <@ba.talpu>(+1)</> seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to <@ba.talpu>30% (+2%)</>"
+            }
+        ],
+        [
+            {
+                "name": "Stenographer of Weaknesses",
+                "EN": "Attacks from the 'Typewriter' reduce the target's DEF by 18% for 4 seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to 23%",
+                "CN": "“打字机”的攻击会使命中目标的防御力下降18%，持续4秒；若“打字机”放在鸿雪周围四格则效果提升至23%",
+                "mod": "“打字机”的攻击会使命中目标的防御力下降28%，持续4秒；若“打字机”放在鸿雪周围八格则效果提升至33%",
+                "upgradeDescription": "Attacks from the 'Typewriter' reduce the target's DEF by 28% for 4 seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to 33%"
+            },
+            {
+                "name": "Stenographer of Weaknesses",
+                "EN": "Attacks from the 'Typewriter' reduce the target's DEF by 20% <@ba.talpu>(+2%)</> for 5 <@ba.talpu>(+1)</> seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to <@ba.talpu>25% (+2%)</>",
+                "CN": "“打字机”的攻击会使命中目标的防御力下降20%<@ba.talpu>（+2%）</>，持续5<@ba.talpu>（+1）</>秒；若“打字机”放在鸿雪周围四格则效果提升至25%<@ba.talpu>（+2%）</>",
+                "mod": "“打字机”的攻击会使命中目标的防御力下降30%<@ba.talpu>（+2%）</>，持续5<@ba.talpu>（+1）</>秒；若“打字机”放在鸿雪周围八格则效果提升至35%<@ba.talpu>（+2%）</>",
+                "upgradeDescription": "Attacks from the 'Typewriter' reduce the target's DEF by 30% <@ba.talpu>(+2%)</> for 5 <@ba.talpu>(+1)</> seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to <@ba.talpu>35% (+2%)</>"
+            }
+        ]
     ]
 }

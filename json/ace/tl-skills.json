@@ -11597,5 +11597,185 @@
             "Causes the 3 targets (prioritizes units with <$ba.debuff>negative statuses</>) to receive healing equal to <@ba.vup>{heal_scale:0%}</> Nowell 's ATK every second and gain <$ba.buffres>Status Resistance</> for {status_resistance[limit]} seconds",
             "Causes the 3 targets (prioritizes units with <$ba.debuff>negative statuses</>) to receive healing equal to <@ba.vup>{heal_scale:0%}</> Nowell 's ATK every second and gain <$ba.buffres>Status Resistance</> for {status_resistance[limit]} seconds"
         ]
+    },
+	"skchr_necras_1": {
+        "name": "噩愿",
+        "desc": [
+            "Passive: Each time The Servant of Lament is summoned or upgraded, deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to nearby enemies\nActive: Immediately resummon all Servant of Laments. If there are no Servant of Lament currently on the field, summon 1 Servant of Lament instead",
+            "Passive: Each time The Servant of Lament is summoned or upgraded, deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to nearby enemies\nActive: Immediately resummon all Servant of Laments. If there are no Servant of Lament currently on the field, summon 1 Servant of Lament instead",
+            "Passive: Each time The Servant of Lament is summoned or upgraded, deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to nearby enemies\nActive: Immediately resummon all Servant of Laments. If there are no Servant of Lament currently on the field, summon 1 Servant of Lament instead",
+            "Passive: Each time The Servant of Lament is summoned or upgraded, deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to nearby enemies\nActive: Immediately resummon all Servant of Laments. If there are no Servant of Lament currently on the field, summon 1 Servant of Lament instead",
+            "Passive: Each time The Servant of Lament is summoned or upgraded, deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to nearby enemies\nActive: Immediately resummon all Servant of Laments. If there are no Servant of Lament currently on the field, summon 1 Servant of Lament instead",
+            "Passive: Each time The Servant of Lament is summoned or upgraded, deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to nearby enemies\nActive: Immediately resummon all Servant of Laments. If there are no Servant of Lament currently on the field, summon 1 Servant of Lament instead",
+            "Passive: Each time The Servant of Lament is summoned or upgraded, deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to nearby enemies\nActive: Immediately resummon all Servant of Laments. If there are no Servant of Lament currently on the field, summon 1 Servant of Lament instead",
+            "Passive: Each time The Servant of Lament is summoned or upgraded, deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to nearby enemies\nActive: Immediately resummon all Servant of Laments. If there are no Servant of Lament currently on the field, summon 1 Servant of Lament instead",
+            "Passive: Each time The Servant of Lament is summoned or upgraded, deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to nearby enemies\nActive: Immediately resummon all Servant of Laments. If there are no Servant of Lament currently on the field, summon 1 Servant of Lament instead",
+            "Passive: Each time The Servant of Lament is summoned or upgraded, deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to nearby enemies\nActive: Immediately resummon all Servant of Laments. If there are no Servant of Lament currently on the field, summon 1 Servant of Lament instead"
+        ]
+    },
+    "skchr_necras_2": {
+        "name": "折朽",
+        "desc": [
+            "Immediately puts up to <@ba.vup>{max_target}</> enemies within Attack Range to <$ba.sleep>Sleep</> and deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage every <@ba.vup>{interval}</> second. If the targets are defeated within the skill duration, summon <@ba.vup>{additional_token_cnt}</> additional Servant of Laments",
+            "Immediately puts up to <@ba.vup>{max_target}</> enemies within Attack Range to <$ba.sleep>Sleep</> and deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage every <@ba.vup>{interval}</> second. If the targets are defeated within the skill duration, summon <@ba.vup>{additional_token_cnt}</> additional Servant of Laments",
+            "Immediately puts up to <@ba.vup>{max_target}</> enemies within Attack Range to <$ba.sleep>Sleep</> and deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage every <@ba.vup>{interval}</> second. If the targets are defeated within the skill duration, summon <@ba.vup>{additional_token_cnt}</> additional Servant of Laments",
+            "Immediately puts up to <@ba.vup>{max_target}</> enemies within Attack Range to <$ba.sleep>Sleep</> and deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage every <@ba.vup>{interval}</> second. If the targets are defeated within the skill duration, summon <@ba.vup>{additional_token_cnt}</> additional Servant of Laments",
+            "Immediately puts up to <@ba.vup>{max_target}</> enemies within Attack Range to <$ba.sleep>Sleep</> and deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage every <@ba.vup>{interval}</> second. If the targets are defeated within the skill duration, summon <@ba.vup>{additional_token_cnt}</> additional Servant of Laments",
+            "Immediately puts up to <@ba.vup>{max_target}</> enemies within Attack Range to <$ba.sleep>Sleep</> and deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage every <@ba.vup>{interval}</> second. If the targets are defeated within the skill duration, summon <@ba.vup>{additional_token_cnt}</> additional Servant of Laments",
+            "Immediately puts up to <@ba.vup>{max_target}</> enemies within Attack Range to <$ba.sleep>Sleep</> and deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage every <@ba.vup>{interval}</> second. If the targets are defeated within the skill duration, summon <@ba.vup>{additional_token_cnt}</> additional Servant of Laments",
+            "Immediately puts up to <@ba.vup>{max_target}</> enemies within Attack Range to <$ba.sleep>Sleep</> and deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage every <@ba.vup>{interval}</> second. If the targets are defeated within the skill duration, summon <@ba.vup>{additional_token_cnt}</> additional Servant of Laments",
+            "Immediately puts up to <@ba.vup>{max_target}</> enemies within Attack Range to <$ba.sleep>Sleep</> and deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage every <@ba.vup>{interval}</> second. If the targets are defeated within the skill duration, summon <@ba.vup>{additional_token_cnt}</> additional Servant of Laments",
+            "Immediately puts up to <@ba.vup>{max_target}</> enemies within Attack Range to <$ba.sleep>Sleep</> and deal <@ba.vup>{atk_scale:0%}</> ATK as Arts damage every <@ba.vup>{interval}</> second. If the targets are defeated within the skill duration, summon <@ba.vup>{additional_token_cnt}</> additional Servant of Laments"
+        ]
+    },
+    "skchr_necras_3": {
+        "name": "冠死以冕",
+        "desc": [
+            "Passive: Up to 1 Servant of Lament change into a special form which can only upgrade through skill up to a {attack@max_stack_cnt} times\nActive: Immediately deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage to all enemies within range, then sacrifice 1 Servant of Lament to upgrade the special Servant and recover <@ba.vup>{attack@hp_ratio:0%}</> HP (If The Servant of Lament is already levelled, this effect is doubled). Repeat <@ba.vup>{attack@necras_s_3[attack_cnt].max_stack_cnt}</> times",
+            "Passive: Up to 1 Servant of Lament change into a special form which can only upgrade through skill up to a {attack@max_stack_cnt} times\nActive: Immediately deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage to all enemies within range, then sacrifice 1 Servant of Lament to upgrade the special Servant and recover <@ba.vup>{attack@hp_ratio:0%}</> HP (If The Servant of Lament is already levelled, this effect is doubled). Repeat <@ba.vup>{attack@necras_s_3[attack_cnt].max_stack_cnt}</> times",
+            "Passive: Up to 1 Servant of Lament change into a special form which can only upgrade through skill up to a {attack@max_stack_cnt} times\nActive: Immediately deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage to all enemies within range, then sacrifice 1 Servant of Lament to upgrade the special Servant and recover <@ba.vup>{attack@hp_ratio:0%}</> HP (If The Servant of Lament is already levelled, this effect is doubled). Repeat <@ba.vup>{attack@necras_s_3[attack_cnt].max_stack_cnt}</> times",
+            "Passive: Up to 1 Servant of Lament change into a special form which can only upgrade through skill up to a {attack@max_stack_cnt} times\nActive: Immediately deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage to all enemies within range, then sacrifice 1 Servant of Lament to upgrade the special Servant and recover <@ba.vup>{attack@hp_ratio:0%}</> HP (If The Servant of Lament is already levelled, this effect is doubled). Repeat <@ba.vup>{attack@necras_s_3[attack_cnt].max_stack_cnt}</> times",
+            "Passive: Up to 1 Servant of Lament change into a special form which can only upgrade through skill up to a {attack@max_stack_cnt} times\nActive: Immediately deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage to all enemies within range, then sacrifice 1 Servant of Lament to upgrade the special Servant and recover <@ba.vup>{attack@hp_ratio:0%}</> HP (If The Servant of Lament is already levelled, this effect is doubled). Repeat <@ba.vup>{attack@necras_s_3[attack_cnt].max_stack_cnt}</> times",
+            "Passive: Up to 1 Servant of Lament change into a special form which can only upgrade through skill up to a {attack@max_stack_cnt} times\nActive: Immediately deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage to all enemies within range, then sacrifice 1 Servant of Lament to upgrade the special Servant and recover <@ba.vup>{attack@hp_ratio:0%}</> HP (If The Servant of Lament is already levelled, this effect is doubled). Repeat <@ba.vup>{attack@necras_s_3[attack_cnt].max_stack_cnt}</> times",
+            "Passive: Up to 1 Servant of Lament change into a special form which can only upgrade through skill up to a {attack@max_stack_cnt} times\nActive: Immediately deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage to all enemies within range, then sacrifice 1 Servant of Lament to upgrade the special Servant and recover <@ba.vup>{attack@hp_ratio:0%}</> HP (If The Servant of Lament is already levelled, this effect is doubled). Repeat <@ba.vup>{attack@necras_s_3[attack_cnt].max_stack_cnt}</> times",
+            "Passive: Up to 1 Servant of Lament change into a special form which can only upgrade through skill up to a {attack@max_stack_cnt} times\nActive: Immediately deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage to all enemies within range, then sacrifice 1 Servant of Lament to upgrade the special Servant and recover <@ba.vup>{attack@hp_ratio:0%}</> HP (If The Servant of Lament is already levelled, this effect is doubled). Repeat <@ba.vup>{attack@necras_s_3[attack_cnt].max_stack_cnt}</> times",
+            "Passive: Up to 1 Servant of Lament change into a special form which can only upgrade through skill up to a {attack@max_stack_cnt} times\nActive: Immediately deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage to all enemies within range, then sacrifice 1 Servant of Lament to upgrade the special Servant and recover <@ba.vup>{attack@hp_ratio:0%}</> HP (If The Servant of Lament is already levelled, this effect is doubled). Repeat <@ba.vup>{attack@necras_s_3[attack_cnt].max_stack_cnt}</> times",
+            "Passive: Up to 1 Servant of Lament change into a special form which can only upgrade through skill up to a {attack@max_stack_cnt} times\nActive: Immediately deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage to all enemies within range, then sacrifice 1 Servant of Lament to upgrade the special Servant and recover <@ba.vup>{attack@hp_ratio:0%}</> HP (If The Servant of Lament is already levelled, this effect is doubled). Repeat <@ba.vup>{attack@necras_s_3[attack_cnt].max_stack_cnt}</> times"
+        ]
+    },
+    "sktok_necras_skeltn_1": {
+        "name": "怨火缠身",
+        "desc": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    "sktok_necras_skeltn_2": {
+        "name": "怨火缠身",
+        "desc": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    "sktok_necras_skeltn_3": {
+        "name": "怨火缠身",
+        "desc": [
+            "Deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage every second to all enemies in range",
+            "Deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage every second to all enemies in range",
+            "Deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage every second to all enemies in range",
+            "Deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage every second to all enemies in range",
+            "Deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage every second to all enemies in range",
+            "Deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage every second to all enemies in range",
+            "Deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage every second to all enemies in range",
+            "Deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage every second to all enemies in range",
+            "Deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage every second to all enemies in range",
+            "Deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Arts damage every second to all enemies in range"
+        ]
+    },
+    "skchr_wulfen_1": {
+        "name": "“驱兽专用”",
+        "desc": [
+            "Passive Effect: When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to all enemies in range and <$ba.stun>stun</> them for <@ba.vup>{stun}</> seconds\nActive Effect: Immediately gets 1 trap",
+            "Passive Effect: When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to all enemies in range and <$ba.stun>stun</> them for <@ba.vup>{stun}</> seconds\nActive Effect: Immediately gets 1 trap",
+            "Passive Effect: When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to all enemies in range and <$ba.stun>stun</> them for <@ba.vup>{stun}</> seconds\nActive Effect: Immediately gets 1 trap",
+            "Passive Effect: When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to all enemies in range and <$ba.stun>stun</> them for <@ba.vup>{stun}</> seconds\nActive Effect: Immediately gets 1 trap",
+            "Passive Effect: When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to all enemies in range and <$ba.stun>stun</> them for <@ba.vup>{stun}</> seconds\nActive Effect: Immediately gets 1 trap",
+            "Passive Effect: When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to all enemies in range and <$ba.stun>stun</> them for <@ba.vup>{stun}</> seconds\nActive Effect: Immediately gets 1 trap",
+            "Passive Effect: When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to all enemies in range and <$ba.stun>stun</> them for <@ba.vup>{stun}</> seconds\nActive Effect: Immediately gets 1 trap",
+            "Passive Effect: When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to all enemies in range and <$ba.stun>stun</> them for <@ba.vup>{stun}</> seconds\nActive Effect: Immediately gets 1 trap",
+            "Passive Effect: When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to all enemies in range and <$ba.stun>stun</> them for <@ba.vup>{stun}</> seconds\nActive Effect: Immediately gets 1 trap",
+            "Passive Effect: When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to all enemies in range and <$ba.stun>stun</> them for <@ba.vup>{stun}</> seconds\nActive Effect: Immediately gets 1 trap"
+        ]
+    },
+    "skchr_wulfen_2": {
+        "name": "“顽石专用”",
+        "desc": [
+            "Passive Effect: Trap range <@ba.vup>expands</>, when a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage <@ba.vup>twice</> to all enemies in range and inflicts <@ba.vup>-{-def:0%}</> DEF (does not stack) to the targets for <@ba.vup>{duration}</> seconds\nActive Effect: Immediately gets 1 trap",
+            "Passive Effect: Trap range <@ba.vup>expands</>, when a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage <@ba.vup>twice</> to all enemies in range and inflicts <@ba.vup>-{-def:0%}</> DEF (does not stack) to the targets for <@ba.vup>{duration}</> seconds\nActive Effect: Immediately gets 1 trap",
+            "Passive Effect: Trap range <@ba.vup>expands</>, when a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage <@ba.vup>twice</> to all enemies in range and inflicts <@ba.vup>-{-def:0%}</> DEF (does not stack) to the targets for <@ba.vup>{duration}</> seconds\nActive Effect: Immediately gets 1 trap",
+            "Passive Effect: Trap range <@ba.vup>expands</>, when a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage <@ba.vup>twice</> to all enemies in range and inflicts <@ba.vup>-{-def:0%}</> DEF (does not stack) to the targets for <@ba.vup>{duration}</> seconds\nActive Effect: Immediately gets 1 trap",
+            "Passive Effect: Trap range <@ba.vup>expands</>, when a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage <@ba.vup>twice</> to all enemies in range and inflicts <@ba.vup>-{-def:0%}</> DEF (does not stack) to the targets for <@ba.vup>{duration}</> seconds\nActive Effect: Immediately gets 1 trap",
+            "Passive Effect: Trap range <@ba.vup>expands</>, when a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage <@ba.vup>twice</> to all enemies in range and inflicts <@ba.vup>-{-def:0%}</> DEF (does not stack) to the targets for <@ba.vup>{duration}</> seconds\nActive Effect: Immediately gets 1 trap",
+            "Passive Effect: Trap range <@ba.vup>expands</>, when a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage <@ba.vup>twice</> to all enemies in range and inflicts <@ba.vup>-{-def:0%}</> DEF (does not stack) to the targets for <@ba.vup>{duration}</> seconds\nActive Effect: Immediately gets 1 trap",
+            "Passive Effect: Trap range <@ba.vup>expands</>, when a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage <@ba.vup>twice</> to all enemies in range and inflicts <@ba.vup>-{-def:0%}</> DEF (does not stack) to the targets for <@ba.vup>{duration}</> seconds\nActive Effect: Immediately gets 1 trap",
+            "Passive Effect: Trap range <@ba.vup>expands</>, when a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage <@ba.vup>twice</> to all enemies in range and inflicts <@ba.vup>-{-def:0%}</> DEF (does not stack) to the targets for <@ba.vup>{duration}</> seconds\nActive Effect: Immediately gets 1 trap",
+            "Passive Effect: Trap range <@ba.vup>expands</>, when a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage <@ba.vup>twice</> to all enemies in range and inflicts <@ba.vup>-{-def:0%}</> DEF (does not stack) to the targets for <@ba.vup>{duration}</> seconds\nActive Effect: Immediately gets 1 trap"
+        ]
+    },
+    "sktok_wulfen_1": {
+        "name": "“驱兽专用”",
+        "desc": [
+            "When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to all enemies in range and <$ba.stun>stun</> them for <@ba.vup>{stun}</> seconds",
+            "When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to all enemies in range and <$ba.stun>stun</> them for <@ba.vup>{stun}</> seconds",
+            "When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to all enemies in range and <$ba.stun>stun</> them for <@ba.vup>{stun}</> seconds",
+            "When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to all enemies in range and <$ba.stun>stun</> them for <@ba.vup>{stun}</> seconds",
+            "When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to all enemies in range and <$ba.stun>stun</> them for <@ba.vup>{stun}</> seconds",
+            "When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to all enemies in range and <$ba.stun>stun</> them for <@ba.vup>{stun}</> seconds",
+            "When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to all enemies in range and <$ba.stun>stun</> them for <@ba.vup>{stun}</> seconds",
+            "When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to all enemies in range and <$ba.stun>stun</> them for <@ba.vup>{stun}</> seconds",
+            "When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to all enemies in range and <$ba.stun>stun</> them for <@ba.vup>{stun}</> seconds",
+            "When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to all enemies in range and <$ba.stun>stun</> them for <@ba.vup>{stun}</> seconds"
+        ]
+    },
+    "sktok_wulfen_2": {
+        "name": "“顽石专用”",
+        "desc": [
+            "When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage <@ba.vup>twice</> to all enemies in range and inflicts <@ba.vup>-{-def:0%}</> DEF (does not stack) to the targets for <@ba.vup>{duration}</> seconds",
+            "When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage <@ba.vup>twice</> to all enemies in range and inflicts <@ba.vup>-{-def:0%}</> DEF (does not stack) to the targets for <@ba.vup>{duration}</> seconds",
+            "When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage <@ba.vup>twice</> to all enemies in range and inflicts <@ba.vup>-{-def:0%}</> DEF (does not stack) to the targets for <@ba.vup>{duration}</> seconds",
+            "When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage <@ba.vup>twice</> to all enemies in range and inflicts <@ba.vup>-{-def:0%}</> DEF (does not stack) to the targets for <@ba.vup>{duration}</> seconds",
+            "When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage <@ba.vup>twice</> to all enemies in range and inflicts <@ba.vup>-{-def:0%}</> DEF (does not stack) to the targets for <@ba.vup>{duration}</> seconds",
+            "When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage <@ba.vup>twice</> to all enemies in range and inflicts <@ba.vup>-{-def:0%}</> DEF (does not stack) to the targets for <@ba.vup>{duration}</> seconds",
+            "When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage <@ba.vup>twice</> to all enemies in range and inflicts <@ba.vup>-{-def:0%}</> DEF (does not stack) to the targets for <@ba.vup>{duration}</> seconds",
+            "When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage <@ba.vup>twice</> to all enemies in range and inflicts <@ba.vup>-{-def:0%}</> DEF (does not stack) to the targets for <@ba.vup>{duration}</> seconds",
+            "When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage <@ba.vup>twice</> to all enemies in range and inflicts <@ba.vup>-{-def:0%}</> DEF (does not stack) to the targets for <@ba.vup>{duration}</> seconds",
+            "When a trap is triggered, deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage <@ba.vup>twice</> to all enemies in range and inflicts <@ba.vup>-{-def:0%}</> DEF (does not stack) to the targets for <@ba.vup>{duration}</> seconds"
+        ]
+    },
+    "skchr_brigid_1": {
+        "name": "所熟知的",
+        "desc": [
+            "The next attack deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage, and repeatedly bounce between enemies (up to <@ba.vup>{times}</> times)",
+            "The next attack deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage, and repeatedly bounce between enemies (up to <@ba.vup>{times}</> times)",
+            "The next attack deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage, and repeatedly bounce between enemies (up to <@ba.vup>{times}</> times)",
+            "The next attack deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage, and repeatedly bounce between enemies (up to <@ba.vup>{times}</> times)",
+            "The next attack deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage, and repeatedly bounce between enemies (up to <@ba.vup>{times}</> times)",
+            "The next attack deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage, and repeatedly bounce between enemies (up to <@ba.vup>{times}</> times)",
+            "The next attack deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage, and repeatedly bounce between enemies (up to <@ba.vup>{times}</> times)",
+            "The next attack deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage, and repeatedly bounce between enemies (up to <@ba.vup>{times}</> times)",
+            "The next attack deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage, and repeatedly bounce between enemies (up to <@ba.vup>{times}</> times)",
+            "The next attack deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage, and repeatedly bounce between enemies (up to <@ba.vup>{times}</> times)"
+        ]
+    },
+    "skchr_brigid_2": {
+        "name": "可驯服的",
+        "desc": [
+            "ATK <@ba.vup>+{atk:0%}</>, projectiles stick on target <$ba.sluggish>slow</> them for <@ba.vup>{attack@sluggish}</> second and slash them for <@ba.vup>4</> additional times",
+            "ATK <@ba.vup>+{atk:0%}</>, projectiles stick on target <$ba.sluggish>slow</> them for <@ba.vup>{attack@sluggish}</> second and slash them for <@ba.vup>4</> additional times",
+            "ATK <@ba.vup>+{atk:0%}</>, projectiles stick on target <$ba.sluggish>slow</> them for <@ba.vup>{attack@sluggish}</> second and slash them for <@ba.vup>4</> additional times",
+            "ATK <@ba.vup>+{atk:0%}</>, projectiles stick on target <$ba.sluggish>slow</> them for <@ba.vup>{attack@sluggish}</> second and slash them for <@ba.vup>4</> additional times",
+            "ATK <@ba.vup>+{atk:0%}</>, projectiles stick on target <$ba.sluggish>slow</> them for <@ba.vup>{attack@sluggish}</> second and slash them for <@ba.vup>4</> additional times",
+            "ATK <@ba.vup>+{atk:0%}</>, projectiles stick on target <$ba.sluggish>slow</> them for <@ba.vup>{attack@sluggish}</> second and slash them for <@ba.vup>4</> additional times",
+            "ATK <@ba.vup>+{atk:0%}</>, projectiles stick on target <$ba.sluggish>slow</> them for <@ba.vup>{attack@sluggish}</> second and slash them for <@ba.vup>4</> additional times",
+            "ATK <@ba.vup>+{atk:0%}</>, projectiles stick on target <$ba.sluggish>slow</> them for <@ba.vup>{attack@sluggish}</> second and slash them for <@ba.vup>4</> additional times",
+            "ATK <@ba.vup>+{atk:0%}</>, projectiles stick on target <$ba.sluggish>slow</> them for <@ba.vup>{attack@sluggish}</> second and slash them for <@ba.vup>4</> additional times",
+            "ATK <@ba.vup>+{atk:0%}</>, projectiles stick on target <$ba.sluggish>slow</> them for <@ba.vup>{attack@sluggish}</> second and slash them for <@ba.vup>4</> additional times"
+        ]
     }
 }

@@ -8287,5 +8287,70 @@
         "hidden": true,
         "globalHidden": true,
         "gamemode": "BASE"
+    },
+    {
+        "id": "char_450_necras",
+        "name_cn": "死芒",
+        "name_en": "Necrass",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": "victoria",
+        "groupId": "tara",
+        "teamId": null,
+        "type": "术师",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "远程位",
+            "召唤",
+            "输出"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_4171_wulfen",
+        "name_cn": "钼铅",
+        "name_en": "Wulfenite",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": "sargon",
+        "groupId": null,
+        "teamId": null,
+        "type": "特种",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "召唤",
+            "削弱"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_4177_brigid",
+        "name_cn": "水灯心",
+        "name_en": "Brigid",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": "victoria",
+        "groupId": "tara",
+        "teamId": null,
+        "type": "狙击",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "输出"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
     }
 ]

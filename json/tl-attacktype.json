@@ -673,17 +673,17 @@
             "note": "Juggernaut Mod (UNY-Y)"
         },
         "攻击范围内的<@ba.kw>所有敌人</>，对自己前方一横排的敌人攻击力提升至<@ba.kw>160%</>": {
-            "en": "Attacks <@ba.kw>all enemies</> within range, and deals 160% damage to enemies in the row directly in front of this unit.",
+            "en": "Attacks <@ba.kw>all enemies</> within range, and deals <@ba.kw>160%</> damage to enemies in the row directly in front of this unit.",
             "color": "extra",
             "note": "Spreadshooter Mod (RPR-Y)"
         },
         "能够阻挡一个敌人，作为小车形态存在时只能部署在召唤者攻击范围内": {
-            "en": "Can block enemy, can only be deployed within the summoner's Attack Range.",
+            "en": "Blocks 1 enemy; when in Buggy form, can only be deployed within the summoner's Attack Range.",
             "color": "common",
             "note": "Mitm 's Token (Cherry-3)"
         },
         "可以投掷<@ba.kw>炼金单元</>协助作战": {
-            "en": "Can throws <@ba.kw>Alchemist unit</> to assist in battle",
+            "en": "Can throw <@ba.kw>Alchemical Units</>to assist in combat",
             "color": "extra",
             "note": "Alchemist Archetype trait"
         },
@@ -824,6 +824,34 @@
             "note": "new mods ra-a",
             "name": "char_416_zumama",
             "code": "uniequip_004_zumama"
+        },
+        "能够阻挡一个敌人（阻挡数会根据等级改变），攻击造成法术伤害": {
+            "en": "Blocks 1 enemies (number of block change according to its upgrade), deals <@ba.kw>Arts damage</>",
+            "color": "magic",
+            "note": "Necrass 's Token (The Servant of Lament)",
+            "name": "The Servant of Lament",
+            "code": "token_10043_necras_skeltn"
+        },
+        "场上存在炼金单元时，技力自然恢复速度+0.1/秒": {
+            "en": "When there are Alchemical units on the field, increase SP recovery rate by +0.1 SP/sec",
+            "color": "extra",
+            "note": "new mods alc-x",
+            "name": "char_4151_tinman",
+            "code": "uniequip_002_tinman"
+        },
+        "攻击范围内存在精英或领袖敌人时技力自然恢复速度+0.25/秒": {
+            "en": "When there are elite or leader enemies within Attack Range, increase SP recovery rate by +0.25 SP/sec",
+            "color": "extra",
+            "note": "new mods umd-y",
+            "name": "char_206_gnosis",
+            "code": "uniequip_003_gnosis"
+        },
+        "技能发动期间阻挡数变为0，但获得<$ba.camou>迷彩</>": {
+            "en": "Cannot block enemies but gain <$ba.camou>camouflage</> during the skill duration",
+            "color": "extra",
+            "note": "new mods bea-y",
+            "name": "char_479_sleach",
+            "code": "uniequip_003_sleach"
         }
     },
     "parts": [

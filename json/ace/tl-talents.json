@@ -8222,5 +8222,94 @@
                 "desc": "When heal operators under <$ba.debuff>negative statuses</> effect, increase healing amount to 123%<@ba.talpu>(+3%)</>"
             }
         ]
+    ],
+	"char_450_necras": [
+        [
+            {
+                "name": "复燃",
+                "descCN": "攻击范围内敌人被击倒时生成一个悲叹的仆役，最多召唤2个，若无法再次召唤则使一个悲叹的仆役升级(提升生命、攻击和防御)",
+                "desc": "When an enemy within Attack Range is defeated, summon The Servant of Lament at its location (up to 3). If no more Servant of Laments can be summoned, upgrade 1 Servant of Lament instead (increase HP, ATK and DEF)"
+            },
+            {
+                "name": "复燃",
+                "descCN": "攻击范围内敌人被击倒时生成一个悲叹的仆役，最多召唤3个，若无法再次召唤则使一个悲叹的仆役升级(提升阻挡数、生命、攻击和防御)",
+                "desc": "When an enemy within Attack Range is defeated, summon The Servant of Lament at its location (up to 3). If no more Servant of Laments can be summoned, upgrade 1 Servant of Lament instead (increase Block Count, HP, ATK and DEF)"
+            },
+            {
+                "name": "复燃",
+                "descCN": "攻击范围内敌人被击倒时生成一个悲叹的仆役，最多召唤3个，若无法再次召唤则使一个悲叹的仆役升级(提升阻挡数与更多的生命、攻击和防御)",
+                "desc": "When an enemy within Attack Range is defeated, summon The Servant of Lament at its location (up to 3). If no more Servant of Laments can be summoned, upgrade 1 Servant of Lament instead (increase Block Count, higher HP, higher ATK and higher DEF)"
+            }
+        ],
+        [
+            {
+                "name": "回光黯淡",
+                "descCN": "自身和召唤物攻击生命低于50%的敌人时攻击力提升至140%",
+                "desc": "When Necrass or The Servant of Laments attack enemies with less than 50% HP, increase ATK to 140%"
+            },
+            {
+                "name": "回光黯淡",
+                "descCN": "自身和召唤物攻击生命低于60%<@ba.talpu>(+10%)</>的敌人时攻击力提升至145%<@ba.talpu>(+5%)</>",
+                "desc": "When Necrass or The Servant of Laments attack enemies with less than 60%<@ba.talpu>(+10%)</> HP, increase ATK to 145%<@ba.talpu>(+5%)</>"
+            }
+        ]
+    ],
+    "char_4171_wulfen": [
+        [
+            {
+                "name": "探险家的口袋",
+                "descCN": "可以使用1个矿石“杀手”(最多拥有2个)，矿石“杀手”被部署后准备一段时间可以主动引爆",
+                "desc": "Can deploy up to 1 Rocky Chomper traps (Can store up to 2); The first enemy that steps on a trap will trigger its effect"
+            },
+            {
+                "name": "探险家的口袋",
+                "descCN": "可以使用2<@ba.talpu>(+1)</>个矿石“杀手”(最多拥有2个)，矿石“杀手”被部署后准备一段时间可以主动引爆",
+                "desc": "Can deploy up to 2<@ba.talpu>(+1)</> Rocky Chomper traps (Can store up to 2); The first enemy that steps on a trap will trigger its effect"
+            },
+            {
+                "name": "探险家的口袋",
+                "descCN": "可以使用2个矿石“杀手”(最多拥有3个)，矿石“杀手”被部署后准备一段时间可以主动引爆",
+                "desc": "Can deploy up to 2 Rocky Chomper traps (Can store up to 3); The first enemy that steps on a trap will trigger its effect"
+            },
+            {
+                "name": "探险家的口袋",
+                "descCN": "可以使用3<@ba.talpu>(+1)</>个矿石“杀手”(最多拥有3个)，矿石“杀手”被部署后准备一段时间可以主动引爆",
+                "desc": "Can deploy up to 3<@ba.talpu>(+1)</> Rocky Chomper traps (Can store up to 3); The first enemy that steps on a trap will trigger its effect"
+            },
+            {
+                "name": "探险家的口袋",
+                "descCN": "可以使用3个矿石“杀手”(最多拥有4个)，矿石“杀手”被部署后准备一段时间可以主动引爆",
+                "desc": "Can deploy up to 3 Rocky Chomper traps (Can store up to 4); The first enemy that steps on a trap will trigger its effect"
+            },
+            {
+                "name": "探险家的口袋",
+                "descCN": "可以使用4<@ba.talpu>(+1)</>个矿石“杀手”(最多拥有4个)，矿石“杀手”被部署后准备一段时间可以主动引爆",
+                "desc": "Can deploy up to 4<@ba.talpu>(+1)</> Rocky Chomper traps (Can store up to 4); The first enemy that steps on a trap will trigger its effect"
+            }
+        ]
+    ],
+    "char_4177_brigid": [
+        [
+            {
+                "name": "结绳老手",
+                "descCN": "造成20次伤害后，获得15%物理闪避",
+                "desc": "After dealing damage 20 times, gains 15% Physical Dodge"
+            },
+            {
+                "name": "结绳老手",
+                "descCN": "造成20次伤害后，获得18%<@ba.talpu>(+3%)</>物理闪避",
+                "desc": "After dealing damage 20 times, gains 18%<@ba.talpu>(+3%)</> Physical Dodge"
+            },
+            {
+                "name": "结绳老手",
+                "descCN": "造成20次伤害后，获得35%物理闪避",
+                "desc": "After dealing damage 20 times, gains 35% Physical Dodge"
+            },
+            {
+                "name": "结绳老手",
+                "descCN": "造成20次伤害后，获得38%<@ba.talpu>(+3%)</>物理闪避",
+                "desc": "After dealing damage 20 times, gains 38%<@ba.talpu>(+3%)</> Physical Dodge"
+            }
+        ]
     ]
 }
