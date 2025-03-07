@@ -962,8 +962,8 @@ def activity_collect(Activityjson):
             if new_timeline not in timeline : 
                 timeline.append(new_timeline)
                 activity_collection["Dict"][act] = {
-                                                        "nameCN": "[PH] When Elegies Are Ashes",
-                                                        "nameEN": "When Elegies Are Ashes",
+                                                        "nameCN": "[PH] New Act",
+                                                        "nameEN": "New Act",
                                                         "startCN": 9999999999
                                                     }
 

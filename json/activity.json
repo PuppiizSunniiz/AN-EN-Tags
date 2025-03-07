@@ -1,5 +1,10 @@
 {
     "Dict": {
+        "act41side": {
+            "nameCN": "挽歌燃烧殆尽",
+            "nameEN": "When Elegies Are Ashes",
+            "startCN": 1741320000
+        },
         "act40side": {
             "nameCN": "相见欢",
             "nameEN": "Such is the Joy of Our Reunion",
@@ -649,11 +654,6 @@
             "nameCN": "身先士卒 (pro_d)",
             "nameEN": "PR-D : Fearless Protection (Guards & Specialists)",
             "startCN": -1
-        },
-        "act41side": {
-            "nameCN": "[PH] When Elegies Are Ashes",
-            "nameEN": "When Elegies Are Ashes",
-            "startCN": 9999999999
         },
         "camp_01": {
             "nameCN": "切尔诺伯格",
@@ -1849,8 +1849,8 @@
         ],
         [
             "act41side",
-            "[PH] New Act",
-            9999999999
+            "When Elegies Are Ashes",
+            1741320000
         ]
     ]
 }
