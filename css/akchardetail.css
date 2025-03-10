@@ -339,11 +339,14 @@ body {
     object-position: bottom;
     z-index: 1;
 }
-.selectop-grid3 .nametext{
+.selectop-grid3 .name{
+    margin-top: -3px;
+}
+.selectop-grid3 .nameshort{
     margin-top: -3px;
 }
 .selectop-grid3 .namesmaller{
-    font-size: 9px;
+    font-size: 0.7em;
     margin-top: -5px;
     line-height: 8px;
 }

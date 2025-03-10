@@ -2800,49 +2800,49 @@
         "descformat": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Medic</> Operators' Specialization training speed <@cc.vup>+30%</>; if the trainee's Job Branch is <@cc.kw>Chain Medic</>, training speed will be further increased by <@cc.vup>+45%</>"
     },
     "manu_prod_spd[004]": {
-        "name": "差遣使魔·α",
+        "name": "Familiar Dispatch α",
         "desc": "进驻制造站时，生产力<@cc.vup>+20%</>",
-        "descformat": "进驻制造站时，生产力<@cc.vup>+20%</>"
+        "descformat": "When this Operator is assigned to a Factory, productivity <@cc.vup>+20%</>"
     },
     "manu_prod_spd[014]": {
-        "name": "差遣使魔·β",
+        "name": "Familiar Dispatch β",
         "desc": "进驻制造站时，生产力<@cc.vup>+30%</>",
-        "descformat": "进驻制造站时，生产力<@cc.vup>+30%</>"
+        "descformat": "When this Operator is assigned to a Factory, productivity <@cc.vup>+30%</>"
     },
     "manu_prod_spd_bd[400]": {
-        "name": "意想不到的美味",
+        "name": "Unexpectedly Delicious",
         "desc": "进驻制造站时，每<@cc.vup>1</>点<$cc.bd_dungeon><@cc.rem>魔物料理</></><@cc.vup>+1%</>生产力",
-        "descformat": "进驻制造站时，每<@cc.vup>1</>点<$cc.bd_dungeon><@cc.rem>魔物料理</></><@cc.vup>+1%</>生产力"
+        "descformat": "When this Operator is assigned to a Factory, <@cc.vup>+1%</> productivity for every <@cc.vup>1</> <$cc.bd_dungeon><@cc.rem>Monster Meal</></>"
     },
     "trade_ord_spd&limit[036]": {
-        "name": "半身人公会代表",
+        "name": "Half-foot Guild Representative",
         "desc": "进驻贸易站时，订单获取效率<@cc.vup>+30%</>，且订单上限<@cc.vup>+1</>",
-        "descformat": "进驻贸易站时，订单获取效率<@cc.vup>+30%</>，且订单上限<@cc.vup>+1</>"
+        "descformat": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+30%</> and the order limit <@cc.vup>+1</>"
     },
     "trade_ord_spd_bd[100]": {
-        "name": "熟悉的味道",
+        "name": "Familiar Flavors",
         "desc": "进驻贸易站时，每<@cc.vup>1</>点<$cc.bd_dungeon><@cc.rem>魔物料理</></><@cc.vup>+1%</>订单效率",
-        "descformat": "进驻贸易站时，每<@cc.vup>1</>点<$cc.bd_dungeon><@cc.rem>魔物料理</></><@cc.vup>+1%</>订单效率"
+        "descformat": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+1%</> for every <@cc.vup>1</> <$cc.bd_dungeon><@cc.rem>Monster Meal</></>"
     },
     "dorm_rec_bd_dungeon[000]": {
-        "name": "森西大食堂",
+        "name": "Senshi's Diner",
         "desc": "进驻宿舍时，当前宿舍每级提供<@cc.vup>1</>层<$cc.bd_dungeon><@cc.rem>魔物料理</></>",
-        "descformat": "进驻宿舍时，当前宿舍每级提供<@cc.vup>1</>层<$cc.bd_dungeon><@cc.rem>魔物料理</></>"
+        "descformat": "When this Operator is assigned to a Dormitory, provide <@cc.vup>1</> <$cc.bd_dungeon><@cc.rem>Monster Meal</></> for every level of the current Dormitory"
     },
     "dorm_rec_all&tag[000]": {
-        "name": "资深料理人",
+        "name": "Veteran Cook",
         "desc": "进驻宿舍时，该宿舍内所有干员的心情每小时恢复<@cc.vup>+0.15</>，如果目标是<$cc.tag.dungeon><@cc.kw>莱欧斯小队</></>干员，则恢复效果额外<@cc.vup>+0.15</>（同种效果取最高）",
-        "descformat": "进驻宿舍时，该宿舍内所有干员的心情每小时恢复<@cc.vup>+0.15</>，如果目标是<$cc.tag.dungeon><@cc.kw>莱欧斯小队</></>干员，则恢复效果额外<@cc.vup>+0.15</>（同种效果取最高）"
+        "descformat": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.15</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place); if the target is a <$cc.tag.dungeon><@cc.kw>Laios's Party</></> Operator, restore an additional <@cc.vup>+0.15</> Morale"
     },
     "meet_spd[021]": {
-        "name": "好奇心",
+        "name": "Curiosity",
         "desc": "进驻会客室时，线索搜集速度提升<@cc.vup>20%</>",
-        "descformat": "进驻会客室时，线索搜集速度提升<@cc.vup>20%</>"
+        "descformat": "When this Operator is assigned to the Reception Room, Clue search speed increases by <@cc.vup>20%</>"
     },
     "meet_spd_bd[001]": {
-        "name": "饱餐的干劲",
+        "name": "Gourmand",
         "desc": "进驻会客室时，每拥有<@cc.vup>1</>点<$cc.bd_dungeon><@cc.rem>魔物料理</></>，线索搜集速度额外提升<@cc.vup>2%</>",
-        "descformat": "进驻会客室时，每拥有<@cc.vup>1</>点<$cc.bd_dungeon><@cc.rem>魔物料理</></>，线索搜集速度额外提升<@cc.vup>2%</>"
+        "descformat": "When this Operator is assigned to the Reception Room, increases Clue search speed by an additional <@cc.vup>2%</> for every <@cc.vup>1</> <$cc.bd_dungeon><@cc.rem>Monster Meal</></>"
     },
     "trade_ord_spd&par[000]": {
         "name": "外贸决议·α",

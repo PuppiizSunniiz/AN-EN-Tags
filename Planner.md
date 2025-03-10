@@ -9,7 +9,6 @@
     - Skin Illustrator
     - tweak token section
         - add token Talent ??
-        - token skill range
         - update token trait/talent/stat when select mod ??
 ### Later
     - add amiya patch to char selector (Browse -Type/All/Filter)

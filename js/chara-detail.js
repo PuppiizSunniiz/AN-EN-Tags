@@ -890,13 +890,13 @@
                         $("#operatorsResult").addClass("opresult-grid");
                         $("#operatorsResult").addClass("opbrowse1");
 
-                        var opcurrname = `${result[i].name_readable?`[${result[i].name_readable}]`:""} ${result[i].nameTL}`
+                        var opcurrname = (result[i].name_readable?`[${result[i].name_readable}] `:"")+result[i].nameTL
                         $("#operatorsResult").append(
                             `<li class="selectop-grid3 ak-rare-${result[i].rarity}" onclick="selectOperator('${result[i].id}')">
                             <div class="op-image-grid2">
                                 <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">
                             </div>
-                            <div class="nametext ${opcurrname.length>12?opcurrname.length>16?"namesmaller":"name":""} ak-center blacktext">${opcurrname}</div>
+                            <div class="nametext ${opcurrname.length>10?opcurrname.length>15?"namesmaller":"name":"nameshort"} ak-center blacktext">${opcurrname}</div>
                             </div>
                             </li>`
                         )
@@ -3127,8 +3127,47 @@
                 var TokskillDesc = Tokenskill.levels.length>i2?getSkillDesc(TokenskillID,i2):getSkillDesc(TokenskillID,0);
             else
                 var TokskillDesc = ""
-            var Tokskilldetails =[]
-            var Tokskilltable = TokskillDesc=""?"":`<div class='skilldesc'>${TokskillDesc}</div>`
+            if(Tokenskill.levels[0].rangeId)
+                var TokskillRange = rangeMaker(Tokenskill.levels[0].rangeId)
+            else
+                var TokskillRange = ""
+            if(Tokenskill.levels[0].spData.spCost)
+                if(TokskillRange)
+                    var TokskillSP = `
+                                        <div>${titledMaker(Tokenskill.levels[0].spData.spCost,"SP Cost")}</div>
+                                        <div>${titledMaker(Tokenskill.levels[0].spData.initSp,"Initial SP")}</div>
+                                    `
+                else
+                    var TokskillSP =`
+                                        ${titledMaker(Tokenskill.levels[0].spData.spCost,"SP Cost")}
+                                        ${titledMaker(Tokenskill.levels[0].spData.initSp,"Initial SP")}
+                                    `
+            else
+                var TokskillSP = ""
+                
+            
+            if (TokskillRange && TokskillSP)
+                TokskillExtraDetails = `<div class="skill-detail-grid Tokskilldetailcontent" style="display:none;">
+                                            <div class="skill-grid">
+                                                ${TokskillRange}
+                                            </div>
+                                            <div class="skill-grid-num">
+                                                ${TokskillSP}
+                                            </div>
+                                        </div>`
+            else if (TokskillRange)
+                TokskillExtraDetails = `<div class="skill-detail-grid Tokskilldetailcontent" style="display:none;">
+                                            <div class="skill-grid">
+                                                ${TokskillRange}
+                                            </div>
+                                        </div>`
+            else if (TokskillSP)
+                TokskillExtraDetails = TokskillSP
+            else 
+                TokskillExtraDetails = ""
+
+            var Tokskilldetails = []
+            var Tokskilltable = TokskillDesc=""?"":`<div class='skilldesc Tokskilldetailcontent' style="display:none;">${TokskillDesc}</div>`
             var Tokdetailtable = ""
 
             console.log(Tokskilltable)
@@ -3160,13 +3199,13 @@
             }
 
             tables+=`<table id='Tokskill${skill}level${i2}stats' class='${lefthand=="true"?"left-hand":""} skillstats ${(i2!=skillValue[globalskill] ? '' : 'active')}'>
-                        <tbody>
+                        <tbody class='Tokskilldetailcontent' style="display:none;margin-bottom:8px;padding-top:10px;padding:2px;background:#666">
+                            ${Tokskilltable==""?"":`<tr style="background: #444;"><td>${Tokskilltable}</td></tr>`}
+                            ${(TokskillRange || !TokskillSP)?"":`<tr style="height:10px;background:#4f4f4f"></tr>`}
+                            ${TokskillExtraDetails==""?"":`<tr style="background:#4f4f4f"><td>${TokskillExtraDetails}</td></tr>`}
                             <tr>
                                 <td>
-                                    <div id='Tokskilldetailcontent' class="ak-shadow Tokskilldetailcontent" style="display:none;margin-bottom:8px;padding-top:10px;padding:2px;background:#666">
-                                        ${Tokskilltable==""?"":`${Tokskilltable}`}
-                                        ${Tokdetailtable}
-                                    </div>
+                                    ${Tokdetailtable}
                                 </td>
                             </tr>
                             <tr style="height:5px">
@@ -3177,7 +3216,7 @@
         }
 
         ToktabContents = `<div id='Tokskill${skill}StatsCollapsible' class='collapse collapsible notclickthrough show'>
-                            <button id='Tokskilldetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler("Tokskilldetailcontent",this)' style="color:#fff;text-align:center;background:#222;padding:2px;min-width:320px">
+                            <button id='Tokskilldetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler("Tokskilldetailcontent",$(this))' style="color:#fff;text-align:center;background:#222;padding:2px;min-width:320px">
                                 Token Skill Description & Details 
                                 <i class="fas fa-caret-down"></i>
                             </button>

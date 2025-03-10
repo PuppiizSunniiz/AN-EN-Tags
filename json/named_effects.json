@@ -538,17 +538,17 @@
         "ba.magicpoint": {
             "termId": "ba.magicpoint",
             "termName": "Mana",
-            "description": "特殊技力，整场战斗继承"
+            "description": "A special form of SP that persists throughout battle"
         },
         "ba.chant": {
             "termId": "ba.chant",
             "termName": "Chanting",
-            "description": "Stops attacking then try to activate a skill. If interrupted, the skill is cancelled"
+            "description": "Stops attacking for a period of time, then attempts to activate skill; interruptions during this period will stop the chant"
         },
         "ba.laiosteam": {
             "termId": "ba.laiosteam",
-            "termName": "Laios' Party",
-            "description": "Includes the following Operators:\nMarcille, Laios, Senshi, Chilchuck"
+            "termName": "Laios's Party",
+            "description": "Includes Marcille, Senshi, Laios, and Chilchuck"
         },
         "cc.bd_dungeon": {
             "termId": "cc.bd_dungeon",
