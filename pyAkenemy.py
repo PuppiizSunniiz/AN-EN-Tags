@@ -516,7 +516,7 @@ def get_stage_gamemode(stage_event : str) -> str :
         elif stage_event.find("camp_") != -1 :
             return "campaign"
         
-        elif stage_event == "act17d1" or re.search(r"act[0-9]{1,2}vmulti",stage_event):
+        elif stage_event == "act17d1" or re.search(r"act[0-9]{1,2}(vmulti|multi)",stage_event):
             return "coop"
         elif stage_event == "PinchOut" or re.search(r"CC(|BP)#",stage_event) : 
             return "cc"
