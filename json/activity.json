@@ -660,6 +660,11 @@
             "nameEN": "PR-D : Fearless Protection (Guards & Specialists)",
             "startCN": -1
         },
+        "act17d7": {
+            "nameCN": "愚人节活动",
+            "nameEN": "April Fools' Day Event 2021 (EN : 2022)",
+            "startCN": 1617264000
+        },
         "camp_01": {
             "nameCN": "切尔诺伯格",
             "nameEN": "Chernobog",
@@ -1034,6 +1039,26 @@
             "nameCN": "沙洲遗闻",
             "nameEN": "RA#2 : Reclamation Algorithm - Tales Within the Sand",
             "startCN": 1706929200
+        },
+        "act3fun": {
+            "nameCN": "愚人节活动",
+            "nameEN": "April Fools' Day Event 2022 (EN : 2023)",
+            "startCN": 1648800000
+        },
+        "act4fun": {
+            "nameCN": "愚人节活动",
+            "nameEN": "April Fools' Day Event 2023 (EN : 2024)",
+            "startCN": 1680336000
+        },
+        "act5fun": {
+            "nameCN": "愚人节活动",
+            "nameEN": "April Fools' Day Event 2024 (EN : 2025)",
+            "startCN": 1711958400
+        },
+        "act6fun": {
+            "nameCN": "愚人节活动",
+            "nameEN": "April Fools' Day Event 2025 (EN : 2026)",
+            "startCN": 1743494400
         }
     },
     "Timeline": [
@@ -1203,6 +1228,11 @@
             1617091200
         ],
         [
+            "act17d7",
+            "April Fools' Day Event 2021 (EN : 2022)",
+            1617264000
+        ],
+        [
             "act18d0",
             "A Walk in the Dust",
             1618459200
@@ -1346,6 +1376,11 @@
             "act10sre",
             "A Walk in the Dust - Rerun",
             1648540800
+        ],
+        [
+            "act3fun",
+            "April Fools' Day Event 2022 (EN : 2023)",
+            1648800000
         ],
         [
             "main_10",
@@ -1523,6 +1558,11 @@
             1679385600
         ],
         [
+            "act4fun",
+            "April Fools' Day Event 2023 (EN : 2024)",
+            1680336000
+        ],
+        [
             "main_12",
             "Episode 12 : All Quiet Under the Thunder",
             1680753600
@@ -1698,6 +1738,11 @@
             1711612800
         ],
         [
+            "act5fun",
+            "April Fools' Day Event 2024 (EN : 2025)",
+            1711958400
+        ],
+        [
             "act33side",
             "Babel",
             1712808000
@@ -1861,6 +1906,11 @@
             "act1multi",
             "Rhodes Island Icebreaker Games #1",
             1742457600
+        ],
+        [
+            "act6fun",
+            "April Fools' Day Event 2025 (EN : 2026)",
+            1743494400
         ]
     ]
 }

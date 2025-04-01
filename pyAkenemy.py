@@ -2,6 +2,7 @@
 # IMPORT
 ################################################################################################################################################################################################################################################
 
+import sys
 import json
 import re
 import glob
@@ -27,6 +28,7 @@ akenemy = {
                         "tn"        : {"name" : "TN : Trials for Navigator", "activity" : {}},          # Mode : TN             -> Activity : TN#XX                                     -> Stage : TN-XX
                         "sss"       : {"name" : "SSS : Stationary Security Service", "activity" : {}},  # Mode : SSS            -> Activity : Tower                                     -> Stage : LT-XX
                         "ra"        : {"name" : "RA : Reclamation Algorithm", "activity" : {}},         # Mode : RA             -> Activity : RA#XX         -> Zone : Fight/Rush/Zone   -> Stage : XYZ
+                        "fun"       : {"name" : "FUN : April Fool", "activity" : {}},
                         "pending"   : []
             },
             "events":{
@@ -532,6 +534,9 @@ def get_stage_gamemode(stage_event : str) -> str :
             return "sss"
         elif stage_event.find("RA#") != -1:
             return "ra"
+        
+        elif re.search(r"act[0-9]{1,2}(fun)",stage_event) or stage_event == "act17d7": # April Fool // act17d7 = Emperor LLTB
+            return "fun"
 
         elif re.search(r"act[0-9]{1,2}(side|mini|d0|d3|d5)",stage_event) or stage_event == "1stact": # 1stact = Grani
             return "sidestory"
@@ -568,8 +573,8 @@ def stage_json_stage_collect(json_stage, json_stageEN):
     def stage_main(json_stage, json_stageEN):
         stage_counter = 0
         for stage in json_stage:
-        # ignore Challenge and Story -> [tutorial, challenge, story, story2, easy mode, emperor fun mode, ???] & ??? & SSS_EX_stage & TN_stage (only normal accept)
-            if not [stage for prohibit in ["guide_","st_","_st","act4d0","act17d7"] if stage.find(prohibit) != -1] and json_stage[stage]["levelId"].find("Activities/ACT21side/Mission/")==-1 and not re.search(r"lt_.+_ex", stage) and not re.search(r"bossrush_(tm|ex|fin)", stage):
+        # ignore Challenge and Story -> [tutorial, story, story2, Operational Intelligence] & ??? & SSS_EX_stage & TN_stage (only normal accept)
+            if not [stage for prohibit in ["guide_","st_","_st","act4d0"] if stage.find(prohibit) != -1] and json_stage[stage]["levelId"].find("Activities/ACT21side/Mission/")==-1 and not re.search(r"lt_.+_ex", stage) and not re.search(r"bossrush_(tm|ex|fin)", stage):
                 if json_stage[stage]["levelId"].find("/") !=- 1:
                     if json_stage[stage]["levelId"].split("/")[1] in ["Campaign"]:
                         stage_event = json_stage[stage]["stageId"].lower()
@@ -827,6 +832,21 @@ def RA_stage_collect(json_RA1EN, json_RA2, json_RA2EN): #
         RA_main(json_RA2["detail"]["SANDBOX_V2"][RAseason]["stageData"])
         RA_rush([rushparty for rushgroup in Rushgroup_config for rushparty in Rushgroup_config[rushgroup]])
 
+def FUN_stage_collect(json_activity, json_activityEN):
+    @decorator
+    def FUN_main(FUN_stages, FUNEN_stages):
+        stage_counter = 0
+        for stage in FUN_stages.keys():
+            stage_event = stage.split("_")[0]
+            stage_code  = FUN_stages[stage]["code"]
+            stage_name  = FUNEN_stages[stage]["name"] if stage in FUNEN_stages.keys() else FUN_stages[stage]["name"]
+            stage_levelId = FUN_stages[stage]["levelId"]
+            stage_path  = f'json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/{stage_levelId.lower()}.json'
+            stage_counter += Stage_Lister(stage_event, stage_code, stage_name, stage, stage_path, stage_event, stage_path)
+        return [stage_counter, 'FUN Map']
+    
+    FUN_main(json_activity["actFunData"]["stages"],json_activityEN["actFunData"]["stages"])
+
 ################################################################################################################################################################################################################################################
 # Activity
 ################################################################################################################################################################################################################################################
@@ -951,13 +971,21 @@ def activity_collect(Activityjson):
                     "nameEN"    : Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else None, #f'{act} : {json_RA2EN["basicInfo"][f'sandbox_{int(act.split("#")[-1])-1}']["topicName"]}'
                     "startCN"   : DB["RA2"]["basicInfo"][f'sandbox_{int(act.split("#")[-1])-1}']["topicStartTime"]
             }
+        elif act.find("fun") != -1 or act == "act17d7":
+            activity_collection["Dict"][act] = {
+                    "nameCN"    : DB["activity"]["basicInfo"][act]["name"],
+                    "nameEN"    : f"April Fools' Day Event {datetime.fromtimestamp(DB['activity']['basicInfo'][act]['startTime']).strftime('%Y')} (EN : {int(datetime.fromtimestamp(DB['activity']['basicInfo'][act]['startTime']).strftime('%Y')) + 1})",
+                    "startCN"   : DB["activity"]["basicInfo"][act]["startTime"]
+            }
+            if activity_collection["Dict"][act]["startCN"] > 0 : timeline.append([act,activity_collection["Dict"][act]["nameEN"] if activity_collection["Dict"][act]["nameEN"] else activity_collection["Dict"][act]["nameCN"],activity_collection["Dict"][act]["startCN"]])
+
             
         if act in activity_collection["Dict"]:
             if activity_collection["Dict"][act]["startCN"] != -1 :
                 new_timeline = [act,activity_collection["Dict"][act]["nameEN"] if activity_collection["Dict"][act]["nameEN"] else activity_collection["Dict"][act]["nameCN"],activity_collection["Dict"][act]["startCN"]]
                 if new_timeline not in timeline : timeline.append(new_timeline)
         else:
-            #Bandage
+            # Bandage
             new_timeline = [act,"[PH] New Act", 9999999999]
             if new_timeline not in timeline : 
                 timeline.append(new_timeline)
@@ -1069,6 +1097,7 @@ def Akenemy() :
     CC_stage_collect(load_json("Fillerjson"), load_json("json_CC"), load_json("json_CC2"), load_json("json_activityEN"))
     IS_stage_collect(load_json("json_ISEN0"), load_json("json_IS"), load_json("json_ISEN"))
     RA_stage_collect(load_json("json_RA1EN"), load_json("json_RA2"), load_json("json_RA2EN"))
+    FUN_stage_collect(load_json("json_activity"), load_json("json_activityEN"))
     # Activity & Gamemode collection
     activity_collect(load_json("Activityjson"))
     akenemy_collect(load_json("json_zone"),load_json("json_zoneEN"))

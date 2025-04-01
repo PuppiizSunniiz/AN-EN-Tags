@@ -218,6 +218,7 @@ function selectGamemode(el){
         case "campaign":
             return "Mission"
         case "coop":
+        case "fun":
             return "Event"
         case "cc":
         case "is":
