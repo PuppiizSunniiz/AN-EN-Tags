@@ -1,5 +1,10 @@
 {
     "Dict": {
+        "act2mainss_zone1": {
+            "nameCN": "Dissociative Recombination : 离解复合",
+            "nameEN": "Dissociative Recombination : 离解复合",
+            "startCN": -1
+        },
         "act1multi": {
             "nameCN": "促融共竞#1",
             "nameEN": "Rhodes Island Icebreaker Games #1",
@@ -109,11 +114,6 @@
             "nameCN": "罗德岛促融共竞",
             "nameEN": "Rhodes Island Icebreaker Games",
             "startCN": 1715760000
-        },
-        "act1mainss": {
-            "nameCN": "慈悲灯塔",
-            "nameEN": "Absolved Will Be the Seekers",
-            "startCN": 1714536000
         },
         "act33side": {
             "nameCN": "巴别塔",
@@ -1751,11 +1751,6 @@
             "camp_r_22",
             "'Eccentricity' Laboratory",
             1714334400
-        ],
-        [
-            "act1mainss",
-            "Absolved Will Be the Seekers",
-            1714536000
         ],
         [
             "main_14",

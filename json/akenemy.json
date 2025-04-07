@@ -978,6 +978,62 @@
                             }
                         }
                     }
+                },
+                "act2mainss_zone1": {
+                    "name": "Dissociative Recombination : 离解复合",
+                    "date": -1,
+                    "zone": {
+                        "EP15 : Training": {
+                            "name": "EP15 : Training",
+                            "stage": {
+                                "tr_26": "TR-26 : 内在威胁"
+                            }
+                        },
+                        "EP15 : Standard Environment": {
+                            "name": "EP15 : Standard Environment",
+                            "stage": {
+                                "main_15-01": "15-2 : 执此剑者",
+                                "main_15-02": "15-3 : 所谓奇迹",
+                                "main_15-03": "15-4 : 深渊之侧",
+                                "main_15-04": "15-5 : 喧哗争端",
+                                "main_15-05": "15-6 : 刻骨入髓",
+                                "main_15-06": "15-7 : 临界时刻",
+                                "main_15-07": "15-8 : 破碎回响",
+                                "main_15-08": "15-9 : 减压症候",
+                                "main_15-09": "15-10 : 隔离净空",
+                                "main_15-10": "15-11 : 目击众神死亡的荒原",
+                                "main_15-11": "15-12 : 成为你的眼睛",
+                                "main_15-12": "15-13 : 在尘或血中",
+                                "main_15-13": "15-14 : 拒绝哀悼",
+                                "main_15-14": "15-15 : 永恒与此刻的误差",
+                                "main_15-15": "15-17 : “她”",
+                                "main_15-16": "15-18 : 从未怀疑，从未远离",
+                                "main_15-17": "15-19 : 直至，此刻",
+                                "main_15-18": "15-20 : 得以重回"
+                            }
+                        },
+                        "EP15 : Adverse Environment": {
+                            "name": "EP15 : Adverse Environment",
+                            "stage": {
+                                "main_15-02#s": "15-3 : 所谓奇迹",
+                                "main_15-03#s": "15-4 : 深渊之侧",
+                                "main_15-04#s": "15-5 : 喧哗争端",
+                                "main_15-05#s": "15-6 : 刻骨入髓",
+                                "main_15-06#s": "15-7 : 临界时刻",
+                                "main_15-07#s": "15-8 : 破碎回响",
+                                "main_15-08#s": "15-9 : 减压症候",
+                                "main_15-09#s": "15-10 : 隔离净空",
+                                "main_15-10#s": "15-11 : 目击众神死亡的荒原",
+                                "main_15-11#s": "15-12 : 成为你的眼睛",
+                                "main_15-12#s": "15-13 : 在尘或血中",
+                                "main_15-13#s": "15-14 : 拒绝哀悼",
+                                "main_15-14#s": "15-15 : 永恒与此刻的误差",
+                                "main_15-15#s": "15-17 : “她”",
+                                "main_15-16#s": "15-18 : 从未怀疑，从未远离",
+                                "main_15-18#s": "15-20 : 得以重回"
+                            }
+                        }
+                    }
                 }
             }
         },
@@ -5954,6 +6010,7 @@
         "weekly_2": "PR-B : Fierce Attack (Snipers & Casters)",
         "weekly_3": "PR-C : Unstoppable Charge (Vanguards & Supporters)",
         "weekly_4": "PR-D : Fearless Protection (Guards & Specialists)",
+        "act2mainss_zone1": "Dissociative Recombination : 离解复合",
         "act1multi": "Rhodes Island Icebreaker Games #1",
         "act41side": "[EA] : When Elegies Are Ashes",
         "act40side": "[OR] : Such is the Joy of Our Reunion",
@@ -31599,6 +31656,451 @@
                         "RA#2_monthly_1",
                         "RA#2_monthly_1",
                         "RA#2_monthly_1"
+                    ]
+                }
+            }
+        },
+        "enemy_10078_mprein_2": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-01",
+                        "main_15-18"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-18#s"
+                    ]
+                }
+            }
+        },
+        "enemy_1566_mpascl": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-01"
+                    ]
+                }
+            }
+        },
+        "enemy_3009_mpprss": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-01"
+                    ]
+                }
+            }
+        },
+        "enemy_10076_mpgrou_2": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-01",
+                        "main_15-18"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-18#s"
+                    ]
+                }
+            }
+        },
+        "enemy_10073_mpcar": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-02",
+                        "main_15-03",
+                        "main_15-04",
+                        "main_15-05",
+                        "main_15-06",
+                        "main_15-07",
+                        "main_15-09"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-02#s",
+                        "main_15-03#s",
+                        "main_15-04#s",
+                        "main_15-05#s",
+                        "main_15-06#s",
+                        "main_15-07#s",
+                        "main_15-09#s"
+                    ],
+                    "EP15 : Training": [
+                        "tr_26"
+                    ]
+                }
+            }
+        },
+        "enemy_10074_mpcata": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-02",
+                        "main_15-03",
+                        "main_15-04",
+                        "main_15-05",
+                        "main_15-06",
+                        "main_15-07",
+                        "main_15-09"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-02#s",
+                        "main_15-03#s",
+                        "main_15-04#s",
+                        "main_15-05#s",
+                        "main_15-06#s",
+                        "main_15-07#s",
+                        "main_15-09#s"
+                    ],
+                    "EP15 : Training": [
+                        "tr_26"
+                    ]
+                }
+            }
+        },
+        "enemy_10075_mpwrj": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-03",
+                        "main_15-04",
+                        "main_15-06"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-03#s",
+                        "main_15-04#s",
+                        "main_15-06#s"
+                    ]
+                }
+            }
+        },
+        "enemy_10072_mpprhd": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Training": [
+                        "tr_26"
+                    ],
+                    "EP15 : Standard Environment": [
+                        "main_15-04",
+                        "main_15-05",
+                        "main_15-06",
+                        "main_15-07",
+                        "main_15-08",
+                        "main_15-09",
+                        "main_15-10",
+                        "main_15-11",
+                        "main_15-12",
+                        "main_15-13",
+                        "main_15-14",
+                        "main_15-15",
+                        "main_15-16",
+                        "main_15-18"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-04#s",
+                        "main_15-05#s",
+                        "main_15-06#s",
+                        "main_15-07#s",
+                        "main_15-08#s",
+                        "main_15-09#s",
+                        "main_15-10#s",
+                        "main_15-11#s",
+                        "main_15-12#s",
+                        "main_15-13#s",
+                        "main_15-14#s",
+                        "main_15-15#s",
+                        "main_15-16#s",
+                        "main_15-18#s"
+                    ]
+                }
+            }
+        },
+        "enemy_10082_mpweak": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Training": [
+                        "tr_26"
+                    ],
+                    "EP15 : Standard Environment": [
+                        "main_15-04",
+                        "main_15-06",
+                        "main_15-07",
+                        "main_15-09",
+                        "main_15-10",
+                        "main_15-11",
+                        "main_15-12",
+                        "main_15-15",
+                        "main_15-18"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-04#s",
+                        "main_15-06#s",
+                        "main_15-07#s",
+                        "main_15-09#s",
+                        "main_15-10#s",
+                        "main_15-11#s",
+                        "main_15-12#s",
+                        "main_15-15#s",
+                        "main_15-18#s"
+                    ]
+                }
+            }
+        },
+        "enemy_10074_mpcata_2": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-04",
+                        "main_15-07",
+                        "main_15-10",
+                        "main_15-11",
+                        "main_15-12",
+                        "main_15-13",
+                        "main_15-15",
+                        "main_15-16",
+                        "main_15-18"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-04#s",
+                        "main_15-07#s",
+                        "main_15-10#s",
+                        "main_15-11#s",
+                        "main_15-12#s",
+                        "main_15-13#s",
+                        "main_15-15#s",
+                        "main_15-16#s",
+                        "main_15-18#s"
+                    ]
+                }
+            }
+        },
+        "enemy_10077_mpbarr": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-05",
+                        "main_15-06",
+                        "main_15-07",
+                        "main_15-09"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-05#s",
+                        "main_15-06#s",
+                        "main_15-07#s",
+                        "main_15-09#s"
+                    ]
+                }
+            }
+        },
+        "enemy_10079_mpmage": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-07",
+                        "main_15-09",
+                        "main_15-15"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-07#s",
+                        "main_15-09#s",
+                        "main_15-15#s"
+                    ]
+                }
+            }
+        },
+        "enemy_10073_mpcar_2": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-08",
+                        "main_15-10",
+                        "main_15-11",
+                        "main_15-12",
+                        "main_15-13",
+                        "main_15-14",
+                        "main_15-15",
+                        "main_15-16",
+                        "main_15-17",
+                        "main_15-18"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-08#s",
+                        "main_15-10#s",
+                        "main_15-11#s",
+                        "main_15-12#s",
+                        "main_15-13#s",
+                        "main_15-14#s",
+                        "main_15-15#s",
+                        "main_15-16#s",
+                        "main_15-18#s"
+                    ]
+                }
+            }
+        },
+        "enemy_10080_mpiced": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-08",
+                        "main_15-09",
+                        "main_15-13"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-08#s",
+                        "main_15-09#s",
+                        "main_15-13#s"
+                    ]
+                }
+            }
+        },
+        "enemy_10081_mpplai": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-10",
+                        "main_15-11",
+                        "main_15-14"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-10#s",
+                        "main_15-11#s",
+                        "main_15-14#s"
+                    ]
+                }
+            }
+        },
+        "enemy_10077_mpbarr_2": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-10",
+                        "main_15-12",
+                        "main_15-14",
+                        "main_15-16",
+                        "main_15-17",
+                        "main_15-18"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-10#s",
+                        "main_15-12#s",
+                        "main_15-14#s",
+                        "main_15-16#s",
+                        "main_15-18#s"
+                    ]
+                }
+            }
+        },
+        "enemy_10076_mpgrou": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-11",
+                        "main_15-12",
+                        "main_15-13",
+                        "main_15-15"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-11#s",
+                        "main_15-12#s",
+                        "main_15-13#s",
+                        "main_15-15#s"
+                    ]
+                }
+            }
+        },
+        "enemy_10081_mpplai_2": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-11",
+                        "main_15-14",
+                        "main_15-15",
+                        "main_15-16",
+                        "main_15-17",
+                        "main_15-18"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-11#s",
+                        "main_15-14#s",
+                        "main_15-15#s",
+                        "main_15-16#s",
+                        "main_15-18#s"
+                    ]
+                }
+            }
+        },
+        "enemy_10078_mprein": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-12",
+                        "main_15-13",
+                        "main_15-16"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-12#s",
+                        "main_15-13#s",
+                        "main_15-16#s"
+                    ]
+                }
+            }
+        },
+        "enemy_10075_mpwrj_2": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-13"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-13#s"
+                    ]
+                }
+            }
+        },
+        "enemy_10079_mpmage_2": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-16"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-16#s"
+                    ]
+                }
+            }
+        },
+        "enemy_10080_mpiced_2": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-16"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-16#s"
+                    ]
+                }
+            }
+        },
+        "enemy_1564_mpprts": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-18"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-18#s"
+                    ]
+                }
+            }
+        },
+        "enemy_1565_mpprme": {
+            "main": {
+                "act2mainss_zone1": {
+                    "EP15 : Standard Environment": [
+                        "main_15-18"
+                    ],
+                    "EP15 : Adverse Environment": [
+                        "main_15-18#s"
                     ]
                 }
             }

@@ -307,7 +307,7 @@ def Stage_Lister(stage_event : str, stage_code : str, stage_name : str, stage_id
     '''
     ### Prep Variable
     level_id        = level_id.split("gamedata/levels/")[-1]
-    stage_name      = f'{stage_name} (Boss)' if re.search(r"rogue[0-9]{0,2}_[b]-", stage_id) else stage_name
+    stage_name      = f'{stage_name} (Boss)' if re.search(r'rogue[0-9]{0,2}_[b]-', stage_id) else stage_name
     stage_event     = "1stact" if stage_event == "a001" else stage_event
     stage_zone      = main_zone(stage_id,stage_zone) if stage_event.find("main")!=-1 else (stage_event if stage_zone == "act2vmulti_zone1" else stage_zone)
     
@@ -345,10 +345,10 @@ def Stage_Lister(stage_event : str, stage_code : str, stage_name : str, stage_id
     ### Akenemy collect
         stage_gamemode = get_stage_gamemode(stage_event)
         akenemy_activity = akenemy["gamemode"][stage_gamemode]["activity"]
-            
+        
         akenemy_activity.setdefault(stage_event,{"name":"","date":0,"zone":{}})
         akenemy_activity[stage_event]["zone"].setdefault(stage_zone, {"name":"","stage":{}})
-            
+        
         if stage_id not in akenemy_activity[stage_event]["zone"][stage_zone]["stage"] :
             if stage_event in ["act17d1"] or (stage_gamemode in ["cc","is","ra","campaign"] and stage_event != "act42d0"):
                 display_name = stage_name
@@ -358,7 +358,7 @@ def Stage_Lister(stage_event : str, stage_code : str, stage_name : str, stage_id
                 display_name = f'{stage_code} : {stage_name} <b>(Challenge)</b>'
             else: display_name = f'{stage_code} : {stage_name}'
             akenemy_activity[stage_event]["zone"][stage_zone]["stage"][stage_id] = display_name
-            
+
     Stage_Lister_stage()
     Stage_Lister_enemy()
     Stage_Lister_Akenemy()
@@ -417,6 +417,8 @@ def RA_rush_Lister(Rushgroup_config : dict, stage_event : str) -> int :
 def main_zone(stage_id : str,event_id : str) -> str :
     if event_id.split("_")[-1] == "0" :
         zone_prefix = "Prologue : "
+    elif re.search(r'act2mainss',event_id): #act[0-9]{1,2}mainss
+        zone_prefix = f'EP15 : '
     else:
         zone_prefix = f'EP{event_id.split("_")[-1]} : '
     
@@ -426,7 +428,7 @@ def main_zone(stage_id : str,event_id : str) -> str :
         return f'{zone_prefix}Story Environment'
     elif stage_id.find("#f#") != -1:
         return f'{zone_prefix}Challenge'
-    elif stage_id.find("tough") != -1:
+    elif stage_id.find("tough") != -1 or stage_id.find("#s") != -1:
         return f'{zone_prefix}Adverse Environment'
     elif stage_id.find("hard") != -1:
         if int(event_id.split("_")[-1]) > 9:
@@ -436,7 +438,7 @@ def main_zone(stage_id : str,event_id : str) -> str :
         else :
             return f'{zone_prefix}Normal'
     else:
-        if int(event_id.split("_")[-1]) > 8:
+        if re.search(r'act[0-9]{1,2}mainss',event_id) or int(event_id.split("_")[-1]) > 8 :
             return f'{zone_prefix}Standard Environment'
         else:
             return f'{zone_prefix}Normal'
@@ -511,21 +513,21 @@ def IS_boss(stage_id : str, IS : str) -> str:
     return IS_boss_dict[IS].get(re.search(r'(ro[0-9]{0,2}_._[0-9]{1,2})(_[a-z]{1}|)',stage_id).group(1),"???") # cut variant _b _c
 
 def get_stage_gamemode(stage_event : str) -> str :
-        if stage_event.find("main_") != -1 :
+        if stage_event.find("main_") != -1 or re.search(r'act[0-9]{1,2}mainss',stage_event):
             return "main"
         elif stage_event.find("weekly_") != -1 :
             return "supply"
         elif stage_event.find("camp_") != -1 :
             return "campaign"
         
-        elif stage_event == "act17d1" or re.search(r"act[0-9]{1,2}(vmulti|multi)",stage_event):
+        elif stage_event == "act17d1" or re.search(r'act[0-9]{1,2}(vmulti|multi)',stage_event):
             return "coop"
-        elif stage_event == "PinchOut" or re.search(r"CC(|BP)#",stage_event) : 
+        elif stage_event == "PinchOut" or re.search(r'CC(|BP)#',stage_event) : 
             return "cc"
         elif stage_event.find("IS#") != -1 :
             return "is"
         
-        elif re.search(r"act[0-9]{1,2}(lock|vecb|vautochess|arcade)",stage_event) or stage_event in ["act42d0"]: # act42d0 = DOS
+        elif re.search(r'act[0-9]{1,2}(lock|vecb|vautochess|arcade)',stage_event) or stage_event in ["act42d0"]: # act42d0 = DOS
             return "exp"
         
         elif stage_event.find("bossrush") != -1 :
@@ -535,10 +537,10 @@ def get_stage_gamemode(stage_event : str) -> str :
         elif stage_event.find("RA#") != -1:
             return "ra"
         
-        elif re.search(r"act[0-9]{1,2}(fun)",stage_event) or stage_event == "act17d7": # April Fool // act17d7 = Emperor LLTB
+        elif re.search(r'act[0-9]{1,2}(fun)',stage_event) or stage_event == "act17d7": # April Fool // act17d7 = Emperor LLTB
             return "fun"
 
-        elif re.search(r"act[0-9]{1,2}(side|mini|d0|d3|d5)",stage_event) or stage_event == "1stact": # 1stact = Grani
+        elif re.search(r'act[0-9]{1,2}(side|mini|d0|d3|d5)',stage_event) or stage_event == "1stact": # 1stact = Grani
             return "sidestory"
         else:
             return "pending"
@@ -574,7 +576,7 @@ def stage_json_stage_collect(json_stage, json_stageEN):
         stage_counter = 0
         for stage in json_stage:
         # ignore Challenge and Story -> [tutorial, story, story2, Operational Intelligence] & ??? & SSS_EX_stage & TN_stage (only normal accept)
-            if not [stage for prohibit in ["guide_","st_","_st","act4d0"] if stage.find(prohibit) != -1] and json_stage[stage]["levelId"].find("Activities/ACT21side/Mission/")==-1 and not re.search(r"lt_.+_ex", stage) and not re.search(r"bossrush_(tm|ex|fin)", stage):
+            if not [stage for prohibit in ["guide_","st_","_st","act4d0"] if stage.find(prohibit) != -1] and json_stage[stage]["levelId"].find("Activities/ACT21side/Mission/")==-1 and not re.search(r'lt_.+_ex', stage) and not re.search(r'bossrush_(tm|ex|fin)', stage):
                 if json_stage[stage]["levelId"].find("/") !=- 1:
                     if json_stage[stage]["levelId"].split("/")[1] in ["Campaign"]:
                         stage_event = json_stage[stage]["stageId"].lower()
@@ -875,13 +877,23 @@ def activity_collect(Activityjson):
 
 ## Activity
     for act in DB["activity"]["basicInfo"].keys():
-        if DB["activity"]["basicInfo"][act]["hasStage"]:
+        if DB["activity"]["basicInfo"][act]["hasStage"] and not re.search(r'act[0-9]{1,2}mainss',act):
             activity_collection["Dict"][act] = {
                     "nameCN"    : DB["activity"]["basicInfo"][act]["name"],
                     "nameEN"    : ("DOS : " if act == "act42d0" else "") + (DB["activityEN"]["basicInfo"][act]["name"] if act in DB["activityEN"]["basicInfo"].keys() else (Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else "")) + (f' #{act.split("act")[-1].split("bossrush")[0]}' if act.find("bossrush")!= -1 and act in DB["activityEN"]["basicInfo"].keys() else ""),
                     "startCN"   : DB["activity"]["basicInfo"][act]["startTime"]
             }
             if activity_collection["Dict"][act]["startCN"] > 0 : timeline.append([act,activity_collection["Dict"][act]["nameEN"] if activity_collection["Dict"][act]["nameEN"] else activity_collection["Dict"][act]["nameCN"],activity_collection["Dict"][act]["startCN"]])
+## Main-Activity
+        elif re.search(r'act[0-9]{1,2}mainss',act):
+            zone = next((key for key in DB["activity"]["zoneToActivity"] if DB["activity"]["zoneToActivity"][key] == act), act)
+            if not re.search(r'main_[0-9]{1,2}' ,zone):
+                activity_collection["Dict"][zone] = {
+                    "nameCN"    : f'{DB["zone"]["zones"][zone]["zoneNameFirst"]} : {DB["zone"]["zones"][zone]["zoneNameSecond"]}',
+                    "nameEN"    : f'{DB["zoneEN"]["zones"][zone]["zoneNameFirst"]} : {DB["zoneEN"]["zones"][zone]["zoneNameSecond"]}' if zone in DB["zoneEN"]["zones"].keys() else (Activityjson["Dict"][zone]["nameEN"] if zone in Activityjson["Dict"].keys() else f'{DB["zone"]["zones"][zone]["zoneNameFirst"]} : {DB["zone"]["zones"][zone]["zoneNameSecond"]}'),
+                    "startCN"   : DB["zone"]["mainlineAdditionInfo"][zone]["zoneOpenTime"]
+                }
+                if activity_collection["Dict"][zone]["startCN"] > 0 : timeline.append([zone,activity_collection["Dict"][zone]["nameEN"] if activity_collection["Dict"][zone]["nameEN"] else activity_collection["Dict"][zone]["nameCN"],activity_collection["Dict"][zone]["startCN"]])
 
 ## Main
     for act in DB["zone"]["mainlineAdditionInfo"].keys():
