@@ -524,8 +524,7 @@ function actualize() {
                         ? "background-color: #AAA"
                         : "background-color: transparent";
 
-        let body = ['<tr class="tr-recommd"><td>', materials[mat_id][lang], "</td><td>"];
-
+        let body = ['<tr class="tr-recommd"><td>', materials[mat_id][lang]?materials[mat_id][lang]:(materials[mat_id]["cn"]+"[PH]"), "</td><td>"];
         total_materials[mat_id] = 0;
         console.log(chars)
         for (let char of chars) {

@@ -18,25 +18,34 @@ json_charEN         =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/
 json_charJP         =   json_load("json/gamedata/ArknightsGameData_YoStar/ja_JP/gamedata/excel/character_table.json")
 json_charKR         =   json_load("json/gamedata/ArknightsGameData_YoStar/ko_KR/gamedata/excel/character_table.json")
 
+json_item           =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/item_table.json")
+json_itemEN         =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/item_table.json")
+json_itemJP         =   json_load("json/gamedata/ArknightsGameData_YoStar/ja_JP/gamedata/excel/item_table.json")
+json_itemKR         =   json_load("json/gamedata/ArknightsGameData_YoStar/ko_KR/gamedata/excel/item_table.json")
+
 json_gacha          =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/gacha_table.json")
 json_gachaEN        =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/gacha_table.json")
 
 json_skill          =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/skill_table.json")
 json_skillEN        =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/skill_table.json")
 
+json_skin           =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/skin_table.json")
+json_skinEN         =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/skin_table.json")
+
+json_charword       =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/charword_table.json")
+json_charwordEN     =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/charword_table.json")
+
 json_handbook       =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/handbook_info_table.json")
+json_handbookEN     =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/handbook_info_table.json")
+
 json_mod_battle     =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/battle_equip_table.json")
 json_mod_battleEN   =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/battle_equip_table.json")
-json_mod_table      =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/uniequip_table.json")
-json_stage          =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/stage_table.json")
 
 json_construct      =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/gamedata_const.json")
 json_constructEN    =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/gamedata_const.json")
 
-json_item           =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/item_table.json")
-json_itemEN         =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/item_table.json")
-json_itemJP         =   json_load("json/gamedata/ArknightsGameData_YoStar/ja_JP/gamedata/excel/item_table.json")
-json_itemKR         =   json_load("json/gamedata/ArknightsGameData_YoStar/ko_KR/gamedata/excel/item_table.json")
+json_mod_table      =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/uniequip_table.json")
+json_stage          =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/stage_table.json")
 
 json_akhr           =   json_load("json/tl-akhr.json")
 json_akmaterial     =   json_load("json/akmaterial.json")
@@ -54,10 +63,10 @@ json_dict           =   json_load("py/dict.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS = ["Necrass","Wulfenite","Brigid"] # "", 
+NEW_CHARS = ["Mon3tr","Alanna","Windscoot"] # "", 
 
 #["ItemID#1","ItemID#2", ...]
-NEW_MATS = [] # "",
+NEW_MATS = ["31093","31094","30165"] # "",
 
 Rechecked = True # True False
 
@@ -444,11 +453,65 @@ for riic in json_buildingEN["buffs"].keys():
 with open("json/ace/riic.json", "w", encoding="utf-8") as filepath :
     json.dump(json_riicTL,filepath,indent = 4, ensure_ascii = False)
 
+#########################################################################################################
+# TL Artist CN -> EN (JSON Compare)
+#########################################################################################################
+json_artist = {"Illustrator" : {}, "VA" : {}}
+artist_dupe_catch = []
+
+# Illustrator
+## Skin_table
+for skin in json_skin["charSkins"].keys():
+    if skin in json_skinEN["charSkins"].keys():
+        for dlist in ["drawerList", "designerList"]:
+            if json_skin["charSkins"][skin]["displaySkin"][dlist]:
+                if len(json_skin["charSkins"][skin]["displaySkin"][dlist]) > 1: print("NEW Illustrator Dlist JUST DROP !!!")
+                CN_skin_artist = json_skin["charSkins"][skin]["displaySkin"][dlist][0].strip()
+                EN_skin_artist = json_skinEN["charSkins"][skin]["displaySkin"][dlist][0].strip()
+                if CN_skin_artist != EN_skin_artist:
+                    if CN_skin_artist in json_artist["Illustrator"].keys() and json_artist["Illustrator"][CN_skin_artist] != EN_skin_artist:
+                        artist_dupe_catch.append(CN_skin_artist,json_artist["Illustrator"][CN_skin_artist],EN_skin_artist)
+                    else :
+                        json_artist["Illustrator"][CN_skin_artist] = EN_skin_artist
+## npcDict
+for npc in json_handbook["npcDict"].keys():
+    if npc in json_handbookEN["npcDict"].keys():
+        for dlist in ["illustList", "designerList"]:
+            if json_handbook["npcDict"][npc][dlist]:
+                if len(json_handbook["npcDict"][npc][dlist]) > 1: print("NEW Illustrator Dlist JUST DROP !!!")
+                CN_skin_artist = json_handbook["npcDict"][npc][dlist][0].strip()
+                EN_skin_artist = json_handbookEN["npcDict"][npc][dlist][0].strip()
+                if CN_skin_artist != EN_skin_artist:
+                    if CN_skin_artist in json_artist["Illustrator"].keys() and json_artist["Illustrator"][CN_skin_artist] != EN_skin_artist:
+                        artist_dupe_catch.append(CN_skin_artist,json_artist["Illustrator"][CN_skin_artist],EN_skin_artist)
+                    else :
+                        json_artist["Illustrator"][CN_skin_artist] = EN_skin_artist
+
+# Voice Actor
+    for op in json_charword["voiceLangDict"].keys():
+        if op in json_charwordEN["voiceLangDict"].keys():
+            for lang in json_charword["voiceLangDict"][op]["dict"].keys():
+                if lang in json_charwordEN["voiceLangDict"][op]["dict"].keys():
+                    VA_CN = json_charword["voiceLangDict"][op]["dict"][lang]["cvName"][0].strip()
+                    VA_EN = json_charwordEN["voiceLangDict"][op]["dict"][lang]["cvName"][0].strip()
+                    if VA_CN != VA_EN :
+                        if VA_CN in json_artist["VA"].keys() and json_artist["VA"][VA_CN] != VA_EN:
+                            artist_dupe_catch.append(op,VA_CN,json_artist["VA"][VA_CN],VA_EN)
+                        else :
+                            json_artist["VA"][VA_CN] = VA_EN
+                            
+
+
+with open("json/tl-artist.json", "w", encoding = "utf-8") as filepath :
+    json.dump(json_artist, filepath, indent = 4, ensure_ascii = False)
+
 Akenemy()
 
 if skip_char:
     print(f'\nNEW CHAR skip list = {skip_char}')
 if skip_mod:
     print(f'NEW MOD skip list = {skip_mod}')
-    
+if artist_dupe_catch :
+    print(f'Artist Conflict list -> {artist_dupe_catch}')
+
 print("pyUpdate Completed !!!\n")

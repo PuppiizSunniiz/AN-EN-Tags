@@ -2,11 +2,10 @@
 ### Need Fix !!!
     - 
 ### To do
+    - Change Token skin when change operator skin
     - Add Arknight Terra wiki button/link (https://arknights.wiki.gg/wiki/Op_name_go_here/Class-for-amiyi-class-change)
         - button "Wiki pic" and txt "Terra Wiki"
-    - Either remove SanityGone or change link to old guide
     - Add gamemode in Filter
-    - Skin Illustrator
     - tweak token section
         - add token Talent ??
         - update token trait/talent/stat when select mod ??

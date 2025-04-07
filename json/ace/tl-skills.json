@@ -11777,5 +11777,155 @@
             "ATK <@ba.vup>+{atk:0%}</>, projectiles stick on target <$ba.sluggish>slow</> them for <@ba.vup>{attack@sluggish}</> second and slash them for <@ba.vup>4</> additional times",
             "ATK <@ba.vup>+{atk:0%}</>, projectiles stick on target <$ba.sluggish>slow</> them for <@ba.vup>{attack@sluggish}</> second and slash them for <@ba.vup>4</> additional times"
         ]
+    },
+	"skchr_monstr_1": {
+        "name": "策略：超压链接",
+        "desc": [
+            "Increases the heal amount of the next heal to <@ba.vup>{heal_scale:0%}</> ATK, heal bounces <@ba.vup>+1</>",
+            "Increases the heal amount of the next heal to <@ba.vup>{heal_scale:0%}</> ATK, heal bounces <@ba.vup>+1</>",
+            "Increases the heal amount of the next heal to <@ba.vup>{heal_scale:0%}</> ATK, heal bounces <@ba.vup>+1</>",
+            "Increases the heal amount of the next heal to <@ba.vup>{heal_scale:0%}</> ATK, heal bounces <@ba.vup>+1</>",
+            "Increases the heal amount of the next heal to <@ba.vup>{heal_scale:0%}</> ATK, heal bounces <@ba.vup>+1</>",
+            "Increases the heal amount of the next heal to <@ba.vup>{heal_scale:0%}</> ATK, heal bounces <@ba.vup>+1</>",
+            "Increases the heal amount of the next heal to <@ba.vup>{heal_scale:0%}</> ATK, heal bounces <@ba.vup>+1</>",
+            "Increases the heal amount of the next heal to <@ba.vup>{heal_scale:0%}</> ATK, heal bounces <@ba.vup>+1</>",
+            "Increases the heal amount of the next heal to <@ba.vup>{heal_scale:0%}</> ATK, heal bounces <@ba.vup>+1</>",
+            "Increases the heal amount of the next heal to <@ba.vup>{heal_scale:0%}</> ATK, heal bounces <@ba.vup>+1</>"
+        ]
+    },
+    "skchr_monstr_2": {
+        "name": "策略：超负荷",
+        "desc": [
+            "Prioritize healing the Reconstruct during skill. The Reconstruct also perform a bouncing heal when healed by Mon3tr. Increase the effect of the seconds talent to <@ba.vup>{talent_scale}</>x",
+            "Prioritize healing the Reconstruct during skill. The Reconstruct also perform a bouncing heal when healed by Mon3tr. Increase the effect of the seconds talent to <@ba.vup>{talent_scale}</>x",
+            "Prioritize healing the Reconstruct during skill. The Reconstruct also perform a bouncing heal when healed by Mon3tr. Increase the effect of the seconds talent to <@ba.vup>{talent_scale}</>x",
+            "Prioritize healing the Reconstruct during skill. The Reconstruct also perform a bouncing heal when healed by Mon3tr. Increase the effect of the seconds talent to <@ba.vup>{talent_scale}</>x",
+            "Prioritize healing the Reconstruct during skill. The Reconstruct also perform a bouncing heal when healed by Mon3tr. Increase the effect of the seconds talent to <@ba.vup>{talent_scale}</>x",
+            "Prioritize healing the Reconstruct during skill. The Reconstruct also perform a bouncing heal when healed by Mon3tr. Increase the effect of the seconds talent to <@ba.vup>{talent_scale}</>x",
+            "Prioritize healing the Reconstruct during skill. The Reconstruct also perform a bouncing heal when healed by Mon3tr. Increase the effect of the seconds talent to <@ba.vup>{talent_scale}</>x",
+            "Prioritize healing the Reconstruct during skill. The Reconstruct also perform a bouncing heal when healed by Mon3tr. Increase the effect of the seconds talent to <@ba.vup>{talent_scale}</>x",
+            "Prioritize healing the Reconstruct during skill. The Reconstruct also perform a bouncing heal when healed by Mon3tr. Increase the effect of the seconds talent to <@ba.vup>{talent_scale}</>x",
+            "Prioritize healing the Reconstruct during skill. The Reconstruct also perform a bouncing heal when healed by Mon3tr. Increase the effect of the seconds talent to <@ba.vup>{talent_scale}</>x"
+        ]
+    },
+    "skchr_monstr_3": {
+        "name": "策略：熔毁",
+        "desc": [
+            "Attack Range change, <$ba.addash>move</> to the Reconstruct position, ATK<@ba.vup>+{atk:0%}</>, Attack Interval reduced, block count<@ba.vup>+{block_cnt}</>, Max HP<@ba.vup>+{max_hp}</>, gradually lose <@ba.vdown>{damage_per_second}</> HP, attacks all blocked enemies as <@ba.vup>True damage</>. Attacks recover HP by <@ba.vup>{attack@heal_scale:0%}</> ATK.\n<@ba.rem>When skill ends or defeated, returns to original position.</>",
+            "Attack Range change, <$ba.addash>move</> to the Reconstruct position, ATK<@ba.vup>+{atk:0%}</>, Attack Interval reduced, block count<@ba.vup>+{block_cnt}</>, Max HP<@ba.vup>+{max_hp}</>, gradually lose <@ba.vdown>{damage_per_second}</> HP, attacks all blocked enemies as <@ba.vup>True damage</>. Attacks recover HP by <@ba.vup>{attack@heal_scale:0%}</> ATK.\n<@ba.rem>When skill ends or defeated, returns to original position.</>",
+            "Attack Range change, <$ba.addash>move</> to the Reconstruct position, ATK<@ba.vup>+{atk:0%}</>, Attack Interval reduced, block count<@ba.vup>+{block_cnt}</>, Max HP<@ba.vup>+{max_hp}</>, gradually lose <@ba.vdown>{damage_per_second}</> HP, attacks all blocked enemies as <@ba.vup>True damage</>. Attacks recover HP by <@ba.vup>{attack@heal_scale:0%}</> ATK.\n<@ba.rem>When skill ends or defeated, returns to original position.</>",
+            "Attack Range change, <$ba.addash>move</> to the Reconstruct position, ATK<@ba.vup>+{atk:0%}</>, Attack Interval reduced, block count<@ba.vup>+{block_cnt}</>, Max HP<@ba.vup>+{max_hp}</>, gradually lose <@ba.vdown>{damage_per_second}</> HP, attacks all blocked enemies as <@ba.vup>True damage</>. Attacks recover HP by <@ba.vup>{attack@heal_scale:0%}</> ATK.\n<@ba.rem>When skill ends or defeated, returns to original position.</>",
+            "Attack Range change, <$ba.addash>move</> to the Reconstruct position, ATK<@ba.vup>+{atk:0%}</>, Attack Interval reduced, block count<@ba.vup>+{block_cnt}</>, Max HP<@ba.vup>+{max_hp}</>, gradually lose <@ba.vdown>{damage_per_second}</> HP, attacks all blocked enemies as <@ba.vup>True damage</>. Attacks recover HP by <@ba.vup>{attack@heal_scale:0%}</> ATK.\n<@ba.rem>When skill ends or defeated, returns to original position.</>",
+            "Attack Range change, <$ba.addash>move</> to the Reconstruct position, ATK<@ba.vup>+{atk:0%}</>, Attack Interval reduced, block count<@ba.vup>+{block_cnt}</>, Max HP<@ba.vup>+{max_hp}</>, gradually lose <@ba.vdown>{damage_per_second}</> HP, attacks all blocked enemies as <@ba.vup>True damage</>. Attacks recover HP by <@ba.vup>{attack@heal_scale:0%}</> ATK.\n<@ba.rem>When skill ends or defeated, returns to original position.</>",
+            "Attack Range change, <$ba.addash>move</> to the Reconstruct position, ATK<@ba.vup>+{atk:0%}</>, Attack Interval reduced, block count<@ba.vup>+{block_cnt}</>, Max HP<@ba.vup>+{max_hp}</>, gradually lose <@ba.vdown>{damage_per_second}</> HP, attacks all blocked enemies as <@ba.vup>True damage</>. Attacks recover HP by <@ba.vup>{attack@heal_scale:0%}</> ATK.\n<@ba.rem>When skill ends or defeated, returns to original position.</>",
+            "Attack Range change, <$ba.addash>move</> to the Reconstruct position, ATK<@ba.vup>+{atk:0%}</>, Attack Interval reduced, block count<@ba.vup>+{block_cnt}</>, Max HP<@ba.vup>+{max_hp}</>, gradually lose <@ba.vdown>{damage_per_second}</> HP, attacks all blocked enemies as <@ba.vup>True damage</>. Attacks recover HP by <@ba.vup>{attack@heal_scale:0%}</> ATK.\n<@ba.rem>When skill ends or defeated, returns to original position.</>",
+            "Attack Range change, <$ba.addash>move</> to the Reconstruct position, ATK<@ba.vup>+{atk:0%}</>, Attack Interval reduced, block count<@ba.vup>+{block_cnt}</>, Max HP<@ba.vup>+{max_hp}</>, gradually lose <@ba.vdown>{damage_per_second}</> HP, attacks all blocked enemies as <@ba.vup>True damage</>. Attacks recover HP by <@ba.vup>{attack@heal_scale:0%}</> ATK.\n<@ba.rem>When skill ends or defeated, returns to original position.</>",
+            "Attack Range change, <$ba.addash>move</> to the Reconstruct position, ATK<@ba.vup>+{atk:0%}</>, Attack Interval reduced, block count<@ba.vup>+{block_cnt}</>, Max HP<@ba.vup>+{max_hp}</>, gradually lose <@ba.vdown>{damage_per_second}</> HP, attacks all blocked enemies as <@ba.vup>True damage</>. Attacks recover HP by <@ba.vup>{attack@heal_scale:0%}</> ATK.\n<@ba.rem>When skill ends or defeated, returns to original position.</>"
+        ]
+    },
+    "sktok_monstr_prosts1": {
+        "name": "策略：超压链接",
+        "desc": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    "sktok_monstr_prosts2": {
+        "name": "策略：超负荷",
+        "desc": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    "sktok_monstr_prosts3": {
+        "name": "策略：熔毁",
+        "desc": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    "skchr_alanna_1": {
+        "name": "气动增压",
+        "desc": [
+            "<Support Devices> also grant ASPD<@ba.vup>+{attack_speed}</>. The Devices last <@ba.vup>+{extend_time}</> seconds longer",
+            "<Support Devices> also grant ASPD<@ba.vup>+{attack_speed}</>. The Devices last <@ba.vup>+{extend_time}</> seconds longer",
+            "<Support Devices> also grant ASPD<@ba.vup>+{attack_speed}</>. The Devices last <@ba.vup>+{extend_time}</> seconds longer",
+            "<Support Devices> also grant ASPD<@ba.vup>+{attack_speed}</>. The Devices last <@ba.vup>+{extend_time}</> seconds longer",
+            "<Support Devices> also grant ASPD<@ba.vup>+{attack_speed}</>. The Devices last <@ba.vup>+{extend_time}</> seconds longer",
+            "<Support Devices> also grant ASPD<@ba.vup>+{attack_speed}</>. The Devices last <@ba.vup>+{extend_time}</> seconds longer",
+            "<Support Devices> also grant ASPD<@ba.vup>+{attack_speed}</>. The Devices last <@ba.vup>+{extend_time}</> seconds longer",
+            "<Support Devices> also grant ASPD<@ba.vup>+{attack_speed}</>. The Devices last <@ba.vup>+{extend_time}</> seconds longer",
+            "<Support Devices> also grant ASPD<@ba.vup>+{attack_speed}</>. The Devices last <@ba.vup>+{extend_time}</> seconds longer",
+            "<Support Devices> also grant ASPD<@ba.vup>+{attack_speed}</>. The Devices last <@ba.vup>+{extend_time}</> seconds longer"
+        ]
+    },
+    "skchr_alanna_2": {
+        "name": "“万斤顶”",
+        "desc": [
+            "ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</> and talent effect increase to <@ba.vup>{multi}</>x. Gain <@ba.vup>{cnt}</> Support Device when the skill ends",
+            "ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</> and talent effect increase to <@ba.vup>{multi}</>x. Gain <@ba.vup>{cnt}</> Support Device when the skill ends",
+            "ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</> and talent effect increase to <@ba.vup>{multi}</>x. Gain <@ba.vup>{cnt}</> Support Device when the skill ends",
+            "ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</> and talent effect increase to <@ba.vup>{multi}</>x. Gain <@ba.vup>{cnt}</> Support Device when the skill ends",
+            "ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</> and talent effect increase to <@ba.vup>{multi}</>x. Gain <@ba.vup>{cnt}</> Support Device when the skill ends",
+            "ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</> and talent effect increase to <@ba.vup>{multi}</>x. Gain <@ba.vup>{cnt}</> Support Device when the skill ends",
+            "ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</> and talent effect increase to <@ba.vup>{multi}</>x. Gain <@ba.vup>{cnt}</> Support Device when the skill ends",
+            "ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</> and talent effect increase to <@ba.vup>{multi}</>x. Gain <@ba.vup>{cnt}</> Support Device when the skill ends",
+            "ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</> and talent effect increase to <@ba.vup>{multi}</>x. Gain <@ba.vup>{cnt}</> Support Device when the skill ends",
+            "ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</> and talent effect increase to <@ba.vup>{multi}</>x. Gain <@ba.vup>{cnt}</> Support Device when the skill ends"
+        ]
+    },
+    "skchr_wscoot_1": {
+        "name": "以攻为守",
+        "desc": [
+            "ASPD<@ba.vup>+{attack_speed}</> and DEF<@ba.vup>+{def:0%}</>",
+            "ASPD<@ba.vup>+{attack_speed}</> and DEF<@ba.vup>+{def:0%}</>",
+            "ASPD<@ba.vup>+{attack_speed}</> and DEF<@ba.vup>+{def:0%}</>",
+            "ASPD<@ba.vup>+{attack_speed}</> and DEF<@ba.vup>+{def:0%}</>",
+            "ASPD<@ba.vup>+{attack_speed}</> and DEF<@ba.vup>+{def:0%}</>",
+            "ASPD<@ba.vup>+{attack_speed}</> and DEF<@ba.vup>+{def:0%}</>",
+            "ASPD<@ba.vup>+{attack_speed}</> and DEF<@ba.vup>+{def:0%}</>",
+            "ASPD<@ba.vup>+{attack_speed}</> and DEF<@ba.vup>+{def:0%}</>",
+            "ASPD<@ba.vup>+{attack_speed}</> and DEF<@ba.vup>+{def:0%}</>",
+            "ASPD<@ba.vup>+{attack_speed}</> and DEF<@ba.vup>+{def:0%}</>"
+        ]
+    },
+    "skchr_wscoot_2": {
+        "name": "招无虚发",
+        "desc": [
+            "Attack Range <@ba.vup>expand</>, target <@ba.vup>2</> enemies simultaneously. Attacks deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Physical damage and ignores their Physical Dodge",
+            "Attack Range <@ba.vup>expand</>, target <@ba.vup>2</> enemies simultaneously. Attacks deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Physical damage and ignores their Physical Dodge",
+            "Attack Range <@ba.vup>expand</>, target <@ba.vup>2</> enemies simultaneously. Attacks deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Physical damage and ignores their Physical Dodge",
+            "Attack Range <@ba.vup>expand</>, target <@ba.vup>2</> enemies simultaneously. Attacks deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Physical damage and ignores their Physical Dodge",
+            "Attack Range <@ba.vup>expand</>, target <@ba.vup>2</> enemies simultaneously. Attacks deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Physical damage and ignores their Physical Dodge",
+            "Attack Range <@ba.vup>expand</>, target <@ba.vup>2</> enemies simultaneously. Attacks deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Physical damage and ignores their Physical Dodge",
+            "Attack Range <@ba.vup>expand</>, target <@ba.vup>2</> enemies simultaneously. Attacks deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Physical damage and ignores their Physical Dodge",
+            "Attack Range <@ba.vup>expand</>, target <@ba.vup>2</> enemies simultaneously. Attacks deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Physical damage and ignores their Physical Dodge",
+            "Attack Range <@ba.vup>expand</>, target <@ba.vup>2</> enemies simultaneously. Attacks deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Physical damage and ignores their Physical Dodge",
+            "Attack Range <@ba.vup>expand</>, target <@ba.vup>2</> enemies simultaneously. Attacks deal <@ba.vup>{attack@atk_scale:0%}</> ATK as Physical damage and ignores their Physical Dodge"
+        ]
     }
 }

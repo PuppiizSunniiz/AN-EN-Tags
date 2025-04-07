@@ -1344,5 +1344,221 @@
                 "upgradeDescription": "Attacks from the 'Typewriter' reduce the target's DEF by 30% <@ba.talpu>(+2%)</> for 5 <@ba.talpu>(+1)</> seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to <@ba.talpu>35% (+2%)</>"
             }
         ]
+    ],
+    "uniequip_002_ines": [
+        [
+            {
+                "name": "Shadow Weaver",
+                "EN": "The first hit on each enemy <$ba.root>Binds</> the target for 5 seconds and <$ba.steal>Steals</> 90 ATK (effect expires when enemy is defeated or Ines retreats)",
+                "CN": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其90点攻击力（持续至目标被击倒或伊内丝离场）",
+                "mod": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其100点攻击力（持续至目标被击倒或伊内丝离场）",
+                "upgradeDescription": "The first hit on each enemy <$ba.root>Binds</> the target for 5 seconds and <$ba.steal>Steals</> 100 ATK (effect expires when enemy is defeated or Ines retreats)"
+            },
+            {
+                "name": "Shadow Weaver",
+                "EN": "The first hit on each enemy <$ba.root>Binds</> the target for 5 seconds and <$ba.steal>Steals</> 100 <@ba.talpu>(+10)</> ATK (effect expires when enemy is defeated or Ines retreats)",
+                "CN": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其100<@ba.talpu>（+10）</>点攻击力（持续至目标被击倒或伊内丝离场）",
+                "mod": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其110<@ba.talpu>（+10）</>点攻击力（持续至目标被击倒或伊内丝离场）",
+                "upgradeDescription": "The first hit on each enemy <$ba.root>Binds</> the target for 5 seconds and <$ba.steal>Steals</> 110 <@ba.talpu>(+10)</> ATK (effect expires when enemy is defeated or Ines retreats)"
+            }
+        ],
+        [
+            {
+                "name": "Shadow Weaver",
+                "EN": "The first hit on each enemy <$ba.root>Binds</> the target for 5 seconds and <$ba.steal>Steals</> 90 ATK (effect expires when enemy is defeated or Ines retreats)",
+                "CN": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其90点攻击力（持续至目标被击倒或伊内丝离场）",
+                "mod": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其110点攻击力（持续至目标被击倒或伊内丝离场）",
+                "upgradeDescription": "The first hit on each enemy <$ba.root>Binds</> the target for 5 seconds and <$ba.steal>Steals</> 110 ATK (effect expires when enemy is defeated or Ines retreats)"
+            },
+            {
+                "name": "Shadow Weaver",
+                "EN": "The first hit on each enemy <$ba.root>Binds</> the target for 5 seconds and <$ba.steal>Steals</> 100 <@ba.talpu>(+10)</> ATK (effect expires when enemy is defeated or Ines retreats)",
+                "CN": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其100<@ba.talpu>（+10）</>点攻击力（持续至目标被击倒或伊内丝离场）",
+                "mod": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其120<@ba.talpu>（+10）</>点攻击力（持续至目标被击倒或伊内丝离场）",
+                "upgradeDescription": "The first hit on each enemy <$ba.root>Binds</> the target for 5 seconds and <$ba.steal>Steals</> 120 <@ba.talpu>(+10)</> ATK (effect expires when enemy is defeated or Ines retreats)"
+            }
+        ]
+    ],
+    "uniequip_002_ctable": [
+        [
+            {
+                "name": "Protean",
+                "EN": "ASPD +12 when not blocking an enemy, ATK +12% when blocking an enemy",
+                "CN": "未阻挡敌人时攻击速度+12，阻挡敌人时攻击力+12%",
+                "mod": "未阻挡敌人时攻击速度+15，阻挡敌人时攻击力+15%",
+                "upgradeDescription": "ASPD +15 when not blocking an enemy, ATK +15% when blocking an enemy"
+            },
+            {
+                "name": "Protean",
+                "EN": "ASPD +14 <@ba.talpu>(+2)</> when not blocking an enemy, ATK +14% <@ba.talpu>(+2%)</> when blocking an enemy",
+                "CN": "未阻挡敌人时攻击速度+14<@ba.talpu>（+2）</>，阻挡敌人时攻击力+14%<@ba.talpu>（+2%）</>",
+                "mod": "未阻挡敌人时攻击速度+17<@ba.talpu>（+2）</>，阻挡敌人时攻击力+17%<@ba.talpu>（+2%）</>",
+                "upgradeDescription": "ASPD +17 <@ba.talpu>(+2)</> when not blocking an enemy, ATK +17% <@ba.talpu>(+2%)</> when blocking an enemy"
+            }
+        ],
+        [
+            {
+                "name": "Protean",
+                "EN": "ASPD +12 when not blocking an enemy, ATK +12% when blocking an enemy",
+                "CN": "未阻挡敌人时攻击速度+12，阻挡敌人时攻击力+12%",
+                "mod": "未阻挡敌人时攻击速度+18，阻挡敌人时攻击力+18%",
+                "upgradeDescription": "ASPD +18 when not blocking an enemy, ATK +18% when blocking an enemy"
+            },
+            {
+                "name": "Protean",
+                "EN": "ASPD +14 <@ba.talpu>(+2)</> when not blocking an enemy, ATK +14% <@ba.talpu>(+2%)</> when blocking an enemy",
+                "CN": "未阻挡敌人时攻击速度+14<@ba.talpu>（+2）</>，阻挡敌人时攻击力+14%<@ba.talpu>（+2%）</>",
+                "mod": "未阻挡敌人时攻击速度+20<@ba.talpu>（+2）</>，阻挡敌人时攻击力+20%<@ba.talpu>（+2%）</>",
+                "upgradeDescription": "ASPD +20 <@ba.talpu>(+2)</> when not blocking an enemy, ATK +20% <@ba.talpu>(+2%)</> when blocking an enemy"
+            }
+        ]
+    ],
+    "uniequip_002_surfer": [
+        [
+            {
+                "name": "独自远走",
+                "CN": "部署时，若周围4格没有其他干员，获得2点部署费用",
+                "mod": "部署时，若周围4格没有其他干员，获得2点部署费用，攻击速度+10（持续10秒）",
+                "upgradeDescription": "When deployed, if there are no operators within the adjacent 4 tiles, gain 2 DP and ASPD +10 for 10 seconds"
+            },
+            {
+                "name": "独自远走",
+                "CN": "部署时，若周围4格没有其他干员，获得3<@ba.talpu>（+1）</>点部署费用",
+                "mod": "部署时，若周围4格没有其他干员，获得3<@ba.talpu>（+1）</>点部署费用，攻击速度+10（持续10秒）",
+                "upgradeDescription": "When deployed, if there are no operators within the adjacent 4 tiles, gain 3<@ba.talpu>(+1)</> DP and ASPD +10 for 10 seconds"
+            }
+        ],
+        [
+            {
+                "name": "独自远走",
+                "CN": "部署时，若周围4格没有其他干员，获得2点部署费用",
+                "mod": "部署时，若周围4格没有其他干员，获得2点部署费用，攻击速度+15（持续10秒）",
+                "upgradeDescription": "When deployed, if there are no operators within the adjacent 4 tiles, gain 2 DP and ASPD +15 for 10 seconds"
+            },
+            {
+                "name": "独自远走",
+                "CN": "部署时，若周围4格没有其他干员，获得3<@ba.talpu>（+1）</>点部署费用",
+                "mod": "部署时，若周围4格没有其他干员，获得3<@ba.talpu>（+1）</>点部署费用，攻击速度+15（持续10秒）",
+                "upgradeDescription": "When deployed, if there are no operators within the adjacent 4 tiles, gain 3<@ba.talpu>(+1)</> DP and ASPD +15 for 10 seconds"
+            }
+        ]
+    ],
+    "uniequip_002_alanna": [
+        [
+            {
+                "name": "临时改装",
+                "CN": "携带3个支援装置（最多部署2个），使一名干员攻击敌人时无视其80点防御力（持续30秒），装置效果不叠加",
+                "mod": "携带3个支援装置（最多部署2个），使一名干员攻击敌人时无视其90点防御力（持续30秒），装置效果不叠加",
+                "upgradeDescription": "Carries 3 <Support Devices> (max 2 deployed at once). Each <Support Devices> grants 90 DEF ignore to an operator for 30 seconds (Effects do not stack)"
+            },
+            {
+                "name": "临时改装",
+                "CN": "携带3个支援装置（最多部署2个），使一名干员攻击敌人时无视其90<@ba.talpu>（+10）</>点防御力（持续30秒），装置效果不叠加",
+                "mod": "携带3个支援装置（最多部署2个），使一名干员攻击敌人时无视其100<@ba.talpu>（+10）</>点防御力（持续30秒），装置效果不叠加",
+                "upgradeDescription": "Carries 3 <Support Devices> (max 2 deployed at once). Each <Support Devices> grants 100<@ba.talpu>(+10)</> DEF ignore to an operator for 30 seconds (Effects do not stack)"
+            }
+        ],
+        [
+            {
+                "name": "临时改装",
+                "CN": "携带3个支援装置（最多部署2个），使一名干员攻击敌人时无视其80点防御力（持续30秒），装置效果不叠加",
+                "mod": "携带3个支援装置（最多部署2个），使一名干员攻击敌人时无视其100点防御力（持续30秒），装置效果不叠加",
+                "upgradeDescription": "Carries 3 <Support Devices> (max 2 deployed at once). Each <Support Devices> grants 100 DEF ignore to an operator for 30 seconds (Effects do not stack)"
+            },
+            {
+                "name": "临时改装",
+                "CN": "携带3个支援装置（最多部署2个），使一名干员攻击敌人时无视其90<@ba.talpu>（+10）</>点防御力（持续30秒），装置效果不叠加",
+                "mod": "携带3个支援装置（最多部署2个），使一名干员攻击敌人时无视其110<@ba.talpu>（+10）</>点防御力（持续30秒），装置效果不叠加",
+                "upgradeDescription": "Carries 3 <Support Devices> (max 2 deployed at once). Each <Support Devices> grants 110<@ba.talpu>(+10)</> DEF ignore to an operator for 30 seconds (Effects do not stack)"
+            }
+        ]
+    ],
+    "uniequip_003_logos": [
+        [
+            {
+                "name": "Lexical Evolution",
+                "EN": "When attacking a target, there is a 40% chance to deal 60% ATK as Arts damage to a random target in attack range and <$ba.sluggish>Slow</> it for 0.8s.",
+                "CN": "对一个目标发起攻击时，有40%几率额外对攻击范围内一个随机目标造成相当于攻击力60%的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
+                "mod": "对一个目标发起攻击时，有40%几率额外对攻击范围内两个随机目标造成相当于攻击力63%的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
+                "upgradeDescription": "When attacking a target, there is a 40% chance to deal 63% ATK as Arts damage to 2 random targets in attack range and <$ba.sluggish>Slow</> it for 0.8s."
+            },
+            {
+                "name": "Lexical Evolution",
+                "EN": "When attacking a target, there is a 40% chance to deal 65% <@ba.talpu>(+5%)</> ATK as Arts damage to a random target in attack range and <$ba.sluggish>Slow</> it for 0.8s.",
+                "CN": "对一个目标发起攻击时，有40%几率额外对攻击范围内一个随机目标造成相当于攻击力65%<@ba.talpu>（+5%）</>的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
+                "mod": "对一个目标发起攻击时，有40%几率额外对攻击范围内两个随机目标造成相当于攻击力68%<@ba.talpu>（+5%）</>的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
+                "upgradeDescription": "When attacking a target, there is a 40% chance to deal 68% <@ba.talpu>(+5%)</> ATK as Arts damage to 2 random targets in attack range and <$ba.sluggish>Slow</> it for 0.8s."
+            }
+        ],
+        [
+            {
+                "name": "Lexical Evolution",
+                "EN": "When attacking a target, there is a 40% chance to deal 60% ATK as Arts damage to a random target in attack range and <$ba.sluggish>Slow</> it for 0.8s.",
+                "CN": "对一个目标发起攻击时，有40%几率额外对攻击范围内一个随机目标造成相当于攻击力60%的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
+                "mod": "对一个目标发起攻击时，有40%几率额外对攻击范围内两个随机目标造成相当于攻击力65%的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
+                "upgradeDescription": "When attacking a target, there is a 40% chance to deal 65% ATK as Arts damage to 2 random targets in attack range and <$ba.sluggish>Slow</> it for 0.8s."
+            },
+            {
+                "name": "Lexical Evolution",
+                "EN": "When attacking a target, there is a 40% chance to deal 65% <@ba.talpu>(+5%)</> ATK as Arts damage to a random target in attack range and <$ba.sluggish>Slow</> it for 0.8s.",
+                "CN": "对一个目标发起攻击时，有40%几率额外对攻击范围内一个随机目标造成相当于攻击力65%<@ba.talpu>（+5%）</>的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
+                "mod": "对一个目标发起攻击时，有40%几率额外对攻击范围内两个随机目标造成相当于攻击力70%<@ba.talpu>（+5%）</>的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
+                "upgradeDescription": "When attacking a target, there is a 40% chance to deal 70% <@ba.talpu>(+5%)</> ATK as Arts damage to 2 random targets in attack range and <$ba.sluggish>Slow</> it for 0.8s."
+            }
+        ]
+    ],
+    "uniequip_003_mudrok": [
+        [
+            {
+                "name": "Unshakable Solidarity",
+                "EN": "Takes 30% less damage from Sarkaz enemies",
+                "CN": "受到来自【萨卡兹】敌人的伤害降低30%",
+                "mod": "受到来自【萨卡兹】敌人的伤害降低33%，对非【萨卡兹】敌人造成的伤害提升15%",
+                "upgradeDescription": "Takes 33% less damage from Sarkaz enemies, deal 15% more damage to non-Sarkaz enemies"
+            }
+        ],
+        [
+            {
+                "name": "Unshakable Solidarity",
+                "EN": "Takes 30% less damage from Sarkaz enemies",
+                "CN": "受到来自【萨卡兹】敌人的伤害降低30%",
+                "mod": "受到来自【萨卡兹】敌人的伤害降低35%，对非【萨卡兹】敌人造成的伤害提升20%",
+                "upgradeDescription": "Takes 35% less damage from Sarkaz enemies, deal 20% more damage to non-Sarkaz enemies"
+            }
+        ]
+    ],
+    "uniequip_002_puzzle": [
+        [
+            {
+                "name": "Sequence",
+                "EN": "ATK increased to 120% and recover 2 additional SP when hitting an enemy with full HP",
+                "CN": "攻击命中生命值为满的敌人时攻击力提升至120%，并额外回复2点技力",
+                "mod": "攻击命中生命值为满的敌人时攻击力提升至128%且使其移动速度下降50%，持续3.5秒，并额外回复2点技力",
+                "upgradeDescription": "ATK increased to 128%, recover 2 additional SP and reduce movement speed by 50% for 3.5 seconds when hitting an enemy with full HP"
+            },
+            {
+                "name": "Sequence",
+                "EN": "ATK increased to 125% <@ba.talpu>(+5%)</> and recover 2 additional SP when hitting an enemy with full HP",
+                "CN": "攻击命中生命值为满的敌人时攻击力提升至125%<@ba.talpu>（+5%）</>，并额外回复2点技力",
+                "mod": "攻击命中生命值为满的敌人时攻击力提升至133%<@ba.talpu>（+5%）</>且使其移动速度下降50%，持续3.5秒，并额外回复2点技力",
+                "upgradeDescription": "ATK increased to 133% <@ba.talpu>(+5%)</>, recover 2 additional SP and reduce movement speed by 50% for 3.5 seconds when hitting an enemy with full HP"
+            }
+        ],
+        [
+            {
+                "name": "Sequence",
+                "EN": "ATK increased to 120% and recover 2 additional SP when hitting an enemy with full HP",
+                "CN": "攻击命中生命值为满的敌人时攻击力提升至120%，并额外回复2点技力",
+                "mod": "攻击命中生命值为满的敌人时攻击力提升至130%且使其移动速度下降50%，持续3.5秒，并额外回复2点技力",
+                "upgradeDescription": "ATK increased to 130%, recover 2 additional SP and reduce movement speed by 50% for 3.5 seconds when hitting an enemy with full HP"
+            },
+            {
+                "name": "Sequence",
+                "EN": "ATK increased to 125% <@ba.talpu>(+5%)</> and recover 2 additional SP when hitting an enemy with full HP",
+                "CN": "攻击命中生命值为满的敌人时攻击力提升至125%<@ba.talpu>（+5%）</>，并额外回复2点技力",
+                "mod": "攻击命中生命值为满的敌人时攻击力提升至135%<@ba.talpu>（+5%）</>且使其移动速度下降50%，持续3.5秒，并额外回复2点技力",
+                "upgradeDescription": "ATK increased to 135% <@ba.talpu>(+5%)</>, recover 2 additional SP and reduce movement speed by 50% for 3.5 seconds when hitting an enemy with full HP"
+            }
+        ]
     ]
 }

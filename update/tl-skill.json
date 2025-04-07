@@ -1,6 +1,6 @@
 {
-    "sktok_necras_skeltn_1": {
-        "name": "怨火缠身",
+    "sktok_monstr_prosts1": {
+        "name": "策略：超压链接",
         "desc": [
             null,
             null,
@@ -14,8 +14,8 @@
             null
         ]
     },
-    "sktok_necras_skeltn_2": {
-        "name": "怨火缠身",
+    "sktok_monstr_prosts2": {
+        "name": "策略：超负荷",
         "desc": [
             null,
             null,
@@ -29,49 +29,19 @@
             null
         ]
     },
-    "sktok_necras_skeltn_3": {
-        "name": "怨火缠身",
+    "sktok_monstr_prosts3": {
+        "name": "策略：熔毁",
         "desc": [
-            "对范围内所有敌人每秒造成自身攻击力<@ba.vup>{attack@atk_scale:0%}</>的法术伤害",
-            "对范围内所有敌人每秒造成自身攻击力<@ba.vup>{attack@atk_scale:0%}</>的法术伤害",
-            "对范围内所有敌人每秒造成自身攻击力<@ba.vup>{attack@atk_scale:0%}</>的法术伤害",
-            "对范围内所有敌人每秒造成自身攻击力<@ba.vup>{attack@atk_scale:0%}</>的法术伤害",
-            "对范围内所有敌人每秒造成自身攻击力<@ba.vup>{attack@atk_scale:0%}</>的法术伤害",
-            "对范围内所有敌人每秒造成自身攻击力<@ba.vup>{attack@atk_scale:0%}</>的法术伤害",
-            "对范围内所有敌人每秒造成自身攻击力<@ba.vup>{attack@atk_scale:0%}</>的法术伤害",
-            "对范围内所有敌人每秒造成自身攻击力<@ba.vup>{attack@atk_scale:0%}</>的法术伤害",
-            "对范围内所有敌人每秒造成自身攻击力<@ba.vup>{attack@atk_scale:0%}</>的法术伤害",
-            "对范围内所有敌人每秒造成自身攻击力<@ba.vup>{attack@atk_scale:0%}</>的法术伤害"
-        ]
-    },
-    "sktok_wulfen_1": {
-        "name": "“驱兽专用”",
-        "desc": [
-            "引爆时对范围内所有目标造成相当于钼铅攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，并使其<$ba.stun>晕眩</><@ba.vup>{stun}</>秒",
-            "引爆时对范围内所有目标造成相当于钼铅攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，并使其<$ba.stun>晕眩</><@ba.vup>{stun}</>秒",
-            "引爆时对范围内所有目标造成相当于钼铅攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，并使其<$ba.stun>晕眩</><@ba.vup>{stun}</>秒",
-            "引爆时对范围内所有目标造成相当于钼铅攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，并使其<$ba.stun>晕眩</><@ba.vup>{stun}</>秒",
-            "引爆时对范围内所有目标造成相当于钼铅攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，并使其<$ba.stun>晕眩</><@ba.vup>{stun}</>秒",
-            "引爆时对范围内所有目标造成相当于钼铅攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，并使其<$ba.stun>晕眩</><@ba.vup>{stun}</>秒",
-            "引爆时对范围内所有目标造成相当于钼铅攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，并使其<$ba.stun>晕眩</><@ba.vup>{stun}</>秒",
-            "引爆时对范围内所有目标造成相当于钼铅攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，并使其<$ba.stun>晕眩</><@ba.vup>{stun}</>秒",
-            "引爆时对范围内所有目标造成相当于钼铅攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，并使其<$ba.stun>晕眩</><@ba.vup>{stun}</>秒",
-            "引爆时对范围内所有目标造成相当于钼铅攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，并使其<$ba.stun>晕眩</><@ba.vup>{stun}</>秒"
-        ]
-    },
-    "sktok_wulfen_2": {
-        "name": "“顽石专用”",
-        "desc": [
-            "引爆时对范围内所有目标造成<@ba.vup>两次</>相当于钼铅攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，并使其防御力<@ba.vup>-{-def:0%}</>（不叠加），持续<@ba.vup>{duration}</>秒",
-            "引爆时对范围内所有目标造成<@ba.vup>两次</>相当于钼铅攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，并使其防御力<@ba.vup>-{-def:0%}</>（不叠加），持续<@ba.vup>{duration}</>秒",
-            "引爆时对范围内所有目标造成<@ba.vup>两次</>相当于钼铅攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，并使其防御力<@ba.vup>-{-def:0%}</>（不叠加），持续<@ba.vup>{duration}</>秒",
-            "引爆时对范围内所有目标造成<@ba.vup>两次</>相当于钼铅攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，并使其防御力<@ba.vup>-{-def:0%}</>（不叠加），持续<@ba.vup>{duration}</>秒",
-            "引爆时对范围内所有目标造成<@ba.vup>两次</>相当于钼铅攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，并使其防御力<@ba.vup>-{-def:0%}</>（不叠加），持续<@ba.vup>{duration}</>秒",
-            "引爆时对范围内所有目标造成<@ba.vup>两次</>相当于钼铅攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，并使其防御力<@ba.vup>-{-def:0%}</>（不叠加），持续<@ba.vup>{duration}</>秒",
-            "引爆时对范围内所有目标造成<@ba.vup>两次</>相当于钼铅攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，并使其防御力<@ba.vup>-{-def:0%}</>（不叠加），持续<@ba.vup>{duration}</>秒",
-            "引爆时对范围内所有目标造成<@ba.vup>两次</>相当于钼铅攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，并使其防御力<@ba.vup>-{-def:0%}</>（不叠加），持续<@ba.vup>{duration}</>秒",
-            "引爆时对范围内所有目标造成<@ba.vup>两次</>相当于钼铅攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，并使其防御力<@ba.vup>-{-def:0%}</>（不叠加），持续<@ba.vup>{duration}</>秒",
-            "引爆时对范围内所有目标造成<@ba.vup>两次</>相当于钼铅攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，并使其防御力<@ba.vup>-{-def:0%}</>（不叠加），持续<@ba.vup>{duration}</>秒"
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     }
 }

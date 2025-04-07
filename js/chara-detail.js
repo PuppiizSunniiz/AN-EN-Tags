@@ -58,6 +58,8 @@
         tlsubclass      :"./json/tl-subclass.json",
         // names           :"./json/tl-char.json",
         ktags           :"./json/tl-tags-key.json",
+        ModuleTL        :"./json/tl-module.json",
+        artistTL        :"./json/tl-artist.json",
 
         //jet TL
         riic            :"./json/ace/riic.json",
@@ -68,13 +70,11 @@
         //extra
         extra_range       :"./json/ace/extra_range.json",
         voiceold          :"./json/ace/oldvoice.json",
-        sanitygone        :"https://sanitygone.help/aceship.json",
+        //sanitygone        :"https://sanitygone.help/aceship.json",
 
-        //TEMPModuleTalent
-        TempModuletalentsTL :"./json/tl-module.json"
     };
     const d = new Date()
-    const sus = (d.getDate() < 8) && (d.getMonth()+1 == 4) //April 1st-7th
+    const sus = (d.getDate() == 1) && (d.getMonth() + 1 == 4) //April 1st
 
     var db = {}
     LoadAllJsonObjects(jsonList).then(function(result) {
@@ -1402,7 +1402,7 @@
             globalskill=0
 
             tokenname = globaltoken
-            currskin =opcode
+            currskin = opcode
             currVoiceID = opdataFull.id
 
             var url = new URL(window.location.href)
@@ -1462,18 +1462,18 @@
             console.log(opdataFull)
             currVoiceID = opdataFull.id
             var linkconvert = opdataFull.appellation.replace(/[ ']/g,"-").toLowerCase()
-            var guidelink = db.sanitygone[opKey];
+            //var guidelink = db.sanitygone[opKey];
             console.log(linkconvert)
-            console.log(guidelink)
+            //console.log(guidelink)
 
-            if(guidelink){
+            /*if(guidelink){
                 $("#sanitygone").show()
                 $("#sanitylink").attr("href",`https://sanitygone.help${guidelink}`)
                 $("#sanitylink").attr("title",`${opdataFull.appellation} Sanity;Gone guide link`)
             }else{
                 $("#sanitylink").attr("href",`https://sanitygone.help/operators/`)
                 $("#sanitygone").hide()
-            }
+            }*/
 
             // use opdata to get the operator data based on tl-akhr.json
             // use opdataFull to get the operator data based on character_table.json
@@ -1824,7 +1824,7 @@
             }else{
                 $("#opstorycredits").html(``)
                 $("#opstorycontent").html(`<div class="row storyrow"> </div>`)
-                $('#name-illustrator').html("-")
+                update_illustrator()
                 $('#info-voiceactor').html(`
                                             <div class="voiceactor-None">
                                                 <div id="lang-voiceactor-None" class="btn-infoleft ak-shadow">
@@ -3573,6 +3573,62 @@
 
         return null
     }
+    function update_illustrator(skinid = ""){
+        function IllustratorLister(List){
+            var HTML = ""
+            for(var i = 0 ; i < List.length; i++){
+                ArtistName = List[i].trim()
+                if(Object.keys(db.artistTL.Illustrator).includes(ArtistName))
+                    ArtistName = db.artistTL.Illustrator[ArtistName]
+                if(i > 0)
+                    HTML += " & "
+
+                HTML += `<a href="https://www.google.com/search?q=illustrator+${ArtistName}"  target="_blank">${ArtistName}</a>`
+            }
+            return HTML
+        }
+        
+        let illustratorHTML = ""
+        let IllustratorList = [[],[]]
+        if(AmiyaPatchID.includes(skinid.split("#")[0]))
+            skin = opdataFull.id + "#2"
+        else
+            skin = skinid?skinid:(currskin + "#1")
+
+        if(db.skintable.charSkins[skin])
+            if(db.skintable.charSkins[skin].displaySkin.drawerList){
+                IllustratorList[0] = db.skintable.charSkins[skin].displaySkin.drawerList[0].split("、")
+                IllustratorList[1] = db.skintable.charSkins[skin].displaySkin.designerList?db.skintable.charSkins[skin].displaySkin.designerList[0].split("、"):""
+            }
+        else if (db.handbookInfo.npcDict[opdataFull.id])
+            IllustratorList[0] = db.handbookInfo.npcDict[opdataFull.id].illustList
+
+        // Drawer
+        illustratorHTML = `
+            <div class="illustrator-drawer">
+                <div class="btn-infoleft ak-shadow">
+                    <i class="fas fa-palette" title="Illustrator-Drawer"></i>
+                </div>
+                <div id="name-illustrator-drawer" class="btn-inforight">
+                    ${IllustratorList[0].length > 0?IllustratorLister(IllustratorList[0]):"-"}
+                </div>
+            </div>`
+        
+        // Designer
+        illustratorHTML += IllustratorList[1].length == 0?"":`
+            <div class="illustrator-designer">
+                <div class="btn-infoleft ak-shadow">
+                    <i class="fas fa-pencil-alt" title="Illustrator-Designer"></i>
+                </div>
+                <div id="name-illustrator-designer" class="btn-inforight">
+                    ${IllustratorLister(IllustratorList[1])}
+                </div>
+            </div>
+            `
+
+        $('#info-illustrator').html(illustratorHTML)
+    }
+
     function GetStory (opdataFull){
         // console.log(opdataFull)
         let currStory = db.handbookInfo.handbookDict[opdataFull.id]
@@ -3596,35 +3652,7 @@
             isAmiya = true
         }
 
-        // console.log(currStory)
-        // console.log(currStory.drawName)
-        // console.log(db.vaTL[currStory.infoName]?db.vaTL[currStory.infoName]:currStory.infoName)
-        $('#name-voiceactor').html("-")
-        $('#name-voiceactor-cn').html("-")
-        console.log(db.skintable.charSkins[currskin+"#1"].displaySkin)
-        let illustrator = ""
-        let IllustratorList = []
-        if(db.skintable.charSkins[currskin+"#1"].displaySkin.designerList){
-             db.skintable.charSkins[currskin+"#1"].displaySkin.designerList.forEach(element => {
-                IllustratorList.push(element)
-             });
-        }
-        if(db.skintable.charSkins[currskin+"#1"].displaySkin.drawerList){
-            db.skintable.charSkins[currskin+"#1"].displaySkin.drawerList.forEach(element => {
-                IllustratorList.push(element)
-             });
-        }
-        if(IllustratorList.length==0) IllustratorList=db.handbookInfoEN.npcDict[opdataFull.id]?db.handbookInfoEN.npcDict[opdataFull.id].illustList:db.handbookInfo.npcDict[opdataFull.id].illustList
-
-        for(var i = 0 ; i < IllustratorList.length; i++){
-            if (i > 0)
-            {
-                illustrator += " & "
-            }
-            illustrator  += `<a href="https://www.google.com/search?q=illustrator+${IllustratorList[i]}"  target="_blank">${IllustratorList[i]}</a>`
-        }
-        console.log(illustrator)
-        $('#name-illustrator').html(illustrator)
+        update_illustrator()
 
         var voiceDict = db.charword.voiceLangDict[opdataFull.id]
         var voiceDictEN = db.charwordEN.voiceLangDict[opdataFull.id]
@@ -3677,21 +3705,22 @@
                         VAlang = "CN&#42"
                         break;
                     default:
-                        VAlang=existvoiceDict.dict[valang].voiceLangType
+                        VAlang = existvoiceDict.dict[valang].voiceLangType
                 }
-                VAName=existvoiceDict.dict[valang].cvName[0]
+                VAName = existvoiceDict.dict[valang].cvName[0].trim()
+                if(Object.keys(db.artistTL.VA).includes(VAName)) VAName = db.artistTL.VA[VAName]
 
-                VAhtml+=`
+                VAhtml += `
                             <div class="voiceactor-${VAlang}">
                                 <div id="lang-voiceactor-${VAlang}" class="btn-infoleft ak-shadow">
                                     <i class="fas fa-microphone-alt" title="Voice Actor">
                                     </i>
-                                    <b ${VAlang.length>2?`style="font-size:11px"`:""}>
-                                        ${VAlang=="None"?"":VAlang}
+                                    <b ${VAlang.length > 2?`style="font-size:11px"`:""}>
+                                        ${VAlang == "None"?"":VAlang}
                                     </b>
                                 </div>
                                 <div id="name-voiceactor-${VAlang}" class="btn-inforight">
-                                    ${VAlang=="None"?VAName:`<a href="https://www.google.com/search?q=Voice+Actor+${VAName}"  target="_blank">${VAName}</a>`}
+                                    ${VAlang == "None"?VAName:`<a href="https://www.google.com/search?q=Voice+Actor+${VAName}"  target="_blank">${VAName}</a>`}
                                 </div>
                             </div>
                         `
@@ -3701,7 +3730,7 @@
 
         let puretext = []
         let textTL = []
-        let islong =false
+        let islong = false
         puretext.push(opdataFull.appellation)
         puretext.push("")
 
@@ -4627,7 +4656,7 @@
             `)
 
             var currTalent = TalentDataBundle[i]
-            var currTalentTL = db.TempModuletalentsTL[moduleKey]?db.TempModuletalentsTL[moduleKey][phase-1][i]:undefined
+            var currTalentTL = db.ModuleTL[moduleKey]?db.ModuleTL[moduleKey][phase-1][i]:undefined
             var currTalentEN = undefined
 
             if(moduleKey in db.battle_equipEN){
@@ -4679,7 +4708,7 @@
         var currModuleTalentName = EN?EN.name:TL?TL.name:CN.name
         var currModuleTalentDesc = EN?EN.upgradeDescription:TL?TL.upgradeDescription:CN.upgradeDescription
 
-        currModuleTalentDesc=ChangeDescriptionColor2(currModuleTalentDesc.replace(/\<([A-z]+)\>/g,"&lt;"+"$1"+'&gt;').replace("\n","<\br>"))
+        currModuleTalentDesc = ChangeDescriptionColor2(currModuleTalentDesc.replace(/\<([A-z ]+)\>/g,"&lt;"+"$1"+'&gt;').replace(/\n/g,"</br>"))
 
         var isModuleTalentRange = (CN.rangeId == range_id)?false:CN.rangeId
         var Moduletalentdetails = []
@@ -4775,7 +4804,7 @@
 
         var currTalentName = eachtalent.talentEN?eachtalent.talentEN.name:eachtalent.talentTL?eachtalent.talentTL.name:eachtalent.talent.name
         var currTalentDesc = eachtalent.talentEN?eachtalent.talentEN.description:eachtalent.talentTL?eachtalent.talentTL.desc:eachtalent.talent.description
-        currTalentDesc = ChangeDescriptionColor2(currTalentDesc.replace(/\<([A-z]+)\>/g,"&lt;"+"$1"+'&gt;').replace("\n","<br>"))
+        currTalentDesc = ChangeDescriptionColor2(currTalentDesc.replace(/\<([A-z ]+)\>/g,"&lt;"+"$1"+'&gt;').replace(/\n/g,"</br>"))
         // console.log(eachtalent.talent.name)
         var isTalentRange = eachtalent.talent.rangeId
         var blacklist =
@@ -5444,10 +5473,10 @@
         var skillTL = db.skillsTL[skillId];
         var desc = skillEN?skillEN.description:skillTL?skillTL.desc[level]:skill.description;
 
-        desc = ChangeDescriptionColor2(desc.replace(/\<([A-z]+)\>/g,"&lt;"+"$1"+'&gt;').replace("\n","</br>"))
+        desc = ChangeDescriptionColor2(desc.replace(/\<([A-z ]+)\>/g,"&lt;"+"$1"+'&gt;').replace(/\n/g,"</br>"))
         if(desc){
             // console.log(skill)
-            desc=ChangeDescriptionContent(desc,skill)
+            desc = ChangeDescriptionContent(desc,skill)
         }
         return desc;
     }
@@ -5631,13 +5660,15 @@
             console.log("DESC NULL")
             return desc
         }
-        desc = desc.replace(/\{\-?([A-Z@_a-z\[\]0-9.]+):?([^}]*)\}/g, function(m, content, format) {
+        desc = desc.replace(/\{(\-?)([A-Z@_a-z\[\]0-9.]+):?([^}]*)\}/g, function(m, neg, content, format) {
             for (var i = 0; i < blackboard.length; i++) {
-                if (blackboard[i].key.toLowerCase()==content.toLowerCase() || blackboard[i].key.toLowerCase()==-content.toLowerCase()){
-                    console.log(blackboard[i].value,content)
-                    let value = Math.abs(blackboard[i].value)
+                if (blackboard[i].key.toLowerCase() == content.toLowerCase() || blackboard[i].key.toLowerCase() == -content.toLowerCase()){
+                    if (neg) value = Math.abs(blackboard[i].value)
+                    else value = blackboard[i].value
+                    console.log(blackboard[i].value, content, neg, value)
+
                     if (format && format.includes("%")) value = Math.round((value * 100000))/1000 + "%";
-                    num +=1
+                    num += 1
                     return `<div class="stat-important">${value}</div>`
                 }
             }
@@ -6192,18 +6223,17 @@
         $(widgettext).text(curranimation[animIndex].name)
     }
 
-    function ChangeSkin(name="",pers="",id=""){
+    function ChangeSkin(name = "", pers = "", id = ""){
         currskin = name
         var skinname = currskin.split(opdataFull.id)[1]?name.split(opdataFull.id)[1]:""
         console.log(opdataFull.id)
         console.log(skinname)
         console.log(currskin)
         console.log(db.skintable.charSkins[id])
-        if(db.skintable.charSkins[id]&&db.skintable.charSkins[id].voiceId)
+        if(db.skintable.charSkins[id] && db.skintable.charSkins[id].voiceId)
             currVoiceID = db.skintable.charSkins[id].voiceId
         else
             currVoiceID = opdataFull.id
-
 
         var uniqueoplist= [
             "char_4067_lolxh",
@@ -6216,10 +6246,12 @@
             }
         }
 
-        if(name!="")chibiName=name
-        if(pers!="")chibipers=pers
-        if(chibipers=='build') {chibiName.includes("build")?chibiName=chibiName:chibiName= "build_"+chibiName}
-        else chibiName.includes("build")?chibiName=chibiName.split("_").slice(1).join("_"):chibiName=chibiName
+        if(name != "") chibiName = name
+        if(pers != "") chibipers = pers
+        if(chibipers == 'build')
+            chibiName.includes("build")?chibiName = chibiName:chibiName = "build_" + chibiName
+        else
+            chibiName.includes("build")?chibiName = chibiName.split("_").slice(1).join("_"):chibiName = chibiName
         folder = `https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/spineassets/${chibitype}/${charName}/${chibipers}/`
 
         if($("#spine-frame-op:visible")){
@@ -6237,6 +6269,7 @@
             }
             LoadAnimation()
         }
+        update_illustrator(id?id:(opdataFull.id + "#" + (name != "0"?name:"1"))) // change skin by ID or change Elite (E0 = E1 except amiyi)
     }
 
     function ShowDynamic(name,isSkin = false,dynid = ""){
@@ -6267,10 +6300,11 @@
         $("#tabs-opCG").fadeIn(200)
     }
 
-    function ChangeSType(buttonnum,amiyaclass="caster"){
-        ChangeSTypeHTML(buttonnum,Amiyacurrclass)
-        Amiyacurrclass=amiyaclass
+    function ChangeSType(buttonnum, amiyaclass = "caster"){
+        ChangeSTypeHTML(buttonnum, Amiyacurrclass)
+        Amiyacurrclass = amiyaclass
         selectOperator(curropid)
+        update_illustrator(opdataFull.id + "#2")
     }
     function ChangeSTypeHTML(num,classchange){
         changepic={

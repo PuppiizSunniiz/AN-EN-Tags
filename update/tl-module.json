@@ -1,190 +1,216 @@
 {
-    "uniequip_002_thorn2": [
+    "uniequip_002_ines": [
         [
             {
-                "name": "心相",
-                "CN": "攻击力+10%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长3秒",
-                "mod": "攻击力+10%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4秒",
+                "name": "Shadow Weaver",
+                "EN": "The first hit on each enemy <$ba.root>Binds</> the target for 5 seconds and <$ba.steal>Steals</> 90 ATK (effect expires when enemy is defeated or Ines retreats)",
+                "CN": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其90点攻击力（持续至目标被击倒或伊内丝离场）",
+                "mod": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其100点攻击力（持续至目标被击倒或伊内丝离场）",
                 "upgradeDescription": ""
             },
             {
-                "name": "心相",
-                "CN": "攻击力+14%<@ba.talpu>（+4%）</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4<@ba.talpu>（+1）</>秒",
-                "mod": "攻击力+14%<@ba.talpu>（+4%）</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长5<@ba.talpu>（+1）</>秒",
+                "name": "Shadow Weaver",
+                "EN": "The first hit on each enemy <$ba.root>Binds</> the target for 5 seconds and <$ba.steal>Steals</> 100 <@ba.talpu>(+10)</> ATK (effect expires when enemy is defeated or Ines retreats)",
+                "CN": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其100<@ba.talpu>（+10）</>点攻击力（持续至目标被击倒或伊内丝离场）",
+                "mod": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其110<@ba.talpu>（+10）</>点攻击力（持续至目标被击倒或伊内丝离场）",
                 "upgradeDescription": ""
             }
         ],
         [
             {
-                "name": "心相",
-                "CN": "攻击力+10%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长3秒",
-                "mod": "攻击力+15%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4秒",
+                "name": "Shadow Weaver",
+                "EN": "The first hit on each enemy <$ba.root>Binds</> the target for 5 seconds and <$ba.steal>Steals</> 90 ATK (effect expires when enemy is defeated or Ines retreats)",
+                "CN": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其90点攻击力（持续至目标被击倒或伊内丝离场）",
+                "mod": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其110点攻击力（持续至目标被击倒或伊内丝离场）",
                 "upgradeDescription": ""
             },
             {
-                "name": "心相",
-                "CN": "攻击力+14%<@ba.talpu>（+4%）</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4<@ba.talpu>（+1）</>秒",
-                "mod": "攻击力+19%<@ba.talpu>（+4%）</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长5<@ba.talpu>（+1）</>秒",
+                "name": "Shadow Weaver",
+                "EN": "The first hit on each enemy <$ba.root>Binds</> the target for 5 seconds and <$ba.steal>Steals</> 100 <@ba.talpu>(+10)</> ATK (effect expires when enemy is defeated or Ines retreats)",
+                "CN": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其100<@ba.talpu>（+10）</>点攻击力（持续至目标被击倒或伊内丝离场）",
+                "mod": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其120<@ba.talpu>（+10）</>点攻击力（持续至目标被击倒或伊内丝离场）",
                 "upgradeDescription": ""
             }
         ]
     ],
-    "uniequip_002_tinman": [
+    "uniequip_002_ctable": [
         [
             {
-                "name": "Shriveled Soul",
-                "EN": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 20%",
-                "CN": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高20%",
-                "mod": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高23%",
+                "name": "Protean",
+                "EN": "ASPD +12 when not blocking an enemy, ATK +12% when blocking an enemy",
+                "CN": "未阻挡敌人时攻击速度+12，阻挡敌人时攻击力+12%",
+                "mod": "未阻挡敌人时攻击速度+15，阻挡敌人时攻击力+15%",
                 "upgradeDescription": ""
             },
             {
-                "name": "Shriveled Soul",
-                "EN": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 22% <@ba.talpu>(+2%)</>",
-                "CN": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高22%<@ba.talpu>（+2%）</>",
-                "mod": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高25%<@ba.talpu>（+2%）</>",
+                "name": "Protean",
+                "EN": "ASPD +14 <@ba.talpu>(+2)</> when not blocking an enemy, ATK +14% <@ba.talpu>(+2%)</> when blocking an enemy",
+                "CN": "未阻挡敌人时攻击速度+14<@ba.talpu>（+2）</>，阻挡敌人时攻击力+14%<@ba.talpu>（+2%）</>",
+                "mod": "未阻挡敌人时攻击速度+17<@ba.talpu>（+2）</>，阻挡敌人时攻击力+17%<@ba.talpu>（+2%）</>",
                 "upgradeDescription": ""
             }
         ],
         [
             {
-                "name": "Shriveled Soul",
-                "EN": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 20%",
-                "CN": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高20%",
-                "mod": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高25%",
+                "name": "Protean",
+                "EN": "ASPD +12 when not blocking an enemy, ATK +12% when blocking an enemy",
+                "CN": "未阻挡敌人时攻击速度+12，阻挡敌人时攻击力+12%",
+                "mod": "未阻挡敌人时攻击速度+18，阻挡敌人时攻击力+18%",
                 "upgradeDescription": ""
             },
             {
-                "name": "Shriveled Soul",
-                "EN": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 22% <@ba.talpu>(+2%)</>",
-                "CN": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高22%<@ba.talpu>（+2%）</>",
-                "mod": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高27%<@ba.talpu>（+2%）</>",
+                "name": "Protean",
+                "EN": "ASPD +14 <@ba.talpu>(+2)</> when not blocking an enemy, ATK +14% <@ba.talpu>(+2%)</> when blocking an enemy",
+                "CN": "未阻挡敌人时攻击速度+14<@ba.talpu>（+2）</>，阻挡敌人时攻击力+14%<@ba.talpu>（+2%）</>",
+                "mod": "未阻挡敌人时攻击速度+20<@ba.talpu>（+2）</>，阻挡敌人时攻击力+20%<@ba.talpu>（+2%）</>",
                 "upgradeDescription": ""
             }
         ]
     ],
-    "uniequip_002_wulfen": [
+    "uniequip_002_surfer": [
         [
             {
-                "name": "探险家的从容",
-                "CN": "可以使用4<@ba.talpu>（+1）</>个矿石“杀手”（最多拥有4个），矿石“杀手”被部署后准备一段时间可以主动引爆",
-                "mod": "每个矿石“杀手”引爆时范围内的敌人数量大于等于2个时，伤害提升8%",
+                "name": "独自远走",
+                "CN": "部署时，若周围4格没有其他干员，获得2点部署费用",
+                "mod": "部署时，若周围4格没有其他干员，获得2点部署费用，攻击速度+10（持续10秒）",
+                "upgradeDescription": ""
+            },
+            {
+                "name": "独自远走",
+                "CN": "部署时，若周围4格没有其他干员，获得3<@ba.talpu>（+1）</>点部署费用",
+                "mod": "部署时，若周围4格没有其他干员，获得3<@ba.talpu>（+1）</>点部署费用，攻击速度+10（持续10秒）",
                 "upgradeDescription": ""
             }
         ],
         [
             {
-                "name": "探险家的从容",
-                "CN": "可以使用4<@ba.talpu>（+1）</>个矿石“杀手”（最多拥有4个），矿石“杀手”被部署后准备一段时间可以主动引爆",
-                "mod": "每个矿石“杀手”引爆时范围内的敌人数量大于等于2个时，伤害提升12%",
+                "name": "独自远走",
+                "CN": "部署时，若周围4格没有其他干员，获得2点部署费用",
+                "mod": "部署时，若周围4格没有其他干员，获得2点部署费用，攻击速度+15（持续10秒）",
+                "upgradeDescription": ""
+            },
+            {
+                "name": "独自远走",
+                "CN": "部署时，若周围4格没有其他干员，获得3<@ba.talpu>（+1）</>点部署费用",
+                "mod": "部署时，若周围4格没有其他干员，获得3<@ba.talpu>（+1）</>点部署费用，攻击速度+15（持续10秒）",
                 "upgradeDescription": ""
             }
         ]
     ],
-    "uniequip_003_gnosis": [
+    "uniequip_002_alanna": [
         [
             {
-                "name": "Two Paths, One Goal",
-                "EN": "Grants <$ba.buffres>Resist</> to all [Karlan Trade] Operators after Gnosis has been deployed for 10 seconds",
-                "CN": "灵知在场且部署后经过10秒时，使所有【喀兰贸易】干员获得<$ba.buffres>抵抗</>",
-                "mod": "灵知在场且部署后经过10秒时，使所有【喀兰贸易】干员获得<$ba.buffres>抵抗</>，且攻击力+10%",
+                "name": "临时改装",
+                "CN": "携带3个支援装置（最多部署2个），使一名干员攻击敌人时无视其80点防御力（持续30秒），装置效果不叠加",
+                "mod": "携带3个支援装置（最多部署2个），使一名干员攻击敌人时无视其90点防御力（持续30秒），装置效果不叠加",
+                "upgradeDescription": ""
+            },
+            {
+                "name": "临时改装",
+                "CN": "携带3个支援装置（最多部署2个），使一名干员攻击敌人时无视其90<@ba.talpu>（+10）</>点防御力（持续30秒），装置效果不叠加",
+                "mod": "携带3个支援装置（最多部署2个），使一名干员攻击敌人时无视其100<@ba.talpu>（+10）</>点防御力（持续30秒），装置效果不叠加",
                 "upgradeDescription": ""
             }
         ],
         [
             {
-                "name": "Two Paths, One Goal",
-                "EN": "Grants <$ba.buffres>Resist</> to all [Karlan Trade] Operators after Gnosis has been deployed for 10 seconds",
-                "CN": "灵知在场且部署后经过10秒时，使所有【喀兰贸易】干员获得<$ba.buffres>抵抗</>",
-                "mod": "灵知在场且部署后经过10秒时，使所有【喀兰贸易】干员获得<$ba.buffres>抵抗</>，且攻击力+15%",
+                "name": "临时改装",
+                "CN": "携带3个支援装置（最多部署2个），使一名干员攻击敌人时无视其80点防御力（持续30秒），装置效果不叠加",
+                "mod": "携带3个支援装置（最多部署2个），使一名干员攻击敌人时无视其100点防御力（持续30秒），装置效果不叠加",
+                "upgradeDescription": ""
+            },
+            {
+                "name": "临时改装",
+                "CN": "携带3个支援装置（最多部署2个），使一名干员攻击敌人时无视其90<@ba.talpu>（+10）</>点防御力（持续30秒），装置效果不叠加",
+                "mod": "携带3个支援装置（最多部署2个），使一名干员攻击敌人时无视其110<@ba.talpu>（+10）</>点防御力（持续30秒），装置效果不叠加",
                 "upgradeDescription": ""
             }
         ]
     ],
-    "uniequip_003_vigil": [
+    "uniequip_003_logos": [
         [
             {
-                "name": "Wolven Nature",
-                "EN": "Vigil and the Wolfpack's attacks ignore 175 DEF when attacking enemies blocked by the Wolfpack",
-                "CN": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其175防御力",
-                "mod": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其175防御力，并偷取其15点防御力（最高100点）",
+                "name": "Lexical Evolution",
+                "EN": "When attacking a target, there is a 40% chance to deal 60% ATK as Arts damage to a random target in attack range and <$ba.sluggish>Slow</> it for 0.8s.",
+                "CN": "对一个目标发起攻击时，有40%几率额外对攻击范围内一个随机目标造成相当于攻击力60%的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
+                "mod": "对一个目标发起攻击时，有40%几率额外对攻击范围内两个随机目标造成相当于攻击力63%的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
                 "upgradeDescription": ""
             },
             {
-                "name": "Wolven Nature",
-                "EN": "Vigil and the Wolfpack's attacks ignore 200 <@ba.talpu>(+25)</> DEF when attacking enemies blocked by the Wolfpack",
-                "CN": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其200<@ba.talpu>（+25）</>防御力",
-                "mod": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其200<@ba.talpu>（+25）</>防御力，并偷取其15点防御力（最高100点）",
+                "name": "Lexical Evolution",
+                "EN": "When attacking a target, there is a 40% chance to deal 65% <@ba.talpu>(+5%)</> ATK as Arts damage to a random target in attack range and <$ba.sluggish>Slow</> it for 0.8s.",
+                "CN": "对一个目标发起攻击时，有40%几率额外对攻击范围内一个随机目标造成相当于攻击力65%<@ba.talpu>（+5%）</>的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
+                "mod": "对一个目标发起攻击时，有40%几率额外对攻击范围内两个随机目标造成相当于攻击力68%<@ba.talpu>（+5%）</>的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
                 "upgradeDescription": ""
             }
         ],
         [
             {
-                "name": "Wolven Nature",
-                "EN": "Vigil and the Wolfpack's attacks ignore 175 DEF when attacking enemies blocked by the Wolfpack",
-                "CN": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其175防御力",
-                "mod": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其225防御力，并偷取其20点防御力（最高100点）",
+                "name": "Lexical Evolution",
+                "EN": "When attacking a target, there is a 40% chance to deal 60% ATK as Arts damage to a random target in attack range and <$ba.sluggish>Slow</> it for 0.8s.",
+                "CN": "对一个目标发起攻击时，有40%几率额外对攻击范围内一个随机目标造成相当于攻击力60%的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
+                "mod": "对一个目标发起攻击时，有40%几率额外对攻击范围内两个随机目标造成相当于攻击力65%的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
                 "upgradeDescription": ""
             },
             {
-                "name": "Wolven Nature",
-                "EN": "Vigil and the Wolfpack's attacks ignore 200 <@ba.talpu>(+25)</> DEF when attacking enemies blocked by the Wolfpack",
-                "CN": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其200<@ba.talpu>（+25）</>防御力",
-                "mod": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其250<@ba.talpu>（+25）</>防御力，并偷取其20点防御力（最高100点）",
+                "name": "Lexical Evolution",
+                "EN": "When attacking a target, there is a 40% chance to deal 65% <@ba.talpu>(+5%)</> ATK as Arts damage to a random target in attack range and <$ba.sluggish>Slow</> it for 0.8s.",
+                "CN": "对一个目标发起攻击时，有40%几率额外对攻击范围内一个随机目标造成相当于攻击力65%<@ba.talpu>（+5%）</>的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
+                "mod": "对一个目标发起攻击时，有40%几率额外对攻击范围内两个随机目标造成相当于攻击力70%<@ba.talpu>（+5%）</>的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
                 "upgradeDescription": ""
             }
         ]
     ],
-    "uniequip_003_sleach": [
+    "uniequip_003_mudrok": [
         [
             {
-                "name": "Spiritual Influence",
-                "EN": "After deployment, the next Operator has -2 DP Cost",
-                "CN": "部署后，下一名部署的干员费用-2",
-                "mod": "部署后，下一名部署的干员费用-2, 若该干员为地面干员，则部署后获得1点部署费用",
+                "name": "Unshakable Solidarity",
+                "EN": "Takes 30% less damage from Sarkaz enemies",
+                "CN": "受到来自【萨卡兹】敌人的伤害降低30%",
+                "mod": "受到来自【萨卡兹】敌人的伤害降低33%，对非【萨卡兹】敌人造成的伤害提升15%",
                 "upgradeDescription": ""
             }
         ],
         [
             {
-                "name": "Spiritual Influence",
-                "EN": "After deployment, the next Operator has -2 DP Cost",
-                "CN": "部署后，下一名部署的干员费用-2",
-                "mod": "部署后，下一名部署的干员费用-2, 若该干员为地面干员，则部署后获得2点部署费用",
+                "name": "Unshakable Solidarity",
+                "EN": "Takes 30% less damage from Sarkaz enemies",
+                "CN": "受到来自【萨卡兹】敌人的伤害降低30%",
+                "mod": "受到来自【萨卡兹】敌人的伤害降低35%，对非【萨卡兹】敌人造成的伤害提升20%",
                 "upgradeDescription": ""
             }
         ]
     ],
-    "uniequip_003_bgsnow": [
+    "uniequip_002_puzzle": [
         [
             {
-                "name": "Stenographer of Weaknesses",
-                "EN": "Attacks from the 'Typewriter' reduce the target's DEF by 18% for 4 seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to 23%",
-                "CN": "“打字机”的攻击会使命中目标的防御力下降18%，持续4秒；若“打字机”放在鸿雪周围四格则效果提升至23%",
-                "mod": "“打字机”的攻击会使命中目标的防御力下降23%，持续4秒；若“打字机”放在鸿雪周围八格则效果提升至28%",
+                "name": "Sequence",
+                "EN": "ATK increased to 120% and recover 2 additional SP when hitting an enemy with full HP",
+                "CN": "攻击命中生命值为满的敌人时攻击力提升至120%，并额外回复2点技力",
+                "mod": "攻击命中生命值为满的敌人时攻击力提升至128%且使其移动速度下降50%，持续3.5秒，并额外回复2点技力",
                 "upgradeDescription": ""
             },
             {
-                "name": "Stenographer of Weaknesses",
-                "EN": "Attacks from the 'Typewriter' reduce the target's DEF by 20% <@ba.talpu>(+2%)</> for 5 <@ba.talpu>(+1)</> seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to <@ba.talpu>25% (+2%)</>",
-                "CN": "“打字机”的攻击会使命中目标的防御力下降20%<@ba.talpu>（+2%）</>，持续5<@ba.talpu>（+1）</>秒；若“打字机”放在鸿雪周围四格则效果提升至25%<@ba.talpu>（+2%）</>",
-                "mod": "“打字机”的攻击会使命中目标的防御力下降25%<@ba.talpu>（+2%）</>，持续5<@ba.talpu>（+1）</>秒；若“打字机”放在鸿雪周围八格则效果提升至30%<@ba.talpu>（+2%）</>",
+                "name": "Sequence",
+                "EN": "ATK increased to 125% <@ba.talpu>(+5%)</> and recover 2 additional SP when hitting an enemy with full HP",
+                "CN": "攻击命中生命值为满的敌人时攻击力提升至125%<@ba.talpu>（+5%）</>，并额外回复2点技力",
+                "mod": "攻击命中生命值为满的敌人时攻击力提升至133%<@ba.talpu>（+5%）</>且使其移动速度下降50%，持续3.5秒，并额外回复2点技力",
                 "upgradeDescription": ""
             }
         ],
         [
             {
-                "name": "Stenographer of Weaknesses",
-                "EN": "Attacks from the 'Typewriter' reduce the target's DEF by 18% for 4 seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to 23%",
-                "CN": "“打字机”的攻击会使命中目标的防御力下降18%，持续4秒；若“打字机”放在鸿雪周围四格则效果提升至23%",
-                "mod": "“打字机”的攻击会使命中目标的防御力下降28%，持续4秒；若“打字机”放在鸿雪周围八格则效果提升至33%",
+                "name": "Sequence",
+                "EN": "ATK increased to 120% and recover 2 additional SP when hitting an enemy with full HP",
+                "CN": "攻击命中生命值为满的敌人时攻击力提升至120%，并额外回复2点技力",
+                "mod": "攻击命中生命值为满的敌人时攻击力提升至130%且使其移动速度下降50%，持续3.5秒，并额外回复2点技力",
                 "upgradeDescription": ""
             },
             {
-                "name": "Stenographer of Weaknesses",
-                "EN": "Attacks from the 'Typewriter' reduce the target's DEF by 20% <@ba.talpu>(+2%)</> for 5 <@ba.talpu>(+1)</> seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to <@ba.talpu>25% (+2%)</>",
-                "CN": "“打字机”的攻击会使命中目标的防御力下降20%<@ba.talpu>（+2%）</>，持续5<@ba.talpu>（+1）</>秒；若“打字机”放在鸿雪周围四格则效果提升至25%<@ba.talpu>（+2%）</>",
-                "mod": "“打字机”的攻击会使命中目标的防御力下降30%<@ba.talpu>（+2%）</>，持续5<@ba.talpu>（+1）</>秒；若“打字机”放在鸿雪周围八格则效果提升至35%<@ba.talpu>（+2%）</>",
+                "name": "Sequence",
+                "EN": "ATK increased to 125% <@ba.talpu>(+5%)</> and recover 2 additional SP when hitting an enemy with full HP",
+                "CN": "攻击命中生命值为满的敌人时攻击力提升至125%<@ba.talpu>（+5%）</>，并额外回复2点技力",
+                "mod": "攻击命中生命值为满的敌人时攻击力提升至135%<@ba.talpu>（+5%）</>且使其移动速度下降50%，持续3.5秒，并额外回复2点技力",
                 "upgradeDescription": ""
             }
         ]

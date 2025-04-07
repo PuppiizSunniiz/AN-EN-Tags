@@ -1344,7 +1344,8 @@
         "name_tw": "",
         "level": 3,
         "source": {
-            "13-5": "Rare"
+            "13-5": "Rare",
+            "S9-3": "Rare"
         },
         "madeof": {}
     },
@@ -1378,8 +1379,60 @@
         "name_tw": "",
         "level": 3,
         "source": {
-            "13-15": "Rare"
+            "13-15": "Rare",
+            "S9-4": "Rare"
         },
         "madeof": {}
+    },
+    {
+        "id": 79,
+        "itemId": "31093",
+        "IconID": "MTL_SL_JH",
+        "name_cn": "类凝结核",
+        "name_en": "",
+        "name_jp": "",
+        "name_kr": "",
+        "name_tw": "",
+        "level": 3,
+        "source": {
+            "15-9": "Rare"
+        },
+        "madeof": {}
+    },
+    {
+        "id": 80,
+        "itemId": "31094",
+        "IconID": "MTL_SL_QGT",
+        "name_cn": "手性屈光体",
+        "name_en": "",
+        "name_jp": "",
+        "name_kr": "",
+        "name_tw": "",
+        "level": 4,
+        "source": {
+            "15-9": "Very Rare"
+        },
+        "madeof": {
+            "类凝结核": 1,
+            "环烃聚质": 1,
+            "糖组": 1
+        }
+    },
+    {
+        "id": 81,
+        "itemId": "30165",
+        "IconID": "MTL_SL_DYT",
+        "name_cn": "重相位对映体",
+        "name_en": "",
+        "name_jp": "",
+        "name_kr": "",
+        "name_tw": "",
+        "level": 5,
+        "source": {},
+        "madeof": {
+            "手性屈光体": 2,
+            "环烃预制体": 1,
+            "固化纤维板": 1
+        }
     }
 ]

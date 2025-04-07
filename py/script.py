@@ -1,6 +1,8 @@
 import json
 import glob
 import re
+import subprocess
+import os
 
 ################################################################################################################################################################################################################################################
 # JSON
@@ -127,12 +129,15 @@ def script_result(text):
             dict    >   json
     '''
     if isinstance(text,str):
-        with open("py/script.txt","w") as filepath:
+        with open("py/script.txt", "w", encoding = "utf-8") as filepath:
             filepath.write(text)
     elif isinstance(text,dict):
-        with open("py/script.json","w") as filepath:
+        with open("py/script.json", "w") as filepath:
             json.dump(text,filepath,indent = 4, ensure_ascii = False)
-    print("Script Completed")
+    
+    file = f'py/script.{"txt" if isinstance(text,str) else "json"}'
+    print(f'Script Completed -> {file}')
+    subprocess.run(f'code --reuse-window -g "{os.path.abspath(file)}"', shell=True)
 
 def skin_lister() :
     '''
@@ -240,6 +245,35 @@ def boss_stage_regex():
     test = re.search(r'(ro[0-9]{0,2}_._[0-9]{1,2})(_[a-z]{1}|)',stage)
 
     print(test.group(1))
+
+def skin_artist():
+    for skin in DB["json_skin"]["charSkins"].keys():
+        if skin in DB["json_skinEN"]["charSkins"].keys():
+        #print(skin)
+            if DB["json_skin"]["charSkins"][skin]["displaySkin"]["drawerList"]:
+                CN_skin_artist = (" & ").join([x.strip() for x in DB["json_skin"]["charSkins"][skin]["displaySkin"]["drawerList"]])
+                EN_skin_artist = (" & ").join([x.strip() for x in DB["json_skinEN"]["charSkins"][skin]["displaySkin"]["drawerList"]])
+                if CN_skin_artist != EN_skin_artist:
+                    print(f'{skin}\t{CN_skin_artist}\t{EN_skin_artist}')
+
+def va_artist():
+    va = []
+    va_dict = {}
+    
+    for op in DB["json_charword"]["voiceLangDict"].keys():
+        if op in DB["json_charwordEN"]["voiceLangDict"].keys():
+            for lang in DB["json_charword"]["voiceLangDict"][op]["dict"].keys():
+                if lang in DB["json_charwordEN"]["voiceLangDict"][op]["dict"].keys():
+                    VA_CN = DB["json_charword"]["voiceLangDict"][op]["dict"][lang]["cvName"][0].strip()
+                    VA_EN = DB["json_charwordEN"]["voiceLangDict"][op]["dict"][lang]["cvName"][0].strip()
+                    if VA_CN != VA_EN :
+                        va.append(f'{op},{lang},{VA_CN},{VA_EN}')
+                        if VA_CN in va_dict.keys() and va_dict[VA_CN] != VA_EN:
+                            print(f'{op}\t{VA_CN}\t{va_dict[VA_CN]}\t{VA_EN}')
+                        else :
+                            va_dict[VA_CN] = VA_EN
+                    
+    if va : script_result(("\n").join(va))
 
 ################################################################################################################################################################################################################################################
 # DB Keys

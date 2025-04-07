@@ -8352,5 +8352,70 @@
         "hidden": true,
         "globalHidden": true,
         "gamemode": "BASE"
+    },
+    {
+        "id": "char_4179_monstr",
+        "name_cn": "Mon3tr",
+        "name_en": "Mon3tr",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": null,
+        "type": "医疗",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "远程位",
+            "治疗",
+            "输出",
+            "支援"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_4178_alanna",
+        "name_cn": "阿兰娜",
+        "name_en": "Alanna",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": "rim",
+        "groupId": null,
+        "teamId": null,
+        "type": "辅助",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "输出",
+            "支援"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_445_wscoot",
+        "name_cn": "骋风",
+        "name_en": "Windscoot",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": "yan",
+        "groupId": null,
+        "teamId": null,
+        "type": "近卫",
+        "level": 4,
+        "sex": "男",
+        "tags": [
+            "近战位",
+            "爆发"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
     }
 ]

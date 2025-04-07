@@ -1657,7 +1657,7 @@ body {
 }
 
 
-#info-illustrator,[class^="voiceactor-"]{
+[class^="illustrator-"],[class^="voiceactor-"]{
     display: flex;
     margin: 2px;
 }
