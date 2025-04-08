@@ -596,8 +596,8 @@ function enemyDetail(el,level){
                     <th scope="col" style="text-overflow: ellipsis; overflow: hidden;">Attack</th>
                     <th scope="col" style="text-overflow: ellipsis; overflow: hidden;">Defense</th>
                     <th scope="col" style="text-overflow: ellipsis; overflow: hidden;">Resistance</th>
-                    <th scope="col" style="text-overflow: ellipsis; overflow: hidden;">Element Resistance</th>
-                    <th scope="col" style="text-overflow: ellipsis; overflow: hidden;">Elemental Resistance</th>
+                    <th scope="col" style="text-overflow: ellipsis; overflow: hidden;">Elemental Dmg. Res.</th>
+                    <th scope="col" style="text-overflow: ellipsis; overflow: hidden;">Elemental Inj. Res.</th>
                 </tr>
             </thead>
             <tbody>
