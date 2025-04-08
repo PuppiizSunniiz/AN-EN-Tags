@@ -107,7 +107,7 @@
         },
         "ba.dt.element": {
             "termId": "ba.dt.element",
-            "termName": "Elemental Damage",
+            "termName": "Elemental Injury",
             "description": "Includes <$ba.dt.neural>Nervous Impairment</>, <$ba.dt.erosion>Corrosion Damage</>, <$ba.dt.burning>Burn Damage</>, and <$ba.dt.apoptosis>Necrosis Damage</>"
         },
         "ba.overdrive": {
@@ -143,7 +143,7 @@
         "ba.elementfragile": {
             "termId": "ba.elementfragile",
             "termName": "Elemental Fragility",
-            "description": "Amplifies all Elemental damage taken by the corresponding amount (only the strongest effect of this type applies)"
+            "description": "Amplifies all Elemental Damage taken by the corresponding amount (only the strongest effect of this type applies)"
         },
         "ba.dying": {
             "termId": "ba.dying",
@@ -183,7 +183,7 @@
         "ba.epbarrier": {
             "termId": "ba.epbarrier",
             "termName": "Protective Barrier",
-            "description": "Absorbs a certain amount of <$ba.dt.element>Elemental Damage</>."
+            "description": "Absorbs a certain amount of <$ba.dt.element>Elemental Injury</>."
         },
         "ba.tremble": {
             "termId": "ba.tremble",
@@ -193,7 +193,7 @@
         "ba.dt.burning2": {
             "termId": "ba.dt.burning2",
             "termName": "Burn damage - Ally",
-            "description": "Explodes when at max (1000 for Normal and Elite, 2000 for Leaders), dealing 7000 Elemental damage and temporarily inflicting -20 RES. 10s cooldown."
+            "description": "Explodes when at max (1000 for Normal and Elite, 2000 for Leaders), dealing 7000 Elemental Damage and temporarily inflicting -20 RES. 10s cooldown."
         },
         "cc.bd_A_1": {
             "termId": "cc.bd_A_1",

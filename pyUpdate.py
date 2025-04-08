@@ -216,8 +216,6 @@ for new_char_name in NEW_CHARS:
     if Rechecked and new_char_name in char_list:
         update_char_TraitSkillTalent(new_char_name)
 
-
-
 #Update old char localization
 for char_data in json_akhr:
     for lang in [["name_jp",json_charJP],["name_kr",json_charKR]]:

@@ -5,10 +5,20 @@
     - Change Token skin when change operator skin
     - Add Arknight Terra wiki button/link (https://arknights.wiki.gg/wiki/Op_name_go_here/Class-for-amiyi-class-change)
         - button "Wiki pic" and txt "Terra Wiki"
+    - Add alternate site
+        - RIIC -> https://docs.google.com/spreadsheets/d/1zYc2JU46X0XWmV7s1503bN4feRdOMa1eehrTQ2jGaiE
+        - Recruitment ->
+        - Story -> https://akgcc.github.io/cc/story.html
+        - Mod -> https://docs.google.com/spreadsheets/d/1uCACgVpNIvaZdoxtSFtr9UQ-e9tQw06owhH49X5qMKs
+        - Planner -> https://www.krooster.com
+        - Chibi ->
+        - L2D ->
+        - Map -> https://map.ark-nights.com/
     - Add gamemode in Filter
     - tweak token section
-        - add token Talent ??
-        - update token trait/talent/stat when select mod ??
+        - Add trait blackboard
+        - Add token Talent ??
+        - Update token trait/talent/stat when select mod ??
 ### Later
     - add amiya patch to char selector (Browse -Type/All/Filter)
     - add more parameter for fn => onclick="selectOperator('xxx', ...)" to go to amiya patch directly

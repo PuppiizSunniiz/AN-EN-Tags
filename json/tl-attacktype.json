@@ -237,11 +237,11 @@
             "color": "extra"
         },
         "恢复友方单位生命，并回复相当于攻击力50%的<@ba.dt.element>元素损伤</>（可以回复未受伤友方单位的<@ba.dt.element>元素损伤</>）": {
-            "en": "Restores the HP of allied units and recovers <@ba.dt.element>Elemental Damage</> by 50% of ATK (can recover <@ba.dt.element>Elemental Damage</> of unhurt allied units)",
+            "en": "Restores the HP of allied units and recovers <@ba.dt.element>Elemental Injury</> by 50% of ATK (can recover <@ba.dt.element>Elemental Injury</> of unhurt allied units)",
             "color": "heal"
         },
         "恢复友方单位生命，并回复相当于攻击力<@ba.kw>{ep_heal_ratio:0%}</>的<$ba.dt.element>元素损伤</>（可以回复未受伤友方单位的<$ba.dt.element>元素损伤</>）": {
-            "en": "Restores the HP of allied units and recovers <$ba.dt.element>Elemental Damage</> by <@ba.kw>{ep_heal_ratio:0%}</> of ATK (can recover <$ba.dt.element>Elemental Damage</> of unhurt allied units)",
+            "en": "Restores the HP of allied units and recovers <$ba.dt.element>Elemental Injury</> by <@ba.kw>{ep_heal_ratio:0%}</> of ATK (can recover <$ba.dt.element>Elemental Injury</> of unhurt allied units)",
             "color": "heal"
         },
         "攻击越远的敌人造成的伤害越高（最高提升<@ba.kw>{damage_scale:0%}</>）": {
@@ -533,7 +533,7 @@
             "color": "extra"
         },
         "攻击造成<@ba.kw>法术伤害</>，可以造成<@ba.kw>元素损伤</>": {
-            "en": "Attacks deal <@ba.kw>Arts damage</>, and can inflict <@ba.kw>Elemental Damage</>",
+            "en": "Attacks deal <@ba.kw>Arts damage</>, and can inflict <@ba.kw>Elemental Injury</>",
             "color": "magic"
         },
         "攻击时需要消耗子弹且攻击力提升至<@ba.kw>120%</>，不攻击时会缓慢地装填子弹（最多8发）": {
@@ -553,7 +553,7 @@
             "color": "physical"
         },
         "攻击造成<@ba.kw>法术伤害</>，可以造成<@ba.kw>元素伤害</>": {
-            "en": "Attacks deal <@ba.kw>Arts damage</>, and can inflict <@ba.kw>Elemental damage</>",
+            "en": "Attacks deal <@ba.kw>Arts damage</>, and can inflict <@ba.kw>Elemental Damage</>",
             "color": "magic"
         },
         "持有<@ba.kw>回旋投射物</>时才能够攻击（投射物需要时间回收）": {
@@ -628,7 +628,7 @@
             "note": "Tactician Mod (TAC-Y)"
         },
         "攻击造成<@ba.kw>法术伤害</>，可以造成<@ba.kw>元素损伤</>，且不受<@ba.kw>部署数量</>限制，但再部署时间极长": {
-            "en": "Attacks deal <@ba.kw>Arts damage</> and can inflict <@ba.kw>Elemental Damage</>. Not affected by <@ba.kw>Deployment Limit</>, but has a long Redeployment Time.",
+            "en": "Attacks deal <@ba.kw>Arts damage</> and can inflict <@ba.kw>Elemental Injury</>. Not affected by <@ba.kw>Deployment Limit</>, but has a long Redeployment Time.",
             "color": "magic",
             "note": "PhonoR-0 's Trait"
         },
@@ -738,7 +738,7 @@
             "note": "new mods for-y Fortress"
         },
         "能够阻挡三个敌人，可以造成元素损伤": {
-            "en": "Can block 3 enemies\nCan deal <@ba.kw>Elemental damage</>",
+            "en": "Can block 3 enemies\nCan deal <@ba.kw>Elemental Injury</>",
             "color": "extra",
             "note": "new Ops primprotector/Primal Protector Archetype trait"
         },
@@ -748,7 +748,7 @@
             "note": "new Ops skywalker/Skyranger Archetype trait"
         },
         "对精英和领袖敌人造成的元素损伤提升<@ba.kw>18%</>": {
-            "en": "Increase Elemental damage dealt to Elite/Boss enemies by 18%",
+            "en": "Increase Elemental Injury dealt to Elite/Boss enemies by <@ba.kw>18%</>",
             "color": "extra",
             "note": "new mods rit-x"
         },
@@ -784,7 +784,7 @@
             "note": "new mods aft-x"
         },
         "攻击<$ba.dt.burning2>灼燃损伤</>爆发期间的目标时额外造成攻击力<@ba.kw>{ep_damage_ratio:0%}</>的元素伤害": {
-            "en" : "When target is under the burst effect of <$ba.dt.burning2>Burn Damage</>, deal an additional <@ba.kw>{ep_damage_ratio:0%}</> ATK as Elemental damage",
+            "en" : "When target is under the burst effect of <$ba.dt.burning2>Burn Damage</>, deal an additional <@ba.kw>{ep_damage_ratio:0%}</> ATK as Elemental Damage",
             "color": "magic",
             "name": "Viviana",
             "code": "uniequip_002_vvana",
