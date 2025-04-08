@@ -439,7 +439,7 @@ function selectEnemy(el){
         tlability.forEach(ability => {
             if      (ability.textFormat == "TITLE")     enemiesabilities.push(`<span style="font-size:larger;color: mediumspringgreen;">${ChangeDescriptionColor(ability.text)}</span>`)
             else if (ability.textFormat == "NORMAL")    enemiesabilities.push(ability.text == "-" ? "-" : (`&mdash; ${ChangeDescriptionColor(ability.text)}`))
-            else if (ability.textFormat == "SILENCE")   enemiesabilities.push(`<img style="width:16px" src="extra/40px-Silence_effect.webp" title="Silenceable">${ChangeDescriptionColor(ability.text)}`)
+            else if (ability.textFormat == "SILENCE")   enemiesabilities.push(`<img style="width:16px;filter: contrast(190%) drop-shadow(0 0 4px rgb(255, 255, 255));" src="extra/40px-Silence_effect.webp" title="Silenceable"> ${ChangeDescriptionColor(ability.text)}`)
         })
     }
     
@@ -593,11 +593,11 @@ function enemyDetail(el,level){
             <thead class="thead-light">
                 <tr style="background-color: #dbdbdb;">
                     <th scope="col" style="text-overflow: ellipsis; overflow: hidden;">HP</th>
-                    <th scope="col" style="text-overflow: ellipsis; overflow: hidden;">Attack</th>
-                    <th scope="col" style="text-overflow: ellipsis; overflow: hidden;">Defense</th>
-                    <th scope="col" style="text-overflow: ellipsis; overflow: hidden;">Resistance</th>
-                    <th scope="col" style="text-overflow: ellipsis; overflow: hidden;">Elemental Dmg. Res.</th>
-                    <th scope="col" style="text-overflow: ellipsis; overflow: hidden;">Elemental Inj. Res.</th>
+                    <th scope="col" style="text-overflow: ellipsis; overflow: hidden;">ATK</th>
+                    <th scope="col" style="text-overflow: ellipsis; overflow: hidden;">DEF</th>
+                    <th scope="col" style="text-overflow: ellipsis; overflow: hidden;">RES</th>
+                    <th scope="col" style="text-overflow: ellipsis; overflow: hidden;">Elemental RES</th>
+                    <th scope="col" style="text-overflow: ellipsis; overflow: hidden;">Effect Resistance</th>
                 </tr>
             </thead>
             <tbody>
@@ -675,7 +675,7 @@ function enemyDetail(el,level){
 function ChangeDescriptionColor(desc){
     if(!desc) return desc
 
-    desc = desc.replace(/\<([A-z\"\'].+?)\>/g,`<span style="color:deeppink">$1</span>`) // Summon/Related enemy
+    desc = desc.replace(/\<([A-z \"\'].+?)\>/g,`<span style="color:deeppink">&lt;$1&gt;</span>`) // Summon/Related enemy
     desc = desc.replace(/([\[【].+?[\]】])/g,`<span style="color:yellow">$1</span>`)    // Ability name
     desc = ChangeDesc1(desc)
     desc = ChangeDesc2(desc)
