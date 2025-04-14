@@ -5557,7 +5557,7 @@
             "levelId": "Obt/Main/level_main_15-10",
             "zoneId": "EP15 : Standard Environment",
             "code": "15-11",
-            "name": "目击众神死亡的荒原",
+            "name": "一段长梦将醒",
             "Event": "act2mainss_zone1"
         },
         "main_15-10#s": {
@@ -5565,7 +5565,7 @@
             "levelId": "Obt/Main/level_main_15-10",
             "zoneId": "EP15 : Adverse Environment",
             "code": "15-11",
-            "name": "目击众神死亡的荒原",
+            "name": "一段长梦将醒",
             "Event": "act2mainss_zone1"
         },
         "main_15-11": {
@@ -5573,7 +5573,7 @@
             "levelId": "Obt/Main/level_main_15-11",
             "zoneId": "EP15 : Standard Environment",
             "code": "15-12",
-            "name": "成为你的眼睛",
+            "name": "目击众神死亡的荒原",
             "Event": "act2mainss_zone1"
         },
         "main_15-11#s": {
@@ -5581,7 +5581,7 @@
             "levelId": "Obt/Main/level_main_15-11",
             "zoneId": "EP15 : Adverse Environment",
             "code": "15-12",
-            "name": "成为你的眼睛",
+            "name": "目击众神死亡的荒原",
             "Event": "act2mainss_zone1"
         },
         "main_15-12": {
@@ -5589,7 +5589,7 @@
             "levelId": "Obt/Main/level_main_15-12",
             "zoneId": "EP15 : Standard Environment",
             "code": "15-13",
-            "name": "在尘或血中",
+            "name": "成为你的眼睛",
             "Event": "act2mainss_zone1"
         },
         "main_15-12#s": {
@@ -5597,7 +5597,7 @@
             "levelId": "Obt/Main/level_main_15-12",
             "zoneId": "EP15 : Adverse Environment",
             "code": "15-13",
-            "name": "在尘或血中",
+            "name": "成为你的眼睛",
             "Event": "act2mainss_zone1"
         },
         "main_15-13": {
@@ -5605,7 +5605,7 @@
             "levelId": "Obt/Main/level_main_15-13",
             "zoneId": "EP15 : Standard Environment",
             "code": "15-14",
-            "name": "拒绝哀悼",
+            "name": "在尘或血中",
             "Event": "act2mainss_zone1"
         },
         "main_15-13#s": {
@@ -5613,7 +5613,7 @@
             "levelId": "Obt/Main/level_main_15-13",
             "zoneId": "EP15 : Adverse Environment",
             "code": "15-14",
-            "name": "拒绝哀悼",
+            "name": "在尘或血中",
             "Event": "act2mainss_zone1"
         },
         "main_15-14": {
@@ -5621,7 +5621,7 @@
             "levelId": "Obt/Main/level_main_15-14",
             "zoneId": "EP15 : Standard Environment",
             "code": "15-15",
-            "name": "永恒与此刻的误差",
+            "name": "拒绝哀悼",
             "Event": "act2mainss_zone1"
         },
         "main_15-14#s": {
@@ -5629,7 +5629,7 @@
             "levelId": "Obt/Main/level_main_15-14",
             "zoneId": "EP15 : Adverse Environment",
             "code": "15-15",
-            "name": "永恒与此刻的误差",
+            "name": "拒绝哀悼",
             "Event": "act2mainss_zone1"
         },
         "main_15-15": {
@@ -5686,6 +5686,38 @@
             "zoneId": "EP15 : Adverse Environment",
             "code": "15-20",
             "name": "得以重回",
+            "Event": "act2mainss_zone1"
+        },
+        "hard_15-01": {
+            "stageId": "hard_15-01",
+            "levelId": "Obt/Hard/level_hard_15-01",
+            "zoneId": "EP15 : Adverse Environment",
+            "code": "H15-1",
+            "name": "机密预案-1",
+            "Event": "act2mainss_zone1"
+        },
+        "hard_15-02": {
+            "stageId": "hard_15-02",
+            "levelId": "Obt/Hard/level_hard_15-02",
+            "zoneId": "EP15 : Adverse Environment",
+            "code": "H15-2",
+            "name": "机密预案-2",
+            "Event": "act2mainss_zone1"
+        },
+        "hard_15-03": {
+            "stageId": "hard_15-03",
+            "levelId": "Obt/Hard/level_hard_15-03",
+            "zoneId": "EP15 : Adverse Environment",
+            "code": "H15-3",
+            "name": "机密预案-3",
+            "Event": "act2mainss_zone1"
+        },
+        "hard_15-04": {
+            "stageId": "hard_15-04",
+            "levelId": "Obt/Hard/level_hard_15-04",
+            "zoneId": "EP15 : Adverse Environment",
+            "code": "H15-4",
+            "name": "机密预案-4",
             "Event": "act2mainss_zone1"
         },
         "act1multi_tr01": {
@@ -19432,6 +19464,54 @@
             "name": "“音乐之心”",
             "Event": "tower_n_17"
         },
+        "lt_18_01": {
+            "stageId": "lt_18_01",
+            "levelId": "Obt/Legion/LT18/level_lt18_01",
+            "zoneId": "tower_n_18",
+            "code": "LT-1",
+            "name": "巷道里",
+            "Event": "tower_n_18"
+        },
+        "lt_18_02": {
+            "stageId": "lt_18_02",
+            "levelId": "Obt/Legion/LT18/level_lt18_02",
+            "zoneId": "tower_n_18",
+            "code": "LT-2",
+            "name": "楼台边",
+            "Event": "tower_n_18"
+        },
+        "lt_18_03": {
+            "stageId": "lt_18_03",
+            "levelId": "Obt/Legion/LT18/level_lt18_03",
+            "zoneId": "tower_n_18",
+            "code": "LT-3",
+            "name": "墓地旁",
+            "Event": "tower_n_18"
+        },
+        "lt_18_04": {
+            "stageId": "lt_18_04",
+            "levelId": "Obt/Legion/LT18/level_lt18_04",
+            "zoneId": "tower_n_18",
+            "code": "LT-4",
+            "name": "舞台上",
+            "Event": "tower_n_18"
+        },
+        "lt_18_05": {
+            "stageId": "lt_18_05",
+            "levelId": "Obt/Legion/LT18/level_lt18_05",
+            "zoneId": "tower_n_18",
+            "code": "LT-5",
+            "name": "城门下",
+            "Event": "tower_n_18"
+        },
+        "lt_18_06": {
+            "stageId": "lt_18_06",
+            "levelId": "Obt/Legion/LT18/level_lt18_06",
+            "zoneId": "tower_n_18",
+            "code": "LT-6",
+            "name": "天地间",
+            "Event": "tower_n_18"
+        },
         "lt_01_01": {
             "stageId": "lt_01_01",
             "levelId": "Obt/Legion/LT01/level_lt01_01",
@@ -25646,7 +25726,11 @@
             "main_15-14#s",
             "main_15-15#s",
             "main_15-16#s",
-            "main_15-18#s"
+            "main_15-18#s",
+            "hard_15-01",
+            "hard_15-02",
+            "hard_15-03",
+            "hard_15-04"
         ],
         "EP15 : Training": [
             "tr_26"
@@ -27735,6 +27819,14 @@
             "lt_17_05",
             "lt_17_06"
         ],
+        "tower_n_18": [
+            "lt_18_01",
+            "lt_18_02",
+            "lt_18_03",
+            "lt_18_04",
+            "lt_18_05",
+            "lt_18_06"
+        ],
         "tower_n_01": [
             "lt_01_01",
             "lt_01_02",
@@ -29201,6 +29293,9 @@
         ],
         "tower_n_17": [
             "tower_n_17"
+        ],
+        "tower_n_18": [
+            "tower_n_18"
         ],
         "tower_n_01": [
             "tower_n_01"
@@ -51461,6 +51556,11 @@
                     "tower_n_10": [
                         "lt_10_04"
                     ]
+                },
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_03"
+                    ]
                 }
             },
             "cc": {
@@ -54860,7 +54960,11 @@
                         "main_15-18"
                     ],
                     "EP15 : Adverse Environment": [
-                        "main_15-18#s"
+                        "main_15-18#s",
+                        "hard_15-01",
+                        "hard_15-02",
+                        "hard_15-03",
+                        "hard_15-04"
                     ]
                 }
             }
@@ -54891,7 +54995,10 @@
                         "main_15-18"
                     ],
                     "EP15 : Adverse Environment": [
-                        "main_15-18#s"
+                        "main_15-18#s",
+                        "hard_15-01",
+                        "hard_15-02",
+                        "hard_15-04"
                     ]
                 }
             }
@@ -55002,7 +55109,11 @@
                         "main_15-14#s",
                         "main_15-15#s",
                         "main_15-16#s",
-                        "main_15-18#s"
+                        "main_15-18#s",
+                        "hard_15-01",
+                        "hard_15-02",
+                        "hard_15-03",
+                        "hard_15-04"
                     ]
                 }
             }
@@ -55033,7 +55144,10 @@
                         "main_15-11#s",
                         "main_15-12#s",
                         "main_15-15#s",
-                        "main_15-18#s"
+                        "main_15-18#s",
+                        "hard_15-01",
+                        "hard_15-02",
+                        "hard_15-04"
                     ]
                 }
             }
@@ -55061,7 +55175,9 @@
                         "main_15-13#s",
                         "main_15-15#s",
                         "main_15-16#s",
-                        "main_15-18#s"
+                        "main_15-18#s",
+                        "hard_15-03",
+                        "hard_15-04"
                     ]
                 }
             }
@@ -55124,7 +55240,11 @@
                         "main_15-14#s",
                         "main_15-15#s",
                         "main_15-16#s",
-                        "main_15-18#s"
+                        "main_15-18#s",
+                        "hard_15-01",
+                        "hard_15-02",
+                        "hard_15-03",
+                        "hard_15-04"
                     ]
                 }
             }
@@ -55177,7 +55297,9 @@
                         "main_15-12#s",
                         "main_15-14#s",
                         "main_15-16#s",
-                        "main_15-18#s"
+                        "main_15-18#s",
+                        "hard_15-02",
+                        "hard_15-04"
                     ]
                 }
             }
@@ -55216,7 +55338,9 @@
                         "main_15-14#s",
                         "main_15-15#s",
                         "main_15-16#s",
-                        "main_15-18#s"
+                        "main_15-18#s",
+                        "hard_15-03",
+                        "hard_15-04"
                     ]
                 }
             }
@@ -55244,7 +55368,8 @@
                         "main_15-13"
                     ],
                     "EP15 : Adverse Environment": [
-                        "main_15-13#s"
+                        "main_15-13#s",
+                        "hard_15-04"
                     ]
                 }
             }
@@ -55256,7 +55381,10 @@
                         "main_15-16"
                     ],
                     "EP15 : Adverse Environment": [
-                        "main_15-16#s"
+                        "main_15-16#s",
+                        "hard_15-01",
+                        "hard_15-02",
+                        "hard_15-04"
                     ]
                 }
             }
@@ -55268,7 +55396,10 @@
                         "main_15-16"
                     ],
                     "EP15 : Adverse Environment": [
-                        "main_15-16#s"
+                        "main_15-16#s",
+                        "hard_15-01",
+                        "hard_15-03",
+                        "hard_15-04"
                     ]
                 }
             }
@@ -55280,7 +55411,8 @@
                         "main_15-18"
                     ],
                     "EP15 : Adverse Environment": [
-                        "main_15-18#s"
+                        "main_15-18#s",
+                        "hard_15-04"
                     ]
                 }
             }
@@ -55292,7 +55424,8 @@
                         "main_15-18"
                     ],
                     "EP15 : Adverse Environment": [
-                        "main_15-18#s"
+                        "main_15-18#s",
+                        "hard_15-04"
                     ]
                 }
             }
@@ -58748,6 +58881,14 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_05",
+                        "lt_18_06"
+                    ]
+                }
+            },
             "is": {
                 "IS#4": {
                     "IS#4 Floor 5": [
@@ -58814,6 +58955,15 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_03",
+                        "lt_18_05",
+                        "lt_18_06"
+                    ]
+                }
+            },
             "is": {
                 "IS#3": {
                     "IS#3 Floor 5": [
@@ -58856,6 +59006,11 @@
                 "tower_n_10": {
                     "tower_n_10": [
                         "lt_10_04"
+                    ]
+                },
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_03"
                     ]
                 }
             },
@@ -59705,6 +59860,13 @@
                         "camp_r_11"
                     ]
                 }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_04"
+                    ]
+                }
             }
         },
         "enemy_1208_msfji": {
@@ -59747,6 +59909,13 @@
                 "camp_r_11": {
                     "camp_r_11": [
                         "camp_r_11"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_04"
                     ]
                 }
             }
@@ -61390,6 +61559,11 @@
                     "tower_n_07": [
                         "lt_07_05"
                     ]
+                },
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_03"
+                    ]
                 }
             },
             "is": {
@@ -61466,6 +61640,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_03"
+                    ]
+                }
+            },
             "ra": {
                 "RA#1": {
                     "RA#1 Field : Battle": [
@@ -61503,6 +61684,11 @@
                 }
             },
             "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_03"
+                    ]
+                },
                 "tower_n_01": {
                     "tower_n_01": [
                         "lt_01_05"
@@ -61801,6 +61987,13 @@
                 }
             },
             "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_03",
+                        "lt_18_03",
+                        "lt_18_04"
+                    ]
+                },
                 "tower_n_01": {
                     "tower_n_01": [
                         "lt_01_05"
@@ -61897,6 +62090,11 @@
                 "tower_n_07": {
                     "tower_n_07": [
                         "lt_07_05"
+                    ]
+                },
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_03"
                     ]
                 },
                 "tower_n_01": {
@@ -68071,6 +68269,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_06"
+                    ]
+                }
+            },
             "is": {
                 "IS#5": {
                     "IS#5 Floor 7": [
@@ -68110,6 +68315,13 @@
                 "camp_r_11": {
                     "camp_r_11": [
                         "camp_r_11"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_06"
                     ]
                 }
             },
@@ -68163,6 +68375,15 @@
                         "camp_r_11"
                     ]
                 }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_04",
+                        "lt_18_05",
+                        "lt_18_06"
+                    ]
+                }
             }
         },
         "enemy_1198_msfshu_2": {
@@ -68207,6 +68428,15 @@
                         "camp_r_11"
                     ]
                 }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_04",
+                        "lt_18_05",
+                        "lt_18_06"
+                    ]
+                }
             }
         },
         "enemy_1201_sfzhi_2": {
@@ -68249,6 +68479,13 @@
                 "camp_r_11": {
                     "camp_r_11": [
                         "camp_r_11"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_05"
                     ]
                 }
             },
@@ -68300,6 +68537,13 @@
                 "camp_r_11": {
                     "camp_r_11": [
                         "camp_r_11"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_05"
                     ]
                 }
             },
@@ -68465,6 +68709,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_04"
+                    ]
+                }
+            },
             "cc": {
                 "CC#09": {
                     "CC#09": [
@@ -68526,6 +68777,13 @@
                 "camp_r_11": {
                     "camp_r_11": [
                         "camp_r_11"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_04"
                     ]
                 }
             },
@@ -69436,6 +69694,14 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_05",
+                        "lt_18_06"
+                    ]
+                }
+            },
             "is": {
                 "IS#5": {
                     "IS#5 Floor 7": [
@@ -69477,6 +69743,14 @@
                 "camp_r_11": {
                     "camp_r_11": [
                         "camp_r_11"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_05",
+                        "lt_18_06"
                     ]
                 }
             },
@@ -73714,6 +73988,13 @@
                         "camp_r_11"
                     ]
                 }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_02"
+                    ]
+                }
             }
         },
         "enemy_1200_msfjin": {
@@ -73747,6 +74028,13 @@
                 "camp_r_11": {
                     "camp_r_11": [
                         "camp_r_11"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_02"
                     ]
                 }
             },
@@ -74583,6 +74871,14 @@
                         "act16d5_09",
                         "act16d5_10",
                         "act16d5_10"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_01",
+                        "lt_18_02"
                     ]
                 }
             },
@@ -75425,6 +75721,15 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_02",
+                        "lt_18_04",
+                        "lt_18_06"
+                    ]
+                }
+            },
             "is": {
                 "IS#5": {
                     "IS#5 Floor 7": [
@@ -75461,6 +75766,15 @@
                 "camp_r_11": {
                     "camp_r_11": [
                         "camp_r_11"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_02",
+                        "lt_18_04",
+                        "lt_18_06"
                     ]
                 }
             },
@@ -78493,6 +78807,16 @@
                         "act16d5_ex07#f#",
                         "act16d5_ex08",
                         "act16d5_ex08#f#"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_02",
+                        "lt_18_04",
+                        "lt_18_05",
+                        "lt_18_06"
                     ]
                 }
             },
@@ -82100,6 +82424,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_01"
+                    ]
+                }
+            },
             "cc": {
                 "CC#09": {
                     "CC#09": [
@@ -82163,6 +82494,14 @@
                         "camp_r_11"
                     ]
                 }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_01",
+                        "lt_18_02"
+                    ]
+                }
             }
         },
         "enemy_1198_msfshu": {
@@ -82203,6 +82542,14 @@
                 "camp_r_11": {
                     "camp_r_11": [
                         "camp_r_11"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_01",
+                        "lt_18_02"
                     ]
                 }
             }
@@ -82250,6 +82597,13 @@
                 "camp_r_11": {
                     "camp_r_11": [
                         "camp_r_11"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_01"
                     ]
                 }
             },
@@ -82665,6 +83019,13 @@
                         "act16d5_04",
                         "act16d5_04",
                         "act16d5_08"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_02"
                     ]
                 }
             }
@@ -86041,6 +86402,13 @@
                         "camp_r_11"
                     ]
                 }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_05"
+                    ]
+                }
             }
         },
         "enemy_1202_msfzhi": {
@@ -86064,6 +86432,13 @@
                 "camp_r_11": {
                     "camp_r_11": [
                         "camp_r_11"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_05"
                     ]
                 }
             }
@@ -89415,6 +89790,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_05"
+                    ]
+                }
+            },
             "cc": {
                 "CC#09": {
                     "CC#09": [
@@ -89450,6 +89832,13 @@
                 "camp_r_11": {
                     "camp_r_11": [
                         "camp_r_11"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_05"
                     ]
                 }
             },
@@ -90263,6 +90652,13 @@
                 "camp_r_06": {
                     "camp_r_06": [
                         "camp_r_06"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_04"
                     ]
                 }
             },
@@ -91707,6 +92103,33 @@
                 "tower_n_17": {
                     "tower_n_17": [
                         "lt_17_06"
+                    ]
+                }
+            }
+        },
+        "enemy_6029_solzac": {
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_06"
+                    ]
+                }
+            }
+        },
+        "enemy_6030_frgzac": {
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_06"
+                    ]
+                }
+            }
+        },
+        "enemy_6031_visfrg": {
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_06"
                     ]
                 }
             }

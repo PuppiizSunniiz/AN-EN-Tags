@@ -63,10 +63,10 @@ json_dict           =   json_load("py/dict.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS = ["Mon3tr","Alanna","Windscoot"] # "", 
+NEW_CHARS = [] # "", 
 
 #["ItemID#1","ItemID#2", ...]
-NEW_MATS = ["31093","31094","30165"] # "",
+NEW_MATS = [] # "",
 
 Rechecked = True # True False
 

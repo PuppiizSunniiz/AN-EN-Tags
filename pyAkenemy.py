@@ -431,7 +431,7 @@ def main_zone(stage_id : str,event_id : str) -> str :
     elif stage_id.find("tough") != -1 or stage_id.find("#s") != -1:
         return f'{zone_prefix}Adverse Environment'
     elif stage_id.find("hard") != -1:
-        if int(event_id.split("_")[-1]) > 9:
+        if re.search(r'act[0-9]{1,2}mainss',event_id) or int(event_id.split("_")[-1]) > 9:
             return f'{zone_prefix}Adverse Environment'
         elif int(event_id.split("_")[-1]) == 9:
             return f'{zone_prefix}Standard Environment'
