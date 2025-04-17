@@ -2032,9 +2032,9 @@ button[id^='class-change-']:hover #class-icon{
     display:flex;
     background:#333;
     padding:6px 5px 6px 5px;
-    justify-content:center;
     position:relative;
-    height:500px;
+    max-width:500px;
+    margin: 0 auto;
 }
 
 /* #rightmenu{
