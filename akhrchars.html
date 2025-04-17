@@ -73,7 +73,7 @@
                     <h6 class='modal-title' style="color:white;">Select Operator</h6>
                     <button type='button' style='color:white;' class='close' data-dismiss='modal'>&times;</button>
                 </div> -->
-                <div class='modal-body'>
+                <div class='modal-body' style="max-height: 90vh;overflow-y: auto;overflow-x:hidden">
                     <div style="color:white;text-align: center;">Select Operator<button type='button' style='color:white;right: 10px;top:5px;position: absolute;' class='close' data-dismiss='modal'>&times;</button></div>
                     <div class='filter-category'>
                         <div id="filter-name-class" class="btn filter-name filter-exclusive" onclick="toggleExclusive(this)">Class</div>
@@ -89,8 +89,8 @@
                         </div>
                         <div class="btn btn-danger btn-clear" id="clear-filter-class" onclick="clearFilter('.op-class, .op-branch')" clear-data=".op-class, .op-branch">Clear</div>
                     </div>
-                    <div class='filter-category'style="height:44px">
-                        <div id="filter-name-branch" class="btn filter-name filter-exclusive" onclick="toggleExclusive(this)">Subclass</div>
+                    <div class='filter-category'style="min-height:44px">
+                        <div id="filter-name-branch" class="btn filter-name filter-exclusive" onclick="toggleExclusive(this)">Sub class</div>
                         <div class='filter-category-content' id="branch-container">
                         </div>
                         <div class="btn btn-danger btn-clear" id="clear-filter-branch" onclick="clearFilter('.op-branch')" clear-data=".op-branch">Clear</div>

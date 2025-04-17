@@ -175,11 +175,9 @@
         $("#group").html(teamHTML[1])
         $("#team").html(teamHTML[2])
 
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
+        tooltip_activate()
         $('#to-tag').click(function(){      // When arrow is clicked
-            $('body,html').animate({
+            $('body, html, .modal-body').animate({
                 scrollTop : 0                       // Scroll to top of body
             }, 500);
         });
@@ -609,6 +607,28 @@
             $("#navitemLanguage").addClass('ak-disable2');
         });
     });
+    
+    function tooltip_activate(){
+        $('[data-toggle="tooltip"]').tooltip({
+        trigger: 'hover click', // allow both hover and click
+        html: true
+    })}
+    // Resize-height when rotate
+    $(window).on("resize orientationchange", function () {
+        $(".collapsible-open").each(function () {
+            let target = $(`#${$(this).attr("target")}`);
+            let newHeight = target[0].scrollHeight;
+            target.css("max-height", `${newHeight}px`);
+        });
+    });
+    // Close tooltip
+    $(document).on('click touchstart', function (e) {
+        $('[data-toggle="tooltip"]').each(function () {
+            if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.tooltip').has(e.target).length === 0) {
+                $(this).tooltip('hide');
+            }
+        });
+    });
 
     const root = document.documentElement;
 
@@ -940,7 +960,7 @@
 
     function getBranchclassHtml(btn) {
         function branchclassHtml(data_id, data_name) {
-            return `<div class="btn btn-secondary btn-sm op-branch filter-btn-s tooltip2" onclick="toggleBtn(this)" section="branch" data-id="${data_id}">
+            return `<div class="btn-secondary op-branch filter-img tooltip2" onclick="toggleBtn(this)" section="branch" data-id="${data_id}">
             <img src="${`https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/subclass/sub_${data_id}_icon.png`}" style="width:33px;height:33px;object-fit: contain;display: inline-block;" alt="${data_name}">
             <span class="tooltiptext tooltipstyle1 nohover">${data_name}</span>
             </div>`
@@ -2346,7 +2366,7 @@
 
 
             }
-            $('[data-toggle="tooltip"]').tooltip()
+            tooltip_activate()
         }
     }
 
@@ -3110,7 +3130,7 @@
             $("#token-contents .token-details .stats").html(`<div class='stats-l' style="min-width:unset;width:40px;background:#3D3D3D"><img style='max-height:30px;margin:-11px -10px -9px -10px' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/${currelite}-s.png'></div><div class='stats-r' style="min-width:unset">Lv <span id="summon-level">${currlevel}</span></div>`)
         }
 
-        $('[data-toggle="tooltip"]').tooltip()
+        tooltip_activate()
     }
 
     function UpdateTokenSkill(token=globaltoken,skill=globalskill){
@@ -4374,7 +4394,7 @@
             $("#op-riicdetail-desc").html(formattedesc)
             $("#op-riicdetail").slideDown(200)
         }
-        $('[data-toggle="tooltip"]').tooltip()
+        tooltip_activate()
     }
     function GetTalent(id,opdataFull){
         // var combTalents = []

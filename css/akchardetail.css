@@ -2,6 +2,12 @@ body {
     overflow: unset;
 }
 
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
 .clickthrough {
     pointer-events: none;
 }
@@ -1709,6 +1715,7 @@ body {
     padding: 6px 4px;
     font-size: 14px;
     align-items: center;
+    text-align: left;
 }
 .btn-clear {
     display: inline-flex;
@@ -1741,6 +1748,7 @@ body {
     flex-wrap: wrap;
     width: 330px;
     text-align: center;
+    align-content: center;
 }
 
 .filter-category-faction{
@@ -1763,6 +1771,11 @@ body {
 }
 .op-class{
     display: inline-flex;
+}
+.op-branch{
+    width: 40px;
+    height: 40px;
+    align-content: center;
 }
 .btn-sort {
     display: flex;

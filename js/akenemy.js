@@ -112,7 +112,10 @@ $(document).ready(function(){
     });
 
     $('.dropdown-trigger').dropdown();
-    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="tooltip"]').tooltip({
+        trigger: 'hover click', // allow both hover and click
+        html: true
+    });
 
     if(!localStorage.getItem('gameRegion') || !localStorage.getItem('webLang')){
         console.log("game region undefined");
@@ -140,6 +143,14 @@ $.getScript("js/arrive.min.js", function(){
     $(document).arrive("#regionDropdown", function(){
         $("#navitemRegion").addClass('ak-disable2');
         $("#navitemLanguage").addClass('ak-disable2');
+    });
+});
+// Close tooltip
+$(document).on('click touchstart', function (e) {
+    $('[data-toggle="tooltip"]').each(function () {
+        if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.tooltip').has(e.target).length === 0) {
+            $(this).tooltip('hide');
+        }
     });
 });
 $('#Chibi-download').click(function(event){
@@ -565,7 +576,10 @@ function selectEnemy(el){
     
     $('#enemyDetail').html(currHtml.join(""))
     $("#Level0").css("background", "#09d")
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="tooltip"]').tooltip({
+        trigger: 'hover click', // allow both hover and click
+        html: true
+    });
 }
 function enemyDetail(el,level){
     $('#enemyDetail2').empty();
