@@ -713,52 +713,52 @@
             "note": "Agent mods age-x"
         },
         "能够阻挡一个敌人，攻击造成<@ba.kw>真实伤害</>": {
-            "en": "Can block enemy, attack deals <@ba.kw>True damage</>.",
+            "en": "Blocks 1 enemy, and attacks deal <@ba.kw>True damage</>",
             "color": "extra",
             "note": "Vina Victoria 's Token (Golden Vow)"
         },
         "不会受到攻击": {
-            "en": "Does not attack",
+            "en": "Cannot be attacked",
             "color": "common",
             "note": "Catherine 's Token (Crawler Protection Unit)"
         },
         "攻击范围内存在2名及以上其他干员时，攻击力<@ba.kw>+8%</>（不受技能影响）": {
-            "en": "When there are 2 or more operators in Attack Range, ATK<@ba.kw>+8%</> (does not effected by skills)",
+            "en": "When there are 2 or more other Operators within range, ATK <@ba.kw>+8%</> (unaffected by skill)",
             "color": "common",
             "note": "new mods bar-x Bard"
         },
         "<支援装置>的再部署时间<@ba.kw>减少</>": {
-            "en": "&lt;Support Devices&gt; Redeployment Time <@ba.kw>reduced</>",
+            "en": "&lt;Support Device&gt;'s Redeployment Time <@ba.kw>reduced</>",
             "color": "extra",
             "note": "new mods cra-y Artificer"
         },
         "不阻挡敌人时优先<@ba.kw>远程群体</>物理攻击且攻击速度<@ba.vup>+10</>": {
-            "en": "When not blocking enemies, prioritizes dealing <@ba.kw>ranged AoE</> Physical damage and ASPD<@ba.vup>+10</>",
+            "en": "When not blocking enemies, prioritizes dealing <@ba.kw>ranged AOE</> Physical damage and ASPD <@ba.vup>+10</>",
             "color": "physical",
             "note": "new mods for-y Fortress"
         },
         "能够阻挡三个敌人，可以造成元素损伤": {
-            "en": "Can block 3 enemies\nCan deal <@ba.kw>Elemental Injury</>",
+            "en": "Blocks 3 enemies, and can inflict <@ba.kw>Elemental Injury</>",
             "color": "extra",
             "note": "new Ops primprotector/Primal Protector Archetype trait"
         },
         "<$ba.liftoff>起飞</>后能够阻挡2个飞行敌人": {
-            "en": "After <$ba.liftoff>Take off</> can block 2 aerial enemies",
+            "en": "After <$ba.liftoff>Taking Off</>, can block 2 flying enemies",
             "color": "extra",
             "note": "new Ops skywalker/Skyranger Archetype trait"
         },
         "对精英和领袖敌人造成的元素损伤提升<@ba.kw>18%</>": {
-            "en": "Increase Elemental Injury dealt to Elite/Boss enemies by <@ba.kw>18%</>",
+            "en": "Elemental Injury dealt to Elite and Leader enemies increases by <@ba.kw>18%</>",
             "color": "extra",
             "note": "new mods rit-x"
         },
         "在<@ba.kw>集成战略</>中，攻击额外造成<@ba.kw>一次</>攻击力<@ba.kw>100%</>的法术伤害": {
-            "en": "In <@ba.kw>[Integrated Strategies]</>, attack deal <@ba.kw>an addition instance</> of <@ba.kw>100%</>  ATK as Arts damage",
+            "en": "In <@ba.kw>Integrated Strategies</>, attacks deal <@ba.kw>1</> additional instance of <@ba.kw>100%</> ATK as Arts damage",
             "color": "magic",
             "note": "new mods isw-a"
         },
         "在<@ba.kw>集成战略</>中，在场时全场敌人重量额外-1": {
-            "en": "In <@ba.kw>[Integrated Strategies]</>, All enemies -1 Weight Level",
+            "en": "In <@ba.kw>Integrated Strategies</>, all enemies on the field have Weight -1 while this unit is deployed",
             "color": "extra",
             "note": "new mods isw-a"
         },
