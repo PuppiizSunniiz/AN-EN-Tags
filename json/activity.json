@@ -1,5 +1,10 @@
 {
     "Dict": {
+        "act1enemyduel": {
+            "nameCN": "争锋频道：青草城",
+            "nameEN": "[PH]Cannot",
+            "startCN": 1745674200
+        },
         "act33sre": {
             "nameCN": "巴别塔·复刻",
             "nameEN": "Babel - Rerun",
@@ -819,6 +824,11 @@
             "nameCN": "选帝侯广场",
             "nameEN": "选帝侯广场",
             "startCN": 1740945600
+        },
+        "camp_r_28": {
+            "nameCN": "大巴扎",
+            "nameEN": "大巴扎",
+            "startCN": 1745784000
         },
         "tower_tr_01": {
             "nameCN": "7号训练场",
@@ -1921,6 +1931,16 @@
             "act33sre",
             "Babel - Rerun",
             1745222400
+        ],
+        [
+            "act1enemyduel",
+            "[PH]Cannot",
+            1745674200
+        ],
+        [
+            "camp_r_28",
+            "大巴扎",
+            1745784000
         ]
     ]
 }
