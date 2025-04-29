@@ -1238,6 +1238,7 @@
         let op_tag = $(".op-tag.btn-primary").map((_, btn) => db.ktags[$(btn).attr("data-id")]["cn"]).get();
         let op_faction = $(".op-faction.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
         let op_skill = $(".op-skill.btn-primary").map((_, btn) => parseInt($(btn).attr("data-id"))).get();
+        let op_ammo = $(".op-ammo.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
 
         let exclusive_class = $("#filter-name-class").hasClass("filter-exclusive");
         let exclusive_subclass = $("#filter-name-subclass").hasClass("filter-exclusive");
@@ -1250,12 +1251,13 @@
         if (op_class.length == 0 &&
             op_branch.length == 0 &&
             op_subclass.length == 0 &&
-            op_rarity.length ==0 &&
+            op_rarity.length == 0 &&
             op_gender.length == 0 &&
             op_tag.length == 0 &&
-            op_faction.length ==0 &&
+            op_faction.length == 0 &&
             $("#filter-equip").hasClass("btn-secondary") &&
-            op_skill.length == 0) return;
+            op_skill.length == 0 &&
+            op_ammo.length == 0) return;
 
         // EXTRACTION
         let ops = []
@@ -1305,10 +1307,14 @@
                                                         char.skills.filter(skill =>
                                                             db.skills[skill.skillId].levels.filter(sp =>
                                                                 op_skill[0] == SkillTypeConvert(sp.spData.spType)).length).length)
-                                                   : ops.filter(char =>
+                                                    : ops.filter(char =>
                                                         char.skills.filter(skill =>
                                                             db.skills[skill.skillId].levels.filter(sp =>
                                                                 op_skill.includes(SkillTypeConvert(sp.spData.spType))).length).length);
+        if (op_ammo.length) ops =  ops.filter(char =>
+                                                char.skills.filter(skill =>
+                                                    db.skills[skill.skillId].levels.filter(lv =>
+                                                        lv.durationType == "AMMO" || lv.durationType == 1).length).length)
 
         if ($("#filter-equip").hasClass("btn-primary")) ops = ops.filter(char=>Object.keys(db.uniequip.charEquip).includes(char.id))
 

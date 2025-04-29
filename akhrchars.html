@@ -158,8 +158,9 @@
                                 <div class="btn btn-secondary btn-sm my-1 op-skill filter-btn" section="skill" onclick="toggleBtn(this)" data-id=2>Attacking Enemy</div>
                                 <div class="btn btn-secondary btn-sm my-1 op-skill filter-btn" section="skill" onclick="toggleBtn(this)" data-id=4>Getting Hit</div>
                                 <div class="btn btn-secondary btn-sm my-1 op-skill filter-btn" section="skill" onclick="toggleBtn(this)" data-id=8>Always On</div>
+                                <div class="btn btn-secondary btn-sm my-1 op-ammo filter-btn" section="skill" onclick="toggleBtn(this)" data-id="ammo">Ammo-based</div>
                             </div>
-                            <div class="btn btn-danger btn-clear" id="clear-filter-skill" onclick="clearFilter('.op-skill')" clear-data=".op-skill">Clear</div>
+                            <div class="btn btn-danger btn-clear" id="clear-filter-skill" onclick="clearFilter('.op-skill');clearFilter('.op-ammo');" clear-data=".op-skill">Clear</div>
                         </div>
                         
                         <div class='filter-category'>
