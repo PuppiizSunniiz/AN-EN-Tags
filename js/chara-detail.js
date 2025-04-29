@@ -84,11 +84,11 @@
 
     var lang;
     var reg;
-    var selectedOP;
     var lefthand;
     var opdataFull = {};
     var curpath;
     var opapp;
+    var gmapp;
     var classfilter;
     var sort;
     var opSType;
@@ -100,6 +100,7 @@
     var folder = `https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/spineassets/${chibitype}/${charName}/${chibipers}/`
     var spinewidget
     var spinewidgetcg
+    var opid;
     var curropid
     var defaulttoken
     var globaltoken
@@ -146,7 +147,11 @@
     var wid = 1800
     var hei = 1800
 
+    const validparam = ["opname", "gamemode", "story", "voice", "sfx"]
+
     $(document).ready(function(){
+        console.log("Function Starto !!!")
+        refreshurl()
 
         Object.keys(db.chars).forEach(id =>{
             var currentop = db.chars[id]
@@ -472,12 +477,11 @@
             if(vars.has("opname")){
                 // console.log("TEST1")
             }
-        } else {
+        }else{
             console.log(localStorage.getItem('webLang'));
             reg = "cn";
             lang = "en";
         }
-        var opid;
         if(!localStorage.getItem('selectedOPDetails')){
             console.log("selected OP undefined");
             var vars = getUrlVars();
@@ -487,14 +491,18 @@
                 console.log(vars.get("opname"));
                 var char = query(db.chars,"appellation",vars.get("opname"),true,true);
                 console.log(char)
-                $.each(char,function(key,_){
-                    opid = key;
-                });
-                selectOperator(opid);
-            } else {
-                localStorage.removeItem("selectedOP");
+                if(char){
+                    $.each(char,function(key,_){
+                        opid = key;
+                    });
+                    selectOperator(opid);
+                }else{
+                    refreshurl("delete")
+                }
+            }else{
+                refreshurl("delete")
             }
-        } else {
+        }else{
             console.log("selected OP defined");
             var vars = getUrlVars();
             if(vars.has("opname")){
@@ -504,18 +512,22 @@
                 var correctname = (unreadable?unreadable.name:opname.replace(/_/g," "))
                 if(vars.get("gamemode")){
                     var chars = query(db.chars2,"name_en",correctname,false,false);
-                    char = query(chars,"gamemode",vars.get("gamemode"),true,false)
+                    gmapp = vars.get("gamemode")
+                    char = query(chars,"gamemode",gmapp,true,false)
                     opid = char.id
                 }else{
                     char = query(db.chars,"appellation",correctname,true,true);
                     console.log(char)
                     opid = Object.keys(char)[0]
+                    gmapp = opid?query(db.chars2,"gamemode",opid,false,false):"";
                 }
                 opapp = correctname
+            }else{
+                opid = localStorage.getItem('selectedOPDetails');
+            }
 
-            } else opid = localStorage.getItem('selectedOPDetails');
-
-            selectOperator(opid);
+            if (opid) selectOperator(opid, "cookies");
+            else refreshurl("delete")
 
             if(vars.has("story")){
                 $('#opstory').modal('show')
@@ -532,16 +544,38 @@
         if (window.history && window.history.pushState) {
             $(window).on('popstate', function() {
                 var vars = getUrlVars()
-                console.log(opapp)
+                console.log(opapp, gmapp)
                 console.log(vars)
-                var historyopname = vars.get("opname")
-                if(historyopname!=opapp){
+                var historyopname = vars.get("opname")?vars.get("opname"):""
+                var historygamemode = vars.get("gamemode")?vars.get("gamemode"):"BASE"
+                console.log(historyopname, opapp, historyopname != opapp, historygamemode, gmapp, historygamemode != gmapp,(historyopname && historyopname != opapp) || (historygamemode && historygamemode != gmapp))
+                if(historyopname && (historyopname != opapp || (historygamemode && historygamemode != gmapp))){
                     var unreadable = query(db.unreadNameTL,"name_en",historyopname.replace(/_/g," "))
                     var correctname = (unreadable?unreadable.name:historyopname.replace(/_/g," "))
                     console.log(correctname)
-                    var char = query(db.chars,"appellation",correctname,true,true);
-                    selectOperator(Object.keys(char))
+                    if(vars.get("gamemode")){
+                        var chars = query(db.chars2,"name_en",correctname,false,false);
+                        gmapp = vars.get("gamemode")
+                        char = query(chars,"gamemode",gmapp,true,false)
+                        opid = char.id
+                    }else{
+                        char = query(db.chars,"appellation",correctname,true,true);
+                        console.log(char)
+                        opid = Object.keys(char)[0]
+                        gmapp = query(db.chars2,"gamemode",opid,false,false);
+                    }
+                    opapp = correctname
+                    
+                    if (opid) selectOperator(opid, "cookies");
+                    else refreshurl("delete")
+                    
+                }else{
+                    console.log("gone")
+                    opapp = ""
+                    gmapp = "BASE"
+                    $('#chara-detail-container').hide();
                 }
+
                 if(vars.has("story")){
                     $('#opstory').modal('show')
                     $('#opaudio').modal('hide')
@@ -560,32 +594,32 @@
         $('#opstory').on('shown.bs.modal', function(){
             var url = new URL(window.location.href);
             url.searchParams.set('story', 0);
-            history.pushState(null, '', url);
+            history.replaceState(null, '', url);
         });
         $('#opstory').on('hidden.bs.modal', function(){
             var url = new URL(window.location.href);
             url.searchParams.delete('story');
-            history.pushState(null, '', url);
+            history.replaceState(null, '', url);
         });
         $('#opaudio').on('shown.bs.modal', function(){
             var url = new URL(window.location.href);
             url.searchParams.set('voice', 0);
-            history.pushState(null, '', url);
+            history.replaceState(null, '', url);
         });
         $('#opaudio').on('hidden.bs.modal', function(){
             var url = new URL(window.location.href);
             url.searchParams.delete('voice');
-            history.pushState(null, '', url);
+            history.replaceState(null, '', url);
         });
         $('#opsfx').on('shown.bs.modal', function(){
             var url = new URL(window.location.href);
             url.searchParams.set('sfx', 0);
-            history.pushState(null, '', url);
+            history.replaceState(null, '', url);
         });
         $('#opsfx').on('hidden.bs.modal', function(){
             var url = new URL(window.location.href);
             url.searchParams.delete('sfx');
-            history.pushState(null, '', url);
+            history.replaceState(null, '', url);
         });
 
         // console.log("TEST")
@@ -607,7 +641,30 @@
             $("#navitemLanguage").addClass('ak-disable2');
         });
     });
-    
+
+    function refreshurl(mode = "default"){
+        const url = new URL(window.location.href)
+        const urlVars = url.searchParams
+        const urlkeys = [...urlVars.keys()] 
+
+        // kill all param
+        if(mode == "delete"){
+            urlkeys.forEach(param => urlVars.delete(param))
+            history.replaceState(null, '', window.location.pathname);
+            return
+        }
+        // check if there "opname" then clean else CLEANSE
+        if (urlkeys.includes("opname")){
+            urlkeys.forEach(param =>{
+                    if (!validparam.includes(param) || !urlVars.get(param)) urlVars.delete(param)
+                })
+            history.replaceState(null, '', url)
+        }else{
+            urlkeys.forEach(param => urlVars.delete(param))
+            clickBtnClear()
+        }
+    }
+
     function tooltip_activate(){
         $('[data-toggle="tooltip"]').tooltip({
         trigger: 'hover click', // allow both hover and click
@@ -657,7 +714,7 @@
         $('#operatorsResult').hide();
         localStorage.removeItem('selectedOPDetails');
         localStorage.removeItem('selectedOPGamemode');
-        history.pushState(null, '', window.location.pathname);
+        history.replaceState(null, '', window.location.pathname);
     }
 
     function selOpClass(cname){
@@ -755,7 +812,7 @@
         });
         if(found){
             return result;
-        } else {
+        }else{
             return false;
         }
     }
@@ -928,7 +985,7 @@
                         <li class=" ak-shadow-small ak-rare-${result[i].rarity}"style="width:100%;cursor: pointer;margin-bottom:2px" onclick="selectOperator('${result[i].id}')">${image} ${result[i].name_readable?`[${result[i].name_readable}]`:""} ${result[i].nameTL} (${result[i].name})</li>`);
                     }
                 }
-            } else {
+            }else{
                 $('#operatorsResult').empty();
                 $('#operatorsResult').append(`
                     <li cstyle="width:100%;cursor: pointer;margin-bottom:2px;" style="color: red; font-size: large;" ><img style="height:40px;padding:2px" src="extra/not_found.png"> No result</li>`);
@@ -937,7 +994,7 @@
             //<a href="?opname=${getENname(val.name)}">
             // console.log( $("#operatorsResult")  )
             // $('#operatorsResult').show();
-        } else {
+        }else{
             $('#operatorsResult').empty();
             $('#operatorsResult').hide();
         }
@@ -953,7 +1010,7 @@
 
         if ($(el).hasClass("collapsible-open")) {
             for (i = 0; i < size; i++) setTimeout((i) => target.css("max-height", `${i}px`), delay * i, i);
-        } else {
+        }else{
             for (i = 0; i < size; i++) setTimeout((i) => target.css("max-height",`${size - i}px`), delay * i, i);
         }
     }
@@ -1347,7 +1404,7 @@
 
         if(skinName != ''){
             $("#charazoom").attr("src","https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/characters/"+skinName+(sus && opdataFull.id == "char_298_susuro"?"sus":"")+".png");
-        } else {
+        }else{
             $("#charazoom").attr("src",src);
         }
         $('#charazoom').modal('handleUpdate')
@@ -1359,6 +1416,9 @@
             spinewidgetcg.pause()
         }
         if(opid){
+            if (opid === "char_512_aprot") opid = "char_4025_aprot2";
+            curropid = opid
+
             $("#chara-detail-container").show();
             console.log("SELECT OPERATOR");
             console.log(opid);
@@ -1367,9 +1427,6 @@
             $('#operatorsResult').hide();
             var opdata = query(db.chars2,"id",opid);
             var opdata2 = {[opid]:db.chars[opid]}
-            curropid = opid
-
-            if (opdata2)
             var opcode = Object.keys(opdata2)[0]
             var gamemode = query(db.chars2,"id",opid,true,false).gamemode
             console.log(gamemode)
@@ -1380,18 +1437,9 @@
                 console.log(v);
                 opdataFull = v;
                 opKey = key;
-                localStorage.setItem('selectedOPDetails', key);
-                localStorage.setItem('selectedOPGamemode', gamemode);
                 return false
             });
 
-            if(opcode == "char_512_aprot"){
-                opcode = "char_4025_aprot2"
-                opdata2 = {"char_4025_aprot2":db.chars["char_4025_aprot2"]}
-                opKey = "char_4025_aprot2"
-                opdataFull = db.chars["char_4025_aprot2"]
-                opdataFull.id = "char_4025_aprot2"
-            }
 
             console.log(opKey)
 
@@ -1402,67 +1450,56 @@
                 'value' : from
             });
 
-            //test
-            // var charalist = []
-            // $.each(db.chars,(key,chara) => {
-            //     charalist.push(`${chara.appellation},${chara.displayLogo},${key.split("_")[1]},${key}_1`)
-            // });
-            // console.log(charalist.join("\n"))
-            //
-
             //get globaltoken early for tokenchibi (L:1465-)
             defaulttoken = null
-            $.each(opdataFull.talents,(_,t)=>{
-                if (!defaulttoken&&t.candidates[0].tokenKey){
-                    defaulttoken=t.candidates[0].tokenKey
+            $.each(opdataFull.talents, (_, t) => {
+                if (!defaulttoken && t.candidates[0].tokenKey){
+                    defaulttoken = t.candidates[0].tokenKey
                     return false
                 }
             })
-            globaltoken=defaulttoken?defaulttoken:opdataFull.skills[0]?opdataFull.skills[0].overrideTokenKey:null
-            globalskill=0
+            globaltoken = defaulttoken?defaulttoken:opdataFull.skills[0]?opdataFull.skills[0].overrideTokenKey:null
+            globalskill = 0
 
-            tokenname = globaltoken
-            currskin = opcode
+            tokenname   = globaltoken
+            currskin    = opcode
             currVoiceID = opdataFull.id
 
-            var url = new URL(window.location.href)
+            const url = new URL(window.location.href)
+            const urlVars = url.searchParams
             var unreadable = query(db.unreadNameTL,"name",opdataFull.appellation)
             var correctname = (unreadable?unreadable.name_en.replace(/ /g,"_"):opdataFull.appellation.replace(/ /g,"_"))
             opapp = correctname
+            gmapp = gamemode
 
-            if(gamemode!="BASE")
-                url.searchParams.set("gamemode", gamemode)
-            else
-                url.searchParams.delete("gamemode")
+            if(urlVars.get("opname") !== correctname || urlVars.get("gamemode") !== gamemode){
+                urlVars.set("opname", correctname);
 
-            if(url.searchParams.get("opname")===correctname){
+                if(gamemode != "BASE") urlVars.set("gamemode", gamemode)
+                else urlVars.delete("gamemode")
 
-            }else{
-                url.searchParams.set("opname", correctname);
+                if (from == "cookies") history.replaceState(null, '', url);
+                else history.pushState(null, '', url);
             }
-            history.pushState(null, '', url);
-
-            if(opKey==AmiyaCaster){
+            
+            if(opKey == AmiyaCaster){
                 $('#class-change-1').show()
                 $('#class-change-2').show()
                 switch (Amiyacurrclass){
                     case 'caster' :
                             opcode = AmiyaCaster
-                            opcode2 = AmiyaCaster
-                            opKey=opcode
+                            opKey = opcode
                             opdataFull.id = opcode
                             break;
                     case 'guard' :
                             opcode = AmiyaGuard
-                            opcode2 = AmiyaCaster
-                            opKey=opcode
+                            opKey = opcode
                             opdataFull = db.charpatch.patchChars[AmiyaGuard]
                             opdataFull.id = opcode
                             break;
                     case 'medic' :
                             opcode = AmiyaMedic
-                            opcode2 = AmiyaCaster
-                            opKey=opcode
+                            opKey = opcode
                             opdataFull = db.charpatch.patchChars[AmiyaMedic]
                             opdataFull.id = opcode
                             break;
@@ -1602,7 +1639,7 @@
                 //         tabbtn[l] = $("<li class='nav-item' style='height:30px'><button class='btn tabbing-btns tabbing-btns-middle active' style='height:30px'>"
                 //             + "<img style='max-height:30px' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/0-s.png' data-toggle='pill' href='#opCG_0_tab'></button></li>");
                 //         tabbtn2[i] = $(`<li class='nav-item'><a class='btn tabbing-btns horiz-small nav-link active tablink' data-toggle='pill' onclick='UpdateElite(0)' href='#elite_0_tab'>Non-Elite</a></li>`);
-                //     } else {
+                //     }else{
                 //         tabbtn[l] = $(`<li class='nav-item'><button class='btn tabbing-btns tabbing-btns-middle active' data-toggle='pill' style='height:30px' href='#opCG_${i}_tab' onClick='ChangeSkin("${opcode}")'>`
                 //                             + "<img style='max-height:30px' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/0-s.png'></button></li>");
                 //         tabbtn2[i] = $(`<li class='nav-item'><a class='btn tabbing-btns horiz-small nav-link active tablink' data-toggle='pill' onclick='UpdateElite(${i})'href='#elite_${i}_tab'><img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/0.png" style="width:20px;margin:-12px 0px -6px 0px" title="Elite0">E0</a></li>`);
@@ -1611,7 +1648,7 @@
                 //     tabbtn[0] = $(`<li class='nav-item' style='height:30px'><button class='btn tabbing-btns tabbing-btns-middle'  style='height:30px' data-toggle='pill' href='#opCG_${i}_tab' onClick='ChangeSkin("${opcode}")'>`
                 //                             + "<img style='max-height:30px' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/"+i+"-s.png'></button></li>");
                 //     tabbtn2[i] = $(`<li class='nav-item'><a class='btn tabbing-btns horiz-small nav-link tablink' data-toggle='pill' style='height:30px' onclick='UpdateElite(${i})' href='#elite_${i}_tab'><img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/${i}.png" style="width:20px;margin:-12px 0px -6px 0px" title="Elite${i}">E${i}</a></li>`);
-                // } else {
+                // }else{
                 //     tabbtn[l-i] = $(`<li class='nav-item' style='height:30px'><button class='btn tabbing-btns tabbing-btns-middle'  style='height:30px' data-toggle='pill' href='#opCG_${i}_tab' onClick='ChangeSkin("${opcode}")'>`
                 //                             + "<img style='max-height:30px' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/"+i+"-s.png'></button></li>");
                 //     tabbtn2[i] = $("<li class='nav-item'><a class='btn tabbing-btns horiz-small nav-link tablink' data-toggle='pill' style='height:30px' onclick='UpdateElite("+i+")' href='#elite_"+i+"_tab'>Elite "+i+"</a></li>");
@@ -1621,7 +1658,7 @@
                 if(skinList){
                     if(!(skinList[i] in db.skintable.charSkins)){
                         skindata = db.skintable.charSkins[skinList[i-1]];
-                    } else {
+                    }else{
                         skindata = db.skintable.charSkins[skinList[i]];
                     }
                 }
@@ -1635,7 +1672,7 @@
                         tabcontent.push($("<div class='tab-pane container active' id='opCG_0_tab'>"
                             +"<img class='chara-image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/characters/"+skindata.portraitId+(sus && opdataFull.id == "char_298_susuro"?"sus":"")+".png'>"
                             +"</div>"));
-                    } else {
+                    }else{
                         tabcontent.push($("<div class='tab-pane container' id='opCG_"+i+"_tab'>"
                             +"<img class='chara-image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/characters/"+skindata.portraitId+(sus && opdataFull.id == "char_298_susuro"?"sus":"")+".png'>"
                             +"</div>"));
@@ -1651,7 +1688,7 @@
                         tabcontent.push($("<div class='tab-pane container active' id='opCG_0_tab'>"
                             +"<img class='chara-image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/characters/"+opKey+"_2.png'>"
                             +"</div>"));
-                    } else {
+                    }else{
                         tabcontent.push($("<div class='tab-pane container' id='opCG_"+i+"_tab'>"
                             +"<img class='chara-image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/characters/"+opKey+"_2.png'>"
                             +"</div>"));
@@ -2088,7 +2125,7 @@
 
                 if(skillData.iconId == null){
                     var skillIcon = skillId;
-                } else {
+                }else{
                     var skillIcon = skillData.iconId;
                 }
 
@@ -2183,7 +2220,7 @@
                                             ${GetTrait(part.overrideTraitDataBundle.candidates[0].overrideDescripton,part.overrideTraitDataBundle)}
                                             </div>
                                         `
-                                    } else {
+                                    }else{
                                         equiphtml[curreqphase] +=
                                         `
                                             <div>
@@ -2366,6 +2403,8 @@
 
 
             }
+            localStorage.setItem('selectedOPDetails', opid);
+            localStorage.setItem('selectedOPGamemode', gamemode);
             tooltip_activate()
         }
     }
@@ -3351,7 +3390,7 @@
                         +   "<div id='elite"+i+"MatsCollapsible' class='collapse collapsible'>"
                         +    materialist.join("")
                         +   "</div></div>");
-        } else {
+        }else{
             var mats = $("");
         }
         container.append(stats);
@@ -5504,7 +5543,7 @@
     function query(db,key,val,single=true,returnKey=false){
         if(single){
             var result = {};
-        } else {
+        }else{
             var result = [];
         }
         var found = false;
@@ -5514,16 +5553,16 @@
                 if(single){
                     if(returnKey){
                         result[key2] = v;
-                    } else {
+                    }else{
                         result = v;
                     }
                     return false;
-                } else {
+                }else{
                     if(returnKey){
                         var obj = {};
                         obj[key2] = v;
                         result.push(obj);
-                    } else {
+                    }else{
                         result.push(v);
                     }
                 }
@@ -5531,7 +5570,7 @@
         });
         if(found){
             return result;
-        } else {
+        }else{
             return false;
         }
     }
@@ -5600,7 +5639,7 @@
                     if (colorRTF.test(rich)) {
                         let color = colorRTF.exec(rich)[1]
                         return `${the_begin}<span class="${addbackgroundcolor?`stat-important2`:""}" style="color:${color}">${text}</span>${the_rest}</>`
-                    } else {
+                    }else{
                         return rich.replace('{0}', text)
                     }
                 } else if (rich2) {
@@ -5628,7 +5667,7 @@
                 if (colorRTF.test(rich)) {
                     let color = colorRTF.exec(rich)[1]
                     return `<span class="${addbackgroundcolor?`stat-important2`:""}" style="color:${color}">${text}</span>`
-                } else {
+                }else{
                     return rich.replace('{0}', text)
                 }
             } else if (rich2) {
@@ -6828,7 +6867,7 @@
         });
         if(found){
             return result;
-        } else {
+        }else{
             return false;
         }
     }
@@ -6880,7 +6919,7 @@
         if (document.getElementById(elmnt2)) {
             // if present, the header is where you move the DIV from:
             document.getElementById(elmnt2).onmousedown = dragMouseDown;
-        } else {
+        }else{
             // otherwise, move the DIV from anywhere inside the DIV:
             elmnt.onmousedown = dragMouseDown;
         }
@@ -6920,7 +6959,7 @@
         if (document.getElementById(elmnt2)) {
             // if present, the header is where you move the DIV from:
             document.getElementById(elmnt2).onmousedown = dragMouseDown;
-        } else {
+        }else{
             // otherwise, move the DIV from anywhere inside the DIV:
             elmnt.onmousedown = dragMouseDown;
         }
