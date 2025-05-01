@@ -167,8 +167,8 @@
             //console.log(id,Object.keys(db.handbookTeam).includes(id),Object.keys(db.handbookTeamEN).includes(id))
             if(id != "none"){
                 teamHTML[db.handbookTeam[id].powerLevel].push(
-                    `<div class="op-faction btn-secondary tooltip2" data-id="${id}" onclick="toggleBtn(this)" section="faction">
-                        <img class='filter-img faction-img'  src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/logo_${id}.png'>
+                    `<div class="op-faction btn-secondary tooltip2 adv-filter" data-id="${id}" onclick="toggleBtn(this)" section="faction">
+                        <img class='filter-img faction-img' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/logo_${id}.png'>
                         <span class="tooltiptext tooltiptop tooltipstyle1 nohover">
                             ${Object.keys(db.handbookTeamEN).includes(id)?db.handbookTeamEN[id].powerName:db.handbookTeam[id].powerCode}
                         </span>
@@ -862,8 +862,9 @@
                     for (var i = 0; i < languages.length; i++) {
                         var charname    = char['name_'+languages[i]];
                         var unreadable  = query(db.unreadNameTL,"name",char.name_en)
-                        var input       = inputs.toUpperCase();                        
-                        var search      = (unreadable ? (unreadable.name_en + charname + char.id.replace("char_","")).toUpperCase().search(input) : (charname + char.id.replace("char_","")).toUpperCase().search(input));
+                        var input       = inputs.toUpperCase();
+                        var search      = inputs.match(/char_[1-9]{1,4}/g)?(unreadable ? (unreadable.name_en + charname + char.id).toUpperCase().search(input) : (charname + char.id).toUpperCase().search(input))
+                                            :(unreadable ? (unreadable.name_en + charname + char.id.replace("char_","")).toUpperCase().search(input) : (charname + char.id.replace("char_","")).toUpperCase().search(input));
                         if(search != -1){
                             found = true;
                             break;
@@ -1248,6 +1249,15 @@
         let exclusive_skill = $("#filter-name-skill").hasClass("filter-exclusive");
 
         var totalRarity = {}
+
+        // Advanced options
+        if (op_gender.length == 0 &&
+            op_tag.length == 0 &&
+            op_faction.length == 0 &&
+            op_skill.length == 0 &&
+            op_ammo.length == 0) $("#adv-filter").removeClass("btn-primary")
+        else $("#adv-filter").addClass("btn-primary")
+
         if (op_class.length == 0 &&
             op_branch.length == 0 &&
             op_subclass.length == 0 &&
@@ -1974,11 +1984,11 @@
                     var spType = (v2.spData.spType)
                     var spTypeHtml = ""
                     switch (spType){
-                        case "INCREASE_WITH_TIME":spTypeHtml = "Per second";break;
-                        case "INCREASE_WHEN_ATTACK":spTypeHtml = "Attacking Enemy";break;
-                        case "INCREASE_WHEN_TAKEN_DAMAGE":spTypeHtml = "Getting Hit";break;
-                        case 8:spTypeHtml = "Always On";break;
-                        default:spTypeHtml = spType;break;
+                        case "INCREASE_WITH_TIME": spTypeHtml = "Auto Recovery"; break;
+                        case "INCREASE_WHEN_ATTACK": spTypeHtml = "Offensive Recovery"; break;
+                        case "INCREASE_WHEN_TAKEN_DAMAGE": spTypeHtml = "Defensive Recovery"; break;
+                        case 8: spTypeHtml = "Passive"; break;
+                        default: spTypeHtml = spType; break;
                     }
                     var spDuration= (v2.duration==0?"Instant Attack":v2.duration==-1?"Infinite":v2.duration + " Seconds")
                     var spDurType = (v2.duration==0?"Instant":v2.duration==-1?"Infinite":"Number")
@@ -1992,7 +2002,7 @@
                         var skilljson = {}
                         skilljson.name = db.effect[skillinfo.key]?db.effect[skillinfo.key]:skillinfo.key
                         skilljson.key = skillinfo.key
-                        skilljson.value = skillinfo.value
+                        skilljson.value = skillinfo.valueStr?["range_id", "projectile_range"].includes(skillinfo.key)?(skillinfo.valueStr + rangeMaker(skillinfo.valueStr)):skillinfo.valueStr:skillinfo.value
 
                         skilldetails.push(skilljson)
                         if(skillinfo.key=="force"||skillinfo.key=="base_force_level"||skillinfo.key=="attack@force") force= skillinfo.value
@@ -2006,8 +2016,15 @@
                                 spDurationName = ""
                             }
                         }
-                        if(skillinfo.key=="ability_range_forward_extend"){
-                            grid = rangeMaker(opdataFull.phases[0].rangeId,true,skillinfo.value)
+                        if(skillinfo.key == "ability_range_forward_extend"){
+                            allrange = new Set(opdataFull.phases.map(phase => phase.rangeId))
+                            if (allrange.size - 1){
+                                if (i===2 || i2 + 1 >= 8) grid = rangeMaker(opdataFull.phases[2].rangeId, true, skillinfo.value, "E2")
+                                else if (i===1 || i2 + 1 >= 5) grid = rangeMaker(opdataFull.phases[Math.max(1, globalelite)].rangeId, true, skillinfo.value, "E" + Math.max(1, globalelite))
+                                else grid = rangeMaker(opdataFull.phases[globalelite].rangeId, true, skillinfo.value, "E" + globalelite)
+                            }else{
+                                grid = rangeMaker(opdataFull.phases[i].rangeId, true, skillinfo.value)
+                            }
                         }
                         if(v2.prefabId=="skchr_fartth_3"){
                             grid2 = `
@@ -2026,13 +2043,13 @@
                     // console.log(currSkill)
                     var skillType = ""
                     switch(currSkill.skillType){
-                        case "PASSIVE" : skillType = "Passive" ;break;
-                        case "MANUAL" : skillType = "Manual Trigger" ;break;
-                        case "AUTO" : skillType = "Auto Trigger" ;break;
+                        case "PASSIVE": skillType = "Passive"; break;
+                        case "MANUAL": skillType = "Manual"; break;
+                        case "AUTO": skillType = "Auto"; break;
                     }
                     console.log(currSkill.skillType)
-                    var skillType = titledMaker(skillType,"Skill Activation",`skillType-${currSkill.skillType}`)
-                    var spTypeHtml = (currSkill.skillType==0?"":titledMaker(spTypeHtml,"SP Charge Type",`spType-${spType}`))
+                    var skillType = titledMaker(skillType, "Activation", `skillType-${currSkill.skillType}`)
+                    var spTypeHtml = (currSkill.skillType == 0?"":titledMaker(spTypeHtml, "SP Type", `spType-${spType}`))
                     // console.log(materialList2)
                     // console.log(parseInt(v2.duration)>0)
                     //skilltype
@@ -2219,7 +2236,9 @@
                             equiphtml[curreqphase] = ""
                             phase.parts.forEach(part => {
                                 if((part.target == "TRAIT" && part.isToken == false)||(part.target == "TRAIT_DATA_ONLY")||(part.target == "DISPLAY")){
-                                    if(part.overrideTraitDataBundle.candidates[0].additionalDescription == null){
+                                    if(part.overrideTraitDataBundle.candidates[0].additionalDescription == null && part.overrideTraitDataBundle.candidates[0].overrideDescripton == null){
+                                        return
+                                    }else if(part.overrideTraitDataBundle.candidates[0].additionalDescription == null){
                                         equiphtml[curreqphase] +=
                                         `
                                             <div>
@@ -2411,6 +2430,7 @@
             }
             localStorage.setItem('selectedOPDetails', opid);
             localStorage.setItem('selectedOPGamemode', gamemode);
+            UpdateElite(0)
             tooltip_activate()
         }
     }
@@ -4045,8 +4065,15 @@
             var skillData = db.skills[skillId];
             $.each(skillData.levels,function(i2,v2){
                 skillData.levels[i2].blackboard.forEach(skillinfo => {
-                    if(skillinfo.key=="ability_range_forward_extend"){
-                        grid = $(`#skill${i}lv${i2}grid`).html(rangeMaker(opdataFull.phases[elite].rangeId,true,skillinfo.value))
+                    if(skillinfo.key == "ability_range_forward_extend"){
+                        allrange = new Set(opdataFull.phases.map(phase => phase.rangeId))
+                        if (allrange.size - 1){
+                            if (i===2 || i2 + 1 >= 8) $(`#skill${i}lv${i2}grid`).html(rangeMaker(opdataFull.phases[2].rangeId, true, skillinfo.value, "E2"))
+                            else if (i===1 || i2 + 1 >= 5) $(`#skill${i}lv${i2}grid`).html(rangeMaker(opdataFull.phases[Math.max(1, globalelite)].rangeId, true, skillinfo.value, "E" + Math.max(1, globalelite)))
+                            else $(`#skill${i}lv${i2}grid`).html(rangeMaker(opdataFull.phases[globalelite].rangeId, true, skillinfo.value, "E" + globalelite))
+                        }else{
+                            $(`#skill${i}lv${i2}grid`).html(rangeMaker(opdataFull.phases[i].rangeId, true, skillinfo.value))
+                        }
                     }
                 });
             })
@@ -5090,14 +5117,14 @@
         // console.log(mintrust)
         Object.keys(mintrust).forEach(key => {
             // console.log(key)
-            if(mintrust[key]!=maxtrust[key]){
-            differences[key]=maxtrust[key]-mintrust[key]
-            differencesnum=differencesnum+1
+            if(mintrust[key] != maxtrust[key]){
+            differences[key] = maxtrust[key] - mintrust[key]
+            differencesnum = differencesnum + 1
             }
         });
         console.log(differences)
 
-        if(differencesnum!=0){
+        if(differencesnum){
             return TrustParse(differences)
         }else{
             return ""
@@ -5108,24 +5135,24 @@
         Object.keys(differences).forEach(key => {
             let currInfo
             switch (key){
-                case "maxHp": currInfo="Maximum HP" ;break;
-                case "atk": currInfo="Attack" ;break;
-                case "def": currInfo="Defense" ;break;
-                case "magicResistance": currInfo="Magic Resist" ;break;
-                case "cost": currInfo="Cost" ;break;
-                case "blockCnt": currInfo="Block Count" ;break;
-                case "moveSpeed": currInfo="Move Speed" ;break;
-                case "attackSpeed": currInfo="Attack Speed" ;break;
-                case "baseAttackTime": currInfo="Attack time" ;break;
-                case "respawnTime": currInfo="Redeploy time" ;break;
-                case "hpRecoveryPerSec": currInfo="HP recovery" ;break;
-                case "spRecoveryPerSec": currInfo="SP recovery" ;break;
-                default: currInfo = key ; break;
+                case "maxHp": currInfo="HP"; break;
+                case "atk": currInfo="ATK"; break;
+                case "def": currInfo="DEF"; break;
+                case "magicResistance": currInfo="Magic Resist"; break;
+                case "cost": currInfo="Cost"; break;
+                case "blockCnt": currInfo="Block Count"; break;
+                case "moveSpeed": currInfo="Move Speed"; break;
+                case "attackSpeed": currInfo="Attack Speed"; break;
+                case "baseAttackTime": currInfo="Attack time"; break;
+                case "respawnTime": currInfo="Redeploy time"; break;
+                case "hpRecoveryPerSec": currInfo="HP recovery"; break;
+                case "spRecoveryPerSec": currInfo="SP recovery"; break;
+                default: currInfo = key; break;
             }
 
             readable.push(`${currInfo} +${differences[key]}`)
         });
-        return titledMaker(readable.join("</br>"),"Trust extra status","","","color:#ddd;min-width:120px")
+        return titledMaker(readable.join("</br>"), "Trust extra status", "", "", "color:#ddd;min-width:120px")
     }
 
     function GetTrait(desc,trait,traitname = "Traits"){
@@ -5354,7 +5381,7 @@
 
         return titledbutton
     }
-    function rangeMaker(rangeId,withText=true,extend=0){
+    function rangeMaker(rangeId, withText = true, extend = 0, flavortext = ""){
         var rangelist =  Object.assign({},db.range,db.extra_range)
         var rangeData ={}
         var rangeDataOrigin = Object.assign({},rangelist[rangeId])
@@ -5437,7 +5464,7 @@
                 }
             }
             table.push(`</table>`);
-            table.push(`${withText?`<div><span style="all:inherit">Range</span></div>`:""}</div>`);
+            table.push(`${withText?`<div><span style="all:inherit">${flavortext + " "}Range</span></div>`:""}</div>`);
             return table.join("")
         }else{
             return undefined
@@ -5515,6 +5542,8 @@
 
         $("#Tokskill"+skill_no+"StatsCollapsible").children("table").removeClass("active");
         $("#Tokskill"+skill_no+"level"+(value-1)+"stats").addClass("active");
+
+        UpdateElite(globalelite)
     }
 
     function SkillRankDisplay(skill_no){

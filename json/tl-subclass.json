@@ -12,7 +12,8 @@
             "reaper",
             "librator",
             "crusher",
-            "hammer"
+            "hammer",
+            "primguard"
         ],
         "MEDIC":[
             "physician",
@@ -142,6 +143,11 @@
         "hammer":{
             "name":"Earthshaker",
             "tl":"Earthshaker",
+            "en":"Earthshaker"
+        },
+        "primguard":{
+            "name":"Primal Guard",
+            "tl":"Primal Guard",
             "en":""
         },
 
@@ -330,9 +336,9 @@
             "en":"Sentry Protector"
         },
         "primprotector":{
-            "name":"Primal Defender",
-            "tl":"Primal Defender",
-            "en":"Primal Defender"
+            "name":"Primal Protector",
+            "tl":"Primal Protector",
+            "en":"Primal Protector"
         },
 
         "slower":{
@@ -414,7 +420,7 @@
         "alchemist":{
             "name":"Alchemist",
             "tl":"Alchemist",
-            "en":""
+            "en":"Alchemist"
         },
         "skywalker":{
             "name":"Skyranger",

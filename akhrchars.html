@@ -22,7 +22,7 @@
     <script src="js/spine-widget.js"></script>
     <script src="js/spine-skeleton-binary.js"></script>
     <!-- site tag (gtag.js) - Google Analytics -->
-    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-159317757-1'></script>/
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-159317757-1'></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -109,7 +109,7 @@
                         </div>
                         <div class="btn btn-danger btn-clear" id="clear-filter-rarity" onclick="clearFilter('.op-rarity')" clear-data=".op-rarity">Clear</div>
                     </div>
-                    <div class="collapsible-closed" onclick="collapse(this)" target="collapsed-section">Advanced options<div class="fas fa-angle-down" style="float: right; margin-right: 10px; margin-top: 2px;"></div></div>
+                    <div class="collapsible-closed" id="adv-filter" onclick="collapse(this)" target="collapsed-section">Advanced options<div class="fas fa-angle-down" style="float: right; margin-right: 10px; margin-top: 2px;"></div></div>
                     <div class="collapsed-section-closed" id="collapsed-section" style="max-height: 0;">
                         <!-- <div class='filter-category'>
                             <div id="filter-name-subclass" class="btn filter-name filter-exclusive" onclick="toggleExclusive(this)">Subclass</div>
@@ -154,11 +154,11 @@
                         <div class='filter-category'>
                             <div id="filter-name-skill" class="btn filter-exclusive filter-name" onclick="toggleExclusive(this)">Skill type</div>
                             <div class='filter-category-content'>
-                                <div class="btn btn-secondary btn-sm my-1 op-skill filter-btn" section="skill" onclick="toggleBtn(this)" data-id=1>Per second</div>
-                                <div class="btn btn-secondary btn-sm my-1 op-skill filter-btn" section="skill" onclick="toggleBtn(this)" data-id=2>Attacking Enemy</div>
-                                <div class="btn btn-secondary btn-sm my-1 op-skill filter-btn" section="skill" onclick="toggleBtn(this)" data-id=4>Getting Hit</div>
-                                <div class="btn btn-secondary btn-sm my-1 op-skill filter-btn" section="skill" onclick="toggleBtn(this)" data-id=8>Always On</div>
-                                <div class="btn btn-secondary btn-sm my-1 op-ammo filter-btn" section="skill" onclick="toggleBtn(this)" data-id="ammo">Ammo-based</div>
+                                <div class="btn btn-secondary btn-sm my-1 op-skill filter-btn" section="skill" onclick="toggleBtn(this)" data-id=1>Auto Recovery</div>
+                                <div class="btn btn-secondary btn-sm my-1 op-skill filter-btn" section="skill" onclick="toggleBtn(this)" data-id=2>Offensive Recovery</div>
+                                <div class="btn btn-secondary btn-sm my-1 op-skill filter-btn" section="skill" onclick="toggleBtn(this)" data-id=4>Defensive Recovery</div>
+                                <div class="btn btn-secondary btn-sm my-1 op-skill filter-btn" section="skill" onclick="toggleBtn(this)" data-id=8>Passive</div>
+                                <div class="btn btn-secondary btn-sm my-1 op-ammo  filter-btn" section="skill" onclick="toggleBtn(this)" data-id="ammo">Ammo-based</div>
                             </div>
                             <div class="btn btn-danger btn-clear" id="clear-filter-skill" onclick="clearFilter('.op-skill');clearFilter('.op-ammo');" clear-data=".op-skill">Clear</div>
                         </div>
@@ -181,7 +181,7 @@
                                 <div class="filter-btn btn-secondary btn-sm my-1 btn-disabled btn-sort" id="sort-hp" onclick="switchState(this)"><div style="margin-right: 5px;cursor: pointer;">HP</div><div class="btn fas fa-sort-amount-down" id="order-hp" onclick="invertSort(this)"></div></div>
                                 <div class="filter-btn btn-secondary btn-sm my-1 btn-disabled btn-sort" id="sort-dp" onclick="switchState(this)"><div style="margin-right: 5px;cursor: pointer;">DP COST</div><div class="btn fas fa-sort-amount-down" id="order-dp" onclick="invertSort(this)"></div></div>
                                 <div class="filter-btn btn-secondary btn-sm my-1 btn-disabled btn-sort" id="sort-block" onclick="switchState(this)"><div style="margin-right: 5px;cursor: pointer;">BLOCK COUNT</div><div class="btn fas fa-sort-amount-down" id="order-block" onclick="invertSort(this)"></div></div>
-                                <div class="filter-btn btn-secondary btn-sm my-1 btn-enabled btn-sort" id="sort-rarity" onclick="switchState(this)"><div style="margin-right: 5px;cursor: pointer;">RARITY</div><div class="btn fas fa-sort-amount-down" id="order-rarity" onclick="invertSort(this)"></div></div>
+                                <div class="filter-btn btn-secondary btn-sm my-1 btn-enabled  btn-sort" id="sort-rarity" onclick="switchState(this)"><div style="margin-right: 5px;cursor: pointer;">RARITY</div><div class="btn fas fa-sort-amount-down" id="order-rarity" onclick="invertSort(this)"></div></div>
                             </div>
                             <div class="btn btn-danger btn-clear" onclick="resetSorting()">Reset</div>
                         </div> 

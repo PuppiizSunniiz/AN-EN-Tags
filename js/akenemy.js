@@ -5,7 +5,7 @@ $.holdReady(true);
 var db = {}
 var tlracedict = {};
 var enemyforfilter = []
-const allimmunity = ["stunImmune","silenceImmune","sleepImmune","frozenImmune","levitateImmune","disarmedCombatImmune","fearedImmune"]
+const allimmunity = ["stunImmune","silenceImmune","sleepImmune","frozenImmune","levitateImmune","disarmedCombatImmune","fearedImmune", "palsyImmune"]
 
 var d0 = $.getJSON("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/gamedata_const.json",function(data){
     db["dataconst"] = data;
@@ -594,7 +594,7 @@ function enemyDetail(el,level){
     var firstattr   = firstEnemyData.attributes
 
     var EnemyImmune = []
-    $(["stun","silence","sleep","frozen","levitate","disarmedCombat","feared"].forEach(immune =>{
+    $(["stun","silence","sleep","frozen","levitate","disarmedCombat","feared","palsy"].forEach(immune =>{
         if (currattr[immune+"Immune"].m_value != 0 ? currattr[immune+"Immune"].m_value : firstattr[immune+"Immune"].m_value)
             EnemyImmune.push(`<td><span style="color:crimson;font-weight: bold;">Immune</span></td>`)
         else
@@ -655,6 +655,7 @@ function enemyDetail(el,level){
                     <th scope="col" class="hovertooltip" data-tooltip="Target becomes aerial and cannot move, attack, or use skills. Duration halved if Weight is greater than 3.">Levitate</th>
                     <th scope="col" class="hovertooltip" data-tooltip="Cannot perform normal attacks when blocked.">Frighten</th>
                     <th scope="col" class="hovertooltip" data-tooltip="Cannot be blocked and runs off uncontrollably">Fear</th>
+                    <th scope="col" class="hovertooltip" data-tooltip="Interrupts enemy attacks once per stack. Can stack up to 3 times. Each stack lasts indefinitely until used. Enemies with resistance lose 1 stack every 5 seconds.">Paralysis</th>
                 </tr>
             </thead>
             <tbody>

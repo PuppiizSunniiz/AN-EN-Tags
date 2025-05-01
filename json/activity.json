@@ -1,8 +1,13 @@
 {
     "Dict": {
+        "act42side": {
+            "nameCN": "众生行记",
+            "nameEN": "The Masses' Travels",
+            "startCN": 1746072000
+        },
         "act1enemyduel": {
             "nameCN": "争锋频道：青草城",
-            "nameEN": "[PH]Cannot",
+            "nameEN": "Duel Channel: Green Grass",
             "startCN": 1745674200
         },
         "act33sre": {
@@ -1934,13 +1939,18 @@
         ],
         [
             "act1enemyduel",
-            "[PH]Cannot",
+            "Duel Channel: Green Grass",
             1745674200
         ],
         [
             "camp_r_28",
             "大巴扎",
             1745784000
+        ],
+        [
+            "act42side",
+            "The Masses' Travels",
+            1746072000
         ]
     ]
 }

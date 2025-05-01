@@ -532,7 +532,7 @@
         },
         "cc.tra.pepe": {
             "termId": "cc.tra.pepe",
-            "termName": "特别独占订单",
+            "termName": "Special Exclusive Order",
             "description": "Special Gold Bar orders provided by Pepe. These orders have a fixed acquisition time, fixed revenue and require 0 gold bars to complete"
         },
         "ba.magicpoint": {
@@ -552,7 +552,7 @@
         },
         "cc.bd_dungeon": {
             "termId": "cc.bd_dungeon",
-            "termName": "魔物料理",
+            "termName": "Monster Meal",
             "description": "Provided by the following Operator(s):\nSenshi"
         },
         "cc.tag.dungeon": {
@@ -567,13 +567,38 @@
         },
         "cc.g.siracusa": {
             "termId": "cc.g.siracusa",
-            "termName": "叙拉古",
+            "termName": "Siracusa",
             "description": "Includes the following Operators:\nAngelina, Lappland, Provence, Vermeil, Broca, Shamare, Suzuran, Chiave, Aosta, Penance, Lunacub, Vigil, Aroma, Vulpisfoglia, Figurino, Lappland the Decadenza"
         },
         "ba.physicfragile": {
             "termId": "ba.physicfragile",
             "termName": "Physical Fragility",
             "description": "Amplifies all Physical damage taken by the corresponding amount (only the strongest effect of this type applies)"
+        },
+        "ba.dt.neural2": {
+            "termId": "ba.dt.neural2",
+            "termName": "Nervous Impairment - Player",
+            "description": "Explodes when at max (1000 for Normal and Elite, 2000 for Leaders), dealing 6000 Elemental Damage and inflict 3 <$ba.palsy>Paralysis</> stack. 10s cooldown."
+        },
+        "ba.palsy": {
+            "termId": "ba.palsy",
+            "termName": "Paralysis",
+            "description": "Interrupts enemy attacks once per stack. Can stack up to 3 times. Each stack lasts indefinitely until used. Enemies with resistance lose 1 stack every 5 seconds."
+        },
+        "ba.addbullet": {
+            "termId": "ba.addbullet",
+            "termName": "Replenish",
+            "description": "Replenish ammo for other operators that have Ammo-based skill. During skill activation, the maximum amount of ammo that can be replenish is equal to skill’s ammo capacity"
+        },
+        "cc.g.laterano": {
+            "termId": "cc.g.laterano",
+            "termName": "Laterano",
+            "description": "Includes the following Operators:\nPlume, Adnachiel, Executor, Mostima, Ambriel, Arene, Archetto, Fiammetta, Enforcer, Spuria, Insider, Virtuosa, Lemuen, Sankta Miksaparato, CONFESS-47"
+        },
+        "cc.angel": {
+            "termId": "cc.angel",
+            "termName": "Exusiai",
+            "description": "Includes the following Operators:\nExusiai the New Covenant、Exusiai"
         }
     }
 }

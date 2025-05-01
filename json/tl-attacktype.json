@@ -859,6 +859,55 @@
             "note": "new mods age-y",
             "name": "char_497_ctable",
             "code": "uniequip_002_ctable"
+        },
+        "能够阻挡两个敌人，可以造成<@ba.kw>元素伤害</>": {
+            "en": "Blocks 2 enemies, and can inflict <@ba.kw>Elemental Injury</>",
+            "color": "extra",
+            "note": "new Ops \"primguard\" Archetype trait",
+            "name": "Gracebearer",
+            "code": "char_4187_graceb"
+        },
+        "能够阻挡两个敌人，且不受<@ba.kw>部署数量</>限制，但再部署时间极长": {
+            "en": "Blocks 2 enemies. Not affected by <@ba.kw>Deployment Limit</>, but has a long Redeployment Time.",
+            "color": "common",
+            "note": "new Ops \"pioneer\" Archetype trait",
+            "name": "CONFESS-47",
+            "code": "char_4188_confes"
+        },
+        "攻击对<@ba.kw>2</>个目标造成法术伤害，技能开启后改为治疗<@ba.kw>2</>个友方单位（治疗量相当于75%攻击力）": {
+            "en": "Attack deals <@ba.kw>Arts damage</> to <@ba.kw>2</> target; When skill is active, attacks instead restore the HP of <@ba.kw>2</> allies (heal amount is equal to 75% of ATK)",
+            "color": "magic",
+            "note": "new mods bls-y",
+            "name": "char_1031_slent2",
+            "code": "uniequip_003_slent2"
+        },
+        "部署后获得<@ba.kw>+100%</>加成": {
+            "en": "When deployed, initially gain <@ba.kw>+100%</> ATK effect",
+            "color": "extra",
+            "note": "new mods lib-x",
+            "name": "char_445_wscoot",
+            "code": "uniequip_002_wscoot"
+        },
+        "造成伤害时附带相当于<@ba.kw>10%</>伤害的<$ba.dt.neural2>神经损伤</>": {
+            "en": "When dealing damage, deals an additional <@ba.vup>10%</> as <$ba.dt.neural2>Nervous Impairment</>",
+            "color": "extra",
+            "note": "new mods lor-d",
+            "name": "char_293_thorns",
+            "code": "uniequip_003_thorns"
+        },
+        "在<@ba.kw>集成战略</>中，攻击速度+50，每秒恢复4%生命值": {
+            "en": "In <@ba.kw>Integrated Strategies</>, ASPD+50,  restores 4% of Max HP every second ",
+            "color": "extra",
+            "note": "new mods isw-a",
+            "name": "char_437_mizuki",
+            "code": "uniequip_004_mizuki"
+        },
+        "在<@ba.kw>集成战略</>中，每有一个携带攻击回复技能的干员在场，空弦攻击距离+1（最高提升至+3）": {
+            "en": "In <@ba.kw>Integrated Strategies</>, for each operators with Offensive Recovery skill on the field, Attack Range +1 (up to +3)",
+            "color": "extra",
+            "note": "new mods isw-a",
+            "name": "char_332_archet",
+            "code": "uniequip_004_archet"
         }
     },
     "parts": [

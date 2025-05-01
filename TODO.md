@@ -25,5 +25,19 @@
     - bea-y
 
 ### EP15 : Dissociative Recombination
+- Talent > Mod
+    - Windscoot
 - Trait
     - age-y
+
+### The Masses' Travels
+- Trait
+    - Confess-47
+    - Gracebearer (Primal Guard)
+    - LIB-X
+    - BLS-Y
+    - LOR-D 
+    - Mizuki isw-a
+    - Archetto isw-a
+
+### Add kroos skin switch
