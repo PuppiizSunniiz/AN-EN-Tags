@@ -2,12 +2,6 @@ body {
     overflow: unset;
 }
 
-body.modal-open#akhrchars {
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-}
-
 .clickthrough {
     pointer-events: none;
 }
@@ -1566,6 +1560,26 @@ body.modal-open#akhrchars {
     cursor: pointer;
     touch-action: none;
   }
+
+table#table-matuasge {
+    width: 100%;
+    table-layout: fixed;
+}
+
+table#table-matuasge th,
+table#table-matuasge td {
+    padding: 0.5em;
+    text-align: left;
+}
+
+table#table-matuasge .t-text {
+    width: 100px;
+    white-space: nowrap;
+}
+
+table#table-matuasge .flex {
+    width: 50%;
+}
 
 #bottom-nav{
     position:absolute;

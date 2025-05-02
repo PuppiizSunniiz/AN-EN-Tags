@@ -1,6 +1,6 @@
 $.holdReady(true);
 
-//console.log = function () { }
+console.log = function () { }
 
 var db = {}
 var tlracedict = {};

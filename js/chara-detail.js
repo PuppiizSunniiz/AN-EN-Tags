@@ -1079,7 +1079,8 @@
 
     function toggleExclusive(el) {
         $(el).toggleClass("filter-exclusive filter-nonexclusive");
-        clearFilter($(`#clear-filter-${$(el).attr("id").slice(12)}`).attr("clear-data"));
+        if ($(el).attr("id") !== "filter-name-faction") clearFilter($(`#clear-filter-${$(el).attr("id").slice(12)}`).attr("clear-data"));
+        else $(el).html($(el).html() == "Main Faction"?"All Factions":"Main Faction")
         if ($(el).attr("id") == "filter-name-class") actualizeBranch();
 
         actualizeFilter();
@@ -1087,7 +1088,7 @@
 
     function toggleBtn(el) {
         let section = $(el).attr("section");
-        let exclusive = section && $(el).hasClass("btn-secondary") && ($(`#filter-name-${section}`).hasClass("filter-exclusive") || $(`#filter-name-${section}`).hasClass("exclusive-filter"));
+        let exclusive = section && $(el).hasClass("btn-secondary") && ($(`#filter-name-${section}`).hasClass("filter-exclusive") || section == "faction");
 
         if (exclusive) $(`.op-${section}`).removeClass("btn-primary").addClass("btn-secondary");
         $(el).toggleClass("btn-secondary btn-primary");
@@ -1309,10 +1310,11 @@
             return op_rarity.includes(char.rarity)
         })
         if (op_gender.length) ops = exclusive_gender ? ops.filter(char => op_gender[0] == query(db.chars2, "name_cn", char.name).sex)
-                                                     : ops.filter(char => op_gender.includes(query(db.chars2, "name_cn", char.name).sex));
+                                                        : ops.filter(char => op_gender.includes(query(db.chars2, "name_cn", char.name).sex));
         if (op_tag.length) ops = exclusive_tag ? ops.filter(char => getTags(char).filter(tag => op_tag.includes(tag)).length == op_tag.length)
-                                               : ops.filter(char => getTags(char).filter(tag => op_tag.includes(tag)).length > 0);
-        if (op_faction&&op_faction.length) ops = ops.filter(char => [char.nationId,char.groupId,char.teamId].includes(op_faction[0]));
+                                                : ops.filter(char => getTags(char).filter(tag => op_tag.includes(tag)).length > 0);
+        if (op_faction.length) ops = exclusive_faction ? ops.filter(char => Object.values(char.mainPower).includes(op_faction[0]))
+                                                        : ops.filter(char => [Object.values(char.mainPower), (char.subPower ?? []).map(a=>Object.values(a)).flat()].flat().includes(op_faction[0]))
         if (op_skill.length) ops = exclusive_skill ? ops.filter(char =>
                                                         char.skills.filter(skill =>
                                                             db.skills[skill.skillId].levels.filter(sp =>

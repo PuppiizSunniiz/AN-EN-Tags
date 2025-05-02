@@ -632,9 +632,9 @@ function mat_modal(){
 
     // Tier 5-1
     for(var Tier = 5;Tier > 0;Tier--){
-        modalhtml.push(`<tr class="tr-matusage"><td>Tier ${Tier}</td>`)
+        modalhtml.push(`<tr class="tr-matusage"><td class="t-text">Tier ${Tier}</td>`)
         LangLib.forEach(Lang => {
-            modalhtml.push('<td>')
+            modalhtml.push('<td class="t-half">')
             matLib.forEach(id => {
                 if(id.slice(-1)==Tier && id.length==5 && mat_total[Lang][id]){
                         modalhtml.push('<div class="internal-container" style="position: relative;width:100px;display: inline-block;">' +
@@ -650,9 +650,9 @@ function mat_modal(){
     }
 
     // Skill Book
-    modalhtml.push(`<tr class="tr-matusage"><td>Skill Book</td>`)
+    modalhtml.push(`<tr class="tr-matusage"><td class="t-text">Skill Book</td>`)
     LangLib.forEach(Lang => {
-        modalhtml.push('<td>')
+        modalhtml.push('<td class="t-half">')
         matLib.forEach(id => {
             if(id.length==4){
                     modalhtml.push('<div class="internal-container" style="position: relative;width:100px;display: inline-block;">' +
@@ -666,10 +666,10 @@ function mat_modal(){
     })
     modalhtml.push('</tr>')
     // Module
-    modalhtml.push(`<tr class="tr-matusage"><td>Module Material</td>`)
+    modalhtml.push(`<tr class="tr-matusage"><td class="t-text">Module Material</td>`)
     console.log(matLib)
     LangLib.forEach(Lang => {
-        modalhtml.push('<td>')
+        modalhtml.push('<td class="t-half">')
         matLib.slice(-3,).forEach(id => {
                     modalhtml.push('<div class="internal-container" style="position: relative;width:100px;display: inline-block;">' +
                                 '<img class="item-rarity" width=100 height=100 style="top: 0; left: 0; z-index: 0;" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/material/bg/item-' + (id.includes("update_token_1")?'4':id.includes("mod")?'5':String(id % 10)) + '.png">' +
