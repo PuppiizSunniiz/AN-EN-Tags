@@ -172,6 +172,39 @@ body {
     opacity: 0.5;
 }
 
+#operatorsResult .ak-shadow-small{
+    position: relative;
+}
+
+.op-grid-gamemode{
+    z-index: 2;
+    position: absolute;
+    right: 0px;
+    background: #222;
+    width: 20px;
+    text-align: center;
+}
+
+.ak-shadow-small .op-grid-gamemode {
+    bottom: 0px;
+}
+
+.op-image-grid .op-grid-gamemode {
+    bottom: 25px;
+}
+
+.op-image-grid2 .op-grid-gamemode {
+    bottom: 19px;
+}
+
+.op-grid-gamemode.AC {
+    color: #1da;
+}
+
+.op-grid-gamemode.IS {
+    color: red;
+}
+
 .name {
     top: 0px;
     font-size: 0.8em;

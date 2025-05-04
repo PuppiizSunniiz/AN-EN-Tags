@@ -233,9 +233,11 @@
             return false;
         })
 
-        $(window).click(function() {
-            $('#operatorsResult').empty();
-            $('#operatorsResult').hide();
+        $(window).click(function(event) {
+            if (!$(event.target).is('#to-tag')){
+                $('#operatorsResult').empty();
+                $('#operatorsResult').hide();
+            }
         });
 
         $("#Chibi-Show").click(function(){
@@ -879,10 +881,11 @@
                     var nameTL = char['name_'+lang];
                     var id = char.id
                     var rarity = char.level;
+                    var gamemode = query(db.chars2, "id", char.id).gamemode
 
                     // console.log(rarity);
                     if(rarity!=0)
-                    result.push({'name':name,'name_cn':name_cn,'name_readable':unreadable,'nameTL':nameTL,'id':id,rarity});
+                        result.push({'name':name, 'name_cn':name_cn, 'name_readable':unreadable, 'nameTL':nameTL, 'id':id, rarity, gamemode});
                 }
             });
             // console.log(result)
@@ -955,6 +958,7 @@
                         $("#operatorsResult").append(
                             `${extrathing}<li class="selectop-grid2" onclick="selectOperator('${result[i].id}')">
                             <div class="op-image-grid2">
+                                ${result[i].gamemode=="BASE"?"":'<div class="op-grid-gamemode ' + result[i].gamemode +'">' + result[i].gamemode + '</div>'}
                                 <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">
                             </div>
                             <div class="${opcurrname.length>12?opcurrname.length>16?"namesmaller":"namesmall":"name"} ak-font-novecento ak-center nameshadow">${opcurrname}</div>
@@ -972,6 +976,7 @@
                         $("#operatorsResult").append(
                             `<li class="selectop-grid3 ak-rare-${result[i].rarity}" onclick="selectOperator('${result[i].id}')">
                             <div class="op-image-grid2">
+                                ${result[i].gamemode=="BASE"?"":'<div class="op-grid-gamemode ' + result[i].gamemode +'">' + result[i].gamemode + '</div>'}
                                 <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">
                             </div>
                             <div class="nametext ${opcurrname.length>10?opcurrname.length>15?"namesmaller":"name":"nameshort"} ak-center blacktext">${opcurrname}</div>
@@ -983,7 +988,11 @@
                         $("#operatorsResult").addClass("opresult-list");
                         $("#operatorsResult").css("text-align","left");
                         $("#operatorsResult").append(`
-                        <li class=" ak-shadow-small ak-rare-${result[i].rarity}"style="width:100%;cursor: pointer;margin-bottom:2px" onclick="selectOperator('${result[i].id}')">${image} ${result[i].name_readable?`[${result[i].name_readable}]`:""} ${result[i].nameTL} (${result[i].name})</li>`);
+                            <li class=" ak-shadow-small ak-rare-${result[i].rarity}" style="width:100%; cursor:pointer; margin-bottom:2px; position:relative;" onclick="selectOperator('${result[i].id}')">
+                                ${image}
+                                ${result[i].name_readable?`[${result[i].name_readable}]`:""} ${result[i].nameTL} (${result[i].name})
+                                ${result[i].gamemode=="BASE"?"":'<div class="op-grid-gamemode ' + result[i].gamemode +'">' + result[i].gamemode + '</div>'}
+                            </li>`);
                     }
                 }
             }else{
@@ -1384,11 +1393,13 @@
                 numrar+=1
             }
             var unreadable = query(db.unreadNameTL,"name",char.appellation).name_en
+            var gamemode = query(db.chars2, "id", char.id).gamemode
             return `
             ${extrathing}
             <li class="selectop-grid ak-shadow" onclick="selectOperator('${getId(char)}')">
             <div class="op-image-grid">
                 ${GetLogo(char)?`<div class="op-grid-faction"><img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/${GetLogo(char)?GetLogo(char).toLowerCase():"none"}.png" title="${GetLogo(char)?GetLogoInfo(char).powerCode:"None"}"></div>`:""}
+                ${gamemode=="BASE"?"":'<div class="op-grid-gamemode ' + gamemode +'">' + gamemode + '</div>'}
                 <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${getId(char)}.png">
             </div>
             <div class="${char.appellation.length>12?char.appellation.length>16?"namesmaller":"namesmall":"name"} ak-font-novecento ak-center">${unreadable?`[${unreadable}]`:""} ${char.appellation}</div>
