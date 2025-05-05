@@ -1762,7 +1762,7 @@
                             </button>
                         `:""}
 
-                        <a class="btn tabbing-btns tabbing-btns-middle" style="${extraSkin[i].dynIllustId?"width:62px":""}" data-toggle='pill' href='#opCG_S${i}_tab' onClick='ChangeSkin("${extraSkin[i].portraitId.replace("#","_")}","","${extraSkin[i].skinId}")'>
+                        <a class="btn tabbing-btns tabbing-btns-middle" style="${extraSkin[i].dynIllustId?"width:62px":""}" data-toggle='pill' href='#opCG_S${i}_tab' onClick='ChangeSkin("${extraSkin[i].portraitId.replace("#","_")}","","${extraSkin[i].skinId}"${extraSkin[i].spIllustId?`,"#opCG_S${i}_tab"`:""})'>
                             <div style="display:inline-block;height:100%;vertical-align:middle;"></div>
                             <img class='skinimage' style="max-width: 48px;max-height: 48px;margin-left:-5px;margin-top:1px" src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${encodeURIComponent(extraSkin[i].avatarId)}${sus && opdataFull.id == "char_298_susuro"?"sus":""}.png'>
                         </a></li>
@@ -6330,13 +6330,27 @@
         $(widgettext).text(curranimation[animIndex].name)
     }
 
-    function ChangeSkin(name = "", pers = "", id = ""){
+    function ChangeSkin(name = "", pers = "", id = "",sp = ""){
         currskin = name
         var skinname = currskin.split(opdataFull.id)[1]?name.split(opdataFull.id)[1]:""
         console.log(opdataFull.id)
         console.log(skinname)
         console.log(currskin)
         console.log(db.skintable.charSkins[id])
+
+        if (sp){
+            if($(sp).hasClass("skinswitch")){
+                if ($(sp+" img").attr("src").includes("_sp"))
+                    $(sp+" img").attr("src", $(sp+" img").attr("src").replace("_sp.png",".png"))
+                else
+                    $(sp+" img").attr("src", $(sp+" img").attr("src").replace(".png","_sp.png"))
+            }else{
+                $(sp).addClass("skinswitch")
+            }
+        }else{
+            $("#tabs-opCG div").removeClass(("skinswitch"))
+        }
+
         if(db.skintable.charSkins[id] && db.skintable.charSkins[id].voiceId)
             currVoiceID = db.skintable.charSkins[id].voiceId
         else
