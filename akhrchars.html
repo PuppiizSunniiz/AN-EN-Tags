@@ -118,10 +118,22 @@
                             <div class="btn btn-danger btn-clear" id="clear-filter-subclass" onclick="clearFilter('.op-subclass')" clear-data=".op-subclass">Clear</div>
                         </div> -->
                         <div class='filter-category'>
+                            <div id="filter-name-gamemode" class="filter-name filter-exclusive">Mode</div>
+                            <div class='filter-category-content'>
+                                <div class="btn btn-sm my-1 filter-btn op-gamemode btn-primary ALL" onclick="toggleBtn(this)" section="gamemode" data-id="ALL">ALL</div>
+                                <div class="btn btn-sm my-1 filter-btn op-gamemode btn-secondary" onclick="toggleBtn(this)" section="gamemode" data-id="BASE">BASE</div>
+                                <div class="btn btn-sm my-1 filter-btn op-gamemode btn-secondary" onclick="toggleBtn(this)" section="gamemode" data-id="IS">IS</div>
+                                <div class="btn btn-sm my-1 filter-btn op-gamemode btn-secondary" onclick="toggleBtn(this)" section="gamemode" data-id="AC">AC</div>
+                            </div>
+                            <div class="btn btn-danger btn-clear" id="clear-filter-gamemode" onclick="clearFilter('.op-gamemode');toggleBtn($('.ALL'))" clear-data=".op-gamemode">Clear</div>
+                        </div>
+                        <div class='filter-category'>
                             <div id="filter-name-gender" class="btn filter-name filter-exclusive" onclick="toggleExclusive(this)">Gender</div>
                             <div class='filter-category-content'>
                                 <div class="btn btn-secondary btn-sm my-1 op-gender filter-btn" onclick="toggleBtn(this)" section="gender" data-id="0"></div>
                                 <div class="btn btn-secondary btn-sm my-1 op-gender filter-btn" onclick="toggleBtn(this)" section="gender" data-id="1"></div>
+                                <div class="btn btn-secondary btn-sm my-1 op-gender filter-btn" onclick="toggleBtn(this)" section="gender" data-id="2"></div>
+                                <div class="btn btn-secondary btn-sm my-1 op-gender filter-btn" onclick="toggleBtn(this)" section="gender" data-id="3"></div>
                             </div>
                             <div class="btn btn-danger btn-clear" id="clear-filter-gender" onclick="clearFilter('.op-gender')" clear-data=".op-gender">Clear</div>
                         </div>
@@ -129,24 +141,24 @@
                         <div class='filter-category'>
                             <div id="filter-name-tag" class="btn filter-name filter-exclusive" onclick="toggleExclusive(this)">Tags</div>
                             <div class='filter-category-content'>
-                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Melee"></div>
-                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Ranged"></div>
-                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Healing"></div>
-                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Support"></div>
-                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="DPS"></div>
-                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="AoE"></div>
-                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Slow"></div>
-                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Survival"></div>
-                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Defense"></div>
-                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Debuff"></div>
-                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Shift"></div>
-                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Crowd Control"></div>
-                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Nuker"></div>
-                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Summon"></div>
-                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Fast-Redeploy"></div>
-                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="DP-Recovery"></div>
-                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Robot"></div>
-                                <div class="btn btn-secondary btn-sm my-1 op-tag filter-btn-s" onclick="toggleBtn(this)" data-id="Elemental"></div>
+                                <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="Melee"></div>
+                                <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="Ranged"></div>
+                                <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="Healing"></div>
+                                <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="Support"></div>
+                                <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="DPS"></div>
+                                <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="AoE"></div>
+                                <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="Slow"></div>
+                                <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="Survival"></div>
+                                <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="Defense"></div>
+                                <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="Debuff"></div>
+                                <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="Shift"></div>
+                                <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="Crowd Control"></div>
+                                <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="Nuker"></div>
+                                <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="Summon"></div>
+                                <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="Fast-Redeploy"></div>
+                                <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="DP-Recovery"></div>
+                                <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="Robot"></div>
+                                <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="Elemental"></div>
                             </div>
                             <div class="btn btn-danger btn-clear" id="clear-filter-tag" onclick="clearFilter('.op-tag')" clear-data=".op-tag">Clear</div>
                         </div>
@@ -154,11 +166,11 @@
                         <div class='filter-category'>
                             <div id="filter-name-skill" class="btn filter-exclusive filter-name" onclick="toggleExclusive(this)">Skill type</div>
                             <div class='filter-category-content'>
-                                <div class="btn btn-secondary btn-sm my-1 op-skill filter-btn" section="skill" onclick="toggleBtn(this)" data-id=1>Auto Recovery</div>
-                                <div class="btn btn-secondary btn-sm my-1 op-skill filter-btn" section="skill" onclick="toggleBtn(this)" data-id=2>Offensive Recovery</div>
-                                <div class="btn btn-secondary btn-sm my-1 op-skill filter-btn" section="skill" onclick="toggleBtn(this)" data-id=4>Defensive Recovery</div>
-                                <div class="btn btn-secondary btn-sm my-1 op-skill filter-btn" section="skill" onclick="toggleBtn(this)" data-id=8>Passive</div>
-                                <div class="btn btn-secondary btn-sm my-1 op-ammo  filter-btn" section="skill" onclick="toggleBtn(this)" data-id="ammo">Ammo-based</div>
+                                <div class="btn btn-sm my-1 filter-btn op-skill btn-secondary" section="skill" onclick="toggleBtn(this)" data-id=1>Auto Recovery</div>
+                                <div class="btn btn-sm my-1 filter-btn op-skill btn-secondary" section="skill" onclick="toggleBtn(this)" data-id=2>Offensive Recovery</div>
+                                <div class="btn btn-sm my-1 filter-btn op-skill btn-secondary" section="skill" onclick="toggleBtn(this)" data-id=4>Defensive Recovery</div>
+                                <div class="btn btn-sm my-1 filter-btn op-skill btn-secondary" section="skill" onclick="toggleBtn(this)" data-id=8>Passive</div>
+                                <div class="btn btn-sm my-1 filter-btn op-ammo  btn-secondary" section="skill" onclick="toggleBtn(this)" data-id="ammo">Ammo-based</div>
                             </div>
                             <div class="btn btn-danger btn-clear" id="clear-filter-skill" onclick="clearFilter('.op-skill');clearFilter('.op-ammo');" clear-data=".op-skill">Clear</div>
                         </div>

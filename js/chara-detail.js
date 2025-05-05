@@ -1052,36 +1052,6 @@
         return list
     }
 
-    function getSubclassHtml(btn) {
-        function subclassHtml(data_id, data_name) {
-            return `<div class="btn btn-secondary btn-sm my-1 op-subclass filter-btn-s" onclick="toggleBtn(this)" section="subclass" data-id="${data_id}">${data_name}</div>`
-        }
-
-        switch ($(btn).attr("data-id"))
-        {
-            case "CASTER":      // CASTER (ST, AOE)
-                return `${subclassHtml("CASTER-ST", "ST Caster")}${subclassHtml("CASTER-AOE", "AoE Caster")}`;
-            case "WARRIOR":     // GUARD (ST, AOE, RANGED)
-                return `${subclassHtml("GUARD-ST", "ST Guard")}${subclassHtml("GUARD-AOE", "AoE Guard")}${subclassHtml("GUARD-RANGED", "Ranged Guard")}`;
-            case "MEDIC":       // MEDIC (ST, AOE)
-                return `${subclassHtml("MEDIC-ST", "ST Medic")}${subclassHtml("MEDIC-AOE", "AoE Medic")}`;
-            case "SNIPER":      // SNIPER (ST, AOE)
-                return `${subclassHtml("SNIPER-ST", "ST Sniper")}${subclassHtml("SNIPER-AOE", "AoE Sniper")}`;
-            case "SPECIAL":     // SPECIALIST (PUSH, PULL, QUICK-REDEPLOY, SPIKE)
-                return `${subclassHtml("SPECIAL-REDEPLOY", "Fast-Redeploy")}${subclassHtml("SPECIAL-PUSH", "Push Specialist")}${subclassHtml("SPECIAL-PULL", "Pull Specialist")}${subclassHtml("SPECIAL-SPIKES", "Spikes Specialist")}`;
-            case "SUPPORT":     // SUPPORTER (SLOW, SUMMON, DEBUFF, BUFF)
-                return `${subclassHtml("SUPPORT-SLOW", "Slow")}${subclassHtml("SUPPORT-SUMMON", "Summoner")}${subclassHtml("SUPPORT-DEBUFF", "Debuffer")}${subclassHtml("SUPPORT-BUFF", "Buffer")}`;
-            case "TANK":        // DEFENDER (NORMAL, HEALING)
-                return `${subclassHtml("DEFENDER-NORMAL", "Defender")}${subclassHtml("DEFENDER-HEALING", "Healing Defender")}`;
-            case "PIONEER":     // VANGUARD (DP ON TIME, DP ON KILL, NO DP)
-                return `${subclassHtml("VANGUARD-DP-KILL", "DP on kill")}${subclassHtml("VANGUARD-DP-TIME", "DP on time")}${subclassHtml("VANGUARD-NO-DP", "No DP")}`;
-        }
-    }
-
-    function actualizeSubclass() {
-        $("#subclass-container").html($(".op-class.btn-primary").map((_, btn) => getSubclassHtml(btn)).get().join(""));
-    }
-
     function actualizeBranch(){
         $("#branch-container").html($(".op-class.btn-primary").map((_, btn) => getBranchclassHtml(btn)).get().join(""));
     }
@@ -1101,8 +1071,8 @@
 
         if (exclusive) $(`.op-${section}`).removeClass("btn-primary").addClass("btn-secondary");
         $(el).toggleClass("btn-secondary btn-primary");
+        if (!$(".op-gamemode.btn-primary").map((_, btn) => $(btn).attr("data-id")).get().length) $(".ALL").removeClass("btn-secondary").addClass("btn-primary");
         if ($(el).hasClass("op-class")){
-            // actualizeSubclass();
             actualizeBranch();
         }
 
@@ -1118,7 +1088,7 @@
 
     function clearFilter(cls) {
         $(cls).removeClass("btn-primary").addClass("btn-secondary");
-        if (cls.includes(".op-class")) actualizeSubclass();
+        if (cls.includes(".op-class")) actualizeBranch();
 
         actualizeFilter();
     }
@@ -1178,73 +1148,13 @@
         return char.subProfessionId
     }
 
-    function getSubclass(char) {
-        let tags = getTags(char);
-
-
-        //Handpicked subclass check
-        let sub = db.subclass[char.profession]
-
-        if(sub){
-            var subclasses = []
-            $.each(sub,function(key,v){
-                console.log(v,char.appellation)
-                if(v.includes(char.appellation))subclasses.push(key)
-            })
-            if(subclasses.length>0)return subclasses
-        }
-
-
-        //Automatic subclass check
-        /* NOTE: would like to add "sp generator", but there is not really any class
-                 it belongs to and filtering it without hardcoding seems very tricky */
-
-        switch (char.profession)
-        {
-            case "CASTER":      // CASTER (ST, AOE)
-                return tags.includes("群攻") ? "CASTER-AOE" : "CASTER-ST";
-            case "WARRIOR":     // GUARD (ST, AOE, RANGED)
-                return tags.includes("群攻") ? "GUARD-AOE" :
-                       char.phases.slice(-1)[0].rangeId.split("").filter(c => c > 1).length ? "GUARD-RANGED" :
-                       "GUARD-ST";
-            case "MEDIC":       // MEDIC (ST, AOE)
-                /*  NOTE: eh, don't really like this hack. Half hardcoded and doesn't even
-                 *        take Silence S2 and Gavial S2 into consideration */
-                return char.description == "同时恢复三个友方单位的生命" ? "MEDIC-AOE" : "MEDIC-ST";
-            case "SNIPER":      // SNIPER (ST, AOE)
-                return tags.includes("群攻") ? "SNIPER-AOE" : "SNIPER-ST";
-            case "SPECIAL":     // SPECIALIST (PUSH, PULL, FAST-REDEPLOY, SPIKE)
-                return tags.includes("快速复活") ? "SPECIAL-REDEPLOY" :
-                       // same dirty hack as above
-                       char.description == "同时攻击阻挡的<@ba.kw>所有敌人</>\\n可以放置于远程位" ? "SPECIAL-PUSH" :
-                       char.description == "技能可以使敌人产生<@ba.kw>位移</>\\n可以放置于远程位" ? "SPECIAL-PULL" :
-                       "SPECIAL-SPIKES";
-            case "SUPPORT":     // SUPPORTER (SLOW, SUMMON, DEBUFF, BUFF)
-                return tags.includes("减速") ? "SUPPORT-SLOW" :
-                       tags.includes("召唤") ? "SUPPORT-SUMMON" :
-                       tags.includes("削弱") ? "SUPPORT-DEBUFF" :
-                       "SUPPORT-BUFF";
-            case "TANK":        // DEFENDER (NORMAL, HEALING)
-                return tags.includes("治疗") ? "DEFENDER-HEALING" : "DEFENDER-NORMAL";
-            case "PIONEER":     // VANGUARD (DP ON TIME, DP ON KILL, NO DP)
-                return char.trait && char.trait.candidates.filter(trait =>
-                        trait.blackboard.filter(data =>
-                            data.key == "cost").length).length ? "VANGUARD-DP-KILL" :   // DP on kill is a trait
-                       char.skills.filter(skill =>
-                            db.skills[skill.skillId].levels.filter(level =>
-                                level.blackboard.filter(data =>
-                                    data.key == "cost").length).length).length ? "VANGUARD-DP-TIME" : // DP on time is a skill
-                       "VANGUARD-NO-DP";
-        }
-    }
-
     function actualizeFilter() {
         $("#selectedopclass").html("");
 
         let op_class = $(".op-class.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
-        let op_subclass = $(".op-subclass.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
         let op_branch = $(".op-branch.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
         let op_rarity = $(".op-rarity.btn-primary").map((_, btn) => parseInt($(btn).attr("data-id"))).get();
+        let op_gamemode = $(".op-gamemode.btn-primary").map((_, btn) => $(btn).attr("data-id")).get()[0];
         let op_gender = $(".op-gender.btn-primary").map((_, btn) => db.gender[$(btn).attr("data-id")]["sex_cn"]).get();
         let op_tag = $(".op-tag.btn-primary").map((_, btn) => db.ktags[$(btn).attr("data-id")]["cn"]).get();
         let op_faction = $(".op-faction.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
@@ -1252,16 +1162,15 @@
         let op_ammo = $(".op-ammo.btn-primary").map((_, btn) => $(btn).attr("data-id")).get();
 
         let exclusive_class = $("#filter-name-class").hasClass("filter-exclusive");
-        let exclusive_subclass = $("#filter-name-subclass").hasClass("filter-exclusive");
         let exclusive_gender = $("#filter-name-gender").hasClass("filter-exclusive");
         let exclusive_tag = $("#filter-name-tag").hasClass("filter-exclusive");
         let exclusive_faction = $("#filter-name-faction").hasClass("filter-exclusive");
         let exclusive_skill = $("#filter-name-skill").hasClass("filter-exclusive");
 
         var totalRarity = {}
-
         // Advanced options
-        if (op_gender.length == 0 &&
+        if (op_gamemode == "ALL" &&
+            op_gender.length == 0 &&
             op_tag.length == 0 &&
             op_faction.length == 0 &&
             op_skill.length == 0 &&
@@ -1270,7 +1179,7 @@
 
         if (op_class.length == 0 &&
             op_branch.length == 0 &&
-            op_subclass.length == 0 &&
+            op_gamemode == "ALL" &&
             op_rarity.length == 0 &&
             op_gender.length == 0 &&
             op_tag.length == 0 &&
@@ -1284,20 +1193,16 @@
         Object.keys(db.chars).forEach(id => {
             let curops = db.chars[id]
             curops.id = id
-            if(curops.profession != "TOKEN" && curops.profession != "TRAP"){
-                if(id=="char_512_aprot"){
-
-                }else{
-                    ops.push(curops)
-                }
+            if(curops.profession != "TOKEN" && curops.profession != "TRAP" && id !="char_512_aprot"){
+                ops.push(curops)
             }
         });
         console.log(ops)
-        // let ops = Object.values(db.chars).filter(char => char.profession != "TOKEN" && char.profession != "TRAP");
 
         // FILTERING
+        if (op_gamemode !== "ALL") ops = ops.filter(char => op_gamemode == query(db.chars2, "id", char.id).gamemode)
         if (op_class.length) ops = exclusive_class ? ops.filter(char => op_class[0] == char.profession)
-                                                   : ops.filter(char => op_class.includes(char.profession));
+                                                    : ops.filter(char => op_class.includes(char.profession));
         if (op_branch.length) ops = ops.filter(char => {
             //add support for multiple subclass per operator
 
@@ -3843,30 +3748,32 @@
         var tokencheck
         var tokencheck = db.item_tableEN.items[opdataFull.potentialItemId]
         if(!tokencheck) tokencheck = db.item_table.items[opdataFull.potentialItemId]
-        console.log(tokencheck)
+        console.log(recruitcheck.itemDesc, tokencheck)
 
 
         // post both
-        textTL.push(`<div class="col-12 ${(!tokencheck?"col-sm-12":"col-sm-6")} top-buffer storysplit">
-                        <table class="story-table"><th colspan=2>Recruitment Contract</th>
+        if(recruitcheck.itemDesc){
+            textTL.push(`<div class="col-12 ${(!tokencheck?"col-sm-12":"col-sm-6")} top-buffer storysplit">
+                            <table class="story-table"><th colspan=2>Recruitment Contract</th>
+                            <tr>
+                                <td>${recruitcheck.itemDesc}</td>
+                            </tr>
+                            <tr>
+                                <td>${recruitcheck.itemUsage}</td>
+                            </tr></table>
+                            </div>`)
+            if(tokencheck){
+                textTL.push(`<div class="col-12 col-sm-6 top-buffer storysplit">
+                        <table class="story-table"><th colspan=2>Token</th>
                         <tr>
-                            <td>${recruitcheck.itemDesc}</td>
+                            <td>${tokencheck.description}</td>
                         </tr>
                         <tr>
-                            <td>${recruitcheck.itemUsage}</td>
-                        </tr></table>
+                            <td>${tokencheck.usage}</td>
+                        </tr>
+                        </table>
                         </div>`)
-        if(tokencheck){
-            textTL.push(`<div class="col-12 col-sm-6 top-buffer storysplit">
-                    <table class="story-table"><th colspan=2>Token</th>
-                    <tr>
-                        <td>${tokencheck.description}</td>
-                    </tr>
-                    <tr>
-                        <td>${tokencheck.usage}</td>
-                    </tr>
-                    </table>
-                    </div>`)
+            }
         }
 
 

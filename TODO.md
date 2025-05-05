@@ -40,6 +40,5 @@
     - Mizuki isw-a
     - Archetto isw-a
 
-### Add kroos skin switch
 ### Add Hidden Faction
     - replace Faction image hoverable to shown sub/hidden faction
