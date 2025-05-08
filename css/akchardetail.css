@@ -2050,26 +2050,46 @@ button[id^='class-change-']:hover #class-icon{
     background-color: #222;
     font-size: 15px;
 }
-#op-fact-image2{
+#op-faction-image2{
     background-color: #222;
-    margin-left: 15px;
+    margin-left: 10px;
     object-fit: contain;
     width: 30px;
     height: 30px;
-    transition-duration: 200ms;
 }
-#op-fact-image2:hover{
-    background-color: #555;
-    margin:10px;
-    margin-left: 15px;
-    width: 200px;
-    height: 200px;
+#op-faction-btn{
+    background-color: #222;
+    color: #999;
+    border: none;
+    outline: 0
 }
-#op-fact-text{
-    padding:2px;
+
+#op-faction-image3{
+    background-color: #333;
+    object-fit: contain;
+    width: 30px;
+    height: 30px;
+}
+
+#op-faction-sub{
+    display: flex;
+    position: inherit;
+    padding: 5px;
+    margin: 2px 15px;
+    background: #333 !important;
+}
+
+.op-hid-faction, .op-sub-faction{
+    width: 50%;
+}
+
+#op-faction-text{
+    display: inline-block;
+    text-wrap: wrap;
+    max-width: 180px;
+    padding: 2px;
     vertical-align: middle;
-    /* background-color: #333; */
-    /* margin-left: 40px; */
+    text-align: left;
 }
 .ak-browsebtn{
  min-width: 100px;

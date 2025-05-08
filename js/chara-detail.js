@@ -1498,15 +1498,67 @@
             $("#elite-topnav").empty();
             $("#tabs-opData").empty();
             $("#op-taglist").empty();
-            $("#op-fact-image").empty();
-            $("#op-fact-text").empty();
+            $("#op-faction-btn").empty().attr("onclick","")
+            $("#op-faction-sub").empty().css("display","none")
 
             var logo = GetLogo(opdataFull)
 
             if(logo){
+                var faction_all = [logo.replace("logo_", "")]
+                var faction_sub = Object.values(opdataFull.mainPower).filter(k => k)
+                var faction_hidden = (opdataFull.subPower ?? []).map(a => Object.values(a)).flat().filter(k => k)
+                var faction_sub_text = ""
+                
+                faction_sub.pop()
+                
+                if (faction_sub.length){
+                    faction_sub_text += `<div class="op-sub-faction" ${!faction_hidden.length?'style="width:100%"':""}>Sub Faction :`
+                    for(faction of faction_sub){
+                        if(!faction_all.includes(faction)){
+                            faction_sub_text += `<div>
+                                                    <div id="op-faction-image" style="display: inline;">
+                                                        <img id="op-faction-image3" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/logo_${faction}.png">
+                                                    </div>
+                                                    <div id="op-faction-text" style="display: inline;">
+                                                        ${db.handbookTeam[faction]?db.handbookTeam[faction].powerCode:""}
+                                                    </div>
+                                                </div>`
+                            faction_all.push(faction)
+                        }
+                    }
+                    faction_sub_text += `</div>`
+                }
+                if (faction_hidden.length){
+                    faction_sub_text += `<div class="op-hid-faction" ${!faction_sub.length?'style="width:100%"':""}>Hidden Faction :`
+                    for(faction of faction_hidden){
+                        if(!faction_all.includes(faction)){
+                            faction_sub_text += `<div>
+                                                    <div id="op-faction-image" style="display: inline;">
+                                                        <img id="op-faction-image3" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/logo_${faction}.png">
+                                                    </div>
+                                                    <div id="op-faction-text" style="display: inline;">
+                                                        ${db.handbookTeam[faction]?db.handbookTeam[faction].powerCode:""}
+                                                    </div>
+                                                </div>`
+                        }
+                    }
+                    faction_sub_text += `</div>`
+                }
                 $("#op-faction").attr("src","https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/"+logo.toLowerCase()+".png");
-                $("#op-fact-image").html(`<img id='op-fact-image2' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/${logo.toLowerCase()}.png'>`)
-                $("#op-fact-text").html(`${GetLogoInfo(opdataFull).powerCode}`)
+
+                $("#op-faction-btn").html(`
+                    <div id="op-faction-image" style="display: inline;">
+                        <img id='op-faction-image2' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/${logo.toLowerCase()}.png'>
+                    </div>
+                    <div id="op-faction-text">
+                        ${GetLogoInfo(opdataFull).powerCode}
+                    </div>
+                    ${faction_sub_text?'<i class="fas fa-caret-down"></i>':""}`)
+
+                if (faction_sub_text) {
+                    $("#op-faction-btn").attr("onclick", 'SlideToggler2("op-faction-sub", $(this))')
+                    $("#op-faction-sub").html(faction_sub_text)
+                }
             }else{
                 $("#op-faction").attr("src","https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/none.png")
             }

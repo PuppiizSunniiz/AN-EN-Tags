@@ -41,6 +41,3 @@
     - LOR-D 
     - Mizuki isw-a
     - Archetto isw-a
-
-### Add Hidden Faction
-    - replace Faction image hoverable to shown sub/hidden faction
