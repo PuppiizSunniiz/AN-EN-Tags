@@ -39,13 +39,13 @@
 # Akenemy
 ## Need Fix !!!
     - Autochess variant maps
-## Working on
     - Mechanic training stage
-    - Sidestory by year
 ## To do
+    - Responsive for Mobile
     - Enemies Talent & Abilities
     - Foldable Details & Abilities Blackboard
     - Enemy stat by Stage **
+    - Sidestory by year
 ## Later
     - Chibi
 

@@ -132,8 +132,8 @@ def script_result(text):
         with open("py/script.txt", "w", encoding = "utf-8") as filepath:
             filepath.write(text)
     elif isinstance(text,dict):
-        with open("py/script.json", "w") as filepath:
-            json.dump(text,filepath,indent = 4, ensure_ascii = False)
+        with open("py/script.json", "w", encoding = "utf-8") as filepath:
+            json.dump(text, filepath, indent = 4, ensure_ascii = False) # ensure_ascii = False
     
     file = f'py/script.{"txt" if isinstance(text,str) else "json"}'
     print(f'Script Completed -> {file}')
@@ -275,6 +275,89 @@ def va_artist():
                     
     if va : script_result(("\n").join(va))
 
+def subpower_list():
+    temp = []
+    for char in DB["json_character"]:
+        if DB["json_character"][char]["subPower"]:
+            temp.append(DB["json_character"][char]["appellation"])
+
+    print (temp)
+
+def stage_kill_test():
+    IGNORED = {"enemy_10082_mpweak","enemy_10072_mpprhd"}
+    test = {"all":{}, "filtered_start":{},"filtered_end":{}, "enemies":{"KILL":0, "NORMAL":[], "ELITE":[], "BOSS":[], "Extra":[]}}
+    times = 0
+    enemies = {"KILL":{}, "Extra":{}}
+    count = [0,0]
+    stage_path = r'json\gamedata\ArknightsGameData\zh_CN\gamedata\levels\obt\training\level_training_26.json'
+    stage_key = stage_path.split("\\")[-1].replace("level_", "").replace(".json", "").replace("training","tr")
+    script_json = json_load(stage_path)
+
+    stages_json = json_load(r'test\stage.json')
+
+    def enemy_motion_search(key):
+        for data in DB["json_enemy_database"]["enemies"]:
+            if data["Key"] == key:
+                return data["Value"][0]["enemyData"]["motion"]["m_value"]
+
+    def enemy_ref():
+        temp = {}
+        for enemy_data in script_json.get("enemyDbRefs"):
+            if enemy_data["overwrittenData"] and enemy_data["overwrittenData"]["prefabKey"]["m_defined"]:
+                temp[enemy_data["id"]] = enemy_data["overwrittenData"]["prefabKey"]["m_value"]
+            else :
+                temp[enemy_data["id"]] = enemy_data["id"]
+        return temp
+
+    enemy_ref_json = enemy_ref()
+    print(enemy_ref_json)
+
+    height = len(script_json["mapData"]["map"])
+    width = len(script_json["mapData"]["map"][0])
+    for wave in script_json.get("waves",[]):
+        times += wave["preDelay"] + wave["postDelay"]
+        for fragment in wave.get("fragments",[]):
+            times += fragment["preDelay"]
+            for action in fragment.get("actions",[]):
+                times += action["preDelay"]
+                routes = script_json["routes"][action["routeIndex"]]
+                currroute = {
+                                                                "actionType"        : action["actionType"],
+                                                                "key"               : action["key"],
+                                                                "count"             : action["count"],
+                                                                "startPosition"     : routes["startPosition"],
+                                                                "TEST_start"        : script_json["mapData"]["map"][-routes["startPosition"]["row"]-1][routes["startPosition"]["col"]],
+                                                                "TEST_tile_start"   : script_json["mapData"]["tiles"][script_json["mapData"]["map"][-routes["startPosition"]["row"]-1][routes["startPosition"]["col"]]]["tileKey"],
+                                                                "endPosition"       : routes["endPosition"],
+                                                                "TEST_end"          : script_json["mapData"]["map"][-routes["endPosition"]["row"]-1][routes["endPosition"]["col"]],
+                                                                "TEST_tile_end"     : script_json["mapData"]["tiles"][script_json["mapData"]["map"][-routes["endPosition"]["row"]-1][routes["endPosition"]["col"]]]["tileKey"],
+                                                                "checkpoints"       : routes["checkpoints"]
+                                                            }
+                test["all"][action["routeIndex"]] = currroute
+                # Is enemy // Spawning // not mechanic enemy
+                if action["key"].split("_")[0] == "enemy" and action["actionType"] == "SPAWN" and action["key"] not in IGNORED:
+                    #from Red box // or // prespawn
+                    if script_json["mapData"]["tiles"][script_json["mapData"]["map"][-routes["startPosition"]["row"]-1][routes["startPosition"]["col"]]]["tileKey"] == "tile_start" or times == 0: 
+                        test["filtered_start"][action["routeIndex"]] = currroute
+                        enemies["KILL"][enemy_ref_json[action["key"]]] = enemies["KILL"].get(enemy_ref_json[action["key"]], 0) + action["count"]
+                        count[0] += action["count"]
+                    #Go to Red box // #legal spawn movement
+                    elif script_json["mapData"]["tiles"][script_json["mapData"]["map"][-routes["endPosition"]["row"]-1][routes["endPosition"]["col"]]]["tileKey"] == "tile_end":# and enemy_motion_search(action["key"]) == routes["motionMode"]:
+                        test["filtered_end"][action["routeIndex"]] = currroute
+                        enemies["Extra"][enemy_ref_json[action["key"]]] = enemies["Extra"].get(enemy_ref_json[action["key"]], 0) + action["count"]
+                        count[1] += action["count"]
+
+    for enemy in enemies["KILL"].keys():
+        test["enemies"]["KILL"] += enemies["KILL"][enemy]
+        test["enemies"][DB["json_enemy_handbook"]["enemyData"][enemy]["enemyLevel"]].append([enemy, DB["json_enemy_handbook"]["enemyData"][enemy]["name"], DB["json_enemy_handbookEN"]["enemyData"][enemy]["name"] if enemy in DB["json_enemy_handbookEN"]["enemyData"].keys() else "" , enemies["KILL"][enemy]])
+
+    for enemy in enemies["Extra"].keys():
+        test["enemies"]["Extra"].append([enemy, DB["json_enemy_handbook"]["enemyData"][enemy]["name"], DB["json_enemy_handbookEN"]["enemyData"][enemy]["name"] if enemy in DB["json_enemy_handbookEN"]["enemyData"].keys() else "" , enemies["Extra"][enemy]])
+
+    print(f'\n# {stage_key} ({stages_json["stages"][stage_key]["code"]})\nMAP Height : {height}, MAP Width : {width}')
+    print("Enemy count = ", count[0], "### More suspect = ", count[1])
+    script_result(test)
+
 ################################################################################################################################################################################################################################################
 # DB Keys
 ################################################################################################################################################################################################################################################
@@ -291,9 +374,100 @@ def va_artist():
 ################################################################################################################################################################################################################################################
 # Script Playground
 ################################################################################################################################################################################################################################################
-temp = []
-for char in DB["json_character"]:
-    if DB["json_character"][char]["subPower"]:
-        temp.append(DB["json_character"][char]["appellation"])
+def stage_kills():
+    IGNORED = {"enemy_10082_mpweak", "enemy_10072_mpprhd", "enemy_3009_mpprss"} # square / Hand / EYESOFPRIESTESS
+    result_json = {}
+    result_text = []
+    for stage_path in [rf'json\gamedata\ArknightsGameData\zh_CN\gamedata\levels\obt\main\level_main_15-{i+1:02}.json' for i in range(18)] + [r'json\gamedata\ArknightsGameData\zh_CN\gamedata\levels\obt\training\level_training_26.json'] + [rf'json\gamedata\ArknightsGameData\zh_CN\gamedata\levels\obt\hard\level_hard_15-{i+1:02}.json' for i in range(4)]:
+        temp = {"KILL":0, "NORMAL":[], "ELITE":[], "BOSS":[], "Extra":[], "Extra_details":[]}
+        times = 0
+        enemies = {"KILL":{}, "Extra":{}}
+        count = [0,0]
+        stage_key = stage_path.split("\\")[-1].replace("level_", "").replace(".json", "").replace("training","tr")
+        script_json = json_load(stage_path)
 
-print (temp)
+        stages_json = json_load(r'test\stage.json')
+
+        def enemy_count(key):
+            for data in DB["json_enemy_database"]["enemies"]:
+                if data["Key"] == key:
+                    return data["Value"][0]["enemyData"]["notCountInTotal"]["m_value"]
+
+        def enemy_ref():
+            temp = {}
+            for enemy_data in script_json.get("enemyDbRefs"):
+                if enemy_data["overwrittenData"] and enemy_data["overwrittenData"]["prefabKey"]["m_defined"]:
+                    temp[enemy_data["id"]] = enemy_data["overwrittenData"]["prefabKey"]["m_value"]
+                else :
+                    temp[enemy_data["id"]] = enemy_data["id"]
+            return temp
+
+        enemy_ref_json = enemy_ref()
+
+        height = len(script_json["mapData"]["map"])
+        width = len(script_json["mapData"]["map"][0])
+        for wave in script_json.get("waves",[]):
+            times += wave["preDelay"] + wave["postDelay"]
+            for fragment in wave.get("fragments",[]):
+                times += fragment["preDelay"]
+                for action in fragment.get("actions",[]):
+                    if action["hiddenGroup"] and action["hiddenGroup"] != "group1": continue
+                    if action["actionType"] == "SPAWN": times += action["preDelay"]
+                    routes = script_json["routes"][action["routeIndex"]]
+                    currroute = {
+                                                                    "actionType"        : action["actionType"],
+                                                                    "key"               : action["key"],
+                                                                    "count"             : action["count"],
+                                                                    "hiddenGroup"       : action["hiddenGroup"],
+                                                                    "routeIndex"        : action["routeIndex"],
+                                                                    "startPosition"     : routes["startPosition"],
+                                                                    "TEST_start"        : script_json["mapData"]["map"][-routes["startPosition"]["row"]-1][routes["startPosition"]["col"]],
+                                                                    "TEST_tile_start"   : script_json["mapData"]["tiles"][script_json["mapData"]["map"][-routes["startPosition"]["row"]-1][routes["startPosition"]["col"]]]["tileKey"],
+                                                                    "endPosition"       : routes["endPosition"],
+                                                                    "TEST_end"          : script_json["mapData"]["map"][-routes["endPosition"]["row"]-1][routes["endPosition"]["col"]],
+                                                                    "TEST_tile_end"     : script_json["mapData"]["tiles"][script_json["mapData"]["map"][-routes["endPosition"]["row"]-1][routes["endPosition"]["col"]]]["tileKey"],
+                                                                    "checkpoints"       : routes["checkpoints"]
+                                                                }
+                    # Is enemy // Spawning // not mechanic enemy
+                    if action["key"].split("_")[0] == "enemy" and action["actionType"] == "SPAWN" and action["key"] not in IGNORED:
+                        #from Red box // or // prespawn
+                        if script_json["mapData"]["tiles"][script_json["mapData"]["map"][-routes["startPosition"]["row"]-1][routes["startPosition"]["col"]]]["tileKey"] in ["tile_start", "tile_flystart"] or times == 0: 
+                            enemies["KILL"][enemy_ref_json[action["key"]]] = enemies["KILL"].get(enemy_ref_json[action["key"]], 0) + action["count"]
+                            count[0] += action["count"]
+                        #Go to Red box // #legal spawn movement
+                        elif script_json["mapData"]["tiles"][script_json["mapData"]["map"][-routes["endPosition"]["row"]-1][routes["endPosition"]["col"]]]["tileKey"] == "tile_end":# and enemy_motion_search(action["key"]) == routes["motionMode"]:
+                            temp["Extra_details"].append(currroute)
+                            enemies["Extra"][enemy_ref_json[action["key"]]] = enemies["Extra"].get(enemy_ref_json[action["key"]], 0) + action["count"]
+                            count[1] += action["count"]
+
+        for enemy in enemies["KILL"].keys():
+            temp["KILL"] += enemies["KILL"][enemy]
+            temp[DB["json_enemy_handbook"]["enemyData"][enemy]["enemyLevel"]].append([enemy, DB["json_enemy_handbook"]["enemyData"][enemy]["name"], DB["json_enemy_handbookEN"]["enemyData"][enemy]["name"] if enemy in DB["json_enemy_handbookEN"]["enemyData"].keys() else "" , enemies["KILL"][enemy]])
+
+        for enemy in enemies["Extra"].keys():
+            temp["Extra"].append([enemy, DB["json_enemy_handbook"]["enemyData"][enemy]["name"], DB["json_enemy_handbookEN"]["enemyData"][enemy]["name"] if enemy in DB["json_enemy_handbookEN"]["enemyData"].keys() else "" , enemies["Extra"][enemy]])
+
+        print(f'\n# {stage_key} ({stages_json["stages"][stage_key]["code"]})\nMAP Height : {height}, MAP Width : {width}')
+        print("Enemy count = ", count[0], "### More suspect = ", count[1])
+        result_json[f'{stage_key} ({stages_json["stages"][stage_key]["code"]})'] = temp
+    
+    script_result(result_json)
+    
+    for stage in result_json.keys():
+        result_text.append(f'\n{"-"*80}\n\n# {stage}\n')
+        result_text.append(f'\tKill counter : {result_json[stage]["KILL"]}\n')
+        for level in ["NORMAL", "ELITE", "BOSS"]:
+            if result_json[stage][level]:
+                result_text.append(f'\t{level}')
+                for enemy in result_json[stage][level]:
+                    result_text.append(f'\t{enemy[3]:3} X {enemy[0]:25}\t{enemy[1]:30}\t{enemy[2]}')
+        if result_json[stage]["Extra"]:
+            result_text.append("\n\tExtra")
+            for enemy in result_json[stage]["Extra"]:
+                result_text.append(f'\t{enemy[3]:3} X {enemy[0]:25}\t{enemy[1]:30}\t{enemy[2]}')
+        
+    script_result(("\n").join(result_text))
+        
+        
+
+stage_kills()
