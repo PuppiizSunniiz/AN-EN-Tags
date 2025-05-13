@@ -122,22 +122,29 @@ DB = load_json()
 ################################################################################################################################################################################################################################################
 # Old Script
 ################################################################################################################################################################################################################################################
-def script_result(text):
+def script_result(text, show = False):
     '''
-        output result
-            str     >   text
-            dict    >   json
+        Output result
+            STR, LIST   >   TXT
+            DICT        >   JSON
     '''
     if isinstance(text,str):
         with open("py/script.txt", "w", encoding = "utf-8") as filepath:
             filepath.write(text)
+    elif isinstance(text,list):
+        with open("py/script.txt", "w", encoding = "utf-8") as filepath:
+            filepath.write("\n".join(text))
     elif isinstance(text,dict):
         with open("py/script.json", "w", encoding = "utf-8") as filepath:
             json.dump(text, filepath, indent = 4, ensure_ascii = False) # ensure_ascii = False
     
-    file = f'py/script.{"txt" if isinstance(text,str) else "json"}'
-    print(f'Script Completed -> {file}')
-    subprocess.run(f'code --reuse-window -g "{os.path.abspath(file)}"', shell=True)
+    file = f'py/script.{"txt" if isinstance(text,str) or isinstance(text,list) else "json"}'
+    print(f'\nScript Completed -> {file}')
+    if show:
+        subprocess.run(f'code --reuse-window -g "{os.path.abspath(file)}"', shell=True)
+
+def list_to_array(LIST : list) -> str :
+    return [elem for elem in LIST if elem not in [f'\n{"-"*80}\n', ""]]
 
 def skin_lister() :
     '''
@@ -358,23 +365,7 @@ def stage_kill_test():
     print("Enemy count = ", count[0], "### More suspect = ", count[1])
     script_result(test)
 
-################################################################################################################################################################################################################################################
-# DB Keys
-################################################################################################################################################################################################################################################
-
-#'json_activity', 'json_audio', 'json_battle_equip', 'json_building', 'json_campaign', 'json_chapter', 'json_character', 'json_charm',
-#'json_charword', 'json_char_meta', 'json_char_patch', 'json_checkin', 'json_climb_tower', 'json_clue', 'json_crisis', 'json_crisis_v2',
-#'json_display_meta', 'json_enemy_handbook', 'json_favor', 'json_gacha', 'json_gamedata', 'json_handbook_info', 'json_handbook', 'json_handbook_team',
-#'json_item', 'json_medal', 'json_mission', 'json_open_server', 'json_player_avatar', 'json_range', 'json_replicate', 'json_retro', 'json_roguelike',
-#'json_roguelike_topic', 'json_sandbox_perm', 'json_sandbox', 'json_shop_client', 'json_skill', 'json_skin', 'json_stage', 'json_story_review_meta',
-#'json_story_review', 'json_story', 'json_tech_buff', 'json_tip', 'json_token', 'json_uniequip', 'json_zone', 'json_enemy_database'
-
-# EN
-
-################################################################################################################################################################################################################################################
-# Script Playground
-################################################################################################################################################################################################################################################
-def stage_kills():
+def stage_kills(): #need check for drop in like kevin
     IGNORED = {"enemy_10082_mpweak", "enemy_10072_mpprhd", "enemy_3009_mpprss"} # square / Hand / EYESOFPRIESTESS
     result_json = {}
     result_text = []
@@ -468,6 +459,77 @@ def stage_kills():
         
     script_result(("\n").join(result_text))
         
-        
 
-stage_kills()
+################################################################################################################################################################################################################################################
+# DB Keys
+################################################################################################################################################################################################################################################
+
+#'json_activity', 'json_audio', 'json_battle_equip', 'json_building', 'json_campaign', 'json_chapter', 'json_character', 'json_charm',
+#'json_charword', 'json_char_meta', 'json_char_patch', 'json_checkin', 'json_climb_tower', 'json_clue', 'json_crisis', 'json_crisis_v2',
+#'json_display_meta', 'json_enemy_handbook', 'json_favor', 'json_gacha', 'json_gamedata', 'json_handbook_info', 'json_handbook', 'json_handbook_team',
+#'json_item', 'json_medal', 'json_mission', 'json_open_server', 'json_player_avatar', 'json_range', 'json_replicate', 'json_retro', 'json_roguelike',
+#'json_roguelike_topic', 'json_sandbox_perm', 'json_sandbox', 'json_shop_client', 'json_skill', 'json_skin', 'json_stage', 'json_story_review_meta',
+#'json_story_review', 'json_story', 'json_tech_buff', 'json_tip', 'json_token', 'json_uniequip', 'json_zone', 'json_enemy_database'
+
+# EN
+
+################################################################################################################################################################################################################################################
+# Script Playground
+################################################################################################################################################################################################################################################
+
+def infinity_skill():
+    infinity = []
+    exclude = ["skchr_typhon_2", "skchr_thorns_3", "skchr_buildr_2"]
+    bypass = ["skchr_swire2_1", "skchr_swire2_2", "skchr_marcil_2"]
+    skill_CN = DB["json_skill"]
+    skill_EN = DB["json_skillEN"]
+    text_to_find = ["Can switch between the default state and the following state", 
+                    "Can switch between the original state and the following state",
+                    "Can switch between the initial state and the following state",
+                    "Can switch between initial state and the following state:",
+                    "Unlimited duration, can manually deactivate skill",
+                    "Unlimited duration", 
+                    "Infinite duration",
+                    "Manually Bypass",
+                    "持续时间无限"]
+    
+    i_range = range(len(text_to_find))
+    temp = [[] for i in i_range]
+    
+    for skill in skill_EN:
+        if skill.find("skchr") == -1 and skill.find("skcom") == -1 or skill in exclude:
+            continue
+        #print(skill, skill.find("skchar") != -1, skill_EN[skill]["levels"][0]["description"])
+        if skill in bypass:
+            temp[len(text_to_find) - 2].append(skill)
+            infinity.append(skill)
+            continue
+        if skill_EN[skill]["levels"][0]["description"]:
+            for txt in range(len(text_to_find) - 2):
+                if skill_EN[skill]["levels"][0]["description"].find(text_to_find[txt]) != -1:
+                    temp[txt].append(skill)
+                    infinity.append(skill)
+                    break
+    
+    infinity.append(f'\n{"-" * 80}\n')
+    
+    for skill in skill_CN:
+        if skill.find("skchr") == -1 and skill.find("skcom") == -1:
+            continue
+        #print(skill, skill.find("skchar") != -1, skill_CN[skill]["levels"][0]["description"])
+        if skill in infinity + exclude:
+            #print(skill,"DUPE key")
+            continue
+        if skill_CN[skill]["levels"][0]["description"] and skill_CN[skill]["levels"][0]["description"].find("持续时间无限") != -1:
+            temp[len(text_to_find) - 1].append(skill)
+            infinity.append(skill)
+    
+    print("\nSkills :\n", list_to_array(infinity))
+    print("\nOperators :\n", sorted(set([skill.split("_")[1] for skill in list_to_array(infinity)])))
+    for i in i_range:
+        if temp[i]:
+            print("\n# ", text_to_find[i],"\n",temp[i])
+    
+    script_result(infinity)
+    
+infinity_skill()

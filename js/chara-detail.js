@@ -108,6 +108,7 @@
     var globallevel =[1,1,1]
     var globalskill = 0
     var skillValue
+    const TRUE_INFINITY = ['skchr_lolxh_1', 'skchr_strong_1', 'skchr_strong_2', 'skchr_nothin_2', 'skchr_talr_1', 'skchr_flameb_2', 'skchr_whitew_1', 'skchr_platnm_2', 'skchr_absin_1', 'skchr_folivo_1', 'skchr_tuye_2', 'skchr_whispr_2', 'skchr_vodfox_1', 'skchr_quercu_1', 'skchr_ash_1', 'skchr_acnipe_2', 'skchr_bgsnow_1', 'skchr_phenxi_3', 'skchr_ray_2', 'skchr_narant_1', 'skchr_marcil_2', 'skchr_logos_1', 'skchr_lin_1', 'skchr_gdglow_2', 'skchr_whitw2_1', 'skchr_lisa_2', 'skchr_skadi2_2', 'skchr_cetsyr_1', 'skchr_lmlee_1', 'skchr_lmlee_3', 'skchr_swire2_1', 'skchr_swire2_2', 'skchr_swire2_3', 'skchr_weedy_2', 'skchr_agoat2_1', 'skchr_jesca2_1', 'skchr_nearl2_1', 'skchr_f12yin_2', 'skchr_svrash_2', 'skchr_hodrer_2', 'skchr_ulpia_2', 'skchr_huang_2', 'skchr_surtr_3', 'skchr_siege2_2']
     var israritygrouped
     var talentValue = [0,0,0]
     var talentLimit = []
@@ -1950,7 +1951,10 @@
                     if(skillblacklistrange.includes(v2.prefabId)){
                         grid = ""
                     }
-
+                    
+                    var spDuration
+                    var spDurType
+                    var spDurationName
                     var spType = (v2.spData.spType)
                     var spTypeHtml = ""
                     switch (spType){
@@ -1960,10 +1964,25 @@
                         case 8: spTypeHtml = "Passive"; break;
                         default: spTypeHtml = spType; break;
                     }
-                    var spDuration= (v2.duration==0?"Instant Attack":v2.duration==-1?"Infinite":v2.duration + " Seconds")
-                    var spDurType = (v2.duration==0?"Instant":v2.duration==-1?"Infinite":"Number")
-                    // console.log(v2)
-                    var spDurationName = (v2.duration==0?"":"Duration")
+
+                    if(v2.duration > 0){
+                        spDuration = v2.duration + " Seconds"
+                        spDurType = "Number"
+                        spDurationName = "Duration"
+                    }else if(TRUE_INFINITY.includes(skillId)){
+                        spDuration = "Infinite"
+                        spDurType = "Infinite"
+                        spDurationName = "Duration"
+                    }else if(v2.durationType == "AMMO"){
+                        spDuration = "Ammo-based"
+                        spDurType = "Ammo-based"
+                        spDurationName = ""
+                    }else{
+                        spDuration = "Instant Attack"
+                        spDurType = "Instant"
+                        spDurationName = ""
+                    }
+
                     var skilldetails =[]
                     // console.log(skillname)
                     // console.log(skillData.levels[i2])
@@ -1976,14 +1995,16 @@
 
                         skilldetails.push(skilljson)
                         if(skillinfo.key=="force"||skillinfo.key=="base_force_level"||skillinfo.key=="attack@force") force= skillinfo.value
-                        if(v2.duration==-1){
-                            if(skillinfo.key =="duration"){
-                                spDuration = skillinfo.value;
-                                spDurationName = "Target Effect Duration"
-                            }
-                            if(v2.prefabId=="skchr_pasngr_1"){
-                                spDuration = "Instant Attack";
-                                spDurationName = ""
+                        if(v2.duration == -1){
+                            if(["duration", "projectile_delay_time", "max_duration"].includes(skillinfo.key)){
+                                if (["skchr_liskam_1"].includes(skillId)){
+                                    spDuration = skillinfo.value + " Seconds"
+                                    spDurType = "Number"
+                                    spDurationName = "Duration"
+                                }else if (spDuration != "Infinite"){
+                                    spDuration = skillinfo.value;
+                                    spDurationName = "Target Effect Duration"
+                                }
                             }
                         }
                         if(skillinfo.key == "ability_range_forward_extend"){
@@ -5628,10 +5649,10 @@
             return desc
         }
 
-        // catch </> missing case (Executor the Ex Foedere S1)
+        // catch </> missing case (Executor the Ex Foedere S1 EN)
         if ((desc.match(/<[@][^>]+>/g) ?? 0).length - (desc.match(/<\/>/g) ?? 0).length == 1) desc += "</>"
 
-        // catch nested <@><@></></>
+        // catch nested <@><@></></> (Shamare S2 / Lumen S3)
         if (desc.match(/<[@][^>]+>(?:(?!<\/>(?=[^<]*<[$@])).)*?<[@][^>]+>(?:(?!<\/>).)+?<\/>(?:(?!<\/>).)+?<\/>/g)){
             desc = desc.replace(/(<[@][^>]+>(?:(?!<\/>(?=[^<]*<[$@])).)*?)<[@]([^>]+)>((?:(?!<\/>).)+?)<\/>((?:(?!<\/>).)+?<\/>)/g, function(m,the_begin, rtf, text, the_rest) {
                 console.log([desc])
@@ -5663,7 +5684,7 @@
         })}
         console.log(desc)
 
-        desc = desc.replace(/<[@](.+?)>(.+?)<\/>/g, function(m, rtf, text) {
+        desc = desc.replace(/<[@]([^>]+)>((?:(?!<\/>).)*)<\/>/g, function(m, rtf, text) { ///<[@](.+?)>(.+?)<\/>/g cant catch blank 2nd capture group (Glaucus S1 EN)
             let rich = db.dataconst.richTextStyles[rtf];
             let rich2 = db.named_effects.termDescriptionDict[rtf];
             if (!rich2){
@@ -5738,6 +5759,9 @@
                     return `<div class="stat-important">${value}</div>`
                 }
             }
+            console.log(content,skill)
+            //Duration not in blackboard (Heavyrain S1)
+            if (content = "duration") return `<div class="stat-important">${skill.duration}</div>`
             return m
         })
 
