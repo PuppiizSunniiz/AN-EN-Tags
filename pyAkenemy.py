@@ -527,7 +527,7 @@ def get_stage_gamemode(stage_event : str) -> str :
         elif stage_event.find("IS#") != -1 :
             return "is"
         
-        elif re.search(r'act[0-9]{1,2}(lock|vecb|vautochess|arcade|enemyduel)',stage_event) or stage_event in ["act42d0"]: # act42d0 = DOS
+        elif re.search(r'act[0-9]{1,2}(lock|vecb|vautochess|arcade|enemyduel|break)',stage_event) or stage_event in ["act42d0"]: # act42d0 = DOS
             return "exp"
         
         elif stage_event.find("bossrush") != -1 :

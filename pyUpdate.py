@@ -350,8 +350,7 @@ mod_tl = {}
 
 for new_mod_list in NEW_MODS:
     if new_mod_list[1] in json_temp_mod.keys():
-            #skip_mod += f'\n\t{new_mod_list[0]} --- {new_mod_list[1]}'
-            pass
+        continue
     try:
         char_key = new_mod_list[0]
         new_mod_id = new_mod_list[1]
