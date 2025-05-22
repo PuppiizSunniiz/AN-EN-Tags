@@ -1038,7 +1038,7 @@ def akenemy_collect(json_zone, json_zoneEN):
                     elif zone in json_zoneEN["zones"]:
                         akenemy["gamemode"][gamemode]["activity"][activity]["zone"][zone]["name"] = json_zoneEN["zones"][zone]["zoneNameSecond"]
                     else :
-                        akenemy["gamemode"][gamemode]["activity"][activity]["zone"][zone]["name"] = json_zone["zones"][zone]["zoneNameSecond"]
+                        akenemy["gamemode"][gamemode]["activity"][activity]["zone"][zone]["name"] = (json_zoneEN["zones"][re.sub(r'(act[0-9]{1,2})sre(\w+)',r'\1side\2',zone)]["zoneNameSecond"] if re.match(r'(act[0-9]{1,2})sre(\w+)',zone) else json_zone["zones"][zone]["zoneNameSecond"])
                 except:
                     akenemy["gamemode"][gamemode]["activity"][activity]["zone"][zone]["name"] = zone
     
