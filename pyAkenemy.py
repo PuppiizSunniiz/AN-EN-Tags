@@ -26,6 +26,7 @@ akenemy = {
                         "is"        : {"name" : "IS : Integrated Strategies", "activity" : {}},         # Mode : IS             -> Activity : IS#XX         -> Zone : Floor XX          -> Stage : XYZ
                         "exp"       : {"name" : "Experimental Gamemode", "activity" : {}},
                         "tn"        : {"name" : "TN : Trials for Navigator", "activity" : {}},          # Mode : TN             -> Activity : TN#XX                                     -> Stage : TN-XX
+                        "vb"        : {"name" : "VB : Vector Breakthrough", "activity" : {}},
                         "sss"       : {"name" : "SSS : Stationary Security Service", "activity" : {}},  # Mode : SSS            -> Activity : Tower                                     -> Stage : LT-XX
                         "ra"        : {"name" : "RA : Reclamation Algorithm", "activity" : {}},         # Mode : RA             -> Activity : RA#XX         -> Zone : Fight/Rush/Zone   -> Stage : XYZ
                         "fun"       : {"name" : "FUN : April Fool", "activity" : {}},
@@ -527,8 +528,10 @@ def get_stage_gamemode(stage_event : str) -> str :
         elif stage_event.find("IS#") != -1 :
             return "is"
         
-        elif re.search(r'act[0-9]{1,2}(lock|vecb|vautochess|arcade|enemyduel|break)',stage_event) or stage_event in ["act42d0"]: # act42d0 = DOS
+        elif re.search(r'act[0-9]{1,2}(lock|vautochess|arcade|enemyduel)',stage_event) or stage_event in ["act42d0"]: # act42d0 = DOS
             return "exp"
+        elif re.search(r'act[0-9]{1,2}(vecb|break)',stage_event):
+            return "vb"
         
         elif stage_event.find("bossrush") != -1 :
             return "tn"
@@ -1040,9 +1043,9 @@ def akenemy_collect(json_zone, json_zoneEN):
                     akenemy["gamemode"][gamemode]["activity"][activity]["zone"][zone]["name"] = zone
     
     ### Sort Event
-    mainzone_sorter = {"Training":0,"Story Environment":1,"Normal":2,"Standard Environment":2,"Challenge":3,"Adverse Environment":3}
+    mainzone_sorter = {"Training":0, "Story Environment":1, "Normal":2, "Standard Environment":2, "Challenge":3, "Adverse Environment":3}
     for gamemode in akenemy["gamemode"].keys():
-        if gamemode in ["sidestory","coop","tn","exp"]:
+        if gamemode in ["sidestory", "coop", "tn", "vb", "exp"]:
             sort_event = sorted(akenemy["gamemode"][gamemode]["activity"].items(), reverse = False, key = lambda event : activity_collection["Dict"][event[0].lower()]["startCN"])
             akenemy["gamemode"][gamemode]["activity"] = {x[0]:x[1] for x in sort_event}
         if gamemode in ["sss"]:

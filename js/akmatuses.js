@@ -126,7 +126,7 @@ console.log("materials",materials)
 /*===== Put names into buttons =====*/
 $.when(d0[0],d0[1],d0[2],d0[3]).then(function() {
     $(".btn-tag").each(function() {
-        $(this).text(materials[$(this).attr("mat-id")][lang]?materials[$(this).attr("mat-id")][lang]:materials[$(this).attr("mat-id")]['cn'])
+        $(this).html(materials[$(this).attr("mat-id")][reg]?materials[$(this).attr("mat-id")][reg]:('<span style="color: yellow;">[PH]</span> ' + materials[$(this).attr("mat-id")]['cn']))
     });
 });
 
@@ -475,7 +475,7 @@ function changeUILanguage() {
 
     // rename tags given the language
     $(".btn-tag").each(function (_, btn) {
-        $(btn).text(materials[$(btn).attr("mat-id")][reg]);
+        $(this).html(materials[$(this).attr("mat-id")][reg]?materials[$(this).attr("mat-id")][reg]:('<span style="color: yellow;">[PH]</span> ' + materials[$(this).attr("mat-id")]['cn']))
     });
 
     console.log("done");
@@ -524,7 +524,7 @@ function actualize() {
                         ? "background-color: #AAA"
                         : "background-color: transparent";
 
-        let body = ['<tr class="tr-recommd"><td>', materials[mat_id][lang]?materials[mat_id][lang]:(materials[mat_id]["cn"]+"[PH]"), "</td><td>"];
+        let body = ['<tr class="tr-recommd"><td>', materials[mat_id][lang]?materials[mat_id][lang]:('<span style="color: yellow;">[PH]</span> ' + materials[mat_id]["cn"]), "</td><td>"];
         total_materials[mat_id] = 0;
         console.log(chars)
         for (let char of chars) {

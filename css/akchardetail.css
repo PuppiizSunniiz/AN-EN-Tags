@@ -1612,7 +1612,7 @@ table#table-matuasge td {
 
 table#table-matuasge .t-text {
     width: 100px;
-    white-space: nowrap;
+    text-wrap: auto;
 }
 
 table#table-matuasge .flex {

@@ -365,11 +365,11 @@ def stage_kill_test():
     print("Enemy count = ", count[0], "### More suspect = ", count[1])
     script_result(test)
 
-def stage_kills(): #need check for drop in like kevin
+def stage_kills(output = False): #need check for drop in like kevin
     IGNORED = {"enemy_10082_mpweak", "enemy_10072_mpprhd", "enemy_3009_mpprss"} # square / Hand / EYESOFPRIESTESS
     result_json = {}
     result_text = []
-    for stage_path in [rf'json\gamedata\ArknightsGameData\zh_CN\gamedata\levels\obt\main\level_main_15-{i+1:02}.json' for i in range(18)] + [r'json\gamedata\ArknightsGameData\zh_CN\gamedata\levels\obt\training\level_training_26.json'] + [rf'json\gamedata\ArknightsGameData\zh_CN\gamedata\levels\obt\hard\level_hard_15-{i+1:02}.json' for i in range(4)]:
+    for stage_path in [r'json\gamedata\ArknightsGameData_YoStar\en_US\gamedata\levels\obt\campaign\level_camp_03.json']: #[rf'json\gamedata\ArknightsGameData\zh_CN\gamedata\levels\obt\main\level_main_15-{i+1:02}.json' for i in range(18)] + [r'json\gamedata\ArknightsGameData\zh_CN\gamedata\levels\obt\training\level_training_26.json'] + [rf'json\gamedata\ArknightsGameData\zh_CN\gamedata\levels\obt\hard\level_hard_15-{i+1:02}.json' for i in range(4)]:
         temp = {"KILL":0, "NORMAL":[], "ELITE":[], "BOSS":[], "Extra":[], "Extra_details":[]}
         times = 0
         enemies = {"KILL":{}, "Extra":{}}
@@ -457,25 +457,7 @@ def stage_kills(): #need check for drop in like kevin
             for enemy in result_json[stage]["Extra"]:
                 result_text.append(f'\t{enemy[3]:3} X {enemy[0]:25}\t{enemy[1]:30}\t{enemy[2]}')
         
-    script_result(("\n").join(result_text))
-        
-
-################################################################################################################################################################################################################################################
-# DB Keys
-################################################################################################################################################################################################################################################
-
-#'json_activity', 'json_audio', 'json_battle_equip', 'json_building', 'json_campaign', 'json_chapter', 'json_character', 'json_charm',
-#'json_charword', 'json_char_meta', 'json_char_patch', 'json_checkin', 'json_climb_tower', 'json_clue', 'json_crisis', 'json_crisis_v2',
-#'json_display_meta', 'json_enemy_handbook', 'json_favor', 'json_gacha', 'json_gamedata', 'json_handbook_info', 'json_handbook', 'json_handbook_team',
-#'json_item', 'json_medal', 'json_mission', 'json_open_server', 'json_player_avatar', 'json_range', 'json_replicate', 'json_retro', 'json_roguelike',
-#'json_roguelike_topic', 'json_sandbox_perm', 'json_sandbox', 'json_shop_client', 'json_skill', 'json_skin', 'json_stage', 'json_story_review_meta',
-#'json_story_review', 'json_story', 'json_tech_buff', 'json_tip', 'json_token', 'json_uniequip', 'json_zone', 'json_enemy_database'
-
-# EN
-
-################################################################################################################################################################################################################################################
-# Script Playground
-################################################################################################################################################################################################################################################
+    script_result(("\n").join(result_text),output)
 
 def infinity_skill():
     infinity = []
@@ -531,5 +513,42 @@ def infinity_skill():
             print("\n# ", text_to_find[i],"\n",temp[i])
     
     script_result(infinity)
+
+################################################################################################################################################################################################################################################
+# DB Keys
+################################################################################################################################################################################################################################################
+
+#'json_activity', 'json_audio', 'json_battle_equip', 'json_building', 'json_campaign', 'json_chapter', 'json_character', 'json_charm',
+#'json_charword', 'json_char_meta', 'json_char_patch', 'json_checkin', 'json_climb_tower', 'json_clue', 'json_crisis', 'json_crisis_v2',
+#'json_display_meta', 'json_enemy_handbook', 'json_favor', 'json_gacha', 'json_gamedata', 'json_handbook_info', 'json_handbook', 'json_handbook_team',
+#'json_item', 'json_medal', 'json_mission', 'json_open_server', 'json_player_avatar', 'json_range', 'json_replicate', 'json_retro', 'json_roguelike',
+#'json_roguelike_topic', 'json_sandbox_perm', 'json_sandbox', 'json_shop_client', 'json_skill', 'json_skin', 'json_stage', 'json_story_review_meta',
+#'json_story_review', 'json_story', 'json_tech_buff', 'json_tip', 'json_token', 'json_uniequip', 'json_zone', 'json_enemy_database'
+
+# EN
+
+################################################################################################################################################################################################################################################
+# Script Playground
+################################################################################################################################################################################################################################################
+
+def char_name(show = False):
+    temp = {}
+    DB_EN = DB["json_characterEN"]
+    DB_JP = json_load("json/gamedata/ArknightsGameData_YoStar/ja_JP/gamedata/excel/character_table.json")
+    DB_KR = json_load("json/gamedata/ArknightsGameData_YoStar/ko_KR/gamedata/excel/character_table.json")
     
-infinity_skill()
+    for key in DB_EN.keys():
+        if "trap_" in key:
+            continue
+        if key in temp.keys():
+            temp[f'{DB_EN[key]["name"]} ({key})']
+        else :
+            temp[DB_EN[key]["name"]] = {
+                                            "key" :   key,
+                                            "JP"  :   DB_JP[key]["name"],
+                                            "KR"  :   DB_KR[key]["name"]
+                                        }
+        
+    script_result(temp, show)
+
+char_name(True)
