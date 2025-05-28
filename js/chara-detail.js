@@ -1951,7 +1951,7 @@
                     if(skillblacklistrange.includes(v2.prefabId)){
                         grid = ""
                     }
-                    
+
                     var spDuration
                     var spDurType
                     var spDurationName
@@ -4474,6 +4474,7 @@
         var activeLevel = 0
         var activeElite = 0
         var activePotential = 0
+        var lastPotential = 0
         opdataFull.talents.forEach(currTalent => {
             currTalent.candidates.forEach(currCandidate => {
                 var currlevel = parseInt(currCandidate.unlockCondition.level)
@@ -4507,7 +4508,21 @@
                         }
                     }
                 }
+                lastPotential = currpotent
             });
+            // Add extra Talent slot for non-E2 upgrade talent like Marcille, Exuter
+            if(RarityConvert(opdataFull.rarity.toString()) > 2 && activeElite < 2){
+                for(i = activeElite + 1; i <= 2; i++){
+                    talentObject.req.push(`${i}-${activeLevel}-0`)
+                    talentObject.req2.push([i,activeLevel,0])
+                    talentObject.html[`${i}-${activeLevel}-0`]={req:[i,activeLevel,0],talents:[]}
+                    if (lastPotential > 0) {
+                        talentObject.req.push(`${i}-${activeLevel}-${lastPotential}`)
+                        talentObject.req2.push([i,activeLevel,lastPotential])
+                        talentObject.html[`${i}-${activeLevel}-${lastPotential}`]={req:[activeElite,activeLevel,lastPotential],talents:[]}
+                    }
+                }
+            }
         });
         // console.log(activeElite)
         // console.log(activeLevel)
@@ -4638,10 +4653,13 @@
         </div>
         `)
 
-        //check  active
-        TalentShow(activeElite,activeLevel,activePotential)
-        $(`#tabtalent${activeElite}-${activeLevel}`).toggleClass("active")
-        $(`#tabtalent2${activePotential}`).toggleClass("active")
+        //active talent tab E2P1/3*2*1* Max pot  (avoid talent 1 max at E1 case eg. Marcille Exuter)
+        let limElite    = Math.max(...talentLimit.map(a=>a[0]))
+        let limLevel    = Math.max(...talentLimit.map(a=>a[1]))
+        let limPotential= (RarityConvert(opdataFull.rarity.toString()))>2?0:Math.max(...talentLimit.map(a=>a[2]))
+        TalentShow(limElite,limLevel,limPotential)
+        $(`#tabtalent${limElite}-${limLevel}`).toggleClass("active")
+        $(`#tabtalent2${limPotential}`).toggleClass("active")
     }
 
     function TalentShow(elite,level,potential){
@@ -6142,7 +6160,7 @@
     }
 
 
-    function LoadAnimationToken(tokenkey=globaltoken){
+    function LoadAnimationToken(tokenkey = globaltoken){
         // console.log(spinewidgettoken)
         // console.log(opdataFull)
         // var tokenName =
@@ -6350,9 +6368,10 @@
             }
         }
 
-        if(name != "") chibiName = name
+        if(name.length > 1) chibiName = name
+        else chibiName = opdataFull.id
         if(pers != "") chibipers = pers
-        if(chibipers == 'build')
+                if(chibipers == 'build')
             chibiName.includes("build")?chibiName = chibiName:chibiName = "build_" + chibiName
         else
             chibiName.includes("build")?chibiName = chibiName.split("_").slice(1).join("_"):chibiName = chibiName
