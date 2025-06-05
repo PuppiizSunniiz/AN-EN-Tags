@@ -656,7 +656,8 @@ function enemyDetail(el,level){
                     <th scope="col" class="hovertooltip" data-tooltip="Target becomes aerial and cannot move, attack, or use skills. Duration halved if Weight is greater than 3.">Levitate</th>
                     <th scope="col" class="hovertooltip" data-tooltip="Cannot perform normal attacks when blocked.">Frighten</th>
                     <th scope="col" class="hovertooltip" data-tooltip="Cannot be blocked and runs off uncontrollably">Fear</th>
-                    <th scope="col" class="hovertooltip" data-tooltip="Interrupts enemy attacks once per stack. Can stack up to 3 times. Each stack lasts indefinitely until used. Enemies with resistance lose 1 stack every 5 seconds.">Paralysis</th>
+                    <th scope="col" class="hovertooltip" data-tooltip="Interrupts enemy attacks once per stack. Can stack up to 3 times. Each stack lasts indefinitely until used. Enemies with resistance lose 1 stack every 5 seconds."><span style="color: red;">[PH]</span>Paralysis</th>
+                    <th scope="col" class="hovertooltip" data-tooltip="Cannot be blocked and move to target position."><span style="color: red;">[PH]</span>Attract</th>
                 </tr>
             </thead>
             <tbody>

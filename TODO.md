@@ -5,6 +5,7 @@
     - Tecno
 -  Trait
     - Tecno
+    - Necrass Mod
     - Tecno 's Token
     - aft-x
     - aft-y
@@ -58,3 +59,7 @@
     - SOC-X
     - SOC-Y
     - TRP-X
+
+### To Fix 
+- Tecno Mod Range display
+    - range not on display but added talent (-1)

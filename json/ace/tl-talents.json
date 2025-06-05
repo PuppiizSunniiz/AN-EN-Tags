@@ -8576,5 +8576,99 @@
                 "desc": "When block an enemy for the first time, gains 4 DP immediately and put enemy to <$ba.sleep>Sleep</> for 8 seconds"
             }
         ]
+    ],
+	"char_1042_phatm2": [
+        [
+            {
+                "name": "形为心役",
+                "descCN": "攻击附带相当于攻击力20%的<$ba.dt.neural2>神经损伤</>，并对目标周围其他敌人造成一次相当于攻击力10%的<$ba.dt.neural2>神经损伤</>",
+                "desc": "Attacks deal 20% ATK as <$ba.dt.neural2>Nervous Impairment</>. Additionally, deal 10% ATK as <$ba.dt.neural2>Nervous Impairment</> to enemies near the target."
+            },
+            {
+                "name": "形为心役",
+                "descCN": "攻击附带相当于攻击力23%<@ba.talpu>(+3%)</>的<$ba.dt.neural2>神经损伤</>，并对目标周围其他敌人造成一次相当于攻击力13%<@ba.talpu>(+3%)</>的<$ba.dt.neural2>神经损伤</>",
+                "desc": "Attacks deal 23%<@ba.talpu>(+3%)</> ATK as <$ba.dt.neural2>Nervous Impairment</>. Additionally, deal 13%<@ba.talpu>(+3%)</> ATK as <$ba.dt.neural2>Nervous Impairment</> to enemies near the target."
+            },
+            {
+                "name": "形为心役",
+                "descCN": "攻击附带相当于攻击力25%的<$ba.dt.neural2>神经损伤</>，并对目标周围其他敌人造成一次相当于攻击力15%的<$ba.dt.neural2>神经损伤</>",
+                "desc": "Attacks deal 25% ATK as <$ba.dt.neural2>Nervous Impairment</>. Additionally, deal 15% ATK as <$ba.dt.neural2>Nervous Impairment</> to enemies near the target."
+            },
+            {
+                "name": "形为心役",
+                "descCN": "攻击附带相当于攻击力28%<@ba.talpu>(+3%)</>的<$ba.dt.neural2>神经损伤</>，并对目标周围其他敌人造成一次相当于攻击力18%<@ba.talpu>(+3%)</>的<$ba.dt.neural2>神经损伤</>",
+                "desc": "Attacks deal 28%<@ba.talpu>(+3%)</> ATK as <$ba.dt.neural2>Nervous Impairment</>. Additionally, deal 18%<@ba.talpu>(+3%)</> ATK as <$ba.dt.neural2>Nervous Impairment</> to enemies near the target."
+            },
+            {
+                "name": "形为心役",
+                "descCN": "攻击附带相当于攻击力30%的<$ba.dt.neural2>神经损伤</>，并对目标周围其他敌人造成一次相当于攻击力20%的<$ba.dt.neural2>神经损伤</>",
+                "desc": "Attacks deal 30% ATK as <$ba.dt.neural2>Nervous Impairment</>. Additionally, deal 20% ATK as <$ba.dt.neural2>Nervous Impairment</> to enemies near the target."
+            },
+            {
+                "name": "形为心役",
+                "descCN": "攻击附带相当于攻击力33%<@ba.talpu>(+3%)</>的<$ba.dt.neural2>神经损伤</>，并对目标周围其他敌人造成一次相当于攻击力23%<@ba.talpu>(+3%)</>的<$ba.dt.neural2>神经损伤</>",
+                "desc": "Attacks deal 33%<@ba.talpu>(+3%)</> ATK as <$ba.dt.neural2>Nervous Impairment</>. Additionally, deal 23%<@ba.talpu>(+3%)</> ATK as <$ba.dt.neural2>Nervous Impairment</> to enemies near the target."
+            }
+        ],
+        [
+            {
+                "name": "堕梦",
+                "descCN": "在场时，全场处于<$ba.dt.neural2>神经损伤</>爆发期间的敌人攻击速度-12；攻击范围内的敌人普通攻击时受到70点<$ba.dt.neural2>神经损伤</>",
+                "desc": "Enemies under the burst effect of <$ba.dt.neural2>Nervous Impairment</>, ASPD -12; Enemies within Attack Range receive 70 <$ba.dt.neural2>Nervous Impairment</> when attacking"
+            },
+            {
+                "name": "堕梦",
+                "descCN": "在场时，全场处于<$ba.dt.neural2>神经损伤</>爆发期间的敌人攻击速度-16<@ba.talpu>(+4)</>；攻击范围内的敌人普通攻击时受到70点<$ba.dt.neural2>神经损伤</>",
+                "desc": "Enemies under the burst effect of <$ba.dt.neural2>Nervous Impairment</>, ASPD -16<@ba.talpu>(+4)</>; Enemies within Attack Range receive 70 <$ba.dt.neural2>Nervous Impairment</> when attacking"
+            }
+        ]
+    ],
+    "char_4191_tippi": [
+        [
+            {
+                "name": "片场工作指南",
+                "descCN": "若最近13秒内未受攻击，闪避下一次物理或法术攻击",
+                "desc": "If this unit hasn't been attacked for 13 seconds, dodge next Physical or Arts attack."
+            },
+            {
+                "name": "片场工作指南",
+                "descCN": "若最近12<@ba.talpu>(-1)</>秒内未受攻击，闪避下一次物理或法术攻击",
+                "desc": "If this unit hasn't been attacked for 12<@ba.talpu>(-1)</> seconds, dodge next Physical or Arts attack."
+            },
+            {
+                "name": "片场工作指南",
+                "descCN": "若最近9秒内未受攻击，闪避下一次物理或法术攻击",
+                "desc": "If this unit hasn't been attacked for 9 seconds, dodge next Physical or Arts attack."
+            },
+            {
+                "name": "片场工作指南",
+                "descCN": "若最近8<@ba.talpu>(-1)</>秒内未受攻击，闪避下一次物理或法术攻击",
+                "desc": "If this unit hasn't been attacked for 8<@ba.talpu>(-1)</> seconds, dodge next Physical or Arts attack."
+            }
+        ]
+    ],
+    "char_4198_christ": [
+        [
+            {
+                "name": "诱人美馔",
+                "descCN": "攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力80%的元素伤害",
+                "desc": "Enemies within Attack Range take 80% ATK as Elemental Damage when they <$ba.palsy>Paralyze</>"
+            },
+            {
+                "name": "诱人美馔",
+                "descCN": "攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力90%<@ba.talpu>(+10%)</>的元素伤害",
+                "desc": "Enemies within Attack Range take 90%<@ba.talpu>(+10%)</> ATK as Elemental Damage when they <$ba.palsy>Paralyze</>"
+            },
+            {
+                "name": "诱人美馔",
+                "descCN": "攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力120%的元素伤害",
+                "desc": "Enemies within Attack Range take 120% ATK as Elemental Damage when they <$ba.palsy>Paralyze</>"
+            },
+            {
+                "name": "诱人美馔",
+                "descCN": "攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力130%<@ba.talpu>(+10%)</>的元素伤害",
+                "desc": "Enemies within Attack Range take 130%<@ba.talpu>(+10%)</> ATK as Elemental Damage when they <$ba.palsy>Paralyze</>"
+            }
+        ]
     ]
 }

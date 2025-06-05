@@ -908,6 +908,34 @@
             "note": "new mods isw-a",
             "name": "char_332_archet",
             "code": "uniequip_004_archet"
+        },
+        "不会受到攻击，只能部署在近战位": {
+            "en": "Cannot be attacked, can only deploy on melee tile",
+            "color": "common",
+            "note": "Tragodia 's Token (Blood's whisper)",
+            "name": "Blood's whisper",
+            "code": "token_10054_phatm2_encdool"
+        },
+        "牢笼可以阻挡生成/刷新时本格所有敌人，没有阻挡目标或受到3次来自阻挡目标的攻击后消失，酒神技能结束后额外持续30秒": {
+            "en": "Can block all enemies in tile it summoned/refreshed. Disappears if not blocking or attacked 3 times by blocking enemies. Last for 30 seconds after Tragodia skill end",
+            "color": "extra",
+            "note": "Tragodia 's Token (Cage of chaos)",
+            "name": "Cage of chaos",
+            "code": "token_10055_phatm2_mndclv"
+        },
+        "攻击造成<@ba.kw>法术伤害</>，可以通过击倒敌人生成<@ba.kw>召唤物</>，可攻击到自身<@ba.kw>召唤物</>阻挡的敌人且攻击力提升至<@ba.kw>115%</>": {
+            "en": "Deal <@ba.kw>Arts Damage</></br>Can create <@ba.kw>Summons</> by defeating enemies</br>Can attack enemies blocked by own </>Summons</> with <@ba.kw>115%</> ATK ",
+            "color": "magic",
+            "note": "new mods soc-x",
+            "name": "char_450_necras",
+            "code": "uniequip_002_necras"
+        },
+        "可以使用<@ba.kw>部署费用更低</>的陷阱来协助作战，但陷阱无法放置于敌人已在的格子中，可同时部署的陷阱数量提升": {
+            "en": "Can use <@ba.kw>lower DP cost</> traps to assist in combat, but traps cannot be placed <@ba.kw>on tiles already occupied by an enemy</> , increase number of traps that can be deployed at the same time",
+            "color": "extra",
+            "note": "new mods trp-x",
+            "name": "char_4048_doroth",
+            "code": "uniequip_003_doroth"
         }
     },
     "parts": [
