@@ -5,7 +5,7 @@ console.log = function () { }
 var db = {}
 var tlracedict = {};
 var enemyforfilter = []
-const allimmunity = ["stunImmune","silenceImmune","sleepImmune","frozenImmune","levitateImmune","disarmedCombatImmune","fearedImmune", "palsyImmune"]
+const allimmunity = ["stunImmune","silenceImmune","sleepImmune","frozenImmune","levitateImmune","disarmedCombatImmune","fearedImmune", "palsyImmune", "attractImmune"]
 
 var d0 = $.getJSON("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/gamedata_const.json",function(data){
     db["dataconst"] = data;
@@ -595,7 +595,7 @@ function enemyDetail(el,level){
     var firstattr   = firstEnemyData.attributes
 
     var EnemyImmune = []
-    $(["stun","silence","sleep","frozen","levitate","disarmedCombat","feared","palsy"].forEach(immune =>{
+    $(["stun","silence","sleep","frozen","levitate","disarmedCombat","feared","palsy","attract"].forEach(immune =>{
         if (currattr[immune+"Immune"].m_value != 0 ? currattr[immune+"Immune"].m_value : firstattr[immune+"Immune"].m_value)
             EnemyImmune.push(`<td><span style="color:crimson;font-weight: bold;">Immune</span></td>`)
         else

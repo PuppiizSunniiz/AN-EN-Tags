@@ -120,7 +120,7 @@ def load_json() -> dict :
 DB = load_json()
 
 ################################################################################################################################################################################################################################################
-# Old Script
+# Util
 ################################################################################################################################################################################################################################################
 def script_result(text, show = False):
     '''
@@ -146,7 +146,10 @@ def script_result(text, show = False):
 def list_to_array(LIST : list) -> str :
     return [elem for elem in LIST if elem not in [f'\n{"-"*80}\n', ""]]
 
-def skin_lister() :
+################################################################################################################################################################################################################################################
+# Old Script
+################################################################################################################################################################################################################################################
+def skin_lister(show = False) :
     '''
         list all skin name
     '''
@@ -165,7 +168,7 @@ def skin_lister() :
 
     script_result("\n".join(skin_list))
 
-def skill_icon_lister():
+def skill_icon_lister(show = False):
     '''
         list all skill id
     '''
@@ -189,7 +192,7 @@ def skill_icon_lister():
 
     script_result("\n".join(skill_list))
 
-def ops_e2_talent():
+def ops_e2_talent(show = False):
     '''
         fetch e2 talent both p1 and talent potential
     '''
@@ -203,7 +206,7 @@ def ops_e2_talent():
         char_dict[char] = [[{("upgradeDescription" if x == "description" else x):talent["candidates"][i][x] for x in ["name", "description", "blackboard"]} for i in ([-1] if talent["candidates"][-1]["requiredPotentialRank"] == 0 else [-2,-1])] for talent in talents]
     script_result(char_dict)
 
-def term_kw():
+def term_kw(show = False):
     term_list = []
     for term in DB["json_named_effect"]["termDescriptionDict"]:
         if term[0:2] == "ba":
@@ -212,7 +215,7 @@ def term_kw():
     
     script_result("\n".join(term_list))
 
-def recruit_update():
+def recruit_update(show = False):
     '''
         fetch recruit ops details from recruitment instruction straight from "gacha_table.json"
     '''
@@ -243,7 +246,7 @@ def recruit_update():
     
     script_result("\n".join(recruitCN+recruitEN))
     
-def boss_stage_regex():
+def boss_stage_regex(show = False):
     '''
         regex for boss stage variant
     '''
@@ -253,7 +256,7 @@ def boss_stage_regex():
 
     print(test.group(1))
 
-def skin_artist():
+def skin_artist(show = False):
     for skin in DB["json_skin"]["charSkins"].keys():
         if skin in DB["json_skinEN"]["charSkins"].keys():
         #print(skin)
@@ -263,7 +266,7 @@ def skin_artist():
                 if CN_skin_artist != EN_skin_artist:
                     print(f'{skin}\t{CN_skin_artist}\t{EN_skin_artist}')
 
-def va_artist():
+def va_artist(show = False):
     va = []
     va_dict = {}
     
@@ -282,7 +285,7 @@ def va_artist():
                     
     if va : script_result(("\n").join(va))
 
-def subpower_list():
+def subpower_list(show = False):
     temp = []
     for char in DB["json_character"]:
         if DB["json_character"][char]["subPower"]:
@@ -290,7 +293,7 @@ def subpower_list():
 
     print (temp)
 
-def stage_kill_test():
+def stage_kill_test(show = False):
     IGNORED = {"enemy_10082_mpweak","enemy_10072_mpprhd"}
     test = {"all":{}, "filtered_start":{},"filtered_end":{}, "enemies":{"KILL":0, "NORMAL":[], "ELITE":[], "BOSS":[], "Extra":[]}}
     times = 0
@@ -365,7 +368,7 @@ def stage_kill_test():
     print("Enemy count = ", count[0], "### More suspect = ", count[1])
     script_result(test)
 
-def stage_kills(output = False): #need check for drop in like kevin
+def stage_kills(show = False): #need check for drop in like kevin
     IGNORED = {"enemy_10082_mpweak", "enemy_10072_mpprhd", "enemy_3009_mpprss"} # square / Hand / EYESOFPRIESTESS
     result_json = {}
     result_text = []
@@ -457,9 +460,9 @@ def stage_kills(output = False): #need check for drop in like kevin
             for enemy in result_json[stage]["Extra"]:
                 result_text.append(f'\t{enemy[3]:3} X {enemy[0]:25}\t{enemy[1]:30}\t{enemy[2]}')
         
-    script_result(("\n").join(result_text),output)
+    script_result(("\n").join(result_text), show)
 
-def infinity_skill():
+def infinity_skill(show = False):
     infinity = []
     exclude = ["skchr_typhon_2", "skchr_thorns_3", "skchr_buildr_2"]
     bypass = ["skchr_swire2_1", "skchr_swire2_2", "skchr_marcil_2"]
@@ -551,4 +554,50 @@ def char_name(show = False):
         
     script_result(temp, show)
 
-char_name(True)
+def event_tag(show = False):
+    tags = {}
+    events = []
+    SStag = DB["json_stage"]["storylineTags"]
+    SSset = DB["json_stage"]["storylineStorySets"]
+    for tag in SStag:
+        tags[tag] = SStag[tag]["tagDesc"]
+    
+    events.append(f'Tags : {[tags[tag] for tag in tags]}\n')
+        
+    for event in SSset:
+        if SSset[event]["ssData"]:
+            print(" ".join(SSset[event]["titleImageId"].split("_")[1:]))
+            events.append(f'{" ".join(SSset[event]["titleImageId"].split("_")[1:])} = {[tags[tag] for tag in SSset[event]["ssData"]["tags"]]}')
+            
+    script_result(events, show)
+
+def event_desc(show = False):
+    events = []
+    SSset = DB["json_stage"]["storylineStorySets"]
+    
+    for event in SSset:
+        if SSset[event]["collectData"] and SSset[event]["storySetType"] == "COLLECT":
+            events.append(f'\n{" ".join(SSset[event]["collectData"]["backgroundId"].split("_")[1:])}\n{SSset[event]["collectData"]["desc"]}')
+            
+    script_result(events, show)
+
+def event_sypnosis(show = False):
+    events = {}
+    SSset = DB["json_stage"]["storylineStorySets"]
+    retro = json_load(r'temp\temp.json')
+
+    for event in SSset:
+        if SSset[event]["ssData"]:
+            events["_".join(SSset[event]["ssData"]["backgroundId"].split("_")[1:])] = {"desc" : SSset[event]["ssData"]["desc"], "retro" : SSset[event]["ssData"]["retroActivityId"]}
+        elif SSset[event]["collectData"]:
+            events["_".join(SSset[event]["collectData"]["backgroundId"].split("_")[1:])] = {"desc" : SSset[event]["collectData"]["desc"], "retro" : None}
+            
+    for event in retro["retroActList"]:
+        event_detail = retro["retroActList"][event]["detail"]
+        for SSevent in [key for key in events.keys()]:
+            if events[SSevent]["retro"] == event and events[SSevent]["desc"] == event_detail:
+                events.pop(SSevent)
+        
+    script_result(events, show)
+    
+event_sypnosis(True)

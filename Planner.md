@@ -31,6 +31,7 @@
     - 
 ### To do
     - Add amiyi alter for all operator filter
+    - Rework Type in Tag
 ### Later
     - 
 

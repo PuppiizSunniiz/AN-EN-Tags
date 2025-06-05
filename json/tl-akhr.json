@@ -8527,5 +8527,71 @@
         "hidden": false,
         "globalHidden": true,
         "gamemode": "BASE"
+    },
+    {
+        "id": "char_1042_phatm2",
+        "name_cn": "酒神",
+        "name_en": "Tragodia",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": "victoria",
+        "groupId": null,
+        "teamId": null,
+        "type": "辅助",
+        "level": 6,
+        "sex": "男",
+        "tags": [
+            "高级资深干员",
+            "远程位",
+            "元素",
+            "控场"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_4191_tippi",
+        "name_cn": "蒂比",
+        "name_en": "Tippi",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": "columbia",
+        "groupId": null,
+        "teamId": null,
+        "type": "特种",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "高空",
+            "生存"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_4198_christ",
+        "name_cn": "Miss.Christine",
+        "name_en": "Miss.Christine",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": "victoria",
+        "groupId": null,
+        "teamId": null,
+        "type": "术师",
+        "level": 5,
+        "sex": "女士",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "元素",
+            "输出"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
     }
 ]

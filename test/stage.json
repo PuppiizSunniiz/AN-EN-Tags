@@ -5408,6 +5408,78 @@
             "name": "Assault",
             "Event": "weekly_4"
         },
+        "act43side_tr01": {
+            "stageId": "act43side_tr01",
+            "levelId": "Activities/act43side/level_act43side_tr01",
+            "zoneId": "act43side_zone1",
+            "code": "AD-TR-1",
+            "name": "幕间曲",
+            "Event": "act43side"
+        },
+        "act43side_01": {
+            "stageId": "act43side_01",
+            "levelId": "Activities/act43side/level_act43side_01",
+            "zoneId": "act43side_zone1",
+            "code": "AD-1",
+            "name": "彩排日",
+            "Event": "act43side"
+        },
+        "act43side_02": {
+            "stageId": "act43side_02",
+            "levelId": "Activities/act43side/level_act43side_02",
+            "zoneId": "act43side_zone1",
+            "code": "AD-2",
+            "name": "排演一出悲剧",
+            "Event": "act43side"
+        },
+        "act43side_03": {
+            "stageId": "act43side_03",
+            "levelId": "Activities/act43side/level_act43side_03",
+            "zoneId": "act43side_zone1",
+            "code": "AD-3",
+            "name": "戏剧性",
+            "Event": "act43side"
+        },
+        "act43side_04": {
+            "stageId": "act43side_04",
+            "levelId": "Activities/act43side/level_act43side_04",
+            "zoneId": "act43side_zone1",
+            "code": "AD-4",
+            "name": "一个荒唐的早晨",
+            "Event": "act43side"
+        },
+        "act43side_05": {
+            "stageId": "act43side_05",
+            "levelId": "Activities/act43side/level_act43side_05",
+            "zoneId": "act43side_zone1",
+            "code": "AD-5",
+            "name": "终将重逢",
+            "Event": "act43side"
+        },
+        "act43side_06": {
+            "stageId": "act43side_06",
+            "levelId": "Activities/act43side/level_act43side_06",
+            "zoneId": "act43side_zone1",
+            "code": "AD-6",
+            "name": "倒带独白",
+            "Event": "act43side"
+        },
+        "act43side_07": {
+            "stageId": "act43side_07",
+            "levelId": "Activities/act43side/level_act43side_07",
+            "zoneId": "act43side_zone1",
+            "code": "AD-7",
+            "name": "“血钻”的歌声",
+            "Event": "act43side"
+        },
+        "act43side_08": {
+            "stageId": "act43side_08",
+            "levelId": "Activities/act43side/level_act43side_08",
+            "zoneId": "act43side_zone1",
+            "code": "AD-8",
+            "name": "登台致礼",
+            "Event": "act43side"
+        },
         "act1break_01": {
             "stageId": "act1break_01",
             "levelId": "Activities/ACT1BREAK/level_act1break_01",
@@ -26282,6 +26354,17 @@
             "pro_d_1",
             "pro_d_2"
         ],
+        "act43side_zone1": [
+            "act43side_tr01",
+            "act43side_01",
+            "act43side_02",
+            "act43side_03",
+            "act43side_04",
+            "act43side_05",
+            "act43side_06",
+            "act43side_07",
+            "act43side_08"
+        ],
         "act1break_zone1": [
             "act1break_01",
             "act1break_02",
@@ -29555,6 +29638,9 @@
         ],
         "weekly_4": [
             "weekly_4"
+        ],
+        "act43side": [
+            "act43side_zone1"
         ],
         "act1break": [
             "act1break_zone1",
@@ -43868,6 +43954,16 @@
             },
             "is": {
                 "IS#2": {
+                    "IS#2 Floor 5": [
+                        "rogue1_5-1",
+                        "rogue1_5-2",
+                        "rogue1_5-3",
+                        "rogue1_5-4",
+                        "rogue1_5-5",
+                        "rogue1_5-6",
+                        "rogue1_5-7",
+                        "rogue1_5-8"
+                    ],
                     "IS#2 Floor 6": [
                         "rogue1_6-2"
                     ]
@@ -45971,6 +46067,13 @@
             },
             "is": {
                 "IS#2": {
+                    "IS#2 Floor 1": [
+                        "rogue1_1-1",
+                        "rogue1_1-2",
+                        "rogue1_1-3",
+                        "rogue1_1-4",
+                        "rogue1_1-5"
+                    ],
                     "IS#2 Floor 4": [
                         "rogue1_4-7"
                     ],
@@ -55887,6 +55990,118 @@
                 }
             }
         },
+        "enemy_10094_crstf": {
+            "sidestory": {
+                "act43side": {
+                    "act43side_zone1": [
+                        "act43side_tr01",
+                        "act43side_01",
+                        "act43side_02",
+                        "act43side_03",
+                        "act43side_05",
+                        "act43side_06",
+                        "act43side_07",
+                        "act43side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10096_crprp": {
+            "sidestory": {
+                "act43side": {
+                    "act43side_zone1": [
+                        "act43side_tr01",
+                        "act43side_02",
+                        "act43side_05",
+                        "act43side_06",
+                        "act43side_07",
+                        "act43side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10095_crgst": {
+            "sidestory": {
+                "act43side": {
+                    "act43side_zone1": [
+                        "act43side_01",
+                        "act43side_02",
+                        "act43side_03",
+                        "act43side_04",
+                        "act43side_05"
+                    ]
+                }
+            }
+        },
+        "enemy_10097_crshd": {
+            "sidestory": {
+                "act43side": {
+                    "act43side_zone1": [
+                        "act43side_03",
+                        "act43side_06",
+                        "act43side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10099_crvln": {
+            "sidestory": {
+                "act43side": {
+                    "act43side_zone1": [
+                        "act43side_04",
+                        "act43side_05"
+                    ]
+                }
+            }
+        },
+        "enemy_10098_crhro": {
+            "sidestory": {
+                "act43side": {
+                    "act43side_zone1": [
+                        "act43side_04",
+                        "act43side_05"
+                    ]
+                }
+            }
+        },
+        "enemy_10100_crrol": {
+            "sidestory": {
+                "act43side": {
+                    "act43side_zone1": [
+                        "act43side_06"
+                    ]
+                }
+            }
+        },
+        "enemy_10101_crgun": {
+            "sidestory": {
+                "act43side": {
+                    "act43side_zone1": [
+                        "act43side_07",
+                        "act43side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10102_crblt": {
+            "sidestory": {
+                "act43side": {
+                    "act43side_zone1": [
+                        "act43side_07",
+                        "act43side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_1568_dirctr": {
+            "sidestory": {
+                "act43side": {
+                    "act43side_zone1": [
+                        "act43side_08"
+                    ]
+                }
+            }
+        },
         "enemy_10016_sggint": {
             "vb": {
                 "act1break": {
@@ -58940,6 +59155,16 @@
             },
             "is": {
                 "IS#2": {
+                    "IS#2 Floor 4": [
+                        "rogue1_4-1",
+                        "rogue1_4-2",
+                        "rogue1_4-3",
+                        "rogue1_4-4",
+                        "rogue1_4-5",
+                        "rogue1_4-6",
+                        "rogue1_4-7",
+                        "rogue1_4-8"
+                    ],
                     "IS#2 Floor 6": [
                         "rogue1_6-1",
                         "rogue1_6-2"
@@ -65680,6 +65905,9 @@
                 "IS#2": {
                     "IS#2 Floor 3": [
                         "rogue1_b-5"
+                    ],
+                    "IS#2 Floor 6": [
+                        "rogue1_b-9"
                     ]
                 },
                 "IS#4": {
@@ -65708,6 +65936,9 @@
                 "IS#2": {
                     "IS#2 Floor 3": [
                         "rogue1_b-5"
+                    ],
+                    "IS#2 Floor 6": [
+                        "rogue1_b-9"
                     ]
                 },
                 "IS#4": {
@@ -67190,6 +67421,16 @@
                     ]
                 },
                 "IS#2": {
+                    "IS#2 Floor 3": [
+                        "rogue1_3-1",
+                        "rogue1_3-2",
+                        "rogue1_3-3",
+                        "rogue1_3-4",
+                        "rogue1_3-5",
+                        "rogue1_3-6",
+                        "rogue1_3-7",
+                        "rogue1_3-8"
+                    ],
                     "IS#2 Floor 5": [
                         "rogue1_5-5"
                     ]
@@ -68178,6 +68419,13 @@
             },
             "is": {
                 "IS#2": {
+                    "IS#2 Floor 2": [
+                        "rogue1_2-1",
+                        "rogue1_2-2",
+                        "rogue1_2-3",
+                        "rogue1_2-4",
+                        "rogue1_2-5"
+                    ],
                     "IS#2 Floor 3": [
                         "rogue1_3-2"
                     ],
@@ -77447,6 +77695,9 @@
                 "IS#2": {
                     "IS#2 Floor 3": [
                         "rogue1_b-1"
+                    ],
+                    "IS#2 Floor 5": [
+                        "rogue1_b-6"
                     ]
                 },
                 "IS#4": {
@@ -95821,6 +96072,9 @@
                 "IS#2": {
                     "IS#2 Floor 3": [
                         "rogue1_b-2"
+                    ],
+                    "IS#2 Floor 5": [
+                        "rogue1_b-7"
                     ]
                 },
                 "IS#4": {
@@ -96030,25 +96284,32 @@
                 }
             }
         },
-        "enemy_2013_csbot": {
+        "enemy_2017_csphts": {
             "is": {
                 "IS#2": {
-                    "IS#2 Floor 3": [
-                        "rogue1_b-4"
-                    ]
-                }
-            }
-        },
-        "enemy_2016_csphtm": {
-            "is": {
-                "IS#2": {
+                    "IS#2 Floor 6": [
+                        "rogue1_6-1",
+                        "rogue1_6-2"
+                    ],
                     "IS#2 Floor 5": [
                         "rogue1_b-6"
                     ]
                 }
             }
         },
-        "enemy_2017_csphts": {
+        "enemy_2013_csbot": {
+            "is": {
+                "IS#2": {
+                    "IS#2 Floor 3": [
+                        "rogue1_b-4"
+                    ],
+                    "IS#2 Floor 6": [
+                        "rogue1_b-8"
+                    ]
+                }
+            }
+        },
+        "enemy_2016_csphtm": {
             "is": {
                 "IS#2": {
                     "IS#2 Floor 5": [

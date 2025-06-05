@@ -1,7 +1,7 @@
     $.holdReady(true);
 
     console.log = function () { }
-
+    
     const jsonList = {
 
         //CN
@@ -3737,7 +3737,7 @@
         console.log(voiceDictEN)
 
         var VAlang
-        const VAlanglist = ["JP","LINKAGE","CN_MANDARIN","CN_TOPOLECT","EN","KR","ITA","GER","RUS"]
+        const VAlanglist = ["JP","LINKAGE","CN_MANDARIN","CN_TOPOLECT","EN","KR","FRE","GER","ITA","RUS"]
         const LINKAGE_EN_list = [
                                     "char_456_ash",
                                     "char_457_blitz",
@@ -4215,7 +4215,7 @@
         charaRiic.buffChar.forEach(eachbuffchar => {
             everybuff.push(eachbuffchar.buffData)
             eachbuffchar.buffData.forEach(eachbuffdata => {
-                var checkphase = riicList.find(search=>search.phase==PhaseConvert(eachbuffdata.cond.phase)&&search.level == eachbuffdata.cond.level)
+                var checkphase = riicList.find(search=>search.phase == eachbuffdata.cond.phase&&search.level == eachbuffdata.cond.level)
                 if(!checkphase){
                     riicList.push({phase:eachbuffdata.cond.phase,level:eachbuffdata.cond.level,list:[]})
                 }
@@ -4680,7 +4680,6 @@
             }
             return false
         })
-
 
         if (currlimit){
             $(`.alltalentinfo`).removeClass("active")
@@ -6056,7 +6055,7 @@
                             skelBin.initJson()
                             jsonskel = JSON.stringify(skelBin.json)
                             var parsedskeljson = JSON.parse(jsonskel)
-                            // console.log(JSON.parse(jsonskel))
+                            console.log(JSON.parse(jsonskel))
                             if(!Object.keys(parsedskeljson.animations).find(search=>search==defaultAnimationName)){
                                 defaultAnimationName = Object.keys(parsedskeljson.animations)[0]
                             }
@@ -6075,8 +6074,6 @@
                             }
                         }
 
-
-
                         // var test = new TextDecoder("utf-8").decode(array);
                         // console.log(JSON.parse(test))
                         // console.log(JSON.stringify(skelBin.json, null, "\t"));
@@ -6085,6 +6082,7 @@
 
                         // console.log(spineX)
                         // console.log(spineY)
+                        if(jsonskel) console.log(parsedskeljson.skeleton.version)
                         new spine.SpineWidget("spine-widget", {
                             jsonContent: jsonskel,
                             atlas: folder + chibiName + ".atlas",
@@ -6371,7 +6369,7 @@
         if(name.length > 1) chibiName = name
         else chibiName = opdataFull.id
         if(pers != "") chibipers = pers
-                if(chibipers == 'build')
+        if(chibipers == 'build')
             chibiName.includes("build")?chibiName = chibiName:chibiName = "build_" + chibiName
         else
             chibiName.includes("build")?chibiName = chibiName.split("_").slice(1).join("_"):chibiName = chibiName

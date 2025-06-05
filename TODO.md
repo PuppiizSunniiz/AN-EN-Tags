@@ -2,6 +2,7 @@
 ### Exodus from the Pale Sea
 - Talent > Mod
     - Thorns the Lodestar
+    - Tecno
 -  Trait
     - Tecno
     - Tecno 's Token
@@ -18,6 +19,8 @@
     - Eunectes ra-a
 
 ### When Elegies Are Ashes
+- Talent > Mod
+    - Necrass
 - Trait
     - Necrass 's Token
     - alc-x
@@ -33,6 +36,12 @@
     - origen
 
 ### The Masses' Travels
+- Effect 
+    - <$ba.dt.neural2>Nervous Impairment</>
+        - Tragodia
+        - Miss Christine
+    - <$ba.palsy>Paralyze</>
+        - Miss Christine
 - Trait
     - Confess-47
     - Gracebearer (Primal Guard)
@@ -41,3 +50,11 @@
     - LOR-D 
     - Mizuki isw-a
     - Archetto isw-a
+
+### Act or Die
+- Effect
+    - Lure / Attract
+- Trait
+    - SOC-X
+    - SOC-Y
+    - TRP-X
