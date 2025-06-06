@@ -763,35 +763,35 @@
             "note": "new mods isw-a"
         },
         "攻击造成<@ba.kw>法术伤害</>，可以通过击倒敌人生成<@ba.kw>召唤物</>，可攻击到自身<@ba.kw>召唤物</>阻挡的敌人": {
-            "en": "Deal <@ba.kw>Arts Damage</></br>Can create <@ba.kw>Summons</> by defeating enemies</br>Can attack enemies blocked by own </>Summons</>",
+            "en": "Deals <@ba.kw>Arts damage</>; Can create <@ba.kw>Summons</> by defeating enemies, and can attack enemies blocked by these <@ba.kw>Summons</>",
             "color": "magic",
             "name": "Tecno",
             "code": "char_4164_tecno",
             "note": "new Ops \"soulcaster\" Archetype trait"
         },
         "能够阻挡一个敌人，攻击造成法术伤害": {
-            "en": "Can block enemy, attack deals Arts damage.",
+            "en": "Blocks 1 enemy, and attacks deal Arts damage.",
             "color": "magic",
             "name": "Puppet Dancer",
             "code": "token_10042_tecno_puppet",
             "note": "Tecno 's Token (Puppet Dancer)"
         },
         "未阻挡敌人时攻击速度<@ba.kw>+{attack_speed}</>": {
-            "en" : "When not blocking enemies, ASPD<@ba.kw>+{attack_speed}</>",
+            "en" : "ASPD <@ba.kw>+{attack_speed}</> when not blocking an enemy",
             "color": "common",
             "name": "Mousse",
             "code": "uniequip_002_frncat",
             "note": "new mods aft-x"
         },
         "攻击<$ba.dt.burning2>灼燃损伤</>爆发期间的目标时额外造成攻击力<@ba.kw>{ep_damage_ratio:0%}</>的元素伤害": {
-            "en" : "When target is under the burst effect of <$ba.dt.burning2>Burn Damage</>, deal an additional <@ba.kw>{ep_damage_ratio:0%}</> ATK as Elemental Damage",
+            "en" : "Attacks against a target under the burst effect of <$ba.dt.burning2>Burn damage</> deal an additional <@ba.kw>{ep_damage_ratio:0%}</> ATK as Elemental Damage",
             "color": "magic",
             "name": "Viviana",
             "code": "uniequip_002_vvana",
             "note": "new mods aft-d"
         },
         "自身阻挡的敌人受到<@ba.kw>10%</>的<$ba.magicfragile>法术脆弱</>效果": {
-            "en" : "Inflict <@ba.kw>10%</> <$ba.magicfragile>Arts Fragility</> to enemies block by self",
+            "en" : "Enemies blocked by this unit receive <@ba.kw>10%</> <$ba.magicfragile>Arts Fragility</>",
             "color": "magic",
             "name": "Sideroca",
             "code": "uniequip_002_sidero",
@@ -924,7 +924,7 @@
             "code": "token_10055_phatm2_mndclv"
         },
         "攻击造成<@ba.kw>法术伤害</>，可以通过击倒敌人生成<@ba.kw>召唤物</>，可攻击到自身<@ba.kw>召唤物</>阻挡的敌人且攻击力提升至<@ba.kw>115%</>": {
-            "en": "Deal <@ba.kw>Arts Damage</></br>Can create <@ba.kw>Summons</> by defeating enemies</br>Can attack enemies blocked by own </>Summons</> with <@ba.kw>115%</> ATK ",
+            "en": "Deals <@ba.kw>Arts damage</>; Can create <@ba.kw>Summons</> by defeating enemies, and can attack enemies blocked by these <@ba.kw>Summons</> with <@ba.kw>115%</> ATK ",
             "color": "magic",
             "note": "new mods soc-x",
             "name": "char_450_necras",

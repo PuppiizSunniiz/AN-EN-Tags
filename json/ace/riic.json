@@ -2945,24 +2945,24 @@
         "descformat": "When this Operator is assigned to the Reception room together with <@cc.kw>Suzuran</>, increases Clue search speed by an additional <@cc.vup>30%</>"
     },
     "manu_prod_spd&trade[1000]": {
-        "name": "原质塑金副产物",
+        "name": "Essence Transmutation Byproduct",
         "desc": "进驻制造站时，每个<@cc.kw>贸易站</>为当前制造站<@cc.kw>贵金属</>类配方的生产力<@cc.vup>+3%</>",
-        "descformat": "进驻制造站时，每个<@cc.kw>贸易站</>为当前制造站<@cc.kw>贵金属</>类配方的生产力<@cc.vup>+3%</>"
+        "descformat": "When this Operator is assigned to a Factory, every <@cc.kw>Trading Post</> makes the Factory's <@cc.kw>Precious Metal</> formula related productivity <@cc.vup>+3%</>"
     },
     "manu_formula_spd[102]": {
-        "name": "金属工艺·α",
+        "name": "Metalwork α",
         "desc": "进驻制造站时，<@cc.kw>贵金属</>类配方的生产力<@cc.vup>+30%</>",
-        "descformat": "进驻制造站时，<@cc.kw>贵金属</>类配方的生产力<@cc.vup>+30%</>"
+        "descformat": "When this Operator is assigned to a Factory, <@cc.kw>Precious Metal</> formula related productivity <@cc.vup>+30%</>"
     },
     "trade_ord_spd[1001]": {
-        "name": "订单分发·β",
+        "name": "Order Distribution β",
         "desc": "进驻贸易站时，订单获取效率<@cc.vup>+30%</>",
-        "descformat": "进驻贸易站时，订单获取效率<@cc.vup>+30%</>"
+        "descformat": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+30%</>"
     },
     "trade_ord_limit&trade&lv[001]": {
-        "name": "钱不我待",
+        "name": "Time Is Money",
         "desc": "进驻贸易站时，当前贸易站每级<@cc.vup>+1</>个订单上限",
-        "descformat": "进驻贸易站时，当前贸易站每级<@cc.vup>+1</>个订单上限"
+        "descformat": "When this Operator is assigned to a Trading Post, <@cc.vup>+1</> order limit for every level of that Trading Post"
     },
     "workshop_formula_cost5[000]": {
         "name": "熟极而流",

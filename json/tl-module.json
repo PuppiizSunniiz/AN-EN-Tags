@@ -40,14 +40,14 @@
                 "EN": "Deal +8% Arts damage and take -8% Physical and Arts damage. Double effect if there is an elite or leader enemy within attack range",
                 "CN": "造成的法术伤害+8%，受到的物理和法术伤害-8%。攻击范围内存在精英或领袖敌人时，该效果提升至2倍",
                 "mod": "造成的法术伤害+8%，受到的物理和法术伤害-8%，攻击附带相当于5%伤害的<$ba.dt.burning2>灼燃损伤</>。攻击范围内存在精英或领袖敌人时，该效果提升至2倍",
-                "upgradeDescription": "Deal +8% Arts damage , take -8% Physical and Arts damage and inflict 5% of damage dealt as <$ba.dt.burning2>Burn Damage</>. Double effect if there is an elite or leader enemy within attack range"
+                "upgradeDescription": "Deals +8% Arts damage and takes -8% Physical and Arts damage, and attacks deal an additional 5% damage as <$ba.dt.burning2>Burn damage</>; double effect if there is an elite or leader enemy within attack range"
             },
             {
                 "name": "Candlelight",
                 "EN": "Deal +9% <@ba.talpu>(+1%)</> Arts damage and take -9% <@ba.talpu>(-1%)</> Physical and Arts damage. Double effect if there is an elite or leader enemy within attack range",
                 "CN": "造成的法术伤害+9%<@ba.talpu>(+1%)</>，受到的物理和法术伤害-9%<@ba.talpu>(-1%)</>。攻击范围内存在精英或领袖敌人时，该效果提升至2倍",
                 "mod": "造成的法术伤害+9%<@ba.talpu>(+1%)</>，受到的物理和法术伤害-9%<@ba.talpu>(-1%)</>，攻击附带相当于5%伤害的<$ba.dt.burning2>灼燃损伤</>。攻击范围内存在精英或领袖敌人时，该效果提升至2倍",
-                "upgradeDescription": "Deal +9% <@ba.talpu>(+1%)</> Arts damage, take -9% <@ba.talpu>(-1%)</> Physical and Arts damage and inflict 5% of damage dealt as <$ba.dt.burning2>Burn Damage</>. Double effect if there is an elite or leader enemy within attack range"
+                "upgradeDescription": "Deals +9% <@ba.talpu>(+1%)</> Arts damage and takes -9% <@ba.talpu>(-1%)</> Physical and Arts damage, and attacks deal an additional 5% damage as <$ba.dt.burning2>Burn damage</>; double effect if there is an elite or leader enemy within attack range"
             }
         ],
         [
@@ -56,44 +56,44 @@
                 "EN": "Deal +8% Arts damage and take -8% Physical and Arts damage. Double effect if there is an elite or leader enemy within attack range",
                 "CN": "造成的法术伤害+8%，受到的物理和法术伤害-8%。攻击范围内存在精英或领袖敌人时，该效果提升至2倍",
                 "mod": "造成的法术伤害+8%，受到的物理和法术伤害-8%，攻击附带相当于9%伤害的<$ba.dt.burning2>灼燃损伤</>。攻击范围内存在精英或领袖敌人时，该效果提升至2倍",
-                "upgradeDescription": "Deal +8% Arts damage , take -8% Physical and Arts damage and inflict 9% of damage dealt as <$ba.dt.burning2>Burn Damage</>. Double effect if there is an elite or leader enemy within attack range"
+                "upgradeDescription": "Deals +8% Arts damage and takes -8% Physical and Arts damage, and attacks deal an additional 9% damage as <$ba.dt.burning2>Burn damage</>; double effect if there is an elite or leader enemy within attack range"
             },
             {
                 "name": "Candlelight",
                 "EN": "Deal +9% <@ba.talpu>(+1%)</> Arts damage and take -9% <@ba.talpu>(-1%)</> Physical and Arts damage. Double effect if there is an elite or leader enemy within attack range",
                 "CN": "造成的法术伤害+9%<@ba.talpu>(+1%)</>，受到的物理和法术伤害-9%<@ba.talpu>(-1%)</>。攻击范围内存在精英或领袖敌人时，该效果提升至2倍",
                 "mod": "造成的法术伤害+9%<@ba.talpu>(+1%)</>，受到的物理和法术伤害-9%<@ba.talpu>(-1%)</>，攻击附带相当于9%伤害的<$ba.dt.burning2>灼燃损伤</>。攻击范围内存在精英或领袖敌人时，该效果提升至2倍",
-                "upgradeDescription": "Deal +9% <@ba.talpu>(+1%)</> Arts damage, take -9% <@ba.talpu>(-1%)</> Physical and Arts damage and inflict 9% of damage dealt as <$ba.dt.burning2>Burn Damage</>. Double effect if there is an elite or leader enemy within attack range"
+                "upgradeDescription": "Deals +9% <@ba.talpu>(+1%)</> Arts damage and takes -9% <@ba.talpu>(-1%)</> Physical and Arts damage, and attacks deal an additional 9% damage as <$ba.dt.burning2>Burn damage</>; double effect if there is an elite or leader enemy within attack range"
             }
         ]
     ],
     "uniequip_002_siege2": [
         [
             {
-                "name": "诸王的叹息",
+                "name": "The Kings' Sighs",
                 "CN": "自身与周围8格友方单位受到的物理伤害减少20%，且此范围内每个友方单位使维娜攻击力+5%",
                 "mod": "自身与周围8格友方单位受到的物理伤害减少24%，且此范围内每个友方单位使维娜攻击力+6%",
                 "upgradeDescription": "This unit and friendly units within the surrounding 8 tiles take 24% less Physical damage, and Vina gains +6% ATK for each friendly unit within this range"
             },
             {
-                "name": "诸王的叹息",
+                "name": "The Kings' Sighs",
                 "CN": "自身与周围8格友方单位受到的物理伤害减少22%<@ba.talpu>(+2%)</>，且此范围内每个友方单位使维娜攻击力+6%<@ba.talpu>(+1%)</>",
                 "mod": "自身与周围8格友方单位受到的物理伤害减少26%<@ba.talpu>(+2%)</>，且此范围内每个友方单位使维娜攻击力+7%<@ba.talpu>(+1%)</>",
-                "upgradeDescription": "This unit and friendly units within the surrounding 8 tiles take 26%<@ba.talpu>(+2%)</> less Physical damage, and Vina gains +7%<@ba.talpu>(+1%)</> ATK for each friendly unit within this range"
+                "upgradeDescription": "This unit and friendly units within the surrounding 8 tiles take 26% <@ba.talpu>(+2%)</> less Physical damage, and Vina gains +7% <@ba.talpu>(+1%)</> ATK for each friendly unit within this range"
             }
         ],
         [
             {
-                "name": "诸王的叹息",
+                "name": "The Kings' Sighs",
                 "CN": "自身与周围8格友方单位受到的物理伤害减少20%，且此范围内每个友方单位使维娜攻击力+5%",
                 "mod": "自身与周围8格友方单位受到的物理伤害减少26%，且此范围内每个友方单位使维娜攻击力+7%",
                 "upgradeDescription": "This unit and friendly units within the surrounding 8 tiles take 26% less Physical damage, and Vina gains +7% ATK for each friendly unit within this range"
             },
             {
-                "name": "诸王的叹息",
+                "name": "The Kings' Sighs",
                 "CN": "自身与周围8格友方单位受到的物理伤害减少22%<@ba.talpu>(+2%)</>，且此范围内每个友方单位使维娜攻击力+6%<@ba.talpu>(+1%)</>",
                 "mod": "自身与周围8格友方单位受到的物理伤害减少28%<@ba.talpu>(+2%)</>，且此范围内每个友方单位使维娜攻击力+8%<@ba.talpu>(+1%)</>",
-                "upgradeDescription": "This unit and friendly units within the surrounding 8 tiles take 28%<@ba.talpu>(+2%)</> less Physical damage, and Vina gains +8%<@ba.talpu>(+1%)</> ATK for each friendly unit within this range"
+                "upgradeDescription": "This unit and friendly units within the surrounding 8 tiles take 28% <@ba.talpu>(+2%)</> less Physical damage, and Vina gains +8% <@ba.talpu>(+1%)</> ATK for each friendly unit within this range"
             }
         ]
     ],
@@ -104,7 +104,7 @@
                 "EN": "For every 20 seconds Astesia stays on the battlefield, ASPD +5, stacking up to 5 times",
                 "CN": "每在场上停留20秒，攻击速度+5，最多可以叠加5次",
                 "mod": "每在场上停留20秒，攻击速度+6，防御力+3%，最多可以叠加5次",
-                "upgradeDescription": "For every 20 seconds Astesia stays on the battlefield, ASPD +6, DEF +3% stacking up to 5 times"
+                "upgradeDescription": "Gains +6 ASPD and +3% DEF for every 20s this unit remains on the battlefield, stacking up to 5 times"
             }
         ],
         [
@@ -113,25 +113,25 @@
                 "EN": "For every 20 seconds Astesia stays on the battlefield, ASPD +5, stacking up to 5 times",
                 "CN": "每在场上停留20秒，攻击速度+5，最多可以叠加5次",
                 "mod": "每在场上停留20秒，攻击速度+7，防御力+4%，最多可以叠加5次",
-                "upgradeDescription": "For every 20 seconds Astesia stays on the battlefield, ASPD +7, DEF +4% stacking up to 5 times"
+                "upgradeDescription": "Gains +7 ASPD and +4% DEF for every 20s this unit remains on the battlefield, stacking up to 5 times"
             }
         ]
     ],
     "uniequip_002_amiya2": [
         [
             {
-                "name": "青色怒火",
+                "name": "Wrathful Cerulean Flame",
                 "CN": "在场时所有友方单位的攻击力和防御力+7%，技能开启期间效果加倍",
                 "mod": "在场时所有友方单位的攻击力和防御力+8%，技能开启期间效果加倍",
-                "upgradeDescription": "All allied units on the battlefield gain +8 ATK and DEF, doubled when this unit's skill is active"
+                "upgradeDescription": "All allied units on the battlefield gain +8% ATK and DEF, doubled when this unit's skill is active"
             }
         ],
         [
             {
-                "name": "青色怒火",
+                "name": "Wrathful Cerulean Flame",
                 "CN": "在场时所有友方单位的攻击力和防御力+7%，技能开启期间效果加倍",
                 "mod": "在场时所有友方单位的攻击力和防御力+9%，技能开启期间效果加倍",
-                "upgradeDescription": "All allied units on the battlefield gain +9 ATK and DEF, doubled when this unit's skill is active"
+                "upgradeDescription": "All allied units on the battlefield gain +9% ATK and DEF, doubled when this unit's skill is active"
             }
         ]
     ],
@@ -142,14 +142,14 @@
                 "EN": "After defeating 7 enemies, Sideroca gains +15 ASPD and <$ba.buffres>status resistance</>",
                 "CN": "击杀7个敌人后获得攻击速度+15和<$ba.buffres>抵抗</>",
                 "mod": "击杀6个敌人后获得攻击速度+20和<$ba.buffres>抵抗</>",
-                "upgradeDescription": "After defeating 6 enemies, Sideroca gains +20 ASPD and <$ba.buffres>status resistance</>"
+                "upgradeDescription": "After defeating 6 enemies, gains +20 ASPD and <$ba.buffres>status resistance</>"
             },
             {
                 "name": "Mercenary's Tenacity",
                 "EN": "After defeating 5 <@ba.talpu>(-2)</> enemies, Sideroca gains +15 ASPD and <$ba.buffres>status resistance</>",
                 "CN": "击杀5<@ba.talpu>(-2)</>个敌人后获得攻击速度+15和<$ba.buffres>抵抗</>",
                 "mod": "击杀4<@ba.talpu>(-2)</>个敌人后获得攻击速度+20和<$ba.buffres>抵抗</>",
-                "upgradeDescription": "After defeating 4<@ba.talpu>(-2)</> enemies, Sideroca gains +20 ASPD and <$ba.buffres>status resistance</>"
+                "upgradeDescription": "After defeating 4 <@ba.talpu>(-2)</> enemies, gains +20 ASPD and <$ba.buffres>status resistance</>"
             }
         ],
         [
@@ -158,14 +158,14 @@
                 "EN": "After defeating 7 enemies, Sideroca gains +15 ASPD and <$ba.buffres>status resistance</>",
                 "CN": "击杀7个敌人后获得攻击速度+15和<$ba.buffres>抵抗</>",
                 "mod": "击杀5个敌人后获得攻击速度+23和<$ba.buffres>抵抗</>",
-                "upgradeDescription": "After defeating 5 enemies, Sideroca gains +23 ASPD and <$ba.buffres>status resistance</>"
+                "upgradeDescription": "After defeating 5 enemies, gains +23 ASPD and <$ba.buffres>status resistance</>"
             },
             {
                 "name": "Mercenary's Tenacity",
                 "EN": "After defeating 5 <@ba.talpu>(-2)</> enemies, Sideroca gains +15 ASPD and <$ba.buffres>status resistance</>",
                 "CN": "击杀5<@ba.talpu>(-2)</>个敌人后获得攻击速度+15和<$ba.buffres>抵抗</>",
                 "mod": "击杀3<@ba.talpu>(-2)</>个敌人后获得攻击速度+23和<$ba.buffres>抵抗</>",
-                "upgradeDescription": "After defeating 3<@ba.talpu>(-2)</> enemies, Sideroca gains +23 ASPD and <$ba.buffres>status resistance</>"
+                "upgradeDescription": "After defeating 3 <@ba.talpu>(-2)</> enemies, gains +23 ASPD and <$ba.buffres>status resistance</>"
             }
         ]
     ],
@@ -206,30 +206,30 @@
     "uniequip_002_rosesa": [
         [
             {
-                "name": "最好的草药医生",
+                "name": "Herbalist Número Uno",
                 "CN": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升15%",
                 "mod": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升18%",
-                "upgradeDescription": "ATK-5%, allies within Attack Range receive increased healing amount by 18%"
+                "upgradeDescription": "ATK -5%, but allied Operators within range receive 18% more healing"
             },
             {
-                "name": "最好的草药医生",
+                "name": "Herbalist Número Uno",
                 "CN": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升17%<@ba.talpu>(+2%)</>",
                 "mod": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升20%<@ba.talpu>(+2%)</>",
-                "upgradeDescription": "ATK-5%, allies within Attack Range receive increased healing amount by 20%<@ba.talpu>(+2%)</>"
+                "upgradeDescription": "ATK -5%, but allied Operators within range receive 20% <@ba.talpu>(+2%)</> more healing"
             }
         ],
         [
             {
-                "name": "最好的草药医生",
+                "name": "Herbalist Número Uno",
                 "CN": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升15%",
                 "mod": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升20%",
-                "upgradeDescription": "ATK-5%, allies within Attack Range receive increased healing amount by 20%"
+                "upgradeDescription": "ATK -5%, but allied Operators within range receive 20% more healing"
             },
             {
-                "name": "最好的草药医生",
+                "name": "Herbalist Número Uno",
                 "CN": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升17%<@ba.talpu>(+2%)</>",
                 "mod": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升22%<@ba.talpu>(+2%)</>",
-                "upgradeDescription": "ATK-5%, allies within Attack Range receive increased healing amount by 22%<@ba.talpu>(+2%)</>"
+                "upgradeDescription": "ATK -5%, but allied Operators within range receive 22% <@ba.talpu>(+2%)</> more healing"
             }
         ]
     ],
@@ -240,14 +240,14 @@
                 "EN": "ASPD +12",
                 "CN": "攻击速度+12",
                 "mod": "攻击速度+12；连续造成伤害时逐渐无视敌人防御力，最高无视150点防御力(每次造成伤害提升6点)，5秒内未攻击则失去加成",
-                "upgradeDescription": "ASPD +12; When dealing damage gradually ignore increasing amounts of the target's DEF, up to a 150 DEF (each time attack dealing damage increases the DEF ignored by 6). This bonus is lost when no attacks have been made within 5 seconds"
+                "upgradeDescription": "ASPD +12; continuous attacks gradually ignore increasing amounts of the target's DEF, up to a maximum of 150 DEF (each attack increases the DEF ignored by 6); this bonus is lost when no attacks have been made within 5 seconds"
             },
             {
                 "name": "Fast Cartridge",
                 "EN": "ASPD +15 <@ba.talpu>(+3)</>",
                 "CN": "攻击速度+15<@ba.talpu>(+3)</>",
                 "mod": "攻击速度+15<@ba.talpu>(+3)</>；连续造成伤害时逐渐无视敌人防御力，最高无视150点防御力(每次造成伤害提升6点)，5秒内未攻击则失去加成",
-                "upgradeDescription": "ASPD +15<@ba.talpu>(+3)</>; When dealing damage gradually ignore increasing amounts of the target's DEF, up to a 150 DEF (each time attack dealing damage increases the DEF ignored by 6). This bonus is lost when no attacks have been made within 5 seconds"
+                "upgradeDescription": "ASPD +15 <@ba.talpu>(+3)</>; continuous attacks gradually ignore increasing amounts of the target's DEF, up to a maximum of 150 DEF (each attack increases the DEF ignored by 6); this bonus is lost when no attacks have been made within 5 seconds"
             }
         ],
         [
@@ -256,14 +256,14 @@
                 "EN": "ASPD +12",
                 "CN": "攻击速度+12",
                 "mod": "攻击速度+12；连续造成伤害时逐渐无视敌人防御力，最高无视250点防御力(每次造成伤害提升10点)，5秒内未攻击则失去加成",
-                "upgradeDescription": "ASPD +12; When dealing damage gradually ignore increasing amounts of the target's DEF, up to a 250 DEF (each time attack dealing damage increases the DEF ignored by 6). This bonus is lost when no attacks have been made within 5 seconds"
+                "upgradeDescription": "ASPD +12; continuous attacks gradually ignore increasing amounts of the target's DEF, up to a maximum of 250 DEF (each attack increases the DEF ignored by 10); this bonus is lost when no attacks have been made within 5 seconds"
             },
             {
                 "name": "Fast Cartridge",
                 "EN": "ASPD +15 <@ba.talpu>(+3)</>",
                 "CN": "攻击速度+15<@ba.talpu>(+3)</>",
                 "mod": "攻击速度+15<@ba.talpu>(+3)</>；连续造成伤害时逐渐无视敌人防御力，最高无视250点防御力(每次造成伤害提升10点)，5秒内未攻击则失去加成",
-                "upgradeDescription": "ASPD +15<@ba.talpu>(+3)</>; When dealing damage gradually ignore increasing amounts of the target's DEF, up to a 250 DEF (each time attack dealing damage increases the DEF ignored by 6). This bonus is lost when no attacks have been made within 5 seconds"
+                "upgradeDescription": "ASPD +15 <@ba.talpu>(+3)</>; continuous attacks gradually ignore increasing amounts of the target's DEF, up to a maximum of 250 DEF (each attack increases the DEF ignored by 10); this bonus is lost when no attacks have been made within 5 seconds"
             }
         ]
     ],
@@ -447,7 +447,7 @@
                 "EN": "25%<@ba.talpu> (+2%)</> chance for normal attacks to increase the damage Chongyue deals to the target by 70%<@ba.talpu> (+5%)</> for 2.5s",
                 "CN": "对目标普通攻击时，有25%<@ba.talpu>(+2%)</>的概率使重岳2.5秒内对其造成的伤害提升70%<@ba.talpu>(+5%)</>",
                 "mod": "对目标普通攻击时，有25%<@ba.talpu>(+2%)</>的概率使重岳2.5秒内对其造成的伤害提升75%<@ba.talpu>(+5%)</>",
-                "upgradeDescription": "25%<@ba.talpu> (+2%)</> chance for normal attacks to increase the damage Chongyue deals to the target by 75%<@ba.talpu> (+5%)</> for 2.5s"
+                "upgradeDescription": "25% <@ba.talpu>(+2%)</> chance for normal attacks to increase the damage Chongyue deals to the target by 75% <@ba.talpu>(+5%)</> for 2.5s"
             }
         ],
         [
@@ -463,7 +463,7 @@
                 "EN": "25%<@ba.talpu> (+2%)</> chance for normal attacks to increase the damage Chongyue deals to the target by 70%<@ba.talpu> (+5%)</> for 2.5s",
                 "CN": "对目标普通攻击时，有25%<@ba.talpu>(+2%)</>的概率使重岳2.5秒内对其造成的伤害提升70%<@ba.talpu>(+5%)</>",
                 "mod": "对目标普通攻击时，有25%<@ba.talpu>(+2%)</>的概率使重岳2.5秒内对其造成的伤害提升80%<@ba.talpu>(+5%)</>",
-                "upgradeDescription": "25%<@ba.talpu> (+2%)</> chance for normal attacks to increase the damage Chongyue deals to the target by 80%<@ba.talpu> (+5%)</> for 2.5s"
+                "upgradeDescription": "25% <@ba.talpu>(+2%)</> chance for normal attacks to increase the damage Chongyue deals to the target by 80% <@ba.talpu>(+5%)</> for 2.5s"
             }
         ]
     ],
@@ -570,30 +570,30 @@
     "uniequip_002_thorn2": [
         [
             {
-                "name": "心相",
+                "name": "La Forma del Corazón",
                 "CN": "攻击力+10%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长3秒",
                 "mod": "攻击力+10%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4秒",
-                "upgradeDescription": "ATK+10%. When there are other operators within Attack Range, increase the duration of Alchemical units by 4 seconds"
+                "upgradeDescription": "ATK +10%; when there are other Operators within range, Alchemical Units thrown by this unit last 4s longer"
             },
             {
-                "name": "心相",
+                "name": "La Forma del Corazón",
                 "CN": "攻击力+14%<@ba.talpu>(+4%)</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4<@ba.talpu>(+1)</>秒",
                 "mod": "攻击力+14%<@ba.talpu>(+4%)</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长5<@ba.talpu>(+1)</>秒",
-                "upgradeDescription": "ATK+14%<@ba.talpu>(+4%)</>. When there are other operators within Attack Range, increase the duration of Alchemical units by 5<@ba.talpu>(+1)</> seconds"
+                "upgradeDescription": "ATK +14% <@ba.talpu>(+4%)</>; when there are other Operators within range, Alchemical Units thrown by this unit last 5s <@ba.talpu>(+1s)</> longer"
             }
         ],
         [
             {
-                "name": "心相",
+                "name": "La Forma del Corazón",
                 "CN": "攻击力+10%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长3秒",
                 "mod": "攻击力+15%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4秒",
-                "upgradeDescription": "ATK+15%. When there are other operators within Attack Range, increase the duration of Alchemical units by 4 seconds"
+                "upgradeDescription": "ATK +15%; when there are other Operators within range, Alchemical Units thrown by this unit last 4s longer"
             },
             {
-                "name": "心相",
+                "name": "La Forma del Corazón",
                 "CN": "攻击力+14%<@ba.talpu>(+4%)</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4<@ba.talpu>(+1)</>秒",
                 "mod": "攻击力+19%<@ba.talpu>(+4%)</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长5<@ba.talpu>(+1)</>秒",
-                "upgradeDescription": "ATK+19%<@ba.talpu>(+4%)</>. When there are other operators within Attack Range, increase the duration of Alchemical units by 5<@ba.talpu>(+1)</> seconds"
+                "upgradeDescription": "ATK +19% <@ba.talpu>(+4%)</>; when there are other Operators within range, Alchemical Units thrown by this unit last 5s <@ba.talpu>(+1s)</> longer"
             }
         ]
     ],
@@ -1364,18 +1364,18 @@
     "uniequip_002_tecno": [
         [
             {
-                "name": "即兴制偶",
+                "name": "Freestyle Puppetry",
                 "CN": "攻击范围内的地面敌人被击倒时原地生成一个木偶舞者(最多存在5个)，木偶舞者攻击造成法术伤害",
                 "mod": "攻击范围内的地面敌人被击倒时原地生成一个属性更强的木偶舞者(最多存在5个)，木偶舞者攻击造成法术伤害",
-                "upgradeDescription": "When a ground enemy within Attack Range is defeated, create a stronger Puppet Dancer at its location (up to 5). Puppet Dancers deal Arts damage"
+                "upgradeDescription": "After defeating any ground enemy within range, a stronger Puppet Dancer spawns where they fall (up to 5 at a time); Puppet Dancers deal Arts damage."
             }
         ],
         [
             {
-                "name": "即兴制偶",
+                "name": "Freestyle Puppetry",
                 "CN": "攻击范围内的地面敌人被击倒时原地生成一个木偶舞者(最多存在5个)，木偶舞者攻击造成法术伤害",
                 "mod": "攻击范围内的地面敌人被击倒时原地生成一个属性更强的木偶舞者(最多存在5个)，木偶舞者攻击造成法术伤害，木偶舞者存在时自身攻击力+15%",
-                "upgradeDescription": "When a ground enemy within Attack Range is defeated, create a stronger Puppet Dancer at its location (up to 5). Puppet Dancers deal Arts damage. While a Puppet is present, ATK +15%"
+                "upgradeDescription": "After defeating any ground enemy within range, a stronger Puppet Dancer spawns where they fall (up to 5 at a time); Puppet Dancers deal Arts damage. While a Puppet is present, ATK +15%"
             }
         ]
     ],

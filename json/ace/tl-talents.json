@@ -7950,95 +7950,94 @@
 	"char_1039_thorn2": [
         [
             {
-                "name": "心相",
+                "name": "La Forma del Corazón",
                 "descCN": "攻击力+3%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长1秒",
-                "desc": "ATK+3%. When there are other operators within Attack Range, increase the duration of Alchemical units by 1 seconds"
+                "desc": "ATK +3%; when there are other Operators within range, Alchemical Units thrown by this unit last 1s longer"
             },
             {
-                "name": "心相",
+                "name": "La Forma del Corazón",
                 "descCN": "攻击力+7%<@ba.talpu>(+4%)</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长2<@ba.talpu>(+1)</>秒",
-                "desc": "ATK+7%<@ba.talpu>(+4%)</>. When there are other operators within Attack Range, increase the duration of Alchemical units by 2<@ba.talpu>(+1)</> seconds"
+                "desc": "ATK +7% <@ba.talpu>(+4%)</>; when there are other Operators within range, Alchemical Units thrown by this unit last 2s <@ba.talpu>(+1s)</> longer"
             },
             {
-                "name": "心相",
+                "name": "La Forma del Corazón",
                 "descCN": "攻击力+6%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长2秒",
-                "desc": "ATK+6%. When there are other operators within Attack Range, increase the duration of Alchemical units by 2 seconds"
+                "desc": "ATK +6%; when there are other Operators within range, Alchemical Units thrown by this unit last 2s longer"
             },
             {
-                "name": "心相",
+                "name": "La Forma del Corazón",
                 "descCN": "攻击力+10%<@ba.talpu>(+4%)</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长3<@ba.talpu>(+1)</>秒",
-                "desc": "ATK+10%<@ba.talpu>(+4%)</>. When there are other operators within Attack Range, increase the duration of Alchemical units by 3<@ba.talpu>(+1)</> seconds"
+                "desc": "ATK +10% <@ba.talpu>(+4%)</>; when there are other Operators within range, Alchemical Units thrown by this unit last 3s <@ba.talpu>(+1s)</> longer"
             },
             {
-                "name": "心相",
+                "name": "La Forma del Corazón",
                 "descCN": "攻击力+10%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长3秒",
-                "desc": "ATK+10%. When there are other operators within Attack Range, increase the duration of Alchemical units by 3 seconds"
+                "desc": "ATK +10%; when there are other Operators within range, Alchemical Units thrown by this unit last 3s longer"
             },
             {
-                "name": "心相",
+                "name": "La Forma del Corazón",
                 "descCN": "攻击力+14%<@ba.talpu>(+4%)</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4<@ba.talpu>(+1)</>秒",
-                "desc": "ATK+14%<@ba.talpu>(+4%)</>. When there are other operators within Attack Range, increase the duration of Alchemical units by 4<@ba.talpu>(+1)</> seconds"
+                "desc": "ATK +14% <@ba.talpu>(+4%)</>; when there are other Operators within range, Alchemical Units thrown by this unit last 4s <@ba.talpu>(+1s)</> longer"
             }
         ],
         [
             {
-                "name": "视界",
+                "name": "El Alcance de la Visión",
                 "descCN": "在场时，所有友方单位攻击速度+5，敌方单位攻击速度-5；位于连续6格或以上直线道路的友方和敌方单位受到的效果翻倍",
-                "desc": "All ally operators ASPD+5, and enemy ASPD-5; effects are doubled for allied and enemy located on a straight path of 6 or more consecutive tiles",
-				"temp" : "When on field, all allies ASPD+5, all enemies ASPD-5; all allies and enemies in the 6 frontal tiles receive double effect ??????"
+                "desc": "When deployed, all allies have ASPD +5 and all enemies have ASPD -5; effect is doubled for allies and enemies on a straight line of 6 or more consecutive tiles"
             }
         ]
     ],
     "char_4164_tecno": [
         [
             {
-                "name": "即兴制偶",
+                "name": "Freestyle Puppetry",
                 "descCN": "攻击范围内的地面敌人被击倒时原地生成一个木偶舞者(最多存在2个)，木偶舞者攻击造成法术伤害",
-                "desc": "When a ground enemy within Attack Range is defeated, create a Puppet Dancer at its location (up to 2). Puppet Dancers deal Arts damage"
+                "desc": "After defeating any ground enemy within range, a Puppet Dancer spawns where they fall (up to 2 at a time); Puppet Dancers deal Arts damage"
             },
             {
-                "name": "即兴制偶",
+                "name": "Freestyle Puppetry",
                 "descCN": "攻击范围内的地面敌人被击倒时原地生成一个木偶舞者(最多存在3个)，木偶舞者攻击造成法术伤害",
-                "desc": "When a ground enemy within Attack Range is defeated, create a Puppet Dancer at its location (up to 3). Puppet Dancers deal Arts damage"
+                "desc": "After defeating any ground enemy within range, a Puppet Dancer spawns where they fall (up to 3 at a time); Puppet Dancers deal Arts damage"
             },
             {
-                "name": "即兴制偶",
+                "name": "Freestyle Puppetry",
                 "descCN": "攻击范围内的地面敌人被击倒时原地生成一个木偶舞者(最多存在5个)，木偶舞者攻击造成法术伤害",
-                "desc": "When a ground enemy within Attack Range is defeated, create a Puppet Dancer at its location (up to 5). Puppet Dancers deal Arts damage"
+                "desc": "After defeating any ground enemy within range, a Puppet Dancer spawns where they fall (up to 5 at a time); Puppet Dancers deal Arts damage"
             }
         ]
     ],
     "char_4163_rosesa": [
         [
             {
-                "name": "最好的草药医生",
+                "name": "Herbalist Número Uno",
                 "descCN": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升5%",
-                "desc": "ATK-5%, allies within Attack Range receive increased healing amount by 5%"
+                "desc": "ATK -5%, but allied Operators within range receive 5% more healing"
             },
             {
-                "name": "最好的草药医生",
+                "name": "Herbalist Número Uno",
                 "descCN": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升7%<@ba.talpu>(+2%)</>",
-                "desc": "ATK-5%, allies within Attack Range receive increased healing amount by 7%<@ba.talpu>(+2%)</>"
+                "desc": "ATK -5%, but allied Operators within range receive 7% <@ba.talpu>(+2%)</> more healing"
             },
             {
-                "name": "最好的草药医生",
+                "name": "Herbalist Número Uno",
                 "descCN": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升10%",
-                "desc": "ATK-5%, allies within Attack Range receive increased healing amount by 10%"
+                "desc": "ATK -5%, but allied Operators within range receive 10% more healing"
             },
             {
-                "name": "最好的草药医生",
+                "name": "Herbalist Número Uno",
                 "descCN": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升12%<@ba.talpu>(+2%)</>",
-                "desc": "ATK-5%, allies within Attack Range receive increased healing amount by 12%<@ba.talpu>(+2%)</>"
+                "desc": "ATK -5%, but allied Operators within range receive 12% <@ba.talpu>(+2%)</> more healing"
             },
             {
-                "name": "最好的草药医生",
+                "name": "Herbalist Número Uno",
                 "descCN": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升15%",
-                "desc": "ATK-5%, allies within Attack Range receive increased healing amount by 15%"
+                "desc": "ATK -5%, but allied Operators within range receive 15% more healing"
             },
             {
-                "name": "最好的草药医生",
+                "name": "Herbalist Número Uno",
                 "descCN": "自身攻击力-5%，但攻击范围内的友方干员受到的治疗效果提升17%<@ba.talpu>(+2%)</>",
-                "desc": "ATK-5%, allies within Attack Range receive increased healing amount by 17%<@ba.talpu>(+2%)</>"
+                "desc": "ATK -5%, but allied Operators within range receive 17% <@ba.talpu>(+2%)</> more healing"
             }
         ]
     ],

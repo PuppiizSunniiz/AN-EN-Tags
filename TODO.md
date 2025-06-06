@@ -1,16 +1,4 @@
 # Fix TL (Official EN) waiting room
-### Exodus from the Pale Sea
-- Talent > Mod
-    - Thorns the Lodestar
-    - Tecno
--  Trait
-    - Tecno
-    - Necrass Mod
-    - Tecno 's Token
-    - aft-x
-    - aft-y
-    - aft-d
-
 ### Such is the Joy of Our Reunion
 - Talent > Mod
     - Surfer
