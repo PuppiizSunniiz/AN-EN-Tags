@@ -1357,7 +1357,7 @@
                 "name": "复燃",
                 "CN": "攻击范围内敌人被击倒时生成一个悲叹的仆役，最多召唤3个，若无法再次召唤则使一个悲叹的仆役升级(提升阻挡数与更多的生命、攻击和防御)",
                 "mod": "自身和召唤物攻击范围内敌人被击倒时在10秒内自身攻击力+25%，并在攻击范围内生成一个悲叹的仆役，最多召唤3个，若无法再次召唤则使一个悲叹的仆役升级(提升阻挡数与更多的生命、攻击和防御",
-                "upgradeDescription": "When an enemy within Attack Range is defeated, self and summons ATK +25% for 10 seconds and summon The Servant of Lament at its location (up to 3). If no more Servant of Laments can be summoned, upgrade 1 Servant of Lament instead (increase Block Count, higher HP, higher ATK and higher DEF) "
+                "upgradeDescription": "When an enemy within own or summons' Attack Range is defeated, ATK +25% for 10 seconds and summon The Servant of Lament at its location (up to 3). If no more Servant of Laments can be summoned, upgrade 1 Servant of Lament instead (increase Block Count, higher HP, higher ATK and higher DEF) "
             }
         ]
     ],
