@@ -6,6 +6,7 @@ SkeletonBinary.prototype = {
     json : {},
     nextNum : 0,
     chars : null,
+    version : null,
     readByte : function(){
         return this.nextNum < this.data.length ? this.data[this.nextNum++] : null;
     },
@@ -142,7 +143,13 @@ SkeletonBinary.prototype = {
         }
         return this.chars;
     },
-    initJson : function(){
+    readSkeletonVersion(){
+        this.readString();
+        return this.readString()
+    },
+    readSkeletonData(){
+        this.nextNum = 0
+        this.json = {}
         this.json.skeleton = {};
         var skeleton = this.json.skeleton;
         skeleton.hash = this.readString();
@@ -151,6 +158,7 @@ SkeletonBinary.prototype = {
         skeleton.spine = this.readString();
         if(skeleton.spine.length == 0)
             skeleton.spine = null;
+        this.version = skeleton.spine
         skeleton.width = this.readFloat();
         skeleton.height = this.readFloat();
         var nonessential = this.readBoolean();

@@ -1,7 +1,7 @@
     $.holdReady(true);
 
     console.log = function () { }
-    
+
     const jsonList = {
 
         //CN
@@ -125,6 +125,8 @@
 
     var currskin
     var currVoiceID
+    var attempt = 0;
+    var SpineVersion
     var spinewidgettoken
     var animIndex = 0;
     var animations
@@ -138,7 +140,7 @@
     var chibiscale = [0.5,0]
     var chibiperscurr = 0
     var chibiperslist = ["front","back","build"]
-    var bgnum =0
+    var bgnum = 0
     var bgmax = 5
     var scrollcheck = 0
     var savenum = 0
@@ -1344,7 +1346,9 @@
         }
         $('#charazoom').modal('handleUpdate')
     }
-    function selectOperator(opid,from='Selecting Operator From Browse'){
+    function selectOperator(opid, from = 'Selecting Operator From Browse'){
+        attempt = 0
+        
         $("#opchoosemodal").modal('hide');
 
         if(spinewidgetcg){
@@ -1360,14 +1364,14 @@
             $("#opname").val("");
             $('#operatorsResult').empty();
             $('#operatorsResult').hide();
-            var opdata = query(db.chars2,"id",opid);
+            var opdata = query(db.chars2, "id", opid);
             var opdata2 = {[opid]:db.chars[opid]}
             var opcode = Object.keys(opdata2)[0]
-            var gamemode = query(db.chars2,"id",opid,true,false).gamemode
+            var gamemode = query(db.chars2, "id", opid, true, false).gamemode
             console.log(gamemode)
 
-            var opKey =""
-            $.each(opdata2,function(key,v){
+            var opKey = ""
+            $.each(opdata2,function(key, v){
                 v['id'] = key;
                 console.log(v);
                 opdataFull = v;
@@ -1569,7 +1573,7 @@
             globalelite = 0
             globallevel = [1,1,1]
             console.log(chibipers)
-            if(chibipers=='build') chibiName= "build_"+chibiName
+            if(chibipers == 'build') chibiName = "build_" + chibiName
             console.log(chibiName)
             folder = `https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/spineassets/${chibitype}/${charName}/${chibipers}/`
             // if(spinewidget)
@@ -1711,7 +1715,7 @@
                     dropdowntab.push(`
                         <li class='nav-item' ${i==0?`style="margin-top:5px"`:""}>
                         ${extraSkin[i].dynIllustId?`
-                            <button class='btn tabbing-btns tabbing-btns-middle' data-toggle='pill' style='width:24px;height:25px;display:inline-block' title="Show Animated CG" onClick='ShowDynamic("${opcode}",true,"${extraSkin[i].dynIllustId.replace("#","_")}")'>
+                            <button class='btn tabbing-btns tabbing-btns-middle' data-toggle='pill' style='width:24px;height:25px;display:inline-block' title="Show Animated CG" onClick='ShowDynamic("${opcode}",true,"${encodeURIComponent(extraSkin[i].dynIllustId)}")'>
                                 <i class="fas fa-play-circle"></i>
                             </button><button class='btn tabbing-btns tabbing-btns-middle' style='width:19px;height:25px;display:inline-block' title="Play Interact Animation" onClick='CreateAnimation(spinewidgetcg,["Interact","Idle"])'>
                                 <i class="fas fa-hand-point-down"></i>
@@ -3060,9 +3064,9 @@
         return ChangeDescriptionColor(tl,true)
     }
 
-    function UpdateToken(skilltoken,i,skillLength){
+    function UpdateToken(skilltoken, i, skillLength){
         globaltoken = skilltoken
-        ChangeSkillAnim(i,skillLength,skilltoken)
+        ChangeSkillAnim(i, skillLength, skilltoken)
         globalskill = i
         UpdateTokenContent()
         if(loadchibi && !defaulttoken && skilltoken.includes("token_")){
@@ -3070,8 +3074,8 @@
         }
     }
 
-    function UpdateTokenContent(wholetokenupdate=true){
-        if(!globaltoken||globaltoken=="null"){
+    function UpdateTokenContent(wholetokenupdate = true){
+        if(!globaltoken || globaltoken == "null"){
             $("#token-contents").html("");
             return
         }
@@ -5791,42 +5795,42 @@
                         value = value*2;
                         // console.log("DOUBLE!!")
                     }
-                    num+=1
+                    num += 1
                     return `<div class="stat-important">${value}</div>`
                 }
             }
             return m
         })
         if(getNum){
-            return {desc:desc,num:num}
+            return {desc:desc, num:num}
         }
         return desc
 
     }
 
-    function ChangeSkillAnim(skillnum,skillmax,token){
+    function ChangeSkillAnim(skillnum, skillmax, token){
         // console.log(skillnum)
         // console.log(token)
         // console.log(skillmax)
         console.log(token)
         tokenname = token
-        if(spinewidgettoken&&token&&spinewidgettoken.loaded){
+        if(spinewidgettoken && token&& spinewidgettoken.loaded){
             LoadAnimationToken(token)
         }
-        if(spinewidget&&spinewidget.loaded){
+        if(spinewidget && spinewidget.loaded){
 
             var animskill = db.animlist[opdataFull.id]
             console.log(skillnum)
             if(animskill && animskill.skills[skillnum]){
                 $("#spine-text").text(`Skill ${skillnum+1}`)
-                CreateAnimation(spinewidget,animskill.skills[skillnum],true)
+                CreateAnimation(spinewidget, animskill.skills[skillnum],true)
             }
             else{
-                var animlist = Object.keys(spinewidget.customanimation).filter(search=>search.includes("Skill"))
+                var animlist = Object.keys(spinewidget.customanimation).filter(search => search.includes("Skill"))
 
-                animlist=animlist.sort((a,b)=>{
-                    if(a<b)return 1
-                    if(a>b)return -1
+                animlist = animlist.sort((a, b) => {
+                    if(a < b) return 1
+                    if(a > b) return -1
                     return 0
                 })
 
@@ -5897,22 +5901,16 @@
     function GetAtlasValue(value){
         var content = value.split(":")
         var splitvalue = [content[1]]
-        if(content[1]&&content[1].includes(",")){
-          splitvalue = content[1].split(",")
+        if(content[1] && content[1].includes(",")){
+            splitvalue = content[1].split(",")
         }
-        return {key:content[0],value:splitvalue}
-      }
+        return {key:content[0], value:splitvalue}
+    }
 
-    function LoadAnimationCG(opid,dynid,isSkin = false){
+    function LoadAnimationCG(opid, dynid, isSkin = false){
         var dynfolder = `https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/spineassets/dynchars/${opid}/`
-        var splitdyn = dynid.split("_")
-        var splitdynj = splitdyn.slice(0, splitdyn.length - 1).join("_")
-        var skelname = `${splitdynj}`
 
-        if(isSkin){
-            skelname = dynid
-        }
-        console.log(skelname)
+        skelname = dynid
         if(spinewidgetcg){
             spinewidgetcg.pause()
             spinewidgetcg = undefined
@@ -5921,7 +5919,7 @@
         $("#spine-frame-op").append(`<div id="spine-widget-op" class="top-layer" style="position:absolute;width: 3000px; height: 3000px;top:-1100px;left:-1300px;;pointer-events: none;z-index: 20;transform: scale(0.6);"></div>`)
         if (chibiName != null && defaultAnimationName != null) {
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', dynfolder + skelname + "." +skeletonType, true);
+            xhr.open('GET', dynfolder + skelname + "." + skeletonType, true);
             xhr.responseType = 'arraybuffer';
             var array;
             $("#spine-widget-op").hide()
@@ -5939,11 +5937,18 @@
                     skelBin = new SkeletonBinary();
                     var jsonskel
                     // console.log(array)
-                    if(array.length==0){
-
-                    }else{
-                        if (skeletonType== "skel"){
+                    if(array.length != 0){
+                        if (skeletonType == "skel"){
                             skelBin.data = array
+                            SpineVersion = skelBin.readSkeletonVersion()
+                            console.log(skelBin, SpineVersion)
+                            if (SpineVersion.slice(0,3) == "3.8"){
+                                jsonskel = array
+                            }else if(SpineVersion.slice(0,3) == "3.5"){
+                                skelBin.readSkeletonData()
+                                jsonskel = JSON.stringify(skelBin.json)
+                            }
+                            /*skelBin.data = array
                             skelBin.initJson()
                             jsonskel = JSON.stringify(skelBin.json)
                             var parsedskeljson = JSON.parse(jsonskel)
@@ -5953,14 +5958,19 @@
                             }
                             if(!Object.keys(parsedskeljson.skins).find(search=>search==defaultskin)){
                                 defaultskin = Object.keys(parsedskeljson.skins)[0]
-                            }
+                            }*/
+                        }else if (skeletonType == "json"){
+                            jsonskel = JSON.parse(new TextDecoder("utf-8").decode(array))
+                            SpineVersion = jsonskel.skeleton.spine
                         }
-                        var spineX = parseFloat(3000)/2
-                        var spineY = parseFloat(3000)/2 -300
+                        console.log(SpineVersion, jsonskel)
+                        var spineX = parseFloat(3000)/2 - 50
+                        var spineY = parseFloat(3000)/2 - 0
                         var xhratlas = new XMLHttpRequest();
                         xhratlas.open('GET', dynfolder + skelname + ".atlas", true);
                         xhratlas.onloadend = function (e) {
                             if (xhratlas.status != 404) {
+                                attempt = 0
                                 var loadedatlas = xhratlas.response;
                                 var imagename = ConvertAtlas(loadedatlas)
                                 var atlaslist = []
@@ -5968,25 +5978,27 @@
                                     atlaslist.push(image.image)
                                 });
                                 console.log(atlaslist)
-                                new spine.SpineWidget("spine-widget-op", {
+                                var config = {
+                                    version: SpineVersion,
                                     jsonContent: jsonskel,
+                                    skeltype: skeletonType,
                                     atlas: dynfolder + skelname + ".atlas",
                                     atlasPages: atlaslist,
-                                    animation: defaultAnimationName,
+                                    animation: "Idle",
                                     backgroundColor: "#00000000",
                                     // debug: true,
                                     // imagesPath: chibiName + ".png",
-                                    premultipliedAlpha: true,
+                                    premultipliedAlpha: false,
                                     fitToCanvas : false,
-                                    loop:true,
+                                    loop: true,
                                     // x:900,
                                     // y:650,
-                                    x:spineX,
-                                    y:spineY,
+                                    x: spineX,
+                                    y: spineY,
                                     //0.5 for normal i guess
-                                    scale:0.85,
+                                    scale: 0.55,
                                     success: function (widget) {
-                                        animIndex=0
+                                        animIndex = 0
                                         spinewidgetcg = widget
                                         $("#loading-spine-op").fadeOut(200)
                                         animations = widget.skeleton.data.animations;
@@ -5998,14 +6010,30 @@
                                         }
                                         widget.customanimation = CheckAnimationSet(animations)
                                     }
-                                })
+                                }
+                                if (SpineVersion.slice(0,3) == "3.8"){
+                                    new spine38.SpineWidget("spine-widget-op", config)
+                                }else if(SpineVersion.slice(0,3) == "3.5"){
+                                    new spine.SpineWidget("spine-widget-op", config)
+                                }
                             }
                         }
                         xhratlas.send()
                     }
                 }else{
-                    $("#loading-spine-op").text("Load Failed 2")
-                    $("#spine-frame-op").fadeOut()
+                    if (attempt == 2) {
+                        xhr.abort()
+                        $("#loading-spine-op").text("Load Failed 2")
+                        $("#spine-frame-op").fadeOut()
+                    }else{
+                        attempt += 1
+                        if(skeletonType == "skel"){
+                            skeletonType = "json"
+                        }else{
+                            skeletonType = "skel"
+                        }
+                        LoadAnimationCG(opid, dynid)
+                    }
                 }
             };
             xhr.send()
@@ -6013,7 +6041,6 @@
     }
 
     function LoadAnimation(){
-        // console.log(spinewidget)
         $("#loading-spine").text("Loading...")
         if(spinewidget){
             spinewidget.pause()
@@ -6030,42 +6057,42 @@
             var defaultskin ='default'
 
             xhr.onprogress = function () {
-                // console.log('LOADING: ', xhr.status);
                 $("#loading-spine").fadeIn(200)
             };
-            // console.log(chibiName)
             xhr.onloadend = function (e) {
-                // console.log(xhr.status)
                 if (xhr.status != 404) {
                     buffer = xhr.response;
                     array = new Uint8Array(buffer);
-                    // console.log(array);
                     skelBin = new SkeletonBinary();
                     var jsonskel
-                    if(array.length==0){
+                    if(array.length == 0){
                         $("#loading-spine").text("Load Failed (Not Found)")
-                        // chibiperscurr++
-                        // if(chibiperscurr>=chibiperslist.length)chibiperscurr=0
-                        // else if(chibiperscurr<0)chibiperscurr=chibiperslist.length-1
-                        // LoadAnimation()
 
                     }else{
-                        if (skeletonType== "skel"){
+                        if (skeletonType == "skel"){
                             skelBin.data = array
-                            skelBin.initJson()
-                            jsonskel = JSON.stringify(skelBin.json)
-                            var parsedskeljson = JSON.parse(jsonskel)
+                            SpineVersion = skelBin.readSkeletonVersion()
+                            console.log(skelBin, SpineVersion)
+                            if (SpineVersion.slice(0,3) == "3.8"){
+                                jsonskel = array
+                            }else if(SpineVersion.slice(0,3) == "3.5"){
+                                skelBin.readSkeletonData()
+                                jsonskel = JSON.stringify(skelBin.json)
+                                console.log(jsonskel)
+                            }
+                            //jsonskel = JSON.stringify(skelBin.json)
+                            /*var parsedskeljson = JSON.parse(jsonskel)
                             console.log(JSON.parse(jsonskel))
                             if(!Object.keys(parsedskeljson.animations).find(search=>search==defaultAnimationName)){
                                 defaultAnimationName = Object.keys(parsedskeljson.animations)[0]
                             }
                             if(!Object.keys(parsedskeljson.skins).find(search=>search==defaultskin)){
                                 defaultskin = Object.keys(parsedskeljson.skins)[0]
-                            }
-                        }else if (skeletonType== "json"){
+                            }*/
+                        }else if (skeletonType == "json"){
                             jsonskel = JSON.parse(new TextDecoder("utf-8").decode(array))
+                            SpineVersion = jsonskel.skeleton.spine
                             var parsedskeljson = jsonskel
-                            // console.log(JSON.parse(jsonskel))
                             if(!Object.keys(parsedskeljson.animations).find(search=>search==defaultAnimationName)){
                                 defaultAnimationName = Object.keys(parsedskeljson.animations)[0]
                             }
@@ -6074,42 +6101,34 @@
                             }
                         }
 
-                        // var test = new TextDecoder("utf-8").decode(array);
-                        // console.log(JSON.parse(test))
-                        // console.log(JSON.stringify(skelBin.json, null, "\t"));
                         var spineX = parseFloat($("#spine-widget").width())/2
                         var spineY = parseFloat($("#spine-widget").height())/2 -200
-
-                        // console.log(spineX)
-                        // console.log(spineY)
-                        if(jsonskel) console.log(parsedskeljson.skeleton.version)
-                        new spine.SpineWidget("spine-widget", {
+                        var config = {
+                            skeltype : skeletonType,
                             jsonContent: jsonskel,
                             atlas: folder + chibiName + ".atlas",
-                            animation: defaultAnimationName,
+                            animation: "Idle",
                             backgroundColor: "#00000000",
                             // debug: true,
                             // imagesPath: chibiName + ".png",
-                            premultipliedAlpha: true,
+                            premultipliedAlpha: false,
                             fitToCanvas : false,
-                            loop:true,
+                            loop: true,
                             // x:900,
                             // y:650,
-                            x:spineX,
-                            y:spineY,
+                            x: spineX,
+                            y: spineY,
                             //0.5 for normal i guess
-                            scale:1,
+                            scale: 1,
                             success: function (widget) {
-
-                                animIndex=0
+                                animIndex = 0
                                 spinewidget = widget
                                 $("#spine-text").text(widget.skeleton.data.animations[0].name)
                                 $("#loading-spine").fadeOut(200)
                                 animations = widget.skeleton.data.animations;
-                                // console.log(animations)
-                                // console.log(widget)
+                                
                                 $("#spine-widget").show()
-                                if(animations.find(search=>search.name=="Start")){
+                                if(animations.find(search => search.name == "Start")){
                                     CreateAnimation(spinewidget,["Start","Idle"])
                                     $("#spine-text").text("Idle")
                                 }else if(animations.find(search=>search.name=="Relax")){
@@ -6117,25 +6136,8 @@
                                     $("#spine-text").text("Relax")
                                 }
 
-                                // CreateAnimation(["Skill_Begin",["Skill_Loop",5],"Skill_End","Idle"],true)
-                                // CreateAnimation(["Skill_2_Begin",["Skill_2_Loop",5],"Skill_2_Loop_End","Idle"],true)
-
                                 widget.customanimation = CheckAnimationSet(animations)
-                                // console.log(widget)
-
-
-                                //ange skill 2
-                                // CreateAnimation(["Skill1_Begin",["Skill1_Loop",15],"Skill1_End",["Idle_Charge",2]],true)
-
-                                //ange skill 3 (is weird)
-                                // CreateAnimation(["Skill2_Begin",["Skill2_Loop",15],"Skill2_End",["Idle_Charge",2]],true)
-
-                                // Normal skill loop with begin and idle i guess (nian skill 2)
-                                // CreateAnimation(["Skill_2_Begin",["Skill_2_Loop",5],"Skill_2_Idle"],true,true)
-
-
-                                // console.log(widget.state)
-                                // console.log(widget.state.trackEntry)
+                                
                                 $("#spine-toolbar-next").onclick = function () {
                                     widget.state.clearTracks()
                                     if(animationqueue!=undefined)clearInterval(animationqueue)
@@ -6146,7 +6148,12 @@
                                     $("#spine-text").text(animations[animIndex].name)
                                 }
                             }
-                        })
+                        }
+                        if (SpineVersion.slice(0,3) == "3.8"){
+                            new spine38.SpineWidget("spine-widget", config)
+                        }else if(SpineVersion.slice(0,3) == "3.5"){
+                            new spine.SpineWidget("spine-widget", config)
+                        }
                     }
                 }else{
                     $("#loading-spine").text("Load Failed 2")
@@ -6195,92 +6202,97 @@
                 if (xhr.status != 404) {
                     buffer = xhr.response;
                     array = new Uint8Array(buffer);
-                    // console.log(array);
                     skelBin = new SkeletonBinary();
                     var jsonskel
-                    if(array.length==0){
-                        // $("#loading-spine").text("Load Failed")
-                    }
-                    if (skeletonType== "skel"){
-                        skelBin.data = array
-                        skelBin.initJson()
-                        jsonskel = JSON.stringify(skelBin.json)
-                        var parsedskeljson = JSON.parse(jsonskel)
-                        console.log(JSON.parse(jsonskel))
-                        if(!Object.keys(parsedskeljson.animations).find(search=>search==defaultAnimationName)){
-                            defaultAnimationName = Object.keys(parsedskeljson.animations)[0]
-                        }
-                        if(!Object.keys(parsedskeljson.skins).find(search=>search==defaultskin)){
-                            defaultskin = Object.keys(parsedskeljson.skins)[0]
-                        }
-                    }else if (skeletonType== "json"){
-                        jsonskel = JSON.parse(new TextDecoder("utf-8").decode(array))
-                        var parsedskeljson = jsonskel
-                        console.log(JSON.parse(jsonskel))
-                        if(!Object.keys(parsedskeljson.animations).find(search=>search==defaultAnimationName)){
-                            defaultAnimationName = Object.keys(parsedskeljson.animations)[0]
-                        }
-                        if(!Object.keys(parsedskeljson.skins).find(search=>search==defaultskin)){
-                            defaultskin = Object.keys(parsedskeljson.skins)[0]
-                        }
-                    }
-
-
-                    var spineX = parseFloat($("#spine-widget-token").width())/2
-                    var spineY = parseFloat($("#spine-widget-token").height())/2 -300
-                    // var test = new TextDecoder("utf-8").decode(array);
-                    console.log($("#spine-widget-token").width())
-                    // console.log(spineX)
-                    // console.log(JSON.parse(test))
-                    // console.log(JSON.stringify(skelBin.json, null, "\t"));
-                    new spine.SpineWidget("spine-widget-token", {
-                        jsonContent: jsonskel,
-                        atlas: tokenfolder + ".atlas",
-                        animation: defaultAnimationName,
-                        backgroundColor: "#00000000",
-                        // debug: true,
-                        // imagesPath: chibiName + ".png",
-                        premultipliedAlpha: true,
-                        fitToCanvas : false,
-                        loop:true,
-                        x:spineX,
-                        y:spineY,
-                        //0.5 for normal i guess
-                        scale:1,
-                        success: function (widget) {
-
-                            animIndex=0
-                            spinewidgettoken = widget
-                            $("#spine-text2").text(widget.skeleton.data.animations[0].name)
-                            // $("#loading-spine").fadeOut(200)
-                            tokenanimations = widget.skeleton.data.animations;
-                            // console.log(animations)
-                            // console.log(widget)
-                            $("#spine-widget-token").show()
-                            if(tokenanimations.find(search=>search.name=="Start")){
-                                CreateAnimation(spinewidgettoken,["Start","Idle"])
-                                $("#spine-text2").text("Idle")
-                            }else if(tokenanimations.find(search=>search.name=="Idle")){
-                                CreateAnimation(spinewidgettoken,"Idle")
-                                $("#spine-text2").text("Idle")
-                            }else if(tokenanimations.find(search=>search.name=="Relax")){
-                                CreateAnimation(spinewidgettoken,"Relax")
-                                $("#spine-text2").text("Relax")
+                    if(array.length != 0){
+                        if (skeletonType == "skel"){
+                            skelBin.data = array
+                            SpineVersion = skelBin.readSkeletonVersion()
+                            console.log(skelBin, SpineVersion)
+                            if (SpineVersion.slice(0,3) == "3.8"){
+                                jsonskel = array
+                            }else if(SpineVersion.slice(0,3) == "3.5"){
+                                skelBin.readSkeletonData()
+                                jsonskel = JSON.stringify(skelBin.json)
+                                console.log(jsonskel)
                             }
-
-                            widget.customanimation = CheckAnimationSet(tokenanimations)
-                            console.log(widget)
+                            /*jsonskel = JSON.stringify(skelBin.json)
+                            var parsedskeljson = JSON.parse(jsonskel)
+                            console.log(JSON.parse(jsonskel))
+                            if(!Object.keys(parsedskeljson.animations).find(search=>search==defaultAnimationName)){
+                                defaultAnimationName = Object.keys(parsedskeljson.animations)[0]
+                            }
+                            if(!Object.keys(parsedskeljson.skins).find(search=>search==defaultskin)){
+                                defaultskin = Object.keys(parsedskeljson.skins)[0]
+                            }*/
+                        }else if (skeletonType== "json"){
+                            jsonskel = JSON.parse(new TextDecoder("utf-8").decode(array))
+                            SpineVersion = jsonskel.skeleton.spine
+                            var parsedskeljson = jsonskel
+                            console.log(JSON.parse(jsonskel))
+                            if(!Object.keys(parsedskeljson.animations).find(search=>search==defaultAnimationName)){
+                                defaultAnimationName = Object.keys(parsedskeljson.animations)[0]
+                            }
+                            if(!Object.keys(parsedskeljson.skins).find(search=>search==defaultskin)){
+                                defaultskin = Object.keys(parsedskeljson.skins)[0]
+                            }
                         }
-                    })
-                }else{
+
+                        var spineX = parseFloat($("#spine-widget-token").width())/2
+                        var spineY = parseFloat($("#spine-widget-token").height())/2 -300
+
+                        console.log($("#spine-widget-token").width())
+
+                        var config = {
+                            jsonContent: jsonskel,
+                            atlas: tokenfolder + ".atlas",
+                            animation: "Idle",
+                            backgroundColor: "#00000000",
+                            // debug: true,
+                            // imagesPath: chibiName + ".png",
+                            premultipliedAlpha: false,
+                            fitToCanvas : false,
+                            loop: true,
+                            x: spineX,
+                            y: spineY,
+                            //0.5 for normal i guess
+                            scale: 1,
+                            success: function (widget) {
+
+                                animIndex = 0
+                                spinewidgettoken = widget
+                                $("#spine-text2").text(widget.skeleton.data.animations[0].name)
+                                tokenanimations = widget.skeleton.data.animations;
+                                
+                                $("#spine-widget-token").show()
+                                if(tokenanimations.find(search=>search.name=="Start")){
+                                    CreateAnimation(spinewidgettoken,["Start","Idle"])
+                                    $("#spine-text2").text("Idle")
+                                }else if(tokenanimations.find(search=>search.name=="Idle")){
+                                    CreateAnimation(spinewidgettoken,"Idle")
+                                    $("#spine-text2").text("Idle")
+                                }else if(tokenanimations.find(search=>search.name=="Relax")){
+                                    CreateAnimation(spinewidgettoken,"Relax")
+                                    $("#spine-text2").text("Relax")
+                                }
+
+                                widget.customanimation = CheckAnimationSet(tokenanimations)
+                            }
+                        }
+                        if (SpineVersion.slice(0,3) == "3.8"){
+                            new spine38.SpineWidget("spine-widget-token", config)
+                        }else if(SpineVersion.slice(0,3) == "3.5"){
+                            new spine.SpineWidget("spine-widget-token", config)
+                        }
+                    }
                 }
             };
             xhr.send()
         }
     }
-    function ChangeAnimation2(widget,widgettext,num){
-        if(widget=="token") widget=spinewidgettoken
-        else widget=spinewidget
+    function ChangeAnimation2(widget, widgettext, num){
+        if(widget == "token") widget = spinewidgettoken
+        else widget = spinewidget
 
         var curranimation = Object.keys(widget.customanimation)
         widget.state.clearTracks()
@@ -6290,7 +6302,7 @@
         // console.log(curranimation)
 
         if (animIndex >= curranimation.length) animIndex = 0;
-        else if (animIndex < 0) animIndex = curranimation.length-1;
+        else if (animIndex < 0) animIndex = curranimation.length - 1;
         // spinewidget.state.setDefaultMix(0.1);
         // spinewidget.config.scale = 2
         // console.log(widget)
@@ -6303,19 +6315,19 @@
         $(widgettext).text(Object.keys(widget.customanimation)[animIndex])
     }
 
-    function ChangeAnimation(widget,widgettext,num){
-        if(widget=="token") widget=spinewidgettoken
-        else widget=spinewidget
+    function ChangeAnimation(widget, widgettext, num){
+        if(widget == "token") widget = spinewidgettoken
+        else widget = spinewidget
 
         var curranimation = widget.skeleton.data.animations
         widget.state.clearTracks()
-        if(animationqueue!=undefined)clearInterval(animationqueue)
+        if(animationqueue != undefined) clearInterval(animationqueue)
         animIndex += num;
         // console.log(animIndex)
         // console.log(curranimation)
 
         if (animIndex >= curranimation.length) animIndex = 0;
-        else if (animIndex < 0) animIndex = curranimation.length-1;
+        else if (animIndex < 0) animIndex = curranimation.length - 1;
         // spinewidget.state.setDefaultMix(0.1);
         // spinewidget.config.scale = 2
         // console.log(widget)
@@ -6323,7 +6335,7 @@
         // widget.setAnimation(curranimation[animIndex].name)
         // console.log(widget.customanimation[Object.keys(widget.customanimation)[animIndex]])
         // console.log(curranimation[index])
-        CreateAnimation(widget,curranimation[animIndex].name)
+        CreateAnimation(widget, curranimation[animIndex].name)
         // widget.setAnimation(curranimation[animIndex].name)
         // console.log(widgettext)
         $(widgettext).text(curranimation[animIndex].name)
@@ -6386,14 +6398,16 @@
         if($("#spine-frame").is(":visible")){
             if(spinewidgettoken){
                 console.log("      waaa "+tokenname)
-                LoadAnimationToken(tokenname+skinname)
+                LoadAnimationToken(tokenname + skinname)
             }
             LoadAnimation()
         }
+
+        // TODO update_illustrator when change chibi perspective
         update_illustrator(id?id:(opdataFull.id + "#" + (name != "0"?name:"1"))) // change skin by ID or change Elite (E0 = E1 except amiyi)
     }
 
-    function ShowDynamic(name,isSkin = false,dynid = ""){
+    function ShowDynamic(name, isSkin = false, dynid = ""){
         var checkskin = db.skintable.buildinEvolveMap[name]
         if(isSkin){
             console.log(isSkin)
@@ -6410,7 +6424,7 @@
                 if(currentskin&&currentskin.dynIllustId){
                     $("#spine-frame-op").fadeIn(200)
                     $("#tabs-opCG").fadeOut(200)
-                    LoadAnimationCG(name,currentskin.dynIllustId)
+                    LoadAnimationCG(name, currentskin.dynIllustId.split("_").slice(0, -1).join("_"))
                     return
                 }
 
@@ -6752,7 +6766,6 @@
 
 
     function LoadAnimation2(widget){
-        // console.log(spinewidget)
         $("#loading-spine").text("Loading...")
         if(spinewidget){
             spinewidget.pause()
@@ -6774,28 +6787,30 @@
                 $("#loading-spine").fadeIn(200)
             };
 
-
             console.log(chibiName)
             xhr.onloadend = function (e) {
                 console.log(xhr.status)
                 if (xhr.status != 404) {
                     buffer = xhr.response;
                     array = new Uint8Array(buffer);
-                    // console.log(array);
                     skelBin = new SkeletonBinary();
                     var jsonskel
-                    if(array.length==0){
+                    if(array.length == 0){
                         $("#loading-spine").text("Load Failed (Not Found)")
-                        // chibiperscurr++
-                        // if(chibiperscurr>=chibiperslist.length)chibiperscurr=0
-                        // else if(chibiperscurr<0)chibiperscurr=chibiperslist.length-1
-                        // LoadAnimation()
 
                     }else{
                         if (skeletonType== "skel"){
                             skelBin.data = array
-                            skelBin.initJson()
-                            jsonskel = JSON.stringify(skelBin.json)
+                            SpineVersion = skelBin.readSkeletonVersion()
+                            console.log(skelBin, SpineVersion)
+                            if (SpineVersion.slice(0,3) == "3.8"){
+                                jsonskel = array
+                            }else if(SpineVersion.slice(0,3) == "3.5"){
+                                skelBin.readSkeletonData()
+                                jsonskel = JSON.stringify(skelBin.json)
+                                console.log(jsonskel)
+                            }
+                            /*jsonskel = JSON.stringify(skelBin.json)
                             var parsedskeljson = JSON.parse(jsonskel)
                             console.log(JSON.parse(jsonskel))
                             if(!Object.keys(parsedskeljson.animations).find(search=>search==defaultAnimationName)){
@@ -6803,7 +6818,7 @@
                             }
                             if(!Object.keys(parsedskeljson.skins).find(search=>search==defaultskin)){
                                 defaultskin = Object.keys(parsedskeljson.skins)[0]
-                            }
+                            }*/
                         }else if (skeletonType== "json"){
                             jsonskel = JSON.parse(new TextDecoder("utf-8").decode(array))
                             var parsedskeljson = jsonskel
@@ -6816,41 +6831,32 @@
                             }
                         }
 
-
-
-                        // var test = new TextDecoder("utf-8").decode(array);
-                        // console.log(JSON.parse(test))
-                        // console.log(JSON.stringify(skelBin.json, null, "\t"));
                         var spineX = parseFloat($("#spine-widget").width())/2
                         var spineY = parseFloat($("#spine-widget").height())/2 -200
 
-                        // console.log(spineX)
-                        // console.log(spineY)
-                        new spine.SpineWidget("spine-widget", {
+                        var config = {
                             jsonContent: jsonskel,
                             atlas: folder2 + ".atlas",
-                            animation: defaultAnimationName,
+                            animation: "Idle",
                             backgroundColor: "#00000000",
                             // debug: true,
                             // imagesPath: chibiName + ".png",
                             premultipliedAlpha: true,
                             fitToCanvas : false,
-                            loop:true,
+                            loop: true,
                             // x:900,
                             // y:650,
-                            x:spineX,
-                            y:spineY,
+                            x: spineX,
+                            y: spineY,
                             //0.5 for normal i guess
-                            scale:1,
+                            scale: 1,
                             success: function (widget) {
-
-                                animIndex=0
+                                animIndex = 0
                                 spinewidget = widget
                                 $("#spine-text").text(widget.skeleton.data.animations[0].name)
                                 $("#loading-spine").fadeOut(200)
                                 animations = widget.skeleton.data.animations;
-                                // console.log(animations)
-                                // console.log(widget)
+
                                 $("#spine-widget").show()
                                 if(animations.find(search=>search.name=="Start")){
                                     CreateAnimation(spinewidget,["Start","Idle"])
@@ -6860,25 +6866,8 @@
                                     $("#spine-text").text("Relax")
                                 }
 
-                                // CreateAnimation(["Skill_Begin",["Skill_Loop",5],"Skill_End","Idle"],true)
-                                // CreateAnimation(["Skill_2_Begin",["Skill_2_Loop",5],"Skill_2_Loop_End","Idle"],true)
-
                                 widget.customanimation = CheckAnimationSet(animations)
-                                // console.log(widget)
 
-
-                                //ange skill 2
-                                // CreateAnimation(["Skill1_Begin",["Skill1_Loop",15],"Skill1_End",["Idle_Charge",2]],true)
-
-                                //ange skill 3 (is weird)
-                                // CreateAnimation(["Skill2_Begin",["Skill2_Loop",15],"Skill2_End",["Idle_Charge",2]],true)
-
-                                // Normal skill loop with begin and idle i guess (nian skill 2)
-                                // CreateAnimation(["Skill_2_Begin",["Skill_2_Loop",5],"Skill_2_Idle"],true,true)
-
-
-                                // console.log(widget.state)
-                                // console.log(widget.state.trackEntry)
                                 $("#spine-toolbar-next").onclick = function () {
                                     widget.state.clearTracks()
                                     if(animationqueue!=undefined)clearInterval(animationqueue)
@@ -6889,11 +6878,15 @@
                                     $("#spine-text").text(animations[animIndex].name)
                                 }
                             }
-                        })
+                        }
+                        if (SpineVersion.slice(0,3) == "3.8"){
+                            new spine38.SpineWidget("spine-widget-op", config)
+                        }else if(SpineVersion.slice(0,3) == "3.5"){
+                            new spine.SpineWidget("spine-widget-op", config)
+                        }
                     }
                 }else{
                     $("#loading-spine").text("Load Failed 2")
-                    // $("#spine-frame").fadeOut()
                 }
             };
             xhr.send()

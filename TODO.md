@@ -51,3 +51,18 @@
 ### To Fix 
 - Tecno Mod Range display
     - range not on display but added talent (-1)
+### To Do
+- chara-detail.js (ChangeSkin())
+    - update_illustrator when change chibi perspective
+- akhrchars.html
+    - Add text to show current chibi perspective
+    - Maybe add alt title to show what next persective is
+        - Current: Front > Next: Back
+        - Current: Back > Next: Build
+        - Current: Build > Next: Front
+        - Or maybe make 3 perspective instead
+- Add all chibi Spine
+- Find Sweet spot for L2D
+    - Maybe rewrite canvas position ???
+- Add L2D for Zoomy
+- Add SP L2D Switcher (Kroos)

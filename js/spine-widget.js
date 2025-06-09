@@ -4847,8 +4847,6 @@ var spine;
 					else if (direction == "xy")
 						page.uWrap = page.vWrap = spine.TextureWrap.Repeat;
 					page.texture = textureLoader(line);
-					console.log(line)
-					console.log(textureLoader(line))
 					page.texture.setFilters(page.minFilter, page.magFilter);
 					page.texture.setWraps(page.uWrap, page.vWrap);
 					page.width = page.texture.getImage().width;
@@ -7451,6 +7449,7 @@ var spine;
 (function (spine) {
 	var SpineWidget = (function () {
 		function SpineWidget(element, config) {
+			console.log("Spine 3.5")
 			var _this = this;
 			this.mvp = new spine.webgl.Matrix4();
 			this.paused = false;
@@ -7474,7 +7473,7 @@ var spine;
 			element.appendChild(canvas);
 			canvas.width = element.clientWidth;
 			canvas.height = element.clientHeight;
-			// console.log(config)
+			//console.log(config)
 			var webglConfig = { alpha: config.alpha,preserveDrawingBuffer: config.preserveDrawingBuffer};
 			var gl = this.gl = (canvas.getContext("webgl", webglConfig) || canvas.getContext("experimental-webgl", webglConfig));
 			this.shader = spine.webgl.Shader.newColoredTextured(gl);
