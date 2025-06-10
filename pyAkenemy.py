@@ -104,10 +104,12 @@ def load_json(data) -> dict :
 
         case "json_RA1" :
             return json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/sandbox_table.json")
+            
         case "json_RA2" :
             return json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/sandbox_perm_table.json")
         case "json_RA1EN" :
-            return json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/sandbox_table.json")
+            #return json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/sandbox_table.json")
+            return json_load("json/gamedata/en_US(Old)/gamedata/excel/sandbox_table.json")
         case "json_RA2EN" :
             return json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/sandbox_perm_table.json")
 

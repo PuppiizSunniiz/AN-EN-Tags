@@ -227,7 +227,7 @@
     "control_mp_cost&bd_up[000]": {
         "name": "I am I",
         "desc": "When stationed at the Command Center, self mood reduction per hour +0.5. Additionally, gain +5 Worldly Plight for every Sui operator stationed at a facility besides the Dorm (up to 5 operators)",
-        "descformat": "When this Operator is assigned to the Control Center, self Morale loss per hour <@cc.vdown>+0.5</>; for each <$cc.g.sui><@cc.kw>Sui</></> Operator assigned to buildings other than Dormitories, <$cc.bd_b1><@cc.rem>Worldly Plight</></> <@cc.vup>+5</> (max 5)"
+        "descformat": "When this Operator is assigned to the Control Center, self Morale loss per hour <@cc.vdown>+0.5</>; for each <$cc.g.sui><@cc.kw>Sui</></> Operator assigned to buildings other than Dormitories and Activity Rooms, <$cc.bd_b1><@cc.rem>Worldly Plight</></><@cc.vup>+5</> (max 5)"
     },
     "control_mp_bd_cost_expand[000]": {
         "name": "Solitary Light",
@@ -277,12 +277,12 @@
     "control_mp_aegir2[000]": {
         "name": "Group Hunting ·α",
         "desc": "When stationed at the Command Center, mood recovery per hour of all operators in the Command Center +0.05. Additionally, Abyssal Hunters operators within the base gain Special Bonus (has Special Priority Rules with certain skills)",
-        "descformat": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by <@cc.vup>+0.05</> per hour; <$cc.g.abyssal><@cc.kw>Abyssal Hunter</></> Operators in the Base gain <$cc.c.abyssal2_1><@cc.rem>Special Bonus</></> (Has <$cc.c.abyssal2_3><@cc.rem>Special Interaction Rules</></> with certain skills)"
+        "descformat": "When this Operator is assigned to the Control Center, increases Morale recovery per hour of all Operators in the Control Center by <@cc.vup>+0.05</>; <$cc.g.abyssal><@cc.kw>Abyssal Hunters</></> in the Base (excluding Assistants and Activity Room users) gain <$cc.c.abyssal2_1><@cc.rem>Special Bonuses</></> (Has <$cc.c.abyssal2_3><@cc.rem>Special Interaction Rules</></> with certain skills)"
     },
     "control_mp_aegir2[010]": {
         "name": "Group Hunting ·β",
         "desc": "When stationed at the Command Center, mood recovery per hour of all operators in the Command Center +0.05. Additionally, Abyssal Hunters operators within the base gain Special Bonus (has Special Priority Rules with certain skills)",
-        "descformat": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by <@cc.vup>+0.05</> per hour; <$cc.g.abyssal><@cc.kw>Abyssal Hunter</></> Operators in the Base gain <$cc.c.abyssal2_2><@cc.rem>Special Bonus</></> (Has <$cc.c.abyssal2_3><@cc.rem>Special Interaction Rules</></> with certain skills)"
+        "descformat": "When this Operator is assigned to the Control Center, increases Morale recovery per hour of all Operators in the Control Center by <@cc.vup>+0.05</>; <$cc.g.abyssal><@cc.kw>Abyssal Hunters</></> in the Base (excluding Assistants and Activity Room users) gain <$cc.c.abyssal2_2><@cc.rem>Special Bonuses</></> (Has <$cc.c.abyssal2_3><@cc.rem>Special Interaction Rules</></> with certain skills)"
     },
     "control_mp_psk[000]": {
         "name": "Knights of Pinus Sylvestris",
@@ -432,7 +432,7 @@
     "power_rec_rhine[000]": {
         "name": "Ecological Section Director",
         "desc": "When stationed at a Power Station, drone recovery +10%. Additionally, gain +3% drone recovery for every Rhine Labs operator stationed in the base except self (excluding Assistants), up to 5",
-        "descformat": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+10%</>; for every other <$cc.g.rh><@cc.kw>Rhine Lab</></> Operator in the Base (excluding assistants, max <@cc.kw>5</>), additional drone recovery rate <@cc.vup>+3%</>"
+        "descformat": "When this Operator is assigned to a Power Plant, drone charging speed <@cc.vup>+10%</>; for every other <$cc.g.rh><@cc.kw>Rhine Lab</></> Operator in base (excluding Assistants and Activity Room users, caps at <@cc.kw>5</>), additional charging speed <@cc.vup>+3%</>"
     },
     "power_rec_spd&addition[000]": {
         "name": "Technology Exchange α",
@@ -702,7 +702,7 @@
     "manu_constrLv[000]": {
         "name": "Graphic Design",
         "desc": "When stationed at a Craft Station, gain +1 Engineering Robot for every facility level in the base, up to 64",
-        "descformat": "When this Operator is assigned to a Factory, gain <@cc.vup>+1</> <@cc.kw><$cc.bd_malist> Engineering Robot</></> per level per building, max <@cc.vup>64</>"
+        "descformat": "When this Operator is assigned to a Factory, gain <@cc.vup>+1</> <@cc.kw><$cc.bd_malist>Engineering Robot</></> per level per building (excluding Activity Rooms), max <@cc.vup>64</>"
     },
     "manu_prod_spd_bd[100]": {
         "name": "Machine Assistance α",
@@ -797,7 +797,7 @@
     "manu_formula_spd&cost_bd[000]": {
         "name": "Big Responsibilities",
         "desc": "When stationed at a Craft Station, increase production of precious metals by +2% and mood reduction per hour -0.15 for every Blacksteel operator stationed in the base (excluding Assistants), up to 3",
-        "descformat": "When this Operator is assigned to a Factory, for each <$cc.g.bs><@cc.kw>Blacksteel Worldwide</></> Operator in the Base (excluding Assistants, max <@cc.kw>3</>), <@cc.kw>Precious Metal</> productivity <@cc.vup>+2%</> and Morale consumed per hour <@cc.vup>-0.15</>"
+        "descformat": "When this Operator is assigned to a Factory, for each <$cc.g.bs><@cc.kw>Blacksteel Worldwide</></> Operator in the Base (excluding Assistants and Activity Room users, caps at <@cc.kw>3</>), <@cc.kw>Precious Metal</> productivity <@cc.vup>+2%</> and Morale consumed per hour <@cc.vup>-0.15</>"
     },
     "manu_formula_spd[200]": {
         "name": "Originium Work α",
@@ -972,7 +972,7 @@
     "trade_ord_line_durin[010]": {
         "name": "Zeruertza Resident",
         "desc": "When stationed at a Trade Station, Gold Production Lines +1 for every 1 Durin race operator in the base (up to 4)",
-        "descformat": "When this Operator is assigned to a Trading post, for every <@cc.kw>1</> <$cc.tag.durin><@cc.kw>Durin</></> Operator in the base (max <@cc.kw>4</>), Trading Post gains another <@cc.kw>1</><$cc.t.flow_gold><@cc.kw> Pure Gold Production Line</></>"
+        "descformat": "When this Operator is assigned to a Trading post, for every <@cc.kw>1</> <$cc.tag.durin><@cc.kw>Durin</></> Operator in the base (excluding Assistants and Activity Room users, caps at <@cc.kw>4</>), Trading Post gains another <@cc.kw>1</> <$cc.t.flow_gold><@cc.kw>Pure Gold Production Line</></>"
     },
     "trade_ord_spd&limit[010]": {
         "name": "Supply Management",
@@ -1587,37 +1587,37 @@
     "train_spd_power[000]": {
         "name": "Snowpriest Candidate",
         "desc": "When stationed at the Training Station, every Sami operator in the base (excluding Assistants) increases the skill training speed by +10% (caps at 3 operators)",
-        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.sm><@cc.kw>Sami</></> Operator in the Base (excluding Assistants, caps at <@cc.kw>3</> Operators)"
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.sm><@cc.kw>Sami</></> Operator in the Base (excluding Assistants and Activity Room users, caps at <@cc.kw>3</> Operators)"
     },
     "train_spd_tag[000]": {
         "name": "Knight Training",
         "desc": "When stationed at the Training Station, every Knight operator in the base (excluding Assistants) increases the skill training speed by +5% (caps at 5 operators)",
-        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, for every <$cc.tag.knight><@cc.kw>Knight</></> Operator in the Base (excluding Base Assistants), Operators' Specialization training speed <@cc.vup>+5%</> (caps at <@cc.kw>5</> Operators)"
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, for each <$cc.tag.knight><@cc.kw>Knight</></> Operator in the Base (excluding Assistants and Activity Room users), Operators' Specialization training speed <@cc.vup>+5%</> (caps at <@cc.kw>5</> Operators)"
     },
     "train_spd_tag[010]": {
         "name": "Noble Creed",
         "desc": "When stationed at the Training Station, every Knight operator in the base (excluding Assistants) increases the skill training speed by +5% (caps at 8 operators)",
-        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, for every <$cc.tag.knight><@cc.kw>Knight</></> Operator in the Base (excluding Base Assistants), Operators' Specialization training speed <@cc.vup>+5%</> (caps at <@cc.kw>8</> Operators)"
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, for each <$cc.tag.knight><@cc.kw>Knight</></> Operator in the Base (excluding Assistants and Activity Room users), Operators' Specialization training speed <@cc.vup>+5%</> (caps at <@cc.kw>8</> Operators)"
     },
     "train_spd_tag[020]": {
         "name": "Tactic Guidance: Defense",
         "desc": "When stationed at the Training Station, every operator from R6S Defenders in the base (excluding Assistants) increases the skill training speed by +10% (caps at 4 operators)",
-        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.Defence><@cc.kw>Defending</></> Operator in the Base (excluding Assistants, caps at <@cc.kw>4</> Operators)."
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.Defence><@cc.kw>Defending</></> Operator in the Base (excluding Assistants and Activity Room users, caps at <@cc.kw>4</> Operators)"
     },
     "train_spd_tag[1020]": {
         "name": "Tactic Guidance: Defense",
         "desc": "When stationed at the Training Station, every operator from R6S Defenders in the base (excluding Assistants) increases the skill training speed by +10% (caps at 4 operators)",
-        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.Defence><@cc.kw>Defending</></> Operator in the Base (excluding Assistants, caps at <@cc.kw>4</> Operators)."
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.Defence><@cc.kw>Defending</></> Operator in the Base (excluding Assistants and Activity Room users, caps at <@cc.kw>4</> Operators)"
     },
     "train_spd_tag[030]": {
         "name": "Tactic Guidance: Offense",
         "desc": "When stationed at the Training Station, every operator from R6S Attackers in the base (excluding Assistants) increases the skill training speed by +10% (caps at 4 operators)",
-        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.Attack><@cc.kw>Attacking</></> Operator in the Base (excluding Assistants, caps at <@cc.kw>4</> Operators)."
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.Attack><@cc.kw>Attacking</></> Operator in the Base (excluding Assistants and Activity Room users, caps at <@cc.kw>4</> Operators)"
     },
     "train_spd_tag[1030]": {
         "name": "Tactic Guidance: Offense",
         "desc": "When stationed at the Training Station, every operator from R6S Attackers in the base (excluding Assistants) increases the skill training speed by +10% (caps at 4 operators)",
-        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.Attack><@cc.kw>Attacking</></> Operator in the Base (excluding Assistants, caps at <@cc.kw>4</> Operators)."
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.Attack><@cc.kw>Attacking</></> Operator in the Base (excluding Assistants and Activity Room users, caps at <@cc.kw>4</> Operators)"
     },
     "train_spd_doubleProf[000]": {
         "name": "Sword and Handcannon",
@@ -2247,7 +2247,7 @@
     "dorm_rec_all&profession[000]": {
         "name": "Volcanic Hot Springs Bath",
         "desc": "When stationed at a Dorm, increase mood recovery of all operators within that dorm by +0.06 per hour for each Wandering Medic stationed in the base, up to 4 (excluding Assistants)",
-        "descformat": "When this Operator is assigned to a Dormitory, Morale recovery per hour of all Operators in that Dormitory <@cc.vup>+0.06</> for each <@cc.kw>Wandering Medic</> Operator in the Base (excluding Assistants; caps at <@cc.kw>4</> Operators; applies the strongest effect when assigned Operators have the same effect)."
+        "descformat": "When this Operator is assigned to a Dormitory, Morale recovery per hour of all Operators in that Dormitory <@cc.vup>+0.06</> for each <@cc.kw>Wandering Medic</> Operator in the Base (excluding Assistants and Activity Room users, caps at <@cc.kw>4</> Operators, strongest effect of the same type applies)"
     },
     "dorm_exchangeAp[000]": {
         "name": "Communal Suffering",
@@ -2497,7 +2497,7 @@
     "meet_spd&sami[000]": {
         "name": "Icefield Navigation",
         "desc": "When stationed at Reception, clue collection speed +10%. Additionally, if stationed together in Reception with another operator from Sami, further increase clue collection speed by +5% and mood reduction per hour +0.5",
-        "descformat": "When this Operator is assigned to the Reception Room, increases Clue search speed by <@cc.vup>+10%</>, and when assigned together with another <$cc.g.sm><@cc.kw>Sami</></> Operator, increases Clue search speed by an additional <@cc.vup>+5%</> while self Morale loss per hour <@cc.vdown>+0.5</>"
+        "descformat": "When this Operator is assigned to the Reception Room, increases Clue search speed by <@cc.vup>10%</>, and when assigned together with another <$cc.g.sm><@cc.kw>Sami</></> Operator, increases Clue search speed by an additional <@cc.vup>5%</> while self Morale loss per hour <@cc.vdown>+0.5</>"
     },
     "meet_spd&bd[000]": {
         "name": "Foresight",
@@ -2722,17 +2722,17 @@
     "trade_ord_spd_ext[000]": {
         "name": "Envoy To Land α",
         "desc": "进驻贸易站时，订单获取效率<@cc.vup>+25%</>；当<@cc.kw>乌尔比安</>在基建内时（不包含副手），订单获取效率额外<@cc.vup>+5%</>",
-        "descformat": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+25%</>; When <@cc.kw>Ulpianus</> is in the Base (excluding Assistants), additional order acquisition efficiency <@cc.vup>+5%</>"
+        "descformat": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+25%</>; When <@cc.kw>Ulpianus</> is in the Base (excluding Assistants and Activity Room users), increase order acquisition efficiency by an additional <@cc.vup>+5%</>"
     },
     "trade_ord_spd_ext[001]": {
         "name": "Envoy To Land·β",
         "desc": "进驻贸易站时，订单获取效率<@cc.vup>+30%</>；当<@cc.kw>乌尔比安</>在基建内时（不包含副手），订单获取效率额外<@cc.vup>+10%</>",
-        "descformat": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+30%</>; When <@cc.kw>Ulpianus</> is in the Base (excluding Assistants), additional order acquisition efficiency <@cc.vup>+10%</>"
+        "descformat": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+30%</>; When <@cc.kw>Ulpianus</> is in the Base (excluding Assistants and Activity Room users), increase order acquisition efficiency by an additional <@cc.vup>+10%</>"
     },
     "train_spd_power_down[000]": {
         "name": "'Methods Should Be Effective'",
         "desc": "进驻训练室协助位时，心情每小时消耗<@cc.vdown>+1</>，基建内（不包含副手）每名<$cc.g.abyssal><@cc.kw>深海猎人</></>干员为当前干员的专精技能训练速度<@cc.vup>+10%</>（最多生效<@cc.kw>5</>名）",
-        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Morale consumed per hour <@cc.vdown>+1</>, and Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.abyssal><@cc.kw>Abyssal Hunter</></> Operator in the Base (excluding Assistants, caps at <@cc.kw>5</> Operators)."
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Morale consumed per hour <@cc.vdown>+1</>, and Operators' Specialization training speed <@cc.vup>+10%</> for each <$cc.g.abyssal><@cc.kw>Abyssal Hunter</></> Operator in the Base (excluding Assistants and Activity Room users, caps at <@cc.kw>5</> Operators)"
     },
     "train_spd_doubleProf[201]": {
         "name": "'Questions Should Be Exact'",
@@ -2917,7 +2917,7 @@
     "train_spd_tag[040]": {
         "name": "Siracusan Revelry",
         "desc": "进驻训练室协助位时，基建内（不包含副手）每名<$cc.g.siracusa><@cc.kw>叙拉古</></>干员为当前干员的专精技能训练速度<@cc.vup>+5%</>（最多生效<@cc.kw>7</>名）",
-        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+5%</> for each <$cc.g.siracusa><@cc.kw>Siracusa</></> Operator in the Base (excluding Assistants, caps at <@cc.kw>7</> Operators)."
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+5%</> for each <$cc.g.siracusa><@cc.kw>Siracusa</></> Operator in the Base (excluding Assistants and Activity Room users, caps at <@cc.kw>7</> Operators)"
     },
     "train_spd_doubleProf[300]": {
         "name": "Unrestrained Magnificence",
@@ -2965,14 +2965,14 @@
         "descformat": "When this Operator is assigned to a Trading Post, <@cc.vup>+1</> order limit for every level of that Trading Post"
     },
     "workshop_formula_cost5[000]": {
-        "name": "熟极而流",
+        "name": "Familiarity",
         "desc": "进驻加工站加工<@cc.kw>晶体类材料</>时，全部心情消耗<@cc.vup>-1</>",
-        "descformat": "进驻加工站加工<@cc.kw>晶体类材料</>时，全部心情消耗<@cc.vup>-1</>"
+        "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>Crystal</>-type materials, all Morale costs <@cc.vup>-1</>"
     },
     "workshop_formula_device[070]": {
-        "name": "DIY·晶体",
+        "name": "DIY Crystal",
         "desc": "进驻加工站加工<@cc.kw>晶体</>类材料时，副产品的产出概率提升<@cc.vup>80%</>",
-        "descformat": "进驻加工站加工<@cc.kw>晶体</>类材料时，副产品的产出概率提升<@cc.vup>80%</>"
+        "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>Crystal</>-type materials, the byproduct chance is increased by <@cc.vup>80%</>"
     },
     "control_train_spd[011]": {
         "name": "断金之交",
