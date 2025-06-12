@@ -10910,19 +10910,17 @@ var spine38;
 				assets.loadText(config.json);
 			}
 			if (config.atlasPages == null) {
-				if (config.atlas) {
+				if(config.atlas){
 					var atlasPage = config.atlas.replace(".atlas", ".png");
 					if (atlasPage.lastIndexOf(config.imagesPath) == 0) {
 						atlasPage = atlasPage.substr(config.imagesPath.length);
 					}
 					assets.loadTexture(atlasPage);
-				}
-				else {
+				}else{
 					var firstLine = config.atlasContent.trim().split("\n")[0];
 					assets.loadTexture(firstLine);
 				}
-			}
-			else {
+			}else{
 				for (var i = 0; i < config.atlasPages.length; i++) {
 					assets.loadTexture(encodeURIComponent(config.atlasPages[i]));
 				}
@@ -11126,7 +11124,7 @@ var spine38;
 			this.state.setAnimation(0, animationName, this.config.loop);
 		};
 		SpineWidget.loadWidgets = function () {
-			var widgets = document.getElementsByClassName("spine38-widget");
+			var widgets = document.getElementsByClassName("spine-widget");
 			for (var i = 0; i < widgets.length; i++) {
 				SpineWidget.loadWidget(widgets[i]);
 			}

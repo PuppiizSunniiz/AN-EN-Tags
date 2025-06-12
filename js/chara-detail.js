@@ -124,6 +124,7 @@
     var teamHTML = [[],[],[]]
 
     var currskin
+    var skinsuffix
     var currVoiceID
     var attempt = 0;
     var SpineVersion
@@ -140,6 +141,7 @@
     var chibiscale = [0.5,0]
     var chibiperscurr = 0
     var chibiperslist = ["front","back","build"]
+    var chibipersextralist = ["front","back"]
     var bgnum = 0
     var bgmax = 5
     var scrollcheck = 0
@@ -248,7 +250,6 @@
             var isvisible = $("#spine-frame").is(":visible")
             $("#spine-frame").fadeToggle(100);
 
-
             if(!loadchibi){
                 loadchibi=true
                 if(bgnum==0&&$("#spine-bg").is(":hidden")){
@@ -308,6 +309,7 @@
         });
         dragElement(document.getElementById("spine-frame"));
         dragElement(document.getElementById("spine-frame-token"));
+        dragElement(document.getElementById("spine-frame-op"));
         $("#Chibi-Bg").click(function(){
             bgnum++
             if(bgnum>bgmax)bgnum=0
@@ -318,7 +320,7 @@
 
                 // $('#spine-bg').fadeIn()
                 $('#spine-bg').fadeOut('fast', function () {
-                    $('#spine-bg').attr("src","https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/spine/bg"+bgnum+".png");
+                    $('#spine-bg').attr("src","https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/spine/bg" + bgnum + ".png");
                     $('#spine-bg').fadeIn('fast');
                 });
                 console.log( $('#spine-bg').attr("src") )
@@ -329,13 +331,9 @@
         });
         $("#Chibi-Perspective").click(function(){
             chibiperscurr++
-            if(chibiperscurr>=chibiperslist.length)chibiperscurr=0
-            else if(chibiperscurr<0)chibiperscurr=chibiperslist.length-1
 
-            console.log(chibiperscurr)
-            console.log(chibiperslist[chibiperscurr])
-            ChangeSkin(currskin,chibiperslist[chibiperscurr])
-
+            newpers = Chibi_per()
+            ChangeSkin(currskin, newpers, "", "", true)
         });
         $("#Chibi-Show-menu").click(function(){
             $('#Chibi-menu').toggleClass("chibi-menu-closed")
@@ -345,9 +343,8 @@
             // $('#Chibi-menu').toggleClass("chibi-menu-closed")
             canvasNum++
 
-
-            if(canvasNum>=canvasSize.length)canvasNum=0
-            else if(canvasNum<0)canvasNum=canvasSize.length
+            if(canvasNum >= canvasSize.length) canvasNum = 0
+            else if(canvasNum < 0)canvasNum = canvasSize.length
 
             wid = canvasSize[canvasNum][0]
             hei = canvasSize[canvasNum][1]
@@ -1348,7 +1345,7 @@
     }
     function selectOperator(opid, from = 'Selecting Operator From Browse'){
         attempt = 0
-        
+        skinsuffix = ""
         $("#opchoosemodal").modal('hide');
 
         if(spinewidgetcg){
@@ -1572,6 +1569,7 @@
             chibiName = opcode
             globalelite = 0
             globallevel = [1,1,1]
+            chibipers = Chibi_per()
             console.log(chibipers)
             if(chibipers == 'build') chibiName = "build_" + chibiName
             console.log(chibiName)
@@ -1724,7 +1722,7 @@
                             </button>
                         `:""}
 
-                        <a class="btn tabbing-btns tabbing-btns-middle" style="${extraSkin[i].dynIllustId?"width:62px":""}" data-toggle='pill' href='#opCG_S${i}_tab' onClick='ChangeSkin("${extraSkin[i].portraitId.replace("#","_")}","","${extraSkin[i].skinId}"${extraSkin[i].spIllustId?`,"#opCG_S${i}_tab"`:""})'>
+                        <a class="btn tabbing-btns tabbing-btns-middle" style="${extraSkin[i].dynIllustId?"width:62px":""}" data-toggle='pill' href='#opCG_S${i}_tab' onClick='ChangeSkin("${extraSkin[i].portraitId}","","${extraSkin[i].skinId}"${extraSkin[i].spIllustId?`,"#opCG_S${i}_tab"`:""})'>
                             <div style="display:inline-block;height:100%;vertical-align:middle;"></div>
                             <img class='skinimage' style="max-width: 48px;max-height: 48px;margin-left:-5px;margin-top:1px" src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${encodeURIComponent(extraSkin[i].avatarId)}${sus && opdataFull.id == "char_298_susuro"?"sus":""}.png'>
                         </a></li>
@@ -5814,9 +5812,9 @@
         // console.log(skillmax)
         console.log(token)
         tokenname = token
-        if(spinewidgettoken && token&& spinewidgettoken.loaded){
+        /*if(spinewidgettoken && token&& spinewidgettoken.loaded){
             LoadAnimationToken(token)
-        }
+        }*/
         if(spinewidget && spinewidget.loaded){
 
             var animskill = db.animlist[opdataFull.id]
@@ -6003,9 +6001,9 @@
                                         $("#loading-spine-op").fadeOut(200)
                                         animations = widget.skeleton.data.animations;
                                         $("#spine-widget-op").show()
-                                        if(animations.find(search=>search.name=="Special")){
-                                            CreateAnimation(spinewidgetcg,["Special","Idle"])
-                                        }else if(animations.find(search=>search.name=="Idle")){
+                                        if(animations.find(search => search.name == "Start")){
+                                            CreateAnimation(spinewidgetcg,["Start","Idle"])
+                                        }else if(animations.find(search => search.name == "Idle")){
                                             CreateAnimation(spinewidgetcg,"Idle")
                                         }
                                         widget.customanimation = CheckAnimationSet(animations)
@@ -6040,7 +6038,20 @@
         }
     }
 
+    function Chibi_per(show = false){
+        chibiperscurr = chibiperscurr % (gmapp == "BASE"?3:2)
+
+        console.log(chibiperslist[chibiperscurr])
+
+        newpers = gmapp == "BASE"?chibiperslist[chibiperscurr]:chibipersextralist[chibiperscurr]
+        if (show) $("#chibi-per").html(newpers[0].toUpperCase() + newpers.slice(1))
+        return newpers
+    }
+
     function LoadAnimation(){
+        chibiName = chibiName.includes(skinsuffix)?chibiName:chibiName + skinsuffix
+        Chibi_per(true)
+
         $("#loading-spine").text("Loading...")
         if(spinewidget){
             spinewidget.pause()
@@ -6050,7 +6061,7 @@
         $("#spine-frame").append(`<div id="spine-widget" class="top-layer" style="position:absolute;width: ${wid}px; height: ${hei}px;top:${-hei/2+150 +chibiscale[1]}px;left:-${wid/2-150}px;pointer-events: none;z-index: 20;transform: scale(${chibiscale[0]});"></div>`)
         if (chibiName != null && defaultAnimationName != null) {
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', folder + chibiName + "." +skeletonType, true);
+            xhr.open('GET', folder + encodeURIComponent(chibiName) + "." +skeletonType, true);
             xhr.responseType = 'arraybuffer';
             var array;
             $("#spine-widget").hide()
@@ -6078,7 +6089,7 @@
                             }else if(SpineVersion.slice(0,3) == "3.5"){
                                 skelBin.readSkeletonData()
                                 jsonskel = JSON.stringify(skelBin.json)
-                                console.log(jsonskel)
+                                console.log(jsonskel.animations, jsonskel)
                             }
                             //jsonskel = JSON.stringify(skelBin.json)
                             /*var parsedskeljson = JSON.parse(jsonskel)
@@ -6106,8 +6117,8 @@
                         var config = {
                             skeltype : skeletonType,
                             jsonContent: jsonskel,
-                            atlas: folder + chibiName + ".atlas",
-                            animation: "Idle",
+                            atlas: folder + encodeURIComponent(chibiName) + ".atlas",
+                            animation: chibipers == "build"?"Relax":"Idle",
                             backgroundColor: "#00000000",
                             // debug: true,
                             // imagesPath: chibiName + ".png",
@@ -6156,48 +6167,46 @@
                         }
                     }
                 }else{
-                    $("#loading-spine").text("Load Failed 2")
-                    // $("#spine-frame").fadeOut()
+                    if (attempt == 2) {
+                        xhr.abort()
+                        $("#loading-spine").text("Load Failed 2")
+                        // $("#spine-frame").fadeOut()
+                    }else{
+                        attempt += 1
+                        if(skeletonType == "skel"){
+                            skeletonType = "json"
+                        }else{
+                            skeletonType = "skel"
+                        }
+                        LoadAnimation()
+                    }
                 }
             };
             xhr.send()
         }
     }
 
-
-    function LoadAnimationToken(tokenkey = globaltoken){
-        // console.log(spinewidgettoken)
-        // console.log(opdataFull)
-        // var tokenName =
+    function LoadAnimationToken(tokenkey = skinsuffix?globaltoken + skinsuffix:globaltoken){
         var tokenname = tokenkey
-        var tokenfolder = `https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/spineassets/token/${opdataFull.id}/${tokenkey}`
-        // console.log(tokenfolder)
-        // $("#loading-spine").text("Loading...")
+        var tokenfolder = `https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/spineassets/token/${opdataFull.id}/${encodeURIComponent(tokenkey)}`
         if(spinewidgettoken){
             // spinewidget.loadWidgets()
             // spinewidget.loadTexture()
             spinewidgettoken.pause()
             spinewidgettoken = undefined
-            // console.log(loadchibi)
-            // if(loadchibi)$("#spine-frame").fadeIn(100);
         }
-        // else{
-        //     if(loadchibi)$("#spine-frame-token").fadeIn(100);
-        // }
 
         $("#spine-widget-token").remove()
         $("#spine-frame-token").append(`<div id="spine-widget-token" class="top-layer" style="position:absolute;width: ${wid}px; height: ${hei}px;top:${-hei/2+100 +chibiscale[1]}px;left:-${wid/2-150}px;pointer-events: none;z-index: 20;transform: scale(${chibiscale[0]});"></div>`)
 
         if (chibiName != null && defaultAnimationName != null) {
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', tokenfolder +"."+skeletonType, true);
+            xhr.open('GET', tokenfolder + "." + skeletonType, true);
             xhr.responseType = 'arraybuffer';
             var array;
             $("#spine-widget-token").hide()
             var defaultskin ='default'
 
-            // $("#loading-spine").fadeIn(200)
-            // console.log(chibiName)
             xhr.onloadend = function (e) {
                 if (xhr.status != 404) {
                     buffer = xhr.response;
@@ -6225,7 +6234,7 @@
                             if(!Object.keys(parsedskeljson.skins).find(search=>search==defaultskin)){
                                 defaultskin = Object.keys(parsedskeljson.skins)[0]
                             }*/
-                        }else if (skeletonType== "json"){
+                        }else if (skeletonType == "json"){
                             jsonskel = JSON.parse(new TextDecoder("utf-8").decode(array))
                             SpineVersion = jsonskel.skeleton.spine
                             var parsedskeljson = jsonskel
@@ -6241,12 +6250,11 @@
                         var spineX = parseFloat($("#spine-widget-token").width())/2
                         var spineY = parseFloat($("#spine-widget-token").height())/2 -300
 
-                        console.log($("#spine-widget-token").width())
-
                         var config = {
                             jsonContent: jsonskel,
+                            skeltype : skeletonType,
                             atlas: tokenfolder + ".atlas",
-                            animation: "Idle",
+                            animation: "Default",
                             backgroundColor: "#00000000",
                             // debug: true,
                             // imagesPath: chibiName + ".png",
@@ -6258,20 +6266,21 @@
                             //0.5 for normal i guess
                             scale: 1,
                             success: function (widget) {
-
                                 animIndex = 0
                                 spinewidgettoken = widget
                                 $("#spine-text2").text(widget.skeleton.data.animations[0].name)
                                 tokenanimations = widget.skeleton.data.animations;
-                                
                                 $("#spine-widget-token").show()
-                                if(tokenanimations.find(search=>search.name=="Start")){
-                                    CreateAnimation(spinewidgettoken,["Start","Idle"])
+                                if (tokenanimations.find(search => search.name == "Loop")){
+                                    CreateAnimation(spinewidgettoken,["Start", "Loop"])
+                                    $("#spine-text2").text("Loop")
+                                }else if(tokenanimations.find(search => search.name == "Start")){
+                                    CreateAnimation(spinewidgettoken,["Start", "Idle"])
                                     $("#spine-text2").text("Idle")
-                                }else if(tokenanimations.find(search=>search.name=="Idle")){
+                                }else if(tokenanimations.find(search => search.name == "Idle")){
                                     CreateAnimation(spinewidgettoken,"Idle")
                                     $("#spine-text2").text("Idle")
-                                }else if(tokenanimations.find(search=>search.name=="Relax")){
+                                }else if(tokenanimations.find(search => search.name == "Relax")){
                                     CreateAnimation(spinewidgettoken,"Relax")
                                     $("#spine-text2").text("Relax")
                                 }
@@ -6284,12 +6293,26 @@
                         }else if(SpineVersion.slice(0,3) == "3.5"){
                             new spine.SpineWidget("spine-widget-token", config)
                         }
+                    }else{
+                        if (attempt == 2) {
+                            xhr.abort()
+                            $("#spine-widget-token").remove()
+                        }else{
+                            attempt += 1
+                            if(skeletonType == "skel"){
+                                skeletonType = "json"
+                            }else{
+                                skeletonType = "skel"
+                            }
+                            LoadAnimationToken(tokenkey)
+                        }
                     }
                 }
             };
             xhr.send()
         }
     }
+
     function ChangeAnimation2(widget, widgettext, num){
         if(widget == "token") widget = spinewidgettoken
         else widget = spinewidget
@@ -6341,22 +6364,39 @@
         $(widgettext).text(curranimation[animIndex].name)
     }
 
-    function ChangeSkin(name = "", pers = "", id = "",sp = ""){
+    function SPL2D(SP = false){
+        console.log("SP switch")
+        $("button.btn.tabbing-btns.tabbing-btns-middle").each(function () {
+            const onclickAttr = $(this).attr('onclick');
+            if (onclickAttr && onclickAttr.includes(currskin.split("_").slice(0,-1).join("_"))){
+                if(SP)
+                    $(this).attr('onclick', onclickAttr.replace("sp_dyn_illust", "dyn_illust"));
+                else
+                    $(this).attr('onclick', onclickAttr.replace("dyn_illust", "sp_dyn_illust"));
+            }
+        })
+    }
+
+    function ChangeSkin(name = "", pers = "", id = "", sp = "", change = false){
         currskin = name
-        var skinname = currskin.split(opdataFull.id)[1]?name.split(opdataFull.id)[1]:""
+        skinsuffix = currskin.split(opdataFull.id)[1]?name.split(opdataFull.id)[1]:""
         console.log(opdataFull.id)
-        console.log(skinname)
-        console.log(currskin)
+        console.log(skinsuffix)
+        console.log(currskin, skin)
         console.log(db.skintable.charSkins[id])
 
         if (sp){
             if($(sp).hasClass("skinswitch")){
-                if ($(sp+" img").attr("src").includes("_sp"))
+                if ($(sp+" img").attr("src").includes("_sp")){
                     $(sp+" img").attr("src", $(sp+" img").attr("src").replace("_sp.png",".png"))
-                else
+                    SPL2D(sp)
+                }else{
                     $(sp+" img").attr("src", $(sp+" img").attr("src").replace(".png","_sp.png"))
+                    SPL2D()
+                }
             }else{
                 $(sp).addClass("skinswitch")
+                SPL2D(sp)
             }
         }else{
             $("#tabs-opCG div").removeClass(("skinswitch"))
@@ -6390,21 +6430,20 @@
         if($("#spine-frame-op:visible")){
             $("#spine-frame-op").fadeOut(200)
             $("#tabs-opCG").fadeIn(200)
-            if(spinewidgetcg){
+            if(spinewidgetcg && !pers){
                 spinewidgetcg.pause()
             }
         }
-
         if($("#spine-frame").is(":visible")){
             if(spinewidgettoken){
                 console.log("      waaa "+tokenname)
-                LoadAnimationToken(tokenname + skinname)
+                LoadAnimationToken(tokenname + skinsuffix)
             }
             LoadAnimation()
         }
 
         // TODO update_illustrator when change chibi perspective
-        update_illustrator(id?id:(opdataFull.id + "#" + (name != "0"?name:"1"))) // change skin by ID or change Elite (E0 = E1 except amiyi)
+        if (!change) update_illustrator(id?id:(opdataFull.id + "#" + (name != "0"?name:"1"))) // change skin by ID or change Elite (E0 = E1 except amiyi)
     }
 
     function ShowDynamic(name, isSkin = false, dynid = ""){
@@ -6415,7 +6454,7 @@
             console.log(dynid)
             $("#spine-frame-op").fadeIn(200)
             $("#tabs-opCG").fadeOut(200)
-            LoadAnimationCG(name,dynid,true)
+            LoadAnimationCG(name, dynid, true)
             return
         }else if(checkskin){
             if(checkskin[2]){
@@ -6499,20 +6538,20 @@
 
 
 
-    function CreateAnimation(chibiwidget,animArray,endloop = false,skipStart = false,isendstop=false){
+    function CreateAnimation(chibiwidget, animArray, endloop = false, skipStart = false, isendstop = false){
         // console.log(animArray)
 
         // console.log(Array.isArray(animArray))
         // console.log(animArray.length>1)
         // console.log(Array.isArray(animArray[0]))
 
-        if((Array.isArray(animArray)&&animArray.length>1)){
+        if((Array.isArray(animArray) && animArray.length>1)){
             // console.log("ayyyyyy")
             var delay = 0
             var animNum = 0
-            if(animationqueue!=undefined)clearInterval(animationqueue)
+            if(animationqueue != undefined) clearInterval(animationqueue)
             var curranimplay = Array.isArray(animArray[0])?animArray[0][0]:animArray[0]
-            if(chibiwidget.loaded)chibiwidget.setAnimation(curranimplay)
+            if(chibiwidget.loaded) chibiwidget.setAnimation(curranimplay)
             chibiwidget.state.clearTracks()
             var curranimations = chibiwidget.skeleton.data.animations
             animArray.forEach(element => {
@@ -6582,11 +6621,11 @@
     function CheckAnimationSet(anim){
         // console.log(anim)
         var curranimlist = {}
-        if(anim.find(search=>search.name=="Interact")){
+        if(anim.find(search => search.name == "Interact")){
             //Build Mode
             // console.log("Is Build")
 
-        }else if(anim.find(search=>search.name=="Idle")){
+        }else if(anim.find(search => search.name == "Idle")){
             //Battle Mode
             // console.log("Is Battle")
             anim.forEach(curranim => {
@@ -6601,9 +6640,9 @@
                     // console.log(checkname[0])
                     if(checkname)currsplit = checkname[0]
                     // console.log(checkname[0])
-                    splitnum=splitnum[0]
+                    splitnum = splitnum[0]
                 }
-                else if (!splitnum) splitnum=""
+                else if (!splitnum) splitnum = ""
 
                 if(!curranimlist[`${currsplit}${splitnum}`]){
                     curranimlist[`${currsplit}${splitnum}`] = []
@@ -6614,7 +6653,7 @@
 
             });
             Object.keys(curranimlist).forEach(keys => {
-                curranimlist[keys]= curranimlist[keys].sort((a,b)=>{
+                curranimlist[keys] = curranimlist[keys].sort((a,b) => {
                     var sortarray = [
                         "Pre",
                         "Begin",
@@ -6627,22 +6666,22 @@
                     ]
                     var anum = 0
                     var bnum = 0
-                    for(i=0;i<sortarray.length;i++){
+                    for(i = 0 ; i < sortarray.length ; i++){
                         // console.log(sortarray[i])
-                        if(sortarray[i]==""){
+                        if(sortarray[i] == ""){
                             var isAfree = true
                             var isBfree = true
-                            for(j=0;j<sortarray.length;j++){
-                                if(sortarray[j]!=""){
-                                    if(a.includes(sortarray[j]))isAfree=false
-                                    if(b.includes(sortarray[j]))isBfree=false
+                            for(j = 0 ; j< sortarray.length ; j++){
+                                if(sortarray[j] != ""){
+                                    if(a.includes(sortarray[j])) isAfree = false
+                                    if(b.includes(sortarray[j])) isBfree = false
                                 }
                             }
                             if (isAfree) anum += 4
                             if (isBfree) bnum += 4
                         }else{
-                            if(a.includes(sortarray[i]))anum+=i+1
-                            if(b.includes(sortarray[i]))bnum+=i+1
+                            if(a.includes(sortarray[i]))anum += i + 1
+                            if(b.includes(sortarray[i]))bnum += i + 1
                         }
                     }
                     return anum - bnum
@@ -6654,14 +6693,14 @@
                 //         element = [element,5]
                 //     }
                 // });
-                if(curranimlist[keys].find(search=>search.includes("End"))){
-                    if(anim.find(search=>search.name.includes("Idle_Charge"))) curranimlist[keys].push("Idle_Charge")
+                if(curranimlist[keys].find(search => search.includes("End"))){
+                    if(anim.find(search => search.name.includes("Idle_Charge"))) curranimlist[keys].push("Idle_Charge")
                     else curranimlist[keys].push("Idle")
                 }
-                if(curranimlist[keys].find(search=>search.includes("Die"))){
-                    if(anim.find(search=>search.name.includes("Start"))) curranimlist[keys].push("Start")
+                if(curranimlist[keys].find(search => search.includes("Die"))){
+                    if(anim.find(search => search.name.includes("Start"))) curranimlist[keys].push("Start")
                 }
-                for(i=0;i<curranimlist[keys].length;i++){
+                for(i = 0 ; i < curranimlist[keys].length ; i++){
                     var filterarray = [
                         "Pre",
                         "Begin",
@@ -6672,7 +6711,7 @@
                         "Die"
                     ]
                     var iscomp = true
-                    if (curranimlist[keys].length>=2&&(curranimlist[keys][i].includes("Loop")||curranimlist[keys][i].includes("Idle"))&&!curranimlist[keys][i].includes("End")) iscomp = false
+                    if (curranimlist[keys].length >= 2 &&(curranimlist[keys][i].includes("Loop") || curranimlist[keys][i].includes("Idle")) && !curranimlist[keys][i].includes("End")) iscomp = false
                     else{
                         iscomp = false
                         filterarray.forEach(element => {
@@ -6681,19 +6720,18 @@
                     }
                     if(!iscomp){
                         // console.log(curranimlist[keys][i])
-                        var currvariable = anim.find(search=> search.name == curranimlist[keys][i])
+                        var currvariable = anim.find(search => search.name == curranimlist[keys][i])
                         // console.log(currvariable)
                         // console.log("Got "+ Math.round(8/currvariable.duration))
                         if(curranimlist[keys][i].includes("Idle")){
-                            if(Math.round(3/currvariable.duration)>3)curranimlist[keys][i] = [curranimlist[keys][i],Math.round(3/currvariable.duration)]
+                            if(Math.round(3 / currvariable.duration) > 3)curranimlist[keys][i] = [curranimlist[keys][i],Math.round(3 / currvariable.duration)]
                         }else if(currvariable.duration!=0){
-                            curranimlist[keys][i] = [curranimlist[keys][i],Math.round(8/currvariable.duration)]
+                            curranimlist[keys][i] = [curranimlist[keys][i],Math.round(8 / currvariable.duration)]
                         }
-
                     }
                 }
             });
-
+        }else if(anim.find(search => search.name == "Loop")){
 
         }
         console.log(curranimlist)
@@ -6720,7 +6758,7 @@
 
     function ZoomChibi(el){
 
-        if (el==0) el = {value:0}
+        if (el == 0) el = {value:0}
         var minscale = 0.5
         var maxscale = 2
         var mintop = 0
@@ -6733,11 +6771,12 @@
         // var currtop2 = mintop+((maxtop-mintop/2)*parseFloat(el.value)/100)
 
         // console.log(currtop)
-        chibiscale=[currscale,currtop]
+        chibiscale = [currscale,currtop]
         $("#spine-widget").css("transform",`scale(${currscale})`)
         $("#spine-widget").css("top",`${(-hei/2+150)+currtop}px`)
         $("#spine-widget-token").css("transform",`scale(${currscale})`)
         $("#spine-widget-token").css("top",`${-hei/2+100 +currtop}px`)
+        $("#spine-widget-op").css("transform",`scale(${currscale})`)
     }
     function Zoomchara(el){
         var widthbefore = $('#charazoom').width()
