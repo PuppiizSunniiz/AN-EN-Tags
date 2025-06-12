@@ -3561,6 +3561,27 @@
                                 "act43side_07": "AD-7 : “血钻”的歌声",
                                 "act43side_08": "AD-8 : 登台致礼"
                             }
+                        },
+                        "act43side_zone2": {
+                            "name": "为戏剧，为永恒",
+                            "stage": {
+                                "act43side_ex01": "AD-EX-1 : 灰尘道具间",
+                                "act43side_ex01#f#": "AD-EX-1 : 灰尘道具间 <b>(Challenge)</b>",
+                                "act43side_ex02": "AD-EX-2 : 演员化妆间",
+                                "act43side_ex02#f#": "AD-EX-2 : 演员化妆间 <b>(Challenge)</b>",
+                                "act43side_ex03": "AD-EX-3 : 摄影棚场区",
+                                "act43side_ex03#f#": "AD-EX-3 : 摄影棚场区 <b>(Challenge)</b>",
+                                "act43side_ex04": "AD-EX-4 : 外景拍摄区",
+                                "act43side_ex04#f#": "AD-EX-4 : 外景拍摄区 <b>(Challenge)</b>",
+                                "act43side_ex05": "AD-EX-5 : 电影放映房",
+                                "act43side_ex05#f#": "AD-EX-5 : 电影放映房 <b>(Challenge)</b>",
+                                "act43side_ex06": "AD-EX-6 : 自助移动酒吧",
+                                "act43side_ex06#f#": "AD-EX-6 : 自助移动酒吧 <b>(Challenge)</b>",
+                                "act43side_ex07": "AD-EX-7 : 群演集合区",
+                                "act43side_ex07#f#": "AD-EX-7 : 群演集合区 <b>(Challenge)</b>",
+                                "act43side_ex08": "AD-EX-8 : 舞台与无尽的阶梯",
+                                "act43side_ex08#f#": "AD-EX-8 : 舞台与无尽的阶梯 <b>(Challenge)</b>"
+                            }
                         }
                     }
                 }
@@ -32217,6 +32238,162 @@
                 "act43side": {
                     "act43side_zone1": [
                         "act43side_08"
+                    ],
+                    "act43side_zone2": [
+                        "act43side_ex08",
+                        "act43side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10096_crprp_2": {
+            "sidestory": {
+                "act43side": {
+                    "act43side_zone2": [
+                        "act43side_ex01",
+                        "act43side_ex01#f#",
+                        "act43side_ex04",
+                        "act43side_ex04#f#",
+                        "act43side_ex05",
+                        "act43side_ex05#f#",
+                        "act43side_ex06",
+                        "act43side_ex06#f#",
+                        "act43side_ex08",
+                        "act43side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10098_crhro_2": {
+            "sidestory": {
+                "act43side": {
+                    "act43side_zone2": [
+                        "act43side_ex01",
+                        "act43side_ex01#f#",
+                        "act43side_ex03",
+                        "act43side_ex03#f#",
+                        "act43side_ex05",
+                        "act43side_ex05#f#",
+                        "act43side_ex06",
+                        "act43side_ex06#f#",
+                        "act43side_ex07",
+                        "act43side_ex07#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10099_crvln_2": {
+            "sidestory": {
+                "act43side": {
+                    "act43side_zone2": [
+                        "act43side_ex01",
+                        "act43side_ex01#f#",
+                        "act43side_ex02",
+                        "act43side_ex02#f#",
+                        "act43side_ex03",
+                        "act43side_ex03#f#",
+                        "act43side_ex06",
+                        "act43side_ex06#f#",
+                        "act43side_ex07",
+                        "act43side_ex07#f#",
+                        "act43side_ex08",
+                        "act43side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10094_crstf_2": {
+            "sidestory": {
+                "act43side": {
+                    "act43side_zone2": [
+                        "act43side_ex02",
+                        "act43side_ex02#f#",
+                        "act43side_ex03",
+                        "act43side_ex03#f#",
+                        "act43side_ex04",
+                        "act43side_ex04#f#",
+                        "act43side_ex05",
+                        "act43side_ex05#f#",
+                        "act43side_ex06",
+                        "act43side_ex06#f#",
+                        "act43side_ex07",
+                        "act43side_ex07#f#",
+                        "act43side_ex08",
+                        "act43side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10095_crgst_2": {
+            "sidestory": {
+                "act43side": {
+                    "act43side_zone2": [
+                        "act43side_ex02",
+                        "act43side_ex02#f#",
+                        "act43side_ex04",
+                        "act43side_ex04#f#",
+                        "act43side_ex06",
+                        "act43side_ex06#f#",
+                        "act43side_ex08",
+                        "act43side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10097_crshd_2": {
+            "sidestory": {
+                "act43side": {
+                    "act43side_zone2": [
+                        "act43side_ex03",
+                        "act43side_ex03#f#",
+                        "act43side_ex04",
+                        "act43side_ex04#f#",
+                        "act43side_ex05",
+                        "act43side_ex05#f#",
+                        "act43side_ex07",
+                        "act43side_ex07#f#",
+                        "act43side_ex08",
+                        "act43side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10101_crgun_2": {
+            "sidestory": {
+                "act43side": {
+                    "act43side_zone2": [
+                        "act43side_ex04",
+                        "act43side_ex04#f#",
+                        "act43side_ex08",
+                        "act43side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10102_crblt_2": {
+            "sidestory": {
+                "act43side": {
+                    "act43side_zone2": [
+                        "act43side_ex04",
+                        "act43side_ex04#f#",
+                        "act43side_ex08",
+                        "act43side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10100_crrol_2": {
+            "sidestory": {
+                "act43side": {
+                    "act43side_zone2": [
+                        "act43side_ex05",
+                        "act43side_ex05#f#",
+                        "act43side_ex06",
+                        "act43side_ex06#f#",
+                        "act43side_ex07",
+                        "act43side_ex07#f#",
+                        "act43side_ex08",
+                        "act43side_ex08#f#"
                     ]
                 }
             }

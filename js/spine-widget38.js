@@ -10892,7 +10892,7 @@ var spine38;
 			element.appendChild(canvas);
 			canvas.width = element.clientWidth;
 			canvas.height = element.clientHeight;
-			// console.log(config)
+			console.log(config)
 			var webglConfig = { alpha: config.alpha,preserveDrawingBuffer: config.preserveDrawingBuffer};
 			var gl = this.gl = (canvas.getContext("webgl", webglConfig) || canvas.getContext("experimental-webgl", webglConfig));
 			this.shader = spine38.webgl.Shader.newTwoColoredTextured(gl);
@@ -11009,14 +11009,11 @@ var spine38;
 					var skeletonData = skeletonJson.readSkeletonData(jsonContent)
 
 				}else if(config.skeltype == "skel"){
-					if(config.version.slice(0,3) == "3.8"){
-						spine38.spine38 = true
-						var skeletonBinary = new spine38.SkeletonBinary(atlasLoader);
-						skeletonBinary.scale = config.scale;
-						var skeletonData = skeletonBinary.readSkeletonData(jsonContent);
-					}
+					var skeletonBinary = new spine38.SkeletonBinary(atlasLoader);
+					skeletonBinary.scale = config.scale;
+					var skeletonData = skeletonBinary.readSkeletonData(jsonContent);
 				}else
-					throw Error("Skel Version Not Compatible : " + config.version);
+					throw Error("Skel Version Not Compatible");
 				
 				//var skeletonData = config.skeltype == "json"?skeletonJson.readSkeletonData(jsonContent):skeletonBinary.readSkeletonData(jsonContent);
 				var skeleton = this.skeleton = new spine38.Skeleton(skeletonData);
