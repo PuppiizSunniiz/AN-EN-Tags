@@ -3052,7 +3052,7 @@
                     "name": "[BP] : Path of Life",
                     "date": 1717560000,
                     "zone": {
-                        "act34side_zone1": {
+                        "act34sre_zone1": {
                             "name": "Deploy Beacons",
                             "stage": {
                                 "act34side_01": "BP-1 : First Contact",
@@ -3067,7 +3067,7 @@
                                 "act34side_09": "BP-9 : Fortress of Civilization"
                             }
                         },
-                        "act34side_zone2": {
+                        "act34sre_zone2": {
                             "name": "Fortify Defense",
                             "stage": {
                                 "act34side_ex01": "BP-EX-1 : Pillar of Shame - Meaningless Conflict",
@@ -43473,7 +43473,7 @@
             },
             "sidestory": {
                 "act34side": {
-                    "act34side_zone1": [
+                    "act34sre_zone1": [
                         "act34side_07",
                         "act34side_09"
                     ]
@@ -43491,7 +43491,7 @@
             },
             "sidestory": {
                 "act34side": {
-                    "act34side_zone2": [
+                    "act34sre_zone2": [
                         "act34side_ex05",
                         "act34side_ex05#f#",
                         "act34side_ex06",
@@ -47588,7 +47588,7 @@
             },
             "sidestory": {
                 "act34side": {
-                    "act34side_zone1": [
+                    "act34sre_zone1": [
                         "act34side_09"
                     ]
                 },
@@ -52221,7 +52221,7 @@
                     ]
                 },
                 "act34side": {
-                    "act34side_zone1": [
+                    "act34sre_zone1": [
                         "act34side_tr01"
                     ]
                 },
@@ -52634,7 +52634,7 @@
             },
             "sidestory": {
                 "act34side": {
-                    "act34side_zone1": [
+                    "act34sre_zone1": [
                         "act34side_tr01",
                         "act34side_02",
                         "act34side_04",
@@ -52642,7 +52642,7 @@
                         "act34side_07",
                         "act34side_09"
                     ],
-                    "act34side_zone2": [
+                    "act34sre_zone2": [
                         "act34side_ex01",
                         "act34side_ex01#f#",
                         "act34side_ex02",
@@ -59677,7 +59677,7 @@
                     ]
                 },
                 "act34side": {
-                    "act34side_zone1": [
+                    "act34sre_zone1": [
                         "act34side_09"
                     ]
                 },
@@ -61493,7 +61493,7 @@
         "enemy_1433_dsbasi": {
             "sidestory": {
                 "act34side": {
-                    "act34side_zone1": [
+                    "act34sre_zone1": [
                         "act34side_01",
                         "act34side_tr01",
                         "act34side_02",
@@ -61511,7 +61511,7 @@
         "enemy_1435_dsflys": {
             "sidestory": {
                 "act34side": {
-                    "act34side_zone1": [
+                    "act34sre_zone1": [
                         "act34side_01",
                         "act34side_04",
                         "act34side_08",
@@ -61523,7 +61523,7 @@
         "enemy_1436_dsdivi": {
             "sidestory": {
                 "act34side": {
-                    "act34side_zone1": [
+                    "act34sre_zone1": [
                         "act34side_03",
                         "act34side_04",
                         "act34side_05",
@@ -61532,7 +61532,7 @@
                         "act34side_08",
                         "act34side_09"
                     ],
-                    "act34side_zone2": [
+                    "act34sre_zone2": [
                         "act34side_ex01",
                         "act34side_ex01#f#"
                     ]
@@ -61542,7 +61542,7 @@
         "enemy_1437_dsfull": {
             "sidestory": {
                 "act34side": {
-                    "act34side_zone1": [
+                    "act34sre_zone1": [
                         "act34side_04",
                         "act34side_07",
                         "act34side_09"
@@ -61553,11 +61553,11 @@
         "enemy_1438_dspred": {
             "sidestory": {
                 "act34side": {
-                    "act34side_zone1": [
+                    "act34sre_zone1": [
                         "act34side_05",
                         "act34side_08"
                     ],
-                    "act34side_zone2": [
+                    "act34sre_zone2": [
                         "act34side_ex03",
                         "act34side_ex03#f#"
                     ]
@@ -61567,11 +61567,11 @@
         "enemy_1440_dselec": {
             "sidestory": {
                 "act34side": {
-                    "act34side_zone1": [
+                    "act34sre_zone1": [
                         "act34side_06",
                         "act34side_08"
                     ],
-                    "act34side_zone2": [
+                    "act34sre_zone2": [
                         "act34side_ex03",
                         "act34side_ex03#f#"
                     ]
@@ -61581,11 +61581,11 @@
         "enemy_1441_bounc2": {
             "sidestory": {
                 "act34side": {
-                    "act34side_zone1": [
+                    "act34sre_zone1": [
                         "act34side_06",
                         "act34side_09"
                     ],
-                    "act34side_zone2": [
+                    "act34sre_zone2": [
                         "act34side_ex02",
                         "act34side_ex02#f#",
                         "act34side_ex05",
@@ -61597,10 +61597,10 @@
         "enemy_1556_dsbish": {
             "sidestory": {
                 "act34side": {
-                    "act34side_zone1": [
+                    "act34sre_zone1": [
                         "act34side_08"
                     ],
-                    "act34side_zone2": [
+                    "act34sre_zone2": [
                         "act34side_ex08",
                         "act34side_ex08#f#"
                     ]
@@ -61610,7 +61610,7 @@
         "enemy_1442_dsgun": {
             "sidestory": {
                 "act34side": {
-                    "act34side_zone1": [
+                    "act34sre_zone1": [
                         "act34side_09",
                         "act34side_09"
                     ]
@@ -61620,7 +61620,7 @@
         "enemy_1433_dsbasi_2": {
             "sidestory": {
                 "act34side": {
-                    "act34side_zone2": [
+                    "act34sre_zone2": [
                         "act34side_ex01",
                         "act34side_ex01#f#",
                         "act34side_ex02",
@@ -61644,7 +61644,7 @@
         "enemy_1435_dsflys_2": {
             "sidestory": {
                 "act34side": {
-                    "act34side_zone2": [
+                    "act34sre_zone2": [
                         "act34side_ex01",
                         "act34side_ex01#f#",
                         "act34side_ex04",
@@ -61663,7 +61663,7 @@
         "enemy_1437_dsfull_2": {
             "sidestory": {
                 "act34side": {
-                    "act34side_zone2": [
+                    "act34sre_zone2": [
                         "act34side_ex02",
                         "act34side_ex02#f#",
                         "act34side_ex04",
@@ -61681,7 +61681,7 @@
         "enemy_1436_dsdivi_2": {
             "sidestory": {
                 "act34side": {
-                    "act34side_zone2": [
+                    "act34sre_zone2": [
                         "act34side_ex02",
                         "act34side_ex02#f#",
                         "act34side_ex03",
@@ -61708,7 +61708,7 @@
         "enemy_1438_dspred_2": {
             "sidestory": {
                 "act34side": {
-                    "act34side_zone2": [
+                    "act34sre_zone2": [
                         "act34side_ex03",
                         "act34side_ex03#f#",
                         "act34side_ex05",
@@ -61722,7 +61722,7 @@
         "enemy_1440_dselec_2": {
             "sidestory": {
                 "act34side": {
-                    "act34side_zone2": [
+                    "act34sre_zone2": [
                         "act34side_ex03",
                         "act34side_ex03#f#",
                         "act34side_ex06",
