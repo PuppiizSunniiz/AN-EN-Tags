@@ -185,7 +185,6 @@ def decimal_format(dec : float) -> str:
         return f'{dec:.1f}'
     else:
         return f'{dec:.0f}'
-    #{".0" if len(str(dec).split(".")[-1]) == 2 else ".1"}
 
 def wiki_trim(text : str) -> str:
     return text.replace("'", "").replace('"', "").replace("?", "")
@@ -736,26 +735,57 @@ def wiki_enemies(event = "", data_return = False, show = False) -> dict:
     if data_return:
         return data
     
-#wiki_enemies()
-#wiki_enemies(True)
-
 def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
     '''
         event_type = episode/ intermezzo/ sidestory/ storycollection
+                    vb/ ig
         
         page_footer = 
         
             "Side Story operations" - intermezzo/ sidestory/ storycollection
         
-            "Seasonal game modes" - vb
+            "Seasonal game modes" - vb/ ig
+            
+            "Other event operations" - ig
         
     '''
-    enemy_rune = ["enemy_attribute_mul", "char_attribute_mul"]
-    non_enemy_rune = ["env_system_new"]
+    enemy_rune = ["enemy_attribute_mul", "char_attribute_mul", "level_enemy_replace"]
+    non_enemy_rune = ["env_system_new", "global_cost_recovery_mul", "global_lifepoint", "map_tile_blackb_assign"]
     
     enemy_buffs = []
     non_enemy_buffs = ["periodic_damage"]
-    skip_buffs = ["strife_mode_feature"]
+    skip_buffs = ["strife_mode_feature", "cooperate_fortress_global_buff"]
+    
+    def stage_level(level : str) -> str:
+            if level == "-" or not level:
+                return ""
+            elif level.find("精英") != -1:
+                return f'Elite {level.split("精英")[-1].split("LV.")[0].strip()} Level {level.split("LV.")[-1]}'.replace("二", "2")
+            else:
+                return f'Level {level.split("LV.")[-1]}'
+    
+    def desc_cond_writer(desc_cond : str) -> str:
+        def desc_tl(desc):
+            desc_tl_dict = {
+                "'''<[[涨潮]]>'''被淹没的地块无法部署，水中的我方单位攻击速度降低，持续受到侵蚀损伤" : "'''<[[High Tide]]>''' Unable to deploy on flooded tiles. Allied units and enemies in the water will be affected by \"Erosion\"",
+                "'''<[[岩浆喷射处]]>'''每隔一定时间会喷出岩浆，对周围8格内的我方单位造成大量伤害且融化障碍物" : "'''<[[Lava Crack]]>''' spray out lava periodically, dealing massive damage to friendly units on the surrounding 8 tiles and melting down Roadblocks",
+                "'''<[[热泵通道]]>'''每隔一段时间便会对其上的我军和敌军造成大量伤害" : "'''<[[Heat Pump Passage]]>''' that periodically inflict damage to units standing on them are present on the field",
+                "部分敌人的基础属性提升" : "Increases some enemies' base stats.",
+                "'''<[[毒性雾霾]]>'''我方单位会持续失去生命" : "'''<[[Poison Haze]]>''' Operators lose HP constantly",
+                "'''<[[沼泽地段]]>'''置于其中的干员攻击速度逐渐降低，经过的敌人攻击速度和移动速度逐渐降低" : "'''<[[Mire]]>'''Gradually reduces the ASPD of Operators within, and the ASPD and Movement Speed of enemies within",
+                "'''<[[芦苇丛]]>'''置于其中的干员获得\"迷彩\"" : "'''<[[Reed Beds]]>''' Operators within gain Camouflage.",
+                "'''<[[玉门天灾工事]]>'''置于其中的单位对地面单位造成的伤害提升，受到来自地面单位的伤害降低" : "'''<[[Yumen Catastrophe Defense]]>''' Units placed here deal more damage to ground units and take less damage from ground units."
+            }
+            for k,v in desc_tl_dict.items():
+                desc = desc.replace(k,v)
+            return desc
+        # stage mechanic
+        desc = re.sub(r'<@[A-z.1-9_]*?><(.*?)><\/>', r"'''<[[\1]]>'''", desc_cond)
+        # challenge condition
+        if re.search(r'<@lv.fs>附加条件：<\/>\\n', desc):
+            desc = re.sub(r'<@lv.fs>附加条件：<\/>\\n', "", desc)
+            desc = re.sub(r'<[^[](.*?)[^]\/]>', r"'''<[[\1]]>'''", desc)
+        return desc_tl(desc).replace("\\n", "<br/>").replace("\n", "<br/>")
     
     def stage_kill_lister(data : dict, stage_key : str) -> dict:
         def enemy_ref_dict(enemyDbRefs : list) -> str:
@@ -776,11 +806,6 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                 x_max = len(mapData["map"][0])
                 y_max = len(mapData["map"])
                 
-                #spaw
-                
-                
-                
-            pass
         
         stage_kill_data = {}
         IGNORED = {"enemy_10082_mpweak", "enemy_10072_mpprhd", "enemy_3009_mpprss"} # square / Hand / EYESOFPRIESTESS
@@ -795,10 +820,18 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
         stage_height = len(mapData["map"])
         stage_width = len(mapData["map"][0])
         times = 0
-                
+        if event_type == "tn":
+            tn_kill_lister = []
+            tn_wave = 0
+        
         waves = data["stage"][stage]["waves"]
         for wave in waves:
             times += wave["preDelay"] + wave["postDelay"]
+            if event_type == "tn":
+                if wave["fragments"][0]["actions"][0]["key"].find("trap_091_brctrl") != -1:
+                    continue
+                else:
+                    tn_wave_kill = {"KILL" : {}, "Suspect" : {}, "Extra" : {}}
             for fragment in wave["fragments"]:
                 #printr("fragment", "")
                 times += fragment["preDelay"]
@@ -814,19 +847,29 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                             if mapData["tiles"][mapData["map"][-routes["startPosition"]["row"] - 1][routes["startPosition"]["col"]]]["tileKey"] in ["tile_start", "tile_flystart"] or times + action["preDelay"] == 0: 
                                 enemy_counter["KILL"][stage_enemy_ref[action["key"]]] = enemy_counter["KILL"].get(stage_enemy_ref[action["key"]], 0) + action["count"]
                                 counter[0] += action["count"]
-                            #Go to Red box //                                                                                                               #legal spawn movement
+                                if event_type == "tn":
+                                    tn_wave_kill["KILL"][stage_enemy_ref[action["key"]]] = tn_wave_kill["KILL"].get(stage_enemy_ref[action["key"]], 0) + action["count"]
+                            #Go to Blue box //                                                                                                               #legal spawn movement
                             elif mapData["tiles"][mapData["map"][-routes["endPosition"]["row"] - 1][routes["endPosition"]["col"]]]["tileKey"] == "tile_end":# and enemy_motion_search(action["key"]) == routes["motionMode"]:
                                 if last_enemy != "enemy_10072_mpprhd":
                                     enemy_counter["Suspect"][stage_enemy_ref[action["key"]]] = enemy_counter["Suspect"].get(stage_enemy_ref[action["key"]], 0) + action["count"]
                                     counter[1] += action["count"]
+                                    if event_type == "tn":
+                                        tn_wave_kill["Suspect"][stage_enemy_ref[action["key"]]] = tn_wave_kill["Suspect"].get(stage_enemy_ref[action["key"]], 0) + action["count"]
                                 else:
                                     enemy_counter["Extra"][stage_enemy_ref[action["key"]]] = enemy_counter["Extra"].get(stage_enemy_ref[action["key"]], 0) + action["count"]
                                     counter[2] += action["count"]
+                                    if event_type == "tn":
+                                        tn_wave_kill["Extra"][stage_enemy_ref[action["key"]]] = tn_wave_kill["Extra"].get(stage_enemy_ref[action["key"]], 0) + action["count"]
                     
                     if action["actionType"] == "SPAWN":
                         last_enemy = stage_enemy_ref[action["key"]]
-        
+                
+            if event_type == "tn":
+                tn_kill_lister.append(tn_wave_kill)
+                tn_wave += 1
         enemy_counter["counter"] = counter
+        if event_type == "tn": enemy_counter["tn_counter"] = tn_kill_lister
         return enemy_counter
     
     def enemies_lister(def_data : dict) -> dict:
@@ -867,8 +910,8 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
             
     def tile_lister(def_data : list) -> list:
         tile_output = []
-        tile_skip = ["tile_forbidden", "tile_wall", "tile_road", "tile_floor", "tile_toxichill", "tile_toxicroad", "tile_toxicwall", "tile_toxic"]
-        tlle_full_skip = ["tile_start", "tile_end", "tile_telin", "tile_telout", "tile_hole", "tile_fence_bound", "tile_flystart", "tile_smog"]
+        tile_skip = ["tile_forbidden", "tile_wall", "tile_road", "tile_floor", "tile_toxichill", "tile_toxicroad", "tile_toxicwall", "tile_toxic", "tile_reed", "tile_reedw", "tile_mire"]
+        tlle_full_skip = ["tile_start", "tile_end", "tile_telin", "tile_telout", "tile_hole", "tile_fence_bound", "tile_flystart", "tile_smog", "tile_start_cooperate", "tile_end_cooperate", "tile_allygoal", "tile_football", "tile_enemygoal"]
         for tile in def_data:
             if (tile["tileKey"] in tile_skip and not tile["blackboard"] and not tile["effects"]) or tile["tileKey"] in tlle_full_skip:
                 continue
@@ -893,7 +936,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                     if not heal:
                         printr(f'{R}Medical Rune{RE} key is invalid : {Y}{blackboard["key"]}{RE}')
                         exit()
-                    tile_result.append(f'The [[Medical Rune]] restores {heal:{".0%" if len(str(heal).split(".")[-1]) ==2 else ".1%"}} of maximum HP every second to the friendly unit on it.')
+                    tile_result.append(f'The [[Medical Rune]] restores {heal:{".0%" if len(str(heal).split(".")[-1]) < 2 else ".1%"}} of maximum HP every second to the friendly unit on it.')
                 case "tile_bigforce":
                     force = 0
                     for blackboard in tile[tile_id]["blackboard"]:
@@ -949,9 +992,31 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                 case "tile_defup":
                     if len(tile[tile_id]["blackboard"]) == 1 and tile[tile_id]["blackboard"][0]["key"] == "def":
                         defense = tile[tile_id]["blackboard"][0]["value"]
-                        tile_result.append(f'*The [[Defense Rune]] increases the DEF of the friendly unit on it by {defense:.0f}.')
+                        tile_result.append(f'The [[Defense Rune]] increases the DEF of the friendly unit on it by {defense:.0f}.')
                     else :
-                        printc(f'New tile_defup case just frop : {tile[tile_id]}')
+                        printc(f'New tile_defup case just drop : {tile[tile_id]}')
+                case "tile_infection":
+                    damage = 0
+                    atk = 0
+                    aspd = 0
+                    duration = 0
+                    for blackboard in tile[tile_id]["blackboard"]:
+                        match blackboard["key"]:
+                            case "damage":
+                                damage = blackboard["value"]
+                            case "atk":
+                                atk = blackboard["value"]
+                            case "attack_speed":
+                                aspd = blackboard["value"]
+                            case "duration":
+                                duration = blackboard["value"]
+                            case _:
+                                printc(f'New tile_infection case just drop : {tile[tile_id]}')
+                    if damage and atk and aspd and duration:
+                        tile_result.append(f'The [[Active Originium]] effect deals {damage:.0f} True damage every second, increases ATK and ASPD by {atk:{".0%" if len(str(atk).split(".")[-1]) < 2 else ".1%"}} and {aspd:.0f}, respectively, and lasts for {duration:.0f} seconds. ')
+                    else:
+                        printr(f'Active Originium effect value if {R}not{RE} completed : {R}{stage} {B}{tile}')
+                        exit()
                 case _ :
                     printr(f'new Terrain to add : {Y}{tile_id}\n\t{G}{tile[tile_id]["blackboard"]}\n\t{B}{tile[tile_id]["effects"]}{RE}')
         
@@ -979,6 +1044,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                     continue
                 elif buff["prefabKey"] in non_enemy_buffs:
                     temp = {k:v for k,v in buff.items()}
+                    printr(temp["blackboard"])
                     match buff["prefabKey"]:
                         case "periodic_damage":
                             damage = temp["blackboard"].pop("damage")
@@ -993,26 +1059,35 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                     printc(f'New buff in town !!! {buff["prefabKey"]}')
         
         addendum = f'{"\n".join(buff_writer)}\n{head}'
-        rune_text = ""
+        rune_writer = []
         for rune in runes:
+            temp = {k:v for k,v in rune.items()}
             if rune["key"] in enemy_rune:
                 continue
             if rune["key"] not in non_enemy_rune:
                 printc(f'{Y}{rune["key"]}{RE} is not in {G}non_enemy_rune{RE} : {B}{non_enemy_rune}{RE}')
                 
-            if rune["difficultyMask"] == "ALL" or rune["difficultyMask"] == "diff":
+            if rune["difficultyMask"] == "ALL" or rune["difficultyMask"] == diff:
                 match rune["key"]:
                     case "env_system_new":
                         if rune["blackboard"] in norm_env:
                             continue
                         else :
                             printc(f'New Environment just drop : {rune["blackboard"]}')
+                    case "global_cost_recovery_mul":
+                            scale = temp["blackboard"].pop("scale")
+                            if temp["blackboard"]:
+                                printc(f'There new blackboard key in {Y}{rune["prefabKey"]}{RE} : {B}{temp["blackboard"]}{RE}')
+                            else:
+                                rune_writer.append(f'\nThe automatic DP generation rate is reduced to 1 DP every {decimal_format(scale)} seconds.')
+                    case "global_lifepoint":
+                        # global_lifepoint()
+                        continue
                     case _:
                         printc(f'New case just drop : {rune["key"]}')
-        
-        addendum += foot
+        addendum += f'{"\n".join(rune_writer)}\n{foot}'
         return addendum
-    
+
     def eaddendum_lister():
         eaddendum = []
         # Individual Enemy
@@ -1049,7 +1124,16 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
         def eaddendum_stat_writer(key, value):
             match key:
                 case "rangeRadius":
-                    return f'an attack range of {decimal_format(value)}'
+                    return f'an attack range of {decimal_format(value)} tiles'
+                case "lifePointReduce":
+                    if value == 0:
+                        return "Does not deduct [[Life Points]]"
+                    elif value < 0:
+                        printr(f'There {Y}Negative value{RE} case to investigate {R}({stage}, {Y}{enemy_code}{R}){RE}')
+                    else:
+                        return f'deduct {int(value)} Life Points on entering Protection Objective.'
+                case "massLevel":
+                    return f'weight {value}'
                 case _ :
                     return f'{value:.0f} {eaddendum_dict[key]}'
         buff_writer = []        
@@ -1061,12 +1145,12 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                     temp = {k:v for k,v in buff.items()}
                     match buff["prefabKey"]:
                         case _:
-                            printc(f'There new case in addendum Towns : {buff["prefabKey"]}')
+                            printc(f'There new case in eaddendum buff Towns : {buff["prefabKey"]}')
                 else:
                     printc(f'New buff in town !!! {buff["prefabKey"]}')
                     
         #attribute_key = ['maxHp', 'atk', 'def', 'magicResistance', 'moveSpeed', 'attackSpeed', 'baseAttackTime', 'respawnTime', 'hpRecoveryPerSec', 'spRecoveryPerSec', 'massLevel', 'baseForceLevel', 'tauntLevel', 'epDamageResistance', 'epResistance', 'damageHitratePhysical', 'damageHitrateMagical', 'epBreakRecoverSpeed', 'stunImmune', 'silenceImmune', 'sleepImmune', 'frozenImmune', 'levitateImmune', 'disarmedCombatImmune', 'fearedImmune', 'palsyImmune', 'attractImmune']
-        eaddendum_dict = {"max_hp": "HP", "maxHp": "HP", "atk": "ATK", "def": "DEF", "magicResistance": "RES", "moveSpeed": "MSPD", "rangeRadius": "Attack Range"}
+        eaddendum_dict = {"max_hp": "HP", "maxHp": "HP", "atk": "ATK", "def": "DEF", "magicResistance": "RES", "moveSpeed": "MSPD", "move_speed": "MSPD", "rangeRadius": "Attack Range", "lifePointReduce" : "Life Points", "massLevel": "weight"}
         eaddendum_skip = ["name", "description", "spRecoveryPerSec", "talentBlackboard", "spData", "skills"]
         eaddendum_result = buff_writer
         if runes:
@@ -1074,7 +1158,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                 if rune["key"] in non_enemy_rune:
                     continue
                 if rune["key"] not in enemy_rune:
-                    printc(f'{Y}{rune["key"]}{RE} is not in {G}enemy_rune_sort{RE} : {B}{enemy_rune}{RE}')
+                    printc(f'{Y}{rune["key"]}{RE} is {R}not{RE} in {G}enemy_rune{RE} : {R}{stage} {B}{enemy_rune}{RE}')
                 if rune["difficultyMask"] == "ALL" or rune["difficultyMask"] == diff:
                     #printr(stage, "im here")
                     match rune["key"]:
@@ -1093,26 +1177,47 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                                     temp_stat.append(eaddendum_dict[key])
                                     temp_value.append(f'{rune["blackboard"][key] - 1:.0%}')
                                 else:
-                                    printr(f'{Y}{key}{RE} is {R}not{RE} in {Y}eaddendum_dict !!!{RE}')
+                                    printr(f'{Y}{key}{RE} is {R}not{RE} in {Y}eaddendum_dict !!! {R}({stage}){RE}')
                                     exit()
-                            eaddendum_result.append(f'\n{char_name} have {join_and(temp_stat)} increased by {join_and(set(temp_value) if len(set(temp_value)) == 1 else temp_value)}.')
+                            if temp_stat and temp_value:
+                                eaddendum_result.append(f'\n{char_name} have {join_and(temp_stat)} increased by {join_and(set(temp_value) if len(set(temp_value)) == 1 else temp_value)}.')
                         case "enemy_attribute_mul":
                             temp_stat = []
                             temp_value = []
-                            char_name = ""
+                            all_enemy = []
+                            enemy_name = ""
                             for key in rune["blackboard"]:
-                                if key in eaddendum_skip:
+                                if key in eaddendum_skip or rune["blackboard"][key] == 0:
                                     continue
                                 elif key in eaddendum_dict.keys():
                                     temp_stat.append(eaddendum_dict[key])
                                     temp_value.append(f'{rune["blackboard"][key] - 1:.0%}')
+                                elif key == "enemy":
+                                    all_enemy = rune["blackboard"][key].split("|")
+                                    enemy_name = join_and([big_data["enemies"][enemy]["data"]["name"] for enemy in all_enemy])
                                 else:
-                                    printr(f'{Y}{key}{RE} is {R}not{RE} in {Y}eaddendum_dict !!!{RE}')
+                                    printr(f'{Y}{key}{RE} is {R}not{RE} in {Y}eaddendum_dict !!! {R}({stage}){RE}')
                                     exit()
-                            eaddendum_result.append(f'\nAll enemies have their {join_and(temp_stat)} increased by {join_and(set(temp_value) if len(set(temp_value)) == 1 else temp_value)}.')
+                            if temp_stat and temp_value:
+                                eaddendum_result.append(f'\n{enemy_name if enemy_name else "All enemies"} have their {join_and(temp_stat)} increased by {join_and(set(temp_value) if len(set(temp_value)) == 1 else temp_value)}.')
+                        case "level_enemy_replace":
+                            enemy_base = ""
+                            enemy_replace = "" 
+                            for key in rune["blackboard"]:
+                                if key == "key":
+                                    base_enemy = rune["blackboard"][key].split("|")
+                                    enemy_base = join_and([big_data["enemies"][enemy]["data"]["name"] for enemy in base_enemy])
+                                elif key == "value":
+                                    replace_enemy = rune["blackboard"][key].split("|")
+                                    enemy_replace = join_and([big_data["enemies"][enemy]["data"]["name"] for enemy in replace_enemy])
+                                else :
+                                    printr(f'new key for {Y}level_enemy_replace{RE} just drop : {B}{key}{R} ({stage}){RE}')
+                                    exit()
+                            if enemy_base and enemy_replace:
+                                eaddendum_result.append(f'\nAll {enemy_base} are replaced with {enemy_replace}.')
                         case _:
-                            printc(f'New enemy rune key just drop : {rune["key"]}')
-                else: printr(f'New Difficulty to add : {rune["difficultyMask"]}')
+                            printr(f'{Y}{stage}{RE} New enemy rune key just drop : {B}{rune["key"]}{RE}')
+                else: printr(f'New Difficulty to add : {Y}{rune["difficultyMask"]}{RE}')
         
         # Individual enemies
         for enemy in eaddendum:
@@ -1122,10 +1227,10 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
             enemy_name = DB["json_enemy_handbookEN"]["enemyData"][enemy_code]["name"] if enemy_code in DB["json_enemy_handbookEN"]["enemyData"] else enemy_names_tl.get(enemy_key, f'{big_data["enemies"][enemy_key]["data"]["name"]}({enemy_key})')
             for ref_stat in list(enemy.values()):
                 for k,v in ref_stat.items():
-                    if k in eaddendum_skip:
+                    if k in eaddendum_skip or (k == "attackSpeed" and v == 100):
                         continue
                     if k not in eaddendum_dict:
-                        printr(f'{Y}{k}{RE} is {R}not{RE} in {Y}eaddendum_dict !!!{RE}')
+                        printr(f'{Y}{k}{RE} is {R}not{RE} in {G}eaddendum_dict !!!{RE} {R}({stage}, {Y}{enemy_key}{R}){RE}')
                         exit()
                     if k == "rangeRadius" and v in [0, -1]:
                         continue
@@ -1133,26 +1238,6 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                 if eaddendum_parse:
                     eaddendum_result.append(f'\n*{enemy_name} have {join_and(eaddendum_parse)}.')
         return "".join(eaddendum_result)
-    
-    def desc_cond_writer(desc_cond : str) -> str:
-        def desc_tl(desc):
-            desc_tl_dict = {
-                "'''<[[涨潮]]>'''被淹没的地块无法部署，水中的我方单位攻击速度降低，持续受到侵蚀损伤" : "'''<[[High Tide]]>''' Unable to deploy on flooded tiles. Allied units and enemies in the water will be affected by \"Erosion\"",
-                "'''<[[岩浆喷射处]]>'''每隔一定时间会喷出岩浆，对周围8格内的我方单位造成大量伤害且融化障碍物" : "'''<[[Lava Crack]]>''' spray out lava periodically, dealing massive damage to friendly units on the surrounding 8 tiles and melting down Roadblocks",
-                "'''<[[热泵通道]]>'''每隔一段时间便会对其上的我军和敌军造成大量伤害" : "'''<[[Heat Pump Passage]]>''' that periodically inflict damage to units standing on them are present on the field",
-                "部分敌人的基础属性提升" : "Increases some enemies' base stats.",
-                "'''<[[毒性雾霾]]>'''我方单位会持续失去生命" : "'''<[[Poison Haze]]>''' Operators lose HP constantly"
-            }
-            for k,v in desc_tl_dict.items():
-                desc = desc.replace(k,v)
-            return desc
-        # stage mechanic
-        desc = re.sub(r'<@[A-z.1-9_]*?><(.*?)><\/>', r"'''<[[\1]]>'''", desc_cond)
-        # challenge condition
-        if re.search(r'<@lv.fs>附加条件：<\/>\\n', desc):
-            desc = re.sub(r'<@lv.fs>附加条件：<\/>\\n', "", desc)
-            desc = re.sub(r'<[^[](.*?)[^]\/]>', r"'''<[[\1]]>'''", desc)
-        return desc_tl(desc).replace("\\n", "<br/>").replace("\n", "<br/>")
     
     def rune_lister(def_data : list) -> dict:
         rune_list = []
@@ -1171,19 +1256,20 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
         
         new_rune_list = [new_rune for new_rune in[rune["key"] for rune in rune_list] if new_rune not in (enemy_rune + non_enemy_rune)]
         if new_rune_list != []:
-            printc(f'There new rune(s) in town !!! : {new_rune_list}')
+            printr(f'{Y}{stage}{RE} There new rune(s) in town !!! : {B}{new_rune_list}{RE}')
         return rune_list
     
     def global_buff_lister(def_data : list) -> dict:
         global_buff = []
-        if [buff["prefabKey"] for buff in def_data] != list(set([buff["prefabKey"] for buff in def_data])):
+        if sorted([buff["prefabKey"] for buff in def_data]) != sorted(list(set([buff["prefabKey"] for buff in def_data]))):
+            printc(sorted([buff["prefabKey"] for buff in def_data]), sorted(list(set([buff["prefabKey"] for buff in def_data]))), sorted([buff["prefabKey"] for buff in def_data]) != sorted(list(set([buff["prefabKey"] for buff in def_data]))))
             printc(f'There dupe buff key need fix {[buff["prefabKey"] for buff in def_data]}')
             exit()
         for buff in def_data:
             if buff["prefabKey"] in skip_buffs:
                 continue
             elif buff["prefabKey"] not in (non_enemy_buffs + enemy_buffs):
-                printr(f'New global buff just drop !!! : {buff["prefabKey"]}')
+                printr(f'{Y}{stage}{RE} New global buff just drop !!! : {B}{buff["prefabKey"]}{RE}')
             else:
                 temp = {k:v for k,v in buff.items()}
                 temp["blackboard"] = {}
@@ -1191,17 +1277,17 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                     temp["blackboard"][blackboard["key"]] = blackboard["valueStr"] if blackboard["valueStr"] else blackboard["value"]
                 global_buff.append(temp)
         return global_buff
-        
+
+    def global_lifepoint(def_data, default = 3, diff = "ALL"):
+        for rune in def_data:
+            if rune["key"] == "global_lifepoint" and diff == rune["difficultyMask"]:
+                for blackboard in rune["blackboard"]:
+                    if blackboard["key"] == "value":
+                        return int(blackboard["value"])
+        return default
 
     def stage_article_data(data : dict, stage : str, mode : str, diff = "") -> dict:
         #printr(stage)
-        def stage_level(level : str) -> str:
-            if level == "-":
-                return ""
-            elif level.find("精英") != -1:
-                return f'Elite {level.split("精英")[-1].split("LV.")[0].strip()} Level {level.split("LV.")[-1]}'
-            else:
-                return f'Level {level.split("LV.")[-1]}'
             
         def drop_lister(def_data : list) -> dict:
             drop_types = ["COMPLETE", "NORMAL", "ADDITIONAL", "SPECIAL"]
@@ -1265,7 +1351,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                         "drill" : data["stage_data"][stage_code]["practiceTicketCost"] if isinstance(data["stage_data"][stage_code]["practiceTicketCost"], int) and data["stage_data"][stage_code]["practiceTicketCost"] > 0 else "",
                         "unit_limit" : data["stage"][stage]["options"]["characterLimit"],
                         "enemies" : sum(data["enemies_stage"][stage]["counter"][0:1]),
-                        "lp" : data["stage"][stage]["options"]["maxLifePoint"] if not diff else 1,
+                        "lp" : global_lifepoint(data["stage"][stage]["runes"], data["stage"][stage]["options"]["maxLifePoint"], diff),
                         "dp" : data["stage"][stage]["options"]["initialCost"],
                         "deployable" : token_lister(data["stage"][stage]["predefines"]["tokenCards"]) if data["stage"][stage]["predefines"] else "",
                         "static" : token_lister(data["stage"][stage]["predefines"]["tokenInsts"]) if data["stage"][stage]["predefines"] else "",
@@ -1483,6 +1569,135 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                             {operators_predefine_writer(data["comp"], data["pre_auto"], data["auto"], data["fixed"])}
                             }}}}'''.replace("                        ", "").replace("\n\n","\n")
 
+    def ig_article_data(data, stage_key):
+        # https://arknights.wiki.gg/wiki/Template:IG_operation_info
+        enemies_data = enemies_lister(data["enemies_stage"][stage_key])
+        
+        return {
+                    "code" : data["stage_data"][stage_key]["code"],
+                    "name" : data["stage_data"][stage_key]["name"],
+                    "nomap" : "", 
+                    "map" : "", 
+                    "season" : re.search(r'act([0-9]){1,2}multi', event_code).group(1), 
+                    "group" : "", 
+                    "desc" : data["stage_data"][stage_key]["description"],
+                    "level" : stage_level(data["stage_data"][stage_key]["dangerLevel"]), 
+                    "unit limit" : data["stage"][stage_key]["options"]["characterLimit"], 
+                    "enemies" : "", 
+                    "lp" : global_lifepoint(data["stage"][stage]["runes"], data["stage"][stage]["options"]["maxLifePoint"]),
+                    "dp" : data["stage"][stage]["options"]["initialCost"], 
+                    "deployable" : token_lister(data["stage"][stage]["predefines"]["tokenCards"]) if data["stage"][stage]["predefines"] else "",
+                    "static" : token_lister(data["stage"][stage]["predefines"]["tokenInsts"]) if data["stage"][stage]["predefines"] else "",
+                    "terrain" : tile_lister(data["stage"][stage]["mapData"]["tiles"]),
+                    "addendum" : "", 
+                    "obj1" : "", 
+                    "obj2" : "", 
+                    "obj2+" : "", 
+                    "normal" : enemies_data.get("NORMAL", ""),
+                    "elite" : enemies_data.get("ELITE", ""),
+                    "boss" : enemies_data.get("BOSS", ""),
+                    "eaddendum" : eaddendum_lister(),
+                    "comp" : "",
+                    "pre" : "",
+                    "auto" : "",
+                    "saddendum" : "",
+                    "rune" : rune_lister(data["stage"][stage]["runes"]) if data["stage"][stage]["runes"] else "",
+                    "globalBuffs" : global_buff_lister(data["stage"][stage]["globalBuffs"]) if data["stage"][stage]["globalBuffs"] else ""
+        }
+    
+    def ig_article_writer(ig_data):
+        return f'''{{{{IG operation info
+                |code = {ig_data["code"]}
+                |name = {ig_data["name"]} 
+                |nomap = 
+                |map = 
+                |season = {ig_data["season"]} 
+                |group = 
+                |desc = {desc_cond_writer(ig_data["desc"])}
+                |level = {ig_data["level"]}
+                |unit limit = {ig_data["unit limit"]} 
+                |enemies = 
+                |lp = {ig_data["lp"]} 
+                |dp = {ig_data["dp"]} 
+                |deployable = {ig_data["deployable"]} 
+                |static = {ig_data["static"]} 
+                |terrain = {tile_writer(ig_data["terrain"])}
+                |addendum = {addendum_writer(ig_data["rune"], ig_data["globalBuffs"])}
+                |obj1 = {ig_data["obj1"]} 
+                |obj2 = {ig_data["obj2"]} 
+                |obj2+ = {ig_data["obj2+"]} 
+                |normal = {ig_data["normal"]}
+                |elite = {ig_data["elite"]}
+                |boss = {ig_data["boss"]}
+                |eaddendum = {eaddendum_writer(ig_data["eaddendum"], ig_data["rune"], ig_data["globalBuffs"])}
+                |comp =
+                |pre =
+                |auto =
+                |saddendum =
+                }}}}
+                {{{{Other event operations}}}}
+                [[Category:Rhodes Island Icebreaker Games operations]]
+                '''.replace("                ", "").replace("\n\n","\n")
+
+    def tn_article_data(data, stage_key):
+        pass
+    
+    def tn_article_writer(tn_data, mode):
+        '''
+        mode = info/ data/ squad/ rewards
+        '''
+        match mode:
+            case "info":
+                return f'''{{{{construction}}}}
+                            {{{{Spoiler notice|article}}}}
+                            {{{{Translation|article}}}}
+                            {{{{TN operation info
+                            |code = 
+                            |name = 
+                            |season = 
+                            |desc = 
+                            |entitative = 
+                            }}}}'''.replace("                            ","").replace("\n\n","\n")
+            case "data":
+                return f'''{{TN operation data
+                            |orientation = 
+                            |cond = 
+                            |unit limit =
+                            |dp =
+                            |lp =
+                            |enemies =
+                            |deployable = 
+                            |static = 
+                            |terrain =
+                            |addendum = 
+                            |normal 1 = 
+                            |normal 2 = 
+                            |elite 1 = 
+                            |elite 2 = 
+                            |boss 1 =
+                            |boss 2 = 
+                            |eaddendum = 
+                            }}'''.replace("                            ","").replace("\n\n","\n")
+            case "squad":
+                return f'''{{{{TN squad
+                            |ultimate =
+                            |comp = 
+                            *
+                            *
+                            *
+                            *7 other additional [[Operator]]s (including the [[Support Unit]])
+                            |decoder = 
+                            }}}}
+                            '''.replace("                            ","").replace("\n\n","\n")
+            case "rewards":
+                return f'''{{{{TN rewards
+                            
+                            }}}}
+                            {{{{TN operations}}}}
+                            '''.replace("                            ","").replace("\n\n","\n")
+            case _:
+                printr(f'Seem you forgor {Y}mode{RE} : {R}"tn_article_writer"{RE}')
+
     def vb_article_data(data, stage_key, mode):
         def group_search(groupId, prev_next):
             match prev_next:
@@ -1591,6 +1806,8 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                     |eaddendum = {eaddendum_writer(vb_data["eaddendum"], vb_data["rune"], vb_data["globalBuffs"])}
                     }}}}
                     '''.replace("                    ","").replace("\n\n","\n")
+
+    
 
     def enemy_article_writer(data, mode):
         def damage_type(damageType : str) -> str:
@@ -1718,15 +1935,15 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
     big_data = wiki_enemies(event_code, data_return = True)
     big_data["enemies_stage"] = {}
     for stage in big_data["stage"]:
-        #printr(stage)
         big_data["enemies_stage"][stage] = stage_kill_lister(big_data, stage)
+        
     #script_result(big_data)
     #exit()
     # Stage article
     # - https://arknights.wiki.gg/wiki/Template:Operation_info/doc
     # - https://arknights.wiki.gg/wiki/Template:Operation_data/doc
-    if event_type == "vb":
-        mode_info = "vb"
+    if event_type in ["vb", "ig", "tn"]:
+        mode_info = event_type
         page_footer = "Seasonal game modes"
     else:
         mode_info = "sidestory"
@@ -1750,6 +1967,37 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                 stage_article = [stage_article_writer(stage_info, "info"), stage_article_writer(stage_data, "data"), f'{{{{{page_footer}}}}}']
             article_data += stage_article
         
+        elif mode_info == "ig":
+            stage_info = ig_article_data(big_data, stage)
+            stage_article = [f'### {stage}', ig_article_writer(stage_info), f'{{{{{page_footer}}}}}']
+            article_data += stage_article
+        
+        elif mode_info == "tn":
+            tn_diff = ["Basic Trial", "Orientation Trial", "Spectacular Trial", "Ultimate Trial"]
+            tn_stage_code_template = [f'{event_code}rush_0', f'{event_code}rush_tm0', f'{event_code}rush_ex0', f'{event_code}rush_fin0']
+            for i in range(1, len(list(set(big_data["zone"][f'{event_code}rush_zone1']["stages"])))):
+                tn_wave_count = big_data["zone"][f'{event_code}rush_zone1']["stages"].count(f'TN-{i}')
+                tn_reward = []
+                for j in range(tn_wave_count):
+                    tn_stage_code = f'{tn_stage_code_template[j]}{i}'
+                    if j == 0 :
+                        article_data += tn_article_writer(ig_article_data(big_data, tn_stage_code), "info", tn_wave_count)
+                        article_data += "<tabber> Basic Trial="
+                    else:
+                        article_data += f'|-|{tn_diff[j]}='
+                    
+                    article_data += tn_article_writer(ig_article_data(big_data, tn_stage_code), "data")
+                
+                article_data += "</tabber>\n"
+                article_data += tn_article_writer(j, "squad")
+                article_data += tn_article_writer(tn_reward, "rewards")
+                continue
+            exit()
+            stage_info = tn_article_data(big_data, stage)
+            stage_article = [f'### {stage}', tn_article_writer(stage_info), f'{{{{{page_footer}}}}}']
+            article_data += stage_article
+            pass
+        
         elif mode_info == "vb":
             if stage.find("sp") != -1 :
                 mode = "sp"
@@ -1760,11 +2008,10 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
             else:
                 mode = "core"
                 #continue
-
             stage_info = vb_article_data(big_data, stage, mode)
             stage_article = [f'### {stage}', vb_article_writer(stage_info, mode), f'{{{{{page_footer}}}}}']
             article_data += stage_article
-    
+
     # Enemies articles
     # - https://arknights.wiki.gg/wiki/Template:Enemy_infobox
     # - https://arknights.wiki.gg/wiki/Template:Appearances
@@ -1811,11 +2058,18 @@ enemy_names_tl = {
 item_names_tl = {"act43side_token_phantom" : "Mysterious Black Shadow"}
 token_names_tl = {}
 skill_names_tl = {}
-script_result(wiki_article("act1break", "vb", "Vector Breakthrough Mechanist"))
+script_result(wiki_article("act4bossrush", "tn", "Trials for Navigator #04"))
 
+# Trials for Navigator #04
+#script_result(wiki_article("act4bossrush", "tn", "Trials for Navigator #04"))
+
+# Rhodes Island Icebreaker Games #1
+#script_result(wiki_article("act1multi", "ig", "Rhodes Island Icebreaker Games #1"))
 
 # Vector Breakthrough Mechanist
 #script_result(wiki_article("act1break", "vb", "Vector Breakthrough Mechanist"))
+
+
 '''
 temp = [[],[]]
 for stage in DB["json_stage"]["stages"]:
@@ -1838,93 +2092,3 @@ printr(temp)
 
 #print([key for key in DB["json_stageEN"]["tileInfo"].keys()])
 #print(DB["json_stageEN"]["tileInfo"]["tile_smog"])
-
-'''
-<includeonly>{{#vardefine:suffix|{{#explode:{{{code|{{PAGENAME}}}}}|-|1}}}}<!--
--->{{#ifeq:{{NAMESPACE}}||{{DISPLAYTITLE:VEC-{{#var:suffix}}&#58;&#32;{{{title|{{{name}}}}}}}}}}<!--
--->__NOTOC__
-{| class="mrfz-btable" width="80%" cellpadding="5" style="table-layout:fixed;"
-|style="text-align:left; font-weight:bold;"|VEC-{{#var:suffix}}<br/>{{{title|{{{name}}}}}}
-|style="text-align:right; font-size:12px;"|<div><b>[[Vector Breakthrough]]</b>&#58;&#32;{{{part}}}</div>{{#if:{{{prev|}}}|<div><b>Previous</b>&#32;[[{{{prev}}}]]</div>}}{{#if:{{{next|}}}|<div><b>Next</b>&#32;[[{{{next}}}]]</div>}}
-|-
-|colspan="2"|[[File:{{{code|{{PAGENAME}}}}} map.png|center|class=imagefit|link=]]
-|-
-|colspan="2"|{{{desc}}}
-|}
-<h2>Information</h2>
-{| class="mrfz-wtable" width="65%" cellpadding="5" style="table-layout:fixed; font-size:12px; text-align:center;"
-|-
-{{#if:{{{boss info|}}}|
-!colspan="4" style="font-weight:normal;"{{!}}<div style="font-weight:bold;">[[Rosmontis, Simulated Sentry|"Rosmontis", Simulated Sentry]]</div>{{{boss info}}}}}
-|-
-!Unit Limit
-!Initial DP
-!Life Points
-!Enemies
-|-
-|<span title="The maximum amount of friendly units that can be deployed in the Vector Breakthrough operation." style="cursor:help;">{{{unit limit}}}</span>
-|<span title="The initial DP given at the start of the Vector Breakthrough operation." style="cursor:help;">{{{dp}}}</span>
-|1
-|{{#if:{{#explode:{{{enemies}}}|,|1}}|<span title="The minimum amount of enemies that can be present in the Vector Breakthrough operation{{#if:{{{allies|}}}|&#32;including allied units}}." style="cursor:help;">{{#explode:{{{enemies}}}|,|0}}</span>&#32;&#126;&#32;<span title="The maximum amount of enemies that can be present in the Vector Breakthrough operation{{#if:{{{allies|}}}|&#32;including allied units}}." style="cursor:help;">{{#explode:{{{enemies}}}|,|1}}</span>|<span title="The amount of enemies that can be present in the Vector Breakthrough operation{{#if:{{{allies|}}}|&#32;including allied units}}." style="cursor:help;">{{{enemies}}}</span>}}
-|-
-{{#if:{{{deployable|}}}|
-!Deployable devices
-{{!}}colspan="3"{{!}}{{#if:{{{deployable|}}}|{{{deployable}}}}}}}
-|-
-{{#if:{{{static|}}}|
-!Static devices
-{{!}}colspan="3"{{!}}{{#if:{{{static|}}}|{{{static}}}}}}}
-|-
-{{#if:{{{terrain|}}}|
-!Terrain properties
-{{!}}colspan="3" style="text-align:left;"{{!}}
-{{{terrain}}}}}
-|-
-{{#if:{{{addendum|}}}|
-!Additional information
-{{!}}colspan="3" style="text-align:left;"{{!}}
-{{{addendum}}}}}
-|}
-<h3 style="font-size:14px; font-weight:bold;">Rewards</h3>
-{| class="mrfz-wtable" border="1" cellpadding="5" style="text-align:center; font-size:12px;"
-|-
-!width="80px"|First clear
-|width="80px"|{{I|Attainment Point|{{{firstreward|}}}}}
-|-
-{{#if:{{{regreward|}}}|
-!Regular
-{{!}}{{I|Attainment Point|{{{regreward}}}}}}}
-|}<!--
--->{{#if:{{{supply|}}}|
-<h3 style="font-size:14px; font-weight:bold;">Combat Supply</h3><!--
---><table class="mrfz-wtable" width="50%" border="1" cellpadding="5" style="font-size:12px;"><!--
---><tr><!--
---><td width="60px" style="border-right:none; text-align:center;">[[File:VB-Combat_Supply_{{{supplyno}}}.png|60x60px|center|link=]]</td><!--
---><td style="border-left:none;"><div style="font-weight:bold;">{{{supply}}}</div>{{{supplydesc}}}</td><!--
---></tr><!--
---></table>}}<!--
---><h3 style="font-size:14px; font-weight:bold;">Enemies</h3>
-{| class="mrfz-wtable" width="65%" border="1" cellpadding="5" style="text-align:center; font-size:12px;"
-|-
-{{#if:{{{normal|}}}|
-!width="50px"{{!}}Normal
-{{!}}{{{normal}}}}}
-|-
-{{#if:{{{elite|}}}|
-!width="35px"{{!}}Elite
-{{!}}{{{elite}}}}}
-|-
-{{#if:{{{boss|}}}|
-!width="35px"{{!}}Boss
-{{!}}{{{boss}}}}}
-|-
-{{#if:{{{eaddendum|}}}|
-!colspan="2"{{!}}Additional information
-{{!}}-
-{{!}}colspan="2" style="text-align:left;"{{!}}
-{{{eaddendum}}}}}
-|}<!--
--->{{#ifeq:{{NAMESPACE}}||[[Category:Vector Breakthrough operations]]<!--
--->[[Category:Operation]]}}</includeonly><noinclude>[[Category:Operation templates|{{PAGENAME}}]]</noinclude>
-
-'''

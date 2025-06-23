@@ -807,7 +807,7 @@ function CheckTag(el,isenter = false){
                 }
             });
             return acc;
-        }, []);
+        }, []).sort((a, b) => a[0].toLowerCase().search(currsearch.toLowerCase()) - b[0].toLowerCase().search(currsearch.toLowerCase()));
         if(isenter){
             if (allsearch.length > 0) {
                 let firstTag = allsearch[0][1];
@@ -821,7 +821,6 @@ function CheckTag(el,isenter = false){
         }else{
             console.log(allsearch)
         }
-        
         
     }
 }
