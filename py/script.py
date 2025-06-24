@@ -822,16 +822,19 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
         times = 0
         if event_type == "tn":
             tn_kill_lister = []
+            tn_wave_kill = {"KILL" : {}, "Suspect" : {}, "Extra" : {}}
             tn_wave = 0
-        
+            
+        isSuiXiang = False
         waves = data["stage"][stage]["waves"]
         for wave in waves:
             times += wave["preDelay"] + wave["postDelay"]
             if event_type == "tn":
-                if wave["fragments"][0]["actions"][0]["key"].find("trap_091_brctrl") != -1:
-                    continue
-                else:
+                if wave["fragments"][0]["actions"][0]["key"].find("trap_091_brctrl") != -1 and wave["fragments"][0]["actions"][0]["key"].find("empty") != -1:
+                    tn_kill_lister.append(tn_wave_kill)
                     tn_wave_kill = {"KILL" : {}, "Suspect" : {}, "Extra" : {}}
+                    tn_wave += 1
+                    continue
             for fragment in wave["fragments"]:
                 #printr("fragment", "")
                 times += fragment["preDelay"]
@@ -843,8 +846,8 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                     if action["hiddenGroup"] and action["hiddenGroup"] != "group1": continue
                     
                     if action["key"].split("_")[0] == "enemy" and action["actionType"] == "SPAWN" and action["key"] not in IGNORED:
-                            #from Red box // or                                                                                                                                     // prespawn
-                            if mapData["tiles"][mapData["map"][-routes["startPosition"]["row"] - 1][routes["startPosition"]["col"]]]["tileKey"] in ["tile_start", "tile_flystart"] or times + action["preDelay"] == 0: 
+                            #from Red box // or                                                                                                                                     // prespawn                             // Sui wisp
+                            if mapData["tiles"][mapData["map"][-routes["startPosition"]["row"] - 1][routes["startPosition"]["col"]]]["tileKey"] in ["tile_start", "tile_flystart"] or times + action["preDelay"] == 0 or (isSuiXiang and action["key"].find("enemy_1211_msfsui") != -1): 
                                 enemy_counter["KILL"][stage_enemy_ref[action["key"]]] = enemy_counter["KILL"].get(stage_enemy_ref[action["key"]], 0) + action["count"]
                                 counter[0] += action["count"]
                                 if event_type == "tn":
@@ -864,33 +867,46 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                     
                     if action["actionType"] == "SPAWN":
                         last_enemy = stage_enemy_ref[action["key"]]
+                    if action["key"].find("enemy_1526_sfsui") != -1:
+                        isSuiXiang = True
                 
-            if event_type == "tn":
-                tn_kill_lister.append(tn_wave_kill)
-                tn_wave += 1
+        if event_type == "tn":
+            tn_kill_lister.append(tn_wave_kill)
         enemy_counter["counter"] = counter
         if event_type == "tn": enemy_counter["tn_counter"] = tn_kill_lister
         return enemy_counter
     
     def enemies_lister(def_data : dict) -> dict:
-            enemy_classes = ["NORMAL", "ELITE", "BOSS"]
-            enemy_list = {k:{} for k in enemy_classes}
-            for kill_type in ["KILL", "Suspect"]:
-                for enemy in def_data[kill_type]:
-                    enemy_class = big_data["enemies"][enemy]["data"]["levelType"]
-                    enemy_list[enemy_class][enemy] = enemy_list[enemy_class].get(enemy, 0) + def_data[kill_type][enemy]
-            enemies_output = {k:[] for k in enemy_classes}
-            #printr(stage)
+        enemy_classes = ["NORMAL", "ELITE", "BOSS"]
+        enemy_list = {k:{} for k in enemy_classes}
+        for kill_type in ["KILL", "Suspect"]:
+            for enemy in def_data[kill_type]:
+                enemy_class = big_data["enemies"][enemy]["data"]["levelType"]
+                enemy_list[enemy_class][enemy] = enemy_list[enemy_class].get(enemy, 0) + def_data[kill_type][enemy]
+        enemies_output = {k:[] for k in enemy_classes}
+        #printr(stage)
+        for enemy_class in enemy_classes:
+            for enemy in sorted(enemy_list[enemy_class].keys(), key = lambda enemy_key : big_data["enemies"][enemy_key]["handbook"]["enemyIndex"]):
+                enemy_code = big_data["enemies"][enemy]["handbook"]["enemyId"]
+                enemy_names = DB["json_enemy_handbookEN"]["enemyData"][enemy_code]["name"] if enemy_code in DB["json_enemy_handbookEN"]["enemyData"] else enemy_names_tl.get(enemy, f'{big_data["enemies"][enemy]["handbook"]["name"]}({enemy})')
+                enemy_count = enemy_list[enemy_class][enemy]
+                if enemy_class == "BOSS":
+                    enemies_output[enemy_class].append(f'{{{{E|{f'{enemy_names}|{enemy_count}' if enemy_count > 1 else enemy_names}}}}}')
+                else:
+                    enemies_output[enemy_class].append(f'{{{{E|{enemy_names}|{enemy_count}}}}}')
+        return {k:re.sub(r"(.+?)'(.+?)'(.+?)",r"\1\2\3",", ".join(v)).replace('"', "") for k,v in enemies_output.items()}
+    
+    def tn_enemies_lister(def_data):
+        enemy_classes = ["NORMAL", "ELITE", "BOSS"]
+        wave_count = 1
+        tn_enemies_output = ""
+        for wave in def_data:
+            tn_enemies = enemies_lister(wave)
+            printr(tn_enemies)
             for enemy_class in enemy_classes:
-                for enemy in sorted(enemy_list[enemy_class].keys(), key = lambda enemy_key : big_data["enemies"][enemy_key]["handbook"]["enemyIndex"]):
-                    enemy_code = big_data["enemies"][enemy]["handbook"]["enemyId"]
-                    enemy_names = DB["json_enemy_handbookEN"]["enemyData"][enemy_code]["name"] if enemy_code in DB["json_enemy_handbookEN"]["enemyData"] else enemy_names_tl.get(enemy, f'{big_data["enemies"][enemy]["handbook"]["name"]}({enemy})')
-                    enemy_count = enemy_list[enemy_class][enemy]
-                    if enemy_class == "BOSS":
-                        enemies_output[enemy_class].append(f'{{{{E|{f'{enemy_names}|{enemy_count}' if enemy_count > 1 else enemy_names}}}}}')
-                    else:
-                        enemies_output[enemy_class].append(f'{{{{E|{enemy_names}|{enemy_count}}}}}')
-            return {k:re.sub(r"(.+?)'(.+?)'(.+?)",r"\1\2\3",", ".join(v)).replace('"', "") for k,v in enemies_output.items()}
+                tn_enemies_output += f'\n|{enemy_class.lower()} {wave_count} = {tn_enemies.get(enemy_class, "")}'
+            wave_count += 1
+        return tn_enemies_output
     
     def token_lister(def_data : list) -> dict:
         token_list = {}
@@ -910,7 +926,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
             
     def tile_lister(def_data : list) -> list:
         tile_output = []
-        tile_skip = ["tile_forbidden", "tile_wall", "tile_road", "tile_floor", "tile_toxichill", "tile_toxicroad", "tile_toxicwall", "tile_toxic", "tile_reed", "tile_reedw", "tile_mire"]
+        tile_skip = ["tile_forbidden", "tile_wall", "tile_road", "tile_floor", "tile_toxichill", "tile_toxicroad", "tile_toxicwall", "tile_toxic", "tile_reed", "tile_reedw", "tile_mire", "tile_yinyang_wall", "tile_yinyang_road", "tile_stairs", "tile_passable_wall"]
         tlle_full_skip = ["tile_start", "tile_end", "tile_telin", "tile_telout", "tile_hole", "tile_fence_bound", "tile_flystart", "tile_smog", "tile_start_cooperate", "tile_end_cooperate", "tile_allygoal", "tile_football", "tile_enemygoal"]
         for tile in def_data:
             if (tile["tileKey"] in tile_skip and not tile["blackboard"] and not tile["effects"]) or tile["tileKey"] in tlle_full_skip:
@@ -1011,12 +1027,21 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                             case "duration":
                                 duration = blackboard["value"]
                             case _:
-                                printc(f'New tile_infection case just drop : {tile[tile_id]}')
+                                printc(f'New {Y}tile_infection{RE} case just drop : {B}{tile[tile_id]}{RE}')
                     if damage and atk and aspd and duration:
                         tile_result.append(f'The [[Active Originium]] effect deals {damage:.0f} True damage every second, increases ATK and ASPD by {atk:{".0%" if len(str(atk).split(".")[-1]) < 2 else ".1%"}} and {aspd:.0f}, respectively, and lasts for {duration:.0f} seconds. ')
                     else:
                         printr(f'Active Originium effect value if {R}not{RE} completed : {R}{stage} {B}{tile}')
                         exit()
+                case "tile_yinyang_wall" | "tile_yinyang_road":
+                    default_effect = [
+                                        [{'key': 'dynamic', 'value': 1.0, 'valueStr': None}, {'key': 'buff_yinyang[same].atk_scale', 'value': 0.6, 'valueStr': None}, {'key': 'buff_yinyang[diff].atk_scale', 'value': 1.4, 'valueStr': None}],
+                                        [{'key': 'dynamic', 'value': 0.0, 'valueStr': None}, {'key': 'buff_yinyang[same].atk_scale', 'value': 0.6, 'valueStr': None}, {'key': 'buff_yinyang[diff].atk_scale', 'value': 1.4, 'valueStr': None}]
+                                    ]
+                    if tile[tile_id]["blackboard"] in default_effect and not tile[tile_id]["effects"]:
+                        continue
+                    else :
+                        printc(f'New {Y}tile_yinyang{RE} case just drop : {B}{tile[tile_id]}{RE}')
                 case _ :
                     printr(f'new Terrain to add : {Y}{tile_id}\n\t{G}{tile[tile_id]["blackboard"]}\n\t{B}{tile[tile_id]["effects"]}{RE}')
         
@@ -1083,17 +1108,19 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                     case "global_lifepoint":
                         # global_lifepoint()
                         continue
+                    case "map_tile_blackb_assign":
+                        printc(f'New map_tile_blackb_assign just drop : {rune["blackboard"]}')
                     case _:
                         printc(f'New case just drop : {rune["key"]}')
         addendum += f'{"\n".join(rune_writer)}\n{foot}'
         return addendum
 
-    def eaddendum_lister():
+    def eaddendum_lister(stage_key : str):
         eaddendum = []
         # Individual Enemy
         enemies_data_key = ["applyWay", "motion", "enemyTags", "lifePointReduce", "levelType", "rangeRadius", "numOfExtraDrops", "notCountInTotal"]
         #printr(stage)
-        for enemy_ref in big_data["stage"][stage]["enemyDbRefs"]:
+        for enemy_ref in big_data["stage"][stage_key]["enemyDbRefs"]:
             enemy_id = enemy_ref["id"]
             enemy_lv = enemy_ref["level"]
             enemy_overwrittenData = {}
@@ -1131,7 +1158,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                     elif value < 0:
                         printr(f'There {Y}Negative value{RE} case to investigate {R}({stage}, {Y}{enemy_code}{R}){RE}')
                     else:
-                        return f'deduct {int(value)} Life Points on entering Protection Objective.'
+                        return f'deduct {int(value)} [[Life Points]] upon entering a [[Protection Objective]]'
                 case "massLevel":
                     return f'weight {value}'
                 case _ :
@@ -1150,7 +1177,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                     printc(f'New buff in town !!! {buff["prefabKey"]}')
                     
         #attribute_key = ['maxHp', 'atk', 'def', 'magicResistance', 'moveSpeed', 'attackSpeed', 'baseAttackTime', 'respawnTime', 'hpRecoveryPerSec', 'spRecoveryPerSec', 'massLevel', 'baseForceLevel', 'tauntLevel', 'epDamageResistance', 'epResistance', 'damageHitratePhysical', 'damageHitrateMagical', 'epBreakRecoverSpeed', 'stunImmune', 'silenceImmune', 'sleepImmune', 'frozenImmune', 'levitateImmune', 'disarmedCombatImmune', 'fearedImmune', 'palsyImmune', 'attractImmune']
-        eaddendum_dict = {"max_hp": "HP", "maxHp": "HP", "atk": "ATK", "def": "DEF", "magicResistance": "RES", "moveSpeed": "MSPD", "move_speed": "MSPD", "rangeRadius": "Attack Range", "lifePointReduce" : "Life Points", "massLevel": "weight"}
+        eaddendum_dict = {"max_hp": "HP", "maxHp": "HP", "atk": "ATK", "def": "DEF", "magicResistance": "RES", "moveSpeed": "MSPD", "move_speed": "MSPD", "rangeRadius": "Attack Range", "lifePointReduce" : "Life Points", "massLevel": "weight", "baseAttackTime": "BAT"}
         eaddendum_skip = ["name", "description", "spRecoveryPerSec", "talentBlackboard", "spData", "skills"]
         eaddendum_result = buff_writer
         if runes:
@@ -1279,13 +1306,125 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
         return global_buff
 
     def global_lifepoint(def_data, default = 3, diff = "ALL"):
-        for rune in def_data:
-            if rune["key"] == "global_lifepoint" and diff == rune["difficultyMask"]:
-                for blackboard in rune["blackboard"]:
-                    if blackboard["key"] == "value":
-                        return int(blackboard["value"])
+        if def_data:
+            for rune in def_data:
+                if rune["key"] == "global_lifepoint" and diff == rune["difficultyMask"]:
+                    for blackboard in rune["blackboard"]:
+                        if blackboard["key"] == "value":
+                            return int(blackboard["value"])
         return default
 
+    def operators_predefine_writer(def_comp_data, def_preauto_data, def_auto_data, fixed):
+        #printt("stage, fixed, def_comp_data, def_preauto_data, def_auto_data\n", stage, fixed, def_comp_data, def_preauto_data, def_auto_data ,mode="c")
+        def elite_parse(elite):
+            if elite.find("PHASE") != -1:
+                return elite[-1]
+            else:
+                printr(f'There is no "PHASE" !!! : {elite}')
+                exit()
+        
+        def op_lister(op, group):
+            op_id = op["inst"].get("characterKey", op["alias"])
+            op_name = DB["json_characterEN"][op_id]["name"] if op_id in DB["json_characterEN"] else DB["json_characterEN"][op_id]["appellation"]
+            op_elite = elite_parse(op["inst"].get("phase", 0))
+            op_level = op["inst"].get("level", 1)
+            op_skill = op["skillIndex"]
+            op_sklv = op["mainSkillLvl"]
+            op_trust = op["inst"].get("favorPoint", 0) * 2
+            op_mod = op["uniEquipIds"]
+            
+            group[op_id] = {
+                                "name" : op_name, 
+                                "elite" : op_elite, 
+                                "level" : op_level, 
+                                "skill" : op_skill, 
+                                "skilllv" : op_sklv, 
+                                "trust" : op_trust, 
+                                "mod" : op_mod
+                            }
+            return
+        
+        def op_writer(text, lister, mod_count):
+            def skill_mastery(skill_lv):
+                if skill_lv > 7:
+                    return f'Spec. Level {skill_lv - 7}'
+                else:
+                    return f'Level {skill_lv}'
+                
+            writer = [f'\n{text} = ']
+            sorted_lister = lister.keys() if text[1:] == "comp" else sorted(lister.keys(), key = lambda k : lister[k]["name"])
+            for op_id in sorted_lister:
+                op_name = lister[op_id]["name"]
+                if op_name not in all_op:
+                    all_op.append(op_name)
+                else:
+                    redeploy_op.append(op_name)
+                op_elite = lister[op_id]["elite"]
+                op_level = lister[op_id]["level"]
+                skill_id = DB["json_character"][op_id]["skills"][lister[op_id]["skill"]]["skillId"]
+                skill_name = DB["json_skillEN"][skill_id]["levels"][0]["name"] if skill_id in DB["json_skillEN"] else skill_names_tl.get(skill_name, f'{DB["json_skill"][skill_id]["levels"][0]["name"]}({skill_id})')
+                skill_lv = skill_mastery(lister[op_id]["skilllv"])
+                
+                trust = lister[op_id]["trust"]
+                if trust not in all_trust:
+                    all_trust.append(trust)
+
+                if lister[op_id]["mod"]:
+                    mod_key = lister[op_id]["mod"][0]["key"]
+                    mod_lv = lister[op_id]["mod"][0]["level"]
+                    mod_abb = f'{DB["json_uniequip"]["equipDict"][mod_key]["typeIcon"].upper()}'.replace("-D", "-Δ").replace("-A", "-α")
+                    
+                    all_mod.append([op_name, f'uses {mod_abb} {'[[Operator Module]]' if mod_count == 0 else 'Operator Module'} at Stage {mod_lv}.'])
+                    mod_count += 1
+                
+                writer.append(f'*{{{{C|{op_name}}}}} (Elite {op_elite} Level {op_level}, {{{{Skill|{skill_name}}}}} {skill_lv})')
+            
+            return "\n".join(writer)
+        
+        predefine_result = "|fixed = "
+        comp = {}
+        pre = {}
+        auto = {}
+        all_op = []
+        redeploy_op = []
+        all_trust = []
+        all_mod = []
+        mod_count = 0
+        if fixed:
+            predefine_result += "true"
+            if def_comp_data:
+                for op in def_comp_data:
+                    op_lister(op, comp)
+                predefine_result += op_writer("|comp", comp, mod_count)
+            else:
+                predefine_result += "\n|comp = None"
+            
+            if def_preauto_data:
+                for op in def_preauto_data:
+                    if op["hidden"]:
+                        op_lister(op, auto)
+                        predefine_result += op_writer("|auto", auto, mod_count)
+                    else:
+                        op_lister(op, pre)
+                        predefine_result += op_writer("|pre", pre, mod_count)
+            
+            predefine_result += "\n|saddendum = \n"
+            
+            if len(all_op) > 1:
+                if len(all_trust) == 1:
+                    predefine_result += f'All Operators have {all_trust[0]}% [[Trust]].'
+                else:
+                    printr(f'There multiple trusts !!! : {Y}{all_trust}')
+                    exit()
+
+                if all_mod:
+                    for mod in all_mod:
+                        predefine_result += f'\n*{mod[0]} {mod[1]}'
+            elif len(all_op) == 1:
+                predefine_result += f'{all_op[0]} has {all_trust[0]}% [[Trust]]{f' and {all_mod[0][1]}' if all_mod else ""}.'
+            
+        return predefine_result
+    
     def stage_article_data(data : dict, stage : str, mode : str, diff = "") -> dict:
         #printr(stage)
             
@@ -1350,7 +1489,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                         "sanity" : data["stage_data"][stage_code]["apCost"],
                         "drill" : data["stage_data"][stage_code]["practiceTicketCost"] if isinstance(data["stage_data"][stage_code]["practiceTicketCost"], int) and data["stage_data"][stage_code]["practiceTicketCost"] > 0 else "",
                         "unit_limit" : data["stage"][stage]["options"]["characterLimit"],
-                        "enemies" : sum(data["enemies_stage"][stage]["counter"][0:1]),
+                        "enemies" : sum(data["enemies_stage"][stage]["counter"][0:2]),
                         "lp" : global_lifepoint(data["stage"][stage]["runes"], data["stage"][stage]["options"]["maxLifePoint"], diff),
                         "dp" : data["stage"][stage]["options"]["initialCost"],
                         "deployable" : token_lister(data["stage"][stage]["predefines"]["tokenCards"]) if data["stage"][stage]["predefines"] else "",
@@ -1364,7 +1503,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                         "normal" : enemies_data.get("NORMAL", ""),
                         "elite" : enemies_data.get("ELITE", ""),
                         "boss" : enemies_data.get("BOSS", ""),
-                        "eaddendum" : eaddendum_lister(),
+                        "eaddendum" : eaddendum_lister(stage_code),
                         "fixed" : data["stage_data"][stage_code]["isPredefined"] if data["stage_data"][stage_code]["isPredefined"] else "",
                         "comp" : data["stage"][stage]["predefines"]["characterCards"] if data["stage"][stage]["predefines"] else "",
                         "pre_auto" : data["stage"][stage]["predefines"]["characterInsts"] if data["stage"][stage]["predefines"] else "",
@@ -1411,118 +1550,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                 return f'|type = fixed'
             else:
                 return f'|type = standard'
-            
-        def operators_predefine_writer(def_comp_data, def_preauto_data, def_auto_data, fixed):
-            #printt("stage, fixed, def_comp_data, def_preauto_data, def_auto_data\n", stage, fixed, def_comp_data, def_preauto_data, def_auto_data ,mode="c")
-            def elite_parse(elite):
-                if elite.find("PHASE") != -1:
-                    return elite[-1]
-                else:
-                    printr(f'There is no "PHASE" !!! : {elite}')
-                    exit()
-            
-            def op_lister(op, group):
-                op_id = op["inst"].get("characterKey", op["alias"])
-                op_name = DB["json_characterEN"][op_id]["name"] if op_id in DB["json_characterEN"] else DB["json_characterEN"][op_id]["appellation"]
-                op_elite = elite_parse(op["inst"].get("phase", 0))
-                op_level = op["inst"].get("level", 1)
-                op_skill = op["skillIndex"]
-                op_sklv = op["mainSkillLvl"]
-                op_trust = op["inst"].get("favorPoint", 0) * 2
-                op_mod = op["uniEquipIds"]
-                
-                group[op_id] = {
-                                    "name" : op_name, 
-                                    "elite" : op_elite, 
-                                    "level" : op_level, 
-                                    "skill" : op_skill, 
-                                    "skilllv" : op_sklv, 
-                                    "trust" : op_trust, 
-                                    "mod" : op_mod
-                                }
-                return
-            
-            def op_writer(text, lister, mod_count):
-                def skill_mastery(skill_lv):
-                    if skill_lv > 7:
-                        return f'Spec. Level {skill_lv - 7}'
-                    else:
-                        return f'Level {skill_lv}'
-                    
-                writer = [f'\n{text} = ']
-                sorted_lister = lister.keys() if text[1:] == "comp" else sorted(lister.keys(), key = lambda k : lister[k]["name"])
-                for op_id in sorted_lister:
-                    op_name = lister[op_id]["name"]
-                    if op_name not in all_op:
-                        all_op.append(op_name)
-                    else:
-                        redeploy_op.append(op_name)
-                    op_elite = lister[op_id]["elite"]
-                    op_level = lister[op_id]["level"]
-                    skill_id = DB["json_character"][op_id]["skills"][lister[op_id]["skill"]]["skillId"]
-                    skill_name = DB["json_skillEN"][skill_id]["levels"][0]["name"] if skill_id in DB["json_skillEN"] else skill_names_tl.get(skill_name, f'{DB["json_skill"][skill_id]["levels"][0]["name"]}({skill_id})')
-                    skill_lv = skill_mastery(lister[op_id]["skilllv"])
-                    
-                    trust = lister[op_id]["trust"]
-                    if trust not in all_trust:
-                        all_trust.append(trust)
 
-                    if lister[op_id]["mod"]:
-                        mod_key = lister[op_id]["mod"][0]["key"]
-                        mod_lv = lister[op_id]["mod"][0]["level"]
-                        mod_abb = f'{DB["json_uniequip"]["equipDict"][mod_key]["typeIcon"].upper()}'.replace("-D", "-Δ").replace("-A", "-α")
-                        
-                        all_mod.append([op_name, f'uses {mod_abb} {'[[Operator Module]]' if mod_count == 0 else 'Operator Module'} at Stage {mod_lv}.'])
-                        mod_count += 1
-                    
-                    writer.append(f'*{{{{C|{op_name}}}}} (Elite {op_elite} Level {op_level}, {{{{Skill|{skill_name}}}}} {skill_lv})')
-                
-                return "\n".join(writer)
-            
-            predefine_result = "|fixed = "
-            comp = {}
-            pre = {}
-            auto = {}
-            all_op = []
-            redeploy_op = []
-            all_trust = []
-            all_mod = []
-            mod_count = 0
-            if fixed:
-                predefine_result += "true"
-                if def_comp_data:
-                    for op in def_comp_data:
-                        op_lister(op, comp)
-                    predefine_result += op_writer("|comp", comp, mod_count)
-                else:
-                    predefine_result += "\n|comp = None"
-                
-                if def_preauto_data:
-                    for op in def_preauto_data:
-                        if op["hidden"]:
-                            op_lister(op, auto)
-                            predefine_result += op_writer("|auto", auto, mod_count)
-                        else:
-                            op_lister(op, pre)
-                            predefine_result += op_writer("|pre", pre, mod_count)
-                
-                predefine_result += "\n|saddendum = \n"
-                
-                if len(all_op) > 1:
-                    if len(all_trust) == 1:
-                        predefine_result += f'All Operators have {all_trust[0]}% [[Trust]].'
-                    else:
-                        printr(f'There multiple trusts !!! : {Y}{all_trust}')
-                        exit()
-
-                    if all_mod:
-                        for mod in all_mod:
-                            predefine_result += f'\n*{mod[0]} {mod[1]}'
-                elif len(all_op) == 1:
-                    predefine_result += f'{all_op[0]} has {all_trust[0]}% [[Trust]]{f' and {all_mod[0][1]}' if all_mod else ""}.'
-                
-            return predefine_result
-        
         # https://arknights.wiki.gg/wiki/Template:Operation_info/doc
         match mode:
             case "info":
@@ -1640,53 +1668,86 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                 '''.replace("                ", "").replace("\n\n","\n")
 
     def tn_article_data(data, stage_key):
-        pass
+        return {
+                    "code" : data["stage_data"][stage_key]["code"],
+                    "name" : data["stage_data"][stage_key]["name"],
+                    "season" : re.search(r'act([0-9]){1,2}bossrush', event_code).group(1),
+                    "desc" : data["stage_data"][stage_key]["description"],
+                    "entitative" : "",
+                    "orientation" : "",
+                    "cond" : data["stage_data"][stage_key]["description"],
+                    "unit limit" : data["stage"][stage_key]["options"]["characterLimit"], 
+                    "dp" : data["stage"][stage_key]["options"]["initialCost"], 
+                    "lp" : global_lifepoint(data["stage"][stage_key]["runes"], data["stage"][stage_key]["options"]["maxLifePoint"]),
+                    "enemies" : sum(data["enemies_stage"][stage_key]["counter"][0:2]),
+                    "deployable" : token_lister(data["stage"][stage_key]["predefines"]["tokenCards"]) if data["stage"][stage_key]["predefines"] else "",
+                    "static" : token_lister(data["stage"][stage_key]["predefines"]["tokenInsts"]) if data["stage"][stage_key]["predefines"] else "",
+                    "terrain" : tile_lister(data["stage"][stage_key]["mapData"]["tiles"]),
+                    "addendum" : "",
+                    "tn enemies" : data["enemies_stage"][stage_key]["tn_counter"] ,
+                    "eaddendum" : eaddendum_lister(stage_key),
+                    "ultimate" : stage_key[-1:-3] == "04" if stage_key[-1:-3] == "04" else "",
+                    "comp" : DB["json_activityEN"]["activity"]["BOSS_RUSH"][event_code]["stageAdditionDataMap"][stage_key]["teamIdList"] if event_code in DB["json_activityEN"]["basicInfo"] else DB["json_activity"]["activity"]["BOSS_RUSH"][event_code]["stageAdditionDataMap"][stage_key]["teamIdList"],
+                    "rewards" : "",
+                    "rune" : rune_lister(data["stage"][stage_key]["runes"]) if data["stage"][stage_key]["runes"] else "",
+                    "globalBuffs" : global_buff_lister(data["stage"][stage_key]["globalBuffs"]) if data["stage"][stage_key]["globalBuffs"] else ""
+        }
     
-    def tn_article_writer(tn_data, mode):
+    def tn_article_writer(tn_data, mode, ext = 0):
         '''
         mode = info/ data/ squad/ rewards
         '''
+        def tn_comp_writer(tn_comp_data) -> str:
+            tn_comp_result = []
+            tn_comp_DB = DB["json_activityEN"]["activity"]["BOSS_RUSH"][event_code] if event_code in DB["json_activityEN"]["basicInfo"] else DB["json_activity"]["activity"]["BOSS_RUSH"][event_code]
+            ultimate = tn_data["ultimate"]
+            tn_comp_txt = ""
+            for team in tn_comp_data:
+                if team == "free":
+                    continue
+                tn_comp_result.append(f'{"*" if ultimate else ""}\'\'\'{tn_comp_DB["teamDataMap"][team]["teamName"]}\'\'\'')
+                tn_comp_result.append("\n".join(sorted([f'{'**' if ultimate else "*"}[[{DB["json_characterEN"][char]["name"] if char in DB["json_characterEN"] else DB["json_character"][char]["appellation"]}]]' for char in tn_comp_DB["teamDataMap"][team]["charIdList"]])))
+                
+                
+            if ultimate:
+                tn_comp_txt = f'|comp = \n{"\n".join(tn_comp_result)}\n*7 other additional [[Operator|Operators]] (including the [[Support Unit]])'
+            else:
+                tn_comp_txt = f'|comp = \n{"One of the following and up to 7 additional [[Operator|Operators]] (including the [[Support Unit]]): "}\n{"\n".join(tn_comp_result)}'
+            
+            return tn_comp_txt
+            
+        
         match mode:
             case "info":
                 return f'''{{{{construction}}}}
                             {{{{Spoiler notice|article}}}}
                             {{{{Translation|article}}}}
                             {{{{TN operation info
-                            |code = 
-                            |name = 
-                            |season = 
-                            |desc = 
-                            |entitative = 
+                            |code = {tn_data["code"]}
+                            |name = {tn_data["name"]}
+                            |season = {tn_data["season"]}
+                            |desc = {tn_data["desc"]}
+                            |entitative = {True if ext >= 3 else ""}
                             }}}}'''.replace("                            ","").replace("\n\n","\n")
             case "data":
-                return f'''{{TN operation data
+                return f'''{{{{TN operation data
                             |orientation = 
-                            |cond = 
-                            |unit limit =
-                            |dp =
-                            |lp =
-                            |enemies =
-                            |deployable = 
-                            |static = 
-                            |terrain =
-                            |addendum = 
-                            |normal 1 = 
-                            |normal 2 = 
-                            |elite 1 = 
-                            |elite 2 = 
-                            |boss 1 =
-                            |boss 2 = 
-                            |eaddendum = 
-                            }}'''.replace("                            ","").replace("\n\n","\n")
+                            |cond = {tn_data["cond"]}
+                            |unit limit = {tn_data["unit limit"]}
+                            |dp = {tn_data["dp"]}
+                            |lp = {tn_data["lp"]}
+                            |enemies = {tn_data["enemies"]}
+                            |deployable = {tn_data["deployable"]}
+                            |static = {tn_data["static"]}
+                            |terrain = {tile_writer(tn_data["terrain"])}
+                            |addendum = {addendum_writer(tn_data["rune"], tn_data["globalBuffs"])}
+                            {tn_enemies_lister(tn_data["tn enemies"])}
+                            |eaddendum = {eaddendum_writer(tn_data["eaddendum"], tn_data["rune"], tn_data["globalBuffs"])}
+                            }}}}'''.replace("                            ","").replace("\n\n","\n")
             case "squad":
                 return f'''{{{{TN squad
-                            |ultimate =
-                            |comp = 
-                            *
-                            *
-                            *
-                            *7 other additional [[Operator]]s (including the [[Support Unit]])
-                            |decoder = 
+                            |ultimate = {tn_data["ultimate"]}
+                            {tn_comp_writer(tn_data["comp"])}
                             }}}}
                             '''.replace("                            ","").replace("\n\n","\n")
             case "rewards":
@@ -1754,7 +1815,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                     "desc" : data["stage_data"][stage_key]["description"],
                     "boss info" : boss_info if mode in ["core", "hard"] else "",
                     "unit limit" : data["stage"][stage_key]["options"]["characterLimit"],
-                    "enemies" : sum(data["enemies_stage"][stage_key]["counter"][0:1]),
+                    "enemies" : sum(data["enemies_stage"][stage_key]["counter"][0:2]),
                     "dp" : data["stage"][stage_key]["options"]["characterLimit"],
                     "deployable" : token_lister(data["stage"][stage]["predefines"]["tokenCards"]) if data["stage"][stage]["predefines"] else "",
                     "static" : token_lister(data["stage"][stage]["predefines"]["tokenInsts"]) if data["stage"][stage]["predefines"] else "",
@@ -1778,7 +1839,6 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                         |supplyno = {int(vb_supply_id.split("_rune")[-1])}
                         |supplydesc = {vb_supply_data["desc"]}'''.replace("                        ","")
         
-        #if mode == "sp":
         return f'''{{{{construction}}}}
                     {{{{Spoiler notice|article}}}}
                     {{{{Translation|article}}}}
@@ -1806,8 +1866,6 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                     |eaddendum = {eaddendum_writer(vb_data["eaddendum"], vb_data["rune"], vb_data["globalBuffs"])}
                     }}}}
                     '''.replace("                    ","").replace("\n\n","\n")
-
-    
 
     def enemy_article_writer(data, mode):
         def damage_type(damageType : str) -> str:
@@ -1974,29 +2032,23 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
         
         elif mode_info == "tn":
             tn_diff = ["Basic Trial", "Orientation Trial", "Spectacular Trial", "Ultimate Trial"]
-            tn_stage_code_template = [f'{event_code}rush_0', f'{event_code}rush_tm0', f'{event_code}rush_ex0', f'{event_code}rush_fin0']
-            for i in range(1, len(list(set(big_data["zone"][f'{event_code}rush_zone1']["stages"])))):
-                tn_wave_count = big_data["zone"][f'{event_code}rush_zone1']["stages"].count(f'TN-{i}')
+            tn_stage_code_template = [f'{event_code}_0', f'{event_code}_tm0', f'{event_code}_ex0', f'{event_code}_fin0']
+            tn_stage_count = len(list(set(big_data["zone"][f'{event_code}_zone1']["stages"])))
+            for i in range(1, 1 + tn_stage_count):
+                tn_wave_count = big_data["zone"][f'{event_code}_zone1']["stages"].count(f'TN-{i}')
                 tn_reward = []
                 for j in range(tn_wave_count):
                     tn_stage_code = f'{tn_stage_code_template[j]}{i}'
+                    tn_article_data_dict = tn_article_data(big_data, tn_stage_code)
                     if j == 0 :
-                        article_data += tn_article_writer(ig_article_data(big_data, tn_stage_code), "info", tn_wave_count)
-                        article_data += "<tabber> Basic Trial="
+                        article_data += [f'### {stage}', tn_article_writer(tn_article_data_dict, "info", tn_wave_count), "<tabber> Basic Trial="]
                     else:
-                        article_data += f'|-|{tn_diff[j]}='
+                        article_data += [f'|-|{tn_diff[j]}=']
                     
-                    article_data += tn_article_writer(ig_article_data(big_data, tn_stage_code), "data")
+                    article_data += [tn_article_writer(tn_article_data_dict, "data")]
                 
-                article_data += "</tabber>\n"
-                article_data += tn_article_writer(j, "squad")
-                article_data += tn_article_writer(tn_reward, "rewards")
-                continue
-            exit()
-            stage_info = tn_article_data(big_data, stage)
-            stage_article = [f'### {stage}', tn_article_writer(stage_info), f'{{{{{page_footer}}}}}']
-            article_data += stage_article
-            pass
+                article_data += ["</tabber>\n", tn_article_writer(tn_article_data(big_data, f'{tn_stage_code_template[1]}{i}'), "squad"), tn_article_writer(tn_reward, "rewards")]
+            break
         
         elif mode_info == "vb":
             if stage.find("sp") != -1 :
@@ -2058,7 +2110,7 @@ enemy_names_tl = {
 item_names_tl = {"act43side_token_phantom" : "Mysterious Black Shadow"}
 token_names_tl = {}
 skill_names_tl = {}
-script_result(wiki_article("act4bossrush", "tn", "Trials for Navigator #04"))
+script_result(wiki_article("act5bossrush", "tn", "Trials for Navigator #04"))
 
 # Trials for Navigator #04
 #script_result(wiki_article("act4bossrush", "tn", "Trials for Navigator #04"))
@@ -2068,7 +2120,6 @@ script_result(wiki_article("act4bossrush", "tn", "Trials for Navigator #04"))
 
 # Vector Breakthrough Mechanist
 #script_result(wiki_article("act1break", "vb", "Vector Breakthrough Mechanist"))
-
 
 '''
 temp = [[],[]]
