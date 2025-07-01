@@ -154,7 +154,7 @@ def list_to_array(LIST : list) -> str :
     return [elem for elem in LIST if elem not in [f'\n{"-"*80}\n', ""]]
 
 def printr(*arg):
-    print(f'{R}[:{inspect.currentframe().f_back.f_lineno}]{RE}', *arg)
+    print(f'{R}[:{inspect.currentframe().f_back.f_lineno}]{RE}', *arg, RE)
 
 def printc(*arg):
     all_arg = [*arg]
@@ -645,7 +645,29 @@ def event_sypnosis(show = False):
                 events.pop(SSevent)
         
     script_result(events, show)
+
+def EN_cv(show = False):
+    result = {}
+    for char in DB["json_charword"]["voiceLangDict"]:
+        if "EN" in DB["json_charword"]["voiceLangDict"][char]["dict"].keys():
+            result[char] = {"CN":DB["json_charword"]["voiceLangDict"][char]["dict"]["EN"]["cvName"][0]}
     
+    for char in DB["json_charwordEN"]["voiceLangDict"]:
+        if "EN" in DB["json_charwordEN"]["voiceLangDict"][char]["dict"].keys():
+            en_va = DB["json_charwordEN"]["voiceLangDict"][char]["dict"]["EN"]["cvName"][0]
+            if char in result:
+                result[char]["EN"] = en_va
+            else:
+                result[char] = {"EN":en_va}
+    script_result(result, True)
+    
+    for char in result:
+        if sorted(list(result[char].keys())) == ["CN", "EN"] and result[char]["CN"] != result[char]["EN"]:
+            printr(f'char : {Y}{char}{RE}\nCN : {G}{result[char]["CN"]}{RE}\nEN : {B}{result[char]["EN"]}{RE}')
+    
+    printr("EN_cv completed")
+    exit()
+
 def wiki_enemies(event = "", data_return = False, show = False) -> dict:
     def enemy_lv_data(enemy_data : dict, lv : int) -> dict:
             return enemy_data["Value"][lv]["enemyData"]
@@ -754,7 +776,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
     
     enemy_buffs = []
     non_enemy_buffs = ["periodic_damage"]
-    skip_buffs = ["strife_mode_feature", "cooperate_fortress_global_buff"]
+    skip_buffs = ["strife_mode_feature", "cooperate_fortress_global_buff", "act27sisde_enemy_global_buff"]
     
     def stage_level(level : str) -> str:
             if level == "-" or not level:
@@ -774,7 +796,11 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                 "'''<[[毒性雾霾]]>'''我方单位会持续失去生命" : "'''<[[Poison Haze]]>''' Operators lose HP constantly",
                 "'''<[[沼泽地段]]>'''置于其中的干员攻击速度逐渐降低，经过的敌人攻击速度和移动速度逐渐降低" : "'''<[[Mire]]>'''Gradually reduces the ASPD of Operators within, and the ASPD and Movement Speed of enemies within",
                 "'''<[[芦苇丛]]>'''置于其中的干员获得\"迷彩\"" : "'''<[[Reed Beds]]>''' Operators within gain Camouflage.",
-                "'''<[[玉门天灾工事]]>'''置于其中的单位对地面单位造成的伤害提升，受到来自地面单位的伤害降低" : "'''<[[Yumen Catastrophe Defense]]>''' Units placed here deal more damage to ground units and take less damage from ground units."
+                "'''<[[玉门天灾工事]]>'''置于其中的单位对地面单位造成的伤害提升，受到来自地面单位的伤害降低" : "'''<[[Yumen Catastrophe Defense]]>''' Units placed here deal more damage to ground units and take less damage from ground units.",
+                "\\n\\n<color=#FFA300>'''<[[危险区域]]>'''</color>危险区域内的干员会在波次转换时撤退" : "",
+                "\\n\\n<color=#FFA300>'''<[[实体程式]]>'''</color>已完成波次再次挑战时可以激活，激活后本波次内我方干员获得大幅强化" : "",
+                "\\n\\n<color=#FFA300>'''<[[定向试炼]]>'''</color>定向试炼提供3名预选干员组成的小队": "",
+                "<color=#EC1F1FFF>附加条件：</color>" : ""
             }
             for k,v in desc_tl_dict.items():
                 desc = desc.replace(k,v)
@@ -785,7 +811,9 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
         if re.search(r'<@lv.fs>附加条件：<\/>\\n', desc):
             desc = re.sub(r'<@lv.fs>附加条件：<\/>\\n', "", desc)
             desc = re.sub(r'<[^[](.*?)[^]\/]>', r"'''<[[\1]]>'''", desc)
-        return desc_tl(desc).replace("\\n", "<br/>").replace("\n", "<br/>")
+        else:
+            desc = re.sub(r'<([^[c/].*?[^]\/])>', r"'''<[[\1]]>'''", desc)
+        return desc_tl(desc).replace("\\n", "<br/>").replace("\n", "<br/>").replace("<br/><br/>", "<br/>")
     
     def stage_kill_lister(data : dict, stage_key : str) -> dict:
         def enemy_ref_dict(enemyDbRefs : list) -> str:
@@ -877,6 +905,13 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
         return enemy_counter
     
     def enemies_lister(def_data : dict) -> dict:
+        def enemy_trim(enemy_name, e_class = ""):
+            trim_result = re.sub(r"(.+?|)'(.+?)'(.+?|)",r'\1"\2"\3', enemy_name)
+            if event_type == "tn" and e_class == "BOSS":
+                return trim_result.replace(",", "")
+            else:
+                return trim_result.replace('"', "")
+        
         enemy_classes = ["NORMAL", "ELITE", "BOSS"]
         enemy_list = {k:{} for k in enemy_classes}
         for kill_type in ["KILL", "Suspect"]:
@@ -891,27 +926,29 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                 enemy_names = DB["json_enemy_handbookEN"]["enemyData"][enemy_code]["name"] if enemy_code in DB["json_enemy_handbookEN"]["enemyData"] else enemy_names_tl.get(enemy, f'{big_data["enemies"][enemy]["handbook"]["name"]}({enemy})')
                 enemy_count = enemy_list[enemy_class][enemy]
                 if enemy_class == "BOSS":
-                    enemies_output[enemy_class].append(f'{{{{E|{f'{enemy_names}|{enemy_count}' if enemy_count > 1 else enemy_names}}}}}')
+                    if event_type == "tn":
+                        enemies_output[enemy_class].append(enemy_trim(enemy_names, enemy_class))
+                    else:
+                        enemies_output[enemy_class].append(f'{{{{E|{f'{enemy_trim(enemy_names)}|{enemy_count}' if enemy_count > 1 else enemy_trim(enemy_names)}}}}}')
                 else:
-                    enemies_output[enemy_class].append(f'{{{{E|{enemy_names}|{enemy_count}}}}}')
-        return {k:re.sub(r"(.+?)'(.+?)'(.+?)",r"\1\2\3",", ".join(v)).replace('"', "") for k,v in enemies_output.items()}
+                    enemies_output[enemy_class].append(f'{{{{E|{enemy_trim(enemy_names)}|{enemy_count}}}}}')
+        return {k:", ".join(v) for k,v in enemies_output.items()}
     
     def tn_enemies_lister(def_data):
         enemy_classes = ["NORMAL", "ELITE", "BOSS"]
         wave_count = 1
-        tn_enemies_output = ""
+        tn_enemies_output = []
         for wave in def_data:
             tn_enemies = enemies_lister(wave)
-            printr(tn_enemies)
             for enemy_class in enemy_classes:
-                tn_enemies_output += f'\n|{enemy_class.lower()} {wave_count} = {tn_enemies.get(enemy_class, "")}'
+                tn_enemies_output.append(f'|{enemy_class.lower()} {wave_count} = {tn_enemies.get(enemy_class, "")}')
             wave_count += 1
-        return tn_enemies_output
+        return "\n".join(tn_enemies_output)
     
     def token_lister(def_data : list) -> dict:
         token_list = {}
         token_output = []
-        token_skip = ["trap_162_lrctrl", "trap_042_tidectrl"] # EP14 Mechanics Controller / Tide Controller
+        token_skip = ["trap_162_lrctrl", "trap_042_tidectrl", "trap_091_brctrl", "trap_054_dancdol", "trap_090_recodr"] # EP14 Controller / Tide Controller / TN Controller / Mouthpiece Doll / Entitative Program (TN Buff)
         for token in def_data:
             token_code = token["inst"].get("characterKey", token["alias"])
             if token_code in token_skip:
@@ -927,7 +964,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
     def tile_lister(def_data : list) -> list:
         tile_output = []
         tile_skip = ["tile_forbidden", "tile_wall", "tile_road", "tile_floor", "tile_toxichill", "tile_toxicroad", "tile_toxicwall", "tile_toxic", "tile_reed", "tile_reedw", "tile_mire", "tile_yinyang_wall", "tile_yinyang_road", "tile_stairs", "tile_passable_wall"]
-        tlle_full_skip = ["tile_start", "tile_end", "tile_telin", "tile_telout", "tile_hole", "tile_fence_bound", "tile_flystart", "tile_smog", "tile_start_cooperate", "tile_end_cooperate", "tile_allygoal", "tile_football", "tile_enemygoal"]
+        tlle_full_skip = ["tile_start", "tile_end", "tile_telin", "tile_telout", "tile_hole", "tile_fence_bound", "tile_flystart", "tile_smog", "tile_start_cooperate", "tile_end_cooperate", "tile_allygoal", "tile_football", "tile_enemygoal", "tile_green"]
         for tile in def_data:
             if (tile["tileKey"] in tile_skip and not tile["blackboard"] and not tile["effects"]) or tile["tileKey"] in tlle_full_skip:
                 continue
@@ -983,7 +1020,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                             case _ :
                                 printr(f'new {Y}"tile_volspread" : Lava Crack{RE} stat just drop\n{tile[tile_id]}')
                                 exit()
-                    tile_result.append(f'The [[Lava Crack]] erupt every {f'{cd_min} ~ {cd_max} seconds' if cd_min !=cd_max else f'{cd_max} seconds'} and deals {damage} True damage.')
+                    tile_result.append(f'The [[Lava Crack]]s erupt every {f'{cd_min}-{cd_max} seconds' if cd_min != cd_max else f'{cd_max} seconds'} and deals {damage} True damage to friendly units in the surrounding tiles.')
                 case "tile_volcano":
                     damage = 0
                     cd_max = 0
@@ -1042,6 +1079,11 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                         continue
                     else :
                         printc(f'New {Y}tile_yinyang{RE} case just drop : {B}{tile[tile_id]}{RE}')
+                case "tile_defbreak":
+                    if tile[tile_id] == {'blackboard': [{'key': 'def', 'value': 0.5, 'valueStr': None}], 'effects': None}:
+                        continue
+                    else:
+                        printc(f'New {Y}tile_defbreak{RE} case just drop : {B}{tile[tile_id]}{RE}')
                 case _ :
                     printr(f'new Terrain to add : {Y}{tile_id}\n\t{G}{tile[tile_id]["blackboard"]}\n\t{B}{tile[tile_id]["effects"]}{RE}')
         
@@ -1054,7 +1096,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
         else:
             return ""
     
-    def addendum_writer(runes = [], buffs = [], diff = "", head = "", foot = ""):
+    def addendum_writer(runes = [], buffs = [], DP = 1, diff = "", head = "", foot = ""):
         norm_env = [
                         {'key': 'env_017_act35side', 'attack_speed': -60.0, 'max_hp': 0.1, 'atk': 0.1}
                     ]
@@ -1084,6 +1126,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                     printc(f'New buff in town !!! {buff["prefabKey"]}')
         
         addendum = f'{"\n".join(buff_writer)}\n{head}'
+        if DP != 1: addendum += f'DP regeneration rate is reduced by 100%. '
         rune_writer = []
         for rune in runes:
             temp = {k:v for k,v in rune.items()}
@@ -1135,8 +1178,32 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                         enemy_id = enemy_ref["overwrittenData"][key]["m_value"]
                     elif key in ["talentBlackboard", "skills", "spData"]:
                         if enemy_ref["overwrittenData"][key] and enemy_ref["overwrittenData"][key] != big_data["enemies"][enemy_id]["lv"][enemy_lv][key]:
-                            #printc(key, enemy_ref["overwrittenData"][key], data["enemies"][enemy_id]["lv"][enemy_lv][key])
-                            enemy_overwrittenData[key] = enemy_ref["overwrittenData"][key]
+                            match key:
+                                case "talentBlackboard":
+                                    blackboard_list = []
+                                    dupe_value = False
+                                    for blackboard in enemy_ref["overwrittenData"][key]:
+                                        for talent_blackboard in big_data["enemies"][enemy_id]["lv"][enemy_lv][key]:
+                                            if blackboard["key"] != talent_blackboard["key"]:
+                                                continue
+                                            else:
+                                                if blackboard["value"] == talent_blackboard["value"] and blackboard["valueStr"] == talent_blackboard["valueStr"]:
+                                                    dupe_value = True
+                                                    break
+                                                elif blackboard["value"] != talent_blackboard["value"]:
+                                                    blackboard_list.append(blackboard)
+                                                    break
+                                                elif blackboard["valueStr"] != talent_blackboard["valueStr"]:
+                                                    blackboard_list.append(blackboard)
+                                                    break
+                                                printr(f'ermmmmm blackboard not new or wat plz check this\n{G}{blackboard}\n{B}{talent_blackboard}{RE}')
+                                        if not blackboard_list and not dupe_value:
+                                            printr(f'new blackboard key {Y}{blackboard["key"]}{RE} for : {Y}{enemy_id}{R}({stage_key}){RE}')
+                                    if blackboard_list:
+                                        enemy_overwrittenData[key] = blackboard_list
+                                case _:
+                                    printr(f'Update other case soon !!! {Y}(skills, spData){RE}')
+                            
                     elif key not in ["name", "description", "viewRadius"]:
                         if enemy_ref["overwrittenData"][key]["m_defined"] and not falsy_compare(enemy_ref["overwrittenData"][key]["m_value"], (big_data["enemies"][enemy_id]["lv"][enemy_lv][key] if key not in enemies_data_key else big_data["enemies"][enemy_id]["data"][key])):
                             #printc(key, (data["enemies"][enemy_id]["lv"][enemy_lv][key] if key not in enemies_data_key else data["enemies"][enemy_id]["data"][key]), enemy_ref["overwrittenData"][key]["m_value"], (data["enemies"][enemy_id]["lv"][enemy_lv][key] if key not in enemies_data_key else data["enemies"][enemy_id]["data"][key]) == enemy_ref["overwrittenData"][key]["m_value"])
@@ -1154,11 +1221,11 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                     return f'an attack range of {decimal_format(value)} tiles'
                 case "lifePointReduce":
                     if value == 0:
-                        return "Does not deduct [[Life Points]]"
+                        return "Does not deduct [[Life Point|Life Points]]"
                     elif value < 0:
                         printr(f'There {Y}Negative value{RE} case to investigate {R}({stage}, {Y}{enemy_code}{R}){RE}')
                     else:
-                        return f'deduct {int(value)} [[Life Points]] upon entering a [[Protection Objective]]'
+                        return f'deduct {int(value)} [[Life Point|Life Points]] upon entering a [[Protection Objective]]'
                 case "massLevel":
                     return f'weight {value}'
                 case _ :
@@ -1179,6 +1246,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
         #attribute_key = ['maxHp', 'atk', 'def', 'magicResistance', 'moveSpeed', 'attackSpeed', 'baseAttackTime', 'respawnTime', 'hpRecoveryPerSec', 'spRecoveryPerSec', 'massLevel', 'baseForceLevel', 'tauntLevel', 'epDamageResistance', 'epResistance', 'damageHitratePhysical', 'damageHitrateMagical', 'epBreakRecoverSpeed', 'stunImmune', 'silenceImmune', 'sleepImmune', 'frozenImmune', 'levitateImmune', 'disarmedCombatImmune', 'fearedImmune', 'palsyImmune', 'attractImmune']
         eaddendum_dict = {"max_hp": "HP", "maxHp": "HP", "atk": "ATK", "def": "DEF", "magicResistance": "RES", "moveSpeed": "MSPD", "move_speed": "MSPD", "rangeRadius": "Attack Range", "lifePointReduce" : "Life Points", "massLevel": "weight", "baseAttackTime": "BAT"}
         eaddendum_skip = ["name", "description", "spRecoveryPerSec", "talentBlackboard", "spData", "skills"]
+        eaddendum_hard_skip = ["name", "description"]
         eaddendum_result = buff_writer
         if runes:
             for rune in runes:
@@ -1673,9 +1741,9 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                     "name" : data["stage_data"][stage_key]["name"],
                     "season" : re.search(r'act([0-9]){1,2}bossrush', event_code).group(1),
                     "desc" : data["stage_data"][stage_key]["description"],
-                    "entitative" : "",
-                    "orientation" : "",
-                    "cond" : data["stage_data"][stage_key]["description"],
+                    "entitative" : "true" if int(stage_key[-1]) > 1 else "",
+                    "orientation" : "true" if stage_key.find("tm") != -1 else "",
+                    "cond" : data["stage_data"][stage_key]["description"] if data["stage_data"][stage_key]["description"].find("附加条件：") != -1 else "",
                     "unit limit" : data["stage"][stage_key]["options"]["characterLimit"], 
                     "dp" : data["stage"][stage_key]["options"]["initialCost"], 
                     "lp" : global_lifepoint(data["stage"][stage_key]["runes"], data["stage"][stage_key]["options"]["maxLifePoint"]),
@@ -1686,9 +1754,9 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                     "addendum" : "",
                     "tn enemies" : data["enemies_stage"][stage_key]["tn_counter"] ,
                     "eaddendum" : eaddendum_lister(stage_key),
-                    "ultimate" : stage_key[-1:-3] == "04" if stage_key[-1:-3] == "04" else "",
+                    "ultimate" : "true" if stage_key.find("04") != -1 else "",
                     "comp" : DB["json_activityEN"]["activity"]["BOSS_RUSH"][event_code]["stageAdditionDataMap"][stage_key]["teamIdList"] if event_code in DB["json_activityEN"]["basicInfo"] else DB["json_activity"]["activity"]["BOSS_RUSH"][event_code]["stageAdditionDataMap"][stage_key]["teamIdList"],
-                    "rewards" : "",
+                    "rewards" : DB["json_activity"]["activity"]["BOSS_RUSH"][event_code]["stageDropDataMap"][stage_key],
                     "rune" : rune_lister(data["stage"][stage_key]["runes"]) if data["stage"][stage_key]["runes"] else "",
                     "globalBuffs" : global_buff_lister(data["stage"][stage_key]["globalBuffs"]) if data["stage"][stage_key]["globalBuffs"] else ""
         }
@@ -1699,6 +1767,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
         '''
         def tn_comp_writer(tn_comp_data) -> str:
             tn_comp_result = []
+            tn_decode_result = []
             tn_comp_DB = DB["json_activityEN"]["activity"]["BOSS_RUSH"][event_code] if event_code in DB["json_activityEN"]["basicInfo"] else DB["json_activity"]["activity"]["BOSS_RUSH"][event_code]
             ultimate = tn_data["ultimate"]
             tn_comp_txt = ""
@@ -1707,15 +1776,27 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                     continue
                 tn_comp_result.append(f'{"*" if ultimate else ""}\'\'\'{tn_comp_DB["teamDataMap"][team]["teamName"]}\'\'\'')
                 tn_comp_result.append("\n".join(sorted([f'{'**' if ultimate else "*"}[[{DB["json_characterEN"][char]["name"] if char in DB["json_characterEN"] else DB["json_character"][char]["appellation"]}]]' for char in tn_comp_DB["teamDataMap"][team]["charIdList"]])))
-                
+                tn_decode_result.append(f'{{{{Decoder|{tn_comp_DB["teamDataMap"][team]["teamBuffName"]}|{tn_comp_DB["teamDataMap"][team]["teamBuffDes"]}}}}}')
                 
             if ultimate:
                 tn_comp_txt = f'|comp = \n{"\n".join(tn_comp_result)}\n*7 other additional [[Operator|Operators]] (including the [[Support Unit]])'
             else:
                 tn_comp_txt = f'|comp = \n{"One of the following and up to 7 additional [[Operator|Operators]] (including the [[Support Unit]]): "}\n{"\n".join(tn_comp_result)}'
             
-            return tn_comp_txt
+            tn_comp_txt += f'\n|decoder = {"".join(tn_decode_result)}'
             
+            return tn_comp_txt
+        
+        def tn_reward_writer(tn_rewards_data) -> str:
+            rewards_result = ""
+            for stage_reward in tn_rewards_data:
+                rewards = []
+                for key in sorted(stage_reward.keys()):
+                    for reward in stage_reward[key]["displayDetailRewards"]:
+                        if stage_reward[key]["clearWaveCount"] and reward["dropCount"]:
+                            rewards.append(str(reward["dropCount"]))
+                rewards_result += f'\n|{", ".join(rewards)}'
+            return rewards_result
         
         match mode:
             case "info":
@@ -1726,13 +1807,13 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                             |code = {tn_data["code"]}
                             |name = {tn_data["name"]}
                             |season = {tn_data["season"]}
-                            |desc = {tn_data["desc"]}
-                            |entitative = {True if ext >= 3 else ""}
+                            |desc = {desc_cond_writer(tn_data["desc"])}
+                            |entitative = {tn_data["entitative"]}
                             }}}}'''.replace("                            ","").replace("\n\n","\n")
             case "data":
                 return f'''{{{{TN operation data
-                            |orientation = 
-                            |cond = {tn_data["cond"]}
+                            {f'|orientation = {tn_data["orientation"]}' if tn_data["orientation"] else ""}
+                            {f'|cond = {desc_cond_writer(tn_data["cond"])}' if tn_data["cond"] else ""}
                             |unit limit = {tn_data["unit limit"]}
                             |dp = {tn_data["dp"]}
                             |lp = {tn_data["lp"]}
@@ -1743,7 +1824,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                             |addendum = {addendum_writer(tn_data["rune"], tn_data["globalBuffs"])}
                             {tn_enemies_lister(tn_data["tn enemies"])}
                             |eaddendum = {eaddendum_writer(tn_data["eaddendum"], tn_data["rune"], tn_data["globalBuffs"])}
-                            }}}}'''.replace("                            ","").replace("\n\n","\n")
+                            }}}}'''.replace("                            ","").replace("\n\n","\n").replace("\n\n","\n")
             case "squad":
                 return f'''{{{{TN squad
                             |ultimate = {tn_data["ultimate"]}
@@ -1752,7 +1833,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                             '''.replace("                            ","").replace("\n\n","\n")
             case "rewards":
                 return f'''{{{{TN rewards
-                            
+                            {tn_reward_writer(tn_data)}
                             }}}}
                             {{{{TN operations}}}}
                             '''.replace("                            ","").replace("\n\n","\n")
@@ -1816,7 +1897,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                     "boss info" : boss_info if mode in ["core", "hard"] else "",
                     "unit limit" : data["stage"][stage_key]["options"]["characterLimit"],
                     "enemies" : sum(data["enemies_stage"][stage_key]["counter"][0:2]),
-                    "dp" : data["stage"][stage_key]["options"]["characterLimit"],
+                    "dp" : data["stage"][stage_key]["options"]["initialCost"],
                     "deployable" : token_lister(data["stage"][stage]["predefines"]["tokenCards"]) if data["stage"][stage]["predefines"] else "",
                     "static" : token_lister(data["stage"][stage]["predefines"]["tokenInsts"]) if data["stage"][stage]["predefines"] else "",
                     "terrain" : tile_lister(data["stage"][stage]["mapData"]["tiles"]),
@@ -2040,8 +2121,9 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                 for j in range(tn_wave_count):
                     tn_stage_code = f'{tn_stage_code_template[j]}{i}'
                     tn_article_data_dict = tn_article_data(big_data, tn_stage_code)
+                    tn_reward.append(tn_article_data_dict["rewards"])
                     if j == 0 :
-                        article_data += [f'### {stage}', tn_article_writer(tn_article_data_dict, "info", tn_wave_count), "<tabber> Basic Trial="]
+                        article_data += [f'TN-{i}', tn_article_writer(tn_article_data_dict, "info"), "<tabber> Basic Trial="]
                     else:
                         article_data += [f'|-|{tn_diff[j]}=']
                     
@@ -2110,7 +2192,7 @@ enemy_names_tl = {
 item_names_tl = {"act43side_token_phantom" : "Mysterious Black Shadow"}
 token_names_tl = {}
 skill_names_tl = {}
-script_result(wiki_article("act5bossrush", "tn", "Trials for Navigator #04"))
+#script_result(wiki_article("act5bossrush", "tn", "Trials for Navigator #04"))
 
 # Trials for Navigator #04
 #script_result(wiki_article("act4bossrush", "tn", "Trials for Navigator #04"))
@@ -2141,5 +2223,4 @@ printr(temp)
 #                                  ['main_00-01', 'main_06-15']]
 #tile_smog
 
-#print([key for key in DB["json_stageEN"]["tileInfo"].keys()])
-#print(DB["json_stageEN"]["tileInfo"]["tile_smog"])
+#print([key for key in DB["js
