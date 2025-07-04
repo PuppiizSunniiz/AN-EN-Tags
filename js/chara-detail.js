@@ -5986,7 +5986,7 @@
                                     backgroundColor: "#00000000",
                                     // debug: true,
                                     // imagesPath: chibiName + ".png",
-                                    premultipliedAlpha: false,
+                                    premultipliedAlpha: true,
                                     fitToCanvas : false,
                                     loop: true,
                                     // x:900,
