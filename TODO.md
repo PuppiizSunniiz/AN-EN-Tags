@@ -48,6 +48,10 @@
     - SOC-Y
     - TRP-X
 
+### Fantasy in the Mirage
+- Trait
+    - SIE-Y
+
 ### To Fix 
 - Tecno Mod Range display
     - range not on display but added talent (-1)
@@ -55,7 +59,6 @@
 ### To Do
 - Add multi animation support
     - SP Kroos have multiple Interact + Idle (even Talk)
-- Fix Some flashing when render fast transform movement
-- Found a way to deal with premultiplealpha/bright line/rendering issue
+- Add all background element for various L2D
 - token animation list
 - re-add enemies chibi

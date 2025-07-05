@@ -1426,18 +1426,21 @@
                             opcode = AmiyaCaster
                             opKey = opcode
                             opdataFull.id = opcode
+                            currskin = opcode
                             break;
                     case 'guard' :
                             opcode = AmiyaGuard
                             opKey = opcode
                             opdataFull = db.charpatch.patchChars[AmiyaGuard]
                             opdataFull.id = opcode
+                            currskin = opcode
                             break;
                     case 'medic' :
                             opcode = AmiyaMedic
                             opKey = opcode
                             opdataFull = db.charpatch.patchChars[AmiyaMedic]
                             opdataFull.id = opcode
+                            currskin = opcode
                             break;
                     default:
                         $('#class-change-1').show()
@@ -6122,7 +6125,7 @@
                             backgroundColor: "#00000000",
                             // debug: true,
                             // imagesPath: chibiName + ".png",
-                            premultipliedAlpha: false,
+                            premultipliedAlpha: true,
                             fitToCanvas : false,
                             loop: true,
                             // x:900,
@@ -6137,11 +6140,12 @@
                                 $("#spine-text").text(widget.skeleton.data.animations[0].name)
                                 $("#loading-spine").fadeOut(200)
                                 animations = widget.skeleton.data.animations;
-                                
                                 $("#spine-widget").show()
-                                if(animations.find(search => search.name == "Start")){
-                                    CreateAnimation(spinewidget,["Start","Idle"])
-                                    $("#spine-text").text("Idle")
+                                if(animations.find(search => search.name.includes("Start"))){
+                                    idle_default = animations.map(k => k["name"]).filter(k => k.includes("Idle"))[0]
+                                    start_default = animations.map(k => k["name"]).filter(k => k.includes("Start"))[0]
+                                    CreateAnimation(spinewidget,[start_default, idle_default])
+                                    $("#spine-text").text(idle_default)
                                 }else if(animations.find(search=>search.name=="Relax")){
                                     CreateAnimation(spinewidget,"Relax")
                                     $("#spine-text").text("Relax")
@@ -6258,7 +6262,7 @@
                             backgroundColor: "#00000000",
                             // debug: true,
                             // imagesPath: chibiName + ".png",
-                            premultipliedAlpha: false,
+                            premultipliedAlpha: true,
                             fitToCanvas : false,
                             loop: true,
                             x: spineX,
@@ -6480,12 +6484,12 @@
         selectOperator(curropid)
         update_illustrator(opdataFull.id + "#2")
     }
-    function ChangeSTypeHTML(num,classchange){
-        changepic={
-                    "caster" : "trans_magic_mark.png",
-                    "guard" : "trans_melee_mark.png",
-                    "medic" :"trans_medic_mark.png"
-        }
+    function ChangeSTypeHTML(num, classchange){
+        changepic = {
+                        "caster" : "trans_magic_mark.png",
+                        "guard" : "trans_melee_mark.png",
+                        "medic" : "trans_medic_mark.png"
+                    }
 
         $('#class-change-'+num.toString()).html(`
             <button id='class-change-${classchange}' class='ak-button' onclick='ChangeSType(${num},"${classchange}")'>

@@ -11024,13 +11024,15 @@ var spine38;
 					skeleton.x = config.x;
 					skeleton.y = config.y;
 				}
+				animation_list = skeletonData.animations.map(k => k["name"])
+				console.log(skeletonData)
 				var animationState = this.state = new spine38.AnimationState(new spine38.AnimationStateData(skeleton.data));
-				animationState.setAnimation(0, config.animation, config.loop);
+				default_animation = animation_list.includes(config.animation)?config.animation:animation_list.find(k => k.includes(config.animation))
+				animationState.setAnimation(0, default_animation, config.loop);
 				if (config.success)
 					config.success(this);
 				this.loaded = true;
 				requestAnimationFrame(function () { _this.render(); });
-				console.log(skeletonData)
 			}
 			else
 				requestAnimationFrame(function () { _this.load(); });

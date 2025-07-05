@@ -9,8 +9,8 @@
 # Next Step
 *working when truly free*
 ### # Akhrchar
-    - Re-add AkAudio (after finish other work | need space)
-    - make chibi render properly
+    - Re-add AkAudio (sfx left)
+    - Add all background element for various L2D
 ### # Akhr
     - Rework/Revamp on tag input
 ### # Akenemy
