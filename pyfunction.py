@@ -1,12 +1,23 @@
 from datetime import datetime
 import json
+import inspect
+from typing import Any
 
-def json_load(filepath) :
-    with open(filepath, 'r', encoding='utf-8') as file:
+R = '\033[31m'
+G = '\033[32m'
+Y = '\033[33m'
+B = '\033[34m'
+RE = '\033[0m'
+
+def printr(*arg):
+    print(f'{R}[:{inspect.currentframe().f_back.f_lineno}]{RE}', *arg, RE) # type: ignore
+
+def json_load(filepath : str) -> dict | list:
+    with open(filepath, 'r', encoding = 'utf-8') as file:
         return json.load(file)
 
 def epoch(time) -> str :
-    return TimeFormat(datetime.fromtimestamp(time))+" is "+time_diff(datetime.fromtimestamp(time))
+    return f'{TimeFormat(datetime.fromtimestamp(time))} is {time_diff(datetime.fromtimestamp(time))}'
 
 def time_to_str(self) -> str :  # return Date as Y M D H M or S
     if self.days > 365 :
@@ -31,7 +42,7 @@ def time_diff(self) -> str :  # Time different Before(ago) or After(in)
 def TimeFormat(self) -> str :
     return self.strftime('%d %b %Y %H:%M:%S')
 
-def char_ready(char_json,mode=0) :
+def char_ready(char_json : dict , mode : int = 0) -> dict:
     '''
         Get character_table -> Return Code2Name Name2Code dict
         
@@ -41,39 +52,39 @@ def char_ready(char_json,mode=0) :
         Default : All
     '''
 
-    Chars = {"Code2Name":{}, "Name2Code":{}}
+    Chars : dict[str, Any] = {"Code2Name":{}, "Name2Code":{}}
     for char_key in char_json.keys() :
         if "char_" in char_key :
             Chars["Code2Name"][char_key] = get_char_name(char_json,char_key)
             Chars["Name2Code"][get_char_name(char_json,char_key)] = char_key
-    Chars["Exclude"] = [[char_key,get_char_name(char_json,char_key)] for char_key in char_json.keys() if "char_" in char_key and char_json[char_key]["isNotObtainable"]]
+    Chars["Exclude"] = [[char_key, get_char_name(char_json, char_key)] for char_key in char_json.keys() if "char_" in char_key and char_json[char_key]["isNotObtainable"]]
     match mode :
         case 1 :
             return Chars["Code2Name"]
         case 2 :
             return Chars["Name2Code"]
         case 3 :
-            return Chars["Exclude"]
+            return Chars["Exclude"] # type: ignore
         case _ :
             return Chars
         
-def get_char_name(char_json,char_key) -> str :
+def get_char_name(char_json : dict[str, dict[str, Any]], char_key : str) -> str :
     return name_check(char_json[char_key]["appellation"])
 
-def name_check(appellation) -> str :
-    Russian = {
-                'Гум'       : 'Gummy',
-                'Зима'      : 'Zima',
-                'Истина'    : 'Istina',
-                'Позёмка'   : 'Pozëmka',
-                'Роса'      : 'Rosa',
-                'Лето'      : 'Leto'
-            }
-    return Russian.get(appellation,appellation)
+def name_check(appellation : str) -> str :
+    Russian : dict = {
+                        'Гум'       : 'Gummy',
+                        'Зима'      : 'Zima',
+                        'Истина'    : 'Istina',
+                        'Позёмка'   : 'Pozëmka',
+                        'Роса'      : 'Rosa',
+                        'Лето'      : 'Leto'
+                    }
+    return Russian.get(appellation, appellation)
 
-def print_header(text) :
-    length = 20
-    return f'\n{"#"*length*3}\n{"#"*length}{text:^{length}}{"#"*length}\n{"#"*length*3}'
+def print_header(text : str) -> str:
+    length : int = 20
+    return f'\n{"#" * length * 3}\n{"#" * length}{text:^{length}}{"#" * length}\n{"#" * length * 3}'
 
 #print_header("Error Test")
 #print_header("Data Test")

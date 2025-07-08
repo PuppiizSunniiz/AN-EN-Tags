@@ -2977,226 +2977,246 @@
     "control_train_spd[011]": {
         "name": "断金之交",
         "desc": "进驻控制中枢时，如训练室有干员在进行技能专精，则该干员的专精技能训练速度<@cc.vup>+5%</>（同种效果取最高）",
-        "descformat": "进驻控制中枢时，如训练室有干员在进行技能专精，则该干员的专精技能训练速度<@cc.vup>+5%</>（同种效果取最高）"
+        "descformat": "When this Operator is assigned to the Control Center, if an Operator is conducting Skill Specialization in the Training Room, that Operator's Specialization training speed <@cc.vup>+5%</> (Only the strongest effect of this type takes place)."
     },
     "power_rec_spd[1022]": {
         "name": "热能充能·γ",
         "desc": "进驻发电站时，无人机充能速度<@cc.vup>+20%</>",
-        "descformat": "进驻发电站时，无人机充能速度<@cc.vup>+20%</>"
+        "descformat": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+20%</>"
     },
     "train_spd_bd[000]": {
         "name": "与人乐",
         "desc": "进驻训练室协助位时，心情每小时消耗<@cc.vdown>+1</>，每<@cc.vup>1</>点<$cc.bd_b1><@cc.rem>人间烟火</></><@cc.vup>+1%</>专精技能训练速度",
-        "descformat": "进驻训练室协助位时，心情每小时消耗<@cc.vdown>+1</>，每<@cc.vup>1</>点<$cc.bd_b1><@cc.rem>人间烟火</></><@cc.vup>+1%</>专精技能训练速度"
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Morale consumed per hour <@cc.vdown>+1</>，Operators' Specialization training speed <@cc.vup>+1%</> for every <@cc.vup>1</> <$cc.bd_b1><@cc.rem>Worldly Plight</></>"
     },
     "dorm_rec_all&group[000]": {
         "name": "调众口",
         "desc": "进驻宿舍时，基建内（不包含副手及活动室使用者）每名<$cc.g.sui><@cc.kw>岁</></>干员为该宿舍内所有干员心情每小时恢复速度<@cc.vup>+0.06</>（最多生效<@cc.kw>4</>名，且同种效果取最高）",
-        "descformat": "进驻宿舍时，基建内（不包含副手及活动室使用者）每名<$cc.g.sui><@cc.kw>岁</></>干员为该宿舍内所有干员心情每小时恢复速度<@cc.vup>+0.06</>（最多生效<@cc.kw>4</>名，且同种效果取最高）"
+        "descformat": "When this Operator is assigned to a Dormitory, Morale recovery per hour of all Operators in that Dormitory <@cc.vup>+0.06</> for each <$cc.g.sui><@cc.kw>Sui</></> Operator in the Base (excluding Assistants and Activity Room users, caps at <@cc.kw>4</> Operators, strongest effect of the same type applies)"
     },
     "hire_spd_cost[112]": {
         "name": "踏坊寻味·α",
         "desc": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+20%</>，心情每小时消耗<@cc.vup>-0.25</>",
-        "descformat": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+20%</>，心情每小时消耗<@cc.vup>-0.25</>"
+        "descformat": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+20%</>, Morale consumed per hour <@cc.vup>-0.25</>"
     },
     "hire_spd_cost[121]": {
         "name": "踏坊寻味·β",
         "desc": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+30%</>，心情每小时消耗<@cc.vup>-0.25</>",
-        "descformat": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+30%</>，心情每小时消耗<@cc.vup>-0.25</>"
+        "descformat": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+30%</>, Morale consumed per hour <@cc.vup>-0.25</>"
     },
     "meet_spd[1020]": {
         "name": "线索搜集·β",
         "desc": "进驻会客室时，线索搜集速度提升<@cc.vup>20%</>",
-        "descformat": "进驻会客室时，线索搜集速度提升<@cc.vup>20%</>"
+        "descformat": "When this Operator is assigned to the Reception Room, Clue search speed increases by <@cc.vup>20%</>"
     },
     "meet_spd&sami[100]": {
         "name": "人情练达",
         "desc": "进驻会客室时，线索搜集速度提升<@cc.vup>10%</>，与其他<$cc.g.bs><@cc.kw>黑钢国际干员</></>进驻会客室一起工作时，线索搜集速度额外提升<@cc.vup>15%</>，自身心情每小时消耗<@cc.vdown>+0.5</>",
-        "descformat": "进驻会客室时，线索搜集速度提升<@cc.vup>10%</>，与其他<$cc.g.bs><@cc.kw>黑钢国际干员</></>进驻会客室一起工作时，线索搜集速度额外提升<@cc.vup>15%</>，自身心情每小时消耗<@cc.vdown>+0.5</>"
+        "descformat": "When this Operator is assigned to the Reception Room, increases Clue search speed by <@cc.vup>10%</>, and when assigned together with another <$cc.g.bs><@cc.kw>Blacksteel Worldwide</></> Operator, increases Clue search speed by an additional <@cc.vup>15%</> while self Morale loss per hour <@cc.vdown>+0.5</>"
     },
     "meet_spd&sami[110]": {
         "name": "情报探查",
         "desc": "进驻会客室时，线索搜集速度提升<@cc.vup>10%</>，与其他<$cc.g.bs><@cc.kw>黑钢国际干员</></>进驻会客室一起工作时，线索搜集速度额外提升<@cc.vup>20%</>",
-        "descformat": "进驻会客室时，线索搜集速度提升<@cc.vup>10%</>，与其他<$cc.g.bs><@cc.kw>黑钢国际干员</></>进驻会客室一起工作时，线索搜集速度额外提升<@cc.vup>20%</>"
+        "descformat": "When this Operator is assigned to the Reception Room, increases Clue search speed by <@cc.vup>10%</>, and when assigned together with another <$cc.g.bs><@cc.kw>Blacksteel Worldwide</></> Operator, increases Clue search speed by an additional <@cc.vup>20%</>"
     },
     "workshop_formula_cost3[102]": {
         "name": "长生的余裕",
         "desc": "进驻加工站加工<@cc.kw>精英材料</>时，心情消耗为<@cc.kw>2</>的配方全部<@cc.vup>-1</>心情消耗",
-        "descformat": "进驻加工站加工<@cc.kw>精英材料</>时，心情消耗为<@cc.kw>2</>的配方全部<@cc.vup>-1</>心情消耗"
+        "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>elite materials</>, reduces the Morale consumed by all corresponding formulas that cost <@cc.kw>2</> Morale by <@cc.vup>-1</>"
     },
     "workshop_formula_probability[117]": {
         "name": "熟手的尊严",
         "desc": "进驻加工站加工<@cc.kw>精英材料</>时，副产品的产出概率提升<@cc.vup>75%</>",
-        "descformat": "进驻加工站加工<@cc.kw>精英材料</>时，副产品的产出概率提升<@cc.vup>75%</>"
+        "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>elite material</>，the production rate of byproduct increases by <@cc.vup>75%</>"
     },
     "dorm_hireToRecAll[001]": {
         "name": "无瑕心·α",
         "desc": "进驻宿舍时，该宿舍内所有干员心情每小时恢复<@cc.vup>+0.1</>，同时每个招募位（不包含初始招募位）额外<@cc.vup>+0.05</>恢复效果（叠加后的最终值同种效果取最高）",
-        "descformat": "进驻宿舍时，该宿舍内所有干员心情每小时恢复<@cc.vup>+0.1</>，同时每个招募位（不包含初始招募位）额外<@cc.vup>+0.05</>恢复效果（叠加后的最终值同种效果取最高）"
+        "descformat": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.1</> Morale per hour to all Operators assigned to that Dormitory, and every recruit slot (excluding initial slot), restores another <@cc.vup>+0.05</> (Only the strongest stacked effect of this type takes place)"
     },
     "dorm_hireToRecAll[021]": {
         "name": "无瑕心·β",
         "desc": "进驻宿舍时，该宿舍内所有干员心情每小时恢复<@cc.vup>+0.1</>，同时每个招募位（不包含初始招募位）额外<@cc.vup>+0.1</>恢复效果（叠加后的最终值同种效果取最高）",
-        "descformat": "进驻宿舍时，该宿舍内所有干员心情每小时恢复<@cc.vup>+0.1</>，同时每个招募位（不包含初始招募位）额外<@cc.vup>+0.1</>恢复效果（叠加后的最终值同种效果取最高）"
+        "descformat": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.1</> Morale per hour to all Operators assigned to that Dormitory, and every recruit slot (excluding initial slot), restores another <@cc.vup>+0.1</> (Only the strongest stacked effect of this type takes place)"
     },
     "manu_prod_limit&cost[1020]": {
         "name": "收纳达人",
         "desc": "进驻制造站时，仓库容量上限<@cc.vup>+16</>，心情每小时消耗<@cc.vup>-0.25</>",
-        "descformat": "进驻制造站时，仓库容量上限<@cc.vup>+16</>，心情每小时消耗<@cc.vup>-0.25</>"
+        "descformat": "When this Operator is assigned to a Factory, capacity limit <@cc.vup>+16</> and Morale consumed per hour <@cc.vup>-0.25</>"
     },
     "manu_prod_spd&limit&cost[300]": {
         "name": "行动派",
         "desc": "进驻制造站时，生产力<@cc.vup>+20%</>，仓库容量上限<@cc.vup>-8</>",
-        "descformat": "进驻制造站时，生产力<@cc.vup>+20%</>，仓库容量上限<@cc.vup>-8</>"
+        "descformat": "When this Operator is assigned to a Factory, Productivity <@cc.vup>+20%</>，capacity limit <@cc.vup>-8</>"
     },
     "train_spd&profession2[052]": {
         "name": "术师专精·α",
         "desc": "进驻训练室协助位时，<@cc.kw>术师</>干员的专精技能训练速度<@cc.vup>+30%</>",
-        "descformat": "进驻训练室协助位时，<@cc.kw>术师</>干员的专精技能训练速度<@cc.vup>+30%</>"
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Caster</> Operators' Specialization training speed <@cc.vup>+30%</>"
     },
     "train_spd&profession2[650]": {
         "name": "死焰指引",
         "desc": "进驻训练室协助位时，<@cc.kw>术师</>干员的专精技能训练速度<@cc.vup>+30%</>，如果本次训练专精技能至<@cc.vup>3</>级，则训练速度额外<@cc.vup>+65%</>",
-        "descformat": "进驻训练室协助位时，<@cc.kw>术师</>干员的专精技能训练速度<@cc.vup>+30%</>，如果本次训练专精技能至<@cc.vup>3</>级，则训练速度额外<@cc.vup>+65%</>"
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Caster</> Operators' Specialization training speed <@cc.vup>+30%</>，if training this skill to Specialization Level <@cc.vup>3</>, training speed will be further increased by <@cc.vup>+65%</>"
     },
     "train_cost&profession[350]": {
         "name": "何须解脱",
         "desc": "进驻训练室协助<@cc.kw>术师</>干员训练专精技能至<@cc.vup>3</>级时，心情每小时消耗<@cc.vdown>+1</>",
-        "descformat": "进驻训练室协助<@cc.kw>术师</>干员训练专精技能至<@cc.vup>3</>级时，心情每小时消耗<@cc.vdown>+1</>"
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Morale consumed per hour <@cc.vdown>+1</> when training a <@cc.kw>Caster</> Operator's skill to Specialization Level <@cc.vup>3</>"
     },
     "hire_spd_cost[220]": {
         "name": "永不停歇·α",
         "desc": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+30%</>，心情每小时消耗<@cc.vdown>+1</>",
-        "descformat": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+30%</>，心情每小时消耗<@cc.vdown>+1</>"
+        "descformat": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+30%</> and Morale consumed per hour <@cc.vdown>+1</>"
     },
     "hire_spd_cost[230]": {
         "name": "永不停歇·β",
         "desc": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+45%</>，心情每小时消耗<@cc.vdown>+1</>",
-        "descformat": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+45%</>，心情每小时消耗<@cc.vdown>+1</>"
+        "descformat": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+45%</> and Morale consumed per hour <@cc.vdown>+1</>"
     },
     "control_prod_spd[1000]": {
         "name": "最高权限",
         "desc": "进驻控制中枢时，所有制造站生产力<@cc.vup>+2%</>（同种效果取最高）",
-        "descformat": "进驻控制中枢时，所有制造站生产力<@cc.vup>+2%</>（同种效果取最高）"
+        "descformat": "When this Operator is assigned to the Control Center, all Factories' productivity <@cc.vup>+2%</> (only the most effective one will take effect when assigned Operators have the same skill effect)"
     },
     "control_mp_cost[012]": {
         "name": "博识生手",
         "desc": "进驻控制中枢时，控制中枢内所有干员的心情每小时恢复<@cc.vup>+0.05</>",
-        "descformat": "进驻控制中枢时，控制中枢内所有干员的心情每小时恢复<@cc.vup>+0.05</>"
+        "descformat": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by <@cc.vup>+0.05</> per hour."
     },
     "manu_token_prod_spd[000]": {
         "name": "机械精通·α",
         "desc": "进驻制造站时，每有<@cc.vup>1</>台<$cc.tag.op><@cc.kw>作业平台</></>进驻发电站，<@cc.kw>贵金属</>类配方的生产力<@cc.vup>+5%</>",
-        "descformat": "进驻制造站时，每有<@cc.vup>1</>台<$cc.tag.op><@cc.kw>作业平台</></>进驻发电站，<@cc.kw>贵金属</>类配方的生产力<@cc.vup>+5%</>"
+        "descformat": "When this Operator is assigned to a Factory, for every <@cc.kw>1</> <$cc.tag.op><@cc.kw>Operation Platforms</></> assigned to <@cc.kw>Power Plants</>, <@cc.kw>Precious Metal</> productivity <@cc.vup>+5%</>"
     },
     "manu_token_prod_spd[010]": {
         "name": "机械精通·β",
         "desc": "进驻制造站时，每有<@cc.vup>1</>台<$cc.tag.op><@cc.kw>作业平台</></>进驻发电站，<@cc.kw>贵金属</>类配方的生产力<@cc.vup>+10%</>",
-        "descformat": "进驻制造站时，每有<@cc.vup>1</>台<$cc.tag.op><@cc.kw>作业平台</></>进驻发电站，<@cc.kw>贵金属</>类配方的生产力<@cc.vup>+10%</>"
+        "descformat": "When this Operator is assigned to a Factory, for every <@cc.kw>1</> <$cc.tag.op><@cc.kw>Operation Platforms</></> assigned to <@cc.kw>Power Plants</>, <@cc.kw>Precious Metal</> productivity <@cc.vup>+10%</>"
     },
     "manu_prod_spd_double[000]": {
         "name": "“搭把手！”",
         "desc": "进驻制造站时，当与<@cc.kw>温米</>在同一个制造站时，<@cc.kw>贵金属</>类配方的生产力<@cc.vup>+15%</>",
-        "descformat": "进驻制造站时，当与<@cc.kw>温米</>在同一个制造站时，<@cc.kw>贵金属</>类配方的生产力<@cc.vup>+15%</>"
+        "descformat": "When this Operator is assigned to a Factory together with <@cc.kw>Warmy</>，<@cc.kw>Precious Metal</> productivity <@cc.vup>+15%</>"
     },
     "meet_spd&clue[000]": {
         "name": "广交义友",
         "desc": "进驻会客室时，每个招募位（不包含初始招募位）提升<@cc.vup>5%</>线索搜集速度",
-        "descformat": "进驻会客室时，每个招募位（不包含初始招募位）提升<@cc.vup>5%</>线索搜集速度"
+        "descformat": "When this Operator is assigned to the Reception Room, for every Recruit slot (Default slots do not count) increases Clue search speed by <@cc.vup>5%</>"
     },
     "meet_spd_notOwned&exchange[000]": {
         "name": "眼观六路",
         "desc": "进驻会客室时，处于线索交流时更容易获得线索板上尚未拥有的线索",
-        "descformat": "进驻会客室时，处于线索交流时更容易获得线索板上尚未拥有的线索"
+        "descformat": "When this Operator is assigned to the Reception Room，if in Clue Exchange, increases the likelihood of obtaining clues that are not on the Clue Board"
     },
     "power_rec_spd[006]": {
         "name": "充能中",
         "desc": "进驻发电站时，无人机充能速度<@cc.vup>+10%</>",
-        "descformat": "进驻发电站时，无人机充能速度<@cc.vup>+10%</>"
+        "descformat": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+10%</>"
     },
     "power_rec_spd_ext&faction[000]": {
         "name": "维护中",
         "desc": "进驻发电站时，如果其他<$cc.g.laterano><@cc.kw>拉特兰</></>干员进驻在发电站，则无人机充能速度<@cc.vup>+5%</>",
-        "descformat": "进驻发电站时，如果其他<$cc.g.laterano><@cc.kw>拉特兰</></>干员进驻在发电站，则无人机充能速度<@cc.vup>+5%</>"
+        "descformat": "When this Operator is assigned to a Power Plant, if there are no <$cc.g.laterano><@cc.kw>Laterano</></> operators assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+5%</>."
     },
     "trade_ord_spd_par[001]": {
         "name": "同城加急单",
         "desc": "进驻贸易站时，同个贸易站中每有1名<$cc.g.laterano><@cc.kw>拉特兰</></>干员，当前贸易站订单获取效率<@cc.vup>+15%</>",
-        "descformat": "进驻贸易站时，同个贸易站中每有1名<$cc.g.laterano><@cc.kw>拉特兰</></>干员，当前贸易站订单获取效率<@cc.vup>+15%</>"
+        "descformat": "When this Operator is assigned to a Trading Post, for every <$cc.g.laterano><@cc.kw>Laterano</></> Operator in the same Trading Post, order acquisition efficiency <@cc.vup>+15%</>"
     },
     "trade_ord_spd&multiPar[000]": {
         "name": "订单分发·α",
         "desc": "进驻贸易站时，订单获取效率<@cc.vup>+20%</>",
-        "descformat": "进驻贸易站时，订单获取效率<@cc.vup>+20%</>"
+        "descformat": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+20%</>"
     },
     "trade_ord_spd&multiPar[100]": {
         "name": "相伴",
         "desc": "进驻贸易站时，订单获取效率<@cc.vup>+20%</>；当与<@cc.kw><$cc.angel>能天使</></>在同一个贸易站时，订单获取效率额外<@cc.vup>+25%</>",
-        "descformat": "进驻贸易站时，订单获取效率<@cc.vup>+20%</>；当与<@cc.kw><$cc.angel>能天使</></>在同一个贸易站时，订单获取效率额外<@cc.vup>+25%</>"
+        "descformat": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+20%</>；when in the same Trading Post as <$cc.angel><@cc.kw>Exusiai</></>, additional order acquisition efficiency <@cc.vup>+25%</>"
     },
     "train_spd&profession[1020]": {
         "name": "近卫专精·α",
         "desc": "进驻训练室协助位时，<@cc.kw>近卫</>干员的专精技能训练速度<@cc.vup>+30%</>",
-        "descformat": "进驻训练室协助位时，<@cc.kw>近卫</>干员的专精技能训练速度<@cc.vup>+30%</>"
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Guard</> Operators' Specialization training speed <@cc.vup>+30%</>"
     },
     "dorm_rec_single_power[100]": {
         "name": "天生乐天派",
         "desc": "进驻宿舍时，使该宿舍内除自身以外心情未满的某个干员每小时恢复<@cc.vup>+0.55</>（同种效果取最高）",
-        "descformat": "进驻宿舍时，使该宿舍内除自身以外心情未满的某个干员每小时恢复<@cc.vup>+0.55</>（同种效果取最高）"
+        "descformat": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place)"
     },
     "dorm_rec_single[033]": {
         "name": "恩典颂歌",
         "desc": "进驻宿舍时，使该宿舍内除自身以外心情未满的某个干员每小时恢复<@cc.vup>+0.7</>（同种效果取最高）",
-        "descformat": "进驻宿舍时，使该宿舍内除自身以外心情未满的某个干员每小时恢复<@cc.vup>+0.7</>（同种效果取最高）"
+        "descformat": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.7</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place)"
     },
     "dorm_rec_single_power[001]": {
         "name": "圣城趣事通",
         "desc": "进驻宿舍时，使该宿舍内除自身以外心情未满的某个干员每小时恢复<@cc.vup>+0.55</>（同种效果取最高），如果目标是<$cc.g.laterano><@cc.kw>拉特兰</></>干员，则恢复效果额外<@cc.vup>+0.45</>",
-        "descformat": "进驻宿舍时，使该宿舍内除自身以外心情未满的某个干员每小时恢复<@cc.vup>+0.55</>（同种效果取最高），如果目标是<$cc.g.laterano><@cc.kw>拉特兰</></>干员，则恢复效果额外<@cc.vup>+0.45</>"
+        "descformat": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is a <$cc.g.laterano><@cc.kw>Laterano</></> Operator, further increases Morale restored by <@cc.vup>+0.45</>"
     },
     "meet_spd[011]": {
         "name": "泡茶高手",
         "desc": "进驻会客室时，线索搜集速度提升<@cc.vup>15%</>",
-        "descformat": "进驻会客室时，线索搜集速度提升<@cc.vup>15%</>"
+        "descformat": "When this Operator is assigned to the Reception Room, Clue search speed increases by <@cc.vup>15%</>"
     },
     "meet_spd[022]": {
         "name": "社交达人",
         "desc": "进驻会客室时，线索搜集速度提升<@cc.vup>20%</>",
-        "descformat": "进驻会客室时，线索搜集速度提升<@cc.vup>20%</>"
+        "descformat": "When this Operator is assigned to the Reception Room, Clue search speed increases by <@cc.vup>20%</>"
     },
     "meet_spd_ext&P[000]": {
         "name": "不泯童心",
         "desc": "进驻会客室时，如果<@cc.kw>菲亚梅塔</>进驻在宿舍，则线索搜集速度额外提升<@cc.vup>10%</>",
-        "descformat": "进驻会客室时，如果<@cc.kw>菲亚梅塔</>进驻在宿舍，则线索搜集速度额外提升<@cc.vup>10%</>"
+        "descformat": "When this Operator is assigned to the Reception Room, if <@cc.kw>Fiammetta</> is assigned to a Dormitory, increases Clue search speed by an additional <@cc.vup>10%</>"
     },
     "manu_prod_limit&cost[012]": {
         "name": "午休好去处",
         "desc": "进驻制造站时，仓库容量上限<@cc.vup>+10</>，心情每小时消耗<@cc.vup>-0.25</>",
-        "descformat": "进驻制造站时，仓库容量上限<@cc.vup>+10</>，心情每小时消耗<@cc.vup>-0.25</>"
+        "descformat": "When this Operator is assigned to a Factory, capacity limit <@cc.vup>+10</> and Morale consumed per hour <@cc.vup>-0.25</>"
     },
     "manu_formula_spd&limit&cost[000]": {
         "name": "镜中影",
         "desc": "进驻制造站时，<@cc.kw>作战记录</>类配方的生产力<@cc.vup>+20%</>，心情每小时消耗<@cc.vup>-0.25</>",
-        "descformat": "进驻制造站时，<@cc.kw>作战记录</>类配方的生产力<@cc.vup>+20%</>，心情每小时消耗<@cc.vup>-0.25</>"
+        "descformat": "When this Operator is assigned to a Factory, <@cc.kw>Battle Record</> formula related productivity <@cc.vup>+20%</> and Morale consumed per hour <@cc.vup>-0.25</>"
     },
     "manu_formula_spd&limit&cost[010]": {
         "name": "戏中人",
         "desc": "进驻制造站时，<@cc.kw>作战记录</>类配方的生产力<@cc.vup>+35%</>，心情每小时消耗<@cc.vup>-0.25</>",
-        "descformat": "进驻制造站时，<@cc.kw>作战记录</>类配方的生产力<@cc.vup>+35%</>，心情每小时消耗<@cc.vup>-0.25</>"
+        "descformat": "When this Operator is assigned to a Factory, <@cc.kw>Battle Record</> formula related productivity <@cc.vup>+35%</> and Morale consumed per hour <@cc.vup>-0.25</>"
     },
     "manu_prod_spd_double[100]": {
         "name": "盛餐的回报",
         "desc": "进驻制造站时，当与<@cc.kw>酒神</>在在同一个制造站时，<@cc.kw>作战记录</>类配方的生产力<@cc.vup>+30%</>",
-        "descformat": "进驻制造站时，当与<@cc.kw>酒神</>在在同一个制造站时，<@cc.kw>作战记录</>类配方的生产力<@cc.vup>+30%</>"
+        "descformat": "When this Operator is assigned to a Factory, when in the same Factory as <@cc.kw>Tragodia</>, <@cc.kw>Battle Record</> formula related productivity <@cc.vup>+30%</>"
     },
     "workshop_proc_probability[033]": {
         "name": "蓝卡坞多面手",
         "desc": "进驻加工站加工<@cc.kw>任意类材料</>时，副产品的产出概率提升<@cc.vup>65%</>",
-        "descformat": "进驻加工站加工<@cc.kw>任意类材料</>时，副产品的产出概率提升<@cc.vup>65%</>"
+        "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, the production rate of byproduct increases by <@cc.vup>65%</>"
     },
     "workshop_formula_cost3[500]": {
         "name": "拍摄日愉快",
         "desc": "进驻加工站加工<@cc.kw>任意类材料</>时，心情消耗为<@cc.kw>2</>的配方全部<@cc.vup>-1</>心情消耗",
-        "descformat": "进驻加工站加工<@cc.kw>任意类材料</>时，心情消耗为<@cc.kw>2</>的配方全部<@cc.vup>-1</>心情消耗"
+        "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, reduces the Morale consumed by all corresponding formulas that cost <@cc.kw>2</> Morale by <@cc.vup>-1</>"
+    },
+    "power_rec_spd[007]": {
+        "name": "雷法专精",
+        "desc": "进驻发电站时，无人机充能速度<@cc.vup>+10%</>",
+        "descformat": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+10%</>"
+    },
+    "workshop_formula_probability[021]": {
+        "name": "克己严修",
+        "desc": "进驻加工站加工<@cc.kw>技巧概要</>时，副产品的产出概率提升<@cc.vup>80%</>",
+        "descformat": "When this Operator is assigned to the Workshop to process <@cc.kw>Skill Summaries</>, the production rate of byproduct increases by <@cc.vup>80%</>"
+    },
+    "train_spd[002]": {
+        "name": "学无不精·α",
+        "desc": "进驻训练室协助位时，干员的专精技能训练速度<@cc.vup>+25%</>",
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+25%</>"
+    },
+    "train_spd&profession3[184]": {
+        "name": "医疗专精·α",
+        "desc": "进驻训练室协助位时，<@cc.kw>医疗</>干员的专精技能训练速度<@cc.vup>+30%</>",
+        "descformat": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Medic</> Operators' Specialization training speed <@cc.vup>+30%</>"
     }
 }

@@ -1150,5 +1150,167 @@
                 "upgradeDescription": "Can deploy up to 10 <@ba.talpu>(+2)</> Resonators (Can store up to 13); The first enemy that steps on a Resonator will trigger its effect. On deployment, immediately deploys 3 Resonators within Attack Range; Has 50% chance to deploy an additional trap in Attack Range when deploying a trap"
             }
         ]
+    ],
+    "uniequip_002_reckpr": [
+        [
+            {
+                "name": "学成于聚",
+                "CN": "攻击范围内的干员开启技能时自身回复1点技力，且攻击速度+16，持续8秒",
+                "mod": "攻击范围内的干员开启技能时自身回复1点技力，且攻击速度+20，持续8秒",
+                "upgradeDescription": "When an operator in Attack Range activate skill, recover 1 SP and ASPD+20 for 8 seconds."
+            },
+            {
+                "name": "学成于聚",
+                "CN": "攻击范围内的干员开启技能时自身回复1点技力，且攻击速度+16，持续10<@ba.talpu>(+2)</>秒",
+                "mod": "攻击范围内的干员开启技能时自身回复1点技力，且攻击速度+20，持续10<@ba.talpu>(+2)</>秒",
+                "upgradeDescription": "When an operator in Attack Range activate skill, recover 1 SP and ASPD+20 for 10<@ba.talpu>(+2)</> seconds."
+            }
+        ],
+        [
+            {
+                "name": "学成于聚",
+                "CN": "攻击范围内的干员开启技能时自身回复1点技力，且攻击速度+16，持续8秒",
+                "mod": "攻击范围内的干员开启技能时自身回复1点技力，且攻击速度+23，持续8秒",
+                "upgradeDescription": "When an operator in Attack Range activate skill, recover 1 SP and ASPD+23 for 8 seconds."
+            },
+            {
+                "name": "学成于聚",
+                "CN": "攻击范围内的干员开启技能时自身回复1点技力，且攻击速度+16，持续10<@ba.talpu>(+2)</>秒",
+                "mod": "攻击范围内的干员开启技能时自身回复1点技力，且攻击速度+23，持续10<@ba.talpu>(+2)</>秒",
+                "upgradeDescription": "When an operator in Attack Range activate skill, recover 1 SP and ASPD+23 for 10<@ba.talpu>(+2)</> seconds."
+            }
+        ]
+    ],
+    "uniequip_002_leizi2": [
+        [
+            {
+                "name": "明断",
+                "CN": "攻击范围内每个地块每秒有10%的概率落雷对所有敌人造成相当于攻击力100%的法术伤害。未开启技能时<$ba.liftoff>起飞</>；技能期间攻击时攻击力提升至107%",
+                "mod": "攻击范围内每个地块每秒有10%的概率落雷对所有敌人造成相当于攻击力100%的法术伤害。未开启技能时<$ba.liftoff>起飞</>；技能期间攻击时攻击力提升至111%",
+                "upgradeDescription": "Each tile within Attack Range has 10% chance to has Lightning strike every second, deal 100% ATK as Arts damage to enemies; <$ba.liftoff>Take Off</> when skill is inactive. ATK is increased to 111% when skill is active."
+            },
+            {
+                "name": "明断",
+                "CN": "攻击范围内每个地块每秒有10%的概率落雷对所有敌人造成相当于攻击力100%的法术伤害。未开启技能时<$ba.liftoff>起飞</>；技能期间攻击时攻击力提升至111%<@ba.talpu>(+4%)</>",
+                "mod": "攻击范围内每个地块每秒有10%的概率落雷对所有敌人造成相当于攻击力100%的法术伤害。未开启技能时<$ba.liftoff>起飞</>；技能期间攻击时攻击力提升至115%<@ba.talpu>(+4%)</>",
+                "upgradeDescription": "Each tile within Attack Range has 10% chance to has Lightning strike every second, deal 100% ATK as Arts damage to enemies; <$ba.liftoff>Take Off</> when skill is inactive. ATK is increased to 115%<@ba.talpu>(+4%)</> when skill is active."
+            }
+        ],
+        [
+            {
+                "name": "明断",
+                "CN": "攻击范围内每个地块每秒有10%的概率落雷对所有敌人造成相当于攻击力100%的法术伤害。未开启技能时<$ba.liftoff>起飞</>；技能期间攻击时攻击力提升至107%",
+                "mod": "攻击范围内每个地块每秒有10%的概率落雷对所有敌人造成相当于攻击力100%的法术伤害。未开启技能时<$ba.liftoff>起飞</>；技能期间攻击时攻击力提升至113%",
+                "upgradeDescription": "Each tile within Attack Range has 10% chance to has Lightning strike every second, deal 100% ATK as Arts damage to enemies; <$ba.liftoff>Take Off</> when skill is inactive. ATK is increased to 113% when skill is active."
+            },
+            {
+                "name": "明断",
+                "CN": "攻击范围内每个地块每秒有10%的概率落雷对所有敌人造成相当于攻击力100%的法术伤害。未开启技能时<$ba.liftoff>起飞</>；技能期间攻击时攻击力提升至111%<@ba.talpu>(+4%)</>",
+                "mod": "攻击范围内每个地块每秒有10%的概率落雷对所有敌人造成相当于攻击力100%的法术伤害。未开启技能时<$ba.liftoff>起飞</>；技能期间攻击时攻击力提升至117%<@ba.talpu>(+4%)</>",
+                "upgradeDescription": "Each tile within Attack Range has 10% chance to has Lightning strike every second, deal 100% ATK as Arts damage to enemies; <$ba.liftoff>Take Off</> when skill is inactive. ATK is increased to 117%<@ba.talpu>(+4%)</> when skill is active."
+            }
+        ]
+    ],
+    "uniequip_003_typhon": [
+        [
+            {
+                "name": "Heavy as the Swamp's Mire",
+                "EN": "When damaging an enemy for the first time while a skill is active, ATK increases to 160% and <$ba.sluggish>Slows</> targets for 3 seconds",
+                "CN": "技能期间对每个敌人首次造成伤害时，攻击力提升至160%并使目标<$ba.sluggish>停顿</>3秒",
+                "mod": "技能期间对每个敌人前两次造成伤害时，攻击力提升至200%并使目标<$ba.sluggish>停顿</>3秒",
+                "upgradeDescription": "When damaging an enemy for the first two times while a skill is active, ATK increases to 200% and <$ba.sluggish>Slows</> targets for 3 seconds"
+            },
+            {
+                "name": "Heavy as the Swamp's Mire",
+                "EN": "When damaging an enemy for the first time while a skill is active, ATK increases to 170% <@ba.talpu>(+10%)</> and <$ba.sluggish>Slows</> targets for 3 seconds",
+                "CN": "技能期间对每个敌人首次造成伤害时，攻击力提升至170%<@ba.talpu>(+10%)</>并使目标<$ba.sluggish>停顿</>3秒",
+                "mod": "技能期间对每个敌人前两次造成伤害时，攻击力提升至210%<@ba.talpu>(+10%)</>并使目标<$ba.sluggish>停顿</>3秒",
+                "upgradeDescription": "When damaging an enemy for the first two times while a skill is active, ATK increases to 210%<@ba.talpu>(+10%)</> and <$ba.sluggish>Slows</> targets for 3 seconds"
+            }
+        ],
+        [
+            {
+                "name": "Heavy as the Swamp's Mire",
+                "EN": "When damaging an enemy for the first time while a skill is active, ATK increases to 160% and <$ba.sluggish>Slows</> targets for 3 seconds",
+                "CN": "技能期间对每个敌人首次造成伤害时，攻击力提升至160%并使目标<$ba.sluggish>停顿</>3秒",
+                "mod": "技能期间对每个敌人前两次造成伤害时，攻击力提升至220%并使目标<$ba.sluggish>停顿</>3秒",
+                "upgradeDescription": "When damaging an enemy for the first two times while a skill is active, ATK increases to 220% and <$ba.sluggish>Slows</> targets for 3 seconds"
+            },
+            {
+                "name": "Heavy as the Swamp's Mire",
+                "EN": "When damaging an enemy for the first time while a skill is active, ATK increases to 170% <@ba.talpu>(+10%)</> and <$ba.sluggish>Slows</> targets for 3 seconds",
+                "CN": "技能期间对每个敌人首次造成伤害时，攻击力提升至170%<@ba.talpu>(+10%)</>并使目标<$ba.sluggish>停顿</>3秒",
+                "mod": "技能期间对每个敌人前两次造成伤害时，攻击力提升至230%<@ba.talpu>(+10%)</>并使目标<$ba.sluggish>停顿</>3秒",
+                "upgradeDescription": "When damaging an enemy for the first two times while a skill is active, ATK increases to 230%<@ba.talpu>(+10%)</> and <$ba.sluggish>Slows</> targets for 3 seconds"
+            }
+        ]
+    ],
+    "uniequip_003_gdglow": [
+        [
+            {
+                "name": "Precise Redirection",
+                "EN": "Goldenglow and her Drones' attacks ignore 15 RES",
+                "CN": "自身与浮游单元无视敌人15点法术抗性",
+                "mod": "自身与浮游单元无视敌人18点法术抗性",
+                "upgradeDescription": "Goldenglow and her Drones' attacks ignore 18 RES"
+            },
+            {
+                "name": "Precise Redirection",
+                "EN": "Goldenglow and her Drones' attacks ignore 18 <@ba.talpu>(+3)</> RES",
+                "CN": "自身与浮游单元无视敌人18<@ba.talpu>(+3)</>点法术抗性",
+                "mod": "自身与浮游单元无视敌人21<@ba.talpu>(+3)</>点法术抗性",
+                "upgradeDescription": "Goldenglow and her Drones' attacks ignore 21<@ba.talpu>(+3)</> RES"
+            }
+        ],
+        [
+            {
+                "name": "Precise Redirection",
+                "EN": "Goldenglow and her Drones' attacks ignore 15 RES",
+                "CN": "自身与浮游单元无视敌人15点法术抗性",
+                "mod": "自身与浮游单元无视敌人20点法术抗性",
+                "upgradeDescription": "Goldenglow and her Drones' attacks ignore 20 RES"
+            },
+            {
+                "name": "Precise Redirection",
+                "EN": "Goldenglow and her Drones' attacks ignore 18 <@ba.talpu>(+3)</> RES",
+                "CN": "自身与浮游单元无视敌人18<@ba.talpu>(+3)</>点法术抗性",
+                "mod": "自身与浮游单元无视敌人23<@ba.talpu>(+3)</>点法术抗性",
+                "upgradeDescription": "Goldenglow and her Drones' attacks ignore 23<@ba.talpu>(+3)</> RES"
+            }
+        ]
+    ],
+    "uniequip_003_gvial2": [
+        [
+            {
+                "name": "Medical Background",
+                "EN": "Increases this unit's healing received by 20%, increased to 40% when under half HP",
+                "CN": "受到的治疗效果提升20%，生命值低于一半时提升至40%",
+                "mod": "被自身阻挡的敌人受到5%的<$ba.physicfragile>【物理脆弱】</>，自身受到的治疗效果提升25%，生命值低于一半时提升至50%",
+                "upgradeDescription": "Enemies blocked by this unit receive 5% <$ba.physicfragile>[Physical Fragility]</>; Increases this unit's healing received by 25%, increased to 50% when under half HP"
+            },
+            {
+                "name": "Medical Background",
+                "EN": "Increases this unit's healing received by 25% <@ba.talpu>(+5%)</>, increased to 45% <@ba.talpu>(+5%)</> when under half HP",
+                "CN": "受到的治疗效果提升25%<@ba.talpu>(+5%)</>，生命值低于一半时提升至45%<@ba.talpu>(+5%)</>",
+                "mod": "被自身阻挡的敌人受到5%的<$ba.physicfragile>【物理脆弱】</>，自身受到的治疗效果提升30%<@ba.talpu>(+5%)</>，生命值低于一半时提升至55%<@ba.talpu>(+5%)</>",
+                "upgradeDescription": "Enemies blocked by this unit receive 5% <$ba.physicfragile>[Physical Fragility]</>; Increases this unit's healing received by 30%<@ba.talpu>(+5%)</>, increased to 55%<@ba.talpu>(+5%)</> when under half HP"
+            }
+        ],
+        [
+            {
+                "name": "Medical Background",
+                "EN": "Increases this unit's healing received by 20%, increased to 40% when under half HP",
+                "CN": "受到的治疗效果提升20%，生命值低于一半时提升至40%",
+                "mod": "被自身阻挡的敌人受到10%的<$ba.physicfragile>【物理脆弱】</>，自身受到的治疗效果提升30%，生命值低于一半时提升至60%",
+                "upgradeDescription": "Enemies blocked by this unit receive 10% <$ba.physicfragile>[Physical Fragility]</>; Increases this unit's healing received by 30%, increased to 60% when under half HP"
+            },
+            {
+                "name": "Medical Background",
+                "EN": "Increases this unit's healing received by 25% <@ba.talpu>(+5%)</>, increased to 45% <@ba.talpu>(+5%)</> when under half HP",
+                "CN": "受到的治疗效果提升25%<@ba.talpu>(+5%)</>，生命值低于一半时提升至45%<@ba.talpu>(+5%)</>",
+                "mod": "被自身阻挡的敌人受到10%的<$ba.physicfragile>【物理脆弱】</>，自身受到的治疗效果提升35%<@ba.talpu>(+5%)</>，生命值低于一半时提升至65%<@ba.talpu>(+5%)</>",
+                "upgradeDescription": "Enemies blocked by this unit receive 10% <$ba.physicfragile>[Physical Fragility]</>; Increases this unit's healing received by 35%<@ba.talpu>(+5%)</>, increased to 65%<@ba.talpu>(+5%)</> when under half HP"
+            }
+        ]
     ]
 }

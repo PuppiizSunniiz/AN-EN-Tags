@@ -194,6 +194,7 @@
             "char_171_bldsk": "Warfarin",
             "char_345_folnic": "Folinic",
             "char_510_amedic": "Touch",
+            "char_4196_reckpr": "Record Keeper",
             "char_348_ceylon": "Ceylon",
             "char_436_whispr": "Whisperain",
             "char_4173_nowell": "Nowell",
@@ -394,6 +395,7 @@
             "char_1032_excu2": "Executor the Ex Foedere",
             "char_4010_etlchi": "Entelechia",
             "char_4064_mlynar": "Młynar",
+            "char_1043_leizi2": "Leizi the Thunderbringer",
             "char_230_savage": "Savage",
             "char_282_catap": "Catapult",
             "char_283_midn": "Midnight",
@@ -990,6 +992,9 @@
                 "char_510_amedic",
                 "char_613_acmedc"
             ],
+            "Record Keeper": [
+                "char_4196_reckpr"
+            ],
             "Ceylon": [
                 "char_348_ceylon"
             ],
@@ -1572,6 +1577,9 @@
             ],
             "Młynar": [
                 "char_4064_mlynar"
+            ],
+            "Leizi the Thunderbringer": [
+                "char_1043_leizi2"
             ],
             "Savage": [
                 "char_230_savage"
@@ -2185,6 +2193,9 @@
                 "char_510_amedic",
                 "char_613_acmedc"
             ],
+            "录武官": [
+                "char_4196_reckpr"
+            ],
             "锡兰": [
                 "char_348_ceylon"
             ],
@@ -2768,6 +2779,9 @@
             "玛恩纳": [
                 "char_4064_mlynar"
             ],
+            "司霆惊蛰": [
+                "char_1043_leizi2"
+            ],
             "暴行": [
                 "char_230_savage"
             ],
@@ -2984,6 +2998,16 @@
             "🟦🟦🟦⬛",
             "🟦🟦⬛⬛",
             "[[0, 2], [1, 2], [0, 1], [1, 1], [2, 1], [0, 0], [1, 0], [2, 0], [3, 0], [0, -1], [1, -1], [2, -1], [0, -2], [1, -2]]"
+        ],
+        "3-19": [
+            "🟦⬛⬛⬛",
+            "🟦⬛⬛⬛",
+            "🟦⬛⬛⬛",
+            "🟨🟦🟦🟦",
+            "🟦⬛⬛⬛",
+            "🟦⬛⬛⬛",
+            "🟦⬛⬛⬛",
+            "[[0, 3], [0, 2], [0, 1], [0, 0], [1, 0], [2, 0], [3, 0], [0, -1], [0, -2], [0, -3]]"
         ],
         "4-1": [
             "🟨🟦🟦🟦🟦",

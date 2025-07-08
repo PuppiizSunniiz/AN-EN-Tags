@@ -8669,5 +8669,76 @@
                 "desc": "Enemies within Attack Range take 130%<@ba.talpu>(+10%)</> ATK as Elemental Damage when they <$ba.palsy>Paralyze</>"
             }
         ]
+    ],
+	"char_1043_leizi2": [
+        [
+            {
+                "name": "明断",
+                "descCN": "攻击范围内地块每秒有10%的概率落雷造成相当于攻击力50%的法术伤害。未开启技能时<$ba.liftoff>起飞</>",
+                "desc": "Each tile within Attack Range has 10% chance to has Lightning strikes every second, deal 50% ATK as Arts damage to enemies; <$ba.liftoff>Take Off</> when skill is inactive."
+            },
+            {
+                "name": "明断",
+                "descCN": "攻击范围内地块每秒有10%的概率落雷造成相当于攻击力50%的法术伤害。未开启技能时<$ba.liftoff>起飞</>",
+                "desc": "Each tile within Attack Range has 10% chance to has Lightning strike every second, deal 50% ATK as Arts damage to enemies; <$ba.liftoff>Take Off</> when skill is inactive."
+            },
+            {
+                "name": "明断",
+                "descCN": "攻击范围内每个地块每秒有10%的概率落雷对所有敌人造成相当于攻击力80%的法术伤害。未开启技能时<$ba.liftoff>起飞</>；技能期间攻击时攻击力提升至104%",
+                "desc": "Each tile within Attack Range has 10% chance to has Lightning strike every second, deal 80% ATK as Arts damage to enemies; <$ba.liftoff>Take Off</> when skill is inactive. ATK is increased to 104% when skill is active."
+            },
+            {
+                "name": "明断",
+                "descCN": "攻击范围内每个地块每秒有10%的概率落雷对所有敌人造成相当于攻击力80%的法术伤害。未开启技能时<$ba.liftoff>起飞</>；技能期间攻击时攻击力提升至108%<@ba.talpu>(+4%)</>",
+                "desc": "Each tile within Attack Range has 10% chance to has Lightning strike every second, deal 80% ATK as Arts damage to enemies; <$ba.liftoff>Take Off</> when skill is inactive. ATK is increased to 108%<@ba.talpu>(+4%)</> when skill is active."
+            },
+            {
+                "name": "明断",
+                "descCN": "攻击范围内每个地块每秒有10%的概率落雷对所有敌人造成相当于攻击力100%的法术伤害。未开启技能时<$ba.liftoff>起飞</>；技能期间攻击时攻击力提升至107%",
+                "desc": "Each tile within Attack Range has 10% chance to has Lightning strike every second, deal 100% ATK as Arts damage to enemies; <$ba.liftoff>Take Off</> when skill is inactive. ATK is increased to 107% when skill is active."
+            },
+            {
+                "name": "明断",
+                "descCN": "攻击范围内每个地块每秒有10%的概率落雷对所有敌人造成相当于攻击力100%的法术伤害。未开启技能时<$ba.liftoff>起飞</>；技能期间攻击时攻击力提升至111%<@ba.talpu>(+4%)</>",
+                "desc": "Each tile within Attack Range has 10% chance to has Lightning strike every second, deal 100% ATK as Arts damage to enemies; <$ba.liftoff>Take Off</> when skill is inactive. ATK is increased to 111%<@ba.talpu>(+4%)</> when skill is active."
+            }
+        ],
+        [
+            {
+                "name": "追责",
+                "descCN": "开启技能时，使攻击范围内所有地面地块落雷，对所有敌人造成相当于攻击力100%的法术伤害和2秒<$ba.tremble>战栗</>",
+                "desc": "When skill is activated, Lightning strikes all ground tile within Attack Range, deal 100% ATK as Arts damage to ground enemies and <$ba.tremble>frighten</> them for 2 seconds."
+            },
+            {
+                "name": "追责",
+                "descCN": "开启技能时，使攻击范围内所有地面地块落雷，对所有敌人造成相当于攻击力100%的法术伤害和3<@ba.talpu>(+1)</>秒<$ba.tremble>战栗</>",
+                "desc": "When skill is activated, Lightning strikes all ground tile within Attack Range, deal 100% ATK as Arts damage to ground enemies and <$ba.tremble>frighten</> them for 3<@ba.talpu>(+1)</> seconds."
+            }
+        ],
+        []
+    ],
+    "char_4196_reckpr": [
+        [
+            {
+                "name": "学成于聚",
+                "descCN": "攻击范围内的干员开启技能时自身回复1点技力，且攻击速度+8，持续8秒",
+                "desc": "When an operator in Attack Range activate skill, recover 1 SP and ASPD+8 for 8 seconds."
+            },
+            {
+                "name": "学成于聚",
+                "descCN": "攻击范围内的干员开启技能时自身回复1点技力，且攻击速度+8，持续10<@ba.talpu>(+2)</>秒",
+                "desc": "When an operator in Attack Range activate skill, recover 1 SP and ASPD+8 for 10<@ba.talpu>(+2)</> seconds."
+            },
+            {
+                "name": "学成于聚",
+                "descCN": "攻击范围内的干员开启技能时自身回复1点技力，且攻击速度+16，持续8秒",
+                "desc": "When an operator in Attack Range activate skill, recover 1 SP and ASPD+16 for 8 seconds."
+            },
+            {
+                "name": "学成于聚",
+                "descCN": "攻击范围内的干员开启技能时自身回复1点技力，且攻击速度+16，持续10<@ba.talpu>(+2)</>秒",
+                "desc": "When an operator in Attack Range activate skill, recover 1 SP and ASPD+16 for 10<@ba.talpu>(+2)</> seconds."
+            }
+        ]
     ]
 }

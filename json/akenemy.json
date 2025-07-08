@@ -3584,6 +3584,35 @@
                             }
                         }
                     }
+                },
+                "act19mini": {
+                    "name": "[FM] : Fantasy in The Mirage",
+                    "date": 1751947200,
+                    "zone": {
+                        "act19mini_zone1": {
+                            "name": "走入城市",
+                            "stage": {
+                                "act19mini_01": "FM-1 : 求同则塞",
+                                "act19mini_01#f#": "FM-1 : 求同则塞 <b>(Challenge)</b>",
+                                "act19mini_02": "FM-2 : 求异则悖",
+                                "act19mini_02#f#": "FM-2 : 求异则悖 <b>(Challenge)</b>",
+                                "act19mini_03": "FM-3 : 求遐则失",
+                                "act19mini_03#f#": "FM-3 : 求遐则失 <b>(Challenge)</b>",
+                                "act19mini_04": "FM-4 : 求迩则乱",
+                                "act19mini_04#f#": "FM-4 : 求迩则乱 <b>(Challenge)</b>",
+                                "act19mini_05": "FM-5 : 求缓则迟",
+                                "act19mini_05#f#": "FM-5 : 求缓则迟 <b>(Challenge)</b>",
+                                "act19mini_06": "FM-6 : 求速则贪",
+                                "act19mini_06#f#": "FM-6 : 求速则贪 <b>(Challenge)</b>",
+                                "act19mini_07": "FM-7 : 求退则惘",
+                                "act19mini_07#f#": "FM-7 : 求退则惘 <b>(Challenge)</b>",
+                                "act19mini_08": "FM-8 : 求进则愎",
+                                "act19mini_08#f#": "FM-8 : 求进则愎 <b>(Challenge)</b>",
+                                "act19mini_s01": "FM-S-1 : 有求则苦",
+                                "act19mini_s02": "FM-S-2 : 莫向外求"
+                            }
+                        }
+                    }
                 }
             }
         },
@@ -6230,6 +6259,7 @@
         "weekly_2": "PR-B : Fierce Attack (Snipers & Casters)",
         "weekly_3": "PR-C : Unstoppable Charge (Vanguards & Supporters)",
         "weekly_4": "PR-D : Fearless Protection (Guards & Specialists)",
+        "act19mini": "[FM] : Fantasy in The Mirage",
         "act5bossrush": "Trials for Navigator #5",
         "act43side": "[AD] : Act or Die",
         "act1break": "Vector Breakthrough #1 : Mechanist",
@@ -30500,6 +30530,13 @@
                     ]
                 }
             },
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_s02"
+                    ]
+                }
+            },
             "cc": {
                 "CCBP#03": {
                     "CCBP#03": [
@@ -30565,6 +30602,13 @@
                         "tough_14-12",
                         "tough_14-15",
                         "hard_14-02"
+                    ]
+                }
+            },
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_s02"
                     ]
                 }
             },
@@ -30671,6 +30715,13 @@
                     ]
                 }
             },
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_s02"
+                    ]
+                }
+            },
             "is": {
                 "IS#5": {
                     "IS#5 Floor 6": [
@@ -30699,6 +30750,13 @@
                     ],
                     "EP14 : Standard Environment": [
                         "main_14-17"
+                    ]
+                }
+            },
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_s02"
                     ]
                 }
             },
@@ -32154,6 +32212,1918 @@
                         "RA#2_monthly_1",
                         "RA#2_monthly_1",
                         "RA#2_monthly_1"
+                    ]
+                }
+            }
+        },
+        "enemy_1126_spslme": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_01",
+                        "act19mini_01",
+                        "act19mini_01#f#",
+                        "act19mini_01#f#",
+                        "act19mini_02",
+                        "act19mini_02#f#"
+                    ]
+                },
+                "act16mini": {
+                    "act16mini_zone1": [
+                        "act16mini_06",
+                        "act16mini_06",
+                        "act16mini_06#f#",
+                        "act16mini_06#f#"
+                    ]
+                },
+                "act16d5": {
+                    "act9sre_zone1": [
+                        "act16d5_07",
+                        "act16d5_07",
+                        "act16d5_08",
+                        "act16d5_08",
+                        "act16d5_10",
+                        "act16d5_10"
+                    ]
+                }
+            },
+            "exp": {
+                "act1arcade": {
+                    "zone_1": [
+                        "act1arcade_m1_03",
+                        "act1arcade_m1_03"
+                    ]
+                }
+            },
+            "cc": {
+                "CC#07": {
+                    "CC#07": [
+                        "rune_09-01"
+                    ]
+                },
+                "CC#08": {
+                    "CC#08": [
+                        "rune_09-01"
+                    ]
+                },
+                "CC#09": {
+                    "CC#09": [
+                        "rune_09-01"
+                    ]
+                },
+                "CC#10": {
+                    "CC#10": [
+                        "rune_09-01"
+                    ]
+                }
+            }
+        },
+        "enemy_1123_spsbr": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_01",
+                        "act19mini_01#f#",
+                        "act19mini_02",
+                        "act19mini_02#f#"
+                    ]
+                },
+                "act36side": {
+                    "act36side_zone1": [
+                        "act36side_05"
+                    ]
+                },
+                "act16mini": {
+                    "act16mini_zone1": [
+                        "act16mini_06",
+                        "act16mini_06#f#"
+                    ]
+                },
+                "act13mini": {
+                    "act13mini_zone1": [
+                        "act13mini_s01",
+                        "act13mini_s01"
+                    ]
+                },
+                "act10mini": {
+                    "act10mini_zone1": [
+                        "act10mini_10"
+                    ]
+                },
+                "act15side": {
+                    "act15sre_zone1": [
+                        "act15side_01",
+                        "act15side_01"
+                    ]
+                },
+                "act16d5": {
+                    "act9sre_zone1": [
+                        "act16d5_01",
+                        "act16d5_01",
+                        "act16d5_tr01",
+                        "act16d5_tr01",
+                        "act16d5_02",
+                        "act16d5_02",
+                        "act16d5_04",
+                        "act16d5_04",
+                        "act16d5_05",
+                        "act16d5_07",
+                        "act16d5_07",
+                        "act16d5_08",
+                        "act16d5_08",
+                        "act16d5_09",
+                        "act16d5_09",
+                        "act16d5_10",
+                        "act16d5_10"
+                    ]
+                }
+            },
+            "exp": {
+                "act1arcade": {
+                    "zone_1": [
+                        "act1arcade_m1_03"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_01",
+                        "lt_18_02"
+                    ]
+                }
+            },
+            "cc": {
+                "CC#07": {
+                    "CC#07": [
+                        "rune_09-01"
+                    ]
+                },
+                "CC#08": {
+                    "CC#08": [
+                        "rune_09-01"
+                    ]
+                },
+                "CC#09": {
+                    "CC#09": [
+                        "rune_11-02",
+                        "rune_09-01"
+                    ]
+                },
+                "CC#10": {
+                    "CC#10": [
+                        "rune_09-01",
+                        "rune_11-02"
+                    ]
+                },
+                "CC#11": {
+                    "CC#11": [
+                        "rune_11-02"
+                    ]
+                },
+                "CC#12": {
+                    "CC#12": [
+                        "rune_11-02"
+                    ]
+                }
+            }
+        },
+        "enemy_1124_spbow": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_02",
+                        "act19mini_02#f#"
+                    ]
+                },
+                "act16d5": {
+                    "act9sre_zone1": [
+                        "act16d5_02",
+                        "act16d5_02",
+                        "act16d5_03",
+                        "act16d5_03",
+                        "act16d5_09",
+                        "act16d5_09"
+                    ]
+                }
+            }
+        },
+        "enemy_1390_dhsbr": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_03",
+                        "act19mini_03#f#",
+                        "act19mini_04",
+                        "act19mini_04#f#"
+                    ]
+                },
+                "act31side": {
+                    "act31sre_zone1": [
+                        "act31side_01",
+                        "act31side_tr01",
+                        "act31side_02",
+                        "act31side_03",
+                        "act31side_04",
+                        "act31side_tr02",
+                        "act31side_05",
+                        "act31side_06",
+                        "act31side_07",
+                        "act31side_08",
+                        "act31side_09"
+                    ],
+                    "act31sre_zone3": [
+                        "act31side_mo01"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_26": {
+                    "camp_r_26": [
+                        "camp_r_26"
+                    ]
+                }
+            }
+        },
+        "enemy_1391_dhbow": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_03",
+                        "act19mini_03#f#",
+                        "act19mini_04",
+                        "act19mini_04#f#"
+                    ]
+                },
+                "act31side": {
+                    "act31sre_zone1": [
+                        "act31side_02",
+                        "act31side_05",
+                        "act31side_06",
+                        "act31side_07",
+                        "act31side_08",
+                        "act31side_09"
+                    ],
+                    "act31sre_zone2": [
+                        "act31side_ex06",
+                        "act31side_ex06#f#"
+                    ],
+                    "act31sre_zone3": [
+                        "act31side_mo01"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_26": {
+                    "camp_r_26": [
+                        "camp_r_26"
+                    ]
+                }
+            }
+        },
+        "enemy_1393_dhele": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_03",
+                        "act19mini_03#f#"
+                    ]
+                },
+                "act31side": {
+                    "act31sre_zone1": [
+                        "act31side_04",
+                        "act31side_05",
+                        "act31side_09"
+                    ],
+                    "act31sre_zone3": [
+                        "act31side_mo01"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_26": {
+                    "camp_r_26": [
+                        "camp_r_26"
+                    ]
+                }
+            }
+        },
+        "enemy_1392_dhshld": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_03",
+                        "act19mini_03#f#"
+                    ]
+                },
+                "act31side": {
+                    "act31sre_zone1": [
+                        "act31side_03",
+                        "act31side_tr02",
+                        "act31side_07",
+                        "act31side_08",
+                        "act31side_09"
+                    ],
+                    "act31sre_zone3": [
+                        "act31side_mo01"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_26": {
+                    "camp_r_26": [
+                        "camp_r_26"
+                    ]
+                }
+            }
+        },
+        "enemy_1397_dhtsxt": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_04",
+                        "act19mini_04",
+                        "act19mini_04#f#",
+                        "act19mini_04#f#"
+                    ]
+                },
+                "act31side": {
+                    "act31sre_zone1": [
+                        "act31side_06",
+                        "act31side_08"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_26": {
+                    "camp_r_26": [
+                        "camp_r_26",
+                        "camp_r_26"
+                    ]
+                }
+            }
+        },
+        "enemy_1395_dhxts": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_04",
+                        "act19mini_04#f#"
+                    ]
+                },
+                "act31side": {
+                    "act31sre_zone1": [
+                        "act31side_tr01",
+                        "act31side_03",
+                        "act31side_04",
+                        "act31side_05",
+                        "act31side_06"
+                    ],
+                    "act31sre_zone3": [
+                        "act31side_mo01"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_26": {
+                    "camp_r_26": [
+                        "camp_r_26"
+                    ]
+                }
+            }
+        },
+        "enemy_1301_ymcnon": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_05",
+                        "act19mini_05#f#"
+                    ]
+                },
+                "act16mini": {
+                    "act16mini_zone1": [
+                        "act16mini_08",
+                        "act16mini_08#f#"
+                    ]
+                },
+                "act23side": {
+                    "act23sre_zone1": [
+                        "act23side_07"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_06",
+                        "act1multi_ex06"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_20": {
+                    "camp_r_20": [
+                        "camp_r_20"
+                    ]
+                }
+            }
+        },
+        "enemy_1295_ymph_2": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_05",
+                        "act19mini_05#f#"
+                    ]
+                },
+                "act23side": {
+                    "act23sre_zone2": [
+                        "act23side_ex01",
+                        "act23side_ex01#f#",
+                        "act23side_ex03",
+                        "act23side_ex03#f#",
+                        "act23side_ex04",
+                        "act23side_ex04#f#",
+                        "act23side_ex05",
+                        "act23side_ex05#f#",
+                        "act23side_ex06",
+                        "act23side_ex06#f#",
+                        "act23side_ex07",
+                        "act23side_ex07#f#",
+                        "act23side_ex08",
+                        "act23side_ex08#f#"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_06",
+                        "act1multi_ex06",
+                        "act1multi_hard-02"
+                    ]
+                }
+            },
+            "tn": {
+                "act4bossrush": {
+                    "act4bossrush_zone1": [
+                        "act4bossrush_04"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_20": {
+                    "camp_r_20": [
+                        "camp_r_20"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_05",
+                        "lt_16_06"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#01": {
+                    "CCBP#01": [
+                        "crisis_v2_01-02"
+                    ]
+                },
+                "CCBP#02": {
+                    "CCBP#02": [
+                        "crisis_v2_01-02"
+                    ]
+                }
+            },
+            "is": {
+                "IS#4": {
+                    "IS#4 Floor 5": [
+                        "rogue3_5-6"
+                    ]
+                }
+            }
+        },
+        "enemy_1297_ymflag_2": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_05",
+                        "act19mini_05#f#"
+                    ]
+                },
+                "act23side": {
+                    "act23sre_zone2": [
+                        "act23side_ex01",
+                        "act23side_ex01#f#",
+                        "act23side_ex02",
+                        "act23side_ex02#f#",
+                        "act23side_ex03",
+                        "act23side_ex03#f#",
+                        "act23side_ex04",
+                        "act23side_ex04#f#",
+                        "act23side_ex07",
+                        "act23side_ex07#f#",
+                        "act23side_ex08",
+                        "act23side_ex08#f#"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_06",
+                        "act1multi_ex06",
+                        "act1multi_hard-02"
+                    ]
+                }
+            },
+            "tn": {
+                "act4bossrush": {
+                    "act4bossrush_zone1": [
+                        "act4bossrush_04"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_20": {
+                    "camp_r_20": [
+                        "camp_r_20"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_06"
+                    ]
+                }
+            }
+        },
+        "enemy_1296_ymknif": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_05",
+                        "act19mini_05#f#",
+                        "act19mini_06",
+                        "act19mini_06#f#"
+                    ]
+                },
+                "act23side": {
+                    "act23sre_zone1": [
+                        "act23side_01",
+                        "act23side_02",
+                        "act23side_03",
+                        "act23side_04",
+                        "act23side_07",
+                        "act23side_08"
+                    ],
+                    "act23sre_zone2": [
+                        "act23side_ex02",
+                        "act23side_ex02#f#"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_06",
+                        "act1multi_ex06"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_20": {
+                    "camp_r_20": [
+                        "camp_r_20"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_03",
+                        "lt_16_05"
+                    ]
+                }
+            }
+        },
+        "enemy_1295_ymph": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_06",
+                        "act19mini_06#f#"
+                    ]
+                },
+                "act23side": {
+                    "act23sre_zone1": [
+                        "act23side_tr01",
+                        "act23side_01",
+                        "act23side_02",
+                        "act23side_03",
+                        "act23side_04",
+                        "act23side_05",
+                        "act23side_06",
+                        "act23side_07",
+                        "act23side_08",
+                        "act23side_09"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_03",
+                        "act1multi_06",
+                        "act1multi_ex03",
+                        "act1multi_ex06"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_20": {
+                    "camp_r_20": [
+                        "camp_r_20"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_01",
+                        "lt_16_02",
+                        "lt_16_03",
+                        "lt_16_04",
+                        "lt_16_05"
+                    ]
+                }
+            }
+        },
+        "enemy_1298_ymmonk": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_06",
+                        "act19mini_06#f#"
+                    ]
+                },
+                "act23side": {
+                    "act23sre_zone1": [
+                        "act23side_04",
+                        "act23side_05",
+                        "act23side_07",
+                        "act23side_08",
+                        "act23side_09"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_06",
+                        "act1multi_ex06"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_20": {
+                    "camp_r_20": [
+                        "camp_r_20"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_02",
+                        "lt_16_05"
+                    ]
+                }
+            }
+        },
+        "enemy_1300_ymmir": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_06",
+                        "act19mini_06#f#"
+                    ]
+                },
+                "act23side": {
+                    "act23sre_zone1": [
+                        "act23side_06"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_06",
+                        "act1multi_ex06"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_20": {
+                    "camp_r_20": [
+                        "camp_r_20"
+                    ]
+                }
+            }
+        },
+        "enemy_1299_ymkilr": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_06",
+                        "act19mini_06#f#"
+                    ]
+                },
+                "act23side": {
+                    "act23sre_zone1": [
+                        "act23side_tr01",
+                        "act23side_05",
+                        "act23side_06",
+                        "act23side_09"
+                    ],
+                    "act23sre_zone2": [
+                        "act23side_ex01",
+                        "act23side_ex01#f#"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_03",
+                        "act1multi_06",
+                        "act1multi_ex03",
+                        "act1multi_ex06"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_20": {
+                    "camp_r_20": [
+                        "camp_r_20"
+                    ]
+                }
+            }
+        },
+        "enemy_1299_ymkilr_2": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_06",
+                        "act19mini_06#f#"
+                    ]
+                },
+                "act23side": {
+                    "act23sre_zone2": [
+                        "act23side_ex01",
+                        "act23side_ex01#f#",
+                        "act23side_ex03",
+                        "act23side_ex03#f#",
+                        "act23side_ex05",
+                        "act23side_ex05#f#",
+                        "act23side_ex07",
+                        "act23side_ex07#f#",
+                        "act23side_ex08",
+                        "act23side_ex08#f#"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_03",
+                        "act1multi_06",
+                        "act1multi_ex03",
+                        "act1multi_ex06",
+                        "act1multi_hard-02"
+                    ]
+                }
+            },
+            "tn": {
+                "act4bossrush": {
+                    "act4bossrush_zone1": [
+                        "act4bossrush_04"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_20": {
+                    "camp_r_20": [
+                        "camp_r_20"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#01": {
+                    "CCBP#01": [
+                        "crisis_v2_01-02"
+                    ]
+                },
+                "CCBP#02": {
+                    "CCBP#02": [
+                        "crisis_v2_01-02"
+                    ]
+                }
+            },
+            "is": {
+                "IS#4": {
+                    "IS#4 Floor 5": [
+                        "rogue3_5-6"
+                    ]
+                },
+                "IS#5": {
+                    "IS#5 Floor 7": [
+                        "rogue4_7-2"
+                    ],
+                    "IS#5 Duel": [
+                        "rogue4_d-3"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Normal Rushparty": [
+                        "RA#2_normal_group10",
+                        "RA#2_normal_group10"
+                    ],
+                    "RA#2 Elite Rushparty": [
+                        "RA#2_elite_group9",
+                        "RA#2_elite_group9",
+                        "RA#2_elite_group9"
+                    ],
+                    "RA#2 Bandit Rushparty": [
+                        "RA#2_bandit_group3",
+                        "RA#2_bandit_group3"
+                    ]
+                }
+            }
+        },
+        "enemy_1300_ymmir_2": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_06",
+                        "act19mini_06#f#"
+                    ]
+                },
+                "act23side": {
+                    "act23sre_zone2": [
+                        "act23side_ex02",
+                        "act23side_ex02#f#",
+                        "act23side_ex04",
+                        "act23side_ex04#f#",
+                        "act23side_ex06",
+                        "act23side_ex06#f#"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_06",
+                        "act1multi_ex06",
+                        "act1multi_hard-02"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_20": {
+                    "camp_r_20": [
+                        "camp_r_20"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#01": {
+                    "CCBP#01": [
+                        "crisis_v2_01-02"
+                    ]
+                },
+                "CCBP#02": {
+                    "CCBP#02": [
+                        "crisis_v2_01-02"
+                    ]
+                }
+            },
+            "is": {
+                "IS#4": {
+                    "IS#4 Floor 5": [
+                        "rogue3_5-6"
+                    ]
+                },
+                "IS#5": {
+                    "IS#5 Floor 7": [
+                        "rogue4_7-2"
+                    ],
+                    "IS#5 Duel": [
+                        "rogue4_d-3"
+                    ]
+                }
+            }
+        },
+        "enemy_1390_dhsbr_2": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_07",
+                        "act19mini_07#f#"
+                    ]
+                },
+                "act31side": {
+                    "act31sre_zone2": [
+                        "act31side_ex01",
+                        "act31side_ex01#f#",
+                        "act31side_ex03",
+                        "act31side_ex03#f#",
+                        "act31side_ex04",
+                        "act31side_ex04#f#",
+                        "act31side_ex05",
+                        "act31side_ex05#f#",
+                        "act31side_ex06",
+                        "act31side_ex06#f#",
+                        "act31side_ex07",
+                        "act31side_ex07#f#",
+                        "act31side_ex08",
+                        "act31side_ex08#f#"
+                    ],
+                    "act31sre_zone3": [
+                        "act31side_s01",
+                        "act31side_s01#f#",
+                        "act31side_s02",
+                        "act31side_s02#f#",
+                        "act31side_s03",
+                        "act31side_s03#f#",
+                        "act31side_s04",
+                        "act31side_s04#f#",
+                        "act31side_mo01"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_hard-03"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_26": {
+                    "camp_r_26": [
+                        "camp_r_26"
+                    ]
+                }
+            }
+        },
+        "enemy_1394_dhzts_2": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_07",
+                        "act19mini_07#f#"
+                    ]
+                },
+                "act31side": {
+                    "act31sre_zone2": [
+                        "act31side_ex05",
+                        "act31side_ex05#f#",
+                        "act31side_ex06",
+                        "act31side_ex06#f#"
+                    ],
+                    "act31sre_zone3": [
+                        "act31side_s02",
+                        "act31side_s02#f#",
+                        "act31side_s03",
+                        "act31side_s03#f#",
+                        "act31side_s04",
+                        "act31side_s04#f#",
+                        "act31side_mo01"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_hard-03"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_26": {
+                    "camp_r_26": [
+                        "camp_r_26"
+                    ]
+                }
+            }
+        },
+        "enemy_1391_dhbow_2": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_07",
+                        "act19mini_07#f#"
+                    ]
+                },
+                "act31side": {
+                    "act31sre_zone2": [
+                        "act31side_ex01",
+                        "act31side_ex01#f#",
+                        "act31side_ex04",
+                        "act31side_ex04#f#",
+                        "act31side_ex05",
+                        "act31side_ex05#f#",
+                        "act31side_ex07",
+                        "act31side_ex07#f#",
+                        "act31side_ex08",
+                        "act31side_ex08#f#"
+                    ],
+                    "act31sre_zone3": [
+                        "act31side_s01",
+                        "act31side_s01#f#",
+                        "act31side_s02",
+                        "act31side_s02#f#",
+                        "act31side_s04",
+                        "act31side_s04#f#",
+                        "act31side_mo01"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_hard-03"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_26": {
+                    "camp_r_26": [
+                        "camp_r_26"
+                    ]
+                }
+            }
+        },
+        "enemy_1392_dhshld_2": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_07",
+                        "act19mini_07#f#"
+                    ]
+                },
+                "act31side": {
+                    "act31sre_zone2": [
+                        "act31side_ex03",
+                        "act31side_ex03#f#",
+                        "act31side_ex05",
+                        "act31side_ex05#f#",
+                        "act31side_ex07",
+                        "act31side_ex07#f#",
+                        "act31side_ex08",
+                        "act31side_ex08#f#"
+                    ],
+                    "act31sre_zone3": [
+                        "act31side_s01",
+                        "act31side_s01#f#",
+                        "act31side_s03",
+                        "act31side_s03#f#",
+                        "act31side_s04",
+                        "act31side_s04#f#",
+                        "act31side_mo01"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_hard-03"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_26": {
+                    "camp_r_26": [
+                        "camp_r_26"
+                    ]
+                }
+            }
+        },
+        "enemy_1398_dhdcr_2": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_07",
+                        "act19mini_07#f#"
+                    ]
+                },
+                "act31side": {
+                    "act31sre_zone2": [
+                        "act31side_ex03",
+                        "act31side_ex03#f#",
+                        "act31side_ex07",
+                        "act31side_ex07#f#",
+                        "act31side_ex08",
+                        "act31side_ex08#f#"
+                    ],
+                    "act31sre_zone3": [
+                        "act31side_s01",
+                        "act31side_s01#f#"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_hard-03"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_26": {
+                    "camp_r_26": [
+                        "camp_r_26"
+                    ]
+                }
+            }
+        },
+        "enemy_1399_dhtb_2": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_07",
+                        "act19mini_07#f#"
+                    ]
+                },
+                "act31side": {
+                    "act31sre_zone2": [
+                        "act31side_ex03",
+                        "act31side_ex03#f#",
+                        "act31side_ex07",
+                        "act31side_ex07#f#",
+                        "act31side_ex08",
+                        "act31side_ex08#f#"
+                    ],
+                    "act31sre_zone3": [
+                        "act31side_s01",
+                        "act31side_s01#f#",
+                        "act31side_s04",
+                        "act31side_s04#f#"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_04",
+                        "act1multi_ex04",
+                        "act1multi_hard-03"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_26": {
+                    "camp_r_26": [
+                        "camp_r_26"
+                    ]
+                }
+            }
+        },
+        "enemy_1400_dhtbgj_2": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_07",
+                        "act19mini_07#f#"
+                    ]
+                },
+                "act31side": {
+                    "act31sre_zone2": [
+                        "act31side_ex03",
+                        "act31side_ex03#f#",
+                        "act31side_ex07",
+                        "act31side_ex07#f#",
+                        "act31side_ex08",
+                        "act31side_ex08#f#"
+                    ],
+                    "act31sre_zone3": [
+                        "act31side_s01",
+                        "act31side_s01#f#",
+                        "act31side_s04",
+                        "act31side_s04#f#"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_04",
+                        "act1multi_ex04",
+                        "act1multi_hard-03"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_26": {
+                    "camp_r_26": [
+                        "camp_r_26"
+                    ]
+                }
+            }
+        },
+        "enemy_1395_dhxts_2": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_07",
+                        "act19mini_07#f#"
+                    ]
+                },
+                "act31side": {
+                    "act31sre_zone2": [
+                        "act31side_ex02",
+                        "act31side_ex02#f#",
+                        "act31side_ex06",
+                        "act31side_ex06#f#"
+                    ],
+                    "act31sre_zone3": [
+                        "act31side_s02",
+                        "act31side_s02#f#",
+                        "act31side_s03",
+                        "act31side_s03#f#",
+                        "act31side_mo01"
+                    ]
+                }
+            },
+            "vb": {
+                "act1break": {
+                    "act1break_zone3": [
+                        "act1break_sp04",
+                        "act1break_sp05"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_hard-03"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_26": {
+                    "camp_r_26": [
+                        "camp_r_26"
+                    ]
+                }
+            }
+        },
+        "enemy_1123_spsbr_2": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_08",
+                        "act19mini_08#f#"
+                    ]
+                },
+                "act36side": {
+                    "act36side_zone2": [
+                        "act36side_ex05",
+                        "act36side_ex05#f#"
+                    ]
+                },
+                "act14mini": {
+                    "act14mini_zone1": [
+                        "act14mini_s01"
+                    ]
+                },
+                "act13mini": {
+                    "act13mini_zone1": [
+                        "act13mini_06",
+                        "act13mini_06",
+                        "act13mini_06#f#",
+                        "act13mini_06#f#"
+                    ]
+                },
+                "act16d5": {
+                    "act9sre_zone2": [
+                        "act16d5_ex01",
+                        "act16d5_ex01",
+                        "act16d5_ex01#f#",
+                        "act16d5_ex01#f#",
+                        "act16d5_ex02",
+                        "act16d5_ex02",
+                        "act16d5_ex02#f#",
+                        "act16d5_ex02#f#",
+                        "act16d5_ex03",
+                        "act16d5_ex03#f#",
+                        "act16d5_ex04",
+                        "act16d5_ex04",
+                        "act16d5_ex04#f#",
+                        "act16d5_ex04#f#",
+                        "act16d5_ex05",
+                        "act16d5_ex05",
+                        "act16d5_ex05#f#",
+                        "act16d5_ex05#f#",
+                        "act16d5_ex07",
+                        "act16d5_ex07",
+                        "act16d5_ex07#f#",
+                        "act16d5_ex07#f#",
+                        "act16d5_ex08",
+                        "act16d5_ex08#f#"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_18": {
+                    "tower_n_18": [
+                        "lt_18_02",
+                        "lt_18_04",
+                        "lt_18_05",
+                        "lt_18_06"
+                    ]
+                }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 6": [
+                        "rogue4_b-7"
+                    ]
+                }
+            }
+        },
+        "enemy_1124_spbow_2": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_08",
+                        "act19mini_08#f#"
+                    ]
+                },
+                "act36side": {
+                    "act36side_zone2": [
+                        "act36side_ex05",
+                        "act36side_ex05#f#"
+                    ]
+                },
+                "act9mini": {
+                    "act9mini_zone1": [
+                        "act9mini_04",
+                        "act9mini_04#f#"
+                    ]
+                },
+                "act16d5": {
+                    "act9sre_zone2": [
+                        "act16d5_ex01",
+                        "act16d5_ex01",
+                        "act16d5_ex01#f#",
+                        "act16d5_ex01#f#",
+                        "act16d5_ex05",
+                        "act16d5_ex05",
+                        "act16d5_ex05#f#",
+                        "act16d5_ex05#f#"
+                    ]
+                }
+            },
+            "tn": {
+                "act4bossrush": {
+                    "act4bossrush_zone1": [
+                        "act4bossrush_04"
+                    ]
+                }
+            }
+        },
+        "enemy_1127_sptrkg_2": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_08",
+                        "act19mini_08",
+                        "act19mini_08#f#",
+                        "act19mini_08#f#"
+                    ]
+                },
+                "act16d5": {
+                    "act9sre_zone2": [
+                        "act16d5_ex03",
+                        "act16d5_ex03#f#",
+                        "act16d5_ex05",
+                        "act16d5_ex05",
+                        "act16d5_ex05#f#",
+                        "act16d5_ex05#f#",
+                        "act16d5_ex06",
+                        "act16d5_ex06",
+                        "act16d5_ex06#f#",
+                        "act16d5_ex06#f#",
+                        "act16d5_ex07",
+                        "act16d5_ex07",
+                        "act16d5_ex07#f#",
+                        "act16d5_ex07#f#",
+                        "act16d5_ex08",
+                        "act16d5_ex08#f#"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_hard-01"
+                    ]
+                }
+            }
+        },
+        "enemy_1128_spmage_2": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_08",
+                        "act19mini_08#f#"
+                    ]
+                },
+                "act16d5": {
+                    "act9sre_zone2": [
+                        "act16d5_ex02",
+                        "act16d5_ex02#f#",
+                        "act16d5_ex05",
+                        "act16d5_ex05",
+                        "act16d5_ex05#f#",
+                        "act16d5_ex05#f#"
+                    ]
+                }
+            },
+            "tn": {
+                "act4bossrush": {
+                    "act4bossrush_zone1": [
+                        "act4bossrush_04"
+                    ]
+                }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 6": [
+                        "rogue4_b-7"
+                    ]
+                }
+            }
+        },
+        "enemy_1129_spklr_2": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_08",
+                        "act19mini_08#f#"
+                    ]
+                },
+                "act36side": {
+                    "act36side_zone2": [
+                        "act36side_ex05",
+                        "act36side_ex05#f#"
+                    ]
+                },
+                "act13mini": {
+                    "act13mini_zone1": [
+                        "act13mini_06",
+                        "act13mini_06",
+                        "act13mini_06#f#",
+                        "act13mini_06#f#"
+                    ]
+                },
+                "act9mini": {
+                    "act9mini_zone1": [
+                        "act9mini_04",
+                        "act9mini_04#f#"
+                    ]
+                },
+                "act16d5": {
+                    "act9sre_zone2": [
+                        "act16d5_ex02",
+                        "act16d5_ex02#f#",
+                        "act16d5_ex07",
+                        "act16d5_ex07",
+                        "act16d5_ex07#f#",
+                        "act16d5_ex07#f#",
+                        "act16d5_ex08",
+                        "act16d5_ex08#f#"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_hard-01"
+                    ]
+                }
+            },
+            "tn": {
+                "act4bossrush": {
+                    "act4bossrush_zone1": [
+                        "act4bossrush_04"
+                    ]
+                }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Floor 6": [
+                        "rogue4_b-7"
+                    ]
+                }
+            }
+        },
+        "enemy_1517_xi": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_08",
+                        "act19mini_08",
+                        "act19mini_08#f#",
+                        "act19mini_08#f#"
+                    ]
+                },
+                "act16d5": {
+                    "act9sre_zone1": [
+                        "act16d5_10"
+                    ],
+                    "act9sre_zone2": [
+                        "act16d5_ex08",
+                        "act16d5_ex08#f#"
+                    ]
+                }
+            },
+            "tn": {
+                "act4bossrush": {
+                    "act4bossrush_zone1": [
+                        "act4bossrush_04"
+                    ]
+                }
+            },
+            "cc": {
+                "CC#07": {
+                    "CC#07": [
+                        "rune_09-01"
+                    ]
+                },
+                "CC#08": {
+                    "CC#08": [
+                        "rune_09-01"
+                    ]
+                },
+                "CC#09": {
+                    "CC#09": [
+                        "rune_09-01"
+                    ]
+                },
+                "CC#10": {
+                    "CC#10": [
+                        "rune_09-01"
+                    ]
+                }
+            }
+        },
+        "enemy_1279_sgbdg": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_s01"
+                    ]
+                },
+                "act21side": {
+                    "act21sre_zone1": [
+                        "act21side_04",
+                        "act21side_05",
+                        "act21side_06",
+                        "act21side_07",
+                        "act21side_08",
+                        "act21side_09",
+                        "act21side_10"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_03",
+                        "act1multi_ex03"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_04"
+                    ]
+                }
+            },
+            "is": {
+                "IS#4": {
+                    "IS#4 Floor 3": [
+                        "rogue3_3-5"
+                    ],
+                    "IS#4 Treasure": [
+                        "rogue3_t-3"
+                    ]
+                },
+                "IS#5": {
+                    "IS#5 Treasure": [
+                        "rogue4_t-2"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Building Material": [
+                        "sandbox_1_46",
+                        "sandbox_1_84"
+                    ]
+                }
+            }
+        },
+        "enemy_1282_sgelder": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_s01"
+                    ]
+                },
+                "act21side": {
+                    "act21sre_zone1": [
+                        "act21side_07",
+                        "act21side_08",
+                        "act21side_09",
+                        "act21side_10"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_03",
+                        "act1multi_ex03"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_04"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Building Material": [
+                        "sandbox_1_46",
+                        "sandbox_1_84"
+                    ]
+                }
+            }
+        },
+        "enemy_1283_sgkill": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_s01"
+                    ]
+                },
+                "act17mini": {
+                    "act17mini_zone1": [
+                        "act17mini_03",
+                        "act17mini_03#f#"
+                    ]
+                },
+                "act21side": {
+                    "act21sre_zone1": [
+                        "act21side_tr01",
+                        "act21side_02",
+                        "act21side_03",
+                        "act21side_04",
+                        "act21side_05",
+                        "act21side_06",
+                        "act21side_07",
+                        "act21side_08",
+                        "act21side_09",
+                        "act21side_10"
+                    ]
+                }
+            },
+            "tn": {
+                "act3bossrush": {
+                    "act3bossrush_zone1": [
+                        "act3bossrush_04"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Field : Building Material": [
+                        "sandbox_1_46",
+                        "sandbox_1_84"
+                    ]
+                }
+            }
+        },
+        "enemy_1277_sgman_2": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_s01"
+                    ]
+                },
+                "act21side": {
+                    "act21sre_zone2": [
+                        "act21side_ex01",
+                        "act21side_ex01#f#",
+                        "act21side_ex02",
+                        "act21side_ex02#f#",
+                        "act21side_ex03",
+                        "act21side_ex03#f#",
+                        "act21side_ex04",
+                        "act21side_ex04#f#",
+                        "act21side_ex05",
+                        "act21side_ex05#f#",
+                        "act21side_ex06",
+                        "act21side_ex06#f#",
+                        "act21side_ex07",
+                        "act21side_ex07#f#",
+                        "act21side_ex08",
+                        "act21side_ex08#f#"
+                    ],
+                    "act21sre_zone3": [
+                        "act21side_s01",
+                        "act21side_s01#f#",
+                        "act21side_s02",
+                        "act21side_s02#f#",
+                        "act21side_s03",
+                        "act21side_s03#f#",
+                        "act21side_s04",
+                        "act21side_s04#f#",
+                        "act21side_s05",
+                        "act21side_s05#f#"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_03",
+                        "act1multi_ex03"
+                    ]
+                }
+            },
+            "tn": {
+                "act3bossrush": {
+                    "act3bossrush_zone1": [
+                        "act3bossrush_04"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_04"
+                    ]
+                }
+            },
+            "is": {
+                "IS#4": {
+                    "IS#4 Floor 1": [
+                        "rogue3_1-3"
+                    ]
+                },
+                "IS#5": {
+                    "IS#5 Treasure": [
+                        "rogue4_t-2"
+                    ],
+                    "IS#5 Event": [
+                        "rogue4_ev-2"
+                    ],
+                    "IS#5 Duel": [
+                        "rogue4_d-3"
+                    ]
+                }
+            }
+        },
+        "enemy_1278_sgbow_2": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_s01"
+                    ]
+                },
+                "act21side": {
+                    "act21sre_zone2": [
+                        "act21side_ex01",
+                        "act21side_ex01#f#",
+                        "act21side_ex02",
+                        "act21side_ex02#f#",
+                        "act21side_ex03",
+                        "act21side_ex03#f#",
+                        "act21side_ex04",
+                        "act21side_ex04#f#",
+                        "act21side_ex05",
+                        "act21side_ex05#f#",
+                        "act21side_ex06",
+                        "act21side_ex06#f#",
+                        "act21side_ex08",
+                        "act21side_ex08#f#"
+                    ],
+                    "act21sre_zone3": [
+                        "act21side_s01",
+                        "act21side_s01#f#",
+                        "act21side_s02",
+                        "act21side_s02#f#",
+                        "act21side_s03",
+                        "act21side_s03#f#",
+                        "act21side_s04",
+                        "act21side_s04#f#",
+                        "act21side_s05",
+                        "act21side_s05#f#"
+                    ]
+                }
+            },
+            "is": {
+                "IS#4": {
+                    "IS#4 Event": [
+                        "rogue3_ev-5"
+                    ]
+                },
+                "IS#5": {
+                    "IS#5 Treasure": [
+                        "rogue4_t-2"
+                    ]
+                }
+            }
+        },
+        "enemy_1281_sgcar_2": {
+            "sidestory": {
+                "act19mini": {
+                    "act19mini_zone1": [
+                        "act19mini_s01"
+                    ]
+                },
+                "act21side": {
+                    "act21sre_zone2": [
+                        "act21side_ex03",
+                        "act21side_ex03#f#",
+                        "act21side_ex04",
+                        "act21side_ex04#f#",
+                        "act21side_ex06",
+                        "act21side_ex06#f#",
+                        "act21side_ex08",
+                        "act21side_ex08#f#"
+                    ],
+                    "act21sre_zone3": [
+                        "act21side_s01",
+                        "act21side_s01#f#",
+                        "act21side_s02",
+                        "act21side_s02#f#",
+                        "act21side_s03",
+                        "act21side_s03#f#",
+                        "act21side_s04",
+                        "act21side_s04#f#",
+                        "act21side_s05",
+                        "act21side_s05#f#"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_03",
+                        "act1multi_ex03"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_16": {
+                    "tower_n_16": [
+                        "lt_16_04"
+                    ]
+                }
+            },
+            "is": {
+                "IS#5": {
+                    "IS#5 Treasure": [
+                        "rogue4_t-2"
+                    ],
+                    "IS#5 Event": [
+                        "rogue4_ev-2"
+                    ],
+                    "IS#5 Duel": [
+                        "rogue4_d-3"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#2": {
+                    "RA#2 Normal Rushparty": [
+                        "RA#2_monthly_5"
                     ]
                 }
             }
@@ -38273,47 +40243,6 @@
                     ],
                     "RA#2 Field : Battle": [
                         "sandbox_1_74"
-                    ]
-                }
-            }
-        },
-        "enemy_1395_dhxts_2": {
-            "vb": {
-                "act1break": {
-                    "act1break_zone3": [
-                        "act1break_sp04",
-                        "act1break_sp05"
-                    ]
-                }
-            },
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_hard-03"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act31side": {
-                    "act31sre_zone2": [
-                        "act31side_ex02",
-                        "act31side_ex02#f#",
-                        "act31side_ex06",
-                        "act31side_ex06#f#"
-                    ],
-                    "act31sre_zone3": [
-                        "act31side_s02",
-                        "act31side_s02#f#",
-                        "act31side_s03",
-                        "act31side_s03#f#",
-                        "act31side_mo01"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_26": {
-                    "camp_r_26": [
-                        "camp_r_26"
                     ]
                 }
             }
@@ -47238,41 +49167,6 @@
                 }
             }
         },
-        "enemy_1282_sgelder": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_03",
-                        "act1multi_ex03"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act21side": {
-                    "act21sre_zone1": [
-                        "act21side_07",
-                        "act21side_08",
-                        "act21side_09",
-                        "act21side_10"
-                    ]
-                }
-            },
-            "sss": {
-                "tower_n_16": {
-                    "tower_n_16": [
-                        "lt_16_04"
-                    ]
-                }
-            },
-            "ra": {
-                "RA#2": {
-                    "RA#2 Field : Building Material": [
-                        "sandbox_1_46",
-                        "sandbox_1_84"
-                    ]
-                }
-            }
-        },
         "enemy_1282_sgelder_2": {
             "coop": {
                 "act1multi": {
@@ -47375,135 +49269,6 @@
                 "IS#5": {
                     "IS#5 Treasure": [
                         "rogue4_t-1",
-                        "rogue4_t-2"
-                    ]
-                }
-            },
-            "ra": {
-                "RA#2": {
-                    "RA#2 Field : Building Material": [
-                        "sandbox_1_46",
-                        "sandbox_1_84"
-                    ]
-                }
-            }
-        },
-        "enemy_1277_sgman_2": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_03",
-                        "act1multi_ex03"
-                    ]
-                }
-            },
-            "tn": {
-                "act3bossrush": {
-                    "act3bossrush_zone1": [
-                        "act3bossrush_04"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act21side": {
-                    "act21sre_zone2": [
-                        "act21side_ex01",
-                        "act21side_ex01#f#",
-                        "act21side_ex02",
-                        "act21side_ex02#f#",
-                        "act21side_ex03",
-                        "act21side_ex03#f#",
-                        "act21side_ex04",
-                        "act21side_ex04#f#",
-                        "act21side_ex05",
-                        "act21side_ex05#f#",
-                        "act21side_ex06",
-                        "act21side_ex06#f#",
-                        "act21side_ex07",
-                        "act21side_ex07#f#",
-                        "act21side_ex08",
-                        "act21side_ex08#f#"
-                    ],
-                    "act21sre_zone3": [
-                        "act21side_s01",
-                        "act21side_s01#f#",
-                        "act21side_s02",
-                        "act21side_s02#f#",
-                        "act21side_s03",
-                        "act21side_s03#f#",
-                        "act21side_s04",
-                        "act21side_s04#f#",
-                        "act21side_s05",
-                        "act21side_s05#f#"
-                    ]
-                }
-            },
-            "sss": {
-                "tower_n_16": {
-                    "tower_n_16": [
-                        "lt_16_04"
-                    ]
-                }
-            },
-            "is": {
-                "IS#4": {
-                    "IS#4 Floor 1": [
-                        "rogue3_1-3"
-                    ]
-                },
-                "IS#5": {
-                    "IS#5 Treasure": [
-                        "rogue4_t-2"
-                    ],
-                    "IS#5 Event": [
-                        "rogue4_ev-2"
-                    ],
-                    "IS#5 Duel": [
-                        "rogue4_d-3"
-                    ]
-                }
-            }
-        },
-        "enemy_1279_sgbdg": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_03",
-                        "act1multi_ex03"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act21side": {
-                    "act21sre_zone1": [
-                        "act21side_04",
-                        "act21side_05",
-                        "act21side_06",
-                        "act21side_07",
-                        "act21side_08",
-                        "act21side_09",
-                        "act21side_10"
-                    ]
-                }
-            },
-            "sss": {
-                "tower_n_16": {
-                    "tower_n_16": [
-                        "lt_16_04"
-                    ]
-                }
-            },
-            "is": {
-                "IS#4": {
-                    "IS#4 Floor 3": [
-                        "rogue3_3-5"
-                    ],
-                    "IS#4 Treasure": [
-                        "rogue3_t-3"
-                    ]
-                },
-                "IS#5": {
-                    "IS#5 Treasure": [
                         "rogue4_t-2"
                     ]
                 }
@@ -47632,69 +49397,6 @@
                     ],
                     "RA#2 Normal Rushparty": [
                         "RA#2_monthly_5",
-                        "RA#2_monthly_5"
-                    ]
-                }
-            }
-        },
-        "enemy_1281_sgcar_2": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_03",
-                        "act1multi_ex03"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act21side": {
-                    "act21sre_zone2": [
-                        "act21side_ex03",
-                        "act21side_ex03#f#",
-                        "act21side_ex04",
-                        "act21side_ex04#f#",
-                        "act21side_ex06",
-                        "act21side_ex06#f#",
-                        "act21side_ex08",
-                        "act21side_ex08#f#"
-                    ],
-                    "act21sre_zone3": [
-                        "act21side_s01",
-                        "act21side_s01#f#",
-                        "act21side_s02",
-                        "act21side_s02#f#",
-                        "act21side_s03",
-                        "act21side_s03#f#",
-                        "act21side_s04",
-                        "act21side_s04#f#",
-                        "act21side_s05",
-                        "act21side_s05#f#"
-                    ]
-                }
-            },
-            "sss": {
-                "tower_n_16": {
-                    "tower_n_16": [
-                        "lt_16_04"
-                    ]
-                }
-            },
-            "is": {
-                "IS#5": {
-                    "IS#5 Treasure": [
-                        "rogue4_t-2"
-                    ],
-                    "IS#5 Event": [
-                        "rogue4_ev-2"
-                    ],
-                    "IS#5 Duel": [
-                        "rogue4_d-3"
-                    ]
-                }
-            },
-            "ra": {
-                "RA#2": {
-                    "RA#2 Normal Rushparty": [
                         "RA#2_monthly_5"
                     ]
                 }
@@ -48003,39 +49705,6 @@
                 }
             }
         },
-        "enemy_1299_ymkilr": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_03",
-                        "act1multi_06",
-                        "act1multi_ex03",
-                        "act1multi_ex06"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act23side": {
-                    "act23sre_zone1": [
-                        "act23side_tr01",
-                        "act23side_05",
-                        "act23side_06",
-                        "act23side_09"
-                    ],
-                    "act23sre_zone2": [
-                        "act23side_ex01",
-                        "act23side_ex01#f#"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_20": {
-                    "camp_r_20": [
-                        "camp_r_20"
-                    ]
-                }
-            }
-        },
         "enemy_1538_ymmons_3": {
             "coop": {
                 "act1multi": {
@@ -48224,52 +49893,6 @@
                 }
             }
         },
-        "enemy_1295_ymph": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_03",
-                        "act1multi_06",
-                        "act1multi_ex03",
-                        "act1multi_ex06"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act23side": {
-                    "act23sre_zone1": [
-                        "act23side_tr01",
-                        "act23side_01",
-                        "act23side_02",
-                        "act23side_03",
-                        "act23side_04",
-                        "act23side_05",
-                        "act23side_06",
-                        "act23side_07",
-                        "act23side_08",
-                        "act23side_09"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_20": {
-                    "camp_r_20": [
-                        "camp_r_20"
-                    ]
-                }
-            },
-            "sss": {
-                "tower_n_16": {
-                    "tower_n_16": [
-                        "lt_16_01",
-                        "lt_16_02",
-                        "lt_16_03",
-                        "lt_16_04",
-                        "lt_16_05"
-                    ]
-                }
-            }
-        },
         "enemy_1538_ymmons_2": {
             "coop": {
                 "act1multi": {
@@ -48294,93 +49917,6 @@
                     "act23sre_zone2": [
                         "act23side_ex08",
                         "act23side_ex08#f#"
-                    ]
-                }
-            }
-        },
-        "enemy_1299_ymkilr_2": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_03",
-                        "act1multi_06",
-                        "act1multi_ex03",
-                        "act1multi_ex06",
-                        "act1multi_hard-02"
-                    ]
-                }
-            },
-            "tn": {
-                "act4bossrush": {
-                    "act4bossrush_zone1": [
-                        "act4bossrush_04"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act23side": {
-                    "act23sre_zone2": [
-                        "act23side_ex01",
-                        "act23side_ex01#f#",
-                        "act23side_ex03",
-                        "act23side_ex03#f#",
-                        "act23side_ex05",
-                        "act23side_ex05#f#",
-                        "act23side_ex07",
-                        "act23side_ex07#f#",
-                        "act23side_ex08",
-                        "act23side_ex08#f#"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_20": {
-                    "camp_r_20": [
-                        "camp_r_20"
-                    ]
-                }
-            },
-            "cc": {
-                "CCBP#01": {
-                    "CCBP#01": [
-                        "crisis_v2_01-02"
-                    ]
-                },
-                "CCBP#02": {
-                    "CCBP#02": [
-                        "crisis_v2_01-02"
-                    ]
-                }
-            },
-            "is": {
-                "IS#4": {
-                    "IS#4 Floor 5": [
-                        "rogue3_5-6"
-                    ]
-                },
-                "IS#5": {
-                    "IS#5 Floor 7": [
-                        "rogue4_7-2"
-                    ],
-                    "IS#5 Duel": [
-                        "rogue4_d-3"
-                    ]
-                }
-            },
-            "ra": {
-                "RA#2": {
-                    "RA#2 Normal Rushparty": [
-                        "RA#2_normal_group10",
-                        "RA#2_normal_group10"
-                    ],
-                    "RA#2 Elite Rushparty": [
-                        "RA#2_elite_group9",
-                        "RA#2_elite_group9",
-                        "RA#2_elite_group9"
-                    ],
-                    "RA#2 Bandit Rushparty": [
-                        "RA#2_bandit_group3",
-                        "RA#2_bandit_group3"
                     ]
                 }
             }
@@ -50357,42 +51893,6 @@
                 }
             }
         },
-        "enemy_1399_dhtb_2": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_04",
-                        "act1multi_ex04",
-                        "act1multi_hard-03"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act31side": {
-                    "act31sre_zone2": [
-                        "act31side_ex03",
-                        "act31side_ex03#f#",
-                        "act31side_ex07",
-                        "act31side_ex07#f#",
-                        "act31side_ex08",
-                        "act31side_ex08#f#"
-                    ],
-                    "act31sre_zone3": [
-                        "act31side_s01",
-                        "act31side_s01#f#",
-                        "act31side_s04",
-                        "act31side_s04#f#"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_26": {
-                    "camp_r_26": [
-                        "camp_r_26"
-                    ]
-                }
-            }
-        },
         "enemy_1400_dhtbgj": {
             "coop": {
                 "act1multi": {
@@ -50412,42 +51912,6 @@
                         "act31side_07",
                         "act31side_08",
                         "act31side_09"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_26": {
-                    "camp_r_26": [
-                        "camp_r_26"
-                    ]
-                }
-            }
-        },
-        "enemy_1400_dhtbgj_2": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_04",
-                        "act1multi_ex04",
-                        "act1multi_hard-03"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act31side": {
-                    "act31sre_zone2": [
-                        "act31side_ex03",
-                        "act31side_ex03#f#",
-                        "act31side_ex07",
-                        "act31side_ex07#f#",
-                        "act31side_ex08",
-                        "act31side_ex08#f#"
-                    ],
-                    "act31sre_zone3": [
-                        "act31side_s01",
-                        "act31side_s01#f#",
-                        "act31side_s04",
-                        "act31side_s04#f#"
                     ]
                 }
             },
@@ -50984,119 +52448,6 @@
                 }
             }
         },
-        "enemy_1295_ymph_2": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_06",
-                        "act1multi_ex06",
-                        "act1multi_hard-02"
-                    ]
-                }
-            },
-            "tn": {
-                "act4bossrush": {
-                    "act4bossrush_zone1": [
-                        "act4bossrush_04"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act23side": {
-                    "act23sre_zone2": [
-                        "act23side_ex01",
-                        "act23side_ex01#f#",
-                        "act23side_ex03",
-                        "act23side_ex03#f#",
-                        "act23side_ex04",
-                        "act23side_ex04#f#",
-                        "act23side_ex05",
-                        "act23side_ex05#f#",
-                        "act23side_ex06",
-                        "act23side_ex06#f#",
-                        "act23side_ex07",
-                        "act23side_ex07#f#",
-                        "act23side_ex08",
-                        "act23side_ex08#f#"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_20": {
-                    "camp_r_20": [
-                        "camp_r_20"
-                    ]
-                }
-            },
-            "sss": {
-                "tower_n_16": {
-                    "tower_n_16": [
-                        "lt_16_05",
-                        "lt_16_06"
-                    ]
-                }
-            },
-            "cc": {
-                "CCBP#01": {
-                    "CCBP#01": [
-                        "crisis_v2_01-02"
-                    ]
-                },
-                "CCBP#02": {
-                    "CCBP#02": [
-                        "crisis_v2_01-02"
-                    ]
-                }
-            },
-            "is": {
-                "IS#4": {
-                    "IS#4 Floor 5": [
-                        "rogue3_5-6"
-                    ]
-                }
-            }
-        },
-        "enemy_1296_ymknif": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_06",
-                        "act1multi_ex06"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act23side": {
-                    "act23sre_zone1": [
-                        "act23side_01",
-                        "act23side_02",
-                        "act23side_03",
-                        "act23side_04",
-                        "act23side_07",
-                        "act23side_08"
-                    ],
-                    "act23sre_zone2": [
-                        "act23side_ex02",
-                        "act23side_ex02#f#"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_20": {
-                    "camp_r_20": [
-                        "camp_r_20"
-                    ]
-                }
-            },
-            "sss": {
-                "tower_n_16": {
-                    "tower_n_16": [
-                        "lt_16_03",
-                        "lt_16_05"
-                    ]
-                }
-            }
-        },
         "enemy_1296_ymknif_2": {
             "coop": {
                 "act1multi": {
@@ -51152,42 +52503,6 @@
                 "CCBP#02": {
                     "CCBP#02": [
                         "crisis_v2_01-02"
-                    ]
-                }
-            }
-        },
-        "enemy_1298_ymmonk": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_06",
-                        "act1multi_ex06"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act23side": {
-                    "act23sre_zone1": [
-                        "act23side_04",
-                        "act23side_05",
-                        "act23side_07",
-                        "act23side_08",
-                        "act23side_09"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_20": {
-                    "camp_r_20": [
-                        "camp_r_20"
-                    ]
-                }
-            },
-            "sss": {
-                "tower_n_16": {
-                    "tower_n_16": [
-                        "lt_16_02",
-                        "lt_16_05"
                     ]
                 }
             }
@@ -51280,117 +52595,6 @@
                 }
             }
         },
-        "enemy_1300_ymmir": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_06",
-                        "act1multi_ex06"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act23side": {
-                    "act23sre_zone1": [
-                        "act23side_06"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_20": {
-                    "camp_r_20": [
-                        "camp_r_20"
-                    ]
-                }
-            }
-        },
-        "enemy_1300_ymmir_2": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_06",
-                        "act1multi_ex06",
-                        "act1multi_hard-02"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act23side": {
-                    "act23sre_zone2": [
-                        "act23side_ex02",
-                        "act23side_ex02#f#",
-                        "act23side_ex04",
-                        "act23side_ex04#f#",
-                        "act23side_ex06",
-                        "act23side_ex06#f#"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_20": {
-                    "camp_r_20": [
-                        "camp_r_20"
-                    ]
-                }
-            },
-            "cc": {
-                "CCBP#01": {
-                    "CCBP#01": [
-                        "crisis_v2_01-02"
-                    ]
-                },
-                "CCBP#02": {
-                    "CCBP#02": [
-                        "crisis_v2_01-02"
-                    ]
-                }
-            },
-            "is": {
-                "IS#4": {
-                    "IS#4 Floor 5": [
-                        "rogue3_5-6"
-                    ]
-                },
-                "IS#5": {
-                    "IS#5 Floor 7": [
-                        "rogue4_7-2"
-                    ],
-                    "IS#5 Duel": [
-                        "rogue4_d-3"
-                    ]
-                }
-            }
-        },
-        "enemy_1301_ymcnon": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_06",
-                        "act1multi_ex06"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act16mini": {
-                    "act16mini_zone1": [
-                        "act16mini_08",
-                        "act16mini_08#f#"
-                    ]
-                },
-                "act23side": {
-                    "act23sre_zone1": [
-                        "act23side_07"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_20": {
-                    "camp_r_20": [
-                        "camp_r_20"
-                    ]
-                }
-            }
-        },
         "enemy_1301_ymcnon_2": {
             "coop": {
                 "act1multi": {
@@ -51412,56 +52616,6 @@
                 "camp_r_20": {
                     "camp_r_20": [
                         "camp_r_20"
-                    ]
-                }
-            }
-        },
-        "enemy_1297_ymflag_2": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_06",
-                        "act1multi_ex06",
-                        "act1multi_hard-02"
-                    ]
-                }
-            },
-            "tn": {
-                "act4bossrush": {
-                    "act4bossrush_zone1": [
-                        "act4bossrush_04"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act23side": {
-                    "act23sre_zone2": [
-                        "act23side_ex01",
-                        "act23side_ex01#f#",
-                        "act23side_ex02",
-                        "act23side_ex02#f#",
-                        "act23side_ex03",
-                        "act23side_ex03#f#",
-                        "act23side_ex04",
-                        "act23side_ex04#f#",
-                        "act23side_ex07",
-                        "act23side_ex07#f#",
-                        "act23side_ex08",
-                        "act23side_ex08#f#"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_20": {
-                    "camp_r_20": [
-                        "camp_r_20"
-                    ]
-                }
-            },
-            "sss": {
-                "tower_n_16": {
-                    "tower_n_16": [
-                        "lt_16_06"
                     ]
                 }
             }
@@ -52097,94 +53251,6 @@
                 }
             }
         },
-        "enemy_1127_sptrkg_2": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_hard-01"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act16d5": {
-                    "act9sre_zone2": [
-                        "act16d5_ex03",
-                        "act16d5_ex03#f#",
-                        "act16d5_ex05",
-                        "act16d5_ex05",
-                        "act16d5_ex05#f#",
-                        "act16d5_ex05#f#",
-                        "act16d5_ex06",
-                        "act16d5_ex06",
-                        "act16d5_ex06#f#",
-                        "act16d5_ex06#f#",
-                        "act16d5_ex07",
-                        "act16d5_ex07",
-                        "act16d5_ex07#f#",
-                        "act16d5_ex07#f#",
-                        "act16d5_ex08",
-                        "act16d5_ex08#f#"
-                    ]
-                }
-            }
-        },
-        "enemy_1129_spklr_2": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_hard-01"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act36side": {
-                    "act36side_zone2": [
-                        "act36side_ex05",
-                        "act36side_ex05#f#"
-                    ]
-                },
-                "act13mini": {
-                    "act13mini_zone1": [
-                        "act13mini_06",
-                        "act13mini_06",
-                        "act13mini_06#f#",
-                        "act13mini_06#f#"
-                    ]
-                },
-                "act9mini": {
-                    "act9mini_zone1": [
-                        "act9mini_04",
-                        "act9mini_04#f#"
-                    ]
-                },
-                "act16d5": {
-                    "act9sre_zone2": [
-                        "act16d5_ex02",
-                        "act16d5_ex02#f#",
-                        "act16d5_ex07",
-                        "act16d5_ex07",
-                        "act16d5_ex07#f#",
-                        "act16d5_ex07#f#",
-                        "act16d5_ex08",
-                        "act16d5_ex08#f#"
-                    ]
-                }
-            },
-            "tn": {
-                "act4bossrush": {
-                    "act4bossrush_zone1": [
-                        "act4bossrush_04"
-                    ]
-                }
-            },
-            "is": {
-                "IS#5": {
-                    "IS#5 Floor 6": [
-                        "rogue4_b-7"
-                    ]
-                }
-            }
-        },
         "enemy_1197_sfshu_2": {
             "coop": {
                 "act1multi": {
@@ -52800,133 +53866,6 @@
                 }
             }
         },
-        "enemy_1390_dhsbr_2": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_hard-03"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act31side": {
-                    "act31sre_zone2": [
-                        "act31side_ex01",
-                        "act31side_ex01#f#",
-                        "act31side_ex03",
-                        "act31side_ex03#f#",
-                        "act31side_ex04",
-                        "act31side_ex04#f#",
-                        "act31side_ex05",
-                        "act31side_ex05#f#",
-                        "act31side_ex06",
-                        "act31side_ex06#f#",
-                        "act31side_ex07",
-                        "act31side_ex07#f#",
-                        "act31side_ex08",
-                        "act31side_ex08#f#"
-                    ],
-                    "act31sre_zone3": [
-                        "act31side_s01",
-                        "act31side_s01#f#",
-                        "act31side_s02",
-                        "act31side_s02#f#",
-                        "act31side_s03",
-                        "act31side_s03#f#",
-                        "act31side_s04",
-                        "act31side_s04#f#",
-                        "act31side_mo01"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_26": {
-                    "camp_r_26": [
-                        "camp_r_26"
-                    ]
-                }
-            }
-        },
-        "enemy_1391_dhbow_2": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_hard-03"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act31side": {
-                    "act31sre_zone2": [
-                        "act31side_ex01",
-                        "act31side_ex01#f#",
-                        "act31side_ex04",
-                        "act31side_ex04#f#",
-                        "act31side_ex05",
-                        "act31side_ex05#f#",
-                        "act31side_ex07",
-                        "act31side_ex07#f#",
-                        "act31side_ex08",
-                        "act31side_ex08#f#"
-                    ],
-                    "act31sre_zone3": [
-                        "act31side_s01",
-                        "act31side_s01#f#",
-                        "act31side_s02",
-                        "act31side_s02#f#",
-                        "act31side_s04",
-                        "act31side_s04#f#",
-                        "act31side_mo01"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_26": {
-                    "camp_r_26": [
-                        "camp_r_26"
-                    ]
-                }
-            }
-        },
-        "enemy_1392_dhshld_2": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_hard-03"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act31side": {
-                    "act31sre_zone2": [
-                        "act31side_ex03",
-                        "act31side_ex03#f#",
-                        "act31side_ex05",
-                        "act31side_ex05#f#",
-                        "act31side_ex07",
-                        "act31side_ex07#f#",
-                        "act31side_ex08",
-                        "act31side_ex08#f#"
-                    ],
-                    "act31sre_zone3": [
-                        "act31side_s01",
-                        "act31side_s01#f#",
-                        "act31side_s03",
-                        "act31side_s03#f#",
-                        "act31side_s04",
-                        "act31side_s04#f#",
-                        "act31side_mo01"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_26": {
-                    "camp_r_26": [
-                        "camp_r_26"
-                    ]
-                }
-            }
-        },
         "enemy_1393_dhele_2": {
             "coop": {
                 "act1multi": {
@@ -52970,41 +53909,6 @@
                 }
             }
         },
-        "enemy_1394_dhzts_2": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_hard-03"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act31side": {
-                    "act31sre_zone2": [
-                        "act31side_ex05",
-                        "act31side_ex05#f#",
-                        "act31side_ex06",
-                        "act31side_ex06#f#"
-                    ],
-                    "act31sre_zone3": [
-                        "act31side_s02",
-                        "act31side_s02#f#",
-                        "act31side_s03",
-                        "act31side_s03#f#",
-                        "act31side_s04",
-                        "act31side_s04#f#",
-                        "act31side_mo01"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_26": {
-                    "camp_r_26": [
-                        "camp_r_26"
-                    ]
-                }
-            }
-        },
         "enemy_1396_dhdts_2": {
             "coop": {
                 "act1multi": {
@@ -53025,38 +53929,6 @@
                         "act31side_s03",
                         "act31side_s03#f#",
                         "act31side_mo01"
-                    ]
-                }
-            }
-        },
-        "enemy_1398_dhdcr_2": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_hard-03"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act31side": {
-                    "act31sre_zone2": [
-                        "act31side_ex03",
-                        "act31side_ex03#f#",
-                        "act31side_ex07",
-                        "act31side_ex07#f#",
-                        "act31side_ex08",
-                        "act31side_ex08#f#"
-                    ],
-                    "act31sre_zone3": [
-                        "act31side_s01",
-                        "act31side_s01#f#"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_26": {
-                    "camp_r_26": [
-                        "camp_r_26"
                     ]
                 }
             }
@@ -57536,108 +58408,6 @@
                 }
             }
         },
-        "enemy_1123_spsbr": {
-            "exp": {
-                "act1arcade": {
-                    "zone_1": [
-                        "act1arcade_m1_03"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act36side": {
-                    "act36side_zone1": [
-                        "act36side_05"
-                    ]
-                },
-                "act16mini": {
-                    "act16mini_zone1": [
-                        "act16mini_06",
-                        "act16mini_06#f#"
-                    ]
-                },
-                "act13mini": {
-                    "act13mini_zone1": [
-                        "act13mini_s01",
-                        "act13mini_s01"
-                    ]
-                },
-                "act10mini": {
-                    "act10mini_zone1": [
-                        "act10mini_10"
-                    ]
-                },
-                "act15side": {
-                    "act15sre_zone1": [
-                        "act15side_01",
-                        "act15side_01"
-                    ]
-                },
-                "act16d5": {
-                    "act9sre_zone1": [
-                        "act16d5_01",
-                        "act16d5_01",
-                        "act16d5_tr01",
-                        "act16d5_tr01",
-                        "act16d5_02",
-                        "act16d5_02",
-                        "act16d5_04",
-                        "act16d5_04",
-                        "act16d5_05",
-                        "act16d5_07",
-                        "act16d5_07",
-                        "act16d5_08",
-                        "act16d5_08",
-                        "act16d5_09",
-                        "act16d5_09",
-                        "act16d5_10",
-                        "act16d5_10"
-                    ]
-                }
-            },
-            "sss": {
-                "tower_n_18": {
-                    "tower_n_18": [
-                        "lt_18_01",
-                        "lt_18_02"
-                    ]
-                }
-            },
-            "cc": {
-                "CC#07": {
-                    "CC#07": [
-                        "rune_09-01"
-                    ]
-                },
-                "CC#08": {
-                    "CC#08": [
-                        "rune_09-01"
-                    ]
-                },
-                "CC#09": {
-                    "CC#09": [
-                        "rune_11-02",
-                        "rune_09-01"
-                    ]
-                },
-                "CC#10": {
-                    "CC#10": [
-                        "rune_09-01",
-                        "rune_11-02"
-                    ]
-                },
-                "CC#11": {
-                    "CC#11": [
-                        "rune_11-02"
-                    ]
-                },
-                "CC#12": {
-                    "CC#12": [
-                        "rune_11-02"
-                    ]
-                }
-            }
-        },
         "enemy_1122_sphond": {
             "exp": {
                 "act1arcade": {
@@ -57705,58 +58475,6 @@
                         "act16d5_ex06",
                         "act16d5_ex06#f#",
                         "act16d5_ex06#f#"
-                    ]
-                }
-            },
-            "cc": {
-                "CC#07": {
-                    "CC#07": [
-                        "rune_09-01"
-                    ]
-                },
-                "CC#08": {
-                    "CC#08": [
-                        "rune_09-01"
-                    ]
-                },
-                "CC#09": {
-                    "CC#09": [
-                        "rune_09-01"
-                    ]
-                },
-                "CC#10": {
-                    "CC#10": [
-                        "rune_09-01"
-                    ]
-                }
-            }
-        },
-        "enemy_1126_spslme": {
-            "exp": {
-                "act1arcade": {
-                    "zone_1": [
-                        "act1arcade_m1_03",
-                        "act1arcade_m1_03"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act16mini": {
-                    "act16mini_zone1": [
-                        "act16mini_06",
-                        "act16mini_06",
-                        "act16mini_06#f#",
-                        "act16mini_06#f#"
-                    ]
-                },
-                "act16d5": {
-                    "act9sre_zone1": [
-                        "act16d5_07",
-                        "act16d5_07",
-                        "act16d5_08",
-                        "act16d5_08",
-                        "act16d5_10",
-                        "act16d5_10"
                     ]
                 }
             },
@@ -61048,109 +61766,6 @@
                 }
             }
         },
-        "enemy_1124_spbow_2": {
-            "sidestory": {
-                "act36side": {
-                    "act36side_zone2": [
-                        "act36side_ex05",
-                        "act36side_ex05#f#"
-                    ]
-                },
-                "act9mini": {
-                    "act9mini_zone1": [
-                        "act9mini_04",
-                        "act9mini_04#f#"
-                    ]
-                },
-                "act16d5": {
-                    "act9sre_zone2": [
-                        "act16d5_ex01",
-                        "act16d5_ex01",
-                        "act16d5_ex01#f#",
-                        "act16d5_ex01#f#",
-                        "act16d5_ex05",
-                        "act16d5_ex05",
-                        "act16d5_ex05#f#",
-                        "act16d5_ex05#f#"
-                    ]
-                }
-            },
-            "tn": {
-                "act4bossrush": {
-                    "act4bossrush_zone1": [
-                        "act4bossrush_04"
-                    ]
-                }
-            }
-        },
-        "enemy_1123_spsbr_2": {
-            "sidestory": {
-                "act36side": {
-                    "act36side_zone2": [
-                        "act36side_ex05",
-                        "act36side_ex05#f#"
-                    ]
-                },
-                "act14mini": {
-                    "act14mini_zone1": [
-                        "act14mini_s01"
-                    ]
-                },
-                "act13mini": {
-                    "act13mini_zone1": [
-                        "act13mini_06",
-                        "act13mini_06",
-                        "act13mini_06#f#",
-                        "act13mini_06#f#"
-                    ]
-                },
-                "act16d5": {
-                    "act9sre_zone2": [
-                        "act16d5_ex01",
-                        "act16d5_ex01",
-                        "act16d5_ex01#f#",
-                        "act16d5_ex01#f#",
-                        "act16d5_ex02",
-                        "act16d5_ex02",
-                        "act16d5_ex02#f#",
-                        "act16d5_ex02#f#",
-                        "act16d5_ex03",
-                        "act16d5_ex03#f#",
-                        "act16d5_ex04",
-                        "act16d5_ex04",
-                        "act16d5_ex04#f#",
-                        "act16d5_ex04#f#",
-                        "act16d5_ex05",
-                        "act16d5_ex05",
-                        "act16d5_ex05#f#",
-                        "act16d5_ex05#f#",
-                        "act16d5_ex07",
-                        "act16d5_ex07",
-                        "act16d5_ex07#f#",
-                        "act16d5_ex07#f#",
-                        "act16d5_ex08",
-                        "act16d5_ex08#f#"
-                    ]
-                }
-            },
-            "sss": {
-                "tower_n_18": {
-                    "tower_n_18": [
-                        "lt_18_02",
-                        "lt_18_04",
-                        "lt_18_05",
-                        "lt_18_06"
-                    ]
-                }
-            },
-            "is": {
-                "IS#5": {
-                    "IS#5 Floor 6": [
-                        "rogue4_b-7"
-                    ]
-                }
-            }
-        },
         "enemy_10004_trdiam_2": {
             "sidestory": {
                 "act36side": {
@@ -61758,45 +62373,6 @@
                 "IS#5": {
                     "IS#5 Treasure": [
                         "rogue4_t-1"
-                    ]
-                }
-            }
-        },
-        "enemy_1283_sgkill": {
-            "sidestory": {
-                "act17mini": {
-                    "act17mini_zone1": [
-                        "act17mini_03",
-                        "act17mini_03#f#"
-                    ]
-                },
-                "act21side": {
-                    "act21sre_zone1": [
-                        "act21side_tr01",
-                        "act21side_02",
-                        "act21side_03",
-                        "act21side_04",
-                        "act21side_05",
-                        "act21side_06",
-                        "act21side_07",
-                        "act21side_08",
-                        "act21side_09",
-                        "act21side_10"
-                    ]
-                }
-            },
-            "tn": {
-                "act3bossrush": {
-                    "act3bossrush_zone1": [
-                        "act3bossrush_04"
-                    ]
-                }
-            },
-            "ra": {
-                "RA#2": {
-                    "RA#2 Field : Building Material": [
-                        "sandbox_1_46",
-                        "sandbox_1_84"
                     ]
                 }
             }
@@ -64510,76 +65086,6 @@
                 }
             }
         },
-        "enemy_1517_xi": {
-            "tn": {
-                "act4bossrush": {
-                    "act4bossrush_zone1": [
-                        "act4bossrush_04"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act16d5": {
-                    "act9sre_zone1": [
-                        "act16d5_10"
-                    ],
-                    "act9sre_zone2": [
-                        "act16d5_ex08",
-                        "act16d5_ex08#f#"
-                    ]
-                }
-            },
-            "cc": {
-                "CC#07": {
-                    "CC#07": [
-                        "rune_09-01"
-                    ]
-                },
-                "CC#08": {
-                    "CC#08": [
-                        "rune_09-01"
-                    ]
-                },
-                "CC#09": {
-                    "CC#09": [
-                        "rune_09-01"
-                    ]
-                },
-                "CC#10": {
-                    "CC#10": [
-                        "rune_09-01"
-                    ]
-                }
-            }
-        },
-        "enemy_1128_spmage_2": {
-            "tn": {
-                "act4bossrush": {
-                    "act4bossrush_zone1": [
-                        "act4bossrush_04"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act16d5": {
-                    "act9sre_zone2": [
-                        "act16d5_ex02",
-                        "act16d5_ex02#f#",
-                        "act16d5_ex05",
-                        "act16d5_ex05",
-                        "act16d5_ex05#f#",
-                        "act16d5_ex05#f#"
-                    ]
-                }
-            },
-            "is": {
-                "IS#5": {
-                    "IS#5 Floor 6": [
-                        "rogue4_b-7"
-                    ]
-                }
-            }
-        },
         "enemy_1125_spshld_2": {
             "tn": {
                 "act4bossrush": {
@@ -64616,58 +65122,6 @@
                 }
             }
         },
-        "enemy_1390_dhsbr": {
-            "sidestory": {
-                "act31side": {
-                    "act31sre_zone1": [
-                        "act31side_01",
-                        "act31side_tr01",
-                        "act31side_02",
-                        "act31side_03",
-                        "act31side_04",
-                        "act31side_tr02",
-                        "act31side_05",
-                        "act31side_06",
-                        "act31side_07",
-                        "act31side_08",
-                        "act31side_09"
-                    ],
-                    "act31sre_zone3": [
-                        "act31side_mo01"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_26": {
-                    "camp_r_26": [
-                        "camp_r_26"
-                    ]
-                }
-            }
-        },
-        "enemy_1395_dhxts": {
-            "sidestory": {
-                "act31side": {
-                    "act31sre_zone1": [
-                        "act31side_tr01",
-                        "act31side_03",
-                        "act31side_04",
-                        "act31side_05",
-                        "act31side_06"
-                    ],
-                    "act31sre_zone3": [
-                        "act31side_mo01"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_26": {
-                    "camp_r_26": [
-                        "camp_r_26"
-                    ]
-                }
-            }
-        },
         "enemy_1398_dhdcr": {
             "sidestory": {
                 "act31side": {
@@ -64689,102 +65143,12 @@
                 }
             }
         },
-        "enemy_1391_dhbow": {
-            "sidestory": {
-                "act31side": {
-                    "act31sre_zone1": [
-                        "act31side_02",
-                        "act31side_05",
-                        "act31side_06",
-                        "act31side_07",
-                        "act31side_08",
-                        "act31side_09"
-                    ],
-                    "act31sre_zone2": [
-                        "act31side_ex06",
-                        "act31side_ex06#f#"
-                    ],
-                    "act31sre_zone3": [
-                        "act31side_mo01"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_26": {
-                    "camp_r_26": [
-                        "camp_r_26"
-                    ]
-                }
-            }
-        },
-        "enemy_1392_dhshld": {
-            "sidestory": {
-                "act31side": {
-                    "act31sre_zone1": [
-                        "act31side_03",
-                        "act31side_tr02",
-                        "act31side_07",
-                        "act31side_08",
-                        "act31side_09"
-                    ],
-                    "act31sre_zone3": [
-                        "act31side_mo01"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_26": {
-                    "camp_r_26": [
-                        "camp_r_26"
-                    ]
-                }
-            }
-        },
-        "enemy_1393_dhele": {
-            "sidestory": {
-                "act31side": {
-                    "act31sre_zone1": [
-                        "act31side_04",
-                        "act31side_05",
-                        "act31side_09"
-                    ],
-                    "act31sre_zone3": [
-                        "act31side_mo01"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_26": {
-                    "camp_r_26": [
-                        "camp_r_26"
-                    ]
-                }
-            }
-        },
         "enemy_1396_dhdts": {
             "sidestory": {
                 "act31side": {
                     "act31sre_zone1": [
                         "act31side_06",
                         "act31side_08"
-                    ]
-                }
-            }
-        },
-        "enemy_1397_dhtsxt": {
-            "sidestory": {
-                "act31side": {
-                    "act31sre_zone1": [
-                        "act31side_06",
-                        "act31side_08"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_26": {
-                    "camp_r_26": [
-                        "camp_r_26",
-                        "camp_r_26"
                     ]
                 }
             }
@@ -68323,52 +68687,6 @@
                 }
             }
         },
-        "enemy_1278_sgbow_2": {
-            "sidestory": {
-                "act21side": {
-                    "act21sre_zone2": [
-                        "act21side_ex01",
-                        "act21side_ex01#f#",
-                        "act21side_ex02",
-                        "act21side_ex02#f#",
-                        "act21side_ex03",
-                        "act21side_ex03#f#",
-                        "act21side_ex04",
-                        "act21side_ex04#f#",
-                        "act21side_ex05",
-                        "act21side_ex05#f#",
-                        "act21side_ex06",
-                        "act21side_ex06#f#",
-                        "act21side_ex08",
-                        "act21side_ex08#f#"
-                    ],
-                    "act21sre_zone3": [
-                        "act21side_s01",
-                        "act21side_s01#f#",
-                        "act21side_s02",
-                        "act21side_s02#f#",
-                        "act21side_s03",
-                        "act21side_s03#f#",
-                        "act21side_s04",
-                        "act21side_s04#f#",
-                        "act21side_s05",
-                        "act21side_s05#f#"
-                    ]
-                }
-            },
-            "is": {
-                "IS#4": {
-                    "IS#4 Event": [
-                        "rogue3_ev-5"
-                    ]
-                },
-                "IS#5": {
-                    "IS#5 Treasure": [
-                        "rogue4_t-2"
-                    ]
-                }
-            }
-        },
         "enemy_1280_sgmag_2": {
             "sidestory": {
                 "act21side": {
@@ -71730,20 +72048,6 @@
                 "camp_r_06": {
                     "camp_r_06": [
                         "camp_r_06"
-                    ]
-                }
-            }
-        },
-        "enemy_1124_spbow": {
-            "sidestory": {
-                "act16d5": {
-                    "act9sre_zone1": [
-                        "act16d5_02",
-                        "act16d5_02",
-                        "act16d5_03",
-                        "act16d5_03",
-                        "act16d5_09",
-                        "act16d5_09"
                     ]
                 }
             }

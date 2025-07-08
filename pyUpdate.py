@@ -1,9 +1,9 @@
 import re
 import json
-from pyfunction import char_ready, name_check, json_load
+from pyfunction import char_ready, name_check, json_load, printr
 from pyAkenemy import Akenemy
 from py import Ready
-
+from typing import Any
 Ready()
 #########################################################################################################
 # JSON
@@ -63,41 +63,43 @@ json_dict           =   json_load("py/dict.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS = [] # "", 
+NEW_CHARS : list[str] = ["Leizi the Thunderbringer", "Record Keeper"] # "", 
 
 #["ItemID#1","ItemID#2", ...]
-NEW_MATS = [] # "",
+NEW_MATS : list[str] = [] # "",
 
-Rechecked = True # True False
+Rechecked : bool = True # True False
 
 #########################################################################################################
 # Prep
 #########################################################################################################
-new_trait ={}
+new_trait : dict = {}
 
-CLASS_PARSE_EN = {
-                    "MEDIC"   : "Medic",          "WARRIOR"   : "Guard",
-                    "SPECIAL" : "Specialist",     "SNIPER"    : "Sniper",
-                    "PIONEER" : "Vanguard",       "CASTER"    : "Caster",
-                    "SUPPORT" : "Supporter",      "TANK"      : "Defender"}
+CLASS_PARSE_EN : dict[str, str] = {
+                                    "MEDIC"   : "Medic",          "WARRIOR"   : "Guard",
+                                    "SPECIAL" : "Specialist",     "SNIPER"    : "Sniper",
+                                    "PIONEER" : "Vanguard",       "CASTER"    : "Caster",
+                                    "SUPPORT" : "Supporter",      "TANK"      : "Defender"
+                                }
 
-CLASS_PARSE_CN = {
-                    'SNIPER' :"狙击", 'PIONEER':"先锋", 'TANK'   :"重装",  'MEDIC'   :"医疗",
-                    'SUPPORT':"辅助", 'SPECIAL':"特种", 'WARRIOR':"近卫",  'CASTER'  :"术师"}
+CLASS_PARSE_CN : dict[str, str] = {
+                                    'SNIPER' :"狙击", 'PIONEER':"先锋", 'TANK'   :"重装",  'MEDIC'   :"医疗",
+                                    'SUPPORT':"辅助", 'SPECIAL':"特种", 'WARRIOR':"近卫",  'CASTER'  :"术师"
+                                }
 
-for char_key in json_char_patch["patchChars"]:
+for char_key in json_char_patch["patchChars"].keys():
     json_char_patch["patchChars"][char_key]["appellation"] += f' ({CLASS_PARSE_EN[json_char_patch["patchChars"][char_key]["profession"]]})'
 json_char.update(json_char_patch["patchChars"])
 
 char_ready  = char_ready(json_char)
 
-char_list   = [char_data["name_en"] for char_data in json_akhr]
-MAT_LIST    = [mat_data["itemId"] for mat_data in json_akmaterial]
+char_list : list[str] = [char_data["name_en"] for char_data in json_akhr]
+MAT_LIST : list[str] = [mat_data["itemId"] for mat_data in json_akmaterial]
 
 #########################################################################################################
 # Def function
 #########################################################################################################
-def get_new_akhr(new_char_id : str, new_char_name : str) -> dict:
+def get_new_akhr(new_char_id : str, new_char_name : str) -> dict[str, Any]:
     return  {
                                     "id"            :   new_char_id,
                                     "name_cn"       :   json_char[new_char_id]["name"],
@@ -120,7 +122,7 @@ def get_new_akhr(new_char_id : str, new_char_name : str) -> dict:
                                     "gamemode"      :   "BASE"
             }
 
-def update_new_trait(mode : str, new_id : str, new_char_name : str, extra = "") -> dict:
+def update_new_trait(mode : str, new_id : str, new_char_name : str, extra : str = "") -> dict[str, str] | None:
     '''
     ### Mode
         "char", "token", "mod"
@@ -158,14 +160,17 @@ def update_new_trait(mode : str, new_id : str, new_char_name : str, extra = "") 
                         "name"  : new_char_name,
                         "code"  : new_id,
                     }
+        case _ :
+            printr(f'Invalid mode !!! : {mode}')
+            return
 
 def update_char_TraitSkillTalent(new_char_name : str) :
     new_char_id = char_ready["Name2Code"][new_char_name]
     ## AKHR
     if new_char_id not in [char["id"] for char in json_akhr]:
-        json_akhr.append(get_new_akhr(new_char_id,new_char_name))
+        json_akhr.append(get_new_akhr(new_char_id, new_char_name))
     ## Trait
-    new_trait[json_char[new_char_id]["description"]] = update_new_trait("char",new_char_id,new_char_name,json_char[new_char_id]["subProfessionId"])
+    new_trait[json_char[new_char_id]["description"]] = update_new_trait("char", new_char_id, new_char_name, json_char[new_char_id]["subProfessionId"])
     ## Talent
     talent_tl[new_char_id] = [
                                 [
@@ -199,6 +204,9 @@ def update_char_TraitSkillTalent(new_char_name : str) :
                                             "name"  : json_skill[skill_id]["levels"][0]["name"],
                                             "desc"  : [json_skill[skill_id]["levels"][x]["description"] if len(json_skill[skill_id]["levels"]) == 10 else json_skill[skill_id]["levels"][0]["description"] for x in range(10)]
                                         }
+
+def parentheses(desc : str) -> str :
+    return desc.replace("（", ")").replace("）", ")").replace("【", "[").replace("】", "]")
 
 #########################################################################################################
 # Chars
@@ -240,21 +248,23 @@ bypass          =   {
 for i in range(6):
     ##CN
     for ops in gacha_CN_list[gacha_CN_list.index("★"*(i+1))+1].split(" / "):
-        op = (re.search(r"<@rc.eml>(.+?)</>",ops).group(1) if re.search(r"<@rc.eml>(.+?)</>",ops) else ops).replace("\r","")
+        op_search = re.search(r"<@rc.eml>(.+?)</>",ops)
+        op = (op_search.group(1) if op_search else ops).replace("\r","")
         json_akhr[[index for index,d in enumerate(json_akhr) if d["name_cn"] == op][0]]["hidden"] = False
     ##EN
     for ops in gacha_EN_list[gacha_EN_list.index("★"*(i+1))+1].split(" / "):
-        op = re.search(r"<@rc.eml>(.+?)</>",ops).group(1) if re.search(r"<@rc.eml>(.+?)</>",ops) else ops
+        op_search = re.search(r"<@rc.eml>(.+?)</>",ops)
+        op = op_search.group(1) if op_search else ops
         json_akhr[[index for index,d in enumerate(json_akhr) if name_check(d["name_en"]) == bypass.get(op,op)][0]]["globalHidden"] = False
 
-with open("json/tl-akhr.json", "w", encoding="utf-8") as filepath :
-    json.dump(json_akhr,filepath,indent = 4, ensure_ascii = False)
+with open("json/tl-akhr.json", "w", encoding = "utf-8") as filepath :
+    json.dump(json_akhr, filepath, indent = 4, ensure_ascii = False)
     
-with open("update/tl-talent.json", "w", encoding="utf-8") as filepath :
-    json.dump(talent_tl,filepath,indent = 4, ensure_ascii = False)
+with open("update/tl-talent.json", "w", encoding = "utf-8") as filepath :
+    json.dump(talent_tl, filepath, indent = 4, ensure_ascii = False)
 
-with open("update/tl-skill.json", "w", encoding="utf-8") as filepath :
-    json.dump(skill_tl,filepath,indent = 4, ensure_ascii = False)
+with open("update/tl-skill.json", "w", encoding = "utf-8") as filepath :
+    json.dump(skill_tl, filepath, indent = 4, ensure_ascii = False)
 
 #########################################################################################################
 # Mats
@@ -367,20 +377,20 @@ for new_mod_list in NEW_MODS:
                     for pot in range(len(part["addOrOverrideTalentDataBundle"]["candidates"])):
                         candidate = part["addOrOverrideTalentDataBundle"]["candidates"][pot]
                         talent_candidate_CN = json_char[char_key]["talents"][candidate["talentIndex"]]["candidates"][pot-len(part["addOrOverrideTalentDataBundle"]["candidates"])]
-                        talent_candidate_EN = json_charEN[char_key]["talents"][candidate["talentIndex"]]["candidates"][pot-len(part["addOrOverrideTalentDataBundle"]["candidates"])] if char_key in json_charEN.keys() else None
+                        talent_candidate_EN = json_charEN[char_key]["talents"][candidate["talentIndex"]]["candidates"][pot-len(part["addOrOverrideTalentDataBundle"]["candidates"])] if char_key in json_charEN.keys() else {}
                         if char_key in json_charEN and candidate["talentIndex"] != -1:
                             temp_part.append({
                                                 "name"                  :   talent_candidate_EN["name"],
                                                 "EN"                    :   talent_candidate_EN["description"],
-                                                "CN"                    :   talent_candidate_CN["description"],
-                                                "mod"                   :   candidate["upgradeDescription"],
+                                                "CN"                    :   parentheses(talent_candidate_CN["description"]),
+                                                "mod"                   :   parentheses(candidate["upgradeDescription"]),
                                                 "upgradeDescription"    :   ""
                                             })
                         else:
                             temp_part.append({
                                                 "name"                  :   candidate["name"],
-                                                "CN"                    :   talent_candidate_CN["description"],
-                                                "mod"                   :   candidate["upgradeDescription"],
+                                                "CN"                    :   parentheses(talent_candidate_CN["description"]),
+                                                "mod"                   :   parentheses(candidate["upgradeDescription"]),
                                                 "upgradeDescription"    :   ""
                                             })
                 if len(temp_part) :temp_phase.append(temp_part)
@@ -454,7 +464,7 @@ with open("json/ace/riic.json", "w", encoding="utf-8") as filepath :
 # TL Artist CN -> EN (JSON Compare)
 #########################################################################################################
 json_artist = {"Illustrator" : {}, "VA" : {}}
-artist_dupe_catch = []
+artist_dupe_catch : list[str] = []
 
 # Illustrator
 ## Skin_table
@@ -462,12 +472,12 @@ for skin in json_skin["charSkins"].keys():
     if skin in json_skinEN["charSkins"].keys():
         for dlist in ["drawerList", "designerList"]:
             if json_skin["charSkins"][skin]["displaySkin"][dlist]:
-                if len(json_skin["charSkins"][skin]["displaySkin"][dlist]) > 1: print("NEW Illustrator Dlist JUST DROP !!!")
+                if len(json_skin["charSkins"][skin]["displaySkin"][dlist]) > 1: printr("NEW Illustrator Dlist JUST DROP !!!")
                 CN_skin_artist = json_skin["charSkins"][skin]["displaySkin"][dlist][0].strip()
                 EN_skin_artist = json_skinEN["charSkins"][skin]["displaySkin"][dlist][0].strip()
                 if CN_skin_artist != EN_skin_artist:
                     if CN_skin_artist in json_artist["Illustrator"].keys() and json_artist["Illustrator"][CN_skin_artist] != EN_skin_artist:
-                        artist_dupe_catch.append(CN_skin_artist,json_artist["Illustrator"][CN_skin_artist],EN_skin_artist)
+                        artist_dupe_catch.append(f'\n\t{CN_skin_artist} {json_artist["Illustrator"][CN_skin_artist]} {EN_skin_artist}')
                     else :
                         json_artist["Illustrator"][CN_skin_artist] = EN_skin_artist
 ## npcDict
@@ -475,12 +485,12 @@ for npc in json_handbook["npcDict"].keys():
     if npc in json_handbookEN["npcDict"].keys():
         for dlist in ["illustList", "designerList"]:
             if json_handbook["npcDict"][npc][dlist]:
-                if len(json_handbook["npcDict"][npc][dlist]) > 1: print("NEW Illustrator Dlist JUST DROP !!!")
+                if len(json_handbook["npcDict"][npc][dlist]) > 1: printr("NEW Illustrator Dlist JUST DROP !!!")
                 CN_skin_artist = json_handbook["npcDict"][npc][dlist][0].strip()
                 EN_skin_artist = json_handbookEN["npcDict"][npc][dlist][0].strip()
                 if CN_skin_artist != EN_skin_artist:
                     if CN_skin_artist in json_artist["Illustrator"].keys() and json_artist["Illustrator"][CN_skin_artist] != EN_skin_artist:
-                        artist_dupe_catch.append(CN_skin_artist,json_artist["Illustrator"][CN_skin_artist],EN_skin_artist)
+                        artist_dupe_catch.append(f'\n\t{CN_skin_artist} {json_artist["Illustrator"][CN_skin_artist]} {EN_skin_artist}')
                     else :
                         json_artist["Illustrator"][CN_skin_artist] = EN_skin_artist
 
@@ -493,7 +503,7 @@ for npc in json_handbook["npcDict"].keys():
                     VA_EN = json_charwordEN["voiceLangDict"][op]["dict"][lang]["cvName"][0].strip()
                     if VA_CN != VA_EN :
                         if VA_CN in json_artist["VA"].keys() and json_artist["VA"][VA_CN] != VA_EN:
-                            artist_dupe_catch.append(op,VA_CN,json_artist["VA"][VA_CN],VA_EN)
+                            artist_dupe_catch.append(f'\n\t{op} {VA_CN} {json_artist["VA"][VA_CN]} {VA_EN}')
                         else :
                             json_artist["VA"][VA_CN] = VA_EN
                             
@@ -505,10 +515,10 @@ with open("json/tl-artist.json", "w", encoding = "utf-8") as filepath :
 Akenemy()
 
 if skip_char:
-    print(f'\nNEW CHAR skip list = {skip_char}')
+    printr(f'\nNEW CHAR skip list = {skip_char}')
 if skip_mod:
-    print(f'NEW MOD skip list = {skip_mod}')
+    printr(f'NEW MOD skip list = {skip_mod}')
 if artist_dupe_catch :
-    print(f'Artist Conflict list -> {artist_dupe_catch}')
+    printr(f'Artist Conflict list -> {artist_dupe_catch}')
 
-print("pyUpdate Completed !!!\n")
+printr("pyUpdate Completed !!!\n")
