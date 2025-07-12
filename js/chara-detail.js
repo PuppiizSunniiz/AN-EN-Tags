@@ -15,13 +15,10 @@
         skills          :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/skill_table.json",
         skintable       :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/skin_table.json",
         dataconst       :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/gamedata_const.json",
-        item_table      :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/item_table.json",
         audio_data      :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/audio_data.json",
         uniequip        :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/uniequip_table.json",
         battle_equip    :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/battle_equip_table.json",
-        stage           :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/stage_table.json",
         favor           :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/favor_table.json",
-        enemy           :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/enemy_handbook_table.json",
 
         //EN
         charsEN         :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/character_table.json",
@@ -31,8 +28,6 @@
         charwordEN      :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/charword_table.json",
         buildEN         :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/building_data.json",
         skillsEN        :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/skill_table.json",
-        item_tableEN    :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/item_table.json",
-        enemyEN         :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/enemy_handbook_table.json",
         uniequipEN      :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/uniequip_table.json",
         battle_equipEN  :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/battle_equip_table.json",
 
@@ -41,6 +36,11 @@
         effect          :"./json/tl-effect.json",
         subclass        :"./json/subclass.json",
 
+        //Sliced
+        enemy           :"./json/puppiiz/enemy_name.json",
+        stage           :"./json/puppiiz/stage_code.json",
+        potential_token :"./json/puppiiz/potential_token.json",
+        
         //TL
         voicelineTL     :"./json/tl-voiceline.json",
         campdata        :"./json/tl-campdata.json",
@@ -49,7 +49,7 @@
         vaTL            :"./json/tl-va.json",
         potentialTL     :"./json/tl-potential.json",
         unreadNameTL    :"./json/tl-unreadablename.json",
-        itemstl         :"./json/tl-item.json",
+        itemsTL         :"./json/tl-item.json",
         tags            :"./json/tl-tags.json",
         classes         :"./json/tl-type.json",
         chars2          :"./json/tl-akhr.json",
@@ -2421,7 +2421,7 @@
                 `
                 break;
             case "EquipmentSquadPro":
-                var stage = db.stage.stages[mission.paramList[1]].code
+                var stage = db.stage[mission.paramList[1]]
                 var splitall = mission.paramList[3].split(";")
                 var squadinfo = ""
                 var squadprefix = ""
@@ -2450,7 +2450,7 @@
                 break;
             case "EquipmentSquadProEx":
                 var splitsquad = mission.paramList[3].split(";")
-                var stage = db.stage.stages[mission.paramList[1]].code
+                var stage = db.stage[mission.paramList[1]]
                 var squads = []
                 splitsquad.forEach(element => {
                     squads.push(query(db.classes,"type_data",element).type_en)
@@ -2479,7 +2479,7 @@
                 break;
             case "EquipmentSquadPos":
                 var splitsquad = mission.paramList[3].split(",")
-                var stage = db.stage.stages[mission.paramList[1]].code
+                var stage = db.stage[mission.paramList[1]]
                 var currclass = splitsquad[1]=="MELEE"?"Melee":"Ranged"
                 if(splitsquad[0]==13){
                     squadinfo = ` and <@ba.kw>${currclass}</> operators only in party`
@@ -2495,7 +2495,7 @@
                     `
                 break;
             case "EquipmentSquadNum":
-                var stage = db.stage.stages[mission.paramList[1]].code
+                var stage = db.stage[mission.paramList[1]]
                 tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star </br>
                     Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</> and max of <@ba.kw>${mission.paramList[3]}</> other operator
@@ -2519,7 +2519,7 @@
                 break;
             case "EquipmentSquadStar":
                 var splitsquad = mission.paramList[3].split(",")
-                var stage = db.stage.stages[mission.paramList[1]].code
+                var stage = db.stage[mission.paramList[1]]
                 var currclass = `${splitsquad[1]} Star`
                 if(splitsquad[0]==13){
                     squadinfo = ` and <@ba.kw>${currclass}</> operators only in party`
@@ -2535,7 +2535,7 @@
                     `
                 break;
             case "EquipmentSkillCastStage":
-                var stage = db.stage.stages[mission.paramList[1]].code
+                var stage = db.stage[mission.paramList[1]]
                 var skillId = mission.paramList[2].split(";")
                 var skillimg=[]
 
@@ -2581,7 +2581,7 @@
                     `
                 break;
             case "EquipmentDamageStage":
-                var stage = db.stage.stages[mission.paramList[1]].code
+                var stage = db.stage[mission.paramList[1]]
                 tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
                     <br>Deal total of <@ba.kw>${mission.paramList[3]}</> damage </br>
@@ -2601,7 +2601,7 @@
                     `
                 break;
             case "EquipmentCharKilledStage":
-                var stage = db.stage.stages[mission.paramList[1]].code
+                var stage = db.stage[mission.paramList[1]]
                 tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
                     </br>Kill <@ba.kw>${mission.paramList[3]}</> enemies
@@ -2609,12 +2609,10 @@
                     `
                 break;
             case "EquipmentEventStageKill":
-                var stage = db.stage.stages[mission.paramList[1]].code
+                var stage = db.stage[mission.paramList[1]]
                 var enemyid= mission.paramList[4].split(",")[2]
 
-                var enemycn = db.enemy.enemyData[enemyid]
-                var enemyen = db.enemyEN.enemyData?db.enemyEN.enemyData[enemyid]:db.enemyEN[enemyid]
-                var enemyName= enemyen?enemyen.name:enemycn.name
+                var enemyName = db.enemy[enemyid]
 
                 tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
@@ -2713,7 +2711,7 @@
                     `
                 break;
             case "EquipmentEventStageMore" :
-                var stage = db.stage.stages[mission.paramList[1]].code
+                var stage = db.stage[mission.paramList[1]]
                 var splitreq = mission.paramList[3].split(";")[0].split(",")
                 var chara = db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]]:db.charpatch.patchChars[mission.paramList[2]]
                 var chara2
@@ -2793,20 +2791,11 @@
                 }
 
                 //Enemies
-                function enemyparse(enemyid){
-                    if (enemyid == "*") return "any"
-                    else {
-                        var enemycn = db.enemy.enemyData[enemyid]
-                        var enemyen = db.enemyEN.enemyData?db.enemyEN.enemyData[enemyid]:db.enemyEN[enemyid]
-                        return enemyen?enemyen.name:enemycn.name
-                    }
-                }
-
                 if(enemyid){
-                    enemyName = enemyparse(enemyid)
+                    enemyName = db.enemy[enemyid]
                 }
                 if(enemyid2){
-                    enemyName2 =enemyparse(enemyid2)
+                    enemyName2 = db.enemy[enemyid2]
                     objective2 = `</br>or <@ba.kw>${mission.paramList[4]}</> <@ba.kw>${enemyName2}</>
                     <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${enemyid2}.png" style="max-width:50px">`
                 }
@@ -2856,7 +2845,7 @@
                 }
                 break;
             case "EquipmentSquadNoAnyDead" :
-                var stage = db.stage.stages[mission.paramList[1]].code
+                var stage = db.stage[mission.paramList[1]]
                 tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star </br>
                     Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</> without any operator get killed
@@ -2930,7 +2919,7 @@
                     `
                 break;
             case "EquipmentDeployOneNoEvac":
-                var stage = db.stage.stages[mission.paramList[1]].code
+                var stage = db.stage[mission.paramList[1]]
                 tl =`
                         Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star </br>
                         Deploy Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</> on the <@ba.kw>1st</> order and not retreated or killed throughout stage
@@ -2953,7 +2942,7 @@
                     `
                 break;
             case "EquipmentStageDeployCntAndSpec":
-                var stage = db.stage.stages[mission.paramList[1]].code
+                var stage = db.stage[mission.paramList[1]]
                 tl =`
                         Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star </br>
                         Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</> and deploy at max of <@ba.kw>${mission.paramList[3]}</> other operators
@@ -2986,7 +2975,7 @@
             
             case "EquipmentElementBurstStage":
                 var currchar = db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]]:db.charpatch.patchChars[mission.paramList[2]]
-                var stage = db.stage.stages[mission.paramList[1]].code
+                var stage = db.stage[mission.paramList[1]]
                 tl = `
                         Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
                         <br>Cause at least <@ba.kw>${mission.paramList[3]}</> <@ba.kw>Elemental burst</> </br>
@@ -3771,15 +3760,14 @@
         if(AmiyaPatchID.includes(opdataFull.id)) recruitcheck = db.charsEN[AmiyaCaster]
 
         //check potential token
-        var tokencheck
-        var tokencheck = db.item_tableEN.items[opdataFull.potentialItemId]
-        if(!tokencheck) tokencheck = db.item_table.items[opdataFull.potentialItemId]
-        console.log(recruitcheck.itemDesc, tokencheck)
+        var pot_token_id = opdataFull.potentialItemId?opdataFull.potentialItemId:opdataFull.activityPotentialItemId
+        var pot_token = db.potential_token[pot_token_id]
+        console.log(recruitcheck.itemDesc, pot_token_id)
 
 
         // post both
         if(recruitcheck.itemDesc){
-            textTL.push(`<div class="col-12 ${(!tokencheck?"col-sm-12":"col-sm-6")} top-buffer storysplit">
+            textTL.push(`<div class="col-12 ${(!pot_token_id?"col-sm-12":"col-sm-6")} top-buffer storysplit">
                             <table class="story-table"><th colspan=2>Recruitment Contract</th>
                             <tr>
                                 <td>${recruitcheck.itemDesc}</td>
@@ -3788,14 +3776,14 @@
                                 <td>${recruitcheck.itemUsage}</td>
                             </tr></table>
                             </div>`)
-            if(tokencheck){
+            if(pot_token_id){
                 textTL.push(`<div class="col-12 col-sm-6 top-buffer storysplit">
-                        <table class="story-table"><th colspan=2>Token</th>
+                        <table class="story-table"><th colspan=2>${pot_token_id.includes("voucher_")?"Folder":"Token"}</th>
                         <tr>
-                            <td>${tokencheck.description}</td>
+                            <td>${pot_token.description}</td>
                         </tr>
                         <tr>
-                            <td>${tokencheck.usage}</td>
+                            <td>${pot_token.usage}</td>
                         </tr>
                         </table>
                         </div>`)
@@ -3991,7 +3979,7 @@
         else $("#opstorycredits").html(``)
 
         if(isEN){
-            $('#opstorycredits').html(`<div class="btn-infoleft">Trust Translation</div><div class="btn-inforight">Official EN Arknight</div>`)
+            $('#opstorycredits').html(`<div class="btn-infoleft">Trust Translation</div><div class="btn-inforight">Official EN Arknights</div>`)
         }
         $("#opstorycontent").html(`<div class="row storyrow">${textTL.join("")}</div>`)
         // console.log(textTL)
@@ -5057,12 +5045,11 @@
             return undefined
         }
     }
-    function CreateMaterial(id,count){
-        var itemdata = db.item_table.items[id];
-        var itemdataTL = query(db.itemstl,"name_cn",itemdata.name);
+    function CreateMaterial(id, count){
+        var itemdata = query(db.itemsTL, "itemId", id.toString());
         var material =
         (`<div class="akmat-container" style="position:relative">
-            <div class="item-name" title="${itemdata.name}">${(itemdataTL.name_en?itemdataTL.name_en:itemdata.name)}</div>
+            <div class="item-name" title="${itemdata.name_cn}">${(itemdata.name_en?itemdata.name_en:itemdata.name_cn)}</div>
             <div class="item-image">
                 <img loading='lazy' id="item-image" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/items/${itemdata.iconId}.png">
             </div>

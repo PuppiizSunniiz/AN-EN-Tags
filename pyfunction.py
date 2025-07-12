@@ -12,7 +12,7 @@ RE = '\033[0m'
 def printr(*arg):
     print(f'{R}[:{inspect.currentframe().f_back.f_lineno}]{RE}', *arg, RE) # type: ignore
 
-def json_load(filepath : str) -> dict | list:
+def json_load(filepath : str):
     with open(filepath, 'r', encoding = 'utf-8') as file:
         return json.load(file)
 

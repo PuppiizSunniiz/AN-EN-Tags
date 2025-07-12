@@ -57,6 +57,7 @@
     - range not on display but added talent (-1)
 
 ### To Do
+- Token base & mod talent/stat/effect
 - Add multi animation support
     - SP Kroos have multiple Interact + Idle (even Talk)
 - Add all background element for various L2D
