@@ -217,13 +217,13 @@
         },
         "cc.bd_B_3": {
             "termId": "cc.bd_B_3",
-            "termName": "Wordless Carols",
-            "description": "Operator with this skill\nVirtuosa"
+            "termName": "Wordless Anthem",
+            "description": "Operators with this skill\nVirtuosa"
         },
         "cc.bd_A": {
             "termId": "cc.bd_A",
             "termName": "Chain of Thought",
-            "description": "Affects skills related to <$cc.bd_A_1><@cc.rem>Psychokinesis</></> and <$cc.bd_A_2><@cc.rem>Manifestation of Consciousness</></>\nProvided by the following Operators's skills:\nRosmontis"
+            "description": "Affects skills related to <$cc.bd_A_1><@cc.rem>Psychokinesis</></> and <$cc.bd_A_2><@cc.rem>Manifestation of Consciousness</></>\nProvided by the following Operators' skills:\nRosmontis"
         },
         "cc.bd_B": {
             "termId": "cc.bd_B",
@@ -238,12 +238,12 @@
         "cc.bd_a1": {
             "termId": "cc.bd_a1",
             "termName": "Perception Information",
-            "description": "Affects skills related to <$cc.bd_A><@cc.rem>Chain of Thought</></> and <$cc.bd_B><@cc.rem>Soundless Resonance</></>\nProvided by the following Operators's skills:\nRosmontis, Ebenholz, Dusk, Ling, Whisperain, Iris, Czerny"
+            "description": "Affects skills related to <$cc.bd_A><@cc.rem>Chain of Thought</></> and <$cc.bd_B><@cc.rem>Soundless Resonance</></>\nProvided by the following Operators' skills:\nRosmontis, Ebenholz, Dusk, Ling, Whisperain, Iris, Czerny"
         },
         "cc.bd_b1": {
             "termId": "cc.bd_b1",
             "termName": "Worldly Plight",
-            "description": "Affects <$cc.bd_C><@cc.rem>Witchcraft Crystal</></> skills\nProvided by the following Operators's skills\nDusk, Ling, Chongyue, Mr. Nothing, Mulberry"
+            "description": "Affects <$cc.bd_C><@cc.rem>Witchcraft Crystal</></> skills\nProvided by the following Operators' skills\nDusk, Ling, Chongyue, Mr. Nothing, Mulberry"
         },
         "cc.bd_ash": {
             "termId": "cc.bd_ash",
@@ -328,27 +328,27 @@
         "cc.g.ussg": {
             "termId": "cc.g.ussg",
             "termName": "Ursus Student Self-Governing Group",
-            "description": "Includes the following Operators:\nRosa, Zima, Istina, Gummy"
+            "description": "Includes the following Operators:\nRosa, Zima, Istina, Gummy, Leto"
         },
         "cc.g.A1": {
             "termId": "cc.g.A1",
-            "termName": "Team A1",
-            "description": "Includes the following operators\nHibiscus, Lava, Beagle, Fang, Kroos"
+            "termName": "A1 Detachment",
+            "description": "Includes the following Operators:\nHibiscus, Lava, Beagle, Fang, Kroos"
         },
         "cc.g.R6": {
             "termId": "cc.g.R6",
             "termName": "Team Rainbow",
-            "description": "Includes the following Operators:\nAsh, Tachanka, Blitz, Frost, Ela, Doc, Iana, Fuze"
+            "description": "Includes the following Operators:\nAsh Tachanka Blitz Frost Ela Doc Iana Fuze"
         },
         "cc.g.Attack": {
             "termId": "cc.g.Attack",
-            "termName": "R6S Attackers",
-            "description": "Includes the following operators\nAsh, Blitz, Iana, Fuze"
+            "termName": "Attacking team",
+            "description": "Includes the following Operators:\nAsh Blitz Iana Fuze"
         },
         "cc.g.Defence": {
             "termId": "cc.g.Defence",
-            "termName": "R6S Defenders",
-            "description": "Includes the following operators\nTachanka, Frost, Ela, Doc"
+            "termName": "Defending team",
+            "description": "Includes the following Operators:\nTachanka Frost Ela Doc"
         },
         "cc.g.sp": {
             "termId": "cc.g.sp",
@@ -368,12 +368,12 @@
         "cc.g.karlan": {
             "termId": "cc.g.karlan",
             "termName": "Karlan Trade",
-            "description": "Includes the following Operators\nSilverAsh, Gnosis, Pramanix, Cliffheart, Matterhorn, Courier, Kjera, Aurora, Degenbrecher"
+            "description": "Includes the following Operators:\nSilverAsh, Gnosis, Pramanix, Cliffheart, Matterhorn, Courier, Kjera, Aurora, Degenbrecher"
         },
         "cc.g.sui": {
             "termId": "cc.g.sui",
             "termName": "Sui",
-            "description": "Includes the following Operators\nNian, Dusk, Ling, Chongyue, Shu"
+            "description": "Includes the following Operators:\nNian Dusk Ling Chongyue Shu"
         },
         "cc.g.glasgow": {
             "termId": "cc.g.glasgow",
@@ -428,7 +428,7 @@
         "cc.c.skill": {
             "termId": "cc.c.skill",
             "termName": "Certain Skills",
-            "description": "Includes the following skills: \nCapable Assistance, S.W.E.E.P., Snack Network, Cleaning Agreement, Substitute, Necessary Responsibility, Guarding, Tiny Leader, Self-Absorbed, Million Dollar Smile, Marigold Poetry Gathering, Way of the Protector(Kestrel)"
+            "description": "Includes the following skills:\nCapable Assistance, S.W.E.E.P., Snack Network, Cleaning Agreement, Substitute, Necessary Responsibility, Guarding, Tiny Leader, Self-Absorbed, Million Dollar Smile, Marigold Poetry Gathering, Art of Defense"
         },
         "cc.t.strong2": {
             "termId": "cc.t.strong2",
@@ -438,7 +438,7 @@
         "cc.c.sui2_1": {
             "termId": "cc.c.sui2_1",
             "termName": "Special comparison rules",
-            "description": "Compare hourly Morale recovery totals of <$cc.c.room2><@cc.kw>other buildings</></> provided by <@cc.kw>Business Is Business</>, <@cc.kw>Solitary Light</> and <@cc.kw>Flag of Babel</>. The strongest effect applies."
+            "description": "The highest hourly Morale recovery of <$cc.c.room2><@cc.kw>other buildings</></> provided by <@cc.kw>Business Is Business</>, <@cc.kw>Solitary Light</>, or <@cc.kw>Banner of Babel</> will take effect"
         },
         "cc.m.pow1": {
             "termId": "cc.m.pow1",
@@ -472,8 +472,8 @@
         },
         "cc.t.accmuguard1": {
             "termId": "cc.t.accmuguard1",
-            "termName": "Bushido",
-            "description": "When assisting in mastery training, gain <@cc.kw>1</> point when training to Mastery 1, <@cc.kw>2</> points when training to Mastery 2 and <@cc.kw>3</> points when training to Mastery 3, up to limit of 3 point (If trainer has 0 mood, point cannot accumulated or spent)"
+            "termName": "Martial Arts",
+            "description": "Accumulate <@cc.kw>1</> point when assisting with Specialization training to level 1, <@cc.kw>2</> points to level 2, and <@cc.kw>3</> points at level 3, with a maximum accumulation limit of <@cc.kw>3</> points (cannot be accumulated or consumed when the Trainer's Morale is 0)"
         },
         "cc.sk.manu1": {
             "termId": "cc.sk.manu1",
@@ -498,7 +498,7 @@
         "cc.tag.op": {
             "termId": "cc.tag.op",
             "termName": "Operation Platform",
-            "description": "Includes the following Operators:\nLancet-2, Castle-3, THRM-EX, Justice Knight, Friston-3, PhonoR-0"
+            "description": "Includes the following Operators:\nLancet-2, Castle-3, THRM-EX, 'Justice Knight', Friston-3, PhonoR-0"
         },
         "cc.tag.knight": {
             "termId": "cc.tag.knight",
@@ -508,7 +508,7 @@
         "cc.tag.durin": {
             "termId": "cc.tag.durin",
             "termName": "Durin",
-            "description": "Includes the following Operators:\nMinimalist, Myrtle, Chestnut, Durin"
+            "description": "Includes the following Operators:\nMinimalist, Myrtle, Chestnut, Durin, Tecno"
         },
         "cc.tag.mh": {
             "termId": "cc.tag.mh",
@@ -533,7 +533,7 @@
         "cc.tra.pepe": {
             "termId": "cc.tra.pepe",
             "termName": "Special Exclusive Order",
-            "description": "Special Gold Bar orders provided by Pepe. These orders have a fixed acquisition time, fixed revenue and require 0 gold bars to complete"
+            "description": "Special Precious Metal orders offered by Pepe that have a fixed acquisition time and earnings, and require 0 Pure Gold to trade"
         },
         "ba.magicpoint": {
             "termId": "ba.magicpoint",
@@ -553,12 +553,12 @@
         "cc.bd_dungeon": {
             "termId": "cc.bd_dungeon",
             "termName": "Monster Meal",
-            "description": "Provided by the following Operator(s):\nSenshi"
+            "description": "Provided by the following Operators' skills:\nSenshi"
         },
         "cc.tag.dungeon": {
             "termId": "cc.tag.dungeon",
-            "termName": "Laios' Party",
-            "description": "Includes the following Operators:\nMarcille, Laios, Senshi, Chilchuck"
+            "termName": "Laios's Party",
+            "description": "Includes the following Operators:\nMarcille, Laios, Chilchuck, Senshi"
         },
         "ba.liftoff": {
             "termId": "ba.liftoff",

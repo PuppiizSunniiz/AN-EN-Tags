@@ -379,7 +379,7 @@ function populateEnemy(allenemies=false){
         $('#enemyResult').empty();
         $('#enemyResult').show();
         for (var i = 0; i < enemiesfiltered.length; i++) {
-            let image = `<img style="height:80px;padding:1px" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${enemiesfiltered[i].enemyId}.png" title="${enemiesfiltered[i].nameEN?enemiesfiltered[i].nameEN:""} [${enemiesfiltered[i].name}]" onerror="this.src='extra/not_found.png';">  `
+            let image = `<img loading='lazy' style="height:80px;padding:1px" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${enemiesfiltered[i].enemyId}.png" title="${enemiesfiltered[i].nameEN?enemiesfiltered[i].nameEN:""} [${enemiesfiltered[i].name}]" onerror="this.src='extra/not_found.png';">  `
 
             currHtml.push(`
                             <li class="ak-btn ak-enemy" style="display:inline-block;cursor: pointer;width:90px;margin:2px;margin-bottom:2px;padding:1px;border-radius:2px" data-toggle="modal" data-target="#enemysd" onclick="selectEnemy('${enemiesfiltered[i].enemyId}')"> 
@@ -467,7 +467,7 @@ function selectEnemy(el){
             linkEnemieslist.push(   `<li class="ak-btn ak-enemy" style="display:inline-block;cursor: pointer;width:90px;margin:2px;margin-bottom:2px;padding:1px;border-radius:2px" /*data-toggle="modal"*/ data-target="#enemysd" onclick="selectEnemy('${linkenemy.enemyId}')"> 
                                         <div class="col-12"style="white-space: nowrap;padding:0px;text-align:center;margin:0px ">
                                             <div style="position:absolute;top:-2px;left:2px;white-space: nowrap;padding:3px;padding-top:1px;padding-bottom:0px;margin:0px;background:#222">${linkenemy.enemyIndex}</div>
-                                            <img style="height:80px;padding:1px" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${linkenemy.enemyId}.png" title="${linkenemy.nameEN?linkenemy.nameEN:""} [${linkenemy.name}]" onerror="this.src='extra/not_found.png';">
+                                            <img loading='lazy' style="height:80px;padding:1px" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${linkenemy.enemyId}.png" title="${linkenemy.nameEN?linkenemy.nameEN:""} [${linkenemy.name}]" onerror="this.src='extra/not_found.png';">
                                         </div>
                                     </li>`
             )
@@ -480,7 +480,7 @@ function selectEnemy(el){
         <div style="display:inline-flex;flex-direction: row;min-width: 100%;">
             <div style="margin-bottom:8px;padding:5px;padding-top:10px;background:#444;margin-top:2px;display:inline-block;padding-left:10px;padding-right:30px">
                 <div style="display:inline-flex">
-                    <img style="height:80px;padding:1px" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${currEnemy.enemyId}.png" title="${tlname?tlname:""} [${currEnemy.name}]" onerror="this.src='extra/not_found.png';">
+                    <img loading='lazy' style="height:80px;padding:1px" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${currEnemy.enemyId}.png" title="${tlname?tlname:""} [${currEnemy.name}]" onerror="this.src='extra/not_found.png';">
                     <div style="border:3px solid #FFF;text-align:center;margin:5px;padding:0px;height:50px;width:50px;display:inline-block;${currEnemy.enemyIndex.length == 2 ? "font-size:30px" : "font-size:15px;padding-top:10px"}">${currEnemy.enemyIndex}</div>
                     <div style="display:inline-block;vertical-align:top">   
                         <div style="width: max-content;">${tlname ? tlname : ""} [${currEnemy.name}] </div>

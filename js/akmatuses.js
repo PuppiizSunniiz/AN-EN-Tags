@@ -540,7 +540,7 @@ function actualize() {
                 if (size < 60) {
                     body.push('<div style="display:flex;">');
                 }
-                body.push('<img style="' + buttonstyle
+                body.push('<img loading="lazy" style="' + buttonstyle
                         + '" height="' + size
                         + '" width="' + size
                         + '" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/' + char.id + '.png">');
@@ -571,7 +571,7 @@ function actualize() {
                 } else if (char.class == "Module") {
                     info = `<div style='background-color:transparent;margin:2px 0px 2px 0px;display:flex;width:100%;'>`;
                         info += `<div style='color:#ffffff;font-size:14px;font-weight:bold;background:#000;width:50%;float:left;margin-right:1px;display:flex;justify-content:center;align-items:center;padding:0px 5px 0px 5px;min-width: 40px;'>
-                                    <img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/type/${char.mod_index}.png' style='height:40px'title='${char.mod_index.replace("-d","-∆").toUpperCase().replace("-A","-α")}'>
+                                    <img loading="lazy" src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/type/${char.mod_index}.png' style='height:40px'title='${char.mod_index.replace("-d","-∆").toUpperCase().replace("-A","-α")}'>
                                 </div>`
                         info += `<div style="background:#222; width:50%; float:right; display:flex; justify-content:center; margin-left:1px;padding:0px 5px 0px 5px;">`
                         info += `<img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/stage/img_stg${char.mod_level}.png' style='width:40px;height:40px'title='Level ${char.mod_level}'></div>`;

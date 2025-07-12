@@ -38,7 +38,6 @@
 
         //Utilities
         attacktype      :"./json/tl-attacktype.json",
-        animlist        :"./json/ace/animlist.json",
         effect          :"./json/tl-effect.json",
         subclass        :"./json/subclass.json",
 
@@ -56,7 +55,6 @@
         chars2          :"./json/tl-akhr.json",
         gender          :"./json/tl-gender.json",
         tlsubclass      :"./json/tl-subclass.json",
-        // names           :"./json/tl-char.json",
         ktags           :"./json/tl-tags-key.json",
         ModuleTL        :"./json/tl-module.json",
         artistTL        :"./json/tl-artist.json",
@@ -69,8 +67,7 @@
 
         //extra
         extra_range       :"./json/ace/extra_range.json",
-        voiceold          :"./json/ace/oldvoice.json",
-        //sanitygone        :"https://sanitygone.help/aceship.json",
+        voiceold          :"./json/ace/oldvoice.json"
 
     };
     const d = new Date()
@@ -169,11 +166,10 @@
         })
 
         Object.keys(db.handbookTeam).forEach(id =>{
-            //console.log(id,Object.keys(db.handbookTeam).includes(id),Object.keys(db.handbookTeamEN).includes(id))
             if(id != "none"){
                 teamHTML[db.handbookTeam[id].powerLevel].push(
                     `<div class="op-faction btn-secondary tooltip2 adv-filter" data-id="${id}" onclick="toggleBtn(this)" section="faction">
-                        <img class='filter-img faction-img' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/logo_${id}.png'>
+                        <img loading='lazy' class='filter-img faction-img' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/logo_${id}.png'>
                         <span class="tooltiptext tooltiptop tooltipstyle1 nohover">
                             ${Object.keys(db.handbookTeamEN).includes(id)?db.handbookTeamEN[id].powerName:db.handbookTeam[id].powerCode}
                         </span>
@@ -186,7 +182,7 @@
         $("#team").html(teamHTML[2])
 
         tooltip_activate()
-        $('#to-tag').click(function(){      // When arrow is clicked
+        $('#to-tag').click(function(){              // When arrow is clicked
             $('body, html, .modal-body').animate({
                 scrollTop : 0                       // Scroll to top of body
             }, 500);
@@ -195,7 +191,6 @@
             var sticky = $('#ak-bottom-allnav'),
                 scroll = $(window).scrollTop();
                 isScrollUp = scroll<scrollcheck
-            // console.log(scroll)
             scrollcheck = scroll
 
             if(loadchibi){
@@ -204,10 +199,10 @@
                     sticky.removeClass('fixedNav1');
                     sticky.addClass('fixedNav2')
                 }
-                else if(scroll>=400&&!isScrollUp){
+                else if(scroll >= 400 && !isScrollUp){
                     sticky.addClass('fixedNav');
                     sticky.removeClass('fixedNav2');
-                } else if(scroll>=400&&isScrollUp){
+                } else if(scroll >= 400 && isScrollUp){
                     sticky.addClass('fixedNav1');
                     sticky.removeClass('fixedNav2');
                 }else{
@@ -220,7 +215,6 @@
 
         dragElement2(document.getElementById("charazoom"),document.getElementById("charazoom"))
 
-        // Add listener to class tabs
         // Add listener to class tabs
         $("#classlist .nav-item").children().each(function(i){
             $(this).click(function(){
@@ -246,15 +240,14 @@
         });
 
         $("#Chibi-Show").click(function(){
-            // console.log($("#spine-widget"))
             var isvisible = $("#spine-frame").is(":visible")
             $("#spine-frame").fadeToggle(100);
 
             if(!loadchibi){
                 loadchibi=true
-                if(bgnum==0&&$("#spine-bg").is(":hidden")){
-                    bgnum=1
-                    $('#spine-bg').attr("src","https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/spine/bg"+bgnum+".png");
+                if(bgnum == 0 && $("#spine-bg").is(":hidden")){
+                    bgnum = 1
+                    $('#spine-bg').attr("src", "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/spine/bg" + bgnum +".png");
                     $('#spine-bg').fadeIn('fast');
                 }
                 if(!spinewidget){
@@ -270,16 +263,16 @@
             if(spinewidget){
                 if(isvisible){
                     spinewidget.pause()
-                    loadchibi=false
+                    loadchibi = false
                     $('#spine-bg').fadeOut('fast')
                 }
                 else {
                     spinewidget.play()
-                    loadchibi=true
+                    loadchibi = true
 
                     if($("#spine-bg").is(":hidden")){
-                        if (bgnum==0) bgnum=1
-                        $('#spine-bg').attr("src","https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/spine/bg"+bgnum+".png");
+                        if (bgnum == 0) bgnum = 1
+                        $('#spine-bg').attr("src", "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/spine/bg" + bgnum + ".png");
                         $('#spine-bg').fadeIn('fast');
                     }
                 }
@@ -298,33 +291,30 @@
             }
             var sticky = $('#ak-bottom-allnav')
             console.log(scrollcheck)
-            if(scrollcheck>=500 && sticky.hasClass("fixedNav2")){
+            if(scrollcheck >= 500 && sticky.hasClass("fixedNav2")){
                 sticky.addClass('fixedNav1')
                 sticky.removeClass('fixedNav2');
 
                 window.setTimeout(function(){
                     sticky.removeClass('fixedNav1')
-                },100);
+                }, 100);
             }
         });
         dragElement(document.getElementById("spine-frame"));
         dragElement(document.getElementById("spine-frame-token"));
         dragElement(document.getElementById("spine-frame-op"));
         $("#Chibi-Bg").click(function(){
-            bgnum++
-            if(bgnum>bgmax)bgnum=0
-            else if(bgnum<0)bgnum=bgmax
+            bgnum ++
+            if(bgnum > bgmax) bgnum = 0
+            else if(bgnum < 0) bgnum = bgmax
 
-            if(bgnum==0) $('#spine-bg').fadeOut('fast')
+            if(bgnum == 0) $('#spine-bg').fadeOut('fast')
             else {
-
-                // $('#spine-bg').fadeIn()
                 $('#spine-bg').fadeOut('fast', function () {
-                    $('#spine-bg').attr("src","https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/spine/bg" + bgnum + ".png");
+                    $('#spine-bg').attr("src", "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/spine/bg" + bgnum + ".png");
                     $('#spine-bg').fadeIn('fast');
                 });
                 console.log( $('#spine-bg').attr("src") )
-
             }
 
 
@@ -429,13 +419,12 @@
         $(".fa-sort-amount-down").click(event => event.stopPropagation());
         $('#lefthandtoggle').click(function(event){
             lefthand = !lefthand
-            localStorage.setItem("lefthand",JSON.stringify(lefthand))
-            // console.log(lefthand)
+            localStorage.setItem("lefthand", JSON.stringify(lefthand))
             location.reload()
         })
         if(!localStorage.getItem('lefthand')){
             lefthand = false
-            localStorage.setItem("leftHand",JSON.stringify(lefthand))
+            localStorage.setItem("leftHand", JSON.stringify(lefthand))
 
         }else{
             lefthand = JSON.parse(localStorage.getItem('lefthand'))
@@ -443,7 +432,7 @@
 
         if(!localStorage.getItem('israritygrouped')){
             israritygrouped = true
-            localStorage.setItem("israritygrouped",JSON.stringify(israritygrouped))
+            localStorage.setItem("israritygrouped", JSON.stringify(israritygrouped))
             $(`#group-rarity`).addClass("btn-primary");
         }else{
             israritygrouped = JSON.parse(localStorage.getItem('israritygrouped'))
@@ -455,12 +444,12 @@
         }
 
         if(lefthand)
-        $('#lefthandtoggle').css("background-color","#0077AA")
+        $('#lefthandtoggle').css("background-color", "#0077AA")
         else
-        $('#lefthandtoggle').css("background-color","#222")
+        $('#lefthandtoggle').css("background-color", "#222")
 
-        $('#opname').bind("enterKey",function(e){
-            populateOperators($('#opname').val(),true)
+        $('#opname').bind("enterKey", function(e){
+            populateOperators($('#opname').val(), true)
          });
          $('#opname').keyup(function(e){
              if(e.keyCode == 13)
@@ -489,12 +478,12 @@
             var vars = getUrlVars();
             console.log(vars)
             if(vars.has("opname")){
-                vars.set("opname", decodeURIComponent(vars.get("opname").replace("_"," ")));
+                vars.set("opname", decodeURIComponent(vars.get("opname").replace("_", " ")));
                 console.log(vars.get("opname"));
-                var char = query(db.chars,"appellation",vars.get("opname"),true,true);
+                var char = query(db.chars, "appellation", vars.get("opname"), true, true);
                 console.log(char)
                 if(char){
-                    $.each(char,function(key,_){
+                    $.each(char, function(key, _){
                         opid = key;
                     });
                     selectOperator(opid);
@@ -510,18 +499,18 @@
             if(vars.has("opname")){
                 var char = {};
                 var opname = decodeURIComponent(vars.get("opname"));
-                var unreadable = query(db.unreadNameTL,"name_en",opname.replace(/_/g," "))
-                var correctname = (unreadable?unreadable.name:opname.replace(/_/g," "))
+                var unreadable = query(db.unreadNameTL, "name_en", opname.replace(/_/g, " "))
+                var correctname = unreadable?unreadable.name:opname.replace(/_/g, " ")
                 if(vars.get("gamemode")){
-                    var chars = query(db.chars2,"name_en",correctname,false,false);
+                    var chars = query(db.chars2, "name_en", correctname, false, false);
                     gmapp = vars.get("gamemode")
-                    char = query(chars,"gamemode",gmapp,true,false)
+                    char = query(chars, "gamemode", gmapp, true, false)
                     opid = char.id
                 }else{
-                    char = query(db.chars,"appellation",correctname,true,true);
+                    char = query(db.chars ,"appellation", correctname, true, true);
                     console.log(char)
                     opid = Object.keys(char)[0]
-                    gmapp = opid?query(db.chars2,"gamemode",opid,false,false):"";
+                    gmapp = opid?query(db.chars2, "gamemode", opid, false, false):"";
                 }
                 opapp = correctname
             }else{
@@ -552,19 +541,19 @@
                 var historygamemode = vars.get("gamemode")?vars.get("gamemode"):"BASE"
                 console.log(historyopname, opapp, historyopname != opapp, historygamemode, gmapp, historygamemode != gmapp,(historyopname && historyopname != opapp) || (historygamemode && historygamemode != gmapp))
                 if(historyopname && (historyopname != opapp || (historygamemode && historygamemode != gmapp))){
-                    var unreadable = query(db.unreadNameTL,"name_en",historyopname.replace(/_/g," "))
-                    var correctname = (unreadable?unreadable.name:historyopname.replace(/_/g," "))
+                    var unreadable = query(db.unreadNameTL, "name_en",historyopname.replace(/_/g, " "))
+                    var correctname = (unreadable?unreadable.name:historyopname.replace(/_/g, " "))
                     console.log(correctname)
                     if(vars.get("gamemode")){
-                        var chars = query(db.chars2,"name_en",correctname,false,false);
+                        var chars = query(db.chars2, "name_en", correctname, false, false);
                         gmapp = vars.get("gamemode")
-                        char = query(chars,"gamemode",gmapp,true,false)
+                        char = query(chars, "gamemode", gmapp, true, false)
                         opid = char.id
                     }else{
-                        char = query(db.chars,"appellation",correctname,true,true);
+                        char = query(db.chars, "appellation", correctname, true, true);
                         console.log(char)
                         opid = Object.keys(char)[0]
-                        gmapp = query(db.chars2,"gamemode",opid,false,false);
+                        gmapp = query(db.chars2, "gamemode", opid, false, false);
                     }
                     opapp = correctname
                     
@@ -624,11 +613,9 @@
             history.replaceState(null, '', url);
         });
 
-        // console.log("TEST")
         $('.reg[value='+reg+']').addClass('selected');
         $('.lang[value='+lang+']').addClass('selected');
 
-        //getSkillDesc('skchr_amiya_2',0);
         window.onhashchange = function() {
             console.log(window.location.pathname)
         }
@@ -700,7 +687,7 @@
     });
 
     function clickID(){
-        console.log("copy ID",opdataFull.id)
+        console.log("copy ID", opdataFull.id)
         navigator.clipboard.writeText(opdataFull.id)
     }
 
@@ -723,17 +710,15 @@
         $("#selectedopclass").empty();
 
         var result
-        if(cname!=""){
-            result= query(db.chars,"profession",cname,false,true);
+        if(cname != ""){
+            result = query(db.chars, "profession", cname, false, true);
         }else{
-            result= ObjectToArray(db.chars)
+            result = ObjectToArray(db.chars)
 
         }
-        // console.log(result.length);
-
 
         //add extra filter later
-        result = result.filter(search=>{
+        result = result.filter(search => {
             var searchOb = search[Object.keys(search)[0]]
 
             switch(searchOb.profession){
@@ -744,24 +729,22 @@
         })
 
         //add extra sort later
-        result = result.sort((ak,bk)=>{
+        result = result.sort((ak, bk) => {
             var a = ak[Object.keys(ak)[0]]
             var b = bk[Object.keys(bk)[0]]
             // console.log(ak)
-            if(a.rarity<b.rarity) return 1
-            if(a.rarity>b.rarity) return -1
-            if(a.appellation>b.appellation)return 1
-            if(a.appellation<b.appellation)return -1
+            if(a.rarity < b.rarity) return 1
+            if(a.rarity > b.rarity) return -1
+            if(a.appellation > b.appellation) return 1
+            if(a.appellation < b.appellation) return -1
         })
         var listtype = "Grid"
         var showtype = "a"
 
         for (var i = 0; i < result.length; i++) {
             var html;
-            // console.log(result[i])
-            $.each(result[i],function(key,val){ // key = char_230_savage, val = data (obj)
-                // console.log(key)
-                var type = query(db.classes,"type_data",val.profession);
+            $.each(result[i], function(key, val){ // key = char_230_savage, val = data (obj)
+                var type = query(db.classes, "type_data", val.profession);
                 var classlogo = type?type.type_en.toLowerCase():""
                 var camplogo = val.displayLogo
                 switch (listtype) {
@@ -770,10 +753,10 @@
                                 html =
                                 `
                                     <li class='selectop-list ak-shadow' onclick='selectOperator("${key}")'>
-                                        <img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${key}.png'>
+                                        <img loading='lazy' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${key}.png'>
                                         <div class='name ak-font-novecento'>${getENname(val.name)}</div>
-                                        <div class='rarity op-rarity-${val.rarity+1}'>
-                                            ${(`<i class='fa fa-star'></i>`).repeat(val.rarity+1)}
+                                        <div class='rarity op-rarity-${val.rarity + 1}'>
+                                            ${(`<i class='fa fa-star'></i>`).repeat(val.rarity + 1)}
                                         </div>
                                     </li>
                                 `
@@ -783,13 +766,13 @@
                                 html =
                                 `
                                     <li class='selectop-grid ak-shadow' onclick='selectOperator("${key}")'>
-                                        <img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${key}.png'>
+                                        <img loading='lazy' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${key}.png'>
                                         <div class='name ak-font-novecento ak-center'>${getENname(val.name)}</div>
-                                        <div class='ak-rare-${val.rarity+1}'></div>
-                                        <div class='ak-showsubclass'><img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/subclass/sub_${val.subProfessionId}_icon.png'></div>
-                                        ${cname==""&&classlogo?`<div class='ak-showclass'><img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/classes/class_${classlogo}.png'></div>`:""}
-                                        ${showtype&&camplogo?`<div class='ak-showfaction'><img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/${camplogo.toLowerCase()}.png' title='${db.campdata[camplogo]}' ></div>`:""}
-                                        <div class='grid-box op-rarity-${val.rarity+1}'></div>
+                                        <div class='ak-rare-${val.rarity + 1}'></div>
+                                        <div class='ak-showsubclass'><img loading='lazy' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/subclass/sub_${val.subProfessionId}_icon.png'></div>
+                                        ${cname == "" && classlogo?`<div class='ak-showclass'><img loading='lazy' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/classes/class_${classlogo}.png'></div>`:""}
+                                        ${showtype && camplogo?`<div class='ak-showfaction'><img loading='lazy' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/${camplogo.toLowerCase()}.png' title='${db.campdata[camplogo]}' ></div>`:""}
+                                        <div class='grid-box op-rarity-${val.rarity + 1}'></div>
                                     </li>
                                 `
 
@@ -806,7 +789,7 @@
     function getENname (CNname){
         var result;
         var found = false;
-        $.each(db.chars2,function(key,val){
+        $.each(db.chars2, function(key, val){
             if(val.name_cn.toLowerCase() == CNname.toLowerCase()){
                 found = true;
                 result = val.name_en;
@@ -819,33 +802,15 @@
         }
     }
 
-
-
-    // function populateOperators(el,isenter = false){
-    //     let inputs
-    //     if(isenter)
-    //         inputs = el
-    //     else
-    //         inputs = el.value
-
-    //     $.each(db.chars,function(_,char){
-    //         var unreadable = query(db.unreadNameTL,"name",char.appellation)
-    //         console.log(char.appellation)
-    //         console.log(unreadable)
-    //     })
-
-    // }
-    function populateOperators(el,isenter = false){
-        // console.log(el)
+    function populateOperators(el, isenter = false){
         let inputs
         if(isenter)
             inputs = el
         else
             inputs = el.value
         if(($('#operatorsResult').css("display") == "block") &&
-            ((el=="Browse"&& $("#operatorsResult").hasClass("opbrowse1"))||
-             (el=="Browse2"&& $("#operatorsResult").hasClass("opbrowse2")))){
-            // console.log($('#operatorsResult').css("display") == "none" )
+            ((el == "Browse" && $("#operatorsResult").hasClass("opbrowse1")) ||
+             (el == "Browse2" && $("#operatorsResult").hasClass("opbrowse2")))){
             $("#operatorsResult").removeClass("opbrowse1");
             $("#operatorsResult").removeClass("opbrowse2");
             $('#operatorsResult').hide();
@@ -854,16 +819,16 @@
         if(el.value != "" || el == "Browse" || el == "Browse2" || isenter && el){
             var result = [];
 
-            $.each(db.chars2,function(_,char){
-                var languages   = ['cn','en','jp','kr'];
+            $.each(db.chars2,function(_, char){
+                var languages   = ['cn', 'en', 'jp', 'kr'];
                 var found       = false;
 
                 if(el == "Browse" || el == "Browse2"){
                     found = true;
                 }else{
                     for (var i = 0; i < languages.length; i++) {
-                        var charname    = char['name_'+languages[i]];
-                        var unreadable  = query(db.unreadNameTL,"name",char.name_en)
+                        var charname    = char['name_' + languages[i]];
+                        var unreadable  = query(db.unreadNameTL, "name", char.name_en)
                         var input       = inputs.toUpperCase();
                         var search      = inputs.match(/char_[1-9]{1,4}/g)?(unreadable ? (unreadable.name_en + charname + char.id).toUpperCase().search(input) : (charname + char.id).toUpperCase().search(input))
                                             :(unreadable ? (unreadable.name_en + charname + char.id.replace("char_","")).toUpperCase().search(input) : (charname + char.id.replace("char_","")).toUpperCase().search(input));
@@ -876,20 +841,20 @@
                 if(found){
                     // console.log(char)
                     var name_cn = char.name_cn;
-                    var name = char['name_'+reg];
-                    var unreadable = query(db.unreadNameTL,"name",char.name_en).name_en
-                    var nameTL = char['name_'+lang];
+                    var name = char['name_' + reg];
+                    var unreadable = query(db.unreadNameTL, "name", char.name_en).name_en
+                    var nameTL = char['name_' + lang];
                     var id = char.id
                     var rarity = char.level;
                     var gamemode = query(db.chars2, "id", char.id).gamemode
 
                     // console.log(rarity);
-                    if(rarity!=0)
+                    if(rarity != 0)
                         result.push({'name':name, 'name_cn':name_cn, 'name_readable':unreadable, 'nameTL':nameTL, 'id':id, rarity, gamemode});
                 }
             });
             // console.log(result)
-            result.sort((a,b)=> b.rarity-a.rarity)
+            result.sort((a,b) => b.rarity - a.rarity)
             if(result.length > 0){
                 if(isenter){
                     $('#operatorsResult').hide();
@@ -898,31 +863,17 @@
                 }
                 $('#operatorsResult').empty();
                 $('#operatorsResult').show();
-                var numrar=0
-                var rarity= -1
+                var numrar = 0
+                var rarity = -1
                 for (var i = 0; i < result.length; i++) {
-
-                    //test for audio
-                    // var opdata = query(db.chars2,"name_cn",result[i].name);
-                    // var opdata2 = query(db.chars,"name",opdata.name_cn,true,true);
-                    // // console.log(opdata2)
-                    // $.each(opdata2,function(key,v){
-                    //     v['id'] = key;
-                    //     // console.log(v);
-                    //     opdataFull = v;
-                    //     opKey = key;
-                    //     return false
-                    // });
-                    // AudioText(opdataFull)
-
                     let image = `<img style="height:40px;padding:2px" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">  `
                     // console.log(image)
                     $("#operatorsResult").removeClass("opbrowse1");
                     $("#operatorsResult").removeClass("opbrowse2");
-                    if(el=="Browse3"){
-                        image = `<img class='opres-img' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">  `
+                    if(el == "Browse3"){
+                        image = `<img loading='lazy' class='opres-img' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">  `
                         var charaname = `${result[i].name_readable?`[${result[i].name_readable}]`:""}${result[i].nameTL}`
-                        $("#operatorsResult").css("text-align","center");
+                        $("#operatorsResult").css("text-align", "center");
                         $("#operatorsResult").removeClass("opresult-list");
                         $("#operatorsResult").addClass("opresult-grid");
                         $("#operatorsResult").addClass("opbrowse1");
@@ -933,53 +884,53 @@
                              </li>
                             `);
 
-                    }else if(el=="Browse2"){
-                        image = `<img class='opres-img' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">  `
-                        $("#operatorsResult").css("text-align","center");
+                    }else if(el == "Browse2"){
+                        image = `<img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">  `
+                        $("#operatorsResult").css("text-align", "center");
                         $("#operatorsResult").removeClass("opresult-list");
                         $("#operatorsResult").addClass("opresult-grid");
                         $("#operatorsResult").addClass("opbrowse2");
 
                         var opcurrname = `${result[i].name_readable?`[${result[i].name_readable}]`:""} ${result[i].nameTL}`
                         var extrathing = ''
-                        if (rarity!=result[i].rarity){
+                        if (rarity != result[i].rarity){
                             rarity = result[i].rarity
                             extrathing = `
                             ${titledMaker(`
-                            ${titledMaker(``,"",`ak-rare-${rarity} ak-shadow`,"",`height:3px;width:calc(100% + 20px);margin:-28px -10px -10px -10px;padding:0px`)}
+                            ${titledMaker(``, "", `ak-rare-${rarity} ak-shadow`, "", `height:3px;width:calc(100% + 20px);margin:-28px -10px -10px -10px;padding:0px`)}
                             <div style="margin-top:-15px">
                             ${(`<i class="fa fa-star"></i>`).repeat((rarity))}
                             </div>
-                            `,"",`op-rarity2-${rarity}`,"",`font-size:12px;height:20px;width:calc(100% + 20px);margin:0px -10px -5px -10px;text-align:center;padding-top:0px`)}
+                            `, "", `op-rarity2-${rarity}`, "", `font-size:12px;height:20px;width:calc(100% + 20px);margin:0px -10px -5px -10px;text-align:center;padding-top:0px`)}
                             <div style="padding-bottom:10px"></div>
                             `
-                            numrar+=1
+                            numrar += 1
                         }
                         $("#operatorsResult").append(
                             `${extrathing}<li class="selectop-grid2" onclick="selectOperator('${result[i].id}')">
                             <div class="op-image-grid2">
                                 ${result[i].gamemode=="BASE"?"":'<div class="op-grid-gamemode ' + result[i].gamemode +'">' + result[i].gamemode + '</div>'}
-                                <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">
+                                ${image}
                             </div>
                             <div class="${opcurrname.length>12?opcurrname.length>16?"namesmaller":"namesmall":"name"} ak-font-novecento ak-center nameshadow">${opcurrname}</div>
                             <div class='ak-rare-${result[i].rarity} selectopopgridline'></div>
                             </li>`
                         )
-                    }else if(el=="Browse"){
-                        image = `<img class='opres-img' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">  `
-                        $("#operatorsResult").css("text-align","center");
+                    }else if(el == "Browse"){
+                        image = `<img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">  `
+                        $("#operatorsResult").css("text-align", "center");
                         $("#operatorsResult").removeClass("opresult-list");
                         $("#operatorsResult").addClass("opresult-grid");
                         $("#operatorsResult").addClass("opbrowse1");
 
-                        var opcurrname = (result[i].name_readable?`[${result[i].name_readable}] `:"")+result[i].nameTL
+                        var opcurrname = (result[i].name_readable?`[${result[i].name_readable}] `:"") + result[i].nameTL
                         $("#operatorsResult").append(
                             `<li class="selectop-grid3 ak-rare-${result[i].rarity}" onclick="selectOperator('${result[i].id}')">
                             <div class="op-image-grid2">
-                                ${result[i].gamemode=="BASE"?"":'<div class="op-grid-gamemode ' + result[i].gamemode +'">' + result[i].gamemode + '</div>'}
-                                <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">
+                                ${result[i].gamemode == "BASE"?"":'<div class="op-grid-gamemode ' + result[i].gamemode +'">' + result[i].gamemode + '</div>'}
+                                ${image}
                             </div>
-                            <div class="nametext ${opcurrname.length>10?opcurrname.length>15?"namesmaller":"name":"nameshort"} ak-center blacktext">${opcurrname}</div>
+                            <div class="nametext ${opcurrname.length > 10?opcurrname.length > 15?"namesmaller":"name":"nameshort"} ak-center blacktext">${opcurrname}</div>
                             </div>
                             </li>`
                         )
@@ -991,7 +942,7 @@
                             <li class=" ak-shadow-small ak-rare-${result[i].rarity}" style="width:100%; cursor:pointer; margin-bottom:2px; position:relative;" onclick="selectOperator('${result[i].id}')">
                                 ${image}
                                 ${result[i].name_readable?`[${result[i].name_readable}]`:""} ${result[i].nameTL} (${result[i].name})
-                                ${result[i].gamemode=="BASE"?"":'<div class="op-grid-gamemode ' + result[i].gamemode +'">' + result[i].gamemode + '</div>'}
+                                ${result[i].gamemode == "BASE"?"":'<div class="op-grid-gamemode ' + result[i].gamemode +'">' + result[i].gamemode + '</div>'}
                             </li>`);
                     }
                 }
@@ -1001,9 +952,6 @@
                     <li cstyle="width:100%;cursor: pointer;margin-bottom:2px;" style="color: red; font-size: large;" ><img style="height:40px;padding:2px" src="extra/not_found.png"> No result</li>`);
             }
 
-            //<a href="?opname=${getENname(val.name)}">
-            // console.log( $("#operatorsResult")  )
-            // $('#operatorsResult').show();
         }else{
             $('#operatorsResult').empty();
             $('#operatorsResult').hide();
@@ -1028,7 +976,7 @@
     function getBranchclassHtml(btn) {
         function branchclassHtml(data_id, data_name) {
             return `<div class="btn-secondary op-branch filter-img tooltip2" onclick="toggleBtn(this)" section="branch" data-id="${data_id}">
-            <img src="${`https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/subclass/sub_${data_id}_icon.png`}" style="width:33px;height:33px;object-fit: contain;display: inline-block;" alt="${data_name}">
+            <img loading='lazy' src="${`https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/subclass/sub_${data_id}_icon.png`}" style="width:33px;height:33px;object-fit: contain;display: inline-block;" alt="${data_name}">
             <span class="tooltiptext tooltipstyle1 nohover">${data_name}</span>
             </div>`
         }
@@ -1047,7 +995,7 @@
                     branchname = currsub.name
                 }
             }
-            list+= branchclassHtml(element,branchname)
+            list += branchclassHtml(element,branchname)
         });
         return list
     }
@@ -1082,7 +1030,7 @@
     function toggleGroup(el){
         $(el).toggleClass("btn-secondary btn-primary");
         israritygrouped = !israritygrouped
-        localStorage.setItem("israritygrouped",JSON.stringify(israritygrouped))
+        localStorage.setItem("israritygrouped", JSON.stringify(israritygrouped))
         actualizeFilter();
     }
 
@@ -1303,15 +1251,15 @@
             ${extrathing}
             <li class="selectop-grid ak-shadow" onclick="selectOperator('${getId(char)}')">
             <div class="op-image-grid">
-                ${GetLogo(char)?`<div class="op-grid-faction"><img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/${GetLogo(char)?GetLogo(char).toLowerCase():"none"}.png" title="${GetLogo(char)?GetLogoInfo(char).powerCode:"None"}"></div>`:""}
+                ${GetLogo(char)?`<div class="op-grid-faction"><img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/${GetLogo(char)?GetLogo(char).toLowerCase():"none"}.png" title="${GetLogo(char)?GetLogoInfo(char).powerCode:"None"}"></div>`:""}
                 ${gamemode=="BASE"?"":'<div class="op-grid-gamemode ' + gamemode +'">' + gamemode + '</div>'}
-                <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${getId(char)}.png">
+                <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${getId(char)}.png">
             </div>
             <div class="${char.appellation.length>12?char.appellation.length>16?"namesmaller":"namesmall":"name"} ak-font-novecento ak-center">${unreadable?`[${unreadable}]`:""} ${char.appellation}</div>
             <div class='selectopopgridline ak-rare-${char.rarity + 1}'></div>
 
-            ${showfaction?`<div class='ak-showclass'><img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/classes/class_${db.classes.find(search=>search.type_data==char.profession).type_en.toLowerCase()}.png'></div>`:""}
-            ${op_branch.length!=1?`<div class='ak-showsubclass'><img src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/subclass/sub_${char.subProfessionId}_icon.png'></div>`:""}
+            ${showfaction?`<div class='ak-showclass'><img loading='lazy' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/classes/class_${db.classes.find(search=>search.type_data==char.profession).type_en.toLowerCase()}.png'></div>`:""}
+            ${op_branch.length!=1?`<div class='ak-showsubclass'><img loading='lazy' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/subclass/sub_${char.subProfessionId}_icon.png'></div>`:""}
 
             </li>`
         }).join(" "));
@@ -1522,7 +1470,7 @@
                         if(!faction_all.includes(faction)){
                             faction_sub_text += `<div>
                                                     <div id="op-faction-image" style="display: inline;">
-                                                        <img id="op-faction-image3" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/logo_${faction}.png">
+                                                        <img loading='lazy' id="op-faction-image3" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/logo_${faction}.png">
                                                     </div>
                                                     <div id="op-faction-text" style="display: inline;">
                                                         ${db.handbookTeam[faction]?db.handbookTeam[faction].powerCode:""}
@@ -1539,7 +1487,7 @@
                         if(!faction_all.includes(faction)){
                             faction_sub_text += `<div>
                                                     <div id="op-faction-image" style="display: inline;">
-                                                        <img id="op-faction-image3" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/logo_${faction}.png">
+                                                        <img loading='lazy' id="op-faction-image3" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/logo_${faction}.png">
                                                     </div>
                                                     <div id="op-faction-text" style="display: inline;">
                                                         ${db.handbookTeam[faction]?db.handbookTeam[faction].powerCode:""}
@@ -2405,7 +2353,7 @@
                                     <button type="button" class="btn ak-button" style="width:90px;height:90px" data-toggle="modal" data-target="#opmodulestory" onclick="GetModuleStory('${element}')">
                                         <span style="position:absolute;font-size: 14px;bottom:4px;left:4px;color:#fff;background:#222222dd;padding:4px;border-radius:2px" class="fa fa-search-plus"> Info</span>
                                         ${currequip.uniEquipId.search("001")!=-1?`<img class='equip-image' id='equip${i}image_add' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/subclass/sub_${opdataFull.subProfessionId}_icon.png'style='z-index: 1;  width: 21%;  top: 27.7%;  position: absolute;  left: 37.2%;  max-height: 21%;object-fit: contain;  filter: invert(5%) sepia(6%) saturate(913%) hue-rotate(12deg) brightness(83%) contrast(86%);'>`:""}
-                                        <img class='equip-image' id='equip${num}image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/icon/${currequip.uniEquipIcon.search("001")==-1?currequip.uniEquipIcon:"original"}.png' style='width: 90px;height:90px;object-fit:contain' onerror="this.src='extra/not_found.png';">
+                                        <img loading='lazy' class='equip-image' id='equip${num}image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/icon/${currequip.uniEquipIcon.search("001")==-1?currequip.uniEquipIcon:"original"}.png' style='width: 90px;height:90px;object-fit:contain' onerror="this.src='extra/not_found.png';">
                                     </button>
                                 </div>
                         </div>
@@ -2602,7 +2550,7 @@
                         skillnum = ''
                     }
 
-                    skillimg.push(`<@ba.kw><img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/skills/skill_icon_${eachskillId}.png" style="max-width:20px;margin:2px">${skillname} ${skillnum}</>`)
+                    skillimg.push(`<@ba.kw><img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/skills/skill_icon_${eachskillId}.png" style="max-width:20px;margin:2px">${skillname} ${skillnum}</>`)
                 })
 
                 console.log(opdataFull.skills)
@@ -2629,7 +2577,7 @@
                 console.log(skillnum)
                 tl=`
                     Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[0]]?db.chars[mission.paramList[0]].appellation:db.charpatch.patchChars[mission.paramList[0]].appellation}</>
-                    </br>Cast <@ba.kw><img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/skills/skill_icon_${skillId}.png" style="max-width:20px;margin:2px"> ${skillname} ${skillnum}</> <@ba.kw>${mission.paramList[2]}</> times
+                    </br>Cast <@ba.kw><img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/skills/skill_icon_${skillId}.png" style="max-width:20px;margin:2px"> ${skillname} ${skillnum}</> <@ba.kw>${mission.paramList[2]}</> times
                     `
                 break;
             case "EquipmentDamageStage":
@@ -2671,7 +2619,7 @@
                 tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
                     </br>Kill <@ba.kw>${mission.paramList[3]}</> enemies including <@ba.kw>${mission.paramList[5]}</> <@ba.kw>${enemyName}</>
-                    <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${enemyid}.png" style="max-width:50px">
+                    <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${enemyid}.png" style="max-width:50px">
                     </br>Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</>
                     `
                 break;
@@ -2726,7 +2674,7 @@
                         console.log(skillid)
                         skillname = db.skillsEN[skillid]?db.skillsEN[skillid].levels[0].name:db.skills[skillid].levels[0].name
                         enemytype = "Enemies"
-                        wordtype = `with <@ba.kw> <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/skills/skill_icon_${skillid}.png" style="max-width:20px;margin:2px"> ${skillname} (Skill 2)</> </br>Using`
+                        wordtype = `with <@ba.kw> <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/skills/skill_icon_${skillid}.png" style="max-width:20px;margin:2px"> ${skillname} (Skill 2)</> </br>Using`
                         break;
                     case "ability":
                         enemytype = "enemies"
@@ -2754,7 +2702,7 @@
                         var skillnum = opdataFull.skills.findIndex(skill => skill.skillId==skillId)
                         skillnum = `(Skill ${skillnum+1})`
                         extra = `
-                        's <@ba.kw><img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/skills/skill_icon_${skillId}.png" style="max-width:20px;margin:2px"> ${skillname} ${skillnum}</>
+                        's <@ba.kw><img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/skills/skill_icon_${skillId}.png" style="max-width:20px;margin:2px"> ${skillname} ${skillnum}</>
                         `
                     }
                 }
@@ -2860,7 +2808,7 @@
                 if(enemyid2){
                     enemyName2 =enemyparse(enemyid2)
                     objective2 = `</br>or <@ba.kw>${mission.paramList[4]}</> <@ba.kw>${enemyName2}</>
-                    <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${enemyid2}.png" style="max-width:50px">`
+                    <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${enemyid2}.png" style="max-width:50px">`
                 }
                 
                 //Skill
@@ -2873,8 +2821,8 @@
                     tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
                     </br>${objective} <@ba.kw>${mission.paramList[4]}</> <@ba.kw>${enemyName}</>
-                    <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${enemyid}.png" style="max-width:50px">
-                    </br>with <@ba.kw> <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/skills/skill_icon_${skill}.png" style="max-width:20px;margin:2px"> ${skillname} (Skill ${skillid})</>
+                    <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${enemyid}.png" style="max-width:50px">
+                    </br>with <@ba.kw> <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/skills/skill_icon_${skill}.png" style="max-width:20px;margin:2px"> ${skillname} (Skill ${skillid})</>
                     </br>Using Non-Borrowed <@ba.kw>${chara.appellation}</>
                     `
                 }
@@ -2889,14 +2837,14 @@
                         tl=`
                             Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
                             </br>${objective} <@ba.kw>${mission.paramList[4]}</> <@ba.kw>${enemyName}</>
-                            <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${enemyid}.png" style="max-width:50px"> ${objective2}
+                            <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${enemyid}.png" style="max-width:50px"> ${objective2}
                             </br>Using Non-Borrowed <@ba.kw>${chara.appellation}</>
                         `
                     }
                 }else if (skill){
                     tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
-                    </br>${objective} <@ba.kw>${mission.paramList[4]}</> enemies using <@ba.kw> <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/skills/skill_icon_${skill}.png" style="max-width:20px;margin:2px"> ${skillname} (Skill ${skillid})</>
+                    </br>${objective} <@ba.kw>${mission.paramList[4]}</> enemies using <@ba.kw> loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/skills/skill_icon_${skill}.png" style="max-width:20px;margin:2px"> ${skillname} (Skill ${skillid})</>
                     </br>Using Non-Borrowed <@ba.kw>${chara.appellation}</>
                     `
                 }else if(chara2){
@@ -2952,7 +2900,7 @@
                 var skilltext = `Use at least <@ba.kw> ${mission.paramList[2]}</> times of the following skills :`
                 skills.forEach(element => {
                     console.log(element.id)
-                    skilltext += `<@ba.kw> <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/skills/skill_icon_${element.id}.png" style="max-width:20px;margin:2px"> ${element.name} (Skill ${element.num})</> </br>`
+                    skilltext += `<@ba.kw> <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/skills/skill_icon_${element.id}.png" style="max-width:20px;margin:2px"> ${element.name} (Skill ${element.num})</> </br>`
                 });
                 tl =`
                         Complete <@ba.kw>${mission.paramList[0]}</> stages </br>
@@ -2996,7 +2944,7 @@
                     console.log(element)
                     var currchar = db.chars[element]
                     console.log(currchar.appellation)
-                    splitName+=  `</br><@ba.kw> <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${element}.png" style="max-width:50px"> ${currchar.appellation} </>`
+                    splitName+=  `</br><@ba.kw> <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${element}.png" style="max-width:50px"> ${currchar.appellation} </>`
                 });
                 tl =`
                         Complete <@ba.kw>${mission.paramList[0]}</> stages </br>
@@ -3016,7 +2964,7 @@
                 tl =`
                         Complete <@ba.kw>${mission.paramList[0]}</> stages </br>
                         Kill at least <@ba.kw>${mission.paramList[4]}</> enemies using Non-Borrowed </br>
-                        <@ba.kw> <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${mission.paramList[2]}.png" style="max-width:50px"> ${currchar.appellation} </>, and at least deployed <@ba.kw>${mission.paramList[1]}</> times
+                        <@ba.kw> <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${mission.paramList[2]}.png" style="max-width:50px"> ${currchar.appellation} </>, and at least deployed <@ba.kw>${mission.paramList[1]}</> times
                     `
                 break;
             case "EquipmentBattleCharDamage":
@@ -3024,7 +2972,7 @@
                 tl =`
                         Complete <@ba.kw>${mission.paramList[0]}</> stages </br>
                         Deal at least <@ba.kw>${mission.paramList[2]}</> damage using Non-Borrowed </br>
-                        <@ba.kw> <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${mission.paramList[1]}.png" style="max-width:50px"> ${currchar.appellation} </>
+                        <@ba.kw> <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${mission.paramList[1]}.png" style="max-width:50px"> ${currchar.appellation} </>
                     `
                 break;
 
@@ -3162,7 +3110,7 @@
                 `
                 <div class="token-details" style='background:#333;margin:2px 0px;padding:2px 10px;height:64px'>
                     <div style ="display:inline-block;margin:0px 2px;background:#222222aa">
-                        <img class='token-image notclickthrough' id='Tokenimage' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${globaltoken}.png' style='width:60px;margin:-0px 0px 0px 0px' onerror="this.src='extra/not_found.png';">
+                        <img loading='lazy' class='token-image notclickthrough' id='Tokenimage' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${globaltoken}.png' style='width:60px;margin:-0px 0px 0px 0px' onerror="this.src='extra/not_found.png';">
                     </div>
                     <div style ="position:absolute;left:80px;top:7px">
                         <div class='stats'>
@@ -3314,7 +3262,7 @@
             <div style="background:#222;padding:6px 5px 6px 5px;font-size:20px;text-align:center">${currequipEN?currequipEN.uniEquipName:currequip.uniEquipName}</div>
             <div class="equip-image-container">
                 ${currequip.uniEquipId.search("001")!=-1?`<img class='equip-image' id='equip${i}image_add' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/subclass/sub_${opdataFull.subProfessionId}_icon.png'style='z-index: 1;  width: 21%;  top: 27.7%;  position: absolute;  left: 37.2%;  max-height: 21%;object-fit: contain;filter: invert(5%) sepia(6%) saturate(913%) hue-rotate(12deg) brightness(83%) contrast(86%);'>`:""}
-                <img class='equip-image' id='equip${i}image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/icon/${currequip.uniEquipIcon.search("001")==-1?currequip.uniEquipIcon:"original"}.png' style='width:100%;max-width:500px' onerror="this.src='extra/not_found.png';">
+                <img loading='lazy' class='equip-image' id='equip${i}image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/icon/${currequip.uniEquipIcon.search("001")==-1?currequip.uniEquipIcon:"original"}.png' style='width:100%;max-width:500px' onerror="this.src='extra/not_found.png';">
             </div>
 
             <div style="background:#222;padding:6px 5px 6px 5px;font-size:20px;text-align:center">Basic Information</div>
@@ -4306,7 +4254,7 @@
                 riicskills.push(`
                 <div class="" style="background:#444;margin:4px;padding:0px;background:#444;border-radius:2px;text-align:left">
                     <div style="background:#999;display:inline-block;padding:2px;width:100%;border-radius:2px 2px 0px 0px;position:relative;height:33px">
-                        <img id="op-riicdetail-img" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/infrastructure/skill/${currbuff.skillIcon}.png" style="border-radius:50%;background:#333;padding:3px;position:absolute;left:2px;top:2px;width:30px" title=""></img>
+                        <img loading='lazy' id="op-riicdetail-img" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/infrastructure/skill/${currbuff.skillIcon}.png" style="border-radius:50%;background:#333;padding:3px;position:absolute;left:2px;top:2px;width:30px" title=""></img>
                         <div id="op-riicdetail-name" style="display:inline-block;color:#ddd;font-size:13px;background:#333;padding:2px 5px 2px 12px;border-radius:0px 6px 6px 0px;margin:3px 2px 2px 18px;z-index:1">
                             ${currname}
                         </div>
@@ -4401,7 +4349,7 @@
                 currdesc = currdesc.replace(/\\n/g,"\n\n")
                 eachtab.push(`
                     <div style="display:inline-block;background:#444;padding:2px;padding-top:2px;background:#444;border-radius:2px;">
-                        <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/infrastructure/skill/${currbuff.skillIcon}.png" style="" onclick="ShowRiicDetail('${eachbuff}','${currname.replace(/\'/g,"\\\'").replace(/\"/g,"\\\'")}','${normdesc.replace(/\'/g,"\\\'").replace(/\"/g,"\\\'")}','https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/infrastructure/skill/${currbuff.skillIcon}.png')" title="${currname.replace(/\"/g,"\'")}\n\n${currdesc.replace(/\"/g,"\'")}">
+                        <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/infrastructure/skill/${currbuff.skillIcon}.png" style="" onclick="ShowRiicDetail('${eachbuff}','${currname.replace(/\'/g,"\\\'").replace(/\"/g,"\\\'")}','${normdesc.replace(/\'/g,"\\\'").replace(/\"/g,"\\\'")}','https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/infrastructure/skill/${currbuff.skillIcon}.png')" title="${currname.replace(/\"/g,"\'")}\n\n${currdesc.replace(/\"/g,"\'")}">
                     </div>`)
                     // console.log(`onclick="ShowRiicDetail('${currname}','${currdesc}','https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/infrastructure/skill/${currbuff.skillIcon}.png')"`)
             });
@@ -5116,9 +5064,9 @@
         (`<div class="akmat-container" style="position:relative">
             <div class="item-name" title="${itemdata.name}">${(itemdataTL.name_en?itemdataTL.name_en:itemdata.name)}</div>
             <div class="item-image">
-                <img id="item-image" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/items/${itemdata.iconId}.png">
+                <img loading='lazy' id="item-image" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/items/${itemdata.iconId}.png">
             </div>
-            <img class="item-rarity" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/material/bg/item-${RarityConvert(itemdata.rarity)+1}.png">
+            <img loading='lazy' class="item-rarity" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/material/bg/item-${RarityConvert(itemdata.rarity)+1}.png">
             <div class="item-amount">${count}x</div>
         </div>`)
         return material
@@ -5566,12 +5514,12 @@
         let html =""
         if(skill_no>0&&skill_no<7){
             img += skill_no+".png"
-            html = `<img src="${img}" style="width:40px">`
+            html = `<img loading='lazy' src="${img}" style="width:40px">`
         }else if(skill_no>=7){
             let imgM = img +"m-"+ (skill_no-7)+".png"
             img += "7.png"
 
-            html = `<img src="${img}" style="width:40px"><div class="akrankmastery"><img src="${imgM}" style="width:40px"></div>`
+            html = `<img loading='lazy' src="${img}" style="width:40px"><div class="akrankmastery"><img loading='lazy' src="${imgM}" style="width:40px"></div>`
         }
         return html
     }
@@ -5820,13 +5768,13 @@
         }*/
         if(spinewidget && spinewidget.loaded){
 
-            var animskill = db.animlist[opdataFull.id]
+            /*var animskill = db.animlist[opdataFull.id]
             console.log(skillnum)
             if(animskill && animskill.skills[skillnum]){
                 $("#spine-text").text(`Skill ${skillnum+1}`)
                 CreateAnimation(spinewidget, animskill.skills[skillnum],true)
             }
-            else{
+            else{*/
                 var animlist = Object.keys(spinewidget.customanimation).filter(search => search.includes("Skill"))
 
                 animlist = animlist.sort((a, b) => {
@@ -5844,7 +5792,7 @@
                         CreateAnimation(spinewidget,spinewidget.customanimation[animlist[skillmax-skillnum-1]],true)
                     }
                 }
-            }
+            //}
 
         }
     }
