@@ -8,7 +8,6 @@
         chars           :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/character_table.json",
         charpatch       :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/char_patch_table.json",
         charword        :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/charword_table.json",
-        build           :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/building_data.json",
         handbookInfo    :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/handbook_info_table.json",
         handbookTeam    :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/handbook_team_table.json",
         range           :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/range_table.json",
@@ -26,7 +25,6 @@
         handbookInfoEN  :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/handbook_info_table.json",
         handbookTeamEN  :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/handbook_team_table.json",
         charwordEN      :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/charword_table.json",
-        buildEN         :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/building_data.json",
         skillsEN        :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/skill_table.json",
         uniequipEN      :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/uniequip_table.json",
         battle_equipEN  :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/battle_equip_table.json",
@@ -40,6 +38,7 @@
         enemy           :"./json/puppiiz/enemy_name.json",
         stage           :"./json/puppiiz/stage_code.json",
         potential_token :"./json/puppiiz/potential_token.json",
+        build           :"./json/puppiiz/riic_data.json",
         
         //TL
         voicelineTL     :"./json/tl-voiceline.json",
@@ -60,7 +59,6 @@
         artistTL        :"./json/tl-artist.json",
 
         //jet TL
-        riic            :"./json/ace/riic.json",
         talentsTL       :"./json/ace/tl-talents.json",
         skillsTL        :"./json/ace/tl-skills.json",
         named_effects   :"./json/named_effects.json",
@@ -1810,7 +1808,7 @@
             $("#op-taglist").append(newtags);
 
 
-            GetRiic2(opdata2)
+            GetRiic(opdata2)
             // console.log(charaRiic)
 
 
@@ -4141,7 +4139,7 @@
         return potentialsTL
     }
 
-    function GetRiic2(opdata2){
+    function GetRiic(opdata2){
         var charaRiic = db.build.chars[Object.keys(opdata2)[0]]
         var riicList = []
         var everybuff = []
@@ -4156,21 +4154,21 @@
         charaRiic.buffChar.forEach(eachbuffchar => {
             everybuff.push(eachbuffchar.buffData)
             eachbuffchar.buffData.forEach(eachbuffdata => {
-                var checkphase = riicList.find(search=>search.phase == eachbuffdata.cond.phase&&search.level == eachbuffdata.cond.level)
+                var checkphase = riicList.find(search => search.phase == eachbuffdata.cond.phase && search.level == eachbuffdata.cond.level)
                 if(!checkphase){
-                    riicList.push({phase:eachbuffdata.cond.phase,level:eachbuffdata.cond.level,list:[]})
+                    riicList.push({phase:eachbuffdata.cond.phase, level:eachbuffdata.cond.level, list:[]})
                 }
             });
         });
 
-        if (riicList.length==0){
+        if (riicList.length == 0){
             $("#op-riic").html("")
             return
         }
-        riicList = riicList.sort((a,b)=>{
+        riicList = riicList.sort((a, b)=>{
             var calc = 0
-            calc += (PhaseConvert(a.phase) - PhaseConvert(b.phase))*100
-            + (a.level - b.level)*1
+            calc += (PhaseConvert(a.phase) - PhaseConvert(b.phase)) * 100
+            + (a.level - b.level) * 1
 
             console.log(calc)
             return calc
@@ -4181,9 +4179,9 @@
             var currlevel = eachcat.level
             var currphase = PhaseConvert(eachcat.phase)
             var imagereq =[]
-            if(currphase >=0)
+            if(currphase >= 0)
                 imagereq.push(`<img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/${currphase}.png" style="width:18px;margin-top:-5px">`)
-            if(currlevel >1)
+            if(currlevel > 1)
                 imagereq.push(`<span style='font-size:11px;margin-left:-2px'><span style='font-size:6px'>Lv.</span>${currlevel}</span>`)
 
                 riicTab.push(`
@@ -4194,35 +4192,33 @@
             </li>
             `)
 
-            if(currphase==2&&activeElite<2){
-                activeElite=2
-                activeLevel=currlevel
+            if(currphase == 2 && activeElite < 2){
+                activeElite = 2
+                activeLevel = currlevel
             }
-            if(currphase==1&&activeElite<=1){
-                activeElite=1
-                if(activeLevel<currlevel){
-                    activeLevel= currlevel
+            if(currphase == 1 && activeElite <= 1){
+                activeElite = 1
+                if(activeLevel < currlevel){
+                    activeLevel = currlevel
                 }
             }
-            if(currphase==0&&activeElite<=0){
-                activeElite=0
-                if(activeLevel<currlevel){
-                    activeLevel= currlevel
+            if(currphase == 0 && activeElite <= 0){
+                activeElite = 0
+                if(activeLevel < currlevel){
+                    activeLevel = currlevel
                 }
             }
-
-
 
             everybuff.forEach(eachbuff => {
-                var sortedbuff = eachbuff.sort((a,b)=>{
-                    if(a.cond.phase<b.cond.phase) return 1
-                    if(a.cond.phase>b.cond.phase) return -1
-                    if(a.cond.level<b.cond.level) return 1
-                    if(a.cond.level>b.cond.level) return -1
+                var sortedbuff = eachbuff.sort((a, b) => {
+                    if(a.cond.phase < b.cond.phase) return 1
+                    if(a.cond.phase > b.cond.phase) return -1
+                    if(a.cond.level < b.cond.level) return 1
+                    if(a.cond.level > b.cond.level) return -1
                     return 0
                 })
-                for(i=0;i<sortedbuff.length;i++){
-                    if(eachcat.phase>=sortedbuff[i].cond.phase&&eachcat.level >= sortedbuff[i].cond.level){
+                for(i = 0; i < sortedbuff.length; i++){
+                    if(eachcat.phase >= sortedbuff[i].cond.phase && eachcat.level >= sortedbuff[i].cond.level){
                         eachcat.list.push(sortedbuff[i].buffId)
                         break;
                     }
@@ -4233,12 +4229,10 @@
 
             eachcat.list.forEach(id => {
                 var currbuff = db.build.buffs[id]
-                var tlbuff = db.riic[id]
-
-                var currname = tlbuff?tlbuff.name:currbuff.buffName
-                var currdesc = tlbuff?tlbuff.descformat:currbuff.description
+                var currname = currbuff.buffName
+                var currdesc = currbuff.description
                 var formattedesc = ChangeDescriptionColor2(currdesc)
-                formattedesc = formattedesc.replace(/\\n/g,"<br>")
+                formattedesc = formattedesc.replace(/\\n/g, "<br>")
                 riicskills.push(`
                 <div class="" style="background:#444;margin:4px;padding:0px;background:#444;border-radius:2px;text-align:left">
                     <div style="background:#999;display:inline-block;padding:2px;width:100%;border-radius:2px 2px 0px 0px;position:relative;height:33px">
@@ -4281,115 +4275,13 @@
         $(`#riic${activeElite}-${activeLevel}`).toggleClass("active")
     }
 
-    function GetRiic(opdata2){
-        var charaRiic = db.build.chars[Object.keys(opdata2)[0]]
-        var riicList = []
-        var everybuff = []
-
-        charaRiic.buffChar.forEach(eachbuffchar => {
-            everybuff.push(eachbuffchar.buffData)
-            eachbuffchar.buffData.forEach(eachbuffdata => {
-                var checkphase = riicList.find(search=>search.phase==eachbuffdata.cond.phase&&search.level == eachbuffdata.cond.level)
-                if(!checkphase){
-                    riicList.push({phase:eachbuffdata.cond.phase,level:eachbuffdata.cond.level,list:[]})
-                }
-            });
-        });
-
-
-
-        riicList.forEach(eachcat =>{
-            // checkphase.list.push(eachbuffdata.buffId)
-
-            everybuff.forEach(eachbuff => {
-                var sortedbuff = eachbuff.sort((a,b)=>{
-                    if(a.cond.phase<b.cond.phase) return 1
-                    if(a.cond.phase>b.cond.phase) return -1
-                    if(a.cond.level<b.cond.level) return 1
-                    if(a.cond.level>b.cond.level) return -1
-                    return 0
-                })
-                for(i=0;i<sortedbuff.length;i++){
-                    if(eachcat.phase>=sortedbuff[i].cond.phase&&eachcat.level >= sortedbuff[i].cond.level){
-                        eachcat.list.push(sortedbuff[i].buffId)
-                        break;
-                    }
-                }
-                // if(eachcat.phase>=eachbuff.cond.phase&&eachcat.level >= eachbuff.cond.level){
-                //     eachcat.list.push(eachbuff.buffId)
-                // }
-                // console.log(sortedbuff)
-            });
-        })
-        console.log(riicList)
-        var htmlcomb = []
-
-        riicList.forEach(eachcat => {
-            var eachtab = []
-            eachcat.list.forEach(eachbuff => {
-                var currbuff = db.build.buffs[id]
-                var tlbuff = db.riic[id]
-
-                var currname = tlbuff?tlbuff.name:currbuff.buffName
-                var currdesc = tlbuff?tlbuff.descformat:currbuff.description
-                var normdesc = currdesc
-                // console.log(eachbuff)
-                currdesc = currdesc.replace(/\\n/g,"\n\n")
-                eachtab.push(`
-                    <div style="display:inline-block;background:#444;padding:2px;padding-top:2px;background:#444;border-radius:2px;">
-                        <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/infrastructure/skill/${currbuff.skillIcon}.png" style="" onclick="ShowRiicDetail('${eachbuff}','${currname.replace(/\'/g,"\\\'").replace(/\"/g,"\\\'")}','${normdesc.replace(/\'/g,"\\\'").replace(/\"/g,"\\\'")}','https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/infrastructure/skill/${currbuff.skillIcon}.png')" title="${currname.replace(/\"/g,"\'")}\n\n${currdesc.replace(/\"/g,"\'")}">
-                    </div>`)
-                    // console.log(`onclick="ShowRiicDetail('${currname}','${currdesc}','https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/infrastructure/skill/${currbuff.skillIcon}.png')"`)
-            });
-
-            var imagereq = []
-                if(eachcat.level >1)
-                imagereq.push(`Lv.${eachcat.level}`)
-                if(eachcat.phase>=0)
-                imagereq.push(`<img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/${eachcat.phase}.png" style="width:20px;margin-top:-5px" title="Elite ${eachcat.phase}">`)
-            var currinfo = `<div style="color:#999;background:#222;padding:1px;padding-left:3px;padding-right:3px;border-radius:2px">${imagereq.join("")}</div>`
-            htmlcomb.push(`
-            <div style="display:inline-block;background:#444;margin:0px;padding:2px;padding-top:2px;background:#444;border-radius:2px;text-align:center">${currinfo}${eachtab.join("")}</div>
-            `)
-
-            // htmlcomb.push()
-        });
-        var combinehtml =`
-        <div style="color:#fff;text-align:center;background:#333;padding-bottom:0px">Infrastructure Skills</div>
-            <div class="ak-shadow" style="margin-bottom:8px;padding-top:10px;padding:2px;background:#666;text-align:center">
-                ${htmlcomb.join("")}
-            <div id="op-riicdetail" class="ak-shadow" style="background:#444;margin:4px;padding:0px;background:#444;border-radius:2px;text-align:left">
-                <div style="background:#999;display:inline-block;padding:2px;width:100%;border-radius:2px 2px 0px 0px;position:relative;height:46px">
-                    <img id="op-riicdetail-img" src="" style="border-radius:50%;background:#333;padding:3px;position:absolute;left:2px;top:2px" title=""></img>
-                    <div id="op-riicdetail-name" style="display:inline-block;color:#ddd;font-size:13px;background:#333;padding:4px 5px 4px 12px;border-radius:0px 6px 6px 0px;margin:7px 2px 2px 30px;z-index:1"></div>
-                </div>
-                <div style="display:inline-block;margin:4px">
-
-                    <div id="op-riicdetail-desc" style="font-size:11px;"></div>
-                </div>
-            </div>
-            </div>
-
-        </div>
-        `
-
-        // console.log(htmlcomb.join(""))
-        if (riicList.length>0)
-        return combinehtml
-        else
-        return ""
-
-    }
-
     function ShowRiicDetail(id,title,desc,img){
         if($("#op-riicdetail").is(":visible")&&$("#op-riicdetail-name").html()==title){
             $("#op-riicdetail").slideUp(200)
         }else{
             var currbuff = db.build.buffs[id]
-            var tlbuff = db.riic[id]
-
-            var currname = tlbuff?tlbuff.name:currbuff.buffName
-            var currdesc = tlbuff?tlbuff.descformat:currbuff.description
+            var currname = currbuff.buffName
+            var currdesc = currbuff.description
             var formattedesc = ChangeDescriptionColor2(currdesc)
 
             console.log(currname)
@@ -4838,12 +4730,12 @@
     function TalentParse2(eachtalent,talentnum){
         // console.log(talentnum)
         var imagereq = []
-        if(eachtalent.talent.unlockCondition.level >1)
-        imagereq.push(`<span style="font-size:8px">Lv.</span>${eachtalent.talent.unlockCondition.level} `)
         if(PhaseConvert(eachtalent.talent.unlockCondition.phase) >=0)
-        imagereq.push(`<img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/${PhaseConvert(eachtalent.talent.unlockCondition.phase)}.png" style="width:20px;margin-top:-5px" title="Elite ${eachtalent.talent.unlockCondition.phase}">`)
+            imagereq.push(`<img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/${PhaseConvert(eachtalent.talent.unlockCondition.phase)}.png" style="width:20px;margin-top:-5px" title="Elite ${eachtalent.talent.unlockCondition.phase}">`)
+        if(eachtalent.talent.unlockCondition.level >1)
+            imagereq.push(`<span style="font-size:8px">Lv.</span>${eachtalent.talent.unlockCondition.level} `)
         if(eachtalent.talent.requiredPotentialRank >0)
-        imagereq.push(`<img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/potential/${eachtalent.talent.requiredPotentialRank+1}.png" style="width:20px" title="Potential ${eachtalent.talent.requiredPotentialRank+1}">`)
+            imagereq.push(`<img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/potential/${eachtalent.talent.requiredPotentialRank+1}.png" style="width:20px" title="Potential ${eachtalent.talent.requiredPotentialRank+1}">`)
 
         var currTalentName = eachtalent.talentEN?eachtalent.talentEN.name:eachtalent.talentTL?eachtalent.talentTL.name:eachtalent.talent.name
         var currTalentDesc = eachtalent.talentEN?eachtalent.talentEN.description:eachtalent.talentTL?eachtalent.talentTL.desc:eachtalent.talent.description

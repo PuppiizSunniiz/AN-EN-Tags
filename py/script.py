@@ -131,7 +131,7 @@ DB = load_json()
 ################################################################################################################################################################################################################################################
 # Util
 ################################################################################################################################################################################################################################################
-def script_result(text, show = False):
+def script_result(text : str | list | dict, show : bool = False):
     '''
         Output result
             STR, LIST   >   TXT
@@ -160,14 +160,14 @@ def printr(*arg):
 
 def printc(*arg):
     all_arg = [*arg]
-    print(f'{R}[:{inspect.currentframe().f_back.f_lineno}]{RE}', " ".join([f'{G}{each_arg}' if all_arg.index(each_arg) % 2 == 1 else f'{B}{each_arg}' for each_arg in all_arg ]), RE) # type: ignore
+    print(f'{R}[:{inspect.currentframe().f_back.f_lineno}]{RE}', " ".join([f'{G}{all_arg[i]}' if i % 2 == 1 else f'{B}{all_arg[i]}' for i in range(len(all_arg))]), RE) # type: ignore
 
 def printt(*arg, mode = ""):
     file = __file__
     print(f'[{R}{file}:{inspect.currentframe().f_back.f_lineno}{RE}]')
     if mode == "c":
         all_arg = [*arg]
-        print(" ".join([f'{G}{each_arg}' if all_arg.index(each_arg) % 2 == 1 else f'{B}{each_arg}' for each_arg in all_arg ]), RE)
+        print(" ".join([f'{G}{all_arg[i]}' if i % 2 == 1 else f'{B}{all_arg[i]}' for i in range(len(all_arg))]), RE)
     else:
         print(*arg)
 
@@ -194,7 +194,7 @@ def wiki_trim(text : str) -> str:
 ################################################################################################################################################################################################################################################
 # Old Script
 ################################################################################################################################################################################################################################################
-def skin_lister(show = False) :
+def skin_lister(show : bool = False) :
     '''
         list all skin name
     '''
@@ -213,7 +213,7 @@ def skin_lister(show = False) :
 
     script_result("\n".join(skin_list))
 
-def skill_icon_lister(show = False):
+def skill_icon_lister(show : bool = False):
     '''
         list all skill id
     '''
@@ -237,7 +237,7 @@ def skill_icon_lister(show = False):
 
     script_result("\n".join(skill_list))
 
-def ops_e2_talent(show = False):
+def ops_e2_talent(show : bool = False):
     '''
         fetch e2 talent both p1 and talent potential
     '''
@@ -251,7 +251,7 @@ def ops_e2_talent(show = False):
         char_dict[char] = [[{("upgradeDescription" if x == "description" else x):talent["candidates"][i][x] for x in ["name", "description", "blackboard"]} for i in ([-1] if talent["candidates"][-1]["requiredPotentialRank"] == 0 else [-2,-1])] for talent in talents]
     script_result(char_dict)
 
-def term_kw(show = False):
+def term_kw(show : bool = False):
     term_list = []
     for term in DB["json_named_effect"]["termDescriptionDict"]:
         if term[0:2] == "ba":
@@ -260,7 +260,7 @@ def term_kw(show = False):
     
     script_result("\n".join(term_list))
 
-def recruit_update(show = False):
+def recruit_update(show : bool = False):
     '''
         fetch recruit ops details from recruitment instruction straight from "gacha_table.json"
     '''
@@ -291,7 +291,7 @@ def recruit_update(show = False):
     
     script_result("\n".join(recruitCN+recruitEN))
     
-def boss_stage_regex(show = False):
+def boss_stage_regex(show : bool = False):
     '''
         regex for boss stage variant
     '''
@@ -301,7 +301,7 @@ def boss_stage_regex(show = False):
 
     print(test.group(1))
 
-def skin_artist(show = False):
+def skin_artist(show : bool = False):
     for skin in DB["json_skin"]["charSkins"].keys():
         if skin in DB["json_skinEN"]["charSkins"].keys():
         #print(skin)
@@ -311,7 +311,7 @@ def skin_artist(show = False):
                 if CN_skin_artist != EN_skin_artist:
                     print(f'{skin}\t{CN_skin_artist}\t{EN_skin_artist}')
 
-def va_artist(show = False):
+def va_artist(show : bool = False):
     va = []
     va_dict = {}
     
@@ -330,7 +330,7 @@ def va_artist(show = False):
                     
     if va : script_result(("\n").join(va))
 
-def subpower_list(show = False):
+def subpower_list(show : bool = False):
     temp = []
     for char in DB["json_character"]:
         if DB["json_character"][char]["subPower"]:
@@ -338,7 +338,7 @@ def subpower_list(show = False):
 
     print (temp)
 
-def stage_kill_test(show = False):
+def stage_kill_test(show : bool = False):
     IGNORED = {"enemy_10082_mpweak","enemy_10072_mpprhd"}
     test = {"all":{}, "filtered_start":{},"filtered_end":{}, "enemies":{"KILL":0, "NORMAL":[], "ELITE":[], "BOSS":[], "Extra":[]}}
     times = 0
@@ -413,7 +413,7 @@ def stage_kill_test(show = False):
     print("Enemy count = ", count[0], "### More suspect = ", count[1])
     script_result(test)
 
-def stage_kills(stage_paths = [], show = False): #need check for drop in like kevin
+def stage_kills(stage_paths = [], show : bool = False): #need check for drop in like kevin
     IGNORED = {"enemy_10082_mpweak", "enemy_10072_mpprhd", "enemy_3009_mpprss"} # square / Hand / EYESOFPRIESTESS
     result_json = {}
     result_text = []
@@ -510,7 +510,7 @@ def stage_kills(stage_paths = [], show = False): #need check for drop in like ke
     if stage_paths:
         return result_json
 
-def infinity_skill(show = False):
+def infinity_skill(show : bool = False):
     infinity = []
     exclude = ["skchr_typhon_2", "skchr_thorns_3", "skchr_buildr_2"]
     bypass = ["skchr_swire2_1", "skchr_swire2_2", "skchr_marcil_2"]
@@ -582,7 +582,7 @@ def infinity_skill(show = False):
 # Script Playground
 ################################################################################################################################################################################################################################################
 
-def char_name(show = False):
+def char_name(show : bool = False):
     temp = {}
     DB_EN = DB["json_characterEN"]
     DB_JP = json_load("json/gamedata/ArknightsGameData_YoStar/ja_JP/gamedata/excel/character_table.json")
@@ -602,7 +602,7 @@ def char_name(show = False):
         
     script_result(temp, show)
 
-def event_tag(show = False):
+def event_tag(show : bool = False):
     tags = {}
     events = []
     SStag = DB["json_stage"]["storylineTags"]
@@ -619,7 +619,7 @@ def event_tag(show = False):
             
     script_result(events, show)
 
-def event_desc(show = False):
+def event_desc(show : bool = False):
     events = []
     SSset = DB["json_stage"]["storylineStorySets"]
     
@@ -629,7 +629,7 @@ def event_desc(show = False):
             
     script_result(events, show)
 
-def event_sypnosis(show = False):
+def event_sypnosis(show : bool = False):
     events = {}
     SSset = DB["json_stage"]["storylineStorySets"]
     retro = json_load(r'temp\temp.json')
@@ -648,7 +648,7 @@ def event_sypnosis(show = False):
         
     script_result(events, show)
 
-def EN_cv(show = False):
+def EN_cv(show : bool = False):
     result = {}
     for char in DB["json_charword"]["voiceLangDict"]:
         if "EN" in DB["json_charword"]["voiceLangDict"][char]["dict"].keys():
@@ -670,7 +670,7 @@ def EN_cv(show = False):
     printr("EN_cv completed")
     exit()
 
-def wiki_enemies(event = "", show = False) -> dict :
+def wiki_enemies(event = "", show : bool = False) -> dict :
     def enemy_lv_data(enemy_data : dict, lv : int) -> dict:
         return enemy_data["Value"][lv]["enemyData"]
         
@@ -807,7 +807,7 @@ def wiki_article(event_code : str, event_type = "", event_name = "") -> list:
                 desc = desc.replace(k,v)
             return desc
         # stage mechanic
-        desc = re.sub(r'<@[A-z.1-9_]*?><(.*?)><\/>', r"'''<[[\1]]>'''", desc_cond)
+        desc = re.sub(r'<@[A-Za-z.1-9_]*?><(.*?)><\/>', r"'''<[[\1]]>'''", desc_cond)
         # challenge condition
         if re.search(r'<@lv.fs>附加条件：<\/>\\n', desc):
             desc = re.sub(r'<@lv.fs>附加条件：<\/>\\n', "", desc)
@@ -2205,7 +2205,6 @@ enemy_names_tl = {
 item_names_tl = {"act43side_token_phantom" : "Mysterious Black Shadow"}
 token_names_tl = {}
 skill_names_tl = {}
-#script_result(wiki_article("act5bossrush", "tn", "Trials for Navigator #04"))
 
 # Trials for Navigator #04
 #script_result(wiki_article("act4bossrush", "tn", "Trials for Navigator #04"))
@@ -2234,6 +2233,3 @@ printr(temp)
 
 # stage > performanceStageFlag = [['NORMAL_STAGE', 'PERFORMANCE_STAGE'], 
 #                                  ['main_00-01', 'main_06-15']]
-#tile_smog
-
-#print([key for key in DB["js

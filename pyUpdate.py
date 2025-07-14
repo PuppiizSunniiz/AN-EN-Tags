@@ -1,5 +1,6 @@
 import re
 import json
+from pyRIIC import riic_tl_json
 from pyfunction import char_ready, name_check, json_load, printr
 from pyAkenemy import Akenemy
 from py import Ready
@@ -44,26 +45,28 @@ json_mod_battleEN   =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/
 json_construct      =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/gamedata_const.json")
 json_constructEN    =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/gamedata_const.json")
 
+json_enemy          =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/enemy_handbook_table.json")
+json_enemyEN        =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/enemy_handbook_table.json")
+
 json_mod_table      =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/uniequip_table.json")
 json_stage          =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/stage_table.json")
 
-json_akhr           =   json_load("json/tl-akhr.json")
+json_dict           =   json_load("py/dict.json")
 json_akmaterial     =   json_load("json/akmaterial.json")
-json_trait          =   json_load("json/tl-attacktype.json")
 json_term           =   json_load("json/named_effects.json")
-json_skillTL        =   json_load("json/ace/tl-skills.json")
-json_riicTL         =   json_load("json/ace/riic.json")
 
+json_trait          =   json_load("json/tl-attacktype.json")
+json_akhr           =   json_load("json/tl-akhr.json")
 json_tl_item        =   json_load("json/tl-item.json")
 json_temp_mod       =   json_load("json/tl-module.json")
 
-json_dict           =   json_load("py/dict.json")
+json_skillTL        =   json_load("json/ace/tl-skills.json")
 
 #########################################################################################################
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS : list[str] = ["Leizi the Thunderbringer", "Record Keeper"] # "", 
+NEW_CHARS : list[str] = [] # "", 
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS : list[str] = [] # "",
@@ -195,7 +198,7 @@ def update_char_TraitSkillTalent(new_char_name : str) :
     if json_char[new_char_id]["displayTokenDict"] :
         for new_token_key in json_char[new_char_id]["displayTokenDict"]:
         #### Token trait
-            new_trait[json_char[new_token_key]["description"]] = update_new_trait("token",new_char_id,new_char_name,new_token_key)
+            new_trait[json_char[new_token_key]["description"]] = update_new_trait("token", new_char_id, new_char_name, new_token_key)
         #### Token Skill
             for skill in json_char[new_token_key]["skills"]:
                 if skill["skillId"] :
@@ -226,14 +229,14 @@ for new_char_name in NEW_CHARS:
 
 #Update old char localization
 for char_data in json_akhr:
-    for lang in [["name_jp",json_charJP],["name_kr",json_charKR]]:
+    for lang in [["name_jp", json_charJP], ["name_kr", json_charKR]]:
         if char_data[lang[0]] == "":
             if char_data["id"] in lang[1].keys():
                 char_data[lang[0]] = lang[1][char_data["id"]]["name"]
 
 #Update recruitment
 def cleanlist(recruit_list:str) -> str:
-    return recruit_list.replace("\\n","\n").replace("/"," / ").replace("  "," ").replace("< / ","</")
+    return recruit_list.replace("\\n", "\n").replace("/", " / ").replace("  ", " ").replace("< / ", "</")
 
 gacha_CN_list   =   cleanlist(json_gacha["recruitDetail"]).split("\n")
 gacha_EN_list   =   cleanlist(json_gachaEN["recruitDetail"]).split("\n")
@@ -247,15 +250,15 @@ bypass          =   {
 
 for i in range(6):
     ##CN
-    for ops in gacha_CN_list[gacha_CN_list.index("★"*(i+1))+1].split(" / "):
-        op_search = re.search(r"<@rc.eml>(.+?)</>",ops)
-        op = (op_search.group(1) if op_search else ops).replace("\r","")
-        json_akhr[[index for index,d in enumerate(json_akhr) if d["name_cn"] == op][0]]["hidden"] = False
+    for ops in gacha_CN_list[gacha_CN_list.index("★" * (i + 1)) + 1].split(" / "):
+        op_search = re.search(r"<@rc.eml>(.+?)</>", ops)
+        op = (op_search.group(1) if op_search else ops).replace("\r", "")
+        json_akhr[[index for index, data in enumerate(json_akhr) if data["name_cn"] == op][0]]["hidden"] = False
     ##EN
-    for ops in gacha_EN_list[gacha_EN_list.index("★"*(i+1))+1].split(" / "):
-        op_search = re.search(r"<@rc.eml>(.+?)</>",ops)
+    for ops in gacha_EN_list[gacha_EN_list.index("★" * (i + 1)) + 1].split(" / "):
+        op_search = re.search(r"<@rc.eml>(.+?)</>", ops)
         op = op_search.group(1) if op_search else ops
-        json_akhr[[index for index,d in enumerate(json_akhr) if name_check(d["name_en"]) == bypass.get(op,op)][0]]["globalHidden"] = False
+        json_akhr[[index for index, data in enumerate(json_akhr) if name_check(data["name_en"]) == bypass.get(op, op)][0]]["globalHidden"] = False
 
 with open("json/tl-akhr.json", "w", encoding = "utf-8") as filepath :
     json.dump(json_akhr, filepath, indent = 4, ensure_ascii = False)
@@ -327,34 +330,48 @@ for new_mat in NEW_MATS:
 ##akmaterial.json
 temp = ""
 for mat_data in json_akmaterial:
-    for lang in [["name_en",json_itemEN],["name_jp",json_itemJP],["name_kr",json_itemKR]]:
-        if mat_data[lang[0]] == "":
-            if mat_data["itemId"] in lang[1]["items"]:
-                mat_data[lang[0]] = lang[1]["items"][mat_data["itemId"]]["name"]
-    mat_data["IconID"] = json_item["items"][mat_data["itemId"]]["iconId"]
+    mat_id = mat_data["itemId"]
+    for lang in [["name_en", json_itemEN], ["name_jp", json_itemJP], ["name_kr", json_itemKR]]:
+        key = lang[0]
+        item_json = lang[1]
+        if mat_data[key] == "":
+            if mat_id in item_json["items"]:
+                mat_data[key] = item_json["items"][mat_id]["name"]
+    mat_data["IconID"] = json_item["items"][mat_id]["iconId"]
     for key in ["id", "itemId", "IconID", "name_cn", "name_en", "name_jp", "name_kr", "name_tw", "level", "source", "madeof"]:
         temp = mat_data[key]
         mat_data.pop(key)
         mat_data[key] = temp
 
 with open("json/akmaterial.json", "w", encoding="utf-8") as filepath :
-    json.dump(json_akmaterial,filepath,indent = 4, ensure_ascii = False)
+    json.dump(json_akmaterial, filepath, indent = 4, ensure_ascii = False)
 
 ##tl-item.json
 for mat_data in json_tl_item:
-    for lang in [["name_en",json_itemEN],["name_jp",json_itemJP],["name_kr",json_itemKR]]:
-        if mat_data[lang[0]] == "":
-            if mat_data["itemId"] in lang[1]["items"].keys():
-                mat_data[lang[0]] = lang[1]["items"][mat_data["itemId"]]["name"]
+    mat_id = mat_data["itemId"]
+    mat_data["iconId"] = json_item["items"][mat_id]["iconId"]
+    mat_data["rarity"] = json_item["items"][mat_id]["rarity"]
+    for lang in [["name_en", json_itemEN], ["name_jp", json_itemJP], ["name_kr", json_itemKR]]:
+        key = lang[0]
+        item_json = lang[1]
+        if mat_data[key] == "":
+            if mat_id in item_json["items"].keys():
+                mat_data[key] = item_json["items"][mat_id]["name"]
+    for key in ["itemId", "iconId", "rarity", "name_cn", "name_en", "name_jp", "name_kr", "name_tw"]:
+        if not key in mat_data : continue
+        temp = mat_data[key]
+        mat_data.pop(key)
+        mat_data[key] = temp
+    
 
 with open("json/tl-item.json", "w", encoding="utf-8") as filepath :
-    json.dump(json_tl_item,filepath,indent = 4, ensure_ascii = False)
+    json.dump(json_tl_item, filepath, indent = 4, ensure_ascii = False)
 
 #########################################################################################################
 # Mod
 #########################################################################################################   
 newmods = json_mod_table["equipTrackDict"][-1]["trackList"]
-NEW_MODS = [[newmods[i]["charId"],newmods[i]["equipId"]] for i in range(len(newmods)) if not re.search("_001_",newmods[i]["equipId"])]
+NEW_MODS = [[newmods[i]["charId"], newmods[i]["equipId"]] for i in range(len(newmods)) if not re.search("_001_", newmods[i]["equipId"])]
 skip_mod = ""
 mod_tl = {}
 
@@ -366,11 +383,11 @@ for new_mod_list in NEW_MODS:
         new_mod_id = new_mod_list[1]
         mod_trait_candidate = json_mod_battle[new_mod_id]["phases"][0]["parts"][0]["overrideTraitDataBundle"]["candidates"][0]
         if mod_trait_candidate["additionalDescription"]:
-            new_trait[mod_trait_candidate["additionalDescription"]] = update_new_trait("mod",new_mod_id,new_mod_list[0],json_mod_table["equipDict"][new_mod_id]["typeIcon"])
+            new_trait[mod_trait_candidate["additionalDescription"]] = update_new_trait("mod", new_mod_id, new_mod_list[0], json_mod_table["equipDict"][new_mod_id]["typeIcon"])
         else :
-            new_trait[mod_trait_candidate["overrideDescripton"]]    = update_new_trait("mod",new_mod_id,new_mod_list[0],json_mod_table["equipDict"][new_mod_id]["typeIcon"])
+            new_trait[mod_trait_candidate["overrideDescripton"]]    = update_new_trait("mod", new_mod_id, new_mod_list[0], json_mod_table["equipDict"][new_mod_id]["typeIcon"])
         temp_phase = []
-        for phase in [1,2]:
+        for phase in [1, 2]:
             for part in json_mod_battle[new_mod_id]["phases"][phase]["parts"]:
                 temp_part = []
                 if part["target"] in ["TALENT_DATA_ONLY","TALENT"] and not part["isToken"] and part["addOrOverrideTalentDataBundle"]["candidates"][0]["upgradeDescription"] != "":
@@ -398,8 +415,8 @@ for new_mod_list in NEW_MODS:
     except:
         skip_mod += f'\n\t{new_mod_list[0]} --- {new_mod_list[1]}'
 
-with open("update/tl-module.json", "w", encoding="utf-8") as filepath :
-    json.dump(mod_tl,filepath,indent = 4, ensure_ascii = False)
+with open("update/tl-module.json", "w", encoding = "utf-8") as filepath :
+    json.dump(mod_tl, filepath, indent = 4, ensure_ascii = False)
 
 poplist = []
 for mod in json_temp_mod.keys():
@@ -409,7 +426,7 @@ for mod in poplist:
     json_temp_mod.pop(mod)
 
 with open("json/tl-module.json", "w", encoding="utf-8") as filepath :
-    json.dump(json_temp_mod,filepath,indent = 4, ensure_ascii = False)
+    json.dump(json_temp_mod, filepath, indent = 4, ensure_ascii = False)
 
 #########################################################################################################
 # Trait
@@ -421,44 +438,22 @@ for key in new_trait.keys():
 for key in pop:
     new_trait.pop(key)
 
-with open("update/tl-attacktype.json", "w", encoding="utf-8") as filepath :
-    json.dump(new_trait,filepath,indent = 4, ensure_ascii = False)
+with open("update/tl-attacktype.json", "w", encoding = "utf-8") as filepath :
+    json.dump(new_trait, filepath, indent = 4, ensure_ascii = False)
 
 #########################################################################################################
 # Termology Update
 #########################################################################################################
-
 for term in json_construct["termDescriptionDict"]:
     if term not in json_term["termDescriptionDict"].keys():
         json_term["termDescriptionDict"][term] = json_construct["termDescriptionDict"][term]
 
 for term in json_term["termDescriptionDict"].keys():
-    if term in json_constructEN["termDescriptionDict"].keys() and 'cc.' not in term :
+    if term in json_constructEN["termDescriptionDict"].keys() :
         json_term["termDescriptionDict"][term] = json_constructEN["termDescriptionDict"][term]
         
-with open("json/named_effects.json", "w", encoding="utf-8") as filepath :
-    json.dump(json_term,filepath,indent = 4, ensure_ascii = False)
-
-#########################################################################################################
-# RIIC EN Update
-#########################################################################################################
-for riic in json_building["buffs"].keys():
-    if riic not in json_riicTL.keys():
-        json_riicTL[riic]=  {
-                                "name"          :   json_building["buffs"][riic]["buffName"],
-                                "desc"          :   json_building["buffs"][riic]["description"],
-                                "descformat"    :   json_building["buffs"][riic]["description"]
-                            }
-
-for riic in json_buildingEN["buffs"].keys():
-    json_riicTL[riic]=  {
-                            "name"          :   json_buildingEN["buffs"][riic]["buffName"],
-                            "desc"          :   json_riicTL[riic]["desc"],
-                            "descformat"    :   json_buildingEN["buffs"][riic]["description"]
-                        }
-    
-with open("json/ace/riic.json", "w", encoding="utf-8") as filepath :
-    json.dump(json_riicTL,filepath,indent = 4, ensure_ascii = False)
+with open("json/named_effects.json", "w", encoding = "utf-8") as filepath :
+    json.dump(json_term, filepath, indent = 4, ensure_ascii = False)
 
 #########################################################################################################
 # TL Artist CN -> EN (JSON Compare)
@@ -506,13 +501,69 @@ for npc in json_handbook["npcDict"].keys():
                             artist_dupe_catch.append(f'\n\t{op} {VA_CN} {json_artist["VA"][VA_CN]} {VA_EN}')
                         else :
                             json_artist["VA"][VA_CN] = VA_EN
-                            
-
 
 with open("json/tl-artist.json", "w", encoding = "utf-8") as filepath :
     json.dump(json_artist, filepath, indent = 4, ensure_ascii = False)
 
+#########################################################################################################
+# Stage_table
+#########################################################################################################
+stage_json = {}
+
+for stage in json_stage["stages"].keys():
+    def skip_stage(stage : str):
+        for skip in ["bossrush_", "_st", "_tr", "break_", "enemyduel_", "multi_", "arcade_", "autochess_", "vecb_", "_mo", "multi-", "lock_"]:
+            if stage.find(skip) != -1:
+                return True
+        else: return False
+        
+    if stage.startswith(("tr_", "lt_", "camp_", "st_", "spst_", "easy_", "tough_", "wk_", "pro_", "guide_")) or stage.endswith(("#f#","#s")) or skip_stage(stage):
+        continue
+    stage_json[stage] = json_stage["stages"][stage]["code"]
+
+with open("json/puppiiz/stage_code.json", "w", encoding = "utf-8") as filepath :
+    json.dump(stage_json, filepath, indent = 4, ensure_ascii = False)
+
+#########################################################################################################
+# enemy_table
+#########################################################################################################
+enemy_json = {}
+
+for enemy in json_enemy["enemyData"].keys():
+    if enemy in json_enemyEN["enemyData"].keys():
+        enemy_json[enemy] = json_enemyEN["enemyData"][enemy]["name"]
+    else :
+        enemy_json[enemy] = json_enemy["enemyData"][enemy]["name"]
+
+with open("json/puppiiz/enemy_name.json", "w", encoding = "utf-8") as filepath :
+    json.dump(enemy_json, filepath, indent = 4, ensure_ascii = False)
+
+#########################################################################################################
+# potential_token
+#########################################################################################################
+potential_token = {}
+
+for char in json_char.keys():
+    token_id = json_char[char]["potentialItemId"] or json_char[char]["activityPotentialItemId"]
+    
+    if not token_id or not char.startswith("char") or json_char[char]["isNotObtainable"]:
+        continue
+    
+    item_json = json_itemEN if token_id in json_itemEN["items"].keys() else json_item
+    
+    potential_token[token_id] = {
+                                    "description"   : item_json["items"][token_id]["description"],
+                                    "usage"         : item_json["items"][token_id]["usage"]
+                                }
+
+with open("json/puppiiz/potential_token.json", "w", encoding = "utf-8") as filepath :
+    json.dump(potential_token, filepath, indent = 4, ensure_ascii = False)
+
+#########################################################################################################
+# The Rest
+#########################################################################################################
 Akenemy()
+riic_tl_json()
 
 if skip_char:
     printr(f'\nNEW CHAR skip list = {skip_char}')

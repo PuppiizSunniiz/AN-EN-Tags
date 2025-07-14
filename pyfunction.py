@@ -1,6 +1,8 @@
 from datetime import datetime
 import json
 import inspect
+import os
+import subprocess
 from typing import Any
 
 R = '\033[31m'
@@ -86,5 +88,23 @@ def print_header(text : str) -> str:
     length : int = 20
     return f'\n{"#" * length * 3}\n{"#" * length}{text:^{length}}{"#" * length}\n{"#" * length * 3}'
 
-#print_header("Error Test")
-#print_header("Data Test")
+def script_result(text : str | list | dict, show : bool = False):
+    '''
+        Output result
+            STR, LIST   >   TXT
+            DICT        >   JSON
+    '''
+    if isinstance(text, str):
+        with open("py/script.txt", "w", encoding = "utf-8") as filepath:
+            filepath.write(text)
+    elif isinstance(text, list):
+        with open("py/script.txt", "w", encoding = "utf-8") as filepath:
+            filepath.write("\n".join(text))
+    elif isinstance(text, dict):
+        with open("py/script.json", "w", encoding = "utf-8") as filepath:
+            json.dump(text, filepath, indent = 4, ensure_ascii = False) # ensure_ascii = False
+    
+    file = f'py/script.{"json" if isinstance(text, dict) else "txt"}'
+    print(f'\n{Y}Script Completed{RE} -> {R}{file}{RE}')
+    if show:
+        subprocess.run(f'code --reuse-window -g "{os.path.abspath(file)}"', shell = True)
