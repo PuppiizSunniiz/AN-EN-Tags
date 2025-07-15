@@ -207,6 +207,9 @@ body {
 .op-grid-gamemode.SO {
     color: #f5d000;
 }
+.SO-Unlock{
+    min-width: 330px;border-radius: 2px;padding: 5px;font-size: 14px;width: 100%;background: #444444;text-align: left;color: white;
+}
 
 .name {
     top: 0px;

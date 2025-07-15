@@ -39,7 +39,7 @@
         stage           :"./json/puppiiz/stage_code.json",
         potential_token :"./json/puppiiz/potential_token.json",
         build           :"./json/puppiiz/riic_data.json",
-        
+        special_operator:"./json/puppiiz/special_operator.json",
         //TL
         voicelineTL     :"./json/tl-voiceline.json",
         campdata        :"./json/tl-campdata.json",
@@ -1868,30 +1868,44 @@
                         });
                     }
                     var materialHtml =``
-                    if(i2>=7){
+                    if(i2 >= 7){
                         var time = opdataFull.skills[i].levelUpCostCond[i2-7].lvlUpTime
                         var condLeveling = opdataFull.skills[i].levelUpCostCond[i2-7].unlockCond
                         var condUnlocking = opdataFull.skills[i].unlockCond
                         var phase = Math.max(PhaseConvert(condLeveling.phase),PhaseConvert(condUnlocking.phase))
                         var level = Math.max(condLeveling.level,condUnlocking.level)
+                        var SO_condUnlocking = gmapp != "SO"?"":db.special_operator[opid]["skill" + (i + 1).toString()].unlock[i2 - 7]
                         materialHtml = `
-                        <div style="text-align:center;background:#222">${(i2==0?"Unlock":"Rank Up")} Requirements</div>
-                        <div style="margin-top:15px">
-                        ${titledMaker((phase>0?"Elite "+phase+" ":"")+(level>0?"Level "+level:""),"Level Required")}
-                        ${titledMaker(time/60/60+" Hour","Time Required")}
-                        </div>
-                        `+(materialist.length>0?materialist.join(""):"")
+                                        <div style="text-align:center;background:#222">
+                                            ${(i2 == 0?"Unlock":"Rank Up")} Requirements
+                                        </div>
+                                        ${SO_condUnlocking == ""?"":
+                                            `<div class = "SO-Unlock">
+                                                ${ChangeDescriptionColor2(SO_condUnlocking)}
+                                            </div>`}
+                                        <div style="margin-top:15px">
+                                            ${titledMaker((phase > 0?"Elite " + phase + " ":"") + (level > 0?"Level " + level:""), "Level Required")}
+                                            ${gmapp == "SO"?"":titledMaker(time/60/60 + " Hour", "Time Required")}
+                                        </div>
+                                        ${(materialist.length > 0?materialist.join(""):"")}`
                     }else{
-                        var condLeveling = (opdataFull.allSkillLvlup[i2-1]?opdataFull.allSkillLvlup[i2-1].unlockCond:{phase:"TIER_0",level:0})
+                        var condLeveling = (opdataFull.allSkillLvlup[i2 - 1]?opdataFull.allSkillLvlup[i2 - 1].unlockCond:{phase:"TIER_0",level:0})
                         var condUnlocking = opdataFull.skills[i].unlockCond
-                        var phase = Math.max(PhaseConvert(condLeveling.phase),PhaseConvert(condUnlocking.phase))
+                        var phase = Math.max(PhaseConvert(condLeveling.phase), PhaseConvert(condUnlocking.phase))
                         var level = Math.max(condLeveling.level,condUnlocking.level)
+                        var SO_condUnlocking = gmapp != "SO"?"":db.special_operator[opid]["skill"].unlock[i2]
                         materialHtml = `
-                        <div style="text-align:center;background:#222">${(i2==0?"Unlock":"Rank Up")} Requirements</div>
-                        <div style="margin-top:15px">
-                        ${titledMaker((phase>0?"Elite "+phase+" ":"")+(level>0?"Level "+level:""),"Level Required")}
-                        </div>
-                        `+(materialist.length>0?materialist.join(""):"")
+                                        <div style="text-align:center;background:#222">
+                                            ${(i2 == 0?"Unlock":"Rank Up")} Requirements
+                                        </div>
+                                        ${SO_condUnlocking == ""?"":
+                                            `<div class = "SO-Unlock">
+                                                ${ChangeDescriptionColor2(SO_condUnlocking)}
+                                            </div>`}
+                                        <div style="margin-top:15px">
+                                            ${titledMaker((phase > 0?"Elite " + phase + " ":"") + (level > 0?"Level " + level:""), "Level Required")}
+                                        </div>
+                                        ${(materialist.length > 0?materialist.join(""):"")}`
                     }
 
                     if(v2.rangeId)grid = rangeMaker(v2.rangeId)
@@ -2281,7 +2295,14 @@
                                 <div style="text-align:center;background:#222;color:#fff;margin:0px;padding:0px 0px 2px 0px">${imagereq.join(" ")}</div>
                                 <div style="text-align:center">
                                 `
-                            
+                            if(gmapp == "SO"){
+                                SO_condUnlocking = db.special_operator[opdataFull.id]["uniequip1"].unlock[curreqphase] // might need to change "uniequip1" later
+                                equiphtml[curreqphase] += `
+                                                            <div class = "SO-Unlock">
+                                                                ${ChangeDescriptionColor2(SO_condUnlocking)}
+                                                            </div>
+                                                        `
+                            }
                             if(v){
                                 v.forEach(item => {
                                     equiphtml[curreqphase] += CreateMaterial(item.id,item.count)
@@ -3292,6 +3313,15 @@
             materialHtml=`
             <div style="text-align:center;background:#222">Elite Requirements</div>
             <div style="text-align:center">${materialist.join("")}</div>`
+        }else if(gmapp == "SO" && i > 0){
+            SO_condUnlocking = db.special_operator[opdataFull.id]["evolve"].unlock[i - 1]
+            materialHtml=`
+            <div style="text-align:center;background:#222">
+                Elite Requirements
+            </div>
+            <div class = "SO-Unlock">
+                ${ChangeDescriptionColor2(SO_condUnlocking)}
+            </div>`
         }
         var keyframes = [];
         $.each(opdataFull.phases[i].attributesKeyFrames,function(j,v){
@@ -4768,105 +4798,10 @@
         </div>
         `)
     }
-    // function TalentParse(combTalents){
-    //     // console.log(combTalents)
-    //     var talent = []
-    //     var talentnum = 0
-    //     combTalents.forEach(combcandidate => {
-    //         let talentlist = []
-
-    //         combcandidate.forEach(eachtalent => {
-    //             var imagereq = []
-    //             if(eachtalent.talent.unlockCondition.level >1)
-    //             imagereq.push(`Lv.${eachtalent.talent.unlockCondition.level}`)
-    //             if(eachtalent.talent.unlockCondition.phase >0)
-    //             imagereq.push(`<img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/${eachtalent.talent.unlockCondition.phase}.png" style="width:20px;margin-top:-5px" title="Elite ${eachtalent.talent.unlockCondition.phase}">`)
-    //             if(eachtalent.talent.requiredPotentialRank >0)
-    //             imagereq.push(`<img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/potential/${eachtalent.talent.requiredPotentialRank+1}.png" style="width:20px" title="Potential ${eachtalent.talent.requiredPotentialRank+1}">`)
-
-    //             var currTalentName = eachtalent.talentTL?eachtalent.talentTL.name:eachtalent.talent.name
-    //             var currTalentDesc = eachtalent.talentTL?eachtalent.talentTL.desc:eachtalent.talent.description
-    //             currTalentDesc = currTalentDesc.replace(/\<(.+)\>/g, function(m, rtf, text) {
-    //                 return `\< ${rtf} \>`
-    //             })
-    //             // console.log(eachtalent.talent.name)
-    //             var isTalentRange =  eachtalent.talent.name=="新人教官"?undefined:eachtalent.talent.rangeId
-
-    //             var talentdetails = []
-    //             eachtalent.talent.blackboard.forEach(talentInfo=>{
-    //                 var talentjson={}
-    //                 talentjson.name = db.effect[talentInfo.key]?db.effect[talentInfo.key]:talentInfo.key
-    //                 talentjson.key = talentInfo.key
-    //                 talentjson.value = talentInfo.value
-
-    //                 talentdetails.push(talentjson)
-    //             })
-
-    //             var detailtable = []
-    //             var detailHeader = ''
-    //             // console.log(talentdetails)
-
-    //             if(talentdetails.length>0){
-    //                 var talenthtmldetail = ""
-
-    //                 talentdetails.forEach(currdetails => {
-
-    //                     talenthtmldetail+=`
-    //                     <div style="background:#444;margin:4px;padding:2px;padding-top:8px;background:#444;border-radius:2px;color: #999999">
-    //                             ${titledMaker2(currdetails.name,currdetails.key)}  ${currdetails.value}
-    //                     </div>`
-    //                 });
-    //                 detailHeader = `<button id='talentdetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler2("talentdetailcontent${talentnum}")'style="display:inline-block;color:#aaa;text-align:center;background:#333;padding:2px;font-size:12px">Talent Details <i class="fas fa-caret-down"></i></button>`
-    //                 detailtable = `
-    //                     <div id='talentdetailcontent${talentnum}' class="ak-shadow talentdetailcontent" style="display:none;margin-bottom:8px;padding-top:10px;padding:2px;background:#666">
-    //                         ${talenthtmldetail}
-    //                     </div>
-    //                 `
-
-    //                 talentnum+=1
-    //             }else{
-    //                 detailtable=""
-    //             }
-
-    //             var info = `<div style="color:#999;background:#222;display:inline-block;padding:1px;padding-left:3px;padding-right:3px;border-radius:2px">${imagereq.join("")}</div>`
-    //             talentlist.push(`
-    //             <div style="background:#444;margin:4px;padding:2px;padding-top:2px;background:#444;border-radius:2px;">
-    //             <div style="vertical-align:top;${isTalentRange?`width:71%;display:inline-block;padding-right:0px;margin-right:-6px;height:100%`:""}">
-    //                 <div style="color:#222;font-size:13px;background:#999;display:inline-block;padding:2px;border-radius:2px">${currTalentName} ${info}</div>
-    //                 <div style="font-size:13px; font-family:'Source Sans Pro'">
-    //                 <div class="ak-line">
-    //                 ${currTalentDesc.replace(/<\/br>/g, '<div class="ak-newline"></div>')}
-    //                 </div>
-    //                 ${detailHeader}
-    //                 ${detailtable}
-    //                 </div>
-
-    //             </div>
-    //                 ${isTalentRange?`<div style="display:inline-block;width:28%;padding:0px;margin:auto;padding-top:4px">${rangeMaker(eachtalent.talent.rangeId,false)}</div>`:""}
-    //             </div>
-    //             `)
-
-
-
-
-    //         });
-    //         talent.push(`
-    //             <div class="ak-shadow" style="margin-bottom:8px;padding-top:10px;padding:2px;background:#666">
-    //                 ${talentlist.join("")}
-    //             </div>`)
-    //     });
-    //     return `
-
-    //         <div style="padding-top:10px">
-    //         <div style="color:#fff;text-align:center;background:#333;padding-bottom:0px">Talent</div>
-    //             ${talent.join("")}
-    //         </div>`
-    // }
-    // ${titledMaker(,eachtalent.talentTL.name,"","","font-size:10px;background:#444;color:#ddd")}
-    function GetSkillCost(i2,i, opdataFull){
-        let reqmats=[]
-        if(i2!=0&&i2<7){
-            // console.log(opdataFull.allSkillLvlup[i2])
+    
+    function GetSkillCost(i2, i, opdataFull){
+        let reqmats = []
+        if(i2 != 0 && i2 < 7){
             reqmats = opdataFull.allSkillLvlup[i2-1].lvlUpCost
 
         }else if(i2>=7){
@@ -4876,22 +4811,16 @@
         return reqmats
     }
     function GetEliteCost(i,opdataFull){
-        if(i>0){
-            // console.log(opdataFull)
+        if(i > 0){
             let reqmats = [];
-            // console.log(db.dataconst["evolveGoldCost"][opdataFull.rarity])
-            // console.log(i)
-            if(reqmats){
+            if(reqmats && gmapp == "BASE"){
                 if(opdataFull.phases[i]){
-                    // console.log(curChara.rarity+1)
-                    // console.log(db.dataconst["evolveGoldCost"][curChara.rarity][num-1])
                     reqmats=([{"count":(db.dataconst["evolveGoldCost"][opdataFull.rarity][i-1]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
                                 , "id" :4001
                                 ,"type":"GOLD" }])
                 }
             }
             reqmats = opdataFull.phases[i] ? reqmats.concat(opdataFull.phases[i].evolveCost) : undefined;
-            // console.log(reqmats)
             return reqmats
         }else{
             return undefined
