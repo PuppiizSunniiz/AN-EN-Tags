@@ -209,7 +209,7 @@ def update_char_TraitSkillTalent(new_char_name : str) :
                                         }
 
 def parentheses(desc : str) -> str :
-    return desc.replace("（", ")").replace("）", ")").replace("【", "[").replace("】", "]")
+    return desc.replace("（", "(").replace("）", ")").replace("【", "[").replace("】", "]")
 
 #########################################################################################################
 # Chars

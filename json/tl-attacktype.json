@@ -936,6 +936,27 @@
             "note": "new mods trp-x",
             "name": "char_4048_doroth",
             "code": "uniequip_003_doroth"
+        },
+        "持续攻击创造出飞行一段距离的子弹，子弹对碰撞到的首个地面敌方单位造成物理伤害。": {
+            "en": "Continuously launch a Straight Shot that fly for certain distance, deal Physical damage to first ground enemy they collide with",
+            "color": "physical",
+            "note": "Raidian 's Token (cycle)",
+            "name": "cycle",
+            "code": "token_10052_radian_tower2"
+        },
+        "攻击造成法术伤害": {
+            "en": "Deals <@ba.kw>Arts damage</>",
+            "color": "magic",
+            "note": "Raidian 's Token (centre)",
+            "name": "centre",
+            "code": "token_10053_radian_tower3"
+        },
+        "在【岁的界园志异】中，召唤物持有上限<@ba.kw>+5</>，且召唤物被击倒或撤退时，有<@ba.kw>25％</>概率被回收": {
+            "en": "In <@ba.kw>[Sui's Garden of Grotesqueries]</>, can hold <@ba.kw>+5</> additional summoned units, when summon defeated or retreated, has <@ba.kw>25％</> chance to retrieve them instead",
+            "color": "extra",
+            "note": "new mods so-a",
+            "name": "char_4195_radian",
+            "code": "uniequip_002_radian"
         }
     },
     "parts": [

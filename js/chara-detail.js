@@ -1146,7 +1146,8 @@
         console.log(ops)
 
         // FILTERING
-        if (op_gamemode !== "ALL") ops = ops.filter(char => op_gamemode == query(db.chars2, "id", char.id).gamemode)
+        if (op_gamemode !== "ALL") ops = ops.filter(char => op_gamemode == "BASE" ? ["BASE", "SO"].includes(query(db.chars2, "id", char.id).gamemode)
+                                                                                    :op_gamemode == query(db.chars2, "id", char.id).gamemode)
         if (op_class.length) ops = exclusive_class ? ops.filter(char => op_class[0] == char.profession)
                                                     : ops.filter(char => op_class.includes(char.profession));
         if (op_branch.length) ops = ops.filter(char => {
@@ -5828,11 +5829,11 @@
     }
 
     function Chibi_per(show = false){
-        chibiperscurr = chibiperscurr % (gmapp == "BASE"?3:2)
+        chibiperscurr = chibiperscurr % (["BASE", "SO"].includes(gmapp)?3:2)
 
         console.log(chibiperslist[chibiperscurr])
 
-        newpers = gmapp == "BASE"?chibiperslist[chibiperscurr]:chibipersextralist[chibiperscurr]
+        newpers = ["BASE", "SO"].includes(gmapp)?chibiperslist[chibiperscurr]:chibipersextralist[chibiperscurr]
         if (show) $("#chibi-per").html(newpers[0].toUpperCase() + newpers.slice(1))
         return newpers
     }

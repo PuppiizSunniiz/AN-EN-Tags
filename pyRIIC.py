@@ -8,7 +8,7 @@ def riic_tl_json(show : bool = False):
     
     json_character  =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/character_table.json")
     
-    json_gamedataEN =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/gamedata_const.json")
+    json_term_effect=   json_load("json/named_effects.json")
     
     json_riicTL = {"buffs" : {}, "chars" : json_building["chars"]}
     
@@ -31,7 +31,13 @@ def riic_tl_json(show : bool = False):
 
             match mode:
                 case "control":
-                    pass
+                    re_ = r'^进驻控制中枢时，所有宿舍内<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>的心情每小时恢复<@cc\.vup>([\+\.0-9]*)<\/>（同种效果取最高）$'
+                    if re.match(re_, desc_sub):
+                        desc_match          = re.match(re_, desc_sub)
+                        match_faction_skill = desc_match.group(1)
+                        match_faction_name  = riic_match_tl(match_faction_skill)
+                        match_morale        = desc_match.group(2)
+                        return f'When this Operator is assigned to the Control Center, all <${match_faction_skill}><@cc.kw>{match_faction_name}</></> Operators in Dormitories recover <@cc.vup>{match_morale}</> Morale per hour (strongest effect of the same type applies)'
                 case "power":
                     # Speed faction
                     re_power_rec_spd_ext_faction = r'^进驻发电站时，如果其他<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>干员进驻在发电站，则无人机充能速度<@cc\.vup>([\+0-9%]*)<\/>$'
@@ -83,8 +89,8 @@ def riic_tl_json(show : bool = False):
                         desc_match          = re.match(re_trade_ord_spd_multiPar, desc_sub)
                         match_spd1          = desc_match.group(1)
                         match_term          = desc_match.group(2)
-                        if match_term in json_gamedataEN["termDescriptionDict"].keys():
-                            match_with      = json_gamedataEN["termDescriptionDict"][match_term]["termName"]
+                        if match_term in json_term_effect["termDescriptionDict"].keys():
+                            match_with      = riic_match_tl(match_term)
                         else :
                             match_op        = desc_match.group(3)
                             match_with      = riic_match_tl(match_op, "op")
@@ -221,8 +227,8 @@ def riic_tl_json(show : bool = False):
                     - **op** -> for operator name
             '''
             # Base skill term (cc)
-            if re.match(r'^cc\.([\.A-Za-z0-9]*)$', desc):
-                return json_gamedataEN["termDescriptionDict"][desc]["termName"] if desc in json_gamedataEN["termDescriptionDict"].keys() else desc.split(".")[-1].capitalize()
+            if re.match(r'^cc\.([\.\_A-Za-z0-9]*)$', desc):
+                return json_term_effect["termDescriptionDict"][desc]["termName"] if desc in json_term_effect["termDescriptionDict"].keys() else desc.split(".")[-1].capitalize()
             else:
                 match extra:
                     case "item":
@@ -230,6 +236,10 @@ def riic_tl_json(show : bool = False):
                                     "任意类材料"    : "any material",
                                     "作战记录"      : "Battle Record",
                                     "贵金属"        : "Precious Metal",
+                                    "精英材料"      : "Elite materials",
+                                    "芯片"          : "Chips",
+                                    "技巧概要"      : "Skill Summaries",
+                                    "基建材料"      : "Building material"
                         }
                         if desc in mat_tl:
                             return mat_tl[desc]

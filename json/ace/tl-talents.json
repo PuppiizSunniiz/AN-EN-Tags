@@ -8740,5 +8740,36 @@
                 "desc": "When an operator in Attack Range activate skill, recover 1 SP and ASPD+16 for 10<@ba.talpu>(+2)</> seconds."
             }
         ]
+    ],
+	"char_4195_radian": [
+        [
+            {
+                "name": "卡带里的灵感",
+                "descCN": "可以使用3个召唤物（最多同时部署3个），功能随技能选择而改变",
+                "desc": "Can use up to 3 summons (max 3 deployed at once). Summons’ effect changes based upon Skill"
+            },
+            {
+                "name": "卡带里的灵感",
+                "descCN": "可以使用4个召唤物（最多同时部署3个），功能随技能选择而改变",
+                "desc": "Can use up to 4 summons (max 3 deployed at once). Summons’ effect changes based upon Skill"
+            },
+            {
+                "name": "卡带里的灵感",
+                "descCN": "可以使用5个召唤物（最多同时部署3个），功能随技能选择而改变",
+                "desc": "Can use up to 5 summons (max 3 deployed at once). Summons’ effect changes based upon Skill"
+            }
+        ],
+        [
+            {
+                "name": "加油~",
+                "descCN": "电弧的召唤物获得相当于其自身12％攻击力、防御力、生命值的<$ba.inspire>鼓舞</>效果",
+                "desc": "Raidian's summons gain <$ba.inspire>Inspiration</> equal to 12％ of Raidian's ATK, DEF and Max HP"
+            },
+            {
+                "name": "加油~",
+                "descCN": "电弧的召唤物获得相当于其自身15％<@ba.talpu>(+3％)</>攻击力、防御力、生命值的<$ba.inspire>鼓舞</>效果",
+                "desc": "Raidian's summons gain <$ba.inspire>Inspiration</> equal to 15％<@ba.talpu>(+3％)</> of Raidian's ATK, DEF and Max HP"
+            }
+        ]
     ]
 }

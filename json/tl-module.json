@@ -1312,5 +1312,23 @@
                 "upgradeDescription": "Enemies blocked by this unit receive 10% <$ba.physicfragile>[Physical Fragility]</>; Increases this unit's healing received by 35%<@ba.talpu>(+5%)</>, increased to 65%<@ba.talpu>(+5%)</> when under half HP"
             }
         ]
+    ],
+    "uniequip_002_radian": [
+        [
+            {
+                "name": "卡带里的灵感",
+                "CN": "可以使用5个召唤物)最多同时部署3个)，功能随技能选择而改变",
+                "mod": "可以使用5个召唤物)最多同时部署3个)，功能随技能选择而改变。在[岁的界园志异]中，召唤物再部署时间降低25％，且被击倒或撤退时电弧自身回复1点技力",
+                "upgradeDescription": "Can use up to 5 summons (max 3 deployed at once). Summons’ effect changes based upon Skill; In <@ba.kw>[Sui's Garden of Grotesqueries]</>, reduces the Redeployment Time of summons by 25％. When summon defeated or retreated, Raidian gains 1 SP"
+            }
+        ],
+        [
+            {
+                "name": "卡带里的灵感",
+                "CN": "可以使用5个召唤物)最多同时部署3个)，功能随技能选择而改变",
+                "mod": "可以使用5个召唤物)最多同时部署3个)，功能随技能选择而改变。在[岁的界园志异]中，召唤物再部署时间降低50％，且被击倒或撤退时电弧自身回复2点技力",
+                "upgradeDescription": "Can use up to 5 summons (max 3 deployed at once). Summons’ effect changes based upon Skill; In <@ba.kw>[Sui's Garden of Grotesqueries]</>, reduces the Redeployment Time of summons by 50％. When summon defeated or retreated, Raidian gains 2 SP"
+            }
+        ]
     ]
 }

@@ -394,7 +394,7 @@
             "buffName": "无言的慈爱",
             "skillIcon": "bskill_ctrl_d_r_tag",
             "desc": "进驻控制中枢时，所有宿舍内<$cc.g.elite><@cc.kw>精英干员</></>的心情每小时恢复<@cc.vup>+0.1</>（同种效果取最高）",
-            "description": "进驻控制中枢时，所有宿舍内<$cc.g.elite><@cc.kw>精英干员</></>的心情每小时恢复<@cc.vup>+0.1</>（同种效果取最高）"
+            "description": "When this Operator is assigned to the Control Center, all <$cc.g.elite><@cc.kw>Elite Operators</></> Operators in Dormitories recover <@cc.vup>+0.1</> Morale per hour (strongest effect of the same type applies)"
         },
         "control_train_spd[010]": {
             "buffName": "S.W.E.E.P. Supervisor",
@@ -2284,7 +2284,7 @@
             "buffName": "与人乐",
             "skillIcon": "bskill_train_bd",
             "desc": "进驻训练室协助位时，心情每小时消耗<@cc.vdown>+1</>，每<@cc.vup>1</>点<$cc.bd_b1><@cc.rem>人间烟火</></><@cc.vup>+1%</>专精技能训练速度",
-            "description": "When this Operator is assigned to be the Trainer in the Training Room, Morale consumed per hour <@cc.vdown>+1</>, Operators' Specialization training speed <@cc.vup>+1%</> for every <@cc.vup>1</> <$cc.bd_b1><@cc.rem>cc.bd_b1</></>"
+            "description": "When this Operator is assigned to be the Trainer in the Training Room, Morale consumed per hour <@cc.vdown>+1</>, Operators' Specialization training speed <@cc.vup>+1%</> for every <@cc.vup>1</> <$cc.bd_b1><@cc.rem>Worldly Plight</></>"
         },
         "train_spd_power[000]": {
             "buffName": "Snowpriest Candidate",
