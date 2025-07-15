@@ -117,10 +117,10 @@
     const AmiyaAllID    =   [AmiyaCaster, ...AmiyaPatchID]
 
     var teamHTML = [[],[],[]]
-
     var currskin
     var skinsuffix
     var currVoiceID
+    const VAlanglist = ["LINKAGE", "JP", "CN_MANDARIN", "CN_TOPOLECT", "EN", "KR", "FRE", "GER", "ITA", "RUS"]
     var attempt = 0;
     var SpineVersion
     var spinewidgettoken
@@ -3362,22 +3362,129 @@
         http.send();
         return http.status!=404;
     }
-    // function AudioText(opdataFull,lang="en"){
-    //     var curraudiolist = []
-    //     var puretextlist =[]
-    //     Object.keys(db.charword).forEach(element => {
-    //         if(db.charword[element]){
-    //             var curraudio = db.charword[element]
 
-    //             if(curraudio.charId&&curraudio.charId == opdataFull.id){
-    //                 curraudiolist.push(curraudio)
-    //                 puretextlist.push(`${curraudio.charId},${opdataFull.appellation},${curraudio.voiceTitle},${db.storytextTL[curraudio.voiceTitle]?db.storytextTL[curraudio.voiceTitle]:""},"${curraudio.voiceText}"`)
-    //             }
-    //         }
-    //     });
-    //     // console.log(curraudiolist)
-    //     console.log(puretextlist.join("\n"))
-    // }translator
+    function GetLogo (opdataFull){
+        if(opdataFull.teamId)
+            return "logo_"+opdataFull.teamId
+        else if(opdataFull.groupId)
+            return "logo_"+opdataFull.groupId
+        else if(opdataFull.nationId)
+            return "logo_"+opdataFull.nationId
+
+        return null
+    }
+    function GetLogoInfo (opdataFull){
+        var faction
+        if(opdataFull.teamId)
+            faction= opdataFull.teamId
+        else if(opdataFull.groupId)
+            faction= opdataFull.groupId
+        else if(opdataFull.nationId)
+            faction= opdataFull.nationId
+
+        // console.log(faction)
+
+        var factionname = db.handbookTeam[faction]
+        // console.log(factionname)
+        if (factionname) return factionname
+
+        return null
+    }
+
+    function update_illustrator(skinid = ""){
+        function IllustratorLister(List){
+            var HTML = ""
+            for(var i = 0 ; i < List.length; i++){
+                ArtistName = List[i].trim()
+                if(Object.keys(db.artistTL.Illustrator).includes(ArtistName))
+                    ArtistName = db.artistTL.Illustrator[ArtistName]
+                if(i > 0)
+                    HTML += " & "
+
+                HTML += `<a href="https://www.google.com/search?q=illustrator+${ArtistName}"  target="_blank">${ArtistName}</a>`
+            }
+            return HTML
+        }
+        
+        let illustratorHTML = ""
+        let IllustratorList = [[],[]]
+        if(AmiyaPatchID.includes(skinid.split("#")[0]))
+            skin = opdataFull.id + "#2"
+        else
+            skin = skinid?skinid:(currskin + "#1")
+
+        if(db.skintable.charSkins[skin])
+            if(db.skintable.charSkins[skin].displaySkin.drawerList){
+                IllustratorList[0] = db.skintable.charSkins[skin].displaySkin.drawerList[0].split("、")
+                IllustratorList[1] = db.skintable.charSkins[skin].displaySkin.designerList?db.skintable.charSkins[skin].displaySkin.designerList[0].split("、"):""
+            }
+        else if (db.handbookInfo.npcDict[opdataFull.id])
+            IllustratorList[0] = db.handbookInfo.npcDict[opdataFull.id].illustList
+
+        // Drawer
+        illustratorHTML = `
+            <div class="illustrator-drawer">
+                <div class="btn-infoleft ak-shadow">
+                    <i class="fas fa-palette" title="Illustrator-Drawer"></i>
+                </div>
+                <div id="name-illustrator-drawer" class="btn-inforight">
+                    ${IllustratorList[0].length > 0?IllustratorLister(IllustratorList[0]):"-"}
+                </div>
+            </div>`
+        
+        // Designer
+        illustratorHTML += IllustratorList[1].length == 0?"":`
+            <div class="illustrator-designer">
+                <div class="btn-infoleft ak-shadow">
+                    <i class="fas fa-pencil-alt" title="Illustrator-Designer"></i>
+                </div>
+                <div id="name-illustrator-designer" class="btn-inforight">
+                    ${IllustratorLister(IllustratorList[1])}
+                </div>
+            </div>
+            `
+
+        $('#info-illustrator').html(illustratorHTML)
+    }
+    function VA_lang(voiceLangType = ""){
+        const LINKAGE_EN_list = [
+                                    "char_456_ash",
+                                    "char_457_blitz",
+                                    "char_458_rfrost",
+                                    "char_459_tachak",
+                                    "char_4123_ela",
+                                    "char_4124_iana",
+                                    "char_4125_rdoc",
+                                    "char_4126_fuze"
+                                ]
+        const LINKAGE_CN_list = [
+                                    "char_4019_ncdeer"
+                                ]
+        const LINKAGE_JP_list = [
+                                    "char_4141_marcil",
+                                    "char_4142_laios",
+                                    "char_4144_chilc",
+                                    "char_4143_sensi"
+                                ]
+        
+        switch(voiceLangType) {
+            case "LINKAGE":
+                if(LINKAGE_EN_list.includes(opdataFull.id))
+                    return "EN"
+                else if(LINKAGE_CN_list.includes(opdataFull.id))
+                    return "CN"
+                else if(LINKAGE_JP_list.includes(opdataFull.id))
+                    return "JP"
+                else 
+                    return "None"
+            case "CN_MANDARIN":
+                return "CN"
+            case "CN_TOPOLECT":
+                return "CN&#42"
+            default:
+                return voiceLangType
+        }
+    }
     function GetAudio (opdataFull,lang="en"){
         console.log(opdataFull)
         console.log(currVoiceID)
@@ -3392,17 +3499,6 @@
         // console.log(currTL)
         Object.keys(db.charword.charWords).forEach(element => {
             var curraudio= db.charword.charWords[element]
-            // console.log(element)
-            // if(db.charwordEN[element]){
-            //     var curraudio = db.charwordEN[element]
-            //     console.log("waaaaaaaaaaaaaaaaaaaaaa")
-            //     currTL = undefined
-            //     isEN = true
-            // }
-            // else if(db.charword[element]){
-            //     var curraudio = db.charword[element]
-
-            // }
             if(curraudio){
 
                 if(curraudio.charId&&curraudio.wordKey == currVoiceID){
@@ -3417,8 +3513,6 @@
                 }
             }
         });
-        // console.log(curraudiolist)
-        // console.log(puretextlist.join("\n"))
         $('#opaudiocontent').empty()
         $('#opaudiotranslator').empty()
         $('#opaudioproofreader').empty()
@@ -3427,23 +3521,13 @@
             JP <audio preload="metadata" controls style="margin-top:5px"> <source src="${preDir}voice/${element.voiceAsset}.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio>
             <a href="${preDir}voice/${element.voiceAsset}.mp3"  target="_blank">
             <i class='fa fa-download' style='font-size:30px;vertical-align:top;padding-top:17px'></i></a>`
-            // if(LinkCheck(`https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-voices/main/voice/${element.voiceAsset}.mp3`)){
-            //     curraudio= '<audio controls> <source src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-voices/main/voice/${element.voiceAsset}.mp3" type="audio/mpeg">Your browser does not support the audio tag.</audio> '
-            // }
             var voiceTL = element.voiceText
             if(currTL)voiceTL= currTL.voiceline[element.voiceTitle][lang]?currTL.voiceline[element.voiceTitle][lang]: element.voiceText
-            // console.log(element.voiceTitle)
-            // console.log(currTL)
-            // console.log(currTL.voiceline[element.voiceTitle])
-            // console.log(voiceTL)
-
-
             var audiolist = []
             Object.keys(voiceDict.dict).forEach(dict => {
                 var foldername = "voice"
                 var lang = ""
                 var wordKey = encodeURIComponent(voiceDict.dict[dict].wordkey)
-
                 console.log(wordKey)
                 switch (dict) {
                     case "CN_TOPOLECT":
@@ -3561,90 +3645,6 @@
             `)
         });
     }
-
-    function GetLogo (opdataFull){
-        if(opdataFull.teamId)
-            return "logo_"+opdataFull.teamId
-        else if(opdataFull.groupId)
-            return "logo_"+opdataFull.groupId
-        else if(opdataFull.nationId)
-            return "logo_"+opdataFull.nationId
-
-        return null
-    }
-    function GetLogoInfo (opdataFull){
-        var faction
-        if(opdataFull.teamId)
-            faction= opdataFull.teamId
-        else if(opdataFull.groupId)
-            faction= opdataFull.groupId
-        else if(opdataFull.nationId)
-            faction= opdataFull.nationId
-
-        // console.log(faction)
-
-        var factionname = db.handbookTeam[faction]
-        // console.log(factionname)
-        if (factionname) return factionname
-
-        return null
-    }
-    function update_illustrator(skinid = ""){
-        function IllustratorLister(List){
-            var HTML = ""
-            for(var i = 0 ; i < List.length; i++){
-                ArtistName = List[i].trim()
-                if(Object.keys(db.artistTL.Illustrator).includes(ArtistName))
-                    ArtistName = db.artistTL.Illustrator[ArtistName]
-                if(i > 0)
-                    HTML += " & "
-
-                HTML += `<a href="https://www.google.com/search?q=illustrator+${ArtistName}"  target="_blank">${ArtistName}</a>`
-            }
-            return HTML
-        }
-        
-        let illustratorHTML = ""
-        let IllustratorList = [[],[]]
-        if(AmiyaPatchID.includes(skinid.split("#")[0]))
-            skin = opdataFull.id + "#2"
-        else
-            skin = skinid?skinid:(currskin + "#1")
-
-        if(db.skintable.charSkins[skin])
-            if(db.skintable.charSkins[skin].displaySkin.drawerList){
-                IllustratorList[0] = db.skintable.charSkins[skin].displaySkin.drawerList[0].split("、")
-                IllustratorList[1] = db.skintable.charSkins[skin].displaySkin.designerList?db.skintable.charSkins[skin].displaySkin.designerList[0].split("、"):""
-            }
-        else if (db.handbookInfo.npcDict[opdataFull.id])
-            IllustratorList[0] = db.handbookInfo.npcDict[opdataFull.id].illustList
-
-        // Drawer
-        illustratorHTML = `
-            <div class="illustrator-drawer">
-                <div class="btn-infoleft ak-shadow">
-                    <i class="fas fa-palette" title="Illustrator-Drawer"></i>
-                </div>
-                <div id="name-illustrator-drawer" class="btn-inforight">
-                    ${IllustratorList[0].length > 0?IllustratorLister(IllustratorList[0]):"-"}
-                </div>
-            </div>`
-        
-        // Designer
-        illustratorHTML += IllustratorList[1].length == 0?"":`
-            <div class="illustrator-designer">
-                <div class="btn-infoleft ak-shadow">
-                    <i class="fas fa-pencil-alt" title="Illustrator-Designer"></i>
-                </div>
-                <div id="name-illustrator-designer" class="btn-inforight">
-                    ${IllustratorLister(IllustratorList[1])}
-                </div>
-            </div>
-            `
-
-        $('#info-illustrator').html(illustratorHTML)
-    }
-
     function GetStory (opdataFull){
         // console.log(opdataFull)
         let currStory = db.handbookInfo.handbookDict[opdataFull.id]
@@ -3677,52 +3677,11 @@
         console.log(voiceDictEN)
 
         var VAlang
-        const VAlanglist = ["JP","LINKAGE","CN_MANDARIN","CN_TOPOLECT","EN","KR","FRE","GER","ITA","RUS"]
-        const LINKAGE_EN_list = [
-                                    "char_456_ash",
-                                    "char_457_blitz",
-                                    "char_458_rfrost",
-                                    "char_459_tachak",
-                                    "char_4123_ela",
-                                    "char_4124_iana",
-                                    "char_4125_rdoc",
-                                    "char_4126_fuze"
-                                ]
-        const LINKAGE_CN_list = [
-                                    "char_4019_ncdeer"
-                                ]
-        const LINKAGE_JP_list = [
-                                    "char_4141_marcil",
-                                    "char_4142_laios",
-                                    "char_4144_chilc",
-                                    "char_4143_sensi"
-                                ]
-
+        
         VAhtml = ""
         VAlanglist.forEach(valang =>{
             if(existvoiceDict.dict[valang]){
-                switch(existvoiceDict.dict[valang].voiceLangType) {
-                    case "LINKAGE":
-                        if(LINKAGE_EN_list.includes(opdataFull.id)){ 
-                            VAlang = "EN"
-                        }
-                        else if(LINKAGE_CN_list.includes(opdataFull.id)){
-                            VAlang = "CN"
-                        }
-                        else if(LINKAGE_JP_list.includes(opdataFull.id)){
-                            VAlang = "JP"
-                        }
-                        else VAlang = "None"
-                        break;
-                    case "CN_MANDARIN":
-                        VAlang = "CN"
-                        break;
-                    case "CN_TOPOLECT":
-                        VAlang = "CN&#42"
-                        break;
-                    default:
-                        VAlang = existvoiceDict.dict[valang].voiceLangType
-                }
+                VAlang = VA_lang(existvoiceDict.dict[valang].voiceLangType)
                 VAName = existvoiceDict.dict[valang].cvName[0].trim()
                 if(Object.keys(db.artistTL.VA).includes(VAName)) VAName = db.artistTL.VA[VAName]
 
@@ -3736,7 +3695,7 @@
                                     </b>
                                 </div>
                                 <div id="name-voiceactor-${VAlang}" class="btn-inforight">
-                                    ${VAlang == "None"?VAName:`<a href="https://www.google.com/search?q=Voice+Actor+${VAName}"  target="_blank">${VAName}</a>`}
+                                    ${VAlang == "None"?VAName:VAName == "-"?VAName:`<a href="https://www.google.com/search?q=Voice+Actor+${VAName}"  target="_blank">${VAName}</a>`}
                                 </div>
                             </div>
                         `

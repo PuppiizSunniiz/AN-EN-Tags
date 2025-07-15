@@ -511,6 +511,15 @@ def IS_boss(stage_id : str, IS : str) -> str:
                                     "ro4_b_5"    : 5,
                                     "ro4_b_6"    : 6,
                                     "ro4_b_7"    : 6
+                                },
+                        "IS#6":{
+                                    "ro5_b_1"    : 3,
+                                    "ro5_b_2"    : 3,
+                                    "ro5_b_3"    : 3,
+                                    "ro5_b_4"    : 5,
+                                    "ro5_b_5"    : 5,
+                                    "ro5_b_6"    : 6,
+                                    "ro5_b_7"    : 6
                                 }
                     }
     return IS_boss_dict[IS].get(re.search(r'(ro[0-9]{0,2}_._[0-9]{1,2})(_[a-z]{1}|)',stage_id).group(1),"???") # cut variant _b _c
