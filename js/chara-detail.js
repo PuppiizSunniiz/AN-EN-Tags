@@ -1783,6 +1783,12 @@
                 $("#op-talentlist").html("")
             }
 
+            if (gmapp == "SO"){
+                GetMastery(opid)
+            }else{
+                $("#op-masterlist").html("")
+            }
+
             if(potentials.length>0){
                 $("#op-potentialist").html(titledMaker(potentialist.join(""),"Potentials"))
             }else{
@@ -1874,7 +1880,7 @@
                         var condUnlocking = opdataFull.skills[i].unlockCond
                         var phase = Math.max(PhaseConvert(condLeveling.phase),PhaseConvert(condUnlocking.phase))
                         var level = Math.max(condLeveling.level,condUnlocking.level)
-                        var SO_condUnlocking = gmapp != "SO"?"":db.special_operator[opid]["skill" + (i + 1).toString()].unlock[i2 - 7]
+                        var SO_condUnlocking = gmapp != "SO"?"":db.special_operator[opid].unlock["skill" + (i + 1).toString()][i2 - 7]
                         materialHtml = `
                                         <div style="text-align:center;background:#222">
                                             ${(i2 == 0?"Unlock":"Rank Up")} Requirements
@@ -1893,7 +1899,7 @@
                         var condUnlocking = opdataFull.skills[i].unlockCond
                         var phase = Math.max(PhaseConvert(condLeveling.phase), PhaseConvert(condUnlocking.phase))
                         var level = Math.max(condLeveling.level,condUnlocking.level)
-                        var SO_condUnlocking = gmapp != "SO"?"":db.special_operator[opid]["skill"].unlock[i2]
+                        var SO_condUnlocking = gmapp != "SO"?"":db.special_operator[opid].unlock["skill"][i2]
                         materialHtml = `
                                         <div style="text-align:center;background:#222">
                                             ${(i2 == 0?"Unlock":"Rank Up")} Requirements
@@ -2030,7 +2036,7 @@
                         skilldetails.forEach(currdetails => {
 
                             skillhtmldetail+=`
-                            <div style="background:#444;margin:4px;padding:2px;padding-top:8px;background:#444;border-radius:2px;color: #999999">
+                            <div style="background:#444;margin:4px;padding:2px;padding-top:8px;border-radius:2px;color: #999999">
                                     ${titledMaker2(currdetails.name,currdetails.key)}  ${currdetails.value}
                             </div>`
                         });
@@ -2296,7 +2302,7 @@
                                 <div style="text-align:center">
                                 `
                             if(gmapp == "SO"){
-                                SO_condUnlocking = db.special_operator[opdataFull.id]["uniequip1"].unlock[curreqphase] // might need to change "uniequip1" later
+                                SO_condUnlocking = db.special_operator[opdataFull.id].unlock["uniequip1"][curreqphase] // might need to change "uniequip1" later
                                 equiphtml[curreqphase] += `
                                                             <div class = "SO-Unlock">
                                                                 ${ChangeDescriptionColor2(SO_condUnlocking)}
@@ -3227,7 +3233,7 @@
                 Tokskilldetails.forEach(currdetails => {
     
                     Tokskillhtmldetail+=`
-                    <div style="background:#444;margin:4px;padding:2px;padding-top:8px;background:#444;border-radius:2px;color:#999999">
+                    <div style="background:#444;margin:4px;padding:2px;padding-top:8px;border-radius:2px;color:#999999">
                             ${titledMaker2(currdetails.name,currdetails.key)}  ${currdetails.value}
                     </div>`
                 });
@@ -3314,12 +3320,12 @@
             <div style="text-align:center;background:#222">Elite Requirements</div>
             <div style="text-align:center">${materialist.join("")}</div>`
         }else if(gmapp == "SO" && i > 0){
-            SO_condUnlocking = db.special_operator[opdataFull.id]["evolve"].unlock[i - 1]
+            SO_condUnlocking = db.special_operator[opdataFull.id].unlock["evolve"][i - 1]
             materialHtml=`
             <div style="text-align:center;background:#222">
                 Elite Requirements
             </div>
-            <div class = "SO-Unlock">
+            <div class = "SO-Unlock" style="padding: 5px 8px;">
                 ${ChangeDescriptionColor2(SO_condUnlocking)}
             </div>`
         }
@@ -3359,7 +3365,7 @@
                 </tr><td>
                 </table>
                 ${rangeMaker(opdataFull.phases[i].rangeId)}
-                <div style="margin:12px">
+                <div>
                 ${materialHtml}
                 </div>
                 </div>
@@ -4224,7 +4230,7 @@
                 var formattedesc = ChangeDescriptionColor2(currdesc)
                 formattedesc = formattedesc.replace(/\\n/g, "<br>")
                 riicskills.push(`
-                <div class="" style="background:#444;margin:4px;padding:0px;background:#444;border-radius:2px;text-align:left">
+                <div class="" style="background:#444;margin:4px;padding:0px;border-radius:2px;text-align:left">
                     <div style="background:#999;display:inline-block;padding:2px;width:100%;border-radius:2px 2px 0px 0px;position:relative;height:33px">
                         <img loading='lazy' id="op-riicdetail-img" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/infrastructure/skill/${currbuff.skillIcon}.png" style="border-radius:50%;background:#333;padding:3px;position:absolute;left:2px;top:2px;width:30px" title=""></img>
                         <div id="op-riicdetail-name" style="display:inline-block;color:#ddd;font-size:13px;background:#333;padding:2px 5px 2px 12px;border-radius:0px 6px 6px 0px;margin:3px 2px 2px 18px;z-index:1">
@@ -4538,6 +4544,82 @@
         talentValue = [elite,level,potential]
     }
 
+    function GetMastery(id){
+        const Roman = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
+        var masteryHTML     = ""
+        var char_masters    = db.special_operator[id].proficiency
+        var char_unlock     = db.special_operator[id].unlock
+        var masteryKey      = Object.keys(char_masters)
+        var masteryArray    = Array.from(Object.keys(char_masters), (key) => char_masters[key])
+        var masteryNAV      = ""
+        var masteryContent  = ""
+
+        for(i = 0; i < masteryArray.length; i++){
+            content = ""
+            for(j = 0; j < masteryArray[i].length; j++){
+                content += `<div style="background:#444;margin:4px;padding:2px;padding-top:2px;border-radius:2px;">
+                                <div style="vertical-align:top;">
+                                    <div style="color: #222; font-size: 13px; background: #999; display: inline-block; padding: 2px; border-radius: 2px">
+                                        <div style="color: #999; background: #222; display: inline-block; padding: 1px; padding-left: 3px; padding-right: 3px; border-radius: 2px">
+                                            <img src="extra/Level/level_${i + 1}.png" style="width: 20px; margin-top: -5px" title="Mastery ${i + 1}">
+                                        </div>
+                                        ${masteryArray[i][j].name}
+                                        <div style="color:#999;background:#222;display:inline-block;padding:1px;padding-left:3px;padding-right:3px;border-radius:2px"><span style="font-size:10px">Lv.</span>${j + 1} </div>
+                                    </div>
+                                    <div style="font-size:13px; font-family:'Source Sans Pro'">
+                                        <div class="ak-line">
+                                            ${ChangeDescriptionColor2(masteryArray[i][j].description)}
+                                        </div>
+                                    <button id="masterydetailtitle-${i + 1}-${j + 1}" class="btn btn-sm btn-block ak-btn" onclick='SlideToggler2("masterydetailcontent-${i + 1}-${j + 1}",$(this))' style="display:inline-block;color:#aaa;text-align:center;background:#333;padding:2px;font-size:12px">
+                                        Unlock Requirements <i class="fas fa-caret-down"></i>
+                                    </button>
+                                    <div id="masterydetailcontent-${i + 1}-${j + 1}" class="ak-shadow masterydetailcontent" style="display:none;padding-top:10px;padding:2px;background:#666">
+                                        <div class="SO-Unlock">
+                                            ${ChangeDescriptionColor2(char_unlock[masteryKey[i]][j])}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`
+            }//${Roman[i]}
+            masteryNAV += `<li class="nav-item" style="" title="Mastery ${i + 1}">
+                                <button class="btn horiz-small nav-link talentlink masterytab" data-toggle="pill" id="Mastery${i + 1}" onclick="MasteryShow(${i + 1})" style="padding: 0px 0px; margin: 0px 2px 0px 0px; background: #666; width: 48px">
+                                    <img src="extra/Level/level_${i + 1}.png" style="width: 20px; margin-top: -5px" title="Mastery ${i + 1}">
+                                </button>
+                            </li>`
+            masteryContent +=`<div class="tab-pane container allmasteryinfo" id="Mastery${i + 1}-content">
+                                ${content}
+                            </div>`
+        }
+        
+        masteryHTML = `<div style="padding-top: 10px">
+                            <div style="color: #fff; text-align: center; background: #333; padding-bottom: 0px">
+                                Proficiency
+                            </div>
+                            <div class="ak-shadow" style="margin-bottom: 8px; padding: 0px; padding-bottom: 2px; background: #666">
+                                <div style="width: 100%; background: #444; display: inline-flex; justify-content: space-between">
+                                    <ul class="nav nav-pills" id="mastery-tabs" style="margin: 0px 0px 0px 0px; width: unset; justify-content: right">
+                                        ${masteryNAV}
+                                    </ul>
+                                </div>
+                                <div class="tab-content" id="mastery-contents" style="margin: 2px 0px 2px 0px;">
+                                    ${masteryContent}
+                                </div>
+                            </div>
+                        </div>
+                        `
+        
+        $("#op-masterlist").html(masteryHTML)
+        MasteryShow("1")
+    }
+
+    function MasteryShow(tab){
+        $(`.masterytab`).removeClass("active")
+        $(`.allmasteryinfo`).removeClass("active")
+        $(`#Mastery${tab}-content`).toggleClass("active")
+        $(`#Mastery${tab}`).toggleClass("active")
+    }
+
     function GetModuleTalent(DataBundle,moduleKey,modulenum,phase,range_id=""){
         var potentialTab = []
         var activePotential = 0
@@ -4653,19 +4735,19 @@
 
             Moduletalentdetails.forEach(currdetails => {
                 Moduletalenthtmldetail+=`
-                <div style="background:#444;margin:4px;padding:2px;padding-top:8px;background:#444;border-radius:2px;color: #999999">
+                <div style="background:#444;margin:4px;padding:2px;padding-top:8px;border-radius:2px;color: #999999">
                         ${titledMaker2(currdetails.name,currdetails.key)}
                         ${currdetails.value}
                 </div>`
             });
 
-            ModuledetailHeader =    `<button id='Moduletalentdetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler2("Moduletalentdetailcontent-${modulenum}-${phase}-${currpotent}",$(this))'style="display:inline-block;color:#aaa;text-align:center;background:#333;padding:2px;font-size:12px">
+            ModuledetailHeader =    `<button id='Moduletalentdetailtitle-${modulenum}-${phase}-${currpotent}' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler2("Moduletalentdetailcontent-${modulenum}-${phase}-${currpotent}",$(this))'style="display:inline-block;color:#aaa;text-align:center;background:#333;padding:2px;font-size:12px">
                                         Talent Details
                                         <i class="fas fa-caret-down">
                                         </i>
                                     </button>`
             Moduledetailtable = `
-                <div id='Moduletalentdetailcontent-${modulenum}-${phase}-${currpotent}' class="ak-shadow Moduletalentdetailcontent" style="display:none;margin-bottom:8px;padding-top:10px;padding:2px;background:#666">
+                <div id='Moduletalentdetailcontent-${modulenum}-${phase}-${currpotent}' class="ak-shadow Moduletalentdetailcontent" style="display:none;padding-top:10px;padding:2px;background:#666">
                     ${Moduletalenthtmldetail}
                 </div>
             `
@@ -4679,7 +4761,7 @@
         if(imagereq.length==0) info = ""
 
         return (`
-        <div style="background:#444;margin:4px;padding:2px;padding-top:2px;background:#444;border-radius:2px;">
+        <div style="background:#444;margin:4px;padding:2px;padding-top:2px;border-radius:2px;">
             <div style="vertical-align:top;${isModuleTalentRange?`width:71%;display:inline-block;padding-right:0px;margin-right:-6px;height:100%`:""}">
                 <div style="color:#222;font-size:13px;background:#999;display:inline-block;padding:2px;border-radius:2px">
                     ${currModuleTalentName}
@@ -4761,13 +4843,13 @@
             talentdetails.forEach(currdetails => {
 
                 talenthtmldetail+=`
-                <div style="background:#444;margin:4px;padding:2px;padding-top:8px;background:#444;border-radius:2px;color: #999999">
+                <div style="background:#444;margin:4px;padding:2px;padding-top:8px;border-radius:2px;color: #999999">
                         ${titledMaker2(currdetails.name,currdetails.key)}  ${currdetails.value}
                 </div>`
             });
-            detailHeader = `<button id='talentdetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler2("talentdetailcontent${talentnum}",$(this))'style="display:inline-block;color:#aaa;text-align:center;background:#333;padding:2px;font-size:12px">Talent Details <i class="fas fa-caret-down"></i></button>`
+            detailHeader = `<button id='talentdetailtitle${talentnum}' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler2("talentdetailcontent${talentnum}",$(this))'style="display:inline-block;color:#aaa;text-align:center;background:#333;padding:2px;font-size:12px">Talent Details <i class="fas fa-caret-down"></i></button>`
             detailtable = `
-                <div id='talentdetailcontent${talentnum}' class="ak-shadow talentdetailcontent" style="display:none;margin-bottom:8px;padding-top:10px;padding:2px;background:#666">
+                <div id='talentdetailcontent${talentnum}' class="ak-shadow talentdetailcontent" style="display:none;padding-top:10px;padding:2px;background:#666">
                     ${talenthtmldetail}
                 </div>
             `
@@ -4781,7 +4863,7 @@
             info = ""
         }
         return (`
-        <div style="background:#444;margin:4px;padding:2px;padding-top:2px;background:#444;border-radius:2px;">
+        <div style="background:#444;margin:4px;padding:2px;padding-top:2px;border-radius:2px;">
         <div style="vertical-align:top;${isTalentRange||isTalentRangeExtend?`width:71%;display:inline-block;padding-right:0px;margin-right:-6px;height:100%`:""}">
             <div style="color:#222;font-size:13px;background:#999;display:inline-block;padding:2px;border-radius:2px">${currTalentName} ${info}</div>
             <div style="font-size:13px; font-family:'Source Sans Pro'">

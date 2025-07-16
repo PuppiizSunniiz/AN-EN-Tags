@@ -1,13 +1,38 @@
 {
     "char_4195_radian": {
-        "evolve": {
-            "unlock": [
+        "unlock": {
+            "evolve": [
                 "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at any difficulty, reach the 3rd floor (云瓦亭)",
                 "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 2 or above, complete any ending"
-            ]
-        },
-        "skill": {
-            "unlock": [
+            ],
+            "master1": [
+                "Unlock in Elite 1",
+                "Unlock in Elite 2"
+            ],
+            "master2": [
+                "Unlock in Elite 2"
+            ],
+            "master3": [
+                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 1 or above, hold a Candle 5 times in total",
+                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 3 or above, hold a Candle 10 times in total",
+                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 6 or above, recruit Raidian, clear 2 \"祸乱\" nodes in special floor and complete \"依律镇抚\" ending (Ending 1)"
+            ],
+            "master4": [
+                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 1 or above, consume 8 Candlelights in total in special floor",
+                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 3 or above, consume 20 Candlelights in total in special floor",
+                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 6 or above, recruit Raidian, have at least 6 Candleholder operators and complete \"长卷留痕\" ending (Ending 2)"
+            ],
+            "master5": [
+                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 1 or above, clear a total of 5 Battle nodes",
+                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 3 or above, clear a total of 12 Battle nodes",
+                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 6 or above, recruit Raidian and clear any Emergency Operation"
+            ],
+            "master6": [
+                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 2 or above, clear 2 \"祸乱\" nodes in total in special floor",
+                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 3 or above, clear 6 \"祸乱\" nodes in total in special floor",
+                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 6 or above, have Raidian or her summon defeat \"易\" (Ending 1's boss)"
+            ],
+            "skill": [
                 "",
                 "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 1 or above, reach the 5th floor (见字祠)",
                 "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 1 or above, reach the 5th floor (见字祠)",
@@ -15,62 +40,100 @@
                 "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 1 or above, clear a total of 5 Encounter nodes",
                 "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 1 or above, clear a total of 5 Encounter nodes",
                 "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 1 or above, clear a total of 5 Encounter nodes"
-            ]
-        },
-        "master3": {
-            "unlock": [
-                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 1 or above, hold Candle 5 time",
-                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 3 or above, hold Candle 10 time",
-                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 6 or above, recruit Raidian, clear 2 \"祸乱\" nodes and complete \"依律镇抚\" ending (Ending 1)"
-            ]
-        },
-        "master4": {
-            "unlock": [
-                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 1 or above, consume Candle 8 times in total in special floor",
-                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 3 or above, consume Candle 20 times in total in special floor",
-                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 6 or above, recruit Raidian, have at least 6 operator holding Candles and complete \"长卷留痕\" ending (Ending 2)"
-            ]
-        },
-        "master5": {
-            "unlock": [
-                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 1 or above, clear a total of 5 Battle nodes",
-                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 3 or above, clear a total of 12 Battle nodes",
-                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 6 or above, recruit Raidian and clear any Emergency Operation"
-            ]
-        },
-        "master6": {
-            "unlock": [
-                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 2 or above, clear 2 \"祸乱\" nodes",
-                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 3 or above, clear 6 \"祸乱\" nodes",
-                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 6 or above, have Raidian or her summon defeat “易” (Ending 1's boss)"
-            ]
-        },
-        "skill1": {
-            "unlock": [
+            ],
+            "skill1": [
                 "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 4 or above, complete any ending",
                 "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 5 or above, and complete \"长卷留痕\" ending (Ending 2)",
-                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 7 or above, use \"游客\" squad, recruit Raidian and complete any ending"
-            ]
-        },
-        "skill2": {
-            "unlock": [
+                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 7 or above, use \"游客分队\" squad, recruit Raidian and complete any ending"
+            ],
+            "skill2": [
                 "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 4 or above, use 2 different squads to complete any ending",
                 "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 5 or above, use 2 different squads to complete \"长卷留痕\" ending (Ending 2)",
-                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 7 or above, use \"司岁台\" squad, recruit Raidian and complete any ending"
-            ]
-        },
-        "skill3": {
-            "unlock": [
+                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 7 or above, use \"司岁台分队\" squad, recruit Raidian and complete any ending"
+            ],
+            "skill3": [
                 "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 4 or above, use 3 different squads to complete any ending",
                 "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 5 or above, use 3 different squads to complete \"长卷留痕\" ending (Ending 2)",
-                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 7 or above, use \"天师府\" squad, recruit Raidian and complete any ending"
-            ]
-        },
-        "uniequip1": {
-            "unlock": [
+                "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 7 or above, use \"天师府分队\" squad, recruit Raidian and complete any ending"
+            ],
+            "uniequip1": [
                 "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 8 or above, complete any ending",
                 "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 9 or above, complete \"黑白入玄\" ending (Ending 3)",
                 "In <@ba.kw>[Sui's Garden of Grotesqueries]</> at difficulty 10 or above, recruit Raidian and complete \"黑白入玄\" ending (Ending 3)"
+            ]
+        },
+        "proficiency": {
+            "master1": [
+                {
+                    "name": "后备精通 I",
+                    "description": "Unlock \"请电弧探路\" option for \"同心\" encounter"
+                },
+                {
+                    "name": "后备精通 I",
+                    "description": "Unlock \"请电弧探路\" option for \"同心\" encounter and \"请电弧交涉\" option for \"同心\" encounter in special floor"
+                }
+            ],
+            "master2": [
+                {
+                    "name": "后备精通 II",
+                    "description": "Improve \"特勤分队\" squad"
+                }
+            ],
+            "master3": [
+                {
+                    "name": "招募精通 I",
+                    "description": "In <@ba.kw>[Sui's Garden of Grotesqueries]</>, costs 2 less Hope to recruit"
+                },
+                {
+                    "name": "招募精通 I",
+                    "description": "In <@ba.kw>[Sui's Garden of Grotesqueries]</>, costs 4 less Hope to recruit"
+                },
+                {
+                    "name": "招募精通 I",
+                    "description": "In <@ba.kw>[Sui's Garden of Grotesqueries]</>, costs 4 less Hope to recruit and 2 less Hope to promote"
+                }
+            ],
+            "master4": [
+                {
+                    "name": "招募精通 II",
+                    "description": "In <@ba.kw>[Sui's Garden of Grotesqueries]</>, when recruited, Max Recruitment Vouchers reserve +1"
+                },
+                {
+                    "name": "招募精通 II",
+                    "description": "In <@ba.kw>[Sui's Garden of Grotesqueries]</>, when recruited, Max Recruitment Vouchers reserve +1. When enter special floor, Candlelight +1"
+                },
+                {
+                    "name": "招募精通 II",
+                    "description": "In <@ba.kw>[Sui's Garden of Grotesqueries]</>, when recruited, Max Recruitment Vouchers reserve +1, Shield +2. When enter special floor, Candlelight +1 and randomly reveal 1 node"
+                }
+            ],
+            "master5": [
+                {
+                    "name": "战斗精通 I",
+                    "description": "In <@ba.kw>[Sui's Garden of Grotesqueries]</>, when entering a new floor, Raidian gain the following effects: Summoned unit deployment costs -9, Max deployed summons at once +1"
+                },
+                {
+                    "name": "战斗精通 I",
+                    "description": "In <@ba.kw>[Sui's Garden of Grotesqueries]</>, when entering a new floor, Raidian gain the following effects: Summoned unit deployment costs -9, Max deployed summons at once +2, summons's ASPD +20"
+                },
+                {
+                    "name": "战斗精通 I",
+                    "description": "In <@ba.kw>[Sui's Garden of Grotesqueries]</>, when entering a new floor, Raidian gain the following effects: Summoned unit deployment costs -9, Max deployed summons at once +2, summons's ASPD +35 and will no longer use Deployment slots"
+                }
+            ],
+            "master6": [
+                {
+                    "name": "战斗精通 II",
+                    "description": "In <@ba.kw>[Sui's Garden of Grotesqueries]</>, Raidian and her summons Max HP +20％"
+                },
+                {
+                    "name": "战斗精通 II",
+                    "description": "In <@ba.kw>[Sui's Garden of Grotesqueries]</>, Raidian and her summons Max HP and DEF +25％"
+                },
+                {
+                    "name": "战斗精通 II",
+                    "description": "In <@ba.kw>[Sui's Garden of Grotesqueries]</>, Raidian and her summons Max HP, DEF +30％ and RES +15"
+                }
             ]
         }
     }
