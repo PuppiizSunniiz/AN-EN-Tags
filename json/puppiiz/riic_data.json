@@ -403,7 +403,7 @@
             "description": "When this Operator is assigned to the Control Center, if an Operator is conducting Skill Specialization in the Training Room, that Operator's Specialization training speed <@cc.vup>+5%</> (Only the strongest effect of this type takes place)."
         },
         "control_train_spd[011]": {
-            "buffName": "断金之交",
+            "buffName": "Best of Buds",
             "skillIcon": "bskill_ctrl_train_spd2",
             "desc": "进驻控制中枢时，如训练室有干员在进行技能专精，则该干员的专精技能训练速度<@cc.vup>+5%</>（同种效果取最高）",
             "description": "When this Operator is assigned to the Control Center, if an Operator is conducting Skill Specialization in the Training Room, that Operator's Specialization training speed <@cc.vup>+5%</> (Only the strongest effect of this type takes place)."
@@ -469,7 +469,7 @@
             "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+20%</>"
         },
         "power_rec_spd[1022]": {
-            "buffName": "热能充能·γ",
+            "buffName": "Heat Charge γ",
             "skillIcon": "bskill_pow_spd3",
             "desc": "进驻发电站时，无人机充能速度<@cc.vup>+20%</>",
             "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+20%</>"
@@ -2281,10 +2281,10 @@
             "description": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+25%</>"
         },
         "train_spd_bd[000]": {
-            "buffName": "与人乐",
+            "buffName": "Sharing the Joy",
             "skillIcon": "bskill_train_bd",
             "desc": "进驻训练室协助位时，心情每小时消耗<@cc.vdown>+1</>，每<@cc.vup>1</>点<$cc.bd_b1><@cc.rem>人间烟火</></><@cc.vup>+1%</>专精技能训练速度",
-            "description": "When this Operator is assigned to be the Trainer in the Training Room, Morale consumed per hour <@cc.vdown>+1</>, Operators' Specialization training speed <@cc.vup>+1%</> for every <@cc.vup>1</> <$cc.bd_b1><@cc.rem>Worldly Plight</></>"
+            "description": "When this Operator is assigned to be the Trainer in the Training Room, Morale consumed per hour <@cc.vdown>+1</>, and every <@cc.vup>1</> <$cc.bd_b1><@cc.rem>Worldly Plight</></> gives <@cc.vup>+1%</> Specialization training speed"
         },
         "train_spd_power[000]": {
             "buffName": "Snowpriest Candidate",
@@ -3211,7 +3211,7 @@
             "description": "When this Operator is assigned to a Dormitory, self Morale recovered per hour <@cc.vup>+0.55</>, and restores <@cc.vup>+0.1</> Morale per hour to all other Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
         },
         "dorm_rec_all&group[000]": {
-            "buffName": "调众口",
+            "buffName": "I'll Cook Your Favorite",
             "skillIcon": "bskill_dorm_sui",
             "desc": "进驻宿舍时，基建内（不包含副手及活动室使用者）每名<$cc.g.sui><@cc.kw>岁</></>干员为该宿舍内所有干员心情每小时恢复速度<@cc.vup>+0.06</>（最多生效<@cc.kw>4</>名，且同种效果取最高）",
             "description": "When this Operator is assigned to a Dormitory, Morale recovery per hour of all Operators in that Dormitory <@cc.vup>+0.06</> for each <$cc.g.sui><@cc.kw>Sui</></> Operator in the Base (excluding Assistants and Activity Room users, caps at <@cc.kw>4</> Operators, strongest effect of the same type applies)"
@@ -3427,7 +3427,7 @@
             "description": "When this Operator is assigned to the HR Office, increases HR contacting speed by <@cc.vup>+35%</>, and increases Clue collection speed in the Reception Room by <@cc.vup>+5%</> for each additional Recruitment slot (does not count default slots)."
         },
         "hire_spd_cost[112]": {
-            "buffName": "踏坊寻味·α",
+            "buffName": "Pensive Stroll α",
             "skillIcon": "bskill_hire_spd&cost4",
             "desc": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+20%</>，心情每小时消耗<@cc.vup>-0.25</>",
             "description": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+20%</>, Morale consumed per hour <@cc.vup>-0.25</>"
@@ -3451,7 +3451,7 @@
             "description": "When this Operator is assigned to the HR Office, increases HR contacting speed by <@cc.vup>+20%</>, and for every <@cc.vup>1</> contacts made, increases the likelihood of obtaining <@cc.kw>Blacksteel</> clues (working time and recruitment slots improves the likelihood)"
         },
         "hire_spd_cost[121]": {
-            "buffName": "踏坊寻味·β",
+            "buffName": "Pensive Stroll β",
             "skillIcon": "bskill_hire_spd&cost6",
             "desc": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+30%</>，心情每小时消耗<@cc.vup>-0.25</>",
             "description": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+30%</>, Morale consumed per hour <@cc.vup>-0.25</>"
@@ -3553,7 +3553,7 @@
             "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by <@cc.vup>20%</>"
         },
         "meet_spd[1020]": {
-            "buffName": "线索搜集·β",
+            "buffName": "Clue Search β",
             "skillIcon": "bskill_meet_spd3",
             "desc": "进驻会客室时，线索搜集速度提升<@cc.vup>20%</>",
             "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by <@cc.vup>20%</>"
@@ -3601,13 +3601,13 @@
             "description": "When this Operator is assigned to the Reception Room, increases Clue search speed by <@cc.vup>10%</>, and when assigned together with another <$cc.g.sm><@cc.kw>Sami</></> Operator, increases Clue search speed by an additional <@cc.vup>5%</> while self Morale loss per hour <@cc.vdown>+0.5</>"
         },
         "meet_spd&sami[100]": {
-            "buffName": "人情练达",
+            "buffName": "Networking Expert",
             "skillIcon": "bskill_meet_spd&blacksteel1",
             "desc": "进驻会客室时，线索搜集速度提升<@cc.vup>10%</>，与其他<$cc.g.bs><@cc.kw>黑钢国际干员</></>进驻会客室一起工作时，线索搜集速度额外提升<@cc.vup>15%</>，自身心情每小时消耗<@cc.vdown>+0.5</>",
             "description": "When this Operator is assigned to the Reception Room, increases Clue search speed by <@cc.vup>10%</>, and when assigned together with another <$cc.g.bs><@cc.kw>Blacksteel Worldwide</></> Operator, increases Clue search speed by an additional <@cc.vup>15%</> while self Morale loss per hour <@cc.vdown>+0.5</>"
         },
         "meet_spd&sami[110]": {
-            "buffName": "情报探查",
+            "buffName": "Information Gathering",
             "skillIcon": "bskill_meet_spd&blacksteel2",
             "desc": "进驻会客室时，线索搜集速度提升<@cc.vup>10%</>，与其他<$cc.g.bs><@cc.kw>黑钢国际干员</></>进驻会客室一起工作时，线索搜集速度额外提升<@cc.vup>20%</>",
             "description": "When this Operator is assigned to the Reception Room, increases Clue search speed by <@cc.vup>10%</>, and when assigned together with another <$cc.g.bs><@cc.kw>Blacksteel Worldwide</></> Operator, increases Clue search speed by an additional <@cc.vup>20%</>"

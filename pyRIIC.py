@@ -132,7 +132,7 @@ def riic_tl_json(show : bool = False):
                         match_skill_id      = desc_match.group(3)
                         match_skill_name    = riic_match_tl(match_skill_id)
                         match_spd           = desc_match.group(4)
-                        return f'When this Operator is assigned to be the Trainer in the Training Room, Morale consumed per hour <@cc.vdown>{match_morale}</>, Operators\' Specialization training speed <@cc.vup>{match_spd}</> for every <@cc.vup>{match_every}</> <${match_skill_id}><@cc.rem>{match_skill_name}</></>'
+                        return f'When this Operator is assigned to be the Trainer in the Training Room, Morale consumed per hour <@cc.vdown>{match_morale}</>, and every <@cc.vup>{match_every}</> <${match_skill_id}><@cc.rem>{match_skill_name}</></> gives <@cc.vup>{match_spd}</> Specialization training speed'
                     # Train Class Specialize
                     re_train_spd_profession = r'^进驻训练室协助位时，<@cc\.kw>([^<]*)<\/>干员的专精技能训练速度<@cc\.vup>([\+0-9%]*)<\/>，如果本次训练专精技能至<@cc\.vup>([1-3])<\/>级，则训练速度额外<@cc\.vup>([\+0-9%]*)<\/>$'
                     if re.match(re_train_spd_profession, desc_sub):
