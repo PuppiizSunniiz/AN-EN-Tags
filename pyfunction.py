@@ -88,7 +88,7 @@ def print_header(text : str) -> str:
     length : int = 20
     return f'\n{"#" * length * 3}\n{"#" * length}{text:^{length}}{"#" * length}\n{"#" * length * 3}'
 
-def script_result(text : str | list | dict, show : bool = False):
+def script_result(text : str | list | set | dict , show : bool = False, indent : int | None = 4, sort_keys : bool = False) -> None:
     '''
         Output result
             STR, LIST   >   TXT
@@ -97,12 +97,15 @@ def script_result(text : str | list | dict, show : bool = False):
     if isinstance(text, str):
         with open("py/script.txt", "w", encoding = "utf-8") as filepath:
             filepath.write(text)
-    elif isinstance(text, list):
+    elif isinstance(text, list) or isinstance(text, set):
         with open("py/script.txt", "w", encoding = "utf-8") as filepath:
             filepath.write("\n".join(text))
-    elif isinstance(text, dict):
+    elif isinstance(text, dict) and indent:
         with open("py/script.json", "w", encoding = "utf-8") as filepath:
-            json.dump(text, filepath, indent = 4, ensure_ascii = False) # ensure_ascii = False
+            json.dump(text, filepath, indent = indent, ensure_ascii = False, sort_keys = sort_keys)
+    else:
+        with open("py/script.json", "w", encoding = "utf-8") as filepath:
+            json.dump(text, filepath, separators = (",", ":"), ensure_ascii = False, sort_keys = sort_keys)
     
     file = f'py/script.{"json" if isinstance(text, dict) else "txt"}'
     print(f'\n{Y}Script Completed{RE} -> {R}{file}{RE}')

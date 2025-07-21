@@ -1,12 +1,4 @@
 # Fix TL (Official EN) waiting room
-### Such is the Joy of Our Reunion
-- Talent > Mod
-    - Surfer
-- Trait
-    - ham-x
-    - Dusk isw-a
-    - Eunectes ra-a
-
 ### When Elegies Are Ashes
 - Talent > Mod
     - Necrass
@@ -51,6 +43,10 @@
 ### Fantasy in the Mirage
 - Trait
     - SIE-Y
+
+### IS#6 : Sui's Garden of Grotesqueries
+- Trait
+    - Raidian 's summons
 
 ### To Fix 
 - Tecno Mod Range display

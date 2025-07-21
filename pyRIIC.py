@@ -265,9 +265,7 @@ def riic_tl_json(show : bool = False):
                                     "description"   :   riic_tl_dict.get(riic_value["description"], riic_tl(riic_value["description"], riic.split("_")[0]))
                                 }
     
-    script_result(json_riicTL, show)
-    with open("json/puppiiz/riic_data.json", "w", encoding = "utf-8") as filepath :
-        json.dump(json_riicTL, filepath, indent = 4, ensure_ascii = False)
+    return json_riicTL
 
 template = '''
                     re_ = r'^$'
@@ -280,5 +278,8 @@ template = '''
 '''
 
 if __name__ == "__main__":
-    riic_tl_json()
+    script_result(riic_tl_json(), True)
     print(template)
+else:
+    with open("json/puppiiz/riic_data.json", "w", encoding = "utf-8") as filepath :
+        json.dump(riic_tl_json(), filepath, indent = 4, ensure_ascii = False)

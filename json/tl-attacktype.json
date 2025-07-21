@@ -805,21 +805,21 @@
             "code": "char_4172_xingzh"
         },
         "溅射范围内有大于或等于3个敌人时，使当次攻击力提升至<@ba.kw>{atk_scale_e:0%}</>": {
-            "en": "When there are 3 or more enemies in splash area, ATK increase to <@ba.kw>{atk_scale_e:0%}</>",
+            "en": "When there are 3 or more enemies within the splash area, ATK of the current instance of attack increases to <@ba.kw>{atk_scale_e:0%}</>",
             "color": "physical",
             "note": "new mods ham-x",
             "name": "char_4131_odda",
             "code": "uniequip_002_odda"
         },
         "在<@ba.kw>集成战略</>中，额外攻击一个目标": {
-            "en": "In <@ba.kw>Integrated Strategies</>, attack 1 additional target",
+            "en": "In <@ba.kw>Integrated Strategies</>, attacks one additional target",
             "color": "extra",
             "note": "new mods isw-a",
             "name": "char_2015_dusk",
             "code": "uniequip_004_dusk"
         },
         "在<@ba.kw>生息演算</>中，拥有食物效果时可以回复技力，且开启技能时会吸引大范围的敌人走向自身所在位置": {
-            "en": "In <@ba.kw>Reclamation Algorithm</>, can restore SP when food effect is active, activate skill will draw nearby enemies toward her.",
+            "en": "In <@ba.kw>Reclamation Algorithm</>, able to recover SP while under the effect of food; attracts enemies over a wide area to this unit's position when skill is activated",
             "color": "extra",
             "note": "new mods ra-a",
             "name": "char_416_zumama",

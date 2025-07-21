@@ -7,7 +7,6 @@
         //CN
         chars           :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/character_table.json",
         charpatch       :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/char_patch_table.json",
-        charword        :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/charword_table.json",
         handbookInfo    :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/handbook_info_table.json",
         handbookTeam    :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/handbook_team_table.json",
         range           :"./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/range_table.json",
@@ -24,7 +23,6 @@
         charpatchEN     :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/char_patch_table.json",
         handbookInfoEN  :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/handbook_info_table.json",
         handbookTeamEN  :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/handbook_team_table.json",
-        charwordEN      :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/charword_table.json",
         skillsEN        :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/skill_table.json",
         uniequipEN      :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/uniequip_table.json",
         battle_equipEN  :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/battle_equip_table.json",
@@ -40,6 +38,8 @@
         potential_token :"./json/puppiiz/potential_token.json",
         build           :"./json/puppiiz/riic_data.json",
         special_operator:"./json/puppiiz/special_operator.json",
+        charword        :"./json/puppiiz/charword_table.json",
+
         //TL
         voicelineTL     :"./json/tl-voiceline.json",
         campdata        :"./json/tl-campdata.json",
@@ -522,7 +522,7 @@
                 $('#opstory').modal('show')
             }else if(vars.has("voice")){
                 currVoiceID = opdataFull.id
-                GetAudio(opdataFull)
+                GetAudio()
                 $('#opaudio').modal('show')
             }else if(vars.has("sfx")){
                 GetSFX(opdataFull)
@@ -620,6 +620,20 @@
 
         $(".op-gender").each((_, btn) => $(btn).text(db.gender[$(btn).attr("data-id")][`sex_${lang}`]));
         $(".op-tag").each((_, btn) => $(btn).text(db.ktags[$(btn).attr("data-id")][lang]));
+
+        $("audio").on("play", function () {
+            $("audio").not(this).each(function () {
+                this.pause();
+                //this.currentTime = 0; //pause/stop
+            });
+        });
+
+        $('#opaudio').on('hidden.bs.modal', function () {
+            $(this).find("audio").each(function () {
+                this.pause();
+                this.currentTime = 0;
+                });
+            });
     });
 
     $.getScript("js/arrive.min.js", function(){
@@ -1346,7 +1360,6 @@
 
             tokenname   = globaltoken
             currskin    = opcode
-            currVoiceID = opdataFull.id
 
             const url = new URL(window.location.href)
             const urlVars = url.searchParams
@@ -1694,7 +1707,7 @@
             </div>
             </button>`))
 
-            tabbtn.push($(`<button type="button" class="btn tabbing-btns ak-btn  tabbing-btns-middle" style="width:50px;height:50px" data-toggle="modal" data-target="#opaudio" onclick="GetAudio(opdataFull)">
+            tabbtn.push($(`<button type="button" class="btn tabbing-btns ak-btn  tabbing-btns-middle" style="width:50px;height:50px" data-toggle="modal" data-target="#opaudio" onclick="GetAudio()">
             <div>
                 <img class='audioprofilebutton' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/story/audio.png" style="max-width:40px;max-height:40px">
                 <div class="btn-story-header">Audio</div>
@@ -3522,165 +3535,123 @@
                 return voiceLangType
         }
     }
-    function GetAudio (opdataFull,lang="en"){
-        console.log(opdataFull)
-        console.log(currVoiceID)
+    function GetAudio(){
         var curraudiolist = []
-        var puretextlist =[]
-        var isEN = false
-        var currTL = db.voicelineTL[opdataFull.id]
         var voiceDict = db.charword.voiceLangDict[currVoiceID]
-        var checkold = db.voiceold[opdataFull.id]
+        var checkold = db.voiceold[currVoiceID]
         var preDir = "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-voices/main/"
-        // console.log(db.charword)
-        // console.log(currTL)
-        Object.keys(db.charword.charWords).forEach(element => {
-            var curraudio= db.charword.charWords[element]
-            if(curraudio){
+        var old_va = ""
 
-                if(curraudio.charId&&curraudio.wordKey == currVoiceID){
-                    if(db.charwordEN.charWords[element]){
-                        curraudio = db.charwordEN.charWords[element]
-                        currTL = undefined
-                        isEN = true
-                    }
-                    curraudiolist.push(curraudio)
-                    // console.log(curraudio)
-                    puretextlist.push(`${curraudio.charId},${opdataFull.appellation},${curraudio.voiceTitle},${db.storytextTL[curraudio.voiceTitle]?db.storytextTL[curraudio.voiceTitle]:""},"${curraudio.voiceText}"`)
-                }
+        Object.keys(db.charword.charWords).forEach(audio_key => {
+            if (db.charword.charWords[audio_key].wordKey == currVoiceID){
+                curraudiolist.push(db.charword.charWords[audio_key])
             }
         });
+
         $('#opaudiocontent').empty()
-        $('#opaudiotranslator').empty()
-        $('#opaudioproofreader').empty()
-        curraudiolist.forEach(element => {
-            var curraudio  =`
-            JP <audio preload="metadata" controls style="margin-top:5px"> <source src="${preDir}voice/${element.voiceAsset}.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio>
-            <a href="${preDir}voice/${element.voiceAsset}.mp3"  target="_blank">
-            <i class='fa fa-download' style='font-size:30px;vertical-align:top;padding-top:17px'></i></a>`
-            var voiceTL = element.voiceText
-            if(currTL)voiceTL= currTL.voiceline[element.voiceTitle][lang]?currTL.voiceline[element.voiceTitle][lang]: element.voiceText
+        $('#opaudio-va').empty()
+
+        curraudiolist.forEach(audio_dict => {
+            var voiceTL = audio_dict.voiceText
             var audiolist = []
-            Object.keys(voiceDict.dict).forEach(dict => {
-                var foldername = "voice"
-                var lang = ""
-                var wordKey = encodeURIComponent(voiceDict.dict[dict].wordkey)
-                console.log(wordKey)
-                switch (dict) {
-                    case "CN_TOPOLECT":
-                        foldername = "voice_custom"
-                        lang = "CNT"
+            var old_audiolist = []
+            VAlanglist.forEach(valang => {
+                if (!Object.keys(voiceDict).includes(valang))
+                    return
+                var foldername
+                var lang = VA_lang(valang)
+                var wordKey = encodeURIComponent(audio_dict.wordKey)
+                
+                if (audio_dict.voiceId == "CN_043" && ["EN", "KR"].includes(valang)) // temp for EN KR Birthday
+                    return
+
+                switch (valang) {
+                    case "JP":
+                        foldername = "voice"
                         break;
                     case "CN_MANDARIN":
                         foldername = "voice_cn"
-                        lang = "CN"
-                        break;
-                    case "JP":
-                        lang = "JP"
-                        if(checkold){
-                            audiolist.push(`
-                            <div style="display:inline-block;padding-top:15px;vertical-align:top;width:20px" >JP0</div>
-                            <div style="display:inline-block">
-                            <audio preload="metadata" controls style="margin-top:10px"> <source src="${preDir}voice_old/${element.voiceAsset}.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio>
-                            <a href="${preDir}voice_old/${element.voiceAsset}.mp3"  target="_blank">
-                            <i class='fa fa-download' style='font-size:30px;vertical-align:top;padding-top:17px'></i></a>
-                            </div>`)
-                        }
                         break;
                     case "EN":
                         foldername = "voice_en"
-                        lang = "EN"
                         break;
                     case "KR":
                         foldername = "voice_kr"
-                        lang = "KR"
                         break;
                     case "LINKAGE":
-                        var path = voiceDict.dict[dict].voicePath
-                        foldername = path.split("/")
-                        foldername = foldername[foldername.length-2]
+                        foldername = db.charword.LINKAGE[currVoiceID]
                         break;
                     default:
                         foldername = "voice_custom"
-                        lang = dict
                         break;
                 }
-
+                
                 audiolist.push(`
-                <div style="display:inline-block;padding-top:15px;vertical-align:top;width:20px" >${lang}</div>
-                <div style="display:inline-block">
-                <audio preload="metadata" controls style="margin-top:10px"> <source src="${preDir}${foldername.toLowerCase()}/${wordKey.toLowerCase()}/${element.voiceId}.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio>
-                <a href="${preDir}${foldername.toLowerCase()}/${wordKey.toLowerCase()}/${element.voiceId}.mp3"  target="_blank">
-                <i class='fa fa-download' style='font-size:30px;vertical-align:top;padding-top:17px'></i></a>
-                </div>`)
+                    <div id="${valang}-VA" style="display:inline-block;padding-top:15px;vertical-align:top;width:30px;text-align:left;">${lang}</div>
+                    <div style="display:inline-block">
+                    <audio preload="metadata" controls style="margin-top:10px"> <source src="${preDir}${foldername}/${wordKey.toLowerCase()}${valang == "CN_TOPOLECT"?"_cn_topolect":""}/${audio_dict.voiceId}.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio>
+                    <a href="${preDir}${foldername}/${wordKey.toLowerCase()}/${audio_dict.voiceId}.mp3"  target="_blank">
+                    <i class='fa fa-download' style='font-size:20px;vertical-align:top;padding-top:17px'></i></a>
+                    </div>`)
 
+                if(checkold && checkold[valang] && !["CN_038", "CN_043", "CN_044"].includes(audio_dict.voiceId)){ // New Year, Birthday, Anni
+                    old_audiolist.push(`
+                    <div id="${valang}-VA0" style="display:inline-block;padding-top:15px;vertical-align:top;width:30px;text-align:left;">${lang}0</div>
+                    <div style="display:inline-block">
+                    <audio preload="metadata" controls style="margin-top:10px"> <source src="${preDir}voice_old/${foldername}/${audio_dict.voiceAsset}.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio>
+                    <a href="${preDir}voice_old/${foldername}/${audio_dict.voiceAsset}.mp3"  target="_blank">
+                    <i class='fa fa-download' style='font-size:20px;vertical-align:top;padding-top:17px'></i></a>
+                    </div>`)
+                }
             });
 
             var currhtml = $(`
-            <table class="story-table">
-            <th>${db.storytextTL[element.voiceTitle]?db.storytextTL[element.voiceTitle]:element.voiceTitle}</th>
-            <tr><td style="text-align:center;background:#1a1a1a;vertical-align:middle"><div id="audio-displaynum" style="position: absolute;font-weight: 700;font-size:10px;margin-top:0px;color:#999;background:#222;padding:0px;padding-left:2px;padding-right:2px;right:18px">${element.voiceAsset.split("_").slice(-1)[0] }</div>
-
-            ${audiolist.join(`<tr><td style="text-align:center;background:#1a1a1a;vertical-align:middle">`)}
-
-            </td></tr>
-            <tr><td style="height:10px"></td></tr>
-            <tr><td>${voiceTL}</td></tr>
-            <tr><td style="height:10px"></td></tr>
-            </table>
-
+                                <table class="story-table">
+                                    <th>${db.storytextTL[audio_dict.voiceTitle]?db.storytextTL[audio_dict.voiceTitle]:audio_dict.voiceTitle}</th>
+                                    <tr><td style="text-align:center;background:#1a1a1a;vertical-align:middle">
+                                        <div id="audio-displaynum" style="position: absolute;font-weight: 700;font-size:10px;margin-top:0px;color:#999;background:#222;padding:0px;padding-left:2px;padding-right:2px;right:18px">
+                                            ${audio_dict.voiceAsset.split("_").slice(-1)[0]}
+                                        </div>
+                                        ${audiolist.concat(old_audiolist).join(`<tr><td style="text-align:center;background:#1a1a1a;vertical-align:middle">`)}
+                                    </td></tr>
+                                    <tr><td style="height:10px"></td></tr>
+                                    <tr><td>${voiceTL}</td></tr>
+                                    <tr><td style="height:10px"></td></tr>
+                                </table>
             `)
             $('#opaudiocontent').append($(currhtml))
         });
 
-        if(currTL){
-            if(currTL.translator){
-                $('#opaudiotranslator').html(`<div class="btn-infoleft">Voiceline Translation</div><div class="btn-inforight">${currTL.translator}</div>`)
-            }else $('#opaudiotranslator').html()
-            if(currTL.proofreader){
-                $('#opaudioproofreader').html(`<div class="btn-infoleft">Voiceline Proofreader</div><div class="btn-inforight">${currTL.proofreader}</div>`)
-            }else $('#opaudioproofreader').html()
-        }
-        if(isEN){
-            $('#opaudiotranslator').html(`<div class="btn-infoleft">Voiceline Translation</div><div class="btn-inforight">Official EN Arknight</div>`)
-        }
-
-        Object.keys(voiceDict.dict).forEach(dict => {
-            var lang = ""
-            var content = voiceDict.dict[dict].cvName
-            switch (dict) {
-                case "CN_MANDARIN":
-                    lang = "CN VA"
-                    break;
-                case "CN_TOPOLECT":
-                    lang = "CN Top VA"
-                    break;
-                case "JP":
-                    lang = "JP VA"
-                    if(checkold){
-                        $('#opaudiocontent').append(`
-                        <div style="text-align:center">
-                        <div class="btn-infoleft ak-shadow" style="width:100px"><i class="fas fa-microphone-alt" title="Voice Actor">JP0 VA</i></div><div class="btn-inforight" style="width:70%"><a href="https://www.google.com/search?q=Voice+Actor+${checkold.jp}"  target="_blank">${checkold.jp}</a></div>
-                        </div>
-                        `)
-                    }
-                    break;
-                case "EN":
-                    lang = "EN VA"
-                    break;
-                case "KR":
-                    lang = "KR VA"
-                    break;
-                default:
-                    lang = dict +" VA"
-                    break;
-            }
-            $('#opaudiocontent').append(`
-            <div style="text-align:center">
-            <div class="btn-infoleft ak-shadow" style="width:100px"><i class="fas fa-microphone-alt" title="Voice Actor"> ${lang}</i></div><div class="btn-inforight" style="width:70%"><a href="https://www.google.com/search?q=Voice+Actor+${content}"  target="_blank">${content}</a></div>
-            </div>
-            `)
-        });
+        VAlanglist.forEach(valang => {
+            if (!Object.keys(voiceDict).includes(valang))
+                    return
+                var lang = VA_lang(valang).split("_")[0]
+                $("#" + valang+ "-VA").attr("title", "VA : " + voiceDict[valang])
+                $('#opaudio-va').append(`
+                                            <div style="text-align:center">
+                                                <div class="btn-infoleft" style="width:100px">
+                                                    <i class="fas fa-microphone-alt" title="Voice Actor">${lang}</i>
+                                                </div>
+                                                <div class="btn-inforight" style="width:70%">
+                                                    <a href="https://www.google.com/search?q=Voice+Actor+${voiceDict[valang]}"  target="_blank">${voiceDict[valang]}</a>
+                                                </div>
+                                            </div>
+                                        `)
+                if (checkold && checkold[valang]){
+                    $("#" + valang + "-VA0").attr("title", "VA : " + checkold[valang])
+                    old_va += (`
+                                            <div style="text-align:center">
+                                                <div class="btn-infoleft" style="width:100px">
+                                                    <i class="fas fa-microphone-alt" title="Voice Actor">${lang}0</i>
+                                                </div>
+                                                <div class="btn-inforight" style="width:70%">
+                                                    <a href="https://www.google.com/search?q=Voice+Actor+${checkold[valang]}"  target="_blank">${checkold[valang]}</a>
+                                                </div>
+                                            </div>
+                                        `)
+                }
+        })
+        $('#opaudio-va').append(old_va)
     }
     function GetStory (opdataFull){
         // console.log(opdataFull)
@@ -3708,7 +3679,7 @@
         update_illustrator()
 
         var voiceDict = db.charword.voiceLangDict[opdataFull.id]
-        var voiceDictEN = db.charwordEN.voiceLangDict[opdataFull.id]
+        var voiceDictEN
         var existvoiceDict = voiceDictEN?{...voiceDict,...voiceDictEN}:voiceDict
         console.log(voiceDict)
         console.log(voiceDictEN)
@@ -3717,9 +3688,9 @@
         
         VAhtml = ""
         VAlanglist.forEach(valang =>{
-            if(existvoiceDict.dict[valang]){
-                VAlang = VA_lang(existvoiceDict.dict[valang].voiceLangType)
-                VAName = existvoiceDict.dict[valang].cvName[0].trim()
+            if(existvoiceDict[valang]){
+                VAlang = VA_lang(valang)
+                VAName = existvoiceDict[valang].trim()
                 if(Object.keys(db.artistTL.VA).includes(VAName)) VAName = db.artistTL.VA[VAName]
 
                 VAhtml += `
@@ -6208,17 +6179,6 @@
             currVoiceID = db.skintable.charSkins[id].voiceId
         else
             currVoiceID = opdataFull.id
-
-        var uniqueoplist= [
-            "char_4067_lolxh",
-            "char_311_mudrok"]
-        if(uniqueoplist.includes(opdataFull.id)){
-            if(currskin == 2){
-                currVoiceID = opdataFull.id + "#1"
-            }else{
-                currVoiceID = opdataFull.id
-            }
-        }
 
         if(name.length > 1) chibiName = name
         else chibiName = opdataFull.id

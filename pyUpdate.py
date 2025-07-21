@@ -1,5 +1,6 @@
 import re
 import json
+from pyAudio import audio_json
 from pyRIIC import riic_tl_json
 from pyfunction import char_ready, name_check, json_load, printr
 from pyAkenemy import Akenemy
@@ -564,6 +565,7 @@ with open("json/puppiiz/potential_token.json", "w", encoding = "utf-8") as filep
 #########################################################################################################
 Akenemy()
 riic_tl_json()
+audio_json()
 
 if skip_char:
     printr(f'\nNEW CHAR skip list = {skip_char}')

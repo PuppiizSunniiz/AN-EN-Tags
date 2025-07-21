@@ -2132,6 +2132,18 @@ button[id^='class-change-']:hover #class-icon{
     transform: perspective(1280px) rotateY(calc(-10deg * var(--mouse-x, 0))) rotateX(calc(5deg - 10deg * var(--mouse-y, 0))) translateZ(-50px) translateY(0px) translateX(-10px);
 } */
 
+@media (max-width: 400px) {
+    audio {
+        width : 245px;
+    }
+}
+
+@media (max-width: 600px) {
+    .modal-footer{
+        justify-content: center;
+    }
+}
+
 @media (max-width: 1000px ){
     .opresult-grid{
         width:100vw;
@@ -2471,9 +2483,9 @@ button[id^='class-change-']:hover #class-icon{
     .akrankmastery{
         display:block
     }
-    .modal-dialog{
+    /*.modal-dialog{
         margin: 0px;
-    }
+    }*/
     .modal{
         padding-right: 0px !important;
     }
