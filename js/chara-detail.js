@@ -103,7 +103,7 @@
     var globallevel = [1,1,1]
     var globalskill = 0
     var skillValue
-    const TRUE_INFINITY = ['skchr_lolxh_1', 'skchr_strong_1', 'skchr_strong_2', 'skchr_nothin_2', 'skchr_talr_1', 'skchr_flameb_2', 'skchr_whitew_1', 'skchr_platnm_2', 'skchr_absin_1', 'skchr_folivo_1', 'skchr_tuye_2', 'skchr_whispr_2', 'skchr_vodfox_1', 'skchr_quercu_1', 'skchr_ash_1', 'skchr_acnipe_2', 'skchr_bgsnow_1', 'skchr_phenxi_3', 'skchr_ray_2', 'skchr_narant_1', 'skchr_marcil_2', 'skchr_logos_1', 'skchr_lin_1', 'skchr_gdglow_2', 'skchr_whitw2_1', 'skchr_lisa_2', 'skchr_skadi2_2', 'skchr_cetsyr_1', 'skchr_lmlee_1', 'skchr_lmlee_3', 'skchr_swire2_1', 'skchr_swire2_2', 'skchr_swire2_3', 'skchr_weedy_2', 'skchr_agoat2_1', 'skchr_jesca2_1', 'skchr_nearl2_1', 'skchr_f12yin_2', 'skchr_svrash_2', 'skchr_hodrer_2', 'skchr_ulpia_2', 'skchr_huang_2', 'skchr_surtr_3', 'skchr_siege2_2', 'skchr_phatm2_2']
+    const TRUE_INFINITY = ['skchr_lolxh_1', 'skchr_strong_1', 'skchr_strong_2', 'skchr_nothin_2', 'skchr_talr_1', 'skchr_flameb_2', 'skchr_whitew_1', 'skchr_platnm_2', 'skchr_absin_1', 'skchr_folivo_1', 'skchr_tuye_2', 'skchr_whispr_2', 'skchr_vodfox_1', 'skchr_quercu_1', 'skchr_ash_1', 'skchr_acnipe_2', 'skchr_bgsnow_1', 'skchr_phenxi_3', 'skchr_ray_2', 'skchr_narant_1', 'skchr_marcil_2', 'skchr_logos_1', 'skchr_lin_1', 'skchr_gdglow_2', 'skchr_whitw2_1', 'skchr_lisa_2', 'skchr_skadi2_2', 'skchr_cetsyr_1', 'skchr_lmlee_1', 'skchr_lmlee_3', 'skchr_swire2_1', 'skchr_swire2_2', 'skchr_swire2_3', 'skchr_weedy_2', 'skchr_agoat2_1', 'skchr_jesca2_1', 'skchr_nearl2_1', 'skchr_f12yin_2', 'skchr_svrash_2', 'skchr_hodrer_2', 'skchr_ulpia_2', 'skchr_huang_2', 'skchr_surtr_3', 'skchr_siege2_2', 'skchr_phatm2_2', "skchr_hsgma2_1"]
     var israritygrouped
     var talentValue = [0,0,0]
     var toktalentValue = [0,0,0]
@@ -2419,10 +2419,10 @@
         }
     }
 
-    function ModuleMissionDescription(mission,missionEN){
-        // console.log(mission)
+    function ModuleMissionDescription(mission, missionEN){
         var tl = ''
         var squadinfo =''
+        //const damage_type = ["None", "Physical damage", "Arts damage", "True damage", "Elemental Injury", "Elemental Damage"] # confirm later
         //probably good
         // <@ba.kw> = Blue Highlight
         switch (mission.template) {
@@ -2638,6 +2638,20 @@
                 tl=`
                     Deal total of <@ba.kw>${mission.paramList[1]}</> damage </br>
                     Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[0].split(";")[0]]?db.chars[mission.paramList[0].split(";")[0]].appellation:db.charpatch.patchChars[mission.paramList[0].split(";")[0]].appellation}</> or <@ba.kw>${db.chars[mission.paramList[0].split(";")[1]]?db.chars[mission.paramList[0].split(";")[1]].appellation:db.charpatch.patchChars[mission.paramList[0].split(";")[1]].appellation}</>
+                    `
+                break;
+            case "EquipmentDamageTypeStage":
+                var stage = db.stage[mission.paramList[1]]
+                tl=`
+                    Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
+                    <br>Deal total of <@ba.kw>${mission.paramList[3]}</> Elemental Damage </br>
+                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2].split(";")[0]]?db.chars[mission.paramList[2].split(";")[0]].appellation:db.charpatch.patchChars[mission.paramList[2].split(";")[0]].appellation}</>
+                    `
+                break;
+            case "EquipmentDamageTypeTotal":
+                tl=`
+                    Deal total of <@ba.kw>${mission.paramList[1]}</> Elemental Damage</br>
+                    Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[0]]?db.chars[mission.paramList[0]].appellation:db.charpatch.patchChars[mission.paramList[0]].appellation}</>
                     `
                 break;
             case "EquipmentCharKilledStage":
@@ -4502,7 +4516,6 @@
     }
 
     function GetTalent(id,opdataFull){
-        // var combTalents = []
         var talenthtml = []
         var talentnum = 0
         var talenttype = 0
@@ -4647,29 +4660,32 @@
 
             }
             talenttype+=1
-            // combTalents.push(talentGroup)
         }
-        var talenthtml = ''
+        var talenthtml = ""
         var talentnum = 0
         Object.keys(talentObject.html).forEach(key => {
             var currhtml = talentObject.html[key]
-            talenthtml += `
-            <div class='tab-pane container alltalentinfo' id='talent${key}'>
-            `
+            var currtalenthtml = ""
             Object.keys(currhtml.talents).forEach(eachtalent => {
                 var currtalent = currhtml.talents[eachtalent]
-
-                if (currtalent.talent.isHideTalent)
+                if (!currtalent.talent.name && (!currtalent.talent.description || currtalent.talent.description == "-") && (!currtalent.talent.blackboard || currtalent.talent.blackboard.length == 0) || currtalent.talent.isHideTalent)
                     return
-                //console.log(currtalent)
-                talenthtml +=`
-                ${TalentParse2(currtalent,talentnum)}
-                `
+                
+                currtalenthtml += TalentParse2(currtalent,talentnum)
                 talentnum +=1
             });
-            talenthtml +=`
-            </div>
-            `
+            // Skip talentless phase Bandage
+            if(currtalenthtml){
+                talenthtml += `<div class='tab-pane container alltalentinfo' id='talent${key}'>
+                                    ${currtalenthtml}
+                                </div>`
+            }else{
+                [...talentTab].forEach(talent_tab =>{
+                    if(talent_tab.includes(`<li class='nav-item' style="" title='Elite ${key[0]} | Level ${key[2]} '>`)){
+                        talentTab[talentTab.indexOf(talent_tab)] = ""
+                    }
+                })
+            }
         });
         // console.log(talenthtml)
 
