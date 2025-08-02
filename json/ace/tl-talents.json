@@ -8808,29 +8808,29 @@
             {
                 "name": "浮光泡影",
                 "descCN": "每过一个攻击间隔，使范围内一名友方单位获得10%<$ba.protect>庇护</>的浮泡，浮泡在受到敌方伤害的短暂延迟后破碎",
-                "desc": "Every attack, grant 10% <$ba.protect>Sanctuary</> Bubble to operator in Attack Range. When Bubble operator take damage, Bubble pop after short delay"
+                "desc": "Every attack interval, grant 10% <$ba.protect>Sanctuary</> Bubble to ally unit in Attack Range. When Bubble unit take damage, Bubble pop after short delay"
             },
             {
                 "name": "浮光泡影",
                 "descCN": "每过一个攻击间隔，使范围内一名友方单位获得20%<$ba.protect>庇护</>的浮泡，浮泡在受到敌方伤害的短暂延迟后破碎",
-                "desc": "Every attack, grant 20% <$ba.protect>Sanctuary</> Bubble to operator in Attack Range. When Bubble operator take damage, Bubble pop after short delay"
+                "desc": "Every attack interval, grant 20% <$ba.protect>Sanctuary</> Bubble to ally unit in Attack Range. When Bubble unit take damage, Bubble pop after short delay"
             },
             {
                 "name": "浮光泡影",
                 "descCN": "每过一个攻击间隔，使范围内一名友方单位获得30%<$ba.protect>庇护</>的浮泡，浮泡在受到敌方伤害的短暂延迟后破碎",
-                "desc": "Every attack, grant 30% <$ba.protect>Sanctuary</> Bubble to operator in Attack Range. When Bubble operator take damage, Bubble pop after short delay"
+                "desc": "Every attack interval, grant 30% <$ba.protect>Sanctuary</> Bubble to ally unit in Attack Range. When Bubble unit take damage, Bubble pop after short delay"
             }
         ],
         [
             {
                 "name": "扶摇花火",
                 "descCN": "浮泡破碎时，为所在的单位治疗相当于遥攻击力25%的生命值",
-                "desc": "When Bubble pop, Bubble operator recovery HP by 25% ATK"
+                "desc": "When Bubble pop, Bubbled opearator healed by 25% ATK"
             },
             {
                 "name": "扶摇花火",
                 "descCN": "浮泡破碎时，为所在的单位治疗相当于遥攻击力28%<@ba.talpu>(+3%)</>的生命值",
-                "desc": "When Bubble pop, Bubble operator recovery HP by 28%<@ba.talpu>(+3%)</> ATK"
+                "desc": "When Bubble pop, Bubbled opearator healed by 28%<@ba.talpu>(+3%)</> ATK"
             }
         ]
     ],
