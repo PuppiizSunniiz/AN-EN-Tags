@@ -100,12 +100,13 @@
     var defaulttoken
     var globaltoken
     var globalelite = 0
-    var globallevel =[1,1,1]
+    var globallevel = [1,1,1]
     var globalskill = 0
     var skillValue
     const TRUE_INFINITY = ['skchr_lolxh_1', 'skchr_strong_1', 'skchr_strong_2', 'skchr_nothin_2', 'skchr_talr_1', 'skchr_flameb_2', 'skchr_whitew_1', 'skchr_platnm_2', 'skchr_absin_1', 'skchr_folivo_1', 'skchr_tuye_2', 'skchr_whispr_2', 'skchr_vodfox_1', 'skchr_quercu_1', 'skchr_ash_1', 'skchr_acnipe_2', 'skchr_bgsnow_1', 'skchr_phenxi_3', 'skchr_ray_2', 'skchr_narant_1', 'skchr_marcil_2', 'skchr_logos_1', 'skchr_lin_1', 'skchr_gdglow_2', 'skchr_whitw2_1', 'skchr_lisa_2', 'skchr_skadi2_2', 'skchr_cetsyr_1', 'skchr_lmlee_1', 'skchr_lmlee_3', 'skchr_swire2_1', 'skchr_swire2_2', 'skchr_swire2_3', 'skchr_weedy_2', 'skchr_agoat2_1', 'skchr_jesca2_1', 'skchr_nearl2_1', 'skchr_f12yin_2', 'skchr_svrash_2', 'skchr_hodrer_2', 'skchr_ulpia_2', 'skchr_huang_2', 'skchr_surtr_3', 'skchr_siege2_2', 'skchr_phatm2_2']
     var israritygrouped
     var talentValue = [0,0,0]
+    var toktalentValue = [0,0,0]
     var talentLimit = []
     var ModuletalentValue
 
@@ -3149,12 +3150,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="token-trait" style=${tokenfulldata.description?"padding-top:15px;padding-left:15px;padding-right:5px;":""}>
+                <div class="token-trait" style='${tokenfulldata.description?"padding:15px 5px 5px 15px;":""}'>
                     ${tokenfulldata.description?GetTrait(tokenfulldata.description,""):""}
                 </div>
-                <div class="token-skill" style="width:100%;min-width:320px;"></div>
-                <div class="token-stats" style="width:100%;text-align:center;padding:4px 5px 5px 10px;min-width:320px">
-                <button id='Tokstatdetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler("Tokstatdetailcontent",$(this))'style="color:#fff;text-align:center;background:#222;min-width:320px;height:27px;padding-top: 2px;padding-bottom: 2px;">Token Stat <i class="fas fa-caret-up"></i></button>
+                <div class="token-talent"></div>
+                <div class="token-skill"></div>
+                <div class="token-stats">
+                    <button id='Tokstatdetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler("Tokstatdetailcontent",$(this))'style="color:#fff;text-align:center;background:#222;min-width:320px;height:27px;padding-top: 2px;padding-bottom: 2px;">
+                        Token Stat <i class="fas fa-caret-up"></i>
+                    </button>
                     <div class="Tokstatdetailcontent">
                         ${stats}
                         ${rangeMaker(tokenfulldata.phases[globalelite].rangeId)}
@@ -3162,6 +3166,7 @@
                 </div>
                 `
             )
+            UpdataTokenTalent()
             UpdateTokenSkill()
         }else{
             $("#token-contents .token-details .stats").html(`<div class='stats-l' style="min-width:unset;width:40px;background:#3D3D3D"><img style='max-height:30px;margin:-11px -10px -9px -10px' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/${currelite}-s.png'></div><div class='stats-r' style="min-width:unset">Lv <span id="summon-level">${currlevel}</span></div>`)
@@ -3170,61 +3175,266 @@
         tooltip_activate()
     }
 
-    function UpdateTokenSkill(token=globaltoken,skill=globalskill){
-        var TokenskillID=db.chars[token].skills[skill].skillId //charEN[token]?charEN[token].skills[skill].skillId:charCN[token].skills[skill].skillId
-        var Tokenskill=db.skills[TokenskillID]
+    function UpdataTokenTalent(token = globaltoken){
+        var Tokendata = db.chars[token]
+        var talenthtml = []
+        var talentnum = 0
+        var talenttype = 0
+        var talentObject = {req:[],req2:[],talents:[],html:{}}
+        var talentTab = []
+        var talentTab2 = []
+        var elitelevel = []
+        var potential = []
+        var activeLevel = 1
+        var activeElite = 0
+        var activePotential = 0
+
+        if (!Tokendata.talents || Tokendata.talents.length == 0) return;
+
+        Tokendata.talents.forEach(currTalent => {
+            currTalent.candidates.forEach(currCandidate => {
+                console.log("test-test", currCandidate, currCandidate.isHideTalent)
+                var currlevel = parseInt(currCandidate.unlockCondition.level)
+                var currphase = PhaseConvert(currCandidate.unlockCondition.phase)
+                var currpotent = parseInt(currCandidate.requiredPotentialRank)
+
+                if(!talentObject.req.includes(`${currphase}-${currlevel}-${currpotent}`,0)){
+                    talentObject.req.push(`${currphase}-${currlevel}-${currpotent}`)
+                    talentObject.req2.push([currphase,currlevel,currpotent])
+                    talentObject.html[`${currphase}-${currlevel}-${currpotent}`]={req:[currphase,currlevel,currpotent],talents:[]}
+
+                    if(currphase==2&&activeElite<2){
+                        activeElite=2
+                        activeLevel=currlevel
+                    }
+                    if(currphase==1&&activeElite<=1){
+                        activeElite=1
+                        if(activeLevel<currlevel){
+                            activeLevel= currlevel
+                        }
+                        if(Tokendata.rarity<=2&&activePotential<currpotent){
+                            activePotential = currpotent
+                        }
+                    }
+                    if(currphase==0&&activeElite<=0){
+                        activeElite=0
+                        if(activeLevel<currlevel){
+                            activeLevel= currlevel
+                        }
+                        if(Tokendata.rarity<=2&&activePotential<currpotent){
+                            activePotential = currpotent
+                        }
+                    }
+                }
+                lastPotential = currpotent
+            });
+        });
+        
+        if (talentObject.req.flat(k => k).length == 0) {
+            $(".token-talent").html("")
+            return
+        }
+
+        talentObject.req2 = talentObject.req2.sort((a,b)=>{
+            var calc = 0
+            calc =+ (a[0]-b[0])*100
+            + (a[1]-b[1])*10
+            + (a[2]-b[2])*1
+            return calc
+        })
+        talentLimit = talentObject.req2
+        talentObject.req2.forEach(reqs => {
+            var imagereq = []
+            var currlevel = reqs[1]
+            var currphase = reqs[0]
+            var currpotent = reqs[2]
+            var elreq = `${currphase}${currlevel}`
+            if(!elitelevel.includes(elreq)){
+                if(currphase >=0)
+                    imagereq.push(`<img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/${currphase}.png" style="width:18px;margin-top:-5px">`)
+                if(currlevel >1)
+                    imagereq.push(`<span style='font-size:11px;margin-left:-2px'><span style='font-size:6px'>Lv.</span>${currlevel}</span>`)
+
+                talentTab.push(`
+                <li class='nav-item' style="" title='Elite ${currphase} | Level ${currlevel} '>
+                    <button class='btn horiz-small nav-link talentlink' data-toggle='pill' id='Toktabtalent${currphase}-${currlevel}' onclick='TokenTalentShow(${currphase},${currlevel},-1)' style="padding:0px 0px;margin:0px 2px 0px 0px;background:#666;width:50px">
+                    ${imagereq.join("")}
+                    </button>
+                </li>
+                `)
+                elitelevel.push(elreq)
+            }
+
+            var imagereq = []
+            if(!potential.includes(currpotent)){
+                potential.push(currpotent)
+            }
+        });
+
+        potential = potential.sort((a,b)=>{
+            return a-b
+        })
+        potential.forEach(currpotent => {
+            var imagereq = []
+            if(currpotent+1 >0)
+                imagereq.push(`<img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/potential/${currpotent+1}.png" style="width:18px"> ${currpotent+1}`)
+            talentTab2.push(`
+            <li class='nav-item' style="" title='Potential ${currpotent+1}'>
+                <button class='btn horiz-small nav-link talentlink talenttabpot' data-toggle='pill' id='Toktabtalent2${currpotent}' onclick='TokenTalentShow(-1,-1,${currpotent})' style="padding:0px 0px;margin:0px 0px 0px 2px;background:#666;width:50px">
+                ${imagereq.join("")}
+                </button>
+            </li>
+            `)
+        });
+
+        for(i=0;i<Tokendata.talents.length;i++){
+            var currTalent = Tokendata.talents[i]
+            var currTalentEN = db.charsEN[token]?db.charsEN[token].talents[i]:undefined
+            var currTalentTL = db.talentsTL[token]?db.talentsTL[token][i]:undefined
+            talentObject.talents[talenttype]=[]
+            for(j=0;j<currTalent.candidates.length;j++){
+                var currCandidate = currTalent.candidates[j]
+                var currCandidateEN = currTalentEN?currTalentEN.candidates[j]:undefined
+                var currCandidateTL = currTalentTL?currTalentTL[j]:undefined
+                var currlevel = parseInt(currCandidate.unlockCondition.level)
+                var currphase = PhaseConvert(currCandidate.unlockCondition.phase)
+                var currpotent = parseInt(currCandidate.requiredPotentialRank)
+                talentObject.req2.forEach(requirements => {
+                    if(requirements[0]>=currphase&&requirements[1]>=currlevel&&requirements[2]>=currpotent){
+                        talentObject.html[`${requirements[0]}-${requirements[1]}-${requirements[2]}`].talents[talenttype]={talent:currCandidate,talentEN:currCandidateEN,talentTL:currCandidateTL}
+                    }
+                });
+
+            }
+            talenttype+=1
+        }
+        var talenthtml = ""
+        var talentnum = 0
+        Object.keys(talentObject.html).forEach(key => {
+            var currhtml = talentObject.html[key]
+            var currtalenthtml = ""
+            Object.keys(currhtml.talents).forEach(eachtalent => {
+                var currtalent = currhtml.talents[eachtalent]
+                if (!currtalent.talent.name && (!currtalent.talent.description || currtalent.talent.description == "-") && (!currtalent.talent.blackboard || currtalent.talent.blackboard.length == 0) && currtalent.talent.isHideTalent)
+                    return
+
+                currtalenthtml += TalentParse2(currtalent, talentnum, "Tok")
+                talentnum +=1
+            });
+            if(currtalenthtml)
+                talenthtml += `<div class='tab-pane container allToktalentinfo' id='Toktalent${key}'>
+                                    ${currtalenthtml}
+                                </div>`
+        });
+        if (talenthtml)
+            $(".token-talent").html(`
+                <button id="token-talent" class="btn btn-sm btn-block ak-btn" onclick='SlideToggler("Toktalentdetail",$(this))' style="color:#fff;text-align:center;background:#222;padding:2px;min-width:320px">
+                    Token Talent <i class="fas fa-caret-down"></i>
+                </button>
+                <div class="ak-shadow Toktalentdetail" style="padding:0px;padding-bottom:2px;background:#666;display:none">
+                    <div style="width:100%;background:#444;display:inline-flex;justify-content:space-between">
+                        <ul class='nav nav-pills' id='Toktalent-tabs' style="margin: 0px 0px 0px 0px;width:unset">
+                            ${talentTab.join("")}
+                        </ul>
+                        <ul class='nav nav-pills' id='Toktalent2-tabs' style="margin: 0px 0px 0px 0px;width:unset;justify-content:right">
+                            ${talentTab2.join("")}
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Toktalents-contents" style="margin: 2px 0px 2px 0px;">
+                        ${talenthtml}
+                    </div>
+                </div>
+            `)
+
+        let limElite    = Math.max(...talentLimit.map(a=>a[0]))
+        let limLevel    = Math.max(...talentLimit.map(a=>a[1]))
+        let limPotential= (RarityConvert(Tokendata.rarity.toString()))>2?0:Math.max(...talentLimit.map(a=>a[2]))
+        TokenTalentShow(limElite, limLevel, limPotential)
+        $(`#Toktabtalent${limElite}-${limLevel}`).toggleClass("active")
+        $(`#Toktabtalent2${limPotential}`).toggleClass("active")
+    }
+
+    function TokenTalentShow(elite,level,potential){
+        var waspot = potential
+
+        if(elite == -1) elite = toktalentValue[0]
+        if(level == -1) level = toktalentValue[1]
+        if(potential == -1) {
+            potential = toktalentValue[2]
+        }
+
+        var currlimit = talentLimit.find(limit =>{
+            if(`${limit[0]}-${limit[1]}-${limit[2]}`==`${elite}-${level}-${potential}`){
+                return true
+            }
+            return false
+        })
+
+        if (currlimit){
+            $(`.allToktalentinfo`).removeClass("active")
+            $(`#Toktalent${elite}-${level}-${potential}`).addClass("active")
+        }else{
+            var maxpot = 0
+            if(waspot == -1){
+                talentLimit.forEach(limit => {
+                    if(limit[0]==elite&&limit[1]==level){
+                        maxpot = Math.max(maxpot,limit[2])
+                    }
+                });
+                console.log(maxpot)
+                $(`.Toktalenttabpot`).removeClass("active")
+                $(`#Toktabtalent2${maxpot}`).toggleClass("active")
+                $(`.allToktalentinfo`).removeClass("active")
+                $(`#Toktalent${elite}-${level}-${maxpot}`).addClass("active")
+                potential = maxpot
+            }else{
+
+            }
+        }
+        toktalentValue = [elite,level,potential]
+    }
+
+    function UpdateTokenSkill(token = globaltoken, skill = globalskill){
+        var TokenskillID = db.chars[token].skills[skill].skillId
+        var Tokenskill = db.skills[TokenskillID]
         if(!Tokenskill) return ;
-        if(!Tokenskill.levels[0].description && Tokenskill.levels[0].blackboard.length==0) return ;
-        var tables = "";
+        if(!Tokenskill.levels[0].description && (Tokenskill.levels[0].blackboard.length == 0)) return ;
+        var content = "";
         var skilllvblackboard
-        var ToktabContents
+        var token_skillContents
 
-        for(i2=0;i2<10;i2++){
+        var TokskillDesc
+        var TokskillRange
+        var TokskillSP
+        var TokskillExtra
+
+        for(i2 = 0; i2 < 10; i2++){
             if(Tokenskill.levels[0].description)
-                var TokskillDesc = Tokenskill.levels.length>i2?getSkillDesc(TokenskillID,i2):getSkillDesc(TokenskillID,0);
+                TokskillDesc = Tokenskill.levels.length > i2?getSkillDesc(TokenskillID, i2):getSkillDesc(TokenskillID, 0);
             else
-                var TokskillDesc = ""
-            if(Tokenskill.levels[0].rangeId)
-                var TokskillRange = rangeMaker(Tokenskill.levels[0].rangeId)
-            else
-                var TokskillRange = ""
-            if(Tokenskill.levels[0].spData.spCost)
-                if(TokskillRange)
-                    var TokskillSP = `
-                                        <div>${titledMaker(Tokenskill.levels[0].spData.spCost,"SP Cost")}</div>
-                                        <div>${titledMaker(Tokenskill.levels[0].spData.initSp,"Initial SP")}</div>
-                                    `
-                else
-                    var TokskillSP =`
-                                        ${titledMaker(Tokenskill.levels[0].spData.spCost,"SP Cost")}
-                                        ${titledMaker(Tokenskill.levels[0].spData.initSp,"Initial SP")}
-                                    `
-            else
-                var TokskillSP = ""
-                
-            
-            if (TokskillRange && TokskillSP)
-                TokskillExtraDetails = `<div class="skill-detail-grid Tokskilldetailcontent" style="display:none;">
-                                            <div class="skill-grid">
-                                                ${TokskillRange}
-                                            </div>
-                                            <div class="skill-grid-num">
-                                                ${TokskillSP}
-                                            </div>
-                                        </div>`
-            else if (TokskillRange)
-                TokskillExtraDetails = `<div class="skill-detail-grid Tokskilldetailcontent" style="display:none;">
-                                            <div class="skill-grid">
-                                                ${TokskillRange}
-                                            </div>
-                                        </div>`
-            else if (TokskillSP)
-                TokskillExtraDetails = TokskillSP
-            else 
-                TokskillExtraDetails = ""
+                TokskillDesc = ""
 
+            if(Tokenskill.levels[0].rangeId)
+                TokskillRange = `
+                                    <div class="skill-detail-grid Tokskilldetailcontent" style="display:none;margin-bottom: 0px">
+                                        <div class="skill-grid">
+                                            ${rangeMaker(Tokenskill.levels[0].rangeId)}
+                                        </div>
+                                    </div>
+                                `
+            else
+                TokskillRange = ""
+
+            if(Tokenskill.levels[0].spData.spCost)
+                TokskillSP = [
+                                titledMaker(Tokenskill.levels[0].spData.spCost, "SP Cost"),
+                                titledMaker(Tokenskill.levels[0].spData.initSp, "Initial SP")
+                            ]
+            else
+                TokskillSP = []
+                
             var Tokskilldetails = []
-            var Tokskilltable = TokskillDesc=""?"":`<div class='skilldesc Tokskilldetailcontent' style="display:none;">${TokskillDesc}</div>`
+            var Tokskilltable = TokskillDesc == ""?"":`<div class='skilldesc Tokskilldetailcontent' style="display:none;">${TokskillDesc}</div>`
             var Tokdetailtable = ""
 
             console.log(Tokskilltable)
@@ -3237,50 +3447,73 @@
                 skilljson.value = skillinfo.value
     
                 Tokskilldetails.push(skilljson)
-                if(skillinfo.key=="force"||skillinfo.key=="base_force_level"||skillinfo.key=="attack@force") force= skillinfo.value
+                if(skillinfo.key == "force" || skillinfo.key == "base_force_level" || skillinfo.key == "attack@force"){
+                    force = skillinfo.value
+                    switch (force) {
+                        case -1:    force = "Very Small [-1]";  break;
+                        case 0:     force = "Small [0]";        break;
+                        case 1:     force = "Medium [1]";       break;
+                        case 2:     force = "Large [2]";        break;
+                        case 3:     force = "Huge [3]";         break;
+                        case 4:     force = "Extreme [4]";      break;
+                    }
+                    TokskillSP.push(titledMaker(force, "Force Level"))
+                }
             });
             
-            if(Tokskilldetails.length>0){
+            if(Tokskilldetails.length > 0){
                 var Tokskillhtmldetail = ""
-    
                 Tokskilldetails.forEach(currdetails => {
-    
-                    Tokskillhtmldetail+=`
-                    <div style="background:#444;margin:4px;padding:2px;padding-top:8px;border-radius:2px;color:#999999">
-                            ${titledMaker2(currdetails.name,currdetails.key)}  ${currdetails.value}
-                    </div>`
+                    Tokskillhtmldetail += `<div style="background:#444;margin:4px;padding:2px;padding-top:8px;border-radius:2px;color:#999999">
+                                                ${titledMaker2(currdetails.name,currdetails.key)}
+                                                ${currdetails.value}
+                                            </div>`
                 });
                 Tokdetailtable = Tokskillhtmldetail
             }else{
-                Tokdetailtable=""
+                Tokdetailtable = ""
             }
-
-            tables+=`<table id='Tokskill${skill}level${i2}stats' class='${lefthand=="true"?"left-hand":""} skillstats ${(i2!=skillValue[globalskill] ? '' : 'active')}'>
-                        <tbody class='Tokskilldetailcontent' style="display:none;margin-bottom:8px;padding-top:10px;padding:2px;background:#666">
-                            ${Tokskilltable==""?"":`<tr style="background: #444;"><td>${Tokskilltable}</td></tr>`}
-                            ${(TokskillRange || !TokskillSP)?"":`<tr style="height:10px;background:#4f4f4f"></tr>`}
-                            ${TokskillExtraDetails==""?"":`<tr style="background:#4f4f4f"><td>${TokskillExtraDetails}</td></tr>`}
-                            <tr>
-                                <td>
-                                    ${Tokdetailtable}
-                                </td>
-                            </tr>
-                            <tr style="height:5px">
-                            </tr>        
-                        </tbody>
-                    </table>
-                    `
+            console.log(TokskillSP)
+            if (TokskillRange && TokskillSP.length != 0)
+                TokskillExtra = `
+                                    <div class="skill-detail-grid Tokskilldetailcontent" style="display:none;margin-bottom: 0px">
+                                        <div class="skill-grid">
+                                            ${rangeMaker(Tokenskill.levels[0].rangeId)}
+                                        </div>
+                                        <div class="Tok-skill-grid-num">
+                                            ${TokskillSP.flat(k => `<div>${k}<div/>`).join("")}
+                                        </div>
+                                    </div>
+                                `
+            else if (TokskillRange)
+                TokskillExtra = `
+                                    <div class="skill-detail-grid Tokskilldetailcontent" style="display:none;margin-bottom: 0px">
+                                        <div class="skill-grid">
+                                            ${rangeMaker(Tokenskill.levels[0].rangeId)}
+                                        </div>
+                                    </div>
+                                `
+            else if (TokskillSP.length != 0)
+                TokskillExtra = `<div style="height:10px"></div>${TokskillSP.flat(k => k).join("")}`
+            else
+                TokskillExtra = ""
+            
+            content += `<div id='Tokskill${skill}level${i2}stats' class='${lefthand=="true"?"left-hand":""} skillstats ${(i2!=skillValue[globalskill] ? '' : 'active')}'>
+                            <div class='Tokskilldetailcontent' style="display:none;padding-top:10px;padding:2px;background:#666">
+                                ${Tokskilltable==""?"":`<div style="background: #444;">${Tokskilltable}</div>`}
+                                ${TokskillExtra}
+                                ${Tokdetailtable}
+                            </div>
+                        </div>`
         }
 
-        ToktabContents = `<div id='Tokskill${skill}StatsCollapsible' class='collapse collapsible notclickthrough show'>
-                            <button id='Tokskilldetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler("Tokskilldetailcontent",$(this))' style="color:#fff;text-align:center;background:#222;padding:2px;min-width:320px">
-                                Token Skill Description & Details 
-                                <i class="fas fa-caret-down"></i>
-                            </button>
-                            ${tables}
-                        </div>`
+        token_skillContents = `<button id='Tokskilldetailtitle' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler("Tokskilldetailcontent",$(this))' style="color:#fff;text-align:center;background:#222;padding:2px;min-width:320px">
+                                    Token Skill Description & Details 
+                                    <i class="fas fa-caret-down"></i>
+                                </button>
+                                ${content}`
 
-        $(".token-skill").html(ToktabContents);
+        $(".token-skill").html(token_skillContents);
     }
 
     function GetModuleStory(module){
@@ -3405,6 +3638,7 @@
         // container.append(mats);
         return container;
     }
+
     function LinkCheck(url)
     {
         var http = new XMLHttpRequest();
@@ -3423,6 +3657,7 @@
 
         return null
     }
+
     function GetLogoInfo (opdataFull){
         var faction
         if(opdataFull.teamId)
@@ -3496,6 +3731,7 @@
 
         $('#info-illustrator').html(illustratorHTML)
     }
+
     function VA_lang(voiceLangType = ""){
         const LINKAGE_EN_list = [
                                     "char_456_ash",
@@ -3535,6 +3771,7 @@
                 return voiceLangType
         }
     }
+
     function GetAudio(){
         var curraudiolist = []
         var voiceDict = db.charword.voiceLangDict[currVoiceID]
@@ -3587,7 +3824,7 @@
                 }
                 
                 audiolist.push(`
-                    <div id="${valang}-VA" style="display:inline-block;padding-top:15px;vertical-align:top;width:30px;text-align:left;">${lang}</div>
+                    <div class="${valang}-VA" style="display:inline-block;padding-top:15px;vertical-align:top;width:30px;text-align:left;">${lang}</div>
                     <div style="display:inline-block">
                     <audio preload="metadata" controls style="margin-top:10px"> <source src="${preDir}${foldername}/${wordKey.toLowerCase()}${valang == "CN_TOPOLECT"?"_cn_topolect":""}/${audio_dict.voiceId}.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio>
                     <a href="${preDir}${foldername}/${wordKey.toLowerCase()}/${audio_dict.voiceId}.mp3"  target="_blank">
@@ -3596,7 +3833,7 @@
 
                 if(checkold && checkold[valang] && !["CN_038", "CN_043", "CN_044"].includes(audio_dict.voiceId)){ // New Year, Birthday, Anni
                     old_audiolist.push(`
-                    <div id="${valang}-VA0" style="display:inline-block;padding-top:15px;vertical-align:top;width:30px;text-align:left;">${lang}0</div>
+                    <div class="${valang}-VA0" style="display:inline-block;padding-top:15px;vertical-align:top;width:30px;text-align:left;">${lang}0</div>
                     <div style="display:inline-block">
                     <audio preload="metadata" controls style="margin-top:10px"> <source src="${preDir}voice_old/${foldername}/${audio_dict.voiceAsset}.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio>
                     <a href="${preDir}voice_old/${foldername}/${audio_dict.voiceAsset}.mp3"  target="_blank">
@@ -3626,7 +3863,7 @@
             if (!Object.keys(voiceDict).includes(valang))
                     return
                 var lang = VA_lang(valang).split("_")[0]
-                $("#" + valang+ "-VA").attr("title", "VA : " + voiceDict[valang])
+                $("." + valang+ "-VA").attr("title", "VA : " + voiceDict[valang])
                 $('#opaudio-va').append(`
                                             <div style="text-align:center">
                                                 <div class="btn-infoleft" style="width:100px">
@@ -3638,7 +3875,7 @@
                                             </div>
                                         `)
                 if (checkold && checkold[valang]){
-                    $("#" + valang + "-VA0").attr("title", "VA : " + checkold[valang])
+                    $("." + valang + "-VA0").attr("title", "VA : " + checkold[valang])
                     old_va += (`
                                             <div style="text-align:center">
                                                 <div class="btn-infoleft" style="width:100px">
@@ -3653,6 +3890,7 @@
         })
         $('#opaudio-va').append(old_va)
     }
+
     function GetStory (opdataFull){
         // console.log(opdataFull)
         let currStory = db.handbookInfo.handbookDict[opdataFull.id]
@@ -4086,6 +4324,7 @@
             $(".sfxplayer")[a].volume = 0.3;
         })
     }
+
     function GetPotential(opdataFull){
         var potentials = opdataFull.potentialRanks
         var potentialsTL = []
@@ -4261,6 +4500,7 @@
         }
         tooltip_activate()
     }
+
     function GetTalent(id,opdataFull){
         // var combTalents = []
         var talenthtml = []
@@ -4686,7 +4926,7 @@
         var currModuleTalentName = EN?EN.name:TL?TL.name:CN.name
         var currModuleTalentDesc = EN?EN.upgradeDescription:TL?TL.upgradeDescription:CN.upgradeDescription
 
-        currModuleTalentDesc = ChangeDescriptionColor2(currModuleTalentDesc.replace(/\<([A-z ]+)\>/g,"&lt;"+"$1"+'&gt;').replace(/\n/g,"</br>"))
+        currModuleTalentDesc = ChangeDescriptionColor2(currModuleTalentDesc.replace(/\<([A-Za-z ]+)\>/g,"&lt;"+"$1"+'&gt;').replace(/\n/g,"</br>"))
 
         var isModuleTalentRange = (CN.rangeId == range_id)?false:CN.rangeId
         var Moduletalentdetails = []
@@ -4770,7 +5010,7 @@
 
     }
 
-    function TalentParse2(eachtalent,talentnum){
+    function TalentParse2(eachtalent, talentnum, prefix = ""){
         // console.log(talentnum)
         var imagereq = []
         if(PhaseConvert(eachtalent.talent.unlockCondition.phase) >=0)
@@ -4782,11 +5022,16 @@
 
         var currTalentName = eachtalent.talentEN?eachtalent.talentEN.name:eachtalent.talentTL?eachtalent.talentTL.name:eachtalent.talent.name
         var currTalentDesc = eachtalent.talentEN?eachtalent.talentEN.description:eachtalent.talentTL?eachtalent.talentTL.desc:eachtalent.talent.description
-        currTalentDesc = ChangeDescriptionColor2(currTalentDesc.replace(/\<([A-z ]+)\>/g,"&lt;"+"$1"+'&gt;').replace(/\n/g,"</br>"))
+
+        if (!currTalentName) currTalentName = "<span style='color:white'>(Hidden Talent)</span>"
+        if (!currTalentDesc || (currTalentDesc && currTalentDesc.trim() == "-")){
+            currTalentDesc = "<span style='color:white'>(Hidden Talent)</span>"
+        }
+        
+        currTalentDesc = ChangeDescriptionColor2(currTalentDesc.replace(/\<([A-Za-z ]+)\>/g,"&lt;"+"$1"+'&gt;').replace(/\n/g,"</br>"))
         // console.log(eachtalent.talent.name)
         var isTalentRange = eachtalent.talent.rangeId
-        var blacklist =
-        ["新人教官"]
+        var blacklist = ["新人教官"]
         if(blacklist.includes(eachtalent.talent.name)){
             isTalentRange = undefined
         }
@@ -4818,9 +5063,9 @@
                         ${titledMaker2(currdetails.name,currdetails.key)}  ${currdetails.value}
                 </div>`
             });
-            detailHeader = `<button id='talentdetailtitle${talentnum}' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler2("talentdetailcontent${talentnum}",$(this))'style="display:inline-block;color:#aaa;text-align:center;background:#333;padding:2px;font-size:12px">Talent Details <i class="fas fa-caret-down"></i></button>`
+            detailHeader = `<button id='${prefix}talentdetailtitle${talentnum}' class='btn btn-sm btn-block ak-btn' onclick='SlideToggler2("${prefix}talentdetailcontent${talentnum}",$(this))'style="display:inline-block;color:#aaa;text-align:center;background:#333;padding:2px;font-size:12px">Talent Details <i class="fas fa-caret-down"></i></button>`
             detailtable = `
-                <div id='talentdetailcontent${talentnum}' class="ak-shadow talentdetailcontent" style="display:none;padding-top:10px;padding:2px;background:#666">
+                <div id='${prefix}talentdetailcontent${talentnum}' class="ak-shadow ${prefix}talentdetailcontent" style="display:none;padding-top:10px;padding:2px;background:#666">
                     ${talenthtmldetail}
                 </div>
             `
@@ -5316,16 +5561,16 @@
 
     }
 
-    function changeSkillLevel(el,skill_no){
+    function changeSkillLevel(el, skill_no){
         var value = $(el).val();
-        skillValue[skill_no]=Number(value)-1
+        skillValue[skill_no] = Number(value) - 1
 
-        $("#skill"+skill_no+"StatsCollapsible").children("table").removeClass("active");
-        $("#skill"+skill_no+"level"+(value-1)+"stats").addClass("active");
-        $("#skill"+skill_no+"LevelDisplay").html(SkillRankDisplay(value));
+        $("#skill" + skill_no + "StatsCollapsible").children("table").removeClass("active");
+        $("#skill" + skill_no + "level" + (value - 1) + "stats").addClass("active");
+        $("#skill" + skill_no + "LevelDisplay").html(SkillRankDisplay(value));
 
-        $("#Tokskill"+skill_no+"StatsCollapsible").children("table").removeClass("active");
-        $("#Tokskill"+skill_no+"level"+(value-1)+"stats").addClass("active");
+        $(".token-skill").children("div").removeClass("active");
+        $("#Tokskill" + skill_no + "level" + (value - 1) + "stats").addClass("active");
 
         UpdateElite(globalelite)
     }
@@ -5351,7 +5596,7 @@
         var skillTL = db.skillsTL[skillId];
         var desc = skillEN?skillEN.description:skillTL?skillTL.desc[level]:skill.description;
 
-        desc = ChangeDescriptionColor2(desc.replace(/\<([A-z ]+)\>/g,"&lt;"+"$1"+'&gt;').replace(/\n/g,"</br>"))
+        desc = ChangeDescriptionColor2(desc.replace(/\<([A-Za-z ]+)\>/g,"&lt;"+"$1"+'&gt;').replace(/\n/g,"</br>"))
         if(desc){
             // console.log(skill)
             desc = ChangeDescriptionContent(desc,skill)

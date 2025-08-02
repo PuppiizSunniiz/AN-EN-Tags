@@ -109,6 +109,7 @@
             "char_488_buildr": "Poncirus",
             "char_513_apionr": "Tulip",
             "char_4023_rfalcn": "Kestrel",
+            "char_4199_makiri": "Matsukiri",
             "char_261_sddrag": "Reed",
             "char_496_wildmn": "Wild Mane",
             "char_1036_fang2": "Fang the Fire-sharpened",
@@ -162,6 +163,7 @@
             "char_4078_bdhkgt": "Jieyun",
             "char_279_excu": "Executor",
             "char_346_aosta": "Aosta",
+            "char_4203_kichi": "Kichisei",
             "char_002_amiya": "Amiya",
             "char_405_absin": "Absinthe",
             "char_411_tomimi": "Tomimi",
@@ -329,6 +331,7 @@
             "char_1012_skadi2": "Skadi the Corrupting Heart",
             "char_4134_cetsyr": "Civilight Eterna",
             "char_1031_slent2": "Silence the Paradigmatic",
+            "char_4202_haruka": "Haruka",
             "char_2023_ling": "Ling",
             "char_4072_ironmn": "Stainless",
             "char_245_cello": "Virtuosa",
@@ -371,6 +374,7 @@
             "char_1034_jesca2": "Jessica the Liberated",
             "char_4194_rmixer": "Sankta Miksaparato",
             "char_2026_yu": "Yu",
+            "char_1044_hsgma2": "Hoshiguma the Breacher",
             "char_264_f12yin": "Mountain",
             "char_2024_chyue": "Chongyue",
             "char_172_svrash": "SilverAsh",
@@ -734,6 +738,9 @@
             "Kestrel": [
                 "char_4023_rfalcn"
             ],
+            "Matsukiri": [
+                "char_4199_makiri"
+            ],
             "Reed": [
                 "char_261_sddrag"
             ],
@@ -894,6 +901,9 @@
             ],
             "Aosta": [
                 "char_346_aosta"
+            ],
+            "Kichisei": [
+                "char_4203_kichi"
             ],
             "Amiya": [
                 "char_002_amiya"
@@ -1385,6 +1395,9 @@
             "Silence the Paradigmatic": [
                 "char_1031_slent2"
             ],
+            "Haruka": [
+                "char_4202_haruka"
+            ],
             "Ling": [
                 "char_2023_ling"
             ],
@@ -1507,6 +1520,9 @@
             ],
             "Yu": [
                 "char_2026_yu"
+            ],
+            "Hoshiguma the Breacher": [
+                "char_1044_hsgma2"
             ],
             "Mountain": [
                 "char_264_f12yin"
@@ -1934,6 +1950,9 @@
             "红隼": [
                 "char_4023_rfalcn"
             ],
+            "松桐": [
+                "char_4199_makiri"
+            ],
             "苇草": [
                 "char_261_sddrag"
             ],
@@ -2094,6 +2113,9 @@
             ],
             "奥斯塔": [
                 "char_346_aosta"
+            ],
+            "吉星": [
+                "char_4203_kichi"
             ],
             "阿米娅": [
                 "char_002_amiya",
@@ -2589,6 +2611,9 @@
             "淬羽赫默": [
                 "char_1031_slent2"
             ],
+            "遥": [
+                "char_4202_haruka"
+            ],
             "令": [
                 "char_2023_ling"
             ],
@@ -2711,6 +2736,9 @@
             ],
             "余": [
                 "char_2026_yu"
+            ],
+            "斩业星熊": [
+                "char_1044_hsgma2"
             ],
             "山": [
                 "char_264_f12yin"
@@ -3147,6 +3175,16 @@
             "⬛⬛🟦⬛⬛",
             "⬛⬛🟦⬛⬛",
             "[[0, 2], [0, 1], [-2, 0], [-1, 0], [0, 0], [1, 0], [2, 0], [0, -1], [0, -2]]"
+        ],
+        "x-7": [
+            "⬛⬛⬛🟦⬛⬛⬛",
+            "⬛⬛⬛🟦⬛⬛⬛",
+            "⬛⬛⬛🟦⬛⬛⬛",
+            "🟦🟦🟦🟨🟦🟦🟦",
+            "⬛⬛⬛🟦⬛⬛⬛",
+            "⬛⬛⬛🟦⬛⬛⬛",
+            "⬛⬛⬛🟦⬛⬛⬛",
+            "[[0, 3], [0, 2], [0, 1], [-3, 0], [-2, 0], [-1, 0], [0, 0], [1, 0], [2, 0], [3, 0], [0, -1], [0, -2], [0, -3]]"
         ],
         "y-1": [
             "🟦🟦🟦⬛",

@@ -2,7 +2,7 @@ import re
 import json
 from pyAudio import audio_json
 from pyRIIC import riic_tl_json
-from pyfunction import char_ready, name_check, json_load, printr
+from pyfunction import char_ready, name_check, json_load, printr, R, G, B, Y, RE
 from pyAkenemy import Akenemy
 from py import Ready
 from typing import Any
@@ -67,7 +67,7 @@ json_skillTL        =   json_load("json/ace/tl-skills.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS : list[str] = [] # "", 
+NEW_CHARS : list[str] = ["Hoshiguma the Breacher", "Haruka", "Matsukiri", "Kichisei"] # "", 
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS : list[str] = [] # "",
@@ -215,7 +215,7 @@ def parentheses(desc : str) -> str :
 #########################################################################################################
 # Chars
 #########################################################################################################
-skip_char   = ""
+skip_char   = []
 talent_tl   = {}
 skill_tl    = {}
 for new_char_name in NEW_CHARS:
@@ -223,7 +223,7 @@ for new_char_name in NEW_CHARS:
         try:
             update_char_TraitSkillTalent(new_char_name)
         except:
-            skip_char += f'{new_char_name}'
+            skip_char.append(new_char_name)
 
     if Rechecked and new_char_name in char_list:
         update_char_TraitSkillTalent(new_char_name)
@@ -568,7 +568,7 @@ riic_tl_json()
 audio_json()
 
 if skip_char:
-    printr(f'\nNEW CHAR skip list = {skip_char}')
+    printr(f'{Y}NEW CHAR{RE} skip list = {", ".join([f'{G}{skip_char[i]}{RE}' if i % 2 == 0 else f'{B}{skip_char[i]}{RE}' for i in range(len(skip_char))])}')
 if skip_mod:
     printr(f'NEW MOD skip list = {skip_mod}')
 if artist_dupe_catch :

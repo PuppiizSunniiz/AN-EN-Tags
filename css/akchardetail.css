@@ -737,6 +737,16 @@ body {
     margin:3px 0px 0.5px 0px
 }
 
+.Tok-skill-grid-num{
+    display:inline-flex;
+    flex-direction:column;
+    margin: 5px 6px;
+}
+
+.Tok-skill-grid-num div{
+    margin-bottom: 10px
+}
+
 .general-stats-container {
     position: absolute;
     height: auto!important;
@@ -813,10 +823,8 @@ body {
 
 #token-contents .skillstats {
     display: none;
-    margin-bottom: 5px;
     min-width: 330px;
     width: 100%;
-    /*margin-top: 5px ;*/
 }
 #token-contents .skillstats.active {
     display: block;
@@ -835,22 +843,22 @@ body {
     content: " ";
     margin: 1.5px 0;
 }
-.token-skill .collapsible {
-    padding: 4px 5px 5px 10px;
-    min-width: 330px;
-    width:100%;
-}
-.token-stat .collapsible {
-    padding: 4px 5px 5px 10px;
-    min-width: 330px;
-    width:100%;
+
+.token-talent:has(button), .token-skill:has(button), .token-stats:has(button){
+    width: 100%;
+    text-align: center;
+    padding: 0px 5px 3px 10px;
+    min-width: 320px;
 }
 
-/*#Tokskilldetailcontent {
-    padding: 4px 5px 5px 10px;
-    min-width: 330px;
-    width:100%;
-}*/
+.allToktalentinfo {
+    text-align: left;
+    color: #999;
+}
+
+.Tokskilldetailcontent{
+    text-align: left;
+}
 
 #skill-contents .skillstats {
     display: none;

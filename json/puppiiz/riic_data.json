@@ -30,6 +30,12 @@
             "desc": "当与<$cc.tag.mh><@cc.kw>怪物猎人小队</></>干员进驻控制中枢一起工作时，所有制造站生产力<@cc.vup>+2%</>（同种效果取最高）",
             "description": "When this Operator is assigned together with other <$cc.tag.mh><@cc.kw>Soubo Adventurers</></> Operators to the Control Center, all Factories' productivity <@cc.vup>+2%</> (Only the strongest effect of this type takes place)"
         },
+        "control_token_prod_spd3[000]": {
+            "buffName": "共事情谊",
+            "skillIcon": "bskill_token_prod_spd3_lungmenguard",
+            "desc": "当与<$cc.g.lgd><@cc.kw>龙门近卫局</></>干员进驻控制中枢一起工作时，所有制造站生产力<@cc.vup>+3%</>（同种效果取最高）",
+            "description": "当与<$cc.g.lgd><@cc.kw>龙门近卫局</></>干员进驻控制中枢一起工作时，所有制造站生产力<@cc.vup>+3%</>（同种效果取最高）"
+        },
         "control_token_tra_spd[000]": {
             "buffName": "Esoteric Negotiations",
             "skillIcon": "bskill_ctrl_token_t_spd",
@@ -405,6 +411,12 @@
         "control_train_spd[011]": {
             "buffName": "Best of Buds",
             "skillIcon": "bskill_ctrl_train_spd2",
+            "desc": "进驻控制中枢时，如训练室有干员在进行技能专精，则该干员的专精技能训练速度<@cc.vup>+5%</>（同种效果取最高）",
+            "description": "When this Operator is assigned to the Control Center, if an Operator is conducting Skill Specialization in the Training Room, that Operator's Specialization training speed <@cc.vup>+5%</> (Only the strongest effect of this type takes place)."
+        },
+        "control_train_spd[012]": {
+            "buffName": "下城人脉",
+            "skillIcon": "bskill_ctrl_train_spd3",
             "desc": "进驻控制中枢时，如训练室有干员在进行技能专精，则该干员的专精技能训练速度<@cc.vup>+5%</>（同种效果取最高）",
             "description": "When this Operator is assigned to the Control Center, if an Operator is conducting Skill Specialization in the Training Room, that Operator's Specialization training speed <@cc.vup>+5%</> (Only the strongest effect of this type takes place)."
         },
@@ -1577,6 +1589,18 @@
             "skillIcon": "bskill_tra_share1",
             "desc": "进驻贸易站时，贸易站内除自身以外每名处于工作状态的干员<@cc.vup>+15%</>订单获取效率",
             "description": "When this Operator is assigned to a Trading Post, other Operators working in the Trading Post have <@cc.vup>+15%</> order acquisition efficiency"
+        },
+        "trade_ord_spd&share[001]": {
+            "buffName": "勤俭经营·α",
+            "skillIcon": "bskill_tra_share2",
+            "desc": "进驻贸易站时，贸易站内除自身以外每名处于工作状态的干员<@cc.vup>+10%</>订单获取效率",
+            "description": "进驻贸易站时，贸易站内除自身以外每名处于工作状态的干员<@cc.vup>+10%</>订单获取效率"
+        },
+        "trade_ord_spd&share[002]": {
+            "buffName": "勤俭经营·β",
+            "skillIcon": "bskill_tra_share3",
+            "desc": "进驻贸易站时，贸易站内除自身以外每名处于工作状态的干员<@cc.vup>+20%</>订单获取效率",
+            "description": "进驻贸易站时，贸易站内除自身以外每名处于工作状态的干员<@cc.vup>+20%</>订单获取效率"
         },
         "trade_ord_spd&cost_P[000]": {
             "buffName": "Feud",
@@ -3048,6 +3072,12 @@
             "desc": "进驻宿舍时，该宿舍内所有干员的心情每小时恢复<@cc.vup>+0.2</>（同种效果取最高）",
             "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.2</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
         },
+        "dorm_rec_all[028]": {
+            "buffName": "明星效应",
+            "skillIcon": "bskill_dorm_all2",
+            "desc": "进驻宿舍时，该宿舍内所有干员的心情每小时恢复<@cc.vup>+0.15</>（同种效果取最高）",
+            "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.15</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
+        },
         "dorm_rec_all&tag[000]": {
             "buffName": "Veteran Cook",
             "skillIcon": "bskill_dorm_senshi",
@@ -3308,6 +3338,12 @@
         },
         "hire_spd[011]": {
             "buffName": "Catastrophe Messenger β",
+            "skillIcon": "bskill_hire_spd5",
+            "desc": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+45%</>",
+            "description": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+45%</>"
+        },
+        "hire_spd[012]": {
+            "buffName": "节目邀约",
             "skillIcon": "bskill_hire_spd5",
             "desc": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+45%</>",
             "description": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+45%</>"
@@ -3824,6 +3860,12 @@
         },
         "meet_spd_notOwned[001]": {
             "buffName": "Intel Analysis",
+            "skillIcon": "bskill_meet_spdNotOwned1",
+            "desc": "进驻会客室时，更容易获得线索板上尚未拥有的线索",
+            "description": "When this Operator is assigned to the Reception Room, increases the likelihood of obtaining clues that are not on the Clue Board."
+        },
+        "meet_spd_notOwned[002]": {
+            "buffName": "见微知著",
             "skillIcon": "bskill_meet_spdNotOwned1",
             "desc": "进驻会客室时，更容易获得线索板上尚未拥有的线索",
             "description": "When this Operator is assigned to the Reception Room, increases the likelihood of obtaining clues that are not on the Clue Board."
@@ -14703,6 +14745,117 @@
                     "buffData": [
                         {
                             "buffId": "workshop_formula_probability[021]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_1044_hsgma2": {
+            "charId": "char_1044_hsgma2",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_train_spd[012]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_token_prod_spd3[000]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4202_haruka": {
+            "charId": "char_4202_haruka",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "dorm_rec_all[028]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "hire_spd[012]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4203_kichi": {
+            "charId": "char_4203_kichi",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "trade_ord_spd&share[001]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "trade_ord_spd&share[002]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": []
+                }
+            ]
+        },
+        "char_4199_makiri": {
+            "charId": "char_4199_makiri",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "meet_spd[1000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "meet_spd_notOwned[002]",
                             "cond": {
                                 "phase": "PHASE_2",
                                 "level": 1

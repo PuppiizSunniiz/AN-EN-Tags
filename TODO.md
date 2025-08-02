@@ -35,6 +35,8 @@
 ### Act or Die
 - Effect
     - Lure / Attract
+- Talent > Mod
+    - Miss Christine
 - Trait
     - SOC-X
     - SOC-Y
@@ -48,12 +50,20 @@
 - Trait
     - Raidian 's summons
 
+### Ato
+- Trait
+    - IS-A : Swire alter
+    - RA-A : Pepe
+
 ### To Fix 
 - Tecno Mod Range display
     - range not on display but added talent (-1)
 
 ### To Do
-- Token base & mod talent/stat/effect
+- Token
+    - Skill SP recovery
+    - Mod talent
+    - Add token talent to pyUpdate (both base/mod)
 - Add multi animation support
     - SP Kroos have multiple Interact + Idle (even Talk)
 - Add all background element for various L2D
