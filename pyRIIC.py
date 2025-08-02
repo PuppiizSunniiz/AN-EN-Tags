@@ -31,13 +31,22 @@ def riic_tl_json(show : bool = False):
 
             match mode:
                 case "control":
-                    re_ = r'^进驻控制中枢时，所有宿舍内<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>的心情每小时恢复<@cc\.vup>([\+\.0-9]*)<\/>（同种效果取最高）$'
-                    if re.match(re_, desc_sub):
-                        desc_match          = re.match(re_, desc_sub)
+                    # Control tag - Dorm Recover
+                    re_control_dorm_rec_tag = r'^进驻控制中枢时，所有宿舍内<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>的心情每小时恢复<@cc\.vup>([\+\.0-9]*)<\/>（同种效果取最高）$'
+                    if re.match(re_control_dorm_rec_tag, desc_sub):
+                        desc_match          = re.match(re_control_dorm_rec_tag, desc_sub)
                         match_faction_skill = desc_match.group(1)
                         match_faction_name  = riic_match_tl(match_faction_skill)
                         match_morale        = desc_match.group(2)
                         return f'When this Operator is assigned to the Control Center, all <${match_faction_skill}><@cc.kw>{match_faction_name}</></> Operators in Dormitories recover <@cc.vup>{match_morale}</> Morale per hour (strongest effect of the same type applies)'
+                    # Control tag - Production Speed
+                    re_control_token_prod_spd = r'^当与<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>干员进驻控制中枢一起工作时，所有制造站生产力<@cc\.vup>([\+\.0-9%]*)<\/>（同种效果取最高）$'
+                    if re.match(re_control_token_prod_spd, desc_sub):
+                        desc_match          = re.match(re_control_token_prod_spd, desc_sub)
+                        match_faction_skill = desc_match.group(1)
+                        match_faction_name  = riic_match_tl(match_faction_skill)
+                        match_prod          = desc_match.group(2)
+                        return f'When this Operator is assigned together with other <${match_faction_skill}><@cc.kw>{match_faction_name}</></> Operators to the Control Center, all Factories\' productivity <@cc.vup>{match_prod}</> (Only the strongest effect of this type takes place)'
                 case "power":
                     # Speed faction
                     re_power_rec_spd_ext_faction = r'^进驻发电站时，如果其他<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>干员进驻在发电站，则无人机充能速度<@cc\.vup>([\+0-9%]*)<\/>$'
@@ -105,6 +114,12 @@ def riic_tl_json(show : bool = False):
                         match_faction_name  = riic_match_tl(match_faction_skill)
                         match_spd         = desc_match.group(3)
                         return f'When this Operator is assigned to a Trading Post, for every {"" if match_every == "1" else f'{match_every} '}<${match_faction_skill}><@cc.kw>{match_faction_name}</></> Operator in the same Trading Post, order acquisition efficiency <@cc.vup>{match_spd}</>'
+                    # Trade share speed
+                    re_trade_ord_spd_share = r'^进驻贸易站时，贸易站内除自身以外每名处于工作状态的干员<@cc\.vup>([\+0-9%]*)</>订单获取效率$'
+                    if re.match(re_trade_ord_spd_share, desc_sub):
+                        desc_match          = re.match(re_trade_ord_spd_share, desc_sub)
+                        match_spd           = desc_match.group(1)
+                        return f'When this Operator is assigned to a Trading Post, other Operators working in the Trading Post have <@cc.vup>{match_spd}</> order acquisition efficiency'
                 case "workshop":
                     # Cost reduce morale
                     re_workshop_formula_cost = r'^进驻加工站加工<@cc\.kw>([^<]*)<\/>时，心情消耗为<@cc\.kw>([0-9]*)<\/>的配方全部<@cc\.vup>([\+\-0-9]*)<\/>心情消耗$'
