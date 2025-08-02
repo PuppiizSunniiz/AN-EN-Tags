@@ -1124,5 +1124,319 @@
                 "upgradeDescription": "Can use up to 5 summons (max 3 deployed at once). Summons’ effect changes based upon Skill; In <@ba.kw>[Sui's Garden of Grotesqueries]</>, reduces the Redeployment Time of summons by 50％. When summon defeated or retreated, Raidian gains 2 SP"
             }
         ]
+    ],
+    "uniequip_002_kichi": [
+        [
+            {
+                "name": "好运连击！",
+                "CN": "上场后每击倒过一种敌人，自身造成的伤害+6%，最多叠加3次",
+                "mod": "上场后每击倒过一种敌人，自身造成的伤害+8%，最多叠加3次",
+                "upgradeDescription": "After deployed, damage dealt +8% for every unique enemy she defeated (can stack 3 times)"
+            },
+            {
+                "name": "好运连击！",
+                "CN": "上场后每击倒过一种敌人，自身造成的伤害+7%<@ba.talpu>(+1%)</>，最多叠加3次",
+                "mod": "上场后每击倒过一种敌人，自身造成的伤害+9%<@ba.talpu>(+1%)</>，最多叠加3次",
+                "upgradeDescription": "After deployed, damage dealt +9%<@ba.talpu>(+1%)</> for every unique enemy she defeated (can stack 3 times)"
+            }
+        ],
+        [
+            {
+                "name": "好运连击！",
+                "CN": "上场后每击倒过一种敌人，自身造成的伤害+6%，最多叠加3次",
+                "mod": "上场后每击倒过一种敌人，自身造成的伤害+8%，最多叠加4次",
+                "upgradeDescription": "After deployed, damage dealt +8% for every unique enemy she defeated (can stack 4 times)"
+            },
+            {
+                "name": "好运连击！",
+                "CN": "上场后每击倒过一种敌人，自身造成的伤害+7%<@ba.talpu>(+1%)</>，最多叠加3次",
+                "mod": "上场后每击倒过一种敌人，自身造成的伤害+9%<@ba.talpu>(+1%)</>，最多叠加4次",
+                "upgradeDescription": "After deployed, damage dealt +9%<@ba.talpu>(+1%)</> for every unique enemy she defeated (can stack 4 times)"
+            }
+        ]
+    ],
+    "uniequip_002_nymph": [
+        [
+            {
+                "name": "Key to the Heart",
+                "EN": "Whenever a <$ba.dt.apoptosis2>Necrosis damage</> burst effect is triggered within Nymph's attack range, ATK +2%, stacking up to 10 times",
+                "CN": "每当自身攻击范围内敌人<$ba.dt.apoptosis2>凋亡损伤</>爆发，攻击力+2%，最多可叠加10层",
+                "mod": "全场有敌人<$ba.dt.apoptosis2>凋亡损伤</>爆发时，攻击力+2%，最多可叠加10层，叠至10层后，攻击速度+7",
+                "upgradeDescription": "Whenever a <$ba.dt.apoptosis2>Necrosis damage</> burst effect is triggered within Nymph's attack range, ATK +2%, stacking up to 10 times. After 10 stacks, ASPD+7"
+            },
+            {
+                "name": "Key to the Heart",
+                "EN": "Whenever a <$ba.dt.apoptosis2>Necrosis damage</> burst effect is triggered within Nymph's attack range, ATK +2%, stacking up to 12 <@ba.talpu>(+2)</> times",
+                "CN": "每当自身攻击范围内敌人<$ba.dt.apoptosis2>凋亡损伤</>爆发，攻击力+2%，最多可叠加12<@ba.talpu>(+2)</>层",
+                "mod": "全场有敌人<$ba.dt.apoptosis2>凋亡损伤</>爆发时，攻击力+2%，最多可叠加12<@ba.talpu>(+2)</>层，叠至10层后，攻击速度+7",
+                "upgradeDescription": "Whenever a <$ba.dt.apoptosis2>Necrosis damage</> burst effect is triggered within Nymph's attack range, ATK +2%, stacking up to 12 <@ba.talpu>(+2)</> times. After 10 stacks, ASPD+7"
+            }
+        ],
+        [
+            {
+                "name": "Key to the Heart",
+                "EN": "Whenever a <$ba.dt.apoptosis2>Necrosis damage</> burst effect is triggered within Nymph's attack range, ATK +2%, stacking up to 10 times",
+                "CN": "每当自身攻击范围内敌人<$ba.dt.apoptosis2>凋亡损伤</>爆发，攻击力+2%，最多可叠加10层",
+                "mod": "全场有敌人<$ba.dt.apoptosis2>凋亡损伤</>爆发时，攻击力+3%，最多可叠加10层，叠至10层后，攻击速度+12",
+                "upgradeDescription": "Whenever a <$ba.dt.apoptosis2>Necrosis damage</> burst effect is triggered within Nymph's attack range, ATK +3%, stacking up to 10 times. After 10 stacks, ASPD+12"
+            },
+            {
+                "name": "Key to the Heart",
+                "EN": "Whenever a <$ba.dt.apoptosis2>Necrosis damage</> burst effect is triggered within Nymph's attack range, ATK +2%, stacking up to 12 <@ba.talpu>(+2)</> times",
+                "CN": "每当自身攻击范围内敌人<$ba.dt.apoptosis2>凋亡损伤</>爆发，攻击力+2%，最多可叠加12<@ba.talpu>(+2)</>层",
+                "mod": "全场有敌人<$ba.dt.apoptosis2>凋亡损伤</>爆发时，攻击力+3%，最多可叠加12<@ba.talpu>(+2)</>层，叠至10层后，攻击速度+12",
+                "upgradeDescription": "Whenever a <$ba.dt.apoptosis2>Necrosis damage</> burst effect is triggered within Nymph's attack range, ATK +3%, stacking up to 12 <@ba.talpu>(+2)</> times. After 10 stacks, ASPD+12"
+            }
+        ]
+    ],
+    "uniequip_002_blaze2": [
+        [
+            {
+                "name": "Meltdown",
+                "EN": "Whenever an enemy triggers a <$ba.dt.burning2>Burn damage</> burst, immediately deals 350% ATK as Elemental Damage to that enemy and recovers 12% Max HP",
+                "CN": "全场有敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时，立即对其造成相当于攻击力350%的元素伤害并回复12%最大生命",
+                "mod": "全场有敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时，立即对其造成相当于攻击力390%的元素伤害并回复12%最大生命，且在10秒内攻击力+5%",
+                "upgradeDescription": "Whenever an enemy triggers a <$ba.dt.burning2>Burn damage</> burst, immediately deals 390% ATK as Elemental Damage to that enemy, recovers 12% Max HP and ATK+5% for 10 seconds"
+            },
+            {
+                "name": "Meltdown",
+                "EN": "Whenever an enemy triggers a <$ba.dt.burning2>Burn damage</> burst, immediately deals 380% <@ba.talpu>(+30%)</> ATK as Elemental Damage to that enemy and recovers 15% <@ba.talpu>(+3%)</> Max HP",
+                "CN": "全场有敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时，立即对其造成相当于攻击力380%<@ba.talpu>(+30%)</>的元素伤害并回复15%<@ba.talpu>(+3%)</>最大生命",
+                "mod": "全场有敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时，立即对其造成相当于攻击力420%<@ba.talpu>(+30%)</>的元素伤害并回复15%<@ba.talpu>(+3%)</>最大生命，且在10秒内攻击力+5%",
+                "upgradeDescription": "Whenever an enemy triggers a <$ba.dt.burning2>Burn damage</> burst, immediately deals 420% <@ba.talpu>(+30%)</> ATK as Elemental Damage to that enemy, recovers 15% <@ba.talpu>(+3%)</> Max HP and ATK+5% for 10 seconds"
+            }
+        ],
+        [
+            {
+                "name": "Meltdown",
+                "EN": "Whenever an enemy triggers a <$ba.dt.burning2>Burn damage</> burst, immediately deals 350% ATK as Elemental Damage to that enemy and recovers 12% Max HP",
+                "CN": "全场有敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时，立即对其造成相当于攻击力350%的元素伤害并回复12%最大生命",
+                "mod": "全场有敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时，立即对其造成相当于攻击力420%的元素伤害并回复15%最大生命，且在10秒内攻击力+10%",
+                "upgradeDescription": "Whenever an enemy triggers a <$ba.dt.burning2>Burn damage</> burst, immediately deals 420% ATK as Elemental Damage to that enemy, recovers 15% Max HP and ATK+10% for 10 seconds"
+            },
+            {
+                "name": "Meltdown",
+                "EN": "Whenever an enemy triggers a <$ba.dt.burning2>Burn damage</> burst, immediately deals 380% <@ba.talpu>(+30%)</> ATK as Elemental Damage to that enemy and recovers 15% <@ba.talpu>(+3%)</> Max HP",
+                "CN": "全场有敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时，立即对其造成相当于攻击力380%<@ba.talpu>(+30%)</>的元素伤害并回复15%<@ba.talpu>(+3%)</>最大生命",
+                "mod": "全场有敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时，立即对其造成相当于攻击力450%<@ba.talpu>(+30%)</>的元素伤害并回复18%<@ba.talpu>(+3%)</>最大生命，且在10秒内攻击力+10%",
+                "upgradeDescription": "Whenever an enemy triggers a <$ba.dt.burning2>Burn damage</> burst, immediately deals 450% <@ba.talpu>(+30%)</> ATK as Elemental Damage to that enemy, recovers 18% <@ba.talpu>(+3%)</> Max HP and ATK+10% for 10 seconds"
+            }
+        ]
+    ],
+    "uniequip_002_christ": [
+        [
+            {
+                "name": "诱人美馔",
+                "CN": "攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力120%的元素伤害",
+                "mod": "攻击处于麻痹状态的目标时，攻击力提升至110%，攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力130%的元素伤害",
+                "upgradeDescription": "When attack <$ba.palsy>Paralyze</> enemies, increase ATK to 110%. Enemies within Attack Range take 130% ATK as Elemental Damage when they <$ba.palsy>Paralyze</>"
+            },
+            {
+                "name": "诱人美馔",
+                "CN": "攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力130%<@ba.talpu>(+10%)</>的元素伤害",
+                "mod": "攻击处于麻痹状态的目标时，攻击力提升至110%，攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力140%<@ba.talpu>(+10%)</>的元素伤害",
+                "upgradeDescription": "When attack <$ba.palsy>Paralyze</> enemies, increase ATK to 110%. Enemies within Attack Range take 140%<@ba.talpu>(+10%)</> ATK as Elemental Damage when they <$ba.palsy>Paralyze</>"
+            }
+        ],
+        [
+            {
+                "name": "诱人美馔",
+                "CN": "攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力120%的元素伤害",
+                "mod": "攻击处于麻痹状态的目标时，攻击力提升至120%，攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力140%的元素伤害",
+                "upgradeDescription": "When attack <$ba.palsy>Paralyze</> enemies, increase ATK to 120%. Enemies within Attack Range take 140% ATK as Elemental Damage when they <$ba.palsy>Paralyze</>"
+            },
+            {
+                "name": "诱人美馔",
+                "CN": "攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力130%<@ba.talpu>(+10%)</>的元素伤害",
+                "mod": "攻击处于麻痹状态的目标时，攻击力提升至120%，攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力150%<@ba.talpu>(+10%)</>的元素伤害",
+                "upgradeDescription": "When attack <$ba.palsy>Paralyze</> enemies, increase ATK to 120%. Enemies within Attack Range take 150%<@ba.talpu>(+10%)</> ATK as Elemental Damage when they <$ba.palsy>Paralyze</>"
+            }
+        ]
+    ],
+    "uniequip_002_kaitou": [
+        [
+            {
+                "name": "Advanced Notice",
+                "EN": "If there is an enemy within attack range under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, ATK +18%",
+                "CN": "攻击范围内存在处于<$ba.dt.apoptosis2>凋亡损伤</>爆发期间的敌方单位时，攻击力+18%",
+                "mod": "攻击范围内存在处于<$ba.dt.apoptosis2>凋亡损伤</>爆发期间的敌方单位时，攻击力+21%",
+                "upgradeDescription": "If there is an enemy within attack range under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, ATK +21%"
+            },
+            {
+                "name": "Advanced Notice",
+                "EN": "If there is an enemy within attack range under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, ATK +21% <@ba.talpu>(+3%)</>",
+                "CN": "攻击范围内存在处于<$ba.dt.apoptosis2>凋亡损伤</>爆发期间的敌方单位时，攻击力+21%<@ba.talpu>(+3%)</>",
+                "mod": "攻击范围内存在处于<$ba.dt.apoptosis2>凋亡损伤</>爆发期间的敌方单位时，攻击力+24%<@ba.talpu>(+3%)</>",
+                "upgradeDescription": "If there is an enemy within attack range under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, ATK +24% <@ba.talpu>(+3%)</>"
+            }
+        ],
+        [
+            {
+                "name": "Advanced Notice",
+                "EN": "If there is an enemy within attack range under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, ATK +18%",
+                "CN": "攻击范围内存在处于<$ba.dt.apoptosis2>凋亡损伤</>爆发期间的敌方单位时，攻击力+18%",
+                "mod": "攻击范围内存在处于<$ba.dt.apoptosis2>凋亡损伤</>爆发期间的敌方单位时，攻击力+23%",
+                "upgradeDescription": "If there is an enemy within attack range under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, ATK +23%"
+            },
+            {
+                "name": "Advanced Notice",
+                "EN": "If there is an enemy within attack range under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, ATK +21% <@ba.talpu>(+3%)</>",
+                "CN": "攻击范围内存在处于<$ba.dt.apoptosis2>凋亡损伤</>爆发期间的敌方单位时，攻击力+21%<@ba.talpu>(+3%)</>",
+                "mod": "攻击范围内存在处于<$ba.dt.apoptosis2>凋亡损伤</>爆发期间的敌方单位时，攻击力+26%<@ba.talpu>(+3%)</>",
+                "upgradeDescription": "If there is an enemy within attack range under the burst effect of <$ba.dt.apoptosis2>Necrosis damage</>, ATK +26% <@ba.talpu>(+3%)</>"
+            }
+        ]
+    ],
+    "uniequip_002_warmy": [
+        [
+            {
+                "name": "Overflowing Pot",
+                "EN": "Enemies within Attack Range take 300% ATK as Elemental Damage when they trigger a <$ba.dt.burning2>Burn damage</> burst",
+                "CN": "攻击范围内的敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时立即受到相当于攻击力300%的元素伤害",
+                "mod": "攻击范围内的敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时立即受到相当于攻击力330%的元素伤害",
+                "upgradeDescription": "Enemies within Attack Range take 330% ATK as Elemental Damage when they trigger a <$ba.dt.burning2>Burn damage</> burst"
+            },
+            {
+                "name": "Overflowing Pot",
+                "EN": "Enemies within Attack Range take 320%<@ba.talpu> (+20%) </>ATK as Elemental Damage when they trigger a <$ba.dt.burning2>Burn damage</> burst",
+                "CN": "攻击范围内的敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时立即受到相当于攻击力320%<@ba.talpu>(+20%)</>的元素伤害",
+                "mod": "攻击范围内的敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时立即受到相当于攻击力350%<@ba.talpu>(+20%)</>的元素伤害",
+                "upgradeDescription": "Enemies within Attack Range take 350%<@ba.talpu> (+20%) </>ATK as Elemental Damage when they trigger a <$ba.dt.burning2>Burn damage</> burst"
+            }
+        ],
+        [
+            {
+                "name": "Overflowing Pot",
+                "EN": "Enemies within Attack Range take 300% ATK as Elemental Damage when they trigger a <$ba.dt.burning2>Burn damage</> burst",
+                "CN": "攻击范围内的敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时立即受到相当于攻击力300%的元素伤害",
+                "mod": "攻击范围内的敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时立即受到相当于攻击力350%的元素伤害",
+                "upgradeDescription": "Enemies within Attack Range take 350% ATK as Elemental Damage when they trigger a <$ba.dt.burning2>Burn damage</> burst"
+            },
+            {
+                "name": "Overflowing Pot",
+                "EN": "Enemies within Attack Range take 320%<@ba.talpu> (+20%) </>ATK as Elemental Damage when they trigger a <$ba.dt.burning2>Burn damage</> burst",
+                "CN": "攻击范围内的敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时立即受到相当于攻击力320%<@ba.talpu>(+20%)</>的元素伤害",
+                "mod": "攻击范围内的敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时立即受到相当于攻击力370%<@ba.talpu>(+20%)</>的元素伤害",
+                "upgradeDescription": "Enemies within Attack Range take 370%<@ba.talpu> (+20%) </>ATK as Elemental Damage when they trigger a <$ba.dt.burning2>Burn damage</> burst"
+            }
+        ]
+    ],
+    "uniequip_003_chen2": [
+        [
+            {
+                "name": "Vestiges of Vacation",
+                "EN": "ASPD +8, when there is water terrain on the battlefield, the effect becomes ASPD +12",
+                "CN": "攻击速度+8，当场地中存在水地形时改为攻击速度+12",
+                "mod": "攻击力+10%，攻击速度+8，当场地中存在水地形时改为攻击力+15%，攻击速度+12",
+                "upgradeDescription": "ATK+10%, ASPD +8, when there is water terrain on the battlefield, the effect becomes ATK+15% and ASPD +12"
+            }
+        ],
+        [
+            {
+                "name": "Vestiges of Vacation",
+                "EN": "ASPD +8, when there is water terrain on the battlefield, the effect becomes ASPD +12",
+                "CN": "攻击速度+8，当场地中存在水地形时改为攻击速度+12",
+                "mod": "攻击力+15%，攻击速度+12，当场地中存在水地形时改为攻击力+28%，攻击速度+20，技能开启时，场地视为水地形",
+                "upgradeDescription": "ATK+15%, ASPD +12, when there is water terrain on the battlefield, the effect becomes ATK+28% and ASPD +20. When skill is active, regard the battlefield as water terrain"
+            }
+        ]
+    ],
+    "uniequip_004_swire2": [
+        [
+            {
+                "name": "Big Spendthrift",
+                "EN": "Gains 1 Coin upon skill activation (can be spent through skills). While a skill is active, gains 1 Coin each time DP is consumed by this unit's Trait, and +4% ATK (stacks up to 8 times)",
+                "CN": "开启技能时获得1枚金币(可用于技能消耗)，技能期间每次特性消耗费用时获得1枚金币，并提升自身4%的攻击力(最多叠加8次)",
+                "mod": "开启技能时获得1枚金币(可用于技能消耗)，技能期间每次特性消耗费用时获得1枚金币，并提升自身4%的攻击力(最多叠加8次)，在<@ba.kw>集成战略</>中金币上限+5，特性消耗费用时额外获得1枚金币并叠加2次攻击力",
+                "upgradeDescription": "Gains 1 Coin upon skill activation (can be spent through skills). While a skill is active, gains 1 Coin each time DP is consumed by this unit's Trait, and +4% ATK (stacks up to 8 times). In <@ba.kw>Integrated Strategies</>, Coin limit +5, gains 1 extra Coin each time DP is consumed by this unit's Trait and gain ATK stack twice"
+            },
+            {
+                "name": "Big Spendthrift",
+                "EN": "Gains 1 Coin upon skill activation (can be spent through skills). While a skill is active, gains 1 Coin each time DP is consumed by this unit's Trait, and +4% ATK (stacks up to 9 <@ba.talpu>(+1)</> times)",
+                "CN": "开启技能时获得1枚金币(可用于技能消耗)，技能期间每次特性消耗费用时获得1枚金币，并提升自身4%的攻击力(最多叠加9<@ba.talpu>(+1)</>次)",
+                "mod": "开启技能时获得1枚金币(可用于技能消耗)，技能期间每次特性消耗费用时获得1枚金币，并提升自身4%的攻击力(最多叠加9<@ba.talpu>(+1)</>次)，在<@ba.kw>集成战略</>中金币上限+5，特性消耗费用时额外获得1枚金币并叠加2次攻击力",
+                "upgradeDescription": "Gains 1 Coin upon skill activation (can be spent through skills). While a skill is active, gains 1 Coin each time DP is consumed by this unit's Trait, and +4% ATK (stacks up to 9 <@ba.talpu>(+1)</> times). In <@ba.kw>Integrated Strategies</>, Coin limit +5, gains 1 extra Coin each time DP is consumed by this unit's Trait and gain ATK stack twice"
+            }
+        ],
+        [
+            {
+                "name": "Big Spendthrift",
+                "EN": "Gains 1 Coin upon skill activation (can be spent through skills). While a skill is active, gains 1 Coin each time DP is consumed by this unit's Trait, and +4% ATK (stacks up to 8 times)",
+                "CN": "开启技能时获得1枚金币(可用于技能消耗)，技能期间每次特性消耗费用时获得1枚金币，并提升自身4%的攻击力(最多叠加8次)",
+                "mod": "开启技能时获得1枚金币(可用于技能消耗)，技能期间每次特性消耗费用时获得1枚金币，并提升自身4%的攻击力(最多叠加8次)，在<@ba.kw>集成战略</>中金币上限+5，每有1源石锭攻击力叠加上限+1次(最多60次)，特性消耗费用时额外获得1枚金币并叠加3次攻击力",
+                "upgradeDescription": "Gains 1 Coin upon skill activation (can be spent through skills). While a skill is active, gains 1 Coin each time DP is consumed by this unit's Trait, and +4% ATK (stacks up to 8 times). In <@ba.kw>Integrated Strategies</>, Coin limit +5, maximum ATK stack +1 for each Originium Ingot in possession (up to 60 additional stacks), gains 1 extra Coin each time DP is consumed by this unit's Trait and gain ATK stack thrice"
+            },
+            {
+                "name": "Big Spendthrift",
+                "EN": "Gains 1 Coin upon skill activation (can be spent through skills). While a skill is active, gains 1 Coin each time DP is consumed by this unit's Trait, and +4% ATK (stacks up to 9 <@ba.talpu>(+1)</> times)",
+                "CN": "开启技能时获得1枚金币(可用于技能消耗)，技能期间每次特性消耗费用时获得1枚金币，并提升自身4%的攻击力(最多叠加9<@ba.talpu>(+1)</>次)",
+                "mod": "开启技能时获得1枚金币(可用于技能消耗)，技能期间每次特性消耗费用时获得1枚金币，并提升自身4%的攻击力(最多叠加9<@ba.talpu>(+1)</>次)，在<@ba.kw>集成战略</>中金币上限+5，每有1源石锭攻击力叠加上限+1次(最多60次)，特性消耗费用时额外获得1枚金币并叠加3次攻击力",
+                "upgradeDescription": "Gains 1 Coin upon skill activation (can be spent through skills). While a skill is active, gains 1 Coin each time DP is consumed by this unit's Trait, and +4% ATK (stacks up to 9 <@ba.talpu>(+1)</> times). In <@ba.kw>Integrated Strategies</>, Coin limit +5, maximum ATK stack +1 for each Originium Ingot in possession (up to 60 additional stacks), gains 1 extra Coin each time DP is consumed by this unit's Trait and gain ATK stack thrice"
+            }
+        ]
+    ],
+    "uniequip_003_pepe": [
+        [
+            {
+                "name": "Perfuse With Lotus",
+                "EN": "When deployed, all [Guard] Operators gain +16% ATK",
+                "CN": "在场时，所有[近卫]干员的攻击力+16%",
+                "mod": "在场时，所有[近卫]干员的攻击力+16%，在<@ba.kw>生息演算</>中，部署时获得宝箱处的视野，每次攻击对所有近卫干员所在位置产生相当于攻击力50%的余震",
+                "upgradeDescription": "When deployed, all [Guard] Operators gain +16% ATK. In <@ba.kw>Reclamation Algorithm</>, when deployed, reveal Treasure chest location. Attack create 50% ATK shockwave on all [Guard] operators"
+            },
+            {
+                "name": "Perfuse With Lotus",
+                "EN": "When deployed, all [Guard] Operators gain +20% <@ba.talpu>(+4%)</> ATK",
+                "CN": "在场时，所有[近卫]干员的攻击力+20%<@ba.talpu>(+4%)</>",
+                "mod": "在场时，所有[近卫]干员的攻击力+20%<@ba.talpu>(+4%)</>，在<@ba.kw>生息演算</>中，部署时获得宝箱处的视野，每次攻击对所有近卫干员所在位置产生相当于攻击力50%的余震",
+                "upgradeDescription": "When deployed, all [Guard] Operators gain +20% <@ba.talpu>(+4%)</> ATK. In <@ba.kw>Reclamation Algorithm</>, when deployed, reveal Treasure chest location. Attack create 50% ATK shockwave on all [Guard] operators"
+            }
+        ],
+        [
+            {
+                "name": "Perfuse With Lotus",
+                "EN": "When deployed, all [Guard] Operators gain +16% ATK",
+                "CN": "在场时，所有[近卫]干员的攻击力+16%",
+                "mod": "在场时，所有[近卫]干员的攻击力+16%，在<@ba.kw>生息演算</>中，部署时获得宝箱处的视野，每次攻击对所有近卫干员所在位置产生相当于攻击力50%的余震，主目标为资源时，对所有相连的资源也产生一次相当于攻击力50%的余震(最多触发10次)",
+                "upgradeDescription": "When deployed, all [Guard] Operators gain +16% ATK. In <@ba.kw>Reclamation Algorithm</>, when deployed, reveal Treasure chest location. Attack create 50% ATK shockwave on all [Guard] operators. When has resource as Primary target. create 50% ATK shockwave on all connected resources (up to 10 resources)"
+            },
+            {
+                "name": "Perfuse With Lotus",
+                "EN": "When deployed, all [Guard] Operators gain +20% <@ba.talpu>(+4%)</> ATK",
+                "CN": "在场时，所有[近卫]干员的攻击力+20%<@ba.talpu>(+4%)</>",
+                "mod": "在场时，所有[近卫]干员的攻击力+20%<@ba.talpu>(+4%)</>，在<@ba.kw>生息演算</>中，部署时获得宝箱处的视野，每次攻击对所有近卫干员所在位置产生相当于攻击力50%的余震，主目标为资源时，对所有相连的资源也产生一次相当于攻击力50%的余震(最多触发10次)",
+                "upgradeDescription": "When deployed, all [Guard] Operators gain +20% <@ba.talpu>(+4%)</> ATK. In <@ba.kw>Reclamation Algorithm</>, when deployed, reveal Treasure chest location. Attack create 50% ATK shockwave on all [Guard] operators. When has resource as Primary target. create 50% ATK shockwave on all connected resources (up to 10 resources)"
+            }
+        ]
+    ],
+    "uniequip_002_haruka": [
+        [
+            {
+                "name": "扶摇花火",
+                "CN": "浮泡破碎时，为所在的单位治疗相当于遥攻击力25%的生命值",
+                "mod": "浮泡破碎时，为所在的单位治疗相当于遥攻击力25%的生命值，并有10%的概率回复1点技力",
+                "upgradeDescription": "When Bubble pop, Bubble operator recovery HP by 25% ATK and has 10% chance to recover 1 SP"
+            },
+            {
+                "name": "扶摇花火",
+                "CN": "浮泡破碎时，为所在的单位治疗相当于遥攻击力28%<@ba.talpu>(+3%)</>的生命值",
+                "mod": "浮泡破碎时，为所在的单位治疗相当于遥攻击力28%<@ba.talpu>(+3%)</>的生命值，并有10%的概率回复1点技力",
+                "upgradeDescription": "When Bubble pop, Bubble operator recovery HP by 28%<@ba.talpu>(+3%)</> ATK and has 10% chance to recover 1 SP"
+            }
+        ],
+        [
+            {
+                "name": "扶摇花火",
+                "CN": "浮泡破碎时，为所在的单位治疗相当于遥攻击力25%的生命值",
+                "mod": "浮泡破碎时，为所在的单位治疗相当于遥攻击力25%的生命值，并有20%的概率回复1点技力",
+                "upgradeDescription": "When Bubble pop, Bubble operator recovery HP by 25% ATK and has 20% chance to recover 1 SP"
+            },
+            {
+                "name": "扶摇花火",
+                "CN": "浮泡破碎时，为所在的单位治疗相当于遥攻击力28%<@ba.talpu>(+3%)</>的生命值",
+                "mod": "浮泡破碎时，为所在的单位治疗相当于遥攻击力28%<@ba.talpu>(+3%)</>的生命值，并有20%的概率回复1点技力",
+                "upgradeDescription": "When Bubble pop, Bubble operator recovery HP by 28%<@ba.talpu>(+3%)</> ATK and has 20% chance to recover 1 SP"
+            }
+        ]
     ]
 }

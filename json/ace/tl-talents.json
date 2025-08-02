@@ -8745,17 +8745,17 @@
         [
             {
                 "name": "卡带里的灵感",
-                "descCN": "可以使用3个召唤物（最多同时部署3个），功能随技能选择而改变",
+                "descCN": "可以使用3个召唤物(最多同时部署3个)，功能随技能选择而改变",
                 "desc": "Can use up to 3 summons (max 3 deployed at once). Summons’ effect changes based upon Skill"
             },
             {
                 "name": "卡带里的灵感",
-                "descCN": "可以使用4个召唤物（最多同时部署3个），功能随技能选择而改变",
+                "descCN": "可以使用4个召唤物(最多同时部署3个)，功能随技能选择而改变",
                 "desc": "Can use up to 4 summons (max 3 deployed at once). Summons’ effect changes based upon Skill"
             },
             {
                 "name": "卡带里的灵感",
-                "descCN": "可以使用5个召唤物（最多同时部署3个），功能随技能选择而改变",
+                "descCN": "可以使用5个召唤物(最多同时部署3个)，功能随技能选择而改变",
                 "desc": "Can use up to 5 summons (max 3 deployed at once). Summons’ effect changes based upon Skill"
             }
         ],
@@ -8769,6 +8769,116 @@
                 "name": "加油~",
                 "descCN": "电弧的召唤物获得相当于其自身15％<@ba.talpu>(+3％)</>攻击力、防御力、生命值的<$ba.inspire>鼓舞</>效果",
                 "desc": "Raidian's summons gain <$ba.inspire>Inspiration</> equal to 15％<@ba.talpu>(+3％)</> of Raidian's ATK, DEF and Max HP"
+            }
+        ]
+    ],
+	"char_1044_hsgma2": [
+        [
+            {
+                "name": "业火",
+                "descCN": "生命降至0时进入“我执”：期间不成为其他角色的治疗目标，受到的伤害会继续积累，积累至生命上限的100%时被击倒，5秒内未受到伤害时，每秒回复5%生命，生命大于0时退出“我执”",
+                "desc": "When HP down to 0, enter \"Self\" state: During this period, cannot be healed by allies and accumulate damage received. When accumulate damage higher than 100% Max HP, defeated. When not receive any damage for 5 seconds, recover 5% Max HP per seconds. When HP more than 0, exist \"Self\" state."
+            },
+            {
+                "name": "业火",
+                "descCN": "生命降至0时进入“我执”：期间不成为其他角色的治疗目标，受到的伤害会继续积累，积累至生命上限的100%时被击倒，4<@ba.talpu>(-1)</>秒内未受到伤害时，每秒回复5%生命，生命大于0时退出“我执”",
+                "desc": "When HP down to 0, enter \"Self\" state: During this period, cannot be healed by allies and accumulate damage received. When accumulate damage higher than 100% Max HP, defeated. When not receive any damage for 4<@ba.talpu>(-1)</> seconds, recover 5% Max HP per seconds. When HP more than 0, exist \"Self\" state."
+            },
+            {
+                "name": "业火",
+                "descCN": "生命降至0时进入“我执”：期间不成为其他角色的治疗目标，受到的伤害会继续积累，积累至生命上限的200%时被击倒，5秒内未受到伤害时，每秒回复5%生命，生命大于0时退出“我执”",
+                "desc": "When HP down to 0, enter \"Self\" state: During this period, cannot be healed by allies and accumulate damage received. When accumulate damage higher than 200% Max HP, defeated. When not receive any damage for 5 seconds, recover 5% Max HP per seconds. When HP more than 0, exist \"Self\" state."
+            },
+            {
+                "name": "业火",
+                "descCN": "生命降至0时进入“我执”：期间不成为其他角色的治疗目标，受到的伤害会继续积累，积累至生命上限的200%时被击倒，4<@ba.talpu>(-1)</>秒内未受到伤害时，每秒回复5%生命，生命大于0时退出“我执”",
+                "desc": "When HP down to 0, enter \"Self\" state: During this period, cannot be healed by allies and accumulate damage received. When accumulate damage higher than 200% Max HP, defeated. When not receive any damage for 4<@ba.talpu>(-1)</> seconds, recover 5% Max HP per seconds. When HP more than 0, exist \"Self\" state."
+            }
+        ],
+        [
+            {
+                "name": "鬼之架势",
+                "descCN": "在场时，自身获得最高+50法术抗性和35%攻击力的<$ba.berserk>坚忍</>(损失70%生命值时达到最大加成)",
+                "desc": "Gains up to +35% ATK and +50 RES <$ba.berserk>Tenacity</> (reaches maximum bonus when losing 70% Max HP) "
+            }
+        ]
+    ],
+    "char_4202_haruka": [
+        [
+            {
+                "name": "浮光泡影",
+                "descCN": "每过一个攻击间隔，使范围内一名友方单位获得10%<$ba.protect>庇护</>的浮泡，浮泡在受到敌方伤害的短暂延迟后破碎",
+                "desc": "Every attack, grant 10% <$ba.protect>Sanctuary</> Bubble to operator in Attack Range. When Bubble operator take damage, Bubble pop after short delay"
+            },
+            {
+                "name": "浮光泡影",
+                "descCN": "每过一个攻击间隔，使范围内一名友方单位获得20%<$ba.protect>庇护</>的浮泡，浮泡在受到敌方伤害的短暂延迟后破碎",
+                "desc": "Every attack, grant 20% <$ba.protect>Sanctuary</> Bubble to operator in Attack Range. When Bubble operator take damage, Bubble pop after short delay"
+            },
+            {
+                "name": "浮光泡影",
+                "descCN": "每过一个攻击间隔，使范围内一名友方单位获得30%<$ba.protect>庇护</>的浮泡，浮泡在受到敌方伤害的短暂延迟后破碎",
+                "desc": "Every attack, grant 30% <$ba.protect>Sanctuary</> Bubble to operator in Attack Range. When Bubble operator take damage, Bubble pop after short delay"
+            }
+        ],
+        [
+            {
+                "name": "扶摇花火",
+                "descCN": "浮泡破碎时，为所在的单位治疗相当于遥攻击力25%的生命值",
+                "desc": "When Bubble pop, Bubble operator recovery HP by 25% ATK"
+            },
+            {
+                "name": "扶摇花火",
+                "descCN": "浮泡破碎时，为所在的单位治疗相当于遥攻击力28%<@ba.talpu>(+3%)</>的生命值",
+                "desc": "When Bubble pop, Bubble operator recovery HP by 28%<@ba.talpu>(+3%)</> ATK"
+            }
+        ]
+    ],
+    "char_4199_makiri": [
+        [
+            {
+                "name": "慢手有筹",
+                "descCN": "在战场停留30秒后，仅一次使场上与待部署区的所有重装和辅助干员攻击力+5%",
+                "desc": "After Matsukiri has been deployed for 30 seconds, [Defender] and [Supporter] operators on the field and Deployment Waiting Zone ATK+5% once"
+            },
+            {
+                "name": "慢手有筹",
+                "descCN": "在战场停留30秒后，仅一次使场上与待部署区的所有重装和辅助干员攻击力+7%<@ba.talpu>(+2%)</>",
+                "desc": "After Matsukiri has been deployed for 30 seconds, [Defender] and [Supporter] operators on the field and Deployment Waiting Zone ATK+7%<@ba.talpu>(+2%)</> once"
+            },
+            {
+                "name": "慢手有筹",
+                "descCN": "在战场停留30秒后，仅一次使场上与待部署区的所有重装和辅助干员攻击力+10%",
+                "desc": "After Matsukiri has been deployed for 30 seconds, [Defender] and [Supporter] operators on the field and Deployment Waiting Zone ATK+10% once"
+            },
+            {
+                "name": "慢手有筹",
+                "descCN": "在战场停留30秒后，仅一次使场上与待部署区的所有重装和辅助干员攻击力+12%<@ba.talpu>(+2%)</>",
+                "desc": "After Matsukiri has been deployed for 30 seconds, [Defender] and [Supporter] operators on the field and Deployment Waiting Zone ATK+12%<@ba.talpu>(+2%)</> once"
+            }
+        ]
+    ],
+    "char_4203_kichi": [
+        [
+            {
+                "name": "好运连击！",
+                "descCN": "上场后每击倒过一种敌人，自身造成的伤害+6%，最多叠加2次",
+                "desc": "After deployed, damage dealt +6% for every unique enemy she defeated (can stack 2 times)"
+            },
+            {
+                "name": "好运连击！",
+                "descCN": "上场后每击倒过一种敌人，自身造成的伤害+7%<@ba.talpu>(+1%)</>，最多叠加2次",
+                "desc": "After deployed, damage dealt +7%<@ba.talpu>(+1%)</> for every unique enemy she defeated (can stack 2 times)"
+            },
+            {
+                "name": "好运连击！",
+                "descCN": "上场后每击倒过一种敌人，自身造成的伤害+6%，最多叠加3次",
+                "desc": "After deployed, damage dealt +6% for every unique enemy she defeated (can stack 3 times)"
+            },
+            {
+                "name": "好运连击！",
+                "descCN": "上场后每击倒过一种敌人，自身造成的伤害+7%<@ba.talpu>(+1%)</>，最多叠加3次",
+                "desc": "After deployed, damage dealt +7%<@ba.talpu>(+1%)</> for every unique enemy she defeated (can stack 3 times)"
             }
         ]
     ]

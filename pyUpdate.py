@@ -180,7 +180,7 @@ def update_char_TraitSkillTalent(new_char_name : str) :
                                 [
                                     {
                                         "name"  : candidate["name"],
-                                        "descCN": candidate['description'],
+                                        "descCN": parentheses(candidate['description']),
                                         "desc"  : ""
                                     } for candidate in talent['candidates'] if not candidate["isHideTalent"]
                                 ]  for talent in json_char[new_char_id]["talents"] 
@@ -192,7 +192,7 @@ def update_char_TraitSkillTalent(new_char_name : str) :
         if skill_id not in json_skillTL.keys():
             skill_tl[skill_id] = {
                                     "name"  : json_skill[skill_id]["levels"][0]["name"],
-                                    "desc"  : [json_skill[skill_id]["levels"][x]["description"] for x in range(len(json_skill[skill_id]["levels"]))]
+                                    "desc"  : [parentheses(json_skill[skill_id]["levels"][x]["description"]) for x in range(len(json_skill[skill_id]["levels"]))]
                                 }
     
     ## Token Find
@@ -206,11 +206,11 @@ def update_char_TraitSkillTalent(new_char_name : str) :
                     skill_id = skill["skillId"]
                     skill_tl[skill_id] = {
                                             "name"  : json_skill[skill_id]["levels"][0]["name"],
-                                            "desc"  : [json_skill[skill_id]["levels"][x]["description"] if len(json_skill[skill_id]["levels"]) == 10 else json_skill[skill_id]["levels"][0]["description"] for x in range(10)]
+                                            "desc"  : [parentheses(json_skill[skill_id]["levels"][x]["description"]) if len(json_skill[skill_id]["levels"]) == 10 else json_skill[skill_id]["levels"][0]["description"] for x in range(10)]
                                         }
 
 def parentheses(desc : str) -> str :
-    return desc.replace("（", "(").replace("）", ")").replace("【", "[").replace("】", "]")
+    return desc.replace("（", "(").replace("）", ")").replace("【", "[").replace("】", "]").replace("；","; ")
 
 #########################################################################################################
 # Chars
