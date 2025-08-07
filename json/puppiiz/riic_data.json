@@ -1921,7 +1921,7 @@
             "description": "When this Operator is assigned to the Workshop to process <@cc.kw>Elite materials</>, reduces the Morale consumed by all corresponding formulas that cost <@cc.kw>4</> Morale by <@cc.vup>-2</>"
         },
         "workshop_formula_cost3[102]": {
-            "buffName": "长生的余裕",
+            "buffName": "Surfeit of Years",
             "skillIcon": "bskill_ws_evolve_cost",
             "desc": "进驻加工站加工<@cc.kw>精英材料</>时，心情消耗为<@cc.kw>2</>的配方全部<@cc.vup>-1</>心情消耗",
             "description": "When this Operator is assigned to the Workshop to process <@cc.kw>Elite materials</>, reduces the Morale consumed by all corresponding formulas that cost <@cc.kw>2</> Morale by <@cc.vup>-1</>"
@@ -2155,7 +2155,7 @@
             "description": "When this Operator is assigned to the Workshop to process <@cc.kw>elite material</>, the production rate of byproduct increases by <@cc.vup>80%</>"
         },
         "workshop_formula_probability[117]": {
-            "buffName": "熟手的尊严",
+            "buffName": "Artisan's Dignity",
             "skillIcon": "bskill_ws_evolve2",
             "desc": "进驻加工站加工<@cc.kw>精英材料</>时，副产品的产出概率提升<@cc.vup>75%</>",
             "description": "When this Operator is assigned to the Workshop to process <@cc.kw>elite material</>, the production rate of byproduct increases by <@cc.vup>75%</>"
@@ -3163,13 +3163,13 @@
             "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.5</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); furthermore, self Morale recovered per hour <@cc.vup>+0.25</>"
         },
         "dorm_hireToRecAll[001]": {
-            "buffName": "无瑕心·α",
+            "buffName": "Flawless Heart α",
             "skillIcon": "bskill_dorm_hireToRecAll2",
             "desc": "进驻宿舍时，该宿舍内所有干员心情每小时恢复<@cc.vup>+0.1</>，同时每个招募位（不包含初始招募位）额外<@cc.vup>+0.05</>恢复效果（叠加后的最终值同种效果取最高）",
             "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.1</> Morale per hour to all Operators assigned to that Dormitory, and every recruit slot (excluding initial slot), restores another <@cc.vup>+0.05</> (Only the strongest stacked effect of this type takes place)"
         },
         "dorm_hireToRecAll[021]": {
-            "buffName": "无瑕心·β",
+            "buffName": "Flawless Heart β",
             "skillIcon": "bskill_dorm_hireToRecAll3",
             "desc": "进驻宿舍时，该宿舍内所有干员心情每小时恢复<@cc.vup>+0.1</>，同时每个招募位（不包含初始招募位）额外<@cc.vup>+0.1</>恢复效果（叠加后的最终值同种效果取最高）",
             "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.1</> Morale per hour to all Operators assigned to that Dormitory, and every recruit slot (excluding initial slot), restores another <@cc.vup>+0.1</> (Only the strongest stacked effect of this type takes place)"

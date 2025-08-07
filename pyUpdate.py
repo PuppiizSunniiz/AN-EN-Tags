@@ -67,7 +67,7 @@ json_skillTL        =   json_load("json/ace/tl-skills.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS : list[str] = ["Hoshiguma the Breacher", "Haruka", "Matsukiri", "Kichisei"] # "", 
+NEW_CHARS : list[str] = [] # "", 
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS : list[str] = [] # "",
@@ -274,14 +274,14 @@ with open("update/tl-skill.json", "w", encoding = "utf-8") as filepath :
 # Mats
 #########################################################################################################
 #akmatuses.html
-mat_button = []
+mat_button : list[str] = []
 for new_mat in NEW_MATS:
     mat_button.append(f'<button type="button" onclick="clickBtnTag(this)" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 button-tag" data-toggle="tooltip" data-placement="top" title="{json_item["items"][new_mat]["name"]}" mat-id="{new_mat}"></button>')
 
 mat_button.sort(reverse = False,key = lambda new_mat : new_mat.split("\"")[-2][0:-1]) #sort mat id
 mat_button.sort(reverse = True, key = lambda new_mat : new_mat.split("\"")[-2][-1]) #sort rarity
 
-with open("update/akmatuses.txt", "w", encoding="utf-8") as writer:
+with open("update/akmatuses.txt", "w", encoding = "utf-8") as writer:
     writer.write("\n\n".join(mat_button))
 
 drop_parse = {
@@ -344,7 +344,7 @@ for mat_data in json_akmaterial:
         mat_data.pop(key)
         mat_data[key] = temp
 
-with open("json/akmaterial.json", "w", encoding="utf-8") as filepath :
+with open("json/akmaterial.json", "w", encoding = "utf-8") as filepath :
     json.dump(json_akmaterial, filepath, indent = 4, ensure_ascii = False)
 
 ##tl-item.json
@@ -365,7 +365,7 @@ for mat_data in json_tl_item:
         mat_data[key] = temp
     
 
-with open("json/tl-item.json", "w", encoding="utf-8") as filepath :
+with open("json/tl-item.json", "w", encoding = "utf-8") as filepath :
     json.dump(json_tl_item, filepath, indent = 4, ensure_ascii = False)
 
 #########################################################################################################
@@ -426,7 +426,7 @@ for mod in json_temp_mod.keys():
 for mod in poplist:
     json_temp_mod.pop(mod)
 
-with open("json/tl-module.json", "w", encoding="utf-8") as filepath :
+with open("json/tl-module.json", "w", encoding = "utf-8") as filepath :
     json.dump(json_temp_mod, filepath, indent = 4, ensure_ascii = False)
 
 #########################################################################################################
