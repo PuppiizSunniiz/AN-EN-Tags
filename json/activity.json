@@ -1,5 +1,10 @@
 {
     "Dict": {
+        "act35sre": {
+            "nameCN": "太阳甩在身后·复刻",
+            "nameEN": "Adventure That Cannot Wait for the Sun - Rerun",
+            "startCN": 1756065600
+        },
         "act44side": {
             "nameCN": "墟",
             "nameEN": "Ato",
@@ -955,6 +960,11 @@
             "nameEN": "尚蜀夜市",
             "startCN": -1
         },
+        "tower_n_19": {
+            "nameCN": "艺术馆旧址",
+            "nameEN": "艺术馆旧址",
+            "startCN": -1
+        },
         "tower_n_01": {
             "nameCN": "钢铁萝卜矿场",
             "nameEN": "Iron Carrot Mine",
@@ -1064,6 +1074,11 @@
             "nameCN": "净罪作战",
             "nameEN": "CCBP#03 : Battleplan Extinguished Sins",
             "startCN": 1738742400
+        },
+        "CCBP#04": {
+            "nameCN": "弧光作战",
+            "nameEN": "CCBP#04 : Battleplan Arclight",
+            "startCN": 1755158400
         },
         "IS#1": {
             "nameCN": "刻俄柏的灰蕈迷境",
@@ -2031,6 +2046,16 @@
             "act44side",
             "Ato",
             1754107200
+        ],
+        [
+            "CCBP#04",
+            "CCBP#04 : Battleplan Arclight",
+            1755158400
+        ],
+        [
+            "act35sre",
+            "Adventure That Cannot Wait for the Sun - Rerun",
+            1756065600
         ]
     ]
 }

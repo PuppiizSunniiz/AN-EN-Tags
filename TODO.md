@@ -69,3 +69,4 @@
 - Add all background element for various L2D
 - token animation list
 - re-add enemies chibi
+- story_review_meta_table.json > trainingCampData > stageData

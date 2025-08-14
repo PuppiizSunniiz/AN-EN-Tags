@@ -3123,7 +3123,7 @@
                     "name": "[AS] : Adventure That Cannot Wait for the Sun",
                     "date": 1722484800,
                     "zone": {
-                        "act35side_zone1": {
+                        "act35sre_zone1": {
                             "name": "Citizen's Garden",
                             "stage": {
                                 "act35side_01": "AS-1 : Warm-Up",
@@ -3138,7 +3138,7 @@
                                 "act35side_09": "AS-9 : Farewell to the Past"
                             }
                         },
-                        "act35side_zone2": {
+                        "act35sre_zone2": {
                             "name": "Harvest Gathering",
                             "stage": {
                                 "act35side_ex01": "AS-EX-1 : Thief and Creditor",
@@ -3159,7 +3159,7 @@
                                 "act35side_ex08#f#": "AS-EX-8 : The Uncrowned King and the Pilgrim <b>(Challenge)</b>"
                             }
                         },
-                        "act35side_zone3": {
+                        "act35sre_zone3": {
                             "name": "Treasure House",
                             "stage": {
                                 "act35side_s01": "AS-S-1 : In New Birth, We Sing Philosophy",
@@ -3655,6 +3655,19 @@
                                 "act44side_ex07#f#": "AT-EX-7 : 盛放的泡沫 <b>(Challenge)</b>",
                                 "act44side_ex08": "AT-EX-8 : 碎裂的梦",
                                 "act44side_ex08#f#": "AT-EX-8 : 碎裂的梦 <b>(Challenge)</b>"
+                            }
+                        },
+                        "act44side_zone3": {
+                            "name": "绝缘石阶",
+                            "stage": {
+                                "act44side_s01": "AT-S-1 : 神签",
+                                "act44side_s01#f#": "AT-S-1 : 神签 <b>(Challenge)</b>",
+                                "act44side_s02": "AT-S-2 : 祓雨",
+                                "act44side_s02#f#": "AT-S-2 : 祓雨 <b>(Challenge)</b>",
+                                "act44side_s03": "AT-S-3 : 逢魔",
+                                "act44side_s03#f#": "AT-S-3 : 逢魔 <b>(Challenge)</b>",
+                                "act44side_s04": "AT-S-4 : 罪业",
+                                "act44side_s04#f#": "AT-S-4 : 罪业 <b>(Challenge)</b>"
                             }
                         }
                     }
@@ -4624,6 +4637,20 @@
                                 "crisis_v2_03-03": "蚀裂冰湖",
                                 "crisis_v2_01-05": "Beach Repair",
                                 "crisis_v2_01-07": "Area 13 Ruins"
+                            }
+                        }
+                    }
+                },
+                "CCBP#04": {
+                    "name": "CCBP#04 : Battleplan Arclight",
+                    "date": 1755158400,
+                    "zone": {
+                        "CCBP#04": {
+                            "name": "CCBP#04 : Battleplan Arclight",
+                            "stage": {
+                                "crisis_v2_04-01": "滞空焦点 (Main)",
+                                "crisis_v2_04-03": "熔炉检修口",
+                                "crisis_v2_04-05": "巫诅骸地"
                             }
                         }
                     }
@@ -6139,6 +6166,23 @@
                             }
                         }
                     }
+                },
+                "tower_n_19": {
+                    "name": "艺术馆旧址",
+                    "date": -1,
+                    "zone": {
+                        "tower_n_19": {
+                            "name": "艺术馆旧址",
+                            "stage": {
+                                "lt_19_01": "LT-1 : 子弹烈酒",
+                                "lt_19_02": "LT-2 : 加工后厨",
+                                "lt_19_03": "LT-3 : 控温锅炉",
+                                "lt_19_04": "LT-4 : 冷鲜货柜",
+                                "lt_19_05": "LT-5 : 滋滋烤架",
+                                "lt_19_06": "LT-6 : 特别顾客"
+                            }
+                        }
+                    }
                 }
             }
         },
@@ -6741,6 +6785,7 @@
         "tower_n_16": "Yumen Market",
         "tower_n_17": "Barren Beasts Concert Hall",
         "tower_n_18": "尚蜀夜市",
+        "tower_n_19": "艺术馆旧址",
         "tower_n_01": "Iron Carrot Mine",
         "tower_n_02": "Toron Mine",
         "tower_n_03": "Glebe Mining Platform",
@@ -6765,6 +6810,7 @@
         "CCBP#01": "CCBP#01 : Battleplan Pyrolysis",
         "CCBP#02": "CCBP#02 : Battleplan Underdawn",
         "CCBP#03": "CCBP#03 : Battleplan Extinguished Sins",
+        "CCBP#04": "CCBP#04 : Battleplan Arclight",
         "IS#1": "IS#1 : Ceobe's Fungimist",
         "IS#2": "IS#2 : Phantom & Crimson Solitaire",
         "IS#3": "IS#3 : Mizuki & Caerula Arbor",
@@ -9729,6 +9775,11 @@
                 "tower_n_16": {
                     "tower_n_16": [
                         "lt_16_03"
+                    ]
+                },
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_04"
                     ]
                 },
                 "tower_n_02": {
@@ -18557,6 +18608,11 @@
                         "lt_15_06"
                     ]
                 },
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_05"
+                    ]
+                },
                 "tower_n_02": {
                     "tower_n_02": [
                         "lt_02_05"
@@ -18820,6 +18876,11 @@
                 "tower_n_14": {
                     "tower_n_14": [
                         "lt_14_05"
+                    ]
+                },
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_05"
                     ]
                 },
                 "tower_n_01": {
@@ -22830,7 +22891,7 @@
             },
             "sidestory": {
                 "act35side": {
-                    "act35side_zone2": [
+                    "act35sre_zone2": [
                         "act35side_ex05",
                         "act35side_ex05#f#"
                     ]
@@ -23355,6 +23416,11 @@
                     "tower_n_13": [
                         "lt_13_01"
                     ]
+                },
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_02"
+                    ]
                 }
             },
             "cc": {
@@ -23475,6 +23541,11 @@
                 "tower_n_13": {
                     "tower_n_13": [
                         "lt_13_06"
+                    ]
+                },
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_02"
                     ]
                 }
             },
@@ -23676,6 +23747,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_02"
+                    ]
+                }
+            },
             "is": {
                 "IS#2": {
                     "IS#2 Floor 4": [
@@ -23865,6 +23943,13 @@
                 "camp_r_09": {
                     "camp_r_09": [
                         "camp_r_09"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_02"
                     ]
                 }
             },
@@ -27481,6 +27566,12 @@
                     "PinchOut": [
                         "act38rune_01-03"
                     ]
+                },
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-03",
+                        "crisis_v2_04-03"
+                    ]
                 }
             },
             "is": {
@@ -29873,6 +29964,14 @@
                         "lt_15_05"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-05",
+                        "crisis_v2_04-05"
+                    ]
+                }
             }
         },
         "enemy_1367_dseed": {
@@ -29985,6 +30084,14 @@
                     "tower_n_15": [
                         "lt_15_02",
                         "lt_15_05"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-05",
+                        "crisis_v2_04-05"
                     ]
                 }
             },
@@ -30107,6 +30214,14 @@
                         "lt_15_05"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-05",
+                        "crisis_v2_04-05"
+                    ]
+                }
             }
         },
         "enemy_1370_bmbcar2": {
@@ -30204,6 +30319,14 @@
                         "lt_15_05"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-05",
+                        "crisis_v2_04-05"
+                    ]
+                }
             }
         },
         "enemy_1365_spnwiz": {
@@ -30237,6 +30360,14 @@
                     "act18mini_zone1": [
                         "act18mini_07",
                         "act18mini_07#f#"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-05",
+                        "crisis_v2_04-05"
                     ]
                 }
             }
@@ -30305,6 +30436,14 @@
                 "tower_n_15": {
                     "tower_n_15": [
                         "lt_15_05"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-05",
+                        "crisis_v2_04-05"
                     ]
                 }
             },
@@ -30451,6 +30590,14 @@
                     ]
                 }
             },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-05",
+                        "crisis_v2_04-05"
+                    ]
+                }
+            },
             "ra": {
                 "RA#2": {
                     "RA#2 Field : Food Material": [
@@ -30554,6 +30701,14 @@
                     "act18mini_zone1": [
                         "act18mini_08",
                         "act18mini_08#f#"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-05",
+                        "crisis_v2_04-05"
                     ]
                 }
             }
@@ -33004,6 +33159,16 @@
                         "act44side_ex07#f#",
                         "act44side_ex08",
                         "act44side_ex08#f#"
+                    ],
+                    "act44side_zone3": [
+                        "act44side_s01",
+                        "act44side_s01#f#",
+                        "act44side_s02",
+                        "act44side_s02#f#",
+                        "act44side_s03",
+                        "act44side_s03#f#",
+                        "act44side_s04",
+                        "act44side_s04#f#"
                     ]
                 }
             }
@@ -33101,6 +33266,10 @@
                         "act44side_ex06#f#",
                         "act44side_ex07",
                         "act44side_ex07#f#"
+                    ],
+                    "act44side_zone3": [
+                        "act44side_s02",
+                        "act44side_s02#f#"
                     ]
                 }
             }
@@ -33114,6 +33283,10 @@
                     "act44side_zone2": [
                         "act44side_ex08",
                         "act44side_ex08#f#"
+                    ],
+                    "act44side_zone3": [
+                        "act44side_s04",
+                        "act44side_s04#f#"
                     ]
                 }
             }
@@ -33134,6 +33307,14 @@
                         "act44side_ex07#f#",
                         "act44side_ex08",
                         "act44side_ex08#f#"
+                    ],
+                    "act44side_zone3": [
+                        "act44side_s01",
+                        "act44side_s01#f#",
+                        "act44side_s03",
+                        "act44side_s03#f#",
+                        "act44side_s04",
+                        "act44side_s04#f#"
                     ]
                 }
             }
@@ -33156,6 +33337,14 @@
                         "act44side_ex07#f#",
                         "act44side_ex08",
                         "act44side_ex08#f#"
+                    ],
+                    "act44side_zone3": [
+                        "act44side_s01",
+                        "act44side_s01#f#",
+                        "act44side_s02",
+                        "act44side_s02#f#",
+                        "act44side_s04",
+                        "act44side_s04#f#"
                     ]
                 }
             }
@@ -33174,6 +33363,14 @@
                         "act44side_ex07#f#",
                         "act44side_ex08",
                         "act44side_ex08#f#"
+                    ],
+                    "act44side_zone3": [
+                        "act44side_s01",
+                        "act44side_s01#f#",
+                        "act44side_s02",
+                        "act44side_s02#f#",
+                        "act44side_s03",
+                        "act44side_s03#f#"
                     ]
                 }
             }
@@ -33186,6 +33383,14 @@
                         "act44side_ex02#f#",
                         "act44side_ex07",
                         "act44side_ex07#f#"
+                    ],
+                    "act44side_zone3": [
+                        "act44side_s02",
+                        "act44side_s02#f#",
+                        "act44side_s03",
+                        "act44side_s03#f#",
+                        "act44side_s04",
+                        "act44side_s04#f#"
                     ]
                 }
             }
@@ -33208,6 +33413,14 @@
                         "act44side_ex07#f#",
                         "act44side_ex08",
                         "act44side_ex08#f#"
+                    ],
+                    "act44side_zone3": [
+                        "act44side_s01",
+                        "act44side_s01#f#",
+                        "act44side_s02",
+                        "act44side_s02#f#",
+                        "act44side_s03",
+                        "act44side_s03#f#"
                     ]
                 }
             }
@@ -33226,6 +33439,12 @@
                         "act44side_ex06#f#",
                         "act44side_ex08",
                         "act44side_ex08#f#"
+                    ],
+                    "act44side_zone3": [
+                        "act44side_s03",
+                        "act44side_s03#f#",
+                        "act44side_s04",
+                        "act44side_s04#f#"
                     ]
                 }
             }
@@ -33242,6 +33461,14 @@
                         "act44side_ex07#f#",
                         "act44side_ex08",
                         "act44side_ex08#f#"
+                    ],
+                    "act44side_zone3": [
+                        "act44side_s01",
+                        "act44side_s01#f#",
+                        "act44side_s02",
+                        "act44side_s02#f#",
+                        "act44side_s04",
+                        "act44side_s04#f#"
                     ]
                 }
             }
@@ -35579,6 +35806,11 @@
                         "lt_14_05"
                     ]
                 },
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_05"
+                    ]
+                },
                 "tower_n_02": {
                     "tower_n_02": [
                         "lt_02_07"
@@ -37325,13 +37557,13 @@
             },
             "sidestory": {
                 "act35side": {
-                    "act35side_zone1": [
+                    "act35sre_zone1": [
                         "act35side_03",
                         "act35side_04",
                         "act35side_08",
                         "act35side_09"
                     ],
-                    "act35side_zone3": [
+                    "act35sre_zone3": [
                         "act35side_mo01"
                     ]
                 }
@@ -37355,7 +37587,7 @@
             },
             "sidestory": {
                 "act35side": {
-                    "act35side_zone1": [
+                    "act35sre_zone1": [
                         "act35side_01",
                         "act35side_tr01",
                         "act35side_02",
@@ -37367,7 +37599,7 @@
                         "act35side_08",
                         "act35side_09"
                     ],
-                    "act35side_zone2": [
+                    "act35sre_zone2": [
                         "act35side_ex01",
                         "act35side_ex01#f#",
                         "act35side_ex02",
@@ -37385,7 +37617,7 @@
                         "act35side_ex08",
                         "act35side_ex08#f#"
                     ],
-                    "act35side_zone3": [
+                    "act35sre_zone3": [
                         "act35side_s01",
                         "act35side_s01#f#",
                         "act35side_s02",
@@ -38670,7 +38902,7 @@
             },
             "sidestory": {
                 "act35side": {
-                    "act35side_zone2": [
+                    "act35sre_zone2": [
                         "act35side_ex02",
                         "act35side_ex02#f#",
                         "act35side_ex05",
@@ -38680,7 +38912,7 @@
                         "act35side_ex08",
                         "act35side_ex08#f#"
                     ],
-                    "act35side_zone3": [
+                    "act35sre_zone3": [
                         "act35side_s03",
                         "act35side_s03#f#",
                         "act35side_s04",
@@ -38996,6 +39228,13 @@
                 "camp_r_17": {
                     "camp_r_17": [
                         "camp_r_17"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_05"
                     ]
                 }
             },
@@ -39967,6 +40206,14 @@
                     ]
                 }
             },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-03",
+                        "crisis_v2_04-03"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 Floor 5": [
@@ -40859,6 +41106,13 @@
                         "camp_r_22"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-01"
+                    ]
+                }
             }
         },
         "enemy_1329_cbshld": {
@@ -40911,6 +41165,13 @@
                 "tower_n_17": {
                     "tower_n_17": [
                         "lt_17_02"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-01"
                     ]
                 }
             },
@@ -41121,6 +41382,14 @@
                     ]
                 }
             },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-03",
+                        "crisis_v2_04-03"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 Treasure": [
@@ -41226,6 +41495,13 @@
                     ],
                     "act32side_zone2": [
                         "act32side_mo01"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_05"
                     ]
                 }
             },
@@ -45520,6 +45796,14 @@
                         "act33side_mo01"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-03",
+                        "crisis_v2_04-03"
+                    ]
+                }
             }
         },
         "enemy_1404_msnip_2": {
@@ -48657,6 +48941,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_06"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 Floor 1": [
@@ -49040,6 +49331,11 @@
                     "tower_n_11": [
                         "lt_11_05",
                         "lt_11_06"
+                    ]
+                },
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_04"
                     ]
                 },
                 "tower_n_03": {
@@ -50667,6 +50963,13 @@
                     "tower_n_15": [
                         "lt_15_03"
                     ]
+                },
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_01",
+                        "lt_19_03",
+                        "lt_19_06"
+                    ]
                 }
             },
             "is": {
@@ -50781,6 +51084,13 @@
                         "act32side_ex08",
                         "act32side_ex08#f#",
                         "act32side_mo01"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_05"
                     ]
                 }
             },
@@ -53721,6 +54031,13 @@
                     ]
                 }
             },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-01"
+                    ]
+                }
+            },
             "is": {
                 "IS#4": {
                     "IS#4 Floor 5": [
@@ -53964,6 +54281,11 @@
                     "tower_n_11": [
                         "lt_11_05",
                         "lt_11_06"
+                    ]
+                },
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_04"
                     ]
                 },
                 "tower_n_03": {
@@ -54223,6 +54545,11 @@
                 "tower_n_11": {
                     "tower_n_11": [
                         "lt_11_03"
+                    ]
+                },
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_04"
                     ]
                 },
                 "tower_n_03": {
@@ -54839,6 +55166,14 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_03",
+                        "lt_19_06"
+                    ]
+                }
+            },
             "is": {
                 "IS#4": {
                     "IS#4 Floor 3": [
@@ -54913,6 +55248,11 @@
                 "tower_n_12": {
                     "tower_n_12": [
                         "lt_12_04"
+                    ]
+                },
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_06"
                     ]
                 }
             },
@@ -58164,6 +58504,13 @@
                         "camp_r_17"
                     ]
                 }
+            },
+            "sss": {
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_02"
+                    ]
+                }
             }
         },
         "enemy_1290_duflm_2": {
@@ -58304,6 +58651,11 @@
                     "CCBP#02": [
                         "crisis_v2_01-04"
                     ]
+                },
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-01"
+                    ]
                 }
             },
             "is": {
@@ -58342,6 +58694,13 @@
                 "camp_r_22": {
                     "camp_r_22": [
                         "camp_r_22"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-01"
                     ]
                 }
             }
@@ -58414,6 +58773,13 @@
                 "camp_r_14": {
                     "camp_r_14": [
                         "camp_r_14"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-01"
                     ]
                 }
             },
@@ -58587,6 +58953,13 @@
                     ]
                 }
             },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-01"
+                    ]
+                }
+            },
             "is": {
                 "IS#4": {
                     "IS#4 Floor 3": [
@@ -58702,6 +59075,13 @@
                     ]
                 }
             },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-01"
+                    ]
+                }
+            },
             "is": {
                 "IS#4": {
                     "IS#4 Floor 3": [
@@ -58768,6 +59148,13 @@
                 "camp_r_22": {
                     "camp_r_22": [
                         "camp_r_22"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-01"
                     ]
                 }
             }
@@ -64766,7 +65153,7 @@
         "enemy_10010_sgnja": {
             "sidestory": {
                 "act35side": {
-                    "act35side_zone1": [
+                    "act35sre_zone1": [
                         "act35side_01",
                         "act35side_tr01",
                         "act35side_02",
@@ -64778,7 +65165,7 @@
                         "act35side_08",
                         "act35side_09"
                     ],
-                    "act35side_zone3": [
+                    "act35sre_zone3": [
                         "act35side_mo01"
                     ]
                 }
@@ -64794,14 +65181,14 @@
         "enemy_10011_sgshot": {
             "sidestory": {
                 "act35side": {
-                    "act35side_zone1": [
+                    "act35sre_zone1": [
                         "act35side_01",
                         "act35side_02",
                         "act35side_04",
                         "act35side_08",
                         "act35side_09"
                     ],
-                    "act35side_zone3": [
+                    "act35sre_zone3": [
                         "act35side_mo01"
                     ]
                 }
@@ -64817,7 +65204,7 @@
         "enemy_10012_sgbtle": {
             "sidestory": {
                 "act35side": {
-                    "act35side_zone1": [
+                    "act35sre_zone1": [
                         "act35side_tr01",
                         "act35side_02",
                         "act35side_05",
@@ -64825,7 +65212,7 @@
                         "act35side_08",
                         "act35side_09"
                     ],
-                    "act35side_zone3": [
+                    "act35sre_zone3": [
                         "act35side_mo01"
                     ]
                 }
@@ -64841,13 +65228,13 @@
         "enemy_10013_sgrob": {
             "sidestory": {
                 "act35side": {
-                    "act35side_zone1": [
+                    "act35sre_zone1": [
                         "act35side_04",
                         "act35side_05",
                         "act35side_07",
                         "act35side_09"
                     ],
-                    "act35side_zone3": [
+                    "act35sre_zone3": [
                         "act35side_mo01"
                     ]
                 }
@@ -64863,11 +65250,11 @@
         "enemy_10018_sgrobh": {
             "sidestory": {
                 "act35side": {
-                    "act35side_zone1": [
+                    "act35sre_zone1": [
                         "act35side_05",
                         "act35side_09"
                     ],
-                    "act35side_zone3": [
+                    "act35sre_zone3": [
                         "act35side_mo01"
                     ]
                 }
@@ -64890,11 +65277,11 @@
         "enemy_10014_sgrich": {
             "sidestory": {
                 "act35side": {
-                    "act35side_zone1": [
+                    "act35sre_zone1": [
                         "act35side_06",
                         "act35side_09"
                     ],
-                    "act35side_zone2": [
+                    "act35sre_zone2": [
                         "act35side_ex03",
                         "act35side_ex03#f#"
                     ]
@@ -64911,7 +65298,7 @@
         "enemy_10017_sgass": {
             "sidestory": {
                 "act35side": {
-                    "act35side_zone1": [
+                    "act35sre_zone1": [
                         "act35side_06"
                     ]
                 }
@@ -64927,11 +65314,11 @@
         "enemy_10015_sgbird": {
             "sidestory": {
                 "act35side": {
-                    "act35side_zone1": [
+                    "act35sre_zone1": [
                         "act35side_07",
                         "act35side_09"
                     ],
-                    "act35side_zone3": [
+                    "act35sre_zone3": [
                         "act35side_mo01"
                     ]
                 }
@@ -64947,14 +65334,14 @@
         "enemy_10020_sgcat": {
             "sidestory": {
                 "act35side": {
-                    "act35side_zone1": [
+                    "act35sre_zone1": [
                         "act35side_07"
                     ],
-                    "act35side_zone2": [
+                    "act35sre_zone2": [
                         "act35side_ex07",
                         "act35side_ex07#f#"
                     ],
-                    "act35side_zone3": [
+                    "act35sre_zone3": [
                         "act35side_s01",
                         "act35side_s01#f#"
                     ]
@@ -64975,7 +65362,7 @@
         "enemy_10019_sgmum": {
             "sidestory": {
                 "act35side": {
-                    "act35side_zone1": [
+                    "act35sre_zone1": [
                         "act35side_08",
                         "act35side_09"
                     ]
@@ -64992,14 +65379,14 @@
         "enemy_1558_sgactr": {
             "sidestory": {
                 "act35side": {
-                    "act35side_zone1": [
+                    "act35sre_zone1": [
                         "act35side_09"
                     ],
-                    "act35side_zone2": [
+                    "act35sre_zone2": [
                         "act35side_ex08",
                         "act35side_ex08#f#"
                     ],
-                    "act35side_zone3": [
+                    "act35sre_zone3": [
                         "act35side_s04",
                         "act35side_s04#f#"
                     ]
@@ -65009,7 +65396,7 @@
         "enemy_10010_sgnja_2": {
             "sidestory": {
                 "act35side": {
-                    "act35side_zone2": [
+                    "act35sre_zone2": [
                         "act35side_ex01",
                         "act35side_ex01#f#",
                         "act35side_ex02",
@@ -65027,7 +65414,7 @@
                         "act35side_ex08",
                         "act35side_ex08#f#"
                     ],
-                    "act35side_zone3": [
+                    "act35sre_zone3": [
                         "act35side_s01",
                         "act35side_s01#f#",
                         "act35side_s03",
@@ -65049,13 +65436,13 @@
         "enemy_10014_sgrich_2": {
             "sidestory": {
                 "act35side": {
-                    "act35side_zone2": [
+                    "act35sre_zone2": [
                         "act35side_ex01",
                         "act35side_ex01#f#",
                         "act35side_ex07",
                         "act35side_ex07#f#"
                     ],
-                    "act35side_zone3": [
+                    "act35sre_zone3": [
                         "act35side_s01",
                         "act35side_s01#f#",
                         "act35side_s02",
@@ -65074,7 +65461,7 @@
         "enemy_10017_sgass_2": {
             "sidestory": {
                 "act35side": {
-                    "act35side_zone2": [
+                    "act35sre_zone2": [
                         "act35side_ex02",
                         "act35side_ex02#f#",
                         "act35side_ex03",
@@ -65086,7 +65473,7 @@
                         "act35side_ex08",
                         "act35side_ex08#f#"
                     ],
-                    "act35side_zone3": [
+                    "act35sre_zone3": [
                         "act35side_s01",
                         "act35side_s01#f#",
                         "act35side_s03",
@@ -65108,7 +65495,7 @@
         "enemy_10012_sgbtle_2": {
             "sidestory": {
                 "act35side": {
-                    "act35side_zone2": [
+                    "act35sre_zone2": [
                         "act35side_ex02",
                         "act35side_ex02#f#",
                         "act35side_ex05",
@@ -65116,7 +65503,7 @@
                         "act35side_ex08",
                         "act35side_ex08#f#"
                     ],
-                    "act35side_zone3": [
+                    "act35sre_zone3": [
                         "act35side_s03",
                         "act35side_s03#f#",
                         "act35side_mo01"
@@ -65134,7 +65521,7 @@
         "enemy_10018_sgrobh_2": {
             "sidestory": {
                 "act35side": {
-                    "act35side_zone2": [
+                    "act35sre_zone2": [
                         "act35side_ex03",
                         "act35side_ex03#f#",
                         "act35side_ex04",
@@ -65144,7 +65531,7 @@
                         "act35side_ex08",
                         "act35side_ex08#f#"
                     ],
-                    "act35side_zone3": [
+                    "act35sre_zone3": [
                         "act35side_s01",
                         "act35side_s01#f#",
                         "act35side_s02",
@@ -65175,7 +65562,7 @@
         "enemy_10019_sgmum_2": {
             "sidestory": {
                 "act35side": {
-                    "act35side_zone2": [
+                    "act35sre_zone2": [
                         "act35side_ex05",
                         "act35side_ex05#f#",
                         "act35side_ex06",
@@ -65183,7 +65570,7 @@
                         "act35side_ex08",
                         "act35side_ex08#f#"
                     ],
-                    "act35side_zone3": [
+                    "act35sre_zone3": [
                         "act35side_s01",
                         "act35side_s01#f#",
                         "act35side_s02",
@@ -65216,7 +65603,7 @@
         "enemy_10013_sgrob_2": {
             "sidestory": {
                 "act35side": {
-                    "act35side_zone2": [
+                    "act35sre_zone2": [
                         "act35side_ex06",
                         "act35side_ex06#f#",
                         "act35side_ex07",
@@ -65224,7 +65611,7 @@
                         "act35side_ex08",
                         "act35side_ex08#f#"
                     ],
-                    "act35side_zone3": [
+                    "act35sre_zone3": [
                         "act35side_s01",
                         "act35side_s01#f#",
                         "act35side_s04",
@@ -65243,11 +65630,11 @@
         "enemy_10015_sgbird_2": {
             "sidestory": {
                 "act35side": {
-                    "act35side_zone2": [
+                    "act35sre_zone2": [
                         "act35side_ex08",
                         "act35side_ex08#f#"
                     ],
-                    "act35side_zone3": [
+                    "act35sre_zone3": [
                         "act35side_s02",
                         "act35side_s02#f#",
                         "act35side_mo01"
@@ -65265,7 +65652,7 @@
         "enemy_10011_sgshot_2": {
             "sidestory": {
                 "act35side": {
-                    "act35side_zone3": [
+                    "act35sre_zone3": [
                         "act35side_s01",
                         "act35side_s01#f#",
                         "act35side_mo01"
@@ -67038,6 +67425,14 @@
                         "act33side_mo01"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-03",
+                        "crisis_v2_04-03"
+                    ]
+                }
             }
         },
         "enemy_1418_mmkonm": {
@@ -67184,6 +67579,12 @@
                     "tower_n_15": [
                         "lt_15_03"
                     ]
+                },
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_01",
+                        "lt_19_06"
+                    ]
                 }
             },
             "is": {
@@ -67226,6 +67627,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_01"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 Floor 1": [
@@ -67242,6 +67650,13 @@
                     ],
                     "act32side_zone2": [
                         "act32side_mo01"
+                    ]
+                }
+            },
+            "sss": {
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_05"
                     ]
                 }
             }
@@ -67360,6 +67775,13 @@
                         "act32side_ex04#f#"
                     ]
                 }
+            },
+            "sss": {
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_05"
+                    ]
+                }
             }
         },
         "enemy_1407_hummbd_2": {
@@ -67383,6 +67805,12 @@
                 "tower_n_15": {
                     "tower_n_15": [
                         "lt_15_03"
+                    ]
+                },
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_03",
+                        "lt_19_06"
                     ]
                 }
             }
@@ -69336,6 +69764,12 @@
                     "tower_n_12": [
                         "lt_12_04"
                     ]
+                },
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_03",
+                        "lt_19_06"
+                    ]
                 }
             }
         },
@@ -69384,6 +69818,11 @@
                 "tower_n_12": {
                     "tower_n_12": [
                         "lt_12_04"
+                    ]
+                },
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_06"
                     ]
                 }
             }
@@ -70679,6 +71118,14 @@
                         "camp_r_22"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-01",
+                        "crisis_v2_04-01"
+                    ]
+                }
             }
         },
         "enemy_1333_cbbgen": {
@@ -70693,6 +71140,13 @@
                 "camp_r_22": {
                     "camp_r_22": [
                         "camp_r_22"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#04": {
+                    "CCBP#04": [
+                        "crisis_v2_04-01"
                     ]
                 }
             }
@@ -72726,6 +73180,13 @@
                     ]
                 }
             },
+            "sss": {
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_04"
+                    ]
+                }
+            },
             "cc": {
                 "CC#00": {
                     "CC#00": [
@@ -74454,6 +74915,11 @@
                         "lt_11_03"
                     ]
                 },
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_04"
+                    ]
+                },
                 "tower_n_03": {
                     "tower_n_03": [
                         "lt_03_06"
@@ -74884,6 +75350,11 @@
                 }
             },
             "sss": {
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_06"
+                    ]
+                },
                 "tower_n_01": {
                     "tower_n_01": [
                         "lt_01_02"
@@ -76073,6 +76544,15 @@
                 "tower_n_18": {
                     "tower_n_18": [
                         "lt_18_06"
+                    ]
+                }
+            }
+        },
+        "enemy_6032_fxdjj": {
+            "sss": {
+                "tower_n_19": {
+                    "tower_n_19": [
+                        "lt_19_06"
                     ]
                 }
             }
