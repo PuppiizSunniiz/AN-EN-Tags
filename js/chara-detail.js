@@ -3206,42 +3206,42 @@
         if (!Tokendata.talents || Tokendata.talents.length == 0) return;
 
         Tokendata.talents.forEach(currTalent => {
-            currTalent.candidates.forEach(currCandidate => {
-                console.log("test-test", currCandidate, currCandidate.isHideTalent)
-                var currlevel = parseInt(currCandidate.unlockCondition.level)
-                var currphase = PhaseConvert(currCandidate.unlockCondition.phase)
-                var currpotent = parseInt(currCandidate.requiredPotentialRank)
+            console.log("test-test", currTalent)
+            if (currTalent.candidates){
+                currTalent.candidates.forEach(currCandidate => {
+                    var currlevel = parseInt(currCandidate.unlockCondition.level)
+                    var currphase = PhaseConvert(currCandidate.unlockCondition.phase)
+                    var currpotent = parseInt(currCandidate.requiredPotentialRank)
 
-                if(!talentObject.req.includes(`${currphase}-${currlevel}-${currpotent}`,0)){
-                    talentObject.req.push(`${currphase}-${currlevel}-${currpotent}`)
-                    talentObject.req2.push([currphase,currlevel,currpotent])
-                    talentObject.html[`${currphase}-${currlevel}-${currpotent}`]={req:[currphase,currlevel,currpotent],talents:[]}
+                    if(!talentObject.req.includes(`${currphase}-${currlevel}-${currpotent}`,0)){
+                        talentObject.req.push(`${currphase}-${currlevel}-${currpotent}`)
+                        talentObject.req2.push([currphase,currlevel,currpotent])
+                        talentObject.html[`${currphase}-${currlevel}-${currpotent}`]={req:[currphase,currlevel,currpotent],talents:[]}
 
-                    if(currphase==2&&activeElite<2){
-                        activeElite=2
-                        activeLevel=currlevel
+                        if(currphase==2&&activeElite<2){
+                            activeElite=2
+                            activeLevel=currlevel
+                        }
+                        if(currphase==1&&activeElite<=1){
+                            activeElite=1
+                            if(activeLevel<currlevel){
+                                activeLevel= currlevel
+                            }
+                            if(Tokendata.rarity<=2&&activePotential<currpotent){
+                                activePotential = currpotent
+                            }
+                        }
+                        if(currphase==0&&activeElite<=0){
+                            activeElite=0
+                            if(activeLevel<currlevel){
+                                activeLevel= currlevel
+                            }
+                            if(Tokendata.rarity<=2&&activePotential<currpotent){
+                                activePotential = currpotent
+                            }
+                        }
                     }
-                    if(currphase==1&&activeElite<=1){
-                        activeElite=1
-                        if(activeLevel<currlevel){
-                            activeLevel= currlevel
-                        }
-                        if(Tokendata.rarity<=2&&activePotential<currpotent){
-                            activePotential = currpotent
-                        }
-                    }
-                    if(currphase==0&&activeElite<=0){
-                        activeElite=0
-                        if(activeLevel<currlevel){
-                            activeLevel= currlevel
-                        }
-                        if(Tokendata.rarity<=2&&activePotential<currpotent){
-                            activePotential = currpotent
-                        }
-                    }
-                }
-                lastPotential = currpotent
-            });
+            })}
         });
         
         if (talentObject.req.flat(k => k).length == 0) {
@@ -3306,19 +3306,20 @@
             var currTalentEN = db.charsEN[token]?db.charsEN[token].talents[i]:undefined
             var currTalentTL = db.talentsTL[token]?db.talentsTL[token][i]:undefined
             talentObject.talents[talenttype]=[]
-            for(j=0;j<currTalent.candidates.length;j++){
-                var currCandidate = currTalent.candidates[j]
-                var currCandidateEN = currTalentEN?currTalentEN.candidates[j]:undefined
-                var currCandidateTL = currTalentTL?currTalentTL[j]:undefined
-                var currlevel = parseInt(currCandidate.unlockCondition.level)
-                var currphase = PhaseConvert(currCandidate.unlockCondition.phase)
-                var currpotent = parseInt(currCandidate.requiredPotentialRank)
-                talentObject.req2.forEach(requirements => {
-                    if(requirements[0]>=currphase&&requirements[1]>=currlevel&&requirements[2]>=currpotent){
-                        talentObject.html[`${requirements[0]}-${requirements[1]}-${requirements[2]}`].talents[talenttype]={talent:currCandidate,talentEN:currCandidateEN,talentTL:currCandidateTL}
-                    }
-                });
-
+            if(currTalent.candidates && currTalent.candidates.length){
+                for(j=0;j<currTalent.candidates.length;j++){
+                    var currCandidate = currTalent.candidates[j]
+                    var currCandidateEN = currTalentEN?currTalentEN.candidates[j]:undefined
+                    var currCandidateTL = currTalentTL?currTalentTL[j]:undefined
+                    var currlevel = parseInt(currCandidate.unlockCondition.level)
+                    var currphase = PhaseConvert(currCandidate.unlockCondition.phase)
+                    var currpotent = parseInt(currCandidate.requiredPotentialRank)
+                    talentObject.req2.forEach(requirements => {
+                        if(requirements[0]>=currphase&&requirements[1]>=currlevel&&requirements[2]>=currpotent){
+                            talentObject.html[`${requirements[0]}-${requirements[1]}-${requirements[2]}`].talents[talenttype]={talent:currCandidate,talentEN:currCandidateEN,talentTL:currCandidateTL}
+                        }
+                    });
+                }
             }
             talenttype+=1
         }
