@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Test</title>
+    <script src='https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js'></script>
+    <script>
+        $.holdReady(true);
+
+        const jsonList = {
+            handbookInfo: "./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/handbook_info_table.json",
+        }
+
+        function LoadAllJsonObjects(obj) {
+            let result = {}
+
+            let promises = Object.entries(obj).map(function(url){
+                return $.getJSON(url[1]).then(function (res) {
+                    result[url[0]] = res
+                }).catch(function (e) {
+                    console.error("Failed to load file: " + url[0], e)
+                    result[url[0]] = {}
+                })
+            })
+
+            return Promise.all(promises).then(function(){
+                return result
+            })
+        }
+        
+        var db = {}
+        const birth = {"date": {}, "other": {}}
+        LoadAllJsonObjects(jsonList).then(result => {
+            db = result
+            $.holdReady(false)
+
+            const dict = db.handbookInfo.handbookDict
+            for (const [key, value] of Object.entries(dict)) {
+                const basic_info = value.storyTextAudio[0].stories[0].storyText.split("\n")
+                for (let i=0; i<basic_info.length; ++i) {
+                    if (basic_info[i].trimStart().startsWith("【生日】") === true) {
+                        let date = basic_info[i].trim().slice(4)
+                        if (date.slice(-1) === "日" && date.includes("月") === true) {
+                            date = date.slice(0, -1).split("月")
+                            const month = parseInt(date[0])
+                            const day = parseInt(date[1])
+                            if (birth.date[month] === undefined) {
+                                birth.date[month] = {}
+                            }
+                            if (birth.date[month][day] == undefined) {
+                                birth.date[month][day] = [key]
+                            } else {
+                                birth.date[month][day].push(key)
+                            }
+                        } else {
+                            if (birth.other[date] === undefined) {
+                                birth.other[date] = [key]
+                            } else {
+                                birth.other[date].push(key)
+                            }
+                        }
+                        break
+                    }
+                }
+            }
+            console.log(birth)
+        })
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
