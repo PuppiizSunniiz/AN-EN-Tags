@@ -8881,5 +8881,245 @@
                 "desc": "After deployed, damage dealt +7%<@ba.talpu>(+1%)</> for every unique enemy she defeated (can stack 3 times)"
             }
         ]
+    ],
+	    "char_4182_oblvns": [
+        [
+            {
+                "name": "颂乐音符",
+                "descCN": "丰川祥子可以<$ba.permanentatk>持续攻击</>且攻击会演奏追踪敌人的音符，音符飘出攻击范围一段时间后消失",
+                "desc": "<$ba.permanentatk>Continuous attack</>, each attack become Musical note that tracking on enemy. Musical Note will disappear when out of Attack Range for a while."
+            },
+            {
+                "name": "颂乐音符",
+                "descCN": "丰川祥子可以<$ba.permanentatk>持续攻击</>且攻击会演奏追踪敌人的音符，音符飘出攻击范围一段时间后消失。每存在一个音符，<$ba.mujica>AveMujica</>成员无视敌人2.5%的防御力和1.5%法术抗性(最多叠加至10层)",
+                "desc": "<$ba.permanentatk>Continuous attack</>, each attack become Musical note that tracking on enemy. Musical Note will disappear when out of Attack Range for a while. For every Musical Note exist, every <$ba.mujica>Ave Mujica</> members ignore 2.5% DEF and 1.5% RES (up to 10 stacks)"
+            },
+            {
+                "name": "颂乐音符",
+                "descCN": "丰川祥子可以<$ba.permanentatk>持续攻击</>且攻击会演奏追踪敌人的音符，音符飘出攻击范围一段时间后消失。每存在一个音符，<$ba.mujica>AveMujica</>成员无视敌人3%的防御力和2%法术抗性(最多叠加至10层)",
+                "desc": "<$ba.permanentatk>Continuous attack</>, each attack become Musical note that tracking on enemy. Musical Note will disappear when out of Attack Range for a while. For every Musical Note exist, every <$ba.mujica>Ave Mujica</> members ignore 3% DEF and 2% RES (up to 10 stacks)"
+            }
+        ],
+        [
+            {
+                "name": "毋畏遗忘",
+                "descCN": "对敌人造成伤害时使<$ba.fever>Fever</>+1",
+                "desc": "When damages enemy, <$ba.fever>Fever</>+1"
+            },
+            {
+                "name": "毋畏遗忘",
+                "descCN": "对敌人造成伤害时使<$ba.fever>Fever</>+2; 其他<$ba.mujica>AveMujica</>成员的攻击范围若与自身原本攻击范围重合，则将其视作攻击范围的延伸; 攻击范围内干员攻击速度+5",
+                "desc": "When damages enemy, <$ba.fever>Fever</>+2; If Attack Range of other <$ba.mujica>Ave Mujica</> member overlap with sakiko's original Attack Range, treat theirs as sakiko 's Attack Range; Operator within Attack Range ASPD+5"
+            },
+            {
+                "name": "毋畏遗忘",
+                "descCN": "对敌人造成伤害时使<$ba.fever>Fever</>+2; 其他<$ba.mujica>AveMujica</>成员的攻击范围若与自身原本攻击范围重合，则将其视作攻击范围的延伸; 攻击范围内干员攻击速度+9<@ba.talpu>(+4)</>",
+                "desc": "When damages enemy, <$ba.fever>Fever</>+2; If Attack Range of other <$ba.mujica>Ave Mujica</> member overlap with sakiko's original Attack Range, treat theirs as sakiko 's Attack Range; Operator within Attack Range ASPD+9<@ba.talpu>(+4)</>"
+            },
+            {
+                "name": "毋畏遗忘",
+                "descCN": "对敌人造成伤害时使<$ba.fever>Fever</>+3; 其他<$ba.mujica>AveMujica</>成员的攻击范围若与自身原本攻击范围重合，则将其视作攻击范围的延伸; 攻击范围内干员攻击速度+12",
+                "desc": "When damages enemy, <$ba.fever>Fever</>+3; If Attack Range of other <$ba.mujica>Ave Mujica</> member overlap with sakiko's original Attack Range, treat theirs as sakiko 's Attack Range; Operator within Attack Range ASPD+12"
+            },
+            {
+                "name": "毋畏遗忘",
+                "descCN": "对敌人造成伤害时使<$ba.fever>Fever</>+3; 其他<$ba.mujica>AveMujica</>成员的攻击范围若与自身原本攻击范围重合，则将其视作攻击范围的延伸; 攻击范围内干员攻击速度+16<@ba.talpu>(+4)</>",
+                "desc": "When damages enemy, <$ba.fever>Fever</>+3; If Attack Range of other <$ba.mujica>Ave Mujica</> member overlap with sakiko's original Attack Range, treat theirs as sakiko 's Attack Range; Operator within Attack Range ASPD+16<@ba.talpu>(+4)</>"
+            }
+        ]
+    ],
+    "char_4183_mortis": [
+        [
+            {
+                "name": "另一个“她”",
+                "descCN": "若叶睦和<替身>受到物理和法术伤害的30%转化为一半的<$ba.dt.apoptosis>凋亡损伤</>; <替身>不攻击，防御力+5%",
+                "desc": "Convert 30% of Physical damage and Arts damage received by Mutsumi and <Subtitute> to <$ba.dt.apoptosis>Necrosis Damage</> by half amount; <Subtitute> does not attack and DEF+5%."
+            },
+            {
+                "name": "另一个“她”",
+                "descCN": "若叶睦和<替身>受到物理和法术伤害的30%转化为一半的<$ba.dt.apoptosis>凋亡损伤</>; <替身>不攻击，防御力+9%<@ba.talpu>(+4%)</>",
+                "desc": "Convert 30% of Physical damage and Arts damage received by Mutsumi and <Subtitute> to <$ba.dt.apoptosis>Necrosis Damage</> by half amount; <Subtitute> does not attack and DEF+9%<@ba.talpu>(+4%)</>."
+            },
+            {
+                "name": "另一个“她”",
+                "descCN": "若叶睦和<替身>受到物理和法术伤害的30%转化为一半的<$ba.dt.apoptosis>凋亡损伤</>; <替身>不攻击，防御力+10%，<$ba.mujica>AveMujica</>成员攻击时有10%的概率使替身持续时间缩短1秒",
+                "desc": "Convert 30% of Physical damage and Arts damage received by Mutsumi and <Subtitute> to <$ba.dt.apoptosis>Necrosis Damage</> by half amount; <Subtitute> does not attack and DEF+10%. When other <$ba.mujica>Ave Mujica</> member attacks, has 10% chance to reduce <Subtitute> duration by 1 second"
+            },
+            {
+                "name": "另一个“她”",
+                "descCN": "若叶睦和<替身>受到物理和法术伤害的30%转化为一半的<$ba.dt.apoptosis>凋亡损伤</>; <替身>不攻击，防御力+14%<@ba.talpu>(+4%)</>，<$ba.mujica>AveMujica</>成员攻击时有10%的概率使替身持续时间缩短1秒",
+                "desc": "Convert 30% of Physical damage and Arts damage received by Mutsumi and <Subtitute> to <$ba.dt.apoptosis>Necrosis Damage</> by half amount; <Subtitute> does not attack and DEF+14%<@ba.talpu>(+4%)</>. When other <$ba.mujica>Ave Mujica</> member attacks, has 10% chance to reduce <Subtitute> duration by 1 second"
+            },
+            {
+                "name": "另一个“她”",
+                "descCN": "若叶睦和<替身>受到物理和法术伤害的30%转化为一半的<$ba.dt.apoptosis>凋亡损伤</>; <替身>不攻击，防御力+20%，<$ba.mujica>AveMujica</>成员攻击时有20%的概率使替身持续时间缩短1秒",
+                "desc": "Convert 30% of Physical damage and Arts damage received by Mutsumi and <Subtitute> to <$ba.dt.apoptosis>Necrosis Damage</> by half amount; <Subtitute> does not attack and DEF+20%. When other <$ba.mujica>Ave Mujica</> member attacks, has 20% chance to reduce <Subtitute> duration by 1 second"
+            },
+            {
+                "name": "另一个“她”",
+                "descCN": "若叶睦和<替身>受到物理和法术伤害的30%转化为一半的<$ba.dt.apoptosis>凋亡损伤</>; <替身>不攻击，防御力+24%<@ba.talpu>(+4%)</>，<$ba.mujica>AveMujica</>成员攻击时有20%的概率使替身持续时间缩短1秒",
+                "desc": "Convert 30% of Physical damage and Arts damage received by Mutsumi and <Subtitute> to <$ba.dt.apoptosis>Necrosis Damage</> by half amount; <Subtitute> does not attack and DEF+24%<@ba.talpu>(+4%)</>. When other <$ba.mujica>Ave Mujica</> member attacks, has 20% chance to reduce <Subtitute> duration by 1 second"
+            }
+        ],
+        [
+            {
+                "name": "毋畏死亡",
+                "descCN": "自身受到一次伤害或损伤时使<$ba.fever>Fever</>+1",
+                "desc": "When damage enemy or take damage, <$ba.fever>Fever</>+1"
+            },
+            {
+                "name": "毋畏死亡",
+                "descCN": "自身受到一次伤害或损伤时使<$ba.fever>Fever</>+2，在场时<$ba.mujica>AveMujica</>成员生命上限+5%",
+                "desc": "When damage enemy or take damage, <$ba.fever>Fever</>+2. When deployed, <$ba.mujica>Ave Mujica</> member Max HP+5%"
+            },
+            {
+                "name": "毋畏死亡",
+                "descCN": "自身受到一次伤害或损伤时使<$ba.fever>Fever</>+3，在场时<$ba.mujica>AveMujica</>成员生命上限+10%",
+                "desc": "When damage enemy or take damage, <$ba.fever>Fever</>+3. When deployed, <$ba.mujica>Ave Mujica</> member Max HP+10%"
+            }
+        ]
+    ],
+    "char_4184_dolris": [
+        [
+            {
+                "name": "谎言的假面",
+                "descCN": "技能未开启时每5秒治疗攻击范围内生命最低的友方单位相当于攻击力15%的生命; 技能期间优先选择丰川祥子作为治疗目标",
+                "desc": "When skill is not active, heal lowest HP operator in Attack Range by 15% ATK every 5 seconds; When skill is active, prioritize healing Togawa Sakiko instead."
+            },
+            {
+                "name": "谎言的假面",
+                "descCN": "技能未开启时每5秒治疗攻击范围内生命最低的友方单位相当于攻击力20%<@ba.talpu>(+5%)</>的生命; 技能期间优先选择丰川祥子作为治疗目标",
+                "desc": "When skill is not active, heal lowest HP operator in Attack Range by 20%<@ba.talpu>(+5%)</> ATK every 5 seconds; When skill is active, prioritize healing Togawa Sakiko instead."
+            },
+            {
+                "name": "谎言的假面",
+                "descCN": "技能未开启时每4秒治疗攻击范围内生命最低的友方单位相当于攻击力20%的生命; 技能期间优先选择丰川祥子作为治疗目标",
+                "desc": "When skill is not active, heal lowest HP operator in Attack Range by 20% ATK every 4 seconds; When skill is active, prioritize healing Togawa Sakiko instead."
+            },
+            {
+                "name": "谎言的假面",
+                "descCN": "技能未开启时每4秒治疗攻击范围内生命最低的友方单位相当于攻击力25%<@ba.talpu>(+5%)</>的生命; 技能期间优先选择丰川祥子作为治疗目标",
+                "desc": "When skill is not active, heal lowest HP operator in Attack Range by 25%<@ba.talpu>(+5%)</> ATK every 4 seconds; When skill is active, prioritize healing Togawa Sakiko instead."
+            },
+            {
+                "name": "谎言的假面",
+                "descCN": "技能未开启时每4秒治疗攻击范围内生命最低的友方单位相当于攻击力30%的生命; 技能期间优先选择丰川祥子作为治疗目标",
+                "desc": "When skill is not active, heal lowest HP operator in Attack Range by 30% ATK every 4 seconds; When skill is active, prioritize healing Togawa Sakiko instead."
+            },
+            {
+                "name": "谎言的假面",
+                "descCN": "技能未开启时每4秒治疗攻击范围内生命最低的友方单位相当于攻击力35%<@ba.talpu>(+5%)</>的生命; 技能期间优先选择丰川祥子作为治疗目标",
+                "desc": "When skill is not active, heal lowest HP operator in Attack Range by 35%<@ba.talpu>(+5%)</> ATK every 4 seconds; When skill is active, prioritize healing Togawa Sakiko instead."
+            }
+        ],
+        [
+            {
+                "name": "毋畏悲伤",
+                "descCN": "治疗<$ba.mujica>AveMujica</>成员时使<$ba.fever>Fever</>+2",
+                "desc": "When healing <$ba.mujica>Ave Mujica</> member, <$ba.fever>Fever</>+2"
+            },
+            {
+                "name": "毋畏悲伤",
+                "descCN": "治疗<$ba.mujica>AveMujica</>成员时使<$ba.fever>Fever</>+3; 攻击范围内<$ba.mujica>AveMujica</>成员攻击时，附带三角初华攻击力15%的法术伤害",
+                "desc": "When healing <$ba.mujica>Ave Mujica</> member, <$ba.fever>Fever</>+3; When <$ba.mujica>Ave Mujica</> member in Attack Range attacks, deal 15% ATK as Arts damage to their target"
+            },
+            {
+                "name": "毋畏悲伤",
+                "descCN": "治疗<$ba.mujica>AveMujica</>成员时使<$ba.fever>Fever</>+5; 攻击范围内<$ba.mujica>AveMujica</>成员攻击时，附带三角初华攻击力30%的法术伤害",
+                "desc": "When healing <$ba.mujica>Ave Mujica</> member, <$ba.fever>Fever</>+5; When <$ba.mujica>Ave Mujica</> member in Attack Range attacks, deal 30% ATK as Arts damage to their target"
+            }
+        ]
+    ],
+    "char_4186_tmoris": [
+        [
+            {
+                "name": "应召而至",
+                "descCN": "被八幡海铃伤害的敌人有15%概率被<$ba.sluggish>停顿</>3秒",
+                "desc": "When dealing damage, has 15% chance to <$ba.sluggish>Slow</> target for 3 seconds."
+            },
+            {
+                "name": "应召而至",
+                "descCN": "被八幡海铃伤害的敌人有18%概率被<$ba.sluggish>停顿</>3秒",
+                "desc": "When dealing damage, has 18% chance to <$ba.sluggish>Slow</> target for 3 seconds."
+            },
+            {
+                "name": "应召而至",
+                "descCN": "被八幡海铃伤害的敌人有21%概率被<$ba.sluggish>停顿</>3秒; 技能期间，八幡海铃的攻击范围扩大",
+                "desc": "When dealing damage, has 21% chance to <$ba.sluggish>Slow</> target for 3 seconds. When skill is active, Attack Range <@ba.vup>expands</>"
+            }
+        ],
+        [
+            {
+                "name": "毋畏恐惧",
+                "descCN": "造成<$ba.sluggish>停顿</>、<$ba.fear>恐惧</>时使<$ba.fever>Fever</>+2; \\n在场时，<$ba.mujica>AveMujica</>成员对处于<$ba.sluggish>停顿</>、<$ba.fear>恐惧</>的敌人造成的伤害增加3%",
+                "desc": "When inflict <$ba.sluggish>Slow</> or <$ba.fear>Fear</>, <$ba.fever>Fever</>+2;</br>When deployed, increase damage dealt by <$ba.mujica>Ave Mujica</> member to enemies inflicted by <$ba.sluggish>Slow</> or <$ba.fear>Fear</> by 3%"
+            },
+            {
+                "name": "毋畏恐惧",
+                "descCN": "造成<$ba.sluggish>停顿</>、<$ba.fear>恐惧</>时使<$ba.fever>Fever</>+2; \\n在场时，<$ba.mujica>AveMujica</>成员对处于<$ba.sluggish>停顿</>、<$ba.fear>恐惧</>的敌人造成的伤害增加8%<@ba.talpu>(+5%)</>",
+                "desc": "When inflict <$ba.sluggish>Slow</> or <$ba.fear>Fear</>, <$ba.fever>Fever</>+2;</br>When deployed, increase damage dealt by <$ba.mujica>Ave Mujica</> member to enemies inflicted by <$ba.sluggish>Slow</> or <$ba.fear>Fear</> by 8%<@ba.talpu>(+5%)</>"
+            },
+            {
+                "name": "毋畏恐惧",
+                "descCN": "造成<$ba.sluggish>停顿</>、<$ba.fear>恐惧</>时使<$ba.fever>Fever</>+2; \\n在场时，<$ba.mujica>AveMujica</>成员对处于<$ba.sluggish>停顿</>、<$ba.fear>恐惧</>的敌人造成的伤害增加10%",
+                "desc": "When inflict <$ba.sluggish>Slow</> or <$ba.fear>Fear</>, <$ba.fever>Fever</>+2;</br>When deployed, increase damage dealt by <$ba.mujica>Ave Mujica</> member to enemies inflicted by <$ba.sluggish>Slow</> or <$ba.fear>Fear</> by 10%"
+            },
+            {
+                "name": "毋畏恐惧",
+                "descCN": "造成<$ba.sluggish>停顿</>、<$ba.fear>恐惧</>时使<$ba.fever>Fever</>+2; \\n在场时，<$ba.mujica>AveMujica</>成员对处于<$ba.sluggish>停顿</>、<$ba.fear>恐惧</>的敌人造成的伤害增加15%<@ba.talpu>(+5%)</>",
+                "desc": "When inflict <$ba.sluggish>Slow</> or <$ba.fear>Fear</>, <$ba.fever>Fever</>+2;</br>When deployed, increase damage dealt by <$ba.mujica>Ave Mujica</> member to enemies inflicted by <$ba.sluggish>Slow</> or <$ba.fear>Fear</> by 15%<@ba.talpu>(+5%)</>"
+            }
+        ]
+    ],
+    "char_4185_amoris": [
+        [
+            {
+                "name": "双利手",
+                "descCN": "祐天寺若麦可以进行<$ba.permanentatk>持续攻击</>; 攻击时10%概率使敌人获得3%<$ba.fragile>脆弱</>，持续1.2秒",
+                "desc": "<$ba.permanentatk>Continuous attack</>; When attack, has 10% chance to inflict 3% <$ba.fragile>Fragile</> for 1.2 seconds"
+            },
+            {
+                "name": "双利手",
+                "descCN": "祐天寺若麦可以进行<$ba.permanentatk>持续攻击</>; 攻击时10%概率使敌人获得6%<$ba.fragile>脆弱</>，持续1.5秒",
+                "desc": "<$ba.permanentatk>Continuous attack</>; When attack, has 10% chance to inflict 6% <$ba.fragile>Fragile</> for 1.5 seconds"
+            },
+            {
+                "name": "双利手",
+                "descCN": "祐天寺若麦可以进行<$ba.permanentatk>持续攻击</>; 攻击时10%概率使敌人获得8%<$ba.fragile>脆弱</>，持续2秒",
+                "desc": "<$ba.permanentatk>Continuous attack</>; When attack, has 10% chance to inflict 8% <$ba.fragile>Fragile</> for 2 seconds"
+            }
+        ],
+        [
+            {
+                "name": "毋畏爱意",
+                "descCN": "在场时每秒使<$ba.fever>Fever</>+3",
+                "desc": "When deployed, <$ba.fever>Fever</>+3 every second"
+            },
+            {
+                "name": "毋畏爱意",
+                "descCN": "在场时每秒使<$ba.fever>Fever</>+3",
+                "desc": "When deployed, <$ba.fever>Fever</>+3 every second"
+            },
+            {
+                "name": "毋畏爱意",
+                "descCN": "在场时每秒使<$ba.fever>Fever</>+3; <$ba.mujica>AveMujica</>成员的攻击力+3%",
+                "desc": "When deployed, <$ba.fever>Fever</>+3 every second; <$ba.mujica>Ave Mujica</> member ATK+3%"
+            },
+            {
+                "name": "毋畏爱意",
+                "descCN": "在场时每秒使<$ba.fever>Fever</>+3; <$ba.mujica>AveMujica</>成员的攻击力+4%<@ba.talpu>(+1%)</>",
+                "desc": "When deployed, <$ba.fever>Fever</>+3 every second; <$ba.mujica>Ave Mujica</> member ATK+4%<@ba.talpu>(+1%)</>"
+            },
+            {
+                "name": "毋畏爱意",
+                "descCN": "在场时每秒使<$ba.fever>Fever</>+3; <$ba.mujica>AveMujica</>成员的攻击力+8%",
+                "desc": "When deployed, <$ba.fever>Fever</>+3 every second; <$ba.mujica>Ave Mujica</> member ATK+8%"
+            },
+            {
+                "name": "毋畏爱意",
+                "descCN": "在场时每秒使<$ba.fever>Fever</>+3; <$ba.mujica>AveMujica</>成员的攻击力+9%<@ba.talpu>(+1%)</>",
+                "desc": "When deployed, <$ba.fever>Fever</>+3 every second; <$ba.mujica>Ave Mujica</> member ATK+9%<@ba.talpu>(+1%)</>"
+            }
+        ]
     ]
 }

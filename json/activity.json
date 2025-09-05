@@ -1,5 +1,10 @@
 {
     "Dict": {
+        "act45side": {
+            "nameCN": "无忧梦呓",
+            "nameEN": "Somniloquium Serenum",
+            "startCN": 1756958400
+        },
         "act2enemyduel": {
             "nameCN": "争锋频道：蜜果城",
             "nameEN": "Duel Channel: Honeydew",
@@ -990,6 +995,11 @@
             "nameEN": "Słoma Processing Platform",
             "startCN": -1
         },
+        "Mechanic": {
+            "nameCN": "训练场",
+            "nameEN": "Training Ground",
+            "startCN": 1722484800
+        },
         "CC#Beta": {
             "nameCN": "危机合约",
             "nameEN": "CC#Beta : Contingency Contract",
@@ -1883,6 +1893,11 @@
             1722484800
         ],
         [
+            "Mechanic",
+            "Training Ground",
+            1722484800
+        ],
+        [
             "act27sre",
             "So Long, Adele: Home Away From Home - Retrospection",
             1724313600
@@ -2066,6 +2081,11 @@
             "act2enemyduel",
             "Duel Channel: Honeydew",
             1756368000
+        ],
+        [
+            "act45side",
+            "Somniloquium Serenum",
+            1756958400
         ]
     ]
 }

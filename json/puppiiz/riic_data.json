@@ -18,6 +18,18 @@
             "desc": "进驻控制中枢时，每个进驻在制造站的<$cc.tag.knight><@cc.kw>骑士</></>干员生产力<@cc.vup>+7%</>",
             "description": "When this Operator is assigned to the Control Center, all <$cc.tag.knight><@cc.kw>Knight</></> Operators assigned to Factories gain productivity <@cc.vup>+7%</>"
         },
+        "control_prod_bd_spd[000]": {
+            "buffName": "丰富工作经验",
+            "skillIcon": "bskill_ctrl_p_oblvns",
+            "desc": "进驻控制中枢时，所有生产<@cc.kw>贵金属</>类配方的制造站生产力<@cc.vup>+0.5%</>，每有<@cc.vup>20</>点<$cc.bd_mujica><@cc.rem>热情值</></>，所有生产<@cc.kw>贵金属</>类配方的制造站生产力<@cc.vup>+0.5%</>",
+            "description": "When this Operator is assigned to the Control Center, all Factories' productivity <@cc.vup>+0.5%</> towards <@cc.kw>Precious Metal</>; for every <@cc.vup>20</> <$cc.bd_mujica><@cc.kw>热情值</></> points, all Factories' productivity <@cc.vup>+0.5%</> towards <@cc.kw>Precious Metal</>"
+        },
+        "control_prod_bd_spd[010]": {
+            "buffName": "丰富工作经验",
+            "skillIcon": "bskill_ctrl_p_oblvns",
+            "desc": "进驻控制中枢时，所有生产<@cc.kw>贵金属</>类配方的制造站生产力<@cc.vup>+1%</>，每有<@cc.vup>20</>点<$cc.bd_mujica><@cc.rem>热情值</></>，所有生产<@cc.kw>贵金属</>类配方的制造站生产力<@cc.vup>+1%</>",
+            "description": "When this Operator is assigned to the Control Center, all Factories' productivity <@cc.vup>+1%</> towards <@cc.kw>Precious Metal</>; for every <@cc.vup>20</> <$cc.bd_mujica><@cc.kw>热情值</></> points, all Factories' productivity <@cc.vup>+1%</> towards <@cc.kw>Precious Metal</>"
+        },
         "control_token_prod_spd[000]": {
             "buffName": "Overclock",
             "skillIcon": "bskill_ctrl_token_p_spd",
@@ -83,6 +95,12 @@
             "skillIcon": "bskill_ctrl_t_limit&spd",
             "desc": "进驻控制中枢时，每个进驻在贸易站的<$cc.g.karlan><@cc.kw>喀兰贸易</></>干员，订单获取效率<@cc.vdown>-15%</>，订单上限<@cc.vup>+6</>",
             "description": "When this Operator is assigned to the Control Center, all <$cc.g.karlan><@cc.kw>Karlan Trade</></> Operators assigned to Trading Posts gain order acquisition efficiency <@cc.vdown>-15%</> and order limit <@cc.vup>+6</>"
+        },
+        "control_tra_limit&spd2[000]": {
+            "buffName": "家族认可",
+            "skillIcon": "bskill_ctrl_t_limit&spd_tmoris",
+            "desc": "进驻控制中枢时，每个进驻在贸易站的<$cc.g.siracusa><@cc.kw>叙拉古</></>干员，订单获取效率<@cc.vup>+5%</>",
+            "description": "When this Operator is assigned to the Control Center, all <$cc.g.siracusa><@cc.kw>Siracusa</></> Operators assigned to Trading Posts gain order acquisition efficiency <@cc.vup>+5%</>"
         },
         "control_hire_spd[000]": {
             "buffName": "Infectivity",
@@ -294,6 +312,12 @@
             "desc": "进驻控制中枢时，自身心情每小时消耗<@cc.vdown>+0.5</>；当自身心情大于<@cc.kw>12</>时，<$cc.bd_a1><@cc.rem>感知信息</></><@cc.vup>+10</>",
             "description": "When this Operator is assigned to the Control Center, decreases own morale consumption by<@cc.vdown>+0.5</>; and when self morale is above<@cc.kw>12</>, <$cc.bd_a1><@cc.rem>Perception Information</></><@cc.vup>+10</>"
         },
+        "control_mp_cost&bd3[000]": {
+            "buffName": "生活的重压",
+            "skillIcon": "bskill_ctrl_mp_oblvns",
+            "desc": "进驻控制中枢时，热情值处于<@cc.kw>40</>点及以上时，自身心情每小时消耗<@cc.vdown>+0.05</>",
+            "description": "When this Operator is assigned to the Control Center, if 热情值 more than <@cc.kw>40</> points, decreases own morale consumption by<@cc.vdown>+0.05</>"
+        },
         "control_mp_cost&bd_up[000]": {
             "buffName": "I am I",
             "skillIcon": "bskill_ctrl_cost_bd3",
@@ -317,6 +341,18 @@
             "skillIcon": "bskill_ctrl_cost_felyne",
             "desc": "进驻控制中枢时，自身心情每小时消耗<@cc.vdown>+0.5</>，<$cc.bd_felyne><@cc.rem>木天蓼</></><@cc.vup>+8</>",
             "description": "When this Operator is assigned to the Control Center, self Morale loss per hour <@cc.vdown>+0.5</>, <$cc.bd_felyne><@cc.rem>Felvine</></> <@cc.vup>+8</>"
+        },
+        "control_mp_cost_reset[000]": {
+            "buffName": "互为半身",
+            "skillIcon": "bskill_ctrl_mp_mortis",
+            "desc": "当与<@cc.kw>丰川祥子</>一起进驻控制中枢时，消除自身心情消耗的影响",
+            "description": "When this Operator is assigned together with <@cc.kw>Togawa Sakiko</> to the Control Center, remove any self Morale reduction effects"
+        },
+        "control_mp&meet_spd[000]": {
+            "buffName": "成效优先",
+            "skillIcon": "bskill_ctrl_meet_amoris2",
+            "desc": "当与<@cc.kw>丰川祥子</>一起进驻控制中枢时，<@cc.kw>丰川祥子</>心情每小时消耗<@cc.vdown>+0.05</>，会客室线索搜集速度额外提升<@cc.vup>+5%</>（同种效果取最高）",
+            "description": "When this Operator is assigned together with <@cc.kw>Togawa Sakiko</> to the Control Center, <@cc.kw>Togawa Sakiko</> Morale loss per hour <@cc.vdown>+0.05</> and increases Clue search speed in Reception Room by an additional <@cc.vup>+5%</> (Only the strongest effect of this type takes place)"
         },
         "control_facCostReset[000]": {
             "buffName": "Keep the Wine Flowing",
@@ -402,6 +438,12 @@
             "desc": "进驻控制中枢时，所有宿舍内<$cc.g.elite><@cc.kw>精英干员</></>的心情每小时恢复<@cc.vup>+0.1</>（同种效果取最高）",
             "description": "When this Operator is assigned to the Control Center, all <$cc.g.elite><@cc.kw>Elite Operators</></> Operators in Dormitories recover <@cc.vup>+0.1</> Morale per hour (strongest effect of the same type applies)"
         },
+        "control_dorm_rec2[000]": {
+            "buffName": "羁绊相生",
+            "skillIcon": "bskill_ctrl_dorm_uika2",
+            "desc": "进驻控制中枢时，所有宿舍内所有干员的心情每小时恢复<@cc.vup>+0.05</>（同种效果取最高）；当与<@cc.kw>丰川祥子</>一起进驻控制中枢时，<@cc.kw>丰川祥子</>的心情每小时恢复<@cc.vup>+0.1</>",
+            "description": "When this Operator is assigned to the Control Center, all Operators in Dormitories recover <@cc.vup>+0.05</> Morale per hour (strongest effect of the same type applies); When this Operator is assigned together with <@cc.kw>Togawa Sakiko</> to the Control Center, <@cc.kw>Togawa Sakiko</>'s Morale recovered per hour <@cc.vup>+0.1</>."
+        },
         "control_train_spd[010]": {
             "buffName": "S.W.E.E.P. Supervisor",
             "skillIcon": "bskill_ctrl_train_spd1",
@@ -425,6 +467,30 @@
             "skillIcon": "bskill_ctrl_g_limit&spd",
             "desc": "进驻控制中枢时，同一贸易站中，每有<@cc.vup>1</>名<$cc.g.glasgow><@cc.kw>格拉斯哥帮</></>干员，订单获取效率<@cc.vup>+10%</>",
             "description": "When this Operator is assigned to the Control Center, for <@cc.vup>each</> <$cc.g.glasgow><@cc.kw>Glasgow Gang</></> Operator assigned to the same Trading Post, order acquisition efficiency <@cc.vup>+10%</>"
+        },
+        "control_mp_bd&trade[000]": {
+            "buffName": "演技的怪物",
+            "skillIcon": "bskill_ctrl_trade_mortis",
+            "desc": "进驻控制中枢时，<$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+20</>；每有<@cc.vup>8</>点<$cc.bd_mujica><@cc.rem>热情值</></>，自身心情每小时消耗<@cc.vdown>+0.01</>，所有贸易站订单效率<@cc.vup>+1%</>（同种效果取最高）",
+            "description": "When this Operator is assigned to the Control Center, <$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+20</>; for every <@cc.vup>8</> points <$cc.bd_mujica><@cc.rem>热情值</></>,  decreases own morale consumption by <@cc.vdown>+0.01</>, , all Trading Posts' order efficiency <@cc.vup>+1%</> (Only the strongest effect of this type takes place)"
+        },
+        "control_meeting_spd&bd[000]": {
+            "buffName": "勤学苦练",
+            "skillIcon": "bskill_ctrl_meet_amoris1",
+            "desc": "进驻控制中枢时，<$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+10</>；会客室线索搜集速度提升<@cc.vup>+5%</>（同种效果取最高）",
+            "description": "When this Operator is assigned to the Control Center, <$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+10</>; Clue search speed in Reception Room increases by <@cc.vup>+5%</> (strongest effect of the same type applies)"
+        },
+        "control_dorm_bd[000]": {
+            "buffName": "偶像光环",
+            "skillIcon": "bskill_ctrl_dorm_uika1",
+            "desc": "进驻控制中枢时，宿舍内每有<@cc.vup>1</>名干员，<$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+1</>",
+            "description": "When this Operator is assigned to the Control Center, for every <@cc.kw>1</> operator in the Dormitory, <$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+1</>"
+        },
+        "control_hire_spd&bd[000]": {
+            "buffName": "可靠伙伴",
+            "skillIcon": "bskill_ctrl_hire_tmoris",
+            "desc": "进驻控制中枢时，<$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+10</>；人脉资源的联络速度<@cc.vup>+10%</>（同种效果取最高）",
+            "description": "When this Operator is assigned to the Control Center, <$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+10</>; HR contacting speed <@cc.vup>+10%</> (strongest effect of the same type applies)"
         },
         "power_rec_spd&cost[000]": {
             "buffName": "Enthusiasm",
@@ -3921,8 +3987,6 @@
     },
     "chars": {
         "char_285_medic2": {
-            "charId": "char_285_medic2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -3949,8 +4013,6 @@
             ]
         },
         "char_286_cast3": {
-            "charId": "char_286_cast3",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -3977,8 +4039,6 @@
             ]
         },
         "char_009_12fce": {
-            "charId": "char_009_12fce",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4005,8 +4065,6 @@
             ]
         },
         "char_500_noirc": {
-            "charId": "char_500_noirc",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4033,8 +4091,6 @@
             ]
         },
         "char_501_durin": {
-            "charId": "char_501_durin",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4060,8 +4116,6 @@
             ]
         },
         "char_502_nblade": {
-            "charId": "char_502_nblade",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4088,8 +4142,6 @@
             ]
         },
         "char_503_rang": {
-            "charId": "char_503_rang",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4116,8 +4168,6 @@
             ]
         },
         "char_120_hibisc": {
-            "charId": "char_120_hibisc",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4144,8 +4194,6 @@
             ]
         },
         "char_121_lava": {
-            "charId": "char_121_lava",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4172,8 +4220,6 @@
             ]
         },
         "char_122_beagle": {
-            "charId": "char_122_beagle",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4200,8 +4246,6 @@
             ]
         },
         "char_123_fang": {
-            "charId": "char_123_fang",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4228,8 +4272,6 @@
             ]
         },
         "char_124_kroos": {
-            "charId": "char_124_kroos",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4256,8 +4298,6 @@
             ]
         },
         "char_192_falco": {
-            "charId": "char_192_falco",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4284,8 +4324,6 @@
             ]
         },
         "char_208_melan": {
-            "charId": "char_208_melan",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4312,8 +4350,6 @@
             ]
         },
         "char_209_ardign": {
-            "charId": "char_209_ardign",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4340,8 +4376,6 @@
             ]
         },
         "char_210_stward": {
-            "charId": "char_210_stward",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4368,8 +4402,6 @@
             ]
         },
         "char_211_adnach": {
-            "charId": "char_211_adnach",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4396,8 +4428,6 @@
             ]
         },
         "char_212_ansel": {
-            "charId": "char_212_ansel",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4424,8 +4454,6 @@
             ]
         },
         "char_240_wyvern": {
-            "charId": "char_240_wyvern",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4452,8 +4480,6 @@
             ]
         },
         "char_278_orchid": {
-            "charId": "char_278_orchid",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4480,8 +4506,6 @@
             ]
         },
         "char_282_catap": {
-            "charId": "char_282_catap",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4508,8 +4532,6 @@
             ]
         },
         "char_283_midn": {
-            "charId": "char_283_midn",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4536,8 +4558,6 @@
             ]
         },
         "char_281_popka": {
-            "charId": "char_281_popka",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4564,8 +4584,6 @@
             ]
         },
         "char_284_spot": {
-            "charId": "char_284_spot",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4592,8 +4610,6 @@
             ]
         },
         "char_109_fmout": {
-            "charId": "char_109_fmout",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4620,8 +4636,6 @@
             ]
         },
         "char_110_deepcl": {
-            "charId": "char_110_deepcl",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4648,8 +4662,6 @@
             ]
         },
         "char_117_myrrh": {
-            "charId": "char_117_myrrh",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4676,8 +4688,6 @@
             ]
         },
         "char_118_yuki": {
-            "charId": "char_118_yuki",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4704,8 +4714,6 @@
             ]
         },
         "char_126_shotst": {
-            "charId": "char_126_shotst",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4732,8 +4740,6 @@
             ]
         },
         "char_127_estell": {
-            "charId": "char_127_estell",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4760,8 +4766,6 @@
             ]
         },
         "char_130_doberm": {
-            "charId": "char_130_doberm",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4788,8 +4792,6 @@
             ]
         },
         "char_137_brownb": {
-            "charId": "char_137_brownb",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4816,8 +4818,6 @@
             ]
         },
         "char_141_nights": {
-            "charId": "char_141_nights",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4844,8 +4844,6 @@
             ]
         },
         "char_149_scave": {
-            "charId": "char_149_scave",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4872,8 +4870,6 @@
             ]
         },
         "char_150_snakek": {
-            "charId": "char_150_snakek",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4900,8 +4896,6 @@
             ]
         },
         "char_181_flower": {
-            "charId": "char_181_flower",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4928,8 +4922,6 @@
             ]
         },
         "char_183_skgoat": {
-            "charId": "char_183_skgoat",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4963,8 +4955,6 @@
             ]
         },
         "char_185_frncat": {
-            "charId": "char_185_frncat",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -4991,8 +4981,6 @@
             ]
         },
         "char_187_ccheal": {
-            "charId": "char_187_ccheal",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5019,8 +5007,6 @@
             ]
         },
         "char_193_frostl": {
-            "charId": "char_193_frostl",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5047,8 +5033,6 @@
             ]
         },
         "char_196_sunbr": {
-            "charId": "char_196_sunbr",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5075,8 +5059,6 @@
             ]
         },
         "char_198_blackd": {
-            "charId": "char_198_blackd",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5103,8 +5085,6 @@
             ]
         },
         "char_199_yak": {
-            "charId": "char_199_yak",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5131,8 +5111,6 @@
             ]
         },
         "char_235_jesica": {
-            "charId": "char_235_jesica",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5159,8 +5137,6 @@
             ]
         },
         "char_236_rope": {
-            "charId": "char_236_rope",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5187,8 +5163,6 @@
             ]
         },
         "char_237_gravel": {
-            "charId": "char_237_gravel",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5215,8 +5189,6 @@
             ]
         },
         "char_277_sqrrel": {
-            "charId": "char_277_sqrrel",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5243,8 +5215,6 @@
             ]
         },
         "char_289_gyuki": {
-            "charId": "char_289_gyuki",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5271,8 +5241,6 @@
             ]
         },
         "char_290_vigna": {
-            "charId": "char_290_vigna",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5299,8 +5267,6 @@
             ]
         },
         "char_253_greyy": {
-            "charId": "char_253_greyy",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5327,8 +5293,6 @@
             ]
         },
         "char_002_amiya": {
-            "charId": "char_002_amiya",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5355,8 +5319,6 @@
             ]
         },
         "char_101_sora": {
-            "charId": "char_101_sora",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5383,8 +5345,6 @@
             ]
         },
         "char_102_texas": {
-            "charId": "char_102_texas",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5411,8 +5371,6 @@
             ]
         },
         "char_106_franka": {
-            "charId": "char_106_franka",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5453,8 +5411,6 @@
             ]
         },
         "char_107_liskam": {
-            "charId": "char_107_liskam",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5480,8 +5436,6 @@
             ]
         },
         "char_108_silent": {
-            "charId": "char_108_silent",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5507,8 +5461,6 @@
             ]
         },
         "char_115_headbr": {
-            "charId": "char_115_headbr",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5534,8 +5486,6 @@
             ]
         },
         "char_128_plosis": {
-            "charId": "char_128_plosis",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5561,8 +5511,6 @@
             ]
         },
         "char_129_bluep": {
-            "charId": "char_129_bluep",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5588,8 +5536,6 @@
             ]
         },
         "char_140_whitew": {
-            "charId": "char_140_whitew",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5615,8 +5561,6 @@
             ]
         },
         "char_143_ghost": {
-            "charId": "char_143_ghost",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5642,8 +5586,6 @@
             ]
         },
         "char_144_red": {
-            "charId": "char_144_red",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5670,8 +5612,6 @@
             ]
         },
         "char_145_prove": {
-            "charId": "char_145_prove",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5697,8 +5637,6 @@
             ]
         },
         "char_148_nearl": {
-            "charId": "char_148_nearl",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5725,8 +5663,6 @@
             ]
         },
         "char_155_tiger": {
-            "charId": "char_155_tiger",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5752,8 +5688,6 @@
             ]
         },
         "char_158_milu": {
-            "charId": "char_158_milu",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5779,8 +5713,6 @@
             ]
         },
         "char_163_hpsts": {
-            "charId": "char_163_hpsts",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5806,8 +5738,6 @@
             ]
         },
         "char_164_nightm": {
-            "charId": "char_164_nightm",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5834,8 +5764,6 @@
             ]
         },
         "char_166_skfire": {
-            "charId": "char_166_skfire",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5861,8 +5789,6 @@
             ]
         },
         "char_171_bldsk": {
-            "charId": "char_171_bldsk",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5888,8 +5814,6 @@
             ]
         },
         "char_173_slchan": {
-            "charId": "char_173_slchan",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5916,8 +5840,6 @@
             ]
         },
         "char_174_slbell": {
-            "charId": "char_174_slbell",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5944,8 +5866,6 @@
             ]
         },
         "char_195_glassb": {
-            "charId": "char_195_glassb",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5972,8 +5892,6 @@
             ]
         },
         "char_201_moeshd": {
-            "charId": "char_201_moeshd",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -5999,8 +5917,6 @@
             ]
         },
         "char_204_platnm": {
-            "charId": "char_204_platnm",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6026,8 +5942,6 @@
             ]
         },
         "char_215_mantic": {
-            "charId": "char_215_mantic",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6053,8 +5967,6 @@
             ]
         },
         "char_219_meteo": {
-            "charId": "char_219_meteo",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6080,8 +5992,6 @@
             ]
         },
         "char_220_grani": {
-            "charId": "char_220_grani",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6107,8 +6017,6 @@
             ]
         },
         "char_230_savage": {
-            "charId": "char_230_savage",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6135,8 +6043,6 @@
             ]
         },
         "char_241_panda": {
-            "charId": "char_241_panda",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6162,8 +6068,6 @@
             ]
         },
         "char_242_otter": {
-            "charId": "char_242_otter",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6190,8 +6094,6 @@
             ]
         },
         "char_010_chen": {
-            "charId": "char_010_chen",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6218,8 +6120,6 @@
             ]
         },
         "char_308_swire": {
-            "charId": "char_308_swire",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6246,8 +6146,6 @@
             ]
         },
         "char_103_angel": {
-            "charId": "char_103_angel",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6273,8 +6171,6 @@
             ]
         },
         "char_112_siege": {
-            "charId": "char_112_siege",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6300,8 +6196,6 @@
             ]
         },
         "char_134_ifrit": {
-            "charId": "char_134_ifrit",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6327,8 +6221,6 @@
             ]
         },
         "char_136_hsguma": {
-            "charId": "char_136_hsguma",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6354,8 +6246,6 @@
             ]
         },
         "char_147_shining": {
-            "charId": "char_147_shining",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6381,8 +6271,6 @@
             ]
         },
         "char_172_svrash": {
-            "charId": "char_172_svrash",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6408,8 +6296,6 @@
             ]
         },
         "char_179_cgbird": {
-            "charId": "char_179_cgbird",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6435,8 +6321,6 @@
             ]
         },
         "char_180_amgoat": {
-            "charId": "char_180_amgoat",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6463,8 +6347,6 @@
             ]
         },
         "char_202_demkni": {
-            "charId": "char_202_demkni",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6490,8 +6372,6 @@
             ]
         },
         "char_263_skadi": {
-            "charId": "char_263_skadi",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6517,8 +6397,6 @@
             ]
         },
         "char_291_aglina": {
-            "charId": "char_291_aglina",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6544,8 +6422,6 @@
             ]
         },
         "char_340_shwaz": {
-            "charId": "char_340_shwaz",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6572,8 +6448,6 @@
             ]
         },
         "char_348_ceylon": {
-            "charId": "char_348_ceylon",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6600,8 +6474,6 @@
             ]
         },
         "char_326_glacus": {
-            "charId": "char_326_glacus",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6627,8 +6499,6 @@
             ]
         },
         "char_298_susuro": {
-            "charId": "char_298_susuro",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6655,8 +6525,6 @@
             ]
         },
         "char_188_helage": {
-            "charId": "char_188_helage",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6697,8 +6565,6 @@
             ]
         },
         "char_151_myrtle": {
-            "charId": "char_151_myrtle",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6725,8 +6591,6 @@
             ]
         },
         "char_274_astesi": {
-            "charId": "char_274_astesi",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6752,8 +6616,6 @@
             ]
         },
         "char_260_durnar": {
-            "charId": "char_260_durnar",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6780,8 +6642,6 @@
             ]
         },
         "char_248_mgllan": {
-            "charId": "char_248_mgllan",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6808,8 +6668,6 @@
             ]
         },
         "char_131_flameb": {
-            "charId": "char_131_flameb",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6835,8 +6693,6 @@
             ]
         },
         "char_279_excu": {
-            "charId": "char_279_excu",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6863,8 +6719,6 @@
             ]
         },
         "char_190_clour": {
-            "charId": "char_190_clour",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6891,8 +6745,6 @@
             ]
         },
         "char_275_breeze": {
-            "charId": "char_275_breeze",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6918,8 +6770,6 @@
             ]
         },
         "char_355_ethan": {
-            "charId": "char_355_ethan",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6946,8 +6796,6 @@
             ]
         },
         "char_213_mostma": {
-            "charId": "char_213_mostma",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -6973,8 +6821,6 @@
             ]
         },
         "char_325_bison": {
-            "charId": "char_325_bison",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7000,8 +6846,6 @@
             ]
         },
         "char_243_waaifu": {
-            "charId": "char_243_waaifu",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7028,8 +6872,6 @@
             ]
         },
         "char_133_mm": {
-            "charId": "char_133_mm",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7056,8 +6898,6 @@
             ]
         },
         "char_261_sddrag": {
-            "charId": "char_261_sddrag",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7084,8 +6924,6 @@
             ]
         },
         "char_356_broca": {
-            "charId": "char_356_broca",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7111,8 +6949,6 @@
             ]
         },
         "char_017_huang": {
-            "charId": "char_017_huang",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7139,8 +6975,6 @@
             ]
         },
         "char_367_swllow": {
-            "charId": "char_367_swllow",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7167,8 +7001,6 @@
             ]
         },
         "char_302_glaze": {
-            "charId": "char_302_glaze",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7195,8 +7027,6 @@
             ]
         },
         "char_2014_nian": {
-            "charId": "char_2014_nian",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7223,8 +7053,6 @@
             ]
         },
         "char_225_haak": {
-            "charId": "char_225_haak",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7251,8 +7079,6 @@
             ]
         },
         "char_226_hmau": {
-            "charId": "char_226_hmau",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7279,8 +7105,6 @@
             ]
         },
         "char_383_snsant": {
-            "charId": "char_383_snsant",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7306,8 +7130,6 @@
             ]
         },
         "char_222_bpipe": {
-            "charId": "char_222_bpipe",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7334,8 +7156,6 @@
             ]
         },
         "char_379_sesa": {
-            "charId": "char_379_sesa",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7362,8 +7182,6 @@
             ]
         },
         "char_337_utage": {
-            "charId": "char_337_utage",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7390,8 +7208,6 @@
             ]
         },
         "char_252_bibeak": {
-            "charId": "char_252_bibeak",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7417,8 +7233,6 @@
             ]
         },
         "char_385_finlpp": {
-            "charId": "char_385_finlpp",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7445,8 +7259,6 @@
             ]
         },
         "char_2013_cerber": {
-            "charId": "char_2013_cerber",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7473,8 +7285,6 @@
             ]
         },
         "char_306_leizi": {
-            "charId": "char_306_leizi",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7500,8 +7310,6 @@
             ]
         },
         "char_159_peacok": {
-            "charId": "char_159_peacok",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7528,8 +7336,6 @@
             ]
         },
         "char_250_phatom": {
-            "charId": "char_250_phatom",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7555,8 +7361,6 @@
             ]
         },
         "char_254_vodfox": {
-            "charId": "char_254_vodfox",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7583,8 +7387,6 @@
             ]
         },
         "char_301_cutter": {
-            "charId": "char_301_cutter",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7611,8 +7413,6 @@
             ]
         },
         "char_333_sidero": {
-            "charId": "char_333_sidero",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7638,8 +7438,6 @@
             ]
         },
         "char_113_cqbw": {
-            "charId": "char_113_cqbw",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7673,8 +7471,6 @@
             ]
         },
         "char_400_weedy": {
-            "charId": "char_400_weedy",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7700,8 +7496,6 @@
             ]
         },
         "char_401_elysm": {
-            "charId": "char_401_elysm",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7728,8 +7522,6 @@
             ]
         },
         "char_376_therex": {
-            "charId": "char_376_therex",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7756,8 +7548,6 @@
             ]
         },
         "char_343_tknogi": {
-            "charId": "char_343_tknogi",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7783,8 +7573,6 @@
             ]
         },
         "char_378_asbest": {
-            "charId": "char_378_asbest",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7811,8 +7599,6 @@
             ]
         },
         "char_197_poca": {
-            "charId": "char_197_poca",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7839,8 +7625,6 @@
             ]
         },
         "char_405_absin": {
-            "charId": "char_405_absin",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7867,8 +7651,6 @@
             ]
         },
         "char_373_lionhd": {
-            "charId": "char_373_lionhd",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7895,8 +7677,6 @@
             ]
         },
         "char_258_podego": {
-            "charId": "char_258_podego",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7930,8 +7710,6 @@
             ]
         },
         "char_358_lisa": {
-            "charId": "char_358_lisa",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7957,8 +7735,6 @@
             ]
         },
         "char_294_ayer": {
-            "charId": "char_294_ayer",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -7984,8 +7760,6 @@
             ]
         },
         "char_345_folnic": {
-            "charId": "char_345_folnic",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8012,8 +7786,6 @@
             ]
         },
         "char_328_cammou": {
-            "charId": "char_328_cammou",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8040,8 +7812,6 @@
             ]
         },
         "char_336_folivo": {
-            "charId": "char_336_folivo",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8068,8 +7838,6 @@
             ]
         },
         "char_344_beewax": {
-            "charId": "char_344_beewax",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8095,8 +7863,6 @@
             ]
         },
         "char_349_chiave": {
-            "charId": "char_349_chiave",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8123,8 +7889,6 @@
             ]
         },
         "char_293_thorns": {
-            "charId": "char_293_thorns",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8151,8 +7915,6 @@
             ]
         },
         "char_218_cuttle": {
-            "charId": "char_218_cuttle",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8178,8 +7940,6 @@
             ]
         },
         "char_272_strong": {
-            "charId": "char_272_strong",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8206,8 +7966,6 @@
             ]
         },
         "char_416_zumama": {
-            "charId": "char_416_zumama",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8241,8 +7999,6 @@
             ]
         },
         "char_411_tomimi": {
-            "charId": "char_411_tomimi",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8269,8 +8025,6 @@
             ]
         },
         "char_415_flint": {
-            "charId": "char_415_flint",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8296,8 +8050,6 @@
             ]
         },
         "char_366_acdrop": {
-            "charId": "char_366_acdrop",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8324,8 +8076,6 @@
             ]
         },
         "char_350_surtr": {
-            "charId": "char_350_surtr",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8351,8 +8101,6 @@
             ]
         },
         "char_365_aprl": {
-            "charId": "char_365_aprl",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8386,8 +8134,6 @@
             ]
         },
         "char_271_spikes": {
-            "charId": "char_271_spikes",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8421,8 +8167,6 @@
             ]
         },
         "char_388_mint": {
-            "charId": "char_388_mint",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8456,8 +8200,6 @@
             ]
         },
         "char_423_blemsh": {
-            "charId": "char_423_blemsh",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8484,8 +8226,6 @@
             ]
         },
         "char_346_aosta": {
-            "charId": "char_346_aosta",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8512,8 +8252,6 @@
             ]
         },
         "char_381_bubble": {
-            "charId": "char_381_bubble",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8540,8 +8278,6 @@
             ]
         },
         "char_265_sophia": {
-            "charId": "char_265_sophia",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8568,8 +8304,6 @@
             ]
         },
         "char_391_rosmon": {
-            "charId": "char_391_rosmon",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8603,8 +8337,6 @@
             ]
         },
         "char_311_mudrok": {
-            "charId": "char_311_mudrok",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8631,8 +8363,6 @@
             ]
         },
         "char_436_whispr": {
-            "charId": "char_436_whispr",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8659,8 +8389,6 @@
             ]
         },
         "char_347_jaksel": {
-            "charId": "char_347_jaksel",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8687,8 +8415,6 @@
             ]
         },
         "char_264_f12yin": {
-            "charId": "char_264_f12yin",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8715,8 +8441,6 @@
             ]
         },
         "char_214_kafka": {
-            "charId": "char_214_kafka",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8742,8 +8466,6 @@
             ]
         },
         "char_451_robin": {
-            "charId": "char_451_robin",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8769,8 +8491,6 @@
             ]
         },
         "char_440_pinecn": {
-            "charId": "char_440_pinecn",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8797,8 +8517,6 @@
             ]
         },
         "char_332_archet": {
-            "charId": "char_332_archet",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8824,8 +8542,6 @@
             ]
         },
         "char_338_iris": {
-            "charId": "char_338_iris",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8852,8 +8568,6 @@
             ]
         },
         "char_452_bstalk": {
-            "charId": "char_452_bstalk",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8880,8 +8594,6 @@
             ]
         },
         "char_2015_dusk": {
-            "charId": "char_2015_dusk",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8908,8 +8620,6 @@
             ]
         },
         "char_362_saga": {
-            "charId": "char_362_saga",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8935,8 +8645,6 @@
             ]
         },
         "char_455_nothin": {
-            "charId": "char_455_nothin",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8963,8 +8671,6 @@
             ]
         },
         "char_1011_lava2": {
-            "charId": "char_1011_lava2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -8991,8 +8697,6 @@
             ]
         },
         "char_402_tuye": {
-            "charId": "char_402_tuye",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9018,8 +8722,6 @@
             ]
         },
         "char_456_ash": {
-            "charId": "char_456_ash",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9046,8 +8748,6 @@
             ]
         },
         "char_457_blitz": {
-            "charId": "char_457_blitz",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9074,8 +8774,6 @@
             ]
         },
         "char_458_rfrost": {
-            "charId": "char_458_rfrost",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9102,8 +8800,6 @@
             ]
         },
         "char_459_tachak": {
-            "charId": "char_459_tachak",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9130,8 +8826,6 @@
             ]
         },
         "char_472_pasngr": {
-            "charId": "char_472_pasngr",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9165,8 +8859,6 @@
             ]
         },
         "char_363_toddi": {
-            "charId": "char_363_toddi",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9193,8 +8885,6 @@
             ]
         },
         "char_304_zebra": {
-            "charId": "char_304_zebra",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9228,8 +8918,6 @@
             ]
         },
         "char_1012_skadi2": {
-            "charId": "char_1012_skadi2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9263,8 +8951,6 @@
             ]
         },
         "char_003_kalts": {
-            "charId": "char_003_kalts",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9291,8 +8977,6 @@
             ]
         },
         "char_474_glady": {
-            "charId": "char_474_glady",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9326,8 +9010,6 @@
             ]
         },
         "char_475_akafyu": {
-            "charId": "char_475_akafyu",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9353,8 +9035,6 @@
             ]
         },
         "char_426_billro": {
-            "charId": "char_426_billro",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9380,8 +9060,6 @@
             ]
         },
         "char_478_kirara": {
-            "charId": "char_478_kirara",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9407,8 +9085,6 @@
             ]
         },
         "char_369_bena": {
-            "charId": "char_369_bena",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9435,8 +9111,6 @@
             ]
         },
         "char_469_indigo": {
-            "charId": "char_469_indigo",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9470,8 +9144,6 @@
             ]
         },
         "char_485_pallas": {
-            "charId": "char_485_pallas",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9498,8 +9170,6 @@
             ]
         },
         "char_1013_chen2": {
-            "charId": "char_1013_chen2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9533,8 +9203,6 @@
             ]
         },
         "char_437_mizuki": {
-            "charId": "char_437_mizuki",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9561,8 +9229,6 @@
             ]
         },
         "char_421_crow": {
-            "charId": "char_421_crow",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9589,8 +9255,6 @@
             ]
         },
         "char_486_takila": {
-            "charId": "char_486_takila",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9616,8 +9280,6 @@
             ]
         },
         "char_479_sleach": {
-            "charId": "char_479_sleach",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9644,8 +9306,6 @@
             ]
         },
         "char_484_robrta": {
-            "charId": "char_484_robrta",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9672,8 +9332,6 @@
             ]
         },
         "char_473_mberry": {
-            "charId": "char_473_mberry",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9707,8 +9365,6 @@
             ]
         },
         "char_430_fartth": {
-            "charId": "char_430_fartth",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9742,8 +9398,6 @@
             ]
         },
         "char_431_ashlok": {
-            "charId": "char_431_ashlok",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9769,8 +9423,6 @@
             ]
         },
         "char_1014_nearl2": {
-            "charId": "char_1014_nearl2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9796,8 +9448,6 @@
             ]
         },
         "char_420_flamtl": {
-            "charId": "char_420_flamtl",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9824,8 +9474,6 @@
             ]
         },
         "char_496_wildmn": {
-            "charId": "char_496_wildmn",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9851,8 +9499,6 @@
             ]
         },
         "char_4000_jnight": {
-            "charId": "char_4000_jnight",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9879,8 +9525,6 @@
             ]
         },
         "char_449_glider": {
-            "charId": "char_449_glider",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9914,8 +9558,6 @@
             ]
         },
         "char_4004_pudd": {
-            "charId": "char_4004_pudd",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9942,8 +9584,6 @@
             ]
         },
         "char_489_serum": {
-            "charId": "char_489_serum",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -9977,8 +9617,6 @@
             ]
         },
         "char_206_gnosis": {
-            "charId": "char_206_gnosis",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10005,8 +9643,6 @@
             ]
         },
         "char_422_aurora": {
-            "charId": "char_422_aurora",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10032,8 +9668,6 @@
             ]
         },
         "char_4013_kjera": {
-            "charId": "char_4013_kjera",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10067,8 +9701,6 @@
             ]
         },
         "char_4019_ncdeer": {
-            "charId": "char_4019_ncdeer",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10095,8 +9727,6 @@
             ]
         },
         "char_4025_aprot2": {
-            "charId": "char_4025_aprot2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10122,8 +9752,6 @@
             ]
         },
         "char_2023_ling": {
-            "charId": "char_2023_ling",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10150,8 +9778,6 @@
             ]
         },
         "char_322_lmlee": {
-            "charId": "char_322_lmlee",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10178,8 +9804,6 @@
             ]
         },
         "char_1021_kroos2": {
-            "charId": "char_1021_kroos2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10206,8 +9830,6 @@
             ]
         },
         "char_476_blkngt": {
-            "charId": "char_476_blkngt",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10233,8 +9855,6 @@
             ]
         },
         "char_377_gdglow": {
-            "charId": "char_377_gdglow",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10260,8 +9880,6 @@
             ]
         },
         "char_492_quercu": {
-            "charId": "char_492_quercu",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10288,8 +9906,6 @@
             ]
         },
         "char_300_phenxi": {
-            "charId": "char_300_phenxi",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10316,8 +9932,6 @@
             ]
         },
         "char_4036_forcer": {
-            "charId": "char_4036_forcer",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10343,8 +9957,6 @@
             ]
         },
         "char_4016_kazema": {
-            "charId": "char_4016_kazema",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10371,8 +9983,6 @@
             ]
         },
         "char_4039_horn": {
-            "charId": "char_4039_horn",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10399,8 +10009,6 @@
             ]
         },
         "char_4040_rockr": {
-            "charId": "char_4040_rockr",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10427,8 +10035,6 @@
             ]
         },
         "char_4045_heidi": {
-            "charId": "char_4045_heidi",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10462,8 +10068,6 @@
             ]
         },
         "char_4041_chnut": {
-            "charId": "char_4041_chnut",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10490,8 +10094,6 @@
             ]
         },
         "char_1023_ghost2": {
-            "charId": "char_1023_ghost2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10525,8 +10127,6 @@
             ]
         },
         "char_4009_irene": {
-            "charId": "char_4009_irene",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10553,8 +10153,6 @@
             ]
         },
         "char_4042_lumen": {
-            "charId": "char_4042_lumen",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10580,8 +10178,6 @@
             ]
         },
         "char_433_windft": {
-            "charId": "char_433_windft",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10608,8 +10204,6 @@
             ]
         },
         "char_4043_erato": {
-            "charId": "char_4043_erato",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10635,8 +10229,6 @@
             ]
         },
         "char_4046_ebnhlz": {
-            "charId": "char_4046_ebnhlz",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10670,8 +10262,6 @@
             ]
         },
         "char_1024_hbisc2": {
-            "charId": "char_1024_hbisc2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10698,8 +10288,6 @@
             ]
         },
         "char_4047_pianst": {
-            "charId": "char_4047_pianst",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10726,8 +10314,6 @@
             ]
         },
         "char_4048_doroth": {
-            "charId": "char_4048_doroth",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10754,8 +10340,6 @@
             ]
         },
         "char_1027_greyy2": {
-            "charId": "char_1027_greyy2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10782,8 +10366,6 @@
             ]
         },
         "char_135_halo": {
-            "charId": "char_135_halo",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10809,8 +10391,6 @@
             ]
         },
         "char_1026_gvial2": {
-            "charId": "char_1026_gvial2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10844,8 +10424,6 @@
             ]
         },
         "char_4055_bgsnow": {
-            "charId": "char_4055_bgsnow",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10872,8 +10450,6 @@
             ]
         },
         "char_497_ctable": {
-            "charId": "char_497_ctable",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10899,8 +10475,6 @@
             ]
         },
         "char_4054_malist": {
-            "charId": "char_4054_malist",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10934,8 +10508,6 @@
             ]
         },
         "char_4064_mlynar": {
-            "charId": "char_4064_mlynar",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10962,8 +10534,6 @@
             ]
         },
         "char_4032_provs": {
-            "charId": "char_4032_provs",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -10997,8 +10567,6 @@
             ]
         },
         "char_4066_highmo": {
-            "charId": "char_4066_highmo",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11025,8 +10593,6 @@
             ]
         },
         "char_4067_lolxh": {
-            "charId": "char_4067_lolxh",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11053,8 +10619,6 @@
             ]
         },
         "char_4072_ironmn": {
-            "charId": "char_4072_ironmn",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11081,8 +10645,6 @@
             ]
         },
         "char_4071_peper": {
-            "charId": "char_4071_peper",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11116,8 +10678,6 @@
             ]
         },
         "char_157_dagda": {
-            "charId": "char_157_dagda",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11143,8 +10703,6 @@
             ]
         },
         "char_4062_totter": {
-            "charId": "char_4062_totter",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11171,8 +10729,6 @@
             ]
         },
         "char_1028_texas2": {
-            "charId": "char_1028_texas2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11198,8 +10754,6 @@
             ]
         },
         "char_4065_judge": {
-            "charId": "char_4065_judge",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11226,8 +10780,6 @@
             ]
         },
         "char_4014_lunacu": {
-            "charId": "char_4014_lunacu",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11254,8 +10806,6 @@
             ]
         },
         "char_427_vigil": {
-            "charId": "char_427_vigil",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11282,8 +10832,6 @@
             ]
         },
         "char_466_qanik": {
-            "charId": "char_466_qanik",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11309,8 +10857,6 @@
             ]
         },
         "char_4063_quartz": {
-            "charId": "char_4063_quartz",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11337,8 +10883,6 @@
             ]
         },
         "char_4017_puzzle": {
-            "charId": "char_4017_puzzle",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11365,8 +10909,6 @@
             ]
         },
         "char_297_hamoni": {
-            "charId": "char_297_hamoni",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11393,8 +10935,6 @@
             ]
         },
         "char_1020_reed2": {
-            "charId": "char_1020_reed2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11428,8 +10968,6 @@
             ]
         },
         "char_2024_chyue": {
-            "charId": "char_2024_chyue",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11456,8 +10994,6 @@
             ]
         },
         "char_4080_lin": {
-            "charId": "char_4080_lin",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11484,8 +11020,6 @@
             ]
         },
         "char_493_firwhl": {
-            "charId": "char_493_firwhl",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11512,8 +11046,6 @@
             ]
         },
         "char_4078_bdhkgt": {
-            "charId": "char_4078_bdhkgt",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11547,8 +11079,6 @@
             ]
         },
         "char_4082_qiubai": {
-            "charId": "char_4082_qiubai",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11574,8 +11104,6 @@
             ]
         },
         "char_4083_chimes": {
-            "charId": "char_4083_chimes",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11601,8 +11129,6 @@
             ]
         },
         "char_1029_yato2": {
-            "charId": "char_1029_yato2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11629,8 +11155,6 @@
             ]
         },
         "char_1030_noirc2": {
-            "charId": "char_1030_noirc2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11657,8 +11181,6 @@
             ]
         },
         "char_4077_palico": {
-            "charId": "char_4077_palico",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11685,8 +11207,6 @@
             ]
         },
         "char_4091_ulika": {
-            "charId": "char_4091_ulika",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11713,8 +11233,6 @@
             ]
         },
         "char_4087_ines": {
-            "charId": "char_4087_ines",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11741,8 +11259,6 @@
             ]
         },
         "char_464_cement": {
-            "charId": "char_464_cement",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11769,8 +11285,6 @@
             ]
         },
         "char_154_morgan": {
-            "charId": "char_154_morgan",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11797,8 +11311,6 @@
             ]
         },
         "char_491_humus": {
-            "charId": "char_491_humus",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11825,8 +11337,6 @@
             ]
         },
         "char_249_mlyss": {
-            "charId": "char_249_mlyss",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11853,8 +11363,6 @@
             ]
         },
         "char_4027_heyak": {
-            "charId": "char_4027_heyak",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11888,8 +11396,6 @@
             ]
         },
         "char_1031_slent2": {
-            "charId": "char_1031_slent2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11916,8 +11422,6 @@
             ]
         },
         "char_4006_melnte": {
-            "charId": "char_4006_melnte",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11943,8 +11447,6 @@
             ]
         },
         "char_4093_frston": {
-            "charId": "char_4093_frston",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -11971,8 +11473,6 @@
             ]
         },
         "char_1032_excu2": {
-            "charId": "char_1032_excu2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12006,8 +11506,6 @@
             ]
         },
         "char_4015_spuria": {
-            "charId": "char_4015_spuria",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12041,8 +11539,6 @@
             ]
         },
         "char_498_inside": {
-            "charId": "char_498_inside",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12069,8 +11565,6 @@
             ]
         },
         "char_2012_typhon": {
-            "charId": "char_2012_typhon",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12097,8 +11591,6 @@
             ]
         },
         "char_341_sntlla": {
-            "charId": "char_341_sntlla",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12125,8 +11617,6 @@
             ]
         },
         "char_4102_threye": {
-            "charId": "char_4102_threye",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12152,8 +11642,6 @@
             ]
         },
         "char_4106_bryota": {
-            "charId": "char_4106_bryota",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12180,8 +11668,6 @@
             ]
         },
         "char_1033_swire2": {
-            "charId": "char_1033_swire2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12208,8 +11694,6 @@
             ]
         },
         "char_488_buildr": {
-            "charId": "char_488_buildr",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12236,8 +11720,6 @@
             ]
         },
         "char_1016_agoat2": {
-            "charId": "char_1016_agoat2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12271,8 +11753,6 @@
             ]
         },
         "char_1034_jesca2": {
-            "charId": "char_1034_jesca2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12299,8 +11779,6 @@
             ]
         },
         "char_4105_almond": {
-            "charId": "char_4105_almond",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12327,8 +11805,6 @@
             ]
         },
         "char_4104_coldst": {
-            "charId": "char_4104_coldst",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12355,8 +11831,6 @@
             ]
         },
         "char_4088_hodrer": {
-            "charId": "char_4088_hodrer",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12382,8 +11856,6 @@
             ]
         },
         "char_4110_delphn": {
-            "charId": "char_4110_delphn",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12410,8 +11882,6 @@
             ]
         },
         "char_494_vendla": {
-            "charId": "char_494_vendla",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12437,8 +11907,6 @@
             ]
         },
         "char_4107_vrdant": {
-            "charId": "char_4107_vrdant",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12465,8 +11933,6 @@
             ]
         },
         "char_245_cello": {
-            "charId": "char_245_cello",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12493,8 +11959,6 @@
             ]
         },
         "char_4098_vvana": {
-            "charId": "char_4098_vvana",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12521,8 +11985,6 @@
             ]
         },
         "char_4011_lessng": {
-            "charId": "char_4011_lessng",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12556,8 +12018,6 @@
             ]
         },
         "char_499_kaitou": {
-            "charId": "char_499_kaitou",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12583,8 +12043,6 @@
             ]
         },
         "char_4109_baslin": {
-            "charId": "char_4109_baslin",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12618,8 +12076,6 @@
             ]
         },
         "char_4100_caper": {
-            "charId": "char_4100_caper",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12646,8 +12102,6 @@
             ]
         },
         "char_4116_blkkgt": {
-            "charId": "char_4116_blkkgt",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12681,8 +12135,6 @@
             ]
         },
         "char_194_leto": {
-            "charId": "char_194_leto",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12709,8 +12161,6 @@
             ]
         },
         "char_4114_harold": {
-            "charId": "char_4114_harold",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12737,8 +12187,6 @@
             ]
         },
         "char_4117_ray": {
-            "charId": "char_4117_ray",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12772,8 +12220,6 @@
             ]
         },
         "char_4081_warmy": {
-            "charId": "char_4081_warmy",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12807,8 +12253,6 @@
             ]
         },
         "char_2025_shu": {
-            "charId": "char_2025_shu",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12835,8 +12279,6 @@
             ]
         },
         "char_4121_zuole": {
-            "charId": "char_4121_zuole",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12863,8 +12305,6 @@
             ]
         },
         "char_4122_grabds": {
-            "charId": "char_4122_grabds",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12891,8 +12331,6 @@
             ]
         },
         "char_4119_wanqin": {
-            "charId": "char_4119_wanqin",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12919,8 +12357,6 @@
             ]
         },
         "char_4023_rfalcn": {
-            "charId": "char_4023_rfalcn",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12947,8 +12383,6 @@
             ]
         },
         "char_4123_ela": {
-            "charId": "char_4123_ela",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -12975,8 +12409,6 @@
             ]
         },
         "char_4124_iana": {
-            "charId": "char_4124_iana",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13003,8 +12435,6 @@
             ]
         },
         "char_4125_rdoc": {
-            "charId": "char_4125_rdoc",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13031,8 +12461,6 @@
             ]
         },
         "char_4126_fuze": {
-            "charId": "char_4126_fuze",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13059,8 +12487,6 @@
             ]
         },
         "char_4132_ascln": {
-            "charId": "char_4132_ascln",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13087,8 +12513,6 @@
             ]
         },
         "char_446_aroma": {
-            "charId": "char_446_aroma",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13115,8 +12539,6 @@
             ]
         },
         "char_4131_odda": {
-            "charId": "char_4131_odda",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13150,8 +12572,6 @@
             ]
         },
         "char_4130_luton": {
-            "charId": "char_4130_luton",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13178,8 +12598,6 @@
             ]
         },
         "char_1035_wisdel": {
-            "charId": "char_1035_wisdel",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13213,8 +12631,6 @@
             ]
         },
         "char_4133_logos": {
-            "charId": "char_4133_logos",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13241,8 +12657,6 @@
             ]
         },
         "char_4134_cetsyr": {
-            "charId": "char_4134_cetsyr",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13276,8 +12690,6 @@
             ]
         },
         "char_1036_fang2": {
-            "charId": "char_1036_fang2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13304,8 +12716,6 @@
             ]
         },
         "char_4136_phonor": {
-            "charId": "char_4136_phonor",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13332,8 +12742,6 @@
             ]
         },
         "char_4079_haini": {
-            "charId": "char_4079_haini",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13359,8 +12767,6 @@
             ]
         },
         "char_4137_udflow": {
-            "charId": "char_4137_udflow",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13386,8 +12792,6 @@
             ]
         },
         "char_4145_ulpia": {
-            "charId": "char_4145_ulpia",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13414,8 +12818,6 @@
             ]
         },
         "char_4146_nymph": {
-            "charId": "char_4146_nymph",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13449,8 +12851,6 @@
             ]
         },
         "char_4151_tinman": {
-            "charId": "char_4151_tinman",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13476,8 +12876,6 @@
             ]
         },
         "char_4147_mitm": {
-            "charId": "char_4147_mitm",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13504,8 +12902,6 @@
             ]
         },
         "char_4058_pepe": {
-            "charId": "char_4058_pepe",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13532,8 +12928,6 @@
             ]
         },
         "char_4138_narant": {
-            "charId": "char_4138_narant",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13560,8 +12954,6 @@
             ]
         },
         "char_4140_lasher": {
-            "charId": "char_4140_lasher",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13587,8 +12979,6 @@
             ]
         },
         "char_4139_papyrs": {
-            "charId": "char_4139_papyrs",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13614,8 +13004,6 @@
             ]
         },
         "char_4141_marcil": {
-            "charId": "char_4141_marcil",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13649,8 +13037,6 @@
             ]
         },
         "char_4143_sensi": {
-            "charId": "char_4143_sensi",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13677,8 +13063,6 @@
             ]
         },
         "char_4144_chilc": {
-            "charId": "char_4144_chilc",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13705,8 +13089,6 @@
             ]
         },
         "char_4142_laios": {
-            "charId": "char_4142_laios",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13733,8 +13115,6 @@
             ]
         },
         "char_1019_siege2": {
-            "charId": "char_1019_siege2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13760,8 +13140,6 @@
             ]
         },
         "char_487_bobb": {
-            "charId": "char_487_bobb",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13788,8 +13166,6 @@
             ]
         },
         "char_4162_cathy": {
-            "charId": "char_4162_cathy",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13823,8 +13199,6 @@
             ]
         },
         "char_1038_whitw2": {
-            "charId": "char_1038_whitw2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13851,8 +13225,6 @@
             ]
         },
         "char_1502_crosly": {
-            "charId": "char_1502_crosly",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13879,8 +13251,6 @@
             ]
         },
         "char_4026_vulpis": {
-            "charId": "char_4026_vulpis",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13914,8 +13284,6 @@
             ]
         },
         "char_4148_philae": {
-            "charId": "char_4148_philae",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13942,8 +13310,6 @@
             ]
         },
         "char_4155_talr": {
-            "charId": "char_4155_talr",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13969,8 +13335,6 @@
             ]
         },
         "char_4165_ctrail": {
-            "charId": "char_4165_ctrail",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -13997,8 +13361,6 @@
             ]
         },
         "char_1039_thorn2": {
-            "charId": "char_1039_thorn2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14025,8 +13387,6 @@
             ]
         },
         "char_4164_tecno": {
-            "charId": "char_4164_tecno",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14053,8 +13413,6 @@
             ]
         },
         "char_4163_rosesa": {
-            "charId": "char_4163_rosesa",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14081,8 +13439,6 @@
             ]
         },
         "char_2026_yu": {
-            "charId": "char_2026_yu",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14109,8 +13465,6 @@
             ]
         },
         "char_1040_blaze2": {
-            "charId": "char_1040_blaze2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14137,8 +13491,6 @@
             ]
         },
         "char_4052_surfer": {
-            "charId": "char_4052_surfer",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14164,8 +13516,6 @@
             ]
         },
         "char_4172_xingzh": {
-            "charId": "char_4172_xingzh",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14199,8 +13549,6 @@
             ]
         },
         "char_4010_etlchi": {
-            "charId": "char_4010_etlchi",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14226,8 +13574,6 @@
             ]
         },
         "char_4173_nowell": {
-            "charId": "char_4173_nowell",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14254,8 +13600,6 @@
             ]
         },
         "char_450_necras": {
-            "charId": "char_450_necras",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14289,8 +13633,6 @@
             ]
         },
         "char_4171_wulfen": {
-            "charId": "char_4171_wulfen",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14317,8 +13659,6 @@
             ]
         },
         "char_4177_brigid": {
-            "charId": "char_4177_brigid",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14344,8 +13684,6 @@
             ]
         },
         "char_4179_monstr": {
-            "charId": "char_4179_monstr",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14372,8 +13710,6 @@
             ]
         },
         "char_4178_alanna": {
-            "charId": "char_4178_alanna",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14407,8 +13743,6 @@
             ]
         },
         "char_445_wscoot": {
-            "charId": "char_445_wscoot",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14435,8 +13769,6 @@
             ]
         },
         "char_1041_angel2": {
-            "charId": "char_1041_angel2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14470,8 +13802,6 @@
             ]
         },
         "char_4193_lemuen": {
-            "charId": "char_4193_lemuen",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14497,8 +13827,6 @@
             ]
         },
         "char_4194_rmixer": {
-            "charId": "char_4194_rmixer",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14532,8 +13860,6 @@
             ]
         },
         "char_4187_graceb": {
-            "charId": "char_4187_graceb",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14560,8 +13886,6 @@
             ]
         },
         "char_4188_confes": {
-            "charId": "char_4188_confes",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14588,8 +13912,6 @@
             ]
         },
         "char_1042_phatm2": {
-            "charId": "char_1042_phatm2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14615,8 +13937,6 @@
             ]
         },
         "char_4191_tippi": {
-            "charId": "char_4191_tippi",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14643,8 +13963,6 @@
             ]
         },
         "char_4198_christ": {
-            "charId": "char_4198_christ",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14671,8 +13989,6 @@
             ]
         },
         "char_4195_radian": {
-            "charId": "char_4195_radian",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14699,8 +14015,6 @@
             ]
         },
         "char_4196_reckpr": {
-            "charId": "char_4196_reckpr",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14727,8 +14041,6 @@
             ]
         },
         "char_1043_leizi2": {
-            "charId": "char_1043_leizi2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14755,8 +14067,6 @@
             ]
         },
         "char_1044_hsgma2": {
-            "charId": "char_1044_hsgma2",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14783,8 +14093,6 @@
             ]
         },
         "char_4202_haruka": {
-            "charId": "char_4202_haruka",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14811,8 +14119,6 @@
             ]
         },
         "char_4203_kichi": {
-            "charId": "char_4203_kichi",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14838,8 +14144,6 @@
             ]
         },
         "char_4199_makiri": {
-            "charId": "char_4199_makiri",
-            "maxManpower": 8640000,
             "buffChar": [
                 {
                     "buffData": [
@@ -14856,6 +14160,143 @@
                     "buffData": [
                         {
                             "buffId": "meet_spd_notOwned[002]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4182_oblvns": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_prod_bd_spd[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "control_prod_bd_spd[010]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_mp_cost&bd3[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4183_mortis": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_mp_bd&trade[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_mp_cost_reset[000]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4185_amoris": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_meeting_spd&bd[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_mp&meet_spd[000]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4184_dolris": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_dorm_bd[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_dorm_rec2[000]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4186_tmoris": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_hire_spd&bd[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_tra_limit&spd2[000]",
                             "cond": {
                                 "phase": "PHASE_2",
                                 "level": 1

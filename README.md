@@ -1,9 +1,8 @@
 # Known Issue
 ### # Akhrchar
-    - Animation on Kroos L2D
+    - Animation on Kroos SP L2D
 ### # Akenemy
     - Autochess variant maps
-    - Mechanic training stage
     - not safe for mobile
 
 # Next Step

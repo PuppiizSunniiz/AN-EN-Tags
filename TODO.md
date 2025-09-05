@@ -1,13 +1,4 @@
 # Fix TL (Official EN) waiting room
-### When Elegies Are Ashes
-- Talent > Mod
-    - Necrass
-- Trait
-    - Necrass 's Token
-    - alc-x
-    - umd-y
-    - bea-y
-
 ### EP15 : Dissociative Recombination
 - Talent > Mod
     - Windscoot
@@ -55,11 +46,17 @@
     - IS-A : Swire alter
     - RA-A : Pepe
 
-### To Fix 
-- Tecno Mod Range display
-    - range not on display but added talent (-1)
+### Somniloquium Serenum (Arknights X Eve Mujica)
+- Trait
+    - RIT-Y : Virtuosa
 
+### To Fix 
+Yahata Umiri Talents 2
+    - dont have Elite 1 desc/upgrade > Pot talent not shown
+Togawa Sakiko Skill 2/3
+    - fix regex being eaten too quick
 ### To Do
+- Independent-miya
 - Token
     - Skill SP recovery
     - Mod talent
@@ -69,4 +66,3 @@
 - Add all background element for various L2D
 - token animation list
 - re-add enemies chibi
-- story_review_meta_table.json > trainingCampData > stageData

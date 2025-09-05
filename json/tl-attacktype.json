@@ -826,28 +826,28 @@
             "code": "uniequip_004_zumama"
         },
         "能够阻挡一个敌人（阻挡数会根据等级改变），攻击造成法术伤害": {
-            "en": "Blocks 1 enemies (number of block change according to its upgrade), deals <@ba.kw>Arts damage</>",
+            "en": "Blocks 1 enemy (Block count varies according to level), and attacks deal Arts damage",
             "color": "magic",
             "note": "Necrass 's Token (The Servant of Lament)",
             "name": "The Servant of Lament",
             "code": "token_10043_necras_skeltn"
         },
         "场上存在炼金单元时，技力自然恢复速度+0.1/秒": {
-            "en": "When there are Alchemical units on the field, increase SP recovery rate by +0.1 SP/sec",
+            "en": "Increases SP recovery rate by +0.1/s while an Alchemical Unit is on the field",
             "color": "extra",
             "note": "new mods alc-x",
             "name": "char_4151_tinman",
             "code": "uniequip_002_tinman"
         },
         "攻击范围内存在精英或领袖敌人时技力自然恢复速度+0.25/秒": {
-            "en": "When there are elite or leader enemies within Attack Range, increase SP recovery rate by +0.25 SP/sec",
+            "en": "Increases SP recovery rate by +0.25/s while an elite or leader enemy is within Attack Range",
             "color": "extra",
             "note": "new mods umd-y",
             "name": "char_206_gnosis",
             "code": "uniequip_003_gnosis"
         },
         "技能发动期间阻挡数变为0，但获得<$ba.camou>迷彩</>": {
-            "en": "Cannot block enemies but gain <$ba.camou>camouflage</> during the skill duration",
+            "en": "Cannot block enemies during the skill duration, but gains <$ba.camou>Camouflage</>",
             "color": "extra",
             "note": "new mods bea-y",
             "name": "char_479_sleach",
@@ -938,7 +938,7 @@
             "code": "uniequip_003_doroth"
         },
         "持续攻击创造出飞行一段距离的子弹，子弹对碰撞到的首个地面敌方单位造成物理伤害。": {
-            "en": "Continuously launch a Straight Shot that fly for certain distance, deal Physical damage to first ground enemy they collide with",
+            "en": "Continuous launch a Straight Shot that fly for certain distance, deal Physical damage to first ground enemy they collide with",
             "color": "physical",
             "note": "Raidian 's Token (cycle)",
             "name": "cycle",
@@ -985,6 +985,20 @@
             "note": "new mods ra-a",
             "name": "char_4058_pepe",
             "code": "uniequip_003_pepe"
+        },
+        "攻击范围内存在2名及以上其他干员时，攻击力+8%（不受技能影响）": {
+            "en": "When there are 2 or more other Operators within range, ATK <@ba.kw>+8%</> (unaffected by skill)",
+            "color": "common",
+            "note": "new mods bar-x",
+            "name": "char_4184_dolris",
+            "code": "uniequip_002_dolris"
+        },
+        "攻击范围内敌人受到10%的<$ba.elementfragile>元素脆弱</>": {
+            "en": "Inflict 10% <$ba.elementfragile>Elemental Fragility</> to enemies within Attack Range",
+            "color": "extra",
+            "note": "new mods rit-y",
+            "name": "char_245_cello",
+            "code": "uniequip_003_cello"
         }
     },
     "parts": [

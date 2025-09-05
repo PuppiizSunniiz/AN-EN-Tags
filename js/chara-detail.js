@@ -103,7 +103,11 @@
     var globallevel = [1,1,1]
     var globalskill = 0
     var skillValue
-    const TRUE_INFINITY = ['skchr_lolxh_1', 'skchr_strong_1', 'skchr_strong_2', 'skchr_nothin_2', 'skchr_talr_1', 'skchr_flameb_2', 'skchr_whitew_1', 'skchr_platnm_2', 'skchr_absin_1', 'skchr_folivo_1', 'skchr_tuye_2', 'skchr_whispr_2', 'skchr_vodfox_1', 'skchr_quercu_1', 'skchr_ash_1', 'skchr_acnipe_2', 'skchr_bgsnow_1', 'skchr_phenxi_3', 'skchr_ray_2', 'skchr_narant_1', 'skchr_marcil_2', 'skchr_logos_1', 'skchr_lin_1', 'skchr_gdglow_2', 'skchr_whitw2_1', 'skchr_lisa_2', 'skchr_skadi2_2', 'skchr_cetsyr_1', 'skchr_lmlee_1', 'skchr_lmlee_3', 'skchr_swire2_1', 'skchr_swire2_2', 'skchr_swire2_3', 'skchr_weedy_2', 'skchr_agoat2_1', 'skchr_jesca2_1', 'skchr_nearl2_1', 'skchr_f12yin_2', 'skchr_svrash_2', 'skchr_hodrer_2', 'skchr_ulpia_2', 'skchr_huang_2', 'skchr_surtr_3', 'skchr_siege2_2', 'skchr_phatm2_2', "skchr_hsgma2_1"]
+
+    const STANCE_SKILL          = ["skchr_lolxh_1", "skchr_nothin_2", "skchr_phenxi_3", "skchr_narant_1", "skchr_lin_1", "skchr_whitw2_1", "skchr_f12yin_2", "skchr_svrash_2", "skchr_hodrer_2", "skchr_oblvns_2"]
+    const INFINITE_SKILL        = ["skchr_strong_1", "skchr_strong_2", "skchr_talr_1", "skchr_flameb_2", "skchr_whitew_1", "skchr_platnm_2", "skchr_absin_1", "skchr_folivo_1", "skchr_tuye_2", "skchr_whispr_2", "skchr_vodfox_1", "skchr_quercu_1", "skchr_ash_1", "skchr_acnipe_2", "skchr_bgsnow_1", "skchr_ray_2", "skchr_marcil_2", "skchr_logos_1", "skchr_gdglow_2", "skchr_lisa_2", "skchr_skadi2_2", "skchr_cetsyr_1", "skchr_lmlee_1", "skchr_lmlee_3", "skchr_swire2_1", "skchr_swire2_2", "skchr_swire2_3", "skchr_weedy_2", "skchr_agoat2_1", "skchr_jesca2_1", "skchr_nearl2_1", "skchr_ulpia_2", "skchr_huang_2", "skchr_surtr_3", "skchr_siege2_2", "skchr_phatm2_2", "skchr_hsgma2_1"]
+    const INFINITE_DURATION     = [...STANCE_SKILL, ...INFINITE_SKILL]
+    
     var israritygrouped
     var talentValue = [0,0,0]
     var toktalentValue = [0,0,0]
@@ -1955,7 +1959,7 @@
                         spDuration = v2.duration + " Seconds"
                         spDurType = "Number"
                         spDurationName = "Duration"
-                    }else if(TRUE_INFINITY.includes(skillId)){
+                    }else if(INFINITE_DURATION.includes(skillId)){
                         spDuration = "Infinite"
                         spDurType = "Infinite"
                         spDurationName = "Duration"
@@ -2179,9 +2183,9 @@
                 var tabhtml = ""
                 var contenthtml = ""
 
-                equiplist.forEach(element => {
-                    var currequip = db.uniequip.equipDict[element]
-                    var currequipEN = db.uniequipEN.equipDict[element]
+                equiplist.forEach(module => {
+                    var currequip = db.uniequip.equipDict[module]
+                    var currequipEN = db.uniequipEN.equipDict[module]
                     var currebattequip
                     var equiphtml = []
                     if(db.battle_equip[currequip.uniEquipId]){
@@ -2232,17 +2236,16 @@
                                         }
                                     }
                                 if(part.target == "TALENT"){
-                                    console.log(part.rangeId)
-                                    if(part.addOrOverrideTalentDataBundle.candidates[0].rangeId && part.addOrOverrideTalentDataBundle.candidates[0].displayRangeId){
-                                        equiphtml[curreqphase]+=`${titledMaker2(rangeMaker(part.addOrOverrideTalentDataBundle.candidates[0].rangeId,false),"")}`
+                                    if(part.addOrOverrideTalentDataBundle.candidates[0].rangeId && (part.addOrOverrideTalentDataBundle.candidates[0].displayRangeId || module == "uniequip_002_tecno")){ // Bandage
+                                        equiphtml[curreqphase] += `${titledMaker2(rangeMaker(part.addOrOverrideTalentDataBundle.candidates[0].rangeId, false), "")}`
                                         trait_range_id = part.addOrOverrideTalentDataBundle.candidates[0].rangeId
                                     }
                                 }
                             });
                             //insert Module Talent with potentials
-                            if(curreqphase>0) equiphtml[curreqphase]+=`${GetModuleTalent(phase.parts,element,num,curreqphase,trait_range_id)}`
+                            if(curreqphase > 0) equiphtml[curreqphase] += `${GetModuleTalent(phase.parts, module, num, curreqphase, trait_range_id)}`
 
-                            if(phase.attributeBlackboard.length>0){
+                            if(phase.attributeBlackboard.length > 0){
                                 var statcontent = ''
                                 phase.attributeBlackboard.forEach(stat => {
                                     var tlstat = db.effect[stat.key]
@@ -2390,7 +2393,7 @@
                         <div class='small-container' style='margin-top: 50px;'>
                             <span class='custom-span equipname'><div>${currequipEN?currequipEN.uniEquipName:currequip.uniEquipName}</div></span>
                                 <div class='equipimage'>
-                                    <button type="button" class="btn ak-button" style="width:90px;height:90px" data-toggle="modal" data-target="#opmodulestory" onclick="GetModuleStory('${element}')">
+                                    <button type="button" class="btn ak-button" style="width:90px;height:90px" data-toggle="modal" data-target="#opmodulestory" onclick="GetModuleStory('${module}')">
                                         <span style="position:absolute;font-size: 14px;bottom:4px;left:4px;color:#fff;background:#222222dd;padding:4px;border-radius:2px" class="fa fa-search-plus"> Info</span>
                                         ${currequip.uniEquipId.search("001")!=-1?`<img class='equip-image' id='equip${i}image_add' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/subclass/sub_${opdataFull.subProfessionId}_icon.png'style='z-index: 1;  width: 21%;  top: 27.7%;  position: absolute;  left: 37.2%;  max-height: 21%;object-fit: contain;  filter: invert(5%) sepia(6%) saturate(913%) hue-rotate(12deg) brightness(83%) contrast(86%);'>`:""}
                                         <img loading='lazy' class='equip-image' id='equip${num}image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/icon/${currequip.uniEquipIcon.search("001")==-1?currequip.uniEquipIcon:"original"}.png' style='width: 90px;height:90px;object-fit:contain' onerror="this.src='extra/not_found.png';">
@@ -3980,8 +3983,7 @@
         //check potential token
         var pot_token_id = opdataFull.potentialItemId?opdataFull.potentialItemId:opdataFull.activityPotentialItemId
         var pot_token = db.potential_token[pot_token_id]
-        console.log(recruitcheck.itemDesc, pot_token_id)
-
+        console.log(recruitcheck.itemDesc, pot_token_id, pot_token)
 
         // post both
         if(recruitcheck.itemDesc){
@@ -3994,7 +3996,7 @@
                                 <td>${recruitcheck.itemUsage}</td>
                             </tr></table>
                             </div>`)
-            if(pot_token_id){
+            if(pot_token_id && pot_token){
                 textTL.push(`<div class="col-12 col-sm-6 top-buffer storysplit">
                         <table class="story-table"><th colspan=2>${pot_token_id.includes("voucher_")?"Folder":"Token"}</th>
                         <tr>
@@ -4007,7 +4009,6 @@
                         </div>`)
             }
         }
-
 
         if(currStory.storyTextAudio){
             currStory.storyTextAudio.forEach(storySection => {

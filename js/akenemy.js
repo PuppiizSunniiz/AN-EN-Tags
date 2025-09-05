@@ -224,6 +224,8 @@ function selectGamemode(el){
             return "Episode"
         case "sidestory" :
             return "Side Story"
+        case "mechanic":
+            return "Training Stage"
         case "supply":
             return "Operation"
         case "campaign":
@@ -294,9 +296,9 @@ function event_listing(gamemode){    // new
         let NoZone = false
         Object.keys(activity_dict[act]["zone"]).forEach(zone =>{
             let stage_list = ""
-            if (act == zone) NoAct = true
+            if (act == zone | ["Mechanic"].includes(act)) NoAct = true
             Object.keys(activity_dict[act]["zone"][zone]["stage"]).forEach(stage =>{
-                if (stage == zone) NoZone = true
+                if (zone == stage | ["Mechanic"].includes(act)) NoZone = true
                 stage_list += stage_lister(act, zone, stage)
             })
             if (NoZone) zone_list += stage_list
