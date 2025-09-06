@@ -4578,6 +4578,12 @@
                     }
                 }
             }
+            // Add pot talent check for E1 skip upgrade (E0 > E2) Yahata Umiri case
+            if(lastPotential != 0 && talentObject.req.includes(`0-1-${lastPotential}`) && talentObject.req.includes(`2-1-${lastPotential}`) && !talentObject.req.includes(`1-1-${lastPotential}`)){
+                talentObject.req.push(`${1}-${1}-${lastPotential}`)
+                talentObject.req2.push([1, 1, lastPotential])
+                talentObject.html[`${1}-${1}-${lastPotential}`]={req:[0, 1, lastPotential], talents:[]}
+            }
         });
         // console.log(activeElite)
         // console.log(activeLevel)
@@ -5047,7 +5053,7 @@
         }
         
         currTalentDesc = ChangeDescriptionColor2(currTalentDesc.replace(/\<([A-Za-z ]+)\>/g,"&lt;"+"$1"+'&gt;').replace(/\n/g,"</br>"))
-        // console.log(eachtalent.talent.name)
+        console.log(eachtalent.talent.name, currTalentDesc)
         var isTalentRange = eachtalent.talent.rangeId
         var blacklist = ["新人教官"]
         if(blacklist.includes(eachtalent.talent.name)){
@@ -5697,30 +5703,29 @@
         return desc
     }
 
-    function ChangeDesc1(desc,addbackgroundcolor = false){
-        if(!desc){
-            console.log("DESC NULL")
+    function ChangeDesc1(desc = "", addbackgroundcolor = false){
+        const nested_rtf = /<[@][^>]+>((?:(<[\$@][^>]+>[^<]*?<\/>)|.+?)*?)<\/>/g
+        const sub_nested_rtf = /(?=(?:<[@][^>]+>))(<[@][^>]+>[^<]+<\/>)/g
+        function ChangeDesc1_loop(desc = "", desc_match = []){
+            if (desc_match && desc_match.length){
+                desc_match.forEach(sub_desc =>{
+                    desc = desc.replace(sub_desc, ChangeDesc1_replace(sub_desc))
+                })
+            }
             return desc
         }
-
-        // catch </> missing case (Executor the Ex Foedere S1 EN)
-        if ((desc.match(/<[@][^>]+>/g) ?? 0).length - (desc.match(/<\/>/g) ?? 0).length == 1) desc += "</>"
-
-        // catch nested <@><@></></> (Shamare S2 / Lumen S3)
-        if (desc.match(/<[@][^>]+>(?:(?!<\/>(?=[^<]*<[$@])).)*?<[@][^>]+>(?:(?!<\/>).)+?<\/>(?:(?!<\/>).)+?<\/>/g)){
-            desc = desc.replace(/(<[@][^>]+>(?:(?!<\/>(?=[^<]*<[$@])).)*?)<[@]([^>]+)>((?:(?!<\/>).)+?)<\/>((?:(?!<\/>).)+?<\/>)/g, function(m,the_begin, rtf, text, the_rest) {
-                console.log([desc])
-                console.log([the_begin, rtf, text, the_rest])
+        function ChangeDesc1_replace(sub_desc = ""){
+            sub_desc = sub_desc.replace(/^<[@]([^>]+)>(.+?|)<\/>$/g, function(m, rtf, text) {
+                console.log([sub_desc, rtf, text])
                 let rich = db.dataconst.richTextStyles[rtf];
                 let rich2 = db.named_effects.termDescriptionDict[rtf];
-                if (!rich2){
+                if (!rich2)
                     rich2 = db.dataconst.termDescriptionDict[rtf]
-                }
                 if (rich) {
                     let colorRTF = /<color=(#[0-9A-F]+)>\{0\}<\/color>/;
                     if (colorRTF.test(rich)) {
                         let color = colorRTF.exec(rich)[1]
-                        return `${the_begin}<span class="${addbackgroundcolor?`stat-important2`:""}" style="color:${color}">${text}</span>${the_rest}</>`
+                        return `<span class="${addbackgroundcolor?`stat-important2`:""}" style="color:${color}">${text}</span>`
                     }else{
                         return rich.replace('{0}', text)
                     }
@@ -5732,38 +5737,30 @@
                         <div class="tooltipcontent">${CreateTooltip(rich2.description.replace(/\'/g,"&apos;"))}</div>
                     </span>'
                     style="color:#0098DC">${text}</span>`
-                }else{
+                }else{  
                     return text
                 }
-        })}
-        console.log(desc)
+            })
+            if (sub_desc.match(sub_nested_rtf)){
+                sub_desc = ChangeDesc1_loop(sub_desc, sub_desc.match(sub_nested_rtf))
+            }
+                    
+            console.log([sub_desc])
+            return sub_desc
+        }
 
-        desc = desc.replace(/<[@]([^>]+)>((?:(?!<\/>).)*)<\/>/g, function(m, rtf, text) { ///<[@](.+?)>(.+?)<\/>/g cant catch blank 2nd capture group (Glaucus S1 EN)
-            let rich = db.dataconst.richTextStyles[rtf];
-            let rich2 = db.named_effects.termDescriptionDict[rtf];
-            if (!rich2){
-                rich2 = db.dataconst.termDescriptionDict[rtf]
-            }
-            if (rich) {
-                let colorRTF = /<color=(#[0-9A-F]+)>\{0\}<\/color>/;
-                if (colorRTF.test(rich)) {
-                    let color = colorRTF.exec(rich)[1]
-                    return `<span class="${addbackgroundcolor?`stat-important2`:""}" style="color:${color}">${text}</span>`
-                }else{
-                    return rich.replace('{0}', text)
-                }
-            } else if (rich2) {
-                return `<span class="stathover" data-toggle="tooltip" data-html="true" data-delay='{ "show": 0, "hide": 500 }' data-placement="bottom"
-                title='
-                <span class="tooltiptext" style="display:inline-block">
-                    <div class="tooltipHeader">${rich2.termName.replace(/\'/g,"&apos;")}</div>
-                    <div class="tooltipcontent">${CreateTooltip(rich2.description.replace(/\'/g,"&apos;"))}</div>
-                </span>'
-                style="color:#0098DC">${text}</span>`
-            }else{
-                return text
-            }
-        })
+        if(!desc){
+            console.log("DESC NULL")
+            return desc
+        }
+        // catch </> missing case (Executor the Ex Foedere S1 EN)
+        if ((desc.match(/<[@][^>]+>/g) ?? 0).length - (desc.match(/<\/>/g) ?? 0).length == 1) desc += "</>"
+
+        // catch nested <@><@></></> (Shamare S2 / Lumen S3) && catch blank 2nd capture group (Glaucus S1 EN) && Omega nested (Ave Mujica)
+        if (desc.match(nested_rtf))
+            desc = ChangeDesc1_loop(desc, desc.match(nested_rtf))
+
+        console.log(desc)
         return desc
     }
     function ChangeDesc2(desc){
