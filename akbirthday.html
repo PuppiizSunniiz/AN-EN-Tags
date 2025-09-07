@@ -2,75 +2,166 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthday Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name='theme-color' content='#222222ff'>
+    <title translate-id='web-title'>Birthday Test</title>
+    <link rel='manifest' href='./manifest.json' crossorigin='use-credentials'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='css/ak.css'>
+    <link rel="stylesheet" href="css/akriic.css">
+    <link rel="stylesheet" href="css/akchardetail.css">
+    <link href='https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.css' rel='stylesheet'>
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
     <script src='https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js'></script>
-    <script>
-        $.holdReady(true);
-
-        const jsonList = {
-            handbookInfo: "./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/handbook_info_table.json",
-        }
-
-        function LoadAllJsonObjects(obj) {
-            let result = {}
-
-            let promises = Object.entries(obj).map(function(url){
-                return $.getJSON(url[1]).then(function (res) {
-                    result[url[0]] = res
-                }).catch(function (e) {
-                    console.error("Failed to load file: " + url[0], e)
-                    result[url[0]] = {}
-                })
-            })
-
-            return Promise.all(promises).then(function(){
-                return result
-            })
-        }
-        
-        var db = {}
-        const birth = {"date": {}, "other": {}}
-        LoadAllJsonObjects(jsonList).then(result => {
-            db = result
-            $.holdReady(false)
-
-            const dict = db.handbookInfo.handbookDict
-            for (const [key, value] of Object.entries(dict)) {
-                const basic_info = value.storyTextAudio[0].stories[0].storyText.split("\n")
-                for (let i=0; i<basic_info.length; ++i) {
-                    if (basic_info[i].trimStart().startsWith("【生日】") === true) {
-                        let date = basic_info[i].trim().slice(4)
-                        if (date.slice(-1) === "日" && date.includes("月") === true) {
-                            date = date.slice(0, -1).split("月")
-                            const month = parseInt(date[0])
-                            const day = parseInt(date[1])
-                            if (birth.date[month] === undefined) {
-                                birth.date[month] = {}
-                            }
-                            if (birth.date[month][day] == undefined) {
-                                birth.date[month][day] = [key]
-                            } else {
-                                birth.date[month][day].push(key)
-                            }
-                        } else {
-                            if (birth.other[date] === undefined) {
-                                birth.other[date] = [key]
-                            } else {
-                                birth.other[date].push(key)
-                            }
-                        }
-                        break
-                    }
-                }
-            }
-            console.log(birth)
-        })
-
-
-    </script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js'></script>
 </head>
 <body>
-    
+    <div id="loadingOverlay" style="width: 100vw; height: 150%; background-color: #111111; position: absolute; z-index: 9999; top:0px;">
+        <div class="d-flex justify-content-center" style="margin-top: 50vh">
+            <div class="spinner-border" role="status" style="border-color: #0098DC; border-right-color: transparent; width: 4rem; height: 4rem;">
+            </div>
+        </div>
+        <div style="width: 100%; text-align: center; margin-top: 13px;">
+            <div class='loadtext'>Loading Toolbox</div>
+            <div></div>
+            <div class="loadforce" onclick="hideload()"><a>Click here if stuck on loading</a></div>
+        </div>
+    </div>
+    <script>
+        $(() => {
+          $('#nav-placeholder').load('nav.html');
+        });
+        $(window).on("load", function () {
+            setTimeout(function () {
+                $("#loadingOverlay").fadeOut(); 
+            }, 1000);
+        });
+    </script>
+    <button class="btn btn-sm btn-primary goToTag" style="position:fixed;bottom:15px ;right: 0px;size:70px 70px;padding: 10px;z-index: 10000" id="to-tag" type="button">^ </button>
+    <nav id="aknav" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="background-image: linear-gradient(#222222ff 70%,#222222ff , #111111aa );">
+            <img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/logo_rhodes.png" width="40" height="40" style="transform:scale(1.2,1.2)translate(-8px,1px)"class="d-inline-block align-top" alt="">
+            <a class="navbar-brand" href="#" translate-id="topbar-1">Arknights Toolbox</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="展开">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    </nav>
+    <div id='acedonate'></div>
+    <div style='padding-bottom:40px;'></div>
+
+    <div class="col-md-12 col-sm-12 " style="margin:auto;max-width:1000px;padding:0">
+        <div class="col-12 ak-bg ak-shadow mt-3" style="padding:15px;padding-top:0%;padding-bottom:0;border-radius:0px" role="alert">
+            <div class="row" style="padding:0;padding-bottom: 4px">
+                <div class="col-12 btn btn-sm ak-btn ak-c-black ak-shadow-small ak-disable" style="padding:0" translate-id="operator-select">Select Filter Type :</div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="row" style="margin:auto;padding:3px;text-align:center">
+                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 1)">January</button>
+                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 2)">February</button>
+                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 3)">March</button>
+                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 4)">April</button>
+                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 5)">May</button>
+                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 6)">June</button>
+                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 7)">July</button>
+                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 8)">August</button>
+                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 9)">September</button>
+                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 10)">October</button>
+                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 11)">November</button>
+                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 12)">December</button>
+                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-hire" onclick="FilterType('month', 0)">Other</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <button class="btn btn-danger col-12 align-self-center ak-btn text-center" style="padding:1px ; z-index: 0;font-weight: 550" onclick="clickBtnClear()" ><span translate-id="selector-clear">Clear</span> <span id="count-tag"></a> </button>
+            </div>
+        </div>
+
+        <table class="table ak-table ak-table-striped table-hover my-3 ak-shadow" id="table-recommend">
+            <thead class="ak-thead">
+                <tr><th scope="col" colspan="10" style="text-align: center;">Birthday Tables</th></tr>
+            </thead>
+        </table>
+
+        <div class="col-12 ak-bg ak-shadow mt-3" style="padding:15px;padding-top:15px;padding-bottom:0;border-radius:0px" role="alert">
+            <div class="row col-12" id="date">
+                <div class="table ak-table col-4" id="month-1">
+                    <div class="row">
+                        <div class="col-12">
+                            January
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">1</div>
+                        <div class="col-2">2</div>
+                        <div class="col-2">3</div>
+                        <div class="col-2">4</div>
+                        <div class="col-2">5</div>
+                        <div class="col-2">6</div>
+                        <div class="col-2">7</div>
+                        <div class="col-2">8</div>
+                        <div class="col-2">9</div>
+                        <div class="col-2">10</div>
+                        <div class="col-2">11</div>
+                        <div class="col-2">12</div>
+                        <div class="col-2">13</div>
+                        <div class="col-2">14</div>
+                        <div class="col-2">15</div>
+                        <div class="col-2">16</div>
+                        <div class="col-2">17</div>
+                        <div class="col-2">18</div>
+                        <div class="col-2">19</div>
+                        <div class="col-2">20</div>
+                        <div class="col-2">21</div>
+                        <div class="col-2">22</div>
+                        <div class="col-2">23</div>
+                        <div class="col-2">24</div>
+                    </div>
+                </div>
+                <div class="table ak-table col-4">a</div>
+                <div class="table ak-table col-4">a</div>
+                <div class="table ak-table col-4">b</div>
+                <div class="table ak-table col-4">b</div>
+                <div class="table ak-table col-4">b</div>
+                <div class="table ak-table col-4">c</div>
+                <div class="table ak-table col-4">c</div>
+                <div class="table ak-table col-4">c</div>
+                <div class="table ak-table col-4">d</div>
+                <div class="table ak-table col-4">d</div>
+                <div class="table ak-table col-4">d</div>
+            </div>
+            <div class="row col-12" id="other">
+                <div class="table ak-table col-12" id="other-1">
+                    <div class="row">
+                        <div class="col-2">Other1</div>
+                        <div class="col-10">[List of operators here]</div>
+                    </div>
+                </div>
+                <div class="table ak-table col-12">Other2</div>
+                <div class="table ak-table col-12">Other3</div>
+                <div class="table ak-table col-12">Other4</div>
+            </div>
+        </div>
+        
+        <div class="col-12 tutorial">
+            <div class="col-12 text-left ak-mid ak-shadow" style="padding:10px" >
+                <p>How To Use ：</p>
+                <p>1. Click on the filter to filter by X</p>
+                <p>2. Click 'Clear' to reset</p>
+            </div>
+        </div>
+        <div class="ak-div"></div>
+    </div>
+
+    <div class="row col-12 ak-footer">
+        <div class="col-12 text-center">
+            <p><a href="https://github.com/puppiizsunniiz/AN-EN-Tags/issues">Bug Report and Suggestions</a></p>
+            <p>Developed and Maintained by: AlfredPros and PuppiizSunniiz</p>
+        </div>
+    </div>
+    <script src="./js/aknav.js"></script>
+    <script src="./js/akbirthday.js"></script>
 </body>
 </html>
