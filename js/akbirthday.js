@@ -29,7 +29,7 @@ $(document).ready(() => {
         12: "December",
     }
 
-    function LoadAllJsonObjects(obj, db) {
+    async function LoadAllJsonObjects(obj, db) {
         const promises = Object.entries(obj).map(url => {
             return $.getJSON(url[1]).then(res => {
                 db[url[0]] = res
@@ -114,13 +114,13 @@ function CreateBirthdayTables(birth) {
                 </div>`
     for (const [key, value] of Object.entries(birth.other)) {
         prefix=`<div class="table ak-table col-12" id="other-1">
-                    <div class="row">
-                        <div class="col-2">${key} ${getBirthdayOther(key) ? "("+getBirthdayOther(key)+")" : ''}</div>
+                    <div class="row align-items-center">
+                        <div class="col-2">${getBirthdayOther(key) ? getBirthdayOther(key) : key}</div>
                         <div class="col-10">
-                            <ul>`
+                            <ul style="margin-bottom:0 !important;">`
         content = ""
         for (let i=0; i<value.length; ++i) {
-            let op_id = value[i]
+            const op_id = value[i]
             content += `<li class="selectop-grid3 ak-rare-${getOperatorRarity(op_id)}" onclick="selectOperator('${op_id}')">
                             <div class="op-image-grid2">
                                 <img loading='lazy' src="${avatar_url + op_id}.png">
@@ -160,6 +160,5 @@ function clickBtnClear() {
 function selectOperator(op_id) {
     window.open(base_url + 'akhrchars.html?opname='+getOperatorName(op_id), '_blank');
 }
-
 
 
