@@ -67,7 +67,7 @@ json_skillTL        =   json_load("json/ace/tl-skills.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS : list[str] = ["Togawa Sakiko", "Wakaba Mutsumi", "Misumi Uika", "Yahata Umiri", "Yūtenji Nyamu",] # "", 
+NEW_CHARS : list[str] = [] # "", 
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS : list[str] = [] # "",
@@ -104,6 +104,8 @@ MAT_LIST : list[str] = [mat_data["itemId"] for mat_data in json_akmaterial]
 # Def function
 #########################################################################################################
 def get_new_akhr(new_char_id : str, new_char_name : str) -> dict[str, Any]:
+    gender : str = ''.join(json_handbook["handbookDict"][new_char_id]["storyTextAudio"][0]["stories"][0]["storyText"].split("\n")[1].split("】")[1].split()) if new_char_id in json_handbook["handbookDict"] else "temp"
+    sex : dict[str, str] = {"女士" : "女"}
     return  {
                                     "id"            :   new_char_id,
                                     "name_cn"       :   json_char[new_char_id]["name"],
@@ -115,7 +117,7 @@ def get_new_akhr(new_char_id : str, new_char_name : str) -> dict[str, Any]:
                                     "teamId"        :   json_char[new_char_id]["teamId"],
                                     "type"          :   CLASS_PARSE_CN[json_char[new_char_id]["profession"]],
                                     "level"         :   int(json_char[new_char_id]["rarity"][-1]),
-                                    "sex"           :   ''.join(json_handbook["handbookDict"][new_char_id]["storyTextAudio"][0]["stories"][0]["storyText"].split("\n")[1].split("】")[1].split()) if new_char_id in json_handbook["handbookDict"] else "temp",
+                                    "sex"           :   sex.get(gender, gender),
                                     "tags"          :   (["高级资深干员"] if json_char[new_char_id]["rarity"][-1] == "6" else []) + \
                                                         (["资深干员"] if json_char[new_char_id]["rarity"][-1] == "5" else []) + \
                                                         (["近战位"] if json_char[new_char_id]["position"] == "MELEE" else []) + \

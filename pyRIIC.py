@@ -87,7 +87,7 @@ def riic_tl_json(show : bool = False):
                         match_faction_name_2  = riic_match_tl(match_faction_skill_1)
                         match_morale          = desc_match.group(5)
                         match_eff             = desc_match.group(6)
-                        return f'When this Operator is assigned to the Control Center, <${match_faction_skill_1}><@cc.rem>{match_faction_name_1}</></><@cc.vup>{match_point}</>; for every <@cc.vup>{match_count}</> points <${match_faction_skill_2}><@cc.rem>{match_faction_name_2}</></>,  decreases own morale consumption by <@cc.vdown>{match_morale}</>, , all Trading Posts\' order efficiency <@cc.vup>{match_eff}</> (Only the strongest effect of this type takes place)'
+                        return f'When this Operator is assigned to the Control Center, <${match_faction_skill_1}><@cc.rem>{match_faction_name_1}</></><@cc.vup>{match_point}</>; for every <@cc.vup>{match_count}</> points <${match_faction_skill_2}><@cc.rem>{match_faction_name_2}</></>,  decreases own morale consumption by <@cc.vdown>{match_morale}</>, all Trading Posts\' order efficiency <@cc.vup>{match_eff}</> (Only the strongest effect of this type takes place)'
                     # Control morale point "Togawa Sakiko" - Ave Mujica
                     re_control_mp_cost_bd3 = r'^进驻控制中枢时，([^<]*)处于<@cc\.kw>([0-9]*)<\/>点及以上时，自身心情每小时消耗<@cc\.vdown>([\+\.0-9]*)<\/>$'
                     if re.match(re_control_mp_cost_bd3, desc_sub):
@@ -172,7 +172,7 @@ def riic_tl_json(show : bool = False):
                         match_prod          = desc_match.group(1)
                         match_cap_desc      = desc_match.group(2)
                         match_cap           = desc_match.group(3)
-                        return f'When this Operator is assigned to a Factory, Productivity <@cc.vup>{match_prod}</>, capacity limit <@cc.{match_cap_desc}>{match_cap}</>'
+                        return f'When this Operator is assigned to a Factory, Productivity <@cc.vup>{match_prod}</> and capacity limit <@cc.{match_cap_desc}>{match_cap}</>'
                     # Speed by Power Plants Robot
                     re_manu_token_prod_spd = r'^进驻制造站时，每有<@cc\.vup>([0-9]*)<\/>台<\$(cc\.[\.A-Za-z0-9]*)><@cc\.kw>[^<]*<\/><\/>进驻发电站，<@cc\.kw>([^<]*)<\/>类配方的生产力<@cc\.vup>([\+0-9%]*)</>$'
                     if re.match(re_manu_token_prod_spd, desc_sub):
@@ -241,14 +241,14 @@ def riic_tl_json(show : bool = False):
                         match_spd           = desc_match.group(4)
                         return f'When this Operator is assigned to be the Trainer in the Training Room, Morale consumed per hour <@cc.vdown>{match_morale}</>, and every <@cc.vup>{match_every}</> <${match_skill_id}><@cc.rem>{match_skill_name}</></> gives <@cc.vup>{match_spd}</> Specialization training speed'
                     # Train Class Specialize
-                    re_train_spd_profession = r'^进驻训练室协助位时，<@cc\.kw>([^<]*)<\/>干员的专精技能训练速度<@cc\.vup>([\+0-9%]*)<\/>，如果本次训练专精技能至<@cc\.vup>([1-3])<\/>级，则训练速度额外<@cc\.vup>([\+0-9%]*)<\/>$'
-                    if re.match(re_train_spd_profession, desc_sub):
-                        desc_match          = re.match(re_train_spd_profession, desc_sub)
+                    re_train_spd_profession2 = r'^进驻训练室协助位时，<@cc\.kw>([^<]*)<\/>干员的专精技能训练速度<@cc\.vup>([\+0-9%]*)<\/>，如果本次训练专精技能至<@cc\.vup>([1-3])<\/>级，则训练速度额外<@cc\.vup>([\+0-9%]*)<\/>$'
+                    if re.match(re_train_spd_profession2, desc_sub):
+                        desc_match          = re.match(re_train_spd_profession2, desc_sub)
                         match_class         = class_parse[desc_match.group(1)]
                         match_speed_1       = desc_match.group(2)
                         match_spec          = desc_match.group(3)
                         match_speed_2       = desc_match.group(4)
-                        return f'When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>{match_class}</> Operators\' Specialization training speed <@cc.vup>{match_speed_1}</>; if training this skill to Specialization Level <@cc.vup>{match_spec}</>, training speed will be further increased by <@cc.vup>{match_speed_2}</>'
+                        return f'When this Operator is assigned to be the Trainer in the Training Room, increases the Specialization training speed of <@cc.kw>{match_class}</> Operators by <@cc.vup>{match_speed_1}</>, and further increases this speed by <@cc.vup>{match_speed_2}</> if training the skill to Specialization Level <@cc.vup>{match_spec}</>'
                 case "dorm":
                     # Dorm morale by Empty Recruit slot
                     re_dorm_hireToRecAll = r'^进驻宿舍时，该宿舍内所有干员心情每小时恢复<@cc\.vup>([\+\-\.0-9]*)<\/>，同时每个招募位（不包含初始招募位）额外<@cc\.vup>([\+\-\.0-9]*)<\/>恢复效果（叠加后的最终值同种效果取最高）$'
@@ -282,7 +282,7 @@ def riic_tl_json(show : bool = False):
                         desc_match          = re.match(re_hire_spd_cost, desc_sub)
                         match_spd           = desc_match.group(1)
                         match_morale        = desc_match.group(2)
-                        return f'When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>{match_spd}</>, Morale consumed per hour <@cc.vup>{match_morale}</>'
+                        return f'When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>{match_spd}</> and Morale consumed per hour <@cc.vdown>{match_morale}</>'
                 case "meet":
                     # Speed by Recruit slot
                     re_meet_spd_clue = r'^进驻会客室时，每个招募位（不包含初始招募位）提升<@cc\.vup>([0-9%]*)<\/>线索搜集速度$'

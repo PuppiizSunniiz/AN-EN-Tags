@@ -472,7 +472,7 @@
             "buffName": "演技的怪物",
             "skillIcon": "bskill_ctrl_trade_mortis",
             "desc": "进驻控制中枢时，<$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+20</>；每有<@cc.vup>8</>点<$cc.bd_mujica><@cc.rem>热情值</></>，自身心情每小时消耗<@cc.vdown>+0.01</>，所有贸易站订单效率<@cc.vup>+1%</>（同种效果取最高）",
-            "description": "When this Operator is assigned to the Control Center, <$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+20</>; for every <@cc.vup>8</> points <$cc.bd_mujica><@cc.rem>热情值</></>,  decreases own morale consumption by <@cc.vdown>+0.01</>, , all Trading Posts' order efficiency <@cc.vup>+1%</> (Only the strongest effect of this type takes place)"
+            "description": "When this Operator is assigned to the Control Center, <$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+20</>; for every <@cc.vup>8</> points <$cc.bd_mujica><@cc.rem>热情值</></>,  decreases own morale consumption by <@cc.vdown>+0.01</>, all Trading Posts' order efficiency <@cc.vup>+1%</> (Only the strongest effect of this type takes place)"
         },
         "control_meeting_spd&bd[000]": {
             "buffName": "勤学苦练",
@@ -640,7 +640,7 @@
             "buffName": "Line Patrol Frame",
             "skillIcon": "bskill_pow_drone",
             "desc": "进驻发电站时，每<@cc.vup>10</>架无人机上限<@cc.vup>+1%</>无人机充能速度（最多<@cc.vup>+25%</>）",
-            "description": "When this Operator is assigned to a Power Plant, <@cc.vup>+1%</> Drone recovery rate for every <@cc.vup>10</> max Drone capacity"
+            "description": "When this Operator is assigned to a Power Plant, <@cc.vup>+1%</> Drone recovery rate for every <@cc.vup>10</> max Drone capacity (Max <@cc.vup>+25%</>)"
         },
         "power_count[000]": {
             "buffName": "Dawnlight",
@@ -943,7 +943,7 @@
             "description": "When this Operator is assigned to a Factory, capacity limit <@cc.vup>+16</> and Morale consumed per hour <@cc.vup>-0.25</>"
         },
         "manu_prod_limit&cost[1020]": {
-            "buffName": "收纳达人",
+            "buffName": "Storage Guru",
             "skillIcon": "bskill_man_limit&cost3",
             "desc": "进驻制造站时，仓库容量上限<@cc.vup>+16</>，心情每小时消耗<@cc.vup>-0.25</>",
             "description": "When this Operator is assigned to a Factory, capacity limit <@cc.vup>+16</> and Morale consumed per hour <@cc.vup>-0.25</>"
@@ -1015,10 +1015,10 @@
             "description": "When this Operator is assigned to a Factory, Productivity <@cc.vup>+25%</> and capacity limit <@cc.vup>+6</>"
         },
         "manu_prod_spd&limit&cost[300]": {
-            "buffName": "行动派",
+            "buffName": "Go-Getter",
             "skillIcon": "bskill_man_spd&limit6",
             "desc": "进驻制造站时，生产力<@cc.vup>+20%</>，仓库容量上限<@cc.vdown>-8</>",
-            "description": "When this Operator is assigned to a Factory, Productivity <@cc.vup>+20%</>, capacity limit <@cc.vdown>-8</>"
+            "description": "When this Operator is assigned to a Factory, Productivity <@cc.vup>+20%</> and capacity limit <@cc.vdown>-8</>"
         },
         "manu_prod_limit&cost[021]": {
             "buffName": "Tunnel Work",
@@ -2593,7 +2593,7 @@
             "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Caster</> Operators' Specialization training speed <@cc.vup>+50%</>"
         },
         "train_spd&profession2[052]": {
-            "buffName": "术师专精·α",
+            "buffName": "Caster Expert α",
             "skillIcon": "bskill_train_caster1",
             "desc": "进驻训练室协助位时，<@cc.kw>术师</>干员的专精技能训练速度<@cc.vup>+30%</>",
             "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Caster</> Operators' Specialization training speed <@cc.vup>+30%</>"
@@ -2869,10 +2869,10 @@
             "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Sniper</> Operators' Specialization training speed <@cc.vup>+30%</>; if training this skill to Specialization Level <@cc.vup>3</>, training speed will be further increased by <@cc.vup>+65%</>"
         },
         "train_spd&profession2[650]": {
-            "buffName": "死焰指引",
+            "buffName": "Pyral Psychopomp",
             "skillIcon": "bskill_train3_caster2",
             "desc": "进驻训练室协助位时，<@cc.kw>术师</>干员的专精技能训练速度<@cc.vup>+30%</>，如果本次训练专精技能至<@cc.vup>3</>级，则训练速度额外<@cc.vup>+65%</>",
-            "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Caster</> Operators' Specialization training speed <@cc.vup>+30%</>; if training this skill to Specialization Level <@cc.vup>3</>, training speed will be further increased by <@cc.vup>+65%</>"
+            "description": "When this Operator is assigned to be the Trainer in the Training Room, increases the Specialization training speed of <@cc.kw>Caster</> Operators by <@cc.vup>+30%</>, and further increases this speed by <@cc.vup>+65%</> if training the skill to Specialization Level <@cc.vup>3</>"
         },
         "train_spd&profession2[660]": {
             "buffName": "Assimilation",
@@ -2905,7 +2905,7 @@
             "description": "When this Operator is assigned to be the Trainer in the Training Room, Morale consumed per hour is increased by <@cc.vdown>+1</> when training a <@cc.kw>Sniper</> Operator's skill to Specialization Level <@cc.vup>3</>"
         },
         "train_cost&profession[350]": {
-            "buffName": "何须解脱",
+            "buffName": "Why Cry For Freedom?",
             "skillIcon": "bskill_train_necras",
             "desc": "进驻训练室协助<@cc.kw>术师</>干员训练专精技能至<@cc.vup>3</>级时，心情每小时消耗<@cc.vdown>+1</>",
             "description": "When this Operator is assigned to be the Trainer in the Training Room, Morale consumed per hour <@cc.vdown>+1</> when training a <@cc.kw>Caster</> Operator's skill to Specialization Level <@cc.vup>3</>"
@@ -3457,16 +3457,16 @@
             "description": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+50%</> and Morale consumed per hour <@cc.vdown>+0.5</>"
         },
         "hire_spd_cost[220]": {
-            "buffName": "永不停歇·α",
+            "buffName": "Restless Rover α",
             "skillIcon": "bskill_hire_skgoat3",
             "desc": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+30%</>，心情每小时消耗<@cc.vdown>+1</>",
-            "description": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+30%</>, Morale consumed per hour <@cc.vup>+1</>"
+            "description": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+30%</> and Morale consumed per hour <@cc.vdown>+1</>"
         },
         "hire_spd_cost[230]": {
-            "buffName": "永不停歇·β",
+            "buffName": "Restless Rover β",
             "skillIcon": "bskill_hire_skgoat4",
             "desc": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+45%</>，心情每小时消耗<@cc.vdown>+1</>",
-            "description": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+45%</>, Morale consumed per hour <@cc.vup>+1</>"
+            "description": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+45%</> and Morale consumed per hour <@cc.vdown>+1</>"
         },
         "hire_spd_cost[100]": {
             "buffName": "Rescue Team - Abacus Calculations",
