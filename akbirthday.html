@@ -52,6 +52,7 @@
     <div style='padding-bottom:40px;'></div>
 
     <div class="col-md-12 col-sm-12 " style="margin:auto;max-width:1000px;padding:0">
+        <!-- Filters -->
         <div class="col-12 ak-bg ak-shadow mt-3" style="padding:15px;padding-top:0%;padding-bottom:0;border-radius:0px" role="alert">
             <div class="row" style="padding:0;padding-bottom: 4px">
                 <div class="col-12 btn btn-sm ak-btn ak-c-black ak-shadow-small ak-disable" style="padding:0" translate-id="operator-select">Select Filter Type :</div>
@@ -79,62 +80,54 @@
                 <button class="btn btn-danger col-12 align-self-center ak-btn text-center" style="padding:1px ; z-index: 0;font-weight: 550" onclick="clickBtnClear()" ><span translate-id="selector-clear">Clear</span> <span id="count-tag"></a> </button>
             </div>
         </div>
+        
+        <!-- Dates -->
+        <div id="date"></div>
 
-        <table class="table ak-table ak-table-striped table-hover my-3 ak-shadow" id="table-recommend">
+        <!-- <table class="table ak-table ak-table-striped table-hover my-3 ak-shadow" id="table-recommend">
             <thead class="ak-thead">
-                <tr><th scope="col" colspan="10" style="text-align: center;">Birthday Tables</th></tr>
+                <tr><th scope="col" colspan="10" style="text-align: center;">January</th></tr>
             </thead>
         </table>
-
         <div class="col-12 ak-bg ak-shadow mt-3" style="padding:15px;padding-right:0;padding-bottom:0;border-radius:0px" role="alert">
             <div class="row col-12" id="date" style="padding-right:0;">
-                <div class="table ak-table col-4" id="month-1">
+                <div class="table ak-table col-12" id="other-1">
                     <div class="row">
-                        <div class="col-12">
-                            January
+                        <div class="col-2">1st January</div>
+                        <div class="col-10">
+                            <ul>
+                                <li class="selectop-grid3 ak-rare-6" onclick="selectOperator('char_180_amgoat')">
+                                    <div class="op-image-grid2">
+                                        <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_180_amgoat.png">
+                                    </div>
+                                    <div class="nametext nameshort ak-center blacktext">
+                                        Eyjafjalla
+                                    </div>
+                                </li>
+                                <li class="selectop-grid3 ak-rare-6" onclick="selectOperator('char_4102_threye')">
+                                    <div class="op-image-grid2">
+                                        <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4102_threye.png">
+                                    </div>
+                                    <div class="nametext nameshort ak-center blacktext">
+                                        Valarqvin
+                                    </div>
+                                </li>
+                                <li class="selectop-grid3 ak-rare-6" onclick="selectOperator('char_159_peacok')">
+                                    <div class="op-image-grid2">
+                                        <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_159_peacok.png">
+                                    </div>
+                                    <div class="nametext nameshort ak-center blacktext">
+                                        Conviction
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-2">1</div>
-                        <div class="col-2">2</div>
-                        <div class="col-2">3</div>
-                        <div class="col-2">4</div>
-                        <div class="col-2">5</div>
-                        <div class="col-2">6</div>
-                        <div class="col-2">7</div>
-                        <div class="col-2">8</div>
-                        <div class="col-2">9</div>
-                        <div class="col-2">10</div>
-                        <div class="col-2">11</div>
-                        <div class="col-2">12</div>
-                        <div class="col-2">13</div>
-                        <div class="col-2">14</div>
-                        <div class="col-2">15</div>
-                        <div class="col-2">16</div>
-                        <div class="col-2">17</div>
-                        <div class="col-2">18</div>
-                        <div class="col-2">19</div>
-                        <div class="col-2">20</div>
-                        <div class="col-2">21</div>
-                        <div class="col-2">22</div>
-                        <div class="col-2">23</div>
-                        <div class="col-2">24</div>
-                    </div>
                 </div>
-                <div class="table ak-table col-4">a</div>
-                <div class="table ak-table col-4">a</div>
-                <div class="table ak-table col-4">b</div>
-                <div class="table ak-table col-4">b</div>
-                <div class="table ak-table col-4">b</div>
-                <div class="table ak-table col-4">c</div>
-                <div class="table ak-table col-4">c</div>
-                <div class="table ak-table col-4">c</div>
-                <div class="table ak-table col-4">d</div>
-                <div class="table ak-table col-4">d</div>
-                <div class="table ak-table col-4">d</div>
             </div>
-        </div>
+        </div> -->
 
+        <!-- Other -->
         <table class="table ak-table ak-table-striped table-hover my-3 ak-shadow" id="table-recommend">
             <thead class="ak-thead">
                 <tr><th scope="col" colspan="10" style="text-align: center;">Other</th></tr>
@@ -180,6 +173,7 @@
             </div>
         </div>
         
+        <!-- Manual -->
         <div class="col-12 tutorial">
             <div class="col-12 text-left ak-mid ak-shadow" style="padding:10px" >
                 <p>How To Use ：</p>

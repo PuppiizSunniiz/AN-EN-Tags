@@ -101,9 +101,47 @@ function CreateBirthdayTables(birth) {
 
     // date
     const date = $('#date')
-    for (let i=1; i<=12; ++i) {
-        const days = new Date(1972, i, 0).getDate()
-        //console.log(i, days)
+    suffix = `
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                `
+    for (const [key, value] of Object.entries(birth.date)) {
+        // Month
+        date.append(`<table class="table ak-table ak-table-striped table-hover my-3 ak-shadow" id="table-recommend">
+                        <thead class="ak-thead">
+                            <tr><th scope="col" colspan="10" style="text-align: center;">Month ${getMonthName(key)}</th></tr>
+                        </thead>
+                    </table>`)
+
+        // Day
+        days = `    <div class="col-12 ak-bg ak-shadow mt-3" style="padding:15px;padding-right:0;padding-bottom:0;border-radius:0px" role="alert">
+                        <div class="row col-12" style="padding-right:0;">`
+        days_suff = `   </div>
+                    </div>`
+        all_days = ""
+        for (const [key_date, value_date] of Object.entries(value)) {
+            prefix=`<div class="table ak-table col-12">
+                        <div class="row align-items-center">
+                            <div class="col-2">${getMonthDayName(key, key_date)}</div>
+                            <div class="col-10">
+                                <ul style="margin-bottom:0 !important;">`
+            content = ""
+            for (let i=0; i<value_date.length; ++i) {
+                const op_id = value_date[i]
+                content += `<li class="selectop-grid3 ak-rare-${getOperatorRarity(op_id)}" onclick="selectOperator('${op_id}')">
+                                <div class="op-image-grid2">
+                                    <img loading='lazy' src="${avatar_url + op_id}.png">
+                                </div>
+                                <div class="nametext namesmaller ak-center blacktext">
+                                    ${getOperatorName(op_id)}
+                                </div>
+                            </li>`
+            }
+            all_days += prefix + content + suffix
+        }
+        date.append(days + all_days + days_suff)
     }
 
     // other
@@ -113,7 +151,7 @@ function CreateBirthdayTables(birth) {
                     </div>
                 </div>`
     for (const [key, value] of Object.entries(birth.other)) {
-        prefix=`<div class="table ak-table col-12" id="other-1">
+        prefix=`<div class="table ak-table col-12">
                     <div class="row align-items-center">
                         <div class="col-2">${getBirthdayOther(key) ? getBirthdayOther(key) : key}</div>
                         <div class="col-10">
@@ -145,6 +183,21 @@ function getOperatorRarity(op_id) {
 
 function getOperatorName(op_id) {
     return op_dict[op_id].name_en
+}
+
+const nthNumber = (number) => {
+    return number > 0
+        ? ["th", "st", "nd", "rd"][
+            (number > 3 && number < 21) || number % 10 > 3 ? 0 : number % 10
+        ]
+        : "";
+};
+function getMonthName(month) {
+    const date = new Date(2000, month)
+    return date.toLocaleString('default', { month: 'long' })
+}
+function getMonthDayName(month, day) {
+    return `${day}${nthNumber(day)} ${getMonthName(month)}`
 }
 
 /// UI Functions
