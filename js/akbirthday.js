@@ -1,5 +1,10 @@
-const avatar_url = "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/"
-const base_url = "http://127.0.0.1:8080/"
+const AVATAR_URL = "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/"
+const BASE_URL = "http://127.0.0.1:8080/"
+const CHAR_SIDE = 73
+const LI_HEIGHT = 90
+const CHAR_STYLE = `width:${CHAR_SIDE}px !important; height:${CHAR_SIDE}px !important;`
+const LI_STYLE = `width:${CHAR_SIDE}px !important; height:${LI_HEIGHT}px !important;`
+
 const db = {}
 const op_dict = {}
 const birth = {"date": {}, "other": {}}
@@ -111,7 +116,7 @@ function CreateBirthdayTables(birth) {
         // Month
         date.append(`<table class="table ak-table ak-table-striped table-hover my-3 ak-shadow" id="table-recommend">
                         <thead class="ak-thead">
-                            <tr><th scope="col" colspan="10" style="text-align: center;">Month ${getMonthName(key)}</th></tr>
+                            <tr><th scope="col" colspan="10" style="text-align: center;">${getMonthName(key)}</th></tr>
                         </thead>
                     </table>`)
 
@@ -130,9 +135,9 @@ function CreateBirthdayTables(birth) {
             content = ""
             for (let i=0; i<value_date.length; ++i) {
                 const op_id = value_date[i]
-                content += `<li class="selectop-grid3 ak-rare-${getOperatorRarity(op_id)}" onclick="selectOperator('${op_id}')">
-                                <div class="op-image-grid2">
-                                    <img loading='lazy' src="${avatar_url + op_id}.png">
+                content += `<li class="selectop-grid3 ak-rare-${getOperatorRarity(op_id)}" onclick="selectOperator('${op_id}')" style="${LI_STYLE}">
+                                <div class="op-image-grid2" style="${CHAR_STYLE}">
+                                    <img loading='lazy' src="${AVATAR_URL + op_id}.png" style="${CHAR_STYLE}">
                                 </div>
                                 <div class="nametext namesmaller ak-center blacktext">
                                     ${getOperatorName(op_id)}
@@ -159,9 +164,9 @@ function CreateBirthdayTables(birth) {
         content = ""
         for (let i=0; i<value.length; ++i) {
             const op_id = value[i]
-            content += `<li class="selectop-grid3 ak-rare-${getOperatorRarity(op_id)}" onclick="selectOperator('${op_id}')">
-                            <div class="op-image-grid2">
-                                <img loading='lazy' src="${avatar_url + op_id}.png">
+            content += `<li class="selectop-grid3 ak-rare-${getOperatorRarity(op_id)}" onclick="selectOperator('${op_id}')" style="${LI_STYLE}">
+                            <div class="op-image-grid2" style="${CHAR_STYLE}">
+                                <img loading='lazy' src="${AVATAR_URL + op_id}.png" style="${CHAR_STYLE}">
                             </div>
                             <div class="nametext namesmaller ak-center blacktext">
                                 ${getOperatorName(op_id)}
@@ -193,7 +198,7 @@ const nthNumber = (number) => {
         : "";
 };
 function getMonthName(month) {
-    const date = new Date(2000, month)
+    const date = new Date(2000, month-1)
     return date.toLocaleString('default', { month: 'long' })
 }
 function getMonthDayName(month, day) {
@@ -211,7 +216,7 @@ function clickBtnClear() {
 }
 
 function selectOperator(op_id) {
-    window.open(base_url + 'akhrchars.html?opname='+getOperatorName(op_id), '_blank');
+    window.open(BASE_URL + 'akhrchars.html?opname='+getOperatorName(op_id), '_blank');
 }
 
 
