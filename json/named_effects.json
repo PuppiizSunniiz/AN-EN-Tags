@@ -428,7 +428,7 @@
         "cc.c.skill": {
             "termId": "cc.c.skill",
             "termName": "Certain Skills",
-            "description": "Includes the following skills:\nCapable Assistance, S.W.E.E.P., Snack Network, Cleaning Agreement, Substitute, Necessary Responsibility, Guarding, Tiny Leader, Self-Absorbed, Million Dollar Smile, Marigold Poetry Gathering, Art of Defense"
+            "description": "Includes the following skills:\nCapable Assistance, S.W.E.E.P., Snack Network, Cleaning Agreement, Substitute, Necessary Responsibility, Guarding, Tiny Leader, Self-Absorbed, Million Dollar Smile, Marigold Poetry Gathering, Art of Defense, New to the Job"
         },
         "cc.t.strong2": {
             "termId": "cc.t.strong2",
@@ -609,6 +609,36 @@
             "termId": "cc.g.elite",
             "termName": "Elite Operators",
             "description": "Includes the following Operators:\nRosmontis, Blaze, Logos, Blaze the Igniting Spark, Raidian"
+        },
+        "ba.permanentatk": {
+            "termId": "ba.permanentatk",
+            "termName": "Continuous Attack",
+            "description": "Regardlass of whether there are targets within Attack Range, attack continually"
+        },
+        "ba.fever": {
+            "termId": "ba.fever",
+            "termName": "Fever",
+            "description": "When Fever reach 450 points，when any <$ba.mujica>Ave Mujica</> member active their skill，all <$ba.mujica>Ave Mujica</> member release their skill effect for 20 seconds"
+        },
+        "ba.mujica": {
+            "termId": "ba.mujica",
+            "termName": "Ave Mujica",
+            "description": "Includes Togawa Sakiko, Yahata Umiri, Misumi Uika, Yūtenji Nyamu, Wakaba Mutsumi"
+        },
+        "cc.bd_mujica": {
+            "termId": "cc.bd_mujica",
+            "termName": "热情值",
+            "description": "Affects skills related to <$cc.bd_mujica_1><@cc.rem>丰富工作经验</></> and <$cc.bd_mujica_2><@cc.rem>演技的怪物</></>\nProvided by the following Operators' skills:\nYahata Umiri, Misumi Uika, Yūtenji Nyamu, Wakaba Mutsumi"
+        },
+        "cc.bd_mujica_1": {
+            "termId": "cc.bd_mujica_1",
+            "termName": "丰富工作经验",
+            "description": "Operators with this skill\nTogawa Sakiko"
+        },
+        "cc.bd_mujica_2": {
+            "termId": "cc.bd_mujica_2",
+            "termName": "演技的怪物",
+            "description": "Operators with this skill\nWakaba Mutsumi"
         }
     }
 }

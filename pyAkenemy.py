@@ -21,6 +21,7 @@ akenemy = {
                         "sidestory" : {"name" : "Side Story", "activity" : {}},                         # Mode : Side Story     -> Activity : AB : XYZ      -> Zone : FGHIJ             -> Stage : AB-XX
                         "supply"    : {"name" : "Supplies Operations", "activity" : {}},                # Mode : Supplies Op    -> Activity : AB : XYZ (MM)                             -> Stage : AB-CD-X
                         "campaign"  : {"name" : "Annihilation Mission", "activity" : {}},               # Mode : Annihilation   -> Activity : camp_XX
+                        "mechanic"  : {"name" : "Training Ground", "activity" : {}},                    # Mode : Machanic       -> Activity : story_review_meta_table.json > trainingCampData > stageData
                         "coop"      : {"name" : "CO-OP", "activity" : {}},                              # Mode : Coop           -> Activity : XYZ                                       -> Stage : AB-XX
                         "cc"        : {"name" : "CC : Contingency Contract", "activity" : {}},          # Mode : CC             -> Activity : CC#XX         -> Zone : Main/Rotation     -> Stage : XYZ
                         "is"        : {"name" : "IS : Integrated Strategies", "activity" : {}},         # Mode : IS             -> Activity : IS#XX         -> Zone : Floor XX          -> Stage : XYZ
@@ -112,6 +113,9 @@ def load_json(data) -> dict :
             return json_load("json/gamedata/en_US(Old)/gamedata/excel/sandbox_table.json")
         case "json_RA2EN" :
             return json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/sandbox_perm_table.json")
+
+        case "json_story_reviewEN" :
+            return json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/story_review_meta_table.json")
 
         case "Fillerjson" :
             return json_load("json/Filler.json")
@@ -312,7 +316,7 @@ def Stage_Lister(stage_event : str, stage_code : str, stage_name : str, stage_id
     level_id        = level_id.split("gamedata/levels/")[-1]
     stage_name      = f'{stage_name} (Boss)' if re.search(r'rogue[0-9]{0,2}_[b]-', stage_id) else stage_name
     stage_event     = "1stact" if stage_event == "a001" else stage_event
-    stage_zone      = main_zone(stage_id,stage_zone) if stage_event.find("main")!=-1 else (stage_event if stage_zone == "act2vmulti_zone1" else stage_zone)
+    stage_zone      = main_zone(stage_id,stage_zone) if stage_event.find("main") != -1 else (stage_event if stage_zone == "act2vmulti_zone1" else stage_zone)
     
     def Stage_Lister_stage() :
     ### Stage Collect
@@ -524,29 +528,31 @@ def IS_boss(stage_id : str, IS : str) -> str:
                     }
     return IS_boss_dict[IS].get(re.search(r'(ro[0-9]{0,2}_._[0-9]{1,2})(_[a-z]{1}|)',stage_id).group(1),"???") # cut variant _b _c
 
-def get_stage_gamemode(stage_event : str) -> str :
+def get_stage_gamemode(stage_event : str) -> str:
         if stage_event.find("main_") != -1 or re.search(r'act[0-9]{1,2}mainss',stage_event):
             return "main"
-        elif stage_event.find("weekly_") != -1 :
+        elif stage_event.find("weekly_") != -1:
             return "supply"
-        elif stage_event.find("camp_") != -1 :
+        elif stage_event.find("camp_") != -1:
             return "campaign"
         
         elif stage_event == "act17d1" or re.search(r'act[0-9]{1,2}(vmulti|multi)',stage_event):
             return "coop"
-        elif stage_event == "PinchOut" or re.search(r'CC(|BP)#',stage_event) : 
+        elif stage_event == "PinchOut" or re.search(r'CC(|BP)#',stage_event): 
             return "cc"
-        elif stage_event.find("IS#") != -1 :
+        elif stage_event.find("IS#") != -1:
             return "is"
+        elif stage_event == "Mechanic": 
+            return "mechanic"
         
         elif re.search(r'act[0-9]{1,2}(lock|vautochess|arcade|enemyduel)',stage_event) or stage_event in ["act42d0"]: # act42d0 = DOS
             return "exp"
         elif re.search(r'act[0-9]{1,2}(vecb|break)',stage_event):
             return "vb"
         
-        elif stage_event.find("bossrush") != -1 :
+        elif stage_event.find("bossrush") != -1:
             return "tn"
-        elif stage_event.find("tower_") == 0 :
+        elif stage_event.find("tower_") == 0:
             return "sss"
         elif stage_event.find("RA#") != -1:
             return "ra"
@@ -614,6 +620,23 @@ def stage_json_stage_collect(json_stage, json_stageEN):
         return [stage_counter, "Main & Activity"]
     
     stage_main(json_stage["stages"], json_stageEN["stages"])
+
+def Mechanic_stage_collect(json_story_reviewEN):
+    Mechanic_Data = json_story_reviewEN["trainingCampData"]["stageData"]
+    
+    @decorator
+    def Mechanic_main(Mechanic_Data):
+        stage_counter = 0
+        for stage_id in Mechanic_Data.keys():
+            stage_code      = Mechanic_Data[stage_id]["code"]
+            stage_name      = Mechanic_Data[stage_id]["name"]
+            level_id        = Mechanic_Data[stage_id]["levelId"]
+            stage_filepath  = f'json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/{Mechanic_Data[stage_id]["levelId"].lower()}.json'
+            stage_counter += Stage_Lister("Mechanic", stage_code, stage_name, stage_id, level_id, stage_name, stage_filepath)
+        return [stage_counter, "Mechanic"]
+    
+    Mechanic_main(Mechanic_Data)
+    pass
 
 def COOP_stage_collect(Fillerjson) :
 ## COOP1 : Defense Protocols (罗德岛防御协议) "act17d1"
@@ -889,7 +912,7 @@ def activity_collect(Activityjson):
     DB = get_activity_DB()
     timeline = []
 
-## Activity
+# Activity
     for act in DB["activity"]["basicInfo"].keys():
         if DB["activity"]["basicInfo"][act]["hasStage"] and not re.search(r'act[0-9]{1,2}mainss',act):
             activity_collection["Dict"][act] = {
@@ -898,7 +921,7 @@ def activity_collect(Activityjson):
                     "startCN"   : DB["activity"]["basicInfo"][act]["startTime"]
             }
             if activity_collection["Dict"][act]["startCN"] > 0 : timeline.append([act,activity_collection["Dict"][act]["nameEN"] if activity_collection["Dict"][act]["nameEN"] else activity_collection["Dict"][act]["nameCN"],activity_collection["Dict"][act]["startCN"]])
-## Main-Activity
+# Main-Activity
         elif re.search(r'act[0-9]{1,2}mainss',act):
             zone = next((key for key in DB["activity"]["zoneToActivity"] if DB["activity"]["zoneToActivity"][key] == act), act)
             if not re.search(r'main_[0-9]{1,2}' ,zone):
@@ -909,7 +932,7 @@ def activity_collect(Activityjson):
                 }
                 if activity_collection["Dict"][zone]["startCN"] > 0 : timeline.append([zone,activity_collection["Dict"][zone]["nameEN"] if activity_collection["Dict"][zone]["nameEN"] else activity_collection["Dict"][zone]["nameCN"],activity_collection["Dict"][zone]["startCN"]])
 
-## Main
+# Main
     for act in DB["zone"]["mainlineAdditionInfo"].keys():
         activity_collection["Dict"][act] = {
                     "nameCN"    : f'{DB["zone"]["zones"][act]["zoneNameFirst"]} : {DB["zone"]["zones"][act]["zoneNameSecond"]}',
@@ -919,84 +942,85 @@ def activity_collect(Activityjson):
         if activity_collection["Dict"][act]["startCN"] > 0 : timeline.append([act,activity_collection["Dict"][act]["nameEN"] if activity_collection["Dict"][act]["nameEN"] else activity_collection["Dict"][act]["nameCN"],activity_collection["Dict"][act]["startCN"]])
 
 # Other act
-## Weekly
     for act in stage_collection["activity"].keys():
+        ## Weekly        
         if act.find("weekly_") == 0 :
             activity_collection["Dict"][act] = {
                 "nameCN"    : f'{DB["zone"]["zones"][act]["zoneNameSecond"]} ({stage_collection["zones"][act][0][:-2]})',
                 "nameEN"    : Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else (f'{stage_collection["zones"][act][0][:-2]} : {DB["zoneEN"]["zones"][act]["zoneNameSecond"]}' if act in DB["zoneEN"]["zones"].keys() else f'{stage_collection["zones"][act][0][:-2]} : {DB["zone"]["zones"][act]["zoneNameSecond"]}'),
                 "startCN"   : -1
         }
-## Annihilation
+        ## Annihilation
         elif act.find("camp") == 0 :
             activity_collection["Dict"][act] = {
                 "nameCN"    : DB["stage"]["stages"][act]["name"],
                 "nameEN"    : stage_collection["stages"][act]["name"],
                 "startCN"   : DB["campaign"]["campaignRotateStageOpenTimes"][int(act[-2:])-1]["startTs"] if act.find("_r_")!= -1 else -1
         }
-## SSS (lt)
+        ## SSS (lt)
         elif act.find("tower_") == 0 :
             activity_collection["Dict"][act] = {
                 "nameCN"    : DB["SSS"]["towers"][act]["name"] if act in DB["SSS"]["towers"].keys() else (Activityjson["Dict"][act]["nameCN"] if act in Activityjson["Dict"].keys() else None),
                 "nameEN"    : DB["SSSEN"]["towers"][act]["name"] if act in DB["SSSEN"]["towers"].keys() else (Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else (DB["SSS"]["towers"][act]["name"] if act in DB["SSS"]["towers"].keys() else None)),
                 "startCN"   : -1
         }
-## CC#Beta (act5d1)
+        ## CC#Beta (act5d1)
         elif act == "CC#Beta" :
             activity_collection["Dict"][act] = {
                 "nameCN"    : activity_collection["Dict"]["act5d1"]["nameCN"],
                 "nameEN"    : f'{act} : {activity_collection["Dict"]["act5d1"]["nameEN"]}',
                 "startCN"   : activity_collection["Dict"]["act5d1"]["startCN"]
         }
-## CC Operation
+        ## CC Operation
         elif act.find("CC#") == 0 :
             activity_collection["Dict"][act] = {
                 "nameCN"    : DB["CC"]["seasonInfo"][int(act.split("CC#")[-1])]["name"],
                 "nameEN"    : f'{act} : {DB["CCEN"]["seasonInfo"][int(act.split("CC#")[-1])]["name"]}',
                 "startCN"   : DB["CC"]["seasonInfo"][int(act.split("CC#")[-1])]["startTs"]
         }
-## Pinch out (act38d1)
+        ## Pinch out (act38d1)
         elif act == "PinchOut" :
             activity_collection["Dict"][act] = {
                 "nameCN"    : activity_collection["Dict"]["act38d1"]["nameCN"],
                 "nameEN"    : activity_collection["Dict"]["act38d1"]["nameEN"],
                 "startCN"   : activity_collection["Dict"]["act38d1"]["startCN"]
         }
-## CC Battleplan
+        ## CC Battleplan
         elif act.find("CCBP#") == 0 :
             activity_collection["Dict"][act] = {
                 "nameCN"    : DB["CC2"]["seasonInfoDataMap"][f'crisis_v2_season_{int(act.split("CCBP#")[-1])}_1']["name"],
                 "nameEN"    : f'{act} : {DB["CC2EN"]["seasonInfoDataMap"]["crisis_v2_season_"+str(int(act.split("CCBP#")[-1]))+"_1"]["name"]}' if f'crisis_v2_season_{int(act.split("CCBP#")[-1])}_1' in DB["CC2EN"]["seasonInfoDataMap"].keys() else (Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else None),
                 "startCN"   : DB["CC2"]["seasonInfoDataMap"][f'crisis_v2_season_{int(act.split("CCBP#")[-1])}_1']["startTs"]
         }
-## IS#1 ("act12d6")
+        ## IS#1 ("act12d6")
         elif act == "IS#1":
             activity_collection["Dict"][act] = {
                 "nameCN"    : activity_collection["Dict"]["act12d6"]["nameCN"],
                 "nameEN"    : f'{act} : {activity_collection["Dict"]["act12d6"]["nameEN"]}',
                 "startCN"   : activity_collection["Dict"]["act12d6"]["startCN"]
         }
-## IS#2 and later
+        ## IS#2 and later
         elif act.find("IS#") != -1:
             activity_collection["Dict"][act] = {
                 "nameCN"    : DB["IS"]["topics"][f'rogue_{int(act.split("#")[-1])-1}']["name"],
                 "nameEN"    : act+" : "+DB["ISEN"]["topics"][f'rogue_{int(act.split("#")[-1])-1}']["name"] if f'rogue_{int(act.split("#")[-1])-1}' in DB["ISEN"]["topics"].keys() else (Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else None),
                 "startCN"   : DB["IS"]["topics"][f'rogue_{int(act.split("#")[-1])-1}']["startTime"]
         }
-## RA#1 "act1sandbox"
+        ## RA#1 "act1sandbox"
         elif act == "RA#1":
             activity_collection["Dict"][act] = {
                 "nameCN"    : activity_collection["Dict"]["act1sandbox"]["nameCN"],
                 "nameEN"    : f'{act} : {activity_collection["Dict"]["act1sandbox"]["nameEN"]}',
                 "startCN"   : activity_collection["Dict"]["act1sandbox"]["startCN"]
         }
-## RA#2 and maybe later
+        ## RA#2 and maybe later
         elif act.find("RA#") != -1:
             activity_collection["Dict"][act] = {
                     "nameCN"    : DB["RA2"]["basicInfo"][f'sandbox_{int(act.split("#")[-1])-1}']["topicName"],
                     "nameEN"    : Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else None, #f'{act} : {json_RA2EN["basicInfo"][f'sandbox_{int(act.split("#")[-1])-1}']["topicName"]}'
                     "startCN"   : DB["RA2"]["basicInfo"][f'sandbox_{int(act.split("#")[-1])-1}']["topicStartTime"]
             }
+        ## FUN / April Fool
         elif act.find("fun") != -1 or act == "act17d7":
             activity_collection["Dict"][act] = {
                     "nameCN"    : DB["activity"]["basicInfo"][act]["name"],
@@ -1004,20 +1028,25 @@ def activity_collect(Activityjson):
                     "startCN"   : DB["activity"]["basicInfo"][act]["startTime"]
             }
             if activity_collection["Dict"][act]["startCN"] > 0 : timeline.append([act,activity_collection["Dict"][act]["nameEN"] if activity_collection["Dict"][act]["nameEN"] else activity_collection["Dict"][act]["nameCN"],activity_collection["Dict"][act]["startCN"]])
-
-            
+        ## Skip
+        elif act in ["Mechanic"]:
+            activity_collection["Dict"][act] = {
+                    "nameCN"    : "训练场",
+                    "nameEN"    : "Training Ground",
+                    "startCN"   : 1722484800
+            }
+        
         if act in activity_collection["Dict"]:
             if activity_collection["Dict"][act]["startCN"] != -1 :
                 new_timeline = [act,activity_collection["Dict"][act]["nameEN"] if activity_collection["Dict"][act]["nameEN"] else activity_collection["Dict"][act]["nameCN"],activity_collection["Dict"][act]["startCN"]]
                 if new_timeline not in timeline : timeline.append(new_timeline)
-        else:
-            # Bandage
+        else:   ## Bandage
             new_timeline = [act,"[PH] New Act", 9999999999]
             if new_timeline not in timeline : 
                 timeline.append(new_timeline)
                 activity_collection["Dict"][act] = {
                                                         "nameCN": "[PH] New Act",
-                                                        "nameEN": "New Act",
+                                                        "nameEN": "[PH] New Act",
                                                         "startCN": 9999999999
                                                     }
 
@@ -1119,6 +1148,7 @@ def last_of_nested(nested):
 def Akenemy() :
     # Stage & Zone collection
     stage_json_stage_collect(load_json("json_stage"),load_json("json_stageEN"))
+    Mechanic_stage_collect(load_json("json_story_reviewEN"))
     COOP_stage_collect(load_json("Fillerjson"))
     CC_stage_collect(load_json("Fillerjson"), load_json("json_CC"), load_json("json_CC2"), load_json("json_activityEN"))
     IS_stage_collect(load_json("json_ISEN0"), load_json("json_IS"), load_json("json_ISEN"))

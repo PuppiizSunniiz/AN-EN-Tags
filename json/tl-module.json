@@ -1,194 +1,4 @@
 {
-    "uniequip_002_thorn2": [
-        [
-            {
-                "name": "La Forma del Corazón",
-                "CN": "攻击力+10%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长3秒",
-                "mod": "攻击力+10%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4秒",
-                "upgradeDescription": "ATK +10%; when there are other Operators within range, Alchemical Units thrown by this unit last 4s longer"
-            },
-            {
-                "name": "La Forma del Corazón",
-                "CN": "攻击力+14%<@ba.talpu>(+4%)</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4<@ba.talpu>(+1)</>秒",
-                "mod": "攻击力+14%<@ba.talpu>(+4%)</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长5<@ba.talpu>(+1)</>秒",
-                "upgradeDescription": "ATK +14% <@ba.talpu>(+4%)</>; when there are other Operators within range, Alchemical Units thrown by this unit last 5s <@ba.talpu>(+1s)</> longer"
-            }
-        ],
-        [
-            {
-                "name": "La Forma del Corazón",
-                "CN": "攻击力+10%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长3秒",
-                "mod": "攻击力+15%，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4秒",
-                "upgradeDescription": "ATK +15%; when there are other Operators within range, Alchemical Units thrown by this unit last 4s longer"
-            },
-            {
-                "name": "La Forma del Corazón",
-                "CN": "攻击力+14%<@ba.talpu>(+4%)</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长4<@ba.talpu>(+1)</>秒",
-                "mod": "攻击力+19%<@ba.talpu>(+4%)</>，攻击范围内存在其他干员时，自身投掷的炼金单元持续时间延长5<@ba.talpu>(+1)</>秒",
-                "upgradeDescription": "ATK +19% <@ba.talpu>(+4%)</>; when there are other Operators within range, Alchemical Units thrown by this unit last 5s <@ba.talpu>(+1s)</> longer"
-            }
-        ]
-    ],
-    "uniequip_002_tinman": [
-        [
-            {
-                "name": "Shriveled Soul",
-                "EN": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 20%",
-                "CN": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高20%",
-                "mod": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高23%",
-                "upgradeDescription": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 23%"
-            },
-            {
-                "name": "Shriveled Soul",
-                "EN": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 22% <@ba.talpu>(+2%)</>",
-                "CN": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高22%<@ba.talpu>(+2%)</>",
-                "mod": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高25%<@ba.talpu>(+2%)</>",
-                "upgradeDescription": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 25% <@ba.talpu>(+2%)</>"
-            }
-        ],
-        [
-            {
-                "name": "Shriveled Soul",
-                "EN": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 20%",
-                "CN": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高20%",
-                "mod": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高25%",
-                "upgradeDescription": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 25%"
-            },
-            {
-                "name": "Shriveled Soul",
-                "EN": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 22% <@ba.talpu>(+2%)</>",
-                "CN": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高22%<@ba.talpu>(+2%)</>",
-                "mod": "使自身炼金单元影响范围内地面敌人受到的持续伤害提高27%<@ba.talpu>(+2%)</>",
-                "upgradeDescription": "Increases the continuous damage dealt to ground enemies in range of Tin Man's Alchemical Units by 27% <@ba.talpu>(+2%)</>"
-            }
-        ]
-    ],
-    "uniequip_002_wulfen": [
-        [
-            {
-                "name": "探险家的从容",
-                "CN": "可以使用4<@ba.talpu>(+1)</>个矿石“杀手”(最多拥有4个)，矿石“杀手”被部署后准备一段时间可以主动引爆",
-                "mod": "每个矿石“杀手”引爆时范围内的敌人数量大于等于2个时，伤害提升8%",
-                "upgradeDescription": "When a trap is triggered, if there are 2 or more enemies in trap range, increase damage by 8%"
-            }
-        ],
-        [
-            {
-                "name": "探险家的从容",
-                "CN": "可以使用4<@ba.talpu>(+1)</>个矿石“杀手”(最多拥有4个)，矿石“杀手”被部署后准备一段时间可以主动引爆",
-                "mod": "每个矿石“杀手”引爆时范围内的敌人数量大于等于2个时，伤害提升12%",
-                "upgradeDescription": "When a trap is triggered, if there are 2 or more enemies in trap range, increase damage by 12%"
-            }
-        ]
-    ],
-    "uniequip_003_gnosis": [
-        [
-            {
-                "name": "Two Paths, One Goal",
-                "EN": "Grants <$ba.buffres>Resist</> to all [Karlan Trade] Operators after Gnosis has been deployed for 10 seconds",
-                "CN": "灵知在场且部署后经过10秒时，使所有【喀兰贸易】干员获得<$ba.buffres>抵抗</>",
-                "mod": "灵知在场且部署后经过10秒时，使所有【喀兰贸易】干员获得<$ba.buffres>抵抗</>，且攻击力+10%",
-                "upgradeDescription": "Grants <$ba.buffres>Resist</> and ATK +10% to all [Karlan Trade] Operators after Gnosis has been deployed for 10 seconds"
-            }
-        ],
-        [
-            {
-                "name": "Two Paths, One Goal",
-                "EN": "Grants <$ba.buffres>Resist</> to all [Karlan Trade] Operators after Gnosis has been deployed for 10 seconds",
-                "CN": "灵知在场且部署后经过10秒时，使所有【喀兰贸易】干员获得<$ba.buffres>抵抗</>",
-                "mod": "灵知在场且部署后经过10秒时，使所有【喀兰贸易】干员获得<$ba.buffres>抵抗</>，且攻击力+15%",
-                "upgradeDescription": "Grants <$ba.buffres>Resist</> and ATK +15% to all [Karlan Trade] Operators after Gnosis has been deployed for 10 seconds"
-            }
-        ]
-    ],
-    "uniequip_003_vigil": [
-        [
-            {
-                "name": "Wolven Nature",
-                "EN": "Vigil and the Wolfpack's attacks ignore 175 DEF when attacking enemies blocked by the Wolfpack",
-                "CN": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其175防御力",
-                "mod": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其175防御力，并偷取其15点防御力(最高100点)",
-                "upgradeDescription": "Vigil and the Wolfpack's attacks ignore 175 DEF when attacking enemies blocked by the Wolfpack and <$ba.steal>Steal</> <@ba.vup>15</> DEF from the target (Caps at <@ba.vup>100</> DEF)"
-            },
-            {
-                "name": "Wolven Nature",
-                "EN": "Vigil and the Wolfpack's attacks ignore 200 <@ba.talpu>(+25)</> DEF when attacking enemies blocked by the Wolfpack",
-                "CN": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其200<@ba.talpu>(+25)</>防御力",
-                "mod": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其200<@ba.talpu>(+25)</>防御力，并偷取其15点防御力(最高100点)",
-                "upgradeDescription": "Vigil and the Wolfpack's attacks ignore 200 <@ba.talpu>(+25)</> DEF when attacking enemies blocked by the Wolfpack and <$ba.steal>Steal</> <@ba.vup>15</> DEF from the target (Caps at <@ba.vup>100</> DEF)"
-            }
-        ],
-        [
-            {
-                "name": "Wolven Nature",
-                "EN": "Vigil and the Wolfpack's attacks ignore 175 DEF when attacking enemies blocked by the Wolfpack",
-                "CN": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其175防御力",
-                "mod": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其225防御力，并偷取其20点防御力(最高100点)",
-                "upgradeDescription": "Vigil and the Wolfpack's attacks ignore 255 DEF when attacking enemies blocked by the Wolfpack and <$ba.steal>Steal</> <@ba.vup>20</> DEF from the target (Caps at <@ba.vup>100</> DEF)"
-            },
-            {
-                "name": "Wolven Nature",
-                "EN": "Vigil and the Wolfpack's attacks ignore 200 <@ba.talpu>(+25)</> DEF when attacking enemies blocked by the Wolfpack",
-                "CN": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其200<@ba.talpu>(+25)</>防御力",
-                "mod": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其250<@ba.talpu>(+25)</>防御力，并偷取其20点防御力(最高100点)",
-                "upgradeDescription": "Vigil and the Wolfpack's attacks ignore 250 <@ba.talpu>(+25)</> DEF when attacking enemies blocked by the Wolfpack and <$ba.steal>Steal</> <@ba.vup>20</> DEF from the target (Caps at <@ba.vup>100</> DEF)"
-            }
-        ]
-    ],
-    "uniequip_003_sleach": [
-        [
-            {
-                "name": "Spiritual Influence",
-                "EN": "After deployment, the next Operator has -2 DP Cost",
-                "CN": "部署后，下一名部署的干员费用-2",
-                "mod": "部署后，下一名部署的干员费用-2, 若该干员为地面干员，则部署后获得1点部署费用",
-                "upgradeDescription": "After deployment, the next Operator has -2 DP Cost. If the next Operator is a Melee Operator, gain 1 DP"
-            }
-        ],
-        [
-            {
-                "name": "Spiritual Influence",
-                "EN": "After deployment, the next Operator has -2 DP Cost",
-                "CN": "部署后，下一名部署的干员费用-2",
-                "mod": "部署后，下一名部署的干员费用-2, 若该干员为地面干员，则部署后获得2点部署费用",
-                "upgradeDescription": "After deployment, the next Operator has -2 DP Cost. If the next Operator is a Melee Operator, gain 2 DP"
-            }
-        ]
-    ],
-    "uniequip_003_bgsnow": [
-        [
-            {
-                "name": "Stenographer of Weaknesses",
-                "EN": "Attacks from the 'Typewriter' reduce the target's DEF by 18% for 4 seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to 23%",
-                "CN": "“打字机”的攻击会使命中目标的防御力下降18%，持续4秒；若“打字机”放在鸿雪周围四格则效果提升至23%",
-                "mod": "“打字机”的攻击会使命中目标的防御力下降23%，持续4秒；若“打字机”放在鸿雪周围八格则效果提升至28%",
-                "upgradeDescription": "Attacks from the 'Typewriter' reduce the target's DEF by 23% for 4 seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to 28%"
-            },
-            {
-                "name": "Stenographer of Weaknesses",
-                "EN": "Attacks from the 'Typewriter' reduce the target's DEF by 20% <@ba.talpu>(+2%)</> for 5 <@ba.talpu>(+1)</> seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to <@ba.talpu>25% (+2%)</>",
-                "CN": "“打字机”的攻击会使命中目标的防御力下降20%<@ba.talpu>(+2%)</>，持续5<@ba.talpu>(+1)</>秒；若“打字机”放在鸿雪周围四格则效果提升至25%<@ba.talpu>(+2%)</>",
-                "mod": "“打字机”的攻击会使命中目标的防御力下降25%<@ba.talpu>(+2%)</>，持续5<@ba.talpu>(+1)</>秒；若“打字机”放在鸿雪周围八格则效果提升至30%<@ba.talpu>(+2%)</>",
-                "upgradeDescription": "Attacks from the 'Typewriter' reduce the target's DEF by 25% <@ba.talpu>(+2%)</> for 5 <@ba.talpu>(+1)</> seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to <@ba.talpu>30% (+2%)</>"
-            }
-        ],
-        [
-            {
-                "name": "Stenographer of Weaknesses",
-                "EN": "Attacks from the 'Typewriter' reduce the target's DEF by 18% for 4 seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to 23%",
-                "CN": "“打字机”的攻击会使命中目标的防御力下降18%，持续4秒；若“打字机”放在鸿雪周围四格则效果提升至23%",
-                "mod": "“打字机”的攻击会使命中目标的防御力下降28%，持续4秒；若“打字机”放在鸿雪周围八格则效果提升至33%",
-                "upgradeDescription": "Attacks from the 'Typewriter' reduce the target's DEF by 28% for 4 seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to 33%"
-            },
-            {
-                "name": "Stenographer of Weaknesses",
-                "EN": "Attacks from the 'Typewriter' reduce the target's DEF by 20% <@ba.talpu>(+2%)</> for 5 <@ba.talpu>(+1)</> seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to <@ba.talpu>25% (+2%)</>",
-                "CN": "“打字机”的攻击会使命中目标的防御力下降20%<@ba.talpu>(+2%)</>，持续5<@ba.talpu>(+1)</>秒；若“打字机”放在鸿雪周围四格则效果提升至25%<@ba.talpu>(+2%)</>",
-                "mod": "“打字机”的攻击会使命中目标的防御力下降30%<@ba.talpu>(+2%)</>，持续5<@ba.talpu>(+1)</>秒；若“打字机”放在鸿雪周围八格则效果提升至35%<@ba.talpu>(+2%)</>",
-                "upgradeDescription": "Attacks from the 'Typewriter' reduce the target's DEF by 30% <@ba.talpu>(+2%)</> for 5 <@ba.talpu>(+1)</> seconds; if the 'Typewriter' is placed within the 4 tiles adjacent to Pozëmka, this effect increases to <@ba.talpu>35% (+2%)</>"
-            }
-        ]
-    ],
     "uniequip_002_ines": [
         [
             {
@@ -781,7 +591,7 @@
                 "name": "复燃",
                 "CN": "攻击范围内敌人被击倒时生成一个悲叹的仆役，最多召唤3个，若无法再次召唤则使一个悲叹的仆役升级(提升阻挡数与更多的生命、攻击和防御)",
                 "mod": "攻击范围内敌人被击倒时在10秒内自身攻击力+15%，并在攻击范围内生成一个悲叹的仆役，最多召唤3个，若无法再次召唤则使一个悲叹的仆役升级(提升阻挡数与更多的生命、攻击和防御",
-                "upgradeDescription": "When an enemy within Attack Range is defeated, ATK +15% for 10 seconds and summon The Servant of Lament at its location (up to 3). If no more Servant of Laments can be summoned, upgrade 1 Servant of Lament instead (increase Block Count, higher HP, higher ATK and higher DEF) "
+                "upgradeDescription": "When an enemy is defeated within Attack Range, ATK +15% for 10 seconds and summons a Servant of Lamentation (max 3); if no more Servants can be summoned, upgrades a Servant instead (increases Block, HP, ATK, and DEF)"
             }
         ],
         [
@@ -789,7 +599,7 @@
                 "name": "复燃",
                 "CN": "攻击范围内敌人被击倒时生成一个悲叹的仆役，最多召唤3个，若无法再次召唤则使一个悲叹的仆役升级(提升阻挡数与更多的生命、攻击和防御)",
                 "mod": "自身和召唤物攻击范围内敌人被击倒时在10秒内自身攻击力+25%，并在攻击范围内生成一个悲叹的仆役，最多召唤3个，若无法再次召唤则使一个悲叹的仆役升级(提升阻挡数与更多的生命、攻击和防御",
-                "upgradeDescription": "When an enemy within own or summons' Attack Range is defeated, ATK +25% for 10 seconds and summon The Servant of Lament at its location (up to 3). If no more Servant of Laments can be summoned, upgrade 1 Servant of Lament instead (increase Block Count, higher HP, higher ATK and higher DEF) "
+                "upgradeDescription": "When an enemy is defeated within Necrass or Servants' Attack Range, ATK +25% for 10 seconds and summons a Servant of Lamentation (max 3); if no more Servants can be summoned, upgrades a Servant instead (increases Block, HP, ATK, and DEF)"
             }
         ]
     ],
@@ -1376,6 +1186,188 @@
                 "CN": "浮泡破碎时，为所在的单位治疗相当于遥攻击力28%<@ba.talpu>(+3%)</>的生命值",
                 "mod": "浮泡破碎时，为所在的单位治疗相当于遥攻击力28%<@ba.talpu>(+3%)</>的生命值，并有20%的概率回复1点技力",
                 "upgradeDescription": "When Bubble pop, Bubbled opearator healed by 28%<@ba.talpu>(+3%)</> ATK and has 20% chance to recover 1 SP"
+            }
+        ]
+    ],
+    "uniequip_002_oblvns": [
+        [
+            {
+                "name": "颂乐音符",
+                "CN": "丰川祥子可以<$ba.permanentatk>持续攻击</>且攻击会演奏追踪敌人的音符，音符飘出攻击范围一段时间后消失。每存在一个音符，<$ba.mujica>AveMujica</>成员无视敌人3%的防御力和2%法术抗性(最多叠加至10层)",
+                "mod": "丰川祥子可以<$ba.permanentatk>持续攻击</>且攻击会演奏追踪敌人的音符，音符飘出攻击范围一段时间后消失。每存在一个音符，<$ba.mujica>AveMujica</>成员无视敌人4%的防御力和2%法术抗性(最多可叠加12层); 技能期间远程攻击不再降低攻击力",
+                "upgradeDescription": "<$ba.permanentatk>Continuous attack</>, each attack become Musical note that tracking on enemy. Musical Note will disappear when out of Attack Range for a while. For every Musical Note exist, every <$ba.mujica>Ave Mujica</> members ignore 4% DEF and 2% RES (up to 12 stacks); Ranged attacks no longer deal reduced damage during skill"
+            }
+        ],
+        [
+            {
+                "name": "颂乐音符",
+                "CN": "丰川祥子可以<$ba.permanentatk>持续攻击</>且攻击会演奏追踪敌人的音符，音符飘出攻击范围一段时间后消失。每存在一个音符，<$ba.mujica>AveMujica</>成员无视敌人3%的防御力和2%法术抗性(最多叠加至10层)",
+                "mod": "丰川祥子可以<$ba.permanentatk>持续攻击</>且攻击会演奏追踪敌人的音符，音符飘出攻击范围一段时间后消失。每存在一个音符，<$ba.mujica>AveMujica</>成员无视敌人5%的防御力和2.5%法术抗性(最多可叠加12层); 技能期间远程攻击不再降低攻击力",
+                "upgradeDescription": "<$ba.permanentatk>Continuous attack</>, each attack become Musical note that tracking on enemy. Musical Note will disappear when out of Attack Range for a while. For every Musical Note exist, every <$ba.mujica>Ave Mujica</> members ignore 5% DEF and 2.5% RES (up to 12 stacks); Ranged attacks no longer deal reduced damage during skill"
+            }
+        ]
+    ],
+    "uniequip_002_amoris": [
+        [
+            {
+                "name": "双利手",
+                "CN": "祐天寺若麦可以进行<$ba.permanentatk>持续攻击</>; 攻击时10%概率使敌人获得8%<$ba.fragile>脆弱</>，持续2秒",
+                "mod": "祐天寺若麦可以进行<$ba.permanentatk>持续攻击</>; 攻击时12%概率使敌人获得10%<$ba.fragile>脆弱</>，持续2.5秒",
+                "upgradeDescription": "<$ba.permanentatk>Continuous attack</>; When attack, has 12% chance to inflict 10% <$ba.fragile>Fragile</> for 2.5 seconds"
+            }
+        ],
+        [
+            {
+                "name": "双利手",
+                "CN": "祐天寺若麦可以进行<$ba.permanentatk>持续攻击</>; 攻击时10%概率使敌人获得8%<$ba.fragile>脆弱</>，持续2秒",
+                "mod": "祐天寺若麦可以进行<$ba.permanentatk>持续攻击</>; 攻击时15%概率使敌人获得12%<$ba.fragile>脆弱</>，持续3秒",
+                "upgradeDescription": "<$ba.permanentatk>Continuous attack</>; When attack, has 15% chance to inflict 12% <$ba.fragile>Fragile</> for 3 seconds"
+            }
+        ]
+    ],
+    "uniequip_002_dolris": [
+        [
+            {
+                "name": "谎言的假面",
+                "CN": "技能未开启时每4秒治疗攻击范围内生命最低的友方单位相当于攻击力30%的生命; 技能期间优先选择丰川祥子作为治疗目标",
+                "mod": "技能未开启时每3.5秒治疗攻击范围内生命最低的友方单位相当于攻击力30%的生命; 技能期间优先选择丰川祥子作为治疗目标",
+                "upgradeDescription": "When skill is not active, heal lowest HP operator in Attack Range by 30% ATK every 3.5 seconds; When skill is active, prioritize healing Togawa Sakiko instead."
+            },
+            {
+                "name": "谎言的假面",
+                "CN": "技能未开启时每4秒治疗攻击范围内生命最低的友方单位相当于攻击力35%<@ba.talpu>(+5%)</>的生命; 技能期间优先选择丰川祥子作为治疗目标",
+                "mod": "技能未开启时每3.5秒治疗攻击范围内生命最低的友方单位相当于攻击力35%<@ba.talpu>(+5%)</>的生命; 技能期间优先选择丰川祥子作为治疗目标",
+                "upgradeDescription": "When skill is not active, heal lowest HP operator in Attack Range by 35%<@ba.talpu>(+5%)</> ATK every 3.5 seconds; When skill is active, prioritize healing Togawa Sakiko instead."
+            }
+        ],
+        [
+            {
+                "name": "谎言的假面",
+                "CN": "技能未开启时每4秒治疗攻击范围内生命最低的友方单位相当于攻击力30%的生命; 技能期间优先选择丰川祥子作为治疗目标",
+                "mod": "技能未开启时每3秒治疗攻击范围内生命最低的友方单位相当于攻击力30%的生命; 技能期间优先选择丰川祥子作为治疗目标",
+                "upgradeDescription": "When skill is not active, heal lowest HP operator in Attack Range by 30% ATK every 3 seconds; When skill is active, prioritize healing Togawa Sakiko instead."
+            },
+            {
+                "name": "谎言的假面",
+                "CN": "技能未开启时每4秒治疗攻击范围内生命最低的友方单位相当于攻击力35%<@ba.talpu>(+5%)</>的生命; 技能期间优先选择丰川祥子作为治疗目标",
+                "mod": "技能未开启时每3秒治疗攻击范围内生命最低的友方单位相当于攻击力35%<@ba.talpu>(+5%)</>的生命; 技能期间优先选择丰川祥子作为治疗目标",
+                "upgradeDescription": "When skill is not active, heal lowest HP operator in Attack Range by 35%<@ba.talpu>(+5%)</> ATK every 3 seconds; When skill is active, prioritize healing Togawa Sakiko instead."
+            }
+        ]
+    ],
+    "uniequip_002_tmoris": [
+        [
+            {
+                "name": "应召而至",
+                "CN": "被八幡海铃伤害的敌人有21%概率被<$ba.sluggish>停顿</>3秒; 技能期间，八幡海铃的攻击范围扩大",
+                "mod": "被八幡海铃伤害的敌人有25%概率被<$ba.sluggish>停顿</>3秒; 技能期间，八幡海铃的攻击范围扩大",
+                "upgradeDescription": "When dealing damage, has 25% chance to <$ba.sluggish>Slow</> target for 3 seconds. When skill is active, Attack Range <@ba.vup>expands</>"
+            }
+        ],
+        [
+            {
+                "name": "应召而至",
+                "CN": "被八幡海铃伤害的敌人有21%概率被<$ba.sluggish>停顿</>3秒; 技能期间，八幡海铃的攻击范围扩大",
+                "mod": "被八幡海铃伤害的敌人有30%概率被<$ba.sluggish>停顿</>3秒; 技能期间，八幡海铃的攻击范围扩大",
+                "upgradeDescription": "When dealing damage, has 30% chance to <$ba.sluggish>Slow</> target for 3 seconds. When skill is active, Attack Range <@ba.vup>expands</>"
+            }
+        ]
+    ],
+    "uniequip_002_mortis": [
+        [
+            {
+                "name": "另一个“她”",
+                "CN": "若叶睦和<替身>受到物理和法术伤害的30%转化为一半的<$ba.dt.apoptosis>凋亡损伤</>; <替身>不攻击，防御力+20%，<$ba.mujica>AveMujica</>成员攻击时有20%的概率使替身持续时间缩短1秒",
+                "mod": "若叶睦和<替身>受到物理和法术伤害的30%转化为一半的<$ba.dt.apoptosis>凋亡损伤</>; <替身>不攻击，防御力+24%，<$ba.mujica>AveMujica</>成员攻击时有20%的概率使替身持续时间缩短1秒",
+                "upgradeDescription": "Convert 30% of Physical damage and Arts damage received by Mutsumi and <Subtitute> to <$ba.dt.apoptosis>Necrosis Damage</> by half amount; <Subtitute> does not attack and DEF+24%. When other <$ba.mujica>Ave Mujica</> member attacks, has 20% chance to reduce <Subtitute> duration by 1 second"
+            },
+            {
+                "name": "另一个“她”",
+                "CN": "若叶睦和<替身>受到物理和法术伤害的30%转化为一半的<$ba.dt.apoptosis>凋亡损伤</>; <替身>不攻击，防御力+24%<@ba.talpu>(+4%)</>，<$ba.mujica>AveMujica</>成员攻击时有20%的概率使替身持续时间缩短1秒",
+                "mod": "若叶睦和<替身>受到物理和法术伤害的30%转化为一半的<$ba.dt.apoptosis>凋亡损伤</>; <替身>不攻击，防御力+28%<@ba.talpu>(+4%)</>，<$ba.mujica>AveMujica</>成员攻击时有20%的概率使替身持续时间缩短1秒",
+                "upgradeDescription": "Convert 30% of Physical damage and Arts damage received by Mutsumi and <Subtitute> to <$ba.dt.apoptosis>Necrosis Damage</> by half amount; <Subtitute> does not attack and DEF+28%<@ba.talpu>(+4%)</>. When other <$ba.mujica>Ave Mujica</> member attacks, has 20% chance to reduce <Subtitute> duration by 1 second"
+            }
+        ],
+        [
+            {
+                "name": "另一个“她”",
+                "CN": "若叶睦和<替身>受到物理和法术伤害的30%转化为一半的<$ba.dt.apoptosis>凋亡损伤</>; <替身>不攻击，防御力+20%，<$ba.mujica>AveMujica</>成员攻击时有20%的概率使替身持续时间缩短1秒",
+                "mod": "若叶睦和<替身>受到物理和法术伤害的30%转化为一半的<$ba.dt.apoptosis>凋亡损伤</>; <替身>不攻击，防御力+26%，<$ba.mujica>AveMujica</>成员攻击时有20%的概率使替身持续时间缩短1秒",
+                "upgradeDescription": "Convert 30% of Physical damage and Arts damage received by Mutsumi and <Subtitute> to <$ba.dt.apoptosis>Necrosis Damage</> by half amount; <Subtitute> does not attack and DEF+26%. When other <$ba.mujica>Ave Mujica</> member attacks, has 20% chance to reduce <Subtitute> duration by 1 second"
+            },
+            {
+                "name": "另一个“她”",
+                "CN": "若叶睦和<替身>受到物理和法术伤害的30%转化为一半的<$ba.dt.apoptosis>凋亡损伤</>; <替身>不攻击，防御力+24%<@ba.talpu>(+4%)</>，<$ba.mujica>AveMujica</>成员攻击时有20%的概率使替身持续时间缩短1秒",
+                "mod": "若叶睦和<替身>受到物理和法术伤害的30%转化为一半的<$ba.dt.apoptosis>凋亡损伤</>; <替身>不攻击，防御力+30%<@ba.talpu>(+4%)</>，<$ba.mujica>AveMujica</>成员攻击时有20%的概率使替身持续时间缩短1秒",
+                "upgradeDescription": "Convert 30% of Physical damage and Arts damage received by Mutsumi and <Subtitute> to <$ba.dt.apoptosis>Necrosis Damage</> by half amount; <Subtitute> does not attack and DEF+30%<@ba.talpu>(+4%)</>. When other <$ba.mujica>Ave Mujica</> member attacks, has 20% chance to reduce <Subtitute> duration by 1 second"
+            }
+        ]
+    ],
+    "uniequip_003_huang": [
+        [
+            {
+                "name": "Emergency Defibrillation",
+                "EN": "When this unit's HP falls beneath 25%, restores 50% HP (one time only) and prevents HP from falling under 50% for 6 seconds",
+                "CN": "在生命值低于25%时，仅一次回复50%的生命值并在6秒内使生命值不低于50%",
+                "mod": "在生命值低于25%时，仅一次回复50%的生命值并在8秒内使生命值不低于50%，且在生命值高于50%时攻击无视目标150点防御力",
+                "upgradeDescription": "When this unit's HP falls beneath 25%, restores 50% HP (one time only) and prevents HP from falling under 50% for 8 seconds. While HP is above 50%, attack ignore 150 DEF"
+            },
+            {
+                "name": "Emergency Defibrillation",
+                "EN": "When this unit's HP falls beneath 25%, restores 50% HP (one time only) and prevents HP from falling under 50% for 7<@ba.talpu>(+1)</> seconds",
+                "CN": "在生命值低于25%时，仅一次回复50%的生命值并在7<@ba.talpu>(+1)</>秒内使生命值不低于50%",
+                "mod": "在生命值低于25%时，仅一次回复50%的生命值并在9<@ba.talpu>(+1)</>秒内使生命值不低于50%，，且在生命值高于50%时攻击无视目标150点防御力",
+                "upgradeDescription": "When this unit's HP falls beneath 25%, restores 50% HP (one time only) and prevents HP from falling under 50% for 9<@ba.talpu>(+1)</> seconds. While HP is above 50%, attack ignore 150 DEF"
+            }
+        ],
+        [
+            {
+                "name": "Emergency Defibrillation",
+                "EN": "When this unit's HP falls beneath 25%, restores 50% HP (one time only) and prevents HP from falling under 50% for 6 seconds",
+                "CN": "在生命值低于25%时，仅一次回复50%的生命值并在6秒内使生命值不低于50%",
+                "mod": "在生命值首次低于25%、50%时，回复50%的生命值并在8秒内使生命值不低于50%，且生命值高于50%时攻击无视目标150点防御力",
+                "upgradeDescription": "When this unit's HP falls beneath 25% and 50%, restores 50% HP (one time only each) and prevents HP from falling under 50% for 8 seconds. While HP is above 50%, attack ignore 150 DEF"
+            },
+            {
+                "name": "Emergency Defibrillation",
+                "EN": "When this unit's HP falls beneath 25%, restores 50% HP (one time only) and prevents HP from falling under 50% for 7<@ba.talpu>(+1)</> seconds",
+                "CN": "在生命值低于25%时，仅一次回复50%的生命值并在7<@ba.talpu>(+1)</>秒内使生命值不低于50%",
+                "mod": "在生命值首次低于25%、50%时，回复50%的生命值并在9<@ba.talpu>(+1)</>秒内使生命值不低于50%，，且在生命值高于50%时攻击无视目标150点防御力",
+                "upgradeDescription": "When this unit's HP falls beneath 25% and 50%, restores 50% HP (one time only each) and prevents HP from falling under 50% for 9<@ba.talpu>(+1)</> seconds. While HP is above 50%, attack ignore 150 DEF"
+            }
+        ]
+    ],
+    "uniequip_003_cello": [
+        [
+            {
+                "name": "Mental Inversion",
+                "EN": "Enemies within attack range take 20% more <$ba.dt.apoptosis2>Necrosis damage</>",
+                "CN": "使攻击范围内敌人受到的<$ba.dt.apoptosis2>凋亡损伤</>提高20%",
+                "mod": "在场时，全场敌人受到的<$ba.dt.apoptosis2>凋亡损伤</>提高20%，<$ba.dt.apoptosis2>凋亡损伤</>爆发期间每秒受到100点元素伤害",
+                "upgradeDescription": "Enemies within attack range take 20% more <$ba.dt.apoptosis2>Necrosis damage</> and take additional 100 Elemental Damage per second when under the burst effect of <$ba.dt.apoptosis2>Necrosis Damage</>"
+            },
+            {
+                "name": "Mental Inversion",
+                "EN": "Enemies within attack range take 22% more <$ba.dt.apoptosis2>Necrosis damage</> <@ba.talpu>(+2%)</>",
+                "CN": "使攻击范围内敌人受到的<$ba.dt.apoptosis2>凋亡损伤</>提高22%<@ba.talpu>(+2%)</>",
+                "mod": "在场时，全场敌人受到的<$ba.dt.apoptosis2>凋亡损伤</>提高22%<@ba.talpu>(+2%)</>，<$ba.dt.apoptosis2>凋亡损伤</>爆发期间每秒受到100点元素伤害",
+                "upgradeDescription": "Enemies within attack range take 22%<@ba.talpu>(+2%)</> more <$ba.dt.apoptosis2>Necrosis damage</> and take additional 100 Elemental Damage per second when under the burst effect of <$ba.dt.apoptosis2>Necrosis Damage</>"
+            }
+        ],
+        [
+            {
+                "name": "Mental Inversion",
+                "EN": "Enemies within attack range take 20% more <$ba.dt.apoptosis2>Necrosis damage</>",
+                "CN": "使攻击范围内敌人受到的<$ba.dt.apoptosis2>凋亡损伤</>提高20%",
+                "mod": "在场时，全场敌人受到的<$ba.dt.apoptosis2>凋亡损伤</>提高20%，<$ba.dt.apoptosis2>凋亡损伤</>爆发期间每秒受到150点元素伤害",
+                "upgradeDescription": "Enemies within attack range take 20% more <$ba.dt.apoptosis2>Necrosis damage</> and take additional 150 Elemental Damage per second when under the burst effect of <$ba.dt.apoptosis2>Necrosis Damage</>"
+            },
+            {
+                "name": "Mental Inversion",
+                "EN": "Enemies within attack range take 22% more <$ba.dt.apoptosis2>Necrosis damage</> <@ba.talpu>(+2%)</>",
+                "CN": "使攻击范围内敌人受到的<$ba.dt.apoptosis2>凋亡损伤</>提高22%<@ba.talpu>(+2%)</>",
+                "mod": "在场时，全场敌人受到的<$ba.dt.apoptosis2>凋亡损伤</>提高22%<@ba.talpu>(+2%)</>，<$ba.dt.apoptosis2>凋亡损伤</>爆发期间每秒受到150点元素伤害",
+                "upgradeDescription": "Enemies within attack range take 22%<@ba.talpu>(+2%)</> more <$ba.dt.apoptosis2>Necrosis damage</> and take additional 150 Elemental Damage per second when under the burst effect of <$ba.dt.apoptosis2>Necrosis Damage</>"
             }
         ]
     ]

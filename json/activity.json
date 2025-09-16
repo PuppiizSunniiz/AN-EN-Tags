@@ -1,5 +1,10 @@
 {
     "Dict": {
+        "act45side": {
+            "nameCN": "无忧梦呓",
+            "nameEN": "Somniloquium Serenum",
+            "startCN": 1756958400
+        },
         "act2enemyduel": {
             "nameCN": "争锋频道：蜜果城",
             "nameEN": "Duel Channel: Honeydew",
@@ -62,7 +67,7 @@
         },
         "act1multi": {
             "nameCN": "促融共竞#1",
-            "nameEN": "Rhodes Island Icebreaker Games #1",
+            "nameEN": "Icebreaker Games #1",
             "startCN": 1742457600
         },
         "act41side": {
@@ -867,7 +872,7 @@
         },
         "camp_r_27": {
             "nameCN": "选帝侯广场",
-            "nameEN": "选帝侯广场",
+            "nameEN": "Kurfürstenplatz",
             "startCN": 1740945600
         },
         "camp_r_28": {
@@ -989,6 +994,11 @@
             "nameCN": "斯沃玛加工平台",
             "nameEN": "Słoma Processing Platform",
             "startCN": -1
+        },
+        "Mechanic": {
+            "nameCN": "训练场",
+            "nameEN": "Training Ground",
+            "startCN": 1722484800
         },
         "CC#Beta": {
             "nameCN": "危机合约",
@@ -1883,6 +1893,11 @@
             1722484800
         ],
         [
+            "Mechanic",
+            "Training Ground",
+            1722484800
+        ],
+        [
             "act27sre",
             "So Long, Adele: Home Away From Home - Retrospection",
             1724313600
@@ -1974,7 +1989,7 @@
         ],
         [
             "camp_r_27",
-            "选帝侯广场",
+            "Kurfürstenplatz",
             1740945600
         ],
         [
@@ -1984,7 +1999,7 @@
         ],
         [
             "act1multi",
-            "Rhodes Island Icebreaker Games #1",
+            "Icebreaker Games #1",
             1742457600
         ],
         [
@@ -2066,6 +2081,11 @@
             "act2enemyduel",
             "Duel Channel: Honeydew",
             1756368000
+        ],
+        [
+            "act45side",
+            "Somniloquium Serenum",
+            1756958400
         ]
     ]
 }

@@ -104,6 +104,8 @@ MAT_LIST : list[str] = [mat_data["itemId"] for mat_data in json_akmaterial]
 # Def function
 #########################################################################################################
 def get_new_akhr(new_char_id : str, new_char_name : str) -> dict[str, Any]:
+    gender : str = ''.join(json_handbook["handbookDict"][new_char_id]["storyTextAudio"][0]["stories"][0]["storyText"].split("\n")[1].split("】")[1].split()) if new_char_id in json_handbook["handbookDict"] else "temp"
+    sex : dict[str, str] = {"女士" : "女"}
     return  {
                                     "id"            :   new_char_id,
                                     "name_cn"       :   json_char[new_char_id]["name"],
@@ -115,7 +117,7 @@ def get_new_akhr(new_char_id : str, new_char_name : str) -> dict[str, Any]:
                                     "teamId"        :   json_char[new_char_id]["teamId"],
                                     "type"          :   CLASS_PARSE_CN[json_char[new_char_id]["profession"]],
                                     "level"         :   int(json_char[new_char_id]["rarity"][-1]),
-                                    "sex"           :   ''.join(json_handbook["handbookDict"][new_char_id]["storyTextAudio"][0]["stories"][0]["storyText"].split("\n")[1].split("】")[1].split()) if new_char_id in json_handbook["handbookDict"] else "temp",
+                                    "sex"           :   sex.get(gender, gender),
                                     "tags"          :   (["高级资深干员"] if json_char[new_char_id]["rarity"][-1] == "6" else []) + \
                                                         (["资深干员"] if json_char[new_char_id]["rarity"][-1] == "5" else []) + \
                                                         (["近战位"] if json_char[new_char_id]["position"] == "MELEE" else []) + \
@@ -180,12 +182,11 @@ def update_char_TraitSkillTalent(new_char_name : str) :
                                 [
                                     {
                                         "name"  : candidate["name"],
-                                        "descCN": parentheses(candidate['description']),
+                                        "descCN": parentheses(candidate["description"]),
                                         "desc"  : ""
-                                    } for candidate in talent['candidates'] if not candidate["isHideTalent"]
-                                ]  for talent in json_char[new_char_id]["talents"] 
+                                    } for candidate in talent["candidates"] if not candidate["isHideTalent"]
+                                ]  for talent in json_char[new_char_id]["talents"] if not talent["candidates"][0]["isHideTalent"]
                             ]
-    
     ## Skill
     for skill in json_char[new_char_id]["skills"]:
         skill_id = skill["skillId"]
@@ -194,7 +195,6 @@ def update_char_TraitSkillTalent(new_char_name : str) :
                                     "name"  : json_skill[skill_id]["levels"][0]["name"],
                                     "desc"  : [parentheses(json_skill[skill_id]["levels"][x]["description"]) for x in range(len(json_skill[skill_id]["levels"]))]
                                 }
-    
     ## Token Find
     if json_char[new_char_id]["displayTokenDict"] :
         for new_token_key in json_char[new_char_id]["displayTokenDict"]:
@@ -210,7 +210,7 @@ def update_char_TraitSkillTalent(new_char_name : str) :
                                         }
 
 def parentheses(desc : str) -> str :
-    return desc.replace("（", "(").replace("）", ")").replace("【", "[").replace("】", "]").replace("；","; ")
+    return desc.replace("（", "(").replace("）", ")").replace("【", "[").replace("】", "]").replace("；","; ").replace(" ", " ").replace("、", ", ")
 
 #########################################################################################################
 # Chars
@@ -447,7 +447,7 @@ with open("update/tl-attacktype.json", "w", encoding = "utf-8") as filepath :
 #########################################################################################################
 for term in json_construct["termDescriptionDict"]:
     if term not in json_term["termDescriptionDict"].keys():
-        json_term["termDescriptionDict"][term] = json_construct["termDescriptionDict"][term]
+        json_term["termDescriptionDict"][term] = {k:parentheses(json_construct["termDescriptionDict"][term][k]) for k in json_construct["termDescriptionDict"][term].keys()}
 
 for term in json_term["termDescriptionDict"].keys():
     if term in json_constructEN["termDescriptionDict"].keys() :
@@ -516,7 +516,7 @@ for stage in json_stage["stages"].keys():
         for skip in ["bossrush_", "_st", "_tr", "break_", "enemyduel_", "multi_", "arcade_", "autochess_", "vecb_", "_mo", "multi-", "lock_"]:
             if stage.find(skip) != -1:
                 return True
-        else: return False
+        return False
         
     if stage.startswith(("tr_", "lt_", "camp_", "st_", "spst_", "easy_", "tough_", "wk_", "pro_", "guide_")) or stage.endswith(("#f#","#s")) or skip_stage(stage):
         continue
