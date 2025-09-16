@@ -1,5 +1,5 @@
 const AVATAR_URL = "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/"
-const BASE_URL = "http://127.0.0.1:8080/"
+const BASE_URL = "https://puppiizsunniiz.github.io/AN-EN-Tags/"
 const CHAR_SIDE = 73
 const LI_HEIGHT = 90
 const CHAR_STYLE = `width:${CHAR_SIDE}px !important; height:${CHAR_SIDE}px !important;`
