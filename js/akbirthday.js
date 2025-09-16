@@ -10,28 +10,12 @@ const op_dict = {}
 const birth = {"date": {}, "other": {}}
 
 $(document).ready(() => {
-    $.holdReady(true);
+    $.holdReady(true)
 
     const jsonList = {
         handbookInfo    : "./json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/handbook_info_table.json",
-        //charsEN         :"./json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/character_table.json",
         chars2          :"./json/tl-akhr.json",
         storytextTL     :"./json/tl-storytext.json",
-    }
-
-    const monthNames = {
-        1: "January", 
-        2: "February", 
-        3: "March", 
-        4: "April", 
-        5: "May", 
-        6: "June",
-        7: "July", 
-        8: "August", 
-        9: "September", 
-        10: "October", 
-        11:"November", 
-        12: "December",
     }
 
     async function LoadAllJsonObjects(obj, db) {
@@ -50,11 +34,13 @@ $(document).ready(() => {
     }
 
     LoadAllJsonObjects(jsonList, db).then(() => {
-        console.log(db)
-
         // TL
-        db.storytextTL["本人表示遗忘"] = "Claims to have forgotten"
-        db.storytextTL["本人表示无确切日期"] = "No exact date provided"
+        if (db.storytextTL["本人表示遗忘"] === undefined) {
+            db.storytextTL["本人表示遗忘"] = "Claims to have forgotten"
+        }
+        if (db.storytextTL["本人表示无确切日期"] === undefined) {
+            db.storytextTL["本人表示无确切日期"] = "No exact date provided"
+        }
         
         // Populate operator dict
         for (let i=0; i<db.chars2.length; ++i) {
@@ -62,7 +48,6 @@ $(document).ready(() => {
             op_dict[curr.id] = curr
             delete op_dict[curr.id].id
         }
-        console.log(op_dict)
 
         // Populate birthdates
         const dict = db.handbookInfo.handbookDict
@@ -99,7 +84,6 @@ $(document).ready(() => {
 })
 
 function CreateBirthdayTables(birth) {
-    console.log(birth)
     let prefix = ""
     let content = ""
     let suffix = ""
@@ -114,14 +98,14 @@ function CreateBirthdayTables(birth) {
                 `
     for (const [key, value] of Object.entries(birth.date)) {
         // Month
-        date.append(`<table class="table ak-table ak-table-striped table-hover my-3 ak-shadow" id="table-recommend">
+        date.append(`<table class="table ak-table ak-table-striped table-hover my-3 ak-shadow month-${key}" id="table-recommend" style="display:none;">
                         <thead class="ak-thead">
                             <tr><th scope="col" colspan="10" style="text-align: center;">${getMonthName(key)}</th></tr>
                         </thead>
                     </table>`)
 
         // Day
-        days = `    <div class="col-12 ak-bg ak-shadow mt-3" style="padding:15px;padding-right:0;padding-bottom:0;border-radius:0px" role="alert">
+        days = `    <div class="col-12 ak-bg ak-shadow mt-3 month-${key}" style="padding:15px;padding-right:0;padding-bottom:0;border-radius:0px;display:none;" role="alert">
                         <div class="row col-12" style="padding-right:0;">`
         days_suff = `   </div>
                     </div>`
@@ -195,8 +179,8 @@ const nthNumber = (number) => {
         ? ["th", "st", "nd", "rd"][
             (number > 3 && number < 21) || number % 10 > 3 ? 0 : number % 10
         ]
-        : "";
-};
+        : ""
+}
 function getMonthName(month) {
     const date = new Date(2000, month-1)
     return date.toLocaleString('default', { month: 'long' })
@@ -206,17 +190,39 @@ function getMonthDayName(month, day) {
 }
 
 /// UI Functions
-var filter = {"month": []}
-function FilterType(type, arg) {
-    console.log(type, arg)
-}
-
 function clickBtnClear() {
-    console.log("clear filter")
+    for (let i=1; i<=12; ++i) {
+        $('.month-'+i).css('display', 'none')
+    }
+    $('.month-o').css('display', 'none')
+    $('.button-tag').removeClass("btn-primary")
+    $('.button-tag').addClass("btn-secondary")
 }
 
 function selectOperator(op_id) {
-    window.open(BASE_URL + 'akhrchars.html?opname='+getOperatorName(op_id), '_blank');
+    window.open(BASE_URL + 'akhrchars.html?opname='+getOperatorName(op_id), '_blank')
 }
 
+function clickBtnTag(el){
+    const checked = $(el).hasClass("btn-primary")
+    const tag = $(el).attr('text')
+
+    if (tag === "a") {
+        for (let i=1; i<=12; ++i) {
+            $('.month-'+i).css('display', '')
+        }
+        $('.month-o').css('display', '')
+        
+        $('.button-tag').removeClass("btn-secondary")
+        $('.button-tag').addClass("btn-primary")
+    } else {
+        if (checked === false) {
+            $('.month-'+tag).css('display', '')
+        } else {
+            $('.month-'+tag).css('display', 'none')
+        }
+
+        $(el).toggleClass("btn-primary btn-secondary")
+    }
+}
 

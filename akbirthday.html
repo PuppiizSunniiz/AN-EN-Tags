@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name='theme-color' content='#222222ff'>
-    <title translate-id='web-title'>Birthday Test</title>
+    <title translate-id='web-title'>Arknights Birthday List</title>
     <link rel='manifest' href='./manifest.json' crossorigin='use-credentials'>
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css'>
     <link rel='stylesheet' href='css/ak.css'>
-    <link rel="stylesheet" href="css/akriic.css">
     <link rel="stylesheet" href="css/akchardetail.css">
     <link href='https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.css' rel='stylesheet'>
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
@@ -31,13 +30,13 @@
     </div>
     <script>
         $(() => {
-          $('#nav-placeholder').load('nav.html');
-        });
+            $('#nav-placeholder').load('nav.html')
+        })
         $(window).on("load", function () {
             setTimeout(function () {
-                $("#loadingOverlay").fadeOut(); 
-            }, 1000);
-        });
+                $("#loadingOverlay").fadeOut()
+            }, 1000)
+        })
     </script>
     <button class="btn btn-sm btn-primary goToTag" style="position:fixed;bottom:15px ;right: 0px;size:70px 70px;padding: 10px;z-index: 10000" id="to-tag" type="button">^ </button>
     <nav id="aknav" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="background-image: linear-gradient(#222222ff 70%,#222222ff , #111111aa );">
@@ -60,19 +59,20 @@
             <div class="row">
                 <div class="col-12">
                     <div class="row" style="margin:auto;padding:3px;text-align:center">
-                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 1)">January</button>
-                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 2)">February</button>
-                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 3)">March</button>
-                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 4)">April</button>
-                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 5)">May</button>
-                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 6)">June</button>
-                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 7)">July</button>
-                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 8)">August</button>
-                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 9)">September</button>
-                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 10)">October</button>
-                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 11)">November</button>
-                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-meet" onclick="FilterType('month', 12)">December</button>
-                        <button type="button" style="padding:5px;margin:2px"class="btn btn-sm ak-btn ak-riic-hire" onclick="FilterType('month', 0)">Other</button>
+                        <button type="button" onclick="clickBtnTag(this)" style="padding:5px;margin:2px" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 tags-class button-tag" text="1">January</button>
+                        <button type="button" onclick="clickBtnTag(this)" style="padding:5px;margin:2px" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 tags-class button-tag" text="2">February</button>
+                        <button type="button" onclick="clickBtnTag(this)" style="padding:5px;margin:2px" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 tags-class button-tag" text="3">March</button>
+                        <button type="button" onclick="clickBtnTag(this)" style="padding:5px;margin:2px" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 tags-class button-tag" text="4">April</button>
+                        <button type="button" onclick="clickBtnTag(this)" style="padding:5px;margin:2px" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 tags-class button-tag" text="5">May</button>
+                        <button type="button" onclick="clickBtnTag(this)" style="padding:5px;margin:2px" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 tags-class button-tag" text="6">June</button>
+                        <button type="button" onclick="clickBtnTag(this)" style="padding:5px;margin:2px" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 tags-class button-tag" text="7">July</button>
+                        <button type="button" onclick="clickBtnTag(this)" style="padding:5px;margin:2px" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 tags-class button-tag" text="8">August</button>
+                        <button type="button" onclick="clickBtnTag(this)" style="padding:5px;margin:2px" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 tags-class button-tag" text="9">September</button>
+                        <button type="button" onclick="clickBtnTag(this)" style="padding:5px;margin:2px" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 tags-class button-tag" text="10">October</button>
+                        <button type="button" onclick="clickBtnTag(this)" style="padding:5px;margin:2px" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 tags-class button-tag" text="11">November</button>
+                        <button type="button" onclick="clickBtnTag(this)" style="padding:5px;margin:2px" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 tags-class button-tag" text="12">December</button>
+                        <button type="button" onclick="clickBtnTag(this)" style="padding:5px;margin:2px" class="btn btn-sm btn-secondary ak-btn btn-tag my-1 tags-class button-tag" text="o">Other</button>
+                        <button type="button" onclick="clickBtnTag(this)" style="padding:5px;margin:2px" class="btn btn-sm ak-btn btn-tag my-1 ak-riic-meet" text="a">All Month</button>
                     </div>
                 </div>
             </div>
@@ -84,92 +84,15 @@
         <!-- Dates -->
         <div id="date"></div>
 
-        <!-- <table class="table ak-table ak-table-striped table-hover my-3 ak-shadow" id="table-recommend">
-            <thead class="ak-thead">
-                <tr><th scope="col" colspan="10" style="text-align: center;">January</th></tr>
-            </thead>
-        </table>
-        <div class="col-12 ak-bg ak-shadow mt-3" style="padding:15px;padding-right:0;padding-bottom:0;border-radius:0px" role="alert">
-            <div class="row col-12" id="date" style="padding-right:0;">
-                <div class="table ak-table col-12" id="other-1">
-                    <div class="row">
-                        <div class="col-2">1st January</div>
-                        <div class="col-10">
-                            <ul>
-                                <li class="selectop-grid3 ak-rare-6" onclick="selectOperator('char_180_amgoat')">
-                                    <div class="op-image-grid2">
-                                        <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_180_amgoat.png">
-                                    </div>
-                                    <div class="nametext nameshort ak-center blacktext">
-                                        Eyjafjalla
-                                    </div>
-                                </li>
-                                <li class="selectop-grid3 ak-rare-6" onclick="selectOperator('char_4102_threye')">
-                                    <div class="op-image-grid2">
-                                        <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4102_threye.png">
-                                    </div>
-                                    <div class="nametext nameshort ak-center blacktext">
-                                        Valarqvin
-                                    </div>
-                                </li>
-                                <li class="selectop-grid3 ak-rare-6" onclick="selectOperator('char_159_peacok')">
-                                    <div class="op-image-grid2">
-                                        <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_159_peacok.png">
-                                    </div>
-                                    <div class="nametext nameshort ak-center blacktext">
-                                        Conviction
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
         <!-- Other -->
-        <table class="table ak-table ak-table-striped table-hover my-3 ak-shadow" id="table-recommend">
+        <table class="table ak-table ak-table-striped table-hover my-3 ak-shadow month-o" id="table-recommend" style="display:none;">
             <thead class="ak-thead">
                 <tr><th scope="col" colspan="10" style="text-align: center;">Other</th></tr>
             </thead>
         </table>
 
-        <div class="col-12 ak-bg ak-shadow mt-3" style="padding:15px;padding-right:0;padding-bottom:0;border-radius:0px" role="alert">
+        <div class="col-12 ak-bg ak-shadow mt-3 month-o" style="padding:15px;padding-right:0;padding-bottom:0;border-radius:0px;display:none;" role="alert">
             <div class="row col-12" id="other" style="padding-right:0;">
-                <!-- <div class="table ak-table col-12" id="other-1">
-                    <div class="row">
-                        <div class="col-2">Other1</div>
-                        <div class="col-10">
-                            <ul>
-                                <li class="selectop-grid3 ak-rare-6" onclick="selectOperator('char_180_amgoat')">
-                                    <div class="op-image-grid2">
-                                        <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_180_amgoat.png">
-                                    </div>
-                                    <div class="nametext nameshort ak-center blacktext">
-                                        Eyjafjalla
-                                    </div>
-                                </li>
-                                <li class="selectop-grid3 ak-rare-6" onclick="selectOperator('char_4102_threye')">
-                                    <div class="op-image-grid2">
-                                        <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_4102_threye.png">
-                                    </div>
-                                    <div class="nametext nameshort ak-center blacktext">
-                                        Valarqvin
-                                    </div>
-                                </li>
-                                <li class="selectop-grid3 ak-rare-6" onclick="selectOperator('char_159_peacok')">
-                                    <div class="op-image-grid2">
-                                        <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/char_159_peacok.png">
-                                    </div>
-                                    <div class="nametext nameshort ak-center blacktext">
-                                        Conviction
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="table ak-table col-12">Other2</div> -->
             </div>
         </div>
         
