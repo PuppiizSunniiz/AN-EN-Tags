@@ -8314,114 +8314,114 @@
 	"char_4179_monstr": [
         [
             {
-                "name": "自我修复",
+                "name": "Self-Repair",
                 "descCN": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体，重构体周围友方单位的攻击力+3%，重构体受到自身和Mon3tr治疗时，可额外进行一次不会衰减的治疗跳跃",
-                "desc": "Can summon a Reconstruct on a ground tile within Attack Range and can only be healed by Mon3tr. Allies around the Reconstruct ATK +3%. When the Reconstruct receives healing from itself or Mon3tr, add 1 additional bounce with the same healing amount"
+                "desc": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +3% ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken"
             },
             {
-                "name": "自我修复",
+                "name": "Self-Repair",
                 "descCN": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体，重构体周围友方单位的攻击力+8%<@ba.talpu>(+5)</>，重构体受到自身和Mon3tr治疗时，可额外进行一次不会衰减的治疗跳跃",
-                "desc": "Can summon a Reconstruct on a ground tile within Attack Range and can only be healed by Mon3tr. Allies around the Reconstruct ATK +8%<@ba.talpu>(+5%)</>. When the Reconstruct receives healing from itself or Mon3tr, add 1 additional bounce with the same healing amount"
+                "desc": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +8% <@ba.talpu>(+5%)</> ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken"
             },
             {
-                "name": "自我修复",
+                "name": "Self-Repair",
                 "descCN": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体，重构体周围友方单位的攻击力+5%，重构体受到自身和Mon3tr治疗时，可额外进行一次不会衰减的治疗跳跃",
-                "desc": "Can summon a Reconstruct on a ground tile within Attack Range and can only be healed by Mon3tr. Allies around the Reconstruct ATK +5%. When the Reconstruct receives healing from itself or Mon3tr, add 1 additional bounce with the same healing amount"
+                "desc": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +5% ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken"
             },
             {
-                "name": "自我修复",
+                "name": "Self-Repair",
                 "descCN": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体，重构体周围友方单位的攻击力+10%<@ba.talpu>(+5)</>，重构体受到自身和Mon3tr治疗时，可额外进行一次不会衰减的治疗跳跃",
-                "desc": "Can summon a Reconstruct on a ground tile within Attack Range and can only be healed by Mon3tr. Allies around the Reconstruct ATK +10%<@ba.talpu>(+5%)</>. When the Reconstruct receives healing from itself or Mon3tr, add 1 additional bounce with the same healing amount"
+                "desc": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +10% <@ba.talpu>(+5%)</> ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken"
             },
             {
-                "name": "自我修复",
+                "name": "Self-Repair",
                 "descCN": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体，重构体周围友方单位的攻击力+15%，重构体受到自身和Mon3tr治疗时，可额外进行一次不会衰减的治疗跳跃",
-                "desc": "Can summon a Reconstruct on a ground tile within Attack Range and can only be healed by Mon3tr. Allies around the Reconstruct ATK +15%. When the Reconstruct receives healing from itself or Mon3tr, add 1 additional bounce with the same healing amount"
+                "desc": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +15% ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken"
             },
             {
-                "name": "自我修复",
+                "name": "Self-Repair",
                 "descCN": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体，重构体周围友方单位的攻击力+20%<@ba.talpu>(+5)</>，重构体受到自身和Mon3tr治疗时，可额外进行一次不会衰减的治疗跳跃",
-                "desc": "Can summon a Reconstruct on a ground tile within Attack Range and can only be healed by Mon3tr. Allies around the Reconstruct ATK +20%<@ba.talpu>(+5%)</>. When the Reconstruct receives healing from itself or Mon3tr, add 1 additional bounce with the same healing amount"
+                "desc": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +20% <@ba.talpu>(+5%)</> ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken"
             }
         ],
         [
             {
-                "name": "战术协同",
+                "name": "Tactical Coordination",
                 "descCN": "自身或重构体造成治疗时，使目标及自身的攻击速度+10，持续10秒(无法叠加)",
-                "desc": "When Mon3tr or the Reconstruct heals a target, self and the target's ASPD +10 for 10 seconds (does not stack)"
+                "desc": "Whenever Mon3tr or the Reconstruction heals a target, grants Mon3tr and the target +10 ASPD for 10s (does not stack)"
             },
             {
-                "name": "战术协同",
+                "name": "Tactical Coordination",
                 "descCN": "自身或重构体造成治疗时，使目标及自身的攻击速度+12<@ba.talpu>(+2)</>，持续10秒(无法叠加)",
-                "desc": "When Mon3tr or the Reconstruct heals a target, self and the target's ASPD +12<@ba.talpu>(+2)</> for 10 seconds (does not stack)"
+                "desc": "Whenever Mon3tr or the Reconstruction heals a target, grants Mon3tr and the target +12 <@ba.talpu>(+2)</> ASPD for 10s (does not stack)"
             },
             {
-                "name": "战术协同",
+                "name": "Tactical Coordination",
                 "descCN": "自身或重构体造成治疗时，使目标及自身的攻击速度+20，持续10秒(无法叠加)",
-                "desc": "When Mon3tr or the Reconstruct heals a target, self and the target's ASPD +20 for 10 seconds (does not stack)"
+                "desc": "Whenever Mon3tr or the Reconstruction heals a target, grants Mon3tr and the target +20 ASPD for 10s (does not stack)"
             },
             {
-                "name": "战术协同",
+                "name": "Tactical Coordination",
                 "descCN": "自身或重构体造成治疗时，使目标及自身的攻击速度+22<@ba.talpu>(+2)</>，持续10秒(无法叠加)",
-                "desc": "When Mon3tr or the Reconstruct heals a target, self and the target's ASPD +22<@ba.talpu>(+2)</> for 10 seconds (does not stack)"
+                "desc": "Whenever Mon3tr or the Reconstruction heals a target, grants Mon3tr and the target +22 <@ba.talpu>(+2)</> ASPD for 10s (does not stack)"
             }
         ]
     ],
     "char_4178_alanna": [
         [
             {
-                "name": "临时改装",
+                "name": "Makeshift Modification",
                 "descCN": "携带2个支援装置(最多部署2个)，使一名干员攻击敌人时无视其40点防御力(持续30秒)，装置效果不叠加",
-                "desc": "Carries 2 <Support Devices> (max 2 deployed at once). Each <Support Devices> grants 40 DEF ignore to an operator for 30 seconds (Effects do not stack)"
+                "desc": "Carries 2 Support Devices (max 2 deployed at once) that allow an Operator to ignore 40 DEF when attacking enemies (lasts 30s); effects from Devices do not stack"
             },
             {
-                "name": "临时改装",
+                "name": "Makeshift Modification",
                 "descCN": "携带2个支援装置(最多部署2个)，使一名干员攻击敌人时无视其50<@ba.talpu>(+10)</>点防御力(持续30秒)，装置效果不叠加",
-                "desc": "Carries 2 <Support Devices> (max 2 deployed at once). Each <Support Devices> grants 50<@ba.talpu>(+10)</> DEF ignore to an operator for 30 seconds (Effects do not stack)"
+                "desc": "Carries 2 Support Devices (max 2 deployed at once) that allow an Operator to ignore 50 <@ba.talpu>(+10)</> DEF when attacking enemies (lasts 30s); effects from Devices do not stack"
             },
             {
-                "name": "临时改装",
+                "name": "Makeshift Modification",
                 "descCN": "携带3个支援装置(最多部署2个)，使一名干员攻击敌人时无视其60点防御力(持续30秒)，装置效果不叠加",
-                "desc": "Carries 3 <Support Devices> (max 2 deployed at once). Each <Support Devices> grants 60 DEF ignore to an operator for 30 seconds (Effects do not stack)"
+                "desc": "Carries 3 Support Devices (max 2 deployed at once) that allow an Operator to ignore 60 DEF when attacking enemies (lasts 30s); effects from Devices do not stack"
             },
             {
-                "name": "临时改装",
+                "name": "Makeshift Modification",
                 "descCN": "携带3个支援装置(最多部署2个)，使一名干员攻击敌人时无视其70<@ba.talpu>(+10)</>点防御力(持续30秒)，装置效果不叠加",
-                "desc": "Carries 3 <Support Devices> (max 2 deployed at once). Each <Support Devices> grants 70<@ba.talpu>(+10)</> DEF ignore to an operator for 30 seconds (Effects do not stack)"
+                "desc": "Carries 3 Support Devices (max 2 deployed at once) that allow an Operator to ignore 70 <@ba.talpu>(+10)</> DEF when attacking enemies (lasts 30s); effects from Devices do not stack"
             },
             {
-                "name": "临时改装",
+                "name": "Makeshift Modification",
                 "descCN": "携带3个支援装置(最多部署2个)，使一名干员攻击敌人时无视其80点防御力(持续30秒)，装置效果不叠加",
-                "desc": "Carries 3 <Support Devices> (max 2 deployed at once). Each <Support Devices> grants 80 DEF ignore to an operator for 30 seconds (Effects do not stack)"
+                "desc": "Carries 3 Support Devices (max 2 deployed at once) that allow an Operator to ignore 80 DEF when attacking enemies (lasts 30s); effects from Devices do not stack"
             },
             {
-                "name": "临时改装",
+                "name": "Makeshift Modification",
                 "descCN": "携带3个支援装置(最多部署2个)，使一名干员攻击敌人时无视其90<@ba.talpu>(+10)</>点防御力(持续30秒)，装置效果不叠加",
-                "desc": "Carries 3 <Support Devices> (max 2 deployed at once). Each <Support Devices> grants 90<@ba.talpu>(+10)</> DEF ignore to an operator for 30 seconds (Effects do not stack)"
+                "desc": "Carries 3 Support Devices (max 2 deployed at once) that allow an Operator to ignore 90 <@ba.talpu>(+10)</> DEF when attacking enemies (lasts 30s); effects from Devices do not stack"
             }
         ]
     ],
     "char_445_wscoot": [
         [
             {
-                "name": "藏锋伺敌",
+                "name": "Sheathed Blade, Studied Foe",
                 "descCN": "特性攻击力提升至最高时，每次攻击额外追加一次25%攻击力的攻击",
-                "desc": "When Trait effect reach maximum value, each attack deals 1 additional instance of 25% ATK as Physical damage"
+                "desc": "When Trait ATK increase reaches its maximum, each attack is followed by an additional attack of 25% ATK"
             },
             {
-                "name": "藏锋伺敌",
+                "name": "Sheathed Blade, Studied Foe",
                 "descCN": "特性攻击力提升至最高时，每次攻击额外追加一次28%<@ba.talpu>(+3%)</>攻击力的攻击",
-                "desc": "When Trait effect reach maximum value, each attack deals 1 additional instance of 28% <@ba.talpu>(+3%)</> ATK as Physical damage"
+                "desc": "When Trait ATK increase reaches its maximum, each attack is followed by an additional attack of 28% <@ba.talpu>(+3%)</> ATK"
             },
             {
-                "name": "藏锋伺敌",
+                "name": "Sheathed Blade, Studied Foe",
                 "descCN": "特性攻击力提升至最高时，每次攻击额外追加一次40%攻击力的攻击",
-                "desc": "When Trait effect reach maximum value, each attack deals 1 additional instance of 40% ATK as Physical damage"
+                "desc": "When Trait ATK increase reaches its maximum, each attack is followed by an additional attack of 40% ATK"
             },
             {
-                "name": "藏锋伺敌",
+                "name": "Sheathed Blade, Studied Foe",
                 "descCN": "特性攻击力提升至最高时，每次攻击额外追加一次43%<@ba.talpu>(+3%)</>攻击力的攻击",
-                "desc": "When Trait effect reach maximum value, each attack deals 1 additional instance of 43% <@ba.talpu>(+3%)</> ATK as Physical damage"
+                "desc": "When Trait ATK increase reaches its maximum, each attack is followed by an additional attack of 43% <@ba.talpu>(+3%)</> ATK"
             }
         ]
     ],
