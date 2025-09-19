@@ -561,6 +561,45 @@ with open("json/puppiiz/potential_token.json", "w", encoding = "utf-8") as filep
     json.dump(potential_token, filepath, indent = 4, ensure_ascii = False)
 
 #########################################################################################################
+# char_names
+#########################################################################################################
+sp_char_dict = {
+                    "ë" : "e",  # Pozëmka
+                    "ł" : "l",  # Młynar
+                    "í" : "i",  # Eyjafjalla the Hvít Aska
+                    "š" : "s",  # Wiš'adel
+                    "ū" : "u",  # Yūtenji Nyamu
+                }
+
+def simple_name(char_name : str) -> str:
+    for sp_char in sp_char_dict.keys():
+        if char_name.find(sp_char) != -1:
+            return False
+    return True
+
+def get_name(char_data : dict) -> list:
+    names : list[str] = []
+    for key in ["name", "appellation"]:
+        value : str = char_data[key]
+        if value and value != " ":
+            names.append(value)
+            if not simple_name(value) :
+                names += [value.replace(k, v) for k, v in sp_char_dict.items() if value.find(k) != -1]
+    return names + [name.replace("'", "") for name in names if name.find("'") != -1]
+
+char_names = {}
+for char_id in json_char.keys():
+    if not char_id.startswith("char_") : continue
+    char_name = get_name(json_char[char_id])
+    for other_lang in [json_charEN, json_charJP, json_charKR]:
+        if char_id in other_lang.keys():
+            char_name += get_name(other_lang[char_id])
+    char_names[char_id] = list(set(char_name))
+
+with open("json/puppiiz/char_names.json", "w", encoding = "utf-8") as filepath :
+    json.dump(char_names, filepath, indent = 4, ensure_ascii = False)
+
+#########################################################################################################
 # The Rest
 #########################################################################################################
 Akenemy()

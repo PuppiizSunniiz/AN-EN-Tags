@@ -1,12 +1,4 @@
 # Fix TL (Official EN) waiting room
-### EP15 : Dissociative Recombination
-- Talent > Mod
-    - Windscoot
-- Trait
-    - age-y
-- Race (Enemy)
-    - origen
-
 ### The Masses' Travels
 - Effect 
     - <$ba.dt.neural2>Nervous Impairment</>

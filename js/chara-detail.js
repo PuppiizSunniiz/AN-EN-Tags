@@ -39,6 +39,7 @@
         build           :"./json/puppiiz/riic_data.json",
         special_operator:"./json/puppiiz/special_operator.json",
         charword        :"./json/puppiiz/charword_table.json",
+        char_names      :"./json/puppiiz/char_names.json",
 
         //TL
         voicelineTL     :"./json/tl-voiceline.json",
@@ -837,23 +838,18 @@
             var result = [];
 
             $.each(db.chars2,function(_, char){
-                var languages   = ['cn', 'en', 'jp', 'kr'];
-                var found       = false;
+                var found = false;
 
                 if(el == "Browse" || el == "Browse2"){
                     found = true;
                 }else{
-                    for (var i = 0; i < languages.length; i++) {
-                        var charname    = char['name_' + languages[i]];
-                        var unreadable  = query(db.unreadNameTL, "name", char.name_en)
-                        var input       = inputs.toUpperCase();
-                        var search      = inputs.match(/char_[1-9]{1,4}/g)?(unreadable ? (unreadable.name_en + charname + char.id).toUpperCase().search(input) : (charname + char.id).toUpperCase().search(input))
-                                            :(unreadable ? (unreadable.name_en + charname + char.id.replace("char_","")).toUpperCase().search(input) : (charname + char.id.replace("char_","")).toUpperCase().search(input));
-                        if(search != -1){
-                            found = true;
-                            break;
-                        };
-                    }
+                    var unreadable  = query(db.unreadNameTL, "name", char.name_en)
+                    var char_names  = unreadable?[...db.char_names[char.id], unreadable.name_en]:db.char_names[char.id]
+                    var input       = inputs.toLowerCase();
+                    var search      = inputs.match(/^char_.+?/g)?char.id.replace("char_", "").toLowerCase().search(input.replace("char_", "")):char_names.join("|").toLowerCase().search(input);
+                    if(search != -1){
+                        found = true;
+                    };
                 }
                 if(found){
                     // console.log(char)
@@ -929,7 +925,7 @@
                                 ${result[i].gamemode=="BASE"?"":'<div class="op-grid-gamemode ' + result[i].gamemode +'">' + result[i].gamemode + '</div>'}
                                 ${image}
                             </div>
-                            <div class="${opcurrname.length>12?opcurrname.length>16?"namesmaller":"namesmall":"name"} ak-font-novecento ak-center nameshadow">${opcurrname}</div>
+                            <div class="${opcurrname.length>12?opcurrname.length>15?"namesmaller":"namesmall":"name"} ak-font-novecento ak-center nameshadow">${opcurrname}</div>
                             <div class='ak-rare-${result[i].rarity} selectopopgridline'></div>
                             </li>`
                         )
@@ -5311,109 +5307,6 @@
             return tl
         }
         return false
-    }
-    function getSpeciality(description,opdataFull){
-
-        //gonna need to split on "," and "\n" and repeat it
-        let descriptions = description.split(/[，(\\n)]/)
-        let splitdesc = []
-        // console.log("=====================")
-        // console.log(descriptions)
-        descriptions.forEach(element => {
-            if(element){
-                // let muhRegex = /<@ba\.kw>(.*?)<\/>/g
-                // let currSpeciality = muhRegex.exec(element)
-                // console.log(element)
-                let currSpeciality = element.replace(/\<(.*?)\>/gi,"")
-                // console.log(currSpeciality)
-                let filterDesc
-                if(currSpeciality){
-                    splitdesc.push([currSpeciality])
-                }else{
-                    splitdesc.push([element])
-                }
-            }
-        });
-        // console.log(splitdesc)
-        // console.log("===========================")
-
-        return SpecialityHtml(splitdesc,opdataFull)
-    }
-
-    function SpecialityHtml(splitdesc,opdataFull){
-        let splitdescTL = []
-        let color = ""
-        let trait = opdataFull.trait
-        console.log(splitdesc)
-        console.log(trait)
-        let isReplaced = false
-        splitdesc.forEach(element => {
-            if(element.length>0){
-                let typetl = db.attacktype.parts.find(search=>search.type_cn==element.join(""))
-                // if(!typetl) typetl = db.attacktype.find(search=>search.type_cn==element[1])
-                if(typetl&&!color) color = typetl.type_color?typetl.type_color:undefined
-
-                // console.log(element)
-                // console.log(trait)
-                let muhRegex = /(.*){(.*?)}(.*)/g
-                let currTLconv = muhRegex.exec(typetl?typetl.type_en:element.join(""))
-                // console.log(currTLconv)
-                if(currTLconv){
-                    // console.log(currTLconv)
-                    var textreplace = 'Value'
-                    if(trait && trait.candidates.length>1){
-                        textreplace =  `<div style="color:#999;background:#222;display:inline-block;padding:1px;padding-left:3px;padding-right:3px;border-radius:2px">(value)</div>`
-                    }else if (trait && trait.candidates.length==1) {
-                        textreplace = trait.candidates[0].blackboard[0].value
-                        if(currTLconv[2].includes("%")){
-                            textreplace= textreplace*100 +("%")
-                        }
-                        isReplaced = true
-                    }
-                    // console.log(textreplace)
-                }
-                let currTLconvfinal = currTLconv?currTLconv[1] + textreplace + currTLconv[3]:typetl?typetl.type_en:element.join("")
-                // console.log(currTLconvfinal)
-                splitdescTL.push(currTLconvfinal)
-            }else{
-                var typetl = db.attacktype.parts.find(search=>{
-                    if(search.type_detail=="common")
-                    return search.type_cn==element[0]
-                })
-                if(!typetl){
-                    typetl = db.attacktype.parts.find(search=>search.type_cn==element.join(""))
-                }
-                // console.log(element.join(""))
-
-                // console.log(typetl)
-
-                if(typetl&&!color) color = typetl.type_color?typetl.type_color:undefined
-                splitdescTL.push(typetl?typetl.type_en:element[0])
-            }
-        });
-        if(trait&&!(isReplaced)){
-            trait.candidates.forEach(element => {
-                var imagereq = []
-                    if(element.unlockCondition.level >0)
-                    imagereq.push(`Lv.${element.unlockCondition.level}`)
-                    if(element.unlockCondition.phase >0)
-                    imagereq.push(`<img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/${element.unlockCondition.phase}.png" style="width:20px;margin-top:-5px" title="Elite ${element.unlockCondition.phase}">`)
-
-                // console.log(s)
-                var each = []
-                element.blackboard.forEach(eachbb => {
-                    each.push(`${eachbb.key} : ${eachbb.value}`)
-                });
-                var info = `<div style="color:#999;background:#222;display:inline-block;padding:1px;padding-left:3px;padding-right:3px;border-radius:2px;margin-right:3px;margin-bottom:2px;margin-top:2px">${each.join("</br>")}</div>
-                <div style="color:#999;background:#222;display:inline-block;padding:1px;padding-left:3px;padding-right:3px;border-radius:2px">${imagereq.join("")}</div>`
-                splitdescTL.push(info)
-            });
-        }
-        // console.log(splitdescTL)
-        // console.log(color)
-
-        return titledMaker(splitdescTL.join("</br>"),"Traits",`ak-trait ak-trait-${color}`,"","white-space:initial;")
-        // splitdescTL
     }
 
     function titledMaker (content,title,extraClass="",extraId="",extraStyle=""){

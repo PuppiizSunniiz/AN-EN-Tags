@@ -4,7 +4,7 @@ import re
 import subprocess
 import os
 import inspect
-from typing import Any
+from typing import Any, Callable
 
 R = '\033[31m'
 G = '\033[32m'
@@ -123,7 +123,8 @@ def load_json() -> dict :
                 "json_enemy_databaseEN" : json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/levels/enemydata/enemy_database.json"),
                 
                 "json_named_effect" : json_load("json/named_effects.json"),
-                "json_dict" : json_load("py/dict.json")
+                "json_dict" : json_load("py/dict.json"),
+                "json_activity_json" : json_load("json/activity.json"),
         }
 
 DB = load_json()
@@ -131,26 +132,53 @@ DB = load_json()
 ################################################################################################################################################################################################################################################
 # Util
 ################################################################################################################################################################################################################################################
-def script_result(text : str | list | dict, show : bool = False):
+def script_result(text : str | list | set | dict ,
+                    show : bool = False,
+                    indent : int | None = 4,
+                    key_sort : bool = False,
+                    sort_keys : Callable = None,
+                    forced_txt : bool = False,
+                    txt_nokey : bool = False,
+                    no_tab : bool = False,
+                    ) -> None:
     '''
         Output result
             STR, LIST   >   TXT
             DICT        >   JSON
     '''
-    if isinstance(text,str):
+    def dict_to_txt(text : dict, tab : int = 0) -> str:
+        to_txt = []
+        keys = sorted(text.keys(), key = sort_keys) if key_sort else text.keys()
+        for key in keys:
+            if isinstance(text[key], dict):
+                to_txt.append(f'{"" if tab else "\n"}{"\t" * tab}{key}')
+                to_txt += dict_to_txt(text[key], 0 if no_tab else tab + 1)
+            else:
+                value_text = (f'\n{text[key]}').replace("\n", f'\n{"\t" * (tab + (len(key) + 3) // 4 + 1)}') if text[key] and "\n" in text[key] else text[key]
+                to_txt += [f'{"\t" * tab}{value_text}'] if txt_nokey else [f'{"\t" * tab}{key} : {value_text}']
+        return to_txt
+    
+    if isinstance(text, str):
         with open("py/script.txt", "w", encoding = "utf-8") as filepath:
             filepath.write(text)
-    elif isinstance(text,list):
+    elif isinstance(text, list) or isinstance(text, set):
         with open("py/script.txt", "w", encoding = "utf-8") as filepath:
             filepath.write("\n".join(text))
-    elif isinstance(text,dict):
+    elif isinstance(text, dict) and indent:
+        if forced_txt:
+            with open("py/script.txt", "w", encoding = "utf-8") as filepath:
+                filepath.write("\n".join(dict_to_txt(text)))
+        else :
+            with open("py/script.json", "w", encoding = "utf-8") as filepath:
+                json.dump(text, filepath, indent = indent, ensure_ascii = False, sort_keys = sort_keys)
+    else:
         with open("py/script.json", "w", encoding = "utf-8") as filepath:
-            json.dump(text, filepath, indent = 4, ensure_ascii = False) # ensure_ascii = False
+            json.dump(text, filepath, separators = (",", ":"), ensure_ascii = False, sort_keys = sort_keys)
     
-    file = f'py/script.{f"txt" if isinstance(text,str) or isinstance(text,list) else f"json"}'
+    file = f'py/script.{"json" if isinstance(text, dict) and not forced_txt else "txt"}'
     print(f'\n{Y}Script Completed{RE} -> {R}{file}{RE}')
     if show:
-        subprocess.run(f'code --reuse-window -g "{os.path.abspath(file)}"', shell=True)
+        subprocess.run(f'code --reuse-window -g "{os.path.abspath(file)}"', shell = True)
 
 def list_to_array(LIST : list) -> list :
     return [elem for elem in LIST if elem not in [f'\n{"-"*80}\n', ""]]
@@ -618,6 +646,8 @@ def char_name(show : bool = False):
 #'json_roguelike_topic', 'json_sandbox_perm', 'json_sandbox', 'json_shop_client', 'json_skill', 'json_skin', 'json_stage', 'json_story_review_meta',
 #'json_story_review', 'json_story', 'json_tech_buff', 'json_tip', 'json_token', 'json_uniequip', 'json_zone', 'json_enemy_database'
 
+#'json_named_effect', 'json_dict'
+
 # EN
 
 ################################################################################################################################################################################################################################################
@@ -628,4 +658,32 @@ def token_id():
     for token in DB["json_character"].keys():
         if token.startswith("token_"):
             printr(f'{token} | {Y}{token.split("_")[2]}{RE} | {G}{DB["json_character"][token]["appellation"]}{RE} | {B}{DB["json_character"][token]["name"]}')
-token_id()
+#token_id()
+
+def story_review_color():
+    for event_id in DB["json_story_review_meta"]["miniActTrialData"]["miniActTrialDataMap"].keys():
+        printr(f'{event_id:<10} : {DB["json_activity_json"]["Dict"][event_id]["nameEN"]:<30} #{DB["json_story_review_meta"]["miniActTrialData"]["miniActTrialDataMap"][event_id]["themeColor"]}')
+#story_review_color()
+
+def all_char_name():
+    def get_name(char_data : dict) -> list:
+        names = []
+        for key in ["name", "appellation"]:
+            value = char_data[key]
+            if value and value != " ": names.append(value)
+        return names
+    
+    DB["json_characterJP"] = json_load("json/gamedata/ArknightsGameData_YoStar/ja_JP/gamedata/excel/character_table.json")
+    DB["json_characterKR"] = json_load("json/gamedata/ArknightsGameData_YoStar/ko_KR/gamedata/excel/character_table.json")
+    printr(DB["json_characterKR"].keys())
+    char_names = {}
+    for char_id in DB["json_character"].keys():
+        if not char_id.startswith("char_") : continue
+        char_name = get_name(DB["json_character"][char_id])
+        for other_lang in [DB["json_characterEN"], DB["json_characterJP"], DB["json_characterKR"]]:
+            if char_id in other_lang.keys():
+                char_name += get_name(other_lang[char_id])
+        char_names[char_id] = list(set(char_name))
+    script_result(char_names, True, forced_txt = True)
+
+all_char_name()
