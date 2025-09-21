@@ -2195,7 +2195,7 @@
                                 <div style = "display:inline-block; height:40px">
                                     <img class='equip-image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/shining/${currequip.equipShiningColor}_shining.png' style='width: 50px; margin: 0px -5px 0px -5px'></img>
                                     <div style = "display:inline-block; position:absolute;margin: -1px 0px 0px -35px">
-                                        <img class='equip-image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/type/${currequip.typeIcon.toLowerCase()}.png' style='width: 30px; position:absolute;'></img>
+                                        <img class='equip-image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/type/${currequip.typeIcon.toLowerCase()}.png' style='width: 30px; height: 30px; position: absolute; aspect-ratio: 1; object-fit: contain;'></img>
                                     </div>
                                     <div style = "position:absolute;margin: 0px 0px 0px 0px">
                                         <div style = "width:60px;margin: 4px 0px 0px -10px;background:#222;color:#ddd;font-size:10px">${currequip.typeIcon.slice(0,-1).toUpperCase()}${greek[currequip.typeIcon.slice(-1)]?greek[currequip.typeIcon.slice(-1)]:currequip.typeIcon.slice(-1).toUpperCase()}</div>

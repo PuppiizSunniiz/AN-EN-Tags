@@ -686,4 +686,30 @@ def all_char_name():
         char_names[char_id] = list(set(char_name))
     script_result(char_names, True, forced_txt = True)
 
-all_char_name()
+#all_char_name()
+
+def asciiing():
+    ascii_list = [
+        [112, 97, 108, 97, 99, 101, 115, 0, 127, 255],
+        [79, 114, 105, 103, 105, 110, 105, 117, 109, 32, 109, 117, 116, 101, 666, 404],
+        [99, 111, 110, 115, 116, 101, 108, 108, 97, 116, 105, 111, 110, "0xGA"],
+        [111, 99, 101, 97, 110, 115, 32, 114, 97, 118, 101, "0xZZ"],
+        [115, 112, 101, 99, 116, 101, 114, 115, 32, 99, 108, 97, 105, 109, 0, 255],
+    ]
+    ascii_result = []
+    #printr("".join([chr(c) if isinstance(c, int) and 65 <= c <= 122 else f'[{c}]'for c in ascii_list ]))
+    #printr("".join([chr(c) if isinstance(c, int) else f'[{c}]'for c in ascii_list ]))
+    for ascii in ascii_list:
+        ascii_result.append("".join([chr(c) if isinstance(c, int) and (65 <= c <= 122 or c == 32) else f'[{c}]'for c in ascii]))
+    script_result(ascii_result, True)
+#asciiing()
+
+#printr(ord("z"), ord("A"))
+
+print(bytes.fromhex("0x5053"))
+
+#0x4F6D
+#0x3252
+#0x5343
+#0x4344
+#0x5053
