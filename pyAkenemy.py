@@ -545,7 +545,7 @@ def get_stage_gamemode(stage_event : str) -> str:
         elif stage_event == "Mechanic": 
             return "mechanic"
         
-        elif re.search(r'act[0-9]{1,2}(lock|vautochess|arcade|enemyduel)',stage_event) or stage_event in ["act42d0"]: # act42d0 = DOS
+        elif re.search(r'act[0-9]{1,2}(lock|vautochess|arcade|enemyduel|vhalfidle)',stage_event) or stage_event in ["act42d0"]: # act42d0 = DOS
             return "exp"
         elif re.search(r'act[0-9]{1,2}(vecb|break)',stage_event):
             return "vb"

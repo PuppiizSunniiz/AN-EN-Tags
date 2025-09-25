@@ -14,6 +14,9 @@ json_building       =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedat
 json_buildingEN     =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/building_data.json")
 
 json_char_patch     =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/char_patch_table.json")
+json_char_patchEN   =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/char_patch_table.json")
+json_char_patchJP   =   json_load("json/gamedata/ArknightsGameData_YoStar/ja_JP/gamedata/excel/char_patch_table.json")
+json_char_patchKR   =   json_load("json/gamedata/ArknightsGameData_YoStar/ko_KR/gamedata/excel/char_patch_table.json")
 
 json_char           =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/character_table.json")
 json_charEN         =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/character_table.json")
@@ -93,7 +96,10 @@ CLASS_PARSE_CN : dict[str, str] = {
 
 for char_key in json_char_patch["patchChars"].keys():
     json_char_patch["patchChars"][char_key]["appellation"] += f' ({CLASS_PARSE_EN[json_char_patch["patchChars"][char_key]["profession"]]})'
+
 json_char.update(json_char_patch["patchChars"])
+json_charJP.update(json_char_patchJP["patchChars"])
+json_charKR.update(json_char_patchKR["patchChars"])
 
 char_ready  = char_ready(json_char)
 
@@ -594,7 +600,7 @@ for char_id in json_char.keys():
     for other_lang in [json_charEN, json_charJP, json_charKR]:
         if char_id in other_lang.keys():
             char_name += get_name(other_lang[char_id])
-    char_names[char_id] = list(set(char_name))
+    char_names[char_id] = sorted(list(set(char_name)))
 
 with open("json/puppiiz/char_names.json", "w", encoding = "utf-8") as filepath :
     json.dump(char_names, filepath, indent = 4, ensure_ascii = False)

@@ -706,10 +706,89 @@ def asciiing():
 
 #printr(ord("z"), ord("A"))
 
-print(bytes.fromhex("0x5053"))
+#print(bytes.fromhex("0x5053"))
 
 #0x4F6D
 #0x3252
 #0x5343
 #0x4344
 #0x5053
+
+def something_something():
+    all_stage_dict = {}
+    all_stage = glob.glob(r"json\gamedata\ArknightsGameData_YoStar\en_US\gamedata\levels\activities\act1multi\*")
+    for stage in all_stage:
+        stage_id = stage.split("\\")[-1].split(".json")[0]
+        stage_json = json_load(stage)
+        all_stage_dict[stage_id] = {
+                                        "options"       : stage_json["options"],
+                                        "runes"         : stage_json["runes"],
+                                        "globalBuffs"   : stage_json["globalBuffs"],
+                                    }
+        stage_waves = []
+        for wave in stage_json["waves"]:
+            curr_wave = {"advancedWaveTag" : wave["advancedWaveTag"]}
+            curr_fragment = []
+            for fragment in wave["fragments"]:
+                curr_action = []
+                spawn_key = ""
+                for action in fragment["actions"]:
+                    if action["randomSpawnGroupKey"] and action["randomSpawnGroupPackKey"]:
+                        spawn_key = action["randomSpawnGroupKey"]
+                    elif not action["randomSpawnGroupKey"] and not action["randomSpawnGroupPackKey"]:
+                        spawn_key = ""
+                    action_detail = {
+                                    "actionType"                : action["actionType"],
+                                    "key"                       : action["key"],
+                                    "count"                     : action["count"],
+                                    "preDelay"                  : action["preDelay"],
+                                    "interval"                  : action["interval"],
+                                    "hiddenGroup"               : action["hiddenGroup"],
+                                    "randomSpawnGroupKey"       : spawn_key if spawn_key else action["randomSpawnGroupKey"],
+                                    "randomSpawnGroupPackKey"   : action["randomSpawnGroupPackKey"],
+                                    "weight"                    : action["weight"],
+                                }
+                    curr_action.append(action_detail)
+                curr_fragment.append(curr_action)
+            curr_wave["fragments"] = curr_fragment
+            stage_waves.append(curr_wave)
+        all_stage_dict[stage_id]["waves"] = stage_waves
+    
+    script_result(all_stage_dict)
+    
+    # txt
+    script_txt = []
+    for stage in all_stage_dict:
+        script_txt.append(f'\n{stage}')
+        script_txt.append(f'{"wave":>5}{"frag":>5}{"action":>10}{"group":^8}{"GroupKey":<10}{"GroupPack":<10}{"key":^20}{"count":<6}{"preDelay":>10}{"interval":>10}{"weight":<6}')
+        for i in range(len(all_stage_dict[stage]["waves"])):
+            for j in range(len(all_stage_dict[stage]["waves"][i]["fragments"])):
+                for action in all_stage_dict[stage]["waves"][i]["fragments"][j]:
+                    hiddenGroup             = action["hiddenGroup"] or ""
+                    randomSpawnGroupKey     = action["randomSpawnGroupKey"] or ""
+                    randomSpawnGroupPackKey = action["randomSpawnGroupPackKey"] or ""
+                    script_txt.append(f'{i:^5}{j:^5}{action["actionType"].split("_")[0]:<10}{hiddenGroup:<8}{randomSpawnGroupKey:^10}{randomSpawnGroupPackKey:^10}{action["key"]:<20}{action["count"]:>6}{action["preDelay"]:^10}{action["interval"]:^10}{action["weight"]:>6}')
+    #script_result(script_txt, True)
+    
+    #csv
+    script_txt = []
+    script_txt.append("stage|wave|frag|action|group|GroupKey|GroupPack|key|name|ID|Class|count|preDelay|interval|weight")
+    for stage in all_stage_dict:
+        for i in range(len(all_stage_dict[stage]["waves"])):
+            for j in range(len(all_stage_dict[stage]["waves"][i]["fragments"])):
+                for action in all_stage_dict[stage]["waves"][i]["fragments"][j]:
+                    hiddenGroup             = action["hiddenGroup"] or "-"
+                    randomSpawnGroupKey     = action["randomSpawnGroupKey"] or "-"
+                    randomSpawnGroupPackKey = action["randomSpawnGroupPackKey"] or "-"
+                    try :
+                        key_name    = DB["json_enemy_handbookEN"]["enemyData"][action["key"]]["name"] if action["key"].startswith("enemy") else DB["json_characterEN"][action["key"].split("#")[0]]["name"]
+                        key_id      = DB["json_enemy_handbookEN"]["enemyData"][action["key"]]["enemyIndex"] if action["key"].startswith("enemy") else "-"
+                        key_class   = DB["json_enemy_handbookEN"]["enemyData"][action["key"]]["enemyLevel"] if action["key"].startswith("enemy") else "-"
+                    except KeyError:
+                        key_name    = action["key"]
+                        key_id      = "-"
+                        key_class   = "-"
+                    script_txt.append(f'{stage}|{i}|{j}|{action["actionType"].split("_")[0]}|{hiddenGroup}|{randomSpawnGroupKey}|{randomSpawnGroupPackKey}|{action["key"]}|{key_name}|{key_id}|{key_class}|{action["count"]}|{action["preDelay"]}|{action["interval"]}|{action["weight"]}')
+    script_result(script_txt, True)
+    
+something_something()
