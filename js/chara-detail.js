@@ -3764,7 +3764,12 @@
                                     "char_4141_marcil",
                                     "char_4142_laios",
                                     "char_4144_chilc",
-                                    "char_4143_sensi"
+                                    "char_4143_sensi",
+                                    "char_4182_oblvns",
+                                    "char_4184_dolris",
+                                    "char_4183_mortis",
+                                    "char_4186_tmoris",
+                                    "char_4185_amoris"
                                 ]
         
         switch(voiceLangType) {
@@ -3830,7 +3835,7 @@
                         foldername = "voice_kr"
                         break;
                     case "LINKAGE":
-                        foldername = db.charword.LINKAGE[currVoiceID]
+                        foldername = db.charword.LINKAGE[currVoiceID].toLowerCase()
                         break;
                     default:
                         foldername = "voice_custom"
