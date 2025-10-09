@@ -164,7 +164,7 @@ def riic_tl_json(show : bool = False):
                         match_op            = riic_match_tl(desc_match.group(1), "op")
                         match_mat           = riic_match_tl(desc_match.group(2), "item")
                         match_prod          = desc_match.group(3)
-                        return f'When this Operator is assigned to a Factory together with <@cc.kw>{match_op}</>, <@cc.kw>{match_mat}</> productivity <@cc.vup>{match_prod}</>'
+                        return f'When this Operator is assigned to a Factory, <@cc.kw>{match_mat}</> productivity <@cc.vup>{match_prod}</> when <@cc.kw>{match_op}</> is assigned to the same Factory'
                     # Speed & Cap
                     re_manu_prod_spd_limit_cost_down = r'^进驻制造站时，生产力<@cc\.vup>([\+0-9%]*)</>，仓库容量上限<@cc\.(vdown|vup)>([\-\+0-9]*)</>$'
                     if re.match(re_manu_prod_spd_limit_cost_down, desc_sub):
@@ -182,7 +182,7 @@ def riic_tl_json(show : bool = False):
                         match_skill_name    = riic_match_tl(match_skill_id)
                         match_mat           = riic_match_tl(desc_match.group(3), "item")
                         match_prod          = desc_match.group(4)
-                        return f'When this Operator is assigned to a Factory, for every <@cc.kw>{match_every}</> <$cc.{match_skill_id}><@cc.kw>{match_skill_name}</></> assigned to <@cc.kw>Power Plants</>, <@cc.kw>{match_mat}</> productivity <@cc.vup>{match_prod}</>'
+                        return f'When this Operator is assigned to a Factory, <@cc.kw>{match_mat}</> productivity <@cc.vup>{match_prod}</> for {f'every <@cc.vup>{match_every}</>' if int(match_every) > 1 else "<@cc.vup>every</>"} <$cc.{match_skill_id}><@cc.kw>{match_skill_name}</></> assigned to a Power Plant'
                 case "trade":
                     # Trade together with (Exuter : trade_ord_spd&multiPar[100]) 
                     re_trade_ord_spd_multiPar = r'^进驻贸易站时，订单获取效率<@cc\.vup>([\+0-9%]*)<\/>；当与<@cc\.kw><\$(cc\.[\.A-Za-z0-9]*)>([^<]*)<\/><\/>在同一个贸易站时，订单获取效率额外<@cc\.vup>([\+0-9%]*)<\/>$'
@@ -289,7 +289,7 @@ def riic_tl_json(show : bool = False):
                     if re.match(re_meet_spd_clue, desc_sub):
                         desc_match          = re.match(re_meet_spd_clue, desc_sub)
                         match_spd           = desc_match.group(1)
-                        return f'When this Operator is assigned to the Reception Room, for every Recruit slot (Default slots do not count) increases Clue search speed by <@cc.vup>{match_spd}</>'
+                        return f'When this Operator is assigned to the Reception Room, every Recruit slot (Default slots do not count) increases Clue search speed by <@cc.vup>{match_spd}</>'
                     # Speed by op in Dorm ? [meet_spd_ext&P[000]]
                     re_meet_spd_ext_P = r'^进驻会客室时，如果<@cc\.kw>([^<]*)<\/>进驻在宿舍，则线索搜集速度额外提升<@cc\.vup>([0-9%]*)<\/>$'
                     if re.match(re_meet_spd_ext_P, desc_sub):

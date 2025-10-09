@@ -136,15 +136,15 @@ def script_result(text : str | list | set | dict ,
                     show : bool = False,
                     indent : int | None = 4,
                     key_sort : bool = False,
-                    sort_keys : Callable = None,
+                    sort_keys : Callable = lambda x : x,
                     forced_txt : bool = False,
                     txt_nokey : bool = False,
                     no_tab : bool = False,
                     ) -> None:
     '''
         Output result
-            STR, LIST   >   TXT
-            DICT        >   JSON
+            STR, LIST, SET  >   TXT
+            DICT            >   JSON
     '''
     def dict_to_txt(text : dict, tab : int = 0) -> str:
         to_txt = []
@@ -170,10 +170,10 @@ def script_result(text : str | list | set | dict ,
                 filepath.write("\n".join(dict_to_txt(text)))
         else :
             with open("py/script.json", "w", encoding = "utf-8") as filepath:
-                json.dump(text, filepath, indent = indent, ensure_ascii = False, sort_keys = sort_keys)
+                json.dump(text, filepath, indent = indent, ensure_ascii = False, sort_keys = key_sort)
     else:
         with open("py/script.json", "w", encoding = "utf-8") as filepath:
-            json.dump(text, filepath, separators = (",", ":"), ensure_ascii = False, sort_keys = sort_keys)
+            json.dump(text, filepath, separators = (",", ":"), ensure_ascii = False, sort_keys = key_sort)
     
     file = f'py/script.{"json" if isinstance(text, dict) and not forced_txt else "txt"}'
     print(f'\n{Y}Script Completed{RE} -> {R}{file}{RE}')
@@ -714,9 +714,9 @@ def asciiing():
 #0x4344
 #0x5053
 
-def something_something():
+def enemy_wave_csv():
     all_stage_dict = {}
-    all_stage = glob.glob(r"json\gamedata\ArknightsGameData_YoStar\en_US\gamedata\levels\activities\act1multi\*")
+    all_stage = glob.glob(r'json\gamedata\ArknightsGameData_YoStar\en_US\gamedata\levels\activities\act1multi\*')
     for stage in all_stage:
         stage_id = stage.split("\\")[-1].split(".json")[0]
         stage_json = json_load(stage)
@@ -791,4 +791,46 @@ def something_something():
                     script_txt.append(f'{stage}|{i}|{j}|{action["actionType"].split("_")[0]}|{hiddenGroup}|{randomSpawnGroupKey}|{randomSpawnGroupPackKey}|{action["key"]}|{key_name}|{key_id}|{key_class}|{action["count"]}|{action["preDelay"]}|{action["interval"]}|{action["weight"]}')
     script_result(script_txt, True)
     
-something_something()
+#enemy_wave_csv()
+
+def dumpling():
+    dump_dump = []
+    dump_dict = {}
+    '''
+    #EXP & Skill
+    for i in range(9):
+        dump_txt = ""
+        for j in range(4):
+            if dump_txt:
+                dump_txt += "|"
+            dump_data = DB["json_activity"]["activity"]["HALFIDLE_VERIFY1"]["act1vhalfidle"]["charSkillRankData"][f'TIER_{j + 3}']["skillRankData"]
+            if i < len(dump_data):
+                dump_txt += str(dump_data[i]["cost"])
+            else:
+                dump_txt += "-"
+        dump_dump.append(dump_txt)
+    
+    # Enemy drop pool
+    dump_data = DB["json_activity"]["activity"]["HALFIDLE_VERIFY1"]["act1vhalfidle"]["enemyItemDropPoolDict"]
+    for enemy in dump_data.keys():
+        dump_dump.append(f'{enemy}|{dump_data[enemy]["exp"]}|{dump_data[enemy]["mileStoneCnt"]}|{dump_data[enemy]["battleItemDropPool"]}|{dump_data[enemy]["resourceItemDropPool"]}')
+    '''
+    
+    # Equipment
+    dump_data = DB["json_activity"]["activity"]["HALFIDLE_VERIFY1"]["act1vhalfidle"]["equipItemData"]
+    for equip_type_variant in dump_data.keys():
+        for lv in dump_data[equip_type_variant].keys():
+            for equip_variant in dump_data[equip_type_variant][lv]:
+                bb_runes = []
+                for rune in equip_variant["runeData"]["runes"]:
+                    for bb in rune["blackboard"]:
+                        bb_runes.append(bb)
+                dump_dict[equip_variant["alias"]] = {
+                                                        "name"          : equip_variant["name"],
+                                                        "description"   : equip_variant["runeData"]["description"],
+                                                        "runes"         : bb_runes,
+                }
+    
+    script_result(dump_dict, True, key_sort=True)
+    #script_result(dump_dump, True)
+dumpling()

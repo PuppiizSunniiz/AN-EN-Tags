@@ -846,7 +846,7 @@
                     var unreadable  = query(db.unreadNameTL, "name", char.name_en)
                     var char_names  = unreadable?[...db.char_names[char.id], unreadable.name_en]:db.char_names[char.id]
                     var input       = inputs.toLowerCase();
-                    var search      = inputs.match(/^char_.+?/g)?char.id.replace("char_", "").toLowerCase().search(input.replace("char_", "")):char_names.join("|").toLowerCase().search(input);
+                    var search      = inputs.match(/^(char_|!)+?/g)?char.id.replace("char_", "").toLowerCase().search(input.replace("char_", "").replace("!", "")):char_names.join("|").toLowerCase().search(input);
                     if(search != -1){
                         found = true;
                     };
@@ -2187,7 +2187,7 @@
                     if(db.battle_equip[currequip.uniEquipId]){
                         currebattequip = db.battle_equip[currequip.uniEquipId]
                     }
-                    var greek = {"x":"&Chi;","y":"&Upsilon;","d":"&Delta;","a":"&alpha;"}
+                    var greek = {"x":"&Chi;","y":"&Upsilon;","d":"&Delta;","a":"&alpha;","b":"&beta;"}
                     tabhtml =`
                     <li class='nav-item'>
                         <button class='btn horiz-small nav-link ${(num!=2 ? '' : 'active')} equiplink' data-toggle='pill' href='#equip${num}'>

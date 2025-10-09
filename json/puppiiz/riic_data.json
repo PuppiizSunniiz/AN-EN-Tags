@@ -7,7 +7,7 @@
             "description": "When this Operator is assigned to the Control Center, all Factories' productivity <@cc.vup>+2%</> (only the most effective one will take effect when assigned Operators have the same skill effect)"
         },
         "control_prod_spd[1000]": {
-            "buffName": "最高权限",
+            "buffName": "Highest Authority",
             "skillIcon": "bskill_ctrl_p_spd",
             "desc": "进驻控制中枢时，所有制造站生产力<@cc.vup>+2%</>（同种效果取最高）",
             "description": "When this Operator is assigned to the Control Center, all Factories' productivity <@cc.vup>+2%</> (only the most effective one will take effect when assigned Operators have the same skill effect)"
@@ -229,7 +229,7 @@
             "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by <@cc.vup>+0.05</> per hour."
         },
         "control_mp_cost[012]": {
-            "buffName": "博识生手",
+            "buffName": "New to the Job",
             "skillIcon": "bskill_ctrl_cost",
             "desc": "进驻控制中枢时，控制中枢内所有干员的心情每小时恢复<@cc.vup>+0.05</>",
             "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by <@cc.vup>+0.05</> per hour."
@@ -1213,28 +1213,28 @@
             "description": "When this Operator is assigned to a Factory, for each <$cc.g.bs><@cc.kw>Blacksteel Worldwide</></> Operator in the Base (excluding Assistants and Activity Room users, caps at <@cc.kw>3</>), <@cc.kw>Precious Metal</> productivity <@cc.vup>+2%</> and Morale consumed per hour <@cc.vup>-0.15</>"
         },
         "manu_token_prod_spd[000]": {
-            "buffName": "机械精通·α",
+            "buffName": "Master of Machines α",
             "skillIcon": "bskill_man_token_spd1",
             "desc": "进驻制造站时，每有<@cc.vup>1</>台<$cc.tag.op><@cc.kw>作业平台</></>进驻发电站，<@cc.kw>贵金属</>类配方的生产力<@cc.vup>+5%</>",
-            "description": "When this Operator is assigned to a Factory, for every <@cc.kw>1</> <$cc.cc.tag.op><@cc.kw>Operation Platform</></> assigned to <@cc.kw>Power Plants</>, <@cc.kw>Precious Metal</> productivity <@cc.vup>+5%</>"
+            "description": "When this Operator is assigned to a Factory, <@cc.kw>Precious Metal</> productivity <@cc.vup>+5%</> for <@cc.vup>every</> <$cc.tag.op><@cc.kw>Operation Platform</></> assigned to a Power Plant"
         },
         "manu_token_prod_spd[010]": {
-            "buffName": "机械精通·β",
+            "buffName": "Master of Machines β",
             "skillIcon": "bskill_man_token_spd2",
             "desc": "进驻制造站时，每有<@cc.vup>1</>台<$cc.tag.op><@cc.kw>作业平台</></>进驻发电站，<@cc.kw>贵金属</>类配方的生产力<@cc.vup>+10%</>",
-            "description": "When this Operator is assigned to a Factory, for every <@cc.kw>1</> <$cc.cc.tag.op><@cc.kw>Operation Platform</></> assigned to <@cc.kw>Power Plants</>, <@cc.kw>Precious Metal</> productivity <@cc.vup>+10%</>"
+            "description": "When this Operator is assigned to a Factory, <@cc.kw>Precious Metal</> productivity <@cc.vup>+10%</> for <@cc.vup>every</> <$cc.tag.op><@cc.kw>Operation Platform</></> assigned to a Power Plant"
         },
         "manu_prod_spd_double[000]": {
-            "buffName": "“搭把手！”",
+            "buffName": "'Here to Help!'",
             "skillIcon": "bskill_man_spd_double",
             "desc": "进驻制造站时，当与<@cc.kw>温米</>在同一个制造站时，<@cc.kw>贵金属</>类配方的生产力<@cc.vup>+15%</>",
-            "description": "When this Operator is assigned to a Factory together with <@cc.kw>Warmy</>, <@cc.kw>Precious Metal</> productivity <@cc.vup>+15%</>"
+            "description": "When this Operator is assigned to a Factory, <@cc.kw>Precious Metal</> productivity <@cc.vup>+15%</> when <@cc.kw>Warmy</> is assigned to the same Factory"
         },
         "manu_prod_spd_double[100]": {
             "buffName": "盛餐的回报",
             "skillIcon": "bskill_man_spd_double2",
             "desc": "进驻制造站时，当与<@cc.kw>酒神</>在同一个制造站时，<@cc.kw>作战记录</>类配方的生产力<@cc.vup>+30%</>",
-            "description": "When this Operator is assigned to a Factory together with <@cc.kw>Tragodia</>, <@cc.kw>Battle Record</> productivity <@cc.vup>+30%</>"
+            "description": "When this Operator is assigned to a Factory, <@cc.kw>Battle Record</> productivity <@cc.vup>+30%</> when <@cc.kw>Tragodia</> is assigned to the same Factory"
         },
         "manu_formula_spd[200]": {
             "buffName": "Originium Work α",
@@ -3973,13 +3973,13 @@
             "description": "When this Operator is assigned to the Reception Room, if only this Operator is working in the Reception Room, for every <@cc.kw>16</> consecutive Morale spent, a <@cc.kw>Rhodes Island Pharmaceuticals</> clue is <@cc.kw>guaranteed</> next."
         },
         "meet_spd&clue[000]": {
-            "buffName": "广交义友",
+            "buffName": "Making Friends",
             "skillIcon": "bskill_meet_spd_clue",
             "desc": "进驻会客室时，每个招募位（不包含初始招募位）提升<@cc.vup>5%</>线索搜集速度",
-            "description": "When this Operator is assigned to the Reception Room, for every Recruit slot (Default slots do not count) increases Clue search speed by <@cc.vup>5%</>"
+            "description": "When this Operator is assigned to the Reception Room, every Recruit slot (Default slots do not count) increases Clue search speed by <@cc.vup>5%</>"
         },
         "meet_spd_notOwned&exchange[000]": {
-            "buffName": "眼观六路",
+            "buffName": "On the Alert",
             "skillIcon": "bskill_meet_spd_notOwned_exchange",
             "desc": "进驻会客室时，处于线索交流时更容易获得线索板上尚未拥有的线索",
             "description": "When this Operator is assigned to the Reception Room, if in Clue Exchange, increases the likelihood of obtaining clues that are not on the Clue Board"

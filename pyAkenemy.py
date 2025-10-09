@@ -926,8 +926,8 @@ def activity_collect(Activityjson):
             zone = next((key for key in DB["activity"]["zoneToActivity"] if DB["activity"]["zoneToActivity"][key] == act), act)
             if not re.search(r'main_[0-9]{1,2}' ,zone):
                 activity_collection["Dict"][zone] = {
-                    "nameCN"    : f'{DB["zone"]["zones"][zone]["zoneNameFirst"]} : {DB["zone"]["zones"][zone]["zoneNameSecond"]}',
-                    "nameEN"    : f'{DB["zoneEN"]["zones"][zone]["zoneNameFirst"]} : {DB["zoneEN"]["zones"][zone]["zoneNameSecond"]}' if zone in DB["zoneEN"]["zones"].keys() else (Activityjson["Dict"][zone]["nameEN"] if zone in Activityjson["Dict"].keys() else f'{DB["zone"]["zones"][zone]["zoneNameFirst"]} : {DB["zone"]["zones"][zone]["zoneNameSecond"]}'),
+                    "nameCN"    : f'{DB["zone"]["zones"][zone]["zoneNameThird"].capitalize()} : {DB["zone"]["zones"][zone]["zoneNameSecond"]}',
+                    "nameEN"    : f'{DB["zoneEN"]["zones"][zone]["zoneNameThird"].capitalize()} : {DB["zoneEN"]["zones"][zone]["zoneNameSecond"]}' if zone in DB["zoneEN"]["zones"].keys() else (Activityjson["Dict"][zone]["nameEN"] if zone in Activityjson["Dict"].keys() else f'{DB["zone"]["zones"][zone]["zoneNameThird"].capitalize()} : {DB["zone"]["zones"][zone]["zoneNameSecond"]}'),
                     "startCN"   : DB["zone"]["mainlineAdditionInfo"][zone]["zoneOpenTime"]
                 }
                 if activity_collection["Dict"][zone]["startCN"] > 0 : timeline.append([zone,activity_collection["Dict"][zone]["nameEN"] if activity_collection["Dict"][zone]["nameEN"] else activity_collection["Dict"][zone]["nameCN"],activity_collection["Dict"][zone]["startCN"]])
@@ -935,8 +935,8 @@ def activity_collect(Activityjson):
 # Main
     for act in DB["zone"]["mainlineAdditionInfo"].keys():
         activity_collection["Dict"][act] = {
-                    "nameCN"    : f'{DB["zone"]["zones"][act]["zoneNameFirst"]} : {DB["zone"]["zones"][act]["zoneNameSecond"]}',
-                    "nameEN"    : f'{DB["zoneEN"]["zones"][act]["zoneNameFirst"]} : {DB["zoneEN"]["zones"][act]["zoneNameSecond"]}' if act in DB["zoneEN"]["zones"].keys() else (Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else f'{DB["zone"]["zones"][act]["zoneNameFirst"]} : {DB["zone"]["zones"][act]["zoneNameSecond"]}'),
+                    "nameCN"    : f'{DB["zone"]["zones"][act]["zoneNameThird"].capitalize()} : {DB["zone"]["zones"][act]["zoneNameSecond"]}',
+                    "nameEN"    : f'{DB["zoneEN"]["zones"][act]["zoneNameThird"].capitalize()} : {DB["zoneEN"]["zones"][act]["zoneNameSecond"]}' if act in DB["zoneEN"]["zones"].keys() else (Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else f'{DB["zone"]["zones"][act]["zoneNameThird"].capitalize()} : {DB["zone"]["zones"][act]["zoneNameSecond"]}'),
                     "startCN"   : DB["zone"]["mainlineAdditionInfo"][act]["zoneOpenTime"]
         }
         if activity_collection["Dict"][act]["startCN"] > 0 : timeline.append([act,activity_collection["Dict"][act]["nameEN"] if activity_collection["Dict"][act]["nameEN"] else activity_collection["Dict"][act]["nameCN"],activity_collection["Dict"][act]["startCN"]])
