@@ -1154,5 +1154,251 @@
                 "upgradeDescription": "Enemies within attack range take 22%<@ba.talpu>(+2%)</> more <$ba.dt.apoptosis2>Necrosis damage</> and take additional 150 Elemental Damage per second when under the burst effect of <$ba.dt.apoptosis2>Necrosis Damage</>"
             }
         ]
+    ],
+    "uniequip_002_wintim": [
+        [
+            {
+                "name": "疾笔撰录",
+                "CN": "攻击速度+10，自身受到伤害后失去该效果",
+                "mod": "攻击速度+13，自身受到伤害后失去该效果",
+                "upgradeDescription": "ASPD +13, lost this effect after taking damage."
+            },
+            {
+                "name": "疾笔撰录",
+                "CN": "攻击速度+12<@ba.talpu>(+2)</>，自身受到伤害后失去该效果",
+                "mod": "攻击速度+15<@ba.talpu>(+2)</>，自身受到伤害后失去该效果",
+                "upgradeDescription": "ASPD +15 <@ba.talpu>(+2)</>, lost this effect after taking damage."
+            }
+        ],
+        [
+            {
+                "name": "疾笔撰录",
+                "CN": "攻击速度+10，自身受到伤害后失去该效果",
+                "mod": "攻击速度+15，自身受到伤害后失去该效果",
+                "upgradeDescription": "ASPD +15, lost this effect after taking damage."
+            },
+            {
+                "name": "疾笔撰录",
+                "CN": "攻击速度+12<@ba.talpu>(+2)</>，自身受到伤害后失去该效果",
+                "mod": "攻击速度+17<@ba.talpu>(+2)</>，自身受到伤害后失去该效果",
+                "upgradeDescription": "ASPD +17 <@ba.talpu>(+2)</>, lost this effect after taking damage."
+            }
+        ]
+    ],
+    "uniequip_002_branch": [
+        [
+            {
+                "name": "简易包扎",
+                "CN": "技能结束时恢复自身50%最大生命值",
+                "mod": "技能期间防御力+15%; 技能结束时恢复自身60%最大生命值",
+                "upgradeDescription": "DEF +15% during skill duration. Restores 60% HP after skill ends."
+            },
+            {
+                "name": "简易包扎",
+                "CN": "技能结束时恢复自身60%<@ba.talpu>(+10%)</>最大生命值",
+                "mod": "技能期间防御力+15%; 技能结束时恢复自身70%<@ba.talpu>(+10%)</>最大生命值",
+                "upgradeDescription": "DEF +15% during skill duration. Restores 70% <@ba.talpu>(+10%)</> HP after skill ends."
+            }
+        ],
+        [
+            {
+                "name": "简易包扎",
+                "CN": "技能结束时恢复自身50%最大生命值",
+                "mod": "技能期间防御力+18%; 技能结束时恢复自身70%最大生命值",
+                "upgradeDescription": "DEF +18% during skill duration. Restores 70% HP after skill ends."
+            },
+            {
+                "name": "简易包扎",
+                "CN": "技能结束时恢复自身60%<@ba.talpu>(+10%)</>最大生命值",
+                "mod": "技能期间防御力+18%; 技能结束时恢复自身80%<@ba.talpu>(+10%)</>最大生命值",
+                "upgradeDescription": "DEF +18% during skill duration. Restores 80% <@ba.talpu>(+10%)</> HP after skill ends."
+            }
+        ]
+    ],
+    "uniequip_002_mantra": [
+        [
+            {
+                "name": "噤声限域",
+                "CN": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力135%的元素伤害，且触发<$ba.palsy>麻痹</>时有10%概率不消耗<$ba.palsy>麻痹</>层数",
+                "mod": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力155%的元素伤害，且触发<$ba.palsy>麻痹</>时有10%概率不消耗<$ba.palsy>麻痹</>层数",
+                "upgradeDescription": "Whenever an enemy triggers <$ba.palsy>Paralysis</>, immediately deals 155% ATK as Elemental Damage to that enemy; Has 10% chance to not consume <$ba.palsy>Paralysis</> stack when triggered"
+            },
+            {
+                "name": "噤声限域",
+                "CN": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力145%<@ba.talpu>(+10%)</>的元素伤害，且触发<$ba.palsy>麻痹</>时有13%<@ba.talpu>(+3%)</>概率不消耗<$ba.palsy>麻痹</>层数",
+                "mod": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力165%<@ba.talpu>(+10%)</>的元素伤害，且触发<$ba.palsy>麻痹</>时有13%<@ba.talpu>(+3%)</>概率不消耗<$ba.palsy>麻痹</>层数",
+                "upgradeDescription": "Whenever an enemy triggers <$ba.palsy>Paralysis</>, immediately deals 165% <@ba.talpu>(+10%)</> ATK as Elemental Damage to that enemy; Has 13% <@ba.talpu>(+3%)</> chance to not consume <$ba.palsy>Paralysis</> stack when triggered"
+            }
+        ],
+        [
+            {
+                "name": "噤声限域",
+                "CN": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力135%的元素伤害，且触发<$ba.palsy>麻痹</>时有10%概率不消耗<$ba.palsy>麻痹</>层数",
+                "mod": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力160%的元素伤害，且触发<$ba.palsy>麻痹</>时有15%概率不消耗<$ba.palsy>麻痹</>层数",
+                "upgradeDescription": "Whenever an enemy triggers <$ba.palsy>Paralysis</>, immediately deals 160% ATK as Elemental Damage to that enemy; Has 15% chance to not consume <$ba.palsy>Paralysis</> stack when triggered"
+            },
+            {
+                "name": "噤声限域",
+                "CN": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力145%<@ba.talpu>(+10%)</>的元素伤害，且触发<$ba.palsy>麻痹</>时有13%<@ba.talpu>(+3%)</>概率不消耗<$ba.palsy>麻痹</>层数",
+                "mod": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力170%<@ba.talpu>(+10%)</>的元素伤害，且触发<$ba.palsy>麻痹</>时有18%<@ba.talpu>(+3%)</>概率不消耗<$ba.palsy>麻痹</>层数",
+                "upgradeDescription": "Whenever an enemy triggers <$ba.palsy>Paralysis</>, immediately deals 170% <@ba.talpu>(+10%)</> ATK as Elemental Damage to that enemy; Has 18% <@ba.talpu>(+3%)</> chance to not consume <$ba.palsy>Paralysis</> stack when triggered"
+            }
+        ]
+    ],
+    "uniequip_002_narant": [
+        [
+            {
+                "name": "'I See, I Take'",
+                "EN": "When deployed, each attack <$ba.steal>Steals</> 25 ATK (Caps at 250) and 20 DEF (Caps at 200) from the target",
+                "CN": "在场时，每次攻击到敌人<$ba.steal>偷取</>其25点攻击力(最高250点)与20点防御力(最高200点)",
+                "mod": "在场时，每次攻击到敌人<$ba.steal>偷取</>其25点攻击力(最高275点)与20点防御力(最高220点)，攻击到周围8格的敌人时偷取触发2次",
+                "upgradeDescription": "When deployed, each attack <$ba.steal>Steals</> 25 ATK (Caps at 275) and 20 DEF (Caps at 220) from the target. If the target in the 8 surrounding tiles, double steal amount."
+            },
+            {
+                "name": "'I See, I Take'",
+                "EN": "When deployed, each attack <$ba.steal>Steals</> 27 <@ba.talpu>(+2)</> ATK (Caps at 270 <@ba.talpu>(+20)</>) and 21 <@ba.talpu>(+1)</> DEF (Caps at 210 <@ba.talpu>(+10)</>) from the target",
+                "CN": "在场时，每次攻击到敌人<$ba.steal>偷取</>其27<@ba.talpu>(+2)</>点攻击力(最高270<@ba.talpu>(+20)</>点)与21<@ba.talpu>(+1)</>点防御力(最高210<@ba.talpu>(+10)</>点)",
+                "mod": "在场时，每次攻击到敌人<$ba.steal>偷取</>其27<@ba.talpu>(+2)</>点攻击力(最高297<@ba.talpu>(+22)</>点)与21<@ba.talpu>(+1)</>点防御力(最高231<@ba.talpu>(+11)</>点)，攻击到周围8格的敌人时偷取触发2次",
+                "upgradeDescription": "When deployed, each attack <$ba.steal>Steals</> 27 <@ba.talpu>(+2)</> ATK (Caps at 297 <@ba.talpu>(+22)</>) and 21 <@ba.talpu>(+1)</> DEF (Caps at 231 <@ba.talpu>(+11)</>) from the target. If target the in the 8 surrounding tiles, double steal amount."
+            }
+        ],
+        [
+            {
+                "name": "'I See, I Take'",
+                "EN": "When deployed, each attack <$ba.steal>Steals</> 25 ATK (Caps at 250) and 20 DEF (Caps at 200) from the target",
+                "CN": "在场时，每次攻击到敌人<$ba.steal>偷取</>其25点攻击力(最高250点)与20点防御力(最高200点)",
+                "mod": "在场时，每次攻击到敌人<$ba.steal>偷取</>其25点攻击力(最高300点)与20点防御力(最高240点)，攻击到周围8格的敌人时偷取触发2次",
+                "upgradeDescription": "When deployed, each attack <$ba.steal>Steals</> 25 ATK (Caps at 300) and 20 DEF (Caps at 240) from the target. If the target in the 8 surrounding tiles, double steal amount."
+            },
+            {
+                "name": "'I See, I Take'",
+                "EN": "When deployed, each attack <$ba.steal>Steals</> 27 <@ba.talpu>(+2)</> ATK (Caps at 270 <@ba.talpu>(+20)</>) and 21 <@ba.talpu>(+1)</> DEF (Caps at 210 <@ba.talpu>(+10)</>) from the target",
+                "CN": "在场时，每次攻击到敌人<$ba.steal>偷取</>其27<@ba.talpu>(+2)</>点攻击力(最高270<@ba.talpu>(+20)</>点)与21<@ba.talpu>(+1)</>点防御力(最高210<@ba.talpu>(+10)</>点)",
+                "mod": "在场时，每次攻击到敌人<$ba.steal>偷取</>其27<@ba.talpu>(+2)</>点攻击力(最高324<@ba.talpu>(+24)</>点)与21<@ba.talpu>(+1)</>点防御力(最高252<@ba.talpu>(+12)</>点)，攻击到周围8格的敌人时偷取触发2次",
+                "upgradeDescription": "When deployed, each attack <$ba.steal>Steals</> 27 <@ba.talpu>(+2)</> ATK (Caps at 324 <@ba.talpu>(+24)</>) and 21 <@ba.talpu>(+1)</> DEF (Caps at 252 <@ba.talpu>(+12)</>) from the target. If the target in the 8 surrounding tiles, double steal amount."
+            }
+        ]
+    ],
+    "uniequip_002_brigid": [
+        [
+            {
+                "name": "Practiced Knot-Tier",
+                "EN": "After dealing damage 20 times, gains 35% Physical Dodge",
+                "CN": "造成20次伤害后，获得35%物理闪避",
+                "mod": "造成18次伤害后，攻击力+6%，获得40%物理闪避",
+                "upgradeDescription": "After dealing damage 18 times, ATK +6%, gains 40% Physical Dodge"
+            },
+            {
+                "name": "Practiced Knot-Tier",
+                "EN": "After dealing damage 20 times, gains 38% <@ba.talpu>(+3%)</> Physical Dodge",
+                "CN": "造成20次伤害后，获得38%<@ba.talpu>(+3%)</>物理闪避",
+                "mod": "造成18次伤害后，攻击力+6%，获得43%<@ba.talpu>(+3%)</>物理闪避",
+                "upgradeDescription": "After dealing damage 18 times, ATK +6%, gains 43% <@ba.talpu>(+3%)</> Physical Dodge"
+            }
+        ],
+        [
+            {
+                "name": "Practiced Knot-Tier",
+                "EN": "After dealing damage 20 times, gains 35% Physical Dodge",
+                "CN": "造成20次伤害后，获得35%物理闪避",
+                "mod": "造成16次伤害后，攻击力+10%，获得45%物理闪避",
+                "upgradeDescription": "After dealing damage 16 times, ATK +10%, gains 45% Physical Dodge"
+            },
+            {
+                "name": "Practiced Knot-Tier",
+                "EN": "After dealing damage 20 times, gains 38% <@ba.talpu>(+3%)</> Physical Dodge",
+                "CN": "造成20次伤害后，获得38%<@ba.talpu>(+3%)</>物理闪避",
+                "mod": "造成16次伤害后，攻击力+10%，获得48%<@ba.talpu>(+3%)</>物理闪避",
+                "upgradeDescription": "After dealing damage 16 times, ATK +10%, gains 48% <@ba.talpu>(+3%)</> Physical Dodge"
+            }
+        ]
+    ],
+    "uniequip_002_caper": [
+        [
+            {
+                "name": "Larking About",
+                "EN": "When attacking, 25% chance to increase that attack's ATK to 150%",
+                "CN": "攻击时，25%几率当次攻击的攻击力提升至150%",
+                "mod": "攻击时，28%几率当次攻击的攻击力提升至155%",
+                "upgradeDescription": "When attacking, 28% chance to increase that attack's ATK to 155%"
+            },
+            {
+                "name": "Larking About",
+                "EN": "When attacking, 25% chance to increase that attack's ATK to 160% <@ba.talpu>(+10%)</>",
+                "CN": "攻击时，25%几率当次攻击的攻击力提升至160%<@ba.talpu>(+10%)</>",
+                "mod": "攻击时，28%几率当次攻击的攻击力提升至165%<@ba.talpu>(+10%)</>",
+                "upgradeDescription": "When attacking, 28% chance to increase that attack's ATK to 165% <@ba.talpu>(+10%)</>"
+            }
+        ],
+        [
+            {
+                "name": "Larking About",
+                "EN": "When attacking, 25% chance to increase that attack's ATK to 150%",
+                "CN": "攻击时，25%几率当次攻击的攻击力提升至150%",
+                "mod": "攻击时，30%几率当次攻击的攻击力提升至160%",
+                "upgradeDescription": "When attacking, 30% chance to increase that attack's ATK to 160%"
+            },
+            {
+                "name": "Larking About",
+                "EN": "When attacking, 25% chance to increase that attack's ATK to 160% <@ba.talpu>(+10%)</>",
+                "CN": "攻击时，25%几率当次攻击的攻击力提升至160%<@ba.talpu>(+10%)</>",
+                "mod": "攻击时，30%几率当次攻击的攻击力提升至170%<@ba.talpu>(+10%)</>",
+                "upgradeDescription": "When attacking, 30% chance to increase that attack's ATK to 170% <@ba.talpu>(+10%)</>"
+            }
+        ]
+    ],
+    "uniequip_003_excu2": [
+        [
+            {
+                "name": "Empathy by Shotgun",
+                "EN": "For every Laterano Operator deployed, increases the ammo capacity of this unit's ammo-based skills by +1 (stacks up to 4 times)",
+                "CN": "每有一个[拉特兰]干员在场，自身的弹药类技能弹药上限+1(最多4层)",
+                "mod": "每有一个[拉特兰]干员在场，自身的弹药类技能弹药上限+1(最多4层); 自身的弹药类技能期间攻击力+8%，且弹药数量不少于一半时获得20%的物理与法术闪避",
+                "upgradeDescription": "For every Laterano Operator deployed, increases the ammo capacity of this unit's ammo-based skills by +1 (stacks up to 4 times); During Ammo-based skill duration, ATK +8% and gain 20% dodge when ammo is at or below half of ammo capacity"
+            }
+        ],
+        [
+            {
+                "name": "Empathy by Shotgun",
+                "EN": "For every Laterano Operator deployed, increases the ammo capacity of this unit's ammo-based skills by +1 (stacks up to 4 times)",
+                "CN": "每有一个[拉特兰]干员在场，自身的弹药类技能弹药上限+1(最多4层)",
+                "mod": "每有一个[拉特兰]干员在场，自身的弹药类技能弹药上限+1(最多4层); 自身的弹药类技能期间攻击力+12%，且弹药数量不少于一半时获得30%的物理与法术闪避",
+                "upgradeDescription": "For every Laterano Operator deployed, increases the ammo capacity of this unit's ammo-based skills by +1 (stacks up to 4 times); During Ammo-based skill duration, ATK +12% and gain 30% dodge when ammo is at or below half of ammo capacity"
+            }
+        ]
+    ],
+    "uniequip_003_amgoat": [
+        [
+            {
+                "name": "Wild Fire",
+                "EN": "Immediately obtains a small random number of Skill Points after deployment",
+                "CN": "部署后立即随机获得7~15点技力",
+                "mod": "部署后立即随机获得7~15点技力; 部署后范围内存在精英或领袖敌人时，获得的技力取最大值",
+                "upgradeDescription": "Immediately obtains 7~15 Skill Points after deployment. When deploy, if there is elite or leader enemy in Attack Range, obtains maximum value of Skill Points instead."
+            },
+            {
+                "name": "Wild Fire",
+                "EN": "Immediately obtains a large random number of Skill Points after deployment",
+                "CN": "部署后立即随机获得10<@ba.talpu>(+3)</>~19<@ba.talpu>(+4)</>点技力",
+                "mod": "部署后立即随机获得10<@ba.talpu>(+3)</>~19<@ba.talpu>(+4)</>点技力; 部署后范围内存在精英或领袖敌人时，获得的技力取最大值",
+                "upgradeDescription": "Immediately obtains 10<@ba.talpu>(+3)</>~19<@ba.talpu>(+4)</> Skill Points after deployment. When deploy, if there is elite or leader enemy in Attack Range, obtains maximum value of Skill Points instead."
+            }
+        ],
+        [
+            {
+                "name": "Wild Fire",
+                "EN": "Immediately obtains a small random number of Skill Points after deployment",
+                "CN": "部署后立即随机获得7~15点技力",
+                "mod": "部署后立即随机获得7~15点技力并随机提升6~15的攻击速度; 部署后范围内存在精英或领袖敌人时，获得的技力和提升的攻击速度取最大值",
+                "upgradeDescription": "Immediately obtains 7~15 Skill Points and 6~15 ASPD after deployment. When deploy, if there is elite or leader enemy in Attack Range, obtains maximum value of Skill Points and ASPD instead."
+            },
+            {
+                "name": "Wild Fire",
+                "EN": "Immediately obtains a large random number of Skill Points after deployment",
+                "CN": "部署后立即随机获得10<@ba.talpu>(+3)</>~19<@ba.talpu>(+4)</>点技力",
+                "mod": "部署后立即随机获得10<@ba.talpu>(+3)</>~19<@ba.talpu>(+4)</>点技力并随机提升6~15的攻击速度; 部署后范围内存在精英或领袖敌人时，获得的技力和提升的攻击速度取最大值",
+                "upgradeDescription": "Immediately obtains 10<@ba.talpu>(+3)</>~19<@ba.talpu>(+4)</> Skill Points and 6~15 ASPD after deployment. When deploy, if there is elite or leader enemy in Attack Range, obtains maximum value of Skill Points and ASPD instead."
+            }
+        ]
     ]
 }

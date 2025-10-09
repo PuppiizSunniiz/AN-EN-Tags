@@ -1104,6 +1104,18 @@
             "desc": "进驻制造站时，每<@cc.vup>1</>点<$cc.bd_dungeon><@cc.rem>魔物料理</></><@cc.vup>+1%</>生产力",
             "description": "When this Operator is assigned to a Factory, <@cc.vup>+1%</> productivity for every <@cc.vup>1</> <$cc.bd_dungeon><@cc.rem>Monster Meal</></>"
         },
+        "manu_prod_spd&manu[000]": {
+            "buffName": "科学改造",
+            "skillIcon": "bskill_man_spd_manu1",
+            "desc": "进驻制造站时，当前制造站内其他干员提供的生产力<@cc.vdown>全部归零</>（不包含根据设施数量提供加成的生产力），每个当前制造站内干员为当前制造站仓库容量上限<@cc.vup>+5</>",
+            "description": "When this Operator is assigned to a Factory, the productivity contributed by all other Operators in that Factory <@cc.vdown>becomes 0</> (excluding productivity granted based on facility count), each Operators in that factory capacity limit <@cc.vup>+5</>"
+        },
+        "manu_prod_spd&manu[100]": {
+            "buffName": "流程优化",
+            "skillIcon": "bskill_man_spd_manu2",
+            "desc": "进驻制造站时，当前制造站内其他干员提供的生产力<@cc.vdown>全部归零</>（不包含根据设施数量提供加成的生产力），每个当前制造站内干员为当前制造站<@cc.vup>+10%</>生产力，仓库容量上限<@cc.vup>+5</>",
+            "description": "When this Operator is assigned to a Factory, the productivity contributed by all other Operators in that Factory <@cc.vdown>becomes 0</> (excluding productivity granted based on facility count), each Operators in that factory productivity <@cc.vup>+10%</> and capacity limit <@cc.vup>+5</>"
+        },
         "manu_formula_spd[000]": {
             "buffName": "Plan to Victory",
             "skillIcon": "bskill_man_exp1",
@@ -1794,6 +1806,18 @@
             "desc": "进驻贸易站时，订单获取效率<@cc.vup>+30%</>；当前贸易站内存在<$cc.g.glasgow><@cc.kw>格拉斯哥帮</></>干员时，订单获取效率额外<@cc.vup>+10%</>",
             "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+30%</>; if a <$cc.g.glasgow><@cc.kw>Glasgow Gang</></> Operator is assigned to the same Trading Post, increase order acquisition efficiency by an additional <@cc.vup>+10%</>"
         },
+        "trade_ord_spd&tag[000]": {
+            "buffName": "订单分发·α",
+            "skillIcon": "bskill_tra_spd1",
+            "desc": "进驻贸易站时，订单获取效率<@cc.vup>+20%</>",
+            "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+20%</>"
+        },
+        "trade_ord_spd&tag[010]": {
+            "buffName": "精英小队",
+            "skillIcon": "bskill_ord_spd&tag1",
+            "desc": "进驻贸易站时，订单获取效率<@cc.vup>+25%</>，基建内（不包含副手及活动室）每有一间进驻<$cc.g.elite><@cc.kw>精英干员</></>的设施，订单获取效率额外<@cc.vup>+2%</>（最多<@cc.kw>10</>间）",
+            "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+25%</>, each facility that <$cc.g.elite><@cc.kw>Elite Operators</></> Operator is stationed (excluding Assistants and Activity Room users), additional order acquisition efficiency <@cc.vup>+2%</> (up to <@cc.kw>10</> facilities)"
+        },
         "workshop_proc_probability[000]": {
             "buffName": "Focus α",
             "skillIcon": "bskill_ws_p1",
@@ -2039,6 +2063,12 @@
             "skillIcon": "bskill_ws_constant3",
             "desc": "进驻加工站加工<@cc.kw>精英材料</>时，相应配方的心情消耗恒定为<@cc.vup>3</>",
             "description": "When this Operator is assigned to the Workshop to process <@cc.kw>elite material</>, the corresponding formulas will only consume <@cc.vup>3</> Morale"
+        },
+        "workshop_formula_cost5[100]": {
+            "buffName": "铁匠天赋",
+            "skillIcon": "bskill_ws_p8",
+            "desc": "进驻加工站加工<@cc.kw>异铁组</>材料时，心情消耗为<@cc.kw>2</>的配方全部<@cc.vup>-1</>心情消耗",
+            "description": "When this Operator is assigned to the Workshop to process <@cc.kw>Oriron</>-type materials, reduces the Morale consumed by all corresponding formulas that cost <@cc.kw>2</> Morale by <@cc.vup>-1</>"
         },
         "workshop_formula_cost5[000]": {
             "buffName": "Familiarity",
@@ -2308,6 +2338,12 @@
             "buffName": "DIY Oriron",
             "skillIcon": "bskill_ws_oriron",
             "desc": "进驻加工站加工<@cc.kw>异铁</>类材料时，副产品的产出概率提升<@cc.vup>90%</>",
+            "description": "When this Operator is assigned to a Workshop to process <@cc.kw>Oriron</>-type materials, the production rate of byproduct increases by <@cc.vup>90%</>"
+        },
+        "workshop_formula_device[021]": {
+            "buffName": "余料利用",
+            "skillIcon": "bskill_ws_oriron",
+            "desc": "进驻加工站加工<@cc.kw>异铁组</>材料时，副产品的产出概率提升<@cc.vup>90%</>",
             "description": "When this Operator is assigned to a Workshop to process <@cc.kw>Oriron</>-type materials, the production rate of byproduct increases by <@cc.vup>90%</>"
         },
         "workshop_formula_device[030]": {
@@ -14303,6 +14339,82 @@
                             }
                         }
                     ]
+                }
+            ]
+        },
+        "char_4204_mantra": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "trade_ord_spd&tag[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "trade_ord_spd&tag[010]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": []
+                }
+            ]
+        },
+        "char_4207_branch": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "workshop_formula_cost5[100]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "workshop_formula_device[021]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4208_wintim": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "manu_prod_spd&manu[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "manu_prod_spd&manu[100]",
+                            "cond": {
+                                "phase": "PHASE_1",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": []
                 }
             ]
         }

@@ -9121,5 +9121,84 @@
                 "desc": "When deployed, <$ba.fever>Fever</>+3 every second; <$ba.mujica>Ave Mujica</> member ATK+9%<@ba.talpu>(+1%)</>"
             }
         ]
+    ],
+	"char_4204_mantra": [
+        [
+            {
+                "name": "噤声限域",
+                "descCN": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力100%的元素伤害，且触发<$ba.palsy>麻痹</>时有8%概率不消耗<$ba.palsy>麻痹</>层数",
+                "desc": "Whenever an enemy triggers <$ba.palsy>Paralysis</>, immediately deals 100% ATK as Elemental Damage to that enemy; Has 8% chance to not consume <$ba.palsy>Paralysis</> stack when triggered"
+            },
+            {
+                "name": "噤声限域",
+                "descCN": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力110%<@ba.talpu>(+10%)</>的元素伤害，且触发<$ba.palsy>麻痹</>时有11%<@ba.talpu>(+3%)</>概率不消耗<$ba.palsy>麻痹</>层数",
+                "desc": "Whenever an enemy triggers <$ba.palsy>Paralysis</>, immediately deals 110% <@ba.talpu>(+10%)</> ATK as Elemental Damage to that enemy; Has 11% <@ba.talpu>(+3%)</> chance to not consume <$ba.palsy>Paralysis</> stack when triggered"
+            },
+            {
+                "name": "噤声限域",
+                "descCN": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力135%的元素伤害，且触发<$ba.palsy>麻痹</>时有10%概率不消耗<$ba.palsy>麻痹</>层数",
+                "desc": "Whenever an enemy triggers <$ba.palsy>Paralysis</>, immediately deals 135% ATK as Elemental Damage to that enemy; Has 10% chance to not consume <$ba.palsy>Paralysis</> stack when triggered"
+            },
+            {
+                "name": "噤声限域",
+                "descCN": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力145%<@ba.talpu>(+10%)</>的元素伤害，且触发<$ba.palsy>麻痹</>时有13%<@ba.talpu>(+3%)</>概率不消耗<$ba.palsy>麻痹</>层数",
+                "desc": "Whenever an enemy triggers <$ba.palsy>Paralysis</>, immediately deals 145% <@ba.talpu>(+10%)</> ATK as Elemental Damage to that enemy; Has 13% <@ba.talpu>(+3%)</> chance to not consume <$ba.palsy>Paralysis</> stack when triggered"
+            }
+        ],
+        [
+            {
+                "name": "全局洞悉",
+                "descCN": "距离真言最近的一个侵入点出场的敌人出现时立刻获得1层<$ba.palsy>麻痹</>",
+                "desc": "Incursion Point closest to Mantra, spawns enemies with 1 <$ba.palsy>Paralysis</> stack"
+            }
+        ]
+    ],
+    "char_4207_branch": [
+        [
+            {
+                "name": "简易包扎",
+                "descCN": "技能结束时恢复自身40%最大生命值",
+                "desc": "Restores 40% HP after skill ends."
+            },
+            {
+                "name": "简易包扎",
+                "descCN": "技能结束时恢复自身50%<@ba.talpu>(+10%)</>最大生命值",
+                "desc": "Restores 50% <@ba.talpu>(+10%)</> HP after skill ends."
+            },
+            {
+                "name": "简易包扎",
+                "descCN": "技能结束时恢复自身50%最大生命值",
+                "desc": "Restores 50% HP after skill ends."
+            },
+            {
+                "name": "简易包扎",
+                "descCN": "技能结束时恢复自身60%<@ba.talpu>(+10%)</>最大生命值",
+                "desc": "Restores 60% <@ba.talpu>(+10%)</> HP after skill ends."
+            }
+        ]
+    ],
+    "char_4208_wintim": [
+        [
+            {
+                "name": "疾笔撰录",
+                "descCN": "攻击速度+5，自身受到伤害后失去该效果",
+                "desc": "ASPD +5, lost this effect after taking damage."
+            },
+            {
+                "name": "疾笔撰录",
+                "descCN": "攻击速度+7<@ba.talpu>(+2)</>，自身受到伤害后失去该效果",
+                "desc": "ASPD +7 <@ba.talpu>(+2)</>, lost this effect after taking damage."
+            },
+            {
+                "name": "疾笔撰录",
+                "descCN": "攻击速度+10，自身受到伤害后失去该效果",
+                "desc": "ASPD +10, lost this effect after taking damage."
+            },
+            {
+                "name": "疾笔撰录",
+                "descCN": "攻击速度+12<@ba.talpu>(+2)</>，自身受到伤害后失去该效果",
+                "desc": "ASPD +12 <@ba.talpu>(+2)</>, lost this effect after taking damage."
+            }
+        ]
     ]
 }

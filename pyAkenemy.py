@@ -7,7 +7,7 @@ import json
 import re
 import glob
 from datetime import datetime
-from pyfunction import print_header
+from pyfunction import print_header, printr
 
 ################################################################################################################################################################################################################################################
 # Global Variable
@@ -421,11 +421,13 @@ def RA_rush_Lister(Rushgroup_config : dict, stage_event : str) -> int :
             
     return stage_counter
 
-def main_zone(stage_id : str,event_id : str) -> str :
+def main_zone(stage_id : str, event_id : str) -> str :
     if event_id.split("_")[-1] == "0" :
         zone_prefix = "Prologue : "
-    elif re.search(r'act2mainss',event_id): #act[0-9]{1,2}mainss
-        zone_prefix = f'EP15 : '
+    elif re.search(r'act([0-9]{1,2})mainss(?:.+?|)', event_id): #act[0-9]{1,2}mainss
+        
+        main_match = int(re.match(r'act([0-9]{1,2})mainss(?:.+?|)', event_id).group(1))
+        zone_prefix = f'EP{13 + main_match} : '
     else:
         zone_prefix = f'EP{event_id.split("_")[-1]} : '
     

@@ -999,6 +999,20 @@
             "note": "new mods rit-y",
             "name": "char_245_cello",
             "code": "uniequip_003_cello"
+        },
+        "攻击周围8格的敌人时攻击力提升至<@ba.kw>{atk_scale:0%}</>": {
+            "en": "ATK increased to <@ba.kw>{atk_scale:0%}</> when attacking enemies in the 8 surrounding tiles.",
+            "color": "common",
+            "note": "new mods lps-x",
+            "name": "char_4100_caper",
+            "code": "uniequip_002_caper"
+        },
+        "攻击范围内存在2名及以上敌人时攻击速度<@ba.kw>+{value}</>": {
+            "en": "ASPD <@ba.kw>+{value}</> if there are 2 or more enemies in Attack Range.",
+            "color": "common",
+            "note": "new mods rea-y",
+            "name": "char_1032_excu2",
+            "code": "uniequip_003_excu2"
         }
     },
     "parts": [

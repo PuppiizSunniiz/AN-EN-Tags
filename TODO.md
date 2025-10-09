@@ -39,14 +39,18 @@
     - RA-A : Pepe
 
 ### Somniloquium Serenum (Arknights X Eve Mujica)
+- Effect
+    - <$ba.permanentatk>Continuously Attack</>
 - Trait
     - RIT-Y : Virtuosa
 
-### To Fix 
-Yahata Umiri Talents 2
-    - dont have Elite 1 desc/upgrade > Pot talent not shown
-Togawa Sakiko Skill 2/3
-    - fix regex being eaten too quick
+### EP16 : Abnormal Spectrum
+- Effect
+    - Mantra talent & skill (Nervous Impairment/Paralyze)
+- Trait
+    - Loopshooter
+    - Reaper REA-Y : Executor the Ex Foedere
+
 ### To Do
 - Independent-miya
 - Token

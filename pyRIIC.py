@@ -173,6 +173,19 @@ def riic_tl_json(show : bool = False):
                         match_cap_desc      = desc_match.group(2)
                         match_cap           = desc_match.group(3)
                         return f'When this Operator is assigned to a Factory, Productivity <@cc.vup>{match_prod}</> and capacity limit <@cc.{match_cap_desc}>{match_cap}</>'
+                    # (manu_prod_spd&manu) #1
+                    re_manu_prod_spd_manu_1 = r'进驻制造站时，当前制造站内其他干员提供的生产力<@cc\.vdown>全部归零<\/>（不包含根据设施数量提供加成的生产力），每个当前制造站内干员为当前制造站仓库容量上限<@cc\.vup>([+0-9]*)<\/>'
+                    if re.match(re_manu_prod_spd_manu_1, desc_sub):
+                        desc_match          = re.match(re_manu_prod_spd_manu_1, desc_sub)
+                        match_cap           = desc_match.group(1)
+                        return f'When this Operator is assigned to a Factory, the productivity contributed by all other Operators in that Factory <@cc.vdown>becomes 0</> (excluding productivity granted based on facility count), each Operators in that factory capacity limit <@cc.vup>{match_cap}</>'
+                    # (manu_prod_spd&manu) #2
+                    re_manu_prod_spd_manu_2 = r'进驻制造站时，当前制造站内其他干员提供的生产力<@cc\.vdown>全部归零<\/>（不包含根据设施数量提供加成的生产力），每个当前制造站内干员为当前制造站<@cc\.vup>([+0-9%]*)<\/>生产力，仓库容量上限<@cc\.vup>([+0-9]*)<\/>'
+                    if re.match(re_manu_prod_spd_manu_2, desc_sub):
+                        desc_match          = re.match(re_manu_prod_spd_manu_2, desc_sub)
+                        match_prod          = desc_match.group(1)
+                        match_cap           = desc_match.group(2)
+                        return f'When this Operator is assigned to a Factory, the productivity contributed by all other Operators in that Factory <@cc.vdown>becomes 0</> (excluding productivity granted based on facility count), each Operators in that factory productivity <@cc.vup>{match_prod}</> and capacity limit <@cc.vup>{match_cap}</>'
                     # Speed by Power Plants Robot
                     re_manu_token_prod_spd = r'^进驻制造站时，每有<@cc\.vup>([0-9]*)<\/>台<\$(cc\.[\.A-Za-z0-9]*)><@cc\.kw>[^<]*<\/><\/>进驻发电站，<@cc\.kw>([^<]*)<\/>类配方的生产力<@cc\.vup>([\+0-9%]*)</>$'
                     if re.match(re_manu_token_prod_spd, desc_sub):
@@ -212,6 +225,16 @@ def riic_tl_json(show : bool = False):
                         desc_match          = re.match(re_trade_ord_spd_share, desc_sub)
                         match_spd           = desc_match.group(1)
                         return f'When this Operator is assigned to a Trading Post, other Operators working in the Trading Post have <@cc.vup>{match_spd}</> order acquisition efficiency'
+                    # (trade_ord_spd&tag)
+                    re_trade_ord_spd_tag = r'^进驻贸易站时，订单获取效率<@cc\.vup>([+0-9%]*)<\/>，基建内（不包含副手及活动室）每有一间进驻<\$(cc\.[^>]*)><@cc\.kw>精英干员<\/><\/>的设施，订单获取效率额外<@cc\.vup>([+0-9%]*)<\/>（最多<@cc\.kw>([0-9]*)<\/>间）$'
+                    if re.match(re_trade_ord_spd_tag, desc_sub):
+                        desc_match          = re.match(re_trade_ord_spd_tag, desc_sub)
+                        match_eff           = desc_match.group(1)
+                        match_faction_skill = desc_match.group(2)
+                        match_faction_name  = riic_match_tl(match_faction_skill)
+                        match_eff_add       = desc_match.group(3)
+                        match_facility      = desc_match.group(4)
+                        return f'When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>{match_eff}</>, each facility that <${match_faction_skill}><@cc.kw>{match_faction_name}</></> Operator is stationed (excluding Assistants and Activity Room users), additional order acquisition efficiency <@cc.vup>{match_eff_add}</> (up to <@cc.kw>{match_facility}</> facilities)'
                 case "workshop":
                     # Cost reduce morale
                     re_workshop_formula_cost = r'^进驻加工站加工<@cc\.kw>([^<]*)<\/>时，心情消耗为<@cc\.kw>([0-9]*)<\/>的配方全部<@cc\.vup>([\+\-0-9]*)<\/>心情消耗$'
@@ -221,6 +244,21 @@ def riic_tl_json(show : bool = False):
                         match_cost          = desc_match.group(2)
                         match_morale        = desc_match.group(3)
                         return f'When this Operator is assigned to the Workshop to process <@cc.kw>{match_mat}</>, reduces the Morale consumed by all corresponding formulas that cost <@cc.kw>{match_cost}</> Morale by <@cc.vup>{match_morale}</>'
+                    # (workshop_formula_cost5)
+                    re_workshop_formula_cost5 = r'^进驻加工站加工<@cc\.kw>([^<]*)<\/>材料时，心情消耗为<@cc\.kw>([0-9]*)<\/>的配方全部<@cc\.vup>([\+\-0-9]*)<\/>心情消耗$'
+                    if re.match(re_workshop_formula_cost5, desc_sub):
+                        desc_match          = re.match(re_workshop_formula_cost5, desc_sub)
+                        match_mat           = riic_match_tl(desc_match.group(1), "item")
+                        match_cost          = desc_match.group(2)
+                        match_morale        = desc_match.group(3)
+                        return f'When this Operator is assigned to the Workshop to process <@cc.kw>{match_mat}</>-type materials, reduces the Morale consumed by all corresponding formulas that cost <@cc.kw>{match_cost}</> Morale by <@cc.vup>{match_morale}</>'
+                    # (re_workshop_formula_device)
+                    re_workshop_formula_device = r'^进驻加工站加工<@cc\.kw>([^<]*)<\/>材料时，副产品的产出概率提升<@cc\.vup>([0-9%]*)<\/>$'
+                    if re.match(re_workshop_formula_device, desc_sub):
+                        desc_match          = re.match(re_workshop_formula_device, desc_sub)
+                        match_mat           = riic_match_tl(desc_match.group(1), "item")
+                        match_byproduct     = desc_match.group(2)
+                        return f'When this Operator is assigned to a Workshop to process <@cc.kw>{match_mat}</>-type materials, the production rate of byproduct increases by <@cc.vup>{match_byproduct}</>'
                 case "train":
                     # Train Class Morale Down
                     re_train_cost_profession = r'^进驻训练室协助<@cc\.kw>([^<]*)<\/>干员训练专精技能至<@cc\.vup>([1-3])<\/>级时，心情每小时消耗<@cc\.vdown>([\+\-0-9]*)<\/>$'
@@ -346,7 +384,9 @@ def riic_tl_json(show : bool = False):
                                     "精英材料"      : "Elite materials",
                                     "芯片"          : "Chips",
                                     "技巧概要"      : "Skill Summaries",
-                                    "基建材料"      : "Building material"
+                                    "基建材料"      : "Building material",
+                                    
+                                    "异铁组"        : "Oriron",
                         }
                         if desc in mat_tl:
                             return mat_tl[desc]

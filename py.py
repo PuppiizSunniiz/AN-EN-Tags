@@ -1,6 +1,6 @@
 import json
 import re
-from pyfunction import epoch,json_load
+from pyfunction import URSUS, epoch,json_load
 
 #########################################################################################################
 # JSON
@@ -43,7 +43,7 @@ def get_char_name(char_key) -> str:
         
         Return as Eng name
     '''
-    Russian = {'Гум': 'Gummy', 'Зима': 'Zima', 'Истина': 'Istina', 'Позёмка': 'Pozëmka', 'Роса': 'Rosa','Лето':'Leto'}
+    Russian = URSUS
     appellation = json_char[char_key]["appellation"]    
     return Russian.get(appellation,appellation)
 

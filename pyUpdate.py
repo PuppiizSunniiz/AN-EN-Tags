@@ -2,7 +2,7 @@ import re
 import json
 from pyAudio import audio_json
 from pyRIIC import riic_tl_json
-from pyfunction import char_ready, name_check, json_load, printr, R, G, B, Y, RE
+from pyfunction import URSUS, char_ready, name_check, json_load, printr, R, G, B, Y, RE
 from pyAkenemy import Akenemy
 from py import Ready
 from typing import Any
@@ -70,7 +70,7 @@ json_skillTL        =   json_load("json/ace/tl-skills.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS : list[str] = [] # "", 
+NEW_CHARS : list[str] = ["Mantra", "Vetochki", "Snegurochka"] # "", 
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS : list[str] = [] # "",
@@ -115,7 +115,7 @@ def get_new_akhr(new_char_id : str, new_char_name : str) -> dict[str, Any]:
     return  {
                                     "id"            :   new_char_id,
                                     "name_cn"       :   json_char[new_char_id]["name"],
-                                    "name_en"       :   new_char_name,
+                                    "name_en"       :   new_char_name if not new_char_name in URSUS.values() else [k for k, v in URSUS.items() if new_char_name == v][0],
                                     "name_jp"       :   "",
                                     "name_kr"       :   "",
                                     "nationId"      :   json_char[new_char_id]["nationId"],
@@ -596,7 +596,7 @@ def get_name(char_data : dict) -> list:
 char_names = {}
 for char_id in json_char.keys():
     if not char_id.startswith("char_") : continue
-    char_name = get_name(json_char[char_id])
+    char_name = get_name(json_char[char_id]) + [URSUS.get(json_char[char_id]["appellation"], json_char[char_id]["appellation"])]
     for other_lang in [json_charEN, json_charJP, json_charKR]:
         if char_id in other_lang.keys():
             char_name += get_name(other_lang[char_id])
