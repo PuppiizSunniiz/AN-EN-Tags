@@ -359,12 +359,23 @@ def va_artist(show : bool = False):
     if va : script_result(("\n").join(va))
 
 def subpower_list(show : bool = False):
-    temp = []
+    temp = {}
     for char in DB["json_character"]:
         if DB["json_character"][char]["subPower"]:
-            temp.append(DB["json_character"][char]["appellation"])
+            op_name = DB["json_characterEN"][char]["name"] if char in DB["json_characterEN"] else DB["json_character"][char]["appellation"]
+            sub_power = {}
+            for power_i in range(len(DB["json_character"][char]["subPower"])):
+                for level in ["nationId", "groupId", "teamId"]:
+                    if not DB["json_character"][char]["subPower"][power_i][level]:
+                        continue
+                    elif DB["json_character"][char]["subPower"][power_i][level] != DB["json_character"][char]["mainPower"][level]:
+                        sub_power[f'{level}{power_i + 1}'] = DB["json_character"][char]["subPower"][power_i][level]
+                    else:
+                        printr(f'{char:<20}{op_name:<30}Dupe Power: {DB["json_character"][char]["subPower"][power_i][level]}')
+            temp[op_name] = sub_power
 
-    print (temp)
+    #print(temp)
+    script_result(temp, show, forced_txt=True)
 
 def stage_kill_test(show : bool = False):
     IGNORED = {"enemy_10082_mpweak","enemy_10072_mpprhd"}
@@ -833,4 +844,5 @@ def dumpling():
     
     script_result(dump_dict, True, key_sort=True)
     #script_result(dump_dump, True)
-dumpling()
+#dumpling()
+subpower_list(True)

@@ -1730,7 +1730,7 @@
                 EliteStatsDisplay(1,i);
             }
 
-            var unreadable = query(db.unreadNameTL,"name",opdata.name_en).name_en
+            var unreadable = query(db.unreadNameTL,"name_en",opdata.name_en).name_en
             // $("#op-nameTL").html(opdata['name_'+lang]);
             // $("#op-nameREG").html("["+opdata['name_'+reg]+"]");
             $("#op-nameTL").removeClass("smallopname");

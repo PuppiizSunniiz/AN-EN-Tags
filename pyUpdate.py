@@ -70,7 +70,7 @@ json_skillTL        =   json_load("json/ace/tl-skills.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS : list[str] = ["Mantra", "Vetochki", "Snegurochka"] # "", 
+NEW_CHARS : list[str] = [] # "", 
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS : list[str] = [] # "",
@@ -236,10 +236,9 @@ for new_char_name in NEW_CHARS:
 
 #Update old char localization
 for char_data in json_akhr:
-    for lang in [["name_jp", json_charJP], ["name_kr", json_charKR]]:
-        if char_data[lang[0]] == "":
-            if char_data["id"] in lang[1].keys():
-                char_data[lang[0]] = lang[1][char_data["id"]]["name"]
+    for lang in [["name_en", json_charEN],["name_jp", json_charJP], ["name_kr", json_charKR]]:
+        if char_data["id"] in lang[1].keys():
+            char_data[lang[0]] = lang[1][char_data["id"]]["name"]
 
 #Update recruitment
 def cleanlist(recruit_list:str) -> str:
@@ -249,10 +248,11 @@ gacha_CN_list   =   cleanlist(json_gacha["recruitDetail"]).split("\n")
 gacha_EN_list   =   cleanlist(json_gachaEN["recruitDetail"]).split("\n")
 
 bypass          =   {
-                        "THRM-EX"               :   "Thermal-EX",
-                        "\'Justice Knight\'"    :   "\"Justice Knight\"",
-                        "Justice Knight"        :   "\"Justice Knight\"",
-                        "Shirayuki"             :   "ShiraYuki"
+                        #"THRM-EX"               :   "Thermal-EX",
+                        #"\'Justice Knight\'"    :   "\"Justice Knight\"",
+                        "Justice Knight"        :   "\'Justice Knight\'",
+                        #"Shirayuki"             :   "ShiraYuki",
+                        "Mr.Nothing"            :   "Mr. Nothing",
                     }
 
 for i in range(6):

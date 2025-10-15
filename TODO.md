@@ -1,25 +1,8 @@
 # Fix TL (Official EN) waiting room
-### The Masses' Travels
-- Effect 
-    - <$ba.dt.neural2>Nervous Impairment</>
-        - Tragodia
-        - Miss Christine
-    - <$ba.palsy>Paralyze</>
-        - Miss Christine
-- Trait
-    - Confess-47
-    - Gracebearer (Primal Guard)
-    - LIB-X
-    - BLS-Y
-    - LOR-D 
-    - Mizuki isw-a
-    - Archetto isw-a
 
 ### Act or Die
 - Effect
     - Lure / Attract
-- Talent > Mod
-    - Miss Christine
 - Trait
     - SOC-X
     - SOC-Y

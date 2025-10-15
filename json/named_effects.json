@@ -578,17 +578,17 @@
         "ba.dt.neural2": {
             "termId": "ba.dt.neural2",
             "termName": "Nervous Impairment - Player",
-            "description": "Explodes when at max (1000 for Normal and Elite, 2000 for Leaders), dealing 6000 Elemental Damage and inflict 3 <$ba.palsy>Paralysis</> stack. 10s cooldown."
+            "description": "Explodes when at max (1000 for Normal and Elite, 2000 for Leaders), dealing 6000 Elemental Damage and inflicting 3 stacks of <$ba.palsy>Paralysis</>. 10s cooldown."
         },
         "ba.palsy": {
             "termId": "ba.palsy",
             "termName": "Paralysis",
-            "description": "Interrupts enemy attacks once per stack. Can stack up to 3 times. Each stack lasts indefinitely until used. Enemies with resistance lose 1 stack every 5 seconds."
+            "description": "Each stack of Paralysis can interrupt an enemy when it attempts to perform a normal attack, max 3 stacks; Paralysis has unlimited duration when not consumed, but units with status resistance lose 1 stack every 5s"
         },
         "ba.addbullet": {
             "termId": "ba.addbullet",
             "termName": "Replenish",
-            "description": "Replenish ammo for other operators that have Ammo-based skill. During skill activation, the maximum amount of ammo that can be replenish is equal to skill’s ammo capacity"
+            "description": "Replenishes ammo for other Operators' ammo-type skills; an ammo-type skill can only be replenished up to its max ammo capacity during a single activation of that skill"
         },
         "cc.g.laterano": {
             "termId": "cc.g.laterano",

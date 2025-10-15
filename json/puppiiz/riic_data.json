@@ -670,7 +670,7 @@
             "buffName": "维护中",
             "skillIcon": "bskill_power_rec_spd_ext&faction",
             "desc": "进驻发电站时，如果其他<$cc.g.laterano><@cc.kw>拉特兰</></>干员进驻在发电站，则无人机充能速度<@cc.vup>+5%</>",
-            "description": "When this Operator is assigned to a Power Plant, if there are no <$cc.g.laterano><@cc.kw>Laterano</></> operators assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+5%</>"
+            "description": "When this Operator is assigned to a Power Plant, if another <$cc.g.laterano><@cc.kw>Laterano</></> Operator is assigned to a Power Plant, drone charging speed <@cc.vup>+5%</>"
         },
         "power_rec_rhine[000]": {
             "buffName": "Ecological Section Director",
@@ -1768,7 +1768,7 @@
             "buffName": "相伴",
             "skillIcon": "bskill_tra_lemuen1",
             "desc": "进驻贸易站时，订单获取效率<@cc.vup>+20%</>；当与<@cc.kw><$cc.angel>能天使</></>在同一个贸易站时，订单获取效率额外<@cc.vup>+25%</>",
-            "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+20%</>；when in the same Trading Post as <$cc.angel><@cc.kw>Exusiai</></>, additional order acquisition efficiency <@cc.vup>+25%</>"
+            "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+20%</>; if <$cc.angel><@cc.kw>Exusiai</></> is assigned to the same Trading Post, additionally order acquisition efficiency <@cc.vup>+25%</>"
         },
         "trade_ord_par&per[000]": {
             "buffName": "Starting From Scratch α",
@@ -3298,7 +3298,7 @@
             "buffName": "圣城趣事通",
             "skillIcon": "bskill_dorm_single_laterano",
             "desc": "进驻宿舍时，使该宿舍内除自身以外心情未满的某个干员每小时恢复<@cc.vup>+0.55</>（同种效果取最高），如果目标是<$cc.g.laterano><@cc.kw>拉特兰</></>干员，则恢复效果额外<@cc.vup>+0.45</>",
-            "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is a <$cc.g.laterano><@cc.kw>Laterano</></> Operator, further increases Morale restored by <@cc.vup>+0.45</>"
+            "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to all other Operators assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is a <$cc.g.laterano><@cc.kw>Laterano</></> Operator, further increases Morale restored by <@cc.vup>+0.45</>"
         },
         "dorm_rec_all&oneself[000]": {
             "buffName": "Laziness",
@@ -3772,7 +3772,7 @@
             "buffName": "不泯童心",
             "skillIcon": "bskill_meet_spd_confes1",
             "desc": "进驻会客室时，如果<@cc.kw>菲亚梅塔</>进驻在宿舍，则线索搜集速度额外提升<@cc.vup>10%</>",
-            "description": "When this Operator is assigned to the Reception Room, if <@cc.kw>Fiammetta</> is assigned to a Dormitory, increases Clue search speed by an additional <@cc.vup>10%</>"
+            "description": "When this Operator is assigned to the Reception Room, if <@cc.kw>Fiammetta</> is assigned to a Dormitory, Clue search speed increases by <@cc.vup>10%</>"
         },
         "meet_spd_condChar[000]": {
             "buffName": "Proficient Artistry",
