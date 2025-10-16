@@ -845,4 +845,6 @@ def dumpling():
     script_result(dump_dict, True, key_sort=True)
     #script_result(dump_dump, True)
 #dumpling()
-subpower_list(True)
+#subpower_list(True)
+
+printr(f'Снегyрочка : {"-".join([str(ord(char)) for char in "Снегyрочка"])}\n"Снегурочка" : {"-".join([str(ord(char)) for char in "Снегурочка"])}')

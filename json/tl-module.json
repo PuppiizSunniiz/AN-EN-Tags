@@ -1400,5 +1400,23 @@
                 "upgradeDescription": "Immediately obtains 10<@ba.talpu>(+3)</>~19<@ba.talpu>(+4)</> Skill Points and 6~15 ASPD after deployment. When deploy, if there is elite or leader enemy in Attack Range, obtains maximum value of Skill Points and ASPD instead."
             }
         ]
+    ],
+    "uniequip_003_radian": [
+        [
+            {
+                "name": "卡带里的灵感",
+                "CN": "可以使用5个召唤物(最多同时部署3个)，功能随技能选择而改变",
+                "mod": "可以使用5个召唤物(最多同时部署3个)，功能随技能选择而改变。在[岁的界园志异]中，电弧会回收自身周围四格的召唤物，使自身立即回复20％最大生命值且之后攻击时对目标额外造成一次相当于攻击力20％的法术伤害(最多可叠加4次)",
+                "upgradeDescription": "Can use up to 5 summons (max 3 deployed at once). Summons’ effect changes based upon Skill; In <@ba.kw>[Sui's Garden of Grotesqueries]</>, Raidian retrieves summon in the 4 adjacent tiles, recover 20% HP and deal addition 20% ATK as Arts damage when attacking (stack up to 4 times)"
+            }
+        ],
+        [
+            {
+                "name": "卡带里的灵感",
+                "CN": "可以使用5个召唤物(最多同时部署3个)，功能随技能选择而改变",
+                "mod": "可以使用5个召唤物(最多同时部署3个)，功能随技能选择而改变。在[岁的界园志异]中，电弧会回收自身周围四格的召唤物，使自身立即回复25％最大生命值且之后攻击时对目标额外造成一次相当于攻击力30％的法术伤害(最多可叠加4次)",
+                "upgradeDescription": "Can use up to 5 summons (max 3 deployed at once). Summons’ effect changes based upon Skill; In <@ba.kw>[Sui's Garden of Grotesqueries]</>, Raidian retrieves summon in the 4 adjacent tiles, recover 25% HP and deal addition 30% ATK as Arts damage when attacking (stack up to 4 times)"
+            }
+        ]
     ]
 }

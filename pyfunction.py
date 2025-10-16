@@ -18,7 +18,7 @@ URSUS : dict = {
                     "Позёмка"       : "Pozëmka",
                     "Роса"          : "Rosa",
                     "Лето"          : "Leto",
-                    "Снегyрочка"    : "Snegurochka",
+                    "Снегурочка"    : "Snegurochka",
                     "Веточки"       : "Vetochki"
                 }
 

@@ -948,13 +948,14 @@
                             </li>`
                         )
                     }else{
+                        let opcurrname = result[i].nameTL==result[i].name?result[i].name:result[i].nameTL +" (" +result[i].name + ")"
                         $("#operatorsResult").removeClass("opresult-grid");
                         $("#operatorsResult").addClass("opresult-list");
                         $("#operatorsResult").css("text-align","left");
                         $("#operatorsResult").append(`
                             <li class=" ak-shadow-small ak-rare-${result[i].rarity}" style="width:100%; cursor:pointer; margin-bottom:2px; position:relative;" onclick="selectOperator('${result[i].id}')">
                                 ${image}
-                                ${result[i].name_readable?`[${result[i].name_readable}]`:""} ${result[i].nameTL} (${result[i].name})
+                                ${result[i].name_readable?`[${result[i].name_readable}]`:""} ${opcurrname}
                                 ${result[i].gamemode == "BASE"?"":'<div class="op-grid-gamemode ' + result[i].gamemode +'">' + result[i].gamemode + '</div>'}
                             </li>`);
                     }
@@ -2315,7 +2316,8 @@
                                 <div style="text-align:center">
                                 `
                             if(gmapp == "SO"){
-                                SO_condUnlocking = db.special_operator[opdataFull.id].unlock["uniequip1"][curreqphase] // might need to change "uniequip1" later
+                                so_mod_index = "uniequip" + db.uniequip.charEquip[opid].indexOf(module).toString()
+                                SO_condUnlocking = db.special_operator[opdataFull.id].unlock[so_mod_index][curreqphase]
                                 equiphtml[curreqphase] += `
                                                             <div class = "SO-Unlock">
                                                                 ${ChangeDescriptionColor2(SO_condUnlocking)}
