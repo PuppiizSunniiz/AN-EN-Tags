@@ -5653,6 +5653,11 @@
             console.log("DESC NULL")
             return desc
         }
+        // catch </> missing case (Vigna Talent EN)
+        if ((desc.match(/<@ba\.talpu>/g) ?? 0).length == 1 && (desc.match(/<\/>/g) ?? 0).length === undefined){
+            desc = desc.replace(/(<@ba\.talpu>\(.+?\))/g, "$1</>")
+        }
+
         // catch </> missing case (Executor the Ex Foedere S1 EN)
         if ((desc.match(/<[@][^>]+>/g) ?? 0).length - (desc.match(/<\/>/g) ?? 0).length == 1) desc += "</>"
 

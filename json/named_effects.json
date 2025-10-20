@@ -18,7 +18,7 @@
         "ba.buffres": {
             "termId": "ba.buffres",
             "termName": "Status Resistance",
-            "description": "Negative Status durations(<$ba.stun>Stun</>, <$ba.cold>Cold</>, <$ba.frozen>Freeze</>, etc.) halved (does not stack with the same effect)"
+            "description": "<$ba.stun>Stun</>, <$ba.cold>Cold</>, and <$ba.frozen>Frozen</> durations halved; <$ba.palsy>Paralysis</> loses 1 stack every 5s (does not stack with the same effect)"
         },
         "ba.invisible": {
             "termId": "ba.invisible",
