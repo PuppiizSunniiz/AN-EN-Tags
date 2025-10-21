@@ -3847,7 +3847,7 @@
                 audiolist.push(`
                     <div class="${valang}-VA" style="display:inline-block;padding-top:15px;vertical-align:top;width:30px;text-align:left;">${lang}</div>
                     <div style="display:inline-block">
-                    <audio preload="metadata" controls style="margin-top:10px"> <source src="${preDir}${foldername}/${wordKey.toLowerCase()}${valang == "CN_TOPOLECT"?"_cn_topolect":""}/${audio_dict.voiceId}.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio>
+                    <audio preload="metadata" controls style="margin-top:10px"> <source src="${preDir}${foldername}/${wordKey.toLowerCase()}${valang == "CN_TOPOLECT"?"_cn_topolect":(valang == "ITA"?"_ita":"")}/${audio_dict.voiceId}.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio>
                     <a href="${preDir}${foldername}/${wordKey.toLowerCase()}/${audio_dict.voiceId}.mp3"  target="_blank">
                     <i class='fa fa-download' style='font-size:20px;vertical-align:top;padding-top:17px'></i></a>
                     </div>`)
