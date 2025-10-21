@@ -6,6 +6,8 @@ import os
 import inspect
 from typing import Any, Callable
 
+import requests
+
 R = '\033[31m'
 G = '\033[32m'
 Y = '\033[33m'
@@ -847,4 +849,112 @@ def dumpling():
 #dumpling()
 #subpower_list(True)
 
-printr(f'Снегyрочка : {"-".join([str(ord(char)) for char in "Снегyрочка"])}\n"Снегурочка" : {"-".join([str(ord(char)) for char in "Снегурочка"])}')
+#printr(f'Снегyрочка : {"-".join([str(ord(char)) for char in "Снегyрочка"])}\n"Снегурочка" : {"-".join([str(ord(char)) for char in "Снегурочка"])}')
+
+def enemyduel(original : bool = False):
+    enemy_database = {}
+    json_enemy_database = json.loads(requests.get("https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/refs/heads/master/en/gamedata/levels/enemydata/enemy_database.json").text)
+    enemyData = DB["json_activity"]["activity"]["ENEMY_DUEL"]["act1enemyduel"]["enemyData"]
+    for enemy in enemyData:
+        enemy_stat = {}
+        origi_stat = {}
+        enemy_id = enemyData[enemy]["enemyId"]
+        origi_id = enemyData[enemy]["originalEnemyId"]
+        for enemy_data in DB["json_enemy_database"]["enemies"]:
+            if enemy_data["Key"] == enemy_id:
+                enemy_stat = enemy_data["Value"][0]
+                continue
+            elif enemy_data["Key"] == origi_id:
+                origi_stat = enemy_data["Value"][0]
+                continue
+            elif enemy_stat and origi_stat:
+                break
+        enemy_database[enemy_id] = {
+                                        "id"            : enemy_id,
+                                        "ori"           : origi_id,
+                                        "name"          : enemy_stat["enemyData"]["name"]["m_value"], #json_enemy_database[enemy_id][0]["enemyData"]["name"]["m_value"], #enemy_stat["enemyData"]["name"]["m_value"],
+                                        "ori_name"      : json_enemy_database[origi_id][0]["enemyData"]["name"]["m_value"], #origi_stat["enemyData"]["name"]["m_value"],
+                                        "replace"       : [],
+                                        "range_radius"  : enemy_stat["enemyData"]["rangeRadius"]["m_value"],
+                                    }
+        
+        if origi_stat["enemyData"]["rangeRadius"]["m_value"] != enemy_stat["enemyData"]["rangeRadius"]["m_value"] :
+            enemy_database[enemy_id]["replace"].append("range_radius")
+        
+        for stat in enemy_stat["enemyData"]["attributes"]:
+            enemy_database[enemy_id][stat] = enemy_stat["enemyData"]["attributes"][stat]["m_value"]
+            if enemy_stat["enemyData"]["attributes"][stat]["m_value"] != origi_stat["enemyData"]["attributes"][stat]["m_value"]:
+                enemy_database[enemy_id]["replace"].append(stat)
+        
+        talent_change = []
+        if enemy_stat["enemyData"]["talentBlackboard"] and enemy_stat["enemyData"]["talentBlackboard"] != origi_stat["enemyData"]["talentBlackboard"]:
+            for talent_blackboard in enemy_stat["enemyData"]["talentBlackboard"]:
+                for ori_talent_blackboard in origi_stat["enemyData"]["talentBlackboard"]:
+                    if talent_blackboard["key"] != ori_talent_blackboard["key"]:
+                        continue
+                    elif (talent_blackboard["valueStr"] and talent_blackboard["valueStr"] == ori_talent_blackboard["valueStr"]) or (not talent_blackboard["valueStr"] and talent_blackboard["value"] == ori_talent_blackboard["value"]):
+                        break
+                    else:
+                        talent_change.append(talent_blackboard)
+        enemy_database[enemy_id]["talentBlackboard"] = talent_change
+        if talent_change: enemy_database[enemy_id]["replace"].append("talentBlackboard")
+        
+        skill_change = []
+        if enemy_stat["enemyData"]["skills"] and enemy_stat["enemyData"]["skills"] != origi_stat["enemyData"]["skills"]:
+            for skill in enemy_stat["enemyData"]["skills"]:
+                for ori_skill in origi_stat["enemyData"]["skills"]:
+                    if skill["prefabKey"] != ori_skill["prefabKey"]:
+                        continue
+                    elif skill == ori_skill:
+                        break
+                    else:
+                        temp_skill = {"prefabKey": skill["prefabKey"]}
+                        temp_skill_blackboard = []
+                        for skill_key in skill:
+                            if skill_key == "blackboard" and skill["blackboard"] != ori_skill["blackboard"]:
+                                for skill_blackboard in skill["blackboard"]:
+                                    for ori_skill_blackboard in ori_skill["blackboard"]:
+                                        if skill_blackboard["key"] != ori_skill_blackboard["key"]:
+                                            continue
+                                        elif (skill_blackboard["valueStr"] and skill_blackboard["valueStr"] == ori_skill_blackboard["valueStr"]) or (not skill_blackboard["valueStr"] and skill_blackboard["value"] == ori_skill_blackboard["value"]):
+                                            break
+                                        else:
+                                            temp_skill_blackboard.append(skill_blackboard)
+                                if temp_skill_blackboard : temp_skill["blackboard"] = temp_skill_blackboard
+                            elif skill[skill_key] != ori_skill[skill_key]:
+                                temp_skill[skill_key] = skill[skill_key]
+                        skill_change.append(temp_skill)
+                        find_skill = True
+        enemy_database[enemy_id]["skills"] = skill_change
+        if skill_change: enemy_database[enemy_id]["replace"].append("skills")
+        
+        if enemy_stat["enemyData"]["spData"] and enemy_stat["enemyData"]["spData"] != origi_stat["enemyData"]["spData"]:
+            enemy_database[enemy_id]["replace"].append("talent")
+            enemy_database[enemy_id]["spData_change"] = enemy_stat["enemyData"]["spData"]
+        else:
+            enemy_database[enemy_id]["spData_change"] = ""
+        
+    
+    replace_enemy_database = {k:{"id" : k, "base" : enemy_database[k]["ori_name"]} for k in enemy_database.keys()}
+    for k in replace_enemy_database.keys():
+        replace_enemy_database[k].update({v:enemy_database[k][v] for v in enemy_database[k]["replace"]})
+    #script_result(list(enemy_database.keys()), True)
+    #script_result({enemy_database[k]["name"]:replace_enemy_database[k] for k in enemy_database.keys()}, True)
+    script_result([f'{enemy_database[k]["id"]}|{enemy_database[k]["name"]}|{enemy_database[k]["ori"]}|{enemy_database[k]["ori_name"]}' for k in enemy_database.keys()], True)
+#enemyduel(True)
+
+def reward_42side():
+    missions_rewards = {}
+    taskData = DB["json_activity"]["activity"]["TYPE_ACT42SIDE"]["act42side"]["taskData"]
+    for mission in taskData:
+        mission_reward = {}
+        for reward in taskData[mission]["rewards"]:
+            mission_reward[reward["id"]] = {
+                                                "id"        : reward["id"],
+                                                "iconId"    : DB["json_itemEN"]["items"][reward["id"]]["iconId"] if reward["id"] in DB["json_itemEN"]["items"] else reward["id"],
+                                                "name"      : DB["json_itemEN"]["items"][reward["id"]]["name"] if reward["id"] in DB["json_itemEN"]["items"] else reward["id"],
+                                                "count"     : reward["count"],
+            }
+        missions_rewards[mission] = mission_reward
+    script_result(missions_rewards, True)
+reward_42side()
