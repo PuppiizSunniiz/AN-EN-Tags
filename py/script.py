@@ -957,4 +957,22 @@ def reward_42side():
             }
         missions_rewards[mission] = mission_reward
     script_result(missions_rewards, True)
-reward_42side()
+#reward_42side()
+
+def CN_topolect():
+    def topo_search(charword_json : dict, result : list) -> list:
+        charword = charword_json["charWords"]
+        for voiceline in charword:
+            if charword[voiceline]["charId"] in result:
+                continue
+            elif voiceline.find("CN_TOPOLECT") != -1:
+                result.append(charword[voiceline]["charId"])
+        return result
+    
+    result = topo_search(DB["json_charword"], [])
+    result = topo_search(DB["json_charwordEN"], result)
+    
+    text = [f'{op:<20}{DB["json_characterEN"][op]["name"]}' if op in DB["json_characterEN"] else f'{op:<20}{DB["json_character"][op]["appellation"]}' for op in result]
+    script_result(text, True)
+
+CN_topolect()

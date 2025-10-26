@@ -625,7 +625,7 @@
             "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+10%</>"
         },
         "power_rec_spd[006]": {
-            "buffName": "充能中",
+            "buffName": "Now Charging",
             "skillIcon": "bskill_pow_spd1",
             "desc": "进驻发电站时，无人机充能速度<@cc.vup>+10%</>",
             "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+10%</>"
@@ -667,7 +667,7 @@
             "description": "When this Operator is assigned to a Power Plant, if <@cc.kw>Logos</> is assigned to be the Trainer in the Training Room, increases the drone recovery rate by <@cc.vup>+5%</>."
         },
         "power_rec_spd_ext&faction[000]": {
-            "buffName": "维护中",
+            "buffName": "Now Under Maintenance",
             "skillIcon": "bskill_power_rec_spd_ext&faction",
             "desc": "进驻发电站时，如果其他<$cc.g.laterano><@cc.kw>拉特兰</></>干员进驻在发电站，则无人机充能速度<@cc.vup>+5%</>",
             "description": "When this Operator is assigned to a Power Plant, if another <$cc.g.laterano><@cc.kw>Laterano</></> Operator is assigned to a Power Plant, drone charging speed <@cc.vup>+5%</>"
@@ -931,7 +931,7 @@
             "description": "When this Operator is assigned to a Factory, capacity limit <@cc.vup>+10</> and Morale consumed per hour <@cc.vup>-0.25</>"
         },
         "manu_prod_limit&cost[012]": {
-            "buffName": "午休好去处",
+            "buffName": "Perfect Nap Spot",
             "skillIcon": "bskill_man_limit&cost2",
             "desc": "进驻制造站时，仓库容量上限<@cc.vup>+10</>，心情每小时消耗<@cc.vup>-0.25</>",
             "description": "When this Operator is assigned to a Factory, capacity limit <@cc.vup>+10</> and Morale consumed per hour <@cc.vup>-0.25</>"
@@ -1243,10 +1243,10 @@
             "description": "When this Operator is assigned to a Factory, <@cc.kw>Precious Metal</> productivity <@cc.vup>+15%</> when <@cc.kw>Warmy</> is assigned to the same Factory"
         },
         "manu_prod_spd_double[100]": {
-            "buffName": "盛餐的回报",
+            "buffName": "Fancy Feast's Reward",
             "skillIcon": "bskill_man_spd_double2",
             "desc": "进驻制造站时，当与<@cc.kw>酒神</>在同一个制造站时，<@cc.kw>作战记录</>类配方的生产力<@cc.vup>+30%</>",
-            "description": "When this Operator is assigned to a Factory, <@cc.kw>Battle Record</> productivity <@cc.vup>+30%</> when <@cc.kw>Tragodia</> is assigned to the same Factory"
+            "description": "When this Operator is assigned to a Factory, <@cc.kw>Battle Record</> formula productivity <@cc.vup>+30%</> when <@cc.kw>Tragodia</> is assigned to the same Factory"
         },
         "manu_formula_spd[200]": {
             "buffName": "Originium Work α",
@@ -1753,22 +1753,22 @@
             "description": "When this Operator is assigned to a Trading Post, for every <$cc.g.glasgow><@cc.kw>Glasgow Gang</></> Operator in the same Trading Post, order acquisition efficiency <@cc.vup>+20%</>; when in the same Trading Post as <@cc.kw>Siege</>, additional order acquisition efficiency <@cc.vup>+35%</>"
         },
         "trade_ord_spd_par[001]": {
-            "buffName": "同城加急单",
+            "buffName": "Same-City Express Order",
             "skillIcon": "bskill_tra_laterano1",
             "desc": "进驻贸易站时，同个贸易站中每有1名<$cc.g.laterano><@cc.kw>拉特兰</></>干员，当前贸易站订单获取效率<@cc.vup>+15%</>",
             "description": "When this Operator is assigned to a Trading Post, for every <$cc.g.laterano><@cc.kw>Laterano</></> Operator in the same Trading Post, order acquisition efficiency <@cc.vup>+15%</>"
         },
         "trade_ord_spd&multiPar[000]": {
-            "buffName": "订单分发·α",
+            "buffName": "Order Distribution α",
             "skillIcon": "bskill_tra_spd1",
             "desc": "进驻贸易站时，订单获取效率<@cc.vup>+20%</>",
             "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+20%</>"
         },
         "trade_ord_spd&multiPar[100]": {
-            "buffName": "相伴",
+            "buffName": "Amicus",
             "skillIcon": "bskill_tra_lemuen1",
             "desc": "进驻贸易站时，订单获取效率<@cc.vup>+20%</>；当与<@cc.kw><$cc.angel>能天使</></>在同一个贸易站时，订单获取效率额外<@cc.vup>+25%</>",
-            "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+20%</>; if <$cc.angel><@cc.kw>Exusiai</></> is assigned to the same Trading Post, additionally order acquisition efficiency <@cc.vup>+25%</>"
+            "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+20%</>; if <@cc.kw><$cc.angel>Exusiai</></> is assigned to the same Trading Post, additionally order acquisition efficiency <@cc.vup>+25%</>"
         },
         "trade_ord_par&per[000]": {
             "buffName": "Starting From Scratch α",
@@ -2557,7 +2557,7 @@
             "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Guard</> Operators' Specialization training speed <@cc.vup>+30%</>"
         },
         "train_spd&profession[1020]": {
-            "buffName": "近卫专精·α",
+            "buffName": "Guard Expert α",
             "skillIcon": "bskill_train_guard1",
             "desc": "进驻训练室协助位时，<@cc.kw>近卫</>干员的专精技能训练速度<@cc.vup>+30%</>",
             "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Guard</> Operators' Specialization training speed <@cc.vup>+30%</>"
@@ -3013,7 +3013,7 @@
             "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place)"
         },
         "dorm_rec_single_power[100]": {
-            "buffName": "天生乐天派",
+            "buffName": "Natural Optimist",
             "skillIcon": "bskill_dorm_single1",
             "desc": "进驻宿舍时，使该宿舍内除自身以外心情未满的某个干员每小时恢复<@cc.vup>+0.55</>（同种效果取最高）",
             "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place)"
@@ -3061,7 +3061,7 @@
             "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.7</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place)"
         },
         "dorm_rec_single[033]": {
-            "buffName": "恩典颂歌",
+            "buffName": "Canticle of Grace",
             "skillIcon": "bskill_dorm_single3",
             "desc": "进驻宿舍时，使该宿舍内除自身以外心情未满的某个干员每小时恢复<@cc.vup>+0.7</>（同种效果取最高）",
             "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.7</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place)"
@@ -3295,7 +3295,7 @@
             "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to one other Operators assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is a <$cc.g.sm><@cc.kw>Sami</></> Operator, further increases Morale restored by <@cc.vup>+0.45</>"
         },
         "dorm_rec_single_power[001]": {
-            "buffName": "圣城趣事通",
+            "buffName": "Funny Holy City Stories",
             "skillIcon": "bskill_dorm_single_laterano",
             "desc": "进驻宿舍时，使该宿舍内除自身以外心情未满的某个干员每小时恢复<@cc.vup>+0.55</>（同种效果取最高），如果目标是<$cc.g.laterano><@cc.kw>拉特兰</></>干员，则恢复效果额外<@cc.vup>+0.45</>",
             "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to all other Operators assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is a <$cc.g.laterano><@cc.kw>Laterano</></> Operator, further increases Morale restored by <@cc.vup>+0.45</>"
@@ -3673,7 +3673,7 @@
             "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by <@cc.vup>15%</>"
         },
         "meet_spd[011]": {
-            "buffName": "泡茶高手",
+            "buffName": "Tea Master",
             "skillIcon": "bskill_meet_spd2",
             "desc": "进驻会客室时，线索搜集速度提升<@cc.vup>15%</>",
             "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by <@cc.vup>15%</>"
@@ -3703,7 +3703,7 @@
             "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by <@cc.vup>20%</>"
         },
         "meet_spd[022]": {
-            "buffName": "社交达人",
+            "buffName": "Expert Socializer",
             "skillIcon": "bskill_meet_spd3",
             "desc": "进驻会客室时，线索搜集速度提升<@cc.vup>20%</>",
             "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by <@cc.vup>20%</>"
@@ -3769,7 +3769,7 @@
             "description": "When this Operator is assigned to the Reception room together with <@cc.kw>Suzuran</>, increases Clue search speed by an additional <@cc.vup>30%</>"
         },
         "meet_spd_ext&P[000]": {
-            "buffName": "不泯童心",
+            "buffName": "Eternal Youth",
             "skillIcon": "bskill_meet_spd_confes1",
             "desc": "进驻会客室时，如果<@cc.kw>菲亚梅塔</>进驻在宿舍，则线索搜集速度额外提升<@cc.vup>10%</>",
             "description": "When this Operator is assigned to the Reception Room, if <@cc.kw>Fiammetta</> is assigned to a Dormitory, Clue search speed increases by <@cc.vup>10%</>"
