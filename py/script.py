@@ -975,4 +975,12 @@ def CN_topolect():
     text = [f'{op:<20}{DB["json_characterEN"][op]["name"]}' if op in DB["json_characterEN"] else f'{op:<20}{DB["json_character"][op]["appellation"]}' for op in result]
     script_result(text, True)
 
-CN_topolect()
+#CN_topolect()
+
+def act4collection():
+    article = []
+    for mission in DB["json_activityEN"]["missionData"]:
+        if mission["missionGroup"] == "act4collection":
+            article.append(f'{", ".join([f'{DB["json_itemEN"]["items"][reward["id"]]["name"]}, {reward["count"]}' for reward in mission["rewards"]])}\t|\t{mission["description"]}')
+    script_result(article, True)
+act4collection()
