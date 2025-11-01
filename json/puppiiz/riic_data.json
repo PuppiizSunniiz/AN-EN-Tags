@@ -93,7 +93,7 @@
         "control_tra_limit&spd[000]": {
             "buffName": "Precise Calculations",
             "skillIcon": "bskill_ctrl_t_limit&spd",
-            "desc": "进驻控制中枢时，每个进驻在贸易站的<$cc.g.karlan><@cc.kw>喀兰贸易</></>干员，订单获取效率<@cc.vdown>-15%</>，订单上限<@cc.vup>+6</>",
+            "desc": "进驻控制中枢时，每个进驻在贸易站的<$cc.g.karlan><@cc.kw>谢拉格</></>干员，订单获取效率<@cc.vdown>-15%</>，订单上限<@cc.vup>+6</>",
             "description": "When this Operator is assigned to the Control Center, all <$cc.g.karlan><@cc.kw>Karlan Trade</></> Operators assigned to Trading Posts gain order acquisition efficiency <@cc.vdown>-15%</> and order limit <@cc.vup>+6</>"
         },
         "control_tra_limit&spd2[000]": {
@@ -101,6 +101,12 @@
             "skillIcon": "bskill_ctrl_t_limit&spd_tmoris",
             "desc": "进驻控制中枢时，每个进驻在贸易站的<$cc.g.siracusa><@cc.kw>叙拉古</></>干员，订单获取效率<@cc.vup>+5%</>",
             "description": "When this Operator is assigned to the Control Center, all <$cc.g.siracusa><@cc.kw>Siracusa</></> Operators assigned to Trading Posts gain order acquisition efficiency <@cc.vup>+5%</>"
+        },
+        "control_tra_limit&spd3[000]": {
+            "buffName": "商业版图",
+            "skillIcon": "bskill_ctrl_t_limit&spd3",
+            "desc": "进驻控制中枢时，每个存在<@cc.vup>3</>名<$cc.g.karlan><@cc.kw>谢拉格</></>干员的贸易站，订单获取效率<@cc.vup>+10%</>",
+            "description": "进驻控制中枢时，每个存在<@cc.vup>3</>名<$cc.g.karlan><@cc.kw>谢拉格</></>干员的贸易站，订单获取效率<@cc.vup>+10%</>"
         },
         "control_hire_spd[000]": {
             "buffName": "Infectivity",
@@ -279,7 +285,7 @@
         "control_mp_cost&faction[030]": {
             "buffName": "Hidden Mastermind",
             "skillIcon": "bskill_ctrl_karlan",
-            "desc": "进驻控制中枢时，控制中枢内每个<$cc.g.karlan><@cc.kw>喀兰贸易</></>干员可使控制中枢内所有干员的心情每小时恢复<@cc.vup>+0.05</>",
+            "desc": "进驻控制中枢时，控制中枢内每个<$cc.g.karlan><@cc.kw>谢拉格</></>干员可使控制中枢内所有干员的心情每小时恢复<@cc.vup>+0.05</>",
             "description": "When this Operator is assigned to the Control Center, increases Morale recovery per hour of all Operators in the Control Center by <@cc.vup>+0.05</> for each <$cc.g.karlan><@cc.kw>Karlan Trade</></> Operator assigned to the Control Center"
         },
         "control_mp_cost&faction[900]": {
@@ -636,6 +642,18 @@
             "desc": "进驻发电站时，无人机充能速度<@cc.vup>+10%</>",
             "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+10%</>"
         },
+        "power_rec_spd[008]": {
+            "buffName": "澎湃紊流",
+            "skillIcon": "bskill_pow_spd1",
+            "desc": "进驻发电站时，无人机充能速度<@cc.vup>+10%</>",
+            "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+10%</>"
+        },
+        "power_rec_spd[009]": {
+            "buffName": "澎湃紊流",
+            "skillIcon": "bskill_pow_spd2",
+            "desc": "进驻发电站时，无人机充能速度<@cc.vup>+15%</>",
+            "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+15%</>"
+        },
         "power_rec_drone[000]": {
             "buffName": "Line Patrol Frame",
             "skillIcon": "bskill_pow_drone",
@@ -815,6 +833,12 @@
             "skillIcon": "bskill_man_skill_change",
             "desc": "进驻制造站时，当前制造站内所有<$cc.sk.manu2><@cc.kw>莱茵科技类</></>、<$cc.sk.manu3><@cc.kw>红松骑士团类</></>技能也全都视作<@cc.kw>标准化类</>技能",
             "description": "When this Operator is assigned to a Factory, all <$cc.sk.manu2><@cc.kw>Rhine Lab</></> and <$cc.sk.manu3><@cc.kw>Pinus Sylvestris</></> skills in the Factory are considered <@cc.kw>Standardization</> skills"
+        },
+        "manu_skill_limit[000]": {
+            "buffName": "勘探背包",
+            "skillIcon": "bskill_man_limit1",
+            "desc": "进驻制造站时，当前制造站内每个<$cc.sk.manu2><@cc.kw>莱茵科技类</></>技能为自身<@cc.vup>+5</>的仓库上限容量",
+            "description": "进驻制造站时，当前制造站内每个<$cc.sk.manu2><@cc.kw>莱茵科技类</></>技能为自身<@cc.vup>+5</>的仓库上限容量"
         },
         "manu_prod_bd[000]": {
             "buffName": "Silent and Hardworking",
@@ -1007,6 +1031,18 @@
             "skillIcon": "bskill_man_spd&cost1",
             "desc": "进驻制造站时，生产力<@cc.vup>+20%</>，心情每小时消耗<@cc.vdown>+0.25</>",
             "description": "When this Operator is assigned to a Factory, Productivity <@cc.vup>+20%</> and Morale consumed per hour <@cc.vdown>+0.25</>"
+        },
+        "manu_prod_spd&limit&cost[101]": {
+            "buffName": "虔信",
+            "skillIcon": "bskill_man_spd&cost2",
+            "desc": "进驻制造站时，生产力<@cc.vup>+20%</>，心情每小时消耗<@cc.vdown>+0.25</>",
+            "description": "When this Operator is assigned to a Factory, Productivity <@cc.vup>+20%</> and Morale consumed per hour <@cc.vdown>+0.25</>"
+        },
+        "manu_prod_spd&limit&cost[110]": {
+            "buffName": "独当一面",
+            "skillIcon": "bskill_man_spd&cost3",
+            "desc": "进驻制造站时，生产力<@cc.vup>+30%</>，心情每小时消耗<@cc.vdown>+0.25</>",
+            "description": "进驻制造站时，生产力<@cc.vup>+30%</>，心情每小时消耗<@cc.vdown>+0.25</>"
         },
         "manu_prod_spd&limit&cost[200]": {
             "buffName": "Proficient Artistry",
@@ -2790,6 +2826,18 @@
             "desc": "进驻训练室协助位时，<@cc.kw>医疗</>干员的专精技能训练速度<@cc.vup>+30%</>",
             "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Medic</> Operators' Specialization training speed <@cc.vup>+30%</>"
         },
+        "train_spd&profession2[321]": {
+            "buffName": "近卫专精·α",
+            "skillIcon": "bskill_train_guard1",
+            "desc": "进驻训练室协助位时，<@cc.kw>近卫</>干员的专精技能训练速度<@cc.vup>+30%</>，如果本次训练专精技能至<@cc.vup>0</>级，则训练速度额外<@cc.vup>0%</>",
+            "description": "进驻训练室协助位时，<@cc.kw>近卫</>干员的专精技能训练速度<@cc.vup>+30%</>，如果本次训练专精技能至<@cc.vup>0</>级，则训练速度额外<@cc.vup>0%</>"
+        },
+        "train_spd&profession2[322]": {
+            "buffName": "勇气传承",
+            "skillIcon": "bskill_train3_guard1",
+            "desc": "进驻训练室协助位时，<@cc.kw>近卫</>干员的专精技能训练速度<@cc.vup>+30%</>，如果本次训练专精技能至<@cc.vup>3</>级，则训练速度额外<@cc.vup>+45%</>",
+            "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Guard</> Operators' Specialization training speed <@cc.vup>+30%</>; if training this skill to Specialization Level <@cc.vup>3</>, training speed will be further increased by <@cc.vup>+45%</>"
+        },
         "train_spd&profession3[181]": {
             "buffName": "Combat Techniques: Wandering Medic",
             "skillIcon": "bskill_train_wandermedic",
@@ -2843,6 +2891,18 @@
             "skillIcon": "bskill_train1_caster1",
             "desc": "进驻训练室协助位时，<@cc.kw>术师</>干员的专精技能训练速度<@cc.vup>+30%</>，如果本次训练专精技能至<@cc.vup>1</>级，则训练速度额外<@cc.vup>+45%</>",
             "description": "When this Operator is assigned to be the Trainer in the Training Room, increases the Specialization training speed of <@cc.kw>Caster</> Operators by <@cc.vup>+30%</>, and further increases this speed by <@cc.vup>+45%</> if training the skill to Specialization Level <@cc.vup>1</>"
+        },
+        "train_spd&profession2[111]": {
+            "buffName": "先锋专精·α",
+            "skillIcon": "bskill_train_spd&profession2",
+            "desc": "进驻训练室协助位时，<@cc.kw>先锋</>干员的专精技能训练速度<@cc.vup>+30%</>，如果本次训练专精技能至<@cc.vup>3</>级，则训练速度额外<@cc.vup>0%</>",
+            "description": "When this Operator is assigned to be the Trainer in the Training Room, increases the Specialization training speed of <@cc.kw>Vanguard</> Operators by <@cc.vup>+30%</>, and further increases this speed by <@cc.vup>0%</> if training the skill to Specialization Level <@cc.vup>3</>"
+        },
+        "train_spd&profession2[112]": {
+            "buffName": "先驱者共识",
+            "skillIcon": "bskill_train_spd&profession2",
+            "desc": "进驻训练室协助位时，<@cc.kw>先锋</>干员的专精技能训练速度<@cc.vup>+30%</>，如果本次训练专精技能至<@cc.vup>3</>级，则训练速度额外<@cc.vup>+50%</>",
+            "description": "When this Operator is assigned to be the Trainer in the Training Room, increases the Specialization training speed of <@cc.kw>Vanguard</> Operators by <@cc.vup>+30%</>, and further increases this speed by <@cc.vup>+50%</> if training the skill to Specialization Level <@cc.vup>3</>"
         },
         "train_spd&profession2[180]": {
             "buffName": "Trap Focus",
@@ -2996,6 +3056,12 @@
         },
         "dorm_rec_oneself2[000]": {
             "buffName": "Searching for Solitude",
+            "skillIcon": "bskill_dorm_one",
+            "desc": "进驻宿舍时，自身心情每小时恢复<@cc.vup>+0.7</>；如果该宿舍内有其他干员，则每人额外为自身心情每小时恢复<@cc.vup>+0.05</>",
+            "description": "When this Operator is assigned to a Dormitory, increases own Morale restored per hour by <@cc.vup>+0.7</>; If there are other Operators in that Dormitory, further increases own Morale restored per hour by <@cc.vup>+0.05</> for each additional Operator."
+        },
+        "dorm_rec_oneself2[001]": {
+            "buffName": "赋格融汇",
             "skillIcon": "bskill_dorm_one",
             "desc": "进驻宿舍时，自身心情每小时恢复<@cc.vup>+0.7</>；如果该宿舍内有其他干员，则每人额外为自身心情每小时恢复<@cc.vup>+0.05</>",
             "description": "When this Operator is assigned to a Dormitory, increases own Morale restored per hour by <@cc.vup>+0.7</>; If there are other Operators in that Dormitory, further increases own Morale restored per hour by <@cc.vup>+0.05</> for each additional Operator."
@@ -3551,6 +3617,18 @@
             "skillIcon": "bskill_hire_spd&extra1",
             "desc": "进驻人力办公室时，每个招募位（不包含初始招募位）<@cc.vup>+10%</>人脉资源的联络速度",
             "description": "When this Operator is assigned to the HR Office, <@cc.vup>+10%</> HR contacting speed for every Recruit slot other than the initial slot"
+        },
+        "hire_spd_cost&char[000]": {
+            "buffName": "圣女声望",
+            "skillIcon": "bskill_hire_spd&cost7",
+            "desc": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+20%</>，心情每小时消耗<@cc.vup>-0.25</>",
+            "description": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+20%</>, Morale consumed per hour <@cc.vup>-0.25</>"
+        },
+        "hire_spd_cost&char[001]": {
+            "buffName": "雪境归心",
+            "skillIcon": "bskill_hire_spd&char1",
+            "desc": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+35%</>，心情每小时消耗<@cc.vup>-0.25</>，如果<@cc.kw>凛御银灰</>进驻在<@cc.kw>控制中枢</>，则人脉资源的联络速度额外<@cc.vup>+10%</>",
+            "description": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+35%</>，心情每小时消耗<@cc.vup>-0.25</>，如果<@cc.kw>凛御银灰</>进驻在<@cc.kw>控制中枢</>，则人脉资源的联络速度额外<@cc.vup>+10%</>"
         },
         "hire_spd&clue[010]": {
             "buffName": "Catastrophe Messenger α",
@@ -14415,6 +14493,173 @@
                 },
                 {
                     "buffData": []
+                }
+            ]
+        },
+        "char_394_hadiya": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "train_spd&profession2[321]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "train_spd&profession2[322]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": []
+                }
+            ]
+        },
+        "char_1046_sbell2": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "hire_spd_cost&char[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "hire_spd_cost&char[001]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": []
+                }
+            ]
+        },
+        "char_1047_halo2": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "manu_skill_limit[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "manu_prod_spd[011]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4051_akkord": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "power_rec_spd[008]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "power_rec_spd[009]",
+                            "cond": {
+                                "phase": "PHASE_1",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "dorm_rec_oneself2[001]",
+                            "cond": {
+                                "phase": "PHASE_1",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4211_snhunt": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "manu_prod_spd&limit&cost[101]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "manu_prod_spd&limit&cost[110]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": []
+                }
+            ]
+        },
+        "char_1045_svash2": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_tra_limit&spd3[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "train_spd&profession2[111]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "train_spd&profession2[112]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
                 }
             ]
         }

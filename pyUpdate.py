@@ -1,5 +1,6 @@
 import re
 import json
+from types import NoneType
 from pyAudio import audio_json
 from pyRIIC import riic_tl_json
 from pyfunction import URSUS, char_ready, name_check, json_load, printr, R, G, B, Y, RE
@@ -70,7 +71,7 @@ json_skillTL        =   json_load("json/ace/tl-skills.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS : list[str] = [] # "", 
+NEW_CHARS : list[str] = ["SilverAsh the Reignfrost", "Pramanix the Prerita", "Astgenne the Lightchaser", "Snow Hunter", "Hadiya", "Akkord", ] # "", 
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS : list[str] = [] # "",
@@ -205,6 +206,7 @@ def update_char_TraitSkillTalent(new_char_name : str) :
     if json_char[new_char_id]["displayTokenDict"] :
         for new_token_key in json_char[new_char_id]["displayTokenDict"]:
         #### Token trait
+            if new_token_key not in json_char: continue
             new_trait[json_char[new_token_key]["description"]] = update_new_trait("token", new_char_id, new_char_name, new_token_key)
         #### Token Skill
             for skill in json_char[new_token_key]["skills"]:
@@ -216,7 +218,10 @@ def update_char_TraitSkillTalent(new_char_name : str) :
                                         }
 
 def parentheses(desc : str) -> str :
-    return desc.replace("（", "(").replace("）", ")").replace("【", "[").replace("】", "]").replace("；","; ").replace(" ", " ").replace("、", ", ")
+    if isinstance(desc, NoneType):
+        return None
+    else:
+        return desc.replace("（", "(").replace("）", ")").replace("【", "[").replace("】", "]").replace("；","; ").replace(" ", " ").replace("、", ", ")
 
 #########################################################################################################
 # Chars
@@ -604,6 +609,25 @@ for char_id in json_char.keys():
 
 with open("json/puppiiz/char_names.json", "w", encoding = "utf-8") as filepath :
     json.dump(char_names, filepath, indent = 4, ensure_ascii = False)
+
+#########################################################################################################
+# nation_track
+#########################################################################################################
+nation_track = {}
+
+for char_id in json_char.keys():
+    if not [x for x in json_char[char_id]["mainPower"].values() if x]:
+        continue
+    else:
+        nation_track[char_id] = {
+                                "main"      : json_char[char_id]["mainPower"],
+                                "hidden"    : json_char[char_id]["subPower"],
+                            }
+
+nation_track = {k:nation_track[k] for k in sorted(nation_track.keys())}
+
+with open("json/puppiiz/nation_track.json", "w", encoding = "utf-8") as filepath :
+    json.dump(nation_track, filepath, indent = 4, ensure_ascii = False)
 
 #########################################################################################################
 # The Rest

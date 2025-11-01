@@ -368,7 +368,7 @@
         "cc.g.karlan": {
             "termId": "cc.g.karlan",
             "termName": "Karlan Trade",
-            "description": "Includes the following Operators:\nSilverAsh, Gnosis, Pramanix, Cliffheart, Matterhorn, Courier, Kjera, Aurora, Degenbrecher"
+            "description": "Includes the following Operators:\nSilverAsh, Gnosis, Pramanix, Cliffheart, Matterhorn, Courier, Kjera, Aurora, Degenbrecher, Snow Hunter"
         },
         "cc.g.sui": {
             "termId": "cc.g.sui",
@@ -602,7 +602,7 @@
         },
         "ba.attract": {
             "termId": "ba.attract",
-            "termName": "Attract",
+            "termName": "Lure",
             "description": "Cannot be blocked and move to target position."
         },
         "cc.g.elite": {
@@ -639,6 +639,11 @@
             "termId": "cc.bd_mujica_2",
             "termName": "演技的怪物",
             "description": "Operators with this skill\nWakaba Mutsumi"
+        },
+        "ba.alter": {
+            "termId": "ba.alter",
+            "termName": "装备应变",
+            "description": "选中在场干员后，可以通过一定条件激活的额外效果"
         }
     }
 }
