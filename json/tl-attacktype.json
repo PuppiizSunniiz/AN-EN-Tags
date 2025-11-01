@@ -537,7 +537,7 @@
             "color": "magic"
         },
         "攻击时需要消耗子弹且攻击力提升至<@ba.kw>120%</>，不攻击时会缓慢地装填子弹（最多8发）": {
-            "en": "Attacks consume Ammo to increase ATK to <@ba.kw>120%</>; While not attacking, Ammo will be slowly reloaded (max capacity 8).",
+            "en": "Attacks consume Ammo to increase ATK to <@ba.kw>120%</>; While not attacking, Ammo will be slowly reloaded (max capacity {value}).",
             "color": "physical"
         },
         "攻击造成<@ba.kw>法术伤害</>，技能开启后改为治疗友方单位（治疗量相当于<@ba.kw>{heal_scale:0%}</>攻击力）": {
@@ -1020,6 +1020,48 @@
             "note": "new mods so-b",
             "name": "char_4195_radian",
             "code": "uniequip_003_radian"
+        },
+        "凛御银灰在场时添加至待部署区。部署费用随凛御银灰的技能而变化": {
+            "en": "Added to Deployment waiting zone while SilverAsh the Reignfrost is on the field. Deployment cost varies depending on SilverAsh the Reignfrost's current skill",
+            "color": "common",
+            "note": "SilverAsh the Reignfrost 's Token (Eye of the Snowstorm)",
+            "name": "Eye of the Snowstorm",
+            "code": "token_10057_svash2_eagle3"
+        },
+        "可消耗部署费用来强化作战能力": {
+            "en": "Can consumes DP to enhance combat capabilities",
+            "color": "extra",
+            "note": "new Ops \"mercenary\" Archetype trait",
+            "name": "Hadiya",
+            "code": "char_394_hadiya"
+        },
+        "在<@ba.kw>集成战略</>中，无视目标<@ba.kw>10</>点法术抗性，每个敌人首次进入目标点所在地块时，恢复自身30%的技力": {
+            "en": "In <@ba.kw>Integrated Strategies</>, ignores 10 RES; When each enemy reaches Objective Point for the first time, recover 30% SP",
+            "color": "magic",
+            "note": "new mods isw-a",
+            "name": "char_4027_heyak",
+            "code": "uniequip_004_heyak"
+        },
+        "在<@ba.kw>集成战略</>中，自身在场时，处于<$ba.cold>寒冷</>、<$ba.frozen>冻结</>的敌人每0.5秒受到灵知攻击力50%的法术伤害": {
+            "en": "In <@ba.kw>Integrated Strategies</>, while on the field, enemies under <$ba.cold>cold</> or <$ba.frozen>frozen</> effects, receive 50% ATK as Arts damage every 0.5 seconds",
+            "color": "magic",
+            "note": "new mods isw-a",
+            "name": "char_206_gnosis",
+            "code": "uniequip_004_gnosis"
+        },
+        "自身及自身召唤物阻挡的敌人受到<@ba.kw>10%</>的<$ba.fragile>脆弱</>效果": {
+            "en": "Enemies blocked by this unit and its summon units receive <@ba.kw>10%</> <$ba.fragile>Fragile</>",
+            "color": "extra",
+            "note": "new mods aft-y",
+            "name": "char_1019_siege2",
+            "code": "uniequip_003_siege2"
+        },
+        "技能开启时普通攻击会造成法术伤害，且攻击和受到攻击时对目标额外造成10％攻击力的法术伤害": {
+            "en": "Normal attacks deal Arts damage and deals 10% ATK as Arts damage when attacking or attacked to targets while the skill is active",
+            "color": "magic",
+            "note": "new mods ast-x",
+            "name": "char_1044_hsgma2",
+            "code": "uniequip_002_hsgma2"
         }
     },
     "parts": [

@@ -1078,5 +1078,341 @@
                 "upgradeDescription": "Can use up to 5 summons (max 3 deployed at once). Summons’ effect changes based upon Skill; In <@ba.kw>[Sui's Garden of Grotesqueries]</>, Raidian retrieves summon in the 4 adjacent tiles, recover 25% HP and deal addition 30% ATK as Arts damage when attacking (stack up to 4 times)"
             }
         ]
+    ],
+    "uniequip_002_sbell2": [
+        [
+            {
+                "name": "无垠的雪景",
+                "CN": "攻击范围内的地面每隔5.5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力75%的法术伤害，每层积雪使经过的所有敌人移动速度下降12%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "mod": "攻击范围内的地面每隔5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力90%的法术伤害，每层积雪使经过的所有敌人移动速度下降12%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "upgradeDescription": "Snow periodically form on the ground tiles in Attack Range every 5 seconds, immediately deals 90% ATK as Arts damage to enemies passing through. Each layer of Snow reduce movement speed by 12%, up to 5 layers per tile (Snow disappears when the first enemy leaves the area)."
+            },
+            {
+                "name": "无垠的雪景",
+                "CN": "攻击范围内的地面每隔5.5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力80%<@ba.talpu>(+5%)</>的法术伤害，每层积雪使经过的所有敌人移动速度下降12%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "mod": "攻击范围内的地面每隔5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力95%<@ba.talpu>(+5%)</>的法术伤害，每层积雪使经过的所有敌人移动速度下降12%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "upgradeDescription": "Snow periodically form on the ground tiles in Attack Range every 5 seconds, immediately deals 95%<@ba.talpu>(+5%)</> ATK as Arts damage to enemies passing through. Each layer of Snow reduce movement speed by 12%, up to 5 layers per tile (Snow disappears when the first enemy leaves the area)."
+            }
+        ],
+        [
+            {
+                "name": "无垠的雪景",
+                "CN": "攻击范围内的地面每隔5.5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力75%的法术伤害，每层积雪使经过的所有敌人移动速度下降12%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "mod": "攻击范围内的地面每隔5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力100%的法术伤害，每层积雪使经过的所有敌人移动速度下降12%，最多叠加5层(首个敌人离开该地块时积雪消失)，部署后立刻使攻击范围内的地面产生一层积雪",
+                "upgradeDescription": "Snow periodically form on the ground tiles in Attack Range every 5 seconds, immediately deals 100% ATK as Arts damage to enemies passing through. Each layer of Snow reduce movement speed by 12%, up to 5 layers per tile (Snow disappears when the first enemy leaves the area). When deployed, immediately form 1 Snow layer on all ground tiles in Attack Range"
+            },
+            {
+                "name": "无垠的雪景",
+                "CN": "攻击范围内的地面每隔5.5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力80%<@ba.talpu>(+5%)</>的法术伤害，每层积雪使经过的所有敌人移动速度下降12%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "mod": "攻击范围内的地面每隔5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力105%<@ba.talpu>(+5%)</>的法术伤害，每层积雪使经过的所有敌人移动速度下降12%，最多叠加5层(首个敌人离开该地块时积雪消失)，部署后立刻使攻击范围内的地面产生一层积雪",
+                "upgradeDescription": "Snow periodically form on the ground tiles in Attack Range every 5 seconds, immediately deals 105%<@ba.talpu>(+5%)</> ATK as Arts damage to enemies passing through. Each layer of Snow reduce movement speed by 12%, up to 5 layers per tile (Snow disappears when the first enemy leaves the area). When deployed, immediately form 1 Snow layer on all ground tiles in Attack Range"
+            }
+        ]
+    ],
+    "uniequip_004_heyak": [
+        [
+            {
+                "name": "Inherited End",
+                "EN": "When attacking aerial targets, increases ATK to 120%, and silences targets for 3 seconds",
+                "CN": "攻击空中目标时攻击力提升至120%，并使其特殊能力失效3秒",
+                "mod": "攻击空中敌人时攻击力提升至140%，并使其特殊能力失效4秒; 在<@ba.kw>集成战略</>中，首次部署获得1点临时目标生命值; 每次部署后，首次有敌人进入目标点所在地块时，场上所有敌人<$ba.levitate>浮空</>15秒",
+                "upgradeDescription": "When attacking aerial targets, increases ATK to 140%, and silences targets for 4 seconds; In <@ba.kw>Integrated Strategies</>, the first deployment grants 1 temporary Life Point. After each deployment, when the first enemy reaches Objective Point, <$ba.levitate>levitates</> all enemies for 15 seconds"
+            },
+            {
+                "name": "Inherited End",
+                "EN": "When attacking aerial targets, increases ATK to 123% <@ba.talpu>(+3%)</>, and silences targets for 3 seconds",
+                "CN": "攻击空中目标时攻击力提升至123%<@ba.talpu>(+3%)</>，并使其特殊能力失效3秒",
+                "mod": "攻击空中敌人时攻击力提升至143%<@ba.talpu>(+3%)</>，并使其特殊能力失效4秒; 在<@ba.kw>集成战略</>中，首次部署获得1点临时目标生命值; 每次部署后，首次有敌人进入目标点所在地块时，场上所有敌人<$ba.levitate>浮空</>15秒",
+                "upgradeDescription": "When attacking aerial targets, increases ATK to 143%<@ba.talpu>(+3%)</>, and silences targets for 4 seconds; In <@ba.kw>Integrated Strategies</>, the first deployment grants 1 temporary Life Point. After each deployment, when the first enemy reaches Objective Point, <$ba.levitate>levitates</> all enemies for 15 seconds"
+            }
+        ],
+        [
+            {
+                "name": "Inherited End",
+                "EN": "When attacking aerial targets, increases ATK to 120%, and silences targets for 3 seconds",
+                "CN": "攻击空中目标时攻击力提升至120%，并使其特殊能力失效3秒",
+                "mod": "攻击空中敌人时攻击力提升至145%，并使其特殊能力失效5秒; 在<@ba.kw>集成战略</>中，首次部署获得1点临时目标生命值; 每次部署后，首次有敌人进入目标点所在地块时，场上所有敌人<$ba.levitate>浮空</>15秒; 自身技能会对敌人及其周围的目标同时造成浮空效果和伤害效果",
+                "upgradeDescription": "When attacking aerial targets, increases ATK to 145%, and silences targets for 5 seconds; In <@ba.kw>Integrated Strategies</>, the first deployment grants 1 temporary Life Point. After each deployment, when the first enemy reaches Objective Point, <$ba.levitate>levitates</> all enemies for 15 seconds. Ho'olheyak 's skill simultaneously deals damage and <$ba.levitate>levitates</> the target and enemies surrounding it"
+            },
+            {
+                "name": "Inherited End",
+                "EN": "When attacking aerial targets, increases ATK to 123% <@ba.talpu>(+3%)</>, and silences targets for 3 seconds",
+                "CN": "攻击空中目标时攻击力提升至123%<@ba.talpu>(+3%)</>，并使其特殊能力失效3秒",
+                "mod": "攻击空中目标时攻击力提升至148%<@ba.talpu>(+3%)</>，并使其特殊能力失效5秒; 在<@ba.kw>集成战略</>中，首次部署获得1点临时目标生命值; 每次部署后，首次有敌人进入目标点所在地块时，场上所有敌人<$ba.levitate>浮空</>15秒; 自身技能会对敌人及其周围的目标同时造成浮空效果和伤害效果",
+                "upgradeDescription": "When attacking aerial targets, increases ATK to 148%<@ba.talpu>(+3%)</>, and silences targets for 5 seconds; In <@ba.kw>Integrated Strategies</>, the first deployment grants 1 temporary Life Point. After each deployment, when the first enemy reaches Objective Point, <$ba.levitate>levitates</> all enemies for 15  seconds. Ho'olheyak 's skill simultaneously deals damage and <$ba.levitate>levitates</> the target and enemies surrounding it"
+            }
+        ]
+    ],
+    "uniequip_004_gnosis": [
+        [
+            {
+                "name": "Rigid Ice",
+                "EN": "Attacks inflict <$ba.cold>Cold</> for 1 second; Apply 25% <$ba.fragile>Fragile</> effect to <$ba.cold>Cold</> enemies within range. <$ba.frozen>Frozen</> enemies within range receive double the <$ba.fragile>Fragile</> effect",
+                "CN": "攻击造成1秒<$ba.cold>寒冷</>; 范围内<$ba.cold>寒冷</>的敌人受到25%的<$ba.fragile>脆弱</>，范围内<$ba.frozen>冻结</>的敌人<$ba.fragile>脆弱</>效果提升至2倍",
+                "mod": "攻击造成1秒<$ba.cold>寒冷</>; 在<@ba.kw>集成战略</>中，在场时全场<$ba.cold>寒冷</>的敌人受到25%的<$ba.fragile>脆弱</>，<$ba.frozen>冻结</>的敌人<$ba.fragile>脆弱</>效果提升至2倍; 其他[谢拉格]干员每次开启技能后，对攻击范围内的敌人造成3秒的<$ba.cold>寒冷</>",
+                "upgradeDescription": "Attacks inflict <$ba.cold>Cold</> for 1 second; In <@ba.kw>Integrated Strategies</>, apply 25% <$ba.fragile>Fragile</> effect to <$ba.cold>Cold</> enemies on the field. <$ba.frozen>Frozen</> enemies within range receive double the <$ba.fragile>Fragile</> effect. Other [Kjerag] operators inflict <$ba.cold>Cold</> to all enemies in Attack Range for 3 seconds when activate their skill"
+            },
+            {
+                "name": "Rigid Ice",
+                "EN": "Attacks inflict <$ba.cold>Cold</> for 1 second; Apply 27% <@ba.talpu>(+2%)</> <$ba.fragile>Fragile</> effect to <$ba.cold>Cold</> enemies within range. <$ba.frozen>Frozen</> enemies within range receive double the <$ba.fragile>Fragile</> effect",
+                "CN": "攻击造成1秒<$ba.cold>寒冷</>; 范围内<$ba.cold>寒冷</>的敌人受到27%<@ba.talpu>(+2%)</>的<$ba.fragile>脆弱</>，范围内<$ba.frozen>冻结</>的敌人<$ba.fragile>脆弱</>效果提升至2倍",
+                "mod": "攻击造成1秒<$ba.cold>寒冷</>; 在<@ba.kw>集成战略</>中，在场时全场<$ba.cold>寒冷</>的敌人受到27%<@ba.talpu>(+2%)</>的<$ba.fragile>脆弱</>，<$ba.frozen>冻结</>的敌人<$ba.fragile>脆弱</>效果提升至2倍; 其他[谢拉格]干员每次开启技能后，对攻击范围内的敌人造成3秒的<$ba.cold>寒冷</>",
+                "upgradeDescription": "Attacks inflict <$ba.cold>Cold</> for 1 second; In <@ba.kw>Integrated Strategies</>, apply 27%<@ba.talpu>(+2%)</> <$ba.fragile>Fragile</> effect to <$ba.cold>Cold</> enemies on the field. <$ba.frozen>Frozen</> enemies within range receive double the <$ba.fragile>Fragile</> effect. Other [Kjerag] operators inflict <$ba.cold>Cold</> to all enemies in Attack Range for 3 seconds when activate their skill"
+            }
+        ],
+        [
+            {
+                "name": "Rigid Ice",
+                "EN": "Attacks inflict <$ba.cold>Cold</> for 1 second; Apply 25% <$ba.fragile>Fragile</> effect to <$ba.cold>Cold</> enemies within range. <$ba.frozen>Frozen</> enemies within range receive double the <$ba.fragile>Fragile</> effect",
+                "CN": "攻击造成1秒<$ba.cold>寒冷</>; 范围内<$ba.cold>寒冷</>的敌人受到25%的<$ba.fragile>脆弱</>，范围内<$ba.frozen>冻结</>的敌人<$ba.fragile>脆弱</>效果提升至2倍",
+                "mod": "攻击造成1秒<$ba.cold>寒冷</>; 在<@ba.kw>集成战略</>中，在场时全场<$ba.cold>寒冷</>的敌人受到30%的<$ba.fragile>脆弱</>，<$ba.frozen>冻结</>的敌人<$ba.fragile>脆弱</>效果提升至2倍，<$ba.cold>寒冷</>或<$ba.frozen>冻结</>状态下的敌人每秒受到的<$ba.fragile>脆弱</>提升5%，最高提升至80%; 其他[谢拉格]干员每次开启技能后，对攻击范围内的敌人造成4秒的<$ba.cold>寒冷</>",
+                "upgradeDescription": "Attacks inflict <$ba.cold>Cold</> for 1 second; In <@ba.kw>Integrated Strategies</>, apply 30% <$ba.fragile>Fragile</> effect to <$ba.cold>Cold</> enemies on the field. <$ba.frozen>Frozen</> enemies within range receive double the <$ba.fragile>Fragile</> effect. While enemies under <$ba.cold>Cold</> or <$ba.frozen>Frozen</> effects, increase their <$ba.fragile>Fragile</> effect by 5% every second, up to 80%. Other [Kjerag] operators inflict <$ba.cold>Cold</> to all enemies in Attack Range for 4 seconds when activate their skill"
+            },
+            {
+                "name": "Rigid Ice",
+                "EN": "Attacks inflict <$ba.cold>Cold</> for 1 second; Apply 27% <@ba.talpu>(+2%)</> <$ba.fragile>Fragile</> effect to <$ba.cold>Cold</> enemies within range. <$ba.frozen>Frozen</> enemies within range receive double the <$ba.fragile>Fragile</> effect",
+                "CN": "攻击造成1秒<$ba.cold>寒冷</>; 范围内<$ba.cold>寒冷</>的敌人受到27%<@ba.talpu>(+2%)</>的<$ba.fragile>脆弱</>，范围内<$ba.frozen>冻结</>的敌人<$ba.fragile>脆弱</>效果提升至2倍",
+                "mod": "攻击造成1秒<$ba.cold>寒冷</>; 在<@ba.kw>集成战略</>中，在场时全场<$ba.cold>寒冷</>的敌人受到32%的<$ba.fragile>脆弱</>，<$ba.frozen>冻结</>的敌人<$ba.fragile>脆弱</>效果提升至2倍，<$ba.cold>寒冷</>或<$ba.frozen>冻结</>状态下的敌人每秒受到的<$ba.fragile>脆弱</>提升5%，最高提升至82%; 其他[谢拉格]干员每次开启技能后，对攻击范围内的敌人造成4秒的<$ba.cold>寒冷</>",
+                "upgradeDescription": "Attacks inflict <$ba.cold>Cold</> for 1 second; In <@ba.kw>Integrated Strategies</>, apply 32%<@ba.talpu>(+2%)</> <$ba.fragile>Fragile</> effect to <$ba.cold>Cold</> enemies on the field. <$ba.frozen>Frozen</> enemies within range receive double the <$ba.fragile>Fragile</> effect. While enemies under <$ba.cold>Cold</> or <$ba.frozen>Frozen</> effects, increase their <$ba.fragile>Fragile</> effect by 5% every second, up to 82%. Other [Kjerag] operators inflict <$ba.cold>Cold</> to all enemies in Attack Range for 4 seconds when activate their skill"
+            }
+        ]
+    ],
+    "uniequip_002_halo2": [
+        [
+            {
+                "name": "数据建模",
+                "CN": "对敌人造成<$ba.sluggish>停顿</>效果时，自身的攻击速度+1，最多叠加18次",
+                "mod": "对敌人造成<$ba.sluggish>停顿</>效果时，使自身的攻击速度+1，最多叠加23次",
+                "upgradeDescription": "When inflicts <$ba.sluggish>Slow</> on an enemy, ASPD+1, up to 23 times"
+            }
+        ],
+        [
+            {
+                "name": "数据建模",
+                "CN": "对敌人造成<$ba.sluggish>停顿</>效果时，自身的攻击速度+1，最多叠加18次",
+                "mod": "对敌人造成<$ba.sluggish>停顿</>效果时，使自身的攻击速度+1，最多叠加25次; 叠满后使自身攻击力+12%",
+                "upgradeDescription": "When inflicts <$ba.sluggish>Slow</> on an enemy, ASPD+1, up to 25 times; While at max stacks, ATK+12%"
+            }
+        ]
+    ],
+    "uniequip_002_akkord": [
+        [
+            {
+                "name": "律脉同构",
+                "CN": "攻击范围内至少有1名其他友方干员时，攻击力+15%",
+                "mod": "攻击范围内至少有1名其他友方干员时，攻击力+17%",
+                "upgradeDescription": "When there is at least 1 other operator in Attack Range, ATK+17%"
+            },
+            {
+                "name": "律脉同构",
+                "CN": "攻击范围内至少有1名其他友方干员时，攻击力+17<@ba.talpu>(+2%)</>",
+                "mod": "攻击范围内至少有1名其他友方干员时，攻击力+19<@ba.talpu>(+2%)</>",
+                "upgradeDescription": "When there is at least 1 other operator in Attack Range, ATK+19<@ba.talpu>(+2%)</>"
+            }
+        ],
+        [
+            {
+                "name": "律脉同构",
+                "CN": "攻击范围内至少有1名其他友方干员时，攻击力+15%",
+                "mod": "攻击范围内至少有1名其他友方干员时，攻击力+20%",
+                "upgradeDescription": "When there is at least 1 other operator in Attack Range, ATK+20%"
+            },
+            {
+                "name": "律脉同构",
+                "CN": "攻击范围内至少有1名其他友方干员时，攻击力+17<@ba.talpu>(+2%)</>",
+                "mod": "攻击范围内至少有1名其他友方干员时，攻击力+22<@ba.talpu>(+2%)</>",
+                "upgradeDescription": "When there is at least 1 other operator in Attack Range, ATK+22<@ba.talpu>(+2%)</>"
+            }
+        ]
+    ],
+    "uniequip_003_siege2": [
+        [
+            {
+                "name": "Unsheathed Sword",
+                "EN": "When damaging an enemy for the first time, inflicts <$ba.tremble>Frighten</> for 4s",
+                "CN": "对每个敌人首次造成伤害时，使其<$ba.tremble>战栗</>4秒",
+                "mod": "对每个敌人首次造成伤害时，使其<$ba.tremble>战栗</>4秒，对精英及领袖敌人改为使其<$ba.tremble>战栗</>8秒。维娜·维多利亚及其召唤物对战栗的目标造成伤害提升10％",
+                "upgradeDescription": "When damaging an enemy for the first time, inflicts <$ba.tremble>Frighten</> for 4s. For Elite and Leader enemies, this effect inflicts <$ba.tremble>Frighten</> for 8s instead; Vina Victoria and her summons deal 10% increased damage against <$ba.tremble>Frighten</> enemies"
+            },
+            {
+                "name": "Unsheathed Sword",
+                "EN": "When damaging an enemy for the first time, inflicts <$ba.tremble>Frighten</> for 5s <@ba.talpu>(+1)</>",
+                "CN": "对每个敌人首次造成伤害时，使其<$ba.tremble>战栗</>5<@ba.talpu>(+1)</>秒",
+                "mod": "对每个敌人首次造成伤害时，使其<$ba.tremble>战栗</>5<@ba.talpu>(+1)</>秒，对精英及领袖敌人改为使其<$ba.tremble>战栗</>8秒。维娜·维多利亚及其召唤物对战栗的目标造成伤害提升10％",
+                "upgradeDescription": "When damaging an enemy for the first time, inflicts <$ba.tremble>Frighten</> for 5<@ba.talpu>(+1)</>s. For Elite and Leader enemies, this effect inflicts <$ba.tremble>Frighten</> for 8s instead; Vina Victoria and her summons deal 10% increased damage against <$ba.tremble>Frighten</> enemies"
+            }
+        ],
+        [
+            {
+                "name": "Unsheathed Sword",
+                "EN": "When damaging an enemy for the first time, inflicts <$ba.tremble>Frighten</> for 4s",
+                "CN": "对每个敌人首次造成伤害时，使其<$ba.tremble>战栗</>4秒",
+                "mod": "对每个敌人首次造成伤害时，使其<$ba.tremble>战栗</>6秒，对精英及领袖敌人改为使其<$ba.tremble>战栗</>12秒。维娜·维多利亚及其召唤物对战栗的目标造成伤害提升15％",
+                "upgradeDescription": "When damaging an enemy for the first time, inflicts <$ba.tremble>Frighten</> for 6s. For Elite and Leader enemies, this effect inflicts <$ba.tremble>Frighten</> for 12s instead; Vina Victoria and her summons deal 15% increased damage against <$ba.tremble>Frighten</> enemies"
+            },
+            {
+                "name": "Unsheathed Sword",
+                "EN": "When damaging an enemy for the first time, inflicts <$ba.tremble>Frighten</> for 5s <@ba.talpu>(+1)</>",
+                "CN": "对每个敌人首次造成伤害时，使其<$ba.tremble>战栗</>5<@ba.talpu>(+1)</>秒",
+                "mod": "对每个敌人首次造成伤害时，使其<$ba.tremble>战栗</>7<@ba.talpu>(+1)</>秒，对精英及领袖敌人改为使其<$ba.tremble>战栗</>12秒。维娜·维多利亚及其召唤物对战栗的目标造成伤害提升15％",
+                "upgradeDescription": "When damaging an enemy for the first time, inflicts <$ba.tremble>Frighten</> for 7<@ba.talpu>(+1)</>s. For Elite and Leader enemies, this effect inflicts <$ba.tremble>Frighten</> for 12s instead; Vina Victoria and her summons deal 15% increased damage against <$ba.tremble>Frighten</> enemies"
+            }
+        ]
+    ],
+    "uniequip_002_durnar": [
+        [
+            {
+                "name": "Sword and Shield",
+                "EN": "ATK +7%, DEF +7%",
+                "CN": "攻击力+7%，防御力+7%",
+                "mod": "攻击力+10%，防御力+10%",
+                "upgradeDescription": "ATK +10%, DEF +10%"
+            }
+        ],
+        [
+            {
+                "name": "Sword and Shield",
+                "EN": "ATK +7%, DEF +7%",
+                "CN": "攻击力+7%，防御力+7%",
+                "mod": "攻击力+12%，防御力+12%",
+                "upgradeDescription": "ATK +12%, DEF +12%"
+            }
+        ]
+    ],
+    "uniequip_002_pianst": [
+        [
+            {
+                "name": "Reverberation",
+                "EN": "RES +10. Deals 80% of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks",
+                "CN": "法术抗性+10，每次受到法术攻击时对目标造成相当于车尔尼攻击力80%的法术伤害",
+                "mod": "法术抗性+10，每次受到法术攻击时对目标造成相当于车尔尼攻击力100%的法术伤害",
+                "upgradeDescription": "RES +10. Deals 100% of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks"
+            },
+            {
+                "name": "Reverberation",
+                "EN": "RES +10. Deals 85% <@ba.talpu>(+5%)</> of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks",
+                "CN": "法术抗性+10，每次受到法术攻击时对目标造成相当于车尔尼攻击力85%<@ba.talpu>(+5%)</>的法术伤害",
+                "mod": "法术抗性+10，每次受到法术攻击时对目标造成相当于车尔尼攻击力105%<@ba.talpu>(+5%)</>的法术伤害",
+                "upgradeDescription": "RES +10. Deals 105% <@ba.talpu>(+5%)</> of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks"
+            }
+        ],
+        [
+            {
+                "name": "Reverberation",
+                "EN": "RES +10. Deals 80% of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks",
+                "CN": "法术抗性+10，每次受到法术攻击时对目标造成相当于车尔尼攻击力80%的法术伤害",
+                "mod": "法术抗性+10，每次受到法术攻击时对目标造成相当于车尔尼攻击力110%的法术伤害",
+                "upgradeDescription": "RES +10. Deals 110% of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks"
+            },
+            {
+                "name": "Reverberation",
+                "EN": "RES +10. Deals 85% <@ba.talpu>(+5%)</> of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks",
+                "CN": "法术抗性+10，每次受到法术攻击时对目标造成相当于车尔尼攻击力85%<@ba.talpu>(+5%)</>的法术伤害",
+                "mod": "法术抗性+10，每次受到法术攻击时对目标造成相当于车尔尼攻击力115%<@ba.talpu>(+5%)</>的法术伤害",
+                "upgradeDescription": "RES +10. Deals 115% <@ba.talpu>(+5%)</> of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks"
+            }
+        ]
+    ],
+    "uniequip_002_asbest": [
+        [
+            {
+                "name": "Moist Skin",
+                "EN": "RES +10, restores 3 SP when hit by an enemy's normal Arts attack",
+                "CN": "法术抗性+10，受到敌人的法术普通攻击时获得3点技力",
+                "mod": "法术抗性+12，受到敌人的法术普通攻击时获得3点技力",
+                "upgradeDescription": "RES +12, restores 3 SP when hit by an enemy's normal Arts attack"
+            }
+        ],
+        [
+            {
+                "name": "Moist Skin",
+                "EN": "RES +10, restores 3 SP when hit by an enemy's normal Arts attack",
+                "CN": "法术抗性+10，受到敌人的法术普通攻击时获得3点技力",
+                "mod": "法术抗性+12，受到敌人的法术普通攻击时获得4点技力",
+                "upgradeDescription": "RES +12, restores 4 SP when hit by an enemy's normal Arts attack"
+            }
+        ]
+    ],
+    "uniequip_002_aprot2": [
+        [
+            {
+                "name": "Proclamation of Doom",
+                "EN": "Attacks have 20% chance to reduce the target's RES by 25% for 3 seconds",
+                "CN": "攻击时有20%的几率使目标法术抗性-25%，持续3秒",
+                "mod": "攻击时有35%的几率使目标法术抗性-30%，持续3秒",
+                "upgradeDescription": "Attacks have 35% chance to reduce the target's RES by 30% for 3 seconds"
+            },
+            {
+                "name": "Proclamation of Doom",
+                "EN": "Attacks have 25% <@ba.talpu>(+5%)</> chance to reduce the target's RES by 25% for 3 seconds",
+                "CN": "攻击时有25%<@ba.talpu>(+5%)</>的几率使目标法术抗性-25%，持续3秒",
+                "mod": "攻击时有40%<@ba.talpu>(+5%)</>的几率使目标法术抗性-30%，持续3秒",
+                "upgradeDescription": "Attacks have 40%<@ba.talpu>(+5%)</> chance to reduce the target's RES by 30% for 3 seconds"
+            }
+        ],
+        [
+            {
+                "name": "Proclamation of Doom",
+                "EN": "Attacks have 20% chance to reduce the target's RES by 25% for 3 seconds",
+                "CN": "攻击时有20%的几率使目标法术抗性-25%，持续3秒",
+                "mod": "攻击时有40%的几率使目标法术抗性-30%，持续6秒",
+                "upgradeDescription": "Attacks have 40% chance to reduce the target's RES by 30% for 6 seconds"
+            },
+            {
+                "name": "Proclamation of Doom",
+                "EN": "Attacks have 25% <@ba.talpu>(+5%)</> chance to reduce the target's RES by 25% for 3 seconds",
+                "CN": "攻击时有25%<@ba.talpu>(+5%)</>的几率使目标法术抗性-25%，持续3秒",
+                "mod": "攻击时有45%<@ba.talpu>(+5%)</>的几率使目标法术抗性-30%，持续6秒",
+                "upgradeDescription": "Attacks have 45%<@ba.talpu>(+5%)</> chance to reduce the target's RES by 30% for 6 seconds"
+            }
+        ]
+    ],
+    "uniequip_002_hsgma2": [
+        [
+            {
+                "name": "鬼之架势",
+                "CN": "在场时，自身获得最高+50法术抗性和35%攻击力的<$ba.berserk>坚忍</>(损失70%生命值时达到最大加成)",
+                "mod": "在场时，自身获得最高+50法术抗性和35%攻击力的<$ba.berserk>坚忍</>(损失60%生命值时达到最大加成)。达到最大加成时，攻击力额外+10％",
+                "upgradeDescription": "Gains up to +35% ATK and +50 RES <$ba.berserk>Tenacity</> (reaches maximum bonus when losing 60% Max HP); While at maximum bonus, ATK+10％"
+            }
+        ],
+        [
+            {
+                "name": "鬼之架势",
+                "CN": "在场时，自身获得最高+50法术抗性和35%攻击力的<$ba.berserk>坚忍</>(损失70%生命值时达到最大加成)",
+                "mod": "在场时，自身获得最高+50法术抗性和35%攻击力的<$ba.berserk>坚忍</>(损失50%生命值时达到最大加成)。达到最大加成时，攻击力额外+15％",
+                "upgradeDescription": "Gains up to +35% ATK and +50 RES <$ba.berserk>Tenacity</> (reaches maximum bonus when losing 50% Max HP); While at maximum bonus, ATK+15%"
+            }
+        ]
+    ],
+    "uniequip_002_snhunt": [
+        [
+            {
+                "name": "裂云一击",
+                "CN": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力180%的物理伤害和3秒<$ba.cold>寒冷</>",
+                "mod": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力195%的物理伤害和3秒<$ba.cold>寒冷</>",
+                "upgradeDescription": "When skill is activated, sends beast out to attack, deals 195% ATK as Physical damage and inflicts <$ba.cold>Cold</> for 3 seconds"
+            },
+            {
+                "name": "裂云一击",
+                "CN": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力185%<@ba.talpu>(+5%)</>的物理伤害和3秒<$ba.cold>寒冷</>",
+                "mod": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力200%<@ba.talpu>(+5%)</>的物理伤害和3秒<$ba.cold>寒冷</>",
+                "upgradeDescription": "When skill is activated, sends beast out to attack, deals 200%<@ba.talpu>(+5%)</> ATK as Physical damage and inflicts <$ba.cold>Cold</> for 3 seconds"
+            }
+        ],
+        [
+            {
+                "name": "裂云一击",
+                "CN": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力180%的物理伤害和3秒<$ba.cold>寒冷</>",
+                "mod": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力205%的物理伤害和3秒<$ba.cold>寒冷</>",
+                "upgradeDescription": "When skill is activated, sends beast out to attack, deals 205% ATK as Physical damage and inflicts <$ba.cold>Cold</> for 3 seconds"
+            },
+            {
+                "name": "裂云一击",
+                "CN": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力185%<@ba.talpu>(+5%)</>的物理伤害和3秒<$ba.cold>寒冷</>",
+                "mod": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力210%<@ba.talpu>(+5%)</>的物理伤害和3秒<$ba.cold>寒冷</>",
+                "upgradeDescription": "When skill is activated, sends beast out to attack, deals 210%<@ba.talpu>(+5%)</> ATK as Physical damage and inflicts <$ba.cold>Cold</> for 3 seconds"
+            }
+        ]
     ]
 }

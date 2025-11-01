@@ -56,6 +56,20 @@
             }
         ]
     },
+    "char_1001_amiya2": {
+        "main": {
+            "nationId": "rhodes",
+            "groupId": null,
+            "teamId": null
+        },
+        "hidden": [
+            {
+                "nationId": "rim",
+                "groupId": null,
+                "teamId": null
+            }
+        ]
+    },
     "char_1011_lava2": {
         "main": {
             "nationId": "rhodes",
@@ -330,6 +344,20 @@
             }
         ]
     },
+    "char_1037_amiya3": {
+        "main": {
+            "nationId": "rhodes",
+            "groupId": null,
+            "teamId": null
+        },
+        "hidden": [
+            {
+                "nationId": "rim",
+                "groupId": null,
+                "teamId": null
+            }
+        ]
+    },
     "char_1038_whitw2": {
         "main": {
             "nationId": "siracusa",
@@ -413,6 +441,30 @@
         "main": {
             "nationId": "lungmen",
             "groupId": "lgd",
+            "teamId": null
+        },
+        "hidden": null
+    },
+    "char_1045_svash2": {
+        "main": {
+            "nationId": "kjerag",
+            "groupId": null,
+            "teamId": null
+        },
+        "hidden": null
+    },
+    "char_1046_sbell2": {
+        "main": {
+            "nationId": "kjerag",
+            "groupId": null,
+            "teamId": null
+        },
+        "hidden": null
+    },
+    "char_1047_halo2": {
+        "main": {
+            "nationId": "columbia",
+            "groupId": "rhine",
             "teamId": null
         },
         "hidden": null
@@ -868,18 +920,30 @@
     "char_173_slchan": {
         "main": {
             "nationId": "kjerag",
-            "groupId": "karlan",
+            "groupId": null,
             "teamId": null
         },
-        "hidden": null
+        "hidden": [
+            {
+                "nationId": "kjerag",
+                "groupId": "karlan",
+                "teamId": null
+            }
+        ]
     },
     "char_174_slbell": {
         "main": {
             "nationId": "kjerag",
-            "groupId": "karlan",
+            "groupId": null,
             "teamId": null
         },
-        "hidden": null
+        "hidden": [
+            {
+                "nationId": "kjerag",
+                "groupId": "karlan",
+                "teamId": null
+            }
+        ]
     },
     "char_179_cgbird": {
         "main": {
@@ -2049,6 +2113,14 @@
             }
         ]
     },
+    "char_394_hadiya": {
+        "main": {
+            "nationId": "sargon",
+            "groupId": null,
+            "teamId": null
+        },
+        "hidden": null
+    },
     "char_4000_jnight": {
         "main": {
             "nationId": "kazimierz",
@@ -2114,10 +2186,16 @@
     "char_4013_kjera": {
         "main": {
             "nationId": "kjerag",
-            "groupId": "karlan",
+            "groupId": null,
             "teamId": null
         },
-        "hidden": null
+        "hidden": [
+            {
+                "nationId": "kjerag",
+                "groupId": "karlan",
+                "teamId": null
+            }
+        ]
     },
     "char_4014_lunacu": {
         "main": {
@@ -2297,6 +2375,14 @@
         "main": {
             "nationId": "columbia",
             "groupId": "rhine",
+            "teamId": null
+        },
+        "hidden": null
+    },
+    "char_4051_akkord": {
+        "main": {
+            "nationId": "leithanien",
+            "groupId": null,
             "teamId": null
         },
         "hidden": null
@@ -3110,6 +3196,14 @@
         },
         "hidden": null
     },
+    "char_4211_snhunt": {
+        "main": {
+            "nationId": "kjerag",
+            "groupId": null,
+            "teamId": null
+        },
+        "hidden": null
+    },
     "char_421_crow": {
         "main": {
             "nationId": "bolivar",
@@ -3121,10 +3215,16 @@
     "char_422_aurora": {
         "main": {
             "nationId": "kjerag",
-            "groupId": "karlan",
+            "groupId": null,
             "teamId": null
         },
-        "hidden": null
+        "hidden": [
+            {
+                "nationId": "kjerag",
+                "groupId": "karlan",
+                "teamId": null
+            }
+        ]
     },
     "char_423_blemsh": {
         "main": {

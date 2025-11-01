@@ -66,6 +66,7 @@ json_tl_item        =   json_load("json/tl-item.json")
 json_temp_mod       =   json_load("json/tl-module.json")
 
 json_skillTL        =   json_load("json/ace/tl-skills.json")
+json_talentTL       =   json_load("json/ace/tl-talents.json")
 
 #########################################################################################################
 # New
@@ -185,15 +186,16 @@ def update_char_TraitSkillTalent(new_char_name : str) :
     ## Trait
     new_trait[json_char[new_char_id]["description"]] = update_new_trait("char", new_char_id, new_char_name, json_char[new_char_id]["subProfessionId"])
     ## Talent
-    talent_tl[new_char_id] = [
-                                [
-                                    {
-                                        "name"  : candidate["name"],
-                                        "descCN": parentheses(candidate["description"]),
-                                        "desc"  : ""
-                                    } for candidate in talent["candidates"] if not candidate["isHideTalent"]
-                                ]  for talent in json_char[new_char_id]["talents"] if not talent["candidates"][0]["isHideTalent"]
-                            ]
+    if new_char_id not in json_talentTL:
+        talent_tl[new_char_id] = [
+                                    [
+                                        {
+                                            "name"  : candidate["name"],
+                                            "descCN": parentheses(candidate["description"]),
+                                            "desc"  : ""
+                                        } for candidate in talent["candidates"] if not candidate["isHideTalent"]
+                                    ]  for talent in json_char[new_char_id]["talents"] if not talent["candidates"][0]["isHideTalent"]
+                                ]
     ## Skill
     for skill in json_char[new_char_id]["skills"]:
         skill_id = skill["skillId"]
@@ -210,7 +212,7 @@ def update_char_TraitSkillTalent(new_char_name : str) :
             new_trait[json_char[new_token_key]["description"]] = update_new_trait("token", new_char_id, new_char_name, new_token_key)
         #### Token Skill
             for skill in json_char[new_token_key]["skills"]:
-                if skill["skillId"] :
+                if skill["skillId"] and skill_id not in json_skillTL.keys():
                     skill_id = skill["skillId"]
                     skill_tl[skill_id] = {
                                             "name"  : json_skill[skill_id]["levels"][0]["name"],
@@ -218,10 +220,23 @@ def update_char_TraitSkillTalent(new_char_name : str) :
                                         }
 
 def parentheses(desc : str) -> str :
+    clean_dict = {
+                    "（"	:	"(",
+                    "）"	:	")",
+                    "【"	:	"[",
+                    "】"	:	"]",
+                    "；"	:	"; ",
+                    " "	    :	" ",
+                    "、"	:	", ",
+                    "％"	:	"%",
+                }
+    
     if isinstance(desc, NoneType):
         return None
     else:
-        return desc.replace("（", "(").replace("）", ")").replace("【", "[").replace("】", "]").replace("；","; ").replace(" ", " ").replace("、", ", ")
+        for k,v in clean_dict.items():
+            desc = desc.replace(k, v)
+        return desc
 
 #########################################################################################################
 # Chars

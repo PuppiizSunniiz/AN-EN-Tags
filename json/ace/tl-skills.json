@@ -12857,5 +12857,275 @@
             "ASPD <@ba.vup>+{attack_speed}</>, each attack grants <@ba.vup>{cost}</> DP and <$ba.sluggish>Slows</> the target for <@ba.vup>{attack@sluggish}</> seconds",
             "ASPD <@ba.vup>+{attack_speed}</>, each attack grants <@ba.vup>{cost}</> DP and <$ba.sluggish>Slows</> the target for <@ba.vup>{attack@sluggish}</> seconds"
         ]
+    },
+	    "skchr_svash2_1": {
+        "name": "周旋的谋略",
+        "desc": [
+            "Immediately gains <@ba.vup>{cost}</> DP; Operator closest to 'Eye of the Snowstorm' has its DP cost <@ba.vup>-{svash2_s_1[deck].cost}</> (Prioritize <@ba.vup>Guard/Caster/Sniper</> on the right) and when they deployed, grants them <@ba.vup>{svash2_s_1[deck].shield:0%}</> of SilverAsh the Reignfrost's HP <$ba.barrier>Barrier</>",
+            "Immediately gains <@ba.vup>{cost}</> DP; Operator closest to 'Eye of the Snowstorm' has its DP cost <@ba.vup>-{svash2_s_1[deck].cost}</> (Prioritize <@ba.vup>Guard/Caster/Sniper</> on the right) and when they deployed, grants them <@ba.vup>{svash2_s_1[deck].shield:0%}</> of SilverAsh the Reignfrost's HP <$ba.barrier>Barrier</>",
+            "Immediately gains <@ba.vup>{cost}</> DP; Operator closest to 'Eye of the Snowstorm' has its DP cost <@ba.vup>-{svash2_s_1[deck].cost}</> (Prioritize <@ba.vup>Guard/Caster/Sniper</> on the right) and when they deployed, grants them <@ba.vup>{svash2_s_1[deck].shield:0%}</> of SilverAsh the Reignfrost's HP <$ba.barrier>Barrier</>",
+            "Immediately gains <@ba.vup>{cost}</> DP; Operator closest to 'Eye of the Snowstorm' has its DP cost <@ba.vup>-{svash2_s_1[deck].cost}</> (Prioritize <@ba.vup>Guard/Caster/Sniper</> on the right) and when they deployed, grants them <@ba.vup>{svash2_s_1[deck].shield:0%}</> of SilverAsh the Reignfrost's HP <$ba.barrier>Barrier</>",
+            "Immediately gains <@ba.vup>{cost}</> DP; Operator closest to 'Eye of the Snowstorm' has its DP cost <@ba.vup>-{svash2_s_1[deck].cost}</> (Prioritize <@ba.vup>Guard/Caster/Sniper</> on the right) and when they deployed, grants them <@ba.vup>{svash2_s_1[deck].shield:0%}</> of SilverAsh the Reignfrost's HP <$ba.barrier>Barrier</>",
+            "Immediately gains <@ba.vup>{cost}</> DP; Operator closest to 'Eye of the Snowstorm' has its DP cost <@ba.vup>-{svash2_s_1[deck].cost}</> (Prioritize <@ba.vup>Guard/Caster/Sniper</> on the right) and when they deployed, grants them <@ba.vup>{svash2_s_1[deck].shield:0%}</> of SilverAsh the Reignfrost's HP <$ba.barrier>Barrier</>",
+            "Immediately gains <@ba.vup>{cost}</> DP; Operator closest to 'Eye of the Snowstorm' has its DP cost <@ba.vup>-{svash2_s_1[deck].cost}</> (Prioritize <@ba.vup>Guard/Caster/Sniper</> on the right) and when they deployed, grants them <@ba.vup>{svash2_s_1[deck].shield:0%}</> of SilverAsh the Reignfrost's HP <$ba.barrier>Barrier</>",
+            "Immediately gains <@ba.vup>{cost}</> DP; Operator closest to 'Eye of the Snowstorm' has its DP cost <@ba.vup>-{svash2_s_1[deck].cost}</> (Prioritize <@ba.vup>Guard/Caster/Sniper</> on the right) and when they deployed, grants them <@ba.vup>{svash2_s_1[deck].shield:0%}</> of SilverAsh the Reignfrost's HP <$ba.barrier>Barrier</>",
+            "Immediately gains <@ba.vup>{cost}</> DP; Operator closest to 'Eye of the Snowstorm' has its DP cost <@ba.vup>-{svash2_s_1[deck].cost}</> (Prioritize <@ba.vup>Guard/Caster/Sniper</> on the right) and when they deployed, grants them <@ba.vup>{svash2_s_1[deck].shield:0%}</> of SilverAsh the Reignfrost's HP <$ba.barrier>Barrier</>",
+            "Immediately gains <@ba.vup>{cost}</> DP; Operator closest to 'Eye of the Snowstorm' has its DP cost <@ba.vup>-{svash2_s_1[deck].cost}</> (Prioritize <@ba.vup>Guard/Caster/Sniper</> on the right) and when they deployed, grants them <@ba.vup>{svash2_s_1[deck].shield:0%}</> of SilverAsh the Reignfrost's HP <$ba.barrier>Barrier</>"
+        ]
+    },
+    "skchr_svash2_2": {
+        "name": "御敌的锋锐",
+        "desc": [
+            "Immediately deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to 6 enemies in front, inflicts <$ba.cold>Cold</> and removes <$ba.invisible>Invisible</> for <@ba.vup>{cold}</> seconds; Operator closest to 'Eye of the Snowstorm' had its DP cost <@ba.vup>-{cost}</> (Prioritize <@ba.vup>Guard/Caster/Sniper</> on the right); Allows operators on the left of 'Eye of the Snowstorm' to cast this skill with their own ATK when deployed (can cast up to 2 times)</br><@ba.rem>can hold 2 charges</>",
+            "Immediately deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to 6 enemies in front, inflicts <$ba.cold>Cold</> and removes <$ba.invisible>Invisible</> for <@ba.vup>{cold}</> seconds; Operator closest to 'Eye of the Snowstorm' had its DP cost <@ba.vup>-{cost}</> (Prioritize <@ba.vup>Guard/Caster/Sniper</> on the right); Allows operators on the left of 'Eye of the Snowstorm' to cast this skill with their own ATK when deployed (can cast up to 2 times)</br><@ba.rem>can hold 2 charges</>",
+            "Immediately deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to 6 enemies in front, inflicts <$ba.cold>Cold</> and removes <$ba.invisible>Invisible</> for <@ba.vup>{cold}</> seconds; Operator closest to 'Eye of the Snowstorm' had its DP cost <@ba.vup>-{cost}</> (Prioritize <@ba.vup>Guard/Caster/Sniper</> on the right); Allows operators on the left of 'Eye of the Snowstorm' to cast this skill with their own ATK when deployed (can cast up to 2 times)</br><@ba.rem>can hold 2 charges</>",
+            "Immediately deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to 6 enemies in front, inflicts <$ba.cold>Cold</> and removes <$ba.invisible>Invisible</> for <@ba.vup>{cold}</> seconds; Operator closest to 'Eye of the Snowstorm' had its DP cost <@ba.vup>-{cost}</> (Prioritize <@ba.vup>Guard/Caster/Sniper</> on the right); Allows operators on the left of 'Eye of the Snowstorm' to cast this skill with their own ATK when deployed (can cast up to 2 times)</br><@ba.rem>can hold 2 charges</>",
+            "Immediately deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to 6 enemies in front, inflicts <$ba.cold>Cold</> and removes <$ba.invisible>Invisible</> for <@ba.vup>{cold}</> seconds; Operator closest to 'Eye of the Snowstorm' had its DP cost <@ba.vup>-{cost}</> (Prioritize <@ba.vup>Guard/Caster/Sniper</> on the right); Allows operators on the left of 'Eye of the Snowstorm' to cast this skill with their own ATK when deployed (can cast up to 2 times)</br><@ba.rem>can hold 2 charges</>",
+            "Immediately deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to 6 enemies in front, inflicts <$ba.cold>Cold</> and removes <$ba.invisible>Invisible</> for <@ba.vup>{cold}</> seconds; Operator closest to 'Eye of the Snowstorm' had its DP cost <@ba.vup>-{cost}</> (Prioritize <@ba.vup>Guard/Caster/Sniper</> on the right); Allows operators on the left of 'Eye of the Snowstorm' to cast this skill with their own ATK when deployed (can cast up to 2 times)</br><@ba.rem>can hold 2 charges</>",
+            "Immediately deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to 6 enemies in front, inflicts <$ba.cold>Cold</> and removes <$ba.invisible>Invisible</> for <@ba.vup>{cold}</> seconds; Operator closest to 'Eye of the Snowstorm' had its DP cost <@ba.vup>-{cost}</> (Prioritize <@ba.vup>Guard/Caster/Sniper</> on the right); Allows operators on the left of 'Eye of the Snowstorm' to cast this skill with their own ATK when deployed (can cast up to 2 times)</br><@ba.rem>can hold 2 charges</>",
+            "Immediately deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to 6 enemies in front, inflicts <$ba.cold>Cold</> and removes <$ba.invisible>Invisible</> for <@ba.vup>{cold}</> seconds; Operator closest to 'Eye of the Snowstorm' had its DP cost <@ba.vup>-{cost}</> (Prioritize <@ba.vup>Guard/Caster/Sniper</> on the right); Allows operators on the left of 'Eye of the Snowstorm' to cast this skill with their own ATK when deployed (can cast up to 2 times)</br><@ba.rem>can hold 2 charges</>",
+            "Immediately deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to 6 enemies in front, inflicts <$ba.cold>Cold</> and removes <$ba.invisible>Invisible</> for <@ba.vup>{cold}</> seconds; Operator closest to 'Eye of the Snowstorm' had its DP cost <@ba.vup>-{cost}</> (Prioritize <@ba.vup>Guard/Caster/Sniper</> on the right); Allows operators on the left of 'Eye of the Snowstorm' to cast this skill with their own ATK when deployed (can cast up to 2 times)</br><@ba.rem>can hold 2 charges</>",
+            "Immediately deals <@ba.vup>{atk_scale:0%}</> ATK as Physical damage to 6 enemies in front, inflicts <$ba.cold>Cold</> and removes <$ba.invisible>Invisible</> for <@ba.vup>{cold}</> seconds; Operator closest to 'Eye of the Snowstorm' had its DP cost <@ba.vup>-{cost}</> (Prioritize <@ba.vup>Guard/Caster/Sniper</> on the right); Allows operators on the left of 'Eye of the Snowstorm' to cast this skill with their own ATK when deployed (can cast up to 2 times)</br><@ba.rem>can hold 2 charges</>"
+        ]
+    },
+    "skchr_svash2_3": {
+        "name": "变革已至",
+        "desc": [
+            "Attack Range <@ba.vup>expands</>, removes <$ba.invisible>Invisible</>; Each attack deals <@ba.vup>{bird_atk_scale:0%}</> ATK as Physical damage in a straight line and inflicts <@ba.vup>{damage_scale_display:0%}</> <$ba.fragile>Fragile</>; Immediately gains <@ba.vup>{svash2_s_3[start_cost].cost}</> DP and recovers <@ba.vup>24</> DP over the skill duration. When skill activated for the first time, swaps deployment cost of the highest cost operator (Prioritize Guard/Caster/Sniper) with the lowest cost operator. During skill duration, Eye of the Snowstorm can be deployed",
+            "Attack Range <@ba.vup>expands</>, removes <$ba.invisible>Invisible</>; Each attack deals <@ba.vup>{bird_atk_scale:0%}</> ATK as Physical damage in a straight line and inflicts <@ba.vup>{damage_scale_display:0%}</> <$ba.fragile>Fragile</>; Immediately gains <@ba.vup>{svash2_s_3[start_cost].cost}</> DP and recovers <@ba.vup>24</> DP over the skill duration. When skill activated for the first time, swaps deployment cost of the highest cost operator (Prioritize Guard/Caster/Sniper) with the lowest cost operator. During skill duration, Eye of the Snowstorm can be deployed",
+            "Attack Range <@ba.vup>expands</>, removes <$ba.invisible>Invisible</>; Each attack deals <@ba.vup>{bird_atk_scale:0%}</> ATK as Physical damage in a straight line and inflicts <@ba.vup>{damage_scale_display:0%}</> <$ba.fragile>Fragile</>; Immediately gains <@ba.vup>{svash2_s_3[start_cost].cost}</> DP and recovers <@ba.vup>24</> DP over the skill duration. When skill activated for the first time, swaps deployment cost of the highest cost operator (Prioritize Guard/Caster/Sniper) with the lowest cost operator. During skill duration, Eye of the Snowstorm can be deployed",
+            "Attack Range <@ba.vup>expands</>, removes <$ba.invisible>Invisible</>; Each attack deals <@ba.vup>{bird_atk_scale:0%}</> ATK as Physical damage in a straight line and inflicts <@ba.vup>{damage_scale_display:0%}</> <$ba.fragile>Fragile</>; Immediately gains <@ba.vup>{svash2_s_3[start_cost].cost}</> DP and recovers <@ba.vup>24</> DP over the skill duration. When skill activated for the first time, swaps deployment cost of the highest cost operator (Prioritize Guard/Caster/Sniper) with the lowest cost operator. During skill duration, Eye of the Snowstorm can be deployed",
+            "Attack Range <@ba.vup>expands</>, removes <$ba.invisible>Invisible</>; Each attack deals <@ba.vup>{bird_atk_scale:0%}</> ATK as Physical damage in a straight line and inflicts <@ba.vup>{damage_scale_display:0%}</> <$ba.fragile>Fragile</>; Immediately gains <@ba.vup>{svash2_s_3[start_cost].cost}</> DP and recovers <@ba.vup>24</> DP over the skill duration. When skill activated for the first time, swaps deployment cost of the highest cost operator (Prioritize Guard/Caster/Sniper) with the lowest cost operator. During skill duration, Eye of the Snowstorm can be deployed",
+            "Attack Range <@ba.vup>expands</>, removes <$ba.invisible>Invisible</>; Each attack deals <@ba.vup>{bird_atk_scale:0%}</> ATK as Physical damage in a straight line and inflicts <@ba.vup>{damage_scale_display:0%}</> <$ba.fragile>Fragile</>; Immediately gains <@ba.vup>{svash2_s_3[start_cost].cost}</> DP and recovers <@ba.vup>24</> DP over the skill duration. When skill activated for the first time, swaps deployment cost of the highest cost operator (Prioritize Guard/Caster/Sniper) with the lowest cost operator. During skill duration, Eye of the Snowstorm can be deployed",
+            "Attack Range <@ba.vup>expands</>, removes <$ba.invisible>Invisible</>; Each attack deals <@ba.vup>{bird_atk_scale:0%}</> ATK as Physical damage in a straight line and inflicts <@ba.vup>{damage_scale_display:0%}</> <$ba.fragile>Fragile</>; Immediately gains <@ba.vup>{svash2_s_3[start_cost].cost}</> DP and recovers <@ba.vup>24</> DP over the skill duration. When skill activated for the first time, swaps deployment cost of the highest cost operator (Prioritize Guard/Caster/Sniper) with the lowest cost operator. During skill duration, Eye of the Snowstorm can be deployed",
+            "Attack Range <@ba.vup>expands</>, removes <$ba.invisible>Invisible</>; Each attack deals <@ba.vup>{bird_atk_scale:0%}</> ATK as Physical damage in a straight line and inflicts <@ba.vup>{damage_scale_display:0%}</> <$ba.fragile>Fragile</>; Immediately gains <@ba.vup>{svash2_s_3[start_cost].cost}</> DP and recovers <@ba.vup>24</> DP over the skill duration. When skill activated for the first time, swaps deployment cost of the highest cost operator (Prioritize Guard/Caster/Sniper) with the lowest cost operator. During skill duration, Eye of the Snowstorm can be deployed",
+            "Attack Range <@ba.vup>expands</>, removes <$ba.invisible>Invisible</>; Each attack deals <@ba.vup>{bird_atk_scale:0%}</> ATK as Physical damage in a straight line and inflicts <@ba.vup>{damage_scale_display:0%}</> <$ba.fragile>Fragile</>; Immediately gains <@ba.vup>{svash2_s_3[start_cost].cost}</> DP and recovers <@ba.vup>24</> DP over the skill duration. When skill activated for the first time, swaps deployment cost of the highest cost operator (Prioritize Guard/Caster/Sniper) with the lowest cost operator. During skill duration, Eye of the Snowstorm can be deployed",
+            "Attack Range <@ba.vup>expands</>, removes <$ba.invisible>Invisible</>; Each attack deals <@ba.vup>{bird_atk_scale:0%}</> ATK as Physical damage in a straight line and inflicts <@ba.vup>{damage_scale_display:0%}</> <$ba.fragile>Fragile</>; Immediately gains <@ba.vup>{svash2_s_3[start_cost].cost}</> DP and recovers <@ba.vup>24</> DP over the skill duration. When skill activated for the first time, swaps deployment cost of the highest cost operator (Prioritize Guard/Caster/Sniper) with the lowest cost operator. During skill duration, Eye of the Snowstorm can be deployed"
+        ]
+    },
+    "sktok_svash2_1": {
+        "name": "开放性开局",
+        "desc": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    "sktok_svash2_2": {
+        "name": "开放性开局",
+        "desc": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    "sktok_svash2_3": {
+        "name": "变革已至",
+        "desc": [
+            "When the first operator is deployed during '变革已至' (Skill 3) duration, deploys 'Eye of the Snowstorm' on its location and simultaneously perform a straight line attack with SilverAsh the Reignfrost; 'Eye of the Snowstorm' can be deployed during skill duration to change its position and refunds its DP Cost",
+            "When the first operator is deployed during '变革已至' (Skill 3) duration, deploys 'Eye of the Snowstorm' on its location and simultaneously perform a straight line attack with SilverAsh the Reignfrost; 'Eye of the Snowstorm' can be deployed during skill duration to change its position and refunds its DP Cost",
+            "When the first operator is deployed during '变革已至' (Skill 3) duration, deploys 'Eye of the Snowstorm' on its location and simultaneously perform a straight line attack with SilverAsh the Reignfrost; 'Eye of the Snowstorm' can be deployed during skill duration to change its position and refunds its DP Cost",
+            "When the first operator is deployed during '变革已至' (Skill 3) duration, deploys 'Eye of the Snowstorm' on its location and simultaneously perform a straight line attack with SilverAsh the Reignfrost; 'Eye of the Snowstorm' can be deployed during skill duration to change its position and refunds its DP Cost",
+            "When the first operator is deployed during '变革已至' (Skill 3) duration, deploys 'Eye of the Snowstorm' on its location and simultaneously perform a straight line attack with SilverAsh the Reignfrost; 'Eye of the Snowstorm' can be deployed during skill duration to change its position and refunds its DP Cost",
+            "When the first operator is deployed during '变革已至' (Skill 3) duration, deploys 'Eye of the Snowstorm' on its location and simultaneously perform a straight line attack with SilverAsh the Reignfrost; 'Eye of the Snowstorm' can be deployed during skill duration to change its position and refunds its DP Cost",
+            "When the first operator is deployed during '变革已至' (Skill 3) duration, deploys 'Eye of the Snowstorm' on its location and simultaneously perform a straight line attack with SilverAsh the Reignfrost; 'Eye of the Snowstorm' can be deployed during skill duration to change its position and refunds its DP Cost",
+            "When the first operator is deployed during '变革已至' (Skill 3) duration, deploys 'Eye of the Snowstorm' on its location and simultaneously perform a straight line attack with SilverAsh the Reignfrost; 'Eye of the Snowstorm' can be deployed during skill duration to change its position and refunds its DP Cost",
+            "When the first operator is deployed during '变革已至' (Skill 3) duration, deploys 'Eye of the Snowstorm' on its location and simultaneously perform a straight line attack with SilverAsh the Reignfrost; 'Eye of the Snowstorm' can be deployed during skill duration to change its position and refunds its DP Cost",
+            "When the first operator is deployed during '变革已至' (Skill 3) duration, deploys 'Eye of the Snowstorm' on its location and simultaneously perform a straight line attack with SilverAsh the Reignfrost; 'Eye of the Snowstorm' can be deployed during skill duration to change its position and refunds its DP Cost"
+        ]
+    },
+    "skchr_sbell2_1": {
+        "name": "铃音吹雪",
+        "desc": [
+            "Immediately deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to all enemies in Attack Range, inflicts <$ba.cold>cold</> for <@ba.vup>{cold}</> seconds, moderately pushes them in the facing direction and spreads Snow layer on ground tiles in front (up to 5 tiles)</br><@ba.rem>Can hold 2 charges</>",
+            "Immediately deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to all enemies in Attack Range, inflicts <$ba.cold>cold</> for <@ba.vup>{cold}</> seconds, moderately pushes them in the facing direction and spreads Snow layer on ground tiles in front (up to 5 tiles)</br><@ba.rem>Can hold 2 charges</>",
+            "Immediately deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to all enemies in Attack Range, inflicts <$ba.cold>cold</> for <@ba.vup>{cold}</> seconds, moderately pushes them in the facing direction and spreads Snow layer on ground tiles in front (up to 5 tiles)</br><@ba.rem>Can hold 2 charges</>",
+            "Immediately deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to all enemies in Attack Range, inflicts <$ba.cold>cold</> for <@ba.vup>{cold}</> seconds, moderately pushes them in the facing direction and spreads Snow layer on ground tiles in front (up to 5 tiles)</br><@ba.rem>Can hold 2 charges</>",
+            "Immediately deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to all enemies in Attack Range, inflicts <$ba.cold>cold</> for <@ba.vup>{cold}</> seconds, moderately pushes them in the facing direction and spreads Snow layer on ground tiles in front (up to 5 tiles)</br><@ba.rem>Can hold 2 charges</>",
+            "Immediately deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to all enemies in Attack Range, inflicts <$ba.cold>cold</> for <@ba.vup>{cold}</> seconds, moderately pushes them in the facing direction and spreads Snow layer on ground tiles in front (up to 5 tiles)</br><@ba.rem>Can hold 2 charges</>",
+            "Immediately deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to all enemies in Attack Range, inflicts <$ba.cold>cold</> for <@ba.vup>{cold}</> seconds, moderately pushes them in the facing direction and spreads Snow layer on ground tiles in front (up to 5 tiles)</br><@ba.rem>Can hold 2 charges</>",
+            "Immediately deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to all enemies in Attack Range, inflicts <$ba.cold>cold</> for <@ba.vup>{cold}</> seconds, moderately pushes them in the facing direction and spreads Snow layer on ground tiles in front (up to 5 tiles)</br><@ba.rem>Can hold 2 charges</>",
+            "Immediately deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to all enemies in Attack Range, inflicts <$ba.cold>cold</> for <@ba.vup>{cold}</> seconds, moderately pushes them in the facing direction and spreads Snow layer on ground tiles in front (up to 5 tiles)</br><@ba.rem>Can hold 2 charges</>",
+            "Immediately deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage to all enemies in Attack Range, inflicts <$ba.cold>cold</> for <@ba.vup>{cold}</> seconds, moderately pushes them in the facing direction and spreads Snow layer on ground tiles in front (up to 5 tiles)</br><@ba.rem>Can hold 2 charges</>"
+        ]
+    },
+    "skchr_sbell2_2": {
+        "name": "霜涛覆岭",
+        "desc": [
+            "Each attack deals <@ba.vup>{attack@atk_scale_s2:0%}</> ATK as Arts damage. When Snow exceed 5 layers, it spreads one layer outwards to the surrounding tile (up to 20 tiles). Ground enemies in the Snow receive <@ba.vup>{talent@s2_magic_scale:0%}</> ATK as Arts damage every second and inflicted with <$ba.cold>Cold</> for 5 seconds upon leaving. When Snow on the Objective Point exceed 5 layers, freeze the Objective Point</br><@ba.rem>Skill can be manually deactivated (skill can be interrupted at any time)</>",
+            "Each attack deals <@ba.vup>{attack@atk_scale_s2:0%}</> ATK as Arts damage. When Snow exceed 5 layers, it spreads one layer outwards to the surrounding tile (up to 20 tiles). Ground enemies in the Snow receive <@ba.vup>{talent@s2_magic_scale:0%}</> ATK as Arts damage every second and inflicted with <$ba.cold>Cold</> for 5 seconds upon leaving. When Snow on the Objective Point exceed 5 layers, freeze the Objective Point</br><@ba.rem>Skill can be manually deactivated (skill can be interrupted at any time)</>",
+            "Each attack deals <@ba.vup>{attack@atk_scale_s2:0%}</> ATK as Arts damage. When Snow exceed 5 layers, it spreads one layer outwards to the surrounding tile (up to 20 tiles). Ground enemies in the Snow receive <@ba.vup>{talent@s2_magic_scale:0%}</> ATK as Arts damage every second and inflicted with <$ba.cold>Cold</> for 5 seconds upon leaving. When Snow on the Objective Point exceed 5 layers, freeze the Objective Point</br><@ba.rem>Skill can be manually deactivated (skill can be interrupted at any time)</>",
+            "Each attack deals <@ba.vup>{attack@atk_scale_s2:0%}</> ATK as Arts damage. When Snow exceed 5 layers, it spreads one layer outwards to the surrounding tile (up to 20 tiles). Ground enemies in the Snow receive <@ba.vup>{talent@s2_magic_scale:0%}</> ATK as Arts damage every second and inflicted with <$ba.cold>Cold</> for 5 seconds upon leaving. When Snow on the Objective Point exceed 5 layers, freeze the Objective Point</br><@ba.rem>Skill can be manually deactivated (skill can be interrupted at any time)</>",
+            "Each attack deals <@ba.vup>{attack@atk_scale_s2:0%}</> ATK as Arts damage. When Snow exceed 5 layers, it spreads one layer outwards to the surrounding tile (up to 20 tiles). Ground enemies in the Snow receive <@ba.vup>{talent@s2_magic_scale:0%}</> ATK as Arts damage every second and inflicted with <$ba.cold>Cold</> for 5 seconds upon leaving. When Snow on the Objective Point exceed 5 layers, freeze the Objective Point</br><@ba.rem>Skill can be manually deactivated (skill can be interrupted at any time)</>",
+            "Each attack deals <@ba.vup>{attack@atk_scale_s2:0%}</> ATK as Arts damage. When Snow exceed 5 layers, it spreads one layer outwards to the surrounding tile (up to 20 tiles). Ground enemies in the Snow receive <@ba.vup>{talent@s2_magic_scale:0%}</> ATK as Arts damage every second and inflicted with <$ba.cold>Cold</> for 5 seconds upon leaving. When Snow on the Objective Point exceed 5 layers, freeze the Objective Point</br><@ba.rem>Skill can be manually deactivated (skill can be interrupted at any time)</>",
+            "Each attack deals <@ba.vup>{attack@atk_scale_s2:0%}</> ATK as Arts damage. When Snow exceed 5 layers, it spreads one layer outwards to the surrounding tile (up to 20 tiles). Ground enemies in the Snow receive <@ba.vup>{talent@s2_magic_scale:0%}</> ATK as Arts damage every second and inflicted with <$ba.cold>Cold</> for 5 seconds upon leaving. When Snow on the Objective Point exceed 5 layers, freeze the Objective Point</br><@ba.rem>Skill can be manually deactivated (skill can be interrupted at any time)</>",
+            "Each attack deals <@ba.vup>{attack@atk_scale_s2:0%}</> ATK as Arts damage. When Snow exceed 5 layers, it spreads one layer outwards to the surrounding tile (up to 20 tiles). Ground enemies in the Snow receive <@ba.vup>{talent@s2_magic_scale:0%}</> ATK as Arts damage every second and inflicted with <$ba.cold>Cold</> for 5 seconds upon leaving. When Snow on the Objective Point exceed 5 layers, freeze the Objective Point</br><@ba.rem>Skill can be manually deactivated (skill can be interrupted at any time)</>",
+            "Each attack deals <@ba.vup>{attack@atk_scale_s2:0%}</> ATK as Arts damage. When Snow exceed 5 layers, it spreads one layer outwards to the surrounding tile (up to 20 tiles). Ground enemies in the Snow receive <@ba.vup>{talent@s2_magic_scale:0%}</> ATK as Arts damage every second and inflicted with <$ba.cold>Cold</> for 5 seconds upon leaving. When Snow on the Objective Point exceed 5 layers, freeze the Objective Point</br><@ba.rem>Skill can be manually deactivated (skill can be interrupted at any time)</>",
+            "Each attack deals <@ba.vup>{attack@atk_scale_s2:0%}</> ATK as Arts damage. When Snow exceed 5 layers, it spreads one layer outwards to the surrounding tile (up to 20 tiles). Ground enemies in the Snow receive <@ba.vup>{talent@s2_magic_scale:0%}</> ATK as Arts damage every second and inflicted with <$ba.cold>Cold</> for 5 seconds upon leaving. When Snow on the Objective Point exceed 5 layers, freeze the Objective Point</br><@ba.rem>Skill can be manually deactivated (skill can be interrupted at any time)</>"
+        ]
+    },
+    "skchr_sbell2_3": {
+        "name": "群山俯首",
+        "desc": [
+            "Attack Range <@ba.vup>expands</>, immediately <$ba.attract>Lures</> all ground enemies in Attack Range to the closest reachable ground tile for <@ba.vup>{attract_time}</> seconds, Snow forming speed increases, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>, each attack ignores <@ba.vup>10</> RES and deals <@ba.vup>{attack@atk_scale_s3:0%}</> ATK as Arts damage",
+            "Attack Range <@ba.vup>expands</>, immediately <$ba.attract>Lures</> all ground enemies in Attack Range to the closest reachable ground tile for <@ba.vup>{attract_time}</> seconds, Snow forming speed increases, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>, each attack ignores <@ba.vup>10</> RES and deals <@ba.vup>{attack@atk_scale_s3:0%}</> ATK as Arts damage",
+            "Attack Range <@ba.vup>expands</>, immediately <$ba.attract>Lures</> all ground enemies in Attack Range to the closest reachable ground tile for <@ba.vup>{attract_time}</> seconds, Snow forming speed increases, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>, each attack ignores <@ba.vup>10</> RES and deals <@ba.vup>{attack@atk_scale_s3:0%}</> ATK as Arts damage",
+            "Attack Range <@ba.vup>expands</>, immediately <$ba.attract>Lures</> all ground enemies in Attack Range to the closest reachable ground tile for <@ba.vup>{attract_time}</> seconds, Snow forming speed increases, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>, each attack ignores <@ba.vup>10</> RES and deals <@ba.vup>{attack@atk_scale_s3:0%}</> ATK as Arts damage",
+            "Attack Range <@ba.vup>expands</>, immediately <$ba.attract>Lures</> all ground enemies in Attack Range to the closest reachable ground tile for <@ba.vup>{attract_time}</> seconds, Snow forming speed increases, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>, each attack ignores <@ba.vup>10</> RES and deals <@ba.vup>{attack@atk_scale_s3:0%}</> ATK as Arts damage",
+            "Attack Range <@ba.vup>expands</>, immediately <$ba.attract>Lures</> all ground enemies in Attack Range to the closest reachable ground tile for <@ba.vup>{attract_time}</> seconds, Snow forming speed increases, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>, each attack ignores <@ba.vup>10</> RES and deals <@ba.vup>{attack@atk_scale_s3:0%}</> ATK as Arts damage",
+            "Attack Range <@ba.vup>expands</>, immediately <$ba.attract>Lures</> all ground enemies in Attack Range to the closest reachable ground tile for <@ba.vup>{attract_time}</> seconds, Snow forming speed increases, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>, each attack ignores <@ba.vup>10</> RES and deals <@ba.vup>{attack@atk_scale_s3:0%}</> ATK as Arts damage",
+            "Attack Range <@ba.vup>expands</>, immediately <$ba.attract>Lures</> all ground enemies in Attack Range to the closest reachable ground tile for <@ba.vup>{attract_time}</> seconds, Snow forming speed increases, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>, each attack ignores <@ba.vup>10</> RES and deals <@ba.vup>{attack@atk_scale_s3:0%}</> ATK as Arts damage",
+            "Attack Range <@ba.vup>expands</>, immediately <$ba.attract>Lures</> all ground enemies in Attack Range to the closest reachable ground tile for <@ba.vup>{attract_time}</> seconds, Snow forming speed increases, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>, each attack ignores <@ba.vup>10</> RES and deals <@ba.vup>{attack@atk_scale_s3:0%}</> ATK as Arts damage",
+            "Attack Range <@ba.vup>expands</>, immediately <$ba.attract>Lures</> all ground enemies in Attack Range to the closest reachable ground tile for <@ba.vup>{attract_time}</> seconds, Snow forming speed increases, ATK<@ba.vup>+{atk:0%}</>, ASPD<@ba.vup>+{attack_speed}</>, each attack ignores <@ba.vup>10</> RES and deals <@ba.vup>{attack@atk_scale_s3:0%}</> ATK as Arts damage"
+        ]
+    },
+    "skchr_halo2_1": {
+        "name": "星图闪烁",
+        "desc": [
+            "ATK<@ba.vup>+{atk:0%}</>; Each attack jumps between enemies, up to <@ba.vup>{attack@chain.max_target}</> times",
+            "ATK<@ba.vup>+{atk:0%}</>; Each attack jumps between enemies, up to <@ba.vup>{attack@chain.max_target}</> times",
+            "ATK<@ba.vup>+{atk:0%}</>; Each attack jumps between enemies, up to <@ba.vup>{attack@chain.max_target}</> times",
+            "ATK<@ba.vup>+{atk:0%}</>; Each attack jumps between enemies, up to <@ba.vup>{attack@chain.max_target}</> times",
+            "ATK<@ba.vup>+{atk:0%}</>; Each attack jumps between enemies, up to <@ba.vup>{attack@chain.max_target}</> times",
+            "ATK<@ba.vup>+{atk:0%}</>; Each attack jumps between enemies, up to <@ba.vup>{attack@chain.max_target}</> times",
+            "ATK<@ba.vup>+{atk:0%}</>; Each attack jumps between enemies, up to <@ba.vup>{attack@chain.max_target}</> times",
+            "ATK<@ba.vup>+{atk:0%}</>; Each attack jumps between enemies, up to <@ba.vup>{attack@chain.max_target}</> times",
+            "ATK<@ba.vup>+{atk:0%}</>; Each attack jumps between enemies, up to <@ba.vup>{attack@chain.max_target}</> times",
+            "ATK<@ba.vup>+{atk:0%}</>; Each attack jumps between enemies, up to <@ba.vup>{attack@chain.max_target}</> times"
+        ]
+    },
+    "skchr_halo2_2": {
+        "name": "星束引力",
+        "desc": [
+            "The next attack targets the <@ba.vup>{max_target_attack}</> furthest enemies from the Objective Point in Attack Range, deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and extend <$ba.sluggish>Slow</> duration to <@ba.vup>{sluggish}</> seconds, links up to <@ba.vup>{max_target}</> nearby enemies, pulls them <@ba.vup>slightly</> toward target location and deals same amount of Arts damage to linked enemies",
+            "The next attack targets the <@ba.vup>{max_target_attack}</> furthest enemies from the Objective Point in Attack Range, deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and extend <$ba.sluggish>Slow</> duration to <@ba.vup>{sluggish}</> seconds, links up to <@ba.vup>{max_target}</> nearby enemies, pulls them <@ba.vup>slightly</> toward target location and deals same amount of Arts damage to linked enemies",
+            "The next attack targets the <@ba.vup>{max_target_attack}</> furthest enemies from the Objective Point in Attack Range, deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and extend <$ba.sluggish>Slow</> duration to <@ba.vup>{sluggish}</> seconds, links up to <@ba.vup>{max_target}</> nearby enemies, pulls them <@ba.vup>slightly</> toward target location and deals same amount of Arts damage to linked enemies",
+            "The next attack targets the <@ba.vup>{max_target_attack}</> furthest enemies from the Objective Point in Attack Range, deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and extend <$ba.sluggish>Slow</> duration to <@ba.vup>{sluggish}</> seconds, links up to <@ba.vup>{max_target}</> nearby enemies, pulls them <@ba.vup>slightly</> toward target location and deals same amount of Arts damage to linked enemies",
+            "The next attack targets the <@ba.vup>{max_target_attack}</> furthest enemies from the Objective Point in Attack Range, deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and extend <$ba.sluggish>Slow</> duration to <@ba.vup>{sluggish}</> seconds, links up to <@ba.vup>{max_target}</> nearby enemies, pulls them <@ba.vup>slightly</> toward target location and deals same amount of Arts damage to linked enemies",
+            "The next attack targets the <@ba.vup>{max_target_attack}</> furthest enemies from the Objective Point in Attack Range, deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and extend <$ba.sluggish>Slow</> duration to <@ba.vup>{sluggish}</> seconds, links up to <@ba.vup>{max_target}</> nearby enemies, pulls them <@ba.vup>slightly</> toward target location and deals same amount of Arts damage to linked enemies",
+            "The next attack targets the <@ba.vup>{max_target_attack}</> furthest enemies from the Objective Point in Attack Range, deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and extend <$ba.sluggish>Slow</> duration to <@ba.vup>{sluggish}</> seconds, links up to <@ba.vup>{max_target}</> nearby enemies, pulls them <@ba.vup>moderately</> toward target location and deals same amount of Arts damage to linked enemies",
+            "The next attack targets the <@ba.vup>{max_target_attack}</> furthest enemies from the Objective Point in Attack Range, deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and extend <$ba.sluggish>Slow</> duration to <@ba.vup>{sluggish}</> seconds, links up to <@ba.vup>{max_target}</> nearby enemies, pulls them <@ba.vup>moderately</> toward target location and deals same amount of Arts damage to linked enemies",
+            "The next attack targets the <@ba.vup>{max_target_attack}</> furthest enemies from the Objective Point in Attack Range, deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and extend <$ba.sluggish>Slow</> duration to <@ba.vup>{sluggish}</> seconds, links up to <@ba.vup>{max_target}</> nearby enemies, pulls them <@ba.vup>moderately</> toward target location and deals same amount of Arts damage to linked enemies",
+            "The next attack targets the <@ba.vup>{max_target_attack}</> furthest enemies from the Objective Point in Attack Range, deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage and extend <$ba.sluggish>Slow</> duration to <@ba.vup>{sluggish}</> seconds, links up to <@ba.vup>{max_target}</> nearby enemies, pulls them <@ba.vup>moderately</> toward target location and deals same amount of Arts damage to linked enemies"
+        ]
+    },
+    "skchr_halo2_3": {
+        "name": "并流连锁",
+        "desc": [
+            "Attack Range <@ba.vup>expands</>, Attack Interval is <@ba.vup>shortened</>, ATK<@ba.vup>+{atk:0%}</>; Attacks now lock onto <@ba.vup>{attack@max_target}</> targets. Locked-on enemies link to each other, each linked enemy shares <@ba.vup>{attack@atk_share:0%}</> of the incoming Arts damage received to other linked enemies",
+            "Attack Range <@ba.vup>expands</>, Attack Interval is <@ba.vup>shortened</>, ATK<@ba.vup>+{atk:0%}</>; Attacks now lock onto <@ba.vup>{attack@max_target}</> targets. Locked-on enemies link to each other, each linked enemy shares <@ba.vup>{attack@atk_share:0%}</> of the incoming Arts damage received to other linked enemies",
+            "Attack Range <@ba.vup>expands</>, Attack Interval is <@ba.vup>shortened</>, ATK<@ba.vup>+{atk:0%}</>; Attacks now lock onto <@ba.vup>{attack@max_target}</> targets. Locked-on enemies link to each other, each linked enemy shares <@ba.vup>{attack@atk_share:0%}</> of the incoming Arts damage received to other linked enemies",
+            "Attack Range <@ba.vup>expands</>, Attack Interval is <@ba.vup>shortened</>, ATK<@ba.vup>+{atk:0%}</>; Attacks now lock onto <@ba.vup>{attack@max_target}</> targets. Locked-on enemies link to each other, each linked enemy shares <@ba.vup>{attack@atk_share:0%}</> of the incoming Arts damage received to other linked enemies",
+            "Attack Range <@ba.vup>expands</>, Attack Interval is <@ba.vup>shortened</>, ATK<@ba.vup>+{atk:0%}</>; Attacks now lock onto <@ba.vup>{attack@max_target}</> targets. Locked-on enemies link to each other, each linked enemy shares <@ba.vup>{attack@atk_share:0%}</> of the incoming Arts damage received to other linked enemies",
+            "Attack Range <@ba.vup>expands</>, Attack Interval is <@ba.vup>shortened</>, ATK<@ba.vup>+{atk:0%}</>; Attacks now lock onto <@ba.vup>{attack@max_target}</> targets. Locked-on enemies link to each other, each linked enemy shares <@ba.vup>{attack@atk_share:0%}</> of the incoming Arts damage received to other linked enemies",
+            "Attack Range <@ba.vup>expands</>, Attack Interval is <@ba.vup>shortened</>, ATK<@ba.vup>+{atk:0%}</>; Attacks now lock onto <@ba.vup>{attack@max_target}</> targets. Locked-on enemies link to each other, each linked enemy shares <@ba.vup>{attack@atk_share:0%}</> of the incoming Arts damage received to other linked enemies",
+            "Attack Range <@ba.vup>expands</>, Attack Interval is <@ba.vup>shortened</>, ATK<@ba.vup>+{atk:0%}</>; Attacks now lock onto <@ba.vup>{attack@max_target}</> targets. Locked-on enemies link to each other, each linked enemy shares <@ba.vup>{attack@atk_share:0%}</> of the incoming Arts damage received to other linked enemies",
+            "Attack Range <@ba.vup>expands</>, Attack Interval is <@ba.vup>shortened</>, ATK<@ba.vup>+{atk:0%}</>; Attacks now lock onto <@ba.vup>{attack@max_target}</> targets. Locked-on enemies link to each other, each linked enemy shares <@ba.vup>{attack@atk_share:0%}</> of the incoming Arts damage received to other linked enemies",
+            "Attack Range <@ba.vup>expands</>, Attack Interval is <@ba.vup>shortened</>, ATK<@ba.vup>+{atk:0%}</>; Attacks now lock onto <@ba.vup>{attack@max_target}</> targets. Locked-on enemies link to each other, each linked enemy shares <@ba.vup>{attack@atk_share:0%}</> of the incoming Arts damage received to other linked enemies"
+        ]
+    },
+    "skchr_snhunt_1": {
+        "name": "强力击·β型",
+        "desc": [
+            "Increases the ATK of next attack to <@ba.vup>{atk_scale:0%}</>",
+            "Increases the ATK of next attack to <@ba.vup>{atk_scale:0%}</>",
+            "Increases the ATK of next attack to <@ba.vup>{atk_scale:0%}</>",
+            "Increases the ATK of next attack to <@ba.vup>{atk_scale:0%}</>",
+            "Increases the ATK of next attack to <@ba.vup>{atk_scale:0%}</>",
+            "Increases the ATK of next attack to <@ba.vup>{atk_scale:0%}</>",
+            "Increases the ATK of next attack to <@ba.vup>{atk_scale:0%}</>",
+            "Increases the ATK of next attack to <@ba.vup>{atk_scale:0%}</>",
+            "Increases the ATK of next attack to <@ba.vup>{atk_scale:0%}</>",
+            "Increases the ATK of next attack to <@ba.vup>{atk_scale:0%}</>"
+        ]
+    },
+    "skchr_snhunt_2": {
+        "name": "风雪连弩",
+        "desc": [
+            "Immediately launches special bullets, deal <@ba.vup>{atk_scale_1:0%}</> ATK as Physical damage twice (increases to <@ba.vup>{atk_scale_2:0%}</> ATK against stationary target)</br><@ba.rem>can hold {ct} charges</>",
+            "Immediately launches special bullets, deal <@ba.vup>{atk_scale_1:0%}</> ATK as Physical damage twice (increases to <@ba.vup>{atk_scale_2:0%}</> ATK against stationary target)</br><@ba.rem>can hold {ct} charges</>",
+            "Immediately launches special bullets, deal <@ba.vup>{atk_scale_1:0%}</> ATK as Physical damage twice (increases to <@ba.vup>{atk_scale_2:0%}</> ATK against stationary target)</br><@ba.rem>can hold {ct} charges</>",
+            "Immediately launches special bullets, deal <@ba.vup>{atk_scale_1:0%}</> ATK as Physical damage twice (increases to <@ba.vup>{atk_scale_2:0%}</> ATK against stationary target)</br><@ba.rem>can hold {ct} charges</>",
+            "Immediately launches special bullets, deal <@ba.vup>{atk_scale_1:0%}</> ATK as Physical damage twice (increases to <@ba.vup>{atk_scale_2:0%}</> ATK against stationary target)</br><@ba.rem>can hold {ct} charges</>",
+            "Immediately launches special bullets, deal <@ba.vup>{atk_scale_1:0%}</> ATK as Physical damage twice (increases to <@ba.vup>{atk_scale_2:0%}</> ATK against stationary target)</br><@ba.rem>can hold {ct} charges</>",
+            "Immediately launches special bullets, deal <@ba.vup>{atk_scale_1:0%}</> ATK as Physical damage twice (increases to <@ba.vup>{atk_scale_2:0%}</> ATK against stationary target)</br><@ba.rem>can hold {ct} charges</>",
+            "Immediately launches special bullets, deal <@ba.vup>{atk_scale_1:0%}</> ATK as Physical damage twice (increases to <@ba.vup>{atk_scale_2:0%}</> ATK against stationary target)</br><@ba.rem>can hold {ct} charges</>",
+            "Immediately launches special bullets, deal <@ba.vup>{atk_scale_1:0%}</> ATK as Physical damage twice (increases to <@ba.vup>{atk_scale_2:0%}</> ATK against stationary target)</br><@ba.rem>can hold {ct} charges</>",
+            "Immediately launches special bullets, deal <@ba.vup>{atk_scale_1:0%}</> ATK as Physical damage twice (increases to <@ba.vup>{atk_scale_2:0%}</> ATK against stationary target)</br><@ba.rem>can hold {ct} charges</>"
+        ]
+    },
+    "skchr_hadiya_1": {
+        "name": "沙地战术改良",
+        "desc": [
+            "DEF<@ba.vup>+{def:0%}</></br><$ba.alter>Equipment Response</>: Consumes <@ba.vdown>10</> DP, ATK<@ba.vup>+{extra.atk:0%}</> last until skill ends</br><@ba.rem>When skill is ready, can use <$ba.alter>Equipment Response</> to activates skill</>",
+            "DEF<@ba.vup>+{def:0%}</></br><$ba.alter>Equipment Response</>: Consumes <@ba.vdown>10</> DP, ATK<@ba.vup>+{extra.atk:0%}</> last until skill ends</br><@ba.rem>When skill is ready, can use <$ba.alter>Equipment Response</> to activates skill</>",
+            "DEF<@ba.vup>+{def:0%}</></br><$ba.alter>Equipment Response</>: Consumes <@ba.vdown>10</> DP, ATK<@ba.vup>+{extra.atk:0%}</> last until skill ends</br><@ba.rem>When skill is ready, can use <$ba.alter>Equipment Response</> to activates skill</>",
+            "DEF<@ba.vup>+{def:0%}</></br><$ba.alter>Equipment Response</>: Consumes <@ba.vdown>10</> DP, ATK<@ba.vup>+{extra.atk:0%}</> last until skill ends</br><@ba.rem>When skill is ready, can use <$ba.alter>Equipment Response</> to activates skill</>",
+            "DEF<@ba.vup>+{def:0%}</></br><$ba.alter>Equipment Response</>: Consumes <@ba.vdown>10</> DP, ATK<@ba.vup>+{extra.atk:0%}</> last until skill ends</br><@ba.rem>When skill is ready, can use <$ba.alter>Equipment Response</> to activates skill</>",
+            "DEF<@ba.vup>+{def:0%}</></br><$ba.alter>Equipment Response</>: Consumes <@ba.vdown>10</> DP, ATK<@ba.vup>+{extra.atk:0%}</> last until skill ends</br><@ba.rem>When skill is ready, can use <$ba.alter>Equipment Response</> to activates skill</>",
+            "DEF<@ba.vup>+{def:0%}</></br><$ba.alter>Equipment Response</>: Consumes <@ba.vdown>10</> DP, ATK<@ba.vup>+{extra.atk:0%}</> last until skill ends</br><@ba.rem>When skill is ready, can use <$ba.alter>Equipment Response</> to activates skill</>",
+            "DEF<@ba.vup>+{def:0%}</></br><$ba.alter>Equipment Response</>: Consumes <@ba.vdown>10</> DP, ATK<@ba.vup>+{extra.atk:0%}</> last until skill ends</br><@ba.rem>When skill is ready, can use <$ba.alter>Equipment Response</> to activates skill</>",
+            "DEF<@ba.vup>+{def:0%}</></br><$ba.alter>Equipment Response</>: Consumes <@ba.vdown>10</> DP, ATK<@ba.vup>+{extra.atk:0%}</> last until skill ends</br><@ba.rem>When skill is ready, can use <$ba.alter>Equipment Response</> to activates skill</>",
+            "DEF<@ba.vup>+{def:0%}</></br><$ba.alter>Equipment Response</>: Consumes <@ba.vdown>10</> DP, ATK<@ba.vup>+{extra.atk:0%}</> last until skill ends</br><@ba.rem>When skill is ready, can use <$ba.alter>Equipment Response</> to activates skill</>"
+        ]
+    },
+    "skchr_hadiya_2": {
+        "name": "剑角之锋",
+        "desc": [
+            "Consumes <@ba.vdown>10</> DP to combine sword and staff, Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, attacks up to <@ba.vup>{attack@max_target:0}</> enemies simultaneously; During skill duration, can consumes <@ba.vdown>15</> DP to activate <$ba.alter>Equipment Response</>, extends skill duration for <@ba.vup>15</> seconds",
+            "Consumes <@ba.vdown>10</> DP to combine sword and staff, Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, attacks up to <@ba.vup>{attack@max_target:0}</> enemies simultaneously; During skill duration, can consumes <@ba.vdown>15</> DP to activate <$ba.alter>Equipment Response</>, extends skill duration for <@ba.vup>15</> seconds",
+            "Consumes <@ba.vdown>10</> DP to combine sword and staff, Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, attacks up to <@ba.vup>{attack@max_target:0}</> enemies simultaneously; During skill duration, can consumes <@ba.vdown>15</> DP to activate <$ba.alter>Equipment Response</>, extends skill duration for <@ba.vup>15</> seconds",
+            "Consumes <@ba.vdown>10</> DP to combine sword and staff, Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, attacks up to <@ba.vup>{attack@max_target:0}</> enemies simultaneously; During skill duration, can consumes <@ba.vdown>15</> DP to activate <$ba.alter>Equipment Response</>, extends skill duration for <@ba.vup>15</> seconds",
+            "Consumes <@ba.vdown>10</> DP to combine sword and staff, Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, attacks up to <@ba.vup>{attack@max_target:0}</> enemies simultaneously; During skill duration, can consumes <@ba.vdown>15</> DP to activate <$ba.alter>Equipment Response</>, extends skill duration for <@ba.vup>15</> seconds",
+            "Consumes <@ba.vdown>10</> DP to combine sword and staff, Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, attacks up to <@ba.vup>{attack@max_target:0}</> enemies simultaneously; During skill duration, can consumes <@ba.vdown>15</> DP to activate <$ba.alter>Equipment Response</>, extends skill duration for <@ba.vup>15</> seconds",
+            "Consumes <@ba.vdown>10</> DP to combine sword and staff, Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, attacks up to <@ba.vup>{attack@max_target:0}</> enemies simultaneously; During skill duration, can consumes <@ba.vdown>15</> DP to activate <$ba.alter>Equipment Response</>, extends skill duration for <@ba.vup>15</> seconds",
+            "Consumes <@ba.vdown>10</> DP to combine sword and staff, Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, attacks up to <@ba.vup>{attack@max_target:0}</> enemies simultaneously; During skill duration, can consumes <@ba.vdown>15</> DP to activate <$ba.alter>Equipment Response</>, extends skill duration for <@ba.vup>15</> seconds",
+            "Consumes <@ba.vdown>10</> DP to combine sword and staff, Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, attacks up to <@ba.vup>{attack@max_target:0}</> enemies simultaneously; During skill duration, can consumes <@ba.vdown>15</> DP to activate <$ba.alter>Equipment Response</>, extends skill duration for <@ba.vup>15</> seconds",
+            "Consumes <@ba.vdown>10</> DP to combine sword and staff, Attack Range <@ba.vup>expands</>, ATK<@ba.vup>+{atk:0%}</>, attacks up to <@ba.vup>{attack@max_target:0}</> enemies simultaneously; During skill duration, can consumes <@ba.vdown>15</> DP to activate <$ba.alter>Equipment Response</>, extends skill duration for <@ba.vup>15</> seconds"
+        ]
+    },
+    "skchr_akkord_1": {
+        "name": "反拍重音",
+        "desc": [
+            "The next attack deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage</br><@ba.rem>Can hold 2 charges</>",
+            "The next attack deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage</br><@ba.rem>Can hold 2 charges</>",
+            "The next attack deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage</br><@ba.rem>Can hold 2 charges</>",
+            "The next attack deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage</br><@ba.rem>Can hold 2 charges</>",
+            "The next attack deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage</br><@ba.rem>Can hold 2 charges</>",
+            "The next attack deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage</br><@ba.rem>Can hold 2 charges</>",
+            "The next attack deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage</br><@ba.rem>Can hold 2 charges</>",
+            "The next attack deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage</br><@ba.rem>Can hold 2 charges</>",
+            "The next attack deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage</br><@ba.rem>Can hold 2 charges</>",
+            "The next attack deals <@ba.vup>{atk_scale:0%}</> ATK as Arts damage</br><@ba.rem>Can hold 2 charges</>"
+        ]
+    },
+    "skchr_akkord_2": {
+        "name": "震爆调谐",
+        "desc": [
+            "ATK<@ba.vup>+{atk:0%}</>; Each attack creates shockwave on other operator in Attack Range, deals <@ba.vup>{attack@aoe_atk_scale:0%}</> ATK as AOE Arts damage",
+            "ATK<@ba.vup>+{atk:0%}</>; Each attack creates shockwave on other operator in Attack Range, deals <@ba.vup>{attack@aoe_atk_scale:0%}</> ATK as AOE Arts damage",
+            "ATK<@ba.vup>+{atk:0%}</>; Each attack creates shockwave on other operator in Attack Range, deals <@ba.vup>{attack@aoe_atk_scale:0%}</> ATK as AOE Arts damage",
+            "ATK<@ba.vup>+{atk:0%}</>; Each attack creates shockwave on other operator in Attack Range, deals <@ba.vup>{attack@aoe_atk_scale:0%}</> ATK as AOE Arts damage",
+            "ATK<@ba.vup>+{atk:0%}</>; Each attack creates shockwave on other operator in Attack Range, deals <@ba.vup>{attack@aoe_atk_scale:0%}</> ATK as AOE Arts damage",
+            "ATK<@ba.vup>+{atk:0%}</>; Each attack creates shockwave on other operator in Attack Range, deals <@ba.vup>{attack@aoe_atk_scale:0%}</> ATK as AOE Arts damage",
+            "ATK<@ba.vup>+{atk:0%}</>; Each attack creates shockwave on other operator in Attack Range, deals <@ba.vup>{attack@aoe_atk_scale:0%}</> ATK as AOE Arts damage",
+            "ATK<@ba.vup>+{atk:0%}</>; Each attack creates shockwave on other operator in Attack Range, deals <@ba.vup>{attack@aoe_atk_scale:0%}</> ATK as AOE Arts damage",
+            "ATK<@ba.vup>+{atk:0%}</>; Each attack creates shockwave on other operator in Attack Range, deals <@ba.vup>{attack@aoe_atk_scale:0%}</> ATK as AOE Arts damage",
+            "ATK<@ba.vup>+{atk:0%}</>; Each attack creates shockwave on other operator in Attack Range, deals <@ba.vup>{attack@aoe_atk_scale:0%}</> ATK as AOE Arts damage"
+        ]
     }
 }

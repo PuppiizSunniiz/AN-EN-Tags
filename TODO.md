@@ -28,15 +28,26 @@
     - RIT-Y : Virtuosa
 
 ### EP16 : Abnormal Spectrum
-- Effect
-    - Mantra talent & skill (Nervous Impairment/Paralyze)
 - Trait
-    - Loopshooter
+    - Loopshooter mod
     - Reaper REA-Y : Executor the Ex Foedere
+
+### Retracing Our Steps 1101
+- Effect
+    - Mercenary - Equipment Response ? (ba.alter)
+- Trait
+    - AFT-Y (Vina edition)
+    - AST-X Arts Pro
+    - ISW-a
+        - Gnosis
+        - Ho'ol
+    - Mercenary
+    - Eye of the Snowstorm
 
 ### To Do
 - Independent-miya
 - Token
+    - SilverAsh s1 Eye of Snowstorm when entry
     - Skill SP recovery
     - Mod talent
     - Add token talent to pyUpdate (both base/mod)

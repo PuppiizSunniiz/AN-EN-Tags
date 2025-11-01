@@ -9200,5 +9200,207 @@
                 "desc": "ASPD +12 <@ba.talpu>(+2)</>, lost this effect after taking damage."
             }
         ]
+    ],
+	    "char_1045_svash2": [
+        [
+            {
+                "name": "开放性开局",
+                "descCN": "在场时向待部署区中加入“风雪之眼”，且使待部署区按照部署费用排列。位于“风雪之眼”左侧的干员与自身初始技力+2，下次再部署时间-10%",
+                "desc": "While on the field, adds Eye of the Snowstorm to Deployment waiting zone and rearrange operators according to their current Deployment cost. Operators on the left side of Eye of the Snowstorm gain +2 Starting SP and Redeployment Time -10%"
+            },
+            {
+                "name": "开放性开局",
+                "descCN": "在场时向待部署区中加入“风雪之眼”，且使待部署区按照部署费用排列。位于“风雪之眼”左侧的干员与自身初始技力+3，下次再部署时间-15%",
+                "desc": "While on the field, adds Eye of the Snowstorm to Deployment waiting zone and rearrange operators according to their current Deployment cost. Operators on the left side of Eye of the Snowstorm gain +3 Starting SP and Redeployment Time -15%"
+            },
+            {
+                "name": "开放性开局",
+                "descCN": "在场时向待部署区中加入“风雪之眼”，且使待部署区按照部署费用排列。位于“风雪之眼”左侧的干员与自身初始技力+4，下次再部署时间-20%",
+                "desc": "While on the field, adds Eye of the Snowstorm to Deployment waiting zone and rearrange operators according to their current Deployment cost. Operators on the left side of Eye of the Snowstorm gain +4 Starting SP and Redeployment Time -20%"
+            }
+        ],
+        [
+            {
+                "name": "雪境先驱",
+                "descCN": "在场时，[谢拉格]干员免疫<$ba.frozen>冻结</>，防御力+60且每秒回复1.5%最大生命值; 在场15秒后防御力和生命回复效果翻倍",
+                "desc": "While on the field, [Kjerag] operators immune to <$ba.frozen>Freeze</>, gaint DEF+60 and recover 1.5% Max HP every seconds; After being deployed for 15 seconds, DEF and HP recover effect are doubled"
+            },
+            {
+                "name": "雪境先驱",
+                "descCN": "在场时，[谢拉格]干员免疫<$ba.frozen>冻结</>，防御力+80<@ba.talpu>(+20)</>且每秒回复2%<@ba.talpu>(+0.5%)</>最大生命值; 凛御银灰在场15秒后，防御力和生命回复效果翻倍",
+                "desc": "While on the field, [Kjerag] operators immune to <$ba.frozen>Freeze</>, gaint DEF+80<@ba.talpu>(+20)</> and recover 2%<@ba.talpu>(+0.5%)</> Max HP every seconds; After being deployed for 15 seconds, DEF and HP recover effect are doubled"
+            }
+        ]
+    ],
+	"token_10057_svash2_eagle1":[
+		[
+			{
+				"name": "开放性开局",
+                "descCN": "使左侧的干员初始技力增加，再部署时间减少",
+                "desc": "Grants Starting SP to operators on the left and reduces their Redeployment Time"
+			}
+		]
+	],
+	"token_10057_svash2_eagle2":[
+		[
+			{
+				"name": "开放性开局",
+                "descCN": "使左侧的干员初始技力增加，再部署时间减少",
+                "desc": "Grants Starting SP to operators on the left and reduces their Redeployment Time"
+			}
+		]
+	],
+	"token_10057_svash2_eagle3":[
+		[
+			{
+				"name": "开放性开局",
+                "descCN": "使左侧的干员初始技力增加，再部署时间减少",
+                "desc": "Grants Starting SP to operators on the left and reduces their Redeployment Time"
+			}
+		]
+	],
+    "char_1046_sbell2": [
+        [
+            {
+                "name": "无垠的雪景",
+                "descCN": "攻击范围内的地面每隔10秒产生一层积雪，地面敌人经过时立即受到相当于攻击力20%的法术伤害，每层积雪使经过的所有敌人移动速度下降10%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "desc": "Snow periodically form on the ground tiles in Attack Range every 10 seconds, immediately deals 20% ATK as Arts damage to enemies passing through. Each layer of Snow reduce movement speed by 10%, up to 5 layers per tile (Snow disappears when the first enemy leaves the area)."
+            },
+            {
+                "name": "无垠的雪景",
+                "descCN": "攻击范围内的地面每隔10秒产生一层积雪，地面敌人经过时立即受到相当于攻击力25%<@ba.talpu>(+5%)</>的法术伤害，每层积雪使经过的所有敌人移动速度下降10%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "desc": "Snow periodically form on the ground tiles in Attack Range every 10 seconds, immediately deals 25%<@ba.talpu>(+5%)</> ATK as Arts damage to enemies passing through. Each layer of Snow reduce movement speed by 10%, up to 5 layers per tile (Snow disappears when the first enemy leaves the area)."
+            },
+            {
+                "name": "无垠的雪景",
+                "descCN": "攻击范围内的地面每隔7.5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力50%的法术伤害，每层积雪使经过的所有敌人移动速度下降10%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "desc": "Snow periodically form on the ground tiles in Attack Range every 7.5 seconds, immediately deals 50% ATK as Arts damage to enemies passing through. Each layer of Snow reduce movement speed by 10%, up to 5 layers per tile (Snow disappears when the first enemy leaves the area)."
+            },
+            {
+                "name": "无垠的雪景",
+                "descCN": "攻击范围内的地面每隔7.5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力55%<@ba.talpu>(+5%)</>的法术伤害，每层积雪使经过的所有敌人移动速度下降10%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "desc": "Snow periodically form on the ground tiles in Attack Range every 7.5 seconds, immediately deals 55%<@ba.talpu>(+5%)</> ATK as Arts damage to enemies passing through. Each layer of Snow reduce movement speed by 10%, up to 5 layers per tile (Snow disappears when the first enemy leaves the area)."
+            },
+            {
+                "name": "无垠的雪景",
+                "descCN": "攻击范围内的地面每隔5.5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力75%的法术伤害，每层积雪使经过的所有敌人移动速度下降12%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "desc": "Snow periodically form on the ground tiles in Attack Range every 5.5 seconds, immediately deals 75% ATK as Arts damage to enemies passing through. Each layer of Snow reduce movement speed by 12%, up to 5 layers per tile (Snow disappears when the first enemy leaves the area)."
+            },
+            {
+                "name": "无垠的雪景",
+                "descCN": "攻击范围内的地面每隔5.5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力80%<@ba.talpu>(+5%)</>的法术伤害，每层积雪使经过的所有敌人移动速度下降12%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "desc": "Snow periodically form on the ground tiles in Attack Range every 5.5 seconds, immediately deals 80%<@ba.talpu>(+5%)</> ATK as Arts damage to enemies passing through. Each layer of Snow reduce movement speed by 12%, up to 5 layers per tile (Snow disappears when the first enemy leaves the area)."
+            }
+        ],
+        [
+            {
+                "name": "圣山的祝福",
+                "descCN": "受到伤害时使敌人<$ba.cold>寒冷</>1.5秒，若受到致命伤害，仅一次立刻回复所有生命值并使自身<$ba.frozen>冻结</>4秒，使攻击范围内所有敌方单位<$ba.frozen>冻结</>8秒",
+                "desc": "When taking damage, inflicts <$ba.cold>cold</> on attacker for 1.5 seconds. When receives lethal damage for the first time, restores all HP, <$ba.frozen>freezes</> herself for 4 seconds and <$ba.frozen>freezes</> all enemies in Attack Range for 8 seconds"
+            },
+            {
+                "name": "圣山的祝福",
+                "descCN": "受到伤害时使敌人<$ba.cold>寒冷</>2<@ba.talpu>(+0.5)</>秒，若受到致命伤害，仅一次立刻回复所有生命值并使自身<$ba.frozen>冻结</>4秒，使攻击范围内所有敌方单位<$ba.frozen>冻结</>8秒",
+                "desc": "When taking damage, inflicts <$ba.cold>cold</> on attacker for 2<@ba.talpu>(+0.5)</> seconds. When receives lethal damage for the first time, restores all HP, <$ba.frozen>freezes</> herself for 4 seconds and <$ba.frozen>freezes</> all enemies in Attack Range for 8 seconds"
+            }
+        ]
+    ],
+    "char_1047_halo2": [
+        [
+            {
+                "name": "数据建模",
+                "descCN": "对敌人造成<$ba.sluggish>停顿</>效果时，自身的攻击速度+1，最多叠加12次",
+                "desc": "When inflicts <$ba.sluggish>Slow</> on an enemy, ASPD+1, up to 12 times"
+            },
+            {
+                "name": "数据建模",
+                "descCN": "对敌人造成<$ba.sluggish>停顿</>效果时，自身的攻击速度+1，最多叠加18次",
+                "desc": "When inflicts <$ba.sluggish>Slow</> on an enemy, ASPD+1, up to 18 times"
+            }
+        ],
+        [
+            {
+                "name": "能源解析",
+                "descCN": "攻击范围内的敌人受到10%的<$ba.fragile>脆弱</>效果，敌人在溯光星源的攻击范围内停留超过7秒后，<$ba.fragile>脆弱</>效果提升至14%",
+                "desc": "Inflicts 10% <$ba.fragile>Fragile</> to enemies in Attack Range; If an enemy stays in Attack Range for 7 seconds, <$ba.fragile>Fragile</> effect increases 14% to instead"
+            },
+            {
+                "name": "能源解析",
+                "descCN": "攻击范围内的敌人受到12%<@ba.talpu>(+2%)</>的<$ba.fragile>脆弱</>效果，敌人在溯光星源的攻击范围内停留超过7秒后，<$ba.fragile>脆弱</>效果提升至16%<@ba.talpu>(+2%)</>",
+                "desc": "Inflicts 12%<@ba.talpu>(+2%)</>% <$ba.fragile>Fragile</> to enemies in Attack Range; If an enemy stays in Attack Range for 7 seconds, <$ba.fragile>Fragile</> effect increases 16%<@ba.talpu>(+2%)</> to instead"
+            }
+        ]
+    ],
+    "char_4211_snhunt": [
+        [
+            {
+                "name": "裂云一击",
+                "descCN": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力150%的物理伤害和2秒<$ba.cold>寒冷</>",
+                "desc": "When skill is activated, sends beast out to attack, deals 150% ATK as Physical damage and inflicts <$ba.cold>Cold</> for 2 seconds"
+            },
+            {
+                "name": "裂云一击",
+                "descCN": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力155%<@ba.talpu>(+5%)</>的物理伤害和2秒<$ba.cold>寒冷</>",
+                "desc": "When skill is activated, sends beast out to attack, deals 155%<@ba.talpu>(+5%)</> ATK as Physical damage and inflicts <$ba.cold>Cold</> for 2 seconds"
+            },
+            {
+                "name": "裂云一击",
+                "descCN": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力180%的物理伤害和3秒<$ba.cold>寒冷</>",
+                "desc": "When skill is activated, sends beast out to attack, deals 180% ATK as Physical damage and inflicts <$ba.cold>Cold</> for 3 seconds"
+            },
+            {
+                "name": "裂云一击",
+                "descCN": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力185%<@ba.talpu>(+5%)</>的物理伤害和3秒<$ba.cold>寒冷</>",
+                "desc": "When skill is activated, sends beast out to attack, deals 185%<@ba.talpu>(+5%)</> ATK as Physical damage and inflicts <$ba.cold>Cold</> for 3 seconds"
+            }
+        ]
+    ],
+    "char_394_hadiya": [
+        [
+            {
+                "name": "荒野的后裔",
+                "descCN": "通过部署, 开启技能, 使用<$ba.alter>装备应变</>消耗费用后，攻击力+2%，使攻击范围内的敌人<$ba.stun>晕眩</>2秒(攻击力最多提升3次)",
+                "desc": "When DP is consumed during deployment, skill activatation or <$ba.alter>Equipment Response</>, ATK+2% and <$ba.stun>stuns</> all enemies in Attack Range for 2 seconds (ATK can be stack up to 3 times)"
+            },
+            {
+                "name": "荒野的后裔",
+                "descCN": "通过部署, 开启技能, 使用<$ba.alter>装备应变</>消耗费用后，攻击力+3%<@ba.talpu>(+1%)</>，使攻击范围内的敌人<$ba.stun>晕眩</>2秒(攻击力最多提升3次)",
+                "desc": "When DP is consumed during deployment, skill activatation or <$ba.alter>Equipment Response</>, ATK+3%<@ba.talpu>(+1%)</> and <$ba.stun>stuns</> all enemies in Attack Range for 2 seconds (ATK can be stack up to 3 times)"
+            },
+            {
+                "name": "荒野的后裔",
+                "descCN": "通过部署, 开启技能, 使用<$ba.alter>装备应变</>消耗费用后，攻击力+4%，使攻击范围内的敌人<$ba.stun>晕眩</>2秒(攻击力最多提升5次)",
+                "desc": "When DP is consumed during deployment, skill activatation or <$ba.alter>Equipment Response</>, ATK+4% and <$ba.stun>stuns</> all enemies in Attack Range for 2 seconds (ATK can be stack up to 5 times)"
+            },
+            {
+                "name": "荒野的后裔",
+                "descCN": "通过部署, 开启技能, 使用<$ba.alter>装备应变</>消耗费用后，攻击力+5%<@ba.talpu>(+1%)</>，使攻击范围内的敌人<$ba.stun>晕眩</>2秒(攻击力最多提升5次)",
+                "desc": "When DP is consumed during deployment, skill activatation or <$ba.alter>Equipment Response</>, ATK+5%<@ba.talpu>(+1%)</> and <$ba.stun>stuns</> all enemies in Attack Range for 2 seconds (ATK can be stack up to 5 times)"
+            }
+        ]
+    ],
+    "char_4051_akkord": [
+        [
+            {
+                "name": "律脉同构",
+                "descCN": "攻击范围内至少有1名其他友方干员时，攻击力+8%",
+                "desc": "When there is at least 1 other operator in Attack Range, ATK+8%"
+            },
+            {
+                "name": "律脉同构",
+                "descCN": "攻击范围内至少有1名其他友方干员时，攻击力+10<@ba.talpu>(+2%)</>",
+                "desc": "When there is at least 1 other operator in Attack Range, ATK+10<@ba.talpu>(+2%)</>"
+            },
+            {
+                "name": "律脉同构",
+                "descCN": "攻击范围内至少有1名其他友方干员时，攻击力+15%",
+                "desc": "When there is at least 1 other operator in Attack Range, ATK+15%"
+            },
+            {
+                "name": "律脉同构",
+                "descCN": "攻击范围内至少有1名其他友方干员时，攻击力+17<@ba.talpu>(+2%)</>",
+                "desc": "When there is at least 1 other operator in Attack Range, ATK+17<@ba.talpu>(+2%)</>"
+            }
+        ]
     ]
 }
