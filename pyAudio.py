@@ -24,10 +24,13 @@ def audio_json(show : bool = False):
     
     json_tl_artist      =   json_load("json/tl-artist.json")
     
+    json_birthday       =   json_load(r"temp\birthday_voicelines.json") if birthday_manual else {}
+    
     json_audio = {"charWords" : {}, "voiceLangDict" : {}}
     skin_word = []
     audio_wordkey = []
     linkage_folder = {}
+    birthday_dict = {"EN" : [], "KR" : []}
     json_test = []
     
     # charWords
@@ -59,11 +62,18 @@ def audio_json(show : bool = False):
 
         if linkage:
             linkage_folder[char] = linkage
-            
+        
+        # Birthday
+        for global_lang in ["EN", "KR"]:
+            if global_lang in json_charWords["voiceLangDict"][char]["dict"]:
+                birthday_dict[global_lang].append(char)
+        
     json_audio["skinWords"] = sorted(list(set(skin_word)))
     json_audio["LINKAGE"] = linkage_folder
-    
+    json_audio["Birthday"] = json_birthday if birthday_manual else birthday_dict
     return json_audio
+
+birthday_manual = True
 
 if __name__ == "__main__":
     script_result(audio_json(), True)
