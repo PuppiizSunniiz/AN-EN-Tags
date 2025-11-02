@@ -983,4 +983,11 @@ def act4collection():
         if mission["missionGroup"] == "act4collection":
             article.append(f'{", ".join([f'{DB["json_itemEN"]["items"][reward["id"]]["name"]}, {reward["count"]}' for reward in mission["rewards"]])}\t|\t{mission["description"]}')
     script_result(article, True)
-act4collection()
+#act4collection()
+
+def building_room_name():
+    rooms = {}
+    for room_id in DB["json_building"]["rooms"]:
+        rooms[DB["json_building"]["rooms"][room_id]["name"]] = DB["json_buildingEN"]["rooms"][room_id]["name"]
+    script_result(rooms, True)
+building_room_name()

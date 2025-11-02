@@ -106,7 +106,7 @@
             "buffName": "商业版图",
             "skillIcon": "bskill_ctrl_t_limit&spd3",
             "desc": "进驻控制中枢时，每个存在<@cc.vup>3</>名<$cc.g.karlan><@cc.kw>谢拉格</></>干员的贸易站，订单获取效率<@cc.vup>+10%</>",
-            "description": "进驻控制中枢时，每个存在<@cc.vup>3</>名<$cc.g.karlan><@cc.kw>谢拉格</></>干员的贸易站，订单获取效率<@cc.vup>+10%</>"
+            "description": "When this Operator is assigned to the Control Center, Trading Posts with 3 <$cc.g.karlan><@cc.kw>Kjerag</></> Operators assigned, gain order acquisition efficiency <@cc.vup>+10%</>"
         },
         "control_hire_spd[000]": {
             "buffName": "Infectivity",
@@ -838,7 +838,7 @@
             "buffName": "勘探背包",
             "skillIcon": "bskill_man_limit1",
             "desc": "进驻制造站时，当前制造站内每个<$cc.sk.manu2><@cc.kw>莱茵科技类</></>技能为自身<@cc.vup>+5</>的仓库上限容量",
-            "description": "进驻制造站时，当前制造站内每个<$cc.sk.manu2><@cc.kw>莱茵科技类</></>技能为自身<@cc.vup>+5</>的仓库上限容量"
+            "description": "When this Operator is assigned to a Factory, all <$cc.sk.manu2><@cc.kw>Rhine Tech-type Skill</></> skills in the Factory, capacity limit <@cc.vup>+5</>"
         },
         "manu_prod_bd[000]": {
             "buffName": "Silent and Hardworking",
@@ -1042,7 +1042,7 @@
             "buffName": "独当一面",
             "skillIcon": "bskill_man_spd&cost3",
             "desc": "进驻制造站时，生产力<@cc.vup>+30%</>，心情每小时消耗<@cc.vdown>+0.25</>",
-            "description": "进驻制造站时，生产力<@cc.vup>+30%</>，心情每小时消耗<@cc.vdown>+0.25</>"
+            "description": "When this Operator is assigned to a Factory, Productivity <@cc.vup>+30%</> and Morale consumed per hour <@cc.vdown>+0.25</>"
         },
         "manu_prod_spd&limit&cost[200]": {
             "buffName": "Proficient Artistry",
@@ -2830,7 +2830,7 @@
             "buffName": "近卫专精·α",
             "skillIcon": "bskill_train_guard1",
             "desc": "进驻训练室协助位时，<@cc.kw>近卫</>干员的专精技能训练速度<@cc.vup>+30%</>，如果本次训练专精技能至<@cc.vup>0</>级，则训练速度额外<@cc.vup>0%</>",
-            "description": "进驻训练室协助位时，<@cc.kw>近卫</>干员的专精技能训练速度<@cc.vup>+30%</>，如果本次训练专精技能至<@cc.vup>0</>级，则训练速度额外<@cc.vup>0%</>"
+            "description": "When this Operator is assigned to be the Trainer in the Training Room, increases the Specialization training speed of <@cc.kw>Guard</> Operators by <@cc.vup>+30%</>, and further increases this speed by <@cc.vup>0%</> if training the skill to Specialization Level <@cc.vup>0</>"
         },
         "train_spd&profession2[322]": {
             "buffName": "勇气传承",
@@ -3628,7 +3628,7 @@
             "buffName": "雪境归心",
             "skillIcon": "bskill_hire_spd&char1",
             "desc": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+35%</>，心情每小时消耗<@cc.vup>-0.25</>，如果<@cc.kw>凛御银灰</>进驻在<@cc.kw>控制中枢</>，则人脉资源的联络速度额外<@cc.vup>+10%</>",
-            "description": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+35%</>，心情每小时消耗<@cc.vup>-0.25</>，如果<@cc.kw>凛御银灰</>进驻在<@cc.kw>控制中枢</>，则人脉资源的联络速度额外<@cc.vup>+10%</>"
+            "description": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+35%</> and Morale consumed per hour <@cc.vup>-0.25</>. if <@cc.kw>SilverAsh the Reignfrost</> is assigned to the <@cc.kw>Control Center</>, increase contacting speed by an additional <@cc.vup>+10%</>"
         },
         "hire_spd&clue[010]": {
             "buffName": "Catastrophe Messenger α",

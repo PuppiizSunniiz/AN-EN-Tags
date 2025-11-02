@@ -45,6 +45,8 @@
     - Eye of the Snowstorm
 
 ### To Do
+- properly add EN KR Birthday voice
+- handle Xiaohei cat / mudmud masked audio
 - Independent-miya
 - Token
     - SilverAsh s1 Eye of Snowstorm when entry
