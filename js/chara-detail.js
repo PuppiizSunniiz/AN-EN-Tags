@@ -1357,7 +1357,13 @@
                     return false
                 }
             })
-            globaltoken = defaulttoken?defaulttoken:opdataFull.skills[0]?opdataFull.skills[0].overrideTokenKey:null
+            if (defaulttoken && Object.keys(opdataFull.displayTokenDict) == 1) // bypass SilverAsh the Reignfrost token variants
+                globaltoken = defaulttoken
+            else if (opdataFull.skills[0])
+                globaltoken = opdataFull.skills[0].overrideTokenKey
+            else
+                globaltoken = null
+
             globalskill = 0
 
             tokenname   = globaltoken

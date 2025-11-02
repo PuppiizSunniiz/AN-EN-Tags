@@ -1,6 +1,6 @@
 {
-    "list":{
-        "WARRIOR":[
+    "list": {
+        "WARRIOR": [
             "sword",
             "fearless",
             "instructor",
@@ -13,9 +13,10 @@
             "librator",
             "crusher",
             "hammer",
-            "primguard"
+            "primguard",
+            "mercenary"
         ],
-        "MEDIC":[
+        "MEDIC": [
             "physician",
             "ringhealer",
             "healer",
@@ -23,7 +24,7 @@
             "incantationmedic",
             "chainhealer"
         ],
-        "PIONEER":[
+        "PIONEER": [
             "agent",
             "pioneer",
             "charger",
@@ -31,7 +32,7 @@
             "tactician",
             "counsellor"
         ],
-        "CASTER":[
+        "CASTER": [
             "corecaster",
             "splashcaster",
             "chain",
@@ -42,7 +43,7 @@
             "primcaster",
             "soulcaster"
         ],
-        "SNIPER":[
+        "SNIPER": [
             "fastshot",
             "aoesniper",
             "reaperrange",
@@ -53,7 +54,7 @@
             "hunter",
             "loopshooter"
         ],
-        "TANK":[
+        "TANK": [
             "protector",
             "guardian",
             "artsprotector",
@@ -63,7 +64,7 @@
             "shotprotector",
             "primprotector"
         ],
-        "SUPPORT":[
+        "SUPPORT": [
             "slower",
             "summoner",
             "underminer",
@@ -72,7 +73,7 @@
             "craftsman",
             "ritualist"
         ],
-        "SPECIAL":[
+        "SPECIAL": [
             "executor",
             "merchant",
             "hookmaster",
@@ -85,353 +86,358 @@
             "skywalker"
         ]
     },
-    "subclass":{
-        "sword":{
-            "name":"Sword",
-            "tl":"Dual-Strike",
-            "en":"Swordmaster"
+    "subclass": {
+        "sword": {
+            "name": "Sword",
+            "tl": "Dual-Strike",
+            "en": "Swordmaster"
         },
-        "fearless":{
-            "name":"Fearless",
-            "tl":"Dreadnought",
-            "en":"Dreadnought"
+        "fearless": {
+            "name": "Fearless",
+            "tl": "Dreadnought",
+            "en": "Dreadnought"
         },
-        "instructor":{
-            "name":"Instructor",
-            "tl":"Instructor",
-            "en":"Instructor"
+        "instructor": {
+            "name": "Instructor",
+            "tl": "Instructor",
+            "en": "Instructor"
         },
-        "centurion":{
-            "name":"Centurion",
-            "tl":"Centurion",
-            "en":"Centurion"
+        "centurion": {
+            "name": "Centurion",
+            "tl": "Centurion",
+            "en": "Centurion"
         },
-        "lord":{
-            "name":"Lord",
-            "tl":"Lord",
-            "en":"Lord"
+        "lord": {
+            "name": "Lord",
+            "tl": "Lord",
+            "en": "Lord"
         },
-        "artsfghter":{
-            "name":"Arts Fighter",
-            "tl":"Spellblade",
-            "en":"Arts Fighter"
+        "artsfghter": {
+            "name": "Arts Fighter",
+            "tl": "Spellblade",
+            "en": "Arts Fighter"
         },
-        "musha":{
-            "name":"Musha",
-            "tl":"Musha",
-            "en":"Soloblade"
+        "musha": {
+            "name": "Musha",
+            "tl": "Musha",
+            "en": "Soloblade"
         },
-        "fighter":{
-            "name":"Fighter",
-            "tl":"Brawler",
-            "en":"Fighter"
+        "fighter": {
+            "name": "Fighter",
+            "tl": "Brawler",
+            "en": "Fighter"
         },
-        "reaper":{
-            "name":"Reaper",
-            "tl":"Reaper",
-            "en":"Reaper"
+        "reaper": {
+            "name": "Reaper",
+            "tl": "Reaper",
+            "en": "Reaper"
         },
-        "librator":{
-            "name":"Librator",
-            "tl":"Librator",
-            "en":"Liberator"
+        "librator": {
+            "name": "Librator",
+            "tl": "Librator",
+            "en": "Liberator"
         },
-        "crusher":{
-            "name":"Crusher",
-            "tl":"Crusher",
-            "en":"Crusher"
+        "crusher": {
+            "name": "Crusher",
+            "tl": "Crusher",
+            "en": "Crusher"
         },
-        "hammer":{
-            "name":"Earthshaker",
-            "tl":"Earthshaker",
-            "en":"Earthshaker"
+        "hammer": {
+            "name": "Earthshaker",
+            "tl": "Earthshaker",
+            "en": "Earthshaker"
         },
-        "primguard":{
-            "name":"Primal Guard",
-            "tl":"Primal Guard",
-            "en":""
+        "primguard": {
+            "name": "Primal Guard",
+            "tl": "Primal Guard",
+            "en": "Primal Guard"
         },
-
-        "physician":{
-            "name":"Physician",
-            "tl":"Physician",
-            "en":"Medic"
-        },
-        "ringhealer":{
-            "name":"Ring Healer",
-            "tl":"Ring Healer",
-            "en":"Multi-target Medic"
-        },
-        "healer":{
-            "name":"Healer",
-            "tl":"Mender",
-            "en":"Therapist"
-        },
-        "wandermedic":{
-            "name":"Wandermedic",
-            "tl":"Wandering Medic",
-            "en":"Wandering Medic"
-        },
-        "incantationmedic":{
-            "name":"Incantation Medic",
-            "tl":"Incantation Medic",
-            "en":"Incantation Medic"
-        },
-        "chainhealer":{
-            "name":"Chain Healer",
-            "tl":"Chain Healer",
-            "en":"Chain Medic"
+        "mercenary": {
+            "name": "Mercenary",
+            "tl": "Mercenary",
+            "en": ""
         },
 
-        "agent":{
-            "name":"Agent",
-            "tl":"Agent",
-            "en":"Agent"
+        "physician": {
+            "name": "Physician",
+            "tl": "Physician",
+            "en": "Medic"
         },
-        "pioneer":{
-            "name":"Pioneer",
-            "tl":"Pioneer",
-            "en":"Pioneer"
+        "ringhealer": {
+            "name": "Ring Healer",
+            "tl": "Ring Healer",
+            "en": "Multi-target Medic"
         },
-        "charger":{
-            "name":"Charger",
-            "tl":"Charger",
-            "en":"Charger"
+        "healer": {
+            "name": "Healer",
+            "tl": "Mender",
+            "en": "Therapist"
         },
-        "bearer":{
-            "name":"Bearer",
-            "tl":"Standard Bearer",
-            "en":"Standard Bearer"
+        "wandermedic": {
+            "name": "Wandermedic",
+            "tl": "Wandering Medic",
+            "en": "Wandering Medic"
         },
-        "tactician":{
-            "name":"Tactician",
-            "tl":"Tactician",
-            "en":"Tactician"
+        "incantationmedic": {
+            "name": "Incantation Medic",
+            "tl": "Incantation Medic",
+            "en": "Incantation Medic"
         },
-        "counsellor":{
-            "name":"Strategist",
-            "tl":"Strategist",
-            "en":""
-        },
-
-        "corecaster":{
-            "name":"Core Caster",
-            "tl":"Core",
-            "en":"Core Caster"
-        },
-        "splashcaster":{
-            "name":"Splash Caster",
-            "tl":"Splash",
-            "en":"Splash Caster"
-        },
-        "chain":{
-            "name":"Chain",
-            "tl":"Chain Caster",
-            "en":"Chain Caster"
-        },
-        "phalanx":{
-            "name":"Phalanx",
-            "tl":"Phalanx",
-            "en":"Phalanx Caster"
-        },
-        "mystic":{
-            "name":"Mystic",
-            "tl":"Mystic",
-            "en":"Mystic Caster"
-        },
-        "blastcaster":{
-            "name":"Blast Caster",
-            "tl":"Blast Caster",
-            "en":"Blast Caster"
-        },
-        "funnel":{
-            "name":"Funnel",
-            "tl":"Drone",
-            "en":"Mech-accord Caster"
-        },
-        "primcaster":{
-            "name":"Primal Caster",
-            "tl":"Primal Caster",
-            "en":"Primal Caster"
-        },
-        "soulcaster":{
-            "name":"Shaper Caster",
-            "tl":"Shaper Caster",
-            "en":"Shaper Caster"
+        "chainhealer": {
+            "name": "Chain Healer",
+            "tl": "Chain Healer",
+            "en": "Chain Medic"
         },
 
-        "fastshot":{
-            "name":"Fast Shot",
-            "tl":"Rapid Fire",
-            "en":"Marksman"
+        "agent": {
+            "name": "Agent",
+            "tl": "Agent",
+            "en": "Agent"
         },
-        "aoesniper":{
-            "name":"AOE Sniper",
-            "tl":"Splash",
-            "en":"Artilleryman"
+        "pioneer": {
+            "name": "Pioneer",
+            "tl": "Pioneer",
+            "en": "Pioneer"
         },
-        "reaperrange":{
-            "name":"Reaper Range",
-            "tl":"Spreadshooter",
-            "en":"Spreadshooter"
+        "charger": {
+            "name": "Charger",
+            "tl": "Charger",
+            "en": "Charger"
         },
-        "closerange":{
-            "name":"Close Range",
-            "tl":"Close Range",
-            "en":"Heavyshooter"
+        "bearer": {
+            "name": "Bearer",
+            "tl": "Standard Bearer",
+            "en": "Standard Bearer"
         },
-        "longrange":{
-            "name":"Long Range",
-            "tl":"Deadeye",
-            "en":"Deadeye"
+        "tactician": {
+            "name": "Tactician",
+            "tl": "Tactician",
+            "en": "Tactician"
         },
-        "siegesniper":{
-            "name":"Siege Sniper",
-            "tl":"Siege",
-            "en":"Besieger"
-        },
-        "bombarder":{
-            "name":"Bombarder",
-            "tl":"Bombardier",
-            "en":"Flinger"
-        },
-        "hunter":{
-            "name":"Hunter",
-            "tl":"Hunter",
-            "en":"Hunter"
-        },
-        "loopshooter":{
-            "name":"Loopshooter",
-            "tl":"Loopshooter",
-            "en":"Loopshooter"
+        "counsellor": {
+            "name": "Strategist",
+            "tl": "Strategist",
+            "en": ""
         },
 
-        "protector":{
-            "name":"Protector",
-            "tl":"Protector",
-            "en":"Protector"
+        "corecaster": {
+            "name": "Core Caster",
+            "tl": "Core",
+            "en": "Core Caster"
         },
-        "guardian":{
-            "name":"Guardian",
-            "tl":"Guardian",
-            "en":"Guardian"
+        "splashcaster": {
+            "name": "Splash Caster",
+            "tl": "Splash",
+            "en": "Splash Caster"
         },
-        "artsprotector":{
-            "name":"Arts Protector",
-            "tl":"Arts Ironguard",
-            "en":"Arts Protector"
+        "chain": {
+            "name": "Chain",
+            "tl": "Chain Caster",
+            "en": "Chain Caster"
         },
-        "unyield":{
-            "name":"Unyield",
-            "tl":"Unyielding",
-            "en":"Juggernaut"
+        "phalanx": {
+            "name": "Phalanx",
+            "tl": "Phalanx",
+            "en": "Phalanx Caster"
         },
-        "duelist":{
-            "name":"Duelist",
-            "tl":"Duelist",
-            "en":"Duelist"
+        "mystic": {
+            "name": "Mystic",
+            "tl": "Mystic",
+            "en": "Mystic Caster"
         },
-        "fortress":{
-            "name":"Fortress",
-            "tl":"Fortress",
-            "en":"Fortress"
+        "blastcaster": {
+            "name": "Blast Caster",
+            "tl": "Blast Caster",
+            "en": "Blast Caster"
         },
-        "shotprotector":{
-            "name":"Shot Protector",
-            "tl":"Sentinel Iron Guard",
-            "en":"Sentry Protector"
+        "funnel": {
+            "name": "Funnel",
+            "tl": "Drone",
+            "en": "Mech-accord Caster"
         },
-        "primprotector":{
-            "name":"Primal Protector",
-            "tl":"Primal Protector",
-            "en":"Primal Protector"
+        "primcaster": {
+            "name": "Primal Caster",
+            "tl": "Primal Caster",
+            "en": "Primal Caster"
         },
-
-        "slower":{
-            "name":"Slower",
-            "tl":"Slower",
-            "en":"Decel Binder"
-        },
-        "summoner":{
-            "name":"Summoner",
-            "tl":"Summoner",
-            "en":"Summoner"
-        },
-        "underminer":{
-            "name":"Underminer",
-            "tl":"Witherer",
-            "en":"Hexer"
-        },
-        "bard":{
-            "name":"Bard",
-            "tl":"Bard",
-            "en":"Bard"
-        },
-        "blessing":{
-            "name":"Blessing",
-            "tl":"Abjurer",
-            "en":"Abjurer"
-        },
-        "craftsman":{
-            "name":"Craftsman",
-            "tl":"Artificer",
-            "en":"Artificer"
-        },
-        "ritualist":{
-            "name":"Ritualist",
-            "tl":"Ritualist",
-            "en":"Ritualist"
+        "soulcaster": {
+            "name": "Shaper Caster",
+            "tl": "Shaper Caster",
+            "en": "Shaper Caster"
         },
 
-        "executor":{
-            "name":"Executor",
-            "tl":"Executor",
-            "en":"Executor"
+        "fastshot": {
+            "name": "Fast Shot",
+            "tl": "Rapid Fire",
+            "en": "Marksman"
         },
-        "merchant":{
-            "name":"Merchant",
-            "tl":"Merchant",
-            "en":"Merchant"
+        "aoesniper": {
+            "name": "AOE Sniper",
+            "tl": "Splash",
+            "en": "Artilleryman"
         },
-        "hookmaster":{
-            "name":"Hookmaster",
-            "tl":"Puller",
-            "en":"Hookmaster"
+        "reaperrange": {
+            "name": "Reaper Range",
+            "tl": "Spreadshooter",
+            "en": "Spreadshooter"
         },
-        "stalker":{
-            "name":"Stalker",
-            "tl":"Stalker",
-            "en":"Ambusher"
+        "closerange": {
+            "name": "Close Range",
+            "tl": "Close Range",
+            "en": "Heavyshooter"
         },
-        "pusher":{
-            "name":"Pusher",
-            "tl":"Pusher",
-            "en":"Push Stroker"
+        "longrange": {
+            "name": "Long Range",
+            "tl": "Deadeye",
+            "en": "Deadeye"
         },
-        "traper":{
-            "name":"Trapper",
-            "tl":"Trapper",
-            "en":"Trapmaster"
+        "siegesniper": {
+            "name": "Siege Sniper",
+            "tl": "Siege",
+            "en": "Besieger"
         },
-        "dollkeeper":{
-            "name":"Dollkeeper",
-            "tl":"Puppeteer",
-            "en":"Dollkeeper"
+        "bombarder": {
+            "name": "Bombarder",
+            "tl": "Bombardier",
+            "en": "Flinger"
         },
-        "geek":{
-            "name":"Geek",
-            "tl":"Geek",
-            "en":"Geek"
+        "hunter": {
+            "name": "Hunter",
+            "tl": "Hunter",
+            "en": "Hunter"
         },
-        "alchemist":{
-            "name":"Alchemist",
-            "tl":"Alchemist",
-            "en":"Alchemist"
+        "loopshooter": {
+            "name": "Loopshooter",
+            "tl": "Loopshooter",
+            "en": "Loopshooter"
         },
-        "skywalker":{
-            "name":"Skyranger",
-            "tl":"Skyranger",
-            "en":"Skyranger"
+
+        "protector": {
+            "name": "Protector",
+            "tl": "Protector",
+            "en": "Protector"
+        },
+        "guardian": {
+            "name": "Guardian",
+            "tl": "Guardian",
+            "en": "Guardian"
+        },
+        "artsprotector": {
+            "name": "Arts Protector",
+            "tl": "Arts Ironguard",
+            "en": "Arts Protector"
+        },
+        "unyield": {
+            "name": "Unyield",
+            "tl": "Unyielding",
+            "en": "Juggernaut"
+        },
+        "duelist": {
+            "name": "Duelist",
+            "tl": "Duelist",
+            "en": "Duelist"
+        },
+        "fortress": {
+            "name": "Fortress",
+            "tl": "Fortress",
+            "en": "Fortress"
+        },
+        "shotprotector": {
+            "name": "Shot Protector",
+            "tl": "Sentinel Iron Guard",
+            "en": "Sentry Protector"
+        },
+        "primprotector": {
+            "name": "Primal Protector",
+            "tl": "Primal Protector",
+            "en": "Primal Protector"
+        },
+
+        "slower": {
+            "name": "Slower",
+            "tl": "Slower",
+            "en": "Decel Binder"
+        },
+        "summoner": {
+            "name": "Summoner",
+            "tl": "Summoner",
+            "en": "Summoner"
+        },
+        "underminer": {
+            "name": "Underminer",
+            "tl": "Witherer",
+            "en": "Hexer"
+        },
+        "bard": {
+            "name": "Bard",
+            "tl": "Bard",
+            "en": "Bard"
+        },
+        "blessing": {
+            "name": "Blessing",
+            "tl": "Abjurer",
+            "en": "Abjurer"
+        },
+        "craftsman": {
+            "name": "Craftsman",
+            "tl": "Artificer",
+            "en": "Artificer"
+        },
+        "ritualist": {
+            "name": "Ritualist",
+            "tl": "Ritualist",
+            "en": "Ritualist"
+        },
+
+        "executor": {
+            "name": "Executor",
+            "tl": "Executor",
+            "en": "Executor"
+        },
+        "merchant": {
+            "name": "Merchant",
+            "tl": "Merchant",
+            "en": "Merchant"
+        },
+        "hookmaster": {
+            "name": "Hookmaster",
+            "tl": "Puller",
+            "en": "Hookmaster"
+        },
+        "stalker": {
+            "name": "Stalker",
+            "tl": "Stalker",
+            "en": "Ambusher"
+        },
+        "pusher": {
+            "name": "Pusher",
+            "tl": "Pusher",
+            "en": "Push Stroker"
+        },
+        "traper": {
+            "name": "Trapper",
+            "tl": "Trapper",
+            "en": "Trapmaster"
+        },
+        "dollkeeper": {
+            "name": "Dollkeeper",
+            "tl": "Puppeteer",
+            "en": "Dollkeeper"
+        },
+        "geek": {
+            "name": "Geek",
+            "tl": "Geek",
+            "en": "Geek"
+        },
+        "alchemist": {
+            "name": "Alchemist",
+            "tl": "Alchemist",
+            "en": "Alchemist"
+        },
+        "skywalker": {
+            "name": "Skyranger",
+            "tl": "Skyranger",
+            "en": "Skyranger"
         }
     }
 }

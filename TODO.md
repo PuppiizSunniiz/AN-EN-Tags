@@ -45,16 +45,14 @@
     - Eye of the Snowstorm
 
 ### To Do
-- properly add EN KR Birthday voice
 - handle Xiaohei cat / mudmud masked audio
 - Independent-miya
 - Token
-    - SilverAsh s1 Eye of Snowstorm when entry
     - Skill SP recovery
     - Mod talent
     - Add token talent to pyUpdate (both base/mod)
 - Add multi animation support
-    - SP Kroos have multiple Interact + Idle (even Talk)
+    - SP Kroos+Kal have multiple Interact + Idle (even Talk)
 - Add all background element for various L2D
 - token animation list
 - re-add enemies chibi
