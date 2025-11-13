@@ -1,13 +1,4 @@
 # Fix TL (Official EN) waiting room
-
-### Act or Die
-- Effect
-    - Lure / Attract
-- Trait
-    - SOC-X
-    - SOC-Y
-    - TRP-X
-
 ### Fantasy in the Mirage
 - Trait
     - SIE-Y
