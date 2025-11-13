@@ -659,7 +659,7 @@ function enemyDetail(el,level){
                     <th scope="col" class="hovertooltip" data-tooltip="Cannot perform normal attacks when blocked.">Frighten</th>
                     <th scope="col" class="hovertooltip" data-tooltip="Cannot be blocked and runs off uncontrollably">Fear</th>
                     <th scope="col" class="hovertooltip" data-tooltip="Each stack of Paralysis can interrupt an enemy when it attempts to perform a normal attack, max 3 stacks; Paralysis has unlimited duration when not consumed, but units with status resistance lose 1 stack every 5s.">Paralysis</th>
-                    <th scope="col" class="hovertooltip" data-tooltip="Cannot be blocked and move to target position.">Lure</th>
+                    <th scope="col" class="hovertooltip" data-tooltip="Cannot be blocked and moves towards the target's position">Lure</th>
                 </tr>
             </thead>
             <tbody>

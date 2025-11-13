@@ -846,7 +846,7 @@
                     var unreadable  = query(db.unreadNameTL, "name", char.name_en)
                     var char_names  = unreadable?[...db.char_names[char.id], unreadable.name_en]:db.char_names[char.id]
                     var input       = inputs.toLowerCase();
-                    var search      = inputs.match(/^(char_|!)+?/g)?char.id.replace("char_", "").toLowerCase().search(input.replace("char_", "").replace("!", "")):char_names.join("|").toLowerCase().search(input);
+                    var search      = inputs.match(/^(char_|!)+?/g)?char.id.replace("char_", "").toLowerCase().search(input.replace("char_", "").replace("!", "")):char_names.join("|").toLowerCase().search(input.replaceAll("_", " "));
                     if(search != -1){
                         found = true;
                     };

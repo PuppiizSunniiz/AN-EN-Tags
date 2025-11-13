@@ -1189,16 +1189,16 @@
             "description": "When this Operator is assigned to a Factory, <@cc.kw>Battle Record</> formula related productivity <@cc.vup>+30%</>"
         },
         "manu_formula_spd&limit&cost[000]": {
-            "buffName": "镜中影",
+            "buffName": "Man in the Mirror",
             "skillIcon": "bskill_man_exp&spd&limit&cost1",
             "desc": "进驻制造站时，<@cc.kw>作战记录</>类配方的生产力<@cc.vup>+20%</>，心情每小时消耗<@cc.vup>-0.25</>",
-            "description": "When this Operator is assigned to a Factory, <@cc.kw>Battle Record</> formula related productivity <@cc.vup>+20%</> and Morale consumed per hour <@cc.vup>-0.25</>"
+            "description": "When this Operator is assigned to a Factory, <@cc.kw>Battle Record</> productivity <@cc.vup>+20%</>, and Morale consumed per hour <@cc.vup>-0.25</>"
         },
         "manu_formula_spd&limit&cost[010]": {
-            "buffName": "戏中人",
+            "buffName": "Playing the Part",
             "skillIcon": "bskill_man_exp&spd&limit&cost2",
             "desc": "进驻制造站时，<@cc.kw>作战记录</>类配方的生产力<@cc.vup>+35%</>，心情每小时消耗<@cc.vup>-0.25</>",
-            "description": "When this Operator is assigned to a Factory, <@cc.kw>Battle Record</> formula related productivity <@cc.vup>+35%</> and Morale consumed per hour <@cc.vup>-0.25</>"
+            "description": "When this Operator is assigned to a Factory, <@cc.kw>Battle Record</> productivity <@cc.vup>+35%</>, and Morale consumed per hour <@cc.vup>-0.25</>"
         },
         "manu_prod_spd&trade[000]": {
             "buffName": "Renewable Energy",
@@ -1915,7 +1915,7 @@
             "description": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, the production rate of byproduct increases by <@cc.vup>65%</>"
         },
         "workshop_proc_probability[033]": {
-            "buffName": "蓝卡坞多面手",
+            "buffName": "Wrankwood Jack-of-All-Trades",
             "skillIcon": "bskill_ws_p4",
             "desc": "进驻加工站加工<@cc.kw>任意类材料</>时，副产品的产出概率提升<@cc.vup>65%</>",
             "description": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, the production rate of byproduct increases by <@cc.vup>65%</>"
@@ -1981,10 +1981,10 @@
             "description": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, all formulas that cost <@cc.kw>4</> Morale now <@cc.vup>-1</> Morale cost"
         },
         "workshop_formula_cost3[500]": {
-            "buffName": "拍摄日愉快",
+            "buffName": "Nice Day for a Shoot",
             "skillIcon": "bskill_ws_all_cost2",
             "desc": "进驻加工站加工<@cc.kw>任意类材料</>时，心情消耗为<@cc.kw>2</>的配方全部<@cc.vup>-1</>心情消耗",
-            "description": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, reduces the Morale consumed by all corresponding formulas that cost <@cc.kw>2</> Morale by <@cc.vup>-1</>"
+            "description": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, all formulas that cost <@cc.kw>2</> Morale now <@cc.vup>-1</> Morale cost"
         },
         "workshop_formula_recovery[000]": {
             "buffName": "'Explosion Arts'",
