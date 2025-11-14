@@ -644,6 +644,11 @@
             "termId": "ba.alter",
             "termName": "Equipment Response",
             "description": "After selecting an operator on the field, additional effects can be activated under certain conditions"
+        },
+        "ba.weaknessatk": {
+            "termId": "ba.weaknessatk",
+            "termName": "弱点伤害",
+            "description": "When dealing Physical or Arts damage, change damage type based on target's DEF and RES"
         }
     }
 }

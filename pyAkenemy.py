@@ -28,6 +28,7 @@ akenemy = {
                         "exp"       : {"name" : "Experimental Gamemode", "activity" : {}},
                         "tn"        : {"name" : "TN : Trials for Navigator", "activity" : {}},          # Mode : TN             -> Activity : TN#XX                                     -> Stage : TN-XX
                         "vb"        : {"name" : "VB : Vector Breakthrough", "activity" : {}},
+                        "sp"        : {"name" : "SP : Stronghold Protocol", "activity" : {}},
                         "sss"       : {"name" : "SSS : Stationary Security Service", "activity" : {}},  # Mode : SSS            -> Activity : Tower                                     -> Stage : LT-XX
                         "ra"        : {"name" : "RA : Reclamation Algorithm", "activity" : {}},         # Mode : RA             -> Activity : RA#XX         -> Zone : Fight/Rush/Zone   -> Stage : XYZ
                         "fun"       : {"name" : "FUN : April Fool", "activity" : {}},
@@ -351,7 +352,11 @@ def Stage_Lister(stage_event : str, stage_code : str, stage_name : str, stage_id
     def Stage_Lister_Akenemy():
     ### Akenemy collect
         stage_gamemode = get_stage_gamemode(stage_event)
-        akenemy_activity = akenemy["gamemode"][stage_gamemode]["activity"]
+        try:
+            akenemy_activity = akenemy["gamemode"][stage_gamemode]["activity"]
+        except:
+            printr(stage_event, stage_gamemode)
+            exit()
         
         akenemy_activity.setdefault(stage_event,{"name":"","date":0,"zone":{}})
         akenemy_activity[stage_event]["zone"].setdefault(stage_zone, {"name":"","stage":{}})
@@ -547,10 +552,12 @@ def get_stage_gamemode(stage_event : str) -> str:
         elif stage_event == "Mechanic": 
             return "mechanic"
         
-        elif re.search(r'act[0-9]{1,2}(lock|vautochess|arcade|enemyduel|vhalfidle)',stage_event) or stage_event in ["act42d0"]: # act42d0 = DOS
+        elif re.search(r'act[0-9]{1,2}(lock|arcade|enemyduel|vhalfidle)',stage_event) or stage_event in ["act42d0"]: # act42d0 = DOS
             return "exp"
         elif re.search(r'act[0-9]{1,2}(vecb|break)',stage_event):
             return "vb"
+        elif re.search(r'act[0-9]{1,2}(vautochess|autochess)',stage_event):
+            return "sp"
         
         elif stage_event.find("bossrush") != -1:
             return "tn"

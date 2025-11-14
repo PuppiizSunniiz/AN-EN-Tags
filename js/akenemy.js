@@ -237,6 +237,7 @@ function selectGamemode(el){
         case "is":
         case "tn":
         case "vb":
+        case "sp":
         case "ra":
             return "Season"
         case "sss":

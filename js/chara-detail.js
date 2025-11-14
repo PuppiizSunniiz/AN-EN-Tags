@@ -5724,7 +5724,7 @@
             }
             console.log(content,skill)
             //Duration not in blackboard (Heavyrain S1)
-            if (content = "duration") return `<div class="stat-important">${skill.duration}</div>`
+            if (content = "duration" && skill) return `<div class="stat-important">${skill.duration}</div>`
             return m
         })
 

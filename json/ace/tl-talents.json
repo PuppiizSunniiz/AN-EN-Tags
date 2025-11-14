@@ -9402,5 +9402,47 @@
                 "desc": "When there is at least 1 other operator in Attack Range, ATK+17<@ba.talpu>(+2%)</>"
             }
         ]
+    ],
+	"char_617_sharp2": [
+        [
+            {
+                "name": "无声之锋",
+                "descCN": "攻击力+5%，获得10%的法术闪避",
+                "desc": "ATK+5%, 10% Arts Dodge"
+            },
+            {
+                "name": "无声之锋",
+                "descCN": "攻击力+10%，获得20%的法术闪避",
+                "desc": "ATK+10%, 20% Arts Dodge"
+            },
+            {
+                "name": "无声之锋",
+                "descCN": "攻击力+20%，获得25%的法术闪避",
+                "desc": "ATK+20%, 25% Arts Dodge"
+            }
+        ],
+        [
+            {
+                "name": "陷阵勇气",
+                "descCN": "攻击范围内存在2名及以上敌人时，攻击速度+12",
+                "desc": "ASPD +12 when there are 2 or more enemies in attack range."
+            }
+        ]
+    ],
+    "char_616_pithst": [
+        [
+            {
+                "name": "迭代元素",
+                "descCN": "攻击同时附带18%攻击力的<$ba.dt.neural2>神经损伤</>(优先), <$ba.dt.burning2>灼燃损伤</>, <$ba.dt.apoptosis2>凋亡损伤</>; 优先攻击未处于损伤爆发的目标",
+                "desc": "Attack deal an additional 18% of ATK as <$ba.dt.neural2>Nervous Impairment</>(prioritize), <$ba.dt.burning2>Burn damage</>, <$ba.dt.apoptosis2>Necrosis Damage</>; prioritizing enemies not under a burst effect"
+            }
+        ],
+        [
+            {
+                "name": "灵便条约",
+                "descCN": "在[卫戍协议]中，隶属于盟约[调和]",
+                "desc": "in [Stronghold Protocol], categorize as [调和]"
+            }
+        ]
     ]
 }

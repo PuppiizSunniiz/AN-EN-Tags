@@ -1274,5 +1274,41 @@
                 "upgradeDescription": "When skill is activated, sends beast out to attack, deals 210%<@ba.talpu>(+5%)</> ATK as Physical damage and inflicts <$ba.cold>Cold</> for 3 seconds"
             }
         ]
+    ],
+    "uniequip_002_pithst": [
+        [
+            {
+                "name": "迭代元素",
+                "CN": "攻击同时附带18%攻击力的<$ba.dt.neural2>神经损伤</>(优先), <$ba.dt.burning2>灼燃损伤</>, <$ba.dt.apoptosis2>凋亡损伤</>; 优先攻击未处于损伤爆发的目标",
+                "mod": "攻击同时附带19%攻击力的<$ba.dt.neural2>神经损伤</>(优先), <$ba.dt.burning2>灼燃损伤</>, <$ba.dt.apoptosis2>凋亡损伤</>; 优先攻击未处于损伤爆发的目标",
+                "upgradeDescription": "Attack deal an additional 19% of ATK as <$ba.dt.neural2>Nervous Impairment</>(prioritize), <$ba.dt.burning2>Burn damage</>, <$ba.dt.apoptosis2>Necrosis Damage</>; prioritizing enemies not under a burst effect"
+            }
+        ],
+        [
+            {
+                "name": "迭代元素",
+                "CN": "攻击同时附带18%攻击力的<$ba.dt.neural2>神经损伤</>(优先), <$ba.dt.burning2>灼燃损伤</>, <$ba.dt.apoptosis2>凋亡损伤</>; 优先攻击未处于损伤爆发的目标",
+                "mod": "攻击同时附带20%攻击力的<$ba.dt.neural2>神经损伤</>(优先), <$ba.dt.burning2>灼燃损伤</>, <$ba.dt.apoptosis2>凋亡损伤</>; 优先攻击未处于损伤爆发的目标",
+                "upgradeDescription": "Attack deal an additional 20% of ATK as <$ba.dt.neural2>Nervous Impairment</>(prioritize), <$ba.dt.burning2>Burn damage</>, <$ba.dt.apoptosis2>Necrosis Damage</>; prioritizing enemies not under a burst effect"
+            }
+        ]
+    ],
+    "uniequip_002_sharp2": [
+        [
+            {
+                "name": "无声之锋",
+                "CN": "攻击力+20%，获得25%的法术闪避",
+                "mod": "攻击力+23%，获得30%的法术闪避",
+                "upgradeDescription": "ATK+23%, 30% Arts Dodge"
+            }
+        ],
+        [
+            {
+                "name": "无声之锋",
+                "CN": "攻击力+20%，获得25%的法术闪避",
+                "mod": "攻击力+25%，获得35%的法术闪避",
+                "upgradeDescription": "ATK+25%, 35% Arts Dodge"
+            }
+        ]
     ]
 }

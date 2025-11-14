@@ -35,8 +35,12 @@
     - Mercenary
     - Eye of the Snowstorm
 
+### Stronghold Protocol - Alliance
+- Effect
+    - ba.weaknessatk
+
 ### To Do
-- handle Xiaohei cat / mudmud masked audio
+- handle Xiaohei cat
 - Independent-miya
 - Token
     - Skill SP recovery
@@ -47,3 +51,4 @@
 - Add all background element for various L2D
 - token animation list
 - re-add enemies chibi
+- Fix SP akenemy

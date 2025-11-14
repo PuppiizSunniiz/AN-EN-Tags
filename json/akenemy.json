@@ -3811,6 +3811,21 @@
                                 "act46side_ex08": "OS-EX-8 : 以人的名",
                                 "act46side_ex08#f#": "OS-EX-8 : 以人的名 <b>(Challenge)</b>"
                             }
+                        },
+                        "act46side_zone3": {
+                            "name": "喀兰之心",
+                            "stage": {
+                                "act46side_s01": "OS-S-1 : 打雪仗",
+                                "act46side_s01#f#": "OS-S-1 : 打雪仗 <b>(Challenge)</b>",
+                                "act46side_s02": "OS-S-2 : 堆雪人",
+                                "act46side_s02#f#": "OS-S-2 : 堆雪人 <b>(Challenge)</b>",
+                                "act46side_s03": "OS-S-3 : 雪孩子",
+                                "act46side_s03#f#": "OS-S-3 : 雪孩子 <b>(Challenge)</b>",
+                                "act46side_s04": "OS-S-4 : 雪中歌谣",
+                                "act46side_s04#f#": "OS-S-4 : 雪中歌谣 <b>(Challenge)</b>",
+                                "act46side_s05": "OS-S-5 : 雪与我与雪",
+                                "act46side_s05#f#": "OS-S-5 : 雪与我与雪 <b>(Challenge)</b>"
+                            }
                         }
                     }
                 }
@@ -5954,22 +5969,6 @@
                         }
                     }
                 },
-                "act1vautochess": {
-                    "name": "Stronghold Protocol",
-                    "date": 1731657600,
-                    "zone": {
-                        "act1vautochess_zone1": {
-                            "name": null,
-                            "stage": {
-                                "act1vautochess_m01": "新手模式 : AC-TR-1",
-                                "act1vautochess_m02": "协议原型 : AC-1",
-                                "act1vautochess_m03": "常规模式 : AC-2",
-                                "act1vautochess_m04": "常规模式 : AC-2",
-                                "act1vautochess_m05": "常规模式 : AC-2"
-                            }
-                        }
-                    }
-                },
                 "act1arcade": {
                     "name": "Poly Vision Museum",
                     "date": 1735459200,
@@ -6233,6 +6232,45 @@
                                 "act1break_sp14": "VEC-SP14 : No Escape",
                                 "act1break_sp15": "VEC-SP15 : Wall Opening",
                                 "act1break_sp16": "VEC-SP16 : One Way Out"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "sp": {
+            "name": "SP : Stronghold Protocol",
+            "activity": {
+                "act1autochess": {
+                    "name": "Stronghold Protocol - Alliance",
+                    "date": 1763107200,
+                    "zone": {
+                        "act1autochess_zone1": {
+                            "name": null,
+                            "stage": {
+                                "act1autochess_m01": "卫戍协议·盟约 : AC-3",
+                                "act1autochess_m02": "卫戍协议·盟约 : AC-4",
+                                "act1autochess_m03": "卫戍协议·盟约 : AC-5",
+                                "act1autochess_m04": "卫戍协议·盟约 : AC-6",
+                                "act1autochess_m05": "卫戍协议·盟约 : AC-7",
+                                "act1autochess_m06": "卫戍协议·盟约 : AC-8",
+                                "act1autochess_m07": "卫戍协议·盟约 : AC-9"
+                            }
+                        }
+                    }
+                },
+                "act1vautochess": {
+                    "name": "Stronghold Protocol",
+                    "date": 1731657600,
+                    "zone": {
+                        "act1vautochess_zone1": {
+                            "name": null,
+                            "stage": {
+                                "act1vautochess_m01": "新手模式 : AC-TR-1",
+                                "act1vautochess_m02": "协议原型 : AC-1",
+                                "act1vautochess_m03": "常规模式 : AC-2",
+                                "act1vautochess_m04": "常规模式 : AC-2",
+                                "act1vautochess_m05": "常规模式 : AC-2"
                             }
                         }
                     }
@@ -7083,6 +7121,7 @@
         "weekly_2": "PR-B : Fierce Attack (Snipers & Casters)",
         "weekly_3": "PR-C : Unstoppable Charge (Vanguards & Supporters)",
         "weekly_4": "PR-D : Fearless Protection (Guards & Specialists)",
+        "act1autochess": "Stronghold Protocol - Alliance",
         "act46side": "[OS] : Retracing Our Steps 1101",
         "act3mainss_zone1": "Episode 16 : Abnormal Spectrum",
         "act2multi": "Icebreaker Games #2",
@@ -7364,6 +7403,13 @@
                         "act1arcade_m4_01"
                     ]
                 },
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_a-01"
+                    ]
+                }
+            },
+            "sp": {
                 "act1vautochess": {
                     "act1vautochess_zone1": [
                         "act1vautochess_m01",
@@ -7371,11 +7417,6 @@
                         "act1vautochess_m03",
                         "act1vautochess_m04",
                         "act1vautochess_m05"
-                    ]
-                },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_a-01"
                     ]
                 }
             },
@@ -8796,6 +8837,13 @@
                         "act1halfidle_tr01"
                     ]
                 },
+                "act42d0": {
+                    "challenge": [
+                        "act42d0_sp04"
+                    ]
+                }
+            },
+            "sp": {
                 "act1vautochess": {
                     "act1vautochess_zone1": [
                         "act1vautochess_m01",
@@ -8803,11 +8851,6 @@
                         "act1vautochess_m03",
                         "act1vautochess_m04",
                         "act1vautochess_m05"
-                    ]
-                },
-                "act42d0": {
-                    "challenge": [
-                        "act42d0_sp04"
                     ]
                 }
             },
@@ -9254,6 +9297,28 @@
                     ]
                 }
             },
+            "sp": {
+                "act1autochess": {
+                    "act1autochess_zone1": [
+                        "act1autochess_m01",
+                        "act1autochess_m02",
+                        "act1autochess_m03",
+                        "act1autochess_m04",
+                        "act1autochess_m05",
+                        "act1autochess_m06",
+                        "act1autochess_m07"
+                    ]
+                },
+                "act1vautochess": {
+                    "act1vautochess_zone1": [
+                        "act1vautochess_m01",
+                        "act1vautochess_m02",
+                        "act1vautochess_m03",
+                        "act1vautochess_m04",
+                        "act1vautochess_m05"
+                    ]
+                }
+            },
             "coop": {
                 "act2multi": {
                     "act2multi_zone1": [
@@ -9273,22 +9338,6 @@
                 "act17d1": {
                     "act17d1": [
                         "act17d1_02_a"
-                    ]
-                }
-            },
-            "exp": {
-                "act1vautochess": {
-                    "act1vautochess_zone1": [
-                        "act1vautochess_m01",
-                        "act1vautochess_m02",
-                        "act1vautochess_m03",
-                        "act1vautochess_m04",
-                        "act1vautochess_m05"
-                    ]
-                },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_b-01"
                     ]
                 }
             },
@@ -9380,6 +9429,13 @@
                         "a001_ex03",
                         "a001_ex04",
                         "a001_ex04#f#"
+                    ]
+                }
+            },
+            "exp": {
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_b-01"
                     ]
                 }
             },
@@ -35280,6 +35336,16 @@
                         "act46side_ex07#f#",
                         "act46side_ex08",
                         "act46side_ex08#f#"
+                    ],
+                    "act46side_zone3": [
+                        "act46side_s01",
+                        "act46side_s01#f#",
+                        "act46side_s02",
+                        "act46side_s02#f#",
+                        "act46side_s03",
+                        "act46side_s03#f#",
+                        "act46side_s04",
+                        "act46side_s04#f#"
                     ]
                 }
             }
@@ -35298,6 +35364,16 @@
                         "act46side_ex07#f#",
                         "act46side_ex08",
                         "act46side_ex08#f#"
+                    ],
+                    "act46side_zone3": [
+                        "act46side_s01",
+                        "act46side_s01#f#",
+                        "act46side_s02",
+                        "act46side_s02#f#",
+                        "act46side_s03",
+                        "act46side_s03#f#",
+                        "act46side_s04",
+                        "act46side_s04#f#"
                     ]
                 }
             }
@@ -35318,6 +35394,12 @@
                         "act46side_ex06#f#",
                         "act46side_ex08",
                         "act46side_ex08#f#"
+                    ],
+                    "act46side_zone3": [
+                        "act46side_s04",
+                        "act46side_s04#f#",
+                        "act46side_s05",
+                        "act46side_s05#f#"
                     ]
                 }
             }
@@ -35330,6 +35412,12 @@
                         "act46side_ex02#f#",
                         "act46side_ex07",
                         "act46side_ex07#f#"
+                    ],
+                    "act46side_zone3": [
+                        "act46side_s03",
+                        "act46side_s03#f#",
+                        "act46side_s04",
+                        "act46side_s04#f#"
                     ]
                 }
             }
@@ -35344,6 +35432,12 @@
                         "act46side_ex03#f#",
                         "act46side_ex07",
                         "act46side_ex07#f#"
+                    ],
+                    "act46side_zone3": [
+                        "act46side_s01",
+                        "act46side_s01#f#",
+                        "act46side_s02",
+                        "act46side_s02#f#"
                     ]
                 }
             }
@@ -35358,6 +35452,14 @@
                         "act46side_ex03#f#",
                         "act46side_ex08",
                         "act46side_ex08#f#"
+                    ],
+                    "act46side_zone3": [
+                        "act46side_s01",
+                        "act46side_s01#f#",
+                        "act46side_s02",
+                        "act46side_s02#f#",
+                        "act46side_s03",
+                        "act46side_s03#f#"
                     ]
                 }
             }
@@ -35374,6 +35476,18 @@
                         "act46side_ex07#f#",
                         "act46side_ex08",
                         "act46side_ex08#f#"
+                    ],
+                    "act46side_zone3": [
+                        "act46side_s01",
+                        "act46side_s01#f#",
+                        "act46side_s02",
+                        "act46side_s02#f#",
+                        "act46side_s03",
+                        "act46side_s03#f#",
+                        "act46side_s04",
+                        "act46side_s04#f#",
+                        "act46side_s05",
+                        "act46side_s05#f#"
                     ]
                 }
             }
@@ -35458,6 +35572,10 @@
                         "act46side_ex05#f#",
                         "act46side_ex07",
                         "act46side_ex07#f#"
+                    ],
+                    "act46side_zone3": [
+                        "act46side_s05",
+                        "act46side_s05#f#"
                     ]
                 },
                 "act14side": {
@@ -35680,6 +35798,145 @@
                         "act46side_ex06#f#",
                         "act46side_ex08",
                         "act46side_ex08#f#"
+                    ],
+                    "act46side_zone3": [
+                        "act46side_s02",
+                        "act46side_s02#f#",
+                        "act46side_s05",
+                        "act46side_s05#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_1385_winbom_2": {
+            "sidestory": {
+                "act46side": {
+                    "act46side_zone3": [
+                        "act46side_s04",
+                        "act46side_s04#f#"
+                    ]
+                },
+                "act30side": {
+                    "act30sre_zone2": [
+                        "act30side_ex05",
+                        "act30side_ex05#f#",
+                        "act30side_ex07",
+                        "act30side_ex07#f#",
+                        "act30side_ex08",
+                        "act30side_ex08#f#"
+                    ]
+                }
+            },
+            "coop": {
+                "act2multi": {
+                    "act2multi_zone1": [
+                        "act2multi_rm01",
+                        "act2multi_08",
+                        "act2multi_rm-ex01",
+                        "act2multi_ex08"
+                    ]
+                },
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_01",
+                        "act1multi_ex01"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_24": {
+                    "camp_r_24": [
+                        "camp_r_24"
+                    ]
+                }
+            }
+        },
+        "enemy_1388_wingnt_2": {
+            "sidestory": {
+                "act46side": {
+                    "act46side_zone3": [
+                        "act46side_s04",
+                        "act46side_s04#f#"
+                    ]
+                },
+                "act30side": {
+                    "act30sre_zone2": [
+                        "act30side_ex04",
+                        "act30side_ex04#f#",
+                        "act30side_ex06",
+                        "act30side_ex06#f#",
+                        "act30side_ex08",
+                        "act30side_ex08#f#"
+                    ]
+                }
+            },
+            "coop": {
+                "act2multi": {
+                    "act2multi_zone1": [
+                        "act2multi_rm01",
+                        "act2multi_08",
+                        "act2multi_rm-ex01",
+                        "act2multi_ex08"
+                    ]
+                },
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_rm02",
+                        "act1multi_01",
+                        "act1multi_rm-ex02",
+                        "act1multi_ex01"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_24": {
+                    "camp_r_24": [
+                        "camp_r_24"
+                    ]
+                }
+            }
+        },
+        "enemy_1190_krgbow_2": {
+            "sidestory": {
+                "act46side": {
+                    "act46side_zone3": [
+                        "act46side_s05",
+                        "act46side_s05#f#"
+                    ]
+                },
+                "act14side": {
+                    "act14sre_zone2": [
+                        "act14side_ex01",
+                        "act14side_ex01#f#",
+                        "act14side_ex04",
+                        "act14side_ex04#f#",
+                        "act14side_ex05",
+                        "act14side_ex05#f#",
+                        "act14side_ex06",
+                        "act14side_ex06#f#"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_rm07",
+                        "act1multi_rm-ex07"
+                    ]
+                },
+                "act2vmulti": {
+                    "act2vmulti": [
+                        "act2vmulti-02",
+                        "act2vmulti-07",
+                        "act2vmulti-ex02",
+                        "act2vmulti-ex07"
+                    ]
+                }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6 ro5_sv_9_b": [
+                        "rogue5_sv-9-b"
                     ]
                 }
             }
@@ -40985,43 +41242,6 @@
                 }
             }
         },
-        "enemy_1385_winbom_2": {
-            "coop": {
-                "act2multi": {
-                    "act2multi_zone1": [
-                        "act2multi_rm01",
-                        "act2multi_08",
-                        "act2multi_rm-ex01",
-                        "act2multi_ex08"
-                    ]
-                },
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_01",
-                        "act1multi_ex01"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act30side": {
-                    "act30sre_zone2": [
-                        "act30side_ex05",
-                        "act30side_ex05#f#",
-                        "act30side_ex07",
-                        "act30side_ex07#f#",
-                        "act30side_ex08",
-                        "act30side_ex08#f#"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_24": {
-                    "camp_r_24": [
-                        "camp_r_24"
-                    ]
-                }
-            }
-        },
         "enemy_1389_winbab": {
             "coop": {
                 "act2multi": {
@@ -41074,45 +41294,6 @@
                         "act30side_ex05#f#",
                         "act30side_ex07",
                         "act30side_ex07#f#",
-                        "act30side_ex08",
-                        "act30side_ex08#f#"
-                    ]
-                }
-            },
-            "campaign": {
-                "camp_r_24": {
-                    "camp_r_24": [
-                        "camp_r_24"
-                    ]
-                }
-            }
-        },
-        "enemy_1388_wingnt_2": {
-            "coop": {
-                "act2multi": {
-                    "act2multi_zone1": [
-                        "act2multi_rm01",
-                        "act2multi_08",
-                        "act2multi_rm-ex01",
-                        "act2multi_ex08"
-                    ]
-                },
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_rm02",
-                        "act1multi_01",
-                        "act1multi_rm-ex02",
-                        "act1multi_ex01"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act30side": {
-                    "act30sre_zone2": [
-                        "act30side_ex04",
-                        "act30side_ex04#f#",
-                        "act30side_ex06",
-                        "act30side_ex06#f#",
                         "act30side_ex08",
                         "act30side_ex08#f#"
                     ]
@@ -44866,7 +45047,7 @@
                     ]
                 }
             },
-            "exp": {
+            "sp": {
                 "act1vautochess": {
                     "act1vautochess_zone1": [
                         "act1vautochess_m01",
@@ -65313,45 +65494,6 @@
                 "IS#5": {
                     "IS#5 Floor 2": [
                         "rogue4_2-6"
-                    ]
-                }
-            }
-        },
-        "enemy_1190_krgbow_2": {
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_rm07",
-                        "act1multi_rm-ex07"
-                    ]
-                },
-                "act2vmulti": {
-                    "act2vmulti": [
-                        "act2vmulti-02",
-                        "act2vmulti-07",
-                        "act2vmulti-ex02",
-                        "act2vmulti-ex07"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act14side": {
-                    "act14sre_zone2": [
-                        "act14side_ex01",
-                        "act14side_ex01#f#",
-                        "act14side_ex04",
-                        "act14side_ex04#f#",
-                        "act14side_ex05",
-                        "act14side_ex05#f#",
-                        "act14side_ex06",
-                        "act14side_ex06#f#"
-                    ]
-                }
-            },
-            "is": {
-                "IS#6": {
-                    "IS#6 ro5_sv_9_b": [
-                        "rogue5_sv-9-b"
                     ]
                 }
             }
