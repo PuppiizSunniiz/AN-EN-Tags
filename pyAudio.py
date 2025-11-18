@@ -35,7 +35,7 @@ def audio_json(show : bool = False):
     
     # charWords
     for key in json_charWords["charWords"].keys():
-        if not re.match(r'char_[\d]*_[a-z]*(?:[\d]|)_(?:[a-z]*\#[\d]*_|)CN_[\d]{3}', key):
+        if not re.match(r'char_[\d]*_[a-z\d]*_(?:[a-z\d]*\#[\d]*_|)CN_[\d]{3}', key):
             continue
         elif key in json_charWordsEN["charWords"].keys():
             json_audio["charWords"][key] = charWords_trim(json_charWordsEN["charWords"][key])
@@ -46,7 +46,7 @@ def audio_json(show : bool = False):
         if wordKey not in audio_wordkey:
             audio_wordkey.append(wordKey)
         
-        if re.match(r'char_[\d]*_[a-z]*(?:[\d]|)_(?:[a-z]*\#[\d]*_)CN_[\d]{3}', key):
+        if re.match(r'char_[\d]*_[a-z\d]*_(?:[a-z\d]*\#[\d]*_)CN_[\d]{3}', key):
             skin_word.append(json_charWords["charWords"][key]["wordKey"])
     
     # voiceLangDict

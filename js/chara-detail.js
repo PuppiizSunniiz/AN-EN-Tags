@@ -3944,11 +3944,9 @@
 
         update_illustrator()
 
-        var voiceDict = db.charword.voiceLangDict[opdataFull.id]
-        var voiceDictEN
-        var existvoiceDict = voiceDictEN?{...voiceDict,...voiceDictEN}:voiceDict
-        console.log(voiceDict)
-        console.log(voiceDictEN)
+        var existvoiceDict = db.charword.voiceLangDict[opdataFull.id]
+
+        console.log(existvoiceDict)
 
         var VAlang
         

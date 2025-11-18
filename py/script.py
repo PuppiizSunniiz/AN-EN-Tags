@@ -4,7 +4,7 @@ import re
 import subprocess
 import os
 import inspect
-from typing import Any, Callable
+from typing import Any, Callable, Literal
 
 import requests
 
@@ -990,4 +990,30 @@ def building_room_name():
     for room_id in DB["json_building"]["rooms"]:
         rooms[DB["json_building"]["rooms"][room_id]["name"]] = DB["json_buildingEN"]["rooms"][room_id]["name"]
     script_result(rooms, True)
-building_room_name()
+#building_room_name()
+
+def team_color(mode : Literal[1, 2] = 1):
+    map_table   = json_load(r"json\gamedata\ArknightsGameData\zh_CN\gamedata\art\handbook_force_map_table.json")
+    result      = []
+    ID_Max      = 0
+    Name_Max    = 0
+    for force in map_table["forceList"]:
+        forceId     = force["forceId"]
+        ID_Max      = max(ID_Max, len(forceId))
+        forceName   = DB["json_handbook_teamEN"][forceId]["powerName"] if forceId in DB["json_handbook_teamEN"] else DB["json_handbook_team"][forceId]["powerCode"]
+        Name_Max      = max(Name_Max, len(forceName))
+        color       = f'#{force["color"]}' if force["color"] not in ["None", None] else "-"
+        cardColor   = f'#{force["cardColor"]}' if force["cardColor"] not in ["None", None] else "-"
+        if mode == 1:
+            result.append(f'{forceId}|{forceName}|{color}|{cardColor}')
+        else:
+            result.append([forceId, forceName, color, cardColor])
+
+    if mode == 1:
+        header = ["ID|Name|Color|Cardcolor"]
+    else:
+        header = [f'{"ID":<{ID_Max+1}}{"Name":<{Name_Max+1}}\tColor\tCardcolor\t']
+        result = [f'{force[0]:<{ID_Max+1}}{force[1]:<{Name_Max+1}}\t{force[2]}\t{force[3]}' for force in result]
+    
+    script_result(header + result, True)
+team_color(mode = 2)
