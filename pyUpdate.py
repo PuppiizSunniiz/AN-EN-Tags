@@ -72,7 +72,7 @@ json_talentTL       =   json_load("json/ace/tl-talents.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS : list[str] = ["Lord/Sharp","Alliance/Supportive Opertator"] # "", 
+NEW_CHARS : list[str] = [] # "", 
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS : list[str] = [] # "",
@@ -123,6 +123,7 @@ def get_new_akhr(new_char_id : str, new_char_name : str) -> dict[str, Any]:
                                     "nationId"      :   json_char[new_char_id]["nationId"],
                                     "groupId"       :   json_char[new_char_id]["groupId"],
                                     "teamId"        :   json_char[new_char_id]["teamId"],
+                                    "subPower"      :   json_char[new_char_id]["subPower"],
                                     "type"          :   CLASS_PARSE_CN[json_char[new_char_id]["profession"]],
                                     "level"         :   int(json_char[new_char_id]["rarity"][-1]),
                                     "sex"           :   sex.get(gender, gender),
@@ -221,21 +222,27 @@ def update_char_TraitSkillTalent(new_char_name : str) :
 
 def parentheses(desc : str) -> str :
     clean_dict = {
-                    "（"	:	"(",
-                    "）"	:	")",
-                    "【"	:	"[",
-                    "】"	:	"]",
-                    "；"	:	"; ",
-                    " "	    :	" ",
-                    "、"	:	", ",
-                    "％"	:	"%",
+                    r'(’)'              : "'",
+                    r'(。)'             : ". ",
+                    r'(…)'              : "...",
+                    r'(，|、| +, )'     : ", ",
+                    r'(“|”)'            : "\"",
+                    r'【'               : " [",
+                    r'】'               : "] ",
+                    r'（'               : " (",
+                    r'）'               : ") ",
+                    r'；'	            : "; ",
+                    r'？'               : "? ",
+                    r'！'               : "! ",
+                    r'[  ]+'            : " ",
+                    r'％'              	: "%",
                 }
     
     if isinstance(desc, NoneType):
         return None
     else:
         for k,v in clean_dict.items():
-            desc = desc.replace(k, v)
+            desc = re.sub(k, v, desc)
         return desc
 
 #########################################################################################################
@@ -254,8 +261,12 @@ for new_char_name in NEW_CHARS:
     if Rechecked and new_char_name in char_list:
         update_char_TraitSkillTalent(new_char_name)
 
-#Update old char localization
+#Update old char
 for char_data in json_akhr:
+    char_data["nationId"]   = json_char[char_data["id"]]["nationId"]
+    char_data["groupId"]    = json_char[char_data["id"]]["groupId"]
+    char_data["teamId"]     = json_char[char_data["id"]]["teamId"]
+    char_data["subPower"]   = json_char[char_data["id"]]["subPower"]
     for lang in [["name_en", json_charEN],["name_jp", json_charJP], ["name_kr", json_charKR]]:
         if char_data["id"] in lang[1].keys():
             char_data[lang[0]] = lang[1][char_data["id"]]["name"]
@@ -624,25 +635,6 @@ for char_id in json_char.keys():
 
 with open("json/puppiiz/char_names.json", "w", encoding = "utf-8") as filepath :
     json.dump(char_names, filepath, indent = 4, ensure_ascii = False)
-
-#########################################################################################################
-# nation_track
-#########################################################################################################
-nation_track = {}
-
-for char_id in json_char.keys():
-    if not [x for x in json_char[char_id]["mainPower"].values() if x]:
-        continue
-    else:
-        nation_track[char_id] = {
-                                "main"      : json_char[char_id]["mainPower"],
-                                "hidden"    : json_char[char_id]["subPower"],
-                            }
-
-nation_track = {k:nation_track[k] for k in sorted(nation_track.keys())}
-
-with open("json/puppiiz/nation_track.json", "w", encoding = "utf-8") as filepath :
-    json.dump(nation_track, filepath, indent = 4, ensure_ascii = False)
 
 #########################################################################################################
 # The Rest

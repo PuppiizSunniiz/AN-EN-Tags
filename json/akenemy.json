@@ -3320,7 +3320,7 @@
                     "name": "[PV] : I Portatori dei Velluti",
                     "date": 1730433600,
                     "zone": {
-                        "act38side_zone1": {
+                        "act38sre_zone1": {
                             "name": "Quadriglia",
                             "stage": {
                                 "act38side_tr01": "PV-TR-1 : 'Regulation on Fireworks'",
@@ -3339,7 +3339,7 @@
                                 "act38side_sp03": "PV-SP-3 : Carnevale Fireworks"
                             }
                         },
-                        "act38side_zone2": {
+                        "act38sre_zone2": {
                             "name": "Splendida Cavalcata",
                             "stage": {
                                 "act38side_ex01": "PV-EX-1 : Snack Delivery",
@@ -3360,7 +3360,7 @@
                                 "act38side_ex08#f#": "PV-EX-8 : La Signora del Carnevale <b>(Challenge)</b>"
                             }
                         },
-                        "act38side_zone3": {
+                        "act38sre_zone3": {
                             "name": "Decadanza",
                             "stage": {
                                 "act38side_s01": "PV-S-1 : Endless Joke",
@@ -41814,7 +41814,7 @@
             },
             "sidestory": {
                 "act38side": {
-                    "act38side_zone1": [
+                    "act38sre_zone1": [
                         "act38side_06",
                         "act38side_09",
                         "act38side_sp01"
@@ -41840,7 +41840,7 @@
             },
             "sidestory": {
                 "act38side": {
-                    "act38side_zone1": [
+                    "act38sre_zone1": [
                         "act38side_05",
                         "act38side_09",
                         "act38side_10",
@@ -71135,10 +71135,10 @@
                     ]
                 },
                 "act38side": {
-                    "act38side_zone1": [
+                    "act38sre_zone1": [
                         "act38side_sp02"
                     ],
-                    "act38side_zone2": [
+                    "act38sre_zone2": [
                         "act38side_ex03",
                         "act38side_ex03#f#",
                         "act38side_ex05",
@@ -71148,7 +71148,7 @@
                         "act38side_ex08",
                         "act38side_ex08#f#"
                     ],
-                    "act38side_zone3": [
+                    "act38sre_zone3": [
                         "act38side_s01",
                         "act38side_s01#f#",
                         "act38side_s02",
@@ -72977,7 +72977,7 @@
         "enemy_10031_cnvsld": {
             "sidestory": {
                 "act38side": {
-                    "act38side_zone1": [
+                    "act38sre_zone1": [
                         "act38side_tr01",
                         "act38side_tr01",
                         "act38side_01",
@@ -73005,7 +73005,7 @@
         "enemy_10038_cnvpiz": {
             "sidestory": {
                 "act38side": {
-                    "act38side_zone1": [
+                    "act38sre_zone1": [
                         "act38side_tr01",
                         "act38side_04",
                         "act38side_06",
@@ -73036,7 +73036,7 @@
         "enemy_10040_cnvbln": {
             "sidestory": {
                 "act38side": {
-                    "act38side_zone1": [
+                    "act38sre_zone1": [
                         "act38side_tr01",
                         "act38side_03",
                         "act38side_04",
@@ -73044,7 +73044,7 @@
                         "act38side_09",
                         "act38side_sp02"
                     ],
-                    "act38side_zone2": [
+                    "act38sre_zone2": [
                         "act38side_ex01",
                         "act38side_ex01#f#",
                         "act38side_ex02",
@@ -73058,7 +73058,7 @@
                         "act38side_ex07",
                         "act38side_ex07#f#"
                     ],
-                    "act38side_zone3": [
+                    "act38sre_zone3": [
                         "act38side_s02",
                         "act38side_s02#f#"
                     ]
@@ -73068,7 +73068,7 @@
         "enemy_10041_cnvfire": {
             "sidestory": {
                 "act38side": {
-                    "act38side_zone1": [
+                    "act38sre_zone1": [
                         "act38side_tr01",
                         "act38side_01",
                         "act38side_02",
@@ -73084,7 +73084,7 @@
                         "act38side_sp02",
                         "act38side_sp03"
                     ],
-                    "act38side_zone2": [
+                    "act38sre_zone2": [
                         "act38side_ex01",
                         "act38side_ex01#f#",
                         "act38side_ex02",
@@ -73104,7 +73104,7 @@
                         "act38side_ex08",
                         "act38side_ex08#f#"
                     ],
-                    "act38side_zone3": [
+                    "act38sre_zone3": [
                         "act38side_s01",
                         "act38side_s01#f#",
                         "act38side_s02",
@@ -73122,7 +73122,7 @@
         "enemy_10032_cnvsnp": {
             "sidestory": {
                 "act38side": {
-                    "act38side_zone1": [
+                    "act38sre_zone1": [
                         "act38side_02",
                         "act38side_05"
                     ]
@@ -73132,7 +73132,7 @@
         "enemy_10033_cnvbsk": {
             "sidestory": {
                 "act38side": {
-                    "act38side_zone1": [
+                    "act38sre_zone1": [
                         "act38side_03",
                         "act38side_sp01"
                     ]
@@ -73149,7 +73149,7 @@
         "enemy_10036_cnvpvd": {
             "sidestory": {
                 "act38side": {
-                    "act38side_zone1": [
+                    "act38sre_zone1": [
                         "act38side_07",
                         "act38side_10"
                     ]
@@ -73166,7 +73166,7 @@
         "enemy_10037_cnvpcar": {
             "sidestory": {
                 "act38side": {
-                    "act38side_zone1": [
+                    "act38sre_zone1": [
                         "act38side_07",
                         "act38side_09",
                         "act38side_10",
@@ -73185,7 +73185,7 @@
         "enemy_10039_cnvber": {
             "sidestory": {
                 "act38side": {
-                    "act38side_zone1": [
+                    "act38sre_zone1": [
                         "act38side_08"
                     ]
                 }
@@ -73194,14 +73194,14 @@
         "enemy_1560_cnvlap": {
             "sidestory": {
                 "act38side": {
-                    "act38side_zone1": [
+                    "act38sre_zone1": [
                         "act38side_10"
                     ],
-                    "act38side_zone2": [
+                    "act38sre_zone2": [
                         "act38side_ex08",
                         "act38side_ex08#f#"
                     ],
-                    "act38side_zone3": [
+                    "act38sre_zone3": [
                         "act38side_s05",
                         "act38side_s05#f#"
                     ]
@@ -73211,10 +73211,10 @@
         "enemy_10040_cnvbln_2": {
             "sidestory": {
                 "act38side": {
-                    "act38side_zone1": [
+                    "act38sre_zone1": [
                         "act38side_sp02"
                     ],
-                    "act38side_zone2": [
+                    "act38sre_zone2": [
                         "act38side_ex01",
                         "act38side_ex01#f#",
                         "act38side_ex02",
@@ -73230,7 +73230,7 @@
                         "act38side_ex07",
                         "act38side_ex07#f#"
                     ],
-                    "act38side_zone3": [
+                    "act38sre_zone3": [
                         "act38side_s02",
                         "act38side_s02#f#"
                     ]
@@ -73240,10 +73240,10 @@
         "enemy_10033_cnvbsk_2": {
             "sidestory": {
                 "act38side": {
-                    "act38side_zone1": [
+                    "act38sre_zone1": [
                         "act38side_sp02"
                     ],
-                    "act38side_zone2": [
+                    "act38sre_zone2": [
                         "act38side_ex02",
                         "act38side_ex02#f#",
                         "act38side_ex05",
@@ -73251,7 +73251,7 @@
                         "act38side_ex06",
                         "act38side_ex06#f#"
                     ],
-                    "act38side_zone3": [
+                    "act38sre_zone3": [
                         "act38side_s04",
                         "act38side_s04#f#"
                     ]
@@ -73268,10 +73268,10 @@
         "enemy_10034_cnvsax_2": {
             "sidestory": {
                 "act38side": {
-                    "act38side_zone1": [
+                    "act38sre_zone1": [
                         "act38side_sp02"
                     ],
-                    "act38side_zone2": [
+                    "act38sre_zone2": [
                         "act38side_ex02",
                         "act38side_ex02#f#",
                         "act38side_ex04",
@@ -73283,7 +73283,7 @@
                         "act38side_ex08",
                         "act38side_ex08#f#"
                     ],
-                    "act38side_zone3": [
+                    "act38sre_zone3": [
                         "act38side_s02",
                         "act38side_s02#f#",
                         "act38side_s03",
@@ -73311,7 +73311,7 @@
         "enemy_10031_cnvsld_2": {
             "sidestory": {
                 "act38side": {
-                    "act38side_zone2": [
+                    "act38sre_zone2": [
                         "act38side_ex01",
                         "act38side_ex01#f#",
                         "act38side_ex02",
@@ -73325,7 +73325,7 @@
                         "act38side_ex08",
                         "act38side_ex08#f#"
                     ],
-                    "act38side_zone3": [
+                    "act38sre_zone3": [
                         "act38side_s01",
                         "act38side_s01#f#",
                         "act38side_s02",
@@ -73348,7 +73348,7 @@
         "enemy_10032_cnvsnp_2": {
             "sidestory": {
                 "act38side": {
-                    "act38side_zone2": [
+                    "act38sre_zone2": [
                         "act38side_ex01",
                         "act38side_ex01#f#"
                     ]
@@ -73366,7 +73366,7 @@
         "enemy_10037_cnvpcar_2": {
             "sidestory": {
                 "act38side": {
-                    "act38side_zone2": [
+                    "act38sre_zone2": [
                         "act38side_ex01",
                         "act38side_ex01#f#",
                         "act38side_ex03",
@@ -73380,7 +73380,7 @@
                         "act38side_ex08",
                         "act38side_ex08#f#"
                     ],
-                    "act38side_zone3": [
+                    "act38sre_zone3": [
                         "act38side_s01",
                         "act38side_s01#f#",
                         "act38side_s02",
@@ -73407,7 +73407,7 @@
         "enemy_10035_cnvdnc_2": {
             "sidestory": {
                 "act38side": {
-                    "act38side_zone2": [
+                    "act38sre_zone2": [
                         "act38side_ex02",
                         "act38side_ex02#f#",
                         "act38side_ex03",
@@ -73415,7 +73415,7 @@
                         "act38side_ex04",
                         "act38side_ex04#f#"
                     ],
-                    "act38side_zone3": [
+                    "act38sre_zone3": [
                         "act38side_s02",
                         "act38side_s02#f#",
                         "act38side_s04",
@@ -73438,7 +73438,7 @@
         "enemy_10036_cnvpvd_2": {
             "sidestory": {
                 "act38side": {
-                    "act38side_zone2": [
+                    "act38sre_zone2": [
                         "act38side_ex03",
                         "act38side_ex03#f#",
                         "act38side_ex04",
@@ -73450,7 +73450,7 @@
                         "act38side_ex08",
                         "act38side_ex08#f#"
                     ],
-                    "act38side_zone3": [
+                    "act38sre_zone3": [
                         "act38side_s01",
                         "act38side_s01#f#",
                         "act38side_s02",
@@ -73473,7 +73473,7 @@
         "enemy_10039_cnvber_2": {
             "sidestory": {
                 "act38side": {
-                    "act38side_zone2": [
+                    "act38sre_zone2": [
                         "act38side_ex04",
                         "act38side_ex04#f#",
                         "act38side_ex06",
@@ -73481,7 +73481,7 @@
                         "act38side_ex07",
                         "act38side_ex07#f#"
                     ],
-                    "act38side_zone3": [
+                    "act38sre_zone3": [
                         "act38side_s01",
                         "act38side_s01#f#",
                         "act38side_s02",
