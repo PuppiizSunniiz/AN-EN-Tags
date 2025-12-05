@@ -9991,5 +9991,73 @@
         "hidden": true,
         "globalHidden": true,
         "gamemode": "SP"
+    },
+    {
+        "id": "char_4212_nasti",
+        "name_cn": "娜斯提",
+        "name_en": "Nasti",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": "columbia",
+        "groupId": "rhine",
+        "teamId": null,
+        "subPower": null,
+        "type": "辅助",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "近战位",
+            "支援",
+            "防护"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_4214_cairn",
+        "name_cn": "响石",
+        "name_en": "Cairn",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": "columbia",
+        "groupId": null,
+        "teamId": null,
+        "subPower": null,
+        "type": "重装",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "元素",
+            "防护"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_4213_skybx",
+        "name_cn": "天空盒",
+        "name_en": "Skybox",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": "columbia",
+        "groupId": null,
+        "teamId": null,
+        "subPower": null,
+        "type": "狙击",
+        "level": 5,
+        "sex": "男",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "群攻"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
     }
 ]

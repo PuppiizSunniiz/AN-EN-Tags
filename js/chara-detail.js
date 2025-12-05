@@ -113,6 +113,7 @@
     var talentValue = [0,0,0]
     var toktalentValue = [0,0,0]
     var talentLimit = []
+    var toktalentLimit = []
     var ModuletalentValue
 
     var Amiyacurrclass  =   "caster"
@@ -1161,6 +1162,9 @@
         });
         console.log(ops)
 
+        // Faction box shadow
+        ops_main_faction = ops.filter(char => Object.values(char.mainPower).includes(op_faction[0]))
+
         // FILTERING
         if (op_gamemode !== "ALL") ops = ops.filter(char => op_gamemode == "BASE" ? ["BASE", "SO"].includes(query(db.chars2, "id", char.id).gamemode)
                                                                                     :op_gamemode == query(db.chars2, "id", char.id).gamemode)
@@ -1262,15 +1266,16 @@
             }
             var unreadable = query(db.unreadNameTL,"name",char.appellation).name_en
             var gamemode = query(db.chars2, "id", char.id).gamemode
+            var hidden_fac_op = !ops_main_faction.includes(char) && op_faction.length
             return `
             ${extrathing}
-            <li class="selectop-grid ak-shadow" onclick="selectOperator('${getId(char)}')">
+            <li class="selectop-grid ak-shadow" onclick="selectOperator('${getId(char)}')" ${hidden_fac_op?`style="box-shadow: 0px 0px 3px 3px #22b;"`:""}>
             <div class="op-image-grid">
-                ${GetLogo(char)?`<div class="op-grid-faction"><img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/${GetLogo(char)?GetLogo(char).toLowerCase():"none"}.png" title="${GetLogo(char)?GetLogoInfo(char).powerCode:"None"}"></div>`:""}
+                ${GetLogo(char)?`<div class="op-grid-faction"><img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/${GetLogo(char)?GetLogo(char).toLowerCase():"none"}.png" title="${GetLogo(char)?GetLogoInfo(char):"None"}"></div>`:""}
                 ${gamemode=="BASE"?"":'<div class="op-grid-gamemode ' + gamemode +'">' + gamemode + '</div>'}
                 <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${getId(char)}.png">
             </div>
-            <div class="${char.appellation.length>12?char.appellation.length>16?"namesmaller":"namesmall":"name"} ak-font-novecento ak-center">${unreadable?`[${unreadable}]`:""} ${char.appellation}</div>
+            <div class="${char.appellation.length>12?char.appellation.length>16?"namesmaller":"namesmall":"name"} ak-font-novecento ak-center" ${hidden_fac_op?`style="color: aqua"`:""}>${unreadable?`[${unreadable}]`:""} ${char.appellation}</div>
             <div class='selectopopgridline ak-rare-${char.rarity + 1}'></div>
 
             ${showfaction?`<div class='ak-showclass'><img loading='lazy' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/classes/class_${db.classes.find(search=>search.type_data==char.profession).type_en.toLowerCase()}.png'></div>`:""}
@@ -1493,7 +1498,7 @@
                                                         <img loading='lazy' id="op-faction-image3" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/logo_${faction}.png">
                                                     </div>
                                                     <div id="op-faction-text" style="display: inline;">
-                                                        ${db.handbookTeam[faction]?db.handbookTeam[faction].powerCode:""}
+                                                        ${GetLogoInfo(faction)}
                                                     </div>
                                                 </div>`
                             faction_all.push(faction)
@@ -1510,7 +1515,7 @@
                                                         <img loading='lazy' id="op-faction-image3" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/logo_${faction}.png">
                                                     </div>
                                                     <div id="op-faction-text" style="display: inline;">
-                                                        ${db.handbookTeam[faction]?db.handbookTeam[faction].powerCode:""}
+                                                        ${GetLogoInfo(faction)}
                                                     </div>
                                                 </div>`
                         }
@@ -1524,7 +1529,7 @@
                         <img id='op-faction-image2' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/${logo.toLowerCase()}.png'>
                     </div>
                     <div id="op-faction-text">
-                        ${GetLogoInfo(opdataFull).powerCode}
+                        ${GetLogoInfo(opdataFull)}
                     </div>
                     ${faction_sub_text?'<i class="fas fa-caret-down"></i>':""}`)
 
@@ -2894,7 +2899,7 @@
                 }else if (skill){
                     tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
-                    </br>${objective} <@ba.kw>${mission.paramList[4]}</> enemies using <@ba.kw> loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/skills/skill_icon_${skill}.png" style="max-width:20px;margin:2px"> ${skillname} (Skill ${skillid})</>
+                    </br>${objective} <@ba.kw>${mission.paramList[4]}</> enemies using <@ba.kw> <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/skills/skill_icon_${skill}.png" style="max-width:20px;margin:2px"> ${skillname} (Skill ${skillid})</>
                     </br>Using Non-Borrowed <@ba.kw>${chara.appellation}</>
                     `
                 }else if(chara2){
@@ -3263,7 +3268,7 @@
             + (a[2]-b[2])*1
             return calc
         })
-        talentLimit = talentObject.req2
+        toktalentLimit = talentObject.req2
         talentObject.req2.forEach(reqs => {
             var imagereq = []
             var currlevel = reqs[1]
@@ -3368,9 +3373,9 @@
                 </div>
             `)
 
-        let limElite    = Math.max(...talentLimit.map(a=>a[0]))
-        let limLevel    = Math.max(...talentLimit.map(a=>a[1]))
-        let limPotential= (RarityConvert(Tokendata.rarity.toString()))>2?0:Math.max(...talentLimit.map(a=>a[2]))
+        let limElite    = Math.max(...toktalentLimit.map(a=>a[0]))
+        let limLevel    = Math.max(...toktalentLimit.map(a=>a[1]))
+        let limPotential= (RarityConvert(Tokendata.rarity.toString()))>2?0:Math.max(...toktalentLimit.map(a=>a[2]))
         TokenTalentShow(limElite, limLevel, limPotential)
         $(`#Toktabtalent${limElite}-${limLevel}`).toggleClass("active")
         $(`#Toktabtalent2${limPotential}`).toggleClass("active")
@@ -3385,7 +3390,7 @@
             potential = toktalentValue[2]
         }
 
-        var currlimit = talentLimit.find(limit =>{
+        var currlimit = toktalentLimit.find(limit =>{
             if(`${limit[0]}-${limit[1]}-${limit[2]}`==`${elite}-${level}-${potential}`){
                 return true
             }
@@ -3398,7 +3403,7 @@
         }else{
             var maxpot = 0
             if(waspot == -1){
-                talentLimit.forEach(limit => {
+                toktalentLimit.forEach(limit => {
                     if(limit[0]==elite&&limit[1]==level){
                         maxpot = Math.max(maxpot,limit[2])
                     }
@@ -3680,21 +3685,15 @@
         return null
     }
 
-    function GetLogoInfo (opdataFull){
-        var faction
-        if(opdataFull.teamId)
-            faction= opdataFull.teamId
-        else if(opdataFull.groupId)
-            faction= opdataFull.groupId
-        else if(opdataFull.nationId)
-            faction= opdataFull.nationId
-
-        // console.log(faction)
-
-        var factionname = db.handbookTeam[faction]
-        // console.log(factionname)
+    function GetLogoInfo (data){
+        var faction_id
+        if (typeof data == "object"){
+            faction_id = data.teamId?data.teamId:data.groupId?data.groupId:data.nationId
+        }else{
+            faction_id = data
+        }
+        var factionname = Object.keys(db.handbookTeamEN).includes(faction_id)?db.handbookTeamEN[faction_id].powerName:db.handbookTeam[faction_id].powerCode
         if (factionname) return factionname
-
         return null
     }
 

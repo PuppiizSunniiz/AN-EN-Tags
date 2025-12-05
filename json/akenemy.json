@@ -3828,6 +3828,26 @@
                             }
                         }
                     }
+                },
+                "act47side": {
+                    "name": "[UR] : Unrealized Realities",
+                    "date": 1764889200,
+                    "zone": {
+                        "act47side_zone1": {
+                            "name": "天空生活展会",
+                            "stage": {
+                                "act47side_01": "UR-1 : 嘈杂的天空",
+                                "act47side_tr01": "UR-TR-1 : 高空适应症",
+                                "act47side_02": "UR-2 : 擅闯者",
+                                "act47side_03": "UR-3 : 跌落保护",
+                                "act47side_04": "UR-4 : 晴空湍流",
+                                "act47side_05": "UR-5 : 注目礼",
+                                "act47side_06": "UR-6 : 交叉航线",
+                                "act47side_07": "UR-7 : 停机坪",
+                                "act47side_08": "UR-8 : 栖脚地"
+                            }
+                        }
+                    }
                 }
             }
         },
@@ -7121,6 +7141,7 @@
         "weekly_2": "PR-B : Fierce Attack (Snipers & Casters)",
         "weekly_3": "PR-C : Unstoppable Charge (Vanguards & Supporters)",
         "weekly_4": "PR-D : Fearless Protection (Guards & Specialists)",
+        "act47side": "[UR] : Unrealized Realities",
         "act1autochess": "Stronghold Protocol - Alliance",
         "act46side": "[OS] : Retracing Our Steps 1101",
         "act3mainss_zone1": "Episode 16 : Abnormal Spectrum",
@@ -11861,35 +11882,12 @@
                     ]
                 }
             },
-            "exp": {
-                "act1vhalfidle": {
-                    "act1vhalfidle_zone1": [
-                        "act1halfidle_h05"
-                    ]
-                },
-                "act1arcade": {
-                    "zone_4": [
-                        "act1arcade_m4_01",
-                        "act1arcade_m4_02"
-                    ]
-                },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_a-02",
-                        "act1lock_b-04",
-                        "act1lock_c-01"
-                    ]
-                }
-            },
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_rm05",
-                        "act1multi_rm-ex05"
-                    ]
-                }
-            },
             "sidestory": {
+                "act47side": {
+                    "act47side_zone1": [
+                        "act47side_01"
+                    ]
+                },
                 "act32side": {
                     "act32side_zone1": [
                         "act32side_01"
@@ -11938,6 +11936,34 @@
                     "act13d2_zone2": [
                         "a001_ex05",
                         "a001_ex05#f#"
+                    ]
+                }
+            },
+            "exp": {
+                "act1vhalfidle": {
+                    "act1vhalfidle_zone1": [
+                        "act1halfidle_h05"
+                    ]
+                },
+                "act1arcade": {
+                    "zone_4": [
+                        "act1arcade_m4_01",
+                        "act1arcade_m4_02"
+                    ]
+                },
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_a-02",
+                        "act1lock_b-04",
+                        "act1lock_c-01"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_rm05",
+                        "act1multi_rm-ex05"
                     ]
                 }
             },
@@ -34962,6 +34988,117 @@
                         "RA#2_monthly_1",
                         "RA#2_monthly_1",
                         "RA#2_monthly_1"
+                    ]
+                }
+            }
+        },
+        "enemy_10153_nsblon": {
+            "sidestory": {
+                "act47side": {
+                    "act47side_zone1": [
+                        "act47side_01",
+                        "act47side_tr01",
+                        "act47side_02",
+                        "act47side_03",
+                        "act47side_04",
+                        "act47side_05",
+                        "act47side_06",
+                        "act47side_07",
+                        "act47side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10146_nscola": {
+            "sidestory": {
+                "act47side": {
+                    "act47side_zone1": [
+                        "act47side_01",
+                        "act47side_tr01",
+                        "act47side_02",
+                        "act47side_03",
+                        "act47side_04",
+                        "act47side_05",
+                        "act47side_06",
+                        "act47side_07",
+                        "act47side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10147_nsbomb": {
+            "sidestory": {
+                "act47side": {
+                    "act47side_zone1": [
+                        "act47side_01",
+                        "act47side_02",
+                        "act47side_07",
+                        "act47side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10149_nscan": {
+            "sidestory": {
+                "act47side": {
+                    "act47side_zone1": [
+                        "act47side_tr01",
+                        "act47side_03",
+                        "act47side_04",
+                        "act47side_05",
+                        "act47side_07"
+                    ]
+                }
+            }
+        },
+        "enemy_10148_nsmos": {
+            "sidestory": {
+                "act47side": {
+                    "act47side_zone1": [
+                        "act47side_02",
+                        "act47side_04",
+                        "act47side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10150_nsheat": {
+            "sidestory": {
+                "act47side": {
+                    "act47side_zone1": [
+                        "act47side_04",
+                        "act47side_06"
+                    ]
+                }
+            }
+        },
+        "enemy_10151_nspace": {
+            "sidestory": {
+                "act47side": {
+                    "act47side_zone1": [
+                        "act47side_05",
+                        "act47side_07",
+                        "act47side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10152_nstree": {
+            "sidestory": {
+                "act47side": {
+                    "act47side_zone1": [
+                        "act47side_06",
+                        "act47side_07",
+                        "act47side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_1579_nstmom": {
+            "sidestory": {
+                "act47side": {
+                    "act47side_zone1": [
+                        "act47side_08"
                     ]
                 }
             }

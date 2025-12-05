@@ -5408,6 +5408,78 @@
             "name": "Assault",
             "Event": "weekly_4"
         },
+        "act47side_01": {
+            "stageId": "act47side_01",
+            "levelId": "Activities/act47side/level_act47side_01",
+            "zoneId": "act47side_zone1",
+            "code": "UR-1",
+            "name": "嘈杂的天空",
+            "Event": "act47side"
+        },
+        "act47side_tr01": {
+            "stageId": "act47side_tr01",
+            "levelId": "Activities/act47side/level_act47side_tr01",
+            "zoneId": "act47side_zone1",
+            "code": "UR-TR-1",
+            "name": "高空适应症",
+            "Event": "act47side"
+        },
+        "act47side_02": {
+            "stageId": "act47side_02",
+            "levelId": "Activities/act47side/level_act47side_02",
+            "zoneId": "act47side_zone1",
+            "code": "UR-2",
+            "name": "擅闯者",
+            "Event": "act47side"
+        },
+        "act47side_03": {
+            "stageId": "act47side_03",
+            "levelId": "Activities/act47side/level_act47side_03",
+            "zoneId": "act47side_zone1",
+            "code": "UR-3",
+            "name": "跌落保护",
+            "Event": "act47side"
+        },
+        "act47side_04": {
+            "stageId": "act47side_04",
+            "levelId": "Activities/act47side/level_act47side_04",
+            "zoneId": "act47side_zone1",
+            "code": "UR-4",
+            "name": "晴空湍流",
+            "Event": "act47side"
+        },
+        "act47side_05": {
+            "stageId": "act47side_05",
+            "levelId": "Activities/act47side/level_act47side_05",
+            "zoneId": "act47side_zone1",
+            "code": "UR-5",
+            "name": "注目礼",
+            "Event": "act47side"
+        },
+        "act47side_06": {
+            "stageId": "act47side_06",
+            "levelId": "Activities/act47side/level_act47side_06",
+            "zoneId": "act47side_zone1",
+            "code": "UR-6",
+            "name": "交叉航线",
+            "Event": "act47side"
+        },
+        "act47side_07": {
+            "stageId": "act47side_07",
+            "levelId": "Activities/act47side/level_act47side_07",
+            "zoneId": "act47side_zone1",
+            "code": "UR-7",
+            "name": "停机坪",
+            "Event": "act47side"
+        },
+        "act47side_08": {
+            "stageId": "act47side_08",
+            "levelId": "Activities/act47side/level_act47side_08",
+            "zoneId": "act47side_zone1",
+            "code": "UR-8",
+            "name": "栖脚地",
+            "Event": "act47side"
+        },
         "act1autochess_m01": {
             "stageId": "act1autochess_m01",
             "levelId": "Activities/ACT1AUTOCHESS/level_act1autochess_m01",
@@ -29362,6 +29434,17 @@
             "pro_d_1",
             "pro_d_2"
         ],
+        "act47side_zone1": [
+            "act47side_01",
+            "act47side_tr01",
+            "act47side_02",
+            "act47side_03",
+            "act47side_04",
+            "act47side_05",
+            "act47side_06",
+            "act47side_07",
+            "act47side_08"
+        ],
         "act1autochess_zone1": [
             "act1autochess_m01",
             "act1autochess_m02",
@@ -33200,6 +33283,9 @@
         ],
         "weekly_4": [
             "weekly_4"
+        ],
+        "act47side": [
+            "act47side_zone1"
         ],
         "act1autochess": [
             "act1autochess_zone1"
@@ -38482,35 +38568,12 @@
                     ]
                 }
             },
-            "exp": {
-                "act1vhalfidle": {
-                    "act1vhalfidle_zone1": [
-                        "act1halfidle_h05"
-                    ]
-                },
-                "act1arcade": {
-                    "zone_4": [
-                        "act1arcade_m4_01",
-                        "act1arcade_m4_02"
-                    ]
-                },
-                "act1lock": {
-                    "act1lock_zone1": [
-                        "act1lock_a-02",
-                        "act1lock_b-04",
-                        "act1lock_c-01"
-                    ]
-                }
-            },
-            "coop": {
-                "act1multi": {
-                    "act1multi_zone1": [
-                        "act1multi_rm05",
-                        "act1multi_rm-ex05"
-                    ]
-                }
-            },
             "sidestory": {
+                "act47side": {
+                    "act47side_zone1": [
+                        "act47side_01"
+                    ]
+                },
                 "act32side": {
                     "act32side_zone1": [
                         "act32side_01"
@@ -38559,6 +38622,34 @@
                     "act13d2_zone2": [
                         "a001_ex05",
                         "a001_ex05#f#"
+                    ]
+                }
+            },
+            "exp": {
+                "act1vhalfidle": {
+                    "act1vhalfidle_zone1": [
+                        "act1halfidle_h05"
+                    ]
+                },
+                "act1arcade": {
+                    "zone_4": [
+                        "act1arcade_m4_01",
+                        "act1arcade_m4_02"
+                    ]
+                },
+                "act1lock": {
+                    "act1lock_zone1": [
+                        "act1lock_a-02",
+                        "act1lock_b-04",
+                        "act1lock_c-01"
+                    ]
+                }
+            },
+            "coop": {
+                "act1multi": {
+                    "act1multi_zone1": [
+                        "act1multi_rm05",
+                        "act1multi_rm-ex05"
                     ]
                 }
             },
@@ -61583,6 +61674,117 @@
                         "RA#2_monthly_1",
                         "RA#2_monthly_1",
                         "RA#2_monthly_1"
+                    ]
+                }
+            }
+        },
+        "enemy_10153_nsblon": {
+            "sidestory": {
+                "act47side": {
+                    "act47side_zone1": [
+                        "act47side_01",
+                        "act47side_tr01",
+                        "act47side_02",
+                        "act47side_03",
+                        "act47side_04",
+                        "act47side_05",
+                        "act47side_06",
+                        "act47side_07",
+                        "act47side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10146_nscola": {
+            "sidestory": {
+                "act47side": {
+                    "act47side_zone1": [
+                        "act47side_01",
+                        "act47side_tr01",
+                        "act47side_02",
+                        "act47side_03",
+                        "act47side_04",
+                        "act47side_05",
+                        "act47side_06",
+                        "act47side_07",
+                        "act47side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10147_nsbomb": {
+            "sidestory": {
+                "act47side": {
+                    "act47side_zone1": [
+                        "act47side_01",
+                        "act47side_02",
+                        "act47side_07",
+                        "act47side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10149_nscan": {
+            "sidestory": {
+                "act47side": {
+                    "act47side_zone1": [
+                        "act47side_tr01",
+                        "act47side_03",
+                        "act47side_04",
+                        "act47side_05",
+                        "act47side_07"
+                    ]
+                }
+            }
+        },
+        "enemy_10148_nsmos": {
+            "sidestory": {
+                "act47side": {
+                    "act47side_zone1": [
+                        "act47side_02",
+                        "act47side_04",
+                        "act47side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10150_nsheat": {
+            "sidestory": {
+                "act47side": {
+                    "act47side_zone1": [
+                        "act47side_04",
+                        "act47side_06"
+                    ]
+                }
+            }
+        },
+        "enemy_10151_nspace": {
+            "sidestory": {
+                "act47side": {
+                    "act47side_zone1": [
+                        "act47side_05",
+                        "act47side_07",
+                        "act47side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10152_nstree": {
+            "sidestory": {
+                "act47side": {
+                    "act47side_zone1": [
+                        "act47side_06",
+                        "act47side_07",
+                        "act47side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_1579_nstmom": {
+            "sidestory": {
+                "act47side": {
+                    "act47side_zone1": [
+                        "act47side_08"
                     ]
                 }
             }

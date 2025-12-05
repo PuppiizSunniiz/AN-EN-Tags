@@ -158,6 +158,16 @@ def riic_tl_json(show : bool = False):
                         match_power         = desc_match.group(2)
                         return f'When this Operator is assigned to a Power Plant, if another <${match_faction_skill}><@cc.kw>{match_faction_name}</></> Operator is assigned to a Power Plant, drone charging speed <@cc.vup>{match_power}</>'
                 case "manu":
+                    # Speed cost
+                    re_manu_formula_spd__cost_bd = r'进驻制造站时，基建内（不包含副手及活动室使用者）每有1名<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>干员（最多<@cc\.kw>(\d+)<\/>名），<@cc\.kw>([^<]*)<\/>类配方的生产力<@cc\.vup>([\+\-\.0-9]*%)<\/>'
+                    if re.match(re_manu_formula_spd__cost_bd, desc_sub):
+                        desc_match          = re.match(re_manu_formula_spd__cost_bd, desc_sub)
+                        match_faction_skill = desc_match.group(1)
+                        match_faction_name  = riic_match_tl(match_faction_skill)
+                        match_cap           = desc_match.group(2)
+                        match_mat           = riic_match_tl(desc_match.group(3), "item")
+                        match_spd           = desc_match.group(4)
+                        return f'When this Operator is assigned to a Factory, for each <${match_faction_skill}><@cc.kw>{match_faction_name}</></> Operator in the Base (excluding Assistants and Activity Room users, caps at <@cc.kw>{match_cap}</>), <@cc.kw>{match_mat}</> productivity <@cc.vup>{match_spd}</>'
                     # Speed & Morale
                     re_manu_formula_spd_limit_cost = r'^进驻制造站时，<@cc\.kw>([^<]*)<\/>类配方的生产力<@cc\.vup>([\+0-9%]*)<\/>，心情每小时消耗<@cc\.vup>([\+\-\.0-9]*)<\/>$'
                     if re.match(re_manu_formula_spd_limit_cost, desc_sub):
@@ -331,8 +341,8 @@ def riic_tl_json(show : bool = False):
                         match_faction_name  = riic_match_tl(match_faction_skill)
                         match_morale_2      = desc_match.group(3)
                         return f'When this Operator is assigned to a Dormitory, restores <@cc.vup>{match_morale_1}</> Morale per hour to all other Operators assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is a <${match_faction_skill}><@cc.kw>{match_faction_name}</></> Operator, further increases Morale restored by <@cc.vup>{match_morale_2}</>'
-                    re_dorm_rec_all_group = r'^进驻宿舍时，基建内（不包含副手及活动室使用者）每名<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>干员为该宿舍内所有干员心情每小时恢复速度<@cc\.vup>([\+\.0-9]*)<\/>（最多生效<@cc\.kw>([0-9]*)<\/>名，且同种效果取最高）$'
                     # Dorm all morale by faction
+                    re_dorm_rec_all_group = r'^进驻宿舍时，基建内（不包含副手及活动室使用者）每名<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>干员为该宿舍内所有干员心情每小时恢复速度<@cc\.vup>([\+\.0-9]*)<\/>（最多生效<@cc\.kw>([0-9]*)<\/>名，且同种效果取最高）$'
                     if re.match(re_dorm_rec_all_group, desc_sub):
                         desc_match          = re.match(re_dorm_rec_all_group, desc_sub)
                         match_faction_skill = desc_match.group(1)
@@ -340,6 +350,13 @@ def riic_tl_json(show : bool = False):
                         match_morale        = desc_match.group(2)
                         match_cap           = desc_match.group(3)
                         return f'When this Operator is assigned to a Dormitory, Morale recovery per hour of all Operators in that Dormitory <@cc.vup>{match_morale}</> for each <${match_faction_skill}><@cc.kw>{match_faction_name}</></> Operator in the Base (excluding Assistants and Activity Room users, caps at <@cc.kw>{match_cap}</> Operators, strongest effect of the same type applies)'
+                    # 
+                    re_dorm_rec_all__lv = r'进驻宿舍时，该宿舍内所有干员的心情每小时恢复<@cc\.vup>([\+\.0-9]*)<\/>，同时当前宿舍每级为恢复效果额外<@cc\.vup>([\+\.0-9]*)<\/>（叠加后的最终值同种效果取最高）'
+                    if re.match(re_dorm_rec_all__lv, desc_sub):
+                        desc_match          = re.match(re_dorm_rec_all__lv, desc_sub)
+                        match_morale        = desc_match.group(1)
+                        match_morale_extra  = desc_match.group(2)
+                        return f'When this Operator is assigned to a Dormitory, restores <@cc.vup>{match_morale}</> Morale per hour to all Operators assigned to that Dormitory. Additionally, for every level of the current Dormitory, restores another <@cc.vup>{match_morale_extra}</> (Only the strongest stacked effect of this type takes place)'
                 case "hire":
                     # Speed Morale
                     re_hire_spd_cost = r'^进驻人力办公室时，人脉资源的联络速度<@cc\.vup>([\+0-9%]*)<\/>，心情每小时消耗<@cc\.vdown>([\+\-\.[0-9]*)<\/>$'

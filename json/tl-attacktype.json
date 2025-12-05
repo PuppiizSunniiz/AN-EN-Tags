@@ -1069,6 +1069,41 @@
             "note": "new mods lor-x (sharp2)",
             "name": "char_617_sharp2",
             "code": "uniequip_002_sharp2"
+        },
+        "不会受到攻击，可部署在地面或高台位": {
+            "en": "Cannot be attacked, can be deployed on both Melee and Ranged tiles",
+            "color": "common",
+            "note": "Nasti 's Token (Site Supervisor)",
+            "name": "Site Supervisor",
+            "code": "token_10060_nasti_nstchr"
+    },
+        "装置有小工程师和高台两种形态，小工程师形态下不会受到攻击，可部署在地面或高台位": {
+            "en": "Device has 2 forms; Little Engineer and High Platform. When in the Little Engineer form, cannot be attacked, can be deployed on both Melee and Ranged tiles",
+            "color": "extra",
+            "note": "Nasti 's Token (Emergency Support Team)",
+            "name": "Emergency Support Team",
+            "code": "token_10061_nasti_nstbld"
+        },
+        "部署后<$ba.liftoff>起飞</>，<$ba.liftoff>起飞</>后只攻击空中敌人；技能开启时降落且攻击造成<@ba.kw>群体物理伤害</>": {
+            "en": "After deployment, <$ba.liftoff>Takes Off</> and only attack Aerial enemies while <$ba.liftoff>Takes Off</>; When skill is active, lands and deal <@ba.kw>AOE Physical damage</>.",
+            "color": "extra",
+            "note": "new Ops \"skybreaker\" Archetype trait",
+            "name": "Skybox",
+            "code": "char_4213_skybx"
+        },
+        "恢复友方单位生命，且会在<@ba.kw>3</>个友方单位间跳跃，每次跳跃治疗量降低15%": {
+            "en": "Restores HP of allies, bouncing between <@ba.kw>3</> allies. Healing reduced by 15% per bounce.",
+            "color": "heal",
+            "note": "new mods xah-x",
+            "name": "char_4139_papyrs",
+            "code": "uniequip_002_papyrs"
+        },
+        "攻击时需要消耗子弹且攻击力提升至<@ba.kw>133%</>，不攻击时会缓慢地装填子弹（最多{value}发）": {
+            "en": "Attacks consume Ammo to increase ATK to <@ba.kw>133%</>; While not attacking, Ammo will be slowly reloaded (max capacity {value}).",
+            "color": "physical",
+            "note": "new mods hun-y",
+            "name": "char_4117_ray",
+            "code": "uniequip_003_ray"
         }
     },
     "parts": [

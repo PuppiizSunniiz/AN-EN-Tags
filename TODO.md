@@ -39,6 +39,14 @@
 - Effect
     - ba.weaknessatk
 
+### Unrealized Realities
+- Archetype 
+    - Skybreaker
+- Trait
+    - Skybreaker
+    - Chain medic mod
+    - HUN-Y
+
 ### To Do
 - handle Xiaohei cat
 - Independent-miya

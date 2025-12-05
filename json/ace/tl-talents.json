@@ -9444,5 +9444,155 @@
                 "desc": "in [Stronghold Protocol], categorize as [调和]"
             }
         ]
+    ],
+	"char_4212_nasti": [
+        [
+            {
+                "name": "前方施工",
+                "descCN": "可以携带2个<支援装置>(最多可部署1个), 效果根据技能改变而改变",
+                "desc": "Can carry 2 <Support Devices> (deploy up to 1), with different effects depending on Skill."
+            },
+            {
+                "name": "前方施工",
+                "descCN": "可以携带2个<支援装置>(最多可部署2个), 效果根据技能改变而改变",
+                "desc": "Can carry 2 <Support Devices> (deploy up to 2), with different effects depending on Skill."
+            },
+            {
+                "name": "前方施工",
+                "descCN": "可以携带3个<支援装置>(最多可部署2个), 效果根据技能改变而改变",
+                "desc": "Can carry 3 <Support Devices> (deploy up to 2), with different effects depending on Skill."
+            }
+        ],
+        [
+            {
+                "name": "注意安全",
+                "descCN": "获得10%<$ba.protect>庇护</>; 远程敌人出现后, 改为使自身和场上的高台干员获得15%<$ba.protect>庇护</>, 且每6秒获得1点技力",
+                "desc": "Gain 10% <$ba.protect>Sanctuary</>; When ranged enemies appear, change to grants 15% <$ba.protect>Sanctuary</> to self and all Ranged operator on the field, and gain 1 SP every 6s"
+            },
+            {
+                "name": "注意安全",
+                "descCN": "获得12%<@ba.talpu> (+2%) </><$ba.protect>庇护</>; 远程敌人出现后, 改为使自身和场上的高台干员获得18%<@ba.talpu> (+3%) </><$ba.protect>庇护</>, 且每6秒获得1点技力",
+                "desc": "Gain 12%<@ba.talpu>(+2%)</> <$ba.protect>Sanctuary</>; When ranged enemies appear, change to grants 18%<@ba.talpu>(+3%)</> <$ba.protect>Sanctuary</> to self and all Ranged operator on the field, and gain 1 SP every 6s"
+            }
+        ]
+    ],
+	"token_10059_nasti_nstdef": [
+        [
+            {
+                "name": "严禁偷工减料",
+                "descCN": null,
+                "desc": ""
+            }
+        ],
+        [
+            {
+                "name": "严禁偷工减料",
+                "descCN": "使前方干员的防御力+17%",
+                "desc": "Grant an operator in front +17% DEF"
+            },
+            {
+                "name": "严禁偷工减料",
+                "descCN": "使前方干员的防御力+20%",
+                "desc": "Grant an operator in front +20% DEF"
+            },
+            {
+                "name": "严禁偷工减料",
+                "descCN": "使前方干员的防御力+25%",
+                "desc": "Grant an operator in front +25% DEF"
+            }
+        ]
+    ],
+    "token_10060_nasti_nstchr": [
+        [
+            {
+                "name": "取缔无效流程",
+                "descCN": null,
+                "desc": ""
+            },
+            {
+                "name": "取缔无效流程",
+                "descCN": null,
+                "desc": ""
+            },
+            {
+                "name": "取缔无效流程",
+                "descCN": null,
+                "desc": ""
+            }
+        ],
+        [
+            {
+                "name": "取缔无效流程",
+                "descCN": "最大生命值固定为6, 部署时生命值为1, 仅可通过自身技能补充生命",
+                "desc": "Max HP is fixed at 6 HP, has 1 HP on deployment. HP can only be recovered by its own skill."
+            },
+            {
+                "name": "取缔无效流程",
+                "descCN": "最大生命值固定为7, 部署时生命值为2, 仅可通过自身技能补充生命",
+                "desc": "Max HP is fixed at 7 HP, has 2 HP on deployment. HP can only be recovered by its own skill."
+            },
+            {
+                "name": "取缔无效流程",
+                "descCN": "最大生命值固定为8, 部署时生命值为3, 仅可通过自身技能补充生命",
+                "desc": "Max HP is fixed at 8 HP, has 3 HP on deployment. HP can only be recovered by its own skill."
+            }
+        ]
+    ],
+    "token_10061_nasti_nstbld": [
+        [
+            {
+                "name": "承重结构部署",
+                "descCN": "部署时在前方可部署地面生成高台装置 (最多存在1个) ; 使前方高台装置每秒回复1%最大生命值, 但自身流失2%最大生命值, 娜斯提技能期间回复效果翻倍",
+                "desc": "After deployment, constructs high platform in front (Only 1 high platform can exist at the same time); The high platform in front can be recoverd by 1% Max HP of device per second but device lose 2% HP per second. The recovering effect is doubled during Nasti's skill"
+            },
+            {
+                "name": "承重结构部署",
+                "descCN": "部署时在前方可部署地面生成高台装置 (最多存在1个) ; 使前方高台装置每秒回复1%最大生命值, 但自身流失2%最大生命值; 娜斯提技能期间回复效果翻倍",
+                "desc": "After deployment, constructs high platform in front (Only 1 high platform can exist at the same time); The high platform in front can be recoverd by 1% Max HP of device per second but device lose 2% HP per second. The recovering effect is doubled during Nasti's skill"
+            },
+            {
+                "name": "承重结构部署",
+                "descCN": "部署时在前方可部署地面生成高台装置 (最多存在1个) ; 使前方高台装置每秒回复1%最大生命值, 但自身流失2%最大生命值; 娜斯提技能期间回复效果翻倍",
+                "desc": "After deployment, constructs high platform in front (Only 1 high platform can exist at the same time); The high platform in front can be recoverd by 1% Max HP of device per second but device lose 2% HP per second. The recovering effect is doubled during Nasti's skill"
+            }
+        ]
+    ],
+    "char_4214_cairn": [
+        [
+            {
+                "name": "过饱和讲解",
+                "descCN": "对自身阻挡的敌人每秒造成相当于攻击力4%的<$ba.dt.neural2>神经损伤</>",
+                "desc": "Blocked enemies receive 4% ATK as <$ba.dt.neural2>Nervous Impairment</> per second"
+            },
+            {
+                "name": "过饱和讲解",
+                "descCN": "对自身阻挡的敌人每秒造成相当于攻击力5%<@ba.talpu> (+1%) </>的<$ba.dt.neural2>神经损伤</>",
+                "desc": "Blocked enemies receive 5%<@ba.talpu>(+1%)</> ATK as <$ba.dt.neural2>Nervous Impairment</> per second"
+            },
+            {
+                "name": "过饱和讲解",
+                "descCN": "对自身阻挡的敌人每秒造成相当于攻击力9%的<$ba.dt.neural2>神经损伤</>",
+                "desc": "Blocked enemies receive 9% ATK as <$ba.dt.neural2>Nervous Impairment</> per second"
+            },
+            {
+                "name": "过饱和讲解",
+                "descCN": "对自身阻挡的敌人每秒造成相当于攻击力10%<@ba.talpu> (+1%) </>的<$ba.dt.neural2>神经损伤</>",
+                "desc": "Blocked enemies receive 10%<@ba.talpu>(+1%)</> ATK as <$ba.dt.neural2>Nervous Impairment</> per second"
+            }
+        ]
+    ],
+    "char_4213_skybx": [
+        [
+            {
+                "name": "开门！管理局",
+                "descCN": "对每个敌人首次造成伤害后, 使目标的特殊能力失效, 持续4秒",
+                "desc": "When damaging an enemy for the first time, disables enemies' special abilities for 4s"
+            },
+            {
+                "name": "开门！管理局",
+                "descCN": "对每个敌人首次造成伤害后, 使目标的特殊能力失效, 持续7秒",
+                "desc": "When damaging an enemy for the first time, disables enemies' special abilities for 7s"
+            }
+        ]
     ]
 }

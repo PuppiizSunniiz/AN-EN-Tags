@@ -1310,5 +1310,159 @@
                 "upgradeDescription": "ATK+25%, 35% Arts Dodge"
             }
         ]
+    ],
+    "uniequip_002_monstr": [
+        [
+            {
+                "name": "Self-Repair",
+                "EN": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +15% ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken",
+                "CN": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体, 重构体周围友方单位的攻击力+15%, 重构体受到自身和Mon3tr治疗时, 可额外进行一次不会衰减的治疗跳跃",
+                "mod": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体, 重构体周围友方单位的攻击力+20%, 重构体受到自身和Mon3tr治疗时, 可额外进行一次不会衰减的治疗跳跃",
+                "upgradeDescription": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies 20% ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken"
+            },
+            {
+                "name": "Self-Repair",
+                "EN": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +20% <@ba.talpu>(+5%)</> ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken",
+                "CN": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体, 重构体周围友方单位的攻击力+20%<@ba.talpu> (+5%) </>, 重构体受到自身和Mon3tr治疗时, 可额外进行一次不会衰减的治疗跳跃",
+                "mod": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体, 重构体周围友方单位的攻击力+25%<@ba.talpu> (+5%) </>, 重构体受到自身和Mon3tr治疗时, 可额外进行一次不会衰减的治疗跳跃",
+                "upgradeDescription": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies 25% <@ba.talpu>(+5%)</> ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken"
+            }
+        ],
+        [
+            {
+                "name": "Self-Repair",
+                "EN": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +15% ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken",
+                "CN": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体, 重构体周围友方单位的攻击力+15%, 重构体受到自身和Mon3tr治疗时, 可额外进行一次不会衰减的治疗跳跃",
+                "mod": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体, 重构体周围友方单位的攻击力+25%, 重构体受到自身和Mon3tr治疗时, 可额外进行一次不会衰减的治疗跳跃, 且下次跳跃也不衰减",
+                "upgradeDescription": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies 25% ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken and the next bounce also does not weaken"
+            },
+            {
+                "name": "Self-Repair",
+                "EN": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +20% <@ba.talpu>(+5%)</> ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken",
+                "CN": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体, 重构体周围友方单位的攻击力+20%<@ba.talpu> (+5%) </>, 重构体受到自身和Mon3tr治疗时, 可额外进行一次不会衰减的治疗跳跃",
+                "mod": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体, 重构体周围友方单位的攻击力+30%<@ba.talpu> (+5%) </>, 重构体受到自身和Mon3tr治疗时, 可额外进行一次不会衰减的治疗跳跃, 且下次跳跃也不衰减",
+                "upgradeDescription": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies 30% <@ba.talpu>(+5%)</> ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken and the next bounce also does not weaken"
+            }
+        ]
+    ],
+    "uniequip_002_peper": [
+        [
+            {
+                "name": "Focused Attention",
+                "EN": "When healing, heal an extra 140 HP if target HP is below 40%",
+                "CN": "治疗时, 若目标生命少于40%则为其额外恢复140点生命",
+                "mod": "治疗时, 若目标生命少于40%则为其额外恢复170点生命",
+                "upgradeDescription": "When healing, heal an extra 170 HP if target HP is below 40%"
+            },
+            {
+                "name": "Focused Attention",
+                "EN": "When healing, heal an extra 150<@ba.talpu>(+10)</> HP if target HP is below 40%",
+                "CN": "治疗时, 若目标生命少于40%则为其额外恢复150<@ba.talpu> (+10) </>点生命",
+                "mod": "治疗时, 若目标生命少于40%则为其额外恢复180<@ba.talpu> (+10) </>点生命",
+                "upgradeDescription": "When healing, heal an extra 180<@ba.talpu>(+10)</> HP if target HP is below 40%"
+            }
+        ],
+        [
+            {
+                "name": "Focused Attention",
+                "EN": "When healing, heal an extra 140 HP if target HP is below 40%",
+                "CN": "治疗时, 若目标生命少于40%则为其额外恢复140点生命",
+                "mod": "治疗时, 若目标生命少于50%则为其额外恢复200点生命",
+                "upgradeDescription": "When healing, heal an extra 200 HP if target HP is below 50%"
+            },
+            {
+                "name": "Focused Attention",
+                "EN": "When healing, heal an extra 150<@ba.talpu>(+10)</> HP if target HP is below 40%",
+                "CN": "治疗时, 若目标生命少于40%则为其额外恢复150<@ba.talpu> (+10) </>点生命",
+                "mod": "治疗时, 若目标生命少于50%则为其额外恢复210<@ba.talpu> (+10) </>点生命",
+                "upgradeDescription": "When healing, heal an extra 210<@ba.talpu>(+10)</> HP if target HP is below 50%"
+            }
+        ]
+    ],
+    "uniequip_002_papyrs": [
+        [
+            {
+                "name": "Erudite of Ancient Scrolls",
+                "EN": "Healing grants the target Operator a <$ba.barrier>Barrier</> equal to 20% of Papyrus's ATK, lasting 8 seconds",
+                "CN": "治疗会为目标干员附加相当于自身20%攻击力的<$ba.barrier>屏障</>, 持续8秒",
+                "mod": "治疗会为目标干员附加相当于自身23%攻击力的<$ba.barrier>屏障</>, 持续8秒",
+                "upgradeDescription": "Healing grants the target Operator a <$ba.barrier>Barrier</> equal to 23% of Papyrus's ATK, lasting 8 seconds"
+            },
+            {
+                "name": "Erudite of Ancient Scrolls",
+                "EN": "Healing grants the target Operator a <$ba.barrier>Barrier</> equal to 22% <@ba.talpu>(+2%)</> of Papyrus's ATK, lasting 8 seconds",
+                "CN": "治疗会为目标干员附加相当于自身22%<@ba.talpu> (+2%) </>攻击力的<$ba.barrier>屏障</>, 持续8秒",
+                "mod": "治疗会为目标干员附加相当于自身25%<@ba.talpu> (+2%) </>攻击力的<$ba.barrier>屏障</>, 持续8秒",
+                "upgradeDescription": "Healing grants the target Operator a <$ba.barrier>Barrier</> equal to 25% <@ba.talpu>(+2%)</> of Papyrus's ATK, lasting 8 seconds"
+            }
+        ],
+        [
+            {
+                "name": "Erudite of Ancient Scrolls",
+                "EN": "Healing grants the target Operator a <$ba.barrier>Barrier</> equal to 20% of Papyrus's ATK, lasting 8 seconds",
+                "CN": "治疗会为目标干员附加相当于自身20%攻击力的<$ba.barrier>屏障</>, 持续8秒",
+                "mod": "治疗会为目标干员附加相当于自身27%攻击力的<$ba.barrier>屏障</>, 持续10秒",
+                "upgradeDescription": "Healing grants the target Operator a <$ba.barrier>Barrier</> equal to 27% of Papyrus's ATK, lasting 10 seconds"
+            },
+            {
+                "name": "Erudite of Ancient Scrolls",
+                "EN": "Healing grants the target Operator a <$ba.barrier>Barrier</> equal to 22% <@ba.talpu>(+2%)</> of Papyrus's ATK, lasting 8 seconds",
+                "CN": "治疗会为目标干员附加相当于自身22%<@ba.talpu> (+2%) </>攻击力的<$ba.barrier>屏障</>, 持续8秒",
+                "mod": "治疗会为目标干员附加相当于自身29%<@ba.talpu> (+2%) </>攻击力的<$ba.barrier>屏障</>, 持续10秒",
+                "upgradeDescription": "Healing grants the target Operator a <$ba.barrier>Barrier</> equal to 29% <@ba.talpu>(+2%)</> of Papyrus's ATK, lasting 10 seconds"
+            }
+        ]
+    ],
+    "uniequip_002_nasti": [
+        [
+            {
+                "name": "前方施工",
+                "CN": "可以携带3个<支援装置>(最多可部署2个), 效果根据技能改变而改变",
+                "mod": "可以携带3个<支援装置>(最多可部署2个), 效果根据技能改变而改变, 首个装置部署费用减少",
+                "upgradeDescription": "Can carry 3 <Support Devices> (deploy up to 2), with different effects depending on Skill. Deployment Cost of the first <Support Devices> is reduced."
+            }
+        ],
+        [
+            {
+                "name": "前方施工",
+                "CN": "可以携带3个<支援装置>(最多可部署2个), 效果根据技能改变而改变",
+                "mod": "可以携带3个<支援装置>(最多可部署2个), 效果根据技能改变而改变, 首个装置部署费用减少; 装置可与攻击范围内其他装置共同提供效果",
+                "upgradeDescription": "Can carry 3 <Support Devices> (deploy up to 2), with different effects depending on Skill. Deployment Cost of the first <Support Devices> is reduced; <Support Devices> can provide effects in conjuction with other <Support Devices> in their Attack Range"
+            }
+        ]
+    ],
+    "uniequip_003_ray": [
+        [
+            {
+                "name": "Extreme Focus",
+                "EN": "When attacking the same target, each attack increases ATK by 8%, stacking up to 3 times",
+                "CN": "攻击相同目标时每次攻击提高自身攻击力8%, 最多3层",
+                "mod": "攻击相同目标时每次攻击提高自身攻击力8%, 最多4层",
+                "upgradeDescription": "When attacking the same target, each attack increases ATK by 8%, stacking up to 4 times"
+            },
+            {
+                "name": "Extreme Focus",
+                "EN": "When attacking the same target, each attack increases ATK by 9% <@ba.talpu>(+1%)</>, stacking up to 3 times",
+                "CN": "攻击相同目标时每次攻击提高自身攻击力9%<@ba.talpu> (+1%) </>, 最多3层",
+                "mod": "攻击相同目标时每次攻击提高自身攻击力9%<@ba.talpu> (+1%) </>, 最多4层",
+                "upgradeDescription": "When attacking the same target, each attack increases ATK by 9% <@ba.talpu>(+1%)</>, stacking up to 4 times"
+            }
+        ],
+        [
+            {
+                "name": "Extreme Focus",
+                "EN": "When attacking the same target, each attack increases ATK by 8%, stacking up to 3 times",
+                "CN": "攻击相同目标时每次攻击提高自身攻击力8%, 最多3层",
+                "mod": "攻击相同目标时每次攻击提高自身攻击力9%, 最多4层",
+                "upgradeDescription": "When attacking the same target, each attack increases ATK by 9%, stacking up to 4 times"
+            },
+            {
+                "name": "Extreme Focus",
+                "EN": "When attacking the same target, each attack increases ATK by 9% <@ba.talpu>(+1%)</>, stacking up to 3 times",
+                "CN": "攻击相同目标时每次攻击提高自身攻击力9%<@ba.talpu> (+1%) </>, 最多3层",
+                "mod": "攻击相同目标时每次攻击提高自身攻击力10%<@ba.talpu> (+1%) </>, 最多4层",
+                "upgradeDescription": "When attacking the same target, each attack increases ATK by 10% <@ba.talpu>(+1%)</>, stacking up to 4 times"
+            }
+        ]
     ]
 }

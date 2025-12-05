@@ -72,7 +72,7 @@ json_talentTL       =   json_load("json/ace/tl-talents.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS : list[str] = [] # "", 
+NEW_CHARS : list[str] = ["Nasti", "Cairn", "Skybox",] # "", 
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS : list[str] = [] # "",
@@ -211,6 +211,17 @@ def update_char_TraitSkillTalent(new_char_name : str) :
         #### Token trait
             if new_token_key not in json_char: continue
             new_trait[json_char[new_token_key]["description"]] = update_new_trait("token", new_char_id, new_char_name, new_token_key)
+        #### Token talent
+            if new_token_key not in json_talentTL:
+                talent_tl[new_token_key] = [
+                                            [
+                                                {
+                                                    "name"  : candidate["name"],
+                                                    "descCN": parentheses(candidate["description"]),
+                                                    "desc"  : ""
+                                                } for candidate in talent["candidates"]
+                                            ]  for talent in json_char[new_token_key]["talents"]
+                                        ]
         #### Token Skill
             for skill in json_char[new_token_key]["skills"]:
                 if skill["skillId"] and skill_id not in json_skillTL.keys():
