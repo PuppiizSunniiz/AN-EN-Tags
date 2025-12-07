@@ -3697,32 +3697,31 @@
         return null
     }
 
-    function update_illustrator(skinid = ""){
-        function IllustratorLister(List){
-            var HTML = ""
-            for(var i = 0 ; i < List.length; i++){
-                ArtistName = List[i].trim()
-                if(Object.keys(db.artistTL.Illustrator).includes(ArtistName))
-                    ArtistName = db.artistTL.Illustrator[ArtistName]
-                if(i > 0)
-                    HTML += " & "
+    function IllustratorLister(List){
+        var HTML = ""
+        for(var i = 0 ; i < List.length; i++){
+            ArtistName = List[i].trim()
+            if(Object.keys(db.artistTL.Illustrator).includes(ArtistName))
+                ArtistName = db.artistTL.Illustrator[ArtistName]
+            if(i > 0)
+                HTML += " & "
 
-                HTML += `<a href="https://www.google.com/search?q=illustrator+${ArtistName}"  target="_blank">${ArtistName}</a>`
-            }
-            return HTML
+            HTML += `<a href="https://www.google.com/search?q=illustrator+${ArtistName}"  target="_blank">${ArtistName}</a>`
         }
-        
+        return HTML
+    }
+
+    function update_illustrator(skinid = ""){
         let illustratorHTML = ""
         let IllustratorList = [[],[]]
         if(AmiyaPatchID.includes(skinid.split("#")[0]))
             skin = opdataFull.id + "#2"
         else
             skin = skinid?skinid:(currskin + "#1")
-
         if(db.skintable.charSkins[skin])
             if(db.skintable.charSkins[skin].displaySkin.drawerList){
-                IllustratorList[0] = db.skintable.charSkins[skin].displaySkin.drawerList[0].split("、")
-                IllustratorList[1] = db.skintable.charSkins[skin].displaySkin.designerList?db.skintable.charSkins[skin].displaySkin.designerList[0].split("、"):""
+                IllustratorList[0] = db.skintable.charSkins[skin].displaySkin.drawerList.join("、").split("、")
+                IllustratorList[1] = db.skintable.charSkins[skin].displaySkin.designerList?db.skintable.charSkins[skin].displaySkin.designerList.join("、").split("、"):""
             }
         else if (db.handbookInfo.npcDict[opdataFull.id])
             IllustratorList[0] = db.handbookInfo.npcDict[opdataFull.id].illustList
@@ -3798,6 +3797,48 @@
         }
     }
 
+    function VALister(List){
+        var HTML = ""
+        if (typeof List == "string") List = List.split(" & ")
+        for(var i = 0 ; i < List.length; i++){
+            ArtistName = List[i].trim()
+            if(Object.keys(db.artistTL.VA).includes(ArtistName))
+                ArtistName = db.artistTL.VA[ArtistName]
+            if(i > 0)
+                HTML += " & "
+
+            HTML += `<a href="https://www.google.com/search?q=Voice+Actor+${ArtistName}"  target="_blank">${ArtistName}</a>`
+        }
+        return HTML
+    }
+
+    function update_voiceactor(){
+        var voiceDict = db.charword.voiceLangDict[currVoiceID]
+        var VAhtml = ""
+
+        VAlanglist.forEach(valang => {
+            if (!Object.keys(voiceDict).includes(valang))
+                return
+            var lang = VA_lang(valang).split("_")[0]
+            VAhtml += `
+                        <div class="voiceactor-${valang}">
+                            <div id="lang-voiceactor-${valang}" class="btn-infoleft ak-shadow">
+                                <i class="fas fa-microphone-alt" title="Voice Actor">
+                                </i>
+                                <b ${lang.length > 2?`style="font-size:11px"`:""}>
+                                    ${lang == "None"?"":lang}
+                                </b>
+                            </div>
+                            <div id="name-voiceactor-${valang}" class="btn-inforight">
+                                ${valang == "None"?voiceDict[valang]:voiceDict[valang] == "-"?voiceDict[valang]:VALister(voiceDict[valang])}
+                            </div>
+                        </div>
+                    `
+        })
+
+        $('#info-voiceactor').html(VAhtml)
+    }
+
     function GetAudio(){
         var curraudiolist = []
         var voiceDict = db.charword.voiceLangDict[currVoiceID]
@@ -3805,7 +3846,7 @@
         var checkold = db.voiceold[currVoiceID]
         var preDir = "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-voices/main/"
         var old_va = ""
-
+        
         Object.keys(db.charword.charWords).forEach(audio_key => {
             if (db.charword.charWords[audio_key].wordKey == currVoiceID){
                 curraudiolist.push(db.charword.charWords[audio_key])
@@ -3888,34 +3929,36 @@
 
         VAlanglist.forEach(valang => {
             if (!Object.keys(voiceDict).includes(valang))
-                    return
-                var lang = VA_lang(valang).split("_")[0]
-                $("." + valang+ "-VA").attr("title", "VA : " + voiceDict[valang])
-                $('#opaudio-va').append(`
-                                            <div style="text-align:center">
-                                                <div class="btn-infoleft" style="width:100px">
-                                                    <i class="fas fa-microphone-alt" title="Voice Actor">${lang}</i>
-                                                </div>
-                                                <div class="btn-inforight" style="width:70%">
-                                                    <a href="https://www.google.com/search?q=Voice+Actor+${voiceDict[valang]}"  target="_blank">${voiceDict[valang]}</a>
-                                                </div>
+                return
+            var lang = VA_lang(valang).split("_")[0]
+            $("." + valang+ "-VA").attr("title", "VA : " + voiceDict[valang])
+            $('#opaudio-va').append(`
+                                        <div style="text-align:center">
+                                            <div class="btn-infoleft" style="width:100px">
+                                                <i class="fas fa-microphone-alt" title="Voice Actor">${lang}</i>
                                             </div>
-                                        `)
-                if (checkold && checkold[valang]){
-                    $("." + valang + "-VA0").attr("title", "VA : " + checkold[valang])
-                    old_va += (`
-                                            <div style="text-align:center">
-                                                <div class="btn-infoleft" style="width:100px">
-                                                    <i class="fas fa-microphone-alt" title="Voice Actor">${lang}0</i>
-                                                </div>
-                                                <div class="btn-inforight" style="width:70%">
-                                                    <a href="https://www.google.com/search?q=Voice+Actor+${checkold[valang]}"  target="_blank">${checkold[valang]}</a>
-                                                </div>
+                                            <div class="btn-inforight" style="width:70%">
+                                                ${VALister(voiceDict[valang])}
                                             </div>
-                                        `)
-                }
+                                        </div>
+                                    `)
+            if (checkold && checkold[valang]){
+                $("." + valang + "-VA0").attr("title", "VA : " + checkold[valang])
+                old_va += (`
+                                        <div style="text-align:center">
+                                            <div class="btn-infoleft" style="width:100px">
+                                                <i class="fas fa-microphone-alt" title="Voice Actor">${lang}0</i>
+                                            </div>
+                                            <div class="btn-inforight" style="width:70%">
+                                                ${VALister(checkold[valang])}
+                                            </div>
+                                        </div>
+                                    `)
+            }
         })
+
         $('#opaudio-va').append(old_va)
+        
     }
 
     function GetStory (opdataFull){
@@ -3942,37 +3985,7 @@
         }
 
         update_illustrator()
-
-        var existvoiceDict = db.charword.voiceLangDict[opdataFull.id]
-
-        console.log(existvoiceDict)
-
-        var VAlang
-        
-        VAhtml = ""
-        VAlanglist.forEach(valang =>{
-            if(existvoiceDict[valang]){
-                VAlang = VA_lang(valang)
-                VAName = existvoiceDict[valang].trim()
-                if(Object.keys(db.artistTL.VA).includes(VAName)) VAName = db.artistTL.VA[VAName]
-
-                VAhtml += `
-                            <div class="voiceactor-${VAlang}">
-                                <div id="lang-voiceactor-${VAlang}" class="btn-infoleft ak-shadow">
-                                    <i class="fas fa-microphone-alt" title="Voice Actor">
-                                    </i>
-                                    <b ${VAlang.length > 2?`style="font-size:11px"`:""}>
-                                        ${VAlang == "None"?"":VAlang}
-                                    </b>
-                                </div>
-                                <div id="name-voiceactor-${VAlang}" class="btn-inforight">
-                                    ${VAlang == "None"?VAName:VAName == "-"?VAName:`<a href="https://www.google.com/search?q=Voice+Actor+${VAName}"  target="_blank">${VAName}</a>`}
-                                </div>
-                            </div>
-                        `
-            }
-        })
-        $('#info-voiceactor').html(VAhtml)
+        update_voiceactor()
 
         let puretext = []
         let textTL = []
@@ -6344,8 +6357,11 @@
             $("#tabs-opCG div").removeClass(("skinswitch"))
         }
 
-        if(db.skintable.charSkins[id] && db.skintable.charSkins[id].voiceId)
+        if(id && db.skintable.charSkins[id] && db.skintable.charSkins[id].voiceId)
             currVoiceID = db.skintable.charSkins[id].voiceId
+        // Mudrock && Luo Xiaohei
+        else if(name == "2" && ["char_311_mudrok", "char_4067_lolxh"].includes(opdataFull.id))
+            currVoiceID = db.skintable.charSkins[opdataFull.id + "#2"].voiceId
         else
             currVoiceID = opdataFull.id
 
@@ -6375,6 +6391,7 @@
 
         // TODO update_illustrator when change chibi perspective
         if (!change) update_illustrator(id?id:(opdataFull.id + "#" + (name != "0"?name:"1"))) // change skin by ID or change Elite (E0 = E1 except amiyi)
+        update_voiceactor()
     }
 
     function ShowDynamic(name, isSkin = false, dynid = ""){
@@ -6410,6 +6427,7 @@
         Amiyacurrclass = amiyaclass
         selectOperator(curropid)
         update_illustrator(opdataFull.id + "#2")
+        update_voiceactor()
     }
     function ChangeSTypeHTML(num, classchange){
         changepic = {
