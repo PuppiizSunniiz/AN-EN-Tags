@@ -6230,8 +6230,16 @@
                                     CreateAnimation(spinewidgettoken,["Start", "Loop"])
                                     $("#spine-text2").text("Loop")
                                 }else if(tokenanimations.find(search => search.name == "Start")){
-                                    CreateAnimation(spinewidgettoken,["Start", "Idle"])
-                                    $("#spine-text2").text("Idle")
+                                    if(tokenanimations.find(search => search.name == "Idle_1")){
+                                        CreateAnimation(spinewidgettoken,["Start", "Idle_1"])
+                                        $("#spine-text2").text("Idle_1")
+                                    }else{
+                                        CreateAnimation(spinewidgettoken,["Start", "Idle"])
+                                        $("#spine-text2").text("Idle")
+                                    }
+                                }else if(tokenanimations.find(search => search.name == "Idle_1")){
+                                    CreateAnimation(spinewidgettoken,"Idle_1")
+                                    $("#spine-text2").text("Idle_1")
                                 }else if(tokenanimations.find(search => search.name == "Idle")){
                                     CreateAnimation(spinewidgettoken,"Idle")
                                     $("#spine-text2").text("Idle")
@@ -6481,8 +6489,6 @@
         $(el).css('transform','matrix('+changex1.join(",")+')')
         console.log(changex)
         $(el).toggleClass("MirrorDiv")
-
-
     }
 
 
@@ -6498,13 +6504,24 @@
             // console.log("ayyyyyy")
             var delay = 0
             var animNum = 0
-            if(animationqueue != undefined) clearInterval(animationqueue)
+            var animation_list = chibiwidget.skeleton.data.animations.map(v => v.name)
+            var animation_filter
             var curranimplay = Array.isArray(animArray[0])?animArray[0][0]:animArray[0]
+            if(animationqueue != undefined) clearInterval(animationqueue)
+            if (!animation_list.includes(curranimplay)){
+                animation_filter = animation_list.filter(v => v.startsWith(curranimplay))
+                if (!animation_filter.length) {
+                    console.log(`Animation <${curranimplay}> is not available`)
+                    return
+                }else{
+                    curranimplay = animation_filter[Math.floor(Math.random() * animation_filter.length)]
+                }
+            }
             if(chibiwidget.loaded) chibiwidget.setAnimation(curranimplay)
             chibiwidget.state.clearTracks()
             var curranimations = chibiwidget.skeleton.data.animations
             animArray.forEach(element => {
-                var curranim = element
+                var curranim = animNum==0?curranimplay:element
                 var animTimes = 1
                 var isloop = animNum==animArray.length-1
 

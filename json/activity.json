@@ -1,5 +1,10 @@
 {
     "Dict": {
+        "act39sre": {
+            "nameCN": "出苍白海·复刻",
+            "nameEN": "Exodus from the Pale Sea - Rerun",
+            "startCN": 1766088000
+        },
         "act47side": {
             "nameCN": "未许之地",
             "nameEN": "Unrealized Realities",
@@ -1018,6 +1023,11 @@
         "tower_n_19": {
             "nameCN": "艺术馆旧址",
             "nameEN": "艺术馆旧址",
+            "startCN": -1
+        },
+        "tower_n_20": {
+            "nameCN": "施佩尔山脚",
+            "nameEN": "施佩尔山脚",
             "startCN": -1
         },
         "tower_n_01": {
@@ -2171,6 +2181,11 @@
             "act47side",
             "Unrealized Realities",
             1764889200
+        ],
+        [
+            "act39sre",
+            "Exodus from the Pale Sea - Rerun",
+            1766088000
         ]
     ]
 }

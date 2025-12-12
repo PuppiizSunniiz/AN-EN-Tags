@@ -1,8 +1,4 @@
 # Fix TL (Official EN) waiting room
-### Fantasy in the Mirage
-- Trait
-    - SIE-Y
-
 ### IS#6 : Sui's Garden of Grotesqueries
 - Trait
     - Raidian 's summons
@@ -54,9 +50,6 @@
     - Skill SP recovery
     - Mod talent
     - Add token talent to pyUpdate (both base/mod)
-- Add multi animation support
-    - SP Kroos+Kal have multiple Interact + Idle (even Talk)
 - Add all background element for various L2D
-- token animation list
 - re-add enemies chibi
 - Fix SP akenemy

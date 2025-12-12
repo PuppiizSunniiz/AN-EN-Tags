@@ -72,7 +72,7 @@ json_talentTL       =   json_load("json/ace/tl-talents.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS : list[str] = ["Nasti", "Cairn", "Skybox",] # "", 
+NEW_CHARS : list[str] = [] # "", 
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS : list[str] = [] # "",
