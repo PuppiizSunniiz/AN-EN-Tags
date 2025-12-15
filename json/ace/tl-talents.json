@@ -8314,265 +8314,265 @@
 	"char_4179_monstr": [
         [
             {
-                "name": "自我修复",
+                "name": "Self-Repair",
                 "descCN": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体，重构体周围友方单位的攻击力+3%，重构体受到自身和Mon3tr治疗时，可额外进行一次不会衰减的治疗跳跃",
-                "desc": "Can summon a Reconstruct on a ground tile within Attack Range and can only be healed by Mon3tr. Allies around the Reconstruct ATK +3%. When the Reconstruct receives healing from itself or Mon3tr, add 1 additional bounce with the same healing amount"
+                "desc": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +3% ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken"
             },
             {
-                "name": "自我修复",
+                "name": "Self-Repair",
                 "descCN": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体，重构体周围友方单位的攻击力+8%<@ba.talpu>(+5)</>，重构体受到自身和Mon3tr治疗时，可额外进行一次不会衰减的治疗跳跃",
-                "desc": "Can summon a Reconstruct on a ground tile within Attack Range and can only be healed by Mon3tr. Allies around the Reconstruct ATK +8%<@ba.talpu>(+5%)</>. When the Reconstruct receives healing from itself or Mon3tr, add 1 additional bounce with the same healing amount"
+                "desc": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +8% <@ba.talpu>(+5%)</> ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken"
             },
             {
-                "name": "自我修复",
+                "name": "Self-Repair",
                 "descCN": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体，重构体周围友方单位的攻击力+5%，重构体受到自身和Mon3tr治疗时，可额外进行一次不会衰减的治疗跳跃",
-                "desc": "Can summon a Reconstruct on a ground tile within Attack Range and can only be healed by Mon3tr. Allies around the Reconstruct ATK +5%. When the Reconstruct receives healing from itself or Mon3tr, add 1 additional bounce with the same healing amount"
+                "desc": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +5% ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken"
             },
             {
-                "name": "自我修复",
+                "name": "Self-Repair",
                 "descCN": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体，重构体周围友方单位的攻击力+10%<@ba.talpu>(+5)</>，重构体受到自身和Mon3tr治疗时，可额外进行一次不会衰减的治疗跳跃",
-                "desc": "Can summon a Reconstruct on a ground tile within Attack Range and can only be healed by Mon3tr. Allies around the Reconstruct ATK +10%<@ba.talpu>(+5%)</>. When the Reconstruct receives healing from itself or Mon3tr, add 1 additional bounce with the same healing amount"
+                "desc": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +10% <@ba.talpu>(+5%)</> ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken"
             },
             {
-                "name": "自我修复",
+                "name": "Self-Repair",
                 "descCN": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体，重构体周围友方单位的攻击力+15%，重构体受到自身和Mon3tr治疗时，可额外进行一次不会衰减的治疗跳跃",
-                "desc": "Can summon a Reconstruct on a ground tile within Attack Range and can only be healed by Mon3tr. Allies around the Reconstruct ATK +15%. When the Reconstruct receives healing from itself or Mon3tr, add 1 additional bounce with the same healing amount"
+                "desc": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +15% ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken"
             },
             {
-                "name": "自我修复",
+                "name": "Self-Repair",
                 "descCN": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体，重构体周围友方单位的攻击力+20%<@ba.talpu>(+5)</>，重构体受到自身和Mon3tr治疗时，可额外进行一次不会衰减的治疗跳跃",
-                "desc": "Can summon a Reconstruct on a ground tile within Attack Range and can only be healed by Mon3tr. Allies around the Reconstruct ATK +20%<@ba.talpu>(+5%)</>. When the Reconstruct receives healing from itself or Mon3tr, add 1 additional bounce with the same healing amount"
+                "desc": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +20% <@ba.talpu>(+5%)</> ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken"
             }
         ],
         [
             {
-                "name": "战术协同",
+                "name": "Tactical Coordination",
                 "descCN": "自身或重构体造成治疗时，使目标及自身的攻击速度+10，持续10秒(无法叠加)",
-                "desc": "When Mon3tr or the Reconstruct heals a target, self and the target's ASPD +10 for 10 seconds (does not stack)"
+                "desc": "Whenever Mon3tr or the Reconstruction heals a target, grants Mon3tr and the target +10 ASPD for 10s (does not stack)"
             },
             {
-                "name": "战术协同",
+                "name": "Tactical Coordination",
                 "descCN": "自身或重构体造成治疗时，使目标及自身的攻击速度+12<@ba.talpu>(+2)</>，持续10秒(无法叠加)",
-                "desc": "When Mon3tr or the Reconstruct heals a target, self and the target's ASPD +12<@ba.talpu>(+2)</> for 10 seconds (does not stack)"
+                "desc": "Whenever Mon3tr or the Reconstruction heals a target, grants Mon3tr and the target +12 <@ba.talpu>(+2)</> ASPD for 10s (does not stack)"
             },
             {
-                "name": "战术协同",
+                "name": "Tactical Coordination",
                 "descCN": "自身或重构体造成治疗时，使目标及自身的攻击速度+20，持续10秒(无法叠加)",
-                "desc": "When Mon3tr or the Reconstruct heals a target, self and the target's ASPD +20 for 10 seconds (does not stack)"
+                "desc": "Whenever Mon3tr or the Reconstruction heals a target, grants Mon3tr and the target +20 ASPD for 10s (does not stack)"
             },
             {
-                "name": "战术协同",
+                "name": "Tactical Coordination",
                 "descCN": "自身或重构体造成治疗时，使目标及自身的攻击速度+22<@ba.talpu>(+2)</>，持续10秒(无法叠加)",
-                "desc": "When Mon3tr or the Reconstruct heals a target, self and the target's ASPD +22<@ba.talpu>(+2)</> for 10 seconds (does not stack)"
+                "desc": "Whenever Mon3tr or the Reconstruction heals a target, grants Mon3tr and the target +22 <@ba.talpu>(+2)</> ASPD for 10s (does not stack)"
             }
         ]
     ],
     "char_4178_alanna": [
         [
             {
-                "name": "临时改装",
+                "name": "Makeshift Modification",
                 "descCN": "携带2个支援装置(最多部署2个)，使一名干员攻击敌人时无视其40点防御力(持续30秒)，装置效果不叠加",
-                "desc": "Carries 2 <Support Devices> (max 2 deployed at once). Each <Support Devices> grants 40 DEF ignore to an operator for 30 seconds (Effects do not stack)"
+                "desc": "Carries 2 Support Devices (max 2 deployed at once) that allow an Operator to ignore 40 DEF when attacking enemies (lasts 30s); effects from Devices do not stack"
             },
             {
-                "name": "临时改装",
+                "name": "Makeshift Modification",
                 "descCN": "携带2个支援装置(最多部署2个)，使一名干员攻击敌人时无视其50<@ba.talpu>(+10)</>点防御力(持续30秒)，装置效果不叠加",
-                "desc": "Carries 2 <Support Devices> (max 2 deployed at once). Each <Support Devices> grants 50<@ba.talpu>(+10)</> DEF ignore to an operator for 30 seconds (Effects do not stack)"
+                "desc": "Carries 2 Support Devices (max 2 deployed at once) that allow an Operator to ignore 50 <@ba.talpu>(+10)</> DEF when attacking enemies (lasts 30s); effects from Devices do not stack"
             },
             {
-                "name": "临时改装",
+                "name": "Makeshift Modification",
                 "descCN": "携带3个支援装置(最多部署2个)，使一名干员攻击敌人时无视其60点防御力(持续30秒)，装置效果不叠加",
-                "desc": "Carries 3 <Support Devices> (max 2 deployed at once). Each <Support Devices> grants 60 DEF ignore to an operator for 30 seconds (Effects do not stack)"
+                "desc": "Carries 3 Support Devices (max 2 deployed at once) that allow an Operator to ignore 60 DEF when attacking enemies (lasts 30s); effects from Devices do not stack"
             },
             {
-                "name": "临时改装",
+                "name": "Makeshift Modification",
                 "descCN": "携带3个支援装置(最多部署2个)，使一名干员攻击敌人时无视其70<@ba.talpu>(+10)</>点防御力(持续30秒)，装置效果不叠加",
-                "desc": "Carries 3 <Support Devices> (max 2 deployed at once). Each <Support Devices> grants 70<@ba.talpu>(+10)</> DEF ignore to an operator for 30 seconds (Effects do not stack)"
+                "desc": "Carries 3 Support Devices (max 2 deployed at once) that allow an Operator to ignore 70 <@ba.talpu>(+10)</> DEF when attacking enemies (lasts 30s); effects from Devices do not stack"
             },
             {
-                "name": "临时改装",
+                "name": "Makeshift Modification",
                 "descCN": "携带3个支援装置(最多部署2个)，使一名干员攻击敌人时无视其80点防御力(持续30秒)，装置效果不叠加",
-                "desc": "Carries 3 <Support Devices> (max 2 deployed at once). Each <Support Devices> grants 80 DEF ignore to an operator for 30 seconds (Effects do not stack)"
+                "desc": "Carries 3 Support Devices (max 2 deployed at once) that allow an Operator to ignore 80 DEF when attacking enemies (lasts 30s); effects from Devices do not stack"
             },
             {
-                "name": "临时改装",
+                "name": "Makeshift Modification",
                 "descCN": "携带3个支援装置(最多部署2个)，使一名干员攻击敌人时无视其90<@ba.talpu>(+10)</>点防御力(持续30秒)，装置效果不叠加",
-                "desc": "Carries 3 <Support Devices> (max 2 deployed at once). Each <Support Devices> grants 90<@ba.talpu>(+10)</> DEF ignore to an operator for 30 seconds (Effects do not stack)"
+                "desc": "Carries 3 Support Devices (max 2 deployed at once) that allow an Operator to ignore 90 <@ba.talpu>(+10)</> DEF when attacking enemies (lasts 30s); effects from Devices do not stack"
             }
         ]
     ],
     "char_445_wscoot": [
         [
             {
-                "name": "藏锋伺敌",
+                "name": "Sheathed Blade, Studied Foe",
                 "descCN": "特性攻击力提升至最高时，每次攻击额外追加一次25%攻击力的攻击",
-                "desc": "When Trait effect reach maximum value, each attack deals 1 additional instance of 25% ATK as Physical damage"
+                "desc": "When Trait ATK increase reaches its maximum, each attack is followed by an additional attack of 25% ATK"
             },
             {
-                "name": "藏锋伺敌",
+                "name": "Sheathed Blade, Studied Foe",
                 "descCN": "特性攻击力提升至最高时，每次攻击额外追加一次28%<@ba.talpu>(+3%)</>攻击力的攻击",
-                "desc": "When Trait effect reach maximum value, each attack deals 1 additional instance of 28% <@ba.talpu>(+3%)</> ATK as Physical damage"
+                "desc": "When Trait ATK increase reaches its maximum, each attack is followed by an additional attack of 28% <@ba.talpu>(+3%)</> ATK"
             },
             {
-                "name": "藏锋伺敌",
+                "name": "Sheathed Blade, Studied Foe",
                 "descCN": "特性攻击力提升至最高时，每次攻击额外追加一次40%攻击力的攻击",
-                "desc": "When Trait effect reach maximum value, each attack deals 1 additional instance of 40% ATK as Physical damage"
+                "desc": "When Trait ATK increase reaches its maximum, each attack is followed by an additional attack of 40% ATK"
             },
             {
-                "name": "藏锋伺敌",
+                "name": "Sheathed Blade, Studied Foe",
                 "descCN": "特性攻击力提升至最高时，每次攻击额外追加一次43%<@ba.talpu>(+3%)</>攻击力的攻击",
-                "desc": "When Trait effect reach maximum value, each attack deals 1 additional instance of 43% <@ba.talpu>(+3%)</> ATK as Physical damage"
+                "desc": "When Trait ATK increase reaches its maximum, each attack is followed by an additional attack of 43% <@ba.talpu>(+3%)</> ATK"
             }
         ]
     ],
 	"char_1041_angel2": [
         [
             {
-                "name": "火力电台",
+                "name": "Firepower FM",
                 "descCN": "在场时，每当有友方干员的弹药被消耗就会回复自身6%生命值，并有20%概率立即对该干员攻击范围的敌人召唤一次轰炸，造成相当于自身攻击力105%的物理溅射伤害",
-                "desc": "When on field, recovers 6% HP whenever an ally operator consumes ammo. Additionally, there is 20% chance to deals 105% ATK as AOE Physical damage to enemies within that operator's Attack Range"
+                "desc": "When deployed, recovers 6% HP whenever an allied Operator consumes ammo; in addition, there is a 20% chance to bombard the enemies within that Operator's Attack Range, dealing 105% of Exusiai the New Covenant's ATK as Physical splash damage"
             },
             {
-                "name": "火力电台",
+                "name": "Firepower FM",
                 "descCN": "在场时，每当有友方干员的弹药被消耗就会回复自身6%生命值，并有20%概率立即对该干员攻击范围的敌人召唤一次轰炸，造成相当于自身攻击力120%<@ba.talpu>(+15%)</>的物理溅射伤害",
-                "desc": "When on field, recovers 6% HP whenever an ally operator consumes ammo. Additionally, there is 20% chance to deals 120%<@ba.talpu>(+15%)</> ATK as AOE Physical damage to enemies within that operator's Attack Range"
+                "desc": "When deployed, recovers 6% HP whenever an allied Operator consumes ammo; in addition, there is a 20% chance to bombard the enemies within that Operator's Attack Range, dealing 120% <@ba.talpu>(+15%)</> of Exusiai the New Covenant's ATK as Physical splash damage"
             },
             {
-                "name": "火力电台",
+                "name": "Firepower FM",
                 "descCN": "在场时，每当有友方干员的弹药被消耗就会回复自身6%生命值，并有25%概率立即对该干员攻击范围的敌人召唤一次轰炸，造成相当于自身攻击力150%的物理溅射伤害",
-                "desc": "When on field, recovers 6% HP whenever an ally operator consumes ammo. Additionally, there is 25% chance to deals 150% ATK as AOE Physical damage to enemies within that operator's Attack Range"
+                "desc": "When deployed, recovers 6% HP whenever an allied Operator consumes ammo; in addition, there is a 25% chance to bombard the enemies within that Operator's Attack Range, dealing 150% of Exusiai the New Covenant's ATK as Physical splash damage"
             },
             {
-                "name": "火力电台",
+                "name": "Firepower FM",
                 "descCN": "在场时，每当有友方干员的弹药被消耗就会回复自身6%生命值，并有25%概率立即对该干员攻击范围的敌人召唤一次轰炸，造成相当于自身攻击力165%<@ba.talpu>(+15%)</>的物理溅射伤害",
-                "desc": "When on field, recovers 6% HP whenever an ally operator consumes ammo. Additionally, there is 25% chance to deals 165%<@ba.talpu>(+15%)</> ATK as AOE Physical damage to enemies within that operator's Attack Range"
+                "desc": "When deployed, recovers 6% HP whenever an allied Operator consumes ammo; in addition, there is a 25% chance to bombard the enemies within that Operator's Attack Range, dealing 165% <@ba.talpu>(+15%)</> of Exusiai the New Covenant's ATK as Physical splash damage"
             }
         ],
         [
             {
-                "name": "铳弹协约",
+                "name": "Covenant of Bullets",
                 "descCN": "在场时，携带弹药类技能的干员攻击力+9%，对【拉特兰】干员的效果翻倍",
-                "desc": "Increase ATK of operators with Ammo-based skill by +9%. Double effect for [Laterano] operators"
+                "desc": "When deployed, Operators with ammo-type skills gain ATK +9%; effect is doubled for [Laterano] Operators"
             },
             {
-                "name": "铳弹协约",
+                "name": "Covenant of Bullets",
                 "descCN": "在场时，携带弹药类技能的干员攻击力+13%<@ba.talpu>(+4%)</>，对【拉特兰】干员的效果翻倍",
-                "desc": "Increase ATK of operators with Ammo-based skill by +13%<@ba.talpu>(+4%)</>. Double effect for [Laterano] operators"
+                "desc": "When deployed, Operators with ammo-type skills gain ATK +13% <@ba.talpu>(+4%)</>; effect is doubled for [Laterano] Operators"
             }
         ]
     ],
     "char_4193_lemuen": [
         [
             {
-                "name": "跨境追缉许可",
+                "name": "Diploma Persecutionis Internationalis",
                 "descCN": "精英或领袖敌人在拉特兰干员的攻击范围内停留超过10秒后被通缉，蕾缪安可以攻击到所有被通缉的目标",
-                "desc": "Elite and Leader enemies who remain within Attack Range of [Laterano] operators for 10 seconds are Wanted. Lemuen can attack Wanted enemies globally"
+                "desc": "Elite or leader enemies who are within a Laterano Operator's Attack Range for more than 10 seconds become Wanted; Lemuen can attack all Wanted enemies"
             },
             {
-                "name": "跨境追缉许可",
+                "name": "Diploma Persecutionis Internationalis",
                 "descCN": "精英或领袖敌人在拉特兰干员的攻击范围内停留超过8<@ba.talpu>(-2)</>秒后被通缉，蕾缪安可以攻击到所有被通缉的目标",
-                "desc": "Elite and Leader enemies who remain within Attack Range of [Laterano] operators for 8<@ba.talpu>(-2)</> seconds are Wanted. Lemuen can attack Wanted enemies globally"
+                "desc": "Elite or leader enemies who are within a Laterano Operator's Attack Range for more than 8 <@ba.talpu>(-2)</> seconds become Wanted; Lemuen can attack all Wanted enemies"
             },
             {
-                "name": "跨境追缉许可",
+                "name": "Diploma Persecutionis Internationalis",
                 "descCN": "精英或领袖敌人在拉特兰干员的攻击范围内停留超过8秒后被通缉，受到拉特兰干员的攻击时伤害提升15%，蕾缪安可以攻击到所有被通缉的目标",
-                "desc": "Elite and Leader enemies who remain within Attack Range of [Laterano] operators for 8 seconds are Wanted, taking 15% increased damage from [Laterano] operators. Lemuen can attack Wanted enemies globally"
+                "desc": "Elite or leader enemies who are within a Laterano Operator's Attack Range for more than 8 seconds become Wanted, taking 15% more damage from Laterano Operators; Lemuen can attack all Wanted enemies"
             },
             {
-                "name": "跨境追缉许可",
+                "name": "Diploma Persecutionis Internationalis",
                 "descCN": "精英或领袖敌人在拉特兰干员的攻击范围内停留超过6<@ba.talpu>(-2)</>秒后被通缉，受到拉特兰干员的攻击时伤害提升18%<@ba.talpu>(+3%)</>，蕾缪安可以攻击到所有被通缉的目标",
-                "desc": "Elite and Leader enemies who remain within Attack Range of [Laterano] operators for 6<@ba.talpu>(-2)</> seconds are Wanted, taking 18%<@ba.talpu>(+3%)</> increased damage from [Laterano] operators. Lemuen can attack Wanted enemies globally"
+                "desc": "Elite or leader enemies who are within a Laterano Operator's Attack Range for more than 6 <@ba.talpu>(-2)</> seconds become Wanted, taking 18% <@ba.talpu>(+3%)</> more damage from Laterano Operators; Lemuen can attack all Wanted enemies"
             }
         ],
         [
             {
-                "name": "逃犯引渡手续",
+                "name": "Modus Extraditio Fugitivi",
                 "descCN": "在场20秒后，攻击力+10%，自身弹药类技能弹药上限+1",
-                "desc": "ATK+10% and ammo capacity +1 after being deployed for 20 seconds"
+                "desc": "After being deployed for 20 seconds, ATK +10% and Lemuen's ammo-type skills have +1 Ammo capacity"
             }
         ]
     ],
     "char_4194_rmixer": [
         [
             {
-                "name": "扫射迎宾仪礼",
+                "name": "Machine-Gun Welcome Ceremony",
                 "descCN": "每次造成伤害使自身10秒内防御力+20，攻击速度+2，最多可叠加3层",
-                "desc": "When dealing damage, DEF+20 and ASPD+2 for 10 seconds. Can stack 3 times"
+                "desc": "Whenever Sankta Miksaparato deals damage, he gains DEF +20 and ASPD +2 for 10 seconds, stacking up to 3 times"
             },
             {
-                "name": "扫射迎宾仪礼",
+                "name": "Machine-Gun Welcome Ceremony",
                 "descCN": "每次造成伤害使自身10秒内防御力+30，攻击速度+3，最多可叠加3层",
-                "desc": "When dealing damage, DEF+30 and ASPD+3 for 10 seconds. Can stack 3 times"
+                "desc": "Whenever Sankta Miksaparato deals damage, he gains DEF +30 and ASPD +3 for 10 seconds, stacking up to 3 times"
             }
         ],
         [
             {
-                "name": "架盾送客仪礼",
+                "name": "Shield-Up Farewell Ceremony",
                 "descCN": "若8秒内未主动攻击，获得相当于生命上限15%的<$ba.barrier>屏障</>，失去屏障后重新计时",
-                "desc": "If this unit hasn't attacked for 8 seconds,  gain 15% Max HP <$ba.barrier>Barrier</>, The timer resets when the <$ba.barrier>Barrier</> is lost"
+                "desc": "When Sankta Miksaparato has not attacked for 8 seconds, he gains a <$ba.barrier>Barrier</> equal to 15% Max HP; this timer restarts once the Barrier is lost"
             },
             {
-                "name": "架盾送客仪礼",
+                "name": "Shield-Up Farewell Ceremony",
                 "descCN": "若8秒内未主动攻击，获得相当于生命上限18%<@ba.talpu>(+3%)</>的<$ba.barrier>屏障</>，失去屏障后重新计时",
-                "desc": "If this unit hasn't attacked for 8 seconds,  gain 18%<@ba.talpu>(+3%)</> Max HP <$ba.barrier>Barrier</>, The timer resets when the <$ba.barrier>Barrier</> is lost"
+                "desc": "When Sankta Miksaparato has not attacked for 8 seconds, he gains a <$ba.barrier>Barrier</> equal to 18% <@ba.talpu>(+3%)</> Max HP; this timer restarts once the Barrier is lost"
             }
         ]
     ],
     "char_4187_graceb": [
         [
             {
-                "name": "趁势怜悯",
+                "name": "Opportune Mercy",
                 "descCN": "攻击力+5%，击倒过处于<$ba.dt.neural2>神经损伤</>爆发期间的敌人后改为攻击力+10%",
-                "desc": "ATK+5%, ATK+10% when defeat enemy under the burst effect of <$ba.dt.neural2>Nervous Impairment</>"
+                "desc": "ATK +5%, which becomes ATK +10% after defeating an enemy under the burst effect of <$ba.dt.neural2>Nervous Impairment</>"
             },
             {
-                "name": "趁势怜悯",
+                "name": "Opportune Mercy",
                 "descCN": "攻击力+8%<@ba.talpu>(+3%)</>，击倒过处于<$ba.dt.neural2>神经损伤</>爆发期间的敌人后改为攻击力+13%<@ba.talpu>(+3%)</>",
-                "desc": "ATK+8%<@ba.talpu>(+3%)</>, ATK+13%<@ba.talpu>(+3%)</> when defeat enemy under the burst effect of <$ba.dt.neural2>Nervous Impairment</>"
+                "desc": "ATK +8% <@ba.talpu>(+3%)</>, which becomes ATK +13% <@ba.talpu>(+3%)</> after defeating an enemy under the burst effect of <$ba.dt.neural2>Nervous Impairment</>"
             },
             {
-                "name": "趁势怜悯",
+                "name": "Opportune Mercy",
                 "descCN": "攻击力+10%，击倒过处于<$ba.dt.neural2>神经损伤</>爆发期间的敌人后改为攻击力+15%",
-                "desc": "ATK+10%, ATK+15% when defeat enemy under the burst effect of <$ba.dt.neural2>Nervous Impairment</>"
+                "desc": "ATK +10%, which becomes ATK +15% after defeating an enemy under the burst effect of <$ba.dt.neural2>Nervous Impairment</>"
             },
             {
-                "name": "趁势怜悯",
+                "name": "Opportune Mercy",
                 "descCN": "攻击力+13%<@ba.talpu>(+3%)</>，击倒过处于<$ba.dt.neural2>神经损伤</>爆发期间的敌人后改为攻击力+18%<@ba.talpu>(+3%)</>",
-                "desc": "ATK+13%<@ba.talpu>(+3%)</>, ATK+18%<@ba.talpu>(+3%)</> when defeat enemy under the burst effect of <$ba.dt.neural2>Nervous Impairment</>"
+                "desc": "ATK +13% <@ba.talpu>(+3%)</>, which becomes ATK +18% <@ba.talpu>(+3%)</> after defeating an enemy under the burst effect of <$ba.dt.neural2>Nervous Impairment</>"
             }
         ]
     ],
     "char_4188_confes": [
         [
             {
-                "name": "先付费，再告解·I",
+                "name": "Pay-Per-Confession I",
                 "descCN": "首次阻挡敌人时立即获得2点部署费用，并使该敌人<$ba.sleep>沉睡</>5秒",
-                "desc": "When block an enemy for the first time, gains 2 DP immediately and put enemy to <$ba.sleep>Sleep</> for 5 seconds"
+                "desc": "The first time blocking an enemy, gains 2 DP and puts the blocked enemy to <$ba.sleep>Sleep</> for 5s"
             },
             {
-                "name": "先付费，再告解·II",
+                "name": "Pay-Per-Confession II",
                 "descCN": "首次阻挡敌人时立即获得2点部署费用，并使该敌人<$ba.sleep>沉睡</>6秒",
-                "desc": "When block an enemy for the first time, gains 2 DP immediately and put enemy to <$ba.sleep>Sleep</> for 6 seconds"
+                "desc": "The first time blocking an enemy, gains 2 DP and puts the blocked enemy to <$ba.sleep>Sleep</> for 6s"
             },
             {
-                "name": "先付费，再告解·III",
+                "name": "Pay-Per-Confession III",
                 "descCN": "首次阻挡敌人时立即获得3点部署费用，并使该敌人<$ba.sleep>沉睡</>6秒",
-                "desc": "When block an enemy for the first time, gains 3 DP immediately and put enemy to <$ba.sleep>Sleep</> for 6 seconds"
+                "desc": "The first time blocking an enemy, gains 3 DP and puts the blocked enemy to <$ba.sleep>Sleep</> for 6s"
             },
             {
-                "name": "先付费，再告解·IV",
+                "name": "Pay-Per-Confession IV",
                 "descCN": "首次阻挡敌人时立即获得3点部署费用，并使该敌人<$ba.sleep>沉睡</>7秒",
-                "desc": "When block an enemy for the first time, gains 3 DP immediately and put enemy to <$ba.sleep>Sleep</> for 7 seconds"
+                "desc": "The first time blocking an enemy, gains 3 DP and puts the blocked enemy to <$ba.sleep>Sleep</> for 7s"
             },
             {
-                "name": "先付费，再告解·V",
+                "name": "Pay-Per-Confession V",
                 "descCN": "首次阻挡敌人时立即获得4点部署费用，并使该敌人<$ba.sleep>沉睡</>7秒",
-                "desc": "When block an enemy for the first time, gains 4 DP immediately and put enemy to <$ba.sleep>Sleep</> for 7 seconds"
+                "desc": "The first time blocking an enemy, gains 4 DP and puts the blocked enemy to <$ba.sleep>Sleep</> for 7s"
             },
             {
-                "name": "先付费，再告解·VI",
+                "name": "Pay-Per-Confession VI",
                 "descCN": "首次阻挡敌人时立即获得4点部署费用，并使该敌人<$ba.sleep>沉睡</>8秒",
-                "desc": "When block an enemy for the first time, gains 4 DP immediately and put enemy to <$ba.sleep>Sleep</> for 8 seconds"
+                "desc": "The first time blocking an enemy, gains 4 DP and puts the blocked enemy to <$ba.sleep>Sleep</> for 8s"
             }
         ]
     ],
@@ -8649,24 +8649,24 @@
     "char_4198_christ": [
         [
             {
-                "name": "诱人美馔",
+                "name": "Captivating Delicacy",
                 "descCN": "攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力80%的元素伤害",
-                "desc": "Enemies within Attack Range take 80% ATK as Elemental Damage when they <$ba.palsy>Paralyze</>"
+                "desc": "Enemies within Attack Range take 80% of ATK as Elemental damage when they trigger <$ba.palsy>Paralysis</>"
             },
             {
-                "name": "诱人美馔",
+                "name": "Captivating Delicacy",
                 "descCN": "攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力90%<@ba.talpu>(+10%)</>的元素伤害",
-                "desc": "Enemies within Attack Range take 90%<@ba.talpu>(+10%)</> ATK as Elemental Damage when they <$ba.palsy>Paralyze</>"
+                "desc": "Enemies within Attack Range take 90% <@ba.talpu>(+10%)</> of ATK as Elemental damage when they trigger <$ba.palsy>Paralysis</>"
             },
             {
-                "name": "诱人美馔",
+                "name": "Captivating Delicacy",
                 "descCN": "攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力120%的元素伤害",
-                "desc": "Enemies within Attack Range take 120% ATK as Elemental Damage when they <$ba.palsy>Paralyze</>"
+                "desc": "Enemies within Attack Range take 120% of ATK as Elemental damage when they trigger <$ba.palsy>Paralysis</>"
             },
             {
-                "name": "诱人美馔",
+                "name": "Captivating Delicacy",
                 "descCN": "攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力130%<@ba.talpu>(+10%)</>的元素伤害",
-                "desc": "Enemies within Attack Range take 130%<@ba.talpu>(+10%)</> ATK as Elemental Damage when they <$ba.palsy>Paralyze</>"
+                "desc": "Enemies within Attack Range take 130% <@ba.talpu>(+10%)</> of ATK as Elemental damage when they trigger <$ba.palsy>Paralysis</>"
             }
         ]
     ],
@@ -8799,7 +8799,7 @@
             {
                 "name": "鬼之架势",
                 "descCN": "在场时，自身获得最高+50法术抗性和35%攻击力的<$ba.berserk>坚忍</>(损失70%生命值时达到最大加成)",
-                "desc": "Gains up to +35% ATK and +50 RES <$ba.berserk>Tenacity</> (reaches maximum bonus when losing 70% Max HP) "
+                "desc": "Gains up to +35% ATK and +50 RES <$ba.berserk>Tenacity</> (reaches maximum bonus when losing 70% Max HP)"
             }
         ]
     ],
@@ -9119,6 +9119,479 @@
                 "name": "毋畏爱意",
                 "descCN": "在场时每秒使<$ba.fever>Fever</>+3; <$ba.mujica>AveMujica</>成员的攻击力+9%<@ba.talpu>(+1%)</>",
                 "desc": "When deployed, <$ba.fever>Fever</>+3 every second; <$ba.mujica>Ave Mujica</> member ATK+9%<@ba.talpu>(+1%)</>"
+            }
+        ]
+    ],
+	"char_4204_mantra": [
+        [
+            {
+                "name": "噤声限域",
+                "descCN": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力100%的元素伤害，且触发<$ba.palsy>麻痹</>时有8%概率不消耗<$ba.palsy>麻痹</>层数",
+                "desc": "Whenever an enemy triggers <$ba.palsy>Paralysis</>, immediately deals 100% ATK as Elemental Damage to that enemy; Has 8% chance to not consume <$ba.palsy>Paralysis</> stack when triggered"
+            },
+            {
+                "name": "噤声限域",
+                "descCN": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力110%<@ba.talpu>(+10%)</>的元素伤害，且触发<$ba.palsy>麻痹</>时有11%<@ba.talpu>(+3%)</>概率不消耗<$ba.palsy>麻痹</>层数",
+                "desc": "Whenever an enemy triggers <$ba.palsy>Paralysis</>, immediately deals 110% <@ba.talpu>(+10%)</> ATK as Elemental Damage to that enemy; Has 11% <@ba.talpu>(+3%)</> chance to not consume <$ba.palsy>Paralysis</> stack when triggered"
+            },
+            {
+                "name": "噤声限域",
+                "descCN": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力135%的元素伤害，且触发<$ba.palsy>麻痹</>时有10%概率不消耗<$ba.palsy>麻痹</>层数",
+                "desc": "Whenever an enemy triggers <$ba.palsy>Paralysis</>, immediately deals 135% ATK as Elemental Damage to that enemy; Has 10% chance to not consume <$ba.palsy>Paralysis</> stack when triggered"
+            },
+            {
+                "name": "噤声限域",
+                "descCN": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力145%<@ba.talpu>(+10%)</>的元素伤害，且触发<$ba.palsy>麻痹</>时有13%<@ba.talpu>(+3%)</>概率不消耗<$ba.palsy>麻痹</>层数",
+                "desc": "Whenever an enemy triggers <$ba.palsy>Paralysis</>, immediately deals 145% <@ba.talpu>(+10%)</> ATK as Elemental Damage to that enemy; Has 13% <@ba.talpu>(+3%)</> chance to not consume <$ba.palsy>Paralysis</> stack when triggered"
+            }
+        ],
+        [
+            {
+                "name": "全局洞悉",
+                "descCN": "距离真言最近的一个侵入点出场的敌人出现时立刻获得1层<$ba.palsy>麻痹</>",
+                "desc": "Incursion Point closest to Mantra, spawns enemies with 1 <$ba.palsy>Paralysis</> stack"
+            }
+        ]
+    ],
+    "char_4207_branch": [
+        [
+            {
+                "name": "简易包扎",
+                "descCN": "技能结束时恢复自身40%最大生命值",
+                "desc": "Restores 40% HP after skill ends."
+            },
+            {
+                "name": "简易包扎",
+                "descCN": "技能结束时恢复自身50%<@ba.talpu>(+10%)</>最大生命值",
+                "desc": "Restores 50% <@ba.talpu>(+10%)</> HP after skill ends."
+            },
+            {
+                "name": "简易包扎",
+                "descCN": "技能结束时恢复自身50%最大生命值",
+                "desc": "Restores 50% HP after skill ends."
+            },
+            {
+                "name": "简易包扎",
+                "descCN": "技能结束时恢复自身60%<@ba.talpu>(+10%)</>最大生命值",
+                "desc": "Restores 60% <@ba.talpu>(+10%)</> HP after skill ends."
+            }
+        ]
+    ],
+    "char_4208_wintim": [
+        [
+            {
+                "name": "疾笔撰录",
+                "descCN": "攻击速度+5，自身受到伤害后失去该效果",
+                "desc": "ASPD +5, lost this effect after taking damage."
+            },
+            {
+                "name": "疾笔撰录",
+                "descCN": "攻击速度+7<@ba.talpu>(+2)</>，自身受到伤害后失去该效果",
+                "desc": "ASPD +7 <@ba.talpu>(+2)</>, lost this effect after taking damage."
+            },
+            {
+                "name": "疾笔撰录",
+                "descCN": "攻击速度+10，自身受到伤害后失去该效果",
+                "desc": "ASPD +10, lost this effect after taking damage."
+            },
+            {
+                "name": "疾笔撰录",
+                "descCN": "攻击速度+12<@ba.talpu>(+2)</>，自身受到伤害后失去该效果",
+                "desc": "ASPD +12 <@ba.talpu>(+2)</>, lost this effect after taking damage."
+            }
+        ]
+    ],
+	    "char_1045_svash2": [
+        [
+            {
+                "name": "开放性开局",
+                "descCN": "在场时向待部署区中加入“风雪之眼”，且使待部署区按照部署费用排列。位于“风雪之眼”左侧的干员与自身初始技力+2，下次再部署时间-10%",
+                "desc": "While on the field, adds Eye of the Snowstorm to Deployment waiting zone and rearrange operators according to their current Deployment cost. Operators on the left side of Eye of the Snowstorm gain +2 Starting SP and Redeployment Time -10%"
+            },
+            {
+                "name": "开放性开局",
+                "descCN": "在场时向待部署区中加入“风雪之眼”，且使待部署区按照部署费用排列。位于“风雪之眼”左侧的干员与自身初始技力+3，下次再部署时间-15%",
+                "desc": "While on the field, adds Eye of the Snowstorm to Deployment waiting zone and rearrange operators according to their current Deployment cost. Operators on the left side of Eye of the Snowstorm gain +3 Starting SP and Redeployment Time -15%"
+            },
+            {
+                "name": "开放性开局",
+                "descCN": "在场时向待部署区中加入“风雪之眼”，且使待部署区按照部署费用排列。位于“风雪之眼”左侧的干员与自身初始技力+4，下次再部署时间-20%",
+                "desc": "While on the field, adds Eye of the Snowstorm to Deployment waiting zone and rearrange operators according to their current Deployment cost. Operators on the left side of Eye of the Snowstorm gain +4 Starting SP and Redeployment Time -20%"
+            }
+        ],
+        [
+            {
+                "name": "雪境先驱",
+                "descCN": "在场时，[谢拉格]干员免疫<$ba.frozen>冻结</>，防御力+60且每秒回复1.5%最大生命值; 在场15秒后防御力和生命回复效果翻倍",
+                "desc": "While on the field, [Kjerag] operators immune to <$ba.frozen>Freeze</>, gain DEF+60 and recover 1.5% Max HP every seconds; After being deployed for 15 seconds, DEF and HP recover effect are doubled"
+            },
+            {
+                "name": "雪境先驱",
+                "descCN": "在场时，[谢拉格]干员免疫<$ba.frozen>冻结</>，防御力+80<@ba.talpu>(+20)</>且每秒回复2%<@ba.talpu>(+0.5%)</>最大生命值; 凛御银灰在场15秒后，防御力和生命回复效果翻倍",
+                "desc": "While on the field, [Kjerag] operators immune to <$ba.frozen>Freeze</>, gain DEF+80<@ba.talpu>(+20)</> and recover 2%<@ba.talpu>(+0.5%)</> Max HP every seconds; After being deployed for 15 seconds, DEF and HP recover effect are doubled"
+            }
+        ]
+    ],
+	"token_10057_svash2_eagle1":[
+		[
+			{
+				"name": "开放性开局",
+                "descCN": "使左侧的干员初始技力增加，再部署时间减少",
+                "desc": "Grants Starting SP to operators on the left and reduces their Redeployment Time"
+			}
+		]
+	],
+	"token_10057_svash2_eagle2":[
+		[
+			{
+				"name": "开放性开局",
+                "descCN": "使左侧的干员初始技力增加，再部署时间减少",
+                "desc": "Grants Starting SP to operators on the left and reduces their Redeployment Time"
+			}
+		]
+	],
+	"token_10057_svash2_eagle3":[
+		[
+			{
+				"name": "开放性开局",
+                "descCN": "使左侧的干员初始技力增加，再部署时间减少",
+                "desc": "Grants Starting SP to operators on the left and reduces their Redeployment Time"
+			}
+		]
+	],
+    "char_1046_sbell2": [
+        [
+            {
+                "name": "无垠的雪景",
+                "descCN": "攻击范围内的地面每隔10秒产生一层积雪，地面敌人经过时立即受到相当于攻击力20%的法术伤害，每层积雪使经过的所有敌人移动速度下降10%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "desc": "Snow periodically form on the ground tiles in Attack Range every 10 seconds, immediately deals 20% ATK as Arts damage to enemies passing through. Each layer of Snow reduce movement speed by 10%, up to 5 layers per tile (Snow disappears when the first enemy leaves the area)."
+            },
+            {
+                "name": "无垠的雪景",
+                "descCN": "攻击范围内的地面每隔10秒产生一层积雪，地面敌人经过时立即受到相当于攻击力25%<@ba.talpu>(+5%)</>的法术伤害，每层积雪使经过的所有敌人移动速度下降10%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "desc": "Snow periodically form on the ground tiles in Attack Range every 10 seconds, immediately deals 25%<@ba.talpu>(+5%)</> ATK as Arts damage to enemies passing through. Each layer of Snow reduce movement speed by 10%, up to 5 layers per tile (Snow disappears when the first enemy leaves the area)."
+            },
+            {
+                "name": "无垠的雪景",
+                "descCN": "攻击范围内的地面每隔7.5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力50%的法术伤害，每层积雪使经过的所有敌人移动速度下降10%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "desc": "Snow periodically form on the ground tiles in Attack Range every 7.5 seconds, immediately deals 50% ATK as Arts damage to enemies passing through. Each layer of Snow reduce movement speed by 10%, up to 5 layers per tile (Snow disappears when the first enemy leaves the area)."
+            },
+            {
+                "name": "无垠的雪景",
+                "descCN": "攻击范围内的地面每隔7.5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力55%<@ba.talpu>(+5%)</>的法术伤害，每层积雪使经过的所有敌人移动速度下降10%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "desc": "Snow periodically form on the ground tiles in Attack Range every 7.5 seconds, immediately deals 55%<@ba.talpu>(+5%)</> ATK as Arts damage to enemies passing through. Each layer of Snow reduce movement speed by 10%, up to 5 layers per tile (Snow disappears when the first enemy leaves the area)."
+            },
+            {
+                "name": "无垠的雪景",
+                "descCN": "攻击范围内的地面每隔5.5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力75%的法术伤害，每层积雪使经过的所有敌人移动速度下降12%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "desc": "Snow periodically form on the ground tiles in Attack Range every 5.5 seconds, immediately deals 75% ATK as Arts damage to enemies passing through. Each layer of Snow reduce movement speed by 12%, up to 5 layers per tile (Snow disappears when the first enemy leaves the area)."
+            },
+            {
+                "name": "无垠的雪景",
+                "descCN": "攻击范围内的地面每隔5.5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力80%<@ba.talpu>(+5%)</>的法术伤害，每层积雪使经过的所有敌人移动速度下降12%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "desc": "Snow periodically form on the ground tiles in Attack Range every 5.5 seconds, immediately deals 80%<@ba.talpu>(+5%)</> ATK as Arts damage to enemies passing through. Each layer of Snow reduce movement speed by 12%, up to 5 layers per tile (Snow disappears when the first enemy leaves the area)."
+            }
+        ],
+        [
+            {
+                "name": "圣山的祝福",
+                "descCN": "受到伤害时使敌人<$ba.cold>寒冷</>1.5秒，若受到致命伤害，仅一次立刻回复所有生命值并使自身<$ba.frozen>冻结</>4秒，使攻击范围内所有敌方单位<$ba.frozen>冻结</>8秒",
+                "desc": "When taking damage, inflicts <$ba.cold>cold</> on attacker for 1.5 seconds. When receives lethal damage for the first time, restores all HP, <$ba.frozen>freezes</> herself for 4 seconds and <$ba.frozen>freezes</> all enemies in Attack Range for 8 seconds"
+            },
+            {
+                "name": "圣山的祝福",
+                "descCN": "受到伤害时使敌人<$ba.cold>寒冷</>2<@ba.talpu>(+0.5)</>秒，若受到致命伤害，仅一次立刻回复所有生命值并使自身<$ba.frozen>冻结</>4秒，使攻击范围内所有敌方单位<$ba.frozen>冻结</>8秒",
+                "desc": "When taking damage, inflicts <$ba.cold>cold</> on attacker for 2<@ba.talpu>(+0.5)</> seconds. When receives lethal damage for the first time, restores all HP, <$ba.frozen>freezes</> herself for 4 seconds and <$ba.frozen>freezes</> all enemies in Attack Range for 8 seconds"
+            }
+        ]
+    ],
+    "char_1047_halo2": [
+        [
+            {
+                "name": "数据建模",
+                "descCN": "对敌人造成<$ba.sluggish>停顿</>效果时，自身的攻击速度+1，最多叠加12次",
+                "desc": "When inflicts <$ba.sluggish>Slow</> on an enemy, ASPD+1, up to 12 times"
+            },
+            {
+                "name": "数据建模",
+                "descCN": "对敌人造成<$ba.sluggish>停顿</>效果时，自身的攻击速度+1，最多叠加18次",
+                "desc": "When inflicts <$ba.sluggish>Slow</> on an enemy, ASPD+1, up to 18 times"
+            }
+        ],
+        [
+            {
+                "name": "能源解析",
+                "descCN": "攻击范围内的敌人受到10%的<$ba.fragile>脆弱</>效果，敌人在溯光星源的攻击范围内停留超过7秒后，<$ba.fragile>脆弱</>效果提升至14%",
+                "desc": "Inflicts 10% <$ba.fragile>Fragile</> to enemies in Attack Range; If an enemy stays in Attack Range for 7 seconds, <$ba.fragile>Fragile</> effect increases 14% to instead"
+            },
+            {
+                "name": "能源解析",
+                "descCN": "攻击范围内的敌人受到12%<@ba.talpu>(+2%)</>的<$ba.fragile>脆弱</>效果，敌人在溯光星源的攻击范围内停留超过7秒后，<$ba.fragile>脆弱</>效果提升至16%<@ba.talpu>(+2%)</>",
+                "desc": "Inflicts 12%<@ba.talpu>(+2%)</>% <$ba.fragile>Fragile</> to enemies in Attack Range; If an enemy stays in Attack Range for 7 seconds, <$ba.fragile>Fragile</> effect increases 16%<@ba.talpu>(+2%)</> to instead"
+            }
+        ]
+    ],
+    "char_4211_snhunt": [
+        [
+            {
+                "name": "裂云一击",
+                "descCN": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力150%的物理伤害和2秒<$ba.cold>寒冷</>",
+                "desc": "When skill is activated, sends beast out to attack, deals 150% ATK as Physical damage and inflicts <$ba.cold>Cold</> for 2 seconds"
+            },
+            {
+                "name": "裂云一击",
+                "descCN": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力155%<@ba.talpu>(+5%)</>的物理伤害和2秒<$ba.cold>寒冷</>",
+                "desc": "When skill is activated, sends beast out to attack, deals 155%<@ba.talpu>(+5%)</> ATK as Physical damage and inflicts <$ba.cold>Cold</> for 2 seconds"
+            },
+            {
+                "name": "裂云一击",
+                "descCN": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力180%的物理伤害和3秒<$ba.cold>寒冷</>",
+                "desc": "When skill is activated, sends beast out to attack, deals 180% ATK as Physical damage and inflicts <$ba.cold>Cold</> for 3 seconds"
+            },
+            {
+                "name": "裂云一击",
+                "descCN": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力185%<@ba.talpu>(+5%)</>的物理伤害和3秒<$ba.cold>寒冷</>",
+                "desc": "When skill is activated, sends beast out to attack, deals 185%<@ba.talpu>(+5%)</> ATK as Physical damage and inflicts <$ba.cold>Cold</> for 3 seconds"
+            }
+        ]
+    ],
+    "char_394_hadiya": [
+        [
+            {
+                "name": "荒野的后裔",
+                "descCN": "通过部署, 开启技能, 使用<$ba.alter>装备应变</>消耗费用后，攻击力+2%，使攻击范围内的敌人<$ba.stun>晕眩</>2秒(攻击力最多提升3次)",
+                "desc": "When DP is consumed during deployment, skill activatation or <$ba.alter>Equipment Response</>, ATK+2% and <$ba.stun>stuns</> all enemies in Attack Range for 2 seconds (ATK can be stack up to 3 times)"
+            },
+            {
+                "name": "荒野的后裔",
+                "descCN": "通过部署, 开启技能, 使用<$ba.alter>装备应变</>消耗费用后，攻击力+3%<@ba.talpu>(+1%)</>，使攻击范围内的敌人<$ba.stun>晕眩</>2秒(攻击力最多提升3次)",
+                "desc": "When DP is consumed during deployment, skill activatation or <$ba.alter>Equipment Response</>, ATK+3%<@ba.talpu>(+1%)</> and <$ba.stun>stuns</> all enemies in Attack Range for 2 seconds (ATK can be stack up to 3 times)"
+            },
+            {
+                "name": "荒野的后裔",
+                "descCN": "通过部署, 开启技能, 使用<$ba.alter>装备应变</>消耗费用后，攻击力+4%，使攻击范围内的敌人<$ba.stun>晕眩</>2秒(攻击力最多提升5次)",
+                "desc": "When DP is consumed during deployment, skill activatation or <$ba.alter>Equipment Response</>, ATK+4% and <$ba.stun>stuns</> all enemies in Attack Range for 2 seconds (ATK can be stack up to 5 times)"
+            },
+            {
+                "name": "荒野的后裔",
+                "descCN": "通过部署, 开启技能, 使用<$ba.alter>装备应变</>消耗费用后，攻击力+5%<@ba.talpu>(+1%)</>，使攻击范围内的敌人<$ba.stun>晕眩</>2秒(攻击力最多提升5次)",
+                "desc": "When DP is consumed during deployment, skill activatation or <$ba.alter>Equipment Response</>, ATK+5%<@ba.talpu>(+1%)</> and <$ba.stun>stuns</> all enemies in Attack Range for 2 seconds (ATK can be stack up to 5 times)"
+            }
+        ]
+    ],
+    "char_4051_akkord": [
+        [
+            {
+                "name": "律脉同构",
+                "descCN": "攻击范围内至少有1名其他友方干员时，攻击力+8%",
+                "desc": "When there is at least 1 other operator in Attack Range, ATK+8%"
+            },
+            {
+                "name": "律脉同构",
+                "descCN": "攻击范围内至少有1名其他友方干员时，攻击力+10<@ba.talpu>(+2%)</>",
+                "desc": "When there is at least 1 other operator in Attack Range, ATK+10<@ba.talpu>(+2%)</>"
+            },
+            {
+                "name": "律脉同构",
+                "descCN": "攻击范围内至少有1名其他友方干员时，攻击力+15%",
+                "desc": "When there is at least 1 other operator in Attack Range, ATK+15%"
+            },
+            {
+                "name": "律脉同构",
+                "descCN": "攻击范围内至少有1名其他友方干员时，攻击力+17<@ba.talpu>(+2%)</>",
+                "desc": "When there is at least 1 other operator in Attack Range, ATK+17<@ba.talpu>(+2%)</>"
+            }
+        ]
+    ],
+	"char_617_sharp2": [
+        [
+            {
+                "name": "无声之锋",
+                "descCN": "攻击力+5%，获得10%的法术闪避",
+                "desc": "ATK+5%, 10% Arts Dodge"
+            },
+            {
+                "name": "无声之锋",
+                "descCN": "攻击力+10%，获得20%的法术闪避",
+                "desc": "ATK+10%, 20% Arts Dodge"
+            },
+            {
+                "name": "无声之锋",
+                "descCN": "攻击力+20%，获得25%的法术闪避",
+                "desc": "ATK+20%, 25% Arts Dodge"
+            }
+        ],
+        [
+            {
+                "name": "陷阵勇气",
+                "descCN": "攻击范围内存在2名及以上敌人时，攻击速度+12",
+                "desc": "ASPD +12 when there are 2 or more enemies in attack range."
+            }
+        ]
+    ],
+    "char_616_pithst": [
+        [
+            {
+                "name": "迭代元素",
+                "descCN": "攻击同时附带18%攻击力的<$ba.dt.neural2>神经损伤</>(优先), <$ba.dt.burning2>灼燃损伤</>, <$ba.dt.apoptosis2>凋亡损伤</>; 优先攻击未处于损伤爆发的目标",
+                "desc": "Attack deal an additional 18% of ATK as <$ba.dt.neural2>Nervous Impairment</>(prioritize), <$ba.dt.burning2>Burn damage</>, <$ba.dt.apoptosis2>Necrosis Damage</>; prioritizing enemies not under a burst effect"
+            }
+        ],
+        [
+            {
+                "name": "灵便条约",
+                "descCN": "在[卫戍协议]中，隶属于盟约[调和]",
+                "desc": "in [Stronghold Protocol], categorize as [调和]"
+            }
+        ]
+    ],
+	"char_4212_nasti": [
+        [
+            {
+                "name": "前方施工",
+                "descCN": "可以携带2个<支援装置>(最多可部署1个), 效果根据技能改变而改变",
+                "desc": "Can carry 2 <Support Devices> (deploy up to 1), with different effects depending on Skill."
+            },
+            {
+                "name": "前方施工",
+                "descCN": "可以携带2个<支援装置>(最多可部署2个), 效果根据技能改变而改变",
+                "desc": "Can carry 2 <Support Devices> (deploy up to 2), with different effects depending on Skill."
+            },
+            {
+                "name": "前方施工",
+                "descCN": "可以携带3个<支援装置>(最多可部署2个), 效果根据技能改变而改变",
+                "desc": "Can carry 3 <Support Devices> (deploy up to 2), with different effects depending on Skill."
+            }
+        ],
+        [
+            {
+                "name": "注意安全",
+                "descCN": "获得10%<$ba.protect>庇护</>; 远程敌人出现后, 改为使自身和场上的高台干员获得15%<$ba.protect>庇护</>, 且每6秒获得1点技力",
+                "desc": "Gain 10% <$ba.protect>Sanctuary</>; When ranged enemies appear, change to grants 15% <$ba.protect>Sanctuary</> to self and all Ranged operator on the field, and gain 1 SP every 6s"
+            },
+            {
+                "name": "注意安全",
+                "descCN": "获得12%<@ba.talpu> (+2%) </><$ba.protect>庇护</>; 远程敌人出现后, 改为使自身和场上的高台干员获得18%<@ba.talpu> (+3%) </><$ba.protect>庇护</>, 且每6秒获得1点技力",
+                "desc": "Gain 12%<@ba.talpu>(+2%)</> <$ba.protect>Sanctuary</>; When ranged enemies appear, change to grants 18%<@ba.talpu>(+3%)</> <$ba.protect>Sanctuary</> to self and all Ranged operator on the field, and gain 1 SP every 6s"
+            }
+        ]
+    ],
+	"token_10059_nasti_nstdef": [
+        [
+            {
+                "name": "严禁偷工减料",
+                "descCN": null,
+                "desc": ""
+            }
+        ],
+        [
+            {
+                "name": "严禁偷工减料",
+                "descCN": "使前方干员的防御力+17%",
+                "desc": "Grant an operator in front +17% DEF"
+            },
+            {
+                "name": "严禁偷工减料",
+                "descCN": "使前方干员的防御力+20%",
+                "desc": "Grant an operator in front +20% DEF"
+            },
+            {
+                "name": "严禁偷工减料",
+                "descCN": "使前方干员的防御力+25%",
+                "desc": "Grant an operator in front +25% DEF"
+            }
+        ]
+    ],
+    "token_10060_nasti_nstchr": [
+        [
+            {
+                "name": "取缔无效流程",
+                "descCN": null,
+                "desc": ""
+            },
+            {
+                "name": "取缔无效流程",
+                "descCN": null,
+                "desc": ""
+            },
+            {
+                "name": "取缔无效流程",
+                "descCN": null,
+                "desc": ""
+            }
+        ],
+        [
+            {
+                "name": "取缔无效流程",
+                "descCN": "最大生命值固定为6, 部署时生命值为1, 仅可通过自身技能补充生命",
+                "desc": "Max HP is fixed at 6 HP, has 1 HP on deployment. HP can only be recovered by its own skill."
+            },
+            {
+                "name": "取缔无效流程",
+                "descCN": "最大生命值固定为7, 部署时生命值为2, 仅可通过自身技能补充生命",
+                "desc": "Max HP is fixed at 7 HP, has 2 HP on deployment. HP can only be recovered by its own skill."
+            },
+            {
+                "name": "取缔无效流程",
+                "descCN": "最大生命值固定为8, 部署时生命值为3, 仅可通过自身技能补充生命",
+                "desc": "Max HP is fixed at 8 HP, has 3 HP on deployment. HP can only be recovered by its own skill."
+            }
+        ]
+    ],
+    "token_10061_nasti_nstbld": [
+        [
+            {
+                "name": "承重结构部署",
+                "descCN": "部署时在前方可部署地面生成高台装置 (最多存在1个) ; 使前方高台装置每秒回复1%最大生命值, 但自身流失2%最大生命值, 娜斯提技能期间回复效果翻倍",
+                "desc": "After deployment, constructs high platform in front (Only 1 high platform can exist at the same time); The high platform in front can be recoverd by 1% Max HP of device per second but device lose 2% HP per second. The recovering effect is doubled during Nasti's skill"
+            },
+            {
+                "name": "承重结构部署",
+                "descCN": "部署时在前方可部署地面生成高台装置 (最多存在1个) ; 使前方高台装置每秒回复1%最大生命值, 但自身流失2%最大生命值; 娜斯提技能期间回复效果翻倍",
+                "desc": "After deployment, constructs high platform in front (Only 1 high platform can exist at the same time); The high platform in front can be recoverd by 1% Max HP of device per second but device lose 2% HP per second. The recovering effect is doubled during Nasti's skill"
+            },
+            {
+                "name": "承重结构部署",
+                "descCN": "部署时在前方可部署地面生成高台装置 (最多存在1个) ; 使前方高台装置每秒回复1%最大生命值, 但自身流失2%最大生命值; 娜斯提技能期间回复效果翻倍",
+                "desc": "After deployment, constructs high platform in front (Only 1 high platform can exist at the same time); The high platform in front can be recoverd by 1% Max HP of device per second but device lose 2% HP per second. The recovering effect is doubled during Nasti's skill"
+            }
+        ]
+    ],
+    "char_4214_cairn": [
+        [
+            {
+                "name": "过饱和讲解",
+                "descCN": "对自身阻挡的敌人每秒造成相当于攻击力4%的<$ba.dt.neural2>神经损伤</>",
+                "desc": "Blocked enemies receive 4% ATK as <$ba.dt.neural2>Nervous Impairment</> per second"
+            },
+            {
+                "name": "过饱和讲解",
+                "descCN": "对自身阻挡的敌人每秒造成相当于攻击力5%<@ba.talpu> (+1%) </>的<$ba.dt.neural2>神经损伤</>",
+                "desc": "Blocked enemies receive 5%<@ba.talpu>(+1%)</> ATK as <$ba.dt.neural2>Nervous Impairment</> per second"
+            },
+            {
+                "name": "过饱和讲解",
+                "descCN": "对自身阻挡的敌人每秒造成相当于攻击力9%的<$ba.dt.neural2>神经损伤</>",
+                "desc": "Blocked enemies receive 9% ATK as <$ba.dt.neural2>Nervous Impairment</> per second"
+            },
+            {
+                "name": "过饱和讲解",
+                "descCN": "对自身阻挡的敌人每秒造成相当于攻击力10%<@ba.talpu> (+1%) </>的<$ba.dt.neural2>神经损伤</>",
+                "desc": "Blocked enemies receive 10%<@ba.talpu>(+1%)</> ATK as <$ba.dt.neural2>Nervous Impairment</> per second"
+            }
+        ]
+    ],
+    "char_4213_skybx": [
+        [
+            {
+                "name": "开门！管理局",
+                "descCN": "对每个敌人首次造成伤害后, 使目标的特殊能力失效, 持续4秒",
+                "desc": "When damaging an enemy for the first time, disables enemies' special abilities for 4s"
+            },
+            {
+                "name": "开门！管理局",
+                "descCN": "对每个敌人首次造成伤害后, 使目标的特殊能力失效, 持续7秒",
+                "desc": "When damaging an enemy for the first time, disables enemies' special abilities for 7s"
             }
         ]
     ]

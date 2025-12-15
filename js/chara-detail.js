@@ -39,6 +39,7 @@
         build           :"./json/puppiiz/riic_data.json",
         special_operator:"./json/puppiiz/special_operator.json",
         charword        :"./json/puppiiz/charword_table.json",
+        char_names      :"./json/puppiiz/char_names.json",
 
         //TL
         voicelineTL     :"./json/tl-voiceline.json",
@@ -105,13 +106,14 @@
     var skillValue
 
     const STANCE_SKILL          = ["skchr_lolxh_1", "skchr_nothin_2", "skchr_phenxi_3", "skchr_narant_1", "skchr_lin_1", "skchr_whitw2_1", "skchr_f12yin_2", "skchr_svrash_2", "skchr_hodrer_2", "skchr_oblvns_2"]
-    const INFINITE_SKILL        = ["skchr_strong_1", "skchr_strong_2", "skchr_talr_1", "skchr_flameb_2", "skchr_whitew_1", "skchr_platnm_2", "skchr_absin_1", "skchr_folivo_1", "skchr_tuye_2", "skchr_whispr_2", "skchr_vodfox_1", "skchr_quercu_1", "skchr_ash_1", "skchr_acnipe_2", "skchr_bgsnow_1", "skchr_ray_2", "skchr_marcil_2", "skchr_logos_1", "skchr_gdglow_2", "skchr_lisa_2", "skchr_skadi2_2", "skchr_cetsyr_1", "skchr_lmlee_1", "skchr_lmlee_3", "skchr_swire2_1", "skchr_swire2_2", "skchr_swire2_3", "skchr_weedy_2", "skchr_agoat2_1", "skchr_jesca2_1", "skchr_nearl2_1", "skchr_ulpia_2", "skchr_huang_2", "skchr_surtr_3", "skchr_siege2_2", "skchr_phatm2_2", "skchr_hsgma2_1"]
+    const INFINITE_SKILL        = ["skchr_strong_1", "skchr_strong_2", "skchr_talr_1", "skchr_flameb_2", "skchr_whitew_1", "skchr_platnm_2", "skchr_absin_1", "skchr_folivo_1", "skchr_tuye_2", "skchr_whispr_2", "skchr_vodfox_1", "skchr_quercu_1", "skchr_ash_1", "skchr_acnipe_2", "skchr_bgsnow_1", "skchr_ray_2", "skchr_marcil_2", "skchr_logos_1", "skchr_gdglow_2", "skchr_lisa_2", "skchr_skadi2_2", "skchr_cetsyr_1", "skchr_lmlee_1", "skchr_lmlee_3", "skchr_swire2_1", "skchr_swire2_2", "skchr_swire2_3", "skchr_weedy_2", "skchr_agoat2_1", "skchr_jesca2_1", "skchr_nearl2_1", "skchr_ulpia_2", "skchr_huang_2", "skchr_surtr_3", "skchr_siege2_2", "skchr_phatm2_2", "skchr_hsgma2_1", "skchr_sbell2_2"]
     const INFINITE_DURATION     = [...STANCE_SKILL, ...INFINITE_SKILL]
     
     var israritygrouped
     var talentValue = [0,0,0]
     var toktalentValue = [0,0,0]
     var talentLimit = []
+    var toktalentLimit = []
     var ModuletalentValue
 
     var Amiyacurrclass  =   "caster"
@@ -837,23 +839,18 @@
             var result = [];
 
             $.each(db.chars2,function(_, char){
-                var languages   = ['cn', 'en', 'jp', 'kr'];
-                var found       = false;
+                var found = false;
 
                 if(el == "Browse" || el == "Browse2"){
                     found = true;
                 }else{
-                    for (var i = 0; i < languages.length; i++) {
-                        var charname    = char['name_' + languages[i]];
-                        var unreadable  = query(db.unreadNameTL, "name", char.name_en)
-                        var input       = inputs.toUpperCase();
-                        var search      = inputs.match(/char_[1-9]{1,4}/g)?(unreadable ? (unreadable.name_en + charname + char.id).toUpperCase().search(input) : (charname + char.id).toUpperCase().search(input))
-                                            :(unreadable ? (unreadable.name_en + charname + char.id.replace("char_","")).toUpperCase().search(input) : (charname + char.id.replace("char_","")).toUpperCase().search(input));
-                        if(search != -1){
-                            found = true;
-                            break;
-                        };
-                    }
+                    var unreadable  = query(db.unreadNameTL, "name", char.name_en)
+                    var char_names  = unreadable?[...db.char_names[char.id], unreadable.name_en]:db.char_names[char.id]
+                    var input       = inputs.toLowerCase();
+                    var search      = inputs.match(/^(char_|!)+?/g)?char.id.replace("char_", "").toLowerCase().search(input.replace("char_", "").replace("!", "")):char_names.join("|").toLowerCase().search(input.replaceAll("_", " "));
+                    if(search != -1){
+                        found = true;
+                    };
                 }
                 if(found){
                     // console.log(char)
@@ -929,7 +926,7 @@
                                 ${result[i].gamemode=="BASE"?"":'<div class="op-grid-gamemode ' + result[i].gamemode +'">' + result[i].gamemode + '</div>'}
                                 ${image}
                             </div>
-                            <div class="${opcurrname.length>12?opcurrname.length>16?"namesmaller":"namesmall":"name"} ak-font-novecento ak-center nameshadow">${opcurrname}</div>
+                            <div class="${opcurrname.length>12?opcurrname.length>15?"namesmaller":"namesmall":"name"} ak-font-novecento ak-center nameshadow">${opcurrname}</div>
                             <div class='ak-rare-${result[i].rarity} selectopopgridline'></div>
                             </li>`
                         )
@@ -952,13 +949,14 @@
                             </li>`
                         )
                     }else{
+                        let opcurrname = result[i].nameTL==result[i].name?result[i].name:result[i].nameTL +" (" +result[i].name + ")"
                         $("#operatorsResult").removeClass("opresult-grid");
                         $("#operatorsResult").addClass("opresult-list");
                         $("#operatorsResult").css("text-align","left");
                         $("#operatorsResult").append(`
                             <li class=" ak-shadow-small ak-rare-${result[i].rarity}" style="width:100%; cursor:pointer; margin-bottom:2px; position:relative;" onclick="selectOperator('${result[i].id}')">
                                 ${image}
-                                ${result[i].name_readable?`[${result[i].name_readable}]`:""} ${result[i].nameTL} (${result[i].name})
+                                ${result[i].name_readable?`[${result[i].name_readable}]`:""} ${opcurrname}
                                 ${result[i].gamemode == "BASE"?"":'<div class="op-grid-gamemode ' + result[i].gamemode +'">' + result[i].gamemode + '</div>'}
                             </li>`);
                     }
@@ -1164,6 +1162,9 @@
         });
         console.log(ops)
 
+        // Faction box shadow
+        ops_main_faction = ops.filter(char => Object.values(char.mainPower).includes(op_faction[0]))
+
         // FILTERING
         if (op_gamemode !== "ALL") ops = ops.filter(char => op_gamemode == "BASE" ? ["BASE", "SO"].includes(query(db.chars2, "id", char.id).gamemode)
                                                                                     :op_gamemode == query(db.chars2, "id", char.id).gamemode)
@@ -1265,15 +1266,16 @@
             }
             var unreadable = query(db.unreadNameTL,"name",char.appellation).name_en
             var gamemode = query(db.chars2, "id", char.id).gamemode
+            var hidden_fac_op = !ops_main_faction.includes(char) && op_faction.length
             return `
             ${extrathing}
-            <li class="selectop-grid ak-shadow" onclick="selectOperator('${getId(char)}')">
+            <li class="selectop-grid ak-shadow" onclick="selectOperator('${getId(char)}')" ${hidden_fac_op?`style="box-shadow: 0px 0px 3px 3px #22b;"`:""}>
             <div class="op-image-grid">
-                ${GetLogo(char)?`<div class="op-grid-faction"><img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/${GetLogo(char)?GetLogo(char).toLowerCase():"none"}.png" title="${GetLogo(char)?GetLogoInfo(char).powerCode:"None"}"></div>`:""}
+                ${GetLogo(char)?`<div class="op-grid-faction"><img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/${GetLogo(char)?GetLogo(char).toLowerCase():"none"}.png" title="${GetLogo(char)?GetLogoInfo(char):"None"}"></div>`:""}
                 ${gamemode=="BASE"?"":'<div class="op-grid-gamemode ' + gamemode +'">' + gamemode + '</div>'}
                 <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${getId(char)}.png">
             </div>
-            <div class="${char.appellation.length>12?char.appellation.length>16?"namesmaller":"namesmall":"name"} ak-font-novecento ak-center">${unreadable?`[${unreadable}]`:""} ${char.appellation}</div>
+            <div class="${char.appellation.length>12?char.appellation.length>16?"namesmaller":"namesmall":"name"} ak-font-novecento ak-center" ${hidden_fac_op?`style="color: aqua"`:""}>${unreadable?`[${unreadable}]`:""} ${char.appellation}</div>
             <div class='selectopopgridline ak-rare-${char.rarity + 1}'></div>
 
             ${showfaction?`<div class='ak-showclass'><img loading='lazy' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/classes/class_${db.classes.find(search=>search.type_data==char.profession).type_en.toLowerCase()}.png'></div>`:""}
@@ -1360,7 +1362,13 @@
                     return false
                 }
             })
-            globaltoken = defaulttoken?defaulttoken:opdataFull.skills[0]?opdataFull.skills[0].overrideTokenKey:null
+            if (defaulttoken && Object.keys(opdataFull.displayTokenDict) == 1) // bypass SilverAsh the Reignfrost token variants
+                globaltoken = defaulttoken
+            else if (opdataFull.skills[0])
+                globaltoken = opdataFull.skills[0].overrideTokenKey
+            else
+                globaltoken = null
+
             globalskill = 0
 
             tokenname   = globaltoken
@@ -1490,7 +1498,7 @@
                                                         <img loading='lazy' id="op-faction-image3" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/logo_${faction}.png">
                                                     </div>
                                                     <div id="op-faction-text" style="display: inline;">
-                                                        ${db.handbookTeam[faction]?db.handbookTeam[faction].powerCode:""}
+                                                        ${GetLogoInfo(faction)}
                                                     </div>
                                                 </div>`
                             faction_all.push(faction)
@@ -1507,7 +1515,7 @@
                                                         <img loading='lazy' id="op-faction-image3" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/logo_${faction}.png">
                                                     </div>
                                                     <div id="op-faction-text" style="display: inline;">
-                                                        ${db.handbookTeam[faction]?db.handbookTeam[faction].powerCode:""}
+                                                        ${GetLogoInfo(faction)}
                                                     </div>
                                                 </div>`
                         }
@@ -1521,7 +1529,7 @@
                         <img id='op-faction-image2' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/${logo.toLowerCase()}.png'>
                     </div>
                     <div id="op-faction-text">
-                        ${GetLogoInfo(opdataFull).powerCode}
+                        ${GetLogoInfo(opdataFull)}
                     </div>
                     ${faction_sub_text?'<i class="fas fa-caret-down"></i>':""}`)
 
@@ -1734,7 +1742,7 @@
                 EliteStatsDisplay(1,i);
             }
 
-            var unreadable = query(db.unreadNameTL,"name",opdata.name_en).name_en
+            var unreadable = query(db.unreadNameTL,"name_en",opdata.name_en).name_en
             // $("#op-nameTL").html(opdata['name_'+lang]);
             // $("#op-nameREG").html("["+opdata['name_'+reg]+"]");
             $("#op-nameTL").removeClass("smallopname");
@@ -2191,7 +2199,7 @@
                     if(db.battle_equip[currequip.uniEquipId]){
                         currebattequip = db.battle_equip[currequip.uniEquipId]
                     }
-                    var greek = {"x":"&Chi;","y":"&Upsilon;","d":"&Delta;","a":"&alpha;"}
+                    var greek = {"x":"&Chi;","y":"&Upsilon;","d":"&Delta;","a":"&alpha;","b":"&beta;"}
                     tabhtml =`
                     <li class='nav-item'>
                         <button class='btn horiz-small nav-link ${(num!=2 ? '' : 'active')} equiplink' data-toggle='pill' href='#equip${num}'>
@@ -2199,7 +2207,7 @@
                                 <div style = "display:inline-block; height:40px">
                                     <img class='equip-image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/shining/${currequip.equipShiningColor}_shining.png' style='width: 50px; margin: 0px -5px 0px -5px'></img>
                                     <div style = "display:inline-block; position:absolute;margin: -1px 0px 0px -35px">
-                                        <img class='equip-image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/type/${currequip.typeIcon.toLowerCase()}.png' style='width: 30px; position:absolute;'></img>
+                                        <img class='equip-image' src='https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/equip/type/${currequip.typeIcon.toLowerCase()}.png' style='width: 30px; height: 30px; position: absolute; aspect-ratio: 1; object-fit: contain;'></img>
                                     </div>
                                     <div style = "position:absolute;margin: 0px 0px 0px 0px">
                                         <div style = "width:60px;margin: 4px 0px 0px -10px;background:#222;color:#ddd;font-size:10px">${currequip.typeIcon.slice(0,-1).toUpperCase()}${greek[currequip.typeIcon.slice(-1)]?greek[currequip.typeIcon.slice(-1)]:currequip.typeIcon.slice(-1).toUpperCase()}</div>
@@ -2319,7 +2327,8 @@
                                 <div style="text-align:center">
                                 `
                             if(gmapp == "SO"){
-                                SO_condUnlocking = db.special_operator[opdataFull.id].unlock["uniequip1"][curreqphase] // might need to change "uniequip1" later
+                                so_mod_index = "uniequip" + db.uniequip.charEquip[opid].indexOf(module).toString()
+                                SO_condUnlocking = db.special_operator[opdataFull.id].unlock[so_mod_index][curreqphase]
                                 equiphtml[curreqphase] += `
                                                             <div class = "SO-Unlock">
                                                                 ${ChangeDescriptionColor2(SO_condUnlocking)}
@@ -2890,7 +2899,7 @@
                 }else if (skill){
                     tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
-                    </br>${objective} <@ba.kw>${mission.paramList[4]}</> enemies using <@ba.kw> loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/skills/skill_icon_${skill}.png" style="max-width:20px;margin:2px"> ${skillname} (Skill ${skillid})</>
+                    </br>${objective} <@ba.kw>${mission.paramList[4]}</> enemies using <@ba.kw> <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/skills/skill_icon_${skill}.png" style="max-width:20px;margin:2px"> ${skillname} (Skill ${skillid})</>
                     </br>Using Non-Borrowed <@ba.kw>${chara.appellation}</>
                     `
                 }else if(chara2){
@@ -3259,7 +3268,7 @@
             + (a[2]-b[2])*1
             return calc
         })
-        talentLimit = talentObject.req2
+        toktalentLimit = talentObject.req2
         talentObject.req2.forEach(reqs => {
             var imagereq = []
             var currlevel = reqs[1]
@@ -3364,9 +3373,9 @@
                 </div>
             `)
 
-        let limElite    = Math.max(...talentLimit.map(a=>a[0]))
-        let limLevel    = Math.max(...talentLimit.map(a=>a[1]))
-        let limPotential= (RarityConvert(Tokendata.rarity.toString()))>2?0:Math.max(...talentLimit.map(a=>a[2]))
+        let limElite    = Math.max(...toktalentLimit.map(a=>a[0]))
+        let limLevel    = Math.max(...toktalentLimit.map(a=>a[1]))
+        let limPotential= (RarityConvert(Tokendata.rarity.toString()))>2?0:Math.max(...toktalentLimit.map(a=>a[2]))
         TokenTalentShow(limElite, limLevel, limPotential)
         $(`#Toktabtalent${limElite}-${limLevel}`).toggleClass("active")
         $(`#Toktabtalent2${limPotential}`).toggleClass("active")
@@ -3381,7 +3390,7 @@
             potential = toktalentValue[2]
         }
 
-        var currlimit = talentLimit.find(limit =>{
+        var currlimit = toktalentLimit.find(limit =>{
             if(`${limit[0]}-${limit[1]}-${limit[2]}`==`${elite}-${level}-${potential}`){
                 return true
             }
@@ -3394,7 +3403,7 @@
         }else{
             var maxpot = 0
             if(waspot == -1){
-                talentLimit.forEach(limit => {
+                toktalentLimit.forEach(limit => {
                     if(limit[0]==elite&&limit[1]==level){
                         maxpot = Math.max(maxpot,limit[2])
                     }
@@ -3676,50 +3685,43 @@
         return null
     }
 
-    function GetLogoInfo (opdataFull){
-        var faction
-        if(opdataFull.teamId)
-            faction= opdataFull.teamId
-        else if(opdataFull.groupId)
-            faction= opdataFull.groupId
-        else if(opdataFull.nationId)
-            faction= opdataFull.nationId
-
-        // console.log(faction)
-
-        var factionname = db.handbookTeam[faction]
-        // console.log(factionname)
+    function GetLogoInfo (data){
+        var faction_id
+        if (typeof data == "object"){
+            faction_id = data.teamId?data.teamId:data.groupId?data.groupId:data.nationId
+        }else{
+            faction_id = data
+        }
+        var factionname = Object.keys(db.handbookTeamEN).includes(faction_id)?db.handbookTeamEN[faction_id].powerName:db.handbookTeam[faction_id].powerCode
         if (factionname) return factionname
-
         return null
     }
 
-    function update_illustrator(skinid = ""){
-        function IllustratorLister(List){
-            var HTML = ""
-            for(var i = 0 ; i < List.length; i++){
-                ArtistName = List[i].trim()
-                if(Object.keys(db.artistTL.Illustrator).includes(ArtistName))
-                    ArtistName = db.artistTL.Illustrator[ArtistName]
-                if(i > 0)
-                    HTML += " & "
+    function IllustratorLister(List){
+        var HTML = ""
+        for(var i = 0 ; i < List.length; i++){
+            ArtistName = List[i].trim()
+            if(Object.keys(db.artistTL.Illustrator).includes(ArtistName))
+                ArtistName = db.artistTL.Illustrator[ArtistName]
+            if(i > 0)
+                HTML += " & "
 
-                HTML += `<a href="https://www.google.com/search?q=illustrator+${ArtistName}"  target="_blank">${ArtistName}</a>`
-            }
-            return HTML
+            HTML += `<a href="https://www.google.com/search?q=illustrator+${ArtistName}"  target="_blank">${ArtistName}</a>`
         }
-        
+        return HTML
+    }
+
+    function update_illustrator(skinid = ""){
         let illustratorHTML = ""
         let IllustratorList = [[],[]]
         if(AmiyaPatchID.includes(skinid.split("#")[0]))
             skin = opdataFull.id + "#2"
         else
             skin = skinid?skinid:(currskin + "#1")
-
         if(db.skintable.charSkins[skin])
             if(db.skintable.charSkins[skin].displaySkin.drawerList){
-                IllustratorList[0] = db.skintable.charSkins[skin].displaySkin.drawerList[0].split("、")
-                IllustratorList[1] = db.skintable.charSkins[skin].displaySkin.designerList?db.skintable.charSkins[skin].displaySkin.designerList[0].split("、"):""
+                IllustratorList[0] = db.skintable.charSkins[skin].displaySkin.drawerList.join("、").split("、")
+                IllustratorList[1] = db.skintable.charSkins[skin].displaySkin.designerList?db.skintable.charSkins[skin].displaySkin.designerList.join("、").split("、"):""
             }
         else if (db.handbookInfo.npcDict[opdataFull.id])
             IllustratorList[0] = db.handbookInfo.npcDict[opdataFull.id].illustList
@@ -3768,7 +3770,12 @@
                                     "char_4141_marcil",
                                     "char_4142_laios",
                                     "char_4144_chilc",
-                                    "char_4143_sensi"
+                                    "char_4143_sensi",
+                                    "char_4182_oblvns",
+                                    "char_4184_dolris",
+                                    "char_4183_mortis",
+                                    "char_4186_tmoris",
+                                    "char_4185_amoris"
                                 ]
         
         switch(voiceLangType) {
@@ -3790,13 +3797,56 @@
         }
     }
 
+    function VALister(List){
+        var HTML = ""
+        if (typeof List == "string") List = List.split(" & ")
+        for(var i = 0 ; i < List.length; i++){
+            ArtistName = List[i].trim()
+            if(Object.keys(db.artistTL.VA).includes(ArtistName))
+                ArtistName = db.artistTL.VA[ArtistName]
+            if(i > 0)
+                HTML += " & "
+
+            HTML += `<a href="https://www.google.com/search?q=Voice+Actor+${ArtistName}"  target="_blank">${ArtistName}</a>`
+        }
+        return HTML
+    }
+
+    function update_voiceactor(){
+        var voiceDict = db.charword.voiceLangDict[currVoiceID]
+        var VAhtml = ""
+
+        VAlanglist.forEach(valang => {
+            if (!Object.keys(voiceDict).includes(valang))
+                return
+            var lang = VA_lang(valang).split("_")[0]
+            VAhtml += `
+                        <div class="voiceactor-${valang}">
+                            <div id="lang-voiceactor-${valang}" class="btn-infoleft ak-shadow">
+                                <i class="fas fa-microphone-alt" title="Voice Actor">
+                                </i>
+                                <b ${lang.length > 2?`style="font-size:11px"`:""}>
+                                    ${lang == "None"?"":lang}
+                                </b>
+                            </div>
+                            <div id="name-voiceactor-${valang}" class="btn-inforight">
+                                ${valang == "None"?voiceDict[valang]:voiceDict[valang] == "-"?voiceDict[valang]:VALister(voiceDict[valang])}
+                            </div>
+                        </div>
+                    `
+        })
+
+        $('#info-voiceactor').html(VAhtml)
+    }
+
     function GetAudio(){
         var curraudiolist = []
         var voiceDict = db.charword.voiceLangDict[currVoiceID]
+        var birthdayDict = db.charword.Birthday
         var checkold = db.voiceold[currVoiceID]
         var preDir = "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-voices/main/"
         var old_va = ""
-
+        
         Object.keys(db.charword.charWords).forEach(audio_key => {
             if (db.charword.charWords[audio_key].wordKey == currVoiceID){
                 curraudiolist.push(db.charword.charWords[audio_key])
@@ -3817,7 +3867,7 @@
                 var lang = VA_lang(valang)
                 var wordKey = encodeURIComponent(audio_dict.wordKey)
                 
-                if (audio_dict.voiceId == "CN_043" && ["EN", "KR"].includes(valang)) // temp for EN KR Birthday
+                if (audio_dict.voiceId == "CN_043" && ["EN", "KR"].includes(valang) && !birthdayDict[valang].includes(currVoiceID)) // temp for EN KR Birthday
                     return
 
                 switch (valang) {
@@ -3834,7 +3884,7 @@
                         foldername = "voice_kr"
                         break;
                     case "LINKAGE":
-                        foldername = db.charword.LINKAGE[currVoiceID]
+                        foldername = db.charword.LINKAGE[currVoiceID].toLowerCase()
                         break;
                     default:
                         foldername = "voice_custom"
@@ -3844,7 +3894,7 @@
                 audiolist.push(`
                     <div class="${valang}-VA" style="display:inline-block;padding-top:15px;vertical-align:top;width:30px;text-align:left;">${lang}</div>
                     <div style="display:inline-block">
-                    <audio preload="metadata" controls style="margin-top:10px"> <source src="${preDir}${foldername}/${wordKey.toLowerCase()}${valang == "CN_TOPOLECT"?"_cn_topolect":""}/${audio_dict.voiceId}.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio>
+                    <audio preload="metadata" controls style="margin-top:10px"> <source src="${preDir}${foldername}/${wordKey.toLowerCase()}${valang == "CN_TOPOLECT"?"_cn_topolect":(valang == "ITA"?"_ita":"")}/${audio_dict.voiceId}.mp3" type="audio/mp3">Your browser does not support the audio tag.</audio>
                     <a href="${preDir}${foldername}/${wordKey.toLowerCase()}/${audio_dict.voiceId}.mp3"  target="_blank">
                     <i class='fa fa-download' style='font-size:20px;vertical-align:top;padding-top:17px'></i></a>
                     </div>`)
@@ -3879,34 +3929,36 @@
 
         VAlanglist.forEach(valang => {
             if (!Object.keys(voiceDict).includes(valang))
-                    return
-                var lang = VA_lang(valang).split("_")[0]
-                $("." + valang+ "-VA").attr("title", "VA : " + voiceDict[valang])
-                $('#opaudio-va').append(`
-                                            <div style="text-align:center">
-                                                <div class="btn-infoleft" style="width:100px">
-                                                    <i class="fas fa-microphone-alt" title="Voice Actor">${lang}</i>
-                                                </div>
-                                                <div class="btn-inforight" style="width:70%">
-                                                    <a href="https://www.google.com/search?q=Voice+Actor+${voiceDict[valang]}"  target="_blank">${voiceDict[valang]}</a>
-                                                </div>
+                return
+            var lang = VA_lang(valang).split("_")[0]
+            $("." + valang+ "-VA").attr("title", "VA : " + voiceDict[valang])
+            $('#opaudio-va').append(`
+                                        <div style="text-align:center">
+                                            <div class="btn-infoleft" style="width:100px">
+                                                <i class="fas fa-microphone-alt" title="Voice Actor">${lang}</i>
                                             </div>
-                                        `)
-                if (checkold && checkold[valang]){
-                    $("." + valang + "-VA0").attr("title", "VA : " + checkold[valang])
-                    old_va += (`
-                                            <div style="text-align:center">
-                                                <div class="btn-infoleft" style="width:100px">
-                                                    <i class="fas fa-microphone-alt" title="Voice Actor">${lang}0</i>
-                                                </div>
-                                                <div class="btn-inforight" style="width:70%">
-                                                    <a href="https://www.google.com/search?q=Voice+Actor+${checkold[valang]}"  target="_blank">${checkold[valang]}</a>
-                                                </div>
+                                            <div class="btn-inforight" style="width:70%">
+                                                ${VALister(voiceDict[valang])}
                                             </div>
-                                        `)
-                }
+                                        </div>
+                                    `)
+            if (checkold && checkold[valang]){
+                $("." + valang + "-VA0").attr("title", "VA : " + checkold[valang])
+                old_va += (`
+                                        <div style="text-align:center">
+                                            <div class="btn-infoleft" style="width:100px">
+                                                <i class="fas fa-microphone-alt" title="Voice Actor">${lang}0</i>
+                                            </div>
+                                            <div class="btn-inforight" style="width:70%">
+                                                ${VALister(checkold[valang])}
+                                            </div>
+                                        </div>
+                                    `)
+            }
         })
+
         $('#opaudio-va').append(old_va)
+        
     }
 
     function GetStory (opdataFull){
@@ -3933,39 +3985,7 @@
         }
 
         update_illustrator()
-
-        var voiceDict = db.charword.voiceLangDict[opdataFull.id]
-        var voiceDictEN
-        var existvoiceDict = voiceDictEN?{...voiceDict,...voiceDictEN}:voiceDict
-        console.log(voiceDict)
-        console.log(voiceDictEN)
-
-        var VAlang
-        
-        VAhtml = ""
-        VAlanglist.forEach(valang =>{
-            if(existvoiceDict[valang]){
-                VAlang = VA_lang(valang)
-                VAName = existvoiceDict[valang].trim()
-                if(Object.keys(db.artistTL.VA).includes(VAName)) VAName = db.artistTL.VA[VAName]
-
-                VAhtml += `
-                            <div class="voiceactor-${VAlang}">
-                                <div id="lang-voiceactor-${VAlang}" class="btn-infoleft ak-shadow">
-                                    <i class="fas fa-microphone-alt" title="Voice Actor">
-                                    </i>
-                                    <b ${VAlang.length > 2?`style="font-size:11px"`:""}>
-                                        ${VAlang == "None"?"":VAlang}
-                                    </b>
-                                </div>
-                                <div id="name-voiceactor-${VAlang}" class="btn-inforight">
-                                    ${VAlang == "None"?VAName:VAName == "-"?VAName:`<a href="https://www.google.com/search?q=Voice+Actor+${VAName}"  target="_blank">${VAName}</a>`}
-                                </div>
-                            </div>
-                        `
-            }
-        })
-        $('#info-voiceactor').html(VAhtml)
+        update_voiceactor()
 
         let puretext = []
         let textTL = []
@@ -5312,109 +5332,6 @@
         }
         return false
     }
-    function getSpeciality(description,opdataFull){
-
-        //gonna need to split on "," and "\n" and repeat it
-        let descriptions = description.split(/[，(\\n)]/)
-        let splitdesc = []
-        // console.log("=====================")
-        // console.log(descriptions)
-        descriptions.forEach(element => {
-            if(element){
-                // let muhRegex = /<@ba\.kw>(.*?)<\/>/g
-                // let currSpeciality = muhRegex.exec(element)
-                // console.log(element)
-                let currSpeciality = element.replace(/\<(.*?)\>/gi,"")
-                // console.log(currSpeciality)
-                let filterDesc
-                if(currSpeciality){
-                    splitdesc.push([currSpeciality])
-                }else{
-                    splitdesc.push([element])
-                }
-            }
-        });
-        // console.log(splitdesc)
-        // console.log("===========================")
-
-        return SpecialityHtml(splitdesc,opdataFull)
-    }
-
-    function SpecialityHtml(splitdesc,opdataFull){
-        let splitdescTL = []
-        let color = ""
-        let trait = opdataFull.trait
-        console.log(splitdesc)
-        console.log(trait)
-        let isReplaced = false
-        splitdesc.forEach(element => {
-            if(element.length>0){
-                let typetl = db.attacktype.parts.find(search=>search.type_cn==element.join(""))
-                // if(!typetl) typetl = db.attacktype.find(search=>search.type_cn==element[1])
-                if(typetl&&!color) color = typetl.type_color?typetl.type_color:undefined
-
-                // console.log(element)
-                // console.log(trait)
-                let muhRegex = /(.*){(.*?)}(.*)/g
-                let currTLconv = muhRegex.exec(typetl?typetl.type_en:element.join(""))
-                // console.log(currTLconv)
-                if(currTLconv){
-                    // console.log(currTLconv)
-                    var textreplace = 'Value'
-                    if(trait && trait.candidates.length>1){
-                        textreplace =  `<div style="color:#999;background:#222;display:inline-block;padding:1px;padding-left:3px;padding-right:3px;border-radius:2px">(value)</div>`
-                    }else if (trait && trait.candidates.length==1) {
-                        textreplace = trait.candidates[0].blackboard[0].value
-                        if(currTLconv[2].includes("%")){
-                            textreplace= textreplace*100 +("%")
-                        }
-                        isReplaced = true
-                    }
-                    // console.log(textreplace)
-                }
-                let currTLconvfinal = currTLconv?currTLconv[1] + textreplace + currTLconv[3]:typetl?typetl.type_en:element.join("")
-                // console.log(currTLconvfinal)
-                splitdescTL.push(currTLconvfinal)
-            }else{
-                var typetl = db.attacktype.parts.find(search=>{
-                    if(search.type_detail=="common")
-                    return search.type_cn==element[0]
-                })
-                if(!typetl){
-                    typetl = db.attacktype.parts.find(search=>search.type_cn==element.join(""))
-                }
-                // console.log(element.join(""))
-
-                // console.log(typetl)
-
-                if(typetl&&!color) color = typetl.type_color?typetl.type_color:undefined
-                splitdescTL.push(typetl?typetl.type_en:element[0])
-            }
-        });
-        if(trait&&!(isReplaced)){
-            trait.candidates.forEach(element => {
-                var imagereq = []
-                    if(element.unlockCondition.level >0)
-                    imagereq.push(`Lv.${element.unlockCondition.level}`)
-                    if(element.unlockCondition.phase >0)
-                    imagereq.push(`<img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/elite/${element.unlockCondition.phase}.png" style="width:20px;margin-top:-5px" title="Elite ${element.unlockCondition.phase}">`)
-
-                // console.log(s)
-                var each = []
-                element.blackboard.forEach(eachbb => {
-                    each.push(`${eachbb.key} : ${eachbb.value}`)
-                });
-                var info = `<div style="color:#999;background:#222;display:inline-block;padding:1px;padding-left:3px;padding-right:3px;border-radius:2px;margin-right:3px;margin-bottom:2px;margin-top:2px">${each.join("</br>")}</div>
-                <div style="color:#999;background:#222;display:inline-block;padding:1px;padding-left:3px;padding-right:3px;border-radius:2px">${imagereq.join("")}</div>`
-                splitdescTL.push(info)
-            });
-        }
-        // console.log(splitdescTL)
-        // console.log(color)
-
-        return titledMaker(splitdescTL.join("</br>"),"Traits",`ak-trait ak-trait-${color}`,"","white-space:initial;")
-        // splitdescTL
-    }
 
     function titledMaker (content,title,extraClass="",extraId="",extraStyle=""){
         let titledbutton = `
@@ -5753,6 +5670,11 @@
             console.log("DESC NULL")
             return desc
         }
+        // catch </> missing case (Vigna Talent EN)
+        if ((desc.match(/<@ba\.talpu>/g) ?? 0).length == 1 && (desc.match(/<\/>/g) ?? 0).length === undefined){
+            desc = desc.replace(/(<@ba\.talpu>\(.+?\))/g, "$1</>")
+        }
+
         // catch </> missing case (Executor the Ex Foedere S1 EN)
         if ((desc.match(/<[@][^>]+>/g) ?? 0).length - (desc.match(/<\/>/g) ?? 0).length == 1) desc += "</>"
 
@@ -5812,7 +5734,7 @@
             }
             console.log(content,skill)
             //Duration not in blackboard (Heavyrain S1)
-            if (content = "duration") return `<div class="stat-important">${skill.duration}</div>`
+            if (content = "duration" && skill) return `<div class="stat-important">${skill.duration}</div>`
             return m
         })
 
@@ -6308,8 +6230,16 @@
                                     CreateAnimation(spinewidgettoken,["Start", "Loop"])
                                     $("#spine-text2").text("Loop")
                                 }else if(tokenanimations.find(search => search.name == "Start")){
-                                    CreateAnimation(spinewidgettoken,["Start", "Idle"])
-                                    $("#spine-text2").text("Idle")
+                                    if(tokenanimations.find(search => search.name == "Idle_1")){
+                                        CreateAnimation(spinewidgettoken,["Start", "Idle_1"])
+                                        $("#spine-text2").text("Idle_1")
+                                    }else{
+                                        CreateAnimation(spinewidgettoken,["Start", "Idle"])
+                                        $("#spine-text2").text("Idle")
+                                    }
+                                }else if(tokenanimations.find(search => search.name == "Idle_1")){
+                                    CreateAnimation(spinewidgettoken,"Idle_1")
+                                    $("#spine-text2").text("Idle_1")
                                 }else if(tokenanimations.find(search => search.name == "Idle")){
                                     CreateAnimation(spinewidgettoken,"Idle")
                                     $("#spine-text2").text("Idle")
@@ -6435,8 +6365,11 @@
             $("#tabs-opCG div").removeClass(("skinswitch"))
         }
 
-        if(db.skintable.charSkins[id] && db.skintable.charSkins[id].voiceId)
+        if(id && db.skintable.charSkins[id] && db.skintable.charSkins[id].voiceId)
             currVoiceID = db.skintable.charSkins[id].voiceId
+        // Mudrock && Luo Xiaohei
+        else if(name == "2" && ["char_311_mudrok", "char_4067_lolxh"].includes(opdataFull.id))
+            currVoiceID = db.skintable.charSkins[opdataFull.id + "#2"].voiceId
         else
             currVoiceID = opdataFull.id
 
@@ -6466,6 +6399,7 @@
 
         // TODO update_illustrator when change chibi perspective
         if (!change) update_illustrator(id?id:(opdataFull.id + "#" + (name != "0"?name:"1"))) // change skin by ID or change Elite (E0 = E1 except amiyi)
+        update_voiceactor()
     }
 
     function ShowDynamic(name, isSkin = false, dynid = ""){
@@ -6501,6 +6435,7 @@
         Amiyacurrclass = amiyaclass
         selectOperator(curropid)
         update_illustrator(opdataFull.id + "#2")
+        update_voiceactor()
     }
     function ChangeSTypeHTML(num, classchange){
         changepic = {
@@ -6554,8 +6489,6 @@
         $(el).css('transform','matrix('+changex1.join(",")+')')
         console.log(changex)
         $(el).toggleClass("MirrorDiv")
-
-
     }
 
 
@@ -6571,13 +6504,24 @@
             // console.log("ayyyyyy")
             var delay = 0
             var animNum = 0
-            if(animationqueue != undefined) clearInterval(animationqueue)
+            var animation_list = chibiwidget.skeleton.data.animations.map(v => v.name)
+            var animation_filter
             var curranimplay = Array.isArray(animArray[0])?animArray[0][0]:animArray[0]
+            if(animationqueue != undefined) clearInterval(animationqueue)
+            if (!animation_list.includes(curranimplay)){
+                animation_filter = animation_list.filter(v => v.startsWith(curranimplay))
+                if (!animation_filter.length) {
+                    console.log(`Animation <${curranimplay}> is not available`)
+                    return
+                }else{
+                    curranimplay = animation_filter[Math.floor(Math.random() * animation_filter.length)]
+                }
+            }
             if(chibiwidget.loaded) chibiwidget.setAnimation(curranimplay)
             chibiwidget.state.clearTracks()
             var curranimations = chibiwidget.skeleton.data.animations
             animArray.forEach(element => {
-                var curranim = element
+                var curranim = animNum==0?curranimplay:element
                 var animTimes = 1
                 var isloop = animNum==animArray.length-1
 

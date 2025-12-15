@@ -4,7 +4,9 @@ import re
 import subprocess
 import os
 import inspect
-from typing import Any
+from typing import Any, Callable, Literal
+
+import requests
 
 R = '\033[31m'
 G = '\033[32m'
@@ -123,7 +125,8 @@ def load_json() -> dict :
                 "json_enemy_databaseEN" : json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/levels/enemydata/enemy_database.json"),
                 
                 "json_named_effect" : json_load("json/named_effects.json"),
-                "json_dict" : json_load("py/dict.json")
+                "json_dict" : json_load("py/dict.json"),
+                "json_activity_json" : json_load("json/activity.json"),
         }
 
 DB = load_json()
@@ -131,26 +134,53 @@ DB = load_json()
 ################################################################################################################################################################################################################################################
 # Util
 ################################################################################################################################################################################################################################################
-def script_result(text : str | list | dict, show : bool = False):
+def script_result(text : str | list | set | dict ,
+                    show : bool = False,
+                    indent : int | None = 4,
+                    key_sort : bool = False,
+                    sort_keys : Callable = lambda x : x,
+                    forced_txt : bool = False,
+                    txt_nokey : bool = False,
+                    no_tab : bool = False,
+                    ) -> None:
     '''
         Output result
-            STR, LIST   >   TXT
-            DICT        >   JSON
+            STR, LIST, SET  >   TXT
+            DICT            >   JSON
     '''
-    if isinstance(text,str):
+    def dict_to_txt(text : dict, tab : int = 0) -> str:
+        to_txt = []
+        keys = sorted(text.keys(), key = sort_keys) if key_sort else text.keys()
+        for key in keys:
+            if isinstance(text[key], dict):
+                to_txt.append(f'{"" if tab else "\n"}{"\t" * tab}{key}')
+                to_txt += dict_to_txt(text[key], 0 if no_tab else tab + 1)
+            else:
+                value_text = (f'\n{text[key]}').replace("\n", f'\n{"\t" * (tab + (len(key) + 3) // 4 + 1)}') if text[key] and "\n" in text[key] else text[key]
+                to_txt += [f'{"\t" * tab}{value_text}'] if txt_nokey else [f'{"\t" * tab}{key} : {value_text}']
+        return to_txt
+    
+    if isinstance(text, str):
         with open("py/script.txt", "w", encoding = "utf-8") as filepath:
             filepath.write(text)
-    elif isinstance(text,list):
+    elif isinstance(text, list) or isinstance(text, set):
         with open("py/script.txt", "w", encoding = "utf-8") as filepath:
             filepath.write("\n".join(text))
-    elif isinstance(text,dict):
+    elif isinstance(text, dict) and indent:
+        if forced_txt:
+            with open("py/script.txt", "w", encoding = "utf-8") as filepath:
+                filepath.write("\n".join(dict_to_txt(text)))
+        else :
+            with open("py/script.json", "w", encoding = "utf-8") as filepath:
+                json.dump(text, filepath, indent = indent, ensure_ascii = False, sort_keys = key_sort)
+    else:
         with open("py/script.json", "w", encoding = "utf-8") as filepath:
-            json.dump(text, filepath, indent = 4, ensure_ascii = False) # ensure_ascii = False
+            json.dump(text, filepath, separators = (",", ":"), ensure_ascii = False, sort_keys = key_sort)
     
-    file = f'py/script.{f"txt" if isinstance(text,str) or isinstance(text,list) else f"json"}'
+    file = f'py/script.{"json" if isinstance(text, dict) and not forced_txt else "txt"}'
     print(f'\n{Y}Script Completed{RE} -> {R}{file}{RE}')
     if show:
-        subprocess.run(f'code --reuse-window -g "{os.path.abspath(file)}"', shell=True)
+        subprocess.run(f'code --reuse-window -g "{os.path.abspath(file)}"', shell = True)
 
 def list_to_array(LIST : list) -> list :
     return [elem for elem in LIST if elem not in [f'\n{"-"*80}\n', ""]]
@@ -331,12 +361,23 @@ def va_artist(show : bool = False):
     if va : script_result(("\n").join(va))
 
 def subpower_list(show : bool = False):
-    temp = []
+    temp = {}
     for char in DB["json_character"]:
         if DB["json_character"][char]["subPower"]:
-            temp.append(DB["json_character"][char]["appellation"])
+            op_name = DB["json_characterEN"][char]["name"] if char in DB["json_characterEN"] else DB["json_character"][char]["appellation"]
+            sub_power = {}
+            for power_i in range(len(DB["json_character"][char]["subPower"])):
+                for level in ["nationId", "groupId", "teamId"]:
+                    if not DB["json_character"][char]["subPower"][power_i][level]:
+                        continue
+                    elif DB["json_character"][char]["subPower"][power_i][level] != DB["json_character"][char]["mainPower"][level]:
+                        sub_power[f'{level}{power_i + 1}'] = DB["json_character"][char]["subPower"][power_i][level]
+                    else:
+                        printr(f'{char:<20}{op_name:<30}Dupe Power: {DB["json_character"][char]["subPower"][power_i][level]}')
+            temp[op_name] = sub_power
 
-    print (temp)
+    #print(temp)
+    script_result(temp, show, forced_txt=True)
 
 def stage_kill_test(show : bool = False):
     IGNORED = {"enemy_10082_mpweak","enemy_10072_mpprhd"}
@@ -618,6 +659,8 @@ def char_name(show : bool = False):
 #'json_roguelike_topic', 'json_sandbox_perm', 'json_sandbox', 'json_shop_client', 'json_skill', 'json_skin', 'json_stage', 'json_story_review_meta',
 #'json_story_review', 'json_story', 'json_tech_buff', 'json_tip', 'json_token', 'json_uniequip', 'json_zone', 'json_enemy_database'
 
+#'json_named_effect', 'json_dict'
+
 # EN
 
 ################################################################################################################################################################################################################################################
@@ -628,4 +671,349 @@ def token_id():
     for token in DB["json_character"].keys():
         if token.startswith("token_"):
             printr(f'{token} | {Y}{token.split("_")[2]}{RE} | {G}{DB["json_character"][token]["appellation"]}{RE} | {B}{DB["json_character"][token]["name"]}')
-token_id()
+#token_id()
+
+def story_review_color():
+    for event_id in DB["json_story_review_meta"]["miniActTrialData"]["miniActTrialDataMap"].keys():
+        printr(f'{event_id:<10} : {DB["json_activity_json"]["Dict"][event_id]["nameEN"]:<30} #{DB["json_story_review_meta"]["miniActTrialData"]["miniActTrialDataMap"][event_id]["themeColor"]}')
+#story_review_color()
+
+def all_char_name():
+    def get_name(char_data : dict) -> list:
+        names = []
+        for key in ["name", "appellation"]:
+            value = char_data[key]
+            if value and value != " ": names.append(value)
+        return names
+    
+    DB["json_characterJP"] = json_load("json/gamedata/ArknightsGameData_YoStar/ja_JP/gamedata/excel/character_table.json")
+    DB["json_characterKR"] = json_load("json/gamedata/ArknightsGameData_YoStar/ko_KR/gamedata/excel/character_table.json")
+    printr(DB["json_characterKR"].keys())
+    char_names = {}
+    for char_id in DB["json_character"].keys():
+        if not char_id.startswith("char_") : continue
+        char_name = get_name(DB["json_character"][char_id])
+        for other_lang in [DB["json_characterEN"], DB["json_characterJP"], DB["json_characterKR"]]:
+            if char_id in other_lang.keys():
+                char_name += get_name(other_lang[char_id])
+        char_names[char_id] = list(set(char_name))
+    script_result(char_names, True, forced_txt = True)
+
+#all_char_name()
+
+def asciiing():
+    ascii_list = [
+        [112, 97, 108, 97, 99, 101, 115, 0, 127, 255],
+        [79, 114, 105, 103, 105, 110, 105, 117, 109, 32, 109, 117, 116, 101, 666, 404],
+        [99, 111, 110, 115, 116, 101, 108, 108, 97, 116, 105, 111, 110, "0xGA"],
+        [111, 99, 101, 97, 110, 115, 32, 114, 97, 118, 101, "0xZZ"],
+        [115, 112, 101, 99, 116, 101, 114, 115, 32, 99, 108, 97, 105, 109, 0, 255],
+    ]
+    ascii_result = []
+    #printr("".join([chr(c) if isinstance(c, int) and 65 <= c <= 122 else f'[{c}]'for c in ascii_list ]))
+    #printr("".join([chr(c) if isinstance(c, int) else f'[{c}]'for c in ascii_list ]))
+    for ascii in ascii_list:
+        ascii_result.append("".join([chr(c) if isinstance(c, int) and (65 <= c <= 122 or c == 32) else f'[{c}]'for c in ascii]))
+    script_result(ascii_result, True)
+#asciiing()
+
+#printr(ord("z"), ord("A"))
+
+#print(bytes.fromhex("0x5053"))
+
+#0x4F6D
+#0x3252
+#0x5343
+#0x4344
+#0x5053
+
+def enemy_wave_csv():
+    all_stage_dict = {}
+    all_stage = glob.glob(r'json\gamedata\ArknightsGameData_YoStar\en_US\gamedata\levels\activities\act1multi\*')
+    for stage in all_stage:
+        stage_id = stage.split("\\")[-1].split(".json")[0]
+        stage_json = json_load(stage)
+        all_stage_dict[stage_id] = {
+                                        "options"       : stage_json["options"],
+                                        "runes"         : stage_json["runes"],
+                                        "globalBuffs"   : stage_json["globalBuffs"],
+                                    }
+        stage_waves = []
+        for wave in stage_json["waves"]:
+            curr_wave = {"advancedWaveTag" : wave["advancedWaveTag"]}
+            curr_fragment = []
+            for fragment in wave["fragments"]:
+                curr_action = []
+                spawn_key = ""
+                for action in fragment["actions"]:
+                    if action["randomSpawnGroupKey"] and action["randomSpawnGroupPackKey"]:
+                        spawn_key = action["randomSpawnGroupKey"]
+                    elif not action["randomSpawnGroupKey"] and not action["randomSpawnGroupPackKey"]:
+                        spawn_key = ""
+                    action_detail = {
+                                    "actionType"                : action["actionType"],
+                                    "key"                       : action["key"],
+                                    "count"                     : action["count"],
+                                    "preDelay"                  : action["preDelay"],
+                                    "interval"                  : action["interval"],
+                                    "hiddenGroup"               : action["hiddenGroup"],
+                                    "randomSpawnGroupKey"       : spawn_key if spawn_key else action["randomSpawnGroupKey"],
+                                    "randomSpawnGroupPackKey"   : action["randomSpawnGroupPackKey"],
+                                    "weight"                    : action["weight"],
+                                }
+                    curr_action.append(action_detail)
+                curr_fragment.append(curr_action)
+            curr_wave["fragments"] = curr_fragment
+            stage_waves.append(curr_wave)
+        all_stage_dict[stage_id]["waves"] = stage_waves
+    
+    script_result(all_stage_dict)
+    
+    # txt
+    script_txt = []
+    for stage in all_stage_dict:
+        script_txt.append(f'\n{stage}')
+        script_txt.append(f'{"wave":>5}{"frag":>5}{"action":>10}{"group":^8}{"GroupKey":<10}{"GroupPack":<10}{"key":^20}{"count":<6}{"preDelay":>10}{"interval":>10}{"weight":<6}')
+        for i in range(len(all_stage_dict[stage]["waves"])):
+            for j in range(len(all_stage_dict[stage]["waves"][i]["fragments"])):
+                for action in all_stage_dict[stage]["waves"][i]["fragments"][j]:
+                    hiddenGroup             = action["hiddenGroup"] or ""
+                    randomSpawnGroupKey     = action["randomSpawnGroupKey"] or ""
+                    randomSpawnGroupPackKey = action["randomSpawnGroupPackKey"] or ""
+                    script_txt.append(f'{i:^5}{j:^5}{action["actionType"].split("_")[0]:<10}{hiddenGroup:<8}{randomSpawnGroupKey:^10}{randomSpawnGroupPackKey:^10}{action["key"]:<20}{action["count"]:>6}{action["preDelay"]:^10}{action["interval"]:^10}{action["weight"]:>6}')
+    #script_result(script_txt, True)
+    
+    #csv
+    script_txt = []
+    script_txt.append("stage|wave|frag|action|group|GroupKey|GroupPack|key|name|ID|Class|count|preDelay|interval|weight")
+    for stage in all_stage_dict:
+        for i in range(len(all_stage_dict[stage]["waves"])):
+            for j in range(len(all_stage_dict[stage]["waves"][i]["fragments"])):
+                for action in all_stage_dict[stage]["waves"][i]["fragments"][j]:
+                    hiddenGroup             = action["hiddenGroup"] or "-"
+                    randomSpawnGroupKey     = action["randomSpawnGroupKey"] or "-"
+                    randomSpawnGroupPackKey = action["randomSpawnGroupPackKey"] or "-"
+                    try :
+                        key_name    = DB["json_enemy_handbookEN"]["enemyData"][action["key"]]["name"] if action["key"].startswith("enemy") else DB["json_characterEN"][action["key"].split("#")[0]]["name"]
+                        key_id      = DB["json_enemy_handbookEN"]["enemyData"][action["key"]]["enemyIndex"] if action["key"].startswith("enemy") else "-"
+                        key_class   = DB["json_enemy_handbookEN"]["enemyData"][action["key"]]["enemyLevel"] if action["key"].startswith("enemy") else "-"
+                    except KeyError:
+                        key_name    = action["key"]
+                        key_id      = "-"
+                        key_class   = "-"
+                    script_txt.append(f'{stage}|{i}|{j}|{action["actionType"].split("_")[0]}|{hiddenGroup}|{randomSpawnGroupKey}|{randomSpawnGroupPackKey}|{action["key"]}|{key_name}|{key_id}|{key_class}|{action["count"]}|{action["preDelay"]}|{action["interval"]}|{action["weight"]}')
+    script_result(script_txt, True)
+    
+#enemy_wave_csv()
+
+def dumpling():
+    dump_dump = []
+    dump_dict = {}
+    '''
+    #EXP & Skill
+    for i in range(9):
+        dump_txt = ""
+        for j in range(4):
+            if dump_txt:
+                dump_txt += "|"
+            dump_data = DB["json_activity"]["activity"]["HALFIDLE_VERIFY1"]["act1vhalfidle"]["charSkillRankData"][f'TIER_{j + 3}']["skillRankData"]
+            if i < len(dump_data):
+                dump_txt += str(dump_data[i]["cost"])
+            else:
+                dump_txt += "-"
+        dump_dump.append(dump_txt)
+    
+    # Enemy drop pool
+    dump_data = DB["json_activity"]["activity"]["HALFIDLE_VERIFY1"]["act1vhalfidle"]["enemyItemDropPoolDict"]
+    for enemy in dump_data.keys():
+        dump_dump.append(f'{enemy}|{dump_data[enemy]["exp"]}|{dump_data[enemy]["mileStoneCnt"]}|{dump_data[enemy]["battleItemDropPool"]}|{dump_data[enemy]["resourceItemDropPool"]}')
+    '''
+    
+    # Equipment
+    dump_data = DB["json_activity"]["activity"]["HALFIDLE_VERIFY1"]["act1vhalfidle"]["equipItemData"]
+    for equip_type_variant in dump_data.keys():
+        for lv in dump_data[equip_type_variant].keys():
+            for equip_variant in dump_data[equip_type_variant][lv]:
+                bb_runes = []
+                for rune in equip_variant["runeData"]["runes"]:
+                    for bb in rune["blackboard"]:
+                        bb_runes.append(bb)
+                dump_dict[equip_variant["alias"]] = {
+                                                        "name"          : equip_variant["name"],
+                                                        "description"   : equip_variant["runeData"]["description"],
+                                                        "runes"         : bb_runes,
+                }
+    
+    script_result(dump_dict, True, key_sort=True)
+    #script_result(dump_dump, True)
+#dumpling()
+#subpower_list(True)
+
+#printr(f'Снегyрочка : {"-".join([str(ord(char)) for char in "Снегyрочка"])}\n"Снегурочка" : {"-".join([str(ord(char)) for char in "Снегурочка"])}')
+
+def enemyduel(original : bool = False):
+    enemy_database = {}
+    json_enemy_database = json.loads(requests.get("https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/refs/heads/master/en/gamedata/levels/enemydata/enemy_database.json").text)
+    enemyData = DB["json_activity"]["activity"]["ENEMY_DUEL"]["act1enemyduel"]["enemyData"]
+    for enemy in enemyData:
+        enemy_stat = {}
+        origi_stat = {}
+        enemy_id = enemyData[enemy]["enemyId"]
+        origi_id = enemyData[enemy]["originalEnemyId"]
+        for enemy_data in DB["json_enemy_database"]["enemies"]:
+            if enemy_data["Key"] == enemy_id:
+                enemy_stat = enemy_data["Value"][0]
+                continue
+            elif enemy_data["Key"] == origi_id:
+                origi_stat = enemy_data["Value"][0]
+                continue
+            elif enemy_stat and origi_stat:
+                break
+        enemy_database[enemy_id] = {
+                                        "id"            : enemy_id,
+                                        "ori"           : origi_id,
+                                        "name"          : enemy_stat["enemyData"]["name"]["m_value"], #json_enemy_database[enemy_id][0]["enemyData"]["name"]["m_value"], #enemy_stat["enemyData"]["name"]["m_value"],
+                                        "ori_name"      : json_enemy_database[origi_id][0]["enemyData"]["name"]["m_value"], #origi_stat["enemyData"]["name"]["m_value"],
+                                        "replace"       : [],
+                                        "range_radius"  : enemy_stat["enemyData"]["rangeRadius"]["m_value"],
+                                    }
+        
+        if origi_stat["enemyData"]["rangeRadius"]["m_value"] != enemy_stat["enemyData"]["rangeRadius"]["m_value"] :
+            enemy_database[enemy_id]["replace"].append("range_radius")
+        
+        for stat in enemy_stat["enemyData"]["attributes"]:
+            enemy_database[enemy_id][stat] = enemy_stat["enemyData"]["attributes"][stat]["m_value"]
+            if enemy_stat["enemyData"]["attributes"][stat]["m_value"] != origi_stat["enemyData"]["attributes"][stat]["m_value"]:
+                enemy_database[enemy_id]["replace"].append(stat)
+        
+        talent_change = []
+        if enemy_stat["enemyData"]["talentBlackboard"] and enemy_stat["enemyData"]["talentBlackboard"] != origi_stat["enemyData"]["talentBlackboard"]:
+            for talent_blackboard in enemy_stat["enemyData"]["talentBlackboard"]:
+                for ori_talent_blackboard in origi_stat["enemyData"]["talentBlackboard"]:
+                    if talent_blackboard["key"] != ori_talent_blackboard["key"]:
+                        continue
+                    elif (talent_blackboard["valueStr"] and talent_blackboard["valueStr"] == ori_talent_blackboard["valueStr"]) or (not talent_blackboard["valueStr"] and talent_blackboard["value"] == ori_talent_blackboard["value"]):
+                        break
+                    else:
+                        talent_change.append(talent_blackboard)
+        enemy_database[enemy_id]["talentBlackboard"] = talent_change
+        if talent_change: enemy_database[enemy_id]["replace"].append("talentBlackboard")
+        
+        skill_change = []
+        if enemy_stat["enemyData"]["skills"] and enemy_stat["enemyData"]["skills"] != origi_stat["enemyData"]["skills"]:
+            for skill in enemy_stat["enemyData"]["skills"]:
+                for ori_skill in origi_stat["enemyData"]["skills"]:
+                    if skill["prefabKey"] != ori_skill["prefabKey"]:
+                        continue
+                    elif skill == ori_skill:
+                        break
+                    else:
+                        temp_skill = {"prefabKey": skill["prefabKey"]}
+                        temp_skill_blackboard = []
+                        for skill_key in skill:
+                            if skill_key == "blackboard" and skill["blackboard"] != ori_skill["blackboard"]:
+                                for skill_blackboard in skill["blackboard"]:
+                                    for ori_skill_blackboard in ori_skill["blackboard"]:
+                                        if skill_blackboard["key"] != ori_skill_blackboard["key"]:
+                                            continue
+                                        elif (skill_blackboard["valueStr"] and skill_blackboard["valueStr"] == ori_skill_blackboard["valueStr"]) or (not skill_blackboard["valueStr"] and skill_blackboard["value"] == ori_skill_blackboard["value"]):
+                                            break
+                                        else:
+                                            temp_skill_blackboard.append(skill_blackboard)
+                                if temp_skill_blackboard : temp_skill["blackboard"] = temp_skill_blackboard
+                            elif skill[skill_key] != ori_skill[skill_key]:
+                                temp_skill[skill_key] = skill[skill_key]
+                        skill_change.append(temp_skill)
+                        find_skill = True
+        enemy_database[enemy_id]["skills"] = skill_change
+        if skill_change: enemy_database[enemy_id]["replace"].append("skills")
+        
+        if enemy_stat["enemyData"]["spData"] and enemy_stat["enemyData"]["spData"] != origi_stat["enemyData"]["spData"]:
+            enemy_database[enemy_id]["replace"].append("talent")
+            enemy_database[enemy_id]["spData_change"] = enemy_stat["enemyData"]["spData"]
+        else:
+            enemy_database[enemy_id]["spData_change"] = ""
+        
+    
+    replace_enemy_database = {k:{"id" : k, "base" : enemy_database[k]["ori_name"]} for k in enemy_database.keys()}
+    for k in replace_enemy_database.keys():
+        replace_enemy_database[k].update({v:enemy_database[k][v] for v in enemy_database[k]["replace"]})
+    #script_result(list(enemy_database.keys()), True)
+    #script_result({enemy_database[k]["name"]:replace_enemy_database[k] for k in enemy_database.keys()}, True)
+    script_result([f'{enemy_database[k]["id"]}|{enemy_database[k]["name"]}|{enemy_database[k]["ori"]}|{enemy_database[k]["ori_name"]}' for k in enemy_database.keys()], True)
+#enemyduel(True)
+
+def reward_42side():
+    missions_rewards = {}
+    taskData = DB["json_activity"]["activity"]["TYPE_ACT42SIDE"]["act42side"]["taskData"]
+    for mission in taskData:
+        mission_reward = {}
+        for reward in taskData[mission]["rewards"]:
+            mission_reward[reward["id"]] = {
+                                                "id"        : reward["id"],
+                                                "iconId"    : DB["json_itemEN"]["items"][reward["id"]]["iconId"] if reward["id"] in DB["json_itemEN"]["items"] else reward["id"],
+                                                "name"      : DB["json_itemEN"]["items"][reward["id"]]["name"] if reward["id"] in DB["json_itemEN"]["items"] else reward["id"],
+                                                "count"     : reward["count"],
+            }
+        missions_rewards[mission] = mission_reward
+    script_result(missions_rewards, True)
+#reward_42side()
+
+def CN_topolect():
+    def topo_search(charword_json : dict, result : list) -> list:
+        charword = charword_json["charWords"]
+        for voiceline in charword:
+            if charword[voiceline]["charId"] in result:
+                continue
+            elif voiceline.find("CN_TOPOLECT") != -1:
+                result.append(charword[voiceline]["charId"])
+        return result
+    
+    result = topo_search(DB["json_charword"], [])
+    result = topo_search(DB["json_charwordEN"], result)
+    
+    text = [f'{op:<20}{DB["json_characterEN"][op]["name"]}' if op in DB["json_characterEN"] else f'{op:<20}{DB["json_character"][op]["appellation"]}' for op in result]
+    script_result(text, True)
+
+#CN_topolect()
+
+def act4collection():
+    article = []
+    for mission in DB["json_activityEN"]["missionData"]:
+        if mission["missionGroup"] == "act4collection":
+            article.append(f'{", ".join([f'{DB["json_itemEN"]["items"][reward["id"]]["name"]}, {reward["count"]}' for reward in mission["rewards"]])}\t|\t{mission["description"]}')
+    script_result(article, True)
+#act4collection()
+
+def building_room_name():
+    rooms = {}
+    for room_id in DB["json_building"]["rooms"]:
+        rooms[DB["json_building"]["rooms"][room_id]["name"]] = DB["json_buildingEN"]["rooms"][room_id]["name"]
+    script_result(rooms, True)
+#building_room_name()
+
+def team_color(mode : Literal[1, 2] = 1):
+    map_table   = json_load(r"json\gamedata\ArknightsGameData\zh_CN\gamedata\art\handbook_force_map_table.json")
+    result      = []
+    ID_Max      = 0
+    Name_Max    = 0
+    for force in map_table["forceList"]:
+        forceId     = force["forceId"]
+        ID_Max      = max(ID_Max, len(forceId))
+        forceName   = DB["json_handbook_teamEN"][forceId]["powerName"] if forceId in DB["json_handbook_teamEN"] else DB["json_handbook_team"][forceId]["powerCode"]
+        Name_Max      = max(Name_Max, len(forceName))
+        color       = f'#{force["color"]}' if force["color"] not in ["None", None] else "-"
+        cardColor   = f'#{force["cardColor"]}' if force["cardColor"] not in ["None", None] else "-"
+        if mode == 1:
+            result.append(f'{forceId}|{forceName}|{color}|{cardColor}')
+        else:
+            result.append([forceId, forceName, color, cardColor])
+
+    if mode == 1:
+        header = ["ID|Name|Color|Cardcolor"]
+    else:
+        header = [f'{"ID":<{ID_Max+1}}{"Name":<{Name_Max+1}}\tColor\tCardcolor\t']
+        result = [f'{force[0]:<{ID_Max+1}}{force[1]:<{Name_Max+1}}\t{force[2]}\t{force[3]}' for force in result]
+    
+    script_result(header + result, True)
+team_color(mode = 2)

@@ -537,7 +537,7 @@
             "color": "magic"
         },
         "攻击时需要消耗子弹且攻击力提升至<@ba.kw>120%</>，不攻击时会缓慢地装填子弹（最多8发）": {
-            "en": "Attacks consume Ammo to increase ATK to <@ba.kw>120%</>; While not attacking, Ammo will be slowly reloaded (max capacity 8).",
+            "en": "Attacks consume Ammo to increase ATK to <@ba.kw>120%</>; While not attacking, Ammo will be slowly reloaded (max capacity {value}).",
             "color": "physical"
         },
         "攻击造成<@ba.kw>法术伤害</>，技能开启后改为治疗友方单位（治疗量相当于<@ba.kw>{heal_scale:0%}</>攻击力）": {
@@ -854,84 +854,84 @@
             "code": "uniequip_003_sleach"
         },
         "首次撤退再部署时间额外减少<@ba.kw>35%</>": {
-            "en": "Reduce the first retreat redeployment time by 35% ",
+            "en": "First Redeployment Time reduced by <@ba.kw>35%</>",
             "color": "extra",
             "note": "new mods age-y",
             "name": "char_497_ctable",
             "code": "uniequip_002_ctable"
         },
         "能够阻挡两个敌人，可以造成<@ba.kw>元素伤害</>": {
-            "en": "Blocks 2 enemies, and can inflict <@ba.kw>Elemental Injury</>",
+            "en": "Blocks 2 enemies, and can inflict <@ba.kw>Elemental damage</>",
             "color": "extra",
             "note": "new Ops \"primguard\" Archetype trait",
             "name": "Gracebearer",
             "code": "char_4187_graceb"
         },
         "能够阻挡两个敌人，且不受<@ba.kw>部署数量</>限制，但再部署时间极长": {
-            "en": "Blocks 2 enemies. Not affected by <@ba.kw>Deployment Limit</>, but has a long Redeployment Time.",
+            "en": "Blocks 2 enemies and ignores <@ba.kw>Deployment Limit</>, but has a long Redeployment Time",
             "color": "common",
             "note": "new Ops \"pioneer\" Archetype trait",
             "name": "CONFESS-47",
             "code": "char_4188_confes"
         },
         "攻击对<@ba.kw>2</>个目标造成法术伤害，技能开启后改为治疗<@ba.kw>2</>个友方单位（治疗量相当于75%攻击力）": {
-            "en": "Attack deals <@ba.kw>Arts damage</> to <@ba.kw>2</> target; When skill is active, attacks instead restore the HP of <@ba.kw>2</> allies (heal amount is equal to 75% of ATK)",
+            "en": "Deals Arts damage to <@ba.kw>2</> targets; when skill is active, attacks instead restore the HP of <@ba.kw>2</> allies (heal amount is equal to 75% of ATK)",
             "color": "magic",
             "note": "new mods bls-y",
             "name": "char_1031_slent2",
             "code": "uniequip_003_slent2"
         },
         "部署后获得<@ba.kw>+100%</>加成": {
-            "en": "When deployed, initially gain <@ba.kw>+100%</> ATK effect",
+            "en": "Directly gains <@ba.kw>+100%</> charge after deployment",
             "color": "extra",
             "note": "new mods lib-x",
             "name": "char_445_wscoot",
             "code": "uniequip_002_wscoot"
         },
         "造成伤害时附带相当于<@ba.kw>10%</>伤害的<$ba.dt.neural2>神经损伤</>": {
-            "en": "When dealing damage, deals an additional <@ba.vup>10%</> as <$ba.dt.neural2>Nervous Impairment</>",
+            "en": "When dealing damage, deals an additional <@ba.kw>10%</> as <$ba.dt.neural2>Nervous Impairment</>",
             "color": "extra",
             "note": "new mods lor-d",
             "name": "char_293_thorns",
             "code": "uniequip_003_thorns"
         },
         "在<@ba.kw>集成战略</>中，攻击速度+50，每秒恢复4%生命值": {
-            "en": "In <@ba.kw>Integrated Strategies</>, ASPD+50,  restores 4% of Max HP every second ",
+            "en": "In <@ba.kw>Integrated Strategies</>, ASPD +50 and recovers 4% HP per second",
             "color": "extra",
             "note": "new mods isw-a",
             "name": "char_437_mizuki",
             "code": "uniequip_004_mizuki"
         },
         "在<@ba.kw>集成战略</>中，每有一个携带攻击回复技能的干员在场，空弦攻击距离+1（最高提升至+3）": {
-            "en": "In <@ba.kw>Integrated Strategies</>, for each operators with Offensive Recovery skill on the field, Attack Range +1 (up to +3)",
+            "en": "In <@ba.kw>Integrated Strategies</>, for every deployed Operator with an Offensive Recovery skill, Archetto's Attack Range +1 (Max +3)",
             "color": "extra",
             "note": "new mods isw-a",
             "name": "char_332_archet",
             "code": "uniequip_004_archet"
         },
         "不会受到攻击，只能部署在近战位": {
-            "en": "Cannot be attacked, can only deploy on melee tile",
+            "en": "Cannot be attacked, and can only be deployed on melee tiles",
             "color": "common",
             "note": "Tragodia 's Token (Blood's whisper)",
             "name": "Blood's whisper",
             "code": "token_10054_phatm2_encdool"
         },
         "牢笼可以阻挡生成/刷新时本格所有敌人，没有阻挡目标或受到3次来自阻挡目标的攻击后消失，酒神技能结束后额外持续30秒": {
-            "en": "Can block all enemies in tile it summoned/refreshed. Disappears if not blocking or attacked 3 times by blocking enemies. Last for 30 seconds after Tragodia skill end",
+            "en": "Cage blocks all enemies on its tile when created/refreshed; disappears when not blocking a target or after receiving 3 attacks from a blocked target; persists an additional 30s after Tragodia's skill ends",
             "color": "extra",
             "note": "Tragodia 's Token (Cage of chaos)",
             "name": "Cage of chaos",
             "code": "token_10055_phatm2_mndclv"
         },
         "攻击造成<@ba.kw>法术伤害</>，可以通过击倒敌人生成<@ba.kw>召唤物</>，可攻击到自身<@ba.kw>召唤物</>阻挡的敌人且攻击力提升至<@ba.kw>115%</>": {
-            "en": "Deals <@ba.kw>Arts damage</>; Can create <@ba.kw>Summons</> by defeating enemies, and can attack enemies blocked by these <@ba.kw>Summons</> with <@ba.kw>115%</> ATK ",
+            "en": "Deals <@ba.kw>Arts damage</>; can create <@ba.kw>Summons</> by defeating enemies, and can attack enemies blocked by their own <@ba.kw>Summons</> with an ATK increased to <@ba.kw>115%</>",
             "color": "magic",
             "note": "new mods soc-x",
             "name": "char_450_necras",
             "code": "uniequip_002_necras"
         },
         "可以使用<@ba.kw>部署费用更低</>的陷阱来协助作战，但陷阱无法放置于敌人已在的格子中，可同时部署的陷阱数量提升": {
-            "en": "Can use <@ba.kw>lower DP cost</> traps to assist in combat, but traps cannot be placed <@ba.kw>on tiles already occupied by an enemy</> , increase number of traps that can be deployed at the same time",
+            "en": "Can use traps <@ba.kw>with a lower DP cost</> to assist in combat, but traps cannot be placed on tiles already occupied by an enemy; trap Deployment Limit increases",
             "color": "extra",
             "note": "new mods trp-x",
             "name": "char_4048_doroth",
@@ -999,6 +999,111 @@
             "note": "new mods rit-y",
             "name": "char_245_cello",
             "code": "uniequip_003_cello"
+        },
+        "攻击周围8格的敌人时攻击力提升至<@ba.kw>{atk_scale:0%}</>": {
+            "en": "ATK increased to <@ba.kw>{atk_scale:0%}</> when attacking enemies in the 8 surrounding tiles.",
+            "color": "common",
+            "note": "new mods lps-x",
+            "name": "char_4100_caper",
+            "code": "uniequip_002_caper"
+        },
+        "攻击范围内存在2名及以上敌人时攻击速度<@ba.kw>+{value}</>": {
+            "en": "ASPD <@ba.kw>+{value}</> if there are 2 or more enemies in Attack Range.",
+            "color": "common",
+            "note": "new mods rea-y",
+            "name": "char_1032_excu2",
+            "code": "uniequip_003_excu2"
+        },
+        "在【岁的界园志异】中，自身额外攻击一个目标": {
+            "en": "In <@ba.kw>[Sui's Garden of Grotesqueries]</>, can attack an additional target ",
+            "color": "extra",
+            "note": "new mods so-b",
+            "name": "char_4195_radian",
+            "code": "uniequip_003_radian"
+        },
+        "凛御银灰在场时添加至待部署区。部署费用随凛御银灰的技能而变化": {
+            "en": "Added to Deployment waiting zone while SilverAsh the Reignfrost is on the field. Deployment cost varies depending on SilverAsh the Reignfrost's current skill",
+            "color": "common",
+            "note": "SilverAsh the Reignfrost 's Token (Eye of the Snowstorm)",
+            "name": "Eye of the Snowstorm",
+            "code": "token_10057_svash2_eagle3"
+        },
+        "可消耗部署费用来强化作战能力": {
+            "en": "Can consumes DP to enhance combat capabilities",
+            "color": "extra",
+            "note": "new Ops \"mercenary\" Archetype trait",
+            "name": "Hadiya",
+            "code": "char_394_hadiya"
+        },
+        "在<@ba.kw>集成战略</>中，无视目标<@ba.kw>10</>点法术抗性，每个敌人首次进入目标点所在地块时，恢复自身30%的技力": {
+            "en": "In <@ba.kw>Integrated Strategies</>, ignores 10 RES; When each enemy reaches Objective Point for the first time, recover 30% SP",
+            "color": "magic",
+            "note": "new mods isw-a",
+            "name": "char_4027_heyak",
+            "code": "uniequip_004_heyak"
+        },
+        "在<@ba.kw>集成战略</>中，自身在场时，处于<$ba.cold>寒冷</>、<$ba.frozen>冻结</>的敌人每0.5秒受到灵知攻击力50%的法术伤害": {
+            "en": "In <@ba.kw>Integrated Strategies</>, while on the field, enemies under <$ba.cold>cold</> or <$ba.frozen>frozen</> effects, receive 50% ATK as Arts damage every 0.5 seconds",
+            "color": "magic",
+            "note": "new mods isw-a",
+            "name": "char_206_gnosis",
+            "code": "uniequip_004_gnosis"
+        },
+        "自身及自身召唤物阻挡的敌人受到<@ba.kw>10%</>的<$ba.fragile>脆弱</>效果": {
+            "en": "Enemies blocked by this unit and its summon units receive <@ba.kw>10%</> <$ba.fragile>Fragile</>",
+            "color": "extra",
+            "note": "new mods aft-y",
+            "name": "char_1019_siege2",
+            "code": "uniequip_003_siege2"
+        },
+        "技能开启时普通攻击会造成法术伤害，且攻击和受到攻击时对目标额外造成10％攻击力的法术伤害": {
+            "en": "Normal attacks deal Arts damage and deals 10% ATK as Arts damage when attacking or attacked to targets while the skill is active",
+            "color": "magic",
+            "note": "new mods ast-x",
+            "name": "char_1044_hsgma2",
+            "code": "uniequip_002_hsgma2"
+        },
+        "攻击附带<@ba.vup>10%</>攻击力的法术伤害": {
+            "en": "Attacks deal an additional <@ba.vup>10%</> ATK as Arts damage.",
+            "color": "extra",
+            "note": "new mods lor-x (sharp2)",
+            "name": "char_617_sharp2",
+            "code": "uniequip_002_sharp2"
+        },
+        "不会受到攻击，可部署在地面或高台位": {
+            "en": "Cannot be attacked, can be deployed on both Melee and Ranged tiles",
+            "color": "common",
+            "note": "Nasti 's Token (Site Supervisor)",
+            "name": "Site Supervisor",
+            "code": "token_10060_nasti_nstchr"
+    },
+        "装置有小工程师和高台两种形态，小工程师形态下不会受到攻击，可部署在地面或高台位": {
+            "en": "Device has 2 forms; Little Engineer and High Platform. When in the Little Engineer form, cannot be attacked, can be deployed on both Melee and Ranged tiles",
+            "color": "extra",
+            "note": "Nasti 's Token (Emergency Support Team)",
+            "name": "Emergency Support Team",
+            "code": "token_10061_nasti_nstbld"
+        },
+        "部署后<$ba.liftoff>起飞</>，<$ba.liftoff>起飞</>后只攻击空中敌人；技能开启时降落且攻击造成<@ba.kw>群体物理伤害</>": {
+            "en": "After deployment, <$ba.liftoff>Takes Off</> and only attack Aerial enemies while <$ba.liftoff>Takes Off</>; When skill is active, lands and deal <@ba.kw>AOE Physical damage</>.",
+            "color": "extra",
+            "note": "new Ops \"skybreaker\" Archetype trait",
+            "name": "Skybox",
+            "code": "char_4213_skybx"
+        },
+        "恢复友方单位生命，且会在<@ba.kw>3</>个友方单位间跳跃，每次跳跃治疗量降低15%": {
+            "en": "Restores HP of allies, bouncing between <@ba.kw>3</> allies. Healing reduced by 15% per bounce.",
+            "color": "heal",
+            "note": "new mods xah-x",
+            "name": "char_4139_papyrs",
+            "code": "uniequip_002_papyrs"
+        },
+        "攻击时需要消耗子弹且攻击力提升至<@ba.kw>133%</>，不攻击时会缓慢地装填子弹（最多{value}发）": {
+            "en": "Attacks consume Ammo to increase ATK to <@ba.kw>133%</>; While not attacking, Ammo will be slowly reloaded (max capacity {value}).",
+            "color": "physical",
+            "note": "new mods hun-y",
+            "name": "char_4117_ray",
+            "code": "uniequip_003_ray"
         }
     },
     "parts": [

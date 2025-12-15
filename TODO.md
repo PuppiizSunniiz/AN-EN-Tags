@@ -1,42 +1,4 @@
 # Fix TL (Official EN) waiting room
-### EP15 : Dissociative Recombination
-- Talent > Mod
-    - Windscoot
-- Trait
-    - age-y
-- Race (Enemy)
-    - origen
-
-### The Masses' Travels
-- Effect 
-    - <$ba.dt.neural2>Nervous Impairment</>
-        - Tragodia
-        - Miss Christine
-    - <$ba.palsy>Paralyze</>
-        - Miss Christine
-- Trait
-    - Confess-47
-    - Gracebearer (Primal Guard)
-    - LIB-X
-    - BLS-Y
-    - LOR-D 
-    - Mizuki isw-a
-    - Archetto isw-a
-
-### Act or Die
-- Effect
-    - Lure / Attract
-- Talent > Mod
-    - Miss Christine
-- Trait
-    - SOC-X
-    - SOC-Y
-    - TRP-X
-
-### Fantasy in the Mirage
-- Trait
-    - SIE-Y
-
 ### IS#6 : Sui's Garden of Grotesqueries
 - Trait
     - Raidian 's summons
@@ -47,22 +9,47 @@
     - RA-A : Pepe
 
 ### Somniloquium Serenum (Arknights X Eve Mujica)
+- Effect
+    - <$ba.permanentatk>Continuously Attack</>
 - Trait
     - RIT-Y : Virtuosa
 
-### To Fix 
-Yahata Umiri Talents 2
-    - dont have Elite 1 desc/upgrade > Pot talent not shown
-Togawa Sakiko Skill 2/3
-    - fix regex being eaten too quick
+### EP16 : Abnormal Spectrum
+- Trait
+    - Loopshooter mod
+    - Reaper REA-Y : Executor the Ex Foedere
+
+### Retracing Our Steps 1101
+- Effect
+    - Mercenary - Equipment Response ? (ba.alter)
+- Trait
+    - AFT-Y (Vina edition)
+    - AST-X Arts Pro
+    - ISW-a
+        - Gnosis
+        - Ho'ol
+    - Mercenary
+    - Eye of the Snowstorm
+
+### Stronghold Protocol - Alliance
+- Effect
+    - ba.weaknessatk
+
+### Unrealized Realities
+- Archetype 
+    - Skybreaker
+- Trait
+    - Skybreaker
+    - Chain medic mod
+    - HUN-Y
+
 ### To Do
+- handle Xiaohei cat
 - Independent-miya
 - Token
     - Skill SP recovery
     - Mod talent
     - Add token talent to pyUpdate (both base/mod)
-- Add multi animation support
-    - SP Kroos have multiple Interact + Idle (even Talk)
 - Add all background element for various L2D
-- token animation list
 - re-add enemies chibi
+- Fix SP akenemy

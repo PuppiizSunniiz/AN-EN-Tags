@@ -485,7 +485,7 @@ function changeUILanguage() {
 var total_materials = {};
 var inverse_levels = {"Skill-up": 2, "E1": 1, "E2": 0,"Module":3};
 var skill_levels = ["0", "1", "2", "3", "4", "5", "6", "7", "M-1", "M-2", "M-3",];
-var modindex={"x":4,"y":3,"d":2,"a":1}
+var modindex={"x":5,"y":4,"d":3,"a":2,"b":1}
 function actualize() {
     $("#tbody-recommend").html("");
 

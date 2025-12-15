@@ -1,8 +1,9 @@
 import re
 import json
+from types import NoneType
 from pyAudio import audio_json
 from pyRIIC import riic_tl_json
-from pyfunction import char_ready, name_check, json_load, printr, R, G, B, Y, RE
+from pyfunction import URSUS, char_ready, name_check, json_load, printr, R, G, B, Y, RE
 from pyAkenemy import Akenemy
 from py import Ready
 from typing import Any
@@ -14,6 +15,9 @@ json_building       =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedat
 json_buildingEN     =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/building_data.json")
 
 json_char_patch     =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/char_patch_table.json")
+json_char_patchEN   =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/char_patch_table.json")
+json_char_patchJP   =   json_load("json/gamedata/ArknightsGameData_YoStar/ja_JP/gamedata/excel/char_patch_table.json")
+json_char_patchKR   =   json_load("json/gamedata/ArknightsGameData_YoStar/ko_KR/gamedata/excel/char_patch_table.json")
 
 json_char           =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/character_table.json")
 json_charEN         =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/character_table.json")
@@ -62,6 +66,7 @@ json_tl_item        =   json_load("json/tl-item.json")
 json_temp_mod       =   json_load("json/tl-module.json")
 
 json_skillTL        =   json_load("json/ace/tl-skills.json")
+json_talentTL       =   json_load("json/ace/tl-talents.json")
 
 #########################################################################################################
 # New
@@ -93,7 +98,10 @@ CLASS_PARSE_CN : dict[str, str] = {
 
 for char_key in json_char_patch["patchChars"].keys():
     json_char_patch["patchChars"][char_key]["appellation"] += f' ({CLASS_PARSE_EN[json_char_patch["patchChars"][char_key]["profession"]]})'
+
 json_char.update(json_char_patch["patchChars"])
+json_charJP.update(json_char_patchJP["patchChars"])
+json_charKR.update(json_char_patchKR["patchChars"])
 
 char_ready  = char_ready(json_char)
 
@@ -109,12 +117,13 @@ def get_new_akhr(new_char_id : str, new_char_name : str) -> dict[str, Any]:
     return  {
                                     "id"            :   new_char_id,
                                     "name_cn"       :   json_char[new_char_id]["name"],
-                                    "name_en"       :   new_char_name,
+                                    "name_en"       :   new_char_name if not new_char_name in URSUS.values() else [k for k, v in URSUS.items() if new_char_name == v][0],
                                     "name_jp"       :   "",
                                     "name_kr"       :   "",
                                     "nationId"      :   json_char[new_char_id]["nationId"],
                                     "groupId"       :   json_char[new_char_id]["groupId"],
                                     "teamId"        :   json_char[new_char_id]["teamId"],
+                                    "subPower"      :   json_char[new_char_id]["subPower"],
                                     "type"          :   CLASS_PARSE_CN[json_char[new_char_id]["profession"]],
                                     "level"         :   int(json_char[new_char_id]["rarity"][-1]),
                                     "sex"           :   sex.get(gender, gender),
@@ -178,15 +187,16 @@ def update_char_TraitSkillTalent(new_char_name : str) :
     ## Trait
     new_trait[json_char[new_char_id]["description"]] = update_new_trait("char", new_char_id, new_char_name, json_char[new_char_id]["subProfessionId"])
     ## Talent
-    talent_tl[new_char_id] = [
-                                [
-                                    {
-                                        "name"  : candidate["name"],
-                                        "descCN": parentheses(candidate["description"]),
-                                        "desc"  : ""
-                                    } for candidate in talent["candidates"] if not candidate["isHideTalent"]
-                                ]  for talent in json_char[new_char_id]["talents"] if not talent["candidates"][0]["isHideTalent"]
-                            ]
+    if new_char_id not in json_talentTL:
+        talent_tl[new_char_id] = [
+                                    [
+                                        {
+                                            "name"  : candidate["name"],
+                                            "descCN": parentheses(candidate["description"]),
+                                            "desc"  : ""
+                                        } for candidate in talent["candidates"] if not candidate["isHideTalent"]
+                                    ]  for talent in json_char[new_char_id]["talents"] if not talent["candidates"][0]["isHideTalent"]
+                                ]
     ## Skill
     for skill in json_char[new_char_id]["skills"]:
         skill_id = skill["skillId"]
@@ -199,10 +209,22 @@ def update_char_TraitSkillTalent(new_char_name : str) :
     if json_char[new_char_id]["displayTokenDict"] :
         for new_token_key in json_char[new_char_id]["displayTokenDict"]:
         #### Token trait
+            if new_token_key not in json_char: continue
             new_trait[json_char[new_token_key]["description"]] = update_new_trait("token", new_char_id, new_char_name, new_token_key)
+        #### Token talent
+            if new_token_key not in json_talentTL:
+                talent_tl[new_token_key] = [
+                                            [
+                                                {
+                                                    "name"  : candidate["name"],
+                                                    "descCN": parentheses(candidate["description"]),
+                                                    "desc"  : ""
+                                                } for candidate in talent["candidates"]
+                                            ]  for talent in json_char[new_token_key]["talents"]
+                                        ]
         #### Token Skill
             for skill in json_char[new_token_key]["skills"]:
-                if skill["skillId"] :
+                if skill["skillId"] and skill_id not in json_skillTL.keys():
                     skill_id = skill["skillId"]
                     skill_tl[skill_id] = {
                                             "name"  : json_skill[skill_id]["levels"][0]["name"],
@@ -210,7 +232,29 @@ def update_char_TraitSkillTalent(new_char_name : str) :
                                         }
 
 def parentheses(desc : str) -> str :
-    return desc.replace("（", "(").replace("）", ")").replace("【", "[").replace("】", "]").replace("；","; ").replace(" ", " ").replace("、", ", ")
+    clean_dict = {
+                    r'(’)'              : "'",
+                    r'(。)'             : ". ",
+                    r'(…)'              : "...",
+                    r'(，|、| +, )'     : ", ",
+                    r'(“|”)'            : "\"",
+                    r'【'               : " [",
+                    r'】'               : "] ",
+                    r'（'               : " (",
+                    r'）'               : ") ",
+                    r'；'	            : "; ",
+                    r'？'               : "? ",
+                    r'！'               : "! ",
+                    r'[  ]+'            : " ",
+                    r'％'              	: "%",
+                }
+    
+    if isinstance(desc, NoneType):
+        return None
+    else:
+        for k,v in clean_dict.items():
+            desc = re.sub(k, v, desc)
+        return desc
 
 #########################################################################################################
 # Chars
@@ -228,12 +272,15 @@ for new_char_name in NEW_CHARS:
     if Rechecked and new_char_name in char_list:
         update_char_TraitSkillTalent(new_char_name)
 
-#Update old char localization
+#Update old char
 for char_data in json_akhr:
-    for lang in [["name_jp", json_charJP], ["name_kr", json_charKR]]:
-        if char_data[lang[0]] == "":
-            if char_data["id"] in lang[1].keys():
-                char_data[lang[0]] = lang[1][char_data["id"]]["name"]
+    char_data["nationId"]   = json_char[char_data["id"]]["nationId"]
+    char_data["groupId"]    = json_char[char_data["id"]]["groupId"]
+    char_data["teamId"]     = json_char[char_data["id"]]["teamId"]
+    char_data["subPower"]   = json_char[char_data["id"]]["subPower"]
+    for lang in [["name_en", json_charEN],["name_jp", json_charJP], ["name_kr", json_charKR]]:
+        if char_data["id"] in lang[1].keys():
+            char_data[lang[0]] = lang[1][char_data["id"]]["name"]
 
 #Update recruitment
 def cleanlist(recruit_list:str) -> str:
@@ -243,10 +290,11 @@ gacha_CN_list   =   cleanlist(json_gacha["recruitDetail"]).split("\n")
 gacha_EN_list   =   cleanlist(json_gachaEN["recruitDetail"]).split("\n")
 
 bypass          =   {
-                        "THRM-EX"               :   "Thermal-EX",
-                        "\'Justice Knight\'"    :   "\"Justice Knight\"",
-                        "Justice Knight"        :   "\"Justice Knight\"",
-                        "Shirayuki"             :   "ShiraYuki"
+                        #"THRM-EX"               :   "Thermal-EX",
+                        #"\'Justice Knight\'"    :   "\"Justice Knight\"",
+                        "Justice Knight"        :   "\'Justice Knight\'",
+                        #"Shirayuki"             :   "ShiraYuki",
+                        "Mr.Nothing"            :   "Mr. Nothing",
                     }
 
 for i in range(6):
@@ -559,6 +607,45 @@ for char in json_char.keys():
 
 with open("json/puppiiz/potential_token.json", "w", encoding = "utf-8") as filepath :
     json.dump(potential_token, filepath, indent = 4, ensure_ascii = False)
+
+#########################################################################################################
+# char_names
+#########################################################################################################
+sp_char_dict = {
+                    "ë" : "e",  # Pozëmka
+                    "ł" : "l",  # Młynar
+                    "í" : "i",  # Eyjafjalla the Hvít Aska
+                    "š" : "s",  # Wiš'adel
+                    "ū" : "u",  # Yūtenji Nyamu
+                }
+
+def simple_name(char_name : str) -> str:
+    for sp_char in sp_char_dict.keys():
+        if char_name.find(sp_char) != -1:
+            return False
+    return True
+
+def get_name(char_data : dict) -> list:
+    names : list[str] = []
+    for key in ["name", "appellation"]:
+        value : str = char_data[key]
+        if value and value != " ":
+            names.append(value)
+            if not simple_name(value) :
+                names += [value.replace(k, v) for k, v in sp_char_dict.items() if value.find(k) != -1]
+    return names + [name.replace("'", "") for name in names if name.find("'") != -1]
+
+char_names = {}
+for char_id in json_char.keys():
+    if not char_id.startswith("char_") : continue
+    char_name = get_name(json_char[char_id]) + [URSUS.get(json_char[char_id]["appellation"], json_char[char_id]["appellation"])]
+    for other_lang in [json_charEN, json_charJP, json_charKR]:
+        if char_id in other_lang.keys():
+            char_name += get_name(other_lang[char_id])
+    char_names[char_id] = sorted(list(set(char_name)))
+
+with open("json/puppiiz/char_names.json", "w", encoding = "utf-8") as filepath :
+    json.dump(char_names, filepath, indent = 4, ensure_ascii = False)
 
 #########################################################################################################
 # The Rest

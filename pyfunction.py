@@ -11,6 +11,17 @@ Y = '\033[33m'
 B = '\033[34m'
 RE = '\033[0m'
 
+URSUS : dict = {
+                    "Гум"           : "Gummy",
+                    "Зима"          : "Zima",
+                    "Истина"        : "Istina",
+                    "Позёмка"       : "Pozëmka",
+                    "Роса"          : "Rosa",
+                    "Лето"          : "Leto",
+                    "Снегурочка"    : "Snegurochka",
+                    "Веточки"       : "Vetochki"
+                }
+
 def printr(*arg):
     print(f'{R}[:{inspect.currentframe().f_back.f_lineno}]{RE}', *arg, RE) # type: ignore
 
@@ -74,15 +85,7 @@ def get_char_name(char_json : dict[str, dict[str, Any]], char_key : str) -> str 
     return name_check(char_json[char_key]["appellation"])
 
 def name_check(appellation : str) -> str :
-    Russian : dict = {
-                        'Гум'       : 'Gummy',
-                        'Зима'      : 'Zima',
-                        'Истина'    : 'Istina',
-                        'Позёмка'   : 'Pozëmka',
-                        'Роса'      : 'Rosa',
-                        'Лето'      : 'Leto'
-                    }
-    return Russian.get(appellation, appellation)
+    return URSUS.get(appellation, appellation)
 
 def print_header(text : str) -> str:
     length : int = 20

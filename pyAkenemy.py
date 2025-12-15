@@ -7,7 +7,7 @@ import json
 import re
 import glob
 from datetime import datetime
-from pyfunction import print_header
+from pyfunction import print_header, printr
 
 ################################################################################################################################################################################################################################################
 # Global Variable
@@ -28,6 +28,7 @@ akenemy = {
                         "exp"       : {"name" : "Experimental Gamemode", "activity" : {}},
                         "tn"        : {"name" : "TN : Trials for Navigator", "activity" : {}},          # Mode : TN             -> Activity : TN#XX                                     -> Stage : TN-XX
                         "vb"        : {"name" : "VB : Vector Breakthrough", "activity" : {}},
+                        "sp"        : {"name" : "SP : Stronghold Protocol", "activity" : {}},
                         "sss"       : {"name" : "SSS : Stationary Security Service", "activity" : {}},  # Mode : SSS            -> Activity : Tower                                     -> Stage : LT-XX
                         "ra"        : {"name" : "RA : Reclamation Algorithm", "activity" : {}},         # Mode : RA             -> Activity : RA#XX         -> Zone : Fight/Rush/Zone   -> Stage : XYZ
                         "fun"       : {"name" : "FUN : April Fool", "activity" : {}},
@@ -351,7 +352,11 @@ def Stage_Lister(stage_event : str, stage_code : str, stage_name : str, stage_id
     def Stage_Lister_Akenemy():
     ### Akenemy collect
         stage_gamemode = get_stage_gamemode(stage_event)
-        akenemy_activity = akenemy["gamemode"][stage_gamemode]["activity"]
+        try:
+            akenemy_activity = akenemy["gamemode"][stage_gamemode]["activity"]
+        except:
+            printr(stage_event, stage_gamemode)
+            exit()
         
         akenemy_activity.setdefault(stage_event,{"name":"","date":0,"zone":{}})
         akenemy_activity[stage_event]["zone"].setdefault(stage_zone, {"name":"","stage":{}})
@@ -421,11 +426,13 @@ def RA_rush_Lister(Rushgroup_config : dict, stage_event : str) -> int :
             
     return stage_counter
 
-def main_zone(stage_id : str,event_id : str) -> str :
+def main_zone(stage_id : str, event_id : str) -> str :
     if event_id.split("_")[-1] == "0" :
         zone_prefix = "Prologue : "
-    elif re.search(r'act2mainss',event_id): #act[0-9]{1,2}mainss
-        zone_prefix = f'EP15 : '
+    elif re.search(r'act([0-9]{1,2})mainss(?:.+?|)', event_id): #act[0-9]{1,2}mainss
+        
+        main_match = int(re.match(r'act([0-9]{1,2})mainss(?:.+?|)', event_id).group(1))
+        zone_prefix = f'EP{13 + main_match} : '
     else:
         zone_prefix = f'EP{event_id.split("_")[-1]} : '
     
@@ -545,10 +552,12 @@ def get_stage_gamemode(stage_event : str) -> str:
         elif stage_event == "Mechanic": 
             return "mechanic"
         
-        elif re.search(r'act[0-9]{1,2}(lock|vautochess|arcade|enemyduel)',stage_event) or stage_event in ["act42d0"]: # act42d0 = DOS
+        elif re.search(r'act[0-9]{1,2}(lock|arcade|enemyduel|vhalfidle)',stage_event) or stage_event in ["act42d0"]: # act42d0 = DOS
             return "exp"
         elif re.search(r'act[0-9]{1,2}(vecb|break)',stage_event):
             return "vb"
+        elif re.search(r'act[0-9]{1,2}(vautochess|autochess)',stage_event):
+            return "sp"
         
         elif stage_event.find("bossrush") != -1:
             return "tn"
@@ -926,8 +935,8 @@ def activity_collect(Activityjson):
             zone = next((key for key in DB["activity"]["zoneToActivity"] if DB["activity"]["zoneToActivity"][key] == act), act)
             if not re.search(r'main_[0-9]{1,2}' ,zone):
                 activity_collection["Dict"][zone] = {
-                    "nameCN"    : f'{DB["zone"]["zones"][zone]["zoneNameFirst"]} : {DB["zone"]["zones"][zone]["zoneNameSecond"]}',
-                    "nameEN"    : f'{DB["zoneEN"]["zones"][zone]["zoneNameFirst"]} : {DB["zoneEN"]["zones"][zone]["zoneNameSecond"]}' if zone in DB["zoneEN"]["zones"].keys() else (Activityjson["Dict"][zone]["nameEN"] if zone in Activityjson["Dict"].keys() else f'{DB["zone"]["zones"][zone]["zoneNameFirst"]} : {DB["zone"]["zones"][zone]["zoneNameSecond"]}'),
+                    "nameCN"    : f'{DB["zone"]["zones"][zone]["zoneNameThird"].capitalize()} : {DB["zone"]["zones"][zone]["zoneNameSecond"]}',
+                    "nameEN"    : f'{DB["zoneEN"]["zones"][zone]["zoneNameThird"].capitalize()} : {DB["zoneEN"]["zones"][zone]["zoneNameSecond"]}' if zone in DB["zoneEN"]["zones"].keys() else (Activityjson["Dict"][zone]["nameEN"] if zone in Activityjson["Dict"].keys() else f'{DB["zone"]["zones"][zone]["zoneNameThird"].capitalize()} : {DB["zone"]["zones"][zone]["zoneNameSecond"]}'),
                     "startCN"   : DB["zone"]["mainlineAdditionInfo"][zone]["zoneOpenTime"]
                 }
                 if activity_collection["Dict"][zone]["startCN"] > 0 : timeline.append([zone,activity_collection["Dict"][zone]["nameEN"] if activity_collection["Dict"][zone]["nameEN"] else activity_collection["Dict"][zone]["nameCN"],activity_collection["Dict"][zone]["startCN"]])
@@ -935,8 +944,8 @@ def activity_collect(Activityjson):
 # Main
     for act in DB["zone"]["mainlineAdditionInfo"].keys():
         activity_collection["Dict"][act] = {
-                    "nameCN"    : f'{DB["zone"]["zones"][act]["zoneNameFirst"]} : {DB["zone"]["zones"][act]["zoneNameSecond"]}',
-                    "nameEN"    : f'{DB["zoneEN"]["zones"][act]["zoneNameFirst"]} : {DB["zoneEN"]["zones"][act]["zoneNameSecond"]}' if act in DB["zoneEN"]["zones"].keys() else (Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else f'{DB["zone"]["zones"][act]["zoneNameFirst"]} : {DB["zone"]["zones"][act]["zoneNameSecond"]}'),
+                    "nameCN"    : f'{DB["zone"]["zones"][act]["zoneNameThird"].capitalize()} : {DB["zone"]["zones"][act]["zoneNameSecond"]}',
+                    "nameEN"    : f'{DB["zoneEN"]["zones"][act]["zoneNameThird"].capitalize()} : {DB["zoneEN"]["zones"][act]["zoneNameSecond"]}' if act in DB["zoneEN"]["zones"].keys() else (Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else f'{DB["zone"]["zones"][act]["zoneNameThird"].capitalize()} : {DB["zone"]["zones"][act]["zoneNameSecond"]}'),
                     "startCN"   : DB["zone"]["mainlineAdditionInfo"][act]["zoneOpenTime"]
         }
         if activity_collection["Dict"][act]["startCN"] > 0 : timeline.append([act,activity_collection["Dict"][act]["nameEN"] if activity_collection["Dict"][act]["nameEN"] else activity_collection["Dict"][act]["nameCN"],activity_collection["Dict"][act]["startCN"]])

@@ -125,7 +125,7 @@
                                 <div class="btn btn-sm my-1 filter-btn op-gamemode btn-secondary" onclick="toggleBtn(this)" section="gamemode" data-id="BASE">BASE</div>
                                 <div class="btn btn-sm my-1 filter-btn op-gamemode btn-secondary" onclick="toggleBtn(this)" section="gamemode" data-id="SO">SO</div>
                                 <div class="btn btn-sm my-1 filter-btn op-gamemode btn-secondary" onclick="toggleBtn(this)" section="gamemode" data-id="IS">IS</div>
-                                <div class="btn btn-sm my-1 filter-btn op-gamemode btn-secondary" onclick="toggleBtn(this)" section="gamemode" data-id="AC">AC</div>
+                                <div class="btn btn-sm my-1 filter-btn op-gamemode btn-secondary" onclick="toggleBtn(this)" section="gamemode" data-id="SP">SP</div>
                             </div>
                             <div class="btn btn-danger btn-clear" id="clear-filter-gamemode" onclick="clearFilter('.op-gamemode');toggleBtn($('.ALL'))" clear-data=".op-gamemode">Clear</div>
                         </div>
@@ -161,6 +161,7 @@
                                 <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="DP-Recovery"></div>
                                 <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="Robot"></div>
                                 <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="Elemental"></div>
+                                <div class="btn btn-sm my-1 filter-btn-s op-tag btn-secondary" onclick="toggleBtn(this)" data-id="Soar"></div>
                             </div>
                             <div class="btn btn-danger btn-clear" id="clear-filter-tag" onclick="clearFilter('.op-tag')" clear-data=".op-tag">Clear</div>
                         </div>
@@ -465,7 +466,7 @@
                                         <!-- <button class="btn btn-sm ak-chibi-btn" id="Chibi-console" onclick='CheckChibi()' title='Check'>C</button> -->
                                         <div style='display:inline-flex'>
                                             <button class='btn btn-sm ak-chibi-btn' type='button' id='Chibi-Scale' title="Reset Scale"><i class="fas fa-search-plus"></i></button> 
-                                            <input type='range' class='statlevelInput' value='1' min='0' max='50' id='chibizoomslider' oninput="ZoomChibi(this)" style='margin:3px 0px;width:90px'></input>
+                                            <input type='range' class='statlevelInput' value='1' min='0' max='100' id='chibizoomslider' oninput="ZoomChibi(this)" style='margin:3px 0px;width:90px'></input>
                                         </div>
                                         <div style="display: inline-block;text-align: center;width: 115px;margin-top: 5px;color: #ccc;background: #333;">
                                             <span id="chibi-per">-</span>

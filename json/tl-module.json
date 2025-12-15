@@ -1,700 +1,4 @@
 {
-    "uniequip_002_ines": [
-        [
-            {
-                "name": "Shadow Weaver",
-                "EN": "The first hit on each enemy <$ba.root>Binds</> the target for 5 seconds and <$ba.steal>Steals</> 90 ATK (effect expires when enemy is defeated or Ines retreats)",
-                "CN": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其90点攻击力(持续至目标被击倒或伊内丝离场)",
-                "mod": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其100点攻击力(持续至目标被击倒或伊内丝离场)",
-                "upgradeDescription": "The first hit on each enemy <$ba.root>Binds</> the target for 5 seconds and <$ba.steal>Steals</> 100 ATK (effect expires when enemy is defeated or Ines retreats)"
-            },
-            {
-                "name": "Shadow Weaver",
-                "EN": "The first hit on each enemy <$ba.root>Binds</> the target for 5 seconds and <$ba.steal>Steals</> 100 <@ba.talpu>(+10)</> ATK (effect expires when enemy is defeated or Ines retreats)",
-                "CN": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其100<@ba.talpu>(+10)</>点攻击力(持续至目标被击倒或伊内丝离场)",
-                "mod": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其110<@ba.talpu>(+10)</>点攻击力(持续至目标被击倒或伊内丝离场)",
-                "upgradeDescription": "The first hit on each enemy <$ba.root>Binds</> the target for 5 seconds and <$ba.steal>Steals</> 110 <@ba.talpu>(+10)</> ATK (effect expires when enemy is defeated or Ines retreats)"
-            }
-        ],
-        [
-            {
-                "name": "Shadow Weaver",
-                "EN": "The first hit on each enemy <$ba.root>Binds</> the target for 5 seconds and <$ba.steal>Steals</> 90 ATK (effect expires when enemy is defeated or Ines retreats)",
-                "CN": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其90点攻击力(持续至目标被击倒或伊内丝离场)",
-                "mod": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其110点攻击力(持续至目标被击倒或伊内丝离场)",
-                "upgradeDescription": "The first hit on each enemy <$ba.root>Binds</> the target for 5 seconds and <$ba.steal>Steals</> 110 ATK (effect expires when enemy is defeated or Ines retreats)"
-            },
-            {
-                "name": "Shadow Weaver",
-                "EN": "The first hit on each enemy <$ba.root>Binds</> the target for 5 seconds and <$ba.steal>Steals</> 100 <@ba.talpu>(+10)</> ATK (effect expires when enemy is defeated or Ines retreats)",
-                "CN": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其100<@ba.talpu>(+10)</>点攻击力(持续至目标被击倒或伊内丝离场)",
-                "mod": "对每个敌人首次造成伤害后，使目标<$ba.root>束缚</>5秒并<$ba.steal>偷取</>其120<@ba.talpu>(+10)</>点攻击力(持续至目标被击倒或伊内丝离场)",
-                "upgradeDescription": "The first hit on each enemy <$ba.root>Binds</> the target for 5 seconds and <$ba.steal>Steals</> 120 <@ba.talpu>(+10)</> ATK (effect expires when enemy is defeated or Ines retreats)"
-            }
-        ]
-    ],
-    "uniequip_002_ctable": [
-        [
-            {
-                "name": "Protean",
-                "EN": "ASPD +12 when not blocking an enemy, ATK +12% when blocking an enemy",
-                "CN": "未阻挡敌人时攻击速度+12，阻挡敌人时攻击力+12%",
-                "mod": "未阻挡敌人时攻击速度+15，阻挡敌人时攻击力+15%",
-                "upgradeDescription": "ASPD +15 when not blocking an enemy, ATK +15% when blocking an enemy"
-            },
-            {
-                "name": "Protean",
-                "EN": "ASPD +14 <@ba.talpu>(+2)</> when not blocking an enemy, ATK +14% <@ba.talpu>(+2%)</> when blocking an enemy",
-                "CN": "未阻挡敌人时攻击速度+14<@ba.talpu>(+2)</>，阻挡敌人时攻击力+14%<@ba.talpu>(+2%)</>",
-                "mod": "未阻挡敌人时攻击速度+17<@ba.talpu>(+2)</>，阻挡敌人时攻击力+17%<@ba.talpu>(+2%)</>",
-                "upgradeDescription": "ASPD +17 <@ba.talpu>(+2)</> when not blocking an enemy, ATK +17% <@ba.talpu>(+2%)</> when blocking an enemy"
-            }
-        ],
-        [
-            {
-                "name": "Protean",
-                "EN": "ASPD +12 when not blocking an enemy, ATK +12% when blocking an enemy",
-                "CN": "未阻挡敌人时攻击速度+12，阻挡敌人时攻击力+12%",
-                "mod": "未阻挡敌人时攻击速度+18，阻挡敌人时攻击力+18%",
-                "upgradeDescription": "ASPD +18 when not blocking an enemy, ATK +18% when blocking an enemy"
-            },
-            {
-                "name": "Protean",
-                "EN": "ASPD +14 <@ba.talpu>(+2)</> when not blocking an enemy, ATK +14% <@ba.talpu>(+2%)</> when blocking an enemy",
-                "CN": "未阻挡敌人时攻击速度+14<@ba.talpu>(+2)</>，阻挡敌人时攻击力+14%<@ba.talpu>(+2%)</>",
-                "mod": "未阻挡敌人时攻击速度+20<@ba.talpu>(+2)</>，阻挡敌人时攻击力+20%<@ba.talpu>(+2%)</>",
-                "upgradeDescription": "ASPD +20 <@ba.talpu>(+2)</> when not blocking an enemy, ATK +20% <@ba.talpu>(+2%)</> when blocking an enemy"
-            }
-        ]
-    ],
-    "uniequip_002_surfer": [
-        [
-            {
-                "name": "独自远走",
-                "CN": "部署时，若周围4格没有其他干员，获得2点部署费用",
-                "mod": "部署时，若周围4格没有其他干员，获得2点部署费用，攻击速度+10(持续10秒)",
-                "upgradeDescription": "If there are no other Operators in the surrounding 4 tiles when deployed, gain 2 DP and ASPD +10 for 10 seconds"
-            },
-            {
-                "name": "独自远走",
-                "CN": "部署时，若周围4格没有其他干员，获得3<@ba.talpu>(+1)</>点部署费用",
-                "mod": "部署时，若周围4格没有其他干员，获得3<@ba.talpu>(+1)</>点部署费用，攻击速度+10(持续10秒)",
-                "upgradeDescription": "If there are no other Operators in the surrounding 4 tiles when deployed, gain 3 <@ba.talpu>(+1)</> DP and ASPD +10 for 10 seconds"
-            }
-        ],
-        [
-            {
-                "name": "独自远走",
-                "CN": "部署时，若周围4格没有其他干员，获得2点部署费用",
-                "mod": "部署时，若周围4格没有其他干员，获得2点部署费用，攻击速度+15(持续10秒)",
-                "upgradeDescription": "If there are no other Operators in the surrounding 4 tiles when deployed, gain 2 DP and ASPD +15 for 10 seconds"
-            },
-            {
-                "name": "独自远走",
-                "CN": "部署时，若周围4格没有其他干员，获得3<@ba.talpu>(+1)</>点部署费用",
-                "mod": "部署时，若周围4格没有其他干员，获得3<@ba.talpu>(+1)</>点部署费用，攻击速度+15(持续10秒)",
-                "upgradeDescription": "If there are no other Operators in the surrounding 4 tiles when deployed, gain 3 <@ba.talpu>(+1)</> DP and ASPD +15 for 10 seconds"
-            }
-        ]
-    ],
-    "uniequip_002_alanna": [
-        [
-            {
-                "name": "临时改装",
-                "CN": "携带3个支援装置(最多部署2个)，使一名干员攻击敌人时无视其80点防御力(持续30秒)，装置效果不叠加",
-                "mod": "携带3个支援装置(最多部署2个)，使一名干员攻击敌人时无视其90点防御力(持续30秒)，装置效果不叠加",
-                "upgradeDescription": "Carries 3 <Support Devices> (max 2 deployed at once). Each <Support Devices> grants 90 DEF ignore to an operator for 30 seconds (Effects do not stack)"
-            },
-            {
-                "name": "临时改装",
-                "CN": "携带3个支援装置(最多部署2个)，使一名干员攻击敌人时无视其90<@ba.talpu>(+10)</>点防御力(持续30秒)，装置效果不叠加",
-                "mod": "携带3个支援装置(最多部署2个)，使一名干员攻击敌人时无视其100<@ba.talpu>(+10)</>点防御力(持续30秒)，装置效果不叠加",
-                "upgradeDescription": "Carries 3 <Support Devices> (max 2 deployed at once). Each <Support Devices> grants 100<@ba.talpu>(+10)</> DEF ignore to an operator for 30 seconds (Effects do not stack)"
-            }
-        ],
-        [
-            {
-                "name": "临时改装",
-                "CN": "携带3个支援装置(最多部署2个)，使一名干员攻击敌人时无视其80点防御力(持续30秒)，装置效果不叠加",
-                "mod": "携带3个支援装置(最多部署2个)，使一名干员攻击敌人时无视其100点防御力(持续30秒)，装置效果不叠加",
-                "upgradeDescription": "Carries 3 <Support Devices> (max 2 deployed at once). Each <Support Devices> grants 100 DEF ignore to an operator for 30 seconds (Effects do not stack)"
-            },
-            {
-                "name": "临时改装",
-                "CN": "携带3个支援装置(最多部署2个)，使一名干员攻击敌人时无视其90<@ba.talpu>(+10)</>点防御力(持续30秒)，装置效果不叠加",
-                "mod": "携带3个支援装置(最多部署2个)，使一名干员攻击敌人时无视其110<@ba.talpu>(+10)</>点防御力(持续30秒)，装置效果不叠加",
-                "upgradeDescription": "Carries 3 <Support Devices> (max 2 deployed at once). Each <Support Devices> grants 110<@ba.talpu>(+10)</> DEF ignore to an operator for 30 seconds (Effects do not stack)"
-            }
-        ]
-    ],
-    "uniequip_003_logos": [
-        [
-            {
-                "name": "Lexical Evolution",
-                "EN": "When attacking a target, there is a 40% chance to deal 60% ATK as Arts damage to a random target in attack range and <$ba.sluggish>Slow</> it for 0.8s.",
-                "CN": "对一个目标发起攻击时，有40%几率额外对攻击范围内一个随机目标造成相当于攻击力60%的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
-                "mod": "对一个目标发起攻击时，有40%几率额外对攻击范围内两个随机目标造成相当于攻击力63%的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
-                "upgradeDescription": "When attacking a target, there is a 40% chance to deal 63% ATK as Arts damage to 2 random targets in attack range and <$ba.sluggish>Slow</> it for 0.8s."
-            },
-            {
-                "name": "Lexical Evolution",
-                "EN": "When attacking a target, there is a 40% chance to deal 65% <@ba.talpu>(+5%)</> ATK as Arts damage to a random target in attack range and <$ba.sluggish>Slow</> it for 0.8s.",
-                "CN": "对一个目标发起攻击时，有40%几率额外对攻击范围内一个随机目标造成相当于攻击力65%<@ba.talpu>(+5%)</>的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
-                "mod": "对一个目标发起攻击时，有40%几率额外对攻击范围内两个随机目标造成相当于攻击力68%<@ba.talpu>(+5%)</>的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
-                "upgradeDescription": "When attacking a target, there is a 40% chance to deal 68% <@ba.talpu>(+5%)</> ATK as Arts damage to 2 random targets in attack range and <$ba.sluggish>Slow</> it for 0.8s."
-            }
-        ],
-        [
-            {
-                "name": "Lexical Evolution",
-                "EN": "When attacking a target, there is a 40% chance to deal 60% ATK as Arts damage to a random target in attack range and <$ba.sluggish>Slow</> it for 0.8s.",
-                "CN": "对一个目标发起攻击时，有40%几率额外对攻击范围内一个随机目标造成相当于攻击力60%的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
-                "mod": "对一个目标发起攻击时，有40%几率额外对攻击范围内两个随机目标造成相当于攻击力65%的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
-                "upgradeDescription": "When attacking a target, there is a 40% chance to deal 65% ATK as Arts damage to 2 random targets in attack range and <$ba.sluggish>Slow</> it for 0.8s."
-            },
-            {
-                "name": "Lexical Evolution",
-                "EN": "When attacking a target, there is a 40% chance to deal 65% <@ba.talpu>(+5%)</> ATK as Arts damage to a random target in attack range and <$ba.sluggish>Slow</> it for 0.8s.",
-                "CN": "对一个目标发起攻击时，有40%几率额外对攻击范围内一个随机目标造成相当于攻击力65%<@ba.talpu>(+5%)</>的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
-                "mod": "对一个目标发起攻击时，有40%几率额外对攻击范围内两个随机目标造成相当于攻击力70%<@ba.talpu>(+5%)</>的法术伤害并使其<$ba.sluggish>停顿</>0.8秒",
-                "upgradeDescription": "When attacking a target, there is a 40% chance to deal 70% <@ba.talpu>(+5%)</> ATK as Arts damage to 2 random targets in attack range and <$ba.sluggish>Slow</> it for 0.8s."
-            }
-        ]
-    ],
-    "uniequip_003_mudrok": [
-        [
-            {
-                "name": "Unshakable Solidarity",
-                "EN": "Takes 30% less damage from Sarkaz enemies",
-                "CN": "受到来自【萨卡兹】敌人的伤害降低30%",
-                "mod": "受到来自【萨卡兹】敌人的伤害降低33%，对非【萨卡兹】敌人造成的伤害提升15%",
-                "upgradeDescription": "Takes 33% less damage from Sarkaz enemies, deal 15% more damage to non-Sarkaz enemies"
-            }
-        ],
-        [
-            {
-                "name": "Unshakable Solidarity",
-                "EN": "Takes 30% less damage from Sarkaz enemies",
-                "CN": "受到来自【萨卡兹】敌人的伤害降低30%",
-                "mod": "受到来自【萨卡兹】敌人的伤害降低35%，对非【萨卡兹】敌人造成的伤害提升20%",
-                "upgradeDescription": "Takes 35% less damage from Sarkaz enemies, deal 20% more damage to non-Sarkaz enemies"
-            }
-        ]
-    ],
-    "uniequip_002_puzzle": [
-        [
-            {
-                "name": "Sequence",
-                "EN": "ATK increased to 120% and recover 2 additional SP when hitting an enemy with full HP",
-                "CN": "攻击命中生命值为满的敌人时攻击力提升至120%，并额外回复2点技力",
-                "mod": "攻击命中生命值为满的敌人时攻击力提升至128%且使其移动速度下降50%，持续3.5秒，并额外回复2点技力",
-                "upgradeDescription": "ATK increased to 128%, recover 2 additional SP and reduce movement speed by 50% for 3.5 seconds when hitting an enemy with full HP"
-            },
-            {
-                "name": "Sequence",
-                "EN": "ATK increased to 125% <@ba.talpu>(+5%)</> and recover 2 additional SP when hitting an enemy with full HP",
-                "CN": "攻击命中生命值为满的敌人时攻击力提升至125%<@ba.talpu>(+5%)</>，并额外回复2点技力",
-                "mod": "攻击命中生命值为满的敌人时攻击力提升至133%<@ba.talpu>(+5%)</>且使其移动速度下降50%，持续3.5秒，并额外回复2点技力",
-                "upgradeDescription": "ATK increased to 133% <@ba.talpu>(+5%)</>, recover 2 additional SP and reduce movement speed by 50% for 3.5 seconds when hitting an enemy with full HP"
-            }
-        ],
-        [
-            {
-                "name": "Sequence",
-                "EN": "ATK increased to 120% and recover 2 additional SP when hitting an enemy with full HP",
-                "CN": "攻击命中生命值为满的敌人时攻击力提升至120%，并额外回复2点技力",
-                "mod": "攻击命中生命值为满的敌人时攻击力提升至130%且使其移动速度下降50%，持续3.5秒，并额外回复2点技力",
-                "upgradeDescription": "ATK increased to 130%, recover 2 additional SP and reduce movement speed by 50% for 3.5 seconds when hitting an enemy with full HP"
-            },
-            {
-                "name": "Sequence",
-                "EN": "ATK increased to 125% <@ba.talpu>(+5%)</> and recover 2 additional SP when hitting an enemy with full HP",
-                "CN": "攻击命中生命值为满的敌人时攻击力提升至125%<@ba.talpu>(+5%)</>，并额外回复2点技力",
-                "mod": "攻击命中生命值为满的敌人时攻击力提升至135%<@ba.talpu>(+5%)</>且使其移动速度下降50%，持续3.5秒，并额外回复2点技力",
-                "upgradeDescription": "ATK increased to 135% <@ba.talpu>(+5%)</>, recover 2 additional SP and reduce movement speed by 50% for 3.5 seconds when hitting an enemy with full HP"
-            }
-        ]
-    ],
-    "uniequip_003_slent2": [
-        [
-            {
-                "name": "Plumes of Plenty",
-                "EN": "Allies with less than 50% HP within this unit's Attack Range heal HP equal to 5% of this unit's ATK every second; effect doubles for [Rhine Lab] Operators",
-                "CN": "攻击范围内生命低于50%的友军每秒恢复相当于淬羽赫默攻击力5%的生命，【莱茵生命】干员的恢复效果翻倍",
-                "mod": "攻击范围内生命低于50%的友军每秒恢复相当于淬羽赫默攻击力5%的生命，且其中每个干员低于50%生命时仅一次立刻获得淬羽赫默生命上限35%的屏障，【莱茵生命】干员的效果翻倍",
-                "upgradeDescription": "Allies with less than 50% HP within this unit's Attack Range heal HP equal to 5% of this unit's ATK every second; effect doubles for [Rhine Lab] Operators. When allies below 50% HP for the First time, gain 35% Max HP <$ba.barrier>Barrier</>; effect doubles for [Rhine Lab] Operators."
-            },
-            {
-                "name": "Plumes of Plenty",
-                "EN": "Allies with less than 50% HP within this unit's Attack Range heal HP equal to 6% <@ba.talpu>(+1%)</> of this unit's ATK every second; effect doubles for [Rhine Lab] Operators",
-                "CN": "攻击范围内生命低于50%的友军每秒恢复相当于淬羽赫默攻击力6%<@ba.talpu>(+1%)</>的生命，【莱茵生命】干员的恢复效果翻倍",
-                "mod": "攻击范围内生命低于50%的友军每秒恢复相当于淬羽赫默攻击力6%<@ba.talpu>(+1%)</>的生命，且其中每个干员低于50%生命时仅一次立刻获得淬羽赫默生命上限35%的屏障，【莱茵生命】干员的效果翻倍",
-                "upgradeDescription": "Allies with less than 50% HP within this unit's Attack Range heal HP equal to 6% <@ba.talpu>(+1%)</> of this unit's ATK every second; effect doubles for [Rhine Lab] Operators. When allies below 50% HP for the First time, gain 35% Max HP <$ba.barrier>Barrier</>; effect doubles for [Rhine Lab] Operators."
-            }
-        ],
-        [
-            {
-                "name": "Plumes of Plenty",
-                "EN": "Allies with less than 50% HP within this unit's Attack Range heal HP equal to 5% of this unit's ATK every second; effect doubles for [Rhine Lab] Operators",
-                "CN": "攻击范围内生命低于50%的友军每秒恢复相当于淬羽赫默攻击力5%的生命，【莱茵生命】干员的恢复效果翻倍",
-                "mod": "攻击范围内生命低于50%的友军每秒恢复相当于淬羽赫默攻击力5%的生命，且其中每个干员低于50%生命时仅一次立刻获得淬羽赫默生命上限50%的屏障，【莱茵生命】干员的效果翻倍",
-                "upgradeDescription": "Allies with less than 50% HP within this unit's Attack Range heal HP equal to 5% of this unit's ATK every second; effect doubles for [Rhine Lab] Operators. When allies below 50% HP for the First time, gain 50% Max HP <$ba.barrier>Barrier</>; effect doubles for [Rhine Lab] Operators."
-            },
-            {
-                "name": "Plumes of Plenty",
-                "EN": "Allies with less than 50% HP within this unit's Attack Range heal HP equal to 6% <@ba.talpu>(+1%)</> of this unit's ATK every second; effect doubles for [Rhine Lab] Operators",
-                "CN": "攻击范围内生命低于50%的友军每秒恢复相当于淬羽赫默攻击力6%<@ba.talpu>(+1%)</>的生命，【莱茵生命】干员的恢复效果翻倍",
-                "mod": "攻击范围内生命低于50%的友军每秒恢复相当于淬羽赫默攻击力6%<@ba.talpu>(+1%)</>的生命，且其中每个干员低于50%生命时仅一次立刻获得淬羽赫默生命上限50%的屏障，【莱茵生命】干员的效果翻倍",
-                "upgradeDescription": "Allies with less than 50% HP within this unit's Attack Range heal HP equal to 6% <@ba.talpu>(+1%)</> of this unit's ATK every second; effect doubles for [Rhine Lab] Operators. When allies below 50% HP for the First time, gain 50% Max HP <$ba.barrier>Barrier</>; effect doubles for [Rhine Lab] Operators."
-            }
-        ]
-    ],
-    "uniequip_002_mlynar": [
-        [
-            {
-                "name": "Wanderer",
-                "EN": "ATK increased to 110% when attacking. If there are 3 or more enemies nearby, ATK increased to 115%, and take 15% less damage",
-                "CN": "攻击敌人时攻击力提升至110%。周围存在3名及以上敌人时攻击力提升至115%且受到的伤害减少15%",
-                "mod": "攻击敌人时攻击力提升至115%。周围存在3名及以上敌人时攻击力提升至120%且受到的伤害减少20%",
-                "upgradeDescription": "ATK increased to 115% when attacking. If there are 3 or more enemies nearby, ATK increased to 120%, and take 20% less damage"
-            },
-            {
-                "name": "Wanderer",
-                "EN": "ATK increased to 113%<@ba.talpu>(+3%)</> when attacking. If there are 3 or more enemies nearby, ATK increased to 118%<@ba.talpu>(+3%)</>, and take 15% less damage",
-                "CN": "攻击敌人时攻击力提升至113%<@ba.talpu>(+3%)</>。周围存在3名及以上敌人时攻击力提升至118%<@ba.talpu>(+3%)</>且受到的伤害减少15%",
-                "mod": "攻击敌人时攻击力提升至118%<@ba.talpu>(+3%)</>。周围存在3名及以上敌人时攻击力提升至123%<@ba.talpu>(+3%)</>且受到的伤害减少20%",
-                "upgradeDescription": "ATK increased to 118%<@ba.talpu>(+3%)</> when attacking. If there are 3 or more enemies nearby, ATK increased to 123%<@ba.talpu>(+3%)</>, and take 20% less damage"
-            }
-        ],
-        [
-            {
-                "name": "Wanderer",
-                "EN": "ATK increased to 110% when attacking. If there are 3 or more enemies nearby, ATK increased to 115%, and take 15% less damage",
-                "CN": "攻击敌人时攻击力提升至110%。周围存在3名及以上敌人时攻击力提升至115%且受到的伤害减少15%",
-                "mod": "攻击敌人时攻击力提升至120%。周围存在3名及以上敌人时攻击力提升至125%且受到的伤害减少25%",
-                "upgradeDescription": "ATK increased to 120% when attacking. If there are 3 or more enemies nearby, ATK increased to 125%, and take 25% less damage"
-            },
-            {
-                "name": "Wanderer",
-                "EN": "ATK increased to 113%<@ba.talpu>(+3%)</> when attacking. If there are 3 or more enemies nearby, ATK increased to 118%<@ba.talpu>(+3%)</>, and take 15% less damage",
-                "CN": "攻击敌人时攻击力提升至113%<@ba.talpu>(+3%)</>。周围存在3名及以上敌人时攻击力提升至118%<@ba.talpu>(+3%)</>且受到的伤害减少15%",
-                "mod": "攻击敌人时攻击力提升至123%<@ba.talpu>(+3%)</>。周围存在3名及以上敌人时攻击力提升至128%<@ba.talpu>(+3%)</>且受到的伤害减少25%",
-                "upgradeDescription": "ATK increased to 123%<@ba.talpu>(+3%)</> when attacking. If there are 3 or more enemies nearby, ATK increased to 128%<@ba.talpu>(+3%)</>, and take 25% less damage"
-            }
-        ]
-    ],
-    "uniequip_002_takila": [
-        [
-            {
-                "name": "Waiting Game",
-                "EN": "When skill is inactive, deals 20% of Tequila's ATK as Arts damage to the attacker when Tequila is attacked",
-                "CN": "技能未开启时每次受到攻击时对目标造成相当于龙舌兰攻击力20%的法术伤害",
-                "mod": "技能未开启时每次自身和身后一名单位受到攻击时对目标造成相当于龙舌兰攻击力25%的法术伤害",
-                "upgradeDescription": "When skill is inactive, deals 25% of Tequila's ATK as Arts damage to the attacker when Tequila and operator behind is attacked"
-            },
-            {
-                "name": "Waiting Game",
-                "EN": "When skill is inactive, deals 23% <@ba.talpu>(+3%)</> of Tequila's ATK as Arts damage to the attacker when Tequila is attacked",
-                "CN": "技能未开启时每次受到攻击时对目标造成相当于龙舌兰攻击力23%<@ba.talpu>(+3%)</>的法术伤害",
-                "mod": "技能未开启时每次自身和身后一名单位受到攻击时对目标造成相当于龙舌兰攻击力28%<@ba.talpu>(+3%)</>的法术伤害",
-                "upgradeDescription": "When skill is inactive, deals 28% <@ba.talpu>(+3%)</> of Tequila's ATK as Arts damage to the attacker when Tequila and operator behind is attacked"
-            }
-        ],
-        [
-            {
-                "name": "Waiting Game",
-                "EN": "When skill is inactive, deals 20% of Tequila's ATK as Arts damage to the attacker when Tequila is attacked",
-                "CN": "技能未开启时每次受到攻击时对目标造成相当于龙舌兰攻击力20%的法术伤害",
-                "mod": "技能未开启时每次自身和身后一名单位受到攻击时对目标造成相当于龙舌兰攻击力35%的法术伤害",
-                "upgradeDescription": "When skill is inactive, deals 35% of Tequila's ATK as Arts damage to the attacker when Tequila and operator behind is attacked"
-            },
-            {
-                "name": "Waiting Game",
-                "EN": "When skill is inactive, deals 23% <@ba.talpu>(+3%)</> of Tequila's ATK as Arts damage to the attacker when Tequila is attacked",
-                "CN": "技能未开启时每次受到攻击时对目标造成相当于龙舌兰攻击力23%<@ba.talpu>(+3%)</>的法术伤害",
-                "mod": "技能未开启时每次自身和身后一名单位受到攻击时对目标造成相当于龙舌兰攻击力38%<@ba.talpu>(+3%)</>的法术伤害",
-                "upgradeDescription": "When skill is inactive, deals 38% <@ba.talpu>(+3%)</> of Tequila's ATK as Arts damage to the attacker when Tequila and operator behind is attacked"
-            }
-        ]
-    ],
-    "uniequip_002_wscoot": [
-        [
-            {
-                "name": "藏锋伺敌",
-                "CN": "特性攻击力提升至最高时，每次攻击额外追加一次40%攻击力的攻击",
-                "mod": "特性攻击力提升至最高时，每次攻击额外追加一次45%攻击力的攻击",
-                "upgradeDescription": "When Trait effect reach maximum value, each attack deals 1 additional instance of 45% ATK as Physical damage"
-            },
-            {
-                "name": "藏锋伺敌",
-                "CN": "特性攻击力提升至最高时，每次攻击额外追加一次43%<@ba.talpu>(+3%)</>攻击力的攻击",
-                "mod": "特性攻击力提升至最高时，每次攻击额外追加一次48%<@ba.talpu>(+3%)</>攻击力的攻击",
-                "upgradeDescription": "When Trait effect reach maximum value, each attack deals 1 additional instance of 48% <@ba.talpu>(+3%)</> ATK as Physical damage"
-            }
-        ],
-        [
-            {
-                "name": "藏锋伺敌",
-                "CN": "特性攻击力提升至最高时，每次攻击额外追加一次40%攻击力的攻击",
-                "mod": "特性攻击力提升至最高时，每次攻击额外追加一次52%攻击力的攻击",
-                "upgradeDescription": "When Trait effect reach maximum value, each attack deals 1 additional instance of 52% ATK as Physical damage"
-            },
-            {
-                "name": "藏锋伺敌",
-                "CN": "特性攻击力提升至最高时，每次攻击额外追加一次43%<@ba.talpu>(+3%)</>攻击力的攻击",
-                "mod": "特性攻击力提升至最高时，每次攻击额外追加一次55%<@ba.talpu>(+3%)</>攻击力的攻击",
-                "upgradeDescription": "When Trait effect reach maximum value, each attack deals 1 additional instance of 55% <@ba.talpu>(+3%)</> ATK as Physical damage"
-            }
-        ]
-    ],
-    "uniequip_003_mlyss": [
-        [
-            {
-                "name": "Expenditure Economization",
-                "EN": "When in squad, all [Rhine Lab] Operators have -2 DP Cost, and the first Rhine Lab Operator deployed has an additional -1 DP Cost",
-                "CN": "携带时【莱茵生命】干员部署费用-2，首名【莱茵生命】干员部署费用额外-1",
-                "mod": "携带时【莱茵生命】部署费用-2，首名【莱茵生命】干员部署费用额外-1。使用流形复制【莱茵生命】干员时，缪尔赛思立刻获得8技力",
-                "upgradeDescription": "When in squad, all [Rhine Lab] Operators have -2 DP Cost, and the first [Rhine Lab] Operator deployed has an additional -1 DP Cost; When copy [Rhine Lab] operator, Muelsyse gain 8 SP."
-            },
-            {
-                "name": "Expenditure Economization",
-                "EN": "When in squad, all [Rhine Lab] Operators have -2 DP Cost, and the first [Rhine Lab] Operator deployed has an additional -2<@ba.talpu>(+1)</> DP Cost",
-                "CN": "携带时【莱茵生命】干员部署费用-2，首名【莱茵生命】干员部署费用额外-2<@ba.talpu>(+1)</>",
-                "mod": "携带时【莱茵生命】部署费用-2，首名【莱茵生命】干员部署费用额外-2<@ba.talpu>(+1)</>。使用流形复制【莱茵生命】干员时，缪尔赛思立刻获得8技力",
-                "upgradeDescription": "When in squad, all [Rhine Lab] Operators have -2 DP Cost, and the first [Rhine Lab] Operator deployed has an additional -2<@ba.talpu>(+1)</> DP Cost; When copy [Rhine Lab] operator, Muelsyse gain 8 SP."
-            }
-        ],
-        [
-            {
-                "name": "Expenditure Economization",
-                "EN": "When in squad, all [Rhine Lab] Operators have -2 DP Cost, and the first Rhine Lab Operator deployed has an additional -1 DP Cost",
-                "CN": "携带时【莱茵生命】干员部署费用-2，首名【莱茵生命】干员部署费用额外-1",
-                "mod": "携带时【莱茵生命】部署费用-2，首名【莱茵生命】干员部署费用额外-1。使用流形复制【莱茵生命】干员时，缪尔赛思立刻获得10技力；且部署当前复制的【莱茵生命】干员时使其立刻获得10技力",
-                "upgradeDescription": "When in squad, all [Rhine Lab] Operators have -2 DP Cost, and the first [Rhine Lab] Operator deployed has an additional -1 DP Cost; When copy [Rhine Lab] operator, Muelsyse gain 10 SP. Copied [Rhine Lab] operator gain 10 SP when deploy."
-            },
-            {
-                "name": "Expenditure Economization",
-                "EN": "When in squad, all [Rhine Lab] Operators have -2 DP Cost, and the first [Rhine Lab] Operator deployed has an additional -2<@ba.talpu>(+1)</> DP Cost",
-                "CN": "携带时【莱茵生命】干员部署费用-2，首名【莱茵生命】干员部署费用额外-2<@ba.talpu>(+1)</>",
-                "mod": "携带时【莱茵生命】部署费用-2，首名【莱茵生命】干员部署费用额外-2<@ba.talpu>(+1)</>。使用流形复制【莱茵生命】干员时，缪尔赛思立刻获得10技力；且部署当前复制的【莱茵生命】干员时使其立刻获得10技力",
-                "upgradeDescription": "When in squad, all [Rhine Lab] Operators have -2 DP Cost, and the first [Rhine Lab] Operator deployed has an additional -2<@ba.talpu>(+1)</> DP Cost; When copy [Rhine Lab] operator, Muelsyse gain 10 SP. Copied [Rhine Lab] operator gain 10 SP when deploy."
-            }
-        ]
-    ],
-    "uniequip_003_thorns": [
-        [
-            {
-                "name": "Nerve Corrosion",
-                "EN": "Poisons the targets when attacking, dealing 125 Arts damage to them per second, lasting 3 seconds (damage is doubled against Ranged enemies)",
-                "CN": "攻击使目标中毒，在3秒内每秒受到125点法术伤害(对会远程攻击的目标伤害加倍)",
-                "mod": "攻击使目标中毒，在3秒内每秒受到200点法术伤害(对会远程攻击的目标伤害加倍)。如果敌方单位处于<$ba.dt.neural2>神经损伤</>期间，中毒伤害变为2倍且类型改为元素伤害",
-                "upgradeDescription": "Poisons the targets when attacking, dealing 200 Arts damage to them per second, lasting 3 seconds (damage is doubled against Ranged enemies). If enemies under the burst effect of <$ba.dt.neural2>Nervous Impairment</>, poison deals 2x damage as Elemental Damage instead"
-            },
-            {
-                "name": "Nerve Corrosion",
-                "EN": "Poisons the targets when attacking, dealing 140 <@ba.talpu>(+15)</> Arts damage to them per second, lasting 3 seconds (damage is doubled against Ranged enemies)",
-                "CN": "攻击使目标中毒，在3秒内每秒受到140<@ba.talpu>(+15)</>点法术伤害(对会远程攻击的目标伤害加倍)",
-                "mod": "攻击使目标中毒，在3秒内每秒受到215<@ba.talpu>(+15)</>点法术伤害(对会远程攻击的目标伤害加倍)。如果敌方单位处于<$ba.dt.neural2>神经损伤</>期间，中毒伤害变为2倍且类型改为元素伤害",
-                "upgradeDescription": "Poisons the targets when attacking, dealing 215 <@ba.talpu>(+15)</> Arts damage to them per second, lasting 3 seconds (damage is doubled against Ranged enemies). If enemies under the burst effect of <$ba.dt.neural2>Nervous Impairment</>, poison deals 2x damage as Elemental Damage instead"
-            }
-        ],
-        [
-            {
-                "name": "Nerve Corrosion",
-                "EN": "Poisons the targets when attacking, dealing 125 Arts damage to them per second, lasting 3 seconds (damage is doubled against Ranged enemies)",
-                "CN": "攻击使目标中毒，在3秒内每秒受到125点法术伤害(对会远程攻击的目标伤害加倍)",
-                "mod": "攻击使目标中毒，在3秒内每秒受到300点法术伤害(对会远程攻击的目标伤害加倍)。如果敌方单位处于<$ba.dt.neural2>神经损伤</>期间，中毒伤害变为2.5倍且类型改为元素伤害",
-                "upgradeDescription": "Poisons the targets when attacking, dealing 300 Arts damage to them per second, lasting 3 seconds (damage is doubled against Ranged enemies). If enemies under the burst effect of <$ba.dt.neural2>Nervous Impairment</>, poison deals 2.5x damage as Elemental Damage instead"
-            },
-            {
-                "name": "Nerve Corrosion",
-                "EN": "Poisons the targets when attacking, dealing 140 <@ba.talpu>(+15)</> Arts damage to them per second, lasting 3 seconds (damage is doubled against Ranged enemies)",
-                "CN": "攻击使目标中毒，在3秒内每秒受到140<@ba.talpu>(+15)</>点法术伤害(对会远程攻击的目标伤害加倍)",
-                "mod": "攻击使目标中毒，在3秒内每秒受到315<@ba.talpu>(+15)</>点法术伤害(对会远程攻击的目标伤害加倍)。如果敌方单位处于<$ba.dt.neural2>神经损伤</>期间，中毒伤害变为2.5倍且类型改为元素伤害",
-                "upgradeDescription": "Poisons the targets when attacking, dealing 315 <@ba.talpu>(+15)</> Arts damage to them per second, lasting 3 seconds (damage is doubled against Ranged enemies). If enemies under the burst effect of <$ba.dt.neural2>Nervous Impairment</>, poison deals 2.5x damage as Elemental Damage instead"
-            }
-        ]
-    ],
-    "uniequip_004_mizuki": [
-        [
-            {
-                "name": "Traumatic Hysteria",
-                "EN": "Attacks deal an additional 50% of ATK as Arts damage to the target with the lowest HP",
-                "CN": "攻击时对攻击目标中生命值最少的敌人额外造成相当于攻击力50%的法术伤害",
-                "mod": "攻击时对攻击目标中生命值最少的敌人额外造成相当于攻击力50%的法术伤害；在<@ba.kw>集成战略</>中，目标数+1并将其大力地拖拽至面前",
-                "upgradeDescription": "Attacks deal an additional 50% of ATK as Arts damage to the target with the lowest HP; in <@ba.kw>Integrated Strategies</>, target +1 and drag enemies towards self with greatly force"
-            }
-        ],
-        [
-            {
-                "name": "Traumatic Hysteria",
-                "EN": "Attacks deal an additional 50% of ATK as Arts damage to the target with the lowest HP",
-                "CN": "攻击时对攻击目标中生命值最少的敌人额外造成相当于攻击力50%的法术伤害",
-                "mod": "攻击时对攻击目标中生命值最少的敌人额外造成相当于攻击力50%的法术伤害；在<@ba.kw>集成战略</>中，目标数+1并将其大力地拖拽至面前，技能期间目标数再+2",
-                "upgradeDescription": "Attacks deal an additional 50% of ATK as Arts damage to the target with the lowest HP; in <@ba.kw>Integrated Strategies</>, target +1 and drag enemies towards self with greatly force, when skill is activated, target +2"
-            }
-        ]
-    ],
-    "uniequip_004_archet": [
-        [
-            {
-                "name": "Landen Tactics",
-                "EN": "Every 2.5 seconds when deployed, restores 1 Skill Point to all deployed Sniper allies that have an Offensive Recovery skill.",
-                "CN": "在场时所有【狙击】干员的攻击回复技能每2.5秒回复1点技力",
-                "mod": "在场时所有【狙击】干员的攻击回复技能每2.5秒回复1点技力；在<@ba.kw>集成战略</>中，所有干员的攻击回复技能都享受该效果且能被空弦的攻击回复技力",
-                "upgradeDescription": "Every 2.5 seconds when deployed, restores 1 Skill Point to all deployed Sniper allies that have an Offensive Recovery skill; in <@ba.kw>Integrated Strategies</>, restores 1 Skill Point to all operator that have an Offensive Recovery skill instead. When attacks, restores 1 Skill Point to all operator that have an Offensive Recovery skill."
-            }
-        ],
-        [
-            {
-                "name": "Landen Tactics",
-                "EN": "Every 2.5 seconds when deployed, restores 1 Skill Point to all deployed Sniper allies that have an Offensive Recovery skill.",
-                "CN": "在场时所有【狙击】干员的攻击回复技能每2.5秒回复1点技力",
-                "mod": "在场时所有【狙击】干员的攻击回复技能每2.5秒回复1点技力；在<@ba.kw>集成战略</>中，所有干员的攻击回复技能都享受该效果且能被空弦的攻击回复技力，所有干员的攻击回复技能持续时间内攻击力+50%",
-                "upgradeDescription": "Every 2.5 seconds when deployed, restores 1 Skill Point to all deployed Sniper allies that have an Offensive Recovery skill; in <@ba.kw>Integrated Strategies</>, restores 1 Skill Point to all operator that have an Offensive Recovery skill instead. When attacks, restores 1 Skill Point to all operator that have an Offensive Recovery skill. When an operator activated their Offensive Recovery skill, they gain 50% ATK"
-            }
-        ]
-    ],
-    "uniequip_003_crosly": [
-        [
-            {
-                "name": "Crownslayer's Glory",
-                "EN": "Deals 20% more Physical damage to ground enemies that has not yet dealt damage to her",
-                "CN": "对未伤害过自身的地面敌人造成的物理伤害提升20%",
-                "mod": "对未伤害过自身的地面敌人造成的物理伤害提升28%且造成的晕眩效果影响时间+25%",
-                "upgradeDescription": "Deals 28% more Physical damage to ground enemies that has not yet dealt damage to her. Increase <$ba.stun>Stun</> duration by 25%."
-            },
-            {
-                "name": "Crownslayer's Glory",
-                "EN": "Deals 22% <@ba.talpu>(+2)</> more Physical damage to ground enemies that has not yet dealt damage to her",
-                "CN": "对未伤害过自身的地面敌人造成的物理伤害提升22%<@ba.talpu>(+2)</>",
-                "mod": "对未伤害过自身的地面敌人造成的物理伤害提升30%<@ba.talpu>(+2%)</>且造成的晕眩效果影响时间+25%",
-                "upgradeDescription": "Deals 30% <@ba.talpu>(+2%)</> more Physical damage to ground enemies that has not yet dealt damage to her. Increase <$ba.stun>Stun</> duration by 25%."
-            }
-        ],
-        [
-            {
-                "name": "Crownslayer's Glory",
-                "EN": "Deals 20% more Physical damage to ground enemies that has not yet dealt damage to her",
-                "CN": "对未伤害过自身的地面敌人造成的物理伤害提升20%",
-                "mod": "对未伤害过自身的地面敌人造成的物理伤害提升35%且造成的晕眩效果影响时间+50%",
-                "upgradeDescription": "Deals 35% more Physical damage to ground enemies that has not yet dealt damage to her. Increase <$ba.stun>Stun</> duration by 50%."
-            },
-            {
-                "name": "Crownslayer's Glory",
-                "EN": "Deals 22% <@ba.talpu>(+2)</> more Physical damage to ground enemies that has not yet dealt damage to her",
-                "CN": "对未伤害过自身的地面敌人造成的物理伤害提升22%<@ba.talpu>(+2)</>",
-                "mod": "对未伤害过自身的地面敌人造成的物理伤害提升37%<@ba.talpu>(+2%)</>且造成的晕眩效果影响时间+50%",
-                "upgradeDescription": "Deals 37% <@ba.talpu>(+2%)</> more Physical damage to ground enemies that has not yet dealt damage to her. Increase <$ba.stun>Stun</> duration by 50%."
-            }
-        ]
-    ],
-    "uniequip_002_angel2": [
-        [
-            {
-                "name": "火力电台",
-                "CN": "在场时，每当有友方干员的弹药被消耗就会回复自身6%生命值，并有25%概率立即对该干员攻击范围的敌人召唤一次轰炸，造成相当于自身攻击力150%的物理溅射伤害",
-                "mod": "在场时，每当有友方干员的弹药被消耗就会回复自身6%生命值，并有30%概率立即对该干员攻击范围的敌人召唤一次轰炸，造成相当于自身攻击力165%的物理溅射伤害",
-                "upgradeDescription": "When on field, recovers 6% HP whenever an ally operator consumes ammo. Additionally, there is 30% chance to deals 165% ATK as AOE Physical damage to enemies within that operator's Attack Range"
-            },
-            {
-                "name": "火力电台",
-                "CN": "在场时，每当有友方干员的弹药被消耗就会回复自身6%生命值，并有25%概率立即对该干员攻击范围的敌人召唤一次轰炸，造成相当于自身攻击力165%<@ba.talpu>(+15%)</>的物理溅射伤害",
-                "mod": "在场时，每当有友方干员的弹药被消耗就会回复自身6%生命值，并有30%概率立即对该干员攻击范围的敌人召唤一次轰炸，造成相当于自身攻击力180%<@ba.talpu>(+15%)</>的物理溅射伤害",
-                "upgradeDescription": "When on field, recovers 6% HP whenever an ally operator consumes ammo. Additionally, there is 30% chance to deals 180%<@ba.talpu>(+15%)</> ATK as AOE Physical damage to enemies within that operator's Attack Range"
-            }
-        ],
-        [
-            {
-                "name": "火力电台",
-                "CN": "在场时，每当有友方干员的弹药被消耗就会回复自身6%生命值，并有25%概率立即对该干员攻击范围的敌人召唤一次轰炸，造成相当于自身攻击力150%的物理溅射伤害",
-                "mod": "在场时，每当有友方干员的弹药被消耗就会回复自身6%生命值，并有35%概率立即对该干员攻击范围的敌人召唤一次轰炸，造成相当于自身攻击力185%的物理溅射伤害",
-                "upgradeDescription": "When on field, recovers 6% HP whenever an ally operator consumes ammo. Additionally, there is 35% chance to deals 185% ATK as AOE Physical damage to enemies within that operator's Attack Range"
-            },
-            {
-                "name": "火力电台",
-                "CN": "在场时，每当有友方干员的弹药被消耗就会回复自身6%生命值，并有25%概率立即对该干员攻击范围的敌人召唤一次轰炸，造成相当于自身攻击力165%<@ba.talpu>(+15%)</>的物理溅射伤害",
-                "mod": "在场时，每当有友方干员的弹药被消耗就会回复自身6%生命值，并有35%概率立即对该干员攻击范围的敌人召唤一次轰炸，造成相当于自身攻击力200%<@ba.talpu>(+15%)</>的物理溅射伤害",
-                "upgradeDescription": "When on field, recovers 6% HP whenever an ally operator consumes ammo. Additionally, there is 35% chance to deals 200%<@ba.talpu>(+15%)</> ATK as AOE Physical damage to enemies within that operator's Attack Range"
-            }
-        ]
-    ],
-    "uniequip_002_lemuen": [
-        [
-            {
-                "name": "逃犯引渡手续",
-                "CN": "在场20秒后，攻击力+10%，自身弹药类技能弹药上限+1",
-                "mod": "在场20秒后，攻击力+15%，自身弹药类技能弹药上限+2",
-                "upgradeDescription": "ATK+15% and ammo capacity +2 after being deployed for 20 seconds"
-            }
-        ],
-        [
-            {
-                "name": "逃犯引渡手续",
-                "CN": "在场20秒后，攻击力+10%，自身弹药类技能弹药上限+1",
-                "mod": "在场15秒后，攻击力+18%，自身弹药类技能弹药上限+2，其他拉特兰干员弹药类技能弹药上限+1",
-                "upgradeDescription": "ATK+18%, ammo capacity +2, other [Laterano] operator ammo capacity +1 after being deployed for 15 seconds"
-            }
-        ]
-    ],
-    "uniequip_002_rmixer": [
-        [
-            {
-                "name": "扫射迎宾仪礼",
-                "CN": "每次造成伤害使自身10秒内防御力+30，攻击速度+3，最多可叠加3层",
-                "mod": "每次造成伤害使自身10秒内防御力+40，攻击速度+4，最多可叠加3层",
-                "upgradeDescription": "When dealing damage, DEF+40 and ASPD+4 for 10 seconds. Can stack 3 times"
-            }
-        ],
-        [
-            {
-                "name": "扫射迎宾仪礼",
-                "CN": "每次造成伤害使自身10秒内防御力+30，攻击速度+3，最多可叠加3层",
-                "mod": "每次造成伤害使自身10秒内防御力+50，攻击速度+5，最多可叠加3层；层数叠满时，使场上所有【拉特兰】干员的攻击速度不会低于战斗开始时的攻击速度",
-                "upgradeDescription": "When dealing damage, DEF+50 and ASPD+5 for 10 seconds. Can stack 3 times; When max stacked, all [Laterano] operators cannot have their ASPD lower than ASPD at the start of the battle"
-            }
-        ]
-    ],
-    "uniequip_002_phatm2": [
-        [
-            {
-                "name": "堕梦",
-                "CN": "在场时，全场处于<$ba.dt.neural2>神经损伤</>爆发期间的敌人攻击速度-12；攻击范围内的敌人普通攻击时受到70点<$ba.dt.neural2>神经损伤</>",
-                "mod": "在场时，全场处于<$ba.dt.neural2>神经损伤</>爆发期间的敌人攻击速度-17；攻击范围内的敌人普通攻击时受到80点<$ba.dt.neural2>神经损伤</>",
-                "upgradeDescription": "Enemies under the burst effect of <$ba.dt.neural2>Nervous Impairment</>, ASPD -17; Enemies within Attack Range receive 80 <$ba.dt.neural2>Nervous Impairment</> when attacking"
-            },
-            {
-                "name": "堕梦",
-                "CN": "在场时，全场处于<$ba.dt.neural2>神经损伤</>爆发期间的敌人攻击速度-16<@ba.talpu>(+4)</>；攻击范围内的敌人普通攻击时受到70点<$ba.dt.neural2>神经损伤</>",
-                "mod": "在场时，全场处于<$ba.dt.neural2>神经损伤</>爆发期间的敌人攻击速度-21<@ba.talpu>(+4)</>；攻击范围内的敌人普通攻击时受到80点<$ba.dt.neural2>神经损伤</>",
-                "upgradeDescription": "Enemies under the burst effect of <$ba.dt.neural2>Nervous Impairment</>, ASPD -21<@ba.talpu>(+4)</>; Enemies within Attack Range receive 80 <$ba.dt.neural2>Nervous Impairment</> when attacking"
-            }
-        ],
-        [
-            {
-                "name": "堕梦",
-                "CN": "在场时，全场处于<$ba.dt.neural2>神经损伤</>爆发期间的敌人攻击速度-12；攻击范围内的敌人普通攻击时受到70点<$ba.dt.neural2>神经损伤</>",
-                "mod": "在场时，全场处于<$ba.dt.neural2>神经损伤</>爆发期间的敌人攻击速度-20；攻击范围内的敌人普通攻击时受到90点<$ba.dt.neural2>神经损伤</>",
-                "upgradeDescription": "Enemies under the burst effect of <$ba.dt.neural2>Nervous Impairment</>, ASPD -20; Enemies within Attack Range receive 90 <$ba.dt.neural2>Nervous Impairment</> when attacking"
-            },
-            {
-                "name": "堕梦",
-                "CN": "在场时，全场处于<$ba.dt.neural2>神经损伤</>爆发期间的敌人攻击速度-16<@ba.talpu>(+4)</>；攻击范围内的敌人普通攻击时受到70点<$ba.dt.neural2>神经损伤</>",
-                "mod": "在场时，全场处于<$ba.dt.neural2>神经损伤</>爆发期间的敌人攻击速度-24<@ba.talpu>(+4)</>；攻击范围内的敌人普通攻击时受到90点<$ba.dt.neural2>神经损伤</>",
-                "upgradeDescription": "Enemies under the burst effect of <$ba.dt.neural2>Nervous Impairment</>, ASPD -24<@ba.talpu>(+4)</>; Enemies within Attack Range receive 90 <$ba.dt.neural2>Nervous Impairment</> when attacking"
-            }
-        ]
-    ],
-    "uniequip_002_necras": [
-        [
-            {
-                "name": "复燃",
-                "CN": "攻击范围内敌人被击倒时生成一个悲叹的仆役，最多召唤3个，若无法再次召唤则使一个悲叹的仆役升级(提升阻挡数与更多的生命、攻击和防御)",
-                "mod": "攻击范围内敌人被击倒时在10秒内自身攻击力+15%，并在攻击范围内生成一个悲叹的仆役，最多召唤3个，若无法再次召唤则使一个悲叹的仆役升级(提升阻挡数与更多的生命、攻击和防御",
-                "upgradeDescription": "When an enemy is defeated within Attack Range, ATK +15% for 10 seconds and summons a Servant of Lamentation (max 3); if no more Servants can be summoned, upgrades a Servant instead (increases Block, HP, ATK, and DEF)"
-            }
-        ],
-        [
-            {
-                "name": "复燃",
-                "CN": "攻击范围内敌人被击倒时生成一个悲叹的仆役，最多召唤3个，若无法再次召唤则使一个悲叹的仆役升级(提升阻挡数与更多的生命、攻击和防御)",
-                "mod": "自身和召唤物攻击范围内敌人被击倒时在10秒内自身攻击力+25%，并在攻击范围内生成一个悲叹的仆役，最多召唤3个，若无法再次召唤则使一个悲叹的仆役升级(提升阻挡数与更多的生命、攻击和防御",
-                "upgradeDescription": "When an enemy is defeated within Necrass or Servants' Attack Range, ATK +25% for 10 seconds and summons a Servant of Lamentation (max 3); if no more Servants can be summoned, upgrades a Servant instead (increases Block, HP, ATK, and DEF)"
-            }
-        ]
-    ],
-    "uniequip_002_tecno": [
-        [
-            {
-                "name": "Freestyle Puppetry",
-                "CN": "攻击范围内的地面敌人被击倒时原地生成一个木偶舞者(最多存在5个)，木偶舞者攻击造成法术伤害",
-                "mod": "攻击范围内的地面敌人被击倒时原地生成一个属性更强的木偶舞者(最多存在5个)，木偶舞者攻击造成法术伤害",
-                "upgradeDescription": "After defeating any ground enemy within range, a stronger Puppet Dancer spawns where they fall (up to 5 at a time); Puppet Dancers deal Arts damage."
-            }
-        ],
-        [
-            {
-                "name": "Freestyle Puppetry",
-                "CN": "攻击范围内的地面敌人被击倒时原地生成一个木偶舞者(最多存在5个)，木偶舞者攻击造成法术伤害",
-                "mod": "攻击范围内的地面敌人被击倒时原地生成一个属性更强的木偶舞者(最多存在5个)，木偶舞者攻击造成法术伤害，木偶舞者存在时自身攻击力+15%",
-                "upgradeDescription": "After defeating any ground enemy within range, a stronger Puppet Dancer spawns where they fall (up to 5 at a time); Puppet Dancers deal Arts damage. While a Puppet is present, ATK +15%"
-            }
-        ]
-    ],
-    "uniequip_003_ascln": [
-        [
-            {
-                "name": "Mortal Interrogation",
-                "EN": "Attacks inflict the following effect on enemies: Movement Speed reduced by 18% and take 10% of Ascalon's current ATK as Arts damage per second for 25s, stacking up to 3 times.",
-                "CN": "攻击对敌人施加效果：移动速度降低18％，每秒受到10％阿斯卡纶当前攻击力的法术伤害，持续25秒，效果最多叠加三层",
-                "mod": "攻击对敌人施加效果：移动速度降低18％，每秒受到10％阿斯卡纶当前攻击力的法术伤害，持续25秒，效果最多叠加三层，拥有该效果的敌人被击倒时阿斯卡纶回复5%生命，",
-                "upgradeDescription": "Attacks inflict the following effect on enemies: Movement Speed reduced by 18% and take 10% of Ascalon's current ATK as Arts damage per second for 25s, stacking up to 3 times. Recover 5% HP whenever an enemy is defeated while this effect is active."
-            }
-        ],
-        [
-            {
-                "name": "Mortal Interrogation",
-                "EN": "Attacks inflict the following effect on enemies: Movement Speed reduced by 18% and take 10% of Ascalon's current ATK as Arts damage per second for 25s, stacking up to 3 times.",
-                "CN": "攻击对敌人施加效果：移动速度降低18％，每秒受到10％阿斯卡纶当前攻击力的法术伤害，持续25秒，效果最多叠加三层",
-                "mod": "攻击对敌人施加效果：移动速度降低18％，每秒受到10％阿斯卡纶当前攻击力的法术伤害，持续25秒，效果最多叠加三层，拥有该效果的敌人被击倒时阿斯卡纶回复10%生命",
-                "upgradeDescription": "Attacks inflict the following effect on enemies: Movement Speed reduced by 18% and take 10% of Ascalon's current ATK as Arts damage per second for 25s, stacking up to 3 times. Recover 10% HP whenever an enemy is defeated while this effect is active."
-            }
-        ]
-    ],
-    "uniequip_003_f12yin": [
-        [
-            {
-                "name": "Sturdy Constitution",
-                "EN": "DEF +10%; Physical Dodge +15%",
-                "CN": "防御力+10%，获得15%的物理闪避",
-                "mod": "防御力+14%，获得20%的物理闪避；触发闪避时下次攻击使目标战栗1秒",
-                "upgradeDescription": "DEF +14%; Physical Dodge +20%; When dodge an attack, next attack <$ba.tremble>Frighten</> target for 1 seconds"
-            }
-        ],
-        [
-            {
-                "name": "Sturdy Constitution",
-                "EN": "DEF +10%; Physical Dodge +15%",
-                "CN": "防御力+10%，获得15%的物理闪避",
-                "mod": "防御力+20%，获得25%的物理闪避；触发闪避时下次攻击使目标战栗3秒",
-                "upgradeDescription": "DEF +20%; Physical Dodge +25%; When dodge an attack, next attack <$ba.tremble>Frighten</> target for 3 seconds"
-            }
-        ]
-    ],
-    "uniequip_003_doroth": [
-        [
-            {
-                "name": "Resonator",
-                "EN": "Can deploy up to 8 Resonators (Can store up to 10); The first enemy that steps on a Resonator will trigger its effect. On deployment, immediately deploys 2 Resonators within Attack Range",
-                "CN": "可以使用8个共振装置(最多拥有10个)，踩上去的第一个敌人会触发其效果，部署后立刻在攻击范围内召唤2个共振装置",
-                "mod": "可以使用8个共振装置(最多拥有13个)，踩上去的第一个敌人会触发其效果，部署后立刻在攻击范围内召唤3个共振装置",
-                "upgradeDescription": "Can deploy up to 8 Resonators (Can store up to 13); The first enemy that steps on a Resonator will trigger its effect. On deployment, immediately deploys 3 Resonators within Attack Range"
-            },
-            {
-                "name": "Resonator",
-                "EN": "Can deploy up to 10 <@ba.talpu>(+2)</> Resonators (Can store up to 10); The first enemy that steps on a Resonator will trigger its effect. On deployment, immediately deploys 2 Resonators within Attack Range",
-                "CN": "可以使用10<@ba.talpu>(+2)</>个共振装置(最多拥有10个)，踩上去的第一个敌人会触发其效果，部署后立刻在攻击范围内召唤2个共振装置",
-                "mod": "可以使用10<@ba.talpu>(+2)</>个共振装置(最多拥有13个)，踩上去的第一个敌人会触发其效果，部署后立刻在攻击范围内召唤3个共振装置",
-                "upgradeDescription": "Can deploy up to 10 <@ba.talpu>(+2)</> Resonators (Can store up to 13); The first enemy that steps on a Resonator will trigger its effect. On deployment, immediately deploys 3 Resonators within Attack Range"
-            }
-        ],
-        [
-            {
-                "name": "Resonator",
-                "EN": "Can deploy up to 8 Resonators (Can store up to 10); The first enemy that steps on a Resonator will trigger its effect. On deployment, immediately deploys 2 Resonators within Attack Range",
-                "CN": "可以使用8个共振装置(最多拥有10个)，踩上去的第一个敌人会触发其效果，部署后立刻在攻击范围内召唤2个共振装置",
-                "mod": "可以使用8个共振装置(最多拥有13个)，踩上去的第一个敌人会触发其效果，部署后立刻在攻击范围内召唤3个共振装置，部署共振装置时有50%概率在攻击范围内额外召唤一个共振装置",
-                "upgradeDescription": "Can deploy up to 8 Resonators (Can store up to 13); The first enemy that steps on a Resonator will trigger its effect. On deployment, immediately deploys 3 Resonators within Attack Range; Has 50% chance to deploy an additional trap in Attack Range when deploying a trap"
-            },
-            {
-                "name": "Resonator",
-                "EN": "Can deploy up to 10 <@ba.talpu>(+2)</> Resonators (Can store up to 10); The first enemy that steps on a Resonator will trigger its effect. On deployment, immediately deploys 2 Resonators within Attack Range",
-                "CN": "可以使用10<@ba.talpu>(+2)</>个共振装置(最多拥有10个)，踩上去的第一个敌人会触发其效果，部署后立刻在攻击范围内召唤2个共振装置",
-                "mod": "可以使用10<@ba.talpu>(+2)</>个共振装置(最多拥有13个)，踩上去的第一个敌人会触发其效果，部署后立刻在攻击范围内召唤3个共振装置，部署共振装置时有50%概率在攻击范围内额外召唤一个共振装置",
-                "upgradeDescription": "Can deploy up to 10 <@ba.talpu>(+2)</> Resonators (Can store up to 13); The first enemy that steps on a Resonator will trigger its effect. On deployment, immediately deploys 3 Resonators within Attack Range; Has 50% chance to deploy an additional trap in Attack Range when deploying a trap"
-            }
-        ]
-    ],
     "uniequip_002_reckpr": [
         [
             {
@@ -979,13 +283,13 @@
                 "name": "诱人美馔",
                 "CN": "攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力120%的元素伤害",
                 "mod": "攻击处于麻痹状态的目标时，攻击力提升至110%，攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力130%的元素伤害",
-                "upgradeDescription": "When attack <$ba.palsy>Paralyze</> enemies, increase ATK to 110%. Enemies within Attack Range take 130% ATK as Elemental Damage when they <$ba.palsy>Paralyze</>"
+                "upgradeDescription": "When attack <$ba.palsy>Paralysis</> enemies, increase ATK to 110%. Enemies within Attack Range take 130% of ATK as Elemental damage when they trigger <$ba.palsy>Paralysis</>"
             },
             {
                 "name": "诱人美馔",
                 "CN": "攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力130%<@ba.talpu>(+10%)</>的元素伤害",
                 "mod": "攻击处于麻痹状态的目标时，攻击力提升至110%，攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力140%<@ba.talpu>(+10%)</>的元素伤害",
-                "upgradeDescription": "When attack <$ba.palsy>Paralyze</> enemies, increase ATK to 110%. Enemies within Attack Range take 140%<@ba.talpu>(+10%)</> ATK as Elemental Damage when they <$ba.palsy>Paralyze</>"
+                "upgradeDescription": "When attack <$ba.palsy>Paralysis</> enemies, increase ATK to 110%. Enemies within Attack Range take 140% <@ba.talpu>(+10%)</> of ATK as Elemental damage when they trigger <$ba.palsy>Paralysis</>"
             }
         ],
         [
@@ -993,13 +297,13 @@
                 "name": "诱人美馔",
                 "CN": "攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力120%的元素伤害",
                 "mod": "攻击处于麻痹状态的目标时，攻击力提升至120%，攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力140%的元素伤害",
-                "upgradeDescription": "When attack <$ba.palsy>Paralyze</> enemies, increase ATK to 120%. Enemies within Attack Range take 140% ATK as Elemental Damage when they <$ba.palsy>Paralyze</>"
+                "upgradeDescription": "When attack <$ba.palsy>Paralysis</> enemies, increase ATK to 120%. Enemies within Attack Range take 140% of ATK as Elemental damage when they trigger <$ba.palsy>Paralysis</>"
             },
             {
                 "name": "诱人美馔",
                 "CN": "攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力130%<@ba.talpu>(+10%)</>的元素伤害",
                 "mod": "攻击处于麻痹状态的目标时，攻击力提升至120%，攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力150%<@ba.talpu>(+10%)</>的元素伤害",
-                "upgradeDescription": "When attack <$ba.palsy>Paralyze</> enemies, increase ATK to 120%. Enemies within Attack Range take 150%<@ba.talpu>(+10%)</> ATK as Elemental Damage when they <$ba.palsy>Paralyze</>"
+                "upgradeDescription": "When attack <$ba.palsy>Paralysis</> enemies, increase ATK to 120%. Enemies within Attack Range take 150% <@ba.talpu>(+10%)</> of ATK as Elemental damage when they trigger <$ba.palsy>Paralysis</>"
             }
         ]
     ],
@@ -1368,6 +672,796 @@
                 "CN": "使攻击范围内敌人受到的<$ba.dt.apoptosis2>凋亡损伤</>提高22%<@ba.talpu>(+2%)</>",
                 "mod": "在场时，全场敌人受到的<$ba.dt.apoptosis2>凋亡损伤</>提高22%<@ba.talpu>(+2%)</>，<$ba.dt.apoptosis2>凋亡损伤</>爆发期间每秒受到150点元素伤害",
                 "upgradeDescription": "Enemies within attack range take 22%<@ba.talpu>(+2%)</> more <$ba.dt.apoptosis2>Necrosis damage</> and take additional 150 Elemental Damage per second when under the burst effect of <$ba.dt.apoptosis2>Necrosis Damage</>"
+            }
+        ]
+    ],
+    "uniequip_002_wintim": [
+        [
+            {
+                "name": "疾笔撰录",
+                "CN": "攻击速度+10，自身受到伤害后失去该效果",
+                "mod": "攻击速度+13，自身受到伤害后失去该效果",
+                "upgradeDescription": "ASPD +13, lost this effect after taking damage."
+            },
+            {
+                "name": "疾笔撰录",
+                "CN": "攻击速度+12<@ba.talpu>(+2)</>，自身受到伤害后失去该效果",
+                "mod": "攻击速度+15<@ba.talpu>(+2)</>，自身受到伤害后失去该效果",
+                "upgradeDescription": "ASPD +15 <@ba.talpu>(+2)</>, lost this effect after taking damage."
+            }
+        ],
+        [
+            {
+                "name": "疾笔撰录",
+                "CN": "攻击速度+10，自身受到伤害后失去该效果",
+                "mod": "攻击速度+15，自身受到伤害后失去该效果",
+                "upgradeDescription": "ASPD +15, lost this effect after taking damage."
+            },
+            {
+                "name": "疾笔撰录",
+                "CN": "攻击速度+12<@ba.talpu>(+2)</>，自身受到伤害后失去该效果",
+                "mod": "攻击速度+17<@ba.talpu>(+2)</>，自身受到伤害后失去该效果",
+                "upgradeDescription": "ASPD +17 <@ba.talpu>(+2)</>, lost this effect after taking damage."
+            }
+        ]
+    ],
+    "uniequip_002_branch": [
+        [
+            {
+                "name": "简易包扎",
+                "CN": "技能结束时恢复自身50%最大生命值",
+                "mod": "技能期间防御力+15%; 技能结束时恢复自身60%最大生命值",
+                "upgradeDescription": "DEF +15% during skill duration. Restores 60% HP after skill ends."
+            },
+            {
+                "name": "简易包扎",
+                "CN": "技能结束时恢复自身60%<@ba.talpu>(+10%)</>最大生命值",
+                "mod": "技能期间防御力+15%; 技能结束时恢复自身70%<@ba.talpu>(+10%)</>最大生命值",
+                "upgradeDescription": "DEF +15% during skill duration. Restores 70% <@ba.talpu>(+10%)</> HP after skill ends."
+            }
+        ],
+        [
+            {
+                "name": "简易包扎",
+                "CN": "技能结束时恢复自身50%最大生命值",
+                "mod": "技能期间防御力+18%; 技能结束时恢复自身70%最大生命值",
+                "upgradeDescription": "DEF +18% during skill duration. Restores 70% HP after skill ends."
+            },
+            {
+                "name": "简易包扎",
+                "CN": "技能结束时恢复自身60%<@ba.talpu>(+10%)</>最大生命值",
+                "mod": "技能期间防御力+18%; 技能结束时恢复自身80%<@ba.talpu>(+10%)</>最大生命值",
+                "upgradeDescription": "DEF +18% during skill duration. Restores 80% <@ba.talpu>(+10%)</> HP after skill ends."
+            }
+        ]
+    ],
+    "uniequip_002_mantra": [
+        [
+            {
+                "name": "噤声限域",
+                "CN": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力135%的元素伤害，且触发<$ba.palsy>麻痹</>时有10%概率不消耗<$ba.palsy>麻痹</>层数",
+                "mod": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力155%的元素伤害，且触发<$ba.palsy>麻痹</>时有10%概率不消耗<$ba.palsy>麻痹</>层数",
+                "upgradeDescription": "Whenever an enemy triggers <$ba.palsy>Paralysis</>, immediately deals 155% ATK as Elemental Damage to that enemy; Has 10% chance to not consume <$ba.palsy>Paralysis</> stack when triggered"
+            },
+            {
+                "name": "噤声限域",
+                "CN": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力145%<@ba.talpu>(+10%)</>的元素伤害，且触发<$ba.palsy>麻痹</>时有13%<@ba.talpu>(+3%)</>概率不消耗<$ba.palsy>麻痹</>层数",
+                "mod": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力165%<@ba.talpu>(+10%)</>的元素伤害，且触发<$ba.palsy>麻痹</>时有13%<@ba.talpu>(+3%)</>概率不消耗<$ba.palsy>麻痹</>层数",
+                "upgradeDescription": "Whenever an enemy triggers <$ba.palsy>Paralysis</>, immediately deals 165% <@ba.talpu>(+10%)</> ATK as Elemental Damage to that enemy; Has 13% <@ba.talpu>(+3%)</> chance to not consume <$ba.palsy>Paralysis</> stack when triggered"
+            }
+        ],
+        [
+            {
+                "name": "噤声限域",
+                "CN": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力135%的元素伤害，且触发<$ba.palsy>麻痹</>时有10%概率不消耗<$ba.palsy>麻痹</>层数",
+                "mod": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力160%的元素伤害，且触发<$ba.palsy>麻痹</>时有15%概率不消耗<$ba.palsy>麻痹</>层数",
+                "upgradeDescription": "Whenever an enemy triggers <$ba.palsy>Paralysis</>, immediately deals 160% ATK as Elemental Damage to that enemy; Has 15% chance to not consume <$ba.palsy>Paralysis</> stack when triggered"
+            },
+            {
+                "name": "噤声限域",
+                "CN": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力145%<@ba.talpu>(+10%)</>的元素伤害，且触发<$ba.palsy>麻痹</>时有13%<@ba.talpu>(+3%)</>概率不消耗<$ba.palsy>麻痹</>层数",
+                "mod": "场上敌人触发<$ba.palsy>麻痹</>效果时立即受到相当于真言攻击力170%<@ba.talpu>(+10%)</>的元素伤害，且触发<$ba.palsy>麻痹</>时有18%<@ba.talpu>(+3%)</>概率不消耗<$ba.palsy>麻痹</>层数",
+                "upgradeDescription": "Whenever an enemy triggers <$ba.palsy>Paralysis</>, immediately deals 170% <@ba.talpu>(+10%)</> ATK as Elemental Damage to that enemy; Has 18% <@ba.talpu>(+3%)</> chance to not consume <$ba.palsy>Paralysis</> stack when triggered"
+            }
+        ]
+    ],
+    "uniequip_002_narant": [
+        [
+            {
+                "name": "'I See, I Take'",
+                "EN": "When deployed, each attack <$ba.steal>Steals</> 25 ATK (Caps at 250) and 20 DEF (Caps at 200) from the target",
+                "CN": "在场时，每次攻击到敌人<$ba.steal>偷取</>其25点攻击力(最高250点)与20点防御力(最高200点)",
+                "mod": "在场时，每次攻击到敌人<$ba.steal>偷取</>其25点攻击力(最高275点)与20点防御力(最高220点)，攻击到周围8格的敌人时偷取触发2次",
+                "upgradeDescription": "When deployed, each attack <$ba.steal>Steals</> 25 ATK (Caps at 275) and 20 DEF (Caps at 220) from the target. If the target in the 8 surrounding tiles, double steal amount."
+            },
+            {
+                "name": "'I See, I Take'",
+                "EN": "When deployed, each attack <$ba.steal>Steals</> 27 <@ba.talpu>(+2)</> ATK (Caps at 270 <@ba.talpu>(+20)</>) and 21 <@ba.talpu>(+1)</> DEF (Caps at 210 <@ba.talpu>(+10)</>) from the target",
+                "CN": "在场时，每次攻击到敌人<$ba.steal>偷取</>其27<@ba.talpu>(+2)</>点攻击力(最高270<@ba.talpu>(+20)</>点)与21<@ba.talpu>(+1)</>点防御力(最高210<@ba.talpu>(+10)</>点)",
+                "mod": "在场时，每次攻击到敌人<$ba.steal>偷取</>其27<@ba.talpu>(+2)</>点攻击力(最高297<@ba.talpu>(+22)</>点)与21<@ba.talpu>(+1)</>点防御力(最高231<@ba.talpu>(+11)</>点)，攻击到周围8格的敌人时偷取触发2次",
+                "upgradeDescription": "When deployed, each attack <$ba.steal>Steals</> 27 <@ba.talpu>(+2)</> ATK (Caps at 297 <@ba.talpu>(+22)</>) and 21 <@ba.talpu>(+1)</> DEF (Caps at 231 <@ba.talpu>(+11)</>) from the target. If target the in the 8 surrounding tiles, double steal amount."
+            }
+        ],
+        [
+            {
+                "name": "'I See, I Take'",
+                "EN": "When deployed, each attack <$ba.steal>Steals</> 25 ATK (Caps at 250) and 20 DEF (Caps at 200) from the target",
+                "CN": "在场时，每次攻击到敌人<$ba.steal>偷取</>其25点攻击力(最高250点)与20点防御力(最高200点)",
+                "mod": "在场时，每次攻击到敌人<$ba.steal>偷取</>其25点攻击力(最高300点)与20点防御力(最高240点)，攻击到周围8格的敌人时偷取触发2次",
+                "upgradeDescription": "When deployed, each attack <$ba.steal>Steals</> 25 ATK (Caps at 300) and 20 DEF (Caps at 240) from the target. If the target in the 8 surrounding tiles, double steal amount."
+            },
+            {
+                "name": "'I See, I Take'",
+                "EN": "When deployed, each attack <$ba.steal>Steals</> 27 <@ba.talpu>(+2)</> ATK (Caps at 270 <@ba.talpu>(+20)</>) and 21 <@ba.talpu>(+1)</> DEF (Caps at 210 <@ba.talpu>(+10)</>) from the target",
+                "CN": "在场时，每次攻击到敌人<$ba.steal>偷取</>其27<@ba.talpu>(+2)</>点攻击力(最高270<@ba.talpu>(+20)</>点)与21<@ba.talpu>(+1)</>点防御力(最高210<@ba.talpu>(+10)</>点)",
+                "mod": "在场时，每次攻击到敌人<$ba.steal>偷取</>其27<@ba.talpu>(+2)</>点攻击力(最高324<@ba.talpu>(+24)</>点)与21<@ba.talpu>(+1)</>点防御力(最高252<@ba.talpu>(+12)</>点)，攻击到周围8格的敌人时偷取触发2次",
+                "upgradeDescription": "When deployed, each attack <$ba.steal>Steals</> 27 <@ba.talpu>(+2)</> ATK (Caps at 324 <@ba.talpu>(+24)</>) and 21 <@ba.talpu>(+1)</> DEF (Caps at 252 <@ba.talpu>(+12)</>) from the target. If the target in the 8 surrounding tiles, double steal amount."
+            }
+        ]
+    ],
+    "uniequip_002_brigid": [
+        [
+            {
+                "name": "Practiced Knot-Tier",
+                "EN": "After dealing damage 20 times, gains 35% Physical Dodge",
+                "CN": "造成20次伤害后，获得35%物理闪避",
+                "mod": "造成18次伤害后，攻击力+6%，获得40%物理闪避",
+                "upgradeDescription": "After dealing damage 18 times, ATK +6%, gains 40% Physical Dodge"
+            },
+            {
+                "name": "Practiced Knot-Tier",
+                "EN": "After dealing damage 20 times, gains 38% <@ba.talpu>(+3%)</> Physical Dodge",
+                "CN": "造成20次伤害后，获得38%<@ba.talpu>(+3%)</>物理闪避",
+                "mod": "造成18次伤害后，攻击力+6%，获得43%<@ba.talpu>(+3%)</>物理闪避",
+                "upgradeDescription": "After dealing damage 18 times, ATK +6%, gains 43% <@ba.talpu>(+3%)</> Physical Dodge"
+            }
+        ],
+        [
+            {
+                "name": "Practiced Knot-Tier",
+                "EN": "After dealing damage 20 times, gains 35% Physical Dodge",
+                "CN": "造成20次伤害后，获得35%物理闪避",
+                "mod": "造成16次伤害后，攻击力+10%，获得45%物理闪避",
+                "upgradeDescription": "After dealing damage 16 times, ATK +10%, gains 45% Physical Dodge"
+            },
+            {
+                "name": "Practiced Knot-Tier",
+                "EN": "After dealing damage 20 times, gains 38% <@ba.talpu>(+3%)</> Physical Dodge",
+                "CN": "造成20次伤害后，获得38%<@ba.talpu>(+3%)</>物理闪避",
+                "mod": "造成16次伤害后，攻击力+10%，获得48%<@ba.talpu>(+3%)</>物理闪避",
+                "upgradeDescription": "After dealing damage 16 times, ATK +10%, gains 48% <@ba.talpu>(+3%)</> Physical Dodge"
+            }
+        ]
+    ],
+    "uniequip_002_caper": [
+        [
+            {
+                "name": "Larking About",
+                "EN": "When attacking, 25% chance to increase that attack's ATK to 150%",
+                "CN": "攻击时，25%几率当次攻击的攻击力提升至150%",
+                "mod": "攻击时，28%几率当次攻击的攻击力提升至155%",
+                "upgradeDescription": "When attacking, 28% chance to increase that attack's ATK to 155%"
+            },
+            {
+                "name": "Larking About",
+                "EN": "When attacking, 25% chance to increase that attack's ATK to 160% <@ba.talpu>(+10%)</>",
+                "CN": "攻击时，25%几率当次攻击的攻击力提升至160%<@ba.talpu>(+10%)</>",
+                "mod": "攻击时，28%几率当次攻击的攻击力提升至165%<@ba.talpu>(+10%)</>",
+                "upgradeDescription": "When attacking, 28% chance to increase that attack's ATK to 165% <@ba.talpu>(+10%)</>"
+            }
+        ],
+        [
+            {
+                "name": "Larking About",
+                "EN": "When attacking, 25% chance to increase that attack's ATK to 150%",
+                "CN": "攻击时，25%几率当次攻击的攻击力提升至150%",
+                "mod": "攻击时，30%几率当次攻击的攻击力提升至160%",
+                "upgradeDescription": "When attacking, 30% chance to increase that attack's ATK to 160%"
+            },
+            {
+                "name": "Larking About",
+                "EN": "When attacking, 25% chance to increase that attack's ATK to 160% <@ba.talpu>(+10%)</>",
+                "CN": "攻击时，25%几率当次攻击的攻击力提升至160%<@ba.talpu>(+10%)</>",
+                "mod": "攻击时，30%几率当次攻击的攻击力提升至170%<@ba.talpu>(+10%)</>",
+                "upgradeDescription": "When attacking, 30% chance to increase that attack's ATK to 170% <@ba.talpu>(+10%)</>"
+            }
+        ]
+    ],
+    "uniequip_003_excu2": [
+        [
+            {
+                "name": "Empathy by Shotgun",
+                "EN": "For every Laterano Operator deployed, increases the ammo capacity of this unit's ammo-based skills by +1 (stacks up to 4 times)",
+                "CN": "每有一个[拉特兰]干员在场，自身的弹药类技能弹药上限+1(最多4层)",
+                "mod": "每有一个[拉特兰]干员在场，自身的弹药类技能弹药上限+1(最多4层); 自身的弹药类技能期间攻击力+8%，且弹药数量不少于一半时获得20%的物理与法术闪避",
+                "upgradeDescription": "For every Laterano Operator deployed, increases the ammo capacity of this unit's ammo-based skills by +1 (stacks up to 4 times); During Ammo-based skill duration, ATK +8% and gain 20% dodge when ammo is at or below half of ammo capacity"
+            }
+        ],
+        [
+            {
+                "name": "Empathy by Shotgun",
+                "EN": "For every Laterano Operator deployed, increases the ammo capacity of this unit's ammo-based skills by +1 (stacks up to 4 times)",
+                "CN": "每有一个[拉特兰]干员在场，自身的弹药类技能弹药上限+1(最多4层)",
+                "mod": "每有一个[拉特兰]干员在场，自身的弹药类技能弹药上限+1(最多4层); 自身的弹药类技能期间攻击力+12%，且弹药数量不少于一半时获得30%的物理与法术闪避",
+                "upgradeDescription": "For every Laterano Operator deployed, increases the ammo capacity of this unit's ammo-based skills by +1 (stacks up to 4 times); During Ammo-based skill duration, ATK +12% and gain 30% dodge when ammo is at or below half of ammo capacity"
+            }
+        ]
+    ],
+    "uniequip_003_amgoat": [
+        [
+            {
+                "name": "Wild Fire",
+                "EN": "Immediately obtains a small random number of Skill Points after deployment",
+                "CN": "部署后立即随机获得7~15点技力",
+                "mod": "部署后立即随机获得7~15点技力; 部署后范围内存在精英或领袖敌人时，获得的技力取最大值",
+                "upgradeDescription": "Immediately obtains 7~15 Skill Points after deployment. When deploy, if there is elite or leader enemy in Attack Range, obtains maximum value of Skill Points instead."
+            },
+            {
+                "name": "Wild Fire",
+                "EN": "Immediately obtains a large random number of Skill Points after deployment",
+                "CN": "部署后立即随机获得10<@ba.talpu>(+3)</>~19<@ba.talpu>(+4)</>点技力",
+                "mod": "部署后立即随机获得10<@ba.talpu>(+3)</>~19<@ba.talpu>(+4)</>点技力; 部署后范围内存在精英或领袖敌人时，获得的技力取最大值",
+                "upgradeDescription": "Immediately obtains 10<@ba.talpu>(+3)</>~19<@ba.talpu>(+4)</> Skill Points after deployment. When deploy, if there is elite or leader enemy in Attack Range, obtains maximum value of Skill Points instead."
+            }
+        ],
+        [
+            {
+                "name": "Wild Fire",
+                "EN": "Immediately obtains a small random number of Skill Points after deployment",
+                "CN": "部署后立即随机获得7~15点技力",
+                "mod": "部署后立即随机获得7~15点技力并随机提升6~15的攻击速度; 部署后范围内存在精英或领袖敌人时，获得的技力和提升的攻击速度取最大值",
+                "upgradeDescription": "Immediately obtains 7~15 Skill Points and 6~15 ASPD after deployment. When deploy, if there is elite or leader enemy in Attack Range, obtains maximum value of Skill Points and ASPD instead."
+            },
+            {
+                "name": "Wild Fire",
+                "EN": "Immediately obtains a large random number of Skill Points after deployment",
+                "CN": "部署后立即随机获得10<@ba.talpu>(+3)</>~19<@ba.talpu>(+4)</>点技力",
+                "mod": "部署后立即随机获得10<@ba.talpu>(+3)</>~19<@ba.talpu>(+4)</>点技力并随机提升6~15的攻击速度; 部署后范围内存在精英或领袖敌人时，获得的技力和提升的攻击速度取最大值",
+                "upgradeDescription": "Immediately obtains 10<@ba.talpu>(+3)</>~19<@ba.talpu>(+4)</> Skill Points and 6~15 ASPD after deployment. When deploy, if there is elite or leader enemy in Attack Range, obtains maximum value of Skill Points and ASPD instead."
+            }
+        ]
+    ],
+    "uniequip_003_radian": [
+        [
+            {
+                "name": "卡带里的灵感",
+                "CN": "可以使用5个召唤物(最多同时部署3个)，功能随技能选择而改变",
+                "mod": "可以使用5个召唤物(最多同时部署3个)，功能随技能选择而改变。在[岁的界园志异]中，电弧会回收自身周围四格的召唤物，使自身立即回复20％最大生命值且之后攻击时对目标额外造成一次相当于攻击力20％的法术伤害(最多可叠加4次)",
+                "upgradeDescription": "Can use up to 5 summons (max 3 deployed at once). Summons’ effect changes based upon Skill; In <@ba.kw>[Sui's Garden of Grotesqueries]</>, Raidian retrieves summon in the 4 adjacent tiles, recover 20% HP and deal addition 20% ATK as Arts damage when attacking (stack up to 4 times)"
+            }
+        ],
+        [
+            {
+                "name": "卡带里的灵感",
+                "CN": "可以使用5个召唤物(最多同时部署3个)，功能随技能选择而改变",
+                "mod": "可以使用5个召唤物(最多同时部署3个)，功能随技能选择而改变。在[岁的界园志异]中，电弧会回收自身周围四格的召唤物，使自身立即回复25％最大生命值且之后攻击时对目标额外造成一次相当于攻击力30％的法术伤害(最多可叠加4次)",
+                "upgradeDescription": "Can use up to 5 summons (max 3 deployed at once). Summons’ effect changes based upon Skill; In <@ba.kw>[Sui's Garden of Grotesqueries]</>, Raidian retrieves summon in the 4 adjacent tiles, recover 25% HP and deal addition 30% ATK as Arts damage when attacking (stack up to 4 times)"
+            }
+        ]
+    ],
+    "uniequip_002_sbell2": [
+        [
+            {
+                "name": "无垠的雪景",
+                "CN": "攻击范围内的地面每隔5.5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力75%的法术伤害，每层积雪使经过的所有敌人移动速度下降12%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "mod": "攻击范围内的地面每隔5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力90%的法术伤害，每层积雪使经过的所有敌人移动速度下降12%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "upgradeDescription": "Snow periodically form on the ground tiles in Attack Range every 5 seconds, immediately deals 90% ATK as Arts damage to enemies passing through. Each layer of Snow reduce movement speed by 12%, up to 5 layers per tile (Snow disappears when the first enemy leaves the area)."
+            },
+            {
+                "name": "无垠的雪景",
+                "CN": "攻击范围内的地面每隔5.5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力80%<@ba.talpu>(+5%)</>的法术伤害，每层积雪使经过的所有敌人移动速度下降12%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "mod": "攻击范围内的地面每隔5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力95%<@ba.talpu>(+5%)</>的法术伤害，每层积雪使经过的所有敌人移动速度下降12%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "upgradeDescription": "Snow periodically form on the ground tiles in Attack Range every 5 seconds, immediately deals 95%<@ba.talpu>(+5%)</> ATK as Arts damage to enemies passing through. Each layer of Snow reduce movement speed by 12%, up to 5 layers per tile (Snow disappears when the first enemy leaves the area)."
+            }
+        ],
+        [
+            {
+                "name": "无垠的雪景",
+                "CN": "攻击范围内的地面每隔5.5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力75%的法术伤害，每层积雪使经过的所有敌人移动速度下降12%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "mod": "攻击范围内的地面每隔5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力100%的法术伤害，每层积雪使经过的所有敌人移动速度下降12%，最多叠加5层(首个敌人离开该地块时积雪消失)，部署后立刻使攻击范围内的地面产生一层积雪",
+                "upgradeDescription": "Snow periodically form on the ground tiles in Attack Range every 5 seconds, immediately deals 100% ATK as Arts damage to enemies passing through. Each layer of Snow reduce movement speed by 12%, up to 5 layers per tile (Snow disappears when the first enemy leaves the area). When deployed, immediately form 1 Snow layer on all ground tiles in Attack Range"
+            },
+            {
+                "name": "无垠的雪景",
+                "CN": "攻击范围内的地面每隔5.5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力80%<@ba.talpu>(+5%)</>的法术伤害，每层积雪使经过的所有敌人移动速度下降12%，最多叠加5层(首个敌人离开该地块时积雪消失)",
+                "mod": "攻击范围内的地面每隔5秒产生一层积雪，地面敌人经过时立即受到相当于攻击力105%<@ba.talpu>(+5%)</>的法术伤害，每层积雪使经过的所有敌人移动速度下降12%，最多叠加5层(首个敌人离开该地块时积雪消失)，部署后立刻使攻击范围内的地面产生一层积雪",
+                "upgradeDescription": "Snow periodically form on the ground tiles in Attack Range every 5 seconds, immediately deals 105%<@ba.talpu>(+5%)</> ATK as Arts damage to enemies passing through. Each layer of Snow reduce movement speed by 12%, up to 5 layers per tile (Snow disappears when the first enemy leaves the area). When deployed, immediately form 1 Snow layer on all ground tiles in Attack Range"
+            }
+        ]
+    ],
+    "uniequip_004_heyak": [
+        [
+            {
+                "name": "Inherited End",
+                "EN": "When attacking aerial targets, increases ATK to 120%, and silences targets for 3 seconds",
+                "CN": "攻击空中目标时攻击力提升至120%，并使其特殊能力失效3秒",
+                "mod": "攻击空中敌人时攻击力提升至140%，并使其特殊能力失效4秒; 在<@ba.kw>集成战略</>中，首次部署获得1点临时目标生命值; 每次部署后，首次有敌人进入目标点所在地块时，场上所有敌人<$ba.levitate>浮空</>15秒",
+                "upgradeDescription": "When attacking aerial targets, increases ATK to 140%, and silences targets for 4 seconds; In <@ba.kw>Integrated Strategies</>, the first deployment grants 1 temporary Life Point. After each deployment, when the first enemy reaches Objective Point, <$ba.levitate>levitates</> all enemies for 15 seconds"
+            },
+            {
+                "name": "Inherited End",
+                "EN": "When attacking aerial targets, increases ATK to 123% <@ba.talpu>(+3%)</>, and silences targets for 3 seconds",
+                "CN": "攻击空中目标时攻击力提升至123%<@ba.talpu>(+3%)</>，并使其特殊能力失效3秒",
+                "mod": "攻击空中敌人时攻击力提升至143%<@ba.talpu>(+3%)</>，并使其特殊能力失效4秒; 在<@ba.kw>集成战略</>中，首次部署获得1点临时目标生命值; 每次部署后，首次有敌人进入目标点所在地块时，场上所有敌人<$ba.levitate>浮空</>15秒",
+                "upgradeDescription": "When attacking aerial targets, increases ATK to 143%<@ba.talpu>(+3%)</>, and silences targets for 4 seconds; In <@ba.kw>Integrated Strategies</>, the first deployment grants 1 temporary Life Point. After each deployment, when the first enemy reaches Objective Point, <$ba.levitate>levitates</> all enemies for 15 seconds"
+            }
+        ],
+        [
+            {
+                "name": "Inherited End",
+                "EN": "When attacking aerial targets, increases ATK to 120%, and silences targets for 3 seconds",
+                "CN": "攻击空中目标时攻击力提升至120%，并使其特殊能力失效3秒",
+                "mod": "攻击空中敌人时攻击力提升至145%，并使其特殊能力失效5秒; 在<@ba.kw>集成战略</>中，首次部署获得1点临时目标生命值; 每次部署后，首次有敌人进入目标点所在地块时，场上所有敌人<$ba.levitate>浮空</>15秒; 自身技能会对敌人及其周围的目标同时造成浮空效果和伤害效果",
+                "upgradeDescription": "When attacking aerial targets, increases ATK to 145%, and silences targets for 5 seconds; In <@ba.kw>Integrated Strategies</>, the first deployment grants 1 temporary Life Point. After each deployment, when the first enemy reaches Objective Point, <$ba.levitate>levitates</> all enemies for 15 seconds. Ho'olheyak 's skill simultaneously deals damage and <$ba.levitate>levitates</> the target and enemies surrounding it"
+            },
+            {
+                "name": "Inherited End",
+                "EN": "When attacking aerial targets, increases ATK to 123% <@ba.talpu>(+3%)</>, and silences targets for 3 seconds",
+                "CN": "攻击空中目标时攻击力提升至123%<@ba.talpu>(+3%)</>，并使其特殊能力失效3秒",
+                "mod": "攻击空中目标时攻击力提升至148%<@ba.talpu>(+3%)</>，并使其特殊能力失效5秒; 在<@ba.kw>集成战略</>中，首次部署获得1点临时目标生命值; 每次部署后，首次有敌人进入目标点所在地块时，场上所有敌人<$ba.levitate>浮空</>15秒; 自身技能会对敌人及其周围的目标同时造成浮空效果和伤害效果",
+                "upgradeDescription": "When attacking aerial targets, increases ATK to 148%<@ba.talpu>(+3%)</>, and silences targets for 5 seconds; In <@ba.kw>Integrated Strategies</>, the first deployment grants 1 temporary Life Point. After each deployment, when the first enemy reaches Objective Point, <$ba.levitate>levitates</> all enemies for 15  seconds. Ho'olheyak 's skill simultaneously deals damage and <$ba.levitate>levitates</> the target and enemies surrounding it"
+            }
+        ]
+    ],
+    "uniequip_004_gnosis": [
+        [
+            {
+                "name": "Rigid Ice",
+                "EN": "Attacks inflict <$ba.cold>Cold</> for 1 second; Apply 25% <$ba.fragile>Fragile</> effect to <$ba.cold>Cold</> enemies within range. <$ba.frozen>Frozen</> enemies within range receive double the <$ba.fragile>Fragile</> effect",
+                "CN": "攻击造成1秒<$ba.cold>寒冷</>; 范围内<$ba.cold>寒冷</>的敌人受到25%的<$ba.fragile>脆弱</>，范围内<$ba.frozen>冻结</>的敌人<$ba.fragile>脆弱</>效果提升至2倍",
+                "mod": "攻击造成1秒<$ba.cold>寒冷</>; 在<@ba.kw>集成战略</>中，在场时全场<$ba.cold>寒冷</>的敌人受到25%的<$ba.fragile>脆弱</>，<$ba.frozen>冻结</>的敌人<$ba.fragile>脆弱</>效果提升至2倍; 其他[谢拉格]干员每次开启技能后，对攻击范围内的敌人造成3秒的<$ba.cold>寒冷</>",
+                "upgradeDescription": "Attacks inflict <$ba.cold>Cold</> for 1 second; In <@ba.kw>Integrated Strategies</>, apply 25% <$ba.fragile>Fragile</> effect to <$ba.cold>Cold</> enemies on the field. <$ba.frozen>Frozen</> enemies within range receive double the <$ba.fragile>Fragile</> effect. Other [Kjerag] operators inflict <$ba.cold>Cold</> to all enemies in Attack Range for 3 seconds when activate their skill"
+            },
+            {
+                "name": "Rigid Ice",
+                "EN": "Attacks inflict <$ba.cold>Cold</> for 1 second; Apply 27% <@ba.talpu>(+2%)</> <$ba.fragile>Fragile</> effect to <$ba.cold>Cold</> enemies within range. <$ba.frozen>Frozen</> enemies within range receive double the <$ba.fragile>Fragile</> effect",
+                "CN": "攻击造成1秒<$ba.cold>寒冷</>; 范围内<$ba.cold>寒冷</>的敌人受到27%<@ba.talpu>(+2%)</>的<$ba.fragile>脆弱</>，范围内<$ba.frozen>冻结</>的敌人<$ba.fragile>脆弱</>效果提升至2倍",
+                "mod": "攻击造成1秒<$ba.cold>寒冷</>; 在<@ba.kw>集成战略</>中，在场时全场<$ba.cold>寒冷</>的敌人受到27%<@ba.talpu>(+2%)</>的<$ba.fragile>脆弱</>，<$ba.frozen>冻结</>的敌人<$ba.fragile>脆弱</>效果提升至2倍; 其他[谢拉格]干员每次开启技能后，对攻击范围内的敌人造成3秒的<$ba.cold>寒冷</>",
+                "upgradeDescription": "Attacks inflict <$ba.cold>Cold</> for 1 second; In <@ba.kw>Integrated Strategies</>, apply 27%<@ba.talpu>(+2%)</> <$ba.fragile>Fragile</> effect to <$ba.cold>Cold</> enemies on the field. <$ba.frozen>Frozen</> enemies within range receive double the <$ba.fragile>Fragile</> effect. Other [Kjerag] operators inflict <$ba.cold>Cold</> to all enemies in Attack Range for 3 seconds when activate their skill"
+            }
+        ],
+        [
+            {
+                "name": "Rigid Ice",
+                "EN": "Attacks inflict <$ba.cold>Cold</> for 1 second; Apply 25% <$ba.fragile>Fragile</> effect to <$ba.cold>Cold</> enemies within range. <$ba.frozen>Frozen</> enemies within range receive double the <$ba.fragile>Fragile</> effect",
+                "CN": "攻击造成1秒<$ba.cold>寒冷</>; 范围内<$ba.cold>寒冷</>的敌人受到25%的<$ba.fragile>脆弱</>，范围内<$ba.frozen>冻结</>的敌人<$ba.fragile>脆弱</>效果提升至2倍",
+                "mod": "攻击造成1秒<$ba.cold>寒冷</>; 在<@ba.kw>集成战略</>中，在场时全场<$ba.cold>寒冷</>的敌人受到30%的<$ba.fragile>脆弱</>，<$ba.frozen>冻结</>的敌人<$ba.fragile>脆弱</>效果提升至2倍，<$ba.cold>寒冷</>或<$ba.frozen>冻结</>状态下的敌人每秒受到的<$ba.fragile>脆弱</>提升5%，最高提升至80%; 其他[谢拉格]干员每次开启技能后，对攻击范围内的敌人造成4秒的<$ba.cold>寒冷</>",
+                "upgradeDescription": "Attacks inflict <$ba.cold>Cold</> for 1 second; In <@ba.kw>Integrated Strategies</>, apply 30% <$ba.fragile>Fragile</> effect to <$ba.cold>Cold</> enemies on the field. <$ba.frozen>Frozen</> enemies within range receive double the <$ba.fragile>Fragile</> effect. While enemies under <$ba.cold>Cold</> or <$ba.frozen>Frozen</> effects, increase their <$ba.fragile>Fragile</> effect by 5% every second, up to 80%. Other [Kjerag] operators inflict <$ba.cold>Cold</> to all enemies in Attack Range for 4 seconds when activate their skill"
+            },
+            {
+                "name": "Rigid Ice",
+                "EN": "Attacks inflict <$ba.cold>Cold</> for 1 second; Apply 27% <@ba.talpu>(+2%)</> <$ba.fragile>Fragile</> effect to <$ba.cold>Cold</> enemies within range. <$ba.frozen>Frozen</> enemies within range receive double the <$ba.fragile>Fragile</> effect",
+                "CN": "攻击造成1秒<$ba.cold>寒冷</>; 范围内<$ba.cold>寒冷</>的敌人受到27%<@ba.talpu>(+2%)</>的<$ba.fragile>脆弱</>，范围内<$ba.frozen>冻结</>的敌人<$ba.fragile>脆弱</>效果提升至2倍",
+                "mod": "攻击造成1秒<$ba.cold>寒冷</>; 在<@ba.kw>集成战略</>中，在场时全场<$ba.cold>寒冷</>的敌人受到32%的<$ba.fragile>脆弱</>，<$ba.frozen>冻结</>的敌人<$ba.fragile>脆弱</>效果提升至2倍，<$ba.cold>寒冷</>或<$ba.frozen>冻结</>状态下的敌人每秒受到的<$ba.fragile>脆弱</>提升5%，最高提升至82%; 其他[谢拉格]干员每次开启技能后，对攻击范围内的敌人造成4秒的<$ba.cold>寒冷</>",
+                "upgradeDescription": "Attacks inflict <$ba.cold>Cold</> for 1 second; In <@ba.kw>Integrated Strategies</>, apply 32%<@ba.talpu>(+2%)</> <$ba.fragile>Fragile</> effect to <$ba.cold>Cold</> enemies on the field. <$ba.frozen>Frozen</> enemies within range receive double the <$ba.fragile>Fragile</> effect. While enemies under <$ba.cold>Cold</> or <$ba.frozen>Frozen</> effects, increase their <$ba.fragile>Fragile</> effect by 5% every second, up to 82%. Other [Kjerag] operators inflict <$ba.cold>Cold</> to all enemies in Attack Range for 4 seconds when activate their skill"
+            }
+        ]
+    ],
+    "uniequip_002_halo2": [
+        [
+            {
+                "name": "数据建模",
+                "CN": "对敌人造成<$ba.sluggish>停顿</>效果时，自身的攻击速度+1，最多叠加18次",
+                "mod": "对敌人造成<$ba.sluggish>停顿</>效果时，使自身的攻击速度+1，最多叠加23次",
+                "upgradeDescription": "When inflicts <$ba.sluggish>Slow</> on an enemy, ASPD+1, up to 23 times"
+            }
+        ],
+        [
+            {
+                "name": "数据建模",
+                "CN": "对敌人造成<$ba.sluggish>停顿</>效果时，自身的攻击速度+1，最多叠加18次",
+                "mod": "对敌人造成<$ba.sluggish>停顿</>效果时，使自身的攻击速度+1，最多叠加25次; 叠满后使自身攻击力+12%",
+                "upgradeDescription": "When inflicts <$ba.sluggish>Slow</> on an enemy, ASPD+1, up to 25 times; While at max stacks, ATK+12%"
+            }
+        ]
+    ],
+    "uniequip_002_akkord": [
+        [
+            {
+                "name": "律脉同构",
+                "CN": "攻击范围内至少有1名其他友方干员时，攻击力+15%",
+                "mod": "攻击范围内至少有1名其他友方干员时，攻击力+17%",
+                "upgradeDescription": "When there is at least 1 other operator in Attack Range, ATK+17%"
+            },
+            {
+                "name": "律脉同构",
+                "CN": "攻击范围内至少有1名其他友方干员时，攻击力+17<@ba.talpu>(+2%)</>",
+                "mod": "攻击范围内至少有1名其他友方干员时，攻击力+19<@ba.talpu>(+2%)</>",
+                "upgradeDescription": "When there is at least 1 other operator in Attack Range, ATK+19<@ba.talpu>(+2%)</>"
+            }
+        ],
+        [
+            {
+                "name": "律脉同构",
+                "CN": "攻击范围内至少有1名其他友方干员时，攻击力+15%",
+                "mod": "攻击范围内至少有1名其他友方干员时，攻击力+20%",
+                "upgradeDescription": "When there is at least 1 other operator in Attack Range, ATK+20%"
+            },
+            {
+                "name": "律脉同构",
+                "CN": "攻击范围内至少有1名其他友方干员时，攻击力+17<@ba.talpu>(+2%)</>",
+                "mod": "攻击范围内至少有1名其他友方干员时，攻击力+22<@ba.talpu>(+2%)</>",
+                "upgradeDescription": "When there is at least 1 other operator in Attack Range, ATK+22<@ba.talpu>(+2%)</>"
+            }
+        ]
+    ],
+    "uniequip_003_siege2": [
+        [
+            {
+                "name": "Unsheathed Sword",
+                "EN": "When damaging an enemy for the first time, inflicts <$ba.tremble>Frighten</> for 4s",
+                "CN": "对每个敌人首次造成伤害时，使其<$ba.tremble>战栗</>4秒",
+                "mod": "对每个敌人首次造成伤害时，使其<$ba.tremble>战栗</>4秒，对精英及领袖敌人改为使其<$ba.tremble>战栗</>8秒。维娜·维多利亚及其召唤物对战栗的目标造成伤害提升10％",
+                "upgradeDescription": "When damaging an enemy for the first time, inflicts <$ba.tremble>Frighten</> for 4s. For Elite and Leader enemies, this effect inflicts <$ba.tremble>Frighten</> for 8s instead; Vina Victoria and her summons deal 10% increased damage against <$ba.tremble>Frighten</> enemies"
+            },
+            {
+                "name": "Unsheathed Sword",
+                "EN": "When damaging an enemy for the first time, inflicts <$ba.tremble>Frighten</> for 5s <@ba.talpu>(+1)</>",
+                "CN": "对每个敌人首次造成伤害时，使其<$ba.tremble>战栗</>5<@ba.talpu>(+1)</>秒",
+                "mod": "对每个敌人首次造成伤害时，使其<$ba.tremble>战栗</>5<@ba.talpu>(+1)</>秒，对精英及领袖敌人改为使其<$ba.tremble>战栗</>8秒。维娜·维多利亚及其召唤物对战栗的目标造成伤害提升10％",
+                "upgradeDescription": "When damaging an enemy for the first time, inflicts <$ba.tremble>Frighten</> for 5<@ba.talpu>(+1)</>s. For Elite and Leader enemies, this effect inflicts <$ba.tremble>Frighten</> for 8s instead; Vina Victoria and her summons deal 10% increased damage against <$ba.tremble>Frighten</> enemies"
+            }
+        ],
+        [
+            {
+                "name": "Unsheathed Sword",
+                "EN": "When damaging an enemy for the first time, inflicts <$ba.tremble>Frighten</> for 4s",
+                "CN": "对每个敌人首次造成伤害时，使其<$ba.tremble>战栗</>4秒",
+                "mod": "对每个敌人首次造成伤害时，使其<$ba.tremble>战栗</>6秒，对精英及领袖敌人改为使其<$ba.tremble>战栗</>12秒。维娜·维多利亚及其召唤物对战栗的目标造成伤害提升15％",
+                "upgradeDescription": "When damaging an enemy for the first time, inflicts <$ba.tremble>Frighten</> for 6s. For Elite and Leader enemies, this effect inflicts <$ba.tremble>Frighten</> for 12s instead; Vina Victoria and her summons deal 15% increased damage against <$ba.tremble>Frighten</> enemies"
+            },
+            {
+                "name": "Unsheathed Sword",
+                "EN": "When damaging an enemy for the first time, inflicts <$ba.tremble>Frighten</> for 5s <@ba.talpu>(+1)</>",
+                "CN": "对每个敌人首次造成伤害时，使其<$ba.tremble>战栗</>5<@ba.talpu>(+1)</>秒",
+                "mod": "对每个敌人首次造成伤害时，使其<$ba.tremble>战栗</>7<@ba.talpu>(+1)</>秒，对精英及领袖敌人改为使其<$ba.tremble>战栗</>12秒。维娜·维多利亚及其召唤物对战栗的目标造成伤害提升15％",
+                "upgradeDescription": "When damaging an enemy for the first time, inflicts <$ba.tremble>Frighten</> for 7<@ba.talpu>(+1)</>s. For Elite and Leader enemies, this effect inflicts <$ba.tremble>Frighten</> for 12s instead; Vina Victoria and her summons deal 15% increased damage against <$ba.tremble>Frighten</> enemies"
+            }
+        ]
+    ],
+    "uniequip_002_durnar": [
+        [
+            {
+                "name": "Sword and Shield",
+                "EN": "ATK +7%, DEF +7%",
+                "CN": "攻击力+7%，防御力+7%",
+                "mod": "攻击力+10%，防御力+10%",
+                "upgradeDescription": "ATK +10%, DEF +10%"
+            }
+        ],
+        [
+            {
+                "name": "Sword and Shield",
+                "EN": "ATK +7%, DEF +7%",
+                "CN": "攻击力+7%，防御力+7%",
+                "mod": "攻击力+12%，防御力+12%",
+                "upgradeDescription": "ATK +12%, DEF +12%"
+            }
+        ]
+    ],
+    "uniequip_002_pianst": [
+        [
+            {
+                "name": "Reverberation",
+                "EN": "RES +10. Deals 80% of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks",
+                "CN": "法术抗性+10，每次受到法术攻击时对目标造成相当于车尔尼攻击力80%的法术伤害",
+                "mod": "法术抗性+10，每次受到法术攻击时对目标造成相当于车尔尼攻击力100%的法术伤害",
+                "upgradeDescription": "RES +10. Deals 100% of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks"
+            },
+            {
+                "name": "Reverberation",
+                "EN": "RES +10. Deals 85% <@ba.talpu>(+5%)</> of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks",
+                "CN": "法术抗性+10，每次受到法术攻击时对目标造成相当于车尔尼攻击力85%<@ba.talpu>(+5%)</>的法术伤害",
+                "mod": "法术抗性+10，每次受到法术攻击时对目标造成相当于车尔尼攻击力105%<@ba.talpu>(+5%)</>的法术伤害",
+                "upgradeDescription": "RES +10. Deals 105% <@ba.talpu>(+5%)</> of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks"
+            }
+        ],
+        [
+            {
+                "name": "Reverberation",
+                "EN": "RES +10. Deals 80% of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks",
+                "CN": "法术抗性+10，每次受到法术攻击时对目标造成相当于车尔尼攻击力80%的法术伤害",
+                "mod": "法术抗性+10，每次受到法术攻击时对目标造成相当于车尔尼攻击力110%的法术伤害",
+                "upgradeDescription": "RES +10. Deals 110% of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks"
+            },
+            {
+                "name": "Reverberation",
+                "EN": "RES +10. Deals 85% <@ba.talpu>(+5%)</> of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks",
+                "CN": "法术抗性+10，每次受到法术攻击时对目标造成相当于车尔尼攻击力85%<@ba.talpu>(+5%)</>的法术伤害",
+                "mod": "法术抗性+10，每次受到法术攻击时对目标造成相当于车尔尼攻击力115%<@ba.talpu>(+5%)</>的法术伤害",
+                "upgradeDescription": "RES +10. Deals 115% <@ba.talpu>(+5%)</> of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks"
+            }
+        ]
+    ],
+    "uniequip_002_asbest": [
+        [
+            {
+                "name": "Moist Skin",
+                "EN": "RES +10, restores 3 SP when hit by an enemy's normal Arts attack",
+                "CN": "法术抗性+10，受到敌人的法术普通攻击时获得3点技力",
+                "mod": "法术抗性+12，受到敌人的法术普通攻击时获得3点技力",
+                "upgradeDescription": "RES +12, restores 3 SP when hit by an enemy's normal Arts attack"
+            }
+        ],
+        [
+            {
+                "name": "Moist Skin",
+                "EN": "RES +10, restores 3 SP when hit by an enemy's normal Arts attack",
+                "CN": "法术抗性+10，受到敌人的法术普通攻击时获得3点技力",
+                "mod": "法术抗性+12，受到敌人的法术普通攻击时获得4点技力",
+                "upgradeDescription": "RES +12, restores 4 SP when hit by an enemy's normal Arts attack"
+            }
+        ]
+    ],
+    "uniequip_002_aprot2": [
+        [
+            {
+                "name": "Proclamation of Doom",
+                "EN": "Attacks have 20% chance to reduce the target's RES by 25% for 3 seconds",
+                "CN": "攻击时有20%的几率使目标法术抗性-25%，持续3秒",
+                "mod": "攻击时有35%的几率使目标法术抗性-30%，持续3秒",
+                "upgradeDescription": "Attacks have 35% chance to reduce the target's RES by 30% for 3 seconds"
+            },
+            {
+                "name": "Proclamation of Doom",
+                "EN": "Attacks have 25% <@ba.talpu>(+5%)</> chance to reduce the target's RES by 25% for 3 seconds",
+                "CN": "攻击时有25%<@ba.talpu>(+5%)</>的几率使目标法术抗性-25%，持续3秒",
+                "mod": "攻击时有40%<@ba.talpu>(+5%)</>的几率使目标法术抗性-30%，持续3秒",
+                "upgradeDescription": "Attacks have 40%<@ba.talpu>(+5%)</> chance to reduce the target's RES by 30% for 3 seconds"
+            }
+        ],
+        [
+            {
+                "name": "Proclamation of Doom",
+                "EN": "Attacks have 20% chance to reduce the target's RES by 25% for 3 seconds",
+                "CN": "攻击时有20%的几率使目标法术抗性-25%，持续3秒",
+                "mod": "攻击时有40%的几率使目标法术抗性-30%，持续6秒",
+                "upgradeDescription": "Attacks have 40% chance to reduce the target's RES by 30% for 6 seconds"
+            },
+            {
+                "name": "Proclamation of Doom",
+                "EN": "Attacks have 25% <@ba.talpu>(+5%)</> chance to reduce the target's RES by 25% for 3 seconds",
+                "CN": "攻击时有25%<@ba.talpu>(+5%)</>的几率使目标法术抗性-25%，持续3秒",
+                "mod": "攻击时有45%<@ba.talpu>(+5%)</>的几率使目标法术抗性-30%，持续6秒",
+                "upgradeDescription": "Attacks have 45%<@ba.talpu>(+5%)</> chance to reduce the target's RES by 30% for 6 seconds"
+            }
+        ]
+    ],
+    "uniequip_002_hsgma2": [
+        [
+            {
+                "name": "鬼之架势",
+                "CN": "在场时，自身获得最高+50法术抗性和35%攻击力的<$ba.berserk>坚忍</>(损失70%生命值时达到最大加成)",
+                "mod": "在场时，自身获得最高+50法术抗性和35%攻击力的<$ba.berserk>坚忍</>(损失60%生命值时达到最大加成)。达到最大加成时，攻击力额外+10％",
+                "upgradeDescription": "Gains up to +35% ATK and +50 RES <$ba.berserk>Tenacity</> (reaches maximum bonus when losing 60% Max HP); While at maximum bonus, ATK+10％"
+            }
+        ],
+        [
+            {
+                "name": "鬼之架势",
+                "CN": "在场时，自身获得最高+50法术抗性和35%攻击力的<$ba.berserk>坚忍</>(损失70%生命值时达到最大加成)",
+                "mod": "在场时，自身获得最高+50法术抗性和35%攻击力的<$ba.berserk>坚忍</>(损失50%生命值时达到最大加成)。达到最大加成时，攻击力额外+15％",
+                "upgradeDescription": "Gains up to +35% ATK and +50 RES <$ba.berserk>Tenacity</> (reaches maximum bonus when losing 50% Max HP); While at maximum bonus, ATK+15%"
+            }
+        ]
+    ],
+    "uniequip_002_snhunt": [
+        [
+            {
+                "name": "裂云一击",
+                "CN": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力180%的物理伤害和3秒<$ba.cold>寒冷</>",
+                "mod": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力195%的物理伤害和3秒<$ba.cold>寒冷</>",
+                "upgradeDescription": "When skill is activated, sends beast out to attack, deals 195% ATK as Physical damage and inflicts <$ba.cold>Cold</> for 3 seconds"
+            },
+            {
+                "name": "裂云一击",
+                "CN": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力185%<@ba.talpu>(+5%)</>的物理伤害和3秒<$ba.cold>寒冷</>",
+                "mod": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力200%<@ba.talpu>(+5%)</>的物理伤害和3秒<$ba.cold>寒冷</>",
+                "upgradeDescription": "When skill is activated, sends beast out to attack, deals 200%<@ba.talpu>(+5%)</> ATK as Physical damage and inflicts <$ba.cold>Cold</> for 3 seconds"
+            }
+        ],
+        [
+            {
+                "name": "裂云一击",
+                "CN": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力180%的物理伤害和3秒<$ba.cold>寒冷</>",
+                "mod": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力205%的物理伤害和3秒<$ba.cold>寒冷</>",
+                "upgradeDescription": "When skill is activated, sends beast out to attack, deals 205% ATK as Physical damage and inflicts <$ba.cold>Cold</> for 3 seconds"
+            },
+            {
+                "name": "裂云一击",
+                "CN": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力185%<@ba.talpu>(+5%)</>的物理伤害和3秒<$ba.cold>寒冷</>",
+                "mod": "开启技能时，派出裂云兽进行攻击，造成相当于攻击力210%<@ba.talpu>(+5%)</>的物理伤害和3秒<$ba.cold>寒冷</>",
+                "upgradeDescription": "When skill is activated, sends beast out to attack, deals 210%<@ba.talpu>(+5%)</> ATK as Physical damage and inflicts <$ba.cold>Cold</> for 3 seconds"
+            }
+        ]
+    ],
+    "uniequip_002_pithst": [
+        [
+            {
+                "name": "迭代元素",
+                "CN": "攻击同时附带18%攻击力的<$ba.dt.neural2>神经损伤</>(优先), <$ba.dt.burning2>灼燃损伤</>, <$ba.dt.apoptosis2>凋亡损伤</>; 优先攻击未处于损伤爆发的目标",
+                "mod": "攻击同时附带19%攻击力的<$ba.dt.neural2>神经损伤</>(优先), <$ba.dt.burning2>灼燃损伤</>, <$ba.dt.apoptosis2>凋亡损伤</>; 优先攻击未处于损伤爆发的目标",
+                "upgradeDescription": "Attack deal an additional 19% of ATK as <$ba.dt.neural2>Nervous Impairment</>(prioritize), <$ba.dt.burning2>Burn damage</>, <$ba.dt.apoptosis2>Necrosis Damage</>; prioritizing enemies not under a burst effect"
+            }
+        ],
+        [
+            {
+                "name": "迭代元素",
+                "CN": "攻击同时附带18%攻击力的<$ba.dt.neural2>神经损伤</>(优先), <$ba.dt.burning2>灼燃损伤</>, <$ba.dt.apoptosis2>凋亡损伤</>; 优先攻击未处于损伤爆发的目标",
+                "mod": "攻击同时附带20%攻击力的<$ba.dt.neural2>神经损伤</>(优先), <$ba.dt.burning2>灼燃损伤</>, <$ba.dt.apoptosis2>凋亡损伤</>; 优先攻击未处于损伤爆发的目标",
+                "upgradeDescription": "Attack deal an additional 20% of ATK as <$ba.dt.neural2>Nervous Impairment</>(prioritize), <$ba.dt.burning2>Burn damage</>, <$ba.dt.apoptosis2>Necrosis Damage</>; prioritizing enemies not under a burst effect"
+            }
+        ]
+    ],
+    "uniequip_002_sharp2": [
+        [
+            {
+                "name": "无声之锋",
+                "CN": "攻击力+20%，获得25%的法术闪避",
+                "mod": "攻击力+23%，获得30%的法术闪避",
+                "upgradeDescription": "ATK+23%, 30% Arts Dodge"
+            }
+        ],
+        [
+            {
+                "name": "无声之锋",
+                "CN": "攻击力+20%，获得25%的法术闪避",
+                "mod": "攻击力+25%，获得35%的法术闪避",
+                "upgradeDescription": "ATK+25%, 35% Arts Dodge"
+            }
+        ]
+    ],
+    "uniequip_002_monstr": [
+        [
+            {
+                "name": "Self-Repair",
+                "EN": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +15% ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken",
+                "CN": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体, 重构体周围友方单位的攻击力+15%, 重构体受到自身和Mon3tr治疗时, 可额外进行一次不会衰减的治疗跳跃",
+                "mod": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体, 重构体周围友方单位的攻击力+20%, 重构体受到自身和Mon3tr治疗时, 可额外进行一次不会衰减的治疗跳跃",
+                "upgradeDescription": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies 20% ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken"
+            },
+            {
+                "name": "Self-Repair",
+                "EN": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +20% <@ba.talpu>(+5%)</> ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken",
+                "CN": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体, 重构体周围友方单位的攻击力+20%<@ba.talpu> (+5%) </>, 重构体受到自身和Mon3tr治疗时, 可额外进行一次不会衰减的治疗跳跃",
+                "mod": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体, 重构体周围友方单位的攻击力+25%<@ba.talpu> (+5%) </>, 重构体受到自身和Mon3tr治疗时, 可额外进行一次不会衰减的治疗跳跃",
+                "upgradeDescription": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies 25% <@ba.talpu>(+5%)</> ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken"
+            }
+        ],
+        [
+            {
+                "name": "Self-Repair",
+                "EN": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +15% ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken",
+                "CN": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体, 重构体周围友方单位的攻击力+15%, 重构体受到自身和Mon3tr治疗时, 可额外进行一次不会衰减的治疗跳跃",
+                "mod": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体, 重构体周围友方单位的攻击力+25%, 重构体受到自身和Mon3tr治疗时, 可额外进行一次不会衰减的治疗跳跃, 且下次跳跃也不衰减",
+                "upgradeDescription": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies 25% ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken and the next bounce also does not weaken"
+            },
+            {
+                "name": "Self-Repair",
+                "EN": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +20% <@ba.talpu>(+5%)</> ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken",
+                "CN": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体, 重构体周围友方单位的攻击力+20%<@ba.talpu> (+5%) </>, 重构体受到自身和Mon3tr治疗时, 可额外进行一次不会衰减的治疗跳跃",
+                "mod": "可以在攻击范围内的地面使用一个仅可被自身治疗的重构体, 重构体周围友方单位的攻击力+30%<@ba.talpu> (+5%) </>, 重构体受到自身和Mon3tr治疗时, 可额外进行一次不会衰减的治疗跳跃, 且下次跳跃也不衰减",
+                "upgradeDescription": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies 30% <@ba.talpu>(+5%)</> ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken and the next bounce also does not weaken"
+            }
+        ]
+    ],
+    "uniequip_002_peper": [
+        [
+            {
+                "name": "Focused Attention",
+                "EN": "When healing, heal an extra 140 HP if target HP is below 40%",
+                "CN": "治疗时, 若目标生命少于40%则为其额外恢复140点生命",
+                "mod": "治疗时, 若目标生命少于40%则为其额外恢复170点生命",
+                "upgradeDescription": "When healing, heal an extra 170 HP if target HP is below 40%"
+            },
+            {
+                "name": "Focused Attention",
+                "EN": "When healing, heal an extra 150<@ba.talpu>(+10)</> HP if target HP is below 40%",
+                "CN": "治疗时, 若目标生命少于40%则为其额外恢复150<@ba.talpu> (+10) </>点生命",
+                "mod": "治疗时, 若目标生命少于40%则为其额外恢复180<@ba.talpu> (+10) </>点生命",
+                "upgradeDescription": "When healing, heal an extra 180<@ba.talpu>(+10)</> HP if target HP is below 40%"
+            }
+        ],
+        [
+            {
+                "name": "Focused Attention",
+                "EN": "When healing, heal an extra 140 HP if target HP is below 40%",
+                "CN": "治疗时, 若目标生命少于40%则为其额外恢复140点生命",
+                "mod": "治疗时, 若目标生命少于50%则为其额外恢复200点生命",
+                "upgradeDescription": "When healing, heal an extra 200 HP if target HP is below 50%"
+            },
+            {
+                "name": "Focused Attention",
+                "EN": "When healing, heal an extra 150<@ba.talpu>(+10)</> HP if target HP is below 40%",
+                "CN": "治疗时, 若目标生命少于40%则为其额外恢复150<@ba.talpu> (+10) </>点生命",
+                "mod": "治疗时, 若目标生命少于50%则为其额外恢复210<@ba.talpu> (+10) </>点生命",
+                "upgradeDescription": "When healing, heal an extra 210<@ba.talpu>(+10)</> HP if target HP is below 50%"
+            }
+        ]
+    ],
+    "uniequip_002_papyrs": [
+        [
+            {
+                "name": "Erudite of Ancient Scrolls",
+                "EN": "Healing grants the target Operator a <$ba.barrier>Barrier</> equal to 20% of Papyrus's ATK, lasting 8 seconds",
+                "CN": "治疗会为目标干员附加相当于自身20%攻击力的<$ba.barrier>屏障</>, 持续8秒",
+                "mod": "治疗会为目标干员附加相当于自身23%攻击力的<$ba.barrier>屏障</>, 持续8秒",
+                "upgradeDescription": "Healing grants the target Operator a <$ba.barrier>Barrier</> equal to 23% of Papyrus's ATK, lasting 8 seconds"
+            },
+            {
+                "name": "Erudite of Ancient Scrolls",
+                "EN": "Healing grants the target Operator a <$ba.barrier>Barrier</> equal to 22% <@ba.talpu>(+2%)</> of Papyrus's ATK, lasting 8 seconds",
+                "CN": "治疗会为目标干员附加相当于自身22%<@ba.talpu> (+2%) </>攻击力的<$ba.barrier>屏障</>, 持续8秒",
+                "mod": "治疗会为目标干员附加相当于自身25%<@ba.talpu> (+2%) </>攻击力的<$ba.barrier>屏障</>, 持续8秒",
+                "upgradeDescription": "Healing grants the target Operator a <$ba.barrier>Barrier</> equal to 25% <@ba.talpu>(+2%)</> of Papyrus's ATK, lasting 8 seconds"
+            }
+        ],
+        [
+            {
+                "name": "Erudite of Ancient Scrolls",
+                "EN": "Healing grants the target Operator a <$ba.barrier>Barrier</> equal to 20% of Papyrus's ATK, lasting 8 seconds",
+                "CN": "治疗会为目标干员附加相当于自身20%攻击力的<$ba.barrier>屏障</>, 持续8秒",
+                "mod": "治疗会为目标干员附加相当于自身27%攻击力的<$ba.barrier>屏障</>, 持续10秒",
+                "upgradeDescription": "Healing grants the target Operator a <$ba.barrier>Barrier</> equal to 27% of Papyrus's ATK, lasting 10 seconds"
+            },
+            {
+                "name": "Erudite of Ancient Scrolls",
+                "EN": "Healing grants the target Operator a <$ba.barrier>Barrier</> equal to 22% <@ba.talpu>(+2%)</> of Papyrus's ATK, lasting 8 seconds",
+                "CN": "治疗会为目标干员附加相当于自身22%<@ba.talpu> (+2%) </>攻击力的<$ba.barrier>屏障</>, 持续8秒",
+                "mod": "治疗会为目标干员附加相当于自身29%<@ba.talpu> (+2%) </>攻击力的<$ba.barrier>屏障</>, 持续10秒",
+                "upgradeDescription": "Healing grants the target Operator a <$ba.barrier>Barrier</> equal to 29% <@ba.talpu>(+2%)</> of Papyrus's ATK, lasting 10 seconds"
+            }
+        ]
+    ],
+    "uniequip_002_nasti": [
+        [
+            {
+                "name": "前方施工",
+                "CN": "可以携带3个<支援装置>(最多可部署2个), 效果根据技能改变而改变",
+                "mod": "可以携带3个<支援装置>(最多可部署2个), 效果根据技能改变而改变, 首个装置部署费用减少",
+                "upgradeDescription": "Can carry 3 <Support Devices> (deploy up to 2), with different effects depending on Skill. Deployment Cost of the first <Support Devices> is reduced."
+            }
+        ],
+        [
+            {
+                "name": "前方施工",
+                "CN": "可以携带3个<支援装置>(最多可部署2个), 效果根据技能改变而改变",
+                "mod": "可以携带3个<支援装置>(最多可部署2个), 效果根据技能改变而改变, 首个装置部署费用减少; 装置可与攻击范围内其他装置共同提供效果",
+                "upgradeDescription": "Can carry 3 <Support Devices> (deploy up to 2), with different effects depending on Skill. Deployment Cost of the first <Support Devices> is reduced; <Support Devices> can provide effects in conjuction with other <Support Devices> in their Attack Range"
+            }
+        ]
+    ],
+    "uniequip_003_ray": [
+        [
+            {
+                "name": "Extreme Focus",
+                "EN": "When attacking the same target, each attack increases ATK by 8%, stacking up to 3 times",
+                "CN": "攻击相同目标时每次攻击提高自身攻击力8%, 最多3层",
+                "mod": "攻击相同目标时每次攻击提高自身攻击力8%, 最多4层",
+                "upgradeDescription": "When attacking the same target, each attack increases ATK by 8%, stacking up to 4 times"
+            },
+            {
+                "name": "Extreme Focus",
+                "EN": "When attacking the same target, each attack increases ATK by 9% <@ba.talpu>(+1%)</>, stacking up to 3 times",
+                "CN": "攻击相同目标时每次攻击提高自身攻击力9%<@ba.talpu> (+1%) </>, 最多3层",
+                "mod": "攻击相同目标时每次攻击提高自身攻击力9%<@ba.talpu> (+1%) </>, 最多4层",
+                "upgradeDescription": "When attacking the same target, each attack increases ATK by 9% <@ba.talpu>(+1%)</>, stacking up to 4 times"
+            }
+        ],
+        [
+            {
+                "name": "Extreme Focus",
+                "EN": "When attacking the same target, each attack increases ATK by 8%, stacking up to 3 times",
+                "CN": "攻击相同目标时每次攻击提高自身攻击力8%, 最多3层",
+                "mod": "攻击相同目标时每次攻击提高自身攻击力9%, 最多4层",
+                "upgradeDescription": "When attacking the same target, each attack increases ATK by 9%, stacking up to 4 times"
+            },
+            {
+                "name": "Extreme Focus",
+                "EN": "When attacking the same target, each attack increases ATK by 9% <@ba.talpu>(+1%)</>, stacking up to 3 times",
+                "CN": "攻击相同目标时每次攻击提高自身攻击力9%<@ba.talpu> (+1%) </>, 最多3层",
+                "mod": "攻击相同目标时每次攻击提高自身攻击力10%<@ba.talpu> (+1%) </>, 最多4层",
+                "upgradeDescription": "When attacking the same target, each attack increases ATK by 10% <@ba.talpu>(+1%)</>, stacking up to 4 times"
             }
         ]
     ]

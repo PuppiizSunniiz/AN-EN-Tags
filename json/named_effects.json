@@ -18,7 +18,7 @@
         "ba.buffres": {
             "termId": "ba.buffres",
             "termName": "Status Resistance",
-            "description": "Negative Status durations(<$ba.stun>Stun</>, <$ba.cold>Cold</>, <$ba.frozen>Freeze</>, etc.) halved (does not stack with the same effect)"
+            "description": "<$ba.stun>Stun</>, <$ba.cold>Cold</>, and <$ba.frozen>Frozen</> durations halved; <$ba.palsy>Paralysis</> loses 1 stack every 5s (does not stack with the same effect)"
         },
         "ba.invisible": {
             "termId": "ba.invisible",
@@ -367,8 +367,8 @@
         },
         "cc.g.karlan": {
             "termId": "cc.g.karlan",
-            "termName": "Karlan Trade",
-            "description": "Includes the following Operators:\nSilverAsh, Gnosis, Pramanix, Cliffheart, Matterhorn, Courier, Kjera, Aurora, Degenbrecher"
+            "termName": "Kjerag",
+            "description": "Includes the following Operators:\nSilverAsh, Gnosis, Pramanix, Cliffheart, Matterhorn, Courier, Kjera, Aurora, Degenbrecher, Snow Hunter"
         },
         "cc.g.sui": {
             "termId": "cc.g.sui",
@@ -498,7 +498,7 @@
         "cc.tag.op": {
             "termId": "cc.tag.op",
             "termName": "Operation Platform",
-            "description": "Includes the following Operators:\nLancet-2, Castle-3, THRM-EX, 'Justice Knight', Friston-3, PhonoR-0"
+            "description": "Includes the following Operators:\nLancet-2, Castle-3, THRM-EX, Justice Knight, Friston-3, PhonoR-0, CONFESS-47"
         },
         "cc.tag.knight": {
             "termId": "cc.tag.knight",
@@ -578,17 +578,17 @@
         "ba.dt.neural2": {
             "termId": "ba.dt.neural2",
             "termName": "Nervous Impairment - Player",
-            "description": "Explodes when at max (1000 for Normal and Elite, 2000 for Leaders), dealing 6000 Elemental Damage and inflict 3 <$ba.palsy>Paralysis</> stack. 10s cooldown."
+            "description": "Explodes when at max (1000 for Normal and Elite, 2000 for Leaders), dealing 6000 Elemental Damage and inflicting 3 stacks of <$ba.palsy>Paralysis</>. 10s cooldown."
         },
         "ba.palsy": {
             "termId": "ba.palsy",
             "termName": "Paralysis",
-            "description": "Interrupts enemy attacks once per stack. Can stack up to 3 times. Each stack lasts indefinitely until used. Enemies with resistance lose 1 stack every 5 seconds."
+            "description": "Each stack of Paralysis can interrupt an enemy when it attempts to perform a normal attack, max 3 stacks; Paralysis has unlimited duration when not consumed, but units with status resistance lose 1 stack every 5s"
         },
         "ba.addbullet": {
             "termId": "ba.addbullet",
             "termName": "Replenish",
-            "description": "Replenish ammo for other operators that have Ammo-based skill. During skill activation, the maximum amount of ammo that can be replenish is equal to skill’s ammo capacity"
+            "description": "Replenishes ammo for other Operators' ammo-type skills; an ammo-type skill can only be replenished up to its max ammo capacity during a single activation of that skill"
         },
         "cc.g.laterano": {
             "termId": "cc.g.laterano",
@@ -602,8 +602,8 @@
         },
         "ba.attract": {
             "termId": "ba.attract",
-            "termName": "Attract",
-            "description": "Cannot be blocked and move to target position."
+            "termName": "Lure",
+            "description": "Cannot be blocked and moves towards the target's position"
         },
         "cc.g.elite": {
             "termId": "cc.g.elite",
@@ -639,6 +639,16 @@
             "termId": "cc.bd_mujica_2",
             "termName": "演技的怪物",
             "description": "Operators with this skill\nWakaba Mutsumi"
+        },
+        "ba.alter": {
+            "termId": "ba.alter",
+            "termName": "Equipment Response",
+            "description": "After selecting an operator on the field, additional effects can be activated under certain conditions"
+        },
+        "ba.weaknessatk": {
+            "termId": "ba.weaknessatk",
+            "termName": "弱点伤害",
+            "description": "When dealing Physical or Arts damage, change damage type based on target's DEF and RES"
         }
     }
 }
