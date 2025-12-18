@@ -3842,7 +3842,6 @@
     function GetAudio(){
         var curraudiolist = []
         var voiceDict = db.charword.voiceLangDict[currVoiceID]
-        var birthdayDict = db.charword.Birthday
         var checkold = db.voiceold[currVoiceID]
         var preDir = "https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-voices/main/"
         var old_va = ""
@@ -3867,8 +3866,6 @@
                 var lang = VA_lang(valang)
                 var wordKey = encodeURIComponent(audio_dict.wordKey)
                 
-                if (audio_dict.voiceId == "CN_043" && ["EN", "KR"].includes(valang) && !birthdayDict[valang].includes(currVoiceID)) // temp for EN KR Birthday
-                    return
 
                 switch (valang) {
                     case "JP":

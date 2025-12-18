@@ -7,7 +7,7 @@ def audio_json(show : bool = False):
         charWords = dict(charWords)
         trimming = ["charWordId", "voiceIndex", "voiceType", "unlockType", "unlockParam", "lockDescription", "placeType"]
         for key in trimming:
-            charWords.pop(key)
+            if key in charWords: charWords.pop(key)
         return charWords
     
     def voiceLangDict_trim(voiceLangDict : dict) -> tuple[dict, str]:
@@ -19,19 +19,16 @@ def audio_json(show : bool = False):
             if lang == "LINKAGE":
                 temp_LINKAGE = voiceLangDict[lang]["voicePath"].split("/")[2]
         return temp_voiceLangDict, temp_LINKAGE
-            
+
     json_charWords      =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/charword_table.json")
-    json_charWordsEN    =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/charword_table.json")
+    json_charWordsEN    =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/charword_table.json") if not temp_charword else json_load(r"temp\charword_table.json")
     
     json_tl_artist      =   json_load("json/tl-artist.json")
-    
-    json_birthday       =   json_load(r"temp\birthday_voicelines.json") if birthday_manual else {}
     
     json_audio = {"charWords" : {}, "voiceLangDict" : {}}
     skin_word = []
     audio_wordkey = []
     linkage_folder = {}
-    birthday_dict = {"EN" : [], "KR" : []}
     json_test = []
     Xiaohei_string = r'(char_4067_lolxh)(_CN_[\d]{3})'
     
@@ -72,19 +69,13 @@ def audio_json(show : bool = False):
         # LINKAGE
         if linkage:
             linkage_folder[char] = linkage
-        
-        # Birthday
-        for global_lang in ["EN", "KR"]:
-            if global_lang in json_charWords["voiceLangDict"][char]["dict"]:
-                birthday_dict[global_lang].append(char)
 
     json_audio["charWords"] = {k:json_audio["charWords"][k] for k in sorted(json_audio["charWords"].keys())}
     json_audio["skinWords"] = sorted(list(set(skin_word)))
     json_audio["LINKAGE"] = linkage_folder
-    json_audio["Birthday"] = json_birthday if birthday_manual else birthday_dict
     return json_audio
 
-birthday_manual = True
+temp_charword = True
 
 if __name__ == "__main__":
     script_result(audio_json(), True)
