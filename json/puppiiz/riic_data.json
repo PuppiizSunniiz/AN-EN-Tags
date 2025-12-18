@@ -241,7 +241,7 @@
             "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by <@cc.vup>+0.05</> per hour."
         },
         "control_mp_cost[013]": {
-            "buffName": "点滴关照",
+            "buffName": "Drip-Fed Care",
             "skillIcon": "bskill_ctrl_cost",
             "desc": "进驻控制中枢时，控制中枢内所有干员的心情每小时恢复<@cc.vup>+0.05</>",
             "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by <@cc.vup>+0.05</> per hour."
@@ -439,10 +439,10 @@
             "description": "When this Operator is assigned to the Control Center, all Operators in Dormitories recover <@cc.vup>+0.05</> Morale per hour (strongest effect of the same type applies)"
         },
         "control_dorm_rec_tag[001]": {
-            "buffName": "无言的慈爱",
+            "buffName": "Quiet Affection",
             "skillIcon": "bskill_ctrl_d_r_tag",
             "desc": "进驻控制中枢时，所有宿舍内<$cc.g.elite><@cc.kw>精英干员</></>的心情每小时恢复<@cc.vup>+0.1</>（同种效果取最高）",
-            "description": "When this Operator is assigned to the Control Center, all <$cc.g.elite><@cc.kw>Elite Operators</></> Operators in Dormitories recover <@cc.vup>+0.1</> Morale per hour (strongest effect of the same type applies)"
+            "description": "When this Operator is assigned to the Control Center, all <$cc.g.elite><@cc.kw>Elite Operators</></> in Dormitories recover <@cc.vup>+0.1</> Morale per hour (strongest effect of the same type applies)"
         },
         "control_dorm_rec2[000]": {
             "buffName": "羁绊相生",
@@ -643,7 +643,7 @@
             "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+10%</>"
         },
         "power_rec_spd[007]": {
-            "buffName": "雷法专精",
+            "buffName": "Lei Fa Specialist",
             "skillIcon": "bskill_pow_spd1",
             "desc": "进驻发电站时，无人机充能速度<@cc.vup>+10%</>",
             "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+10%</>"
@@ -2155,7 +2155,7 @@
             "description": "When this Operator is assigned to the Workshop to process <@cc.kw>Skill Summaries</>, the production rate of byproduct increases by <@cc.vup>80%</>"
         },
         "workshop_formula_probability[021]": {
-            "buffName": "克己严修",
+            "buffName": "Disciplined Study",
             "skillIcon": "bskill_ws_skill3",
             "desc": "进驻加工站加工<@cc.kw>技巧概要</>时，副产品的产出概率提升<@cc.vup>80%</>",
             "description": "When this Operator is assigned to the Workshop to process <@cc.kw>Skill Summaries</>, the production rate of byproduct increases by <@cc.vup>80%</>"
@@ -2443,7 +2443,7 @@
             "description": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+25%</>"
         },
         "train_spd[002]": {
-            "buffName": "学无不精·α",
+            "buffName": "Master of Everything α",
             "skillIcon": "bskill_train_all",
             "desc": "进驻训练室协助位时，干员的专精技能训练速度<@cc.vup>+25%</>",
             "description": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+25%</>"
@@ -2875,7 +2875,7 @@
             "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Medic</> Operators' Specialization training speed <@cc.vup>+30%</>; if the trainee's Job Branch is <@cc.kw>Chain Medic</>, training speed will be further increased by <@cc.vup>+45%</>"
         },
         "train_spd&profession3[184]": {
-            "buffName": "医疗专精·α",
+            "buffName": "Medic Expert α",
             "skillIcon": "bskill_train_medic1",
             "desc": "进驻训练室协助位时，<@cc.kw>医疗</>干员的专精技能训练速度<@cc.vup>+30%</>",
             "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Medic</> Operators' Specialization training speed <@cc.vup>+30%</>"

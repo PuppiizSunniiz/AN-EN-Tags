@@ -87,13 +87,13 @@
         },
         "ba.dt.erosion": {
             "termId": "ba.dt.erosion",
-            "termName": "Corrosion Damage",
-            "description": "After Corrosion Damage reaches 1000, the affected unit has its DEF permanently reduced by 100 and takes 800 Physical damage"
+            "termName": "Corrosion",
+            "description": "After Corrosion reaches 1000, the affected unit has its DEF permanently reduced by 100 and takes 800 Physical damage"
         },
         "ba.dt.burning": {
             "termId": "ba.dt.burning",
-            "termName": "Burn Damage",
-            "description": "After Burn Damage reaches 1000, the affected unit has its RES reduced by 20 for 10 seconds and takes 1200 Arts damage"
+            "termName": "Burn",
+            "description": "After Burn reaches 1000, the affected unit has its RES reduced by 20 for 10 seconds and takes 1200 Arts damage"
         },
         "ba.float": {
             "termId": "ba.float",
@@ -108,7 +108,7 @@
         "ba.dt.element": {
             "termId": "ba.dt.element",
             "termName": "Elemental Injury",
-            "description": "Includes <$ba.dt.neural>Nervous Impairment</>, <$ba.dt.erosion>Corrosion Damage</>, <$ba.dt.burning>Burn Damage</>, and <$ba.dt.apoptosis>Necrosis Damage</>"
+            "description": "Includes <$ba.dt.neural>Nervous Impairment</>, <$ba.dt.erosion>Corrosion</>, <$ba.dt.burning>Burn</>, and <$ba.dt.apoptosis>Necrosis</>"
         },
         "ba.overdrive": {
             "termId": "ba.overdrive",
@@ -117,8 +117,8 @@
         },
         "ba.dt.apoptosis": {
             "termId": "ba.dt.apoptosis",
-            "termName": "Necrosis Damage",
-            "description": "After Necrosis Damage reaches 1000, the affected unit cannot use skills for 15 seconds and every second loses 1 SP and takes 100 Arts damage"
+            "termName": "Necrosis",
+            "description": "After Necrosis reaches 1000, the affected unit cannot use skills for 15 seconds and every second loses 1 SP and takes 100 Arts damage"
         },
         "ba.debuff": {
             "termId": "ba.debuff",
@@ -177,7 +177,7 @@
         },
         "ba.dt.apoptosis2": {
             "termId": "ba.dt.apoptosis2",
-            "termName": "Necrosis Damage - Player",
+            "termName": "Necrosis - Player",
             "description": "Explodes when at max (1000 for Normal and Elite, 2000 for Leaders), inflicting 50%<$ba.weaken>Enfeeble</> that gradually recovers, and dealing 800 Elemental Damage per second. 15s cooldown."
         },
         "ba.epbarrier": {
@@ -192,7 +192,7 @@
         },
         "ba.dt.burning2": {
             "termId": "ba.dt.burning2",
-            "termName": "Burn damage - Ally",
+            "termName": "Burn - Ally",
             "description": "Explodes when at max (1000 for Normal and Elite, 2000 for Leaders), dealing 7000 Elemental Damage and temporarily inflicting -20 RES. 10s cooldown."
         },
         "cc.bd_A_1": {
@@ -428,7 +428,7 @@
         "cc.c.skill": {
             "termId": "cc.c.skill",
             "termName": "Certain Skills",
-            "description": "Includes the following skills:\nCapable Assistance, S.W.E.E.P., Snack Network, Cleaning Agreement, Substitute, Necessary Responsibility, Guarding, Tiny Leader, Self-Absorbed, Million Dollar Smile, Marigold Poetry Gathering, Art of Defense, New to the Job"
+            "description": "Includes the following skills:\nCapable Assistance, S.W.E.E.P., Snack Network, Cleaning Agreement, Substitute, Necessary Responsibility, Guarding, Tiny Leader, Self-Absorbed, Million Dollar Smile, Marigold Poetry Gathering, Art of Defense, New to the Job, Drip-Fed Care"
         },
         "cc.t.strong2": {
             "termId": "cc.t.strong2",
