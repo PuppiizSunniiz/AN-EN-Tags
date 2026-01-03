@@ -75,7 +75,7 @@ def audio_json(show : bool = False):
     json_audio["LINKAGE"] = linkage_folder
     return json_audio
 
-temp_charword = True
+temp_charword = False
 
 if __name__ == "__main__":
     script_result(audio_json(), True)

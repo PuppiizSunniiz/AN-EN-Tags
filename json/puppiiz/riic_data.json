@@ -1864,7 +1864,7 @@
             "buffName": "精英小队",
             "skillIcon": "bskill_ord_spd&tag1",
             "desc": "进驻贸易站时，订单获取效率<@cc.vup>+25%</>，基建内（不包含副手及活动室）每有一间进驻<$cc.g.elite><@cc.kw>精英干员</></>的设施，订单获取效率额外<@cc.vup>+2%</>（最多<@cc.kw>10</>间）",
-            "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+25%</>, each facility that <$cc.g.elite><@cc.kw>Elite Operators</></> Operator is stationed (excluding Assistants and Activity Room users), additional order acquisition efficiency <@cc.vup>+2%</> (up to <@cc.kw>10</> facilities)"
+            "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+25%</>, each facility that <$cc.g.elite><@cc.kw>Elite Operator</></> Operator is stationed (excluding Assistants and Activity Room users), additional order acquisition efficiency <@cc.vup>+2%</> (up to <@cc.kw>10</> facilities)"
         },
         "workshop_proc_probability[000]": {
             "buffName": "Focus α",
@@ -3388,13 +3388,13 @@
             "buffName": "Born of the Biting Cold",
             "skillIcon": "bskill_dorm_single_sami",
             "desc": "进驻宿舍时，使该宿舍内除自身以外心情未满的某个干员每小时恢复<@cc.vup>+0.55</>（同种效果取最高），如果目标是<$cc.g.sm><@cc.kw>萨米</></>干员，则恢复效果额外<@cc.vup>+0.45</>",
-            "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to one other Operators assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is a <$cc.g.sm><@cc.kw>Sami</></> Operator, further increases Morale restored by <@cc.vup>+0.45</>"
+            "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is a <$cc.g.sm><@cc.kw>Sami</></> Operator, further increases Morale restored by <@cc.vup>+0.45</>"
         },
         "dorm_rec_single_power[001]": {
             "buffName": "Funny Holy City Stories",
             "skillIcon": "bskill_dorm_single_laterano",
             "desc": "进驻宿舍时，使该宿舍内除自身以外心情未满的某个干员每小时恢复<@cc.vup>+0.55</>（同种效果取最高），如果目标是<$cc.g.laterano><@cc.kw>拉特兰</></>干员，则恢复效果额外<@cc.vup>+0.45</>",
-            "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to all other Operators assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is a <$cc.g.laterano><@cc.kw>Laterano</></> Operator, further increases Morale restored by <@cc.vup>+0.45</>"
+            "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is a <$cc.g.laterano><@cc.kw>Laterano</></> Operator, further increases Morale restored by <@cc.vup>+0.45</>"
         },
         "dorm_rec_all&oneself[000]": {
             "buffName": "Laziness",
