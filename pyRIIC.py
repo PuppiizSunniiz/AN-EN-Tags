@@ -66,6 +66,18 @@ def riic_tl_json(show : bool = False):
                         match_point         = desc_match.group(2)
                         match_spd           = desc_match.group(3)
                         return f'When this Operator is assigned to the Control Center, <${match_faction_skill}><@cc.rem>{match_faction_name}</></><@cc.vup>{match_point}</>; HR contacting speed <@cc.vup>{match_spd}</> (strongest effect of the same type applies)'
+                    # control_meeting&mp_cost[000]/[100] // char_4166_varkis
+                    re_control_meeting__mp_cost = r'进驻控制中枢时，基建内（不包含副手及活动室使用者）每有1名<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>干员，会客室线索搜集速度<@cc\.vup>([\+0-9%]*)<\/>（最多<@cc\.vup>([\+0-9%]*)<\/>，同种效果取最高）；当与<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>干员进驻控制中枢一起工作时，自身心情每小时消耗<@cc\.vdown>([\+\.0-9]*)<\/>'
+                    if re.match(re_control_meeting__mp_cost, desc):
+                        desc_match          = re.match(re_control_meeting__mp_cost, desc_sub)
+                        match_faction_skill1= desc_match.group(1)
+                        match_faction_name1 = riic_match_tl(match_faction_skill1)
+                        match_spd           = desc_match.group(2)
+                        match_spd_max       = desc_match.group(3)
+                        match_faction_skill2= desc_match.group(4)
+                        match_faction_name2 = riic_match_tl(match_faction_skill2)
+                        match_mood          = desc_match.group(5)
+                        return f'When this Operator is assigned to the Control Center, for each <${match_faction_skill1}><@cc.kw>{match_faction_name1}</></> Operator in the Base (excluding Assistants and Activity Room users), increases Clue collection speed in the Reception Room by <@cc.vup>{match_spd}</> (up to a maximum of <@cc.vup>{match_spd_max}</>, strongest effect of the same type applies); When this Operator is assigned together with other <${match_faction_skill2}><@cc.kw>{match_faction_name2}</></> Operators to the Control Center, self Morale loss per hour <@cc.vdown>{match_mood}</>'
                     # Control meeting "Yūtenji Nyamu" - Ave Mujica
                     re_control_meeting_spd_bd = r'^进驻控制中枢时，<\$(cc\.[^>]*)><@cc\.rem>[^<]*<\/><\/><@cc\.vup>([\+0-9]*)<\/>；会客室线索搜集速度提升<@cc\.vup>([\+0-9%]*)</>（同种效果取最高）$'
                     if re.match(re_control_meeting_spd_bd, desc_sub):
@@ -332,6 +344,13 @@ def riic_tl_json(show : bool = False):
                         match_morale_1      = desc_match.group(1)
                         match_morale_2      = desc_match.group(2)
                         return f'When this Operator is assigned to a Dormitory, restores <@cc.vup>{match_morale_1}</> Morale per hour to all Operators assigned to that Dormitory, and every recruit slot (excluding initial slot), restores another <@cc.vup>{match_morale_2}</> (Only the strongest stacked effect of this type takes place)'
+                    # dorm_rec_all&tired[100] // char_1022_flwr2
+                    re_dorm_rec_all__tired = r'进驻宿舍时，该宿舍内心情<@cc\.vup>([0-9]*)<\/>以下的干员恢复效果额外<@cc\.vup>([\+\-\.0-9]*)<\/>（同种效果取最高）'
+                    if re.match(re_dorm_rec_all__tired, desc_sub):
+                        desc_match          = re.match(re_dorm_rec_all__tired, desc_sub)
+                        match_morale_1      = desc_match.group(1)
+                        match_morale_2      = desc_match.group(2)
+                        return f'When this Operator is assigned to a Dormitory, restores an additional <@cc.vup>{match_morale_2}</> Morale per hour to all Operators whose Morale is below <@cc.vup>{match_morale_1}</> (Only the strongest effect of this type applies)'
                     # Dorm group addition morale
                     re_dorm_rec_single_power = r'^进驻宿舍时，使该宿舍内除自身以外心情未满的某个干员每小时恢复<@cc\.vup>([\+\.0-9]*)<\/>（同种效果取最高），如果目标是<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>干员，则恢复效果额外<@cc\.vup>([\+\.0-9]*)<\/>$'
                     if re.match(re_dorm_rec_single_power, desc_sub):

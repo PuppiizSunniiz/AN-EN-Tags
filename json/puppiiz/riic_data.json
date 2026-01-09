@@ -138,6 +138,18 @@
             "desc": "进驻控制中枢时，当<@cc.kw>伊内丝</>入驻会客室时，会客室线索搜集速度<@cc.vup>+5%</>；当<@cc.kw>赫德雷</>入驻贸易站时，赫德雷所在贸易站订单上限<@cc.vup>+2</>",
             "description": "When this Operator is assigned to the Control Center: if <@cc.kw>Ines</> is assigned to the Reception Room, clue collection speed <@cc.vup>+5%</>; if <@cc.kw>Hoederer</> is assigned to a Trading Post, that Trading Post's order limit <@cc.vup>+2</>."
         },
+        "control_meeting&mp_cost[000]": {
+            "buffName": "英雄的骄傲·α",
+            "skillIcon": "bskill_ctrl_c_minos",
+            "desc": "进驻控制中枢时，基建内（不包含副手及活动室使用者）每有1名<$cc.g.minos><@cc.kw>米诺斯</></>干员，会客室线索搜集速度<@cc.vup>+4%</>（最多<@cc.vup>+20%</>，同种效果取最高）；当与<$cc.g.sargon><@cc.kw>萨尔贡</></>干员进驻控制中枢一起工作时，自身心情每小时消耗<@cc.vdown>+0.02</>",
+            "description": "When this Operator is assigned to the Control Center, for each <$cc.g.minos><@cc.kw>Minos</></> Operator in the Base (excluding Assistants and Activity Room users), increases Clue collection speed in the Reception Room by <@cc.vup>+4%</> (up to a maximum of <@cc.vup>+20%</>, strongest effect of the same type applies); When this Operator is assigned together with other <$cc.g.sargon><@cc.kw>Sargon</></> Operators to the Control Center, self Morale loss per hour <@cc.vdown>+0.02</>"
+        },
+        "control_meeting&mp_cost[100]": {
+            "buffName": "英雄的骄傲·β",
+            "skillIcon": "bskill_ctrl_c_minos2",
+            "desc": "进驻控制中枢时，基建内（不包含副手及活动室使用者）每有1名<$cc.g.minos><@cc.kw>米诺斯</></>干员，会客室线索搜集速度<@cc.vup>+5%</>（最多<@cc.vup>+25%</>，同种效果取最高）；当与<$cc.g.sargon><@cc.kw>萨尔贡</></>干员进驻控制中枢一起工作时，自身心情每小时消耗<@cc.vdown>+0.02</>",
+            "description": "When this Operator is assigned to the Control Center, for each <$cc.g.minos><@cc.kw>Minos</></> Operator in the Base (excluding Assistants and Activity Room users), increases Clue collection speed in the Reception Room by <@cc.vup>+5%</> (up to a maximum of <@cc.vup>+25%</>, strongest effect of the same type applies); When this Operator is assigned together with other <$cc.g.sargon><@cc.kw>Sargon</></> Operators to the Control Center, self Morale loss per hour <@cc.vdown>+0.02</>"
+        },
         "control_clue_cost[000]": {
             "buffName": "Neuroticism",
             "skillIcon": "bskill_ctrl_c_wt",
@@ -2064,6 +2076,12 @@
             "desc": "进驻加工站加工<@cc.kw>精英材料</>时，心情消耗为<@cc.kw>2</>的配方全部<@cc.vup>-1</>心情消耗",
             "description": "When this Operator is assigned to the Workshop to process <@cc.kw>Elite materials</>, reduces the Morale consumed by all corresponding formulas that cost <@cc.kw>2</> Morale by <@cc.vup>-1</>"
         },
+        "workshop_formula_cost3[600]": {
+            "buffName": "与历史对话",
+            "skillIcon": "bskill_ws_evolve_cost3",
+            "desc": "进驻加工站加工<@cc.kw>精英材料</>时，心情消耗为<@cc.kw>8</>的配方全部<@cc.vup>-4</>心情消耗",
+            "description": "When this Operator is assigned to the Workshop to process <@cc.kw>Elite materials</>, reduces the Morale consumed by all corresponding formulas that cost <@cc.kw>8</> Morale by <@cc.vup>-4</>"
+        },
         "workshop_formula_cost3[220]": {
             "buffName": "Mineral Beneficiation",
             "skillIcon": "bskill_ws_build_cost2",
@@ -2309,6 +2327,18 @@
             "skillIcon": "bskill_ws_evolve2",
             "desc": "进驻加工站加工<@cc.kw>精英材料</>时，副产品的产出概率提升<@cc.vup>75%</>",
             "description": "When this Operator is assigned to the Workshop to process <@cc.kw>elite material</>, the production rate of byproduct increases by <@cc.vup>75%</>"
+        },
+        "workshop_formula_probability[118]": {
+            "buffName": "修旧如旧·α",
+            "skillIcon": "bskill_ws_evolve2",
+            "desc": "进驻加工站加工<@cc.kw>精英材料</>时，副产品的产出概率提升<@cc.vup>75%</>",
+            "description": "When this Operator is assigned to the Workshop to process <@cc.kw>elite material</>, the production rate of byproduct increases by <@cc.vup>75%</>"
+        },
+        "workshop_formula_probability[128]": {
+            "buffName": "修旧如旧·β",
+            "skillIcon": "bskill_ws_evolve3",
+            "desc": "进驻加工站加工<@cc.kw>精英材料</>时，副产品的产出概率提升<@cc.vup>80%</>",
+            "description": "When this Operator is assigned to the Workshop to process <@cc.kw>elite material</>, the production rate of byproduct increases by <@cc.vup>80%</>"
         },
         "workshop_formula_dorm[000]": {
             "buffName": "Waste Not, Want Not",
@@ -3498,6 +3528,12 @@
             "desc": "进驻宿舍时，该宿舍内所有干员的心情每小时恢复<@cc.vup>+0.2</>（同种效果取最高）",
             "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.2</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
         },
+        "dorm_rec_all[029]": {
+            "buffName": "沉静心灵",
+            "skillIcon": "bskill_dorm_all2",
+            "desc": "进驻宿舍时，该宿舍内所有干员的心情每小时恢复<@cc.vup>+0.15</>（同种效果取最高）",
+            "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.15</> Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
+        },
         "dorm_bd_num[000]": {
             "buffName": "Soundless Resonance",
             "skillIcon": "bskill_dorm_bdnum",
@@ -3515,6 +3551,12 @@
             "skillIcon": "bskill_dorm_all_tired",
             "desc": "进驻宿舍时，该宿舍内所有干员心情每小时恢复<@cc.vup>+0.15</>，同时该宿舍内心情<@cc.vup>18</>以下的干员恢复效果额外<@cc.vup>+0.1</>（同种效果取最高）",
             "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.15</> Morale per hour to all Operators assigned to that Dormitory and restores an additional <@cc.vup>+0.1</> to Operators whose Morale is below <@cc.vup>18</> (Only the strongest effect of this type applies)"
+        },
+        "dorm_rec_all&tired[100]": {
+            "buffName": "净化呼吸",
+            "skillIcon": "bskill_dorm_all_tired2",
+            "desc": "进驻宿舍时，该宿舍内心情<@cc.vup>20</>以下的干员恢复效果额外<@cc.vup>+0.1</>（同种效果取最高）",
+            "description": "When this Operator is assigned to a Dormitory, restores an additional <@cc.vup>+0.1</> Morale per hour to all Operators whose Morale is below <@cc.vup>20</> (Only the strongest effect of this type applies)"
         },
         "hire_spd[000]": {
             "buffName": "Personnel Management α",
@@ -14781,6 +14823,90 @@
                             }
                         }
                     ]
+                }
+            ]
+        },
+        "char_4056_titi": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "workshop_formula_probability[118]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "workshop_formula_probability[128]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "workshop_formula_cost3[600]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_1022_flwr2": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "dorm_rec_all[029]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "dorm_rec_all&tired[100]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4166_varkis": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_meeting&mp_cost[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "control_meeting&mp_cost[100]",
+                            "cond": {
+                                "phase": "PHASE_1",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": []
                 }
             ]
         }
