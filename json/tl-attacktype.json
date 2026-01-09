@@ -1104,6 +1104,20 @@
             "note": "new mods hun-y",
             "name": "char_4117_ray",
             "code": "uniequip_003_ray"
+        },
+        "攻击范围内存在2名及以上敌人时攻击速度<@ba.kw>+{attack_speed}</>": {
+            "en": "ASPD <@ba.kw>+{attack_speed}</> when there are 2 or more enemies in attack range.",
+            "color": "extra",
+            "note": "new mods rea-y (new wording)",
+            "name": "char_4010_etlchi",
+            "code": "uniequip_003_etlchi"
+        },
+        "对被阻挡的敌人伤害提升至<@ba.kw>{damage_scale:0%}</>": {
+            "en": "Damage is increased to <@ba.kw>{damage_scale:0%}</> when attacking blocked enemies",
+            "color": "common",
+            "note": "new mods cru-y",
+            "name": "char_4088_hodrer",
+            "code": "uniequip_003_hodrer"
         }
     },
     "parts": [

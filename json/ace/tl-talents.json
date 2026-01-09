@@ -9594,5 +9594,89 @@
                 "desc": "When damaging an enemy for the first time, disables enemies' special abilities for 7s"
             }
         ]
+    ],
+	"char_4056_titi": [
+        [
+            {
+                "name": "凝固的时光",
+                "descCN": "自身可以攻击<$ba.sleep>沉睡</>的敌人, 且攻击非移动敌人时对其额外造成相当于攻击力10%的法术伤害, 在场时<$ba.sleep>沉睡</>中的敌人每秒受到缇缇攻击力18%的法术伤害",
+                "desc": "Titi can attack <$ba.sleep>Sleeping</> enemies and deals additional 10% ATK as Arts damage to stationary enemies; While on the field, deals 18% ATK as Arts damage every second to <$ba.sleep>Sleeping</> enemies"
+            },
+            {
+                "name": "凝固的时光",
+                "descCN": "自身可以攻击<$ba.sleep>沉睡</>的敌人, 且攻击非移动敌人时对其额外造成相当于攻击力11% <@ba.talpu> (+1%) </>的法术伤害, 在场时<$ba.sleep>沉睡</>中的敌人每秒受到缇缇攻击力20% <@ba.talpu> (+2%) </>的法术伤害",
+                "desc": "Titi can attack <$ba.sleep>Sleeping</> enemies and deals additional 11% <@ba.talpu>(+1%)</> ATK as Arts damage to stationary enemies; While on the field, deals 20% <@ba.talpu>(+2%)</> ATK as Arts damage every second to <$ba.sleep>Sleeping</> enemies"
+            },
+            {
+                "name": "凝固的时光",
+                "descCN": "自身可以攻击<$ba.sleep>沉睡</>的敌人, 且攻击非移动敌人时对其额外造成相当于攻击力15%的法术伤害, 在场时<$ba.sleep>沉睡</>中的敌人每秒受到缇缇攻击力30%的法术伤害",
+                "desc": "Titi can attack <$ba.sleep>Sleeping</> enemies and deals additional 15% ATK as Arts damage to stationary enemies; While on the field, deals 30% ATK as Arts damage every second to <$ba.sleep>Sleeping</> enemies"
+            },
+            {
+                "name": "凝固的时光",
+                "descCN": "自身可以攻击<$ba.sleep>沉睡</>的敌人, 且攻击非移动敌人时对其额外造成相当于攻击力16% <@ba.talpu> (+1%) </>的法术伤害, 在场时<$ba.sleep>沉睡</>中的敌人每秒受到缇缇攻击力32% <@ba.talpu> (+2%) </>的法术伤害",
+                "desc": "Titi can attack <$ba.sleep>Sleeping</> enemies and deals additional 16% <@ba.talpu>(+1%)</> ATK as Arts damage to stationary enemies; While on the field, deals 32% <@ba.talpu>(+2%)</> ATK as Arts damage every second to <$ba.sleep>Sleeping</> enemies"
+            }
+        ],
+        [
+            {
+                "name": "勇气的报偿",
+                "descCN": "场上的 [米诺斯] 或 [萨尔贡] 干员生命值高于50%时, 获得+20攻速的<$ba.strong>精力充沛</>",
+                "desc": "When deployed, [Minoan] and [Sargon] Operators gain <$ba.strong>Vigor</>, ASPD+20 when their HP more than 50%"
+            },
+            {
+                "name": "勇气的报偿",
+                "descCN": "场上的 [米诺斯] 或 [萨尔贡] 干员生命值高于50%时, 获得+22 <@ba.talpu> (+2) </>攻速的<$ba.strong>精力充沛</>",
+                "desc": "When deployed, [Minoan] and [Sargon] Operators gain <$ba.strong>Vigor</>, ASPD+20 <@ba.talpu>(+2)</> when their HP more than 50%"
+            }
+        ]
+    ],
+    "char_1022_flwr2": [
+        [
+            {
+                "name": "百里香",
+                "descCN": "使攻击范围内除自身外当前生命比例小于等于自身的友军获得8%的<$ba.protect>庇护</>",
+                "desc": "Perfumer grants 8% <$ba.protect>Sanctuary</> to operators in Attack Range whose current HP percentage less than or equal to hers"
+            },
+            {
+                "name": "百里香",
+                "descCN": "使攻击范围内除自身外当前生命比例小于等于自身的友军获得10% <@ba.talpu> (+2%) </>的<$ba.protect>庇护</>",
+                "desc": "Perfumer grants 10% <@ba.talpu>(+2%)</> <$ba.protect>Sanctuary</> to operators in Attack Range whose current HP percentage less than or equal to hers"
+            },
+            {
+                "name": "百里香",
+                "descCN": "使攻击范围内除自身外当前生命比例小于等于自身的友军获得14%的<$ba.protect>庇护</>",
+                "desc": "Perfumer grants 14% <$ba.protect>Sanctuary</> to operators in Attack Range whose current HP percentage less than or equal to hers"
+            },
+            {
+                "name": "百里香",
+                "descCN": "使攻击范围内除自身外当前生命比例小于等于自身的友军获得16% <@ba.talpu> (+2%) </>的<$ba.protect>庇护</>",
+                "desc": "Perfumer grants 16% <@ba.talpu>(+2%)</> <$ba.protect>Sanctuary</> to operators in Attack Range whose current HP percentage less than or equal to hers"
+            }
+        ]
+    ],
+    "char_4166_varkis": [
+        [
+            {
+                "name": "永志不忘",
+                "descCN": "在场时, 所有 [米诺斯] 干员攻击生命比例不高于自身的敌人时攻击力提升至107%",
+                "desc": "When deployed, all [Minoan] Operators's ATK increased to 107% when attacking target with HP percentage less than theirs"
+            },
+            {
+                "name": "永志不忘",
+                "descCN": "在场时, 所有 [米诺斯] 干员攻击生命比例不高于自身的敌人时攻击力提升至109% <@ba.talpu> (+2%) </>",
+                "desc": "When deployed, all [Minoan] Operators's ATK increased to 109% <@ba.talpu>(+2%)</> when attacking target with HP percentage less than theirs"
+            },
+            {
+                "name": "永志不忘",
+                "descCN": "在场时, 所有 [米诺斯] 干员攻击生命比例不高于自身的敌人时攻击力提升至110%",
+                "desc": "When deployed, all [Minoan] Operators's ATK increased to 110% when attacking target with HP percentage less than theirs"
+            },
+            {
+                "name": "永志不忘",
+                "descCN": "在场时, 所有 [米诺斯] 干员攻击生命比例不高于自身的敌人时攻击力提升至112% <@ba.talpu> (+2%) </>",
+                "desc": "When deployed, all [Minoan] Operators's ATK increased to 112% <@ba.talpu>(+2%)</> when attacking target with HP percentage less than theirs"
+            }
+        ]
     ]
 }

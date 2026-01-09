@@ -5408,6 +5408,78 @@
             "name": "Assault",
             "Event": "weekly_4"
         },
+        "act48side_tr01": {
+            "stageId": "act48side_tr01",
+            "levelId": "Activities/act48side/level_act48side_tr01",
+            "zoneId": "act48side_zone1",
+            "code": "ME-TR-1",
+            "name": "入境随俗",
+            "Event": "act48side"
+        },
+        "act48side_01": {
+            "stageId": "act48side_01",
+            "levelId": "Activities/act48side/level_act48side_01",
+            "zoneId": "act48side_zone1",
+            "code": "ME-1",
+            "name": "工作与时日",
+            "Event": "act48side"
+        },
+        "act48side_02": {
+            "stageId": "act48side_02",
+            "levelId": "Activities/act48side/level_act48side_02",
+            "zoneId": "act48side_zone1",
+            "code": "ME-2",
+            "name": "命定的终点",
+            "Event": "act48side"
+        },
+        "act48side_03": {
+            "stageId": "act48side_03",
+            "levelId": "Activities/act48side/level_act48side_03",
+            "zoneId": "act48side_zone1",
+            "code": "ME-3",
+            "name": "无解的谜题",
+            "Event": "act48side"
+        },
+        "act48side_04": {
+            "stageId": "act48side_04",
+            "levelId": "Activities/act48side/level_act48side_04",
+            "zoneId": "act48side_zone1",
+            "code": "ME-4",
+            "name": "失手",
+            "Event": "act48side"
+        },
+        "act48side_05": {
+            "stageId": "act48side_05",
+            "levelId": "Activities/act48side/level_act48side_05",
+            "zoneId": "act48side_zone1",
+            "code": "ME-5",
+            "name": "汇流",
+            "Event": "act48side"
+        },
+        "act48side_06": {
+            "stageId": "act48side_06",
+            "levelId": "Activities/act48side/level_act48side_06",
+            "zoneId": "act48side_zone1",
+            "code": "ME-6",
+            "name": "旧日诗篇",
+            "Event": "act48side"
+        },
+        "act48side_07": {
+            "stageId": "act48side_07",
+            "levelId": "Activities/act48side/level_act48side_07",
+            "zoneId": "act48side_zone1",
+            "code": "ME-7",
+            "name": "奔袭",
+            "Event": "act48side"
+        },
+        "act48side_08": {
+            "stageId": "act48side_08",
+            "levelId": "Activities/act48side/level_act48side_08",
+            "zoneId": "act48side_zone1",
+            "code": "ME-8",
+            "name": "神谕示显",
+            "Event": "act48side"
+        },
         "act6bossrush_01": {
             "stageId": "act6bossrush_01",
             "levelId": "Activities/act6bossrush/level_bossrush6_01",
@@ -29642,6 +29714,17 @@
             "pro_d_1",
             "pro_d_2"
         ],
+        "act48side_zone1": [
+            "act48side_tr01",
+            "act48side_01",
+            "act48side_02",
+            "act48side_03",
+            "act48side_04",
+            "act48side_05",
+            "act48side_06",
+            "act48side_07",
+            "act48side_08"
+        ],
         "act6bossrush_zone1": [
             "act6bossrush_01",
             "act6bossrush_02",
@@ -33523,6 +33606,9 @@
         ],
         "weekly_4": [
             "weekly_4"
+        ],
+        "act48side": [
+            "act48side_zone1"
         ],
         "act6bossrush": [
             "act6bossrush_zone1"
@@ -61949,6 +62035,144 @@
                         "RA#2_monthly_1",
                         "RA#2_monthly_1",
                         "RA#2_monthly_1"
+                    ]
+                }
+            }
+        },
+        "enemy_10154_mnmblx": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone1": [
+                        "act48side_tr01",
+                        "act48side_01",
+                        "act48side_02",
+                        "act48side_03",
+                        "act48side_04",
+                        "act48side_05",
+                        "act48side_06",
+                        "act48side_07",
+                        "act48side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10155_mntjsd": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone1": [
+                        "act48side_tr01",
+                        "act48side_01",
+                        "act48side_03",
+                        "act48side_04",
+                        "act48side_05",
+                        "act48side_06",
+                        "act48side_07",
+                        "act48side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10156_mncrer": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone1": [
+                        "act48side_tr01",
+                        "act48side_01",
+                        "act48side_02",
+                        "act48side_03",
+                        "act48side_04",
+                        "act48side_05",
+                        "act48side_06",
+                        "act48side_07",
+                        "act48side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10158_mnzeno": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone1": [
+                        "act48side_02",
+                        "act48side_03",
+                        "act48side_04",
+                        "act48side_06"
+                    ]
+                }
+            }
+        },
+        "enemy_10157_mnggyl": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone1": [
+                        "act48side_03",
+                        "act48side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10162_mnctpt": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone1": [
+                        "act48side_04",
+                        "act48side_07"
+                    ]
+                }
+            }
+        },
+        "enemy_10159_mntrjn": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone1": [
+                        "act48side_05"
+                    ]
+                }
+            }
+        },
+        "enemy_10160_mnlaur": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone1": [
+                        "act48side_06",
+                        "act48side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10161_mnserv": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone1": [
+                        "act48side_06",
+                        "act48side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10163_mnctur": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone1": [
+                        "act48side_07"
+                    ]
+                }
+            }
+        },
+        "enemy_1580_mnchrn": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone1": [
+                        "act48side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_1581_mnchrs": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone1": [
+                        "act48side_08"
                     ]
                 }
             }

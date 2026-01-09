@@ -1284,5 +1284,217 @@
                 "upgradeDescription": "When attacking the same target, each attack increases ATK by 10% <@ba.talpu>(+1%)</>, stacking up to 4 times"
             }
         ]
+    ],
+    "uniequip_002_titi": [
+        [
+            {
+                "name": "凝固的时光",
+                "CN": "自身可以攻击<$ba.sleep>沉睡</>的敌人, 且攻击非移动敌人时对其额外造成相当于攻击力15%的法术伤害, 在场时<$ba.sleep>沉睡</>中的敌人每秒受到缇缇攻击力30%的法术伤害",
+                "mod": "自身可以攻击<$ba.sleep>沉睡</>的敌人, 且攻击非移动敌人时对其额外造成相当于攻击力20%的法术伤害, 在场时<$ba.sleep>沉睡</>中的敌人每秒受到缇缇攻击力35%的法术伤害",
+                "upgradeDescription": "Titi can attack <$ba.sleep>Sleeping</> enemies and deals additional 20% ATK as Arts damage to stationary enemies; While on the field, deals 35% ATK as Arts damage every second to <$ba.sleep>Sleeping</> enemies"
+            },
+            {
+                "name": "凝固的时光",
+                "CN": "自身可以攻击<$ba.sleep>沉睡</>的敌人, 且攻击非移动敌人时对其额外造成相当于攻击力16%<@ba.talpu> (+1%) </>的法术伤害, 在场时<$ba.sleep>沉睡</>中的敌人每秒受到缇缇攻击力32%<@ba.talpu> (+2%) </>的法术伤害",
+                "mod": "自身可以攻击<$ba.sleep>沉睡</>的敌人, 且攻击非移动敌人时对其额外造成相当于攻击力21%<@ba.talpu> (+1%) </>的法术伤害, 在场时<$ba.sleep>沉睡</>中的敌人每秒受到缇缇攻击力37%<@ba.talpu> (+2%) </>的法术伤害",
+                "upgradeDescription": "Titi can attack <$ba.sleep>Sleeping</> enemies and deals additional 21% <@ba.talpu>(+1%)</> ATK as Arts damage to stationary enemies; While on the field, deals 37% <@ba.talpu>(+2%)</> ATK as Arts damage every second to <$ba.sleep>Sleeping</> enemies"
+            }
+        ],
+        [
+            {
+                "name": "凝固的时光",
+                "CN": "自身可以攻击<$ba.sleep>沉睡</>的敌人, 且攻击非移动敌人时对其额外造成相当于攻击力15%的法术伤害, 在场时<$ba.sleep>沉睡</>中的敌人每秒受到缇缇攻击力30%的法术伤害",
+                "mod": "自身可以攻击<$ba.sleep>沉睡</>的敌人, 且攻击非移动敌人时对其额外造成相当于攻击力30%的法术伤害, 在场时<$ba.sleep>沉睡</>中的敌人每秒受到缇缇攻击力40%的法术伤害",
+                "upgradeDescription": "Titi can attack <$ba.sleep>Sleeping</> enemies and deals additional 30% ATK as Arts damage to stationary enemies; While on the field, deals 40% ATK as Arts damage every second to <$ba.sleep>Sleeping</> enemies"
+            },
+            {
+                "name": "凝固的时光",
+                "CN": "自身可以攻击<$ba.sleep>沉睡</>的敌人, 且攻击非移动敌人时对其额外造成相当于攻击力16%<@ba.talpu> (+1%) </>的法术伤害, 在场时<$ba.sleep>沉睡</>中的敌人每秒受到缇缇攻击力32%<@ba.talpu> (+2%) </>的法术伤害",
+                "mod": "自身可以攻击<$ba.sleep>沉睡</>的敌人, 且攻击非移动敌人时对其额外造成相当于攻击力31%<@ba.talpu> (+1%) </>的法术伤害, 在场时<$ba.sleep>沉睡</>中的敌人每秒受到缇缇攻击力42%<@ba.talpu> (+2%) </>的法术伤害",
+                "upgradeDescription": "Titi can attack <$ba.sleep>Sleeping</> enemies and deals additional 31% <@ba.talpu>(+1%)</> ATK as Arts damage to stationary enemies; While on the field, deals 42% <@ba.talpu>(+2%)</> ATK as Arts damage every second to <$ba.sleep>Sleeping</> enemies"
+            }
+        ]
+    ],
+    "uniequip_002_flwr2": [
+        [
+            {
+                "name": "百里香",
+                "CN": "使攻击范围内除自身外当前生命比例小于等于自身的友军获得14%的<$ba.protect>庇护</>",
+                "mod": "使攻击范围内除自身外当前生命比例小于等于自身的友军获得18%的<$ba.protect>庇护</>",
+                "upgradeDescription": "Perfumer grants 18% <$ba.protect>Sanctuary</> to operators in Attack Range whose current HP percentage less than or equal to hers"
+            },
+            {
+                "name": "百里香",
+                "CN": "使攻击范围内除自身外当前生命比例小于等于自身的友军获得16%<@ba.talpu> (+2%) </>的<$ba.protect>庇护</>",
+                "mod": "使攻击范围内除自身外当前生命比例小于等于自身的友军获得20%<@ba.talpu> (+2%) </>的<$ba.protect>庇护</>",
+                "upgradeDescription": "Perfumer grants 20% <@ba.talpu>(+2%)</> <$ba.protect>Sanctuary</> to operators in Attack Range whose current HP percentage less than or equal to hers"
+            }
+        ],
+        [
+            {
+                "name": "百里香",
+                "CN": "使攻击范围内除自身外当前生命比例小于等于自身的友军获得14%的<$ba.protect>庇护</>",
+                "mod": "使攻击范围内除自身外当前生命比例小于等于自身的友军获得20%的<$ba.protect>庇护</>",
+                "upgradeDescription": "Perfumer grants 20% <$ba.protect>Sanctuary</> to operators in Attack Range whose current HP percentage less than or equal to hers"
+            },
+            {
+                "name": "百里香",
+                "CN": "使攻击范围内除自身外当前生命比例小于等于自身的友军获得16%<@ba.talpu> (+2%) </>的<$ba.protect>庇护</>",
+                "mod": "使攻击范围内除自身外当前生命比例小于等于自身的友军获得22%<@ba.talpu> (+2%) </>的<$ba.protect>庇护</>",
+                "upgradeDescription": "Perfumer grants 22% <@ba.talpu>(+2%)</> <$ba.protect>Sanctuary</> to operators in Attack Range whose current HP percentage less than or equal to hers"
+            }
+        ]
+    ],
+    "uniequip_002_varkis": [
+        [
+            {
+                "name": "永志不忘",
+                "CN": "在场时, 所有 [米诺斯] 干员攻击生命比例不高于自身的敌人时攻击力提升至110%",
+                "mod": "在场时, 所有 [米诺斯] 干员攻击生命比例不高于自身的敌人时攻击力提升至113%",
+                "upgradeDescription": "When deployed, all [Minoan] Operators's ATK increased to 113% when attacking target with HP percentage less than theirs"
+            },
+            {
+                "name": "永志不忘",
+                "CN": "在场时, 所有 [米诺斯] 干员攻击生命比例不高于自身的敌人时攻击力提升至112%<@ba.talpu> (+2%) </>",
+                "mod": "在场时, 所有 [米诺斯] 干员攻击生命比例不高于自身的敌人时攻击力提升至115%<@ba.talpu> (+2%) </>",
+                "upgradeDescription": "When deployed, all [Minoan] Operators's ATK increased to 115% <@ba.talpu>(+2%)</> when attacking target with HP percentage less than theirs"
+            }
+        ],
+        [
+            {
+                "name": "永志不忘",
+                "CN": "在场时, 所有 [米诺斯] 干员攻击生命比例不高于自身的敌人时攻击力提升至110%",
+                "mod": "在场时, 所有 [米诺斯] 干员攻击生命比例不高于自身的敌人时攻击力提升至116%",
+                "upgradeDescription": "When deployed, all [Minoan] Operators's ATK increased to 116% when attacking target with HP percentage less than theirs"
+            },
+            {
+                "name": "永志不忘",
+                "CN": "在场时, 所有 [米诺斯] 干员攻击生命比例不高于自身的敌人时攻击力提升至112%<@ba.talpu> (+2%) </>",
+                "mod": "在场时, 所有 [米诺斯] 干员攻击生命比例不高于自身的敌人时攻击力提升至118%<@ba.talpu> (+2%) </>",
+                "upgradeDescription": "When deployed, all [Minoan] Operators's ATK increased to 118% <@ba.talpu>(+2%)</> when attacking target with HP percentage less than theirs"
+            }
+        ]
+    ],
+    "uniequip_003_vvana": [
+        [
+            {
+                "name": "Nova",
+                "EN": "When attacking an elite or leader enemy, there is an 18% chance to gain a <$ba.shield>Shield</> that only blocks melee attacks (max 1 stack)",
+                "CN": "攻击精英或领袖敌人时, 有18%概率获得一层仅抵挡近战攻击的<$ba.shield>护盾</> (最多1层) ",
+                "mod": "攻击精英或领袖敌人时, 有23%概率获得一层仅抵挡近战攻击的<$ba.shield>护盾</> (最多1层) ",
+                "upgradeDescription": "When attacking an elite or leader enemy, there is an 23% chance to gain a <$ba.shield>Shield</> that only blocks melee attacks (max 1 stack)"
+            },
+            {
+                "name": "Nova",
+                "EN": "When attacking an elite or leader enemy, there is a 20% <@ba.talpu>(+2%)</> chance to gain a <$ba.shield>Shield</> that only blocks melee attacks (max 1 stack)",
+                "CN": "攻击精英或领袖敌人时, 有20%<@ba.talpu> (+2%) </>概率获得一层仅抵挡近战攻击的<$ba.shield>护盾</> (最多1层) ",
+                "mod": "攻击精英或领袖敌人时, 有25%<@ba.talpu> (+2%) </>概率获得一层仅抵挡近战攻击的<$ba.shield>护盾</> (最多1层) ",
+                "upgradeDescription": "When attacking an elite or leader enemy, there is a 25% <@ba.talpu>(+2%)</> chance to gain a <$ba.shield>Shield</> that only blocks melee attacks (max 1 stack)"
+            }
+        ],
+        [
+            {
+                "name": "Nova",
+                "EN": "When attacking an elite or leader enemy, there is an 18% chance to gain a <$ba.shield>Shield</> that only blocks melee attacks (max 1 stack)",
+                "CN": "攻击精英或领袖敌人时, 有18%概率获得一层仅抵挡近战攻击的<$ba.shield>护盾</> (最多1层) ",
+                "mod": "攻击精英或领袖敌人时, 有25%概率获得一层仅抵挡近战攻击的<$ba.shield>护盾</> (最多2层) ",
+                "upgradeDescription": "When attacking an elite or leader enemy, there is an 25% chance to gain a <$ba.shield>Shield</> that only blocks melee attacks (max 2 stack)"
+            },
+            {
+                "name": "Nova",
+                "EN": "When attacking an elite or leader enemy, there is a 20% <@ba.talpu>(+2%)</> chance to gain a <$ba.shield>Shield</> that only blocks melee attacks (max 1 stack)",
+                "CN": "攻击精英或领袖敌人时, 有20%<@ba.talpu> (+2%) </>概率获得一层仅抵挡近战攻击的<$ba.shield>护盾</> (最多1层) ",
+                "mod": "攻击精英或领袖敌人时, 有27%<@ba.talpu> (+2%) </>概率获得一层仅抵挡近战攻击的<$ba.shield>护盾</> (最多2层) ",
+                "upgradeDescription": "When attacking an elite or leader enemy, there is a 27% <@ba.talpu>(+2%)</> chance to gain a <$ba.shield>Shield</> that only blocks melee attacks (max 2 stack)"
+            }
+        ]
+    ],
+    "uniequip_003_etlchi": [
+        [
+            {
+                "name": "Blood Bank",
+                "EN": "Attacks <$ba.steal>Steal</> 75 Max HP from the target (Caps at 1350) and deal 200 Arts damage per second to the target for 5s",
+                "CN": "每次攻击敌人时<$ba.steal>偷取</>目标75点生命上限 (最高1350) 并使目标每秒受到200点法术伤害持续5秒",
+                "mod": "每次攻击敌人时<$ba.steal>偷取</>目标100点生命上限 (最高1800) 并使目标每秒受到350点法术伤害持续5秒, 场上存在该法术伤害效果时, 自身每秒回复2.5%最大生命值",
+                "upgradeDescription": "Attacks <$ba.steal>Steal</> 100 Max HP from the target (Caps at 1800) and deal 350 Arts damage per second to the target for 5s; While Arts damage effect is active on the field, recover 2.5% HP per second"
+            },
+            {
+                "name": "Blood Bank",
+                "EN": "Attacks <$ba.steal>Steal</> 75 Max HP from the target (Caps at 1350) and deal 250 <@ba.talpu>(+50)</> Arts damage per second to the target for 5s",
+                "CN": "每次攻击敌人时<$ba.steal>偷取</>目标75点生命上限 (最高1350) 并使目标每秒受到250<@ba.talpu> (+50) </>点法术伤害持续5秒",
+                "mod": "每次攻击敌人时<$ba.steal>偷取</>目标100点生命上限 (最高1800) 并使目标每秒受到400<@ba.talpu> (+50) </>点法术伤害持续5秒, 场上存在该法术伤害效果时, 自身每秒回复2.5%最大生命值",
+                "upgradeDescription": "Attacks <$ba.steal>Steal</> 100 Max HP from the target (Caps at 1800) and deal 400 <@ba.talpu>(+50)</> Arts damage per second to the target for 5s; While Arts damage effect is active on the field, recover 2.5% HP per second"
+            }
+        ],
+        [
+            {
+                "name": "Blood Bank",
+                "EN": "Attacks <$ba.steal>Steal</> 75 Max HP from the target (Caps at 1350) and deal 200 Arts damage per second to the target for 5s",
+                "CN": "每次攻击敌人时<$ba.steal>偷取</>目标75点生命上限 (最高1350) 并使目标每秒受到200点法术伤害持续5秒",
+                "mod": "每次攻击敌人时<$ba.steal>偷取</>目标120点生命上限 (最高2160) 并使目标每秒受到450点法术伤害持续6秒, 场上存在该法术伤害效果时, 自身每秒回复3.5%最大生命值",
+                "upgradeDescription": "Attacks <$ba.steal>Steal</> 120 Max HP from the target (Caps at 2160) and deal 450 Arts damage per second to the target for 6s; While Arts damage effect is active on the field, recover 3.5% HP per second"
+            },
+            {
+                "name": "Blood Bank",
+                "EN": "Attacks <$ba.steal>Steal</> 75 Max HP from the target (Caps at 1350) and deal 250 <@ba.talpu>(+50)</> Arts damage per second to the target for 5s",
+                "CN": "每次攻击敌人时<$ba.steal>偷取</>目标75点生命上限 (最高1350) 并使目标每秒受到250<@ba.talpu> (+50) </>点法术伤害持续5秒",
+                "mod": "每次攻击敌人时<$ba.steal>偷取</>目标120点生命上限 (最高2160) 并使目标每秒受到500<@ba.talpu> (+50) </>点法术伤害持续6秒, 场上存在该法术伤害效果时, 自身每秒回复3.5%最大生命值",
+                "upgradeDescription": "Attacks <$ba.steal>Steal</> 120 Max HP from the target (Caps at 2160) and deal 500 <@ba.talpu>(+50)</> Arts damage per second to the target for 6s; While Arts damage effect is active on the field, recover 3.5% HP per second"
+            }
+        ]
+    ],
+    "uniequip_003_poca": [
+        [
+            {
+                "name": "Ideal Student",
+                "EN": "When this unit is in the squad, all [Ursus Student Self-Governing Group] Operators gain +8% ATK",
+                "CN": "编入队伍时, 所有 [乌萨斯学生自治团] 干员攻击力+8%",
+                "mod": "编入队伍时, 所有 [乌萨斯学生自治团] 干员攻击力+10%, 每有一名 [乌萨斯学生自治团] 干员处于技能期间时, [乌萨斯学生自治团] 干员的攻击力额外+11% (最多+33%) ",
+                "upgradeDescription": "When this unit is in the squad, all [Ursus Student Self-Governing Group] Operators gain +10% ATK; When each [Ursus Student Self-Governing Group] Operators active their skills, [Ursus Student Self-Governing Group] Operators gain additional +11% ATK (up to +33%)"
+            },
+            {
+                "name": "Ideal Student",
+                "EN": "When this unit is in the squad, all [Ursus Student Self-Governing Group] Operators gain +10% ATK <@ba.talpu>(+2%)</>",
+                "CN": "编入队伍时, 所有 [乌萨斯学生自治团] 干员攻击力+10%<@ba.talpu> (+2%) </>",
+                "mod": "编入队伍时, 所有 [乌萨斯学生自治团] 干员攻击力+12%<@ba.talpu> (+2%) </>, 每有一名 [乌萨斯学生自治团] 干员处于技能期间时, [乌萨斯学生自治团] 干员的攻击力额外+11% (最多+33%) ",
+                "upgradeDescription": "When this unit is in the squad, all [Ursus Student Self-Governing Group] Operators gain +12% <@ba.talpu>(+2%)</> ATK; When each [Ursus Student Self-Governing Group] Operators active their skills, [Ursus Student Self-Governing Group] Operators gain additional +11% ATK (up to +33%)"
+            }
+        ],
+        [
+            {
+                "name": "Ideal Student",
+                "EN": "When this unit is in the squad, all [Ursus Student Self-Governing Group] Operators gain +8% ATK",
+                "CN": "编入队伍时, 所有 [乌萨斯学生自治团] 干员攻击力+8%",
+                "mod": "编入队伍时, 所有 [乌萨斯学生自治团] 干员攻击力+12%, 每有一名 [乌萨斯学生自治团] 干员处于技能期间时, [乌萨斯学生自治团] 干员的攻击力额外+15% (最多+45%) ",
+                "upgradeDescription": "When this unit is in the squad, all [Ursus Student Self-Governing Group] Operators gain +12% ATK; When each [Ursus Student Self-Governing Group] Operators active their skills, [Ursus Student Self-Governing Group] Operators gain additional +15% ATK (up to +45%)"
+            },
+            {
+                "name": "Ideal Student",
+                "EN": "When this unit is in the squad, all [Ursus Student Self-Governing Group] Operators gain +10% ATK <@ba.talpu>(+2%)</>",
+                "CN": "编入队伍时, 所有 [乌萨斯学生自治团] 干员攻击力+10%<@ba.talpu> (+2%) </>",
+                "mod": "编入队伍时, 所有 [乌萨斯学生自治团] 干员攻击力+14%<@ba.talpu> (+2%) </>, 每有一名 [乌萨斯学生自治团] 干员处于技能期间时, [乌萨斯学生自治团] 干员的攻击力额外+15% (最多+45%) ",
+                "upgradeDescription": "When this unit is in the squad, all [Ursus Student Self-Governing Group] Operators gain +14% <@ba.talpu>(+2%)</> ATK; When each [Ursus Student Self-Governing Group] Operators active their skills, [Ursus Student Self-Governing Group] Operators gain additional +15% ATK (up to +45%)"
+            }
+        ]
+    ],
+    "uniequip_003_hodrer": [
+        [
+            {
+                "name": "Do or Die",
+                "EN": "ATK increases to 110% when attacking an enemy; if the target is <$ba.stun>stunned</> or <$ba.root>bound</>, ATK further increases to 140%",
+                "CN": "攻击敌人时攻击力提升至110%, 若目标处于<$ba.stun>晕眩</>, <$ba.root>束缚</>则改为提升至140%",
+                "mod": "攻击敌人时攻击力提升至120%, 若目标处于<$ba.stun>晕眩</>, <$ba.root>束缚</>则改为提升至150%, 且对阻挡的敌人首次造成伤害时对其造成1.5秒<$ba.stun>晕眩</>效果",
+                "upgradeDescription": "ATK increases to 120% when attacking an enemy; if the target is <$ba.stun>stunned</> or <$ba.root>bound</>, ATK further increases to 150%; When deals damage to blocked enemies for the first time, <$ba.stun>stuns</> them for 1.5 seconds"
+            }
+        ],
+        [
+            {
+                "name": "Do or Die",
+                "EN": "ATK increases to 110% when attacking an enemy; if the target is <$ba.stun>stunned</> or <$ba.root>bound</>, ATK further increases to 140%",
+                "CN": "攻击敌人时攻击力提升至110%, 若目标处于<$ba.stun>晕眩</>, <$ba.root>束缚</>则改为提升至140%",
+                "mod": "攻击敌人时攻击力提升至130%, 若目标处于<$ba.stun>晕眩</>, <$ba.root>束缚</>则改为提升至160%, 且对阻挡的敌人首次造成伤害时对其造成2.5秒<$ba.stun>晕眩</>效果",
+                "upgradeDescription": "ATK increases to 130% when attacking an enemy; if the target is <$ba.stun>stunned</> or <$ba.root>bound</>, ATK further increases to 160%; When deals damage to blocked enemies for the first time, <$ba.stun>stuns</> them for 2.5 seconds"
+            }
+        ]
     ]
 }

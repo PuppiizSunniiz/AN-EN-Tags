@@ -39,6 +39,12 @@
     - Chain medic mod
     - HUN-Y
 
+### Medjehtiqedti Bound
+- Effect
+    - ba.strong (Vigor)
+- Trait
+    - CRU-Y
+
 ### To Do
 - handle Xiaohei cat
 - Independent-miya
