@@ -1,8 +1,4 @@
 # Fix TL (Official EN) waiting room
-### IS#6 : Sui's Garden of Grotesqueries
-- Trait
-    - Raidian 's summons
-
 ### Ato
 - Trait
     - IS-A : Swire alter

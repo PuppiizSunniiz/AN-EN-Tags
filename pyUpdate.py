@@ -72,7 +72,7 @@ json_talentTL       =   json_load("json/ace/tl-talents.json")
 # New
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
-NEW_CHARS : list[str] = [] # "", 
+NEW_CHARS : list[str] = ["Titi","Perfumer the Distilled","Varkáris",] # "", 
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS : list[str] = [] # "",
@@ -612,9 +612,10 @@ with open("json/puppiiz/potential_token.json", "w", encoding = "utf-8") as filep
 # char_names
 #########################################################################################################
 sp_char_dict = {
+                    "á" : "a",  # Varkáris
                     "ë" : "e",  # Pozëmka
-                    "ł" : "l",  # Młynar
                     "í" : "i",  # Eyjafjalla the Hvít Aska
+                    "ł" : "l",  # Młynar
                     "š" : "s",  # Wiš'adel
                     "ū" : "u",  # Yūtenji Nyamu
                 }
