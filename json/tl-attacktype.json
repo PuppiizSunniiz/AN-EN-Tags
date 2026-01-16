@@ -959,28 +959,28 @@
             "code": "uniequip_002_radian"
         },
         "能够阻挡两个敌人，可以支援待部署区的我方单位": {
-            "en": "Block 2 enemies</br>Can support allies in the Deployment Waiting Zone",
+            "en": "Blocks 2 enemies, and can support allies in the Deployment Waiting Zone",
             "color": "extra",
             "note": "new Ops \"counsellor\" Archetype trait",
             "name": "Matsukiri",
             "code": "char_4199_makiri"
         },
         "对处于元素爆发期间的敌人造成的伤害提升至110%": {
-            "en": "Increase damage dealt to enemies under elemental burst effect to 110%",
+            "en": "Damage dealt to enemies under an Elemental Burst effect increased to 110%",
             "color": "common",
             "note": "new mods pri-x",
             "name": "char_4081_warmy",
             "code": "uniequip_002_warmy"
         },
         "在<@ba.kw>集成战略</>中，部署和在场消耗的部署费用-30%，自身每消耗1点费用会令正在再部署中剩余时间最短的干员再部署时间-2秒": {
-            "en": "In <@ba.kw>Integrated Strategies</>, reduce deployment cost and on-field DP cost by 30%. For every DP consumed, reduce the Redeployment time of the least remaining redeployment time operator by 2 seconds",
+            "en": "In <@ba.kw>Integrated Strategies</>, DP consumed when deployed or on the battlefield -30%, and for every 1 DP consumed by this unit, the shortest remaining Redeployment Timer in the Deployment Waiting Zone -2s",
             "color": "extra",
             "note": "new mods isw-a",
             "name": "char_1033_swire2",
             "code": "uniequip_004_swire2"
         },
         "在<@ba.kw>生息演算</>中，若携带资源，则再部署时间大幅度减少": {
-            "en": "In <@ba.kw>Reclamation Algorithm</>, when carry any resource, the Redeployment time greatly reduce",
+            "en": "In <@ba.kw>Reclamation Algorithm</>, Redeployment Time reduces significantly if carrying resources",
             "color": "extra",
             "note": "new mods ra-a",
             "name": "char_4058_pepe",

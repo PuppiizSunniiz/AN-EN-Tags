@@ -1,9 +1,4 @@
 # Fix TL (Official EN) waiting room
-### Ato
-- Trait
-    - IS-A : Swire alter
-    - RA-A : Pepe
-
 ### Somniloquium Serenum (Arknights X Eve Mujica)
 - Effect
     - <$ba.permanentatk>Continuously Attack</>
