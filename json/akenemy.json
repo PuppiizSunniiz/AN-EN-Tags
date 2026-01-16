@@ -3887,6 +3887,27 @@
                                 "act48side_07": "ME-7 : 奔袭",
                                 "act48side_08": "ME-8 : 神谕示显"
                             }
+                        },
+                        "act48side_zone2": {
+                            "name": "街头戏剧",
+                            "stage": {
+                                "act48side_ex01": "ME-EX-1 : 进场歌",
+                                "act48side_ex01#f#": "ME-EX-1 : 进场歌 <b>(Challenge)</b>",
+                                "act48side_ex02": "ME-EX-2 : 背景",
+                                "act48side_ex02#f#": "ME-EX-2 : 背景 <b>(Challenge)</b>",
+                                "act48side_ex03": "ME-EX-3 : 主题",
+                                "act48side_ex03#f#": "ME-EX-3 : 主题 <b>(Challenge)</b>",
+                                "act48side_ex04": "ME-EX-4 : 转折",
+                                "act48side_ex04#f#": "ME-EX-4 : 转折 <b>(Challenge)</b>",
+                                "act48side_ex05": "ME-EX-5 : 铺陈",
+                                "act48side_ex05#f#": "ME-EX-5 : 铺陈 <b>(Challenge)</b>",
+                                "act48side_ex06": "ME-EX-6 : 对驳",
+                                "act48side_ex06#f#": "ME-EX-6 : 对驳 <b>(Challenge)</b>",
+                                "act48side_ex07": "ME-EX-7 : 高潮",
+                                "act48side_ex07#f#": "ME-EX-7 : 高潮 <b>(Challenge)</b>",
+                                "act48side_ex08": "ME-EX-8 : 合唱歌",
+                                "act48side_ex08#f#": "ME-EX-8 : 合唱歌 <b>(Challenge)</b>"
+                            }
                         }
                     }
                 }
@@ -35109,6 +35130,24 @@
                         "act48side_06",
                         "act48side_07",
                         "act48side_08"
+                    ],
+                    "act48side_zone2": [
+                        "act48side_ex01",
+                        "act48side_ex01#f#",
+                        "act48side_ex02",
+                        "act48side_ex02#f#",
+                        "act48side_ex03",
+                        "act48side_ex03#f#",
+                        "act48side_ex04",
+                        "act48side_ex04#f#",
+                        "act48side_ex05",
+                        "act48side_ex05#f#",
+                        "act48side_ex06",
+                        "act48side_ex06#f#",
+                        "act48side_ex07",
+                        "act48side_ex07#f#",
+                        "act48side_ex08",
+                        "act48side_ex08#f#"
                     ]
                 }
             }
@@ -35142,6 +35181,10 @@
                         "act48side_06",
                         "act48side_07",
                         "act48side_08"
+                    ],
+                    "act48side_zone2": [
+                        "act48side_ex01",
+                        "act48side_ex01#f#"
                     ]
                 }
             }
@@ -35221,6 +35264,10 @@
                 "act48side": {
                     "act48side_zone1": [
                         "act48side_08"
+                    ],
+                    "act48side_zone2": [
+                        "act48side_ex08",
+                        "act48side_ex08#f#"
                     ]
                 }
             }
@@ -35230,6 +35277,154 @@
                 "act48side": {
                     "act48side_zone1": [
                         "act48side_08"
+                    ],
+                    "act48side_zone2": [
+                        "act48side_ex08",
+                        "act48side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10155_mntjsd_2": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone2": [
+                        "act48side_ex01",
+                        "act48side_ex01#f#",
+                        "act48side_ex02",
+                        "act48side_ex02#f#",
+                        "act48side_ex03",
+                        "act48side_ex03#f#",
+                        "act48side_ex04",
+                        "act48side_ex04#f#",
+                        "act48side_ex05",
+                        "act48side_ex05#f#",
+                        "act48side_ex06",
+                        "act48side_ex06#f#",
+                        "act48side_ex07",
+                        "act48side_ex07#f#",
+                        "act48side_ex08",
+                        "act48side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10156_mncrer_2": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone2": [
+                        "act48side_ex01",
+                        "act48side_ex01#f#",
+                        "act48side_ex02",
+                        "act48side_ex02#f#",
+                        "act48side_ex04",
+                        "act48side_ex04#f#",
+                        "act48side_ex05",
+                        "act48side_ex05#f#",
+                        "act48side_ex07",
+                        "act48side_ex07#f#",
+                        "act48side_ex08",
+                        "act48side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10159_mntrjn_2": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone2": [
+                        "act48side_ex01",
+                        "act48side_ex01#f#",
+                        "act48side_ex04",
+                        "act48side_ex04#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10160_mnlaur_2": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone2": [
+                        "act48side_ex02",
+                        "act48side_ex02#f#",
+                        "act48side_ex03",
+                        "act48side_ex03#f#",
+                        "act48side_ex08",
+                        "act48side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10161_mnserv_2": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone2": [
+                        "act48side_ex02",
+                        "act48side_ex02#f#",
+                        "act48side_ex03",
+                        "act48side_ex03#f#",
+                        "act48side_ex05",
+                        "act48side_ex05#f#",
+                        "act48side_ex06",
+                        "act48side_ex06#f#",
+                        "act48side_ex08",
+                        "act48side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10163_mnctur_2": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone2": [
+                        "act48side_ex03",
+                        "act48side_ex03#f#",
+                        "act48side_ex07",
+                        "act48side_ex07#f#",
+                        "act48side_ex08",
+                        "act48side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10157_mnggyl_2": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone2": [
+                        "act48side_ex03",
+                        "act48side_ex03#f#",
+                        "act48side_ex05",
+                        "act48side_ex05#f#",
+                        "act48side_ex06",
+                        "act48side_ex06#f#",
+                        "act48side_ex07",
+                        "act48side_ex07#f#",
+                        "act48side_ex08",
+                        "act48side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10162_mnctpt_2": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone2": [
+                        "act48side_ex05",
+                        "act48side_ex05#f#",
+                        "act48side_ex07",
+                        "act48side_ex07#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10158_mnzeno_2": {
+            "sidestory": {
+                "act48side": {
+                    "act48side_zone2": [
+                        "act48side_ex05",
+                        "act48side_ex05#f#",
+                        "act48side_ex06",
+                        "act48side_ex06#f#"
                     ]
                 }
             }
