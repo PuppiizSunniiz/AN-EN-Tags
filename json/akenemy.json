@@ -3422,7 +3422,7 @@
                     "name": "[OR] : Such is the Joy of Our Reunion",
                     "date": 1737518400,
                     "zone": {
-                        "act40side_zone1": {
+                        "act40sre_zone1": {
                             "name": "Flavor of Food",
                             "stage": {
                                 "act40side_tr01": "OR-TR-1 : Bitter Gourd with Wood Ear",
@@ -3437,7 +3437,7 @@
                                 "act40side_09": "OR-9 : Longevity Noodles"
                             }
                         },
-                        "act40side_zone2": {
+                        "act40sre_zone2": {
                             "name": "Flavor of Life",
                             "stage": {
                                 "act40side_ex01": "OR-EX-1 : Sourness",
@@ -3458,7 +3458,7 @@
                                 "act40side_ex08#f#": "OR-EX-8 : Hundred Flavors <b>(Challenge)</b>"
                             }
                         },
-                        "act40side_zone3": {
+                        "act40sre_zone3": {
                             "name": "Farewell, Loved Ones",
                             "stage": {
                                 "act40side_s01": "OR-S-1 : One-Year Banquet",
@@ -5590,6 +5590,7 @@
                                 "rogue5_3-3": "Feng Shui",
                                 "rogue5_3-4": "Away, Hui!",
                                 "rogue5_3-5": "Return to Your Roots",
+                                "rogue5_3-6": "御外侮",
                                 "rogue5_b-1": "Cold Moonlight (Boss)",
                                 "rogue5_b-1-b": "Memories of Dusk Beauty (Boss)",
                                 "rogue5_b-2": "Sword, Glaive, Spear (Boss)",
@@ -5606,7 +5607,8 @@
                                 "rogue5_4-3": "Cultured",
                                 "rogue5_4-4": "Take the Stage",
                                 "rogue5_4-5": "Exemplary Service",
-                                "rogue5_4-6": "Beware the Shadows"
+                                "rogue5_4-6": "Beware the Shadows",
+                                "rogue5_4-7": "忍气不吞声"
                             }
                         },
                         "IS#6 Floor 5": {
@@ -5618,6 +5620,7 @@
                                 "rogue5_5-4": "Muted Past",
                                 "rogue5_5-5": "Mangshan Town Records",
                                 "rogue5_5-6": "Unlit Sparks",
+                                "rogue5_5-7": "砺锋",
                                 "rogue5_b-4": "The Suppression of Sui (Boss)",
                                 "rogue5_b-4-b": "天数将易 (Boss)",
                                 "rogue5_b-5": "Words Past Like Smoke (Boss)",
@@ -5638,6 +5641,19 @@
                             "stage": {
                                 "rogue5_7-1": "越山海",
                                 "rogue5_7-2": "借力打力"
+                            }
+                        },
+                        "IS#6  ???": {
+                            "name": "IS#6  ???",
+                            "stage": {
+                                "rogue5_b-8": "录忆 (Boss)",
+                                "rogue5_b-9-a": "止变 (Boss)",
+                                "rogue5_b-9-b": "止变 (Boss)",
+                                "rogue5_b-9-c": "止变 (Boss)",
+                                "rogue5_b-9-d": "止变 (Boss)",
+                                "rogue5_b-9-e": "止变 (Boss)",
+                                "rogue5_b-10": "定乾坤 (Boss)",
+                                "rogue5_b-10-b": "定乾坤 (Boss)"
                             }
                         },
                         "IS#6 Treasure": {
@@ -5878,6 +5894,24 @@
                             "name": "IS#6 ro5_sv_12",
                             "stage": {
                                 "rogue5_sv-12": "四方"
+                            }
+                        },
+                        "IS#6 ro5_sv_13": {
+                            "name": "IS#6 ro5_sv_13",
+                            "stage": {
+                                "rogue5_sv-13": "时封"
+                            }
+                        },
+                        "IS#6 ro5_sv_14": {
+                            "name": "IS#6 ro5_sv_14",
+                            "stage": {
+                                "rogue5_sv-14": "遍地福音"
+                            }
+                        },
+                        "IS#6 ro5_sv_15": {
+                            "name": "IS#6 ro5_sv_15",
+                            "stage": {
+                                "rogue5_sv-15": "相合"
                             }
                         },
                         "IS#6 ro5_sv_1_dlc1": {
@@ -24217,6 +24251,14 @@
                     "IS#5 Duel": [
                         "rogue4_d-3"
                     ]
+                },
+                "IS#6": {
+                    "IS#6 Floor 5": [
+                        "rogue5_5-7"
+                    ],
+                    "IS#6 ro5_sv_13": [
+                        "rogue5_sv-13"
+                    ]
                 }
             }
         },
@@ -36198,7 +36240,8 @@
                         "rogue5_3-2",
                         "rogue5_3-3",
                         "rogue5_3-4",
-                        "rogue5_3-5"
+                        "rogue5_3-5",
+                        "rogue5_3-6"
                     ],
                     "IS#6 Floor 4": [
                         "rogue5_4-1",
@@ -36206,7 +36249,8 @@
                         "rogue5_4-3",
                         "rogue5_4-4",
                         "rogue5_4-5",
-                        "rogue5_4-6"
+                        "rogue5_4-6",
+                        "rogue5_4-7"
                     ],
                     "IS#6 Floor 5": [
                         "rogue5_5-1",
@@ -36214,7 +36258,8 @@
                         "rogue5_5-3",
                         "rogue5_5-4",
                         "rogue5_5-5",
-                        "rogue5_5-6"
+                        "rogue5_5-6",
+                        "rogue5_5-7"
                     ],
                     "IS#6 Floor 6": [
                         "rogue5_6-1",
@@ -36691,7 +36736,8 @@
                         "rogue5_3-2",
                         "rogue5_3-3",
                         "rogue5_3-4",
-                        "rogue5_3-5"
+                        "rogue5_3-5",
+                        "rogue5_3-6"
                     ],
                     "IS#6 Floor 4": [
                         "rogue5_4-1",
@@ -36699,7 +36745,8 @@
                         "rogue5_4-3",
                         "rogue5_4-4",
                         "rogue5_4-5",
-                        "rogue5_4-6"
+                        "rogue5_4-6",
+                        "rogue5_4-7"
                     ],
                     "IS#6 Floor 5": [
                         "rogue5_5-1",
@@ -36707,7 +36754,8 @@
                         "rogue5_5-3",
                         "rogue5_5-4",
                         "rogue5_5-5",
-                        "rogue5_5-6"
+                        "rogue5_5-6",
+                        "rogue5_5-7"
                     ],
                     "IS#6 Floor 6": [
                         "rogue5_6-1",
@@ -37112,7 +37160,8 @@
                         "rogue5_3-2",
                         "rogue5_3-3",
                         "rogue5_3-4",
-                        "rogue5_3-5"
+                        "rogue5_3-5",
+                        "rogue5_3-6"
                     ],
                     "IS#6 Floor 4": [
                         "rogue5_4-1",
@@ -37120,7 +37169,8 @@
                         "rogue5_4-3",
                         "rogue5_4-4",
                         "rogue5_4-5",
-                        "rogue5_4-6"
+                        "rogue5_4-6",
+                        "rogue5_4-7"
                     ],
                     "IS#6 Floor 5": [
                         "rogue5_5-1",
@@ -37128,7 +37178,8 @@
                         "rogue5_5-3",
                         "rogue5_5-4",
                         "rogue5_5-5",
-                        "rogue5_5-6"
+                        "rogue5_5-6",
+                        "rogue5_5-7"
                     ],
                     "IS#6 Floor 6": [
                         "rogue5_6-1",
@@ -37137,6 +37188,9 @@
                     "IS#6 Floor 7": [
                         "rogue5_7-1",
                         "rogue5_7-2"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-e"
                     ],
                     "IS#6 Treasure": [
                         "rogue5_t-1",
@@ -37432,7 +37486,8 @@
                         "rogue5_3-2",
                         "rogue5_3-3",
                         "rogue5_3-4",
-                        "rogue5_3-5"
+                        "rogue5_3-5",
+                        "rogue5_3-6"
                     ],
                     "IS#6 Floor 4": [
                         "rogue5_4-1",
@@ -37440,7 +37495,8 @@
                         "rogue5_4-3",
                         "rogue5_4-4",
                         "rogue5_4-5",
-                        "rogue5_4-6"
+                        "rogue5_4-6",
+                        "rogue5_4-7"
                     ],
                     "IS#6 Floor 5": [
                         "rogue5_5-1",
@@ -37448,7 +37504,8 @@
                         "rogue5_5-3",
                         "rogue5_5-4",
                         "rogue5_5-5",
-                        "rogue5_5-6"
+                        "rogue5_5-6",
+                        "rogue5_5-7"
                     ],
                     "IS#6 Floor 6": [
                         "rogue5_6-1",
@@ -37457,6 +37514,9 @@
                     "IS#6 Floor 7": [
                         "rogue5_7-1",
                         "rogue5_7-2"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-e"
                     ],
                     "IS#6 Treasure": [
                         "rogue5_t-2",
@@ -37498,6 +37558,9 @@
                     ],
                     "IS#6 ro5_sv_11": [
                         "rogue5_sv-11"
+                    ],
+                    "IS#6 ro5_sv_15": [
+                        "rogue5_sv-15"
                     ],
                     "IS#6 ro5_sv_1_dlc1": [
                         "rogue5_sv-1_dlc1"
@@ -41484,6 +41547,13 @@
                         "tr_27"
                     ]
                 }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6 Floor 3": [
+                        "rogue5_3-6"
+                    ]
+                }
             }
         },
         "enemy_10120_uaghst": {
@@ -41506,6 +41576,13 @@
                         "main_16-05#s",
                         "main_16-06#s",
                         "main_16-16#s"
+                    ]
+                }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6 Floor 3": [
+                        "rogue5_3-6"
                     ]
                 }
             }
@@ -41532,6 +41609,13 @@
                         "hard_16-01"
                     ]
                 }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6 Floor 3": [
+                        "rogue5_3-6"
+                    ]
+                }
             }
         },
         "enemy_10121_uasnip": {
@@ -41544,6 +41628,13 @@
                     "EP16 : Adverse Environment": [
                         "main_16-03#s",
                         "main_16-06#s"
+                    ]
+                }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6 Floor 3": [
+                        "rogue5_3-6"
                     ]
                 }
             }
@@ -41574,6 +41665,13 @@
                         "main_16-06#s"
                     ]
                 }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6 Floor 5": [
+                        "rogue5_5-7"
+                    ]
+                }
             }
         },
         "enemy_10125_uacomd": {
@@ -41600,6 +41698,13 @@
                         "main_16-07#s",
                         "main_16-09#s",
                         "main_16-10#s"
+                    ]
+                }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6 Floor 3": [
+                        "rogue5_3-6"
                     ]
                 }
             }
@@ -41650,6 +41755,13 @@
                         "hard_16-04"
                     ]
                 }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6 Floor 5": [
+                        "rogue5_5-7"
+                    ]
+                }
             }
         },
         "enemy_10127_rkmbst": {
@@ -41664,6 +41776,13 @@
                         "main_16-10#s"
                     ]
                 }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6 Floor 5": [
+                        "rogue5_5-7"
+                    ]
+                }
             }
         },
         "enemy_1571_mirbst": {
@@ -41676,6 +41795,13 @@
                         "main_16-11#s",
                         "hard_16-02",
                         "hard_16-04"
+                    ]
+                }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6 Floor 5": [
+                        "rogue5_5-7"
                     ]
                 }
             }
@@ -41741,6 +41867,13 @@
                         "hard_16-04"
                     ]
                 }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6 Floor 5": [
+                        "rogue5_5-7"
+                    ]
+                }
             }
         },
         "enemy_10127_rkmbst_2": {
@@ -41772,6 +41905,13 @@
                         "hard_16-02",
                         "hard_16-03",
                         "hard_16-04"
+                    ]
+                }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6 Floor 3": [
+                        "rogue5_3-6"
                     ]
                 }
             }
@@ -45363,6 +45503,9 @@
             },
             "is": {
                 "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-e"
+                    ],
                     "IS#6 ro5_sv_12": [
                         "rogue5_sv-12"
                     ]
@@ -45507,6 +45650,9 @@
             },
             "is": {
                 "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-e"
+                    ],
                     "IS#6 ro5_sv_6_b": [
                         "rogue5_sv-6-b"
                     ],
@@ -45548,6 +45694,10 @@
             },
             "is": {
                 "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-e",
+                        "rogue5_b-10-b"
+                    ],
                     "IS#6 ro5_sv_3_b": [
                         "rogue5_sv-3-b"
                     ],
@@ -45610,6 +45760,11 @@
                 "IS#5": {
                     "IS#5 Floor 5": [
                         "rogue4_5-6"
+                    ]
+                },
+                "IS#6": {
+                    "IS#6 ro5_sv_15": [
+                        "rogue5_sv-15"
                     ]
                 }
             },
@@ -45796,6 +45951,9 @@
                     ],
                     "IS#6 ro5_sv_9_c": [
                         "rogue5_sv-9-c"
+                    ],
+                    "IS#6 ro5_sv_15": [
+                        "rogue5_sv-15"
                     ]
                 }
             }
@@ -46531,6 +46689,9 @@
             },
             "is": {
                 "IS#6": {
+                    "IS#6 Floor 4": [
+                        "rogue5_4-7"
+                    ],
                     "IS#6 ro5_fs_5_b": [
                         "rogue5_fs-5b"
                     ]
@@ -48020,6 +48181,9 @@
                 "IS#6": {
                     "IS#6 Floor 4": [
                         "rogue5_4-2"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-e"
                     ],
                     "IS#6 ro5_sv_5": [
                         "rogue5_sv-5"
@@ -52701,6 +52865,13 @@
                         "act33side_mo01"
                     ]
                 }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-e"
+                    ]
+                }
             }
         },
         "enemy_1415_mmkabi_2": {
@@ -52769,11 +52940,18 @@
             },
             "is": {
                 "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-e",
+                        "rogue5_b-10-b"
+                    ],
                     "IS#6 Treasure": [
                         "rogue5_t-9-a"
                     ],
                     "IS#6 ro5_fs_2_b": [
                         "rogue5_fs-2b"
+                    ],
+                    "IS#6 ro5_sv_14": [
+                        "rogue5_sv-14"
                     ]
                 }
             },
@@ -52822,6 +53000,9 @@
                 "IS#6": {
                     "IS#6 Floor 5": [
                         "rogue5_5-4"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-e"
                     ]
                 }
             },
@@ -54132,6 +54313,9 @@
                     "IS#6 ro5_sv_1_b": [
                         "rogue5_sv-1-b"
                     ],
+                    "IS#6 ro5_sv_15": [
+                        "rogue5_sv-15"
+                    ],
                     "IS#6 ro5_sv_1_dlc1": [
                         "rogue5_sv-1_dlc1"
                     ],
@@ -54186,6 +54370,15 @@
                 "IS#6": {
                     "IS#6 Floor 7": [
                         "rogue5_7-1"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-8",
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10-b"
                     ]
                 }
             },
@@ -55470,6 +55663,9 @@
                 "IS#6": {
                     "IS#6 Floor 3": [
                         "rogue5_3-2"
+                    ],
+                    "IS#6 ro5_sv_13": [
+                        "rogue5_sv-13"
                     ]
                 }
             },
@@ -55588,6 +55784,12 @@
                     ]
                 },
                 "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d"
+                    ],
                     "IS#6 Duel": [
                         "rogue5_d-1",
                         "rogue5_d-1-b",
@@ -56114,6 +56316,9 @@
                 "IS#6": {
                     "IS#6 Floor 3": [
                         "rogue5_3-2"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-d"
                     ],
                     "IS#6 ro5_fs_5": [
                         "rogue5_fs-5"
@@ -57795,6 +58000,9 @@
                     ]
                 },
                 "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-e"
+                    ],
                     "IS#6 ro5_sv_8": [
                         "rogue5_sv-8"
                     ],
@@ -58229,6 +58437,14 @@
             },
             "is": {
                 "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10-b"
+                    ],
                     "IS#6 Duel": [
                         "rogue5_d-1",
                         "rogue5_d-1-b",
@@ -59917,6 +60133,12 @@
             },
             "is": {
                 "IS#6": {
+                    "IS#6 Floor 4": [
+                        "rogue5_4-7"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-e"
+                    ],
                     "IS#6 Duel": [
                         "rogue5_d-4"
                     ],
@@ -59954,6 +60176,16 @@
                         "act44side_s04#f#"
                     ]
                 }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d"
+                    ]
+                }
             }
         },
         "enemy_10114_ymgsld_2": {
@@ -59980,6 +60212,13 @@
                         "act44side_s03#f#"
                     ]
                 }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-e"
+                    ]
+                }
             }
         },
         "enemy_10117_ymggld_2": {
@@ -59998,6 +60237,13 @@
                         "act44side_s03#f#",
                         "act44side_s04",
                         "act44side_s04#f#"
+                    ]
+                }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6 Floor 4": [
+                        "rogue5_4-7"
                     ]
                 }
             }
@@ -60033,6 +60279,9 @@
             },
             "is": {
                 "IS#6": {
+                    "IS#6 Floor 4": [
+                        "rogue5_4-7"
+                    ],
                     "IS#6 Duel": [
                         "rogue5_d-4"
                     ],
@@ -60064,6 +60313,13 @@
                         "act44side_s04#f#"
                     ]
                 }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6 Floor 4": [
+                        "rogue5_4-7"
+                    ]
+                }
             }
         },
         "enemy_10115_ymghol_2": {
@@ -60091,6 +60347,9 @@
             },
             "is": {
                 "IS#6": {
+                    "IS#6 Floor 4": [
+                        "rogue5_4-7"
+                    ],
                     "IS#6 ro5_sv_11": [
                         "rogue5_sv-11"
                     ]
@@ -60617,6 +60876,14 @@
                     ],
                     "IS#6 Floor 6": [
                         "rogue5_b-7"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-8",
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-10-b"
                     ]
                 }
             }
@@ -61010,6 +61277,15 @@
                     "IS#6 Floor 5": [
                         "rogue5_b-4-b",
                         "rogue5_b-5-b"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-8",
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10-b"
                     ]
                 }
             },
@@ -61101,6 +61377,15 @@
                     ],
                     "IS#6 Floor 6": [
                         "rogue5_b-7"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10",
+                        "rogue5_b-10-b"
                     ]
                 }
             }
@@ -61301,6 +61586,9 @@
                 "IS#6": {
                     "IS#6 Floor 5": [
                         "rogue5_b-5-b"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-e"
                     ]
                 }
             }
@@ -61465,6 +61753,9 @@
                 "IS#6": {
                     "IS#6 Floor 5": [
                         "rogue5_b-4"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-10"
                     ]
                 }
             }
@@ -61506,6 +61797,13 @@
                 "act4bossrush": {
                     "act4bossrush_zone1": [
                         "act4bossrush_04"
+                    ]
+                }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-10-b"
                     ]
                 }
             }
@@ -61592,6 +61890,9 @@
                     "IS#6 Floor 5": [
                         "rogue5_b-4",
                         "rogue5_b-4-b"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-10-b"
                     ]
                 }
             }
@@ -61664,6 +61965,14 @@
                     ],
                     "IS#6 Floor 6": [
                         "rogue5_b-7"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10-b"
                     ]
                 }
             }
@@ -62883,6 +63192,17 @@
                         "act43side_ex08#f#"
                     ]
                 }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e"
+                    ]
+                }
             }
         },
         "enemy_1053_norgst": {
@@ -63527,6 +63847,14 @@
             },
             "is": {
                 "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10-b"
+                    ],
                     "IS#6 Treasure": [
                         "rogue5_t-3"
                     ],
@@ -63568,6 +63896,14 @@
             },
             "is": {
                 "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10-b"
+                    ],
                     "IS#6 Treasure": [
                         "rogue5_t-3"
                     ],
@@ -64416,6 +64752,10 @@
                     ],
                     "IS#6 Floor 5": [
                         "rogue5_b-4-b"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-e",
+                        "rogue5_b-10-b"
                     ]
                 }
             }
@@ -64492,6 +64832,10 @@
                     ],
                     "IS#6 Floor 5": [
                         "rogue5_b-4-b"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-e",
+                        "rogue5_b-10-b"
                     ]
                 }
             }
@@ -65167,6 +65511,14 @@
                     ],
                     "IS#6 Floor 4": [
                         "rogue5_4-5"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10-b"
                     ]
                 }
             }
@@ -65231,6 +65583,14 @@
                     ],
                     "IS#6 Floor 4": [
                         "rogue5_4-5"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10-b"
                     ]
                 }
             }
@@ -65727,6 +66087,14 @@
                         "act42side_s01#f#"
                     ]
                 }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-e",
+                        "rogue5_b-10-b"
+                    ]
+                }
             }
         },
         "enemy_10088_hlsnip_2": {
@@ -65752,6 +66120,9 @@
             },
             "is": {
                 "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-e"
+                    ],
                     "IS#6 Duel": [
                         "rogue5_d-1",
                         "rogue5_d-1-b",
@@ -65785,6 +66156,9 @@
                 "IS#6": {
                     "IS#6 ro5_sv_3_b": [
                         "rogue5_sv-3-b"
+                    ],
+                    "IS#6 ro5_sv_14": [
+                        "rogue5_sv-14"
                     ],
                     "IS#6 ro5_sv_3_b_dlc1": [
                         "rogue5_sv-3-b_dlc1"
@@ -69892,6 +70266,9 @@
                 "IS#6": {
                     "IS#6 Floor 5": [
                         "rogue5_b-4-b"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-10-b"
                     ]
                 }
             }
@@ -69969,6 +70346,10 @@
                     ],
                     "IS#6 Floor 5": [
                         "rogue5_b-4-b"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-8",
+                        "rogue5_b-10-b"
                     ]
                 }
             },
@@ -70025,6 +70406,15 @@
                     ],
                     "IS#6 Floor 6": [
                         "rogue5_b-7"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-8",
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10-b"
                     ]
                 }
             }
@@ -70705,6 +71095,17 @@
                         "camp_r_11"
                     ]
                 }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-10-b"
+                    ]
+                }
             }
         },
         "enemy_1204_msfhu_2": {
@@ -70741,6 +71142,17 @@
                 "camp_r_11": {
                     "camp_r_11": [
                         "camp_r_11"
+                    ]
+                }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-10-b"
                     ]
                 }
             }
@@ -70826,6 +71238,15 @@
                         "rogue5_b-4-b",
                         "rogue5_b-5",
                         "rogue5_b-5-b"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10",
+                        "rogue5_b-10-b"
                     ],
                     "IS#6 Duel": [
                         "rogue5_d-2",
@@ -70917,6 +71338,15 @@
                         "rogue5_b-4-b",
                         "rogue5_b-5",
                         "rogue5_b-5-b"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10",
+                        "rogue5_b-10-b"
                     ],
                     "IS#6 Duel": [
                         "rogue5_d-2",
@@ -71192,6 +71622,9 @@
                         "rogue5_d-2",
                         "rogue5_d-2-b",
                         "rogue5_d-2-c"
+                    ],
+                    "IS#6 ro5_sv_14": [
+                        "rogue5_sv-14"
                     ]
                 }
             }
@@ -71447,6 +71880,15 @@
                     "IS#6 Floor 4": [
                         "rogue5_4-5"
                     ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10",
+                        "rogue5_b-10-b"
+                    ],
                     "IS#6 Duel": [
                         "rogue5_d-2",
                         "rogue5_d-2-b",
@@ -71508,6 +71950,15 @@
                 "IS#6": {
                     "IS#6 Floor 4": [
                         "rogue5_4-5"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10",
+                        "rogue5_b-10-b"
                     ],
                     "IS#6 Duel": [
                         "rogue5_d-2",
@@ -73481,7 +73932,7 @@
         "enemy_10059_cjgfod": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone1": [
+                    "act40sre_zone1": [
                         "act40side_tr01",
                         "act40side_01",
                         "act40side_02",
@@ -73493,7 +73944,7 @@
                         "act40side_08",
                         "act40side_09"
                     ],
-                    "act40side_zone2": [
+                    "act40sre_zone2": [
                         "act40side_ex01",
                         "act40side_ex01#f#",
                         "act40side_ex02",
@@ -73511,7 +73962,7 @@
                         "act40side_ex08",
                         "act40side_ex08#f#"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_s01",
                         "act40side_s01#f#",
                         "act40side_s02",
@@ -73537,6 +73988,9 @@
                     ],
                     "IS#6 Floor 3": [
                         "rogue5_b-1-b"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-10-b"
                     ],
                     "IS#6 Treasure": [
                         "rogue5_t-5"
@@ -73558,7 +74012,7 @@
         "enemy_10060_cjbfod": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone1": [
+                    "act40sre_zone1": [
                         "act40side_tr01",
                         "act40side_01",
                         "act40side_02",
@@ -73571,7 +74025,7 @@
                         "act40side_09",
                         "act40side_09"
                     ],
-                    "act40side_zone2": [
+                    "act40sre_zone2": [
                         "act40side_ex01",
                         "act40side_ex01#f#",
                         "act40side_ex02",
@@ -73591,7 +74045,7 @@
                         "act40side_ex08#f#",
                         "act40side_ex08#f#"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_s01",
                         "act40side_s01#f#",
                         "act40side_s02",
@@ -73620,6 +74074,9 @@
                     "IS#6 Floor 3": [
                         "rogue5_b-1-b"
                     ],
+                    "IS#6  ???": [
+                        "rogue5_b-10-b"
+                    ],
                     "IS#6 Treasure": [
                         "rogue5_t-5"
                     ],
@@ -73640,7 +74097,7 @@
         "enemy_10062_cjblon": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone1": [
+                    "act40sre_zone1": [
                         "act40side_tr01",
                         "act40side_01",
                         "act40side_02",
@@ -73652,7 +74109,7 @@
                         "act40side_08",
                         "act40side_09"
                     ],
-                    "act40side_zone2": [
+                    "act40sre_zone2": [
                         "act40side_ex01",
                         "act40side_ex01#f#",
                         "act40side_ex02",
@@ -73670,7 +74127,7 @@
                         "act40side_ex08",
                         "act40side_ex08#f#"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_s01",
                         "act40side_s01#f#",
                         "act40side_s02",
@@ -73709,7 +74166,7 @@
         "enemy_10061_cjglon": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone1": [
+                    "act40sre_zone1": [
                         "act40side_tr01",
                         "act40side_01",
                         "act40side_02",
@@ -73721,7 +74178,7 @@
                         "act40side_08",
                         "act40side_09"
                     ],
-                    "act40side_zone2": [
+                    "act40sre_zone2": [
                         "act40side_ex01",
                         "act40side_ex01#f#",
                         "act40side_ex02",
@@ -73739,7 +74196,7 @@
                         "act40side_ex08",
                         "act40side_ex08#f#"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_s01",
                         "act40side_s01#f#",
                         "act40side_s02",
@@ -73778,7 +74235,7 @@
         "enemy_10050_cjmeat": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone1": [
+                    "act40sre_zone1": [
                         "act40side_tr01",
                         "act40side_01",
                         "act40side_02",
@@ -73788,7 +74245,7 @@
                         "act40side_08",
                         "act40side_09"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_mo01"
                     ]
                 }
@@ -73804,13 +74261,13 @@
         "enemy_10052_cjshld": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone1": [
+                    "act40sre_zone1": [
                         "act40side_tr01",
                         "act40side_06",
                         "act40side_07",
                         "act40side_09"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_mo01"
                     ]
                 }
@@ -73819,7 +74276,7 @@
         "enemy_10053_cjman": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone1": [
+                    "act40sre_zone1": [
                         "act40side_tr01",
                         "act40side_01",
                         "act40side_02",
@@ -73831,7 +74288,7 @@
                         "act40side_08",
                         "act40side_09"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_mo01"
                     ]
                 }
@@ -73847,14 +74304,14 @@
         "enemy_10056_cjfish": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone1": [
+                    "act40sre_zone1": [
                         "act40side_02",
                         "act40side_03",
                         "act40side_04",
                         "act40side_06",
                         "act40side_07"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_mo01"
                     ]
                 }
@@ -73863,11 +74320,11 @@
         "enemy_10051_cjmag": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone1": [
+                    "act40sre_zone1": [
                         "act40side_03",
                         "act40side_08"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_mo01"
                     ]
                 }
@@ -73876,10 +74333,10 @@
         "enemy_10055_cjgost": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone1": [
+                    "act40sre_zone1": [
                         "act40side_04"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_mo01"
                     ]
                 }
@@ -73888,11 +74345,11 @@
         "enemy_10054_cjhot": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone1": [
+                    "act40sre_zone1": [
                         "act40side_05",
                         "act40side_09"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_mo01"
                     ]
                 }
@@ -73901,7 +74358,7 @@
         "enemy_10057_cjstel": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone1": [
+                    "act40sre_zone1": [
                         "act40side_07",
                         "act40side_07",
                         "act40side_07",
@@ -73914,11 +74371,11 @@
         "enemy_10058_cjfrog": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone1": [
+                    "act40sre_zone1": [
                         "act40side_08",
                         "act40side_09"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_mo01"
                     ]
                 }
@@ -73934,14 +74391,14 @@
         "enemy_10063_cjdoor": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone1": [
+                    "act40sre_zone1": [
                         "act40side_09"
                     ],
-                    "act40side_zone2": [
+                    "act40sre_zone2": [
                         "act40side_ex08",
                         "act40side_ex08#f#"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_s04",
                         "act40side_s04#f#"
                     ]
@@ -73951,14 +74408,14 @@
         "enemy_10063_cjdoor_2": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone1": [
+                    "act40sre_zone1": [
                         "act40side_09"
                     ],
-                    "act40side_zone2": [
+                    "act40sre_zone2": [
                         "act40side_ex08",
                         "act40side_ex08#f#"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_s04",
                         "act40side_s04#f#"
                     ]
@@ -73968,14 +74425,14 @@
         "enemy_1562_cjtaot": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone1": [
+                    "act40sre_zone1": [
                         "act40side_09"
                     ],
-                    "act40side_zone2": [
+                    "act40sre_zone2": [
                         "act40side_ex08",
                         "act40side_ex08#f#"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_s04",
                         "act40side_s04#f#"
                     ]
@@ -73985,7 +74442,7 @@
         "enemy_10050_cjmeat_2": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone2": [
+                    "act40sre_zone2": [
                         "act40side_ex01",
                         "act40side_ex01#f#",
                         "act40side_ex03",
@@ -73995,7 +74452,7 @@
                         "act40side_ex08",
                         "act40side_ex08#f#"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_s01",
                         "act40side_s01#f#"
                     ]
@@ -74015,7 +74472,7 @@
         "enemy_10053_cjman_2": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone2": [
+                    "act40sre_zone2": [
                         "act40side_ex01",
                         "act40side_ex01#f#",
                         "act40side_ex02",
@@ -74031,7 +74488,7 @@
                         "act40side_ex08",
                         "act40side_ex08#f#"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_s01",
                         "act40side_s01#f#",
                         "act40side_s02",
@@ -74061,7 +74518,7 @@
         "enemy_10056_cjfish_2": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone2": [
+                    "act40sre_zone2": [
                         "act40side_ex01",
                         "act40side_ex01#f#",
                         "act40side_ex02",
@@ -74073,7 +74530,7 @@
                         "act40side_ex06",
                         "act40side_ex06#f#"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_s02",
                         "act40side_s02#f#",
                         "act40side_s03",
@@ -74096,7 +74553,7 @@
         "enemy_10052_cjshld_2": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone2": [
+                    "act40sre_zone2": [
                         "act40side_ex01",
                         "act40side_ex01#f#",
                         "act40side_ex02",
@@ -74108,7 +74565,7 @@
                         "act40side_ex07",
                         "act40side_ex07#f#"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_s02",
                         "act40side_s02#f#",
                         "act40side_s03",
@@ -74133,7 +74590,7 @@
         "enemy_10054_cjhot_2": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone2": [
+                    "act40sre_zone2": [
                         "act40side_ex02",
                         "act40side_ex02#f#",
                         "act40side_ex04",
@@ -74145,7 +74602,7 @@
                         "act40side_ex08",
                         "act40side_ex08#f#"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_s01",
                         "act40side_s01#f#",
                         "act40side_s02",
@@ -74182,11 +74639,11 @@
         "enemy_10055_cjgost_2": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone2": [
+                    "act40sre_zone2": [
                         "act40side_ex03",
                         "act40side_ex03#f#"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_mo01"
                     ]
                 }
@@ -74195,7 +74652,7 @@
         "enemy_10057_cjstel_2": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone2": [
+                    "act40sre_zone2": [
                         "act40side_ex04",
                         "act40side_ex04",
                         "act40side_ex04",
@@ -74215,7 +74672,7 @@
                         "act40side_ex08#f#",
                         "act40side_ex08#f#"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_s01",
                         "act40side_s01",
                         "act40side_s01",
@@ -74238,13 +74695,13 @@
         "enemy_10051_cjmag_2": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone2": [
+                    "act40sre_zone2": [
                         "act40side_ex05",
                         "act40side_ex05#f#",
                         "act40side_ex08",
                         "act40side_ex08#f#"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_s01",
                         "act40side_s01",
                         "act40side_s01#f#",
@@ -74275,13 +74732,13 @@
         "enemy_10058_cjfrog_2": {
             "sidestory": {
                 "act40side": {
-                    "act40side_zone2": [
+                    "act40sre_zone2": [
                         "act40side_ex06",
                         "act40side_ex06#f#",
                         "act40side_ex07",
                         "act40side_ex07#f#"
                     ],
-                    "act40side_zone3": [
+                    "act40sre_zone3": [
                         "act40side_s02",
                         "act40side_s02#f#",
                         "act40side_s03",
@@ -74298,6 +74755,14 @@
                     ],
                     "IS#6 Floor 5": [
                         "rogue5_b-4"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-10",
+                        "rogue5_b-10-b"
                     ],
                     "IS#6 Duel": [
                         "rogue5_d-2",
@@ -74981,6 +75446,9 @@
                     ],
                     "IS#6 Floor 5": [
                         "rogue5_b-4"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-10-b"
                     ]
                 }
             }
@@ -75037,6 +75505,9 @@
                     ],
                     "IS#6 Floor 5": [
                         "rogue5_b-4"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-10-b"
                     ]
                 }
             }
@@ -76596,6 +77067,13 @@
                         "act16d5_10"
                     ]
                 }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-10"
+                    ]
+                }
             }
         },
         "enemy_1148_dssbr": {
@@ -76883,6 +77361,15 @@
             },
             "is": {
                 "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10",
+                        "rogue5_b-10-b"
+                    ],
                     "IS#6 ro5_fs_5": [
                         "rogue5_fs-5"
                     ]
@@ -77211,6 +77698,9 @@
             },
             "is": {
                 "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-10-b"
+                    ],
                     "IS#6 Duel": [
                         "rogue5_d-2",
                         "rogue5_d-2-b",
@@ -77484,6 +77974,13 @@
                 "IS#6": {
                     "IS#6 Floor 6": [
                         "rogue5_b-7"
+                    ],
+                    "IS#6 ro5_sv_13": [
+                        "rogue5_sv-13"
+                    ],
+                    "IS#6 ro5_sv_14": [
+                        "rogue5_sv-14",
+                        "rogue5_sv-14"
                     ]
                 }
             },
@@ -78553,8 +79050,14 @@
                     "IS#6 Floor 6": [
                         "rogue5_6-2"
                     ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-e"
+                    ],
                     "IS#6 ro5_fs_5": [
                         "rogue5_fs-5"
+                    ],
+                    "IS#6 ro5_sv_15": [
+                        "rogue5_sv-15"
                     ]
                 }
             },
@@ -78582,6 +79085,13 @@
                 "tower_n_19": {
                     "tower_n_19": [
                         "lt_19_05"
+                    ]
+                }
+            },
+            "is": {
+                "IS#6": {
+                    "IS#6 ro5_sv_15": [
+                        "rogue5_sv-15"
                     ]
                 }
             }
@@ -79199,6 +79709,14 @@
                     "IS#6 Floor 5": [
                         "rogue5_b-4",
                         "rogue5_b-4-b"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10"
                     ]
                 }
             }
@@ -81463,6 +81981,16 @@
                     ]
                 }
             },
+            "is": {
+                "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-d"
+                    ],
+                    "IS#6 ro5_sv_13": [
+                        "rogue5_sv-13"
+                    ]
+                }
+            },
             "ra": {
                 "RA#2": {
                     "RA#2 Normal Rushparty": [
@@ -81939,6 +82467,10 @@
                     "IS#6 Floor 7": [
                         "rogue5_7-1",
                         "rogue5_7-1"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-10",
+                        "rogue5_b-10"
                     ],
                     "IS#6 ro5_sv_3": [
                         "rogue5_sv-3",
@@ -87270,6 +87802,7 @@
                         "rogue5_3-3",
                         "rogue5_3-4",
                         "rogue5_3-5",
+                        "rogue5_3-6",
                         "rogue5_b-1",
                         "rogue5_b-1-b",
                         "rogue5_b-2",
@@ -87283,7 +87816,8 @@
                         "rogue5_4-3",
                         "rogue5_4-4",
                         "rogue5_4-5",
-                        "rogue5_4-6"
+                        "rogue5_4-6",
+                        "rogue5_4-7"
                     ],
                     "IS#6 Floor 5": [
                         "rogue5_5-1",
@@ -87292,6 +87826,7 @@
                         "rogue5_5-4",
                         "rogue5_5-5",
                         "rogue5_5-6",
+                        "rogue5_5-7",
                         "rogue5_b-4",
                         "rogue5_b-4-b",
                         "rogue5_b-5",
@@ -87306,6 +87841,16 @@
                     "IS#6 Floor 7": [
                         "rogue5_7-1",
                         "rogue5_7-2"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-8",
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10",
+                        "rogue5_b-10-b"
                     ],
                     "IS#6 Treasure": [
                         "rogue5_t-1",
@@ -87435,6 +87980,15 @@
                     ],
                     "IS#6 ro5_sv_12": [
                         "rogue5_sv-12"
+                    ],
+                    "IS#6 ro5_sv_13": [
+                        "rogue5_sv-13"
+                    ],
+                    "IS#6 ro5_sv_14": [
+                        "rogue5_sv-14"
+                    ],
+                    "IS#6 ro5_sv_15": [
+                        "rogue5_sv-15"
                     ],
                     "IS#6 ro5_sv_1_dlc1": [
                         "rogue5_sv-1_dlc1"
@@ -87512,6 +88066,7 @@
                         "rogue5_3-3",
                         "rogue5_3-4",
                         "rogue5_3-5",
+                        "rogue5_3-6",
                         "rogue5_b-1",
                         "rogue5_b-1-b",
                         "rogue5_b-2",
@@ -87525,7 +88080,8 @@
                         "rogue5_4-3",
                         "rogue5_4-4",
                         "rogue5_4-5",
-                        "rogue5_4-6"
+                        "rogue5_4-6",
+                        "rogue5_4-7"
                     ],
                     "IS#6 Floor 5": [
                         "rogue5_5-1",
@@ -87534,6 +88090,7 @@
                         "rogue5_5-4",
                         "rogue5_5-5",
                         "rogue5_5-6",
+                        "rogue5_5-7",
                         "rogue5_b-4",
                         "rogue5_b-4-b",
                         "rogue5_b-5",
@@ -87548,6 +88105,16 @@
                     "IS#6 Floor 7": [
                         "rogue5_7-1",
                         "rogue5_7-2"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-8",
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10",
+                        "rogue5_b-10-b"
                     ],
                     "IS#6 Treasure": [
                         "rogue5_t-1",
@@ -87678,6 +88245,15 @@
                     "IS#6 ro5_sv_12": [
                         "rogue5_sv-12"
                     ],
+                    "IS#6 ro5_sv_13": [
+                        "rogue5_sv-13"
+                    ],
+                    "IS#6 ro5_sv_14": [
+                        "rogue5_sv-14"
+                    ],
+                    "IS#6 ro5_sv_15": [
+                        "rogue5_sv-15"
+                    ],
                     "IS#6 ro5_sv_1_dlc1": [
                         "rogue5_sv-1_dlc1"
                     ],
@@ -87754,6 +88330,7 @@
                         "rogue5_3-3",
                         "rogue5_3-4",
                         "rogue5_3-5",
+                        "rogue5_3-6",
                         "rogue5_b-1",
                         "rogue5_b-1-b"
                     ],
@@ -87763,7 +88340,8 @@
                         "rogue5_4-3",
                         "rogue5_4-4",
                         "rogue5_4-5",
-                        "rogue5_4-6"
+                        "rogue5_4-6",
+                        "rogue5_4-7"
                     ],
                     "IS#6 Floor 5": [
                         "rogue5_5-1",
@@ -87771,7 +88349,8 @@
                         "rogue5_5-3",
                         "rogue5_5-4",
                         "rogue5_5-5",
-                        "rogue5_5-6"
+                        "rogue5_5-6",
+                        "rogue5_5-7"
                     ],
                     "IS#6 Floor 6": [
                         "rogue5_6-1",
@@ -87826,6 +88405,7 @@
                         "rogue5_3-3",
                         "rogue5_3-4",
                         "rogue5_3-5",
+                        "rogue5_3-6",
                         "rogue5_b-1",
                         "rogue5_b-1-b",
                         "rogue5_b-2",
@@ -87839,7 +88419,8 @@
                         "rogue5_4-3",
                         "rogue5_4-4",
                         "rogue5_4-5",
-                        "rogue5_4-6"
+                        "rogue5_4-6",
+                        "rogue5_4-7"
                     ],
                     "IS#6 Floor 5": [
                         "rogue5_5-1",
@@ -87848,6 +88429,7 @@
                         "rogue5_5-4",
                         "rogue5_5-5",
                         "rogue5_5-6",
+                        "rogue5_5-7",
                         "rogue5_b-4",
                         "rogue5_b-4-b"
                     ],
@@ -87950,6 +88532,15 @@
                     "IS#6 ro5_sv_12": [
                         "rogue5_sv-12"
                     ],
+                    "IS#6 ro5_sv_13": [
+                        "rogue5_sv-13"
+                    ],
+                    "IS#6 ro5_sv_14": [
+                        "rogue5_sv-14"
+                    ],
+                    "IS#6 ro5_sv_15": [
+                        "rogue5_sv-15"
+                    ],
                     "IS#6 ro5_sv_1_dlc1": [
                         "rogue5_sv-1_dlc1"
                     ],
@@ -88021,6 +88612,7 @@
                         "rogue5_5-3",
                         "rogue5_5-5",
                         "rogue5_5-6",
+                        "rogue5_5-7",
                         "rogue5_b-4-b"
                     ],
                     "IS#6 Floor 6": [
@@ -88031,6 +88623,15 @@
                         "rogue5_b-2",
                         "rogue5_b-3",
                         "rogue5_b-3-b"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10",
+                        "rogue5_b-10-b"
                     ],
                     "IS#6 Treasure": [
                         "rogue5_t-2",
@@ -88051,6 +88652,9 @@
                     "IS#6 ro5_sv_8": [
                         "rogue5_sv-8"
                     ],
+                    "IS#6 ro5_sv_15": [
+                        "rogue5_sv-15"
+                    ],
                     "IS#6 ro5_sv_8_dlc1": [
                         "rogue5_sv-8_dlc1"
                     ]
@@ -88068,9 +88672,21 @@
                         "rogue5_2-5",
                         "rogue5_2-6"
                     ],
+                    "IS#6 Floor 3": [
+                        "rogue5_3-6"
+                    ],
+                    "IS#6 Floor 4": [
+                        "rogue5_4-7"
+                    ],
+                    "IS#6 Floor 5": [
+                        "rogue5_5-7"
+                    ],
                     "IS#6 Floor 7": [
                         "rogue5_7-1",
                         "rogue5_7-2"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-e"
                     ]
                 }
             }
@@ -88097,6 +88713,14 @@
                     ],
                     "IS#6 Floor 6": [
                         "rogue5_b-6"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-10",
+                        "rogue5_b-10-b"
                     ],
                     "IS#6 Treasure": [
                         "rogue5_t-8"
@@ -88145,6 +88769,15 @@
                         "rogue5_b-2",
                         "rogue5_b-3-b"
                     ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10",
+                        "rogue5_b-10-b"
+                    ],
                     "IS#6 Treasure": [
                         "rogue5_t-4",
                         "rogue5_t-8"
@@ -88161,6 +88794,9 @@
                     ],
                     "IS#6 ro5_dv_5": [
                         "rogue5_dv-5"
+                    ],
+                    "IS#6 ro5_sv_15": [
+                        "rogue5_sv-15"
                     ]
                 }
             }
@@ -88183,6 +88819,15 @@
                     "IS#6 Floor 6": [
                         "rogue5_b-6",
                         "rogue5_b-7"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10",
+                        "rogue5_b-10-b"
                     ],
                     "IS#6 Treasure": [
                         "rogue5_t-4",
@@ -88297,6 +88942,13 @@
                     "IS#6 Floor 3": [
                         "rogue5_b-2-b"
                     ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e"
+                    ],
                     "IS#6 ro5_sv_7_b": [
                         "rogue5_sv-7-b"
                     ],
@@ -88312,6 +88964,13 @@
                     "IS#6 Floor 3": [
                         "rogue5_b-2-b"
                     ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e"
+                    ],
                     "IS#6 ro5_sv_7_b": [
                         "rogue5_sv-7-b"
                     ],
@@ -88326,6 +88985,13 @@
                 "IS#6": {
                     "IS#6 Floor 3": [
                         "rogue5_b-2-b"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e"
                     ],
                     "IS#6 ro5_sv_7_b": [
                         "rogue5_sv-7-b"
@@ -88363,6 +89029,10 @@
                     "IS#6 Floor 5": [
                         "rogue5_b-4",
                         "rogue5_b-4-b"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-e"
                     ]
                 }
             }
@@ -88375,6 +89045,12 @@
                         "rogue5_b-4",
                         "rogue5_b-4-b",
                         "rogue5_b-4-b"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-e",
+                        "rogue5_b-9-e"
                     ]
                 }
             }
@@ -88385,6 +89061,10 @@
                     "IS#6 Floor 5": [
                         "rogue5_b-5",
                         "rogue5_b-5-b"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-e"
                     ]
                 }
             }
@@ -88394,6 +89074,10 @@
                 "IS#6": {
                     "IS#6 Floor 6": [
                         "rogue5_b-6"
+                    ],
+                    "IS#6  ???": [
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-e"
                     ]
                 }
             }
@@ -88412,6 +89096,122 @@
                 "IS#6": {
                     "IS#6 Floor 6": [
                         "rogue5_b-7"
+                    ]
+                }
+            }
+        },
+        "enemy_2126_dycyue": {
+            "is": {
+                "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-8",
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10",
+                        "rogue5_b-10-b"
+                    ]
+                }
+            }
+        },
+        "enemy_2129_dylong": {
+            "is": {
+                "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-8",
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10",
+                        "rogue5_b-10-b"
+                    ]
+                }
+            }
+        },
+        "enemy_2130_dyswrd": {
+            "is": {
+                "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-8",
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10",
+                        "rogue5_b-10-b"
+                    ]
+                }
+            }
+        },
+        "enemy_2128_dysuib": {
+            "is": {
+                "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10",
+                        "rogue5_b-10",
+                        "rogue5_b-10",
+                        "rogue5_b-10-b",
+                        "rogue5_b-10-b"
+                    ]
+                }
+            }
+        },
+        "enemy_2127_dysuih": {
+            "is": {
+                "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10",
+                        "rogue5_b-10-b"
+                    ]
+                }
+            }
+        },
+        "enemy_2131_dyfire": {
+            "is": {
+                "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10",
+                        "rogue5_b-10-b"
+                    ]
+                }
+            }
+        },
+        "enemy_2132_dyfake": {
+            "is": {
+                "IS#6": {
+                    "IS#6  ???": [
+                        "rogue5_b-9-a",
+                        "rogue5_b-9-b",
+                        "rogue5_b-9-c",
+                        "rogue5_b-9-d",
+                        "rogue5_b-9-e",
+                        "rogue5_b-10",
+                        "rogue5_b-10-b"
                     ]
                 }
             }
