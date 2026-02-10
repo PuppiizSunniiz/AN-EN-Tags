@@ -106,7 +106,7 @@
             "buffName": "商业版图",
             "skillIcon": "bskill_ctrl_t_limit&spd3",
             "desc": "进驻控制中枢时，每个存在<@cc.vup>3</>名<$cc.g.karlan><@cc.kw>谢拉格</></>干员的贸易站，订单获取效率<@cc.vup>+10%</>",
-            "description": "When this Operator is assigned to the Control Center, Trading Posts with 3 <$cc.g.karlan><@cc.kw>Kjerag</></> Operators assigned, gain order acquisition efficiency <@cc.vup>+10%</>"
+            "description": "When this Operator is assigned to the Control Center, Trading Posts with 3 <$cc.g.karlan><@cc.kw>Karlan Trade</></> Operators assigned, gain order acquisition efficiency <@cc.vup>+10%</>"
         },
         "control_hire_spd[000]": {
             "buffName": "Infectivity",
@@ -509,6 +509,12 @@
             "skillIcon": "bskill_ctrl_hire_tmoris",
             "desc": "进驻控制中枢时，<$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+10</>；人脉资源的联络速度<@cc.vup>+10%</>（同种效果取最高）",
             "description": "When this Operator is assigned to the Control Center, <$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+10</>; HR contacting speed <@cc.vup>+10%</> (strongest effect of the same type applies)"
+        },
+        "control_prod_tra_spd[000]": {
+            "buffName": "权变",
+            "skillIcon": "bskill_ctrl_tra&prod",
+            "desc": "进驻控制中枢时，若<$cc.bd_wang_1><@cc.kw>外势</></>大于等于<$cc.bd_wang_2><@cc.kw>实地</></>，所有贸易站订单效率<@cc.vup>+7%</>；若<$cc.bd_wang_2><@cc.kw>实地</></>大于<$cc.bd_wang_1><@cc.kw>外势</></>，所有制造站生产力<@cc.vup>+2%</>（同种效果取最高）",
+            "description": "进驻控制中枢时，若<$cc.bd_wang_1><@cc.kw>外势</></>大于等于<$cc.bd_wang_2><@cc.kw>实地</></>，所有贸易站订单效率<@cc.vup>+7%</>；若<$cc.bd_wang_2><@cc.kw>实地</></>大于<$cc.bd_wang_1><@cc.kw>外势</></>，所有制造站生产力<@cc.vup>+2%</>（同种效果取最高）"
         },
         "power_rec_spd&cost[000]": {
             "buffName": "Enthusiasm",
@@ -1878,6 +1884,12 @@
             "desc": "进驻贸易站时，订单获取效率<@cc.vup>+25%</>，基建内（不包含副手及活动室）每有一间进驻<$cc.g.elite><@cc.kw>精英干员</></>的设施，订单获取效率额外<@cc.vup>+2%</>（最多<@cc.kw>10</>间）",
             "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+25%</>, each facility that <$cc.g.elite><@cc.kw>Elite Operator</></> Operator is stationed (excluding Assistants and Activity Room users), additional order acquisition efficiency <@cc.vup>+2%</> (up to <@cc.kw>10</> facilities)"
         },
+        "trade_ord_spd&tag[020]": {
+            "buffName": "“孺子可教！”",
+            "skillIcon": "bskill_ord_spd&tag2",
+            "desc": "进驻贸易站时，基建内（不包含副手及活动室）每有一间进驻<$cc.g.sui><@cc.kw>岁</></>干员的设施，订单获取效率<@cc.vup>+4%</>（最多<@cc.kw>5</>间）",
+            "description": "进驻贸易站时，基建内（不包含副手及活动室）每有一间进驻<$cc.g.sui><@cc.kw>岁</></>干员的设施，订单获取效率<@cc.vup>+4%</>（最多<@cc.kw>5</>间）"
+        },
         "workshop_proc_probability[000]": {
             "buffName": "Focus α",
             "skillIcon": "bskill_ws_p1",
@@ -2033,6 +2045,18 @@
             "skillIcon": "bskill_ws_cost_blemishine",
             "desc": "进驻加工站加工<@cc.kw>精英材料</>时，副产品的产出概率提升<@cc.vup>40%</>，同时心情消耗为<@cc.kw>8</>以上的配方全部<@cc.vup>-4</>心情消耗",
             "description": "When this Operator is assigned to the Workshop to process <@cc.kw>Elite materials</>, increases the byproduct production rate by <@cc.vup>40%</>, and decreases the Morale consumption of recipes that cost <@cc.kw>8</> Morale or more by <@cc.vup>-4</>"
+        },
+        "workshop_formula_cost2[110]": {
+            "buffName": "大匠之心·α",
+            "skillIcon": "bskill_ws_cost_ju",
+            "desc": "进驻加工站加工<@cc.kw>精英材料</>时，副产品的产出概率提升<@cc.vup>60%</>，同时心情消耗为<@cc.kw>8</>以上的配方全部<@cc.vup>-2</>心情消耗",
+            "description": "进驻加工站加工<@cc.kw>精英材料</>时，副产品的产出概率提升<@cc.vup>60%</>，同时心情消耗为<@cc.kw>8</>以上的配方全部<@cc.vup>-2</>心情消耗"
+        },
+        "workshop_formula_cost2[111]": {
+            "buffName": "大匠之心·β",
+            "skillIcon": "bskill_ws_cost_ju2",
+            "desc": "进驻加工站加工<@cc.kw>精英材料</>时，副产品的产出概率提升<@cc.vup>80%</>，同时心情消耗为<@cc.kw>4</>以上的配方全部<@cc.vup>-2</>心情消耗",
+            "description": "进驻加工站加工<@cc.kw>精英材料</>时，副产品的产出概率提升<@cc.vup>80%</>，同时心情消耗为<@cc.kw>4</>以上的配方全部<@cc.vup>-2</>心情消耗"
         },
         "workshop_formula_cost[010]": {
             "buffName": "Reckless",
@@ -2543,6 +2567,12 @@
             "skillIcon": "bskill_train_siracusa",
             "desc": "进驻训练室协助位时，基建内（不包含副手及活动室使用者）每名<$cc.g.siracusa><@cc.kw>叙拉古</></>干员为当前干员的专精技能训练速度<@cc.vup>+5%</>（最多生效<@cc.kw>7</>名）",
             "description": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed <@cc.vup>+5%</> for each <$cc.g.siracusa><@cc.kw>Siracusa</></> Operator in the Base (excluding Assistants and Activity Room users, caps at <@cc.kw>7</> Operators)"
+        },
+        "train_spd&level[000]": {
+            "buffName": "苦心孤诣",
+            "skillIcon": "bskill_train_spd&level",
+            "desc": "进驻训练室协助位时，如果本次训练专精技能至<@cc.vup>3</>级，专精技能训练速度<@cc.vup>+70%</>",
+            "description": "进驻训练室协助位时，如果本次训练专精技能至<@cc.vup>3</>级，专精技能训练速度<@cc.vup>+70%</>"
         },
         "train_spd_power_down[000]": {
             "buffName": "'Methods Should Be Effective'",
@@ -4128,6 +4158,12 @@
             "desc": "进驻会客室时，更容易获得线索板上尚未拥有的线索",
             "description": "When this Operator is assigned to the Reception Room, increases the likelihood of obtaining clues that are not on the Clue Board."
         },
+        "meet_spd_notOwned[003]": {
+            "buffName": "萍踪浪迹",
+            "skillIcon": "bskill_meet_spdNotOwned1",
+            "desc": "进驻会客室时，更容易获得线索板上尚未拥有的线索",
+            "description": "When this Operator is assigned to the Reception Room, increases the likelihood of obtaining clues that are not on the Clue Board."
+        },
         "meet_spd_Owned[000]": {
             "buffName": "Conspicuous Investigator",
             "skillIcon": "bskill_meet_spdOwned1",
@@ -4145,6 +4181,12 @@
             "skillIcon": "bskill_meet_bd_dungeon",
             "desc": "进驻会客室时，每拥有<@cc.vup>1</>点<$cc.bd_dungeon><@cc.rem>魔物料理</></>，线索搜集速度额外提升<@cc.vup>2%</>",
             "description": "When this Operator is assigned to the Reception Room, increases Clue search speed by an additional <@cc.vup>2%</> for every <@cc.vup>1</> <$cc.bd_dungeon><@cc.rem>Monster Meal</></>"
+        },
+        "meet_spd_bd[002]": {
+            "buffName": "扶危行侠",
+            "skillIcon": "bskill_meet_bd_to_spd",
+            "desc": "进驻会客室时，线索搜集速度提升<@cc.vup>20%</>，同时每<@cc.vup>10</>点<$cc.bd_b1><@cc.rem>人间烟火</></>额外提升<@cc.vup>1%</>",
+            "description": "进驻会客室时，线索搜集速度提升<@cc.vup>20%</>，同时每<@cc.vup>10</>点<$cc.bd_b1><@cc.rem>人间烟火</></>额外提升<@cc.vup>1%</>"
         },
         "meet_spd_hast[000]": {
             "buffName": "Shadow Gathering",
@@ -14900,6 +14942,109 @@
                             "buffId": "control_meeting&mp_cost[100]",
                             "cond": {
                                 "phase": "PHASE_1",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": []
+                }
+            ]
+        },
+        "char_2027_wang": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_prod_tra_spd[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "train_spd&level[000]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_1050_chen3": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "meet_spd_notOwned[003]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "meet_spd_bd[002]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4222_taraxa": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "trade_ord_spd[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "trade_ord_spd&tag[020]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4221_ju": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "workshop_formula_cost2[110]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "workshop_formula_cost2[111]",
+                            "cond": {
+                                "phase": "PHASE_2",
                                 "level": 1
                             }
                         }

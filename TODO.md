@@ -40,7 +40,17 @@
 - Trait
     - CRU-Y
 
+### First of A Thousand Autumns
+- Archetype 
+    - Watchman
+- Trait
+    - Watchman
+    - Primal Protector
+    - Irene IS
+    - Passenger RA
+
 ### To Do
+- Skin bar too long now (Ling)
 - handle Xiaohei cat
 - Independent-miya
 - Token

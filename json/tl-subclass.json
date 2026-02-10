@@ -22,7 +22,8 @@
             "healer",
             "wandermedic",
             "incantationmedic",
-            "chainhealer"
+            "chainhealer",
+            "watchman"
         ],
         "PIONEER": [
             "agent",
@@ -188,6 +189,11 @@
             "name": "Chain Healer",
             "tl": "Chain Healer",
             "en": "Chain Medic"
+        },
+        "watchman": {
+            "name": "Watchman",
+            "tl": "Watchman",
+            "en": ""
         },
 
         "agent": {

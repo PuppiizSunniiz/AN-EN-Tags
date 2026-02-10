@@ -1,5 +1,10 @@
 {
     "Dict": {
+        "act49side": {
+            "nameCN": "辞岁行",
+            "nameEN": "First of A Thousand Autumns",
+            "startCN": 1770678000
+        },
         "act40sre": {
             "nameCN": "相见欢·复刻",
             "nameEN": "Such is the Joy of Our Reunion (Rerun)",
@@ -949,6 +954,11 @@
             "nameCN": "暗流巢窟 ",
             "nameEN": "暗流巢窟 ",
             "startCN": 1761508800
+        },
+        "camp_r_31": {
+            "nameCN": "炽灼车间",
+            "nameEN": "炽灼车间",
+            "startCN": 1770580800
         },
         "tower_tr_01": {
             "nameCN": "7号训练场",
@@ -2214,8 +2224,18 @@
         ],
         [
             "act40sre",
-            "相见欢·复刻",
+            "Such is the Joy of Our Reunion (Rerun)",
             1769457600
+        ],
+        [
+            "camp_r_31",
+            "炽灼车间",
+            1770580800
+        ],
+        [
+            "act49side",
+            "First of A Thousand Autumns",
+            1770678000
         ]
     ]
 }
