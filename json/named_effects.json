@@ -612,33 +612,33 @@
         },
         "ba.permanentatk": {
             "termId": "ba.permanentatk",
-            "termName": "Continuous Attack",
-            "description": "Regardlass of whether there are targets within Attack Range, attack continually"
+            "termName": "Continuously Attack",
+            "description": "Continuously attacks, regardless of whether there is a target within Attack Range"
         },
         "ba.fever": {
             "termId": "ba.fever",
             "termName": "Fever",
-            "description": "When Fever reach 450 points，when any <$ba.mujica>Ave Mujica</> member active their skill，all <$ba.mujica>Ave Mujica</> member release their skill effect for 20 seconds"
+            "description": "Once Fever reaches 450, whenever any <$ba.mujica>Ave Mujica</> member's skill is manually activated, all <$ba.mujica>Ave Mujica</> members on the field will keep their current skill activated for 20s"
         },
         "ba.mujica": {
             "termId": "ba.mujica",
-            "termName": "Ave Mujica",
-            "description": "Includes Togawa Sakiko, Yahata Umiri, Misumi Uika, Yūtenji Nyamu, Wakaba Mutsumi"
+            "termName": "Ave Mujica",
+            "description": "Includes Sakiko Togawa, Umiri Yahata, Uika Misumi, Nyamu Yūtenji, Mutsumi Wakaba"
         },
         "cc.bd_mujica": {
             "termId": "cc.bd_mujica",
-            "termName": "热情值",
-            "description": "Affects skills related to <$cc.bd_mujica_1><@cc.rem>丰富工作经验</></> and <$cc.bd_mujica_2><@cc.rem>演技的怪物</></>\nProvided by the following Operators' skills:\nYahata Umiri, Misumi Uika, Yūtenji Nyamu, Wakaba Mutsumi"
+            "termName": "Passion",
+            "description": "Affects skills related to <$cc.bd_mujica_1><@cc.rem>Plentiful Work Experience</></> and <$cc.bd_mujica_2><@cc.rem>Monster of Acting</></>\nProvided by the following Operators' skills:\nMutsumi Wakaba, Uika Misumi, Nyamu Yūtenji, Umiri Yahata"
         },
         "cc.bd_mujica_1": {
             "termId": "cc.bd_mujica_1",
-            "termName": "丰富工作经验",
-            "description": "Operators with this skill\nTogawa Sakiko"
+            "termName": "Plentiful Work Experience",
+            "description": "Operators with this skill\nSakiko Togawa"
         },
         "cc.bd_mujica_2": {
             "termId": "cc.bd_mujica_2",
-            "termName": "演技的怪物",
-            "description": "Operators with this skill\nWakaba Mutsumi"
+            "termName": "Monster of Acting",
+            "description": "Operators with this skill\nMutsumi Wakaba"
         },
         "ba.alter": {
             "termId": "ba.alter",
@@ -669,6 +669,11 @@
             "termId": "cc.bd_wang_2",
             "termName": "实地",
             "description": "由以下干员的基建技能提供\n望\n每有一间制造站, 实地+1"
+        },
+        "ba.dmgresistance": {
+            "termId": "ba.dmgresistance",
+            "termName": "伤害减免",
+            "description": "受到的伤害降低一定数值 (同名效果取最高) "
         }
     }
 }

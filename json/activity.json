@@ -1,5 +1,15 @@
 {
     "Dict": {
+        "act20mini": {
+            "nameCN": "十字路口",
+            "nameEN": "Crossing",
+            "startCN": 1773097200
+        },
+        "act2break": {
+            "nameCN": "矢量突破#2 巫术之夜",
+            "nameEN": "Vector Breakthrough #2",
+            "startCN": 1771920000
+        },
         "act49side": {
             "nameCN": "辞岁行",
             "nameEN": "First of A Thousand Autumns",
@@ -872,7 +882,7 @@
         },
         "camp_r_14": {
             "nameCN": "实验基地机库",
-            "nameEN": "Research Base Hanger",
+            "nameEN": "Research Base Hangar",
             "startCN": 1673208000
         },
         "camp_r_15": {
@@ -892,7 +902,7 @@
         },
         "camp_r_18": {
             "nameCN": "“特制小水坑”",
-            "nameEN": "The Special Little Aquapit'",
+            "nameEN": "'The Special Little Aquapit'",
             "startCN": 1693771200
         },
         "camp_r_19": {
@@ -1047,7 +1057,7 @@
         },
         "tower_n_19": {
             "nameCN": "艺术馆旧址",
-            "nameEN": "艺术馆旧址",
+            "nameEN": "Galería Ruins",
             "startCN": -1
         },
         "tower_n_20": {
@@ -1684,7 +1694,7 @@
         ],
         [
             "camp_r_14",
-            "Research Base Hanger",
+            "Research Base Hangar",
             1673208000
         ],
         [
@@ -1814,7 +1824,7 @@
         ],
         [
             "camp_r_18",
-            "The Special Little Aquapit'",
+            "'The Special Little Aquapit'",
             1693771200
         ],
         [
@@ -2236,6 +2246,16 @@
             "act49side",
             "First of A Thousand Autumns",
             1770678000
+        ],
+        [
+            "act2break",
+            "Vector Breakthrough #2",
+            1771920000
+        ],
+        [
+            "act20mini",
+            "Crossing",
+            1773097200
         ]
     ]
 }

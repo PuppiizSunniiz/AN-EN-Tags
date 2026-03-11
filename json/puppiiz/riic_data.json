@@ -19,16 +19,16 @@
             "description": "When this Operator is assigned to the Control Center, all <$cc.tag.knight><@cc.kw>Knight</></> Operators assigned to Factories gain productivity <@cc.vup>+7%</>"
         },
         "control_prod_bd_spd[000]": {
-            "buffName": "丰富工作经验",
+            "buffName": "Plentiful Work Experience",
             "skillIcon": "bskill_ctrl_p_oblvns",
             "desc": "进驻控制中枢时，所有生产<@cc.kw>贵金属</>类配方的制造站生产力<@cc.vup>+0.5%</>，每有<@cc.vup>20</>点<$cc.bd_mujica><@cc.rem>热情值</></>，所有生产<@cc.kw>贵金属</>类配方的制造站生产力<@cc.vup>+0.5%</>",
-            "description": "When this Operator is assigned to the Control Center, all Factories' productivity <@cc.vup>+0.5%</> towards <@cc.kw>Precious Metal</>; for every <@cc.vup>20</> <$cc.bd_mujica><@cc.kw>热情值</></> points, all Factories' productivity <@cc.vup>+0.5%</> towards <@cc.kw>Precious Metal</>"
+            "description": "When this Operator is assigned to the Control Center, the productivity of <@cc.kw>Precious Metals</> of all Factories <@cc.vup>+0.5%</>, with an additional <@cc.vup>+0.5%</> for every <@cc.vup>20</> <$cc.bd_mujica><@cc.rem>Passion</></>"
         },
         "control_prod_bd_spd[010]": {
-            "buffName": "丰富工作经验",
+            "buffName": "Plentiful Work Experience",
             "skillIcon": "bskill_ctrl_p_oblvns",
             "desc": "进驻控制中枢时，所有生产<@cc.kw>贵金属</>类配方的制造站生产力<@cc.vup>+1%</>，每有<@cc.vup>20</>点<$cc.bd_mujica><@cc.rem>热情值</></>，所有生产<@cc.kw>贵金属</>类配方的制造站生产力<@cc.vup>+1%</>",
-            "description": "When this Operator is assigned to the Control Center, all Factories' productivity <@cc.vup>+1%</> towards <@cc.kw>Precious Metal</>; for every <@cc.vup>20</> <$cc.bd_mujica><@cc.kw>热情值</></> points, all Factories' productivity <@cc.vup>+1%</> towards <@cc.kw>Precious Metal</>"
+            "description": "When this Operator is assigned to the Control Center, the productivity of <@cc.kw>Precious Metals</> of all Factories <@cc.vup>+1%</>, with an additional <@cc.vup>+1%</> for every <@cc.vup>20</> <$cc.bd_mujica><@cc.rem>Passion</></>"
         },
         "control_token_prod_spd[000]": {
             "buffName": "Overclock",
@@ -97,7 +97,7 @@
             "description": "When this Operator is assigned to the Control Center, all <$cc.g.karlan><@cc.kw>Karlan Trade</></> Operators assigned to Trading Posts gain order acquisition efficiency <@cc.vdown>-15%</> and order limit <@cc.vup>+6</>"
         },
         "control_tra_limit&spd2[000]": {
-            "buffName": "家族认可",
+            "buffName": "Famiglia Approval",
             "skillIcon": "bskill_ctrl_t_limit&spd_tmoris",
             "desc": "进驻控制中枢时，每个进驻在贸易站的<$cc.g.siracusa><@cc.kw>叙拉古</></>干员，订单获取效率<@cc.vup>+5%</>",
             "description": "When this Operator is assigned to the Control Center, all <$cc.g.siracusa><@cc.kw>Siracusa</></> Operators assigned to Trading Posts gain order acquisition efficiency <@cc.vup>+5%</>"
@@ -106,7 +106,7 @@
             "buffName": "商业版图",
             "skillIcon": "bskill_ctrl_t_limit&spd3",
             "desc": "进驻控制中枢时，每个存在<@cc.vup>3</>名<$cc.g.karlan><@cc.kw>谢拉格</></>干员的贸易站，订单获取效率<@cc.vup>+10%</>",
-            "description": "When this Operator is assigned to the Control Center, Trading Posts with 3 <$cc.g.karlan><@cc.kw>Karlan Trade</></> Operators assigned, gain order acquisition efficiency <@cc.vup>+10%</>"
+            "description": "When this Operator is assigned to the Control Center, Trading Posts with 3 <$cc.g.karlan><@cc.kw>Kjerag</></> Operators assigned, gain order acquisition efficiency <@cc.vup>+10%</>"
         },
         "control_hire_spd[000]": {
             "buffName": "Infectivity",
@@ -331,10 +331,10 @@
             "description": "When this Operator is assigned to the Control Center, decreases own morale consumption by<@cc.vdown>+0.5</>; and when self morale is above<@cc.kw>12</>, <$cc.bd_a1><@cc.rem>Perception Information</></><@cc.vup>+10</>"
         },
         "control_mp_cost&bd3[000]": {
-            "buffName": "生活的重压",
+            "buffName": "Indomitable Lady",
             "skillIcon": "bskill_ctrl_mp_oblvns",
             "desc": "进驻控制中枢时，热情值处于<@cc.kw>40</>点及以上时，自身心情每小时消耗<@cc.vdown>+0.05</>",
-            "description": "When this Operator is assigned to the Control Center, if 热情值 more than <@cc.kw>40</> points, decreases own morale consumption by<@cc.vdown>+0.05</>"
+            "description": "When this Operator is assigned to the Control Center, self Morale loss per hour <@cc.vdown>+0.05</> when Passion is <@cc.kw>40</> or higher"
         },
         "control_mp_cost&bd_up[000]": {
             "buffName": "I am I",
@@ -361,16 +361,16 @@
             "description": "When this Operator is assigned to the Control Center, self Morale loss per hour <@cc.vdown>+0.5</>, <$cc.bd_felyne><@cc.rem>Felvine</></> <@cc.vup>+8</>"
         },
         "control_mp_cost_reset[000]": {
-            "buffName": "互为半身",
+            "buffName": "Halves of a Whole",
             "skillIcon": "bskill_ctrl_mp_mortis",
             "desc": "当与<@cc.kw>丰川祥子</>一起进驻控制中枢时，消除自身心情消耗的影响",
-            "description": "When this Operator is assigned together with <@cc.kw>Togawa Sakiko</> to the Control Center, remove any self Morale reduction effects"
+            "description": "When this Operator is assigned to the Control Center with <@cc.kw>Sakiko Togawa</>, ignores the self Morale loss effect from her own base skill"
         },
         "control_mp&meet_spd[000]": {
-            "buffName": "成效优先",
+            "buffName": "Exitus Acta Probat",
             "skillIcon": "bskill_ctrl_meet_amoris2",
             "desc": "当与<@cc.kw>丰川祥子</>一起进驻控制中枢时，<@cc.kw>丰川祥子</>心情每小时消耗<@cc.vdown>+0.05</>，会客室线索搜集速度额外提升<@cc.vup>+5%</>（同种效果取最高）",
-            "description": "When this Operator is assigned together with <@cc.kw>Togawa Sakiko</> to the Control Center, <@cc.kw>Togawa Sakiko</> Morale loss per hour <@cc.vdown>+0.05</> and increases Clue search speed in Reception Room by an additional <@cc.vup>+5%</> (Only the strongest effect of this type takes place)"
+            "description": "When this Operator is assigned to the Control Center with <@cc.kw>Sakiko Togawa</>, Morale consumed per hour by <@cc.kw>Sakiko Togawa</> <@cc.vdown>+0.05</> and clue collection speed <@cc.vup>+5%</> (Only the strongest effect of this type takes place)"
         },
         "control_facCostReset[000]": {
             "buffName": "Keep the Wine Flowing",
@@ -457,10 +457,10 @@
             "description": "When this Operator is assigned to the Control Center, all <$cc.g.elite><@cc.kw>Elite Operators</></> in Dormitories recover <@cc.vup>+0.1</> Morale per hour (strongest effect of the same type applies)"
         },
         "control_dorm_rec2[000]": {
-            "buffName": "羁绊相生",
+            "buffName": "Resonant Bond",
             "skillIcon": "bskill_ctrl_dorm_uika2",
             "desc": "进驻控制中枢时，所有宿舍内所有干员的心情每小时恢复<@cc.vup>+0.05</>（同种效果取最高）；当与<@cc.kw>丰川祥子</>一起进驻控制中枢时，<@cc.kw>丰川祥子</>的心情每小时恢复<@cc.vup>+0.1</>",
-            "description": "When this Operator is assigned to the Control Center, all Operators in Dormitories recover <@cc.vup>+0.05</> Morale per hour (strongest effect of the same type applies); When this Operator is assigned together with <@cc.kw>Togawa Sakiko</> to the Control Center, <@cc.kw>Togawa Sakiko</>'s Morale recovered per hour <@cc.vup>+0.1</>."
+            "description": "When this Operator is assigned to the Control Center, all Operators in Dormitories recover <@cc.vup>+0.05</> Morale per hour (Only the strongest effect of this type takes place); when assigned to the Control Center with <@cc.kw>Sakiko Togawa</>, Morale consumed per hour by <@cc.kw>Sakiko Togawa</> <@cc.vup>+0.1</>"
         },
         "control_train_spd[010]": {
             "buffName": "S.W.E.E.P. Supervisor",
@@ -487,28 +487,28 @@
             "description": "When this Operator is assigned to the Control Center, for <@cc.vup>each</> <$cc.g.glasgow><@cc.kw>Glasgow Gang</></> Operator assigned to the same Trading Post, order acquisition efficiency <@cc.vup>+10%</>"
         },
         "control_mp_bd&trade[000]": {
-            "buffName": "演技的怪物",
+            "buffName": "Monster of Acting",
             "skillIcon": "bskill_ctrl_trade_mortis",
             "desc": "进驻控制中枢时，<$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+20</>；每有<@cc.vup>8</>点<$cc.bd_mujica><@cc.rem>热情值</></>，自身心情每小时消耗<@cc.vdown>+0.01</>，所有贸易站订单效率<@cc.vup>+1%</>（同种效果取最高）",
-            "description": "When this Operator is assigned to the Control Center, <$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+20</>; for every <@cc.vup>8</> points <$cc.bd_mujica><@cc.rem>热情值</></>,  decreases own morale consumption by <@cc.vdown>+0.01</>, all Trading Posts' order efficiency <@cc.vup>+1%</> (Only the strongest effect of this type takes place)"
+            "description": "When this Operator is assigned to the Control Center, <$cc.bd_mujica><@cc.rem>Passion</></> <@cc.vup>+20</>; for every <@cc.vup>8</> <$cc.bd_mujica><@cc.rem>Passion</></>, self Morale consumed per hour <@cc.vdown>+0.01</> and all Trading Posts' order efficiency <@cc.vup>+1%</> (Only the strongest effect of this type takes place)"
         },
         "control_meeting_spd&bd[000]": {
-            "buffName": "勤学苦练",
+            "buffName": "Diligent Worker",
             "skillIcon": "bskill_ctrl_meet_amoris1",
             "desc": "进驻控制中枢时，<$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+10</>；会客室线索搜集速度提升<@cc.vup>+5%</>（同种效果取最高）",
-            "description": "When this Operator is assigned to the Control Center, <$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+10</>; Clue search speed in Reception Room increases by <@cc.vup>+5%</> (strongest effect of the same type applies)"
+            "description": "When this Operator is assigned to the Control Center, <$cc.bd_mujica><@cc.rem>Passion</></> <@cc.vup>+10</>; clue collection speed <@cc.vup>+5%</> (Only the strongest effect of this type takes place)"
         },
         "control_dorm_bd[000]": {
-            "buffName": "偶像光环",
+            "buffName": "Idol's Aura",
             "skillIcon": "bskill_ctrl_dorm_uika1",
             "desc": "进驻控制中枢时，宿舍内每有<@cc.vup>1</>名干员，<$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+1</>",
-            "description": "When this Operator is assigned to the Control Center, for every <@cc.kw>1</> operator in the Dormitory, <$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+1</>"
+            "description": "When this Operator is assigned to the Control Center, for <@cc.vup>every</> Operator in the Dormitories, <$cc.bd_mujica><@cc.rem>Passion</></> <@cc.vup>+1</> "
         },
         "control_hire_spd&bd[000]": {
-            "buffName": "可靠伙伴",
+            "buffName": "Reliable Companion",
             "skillIcon": "bskill_ctrl_hire_tmoris",
             "desc": "进驻控制中枢时，<$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+10</>；人脉资源的联络速度<@cc.vup>+10%</>（同种效果取最高）",
-            "description": "When this Operator is assigned to the Control Center, <$cc.bd_mujica><@cc.rem>热情值</></><@cc.vup>+10</>; HR contacting speed <@cc.vup>+10%</> (strongest effect of the same type applies)"
+            "description": "When this Operator is assigned to the Control Center, <$cc.bd_mujica><@cc.rem>Passion</></> <@cc.vup>+10</>; HR contacting speed <@cc.vup>+10%</> (Only the strongest effect of this type takes place)"
         },
         "control_prod_tra_spd[000]": {
             "buffName": "权变",
@@ -1764,6 +1764,12 @@
             "desc": "进驻贸易站时，订单获取效率<@cc.vup>+10%</>，当前贸易站<@cc.kw>赤金订单</>的<@cc.kw>赤金</>交付数必定为<@cc.kw>2</>（不视作违约订单）",
             "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+10%</>, but all <@cc.kw>Pure Gold</> orders in that Trading Post will only trade <@cc.kw>2</> <@cc.kw>Pure Gold</> (not considered as defaulted trade)"
         },
+        "trade_ord_limit&cost_P[020]": {
+            "buffName": "未偿还的债务",
+            "skillIcon": "bskill_tra_demetr",
+            "desc": "当与<@cc.kw>伺夜</>在同一个贸易站时，心情每小时消耗<@cc.vup>-0.1</>，订单上限<@cc.vup>+2</>",
+            "description": "当与<@cc.kw>伺夜</>在同一个贸易站时，心情每小时消耗<@cc.vup>-0.1</>，订单上限<@cc.vup>+2</>"
+        },
         "trade_ord_limit&cost_P[010]": {
             "buffName": "Tacit Understanding",
             "skillIcon": "bskill_tra_texas2",
@@ -1859,6 +1865,18 @@
             "skillIcon": "bskill_tra_ord_spd_ext1",
             "desc": "进驻贸易站时，订单获取效率<@cc.vup>+30%</>；当<@cc.kw>乌尔比安</>在基建内时（不包含副手及活动室使用者），订单获取效率额外<@cc.vup>+10%</>",
             "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+30%</>; When <@cc.kw>Ulpianus</> is in the Base (excluding Assistants and Activity Room users), increase order acquisition efficiency by an additional <@cc.vup>+10%</>"
+        },
+        "trade_ord_spd_ext[020]": {
+            "buffName": "家族经营·α",
+            "skillIcon": "bskill_tra_ord_spd_ext2",
+            "desc": "进驻贸易站时，订单获取效率<@cc.vup>+25%</>；当<@cc.kw>伺夜</>在基建内时（不包含副手及活动室使用者），订单获取效率额外<@cc.vup>+5%</>",
+            "description": "进驻贸易站时，订单获取效率<@cc.vup>+25%</>；当<@cc.kw>伺夜</>在基建内时（不包含副手及活动室使用者），订单获取效率额外<@cc.vup>+5%</>"
+        },
+        "trade_ord_spd_ext[021]": {
+            "buffName": "家族经营·β",
+            "skillIcon": "bskill_tra_ord_spd_ext3",
+            "desc": "进驻贸易站时，订单获取效率<@cc.vup>+30%</>；当<@cc.kw>伺夜</>在基建内时（不包含副手及活动室使用者），订单获取效率额外<@cc.vup>+10%</>",
+            "description": "进驻贸易站时，订单获取效率<@cc.vup>+30%</>；当<@cc.kw>伺夜</>在基建内时（不包含副手及活动室使用者），订单获取效率额外<@cc.vup>+10%</>"
         },
         "trade_ord_spd&par[000]": {
             "buffName": "Resolution on Foreign Trade α",
@@ -3981,6 +3999,18 @@
         "meet_spd&cost_condChar[011]": {
             "buffName": "'Professional Ethics' β",
             "skillIcon": "bskill_meet_spd&cost_condChar3",
+            "desc": "进驻会客室时，如果会客室内只有自身处于工作状态时，线索搜集速度提升<@cc.vup>35%</>，心情每小时消耗<@cc.vdown>+1</>",
+            "description": "When this Operator is assigned to the Reception Room, if no other Operators are working in the Reception Room, increases Clue search speed by <@cc.vup>35%</>, and Morale consumed per hour <@cc.vdown>+1</>"
+        },
+        "meet_spd&cost_condChar[020]": {
+            "buffName": "专业经理·α",
+            "skillIcon": "bskill_meet_spd&cost_condChargoat",
+            "desc": "进驻会客室时，如果会客室内只有自身处于工作状态时，线索搜集速度提升<@cc.vup>15%</>，心情每小时消耗<@cc.vdown>+1</>",
+            "description": "When this Operator is assigned to the Reception Room, if no other Operators are working in the Reception Room, increases Clue search speed by <@cc.vup>15%</>, and Morale consumed per hour <@cc.vdown>+1</>"
+        },
+        "meet_spd&cost_condChar[021]": {
+            "buffName": "专业经理·β",
+            "skillIcon": "bskill_meet_spd&cost_condChargoat2",
             "desc": "进驻会客室时，如果会客室内只有自身处于工作状态时，线索搜集速度提升<@cc.vup>35%</>，心情每小时消耗<@cc.vdown>+1</>",
             "description": "When this Operator is assigned to the Reception Room, if no other Operators are working in the Reception Room, increases Clue search speed by <@cc.vup>35%</>, and Morale consumed per hour <@cc.vdown>+1</>"
         },
@@ -15043,6 +15073,64 @@
                         },
                         {
                             "buffId": "workshop_formula_cost2[111]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": []
+                }
+            ]
+        },
+        "char_4037_demetr": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "trade_ord_spd_ext[020]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "trade_ord_spd_ext[021]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "trade_ord_limit&cost_P[020]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4031_liesel": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "meet_spd&cost_condChar[020]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "meet_spd&cost_condChar[021]",
                             "cond": {
                                 "phase": "PHASE_2",
                                 "level": 1

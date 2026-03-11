@@ -182,6 +182,7 @@
             "char_344_beewax": "Beeswax",
             "char_373_lionhd": "Leonhardt",
             "char_341_sntlla": "Santalla",
+            "char_4031_liesel": "Ripresa",
             "char_388_mint": "Mint",
             "char_338_iris": "Iris",
             "char_297_hamoni": "Harmonie",
@@ -399,6 +400,7 @@
             "char_1044_hsgma2": "Hoshiguma the Breacher",
             "char_264_f12yin": "Mountain",
             "char_2024_chyue": "Chongyue",
+            "char_4037_demetr": "Bellone",
             "char_172_svrash": "SilverAsh",
             "char_293_thorns": "Thorns",
             "char_4082_qiubai": "Qiubai",
@@ -985,6 +987,9 @@
             ],
             "Santalla": [
                 "char_341_sntlla"
+            ],
+            "Ripresa": [
+                "char_4031_liesel"
             ],
             "Mint": [
                 "char_388_mint"
@@ -1621,6 +1626,9 @@
             ],
             "Chongyue": [
                 "char_2024_chyue"
+            ],
+            "Bellone": [
+                "char_4037_demetr"
             ],
             "SilverAsh": [
                 "char_172_svrash"
@@ -2278,6 +2286,9 @@
             "寒檀": [
                 "char_341_sntlla"
             ],
+            "复奏": [
+                "char_4031_liesel"
+            ],
             "薄绿": [
                 "char_388_mint"
             ],
@@ -2916,6 +2927,9 @@
             "重岳": [
                 "char_2024_chyue"
             ],
+            "贝洛内": [
+                "char_4037_demetr"
+            ],
             "银灰": [
                 "char_172_svrash"
             ],
@@ -3027,6 +3041,12 @@
         "0-1": [
             "🟨",
             "[[0, 0]]"
+        ],
+        "0-2": [
+            "🟦",
+            "🟨",
+            "🟦",
+            "[[0, 1], [0, 0], [0, -1]]"
         ],
         "1-1": [
             "🟨🟦",

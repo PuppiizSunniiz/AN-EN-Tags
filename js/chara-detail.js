@@ -3896,7 +3896,7 @@
                     <i class='fa fa-download' style='font-size:20px;vertical-align:top;padding-top:17px'></i></a>
                     </div>`)
 
-                if(checkold && checkold[valang] && !["CN_038", "CN_043", "CN_044"].includes(audio_dict.voiceId)){ // New Year, Birthday, Anni
+                if(checkold && checkold[valang] && (checkold.extra?true:!["CN_038", "CN_043", "CN_044"].includes(audio_dict.voiceId))){ // New Year, Birthday, Anni
                     old_audiolist.push(`
                     <div class="${valang}-VA0" style="display:inline-block;padding-top:15px;vertical-align:top;width:30px;text-align:left;">${lang}0</div>
                     <div style="display:inline-block">
