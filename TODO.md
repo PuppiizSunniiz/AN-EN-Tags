@@ -1,15 +1,4 @@
 # Fix TL (Official EN) waiting room
-### Somniloquium Serenum (Arknights X Eve Mujica)
-- Effect
-    - <$ba.permanentatk>Continuously Attack</>
-- Trait
-    - RIT-Y : Virtuosa
-
-### EP16 : Abnormal Spectrum
-- Trait
-    - Loopshooter mod
-    - Reaper REA-Y : Executor the Ex Foedere
-
 ### Retracing Our Steps 1101
 - Effect
     - Mercenary - Equipment Response ? (ba.alter)
@@ -48,6 +37,12 @@
     - Primal Protector
     - Irene IS
     - Passenger RA
+
+### Crossing
+- 2nd mod Trait
+    - Eyjalt 
+    - Aak
+    - Jessica
 
 ### To Do
 - Skin bar too long now (Ling)

@@ -987,35 +987,35 @@
             "code": "uniequip_003_pepe"
         },
         "攻击范围内存在2名及以上其他干员时，攻击力+8%（不受技能影响）": {
-            "en": "When there are 2 or more other Operators within range, ATK <@ba.kw>+8%</> (unaffected by skill)",
+            "en": "When there are 2 or more other Operators within range, ATK +8% (unaffected by skill)",
             "color": "common",
             "note": "new mods bar-x",
             "name": "char_4184_dolris",
             "code": "uniequip_002_dolris"
         },
         "攻击范围内敌人受到10%的<$ba.elementfragile>元素脆弱</>": {
-            "en": "Inflict 10% <$ba.elementfragile>Elemental Fragility</> to enemies within Attack Range",
+            "en": "Enemies within Attack Range receive 10% <$ba.elementfragile>Elemental Fragility</>",
             "color": "extra",
             "note": "new mods rit-y",
             "name": "char_245_cello",
             "code": "uniequip_003_cello"
         },
         "攻击周围8格的敌人时攻击力提升至<@ba.kw>{atk_scale:0%}</>": {
-            "en": "ATK increased to <@ba.kw>{atk_scale:0%}</> when attacking enemies in the 8 surrounding tiles.",
+            "en": "Increases ATK to <@ba.kw>{atk_scale:0%}</> when attacking enemies within the 8 surrounding tiles",
             "color": "common",
             "note": "new mods lps-x",
             "name": "char_4100_caper",
             "code": "uniequip_002_caper"
         },
         "攻击范围内存在2名及以上敌人时攻击速度<@ba.kw>+{value}</>": {
-            "en": "ASPD <@ba.kw>+{value}</> if there are 2 or more enemies in Attack Range.",
+            "en": "ASPD <@ba.kw>+{value}</> when there are 2 or more enemies within Attack Range",
             "color": "common",
             "note": "new mods rea-y",
             "name": "char_1032_excu2",
             "code": "uniequip_003_excu2"
         },
         "在【岁的界园志异】中，自身额外攻击一个目标": {
-            "en": "In <@ba.kw>[Sui's Garden of Grotesqueries]</>, can attack an additional target ",
+            "en": "In [Sui's Garden of Grotesqueries], Raidian attacks one additional target",
             "color": "extra",
             "note": "new mods so-b",
             "name": "char_4195_radian",
