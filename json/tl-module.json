@@ -736,5 +736,369 @@
                 "upgradeDescription": "ATK increases to 130% when attacking an enemy; if the target is <$ba.stun>stunned</> or <$ba.root>bound</>, ATK further increases to 160%; When deals damage to blocked enemies for the first time, <$ba.stun>stuns</> them for 2.5 seconds"
             }
         ]
+    ],
+    "uniequip_002_wang": [
+        [
+            {
+                "name": "料敌机先",
+                "CN": "棋子激活时所在的连续直线上每有一枚棋子, 直线上所有棋子造成伤害提升10%并无视敌人9点法术抗性 (最多叠加3次) ",
+                "mod": "棋子激活时所在的连续直线上每有一枚棋子, 直线上所有棋子造成伤害提升12%并无视敌人11点法术抗性 (最多叠加3次) ",
+                "upgradeDescription": "When Chess piece is activated, for each piece in connected straight line, every piece in that straight line increases damage dealt by 12% and ignores 11 RES (max 3 stacks)"
+            },
+            {
+                "name": "料敌机先",
+                "CN": "棋子激活时所在的连续直线上每有一枚棋子, 直线上所有棋子造成伤害提升12%<@ba.talpu> (+2%) </>并无视敌人10<@ba.talpu> (+1) </>点法术抗性 (最多叠加3次) ",
+                "mod": "棋子激活时所在的连续直线上每有一枚棋子, 直线上所有棋子造成伤害提升14%<@ba.talpu> (+2%) </>并无视敌人12<@ba.talpu> (+1) </>点法术抗性 (最多叠加3次) ",
+                "upgradeDescription": "When Chess piece is activated, for each piece in connected straight line, every piece in that straight line increases damage dealt by 14%<@ba.talpu> (+2%)</> and ignores 12<@ba.talpu> (+1)</> RES (max 3 stacks)"
+            }
+        ],
+        [
+            {
+                "name": "料敌机先",
+                "CN": "棋子激活时所在的连续直线上每有一枚棋子, 直线上所有棋子造成伤害提升10%并无视敌人9点法术抗性 (最多叠加3次) ",
+                "mod": "棋子激活时所在的连续直线上每有一枚棋子, 直线上所有棋子造成伤害提升13%并无视敌人12点法术抗性 (最多叠加3次) ",
+                "upgradeDescription": "When Chess piece is activated, for each piece in connected straight line, every piece in that straight line increases damage dealt by 13% and ignores 12 RES (max 3 stacks)"
+            },
+            {
+                "name": "料敌机先",
+                "CN": "棋子激活时所在的连续直线上每有一枚棋子, 直线上所有棋子造成伤害提升12%<@ba.talpu> (+2%) </>并无视敌人10<@ba.talpu> (+1) </>点法术抗性 (最多叠加3次) ",
+                "mod": "棋子激活时所在的连续直线上每有一枚棋子, 直线上所有棋子造成伤害提升15%<@ba.talpu> (+2%) </>并无视敌人13<@ba.talpu> (+1) </>点法术抗性 (最多叠加3次) ",
+                "upgradeDescription": "When Chess piece is activated, for each piece in connected straight line, every piece in that straight line increases damage dealt by 15%<@ba.talpu> (+2%)</> and ignores 13<@ba.talpu> (+1)</> RES (max 3 stacks)"
+            }
+        ]
+    ],
+    "uniequip_002_chen3": [
+        [
+            {
+                "name": "寒暑觉知",
+                "CN": "未受到伤害时, 每7秒随机治疗自身一定 (攻击力的30%~160%) 生命值, 并闪避下次物理与法术攻击",
+                "mod": "未受到伤害时, 每6秒随机治疗自身一定 (攻击力的40%~180%) 生命值, 并闪避下次物理与法术攻击",
+                "upgradeDescription": "If not attacked for 6 seconds, recover HP by random amount (40%~180% ATK) and dodge the next Physical or Arts attack"
+            },
+            {
+                "name": "寒暑觉知",
+                "CN": "未受到伤害时, 每7秒随机治疗自身一定 (攻击力的35%<@ba.talpu> (+5%) </>~165%<@ba.talpu> (+5%) </>) 生命值, 并闪避下次物理与法术攻击",
+                "mod": "未受到伤害时, 每6秒随机治疗自身一定 (攻击力的45%<@ba.talpu> (+5%) </>~185%<@ba.talpu> (+5%) </>) 生命值, 并闪避下次物理与法术攻击",
+                "upgradeDescription": "If not attacked for 6 seconds, recover HP by random amount (45%<@ba.talpu> (+5%)</>~185%<@ba.talpu> (+5%)</> ATK) and dodge the next Physical or Arts attack"
+            }
+        ],
+        [
+            {
+                "name": "寒暑觉知",
+                "CN": "未受到伤害时, 每7秒随机治疗自身一定 (攻击力的30%~160%) 生命值, 并闪避下次物理与法术攻击",
+                "mod": "未受到伤害时, 每6秒随机治疗自身一定 (攻击力的50%~200%) 生命值, 并闪避下次物理与法术攻击",
+                "upgradeDescription": "If not attacked for 6 seconds, recover HP by random amount (50%~200% ATK) and dodge the next Physical or Arts attack"
+            },
+            {
+                "name": "寒暑觉知",
+                "CN": "未受到伤害时, 每7秒随机治疗自身一定 (攻击力的35%<@ba.talpu> (+5%) </>~165%<@ba.talpu> (+5%) </>) 生命值, 并闪避下次物理与法术攻击",
+                "mod": "未受到伤害时, 每6秒随机治疗自身一定 (攻击力的55%<@ba.talpu> (+5%) </>~205%<@ba.talpu> (+5%) </>) 生命值, 并闪避下次物理与法术攻击",
+                "upgradeDescription": "If not attacked for 6 seconds, recover HP by random amount (55%<@ba.talpu> (+5%)</>~205%<@ba.talpu> (+5%)</> ATK) and dodge the next Physical or Arts attack"
+            }
+        ]
+    ],
+    "uniequip_002_ju": [
+        [
+            {
+                "name": "墨守",
+                "CN": "造成致命伤害时使敌人保留1点生命并使其<$ba.dying>重伤</> (击杀者技力+2) ; 矩不攻击<$ba.dying>重伤</>单位",
+                "mod": "对生命值低于一半的单位造成的伤害提升8%; 造成致命伤害时使敌人保留1点生命并使其<$ba.dying>重伤</> (击杀者技力+2) ; 矩不攻击<$ba.dying>重伤</>单位; ",
+                "upgradeDescription": "Increases damage dealt to enemies below half HP by 8%. When dealing lethal damage, leave the enemy with 1 HP and inflict <$ba.dying>Critically Wounded</> (gives +2 SP to the attacker when killed); Ju will not attack <$ba.dying>Critically Wounded</> targets"
+            }
+        ],
+        [
+            {
+                "name": "墨守",
+                "CN": "造成致命伤害时使敌人保留1点生命并使其<$ba.dying>重伤</> (击杀者技力+2) ; 矩不攻击<$ba.dying>重伤</>单位",
+                "mod": "对生命值低于一半的单位造成的伤害提升12%; 造成致命伤害时使敌人保留1点生命并使其<$ba.dying>重伤</> (击杀者技力+2) ; 矩不攻击<$ba.dying>重伤</>单位; ",
+                "upgradeDescription": "Increases damage dealt to enemies below half HP by 12%. When dealing lethal damage, leave the enemy with 1 HP and inflict <$ba.dying>Critically Wounded</> (gives +2 SP to the attacker when killed); Ju will not attack <$ba.dying>Critically Wounded</> targets"
+            }
+        ]
+    ],
+    "uniequip_002_yu": [
+        [
+            {
+                "name": "Midst Markets, Dragons Dwell",
+                "EN": "When there are at least 4 Operators on the field, recovers 1.5% Max HP as both HP and <$ba.dt.element>Elemental Injury</> per second",
+                "CN": "场上干员数量不低于4时, 自身每秒回复相当于生命上限1.5%的生命与<$ba.dt.element>元素损伤</>",
+                "mod": "场上干员数量不低于3时, 自身每秒回复相当于生命上限1.5%的生命与<$ba.dt.element>元素损伤</>; 不低于5时, 自身对处于<$ba.dt.burning2>灼燃损伤</>爆发期间的目标造成的法术伤害提升9%",
+                "upgradeDescription": "When there are at least 3 Operators on the field, recovers 1.5% Max HP as both HP and <$ba.dt.element>Elemental Injury</> per second; When there are at least 5 Operators on the field, increases Arts damage dealt to target under the burst effect of <$ba.dt.burning2>Burn</> by 9%"
+            },
+            {
+                "name": "Midst Markets, Dragons Dwell",
+                "EN": "When there are at least 4 Operators on the field, recovers 2% <@ba.talpu>(+0.5%)</> Max HP as both HP and <$ba.dt.element>Elemental Injury</> per second",
+                "CN": "场上干员数量不低于4时, 自身每秒回复相当于生命上限2%<@ba.talpu> (+0.5%) </>的生命与<$ba.dt.element>元素损伤</>",
+                "mod": "场上干员数量不低于3时, 自身每秒回复相当于生命上限2%<@ba.talpu> (+0.5%) </>的生命与<$ba.dt.element>元素损伤</>; 不低于5时, 自身对处于<$ba.dt.burning2>灼燃损伤</>爆发期间的目标造成的法术伤害提升9%",
+                "upgradeDescription": "When there are at least 3 Operators on the field, recovers 2% <@ba.talpu>(+0.5%)</> Max HP as both HP and <$ba.dt.element>Elemental Injury</> per second; When there are at least 5 Operators on the field, increases Arts damage dealt to target under the burst effect of <$ba.dt.burning2>Burn</> by 9%"
+            }
+        ],
+        [
+            {
+                "name": "Midst Markets, Dragons Dwell",
+                "EN": "When there are at least 4 Operators on the field, recovers 1.5% Max HP as both HP and <$ba.dt.element>Elemental Injury</> per second",
+                "CN": "场上干员数量不低于4时, 自身每秒回复相当于生命上限1.5%的生命与<$ba.dt.element>元素损伤</>",
+                "mod": "场上干员数量不低于2时, 自身每秒回复相当于生命上限1.5%的生命与<$ba.dt.element>元素损伤</>; 不低于4时, 自身对处于<$ba.dt.burning2>灼燃损伤</>爆发期间的目标造成的法术伤害提升14%",
+                "upgradeDescription": "When there are at least 2 Operators on the field, recovers 1.5% Max HP as both HP and <$ba.dt.element>Elemental Injury</> per second; When there are at least 4 Operators on the field, increases Arts damage dealt to target under the burst effect of <$ba.dt.burning2>Burn</> by 14%"
+            },
+            {
+                "name": "Midst Markets, Dragons Dwell",
+                "EN": "When there are at least 4 Operators on the field, recovers 2% <@ba.talpu>(+0.5%)</> Max HP as both HP and <$ba.dt.element>Elemental Injury</> per second",
+                "CN": "场上干员数量不低于4时, 自身每秒回复相当于生命上限2%<@ba.talpu> (+0.5%) </>的生命与<$ba.dt.element>元素损伤</>",
+                "mod": "场上干员数量不低于2时, 自身每秒回复相当于生命上限2%<@ba.talpu> (+0.5%) </>的生命与<$ba.dt.element>元素损伤</>; 不低于4时, 自身对处于<$ba.dt.burning2>灼燃损伤</>爆发期间的目标造成的法术伤害提升14%",
+                "upgradeDescription": "When there are at least 2 Operators on the field, recovers 2% <@ba.talpu>(+0.5%)</> Max HP as both HP and <$ba.dt.element>Elemental Injury</> per second; When there are at least 4 Operators on the field, increases Arts damage dealt to target under the burst effect of <$ba.dt.burning2>Burn</> by 14%"
+            }
+        ]
+    ],
+    "uniequip_002_philae": [
+        [
+            {
+                "name": "Herald of the Divine River",
+                "EN": "Receives -10% Elemental Injury, and recovers 2 SP when receiving Necrosis",
+                "CN": "受到的元素损伤-10%, 受到凋亡损伤时回复2点技力",
+                "mod": "受到的元素损伤-16%, 受到凋亡损伤时回复2点技力",
+                "upgradeDescription": "Receives -16% Elemental Injury, and recovers 2 SP when receiving Necrosis"
+            },
+            {
+                "name": "Herald of the Divine River",
+                "EN": "Receives -12% <@ba.talpu>(+2%)</> Elemental Injury, and recovers 2 SP when receiving Necrosis",
+                "CN": "受到的元素损伤-12%<@ba.talpu> (+2%) </>, 受到凋亡损伤时回复2点技力",
+                "mod": "受到的元素损伤-18%<@ba.talpu> (+2%) </>, 受到凋亡损伤时回复2点技力",
+                "upgradeDescription": "Receives -18% <@ba.talpu>(+2%)</> Elemental Injury, and recovers 2 SP when receiving Necrosis"
+            }
+        ],
+        [
+            {
+                "name": "Herald of the Divine River",
+                "EN": "Receives -10% Elemental Injury, and recovers 2 SP when receiving Necrosis",
+                "CN": "受到的元素损伤-10%, 受到凋亡损伤时回复2点技力",
+                "mod": "受到的元素损伤-20%, 受到凋亡损伤时回复2点技力",
+                "upgradeDescription": "Receives -20% Elemental Injury, and recovers 2 SP when receiving Necrosis"
+            },
+            {
+                "name": "Herald of the Divine River",
+                "EN": "Receives -12% <@ba.talpu>(+2%)</> Elemental Injury, and recovers 2 SP when receiving Necrosis",
+                "CN": "受到的元素损伤-12%<@ba.talpu> (+2%) </>, 受到凋亡损伤时回复2点技力",
+                "mod": "受到的元素损伤-22%<@ba.talpu> (+2%) </>, 受到凋亡损伤时回复2点技力",
+                "upgradeDescription": "Receives -22% <@ba.talpu>(+2%)</> Elemental Injury, and recovers 2 SP when receiving Necrosis"
+            }
+        ]
+    ],
+    "uniequip_002_cairn": [
+        [
+            {
+                "name": "过饱和讲解",
+                "CN": "对自身阻挡的敌人每秒造成相当于攻击力9%的<$ba.dt.neural2>神经损伤</>",
+                "mod": "对自身阻挡的敌人每秒造成相当于攻击力10%的<$ba.dt.neural2>神经损伤</>",
+                "upgradeDescription": "Blocked enemies receive 10% ATK as <$ba.dt.neural2>Nervous Impairment</> per second"
+            },
+            {
+                "name": "过饱和讲解",
+                "CN": "对自身阻挡的敌人每秒造成相当于攻击力10%<@ba.talpu> (+1%) </>的<$ba.dt.neural2>神经损伤</>",
+                "mod": "对自身阻挡的敌人每秒造成相当于攻击力11%<@ba.talpu> (+1%) </>的<$ba.dt.neural2>神经损伤</>",
+                "upgradeDescription": "Blocked enemies receive 11%<@ba.talpu>(+1%)</> ATK as <$ba.dt.neural2>Nervous Impairment</> per second"
+            }
+        ],
+        [
+            {
+                "name": "过饱和讲解",
+                "CN": "对自身阻挡的敌人每秒造成相当于攻击力9%的<$ba.dt.neural2>神经损伤</>",
+                "mod": "对自身阻挡的敌人每秒造成相当于攻击力11%的<$ba.dt.neural2>神经损伤</>",
+                "upgradeDescription": "Blocked enemies receive 11% ATK as <$ba.dt.neural2>Nervous Impairment</> per second"
+            },
+            {
+                "name": "过饱和讲解",
+                "CN": "对自身阻挡的敌人每秒造成相当于攻击力10%<@ba.talpu> (+1%) </>的<$ba.dt.neural2>神经损伤</>",
+                "mod": "对自身阻挡的敌人每秒造成相当于攻击力12%<@ba.talpu> (+1%) </>的<$ba.dt.neural2>神经损伤</>",
+                "upgradeDescription": "Blocked enemies receive 12%<@ba.talpu>(+1%)</> ATK as <$ba.dt.neural2>Nervous Impairment</> per second"
+            }
+        ]
+    ],
+    "uniequip_004_irene": [
+        [
+            {
+                "name": "Flames of Castigation",
+                "EN": "Physical damage has a 50% chance to ignore 50% DEF. Chance increases to 100% against aerial units.",
+                "CN": "对敌人造成物理伤害时有50%概率无视其50%防御力, 对空中单位概率提升至100%",
+                "mod": "对敌人造成物理伤害时有50%概率无视其50%防御力, 对空中单位概率提升至100%; \\n在<@ba.kw>集成战略</>中, 技能范围内空中敌人受到的物理伤害提升100%, 此范围内部署其他干员时, 使其中的地面敌人浮空3秒; 自身撤退时范围内效果持续生效",
+                "upgradeDescription": "Physical damage has a 50% chance to ignore 50% DEF. Chance increases to 100% against aerial units; In <@ba.kw>Integrated Strategies</>, increases Physical damage dealt to aerial enemy units in skill range by 100%, deploy other operator in this range cause ground enemies to Levitate for 3 seconds; This effect persist after retreated"
+            }
+        ],
+        [
+            {
+                "name": "Flames of Castigation",
+                "EN": "Physical damage has a 50% chance to ignore 50% DEF. Chance increases to 100% against aerial units.",
+                "CN": "对敌人造成物理伤害时有50%概率无视其50%防御力, 对空中单位概率提升至100%",
+                "mod": "对敌人造成物理伤害时有50%概率无视其50%防御力, 对空中单位概率提升至100%; \\n在<@ba.kw>集成战略</>中, 技能范围内空中敌人受到的物理伤害提升140%, 此范围内部署其他干员时, 使其中的地面敌人浮空3秒; 自身撤退时此范围内效果持续生效, 范围内敌人结束浮空状态时, 若满足部署条件, 待部署区的艾丽妮立即部署至原位置开启技能 (不消耗费用) ",
+                "upgradeDescription": "Physical damage has a 50% chance to ignore 50% DEF. Chance increases to 100% against aerial units; In <@ba.kw>Integrated Strategies</>, increases Physical damage dealt to aerial enemy units in skill range by 140%, deploy other operator in this range cause ground enemies to Levitate for 3 seconds; This effect persist after retreated. When this Levitate effect end and Irene's deployment conditions are met, deploy Irene in previous position and activate her skill (does not cost DP)"
+            }
+        ]
+    ],
+    "uniequip_004_pasngr": [
+        [
+            {
+                "name": "Mechanism Analysis",
+                "EN": "When attacking enemies with 80% or more HP, Passenger will deal 25% <@ba.talpu>(+5%)</> increased damage to them for 3 seconds",
+                "CN": "攻击命中生命值在80%以上的敌人时, 3秒内异客对其造成的伤害提升25%<@ba.talpu> (+5%) </>",
+                "mod": "攻击命中生命值在80%以上的敌人时, 3秒内异客对其造成的伤害提升20%; 在<@ba.kw>生息演算</>中, 每12秒选择场上4个目标进行雷击 (密集的目标更易被选中) , 对范围内所有单位造成异客攻击力400%的法术伤害, 并获得该范围内的视野12秒",
+                "upgradeDescription": "When attacking enemies with 80% or more HP, Passenger will deal 20% increased damage to them for 3 seconds; In <@ba.kw>Reclamation Algorithm</>, Lightning strikes 4 random targets every 12 seconds (prioritize target in crowded area), dealing 400% ATK as Arts damage and provides visibility in the area for 12 seconds"
+            }
+        ],
+        [
+            {
+                "name": "Mechanism Analysis",
+                "EN": "When attacking enemies with 80% or more HP, Passenger will deal 25% <@ba.talpu>(+5%)</> increased damage to them for 3 seconds",
+                "CN": "攻击命中生命值在80%以上的敌人时, 3秒内异客对其造成的伤害提升25%<@ba.talpu> (+5%) </>",
+                "mod": "攻击命中生命值在80%以上的敌人时, 3秒内异客对其造成的伤害提升20%; 在<@ba.kw>生息演算</>中, 每10秒选择场上5个目标进行雷击 (密集的目标更易被选中) , 对范围内所有单位造成异客攻击力500%的法术伤害, 并获得该范围内的视野12秒, 使命中的友方单位获得2点技力",
+                "upgradeDescription": "When attacking enemies with 80% or more HP, Passenger will deal 20% increased damage to them for 3 seconds; In <@ba.kw>Reclamation Algorithm</>, Lightning strikes 5 random targets every 10 seconds (prioritize target in crowded area), dealing 500% ATK as Arts damage, provides visibility in the area for 12 seconds and allied units gain 2 SP"
+            }
+        ]
+    ],
+    "uniequip_002_demetr": [
+        [
+            {
+                "name": "家族手段",
+                "CN": "攻击使目标在10秒内防御力降低7% (最多叠加5次) , 并且目标剩余生命值比例越低自身对其造成的伤害越高, 在剩余20%以下生命值时伤害提高到最高128%",
+                "mod": "攻击使目标在10秒内防御力降低7% (最多叠加5次) , 并且目标剩余生命值比例越低自身对其造成的伤害越高, 在剩余20%以下生命值时伤害提高到最高142%",
+                "upgradeDescription": "Attack reduces target's DEF by 7% for 10 seconds (Max 5 stacks), deals higher damage as target's HP decrease, up to 142% at 20% HP"
+            },
+            {
+                "name": "家族手段",
+                "CN": "攻击使目标在10秒内防御力降低7% (最多叠加5次) , 并且目标剩余生命值比例越低自身对其造成的伤害越高, 在剩余20%以下生命值时伤害提高到最高136%<@ba.talpu> (+8%) </>",
+                "mod": "攻击使目标在10秒内防御力降低7% (最多叠加5次) , 并且目标剩余生命值比例越低自身对其造成的伤害越高, 在剩余20%以下生命值时伤害提高到最高150%<@ba.talpu> (+8%) </>",
+                "upgradeDescription": "Attack reduces target's DEF by 7% for 10 seconds (Max 5 stacks), deals higher damage as target's HP decrease, up to 150% <@ba.talpu>(+8%)</> at 20% HP"
+            }
+        ],
+        [
+            {
+                "name": "家族手段",
+                "CN": "攻击使目标在10秒内防御力降低7% (最多叠加5次) , 并且目标剩余生命值比例越低自身对其造成的伤害越高, 在剩余20%以下生命值时伤害提高到最高128%",
+                "mod": "攻击使目标在10秒内防御力降低8% (最多叠加5次) , 并且目标剩余生命值比例越低自身对其造成的伤害越高, 在剩余20%以下生命值时伤害提高到最高142%",
+                "upgradeDescription": "Attack reduces target's DEF by 8% for 10 seconds (Max 5 stacks), deals higher damage as target's HP decrease, up to 142% at 20% HP"
+            },
+            {
+                "name": "家族手段",
+                "CN": "攻击使目标在10秒内防御力降低7% (最多叠加5次) , 并且目标剩余生命值比例越低自身对其造成的伤害越高, 在剩余20%以下生命值时伤害提高到最高136%<@ba.talpu> (+8%) </>",
+                "mod": "攻击使目标在10秒内防御力降低8% (最多叠加5次) , 并且目标剩余生命值比例越低自身对其造成的伤害越高, 在剩余20%以下生命值时伤害提高到最高150%<@ba.talpu> (+8%) </>",
+                "upgradeDescription": "Attack reduces target's DEF by 8% for 10 seconds (Max 5 stacks), deals higher damage as target's HP decrease, up to 150% <@ba.talpu>(+8%)</> at 20% HP"
+            }
+        ]
+    ],
+    "uniequip_002_liesel": [
+        [
+            {
+                "name": "执棒素养",
+                "CN": "攻击溅射范围内有大于或等于3个敌人时, 使当次攻击造成的伤害提升至120%",
+                "mod": "攻击溅射范围内有大于或等于3个敌人时, 使当次攻击造成的伤害提升至125%",
+                "upgradeDescription": "When there are 3 or more enemies in splash area, damage dealt increases to 125%"
+            },
+            {
+                "name": "执棒素养",
+                "CN": "攻击溅射范围内有大于或等于3个敌人时, 使当次攻击造成的伤害提升至125%<@ba.talpu> (+5%) </>",
+                "mod": "攻击溅射范围内有大于或等于3个敌人时, 使当次攻击造成的伤害提升至130%<@ba.talpu> (+5%) </>",
+                "upgradeDescription": "When there are 3 or more enemies in splash area, damage dealt increases to 130% <@ba.talpu>(+5%)</>"
+            }
+        ],
+        [
+            {
+                "name": "执棒素养",
+                "CN": "攻击溅射范围内有大于或等于3个敌人时, 使当次攻击造成的伤害提升至120%",
+                "mod": "攻击溅射范围内有大于或等于3个敌人时, 使当次攻击造成的伤害提升至130%",
+                "upgradeDescription": "When there are 3 or more enemies in splash area, damage dealt increases to 130%"
+            },
+            {
+                "name": "执棒素养",
+                "CN": "攻击溅射范围内有大于或等于3个敌人时, 使当次攻击造成的伤害提升至125%<@ba.talpu> (+5%) </>",
+                "mod": "攻击溅射范围内有大于或等于3个敌人时, 使当次攻击造成的伤害提升至135%<@ba.talpu> (+5%) </>",
+                "upgradeDescription": "When there are 3 or more enemies in splash area, damage dealt increases to 135% <@ba.talpu>(+5%)</>"
+            }
+        ]
+    ],
+    "uniequip_003_agoat2": [
+        [
+            {
+                "name": "Replenishing Mist",
+                "EN": "Normal heals additionally restore HP and <$ba.dt.element>Elemental Injury</> per second equal to 10% of the original amount, lasting for 6 seconds (stacks up to 3 times)",
+                "CN": "普通治疗使目标每秒额外受到一次治疗量和<$ba.dt.element>元素损伤</>回复量为10%的增益治疗, 持续6秒 (最多叠加3层) ",
+                "mod": "普通治疗使目标每秒额外受到一次治疗量和<$ba.dt.element>元素损伤</>回复量为12%的增益治疗, 持续7秒 (最多叠加3层) ",
+                "upgradeDescription": "Normal heals additionally restore HP and <$ba.dt.element>Elemental Injury</> per second equal to 12% of the original amount, lasting for 7 seconds (stacks up to 3 times)"
+            }
+        ],
+        [
+            {
+                "name": "Replenishing Mist",
+                "EN": "Normal heals additionally restore HP and <$ba.dt.element>Elemental Injury</> per second equal to 10% of the original amount, lasting for 6 seconds (stacks up to 3 times)",
+                "CN": "普通治疗使目标每秒额外受到一次治疗量和<$ba.dt.element>元素损伤</>回复量为10%的增益治疗, 持续6秒 (最多叠加3层) ",
+                "mod": "普通治疗使目标每秒额外受到一次治疗量和<$ba.dt.element>元素损伤</>回复量为13%的增益治疗, 持续8秒 (最多叠加3层) ",
+                "upgradeDescription": "Normal heals additionally restore HP and <$ba.dt.element>Elemental Injury</> per second equal to 13% of the original amount, lasting for 8 seconds (stacks up to 3 times)"
+            }
+        ]
+    ],
+    "uniequip_003_haak": [
+        [
+            {
+                "name": "Pharmaceutical Diffusion",
+                "EN": "Increases healing effects on this unit by 20%",
+                "CN": "自身受到的治疗量+20%",
+                "mod": "自身受到的治疗量+20%, 且部署后立即恢复攻击范围内一名友方干员 (优先选取正前方) 的生命值, 恢复量为阿攻击力的100%",
+                "upgradeDescription": "Increases healing effects on this unit by 20%; Immediately restores the HP of an ally in Attack Range (prioritizes allies directly in front of this unit) by 100% ATK after deployment"
+            },
+            {
+                "name": "Pharmaceutical Diffusion",
+                "EN": "Increases healing effects on this unit by 25%<@ba.talpu>(+5%)</>",
+                "CN": "自身受到的治疗量+25%<@ba.talpu> (+5%) </>",
+                "mod": "自身受到的治疗量+25%<@ba.talpu> (+5%) </>, 且部署后立即恢复攻击范围内一名友方干员 (优先选取正前方) 的生命值, 恢复量为阿攻击力的100%",
+                "upgradeDescription": "Increases healing effects on this unit by 25%<@ba.talpu>(+5%)</>; Immediately restores the HP of an ally in Attack Range (prioritizes allies directly in front of this unit) by 100% ATK after deployment"
+            }
+        ],
+        [
+            {
+                "name": "Pharmaceutical Diffusion",
+                "EN": "Increases healing effects on this unit by 20%",
+                "CN": "自身受到的治疗量+20%",
+                "mod": "自身受到的治疗量+25%, 且部署后立即恢复攻击范围内一名友方干员 (优先选取正前方) 的生命值, 恢复量为阿攻击力的150%",
+                "upgradeDescription": "Increases healing effects on this unit by 25%; Immediately restores the HP of an ally in Attack Range (prioritizes allies directly in front of this unit) by 150% ATK after deployment"
+            },
+            {
+                "name": "Pharmaceutical Diffusion",
+                "EN": "Increases healing effects on this unit by 25%<@ba.talpu>(+5%)</>",
+                "CN": "自身受到的治疗量+25%<@ba.talpu> (+5%) </>",
+                "mod": "自身受到的治疗量+30%<@ba.talpu> (+5%) </>, 且部署后立即恢复攻击范围内一名友方干员 (优先选取正前方) 的生命值, 恢复量为阿攻击力的150%",
+                "upgradeDescription": "Increases healing effects on this unit by 30%<@ba.talpu>(+5%)</>; Immediately restores the HP of an ally in Attack Range (prioritizes allies directly in front of this unit) by 150% ATK after deployment"
+            }
+        ]
+    ],
+    "uniequip_003_jesca2": [
+        [
+            {
+                "name": "Charge and Release",
+                "EN": "When the Mobile Riot Shield receives damage, 50% chance to restore 1 SP to Jessica the Liberated",
+                "CN": "机动盾牌受到伤害时, 有50%的概率使涤火杰西卡获得1点技力",
+                "mod": "机动盾牌受到伤害时, 有55%的概率使涤火杰西卡获得1点技力并使机动盾牌自身再部署时间-1s (最多至-11s) ",
+                "upgradeDescription": "When the Mobile Riot Shield receives damage, 55% chance to restore 1 SP to Jessica the Liberated, and Mobile Riot Shield's Redeployment Time -1 second (up to -11 seconds)"
+            },
+            {
+                "name": "Charge and Release",
+                "EN": "When the Mobile Riot Shield receives damage, 55% <@ba.talpu>(+5%)</> chance to restore 1 SP to Jessica the Liberated",
+                "CN": "机动盾牌受到伤害时, 有55%<@ba.talpu> (+5%) </>的概率使涤火杰西卡获得1点技力",
+                "mod": "机动盾牌受到伤害时, 有60%<@ba.talpu> (+5%) </>的概率使涤火杰西卡获得1点技力并使机动盾牌自身再部署时间-1s (最多至-11s) ",
+                "upgradeDescription": "When the Mobile Riot Shield receives damage, 60%<@ba.talpu>(+5%)</> chance to restore 1 SP to Jessica the Liberated, and Mobile Riot Shield's Redeployment Time -1 second (up to -11 seconds)"
+            }
+        ],
+        [
+            {
+                "name": "Charge and Release",
+                "EN": "When the Mobile Riot Shield receives damage, 50% chance to restore 1 SP to Jessica the Liberated",
+                "CN": "机动盾牌受到伤害时, 有50%的概率使涤火杰西卡获得1点技力",
+                "mod": "机动盾牌受到伤害时, 有60%的概率使涤火杰西卡获得1点技力并使机动盾牌自身再部署时间-1s (最多至-14s) ",
+                "upgradeDescription": "When the Mobile Riot Shield receives damage, 60% chance to restore 1 SP to Jessica the Liberated, and Mobile Riot Shield's Redeployment Time -1 second (up to -14 seconds)"
+            },
+            {
+                "name": "Charge and Release",
+                "EN": "When the Mobile Riot Shield receives damage, 55% <@ba.talpu>(+5%)</> chance to restore 1 SP to Jessica the Liberated",
+                "CN": "机动盾牌受到伤害时, 有55%<@ba.talpu> (+5%) </>的概率使涤火杰西卡获得1点技力",
+                "mod": "机动盾牌受到伤害时, 有65%<@ba.talpu> (+5%) </>的概率使涤火杰西卡获得1点技力并使机动盾牌自身再部署时间-1s (最多至-14s) ",
+                "upgradeDescription": "When the Mobile Riot Shield receives damage, 65%<@ba.talpu>(+5%)</> chance to restore 1 SP to Jessica the Liberated, and Mobile Riot Shield's Redeployment Time -1 second (up to -14 seconds)"
+            }
+        ]
     ]
 }

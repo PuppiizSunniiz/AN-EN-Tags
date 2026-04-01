@@ -1,5 +1,10 @@
 {
     "Dict": {
+        "act41sre": {
+            "nameCN": "挽歌燃烧殆尽·复刻",
+            "nameEN": "When Elegies Are Ashes - Rerun",
+            "startCN": 1774598400
+        },
         "act2autochess": {
             "nameCN": "卫戍协议:盟约",
             "nameEN": "Stronghold Protocol - Alliance",
@@ -1249,6 +1254,11 @@
             "nameCN": "愚人节活动",
             "nameEN": "April Fools' Day Event 2025 (EN : 2026)",
             "startCN": 1743494400
+        },
+        "act7fun": {
+            "nameCN": "Rhodes Island Epic 黑色博士坠落",
+            "nameEN": "April Fools' Day Event 2026 (EN : 2027)",
+            "startCN": 1775016000
         }
     },
     "Timeline": [
@@ -2266,6 +2276,16 @@
             "act2autochess",
             "Stronghold Protocol - Alliance",
             1773475200
+        ],
+        [
+            "act41sre",
+            "When Elegies Are Ashes - Rerun",
+            1774598400
+        ],
+        [
+            "act7fun",
+            "April Fools' Day Event 2026 (EN : 2027)",
+            1775016000
         ]
     ]
 }

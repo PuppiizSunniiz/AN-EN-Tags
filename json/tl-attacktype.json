@@ -260,7 +260,7 @@
             "en": "When not blocking enemies, prioritizes dealing <@ba.kw>ranged AoE</> Physical damage",
             "color": "physical"
         },
-        "优先攻击空中单位，且不受<@ba.kw>部署数量</>限制，但再部署时间极长":{
+        "优先攻击空中单位，且不受<@ba.kw>部署数量</>限制，但再部署时间极长": {
             "en": "Attacks aerial enemies first and ignores <@ba.kw>Deployment Limit</>, but has a long Redeployment Time",
             "color": "physical"
         },
@@ -545,7 +545,7 @@
             "color": "magic"
         },
         "造成法术伤害时附带相当于<@ba.vup>8%</>伤害的<$ba.dt.apoptosis2>凋亡损伤</>": {
-            "en": "When dealing Arts damage, deals an additional <@ba.vup>8%</> as <$ba.dt.apoptosis2>Necrosis damage</>",
+            "en": "When dealing Arts damage, deals an additional <@ba.vup>8%</> as <$ba.dt.apoptosis2>Necrosis</>",
             "color": "magic"
         },
         "受到来自自身阻挡单位的伤害降低<@ba.kw>15%</>": {
@@ -658,7 +658,7 @@
             "note": "Hunter Mod (HUN-X)"
         },
         "造成法术伤害时附带相当于<@ba.vup>8%</>伤害的<$ba.dt.burning2>灼燃损伤</>": {
-            "en": "When dealing Arts damage, deals an additional <@ba.vup>8%</> as <$ba.dt.burning2>Burn damage</>",
+            "en": "When dealing Arts damage, deals an additional <@ba.vup>8%</> as <$ba.dt.burning2>Burn</>",
             "color": "magic",
             "note": "Blast Caster Mod (BLA-D)"
         },
@@ -690,12 +690,12 @@
         "在<@ba.kw>集成战略</>中，同时治疗<@ba.kw>两</>个目标": {
             "en": "In <@ba.kw>Integrated Strategies</>, heals <@ba.kw>2</> targets simultaneously",
             "color": "heal",
-            "note" : "Kal'tsit IS excl Mod"
+            "note": "Kal'tsit IS excl Mod"
         },
         "在<@ba.kw>集成战略</>中，攻击时使自身和召唤物下次再部署时间减少<@ba.kw>1</>秒，召唤物也具有该效果": {
             "en": "In <@ba.kw>Integrated Strategies</>, reduces the Redeployment Time (including that of his summons) by <@ba.kw>1</> second when attacking; this effect also applies to his summons",
             "color": "extra",
-            "note" : "Phantom IS excl Mod"
+            "note": "Phantom IS excl Mod"
         },
         "受到的治疗效果提升<@ba.kw>20%</>": {
             "en": "Have <@ba.kw>+20%</> healing effectiveness",
@@ -777,21 +777,21 @@
             "note": "Tecno 's Token (Puppet Dancer)"
         },
         "未阻挡敌人时攻击速度<@ba.kw>+{attack_speed}</>": {
-            "en" : "ASPD <@ba.kw>+{attack_speed}</> when not blocking an enemy",
+            "en": "ASPD <@ba.kw>+{attack_speed}</> when not blocking an enemy",
             "color": "common",
             "name": "Mousse",
             "code": "uniequip_002_frncat",
             "note": "new mods aft-x"
         },
         "攻击<$ba.dt.burning2>灼燃损伤</>爆发期间的目标时额外造成攻击力<@ba.kw>{ep_damage_ratio:0%}</>的元素伤害": {
-            "en" : "Attacks against a target under the burst effect of <$ba.dt.burning2>Burn damage</> deal an additional <@ba.kw>{ep_damage_ratio:0%}</> ATK as Elemental Damage",
+            "en": "Attacks against a target under the burst effect of <$ba.dt.burning2>Burn</> deal an additional <@ba.kw>{ep_damage_ratio:0%}</> ATK as Elemental Damage",
             "color": "magic",
             "name": "Viviana",
             "code": "uniequip_002_vvana",
             "note": "new mods aft-d"
         },
         "自身阻挡的敌人受到<@ba.kw>10%</>的<$ba.magicfragile>法术脆弱</>效果": {
-            "en" : "Enemies blocked by this unit receive <@ba.kw>10%</> <$ba.magicfragile>Arts Fragility</>",
+            "en": "Enemies blocked by this unit receive <@ba.kw>10%</> <$ba.magicfragile>Arts Fragility</>",
             "color": "magic",
             "name": "Sideroca",
             "code": "uniequip_002_sidero",
@@ -1076,7 +1076,7 @@
             "note": "Nasti 's Token (Site Supervisor)",
             "name": "Site Supervisor",
             "code": "token_10060_nasti_nstchr"
-    },
+        },
         "装置有小工程师和高台两种形态，小工程师形态下不会受到攻击，可部署在地面或高台位": {
             "en": "Device has 2 forms; Little Engineer and High Platform. When in the Little Engineer form, cannot be attacked, can be deployed on both Melee and Ranged tiles",
             "color": "extra",
@@ -1118,6 +1118,55 @@
             "note": "new mods cru-y",
             "name": "char_4088_hodrer",
             "code": "uniequip_003_hodrer"
+        },
+        "阻挡敌人时，自身造成的元素损伤提升<@ba.kw>15%</>": {
+            "en": "When blocking enemies, increases Elemental Injury dealt by <@ba.kw>15%</>",
+            "color": "magic",
+            "note": "new mods prp-x",
+            "name": "char_4214_cairn",
+            "code": "uniequip_002_cairn"
+        },
+        "在<@ba.kw>集成战略</>中，再部署时间-60%，部署后立即获得8点技力": {
+            "en": "In <@ba.kw>Integrated Strategies</>, Redeployment Time -60%, gain 8 SP when deployed",
+            "color": "extra",
+            "note": "new mods isw-a",
+            "name": "char_4009_irene",
+            "code": "uniequip_004_irene"
+        },
+        "在<@ba.kw>生息演算</>中，友方单位受到来自自然环境的伤害-100%，自身攻击力+60%，每秒获得1点技力": {
+            "en": "In <@ba.kw>Reclamation Algorithm</>, ATK+60%, recover 1 SP every seconds and allied units receive -100% damage from environmental effects",
+            "color": "extra",
+            "note": "new mods ra-a",
+            "name": "char_472_pasngr",
+            "code": "uniequip_004_pasngr"
+        },
+        "恢复友方单位生命，并且可以<$ba.liftoff>起飞</>": {
+            "en": "Restores HP of allies, can <$ba.liftoff>Takes Off</>",
+            "color": "heal",
+            "note": "new Ops \"watchman\" Archetype trait",
+            "name": "Taraxacum",
+            "code": "char_4222_taraxa"
+        },
+        "贝洛内技能结束时返回该位置，并且其他干员不能部署": {
+            "en": "When skill ends, Bellone returns to this position and no other Operators may be deployed",
+            "color": "common",
+            "note": "Bellone 's Token (Bond)",
+            "name": "Bond",
+            "code": "token_10065_demetr_dmtpos"
+        },
+        "攻击范围内存在受到元素损伤的友方单位时，攻击速度<@ba.vup>+{attack_speed}</>": {
+            "en": "ASPD <@ba.vup>+{attack_speed}</> when allies in Attack Range receive Elemental Injury",
+            "color": "common",
+            "note": "new mods wdm-y",
+            "name": "char_1016_agoat2",
+            "code": "uniequip_003_agoat2"
+        },
+        "攻击距离+1（不受技能攻击范围变化影响）": {
+            "en": "Attack Range +1 (unaffected by skill)",
+            "color": "common",
+            "note": "new mods spt-y",
+            "name": "char_1034_jesca2",
+            "code": "uniequip_003_jesca2"
         }
     },
     "parts": [

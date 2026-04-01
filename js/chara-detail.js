@@ -156,6 +156,8 @@
 
     const validparam = ["opname", "gamemode", "story", "voice", "sfx"]
 
+    const RIEPIC = ["char_003_kalts", "char_172_svrash", "char_1035_wisdel"]
+
     $(document).ready(function(){
         console.log("Function Starto !!!")
         refreshurl()
@@ -880,12 +882,12 @@
                 var numrar = 0
                 var rarity = -1
                 for (var i = 0; i < result.length; i++) {
-                    let image = `<img style="height:40px;padding:2px" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">  `
+                    let image = `<img style="height:40px;padding:2px" src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id+(sus && RIEPIC.includes(result[i].id)?"_sus":"")}.png">  `
                     // console.log(image)
                     $("#operatorsResult").removeClass("opbrowse1");
                     $("#operatorsResult").removeClass("opbrowse2");
                     if(el == "Browse3"){
-                        image = `<img loading='lazy' class='opres-img' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">  `
+                        image = `<img loading='lazy' class='opres-img' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id+(sus && RIEPIC.includes(result[i].id)?"_sus":"")}.png">  `
                         var charaname = `${result[i].name_readable?`[${result[i].name_readable}]`:""}${result[i].nameTL}`
                         $("#operatorsResult").css("text-align", "center");
                         $("#operatorsResult").removeClass("opresult-list");
@@ -899,7 +901,7 @@
                             `);
 
                     }else if(el == "Browse2"){
-                        image = `<img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">  `
+                        image = `<img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id+(sus && RIEPIC.includes(result[i].id)?"_sus":"")}.png">  `
                         $("#operatorsResult").css("text-align", "center");
                         $("#operatorsResult").removeClass("opresult-list");
                         $("#operatorsResult").addClass("opresult-grid");
@@ -931,7 +933,7 @@
                             </li>`
                         )
                     }else if(el == "Browse"){
-                        image = `<img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id}.png">  `
+                        image = `<img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${result[i].id+(sus && RIEPIC.includes(result[i].id)?"_sus":"")}.png">  `
                         $("#operatorsResult").css("text-align", "center");
                         $("#operatorsResult").removeClass("opresult-list");
                         $("#operatorsResult").addClass("opresult-grid");
@@ -1273,7 +1275,7 @@
             <div class="op-image-grid">
                 ${GetLogo(char)?`<div class="op-grid-faction"><img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/${GetLogo(char)?GetLogo(char).toLowerCase():"none"}.png" title="${GetLogo(char)?GetLogoInfo(char):"None"}"></div>`:""}
                 ${gamemode=="BASE"?"":'<div class="op-grid-gamemode ' + gamemode +'">' + gamemode + '</div>'}
-                <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${getId(char)}.png">
+                <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${getId(char)+(sus && RIEPIC.includes(getId(char))?"_sus":"")}.png">
             </div>
             <div class="${char.appellation.length>12?char.appellation.length>16?"namesmaller":"namesmall":"name"} ak-font-novecento ak-center" ${hidden_fac_op?`style="color: aqua"`:""}>${unreadable?`[${unreadable}]`:""} ${char.appellation}</div>
             <div class='selectopopgridline ak-rare-${char.rarity + 1}'></div>

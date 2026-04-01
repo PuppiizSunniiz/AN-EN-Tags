@@ -39,9 +39,12 @@
     - Passenger RA
 
 ### Crossing
+- Effect
+    - ba.dmgresistance
+- Trait
+    - Bellone's S3 Token
 - 2nd mod Trait
     - Eyjalt 
-    - Aak
     - Jessica
 
 ### To Do

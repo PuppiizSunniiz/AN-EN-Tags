@@ -3507,7 +3507,7 @@
                     "name": "[EA] : When Elegies Are Ashes",
                     "date": 1741320000,
                     "zone": {
-                        "act41side_zone1": {
+                        "act41sre_zone1": {
                             "name": "Flickering Shadows",
                             "stage": {
                                 "act41side_01": "EA-1 : Title Page",
@@ -3521,7 +3521,7 @@
                                 "act41side_08": "EA-8 : At the End of the Night"
                             }
                         },
-                        "act41side_zone2": {
+                        "act41sre_zone2": {
                             "name": "Dying Flames",
                             "stage": {
                                 "act41side_ex01": "EA-EX-1 : The Other Side of the Curtain",
@@ -4722,50 +4722,50 @@
                         "act2multi_zone1": {
                             "name": null,
                             "stage": {
-                                "act2multi_tr01": "IG-TR-1 : 规则教学-常规项目",
-                                "act2multi_tr02": "IG-TR-2 : 规则教学-障碍漂航",
-                                "act2multi_tr03": "IG-TR-3 : 规则教学-堡垒守御",
-                                "act2multi_01": "IG-1 : 无声的默契",
-                                "act2multi_02": "IG-2 : 火热捉迷藏",
-                                "act2multi_03": "IG-3 : 暗夜微光",
-                                "act2multi_rm01": "IG-4 : 逃离火线",
-                                "act2multi_04": "IG-5 : 聚光灯下",
-                                "act2multi_05": "IG-6 : 急速撤离",
-                                "act2multi_06": "IG-7 : 助威团之争",
-                                "act2multi_rm02": "IG-8 : 当意外来敲门",
-                                "act2multi_07": "IG-9 : 爆炸性新闻",
-                                "act2multi_08": "IG-10 : 冰爽速递",
-                                "act2multi_rm03": "IG-11 : 密探有专车接送",
-                                "act2multi_09": "IG-12 : 大巴扎巡礼",
-                                "act2multi_10": "IG-13 : 踏浪匪盗",
-                                "act2multi_rm04": "IG-14 : 移动靶射击练习",
-                                "act2multi_ex01": "IG-EX-1 : 无声的默契",
-                                "act2multi_ex02": "IG-EX-2 : 火热捉迷藏",
-                                "act2multi_ex03": "IG-EX-3 : 暗夜微光",
-                                "act2multi_rm-ex01": "IG-EX-4 : 逃离火线",
-                                "act2multi_ex04": "IG-EX-5 : 聚光灯下",
-                                "act2multi_ex05": "IG-EX-6 : 急速撤离",
-                                "act2multi_ex06": "IG-EX-7 : 助威团之争",
-                                "act2multi_rm-ex02": "IG-EX-8 : 当意外来敲门",
-                                "act2multi_ex07": "IG-EX-9 : 爆炸性新闻",
-                                "act2multi_ex08": "IG-EX-10 : 冰爽速递",
-                                "act2multi_rm-ex03": "IG-EX-11 : 密探有专车接送",
-                                "act2multi_ex09": "IG-EX-12 : 大巴扎巡礼",
-                                "act2multi_ex10": "IG-EX-13 : 踏浪匪盗",
-                                "act2multi_rm-ex04": "IG-EX-14 : 移动靶射击练习",
-                                "act2multi_fortress-01": "IG-DF-1 : 小心踩踏",
-                                "act2multi_fortress-02": "IG-DF-2 : 风洞实验室",
-                                "act2multi_fortress-rm01": "IG-DF-3 : 湿地跨栏",
-                                "act2multi_fortress-ex-01": "IG-DF-4 : 小心踩踏",
-                                "act2multi_fortress-ex-02": "IG-DF-5 : 风洞实验室",
-                                "act2multi_fortress-ex-rm01": "IG-DF-6 : 湿地跨栏",
-                                "act2multi_raft": "IG-OR-1 : 全动力航行",
-                                "act2multi_ex-raft": "IG-OR-2 : 全动力航行",
-                                "act2multi_hard-01": "IG-S-1 : 甲板风云",
-                                "act2multi_hard-02": "IG-S-2 : 黄沙急行",
-                                "act2multi_hard-03": "IG-S-3 : 压轴大戏",
-                                "act2multi_hard-raft": "IG-S-4 : 全动力航行",
-                                "act2multi_fortress-hard-01": "IG-S-5 : 无限制越野"
+                                "act2multi_tr01": "IG-TR-1 : Tutorial - Regular Events",
+                                "act2multi_tr02": "IG-TR-2 : Tutorial - Obstacle Drift",
+                                "act2multi_tr03": "IG-TR-3 : Tutorial - Bastion Defense",
+                                "act2multi_01": "IG-1 : Silent Rapport",
+                                "act2multi_02": "IG-2 : Burning Hide and Seek",
+                                "act2multi_03": "IG-3 : Night Glimmer",
+                                "act2multi_rm01": "IG-4 : Firing Line Escape",
+                                "act2multi_04": "IG-5 : Under the Spotlight",
+                                "act2multi_05": "IG-6 : Rapid Evacuation",
+                                "act2multi_06": "IG-7 : Cheerleading Clash",
+                                "act2multi_rm02": "IG-8 : When Surprise Knocks",
+                                "act2multi_07": "IG-9 : Explosive News",
+                                "act2multi_08": "IG-10 : Frosty Delivery",
+                                "act2multi_rm03": "IG-11 : Intercept Special Spy",
+                                "act2multi_09": "IG-12 : Bazaar Parade",
+                                "act2multi_10": "IG-13 : Surf Bandit",
+                                "act2multi_rm04": "IG-14 : Mobile Target Practice",
+                                "act2multi_ex01": "IG-EX-1 : Silent Rapport",
+                                "act2multi_ex02": "IG-EX-2 : Burning Hide and Seek",
+                                "act2multi_ex03": "IG-EX-3 : Night Glimmer",
+                                "act2multi_rm-ex01": "IG-EX-4 : Firing Line Escape",
+                                "act2multi_ex04": "IG-EX-5 : Under the Spotlight",
+                                "act2multi_ex05": "IG-EX-6 : Rapid Evacuation",
+                                "act2multi_ex06": "IG-EX-7 : Cheerleading Clash",
+                                "act2multi_rm-ex02": "IG-EX-8 : When Surprise Knocks",
+                                "act2multi_ex07": "IG-EX-9 : Explosive News",
+                                "act2multi_ex08": "IG-EX-10 : Frosty Delivery",
+                                "act2multi_rm-ex03": "IG-EX-11 : Intercept Special Spy",
+                                "act2multi_ex09": "IG-EX-12 : Bazaar Parade",
+                                "act2multi_ex10": "IG-EX-13 : Surf Bandit",
+                                "act2multi_rm-ex04": "IG-EX-14 : Mobile Target Practice",
+                                "act2multi_fortress-01": "IG-DF-1 : Avoid Stampede",
+                                "act2multi_fortress-02": "IG-DF-2 : Wind Tunnel",
+                                "act2multi_fortress-rm01": "IG-DF-3 : Wetland Hurdle",
+                                "act2multi_fortress-ex-01": "IG-DF-4 : Avoid Stampede",
+                                "act2multi_fortress-ex-02": "IG-DF-5 : Wind Tunnel",
+                                "act2multi_fortress-ex-rm01": "IG-DF-6 : Wetland Hurdle",
+                                "act2multi_raft": "IG-OR-1 : Powered Sailing",
+                                "act2multi_ex-raft": "IG-OR-2 : Powered Sailing",
+                                "act2multi_hard-01": "IG-S-1 : Storm on Deck",
+                                "act2multi_hard-02": "IG-S-2 : Sand Dash",
+                                "act2multi_hard-03": "IG-S-3 : Grand Finale",
+                                "act2multi_hard-raft": "IG-S-4 : Powered Sailing",
+                                "act2multi_fortress-hard-01": "IG-S-5 : Unrestricted Off-Road"
                             }
                         }
                     }
@@ -7393,16 +7393,33 @@
                         "act6fun": {
                             "name": "April Fools' Day Event 2025 (EN : 2026)",
                             "stage": {
-                                "act6fun_01": "AK-1 : 切尔诺伯格大撤退",
-                                "act6fun_02": "AK-2 : 龙门渗透作战",
-                                "act6fun_03": "AK-3 : 荒野阻击战",
-                                "act6fun_04": "AK-4 : 切尔诺伯格保卫战",
-                                "act6fun_05": "AK-5 : 金库大逃亡",
-                                "act6fun_06": "AK-6 : 扰乱贫民窟",
-                                "act6fun_07": "AK-7 : 信任",
-                                "act6fun_08": "AK-8 : 伊莎玛拉？",
-                                "act6fun_s01": "AK-S-1 : 罗德岛歼灭战",
-                                "act6fun_s02": "AK-S-2 : 回应"
+                                "act6fun_01": "AK-1 : Chernobog Mass Evacuation",
+                                "act6fun_02": "AK-2 : Lungmen Infiltration Battle",
+                                "act6fun_03": "AK-3 : Barrenland Blockade",
+                                "act6fun_04": "AK-4 : Chernobog Defense",
+                                "act6fun_05": "AK-5 : Great Treasury Escape",
+                                "act6fun_06": "AK-6 : Slums Disturbance",
+                                "act6fun_07": "AK-7 : Trust",
+                                "act6fun_08": "AK-8 : Ishar'mla?",
+                                "act6fun_s01": "AK-S-1 : Rhodes Island Wipe Out",
+                                "act6fun_s02": "AK-S-2 : Response"
+                            }
+                        }
+                    }
+                },
+                "act7fun": {
+                    "name": "April Fools' Day Event 2026 (EN : 2027)",
+                    "date": 1775016000,
+                    "zone": {
+                        "act7fun": {
+                            "name": "April Fools' Day Event 2026 (EN : 2027)",
+                            "stage": {
+                                "act7fun_01": "RE-1 : 活动手指",
+                                "act7fun_02": "RE-2 : 正式开打",
+                                "act7fun_03": "RE-3 : 狂轰乱炸",
+                                "act7fun_04": "RE-4 : 兵力压制",
+                                "act7fun_05": "RE-5 : 渐入佳境",
+                                "act7fun_06": "RE-6 : 最终考核"
                             }
                         }
                     }
@@ -7618,7 +7635,8 @@
         "act3fun": "April Fools' Day Event 2022 (EN : 2023)",
         "act4fun": "April Fools' Day Event 2023 (EN : 2024)",
         "act5fun": "April Fools' Day Event 2024 (EN : 2025)",
-        "act6fun": "April Fools' Day Event 2025 (EN : 2026)"
+        "act6fun": "April Fools' Day Event 2025 (EN : 2026)",
+        "act7fun": "April Fools' Day Event 2026 (EN : 2027)"
     },
     "enemies": {
         "enemy_1007_slime": {
@@ -10768,6 +10786,11 @@
                         "act6fun_01",
                         "act6fun_02",
                         "act6fun_04"
+                    ]
+                },
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_03"
                     ]
                 }
             }
@@ -18851,6 +18874,13 @@
                         "rogue5_t-9-c"
                     ]
                 }
+            },
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_05"
+                    ]
+                }
             }
         },
         "enemy_1065_snwolf": {
@@ -19365,6 +19395,13 @@
                         "RA#2_monthly_3"
                     ]
                 }
+            },
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_05"
+                    ]
+                }
             }
         },
         "enemy_1069_icebrk": {
@@ -19495,6 +19532,13 @@
                 "IS#6": {
                     "IS#6 Floor 3": [
                         "rogue5_b-1"
+                    ]
+                }
+            },
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_05"
                     ]
                 }
             }
@@ -20060,6 +20104,13 @@
                         "rogue2_3-1"
                     ]
                 }
+            },
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_02"
+                    ]
+                }
             }
         },
         "enemy_1079_sotisp": {
@@ -20220,6 +20271,13 @@
                         "rogue3_b-2-b"
                     ]
                 }
+            },
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_02"
+                    ]
+                }
             }
         },
         "enemy_1078_sotisc_2": {
@@ -20288,6 +20346,13 @@
                 "tower_n_03": {
                     "tower_n_03": [
                         "lt_03_08"
+                    ]
+                }
+            },
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_03"
                     ]
                 }
             }
@@ -23492,6 +23557,13 @@
                     ],
                     "IS#3 Floor 6": [
                         "rogue2_b-7"
+                    ]
+                }
+            },
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_06"
                     ]
                 }
             }
@@ -31495,7 +31567,7 @@
             },
             "sidestory": {
                 "act41side": {
-                    "act41side_zone1": [
+                    "act41sre_zone1": [
                         "act41side_05"
                     ]
                 },
@@ -40427,6 +40499,13 @@
                         "camp_r_24"
                     ]
                 }
+            },
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_06"
+                    ]
+                }
             }
         },
         "enemy_1354_eghost": {
@@ -41079,7 +41158,7 @@
             },
             "sidestory": {
                 "act41side": {
-                    "act41side_zone2": [
+                    "act41sre_zone2": [
                         "act41side_ex01",
                         "act41side_ex01",
                         "act41side_ex01",
@@ -41143,7 +41222,7 @@
             },
             "sidestory": {
                 "act41side": {
-                    "act41side_zone2": [
+                    "act41sre_zone2": [
                         "act41side_ex01",
                         "act41side_ex01#f#",
                         "act41side_ex02",
@@ -41187,7 +41266,7 @@
             },
             "sidestory": {
                 "act41side": {
-                    "act41side_zone2": [
+                    "act41sre_zone2": [
                         "act41side_ex01",
                         "act41side_ex01#f#",
                         "act41side_ex02",
@@ -41217,7 +41296,7 @@
             },
             "sidestory": {
                 "act41side": {
-                    "act41side_zone2": [
+                    "act41sre_zone2": [
                         "act41side_ex03",
                         "act41side_ex03#f#",
                         "act41side_ex04",
@@ -41266,7 +41345,7 @@
             },
             "sidestory": {
                 "act41side": {
-                    "act41side_zone2": [
+                    "act41sre_zone2": [
                         "act41side_ex02",
                         "act41side_ex02#f#",
                         "act41side_ex07",
@@ -49754,6 +49833,13 @@
                         "lt_20_05"
                     ]
                 }
+            },
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_04"
+                    ]
+                }
             }
         },
         "enemy_1385_winbom": {
@@ -53508,6 +53594,13 @@
                 "camp_r_24": {
                     "camp_r_24": [
                         "camp_r_24"
+                    ]
+                }
+            },
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_06"
                     ]
                 }
             }
@@ -59723,6 +59816,13 @@
                         "rogue2_2-2"
                     ]
                 }
+            },
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_04"
+                    ]
+                }
             }
         },
         "enemy_1189_krgaxe": {
@@ -60012,7 +60112,7 @@
             },
             "sidestory": {
                 "act41side": {
-                    "act41side_zone2": [
+                    "act41sre_zone2": [
                         "act41side_ex05",
                         "act41side_ex05#f#"
                     ]
@@ -60316,7 +60416,7 @@
             },
             "sidestory": {
                 "act41side": {
-                    "act41side_zone1": [
+                    "act41sre_zone1": [
                         "act41side_05"
                     ]
                 },
@@ -61995,7 +62095,7 @@
             },
             "sidestory": {
                 "act41side": {
-                    "act41side_zone1": [
+                    "act41sre_zone1": [
                         "act41side_05"
                     ]
                 }
@@ -62018,10 +62118,10 @@
             },
             "sidestory": {
                 "act41side": {
-                    "act41side_zone1": [
+                    "act41sre_zone1": [
                         "act41side_08"
                     ],
-                    "act41side_zone2": [
+                    "act41sre_zone2": [
                         "act41side_ex08",
                         "act41side_ex08#f#"
                     ]
@@ -62038,7 +62138,7 @@
             },
             "sidestory": {
                 "act41side": {
-                    "act41side_zone1": [
+                    "act41sre_zone1": [
                         "act41side_01",
                         "act41side_tr01",
                         "act41side_02",
@@ -62075,7 +62175,7 @@
             },
             "sidestory": {
                 "act41side": {
-                    "act41side_zone1": [
+                    "act41sre_zone1": [
                         "act41side_01",
                         "act41side_tr01",
                         "act41side_02",
@@ -62105,7 +62205,7 @@
             },
             "sidestory": {
                 "act41side": {
-                    "act41side_zone1": [
+                    "act41sre_zone1": [
                         "act41side_03",
                         "act41side_07",
                         "act41side_08"
@@ -62130,7 +62230,7 @@
             },
             "sidestory": {
                 "act41side": {
-                    "act41side_zone1": [
+                    "act41sre_zone1": [
                         "act41side_02",
                         "act41side_04",
                         "act41side_06",
@@ -62157,7 +62257,7 @@
             },
             "sidestory": {
                 "act41side": {
-                    "act41side_zone1": [
+                    "act41sre_zone1": [
                         "act41side_04"
                     ]
                 }
@@ -62173,7 +62273,7 @@
             },
             "sidestory": {
                 "act41side": {
-                    "act41side_zone2": [
+                    "act41sre_zone2": [
                         "act41side_ex03",
                         "act41side_ex03#f#",
                         "act41side_ex06",
@@ -62196,7 +62296,7 @@
             },
             "sidestory": {
                 "act41side": {
-                    "act41side_zone1": [
+                    "act41sre_zone1": [
                         "act41side_06",
                         "act41side_08"
                     ]
@@ -62220,7 +62320,7 @@
             },
             "sidestory": {
                 "act41side": {
-                    "act41side_zone2": [
+                    "act41sre_zone2": [
                         "act41side_ex03",
                         "act41side_ex03#f#",
                         "act41side_ex04",
@@ -76949,7 +77049,7 @@
         "enemy_10071_ftprg": {
             "sidestory": {
                 "act41side": {
-                    "act41side_zone1": [
+                    "act41sre_zone1": [
                         "act41side_07",
                         "act41side_07",
                         "act41side_07",
@@ -76971,7 +77071,7 @@
         "enemy_10069_ftlsj_2": {
             "sidestory": {
                 "act41side": {
-                    "act41side_zone2": [
+                    "act41sre_zone2": [
                         "act41side_ex04",
                         "act41side_ex04#f#",
                         "act41side_ex05",
@@ -85160,6 +85260,13 @@
                         "rogue2_b-7"
                     ]
                 }
+            },
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_06"
+                    ]
+                }
             }
         },
         "enemy_1051_norwiz_2": {
@@ -92890,6 +92997,123 @@
                 "act6fun": {
                     "act6fun": [
                         "act6fun_s01"
+                    ]
+                }
+            }
+        },
+        "enemy_5068_iznsbr": {
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_01",
+                        "act7fun_02",
+                        "act7fun_03",
+                        "act7fun_05",
+                        "act7fun_06"
+                    ]
+                }
+            }
+        },
+        "enemy_5070_izuabn": {
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_01",
+                        "act7fun_02",
+                        "act7fun_03",
+                        "act7fun_05",
+                        "act7fun_06"
+                    ]
+                }
+            }
+        },
+        "enemy_5076_izdoc": {
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_01",
+                        "act7fun_02",
+                        "act7fun_06"
+                    ]
+                }
+            }
+        },
+        "enemy_5069_izsdkn": {
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_01",
+                        "act7fun_02",
+                        "act7fun_03",
+                        "act7fun_06"
+                    ]
+                }
+            }
+        },
+        "enemy_5073_izbslm": {
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_03",
+                        "act7fun_05",
+                        "act7fun_06"
+                    ]
+                }
+            }
+        },
+        "enemy_5077_izklst": {
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_04"
+                    ]
+                }
+            }
+        },
+        "enemy_5075_izbear": {
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_04",
+                        "act7fun_06"
+                    ]
+                }
+            }
+        },
+        "enemy_5071_izduph": {
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_04",
+                        "act7fun_06"
+                    ]
+                }
+            }
+        },
+        "enemy_5074_iznhkd": {
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_04"
+                    ]
+                }
+            }
+        },
+        "enemy_5072_izdmge": {
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_05",
+                        "act7fun_06"
+                    ]
+                }
+            }
+        },
+        "enemy_5078_izsvas": {
+            "fun": {
+                "act7fun": {
+                    "act7fun": [
+                        "act7fun_05"
                     ]
                 }
             }
