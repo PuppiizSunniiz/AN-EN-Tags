@@ -248,6 +248,7 @@ def parentheses(desc : str) -> str :
                     
                     r'<@ba\.talpu> \('  : " <@ba.talpu>(",
                     r'\) <\/>'          : ")</> ",
+                    r'\\\\n'            : "\\n",
                     
                     r'(’)'              : "'",
                     r'(。)'             : ". ",
@@ -255,6 +256,7 @@ def parentheses(desc : str) -> str :
                     r'(，|、| +, )'     : ", ",
                     r'(“|”)'            : "\"",
                     
+                    r'：'	            : ": ",
                     r'；'	            : "; ",
                     r'？'               : "? ",
                     r'！'               : "! ",

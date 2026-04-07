@@ -9870,5 +9870,89 @@
                 "desc": "When there are 3 or more enemies in splash area, damage dealt increases to 125% <@ba.talpu>(+5%)</>"
             }
         ]
+    ],
+    "char_1051_headb2": [
+        [
+            {
+                "name": "汹涌怒火",
+                "descCN": "特性溅射造成的物理伤害提升24%, 且溅射到的每个高台对周围四格所有地面敌人造成相当于攻击力24%的物理伤害",
+                "desc": "Increases aftershock damage by 24%, and each high ground hit by aftershock deals 24% ATK as Physical damage to all ground enemies in the 4 adjacent tiles"
+            },
+            {
+                "name": "汹涌怒火",
+                "descCN": "特性溅射造成的物理伤害提升24%, 且溅射到的每个高台对周围四格所有地面敌人造成相当于攻击力27% <@ba.talpu>(+3%)</> 的物理伤害",
+                "desc": "Increases aftershock damage by 24%, and each high ground hit by aftershock deals 27% <@ba.talpu>(+3%)</> ATK as Physical damage to all ground enemies in the 4 adjacent tiles"
+            },
+            {
+                "name": "汹涌怒火",
+                "descCN": "特性溅射造成的物理伤害提升24%, 且溅射到的每个高台对周围四格所有地面敌人造成相当于攻击力24%的物理伤害和0.5秒<$ba.sluggish>停顿</>",
+                "desc": "Increases aftershock damage by 24%, and each high ground hit by aftershock deals 24% ATK as Physical damage to all ground enemies in the 4 adjacent tiles and inflict <$ba.sluggish>Slow</> for 0.5 seconds"
+            },
+            {
+                "name": "汹涌怒火",
+                "descCN": "特性溅射造成的物理伤害提升24%, 且溅射到的每个高台对周围四格所有地面敌人造成相当于攻击力27% <@ba.talpu>(+3%)</> 的物理伤害和0.5秒<$ba.sluggish>停顿</>",
+                "desc": "Increases aftershock damage by 24%, and each high ground hit by aftershock deals 27% <@ba.talpu>(+3%)</> ATK as Physical damage to all ground enemies in the 4 adjacent tiles and inflict <$ba.sluggish>Slow</> for 0.5 seconds"
+            }
+        ],
+        [
+            {
+                "name": "万众巨潮",
+                "descCN": "技能期间所有场上干员攻击力和防御力+14%, [乌萨斯学生自治团] 干员获得加成效果翻倍",
+                "desc": "When skill is activated, all operators gain ATK and DEF +14% for the duration; effect doubles for [Ursus Student Self-Governing Group] Operators."
+            },
+            {
+                "name": "万众巨潮",
+                "descCN": "技能期间所有场上干员攻击力和防御力+18% <@ba.talpu>(+4%)</> , [乌萨斯学生自治团] 干员获得加成效果翻倍",
+                "desc": "When skill is activated, all operators gain ATK and DEF +18% <@ba.talpu>(+4%)</> for the duration; effect doubles for [Ursus Student Self-Governing Group] Operators."
+            }
+        ]
+    ],
+    "char_4223_botany": [
+        [
+            {
+                "name": "背弃沉默",
+                "descCN": "攻击范围内有敌人<$ba.dt.erosion2>侵蚀损伤</>爆发时攻击速度+4, 最多可叠加3层",
+                "desc": "Whenever a <$ba.dt.erosion2>Corrosion</> burst effect is triggered within Botani's attack range, ASPD+4, stacking up to 3 times"
+            },
+            {
+                "name": "背弃沉默",
+                "descCN": "攻击范围内有敌人<$ba.dt.erosion2>侵蚀损伤</>爆发时攻击速度+5 <@ba.talpu>(+1)</> , 最多可叠加3层",
+                "desc": "Whenever a <$ba.dt.erosion2>Corrosion</> burst effect is triggered within Botani's attack range, ASPD+5 <@ba.talpu>(+1)</>, stacking up to 3 times"
+            },
+            {
+                "name": "背弃沉默",
+                "descCN": "攻击范围内有敌人<$ba.dt.erosion2>侵蚀损伤</>爆发时攻击速度+6, 最多可叠加3层",
+                "desc": "Whenever a <$ba.dt.erosion2>Corrosion</> burst effect is triggered within Botani's attack range, ASPD+6, stacking up to 3 times"
+            },
+            {
+                "name": "背弃沉默",
+                "descCN": "攻击范围内有敌人<$ba.dt.erosion2>侵蚀损伤</>爆发时攻击速度+7 <@ba.talpu>(+1)</> , 最多可叠加3层",
+                "desc": "Whenever a <$ba.dt.erosion2>Corrosion</> burst effect is triggered within Botani's attack range, ASPD+7 <@ba.talpu>(+1)</>, stacking up to 3 times"
+            }
+        ]
+    ],
+    "char_4224_turdus": [
+        [
+            {
+                "name": "久病良医",
+                "descCN": "受到自身的跳跃治疗时, 治疗量提升至110%, 并额外进行一次不衰减的治疗跳跃",
+                "desc": "When Ukusik receives healing from self, healing amount increased to 110%, performs an additional healing bounce that does not weaken"
+            },
+            {
+                "name": "久病良医",
+                "descCN": "受到自身的跳跃治疗时, 治疗量提升至115% <@ba.talpu>(+5%)</> , 并额外进行一次不衰减的治疗跳跃",
+                "desc": "When Ukusik receives healing from self, healing amount increased to 115% <@ba.talpu>(+5%)</>, performs an additional healing bounce that does not weaken"
+            },
+            {
+                "name": "久病良医",
+                "descCN": "受到自身的跳跃治疗时, 治疗量提升至120%, 并额外进行一次不衰减的治疗跳跃",
+                "desc": "When Ukusik receives healing from self, healing amount increased to 120%, performs an additional healing bounce that does not weaken"
+            },
+            {
+                "name": "久病良医",
+                "descCN": "受到自身的跳跃治疗时, 治疗量提升至125% <@ba.talpu>(+5%)</> , 并额外进行一次不衰减的治疗跳跃",
+                "desc": "When Ukusik receives healing from self, healing amount increased to 125% <@ba.talpu>(+5%)</>, performs an additional healing bounce that does not weaken"
+            }
+        ]
     ]
 }

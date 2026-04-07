@@ -1167,6 +1167,20 @@
             "note": "new mods spt-y",
             "name": "char_1034_jesca2",
             "code": "uniequip_003_jesca2"
+        },
+        "攻击范围内存在元素损伤爆发的敌人时，技力自然恢复速度+0.2/秒": {
+            "en": "SP recovery +0.2/s when there are enemies under elemental burst effect within range ",
+            "color": "extra",
+            "note": "new mods pri-y",
+            "name": "char_4146_nymph",
+            "code": "uniequip_003_nymph"
+        },
+        "自身技能期间，攻击范围内的友军获得30点物理与法术<$ba.dmgresistance>伤害减免</>": {
+            "en": "During skill duration, allied units in Attack Range gain 30 Physical and Arts <$ba.dmgresistance>Damage reduction</>",
+            "color": "extra",
+            "note": "new mods bar-y",
+            "name": "char_1012_skadi2",
+            "code": "uniequip_003_skadi2"
         }
     },
     "parts": [
