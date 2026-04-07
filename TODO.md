@@ -47,6 +47,11 @@
     - Eyjalt 
     - Jessica
 
+### People, A People
+- 2nd mod Trait
+    - Nymph
+    - Skadi the Corrupting Heart
+
 ### To Do
 - Skin bar too long now (Ling)
 - handle Xiaohei cat

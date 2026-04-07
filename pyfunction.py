@@ -16,10 +16,16 @@ URSUS : dict = {
                     "Зима"          : "Zima",
                     "Истина"        : "Istina",
                     "Позёмка"       : "Pozëmka",
+                    
                     "Роса"          : "Rosa",
+                    
                     "Лето"          : "Leto",
+                    
                     "Снегурочка"    : "Snegurochka",
-                    "Веточки"       : "Vetochki"
+                    "Веточки"       : "Vetochki",
+                    
+                    "Ботани"        : "Botani",
+                    "Укусик"        : "Ukusik"
                 }
 
 def printr(*arg):
