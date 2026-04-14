@@ -94,7 +94,7 @@
             "buffName": "Precise Calculations",
             "skillIcon": "bskill_ctrl_t_limit&spd",
             "desc": "进驻控制中枢时，每个进驻在贸易站的<$cc.g.karlan><@cc.kw>谢拉格</></>干员，订单获取效率<@cc.vdown>-15%</>，订单上限<@cc.vup>+6</>",
-            "description": "When this Operator is assigned to the Control Center, all <$cc.g.karlan><@cc.kw>Karlan Trade</></> Operators assigned to Trading Posts gain order acquisition efficiency <@cc.vdown>-15%</> and order limit <@cc.vup>+6</>"
+            "description": "When this Operator is assigned to the Control Center, all <$cc.g.karlan><@cc.kw>Kjerag</></> Operators assigned to Trading Posts gain order acquisition efficiency <@cc.vdown>-15%</> and order limit <@cc.vup>+6</>"
         },
         "control_tra_limit&spd2[000]": {
             "buffName": "Famiglia Approval",
@@ -103,10 +103,10 @@
             "description": "When this Operator is assigned to the Control Center, all <$cc.g.siracusa><@cc.kw>Siracusa</></> Operators assigned to Trading Posts gain order acquisition efficiency <@cc.vup>+5%</>"
         },
         "control_tra_limit&spd3[000]": {
-            "buffName": "商业版图",
+            "buffName": "Land of Business",
             "skillIcon": "bskill_ctrl_t_limit&spd3",
             "desc": "进驻控制中枢时，每个存在<@cc.vup>3</>名<$cc.g.karlan><@cc.kw>谢拉格</></>干员的贸易站，订单获取效率<@cc.vup>+10%</>",
-            "description": "When this Operator is assigned to the Control Center, Trading Posts with 3 <$cc.g.karlan><@cc.kw>Kjerag</></> Operators assigned, gain order acquisition efficiency <@cc.vup>+10%</>"
+            "description": "When this Operator is assigned to the Control Center, all Trading Posts with <@cc.vup>3</> <$cc.g.karlan><@cc.kw>Kjerag</></> Operators assigned gain order acquisition efficiency <@cc.vup>+10%</>"
         },
         "control_hire_spd[000]": {
             "buffName": "Infectivity",
@@ -304,7 +304,7 @@
             "buffName": "Hidden Mastermind",
             "skillIcon": "bskill_ctrl_karlan",
             "desc": "进驻控制中枢时，控制中枢内每个<$cc.g.karlan><@cc.kw>谢拉格</></>干员可使控制中枢内所有干员的心情每小时恢复<@cc.vup>+0.05</>",
-            "description": "When this Operator is assigned to the Control Center, increases Morale recovery per hour of all Operators in the Control Center by <@cc.vup>+0.05</> for each <$cc.g.karlan><@cc.kw>Karlan Trade</></> Operator assigned to the Control Center"
+            "description": "When this Operator is assigned to the Control Center, increases Morale recovery per hour of all Operators in the Control Center by <@cc.vup>+0.05</> for each <$cc.g.karlan><@cc.kw>Kjerag</></> Operator assigned to the Control Center"
         },
         "control_mp_cost&faction[900]": {
             "buffName": "Alternate Operator",
@@ -673,13 +673,13 @@
             "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+10%</>"
         },
         "power_rec_spd[008]": {
-            "buffName": "澎湃紊流",
+            "buffName": "Surging Tunes",
             "skillIcon": "bskill_pow_spd1",
             "desc": "进驻发电站时，无人机充能速度<@cc.vup>+10%</>",
             "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+10%</>"
         },
         "power_rec_spd[009]": {
-            "buffName": "澎湃紊流",
+            "buffName": "Surging Tunes",
             "skillIcon": "bskill_pow_spd2",
             "desc": "进驻发电站时，无人机充能速度<@cc.vup>+15%</>",
             "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+15%</>"
@@ -865,10 +865,10 @@
             "description": "When this Operator is assigned to a Factory, all <$cc.sk.manu2><@cc.kw>Rhine Lab</></> and <$cc.sk.manu3><@cc.kw>Pinus Sylvestris</></> skills in the Factory are considered <@cc.kw>Standardization</> skills"
         },
         "manu_skill_limit[000]": {
-            "buffName": "勘探背包",
+            "buffName": "Explorer's Backpack",
             "skillIcon": "bskill_man_limit1",
             "desc": "进驻制造站时，当前制造站内每个<$cc.sk.manu2><@cc.kw>莱茵科技类</></>技能为自身<@cc.vup>+5</>的仓库上限容量",
-            "description": "When this Operator is assigned to a Factory, all <$cc.sk.manu2><@cc.kw>Rhine Tech-type Skill</></> skills in the Factory, capacity limit <@cc.vup>+5</>"
+            "description": "When this Operator is assigned to a Factory, gain <@cc.vup>+5</> Storage Capacity for each <$cc.sk.manu2><@cc.kw>Rhine Tech-type</></> skill in that Factory"
         },
         "manu_prod_bd[000]": {
             "buffName": "Silent and Hardworking",
@@ -1063,13 +1063,13 @@
             "description": "When this Operator is assigned to a Factory, Productivity <@cc.vup>+20%</> and Morale consumed per hour <@cc.vdown>+0.25</>"
         },
         "manu_prod_spd&limit&cost[101]": {
-            "buffName": "虔信",
+            "buffName": "Piety",
             "skillIcon": "bskill_man_spd&cost2",
             "desc": "进驻制造站时，生产力<@cc.vup>+20%</>，心情每小时消耗<@cc.vdown>+0.25</>",
             "description": "When this Operator is assigned to a Factory, Productivity <@cc.vup>+20%</> and Morale consumed per hour <@cc.vdown>+0.25</>"
         },
         "manu_prod_spd&limit&cost[110]": {
-            "buffName": "独当一面",
+            "buffName": "Taking Responsibility",
             "skillIcon": "bskill_man_spd&cost3",
             "desc": "进驻制造站时，生产力<@cc.vup>+30%</>，心情每小时消耗<@cc.vdown>+0.25</>",
             "description": "When this Operator is assigned to a Factory, Productivity <@cc.vup>+30%</> and Morale consumed per hour <@cc.vdown>+0.25</>"
@@ -2953,13 +2953,13 @@
             "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Medic</> Operators' Specialization training speed <@cc.vup>+30%</>"
         },
         "train_spd&profession2[321]": {
-            "buffName": "近卫专精·α",
+            "buffName": "Guard Expert α",
             "skillIcon": "bskill_train_guard1",
             "desc": "进驻训练室协助位时，<@cc.kw>近卫</>干员的专精技能训练速度<@cc.vup>+30%</>",
             "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Guard</> Operators' Specialization training speed <@cc.vup>+30%</>"
         },
         "train_spd&profession2[322]": {
-            "buffName": "勇气传承",
+            "buffName": "Legacy of Courage",
             "skillIcon": "bskill_train3_guard1",
             "desc": "进驻训练室协助位时，<@cc.kw>近卫</>干员的专精技能训练速度<@cc.vup>+30%</>，如果本次训练专精技能至<@cc.vup>3</>级，则训练速度额外<@cc.vup>+45%</>",
             "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Guard</> Operators' Specialization training speed <@cc.vup>+30%</>; if training this skill to Specialization Level <@cc.vup>3</>, training speed will be further increased by <@cc.vup>+45%</>"
@@ -3019,16 +3019,16 @@
             "description": "When this Operator is assigned to be the Trainer in the Training Room, increases the Specialization training speed of <@cc.kw>Caster</> Operators by <@cc.vup>+30%</>, and further increases this speed by <@cc.vup>+45%</> if training the skill to Specialization Level <@cc.vup>1</>"
         },
         "train_spd&profession2[111]": {
-            "buffName": "先锋专精·α",
+            "buffName": "Vanguard Expert α",
             "skillIcon": "bskill_train_spd&profession2",
             "desc": "进驻训练室协助位时，<@cc.kw>先锋</>干员的专精技能训练速度<@cc.vup>+30%</>",
             "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Vanguard</> Operators' Specialization training speed <@cc.vup>+30%</>"
         },
         "train_spd&profession2[112]": {
-            "buffName": "先驱者共识",
+            "buffName": "Trailblazers' Consensus",
             "skillIcon": "bskill_train_spd&profession2",
             "desc": "进驻训练室协助位时，<@cc.kw>先锋</>干员的专精技能训练速度<@cc.vup>+30%</>，如果本次训练专精技能至<@cc.vup>3</>级，则训练速度额外<@cc.vup>+50%</>",
-            "description": "When this Operator is assigned to be the Trainer in the Training Room, increases the Specialization training speed of <@cc.kw>Vanguard</> Operators by <@cc.vup>+30%</>, and further increases this speed by <@cc.vup>+50%</> if training the skill to Specialization Level <@cc.vup>3</>"
+            "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Vanguard</> Operators' Specialization training speed <@cc.vup>+30%</>; if training this skill to Specialization Level <@cc.vup>3</>, training speed will be further increased by <@cc.vup>+50%</>"
         },
         "train_spd&profession2[180]": {
             "buffName": "Trap Focus",
@@ -3187,7 +3187,7 @@
             "description": "When this Operator is assigned to a Dormitory, increases own Morale restored per hour by <@cc.vup>+0.7</>; If there are other Operators in that Dormitory, further increases own Morale restored per hour by <@cc.vup>+0.05</> for each additional Operator."
         },
         "dorm_rec_oneself2[001]": {
-            "buffName": "赋格融汇",
+            "buffName": "Fugue Amalgamation",
             "skillIcon": "bskill_dorm_one",
             "desc": "进驻宿舍时，自身心情每小时恢复<@cc.vup>+0.7</>；如果该宿舍内有其他干员，则每人额外为自身心情每小时恢复<@cc.vup>+0.05</>",
             "description": "When this Operator is assigned to a Dormitory, increases own Morale restored per hour by <@cc.vup>+0.7</>; If there are other Operators in that Dormitory, further increases own Morale restored per hour by <@cc.vup>+0.05</> for each additional Operator."
@@ -3769,16 +3769,16 @@
             "description": "When this Operator is assigned to the HR Office, <@cc.vup>+10%</> HR contacting speed for every Recruit slot other than the initial slot"
         },
         "hire_spd_cost&char[000]": {
-            "buffName": "圣女声望",
+            "buffName": "Saintess's Prestige",
             "skillIcon": "bskill_hire_spd&cost7",
             "desc": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+20%</>，心情每小时消耗<@cc.vup>-0.25</>",
             "description": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+20%</>, Morale consumed per hour <@cc.vup>-0.25</>"
         },
         "hire_spd_cost&char[001]": {
-            "buffName": "雪境归心",
+            "buffName": "Yearning for the Snow Realm",
             "skillIcon": "bskill_hire_spd&char1",
             "desc": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+35%</>，心情每小时消耗<@cc.vup>-0.25</>，如果<@cc.kw>凛御银灰</>进驻在<@cc.kw>控制中枢</>，则人脉资源的联络速度额外<@cc.vup>+10%</>",
-            "description": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+35%</> and Morale consumed per hour <@cc.vup>-0.25</>. if <@cc.kw>SilverAsh the Reignfrost</> is assigned to the <@cc.kw>Control Center</>, increase contacting speed by an additional <@cc.vup>+10%</>"
+            "description": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+35%</>, Morale consumed per hour <@cc.vup>-0.25</>; if <@cc.kw>SilverAsh the Reignfrost</> is assigned to the <@cc.kw>Control Center</>, HR contacting speed increases by a further <@cc.vup>+10%</>"
         },
         "hire_spd&clue[010]": {
             "buffName": "Catastrophe Messenger α",

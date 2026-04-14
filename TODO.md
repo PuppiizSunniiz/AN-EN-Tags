@@ -1,16 +1,4 @@
 # Fix TL (Official EN) waiting room
-### Retracing Our Steps 1101
-- Effect
-    - Mercenary - Equipment Response ? (ba.alter)
-- Trait
-    - AFT-Y (Vina edition)
-    - AST-X Arts Pro
-    - ISW-a
-        - Gnosis
-        - Ho'ol
-    - Mercenary
-    - Eye of the Snowstorm
-
 ### Stronghold Protocol - Alliance
 - Effect
     - ba.weaknessatk

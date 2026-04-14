@@ -5480,6 +5480,134 @@
             "name": "一千年后",
             "Event": "act51side"
         },
+        "act51side_ex01": {
+            "stageId": "act51side_ex01",
+            "levelId": "Activities/act51side/level_act51side_ex01",
+            "zoneId": "act51side_zone2",
+            "code": "PA-EX-1",
+            "name": "在底层",
+            "Event": "act51side"
+        },
+        "act51side_ex01#f#": {
+            "stageId": "act51side_ex01#f#",
+            "levelId": "Activities/act51side/level_act51side_ex01",
+            "zoneId": "act51side_zone2",
+            "code": "PA-EX-1",
+            "name": "在底层",
+            "Event": "act51side"
+        },
+        "act51side_ex02": {
+            "stageId": "act51side_ex02",
+            "levelId": "Activities/act51side/level_act51side_ex02",
+            "zoneId": "act51side_zone2",
+            "code": "PA-EX-2",
+            "name": "活尸",
+            "Event": "act51side"
+        },
+        "act51side_ex02#f#": {
+            "stageId": "act51side_ex02#f#",
+            "levelId": "Activities/act51side/level_act51side_ex02",
+            "zoneId": "act51side_zone2",
+            "code": "PA-EX-2",
+            "name": "活尸",
+            "Event": "act51side"
+        },
+        "act51side_ex03": {
+            "stageId": "act51side_ex03",
+            "levelId": "Activities/act51side/level_act51side_ex03",
+            "zoneId": "act51side_zone2",
+            "code": "PA-EX-3",
+            "name": "母亲",
+            "Event": "act51side"
+        },
+        "act51side_ex03#f#": {
+            "stageId": "act51side_ex03#f#",
+            "levelId": "Activities/act51side/level_act51side_ex03",
+            "zoneId": "act51side_zone2",
+            "code": "PA-EX-3",
+            "name": "母亲",
+            "Event": "act51side"
+        },
+        "act51side_ex04": {
+            "stageId": "act51side_ex04",
+            "levelId": "Activities/act51side/level_act51side_ex04",
+            "zoneId": "act51side_zone2",
+            "code": "PA-EX-4",
+            "name": "长子",
+            "Event": "act51side"
+        },
+        "act51side_ex04#f#": {
+            "stageId": "act51side_ex04#f#",
+            "levelId": "Activities/act51side/level_act51side_ex04",
+            "zoneId": "act51side_zone2",
+            "code": "PA-EX-4",
+            "name": "长子",
+            "Event": "act51side"
+        },
+        "act51side_ex05": {
+            "stageId": "act51side_ex05",
+            "levelId": "Activities/act51side/level_act51side_ex05",
+            "zoneId": "act51side_zone2",
+            "code": "PA-EX-5",
+            "name": "三姐妹",
+            "Event": "act51side"
+        },
+        "act51side_ex05#f#": {
+            "stageId": "act51side_ex05#f#",
+            "levelId": "Activities/act51side/level_act51side_ex05",
+            "zoneId": "act51side_zone2",
+            "code": "PA-EX-5",
+            "name": "三姐妹",
+            "Event": "act51side"
+        },
+        "act51side_ex06": {
+            "stageId": "act51side_ex06",
+            "levelId": "Activities/act51side/level_act51side_ex06",
+            "zoneId": "act51side_zone2",
+            "code": "PA-EX-6",
+            "name": "钦差大臣",
+            "Event": "act51side"
+        },
+        "act51side_ex06#f#": {
+            "stageId": "act51side_ex06#f#",
+            "levelId": "Activities/act51side/level_act51side_ex06",
+            "zoneId": "act51side_zone2",
+            "code": "PA-EX-6",
+            "name": "钦差大臣",
+            "Event": "act51side"
+        },
+        "act51side_ex07": {
+            "stageId": "act51side_ex07",
+            "levelId": "Activities/act51side/level_act51side_ex07",
+            "zoneId": "act51side_zone2",
+            "code": "PA-EX-7",
+            "name": "乐观的悲剧",
+            "Event": "act51side"
+        },
+        "act51side_ex07#f#": {
+            "stageId": "act51side_ex07#f#",
+            "levelId": "Activities/act51side/level_act51side_ex07",
+            "zoneId": "act51side_zone2",
+            "code": "PA-EX-7",
+            "name": "乐观的悲剧",
+            "Event": "act51side"
+        },
+        "act51side_ex08": {
+            "stageId": "act51side_ex08",
+            "levelId": "Activities/act51side/level_act51side_ex08",
+            "zoneId": "act51side_zone2",
+            "code": "PA-EX-8",
+            "name": "樱桃园",
+            "Event": "act51side"
+        },
+        "act51side_ex08#f#": {
+            "stageId": "act51side_ex08#f#",
+            "levelId": "Activities/act51side/level_act51side_ex08",
+            "zoneId": "act51side_zone2",
+            "code": "PA-EX-8",
+            "name": "樱桃园",
+            "Event": "act51side"
+        },
         "act20mini_01": {
             "stageId": "act20mini_01",
             "levelId": "Activities/act20mini/level_act20mini_01",
@@ -6613,7 +6741,7 @@
             "levelId": "Activities/act46side/level_act46side_tr01",
             "zoneId": "act46side_zone1",
             "code": "OS-TR-1",
-            "name": "第一片雪",
+            "name": "First Snow",
             "Event": "act46side"
         },
         "act46side_01": {
@@ -6621,7 +6749,7 @@
             "levelId": "Activities/act46side/level_act46side_01",
             "zoneId": "act46side_zone1",
             "code": "OS-1",
-            "name": "呼号声中",
+            "name": "Amidst the Wailing",
             "Event": "act46side"
         },
         "act46side_02": {
@@ -6629,7 +6757,7 @@
             "levelId": "Activities/act46side/level_act46side_02",
             "zoneId": "act46side_zone1",
             "code": "OS-2",
-            "name": "甜蜜的邻人",
+            "name": "Lovely Neighbors",
             "Event": "act46side"
         },
         "act46side_03": {
@@ -6637,7 +6765,7 @@
             "levelId": "Activities/act46side/level_act46side_03",
             "zoneId": "act46side_zone1",
             "code": "OS-3",
-            "name": "雪灌木中",
+            "name": "Among Snowy Shrubs",
             "Event": "act46side"
         },
         "act46side_04": {
@@ -6645,7 +6773,7 @@
             "levelId": "Activities/act46side/level_act46side_04",
             "zoneId": "act46side_zone1",
             "code": "OS-4",
-            "name": "并蒂生",
+            "name": "Conjoined Lives",
             "Event": "act46side"
         },
         "act46side_05": {
@@ -6653,7 +6781,7 @@
             "levelId": "Activities/act46side/level_act46side_05",
             "zoneId": "act46side_zone1",
             "code": "OS-5",
-            "name": "雪夜独行",
+            "name": "A Lonely Winter's Night",
             "Event": "act46side"
         },
         "act46side_06": {
@@ -6661,7 +6789,7 @@
             "levelId": "Activities/act46side/level_act46side_06",
             "zoneId": "act46side_zone1",
             "code": "OS-6",
-            "name": "绿翡翠",
+            "name": "Emerald",
             "Event": "act46side"
         },
         "act46side_07": {
@@ -6669,7 +6797,7 @@
             "levelId": "Activities/act46side/level_act46side_07",
             "zoneId": "act46side_zone1",
             "code": "OS-7",
-            "name": "焚心灼影",
+            "name": "Incense and Shadows",
             "Event": "act46side"
         },
         "act46side_08": {
@@ -6677,7 +6805,7 @@
             "levelId": "Activities/act46side/level_act46side_08",
             "zoneId": "act46side_zone1",
             "code": "OS-8",
-            "name": "宣告在途",
+            "name": "Proclamation",
             "Event": "act46side"
         },
         "act46side_09": {
@@ -6685,7 +6813,7 @@
             "levelId": "Activities/act46side/level_act46side_09",
             "zoneId": "act46side_zone1",
             "code": "OS-9",
-            "name": "凛刃出匣",
+            "name": "Cold Steel",
             "Event": "act46side"
         },
         "act46side_10": {
@@ -6693,7 +6821,7 @@
             "levelId": "Activities/act46side/level_act46side_10",
             "zoneId": "act46side_zone1",
             "code": "OS-10",
-            "name": "耶拉冈德在上",
+            "name": "By Kjeragandr",
             "Event": "act46side"
         },
         "act46side_ex01": {
@@ -6701,7 +6829,7 @@
             "levelId": "Activities/act46side/level_act46side_ex01",
             "zoneId": "act46side_zone2",
             "code": "OS-EX-1",
-            "name": "饮净水",
+            "name": "Pure Springs",
             "Event": "act46side"
         },
         "act46side_ex01#f#": {
@@ -6709,7 +6837,7 @@
             "levelId": "Activities/act46side/level_act46side_ex01",
             "zoneId": "act46side_zone2",
             "code": "OS-EX-1",
-            "name": "饮净水",
+            "name": "Pure Springs",
             "Event": "act46side"
         },
         "act46side_ex02": {
@@ -6717,7 +6845,7 @@
             "levelId": "Activities/act46side/level_act46side_ex02",
             "zoneId": "act46side_zone2",
             "code": "OS-EX-2",
-            "name": "敬友邻",
+            "name": "Friendly Neighbors",
             "Event": "act46side"
         },
         "act46side_ex02#f#": {
@@ -6725,7 +6853,7 @@
             "levelId": "Activities/act46side/level_act46side_ex02",
             "zoneId": "act46side_zone2",
             "code": "OS-EX-2",
-            "name": "敬友邻",
+            "name": "Friendly Neighbors",
             "Event": "act46side"
         },
         "act46side_ex03": {
@@ -6733,7 +6861,7 @@
             "levelId": "Activities/act46side/level_act46side_ex03",
             "zoneId": "act46side_zone2",
             "code": "OS-EX-3",
-            "name": "御外敌",
+            "name": "Foreign Foes",
             "Event": "act46side"
         },
         "act46side_ex03#f#": {
@@ -6741,7 +6869,7 @@
             "levelId": "Activities/act46side/level_act46side_ex03",
             "zoneId": "act46side_zone2",
             "code": "OS-EX-3",
-            "name": "御外敌",
+            "name": "Foreign Foes",
             "Event": "act46side"
         },
         "act46side_ex04": {
@@ -6749,7 +6877,7 @@
             "levelId": "Activities/act46side/level_act46side_ex04",
             "zoneId": "act46side_zone2",
             "code": "OS-EX-4",
-            "name": "熟食而止",
+            "name": "Secret of Cooking",
             "Event": "act46side"
         },
         "act46side_ex04#f#": {
@@ -6757,7 +6885,7 @@
             "levelId": "Activities/act46side/level_act46side_ex04",
             "zoneId": "act46side_zone2",
             "code": "OS-EX-4",
-            "name": "熟食而止",
+            "name": "Secret of Cooking",
             "Event": "act46side"
         },
         "act46side_ex05": {
@@ -6765,7 +6893,7 @@
             "levelId": "Activities/act46side/level_act46side_ex05",
             "zoneId": "act46side_zone2",
             "code": "OS-EX-5",
-            "name": "皮毛加身",
+            "name": "Secret of Furs",
             "Event": "act46side"
         },
         "act46side_ex05#f#": {
@@ -6773,7 +6901,7 @@
             "levelId": "Activities/act46side/level_act46side_ex05",
             "zoneId": "act46side_zone2",
             "code": "OS-EX-5",
-            "name": "皮毛加身",
+            "name": "Secret of Furs",
             "Event": "act46side"
         },
         "act46side_ex06": {
@@ -6781,7 +6909,7 @@
             "levelId": "Activities/act46side/level_act46side_ex06",
             "zoneId": "act46side_zone2",
             "code": "OS-EX-6",
-            "name": "顺时耕作",
+            "name": "Secret of Farming",
             "Event": "act46side"
         },
         "act46side_ex06#f#": {
@@ -6789,7 +6917,7 @@
             "levelId": "Activities/act46side/level_act46side_ex06",
             "zoneId": "act46side_zone2",
             "code": "OS-EX-6",
-            "name": "顺时耕作",
+            "name": "Secret of Farming",
             "Event": "act46side"
         },
         "act46side_ex07": {
@@ -6797,7 +6925,7 @@
             "levelId": "Activities/act46side/level_act46side_ex07",
             "zoneId": "act46side_zone2",
             "code": "OS-EX-7",
-            "name": "以石取石",
+            "name": "Stone from Stone",
             "Event": "act46side"
         },
         "act46side_ex07#f#": {
@@ -6805,7 +6933,7 @@
             "levelId": "Activities/act46side/level_act46side_ex07",
             "zoneId": "act46side_zone2",
             "code": "OS-EX-7",
-            "name": "以石取石",
+            "name": "Stone from Stone",
             "Event": "act46side"
         },
         "act46side_ex08": {
@@ -6813,7 +6941,7 @@
             "levelId": "Activities/act46side/level_act46side_ex08",
             "zoneId": "act46side_zone2",
             "code": "OS-EX-8",
-            "name": "以人的名",
+            "name": "In the Name of Man",
             "Event": "act46side"
         },
         "act46side_ex08#f#": {
@@ -6821,7 +6949,7 @@
             "levelId": "Activities/act46side/level_act46side_ex08",
             "zoneId": "act46side_zone2",
             "code": "OS-EX-8",
-            "name": "以人的名",
+            "name": "In the Name of Man",
             "Event": "act46side"
         },
         "act46side_s01": {
@@ -6829,7 +6957,7 @@
             "levelId": "Activities/act46side/level_act46side_sub-1-1",
             "zoneId": "act46side_zone3",
             "code": "OS-S-1",
-            "name": "打雪仗",
+            "name": "Snowfight",
             "Event": "act46side"
         },
         "act46side_s01#f#": {
@@ -6837,7 +6965,7 @@
             "levelId": "Activities/act46side/level_act46side_sub-1-1",
             "zoneId": "act46side_zone3",
             "code": "OS-S-1",
-            "name": "打雪仗",
+            "name": "Snowfight",
             "Event": "act46side"
         },
         "act46side_s02": {
@@ -6845,7 +6973,7 @@
             "levelId": "Activities/act46side/level_act46side_sub-1-2",
             "zoneId": "act46side_zone3",
             "code": "OS-S-2",
-            "name": "堆雪人",
+            "name": "Build a Snowman",
             "Event": "act46side"
         },
         "act46side_s02#f#": {
@@ -6853,7 +6981,7 @@
             "levelId": "Activities/act46side/level_act46side_sub-1-2",
             "zoneId": "act46side_zone3",
             "code": "OS-S-2",
-            "name": "堆雪人",
+            "name": "Build a Snowman",
             "Event": "act46side"
         },
         "act46side_s03": {
@@ -6861,7 +6989,7 @@
             "levelId": "Activities/act46side/level_act46side_sub-1-3",
             "zoneId": "act46side_zone3",
             "code": "OS-S-3",
-            "name": "雪孩子",
+            "name": "Snowchild",
             "Event": "act46side"
         },
         "act46side_s03#f#": {
@@ -6869,7 +6997,7 @@
             "levelId": "Activities/act46side/level_act46side_sub-1-3",
             "zoneId": "act46side_zone3",
             "code": "OS-S-3",
-            "name": "雪孩子",
+            "name": "Snowchild",
             "Event": "act46side"
         },
         "act46side_s04": {
@@ -6877,7 +7005,7 @@
             "levelId": "Activities/act46side/level_act46side_sub-1-4",
             "zoneId": "act46side_zone3",
             "code": "OS-S-4",
-            "name": "雪中歌谣",
+            "name": "Rimehymn",
             "Event": "act46side"
         },
         "act46side_s04#f#": {
@@ -6885,7 +7013,7 @@
             "levelId": "Activities/act46side/level_act46side_sub-1-4",
             "zoneId": "act46side_zone3",
             "code": "OS-S-4",
-            "name": "雪中歌谣",
+            "name": "Rimehymn",
             "Event": "act46side"
         },
         "act46side_s05": {
@@ -6893,7 +7021,7 @@
             "levelId": "Activities/act46side/level_act46side_sub-1-5",
             "zoneId": "act46side_zone3",
             "code": "OS-S-5",
-            "name": "雪与我与雪",
+            "name": "Snow and I and Snow",
             "Event": "act46side"
         },
         "act46side_s05#f#": {
@@ -6901,7 +7029,7 @@
             "levelId": "Activities/act46side/level_act46side_sub-1-5",
             "zoneId": "act46side_zone3",
             "code": "OS-S-5",
-            "name": "雪与我与雪",
+            "name": "Snow and I and Snow",
             "Event": "act46side"
         },
         "main_16-01": {
@@ -30821,6 +30949,24 @@
             "act51side_07",
             "act51side_08"
         ],
+        "act51side_zone2": [
+            "act51side_ex01",
+            "act51side_ex01#f#",
+            "act51side_ex02",
+            "act51side_ex02#f#",
+            "act51side_ex03",
+            "act51side_ex03#f#",
+            "act51side_ex04",
+            "act51side_ex04#f#",
+            "act51side_ex05",
+            "act51side_ex05#f#",
+            "act51side_ex06",
+            "act51side_ex06#f#",
+            "act51side_ex07",
+            "act51side_ex07#f#",
+            "act51side_ex08",
+            "act51side_ex08#f#"
+        ],
         "act20mini_zone1": [
             "act20mini_01",
             "act20mini_01#f#",
@@ -34873,7 +35019,8 @@
             "weekly_4"
         ],
         "act51side": [
-            "act51side_zone1"
+            "act51side_zone1",
+            "act51side_zone2"
         ],
         "act20mini": [
             "act20mini_zone1"
@@ -63649,6 +63796,20 @@
                         "act51side_06",
                         "act51side_07",
                         "act51side_08"
+                    ],
+                    "act51side_zone2": [
+                        "act51side_ex01",
+                        "act51side_ex01#f#",
+                        "act51side_ex04",
+                        "act51side_ex04#f#",
+                        "act51side_ex05",
+                        "act51side_ex05#f#",
+                        "act51side_ex06",
+                        "act51side_ex06#f#",
+                        "act51side_ex07",
+                        "act51side_ex07#f#",
+                        "act51side_ex08",
+                        "act51side_ex08#f#"
                     ]
                 }
             }
@@ -63669,6 +63830,10 @@
                         "act51side_03",
                         "act51side_04",
                         "act51side_06"
+                    ],
+                    "act51side_zone2": [
+                        "act51side_ex07",
+                        "act51side_ex07#f#"
                     ]
                 }
             }
@@ -63712,6 +63877,10 @@
                     "act51side_zone1": [
                         "act51side_06",
                         "act51side_07"
+                    ],
+                    "act51side_zone2": [
+                        "act51side_ex07",
+                        "act51side_ex07#f#"
                     ]
                 }
             }
@@ -63730,6 +63899,10 @@
                 "act51side": {
                     "act51side_zone1": [
                         "act51side_08"
+                    ],
+                    "act51side_zone2": [
+                        "act51side_ex08",
+                        "act51side_ex08#f#"
                     ]
                 }
             }
@@ -63739,6 +63912,128 @@
                 "act51side": {
                     "act51side_zone1": [
                         "act51side_08"
+                    ],
+                    "act51side_zone2": [
+                        "act51side_ex08",
+                        "act51side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10193_ubhh_2": {
+            "sidestory": {
+                "act51side": {
+                    "act51side_zone2": [
+                        "act51side_ex01",
+                        "act51side_ex01#f#",
+                        "act51side_ex02",
+                        "act51side_ex02#f#",
+                        "act51side_ex03",
+                        "act51side_ex03#f#",
+                        "act51side_ex04",
+                        "act51side_ex04#f#",
+                        "act51side_ex05",
+                        "act51side_ex05#f#",
+                        "act51side_ex06",
+                        "act51side_ex06#f#",
+                        "act51side_ex07",
+                        "act51side_ex07#f#",
+                        "act51side_ex08",
+                        "act51side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10194_ubdg_2": {
+            "sidestory": {
+                "act51side": {
+                    "act51side_zone2": [
+                        "act51side_ex01",
+                        "act51side_ex01#f#",
+                        "act51side_ex02",
+                        "act51side_ex02#f#",
+                        "act51side_ex04",
+                        "act51side_ex04#f#",
+                        "act51side_ex08",
+                        "act51side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10196_ubba_2": {
+            "sidestory": {
+                "act51side": {
+                    "act51side_zone2": [
+                        "act51side_ex01",
+                        "act51side_ex01#f#",
+                        "act51side_ex03",
+                        "act51side_ex03#f#",
+                        "act51side_ex04",
+                        "act51side_ex04#f#",
+                        "act51side_ex05",
+                        "act51side_ex05#f#",
+                        "act51side_ex06",
+                        "act51side_ex06#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10199_ubhb_2": {
+            "sidestory": {
+                "act51side": {
+                    "act51side_zone2": [
+                        "act51side_ex02",
+                        "act51side_ex02#f#",
+                        "act51side_ex06",
+                        "act51side_ex06#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10197_ublyb_2": {
+            "sidestory": {
+                "act51side": {
+                    "act51side_zone2": [
+                        "act51side_ex02",
+                        "act51side_ex02#f#",
+                        "act51side_ex03",
+                        "act51side_ex03#f#",
+                        "act51side_ex05",
+                        "act51side_ex05#f#",
+                        "act51side_ex06",
+                        "act51side_ex06#f#",
+                        "act51side_ex07",
+                        "act51side_ex07#f#",
+                        "act51side_ex08",
+                        "act51side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10195_ubsb_2": {
+            "sidestory": {
+                "act51side": {
+                    "act51side_zone2": [
+                        "act51side_ex02",
+                        "act51side_ex02#f#",
+                        "act51side_ex03",
+                        "act51side_ex03#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10198_ubjxs_2": {
+            "sidestory": {
+                "act51side": {
+                    "act51side_zone2": [
+                        "act51side_ex04",
+                        "act51side_ex04#f#",
+                        "act51side_ex06",
+                        "act51side_ex06#f#",
+                        "act51side_ex07",
+                        "act51side_ex07#f#",
+                        "act51side_ex08",
+                        "act51side_ex08#f#"
                     ]
                 }
             }
