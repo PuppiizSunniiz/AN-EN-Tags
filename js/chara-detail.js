@@ -6119,6 +6119,7 @@
                         }else if(SpineVersion.slice(0,3) == "3.5"){
                             new spine.SpineWidget("spine-widget", config)
                         }
+                        attempt = 0
                     }
                 }else{
                     if (attempt == 2) {
