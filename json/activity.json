@@ -1,5 +1,10 @@
 {
     "Dict": {
+        "act3enemyduel": {
+            "nameCN": "争锋频道：绿藤城",
+            "nameEN": "Duel Channel: Ivy Vine",
+            "startCN": 1777123800
+        },
         "act51side": {
             "nameCN": "人们，我们",
             "nameEN": "People, A People",
@@ -12,7 +17,7 @@
         },
         "act2autochess": {
             "nameCN": "卫戍协议:盟约",
-            "nameEN": "Stronghold Protocol - Alliance",
+            "nameEN": "Stronghold Protocol: Alliance",
             "startCN": 1773475200
         },
         "act20mini": {
@@ -57,7 +62,7 @@
         },
         "act1autochess": {
             "nameCN": "卫戍协议:盟约",
-            "nameEN": "Stronghold Protocol - Alliance",
+            "nameEN": "Stronghold Protocol: Alliance",
             "startCN": 1763107200
         },
         "act38sre": {
@@ -977,13 +982,18 @@
         },
         "camp_r_30": {
             "nameCN": "暗流巢窟 ",
-            "nameEN": "暗流巢窟 ",
+            "nameEN": "Undercurrent Nest ",
             "startCN": 1761508800
         },
         "camp_r_31": {
             "nameCN": "炽灼车间",
             "nameEN": "炽灼车间",
             "startCN": 1770580800
+        },
+        "camp_r_32": {
+            "nameCN": "朱墙食府",
+            "nameEN": "朱墙食府",
+            "startCN": 1777233600
         },
         "tower_tr_01": {
             "nameCN": "7号训练场",
@@ -2214,7 +2224,7 @@
         ],
         [
             "camp_r_30",
-            "暗流巢窟 ",
+            "Undercurrent Nest ",
             1761508800
         ],
         [
@@ -2224,7 +2234,7 @@
         ],
         [
             "act1autochess",
-            "Stronghold Protocol - Alliance",
+            "Stronghold Protocol: Alliance",
             1763107200
         ],
         [
@@ -2279,7 +2289,7 @@
         ],
         [
             "act2autochess",
-            "Stronghold Protocol - Alliance",
+            "Stronghold Protocol: Alliance",
             1773475200
         ],
         [
@@ -2296,6 +2306,16 @@
             "act51side",
             "People, A People",
             1775516400
+        ],
+        [
+            "act3enemyduel",
+            "Duel Channel: Ivy Vine",
+            1777123800
+        ],
+        [
+            "camp_r_32",
+            "朱墙食府",
+            1777233600
         ]
     ]
 }

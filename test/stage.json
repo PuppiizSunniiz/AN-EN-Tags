@@ -5408,6 +5408,14 @@
             "name": "Assault",
             "Event": "weekly_4"
         },
+        "act3enemyduel_01a": {
+            "stageId": "act3enemyduel_01a",
+            "levelId": "Activities/act3enemyduel/level_act3enemyduel_01a",
+            "zoneId": "act3enemyduel_zone1",
+            "code": "VS-1",
+            "name": "争锋对决！",
+            "Event": "act3enemyduel"
+        },
         "act51side_01": {
             "stageId": "act51side_01",
             "levelId": "Activities/act51side/level_act51side_01",
@@ -22445,7 +22453,7 @@
             "levelId": "Activities/ACT1AUTOCHESS/level_act1autochess_m01",
             "zoneId": "act1autochess_zone1",
             "code": null,
-            "name": null,
+            "name": "AC-3",
             "Event": "act1autochess"
         },
         "act1autochess_m02": {
@@ -22453,7 +22461,7 @@
             "levelId": "Activities/ACT1AUTOCHESS/level_act1autochess_m02",
             "zoneId": "act1autochess_zone1",
             "code": null,
-            "name": null,
+            "name": "AC-4",
             "Event": "act1autochess"
         },
         "act1autochess_m03": {
@@ -22461,7 +22469,7 @@
             "levelId": "Activities/ACT1AUTOCHESS/level_act1autochess_m03",
             "zoneId": "act1autochess_zone1",
             "code": null,
-            "name": null,
+            "name": "AC-5",
             "Event": "act1autochess"
         },
         "act1autochess_m04": {
@@ -22469,7 +22477,7 @@
             "levelId": "Activities/ACT1AUTOCHESS/level_act1autochess_m04",
             "zoneId": "act1autochess_zone1",
             "code": null,
-            "name": null,
+            "name": "AC-6",
             "Event": "act1autochess"
         },
         "act1autochess_m05": {
@@ -22477,7 +22485,7 @@
             "levelId": "Activities/ACT1AUTOCHESS/level_act1autochess_m05",
             "zoneId": "act1autochess_zone1",
             "code": null,
-            "name": null,
+            "name": "AC-7",
             "Event": "act1autochess"
         },
         "act1autochess_m06": {
@@ -22485,7 +22493,7 @@
             "levelId": "Activities/ACT1AUTOCHESS/level_act1autochess_m06",
             "zoneId": "act1autochess_zone1",
             "code": null,
-            "name": null,
+            "name": "AC-8",
             "Event": "act1autochess"
         },
         "act1autochess_m07": {
@@ -22493,7 +22501,7 @@
             "levelId": "Activities/ACT1AUTOCHESS/level_act1autochess_m07",
             "zoneId": "act1autochess_zone1",
             "code": null,
-            "name": null,
+            "name": "AC-9",
             "Event": "act1autochess"
         },
         "act2autochess_m01": {
@@ -22789,7 +22797,7 @@
             "levelId": "Obt/Campaign/level_camp_r_30",
             "zoneId": "camp_r_30",
             "code": "camp_r_30",
-            "name": "暗流巢窟 ",
+            "name": "Undercurrent Nest ",
             "Event": "camp_r_30"
         },
         "camp_r_31": {
@@ -22799,6 +22807,14 @@
             "code": "camp_r_31",
             "name": "炽灼车间",
             "Event": "camp_r_31"
+        },
+        "camp_r_32": {
+            "stageId": "camp_r_32",
+            "levelId": "Obt/Campaign/level_camp_r_32",
+            "zoneId": "camp_r_32",
+            "code": "camp_r_32",
+            "name": "朱墙食府",
+            "Event": "camp_r_32"
         },
         "lt_tr_01": {
             "stageId": "lt_tr_01",
@@ -30938,6 +30954,9 @@
             "pro_d_1",
             "pro_d_2"
         ],
+        "act3enemyduel_zone1": [
+            "act3enemyduel_01a"
+        ],
         "act51side_zone1": [
             "act51side_01",
             "act51side_tr01",
@@ -33542,6 +33561,9 @@
         "camp_r_31": [
             "camp_r_31"
         ],
+        "camp_r_32": [
+            "camp_r_32"
+        ],
         "tower_tr_01": [
             "lt_tr_01"
         ],
@@ -35018,6 +35040,9 @@
         "weekly_4": [
             "weekly_4"
         ],
+        "act3enemyduel": [
+            "act3enemyduel_zone1"
+        ],
         "act51side": [
             "act51side_zone1",
             "act51side_zone2"
@@ -35486,6 +35511,9 @@
         ],
         "camp_r_31": [
             "camp_r_31"
+        ],
+        "camp_r_32": [
+            "camp_r_32"
         ],
         "tower_tr_01": [
             "tower_tr_01"
@@ -63752,6 +63780,1119 @@
                         "RA#2_monthly_1",
                         "RA#2_monthly_1",
                         "RA#2_monthly_1"
+                    ]
+                }
+            }
+        },
+        "enemy_15068_dqsui": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15069_dqdeer": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15070_dqhlgy": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15071_dqyrzf": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15072_dqlbgg": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15073_dqkght": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15074_dqdght": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15077_dqqzts": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15079_dqkodo": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15080_dqgtop": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15081_dqmage": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15082_dqklr": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15083_dqymot": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15084_dqhfly": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15085_dqji": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15089_dqbgpa": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15090_dqacpa": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15091_dqbus": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15093_dqzfkl": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15094_dqgent": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15095_dqams": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_5028_dqlime_2": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            },
+            "fun": {
+                "act5fun": {
+                    "act5fun": [
+                        "act5fun_01",
+                        "act5fun_02"
+                    ]
+                }
+            }
+        },
+        "enemy_5030_dqpro_3": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            },
+            "fun": {
+                "act5fun": {
+                    "act5fun": [
+                        "act5fun_01",
+                        "act5fun_02"
+                    ]
+                }
+            }
+        },
+        "enemy_5031_dqrtar_2": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            },
+            "fun": {
+                "act5fun": {
+                    "act5fun": [
+                        "act5fun_01",
+                        "act5fun_02"
+                    ]
+                }
+            }
+        },
+        "enemy_5039_dqgint": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            },
+            "fun": {
+                "act5fun": {
+                    "act5fun": [
+                        "act5fun_01",
+                        "act5fun_02"
+                    ]
+                }
+            }
+        },
+        "enemy_5053_dqllme": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            },
+            "fun": {
+                "act5fun": {
+                    "act5fun": [
+                        "act5fun_01",
+                        "act5fun_02"
+                    ]
+                }
+            }
+        },
+        "enemy_5055_dqkill": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            },
+            "fun": {
+                "act5fun": {
+                    "act5fun": [
+                        "act5fun_01",
+                        "act5fun_02"
+                    ]
+                }
+            }
+        },
+        "enemy_15002_dqwing": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            }
+        },
+        "enemy_15003_dqltsw": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            }
+        },
+        "enemy_15007_dqbear": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            }
+        },
+        "enemy_15008_dqspsb": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            }
+        },
+        "enemy_15009_dqmgcs": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            }
+        },
+        "enemy_15012_dqbsli": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            }
+        },
+        "enemy_15014_dqmmka": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            }
+        },
+        "enemy_15022_dqhvys": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            }
+        },
+        "enemy_5054_dqxi": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            }
+        },
+        "enemy_15029_dqfrtu": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            }
+        },
+        "enemy_15043_dqrckm": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                }
+            }
+        },
+        "enemy_15046_dqxts": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                }
+            }
+        },
+        "enemy_15047_dqwlpl": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                }
+            }
+        },
+        "enemy_15049_dqfrog": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01b"
+                    ]
+                }
+            }
+        },
+        "enemy_5043_dqgscr": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            },
+            "fun": {
+                "act5fun": {
+                    "act5fun": [
+                        "act5fun_01",
+                        "act5fun_02"
+                    ]
+                }
+            }
+        },
+        "enemy_15010_dqcadk": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            }
+        },
+        "enemy_5044_dqzeni": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            },
+            "fun": {
+                "act5fun": {
+                    "act5fun": [
+                        "act5fun_01",
+                        "act5fun_02"
+                    ]
+                }
+            }
+        },
+        "enemy_5051_dqrwar": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            },
+            "fun": {
+                "act5fun": {
+                    "act5fun": [
+                        "act5fun_01",
+                        "act5fun_02"
+                    ]
+                }
+            }
+        },
+        "enemy_15015_dqmerr": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            }
+        },
+        "enemy_15024_dqreid": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            }
+        },
+        "enemy_15045_dqrbty": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01b"
+                    ]
+                }
+            }
+        },
+        "enemy_5041_dqkght": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            },
+            "fun": {
+                "act5fun": {
+                    "act5fun": [
+                        "act5fun_01",
+                        "act5fun_02"
+                    ]
+                }
+            }
+        },
+        "enemy_5048_dqingd": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            },
+            "fun": {
+                "act5fun": {
+                    "act5fun": [
+                        "act5fun_01",
+                        "act5fun_02"
+                    ]
+                }
+            }
+        },
+        "enemy_15052_dqboar": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                }
+            }
+        },
+        "enemy_5040_dqmage": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            },
+            "fun": {
+                "act5fun": {
+                    "act5fun": [
+                        "act5fun_01",
+                        "act5fun_02"
+                    ]
+                }
+            }
+        },
+        "enemy_15028_dqmtrb": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            }
+        },
+        "enemy_5029_dqslim": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                }
+            },
+            "fun": {
+                "act5fun": {
+                    "act5fun": [
+                        "act5fun_01",
+                        "act5fun_02"
+                    ]
+                }
+            }
+        },
+        "enemy_15087_dqkkt": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                }
+            }
+        },
+        "enemy_15048_dqdivi": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                }
+            }
+        },
+        "enemy_15031_dqhlti": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            }
+        },
+        "enemy_15019_dqharc": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            }
+        },
+        "enemy_15020_dqplas": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            }
+        },
+        "enemy_5036_dqger_2": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01a",
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02a",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            },
+            "fun": {
+                "act5fun": {
+                    "act5fun": [
+                        "act5fun_01",
+                        "act5fun_02"
+                    ]
+                }
+            }
+        },
+        "enemy_15013_dqsnsl": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            }
+        },
+        "enemy_15040_dqrdmn": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act2enemyduel": {
+                    "act2enemyduel_zone1": [
+                        "act2enemyduel_01a",
+                        "act2enemyduel_01b"
+                    ]
+                }
+            }
+        },
+        "enemy_15018_dqskzc": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02b"
+                    ]
+                }
+            }
+        },
+        "enemy_15026_dqmtrf": {
+            "exp": {
+                "act3enemyduel": {
+                    "act3enemyduel_zone1": [
+                        "act3enemyduel_01a"
+                    ]
+                },
+                "act1enemyduel": {
+                    "act1enemyduel_zone1": [
+                        "act1enemyduel_01b",
+                        "act1enemyduel_02b"
                     ]
                 }
             }
@@ -93144,16 +94285,6 @@
                 }
             }
         },
-        "enemy_15040_dqrdmn": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                }
-            }
-        },
         "enemy_15041_dqgrg": {
             "exp": {
                 "act2enemyduel": {
@@ -93164,57 +94295,7 @@
                 }
             }
         },
-        "enemy_15043_dqrckm": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                }
-            }
-        },
         "enemy_15044_dqtisd": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                }
-            }
-        },
-        "enemy_15046_dqxts": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                }
-            }
-        },
-        "enemy_15047_dqwlpl": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                }
-            }
-        },
-        "enemy_15048_dqdivi": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                }
-            }
-        },
-        "enemy_15052_dqboar": {
             "exp": {
                 "act2enemyduel": {
                     "act2enemyduel_zone1": [
@@ -93284,100 +94365,6 @@
                 }
             }
         },
-        "enemy_5028_dqlime_2": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            },
-            "fun": {
-                "act5fun": {
-                    "act5fun": [
-                        "act5fun_01",
-                        "act5fun_02"
-                    ]
-                }
-            }
-        },
-        "enemy_5029_dqslim": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                }
-            },
-            "fun": {
-                "act5fun": {
-                    "act5fun": [
-                        "act5fun_01",
-                        "act5fun_02"
-                    ]
-                }
-            }
-        },
-        "enemy_5030_dqpro_3": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            },
-            "fun": {
-                "act5fun": {
-                    "act5fun": [
-                        "act5fun_01",
-                        "act5fun_02"
-                    ]
-                }
-            }
-        },
-        "enemy_5031_dqrtar_2": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            },
-            "fun": {
-                "act5fun": {
-                    "act5fun": [
-                        "act5fun_01",
-                        "act5fun_02"
-                    ]
-                }
-            }
-        },
         "enemy_5032_dqmon": {
             "exp": {
                 "act2enemyduel": {
@@ -93428,111 +94415,7 @@
                 }
             }
         },
-        "enemy_5036_dqger_2": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            },
-            "fun": {
-                "act5fun": {
-                    "act5fun": [
-                        "act5fun_01",
-                        "act5fun_02"
-                    ]
-                }
-            }
-        },
         "enemy_5037_dqdbox": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            },
-            "fun": {
-                "act5fun": {
-                    "act5fun": [
-                        "act5fun_01",
-                        "act5fun_02"
-                    ]
-                }
-            }
-        },
-        "enemy_5039_dqgint": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            },
-            "fun": {
-                "act5fun": {
-                    "act5fun": [
-                        "act5fun_01",
-                        "act5fun_02"
-                    ]
-                }
-            }
-        },
-        "enemy_5040_dqmage": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            },
-            "fun": {
-                "act5fun": {
-                    "act5fun": [
-                        "act5fun_01",
-                        "act5fun_02"
-                    ]
-                }
-            }
-        },
-        "enemy_5041_dqkght": {
             "exp": {
                 "act2enemyduel": {
                     "act2enemyduel_zone1": [
@@ -93569,32 +94452,6 @@
                 "act1enemyduel": {
                     "act1enemyduel_zone1": [
                         "act1enemyduel_01b",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            },
-            "fun": {
-                "act5fun": {
-                    "act5fun": [
-                        "act5fun_01",
-                        "act5fun_02"
-                    ]
-                }
-            }
-        },
-        "enemy_5043_dqgscr": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
                         "act1enemyduel_02b"
                     ]
                 }
@@ -93660,230 +94517,6 @@
                 }
             }
         },
-        "enemy_5048_dqingd": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            },
-            "fun": {
-                "act5fun": {
-                    "act5fun": [
-                        "act5fun_01",
-                        "act5fun_02"
-                    ]
-                }
-            }
-        },
-        "enemy_5051_dqrwar": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            },
-            "fun": {
-                "act5fun": {
-                    "act5fun": [
-                        "act5fun_01",
-                        "act5fun_02"
-                    ]
-                }
-            }
-        },
-        "enemy_5053_dqllme": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            },
-            "fun": {
-                "act5fun": {
-                    "act5fun": [
-                        "act5fun_01",
-                        "act5fun_02"
-                    ]
-                }
-            }
-        },
-        "enemy_5054_dqxi": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            }
-        },
-        "enemy_5055_dqkill": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            },
-            "fun": {
-                "act5fun": {
-                    "act5fun": [
-                        "act5fun_01",
-                        "act5fun_02"
-                    ]
-                }
-            }
-        },
-        "enemy_15002_dqwing": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            }
-        },
-        "enemy_15007_dqbear": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            }
-        },
-        "enemy_15012_dqbsli": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            }
-        },
-        "enemy_15013_dqsnsl": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            }
-        },
-        "enemy_15014_dqmmka": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            }
-        },
-        "enemy_15024_dqreid": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01a",
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            }
-        },
         "enemy_15036_dqalme": {
             "exp": {
                 "act2enemyduel": {
@@ -93894,24 +94527,6 @@
             }
         },
         "enemy_15039_dqrgrd": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01b"
-                    ]
-                }
-            }
-        },
-        "enemy_15045_dqrbty": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01b"
-                    ]
-                }
-            }
-        },
-        "enemy_15049_dqfrog": {
             "exp": {
                 "act2enemyduel": {
                     "act2enemyduel_zone1": [
@@ -94006,31 +94621,6 @@
                 }
             }
         },
-        "enemy_5044_dqzeni": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            },
-            "fun": {
-                "act5fun": {
-                    "act5fun": [
-                        "act5fun_01",
-                        "act5fun_02"
-                    ]
-                }
-            }
-        },
         "enemy_5045_dqjedi_2": {
             "exp": {
                 "act2enemyduel": {
@@ -94057,38 +94647,6 @@
             }
         },
         "enemy_15005_dqdsbs": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            }
-        },
-        "enemy_15009_dqmgcs": {
-            "exp": {
-                "act2enemyduel": {
-                    "act2enemyduel_zone1": [
-                        "act2enemyduel_01b"
-                    ]
-                },
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            }
-        },
-        "enemy_15031_dqhlti": {
             "exp": {
                 "act2enemyduel": {
                     "act2enemyduel_zone1": [
@@ -99412,30 +99970,6 @@
                 }
             }
         },
-        "enemy_15008_dqspsb": {
-            "exp": {
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            }
-        },
-        "enemy_15010_dqcadk": {
-            "exp": {
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            }
-        },
         "enemy_15011_dqnhst": {
             "exp": {
                 "act1enemyduel": {
@@ -99460,55 +99994,7 @@
                 }
             }
         },
-        "enemy_15019_dqharc": {
-            "exp": {
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            }
-        },
-        "enemy_15020_dqplas": {
-            "exp": {
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            }
-        },
-        "enemy_15022_dqhvys": {
-            "exp": {
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            }
-        },
         "enemy_15023_dqwlfm": {
-            "exp": {
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01a",
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02a",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            }
-        },
-        "enemy_15003_dqltsw": {
             "exp": {
                 "act1enemyduel": {
                     "act1enemyduel_zone1": [
@@ -99558,27 +100044,7 @@
                 }
             }
         },
-        "enemy_15015_dqmerr": {
-            "exp": {
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            }
-        },
         "enemy_15017_dqdwlo": {
-            "exp": {
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            }
-        },
-        "enemy_15018_dqskzc": {
             "exp": {
                 "act1enemyduel": {
                     "act1enemyduel_zone1": [
@@ -99598,37 +100064,7 @@
                 }
             }
         },
-        "enemy_15026_dqmtrf": {
-            "exp": {
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            }
-        },
         "enemy_15027_dqmtrs": {
-            "exp": {
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            }
-        },
-        "enemy_15028_dqmtrb": {
-            "exp": {
-                "act1enemyduel": {
-                    "act1enemyduel_zone1": [
-                        "act1enemyduel_01b",
-                        "act1enemyduel_02b"
-                    ]
-                }
-            }
-        },
-        "enemy_15029_dqfrtu": {
             "exp": {
                 "act1enemyduel": {
                     "act1enemyduel_zone1": [
@@ -105554,6 +105990,13 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_32": {
+                    "camp_r_32": [
+                        "camp_r_32"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 Floor 5": [
@@ -105639,6 +106082,13 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_32": {
+                    "camp_r_32": [
+                        "camp_r_32"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 Floor 5": [
@@ -105719,6 +106169,13 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_32": {
+                    "camp_r_32": [
+                        "camp_r_32"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 Floor 5": [
@@ -105788,6 +106245,13 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_32": {
+                    "camp_r_32": [
+                        "camp_r_32"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 Floor 5": [
@@ -105829,6 +106293,13 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_32": {
+                    "camp_r_32": [
+                        "camp_r_32"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 Floor 3": [
@@ -105850,6 +106321,13 @@
                         "act40side_mo01"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_32": {
+                    "camp_r_32": [
+                        "camp_r_32"
+                    ]
+                }
             }
         },
         "enemy_10053_cjman": {
@@ -105869,6 +106347,13 @@
                     ],
                     "act40sre_zone3": [
                         "act40side_mo01"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_32": {
+                    "camp_r_32": [
+                        "camp_r_32"
                     ]
                 }
             },
@@ -105894,6 +106379,13 @@
                         "act40side_mo01"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_32": {
+                    "camp_r_32": [
+                        "camp_r_32"
+                    ]
+                }
             }
         },
         "enemy_10051_cjmag": {
@@ -105905,6 +106397,13 @@
                     ],
                     "act40sre_zone3": [
                         "act40side_mo01"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_32": {
+                    "camp_r_32": [
+                        "camp_r_32"
                     ]
                 }
             }
@@ -105919,6 +106418,13 @@
                         "act40side_mo01"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_32": {
+                    "camp_r_32": [
+                        "camp_r_32"
+                    ]
+                }
             }
         },
         "enemy_10054_cjhot": {
@@ -105930,6 +106436,13 @@
                     ],
                     "act40sre_zone3": [
                         "act40side_mo01"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_32": {
+                    "camp_r_32": [
+                        "camp_r_32"
                     ]
                 }
             }
@@ -105956,6 +106469,13 @@
                     ],
                     "act40sre_zone3": [
                         "act40side_mo01"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_32": {
+                    "camp_r_32": [
+                        "camp_r_32"
                     ]
                 }
             },
@@ -106037,6 +106557,13 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_32": {
+                    "camp_r_32": [
+                        "camp_r_32"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 Floor 5": [
@@ -106080,6 +106607,13 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_32": {
+                    "camp_r_32": [
+                        "camp_r_32"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 Floor 6": [
@@ -106118,6 +106652,13 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_32": {
+                    "camp_r_32": [
+                        "camp_r_32"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 Floor 6": [
@@ -106152,6 +106693,13 @@
                         "act40side_s04",
                         "act40side_s04#f#",
                         "act40side_mo01"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_32": {
+                    "camp_r_32": [
+                        "camp_r_32"
                     ]
                 }
             },
@@ -106194,6 +106742,13 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_32": {
+                    "camp_r_32": [
+                        "camp_r_32"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 Floor 5": [
@@ -106224,6 +106779,13 @@
                     ],
                     "act40sre_zone3": [
                         "act40side_mo01"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_32": {
+                    "camp_r_32": [
+                        "camp_r_32"
                     ]
                 }
             }
@@ -106291,6 +106853,13 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_32": {
+                    "camp_r_32": [
+                        "camp_r_32"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 Floor 5": [
@@ -106324,6 +106893,13 @@
                         "act40side_s03#f#",
                         "act40side_s04",
                         "act40side_s04#f#"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_32": {
+                    "camp_r_32": [
+                        "camp_r_32"
                     ]
                 }
             },
