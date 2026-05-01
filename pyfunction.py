@@ -25,7 +25,9 @@ URSUS : dict = {
                     "Веточки"       : "Vetochki",
                     
                     "Ботани"        : "Botani",
-                    "Укусик"        : "Ukusik"
+                    "Укусик"        : "Ukusik",
+                    
+                    "Вий"  : "Vij",
                 }
 
 def printr(*arg):

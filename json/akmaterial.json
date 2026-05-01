@@ -1434,5 +1434,73 @@
             "环烃预制体": 1,
             "固化纤维板": 1
         }
+    },
+    {
+        "id": 82,
+        "itemId": "31103",
+        "IconID": "MTL_SL_YHT",
+        "name_cn": "液化高能气体",
+        "name_en": "",
+        "name_jp": "",
+        "name_kr": "",
+        "name_tw": "",
+        "level": 3,
+        "source": {
+            "17-5": "Rare"
+        },
+        "madeof": {}
+    },
+    {
+        "id": 83,
+        "itemId": "31104",
+        "IconID": "MTL_SL_YHT4",
+        "name_cn": "液化醚吸聚体",
+        "name_en": "",
+        "name_jp": "",
+        "name_kr": "",
+        "name_tw": "",
+        "level": 4,
+        "source": {
+            "17-5": "Very Rare"
+        },
+        "madeof": {
+            "酮凝集组": 1,
+            "类凝结核": 1,
+            "液化高能气体": 1
+        }
+    },
+    {
+        "id": 84,
+        "itemId": "31113",
+        "IconID": "MTL_SL_DJ",
+        "name_cn": "电极单元",
+        "name_en": "",
+        "name_jp": "",
+        "name_kr": "",
+        "name_tw": "",
+        "level": 3,
+        "source": {
+            "17-11": "Rare"
+        },
+        "madeof": {}
+    },
+    {
+        "id": 85,
+        "itemId": "31114",
+        "IconID": "MTL_SL_DJ4",
+        "name_cn": "聚能动力单元",
+        "name_en": "",
+        "name_jp": "",
+        "name_kr": "",
+        "name_tw": "",
+        "level": 4,
+        "source": {
+            "17-11": "Very Rare"
+        },
+        "madeof": {
+            "全新装置": 1,
+            "液化高能气体": 1,
+            "电极单元": 1
+        }
     }
 ]
