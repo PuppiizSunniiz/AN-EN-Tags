@@ -6067,59 +6067,75 @@
 
                         var spineX = parseFloat($("#spine-widget").width())/2
                         var spineY = parseFloat($("#spine-widget").height())/2 -200
-                        var config = {
-                            skeltype : skeletonType,
-                            jsonContent: jsonskel,
-                            atlas: folder + encodeURIComponent(chibiName) + ".atlas",
-                            animation: chibipers == "build"?"Relax":"Idle",
-                            backgroundColor: "#00000000",
-                            // debug: true,
-                            // imagesPath: chibiName + ".png",
-                            premultipliedAlpha: true,
-                            fitToCanvas : false,
-                            loop: true,
-                            // x:900,
-                            // y:650,
-                            x: spineX,
-                            y: spineY,
-                            //0.5 for normal i guess
-                            scale: 1,
-                            success: function (widget) {
-                                animIndex = 0
-                                spinewidget = widget
-                                $("#spine-text").text(widget.skeleton.data.animations[0].name)
-                                $("#loading-spine").fadeOut(200)
-                                animations = widget.skeleton.data.animations;
-                                $("#spine-widget").show()
-                                if(animations.find(search => search.name.includes("Start"))){
-                                    idle_default = animations.map(k => k["name"]).filter(k => k.includes("Idle"))[0]
-                                    start_default = animations.map(k => k["name"]).filter(k => k.includes("Start"))[0]
-                                    CreateAnimation(spinewidget,[start_default, idle_default])
-                                    $("#spine-text").text(idle_default)
-                                }else if(animations.find(search=>search.name=="Relax")){
-                                    CreateAnimation(spinewidget,"Relax")
-                                    $("#spine-text").text("Relax")
-                                }
+                        var xhratlas = new XMLHttpRequest();
+                        xhratlas.open('GET', folder + encodeURIComponent(chibiName) + ".atlas", true);
+                        xhratlas.onloadend = function (e) {
+                            if (xhratlas.status != 404) {
+                                attempt = 0
+                                var loadedatlas = xhratlas.response;
+                                var imagename = ConvertAtlas(loadedatlas)
+                                var atlaslist = []
+                                imagename.forEach(image => {
+                                    atlaslist.push(image.image)
+                                });
+                                console.log(atlaslist)
+                                var config = {
+                                    skeltype : skeletonType,
+                                    jsonContent: jsonskel,
+                                    atlas: folder + encodeURIComponent(chibiName) + ".atlas",
+                                    atlasPages: atlaslist,
+                                    animation: chibipers == "build"?"Relax":"Idle",
+                                    backgroundColor: "#00000000",
+                                    // debug: true,
+                                    // imagesPath: chibiName + ".png",
+                                    premultipliedAlpha: true,
+                                    fitToCanvas : false,
+                                    loop: true,
+                                    // x:900,
+                                    // y:650,
+                                    x: spineX,
+                                    y: spineY,
+                                    //0.5 for normal i guess
+                                    scale: 1,
+                                    success: function (widget) {
+                                        animIndex = 0
+                                        spinewidget = widget
+                                        $("#spine-text").text(widget.skeleton.data.animations[0].name)
+                                        $("#loading-spine").fadeOut(200)
+                                        animations = widget.skeleton.data.animations;
+                                        $("#spine-widget").show()
+                                        if(animations.find(search => search.name.includes("Start"))){
+                                            idle_default = animations.map(k => k["name"]).filter(k => k.includes("Idle"))[0]
+                                            start_default = animations.map(k => k["name"]).filter(k => k.includes("Start"))[0]
+                                            CreateAnimation(spinewidget,[start_default, idle_default])
+                                            $("#spine-text").text(idle_default)
+                                        }else if(animations.find(search=>search.name=="Relax")){
+                                            CreateAnimation(spinewidget,"Relax")
+                                            $("#spine-text").text("Relax")
+                                        }
 
-                                widget.customanimation = CheckAnimationSet(animations)
-                                
-                                $("#spine-toolbar-next").onclick = function () {
-                                    widget.state.clearTracks()
-                                    if(animationqueue!=undefined)clearInterval(animationqueue)
-                                    animIndex++;
-                                    // console.log(animations)
-                                    if (animIndex >= animations.length) animIndex = 0;
-                                    widget.setAnimation(animations[animIndex].name)
-                                    $("#spine-text").text(animations[animIndex].name)
+                                        widget.customanimation = CheckAnimationSet(animations)
+                                        
+                                        $("#spine-toolbar-next").onclick = function () {
+                                            widget.state.clearTracks()
+                                            if(animationqueue!=undefined)clearInterval(animationqueue)
+                                            animIndex++;
+                                            // console.log(animations)
+                                            if (animIndex >= animations.length) animIndex = 0;
+                                            widget.setAnimation(animations[animIndex].name)
+                                            $("#spine-text").text(animations[animIndex].name)
+                                        }
+                                    }
                                 }
+                                if (SpineVersion.slice(0,3) == "3.8"){
+                                    new spine38.SpineWidget("spine-widget", config)
+                                }else if(SpineVersion.slice(0,3) == "3.5"){
+                                    new spine.SpineWidget("spine-widget", config)
+                                }
+                                attempt = 0
                             }
                         }
-                        if (SpineVersion.slice(0,3) == "3.8"){
-                            new spine38.SpineWidget("spine-widget", config)
-                        }else if(SpineVersion.slice(0,3) == "3.5"){
-                            new spine.SpineWidget("spine-widget", config)
-                        }
-                        attempt = 0
+                        xhratlas.send()
                     }
                 }else{
                     if (attempt == 2) {
