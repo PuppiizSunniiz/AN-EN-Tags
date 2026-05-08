@@ -5664,6 +5664,38 @@
             "name": "灵魂悄然",
             "Event": "act4mainss_zone1"
         },
+        "hard_17-01": {
+            "stageId": "hard_17-01",
+            "levelId": "Obt/Hard/level_hard_17-01",
+            "zoneId": "EP17 : Adverse Environment",
+            "code": "H17-1",
+            "name": "急变预案-1",
+            "Event": "act4mainss_zone1"
+        },
+        "hard_17-02": {
+            "stageId": "hard_17-02",
+            "levelId": "Obt/Hard/level_hard_17-02",
+            "zoneId": "EP17 : Adverse Environment",
+            "code": "H17-2",
+            "name": "急变预案-2",
+            "Event": "act4mainss_zone1"
+        },
+        "hard_17-03": {
+            "stageId": "hard_17-03",
+            "levelId": "Obt/Hard/level_hard_17-03",
+            "zoneId": "EP17 : Adverse Environment",
+            "code": "H17-3",
+            "name": "急变预案-3",
+            "Event": "act4mainss_zone1"
+        },
+        "hard_17-04": {
+            "stageId": "hard_17-04",
+            "levelId": "Obt/Hard/level_hard_17-04",
+            "zoneId": "EP17 : Adverse Environment",
+            "code": "H17-4",
+            "name": "急变预案-4",
+            "Event": "act4mainss_zone1"
+        },
         "act3enemyduel_01a": {
             "stageId": "act3enemyduel_01a",
             "levelId": "Activities/act3enemyduel/level_act3enemyduel_01a",
@@ -31251,7 +31283,11 @@
             "main_17-11#s",
             "main_17-12#s",
             "main_17-14#s",
-            "main_17-16#s"
+            "main_17-16#s",
+            "hard_17-01",
+            "hard_17-02",
+            "hard_17-03",
+            "hard_17-04"
         ],
         "EP17 : Training": [
             "tr_28"
@@ -64182,7 +64218,11 @@
                         "main_17-11#s",
                         "main_17-12#s",
                         "main_17-14#s",
-                        "main_17-16#s"
+                        "main_17-16#s",
+                        "hard_17-01",
+                        "hard_17-02",
+                        "hard_17-03",
+                        "hard_17-04"
                     ]
                 }
             }
@@ -64318,7 +64358,11 @@
                     ],
                     "EP17 : Adverse Environment": [
                         "main_17-12#s",
-                        "main_17-14#s"
+                        "main_17-14#s",
+                        "hard_17-01",
+                        "hard_17-02",
+                        "hard_17-03",
+                        "hard_17-04"
                     ]
                 }
             }
@@ -64337,7 +64381,11 @@
                     "EP17 : Adverse Environment": [
                         "main_17-12#s",
                         "main_17-14#s",
-                        "main_17-16#s"
+                        "main_17-16#s",
+                        "hard_17-01",
+                        "hard_17-02",
+                        "hard_17-03",
+                        "hard_17-04"
                     ]
                 }
             }
@@ -64356,7 +64404,11 @@
                     "EP17 : Adverse Environment": [
                         "main_17-12#s",
                         "main_17-14#s",
-                        "main_17-16#s"
+                        "main_17-16#s",
+                        "hard_17-01",
+                        "hard_17-02",
+                        "hard_17-03",
+                        "hard_17-04"
                     ]
                 }
             }
@@ -64384,7 +64436,10 @@
                         "main_17-17"
                     ],
                     "EP17 : Adverse Environment": [
-                        "main_17-16#s"
+                        "main_17-16#s",
+                        "hard_17-01",
+                        "hard_17-02",
+                        "hard_17-04"
                     ]
                 }
             }
@@ -64398,7 +64453,8 @@
                         "main_17-17"
                     ],
                     "EP17 : Adverse Environment": [
-                        "main_17-14#s"
+                        "main_17-14#s",
+                        "hard_17-02"
                     ]
                 }
             }
@@ -64496,6 +64552,9 @@
                 "act4mainss_zone1": {
                     "EP17 : Standard Environment": [
                         "main_17-17"
+                    ],
+                    "EP17 : Adverse Environment": [
+                        "hard_17-04"
                     ]
                 }
             }
@@ -64505,6 +64564,9 @@
                 "act4mainss_zone1": {
                     "EP17 : Standard Environment": [
                         "main_17-17"
+                    ],
+                    "EP17 : Adverse Environment": [
+                        "hard_17-04"
                     ]
                 }
             }
@@ -64514,6 +64576,9 @@
                 "act4mainss_zone1": {
                     "EP17 : Standard Environment": [
                         "main_17-17"
+                    ],
+                    "EP17 : Adverse Environment": [
+                        "hard_17-04"
                     ]
                 }
             }
@@ -64523,6 +64588,26 @@
                 "act4mainss_zone1": {
                     "EP17 : Standard Environment": [
                         "main_17-17"
+                    ]
+                }
+            }
+        },
+        "enemy_10206_muveg_2": {
+            "main": {
+                "act4mainss_zone1": {
+                    "EP17 : Adverse Environment": [
+                        "hard_17-01",
+                        "hard_17-03",
+                        "hard_17-04"
+                    ]
+                }
+            }
+        },
+        "enemy_10202_mubow_2": {
+            "main": {
+                "act4mainss_zone1": {
+                    "EP17 : Adverse Environment": [
+                        "hard_17-03"
                     ]
                 }
             }

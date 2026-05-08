@@ -155,7 +155,7 @@
     var hei = 1800
 
     const validparam = ["opname", "gamemode", "story", "voice", "sfx"]
-
+    const mode_title = {"IS" : "Integrated Strategies", "SO" : "Special Operator", "SP" : "Stronghold Protocol"}
     const RIEPIC = ["char_003_kalts", "char_172_svrash", "char_1035_wisdel"]
 
     $(document).ready(function(){
@@ -925,7 +925,7 @@
                         $("#operatorsResult").append(
                             `${extrathing}<li class="selectop-grid2" onclick="selectOperator('${result[i].id}')">
                             <div class="op-image-grid2">
-                                ${result[i].gamemode=="BASE"?"":'<div class="op-grid-gamemode ' + result[i].gamemode +'">' + result[i].gamemode + '</div>'}
+                                ${result[i].gamemode=="BASE"?"":'<div class="op-grid-gamemode ' + result[i].gamemode + '" title="' + mode_title[result[i].gamemode] + '">' + result[i].gamemode + '</div>'}
                                 ${image}
                             </div>
                             <div class="${opcurrname.length>12?opcurrname.length>15?"namesmaller":"namesmall":"name"} ak-font-novecento ak-center nameshadow">${opcurrname}</div>
@@ -943,7 +943,7 @@
                         $("#operatorsResult").append(
                             `<li class="selectop-grid3 ak-rare-${result[i].rarity}" onclick="selectOperator('${result[i].id}')">
                             <div class="op-image-grid2">
-                                ${result[i].gamemode == "BASE"?"":'<div class="op-grid-gamemode ' + result[i].gamemode +'">' + result[i].gamemode + '</div>'}
+                                ${result[i].gamemode == "BASE"?"":'<div class="op-grid-gamemode ' + result[i].gamemode + '" title="' + mode_title[result[i].gamemode] + '">' + result[i].gamemode + '</div>'}
                                 ${image}
                             </div>
                             <div class="nametext ${opcurrname.length > 10?opcurrname.length > 15?"namesmaller":"name":"nameshort"} ak-center blacktext">${opcurrname}</div>
@@ -959,7 +959,7 @@
                             <li class=" ak-shadow-small ak-rare-${result[i].rarity}" style="width:100%; cursor:pointer; margin-bottom:2px; position:relative;" onclick="selectOperator('${result[i].id}')">
                                 ${image}
                                 ${result[i].name_readable?`[${result[i].name_readable}]`:""} ${opcurrname}
-                                ${result[i].gamemode == "BASE"?"":'<div class="op-grid-gamemode ' + result[i].gamemode +'">' + result[i].gamemode + '</div>'}
+                                ${result[i].gamemode == "BASE"?"":'<div class="op-grid-gamemode ' + result[i].gamemode + '" title="' + mode_title[result[i].gamemode] + '">' + result[i].gamemode + '</div>'}
                             </li>`);
                     }
                 }
@@ -1274,7 +1274,7 @@
             <li class="selectop-grid ak-shadow" onclick="selectOperator('${getId(char)}')" ${hidden_fac_op?`style="box-shadow: 0px 0px 3px 3px #22b;"`:""}>
             <div class="op-image-grid">
                 ${GetLogo(char)?`<div class="op-grid-faction"><img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/factions/${GetLogo(char)?GetLogo(char).toLowerCase():"none"}.png" title="${GetLogo(char)?GetLogoInfo(char):"None"}"></div>`:""}
-                ${gamemode=="BASE"?"":'<div class="op-grid-gamemode ' + gamemode +'">' + gamemode + '</div>'}
+                ${gamemode=="BASE"?"":'<div class="op-grid-gamemode ' + gamemode + '" title="' + mode_title[gamemode] + '">' + gamemode + '</div>'}
                 <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/avatars/${getId(char)+(sus && RIEPIC.includes(getId(char))?"_sus":"")}.png">
             </div>
             <div class="${char.appellation.length>12?char.appellation.length>16?"namesmaller":"namesmall":"name"} ak-font-novecento ak-center" ${hidden_fac_op?`style="color: aqua"`:""}>${unreadable?`[${unreadable}]`:""} ${char.appellation}</div>
@@ -4884,7 +4884,7 @@
         for(i=0;i<DataBundle.length;i++){
             if (DataBundle[i].target.includes('TALENT')){
                 for(j=0;j<DataBundle[i].addOrOverrideTalentDataBundle.candidates.length;j++){
-                    tempBlackboard[j].push(...DataBundle[i].addOrOverrideTalentDataBundle.candidates[j].blackboard)
+                    if(DataBundle[i].addOrOverrideTalentDataBundle.candidates[j].blackboard.length) tempBlackboard[j].push(...DataBundle[i].addOrOverrideTalentDataBundle.candidates[j].blackboard)
                     if(DataBundle[i].addOrOverrideTalentDataBundle.candidates[j].rangeId != null) tempBlackboard[2]=DataBundle[i].addOrOverrideTalentDataBundle.candidates[j].rangeId
                     if(DataBundle[i].addOrOverrideTalentDataBundle.candidates.length==1) tempBlackboard[1].push(...DataBundle[i].addOrOverrideTalentDataBundle.candidates[j].blackboard)
                 }
@@ -4894,7 +4894,7 @@
             }
         }
         for(k=0;k<TalentDataBundle.length;k++){
-            TalentDataBundle[k].blackboard.push(...tempBlackboard[k])
+            if(tempBlackboard[k] != null) TalentDataBundle[k].blackboard.push(...tempBlackboard[k])
             TalentDataBundle[k].blackboard=[...new Set(TalentDataBundle[k].blackboard)]
             if(tempBlackboard[2] != null) TalentDataBundle[k].rangeId=tempBlackboard[2]
         }
@@ -4905,7 +4905,8 @@
         for(i=0;i<TalentDataBundle.length;i++) {
             var imagereq = []
             var currpotent = parseInt(TalentDataBundle[i].requiredPotentialRank)
-            activePotential = currpotent
+            if (activePotential <= currpotent) activePotential = currpotent
+            else break
             if(currpotent+1 >0)
                 imagereq.push(`<img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/potential/${currpotent+1}.png" style="width:18px"> ${currpotent+1}`)
             potentialTab.push(`
