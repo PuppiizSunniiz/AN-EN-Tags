@@ -1,16 +1,4 @@
 # Fix TL (Official EN) waiting room
-### Stronghold Protocol - Alliance
-- Effect
-    - ba.weaknessatk
-
-### Unrealized Realities
-- Archetype 
-    - Skybreaker
-- Trait
-    - Skybreaker
-    - Chain medic mod
-    - HUN-Y
-
 ### Medjehtiqedti Bound
 - Effect
     - ba.strong (Vigor)
