@@ -114,6 +114,12 @@
             "desc": "进驻控制中枢时，人力办公室联络速度小于<@cc.vup>30%</>时（其中包含基础联络速度5%），则联络速度额外<@cc.vup>+20%</>（该加成全局效果唯一，不受其它加成影响）",
             "description": "When this Operator is assigned to the Control Center, if the HR contacting speed of the HR Office is lower than <@cc.vup>30%</> (including the base 5%), increase the HR contacting speed by <@cc.vup>+20%</> (unique effect across the entire base, unaffected by other effects)"
         },
+        "control_hire_spd_all[000]": {
+            "buffName": "办公室年度人物",
+            "skillIcon": "bskill_ctrl_orchd2",
+            "desc": "进驻控制中枢时，人力办公室联络速度<@cc.vup>+10%</>（同种效果取最高）",
+            "description": "进驻控制中枢时，人力办公室联络速度<@cc.vup>+10%</>（同种效果取最高）"
+        },
         "control_upMeetingSpeed[000]": {
             "buffName": "Worldly Insight",
             "skillIcon": "bskill_ctrl_c_spd",
@@ -1476,6 +1482,12 @@
             "desc": "进驻贸易站时，订单获取效率<@cc.vup>+35%</>",
             "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+35%</>"
         },
+        "trade_ord_spd[022]": {
+            "buffName": "气氛组",
+            "skillIcon": "bskill_tra_spd3&catap2",
+            "desc": "进驻贸易站时，订单获取效率<@cc.vup>+35%</>",
+            "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+35%</>"
+        },
         "trade_ord_vodfox[000]": {
             "buffName": "Whispers",
             "skillIcon": "bskill_tra_vodfox",
@@ -1811,6 +1823,12 @@
             "skillIcon": "bskill_tra_spd&limit_felyne",
             "desc": "进驻贸易站时，订单获取效率<@cc.vup>+5%</>，且订单上限<@cc.vup>+2</>，同时每有1个<$cc.bd_felyne><@cc.rem>木天蓼</></>，则订单获取效率<@cc.vup>+3%</>",
             "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+5%</>, order limit <@cc.vup>+2</>, plus an additional order acquisition efficiency <@cc.vup>+3%</> for every <$cc.bd_felyne><@cc.rem>Felvine</></>"
+        },
+        "trade_ord_spd&limit_tag[000]": {
+            "buffName": "队长的自觉",
+            "skillIcon": "bskill_tra_orchd2",
+            "desc": "进驻贸易站时，订单上限<@cc.vup>+3</>，且每有一个<$cc.tag.mh2><@cc.kw>泡影国狩猎小队</></>干员进驻贸易站，订单获取效率<@cc.vup>+20%</>",
+            "description": "进驻贸易站时，订单上限<@cc.vup>+3</>，且每有一个<$cc.tag.mh2><@cc.kw>泡影国狩猎小队</></>干员进驻贸易站，订单获取效率<@cc.vup>+20%</>"
         },
         "trade_ord_spd&wt[000]": {
             "buffName": "Naive Negotiator",
@@ -2736,6 +2754,18 @@
             "desc": "进驻训练室协助位时，<@cc.kw>特种</>与<@cc.kw>先锋</>干员的专精技能训练速度<@cc.vup>+30%</>，如果本次训练专精技能至<@cc.vup>2</>级，则训练速度额外<@cc.vup>+50%</>",
             "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Specialist</> and <@cc.kw>Vanguard</> Operators' Specialization training speed <@cc.vup>+30%</>; if training a skill to Specialization Level <@cc.vup>2</>, training speed will be further increased by <@cc.vup>+50%</>"
         },
+        "train_spd_doubleProf3[000]": {
+            "buffName": "兴之所至·α",
+            "skillIcon": "bskill_train_mh2_guard&sniper1",
+            "desc": "进驻训练室协助位时，<@cc.kw>近卫</>与<@cc.kw>狙击</>干员的专精技能训练速度<@cc.vup>+30%</>",
+            "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Guard</> and <@cc.kw>Sniper</> Operators' Specialization training speed<@cc.vup>+30%</>"
+        },
+        "train_spd_doubleProf3[100]": {
+            "buffName": "兴之所至·β",
+            "skillIcon": "bskill_train_mh2_guard&sniper2",
+            "desc": "进驻训练室协助位时，<@cc.kw>近卫</>与<@cc.kw>狙击</>干员的专精技能训练速度<@cc.vup>+50%</>，心情每小时消耗<@cc.vdown>+1</>",
+            "description": "进驻训练室协助位时，<@cc.kw>近卫</>与<@cc.kw>狙击</>干员的专精技能训练速度<@cc.vup>+50%</>，心情每小时消耗<@cc.vdown>+1</>"
+        },
         "train_spd_reduceTime[000]": {
             "buffName": "Mental Training",
             "skillIcon": "bskill_train_reduceTime",
@@ -3347,6 +3377,12 @@
             "skillIcon": "bskill_dorm_single_indigo",
             "desc": "进驻宿舍时，使该宿舍内心情未满的某个干员每小时恢复<@cc.vup>+0.55</>（同种效果取最高），如果目标是<@cc.kw>蓝毒</>，则恢复效果额外<@cc.vup>+0.45</>",
             "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is <@cc.kw>Blue Poison</>, further increases Morale restored by <@cc.vup>+0.45</>"
+        },
+        "dorm_rec_single&tag[000]": {
+            "buffName": "狩猎好帮手",
+            "skillIcon": "bskill_dorm_buddy",
+            "desc": "进驻宿舍时，使该宿舍内除自身以外心情未满的某个干员每小时恢复<@cc.vup>+0.55</>（同种效果取最高），如果目标是<$cc.tag.mh><@cc.kw>怪物猎人小队</></>成员和<$cc.tag.mh2><@cc.kw>泡影国狩猎小队</></>，则恢复效果额外<@cc.vup>+0.45</>",
+            "description": "进驻宿舍时，使该宿舍内除自身以外心情未满的某个干员每小时恢复<@cc.vup>+0.55</>（同种效果取最高），如果目标是<$cc.tag.mh><@cc.kw>怪物猎人小队</></>成员和<$cc.tag.mh2><@cc.kw>泡影国狩猎小队</></>，则恢复效果额外<@cc.vup>+0.45</>"
         },
         "dorm_rec_all[000]": {
             "buffName": "Inspiration",
@@ -4307,6 +4343,12 @@
             "skillIcon": "bskill_meet_spdNotOwned1",
             "desc": "进驻会客室时，更容易获得线索板上尚未拥有的线索",
             "description": "When this Operator is assigned to the Reception Room, increases the likelihood of obtaining clues that are not on the Clue Board."
+        },
+        "meet_spd_notOwned_P[000]": {
+            "buffName": "隐秘专家",
+            "skillIcon": "bskill_meet_buddy",
+            "desc": "进驻会客室时，更容易获得线索板上尚未拥有的线索，若<@cc.kw>焰狐龙梓兰</>进驻控制中枢，则线索搜集速度提升<@cc.vup>10%</>",
+            "description": "进驻会客室时，更容易获得线索板上尚未拥有的线索，若<@cc.kw>焰狐龙梓兰</>进驻控制中枢，则线索搜集速度提升<@cc.vup>10%</>"
         },
         "meet_spd_Owned[000]": {
             "buffName": "Conspicuous Investigator",
@@ -15476,6 +15518,91 @@
                     "buffData": [
                         {
                             "buffId": "power_rec_spd_ext&tag[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 30
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_1048_orchd2": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_hire_spd_all[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "trade_ord_spd&limit_tag[000]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_1049_catap2": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "train_spd_doubleProf3[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "train_spd_doubleProf3[100]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "trade_ord_spd[022]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4215_buddy": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "dorm_rec_single&tag[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "meet_spd_notOwned_P[000]",
                             "cond": {
                                 "phase": "PHASE_0",
                                 "level": 30

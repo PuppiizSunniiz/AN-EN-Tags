@@ -28,10 +28,15 @@
     - Nymph
     - Skadi the Corrupting Heart
 
+### EP17 : Critical Phase Transition
+
+### Thunder in the Azure Dream
+
 ### To Do
 - Skin bar too long now (Ling)
 - handle Xiaohei cat
 - Independent-miya
+- Chibi Start (Fixed base to canvas problem ex.char_494_vendla_game#10)
 - Token
     - Skill SP recovery
     - Mod talent
