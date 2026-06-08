@@ -32,6 +32,7 @@ akenemy = {
                         "sss"       : {"name" : "SSS : Stationary Security Service", "activity" : {}},  # Mode : SSS            -> Activity : Tower                                     -> Stage : LT-XX
                         "ra"        : {"name" : "RA : Reclamation Algorithm", "activity" : {}},         # Mode : RA             -> Activity : RA#XX         -> Zone : Fight/Rush/Zone   -> Stage : XYZ
                         "fun"       : {"name" : "FUN : April Fool", "activity" : {}},
+                        "pf"        : {"name" : "PF : Positional Football", "activity" : {}},
                         "pending"   : []
             },
             "events":{
@@ -568,6 +569,9 @@ def get_stage_gamemode(stage_event : str) -> str:
         
         elif re.search(r'act[0-9]{1,2}(fun)',stage_event) or stage_event == "act17d7": # April Fool // act17d7 = Emperor LLTB
             return "fun"
+        
+        elif re.search(r'act[0-9]{1,2}(football)',stage_event): # Positional Football
+            return "pf"
 
         elif re.search(r'act[0-9]{1,2}(side|mini|d0|d3|d5)',stage_event) or stage_event == "1stact": # 1stact = Grani
             return "sidestory"

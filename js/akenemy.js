@@ -239,6 +239,7 @@ function selectGamemode(el){
         case "vb":
         case "sp":
         case "ra":
+        case "pf":
             return "Season"
         case "sss":
             return "Tower"
