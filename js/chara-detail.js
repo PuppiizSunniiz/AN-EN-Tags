@@ -3424,6 +3424,7 @@
     }
 
     function UpdateTokenSkill(token = globaltoken, skill = globalskill){
+        if(db.chars[token].skills.length == 0) return ;
         var TokenskillID = db.chars[token].skills[skill].skillId
         var Tokenskill = db.skills[TokenskillID]
         if(!Tokenskill) return ;

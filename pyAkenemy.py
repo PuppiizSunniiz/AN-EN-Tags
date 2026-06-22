@@ -32,7 +32,7 @@ akenemy = {
                         "sss"       : {"name" : "SSS : Stationary Security Service", "activity" : {}},  # Mode : SSS            -> Activity : Tower                                     -> Stage : LT-XX
                         "ra"        : {"name" : "RA : Reclamation Algorithm", "activity" : {}},         # Mode : RA             -> Activity : RA#XX         -> Zone : Fight/Rush/Zone   -> Stage : XYZ
                         "fun"       : {"name" : "FUN : April Fool", "activity" : {}},
-                        "pf"        : {"name" : "PF : Positional Football", "activity" : {}},
+                        "pf"        : {"name" : "PFC : Positional Football Championship", "activity" : {}},
                         "pending"   : []
             },
             "events":{

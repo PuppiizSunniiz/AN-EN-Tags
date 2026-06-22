@@ -1106,14 +1106,14 @@
             "code": "uniequip_003_ray"
         },
         "攻击范围内存在2名及以上敌人时攻击速度<@ba.kw>+{attack_speed}</>": {
-            "en": "ASPD <@ba.kw>+{attack_speed}</> when there are 2 or more enemies in attack range.",
+            "en": "When there are 2 or more enemies within Attack Range, ASPD <@ba.kw>+{attack_speed}</>",
             "color": "extra",
             "note": "new mods rea-y (new wording)",
             "name": "char_4010_etlchi",
             "code": "uniequip_003_etlchi"
         },
         "对被阻挡的敌人伤害提升至<@ba.kw>{damage_scale:0%}</>": {
-            "en": "Damage is increased to <@ba.kw>{damage_scale:0%}</> when attacking blocked enemies",
+            "en": "Damage increases to <@ba.kw>{damage_scale:0%}</> when attacking blocked enemies",
             "color": "common",
             "note": "new mods cru-y",
             "name": "char_4088_hodrer",
@@ -1181,6 +1181,69 @@
             "note": "new mods bar-y",
             "name": "char_1012_skadi2",
             "code": "uniequip_003_skadi2"
+        },
+        "不会受到攻击，仅可以部署在凯尔希·思衡托攻击范围外的远程位": {
+            "en": "不会受到攻击，仅可以部署在凯尔希·思衡托攻击范围外的远程位",
+            "color": "common",
+            "note": "Kal'tsit·Esperanta 's Token (Tactical Anchor)",
+            "name": "Tactical Anchor",
+            "code": "token_10068_kalts2_mtship"
+        },
+        "不攻击，能够阻挡两个敌人，只能部署在召唤者攻击范围内": {
+            "en": "不攻击，能够阻挡两个敌人，只能部署在召唤者攻击范围内",
+            "color": "common",
+            "note": "Closure 's Token (Command Center)",
+            "name": "Command Center",
+            "code": "token_10066_closur_ourbase"
+        },
+        "攻击造成<@ba.kw>法术伤害</>，且不受<@ba.kw>部署数量</>限制，但再部署时间极长": {
+            "en": "攻击造成<@ba.kw>法术伤害</>，且不受<@ba.kw>部署数量</>限制，但再部署时间极长",
+            "color": "magic",
+            "note": "new Ops \"corecaster\" Archetype trait",
+            "name": "GALLUS²",
+            "code": "char_4227_gallus"
+        },
+        "在<@ba.kw>集成战略</>中，攻击重量较重（重量等级大于等于3）的敌人时无视其物理闪避且造成的物理伤害提升40%": {
+            "en": "在<@ba.kw>集成战略</>中，攻击重量较重（重量等级大于等于3）的敌人时无视其物理闪避且造成的物理伤害提升40%",
+            "color": "extra",
+            "note": "new mods isw-a",
+            "name": "char_2012_typhon",
+            "code": "uniequip_004_typhon"
+        },
+        "在<@ba.kw>集成战略</>中，自身和<替身>造成的物理和法术伤害提升40%，受到的物理和法术伤害减少40%": {
+            "en": "在<@ba.kw>集成战略</>中，自身和<替身>造成的物理和法术伤害提升40%，受到的物理和法术伤害减少40%",
+            "color": "extra",
+            "note": "new mods isw-a",
+            "name": "char_1023_ghost2",
+            "code": "uniequip_004_ghost2"
+        },
+        "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，自身攻击援军阻挡的敌人时攻击力提升至150%；不受<@ba.kw>部署数量</>限制，但再部署时间极长": {
+            "en": "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，自身攻击援军阻挡的敌人时攻击力提升至150%；不受<@ba.kw>部署数量</>限制，但再部署时间极长",
+            "color": "extra",
+            "note": "new Ops \"tactician\" Archetype trait",
+            "name": "Rhodes Island Recon",
+            "code": "char_4215_buddy"
+        },
+        "能够阻挡一个敌人，只能部署在艾露猫的攻击范围内": {
+            "en": "能够阻挡一个敌人，只能部署在艾露猫的攻击范围内",
+            "color": "common",
+            "note": "Rhodes Island Recon 's Token (Palamute)",
+            "name": " Palamute",
+            "code": "token_10063_buddy_bddg"
+        },
+        "特性消耗费用时，每消耗1点费用使本次技能期间攻击力<@ba.kw>+2%</>（上限10层）": {
+            "en": "特性消耗费用时，每消耗1点费用使本次技能期间攻击力<@ba.kw>+2%</>（上限10层）",
+            "color": "extra",
+            "note": "new mods mcn-x",
+            "name": "char_1049_catap2",
+            "code": "uniequip_002_catap2"
+        },
+        "每回收5次<@ba.kw>回旋投射物</>时获得1点技力": {
+            "en": "每回收5次<@ba.kw>回旋投射物</>时获得1点技力",
+            "color": "extra",
+            "note": "new mods lps-y",
+            "name": "char_4138_narant",
+            "code": "uniequip_003_narant"
         }
     },
     "parts": [

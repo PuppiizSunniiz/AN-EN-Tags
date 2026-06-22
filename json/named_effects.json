@@ -83,7 +83,7 @@
         "ba.strong": {
             "termId": "ba.strong",
             "termName": "Vigor",
-            "description": "When HP is higher than a certain percentage, increases certain stats (only the highest value for each stats increase from effects of this type will be applied)"
+            "description": "Increases stats when HP is above a certain percentage (only the strongest effect of this type applies)"
         },
         "ba.dt.erosion": {
             "termId": "ba.dt.erosion",
@@ -327,7 +327,7 @@
         },
         "cc.g.ussg": {
             "termId": "cc.g.ussg",
-            "termName": "Ursus Student Self-Governing Group",
+            "termName": "Ursus Student Self-government Group",
             "description": "Includes the following Operators:\nRosa, Zima, Istina, Gummy, Leto"
         },
         "cc.g.A1": {

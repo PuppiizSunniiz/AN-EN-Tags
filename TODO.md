@@ -1,10 +1,4 @@
 # Fix TL (Official EN) waiting room
-### Medjehtiqedti Bound
-- Effect
-    - ba.strong (Vigor)
-- Trait
-    - CRU-Y
-
 ### First of A Thousand Autumns
 - Archetype 
     - Watchman
