@@ -25144,6 +25144,30 @@
             "name": "Bewitched Boneyard",
             "Event": "CCBP#04"
         },
+        "crisis_v2_05-01": {
+            "stageId": "crisis_v2_05-01",
+            "levelId": "obt/crisis/v2\\level_crisis_v2_05-01.json",
+            "zoneId": "CCBP#05",
+            "code": "crisis_v2_05-01",
+            "name": "墨染书阁 (Main)",
+            "Event": "CCBP#05"
+        },
+        "crisis_v2_05-03": {
+            "stageId": "crisis_v2_05-03",
+            "levelId": "obt/crisis/v2\\level_crisis_v2_05-03.json",
+            "zoneId": "CCBP#05",
+            "code": "crisis_v2_05-03",
+            "name": "阴郁影棚",
+            "Event": "CCBP#05"
+        },
+        "crisis_v2_05-05": {
+            "stageId": "crisis_v2_05-05",
+            "levelId": "obt/crisis/v2\\level_crisis_v2_05-05.json",
+            "zoneId": "CCBP#05",
+            "code": "crisis_v2_05-05",
+            "name": "血刺坑道",
+            "Event": "CCBP#05"
+        },
         "rogue_1-1": {
             "stageId": "rogue_1-1",
             "levelId": "activities/act12d6/level_rogue_1-1.json",
@@ -34685,6 +34709,11 @@
             "crisis_v2_04-03",
             "crisis_v2_04-05"
         ],
+        "CCBP#05": [
+            "crisis_v2_05-01",
+            "crisis_v2_05-03",
+            "crisis_v2_05-05"
+        ],
         "IS#1 Floor 1": [
             "rogue_1-1",
             "rogue_1-2",
@@ -36391,6 +36420,9 @@
         ],
         "CCBP#04": [
             "CCBP#04"
+        ],
+        "CCBP#05": [
+            "CCBP#05"
         ],
         "IS#1": [
             "IS#1 Floor 1",
@@ -68582,6 +68614,14 @@
                     ]
                 }
             },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-05",
+                        "crisis_v2_05-05"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 Floor 3": [
@@ -70972,6 +71012,14 @@
                         "main_16-05#s",
                         "main_16-06#s",
                         "main_16-16#s"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-05",
+                        "crisis_v2_05-05"
                     ]
                 }
             },
@@ -73738,6 +73786,14 @@
                     ],
                     "EP16 : Training": [
                         "tr_27"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-05",
+                        "crisis_v2_05-05"
                     ]
                 }
             },
@@ -80681,6 +80737,14 @@
                         "act43side_ex07#f#"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-03",
+                        "crisis_v2_05-03"
+                    ]
+                }
             }
         },
         "enemy_10099_crvln_2": {
@@ -80716,6 +80780,14 @@
                         "act43side_ex08#f#"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-03",
+                        "crisis_v2_05-03"
+                    ]
+                }
             }
         },
         "enemy_10095_crgst": {
@@ -80742,6 +80814,14 @@
                         "act43side_03",
                         "act43side_04",
                         "act43side_05"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-03",
+                        "crisis_v2_05-03"
                     ]
                 }
             }
@@ -80789,6 +80869,13 @@
                         "act49side_mo01"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-01"
+                    ]
+                }
             }
         },
         "enemy_10164_tjgxb": {
@@ -80809,6 +80896,13 @@
                     ],
                     "act49side_zone3": [
                         "act49side_mo01"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-01"
                     ]
                 }
             }
@@ -80878,6 +80972,13 @@
                         "act49side_mo01"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-01"
+                    ]
+                }
             }
         },
         "enemy_10167_tjgsfj": {
@@ -80945,6 +81046,13 @@
                     ],
                     "act49side_zone3": [
                         "act49side_mo01"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-01"
                     ]
                 }
             }
@@ -81571,6 +81679,13 @@
                         "act49side_mo01"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-01"
+                    ]
+                }
             }
         },
         "enemy_10173_tjgbsf_2": {
@@ -81617,6 +81732,13 @@
                         "act49side_s04",
                         "act49side_s04#f#",
                         "act49side_mo01"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-01"
                     ]
                 }
             }
@@ -86708,6 +86830,14 @@
                     ]
                 }
             },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-05",
+                        "crisis_v2_05-05"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 Floor 3": [
@@ -86726,6 +86856,14 @@
                     "EP16 : Adverse Environment": [
                         "main_16-04#s",
                         "main_16-06#s"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-05",
+                        "crisis_v2_05-05"
                     ]
                 }
             }
@@ -86840,6 +86978,14 @@
                     ]
                 }
             },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-05",
+                        "crisis_v2_05-05"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 Floor 5": [
@@ -86951,6 +87097,14 @@
                     "EP16 : Adverse Environment": [
                         "main_16-15#s",
                         "hard_16-03"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-05",
+                        "crisis_v2_05-05"
                     ]
                 }
             }
@@ -89310,6 +89464,14 @@
                         "act43side_08"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-03",
+                        "crisis_v2_05-03"
+                    ]
+                }
             }
         },
         "enemy_2010_csdcr": {
@@ -89399,6 +89561,14 @@
                     "act43side_zone1": [
                         "act43side_07",
                         "act43side_08"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-03",
+                        "crisis_v2_05-03"
                     ]
                 }
             }
@@ -100711,6 +100881,13 @@
                     ]
                 }
             },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-01"
+                    ]
+                }
+            },
             "is": {
                 "IS#5": {
                     "IS#5 Floor 6": [
@@ -101858,6 +102035,14 @@
                         "act43side_08"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-03",
+                        "crisis_v2_05-03"
+                    ]
+                }
             }
         },
         "enemy_10096_crprp": {
@@ -101883,6 +102068,14 @@
                         "act43side_08"
                     ]
                 }
+            },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-03",
+                        "crisis_v2_05-03"
+                    ]
+                }
             }
         },
         "enemy_10098_crhro": {
@@ -101900,6 +102093,14 @@
                 "act43side": {
                     "act43side_zone1": [
                         "act43side_06"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-03",
+                        "crisis_v2_05-03"
                     ]
                 }
             }
@@ -108701,6 +108902,12 @@
                     "CCBP#04": [
                         "crisis_v2_04-01"
                     ]
+                },
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-03",
+                        "crisis_v2_05-03"
+                    ]
                 }
             },
             "is": {
@@ -109752,6 +109959,13 @@
                 "camp_r_32": {
                     "camp_r_32": [
                         "camp_r_32"
+                    ]
+                }
+            },
+            "cc": {
+                "CCBP#05": {
+                    "CCBP#05": [
+                        "crisis_v2_05-01"
                     ]
                 }
             },
