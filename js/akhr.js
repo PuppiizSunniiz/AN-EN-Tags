@@ -800,7 +800,7 @@ function CheckTag(el,isenter = false){
         let all_tags = JsonDATA.tagsTL.concat(JsonDATA.typesTL);
         var allsearch = all_tags.reduce((acc, element) => {
             Object.entries(element).forEach(([k,v]) => {
-                if(/(type|tag)_(cn|en|kr|jp)/.test(k) && v.toLowerCase().includes(currsearch.toLowerCase())){
+                if(/((type|tag)_(cn|en|kr|jp)|abbr)/.test(k) && v.toLowerCase().includes(currsearch.toLowerCase())){
                     if (!acc.some(search=>search[1]==element)) {
                         acc.push([v, element]);
                     }

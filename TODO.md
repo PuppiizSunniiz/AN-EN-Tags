@@ -27,6 +27,7 @@
 ### Thunder in the Azure Dream
 
 ### To Do
+- dropdown for AKHR type-in
 - Skin bar too long now (Ling)
 - handle Xiaohei cat
 - Independent-miya
