@@ -2678,14 +2678,16 @@
                 break;
             case "EquipmentEventStageKill":
                 var stage = db.stage[mission.paramList[1]]
-                var enemyid= mission.paramList[4].split(",")[2]
-
-                var enemyName = db.enemy[enemyid]
-
+                var deathdetails = mission.paramList[4].split(";")
+                var enemiesdetails = []
+                deathdetails.forEach(deathdetail =>{
+                    let enemyid = deathdetail.split(",")[2]
+                    let enemyName = db.enemy[enemyid]
+                    enemiesdetails.push(`<@ba.kw>${enemyName}</> <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${enemyid}.png" style="max-width:50px"></img>`)
+                })
                 tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
-                    </br>Kill <@ba.kw>${mission.paramList[3]}</> enemies including <@ba.kw>${mission.paramList[5]}</> <@ba.kw>${enemyName}</>
-                    <img loading='lazy' src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/enemy/${enemyid}.png" style="max-width:50px">
+                    </br>Kill <@ba.kw>${mission.paramList[3]}</> enemies including <@ba.kw>${mission.paramList[5]}</> ${enemiesdetails.join(" or ")}
                     </br>Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</>
                     `
                 break;
