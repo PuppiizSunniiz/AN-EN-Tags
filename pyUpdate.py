@@ -73,8 +73,9 @@ json_talentTL       =   json_load("json/ace/tl-talents.json")
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
 NEW_CHARS : list[str] = [
-                            "Kal'tsit·Esperanta", "Closure", "Vij", "Crackborne", "GALLUS²"
-                            , "Violet Mizutsune Orchid", "Zinogre S Catapult", "Rhodes Island Recon"
+                            "Kal'tsit·Esperanta", "Closure", "Vij", "Crackborne", "GALLUS²",
+                            "Violet Mizutsune Orchid", "Zinogre S Catapult", "Rhodes Island Recon",
+                            "Aphrissa", "Pedro",
                         ] # "", 
 
 #["ItemID#1","ItemID#2", ...]

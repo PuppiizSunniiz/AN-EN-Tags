@@ -26,6 +26,8 @@
 
 ### Thunder in the Azure Dream
 
+### Bolívar Diagnosed
+
 ### To Do
 - dropdown for AKHR type-in
 - Skin bar too long now (Ling)

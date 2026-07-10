@@ -106,7 +106,7 @@
     var skillValue
 
     const STANCE_SKILL          = ["skchr_lolxh_1", "skchr_nothin_2", "skchr_phenxi_3", "skchr_narant_1", "skchr_lin_1", "skchr_whitw2_1", "skchr_f12yin_2", "skchr_svrash_2", "skchr_hodrer_2", "skchr_oblvns_2"]
-    const INFINITE_SKILL        = ["skchr_strong_1", "skchr_strong_2", "skchr_talr_1", "skchr_flameb_2", "skchr_whitew_1", "skchr_platnm_2", "skchr_absin_1", "skchr_folivo_1", "skchr_tuye_2", "skchr_whispr_2", "skchr_vodfox_1", "skchr_quercu_1", "skchr_ash_1", "skchr_acnipe_2", "skchr_bgsnow_1", "skchr_ray_2", "skchr_marcil_2", "skchr_logos_1", "skchr_gdglow_2", "skchr_lisa_2", "skchr_skadi2_2", "skchr_cetsyr_1", "skchr_lmlee_1", "skchr_lmlee_3", "skchr_swire2_1", "skchr_swire2_2", "skchr_swire2_3", "skchr_weedy_2", "skchr_agoat2_1", "skchr_jesca2_1", "skchr_nearl2_1", "skchr_ulpia_2", "skchr_huang_2", "skchr_surtr_3", "skchr_siege2_2", "skchr_phatm2_2", "skchr_hsgma2_1", "skchr_sbell2_2"]
+    const INFINITE_SKILL        = ["skchr_strong_1", "skchr_strong_2", "skchr_talr_1", "skchr_flameb_2", "skchr_whitew_1", "skchr_platnm_2", "skchr_absin_1", "skchr_folivo_1", "skchr_tuye_2", "skchr_whispr_2", "skchr_vodfox_1", "skchr_quercu_1", "skchr_ash_1", "skchr_acnipe_2", "skchr_bgsnow_1", "skchr_ray_2", "skchr_marcil_2", "skchr_logos_1", "skchr_gdglow_2", "skchr_lisa_2", "skchr_skadi2_2", "skchr_cetsyr_1", "skchr_lmlee_1", "skchr_lmlee_3", "skchr_swire2_1", "skchr_swire2_2", "skchr_swire2_3", "skchr_weedy_2", "skchr_agoat2_1", "skchr_jesca2_1", "skchr_nearl2_1", "skchr_ulpia_2", "skchr_huang_2", "skchr_surtr_3", "skchr_siege2_2", "skchr_phatm2_2", "skchr_hsgma2_1", "skchr_sbell2_2", "skchr_aphris_1"]
     const INFINITE_DURATION     = [...STANCE_SKILL, ...INFINITE_SKILL]
     
     var israritygrouped
@@ -3559,7 +3559,7 @@
             </div>
 
             <div style="background:#222;padding:6px 5px 6px 5px;font-size:20px;text-align:center">Basic Information</div>
-            <div style="background:#333;padding:6px 5px 6px 5px;">${currequipEN?currequipEN.uniEquipDesc.replace(/\n/g,"</br>"):currequip.uniEquipDesc.replace(/\n/g,"</br>")}</div>
+            <div style="background:#333;padding:6px 5px 6px 5px;">${currequipEN?currequipEN.uniEquipDesc.replace(/\\+n/g,"</br>").replace(/\n/g,"</br>"):currequip.uniEquipDesc.replace(/\\+n/g,"</br>").replace(/\n/g,"</br>")}</div>
         `)
     }
 
@@ -4973,7 +4973,7 @@
         var currModuleTalentName = EN?EN.name:TL?TL.name:CN.name
         var currModuleTalentDesc = EN?EN.upgradeDescription:TL?TL.upgradeDescription:CN.upgradeDescription
 
-        currModuleTalentDesc = ChangeDescriptionColor2(currModuleTalentDesc.replace(/\<([A-Za-z ]+)\>/g,"&lt;"+"$1"+'&gt;').replace(/\n/g,"</br>"))
+        currModuleTalentDesc = ChangeDescriptionColor2(currModuleTalentDesc.replace(/\<([A-Za-z ]+)\>/g,"&lt;"+"$1"+'&gt;').replace(/\\+n/g,"</br>").replace(/\n/g,"</br>"))
 
         var isModuleTalentRange = (CN.rangeId == range_id)?false:CN.rangeId
         var Moduletalentdetails = []
@@ -5075,7 +5075,7 @@
             currTalentDesc = "<span style='color:white'>(Hidden Talent)</span>"
         }
         
-        currTalentDesc = ChangeDescriptionColor2(currTalentDesc.replace(/\<([A-Za-z ]+)\>/g,"&lt;"+"$1"+'&gt;').replace(/\n/g,"</br>"))
+        currTalentDesc = ChangeDescriptionColor2(currTalentDesc.replace(/\<([A-Za-z ]+)\>/g,"&lt;"+"$1"+'&gt;').replace(/\\+n/g,"</br>").replace(/\n/g,"</br>"))
         console.log(eachtalent.talent.name, currTalentDesc)
         var isTalentRange = eachtalent.talent.rangeId
         var blacklist = ["新人教官"]
@@ -5540,7 +5540,7 @@
         var skillTL = db.skillsTL[skillId];
         var desc = skillEN?skillEN.description:skillTL?skillTL.desc[level]:skill.description;
 
-        desc = ChangeDescriptionColor2(desc.replace(/\<([A-Za-z ]+)\>/g,"&lt;"+"$1"+'&gt;').replace(/\n/g,"</br>"))
+        desc = ChangeDescriptionColor2(desc.replace(/\<([A-Za-z ]+)\>/g,"&lt;"+"$1"+'&gt;').replace(/\\+n/g,"</br>").replace(/\n/g,"</br>"))
         if(desc){
             // console.log(skill)
             desc = ChangeDescriptionContent(desc,skill)

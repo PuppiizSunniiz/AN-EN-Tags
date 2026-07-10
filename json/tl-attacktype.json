@@ -1244,6 +1244,20 @@
             "note": "new mods lps-y",
             "name": "char_4138_narant",
             "code": "uniequip_003_narant"
+        },
+        "可以使用<$ba.triggereffect>触发型效果</>协助作战": {
+            "en": "可以使用<$ba.triggereffect>触发型效果</>协助作战",
+            "color": "extra",
+            "note": "new Ops \"supportiveranger\" Archetype trait",
+            "name": "Pedro",
+            "code": "char_4234_pedro"
+        },
+        "攻击范围内存在已受伤的友方干员时，自身造成的伤害提升至<@ba.kw>110%</>": {
+            "en": "攻击范围内存在已受伤的友方干员时，自身造成的伤害提升至<@ba.kw>110%</>",
+            "color": "magic",
+            "note": "new mods inc-y",
+            "name": "char_1020_reed2",
+            "code": "uniequip_003_reed2"
         }
     },
     "parts": [
