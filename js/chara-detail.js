@@ -2436,7 +2436,14 @@
     function ModuleMissionDescription(mission, missionEN){
         var tl = ''
         var squadinfo =''
-        //const damage_type = ["None", "Physical damage", "Arts damage", "True damage", "Elemental Injury", "Elemental Damage"] # confirm later
+        const MOD_DAMAGE_TYPE = {
+                                0 : "damage", 
+                                1 : "<$ba.dt.neural2>Nervous Impairment</>", 
+                                2 : "<$ba.dt.erosion2>Corrosion</>", // Maybe
+                                3 : "<$ba.dt.burning2>Burn</>", // Maybe
+                                4 : "<$ba.dt.apoptosis2>Necrosis</>", 
+                                5 : "Elemental damage",
+        }
         //probably good
         // <@ba.kw> = Blue Highlight
         switch (mission.template) {
@@ -2638,13 +2645,13 @@
                 var stage = db.stage[mission.paramList[1]]
                 tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
-                    <br>Deal total of <@ba.kw>${mission.paramList[3]}</> damage </br>
+                    <br>Deal total of <@ba.kw>${mission.paramList[3]}</> ${MOD_DAMAGE_TYPE[mission.paramList[4]]} </br>
                     Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2]]?db.chars[mission.paramList[2]].appellation:db.charpatch.patchChars[mission.paramList[2]].appellation}</>
                     `   
                 break;
             case "EquipmentDamageTotal":
                 tl=`
-                    Deal total of <@ba.kw>${mission.paramList[1]}</> damage </br>
+                    Deal total of <@ba.kw>${mission.paramList[1]}</> ${MOD_DAMAGE_TYPE[mission.paramList[2]]} </br>
                     Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[0]]?db.chars[mission.paramList[0]].appellation:db.charpatch.patchChars[mission.paramList[0]].appellation}</>
                     `
                 break;
@@ -2658,13 +2665,13 @@
                 var stage = db.stage[mission.paramList[1]]
                 tl=`
                     Clear <@ba.kw>${stage}</> with <@ba.kw>${mission.paramList[0]}</> Star
-                    <br>Deal total of <@ba.kw>${mission.paramList[3]}</> Elemental Damage </br>
+                    <br>Deal total of <@ba.kw>${mission.paramList[3]}</> ${MOD_DAMAGE_TYPE[mission.paramList[4]]} </br>
                     Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[2].split(";")[0]]?db.chars[mission.paramList[2].split(";")[0]].appellation:db.charpatch.patchChars[mission.paramList[2].split(";")[0]].appellation}</>
                     `
                 break;
             case "EquipmentDamageTypeTotal":
                 tl=`
-                    Deal total of <@ba.kw>${mission.paramList[1]}</> Elemental Damage</br>
+                    Deal total of <@ba.kw>${mission.paramList[1]}</> ${MOD_DAMAGE_TYPE[mission.paramList[2]]}</br>
                     Using Non-Borrowed <@ba.kw>${db.chars[mission.paramList[0]]?db.chars[mission.paramList[0]].appellation:db.charpatch.patchChars[mission.paramList[0]].appellation}</>
                     `
                 break;
