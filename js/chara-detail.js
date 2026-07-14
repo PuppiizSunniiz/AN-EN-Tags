@@ -3430,6 +3430,10 @@
         var TokenskillID = db.chars[token].skills[skill].skillId
         var Tokenskill = db.skills[TokenskillID]
         if(!Tokenskill) return ;
+        if(token == "token_10066_closur_ourbase"){
+            $(".Tokstatdetailcontent .rangeTableContainer").remove()
+            $(".Tokstatdetailcontent").append(rangeMaker(Tokenskill.levels[0].rangeId, true, 0, "Effect"))
+        }
         if(!Tokenskill.levels[0].description && (Tokenskill.levels[0].blackboard.length == 0)) return ;
         var content = "";
         var skilllvblackboard
