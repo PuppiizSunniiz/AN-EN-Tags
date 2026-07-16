@@ -373,7 +373,7 @@
         "cc.g.sui": {
             "termId": "cc.g.sui",
             "termName": "Sui",
-            "description": "Includes the following Operators\nNian, Dusk, Ling, Chongyue, Shu, Yu"
+            "description": "Includes the following Operators:\nNian, Dusk, Ling, Chongyue, Shu, Yu, Wang"
         },
         "cc.g.glasgow": {
             "termId": "cc.g.glasgow",
@@ -662,13 +662,13 @@
         },
         "cc.bd_wang_1": {
             "termId": "cc.bd_wang_1",
-            "termName": "外势",
-            "description": "由以下干员的基建技能提供\n望\n每有一间贸易站, 发电站, 外势+1"
+            "termName": "Influence",
+            "description": "Provided by the following Operators' skills\nWang\nFor every Trading Post and Power Plant, Influence +1"
         },
         "cc.bd_wang_2": {
             "termId": "cc.bd_wang_2",
-            "termName": "实地",
-            "description": "由以下干员的基建技能提供\n望\n每有一间制造站, 实地+1"
+            "termName": "Territory",
+            "description": "Provided by the following Operators' skills\nWang\nFor every Factory, Territory +1"
         },
         "ba.dmgresistance": {
             "termId": "ba.dmgresistance",
