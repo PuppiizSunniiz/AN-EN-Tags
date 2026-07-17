@@ -16,8 +16,8 @@ def special_op():
         for mission in mission_list:
             mission_data    : dict  = json_special["nodeUnlockMissionData"][mission]
             mission_desc    : str   = mission_data["description"]
-            mission_to      : str   = mission.split("_")[2]
-            mission_type    : str   = mission.split("_")[1]
+            mission_to      : str   = mission.split("_")[-1]
+            mission_type    : str   = mission.split("_")[-2]
             
             if mission_type == "evolve":
                 char_dict["unlock"].setdefault(mission_type, ["" for _ in range(2)])
@@ -55,6 +55,7 @@ def special_op():
         
         # sort key
         char_dict["unlock"] = {k:char_dict["unlock"][k] for k in sorted(char_dict["unlock"].keys())}
+        char_dict["proficiency"] = {k:char_dict["proficiency"][k] for k in sorted(char_dict["proficiency"].keys())}
         
         sp_op[char] = char_dict
     
