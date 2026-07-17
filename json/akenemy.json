@@ -3663,7 +3663,7 @@
                     "name": "[AD] : Act or Die",
                     "date": 1749096000,
                     "zone": {
-                        "act43side_zone1": {
+                        "act43sre_zone1": {
                             "name": "Performance Begins",
                             "stage": {
                                 "act43side_tr01": "AD-TR-1 : Entr'acte",
@@ -3677,7 +3677,7 @@
                                 "act43side_08": "AD-8 : Take a Bow"
                             }
                         },
-                        "act43side_zone2": {
+                        "act43sre_zone2": {
                             "name": "For Drama, For Eternity",
                             "stage": {
                                 "act43side_ex01": "AD-EX-1 : Dusty Prop Room",
@@ -4728,6 +4728,18 @@
                             "name": "朱墙食府",
                             "stage": {
                                 "camp_r_32": "朱墙食府"
+                            }
+                        }
+                    }
+                },
+                "camp_r_33": {
+                    "name": "默祷圣祠",
+                    "date": 1785096000,
+                    "zone": {
+                        "camp_r_33": {
+                            "name": "默祷圣祠",
+                            "stage": {
+                                "camp_r_33": "默祷圣祠"
                             }
                         }
                     }
@@ -7835,6 +7847,7 @@
         "camp_r_30": "Undercurrent Nest ",
         "camp_r_31": "炽灼车间",
         "camp_r_32": "朱墙食府",
+        "camp_r_33": "默祷圣祠",
         "tower_tr_01": "Training Ground #7",
         "tower_tr_02": "Training Ground #9",
         "tower_tr_03": "Training Ground #10",
@@ -53241,6 +53254,13 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6  ???": [
@@ -53269,6 +53289,13 @@
                         "act42side_ex07#f#",
                         "act42side_ex08",
                         "act42side_ex08#f#"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
                     ]
                 }
             },
@@ -53561,7 +53588,7 @@
             },
             "sidestory": {
                 "act43side": {
-                    "act43side_zone1": [
+                    "act43sre_zone1": [
                         "act43side_04",
                         "act43side_05"
                     ]
@@ -53586,7 +53613,7 @@
             },
             "sidestory": {
                 "act43side": {
-                    "act43side_zone2": [
+                    "act43sre_zone2": [
                         "act43side_ex01",
                         "act43side_ex01#f#",
                         "act43side_ex03",
@@ -53627,7 +53654,7 @@
             },
             "sidestory": {
                 "act43side": {
-                    "act43side_zone2": [
+                    "act43sre_zone2": [
                         "act43side_ex01",
                         "act43side_ex01#f#",
                         "act43side_ex02",
@@ -53670,7 +53697,7 @@
             },
             "sidestory": {
                 "act43side": {
-                    "act43side_zone1": [
+                    "act43sre_zone1": [
                         "act43side_01",
                         "act43side_02",
                         "act43side_03",
@@ -61602,6 +61629,13 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 Duel": [
@@ -61632,6 +61666,13 @@
                         "act42side_s03#f#",
                         "act42side_s05",
                         "act42side_s05#f#"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
                     ]
                 }
             },
@@ -61690,6 +61731,13 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 ro5_sv_3_b": [
@@ -61719,6 +61767,13 @@
                         "act42side_07",
                         "act42side_08",
                         "act42side_10"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
                     ]
                 }
             },
@@ -61763,6 +61818,13 @@
                         "act42side_s04#f#",
                         "act42side_s05",
                         "act42side_s05#f#"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
                     ]
                 }
             },
@@ -61975,7 +62037,7 @@
             },
             "sidestory": {
                 "act43side": {
-                    "act43side_zone2": [
+                    "act43sre_zone2": [
                         "act43side_ex02",
                         "act43side_ex02#f#",
                         "act43side_ex03",
@@ -62005,7 +62067,7 @@
             },
             "sidestory": {
                 "act43side": {
-                    "act43side_zone2": [
+                    "act43sre_zone2": [
                         "act43side_ex02",
                         "act43side_ex02#f#",
                         "act43side_ex04",
@@ -62029,7 +62091,7 @@
             },
             "sidestory": {
                 "act43side": {
-                    "act43side_zone2": [
+                    "act43sre_zone2": [
                         "act43side_ex01",
                         "act43side_ex01#f#",
                         "act43side_ex04",
@@ -62055,7 +62117,7 @@
             },
             "sidestory": {
                 "act43side": {
-                    "act43side_zone2": [
+                    "act43sre_zone2": [
                         "act43side_ex03",
                         "act43side_ex03#f#",
                         "act43side_ex04",
@@ -62081,7 +62143,7 @@
             },
             "sidestory": {
                 "act43side": {
-                    "act43side_zone2": [
+                    "act43sre_zone2": [
                         "act43side_ex04",
                         "act43side_ex04#f#",
                         "act43side_ex08",
@@ -62101,7 +62163,7 @@
             },
             "sidestory": {
                 "act43side": {
-                    "act43side_zone1": [
+                    "act43sre_zone1": [
                         "act43side_07",
                         "act43side_08"
                     ]
@@ -62200,7 +62262,7 @@
             },
             "sidestory": {
                 "act43side": {
-                    "act43side_zone1": [
+                    "act43sre_zone1": [
                         "act43side_07",
                         "act43side_08"
                     ]
@@ -62226,7 +62288,7 @@
             },
             "sidestory": {
                 "act43side": {
-                    "act43side_zone2": [
+                    "act43sre_zone2": [
                         "act43side_ex04",
                         "act43side_ex04#f#",
                         "act43side_ex08",
@@ -68624,6 +68686,13 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 ro5_sv_3_b": [
@@ -68648,6 +68717,13 @@
                     "act42sre_zone1": [
                         "act42side_07",
                         "act42side_08"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
                     ]
                 }
             },
@@ -68940,6 +69016,13 @@
                         "act42side_s04#f#",
                         "act42side_s05",
                         "act42side_s05#f#"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
                     ]
                 }
             }
@@ -69323,6 +69406,13 @@
                         "act42side_07",
                         "act42side_08",
                         "act42side_10"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
                     ]
                 }
             },
@@ -74400,7 +74490,7 @@
         "enemy_10094_crstf": {
             "sidestory": {
                 "act43side": {
-                    "act43side_zone1": [
+                    "act43sre_zone1": [
                         "act43side_tr01",
                         "act43side_01",
                         "act43side_02",
@@ -74424,7 +74514,7 @@
         "enemy_10096_crprp": {
             "sidestory": {
                 "act43side": {
-                    "act43side_zone1": [
+                    "act43sre_zone1": [
                         "act43side_tr01",
                         "act43side_02",
                         "act43side_05",
@@ -74438,7 +74528,7 @@
         "enemy_10097_crshd": {
             "sidestory": {
                 "act43side": {
-                    "act43side_zone1": [
+                    "act43sre_zone1": [
                         "act43side_03",
                         "act43side_06",
                         "act43side_08"
@@ -74457,7 +74547,7 @@
         "enemy_10098_crhro": {
             "sidestory": {
                 "act43side": {
-                    "act43side_zone1": [
+                    "act43sre_zone1": [
                         "act43side_04",
                         "act43side_05"
                     ]
@@ -74467,7 +74557,7 @@
         "enemy_10100_crrol": {
             "sidestory": {
                 "act43side": {
-                    "act43side_zone1": [
+                    "act43sre_zone1": [
                         "act43side_06"
                     ]
                 }
@@ -74484,10 +74574,10 @@
         "enemy_1568_dirctr": {
             "sidestory": {
                 "act43side": {
-                    "act43side_zone1": [
+                    "act43sre_zone1": [
                         "act43side_08"
                     ],
-                    "act43side_zone2": [
+                    "act43sre_zone2": [
                         "act43side_ex08",
                         "act43side_ex08#f#"
                     ]
@@ -74497,7 +74587,7 @@
         "enemy_10100_crrol_2": {
             "sidestory": {
                 "act43side": {
-                    "act43side_zone2": [
+                    "act43sre_zone2": [
                         "act43side_ex05",
                         "act43side_ex05#f#",
                         "act43side_ex06",
@@ -75733,6 +75823,11 @@
                     "camp_r_12": [
                         "camp_r_12"
                     ]
+                },
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
+                    ]
                 }
             },
             "sss": {
@@ -75796,6 +75891,11 @@
                 "camp_r_12": {
                     "camp_r_12": [
                         "camp_r_12"
+                    ]
+                },
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
                     ]
                 }
             },
@@ -75937,6 +76037,13 @@
                         "act42side_s05#f#"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
+                    ]
+                }
             }
         },
         "enemy_10092_hlslp_2": {
@@ -75963,6 +76070,13 @@
                         "act42side_s04#f#"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
+                    ]
+                }
             }
         },
         "enemy_10092_hlslp_3": {
@@ -75978,6 +76092,13 @@
                         "act42side_ex07#f#"
                     ]
                 }
+            },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
+                    ]
+                }
             }
         },
         "enemy_10087_hlchgr": {
@@ -75989,6 +76110,13 @@
                         "act42side_08",
                         "act42side_09",
                         "act42side_10"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
                     ]
                 }
             }
@@ -76051,6 +76179,13 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6 Duel": [
@@ -76067,6 +76202,13 @@
                         "act42side_06",
                         "act42side_08",
                         "act42side_10"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
                     ]
                 }
             }
@@ -76089,6 +76231,13 @@
                 "act42side": {
                     "act42sre_zone1": [
                         "act42side_09"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
                     ]
                 }
             }
@@ -76178,6 +76327,13 @@
                     ]
                 }
             },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
+                    ]
+                }
+            },
             "is": {
                 "IS#6": {
                     "IS#6  ???": [
@@ -76205,6 +76361,13 @@
                         "act42side_s03#f#",
                         "act42side_s05",
                         "act42side_s05#f#"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
                     ]
                 }
             },
@@ -76239,6 +76402,13 @@
                         "act42side_s02#f#",
                         "act42side_s05",
                         "act42side_s05#f#"
+                    ]
+                }
+            },
+            "campaign": {
+                "camp_r_33": {
+                    "camp_r_33": [
+                        "camp_r_33"
                     ]
                 }
             },

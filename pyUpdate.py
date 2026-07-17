@@ -76,7 +76,8 @@ NEW_CHARS : list[str] = [
                             "Kal'tsit·Esperanta", "Closure", "Vij", "Crackborne", "GALLUS²",
                             "Violet Mizutsune Orchid", "Zinogre S Catapult", "Rhodes Island Recon",
                             "Aphrissa", "Pedro",
-                        ] # "", 
+                            "Mechanist", 
+                        ] # 
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS : list[str] = ["31103", "31104", "31113", "31114", ] # "", 

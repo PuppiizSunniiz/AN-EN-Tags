@@ -5,13 +5,8 @@
                 "Reach Yunwa Gazebo in Integrated Strategies: Sui's Garden of Grotesqueries (Regular Operations)",
                 "Clear any ending in Integrated Strategies: Sui's Garden of Grotesqueries (Regular Operations) on Guided Tour 2 or above"
             ],
-            "master1": [
-                "Unlock in Elite 1",
-                "Unlock in Elite 2"
-            ],
-            "master2": [
-                "Unlock in Elite 2"
-            ],
+            "master1": ["Unlock in Elite 1", "Unlock in Elite 2"],
+            "master2": ["Unlock in Elite 2"],
             "master3": [
                 "Turn 5 Operators into Candleguests in Integrated Strategies: Sui's Garden of Grotesqueries (Regular Operations) on Guided Tour 1 or above",
                 "Turn 10 Operators into Candleguests in Integrated Strategies: Sui's Garden of Grotesqueries (Regular Operations) on Guided Tour 3 or above",
@@ -71,59 +66,59 @@
             "master1": [
                 {
                     "name": "Expert Backup I",
-                    "description" : "Unlocks the 'Ask Raidian to scout ahead' option in the 'Concentricity' Encounter"
+                    "description": "Unlocks the 'Ask Raidian to scout ahead' option in the 'Concentricity' Encounter"
                 },
                 {
                     "name": "Expert Backup I",
-                    "description" : "Unlocks the 'Ask Raidian to negotiate' option in the 'Concentricity' Encounter and the 'Let Raidian enter' option in the 'Concentricity' Legend"
+                    "description": "Unlocks the 'Ask Raidian to negotiate' option in the 'Concentricity' Encounter and the 'Let Raidian enter' option in the 'Concentricity' Legend"
                 }
             ],
             "master2": [
                 {
                     "name": "Expert Backup II",
-                    "description" : "Special Squad effect increased"
+                    "description": "Special Squad effect increased"
                 }
             ],
             "master3": [
                 {
                     "name": "Expert Recruit I",
-                    "description" : "In [Sui's Garden of Grotesqueries], costs -2 Hope to recruit"
+                    "description": "In [Sui's Garden of Grotesqueries], costs -2 Hope to recruit"
                 },
                 {
                     "name": "Expert Recruit I",
-                    "description" : "In [Sui's Garden of Grotesqueries], costs -4 Hope to recruit"
+                    "description": "In [Sui's Garden of Grotesqueries], costs -4 Hope to recruit"
                 },
                 {
                     "name": "Expert Recruit I",
-                    "description" : "In [Sui's Garden of Grotesqueries], costs -4 Hope to recruit, costs -2 Hope to promote"
+                    "description": "In [Sui's Garden of Grotesqueries], costs -4 Hope to recruit, costs -2 Hope to promote"
                 }
             ],
             "master4": [
                 {
                     "name": "Expert Recruit II",
-                    "description" : "In [Sui's Garden of Grotesqueries], +1 Voucher Conservation Limit when recruited"
+                    "description": "In [Sui's Garden of Grotesqueries], +1 Voucher Conservation Limit when recruited"
                 },
                 {
                     "name": "Expert Recruit II",
-                    "description" : "In [Sui's Garden of Grotesqueries], +1 Voucher Conservation Limit when recruited, +1 Candle on the next entry into Sui's Remnant Consciousness"
+                    "description": "In [Sui's Garden of Grotesqueries], +1 Voucher Conservation Limit when recruited, +1 Candle on the next entry into Sui's Remnant Consciousness"
                 },
                 {
                     "name": "Expert Recruit II",
-                    "description" : "In [Sui's Garden of Grotesqueries], +1 Voucher Conservation Limit and +2 Objective Shield when recruited, +1 Candle and randomly explores 1 node on the next entry into Sui's Remnant Consciousness"
+                    "description": "In [Sui's Garden of Grotesqueries], +1 Voucher Conservation Limit and +2 Objective Shield when recruited, +1 Candle and randomly explores 1 node on the next entry into Sui's Remnant Consciousness"
                 }
             ],
             "master5": [
                 {
                     "name": "Expert Fighter I",
-                    "description" : "In [Sui's Garden of Grotesqueries], Raidian gains the following effects with every new floor you enter: Summons have -9 DP Cost, Summons Deployment Limit +1"
+                    "description": "In [Sui's Garden of Grotesqueries], Raidian gains the following effects with every new floor you enter: Summons have -9 DP Cost, Summons Deployment Limit +1"
                 },
                 {
                     "name": "Expert Fighter I",
-                    "description" : "In [Sui's Garden of Grotesqueries], Raidian gains the following effects with every new floor you enter: Summons have -9 DP Cost, Summons Deployment Limit +2, Summons gain +20 ASPD"
+                    "description": "In [Sui's Garden of Grotesqueries], Raidian gains the following effects with every new floor you enter: Summons have -9 DP Cost, Summons Deployment Limit +2, Summons gain +20 ASPD"
                 },
                 {
                     "name": "Expert Fighter I",
-                    "description" : "In [Sui's Garden of Grotesqueries], Raidian gains the following effects with every new floor you enter: Summons have -9 DP Cost, Summons Deployment Limit +2, Summons gain +35 ASPD and no longer use Deployment slots"
+                    "description": "In [Sui's Garden of Grotesqueries], Raidian gains the following effects with every new floor you enter: Summons have -9 DP Cost, Summons Deployment Limit +2, Summons gain +35 ASPD and no longer use Deployment slots"
                 }
             ],
             "master6": [
@@ -138,6 +133,136 @@
                 {
                     "name": "Expert Fighter II",
                     "description": "In [Sui's Garden of Grotesqueries], Raidian and her summons have HP and DEF +30%, and RES +15"
+                }
+            ]
+        }
+    },
+    "char_4230_mcnist": {
+        "unlock": {
+            "master1": [
+                "集成战略：沉沦者的黑流树海中招募时生效",
+                "集成战略：沉沦者的黑流树海中招募时生效",
+                "集成战略：沉沦者的黑流树海中招募时生效"
+            ],
+            "master2": [
+                "集成战略：沉沦者的黑流树海中招募后生效",
+                "集成战略：沉沦者的黑流树海中招募后生效",
+                "集成战略：沉沦者的黑流树海中招募后生效"
+            ],
+            "master3": [
+                "集成战略：沉沦者的黑流树海中招募后生效",
+                "集成战略：沉沦者的黑流树海中招募后生效",
+                "集成战略：沉沦者的黑流树海中招募后生效"
+            ],
+            "master4": [
+                "集成战略：沉沦者的黑流树海中招募后生效",
+                "集成战略：沉沦者的黑流树海中招募后生效",
+                "集成战略：沉沦者的黑流树海中招募后生效"
+            ],
+            "master5": ["无需招募，培训至精英阶段二生效"],
+            "master6": ["无需招募，进入1层时生效"],
+            "skill": [
+                "",
+                "在集成战略：沉沦者的黑流树海的常规行动保密等级·1及以上，到达5层",
+                "在集成战略：沉沦者的黑流树海的常规行动保密等级·1及以上，到达5层",
+                "在集成战略：沉沦者的黑流树海的常规行动保密等级·1及以上，到达5层",
+                "在集成战略：沉沦者的黑流树海的常规行动保密等级·1及以上，累计通过5次任意战斗节点",
+                "在集成战略：沉沦者的黑流树海的常规行动保密等级·1及以上，累计通过5次任意战斗节点",
+                "在集成战略：沉沦者的黑流树海的常规行动保密等级·1及以上，累计通过5次任意战斗节点"
+            ],
+            "skill1": [
+                "在集成战略：沉沦者的黑流树海的常规行动保密等级·2及以上，通关任意结局",
+                "在集成战略：沉沦者的黑流树海的常规行动保密等级·2及以上，累计通过5次任意战斗节点",
+                "在集成战略：沉沦者的黑流树海的常规行动保密等级·5及以上，使用文明开化分队招募机械师并达成任意结局"
+            ],
+            "skill2": [
+                "在集成战略：沉沦者的黑流树海的常规行动保密等级·3及以上，通关任意结局",
+                "在集成战略：沉沦者的黑流树海的常规行动保密等级·3及以上，探索1次狭路相逢节点",
+                "在集成战略：沉沦者的黑流树海的常规行动保密等级·6及以上，使用开拓者分队招募机械师并达成任意结局"
+            ],
+            "skill3": [
+                "在集成战略：沉沦者的黑流树海的常规行动保密等级·4及以上，通关任意结局",
+                "在集成战略：沉沦者的黑流树海的常规行动保密等级·4及以上，探索1次误入奇境节点",
+                "在集成战略：沉沦者的黑流树海的常规行动保密等级·7及以上，使用地质调查分队招募机械师并达成任意结局"
+            ],
+            "uniequip1": [
+                "在集成战略：沉沦者的黑流树海的常规行动保密等级·4及以上，累计通过5次任意战斗节点",
+                "在集成战略：沉沦者的黑流树海的常规行动保密等级·4及以上，使用多边贸易分队招募机械师并达成任意结局",
+                "在集成战略：沉沦者的黑流树海的常规行动中，累计通过5次秘境行商节点"
+            ],
+            "uniequip2": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "proficiency": {
+            "master6": [
+                {
+                    "name": "后备精通 I",
+                    "description": "在【沉沦者的黑流树海】中，进入1层时，机械师作为临时助力加入队伍"
+                }
+            ],
+            "master5": [
+                {
+                    "name": "后备精通 II",
+                    "description": "特勤分队效果提升"
+                }
+            ],
+            "master1": [
+                {
+                    "name": "招募精通 I",
+                    "description": "在【沉沦者的黑流树海】中，被招募时希望消耗-2"
+                },
+                {
+                    "name": "招募精通 I",
+                    "description": "在【沉沦者的黑流树海】中，被招募时希望消耗-2，被进阶时希望消耗-2"
+                },
+                {
+                    "name": "招募精通 I",
+                    "description": "在【沉沦者的黑流树海】中，被招募时希望消耗-4，被进阶时希望消耗-2"
+                }
+            ],
+            "master4": [
+                {
+                    "name": "招募精通 II",
+                    "description": "在【沉沦者的黑流树海】中，被招募时，使零件箱容量+1"
+                },
+                {
+                    "name": "招募精通 II",
+                    "description": "在【沉沦者的黑流树海】中，被招募时，使零件箱容量+1，被进阶时获得【标准引擎】"
+                },
+                {
+                    "name": "招募精通 II",
+                    "description": "在【沉沦者的黑流树海】中，被招募时，使零件箱容量+2，被进阶时获得【结构性原理】"
+                }
+            ],
+            "master2": [
+                {
+                    "name": "战斗精通 I",
+                    "description": "在【沉沦者的黑流树海】中，机械师和其召唤物的生命+20%"
+                },
+                {
+                    "name": "战斗精通 I",
+                    "description": "在【沉沦者的黑流树海】中，机械师和其召唤物生命值、防御力+25％"
+                },
+                {
+                    "name": "战斗精通 I",
+                    "description": "在【沉沦者的黑流树海】中，机械师和其召唤物生命值、防御力+30％，法术抗性+15"
+                }
+            ],
+            "master3": [
+                {
+                    "name": "战斗精通 II",
+                    "description": "在【沉沦者的黑流树海】中，机械师和其召唤物每秒对阻挡的敌人造成攻击力25%的法术伤害"
+                },
+                {
+                    "name": "战斗精通 II",
+                    "description": "在【沉沦者的黑流树海】中，机械师和其召唤物每秒对阻挡的敌人造成攻击力35%的法术伤害"
+                },
+                {
+                    "name": "战斗精通 II",
+                    "description": "在【沉沦者的黑流树海】中，机械师和其召唤物每秒对阻挡的敌人造成攻击力50%的法术伤害"
                 }
             ]
         }

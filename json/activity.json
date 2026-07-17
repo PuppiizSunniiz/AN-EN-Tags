@@ -1,5 +1,10 @@
 {
     "Dict": {
+        "act43sre": {
+            "nameCN": "红丝绒·复刻",
+            "nameEN": "Act or Die (Rerun)",
+            "startCN": 1784491200
+        },
         "act21mini": {
             "nameCN": "丛林症结",
             "nameEN": "Bolívar Diagnosed",
@@ -1024,6 +1029,11 @@
             "nameCN": "朱墙食府",
             "nameEN": "朱墙食府",
             "startCN": 1777233600
+        },
+        "camp_r_33": {
+            "nameCN": "默祷圣祠",
+            "nameEN": "默祷圣祠",
+            "startCN": 1785096000
         },
         "tower_tr_01": {
             "nameCN": "7号训练场",
@@ -2381,6 +2391,16 @@
             "act21mini",
             "Bolívar Diagnosed",
             1783638000
+        ],
+        [
+            "act43sre",
+            "Act or Die (Rerun)",
+            1784491200
+        ],
+        [
+            "camp_r_33",
+            "默祷圣祠",
+            1785096000
         ]
     ]
 }
