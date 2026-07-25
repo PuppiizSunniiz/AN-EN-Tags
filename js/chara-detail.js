@@ -3604,11 +3604,7 @@
             // console.log(materialist)
         }
         var materialHtml =''
-        if(materialist.length>0){
-            materialHtml=`
-            <div style="text-align:center;background:#222">Elite Requirements</div>
-            <div style="text-align:center">${materialist.join("")}</div>`
-        }else if(gmapp == "SO" && i > 0){
+        if(gmapp == "SO" && i > 0){
             SO_condUnlocking = db.special_operator[opdataFull.id].unlock["evolve"][i - 1]
             materialHtml=`
             <div style="text-align:center;background:#222">
@@ -3617,6 +3613,10 @@
             <div class = "SO-Unlock" style="padding: 5px 8px;">
                 ${ChangeDescriptionColor2(SO_condUnlocking)}
             </div>`
+        }else if(materialist.length>0){
+            materialHtml=`
+            <div style="text-align:center;background:#222">Elite Requirements</div>
+            <div style="text-align:center">${materialist.join("")}</div>`
         }
         var keyframes = [];
         $.each(opdataFull.phases[i].attributesKeyFrames,function(j,v){

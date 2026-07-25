@@ -532,9 +532,18 @@ def IS_boss(stage_id : str, IS : str) -> str:
                                     "ro5_b_5"    : 5,
                                     "ro5_b_6"    : 6,
                                     "ro5_b_7"    : 6
+                                },
+                        "IS#7":{
+                                    "ro6_b_1"    : 3,
+                                    "ro6_b_2"    : 3,
+                                    "ro6_b_3"    : 3,
+                                    "ro6_b_4"    : 5,
+                                    "ro6_b_5"    : 5,
+                                    "ro6_b_6"    : 6,
+                                    "ro6_b_7"    : 6
                                 }
                     }
-    return IS_boss_dict[IS].get(re.search(r'(ro[0-9]{0,2}_._[0-9]{1,2})(_[a-z]{1}|)',stage_id).group(1),"???") # cut variant _b _c
+    return IS_boss_dict.get(IS, {}).get(re.search(r'(ro[0-9]{0,2}_._[0-9]{1,2})(_[a-z]{1}|)',stage_id).group(1),"???") # cut variant _b _c
 
 def get_stage_gamemode(stage_event : str) -> str:
         if stage_event.find("main_") != -1 or re.search(r'act[0-9]{1,2}mainss',stage_event):
@@ -1108,6 +1117,8 @@ def akenemy_collect(json_zone, json_zoneEN):
             sort_event = sorted(akenemy["gamemode"][gamemode]["activity"].items(), reverse = False, key = lambda event : int(event[0].split("_")[-1]))
             akenemy["gamemode"][gamemode]["activity"] = {x[0]:x[1] for x in sort_event}
         if gamemode in ["main"]:
+            sort_event = sorted(akenemy["gamemode"][gamemode]["activity"].items(), reverse = False, key = lambda event : json_zone["zones"][event[0]]["zoneNameTitleUnCurrent"])
+            akenemy["gamemode"][gamemode]["activity"] = {x[0]:x[1] for x in sort_event}
             for act in akenemy["gamemode"][gamemode]["activity"]:
                 sort_zone = sorted(akenemy["gamemode"][gamemode]["activity"][act]["zone"].items(), reverse = False, key = lambda zone : mainzone_sorter[zone[0].split(" : ")[-1]])
                 akenemy["gamemode"][gamemode]["activity"][act]["zone"] = {x[0]:x[1] for x in sort_zone}

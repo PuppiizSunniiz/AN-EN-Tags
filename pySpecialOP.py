@@ -3,9 +3,11 @@ import re
 from pyfunction import json_load, printr, script_result
 
 def special_op():
-    json_special = json_load(r"json\gamedata\ArknightsGameData\zh_CN\gamedata\excel\special_operator_table.json")
-    json_char_meta = json_load(r"json\gamedata\ArknightsGameData\zh_CN\gamedata\excel\char_meta_table.json")
+    json_special    = json_load(r"json\gamedata\ArknightsGameData\zh_CN\gamedata\excel\special_operator_table.json")
+    json_char_meta  = json_load(r"json\gamedata\ArknightsGameData\zh_CN\gamedata\excel\char_meta_table.json")
     
+    json_specialEN    = json_load(r"json\gamedata\ArknightsGameData_YoStar\en_US\gamedata\excel\special_operator_table.json")
+    json_char_metaEN  = json_load(r"json\gamedata\ArknightsGameData_YoStar\en_US\gamedata\excel\char_meta_table.json")
     sp_op : dict = {}
 
     for char in json_special["nodeUnlockMissionGroup"].keys():
@@ -14,7 +16,7 @@ def special_op():
         mission_list : list[str] = json_special["nodeUnlockMissionGroup"][char]["missionIds"]
         
         for mission in mission_list:
-            mission_data    : dict  = json_special["nodeUnlockMissionData"][mission]
+            mission_data    : dict  = json_specialEN["nodeUnlockMissionData"].get(mission, json_special["nodeUnlockMissionData"][mission])
             mission_desc    : str   = mission_data["description"]
             mission_to      : str   = mission.split("_")[-1]
             mission_type    : str   = mission.split("_")[-2]
@@ -46,7 +48,7 @@ def special_op():
         master_list : list[str] = json_char_meta["charIdMasterListMap"][char]
         
         for master in master_list: 
-            master_lv_list = json_char_meta["charMasterDataMap"][master]["levelList"]
+            master_lv_list = json_char_metaEN["charMasterDataMap"].get(master, json_char_meta["charMasterDataMap"][master])["levelList"]
             master_type = master.replace(f'_{char.split("_")[-1]}_', "")
             if master_type not in char_dict["unlock"].keys():
                 char_dict["unlock"][master_type] = [lv["conditionDesc"] for lv in master_lv_list ]
@@ -55,7 +57,9 @@ def special_op():
         
         # sort key
         char_dict["unlock"] = {k:char_dict["unlock"][k] for k in sorted(char_dict["unlock"].keys())}
-        char_dict["proficiency"] = {k:char_dict["proficiency"][k] for k in sorted(char_dict["proficiency"].keys())}
+        
+        sort_master_key             = list(dict.fromkeys([list(node.values())[0].split("_")[-2] for node in json_special["operatorDetailData"][char]["nodeDiagramMap"]["MASTER"]["nodePointDataMap"].values()]))
+        char_dict["proficiency"]    = {k:char_dict["proficiency"][k] for k in sort_master_key}
         
         sp_op[char] = char_dict
     

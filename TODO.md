@@ -1,13 +1,4 @@
 # Fix TL (Official EN) waiting room
-### First of A Thousand Autumns
-- Archetype 
-    - Watchman
-- Trait
-    - Watchman
-    - Primal Protector
-    - Irene IS
-    - Passenger RA
-
 ### Crossing
 - Effect
     - ba.dmgresistance
@@ -23,10 +14,33 @@
     - Skadi the Corrupting Heart
 
 ### EP17 : Critical Phase Transition
+- Trait
+    - Kal'tsit Esperanta 's Token (Tactical Anchor)
+    - Closure 's Token (Command Center)
+    - GALLUS²
+- Mod Trait
+    - Typhon isw-a
+    - Specter the Unchained isw-a
 
 ### Thunder in the Azure Dream
+- Trait
+    - Rhodes Island Recon
+    - Rhodes Island Recon 's Token (Palamute)
+- Mod Trait
+    - Zinogre S Catapult mcn-x
+    - Narantuya lps-y
 
 ### Bolívar Diagnosed
+- Archetype
+    - supportiveranger
+- Trait
+    - supportiveranger
+- Mod Trait
+    - Reed The Flame Shadow inc-y
+
+### IS#7: The Black Flow of the Drowning Seekers
+- Mod Trait
+    - Mechanist so-a
 
 ### To Do
 - dropdown for AKHR type-in

@@ -5,8 +5,13 @@
                 "Reach Yunwa Gazebo in Integrated Strategies: Sui's Garden of Grotesqueries (Regular Operations)",
                 "Clear any ending in Integrated Strategies: Sui's Garden of Grotesqueries (Regular Operations) on Guided Tour 2 or above"
             ],
-            "master1": ["Unlock in Elite 1", "Unlock in Elite 2"],
-            "master2": ["Unlock in Elite 2"],
+            "master1": [
+                "Does not require recruitment, goes into effect after training to Elite 1",
+                "Does not require recruitment, goes into effect after training to Elite 2"
+            ],
+            "master2": [
+                "Does not require recruitment, goes into effect after training to Elite 2"
+            ],
             "master3": [
                 "Turn 5 Operators into Candleguests in Integrated Strategies: Sui's Garden of Grotesqueries (Regular Operations) on Guided Tour 1 or above",
                 "Turn 10 Operators into Candleguests in Integrated Strategies: Sui's Garden of Grotesqueries (Regular Operations) on Guided Tour 3 or above",
@@ -202,6 +207,18 @@
             ]
         },
         "proficiency": {
+            "master6": [
+                {
+                    "name": "后备精通 I",
+                    "description": "在【沉沦者的黑流树海】中，进入1层时，机械师作为临时助力加入队伍"
+                }
+            ],
+            "master5": [
+                {
+                    "name": "后备精通 II",
+                    "description": "特勤分队效果提升"
+                }
+            ],
             "master1": [
                 {
                     "name": "招募精通 I",
@@ -214,6 +231,20 @@
                 {
                     "name": "招募精通 I",
                     "description": "在【沉沦者的黑流树海】中，被招募时希望消耗-4，被进阶时希望消耗-2"
+                }
+            ],
+            "master4": [
+                {
+                    "name": "招募精通 II",
+                    "description": "在【沉沦者的黑流树海】中，被招募时，使零件箱容量+1"
+                },
+                {
+                    "name": "招募精通 II",
+                    "description": "在【沉沦者的黑流树海】中，被招募时，使零件箱容量+1，被进阶时获得【标准引擎】"
+                },
+                {
+                    "name": "招募精通 II",
+                    "description": "在【沉沦者的黑流树海】中，被招募时，使零件箱容量+2，被进阶时获得【结构性原理】"
                 }
             ],
             "master2": [
@@ -242,32 +273,6 @@
                 {
                     "name": "战斗精通 II",
                     "description": "在【沉沦者的黑流树海】中，机械师和其召唤物每秒对阻挡的敌人造成攻击力50%的法术伤害"
-                }
-            ],
-            "master4": [
-                {
-                    "name": "招募精通 II",
-                    "description": "在【沉沦者的黑流树海】中，被招募时，使零件箱容量+1"
-                },
-                {
-                    "name": "招募精通 II",
-                    "description": "在【沉沦者的黑流树海】中，被招募时，使零件箱容量+1，被进阶时获得【标准引擎】"
-                },
-                {
-                    "name": "招募精通 II",
-                    "description": "在【沉沦者的黑流树海】中，被招募时，使零件箱容量+2，被进阶时获得【结构性原理】"
-                }
-            ],
-            "master5": [
-                {
-                    "name": "后备精通 II",
-                    "description": "特勤分队效果提升"
-                }
-            ],
-            "master6": [
-                {
-                    "name": "后备精通 I",
-                    "description": "在【沉沦者的黑流树海】中，进入1层时，机械师作为临时助力加入队伍"
                 }
             ]
         }
