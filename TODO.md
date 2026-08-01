@@ -42,6 +42,11 @@
 - Mod Trait
     - Mechanist so-a
 
+### Till the Lands Become an Orange
+- Mod Trait
+    - Fiammetta ISW-A
+    - Gavial the Invincible RA-A
+
 ### To Do
 - dropdown for AKHR type-in
 - Skin bar too long now (Ling)

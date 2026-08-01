@@ -13,6 +13,11 @@
                 "nationId": "rim",
                 "groupId": null,
                 "teamId": null
+            },
+            {
+                "nationId": null,
+                "groupId": "babel",
+                "teamId": null
             }
         ],
         "type": "术师",
@@ -793,6 +798,11 @@
                 "nationId": "kazimierz",
                 "groupId": null,
                 "teamId": null
+            },
+            {
+                "nationId": "rhodes",
+                "groupId": null,
+                "teamId": null
             }
         ],
         "type": "重装",
@@ -883,7 +893,13 @@
         "nationId": "rhodes",
         "groupId": null,
         "teamId": null,
-        "subPower": null,
+        "subPower": [
+            {
+                "nationId": "kazimierz",
+                "groupId": null,
+                "teamId": null
+            }
+        ],
         "type": "狙击",
         "level": 5,
         "sex": "女",
@@ -953,7 +969,13 @@
         "nationId": "rhodes",
         "groupId": null,
         "teamId": null,
-        "subPower": null,
+        "subPower": [
+            {
+                "nationId": null,
+                "groupId": "babel",
+                "teamId": null
+            }
+        ],
         "type": "医疗",
         "level": 5,
         "sex": "女",
@@ -1587,7 +1609,13 @@
         "nationId": "rim",
         "groupId": null,
         "teamId": null,
-        "subPower": null,
+        "subPower": [
+            {
+                "nationId": "rhodes",
+                "groupId": null,
+                "teamId": null
+            }
+        ],
         "type": "近卫",
         "level": 5,
         "sex": "女",
@@ -3499,13 +3527,7 @@
         "nationId": "rhodes",
         "groupId": null,
         "teamId": null,
-        "subPower": [
-            {
-                "nationId": "ursus",
-                "groupId": null,
-                "teamId": null
-            }
-        ],
+        "subPower": null,
         "type": "医疗",
         "level": 5,
         "sex": "女",
@@ -3528,7 +3550,13 @@
         "nationId": "siracusa",
         "groupId": null,
         "teamId": null,
-        "subPower": null,
+        "subPower": [
+            {
+                "nationId": "higashi",
+                "groupId": null,
+                "teamId": null
+            }
+        ],
         "type": "辅助",
         "level": 6,
         "sex": "女",
@@ -4714,7 +4742,13 @@
         "nationId": "rhodes",
         "groupId": null,
         "teamId": null,
-        "subPower": null,
+        "subPower": [
+            {
+                "nationId": null,
+                "groupId": "babel",
+                "teamId": null
+            }
+        ],
         "type": "医疗",
         "level": 6,
         "sex": "女",
@@ -4925,7 +4959,7 @@
             "输出",
             "控场"
         ],
-        "hidden": true,
+        "hidden": false,
         "globalHidden": true,
         "gamemode": "BASE"
     },
@@ -4947,7 +4981,7 @@
             "近战位",
             "输出"
         ],
-        "hidden": true,
+        "hidden": false,
         "globalHidden": true,
         "gamemode": "BASE"
     },
@@ -5099,6 +5133,11 @@
                 "nationId": null,
                 "groupId": null,
                 "teamId": "followers"
+            },
+            {
+                "nationId": "rhodes",
+                "groupId": null,
+                "teamId": null
             }
         ],
         "type": "近卫",
@@ -5577,7 +5616,13 @@
         "nationId": "higashi",
         "groupId": null,
         "teamId": null,
-        "subPower": null,
+        "subPower": [
+            {
+                "nationId": "rhodes",
+                "groupId": null,
+                "teamId": null
+            }
+        ],
         "type": "特种",
         "level": 5,
         "sex": "女",
@@ -5984,7 +6029,7 @@
         "teamId": null,
         "subPower": [
             {
-                "nationId": "ursus",
+                "nationId": "sargon",
                 "groupId": null,
                 "teamId": null
             }
@@ -6240,13 +6285,7 @@
         "nationId": "rhodes",
         "groupId": null,
         "teamId": null,
-        "subPower": [
-            {
-                "nationId": "columbia",
-                "groupId": null,
-                "teamId": null
-            }
-        ],
+        "subPower": null,
         "type": "医疗",
         "level": 5,
         "sex": "女",
@@ -7474,7 +7513,13 @@
         "nationId": "victoria",
         "groupId": null,
         "teamId": null,
-        "subPower": null,
+        "subPower": [
+            {
+                "nationId": "kjerag",
+                "groupId": null,
+                "teamId": null
+            }
+        ],
         "type": "医疗",
         "level": 5,
         "sex": "男",
@@ -7808,7 +7853,13 @@
         "nationId": "rhodes",
         "groupId": "sweep",
         "teamId": null,
-        "subPower": null,
+        "subPower": [
+            {
+                "nationId": null,
+                "groupId": "babel",
+                "teamId": null
+            }
+        ],
         "type": "特种",
         "level": 6,
         "sex": "女",
@@ -7860,7 +7911,13 @@
         "nationId": "rhodes",
         "groupId": null,
         "teamId": null,
-        "subPower": null,
+        "subPower": [
+            {
+                "nationId": null,
+                "groupId": "babel",
+                "teamId": null
+            }
+        ],
         "type": "近卫",
         "level": 5,
         "sex": "男",
@@ -7933,7 +7990,13 @@
         "nationId": "rhodes",
         "groupId": "elite",
         "teamId": null,
-        "subPower": null,
+        "subPower": [
+            {
+                "nationId": null,
+                "groupId": "babel",
+                "teamId": null
+            }
+        ],
         "type": "术师",
         "level": 6,
         "sex": "男",
@@ -7955,7 +8018,13 @@
         "nationId": "rhodes",
         "groupId": null,
         "teamId": null,
-        "subPower": null,
+        "subPower": [
+            {
+                "nationId": null,
+                "groupId": "babel",
+                "teamId": null
+            }
+        ],
         "type": "辅助",
         "level": 6,
         "sex": "女",
@@ -8475,6 +8544,11 @@
         "subPower": [
             {
                 "nationId": "siracusa",
+                "groupId": null,
+                "teamId": null
+            },
+            {
+                "nationId": "ursus",
                 "groupId": null,
                 "teamId": null
             }
@@ -9091,7 +9165,13 @@
         "nationId": "rhodes",
         "groupId": null,
         "teamId": null,
-        "subPower": null,
+        "subPower": [
+            {
+                "nationId": null,
+                "groupId": "babel",
+                "teamId": null
+            }
+        ],
         "type": "近卫",
         "level": 6,
         "sex": "女",
@@ -9519,7 +9599,13 @@
         "nationId": "rhodes",
         "groupId": "elite",
         "teamId": null,
-        "subPower": null,
+        "subPower": [
+            {
+                "nationId": "ursus",
+                "groupId": null,
+                "teamId": null
+            }
+        ],
         "type": "辅助",
         "level": 6,
         "sex": "女",
@@ -9929,7 +10015,13 @@
         "nationId": "sargon",
         "groupId": null,
         "teamId": null,
-        "subPower": null,
+        "subPower": [
+            {
+                "nationId": "columbia",
+                "groupId": null,
+                "teamId": null
+            }
+        ],
         "type": "近卫",
         "level": 5,
         "sex": "女",
@@ -10650,5 +10742,103 @@
         "hidden": true,
         "globalHidden": true,
         "gamemode": "SO"
+    },
+    {
+        "id": "char_1015_aglna2",
+        "name_cn": "予愿安洁莉娜",
+        "name_en": "Angelina the Mellow Wish",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": "rhodes",
+        "groupId": null,
+        "teamId": null,
+        "subPower": [
+            {
+                "nationId": "siracusa",
+                "groupId": null,
+                "teamId": null
+            }
+        ],
+        "type": "特种",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "近战位",
+            "高空",
+            "输出",
+            "控场"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_4235_thumpy",
+        "name_cn": "珊比",
+        "name_en": "Thumpy",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": "rim",
+        "groupId": null,
+        "teamId": null,
+        "subPower": null,
+        "type": "重装",
+        "level": 6,
+        "sex": "女",
+        "tags": [
+            "高级资深干员",
+            "近战位",
+            "元素",
+            "防护"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_4237_jcinta",
+        "name_cn": "嘉辛塔",
+        "name_en": "Jacinta",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": "rim",
+        "groupId": null,
+        "teamId": null,
+        "subPower": null,
+        "type": "先锋",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "近战位",
+            "费用回复",
+            "防护"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
+    },
+    {
+        "id": "char_4236_tmslot",
+        "name_cn": "时隙",
+        "name_en": "Timeslot",
+        "name_jp": "",
+        "name_kr": "",
+        "nationId": "rim",
+        "groupId": null,
+        "teamId": null,
+        "subPower": null,
+        "type": "术师",
+        "level": 5,
+        "sex": "女",
+        "tags": [
+            "资深干员",
+            "远程位",
+            "输出"
+        ],
+        "hidden": true,
+        "globalHidden": true,
+        "gamemode": "BASE"
     }
 ]

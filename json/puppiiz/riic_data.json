@@ -666,6 +666,12 @@
             "desc": "进驻发电站时，无人机充能速度<@cc.vup>+20%</>",
             "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+20%</>"
         },
+        "power_rec_spd[027]": {
+            "buffName": "迟到前六分钟",
+            "skillIcon": "bskill_pow_spd3",
+            "desc": "进驻发电站时，无人机充能速度<@cc.vup>+20%</>",
+            "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+20%</>"
+        },
         "power_rec_spd[005]": {
             "buffName": "River Charge α",
             "skillIcon": "bskill_pow_spd1",
@@ -1812,6 +1818,12 @@
             "desc": "进驻贸易站时，<@cc.kw>小幅提升</>当前贸易站<@cc.kw>高品质贵金属订单</>的出现概率（工作时长影响概率），心情每小时消耗<@cc.vup>-0.25</>",
             "description": "When this Operator is assigned to a Trading Post, the chance of getting <@cc.kw>higher-yield Precious Metal orders</> is <@cc.kw>increased slightly</> (rate is influenced by length of work time), and Morale consumed per hour is reduced by <@cc.vup>-0.25</>"
         },
+        "trade_ord_wt&cost[004]": {
+            "buffName": "千金的眼光",
+            "skillIcon": "bskill_tra_wt&cost1",
+            "desc": "进驻贸易站时，<@cc.kw>小幅提升</>当前贸易站<@cc.kw>高品质贵金属订单</>的出现概率（工作时长影响概率），心情每小时消耗<@cc.vup>-0.25</>",
+            "description": "When this Operator is assigned to a Trading Post, the chance of getting <@cc.kw>higher-yield Precious Metal orders</> is <@cc.kw>increased slightly</> (rate is influenced by length of work time), and Morale consumed per hour is reduced by <@cc.vup>-0.25</>"
+        },
         "trade_ord_spd&share[000]": {
             "buffName": "Advocate",
             "skillIcon": "bskill_tra_share1",
@@ -2562,6 +2574,12 @@
             "desc": "进驻加工站加工<@cc.kw>芯片</>时，副产品的产出概率提升<@cc.vup>70%</>",
             "description": "When this Operator is assigned to the Workshop to process <@cc.kw>Chips</>, the production rate of byproduct increases by <@cc.vup>70%</>"
         },
+        "workshop_formula_probability[301]": {
+            "buffName": "被忽视的天赋",
+            "skillIcon": "bskill_ws_asc1",
+            "desc": "进驻加工站加工<@cc.kw>芯片</>时，副产品的产出概率提升<@cc.vup>70%</>",
+            "description": "When this Operator is assigned to the Workshop to process <@cc.kw>Chips</>, the production rate of byproduct increases by <@cc.vup>70%</>"
+        },
         "workshop_formula_probability[310]": {
             "buffName": "Well-Trained",
             "skillIcon": "bskill_ws_asc2",
@@ -3276,6 +3294,12 @@
             "desc": "进驻宿舍时，自身心情每小时恢复<@cc.vup>+0.7</>",
             "description": "When this Operator is assigned to a Dormitory, self Morale recovered <@cc.vup>+0.7</> per hour"
         },
+        "dorm_rec_oneself[002]": {
+            "buffName": "哪里都是兔子洞",
+            "skillIcon": "bskill_dorm_one2",
+            "desc": "进驻宿舍时，自身心情每小时恢复<@cc.vup>+0.7</>",
+            "description": "When this Operator is assigned to a Dormitory, self Morale recovered <@cc.vup>+0.7</> per hour"
+        },
         "dorm_rec_oneself[010]": {
             "buffName": "Craze",
             "skillIcon": "bskill_dorm_one4",
@@ -3798,6 +3822,12 @@
             "desc": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+45%</>",
             "description": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+45%</>"
         },
+        "hire_spd[013]": {
+            "buffName": "前任金牌接线员",
+            "skillIcon": "bskill_hire_spd5",
+            "desc": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+45%</>",
+            "description": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+45%</>"
+        },
         "hire_spd[020]": {
             "buffName": "Psychology",
             "skillIcon": "bskill_hire_spd4",
@@ -4086,6 +4116,12 @@
             "desc": "进驻会客室时，线索搜集速度提升<@cc.vup>20%</>",
             "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by <@cc.vup>20%</>"
         },
+        "meet_spd[023]": {
+            "buffName": "坎贝尔之名",
+            "skillIcon": "bskill_meet_spd2",
+            "desc": "进驻会客室时，线索搜集速度提升<@cc.vup>20%</>",
+            "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by <@cc.vup>20%</>"
+        },
         "meet_spd[1010]": {
             "buffName": "Clue Search β",
             "skillIcon": "bskill_meet_spd2",
@@ -4175,6 +4211,12 @@
             "skillIcon": "bskill_meet_spd&cost_condChar2",
             "desc": "进驻会客室时，如果会客室内只有自身处于工作状态时，线索搜集速度提升<@cc.vup>15%</>，心情每小时消耗<@cc.vdown>+1</>",
             "description": "When this Operator is assigned to the Reception Room, if no other Operators are working in the Reception Room, increases Clue search speed by <@cc.vup>15%</>, and Morale consumed per hour <@cc.vdown>+1</>"
+        },
+        "meet_spd&cost_condChar[002]": {
+            "buffName": "我自己的愿望",
+            "skillIcon": "bskill_meet_spd&cost_condChar",
+            "desc": "进驻会客室时，如果会客室内只有自身处于工作状态时，线索搜集速度提升<@cc.vup>50%</>，心情每小时消耗<@cc.vdown>+2</>",
+            "description": "When this Operator is assigned to the Reception Room, if no other Operators are working in the Reception Room, increases Clue search speed by <@cc.vup>50%</>, and Morale consumed per hour <@cc.vdown>+2</>"
         },
         "meet_spd&cost_condChar[011]": {
             "buffName": "'Professional Ethics' β",
@@ -4370,6 +4412,12 @@
         },
         "meet_spd_notOwned[003]": {
             "buffName": "Drifting Wanderer",
+            "skillIcon": "bskill_meet_spdNotOwned1",
+            "desc": "进驻会客室时，更容易获得线索板上尚未拥有的线索",
+            "description": "When this Operator is assigned to the Reception Room, increases the likelihood of obtaining clues that are not on the Clue Board."
+        },
+        "meet_spd_notOwned[004]": {
+            "buffName": "资深信使",
             "skillIcon": "bskill_meet_spdNotOwned1",
             "desc": "进驻会客室时，更容易获得线索板上尚未拥有的线索",
             "description": "When this Operator is assigned to the Reception Room, increases the likelihood of obtaining clues that are not on the Clue Board."
@@ -15710,6 +15758,110 @@
                     "buffData": [
                         {
                             "buffId": "manu_prod_cost_min[001]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_1015_aglna2": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "meet_spd_notOwned[004]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "meet_spd&cost_condChar[002]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4235_thumpy": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "dorm_rec_oneself[002]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "hire_spd[013]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4237_jcinta": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "trade_ord_wt&cost[004]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "meet_spd[023]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4236_tmslot": {
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "workshop_formula_probability[301]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "power_rec_spd[027]",
                             "cond": {
                                 "phase": "PHASE_2",
                                 "level": 1

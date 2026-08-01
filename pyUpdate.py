@@ -76,8 +76,9 @@ NEW_CHARS : list[str] = [
                             "Kal'tsit·Esperanta", "Closure", "Vij", "Crackborne", "GALLUS²",
                             "Violet Mizutsune Orchid", "Zinogre S Catapult", "Rhodes Island Recon",
                             "Aphrissa", "Pedro",
-                            "Mechanist", 
-                        ] # 
+                            "Mechanist",
+                            "Angelina the Mellow Wish", "Thumpy", "Jacinta", "Timeslot", 
+                        ] # "", 
 
 #["ItemID#1","ItemID#2", ...]
 NEW_MATS : list[str] = ["31103", "31104", "31113", "31114", ] # "", 
@@ -176,7 +177,7 @@ def update_new_trait(mode : str, new_id : str, new_char_name : str, extra : str 
             return  {
                         "en"    : "",
                         "color" : "",
-                        "note"  : f'new mods {extra}',
+                        "note"  : f'new mods {extra.upper()}',
                         "name"  : new_char_name,
                         "code"  : new_id,
                     }
@@ -225,7 +226,7 @@ def update_tok_TraitSkillTalent(new_token_key, new_char_id, ):
     else :
         new_trait[json_char[new_token_key]["description"]] = update_new_trait("token", new_char_id, new_char_name, new_token_key)
     #### Token talent
-    if new_token_key not in json_talentTL:
+    if new_token_key not in json_talentTL and json_char[new_token_key]["talents"]:
         talent_tl[new_token_key] = [
                                     [
                                         {
@@ -600,9 +601,9 @@ enemy_json = {}
 
 for enemy in json_enemy["enemyData"].keys():
     if enemy in json_enemyEN["enemyData"].keys():
-        enemy_json[enemy] = json_enemyEN["enemyData"][enemy]["name"]
+        enemy_json[enemy] = json_enemyEN["enemyData"][enemy]["name"].strip()
     else :
-        enemy_json[enemy] = json_enemy["enemyData"][enemy]["name"]
+        enemy_json[enemy] = json_enemy["enemyData"][enemy]["name"].strip()
 
 with open("json/puppiiz/enemy_name.json", "w", encoding = "utf-8") as filepath :
     json.dump(enemy_json, filepath, indent = 4, ensure_ascii = False)

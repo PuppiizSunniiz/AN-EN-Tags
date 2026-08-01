@@ -703,7 +703,7 @@
         "cc.tag.mh2": {
             "termId": "cc.tag.mh2",
             "termName": "泡影国狩猎小队",
-            "description": "包含以下干员\n焰狐龙梓兰, 雷狼龙S空爆, 罗德岛隐秘队"
+            "description": "Includes the following Operators:\nViolet Mizutsune Orchid, Zinogre S Catapult, Rhodes Island Recon"
         },
         "ba.triggereffect": {
             "termId": "ba.triggereffect",
@@ -714,6 +714,16 @@
             "termId": "ba.dt.rampage",
             "termName": "狂躁损伤",
             "description": "狂躁损伤累计至1000时, 15秒内攻击速度+50, 但每秒受到100点真实伤害 (每次攻击时提升50, 最多600)"
+        },
+        "ba.groundbind": {
+            "termId": "ba.groundbind",
+            "termName": "缚地",
+            "description": "目标变为地面单位, 无法移动; 使部分近地悬浮敌人掉落; 对重量大于3的单位持续时间减半"
+        },
+        "ba.airprotect": {
+            "termId": "ba.airprotect",
+            "termName": "对空庇护",
+            "description": "受到来自空中的物理和法术伤害降低相应比例 (同名效果取最高)"
         }
     }
 }
