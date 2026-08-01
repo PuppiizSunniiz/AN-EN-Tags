@@ -4167,6 +4167,34 @@
                             }
                         }
                     }
+                },
+                "act53side": {
+                    "name": "[TO] : Till the Lands Become an Orange",
+                    "date": 1785538800,
+                    "zone": {
+                        "act53side_zone1": {
+                            "name": "驶向大地尽头",
+                            "stage": {
+                                "act53side_01": "TO-1 : 收信地：终点",
+                                "act53side_tr01": "TO-TR-1 : 写临行的迷惘",
+                                "act53side_02": "TO-2 : 记新友的混乱",
+                                "act53side_03": "TO-3 : 露营奇“叽”",
+                                "act53side_04": "TO-4 : 谷里升起太阳",
+                                "act53side_05": "TO-5 : 勇敢的短耳朵",
+                                "act53side_06": "TO-6 : 最难坦诚",
+                                "act53side_07": "TO-7 : 谎言的重量",
+                                "act53side_08": "TO-8 : 以决心做邮戳",
+                                "act53side_09": "TO-9 : 绘我们的黎明"
+                            }
+                        },
+                        "act53side_zone4": {
+                            "name": "RPG关卡（不展示）",
+                            "stage": {
+                                "act53side_sp01": "TO-P-1 : 冒昧的请求",
+                                "act53side_sp02": "TO-P-2 : 信使的素养"
+                            }
+                        }
+                    }
                 }
             }
         },
@@ -7876,6 +7904,7 @@
         "weekly_2": "PR-B : Fierce Attack (Snipers & Casters)",
         "weekly_3": "PR-C : Unstoppable Charge (Vanguards & Supporters)",
         "weekly_4": "PR-D : Fearless Protection (Guards & Specialists)",
+        "act53side": "[TO] : Till the Lands Become an Orange",
         "act21mini": "[BD] : Bolívar Diagnosed",
         "act1football": "Positional Football Championship",
         "act50side": "[TD] : Thunder in the Azure Dream",
@@ -36447,6 +36476,205 @@
                         "RA#2_monthly_1",
                         "RA#2_monthly_1",
                         "RA#2_monthly_1"
+                    ]
+                }
+            }
+        },
+        "enemy_10221_agporc": {
+            "sidestory": {
+                "act53side": {
+                    "act53side_zone1": [
+                        "act53side_01",
+                        "act53side_tr01",
+                        "act53side_02",
+                        "act53side_03",
+                        "act53side_04",
+                        "act53side_05",
+                        "act53side_06",
+                        "act53side_07",
+                        "act53side_08",
+                        "act53side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10231_agpack": {
+            "sidestory": {
+                "act53side": {
+                    "act53side_zone1": [
+                        "act53side_01",
+                        "act53side_tr01",
+                        "act53side_02",
+                        "act53side_03",
+                        "act53side_04",
+                        "act53side_05",
+                        "act53side_06",
+                        "act53side_07",
+                        "act53side_08",
+                        "act53side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10232_aglina": {
+            "sidestory": {
+                "act53side": {
+                    "act53side_zone1": [
+                        "act53side_01",
+                        "act53side_tr01",
+                        "act53side_02",
+                        "act53side_03",
+                        "act53side_04",
+                        "act53side_05",
+                        "act53side_06",
+                        "act53side_07",
+                        "act53side_08",
+                        "act53side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10222_agtski": {
+            "sidestory": {
+                "act53side": {
+                    "act53side_zone1": [
+                        "act53side_02",
+                        "act53side_03",
+                        "act53side_07"
+                    ]
+                }
+            }
+        },
+        "enemy_10223_agtrac": {
+            "sidestory": {
+                "act53side": {
+                    "act53side_zone1": [
+                        "act53side_02",
+                        "act53side_03",
+                        "act53side_07"
+                    ]
+                }
+            }
+        },
+        "enemy_10224_agmess": {
+            "sidestory": {
+                "act53side": {
+                    "act53side_zone1": [
+                        "act53side_03",
+                        "act53side_06",
+                        "act53side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10225_agpbus": {
+            "sidestory": {
+                "act53side": {
+                    "act53side_zone1": [
+                        "act53side_04",
+                        "act53side_05"
+                    ],
+                    "act53side_zone4": [
+                        "act53side_sp02"
+                    ]
+                }
+            }
+        },
+        "enemy_10226_agprnk": {
+            "sidestory": {
+                "act53side": {
+                    "act53side_zone1": [
+                        "act53side_05"
+                    ],
+                    "act53side_zone4": [
+                        "act53side_sp02"
+                    ]
+                }
+            }
+        },
+        "enemy_10227_agbomb": {
+            "sidestory": {
+                "act53side": {
+                    "act53side_zone1": [
+                        "act53side_05"
+                    ],
+                    "act53side_zone4": [
+                        "act53side_sp02"
+                    ]
+                }
+            }
+        },
+        "enemy_10228_agball": {
+            "sidestory": {
+                "act53side": {
+                    "act53side_zone1": [
+                        "act53side_06",
+                        "act53side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10229_agactr": {
+            "sidestory": {
+                "act53side": {
+                    "act53side_zone1": [
+                        "act53side_07",
+                        "act53side_08",
+                        "act53side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10230_agkiro": {
+            "sidestory": {
+                "act53side": {
+                    "act53side_zone1": [
+                        "act53side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_1595_agbmes": {
+            "sidestory": {
+                "act53side": {
+                    "act53side_zone1": [
+                        "act53side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_1596_agbmal": {
+            "sidestory": {
+                "act53side": {
+                    "act53side_zone1": [
+                        "act53side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_1597_agbbms": {
+            "sidestory": {
+                "act53side": {
+                    "act53side_zone1": [
+                        "act53side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10224_agmess_2": {
+            "sidestory": {
+                "act53side": {
+                    "act53side_zone4": [
+                        "act53side_sp01"
+                    ]
+                }
+            }
+        },
+        "enemy_10226_agprnk_2": {
+            "sidestory": {
+                "act53side": {
+                    "act53side_zone4": [
+                        "act53side_sp02"
                     ]
                 }
             }

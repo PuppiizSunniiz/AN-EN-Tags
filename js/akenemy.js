@@ -5,7 +5,7 @@ console.log = function () { }
 var db = {}
 var tlracedict = {};
 var enemyforfilter = []
-const allimmunity = ["stunImmune","silenceImmune","sleepImmune","frozenImmune","levitateImmune","disarmedCombatImmune","fearedImmune", "palsyImmune", "attractImmune","teleportImmune"]
+const allimmunity = ["stunImmune","silenceImmune","sleepImmune","frozenImmune","levitateImmune","disarmedCombatImmune","fearedImmune", "palsyImmune", "attractImmune","teleportImmune","groundBoundImmune"]
 
 var d0 = $.getJSON("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/gamedata_const.json",function(data){
     db["dataconst"] = data;
@@ -599,7 +599,7 @@ function enemyDetail(el,level){
     var firstattr   = firstEnemyData.attributes
 
     var EnemyImmune = []
-    $(["stun","silence","sleep","frozen","levitate","disarmedCombat","feared","palsy","attract","teleport"].forEach(immune =>{
+    $(["stun","silence","sleep","frozen","levitate","disarmedCombat","feared","palsy","attract","teleport","groundBound"].forEach(immune =>{
         if (currattr[immune+"Immune"].m_value != 0 ? currattr[immune+"Immune"].m_value : firstattr[immune+"Immune"].m_value)
             EnemyImmune.push(`<td><span style="color:crimson;font-weight: bold;">Immune</span></td>`)
         else
@@ -663,6 +663,7 @@ function enemyDetail(el,level){
                     <th scope="col" class="hovertooltip" data-tooltip="Each stack of Paralysis can interrupt an enemy when it attempts to perform a normal attack, max 3 stacks; Paralysis has unlimited duration when not consumed, but units with status resistance lose 1 stack every 5s.">Paralysis</th>
                     <th scope="col" class="hovertooltip" data-tooltip="Cannot be blocked and moves towards the target's position">Lure</th>
                     <th scope="col" class="hovertooltip" data-tooltip="Teleport an enemy to the target's position">Teleport</th>
+                    <th scope="col" class="hovertooltip" data-tooltip="Teleport an enemy to the target's position">Ground Bound</th>
                 </tr>
             </thead>
             <tbody>
