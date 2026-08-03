@@ -1921,7 +1921,7 @@
                                             ${titledMaker((phase > 0?"Elite " + phase + " ":"") + (level > 0?"Level " + level:""), "Level Required")}
                                             ${gmapp == "SO"?"":titledMaker(time/60/60 + " Hour", "Time Required")}
                                         </div>
-                                        ${(materialist.length > 0?materialist.join(""):"")}`
+                                        ${((materialist.length > 0 && gmapp != "SO")?materialist.join(""):"")}`
                     }else{
                         var condLeveling = (opdataFull.allSkillLvlup[i2 - 1]?opdataFull.allSkillLvlup[i2 - 1].unlockCond:{phase:"TIER_0",level:0})
                         var condUnlocking = opdataFull.skills[i].unlockCond
@@ -1939,7 +1939,7 @@
                                         <div style="margin-top:15px">
                                             ${titledMaker((phase > 0?"Elite " + phase + " ":"") + (level > 0?"Level " + level:""), "Level Required")}
                                         </div>
-                                        ${(materialist.length > 0?materialist.join(""):"")}`
+                                        ${((materialist.length > 0 && gmapp != "SO")?materialist.join(""):"")}`
                     }
 
                     if(v2.rangeId)grid = rangeMaker(v2.rangeId)
