@@ -1867,10 +1867,10 @@
             "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+10%</>, but all <@cc.kw>Pure Gold</> orders in that Trading Post will only trade <@cc.kw>2</> <@cc.kw>Pure Gold</> (not considered as defaulted trade)"
         },
         "trade_ord_limit&cost_P[020]": {
-            "buffName": "未偿还的债务",
+            "buffName": "Outstanding Debt",
             "skillIcon": "bskill_tra_demetr",
             "desc": "当与<@cc.kw>伺夜</>在同一个贸易站时，心情每小时消耗<@cc.vup>-0.1</>，订单上限<@cc.vup>+2</>",
-            "description": "当与<@cc.kw>伺夜</>在同一个贸易站时，心情每小时消耗<@cc.vup>-0.1</>，订单上限<@cc.vup>+2</>"
+            "description": "When this Operator is assigned to the same Trading Post as <@cc.kw>Vigil</>, Morale consumed each hour <@cc.vup>-0.1</>, and order limit <@cc.vup>+2</>"
         },
         "trade_ord_limit&cost_P[010]": {
             "buffName": "Tacit Understanding",
@@ -1969,16 +1969,16 @@
             "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+30%</>; When <@cc.kw>Ulpianus</> is in the Base (excluding Assistants and Activity Room users), increase order acquisition efficiency by an additional <@cc.vup>+10%</>"
         },
         "trade_ord_spd_ext[020]": {
-            "buffName": "家族经营·α",
+            "buffName": "Famiglia Business α",
             "skillIcon": "bskill_tra_ord_spd_ext2",
             "desc": "进驻贸易站时，订单获取效率<@cc.vup>+25%</>；当<@cc.kw>伺夜</>在基建内时（不包含副手及活动室使用者），订单获取效率额外<@cc.vup>+5%</>",
-            "description": "进驻贸易站时，订单获取效率<@cc.vup>+25%</>；当<@cc.kw>伺夜</>在基建内时（不包含副手及活动室使用者），订单获取效率额外<@cc.vup>+5%</>"
+            "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+25%</>; When <@cc.kw>Vigil</> is in the Base (excluding Assistants and Activity Room users), increase order acquisition efficiency by an additional <@cc.vup>+5%</>"
         },
         "trade_ord_spd_ext[021]": {
-            "buffName": "家族经营·β",
+            "buffName": "Famiglia Business β",
             "skillIcon": "bskill_tra_ord_spd_ext3",
             "desc": "进驻贸易站时，订单获取效率<@cc.vup>+30%</>；当<@cc.kw>伺夜</>在基建内时（不包含副手及活动室使用者），订单获取效率额外<@cc.vup>+10%</>",
-            "description": "进驻贸易站时，订单获取效率<@cc.vup>+30%</>；当<@cc.kw>伺夜</>在基建内时（不包含副手及活动室使用者），订单获取效率额外<@cc.vup>+10%</>"
+            "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+30%</>; When <@cc.kw>Vigil</> is in the Base (excluding Assistants and Activity Room users), increase order acquisition efficiency by an additional <@cc.vup>+10%</>"
         },
         "trade_ord_spd&par[000]": {
             "buffName": "Resolution on Foreign Trade α",
@@ -4225,13 +4225,13 @@
             "description": "When this Operator is assigned to the Reception Room, if no other Operators are working in the Reception Room, increases Clue search speed by <@cc.vup>35%</>, and Morale consumed per hour <@cc.vdown>+1</>"
         },
         "meet_spd&cost_condChar[020]": {
-            "buffName": "专业经理·α",
+            "buffName": "Professional Manager α",
             "skillIcon": "bskill_meet_spd&cost_condChargoat",
             "desc": "进驻会客室时，如果会客室内只有自身处于工作状态时，线索搜集速度提升<@cc.vup>15%</>，心情每小时消耗<@cc.vdown>+1</>",
             "description": "When this Operator is assigned to the Reception Room, if no other Operators are working in the Reception Room, increases Clue search speed by <@cc.vup>15%</>, and Morale consumed per hour <@cc.vdown>+1</>"
         },
         "meet_spd&cost_condChar[021]": {
-            "buffName": "专业经理·β",
+            "buffName": "Professional Manager β",
             "skillIcon": "bskill_meet_spd&cost_condChargoat2",
             "desc": "进驻会客室时，如果会客室内只有自身处于工作状态时，线索搜集速度提升<@cc.vup>35%</>，心情每小时消耗<@cc.vdown>+1</>",
             "description": "When this Operator is assigned to the Reception Room, if no other Operators are working in the Reception Room, increases Clue search speed by <@cc.vup>35%</>, and Morale consumed per hour <@cc.vdown>+1</>"

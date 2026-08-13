@@ -1155,14 +1155,14 @@
             "code": "token_10065_demetr_dmtpos"
         },
         "攻击范围内存在受到元素损伤的友方单位时，攻击速度<@ba.vup>+{attack_speed}</>": {
-            "en": "ASPD <@ba.vup>+{attack_speed}</> when allies in Attack Range receive Elemental Injury",
+            "en": "ASPD <@ba.vup>+{attack_speed}</> when there is an ally within Attack Range affected by Elemental Injury",
             "color": "common",
             "note": "new mods wdm-y",
             "name": "char_1016_agoat2",
             "code": "uniequip_003_agoat2"
         },
         "攻击距离+1（不受技能攻击范围变化影响）": {
-            "en": "Attack Range +1 (unaffected by skill)",
+            "en": "Attack Range +1 (unaffected by skill Attack Range changes)",
             "color": "common",
             "note": "new mods spt-y",
             "name": "char_1034_jesca2",

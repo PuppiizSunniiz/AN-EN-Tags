@@ -247,6 +247,22 @@ def riic_tl_json(show : bool = False):
                         match_prod          = desc_match.group(4)
                         return f'When this Operator is assigned to a Factory, <@cc.kw>{match_mat}</> productivity <@cc.vup>{match_prod}</> for {f'every <@cc.vup>{match_every}</>' if int(match_every) > 1 else "<@cc.vup>every</>"} <$cc.{match_skill_id}><@cc.kw>{match_skill_name}</></> assigned to a Power Plant'
                 case "trade":
+                    # trade_ord_limit__cost_P (Bellone : trade_ord_limit&cost_P[020])
+                    re_trade_ord_limit__cost_P = r'^当与<@cc\.kw>([^<]*)<\/>在同一个贸易站时，心情每小时消耗<@cc\.vup>(-[\.0-9]*)<\/>，订单上限<@cc\.vup>(\+[0-9]*)<\/>$'
+                    if re.match(re_trade_ord_limit__cost_P, desc_sub):
+                        desc_match          = re.match(re_trade_ord_limit__cost_P, desc_sub)
+                        match_char          = riic_match_tl(desc_match.group(1), "op")
+                        match_morale        = desc_match.group(2)
+                        match_limit         = desc_match.group(3)
+                        return f'When this Operator is assigned to the same Trading Post as <@cc.kw>{match_char}</>, Morale consumed each hour <@cc.vup>{match_morale}</>, and order limit <@cc.vup>{match_limit}</>'
+                    # *(trade_ord_spd_ext)
+                    re_trade_ord_spd_ext = r'^进驻贸易站时，订单获取效率<@cc\.vup>(\+[0-9]*%)<\/>；当<@cc\.kw>([^<]*)<\/>在基建内时（不包含副手及活动室使用者），订单获取效率额外<@cc\.vup>(\+[0-9]*%)<\/>$'
+                    if re.match(re_trade_ord_limit__cost_P, desc_sub):
+                        desc_match          = re.match(re_trade_ord_limit__cost_P, desc_sub)
+                        match_eff           = desc_match.group(1)
+                        match_char          = riic_match_tl(desc_match.group(2), "op")
+                        match_eff_add       = desc_match.group(3)
+                        return f'When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>{match_eff}</>; When <@cc.kw>{match_char}</> is in the Base (excluding Assistants and Activity Room users), increase order acquisition efficiency by an additional <@cc.vup>{match_eff_add}</>'
                     # Trade together with (Exuter : trade_ord_spd&multiPar[100]) 
                     re_trade_ord_spd_multiPar = r'^进驻贸易站时，订单获取效率<@cc\.vup>([\+0-9%]*)<\/>；当与<@cc\.kw><\$(cc\.[\.A-Za-z0-9]*)>([^<]*)<\/><\/>在同一个贸易站时，订单获取效率额外<@cc\.vup>([\+0-9%]*)<\/>$'
                     if re.match(re_trade_ord_spd_multiPar, desc_sub):
@@ -469,7 +485,7 @@ def riic_tl_json(show : bool = False):
                                 if desc == item["name_cn"]:
                                     return item["name_en"] or item["name_cn"]
                             printr(f'riic_match_tl : {Y}"item"{RE} case - {Y}{desc}')
-                    case "op":
+                    case "char" | "op":
                         return [json_character[op_key]["appellation"] for op_key in json_character.keys() if desc == json_character[op_key]["name"]][0]
                     case "room":
                         room_tl = {
