@@ -1636,15 +1636,10 @@
                     if(i == 0){
                         $("#charazoom").attr("src",`${IMAGE_REPO}/characters/${skindata.portraitId}${(sus && opdataFull.id == "char_298_susuro"?"sus":"")}.png`);
                         $('#charazoom').modal('handleUpdate')
-
-                        tabcontent.push($(`<div class='tab-pane container active' id='opCG_0_tab'>
-                            <img loading='lazy' class='chara-image' src=${IMAGE_REPO}/characters/${skindata.portraitId}${(sus && opdataFull.id == "char_298_susuro"?"sus":"")}.png>
-                            </div>`));
-                    }else{
-                        tabcontent.push($(`<div class='tab-pane container' id='opCG_${i}_tab'>
-                            <img loading='lazy' class='chara-image' src='${IMAGE_REPO}/characters/${skindata.portraitId}${(sus && opdataFull.id == "char_298_susuro"?"sus":"")}.png>
-                            </div>`));
                     }
+                    tabcontent.push($(`<div class='tab-pane container ${i == 0?"active":""}' id='opCG_${i}_tab'>
+                            <img loading='lazy' class='chara-image' src='${IMAGE_REPO}/characters/${skindata.portraitId}${(sus && opdataFull.id == "char_298_susuro"?"sus":"")}.png'>
+                            </div>`));
                 }
 
                 if(AmiyaPatchID.includes(opKey)){
@@ -1653,14 +1648,10 @@
                         $("#charazoom").attr("src",`${IMAGE_REPO}/characters/${opKey}_2.png`);
                         $('#charazoom').modal('handleUpdate')
 
-                        tabcontent.push($(`<div class='tab-pane container active' id='opCG_0_tab'>
-                            <img loading='lazy' class='chara-image' src='${IMAGE_REPO}/characters/${opKey}_2.png'>
-                            </div>`));
-                    }else{
-                        tabcontent.push($(`<div class='tab-pane container' id='opCG_${i}_tab'>
-                            <img loading='lazy' class='chara-image' src='${IMAGE_REPO}/characters/${opKey}_2.png'>
-                            </div>`));
                     }
+                    tabcontent.push($(`<div class='tab-pane container ${i == 0?"active":""}' id='opCG_${i}_tab'>
+                            <img loading='lazy' class='chara-image' src='${IMAGE_REPO}/characters/${opKey}_2.png'>
+                            </div>`));
                 }
 
 
