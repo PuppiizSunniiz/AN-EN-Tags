@@ -119,18 +119,23 @@
     var toktalentLimit = []
     var ModuletalentValue
 
-    var Amiyacurrclass  =   "caster"
+    var Amiyacurrclass  =   "Caster"
     const AmiyaCaster   =   "char_002_amiya"
     const AmiyaGuard    =   "char_1001_amiya2"
     const AmiyaMedic    =   "char_1037_amiya3"
-    const AmiyaPatchID  =   [AmiyaGuard,AmiyaMedic]
+    const AmiyaPatchID  =   [AmiyaGuard, AmiyaMedic]
     const AmiyaAllID    =   [AmiyaCaster, ...AmiyaPatchID]
+    const AmiyaIDDict   =   {
+                                "Caster"    : AmiyaCaster,
+                                "Guard"     : AmiyaGuard,
+                                "Medic"     : AmiyaMedic,
+                            }
 
     var teamHTML = [[],[],[]]
     var currskin
     var skinsuffix
     var currVoiceID
-    const VAlanglist = ["LINKAGE", "JP", "CN_MANDARIN", "CN_TOPOLECT", "EN", "KR", "FRE", "GER", "ITA", "RUS"]
+    const VAlanglist = ["LINKAGE", "JP", "CN_MANDARIN", "CN_TOPOLECT", "EN", "KR", "FRE", "GER", "ITA", "RUS", "SPA"]
     var attempt = 0;
     var SpineVersion
     var spinewidgettoken
@@ -157,7 +162,7 @@
     var wid = 1800
     var hei = 1800
 
-    const validparam = ["opname", "gamemode", "story", "voice", "sfx"]
+    const validparam = ["opname", "amiya", "gamemode", "story", "voice", "sfx"]
     const mode_title = {"IS" : "Integrated Strategies", "SO" : "Special Operator", "SP" : "Stronghold Protocol"}
     const RIEPIC = ["char_003_kalts", "char_172_svrash", "char_1035_wisdel"]
 
@@ -481,68 +486,65 @@
             reg = "cn";
             lang = "en";
         }
+        
+            
+        var vars = getUrlVars();
+        if(vars.has("opname")){
+            var char = {};
+            var opname = decodeURIComponent(vars.get("opname")).replace(/_/g, " ");
+            var unreadable = query(db.unreadNameTL, "name_en", opname)
+            var correctname = unreadable?unreadable.name:opname
+            if(vars.get("gamemode")){
+                var chars = query(db.chars2, "name_en", correctname, false, false);
+                gmapp = vars.get("gamemode")
+                char = query(chars, "gamemode", gmapp, true, false)
+                opid = char.id
+            }else if(vars.get("amiya")){
+                Amiyacurrclass = vars.get("amiya")
+                currclass = query(db.classes, "type_en", Amiyacurrclass).type_data
+                char = query(db.all_chars ,"appellation", correctname, false, true);
+                if(char){
+                    $.each(char, function(_, obj){
+                        $.each(obj, function(key, val){
+                            console.log(key, val, val.profession, currclass, val.profession == currclass)
+                            if(val.profession == currclass) {
+                                opid = key
+                            }
+                        })
+                    });
+                }
+            }else{
+                char = query(db.chars ,"appellation", correctname, true, true);
+                console.log(char, vars.get("amiya"))
+                opid = Object.keys(char)[0]
+                gmapp = opid?query(db.chars2, "gamemode", opid, false, false):"";
+            }
+            opapp = correctname
+        }else{
+            opid = localStorage.getItem('selectedOPDetails');
+        }
         if(!localStorage.getItem('selectedOPDetails')){
             console.log("selected OP undefined");
-            var vars = getUrlVars();
-            console.log(vars)
-            if(vars.has("opname")){
-                vars.set("opname", decodeURIComponent(vars.get("opname").replace("_", " ")));
-                console.log(vars.get("opname"));
-                var char = query(db.chars, "appellation", vars.get("opname"), true, true);
-                console.log(char)
-                if(char){
-                    $.each(char, function(key, _){
-                        opid = key;
-                    });
-                    selectOperator(opid);
-                }else{
-                    refreshurl("delete")
-                }
-            }else{
-                refreshurl("delete")
-            }
         }else{
             console.log("selected OP defined");
-            var vars = getUrlVars();
-            if(vars.has("opname")){
-                var char = {};
-                var opname = decodeURIComponent(vars.get("opname"));
-                var unreadable = query(db.unreadNameTL, "name_en", opname.replace(/_/g, " "))
-                var correctname = unreadable?unreadable.name:opname.replace(/_/g, " ")
-                if(vars.get("gamemode")){
-                    var chars = query(db.chars2, "name_en", correctname, false, false);
-                    gmapp = vars.get("gamemode")
-                    char = query(chars, "gamemode", gmapp, true, false)
-                    opid = char.id
-                }else{
-                    char = query(db.chars ,"appellation", correctname, true, true);
-                    console.log(char)
-                    opid = Object.keys(char)[0]
-                    gmapp = opid?query(db.chars2, "gamemode", opid, false, false):"";
-                }
-                opapp = correctname
-            }else{
-                opid = localStorage.getItem('selectedOPDetails');
-            }
-
-            if (opid) selectOperator(opid, "cookies");
-            else refreshurl("delete")
-
-            if(vars.has("story")){
-                $('#opstory').modal('show')
-            }else if(vars.has("voice")){
-                currVoiceID = opdataFull.id
-                GetAudio()
-                $('#opaudio').modal('show')
-            }else if(vars.has("sfx")){
-                GetSFX(opdataFull)
-                $('#opsfx').modal('show')
-            }
-
         }
+
+        if (opid) selectOperator(opid, "cookies");
+        else refreshurl("delete")
+
+        if(vars.has("story")){
+            $('#opstory').modal('show')
+        }else if(vars.has("voice")){
+            currVoiceID = opdataFull.id
+            GetAudio()
+            $('#opaudio').modal('show')
+        }else if(vars.has("sfx")){
+            GetSFX(opdataFull)
+            $('#opsfx').modal('show')
+        }
+
         if (window.history && window.history.pushState) {
             $(window).on('popstate', function() {
-                var vars = getUrlVars()
                 console.log(opapp, gmapp)
                 console.log(vars)
                 var historyopname = vars.get("opname")?vars.get("opname"):""
@@ -557,11 +559,26 @@
                         gmapp = vars.get("gamemode")
                         char = query(chars, "gamemode", gmapp, true, false)
                         opid = char.id
+                    }else if(vars.get("amiya")){
+                        Amiyacurrclass = vars.get("amiya")
+                        currclass = query(db.classes, "type_en", Amiyacurrclass).type_data
+                        char = query(db.all_chars ,"appellation", correctname, false, true);
+                        if(char){
+                            $.each(char, function(_, obj){
+                                $.each(obj, function(key, val){
+                                    console.log(key, val, val.profession, currclass, val.profession == currclass)
+                                    if(val.profession == currclass) {
+                                        opid = key
+                                        return
+                                    }
+                                })
+                            });
+                        }
                     }else{
                         char = query(db.chars, "appellation", correctname, true, true);
                         console.log(char)
                         opid = Object.keys(char)[0]
-                        gmapp = query(db.chars2, "gamemode", opid, false, false);
+                        gmapp = opid?query(db.chars2, "gamemode", opid, false, false):"";
                     }
                     opapp = correctname
                     
@@ -733,9 +750,9 @@
 
         var result
         if(cname != ""){
-            result = query(db.chars, "profession", cname, false, true);
+            result = query(db.all_chars, "profession", cname, false, true);
         }else{
-            result = ObjectToArray(db.chars)
+            result = ObjectToArray(db.all_chars)
 
         }
 
@@ -1156,8 +1173,8 @@
 
         // EXTRACTION
         let ops = []
-        Object.keys(db.chars).forEach(id => {
-            let curops = db.chars[id]
+        Object.keys(db.all_chars).forEach(id => {
+            let curops = db.all_chars[id]
             curops.id = id
             if(curops.profession != "TOKEN" && curops.profession != "TRAP" && id !="char_512_aprot"){
                 ops.push(curops)
@@ -1336,7 +1353,7 @@
             var opdata2 = {[opid]:db.all_chars[opid]}
             var opcode = Object.keys(opdata2)[0]
             var gamemode = query(db.chars2, "id", opid, true, false).gamemode
-            console.log(gamemode)
+            var opclass =  query(db.classes, "type_cn", opdata.type, true, false).type_en
 
             var opKey = ""
             $.each(opdata2,function(key, v){
@@ -1348,7 +1365,7 @@
             });
 
 
-            console.log(opKey)
+            console.log(opKey, gamemode, opclass)
 
             console.log(opdataFull.appellation)
             gtag('event', 'Selecting Operator', {
@@ -1384,50 +1401,47 @@
             opapp = correctname
             gmapp = gamemode
 
-            if(urlVars.get("opname") !== correctname || urlVars.get("gamemode") !== gamemode){
+            if(urlVars.get("opname") !== correctname || urlVars.get("gamemode") !== gamemode || urlVars.get("amiya") !== opclass){
                 urlVars.set("opname", correctname);
 
                 if(gamemode != "BASE") urlVars.set("gamemode", gamemode)
                 else urlVars.delete("gamemode")
 
+                if(AmiyaAllID.includes(opKey)) {
+                    urlVars.set("amiya", opclass)
+                    Amiyacurrclass = opclass
+                }
+                else urlVars.delete("amiya")
+
                 if (from == "cookies") history.replaceState(null, '', url);
                 else history.pushState(null, '', url);
             }
             
-            if(opKey == AmiyaCaster){
-                $('#class-change-1').show()
-                $('#class-change-2').show()
-                switch (Amiyacurrclass){
-                    case 'caster' :
-                            opcode = AmiyaCaster
-                            opKey = opcode
-                            opdataFull.id = opcode
-                            currskin = opcode
-                            break;
-                    case 'guard' :
-                            opcode = AmiyaGuard
-                            opKey = opcode
-                            opdataFull = db.charpatch.patchChars[AmiyaGuard]
-                            opdataFull.id = opcode
-                            currskin = opcode
-                            break;
-                    case 'medic' :
-                            opcode = AmiyaMedic
-                            opKey = opcode
-                            opdataFull = db.charpatch.patchChars[AmiyaMedic]
-                            opdataFull.id = opcode
-                            currskin = opcode
-                            break;
-                    default:
-                        $('#class-change-1').show()
-                        $('#class-change-2').show()
-                }
-            }else{
-                ChangeSTypeHTML(1,"guard")
-                ChangeSTypeHTML(2,"medic")
+            if(!AmiyaAllID.includes(opKey)){
+                ChangeSTypeHTML(1,"Guard")
+                ChangeSTypeHTML(2,"Medic")
                 $('#class-change-1').hide()
                 $('#class-change-2').hide()
-                Amiyacurrclass='caster'
+                Amiyacurrclass='Caster'
+            }else{
+                if (from != "Amiya"){
+                    switch (Amiyacurrclass){
+                        case 'Caster' :
+                            ChangeSTypeHTML(1, "Guard")
+                            ChangeSTypeHTML(2, "Medic")
+                            break;
+                        case 'Guard' :
+                            ChangeSTypeHTML(1, "Caster")
+                            ChangeSTypeHTML(2, "Medic")
+                            break;
+                        case 'Medic' :
+                            ChangeSTypeHTML(1, "Caster")
+                            ChangeSTypeHTML(2, "Guard")
+                            break;
+                    }
+                }
+                $('#class-change-1').show()
+                $('#class-change-2').show()
             }
 
 
@@ -1841,7 +1855,7 @@
 
             //Story
 
-            if(db.handbookInfo.handbookDict[opdataFull.id]|| AmiyaPatchID.includes(opdataFull.id)){
+            if(db.handbookInfo.handbookDict[opdataFull.id] || AmiyaPatchID.includes(opdataFull.id)){
                 GetStory(opdataFull)
             }else{
                 $("#opstorycredits").html(``)
@@ -3599,16 +3613,24 @@
         if(gmapp == "SO" && i > 0){
             SO_condUnlocking = db.special_operator[opdataFull.id].unlock["evolve"][i - 1]
             materialHtml=`
-            <div style="text-align:center;background:#222">
-                Elite Requirements
-            </div>
-            <div class = "SO-Unlock" style="padding: 5px 8px;">
-                ${ChangeDescriptionColor2(SO_condUnlocking)}
-            </div>`
+                            <div style="text-align:center;background:#222">
+                                Elite Requirements
+                            </div>
+                            <div class = "SO-Unlock" style="padding: 5px 8px;">
+                                ${ChangeDescriptionColor2(SO_condUnlocking)}
+                            </div>
+                        `
+        }else if(AmiyaPatchID.includes(opdataFull.id)){
+            materialHtml = ""
         }else if(materialist.length>0){
             materialHtml=`
-            <div style="text-align:center;background:#222">Elite Requirements</div>
-            <div style="text-align:center">${materialist.join("")}</div>`
+                            <div style="text-align:center;background:#222">
+                                Elite Requirements
+                            </div>
+                            <div style="text-align:center">
+                                ${materialist.join("")}
+                            </div>
+                        `
         }
         var keyframes = [];
         $.each(opdataFull.phases[i].attributesKeyFrames,function(j,v){
@@ -3723,10 +3745,7 @@
     function update_illustrator(skinid = ""){
         let illustratorHTML = ""
         let IllustratorList = [[],[]]
-        if(AmiyaPatchID.includes(skinid.split("#")[0]))
-            skin = opdataFull.id + "#2"
-        else
-            skin = skinid?skinid:(currskin + "#1")
+        skin = skinid?skinid:`${currskin}${AmiyaPatchID.includes(currskin)?"#2":"#1"}`
         if(db.skintable.charSkins[skin])
             if(db.skintable.charSkins[skin].displaySkin.drawerList){
                 IllustratorList[0] = db.skintable.charSkins[skin].displaySkin.drawerList.join("、").split("、")
@@ -6454,23 +6473,22 @@
         $("#tabs-opCG").fadeIn(200)
     }
 
-    function ChangeSType(buttonnum, amiyaclass = "caster"){
+    function ChangeSType(buttonnum, amiyaclass = "Caster"){
         ChangeSTypeHTML(buttonnum, Amiyacurrclass)
-        Amiyacurrclass = amiyaclass
-        selectOperator(curropid)
+        selectOperator(AmiyaIDDict[amiyaclass] , "Amiya")
         update_illustrator(opdataFull.id + "#2")
         update_voiceactor()
     }
     function ChangeSTypeHTML(num, classchange){
         changepic = {
-                        "caster" : "trans_magic_mark.png",
-                        "guard" : "trans_melee_mark.png",
-                        "medic" : "trans_medic_mark.png"
+                        "Caster" : "trans_magic_mark.png",
+                        "Guard" : "trans_melee_mark.png",
+                        "Medic" : "trans_medic_mark.png"
                     }
 
-        $('#class-change-'+num.toString()).html(`
-            <button id='class-change-${classchange}' class='ak-button' onclick='ChangeSType(${num},"${classchange}")'>
-                <div id='class-background-${classchange}'><div id='class-beta'>BETA</div></div>
+        $(`#class-change-${num.toString()}`).html(`
+            <button id='class-change-${classchange.toLowerCase()}' class='ak-button' onclick='ChangeSType(${num},"${classchange}")'>
+                <div id='class-background-${classchange.toLowerCase()}'><div id='class-beta'>BETA</div></div>
                 <a id="class-button">
                     <img loading='lazy' id="class-icon" src='extra\\AmiyaClass\\${changepic[classchange]}' title="${classchange} Amiya in beta phase">
                 </a>

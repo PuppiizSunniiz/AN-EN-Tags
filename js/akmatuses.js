@@ -148,6 +148,12 @@ const CLASS_PARSE_EN = {
 $.each(charsLib, function (i,val){
     d1[i] = $.getJSON("json/gamedata/"+val["path"]+"/gamedata/excel/character_table.json", function (data) {
         $.each(data, function (key, char) {
+            if(!(key in charparse)) {
+                charparse[key] = {
+                                    "name"      :   val["Lang"]=='en'?char.name:char.appellation,
+                                    "char_level":   char.rarity.length>1?Number(char.rarity.slice(-1)):char.rarity + 1
+                                }
+            }
             // retrieve E1 and E2 costs
             i = 0
             $.each(char.phases, function (_, phase) {
@@ -162,9 +168,6 @@ $.each(charsLib, function (i,val){
                             "count": mat.count,
                             "char_level": char.rarity.length>1?Number(char.rarity.slice(-1)):char.rarity + 1
                         })
-                        if(!(key in charparse)) {
-                            charparse[key]={"name":val["Lang"]=='en'?char.name:char.appellation,
-                                            "char_level":char.rarity.length>1?Number(char.rarity.slice(-1)):char.rarity + 1}}
                     });
                 }
             });
@@ -215,43 +218,12 @@ $.each(charsLib, function (i,val){
 $.each(charsLib, function (i,val){
     d2[i] = $.getJSON("json/gamedata/"+val["path"]+"/gamedata/excel/char_patch_table.json", function (data) {
         $.each(data.patchChars, function (key, char) {
-            // retrieve E1 and E2 costs
-            i = 0
-            $.each(char.phases, function (_, phase) {
-                let elevel = "E" + i++;
-                if (phase.evolveCost) {
-                    $.each(phase.evolveCost, function(_, mat) {
-                        if (!(mat.id in charsmat[val["Lang"]])) charsmat[val["Lang"]][mat.id] = [];
-                        charsmat[val["Lang"]][mat.id].push({
-                            "class": elevel,
-                            "id": key,
-                            "name": val["Lang"]=='en'?`${char.name} (${CLASS_PARSE_EN[char.profession]})`:`${char.appellation} (${CLASS_PARSE_EN[char.profession]})`,
-                            "count": mat.count,
-                            "char_level": char.rarity.length>1?Number(char.rarity.slice(-1)):char.rarity + 1
-                        })
-                        if(!(key in charparse)) {
-                        charparse[key]={"name":val["Lang"]=='en'?`${char.name} (${CLASS_PARSE_EN[char.profession]})`:`${char.appellation} (${CLASS_PARSE_EN[char.profession]})`,
-                                        "char_level":char.rarity.length>1?Number(char.rarity.slice(-1)):char.rarity + 1}}
-                    });
-                }
-            });
-
-            // retrieve skills costs
-            $.each(char.allSkillLvlup, function (skill_level, level) {
-                $.each(level.lvlUpCost, function (_, mat) {
-                    if (!(mat.id in charsmat[val["Lang"]])) charsmat[val["Lang"]][mat.id] = [];
-                    charsmat[val["Lang"]][mat.id].push({
-                        "class": "Skill-up",
-                        "id": key,
-                        "name": val["Lang"]=='en'?`${char.name} (${CLASS_PARSE_EN[char.profession]})`:`${char.appellation} (${CLASS_PARSE_EN[char.profession]})`,
-                        "count": mat.count,
-                        "char_level": char.rarity.length>1?Number(char.rarity.slice(-1)):char.rarity + 1,
-                        "skill_index": 0,
-                        "skill_level": skill_level + 2
-                    });
-                });
-            });
-
+            if(!(key in charparse)) {
+                charparse[key] = {
+                                    "name"      :   val["Lang"]=='en'?char.name:char.appellation,
+                                    "char_level":   char.rarity.length>1?Number(char.rarity.slice(-1)):char.rarity + 1
+                                }
+            }
             /// Skill #
             s = 0;
             $.each(char.skills, function (skill_index, skill) {

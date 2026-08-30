@@ -51,7 +51,6 @@
 - dropdown for AKHR type-in
 - Skin bar too long now (Ling)
 - handle Xiaohei cat
-- Independent-miya
 - Chibi Start (Fixed base to canvas problem ex.char_494_vendla_game#10)
 - Token
     - Skill SP recovery

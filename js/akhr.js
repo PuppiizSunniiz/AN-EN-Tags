@@ -357,7 +357,10 @@ function showChar(el){
                         'style': "background:#444",
                         'data-toggle': "tooltip",
                         'data-placement': "right",
-                        'href': "./akhrchars.html?opname="+char.name_en.replace(/ /g,"_")+(char.gamemode!="BASE"?`&gamemode=${char.gamemode}`:""),
+                        'href': "./akhrchars.html?opname="
+                                + (char.name_en.replace(/ /g, "_").replace(/_\(.+?\)/g, "")) //opname
+                                + (char.gamemode != "BASE" ? `&gamemode=${char.gamemode}` : "") //gamemode
+                                + (char.name_en.search(/ \(.+?\)/) != -1 ? `&amiya=${char.name_en.slice(char.name_en.search(/\(/) + 1, char.name_en.search(/\)/))}` : ""), // amiya
                         'text': 'Detail'
                     })
                 ]),
