@@ -4230,6 +4230,26 @@
                             }
                         }
                     }
+                },
+                "act54side": {
+                    "name": "[SR] : Sur le lac lune vivante",
+                    "date": 1788476400,
+                    "zone": {
+                        "act54side_zone1": {
+                            "name": "通学路",
+                            "stage": {
+                                "act54side_tr01": "SR-TR-1 : 月影",
+                                "act54side_01": "SR-1 : 月出",
+                                "act54side_02": "SR-2 : 月涌",
+                                "act54side_03": "SR-3 : 月晕",
+                                "act54side_04": "SR-4 : 月移",
+                                "act54side_05": "SR-5 : 月斜",
+                                "act54side_06": "SR-6 : 月蚀",
+                                "act54side_07": "SR-7 : 月悬",
+                                "act54side_08": "SR-8 : 月满"
+                            }
+                        }
+                    }
                 }
             }
         },
@@ -7985,6 +8005,7 @@
         "weekly_2": "PR-B : Fierce Attack (Snipers & Casters)",
         "weekly_3": "PR-C : Unstoppable Charge (Vanguards & Supporters)",
         "weekly_4": "PR-D : Fearless Protection (Guards & Specialists)",
+        "act54side": "[SR] : Sur le lac lune vivante",
         "act53side": "[TO] : Till the Lands Become an Orange",
         "act1arkhub": "Interactive Exhibition",
         "act21mini": "[BD] : Bolívar Diagnosed",
@@ -36640,6 +36661,116 @@
                         "RA#2_monthly_1",
                         "RA#2_monthly_1",
                         "RA#2_monthly_1"
+                    ]
+                }
+            }
+        },
+        "enemy_10185_pppshd": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone1": [
+                        "act54side_tr01",
+                        "act54side_02",
+                        "act54side_03",
+                        "act54side_04",
+                        "act54side_05",
+                        "act54side_06",
+                        "act54side_07",
+                        "act54side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10186_ppparc": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone1": [
+                        "act54side_tr01",
+                        "act54side_02",
+                        "act54side_04"
+                    ]
+                }
+            }
+        },
+        "enemy_10184_pppsbr": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone1": [
+                        "act54side_01",
+                        "act54side_02",
+                        "act54side_03",
+                        "act54side_04",
+                        "act54side_05",
+                        "act54side_06",
+                        "act54side_07",
+                        "act54side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10187_pppwiz": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone1": [
+                        "act54side_03",
+                        "act54side_05",
+                        "act54side_07"
+                    ]
+                }
+            }
+        },
+        "enemy_10188_pppdp": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone1": [
+                        "act54side_04"
+                    ]
+                }
+            }
+        },
+        "enemy_10191_pppgst": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone1": [
+                        "act54side_04"
+                    ]
+                }
+            }
+        },
+        "enemy_10189_pppmag": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone1": [
+                        "act54side_05",
+                        "act54side_07",
+                        "act54side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10190_pppham": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone1": [
+                        "act54side_06"
+                    ]
+                }
+            }
+        },
+        "enemy_10192_ppprpr": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone1": [
+                        "act54side_07"
+                    ]
+                }
+            }
+        },
+        "enemy_1589_pppdth": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone1": [
+                        "act54side_08"
                     ]
                 }
             }

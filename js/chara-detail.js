@@ -1377,7 +1377,7 @@
             //get globaltoken early for tokenchibi (L:1465-)
             defaulttoken = null
             $.each(opdataFull.talents, (_, t) => {
-                if (!defaulttoken && t.candidates[0].tokenKey){
+                if (!defaulttoken && t.candidates && t.candidates[0].tokenKey){
                     defaulttoken = t.candidates[0].tokenKey
                     return false
                 }
@@ -4079,6 +4079,7 @@
                                 // console.log(infoTitle)
                                 switch (infoTitle[2]) {
                                     case "代号": 
+                                    case "姓名":
                                         content = opdataFull.appellation;
                                         break;
                                     case "性别":
@@ -4576,40 +4577,42 @@
         var activePotential = 0
         var lastPotential = 0
         opdataFull.talents.forEach(currTalent => {
-            currTalent.candidates.forEach(currCandidate => {
-                var currlevel = parseInt(currCandidate.unlockCondition.level)
-                var currphase = PhaseConvert(currCandidate.unlockCondition.phase)
-                var currpotent = parseInt(currCandidate.requiredPotentialRank)
-                if(!talentObject.req.includes(`${currphase}-${currlevel}-${currpotent}`,0)){
-                    talentObject.req.push(`${currphase}-${currlevel}-${currpotent}`)
-                    talentObject.req2.push([currphase,currlevel,currpotent])
-                    talentObject.html[`${currphase}-${currlevel}-${currpotent}`]={req:[currphase,currlevel,currpotent],talents:[]}
+            if (currTalent.candidates){
+                currTalent.candidates.forEach(currCandidate => {
+                    var currlevel = parseInt(currCandidate.unlockCondition.level)
+                    var currphase = PhaseConvert(currCandidate.unlockCondition.phase)
+                    var currpotent = parseInt(currCandidate.requiredPotentialRank)
+                    if(!talentObject.req.includes(`${currphase}-${currlevel}-${currpotent}`,0)){
+                        talentObject.req.push(`${currphase}-${currlevel}-${currpotent}`)
+                        talentObject.req2.push([currphase,currlevel,currpotent])
+                        talentObject.html[`${currphase}-${currlevel}-${currpotent}`]={req:[currphase,currlevel,currpotent],talents:[]}
 
-                    if(currphase==2&&activeElite<2){
-                        activeElite=2
-                        activeLevel=currlevel
+                        if(currphase==2&&activeElite<2){
+                            activeElite=2
+                            activeLevel=currlevel
+                        }
+                        if(currphase==1&&activeElite<=1){
+                            activeElite=1
+                            if(activeLevel<currlevel){
+                                activeLevel= currlevel
+                            }
+                            if(opdataFull.rarity<=2&&activePotential<currpotent){
+                                activePotential = currpotent
+                            }
+                        }
+                        if(currphase==0&&activeElite<=0){
+                            activeElite=0
+                            if(activeLevel<currlevel){
+                                activeLevel= currlevel
+                            }
+                            if(opdataFull.rarity<=2&&activePotential<currpotent){
+                                activePotential = currpotent
+                            }
+                        }
                     }
-                    if(currphase==1&&activeElite<=1){
-                        activeElite=1
-                        if(activeLevel<currlevel){
-                            activeLevel= currlevel
-                        }
-                        if(opdataFull.rarity<=2&&activePotential<currpotent){
-                            activePotential = currpotent
-                        }
-                    }
-                    if(currphase==0&&activeElite<=0){
-                        activeElite=0
-                        if(activeLevel<currlevel){
-                            activeLevel= currlevel
-                        }
-                        if(opdataFull.rarity<=2&&activePotential<currpotent){
-                            activePotential = currpotent
-                        }
-                    }
-                }
-                lastPotential = currpotent
-            });
+                    lastPotential = currpotent
+                });
+            }
             // Add extra Talent slot for non-E2 upgrade talent like Marcille, Exuter
             if(RarityConvert(opdataFull.rarity.toString()) > 2 && activeElite < 2){
                 for(i = activeElite + 1; i <= 2; i++){
@@ -4692,7 +4695,7 @@
         // console.log(talentObject.req2)
         for(i=0;i<opdataFull.talents.length;i++){
             var currTalent = opdataFull.talents[i]
-            // if(!db.talentsTL[id])break;
+            if (!currTalent.candidates) continue
             var currTalentEN = db.charsEN[charName]?db.charsEN[charName].talents[i]:db.charpatchEN.patchChars[charName]?db.charpatchEN.patchChars[charName].talents[i]:undefined
             var currTalentTL = db.talentsTL[id]?db.talentsTL[id][i]:undefined
             // var talentGroup = []
@@ -5004,7 +5007,7 @@
             var Moduletalentjson={}
             Moduletalentjson.name = db.effect[Stat.key]?db.effect[Stat.key]:Stat.key
             Moduletalentjson.key = Stat.key
-            Moduletalentjson.value = Stat.value
+            Moduletalentjson.value = Stat.key=="range_id"?rangeMaker(Stat.valueStr, true, 0, "Talent"):Stat.valueStr?Stat.valueStr:Stat.value
             Moduletalentdetails.push(Moduletalentjson)
         })
 
@@ -5112,7 +5115,7 @@
             var talentjson={}
             talentjson.name = db.effect[talentInfo.key]?db.effect[talentInfo.key]:talentInfo.key
             talentjson.key = talentInfo.key
-            talentjson.value = talentInfo.value
+            talentjson.value = talentInfo.key=="range_id"?rangeMaker(talentInfo.valueStr, true, 0, "Talent"):talentInfo.valueStr?talentInfo.valueStr:talentInfo.value
             if(talentInfo.key=="ability_range_forward_extend"){
                 isTalentRangeExtend = rangeMaker(opdataFull.phases[0].rangeId,true,talentjson.value)
             }

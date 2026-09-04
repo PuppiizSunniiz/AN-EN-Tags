@@ -1279,6 +1279,27 @@
             "note": "new mods RA-A",
             "name": "char_1026_gvial2",
             "code": "uniequip_004_gvial2"
+        },
+        "普通攻击连续造成<@ba.kw>两次</>伤害，且不受<@ba.kw>部署数量</>限制，但再部署时间极长": {
+            "en": "Normal attacks deal damage <@ba.kw>twice</> and ignores the <@ba.kw>Deployment Limit</>, but has a long Redeployment Time",
+            "color": "physical",
+            "note": "new Ops \"sword\" Archetype trait",
+            "name": "Koromaru",
+            "code": "char_4220_kormr"
+        },
+        "部署后<$ba.liftoff>起飞</>，<$ba.liftoff>起飞</>后只攻击空中敌人；技能开启时降落，攻击造成<@ba.kw>群体物理伤害</>且攻击地面敌人时攻击力提升至<@ba.kw>110％</>": {
+            "en": "部署后<$ba.liftoff>起飞</>，<$ba.liftoff>起飞</>后只攻击空中敌人；技能开启时降落，攻击造成<@ba.kw>群体物理伤害</>且攻击地面敌人时攻击力提升至<@ba.kw>110％</>",
+            "color": "extra",
+            "note": "new mods BRK-X",
+            "name": "char_4218_aigis",
+            "code": "uniequip_002_aigis"
+        },
+        "攻击范围内有干员处于技能持续期间时，自身攻击力<@ba.kw>+{atk:0%}</>": {
+            "en": "攻击范围内有干员处于技能持续期间时，自身攻击力<@ba.kw>+{atk:0%}</>",
+            "color": "extra",
+            "note": "new mods RAN-X",
+            "name": "char_4219_yukari",
+            "code": "uniequip_002_yukari"
         }
     },
     "parts": [

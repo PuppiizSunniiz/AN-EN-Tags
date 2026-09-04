@@ -5408,6 +5408,78 @@
             "name": "Assault",
             "Event": "weekly_4"
         },
+        "act54side_tr01": {
+            "stageId": "act54side_tr01",
+            "levelId": "Activities/act54side/level_act54side_tr01",
+            "zoneId": "act54side_zone1",
+            "code": "SR-TR-1",
+            "name": "月影",
+            "Event": "act54side"
+        },
+        "act54side_01": {
+            "stageId": "act54side_01",
+            "levelId": "Activities/act54side/level_act54side_01",
+            "zoneId": "act54side_zone1",
+            "code": "SR-1",
+            "name": "月出",
+            "Event": "act54side"
+        },
+        "act54side_02": {
+            "stageId": "act54side_02",
+            "levelId": "Activities/act54side/level_act54side_02",
+            "zoneId": "act54side_zone1",
+            "code": "SR-2",
+            "name": "月涌",
+            "Event": "act54side"
+        },
+        "act54side_03": {
+            "stageId": "act54side_03",
+            "levelId": "Activities/act54side/level_act54side_03",
+            "zoneId": "act54side_zone1",
+            "code": "SR-3",
+            "name": "月晕",
+            "Event": "act54side"
+        },
+        "act54side_04": {
+            "stageId": "act54side_04",
+            "levelId": "Activities/act54side/level_act54side_04",
+            "zoneId": "act54side_zone1",
+            "code": "SR-4",
+            "name": "月移",
+            "Event": "act54side"
+        },
+        "act54side_05": {
+            "stageId": "act54side_05",
+            "levelId": "Activities/act54side/level_act54side_05",
+            "zoneId": "act54side_zone1",
+            "code": "SR-5",
+            "name": "月斜",
+            "Event": "act54side"
+        },
+        "act54side_06": {
+            "stageId": "act54side_06",
+            "levelId": "Activities/act54side/level_act54side_06",
+            "zoneId": "act54side_zone1",
+            "code": "SR-6",
+            "name": "月蚀",
+            "Event": "act54side"
+        },
+        "act54side_07": {
+            "stageId": "act54side_07",
+            "levelId": "Activities/act54side/level_act54side_07",
+            "zoneId": "act54side_zone1",
+            "code": "SR-7",
+            "name": "月悬",
+            "Event": "act54side"
+        },
+        "act54side_08": {
+            "stageId": "act54side_08",
+            "levelId": "Activities/act54side/level_act54side_08",
+            "zoneId": "act54side_zone1",
+            "code": "SR-8",
+            "name": "月满",
+            "Event": "act54side"
+        },
         "act53side_01": {
             "stageId": "act53side_01",
             "levelId": "Activities/act53side/level_act53side_01",
@@ -32786,6 +32858,17 @@
             "pro_d_1",
             "pro_d_2"
         ],
+        "act54side_zone1": [
+            "act54side_tr01",
+            "act54side_01",
+            "act54side_02",
+            "act54side_03",
+            "act54side_04",
+            "act54side_05",
+            "act54side_06",
+            "act54side_07",
+            "act54side_08"
+        ],
         "act53side_zone1": [
             "act53side_01",
             "act53side_tr01",
@@ -37171,6 +37254,9 @@
         ],
         "weekly_4": [
             "weekly_4"
+        ],
+        "act54side": [
+            "act54side_zone1"
         ],
         "act53side": [
             "act53side_zone1",
@@ -66449,6 +66535,116 @@
                         "RA#2_monthly_1",
                         "RA#2_monthly_1",
                         "RA#2_monthly_1"
+                    ]
+                }
+            }
+        },
+        "enemy_10185_pppshd": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone1": [
+                        "act54side_tr01",
+                        "act54side_02",
+                        "act54side_03",
+                        "act54side_04",
+                        "act54side_05",
+                        "act54side_06",
+                        "act54side_07",
+                        "act54side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10186_ppparc": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone1": [
+                        "act54side_tr01",
+                        "act54side_02",
+                        "act54side_04"
+                    ]
+                }
+            }
+        },
+        "enemy_10184_pppsbr": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone1": [
+                        "act54side_01",
+                        "act54side_02",
+                        "act54side_03",
+                        "act54side_04",
+                        "act54side_05",
+                        "act54side_06",
+                        "act54side_07",
+                        "act54side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10187_pppwiz": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone1": [
+                        "act54side_03",
+                        "act54side_05",
+                        "act54side_07"
+                    ]
+                }
+            }
+        },
+        "enemy_10188_pppdp": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone1": [
+                        "act54side_04"
+                    ]
+                }
+            }
+        },
+        "enemy_10191_pppgst": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone1": [
+                        "act54side_04"
+                    ]
+                }
+            }
+        },
+        "enemy_10189_pppmag": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone1": [
+                        "act54side_05",
+                        "act54side_07",
+                        "act54side_08"
+                    ]
+                }
+            }
+        },
+        "enemy_10190_pppham": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone1": [
+                        "act54side_06"
+                    ]
+                }
+            }
+        },
+        "enemy_10192_ppprpr": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone1": [
+                        "act54side_07"
+                    ]
+                }
+            }
+        },
+        "enemy_1589_pppdth": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone1": [
+                        "act54side_08"
                     ]
                 }
             }

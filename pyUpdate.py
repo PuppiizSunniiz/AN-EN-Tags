@@ -78,6 +78,7 @@ NEW_CHARS : list[str] = [
                             "Aphrissa", "Pedro",
                             "Mechanist",
                             "Angelina the Mellow Wish", "Thumpy", "Jacinta", "Timeslot", 
+                            "Makoto Yuki", "Aegis", "Yukari Takeba", "Koromaru", 
                         ] # "", 
 
 #["ItemID#1","ItemID#2", ...]
@@ -201,7 +202,7 @@ def update_char_TraitSkillTalent(new_char_name : str) :
                                             "descCN": parentheses(candidate["description"]),
                                             "desc"  : ""
                                         } for candidate in talent["candidates"] if not candidate["isHideTalent"]
-                                    ]  for talent in json_char[new_char_id]["talents"] if not talent["candidates"][0]["isHideTalent"]
+                                    ]  for talent in json_char[new_char_id]["talents"] if talent["candidates"] and not talent["candidates"][0]["isHideTalent"]
                                 ]
     ## Skill
     for skill in json_char[new_char_id]["skills"]:

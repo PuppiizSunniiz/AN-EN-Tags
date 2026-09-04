@@ -1,13 +1,4 @@
 # Fix TL (Official EN) waiting room
-### Crossing
-- Effect
-    - ba.dmgresistance
-- Trait
-    - Bellone's S3 Token
-- 2nd mod Trait
-    - Eyjalt 
-    - Jessica
-
 ### People, A People
 - 2nd mod Trait
     - Nymph
@@ -21,6 +12,7 @@
 - Mod Trait
     - Typhon isw-a
     - Specter the Unchained isw-a
+- GALLUS² Gender
 
 ### Thunder in the Azure Dream
 - Trait
@@ -46,6 +38,14 @@
 - Mod Trait
     - Fiammetta ISW-A
     - Gavial the Invincible RA-A
+
+### Sur le lac lune vivante
+- Mod Trait
+    - Aegis BRK-X
+    - Yukari Takeba RAN-X
+- Trait
+    - Koromaru
+- Koromaru Gender
 
 ### To Do
 - dropdown for AKHR type-in
