@@ -267,8 +267,8 @@ def riic_tl_json(show : bool = False):
                         return f'When this Operator is assigned to the same Trading Post as <@cc.kw>{match_char}</>, Morale consumed each hour <@cc.vup>{match_morale}</>, and order limit <@cc.vup>{match_limit}</>'
                     # *(trade_ord_spd_ext)
                     re_trade_ord_spd_ext = r'^进驻贸易站时，订单获取效率<@cc\.vup>(\+[0-9]*%)<\/>；当<@cc\.kw>([^<]*)<\/>在基建内时（不包含副手及活动室使用者），订单获取效率额外<@cc\.vup>(\+[0-9]*%)<\/>$'
-                    if re.match(re_trade_ord_limit__cost_P, desc_sub):
-                        desc_match          = re.match(re_trade_ord_limit__cost_P, desc_sub)
+                    if re.match(re_trade_ord_spd_ext, desc_sub):
+                        desc_match          = re.match(re_trade_ord_spd_ext, desc_sub)
                         match_eff           = desc_match.group(1)
                         match_char          = riic_match_tl(desc_match.group(2), "op")
                         match_eff_add       = desc_match.group(3)

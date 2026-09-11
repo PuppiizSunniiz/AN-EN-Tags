@@ -4248,6 +4248,27 @@
                                 "act54side_07": "SR-7 : 月悬",
                                 "act54side_08": "SR-8 : 月满"
                             }
+                        },
+                        "act54side_zone2": {
+                            "name": "殡仪堂",
+                            "stage": {
+                                "act54side_ex01": "SR-EX-1 : 欲求之础",
+                                "act54side_ex01#f#": "SR-EX-1 : 欲求之础 <b>(Challenge)</b>",
+                                "act54side_ex02": "SR-EX-2 : 封闭之柱",
+                                "act54side_ex02#f#": "SR-EX-2 : 封闭之柱 <b>(Challenge)</b>",
+                                "act54side_ex03": "SR-EX-3 : 否定之壁",
+                                "act54side_ex03#f#": "SR-EX-3 : 否定之壁 <b>(Challenge)</b>",
+                                "act54side_ex04": "SR-EX-4 : 反刍之堂",
+                                "act54side_ex04#f#": "SR-EX-4 : 反刍之堂 <b>(Challenge)</b>",
+                                "act54side_ex05": "SR-EX-5 : 刻板之廊",
+                                "act54side_ex05#f#": "SR-EX-5 : 刻板之廊 <b>(Challenge)</b>",
+                                "act54side_ex06": "SR-EX-6 : 解离之梁",
+                                "act54side_ex06#f#": "SR-EX-6 : 解离之梁 <b>(Challenge)</b>",
+                                "act54side_ex07": "SR-EX-7 : 激越之拱",
+                                "act54side_ex07#f#": "SR-EX-7 : 激越之拱 <b>(Challenge)</b>",
+                                "act54side_ex08": "SR-EX-8 : 虚无之顶",
+                                "act54side_ex08#f#": "SR-EX-8 : 虚无之顶 <b>(Challenge)</b>"
+                            }
                         }
                     }
                 }
@@ -36733,6 +36754,14 @@
                 "act54side": {
                     "act54side_zone1": [
                         "act54side_04"
+                    ],
+                    "act54side_zone2": [
+                        "act54side_ex01",
+                        "act54side_ex01#f#",
+                        "act54side_ex02",
+                        "act54side_ex02#f#",
+                        "act54side_ex08",
+                        "act54side_ex08#f#"
                     ]
                 }
             }
@@ -36762,6 +36791,16 @@
                 "act54side": {
                     "act54side_zone1": [
                         "act54side_07"
+                    ],
+                    "act54side_zone2": [
+                        "act54side_ex01",
+                        "act54side_ex01#f#",
+                        "act54side_ex03",
+                        "act54side_ex03#f#",
+                        "act54side_ex07",
+                        "act54side_ex07#f#",
+                        "act54side_ex08",
+                        "act54side_ex08#f#"
                     ]
                 }
             }
@@ -36771,6 +36810,162 @@
                 "act54side": {
                     "act54side_zone1": [
                         "act54side_08"
+                    ],
+                    "act54side_zone2": [
+                        "act54side_ex08",
+                        "act54side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10184_pppsbr_2": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone2": [
+                        "act54side_ex01",
+                        "act54side_ex01#f#",
+                        "act54side_ex02",
+                        "act54side_ex02#f#",
+                        "act54side_ex03",
+                        "act54side_ex03#f#",
+                        "act54side_ex04",
+                        "act54side_ex04#f#",
+                        "act54side_ex05",
+                        "act54side_ex05#f#",
+                        "act54side_ex06",
+                        "act54side_ex06#f#",
+                        "act54side_ex07",
+                        "act54side_ex07#f#",
+                        "act54side_ex08",
+                        "act54side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10185_pppshd_2": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone2": [
+                        "act54side_ex01",
+                        "act54side_ex01#f#",
+                        "act54side_ex02",
+                        "act54side_ex02#f#",
+                        "act54side_ex03",
+                        "act54side_ex03#f#",
+                        "act54side_ex04",
+                        "act54side_ex04#f#",
+                        "act54side_ex05",
+                        "act54side_ex05#f#",
+                        "act54side_ex06",
+                        "act54side_ex06#f#",
+                        "act54side_ex07",
+                        "act54side_ex07#f#",
+                        "act54side_ex08",
+                        "act54side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10186_ppparc_2": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone2": [
+                        "act54side_ex02",
+                        "act54side_ex02#f#",
+                        "act54side_ex03",
+                        "act54side_ex03#f#",
+                        "act54side_ex08",
+                        "act54side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10191_pppgst_2": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone2": [
+                        "act54side_ex02",
+                        "act54side_ex02#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10191_pppgst_3": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone2": [
+                        "act54side_ex02",
+                        "act54side_ex02#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10191_pppgst_4": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone2": [
+                        "act54side_ex02",
+                        "act54side_ex02#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10191_pppgst_5": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone2": [
+                        "act54side_ex02",
+                        "act54side_ex02#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10188_pppdp_2": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone2": [
+                        "act54side_ex04",
+                        "act54side_ex04#f#",
+                        "act54side_ex06",
+                        "act54side_ex06#f#",
+                        "act54side_ex08",
+                        "act54side_ex08#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10187_pppwiz_2": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone2": [
+                        "act54side_ex04",
+                        "act54side_ex04#f#",
+                        "act54side_ex06",
+                        "act54side_ex06#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10190_pppham_2": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone2": [
+                        "act54side_ex05",
+                        "act54side_ex05#f#",
+                        "act54side_ex07",
+                        "act54side_ex07#f#"
+                    ]
+                }
+            }
+        },
+        "enemy_10189_pppmag_2": {
+            "sidestory": {
+                "act54side": {
+                    "act54side_zone2": [
+                        "act54side_ex06",
+                        "act54side_ex06#f#",
+                        "act54side_ex08",
+                        "act54side_ex08#f#"
                     ]
                 }
             }
