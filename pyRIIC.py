@@ -67,8 +67,17 @@ def riic_tl_json(show : bool = False):
                         match_point         = desc_match.group(2)
                         match_spd           = desc_match.group(3)
                         return f'When this Operator is assigned to the Control Center, <${match_faction_skill}><@cc.rem>{match_faction_name}</></><@cc.vup>{match_point}</>; HR contacting speed <@cc.vup>{match_spd}</> (strongest effect of the same type applies)'
+                    # control_meeting_bd[000] // char_1051_headb2
+                    re_control_meeting_bd = r'^进驻控制中枢时，自身心情每小时消耗<@cc\.vdown>([\+\.0-9]*)<\/>，每个进驻在会客室的<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>干员，线索搜集速度<@cc\.vup>([\+0-9%]*)<\/>$'
+                    if re.match(re_control_meeting_bd, desc):
+                        desc_match          = re.match(re_control_meeting_bd, desc_sub)
+                        match_morale        = desc_match.group(1)
+                        match_faction_skill = desc_match.group(2)
+                        match_faction_name  = riic_match_tl(match_faction_skill)
+                        match_spd           = desc_match.group(3)
+                        return f'When this Operator is assigned to the Control Center, self Morale loss per hour <@cc.vdown>{match_morale}</>; for each <${match_faction_skill}><@cc.kw>{match_faction_name}</></> Operator assigned to the Reception Room, clue collection speed <@cc.vup>{match_spd}</>'
                     # control_meeting&mp_cost[000]/[100] // char_4166_varkis
-                    re_control_meeting__mp_cost = r'进驻控制中枢时，基建内（不包含副手及活动室使用者）每有1名<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>干员，会客室线索搜集速度<@cc\.vup>([\+0-9%]*)<\/>（最多<@cc\.vup>([\+0-9%]*)<\/>，同种效果取最高）；当与<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>干员进驻控制中枢一起工作时，自身心情每小时消耗<@cc\.vdown>([\+\.0-9]*)<\/>'
+                    re_control_meeting__mp_cost = r'^进驻控制中枢时，基建内（不包含副手及活动室使用者）每有1名<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>干员，会客室线索搜集速度<@cc\.vup>([\+0-9%]*)<\/>（最多<@cc\.vup>([\+0-9%]*)<\/>，同种效果取最高）；当与<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>干员进驻控制中枢一起工作时，自身心情每小时消耗<@cc\.vdown>([\+\.0-9]*)<\/>$'
                     if re.match(re_control_meeting__mp_cost, desc):
                         desc_match          = re.match(re_control_meeting__mp_cost, desc_sub)
                         match_faction_skill1= desc_match.group(1)
@@ -171,8 +180,19 @@ def riic_tl_json(show : bool = False):
                         match_power         = desc_match.group(2)
                         return f'When this Operator is assigned to a Power Plant, if another <${match_faction_skill}><@cc.kw>{match_faction_name}</></> Operator is assigned to a Power Plant, drone charging speed <@cc.vup>{match_power}</>'
                 case "manu":
+                    # manu_formula_spd&bd[001] // char_1051_headb2
+                    re_manu_formula_spd__bd = r'^进驻制造站时，<@cc\.kw>([^<]*)<\/>类配方的生产力<@cc\.vup>([\+0-9%]*)<\/>，当与<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>干员在同一个制造站时，<@cc\.kw>([^<]*)<\/>类配方的生产力额外<@cc\.vup>([\+0-9%]*)<\/>$'
+                    if re.match(re_manu_formula_spd__bd, desc_sub):
+                        desc_match          = re.match(re_manu_formula_spd__bd, desc_sub)
+                        match_mat_1         = riic_match_tl(desc_match.group(1), "item")
+                        match_prod_1        = desc_match.group(2)
+                        match_faction_skill = desc_match.group(3)
+                        match_faction_name  = riic_match_tl(match_faction_skill)
+                        match_prod_2        = riic_match_tl(desc_match.group(4), "item")
+                        match_mat_2         = desc_match.group(5)
+                        return f'When this Operator is assigned to a Factory, <@cc.kw>{match_mat_1}</> formula productivity <@cc.vup>{match_prod_1}</>; when an <${match_faction_skill}><@cc.kw>{match_faction_name}</></> Operator is assigned to the same Factory, grants an additional <@cc.vup>{match_prod_2}</> to <@cc.kw>{match_mat_2}</> formula productivity'
                     # Speed cost (manu_formula_spd&cost_bd[100])
-                    re_manu_formula_spd__cost_bd = r'进驻制造站时，基建内（不包含副手及活动室使用者）每有1名<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>干员（最多<@cc\.kw>(\d+)<\/>名），<@cc\.kw>([^<]*)<\/>类配方的生产力<@cc\.vup>([\+\-\.0-9]*%)<\/>'
+                    re_manu_formula_spd__cost_bd = r'^进驻制造站时，基建内（不包含副手及活动室使用者）每有1名<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>干员（最多<@cc\.kw>(\d+)<\/>名），<@cc\.kw>([^<]*)<\/>类配方的生产力<@cc\.vup>([\+\-\.0-9]*%)<\/>$'
                     if re.match(re_manu_formula_spd__cost_bd, desc_sub):
                         desc_match          = re.match(re_manu_formula_spd__cost_bd, desc_sub)
                         match_faction_skill = desc_match.group(1)
@@ -380,7 +400,7 @@ def riic_tl_json(show : bool = False):
                         match_morale_2      = desc_match.group(2)
                         return f'When this Operator is assigned to a Dormitory, restores <@cc.vup>{match_morale_1}</> Morale per hour to all Operators assigned to that Dormitory, and every recruit slot (excluding initial slot), restores another <@cc.vup>{match_morale_2}</> (Only the strongest stacked effect of this type takes place)'
                     # dorm_rec_all&tired[100] // char_1022_flwr2
-                    re_dorm_rec_all__tired = r'进驻宿舍时，该宿舍内心情<@cc\.vup>([0-9]*)<\/>以下的干员恢复效果额外<@cc\.vup>([\+\-\.0-9]*)<\/>（同种效果取最高）'
+                    re_dorm_rec_all__tired = r'^进驻宿舍时，该宿舍内心情<@cc\.vup>([0-9]*)<\/>以下的干员恢复效果额外<@cc\.vup>([\+\-\.0-9]*)<\/>（同种效果取最高）$'
                     if re.match(re_dorm_rec_all__tired, desc_sub):
                         desc_match          = re.match(re_dorm_rec_all__tired, desc_sub)
                         match_morale_1      = desc_match.group(1)
@@ -405,7 +425,7 @@ def riic_tl_json(show : bool = False):
                         match_cap           = desc_match.group(3)
                         return f'When this Operator is assigned to a Dormitory, Morale recovery per hour of all Operators in that Dormitory <@cc.vup>{match_morale}</> for each <${match_faction_skill}><@cc.kw>{match_faction_name}</></> Operator in the Base (excluding Assistants and Activity Room users, caps at <@cc.kw>{match_cap}</> Operators, strongest effect of the same type applies)'
                     # (dorm_rec_all&lv[100])
-                    re_dorm_rec_all__lv = r'进驻宿舍时，该宿舍内所有干员的心情每小时恢复<@cc\.vup>([\+\.0-9]*)<\/>，同时当前宿舍每级为恢复效果额外<@cc\.vup>([\+\.0-9]*)<\/>（叠加后的最终值同种效果取最高）'
+                    re_dorm_rec_all__lv = r'^进驻宿舍时，该宿舍内所有干员的心情每小时恢复<@cc\.vup>([\+\.0-9]*)<\/>，同时当前宿舍每级为恢复效果额外<@cc\.vup>([\+\.0-9]*)<\/>（叠加后的最终值同种效果取最高）$'
                     if re.match(re_dorm_rec_all__lv, desc_sub):
                         desc_match          = re.match(re_dorm_rec_all__lv, desc_sub)
                         match_morale        = desc_match.group(1)

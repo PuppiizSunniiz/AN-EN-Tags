@@ -1,10 +1,6 @@
 # Fix TL (Official EN) waiting room
-### People, A People
-- 2nd mod Trait
-    - Nymph
-    - Skadi the Corrupting Heart
-
 ### EP17 : Critical Phase Transition
+- New Mat (31104, 31114, 31103, 31113)
 - Trait
     - Kal'tsit Esperanta 's Token (Tactical Anchor)
     - Closure 's Token (Command Center)
