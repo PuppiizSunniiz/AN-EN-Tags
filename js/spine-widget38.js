@@ -11028,7 +11028,7 @@ var spine38;
 				console.log(skeletonData)
 				var animationState = this.state = new spine38.AnimationState(new spine38.AnimationStateData(skeleton.data));
 				default_animation = animation_list.includes(config.animation)?config.animation:animation_list.find(k => k.includes(config.animation))
-				animationState.setAnimation(0, default_animation, config.loop);
+				animationState.setAnimation(0, default_animation || animation_list[0], config.loop);
 				if (config.success)
 					config.success(this);
 				this.loaded = true;

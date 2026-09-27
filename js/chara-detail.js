@@ -5923,12 +5923,7 @@
                             skelBin.data = array
                             SpineVersion = skelBin.readSkeletonVersion()
                             console.log(skelBin, SpineVersion)
-                            if (SpineVersion.slice(0,3) == "3.8"){
-                                jsonskel = array
-                            }else if(SpineVersion.slice(0,3) == "3.5"){
-                                skelBin.readSkeletonData()
-                                jsonskel = JSON.stringify(skelBin.json)
-                            }
+                            jsonskel = array
                             /*skelBin.data = array
                             skelBin.initJson()
                             jsonskel = JSON.stringify(skelBin.json)
@@ -5992,11 +5987,7 @@
                                         widget.customanimation = CheckAnimationSet(animations)
                                     }
                                 }
-                                if (SpineVersion.slice(0,3) == "3.8"){
-                                    new spine38.SpineWidget("spine-widget-op", config)
-                                }else if(SpineVersion.slice(0,3) == "3.5"){
-                                    new spine.SpineWidget("spine-widget-op", config)
-                                }
+                                new spine38.SpineWidget("spine-widget-op", config)
                             }
                         }
                         xhratlas.send()
@@ -6067,13 +6058,7 @@
                             skelBin.data = array
                             SpineVersion = skelBin.readSkeletonVersion()
                             console.log(skelBin, SpineVersion)
-                            if (SpineVersion.slice(0,3) == "3.8"){
-                                jsonskel = array
-                            }else if(SpineVersion.slice(0,3) == "3.5"){
-                                skelBin.readSkeletonData()
-                                jsonskel = JSON.stringify(skelBin.json)
-                                console.log(jsonskel.animations, jsonskel)
-                            }
+                            jsonskel = array
                             //jsonskel = JSON.stringify(skelBin.json)
                             /*var parsedskeljson = JSON.parse(jsonskel)
                             console.log(JSON.parse(jsonskel))
@@ -6157,11 +6142,7 @@
                                         }
                                     }
                                 }
-                                if (SpineVersion.slice(0,3) == "3.8"){
-                                    new spine38.SpineWidget("spine-widget", config)
-                                }else if(SpineVersion.slice(0,3) == "3.5"){
-                                    new spine.SpineWidget("spine-widget", config)
-                                }
+                                new spine38.SpineWidget("spine-widget", config)
                                 attempt = 0
                             }
                         }
@@ -6189,7 +6170,7 @@
 
     function LoadAnimationToken(tokenkey = skinsuffix?globaltoken + skinsuffix:globaltoken){
         var tokenname = tokenkey
-        var tokenfolder = `${SPINE_REPO}/spineassets/token/${opdataFull.id}/${encodeURIComponent(tokenkey)}`
+        var tokenfolder = `${SPINE_REPO}/spineassets/token/${globaltoken}/${encodeURIComponent(tokenkey)}`
         if(spinewidgettoken){
             // spinewidget.loadWidgets()
             // spinewidget.loadTexture()
@@ -6219,13 +6200,7 @@
                             skelBin.data = array
                             SpineVersion = skelBin.readSkeletonVersion()
                             console.log(skelBin, SpineVersion)
-                            if (SpineVersion.slice(0,3) == "3.8"){
-                                jsonskel = array
-                            }else if(SpineVersion.slice(0,3) == "3.5"){
-                                skelBin.readSkeletonData()
-                                jsonskel = JSON.stringify(skelBin.json)
-                                console.log(jsonskel)
-                            }
+                            jsonskel = array
                             /*jsonskel = JSON.stringify(skelBin.json)
                             var parsedskeljson = JSON.parse(jsonskel)
                             console.log(JSON.parse(jsonskel))
@@ -6297,11 +6272,7 @@
                                 widget.customanimation = CheckAnimationSet(tokenanimations)
                             }
                         }
-                        if (SpineVersion.slice(0,3) == "3.8"){
-                            new spine38.SpineWidget("spine-widget-token", config)
-                        }else if(SpineVersion.slice(0,3) == "3.5"){
-                            new spine.SpineWidget("spine-widget-token", config)
-                        }
+                        new spine38.SpineWidget("spine-widget-token", config)
                     }else{
                         if (attempt == 2) {
                             xhr.abort()
@@ -6853,13 +6824,7 @@
                             skelBin.data = array
                             SpineVersion = skelBin.readSkeletonVersion()
                             console.log(skelBin, SpineVersion)
-                            if (SpineVersion.slice(0,3) == "3.8"){
-                                jsonskel = array
-                            }else if(SpineVersion.slice(0,3) == "3.5"){
-                                skelBin.readSkeletonData()
-                                jsonskel = JSON.stringify(skelBin.json)
-                                console.log(jsonskel)
-                            }
+                            jsonskel = array
                             /*jsonskel = JSON.stringify(skelBin.json)
                             var parsedskeljson = JSON.parse(jsonskel)
                             console.log(JSON.parse(jsonskel))
@@ -6929,11 +6894,7 @@
                                 }
                             }
                         }
-                        if (SpineVersion.slice(0,3) == "3.8"){
-                            new spine38.SpineWidget("spine-widget-op", config)
-                        }else if(SpineVersion.slice(0,3) == "3.5"){
-                            new spine.SpineWidget("spine-widget-op", config)
-                        }
+                        new spine38.SpineWidget("spine-widget-op", config)
                     }
                 }else{
                     $("#loading-spine").text("Load Failed 2")
