@@ -485,6 +485,8 @@ def riic_tl_json(show : bool = False):
                         match_spd_2         = desc_match.group(3)
                         match_morale        = desc_match.group(5) if desc_match.group(4) else ""
                         return f'When this Operator is assigned to the Reception Room, increases Clue search speed by <@cc.vup>{match_spd_1}</>, and when assigned together with another <${match_faction_skill}><@cc.kw>{match_faction_name}</></> Operator, increases Clue search speed by an additional <@cc.vup>{match_spd_2}</>{f' while self Morale loss per hour <@cc.vdown>{match_morale}</>' if match_morale else ""}'
+                case "recycle":
+                    return desc_sub
                 case _ :
                     printr(f'{R}How did you get here BAKA !!! {RE}: mode = {R}{mode}')   
             

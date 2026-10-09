@@ -218,6 +218,8 @@
                         extraInfo = `<div class="btn btn-sm ak-disable ak-btn riic-type ak-riic-meet" style=""><img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/infrastructure/meet.png" style="height:20px;padding-bottom:3px"> Meeting </div>`
                         if(buffId.includes("team") || buffId.includes("flag") || buffId.includes("mustget"))
                             clue = clue_search(description)
+                    }else if(buffId.startsWith("recycle")){
+                        extraInfo = `<div class="btn btn-sm ak-disable ak-btn riic-type ak-riic-recycle" style=""><img src="https://raw.githubusercontent.com/PuppiizSunniiz/Arknight-Images/main/ui/infrastructure/recycle.png" style="height:20px;padding-bottom:3px"> Recycle </div>`
                     }
                     
                     description = description.replace(/\\n/g,"<br><br>")

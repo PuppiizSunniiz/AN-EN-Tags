@@ -73,12 +73,13 @@ json_talentTL       =   json_load("json/ace/tl-talents.json")
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
 NEW_CHARS : list[str] = [
-                            "Kal'tsit·Esperanta", "Closure", "Vij", "Crackborne", "GALLUS²",
+                            "Kal'tsit·Esperanta", "Closure", "Viy", "Crackborne", "GALLUS²",
                             "Violet Mizutsune Orchid", "Zinogre S Catapult", "Rhodes Island Recon",
                             "Aphrissa", "Pedro",
                             "Mechanist",
                             "Angelina the Mellow Wish", "Thumpy", "Jacinta", "Timeslot", 
                             "Makoto Yuki", "Aegis", "Yukari Takeba", "Koromaru", 
+                            "Clementia", "de Toledo", "Homebound", 
                         ] # "", 
 
 #["ItemID#1","ItemID#2", ...]
@@ -235,7 +236,7 @@ def update_tok_TraitSkillTalent(new_token_key, new_char_id, ):
                                             "descCN": parentheses(candidate["description"]),
                                             "desc"  : ""
                                         } for candidate in talent["candidates"]
-                                    ]  for talent in json_char[new_token_key]["talents"]
+                                    ]  for talent in json_char[new_token_key]["talents"] if talent["candidates"]
                                 ]
     #### Token Skill
     for skill in json_char[new_token_key]["skills"]:

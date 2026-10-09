@@ -43,6 +43,9 @@
     - Koromaru
 - Koromaru Gender
 
+### Yet Another Wave
+- RIIC (Recycle)
+
 ### To Do
 - dropdown for AKHR type-in
 - Skin bar too long now (Ling)
