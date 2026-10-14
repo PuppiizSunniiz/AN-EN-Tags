@@ -277,7 +277,7 @@
             "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by <@cc.vup>+0.05</> per hour."
         },
         "control_mp_cost[014]": {
-            "buffName": "总工程师",
+            "buffName": "Chief Engineer",
             "skillIcon": "bskill_ctrl_cost",
             "desc": "进驻控制中枢时，控制中枢内所有干员的心情每小时恢复<@cc.vup>+0.05</>",
             "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by <@cc.vup>+0.05</> per hour."
@@ -715,7 +715,7 @@
             "description": "When this Operator is assigned to a Power Plant, <@cc.vup>+1%</> Drone recovery rate for every <@cc.vup>10</> max Drone capacity (Max <@cc.vup>+25%</>)"
         },
         "power_rec_spd[0010]": {
-            "buffName": "鸡电工程",
+            "buffName": "Clucktrical Engineering",
             "skillIcon": "bskill_pow_spd1",
             "desc": "进驻发电站时，无人机充能速度<@cc.vup>+10%</>",
             "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+10%</>"
@@ -757,10 +757,10 @@
             "description": "When this Operator is assigned to a Power Plant, if another <$cc.g.laterano><@cc.kw>Laterano</></> Operator is assigned to a Power Plant, drone charging speed <@cc.vup>+5%</>"
         },
         "power_rec_spd_ext&tag[000]": {
-            "buffName": "鸡励机制",
+            "buffName": "Clucktivation Mechanism",
             "skillIcon": "bskill_power_rec_spd_ext&tag",
             "desc": "进驻发电站时，如果其他<$cc.tag.op><@cc.kw>作业平台</></>进驻在发电站，则无人机充能速度<@cc.vup>+5%</>",
-            "description": "进驻发电站时，如果其他<$cc.tag.op><@cc.kw>作业平台</></>进驻在发电站，则无人机充能速度<@cc.vup>+5%</>"
+            "description": "When this Operator is assigned to a Power Plant, if another <$cc.tag.op><@cc.kw>Operation Platform</></> is assigned to a Power Plant, drone charging speed <@cc.vup>+5%</>"
         },
         "power_rec_rhine[000]": {
             "buffName": "Ecological Section Director",
@@ -1159,10 +1159,10 @@
             "description": "When this Operator is assigned to a Factory, provides an additional <@cc.vup>5%</> productivity for every <@cc.vup>5%</> productivity provided by all other Operators assigned to that Factory (excluding the additional productivity affected by facility count), up to a maximum of <@cc.vup>40%</> productivity."
         },
         "manu_prod_spd_train&lv[000]": {
-            "buffName": "手艺人",
+            "buffName": "Artisan",
             "skillIcon": "bskill_man_spd_veen",
             "desc": "进驻制造站时，训练室每级为当前制造站<@cc.vup>+10%</>生产力，最多<@cc.vup>30%</>",
-            "description": "进驻制造站时，训练室每级为当前制造站<@cc.vup>+10%</>生产力，最多<@cc.vup>30%</>"
+            "description": "When this Operator is assigned to a Factory, current Factory Productivity <@cc.vup>+10%</> for every level of each Training Room level, up to <@cc.vup>30%</>"
         },
         "manu_prod_spd_bd_n1[000]": {
             "buffName": "Extrasensory",
@@ -1291,10 +1291,10 @@
             "description": "When this Operator is assigned to a Factory, <@cc.kw>Battle Record</> productivity <@cc.vup>+35%</>, and Morale consumed per hour <@cc.vup>-0.25</>"
         },
         "manu_formula_spd&limit&cost[100]": {
-            "buffName": "“连轴转”",
+            "buffName": "'Round the Clock'",
             "skillIcon": "bskill_man_exp&spd&cost1",
             "desc": "进驻制造站时，<@cc.kw>作战记录</>类配方的生产力<@cc.vup>+35%</>，心情每小时消耗<@cc.vdown>+0.25</>",
-            "description": "进驻制造站时，<@cc.kw>作战记录</>类配方的生产力<@cc.vup>+35%</>，心情每小时消耗<@cc.vdown>+0.25</>"
+            "description": "When this Operator is assigned to a Factory, <@cc.kw>Battle Record</> productivity <@cc.vup>+35%</>, and Morale consumed per hour <@cc.vdown>+0.25</>"
         },
         "manu_prod_spd&trade[000]": {
             "buffName": "Renewable Energy",
@@ -1597,10 +1597,10 @@
             "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+25%</>, +<@cc.vup>5%</> per Reception Room level, up to a maximum of <@cc.vup>40%</>"
         },
         "trade_ord_closure[000]": {
-            "buffName": "特别订单",
+            "buffName": "Special Order",
             "skillIcon": "bskill_tra_closure",
             "desc": "进驻贸易站时，订单获取效率<@cc.vup>+10%</>，固定获取<$cc.tra.closure><@cc.kw>可露希尔特别订单</></>（不视作违约订单）",
-            "description": "进驻贸易站时，订单获取效率<@cc.vup>+10%</>，固定获取<$cc.tra.closure><@cc.kw>可露希尔特别订单</></>（不视作违约订单）"
+            "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+10%</>, <$cc.tra.closure><@cc.kw>Closure's Special Order</></> will be obtained at a fixed rate (not considered as Defaulted trades)."
         },
         "trade_ord_spd&meet[010]": {
             "buffName": "Gifted Adviser",
@@ -2101,16 +2101,16 @@
             "description": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, the production rate of byproduct increases by <@cc.vup>70%</>"
         },
         "workshop_proc_probability[041]": {
-            "buffName": "技术阐明",
+            "buffName": "Technical Elucidation",
             "skillIcon": "bskill_ws_p5",
             "desc": "进驻加工站加工<@cc.kw>任意类材料</>时，副产品的产出概率提升<@cc.vup>70%</>",
             "description": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, the production rate of byproduct increases by <@cc.vup>70%</>"
         },
         "workshop_proc_probability[050]": {
-            "buffName": "理论革新",
+            "buffName": "Theoretical Innovation",
             "skillIcon": "bskill_ws_p_kalts2",
             "desc": "进驻加工站加工<@cc.kw>任意类材料</>时，副产品的产出概率提升<@cc.vup>80%</>",
-            "description": "进驻加工站加工<@cc.kw>任意类材料</>时，副产品的产出概率提升<@cc.vup>80%</>"
+            "description": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, the production rate of byproduct increases by <@cc.vup>80%</>"
         },
         "workshop_proc_cost[000]": {
             "buffName": "Spiritshaping: Metal",
@@ -2785,16 +2785,16 @@
             "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Caster</> and <@cc.kw>Guard</> Operators' Specialization training speed <@cc.vup>+30%</>"
         },
         "train_spd_doubleProf[301]": {
-            "buffName": "“我不懂啊”",
+            "buffName": "'I Don't Get It'",
             "skillIcon": "bskill_train_caster&vanguard1",
             "desc": "进驻训练室协助位时，<@cc.kw>术师</>与<@cc.kw>近卫</>干员的专精技能训练速度<@cc.vup>+30%</>",
             "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Caster</> and <@cc.kw>Guard</> Operators' Specialization training speed <@cc.vup>+30%</>"
         },
         "train_spd_doubleProf[310]": {
-            "buffName": "“触类旁通”",
+            "buffName": "'Learning By Analogy'",
             "skillIcon": "bskill_train_caster&vanguard2",
             "desc": "进驻训练室协助位时，<@cc.kw>术师</>与<@cc.kw>近卫</>干员的专精技能训练速度<@cc.vup>+45%</>",
-            "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Caster</> and <@cc.kw>Guard</> Operators' Specialization training speed<@cc.vup>+45%</>"
+            "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Caster</> and <@cc.kw>Guard</> Operators' Specialization training speed <@cc.vup>+45%</>"
         },
         "train_spd_doubleProf[110]": {
             "buffName": "Red Dragon's Blood",
@@ -3349,10 +3349,10 @@
             "description": "When this Operator is assigned to a Dormitory, self Morale recovered <@cc.vup>+1</> per hour"
         },
         "dorm_rec_oneself[040]": {
-            "buffName": "难得休憩",
+            "buffName": "A Rare Rest",
             "skillIcon": "bskill_dorm_one1",
             "desc": "进驻宿舍时，自身心情每小时恢复<@cc.vup>+0.55</>",
-            "description": "When this Operator is assigned to a Dormitory, self Morale recovered per hour <@cc.vup>+0.55</>"
+            "description": "When this Operator is assigned to a Dormitory, self Morale recovered <@cc.vup>+0.55</> per hour"
         },
         "dorm_rec_oneself[030]": {
             "buffName": "Concealed Gourmet",
@@ -3661,7 +3661,7 @@
             "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.4</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); furthermore, self Morale recovered per hour <@cc.vup>+0.2</>"
         },
         "dorm_rec_single&oneself[021]": {
-            "buffName": "Karlan Saint",
+            "buffName": "Karlan Saintess",
             "skillIcon": "bskill_dorm_single&one22",
             "desc": "进驻宿舍时，使该宿舍内除自身以外心情未满的某个干员每小时恢复<@cc.vup>+0.5</>（同种效果取最高）；同时自身心情每小时恢复<@cc.vup>+0.25</>",
             "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.5</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); furthermore, self Morale recovered per hour <@cc.vup>+0.25</>"
@@ -3718,7 +3718,7 @@
             "buffName": "Release",
             "skillIcon": "bskill_dorm_one1",
             "desc": "进驻宿舍时，自身心情每小时恢复<@cc.vup>+0.55</>",
-            "description": "When this Operator is assigned to a Dormitory, self Morale recovered per hour <@cc.vup>+0.55</>"
+            "description": "When this Operator is assigned to a Dormitory, self Morale recovered <@cc.vup>+0.55</> per hour"
         },
         "dorm_rec_all&oneself[011]": {
             "buffName": "Break Loose",
@@ -4111,10 +4111,10 @@
             "description": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+5%</>, with a further increase of <@cc.vup>+2%</> for every level of each Dormitory"
         },
         "hire_spd_tag[000]": {
-            "buffName": "“泰拉的方舟”",
+            "buffName": "'Terra's Ark'",
             "skillIcon": "bskill_hire_kalts2",
             "desc": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+30%</>，基建内（不包含副手及活动室）每有一间进驻<$cc.g.elite><@cc.kw>精英干员</></>的设施，联络速度额外<@cc.vup>+4%</>（最多<@cc.kw>5</>间）",
-            "description": "进驻人力办公室时，人脉资源的联络速度<@cc.vup>+30%</>，基建内（不包含副手及活动室）每有一间进驻<$cc.g.elite><@cc.kw>精英干员</></>的设施，联络速度额外<@cc.vup>+4%</>（最多<@cc.kw>5</>间）"
+            "description": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+30%</>; for every facility in the Base with an <$cc.g.elite><@cc.kw>Elite Operator</></> assigned (excluding Assistants and Activity Rooms), HR contacting speed <@cc.vup>+4%</> (max <@cc.kw>5</> facilities)"
         },
         "meet_spd[000]": {
             "buffName": "Clue Search α",

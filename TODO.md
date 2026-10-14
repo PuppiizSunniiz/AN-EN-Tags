@@ -1,15 +1,4 @@
 # Fix TL (Official EN) waiting room
-### EP17 : Critical Phase Transition
-- New Mat (31104, 31114, 31103, 31113)
-- Trait
-    - Kal'tsit Esperanta 's Token (Tactical Anchor)
-    - Closure 's Token (Command Center)
-    - GALLUS²
-- Mod Trait
-    - Typhon isw-a
-    - Specter the Unchained isw-a
-- GALLUS² Gender
-
 ### Thunder in the Azure Dream
 - Trait
     - Rhodes Island Recon

@@ -177,7 +177,7 @@
         },
         "ba.dt.apoptosis2": {
             "termId": "ba.dt.apoptosis2",
-            "termName": "Necrosis - Player",
+            "termName": "Necrosis - Ally",
             "description": "Explodes when at max (1000 for Normal and Elite, 2000 for Leaders), inflicting 50%<$ba.weaken>Enfeeble</> that gradually recovers, and dealing 800 Elemental Damage per second. 15s cooldown."
         },
         "ba.epbarrier": {
@@ -428,7 +428,7 @@
         "cc.c.skill": {
             "termId": "cc.c.skill",
             "termName": "Certain Skills",
-            "description": "Includes the following skills:\nCapable Assistance, S.W.E.E.P., Snack Network, Cleaning Agreement, Substitute, Necessary Responsibility, Guarding, Tiny Leader, Self-Absorbed, Million Dollar Smile, Marigold Poetry Gathering, Art of Defense, New to the Job, Drip-Fed Care"
+            "description": "Includes the following skills:\nCapable Assistance, S.W.E.E.P., Snack Network, Cleaning Agreement, Substitute, Necessary Responsibility, Guarding, Tiny Leader, Self-Absorbed, Million Dollar Smile, Marigold Poetry Gathering, Art of Defense, New to the Job, Drip-Fed Care, Chief Engineer"
         },
         "cc.t.strong2": {
             "termId": "cc.t.strong2",
@@ -498,7 +498,7 @@
         "cc.tag.op": {
             "termId": "cc.tag.op",
             "termName": "Operation Platform",
-            "description": "Includes the following Operators:\nLancet-2, Castle-3, THRM-EX, Justice Knight, Friston-3, PhonoR-0, CONFESS-47"
+            "description": "Includes the following Operators:\nLancet-2, Castle-3, THRM-EX, Justice Knight, Friston-3, PhonoR-0, CONFESS-47, GALLUS²"
         },
         "cc.tag.knight": {
             "termId": "cc.tag.knight",
@@ -577,7 +577,7 @@
         },
         "ba.dt.neural2": {
             "termId": "ba.dt.neural2",
-            "termName": "Nervous Impairment - Player",
+            "termName": "Nervous Impairment - Ally",
             "description": "Explodes when at max (1000 for Normal and Elite, 2000 for Leaders), dealing 6000 Elemental Damage and inflicting 3 stacks of <$ba.palsy>Paralysis</>. 10s cooldown."
         },
         "ba.palsy": {
@@ -677,23 +677,23 @@
         },
         "ba.dt.erosion2": {
             "termId": "ba.dt.erosion2",
-            "termName": "Corrosion - Player",
+            "termName": "Corrosion - Ally",
             "description": "Explodes when at max (1000 for Normal and Elite, 2000 for Leaders), dealing 5000 Elemental Damage and permanently reducing DEF by 120 (stacks). 8s cooldown."
         },
         "ba.slowdown": {
             "termId": "ba.slowdown",
-            "termName": "迟钝",
-            "description": "移动速度, 攻击速度, 部分技能施放速度和冷却速度, 部分异常状态的恢复速度降低相应比例 (同名效果取最高)"
+            "termName": "Sluggish",
+            "description": "Movement Speed, ASPD, activation and cooldown speed of certain skills, and recovery speed from certain negative statuses are reduced by the corresponding amount (only the strongest effect of this type applies)"
         },
         "ba.costlowerbound": {
             "termId": "ba.costlowerbound",
-            "termName": "部署费用下限",
-            "description": "部署费用可降低至部署费用下限; 部署费用小于0时部署费用自然回复速度-50%"
+            "termName": "DP Lower Limit",
+            "description": "DP can drop below the DP Lower Limit; when DP is below 0, natural DP regeneration rate -50%"
         },
         "cc.tra.closure": {
             "termId": "cc.tra.closure",
-            "termName": "可露希尔特别订单",
-            "description": "由可露希尔提供的特殊贵金属订单, 该订单的收益恒定, 所需赤金交付数为2"
+            "termName": "Closure's Special Order",
+            "description": "Special Precious Metal orders offered by Closure that have fixed earnings, and require 2 Pure Gold to trade"
         },
         "ba.magicarcane": {
             "termId": "ba.magicarcane",

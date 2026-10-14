@@ -1183,35 +1183,35 @@
             "code": "uniequip_003_skadi2"
         },
         "不会受到攻击，仅可以部署在凯尔希·思衡托攻击范围外的远程位": {
-            "en": "不会受到攻击，仅可以部署在凯尔希·思衡托攻击范围外的远程位",
+            "en": "Cannot be attacked, can only be placed on a Ranged tile outside of Kal'tsit Esperanta's Attack Range",
             "color": "common",
             "note": "Kal'tsit·Esperanta 's Token (Tactical Anchor)",
             "name": "Tactical Anchor",
             "code": "token_10068_kalts2_mtship"
         },
         "不攻击，能够阻挡两个敌人，只能部署在召唤者攻击范围内": {
-            "en": "不攻击，能够阻挡两个敌人，只能部署在召唤者攻击范围内",
+            "en": "Does not attack; blocks 2 enemies; can only be deployed within the summoner's Attack Range",
             "color": "common",
             "note": "Closure 's Token (Command Center)",
             "name": "Command Center",
             "code": "token_10066_closur_ourbase"
         },
         "攻击造成<@ba.kw>法术伤害</>，且不受<@ba.kw>部署数量</>限制，但再部署时间极长": {
-            "en": "攻击造成<@ba.kw>法术伤害</>，且不受<@ba.kw>部署数量</>限制，但再部署时间极长",
+            "en": "Attacks deal <@ba.kw>Arts damage</> and ignores the <@ba.kw>Deployment Limit</>, but has a long Redeployment Time",
             "color": "magic",
             "note": "new Ops \"corecaster\" Archetype trait",
             "name": "GALLUS²",
             "code": "char_4227_gallus"
         },
         "在<@ba.kw>集成战略</>中，攻击重量较重（重量等级大于等于3）的敌人时无视其物理闪避且造成的物理伤害提升40%": {
-            "en": "在<@ba.kw>集成战略</>中，攻击重量较重（重量等级大于等于3）的敌人时无视其物理闪避且造成的物理伤害提升40%",
+            "en": "In <@ba.kw>Integrated Strategies</>, when attacking a heavy enemy (with 3 weight or higher), ignores Physical Dodge and deal 40% more Physical damage",
             "color": "extra",
             "note": "new mods isw-a",
             "name": "char_2012_typhon",
             "code": "uniequip_004_typhon"
         },
         "在<@ba.kw>集成战略</>中，自身和<替身>造成的物理和法术伤害提升40%，受到的物理和法术伤害减少40%": {
-            "en": "在<@ba.kw>集成战略</>中，自身和<替身>造成的物理和法术伤害提升40%，受到的物理和法术伤害减少40%",
+            "en": "In <@ba.kw>Integrated Strategies</>, Specter the Unchained and her <Substitute> deal 40% more Physical and Arts damage, and receive 40% less Physical and Arts damage",
             "color": "extra",
             "note": "new mods isw-a",
             "name": "char_1023_ghost2",
