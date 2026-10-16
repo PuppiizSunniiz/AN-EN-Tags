@@ -640,6 +640,7 @@ sp_char_dict = {
                     "ł" : "l",  # Młynar
                     "š" : "s",  # Wiš'adel
                     "ū" : "u",  # Yūtenji Nyamu
+                    "²" : "2",  # GALLUS²
                 }
 
 def simple_name(char_name : str) -> str:
