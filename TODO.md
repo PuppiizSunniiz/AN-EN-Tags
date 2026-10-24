@@ -47,3 +47,4 @@
 - Add all background element for various L2D
 - re-add enemies chibi
 - Fix SP akenemy
+- Mobile Touch Functionality

@@ -1,5 +1,10 @@
 {
     "Dict": {
+        "act1museum": {
+            "nameCN": "视相博物馆：演化",
+            "nameEN": "Poly Vision Museum : Evolution",
+            "startCN": 1792848600
+        },
         "act52side": {
             "nameCN": "昨日海",
             "nameEN": "Yet Another Wave",
@@ -1069,6 +1074,11 @@
             "nameCN": "默祷圣祠",
             "nameEN": "默祷圣祠",
             "startCN": 1785096000
+        },
+        "camp_r_34": {
+            "nameCN": "灰石剧场",
+            "nameEN": "灰石剧场",
+            "startCN": 1792958400
         },
         "tower_tr_01": {
             "nameCN": "7号训练场",
@@ -2486,6 +2496,16 @@
             "act52side",
             "Yet Another Wave",
             1791500400
+        ],
+        [
+            "act1museum",
+            "Poly Vision Museum : Evolution",
+            1792848600
+        ],
+        [
+            "camp_r_34",
+            "灰石剧场",
+            1792958400
         ]
     ]
 }

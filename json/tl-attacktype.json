@@ -121,11 +121,11 @@
             "color": "magic"
         },
         "可以攻击到<@ba.kw>较远敌人</>，攻击自身未阻挡的敌人时攻击力提升至120%": {
-            "en": "Can attack enemies <@ba.kw>from range</>; When attacking enemies not blocked by self, increase ATK to 120%",
+            "en": "Has <@ba.kw>extended</> attack range; When attacking enemies not blocked by self, increase ATK to 120%",
             "color": "physical"
         },
         "可以攻击到<@ba.kw>较远敌人</>，攻击自身未阻挡的敌人时攻击力提升至<@ba.kw>{atk_scale:0%}</>": {
-            "en": "Can attack enemies <@ba.kw>from range</>; When attacking enemies not blocked by self, increase ATK to <@ba.kw>{atk_scale:0%}</>",
+            "en": "Has <@ba.kw>extended</> attack range; When attacking enemies not blocked by self, increase ATK to <@ba.kw>{atk_scale:0%}</>",
             "color": "physical"
         },
         "攻击范围内的<@ba.kw>所有敌人</>，对自己前方一横排的敌人攻击力提升至150%": {
@@ -153,7 +153,7 @@
             "color": "extra"
         },
         "无法被友方角色治疗，攻击造成<@ba.kw>群体伤害</>，每攻击到一个敌人回复自身<@ba.kw>{value}</>生命，最大生效数等于阻挡数": {
-            "en": "Cannot be healed by allies; Attacks deal <@ba.kw>AOE Damage</>; Recovers <@ba.kw>{value}</> HP for every enemy hit during attacks, up to Block count",
+            "en": "Cannot be healed by allies; Attacks deal <@ba.kw>AoE damage</>; Recovers <@ba.kw>{value}</> HP for every enemy hit during attacks, up to Block count",
             "color": "extra"
         },
         "通常不攻击且阻挡数为0，技能未开启时<@ba.kw>{max_stack_cnt}</>秒内攻击力逐渐提升至<@ba.kw>+{atk:0%}</>，技能结束时重置攻击力": {
@@ -233,7 +233,7 @@
             "color": "extra"
         },
         "能够阻挡两个敌人，使用<支援装置>协助作战": {
-            "en": "Blocks 2 enemies; Can use &lt;Support Devices&gt; in battles",
+            "en": "Blocks 2 enemies; Can use <Support Devices> in battles",
             "color": "extra"
         },
         "恢复友方单位生命，并回复相当于攻击力50%的<@ba.dt.element>元素损伤</>（可以回复未受伤友方单位的<@ba.dt.element>元素损伤</>）": {
@@ -309,7 +309,7 @@
             "color": "magic"
         },
         "受到致命伤时不撤退，切换成<替身>作战（替身阻挡数为0），持续20秒后自身再次替换<替身>": {
-            "en": "Does not retreat upon receiving lethal damage, instead swaps to a &lt;Substitute&gt; (Substitute has 0 Block). Swaps back to the original after 20 seconds",
+            "en": "Does not retreat upon receiving lethal damage, instead swaps to a <Substitute> (Substitute has 0 Block). Swaps back to the original after 20 seconds",
             "color": "extra"
         },
         "攻击造成<@ba.kw>法术伤害</>，且会在<@ba.kw>{attack@chain.max_target}</>个敌人间跳跃，每次跳跃伤害<@ba.kw>不再降低</>并造成短暂的<$ba.sluggish>停顿</>": {
@@ -413,11 +413,11 @@
             "color": "extra"
         },
         "受到致命伤时不撤退，切换成<替身>作战（替身阻挡数为0但攻击力<@ba.kw>提升</>），持续20秒后自身再次替换<替身>": {
-            "en": "Instead of retreating when defeated, switch to a &lt;Substitute&gt; (Substitute has 0 Block, but ATK is <@ba.kw>increased</>) for 20 seconds before switching back to the original",
+            "en": "Instead of retreating when defeated, switch to a <Substitute> (Substitute has 0 Block, but ATK is <@ba.kw>increased</>) for 20 seconds before switching back to the original",
             "color": "extra"
         },
         "受到致命伤时不撤退，切换成<替身>作战（替身阻挡数为0但生命值<@ba.kw>提升</>），持续20秒后自身再次替换<替身>": {
-            "en": "Instead of retreating when defeated, switch to a &lt;Substitute&gt; (Substitute has 0 Block, but HP is <@ba.kw>increased</>) for 20 seconds before switching back to the original",
+            "en": "Instead of retreating when defeated, switch to a <Substitute> (Substitute has 0 Block, but HP is <@ba.kw>increased</>) for 20 seconds before switching back to the original",
             "color": "extra"
         },
         "攻击范围内存在敌人时技力自然恢复速度+0.2/s": {
@@ -481,7 +481,7 @@
             "color": "physical"
         },
         "通常时<@ba.kw>不攻击</>且防御力和法术抗性更大幅度<@ba.kw>提升</>，技能开启时保留部分效果且攻击造成<@ba.kw>群体法术伤害</>": {
-            "en": "Normally <@ba.kw>does not attack</>, but has <@ba.kw>greatly increased</> DEF and RES; When skill is active retains some of the bonus and attacks deal <@ba.kw>AoE Arts Damage</>",
+            "en": "Normally <@ba.kw>does not attack</>, but has <@ba.kw>greatly increased</> DEF and RES; when skill is active, retains some of the bonus and attacks deal <@ba.kw>AoE Arts Damage</>",
             "color": "magic"
         },
         "攻击造成<@ba.kw>超远距离的群体法术伤害</>，距离越远伤害越高，最高达到<@ba.kw>110%</>": {
@@ -613,17 +613,17 @@
             "note": "Ela 's Token (GRZMOT Mine)"
         },
         "攻击使目标周围的其他敌人受到相当于攻击力<@ba.kw>50%</>的<@ba.kw>群体</>物理伤害": {
-            "en": "Attacks deal <@ba.kw>50%</> ATK as <@ba.kw>AOE</> Physical damage to enemies around the target",
+            "en": "Attacks deal <@ba.kw>50%</> ATK as <@ba.kw>AOE</> Physical damage to enemies around the target.",
             "color": "physical",
             "note": "Earthshaker 's Trait"
         },
         "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，援军受到来自自身阻挡单位的伤害降低<@ba.kw>15%</>，自身攻击援军阻挡的敌人时攻击力提升至150%": {
-            "en": "This unit can designate one <@ba.kw>Tactical Point</> within attack range to call Reinforcements; Reinforcements receives 15% less damage from enemies blocked by self ; ATK is increased to 150% when attacking enemies blocked by Reinforcements",
+            "en": "This unit can designate one <@ba.kw>Tactical Point</> within attack range to call Reinforcements; Reinforcements take <@ba.kw>15%</> less damage from units they are blocking, and this unit's ATK is increased to 150% when attacking enemies blocked by Reinforcements",
             "color": "physical",
             "note": "Tactician Mod (TAC-X)"
         },
         "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，援军阻挡的敌人更容易受到我方的攻击，自身攻击援军阻挡的敌人时攻击力提升至165%": {
-            "en": "This unit can designate one <@ba.kw>Tactical Point</> within attack range to call Reinforcements; Enemies blocked by Reinforcements more likely to be attacked by allied unit; ATK is increased to 165% when attacking enemies blocked by Reinforcements",
+            "en": "This unit can designate one <@ba.kw>Tactical Point</> within attack range to call Reinforcements; Enemies blocked by reinforcements are more likely to be attacked, and this unit's ATK is increased to 165% when attacking enemies blocked by Reinforcements",
             "color": "physical",
             "note": "Tactician Mod (TAC-Y)"
         },
@@ -678,7 +678,7 @@
             "note": "Spreadshooter Mod (RPR-Y)"
         },
         "能够阻挡一个敌人，作为小车形态存在时只能部署在召唤者攻击范围内": {
-            "en": "Blocks 1 enemy; when in Buggy form, can only be deployed within the summoner's Attack Range.",
+            "en": "Blocks 1 enemy; when in Buggy form, can only be deployed within the summoner's Attack Range",
             "color": "common",
             "note": "Mitm 's Token (Cherry-3)"
         },
@@ -728,7 +728,7 @@
             "note": "new mods bar-x Bard"
         },
         "<支援装置>的再部署时间<@ba.kw>减少</>": {
-            "en": "&lt;Support Device&gt;'s Redeployment Time <@ba.kw>reduced</>",
+            "en": "<Support Device>'s Redeployment Time <@ba.kw>reduced</>",
             "color": "extra",
             "note": "new mods cra-y Artificer"
         },
@@ -738,7 +738,7 @@
             "note": "new mods for-y Fortress"
         },
         "能够阻挡三个敌人，可以造成元素损伤": {
-            "en": "Blocks 3 enemies, and can inflict <@ba.kw>Elemental Injury</>",
+            "en": "Blocks 3 enemies, and can inflict Elemental Injury",
             "color": "extra",
             "note": "new Ops primprotector/Primal Protector Archetype trait"
         },
@@ -770,7 +770,7 @@
             "note": "new Ops \"soulcaster\" Archetype trait"
         },
         "能够阻挡一个敌人，攻击造成法术伤害": {
-            "en": "Blocks 1 enemy, and attacks deal Arts damage.",
+            "en": "Blocks 1 enemy, and attacks deal Arts damage",
             "color": "magic",
             "name": "Puppet Dancer",
             "code": "token_10042_tecno_puppet",

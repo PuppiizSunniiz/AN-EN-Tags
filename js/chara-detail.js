@@ -1695,21 +1695,25 @@
                     `))
 
                     dropdowntab.push(`
-                        <li class='nav-item' ${i==0?`style="margin-top:5px"`:""}>
-                        ${extraSkin[i].dynIllustId?`
-                            <button class='btn tabbing-btns tabbing-btns-middle' data-toggle='pill' style='width:24px;height:25px;display:inline-block' title="Show Animated CG" onClick='ShowDynamic("${opcode}",true,"${encodeURIComponent(extraSkin[i].dynIllustId)}")'>
-                                <i class="fas fa-play-circle"></i>
-                            </button><button class='btn tabbing-btns tabbing-btns-middle' style='width:19px;height:25px;display:inline-block' title="Play Interact Animation" onClick='CreateAnimation(spinewidgetcg,["Interact","Idle"])'>
-                                <i class="fas fa-hand-point-down"></i>
-                            </button><button class='btn tabbing-btns tabbing-btns-middle' style='width:19px;height:25px;display:inline-block' title="Play Special Animation" onClick='CreateAnimation(spinewidgetcg,["Special","Idle"])'>
-                                <i class="far fa-star"></i>
-                            </button>
-                        `:""}
-
-                        <a class="btn tabbing-btns tabbing-btns-middle" style="${extraSkin[i].dynIllustId?"width:62px":""}" data-toggle='pill' href='#opCG_S${i}_tab' onClick='ChangeSkin("${extraSkin[i].portraitId}","","${extraSkin[i].skinId}"${extraSkin[i].spIllustId?`,"#opCG_S${i}_tab"`:""})'>
-                            <div style="display:inline-block;height:100%;vertical-align:middle;"></div>
-                            <img loading='lazy' class='skinimage' style="max-width: 48px;max-height: 48px;margin-left:-5px;margin-top:1px" src='${IMAGE_REPO}/avatars/${encodeURIComponent(extraSkin[i].avatarId)}${sus && opdataFull.id == "char_298_susuro"?"sus":""}.png'>
-                        </a></li>
+                        <li class='nav-item' style="display:flex;background:#2f2f2f" ${i==0?`style="margin-top:5px"`:""}>
+                            <a class="btn tabbing-btns tabbing-btns-middle" style="${extraSkin[i].dynIllustId?"width:52px;height:52px;":""}" data-toggle='pill' href='#opCG_S${i}_tab' onClick='ChangeSkin("${extraSkin[i].portraitId}","","${extraSkin[i].skinId}"${extraSkin[i].spIllustId?`,"#opCG_S${i}_tab"`:""})'>
+                                <div style="display:inline-block;height:100%;vertical-align:middle;"></div>
+                                <img loading='lazy' class='skinimage' style="max-width: 48px;max-height: 48px;margin-left:-5px;margin-top:1px" src='${IMAGE_REPO}/avatars/${encodeURIComponent(extraSkin[i].avatarId)}${sus && opdataFull.id == "char_298_susuro"?"sus":""}.png'>
+                            </a>
+                            ${extraSkin[i].dynIllustId?`
+                            <div style="display:flex;flex-direction:column">
+                                <button class='btn tabbing-btns tabbing-btns-middle' data-toggle='pill' style='width:17px;height:17px;display:inline-block' title="Show Animated CG" onClick='ShowDynamic("${opcode}",true,"${encodeURIComponent(extraSkin[i].dynIllustId)}")'>
+                                    <i class="fas fa-play-circle" style="position: relative;font-size: 0.8em;top: -5px;"></i>
+                                </button>
+                                <button class='btn tabbing-btns tabbing-btns-middle' style='width:17px;height:17px;display:inline-block' title="Play Interact Animation" onClick='CreateAnimation(spinewidgetcg,["Interact","Idle"])'>
+                                    <i class="fas fa-hand-point-left" style="position: relative;font-size: 0.8em;top: -5px;"></i>
+                                </button>
+                                <button class='btn tabbing-btns tabbing-btns-middle' style='width:17px;height:17px;display:inline-block' title="Play Special Animation" onClick='CreateAnimation(spinewidgetcg,["Special","Idle"])'>
+                                    <i class="far fa-star" style="position: relative;font-size: 0.8em;top: -5px;"></i>
+                                </button>
+                            </div>
+                            `:""}
+                        </li>
                         `)
                 }
 
@@ -4999,7 +5003,7 @@
         var currModuleTalentName = EN?EN.name:TL?TL.name:CN.name
         var currModuleTalentDesc = EN?EN.upgradeDescription:TL?TL.upgradeDescription:CN.upgradeDescription
 
-        currModuleTalentDesc = ChangeDescriptionColor2(currModuleTalentDesc.replace(/\<([A-Za-z ]+)\>/g,"&lt;"+"$1"+'&gt;').replace(/\\+n/g,"</br>").replace(/\n/g,"</br>"))
+        currModuleTalentDesc = ChangeDescriptionColor2(currModuleTalentDesc.replace(/\\+n/g,"</br>").replace(/\n/g,"</br>"))
 
         var isModuleTalentRange = (CN.rangeId == range_id)?false:CN.rangeId
         var Moduletalentdetails = []
@@ -5101,7 +5105,7 @@
             currTalentDesc = "<span style='color:white'>(Hidden Talent)</span>"
         }
         
-        currTalentDesc = ChangeDescriptionColor2(currTalentDesc.replace(/\<([A-Za-z ]+)\>/g,"&lt;"+"$1"+'&gt;').replace(/\\+n/g,"</br>").replace(/\n/g,"</br>"))
+        currTalentDesc = ChangeDescriptionColor2(currTalentDesc.replace(/\\+n/g,"</br>").replace(/\n/g,"</br>"))
         console.log(eachtalent.talent.name, currTalentDesc)
         var isTalentRange = eachtalent.talent.rangeId
         var blacklist = ["新人教官"]
@@ -5566,7 +5570,7 @@
         var skillTL = db.skillsTL[skillId];
         var desc = skillEN?skillEN.description:skillTL?skillTL.desc[level]:skill.description;
 
-        desc = ChangeDescriptionColor2(desc.replace(/\<([A-Za-z ]+)\>/g,"&lt;"+"$1"+'&gt;').replace(/\\+n/g,"</br>").replace(/\n/g,"</br>"))
+        desc = ChangeDescriptionColor2(desc)
         if(desc){
             // console.log(skill)
             desc = ChangeDescriptionContent(desc,skill)
@@ -5712,7 +5716,7 @@
             desc = ChangeDesc1_loop(desc, desc.match(nested_rtf))
 
         console.log(desc)
-        return desc
+        return desc.replace(/\<([A-Za-z ]+)\>/g,"&lt;"+"$1"+'&gt;')
     }
     function ChangeDesc2(desc){
         if(!desc){

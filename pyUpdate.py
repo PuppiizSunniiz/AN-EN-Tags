@@ -54,6 +54,8 @@ json_enemy          =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedat
 json_enemyEN        =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/enemy_handbook_table.json")
 
 json_mod_table      =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/uniequip_table.json")
+json_mod_tableEN    =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/uniequip_table.json")
+
 json_stage          =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/stage_table.json")
 
 json_dict           =   json_load("py/dict.json")
@@ -64,6 +66,7 @@ json_trait          =   json_load("json/tl-attacktype.json")
 json_akhr           =   json_load("json/tl-akhr.json")
 json_tl_item        =   json_load("json/tl-item.json")
 json_temp_mod       =   json_load("json/tl-module.json")
+json_subclass       =   json_load("json/tl-subclass.json")
 
 json_skillTL        =   json_load("json/ace/tl-skills.json")
 json_talentTL       =   json_load("json/ace/tl-talents.json")
@@ -103,17 +106,34 @@ CLASS_PARSE_CN : dict[str, str] = {
                                     'SUPPORT':"辅助", 'SPECIAL':"特种", 'WARRIOR':"近卫",  'CASTER'  :"术师"
                                 }
 
+CLASS_INT : dict[str, str] = {
+                                "NONE"      : 0,
+                                "WARRIOR"   : 1,
+                                "SNIPER"    : 2,
+                                "TANK"      : 4,
+                                "MEDIC"     : 8,
+                                "SUPPORT"   : 16,
+                                "CASTER"    : 32,
+                                "SPECIAL"   : 64,
+                                "TOKEN"     : 128,
+                                "TRAP"      : 256,
+                                "PIONEER"   : 512,
+                            }
+
+INT_CLASS = {v:k for k,v in CLASS_INT.items()}
+
 for char_key in json_char_patch["patchChars"].keys():
     json_char_patch["patchChars"][char_key]["appellation"] += f' ({CLASS_PARSE_EN[json_char_patch["patchChars"][char_key]["profession"]]})'
 
 json_char.update(json_char_patch["patchChars"])
+#json_charEN.update(json_char_patchEN["patchChars"])
 json_charJP.update(json_char_patchJP["patchChars"])
 json_charKR.update(json_char_patchKR["patchChars"])
 
 char_ready  = char_ready(json_char)
 
-char_list : list[str] = [char_data["name_en"] for char_data in json_akhr]
-MAT_LIST : list[str] = [mat_data["itemId"] for mat_data in json_akmaterial]
+char_list   : list[str] = [char_data["name_en"] for char_data in json_akhr]
+MAT_LIST    : list[str] = [mat_data["itemId"] for mat_data in json_akmaterial]
 
 #########################################################################################################
 # Def function
@@ -192,7 +212,12 @@ def update_char_TraitSkillTalent(new_char_name : str) :
     if new_char_id not in [char["id"] for char in json_akhr]:
         json_akhr.append(get_new_akhr(new_char_id, new_char_name))
     ## Trait
-    new_trait[json_char[new_char_id]["description"]] = update_new_trait("char", new_char_id, new_char_name, json_char[new_char_id]["subProfessionId"])
+    if not json_char[new_char_id]["description"]: 
+        pass
+    elif json_char[new_char_id]["description"] not in json_trait["full"]:
+        json_trait["full"][json_char[new_char_id]["description"]] = update_new_trait("char", new_char_id, new_char_name, json_char[new_char_id]["subProfessionId"])
+    elif new_char_id in json_charEN:
+        json_trait["full"][json_char[new_char_id]["description"]].update({"en" : json_charEN[new_char_id]["description"]})
     ## Talent
     if new_char_id not in json_talentTL:
         talent_tl[new_char_id] = [
@@ -224,8 +249,10 @@ def update_tok_TraitSkillTalent(new_token_key, new_char_id, ):
     #### Token trait
     if new_token_key not in json_char or not json_char[new_token_key]["description"]: 
         pass
-    else :
-        new_trait[json_char[new_token_key]["description"]] = update_new_trait("token", new_char_id, new_char_name, new_token_key)
+    elif json_char[new_token_key]["description"] not in json_trait["full"]:
+        json_trait["full"][json_char[new_token_key]["description"]] = update_new_trait("token", new_char_id, new_char_name, new_token_key)
+    elif new_token_key in json_charEN:
+        json_trait["full"][json_char[new_token_key]["description"]].update({"en" : json_charEN[new_token_key]["description"]})
     #### Token talent
     if new_token_key not in json_talentTL and json_char[new_token_key]["talents"]:
         talent_tl[new_token_key] = [
@@ -453,10 +480,11 @@ for new_mod_list in NEW_MODS:
         char_key = new_mod_list[0]
         new_mod_id = new_mod_list[1]
         mod_trait_candidate = json_mod_battle[new_mod_id]["phases"][0]["parts"][0]["overrideTraitDataBundle"]["candidates"][0]
-        if mod_trait_candidate["additionalDescription"]:
-            new_trait[mod_trait_candidate["additionalDescription"]] = update_new_trait("mod", new_mod_id, new_mod_list[0], json_mod_table["equipDict"][new_mod_id]["typeIcon"])
-        else :
-            new_trait[mod_trait_candidate["overrideDescripton"]]    = update_new_trait("mod", new_mod_id, new_mod_list[0], json_mod_table["equipDict"][new_mod_id]["typeIcon"])
+        for mod_desc_type in ["additionalDescription", "overrideDescripton"]:
+            if not mod_trait_candidate[mod_desc_type]: continue
+            if mod_trait_candidate[mod_desc_type] not in json_trait["full"]:
+                json_trait["full"][mod_trait_candidate[mod_desc_type]] = update_new_trait("mod", new_mod_id, new_mod_list[0], json_mod_table["equipDict"][new_mod_id]["typeIcon"])
+                break
         temp_phase = []
         for phase in [1, 2]:
             for part in json_mod_battle[new_mod_id]["phases"][phase]["parts"]:
@@ -511,6 +539,17 @@ for key in pop:
 
 with open("update/tl-attacktype.json", "w", encoding = "utf-8") as filepath :
     json.dump(new_trait, filepath, indent = 4, ensure_ascii = False)
+
+for mod_id in json_mod_battleEN:
+    cn_trait_candidate = json_mod_battle[mod_id]["phases"][0]["parts"][0]["overrideTraitDataBundle"]["candidates"][0]
+    en_trait_candidate = json_mod_battleEN[mod_id]["phases"][0]["parts"][0]["overrideTraitDataBundle"]["candidates"][0]
+    for mod_desc_type in ["additionalDescription", "overrideDescripton"]:
+        if cn_trait_candidate[mod_desc_type]:
+            json_trait["full"][cn_trait_candidate[mod_desc_type]].update({"en" : en_trait_candidate[mod_desc_type]})
+            break
+
+with open("json/tl-attacktype.json", "w", encoding = "utf-8") as filepath :
+    json.dump(json_trait, filepath, indent = 4, ensure_ascii = False)
 
 #########################################################################################################
 # Termology Update
@@ -670,7 +709,26 @@ for char_id in json_char.keys():
 
 with open("json/puppiiz/char_names.json", "w", encoding = "utf-8") as filepath :
     json.dump(char_names, filepath, indent = 4, ensure_ascii = False)
+    
+#########################################################################################################
+# Subclass
+#########################################################################################################
+for subclass in json_mod_table["subProfToProfDict"]:
+    class_int = json_mod_table["subProfToProfDict"][subclass]
+    if subclass not in json_subclass["list"][INT_CLASS[class_int]]:
+        json_subclass["list"][INT_CLASS][class_int].append(subclass)
+    if subclass not in json_subclass["subclass"]:
+        json_subclass["subclass"][subclass] = {
+                                                "name": subclass.capitalize(),
+                                                "tl": "",
+                                                "en": "",
+                                            }
+    elif subclass in json_mod_tableEN["subProfToProfDict"]:
+        json_subclass["subclass"][subclass].update({"en" : json_mod_tableEN["subProfDict"][subclass]["subProfessionName"]})
 
+with open("json/tl-subclass.json", "w", encoding = "utf-8") as filepath :
+    json.dump(json_subclass, filepath, indent = 4, ensure_ascii = False)
+    
 #########################################################################################################
 # The Rest
 #########################################################################################################
