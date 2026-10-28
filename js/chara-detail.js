@@ -1695,7 +1695,7 @@
                     `))
 
                     dropdowntab.push(`
-                        <li class='nav-item' style="display:flex;background:#2f2f2f" ${i==0?`style="margin-top:5px"`:""}>
+                        <li class='nav-item' style="display:flex;background:#2f2f2f;${i==0?"margin-top:5px;":""}">
                             <a class="btn tabbing-btns tabbing-btns-middle" style="${extraSkin[i].dynIllustId?"width:52px;height:52px;":""}" data-toggle='pill' href='#opCG_S${i}_tab' onClick='ChangeSkin("${extraSkin[i].portraitId}","","${extraSkin[i].skinId}"${extraSkin[i].spIllustId?`,"#opCG_S${i}_tab"`:""})'>
                                 <div style="display:inline-block;height:100%;vertical-align:middle;"></div>
                                 <img loading='lazy' class='skinimage' style="max-width: 48px;max-height: 48px;margin-left:-5px;margin-top:1px" src='${IMAGE_REPO}/avatars/${encodeURIComponent(extraSkin[i].avatarId)}${sus && opdataFull.id == "char_298_susuro"?"sus":""}.png'>
@@ -3888,7 +3888,7 @@
         $('#opaudio-va').empty()
 
         curraudiolist.forEach(audio_dict => {
-            var voiceTL = audio_dict.voiceText
+            var voiceTL = audio_dict.voiceText.replaceAll(" ", " ")
             var audiolist = []
             var old_audiolist = []
             VAlanglist.forEach(valang => {
