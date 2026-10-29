@@ -33080,6 +33080,552 @@
             "name": "Insect 13",
             "Event": "RA#2"
         },
+        "sandbox_2_01": {
+            "stageId": "sandbox_2_01",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_tr01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_tr02.json"
+            ],
+            "zoneId": "Green Valley",
+            "code": "RA-1",
+            "name": "Starting Point",
+            "Event": "RA#3"
+        },
+        "sandbox_2_02": {
+            "stageId": "sandbox_2_02",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_02_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_02_02.json"
+            ],
+            "zoneId": "Green Valley",
+            "code": "RA-2",
+            "name": "Full Load",
+            "Event": "RA#3"
+        },
+        "sandbox_2_03": {
+            "stageId": "sandbox_2_03",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_03_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_03_02.json"
+            ],
+            "zoneId": "Green Valley",
+            "code": "RA-3",
+            "name": "Unity",
+            "Event": "RA#3"
+        },
+        "sandbox_2_04": {
+            "stageId": "sandbox_2_04",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_04_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_04_02.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_04_03.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_04_04.json"
+            ],
+            "zoneId": "Green Valley",
+            "code": "RA-4",
+            "name": "Helping Hand",
+            "Event": "RA#3"
+        },
+        "sandbox_2_05": {
+            "stageId": "sandbox_2_05",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_05_02.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_05_05.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_10.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_05_03.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_05_04.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_05_01.json"
+            ],
+            "zoneId": "Green Valley",
+            "code": "RA-5",
+            "name": "Protection",
+            "Event": "RA#3"
+        },
+        "sandbox_2_06": {
+            "stageId": "sandbox_2_06",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_06_04.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_06_03.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_06_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_06_02.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_06_05.json"
+            ],
+            "zoneId": "Vibrant Swamp",
+            "code": "RA-6",
+            "name": "The Beginning",
+            "Event": "RA#3"
+        },
+        "sandbox_2_07": {
+            "stageId": "sandbox_2_07",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_07_02.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_07_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_07_03.json"
+            ],
+            "zoneId": "Vibrant Swamp",
+            "code": "RA-7",
+            "name": "Differences",
+            "Event": "RA#3"
+        },
+        "sandbox_2_08": {
+            "stageId": "sandbox_2_08",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_08_04.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_08_05.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_08_03.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_08_02.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_08_06.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_08_01.json"
+            ],
+            "zoneId": "Vibrant Swamp",
+            "code": "RA-8",
+            "name": "Attempt",
+            "Event": "RA#3"
+        },
+        "sandbox_2_09": {
+            "stageId": "sandbox_2_09",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_13.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_09_03.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_09_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_12.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_09_02.json"
+            ],
+            "zoneId": "Vibrant Swamp",
+            "code": "RA-9",
+            "name": "Habits",
+            "Event": "RA#3"
+        },
+        "sandbox_2_10": {
+            "stageId": "sandbox_2_10",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_10_04.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_10_02.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_10_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_10_03.json"
+            ],
+            "zoneId": "Vibrant Swamp",
+            "code": "RA-10",
+            "name": "Celebration",
+            "Event": "RA#3"
+        },
+        "sandbox_2_11": {
+            "stageId": "sandbox_2_11",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_11_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_11_02.json"
+            ],
+            "zoneId": "Unexploited Mine",
+            "code": "RA-11",
+            "name": "Exhaustion",
+            "Event": "RA#3"
+        },
+        "sandbox_2_12": {
+            "stageId": "sandbox_2_12",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_12_03.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_12_02.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_12_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_12_04.json"
+            ],
+            "zoneId": "Unexploited Mine",
+            "code": "RA-12",
+            "name": "Worry",
+            "Event": "RA#3"
+        },
+        "sandbox_2_13": {
+            "stageId": "sandbox_2_13",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_13_04.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_13_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_13_02.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_13_03.json"
+            ],
+            "zoneId": "Unexploited Mine",
+            "code": "RA-13",
+            "name": "Turning Point",
+            "Event": "RA#3"
+        },
+        "sandbox_2_14": {
+            "stageId": "sandbox_2_14",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_14_04.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_14_05.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_14_02.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_14_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_14_03.json"
+            ],
+            "zoneId": "Unexploited Mine",
+            "code": "RA-14",
+            "name": "Update",
+            "Event": "RA#3"
+        },
+        "sandbox_2_15": {
+            "stageId": "sandbox_2_15",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_15_04.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_15_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_15_03.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_15_02.json"
+            ],
+            "zoneId": "Unexploited Mine",
+            "code": "RA-15",
+            "name": "Reunion",
+            "Event": "RA#3"
+        },
+        "sandbox_2_16": {
+            "stageId": "sandbox_2_16",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_16_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_16_02.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_16_03.json"
+            ],
+            "zoneId": "Abandoned Plate",
+            "code": "RA-16",
+            "name": "Dash",
+            "Event": "RA#3"
+        },
+        "sandbox_2_17": {
+            "stageId": "sandbox_2_17",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_17_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_17_02.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_17_03.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_17_04.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_17_05.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_17_06.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_17_07.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_17_08.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_17_09.json"
+            ],
+            "zoneId": "Abandoned Plate",
+            "code": "RA-17",
+            "name": "Reinforcement",
+            "Event": "RA#3"
+        },
+        "sandbox_2_18": {
+            "stageId": "sandbox_2_18",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_18_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_18_04.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_18_02.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_18_05.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_18_03.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_18_06.json"
+            ],
+            "zoneId": "Abandoned Plate",
+            "code": "RA-18",
+            "name": "Repayment",
+            "Event": "RA#3"
+        },
+        "sandbox_2_19": {
+            "stageId": "sandbox_2_19",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_19_02.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_19_04.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_19_06.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_19_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_19_03.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_19_05.json"
+            ],
+            "zoneId": "Abandoned Plate",
+            "code": "RA-19",
+            "name": "The Outcome",
+            "Event": "RA#3"
+        },
+        "sandbox_2_20": {
+            "stageId": "sandbox_2_20",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_06.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_07.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_08.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_09.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_10.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_11.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_12.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_13.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_14.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_15.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_16.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_17.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_18.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_19.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_20.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_21.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_22.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_23.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_24.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_25.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_26.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_27.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_28.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_34.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_38.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_40.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_41.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_42.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_47.json"
+            ],
+            "zoneId": "Undeveloped Area",
+            "code": "RA-EX-1",
+            "name": "Undeveloped Area I",
+            "Event": "RA#3"
+        },
+        "sandbox_2_21": {
+            "stageId": "sandbox_2_21",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_29.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_30.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_31.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_32.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_33.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_35.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_36.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_37.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_39.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_43.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_44.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_45.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_46.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_48.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_49.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_50.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_51.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_52.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_53.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_54.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_55.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_56.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_57.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_58.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_59.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_60.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_61.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_62.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_63.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_64.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_65.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_66.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_67.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_68.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_69.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_70.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_71.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_72.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_73.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_74.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_75.json"
+            ],
+            "zoneId": "Undeveloped Area",
+            "code": "RA-EX-2",
+            "name": "Undeveloped Area II",
+            "Event": "RA#3"
+        },
+        "sandbox_2_22": {
+            "stageId": "sandbox_2_22",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_29.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_30.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_31.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_32.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_33.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_35.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_36.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_37.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_39.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_43.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_44.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_45.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_46.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_48.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_49.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_50.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_51.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_52.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_53.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_54.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_55.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_56.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_57.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_58.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_59.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_60.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_61.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_62.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_63.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_64.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_65.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_66.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_67.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_68.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_69.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_70.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_71.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_72.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_73.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_74.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_75.json"
+            ],
+            "zoneId": "Undeveloped Area",
+            "code": "RA-EX-3",
+            "name": "Undeveloped Area III",
+            "Event": "RA#3"
+        },
+        "sandbox_2_23": {
+            "stageId": "sandbox_2_23",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_65.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_51.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_32.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_12.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_08.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_11.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_28.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_69.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_40.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_13.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_18.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_14.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_21.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_43.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_60.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_68.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_72.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_31.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_74.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_06.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_75.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_33.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_36.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_66.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_09.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_29.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_50.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_42.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_27.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_25.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_55.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_62.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_34.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_30.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_45.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_67.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_23.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_47.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_57.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_70.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_64.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_58.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_48.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_10.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_54.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_24.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_63.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_35.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_16.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_73.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_52.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_41.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_44.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_20.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_26.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_53.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_59.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_61.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_71.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_37.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_38.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_07.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_22.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_46.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_39.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_49.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_17.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_15.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_19.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_56.json"
+            ],
+            "zoneId": "Undeveloped Area",
+            "code": "RA-SUB-1",
+            "name": "Dangerous Undeveloped Area",
+            "Event": "RA#3"
+        },
+        "sandbox_2_24": {
+            "stageId": "sandbox_2_24",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_24_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_24_02.json"
+            ],
+            "zoneId": "Green Valley",
+            "code": "RA-A-1",
+            "name": "Probing",
+            "Event": "RA#3"
+        },
+        "sandbox_2_25": {
+            "stageId": "sandbox_2_25",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_25_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_25_02.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_25_03.json"
+            ],
+            "zoneId": "Green Valley",
+            "code": "RA-A-2",
+            "name": "Contest",
+            "Event": "RA#3"
+        },
+        "sandbox_2_26": {
+            "stageId": "sandbox_2_26",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_26_03.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_26_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_26_04.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_26_02.json"
+            ],
+            "zoneId": "Unexploited Mine",
+            "code": "RA-B-1",
+            "name": "Passion",
+            "Event": "RA#3"
+        },
+        "sandbox_2_27": {
+            "stageId": "sandbox_2_27",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_27_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_27_05.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_27_04.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_27_02.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_27_06.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_27_03.json"
+            ],
+            "zoneId": "Unexploited Mine",
+            "code": "RA-B-2",
+            "name": "Inextinguishable",
+            "Event": "RA#3"
+        },
+        "sandbox_2_28": {
+            "stageId": "sandbox_2_28",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_28_03.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_28_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_28_02.json"
+            ],
+            "zoneId": "Abandoned Plate",
+            "code": "RA-C-1",
+            "name": "Sharpness",
+            "Event": "RA#3"
+        },
+        "sandbox_2_29": {
+            "stageId": "sandbox_2_29",
+            "levelId": [
+                "obt/sandbox/sandbox_2/level_sandbox2_29_04.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_29_02.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_29_01.json",
+                "obt/sandbox/sandbox_2/level_sandbox2_29_03.json"
+            ],
+            "zoneId": "Abandoned Plate",
+            "code": "RA-C-2",
+            "name": "Ensemble",
+            "Event": "RA#3"
+        },
         "act3fun_01": {
             "stageId": "act3fun_01",
             "levelId": "activities/act3fun/level_act3fun_01.json",
@@ -38515,6 +39061,45 @@
             "RA#2_insect_12",
             "RA#2_insect_13"
         ],
+        "Green Valley": [
+            "sandbox_2_01",
+            "sandbox_2_02",
+            "sandbox_2_03",
+            "sandbox_2_04",
+            "sandbox_2_05",
+            "sandbox_2_24",
+            "sandbox_2_25"
+        ],
+        "Vibrant Swamp": [
+            "sandbox_2_06",
+            "sandbox_2_07",
+            "sandbox_2_08",
+            "sandbox_2_09",
+            "sandbox_2_10"
+        ],
+        "Unexploited Mine": [
+            "sandbox_2_11",
+            "sandbox_2_12",
+            "sandbox_2_13",
+            "sandbox_2_14",
+            "sandbox_2_15",
+            "sandbox_2_26",
+            "sandbox_2_27"
+        ],
+        "Abandoned Plate": [
+            "sandbox_2_16",
+            "sandbox_2_17",
+            "sandbox_2_18",
+            "sandbox_2_19",
+            "sandbox_2_28",
+            "sandbox_2_29"
+        ],
+        "Undeveloped Area": [
+            "sandbox_2_20",
+            "sandbox_2_21",
+            "sandbox_2_22",
+            "sandbox_2_23"
+        ],
         "act3fun": [
             "act3fun_01",
             "act3fun_02",
@@ -39492,6 +40077,13 @@
             "RA#2 Field : Food Material",
             "RA#2 Field : Battle"
         ],
+        "RA#3": [
+            "Green Valley",
+            "Vibrant Swamp",
+            "Unexploited Mine",
+            "Abandoned Plate",
+            "Undeveloped Area"
+        ],
         "act3fun": [
             "act3fun"
         ],
@@ -39612,8 +40204,6 @@
                 },
                 "act1vhalfidle": {
                     "act1vhalfidle_zone1": [
-                        "act1halfidle_tr01",
-                        "act1halfidle_tr01",
                         "act1halfidle_tr01"
                     ]
                 },
@@ -40566,7 +41156,6 @@
             "main": {
                 "main_0": {
                     "Prologue : Training": [
-                        "tr_04",
                         "tr_04"
                     ],
                     "Prologue : Normal": [
@@ -45007,6 +45596,16 @@
                         "RA#2_event_1",
                         "RA#2_event_1"
                     ]
+                },
+                "RA#3": {
+                    "Unexploited Mine": [
+                        "sandbox_2_15"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
                 }
             }
         },
@@ -47926,6 +48525,16 @@
                         "RA#2_monthly_3",
                         "RA#2_monthly_3"
                     ]
+                },
+                "RA#3": {
+                    "Unexploited Mine": [
+                        "sandbox_2_15"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
                 }
             }
         },
@@ -49382,6 +49991,17 @@
                         "rogue6_4-9_dlc1"
                     ]
                 }
+            },
+            "ra": {
+                "RA#3": {
+                    "Vibrant Swamp": [
+                        "sandbox_2_09"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_23"
+                    ]
+                }
             }
         },
         "enemy_1043_zomsbr": {
@@ -49504,7 +50124,6 @@
                 },
                 "CCBP#01": {
                     "CCBP#01": [
-                        "crisis_v2_01-07",
                         "crisis_v2_01-07"
                     ]
                 },
@@ -49670,7 +50289,6 @@
                 },
                 "CCBP#01": {
                     "CCBP#01": [
-                        "crisis_v2_01-07",
                         "crisis_v2_01-07"
                     ]
                 },
@@ -50404,6 +51022,11 @@
                         "RA#2_elite_group2",
                         "RA#2_elite_group2"
                     ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_28"
+                    ]
                 }
             }
         },
@@ -50483,7 +51106,6 @@
                 },
                 "CCBP#01": {
                     "CCBP#01": [
-                        "crisis_v2_01-07",
                         "crisis_v2_01-07"
                     ]
                 },
@@ -51544,6 +52166,13 @@
                         "RA#2_monthly_3",
                         "RA#2_monthly_3"
                     ]
+                },
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
                 }
             },
             "fun": {
@@ -52244,7 +52873,6 @@
                 },
                 "CCBP#01": {
                     "CCBP#01": [
-                        "crisis_v2_01-05",
                         "crisis_v2_01-05"
                     ]
                 },
@@ -52383,7 +53011,6 @@
                 },
                 "CCBP#01": {
                     "CCBP#01": [
-                        "crisis_v2_01-05",
                         "crisis_v2_01-05"
                     ]
                 },
@@ -52719,7 +53346,6 @@
                 },
                 "CCBP#01": {
                     "CCBP#01": [
-                        "crisis_v2_01-05",
                         "crisis_v2_01-05"
                     ]
                 },
@@ -53024,7 +53650,6 @@
                 },
                 "CCBP#01": {
                     "CCBP#01": [
-                        "crisis_v2_01-05",
                         "crisis_v2_01-05"
                     ]
                 },
@@ -53802,7 +54427,6 @@
                         "rogue4_5-1"
                     ],
                     "IS#5  ???": [
-                        "rogue4_b-8",
                         "rogue4_b-8"
                     ],
                     "IS#5 Duel": [
@@ -55023,6 +55647,16 @@
                         "RA#2_rally_group5",
                         "RA#2_rally_group5"
                     ]
+                },
+                "RA#3": {
+                    "Unexploited Mine": [
+                        "sandbox_2_13"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
                 }
             },
             "fun": {
@@ -55503,6 +56137,13 @@
                         "RA#2_elite_group7",
                         "RA#2_elite_group7",
                         "RA#2_elite_group7"
+                    ]
+                },
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -56139,6 +56780,13 @@
                     "RA#2 Insect Rushparty": [
                         "RA#2_insect_11"
                     ]
+                },
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
                 }
             }
         },
@@ -56308,7 +56956,6 @@
                 },
                 "CCBP#01": {
                     "CCBP#01": [
-                        "crisis_v2_01-07",
                         "crisis_v2_01-07"
                     ]
                 },
@@ -57789,6 +58436,11 @@
                     "RA#2 Field : Battle": [
                         "sandbox_1_75"
                     ]
+                },
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_04"
+                    ]
                 }
             }
         },
@@ -58245,6 +58897,13 @@
                         "RA#2_rally_group4",
                         "RA#2_rally_group4"
                     ]
+                },
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
                 }
             }
         },
@@ -58698,7 +59357,6 @@
                 },
                 "RA#2": {
                     "RA#2 Field : Battle": [
-                        "sandbox_1_75",
                         "sandbox_1_75"
                     ]
                 }
@@ -59410,11 +60068,9 @@
                 "IS#5": {
                     "IS#5 Floor 3": [
                         "rogue4_3-1",
-                        "rogue4_3-5",
                         "rogue4_3-5"
                     ],
                     "IS#5 Floor 4": [
-                        "rogue4_4-4",
                         "rogue4_4-4",
                         "rogue4_4-7"
                     ],
@@ -59848,8 +60504,6 @@
                 "IS#5": {
                     "IS#5 Floor 5": [
                         "rogue4_b-5",
-                        "rogue4_b-5",
-                        "rogue4_b-5-c",
                         "rogue4_b-5-c"
                     ],
                     "IS#5 Floor 6": [
@@ -60010,7 +60664,6 @@
                         "rogue4_3-1"
                     ],
                     "IS#5 Floor 4": [
-                        "rogue4_4-4",
                         "rogue4_4-4"
                     ],
                     "IS#5 Floor 5": [
@@ -60367,11 +61020,9 @@
                 },
                 "IS#5": {
                     "IS#5 Floor 3": [
-                        "rogue4_3-5",
                         "rogue4_3-5"
                     ],
                     "IS#5 Floor 4": [
-                        "rogue4_4-4",
                         "rogue4_4-4",
                         "rogue4_4-7"
                     ],
@@ -60816,19 +61467,16 @@
             "cc": {
                 "CC#10": {
                     "CC#10": [
-                        "rune_12-01",
                         "rune_12-01"
                     ]
                 },
                 "CC#11": {
                     "CC#11": [
-                        "rune_12-01",
                         "rune_12-01"
                     ]
                 },
                 "CC#12": {
                     "CC#12": [
-                        "rune_12-01",
                         "rune_12-01"
                     ]
                 }
@@ -61633,6 +62281,14 @@
                         "rogue6_t-11"
                     ]
                 }
+            },
+            "ra": {
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_23"
+                    ]
+                }
             }
         },
         "enemy_1270_nhstlk": {
@@ -62161,7 +62817,6 @@
                 },
                 "CCBP#04": {
                     "CCBP#04": [
-                        "crisis_v2_04-03",
                         "crisis_v2_04-03"
                     ]
                 }
@@ -62179,7 +62834,6 @@
                 },
                 "IS#5": {
                     "IS#5 Floor 3": [
-                        "rogue4_3-2",
                         "rogue4_3-2"
                     ],
                     "IS#5 Floor 5": [
@@ -62349,8 +63003,6 @@
                     "IS#5 Floor 5": [
                         "rogue4_5-3",
                         "rogue4_b-5",
-                        "rogue4_b-5",
-                        "rogue4_b-5-c",
                         "rogue4_b-5-c"
                     ]
                 },
@@ -63113,6 +63765,13 @@
                     "RA#2 Field : Battle": [
                         "sandbox_1_100"
                     ]
+                },
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
                 }
             }
         },
@@ -63428,6 +64087,15 @@
                         "rogue6_4-4_dlc1"
                     ]
                 }
+            },
+            "ra": {
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
             }
         },
         "enemy_1010_demon_2": {
@@ -63611,6 +64279,13 @@
                     ],
                     "RA#2 Rally Rushparty": [
                         "RA#2_rally_group3"
+                    ]
+                },
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -63825,6 +64500,13 @@
                     ],
                     "RA#2 Field : Food Material": [
                         "sandbox_1_106"
+                    ]
+                },
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -64767,7 +65449,6 @@
             "cc": {
                 "CCBP#04": {
                     "CCBP#04": [
-                        "crisis_v2_04-05",
                         "crisis_v2_04-05"
                     ]
                 }
@@ -64906,7 +65587,6 @@
             "cc": {
                 "CCBP#04": {
                     "CCBP#04": [
-                        "crisis_v2_04-05",
                         "crisis_v2_04-05"
                     ]
                 }
@@ -65045,7 +65725,6 @@
             "cc": {
                 "CCBP#04": {
                     "CCBP#04": [
-                        "crisis_v2_04-05",
                         "crisis_v2_04-05"
                     ]
                 }
@@ -65160,7 +65839,6 @@
             "cc": {
                 "CCBP#04": {
                     "CCBP#04": [
-                        "crisis_v2_04-05",
                         "crisis_v2_04-05"
                     ]
                 }
@@ -65203,7 +65881,6 @@
             "cc": {
                 "CCBP#04": {
                     "CCBP#04": [
-                        "crisis_v2_04-05",
                         "crisis_v2_04-05"
                     ]
                 }
@@ -65289,7 +65966,6 @@
             "cc": {
                 "CCBP#04": {
                     "CCBP#04": [
-                        "crisis_v2_04-05",
                         "crisis_v2_04-05"
                     ]
                 }
@@ -65458,7 +66134,6 @@
             "cc": {
                 "CCBP#04": {
                     "CCBP#04": [
-                        "crisis_v2_04-05",
                         "crisis_v2_04-05"
                     ]
                 }
@@ -65586,7 +66261,6 @@
             "cc": {
                 "CCBP#04": {
                     "CCBP#04": [
-                        "crisis_v2_04-05",
                         "crisis_v2_04-05"
                     ]
                 }
@@ -66047,19 +66721,16 @@
                     "EP14 : Story Environment": [
                         "easy_14-05",
                         "easy_14-07",
-                        "easy_14-11",
                         "easy_14-11"
                     ],
                     "EP14 : Standard Environment": [
                         "main_14-05",
                         "main_14-07",
                         "main_14-09",
-                        "main_14-11",
                         "main_14-11"
                     ],
                     "EP14 : Adverse Environment": [
                         "tough_14-05",
-                        "tough_14-11",
                         "tough_14-11"
                     ]
                 }
@@ -66286,8 +66957,6 @@
                     "IS#5 Floor 5": [
                         "rogue4_5-7",
                         "rogue4_b-5-b",
-                        "rogue4_b-5-b",
-                        "rogue4_b-5-d",
                         "rogue4_b-5-d"
                     ],
                     "IS#5 Floor 6": [
@@ -66471,6 +67140,14 @@
                     ],
                     "IS#6 ro5_sv_10_b_dlc1": [
                         "rogue5_sv-10-b_dlc1"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -67252,6 +67929,18 @@
                         "act10mini_09"
                     ]
                 }
+            },
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
             }
         },
         "enemy_1174_duholy_2": {
@@ -67348,6 +68037,18 @@
                     "IS#7 Floor 4": [
                         "rogue6_4-9",
                         "rogue6_4-9_dlc1"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -67523,6 +68224,16 @@
                         "RA#2_monthly_1",
                         "RA#2_monthly_1",
                         "RA#2_monthly_1"
+                    ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -67784,6 +68495,15 @@
                         "rune_02-02"
                     ]
                 }
+            },
+            "ra": {
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
             }
         },
         "enemy_1025_reveng_2": {
@@ -67798,8 +68518,6 @@
                 "act2multi": {
                     "act2multi_zone1": [
                         "act2multi_06",
-                        "act2multi_06",
-                        "act2multi_ex06",
                         "act2multi_ex06"
                     ]
                 }
@@ -68614,7 +69332,6 @@
                 "act39side": {
                     "act39sre_zone1": [
                         "act39side_03",
-                        "act39side_03",
                         "act39side_04",
                         "act39side_08"
                     ]
@@ -68634,6 +69351,32 @@
                     "act1museum_zone_2": [
                         "act1museum_m2_01",
                         "act1museum_m2_03"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_04",
+                        "sandbox_2_05"
+                    ],
+                    "Vibrant Swamp": [
+                        "sandbox_2_06"
+                    ],
+                    "Unexploited Mine": [
+                        "sandbox_2_12",
+                        "sandbox_2_13"
+                    ],
+                    "Abandoned Plate": [
+                        "sandbox_2_16",
+                        "sandbox_2_17",
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -68661,6 +69404,20 @@
                     "RA#2 Normal Rushparty": [
                         "RA#2_deer_god"
                     ]
+                },
+                "RA#3": {
+                    "Unexploited Mine": [
+                        "sandbox_2_12",
+                        "sandbox_2_13"
+                    ],
+                    "Abandoned Plate": [
+                        "sandbox_2_16"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
                 }
             }
         },
@@ -68670,6 +69427,32 @@
                     "act1museum_zone_2": [
                         "act1museum_m2_01",
                         "act1museum_m2_03"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_04",
+                        "sandbox_2_24"
+                    ],
+                    "Vibrant Swamp": [
+                        "sandbox_2_06"
+                    ],
+                    "Unexploited Mine": [
+                        "sandbox_2_12",
+                        "sandbox_2_13",
+                        "sandbox_2_14"
+                    ],
+                    "Abandoned Plate": [
+                        "sandbox_2_17",
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -68718,6 +69501,28 @@
                         "sandbox_1_16",
                         "sandbox_1_45",
                         "sandbox_1_49"
+                    ]
+                },
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_05",
+                        "sandbox_2_25"
+                    ],
+                    "Vibrant Swamp": [
+                        "sandbox_2_06",
+                        "sandbox_2_08"
+                    ],
+                    "Unexploited Mine": [
+                        "sandbox_2_12"
+                    ],
+                    "Abandoned Plate": [
+                        "sandbox_2_17"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -69052,6 +69857,13 @@
                     "RA#2 Insect Rushparty": [
                         "RA#2_insect_13"
                     ]
+                },
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
                 }
             }
         },
@@ -69289,6 +70101,26 @@
                         "RA#2_crazy_crabs",
                         "RA#2_crazy_crabs"
                     ]
+                },
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_05",
+                        "sandbox_2_25"
+                    ],
+                    "Vibrant Swamp": [
+                        "sandbox_2_06",
+                        "sandbox_2_08",
+                        "sandbox_2_10"
+                    ],
+                    "Abandoned Plate": [
+                        "sandbox_2_17"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
                 }
             }
         },
@@ -69348,6 +70180,29 @@
                         "sandbox_1_48",
                         "sandbox_1_49",
                         "sandbox_1_51"
+                    ]
+                },
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_05",
+                        "sandbox_2_24",
+                        "sandbox_2_25"
+                    ],
+                    "Vibrant Swamp": [
+                        "sandbox_2_06",
+                        "sandbox_2_08"
+                    ],
+                    "Abandoned Plate": [
+                        "sandbox_2_17"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ],
+                    "Unexploited Mine": [
+                        "sandbox_2_26"
                     ]
                 }
             }
@@ -70112,7 +70967,6 @@
             "sidestory": {
                 "act49side": {
                     "act49side_zone1": [
-                        "act49side_10",
                         "act49side_10"
                     ]
                 },
@@ -70169,6 +71023,15 @@
                     "IS#7 Floor 5": [
                         "rogue6_5-6",
                         "rogue6_5-6_dlc1"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -70282,6 +71145,12 @@
                         "sandbox_1_54",
                         "sandbox_1_61"
                     ]
+                },
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_23"
+                    ]
                 }
             }
         },
@@ -70351,6 +71220,13 @@
                 "IS#7": {
                     "IS#7 Floor 2": [
                         "rogue6_2-2"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Unexploited Mine": [
+                        "sandbox_2_26"
                     ]
                 }
             }
@@ -70460,6 +71336,18 @@
                     "IS#7 Floor 4": [
                         "rogue6_4-7",
                         "rogue6_4-7_dlc1"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_19"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -70923,7 +71811,6 @@
             "cc": {
                 "CCBP#05": {
                     "CCBP#05": [
-                        "crisis_v2_05-05",
                         "crisis_v2_05-05"
                     ]
                 }
@@ -70986,7 +71873,6 @@
             "sidestory": {
                 "act52side": {
                     "act52side_zone1": [
-                        "act52side_01",
                         "act52side_01",
                         "act52side_02",
                         "act52side_07",
@@ -71126,7 +72012,6 @@
                         "act52side_02",
                         "act52side_03",
                         "act52side_04",
-                        "act52side_04",
                         "act52side_05",
                         "act52side_06",
                         "act52side_08"
@@ -71239,8 +72124,6 @@
                     ],
                     "act52side_zone2": [
                         "act52side_ex08",
-                        "act52side_ex08",
-                        "act52side_ex08#f#",
                         "act52side_ex08#f#"
                     ]
                 }
@@ -71253,8 +72136,6 @@
                         "act52side_ex01",
                         "act52side_ex01#f#",
                         "act52side_ex02",
-                        "act52side_ex02",
-                        "act52side_ex02#f#",
                         "act52side_ex02#f#",
                         "act52side_ex03",
                         "act52side_ex03#f#",
@@ -71283,8 +72164,6 @@
                         "act52side_ex04",
                         "act52side_ex04#f#",
                         "act52side_ex05",
-                        "act52side_ex05",
-                        "act52side_ex05#f#",
                         "act52side_ex05#f#",
                         "act52side_ex07",
                         "act52side_ex07#f#"
@@ -71432,8 +72311,6 @@
                         "act52side_ex02",
                         "act52side_ex02#f#",
                         "act52side_ex04",
-                        "act52side_ex04",
-                        "act52side_ex04#f#",
                         "act52side_ex04#f#",
                         "act52side_ex08",
                         "act52side_ex08#f#"
@@ -73270,6 +74147,18 @@
                     ]
                 }
             },
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_17"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
+            },
             "fun": {
                 "act6fun": {
                     "act6fun": [
@@ -73344,6 +74233,18 @@
                     "IS#7 Floor 4": [
                         "rogue6_4-8",
                         "rogue6_4-8_dlc1"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -74793,7 +75694,6 @@
             "cc": {
                 "CCBP#05": {
                     "CCBP#05": [
-                        "crisis_v2_05-05",
                         "crisis_v2_05-05"
                     ]
                 }
@@ -74832,8 +75732,6 @@
                     ],
                     "act9sre_zone2": [
                         "act16d5_ex06",
-                        "act16d5_ex06",
-                        "act16d5_ex06#f#",
                         "act16d5_ex06#f#"
                     ]
                 }
@@ -74963,6 +75861,15 @@
                 "IS#7": {
                     "IS#7 Floor 2": [
                         "rogue6_2-4"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -75396,9 +76303,6 @@
                 },
                 "IS#3": {
                     "IS#3 Event": [
-                        "rogue2_ev-3",
-                        "rogue2_ev-3",
-                        "rogue2_ev-3",
                         "rogue2_ev-3"
                     ]
                 },
@@ -75409,8 +76313,6 @@
                 },
                 "IS#5": {
                     "IS#5 Floor 4": [
-                        "rogue4_4-6",
-                        "rogue4_4-6",
                         "rogue4_4-6"
                     ],
                     "IS#5 Floor 5": [
@@ -75494,12 +76396,6 @@
                 "act9d0": {
                     "act17d5_zone2": [
                         "act9d0_ex05",
-                        "act9d0_ex05",
-                        "act9d0_ex05",
-                        "act9d0_ex05",
-                        "act9d0_ex05#f#",
-                        "act9d0_ex05#f#",
-                        "act9d0_ex05#f#",
                         "act9d0_ex05#f#"
                     ],
                     "act17d5_zone3": [
@@ -75747,7 +76643,6 @@
             "exp": {
                 "act1dp": {
                     "act1dp_zone1": [
-                        "act1dp_03",
                         "act1dp_03"
                     ],
                     "act1dp_zone2": [
@@ -75766,8 +76661,6 @@
                 "act1arcade": {
                     "zone_2": [
                         "act1arcade_m2_01",
-                        "act1arcade_m2_01",
-                        "act1arcade_m2_02",
                         "act1arcade_m2_02"
                     ]
                 }
@@ -75778,8 +76671,6 @@
                         "act27side_02",
                         "act27side_04",
                         "act27side_06",
-                        "act27side_06",
-                        "act27side_07",
                         "act27side_07",
                         "act27side_sp01"
                     ]
@@ -76751,7 +77642,6 @@
             "is": {
                 "IS#2": {
                     "IS#2 Floor 1": [
-                        "rogue1_1-5",
                         "rogue1_1-5"
                     ],
                     "IS#2 Floor 4": [
@@ -77034,7 +77924,6 @@
                 },
                 "act1arcade": {
                     "zone_2": [
-                        "act1arcade_m2_03",
                         "act1arcade_m2_03"
                     ]
                 }
@@ -77067,12 +77956,9 @@
                         "act27side_s02",
                         "act27side_s02#f#",
                         "act27side_s04",
-                        "act27side_s04",
-                        "act27side_s04#f#",
                         "act27side_s04#f#",
                         "act27side_s05",
                         "act27side_s05#f#",
-                        "act27side_mo01",
                         "act27side_mo01"
                     ]
                 }
@@ -77125,8 +78011,6 @@
                         "act27side_s01",
                         "act27side_s01#f#",
                         "act27side_s03",
-                        "act27side_s03",
-                        "act27side_s03#f#",
                         "act27side_s03#f#",
                         "act27side_mo01"
                     ]
@@ -77145,8 +78029,6 @@
                 "IS#7": {
                     "IS#7 Floor 3": [
                         "rogue6_3-1",
-                        "rogue6_3-1",
-                        "rogue6_3-1_dlc1",
                         "rogue6_3-1_dlc1"
                     ],
                     "IS#7 Floor 4": [
@@ -79747,7 +80629,6 @@
                 "act30side": {
                     "act30sre_zone1": [
                         "act30side_05",
-                        "act30side_05",
                         "act30side_06",
                         "act30side_07"
                     ]
@@ -80402,7 +81283,6 @@
             "sidestory": {
                 "act50side": {
                     "act50side_zone2": [
-                        "act50side_s01",
                         "act50side_s01"
                     ]
                 }
@@ -80416,6 +81296,16 @@
                 "RA#2": {
                     "RA#2 Field : Battle": [
                         "sandbox_1_67"
+                    ]
+                },
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ],
+                    "Unexploited Mine": [
+                        "sandbox_2_27"
                     ]
                 }
             }
@@ -80460,7 +81350,6 @@
                 },
                 "act13mini": {
                     "act13mini_zone1": [
-                        "act13mini_s01",
                         "act13mini_s01"
                     ]
                 },
@@ -80471,28 +81360,19 @@
                 },
                 "act15side": {
                     "act15sre_zone1": [
-                        "act15side_01",
                         "act15side_01"
                     ]
                 },
                 "act16d5": {
                     "act9sre_zone1": [
                         "act16d5_01",
-                        "act16d5_01",
-                        "act16d5_tr01",
                         "act16d5_tr01",
                         "act16d5_02",
-                        "act16d5_02",
-                        "act16d5_04",
                         "act16d5_04",
                         "act16d5_05",
                         "act16d5_07",
-                        "act16d5_07",
-                        "act16d5_08",
                         "act16d5_08",
                         "act16d5_09",
-                        "act16d5_09",
-                        "act16d5_10",
                         "act16d5_10"
                     ]
                 }
@@ -80894,6 +81774,20 @@
                     "RA#2 Field : Food Material": [
                         "sandbox_1_102"
                     ]
+                },
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_04"
+                    ],
+                    "Vibrant Swamp": [
+                        "sandbox_2_09"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
                 }
             }
         },
@@ -81064,7 +81958,6 @@
                 },
                 "act1vhalfidle": {
                     "act1vhalfidle_zone1": [
-                        "act1halfidle_04",
                         "act1halfidle_04"
                     ]
                 }
@@ -82380,6 +83273,16 @@
                     "RA#2 Field : Building Material": [
                         "sandbox_1_42"
                     ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_19"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
                 }
             }
         },
@@ -82596,6 +83499,18 @@
                         "rogue6_b-1-b_dlc1"
                     ]
                 }
+            },
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_19"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
             }
         },
         "enemy_1325_cbgpro": {
@@ -82663,7 +83578,6 @@
                 },
                 "CCBP#05": {
                     "CCBP#05": [
-                        "crisis_v2_05-03",
                         "crisis_v2_05-03"
                     ]
                 }
@@ -82678,6 +83592,15 @@
                     "IS#7 Floor 3": [
                         "rogue6_b-1-b",
                         "rogue6_b-1-b_dlc1"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -82989,6 +83912,15 @@
                         "rogue6_4-5_dlc1"
                     ]
                 }
+            },
+            "ra": {
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
             }
         },
         "enemy_1327_cbrokt": {
@@ -83051,6 +83983,15 @@
                 "IS#6": {
                     "IS#6 Floor 2": [
                         "rogue5_2-6"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -83229,6 +84170,15 @@
                     "IS#7 Floor 4": [
                         "rogue6_4-5",
                         "rogue6_4-5_dlc1"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -83731,6 +84681,13 @@
                     ],
                     "RA#2 Field : Battle": [
                         "sandbox_1_74"
+                    ]
+                },
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -84975,6 +85932,15 @@
                         "act44side_sp03"
                     ]
                 }
+            },
+            "ra": {
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
             }
         },
         "enemy_1309_mhboar_2": {
@@ -85133,14 +86099,10 @@
                 "act36side": {
                     "act36side_zone2": [
                         "act36side_ex02",
-                        "act36side_ex02",
-                        "act36side_ex02#f#",
                         "act36side_ex02#f#",
                         "act36side_ex07",
                         "act36side_ex07#f#",
                         "act36side_ex08",
-                        "act36side_ex08",
-                        "act36side_ex08#f#",
                         "act36side_ex08#f#"
                     ]
                 }
@@ -85177,6 +86139,17 @@
                     ],
                     "IS#6 ro5_sv_4_dlc1": [
                         "rogue5_sv-4_dlc1"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_05"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -85716,6 +86689,13 @@
                     "RA#2 Rally Rushparty": [
                         "RA#2_rally_group3"
                     ]
+                },
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
                 }
             }
         },
@@ -85933,9 +86913,6 @@
                 },
                 "IS#3": {
                     "IS#3 Event": [
-                        "rogue2_ev-3",
-                        "rogue2_ev-3",
-                        "rogue2_ev-3",
                         "rogue2_ev-3"
                     ]
                 },
@@ -85954,7 +86931,6 @@
                 "RA#1": {
                     "RA#1 Field : Building Material": [
                         "sandbox_0_12",
-                        "sandbox_0_17",
                         "sandbox_0_17"
                     ],
                     "RA#1 Field : Battle": [
@@ -85965,11 +86941,17 @@
                     "RA#2 Field : Building Material": [
                         "sandbox_1_28",
                         "sandbox_1_47",
-                        "sandbox_1_52",
                         "sandbox_1_52"
                     ],
                     "RA#2 Field : Battle": [
                         "sandbox_1_73"
+                    ]
+                },
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -86186,7 +87168,6 @@
             "cc": {
                 "CCBP#04": {
                     "CCBP#04": [
-                        "crisis_v2_04-03",
                         "crisis_v2_04-03"
                     ]
                 }
@@ -86260,7 +87241,6 @@
                 "act33side": {
                     "act33sre_zone1": [
                         "act33side_08",
-                        "act33side_09",
                         "act33side_09"
                     ],
                     "act33sre_zone2": [
@@ -87037,7 +88017,6 @@
             "cc": {
                 "CCBP#04": {
                     "CCBP#04": [
-                        "crisis_v2_04-03",
                         "crisis_v2_04-03"
                     ]
                 }
@@ -87063,6 +88042,16 @@
                 "RA#2": {
                     "RA#2 Field : Battle": [
                         "sandbox_1_100"
+                    ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_17"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -87108,7 +88097,6 @@
             "cc": {
                 "CCBP#05": {
                     "CCBP#05": [
-                        "crisis_v2_05-05",
                         "crisis_v2_05-05"
                     ]
                 }
@@ -88014,6 +89002,18 @@
                     "RA#2 Field : Building Material": [
                         "sandbox_1_01"
                     ]
+                },
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_04"
+                    ],
+                    "Abandoned Plate": [
+                        "sandbox_2_19"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_23"
+                    ]
                 }
             }
         },
@@ -88030,8 +89030,6 @@
                     ],
                     "act24sre_zone2": [
                         "act24side_ex01",
-                        "act24side_ex01",
-                        "act24side_ex01#f#",
                         "act24side_ex01#f#"
                     ]
                 }
@@ -88072,6 +89070,11 @@
                     ],
                     "RA#2 Field : Food Material": [
                         "sandbox_1_54"
+                    ]
+                },
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_04"
                     ]
                 }
             }
@@ -88187,7 +89190,6 @@
                         "act50side_ex05#f#",
                         "act50side_ex07",
                         "act50side_ex07#f#",
-                        "act50side_s01",
                         "act50side_s01"
                     ]
                 }
@@ -88207,7 +89209,6 @@
                         "act50side_ex06#f#",
                         "act50side_ex07",
                         "act50side_ex07#f#",
-                        "act50side_s01",
                         "act50side_s01"
                     ]
                 }
@@ -88348,7 +89349,6 @@
             "sidestory": {
                 "act50side": {
                     "act50side_zone2": [
-                        "act50side_s01",
                         "act50side_s01"
                     ]
                 }
@@ -88570,7 +89570,6 @@
                     "EP17 : Standard Environment": [
                         "main_17-12",
                         "main_17-14",
-                        "main_17-17",
                         "main_17-17"
                     ],
                     "EP17 : Adverse Environment": [
@@ -88592,7 +89591,6 @@
                         "main_17-13",
                         "main_17-14",
                         "main_17-16",
-                        "main_17-17",
                         "main_17-17"
                     ],
                     "EP17 : Adverse Environment": [
@@ -88615,7 +89613,6 @@
                         "main_17-13",
                         "main_17-14",
                         "main_17-16",
-                        "main_17-17",
                         "main_17-17"
                     ],
                     "EP17 : Adverse Environment": [
@@ -88649,7 +89646,6 @@
                     "EP17 : Standard Environment": [
                         "main_17-13",
                         "main_17-16",
-                        "main_17-17",
                         "main_17-17"
                     ],
                     "EP17 : Adverse Environment": [
@@ -88730,7 +89726,6 @@
             "cc": {
                 "CCBP#05": {
                     "CCBP#05": [
-                        "crisis_v2_05-05",
                         "crisis_v2_05-05"
                     ]
                 }
@@ -91130,7 +92125,6 @@
                         "main_16-06",
                         "main_16-07",
                         "main_16-08",
-                        "main_16-08",
                         "main_16-09",
                         "main_16-10",
                         "main_16-11",
@@ -91170,7 +92164,6 @@
             "cc": {
                 "CCBP#05": {
                     "CCBP#05": [
-                        "crisis_v2_05-05",
                         "crisis_v2_05-05"
                     ]
                 }
@@ -91184,6 +92177,13 @@
                 "IS#7": {
                     "IS#7 Treasure": [
                         "rogue6_t-9-b"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_16"
                     ]
                 }
             }
@@ -92497,6 +93497,11 @@
                         "RA#2_rally_group1",
                         "RA#2_rally_group1"
                     ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_28"
+                    ]
                 }
             }
         },
@@ -92625,6 +93630,11 @@
                 "RA#1": {
                     "RA#1 Field : Battle": [
                         "sandbox_0_45"
+                    ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_28"
                     ]
                 }
             }
@@ -93034,6 +94044,11 @@
                         "RA#2_rally_group1",
                         "RA#2_rally_group1"
                     ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_28"
+                    ]
                 }
             }
         },
@@ -93244,7 +94259,6 @@
                 },
                 "CCBP#01": {
                     "CCBP#01": [
-                        "crisis_v2_01-05",
                         "crisis_v2_01-05"
                     ]
                 },
@@ -93299,6 +94313,11 @@
                     ],
                     "RA#2 Field : Battle": [
                         "sandbox_1_62"
+                    ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_29"
                     ]
                 }
             },
@@ -93883,8 +94902,6 @@
                         "act16d5_ex02",
                         "act16d5_ex02#f#",
                         "act16d5_ex05",
-                        "act16d5_ex05",
-                        "act16d5_ex05#f#",
                         "act16d5_ex05#f#"
                     ]
                 }
@@ -93980,12 +94997,8 @@
                 "act16d5": {
                     "act9sre_zone2": [
                         "act16d5_ex01",
-                        "act16d5_ex01",
-                        "act16d5_ex01#f#",
                         "act16d5_ex01#f#",
                         "act16d5_ex05",
-                        "act16d5_ex05",
-                        "act16d5_ex05#f#",
                         "act16d5_ex05#f#"
                     ]
                 }
@@ -94029,20 +95042,14 @@
                 "act13mini": {
                     "act13mini_zone1": [
                         "act13mini_06",
-                        "act13mini_06",
-                        "act13mini_06#f#",
                         "act13mini_06#f#"
                     ]
                 },
                 "act16d5": {
                     "act9sre_zone2": [
                         "act16d5_ex03",
-                        "act16d5_ex03",
-                        "act16d5_ex03#f#",
                         "act16d5_ex03#f#",
                         "act16d5_ex04",
-                        "act16d5_ex04",
-                        "act16d5_ex04#f#",
                         "act16d5_ex04#f#"
                     ]
                 }
@@ -95077,13 +96084,6 @@
             "vb": {
                 "act2break": {
                     "act2break_zone2": [
-                        "act2break_h02",
-                        "act2break_h02",
-                        "act2break_h02",
-                        "act2break_h02",
-                        "act2break_h02",
-                        "act2break_h02",
-                        "act2break_h02",
                         "act2break_h02"
                     ]
                 }
@@ -95092,46 +96092,12 @@
                 "act41side": {
                     "act41sre_zone2": [
                         "act41side_ex01",
-                        "act41side_ex01",
-                        "act41side_ex01",
-                        "act41side_ex01",
-                        "act41side_ex01",
-                        "act41side_ex01",
-                        "act41side_ex01",
-                        "act41side_ex01",
-                        "act41side_ex01",
-                        "act41side_ex01",
-                        "act41side_ex01#f#",
-                        "act41side_ex01#f#",
-                        "act41side_ex01#f#",
-                        "act41side_ex01#f#",
-                        "act41side_ex01#f#",
-                        "act41side_ex01#f#",
-                        "act41side_ex01#f#",
-                        "act41side_ex01#f#",
-                        "act41side_ex01#f#",
                         "act41side_ex01#f#",
                         "act41side_ex03",
                         "act41side_ex03#f#",
                         "act41side_ex04",
-                        "act41side_ex04",
-                        "act41side_ex04",
-                        "act41side_ex04",
-                        "act41side_ex04#f#",
-                        "act41side_ex04#f#",
-                        "act41side_ex04#f#",
                         "act41side_ex04#f#",
                         "act41side_ex06",
-                        "act41side_ex06",
-                        "act41side_ex06",
-                        "act41side_ex06",
-                        "act41side_ex06",
-                        "act41side_ex06",
-                        "act41side_ex06#f#",
-                        "act41side_ex06#f#",
-                        "act41side_ex06#f#",
-                        "act41side_ex06#f#",
-                        "act41side_ex06#f#",
                         "act41side_ex06#f#"
                     ]
                 }
@@ -95140,18 +96106,9 @@
                 "IS#7": {
                     "IS#7 Floor 5": [
                         "rogue6_5-1",
-                        "rogue6_5-1",
-                        "rogue6_5-1",
-                        "rogue6_5-1",
-                        "rogue6_5-1_dlc1",
-                        "rogue6_5-1_dlc1",
-                        "rogue6_5-1_dlc1",
                         "rogue6_5-1_dlc1"
                     ],
                     "IS#7 Treasure": [
-                        "rogue6_t-7",
-                        "rogue6_t-7",
-                        "rogue6_t-7",
                         "rogue6_t-7"
                     ]
                 }
@@ -95210,6 +96167,18 @@
                     ],
                     "IS#7 Duel": [
                         "rogue6_d-2"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_19"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -95358,6 +96327,22 @@
                     "IS#7 Floor 4": [
                         "rogue6_4-2",
                         "rogue6_4-2_dlc1"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_05"
+                    ],
+                    "Vibrant Swamp": [
+                        "sandbox_2_06"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -96868,7 +97853,6 @@
             "cc": {
                 "CCBP#05": {
                     "CCBP#05": [
-                        "crisis_v2_05-03",
                         "crisis_v2_05-03"
                     ]
                 }
@@ -96918,7 +97902,6 @@
             "cc": {
                 "CCBP#05": {
                     "CCBP#05": [
-                        "crisis_v2_05-03",
                         "crisis_v2_05-03"
                     ]
                 }
@@ -96961,7 +97944,6 @@
             "cc": {
                 "CCBP#05": {
                     "CCBP#05": [
-                        "crisis_v2_05-03",
                         "crisis_v2_05-03"
                     ]
                 }
@@ -97325,7 +98307,6 @@
                 "act16d5": {
                     "act9sre_zone1": [
                         "act16d5_09",
-                        "act16d5_09",
                         "act16d5_10"
                     ]
                 }
@@ -97383,7 +98364,6 @@
             "sidestory": {
                 "act49side": {
                     "act49side_zone1": [
-                        "act49side_10",
                         "act49side_10"
                     ]
                 },
@@ -97644,8 +98624,6 @@
                         "act49side_ex07",
                         "act49side_ex07#f#",
                         "act49side_ex08",
-                        "act49side_ex08",
-                        "act49side_ex08#f#",
                         "act49side_ex08#f#"
                     ],
                     "act49side_zone3": [
@@ -97806,8 +98784,6 @@
                 "act49side": {
                     "act49side_zone2": [
                         "act49side_ex08",
-                        "act49side_ex08",
-                        "act49side_ex08#f#",
                         "act49side_ex08#f#"
                     ]
                 },
@@ -97824,8 +98800,6 @@
                 "act9mini": {
                     "act9mini_zone1": [
                         "act9mini_04",
-                        "act9mini_04",
-                        "act9mini_04#f#",
                         "act9mini_04#f#"
                     ]
                 },
@@ -97834,12 +98808,8 @@
                         "act16d5_ex01",
                         "act16d5_ex01#f#",
                         "act16d5_ex03",
-                        "act16d5_ex03",
-                        "act16d5_ex03#f#",
                         "act16d5_ex03#f#",
                         "act16d5_ex04",
-                        "act16d5_ex04",
-                        "act16d5_ex04#f#",
                         "act16d5_ex04#f#",
                         "act16d5_ex08",
                         "act16d5_ex08#f#"
@@ -97849,25 +98819,20 @@
             "is": {
                 "IS#5": {
                     "IS#5 Floor 6": [
-                        "rogue4_b-7",
                         "rogue4_b-7"
                     ]
                 },
                 "IS#6": {
                     "IS#6 Floor 7": [
-                        "rogue5_7-1",
                         "rogue5_7-1"
                     ],
                     "IS#6  ???": [
-                        "rogue5_b-10",
                         "rogue5_b-10"
                     ],
                     "IS#6 ro5_sv_3": [
-                        "rogue5_sv-3",
                         "rogue5_sv-3"
                     ],
                     "IS#6 ro5_sv_3_dlc1": [
-                        "rogue5_sv-3_dlc1",
                         "rogue5_sv-3_dlc1"
                     ]
                 }
@@ -97878,16 +98843,12 @@
                 "act49side": {
                     "act49side_zone2": [
                         "act49side_ex08",
-                        "act49side_ex08",
-                        "act49side_ex08#f#",
                         "act49side_ex08#f#"
                     ]
                 },
                 "act19mini": {
                     "act19mini_zone1": [
                         "act19mini_08",
-                        "act19mini_08",
-                        "act19mini_08#f#",
                         "act19mini_08#f#"
                     ]
                 },
@@ -97896,16 +98857,10 @@
                         "act16d5_ex03",
                         "act16d5_ex03#f#",
                         "act16d5_ex05",
-                        "act16d5_ex05",
-                        "act16d5_ex05#f#",
                         "act16d5_ex05#f#",
                         "act16d5_ex06",
-                        "act16d5_ex06",
-                        "act16d5_ex06#f#",
                         "act16d5_ex06#f#",
                         "act16d5_ex07",
-                        "act16d5_ex07",
-                        "act16d5_ex07#f#",
                         "act16d5_ex07#f#",
                         "act16d5_ex08",
                         "act16d5_ex08#f#"
@@ -98832,6 +99787,11 @@
                     "RA#2 Field : Battle": [
                         "sandbox_1_18"
                     ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_29"
+                    ]
                 }
             }
         },
@@ -99213,9 +100173,6 @@
             "sidestory": {
                 "act32side": {
                     "act32side_zone2": [
-                        "act32side_mo01",
-                        "act32side_mo01",
-                        "act32side_mo01",
                         "act32side_mo01"
                     ]
                 },
@@ -99238,7 +100195,6 @@
                         "act13d5_03",
                         "act13d5_06",
                         "act13d5_07",
-                        "act13d5_07",
                         "act13d5_08"
                     ],
                     "act7sre_zone2": [
@@ -99258,9 +100214,6 @@
             "campaign": {
                 "camp_r_01": {
                     "camp_r_01": [
-                        "camp_r_01",
-                        "camp_r_01",
-                        "camp_r_01",
                         "camp_r_01"
                     ]
                 }
@@ -99514,7 +100467,6 @@
                         "rogue5_b-9-e"
                     ],
                     "IS#6 Treasure": [
-                        "rogue5_t-2",
                         "rogue5_t-2",
                         "rogue5_t-4",
                         "rogue5_t-9-a",
@@ -100049,6 +101001,15 @@
                         "sandbox_1_20",
                         "sandbox_1_22"
                     ]
+                },
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_23"
+                    ],
+                    "Unexploited Mine": [
+                        "sandbox_2_26"
+                    ]
                 }
             }
         },
@@ -100074,6 +101035,15 @@
                 "RA#2": {
                     "RA#2 Field : Battle": [
                         "sandbox_1_20"
+                    ]
+                },
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_23"
+                    ],
+                    "Unexploited Mine": [
+                        "sandbox_2_26"
                     ]
                 }
             }
@@ -100246,8 +101216,6 @@
                         "act39side_ex03",
                         "act39side_ex03#f#",
                         "act39side_ex04",
-                        "act39side_ex04",
-                        "act39side_ex04#f#",
                         "act39side_ex04#f#"
                     ]
                 }
@@ -100358,6 +101326,17 @@
                     ],
                     "IS#7 ro6_s_1": [
                         "rogue6_s-1"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Vibrant Swamp": [
+                        "sandbox_2_09"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -101207,6 +102186,18 @@
                 "IS#4": {
                     "IS#4 Floor 5": [
                         "rogue3_b-4-b"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -102141,7 +103132,6 @@
             "cc": {
                 "CCBP#05": {
                     "CCBP#05": [
-                        "crisis_v2_05-05",
                         "crisis_v2_05-05"
                     ]
                 }
@@ -102347,7 +103337,6 @@
             "cc": {
                 "CCBP#05": {
                     "CCBP#05": [
-                        "crisis_v2_05-05",
                         "crisis_v2_05-05"
                     ]
                 }
@@ -102363,6 +103352,13 @@
                     ],
                     "IS#7 ro6_c_7": [
                         "rogue6_c-7"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Unexploited Mine": [
+                        "sandbox_2_26"
                     ]
                 }
             }
@@ -103348,6 +104344,11 @@
                         "RA#2_normal_tutorial",
                         "RA#2_normal_tutorial"
                     ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_29"
+                    ]
                 }
             },
             "fun": {
@@ -103873,6 +104874,13 @@
                         "rogue6_d-2"
                     ]
                 }
+            },
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_18"
+                    ]
+                }
             }
         },
         "enemy_10083_hlbird_2": {
@@ -104113,8 +105121,6 @@
                 "IS#7": {
                     "IS#7 Floor 3": [
                         "rogue6_3-6",
-                        "rogue6_3-6",
-                        "rogue6_3-6_dlc1",
                         "rogue6_3-6_dlc1"
                     ],
                     "IS#7 Duel": [
@@ -104278,6 +105284,18 @@
                         "rogue6_4-8_dlc1"
                     ]
                 }
+            },
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
             }
         },
         "enemy_10095_crgst_2": {
@@ -104404,7 +105422,6 @@
             "cc": {
                 "CCBP#05": {
                     "CCBP#05": [
-                        "crisis_v2_05-03",
                         "crisis_v2_05-03"
                     ]
                 }
@@ -104514,7 +105531,6 @@
             "cc": {
                 "CCBP#05": {
                     "CCBP#05": [
-                        "crisis_v2_05-03",
                         "crisis_v2_05-03"
                     ]
                 }
@@ -104566,7 +105582,6 @@
             "cc": {
                 "CCBP#04": {
                     "CCBP#04": [
-                        "crisis_v2_04-01",
                         "crisis_v2_04-01"
                     ]
                 }
@@ -104681,6 +105696,15 @@
                 "RA#2": {
                     "RA#2 Field : Battle": [
                         "sandbox_1_100"
+                    ]
+                },
+                "RA#3": {
+                    "Vibrant Swamp": [
+                        "sandbox_2_09"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -105330,6 +106354,16 @@
                         "RA#2_rally_group2",
                         "RA#2_rally_group2"
                     ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
                 }
             }
         },
@@ -105518,7 +106552,6 @@
                         "rogue5_sv-5"
                     ],
                     "IS#6 ro5_sv_5_dlc1": [
-                        "rogue5_sv-5_dlc1",
                         "rogue5_sv-5_dlc1"
                     ]
                 }
@@ -105635,7 +106668,6 @@
             "is": {
                 "IS#5": {
                     "IS#5 Treasure": [
-                        "rogue4_t-5",
                         "rogue4_t-5"
                     ]
                 }
@@ -105939,8 +106971,6 @@
                         "act30side_ex06",
                         "act30side_ex06#f#",
                         "act30side_ex08",
-                        "act30side_ex08",
-                        "act30side_ex08#f#",
                         "act30side_ex08#f#"
                     ]
                 }
@@ -108313,7 +109343,6 @@
             "cc": {
                 "CCBP#04": {
                     "CCBP#04": [
-                        "crisis_v2_04-03",
                         "crisis_v2_04-03"
                     ]
                 }
@@ -108526,7 +109555,6 @@
             "cc": {
                 "CCBP#04": {
                     "CCBP#04": [
-                        "crisis_v2_04-03",
                         "crisis_v2_04-03"
                     ]
                 }
@@ -108654,6 +109682,16 @@
                 "RA#2": {
                     "RA#2 Field : Food Material": [
                         "sandbox_1_99"
+                    ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -109625,6 +110663,19 @@
                         "act2multi_raft"
                     ]
                 }
+            },
+            "ra": {
+                "RA#3": {
+                    "Vibrant Swamp": [
+                        "sandbox_2_10"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
             }
         },
         "enemy_4048_mubarn_2": {
@@ -110434,7 +111485,6 @@
                 "tower_n_18": {
                     "tower_n_18": [
                         "lt_18_03",
-                        "lt_18_03",
                         "lt_18_04"
                     ]
                 },
@@ -110856,6 +111906,11 @@
                         "sandbox_1_23",
                         "sandbox_1_98"
                     ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_19"
+                    ]
                 }
             }
         },
@@ -111078,6 +112133,18 @@
                         "rogue6_d-2"
                     ]
                 }
+            },
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_19"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
             }
         },
         "enemy_10066_ftxjl": {
@@ -111226,6 +112293,14 @@
                     "RA#2 Field : Food Material": [
                         "sandbox_1_13"
                     ]
+                },
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_04"
+                    ],
+                    "Vibrant Swamp": [
+                        "sandbox_2_08"
+                    ]
                 }
             }
         },
@@ -111364,6 +112439,13 @@
                     ],
                     "RA#2 Field : Food Material": [
                         "sandbox_1_102"
+                    ]
+                },
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -111984,7 +113066,6 @@
             "is": {
                 "IS#5": {
                     "IS#5 Floor 5": [
-                        "rogue4_5-9",
                         "rogue4_5-9"
                     ]
                 },
@@ -112005,13 +113086,11 @@
                 "act45side": {
                     "act45side_zone1": [
                         "act45side_tr01",
-                        "act45side_tr01",
                         "act45side_01",
                         "act45side_02",
                         "act45side_04",
                         "act45side_06",
                         "act45side_07",
-                        "act45side_08",
                         "act45side_08"
                     ]
                 }
@@ -112092,8 +113171,6 @@
                 "act45side": {
                     "act45side_zone2": [
                         "act45side_ex01",
-                        "act45side_ex01",
-                        "act45side_ex01#f#",
                         "act45side_ex01#f#",
                         "act45side_ex02",
                         "act45side_ex02#f#",
@@ -112538,6 +113615,15 @@
                         "act44side_sp03"
                     ]
                 }
+            },
+            "ra": {
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
             }
         },
         "enemy_10111_ymgpck": {
@@ -112602,6 +113688,15 @@
                 "IS#7": {
                     "IS#7 Duel": [
                         "rogue6_d-1"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -112786,8 +113881,6 @@
                 "act19mini": {
                     "act19mini_zone1": [
                         "act19mini_01",
-                        "act19mini_01",
-                        "act19mini_01#f#",
                         "act19mini_01#f#",
                         "act19mini_02",
                         "act19mini_02#f#"
@@ -112796,18 +113889,13 @@
                 "act16mini": {
                     "act16mini_zone1": [
                         "act16mini_06",
-                        "act16mini_06",
-                        "act16mini_06#f#",
                         "act16mini_06#f#"
                     ]
                 },
                 "act16d5": {
                     "act9sre_zone1": [
                         "act16d5_07",
-                        "act16d5_07",
                         "act16d5_08",
-                        "act16d5_08",
-                        "act16d5_10",
                         "act16d5_10"
                     ]
                 }
@@ -112815,7 +113903,6 @@
             "exp": {
                 "act1arcade": {
                     "zone_1": [
-                        "act1arcade_m1_03",
                         "act1arcade_m1_03"
                     ]
                 }
@@ -112845,7 +113932,6 @@
             "is": {
                 "IS#6": {
                     "IS#6 Floor 5": [
-                        "rogue5_5-1",
                         "rogue5_5-1"
                     ]
                 }
@@ -112862,10 +113948,7 @@
                 "act16d5": {
                     "act9sre_zone1": [
                         "act16d5_02",
-                        "act16d5_02",
                         "act16d5_03",
-                        "act16d5_03",
-                        "act16d5_09",
                         "act16d5_09"
                     ]
                 }
@@ -113024,8 +114107,6 @@
                 "act19mini": {
                     "act19mini_zone1": [
                         "act19mini_04",
-                        "act19mini_04",
-                        "act19mini_04#f#",
                         "act19mini_04#f#"
                     ]
                 },
@@ -113039,7 +114120,6 @@
             "campaign": {
                 "camp_r_26": {
                     "camp_r_26": [
-                        "camp_r_26",
                         "camp_r_26"
                     ]
                 }
@@ -113806,34 +114886,22 @@
                 "act13mini": {
                     "act13mini_zone1": [
                         "act13mini_06",
-                        "act13mini_06",
-                        "act13mini_06#f#",
                         "act13mini_06#f#"
                     ]
                 },
                 "act16d5": {
                     "act9sre_zone2": [
                         "act16d5_ex01",
-                        "act16d5_ex01",
-                        "act16d5_ex01#f#",
                         "act16d5_ex01#f#",
                         "act16d5_ex02",
-                        "act16d5_ex02",
-                        "act16d5_ex02#f#",
                         "act16d5_ex02#f#",
                         "act16d5_ex03",
                         "act16d5_ex03#f#",
                         "act16d5_ex04",
-                        "act16d5_ex04",
-                        "act16d5_ex04#f#",
                         "act16d5_ex04#f#",
                         "act16d5_ex05",
-                        "act16d5_ex05",
-                        "act16d5_ex05#f#",
                         "act16d5_ex05#f#",
                         "act16d5_ex07",
-                        "act16d5_ex07",
-                        "act16d5_ex07#f#",
                         "act16d5_ex07#f#",
                         "act16d5_ex08",
                         "act16d5_ex08#f#"
@@ -113890,8 +114958,6 @@
                 "act13mini": {
                     "act13mini_zone1": [
                         "act13mini_06",
-                        "act13mini_06",
-                        "act13mini_06#f#",
                         "act13mini_06#f#"
                     ]
                 },
@@ -113906,8 +114972,6 @@
                         "act16d5_ex02",
                         "act16d5_ex02#f#",
                         "act16d5_ex07",
-                        "act16d5_ex07",
-                        "act16d5_ex07#f#",
                         "act16d5_ex07#f#",
                         "act16d5_ex08",
                         "act16d5_ex08#f#"
@@ -113936,7 +115000,6 @@
                 },
                 "IS#6": {
                     "IS#6 Floor 5": [
-                        "rogue5_b-4",
                         "rogue5_b-4"
                     ],
                     "IS#6 Floor 6": [
@@ -113958,8 +115021,6 @@
                 "act19mini": {
                     "act19mini_zone1": [
                         "act19mini_08",
-                        "act19mini_08",
-                        "act19mini_08#f#",
                         "act19mini_08#f#"
                     ]
                 },
@@ -114517,8 +115578,6 @@
             "tn": {
                 "act5bossrush": {
                     "act5bossrush_zone1": [
-                        "act5bossrush_04",
-                        "act5bossrush_04",
                         "act5bossrush_04"
                     ]
                 }
@@ -114526,20 +115585,6 @@
             "is": {
                 "IS#3": {
                     "IS#3 Floor 6": [
-                        "rogue2_b-7",
-                        "rogue2_b-7",
-                        "rogue2_b-7",
-                        "rogue2_b-7",
-                        "rogue2_b-7",
-                        "rogue2_b-7",
-                        "rogue2_b-7",
-                        "rogue2_b-7",
-                        "rogue2_b-7",
-                        "rogue2_b-7",
-                        "rogue2_b-7",
-                        "rogue2_b-7",
-                        "rogue2_b-7",
-                        "rogue2_b-7",
                         "rogue2_b-7"
                     ]
                 }
@@ -114812,7 +115857,6 @@
             "cc": {
                 "CCBP#05": {
                     "CCBP#05": [
-                        "crisis_v2_05-03",
                         "crisis_v2_05-03"
                     ]
                 }
@@ -114845,7 +115889,6 @@
             "cc": {
                 "CCBP#05": {
                     "CCBP#05": [
-                        "crisis_v2_05-03",
                         "crisis_v2_05-03"
                     ]
                 }
@@ -114867,6 +115910,18 @@
                         "rogue6_4-8_dlc1"
                     ]
                 }
+            },
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
             }
         },
         "enemy_10100_crrol": {
@@ -114880,7 +115935,6 @@
             "cc": {
                 "CCBP#05": {
                     "CCBP#05": [
-                        "crisis_v2_05-03",
                         "crisis_v2_05-03"
                     ]
                 }
@@ -116163,6 +117217,14 @@
                         "rogue6_t-9-b"
                     ]
                 }
+            },
+            "ra": {
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_23"
+                    ]
+                }
             }
         },
         "enemy_10086_hltigr": {
@@ -117187,6 +118249,13 @@
                         "rogue4_t-3"
                     ]
                 }
+            },
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_28"
+                    ]
+                }
             }
         },
         "enemy_1183_mlasrt_3": {
@@ -117666,6 +118735,16 @@
                     "RA#2 Field : Food Material": [
                         "sandbox_1_99"
                     ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
                 }
             }
         },
@@ -117769,6 +118848,11 @@
                 "RA#2": {
                     "RA#2 Field : Food Material": [
                         "sandbox_1_54"
+                    ]
+                },
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_04"
                     ]
                 }
             }
@@ -119905,7 +120989,6 @@
             "tn": {
                 "act4bossrush": {
                     "act4bossrush_zone1": [
-                        "act4bossrush_04",
                         "act4bossrush_04"
                     ]
                 }
@@ -119913,16 +120996,10 @@
             "sidestory": {
                 "act15side": {
                     "act15sre_zone1": [
-                        "act15side_09",
-                        "act15side_09",
                         "act15side_09"
                     ],
                     "act15sre_zone2": [
                         "act15side_ex08",
-                        "act15side_ex08",
-                        "act15side_ex08",
-                        "act15side_ex08#f#",
-                        "act15side_ex08#f#",
                         "act15side_ex08#f#"
                     ]
                 }
@@ -120110,7 +121187,6 @@
             "coop": {
                 "act1multi": {
                     "act1multi_zone1": [
-                        "act1multi_hard-03",
                         "act1multi_hard-03"
                     ]
                 }
@@ -120185,7 +121261,6 @@
                 },
                 "CCBP#01": {
                     "CCBP#01": [
-                        "crisis_v2_01-07",
                         "crisis_v2_01-07"
                     ]
                 },
@@ -120815,11 +121890,6 @@
             "sidestory": {
                 "act41side": {
                     "act41sre_zone1": [
-                        "act41side_07",
-                        "act41side_07",
-                        "act41side_07",
-                        "act41side_07",
-                        "act41side_07",
                         "act41side_07"
                     ]
                 }
@@ -120827,21 +121897,12 @@
             "is": {
                 "IS#6": {
                     "IS#6 Floor 1": [
-                        "rogue5_1-5",
                         "rogue5_1-5"
                     ]
                 },
                 "IS#7": {
                     "IS#7 Floor 4": [
                         "rogue6_4-7",
-                        "rogue6_4-7",
-                        "rogue6_4-7",
-                        "rogue6_4-7",
-                        "rogue6_4-7",
-                        "rogue6_4-7_dlc1",
-                        "rogue6_4-7_dlc1",
-                        "rogue6_4-7_dlc1",
-                        "rogue6_4-7_dlc1",
                         "rogue6_4-7_dlc1"
                     ]
                 }
@@ -120976,7 +122037,6 @@
                         "act40side_06",
                         "act40side_07",
                         "act40side_08",
-                        "act40side_09",
                         "act40side_09"
                     ],
                     "act40sre_zone2": [
@@ -120995,8 +122055,6 @@
                         "act40side_ex07",
                         "act40side_ex07#f#",
                         "act40side_ex08",
-                        "act40side_ex08",
-                        "act40side_ex08#f#",
                         "act40side_ex08#f#"
                     ],
                     "act40sre_zone3": [
@@ -121007,8 +122065,6 @@
                         "act40side_s03",
                         "act40side_s03#f#",
                         "act40side_s04",
-                        "act40side_s04",
-                        "act40side_s04#f#",
                         "act40side_s04#f#",
                         "act40side_mo01"
                     ]
@@ -121390,10 +122446,6 @@
             "sidestory": {
                 "act40side": {
                     "act40sre_zone1": [
-                        "act40side_07",
-                        "act40side_07",
-                        "act40side_07",
-                        "act40side_07",
                         "act40side_07"
                     ]
                 }
@@ -121685,38 +122737,14 @@
                 "act40side": {
                     "act40sre_zone2": [
                         "act40side_ex04",
-                        "act40side_ex04",
-                        "act40side_ex04",
-                        "act40side_ex04#f#",
-                        "act40side_ex04#f#",
                         "act40side_ex04#f#",
                         "act40side_ex08",
-                        "act40side_ex08",
-                        "act40side_ex08",
-                        "act40side_ex08",
-                        "act40side_ex08",
-                        "act40side_ex08",
-                        "act40side_ex08#f#",
-                        "act40side_ex08#f#",
-                        "act40side_ex08#f#",
-                        "act40side_ex08#f#",
-                        "act40side_ex08#f#",
                         "act40side_ex08#f#"
                     ],
                     "act40sre_zone3": [
                         "act40side_s01",
-                        "act40side_s01",
-                        "act40side_s01",
-                        "act40side_s01#f#",
-                        "act40side_s01#f#",
                         "act40side_s01#f#",
                         "act40side_s03",
-                        "act40side_s03",
-                        "act40side_s03",
-                        "act40side_s03",
-                        "act40side_s03#f#",
-                        "act40side_s03#f#",
-                        "act40side_s03#f#",
                         "act40side_s03#f#",
                         "act40side_mo01"
                     ]
@@ -121734,8 +122762,6 @@
                     ],
                     "act40sre_zone3": [
                         "act40side_s01",
-                        "act40side_s01",
-                        "act40side_s01#f#",
                         "act40side_s01#f#",
                         "act40side_s03",
                         "act40side_s03#f#",
@@ -121836,7 +122862,6 @@
                         "act27side_03",
                         "act27side_05",
                         "act27side_08",
-                        "act27side_08",
                         "act27side_sp01",
                         "act27side_sp02",
                         "act27side_sp03"
@@ -121921,33 +122946,21 @@
             "sidestory": {
                 "act15side": {
                     "act15sre_zone1": [
-                        "act15side_01",
                         "act15side_01"
                     ]
                 },
                 "act16d5": {
                     "act9sre_zone1": [
                         "act16d5_01",
-                        "act16d5_01",
-                        "act16d5_tr01",
-                        "act16d5_tr01",
                         "act16d5_tr01",
                         "act16d5_02",
-                        "act16d5_02",
                         "act16d5_03",
-                        "act16d5_03",
-                        "act16d5_04",
                         "act16d5_04",
                         "act16d5_05",
                         "act16d5_06",
-                        "act16d5_06",
-                        "act16d5_07",
                         "act16d5_07",
                         "act16d5_08",
-                        "act16d5_08",
                         "act16d5_09",
-                        "act16d5_09",
-                        "act16d5_10",
                         "act16d5_10"
                     ]
                 }
@@ -122122,10 +123135,7 @@
                 "act1arcade": {
                     "zone_4": [
                         "act1arcade_m4_01",
-                        "act1arcade_m4_01",
                         "act1arcade_m4_02",
-                        "act1arcade_m4_02",
-                        "act1arcade_m4_03",
                         "act1arcade_m4_03"
                     ]
                 }
@@ -122263,7 +123273,6 @@
                 "act38side": {
                     "act38sre_zone1": [
                         "act38side_tr01",
-                        "act38side_tr01",
                         "act38side_01",
                         "act38side_02",
                         "act38side_03",
@@ -122380,8 +123389,6 @@
                         "act38side_ex05",
                         "act38side_ex05#f#",
                         "act38side_ex06",
-                        "act38side_ex06",
-                        "act38side_ex06#f#",
                         "act38side_ex06#f#",
                         "act38side_ex07",
                         "act38side_ex07#f#",
@@ -122775,14 +123782,10 @@
                 "act37side": {
                     "act37sre_zone2": [
                         "act37side_ex01",
-                        "act37side_ex01",
-                        "act37side_ex01#f#",
                         "act37side_ex01#f#",
                         "act37side_ex02",
                         "act37side_ex02#f#",
                         "act37side_ex03",
-                        "act37side_ex03",
-                        "act37side_ex03#f#",
                         "act37side_ex03#f#",
                         "act37side_ex04",
                         "act37side_ex04#f#",
@@ -122803,8 +123806,6 @@
                 "act37side": {
                     "act37sre_zone2": [
                         "act37side_ex01",
-                        "act37side_ex01",
-                        "act37side_ex01#f#",
                         "act37side_ex01#f#",
                         "act37side_ex02",
                         "act37side_ex02#f#",
@@ -122813,8 +123814,6 @@
                         "act37side_ex05",
                         "act37side_ex05#f#",
                         "act37side_ex06",
-                        "act37side_ex06",
-                        "act37side_ex06#f#",
                         "act37side_ex06#f#",
                         "act37side_ex08",
                         "act37side_ex08#f#"
@@ -122829,8 +123828,6 @@
                         "act37side_ex02",
                         "act37side_ex02#f#",
                         "act37side_ex03",
-                        "act37side_ex03",
-                        "act37side_ex03#f#",
                         "act37side_ex03#f#",
                         "act37side_ex04",
                         "act37side_ex04#f#",
@@ -123460,6 +124457,12 @@
                         "RA#2_normal_tutorial",
                         "RA#2_normal_tutorial"
                     ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_18",
+                        "sandbox_2_29"
+                    ]
                 }
             }
         },
@@ -123499,6 +124502,18 @@
                         "act36side_ex06#f#",
                         "act36side_ex07",
                         "act36side_ex07#f#"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Unexploited Mine": [
+                        "sandbox_2_13"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -124045,6 +125060,11 @@
                         "RA#2_monthly_2",
                         "RA#2_monthly_2"
                     ]
+                },
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_03"
+                    ]
                 }
             }
         },
@@ -124058,22 +125078,14 @@
                 "act24side": {
                     "act24sre_zone2": [
                         "act24side_ex01",
-                        "act24side_ex01",
-                        "act24side_ex01",
-                        "act24side_ex01#f#",
-                        "act24side_ex01#f#",
                         "act24side_ex01#f#",
                         "act24side_ex02",
                         "act24side_ex02#f#",
                         "act24side_ex03",
-                        "act24side_ex03",
-                        "act24side_ex03#f#",
                         "act24side_ex03#f#",
                         "act24side_ex04",
                         "act24side_ex04#f#",
                         "act24side_ex05",
-                        "act24side_ex05",
-                        "act24side_ex05#f#",
                         "act24side_ex05#f#"
                     ]
                 }
@@ -124081,7 +125093,6 @@
             "sss": {
                 "tower_n_17": {
                     "tower_n_17": [
-                        "lt_17_03",
                         "lt_17_03"
                     ]
                 }
@@ -124095,15 +125106,12 @@
                         "rogue5_sv-13"
                     ],
                     "IS#6 ro5_sv_14": [
-                        "rogue5_sv-14",
                         "rogue5_sv-14"
                     ]
                 },
                 "IS#7": {
                     "IS#7 Floor 3": [
                         "rogue6_3-2",
-                        "rogue6_3-2",
-                        "rogue6_3-2_dlc1",
                         "rogue6_3-2_dlc1"
                     ]
                 }
@@ -124306,7 +125314,6 @@
             "sidestory": {
                 "act34side": {
                     "act34sre_zone1": [
-                        "act34side_09",
                         "act34side_09"
                     ]
                 }
@@ -124847,6 +125854,11 @@
                         "RA#2_elite_group8",
                         "RA#2_elite_group8",
                         "RA#2_elite_group8"
+                    ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_29"
                     ]
                 }
             },
@@ -125465,8 +126477,6 @@
                 "act13mini": {
                     "act13mini_zone1": [
                         "act13mini_06",
-                        "act13mini_06",
-                        "act13mini_06#f#",
                         "act13mini_06#f#"
                     ]
                 },
@@ -125481,24 +126491,14 @@
                         "act16d5_ex01",
                         "act16d5_ex01#f#",
                         "act16d5_ex02",
-                        "act16d5_ex02",
-                        "act16d5_ex02#f#",
                         "act16d5_ex02#f#",
                         "act16d5_ex04",
-                        "act16d5_ex04",
-                        "act16d5_ex04#f#",
                         "act16d5_ex04#f#",
                         "act16d5_ex05",
-                        "act16d5_ex05",
-                        "act16d5_ex05#f#",
                         "act16d5_ex05#f#",
                         "act16d5_ex06",
-                        "act16d5_ex06",
-                        "act16d5_ex06#f#",
                         "act16d5_ex06#f#",
                         "act16d5_ex07",
-                        "act16d5_ex07",
-                        "act16d5_ex07#f#",
                         "act16d5_ex07#f#",
                         "act16d5_ex08",
                         "act16d5_ex08#f#"
@@ -125592,8 +126592,6 @@
                 "act16d5": {
                     "act9sre_zone1": [
                         "act16d5_03",
-                        "act16d5_03",
-                        "act16d5_04",
                         "act16d5_04",
                         "act16d5_08"
                     ]
@@ -125624,7 +126622,6 @@
                 },
                 "act16d5": {
                     "act9sre_zone1": [
-                        "act16d5_06",
                         "act16d5_06"
                     ]
                 }
@@ -125703,8 +126700,6 @@
                     ],
                     "act30sre_zone2": [
                         "act30side_ex08",
-                        "act30side_ex08",
-                        "act30side_ex08#f#",
                         "act30side_ex08#f#"
                     ]
                 }
@@ -125937,7 +126932,6 @@
                 "act29side": {
                     "act29sre_zone1": [
                         "act29side_06",
-                        "act29side_09",
                         "act29side_09"
                     ]
                 }
@@ -125945,7 +126939,6 @@
             "campaign": {
                 "camp_r_27": {
                     "camp_r_27": [
-                        "camp_r_27",
                         "camp_r_27"
                     ]
                 }
@@ -125983,7 +126976,6 @@
             "sidestory": {
                 "act29side": {
                     "act29sre_zone1": [
-                        "act29side_09",
                         "act29side_09"
                     ]
                 }
@@ -125992,6 +126984,18 @@
                 "camp_r_27": {
                     "camp_r_27": [
                         "camp_r_27"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -126027,6 +127031,18 @@
                     "IS#5 Floor 5": [
                         "rogue4_b-4",
                         "rogue4_b-4-c"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -126068,6 +127084,18 @@
                 "camp_r_27": {
                     "camp_r_27": [
                         "camp_r_27"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -126136,6 +127164,18 @@
                         "camp_r_27"
                     ]
                 }
+            },
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
             }
         },
         "enemy_1379_ltncdt_2": {
@@ -126145,12 +127185,8 @@
                         "act29side_ex01",
                         "act29side_ex01#f#",
                         "act29side_ex04",
-                        "act29side_ex04",
-                        "act29side_ex04#f#",
                         "act29side_ex04#f#",
                         "act29side_ex07",
-                        "act29side_ex07",
-                        "act29side_ex07#f#",
                         "act29side_ex07#f#"
                     ],
                     "act29sre_zone3": [
@@ -126204,6 +127240,18 @@
                         "camp_r_27"
                     ]
                 }
+            },
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
             }
         },
         "enemy_1375_ltnclr_2": {
@@ -126235,6 +127283,18 @@
                 "camp_r_27": {
                     "camp_r_27": [
                         "camp_r_27"
+                    ]
+                }
+            },
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -126276,26 +127336,18 @@
                 "act29side": {
                     "act29sre_zone2": [
                         "act29side_ex05",
-                        "act29side_ex05",
-                        "act29side_ex05#f#",
                         "act29side_ex05#f#",
                         "act29side_ex06",
-                        "act29side_ex06",
-                        "act29side_ex06#f#",
                         "act29side_ex06#f#",
                         "act29side_ex07",
                         "act29side_ex07#f#",
                         "act29side_ex08",
-                        "act29side_ex08",
-                        "act29side_ex08#f#",
                         "act29side_ex08#f#"
                     ],
                     "act29sre_zone3": [
                         "act29side_s02",
                         "act29side_s02#f#",
                         "act29side_s04",
-                        "act29side_s04",
-                        "act29side_s04#f#",
                         "act29side_s04#f#"
                     ]
                 }
@@ -127061,7 +128113,6 @@
             "sidestory": {
                 "act26side": {
                     "act26sre_zone1": [
-                        "act26side_08",
                         "act26side_08"
                     ],
                     "act26sre_zone2": [
@@ -127157,20 +128208,12 @@
                 "act24side": {
                     "act24sre_zone1": [
                         "act24side_01",
-                        "act24side_01",
-                        "act24side_01",
                         "act24side_02",
-                        "act24side_02",
-                        "act24side_03",
                         "act24side_03",
                         "act24side_04",
                         "act24side_05",
-                        "act24side_05",
                         "act24side_06",
                         "act24side_08",
-                        "act24side_08",
-                        "act24side_09",
-                        "act24side_09",
                         "act24side_09"
                     ]
                 }
@@ -127178,15 +128221,11 @@
             "is": {
                 "IS#4": {
                     "IS#4 Floor 1": [
-                        "rogue3_1-4",
                         "rogue3_1-4"
                     ]
                 },
                 "IS#6": {
                     "IS#6 Floor 2": [
-                        "rogue5_2-2",
-                        "rogue5_2-2",
-                        "rogue5_2-2",
                         "rogue5_2-2"
                     ],
                     "IS#6 Floor 3": [
@@ -127213,7 +128252,6 @@
                 "act24side": {
                     "act24sre_zone1": [
                         "act24side_tr01",
-                        "act24side_tr01",
                         "act24side_09"
                     ],
                     "act24sre_zone2": [
@@ -127229,9 +128267,6 @@
                 "act24side": {
                     "act24sre_zone1": [
                         "act24side_04",
-                        "act24side_04",
-                        "act24side_04",
-                        "act24side_06",
                         "act24side_06",
                         "act24side_07"
                     ],
@@ -127247,8 +128282,6 @@
                 "act24side": {
                     "act24sre_zone2": [
                         "act24side_ex01",
-                        "act24side_ex01",
-                        "act24side_ex01#f#",
                         "act24side_ex01#f#",
                         "act24side_ex02",
                         "act24side_ex02#f#",
@@ -127293,6 +128326,11 @@
                         "RA#2_monthly_2",
                         "RA#2_monthly_2"
                     ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_19"
+                    ]
                 }
             }
         },
@@ -127301,8 +128339,6 @@
                 "act24side": {
                     "act24sre_zone2": [
                         "act24side_ex04",
-                        "act24side_ex04",
-                        "act24side_ex04#f#",
                         "act24side_ex04#f#",
                         "act24side_ex06",
                         "act24side_ex06#f#",
@@ -127728,8 +128764,6 @@
                 "act15d5": {
                     "act15d5_zone1": [
                         "act15d5_06",
-                        "act15d5_06",
-                        "act15d5_06#f#",
                         "act15d5_06#f#"
                     ]
                 },
@@ -127752,7 +128786,6 @@
             "campaign": {
                 "camp_r_01": {
                     "camp_r_01": [
-                        "camp_r_01",
                         "camp_r_01"
                     ]
                 }
@@ -129876,6 +130909,11 @@
                     "RA#2 Field : Building Material": [
                         "sandbox_1_101"
                     ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_29"
+                    ]
                 }
             },
             "fun": {
@@ -129972,8 +131010,6 @@
             "sss": {
                 "tower_n_05": {
                     "tower_n_05": [
-                        "lt_05_06",
-                        "lt_05_06",
                         "lt_05_06"
                     ]
                 }
@@ -130501,6 +131537,13 @@
                         "lt_03_08"
                     ]
                 }
+            },
+            "ra": {
+                "RA#3": {
+                    "Unexploited Mine": [
+                        "sandbox_2_15"
+                    ]
+                }
             }
         },
         "enemy_6009_nlkgtbs": {
@@ -130534,20 +131577,6 @@
                 "act17d1": {
                     "act17d1": [
                         "act17d1_02_a",
-                        "act17d1_02_a",
-                        "act17d1_02_a",
-                        "act17d1_02_a",
-                        "act17d1_02_a",
-                        "act17d1_02_a",
-                        "act17d1_02_a",
-                        "act17d1_02_a",
-                        "act17d1_02_b",
-                        "act17d1_02_b",
-                        "act17d1_02_b",
-                        "act17d1_02_b",
-                        "act17d1_02_b",
-                        "act17d1_02_b",
-                        "act17d1_02_b",
                         "act17d1_02_b"
                     ]
                 }
@@ -130557,13 +131586,6 @@
             "coop": {
                 "act17d1": {
                     "act17d1": [
-                        "act17d1_02_c",
-                        "act17d1_02_c",
-                        "act17d1_02_c",
-                        "act17d1_02_c",
-                        "act17d1_02_c",
-                        "act17d1_02_c",
-                        "act17d1_02_c",
                         "act17d1_02_c"
                     ]
                 }
@@ -130785,6 +131807,15 @@
                 "RA#2": {
                     "RA#2 Field : Battle": [
                         "sandbox_1_23"
+                    ]
+                },
+                "RA#3": {
+                    "Vibrant Swamp": [
+                        "sandbox_2_09"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -131137,7 +132168,6 @@
                 "IS#4": {
                     "IS#4 Floor 5": [
                         "rogue3_b-4",
-                        "rogue3_b-4-b",
                         "rogue3_b-4-b"
                     ]
                 }
@@ -131814,7 +132844,6 @@
                     ],
                     "IS#5 Floor 3": [
                         "rogue4_3-8",
-                        "rogue4_3-8",
                         "rogue4_b-2",
                         "rogue4_b-2-b",
                         "rogue4_b-2-c"
@@ -131833,9 +132862,7 @@
                         "rogue4_5-7",
                         "rogue4_5-8",
                         "rogue4_b-4",
-                        "rogue4_b-4",
                         "rogue4_b-4-b",
-                        "rogue4_b-4-c",
                         "rogue4_b-4-c",
                         "rogue4_b-4-d"
                     ],
@@ -131868,7 +132895,6 @@
                         "rogue4_5-9"
                     ],
                     "IS#5  ???": [
-                        "rogue4_b-8",
                         "rogue4_b-8",
                         "rogue4_b-9"
                     ]
@@ -131999,7 +133025,6 @@
                         "rogue4_2-6"
                     ],
                     "IS#5 Floor 4": [
-                        "rogue4_4-6",
                         "rogue4_4-6"
                     ],
                     "IS#5 Floor 6": [
@@ -132211,7 +133236,6 @@
                 "IS#5": {
                     "IS#5  ???": [
                         "rogue4_b-8",
-                        "rogue4_b-8",
                         "rogue4_b-9"
                     ]
                 }
@@ -132232,17 +133256,6 @@
                 "IS#5": {
                     "IS#5  ???": [
                         "rogue4_b-8",
-                        "rogue4_b-8",
-                        "rogue4_b-8",
-                        "rogue4_b-8",
-                        "rogue4_b-8",
-                        "rogue4_b-8",
-                        "rogue4_b-8",
-                        "rogue4_b-8",
-                        "rogue4_b-8",
-                        "rogue4_b-8",
-                        "rogue4_b-8",
-                        "rogue4_b-8",
                         "rogue4_b-9"
                     ]
                 }
@@ -132252,13 +133265,6 @@
             "is": {
                 "IS#5": {
                     "IS#5  ???": [
-                        "rogue4_b-8",
-                        "rogue4_b-8",
-                        "rogue4_b-8",
-                        "rogue4_b-8",
-                        "rogue4_b-8",
-                        "rogue4_b-8",
-                        "rogue4_b-8",
                         "rogue4_b-8",
                         "rogue4_b-9"
                     ]
@@ -133591,14 +134597,10 @@
                 "IS#6": {
                     "IS#6 Floor 5": [
                         "rogue5_b-4",
-                        "rogue5_b-4",
-                        "rogue5_b-4-b",
                         "rogue5_b-4-b"
                     ],
                     "IS#6  ???": [
                         "rogue5_b-9-a",
-                        "rogue5_b-9-a",
-                        "rogue5_b-9-e",
                         "rogue5_b-9-e"
                     ]
                 }
@@ -133702,19 +134704,11 @@
                 "IS#6": {
                     "IS#6  ???": [
                         "rogue5_b-9-a",
-                        "rogue5_b-9-a",
-                        "rogue5_b-9-b",
                         "rogue5_b-9-b",
                         "rogue5_b-9-c",
-                        "rogue5_b-9-c",
-                        "rogue5_b-9-d",
                         "rogue5_b-9-d",
                         "rogue5_b-9-e",
-                        "rogue5_b-9-e",
                         "rogue5_b-10",
-                        "rogue5_b-10",
-                        "rogue5_b-10",
-                        "rogue5_b-10-b",
                         "rogue5_b-10-b"
                     ]
                 }
@@ -133871,11 +134865,6 @@
                     "IS#7 Floor 2": [
                         "rogue6_2-2",
                         "rogue6_2-3",
-                        "rogue6_2-3",
-                        "rogue6_2-3",
-                        "rogue6_2-3",
-                        "rogue6_2-3",
-                        "rogue6_2-6",
                         "rogue6_2-6"
                     ],
                     "IS#7 Floor 3": [
@@ -133883,23 +134872,15 @@
                         "rogue6_3-2",
                         "rogue6_3-4",
                         "rogue6_3-6",
-                        "rogue6_3-6",
                         "rogue6_3-7",
                         "rogue6_b-1-b",
-                        "rogue6_b-1-b",
-                        "rogue6_b-2",
-                        "rogue6_b-2",
                         "rogue6_b-2",
                         "rogue6_3-1_dlc1",
                         "rogue6_3-2_dlc1",
                         "rogue6_3-4_dlc1",
                         "rogue6_3-6_dlc1",
-                        "rogue6_3-6_dlc1",
                         "rogue6_3-7_dlc1",
                         "rogue6_b-1-b_dlc1",
-                        "rogue6_b-1-b_dlc1",
-                        "rogue6_b-2_dlc1",
-                        "rogue6_b-2_dlc1",
                         "rogue6_b-2_dlc1"
                     ],
                     "IS#7 Floor 4": [
@@ -133908,22 +134889,12 @@
                     ],
                     "IS#7 Floor 5": [
                         "rogue6_5-3",
-                        "rogue6_5-3",
-                        "rogue6_5-3",
-                        "rogue6_5-3",
-                        "rogue6_b-4-b",
-                        "rogue6_b-4-b",
                         "rogue6_b-4-b",
                         "rogue6_b-5-b",
-                        "rogue6_5-3_dlc1",
-                        "rogue6_5-3_dlc1",
-                        "rogue6_5-3_dlc1",
                         "rogue6_5-3_dlc1"
                     ],
                     "IS#7 Floor 6": [
                         "rogue6_6-2",
-                        "rogue6_b-6",
-                        "rogue6_b-6",
                         "rogue6_b-6"
                     ],
                     "IS#7 Floor 7": [
@@ -133932,13 +134903,8 @@
                     "IS#7 Treasure": [
                         "rogue6_t-2",
                         "rogue6_t-4",
-                        "rogue6_t-4",
-                        "rogue6_t-4",
-                        "rogue6_t-4",
-                        "rogue6_t-4",
                         "rogue6_t-6",
                         "rogue6_t-8-c",
-                        "rogue6_t-12",
                         "rogue6_t-12",
                         "rogue6_c-7"
                     ],
@@ -134299,8 +135265,6 @@
                 "IS#7": {
                     "IS#7 Floor 5": [
                         "rogue6_b-4",
-                        "rogue6_b-4-b",
-                        "rogue6_b-4-b",
                         "rogue6_b-4-b"
                     ]
                 }
@@ -134507,6 +135471,16 @@
                         "RA#2_elite_group6",
                         "RA#2_elite_group6"
                     ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_16"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
                 }
             }
         },
@@ -134561,6 +135535,16 @@
                         "RA#2_event_3",
                         "RA#2_event_3"
                     ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
                 }
             }
         },
@@ -134604,6 +135588,31 @@
                     "RA#2 Field : Building Material": [
                         "sandbox_1_17"
                     ]
+                },
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_03",
+                        "sandbox_2_04"
+                    ],
+                    "Vibrant Swamp": [
+                        "sandbox_2_06"
+                    ],
+                    "Unexploited Mine": [
+                        "sandbox_2_11",
+                        "sandbox_2_12",
+                        "sandbox_2_14"
+                    ],
+                    "Abandoned Plate": [
+                        "sandbox_2_16",
+                        "sandbox_2_17",
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
                 }
             }
         },
@@ -134630,6 +135639,31 @@
                     ],
                     "RA#2 Field : Building Material": [
                         "sandbox_1_17"
+                    ]
+                },
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_03",
+                        "sandbox_2_04"
+                    ],
+                    "Vibrant Swamp": [
+                        "sandbox_2_06"
+                    ],
+                    "Unexploited Mine": [
+                        "sandbox_2_11",
+                        "sandbox_2_12",
+                        "sandbox_2_14"
+                    ],
+                    "Abandoned Plate": [
+                        "sandbox_2_16",
+                        "sandbox_2_17",
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -134660,6 +135694,26 @@
                     "RA#2 Field : Building Material": [
                         "sandbox_1_17"
                     ]
+                },
+                "RA#3": {
+                    "Vibrant Swamp": [
+                        "sandbox_2_06"
+                    ],
+                    "Unexploited Mine": [
+                        "sandbox_2_12"
+                    ],
+                    "Abandoned Plate": [
+                        "sandbox_2_17",
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ],
+                    "Green Valley": [
+                        "sandbox_2_24"
+                    ]
                 }
             }
         },
@@ -134687,6 +135741,26 @@
                     "RA#2 Field : Building Material": [
                         "sandbox_1_16",
                         "sandbox_1_17"
+                    ]
+                },
+                "RA#3": {
+                    "Vibrant Swamp": [
+                        "sandbox_2_06"
+                    ],
+                    "Unexploited Mine": [
+                        "sandbox_2_12"
+                    ],
+                    "Abandoned Plate": [
+                        "sandbox_2_17",
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ],
+                    "Green Valley": [
+                        "sandbox_2_24"
                     ]
                 }
             }
@@ -134736,6 +135810,16 @@
                     "RA#2 Boss Rushparty": [
                         "RA#2_dva_group",
                         "RA#2_dva_group"
+                    ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_16"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -134883,6 +135967,20 @@
                         "sandbox_1_13",
                         "sandbox_1_106"
                     ]
+                },
+                "RA#3": {
+                    "Vibrant Swamp": [
+                        "sandbox_2_09"
+                    ],
+                    "Unexploited Mine": [
+                        "sandbox_2_13"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
                 }
             }
         },
@@ -134958,6 +136056,11 @@
                         "RA#2_elite_group8",
                         "RA#2_elite_group8"
                     ]
+                },
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_29"
+                    ]
                 }
             }
         },
@@ -135011,7 +136114,6 @@
                     ],
                     "RA#2 Field : Battle": [
                         "sandbox_1_80",
-                        "sandbox_1_80",
                         "sandbox_1_85"
                     ],
                     "RA#2 Normal Rushparty": [
@@ -135044,6 +136146,16 @@
                         "RA#2_ghking_group",
                         "RA#2_ghking_group",
                         "RA#2_ghking_group"
+                    ]
+                },
+                "RA#3": {
+                    "Unexploited Mine": [
+                        "sandbox_2_12"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
                     ]
                 }
             }
@@ -135092,6 +136204,11 @@
                     ],
                     "RA#2 Insect Rushparty": [
                         "RA#2_insect_4"
+                    ]
+                },
+                "RA#3": {
+                    "Unexploited Mine": [
+                        "sandbox_2_15"
                     ]
                 }
             }
@@ -135430,6 +136547,11 @@
                     "RA#2 Field : Building Material": [
                         "sandbox_1_101"
                     ]
+                },
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_24"
+                    ]
                 }
             }
         },
@@ -135575,6 +136697,273 @@
                         "RA#2_thief_group3",
                         "RA#2_thief_group3",
                         "RA#2_thief_group3"
+                    ]
+                }
+            }
+        },
+        "enemy_7067_xbcrag": {
+            "ra": {
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_01",
+                        "sandbox_2_02",
+                        "sandbox_2_05"
+                    ],
+                    "Vibrant Swamp": [
+                        "sandbox_2_06",
+                        "sandbox_2_08"
+                    ],
+                    "Unexploited Mine": [
+                        "sandbox_2_11",
+                        "sandbox_2_14"
+                    ],
+                    "Abandoned Plate": [
+                        "sandbox_2_17",
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
+            }
+        },
+        "enemy_7084_xbbles": {
+            "ra": {
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_02",
+                        "sandbox_2_25"
+                    ],
+                    "Vibrant Swamp": [
+                        "sandbox_2_07",
+                        "sandbox_2_08",
+                        "sandbox_2_10"
+                    ],
+                    "Unexploited Mine": [
+                        "sandbox_2_12"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
+            }
+        },
+        "enemy_7066_xbpffr": {
+            "ra": {
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_02",
+                        "sandbox_2_25"
+                    ],
+                    "Vibrant Swamp": [
+                        "sandbox_2_07",
+                        "sandbox_2_08",
+                        "sandbox_2_10"
+                    ],
+                    "Unexploited Mine": [
+                        "sandbox_2_12"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
+            }
+        },
+        "enemy_7071_xbfiry": {
+            "ra": {
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_04"
+                    ],
+                    "Unexploited Mine": [
+                        "sandbox_2_12",
+                        "sandbox_2_13"
+                    ],
+                    "Abandoned Plate": [
+                        "sandbox_2_16",
+                        "sandbox_2_18"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
+            }
+        },
+        "enemy_7069_xbtrkg": {
+            "ra": {
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_05"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_23"
+                    ]
+                }
+            }
+        },
+        "enemy_7065_xbpnst": {
+            "ra": {
+                "RA#3": {
+                    "Green Valley": [
+                        "sandbox_2_05"
+                    ],
+                    "Vibrant Swamp": [
+                        "sandbox_2_07",
+                        "sandbox_2_08",
+                        "sandbox_2_09",
+                        "sandbox_2_10"
+                    ],
+                    "Unexploited Mine": [
+                        "sandbox_2_11",
+                        "sandbox_2_14"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
+            }
+        },
+        "enemy_7068_xbchst": {
+            "ra": {
+                "RA#3": {
+                    "Vibrant Swamp": [
+                        "sandbox_2_09"
+                    ],
+                    "Unexploited Mine": [
+                        "sandbox_2_14"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
+            }
+        },
+        "enemy_7070_xbrckg": {
+            "ra": {
+                "RA#3": {
+                    "Vibrant Swamp": [
+                        "sandbox_2_09"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
+            }
+        },
+        "enemy_7084_xbbles_2": {
+            "ra": {
+                "RA#3": {
+                    "Vibrant Swamp": [
+                        "sandbox_2_10"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_23"
+                    ]
+                }
+            }
+        },
+        "enemy_7072_xbfrog": {
+            "ra": {
+                "RA#3": {
+                    "Vibrant Swamp": [
+                        "sandbox_2_10"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_20",
+                        "sandbox_2_23"
+                    ]
+                }
+            }
+        },
+        "enemy_7074_xbtamr": {
+            "ra": {
+                "RA#3": {
+                    "Unexploited Mine": [
+                        "sandbox_2_12"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
+            }
+        },
+        "enemy_7073_xblcst": {
+            "ra": {
+                "RA#3": {
+                    "Unexploited Mine": [
+                        "sandbox_2_15"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
+            }
+        },
+        "enemy_7075_xbthdr": {
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_19"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
+            }
+        },
+        "enemy_7076_xbthrd": {
+            "ra": {
+                "RA#3": {
+                    "Abandoned Plate": [
+                        "sandbox_2_19"
+                    ],
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ]
+                }
+            }
+        },
+        "enemy_7077_xbicdg": {
+            "ra": {
+                "RA#3": {
+                    "Undeveloped Area": [
+                        "sandbox_2_21",
+                        "sandbox_2_22",
+                        "sandbox_2_23"
+                    ],
+                    "Unexploited Mine": [
+                        "sandbox_2_27"
                     ]
                 }
             }

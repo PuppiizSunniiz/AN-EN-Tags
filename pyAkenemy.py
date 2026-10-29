@@ -287,7 +287,7 @@ def enemy_ability_list(json_Database : dict, json_DatabaseEN : dict, json_Handbo
 # Stage Lister
 ################################################################################################################################################################################################################################################
 
-def Stage_Lister(stage_event : str, stage_code : str, stage_name : str, stage_id : str, level_id : str, stage_zone : str, stage_filepath : str, extra = "") -> int :
+def Stage_Lister(stage_event : str, stage_code : str, stage_name : str, stage_id : str, level_id : str, stage_zone : str, stage_filepath : str | list, extra = "") -> int :
     '''
     
     Collects stage, enemy, and akenemy data for a given stage event.
@@ -315,7 +315,7 @@ def Stage_Lister(stage_event : str, stage_code : str, stage_name : str, stage_id
     },
     '''
     ### Prep Variable
-    level_id        = level_id.split("gamedata/levels/")[-1]
+    level_id        = (level_id.split("gamedata/levels/")[-1] if isinstance(level_id, str) else [id.split("gamedata/levels/")[-1] for id in level_id])
     stage_name      = f'{stage_name} (Boss)' if re.search(r'rogue[0-9]{0,2}_[b]-', stage_id) else stage_name
     stage_event     = "1stact" if stage_event == "a001" else stage_event
     stage_zone      = main_zone(stage_id,stage_zone) if stage_event.find("main") != -1 else (stage_event if stage_zone == "act2vmulti_zone1" else stage_zone)
@@ -342,12 +342,18 @@ def Stage_Lister(stage_event : str, stage_code : str, stage_name : str, stage_id
 
     def Stage_Lister_enemy() :
     ### Enemy Collect
-        stageforenemylist = json_load(stage_filepath)
-        for enemy in stageforenemylist["enemyDbRefs"]:
-            enemy_id = enemy["id"]
-            if enemy["overwrittenData"]: 
-                enemy_id = enemy["overwrittenData"]["prefabKey"]["m_value"] if enemy["overwrittenData"]["prefabKey"]["m_defined"] else enemy["id"]
-            stage_collection["enemy"].setdefault(enemy_id,{}).setdefault(get_stage_gamemode(stage_event),{}).setdefault(stage_event,{}).setdefault(stage_zone,[]).append(stage_id)
+        stage_paths = [stage_filepath] if isinstance(stage_filepath, str) else stage_filepath
+        
+        for filepath in stage_paths:
+            stageforenemylist = json_load(filepath)
+            for enemy in stageforenemylist["enemyDbRefs"]:
+                enemy_id = enemy["id"]
+                if enemy["overwrittenData"]: 
+                    enemy_id = enemy["overwrittenData"]["prefabKey"]["m_value"] if enemy["overwrittenData"]["prefabKey"]["m_defined"] else enemy["id"]
+                gamemode = get_stage_gamemode(stage_event)
+                stage_collection["enemy"].setdefault(enemy_id,{}).setdefault(gamemode,{}).setdefault(stage_event,{}).setdefault(stage_zone,[])
+                enemy_zone = stage_collection["enemy"][enemy_id][gamemode][stage_event][stage_zone]
+                if stage_id not in enemy_zone: enemy_zone.append(stage_id)
 
     
     def Stage_Lister_Akenemy():
@@ -363,7 +369,7 @@ def Stage_Lister(stage_event : str, stage_code : str, stage_name : str, stage_id
         akenemy_activity[stage_event]["zone"].setdefault(stage_zone, {"name":"","stage":{}})
         
         if stage_id not in akenemy_activity[stage_event]["zone"][stage_zone]["stage"] :
-            if stage_event in ["act17d1"] or (stage_gamemode in ["cc","is","ra","campaign"] and stage_event != "act42d0"):
+            if stage_event in ["act17d1"] or (stage_gamemode in ["cc","is","campaign"] and stage_event != "act42d0") or (stage_gamemode == "ra" and stage_code == stage_id):
                 display_name = stage_name
             elif stage_id.find("tough") != -1 or stage_id.find("easy") != -1:
                 display_name = f'{stage_code} : {stage_name} <b>({stage_zone.split(" ")[2]})</b>'
@@ -849,36 +855,69 @@ def RA_stage_collect(json_RA1EN, json_RA2, json_RA2EN): #
     RA0_rush([rushparty for rushgroup in Rushgroup_config for rushparty in Rushgroup_config[rushgroup]])
     
 ### RA#2 and maybe more ???
-    for RAseason in json_RA2["detail"]["SANDBOX_V2"].keys():
-        stage_event = f'RA#{int(RAseason[-1])+1}'
+    for RAseason in json_RA2["basicInfo"].keys():
+        stage_event = f'RA#{int(RAseason.split("sandbox_")[-1])+1}'
         @decorator
-        def RA_main(RA_stages):
+        def RA_main(RA_detail):
         #### Map Stage
             stage_counter = 0
-            for RAstage in RA_stages.keys():
-                #stage_name = RA_stages[RAstage]["name"]
-                try:
-                    stage_name = json_RA2EN["detail"]["SANDBOX_V2"][RAseason]["stageData"][RAstage]["name"]
-                except:
-                    stage_name = RA_stages[RAstage]["name"]
-                
-                stage_preview = json_RA2["detail"]["SANDBOX_V2"][RAseason]["rewardConfigData"]["stageMapPreviewRewardDict"]
-                
-                stagepath = f'json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/{RA_stages[RAstage]["levelId"].lower()}.json'
-                
-                if RAstage in stage_preview:
-                    match stage_preview[RAstage]["rewardList"][0]["rewardType"]:
-                        case "BUILDINGMAT" :
-                            stage_zone = f'{stage_event} Field : Building Material'
-                        case "FOODMAT":
-                            stage_zone = f'{stage_event} Field : Food Material'
-                        case _ :
-                            print(RAstage)
-                            stage_zone = f'{stage_event} Field : ???'
-                else :
-                    stage_zone = f'{stage_event} Field : Battle'
-                
-                stage_counter += Stage_Lister(stage_event, RAstage, stage_name, RAstage, stagepath, stage_zone, stagepath)
+            if topicTemplate == "SANDBOX_V2":
+                for RAstage in RA_detail["stageData"].keys():
+                    try:
+                        stage_name = json_RA2EN["detail"][topicTemplate][RAseason]["stageData"][RAstage]["name"]
+                    except:
+                        stage_name = RA_detail["stageData"][RAstage]["name"]
+                    
+                    stagepath = f'json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/{RA_detail["stageData"][RAstage]["levelId"].lower()}.json'
+                    stage_preview = json_RA2["detail"][topicTemplate][RAseason]["rewardConfigData"]["stageMapPreviewRewardDict"]
+                    if RAstage in stage_preview:
+                        match stage_preview[RAstage]["rewardList"][0]["rewardType"]:
+                            case "BUILDINGMAT" :
+                                stage_zone = f'{stage_event} Field : Building Material'
+                            case "FOODMAT":
+                                stage_zone = f'{stage_event} Field : Food Material'
+                            case _ :
+                                print(RAstage)
+                                stage_zone = f'{stage_event} Field : ???'
+                    else :
+                        stage_zone = f'{stage_event} Field : Battle'
+                    stage_counter += Stage_Lister(stage_event, RAstage, stage_name, RAstage, stagepath, stage_zone, stagepath)
+            
+            elif topicTemplate == "SANDBOX_V3":
+                for _, node in RA_detail["mainMapData"]["nodes"].items():
+                    RAstage = node["stageId"]
+                    if not RAstage : continue
+                    stage_code = RA_detail["stageData"][RAstage]["code"]
+                    try:
+                        stage_name = json_RA2EN["detail"][topicTemplate][RAseason]["stageData"][RAstage]["name"]
+                        stage_zone = json_RA2EN["detail"][topicTemplate][RAseason]["mainMapData"]["zones"][node["zoneId"]]["name"]
+                    except:
+                        stage_name = RA_detail["stageData"][RAstage]["name"]
+                        stage_zone = RA_detail["mainMapData"]["zones"][node["zoneId"]]["name"]
+                    
+                    stagepath = []
+                    match node["nodeType"]:
+                        case "STORY": 
+                            for subStageId in RA_detail["storyStageData"][RAstage]["subStageIdList"]:
+                                if subStageId:
+                                    stagepath.append(f'json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/{RA_detail["subStageData"][subStageId]["levelId"].lower()}.json')
+                        case "EXPLORE":
+                            subStagePoolId = RA_detail["exploreStageData"][RAstage]["subStagePoolId"]
+                            if subStagePoolId in RA_detail["randomMapPool"]:
+                                for element in RA_detail["randomMapPool"][subStagePoolId]["elements"].keys():
+                                    stagepath.append(f'json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/{RA_detail["subStageData"][element]["levelId"].lower()}.json')
+                            else:
+                                for pool in RA_detail["randomMapPool"]:
+                                    for element in RA_detail["randomMapPool"][pool]["elements"].keys():
+                                        stagepath.append(f'json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/{RA_detail["subStageData"][element]["levelId"].lower()}.json')
+                                stagepath = set(stagepath)
+                        case _:
+                            printr(f'Akenemy RA {RAseason} new nodeType {node["nodeType"]} for {topicTemplate}')
+                    stage_counter += Stage_Lister(stage_event, stage_code, stage_name, RAstage, stagepath, stage_zone, stagepath)
+            else :
+                printr(f'Akenemy RA new template {topicTemplate}')
+                exit()
+            
             return [stage_counter, f'{stage_event} Map']
         
         @decorator
@@ -888,10 +927,13 @@ def RA_stage_collect(json_RA1EN, json_RA2, json_RA2EN): #
             stage_counter += RA_rush_Lister(Rushgroup_config, stage_event)
             return [stage_counter, f'{stage_event} Rush Party']
         
-        Rushgroup_config = json_RA2["detail"]["SANDBOX_V2"][RAseason]["rushEnemyData"]["rushEnemyGroupConfigs"]
+        topicTemplate = json_RA2["basicInfo"][RAseason]["topicTemplate"]
         
-        RA_main(json_RA2["detail"]["SANDBOX_V2"][RAseason]["stageData"])
-        RA_rush([rushparty for rushgroup in Rushgroup_config for rushparty in Rushgroup_config[rushgroup]])
+        RA_main(json_RA2["detail"][topicTemplate][RAseason])
+        
+        if topicTemplate == "SANDBOX_V2":
+            Rushgroup_config = json_RA2["detail"]["SANDBOX_V2"][RAseason]["rushEnemyData"]["rushEnemyGroupConfigs"]
+            RA_rush([rushparty for rushgroup in Rushgroup_config for rushparty in Rushgroup_config[rushgroup]])
 
 def FUN_stage_collect(json_activity, json_activityEN):
     @decorator
@@ -971,91 +1013,91 @@ def activity_collect(Activityjson):
                 "nameCN"    : f'{DB["zone"]["zones"][act]["zoneNameSecond"]} ({stage_collection["zones"][act][0][:-2]})',
                 "nameEN"    : Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else (f'{stage_collection["zones"][act][0][:-2]} : {DB["zoneEN"]["zones"][act]["zoneNameSecond"]}' if act in DB["zoneEN"]["zones"].keys() else f'{stage_collection["zones"][act][0][:-2]} : {DB["zone"]["zones"][act]["zoneNameSecond"]}'),
                 "startCN"   : -1
-        }
+            }
         ## Annihilation
         elif act.find("camp") == 0 :
             activity_collection["Dict"][act] = {
                 "nameCN"    : DB["stage"]["stages"][act]["name"],
                 "nameEN"    : stage_collection["stages"][act]["name"],
                 "startCN"   : DB["campaign"]["campaignRotateStageOpenTimes"][int(act[-2:])-1]["startTs"] if act.find("_r_")!= -1 else -1
-        }
+            }
         ## SSS (lt)
         elif act.find("tower_") == 0 :
             activity_collection["Dict"][act] = {
                 "nameCN"    : DB["SSS"]["towers"][act]["name"] if act in DB["SSS"]["towers"].keys() else (Activityjson["Dict"][act]["nameCN"] if act in Activityjson["Dict"].keys() else None),
                 "nameEN"    : DB["SSSEN"]["towers"][act]["name"] if act in DB["SSSEN"]["towers"].keys() else (Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else (DB["SSS"]["towers"][act]["name"] if act in DB["SSS"]["towers"].keys() else None)),
                 "startCN"   : -1
-        }
+            }
         ## CC#Beta (act5d1)
         elif act == "CC#Beta" :
             activity_collection["Dict"][act] = {
                 "nameCN"    : activity_collection["Dict"]["act5d1"]["nameCN"],
                 "nameEN"    : f'{act} : {activity_collection["Dict"]["act5d1"]["nameEN"]}',
                 "startCN"   : activity_collection["Dict"]["act5d1"]["startCN"]
-        }
+            }
         ## CC Operation
         elif act.find("CC#") == 0 :
             activity_collection["Dict"][act] = {
                 "nameCN"    : DB["CC"]["seasonInfo"][int(act.split("CC#")[-1])]["name"],
                 "nameEN"    : f'{act} : {DB["CCEN"]["seasonInfo"][int(act.split("CC#")[-1])]["name"]}',
                 "startCN"   : DB["CC"]["seasonInfo"][int(act.split("CC#")[-1])]["startTs"]
-        }
+            }
         ## Pinch out (act38d1)
         elif act == "PinchOut" :
             activity_collection["Dict"][act] = {
                 "nameCN"    : activity_collection["Dict"]["act38d1"]["nameCN"],
                 "nameEN"    : activity_collection["Dict"]["act38d1"]["nameEN"],
                 "startCN"   : activity_collection["Dict"]["act38d1"]["startCN"]
-        }
+            }
         ## CC Battleplan
         elif act.find("CCBP#") == 0 :
             activity_collection["Dict"][act] = {
                 "nameCN"    : DB["CC2"]["seasonInfoDataMap"][f'crisis_v2_season_{int(act.split("CCBP#")[-1])}_1']["name"],
                 "nameEN"    : f'{act} : {DB["CC2EN"]["seasonInfoDataMap"]["crisis_v2_season_"+str(int(act.split("CCBP#")[-1]))+"_1"]["name"]}' if f'crisis_v2_season_{int(act.split("CCBP#")[-1])}_1' in DB["CC2EN"]["seasonInfoDataMap"].keys() else (Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else None),
                 "startCN"   : DB["CC2"]["seasonInfoDataMap"][f'crisis_v2_season_{int(act.split("CCBP#")[-1])}_1']["startTs"]
-        }
+            }
         ## IS#1 ("act12d6")
         elif act == "IS#1":
             activity_collection["Dict"][act] = {
                 "nameCN"    : activity_collection["Dict"]["act12d6"]["nameCN"],
                 "nameEN"    : f'{act} : {activity_collection["Dict"]["act12d6"]["nameEN"]}',
                 "startCN"   : activity_collection["Dict"]["act12d6"]["startCN"]
-        }
+            }
         ## IS#2 and later
         elif act.find("IS#") != -1:
             activity_collection["Dict"][act] = {
                 "nameCN"    : DB["IS"]["topics"][f'rogue_{int(act.split("#")[-1])-1}']["name"],
                 "nameEN"    : act+" : "+DB["ISEN"]["topics"][f'rogue_{int(act.split("#")[-1])-1}']["name"] if f'rogue_{int(act.split("#")[-1])-1}' in DB["ISEN"]["topics"].keys() else (Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else None),
                 "startCN"   : DB["IS"]["topics"][f'rogue_{int(act.split("#")[-1])-1}']["startTime"]
-        }
+            }
         ## RA#1 "act1sandbox"
         elif act == "RA#1":
             activity_collection["Dict"][act] = {
                 "nameCN"    : activity_collection["Dict"]["act1sandbox"]["nameCN"],
-                "nameEN"    : f'{act} : {activity_collection["Dict"]["act1sandbox"]["nameEN"]}',
+                "nameEN"    : Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else None,
                 "startCN"   : activity_collection["Dict"]["act1sandbox"]["startCN"]
-        }
+            }
         ## RA#2 and maybe later
         elif act.find("RA#") != -1:
             activity_collection["Dict"][act] = {
-                    "nameCN"    : DB["RA2"]["basicInfo"][f'sandbox_{int(act.split("#")[-1])-1}']["topicName"],
-                    "nameEN"    : Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else None, #f'{act} : {json_RA2EN["basicInfo"][f'sandbox_{int(act.split("#")[-1])-1}']["topicName"]}'
-                    "startCN"   : DB["RA2"]["basicInfo"][f'sandbox_{int(act.split("#")[-1])-1}']["topicStartTime"]
+                "nameCN"    : DB["RA2"]["basicInfo"][f'sandbox_{int(act.split("#")[-1])-1}']["topicName"],
+                "nameEN"    : Activityjson["Dict"][act]["nameEN"] if act in Activityjson["Dict"].keys() else None, #f'{act} : {json_RA2EN["basicInfo"][f'sandbox_{int(act.split("#")[-1])-1}']["topicName"]}'
+                "startCN"   : DB["RA2"]["basicInfo"][f'sandbox_{int(act.split("#")[-1])-1}']["topicStartTime"]
             }
         ## FUN / April Fool
         elif act.find("fun") != -1 or act == "act17d7":
             activity_collection["Dict"][act] = {
-                    "nameCN"    : DB["activity"]["basicInfo"][act]["name"],
-                    "nameEN"    : f"April Fools' Day Event {datetime.fromtimestamp(DB['activity']['basicInfo'][act]['startTime']).strftime('%Y')} (EN : {int(datetime.fromtimestamp(DB['activity']['basicInfo'][act]['startTime']).strftime('%Y')) + 1})",
-                    "startCN"   : DB["activity"]["basicInfo"][act]["startTime"]
+                "nameCN"    : DB["activity"]["basicInfo"][act]["name"],
+                "nameEN"    : f"April Fools' Day Event {datetime.fromtimestamp(DB['activity']['basicInfo'][act]['startTime']).strftime('%Y')} (EN : {int(datetime.fromtimestamp(DB['activity']['basicInfo'][act]['startTime']).strftime('%Y')) + 1})",
+                "startCN"   : DB["activity"]["basicInfo"][act]["startTime"]
             }
-            if activity_collection["Dict"][act]["startCN"] > 0 : timeline.append([act,activity_collection["Dict"][act]["nameEN"] if activity_collection["Dict"][act]["nameEN"] else activity_collection["Dict"][act]["nameCN"],activity_collection["Dict"][act]["startCN"]])
+        if activity_collection["Dict"][act]["startCN"] > 0 : timeline.append([act,activity_collection["Dict"][act]["nameEN"] if activity_collection["Dict"][act]["nameEN"] else activity_collection["Dict"][act]["nameCN"],activity_collection["Dict"][act]["startCN"]])
         ## Skip
         elif act in ["Mechanic"]:
             activity_collection["Dict"][act] = {
-                    "nameCN"    : "训练场",
-                    "nameEN"    : "Training Ground",
-                    "startCN"   : 1722484800
+                "nameCN"    : "训练场",
+                "nameEN"    : "Training Ground",
+                "startCN"   : 1722484800
             }
         
         if act in activity_collection["Dict"]:

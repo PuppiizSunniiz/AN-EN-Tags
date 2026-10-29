@@ -1342,13 +1342,18 @@
         },
         "RA#1": {
             "nameCN": "生息演算：沙中之火",
-            "nameEN": "RA#1 : Reclamation Algorithm - Fire Within the Sand",
+            "nameEN": "RA#1 : Fire Within the Sand",
             "startCN": 1674979200
         },
         "RA#2": {
             "nameCN": "沙洲遗闻",
-            "nameEN": "RA#2 : Reclamation Algorithm - Tales Within the Sand",
+            "nameEN": "RA#2 : Tales Within the Sand",
             "startCN": 1706929200
+        },
+        "RA#3": {
+            "nameCN": "重启锚点",
+            "nameEN": "RA#3 : Relaunch Anchor",
+            "startCN": 1778832000
         },
         "act3fun": {
             "nameCN": "愚人节活动",
@@ -1844,7 +1849,7 @@
         ],
         [
             "RA#1",
-            "RA#1 : Reclamation Algorithm - Fire Within the Sand",
+            "RA#1 : Fire Within the Sand",
             1674979200
         ],
         [
@@ -2024,7 +2029,7 @@
         ],
         [
             "RA#2",
-            "RA#2 : Reclamation Algorithm - Tales Within the Sand",
+            "RA#2 : Tales Within the Sand",
             1706929200
         ],
         [
@@ -2416,6 +2421,11 @@
             "camp_r_32",
             "Vermilion Restaurant",
             1777233600
+        ],
+        [
+            "RA#3",
+            "RA#3 : Relaunch Anchor",
+            1778832000
         ],
         [
             "act42sre",
