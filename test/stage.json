@@ -5408,6 +5408,94 @@
             "name": "Assault",
             "Event": "weekly_4"
         },
+        "act55side_tr01": {
+            "stageId": "act55side_tr01",
+            "levelId": "Activities/act55side/level_act55side_tr01",
+            "zoneId": "act55side_zone1",
+            "code": "TL-TR-1",
+            "name": "战争的艺术",
+            "Event": "act55side"
+        },
+        "act55side_01": {
+            "stageId": "act55side_01",
+            "levelId": "Activities/act55side/level_act55side_01",
+            "zoneId": "act55side_zone1",
+            "code": "TL-1",
+            "name": "庸俗的实践",
+            "Event": "act55side"
+        },
+        "act55side_02": {
+            "stageId": "act55side_02",
+            "levelId": "Activities/act55side/level_act55side_02",
+            "zoneId": "act55side_zone1",
+            "code": "TL-2",
+            "name": "孑遗的道路",
+            "Event": "act55side"
+        },
+        "act55side_03": {
+            "stageId": "act55side_03",
+            "levelId": "Activities/act55side/level_act55side_03",
+            "zoneId": "act55side_zone1",
+            "code": "TL-3",
+            "name": "苦难的历程",
+            "Event": "act55side"
+        },
+        "act55side_04": {
+            "stageId": "act55side_04",
+            "levelId": "Activities/act55side/level_act55side_04",
+            "zoneId": "act55side_zone1",
+            "code": "TL-4",
+            "name": "刻板的争论",
+            "Event": "act55side"
+        },
+        "act55side_05": {
+            "stageId": "act55side_05",
+            "levelId": "Activities/act55side/level_act55side_05",
+            "zoneId": "act55side_zone1",
+            "code": "TL-5",
+            "name": "轰鸣的沉默",
+            "Event": "act55side"
+        },
+        "act55side_06": {
+            "stageId": "act55side_06",
+            "levelId": "Activities/act55side/level_act55side_06",
+            "zoneId": "act55side_zone1",
+            "code": "TL-6",
+            "name": "元音的长度",
+            "Event": "act55side"
+        },
+        "act55side_07": {
+            "stageId": "act55side_07",
+            "levelId": "Activities/act55side/level_act55side_07",
+            "zoneId": "act55side_zone1",
+            "code": "TL-7",
+            "name": "滚烫的双眸",
+            "Event": "act55side"
+        },
+        "act55side_08": {
+            "stageId": "act55side_08",
+            "levelId": "Activities/act55side/level_act55side_08",
+            "zoneId": "act55side_zone1",
+            "code": "TL-8",
+            "name": "潮湿的火焰",
+            "Event": "act55side"
+        },
+        "act55side_09": {
+            "stageId": "act55side_09",
+            "levelId": "Activities/act55side/level_act55side_09",
+            "zoneId": "act55side_zone1",
+            "code": "TL-9",
+            "name": "自由的黄昏",
+            "Event": "act55side"
+        },
+        "act55side_10": {
+            "stageId": "act55side_10",
+            "levelId": "Activities/act55side/level_act55side_10",
+            "zoneId": "act55side_zone1",
+            "code": "TL-10",
+            "name": "活着的重量",
+            "Event": "act55side"
+        },
         "act1museum_m1_01": {
             "stageId": "act1museum_m1_01",
             "levelId": "Activities/ACT1MUSEUM/level_act1museum_m1_01",
@@ -34620,6 +34708,19 @@
             "pro_d_1",
             "pro_d_2"
         ],
+        "act55side_zone1": [
+            "act55side_tr01",
+            "act55side_01",
+            "act55side_02",
+            "act55side_03",
+            "act55side_04",
+            "act55side_05",
+            "act55side_06",
+            "act55side_07",
+            "act55side_08",
+            "act55side_09",
+            "act55side_10"
+        ],
         "act1museum_zone_1": [
             "act1museum_m1_01",
             "act1museum_m1_02",
@@ -39242,6 +39343,9 @@
         ],
         "weekly_4": [
             "weekly_4"
+        ],
+        "act55side": [
+            "act55side_zone1"
         ],
         "act1museum": [
             "act1museum_zone_1",
@@ -54336,6 +54440,25 @@
                     ]
                 }
             },
+            "sidestory": {
+                "act55side": {
+                    "act55side_zone1": [
+                        "act55side_10"
+                    ]
+                },
+                "act15mini": {
+                    "act15mini_zone1": [
+                        "act15mini_02",
+                        "act15mini_02#f#"
+                    ]
+                },
+                "act14mini": {
+                    "act14mini_zone1": [
+                        "act14mini_07",
+                        "act14mini_07#f#"
+                    ]
+                }
+            },
             "coop": {
                 "act2multi": {
                     "act2multi_zone1": [
@@ -54370,20 +54493,6 @@
                     "act1break_zone3": [
                         "act1break_sp15",
                         "act1break_sp16"
-                    ]
-                }
-            },
-            "sidestory": {
-                "act15mini": {
-                    "act15mini_zone1": [
-                        "act15mini_02",
-                        "act15mini_02#f#"
-                    ]
-                },
-                "act14mini": {
-                    "act14mini_zone1": [
-                        "act14mini_07",
-                        "act14mini_07#f#"
                     ]
                 }
             },
@@ -68999,6 +69108,175 @@
                         "RA#2_monthly_1",
                         "RA#2_monthly_1",
                         "RA#2_monthly_1"
+                    ]
+                }
+            }
+        },
+        "enemy_10253_dsjxb": {
+            "sidestory": {
+                "act55side": {
+                    "act55side_zone1": [
+                        "act55side_tr01",
+                        "act55side_01",
+                        "act55side_02",
+                        "act55side_03",
+                        "act55side_04",
+                        "act55side_05",
+                        "act55side_06",
+                        "act55side_07",
+                        "act55side_08",
+                        "act55side_09",
+                        "act55side_10"
+                    ]
+                }
+            }
+        },
+        "enemy_10254_dsjarc": {
+            "sidestory": {
+                "act55side": {
+                    "act55side_zone1": [
+                        "act55side_01",
+                        "act55side_02",
+                        "act55side_03",
+                        "act55side_04",
+                        "act55side_05",
+                        "act55side_08",
+                        "act55side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10256_dsjsld": {
+            "sidestory": {
+                "act55side": {
+                    "act55side_zone1": [
+                        "act55side_02",
+                        "act55side_03",
+                        "act55side_06"
+                    ]
+                }
+            }
+        },
+        "enemy_10262_dsjred": {
+            "sidestory": {
+                "act55side": {
+                    "act55side_zone1": [
+                        "act55side_03",
+                        "act55side_10"
+                    ]
+                }
+            }
+        },
+        "enemy_10263_dsjblk": {
+            "sidestory": {
+                "act55side": {
+                    "act55side_zone1": [
+                        "act55side_03",
+                        "act55side_10"
+                    ]
+                }
+            }
+        },
+        "enemy_10255_dsjmgc": {
+            "sidestory": {
+                "act55side": {
+                    "act55side_zone1": [
+                        "act55side_04"
+                    ]
+                }
+            }
+        },
+        "enemy_10257_dsjtsz": {
+            "sidestory": {
+                "act55side": {
+                    "act55side_zone1": [
+                        "act55side_05",
+                        "act55side_06",
+                        "act55side_08",
+                        "act55side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_10261_dsjcmd_2": {
+            "sidestory": {
+                "act55side": {
+                    "act55side_zone1": [
+                        "act55side_05"
+                    ]
+                }
+            }
+        },
+        "enemy_10258_dsjccs": {
+            "sidestory": {
+                "act55side": {
+                    "act55side_zone1": [
+                        "act55side_06",
+                        "act55side_07"
+                    ]
+                }
+            }
+        },
+        "enemy_10259_dsjpgg": {
+            "sidestory": {
+                "act55side": {
+                    "act55side_zone1": [
+                        "act55side_07"
+                    ]
+                }
+            }
+        },
+        "enemy_10261_dsjcmd": {
+            "sidestory": {
+                "act55side": {
+                    "act55side_zone1": [
+                        "act55side_08",
+                        "act55side_10"
+                    ]
+                }
+            }
+        },
+        "enemy_10260_dsjzds": {
+            "sidestory": {
+                "act55side": {
+                    "act55side_zone1": [
+                        "act55side_09"
+                    ]
+                }
+            }
+        },
+        "enemy_1602_blksnk": {
+            "sidestory": {
+                "act55side": {
+                    "act55side_zone1": [
+                        "act55side_10"
+                    ]
+                }
+            }
+        },
+        "enemy_1602_blksnk2": {
+            "sidestory": {
+                "act55side": {
+                    "act55side_zone1": [
+                        "act55side_10"
+                    ]
+                }
+            }
+        },
+        "enemy_1603_hlystp": {
+            "sidestory": {
+                "act55side": {
+                    "act55side_zone1": [
+                        "act55side_10"
+                    ]
+                }
+            }
+        },
+        "enemy_1603_hlystp2": {
+            "sidestory": {
+                "act55side": {
+                    "act55side_zone1": [
+                        "act55side_10"
                     ]
                 }
             }
