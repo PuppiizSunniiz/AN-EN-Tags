@@ -35,7 +35,26 @@
 ### Yet Another Wave
 - RIIC (Recycle)
 
+### Время в пути
+- Name
+    Talulah
+    Тоска - Toska (Fyodor)
+    Территория - Territoriâ (Dominion)
+    Ольга - Olʹga (Olga)
+    Caleido
+    Herdbells
+- Mod Trait
+    - Strategist X
+    - Tactician TAC-D
+    - Horn ISW-A
+- Trait
+    - Dispatcher (Herdbells)
+- Term
+    - ba.dt.rampage2
+
 ### To Do
+- SilverAsh the Reignfrost SPDYN fix (long long sword)
+
 - dropdown for AKHR type-in
 - Skin bar too long now (Ling)
 - handle Xiaohei cat

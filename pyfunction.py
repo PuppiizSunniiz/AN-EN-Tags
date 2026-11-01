@@ -28,6 +28,10 @@ URSUS : dict = {
                     "Укусик"        : "Ukusik",
                     
                     "Вий"           : "Viy",
+                    
+                    "Тоска"         : "Toska",
+                    "Территория"    : "Territoriâ",
+                    "Ольга"         : "Olʹga",
                 }
 
 def printr(*arg):

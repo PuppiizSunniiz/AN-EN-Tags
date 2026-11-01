@@ -1300,6 +1300,34 @@
             "note": "new mods RAN-X",
             "name": "char_4219_yukari",
             "code": "uniequip_002_yukari"
+        },
+        "开启技能后可以造成超远距离的群体物理伤害": {
+            "en": "",
+            "color": "physical",
+            "note": "new Ops \"dispatcher\" Archetype trait",
+            "name": "Herdbells",
+            "code": "char_4170_hdbell"
+        },
+        "在<@ba.kw>集成战略</>中，可以部署在目标点且可以攻击<$ba.invisible>隐匿</>敌人": {
+            "en": "",
+            "color": "extra",
+            "note": "new mods ISW-A",
+            "name": "char_4039_horn",
+            "code": "uniequip_004_horn"
+        },
+        "首次部署时，待部署区<@ba.kw>最左侧</>的干员部署费用<@ba.kw>-4</>": {
+            "en": "",
+            "color": "extra",
+            "note": "new mods CSR-X",
+            "name": "char_1045_svash2",
+            "code": "uniequip_002_svash2"
+        },
+        "自身与援军造成伤害时附带相当于<@ba.kw>12%</>伤害的<$ba.dt.erosion2>侵蚀损伤</>": {
+            "en": "",
+            "color": "extra",
+            "note": "new mods TAC-D",
+            "name": "char_249_mlyss",
+            "code": "uniequip_004_mlyss"
         }
     },
     "parts": [

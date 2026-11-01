@@ -868,7 +868,7 @@ def RA_stage_collect(json_RA1EN, json_RA2, json_RA2EN): #
                     except:
                         stage_name = RA_detail["stageData"][RAstage]["name"]
                     
-                    stagepath = f'json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/{RA_detail["stageData"][RAstage]["levelId"].lower()}.json'
+                    stage_path = f'json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/{RA_detail["stageData"][RAstage]["levelId"].lower()}.json'
                     stage_preview = json_RA2["detail"][topicTemplate][RAseason]["rewardConfigData"]["stageMapPreviewRewardDict"]
                     if RAstage in stage_preview:
                         match stage_preview[RAstage]["rewardList"][0]["rewardType"]:
@@ -881,7 +881,7 @@ def RA_stage_collect(json_RA1EN, json_RA2, json_RA2EN): #
                                 stage_zone = f'{stage_event} Field : ???'
                     else :
                         stage_zone = f'{stage_event} Field : Battle'
-                    stage_counter += Stage_Lister(stage_event, RAstage, stage_name, RAstage, stagepath, stage_zone, stagepath)
+                    stage_counter += Stage_Lister(stage_event, RAstage, stage_name, RAstage, stage_path, stage_zone, stage_path)
             
             elif topicTemplate == "SANDBOX_V3":
                 for _, node in RA_detail["mainMapData"]["nodes"].items():
@@ -910,10 +910,10 @@ def RA_stage_collect(json_RA1EN, json_RA2, json_RA2EN): #
                                 for pool in RA_detail["randomMapPool"]:
                                     for element in RA_detail["randomMapPool"][pool]["elements"].keys():
                                         stagepath.append(f'json/gamedata/ArknightsGameData/zh_CN/gamedata/levels/{RA_detail["subStageData"][element]["levelId"].lower()}.json')
-                                stagepath = set(stagepath)
                         case _:
                             printr(f'Akenemy RA {RAseason} new nodeType {node["nodeType"]} for {topicTemplate}')
-                    stage_counter += Stage_Lister(stage_event, stage_code, stage_name, RAstage, stagepath, stage_zone, stagepath)
+                    stage_path = sorted(set(stagepath))
+                    stage_counter += Stage_Lister(stage_event, stage_code, stage_name, RAstage, stage_path, stage_zone, stage_path)
             else :
                 printr(f'Akenemy RA new template {topicTemplate}')
                 exit()
@@ -1091,7 +1091,7 @@ def activity_collect(Activityjson):
                 "nameEN"    : f"April Fools' Day Event {datetime.fromtimestamp(DB['activity']['basicInfo'][act]['startTime']).strftime('%Y')} (EN : {int(datetime.fromtimestamp(DB['activity']['basicInfo'][act]['startTime']).strftime('%Y')) + 1})",
                 "startCN"   : DB["activity"]["basicInfo"][act]["startTime"]
             }
-        if activity_collection["Dict"][act]["startCN"] > 0 : timeline.append([act,activity_collection["Dict"][act]["nameEN"] if activity_collection["Dict"][act]["nameEN"] else activity_collection["Dict"][act]["nameCN"],activity_collection["Dict"][act]["startCN"]])
+            if activity_collection["Dict"][act]["startCN"] > 0 : timeline.append([act,activity_collection["Dict"][act]["nameEN"] if activity_collection["Dict"][act]["nameEN"] else activity_collection["Dict"][act]["nameCN"],activity_collection["Dict"][act]["startCN"]])
         ## Skip
         elif act in ["Mechanic"]:
             activity_collection["Dict"][act] = {

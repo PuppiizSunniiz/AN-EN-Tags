@@ -82,6 +82,7 @@
             "char_607_cspec": "Reserve Operator - Specialist",
             "char_272_strong": "Jaye",
             "char_236_rope": "Rope",
+            "char_4170_hdbell": "Herdbells",
             "char_117_myrrh": "Myrrh",
             "char_187_ccheal": "Gavial",
             "char_298_susuro": "Sussurro",
@@ -132,6 +133,7 @@
             "char_265_sophia": "Whislash",
             "char_4106_bryota": "Bryophyta",
             "char_4125_rdoc": "Doc",
+            "char_4245_alga": "Olʹga",
             "char_106_franka": "Franka",
             "char_131_flameb": "Flamebringer",
             "char_154_morgan": "Morgan",
@@ -252,6 +254,7 @@
             "char_464_cement": "Cement",
             "char_4148_philae": "Philae",
             "char_4225_tanya": "Crackborne",
+            "char_4169_caledo": "Caleido",
             "char_145_prove": "Provence",
             "char_4006_melnte": "Melanite",
             "char_158_milu": "Firewatch",
@@ -292,6 +295,7 @@
             "char_4223_botany": "Botani",
             "char_4219_yukari": "Yukari Takeba",
             "char_4234_pedro": "Pedro",
+            "char_4244_tocka": "Toska",
             "char_215_mantic": "Manticore",
             "char_478_kirara": "Kirara",
             "char_4186_tmoris": "Yahata Umiri",
@@ -388,6 +392,7 @@
             "char_474_glady": "Gladiia",
             "char_437_mizuki": "Mizuki",
             "char_4132_ascln": "Ascalon",
+            "char_4246_dminon": "Territoriâ",
             "char_1023_ghost2": "Specter the Unchained",
             "char_4217_makoto": "Makoto Yuki",
             "char_4048_doroth": "Dorothy",
@@ -452,6 +457,7 @@
             "char_4010_etlchi": "Entelechia",
             "char_4064_mlynar": "Młynar",
             "char_1043_leizi2": "Leizi the Thunderbringer",
+            "char_4247_oxi": "Talulah",
             "char_4231_clemnt": "Clementia",
             "char_4214_cairn": "Cairn",
             "char_230_savage": "Savage",
@@ -709,6 +715,9 @@
             "Rope": [
                 "char_236_rope"
             ],
+            "Herdbells": [
+                "char_4170_hdbell"
+            ],
             "Myrrh": [
                 "char_117_myrrh"
             ],
@@ -859,6 +868,9 @@
             ],
             "Doc": [
                 "char_4125_rdoc"
+            ],
+            "Olʹga": [
+                "char_4245_alga"
             ],
             "Franka": [
                 "char_106_franka"
@@ -1222,6 +1234,9 @@
             "Crackborne": [
                 "char_4225_tanya"
             ],
+            "Caleido": [
+                "char_4169_caledo"
+            ],
             "Provence": [
                 "char_145_prove"
             ],
@@ -1341,6 +1356,9 @@
             ],
             "Pedro": [
                 "char_4234_pedro"
+            ],
+            "Toska": [
+                "char_4244_tocka"
             ],
             "Manticore": [
                 "char_215_mantic"
@@ -1619,6 +1637,9 @@
             "Ascalon": [
                 "char_4132_ascln"
             ],
+            "Territoriâ": [
+                "char_4246_dminon"
+            ],
             "Specter the Unchained": [
                 "char_1023_ghost2"
             ],
@@ -1802,6 +1823,9 @@
             ],
             "Leizi the Thunderbringer": [
                 "char_1043_leizi2"
+            ],
+            "Talulah": [
+                "char_4247_oxi"
             ],
             "Clementia": [
                 "char_4231_clemnt"
@@ -2081,6 +2105,9 @@
             "暗索": [
                 "char_236_rope"
             ],
+            "行铃": [
+                "char_4170_hdbell"
+            ],
             "末药": [
                 "char_117_myrrh"
             ],
@@ -2228,6 +2255,9 @@
             ],
             "医生": [
                 "char_4125_rdoc"
+            ],
+            "奥尔佳": [
+                "char_4245_alga"
             ],
             "芙兰卡": [
                 "char_106_franka"
@@ -2593,6 +2623,9 @@
             "裂响": [
                 "char_4225_tanya"
             ],
+            "镜匠": [
+                "char_4169_caledo"
+            ],
             "普罗旺斯": [
                 "char_145_prove"
             ],
@@ -2712,6 +2745,9 @@
             ],
             "佩德洛": [
                 "char_4234_pedro"
+            ],
+            "冻河": [
+                "char_4244_tocka"
             ],
             "狮蝎": [
                 "char_215_mantic"
@@ -2992,6 +3028,9 @@
             "阿斯卡纶": [
                 "char_4132_ascln"
             ],
+            "国度": [
+                "char_4246_dminon"
+            ],
             "归溟幽灵鲨": [
                 "char_1023_ghost2"
             ],
@@ -3177,6 +3216,9 @@
             ],
             "司霆惊蛰": [
                 "char_1043_leizi2"
+            ],
+            "塔露拉": [
+                "char_4247_oxi"
             ],
             "克莱门莎": [
                 "char_4231_clemnt"
@@ -3696,6 +3738,10 @@
         "b-2": [
             "🟦🟨🟦",
             "[[-1, 0], [0, 0], [1, 0]]"
+        ],
+        "b-3": [
+            "🟦🟦🟨🟦🟦",
+            "[[-2, 0], [-1, 0], [0, 0], [1, 0], [2, 0]]"
         ]
     }
 }

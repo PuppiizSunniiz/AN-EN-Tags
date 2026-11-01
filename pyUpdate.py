@@ -82,6 +82,7 @@ NEW_CHARS : list[str] = [
                             "Angelina the Mellow Wish", "Thumpy", "Jacinta", "Timeslot", 
                             "Makoto Yuki", "Aegis", "Yukari Takeba", "Koromaru", 
                             "Clementia", "de Toledo", "Homebound", 
+                            "Talulah", "Toska", "Territoriâ", "Olʹga", "Caleido", "Herdbells", 
                         ] # "", 
 
 #["ItemID#1","ItemID#2", ...]
@@ -361,11 +362,11 @@ for i in range(6):
 with open("json/tl-akhr.json", "w", encoding = "utf-8") as filepath :
     json.dump(json_akhr, filepath, indent = 4, ensure_ascii = False)
     
-with open("update/tl-talent.json", "w", encoding = "utf-8") as filepath :
-    json.dump(talent_tl, filepath, indent = 4, ensure_ascii = False)
+#with open("update/tl-talent.json", "w", encoding = "utf-8") as filepath :
+#    json.dump(talent_tl, filepath, indent = 4, ensure_ascii = False)
 
-with open("update/tl-skill.json", "w", encoding = "utf-8") as filepath :
-    json.dump(skill_tl, filepath, indent = 4, ensure_ascii = False)
+#with open("update/tl-skill.json", "w", encoding = "utf-8") as filepath :
+#    json.dump(skill_tl, filepath, indent = 4, ensure_ascii = False)
 
 #########################################################################################################
 # Mats
@@ -514,8 +515,8 @@ for new_mod_list in NEW_MODS:
     except:
         skip_mod += f'\n\t{new_mod_list[0]} --- {new_mod_list[1]}'
 
-with open("update/tl-module.json", "w", encoding = "utf-8") as filepath :
-    json.dump(mod_tl, filepath, indent = 4, ensure_ascii = False)
+#with open("update/tl-module.json", "w", encoding = "utf-8") as filepath :
+#    json.dump(mod_tl, filepath, indent = 4, ensure_ascii = False)
 
 poplist = []
 for mod in json_temp_mod.keys():
@@ -680,6 +681,7 @@ sp_char_dict = {
                     "š" : "s",  # Wiš'adel
                     "ū" : "u",  # Yūtenji Nyamu
                     "²" : "2",  # GALLUS²
+                    "ʹ" : "'",  # Olga (temp)
                 }
 
 def simple_name(char_name : str) -> str:
@@ -716,7 +718,7 @@ with open("json/puppiiz/char_names.json", "w", encoding = "utf-8") as filepath :
 for subclass in json_mod_table["subProfToProfDict"]:
     class_int = json_mod_table["subProfToProfDict"][subclass]
     if subclass not in json_subclass["list"][INT_CLASS[class_int]]:
-        json_subclass["list"][INT_CLASS][class_int].append(subclass)
+        json_subclass["list"][INT_CLASS[class_int]].append(subclass)
     if subclass not in json_subclass["subclass"]:
         json_subclass["subclass"][subclass] = {
                                                 "name": subclass.capitalize(),

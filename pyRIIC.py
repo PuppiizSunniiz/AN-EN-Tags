@@ -2,16 +2,21 @@ import json
 import re
 from pyfunction import printr, script_result, json_load, R, G, B, Y, RE
 
-def riic_tl_json(show : bool = False):
-    json_building   =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/building_data.json")
-    json_buildingEN =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/building_data.json")
+def riic_tl_json():
+    json_building       =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/building_data.json")
+    json_buildingEN     =   json_load("json/gamedata/ArknightsGameData_YoStar/en_US/gamedata/excel/building_data.json")
     
-    json_character  =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/character_table.json")
+    json_character      =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/character_table.json")
     
-    json_item_TL    =   json_load("json/tl-item.json")
-    json_term_effect=   json_load("json/named_effects.json")
+    json_mod_table      =   json_load("json/gamedata/ArknightsGameData/zh_CN/gamedata/excel/uniequip_table.json")
+    
+    json_item_TL        =   json_load("json/tl-item.json")
+    json_subclass       =   json_load("json/tl-subclass.json")
+    json_term_effect    =   json_load("json/named_effects.json")
     
     json_riicTL = {"buffs" : {}, "chars" : {char:{"buffChar":json_building["chars"][char]["buffChar"]} for char in json_building["chars"].keys()}}
+    
+    subProfDict = {v["subProfessionName"]:k for k,v in json_mod_table["subProfDict"].items()}
     
     def riic_en_dict() -> dict[str, str]:
         temp = {}
@@ -179,6 +184,14 @@ def riic_tl_json(show : bool = False):
                         match_faction_name  = riic_match_tl(match_faction_skill)
                         match_power         = desc_match.group(2)
                         return f'When this Operator is assigned to a Power Plant, if another <${match_faction_skill}><@cc.kw>{match_faction_name}</></> Operator is assigned to a Power Plant, drone charging speed <@cc.vup>{match_power}</>'
+                    # power_rec_spd_ext&tag[000] // char_4227_gallus
+                    re_power_rec_spd_ext__tag = r'^进驻发电站时，如果其他<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>进驻在发电站，则无人机充能速度<@cc\.vup>([\+0-9%]*)<\/>$'
+                    if re.match(re_power_rec_spd_ext__tag, desc_sub):
+                        desc_match          = re.match(re_power_rec_spd_ext__tag, desc_sub)
+                        match_tag_skill     = desc_match.group(1)
+                        match_tag_name      = riic_match_tl(match_tag_skill)
+                        match_power         = desc_match.group(2)
+                        return f'When this Operator is assigned to a Power Plant, if another <${match_tag_skill}><@cc.kw>{match_tag_name}</></> is assigned to a Power Plant, drone charging speed <@cc.vup>{match_power}</>'
                 case "manu":
                     # manu_formula_spd&bd[001] // char_1051_headb2
                     re_manu_formula_spd__bd = r'^进驻制造站时，<@cc\.kw>([^<]*)<\/>类配方的生产力<@cc\.vup>([\+0-9%]*)<\/>，当与<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>干员在同一个制造站时，<@cc\.kw>([^<]*)<\/>类配方的生产力额外<@cc\.vup>([\+0-9%]*)<\/>$'
@@ -201,10 +214,10 @@ def riic_tl_json(show : bool = False):
                         match_mat           = riic_match_tl(desc_match.group(3), "item")
                         match_spd           = desc_match.group(4)
                         return f'When this Operator is assigned to a Factory, for each <${match_faction_skill}><@cc.kw>{match_faction_name}</></> Operator in the Base (excluding Assistants and Activity Room users, caps at <@cc.kw>{match_cap}</>), <@cc.kw>{match_mat}</> productivity <@cc.vup>{match_spd}</>'
-                    # Speed & Morale
-                    re_manu_formula_spd_limit_cost = r'^进驻制造站时，<@cc\.kw>([^<]*)<\/>类配方的生产力<@cc\.vup>([\+0-9%]*)<\/>，心情每小时消耗<@cc\.vup>([\+\-\.0-9]*)<\/>$'
-                    if re.match(re_manu_formula_spd_limit_cost, desc_sub):
-                        desc_match          = re.match(re_manu_formula_spd_limit_cost, desc_sub)
+                    # manu_formula_spd&limit&cost
+                    re_manu_formula_spd__limit__cost = r'^进驻制造站时，<@cc\.kw>([^<]*)<\/>类配方的生产力<@cc\.vup>([\+0-9%]*)<\/>，心情每小时消耗<@cc\.(vup|vdown)>([\+\-\.0-9]*)<\/>$'
+                    if re.match(re_manu_formula_spd__limit__cost, desc_sub):
+                        desc_match          = re.match(re_manu_formula_spd__limit__cost, desc_sub)
                         match_mat           = riic_match_tl(desc_match.group(1), "item")
                         match_spd           = desc_match.group(2)
                         match_morale        = desc_match.group(3)
@@ -256,6 +269,13 @@ def riic_tl_json(show : bool = False):
                         match_prod          = desc_match.group(1)
                         match_cap           = desc_match.group(2)
                         return f"When this Operator is assigned to a Factory, the productivity contributed by all other Operators in that Factory <@cc.vdown>becomes 0</> (excluding productivity granted based on facility count), but every Operator in that Factory increases that Factory's Productivity by <@cc.vup>{match_prod}</> and Capacity limit by <@cc.vup>{match_cap}</>"
+                    # manu_prod_spd_train&lv[000] // char_4226_veen
+                    re_manu_prod_spd_train__lv = r'^进驻制造站时，训练室每级为当前制造站<@cc\.vup>([+0-9%]*)<\/>生产力，最多<@cc\.vup>([+0-9%]*)<\/>$'
+                    if re.match(re_manu_prod_spd_train__lv, desc_sub):
+                        desc_match          = re.match(re_manu_prod_spd_train__lv, desc_sub)
+                        match_prod          = desc_match.group(1)
+                        match_cap           = desc_match.group(2)
+                        return f"When this Operator is assigned to a Factory, current Factory Productivity <@cc.vup>{match_prod}</> for every level of each Training Room level, up to <@cc.vup>{match_cap}</>"
                     # Cap by skill (manu_skill_limit[000])
                     re_manu_skill_limit = r'^进驻制造站时，当前制造站内每个<\$(cc\.[\.A-Za-z0-9]*)><@cc\.kw>(.+?)</></>技能为自身<@cc\.vup>([\+0-9]*)<\/>的仓库上限容量$'
                     if re.match(re_manu_skill_limit, desc_sub):
@@ -265,7 +285,6 @@ def riic_tl_json(show : bool = False):
                         match_mat           = riic_match_tl(desc_match.group(1))
                         match_cap           = desc_match.group(3)
                         return f'When this Operator is assigned to a Factory, gain <@cc.vup>{match_cap}</> Storage Capacity for each <${match_skill_id}><@cc.kw>{match_skill_name}</></> skill in that Factory'
-                        
                     # Speed by Power Plants Robot
                     re_manu_token_prod_spd = r'^进驻制造站时，每有<@cc\.vup>([0-9]*)<\/>台<\$(cc\.[\.A-Za-z0-9]*)><@cc\.kw>[^<]*<\/><\/>进驻发电站，<@cc\.kw>([^<]*)<\/>类配方的生产力<@cc\.vup>([\+0-9%]*)</>$'
                     if re.match(re_manu_token_prod_spd, desc_sub):
@@ -277,6 +296,14 @@ def riic_tl_json(show : bool = False):
                         match_prod          = desc_match.group(4)
                         return f'When this Operator is assigned to a Factory, <@cc.kw>{match_mat}</> productivity <@cc.vup>{match_prod}</> for {f'every <@cc.vup>{match_every}</>' if int(match_every) > 1 else "<@cc.vup>every</>"} <$cc.{match_skill_id}><@cc.kw>{match_skill_name}</></> assigned to a Power Plant'
                 case "trade":
+                    # trade_ord_closure[000] // char_4228_closur
+                    re_trade_ord_closure = r'^进驻贸易站时，订单获取效率<@cc\.vup>(\+[0-9%]*)<\/>，固定获取<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>（不视作违约订单）$'
+                    if re.match(re_trade_ord_closure, desc_sub):
+                        desc_match          = re.match(re_trade_ord_closure, desc_sub)
+                        match_eff           = desc_match.group(1)
+                        match_skill         = desc_match.group(2)
+                        match_name          = riic_match_tl(match_skill)
+                        return f'When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>{match_eff}</>, <${match_skill}><@cc.kw>{match_name}</></> will be obtained at a fixed rate (not considered as Defaulted trades).'
                     # trade_ord_limit__cost_P (Bellone : trade_ord_limit&cost_P[020])
                     re_trade_ord_limit__cost_P = r'^当与<@cc\.kw>([^<]*)<\/>在同一个贸易站时，心情每小时消耗<@cc\.vup>(-[\.0-9]*)<\/>，订单上限<@cc\.vup>(\+[0-9]*)<\/>$'
                     if re.match(re_trade_ord_limit__cost_P, desc_sub):
@@ -307,7 +334,7 @@ def riic_tl_json(show : bool = False):
                         match_spd_2         = desc_match.group(4)
                         return f'When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>{match_spd_1}</>; if <${match_term}><@cc.kw>{match_with}</></> is assigned to the same Trading Post, additionally order acquisition efficiency <@cc.vup>{match_spd_2}</>'
                     # Trade faction
-                    re_trade_ord_spd_par = r'^进驻贸易站时，同个贸易站中每有([0-9]*)名<\$(cc\.[^>]*)><@cc\.kw>拉特兰<\/><\/>干员，当前贸易站订单获取效率<@cc\.vup>([\+0-9%]*)<\/>$'
+                    re_trade_ord_spd_par = r'^进驻贸易站时，同个贸易站中每有([0-9]*)名<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>干员，当前贸易站订单获取效率<@cc\.vup>([\+0-9%]*)<\/>$'
                     if re.match(re_trade_ord_spd_par, desc_sub):
                         desc_match          = re.match(re_trade_ord_spd_par, desc_sub)
                         match_every         = desc_match.group(1)
@@ -322,7 +349,7 @@ def riic_tl_json(show : bool = False):
                         match_spd           = desc_match.group(1)
                         return f'When this Operator is assigned to a Trading Post, other Operators working in the Trading Post have <@cc.vup>{match_spd}</> order acquisition efficiency'
                     # (trade_ord_spd&tag[010])
-                    re_trade_ord_spd_tag = r'^进驻贸易站时，订单获取效率<@cc\.vup>([+0-9%]*)<\/>，基建内（不包含副手及活动室）每有一间进驻<\$(cc\.[^>]*)><@cc\.kw>精英干员<\/><\/>的设施，订单获取效率额外<@cc\.vup>([+0-9%]*)<\/>（最多<@cc\.kw>([0-9]*)<\/>间）$'
+                    re_trade_ord_spd_tag = r'^进驻贸易站时，订单获取效率<@cc\.vup>([+0-9%]*)<\/>，基建内（不包含副手及活动室）每有一间进驻<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>的设施，订单获取效率额外<@cc\.vup>([+0-9%]*)<\/>（最多<@cc\.kw>([0-9]*)<\/>间）$'
                     if re.match(re_trade_ord_spd_tag, desc_sub):
                         desc_match          = re.match(re_trade_ord_spd_tag, desc_sub)
                         match_eff           = desc_match.group(1)
@@ -355,6 +382,29 @@ def riic_tl_json(show : bool = False):
                         match_mat           = riic_match_tl(desc_match.group(1), "item")
                         match_byproduct     = desc_match.group(2)
                         return f'When this Operator is assigned to a Workshop to process <@cc.kw>{match_mat}</>-type materials, the production rate of byproduct increases by <@cc.vup>{match_byproduct}</>'
+                    # workshop_formula_device[080] // char_4232_hbound
+                    re_workshop_formula_device = r'^进驻加工站加工<@cc\.kw>([^<]*)<\/>或<@cc\.kw>([^<]*)<\/>时，副产品的产出概率提升<@cc\.vup>([0-9%]*)<\/>$'
+                    if re.match(re_workshop_formula_device, desc_sub):
+                        desc_match          = re.match(re_workshop_formula_device, desc_sub)
+                        match_mat_1         = riic_match_tl(desc_match.group(1), "item")
+                        match_mat_2         = riic_match_tl(desc_match.group(2), "item")
+                        match_byproduct     = desc_match.group(3)
+                        return f'When this Operator is assigned to a Workshop to process <@cc.kw>{match_mat_1}</> or <@cc.kw>{match_mat_2}</>, the production rate of byproduct increases by <@cc.vup>{match_byproduct}</>'
+                    # workshop_formula_drop
+                    re_workshop_formula_drop = r'进驻加工站加工<@cc\.kw>([^<]*)<\/>产出<@cc\.kw>([^<]*)<\/>品质的副产品时，副产品必定为<@cc\.kw>([^<]*)<\/>'
+                    if re.match(re_workshop_formula_drop, desc_sub):
+                        desc_match          = re.match(re_workshop_formula_drop, desc_sub)
+                        match_mat_1         = riic_match_tl(desc_match.group(1), "item")
+                        match_tier          = desc_match.group(2)
+                        match_mat_2         = riic_match_tl(desc_match.group(3), "item")
+                        return f'When this Operator is assigned to the Workshop to process <@cc.kw>{match_mat_1}</>, any byproducts of <@cc.kw>{match_tier}</> quality produced will be <@cc.kw>{match_mat_2}</>'
+                    # workshop_proc_probability
+                    re_workshop_proc_probability =r'^进驻加工站加工<@cc\.kw>([^<]*)</>时，副产品的产出概率提升<@cc\.vup>([0-9%]*)<\/>$'
+                    if re.match(re_workshop_proc_probability, desc_sub):
+                        desc_match          = re.match(re_workshop_proc_probability, desc_sub)
+                        match_mat           = riic_match_tl(desc_match.group(1), "item")
+                        match_byproduct     = desc_match.group(2)
+                        return f'When this Operator is assigned to the Workshop to process <@cc.kw>{match_mat}</>, the production rate of byproduct increases by <@cc.vup>{match_byproduct}</>'
                 case "train":
                     # Train Class Morale Down
                     re_train_cost_profession = r'^进驻训练室协助<@cc\.kw>([^<]*)<\/>干员训练专精技能至<@cc\.vup>([1-3])<\/>级时，心情每小时消耗<@cc\.vdown>([\+\-0-9]*)<\/>$'
@@ -374,6 +424,21 @@ def riic_tl_json(show : bool = False):
                         match_skill_name    = riic_match_tl(match_skill_id)
                         match_spd           = desc_match.group(4)
                         return f'When this Operator is assigned to be the Trainer in the Training Room, Morale consumed per hour <@cc.vdown>{match_morale}</>, and every <@cc.vup>{match_every}</> <${match_skill_id}><@cc.rem>{match_skill_name}</></> gives <@cc.vup>{match_spd}</> Specialization training speed'
+                    # train_spd_branch (JIC)
+                    re_train_spd_branch = r'进驻训练室协助位时，如果训练位干员分支为<@cc\.kw>([^<]*)<\/>，则专精技能训练速度额外<@cc\.vup>([\+0-9%]*)<\/>'
+                    if re.match(re_train_spd_branch, desc_sub):
+                        desc_match          = re.match(re_train_spd_branch, desc_sub)
+                        match_branch        = riic_match_tl(desc_match.group(1), "branch")
+                        match_spd           = desc_match.group(2)
+                        return f'When this Operator is assigned to be the Trainer in the Training Room, if the trainee\'s Job Branch is <@cc.kw>{match_branch}</>, Specialization training speed {match_spd}'
+                    # train_spd_branches // char_4247_oxi
+                    re_train_spd_branches = r'进驻训练室协助位时，如果训练位干员分支为<@cc\.kw>([^<]*)<\/>或<@cc\.kw>([^<]*)<\/>，则专精技能训练速度额外<@cc\.vup>([\+0-9%]*)<\/>'
+                    if re.match(re_train_spd_branches, desc_sub):
+                        desc_match          = re.match(re_train_spd_branches, desc_sub)
+                        match_branch_1      = riic_match_tl(desc_match.group(1), "branch")
+                        match_branch_2      = riic_match_tl(desc_match.group(2), "branch")
+                        match_spd           = desc_match.group(3)
+                        return f'When this Operator is assigned to be the Trainer in the Training Room, if the trainee\'s Job Branch is <@cc.kw>{match_branch_1}</> or <@cc.kw>{match_branch_2}</>, Specialization training speed {match_spd}'
                     # train_spd_doubleProf3[999]
                     re_train_spd_doubleProf3_999 = r'^进驻训练室协助位时，<@cc\.kw>([^<]*)<\/>与<@cc\.kw>([^<]*)<\/>干员的专精技能训练速度<@cc\.vup>([\+0-9%]*)<\/>$'
                     if re.match(re_train_spd_doubleProf3_999, desc_sub):
@@ -381,7 +446,7 @@ def riic_tl_json(show : bool = False):
                         match_class_1       = class_parse[desc_match.group(1)]
                         match_class_2       = class_parse[desc_match.group(2)]
                         match_spd           = desc_match.group(3)
-                        return f'When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>{match_class_1}</> and <@cc.kw>{match_class_2}</> Operators\' Specialization training speed<@cc.vup>{match_spd}</>'
+                        return f'When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>{match_class_1}</> and <@cc.kw>{match_class_2}</> Operators\' Specialization training speed <@cc.vup>{match_spd}</>'
                     # Train Class Specialize
                     re_train_spd_profession2 = r'^进驻训练室协助位时，<@cc\.kw>([^<]*)<\/>干员的专精技能训练速度<@cc\.vup>([\+0-9%]*)<\/>，如果本次训练专精技能至<@cc\.vup>(\d)<\/>级，则训练速度额外<@cc\.vup>([\+0-9%]*)<\/>$'
                     if re.match(re_train_spd_profession2, desc_sub):
@@ -406,6 +471,14 @@ def riic_tl_json(show : bool = False):
                         match_morale_1      = desc_match.group(1)
                         match_morale_2      = desc_match.group(2)
                         return f'When this Operator is assigned to a Dormitory, restores an additional <@cc.vup>{match_morale_2}</> Morale to Operators assigned to that Dormitory whose Morale is below <@cc.vup>{match_morale_1}</> (Strongest effect of the same type applies)'
+                    # dorm_rec_all&unfull
+                    re_dorm_rec_all__unfull = r'^进驻宿舍时，该宿舍内所有干员的心情每小时恢复<@cc\.vup>([\+\.0-9]*)<\/>；同时该宿舍每有<@cc\.kw>([0-9])<\/>名心情未满的干员，则恢复效果额外<@cc\.vup>([\+\.0-9]*)<\/>（同种效果取最高）$'
+                    if re.match(re_dorm_rec_all__unfull, desc_sub):
+                        desc_match          = re.match(re_dorm_rec_all__unfull, desc_sub)
+                        match_morale_1      = desc_match.group(1)
+                        match_every         = desc_match.group(2)
+                        match_morale_2      = desc_match.group(3)
+                        return f'When this Operator is assigned to a Dormitory, restores <@cc.vup>{match_morale_1}</> Morale per hour to all Operators assigned to that Dormitory; for every <@cc.kw>{match_every}</> Operator whose Morale is not full in that Dormitory, restore an additional <@cc.vup>{match_morale_2}</> (Only the strongest effect of this type applies)'
                     # Dorm group addition morale
                     re_dorm_rec_single_power = r'^进驻宿舍时，使该宿舍内除自身以外心情未满的某个干员每小时恢复<@cc\.vup>([\+\.0-9]*)<\/>（同种效果取最高），如果目标是<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>干员，则恢复效果额外<@cc\.vup>([\+\.0-9]*)<\/>$'
                     if re.match(re_dorm_rec_single_power, desc_sub):
@@ -450,14 +523,38 @@ def riic_tl_json(show : bool = False):
                         match_room          = riic_match_tl(desc_match.group(5), "room")
                         match_spd_2         = desc_match.group(6)
                         return f'When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>{match_spd_1}</>, Morale consumed per hour <@cc.{match_morale_desc}>{match_morale}</>; if <@cc.kw>{match_op}</> is assigned to the <@cc.kw>{match_room}</>, HR contacting speed increases by a further <@cc.vup>{match_spd_2}</>'
+                    # re_hire_spd_tag
+                    re_hire_spd_tag = r'^进驻人力办公室时，人脉资源的联络速度<@cc\.vup>([\+0-9%]*)<\/>，基建内（不包含副手及活动室）每有一间进驻<\$(cc\.[^>]*)><@cc\.kw>[^<]*<\/><\/>的设施，联络速度额外<@cc\.vup>([\+0-9%]*)<\/>（最多<@cc\.kw>([0-9]*)<\/>间）$'
+                    if re.match(re_hire_spd_tag, desc_sub):
+                        desc_match          = re.match(re_hire_spd_tag, desc_sub)
+                        match_spd           = desc_match.group(1)
+                        match_tag_skill     = desc_match.group(2)
+                        match_tag_name      = riic_match_tl(match_tag_skill)
+                        match_spd_add       = desc_match.group(3)
+                        match_max           = desc_match.group(4)
+                        return f'When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>{match_spd}</>; for every facility in the Base with an <${match_tag_skill}><@cc.kw>{match_tag_name}</></> assigned (excluding Assistants and Activity Rooms), HR contacting speed <@cc.vup>{match_spd_add}</> (max <@cc.kw>{match_max}</> facilities)'
                 case "meet":
                     # meet_spd&bd[999]
-                    re_eet_spd__bd_999 = r'^进驻会客室时，线索搜集速度提升<@cc\.vup>([\+0-9%]*)<\/>，当与<@cc\.kw>([^<]*)<\/>进驻会客室一起工作时，更容易获得线索板上尚未拥有的线索$'
-                    if re.match(re_eet_spd__bd_999, desc_sub):
-                        desc_match          = re.match(re_eet_spd__bd_999, desc_sub)
+                    re_meet_spd__bd_999 = r'^进驻会客室时，线索搜集速度提升<@cc\.vup>([\+0-9%]*)<\/>，当与<@cc\.kw>([^<]*)<\/>进驻会客室一起工作时，更容易获得线索板上尚未拥有的线索$'
+                    if re.match(re_meet_spd__bd_999, desc_sub):
+                        desc_match          = re.match(re_meet_spd__bd_999, desc_sub)
                         match_spd           = desc_match.group(1)
                         match_op            = riic_match_tl(desc_match.group(2), "op")
                         return f'When this Operator is assigned to the Reception Room, increases Clue search speed by <@cc.vup>{match_spd}</>, and when assigned together with <@cc.kw>{match_op}</>, increases the likelihood of obtaining clues that are not on the Clue Board'
+                    # meet_spd&cost
+                    re_meet_spd__cost = r'^进驻会客室时，线索搜集速度提升<@cc\.vup>([0-9%]*)<\/>，心情每小时消耗<@cc\.vdown>([\+0-9]*)</>$'
+                    if re.match(re_meet_spd__cost, desc_sub):
+                        desc_match          = re.match(re_meet_spd__cost, desc_sub)
+                        match_spd           = desc_match.group(1)
+                        match_morale        = desc_match.group(2)
+                        return f'When this Operator is assigned to the Reception Room, increases Clue search speed by <@cc.vup>{match_spd}</>, and Morale consumed per hour by <@cc.vdown>{match_morale}</>'
+                    # meet_spd&cost_char[000] // char_4231_clemnt
+                    re_meet_spd__cost_char = r'^与其他干员进驻会客室一起工作时，线索搜集速度提升<@cc\.vup>([0-9%]*)<\/>，心情每小时消耗<@cc\.vdown>([\+0-9]*)</>$'
+                    if re.match(re_meet_spd__cost_char, desc_sub):
+                        desc_match          = re.match(re_meet_spd__cost_char, desc_sub)
+                        match_spd           = desc_match.group(1)
+                        match_morale        = desc_match.group(2)
+                        return f'When this Operator is assigned to the Reception Room together with another operator, increases Clue search speed by <@cc.vup>{match_spd}</>, and Morale consumed per hour by <@cc.vdown>{match_morale}</>'
                     # Speed by Recruit slot
                     re_meet_spd_clue = r'^进驻会客室时，每个招募位（不包含初始招募位）提升<@cc\.vup>([0-9%]*)<\/>线索搜集速度$'
                     if re.match(re_meet_spd_clue, desc_sub):
@@ -476,7 +573,7 @@ def riic_tl_json(show : bool = False):
                     if re.match(re_meet_spd_notOwned_exchange, desc_sub):
                         return f'When this Operator is assigned to the Reception Room, if in Clue Exchange, increases the likelihood of obtaining clues that are not on the Clue Board'
                     # Speed faction
-                    re_meet_spd_sami = r'^进驻会客室时，线索搜集速度提升<@cc\.vup>([\+0-9%]*)<\/>，与其他<\$(cc\.[^>]*)><@cc\.kw>黑钢国际干员<\/><\/>进驻会客室一起工作时，线索搜集速度额外提升<@cc\.vup>([\+0-9%]*)<\/>(，自身心情每小时消耗<@cc\.vdown>([\+\-\.0-9]*)<\/>|)$'
+                    re_meet_spd_sami = r'^进驻会客室时，线索搜集速度提升<@cc\.vup>([\+0-9%]*)<\/>，与其他<\$(cc\.[^>]*)><@cc\.kw>[^>]*<\/><\/>进驻会客室一起工作时，线索搜集速度额外提升<@cc\.vup>([\+0-9%]*)<\/>(，自身心情每小时消耗<@cc\.vdown>([\+\-\.0-9]*)<\/>|)$'
                     if re.match(re_meet_spd_sami, desc_sub):
                         desc_match          = re.match(re_meet_spd_sami, desc_sub)
                         match_spd_1         = desc_match.group(1)
@@ -485,6 +582,15 @@ def riic_tl_json(show : bool = False):
                         match_spd_2         = desc_match.group(3)
                         match_morale        = desc_match.group(5) if desc_match.group(4) else ""
                         return f'When this Operator is assigned to the Reception Room, increases Clue search speed by <@cc.vup>{match_spd_1}</>, and when assigned together with another <${match_faction_skill}><@cc.kw>{match_faction_name}</></> Operator, increases Clue search speed by an additional <@cc.vup>{match_spd_2}</>{f' while self Morale loss per hour <@cc.vdown>{match_morale}</>' if match_morale else ""}'
+                    # meet_spd&sami[210]
+                    re_meet_spd__sami = r'进驻会客室时，线索搜集速度提升<@cc\.vup>([\+0-9%]*)<\/>，与其他<\$(cc\.[^>]*)><@cc\.kw>[^>]*<\/><\/>干员进驻会客室一起工作时，线索搜集速度额外提升<@cc\.vup>([\+0-9%]*)<\/>'
+                    if re.match(re_meet_spd__sami, desc_sub):
+                        desc_match          = re.match(re_meet_spd__sami, desc_sub)
+                        match_spd_1         = desc_match.group(1)
+                        match_faction_skill = desc_match.group(2)
+                        match_faction_name  = riic_match_tl(match_faction_skill)
+                        match_spd_2         = desc_match.group(3)
+                        return f'When this Operator is assigned to the Reception Room, increases Clue search speed by <@cc.vup>{match_spd_1}</>, and when assigned together with another <${match_faction_skill}><@cc.kw>{match_faction_name}</></> Operator, increases Clue search speed by an additional <@cc.vup>{match_spd_2}</>'
                 case "recycle":
                     return desc_sub
                 case _ :
@@ -507,6 +613,7 @@ def riic_tl_json(show : bool = False):
                     
                 **<@cc.kw>([^<]*)</>** - keyword
                     - **item** -> for item name
+                    - **branch** -> for Archetype subclass
                     - **op** -> for operator name
                     - **room** -> for RIIC room type
             '''
@@ -532,6 +639,8 @@ def riic_tl_json(show : bool = False):
                                 if desc == item["name_cn"]:
                                     return item["name_en"] or item["name_cn"]
                             printr(f'riic_match_tl : {Y}"item"{RE} case - {Y}{desc}')
+                    case "branch":
+                        return json_subclass["subclass"][subProfDict[desc]]["en"] or json_subclass["subclass"][subProfDict[desc]]["tl"]
                     case "char" | "op":
                         return [json_character[op_key]["appellation"] for op_key in json_character.keys() if desc == json_character[op_key]["name"]][0]
                     case "room":
@@ -574,6 +683,7 @@ def riic_tl_json(show : bool = False):
     return json_riicTL
 
 template = '''
+                    # 
                     re_ = r'^$'
                     if re.match(re_, desc_sub):
                         desc_match          = re.match(re_, desc_sub)

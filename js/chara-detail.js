@@ -1776,12 +1776,10 @@
             var gender = query(db.gender,"sex_cn",opdata.sex);
             $("#op-gender").removeClass(`gender-male`)
             $("#op-gender").removeClass(`gender-female`)
-            $("#op-gender").html(`<i class="fas fa-${gender['sex_'+lang].toLowerCase()}"></i> ${gender['sex_'+lang]}`)
-            $("#op-gender").addClass(`gender-${gender['sex_'+lang].toLowerCase()}`)
+            $("#op-gender").html(gender?`<i class="fas fa-${gender['sex_'+lang].toLowerCase()}"></i> ${gender['sex_'+lang]}`:opdata.sex)
+            $("#op-gender").addClass(gender?`gender-${gender['sex_'+lang].toLowerCase()}`:"")
             var position = query(db.tags,"tag_cn",opdataFull.position);
             $("#op-position").html(position['tag_'+lang],`Position`)
-
-
 
             var type = query(db.classes,"type_data",opdataFull.profession);
             $("#op-classImage").attr("src",`${IMAGE_REPO}/classes/black/icon_profession_${type['type_'+lang].toLowerCase()}_large.png`)
@@ -5570,7 +5568,7 @@
         var skillTL = db.skillsTL[skillId];
         var desc = skillEN?skillEN.description:skillTL?skillTL.desc[level]:skill.description;
 
-        desc = ChangeDescriptionColor2(desc)
+        desc = ChangeDescriptionColor2(desc.replace(/\\+n/g,"</br>").replace(/\n/g,"</br>"))
         if(desc){
             // console.log(skill)
             desc = ChangeDescriptionContent(desc,skill)
@@ -5716,7 +5714,7 @@
             desc = ChangeDesc1_loop(desc, desc.match(nested_rtf))
 
         console.log(desc)
-        return desc.replace(/\<([A-Za-z ]+)\>/g,"&lt;"+"$1"+'&gt;')
+        return desc.replace(/\<((?!br>)[A-Za-z ]+)\>/g,"&lt;"+"$1"+'&gt;')
     }
     function ChangeDesc2(desc){
         if(!desc){
