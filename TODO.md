@@ -23,6 +23,8 @@
 - Mod Trait
     - Fiammetta ISW-A
     - Gavial the Invincible RA-A
+- Immunity
+    - groundBoundImmune
 
 ### Sur le lac lune vivante
 - Mod Trait
@@ -52,13 +54,17 @@
 - Term
     - ba.dt.rampage2
 
+### Stronghold Protocol: Reglament
+- Name
+    Rage Ironhide
+
 ### To Do
-- SilverAsh the Reignfrost SPDYN fix (long long sword)
+- Chibi Start (Fixed base to canvas problem ex.char_494_vendla_game#10)
+- SilverAsh the Reignfrost SP DYN fix (long long sword/another canvas relate ?)
+    - **Silver_L_Hand_Weapon**
 
 - dropdown for AKHR type-in
-- Skin bar too long now (Ling)
 - handle Xiaohei cat
-- Chibi Start (Fixed base to canvas problem ex.char_494_vendla_game#10)
 - Token
     - Skill SP recovery
     - Mod talent

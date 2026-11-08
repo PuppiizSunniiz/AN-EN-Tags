@@ -83,6 +83,7 @@ NEW_CHARS : list[str] = [
                             "Makoto Yuki", "Aegis", "Yukari Takeba", "Koromaru", 
                             "Clementia", "de Toledo", "Homebound", 
                             "Talulah", "Toska", "Territoriâ", "Olʹga", "Caleido", "Herdbells", 
+                            "Rage Ironhide", 
                         ] # "", 
 
 #["ItemID#1","ItemID#2", ...]
@@ -140,7 +141,7 @@ MAT_LIST    : list[str] = [mat_data["itemId"] for mat_data in json_akmaterial]
 # Def function
 #########################################################################################################
 def get_new_akhr(new_char_id : str, new_char_name : str) -> dict[str, Any]:
-    gender : str = ''.join(json_handbook["handbookDict"][new_char_id]["storyTextAudio"][0]["stories"][0]["storyText"].split("\n")[1].split("】")[1].split()) if new_char_id in json_handbook["handbookDict"] else "temp"
+    gender : str = ''.join(json_handbook["handbookDict"][new_char_id]["storyTextAudio"][0]["stories"][0]["storyText"].split("\n")[1].split("】")[1].split()) if new_char_id in json_handbook["handbookDict"] else "-"
     sex : dict[str, str] = {"女士" : "女"}
     return  {
                                     "id"            :   new_char_id,
