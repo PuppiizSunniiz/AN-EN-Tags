@@ -1,12 +1,4 @@
 # Fix TL (Official EN) waiting room
-### Thunder in the Azure Dream
-- Trait
-    - Rhodes Island Recon
-    - Rhodes Island Recon 's Token (Palamute)
-- Mod Trait
-    - Zinogre S Catapult mcn-x
-    - Narantuya lps-y
-
 ### Bolívar Diagnosed
 - Archetype
     - supportiveranger
@@ -37,7 +29,7 @@
 ### Yet Another Wave
 - RIIC (Recycle)
 
-### Время в пути
+### Время, в пути
 - Name
     Talulah
     Тоска - Toska (Fyodor)

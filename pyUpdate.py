@@ -76,14 +76,13 @@ json_talentTL       =   json_load("json/ace/tl-talents.json")
 #########################################################################################################
 #["OpsName#1","OpsName#2", ...]
 NEW_CHARS : list[str] = [
-                            "Violet Mizutsune Orchid", "Zinogre S Catapult", "Rhodes Island Recon",
-                            "Aphrissa", "Pedro",
-                            "Mechanist",
-                            "Angelina the Mellow Wish", "Thumpy", "Jacinta", "Timeslot", 
-                            "Makoto Yuki", "Aegis", "Yukari Takeba", "Koromaru", 
-                            "Clementia", "de Toledo", "Homebound", 
-                            "Talulah", "Toska", "Territoriâ", "Olʹga", "Caleido", "Herdbells", 
-                            "Rage Ironhide", 
+                            "Aphrissa", "Pedro",                                                            # Bolívar Diagnosed
+                            "Mechanist",                                                                    # IS#7: The Black Flow of the Drowning Seekers
+                            "Angelina the Mellow Wish", "Thumpy", "Jacinta", "Timeslot",                    # Till the Lands Become an Orange
+                            "Makoto Yuki", "Aegis", "Yukari Takeba", "Koromaru",                            # Sur le lac lune vivante
+                            "Clementia", "de Toledo", "Homebound",                                          # Yet Another Wave
+                            "Talulah", "Toska", "Territoriâ", "Olʹga", "Caleido", "Herdbells",              # Время, в пути
+                            "Rage Ironhide",                                                                # Stronghold Protocol: Reglament/Regulation
                         ] # "", 
 
 #["ItemID#1","ItemID#2", ...]

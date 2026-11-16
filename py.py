@@ -177,13 +177,12 @@ def Ready(update = ""):
         
         temp =[[grid["col"],grid["row"]] for grid in json_range[range_id]["grids"]]
         
-        max_x=max([x[0] for x in temp])
-        min_x=min([x[0] for x in temp]+[0])
-        max_y=max([y[1] for y in temp])
-        min_y=min([y[1] for y in temp]+[0])
+        max_x=max([x[0] for x in temp] + [0])
+        min_x=min([x[0] for x in temp] + [0])
+        max_y=max([y[1] for y in temp] + [0])
+        min_y=min([y[1] for y in temp] + [0])
         
         range_array=[["⬛" for x in range(max_x - min_x + 1)] for y in range(max_y - min_y + 1)]
-        
         range_array[max_y][abs(min(0, min_x))]="🔳"
 
         for col, row in temp:

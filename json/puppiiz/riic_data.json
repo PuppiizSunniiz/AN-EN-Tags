@@ -121,10 +121,10 @@
             "description": "When this Operator is assigned to the Control Center, if the HR contacting speed of the HR Office is lower than <@cc.vup>30%</> (including the base 5%), increase the HR contacting speed by <@cc.vup>+20%</> (unique effect across the entire base, unaffected by other effects)"
         },
         "control_hire_spd_all[000]": {
-            "buffName": "办公室年度人物",
+            "buffName": "Office Person of the Year",
             "skillIcon": "bskill_ctrl_orchd2",
             "desc": "进驻控制中枢时，人力办公室联络速度<@cc.vup>+10%</>（同种效果取最高）",
-            "description": "进驻控制中枢时，人力办公室联络速度<@cc.vup>+10%</>（同种效果取最高）"
+            "description": "When this Operator is assigned to the Control Center, HR contacting speed <@cc.vup>+10%</> (Only the strongest effect of this type takes place)"
         },
         "control_upMeetingSpeed[000]": {
             "buffName": "Worldly Insight",
@@ -1531,7 +1531,7 @@
             "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+35%</>"
         },
         "trade_ord_spd[022]": {
-            "buffName": "气氛组",
+            "buffName": "Mood Maker",
             "skillIcon": "bskill_tra_spd3&catap2",
             "desc": "进驻贸易站时，订单获取效率<@cc.vup>+35%</>",
             "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+35%</>"
@@ -1891,10 +1891,10 @@
             "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+5%</>, order limit <@cc.vup>+2</>, plus an additional order acquisition efficiency <@cc.vup>+3%</> for every <$cc.bd_felyne><@cc.rem>Felvine</></>"
         },
         "trade_ord_spd&limit_tag[000]": {
-            "buffName": "队长的自觉",
+            "buffName": "Captain's Sense of Duty",
             "skillIcon": "bskill_tra_orchd2",
             "desc": "进驻贸易站时，订单上限<@cc.vup>+3</>，且每有一个<$cc.tag.mh2><@cc.kw>泡影国狩猎小队</></>干员进驻贸易站，订单获取效率<@cc.vup>+20%</>",
-            "description": "进驻贸易站时，订单上限<@cc.vup>+3</>，且每有一个<$cc.tag.mh2><@cc.kw>泡影国狩猎小队</></>干员进驻贸易站，订单获取效率<@cc.vup>+20%</>"
+            "description": "When this Operator is assigned to a Trading Post, order limit <@cc.vup>+3</>; for every <$cc.tag.mh2><@cc.kw>Houei Hunting Squad</></> Operator assigned to a Trading Post, order acquisition efficiency <@cc.vup>+20%</>"
         },
         "trade_ord_spd&wt[000]": {
             "buffName": "Naive Negotiator",
@@ -2857,16 +2857,16 @@
             "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Specialist</> and <@cc.kw>Vanguard</> Operators' Specialization training speed <@cc.vup>+30%</>; if training a skill to Specialization Level <@cc.vup>2</>, training speed will be further increased by <@cc.vup>+50%</>"
         },
         "train_spd_doubleProf3[000]": {
-            "buffName": "兴之所至·α",
+            "buffName": "On a Whim α",
             "skillIcon": "bskill_train_mh2_guard&sniper1",
             "desc": "进驻训练室协助位时，<@cc.kw>近卫</>与<@cc.kw>狙击</>干员的专精技能训练速度<@cc.vup>+30%</>",
             "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Guard</> and <@cc.kw>Sniper</> Operators' Specialization training speed<@cc.vup>+30%</>"
         },
         "train_spd_doubleProf3[100]": {
-            "buffName": "兴之所至·β",
+            "buffName": "On a Whim β",
             "skillIcon": "bskill_train_mh2_guard&sniper2",
             "desc": "进驻训练室协助位时，<@cc.kw>近卫</>与<@cc.kw>狙击</>干员的专精技能训练速度<@cc.vup>+50%</>，心情每小时消耗<@cc.vdown>+1</>",
-            "description": "进驻训练室协助位时，<@cc.kw>近卫</>与<@cc.kw>狙击</>干员的专精技能训练速度<@cc.vup>+50%</>，心情每小时消耗<@cc.vdown>+1</>"
+            "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Guard</> and <@cc.kw>Sniper</> Operators' Specialization training speed <@cc.vup>+50%</>, Morale consumed per hour <@cc.vdown>+1</>"
         },
         "train_spd_doubleProf3[999]": {
             "buffName": "合理兼职",
@@ -3511,10 +3511,10 @@
             "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is <@cc.kw>Blue Poison</>, further increases Morale restored by <@cc.vup>+0.45</>"
         },
         "dorm_rec_single&tag[000]": {
-            "buffName": "狩猎好帮手",
+            "buffName": "Hunting Buddy",
             "skillIcon": "bskill_dorm_buddy",
             "desc": "进驻宿舍时，使该宿舍内除自身以外心情未满的某个干员每小时恢复<@cc.vup>+0.55</>（同种效果取最高），如果目标是<$cc.tag.mh><@cc.kw>怪物猎人小队</></>成员和<$cc.tag.mh2><@cc.kw>泡影国狩猎小队</></>，则恢复效果额外<@cc.vup>+0.45</>",
-            "description": "进驻宿舍时，使该宿舍内除自身以外心情未满的某个干员每小时恢复<@cc.vup>+0.55</>（同种效果取最高），如果目标是<$cc.tag.mh><@cc.kw>怪物猎人小队</></>成员和<$cc.tag.mh2><@cc.kw>泡影国狩猎小队</></>，则恢复效果额外<@cc.vup>+0.45</>"
+            "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is a member of <$cc.tag.mh><@cc.kw>Soubo Adventurers</></> or <$cc.tag.mh2><@cc.kw>Houei Hunting Squad</></>, further increases Morale restored by <@cc.vup>+0.45</>"
         },
         "dorm_rec_all[000]": {
             "buffName": "Inspiration",
@@ -4573,10 +4573,10 @@
             "description": "When this Operator is assigned to the Reception Room, increases the likelihood of obtaining clues that are not on the Clue Board."
         },
         "meet_spd_notOwned_P[000]": {
-            "buffName": "隐秘专家",
+            "buffName": "Stealth Expert",
             "skillIcon": "bskill_meet_buddy",
             "desc": "进驻会客室时，更容易获得线索板上尚未拥有的线索，若<@cc.kw>焰狐龙梓兰</>进驻控制中枢，则线索搜集速度提升<@cc.vup>10%</>",
-            "description": "进驻会客室时，更容易获得线索板上尚未拥有的线索，若<@cc.kw>焰狐龙梓兰</>进驻控制中枢，则线索搜集速度提升<@cc.vup>10%</>"
+            "description": "When this Operator is assigned to the Reception Room, increases the likelihood of obtaining clues that are not on the Clue Board; if <@cc.kw>Violet Mizutsune Orchid</> is assigned to the Control Center, Clue search speed increases by <@cc.vup>10%</>"
         },
         "meet_spd_Owned[000]": {
             "buffName": "Conspicuous Investigator",

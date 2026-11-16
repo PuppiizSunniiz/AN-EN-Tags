@@ -1218,28 +1218,28 @@
             "code": "uniequip_004_ghost2"
         },
         "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，自身攻击援军阻挡的敌人时攻击力提升至150%；不受<@ba.kw>部署数量</>限制，但再部署时间极长": {
-            "en": "可以在攻击范围内选择一次<@ba.kw>战术点</>来召唤援军，自身攻击援军阻挡的敌人时攻击力提升至150%；不受<@ba.kw>部署数量</>限制，但再部署时间极长",
+            "en": "This unit can designate one <@ba.kw>Tactical Point</> within attack range to call Reinforcements; ATK is increased to 150% when attacking enemies blocked by Reinforcements; ignores the <@ba.kw>Deployment Limit</>, but has a long Redeployment Time",
             "color": "extra",
             "note": "new Ops \"tactician\" Archetype trait",
             "name": "Rhodes Island Recon",
             "code": "char_4215_buddy"
         },
         "能够阻挡一个敌人，只能部署在艾露猫的攻击范围内": {
-            "en": "能够阻挡一个敌人，只能部署在艾露猫的攻击范围内",
+            "en": "Blocks 1 enemy; can only be deployed within the Felyne's Attack Range",
             "color": "common",
             "note": "Rhodes Island Recon 's Token (Palamute)",
             "name": " Palamute",
             "code": "token_10063_buddy_bddg"
         },
         "特性消耗费用时，每消耗1点费用使本次技能期间攻击力<@ba.kw>+2%</>（上限10层）": {
-            "en": "特性消耗费用时，每消耗1点费用使本次技能期间攻击力<@ba.kw>+2%</>（上限10层）",
+            "en": "When Trait consumes DP, every 1 DP consumed grants ATK <@ba.kw>+2%</> during that skill activation (max 10 stacks)",
             "color": "extra",
             "note": "new mods mcn-x",
             "name": "char_1049_catap2",
             "code": "uniequip_002_catap2"
         },
         "每回收5次<@ba.kw>回旋投射物</>时获得1点技力": {
-            "en": "每回收5次<@ba.kw>回旋投射物</>时获得1点技力",
+            "en": "Every 5 times <@ba.kw>projectiles</> are retrieved, gains 1 SP",
             "color": "extra",
             "note": "new mods lps-y",
             "name": "char_4138_narant",
