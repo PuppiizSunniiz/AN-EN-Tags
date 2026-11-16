@@ -54,7 +54,7 @@
 - Term
     - ba.dt.rampage2
 
-### Stronghold Protocol: Reglament
+### Stronghold Protocol: Reglament/Regulation
 - Name
     Rage Ironhide
 
