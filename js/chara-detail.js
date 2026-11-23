@@ -3817,7 +3817,7 @@
                 else if(LINKAGE_JP_list.includes(opdataFull.id))
                     return "JP"
                 else 
-                    return "None"
+                    return ""
             case "CN_MANDARIN":
                 return "CN"
             case "CN_TOPOLECT":
