@@ -2140,6 +2140,14 @@ button[id^='class-change-']:hover #class-icon{
     transform: perspective(1280px) rotateY(calc(-10deg * var(--mouse-x, 0))) rotateX(calc(5deg - 10deg * var(--mouse-y, 0))) translateZ(-50px) translateY(0px) translateX(-10px);
 } */
 
+/* to stop page scroll when panning */
+#charazoom,
+#spine-frame,
+#spine-frame-token,
+#spine-frame-op {
+    touch-action: none;
+}
+
 @media (max-width: 400px) {
     audio {
         width : 245px;
